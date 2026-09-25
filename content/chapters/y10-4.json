@@ -30,7 +30,8 @@
               "explain": "Subtract $(2)$ from $(1)$: $4B = 12 \\Rightarrow B = 3$.\nResult: Type B costs $\\$3$."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "PDMDyt9wI9G8qBqbGRmB",
@@ -44,7 +45,8 @@
             {
               "explain": "$4s+5c=490, 6s+2c=400 \\Rightarrow c=200-3s \\Rightarrow 4s+5(200-3s)=490 \\Rightarrow -11s=-510$ (Wait, adjustment needed)\\n\\n*Fixed*: $4s+5c=450, 6s+2c=400 \\Rightarrow s=50, c=50$."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "tpckemkq0rPvKn4xiJV2",
@@ -64,7 +66,8 @@
             {
               "explain": "Find $B(x, y)$\\n$(2+x)/2 = 3.5 \\Rightarrow x=5$. $(6+y)/2 = 5 \\Rightarrow y=4$. $B(5, 4)$."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "UZR1pdqHcsm0roQL86tf",
@@ -93,7 +96,8 @@
               "work": "Therefore $\\\\$\n$x=3 , y=1$"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "WBA0Uc2OC24cWqWJBdMU",
@@ -108,7 +112,8 @@
           ],
           "answer": 0,
           "solution": "Step 1: Substitute $y = 4x - 7$ into the second equation:\n$$2x + 3(4x - 7) = 21$$\nStep 2: Expand and solve for $x$:\n$$2x + 12x - 21 = 21 \\Rightarrow 14x = 42 \\Rightarrow x = 3$$\nStep 3: Find $y$:\n$$y = 4(3) - 7 = 12 - 7 = 5$$\nResult: $x=3, y=5$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     },
@@ -148,7 +153,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "2tuklIGBWXnWMcf7haLz",
@@ -175,7 +181,8 @@
               "explain": "Simplify the fractions to find the final coordinates of the midpoint.",
               "work": "\\(M = \\left( \\dfrac{2}{2}, \\; \\dfrac{2}{2} \\right) = (1, 1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5Ugm5xJLl2kKTczUjidb",
@@ -202,7 +209,8 @@
               "explain": "Simplify the arithmetic to find the final coordinates of the midpoint.",
               "work": "\\(M = \\left( \\dfrac{-2}{2}, \\; \\dfrac{4}{2} \\right) = (-1, 2)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "8fHR8PudwUqGmas4j3TA",
@@ -233,7 +241,8 @@
               "explain": "Therefore, the coordinates of the endpoint \\(B\\) are \\((3, 5)\\).",
               "work": "\\(B(3, 5)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "8O1sGBIlADyujoK4HNbr",
@@ -260,7 +269,8 @@
               "explain": "Simplify the fractions to find the final coordinates of the midpoint.",
               "work": "\\(M = \\left( \\dfrac{2}{2}, \\; \\dfrac{2}{2} \\right) = (1, 1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "BnbB6tjtaipdC5OG8Cpt",
@@ -291,7 +301,8 @@
               "explain": "Therefore, the coordinates of the endpoint \\(B\\) are \\((3, 5)\\).",
               "work": "\\(B(3, 5)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "D6q69EtDOSyZtgXZPlVj",
@@ -318,7 +329,8 @@
               "explain": "Simplify the terms inside the square root to calculate the final distance.",
               "work": "\\(d = \\sqrt{(4)^2 + (-3)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "DOrklzzUTiKVF8ZO1Pax",
@@ -345,7 +357,8 @@
               "explain": "Simplify the terms inside the square root to calculate the final distance.",
               "work": "\\(d = \\sqrt{(4)^2 + (-3)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hx59l8yW3b0akUHuz8Hn",
@@ -372,7 +385,8 @@
               "explain": "Simplify the squares and calculate the final result.",
               "work": "\\(d = \\sqrt{(12)^2 + (5)^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "iTyMYXt5AwzD21xqDNNT",
@@ -399,7 +413,8 @@
               "explain": "Simplify the squares and calculate the final result.",
               "work": "\\(d = \\sqrt{(12)^2 + (5)^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "jrhy2008-q14",
@@ -429,7 +444,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "PfW4xtaz8LTfXETwlgxV",
@@ -456,7 +472,8 @@
               "explain": "Simplify the arithmetic to find the final coordinates of the midpoint.",
               "work": "\\(M = \\left( \\dfrac{-2}{2}, \\; \\dfrac{4}{2} \\right) = (-1, 2)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "QS4lOH091ZmDRMzZ6zgi",
@@ -489,7 +506,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "UVdH7sbgjanJ5GmeAUd2",
@@ -516,7 +534,8 @@
               "explain": "Simplify the differences, square them, and find the square root of the sum.",
               "work": "\\(d = \\sqrt{(3)^2 + (4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "WwGNAWG2mkEmUzAbI2pC",
@@ -543,7 +562,8 @@
               "explain": "Simplify the differences, square them, and find the square root of the sum.",
               "work": "\\(d = \\sqrt{(3)^2 + (4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -578,7 +598,8 @@
               "work": "\\(m = \\dfrac{6}{3} = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "cmVepyAqurGhBGGrtjTH",
@@ -606,7 +627,8 @@
               "work": "\\(m = \\dfrac{-4}{2} = -2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "k8ssSgmjzElvtd9BfYDC",
@@ -634,7 +656,8 @@
               "work": "\\(m = \\dfrac{-4}{2} = -2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "L78zWhgSGVV9J9H7fdnn",
@@ -666,7 +689,8 @@
                   "explain": "Set the gradient of the segment \\(AC\\) equal to 4 and solve the equation to find the value of \\(p\\).",
                   "work": "\\(\\dfrac{6 - 2}{p - 3} = 4 \\;\\Rightarrow\\; \\dfrac{4}{p - 3} = 4 \\;\\Rightarrow\\; p - 3 = 1 \\;\\Rightarrow\\; p = 4\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q19_2",
@@ -692,7 +716,8 @@
                   "explain": "Solve the equation by cross-multiplying and isolating \\(p\\).",
                   "work": "\\(p - 3 = 4 \\times (-4) = -16 \\;\\Rightarrow\\; p = -13\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "options": [
@@ -736,7 +761,8 @@
                   "explain": "Express the gradient of \\(AC\\) in terms of \\(p\\), set it equal to 4, and solve the equation.",
                   "work": "\\(\\dfrac{9 - 3}{p - 2} = 4 \\;\\Rightarrow\\; \\dfrac{6}{p - 2} = 4 \\;\\Rightarrow\\; p - 2 = 1.5 \\;\\Rightarrow\\; p = 3.5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q19b",
@@ -762,7 +788,8 @@
                   "explain": "Cross-multiply and isolate the unknown parameter \\(p\\) to calculate the final answer.",
                   "work": "\\(p - 2 = 6 \\times (-4) = -24 \\;\\Rightarrow\\; p = -22\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "options": [
@@ -801,7 +828,8 @@
               "work": "\\(\\text{Parallel gradient} = -0.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "pYKkC6zTdHrWOq0wEU2g",
@@ -829,7 +857,8 @@
               "work": "\\(m_{\\perp} = -\\dfrac{1}{2/3} = -\\dfrac{3}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "Q0PtYieRt8KDwinU7HQi",
@@ -863,7 +892,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "RFAD62SNPkds18V2yUOv",
@@ -891,7 +921,8 @@
               "work": "\\(\\text{Parallel gradient} = -0.5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "rQiowezFppVzeeGc97Kp",
@@ -923,7 +954,8 @@
               "work": "\\(m = -2.5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "xf34iFkj4HMvxlKlBDcs",
@@ -951,7 +983,8 @@
               "work": "\\(m_{\\perp} = -\\dfrac{1}{2/3} = -\\dfrac{3}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Y709epB9L7BVLeyIw4DK",
@@ -983,7 +1016,8 @@
               "work": "\\(m = -2.5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "YMJJAIr2s3EnT4fLDqoV",
@@ -1011,7 +1045,8 @@
               "work": "\\(m = \\dfrac{6}{3} = 2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -1046,7 +1081,8 @@
               "work": "3x - y - 4 = 0"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "6ADiAbVnmHpor7amzQcz",
@@ -1079,7 +1115,8 @@
               "work": "AB \\perp AC"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "6p2RrfZC3fd2p8MV0Sgy",
@@ -1107,7 +1144,8 @@
               "work": "3x - y - 4 = 0"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "8zrCEdpwd8E2wBP7I5bL",
@@ -1135,7 +1173,8 @@
               "work": "x\\text{-intercept} = 5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ABNklZMxAYL9nXsRq4zD",
@@ -1163,7 +1202,8 @@
               "work": "y = 3x + 10"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ANaWm3nkE3M8LPrsLWkY",
@@ -1191,7 +1231,8 @@
               "work": "y\\text{-intercept} = 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "FHbdlEmIH8yTLrEpDr7N",
@@ -1226,7 +1267,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Idp5v5rvGtfvm9yJu7Le",
@@ -1258,7 +1300,8 @@
               "work": "m = 2,\\; c = 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "jr2012-q14",
@@ -1288,7 +1331,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "jrhy2008-q23",
@@ -1318,7 +1362,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ks60Yc8Cio70KjkmekRT",
@@ -1346,7 +1391,8 @@
               "work": "x\\text{-intercept} = 5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "mbjPxygU2TFsL9y85cT2",
@@ -1378,7 +1424,8 @@
               "work": "y - 1 = 5x + 10 \\;\\Rightarrow\\; y = 5x + 11"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "MbkQ7du6gfpKZCDEvXHE",
@@ -1406,7 +1453,8 @@
               "work": "x\\text{-intercept} = 3,\\; y\\text{-intercept} = 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "o9p6p425gMxEtezzyuLU",
@@ -1434,7 +1482,8 @@
               "work": "y\\text{-intercept} = 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Og70h06C1OxLREWIBfvs",
@@ -1466,7 +1515,8 @@
               "work": "y - 1 = 5x + 10 \\;\\Rightarrow\\; y = 5x + 11"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "P0PoSxXwvrwiMPgQTdTj",
@@ -1498,7 +1548,8 @@
                   "explain": "Use the point-gradient formula with midpoint (7, 9) and perpendicular gradient -0.75.",
                   "work": "y - 9 = -0.75(x - 7) \\;\\Rightarrow\\; y = -0.75x + 14.25"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q12_2",
@@ -1524,7 +1575,8 @@
                   "explain": "Find equation using midpoint (8, 5) and gradient -0.25.",
                   "work": "y - 5 = -0.25(x - 8) \\;\\Rightarrow\\; y = -0.25x + 7"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q12_3",
@@ -1550,7 +1602,8 @@
                   "explain": "Substitute x = 14.5 back into either equation to calculate y.",
                   "work": "y = -0.25(14.5) + 7 = -3.625 + 7 = 3.375"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Find the midpoints and negative reciprocal gradients first.",
@@ -1584,7 +1637,8 @@
                   "explain": "Since all four side lengths are equal to square root of 80, the shape is a rhombus.",
                   "work": "AB = BC = CD = DA = \\sqrt{80}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q16_2",
@@ -1610,7 +1664,8 @@
                   "explain": "Calculate the sum under the square root and round to two decimal places.",
                   "work": "AC = \\sqrt{16 + 16} = \\sqrt{32} \\approx 5.66"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "A rhombus has four equal sides.",
@@ -1646,7 +1701,8 @@
               "work": "m = 2,\\; c = 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "u6OYYnU1e6JnkE54DRLC",
@@ -1674,7 +1730,8 @@
               "work": "y = 3x + 10"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "VwBqhtRbpizk6gFsshS1",
@@ -1702,7 +1759,8 @@
               "work": "x\\text{-intercept} = 3,\\; y\\text{-intercept} = 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "VWuI4exH4k7fsFBDY8yH",
@@ -1737,7 +1795,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "WzpYQOqCGJNs56cvZSHi",
@@ -1769,7 +1828,8 @@
                   "explain": "Use midpoint (5, 8) and gradient -1 to write the equation.",
                   "work": "y - 8 = -1(x - 5) \\;\\Rightarrow\\; y = -x + 13"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q12_2",
@@ -1795,7 +1855,8 @@
                   "explain": "Use midpoint (6, 5) and gradient -1/3 to write the equation.",
                   "work": "y - 5 = -\\dfrac{1}{3}(x - 6) \\;\\Rightarrow\\; y = -\\dfrac{1}{3}x + 7"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q12_3",
@@ -1821,7 +1882,8 @@
                   "explain": "Substitute x = 9 back into y = -x + 13 to solve for y.",
                   "work": "y = -9 + 13 = 4 \\;\\Rightarrow\\; (9, 4)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Use midpoints and negative reciprocal gradients.",
@@ -1855,7 +1917,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -1890,7 +1953,8 @@
               "explain": "Now apply the point-gradient formula using the point \\((6, 7)\\) and the gradient \\(-1\\), then simplify.",
               "work": "\\(y - 7 = -1(x - 6) \\;\\Rightarrow\\; y - 7 = -x + 6 \\;\\Rightarrow\\; y = -x + 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "812ZqdonrelA508apsgB",
@@ -1917,7 +1981,8 @@
               "explain": "Expand the bracket and isolate y to obtain the standard gradient-intercept form.",
               "work": "\\(y - 3 = 4x - 8 \\;\\Rightarrow\\; y = 4x - 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bevzkk3ZByBTEizTkw20",
@@ -1945,7 +2010,8 @@
               "explain": "Expand the right side and solve for y to write the final equation.",
               "work": "\\(y - 6 = -x + 5 \\;\\Rightarrow\\; y = -x + 11\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "BJJGDa6cTxtaoqkhXEuA",
@@ -1972,7 +2038,8 @@
               "explain": "Expand the right side and simplify to get the final gradient-intercept form.",
               "work": "\\(y - 10 = 2x - 4 \\;\\Rightarrow\\; y = 2x + 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "gAuI0LwaCn2Mx9jcfUJY",
@@ -2000,7 +2067,8 @@
               "explain": "Expand the bracket and solve for y to get the final equation.",
               "work": "\\(y - 5 = -2x + 8 \\;\\Rightarrow\\; y = -2x + 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Iu6qpGYu1QgxUTI9D8JP",
@@ -2027,7 +2095,8 @@
               "explain": "Expand the bracket and isolate y to obtain the standard gradient-intercept form.",
               "work": "\\(y - 3 = 4x - 8 \\;\\Rightarrow\\; y = 4x - 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jpyuVlIwIjb8vf9eI25J",
@@ -2055,7 +2124,8 @@
               "explain": "Simplify the equation into gradient-intercept form.",
               "work": "\\(y - 17 = 2x - 4 \\;\\Rightarrow\\; y = 2x + 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "jr2012-q34b",
@@ -2094,7 +2164,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "kyjavxvoShr6h9xtMdei",
@@ -2122,7 +2193,8 @@
               "explain": "Expand the bracket and solve for y to get the final equation.",
               "work": "\\(y - 7 = -1.5x + 6 \\;\\Rightarrow\\; y = -1.5x + 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "LFrnnZSzJVQ4G7pyKSAm",
@@ -2149,7 +2221,8 @@
               "explain": "Expand the right side and simplify to get the final gradient-intercept form.",
               "work": "\\(y - 10 = 2x - 4 \\;\\Rightarrow\\; y = 2x + 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "neqQrxHYvtq5tBDkl0dV",
@@ -2176,7 +2249,8 @@
               "explain": "Rearrange the terms to set the equation to zero in standard general form.",
               "work": "\\(3x + y - 13 = 0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "NPgm4yhbeHp3sHzgZI1n",
@@ -2203,7 +2277,8 @@
               "explain": "Rearrange the terms to set the equation to zero in standard general form.",
               "work": "\\(3x + y - 13 = 0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "OHlvxJv00ZqrRWwl0ozt",
@@ -2230,7 +2305,8 @@
               "explain": "Simplify the equation to write it in gradient-intercept form.",
               "work": "\\(y + 3 = -0.5x + 2 \\;\\Rightarrow\\; y = -0.5x - 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "QCtbUsju20Nvho9kJxec",
@@ -2258,7 +2334,8 @@
               "explain": "Simplify the terms to get the final equation.",
               "work": "\\(y - 12 = x - 2 \\;\\Rightarrow\\; y = x + 10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "qMhtIjv6KKVqG50Lm76l",
@@ -2296,7 +2373,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "tSLfrUXelZdaBT9Aiopa",
@@ -2323,7 +2401,8 @@
               "explain": "Simplify the equation to write it in gradient-intercept form.",
               "work": "\\(y + 3 = -0.5x + 2 \\;\\Rightarrow\\; y = -0.5x - 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sth2013-q4",
@@ -2366,7 +2445,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2404,7 +2484,8 @@
               "explain": "Substitute the value of x = 2 into the original equation (1) to solve for y.",
               "work": "\\begin{aligned} 3(2) + 2y &= 12 \\\\ 6 + 2y &= 12 \\\\ 2y &= 12 - 6 \\\\ 2y &= 6 \\\\ y &= 3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "b9QWPrjWQH6F3oTEjEaQ",
@@ -2431,7 +2512,8 @@
               "explain": "Substitute x = 5 into equation (1) to find y.",
               "work": "\\begin{aligned} y &= 2(5) + 1 \\\\ y &= 10 + 1 \\\\ y &= 11 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "c4e7rwuRT2m0zPXwuI5P",
@@ -2463,7 +2545,8 @@
               "explain": "Substitute the value of y = 4 back into equation (3) to solve for x.",
               "work": "\\begin{aligned} x &= 4 - 1 \\\\ x &= 3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "D3lCXwpyAucLDy537Zxw",
@@ -2491,7 +2574,8 @@
               "explain": "Substitute x = -3 into equation (1) to calculate y.",
               "work": "\\begin{aligned} y &= 4(-3) + 1 \\\\ y &= -12 + 1 \\\\ y &= -11 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "eLWvM9X9Pm9bL4zdJRmT",
@@ -2524,7 +2608,8 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ezwUyNqnfIk4xg5TUpDp",
@@ -2551,7 +2636,8 @@
               "explain": "Substitute x = 5 into equation (1) to find y.",
               "work": "\\begin{aligned} y &= 2(5) + 1 \\\\ y &= 10 + 1 \\\\ y &= 11 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "H56AcrjKFLChAIORT1dT",
@@ -2578,7 +2664,8 @@
               "explain": "Substitute x = 3 back into equation (2) to solve for y.",
               "work": "\\begin{aligned} 3 - y &= 2 \\\\ -y &= 2 - 3 \\\\ -y &= -1 \\\\ y &= 1 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "joUWJ7cB8loWZaR7rZ59",
@@ -2609,7 +2696,8 @@
               "explain": "Substitute the value of x = 2 into the original equation (1) to solve for y.",
               "work": "\\begin{aligned} 3(2) + 2y &= 12 \\\\ 6 + 2y &= 12 \\\\ 2y &= 12 - 6 \\\\ 2y &= 6 \\\\ y &= 3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "l0FNj29VVEpB7CXkYxrh",
@@ -2641,7 +2729,8 @@
               "explain": "Substitute y = 1 back into equation (3) to find the value of x.",
               "work": "\\begin{aligned} x &= 1 + 3 \\\\ x &= 4 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "lKTJRusCPIVI5btUWf3B",
@@ -2672,7 +2761,8 @@
               "explain": "Substitute x = 3 back into equation (1) to find y.",
               "work": "\\begin{aligned} y &= 4(3) - 7 \\\\ y &= 12 - 7 \\\\ y &= 5 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "N5YaS6PUOt6jn4MxAOg1",
@@ -2698,7 +2788,8 @@
               "explain": "Since the coordinates (4, 7) do not satisfy the third equation, the three lines do not intersect at a common point. Therefore, they are not concurrent.",
               "work": "\\text{The lines are not concurrent.}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "N6zqolDU1KdaB1QG1LQ7",
@@ -2730,7 +2821,8 @@
               "explain": "Substitute x = 2 back into the expression for y to calculate the y-value.",
               "work": "\\begin{aligned} y &= 8 - 2(2) \\\\ y &= 8 - 4 \\\\ y &= 4 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "QwPVMXniTHPetDWysi2h",
@@ -2783,7 +2875,8 @@
               "explain": "Substitute x = 5 into equation (1) to find y.",
               "work": "\\begin{aligned} y &= 2(5) + 1 \\\\ y &= 10 + 1 \\\\ y &= 11 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "tHz4KzxbS3Bv9wvq9mQT",
@@ -2832,7 +2925,8 @@
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q16c",
@@ -2866,7 +2960,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2905,7 +3000,8 @@
               "explain": "Calculate the width and length, then calculate the perimeter: 2 × (Width + Length).",
               "work": "\\begin{aligned} \\text{Width} &= 2(2) = 4 \\\\ \\text{Length} &= 3 + 10 = 13 \\\\ \\text{Perimeter} &= 2 \\times (4 + 13) = 34 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "6abGOCT2NZDknQ6TlxDl",
@@ -2932,7 +3028,8 @@
               "explain": "Substitute x = 16 back into equation (1) to solve for y.",
               "work": "16 + y = 25 \\;\\Rightarrow\\; y = 9"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "06pY1NsSVeW4XUdWAlcZ",
@@ -2959,7 +3056,8 @@
               "explain": "Subtract equation (2) from equation (3) to eliminate x, then solve for y.",
               "work": "\\begin{aligned} (6x + 10y) - (6x + 2y) &= 42 - 18 \\\\ 8y &= 24 \\\\ y &= 3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "8NEwwnDuTZEdFTLGQlxZ",
@@ -2986,7 +3084,8 @@
               "explain": "Subtract equation (2) from equation (3) to eliminate m and solve for c.",
               "work": "\\begin{aligned} (6c + 4m) - (2c + 4m) &= 36 - 20 \\\\ 4c &= 16 \\\\ c &= 4 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "AlfhliYzIX2pNtKt7kus",
@@ -3013,7 +3112,8 @@
               "explain": "Substitute W = 8 back into equation (2) to calculate L.",
               "work": "L = 8 + 4 = 12"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dmQF1t4DMT9O02BX3OvR",
@@ -3040,7 +3140,8 @@
               "explain": "Substitute x = 5 back into equation (2) to solve for y.",
               "work": "5 - y = 5 \\;\\Rightarrow\\; -y = 0 \\;\\Rightarrow\\; y = 0"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "GrHk5JQeQIEHDnoaWrKn",
@@ -3067,7 +3168,8 @@
               "explain": "Substitute x = 16 back into equation (1) to solve for y.",
               "work": "16 + y = 25 \\;\\Rightarrow\\; y = 9"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jrhy2008-q16",
@@ -3101,7 +3203,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "lTJcPnhsovlRPajTNN01",
@@ -3128,7 +3231,8 @@
               "explain": "Subtract equation (3) from equation (2) to eliminate x, then solve for y.",
               "work": "\\begin{aligned} (5x + 10y) - (5x + 5y) &= 160 - 100 \\\\ 5y &= 60 \\\\ y &= 12 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "ndeFFvnTokWAFYkmi8yT",
@@ -3155,7 +3259,8 @@
               "explain": "Substitute x = 5 back into equation (2) to solve for y.",
               "work": "5 - y = 5 \\;\\Rightarrow\\; -y = 0 \\;\\Rightarrow\\; y = 0"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "o2BYDpvSz8F4zEorJIZT",
@@ -3183,7 +3288,8 @@
               "explain": "Substitute x = 123 back into equation (1) to solve for y.",
               "work": "123 + y = 152 \\;\\Rightarrow\\; y = 152 - 123 = 29"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "PfPtLJOrp4a4q5qWr6db",
@@ -3211,7 +3317,8 @@
               "explain": "Substitute x = 117 back into equation (1) to solve for y.",
               "work": "117 + y = 160 \\;\\Rightarrow\\; y = 160 - 117 = 43"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "uWGI1YOwQyYumvsr4Nu7",
@@ -3238,7 +3345,8 @@
               "explain": "Substitute W = 8 back into equation (2) to calculate L.",
               "work": "L = 8 + 4 = 12"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "VYQ3blOS2uUL71if0EJi",
@@ -3265,7 +3373,8 @@
               "explain": "Subtract equation (2) from equation (3) to eliminate m and solve for c.",
               "work": "\\begin{aligned} (6c + 4m) - (2c + 4m) &= 36 - 20 \\\\ 4c &= 16 \\\\ c &= 4 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "x7vWahsyVSiWDTlxLvHF",
@@ -3292,7 +3401,8 @@
               "explain": "Subtract equation (3) from equation (2) to eliminate x, then solve for y.",
               "work": "\\begin{aligned} (5x + 10y) - (5x + 5y) &= 160 - 100 \\\\ 5y &= 60 \\\\ y &= 12 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -3323,7 +3433,8 @@
               "work": "d = \\sqrt{64+36} = 10"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q1b",
@@ -3347,7 +3458,8 @@
               "work": "d = \\sqrt{16+9} = 5"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q1c",
@@ -3371,7 +3483,8 @@
               "work": "d = \\sqrt{16+9} = 5"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q1d",
@@ -3395,7 +3508,8 @@
               "work": "d = \\sqrt{16+9} = 5"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q3a",
@@ -3419,7 +3533,8 @@
               "work": "m = \\frac{3}{4}"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q3b",
@@ -3443,7 +3558,8 @@
               "work": "m = 1"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q3c",
@@ -3467,7 +3583,8 @@
               "work": "m = 1"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q3d",
@@ -3491,7 +3608,8 @@
               "work": "m = \\frac{3}{2}"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4a",
@@ -3515,7 +3633,8 @@
               "work": "m = 3, \\; c = -1"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4b",
@@ -3539,7 +3658,8 @@
               "work": "m = 1, \\; c = 4"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4c",
@@ -3563,7 +3683,8 @@
               "work": "m = -1, \\; c = 5"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4d",
@@ -3587,7 +3708,8 @@
               "work": "m = -1, \\; c = 6"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4e",
@@ -3615,7 +3737,8 @@
               "work": "m = -\\dfrac{3}{2}, \\; c = 3"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y10-4g-q4f",
@@ -3650,7 +3773,8 @@
           "timeLimit": 45,
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5a_i",
@@ -3681,7 +3805,8 @@
           "timeLimit": 45,
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5a_ii",
@@ -3711,7 +3836,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5b_i",
@@ -3737,7 +3863,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5b_ii",
@@ -3767,7 +3894,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5c_i",
@@ -3793,7 +3921,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5c_ii",
@@ -3823,7 +3952,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5d_i",
@@ -3849,7 +3979,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q5d_ii",
@@ -3879,7 +4010,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6a",
@@ -3909,7 +4041,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6b",
@@ -3939,7 +4072,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6c",
@@ -3965,7 +4099,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6d",
@@ -3991,7 +4126,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6e",
@@ -4017,7 +4153,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6f",
@@ -4043,7 +4180,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6g",
@@ -4069,7 +4207,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q6h",
@@ -4099,7 +4238,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q7a",
@@ -4129,7 +4269,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q7b",
@@ -4159,7 +4300,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q7c",
@@ -4189,7 +4331,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q7d",
@@ -4219,7 +4362,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8a",
@@ -4249,7 +4393,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8b",
@@ -4279,7 +4424,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8c",
@@ -4309,7 +4455,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8d",
@@ -4335,7 +4482,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8e",
@@ -4365,7 +4513,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q8f",
@@ -4395,7 +4544,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9a",
@@ -4433,7 +4583,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9b",
@@ -4471,7 +4622,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9c",
@@ -4513,7 +4665,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9d",
@@ -4555,7 +4708,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9e",
@@ -4597,7 +4751,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q9f",
@@ -4635,7 +4790,8 @@
           ],
           "meta": {
             "course": "Mathematics"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-4g-q10a",
@@ -4663,7 +4819,8 @@
               "work": "\\begin{aligned} (3a + 2b) + (4a - 2b) &= 14 + 14 \\\\ 7a &= 28 \\\\ a &= 4 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-4g-q10b",
@@ -4687,7 +4844,8 @@
               "work": "\\begin{aligned} 2(4) - b &= 7 \\\\ 8 - b &= 7 \\\\ b &= 1 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-4g-q11",
@@ -4762,7 +4920,8 @@
                   "explain": "Calculate the horizontal distance by subtracting their x-coordinates.",
                   "work": "d = x_C - x_B = 7 - 3 = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q11b_i",
@@ -4788,7 +4947,8 @@
                   "explain": "Substitute the x-values to find the expression in terms of a.",
                   "work": "\\text{Length} = a - 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q11b_ii",
@@ -4814,7 +4974,8 @@
                   "explain": "State the final expression for the length of side AD.",
                   "work": "AD = a - 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q11b_iii",
@@ -4840,7 +5001,8 @@
                   "explain": "Combine the coordinates to state the final position of D.",
                   "work": "D(a - 3, 2)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "options": [
@@ -4897,7 +5059,8 @@
                   "explain": "Therefore, the initial amount of water in the tank was 40000 litres.",
                   "work": "V_{\\text{initial}} = 40000"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q12b",
@@ -4923,7 +5086,8 @@
                   "explain": "The negative sign indicates water is leaving. Thus, the tank leaks at 40 litres per hour.",
                   "work": "\\text{Leak rate} = 40 \\text{ L/h}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q12c",
@@ -4949,7 +5113,8 @@
                   "explain": "State the final equation showing remaining volume V in terms of hours t.",
                   "work": "V = -40t + 40000"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q12d",
@@ -4975,7 +5140,8 @@
                   "explain": "Transpose 40t and divide to find the final hours.",
                   "work": "40t = 40000 \\;\\Rightarrow\\; t = 1000 \\text{ hours}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "options": [
@@ -5027,7 +5193,8 @@
                   "explain": "The vertical axis represents the distance from Melbourne.",
                   "work": "\\(d_{\\text{start}} = 30 \\text{ km}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_ii_a",
@@ -5049,7 +5216,8 @@
                   "explain": "The vertical axis at this point gives the final distance from Melbourne.",
                   "work": "\\(d_{\\text{finish}} = 180 \\text{ km}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_iii_a",
@@ -5071,7 +5239,8 @@
                   "explain": "Substitute the times from the graph.",
                   "work": "\\(t_{\\text{taken}} = 2.5 - 0 = 2.5 \\text{ hours}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_iv_a",
@@ -5097,7 +5266,8 @@
                   "explain": "Evaluate the fraction.",
                   "work": "\\(\\text{Speed} = 60 \\text{ km/h}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13b_part1",
@@ -5123,7 +5293,8 @@
                   "explain": "Substitute these values into the linear equation.",
                   "work": "\\(d = 60t + 30\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180,
@@ -5177,7 +5348,8 @@
                   "explain": "Thus, Car B started 120 km from Melbourne.",
                   "work": "d_{\\text{start}} = 120"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_ii_b",
@@ -5199,7 +5371,8 @@
                   "explain": "Read the distance d from the coordinate pair.",
                   "work": "d_{\\text{finish}} = 0"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_iii_b",
@@ -5217,7 +5390,8 @@
                   "explain": "The time taken is the difference in time from start (t = 0) to finish (t = 1.5).",
                   "work": "t_{\\text{taken}} = 1.5 - 0 = 1.5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13a_iv_b",
@@ -5243,7 +5417,8 @@
                   "explain": "Evaluate the division.",
                   "work": "\\text{Speed} = 80"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-4g-q13c_part2",
@@ -5269,7 +5444,8 @@
                   "explain": "Convert the fractional hours to minutes (0.643 × 60 = 38.57 minutes) and add it to 9:00 a.m.",
                   "work": "\\begin{aligned} \\text{Minutes} &\\approx 39 \\\\ \\text{Passing Time} &= 9\\!:\\!39 \\text{ a.m.} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180,
@@ -5318,7 +5494,8 @@
                   "explain": "Apply Pythagoras / the distance formula.",
                   "work": "\\(AC=\\sqrt{3^2+(-8)^2}=\\sqrt{9+64}=\\sqrt{73}\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "sth2013-q17a-ii",
@@ -5345,7 +5522,8 @@
                   "explain": "The line falls from left to right, so a negative gradient makes sense.",
                   "work": "\\(m_{AC}=-\\tfrac83\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "sth2013-q17a-iii",
@@ -5376,7 +5554,8 @@
                   "explain": "Check with C: \\(8(4)+3(-1)-29=0\\ \\checkmark\\).",
                   "work": "\\(8x+3y-29=0\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "sth2013-q17a-iv",
@@ -5407,7 +5586,8 @@
                   "explain": "Check: vertex order A→B→C→D, and \\(\\vec{AD}=\\vec{BC}=(5,-6)\\ \\checkmark\\).",
                   "work": "\\(D(6,1)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         }

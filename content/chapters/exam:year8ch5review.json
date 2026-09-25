@@ -64,7 +64,8 @@
               "explain": "Subtract \\(65^\\circ\\) from \\(180^\\circ\\).",
               "work": "\\angle BOC = 180^\\circ - 65^\\circ = 115^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q1b",
@@ -129,7 +130,8 @@
               "explain": "Solve for \\(\\angle BOC\\).",
               "work": "\\angle BOC = 360^\\circ - 285^\\circ = 75^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q1c",
@@ -190,7 +192,8 @@
               "explain": "Subtract from \\(180^\\circ\\).",
               "work": "\\angle BOC = 180^\\circ - 130^\\circ = 50^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q1d",
@@ -275,7 +278,8 @@
               "explain": "\\(\\angle BOC\\) and \\(\\angle FOE\\) are vertically opposite.",
               "work": "\\angle BOC = \\angle FOE = 75^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q1e",
@@ -352,7 +356,8 @@
               "explain": "Solve for \\(\\angle COD\\).",
               "work": "\\angle COD = 360^\\circ - 245^\\circ = 115^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q1f",
@@ -425,7 +430,8 @@
               "explain": "Solve for \\(\\angle COD\\).",
               "work": "\\angle COD = 180^\\circ - 95^\\circ = 85^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5h-q2b",
@@ -490,7 +496,8 @@
               "explain": "Solve for \\alpha",
               "work": "\\alpha = 180^\\circ - 145^\\circ = 35^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     }

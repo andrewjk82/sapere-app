@@ -42,7 +42,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q1b",
@@ -78,7 +79,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q1c",
@@ -114,7 +116,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q1d",
@@ -150,7 +153,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q1e",
@@ -186,7 +190,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q1f",
@@ -222,7 +227,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q2a",
@@ -258,7 +264,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q2b",
@@ -291,7 +298,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{You can buy } 6000\\text{ shares}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q2c",
@@ -324,7 +332,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{You can buy } 50\\text{ notebooks}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q2d",
@@ -357,7 +366,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{He needs } 17\\text{ lettuces}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q2e",
@@ -390,7 +400,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{The essay needs } 13\\text{ pages}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q3a",
@@ -423,7 +434,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{The suburbs are } 11\\text{ km apart}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q3b",
@@ -456,7 +468,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{The map distance is } 15\\text{ cm}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q3c",
@@ -489,7 +502,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{The person is } 1.2\\text{ m tall}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q3d",
@@ -522,7 +536,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{The shadow is } 11.6\\text{ m long}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q3e",
@@ -555,7 +570,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{He should use } 1125\\text{ g of flour}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10a-q5a",
@@ -588,7 +604,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{You can buy } 10\\text{ kg of tomatoes}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q5b",
@@ -621,7 +638,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{19 oranges cost } \\$7.60.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q5c",
@@ -654,7 +672,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{It will contain } 480\\text{ g of fruit}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q5d",
@@ -687,7 +706,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{1.5 L contains } 240\\text{ g of sugar}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q6a",
@@ -720,7 +740,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{Three-fifths of the amount is } 270.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q6b",
@@ -753,7 +774,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{He can paint } 12\\text{ panels}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q6c",
@@ -786,7 +808,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{They could clear } 27\\text{ bags}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q6d",
@@ -819,7 +842,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{It takes } 300\\text{ g of cereal}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q6e",
@@ -852,7 +876,8 @@
               "explain": "State the final answer with units.",
               "work": "\\(\\text{Give the puppy } 15.3\\text{ mL}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q7a",
@@ -883,7 +908,8 @@
               "explain": "State the better buy.",
               "work": "\\(\\text{The } 650\\text{ g tin is the better buy.}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q7b",
@@ -914,7 +940,8 @@
               "explain": "State the better buy.",
               "work": "\\(\\text{The } 600\\text{ g grapes are the better buy.}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q7c",
@@ -945,7 +972,8 @@
               "explain": "State the better buy.",
               "work": "\\(\\text{The } 150\\text{ g toothpaste is the better buy.}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10a-q8",
@@ -980,7 +1008,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-10a-q9",
@@ -1013,7 +1042,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{It will take } 30\\text{ more days}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1045,7 +1075,8 @@
             {
               "explain": "Looking at the y-axis, the horizontal section is at a distance of 60 km."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q4b_graph",
@@ -1072,7 +1103,8 @@
               "explain": "Calculate the difference in time.",
               "work": "From 9:00 am to 10:30 am is 1 hour and 30 minutes."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q4c_graph",
@@ -1099,7 +1131,8 @@
               "explain": "Calculate the difference.",
               "work": "From 10:30 am to 11:30 am is exactly 1 hour."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q4d_graph",
@@ -1130,7 +1163,8 @@
               "explain": "Calculate the average speed.",
               "work": "\\(\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{80}{2} = 40\\text{ km/h}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1167,7 +1201,8 @@
             {
               "explain": "The simplified ratio is \\(5 : 6\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2_ratio",
@@ -1197,7 +1232,8 @@
             {
               "explain": "The simplified ratio is \\(1 : 5\\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1234,7 +1270,8 @@
             {
               "explain": "There were 24 child tickets sold."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1274,7 +1311,8 @@
               "explain": "State the final missing number.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q1b",
@@ -1307,7 +1345,8 @@
               "explain": "State the final missing number.",
               "work": "\\(2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q1c",
@@ -1343,7 +1382,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q1d",
@@ -1379,7 +1419,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2a",
@@ -1415,7 +1456,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2b",
@@ -1451,7 +1493,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2c",
@@ -1487,7 +1530,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2d",
@@ -1523,7 +1567,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2e",
@@ -1559,7 +1604,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2f",
@@ -1595,7 +1641,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2g",
@@ -1631,7 +1678,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q2h",
@@ -1667,7 +1715,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q3",
@@ -1703,7 +1752,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q4",
@@ -1742,7 +1792,8 @@
           },
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q5",
@@ -1781,7 +1832,8 @@
           },
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q6",
@@ -1817,7 +1869,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q7",
@@ -1850,7 +1903,8 @@
               "explain": "State the final answer in context.",
               "work": "\\(14\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q8a",
@@ -1882,7 +1936,8 @@
               "explain": "State the hourly rate.",
               "work": "\\(\\text{The hourly rate is } \\$24.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q8b",
@@ -1914,7 +1969,8 @@
               "explain": "State the final pay.",
               "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q9",
@@ -1947,7 +2003,8 @@
               "explain": "State the final answer in context.",
               "work": "\\(540\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q10a",
@@ -1979,7 +2036,8 @@
               "explain": "State the total cost.",
               "work": "\\(\\text{The cost is } \\$34.20.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q10b",
@@ -2011,7 +2069,8 @@
               "explain": "State the quantity in kg.",
               "work": "\\(\\text{You can buy } 6\\text{ kg}.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q11a",
@@ -2047,7 +2106,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q11b",
@@ -2083,7 +2143,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-10g-q12",
@@ -2119,7 +2180,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q13",
@@ -2152,7 +2214,8 @@
               "explain": "State the final answer with correct units or in simplest form.",
               "work": "\\(96\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q14",
@@ -2188,7 +2251,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q15",
@@ -2221,7 +2285,8 @@
               "explain": "State the final answer with correct units or in simplest form.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q16a",
@@ -2253,7 +2318,8 @@
               "explain": "State the real length.",
               "work": "\\(24\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q16b",
@@ -2285,7 +2351,8 @@
               "explain": "State the real width.",
               "work": "\\(12\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q16c",
@@ -2317,7 +2384,8 @@
               "explain": "State the real distance.",
               "work": "\\(6.4\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q16d",
@@ -2349,7 +2417,8 @@
               "explain": "State the real area.",
               "work": "\\(288\\text{ m}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q16e",
@@ -2381,7 +2450,8 @@
               "explain": "State the real distance.",
               "work": "\\(1\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q17a",
@@ -2417,7 +2487,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q17b",
@@ -2453,7 +2524,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q17c",
@@ -2489,7 +2561,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q17d",
@@ -2525,7 +2598,8 @@
           ],
           "alsoIn": [
             "exam:year8ch10g"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q18a",
@@ -2558,7 +2632,8 @@
               "explain": "Calculate the result.",
               "work": "\\(1\\text{ cm} : 1.6\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q18b",
@@ -2591,7 +2666,8 @@
               "explain": "State the final missing value.",
               "work": "\\(16\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q18c",
@@ -2624,7 +2700,8 @@
               "explain": "State the final missing value.",
               "work": "\\(0.016\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q19",
@@ -2657,7 +2734,8 @@
               "explain": "State the final answer with correct units.",
               "work": "\\(340\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q20",
@@ -2690,7 +2768,8 @@
               "explain": "State the final answer with correct units.",
               "work": "\\(75\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q21",
@@ -2723,7 +2802,8 @@
               "explain": "State the final answer with correct units.",
               "work": "\\(4.5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q22a",
@@ -2755,7 +2835,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{She will walk } 4.5\\text{ km}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q22b",
@@ -2787,7 +2868,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\text{She will walk } 13.5\\text{ km}.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q22c",
@@ -2822,7 +2904,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-10g-q23",
@@ -2855,7 +2938,8 @@
               "explain": "State the final answer with correct units.",
               "work": "\\(700\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q24",
@@ -2888,7 +2972,8 @@
               "explain": "State the final answer with correct units.",
               "work": "\\(54\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-10g-q25a",
@@ -2920,7 +3005,8 @@
               "explain": "State the total time.",
               "work": "\\(90\\text{ minutes}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q25b",
@@ -2952,7 +3038,8 @@
               "explain": "State the average speed.",
               "work": "\\(60\\text{ km/h}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q25c",
@@ -2984,7 +3071,8 @@
               "explain": "State the average speed.",
               "work": "\\(20\\text{ km/h}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q25d",
@@ -3016,7 +3104,8 @@
               "explain": "State the average speed.",
               "work": "\\(40\\text{ km/h}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-10g-q8",
@@ -3052,7 +3141,8 @@
                   "explain": "State the hourly rate.",
                   "work": "\\(\\text{The hourly rate is } \\$24.\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q8b",
@@ -3082,7 +3172,8 @@
                   "explain": "State the final pay.",
                   "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions",
@@ -3123,7 +3214,8 @@
                   "explain": "State the total cost.",
                   "work": "\\(\\text{The cost is } \\$34.20.\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q10b",
@@ -3153,7 +3245,8 @@
                   "explain": "State the quantity in kg.",
                   "work": "\\(\\text{You can buy } 6\\text{ kg}.\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions",
@@ -3194,7 +3287,8 @@
                   "explain": "State the total time.",
                   "work": "\\(90\\text{ minutes}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q25b",
@@ -3224,7 +3318,8 @@
                   "explain": "State the average speed.",
                   "work": "\\(60\\text{ km/h}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q25c",
@@ -3254,7 +3349,8 @@
                   "explain": "State the average speed.",
                   "work": "\\(20\\text{ km/h}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q25d",
@@ -3284,7 +3380,8 @@
                   "explain": "State the average speed.",
                   "work": "\\(40\\text{ km/h}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions",

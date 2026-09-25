@@ -36,7 +36,8 @@
               "work": "\\(\\text{Quotient} = 65, quad \\text{Remainder} = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q2e",
@@ -65,7 +66,8 @@
               "work": "\\(\\text{Quotient} = 77, quad \\text{Remainder} = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q2g",
@@ -102,7 +104,8 @@
               "work": "\\(\\text{Quotient} = 9737, quad \\text{Remainder} = 5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q2h",
@@ -139,7 +142,8 @@
               "work": "\\(\\text{Quotient} = 3286, quad \\text{Remainder} = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q3",
@@ -168,7 +172,8 @@
               "work": "\\(\\therefore\\; 910\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-1j-q4",
@@ -197,7 +202,8 @@
               "work": "\\(\\text{Boxes} = 57, quad \\text{Leftover} = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q9",
@@ -226,7 +232,8 @@
               "work": "\\(\\text{Cartons} = 34, quad \\text{Leftover} = 7\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1j-q10",
@@ -259,7 +266,8 @@
               "work": "\\(\\text{Packages} = 972, quad \\text{Leftover} = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

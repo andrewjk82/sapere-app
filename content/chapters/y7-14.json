@@ -32,7 +32,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-14-practice-q2",
@@ -58,7 +59,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-14-practice-q3",
@@ -84,7 +86,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-14-practice-q4",
@@ -111,7 +114,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2021-q3",
@@ -142,7 +146,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q6",
@@ -174,7 +179,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "0CucQgkcFzUNh3sNOPDZ",
@@ -203,7 +209,8 @@
               "work": "\\(62.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "1zxoc8DtgeEmbo0Cq8zM",
@@ -232,7 +239,8 @@
               "work": "\\(76%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "3LkKnGE2Exg0j0pGTzfM",
@@ -261,7 +269,8 @@
               "work": "\\(72%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "3vrjT7oeWq5Yqk1QnIya",
@@ -290,7 +299,8 @@
               "work": "\\(54\\frac{6}{11}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "6A0lunQ44yf69H5Kqvsy",
@@ -319,7 +329,8 @@
               "work": "\\(\\frac{307}{1000} \\text{ and } 30.7\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "6iFkosklO5D0tscV7Xe9",
@@ -348,7 +359,8 @@
               "work": "\\(70%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "6l6nIHbdsxOtr23Ittuq",
@@ -377,7 +389,8 @@
               "work": "\\(3\\frac{19}{25}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "18pYq3bpV68k8vY7b4MG",
@@ -406,7 +419,8 @@
               "work": "\\(\\frac{563}{1000} \\text{ and } 56.3\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "34D1Q3TM9dmozjzDAEGm",
@@ -435,7 +449,8 @@
               "work": "\\(0.24\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "91rl2Q3mU355IBpH0q1E",
@@ -464,7 +479,8 @@
               "work": "\\(0.425\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "331P79K44WR3aoBXkV78",
@@ -493,7 +509,8 @@
               "work": "\\(41\\frac{2}{3}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "A3OqyprxEGC9iZRch0bH",
@@ -522,7 +539,8 @@
               "work": "\\(27.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "AsvUacsCV9O1gKAx5bGS",
@@ -551,7 +569,8 @@
               "work": "\\(\\frac{7}{200}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "aXRjsoryvhdrNNhlkVCi",
@@ -580,7 +599,8 @@
               "work": "\\(22.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "bcwei2U76y9xd1xnPzVY",
@@ -609,7 +629,8 @@
               "work": "\\(1.36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "bHZ5l8q6ITMroWYHhKya",
@@ -638,7 +659,8 @@
               "work": "\\(\\frac{3}{5} \\text{ and } 60\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "BIeKJZhZu4BMdIfIixKo",
@@ -667,7 +689,8 @@
               "work": "\\(0.17 \\text{ and } 17\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "bKMVvHxoLApE00Yz3rJ7",
@@ -696,7 +719,8 @@
               "work": "\\(83\\frac{1}{3}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "CAjtj5BXwPzoRYaC6cqe",
@@ -725,7 +749,8 @@
               "work": "\\(167%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "CIYveFROimSRZJOlUVWE",
@@ -754,7 +779,8 @@
               "work": "\\(1.9\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Cn5BBPzcBeGHi1sq0STi",
@@ -783,7 +809,8 @@
               "work": "\\(\\frac{9}{50}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "cy9YsKAyFtfjNUw2VC86",
@@ -812,7 +839,8 @@
               "work": "\\(3\\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "D5zrvLJ7UfIxgrEjg2zN",
@@ -841,7 +869,8 @@
               "work": "\\(0.09\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "D22Dyw3m0bly20Fo6Ckm",
@@ -870,7 +899,8 @@
               "work": "\\(30%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Dth1ZOMMCloqHhFkT7bU",
@@ -899,7 +929,8 @@
               "work": "\\(3.2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "e9M5LDG2U6IyNRvUCl3F",
@@ -928,7 +959,8 @@
               "work": "\\(58\\frac{1}{3}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "eCoK6YaCVMkDqr8mSwsV",
@@ -957,7 +989,8 @@
               "work": "\\(0.375 \\text{ and } 37.5\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ene4aEyiyEpMBjX7FozW",
@@ -986,7 +1019,8 @@
               "work": "\\(0.8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "erhubcHhpu8sw6FTaXt3",
@@ -1015,7 +1049,8 @@
               "work": "\\(1\\frac{2}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Evf5X23nBzwMP30YOKHG",
@@ -1044,7 +1079,8 @@
               "work": "\\(55%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "f5nUXm0huUqTsfz06cPI",
@@ -1073,7 +1109,8 @@
               "work": "\\(243%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "fUInCicPSH9Zkljl37lP",
@@ -1102,7 +1139,8 @@
               "work": "\\(\\frac{7}{80}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "grvG9bfdXCNVwutocymO",
@@ -1131,7 +1169,8 @@
               "work": "\\(\\frac{17}{20}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "gxA51kRARqgfgZukTzX5",
@@ -1160,7 +1199,8 @@
               "work": "\\(65%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "h0RG6MoE4nWSsFQH7FCZ",
@@ -1189,7 +1229,8 @@
               "work": "\\(0.85 \\text{ and } \\frac{17}{20}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "hHL9J9lVSazew1Qr8k8U",
@@ -1218,7 +1259,8 @@
               "work": "\\(89%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "IB0n9AqgRN44iQkKD2HU",
@@ -1247,7 +1289,8 @@
               "work": "\\(44\\frac{4}{9}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "IjL2eNa1A5WSnYE7QcFZ",
@@ -1276,7 +1319,8 @@
               "work": "\\(\\frac{19}{20}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "kYKeZhHhDKIEcWjmEZ3q",
@@ -1305,7 +1349,8 @@
               "work": "\\(0.875 \\text{ and } 87.5\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "lzo558vAv4PYk7c0HY1P",
@@ -1334,7 +1379,8 @@
               "work": "\\(\\frac{5}{8}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "M95JLkUeOqe6QrMdPfCy",
@@ -1363,7 +1409,8 @@
               "work": "\\(0.48\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "mdxQshECEAe3uQFlwkR9",
@@ -1392,7 +1439,8 @@
               "work": "\\(\\frac{9}{20}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "MmHPCJAsuXyuHv33FTMB",
@@ -1421,7 +1469,8 @@
               "work": "\\(60%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "mrioJCa9axSHArZAaNPo",
@@ -1450,7 +1499,8 @@
               "work": "\\(\\frac{3}{50}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "mto4rR0Ge4pPXDNgxEQf",
@@ -1479,7 +1529,8 @@
               "work": "\\(\\frac{4}{5} \\text{ and } 80\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "NIPdPgsWtrth0Ysigk9h",
@@ -1508,7 +1559,8 @@
               "work": "\\(480%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "NVOIzYW9hApFs3Fh7Z30",
@@ -1537,7 +1589,8 @@
               "work": "\\(2\\frac{1}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "NYg0ZdokpNhGpuyueH30",
@@ -1566,7 +1619,8 @@
               "work": "\\(5.4\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "NZ5P1DRRPk7EzJdpwE7Q",
@@ -1595,7 +1649,8 @@
               "work": "\\(85\\frac{5}{7}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "O6jqB2P2Hmn4B0qEEVIi",
@@ -1624,7 +1679,8 @@
               "work": "\\(57.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "obmILE0wYjxuH4hu64HM",
@@ -1653,7 +1709,8 @@
               "work": "\\(23.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Ot45nhC1oNoCtHiUGQw5",
@@ -1682,7 +1739,8 @@
               "work": "\\(62.5%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "PslQHyRLd9PUS8joAHwv",
@@ -1711,7 +1769,8 @@
               "work": "\\(40%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "QPTA44fePdZxAONNNIwJ",
@@ -1740,7 +1799,8 @@
               "work": "\\(148%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "R3jioOAjSnCs0B9H0XqE",
@@ -1769,7 +1829,8 @@
               "work": "\\(37.5\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "rglylVeubuNU24S3DU6l",
@@ -1798,7 +1859,8 @@
               "work": "\\(114%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "RIVtDmmll73S9E1Horzi",
@@ -1827,7 +1889,8 @@
               "work": "\\(0.9%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "riwtkXiEq8SrCkk9pFfJ",
@@ -1856,7 +1919,8 @@
               "work": "\\(38%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "RufxKAOuzyBOf5Jy4FV5",
@@ -1885,7 +1949,8 @@
               "work": "\\(1.5 \\text{ and } 1\\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "rumZ1gsd4HtKkfvAYgXt",
@@ -1914,7 +1979,8 @@
               "work": "\\(81%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "scCeaQ6lOmvuCai6w3i7",
@@ -1943,7 +2009,8 @@
               "work": "\\(2\\frac{2}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "SlfktcSlTGevOpRfTxwz",
@@ -1972,7 +2039,8 @@
               "work": "\\(\\frac{7}{20}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "TinS39we8Hz5TAvkwXeu",
@@ -2001,7 +2069,8 @@
               "work": "\\(45%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "TO0ZWjneeyfnb6tgBjjj",
@@ -2030,7 +2099,8 @@
               "work": "\\(42\\frac{6}{7}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "U2XTFI3pb1B6UMqWgA7K",
@@ -2059,7 +2129,8 @@
               "work": "\\(84%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "udqtvkvdbqADZR5bJjTN",
@@ -2088,7 +2159,8 @@
               "work": "\\(16\\frac{2}{3}\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "UKDVCUzsjmPVNNqIYIzp",
@@ -2117,7 +2189,8 @@
               "work": "\\(240%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "UxB548Txu3OSH4FdKFme",
@@ -2146,7 +2219,8 @@
               "work": "\\(62.5\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "Vp9fIbgPCd1sSG9eyI0W",
@@ -2175,7 +2249,8 @@
               "work": "\\(\\frac{3}{200}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "VPPaxxudvUceh9fkp7TC",
@@ -2204,7 +2279,8 @@
               "work": "\\(315%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Vzi1cbdbhmcQ2KcLJj0d",
@@ -2233,7 +2309,8 @@
               "work": "\\(64.3%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "xjIpiwLhUWlmSU3AuAUt",
@@ -2262,7 +2339,8 @@
               "work": "\\(64%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "XmmOY4YpiFkqIQFF8V2k",
@@ -2291,7 +2369,8 @@
               "work": "\\(54%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "xRua8o2lryiPp67IuQoc",
@@ -2320,7 +2399,8 @@
               "work": "\\(0.078\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "xtfCclR30SkzJCQVoRGp",
@@ -2349,7 +2429,8 @@
               "work": "\\(80%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "xvau62KDEOxEJOehUh07",
@@ -2378,7 +2459,8 @@
               "work": "\\(31%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y39qBR6ExxocMlbGtFRY",
@@ -2407,7 +2489,8 @@
               "work": "\\(1\\frac{3}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "yNIMBjzA2YI79lGBbjJi",
@@ -2436,7 +2519,8 @@
               "work": "\\(17%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "ZbO4HzV3L4DdtvwW30Xo",
@@ -2465,7 +2549,8 @@
               "work": "\\(0.145\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "ZOojhXLEoeJN215GH9H9",
@@ -2494,7 +2579,8 @@
               "work": "\\(0.85\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -2532,7 +2618,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q21a",
@@ -2569,7 +2656,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         }
       ]
     }

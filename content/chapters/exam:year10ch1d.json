@@ -34,7 +34,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 7964.11\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18b",
@@ -61,7 +62,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 15122.71\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18c",
@@ -88,7 +90,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 21451.27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18d",
@@ -115,7 +118,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 26939.77\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18e",
@@ -142,7 +146,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 31591.95\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18f",
@@ -169,7 +174,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 35424.29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18g",
@@ -196,7 +202,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 38464.73\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18h",
@@ -223,7 +230,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 40751.27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18i",
@@ -250,7 +258,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 42330.40\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-q18j",
@@ -277,7 +286,8 @@
               "explain": "Evaluate the expression to find the principal amount.",
               "work": "\\(P \\approx 43255.49\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q1",
@@ -304,7 +314,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.04\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q2",
@@ -331,7 +342,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.51\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q3",
@@ -358,7 +370,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.98\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q4",
@@ -385,7 +398,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 6.45\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q5",
@@ -412,7 +426,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 6.92\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q6",
@@ -439,7 +454,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 7.40\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q7",
@@ -466,7 +482,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 7.87\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q8",
@@ -493,7 +510,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 8.35\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q9",
@@ -520,7 +538,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 8.83\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q10",
@@ -547,7 +566,8 @@
               "explain": "Identify the higher effective annual rate and round to two decimal places.",
               "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 9.31\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q11",
@@ -574,7 +594,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 53634.66\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q12",
@@ -601,7 +622,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 62206.94\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q13",
@@ -628,7 +650,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 69129.34\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q14",
@@ -655,7 +678,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 74386.80\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q15",
@@ -682,7 +706,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 101369.45\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q16",
@@ -709,7 +734,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 105878.66\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q17",
@@ -736,7 +762,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 108560.46\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q18",
@@ -763,7 +790,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 109503.01\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q19",
@@ -790,7 +818,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 108834.08\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q20",
@@ -817,7 +846,8 @@
               "explain": "Compute the result and round to two decimal places.",
               "work": "\\(P \\approx 151279.77\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1d-high-q51",
@@ -844,7 +874,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 29487\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q52",
@@ -871,7 +902,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 27444\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q53",
@@ -898,7 +930,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 39515\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q54",
@@ -925,7 +958,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 35681\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q55",
@@ -952,7 +986,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 31366\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q56",
@@ -979,7 +1014,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 46650\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q57",
@@ -1006,7 +1042,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 40108\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q58",
@@ -1033,7 +1070,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 33646\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q59",
@@ -1060,7 +1098,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 52224\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1d-high-q60",
@@ -1087,7 +1126,8 @@
               "explain": "Compute the final value and round to the nearest integer.",
               "work": "\\(V_n \\approx 43008\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

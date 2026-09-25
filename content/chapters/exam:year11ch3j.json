@@ -38,7 +38,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 1
         },
         {
           "id": "y11a-3j-q9",
@@ -78,7 +79,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         }
       ]
     }

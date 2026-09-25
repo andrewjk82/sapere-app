@@ -53,7 +53,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc1s",
@@ -96,7 +97,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc2",
@@ -146,7 +148,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc2s",
@@ -189,7 +192,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc3",
@@ -233,7 +237,8 @@
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc3s",
@@ -273,7 +278,8 @@
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc4",
@@ -316,7 +322,8 @@
           },
           "dna": {
             "dnaId": "ALG-SURD-01"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc4s",
@@ -355,7 +362,8 @@
           },
           "dna": {
             "dnaId": "ALG-SURD-01"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc5",
@@ -399,7 +407,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc5s",
@@ -439,7 +448,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc6",
@@ -487,7 +497,8 @@
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc6s",
@@ -527,7 +538,8 @@
           "dna": {
             "dnaId": "ALG-EXP-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc7",
@@ -571,7 +583,8 @@
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc7s",
@@ -664,7 +677,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc8",
@@ -708,7 +722,8 @@
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc8s",
@@ -748,7 +763,8 @@
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc9",
@@ -845,7 +861,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc9s",
@@ -938,7 +955,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc10",
@@ -982,7 +1000,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc10s",
@@ -1018,7 +1037,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc11",
@@ -1062,7 +1082,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc11s",
@@ -1102,7 +1123,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc12",
@@ -1146,7 +1168,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc12s",
@@ -1194,7 +1217,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc13",
@@ -1234,7 +1258,8 @@
           ],
           "meta": {
             "examPaper": "girraween-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc13s",
@@ -1282,7 +1307,8 @@
           ],
           "meta": {
             "examPaper": "girraween-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc14a",
@@ -1375,7 +1401,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc14as",
@@ -1423,7 +1450,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc14b",
@@ -1469,7 +1497,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc14bs",
@@ -1514,7 +1543,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc15a",
@@ -1546,7 +1576,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc15as",
@@ -1589,7 +1620,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc15b",
@@ -1629,7 +1661,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc15bs",
@@ -1672,7 +1705,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc16",
@@ -1765,7 +1799,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc16s",
@@ -1861,7 +1896,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc17",
@@ -1901,7 +1937,8 @@
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc17s",
@@ -1944,7 +1981,8 @@
           "dna": {
             "dnaId": "FUNC-COMP-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc18a",
@@ -1984,7 +2022,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc18as",
@@ -2027,7 +2066,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc18b",
@@ -2067,7 +2107,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc18bs",
@@ -2107,7 +2148,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19a",
@@ -2147,7 +2189,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19as",
@@ -2187,7 +2230,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19b",
@@ -2227,7 +2271,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19bs",
@@ -2267,7 +2312,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19c",
@@ -2307,7 +2353,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc19cs",
@@ -2343,7 +2390,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc20",
@@ -2387,7 +2435,8 @@
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc20s",
@@ -2431,7 +2480,8 @@
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc21",
@@ -2483,7 +2533,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc21s",
@@ -2527,7 +2578,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc22",
@@ -2579,7 +2631,8 @@
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc22s",
@@ -2619,7 +2672,8 @@
           "dna": {
             "dnaId": "CALC-DIFF-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc23",
@@ -2724,7 +2778,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc23s",
@@ -2817,7 +2872,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc24",
@@ -2864,7 +2920,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc24s",
@@ -2907,7 +2964,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc25as",
@@ -2948,7 +3006,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc25b",
@@ -2988,7 +3047,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc25bs",
@@ -3032,7 +3092,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc26a",
@@ -3125,7 +3186,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc26as",
@@ -3218,7 +3280,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc26b",
@@ -3311,7 +3374,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 3
         },
         {
           "id": "girr2020-mc26bs",
@@ -3408,7 +3472,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc27",
@@ -3459,7 +3524,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc27s",
@@ -3503,7 +3569,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc28b",
@@ -3546,7 +3613,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc28bs",
@@ -3590,7 +3658,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc31",
@@ -3682,7 +3751,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 3
         },
         {
           "id": "girr2020-mc31s",
@@ -3722,7 +3792,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "girr2020-mc32",
@@ -3760,7 +3831,8 @@
           },
           "dna": {
             "dnaId": "ALG-SURD-01"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc32s",
@@ -3799,7 +3871,8 @@
           },
           "dna": {
             "dnaId": "ALG-SURD-01"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "girr2020-mc33",
@@ -3846,7 +3919,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "girr2020-mc33s",
@@ -3886,7 +3960,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         }
       ]
     }

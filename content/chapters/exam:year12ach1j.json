@@ -43,7 +43,8 @@
               "explain": "Combine the initial drop and twice the limiting sum of rebounds to find the total distance.",
               "work": "\\(D = 10 + 2 \\times \\frac{70}{3} = 10 + \\frac{140}{3} = \\frac{170}{3} = 56\\frac{2}{3}\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y12a-1j-q21",
@@ -79,7 +80,8 @@
               "explain": "Compute the final lump sum to the nearest dollar.",
               "work": "\\(PV \\approx 83333.33 \\times 0.582735 \\approx 48561.25 \\implies 48561\\) dollars"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

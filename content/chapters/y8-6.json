@@ -39,7 +39,8 @@
               "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1b",
@@ -72,7 +73,8 @@
               "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1c",
@@ -105,7 +107,8 @@
               "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{3}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1d",
@@ -138,7 +141,8 @@
               "explain": "Final answer: \\frac{21}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{21}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1e",
@@ -171,7 +175,8 @@
               "explain": "Final answer: 21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(21\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1f",
@@ -204,7 +209,8 @@
               "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1g",
@@ -237,7 +243,8 @@
               "explain": "Final answer: \\frac{11}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{11}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q1h",
@@ -270,7 +277,8 @@
               "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{3}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2a",
@@ -303,7 +311,8 @@
               "explain": "Final answer: -1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-1\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2b",
@@ -336,7 +345,8 @@
               "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2c",
@@ -369,7 +379,8 @@
               "explain": "Final answer: -\\frac{2}{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-\\frac{2}{3}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2d",
@@ -402,7 +413,8 @@
               "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2e",
@@ -430,7 +442,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6a-q2f",
@@ -463,7 +476,8 @@
               "explain": "Final answer: -18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-18\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2g",
@@ -492,7 +506,8 @@
               "explain": "Divide by 2 to get the final value.",
               "work": "\\(\\dfrac{4}{2} = 2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q2h",
@@ -525,7 +540,8 @@
               "explain": "Final answer: -40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-40\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3a",
@@ -558,7 +574,8 @@
               "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3b",
@@ -591,7 +608,8 @@
               "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3c",
@@ -624,7 +642,8 @@
               "explain": "Final answer: -4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3d",
@@ -657,7 +676,8 @@
               "explain": "Final answer: -8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3e",
@@ -690,7 +710,8 @@
               "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3f",
@@ -723,7 +744,8 @@
               "explain": "Final answer: 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(36\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q3g",
@@ -756,7 +778,8 @@
               "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4a",
@@ -789,7 +812,8 @@
               "explain": "The final answer is 1.",
               "work": "Final Answer: 1"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4b",
@@ -822,7 +846,8 @@
               "explain": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4c",
@@ -855,7 +880,8 @@
               "explain": "Final answer: -1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-1\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4d",
@@ -888,7 +914,8 @@
               "explain": "Final answer: -32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-32\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4e",
@@ -921,7 +948,8 @@
               "explain": "Final answer: 25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(25\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4f",
@@ -954,7 +982,8 @@
               "explain": "Final answer: -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4g",
@@ -987,7 +1016,8 @@
               "explain": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4h",
@@ -1016,7 +1046,8 @@
               "explain": "Simplify.",
               "work": "\\(-(-2) = 2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4i",
@@ -1049,7 +1080,8 @@
               "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4j",
@@ -1082,7 +1114,8 @@
               "explain": "Final answer: -\\frac{1}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-\\frac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4k",
@@ -1115,7 +1148,8 @@
               "explain": "Final answer: 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(16\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q4l",
@@ -1148,7 +1182,8 @@
               "explain": "Final answer: -64. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-64\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q5a",
@@ -1181,7 +1216,8 @@
               "explain": "Final answer: \\frac{1}{4}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{1}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q5b",
@@ -1214,7 +1250,8 @@
               "explain": "Final answer: \\frac{35}{4}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{35}{4}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6a-q5c",
@@ -1247,7 +1284,8 @@
               "explain": "Final answer: -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q5d",
@@ -1280,7 +1318,8 @@
               "explain": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6a",
@@ -1313,7 +1352,8 @@
               "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6b",
@@ -1346,7 +1386,8 @@
               "explain": "Final answer: -6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6c",
@@ -1379,7 +1420,8 @@
               "explain": "Final answer: -12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6d",
@@ -1412,7 +1454,8 @@
               "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{3}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6e",
@@ -1445,7 +1488,8 @@
               "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6f",
@@ -1478,7 +1522,8 @@
               "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(13\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6g",
@@ -1511,7 +1556,8 @@
               "explain": "Final answer: -5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6h",
@@ -1540,7 +1586,8 @@
               "explain": "Add the two results, keeping the signs. A common mistake is dropping one of the negative signs, giving \\(27\\) or \\(-27\\) instead.",
               "work": "\\(15 + (-12) = 3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6i",
@@ -1573,7 +1620,8 @@
               "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6j",
@@ -1606,7 +1654,8 @@
               "explain": "Final answer: -18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-18\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q6k",
@@ -1639,7 +1688,8 @@
               "explain": "Final answer: -35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-35\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7a",
@@ -1668,7 +1718,8 @@
               "explain": "Add the negative value of \\(c\\). A common mistake is ignoring its sign and computing \\(6+3=9\\) instead.",
               "work": "\\(6 + (-3) = 3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7b",
@@ -1701,7 +1752,8 @@
               "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7c",
@@ -1734,7 +1786,8 @@
               "explain": "Final answer: 29. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(29\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7d",
@@ -1767,7 +1820,8 @@
               "explain": "Final answer: -21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-21\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7e",
@@ -1800,7 +1854,8 @@
               "explain": "Final answer: 65. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(65\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7f",
@@ -1833,7 +1888,8 @@
               "explain": "Final answer: -9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7g",
@@ -1866,7 +1922,8 @@
               "explain": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7h",
@@ -1899,7 +1956,8 @@
               "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(45\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6a-q7i",
@@ -1932,7 +1990,8 @@
               "explain": "Final answer: -209. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-209\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q3b",
@@ -1955,7 +2014,8 @@
               "explain": "Keep the variable.",
               "work": "\\(20a\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q3d",
@@ -1982,7 +2042,8 @@
               "explain": "Combine them all together.",
               "work": "\\(12ab^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q5_algebra",
@@ -2013,7 +2074,8 @@
               "explain": "Add the values together.",
               "work": "\\(52\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2043,7 +2105,8 @@
               "explain": "Simplify.",
               "work": "\\(x = 4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1b_algebra",
@@ -2066,7 +2129,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\(x = \\frac{5}{2} = 2.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1c_algebra",
@@ -2089,7 +2153,8 @@
               "explain": "Multiply both sides by 3 to isolate \\(a\\).",
               "work": "\\(a = -1 \\times 3 = -3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1e_algebra",
@@ -2112,7 +2177,8 @@
               "explain": "Subtract 3 from both sides.",
               "work": "\\(m = -2 - 3 = -5\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2146,7 +2212,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\(y = \\frac{19}{2} = 9.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q3a",
@@ -2168,7 +2235,8 @@
               "explain": "Subtract the numbers in front.",
               "work": "\\((10 - 5)x = 5x\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q3c",
@@ -2191,7 +2259,8 @@
               "explain": "Combine the \\(x\\) terms and \\(y\\) terms separately.",
               "work": "\\(2x + 15y\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2232,7 +2301,8 @@
               "explain": "Find the length.",
               "work": "\\(\\text{Length} = 12.5 + 13 = 25.5\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2266,7 +2336,8 @@
               "explain": "Combine the results. The \\(x\\) stays on top.",
               "work": "\\(\\frac{2x}{y}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q3f",
@@ -2296,7 +2367,8 @@
               "explain": "Combine the results.",
               "work": "\\(\\frac{a}{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2324,7 +2396,8 @@
               "explain": "Substitute values",
               "work": "3 + 2 + 5 = 10"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q1b",
@@ -2345,7 +2418,8 @@
               "explain": "Substitute values",
               "work": "3 \\times 2 \\times 5 = 30"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q1c",
@@ -2361,7 +2435,8 @@
               "work": "3 + 2 - 5 = 0"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6h-q1d",
@@ -2381,7 +2456,8 @@
               "work": "\\frac{5}{5} = 1"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6h-q1e",
@@ -2402,7 +2478,8 @@
               "explain": "Substitute and square",
               "work": "3^2 + 2^2 = 9 + 4 = 13"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q1f",
@@ -2423,7 +2500,8 @@
               "explain": "Substitute and cube",
               "work": "5^3 - 3^3 = 125 - 27 = 98"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q1g",
@@ -2439,7 +2517,8 @@
               "work": "5 - 3 - 2 = 0"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6h-q1h",
@@ -2464,7 +2543,8 @@
               "explain": "Evaluate",
               "work": "\\frac{9 + 4}{9 - 4} = \\frac{13}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2a",
@@ -2485,7 +2565,8 @@
               "explain": "Substitute value",
               "work": "(-2)^3 = -8"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2b",
@@ -2506,7 +2587,8 @@
               "explain": "Substitute value",
               "work": "(-2)^5 = -32"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2c",
@@ -2531,7 +2613,8 @@
               "explain": "Evaluate",
               "work": "(-4)^2 = 16"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2d",
@@ -2556,7 +2639,8 @@
               "explain": "Evaluate",
               "work": "(-4)^3 = -64"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2e",
@@ -2572,7 +2656,8 @@
               "work": "-(-2) = 2"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6h-q2f",
@@ -2597,7 +2682,8 @@
               "explain": "Evaluate",
               "work": "-8 + 7 = -1"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2g",
@@ -2622,7 +2708,8 @@
               "explain": "Evaluate",
               "work": "4 + 7 = 11"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q2h",
@@ -2651,7 +2738,8 @@
               "explain": "Simplify",
               "work": "\\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3a",
@@ -2672,7 +2760,8 @@
               "explain": "Subtract 5 from both sides",
               "work": "m = 12 - 5 = 7"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3b",
@@ -2693,7 +2782,8 @@
               "explain": "Add 4 to both sides",
               "work": "m = 10 + 4 = 14"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3c",
@@ -2714,7 +2804,8 @@
               "explain": "Divide by 3",
               "work": "m = 15 / 3 = 5"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3d",
@@ -2735,7 +2826,8 @@
               "explain": "Multiply by 5",
               "work": "m = 4 \\times 5 = 20"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3e",
@@ -2760,7 +2852,8 @@
               "explain": "Divide by 3",
               "work": "x = 5"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3f",
@@ -2785,7 +2878,8 @@
               "explain": "Multiply by 3",
               "work": "x = 27"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3g",
@@ -2810,7 +2904,8 @@
               "explain": "Multiply by -1",
               "work": "x = -5"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3h",
@@ -2835,7 +2930,8 @@
               "explain": "Divide by 4",
               "work": "x = -2"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q3i",
@@ -2860,7 +2956,8 @@
               "explain": "Multiply by 4",
               "work": "x = -32"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4a",
@@ -2881,7 +2978,8 @@
               "explain": "Expand",
               "work": "3x - 12"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4b",
@@ -2902,7 +3000,8 @@
               "explain": "Expand",
               "work": "-4x - 20"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4c",
@@ -2923,7 +3022,8 @@
               "explain": "Expand",
               "work": "6x - 18"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4d",
@@ -2944,7 +3044,8 @@
               "explain": "Expand",
               "work": "xy + 4y"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4e",
@@ -2965,7 +3066,8 @@
               "explain": "Expand",
               "work": "-5x + 10"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q4f",
@@ -2986,7 +3088,8 @@
               "explain": "Expand",
               "work": "-10 + 2x"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5a",
@@ -3015,7 +3118,8 @@
               "explain": "Combine",
               "work": "7x - 3y"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5b",
@@ -3044,7 +3148,8 @@
               "explain": "Combine",
               "work": "3x + 2y"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5c",
@@ -3069,7 +3174,8 @@
               "explain": "Result",
               "work": "2x"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5d",
@@ -3098,7 +3204,8 @@
               "explain": "So the coefficient of \\(x\\) is 0, and the expression simplifies to 0.",
               "work": "\\(0x = 0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5e",
@@ -3123,7 +3230,8 @@
               "explain": "Result",
               "work": "-2xy"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q5f",
@@ -3152,7 +3260,8 @@
               "explain": "Result",
               "work": "4x^2y"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6a",
@@ -3177,7 +3286,8 @@
               "explain": "Common denominator",
               "work": "-\\frac{56}{4} + \\frac{3}{4} = -\\frac{53}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6b",
@@ -3202,7 +3312,8 @@
               "explain": "Evaluate",
               "work": "-18"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6c",
@@ -3231,7 +3342,8 @@
               "explain": "Simplify",
               "work": "\\frac{90}{16} = \\frac{45}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6d",
@@ -3260,7 +3372,8 @@
               "explain": "Simplify",
               "work": "\\frac{293}{2}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6e",
@@ -3280,7 +3393,8 @@
               "work": "\\frac{48}{24} = 2"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-6h-q6f",
@@ -3313,7 +3427,8 @@
               "explain": "Divide",
               "work": "3 \\times \\frac{4}{45} = \\frac{4}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6g",
@@ -3342,7 +3457,8 @@
               "explain": "Common denominator",
               "work": "-\\frac{137}{16}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q6h",
@@ -3371,7 +3487,8 @@
               "explain": "Multiply",
               "work": "\\frac{112}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-6h-q7a",
@@ -3396,7 +3513,8 @@
               "explain": "Divide by 3",
               "work": "x = -7"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q7b",
@@ -3421,7 +3539,8 @@
               "explain": "Divide by 4",
               "work": "b = 5"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q7c",
@@ -3446,7 +3565,8 @@
               "explain": "Divide by 6",
               "work": "a = 8"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q7d",
@@ -3471,7 +3591,8 @@
               "explain": "Multiply by y and divide by -9",
               "work": "y = -2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q7e",
@@ -3496,7 +3617,8 @@
               "explain": "Divide by 4",
               "work": "x = 36"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q7f",
@@ -3525,7 +3647,8 @@
               "explain": "Divide by 5",
               "work": "x = 7"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8a",
@@ -3550,7 +3673,8 @@
               "explain": "Collect like terms",
               "work": "19x + 4y"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8b",
@@ -3575,7 +3699,8 @@
               "explain": "Collect x terms",
               "work": "\\frac{13x}{3} + 9y"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8c",
@@ -3600,7 +3725,8 @@
               "explain": "Collect like terms",
               "work": "16xy + 12x + 6y"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8d",
@@ -3625,7 +3751,8 @@
               "explain": "Collect like terms",
               "work": "2x^2 + x + 15"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8e",
@@ -3654,7 +3781,8 @@
               "explain": "Collect x^2 terms",
               "work": "4x^2 - 0.5x^2 = 3.5x^2 = \\frac{7x^2}{2}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8f",
@@ -3687,7 +3815,8 @@
               "explain": "Result",
               "work": "13x + xy + 8y"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8g",
@@ -3712,7 +3841,8 @@
               "explain": "Collect like terms",
               "work": "-2bx - by - 8b"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8h",
@@ -3737,7 +3867,8 @@
               "explain": "Collect like terms",
               "work": "2xy + 3x^2y - 8xy^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q8i",
@@ -3762,7 +3893,8 @@
               "explain": "Collect like terms",
               "work": "8ax - 28ay + 12a^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-6h-q9a",
@@ -3787,7 +3919,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 4
         },
         {
           "id": "y8-6h-q9b",
@@ -3812,7 +3945,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 4
         },
         {
           "id": "y8-6h-q10",
@@ -3840,7 +3974,8 @@
               "work": "56 / 28 = 2"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y8-6h-q11_weeknight",
@@ -3869,7 +4004,8 @@
               "explain": "Solve for p",
               "work": "54p = 324 \\implies p = 6"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-6h-q11_saturday",
@@ -3894,7 +4030,8 @@
               "explain": "Calculate Saturday pages",
               "work": "4 \\times 6 = 24"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-6h-q12",
@@ -4021,7 +4158,8 @@
               "explain": "Solve for x",
               "work": "8x = 32 \\implies x = 4"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

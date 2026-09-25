@@ -33,7 +33,8 @@
               "explain": "Subtract to find the difference.",
               "work": "\\(14-4=10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-data-1-q2",
@@ -57,7 +58,8 @@
               "explain": "The mode is the pet count with the highest frequency, not the frequency itself.",
               "work": "\\(\\text{Mode}=1\\text{ pet}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-data-1-q3",
@@ -81,7 +83,8 @@
               "explain": "Subtract to find the range.",
               "work": "\\(25-10=15°\\text{C}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -115,7 +118,8 @@
               "explain": "But because the axis starts at 50 (not 0), that difference of 10 takes up a much larger share of the visible bar heights than it should.",
               "work": "Truncating the axis exaggerates the visual difference"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-data-2-q2",
@@ -139,7 +143,8 @@
               "explain": "A complete pie chart must represent exactly \\(100\\%\\) — this one is inaccurate.",
               "work": "\\(110\\% \\ne 100\\%\\), so the chart is misleading/incorrect"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -170,7 +175,8 @@
               "explain": "This is called sampling bias — the result cannot be generalised beyond that specific group.",
               "work": "The 95% figure overstates video-game habits in the general population"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-data-3-q2",
@@ -194,7 +200,8 @@
               "explain": "This is an example of correlation without causation.",
               "work": "Ice-cream does not cause shark attacks"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

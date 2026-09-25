@@ -39,7 +39,8 @@
           ],
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y11s-2a-gen-2",
@@ -73,7 +74,8 @@
           "timeLimit": 150,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y11s-2a-gen-3",
@@ -107,7 +109,8 @@
           "timeLimit": 150,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -143,7 +146,8 @@
           ],
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y11s-2b-gen-2",
@@ -173,7 +177,8 @@
           "timeLimit": 150,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y11s-2b-gen-3",
@@ -203,7 +208,8 @@
           "timeLimit": 180,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -233,7 +239,8 @@
           "meta": {
             "reviewStatus": "approved",
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y11s-2c-gen-2",
@@ -263,7 +270,8 @@
           "timeLimit": 150,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y11s-2c-gen-3",
@@ -290,7 +298,8 @@
           "timeLimit": 150,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y11s-2c-gen-4",
@@ -324,7 +333,8 @@
           "timeLimit": 180,
           "meta": {
             "reviewStatus": "approved"
-          }
+          },
+          "xp": 3
         }
       ]
     }

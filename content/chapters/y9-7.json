@@ -40,7 +40,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-7a-2c",
@@ -69,7 +70,8 @@
               "work": "Divide both sides by 4:\\n\\[\\alpha = \\frac{90^\\circ}{4} = 22.5^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-6b",
@@ -98,7 +100,8 @@
               "work": "The angles in a triangle sum to \\(180^\\circ\\):\\n\\[\\alpha + \\beta + 50^\\circ = 180^\\circ\\]\\n\\[2\\alpha = 130^\\circ\\]\\n\\[\\alpha = \\beta = 65^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-6c",
@@ -127,7 +130,8 @@
               "work": "Subtract 5 from both sides:\\n\\[3x = 12\\]\\nDivide both sides by 3:\\n\\[x = 4\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-8e",
@@ -156,7 +160,8 @@
               "work": "The angles in triangle \\(ABC\\) sum to \\(180^\\circ\\):\\n\\[\\theta + 35^\\circ + 35^\\circ = 180^\\circ\\]\\n\\[\\theta = 180^\\circ - 70^\\circ = 110^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     },
@@ -185,7 +190,8 @@
               "work": "Obtuse"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1aii",
@@ -207,7 +213,8 @@
               "work": "Revolution"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1aiii",
@@ -229,7 +236,8 @@
               "work": "Acute"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1aiv",
@@ -251,7 +259,8 @@
               "work": "Straight"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1av",
@@ -273,7 +282,8 @@
               "work": "Right"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1avi",
@@ -295,7 +305,8 @@
               "work": "Reflex"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1bi",
@@ -317,7 +328,8 @@
               "work": "\\\\(90^\\circ - 25^\\circ = 65^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1bii",
@@ -339,7 +351,8 @@
               "work": "\\\\(90^\\circ - 70^\\circ = 20^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1biii",
@@ -361,7 +374,8 @@
               "work": "\\\\(90^\\circ - 40^\\circ = 50^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1ci",
@@ -383,7 +397,8 @@
               "work": "\\\\(180^\\circ - 25^\\circ = 155^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1cii",
@@ -405,7 +420,8 @@
               "work": "\\\\(180^\\circ - 170^\\circ = 10^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q1ciii",
@@ -427,7 +443,8 @@
               "work": "\\\\(180^\\circ - 100^\\circ = 80^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q2a",
@@ -510,7 +527,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year9ch7"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-7a-q2b-alpha",
@@ -595,7 +613,8 @@
               "work": "\\\\(\\alpha = 120^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q2b-beta",
@@ -684,7 +703,8 @@
               "work": "\\\\(\\beta = 60^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-7a-q2c",
@@ -776,7 +796,8 @@
               "explain": "Solve for \\(\\alpha\\)",
               "work": "Divide both sides by 4:\\n\\[\\alpha = \\frac{90^\\circ}{4} = 22.5^\\circ\\]"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-7a-q2d",
@@ -874,7 +895,8 @@
               "work": "\\\\(\\theta = 40^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q2e",
@@ -992,7 +1014,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year9ch7"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-7a-q2f",
@@ -1089,7 +1112,8 @@
               "work": "\\\\(\\alpha = 10^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3a",
@@ -1188,7 +1212,8 @@
               "work": "\\\\(\\alpha = 50^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3b-beta",
@@ -1313,7 +1338,8 @@
               "work": "\\\\(\\beta = 105^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3b-gamma",
@@ -1430,7 +1456,8 @@
               "work": "\\\\(\\gamma = 75^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3c-alpha",
@@ -1523,7 +1550,8 @@
               "work": "\\\\(\\alpha = 70^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3c-beta",
@@ -1616,7 +1644,8 @@
               "work": "The top and bottom horizontal segments are parallel (double arrow marks). The diagonal segment is a transversal, so the alternate interior angles are equal:\\n\\[\\beta = \\alpha = 70^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3d-alpha",
@@ -1705,7 +1734,8 @@
               "work": "\\\\(\\alpha = 72^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3d-beta",
@@ -1798,7 +1828,8 @@
               "work": "\\\\(\\beta = 108^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3d-gamma",
@@ -1887,7 +1918,8 @@
               "work": "\\\\(\\gamma = \\beta = 108^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3e",
@@ -1986,7 +2018,8 @@
               "work": "\\\\(4\\theta = 180^\\circ \\Rightarrow \\theta = 45^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q3f",
@@ -2092,7 +2125,8 @@
               "work": "Add the two parts together:\\n\\[\\theta = \\theta_1 + \\theta_2 = 40^\\circ + 30^\\circ = 70^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4a",
@@ -2121,7 +2155,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4b",
@@ -2150,7 +2185,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4c",
@@ -2179,7 +2215,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4d",
@@ -2208,7 +2245,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4e",
@@ -2237,7 +2275,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q4f",
@@ -2266,7 +2305,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5a",
@@ -2339,7 +2379,8 @@
               "work": "\\\\(\\theta = 45^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5b",
@@ -2424,7 +2465,8 @@
               "work": "\\\\(\\alpha = 60^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5c",
@@ -2453,7 +2495,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-7a-q5d-alpha",
@@ -2542,7 +2585,8 @@
               "work": "\\\\(\\alpha = 80^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5d-beta",
@@ -2631,7 +2675,8 @@
               "work": "\\\\(\\beta = 70^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5e",
@@ -2716,7 +2761,8 @@
               "work": "\\\\(\\theta = 40^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q5f",
@@ -2809,7 +2855,8 @@
               "work": "\\\\(\\beta = 140^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6a-alpha",
@@ -2834,7 +2881,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-7a-q6a-beta",
@@ -2863,7 +2911,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-7a-q6b-alpha",
@@ -2942,7 +2991,8 @@
               "work": "The angles in a triangle add to \\(180^\\circ\\):\\n\\[\\alpha + \\beta + 50^\\circ = 180^\\circ\\]\\nSince \\(\\alpha = \\beta\\):\\n\\[2\\alpha = 180^\\circ - 50^\\circ = 130^\\circ\\]\\n\\[\\alpha = 65^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6b-beta",
@@ -3021,7 +3071,8 @@
               "work": "The angles in a triangle add to \\(180^\\circ\\):\\n\\[\\alpha + \\beta + 50^\\circ = 180^\\circ\\]\\nSince \\(\\alpha = \\beta\\):\\n\\[2\\beta = 180^\\circ - 50^\\circ = 130^\\circ\\]\\n\\[\\beta = 65^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6c",
@@ -3110,7 +3161,8 @@
               "work": "Subtract 5 from both sides:\\n\\[3x = 12\\]\\nDivide both sides by 3:\\n\\[x = 4\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6d-alpha",
@@ -3204,7 +3256,8 @@
               "work": "\\\\(\\alpha = 180^\\circ - 2(45^\\circ) = 90^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q6d-beta",
@@ -3290,7 +3343,8 @@
               "work": "All angles are \\\\(60^\\circ\\\\), so \\\\(\\beta = 60^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q6e-x",
@@ -3382,7 +3436,8 @@
               "work": "\\\\(x = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6e-y",
@@ -3550,7 +3605,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y9-7a-q6f-alpha",
@@ -3654,7 +3710,8 @@
               "explain": "Evaluate to find the final angle.",
               "work": "\\(60^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-7a-q6f-beta",
@@ -3754,7 +3811,8 @@
               "explain": "Substitute the known base angle.",
               "work": "\\(\\beta = 80^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-7a-q6f-gamma",
@@ -3858,7 +3916,8 @@
               "explain": "Evaluate to find the final angle.",
               "work": "\\(20^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-7a-q7a",
@@ -3949,7 +4008,8 @@
               "work": "\\\\(\\theta = 90^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q7b",
@@ -4040,7 +4100,8 @@
               "work": "\\\\(\\alpha = \\angle QRX = 60^\\circ + 50^\\circ = 110^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q7c",
@@ -4151,7 +4212,8 @@
               "work": "The auxiliary vertical line and the left vertical line are parallel. Using consecutive interior angles (co-interior angles), we know that \\(\\theta + 50^\\circ = 180^\\circ\\). Therefore, \\(\\theta = 180^\\circ - 50^\\circ = 130^\\circ\\)."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8a-alpha",
@@ -4258,7 +4320,8 @@
               "work": "\\(\\alpha = \\angle SQR = 180^\\circ - 120^\\circ = 60^\\circ\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8a-beta",
@@ -4365,7 +4428,8 @@
               "work": "\\(\\beta + 120^\\circ = 180^\\circ \\Rightarrow 60^\\circ\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8a-gamma",
@@ -4472,7 +4536,8 @@
               "work": "\\(\\gamma = \\angle SQR = 180^\\circ - 120^\\circ = 60^\\circ\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8c",
@@ -4568,7 +4633,8 @@
               "work": "\\\\(\\alpha = 90^\\circ - 25^\\circ = 65^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8d",
@@ -4660,7 +4726,8 @@
               "explain": "Supplementary angle",
               "work": "\\\\(\\theta = 180^\\circ - 70^\\circ = 110^\\circ\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-7a-q8e",
@@ -4755,7 +4822,8 @@
               "work": "The angles in triangle \\(ABC\\) must add to \\(180^\\circ\\):\\n\\[\\theta + \\angle BAC + \\angle ACB = 180^\\circ\\]\\n\\[\\theta + 35^\\circ + 35^\\circ = 180^\\circ\\]\\n\\[\\theta = 180^\\circ - 70^\\circ = 110^\\circ\\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y9-7a-q8f-alpha",
@@ -4784,7 +4852,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8f-beta",
@@ -4809,7 +4878,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8f-x",
@@ -4842,7 +4912,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8g-alpha",
@@ -4871,7 +4942,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8g-beta",
@@ -4896,7 +4968,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8g-gamma",
@@ -4925,7 +4998,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-7a-q8h-alpha",
@@ -5018,7 +5092,8 @@
               "work": "\\\\(\\alpha = 180^\\circ - 70^\\circ = 110^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q8h-beta",
@@ -5111,7 +5186,8 @@
               "work": "\\\\(\\beta = 70^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-7a-q8h-gamma",
@@ -5204,7 +5280,8 @@
               "work": "\\\\(\\gamma = 70^\\circ\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t1q1",
@@ -5232,7 +5309,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t1q2",
@@ -5268,7 +5346,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -5319,7 +5398,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 4
         },
         {
           "id": "sg2022-q7e",
@@ -5357,7 +5437,8 @@
             "Parallelogram",
             "Rectangle",
             "Rhombus"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "sg2022-q8d",
@@ -5403,7 +5484,8 @@
             "\\(8\\)",
             "\\(12\\)",
             "\\(16\\)"
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

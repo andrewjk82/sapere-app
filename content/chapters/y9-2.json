@@ -35,7 +35,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 427 cm\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-10b",
@@ -64,7 +65,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 457 cm\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-10c",
@@ -93,7 +95,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 1311 cm\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-11a",
@@ -122,7 +125,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 42 mm\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-11b",
@@ -151,7 +155,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 71 mm\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-12",
@@ -180,7 +185,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 849\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-2a-13",
@@ -209,7 +215,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 30.4\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-2a-14",
@@ -238,7 +245,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 4.2\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-2a-15a",
@@ -267,7 +275,8 @@
               "explain": "Calculate the sum of the squares and find the square root.",
               "work": "c = \\sqrt{NaN} = 17\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-15b",
@@ -305,7 +314,8 @@
           ],
           "figure": {
             "svg": "fig:31d3ae3d32"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-2a-15c",
@@ -343,7 +353,8 @@
           ],
           "figure": {
             "svg": "fig:2da0200b5c"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-2a-16",
@@ -387,7 +398,8 @@
                   "work": "\\(\\text{Equal sides + right angles} \\implies \\text{square}\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "y9-2a-16b",
@@ -428,7 +440,8 @@
                   "explain": "Cancel \\(2cd\\) from both sides to obtain Pythagoras' theorem.",
                   "work": "\\(a^2 = c^2 + d^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Use Pythagoras' theorem $a^2 + b^2 = c^2$ to write expressions for the areas.",
@@ -482,7 +495,8 @@
               "explain": "Add the squared values and calculate the square root.",
               "work": "c = \\sqrt{225} = 15\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-1b",
@@ -511,7 +525,8 @@
               "explain": "Add the squared values and calculate the square root.",
               "work": "c = \\sqrt{289} = 17\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-1c",
@@ -540,7 +555,8 @@
               "explain": "Add the squared values and calculate the square root.",
               "work": "c = \\sqrt{6.25} = 2.5\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-1d",
@@ -569,7 +585,8 @@
               "explain": "Add the squared values and calculate the square root.",
               "work": "c = \\sqrt{841} = 29\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2a",
@@ -598,7 +615,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{144} = 12\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2b",
@@ -627,7 +645,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{49} = 7\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2c",
@@ -656,7 +675,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{1296} = 36\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2d",
@@ -685,7 +705,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{1600} = 40\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2e",
@@ -714,7 +735,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{144} = 12\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-2f",
@@ -743,7 +765,8 @@
               "explain": "Perform the subtraction under the square root and calculate the final length.",
               "work": "a = \\sqrt{256} = 16\\text{ cm}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-3a",
@@ -768,7 +791,8 @@
               "explain": "Look at the third decimal digit (thousandths place) to round to 2 decimal places.",
               "work": "\\text{The value is } 4.583\\ldots \\text{ which rounds to } 4.58."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-3b",
@@ -793,7 +817,8 @@
               "explain": "Look at the third decimal digit (thousandths place) to round to 2 decimal places.",
               "work": "\\text{The value is } 6.557\\ldots \\text{ which rounds to } 6.56."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-3c",
@@ -818,7 +843,8 @@
               "explain": "Look at the third decimal digit (thousandths place) to round to 2 decimal places.",
               "work": "\\text{The value is } 8.888\\ldots \\text{ which rounds to } 8.89."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-3d",
@@ -843,7 +869,8 @@
               "explain": "Look at the third decimal digit (thousandths place) to round to 2 decimal places.",
               "work": "\\text{The value is } 22.694\\ldots \\text{ which rounds to } 22.69."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4a",
@@ -872,7 +899,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 8.06. \\text{ Combined answer: } \\sqrt{65}, 8.06"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4b",
@@ -901,7 +929,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 10.30. \\text{ Combined answer: } \\sqrt{106}, 10.30"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4c",
@@ -930,7 +959,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 8.54. \\text{ Combined answer: } \\sqrt{73}, 8.54"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4d",
@@ -959,7 +989,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 7.21. \\text{ Combined answer: } \\sqrt{52}, 7.21"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4e",
@@ -988,7 +1019,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 11.66. \\text{ Combined answer: } \\sqrt{136}, 11.66"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4f",
@@ -1017,7 +1049,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "c \\approx 9.43. \\text{ Combined answer: } \\sqrt{89}, 9.43"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4g",
@@ -1046,7 +1079,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "a \\approx 14.14. \\text{ Combined: } \\sqrt{200}, 14.14"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4h",
@@ -1075,7 +1109,8 @@
               "explain": "Calculate the decimal approximation correct to 2 decimal places using a calculator.",
               "work": "a \\approx 8.94. \\text{ Combined: } \\sqrt{80}, 8.94"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4i",
@@ -1104,7 +1139,8 @@
               "explain": "Calculate the decimal approximation to 2 decimal places.",
               "work": "x \\approx 6.40\\text{ cm}. \\text{ Combined answer: } \\sqrt{41}, 6.40"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-4j",
@@ -1133,7 +1169,8 @@
               "explain": "Calculate the decimal approximation of the total base length.",
               "work": "y = 2\\sqrt{51} \\approx 2 \\times 7.1414 \\approx 14.28\\text{ cm}. \\text{ Combined answer: } 2\\sqrt{51}, 14.28"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5a",
@@ -1165,7 +1202,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5b",
@@ -1197,7 +1235,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5c",
@@ -1229,7 +1268,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5d",
@@ -1261,7 +1301,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5e",
@@ -1293,7 +1334,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-5f",
@@ -1325,7 +1367,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-2a-6a",
@@ -1354,7 +1397,8 @@
               "explain": "Sum the squares and simplify the square root.",
               "work": "c = \\sqrt{25 + 144} = \\sqrt{169} = 13"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-6b",
@@ -1383,7 +1427,8 @@
               "explain": "Sum the squares and simplify the square root.",
               "work": "c = \\sqrt{16 + 49} = \\sqrt{65} = \\sqrt{65}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-6c",
@@ -1412,7 +1457,8 @@
               "explain": "Perform the subtraction and write the exact square root length.",
               "work": "a = \\sqrt{96} = \\sqrt{96}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-6d",
@@ -1441,7 +1487,8 @@
               "explain": "Sum the squares and simplify the square root.",
               "work": "c = \\sqrt{49 + 81} = \\sqrt{130} = \\sqrt{130}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-6e",
@@ -1470,7 +1517,8 @@
               "explain": "Perform the subtraction and write the exact square root length.",
               "work": "a = \\sqrt{160} = \\sqrt{160}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-7",
@@ -1502,7 +1550,8 @@
           ],
           "alsoIn": [
             "exam:surds"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-8",
@@ -1531,7 +1580,8 @@
               "explain": "Calculate the value using a calculator and round to 3 decimal places.",
               "work": "d \\approx 2.608\\text{ m}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-2a-9",
@@ -1560,7 +1610,8 @@
               "explain": "Calculate the square root and round to 1 decimal place.",
               "work": "x \\approx 2.179 \\approx 2.2\\text{ m}"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1604,7 +1655,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q4b",
@@ -1641,7 +1693,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q5a",
@@ -1678,7 +1731,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q5b",
@@ -1711,7 +1765,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q5c",
@@ -1748,7 +1803,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q5d",
@@ -1785,7 +1841,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q5e",
@@ -1826,7 +1883,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t5q4a",
@@ -1860,7 +1918,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-2b"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t5q4b",
@@ -1890,7 +1949,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-2b"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t5q4c",
@@ -1928,7 +1988,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-2b"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1979,7 +2040,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sg2022-q1a",
@@ -2009,7 +2071,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2054,7 +2117,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -2087,7 +2151,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     }

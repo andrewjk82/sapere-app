@@ -46,7 +46,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-mc2",
@@ -107,7 +108,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-mc3",
@@ -152,7 +154,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-mc4",
@@ -200,7 +203,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-mc5",
@@ -249,7 +253,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-mc6",
@@ -289,7 +294,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-mc7",
@@ -334,7 +340,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-mc8",
@@ -379,7 +386,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-mc9",
@@ -424,7 +432,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-mc10",
@@ -490,7 +499,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-q11",
@@ -546,7 +556,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cra2023-q12",
@@ -595,7 +606,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q13",
@@ -639,7 +651,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-q14a",
@@ -732,7 +745,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q14b",
@@ -825,7 +839,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-q15",
@@ -918,7 +933,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q16a",
@@ -959,7 +975,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q16b",
@@ -1052,7 +1069,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-q17a",
@@ -1098,7 +1116,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-q17b",
@@ -1139,7 +1158,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q17c",
@@ -1184,7 +1204,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q18a",
@@ -1231,7 +1252,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-q18b",
@@ -1276,7 +1298,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q18c",
@@ -1326,7 +1349,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-q19",
@@ -1371,7 +1395,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q20",
@@ -1418,7 +1443,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q21",
@@ -1491,7 +1517,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q22a",
@@ -1549,7 +1576,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q22b",
@@ -1607,7 +1635,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q23a",
@@ -1651,7 +1680,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q23b",
@@ -1691,7 +1721,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q23c",
@@ -1735,7 +1766,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023-q24a",
@@ -1901,7 +1933,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q24b",
@@ -2006,7 +2039,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q25",
@@ -2075,7 +2109,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q26a",
@@ -2116,7 +2151,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q26b",
@@ -2161,7 +2197,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q26c",
@@ -2206,7 +2243,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q27a",
@@ -2254,7 +2292,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q27b",
@@ -2351,7 +2390,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q27c",
@@ -2407,7 +2447,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q28a",
@@ -2456,7 +2497,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q28b",
@@ -2501,7 +2543,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q28c",
@@ -2542,7 +2585,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023-q29a",
@@ -2616,7 +2660,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023-q29b",
@@ -2684,7 +2729,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q29c",
@@ -2793,7 +2839,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q30a",
@@ -2838,7 +2885,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q30b",
@@ -2883,7 +2931,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023-q31",
@@ -2977,7 +3026,8 @@
           },
           "alsoIn": [
             "exam:cranbrook2023"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-mc1",
@@ -3013,7 +3063,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-mc2",
@@ -3070,7 +3121,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-mc3",
@@ -3107,7 +3159,8 @@
           "hscType": "data-analysis",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-mc4",
@@ -3151,7 +3204,8 @@
           "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-mc5",
@@ -3192,7 +3246,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-mc6",
@@ -3232,7 +3287,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-mc7",
@@ -3273,7 +3329,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-mc8",
@@ -3314,7 +3371,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-mc9",
@@ -3351,7 +3409,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-mc10",
@@ -3425,7 +3484,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-q11",
@@ -3497,7 +3557,8 @@
           "meta": {
             "examPaper": "cra-2023"
           },
-          "hscType": "data-analysis"
+          "hscType": "data-analysis",
+          "xp": 1
         },
         {
           "id": "cra2023s-q12",
@@ -3538,7 +3599,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q13",
@@ -3578,7 +3640,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-q14a",
@@ -3618,7 +3681,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q14b",
@@ -3654,7 +3718,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-q15",
@@ -3694,7 +3759,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q16a",
@@ -3731,7 +3797,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q16b",
@@ -3771,7 +3838,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-q17a",
@@ -3813,7 +3881,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-q17b",
@@ -3854,7 +3923,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q17c",
@@ -3895,7 +3965,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q18a",
@@ -3936,7 +4007,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-q18b",
@@ -3977,7 +4049,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q18c",
@@ -4013,7 +4086,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-q19",
@@ -4054,7 +4128,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q20",
@@ -4095,7 +4170,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q21",
@@ -4148,7 +4224,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q22a",
@@ -4222,7 +4299,8 @@
           "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q22b",
@@ -4273,7 +4351,8 @@
             "course": "Advanced",
             "examPaper": "cra-2023"
           },
-          "hscType": "trapezoidal-rule"
+          "hscType": "trapezoidal-rule",
+          "xp": 2
         },
         {
           "id": "cra2023s-q23a",
@@ -4313,7 +4392,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q23b",
@@ -4353,7 +4433,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q23c",
@@ -4393,7 +4474,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cra2023s-q24a",
@@ -4555,7 +4637,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q24b",
@@ -4717,7 +4800,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q25",
@@ -4766,7 +4850,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q26a",
@@ -4807,7 +4892,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q26b",
@@ -4848,7 +4934,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q26c",
@@ -4889,7 +4976,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q27a",
@@ -4933,7 +5021,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q27b",
@@ -4973,7 +5062,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q27c",
@@ -5025,7 +5115,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q28a",
@@ -5066,7 +5157,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q28b",
@@ -5107,7 +5199,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q28c",
@@ -5148,7 +5241,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cra2023s-q29a",
@@ -5218,7 +5312,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cra2023s-q29b",
@@ -5282,7 +5377,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q29c",
@@ -5354,7 +5450,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q30a",
@@ -5395,7 +5492,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q30b",
@@ -5436,7 +5534,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cra2023s-q31",
@@ -5473,7 +5572,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:cranbrook2023similar"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

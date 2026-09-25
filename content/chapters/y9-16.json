@@ -49,7 +49,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1b",
@@ -92,7 +93,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1c",
@@ -135,7 +137,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1d",
@@ -178,7 +181,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1e",
@@ -221,7 +225,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1f",
@@ -264,7 +269,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1g",
@@ -304,7 +310,8 @@
               "work": "\\(A \\approx 78.54\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q1h",
@@ -344,7 +351,8 @@
               "work": "\\(A \\approx 78.54\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q1i",
@@ -387,7 +395,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q1j",
@@ -430,7 +439,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q2a",
@@ -467,7 +477,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q2b",
@@ -504,7 +515,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q2c",
@@ -541,7 +553,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q2d",
@@ -578,7 +591,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q3a",
@@ -618,7 +632,8 @@
               "work": "\\(A = 28\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q3b",
@@ -661,7 +676,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q3c",
@@ -701,7 +717,8 @@
               "work": "\\(A = 25\\pi\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q3d",
@@ -738,7 +755,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q3e",
@@ -775,7 +793,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q3f",
@@ -812,7 +831,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q4",
@@ -855,7 +875,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q5",
@@ -895,7 +916,8 @@
               "work": "\\(A = \\dfrac{1}{2}d_1 d_2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q6a",
@@ -935,7 +957,8 @@
               "work": "\\(A = 36\\pi\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q6bi",
@@ -975,7 +998,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q6bii",
@@ -1018,7 +1042,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16a-q6biii",
@@ -1058,7 +1083,8 @@
               "work": "\\(A = 27\\pi\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q6biv",
@@ -1098,7 +1124,8 @@
               "work": "\\(A = 48\\pi\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q6bv",
@@ -1138,7 +1165,8 @@
               "work": "\\(A = 12\\pi\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q6bvi",
@@ -1178,7 +1206,8 @@
               "work": "\\(A = 8\\pi\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q6c",
@@ -1218,7 +1247,8 @@
               "work": "\\(A = \\dfrac{\\theta}{360}\\pi r^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q7a",
@@ -1252,7 +1282,8 @@
               "work": "\\(r \\approx 2.19\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q7b",
@@ -1286,7 +1317,8 @@
               "work": "\\(r \\approx 5.05\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q7c",
@@ -1320,7 +1352,8 @@
               "work": "\\(r = 4\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q7d",
@@ -1354,7 +1387,8 @@
               "work": "\\(r = 6\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16a-q8",
@@ -1394,7 +1428,8 @@
               "work": "\\(A \\approx 62.83\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q9",
@@ -1428,7 +1463,8 @@
               "work": "\\(r \\approx 5.66\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16a-q10a",
@@ -1474,7 +1510,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10b",
@@ -1520,7 +1557,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10c",
@@ -1566,7 +1604,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10d",
@@ -1612,7 +1651,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10e",
@@ -1658,7 +1698,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10f",
@@ -1704,7 +1745,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10g",
@@ -1753,7 +1795,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16a-q10h",
@@ -1801,7 +1844,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "willoughby2019-s6-q1",
@@ -1843,7 +1887,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s6-q2",
@@ -1882,7 +1927,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-1a",
@@ -1913,7 +1959,8 @@
               "explain": "Add them together.",
               "work": "\\(SA = 238\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-1b",
@@ -1952,7 +1999,8 @@
               "explain": "Round to the nearest whole number.",
               "work": "\\(67\\text{ m}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-1c",
@@ -1994,7 +2042,8 @@
               "explain": "Calculate and round to the nearest whole number.",
               "work": "\\(278 + 188.495\\dots = 466.495\\dots \\approx 466\\text{ mm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-2a",
@@ -2021,7 +2070,8 @@
               "explain": "Multiply the cross-sectional area by the length of the prism (7 mm).",
               "work": "\\(V = 6 \\times 7 = 42\\text{ mm}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-2b",
@@ -2051,7 +2101,8 @@
               "explain": "Simplify.",
               "work": "\\(V = \\frac{90\\pi}{4} = \\frac{45\\pi}{2}\\text{ cm}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-3a",
@@ -2084,7 +2135,8 @@
               "explain": "Multiply the area by the length of the pool (8 m) to find the volume.",
               "work": "\\(V = 7 \\times 8 = 56\\text{ m}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-3b",
@@ -2107,7 +2159,8 @@
               "explain": "Multiply the volume by 1000.",
               "work": "\\(56 \\times 1000 = 56,000\\text{ L}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-4a",
@@ -2126,7 +2179,8 @@
               "explain": "Multiply by 100.",
               "work": "\\(6 \\times 100 = 600\\text{ mm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-4b",
@@ -2145,7 +2199,8 @@
               "explain": "Divide by \\(1,000,000\\) (or \\(1000^2\\)).",
               "work": "\\(41,000 \\div 1,000,000 = 0.041\\text{ km}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-4c",
@@ -2164,7 +2219,8 @@
               "explain": "Divide by 1000 (or \\(10^3\\)).",
               "work": "\\(567,000 \\div 1000 = 567\\text{ cm}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-4d",
@@ -2183,7 +2239,8 @@
               "explain": "Multiply by \\(1,000,000,000\\) (or \\(1000^3\\)).",
               "work": "\\(0.82 \\times 1,000,000,000 = 820,000,000\\text{ m}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-4e",
@@ -2202,7 +2259,8 @@
               "explain": "Multiply by 1000.",
               "work": "\\(27.5 \\times 1000 = 27,500\\text{ cm}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-5",
@@ -2232,7 +2290,8 @@
               "explain": "Add all outer boundaries.",
               "work": "\\(P = 6 + 10 + 5\\pi + 3\\pi = 16 + 8\\pi\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-6a",
@@ -2259,7 +2318,8 @@
               "explain": "Round to one decimal place.",
               "work": "\\(88.5\\text{ mm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-meas-6b",
@@ -2293,7 +2353,8 @@
               "explain": "Round to one decimal place.",
               "work": "\\(42.1\\text{ mm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t6q1",
@@ -2336,7 +2397,8 @@
             "grade": "9",
             "topic": "y9-16a",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t6q2",
@@ -2381,7 +2443,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-16a"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2431,7 +2494,8 @@
               "work": "\\(\\text{SA} = 384\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16b-q1b",
@@ -2474,7 +2538,8 @@
               "work": "\\(\\text{SA} = 216\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16b-q1c",
@@ -2514,7 +2579,8 @@
               "work": "\\(\\text{SA} = 2 \\times 254 = 508\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q1d",
@@ -2554,7 +2620,8 @@
               "work": "\\(\\text{SA} = 2 \\times 212 = 424\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q1e",
@@ -2594,7 +2661,8 @@
               "work": "\\(\\text{SA} = 2 \\times 81.5 = 163\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q1f",
@@ -2634,7 +2702,8 @@
               "work": "\\(\\text{SA} = 2 \\times 84.8 = 169.6\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q2",
@@ -2674,7 +2743,8 @@
               "work": "\\(\\text{SA} = 144 + 384 = 528\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y9-16b-q3",
@@ -2714,7 +2784,8 @@
               "work": "\\(\\text{SA} = 600 + 420 + 630 = 1650\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y9-16b-q4a",
@@ -2754,7 +2825,8 @@
               "work": "\\(A = 45\\text{ m}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q4b",
@@ -2794,7 +2866,8 @@
               "work": "\\(A = 45 + 14 = 59\\text{ m}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16b-q5a",
@@ -2834,7 +2907,8 @@
               "work": "\\(\\text{SA} = 48 + 480 = 528\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-16b-q5b",
@@ -2874,7 +2948,8 @@
               "work": "\\(\\text{SA} = 192 + 210 = 402\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-16b-q5c",
@@ -2914,7 +2989,8 @@
               "work": "\\(\\text{SA} = 60 + 240 = 300\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-16b-q5d",
@@ -2954,7 +3030,8 @@
               "work": "\\(\\text{SA} = 24 + 216 = 240\\text{ cm}^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-16b-q5e",
@@ -2993,7 +3070,8 @@
               "explain": "Total surface area.",
               "work": "\\(\\text{SA} = 72 + 240 = 312\\text{ cm}^{2}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16b-q5f",
@@ -3032,7 +3110,8 @@
               "explain": "Total surface area.",
               "work": "\\(\\text{SA} = 128 + 180 = 308\\text{ cm}^{2}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16b-q6a",
@@ -3071,7 +3150,8 @@
               "explain": "Square root and round to the nearest millimetre (3 d.p. in metres).",
               "work": "\\(EH \\approx 25.04496\\ldots = 25.045\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16b-q6b",
@@ -3110,7 +3190,8 @@
               "explain": "Each tile is \\(0.15 \\times 0.15 = 0.0225\\text{ m}^{2}\\). Divide and round up for partial tiles if needed; the option matching the calculation is 19113.",
               "work": "\\(n = \\dfrac{430.04}{0.0225} \\approx 19112.9 \\approx 19113\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q5e",
@@ -3167,7 +3248,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-willoughby-17-y-pc-q4a",
@@ -3200,7 +3282,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q7a",
@@ -3241,7 +3324,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q7b",
@@ -3277,7 +3361,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -3322,7 +3407,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16c-q1b",
@@ -3360,7 +3446,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16c-q1c",
@@ -3528,7 +3615,8 @@
               "work": "\\[ TSA \\approx 678.58 \\text{ cm}^2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16c-q1d",
@@ -3696,7 +3784,8 @@
               "work": "\\[ TSA \\approx 603.19 \\text{ cm}^2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16c-q1e",
@@ -3864,7 +3953,8 @@
               "work": "\\[ SA \\approx 329.87 \\text{ cm}^2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16c-q1f",
@@ -4032,7 +4122,8 @@
               "work": "\\[ SA \\approx 753.98 \\text{ cm}^2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16c-q2",
@@ -4192,7 +4283,8 @@
               "explain": "Evaluate and round to two decimal places.",
               "work": "\\[ SA \\approx 2261.95 \\text{ cm}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q3a",
@@ -4351,7 +4443,8 @@
               "explain": "Substitute the given values and calculate.",
               "work": "\\[ A = 8 \\times 20 \\]\n\\[ A = 160 \\text{ cm}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q3b",
@@ -4388,7 +4481,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16c-q3c",
@@ -4422,7 +4516,8 @@
               "explain": "Calculate the final answer.",
               "work": "\\[ CSA \\approx 251.33 \\text{ cm}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q3d",
@@ -4456,7 +4551,8 @@
               "explain": "Evaluate and round to two decimal places.",
               "work": "\\[ TSA \\approx 461.59 \\text{ cm}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q4",
@@ -4596,7 +4692,8 @@
               "explain": "Substitute the values and calculate.",
               "work": "\\[ CSA = \\pi (4)(6) \\]\n\\[ CSA = 24\\pi \\]\n\\[ CSA \\approx 75.40 \\text{ m}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q5",
@@ -4848,7 +4945,8 @@
               "explain": "Add them all together.",
               "work": "\\[ \\text{Total Visible Area} = 20\\pi + 40\\pi + 4\\pi + 21\\pi = 85\\pi \\]\n\\[ 85\\pi \\approx 267.04 \\text{ cm}^2 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q6",
@@ -4878,7 +4976,8 @@
               "explain": "Rearrange and solve for \\(h\\).",
               "work": "\\[ 3\\pi h = 37.70 - 4.5\\pi \\]\n\\[ 3\\pi h \\approx 37.70 - 14.137 = 23.563 \\]\n\\[ h = \\frac{23.563}{3\\pi} \\approx 2.50 \\text{ m} \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q7a",
@@ -4908,7 +5007,8 @@
               "explain": "Rearrange and solve for \\(h\\).",
               "work": "\\[ \\pi h^2 = \\frac{400}{4} = 100 \\]\n\\[ h^2 = \\frac{100}{\\pi} \\]\n\\[ h = \\sqrt{\\frac{100}{\\pi}} \\approx 5.64 \\text{ cm} \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q7b",
@@ -4942,7 +5042,8 @@
               "explain": "Rearrange and solve for \\(r\\).",
               "work": "\\[ \\pi r^2 = 100 \\]\n\\[ r^2 = \\frac{100}{\\pi} \\]\n\\[ r = \\sqrt{\\frac{100}{\\pi}} \\approx 5.64 \\text{ cm} \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16c-q8",
@@ -4979,7 +5080,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-willoughby-17-y-pc-q5",
@@ -5020,7 +5122,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -5258,7 +5361,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q1b",
@@ -5489,7 +5593,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q1c",
@@ -5683,7 +5788,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q1d",
@@ -5912,7 +6018,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q1e",
@@ -6072,7 +6179,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q1f",
@@ -6228,7 +6336,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16d-q2a",
@@ -6258,7 +6367,8 @@
               "work": "\\( V = a^3 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16d-q2b",
@@ -6288,7 +6398,8 @@
               "work": "\\( V = abc \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16d-q2c",
@@ -6318,7 +6429,8 @@
               "work": "\\( V = \\pi a^2 \\times b = \\pi a^2 b \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16d-q3a",
@@ -6540,7 +6652,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3b",
@@ -6747,7 +6860,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3c",
@@ -6958,7 +7072,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3d",
@@ -7213,7 +7328,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3e",
@@ -7523,7 +7639,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3f",
@@ -7905,7 +8022,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3g",
@@ -8106,7 +8224,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3h",
@@ -8313,7 +8432,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3i",
@@ -8580,7 +8700,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q3j",
@@ -8916,7 +9037,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q4a",
@@ -8949,7 +9071,8 @@
               "explain": "Calculate the final area.",
               "work": "\\( A = 30 \\text{ cm}^2 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q4b",
@@ -8982,7 +9105,8 @@
               "explain": "Divide by 72.25 to solve for the height.",
               "work": "\\( h = \\frac{255}{72.25} \\approx 3.53 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q4c",
@@ -9015,7 +9139,8 @@
               "explain": "Calculate the final side length.",
               "work": "\\( s = 2.5 \\text{ m} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q4d",
@@ -9052,7 +9177,8 @@
               "explain": "Calculate the final side length.",
               "work": "\\( x = \\sqrt[3]{614.125} = 8.5 \\text{ mm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q5a",
@@ -9220,7 +9346,8 @@
               "explain": "Calculate the final decimal value and round to two decimal places.",
               "work": "\\( V \\approx 301.59 \\text{ cm}^3 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q5b",
@@ -9391,7 +9518,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q5c",
@@ -9578,7 +9706,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q5d",
@@ -9762,7 +9891,8 @@
               "explain": "Calculate the decimal value and round to two decimal places.",
               "work": "\\( V \\approx 251.327... \\rightarrow 251.33 \\text{ cm}^3 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q5e",
@@ -9918,7 +10048,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q5f",
@@ -10074,7 +10205,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q5g",
@@ -10330,7 +10462,8 @@
               "explain": "Calculate the decimal value and round to two decimal places.",
               "work": "\\( V \\approx 75.398... \\rightarrow 75.40 \\text{ cm}^3 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q5h",
@@ -10623,7 +10756,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16d-q6a",
@@ -10656,7 +10790,8 @@
               "explain": "Calculate and round to two decimal places.",
               "work": "\\( h \\approx 3.978... \\rightarrow 3.98 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q6b",
@@ -10689,7 +10824,8 @@
               "explain": "Take the square root to find \\(r\\) and round to two decimal places.",
               "work": "\\( r = \\sqrt{\\frac{375}{8\\pi}} \\approx 3.862... \\rightarrow 3.86 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q6c",
@@ -10722,7 +10858,8 @@
               "explain": "Take the cube root to find \\(h\\) and round to two decimal places.",
               "work": "\\( h = \\sqrt[3]{\\frac{1000}{\\pi}} \\approx 6.827... \\rightarrow 6.83 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16d-q6d",
@@ -10759,7 +10896,8 @@
               "explain": "Take the cube root to find \\(h\\) and round to two decimal places.",
               "work": "\\( h = \\sqrt[3]{\\frac{2000}{\\pi}} \\approx 8.602... \\rightarrow 8.60 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q4e",
@@ -10802,7 +10940,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "willoughby2019-s6-q3",
@@ -10837,7 +10976,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q4b",
@@ -10866,7 +11006,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q6",
@@ -10907,7 +11048,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q7c",
@@ -10947,7 +11089,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t6q3",
@@ -10988,7 +11131,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-16d"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -11029,7 +11173,8 @@
               "work": "\\(3.5\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q1b",
@@ -11063,7 +11208,8 @@
               "work": "\\(8000\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q1c",
@@ -11097,7 +11243,8 @@
               "work": "\\(0.95\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q1d",
@@ -11131,7 +11278,8 @@
               "work": "\\(42\\,000\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q2a",
@@ -11165,7 +11313,8 @@
               "work": "\\(300\\\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q2b",
@@ -11199,7 +11348,8 @@
               "work": "\\(600\\,000\\\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q2c",
@@ -11233,7 +11383,8 @@
               "work": "\\(80\\\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q2d",
@@ -11267,7 +11418,8 @@
               "work": "\\(1\\,500\\,000\\\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q3a",
@@ -11301,7 +11453,8 @@
               "work": "\\(1\\,800\\,000\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q3b",
@@ -11335,7 +11488,8 @@
               "work": "\\(4.5\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q3c",
@@ -11369,7 +11523,8 @@
               "work": "\\(250\\,000\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q3d",
@@ -11403,7 +11558,8 @@
               "work": "\\(0.32\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16e-q4a",
@@ -11437,7 +11593,8 @@
               "work": "\\(960\\,000\\\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q4b",
@@ -11471,7 +11628,8 @@
               "work": "\\(9600\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q4c",
@@ -11505,7 +11663,8 @@
               "work": "\\(80\\\\text{ cm} \\\\times 120\\\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q4d",
@@ -11539,7 +11698,8 @@
               "work": "\\(9600\\\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q4e",
@@ -11573,7 +11733,8 @@
               "work": "\\(0.8\\\\text{ m} \\\\times 1.2\\\\text{ m}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q4f",
@@ -11607,7 +11768,8 @@
               "work": "\\(0.96\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q5a",
@@ -11641,7 +11803,8 @@
               "work": "\\(111\\,800\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q5b",
@@ -11675,7 +11838,8 @@
               "work": "\\(11.18\\\\text{ ha}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q6",
@@ -11709,7 +11873,8 @@
               "work": "\\(200\\\\text{ m}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q7",
@@ -11743,7 +11908,8 @@
               "work": "\\(26\\,000\\\\text{ ha}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q8a",
@@ -11777,7 +11943,8 @@
               "work": "\\(4\\,800\\,000\\\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q8b",
@@ -11811,7 +11978,8 @@
               "work": "\\(4.8\\\\text{ km}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q9a",
@@ -11845,7 +12013,8 @@
               "work": "\\(0.75\\\\text{ ha}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q9b",
@@ -11879,7 +12048,8 @@
               "work": "\\(1.875\\\\text{ acres}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16e-q12a",
@@ -11913,7 +12083,8 @@
               "work": "\\(7,000,000\\\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q12b",
@@ -11947,7 +12118,8 @@
               "work": "\\(7000\\\\text{ L}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q13a",
@@ -11981,7 +12153,8 @@
               "work": "\\(5.76\\\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q13b",
@@ -12015,7 +12188,8 @@
               "work": "\\(560\\,000\\\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q13c",
@@ -12049,7 +12223,8 @@
               "work": "\\(0.765\\\\text{ m}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q13d",
@@ -12083,7 +12258,8 @@
               "work": "\\(590\\\\text{ mm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14a",
@@ -12117,7 +12293,8 @@
               "work": "\\(620\\\\text{ L}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14b",
@@ -12151,7 +12328,8 @@
               "work": "\\(2.6\\\\text{ L}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14c",
@@ -12185,7 +12363,8 @@
               "work": "\\(52\\\\text{ mL}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14d",
@@ -12219,7 +12398,8 @@
               "work": "\\(2700\\\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14e",
@@ -12253,7 +12433,8 @@
               "work": "\\(0.96\\\\text{ m}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q14f",
@@ -12287,7 +12468,8 @@
               "work": "\\(26\\,000\\\\text{ mm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y9-16e-q20ai",
@@ -12320,7 +12502,8 @@
               "explain": "Final answer: 9600\\\\text{ tiles}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(9600\\\\text{ tiles}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16e-q20aii",
@@ -12353,7 +12536,8 @@
               "explain": "Final answer: 2400\\\\text{ tiles}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(2400\\\\text{ tiles}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-16e-q20aiii",
@@ -12386,7 +12570,8 @@
               "explain": "Divide the total pool surface area by the area of one tile to find the number of tiles needed.",
               "work": "\\text{Number of tiles} = \\frac{96}{0.02} = 4800 \\text{ tiles}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q3b",
@@ -12416,7 +12601,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -12457,7 +12643,8 @@
               "work": "\\(2.3 \\times 10^{-2}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q1b",
@@ -12491,7 +12678,8 @@
               "work": "\\(6.7 \\times 10^{-11}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q1c",
@@ -12525,7 +12713,8 @@
               "work": "\\(4.56 \\times 10^{-10}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q1d",
@@ -12559,7 +12748,8 @@
               "work": "\\(2.5 \\times 10^{-5}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q1e",
@@ -12593,7 +12783,8 @@
               "work": "\\(9.3 \\times 10^{-8}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q1f",
@@ -12627,7 +12818,8 @@
               "work": "\\(6.51 \\times 10^{-7}\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q2a",
@@ -12661,7 +12853,8 @@
               "work": "\\(8.64 \\times 10^{10}\\text{ microseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q2b",
@@ -12695,7 +12888,8 @@
               "work": "\\(6.048 \\times 10^{11}\\text{ microseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q2c",
@@ -12729,7 +12923,8 @@
               "work": "\\(5.0425 \\times 10^{10}\\text{ microseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q2d",
@@ -12763,7 +12958,8 @@
               "work": "\\(6.5 \\times 10^{5}\\text{ microseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q3a",
@@ -12797,7 +12993,8 @@
               "work": "\\(8.64 \\times 10^{13}\\text{ nanoseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q3b",
@@ -12831,7 +13028,8 @@
               "work": "\\(6.048 \\times 10^{14}\\text{ nanoseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q3c",
@@ -12865,7 +13063,8 @@
               "work": "\\(5.0435 \\times 10^{13}\\text{ nanoseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q3d",
@@ -12899,7 +13098,8 @@
               "work": "\\(6.72 \\times 10^{5}\\text{ nanoseconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q4",
@@ -12933,7 +13133,8 @@
               "work": "\\(1\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q5",
@@ -12967,7 +13168,8 @@
               "work": "\\(7.6591 \\times 10^{11}\\text{ L}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16f-q6",
@@ -13001,7 +13203,8 @@
               "work": "\\(2.4 \\times 10^{-4}\\text{ s}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q7a",
@@ -13035,7 +13238,8 @@
               "work": "\\(10^{12}\\text{ L}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q7b",
@@ -13069,7 +13273,8 @@
               "work": "\\(1000\\text{ GL}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q8",
@@ -13097,7 +13302,8 @@
               "work": "\\begin{aligned} \\text{Capacity} &= \\frac{2010.62}{1000} \\\\ &\\approx 2.01\\text{ ML} \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q9a",
@@ -13131,7 +13337,8 @@
               "work": "\\(3.3\\text{ nanoseconds}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q9b",
@@ -13165,7 +13372,8 @@
               "work": "\\\\(3.3\\\\text{ microseconds}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16f-q9c",
@@ -13199,7 +13407,8 @@
               "work": "\\(30\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -13240,7 +13449,8 @@
               "work": "\\\\( 0.012\\\\text{ m} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q1b",
@@ -13277,7 +13487,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-16g-q1c",
@@ -13311,7 +13522,8 @@
               "work": "\\\\( 55\\\\text{ ha} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q1d",
@@ -13345,7 +13557,8 @@
               "work": "\\\\( 350\\\\text{ mm}^3 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q1e",
@@ -13379,7 +13592,8 @@
               "work": "\\\\( 0.84\\\\text{ L} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q2a",
@@ -13419,7 +13633,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q2b",
@@ -13459,7 +13674,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q2c",
@@ -13499,7 +13715,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q2d",
@@ -13539,7 +13756,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q3a",
@@ -13573,7 +13791,8 @@
               "work": "\\\\( 200\\\\text{ mm} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3b",
@@ -13607,7 +13826,8 @@
               "work": "\\\\( 1200\\\\text{ m} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3c",
@@ -13641,7 +13861,8 @@
               "work": "\\\\( 3.2\\\\text{ m} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3d",
@@ -13675,7 +13896,8 @@
               "work": "\\\\( 50\\\\,000\\\\text{ m}^2 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3e",
@@ -13709,7 +13931,8 @@
               "work": "\\\\( 0.2\\\\text{ m}^2 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3f",
@@ -13743,7 +13966,8 @@
               "work": "\\\\( 300\\\\text{ mm}^2 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3g",
@@ -13777,7 +14001,8 @@
               "work": "\\\\( 3200\\\\text{ cm}^3 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3h",
@@ -13811,7 +14036,8 @@
               "work": "\\\\( 500\\\\,000\\\\text{ cm}^3 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3i",
@@ -13845,7 +14071,8 @@
               "work": "\\\\( 2000\\\\text{ L} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q3j",
@@ -13879,7 +14106,8 @@
               "work": "\\\\( 2.5\\\\text{ ha} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-16g-q4a",
@@ -13919,7 +14147,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q4b",
@@ -13959,7 +14188,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q4c",
@@ -13999,7 +14229,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q4d",
@@ -14039,7 +14270,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q5ai",
@@ -14078,7 +14310,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16g-q5aii",
@@ -14118,7 +14351,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q5bi",
@@ -14157,7 +14391,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16g-q5bii",
@@ -14197,7 +14432,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q6a",
@@ -14237,7 +14473,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q6b",
@@ -14276,7 +14513,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16g-q7a",
@@ -14313,7 +14551,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q7b",
@@ -14350,7 +14589,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q8",
@@ -14473,7 +14713,8 @@
               "work": "\\\\( \\\\text{Shaded Area} = 64 - 50.27 = 13.73\\\\text{ cm}^2 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-16g-q9a",
@@ -14513,7 +14754,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q9b",
@@ -14550,7 +14792,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q9c",
@@ -14587,7 +14830,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q10",
@@ -14627,7 +14871,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q11a",
@@ -14667,7 +14912,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q11b",
@@ -14707,7 +14953,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q11c",
@@ -14747,7 +14994,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q11d",
@@ -14787,7 +15035,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-16g-q12a",
@@ -14826,7 +15075,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-16g-q12b",
@@ -14865,7 +15115,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         }
       ]
     }

@@ -28,7 +28,8 @@
             {
               "explain": "Since LHS \\(\\neq\\) RHS (\\(3 \\neq 4\\)), \\(x = -1\\) is not a solution."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "0nzh7k9TNsZh0XnNNrYo",
@@ -55,7 +56,8 @@
               "explain": "Finally, we simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 140. This reduces the expression to its simplest form and yields our final answer.",
               "work": "\\( \\\\frac{280 \\\\div 140}{1260 \\\\div 140} = \\\\frac{2}{9} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "4iuQdKTLAyoDq8RtfLMO",
@@ -82,7 +84,8 @@
               "explain": "Finally, we simplify the fraction. By dividing both the numerator and the denominator by their greatest common divisor, which is 504, we arrive at the simplest form, matching one of the options.",
               "work": "\\( \\\\frac{504 \\\\div 504}{3528 \\\\div 504} = \\\\frac{1}{7} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "8MedElQ8DXAEvu3sLYj9",
@@ -109,7 +112,8 @@
               "explain": "Finally, we simplify the fraction by dividing the numerator and the denominator by their greatest common divisor, which is 7. This yields the final answer.",
               "work": "\\( \\\\frac{14 \\\\div 7}{35 \\\\div 7} = \\\\frac{2}{5} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "9ni0MXbfodc341D7UrD8",
@@ -136,7 +140,8 @@
               "explain": "Finally, we simplify the fraction by dividing both the numerator and denominator by their greatest common divisor, which is 120. This gives us the simplest improper fraction.",
               "work": "\\( \\\\frac{480 \\\\div 120}{360 \\\\div 120} = \\\\frac{4}{3} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "174vTcmPNyrWdudcjXbI",
@@ -171,7 +176,8 @@
                   "explain": "Finally, we combine these names to identify the matching option. The correct list containing all four straight lines passing through \\(M\\) is Lines \\(AB\\), \\(CD\\), \\(EF\\), and \\(GH\\).",
                   "work": "\\( \\text{Final Answer: Lines } AB, \\; CD, \\; EF, \\; GH \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q3b",
@@ -197,7 +203,8 @@
                   "explain": "Finally, we apply the standard parallel notation symbol \\(\\\\parallel\\). Writing that line \\(AC\\) is parallel to line \\(BD\\) yields \\(AC \\\\parallel BD\\).",
                   "work": "\\( AC \\\\parallel BD \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q3c",
@@ -223,7 +230,8 @@
                   "explain": "Finally, we read the label of this intersection point from the diagram, which is clearly marked as \\(M\\). Thus, the correct option is Point \\(M\\).",
                   "work": "\\( AB \\\\cap CD = Point \\; M \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q3d",
@@ -249,7 +257,8 @@
                   "explain": "Finally, in standard geometric notation, a line passing through points \\(C\\) and \\(M\\) is named Line \\(CM\\). This corresponds directly to our correct option.",
                   "work": "\\( \\text{Line Name: } CM \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q3e",
@@ -275,7 +284,8 @@
                   "explain": "Finally, looking at the letter designations, both lines share the letter \\(C\\). The intersection point in the diagram is Point \\(C\\).",
                   "work": "\\( AC \\\\cap CD = Point \\; C \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -305,7 +315,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 3 and 20 are coprime, the fraction is in its simplest form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{3}{20} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cFWooF7i9L47uPvKkiiS",
@@ -340,7 +351,8 @@
                   "explain": "Finally, we combine the line names with the parallel symbol to write \\(WX \\\\parallel ZY\\). This matches option A.",
                   "work": "\\( WX \\\\parallel ZY \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q2b",
@@ -366,7 +378,8 @@
                   "explain": "Finally, we write the symbolic expression representing this relationship, which is \\(XY \\\\parallel WZ\\). This corresponds directly to option A.",
                   "work": "\\( XY \\\\parallel WZ \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q2c",
@@ -392,7 +405,8 @@
                   "explain": "Finally, looking at the diagram, the two lines meet at the top-right corner, which is labeled Point \\(X\\). Thus, the correct option is Point \\(X\\).",
                   "work": "\\( WX \\\\cap XY = Point \\; X \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q2d",
@@ -418,7 +432,8 @@
                   "explain": "Finally, observing the letters, both names share the letter \\(Y\\). Looking at the diagram, the bottom-right corner where they meet is Point \\(Y\\).",
                   "work": "\\( XY \\\\cap YZ = Point \\; Y \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q2e",
@@ -444,7 +459,8 @@
                   "explain": "Finally, since they never intersect, there are no common points between them. Therefore, the correct answer is: No, because parallel lines never intersect.",
                   "work": "\\( WX \\\\cap ZY = \\\\emptyset \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -482,7 +498,8 @@
                   "explain": "Finally, we recall that the geometric property of points lying on a single straight line is called collinearity. Therefore, according to Pappus' Theorem, points \\(X\\), \\(Y\\), and \\(Z\\) are collinear.",
                   "work": "\\( \\text{Collinear points: } X, \\; Y, \\; Z \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -512,7 +529,8 @@
               "explain": "Finally, we simplify this fraction by dividing both terms by their greatest common divisor, which is 24. This simplifies the fraction to its final value.",
               "work": "\\( \\\\frac{72 \\\\div 24}{240 \\\\div 24} = \\\\frac{3}{10} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cXu8HeLmLn0lArBZSlg0",
@@ -540,7 +558,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{91 \\div 91}{364 \\div 91} = \\frac{1}{4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "DBAjNxog17KWz5qZx9UL",
@@ -567,7 +586,8 @@
               "explain": "Finally, we check the fraction for simplification. Since 22 and 7 share no common factors other than 1, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{22}{7} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "drtpms2f093JbMMlA4VJ",
@@ -595,7 +615,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{12 \\div 12}{180 \\div 12} = \\frac{1}{15}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dUFhlOxDWKf1H1n7KvM9",
@@ -623,7 +644,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{10 \\div 10}{60 \\div 10} = \\frac{1}{6}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "eIlnCrqEkcAI3AuQl67A",
@@ -651,7 +673,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{84 \\div 84}{252 \\div 84} = \\frac{1}{3}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fiRc0Js9PcBoCk8lPQ0O",
@@ -679,7 +702,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{1}{15}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fZyON1kE9IeAHjNgeU1D",
@@ -707,7 +731,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{600 \\div 600}{3600 \\div 600} = \\frac{1}{6}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "HcNx5MsUT6SDTzrdIbD7",
@@ -734,7 +759,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 2 and 15 are coprime, the fraction is already in its simplest form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{2}{15} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "i3Y3r3dhklvWonUjsxDR",
@@ -762,7 +788,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{12}{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Is9hgc2mgCYNN0K51mFm",
@@ -789,7 +816,8 @@
               "explain": "Finally, we verify if the fraction can be simplified. Since 6 and 5 share no common factors, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{6}{5} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "J2NWhuhxRywBSPFSBYCh",
@@ -816,7 +844,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 25 and 12 are coprime, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{25}{12} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "KNY4o0Pe2LcwCoD45p8T",
@@ -843,7 +872,8 @@
               "explain": "Finally, we simplify the fraction by dividing both terms by their greatest common divisor, which is 2772. This reduces the fraction to its simplest form.",
               "work": "\\( \\\\frac{2772 \\\\div 2772}{8316 \\\\div 2772} = \\\\frac{1}{3} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "LjEFaDShSJsk3Hcj8iTH",
@@ -870,7 +900,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 21 and 10 share no common factors other than 1, it is already in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{21}{10} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Mbsl9L6Xcq2vlqyLlFOB",
@@ -897,7 +928,8 @@
               "explain": "Finally, we verify that 1 and 12 are coprime, meaning the fraction cannot be simplified further. This gives us our final answer.",
               "work": "\\( \\text{Final Answer: } \\\\frac{1}{12} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "MdDDdXVddPTM83EP1VNX",
@@ -932,7 +964,8 @@
                   "explain": "Finally, tracing the extended lines, they intersect at the far right point labeled as Point \\(X\\). This matches option A.",
                   "work": "\\( PQ \\\\cap SR = Point \\; X \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q6b",
@@ -958,7 +991,8 @@
                   "explain": "Finally, tracing the extensions of \\(PS\\) and \\(QR\\) upwards, we see they intersect at the top point labeled as Point \\(Y\\). This matches option B.",
                   "work": "\\( PS \\\\cap QR = Point \\; Y \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q6c",
@@ -984,7 +1018,8 @@
                   "explain": "Finally, tracing the lines \\(PR\\) and \\(QS\\), they cross at the central point labeled as Point \\(Z\\). This corresponds directly to option C.",
                   "work": "\\( PR \\\\cap QS = Point \\; Z \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1015,7 +1050,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{120 \\div 120}{720 \\div 120} = \\frac{1}{6}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "nth9LNtkBMKMAALEM6Ra",
@@ -1043,7 +1079,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{8}{15}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "OJDAAlbPIuKT4GrkVbQw",
@@ -1070,7 +1107,8 @@
               "explain": "Finally, we divide the numerator by the denominator. Since they are identical, the division simplifies perfectly to 1.",
               "work": "\\( \\\\frac{1260}{1260} = 1 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "OzkaKVY9be4cDgeO3YKo",
@@ -1097,7 +1135,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 25 and 12 are coprime, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{25}{12} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "p3aqpOfokyU8h4FLxrNg",
@@ -1125,7 +1164,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{840 \\div 840}{2520 \\div 840} = \\frac{1}{3}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "pYtSRZEFCiIiLlRcj0SE",
@@ -1160,7 +1200,8 @@
                   "explain": "Finally, we sum these configurations up, giving a total count of 2. This matches option B.",
                   "work": "\\text{Total count} = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q9b",
@@ -1186,7 +1227,8 @@
                   "explain": "Finally, we verify that four parallel lines (Config A), four concurrent lines (Config F), and three parallel lines cut by a transversal (Config B) are all valid and possible configurations. Thus, Option A is the correct answer.",
                   "work": "\\text{Final Answer: Option A}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1217,7 +1259,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{15}{16}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "QL1WGe4EAi2cVEhSeOf0",
@@ -1244,7 +1287,8 @@
               "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 6.",
               "work": "\\( \\\\frac{24 \\\\div 6}{18 \\\\div 6} = \\\\frac{4}{3} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "R89kM84ofAVM1mFjguPj",
@@ -1271,7 +1315,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 3 and 20 share no common factors, the fraction is in its simplest form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{3}{20} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "RBWHT8iMaaokYXaho2sr",
@@ -1298,7 +1343,8 @@
               "explain": "Finally, we simplify the fraction by dividing both terms by their greatest common divisor, which is 63.",
               "work": "\\( \\\\frac{945 \\\\div 63}{882 \\\\div 63} = \\\\frac{15}{14} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "rFhK4fpV4YFwqMhJUy9b",
@@ -1333,7 +1379,8 @@
                   "explain": "Finally, we write the names of these three lines, which are Line \\(PQ\\), Line \\(QR\\), and Line \\(RP\\). This matches option A.",
                   "work": "\\text{Final Answer: Lines } PQ, \\; QR, \\; RP"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q1b",
@@ -1359,7 +1406,8 @@
                   "explain": "Finally, we observe that both lines meet at the bottom-left vertex, which is Point \\(Q\\). This matches option A.",
                   "work": "PQ \\cap QR = Point \\; Q"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1389,7 +1437,8 @@
               "explain": "Finally, we verify if the fraction can be simplified. Since 21 and 5 are coprime, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{21}{5} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "sSLrLVBu3C9UvYib1IWC",
@@ -1417,7 +1466,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{15 \\div 3}{42 \\div 3} = \\frac{5}{14}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "sYS7VL6ShjwaYnLFs78a",
@@ -1445,7 +1495,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{72 \\div 72}{1008 \\div 72} = \\frac{1}{14}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "TOcXsCu6R4KpoDDh6uXX",
@@ -1480,7 +1531,8 @@
                   "explain": "Finally, we conclude that 'infinitely' indicates there is no upper limit or bound to the number of points we can choose. This matches option A.",
                   "work": "\\( \\text{Final Answer: Option A} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q7b",
@@ -1506,7 +1558,8 @@
                   "explain": "Finally, we conclude that we can construct an endless number of lines through that single point in different directions, matching option A.",
                   "work": "\\( \\text{Final Answer: Option A} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1544,7 +1597,8 @@
                   "explain": "Finally, we conclude that Points P, U, and Q are collinear. This corresponds to Option A.",
                   "work": "\\text{Final Answer: Option A}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q4b",
@@ -1570,7 +1624,8 @@
                   "explain": "Finally, we recall that lines that intersect at a single common point are called concurrent. Thus, the three lines are concurrent.",
                   "work": "\\text{Final Answer: Option A}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1600,7 +1655,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 10 and 9 share no common factors other than 1, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{10}{9} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "VCcijcXSIiwaeC6kAXa1",
@@ -1627,7 +1683,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 21 and 4 are coprime, the fraction is in its simplest improper form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{21}{4} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "wDMwFhyPEEB0h7kWOVcn",
@@ -1655,7 +1712,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "wZtdYTjVzZCPkuasUc5z",
@@ -1683,7 +1741,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{8}{63}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "X6xwgJKI23CQZ771Xg6R",
@@ -1710,7 +1769,8 @@
               "explain": "Finally, we check if the fraction can be simplified. Since 15 and 16 share no common factors other than 1, the fraction is in its simplest form.",
               "work": "\\( \\text{Final Answer: } \\\\frac{15}{16} \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "xG8FNM5U6Pt0wZ9j3BeR",
@@ -1738,7 +1798,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\text{Final Answer: } \\frac{6}{35}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "XOvPPPTbY5AzWhBOwEqD",
@@ -1765,7 +1826,8 @@
               "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 5.",
               "work": "\\( \\\\frac{20 \\\\div 5}{105 \\\\div 5} = \\\\frac{4}{21} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "xq4KhJlYq3vbCapPqSQo",
@@ -1793,7 +1855,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{36 \\div 12}{240 \\div 12} = \\frac{3}{20}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "xQB13doUCqSSLaBzhrer",
@@ -1821,7 +1884,8 @@
               "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
               "work": "\\(\\frac{12 \\div 12}{12 \\div 12} = 1\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "YweS5ffVJ4eHcq9a4bAC",
@@ -1856,7 +1920,8 @@
                   "explain": "Finally, we count them. Sceince Configurations A and B involve parallel lines, the total number is 2. This matches option B.",
                   "work": "\\( \\text{Total} = 2 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "q8b",
@@ -1882,7 +1947,8 @@
                   "explain": "Finally, we verify that Configurations A, B, and C all have lines extending to infinity without bounding a closed, finite area. Thus, Configuration D is the only one.",
                   "work": "\\( \\text{Final Answer: Configuration D} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -1912,7 +1978,8 @@
               "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 10.",
               "work": "\\( \\\\frac{10 \\\\div 10}{120 \\\\div 10} = \\\\frac{1}{12} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "Zj5pzO7b33sQ7n7sD0Ot",
@@ -1939,7 +2006,8 @@
               "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 30.",
               "work": "\\( \\\\frac{30 \\\\div 30}{450 \\\\div 30} = \\\\frac{1}{15} \\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1967,7 +2035,8 @@
             {
               "explain": "\\( 7.54 \\rightarrow 75.4 \\rightarrow 754 \\rightarrow 7540 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-t3-2018-p1-q34",
@@ -2000,7 +2069,8 @@
             {
               "explain": "\\( = 349.6 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2028,7 +2098,8 @@
             {
               "explain": "\\(x = 37\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q6b",
@@ -2049,7 +2120,8 @@
             {
               "explain": "Divide both sides by 5: \\(n = 3\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2080,7 +2152,8 @@
             {
               "explain": "Divide by 4: \\(y = 2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q6d",
@@ -2104,7 +2177,8 @@
             {
               "explain": "Divide by -3: \\(c = \\frac{9}{-3} = -3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q6e",
@@ -2128,7 +2202,8 @@
             {
               "explain": "Subtract 4 from both sides: \\(x = 15 - 4 = 11\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q6f",
@@ -2155,7 +2230,8 @@
             {
               "explain": "Divide by 3: \\(x = -5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q36",
@@ -2185,7 +2261,8 @@
             {
               "explain": "Result: 0.122"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-t3-2018-p1-q37",
@@ -2212,7 +2289,8 @@
             {
               "explain": "\\( = 208 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-t3-2018-p2-q3",
@@ -2239,7 +2317,8 @@
             {
               "explain": "\\( d = 40 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2276,7 +2355,8 @@
             {
               "explain": "Rounded to two decimal places: 2.37"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q4",
@@ -2303,7 +2383,8 @@
             {
               "explain": "\\(z + 20 = 180 \\implies z = 160\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2334,7 +2415,8 @@
             {
               "explain": "Adding 2 to both sides gives \\(x = 17\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q7b",
@@ -2364,7 +2446,8 @@
             {
               "explain": "Divide by -6: \\(x = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q16",
@@ -2394,7 +2477,8 @@
             {
               "explain": "Divide by 5: \\(x = 7\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q35",
@@ -2421,7 +2505,8 @@
             {
               "explain": "\\( 2.3 \\times 5.2 = 11.96 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-t3-2018-p1-q39",
@@ -2448,7 +2533,8 @@
             {
               "explain": "Therefore, the result will always be less than \\(x\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q41",
@@ -2472,7 +2558,8 @@
             {
               "explain": "Total cost: \\( 219.20 + 115.00 = \\$334.20 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

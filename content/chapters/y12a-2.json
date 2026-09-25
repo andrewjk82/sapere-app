@@ -47,7 +47,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -94,7 +95,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020-q22a",
@@ -130,7 +132,8 @@
           "meta": {
             "source": "Cherrybrook Tech 2020",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020-q22b",
@@ -166,7 +169,8 @@
           "meta": {
             "source": "Cherrybrook Tech 2020",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020s-q22a",
@@ -202,7 +206,8 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 similar",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020s-q22b",
@@ -238,7 +243,8 @@
           "meta": {
             "source": "Cherrybrook Tech 2020 similar",
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hh2020-q29",
@@ -276,7 +282,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -320,7 +327,8 @@
             "source": "ASC 2020",
             "course": "Advanced",
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "glenwood2020-q14",
@@ -361,7 +369,8 @@
           },
           "dna": {
             "dnaId": "FUNC-TRANS-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hg2020-q5",
@@ -401,7 +410,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -445,7 +455,8 @@
             "source": "ASC 2020",
             "course": "Advanced",
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -488,7 +499,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q27b",
@@ -519,7 +531,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -562,7 +575,8 @@
           "meta": {
             "source": "Caringbah 2020",
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "car2020s-q33b",
@@ -598,7 +612,8 @@
           "meta": {
             "source": "Caringbah 2020 similar",
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "glenwood2020-q5",
@@ -642,7 +657,8 @@
           },
           "dna": {
             "dnaId": "TRIG-GRAPH-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hh2020-q3",
@@ -676,7 +692,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q10",
@@ -713,7 +730,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         }
       ]
     }

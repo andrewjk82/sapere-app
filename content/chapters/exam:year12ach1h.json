@@ -30,7 +30,8 @@
               "work": "The values oscillate with growing absolute values: \\(6, -12, 42, -120, dots\\) which diverges."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1h-q17b",
@@ -66,7 +67,8 @@
               "explain": "Generate the first three terms of the sequence.",
               "work": "\\(T_1 = 16\\), \\(T_2 = 8\\), \\(T_3 = 4\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

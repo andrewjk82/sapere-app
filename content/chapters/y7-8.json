@@ -36,7 +36,8 @@
               "work": "\\(3 mL\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Al2vTAlk4vqUs93gy3jq",
@@ -65,7 +66,8 @@
               "work": "\\(750\\text{ g}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "WOor4fViwRvt18TXVJW7",
@@ -97,7 +99,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -128,7 +131,8 @@
             {
               "explain": "\\( P = 2x + 2y \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q15",
@@ -160,7 +164,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-pav-2a",
@@ -188,7 +193,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "2Jc9X4bayUXr3uGjd4U3",
@@ -216,7 +222,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(2.9 kg or 2900 g\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2Y981KBstORHXjFH5pAf",
@@ -245,7 +252,8 @@
               "work": "\\(4.508 L\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "3WkZoyutmG1Iuj3fpShQ",
@@ -274,7 +282,8 @@
               "work": "\\(41\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 3
         },
         {
           "id": "4vj5e5HnpBAXKaCjmhSP",
@@ -303,7 +312,8 @@
               "work": "\\(0.6\\text{ L}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "7Kdwqoi1K1h4iFst8nuA",
@@ -332,7 +342,8 @@
               "work": "\\(0.84\\text{ g}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "7kG2Mkfz5uq6EZi9j0vr",
@@ -361,7 +372,8 @@
               "work": "\\(4700 mL\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "8nmosH4DLKVo7Lf8Exmz",
@@ -390,7 +402,8 @@
               "work": "\\(500\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "9aeB4HLTzduvPDDIlDa1",
@@ -419,7 +432,8 @@
               "work": "\\(25.6 cm or 0.256 m\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "9dj3Ki1uzf8lrmsM9xl1",
@@ -451,7 +465,8 @@
           "timeLimit": 45,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "9JZUyr1wjgH69tn9fj3u",
@@ -480,7 +495,8 @@
               "work": "\\(32600\\text{ m}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "AdxVPVcxiMWQQBOxdBVA",
@@ -509,7 +525,8 @@
               "work": "\\(3.75\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "aIpvjF3Jk0jdWJzSZlJw",
@@ -538,7 +555,8 @@
               "work": "\\(4000\\text{ m}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "AW5sULei8gqcGEIt1HcQ",
@@ -570,7 +588,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cATwhPms3H2jVwdVKdPg",
@@ -599,7 +618,8 @@
               "work": "\\(1.575 km\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "CDbEMaEaXwR21cKCn1s9",
@@ -628,7 +648,8 @@
               "work": "\\(60\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "CmfzdoCJTRVAj0o100Z7",
@@ -657,7 +678,8 @@
               "work": "\\(60.192 t\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "dcpHKPS1aAFw5yHh00me",
@@ -686,7 +708,8 @@
               "work": "\\(5600\\text{ kg}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "ddoWtVJ4GQjCwGkrtWeq",
@@ -715,7 +738,8 @@
               "work": "\\(4800\\text{ g}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "DjfSGT1kDfcG1uXcD4jK",
@@ -744,7 +768,8 @@
               "work": "\\(478\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "dmyPKn3IUTfeVlJ4udbG",
@@ -773,7 +798,8 @@
               "work": "\\(300000\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "dOwJ0YPxmoj3zptyfB5U",
@@ -802,7 +828,8 @@
               "work": "\\(59\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "DrlRn18m6AhbHlyy4rcS",
@@ -831,7 +858,8 @@
               "work": "\\(2400\\text{ mL}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "FBqjSSa9NHwhdMePtYp8",
@@ -860,7 +888,8 @@
               "work": "\\(300\\text{ kg}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "FoJVWXuYpuWi5V2AL4sb",
@@ -889,7 +918,8 @@
               "work": "\\(27.085\\text{ km}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "fsBelNrBfGbWTJEb9mUP",
@@ -918,7 +948,8 @@
               "work": "\\(18090 kg\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "gDF0jynFGi7bGcqIGxD3",
@@ -947,7 +978,8 @@
               "work": "\\(750\\text{ m}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "ggfrsMKkB2fgynhukm6d",
@@ -976,7 +1008,8 @@
               "work": "\\(71.4\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "gtZ9BILZUef66U2ZVJMK",
@@ -1005,7 +1038,8 @@
               "work": "\\(3.8\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "H4iWJFSRXHMO6UA7RO1Q",
@@ -1034,7 +1068,8 @@
               "work": "\\(0.62\\text{ g}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "I99tn3IjiuIJpCyBwisE",
@@ -1063,7 +1098,8 @@
               "work": "\\(14.048 kg\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "iKxRnPvXq87uXhdfDc6X",
@@ -1095,7 +1131,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "iqHjMpneJToLmpleKb40",
@@ -1127,7 +1164,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "irpzeC11l7rdNItbzohd",
@@ -1156,7 +1194,8 @@
               "work": "\\(370 cm or 3700 mm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "jPdENZs2Y8IAH98zBHPU",
@@ -1185,7 +1224,8 @@
               "work": "\\($0.90\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "JvvuHRtxHoOdGe6hkHHB",
@@ -1214,7 +1254,8 @@
               "work": "\\(7000 g or 7 kg\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "K6b4iKdhaN1YgkgNUfES",
@@ -1243,7 +1284,8 @@
               "work": "\\(130 mm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "KMGD2MONQWHsrmQVXoKl",
@@ -1272,7 +1314,8 @@
               "work": "\\(8 mm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "KPGILDq6zq1BQuWbpSHm",
@@ -1301,7 +1344,8 @@
               "work": "\\(21.024 m\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "kvrqlY9nin02UINpBUmx",
@@ -1330,7 +1374,8 @@
               "work": "\\(60\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "LEOBmkeOs4NyHqbyU3Xg",
@@ -1359,7 +1404,8 @@
               "work": "\\(28600\\text{ g}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "MFGPcAT5MqLdGsHkrbFN",
@@ -1388,7 +1434,8 @@
               "work": "\\($49.00\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "mgNVETMllO5xJ0RIeJ8Z",
@@ -1417,7 +1464,8 @@
               "work": "\\($2.55\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Mr0O91F2mTN4JIVd6QyC",
@@ -1446,7 +1494,8 @@
               "work": "\\(35000 mL\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "NAz8tmlsO2WEjlRD1GqP",
@@ -1475,7 +1524,8 @@
               "work": "\\(16.48 kg\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "NPZ1PVIpEyt3an1kz1AF",
@@ -1504,7 +1554,8 @@
               "work": "\\(6.182 kg\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "nQudCSIyefXdg1I3t9BP",
@@ -1533,7 +1584,8 @@
               "work": "\\(340 g\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "OJ3JDV3iciXi3kJZlYOn",
@@ -1562,7 +1614,8 @@
               "work": "\\($6.80\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "PJwE8uIq2AlvBFvAiXWz",
@@ -1591,7 +1644,8 @@
               "work": "\\(12080 m\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "pZyXV3tBIqFf2RiTlwgo",
@@ -1620,7 +1674,8 @@
               "work": "\\($10.80\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Q9N3OZ06sG07RDGba1je",
@@ -1649,7 +1704,8 @@
               "work": "\\(184.8 cm\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "QIEaju4ve58764k5pFZS",
@@ -1678,7 +1734,8 @@
               "work": "\\(2.66 t\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "qmAGklXaQi4FLLAh06Ox",
@@ -1707,7 +1764,8 @@
               "work": "\\(6.25\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "qOtDnRlZPGZH1Buaqmi2",
@@ -1736,7 +1794,8 @@
               "work": "\\(80\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "QzqyS6HjAeU3PpfBMfdc",
@@ -1765,7 +1824,8 @@
               "work": "\\(5.824\\text{ kL}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "RDtUoybkWrvJaoyXQVnn",
@@ -1794,7 +1854,8 @@
               "work": "\\(0.674\\text{ kg}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "sGBfDvPJSDV02bPycuUC",
@@ -1823,7 +1884,8 @@
               "work": "\\(53 kg\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "SKGva98u9PntujA78neu",
@@ -1852,7 +1914,8 @@
               "work": "\\($20.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Sol1UTuFNlDq37K4bmzP",
@@ -1881,7 +1944,8 @@
               "work": "\\(9.2\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "sZuJc3RzFaum9vA99isx",
@@ -1910,7 +1974,8 @@
               "work": "\\(12 m\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "T5TDJ0NezxdN4DKxdU7i",
@@ -1939,7 +2004,8 @@
               "work": "\\(5060 kg\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "tba3V9KoAZ6wh8XK6cFt",
@@ -1968,7 +2034,8 @@
               "work": "\\(7280\\text{ m}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "tnsEEeJVOjK0TNAYZK00",
@@ -1997,7 +2064,8 @@
               "work": "\\(0.5\\text{ km}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "tOTFli1HRdJq2jMeemOm",
@@ -2026,7 +2094,8 @@
               "work": "\\(0.08\\text{ km}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "UP39JBgdIo7T1V8LPWkk",
@@ -2055,7 +2124,8 @@
               "work": "\\($0.38\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "uWWSK4bCiDoH7Q7Mq6pF",
@@ -2084,7 +2154,8 @@
               "work": "\\(1890 kg\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "UYZilOzO8VF1QoZXnhUH",
@@ -2113,7 +2184,8 @@
               "work": "\\($11.40\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "V1yfdJWYpMNlaACFysZI",
@@ -2142,7 +2214,8 @@
               "work": "\\(240\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "W46jvPjZAJlD0MPukXyp",
@@ -2171,7 +2244,8 @@
               "work": "\\(9\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "Wpgnna24znjo2OKHjvX3",
@@ -2200,7 +2274,8 @@
               "work": "\\(73\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "X0zDuCVeES5sHPZMU7hC",
@@ -2229,7 +2304,8 @@
               "work": "\\(80 cm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "xAqACnaK4pLqsgr4JEAd",
@@ -2258,7 +2334,8 @@
               "work": "\\(7045 m\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "xjNmLlJapmX0W9dOTANQ",
@@ -2287,7 +2364,8 @@
               "work": "\\(7.005\\text{ L}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "xtLYMD7EOOHAyBkck7Jb",
@@ -2316,7 +2394,8 @@
               "work": "\\(23.6 cm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "XvLkSI2MqlevN4G9elif",
@@ -2345,7 +2424,8 @@
               "work": "\\(5.4 cm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "YHWUgsycnjiOHIpGJPjJ",
@@ -2374,7 +2454,8 @@
               "work": "\\(465000 mg or 0.465 kg\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "YoqrDWzyxOn40I0Fo7bz",
@@ -2403,7 +2484,8 @@
               "work": "\\(4.356\\text{ km}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "YPIV1pEkt1y4Tf9nycmy",
@@ -2432,7 +2514,8 @@
               "work": "\\(600 m\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "YsNNU3cneEafjN403YQD",
@@ -2461,7 +2544,8 @@
               "work": "\\(270\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "Z0UKvrcod2hAtUu9iz0b",
@@ -2490,7 +2574,8 @@
               "work": "\\(5000 g\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "z4I073IWcSJ55gu5syFf",
@@ -2514,7 +2599,8 @@
               "work": "\\begin{aligned} 5\\text{ cm} + 0.4\\text{ cm} &= 5.4\\text{ cm} \\end{aligned}"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "Z4U8PkJsJwz4G2OYYMJ4",
@@ -2543,7 +2629,8 @@
               "work": "\\(24\\text{ cm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "z9FxNHz01TdjjtVGQ8EI",
@@ -2572,7 +2659,8 @@
               "work": "\\(1.8 cm\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "zgcjqOHzxKv8uApLYZGq",
@@ -2601,7 +2689,8 @@
               "work": "\\(400\\text{ mm}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         }
       ]
     },
@@ -2632,7 +2721,8 @@
             {
               "explain": "\\( C = -4 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q18",
@@ -2664,7 +2754,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-pav-2b",
@@ -2692,7 +2783,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-pav-2c",
@@ -2720,7 +2812,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-pav-2d",
@@ -2747,7 +2840,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-pav-2e",
@@ -2775,7 +2869,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "86hGmIovRIaSk7POw0KU",
@@ -2803,7 +2898,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(-12^\\circ\\text{C}\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -2834,7 +2930,8 @@
             {
               "explain": "Result: \\( 4a + 7 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "lzHo0pjWhNIZvsQY7TSy",
@@ -2863,7 +2960,8 @@
               "work": "\\(45\\) oranges for \\(\\$18.45\\) (better value)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "PqkPCvFYaqnx9lWlM9PN",
@@ -2892,7 +2990,8 @@
               "work": "\\(\\$5.10\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "QI5DQcKVRxmdWBVFdPka",
@@ -2921,7 +3020,8 @@
               "work": "\\(15\\) days"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -2962,7 +3062,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-pav-3a",
@@ -2996,7 +3097,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-pav-3c",
@@ -3038,7 +3140,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "A1iUNDuZo4TxE0KWK5Wq",
@@ -3066,7 +3169,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(8a + 6b\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "WcWeS0kFb1w28KWt2mRf",
@@ -3094,7 +3198,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(270 cm\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "XTYhmYmPk74Jmx8Ptyoe",
@@ -3122,7 +3227,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(206 mm\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "yip67SYnZggn98unmGhl",
@@ -3150,7 +3256,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(30 m\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "ZV4yVe3Hwm5C3YCKd96u",
@@ -3178,7 +3285,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(30\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -3214,7 +3322,8 @@
               "work": "\\(1800 \\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "JgOCh4lOWz4dK2CH1RYl",
@@ -3243,7 +3352,8 @@
               "work": "\\(12ab\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "k56c1jUjetnbRguHK0NN",
@@ -3272,7 +3382,8 @@
               "work": "\\(2100 m\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "XoG9wlC3h0Xx1ydJSaMD",
@@ -3301,7 +3412,8 @@
               "work": "\\(54 \\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -3352,7 +3464,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "ZaYbm4MMeKXuyP5wgJEe",
@@ -3380,7 +3493,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(36\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-t3-2018-p2-area-q4a",
@@ -3419,7 +3533,8 @@
             {
               "explain": "Total Area = \\( 72 + 16 = 88 \\text{ cm}^2 \\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-area-q4b",
@@ -3449,7 +3564,8 @@
             {
               "explain": "Total Area = \\( 81 - 10 = 71 \\text{ cm}^2 \\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -3488,7 +3604,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-pav-5b",
@@ -3521,7 +3638,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -3555,7 +3673,8 @@
             {
               "explain": "\\( V = 120,000 \\text{ cm}^3 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -3591,7 +3710,8 @@
               "work": "\\(3:07 p.m.\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "aXJgjkSCim8TtwsLvhvu",
@@ -3620,7 +3740,8 @@
               "work": "\\(35 hours, 35 minutes\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "DY2ahdkhYs1sIyJR7F92",
@@ -3649,7 +3770,8 @@
               "work": "\\(1\\text{ hour, } 14\\text{ minutes, } 23\\text{ seconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "FPkxv3YmD6wkDnwCadJo",
@@ -3678,7 +3800,8 @@
               "work": "\\(7:33:45 p.m.\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ThgeffOIedwKD4KpaOKH",
@@ -3707,7 +3830,8 @@
               "work": "\\(6 hours, 57 minutes\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "UlDrNSwZmB0fyjOyqpyN",
@@ -3736,7 +3860,8 @@
               "work": "Monday, 9:52 a.m."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     }

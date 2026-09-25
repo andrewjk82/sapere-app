@@ -39,7 +39,8 @@
               "explain": "Divide by 200 to find the minimum value of \\(n\\). Since \\(n\\) must be an integer strictly greater than 40, the minimum number of items is 41.",
               "work": "n > 40 \\implies \\mathrm{Minimum\\; } n = 41"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

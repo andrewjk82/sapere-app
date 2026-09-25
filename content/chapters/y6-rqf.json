@@ -34,7 +34,8 @@
               "explain": "So the original fraction with the larger equivalent numerator is greater.",
               "work": "\\(\\dfrac{5}{6} \\gt \\dfrac{3}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rqf-1-q2",
@@ -62,7 +63,8 @@
               "explain": "So \\(\\dfrac{3}{7}\\) is the greater fraction.",
               "work": "\\(\\dfrac{3}{7} \\gt \\dfrac{2}{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rqf-1-q3",
@@ -82,7 +84,8 @@
               "explain": "Multiply both the numerator and denominator of \\(\\dfrac{2}{3}\\) by 3.",
               "work": "\\(\\dfrac{2\\times3}{3\\times3}=\\dfrac{6}{9}\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -113,7 +116,8 @@
               "explain": "Add the numerators now that the denominators match.",
               "work": "\\(\\dfrac{2}{4}+\\dfrac{1}{4}=\\dfrac{3}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rqf-2-q2",
@@ -137,7 +141,8 @@
               "explain": "Add the numerators.",
               "work": "\\(\\dfrac{4}{6}+\\dfrac{1}{6}=\\dfrac{5}{6}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rqf-2-q3",
@@ -161,7 +166,8 @@
               "explain": "Subtract the numerators.",
               "work": "\\(\\dfrac{6}{8}-\\dfrac{1}{8}=\\dfrac{5}{8}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -192,7 +198,8 @@
               "explain": "Multiply by the numerator, 3, to find three fifths.",
               "work": "\\(8\\times3=24\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rqf-3-q2",
@@ -216,7 +223,8 @@
               "explain": "Multiply by the numerator, 2, to find two thirds.",
               "work": "\\(20\\times2=40\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rqf-3-q3",
@@ -240,7 +248,8 @@
               "explain": "Multiply by the numerator, 7.",
               "work": "\\(9\\times7=63\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -271,7 +280,8 @@
               "explain": "Evaluate the division.",
               "work": "\\(3\\div4=0.75\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rqf-4-q2",
@@ -295,7 +305,8 @@
               "explain": "Multiply by 5 to find the whole number (five fifths).",
               "work": "\\(10\\times5=50\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -326,7 +337,8 @@
               "explain": "Divide the numerator and denominator by 6.",
               "work": "\\(\\dfrac{12\\div6}{18\\div6}=\\dfrac{2}{3}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rqf-5-q2",
@@ -350,7 +362,8 @@
               "explain": "Divide the numerator and denominator by 5.",
               "work": "\\(\\dfrac{15\\div5}{20\\div5}=\\dfrac{3}{4}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

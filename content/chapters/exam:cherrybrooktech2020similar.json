@@ -28,7 +28,8 @@
                   "explain": "Sketch the curve with correct sign in each interval.",
                   "work": "+,\\;0,\\;-,\\;0,\\;+,\\;0,\\;-"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "cths2020s-q24b",
@@ -40,7 +41,8 @@
                   "explain": "Reflect: $(x,y) \\to (-x,y)$.",
                   "work": "\\text{max at }x=4,\\;\\text{min at }x=2,\\;\\text{max at }x=-1"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "(a) $h'(x)$: zero at $x=-4,-2,1$; positive on $(-\\infty,-4)$ and $(-2,1)$; negative on $(-4,-2)$ and $(1,\\infty)$.\n(b) $h(-x)$: reflection in $y$-axis; max at $x=4$, min at $x=2$, max at $x=-1$.",
@@ -97,7 +99,8 @@
                   "explain": "Find points of inflection by setting \\(y'' = 0\\).",
                   "work": "12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\n\\text{POI at } \\left(\\frac{1}{2}, -\\frac{5}{2}\\right)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "cths2020s-q21b",
@@ -167,7 +170,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             }
           ],
           "manual": true,

@@ -39,7 +39,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -74,7 +75,8 @@
               "work": "Index: 2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-1b",
@@ -102,7 +104,8 @@
               "work": "Index: 7"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-1c",
@@ -130,7 +133,8 @@
               "work": "Index: 9"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-1d",
@@ -158,7 +162,8 @@
               "work": "Index: 2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-1e",
@@ -186,7 +191,8 @@
               "work": "Index: 9"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-1f",
@@ -214,7 +220,8 @@
               "work": "Index: 6"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2a",
@@ -242,7 +249,8 @@
               "work": "\\( 2 \\times 2 \\times 2 \\times 2 = 2^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2b",
@@ -270,7 +278,8 @@
               "work": "\\( 5 \\times 5 = 5^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2c",
@@ -298,7 +307,8 @@
               "work": "\\( 2 \\times 2 \\times 2 = 2^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2d",
@@ -326,7 +336,8 @@
               "work": "\\( 3 \\times 3 \\times 3 = 3^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2e",
@@ -354,7 +365,8 @@
               "work": "\\( 2 \\times 2 \\times 2 \\times 2 \\times 2 = 2^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-2f",
@@ -382,7 +394,8 @@
               "work": "\\( 5 \\times 5 \\times 5 \\times 5 \\times 5 = 5^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3a",
@@ -407,7 +420,8 @@
               "work": "\\(= 27\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3b",
@@ -432,7 +446,8 @@
               "work": "\\(= 16\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3c",
@@ -457,7 +472,8 @@
               "work": "\\(= 8\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3d",
@@ -482,7 +498,8 @@
               "work": "\\(= 256\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3e",
@@ -507,7 +524,8 @@
               "work": "\\(8 \\times 27 = 216\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-3f",
@@ -532,7 +550,8 @@
               "work": "\\(8 \\times 8 = 64\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4a",
@@ -560,7 +579,8 @@
               "work": "The prime factors are: 2, 2, 3<br><br>Therefore:<br>\\( 2 \\times 2 \\times 3 = 2^{2} \\times 3\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4b",
@@ -587,7 +607,8 @@
               "work": "The prime factors are: 2, 3, 3<br><br>Therefore:<br>\\( 2 \\times 3 \\times 3 = 2 \\times 3^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4c",
@@ -615,7 +636,8 @@
               "work": "The prime factors are: 2, 2, 2, 3<br><br>Therefore:<br>\\( 2 \\times 2 \\times 2 \\times 3 = 2^{3} \\times 3\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4d",
@@ -643,7 +665,8 @@
               "work": "The prime factors are: 2, 2, 3, 3<br><br>Therefore:<br>\\( 2 \\times 2 \\times 3 \\times 3 = 2^{2} \\times 3^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4e",
@@ -671,7 +694,8 @@
               "work": "The prime factors are: 2, 2, 2, 3, 3<br><br>Therefore:<br>\\( 2 \\times 2 \\times 2 \\times 3 \\times 3 = 2^{3} \\times 3^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-4f",
@@ -698,7 +722,8 @@
               "work": "The prime factors are: 2, 3, 3, 5<br><br>Therefore:<br>\\( 2 \\times 3 \\times 3 \\times 5 = 2 \\times 3^{2} \\times 5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5a",
@@ -731,7 +756,8 @@
               "work": "\\(n^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5b",
@@ -764,7 +790,8 @@
               "work": "\\(n^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5c",
@@ -797,7 +824,8 @@
               "work": "\\(m^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5d",
@@ -830,7 +858,8 @@
               "work": "\\(m^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5e",
@@ -863,7 +892,8 @@
               "work": "\\(x^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5f",
@@ -896,7 +926,8 @@
               "work": "\\(q^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5g",
@@ -929,7 +960,8 @@
               "work": "\\(m^{8}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5h",
@@ -962,7 +994,8 @@
               "work": "\\(q^{10}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5i",
@@ -995,7 +1028,8 @@
               "work": "\\(20b^{10}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5j",
@@ -1028,7 +1062,8 @@
               "work": "\\(15n^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5k",
@@ -1061,7 +1096,8 @@
               "work": "\\(15m^{10}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-5l",
@@ -1094,7 +1130,8 @@
               "work": "\\(15q^{8}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6a",
@@ -1127,7 +1164,8 @@
               "work": "\\(a^{5}b^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6b",
@@ -1160,7 +1198,8 @@
               "work": "\\(x^{6}y^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6c",
@@ -1193,7 +1232,8 @@
               "work": "\\(a^{7}b^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6d",
@@ -1226,7 +1266,8 @@
               "work": "\\(x^{7}y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6e",
@@ -1259,7 +1300,8 @@
               "work": "\\(15a^{7}b^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-6f",
@@ -1292,7 +1334,8 @@
               "work": "\\(15x^{5}y^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7a",
@@ -1325,7 +1368,8 @@
               "work": "\\(y^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7b",
@@ -1358,7 +1402,8 @@
               "work": "\\(y\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7c",
@@ -1391,7 +1436,8 @@
               "work": "\\(y^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7d",
@@ -1424,7 +1470,8 @@
               "work": "\\(a\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7e",
@@ -1457,7 +1504,8 @@
               "work": "\\(q^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7f",
@@ -1490,7 +1538,8 @@
               "work": "\\(a^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7g",
@@ -1523,7 +1572,8 @@
               "work": "\\(x^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7h",
@@ -1556,7 +1606,8 @@
               "work": "\\(p^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7i",
@@ -1589,7 +1640,8 @@
               "work": "\\(4a^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7j",
@@ -1622,7 +1674,8 @@
               "work": "\\(2q\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7k",
@@ -1655,7 +1708,8 @@
               "work": "\\(2p^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-7l",
@@ -1688,7 +1742,8 @@
               "work": "\\(4a^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8a",
@@ -1721,7 +1776,8 @@
               "work": "\\(10a^{2}b^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8b",
@@ -1754,7 +1810,8 @@
               "work": "\\(4x^{5}y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8c",
@@ -1787,7 +1844,8 @@
               "work": "\\(8a^{3}b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8d",
@@ -1820,7 +1878,8 @@
               "work": "\\(7x^{1}y^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8e",
@@ -1853,7 +1912,8 @@
               "work": "\\(5a^{3}b^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8f",
@@ -1886,7 +1946,8 @@
               "work": "\\(5x^{1}y^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8g",
@@ -1919,7 +1980,8 @@
               "work": "\\(6a^{5}b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-8h",
@@ -1952,7 +2014,8 @@
               "work": "\\(8x^{3}y^{1}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-8a-9a",
@@ -1985,7 +2048,8 @@
               "work": "\\(x^{4}y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9b",
@@ -2018,7 +2082,8 @@
               "work": "\\(x^{4}y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9c",
@@ -2051,7 +2116,8 @@
               "work": "\\(x^{4}y^{8}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9d",
@@ -2084,7 +2150,8 @@
               "work": "\\(x^{3}y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9e",
@@ -2117,7 +2184,8 @@
               "work": "\\(x^{4}y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9f",
@@ -2150,7 +2218,8 @@
               "work": "\\(x^{5}y^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9g",
@@ -2183,7 +2252,8 @@
               "work": "\\(x^{4}y^{7}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-9h",
@@ -2216,7 +2286,8 @@
               "work": "\\(x^{4}y^{8}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10a",
@@ -2245,7 +2316,8 @@
               "work": "\\(y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10b",
@@ -2274,7 +2346,8 @@
               "work": "\\(y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10c",
@@ -2303,7 +2376,8 @@
               "work": "\\(q^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10d",
@@ -2332,7 +2406,8 @@
               "work": "\\(a^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10e",
@@ -2361,7 +2436,8 @@
               "work": "\\(y^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10f",
@@ -2390,7 +2466,8 @@
               "work": "\\(x^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10g",
@@ -2419,7 +2496,8 @@
               "work": "\\(a^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10h",
@@ -2448,7 +2526,8 @@
               "work": "\\(m^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10i",
@@ -2477,7 +2556,8 @@
               "work": "\\(x^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10j",
@@ -2506,7 +2586,8 @@
               "work": "\\(p^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10k",
@@ -2535,7 +2616,8 @@
               "work": "\\(x^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-10l",
@@ -2564,7 +2646,8 @@
               "work": "\\(b^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11a",
@@ -2597,7 +2680,8 @@
               "work": "\\(\\frac{5}{2}x\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11b",
@@ -2630,7 +2714,8 @@
               "work": "\\(\\frac{11}{2}x^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11c",
@@ -2663,7 +2748,8 @@
               "work": "\\(\\frac{7}{2}x^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11d",
@@ -2696,7 +2782,8 @@
               "work": "\\(6x^{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11e",
@@ -2729,7 +2816,8 @@
               "work": "\\(2x^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11f",
@@ -2762,7 +2850,8 @@
               "work": "\\(2x^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11g",
@@ -2795,7 +2884,8 @@
               "work": "\\(3x^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-11h",
@@ -2828,7 +2918,8 @@
               "work": "\\(\\frac{11}{2}x\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-12b",
@@ -2856,7 +2947,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-12c",
@@ -2885,7 +2977,8 @@
               "work": "\\(1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-12d",
@@ -2913,7 +3006,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13a",
@@ -2942,7 +3036,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13b",
@@ -2971,7 +3066,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13c",
@@ -3000,7 +3096,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13d",
@@ -3029,7 +3126,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13e",
@@ -3058,7 +3156,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13f",
@@ -3087,7 +3186,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13g",
@@ -3116,7 +3216,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13h",
@@ -3145,7 +3246,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13i",
@@ -3173,7 +3275,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13j",
@@ -3201,7 +3304,8 @@
               "work": "\\( 5 + 5 = 10 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13k",
@@ -3229,7 +3333,8 @@
               "work": "\\( 2 + 2 = 4 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-13l",
@@ -3257,7 +3362,8 @@
               "work": "\\( 2 + 4 = 6 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-14a",
@@ -3285,7 +3391,8 @@
               "work": "\\(x^{20}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-14b",
@@ -3313,7 +3420,8 @@
               "work": "\\(p^{10}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-14c",
@@ -3341,7 +3449,8 @@
               "work": "\\(q^{15}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-14d",
@@ -3369,7 +3478,8 @@
               "work": "\\(a^{15}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15a",
@@ -3394,7 +3504,8 @@
               "work": "\\( \\frac{b^{8}}{b^{12}} = b^{8 - 12} = b^{-4} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15b",
@@ -3419,7 +3530,8 @@
               "work": "\\( y^{12} \\times y^{9} = y^{12 + 9} = y^{21} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15c",
@@ -3444,7 +3556,8 @@
               "work": "\\( \\frac{n^{9}}{n^{4}} = n^{9 - 4} = n^{5} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15d",
@@ -3469,7 +3582,8 @@
               "work": "\\( y^{6} \\times y^{6} = y^{6 + 6} = y^{12} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15e",
@@ -3494,7 +3608,8 @@
               "work": "\\( \\frac{n^{9}}{n^{9}} = n^{9 - 9} = n^{0} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15f",
@@ -3519,7 +3634,8 @@
               "work": "\\( n^{4} \\times n^{4} = n^{4 + 4} = n^{8} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15g",
@@ -3544,7 +3660,8 @@
               "work": "\\( \\frac{a^{12}}{a^{6}} = a^{12 - 6} = a^{6} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15h",
@@ -3569,7 +3686,8 @@
               "work": "\\( y^{6} \\times y^{4} = y^{6 + 4} = y^{10} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-15i",
@@ -3594,7 +3712,8 @@
               "work": "\\( \\frac{q^{8}}{q^{9}} = q^{8 - 9} = q^{-1} \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16a",
@@ -3623,7 +3742,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16b",
@@ -3652,7 +3772,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16c",
@@ -3681,7 +3802,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16d",
@@ -3710,7 +3832,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16e",
@@ -3739,7 +3862,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16f",
@@ -3768,7 +3892,8 @@
               "work": "\\(3\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16g",
@@ -3797,7 +3922,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16h",
@@ -3826,7 +3952,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-16i",
@@ -3854,7 +3981,8 @@
               "work": "\\( x = 9 \\div 3 = 3 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-17a",
@@ -3881,7 +4009,8 @@
               "work": "True"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-17b",
@@ -3908,7 +4037,8 @@
               "work": "True"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-17c",
@@ -3935,7 +4065,8 @@
               "work": "True"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y9-8a-18a",
@@ -3964,7 +4095,8 @@
               "work": "\\(4x^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18b",
@@ -3993,7 +4125,8 @@
               "work": "\\(8q^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18c",
@@ -4022,7 +4155,8 @@
               "work": "\\(16x^{8}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18d",
@@ -4051,7 +4185,8 @@
               "work": "\\(9p^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18e",
@@ -4080,7 +4215,8 @@
               "work": "\\(4n^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18f",
@@ -4109,7 +4245,8 @@
               "work": "\\(9a^{6}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18g",
@@ -4138,7 +4275,8 @@
               "work": "\\(81a^{16}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-18h",
@@ -4167,7 +4305,8 @@
               "work": "\\(16a^{12}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19a",
@@ -4200,7 +4339,8 @@
               "work": "\\(12a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19b",
@@ -4233,7 +4373,8 @@
               "work": "\\(12a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19c",
@@ -4266,7 +4407,8 @@
               "work": "\\(12a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19d",
@@ -4299,7 +4441,8 @@
               "work": "\\(12a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19e",
@@ -4331,7 +4474,8 @@
               "work": "\\(36a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-19f",
@@ -4363,7 +4507,8 @@
               "work": "\\(27a^{5}b^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-20a",
@@ -4396,7 +4541,8 @@
               "work": "\\(x y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-20b",
@@ -4429,7 +4575,8 @@
               "work": "\\(x y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-20c",
@@ -4462,7 +4609,8 @@
               "work": "\\(x y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-20d",
@@ -4495,7 +4643,8 @@
               "work": "\\(x y^{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-21a",
@@ -4528,7 +4677,8 @@
               "work": "\\(2x^{6}y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-21b",
@@ -4561,7 +4711,8 @@
               "work": "\\(2x^{6}y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-21c",
@@ -4594,7 +4745,8 @@
               "work": "\\(2x^{6}y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-21d",
@@ -4627,7 +4779,8 @@
               "work": "\\(2x^{6}y^{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22a",
@@ -4660,7 +4813,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22b",
@@ -4693,7 +4847,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22c",
@@ -4726,7 +4881,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22d",
@@ -4759,7 +4915,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22e",
@@ -4792,7 +4949,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22f",
@@ -4825,7 +4983,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22g",
@@ -4858,7 +5017,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22h",
@@ -4891,7 +5051,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22i",
@@ -4924,7 +5085,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22j",
@@ -4957,7 +5119,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22k",
@@ -4990,7 +5153,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "y9-8a-22l",
@@ -5023,7 +5187,8 @@
               "work": "\\(a^{2} b^{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 3
         },
         {
           "id": "sg2022-q8b",
@@ -5061,7 +5226,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "willoughby2019-s5-q1",
@@ -5092,7 +5258,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s5-q2a",
@@ -5127,7 +5294,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s5-q2b",
@@ -5166,7 +5334,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1a",
@@ -5197,7 +5366,8 @@
               "explain": "Combine the parts.",
               "work": "\\(20m^7n^5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1b",
@@ -5224,7 +5394,8 @@
               "explain": "Combine the parts.",
               "work": "\\(27x^{15}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1c",
@@ -5255,7 +5426,8 @@
               "explain": "Combine the parts.",
               "work": "\\(\\frac{2}{5a^5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1d",
@@ -5286,7 +5458,8 @@
               "explain": "Combine the parts.",
               "work": "\\(\\frac{1}{2}a^3 = \\frac{a^3}{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1e",
@@ -5313,7 +5486,8 @@
               "explain": "Combine and rewrite with positive indices.",
               "work": "\\(a^{-5}b^9 = \\frac{b^9}{a^5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1f",
@@ -5340,7 +5514,8 @@
               "explain": "State the final answer.",
               "work": "\\(a^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1g",
@@ -5375,7 +5550,8 @@
               "explain": "Simplify the coefficients and indices.",
               "work": "\\(\\frac{8}{16} = \\frac{1}{2}\\) and \\(\\frac{y^8}{y^{12}} = \\frac{1}{y^4}\\). Final answer is \\(\\frac{x^3}{2y^4}\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1h",
@@ -5402,7 +5578,8 @@
               "explain": "State the final answer.",
               "work": "\\(\\frac{1}{16x^2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-1i",
@@ -5433,7 +5610,8 @@
               "explain": "Combine the terms.",
               "work": "\\(\\frac{1}{x^6y^3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-3a",
@@ -5456,7 +5634,8 @@
               "explain": "Multiply by 4.",
               "work": "\\(4 \\times 1 = 4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-ep1-alg-ind-3b",
@@ -5483,7 +5662,8 @@
               "explain": "Evaluate the power.",
               "work": "\\(5^3 = 5 \\times 5 \\times 5 = 125\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-ep1-alg-ind-3c",
@@ -5506,7 +5686,8 @@
               "explain": "Evaluate the square.",
               "work": "\\(\\frac{1}{16}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-ep1-alg-ind-4a",
@@ -5532,7 +5713,8 @@
               "explain": "Write in scientific notation \\(a \\times 10^k\\).",
               "work": "\\(2.78 \\times 10^6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-4b",
@@ -5551,7 +5733,8 @@
               "explain": "The power is -2, so move the decimal point 2 places to the left.",
               "work": "\\(0.05723\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-ind-4c",
@@ -5581,7 +5764,8 @@
               "explain": "State the final answer.",
               "work": "\\(5.29 \\times 10^{-4}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q3a",
@@ -5610,7 +5794,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-willoughby-17-y-pa-q3b",
@@ -5647,7 +5832,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-willoughby-19-t5q2a",
@@ -5677,7 +5863,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-8a"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t5q2b",
@@ -5711,7 +5898,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-8a"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -5744,7 +5932,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-willoughby-17-y-pb-q6a",
@@ -5781,7 +5970,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -5818,7 +6008,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q5",
@@ -5847,7 +6038,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -5880,7 +6072,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-willoughby-17-y-pa-q1a",
@@ -5909,7 +6102,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q1b",
@@ -5938,7 +6132,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q2a",
@@ -5963,7 +6158,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pa-q2b",
@@ -5988,7 +6184,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t5q1",
@@ -6022,7 +6219,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-8d"
-          }
+          },
+          "xp": 2
         }
       ]
     }

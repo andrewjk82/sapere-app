@@ -60,7 +60,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q1b",
@@ -114,7 +115,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q1c",
@@ -168,7 +170,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q1d",
@@ -222,7 +225,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2a",
@@ -276,7 +280,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2b",
@@ -330,7 +335,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2c",
@@ -384,7 +390,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2d",
@@ -438,7 +445,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2e",
@@ -496,7 +504,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2f",
@@ -554,7 +563,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2g",
@@ -612,7 +622,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q2h",
@@ -670,7 +681,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q3a",
@@ -727,7 +739,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11a-q3b",
@@ -784,7 +797,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11a-q3c",
@@ -845,7 +859,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11a-q3d",
@@ -902,7 +917,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11a-q4",
@@ -956,7 +972,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11a-q5",
@@ -1010,7 +1027,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-11a-q6a",
@@ -1068,7 +1086,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11a-q6b",
@@ -1122,7 +1141,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11a-q6c",
@@ -1179,7 +1199,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11a-q6d",
@@ -1212,7 +1233,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11a-q7a",
@@ -1267,7 +1289,8 @@
               "work": "\\( d = \\sqrt{4 \\times 10} = 2\\sqrt{10} \\text{ units} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11a-q7b",
@@ -1322,7 +1345,8 @@
               "work": "\\( d = \\sqrt{4 \\times 5} = 2\\sqrt{5} \\text{ units} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11a-q7c",
@@ -1385,7 +1409,8 @@
               "work": "\\(QR = \\sqrt{4 \\times 5} = 2\\sqrt{5} \\text{ units}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11a-q7d",
@@ -1418,7 +1443,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11a-q8",
@@ -1485,7 +1511,8 @@
           "timeLimit": 90,
           "meta": {
             "manualReview": false
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11a-q9",
@@ -1562,7 +1589,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11a-q10",
@@ -1616,7 +1644,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11a-q11",
@@ -1681,7 +1710,8 @@
           },
           "alsoIn": [
             "exam:year9ch11"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q2c",
@@ -1719,7 +1749,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sg2022-q7a",
@@ -1761,7 +1792,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 4
         },
         {
           "id": "willoughby2019-s2-q1ii",
@@ -1808,7 +1840,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-ep1-linear-1a",
@@ -1831,7 +1864,8 @@
               "explain": "Simplify the fraction.",
               "work": "\\(m = \\frac{-4}{2} = -2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-1b",
@@ -1854,7 +1888,8 @@
               "explain": "Simplify the coordinates.",
               "work": "\\(M = \\left(\\frac{8}{2}, \\frac{12}{2}\\right) = (4, 6)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-1c",
@@ -1881,7 +1916,8 @@
               "explain": "Simplify the surd.",
               "work": "\\(d = \\sqrt{4 \\times 5} = 2\\sqrt{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-1d",
@@ -1907,7 +1943,8 @@
               "explain": "Expand and rearrange into general form or gradient-intercept form.",
               "work": "\\(y - 8 = -2x + 6\\)<br>\\(y = -2x + 14\\)<br>\\(2x + y - 14 = 0\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-1e",
@@ -1929,7 +1966,8 @@
               "explain": "The perpendicular gradient is the negative reciprocal.",
               "work": "\\(m_{\\perp} = -\\frac{1}{-2} = \\frac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-2a",
@@ -1955,7 +1993,8 @@
             {
               "explain": "These correspond to the points \\((2, 0)\\) and \\((0, 4)\\) on the graph."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-linear-2b",
@@ -1981,7 +2020,8 @@
               "explain": "The parallel line will have the same gradient \\(m = -2\\) and a given \\(y\\)-intercept \\(c = -3\\).",
               "work": "\\(y = mx + c\\)<br>\\(y = -2x - 3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q8c",
@@ -2018,7 +2058,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2079,7 +2120,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1b",
@@ -2133,7 +2175,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1c",
@@ -2187,7 +2230,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1d",
@@ -2241,7 +2285,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1e",
@@ -2295,7 +2340,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1f",
@@ -2349,7 +2395,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1g",
@@ -2403,7 +2450,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1h",
@@ -2457,7 +2505,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1i",
@@ -2511,7 +2560,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1j",
@@ -2565,7 +2615,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1k",
@@ -2619,7 +2670,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q1l",
@@ -2673,7 +2725,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q2a",
@@ -2727,7 +2780,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q2b",
@@ -2781,7 +2835,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11b-q2c",
@@ -2832,7 +2887,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11b-q2d",
@@ -2883,7 +2939,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11b-q2e",
@@ -2934,7 +2991,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11b-q2f",
@@ -2985,7 +3043,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11b-q3a",
@@ -3035,7 +3094,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q3b",
@@ -3085,7 +3145,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q3c",
@@ -3135,7 +3196,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q3d",
@@ -3185,7 +3247,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q3e",
@@ -3235,7 +3298,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q3f",
@@ -3285,7 +3349,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4a",
@@ -3335,7 +3400,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4b",
@@ -3385,7 +3451,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4c",
@@ -3418,7 +3485,8 @@
               "work": "\\( BC = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4d",
@@ -3451,7 +3519,8 @@
               "work": "\\( MN = \\sqrt{1 + 4} = \\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4e",
@@ -3501,7 +3570,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q4f",
@@ -3534,7 +3604,8 @@
               "work": "Since both $BC$ and $MN$ have the same gradient of $-2$, the intervals are parallel."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q5a",
@@ -3567,7 +3638,8 @@
               "work": "\\( (3, 4) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q5b",
@@ -3600,7 +3672,8 @@
               "work": "\\( (3, 4) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q5c",
@@ -3633,7 +3706,8 @@
               "work": "This demonstrates the well-known property that the diagonals of a parallelogram bisect each other."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q6",
@@ -3670,7 +3744,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11b-q7",
@@ -3707,7 +3782,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11b-q8a",
@@ -3740,7 +3816,8 @@
               "work": "\\( (0.5, 2.5) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q8b",
@@ -3773,7 +3850,8 @@
               "work": "\\( BM = \\sqrt{6.25 + 6.25} = \\sqrt{12.5} = \\frac{5\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q8c",
@@ -3807,7 +3885,8 @@
               "work": "From earlier, \\(BM = \\sqrt{12.5}\\). Thus, \\(AM = BM = CM = \\sqrt{12.5}\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-11b-q9a",
@@ -3840,7 +3919,8 @@
               "work": "\\( M(2, 5), \\; N(5, 5) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11b-q9b",
@@ -3868,7 +3948,8 @@
               "work": "We have shown that \\(BC = 2MP\\) and \\(AB = 2PN\\), satisfying the Midpoint Theorem."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-11b-q10",
@@ -3918,7 +3999,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-11b-q11a",
@@ -3967,7 +4049,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-11b-q11b",
@@ -4016,7 +4099,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-11b-q12",
@@ -4086,7 +4170,8 @@
           ],
           "alsoIn": [
             "exam:year9ch11b"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q3a",
@@ -4116,7 +4201,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s2-q1i",
@@ -4159,7 +4245,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-willoughby-17-y-pb-q8a",
@@ -4192,7 +4279,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -4253,7 +4341,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11c-q1b",
@@ -4307,7 +4396,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11c-q1c",
@@ -4358,7 +4448,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q1d",
@@ -4409,7 +4500,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2a",
@@ -4473,7 +4565,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2b",
@@ -4537,7 +4630,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2c",
@@ -4601,7 +4695,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2d",
@@ -4665,7 +4760,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2e",
@@ -4729,7 +4825,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q2f",
@@ -4793,7 +4890,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3a",
@@ -4844,7 +4942,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3b",
@@ -4895,7 +4994,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3c",
@@ -4946,7 +5046,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3d",
@@ -4997,7 +5098,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3e",
@@ -5048,7 +5150,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q3f",
@@ -5099,7 +5202,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q4a",
@@ -5153,7 +5257,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11c-q4b",
@@ -5207,7 +5312,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11c-q4c",
@@ -5258,7 +5364,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11c-q5a",
@@ -5312,7 +5419,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11c-q5b",
@@ -5366,7 +5474,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11c-q5c",
@@ -5417,7 +5526,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q5d",
@@ -5454,7 +5564,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11c-q6a",
@@ -5487,7 +5598,8 @@
               "work": "$$ -6, -1, 3, 3 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q6b",
@@ -5520,7 +5632,8 @@
               "work": "$$ -10, -1, 5, 10 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q6c",
@@ -5553,7 +5666,8 @@
               "work": "$$ -14, 1, 6 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q6d",
@@ -5586,7 +5700,8 @@
               "work": "$$ -2, 6, 0, 0 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7a",
@@ -5619,7 +5734,8 @@
               "work": "$$ m = \\frac{4}{2} = 2 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7b",
@@ -5655,7 +5771,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11c-q7c",
@@ -5688,7 +5805,8 @@
               "work": "$$ -5 = \\frac{1}{2}x \\implies x = -10 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7d",
@@ -5721,7 +5839,8 @@
               "work": "$$ 3 = \\frac{3}{4}x \\implies x = 4 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7e",
@@ -5754,7 +5873,8 @@
               "work": "$$ y = -1(x + 6) \\implies y = -x - 6 $$\\nSo, the $y$-intercept is $-6$."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7f",
@@ -5787,7 +5907,8 @@
               "work": "$$ 2x = 10 \\implies x = 5 $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q7g",
@@ -5820,7 +5941,8 @@
               "work": "$$ m = \\frac{2}{-8} = -\\frac{1}{4} $$"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q8a",
@@ -5853,7 +5975,8 @@
               "work": "$$ -2 = 2x \\implies x = -1 $$\nSo, the $x$-intercept is $(-1, 0)$."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q8b",
@@ -5886,7 +6009,8 @@
               "work": "The $y$-intercept is $(0, 2)$."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q9",
@@ -5920,7 +6044,8 @@
               "work": "$$ -5 = 2x \\implies x = -2.5 $$\\nThe $x$-intercept is $(-2.5, 0)$."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11c-q10",
@@ -5970,7 +6095,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q1d",
@@ -6000,7 +6126,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sg2022-q5a",
@@ -6036,7 +6163,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 1
             },
             {
               "id": "sg2022-q5a-ii",
@@ -6070,7 +6198,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             }
           ],
           "meta": {
@@ -6121,7 +6250,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s2-q2a",
@@ -6152,7 +6282,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11c-q6",
@@ -6176,7 +6307,8 @@
                   "explain": "Substitute coordinates into \\(y = 3x\\).",
                   "work": "-6, -1, 3, 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q6b",
@@ -6194,7 +6326,8 @@
                   "explain": "Substitute coordinates into \\(y = \\frac{3}{5}x + 2\\).",
                   "work": "-10, -1, 5, 10"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q6c",
@@ -6212,7 +6345,8 @@
                   "explain": "Substitute coordinates into \\(y = \\frac{1}{2}x + 3\\).",
                   "work": "-14, 1, 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q6d",
@@ -6230,7 +6364,8 @@
                   "explain": "Substitute coordinates into \\(y = -3x + 3\\).",
                   "work": "-2, 6, 0, 0"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) -6, -1, 3, 3, b) -10, -1, 5, 10, c) -14, 1, 6, d) -2, 6, 0, 0",
@@ -6261,7 +6396,8 @@
                   "work": "0 = 2x + 2 \\implies x = -1 \\implies (-1, 0)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y9-11c-q8b",
@@ -6281,7 +6417,8 @@
                   "work": "y = 2(0) + 2 = 2 \\implies (0, 2)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "answer": "x-axis at (-1, 0), y-axis at (0, 2)",
@@ -6318,7 +6455,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -6358,7 +6496,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q1b",
@@ -6391,7 +6530,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q1c",
@@ -6424,7 +6564,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q1d",
@@ -6457,7 +6598,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q1e",
@@ -6490,7 +6632,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q1f",
@@ -6523,7 +6666,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2a",
@@ -6570,7 +6714,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2b",
@@ -6617,7 +6762,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2c",
@@ -6664,7 +6810,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2d",
@@ -6714,7 +6861,8 @@
             "Gradient: \\(2\\), \\(y\\)-intercept: \\(2\\)",
             "Gradient: \\(-2\\), \\(y\\)-intercept: \\(-2\\)",
             "Gradient: \\(2\\), \\(y\\)-intercept: \\(-2\\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2e",
@@ -6764,7 +6912,8 @@
             "Gradient: \\(4\\), \\(y\\)-intercept: \\(-3\\)",
             "Gradient: \\(-4\\), \\(y\\)-intercept: \\(3\\)",
             "Gradient: \\(-3\\), \\(y\\)-intercept: \\(-4\\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2f",
@@ -6814,7 +6963,8 @@
             "Gradient: \\(3\\), \\(y\\)-intercept: \\(-5\\)",
             "Gradient: \\(-3\\), \\(y\\)-intercept: \\(5\\)",
             "Gradient: \\(-5\\), \\(y\\)-intercept: \\(-3\\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2g",
@@ -6864,7 +7014,8 @@
             "Gradient: \\(-\\frac{1}{3}\\), \\(y\\)-intercept: \\(-3\\)",
             "Gradient: \\(\\frac{1}{3}\\), \\(y\\)-intercept: \\(3\\)",
             "Gradient: \\(3\\), \\(y\\)-intercept: \\(-\\frac{1}{3}\\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2h",
@@ -6914,7 +7065,8 @@
             "Gradient: \\(-\\frac{3}{4}\\), \\(y\\)-intercept: \\(2\\)",
             "Gradient: \\(\\frac{3}{4}\\), \\(y\\)-intercept: \\(-2\\)",
             "Gradient: \\(2\\), \\(y\\)-intercept: \\(\\frac{3}{4}\\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2i",
@@ -6983,7 +7135,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2j",
@@ -7052,7 +7205,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2k",
@@ -7121,7 +7275,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q2l",
@@ -7190,7 +7345,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q3a",
@@ -7244,7 +7400,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q3b",
@@ -7315,7 +7472,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q3c",
@@ -7386,7 +7544,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q3d",
@@ -7457,7 +7616,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q4a",
@@ -7528,7 +7688,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q4b",
@@ -7599,7 +7760,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q4c",
@@ -7670,7 +7832,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q4d",
@@ -7741,7 +7904,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q5a",
@@ -7812,7 +7976,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q5b",
@@ -7883,7 +8048,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q5c",
@@ -7954,7 +8120,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q5d",
@@ -8025,7 +8192,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q6a",
@@ -8096,7 +8264,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q6b",
@@ -8152,7 +8321,8 @@
               "work": "y = -3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q6c",
@@ -8223,7 +8393,8 @@
               "work": "\\(-11\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q7a",
@@ -8279,7 +8450,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q7b",
@@ -8335,7 +8507,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q7c",
@@ -8381,7 +8554,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q8a",
@@ -8437,7 +8611,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q8b",
@@ -8483,7 +8658,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q8c",
@@ -8529,7 +8705,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q9a",
@@ -8589,7 +8766,8 @@
               "work": "\\(-5\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11d-q9b",
@@ -8652,7 +8830,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q9c",
@@ -8715,7 +8894,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q10",
@@ -8756,7 +8936,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11d-q11",
@@ -8826,7 +9007,8 @@
               "work": "\\(a = 8, b = 4, c = 10\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11d-q12a",
@@ -8862,7 +9044,8 @@
           },
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12b",
@@ -8902,7 +9085,8 @@
           },
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12c",
@@ -8942,7 +9126,8 @@
           },
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12d",
@@ -8982,7 +9167,8 @@
           },
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12e",
@@ -9019,7 +9205,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12f",
@@ -9056,7 +9243,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12g",
@@ -9093,7 +9281,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12h",
@@ -9130,7 +9319,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12i",
@@ -9167,7 +9357,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12j",
@@ -9204,7 +9395,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12k",
@@ -9237,7 +9429,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q12l",
@@ -9274,7 +9467,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11d-q13a",
@@ -9298,7 +9492,8 @@
               "explain": "Divide every term by $b$ to solve for $y$.",
               "work": "y = \\frac{-ax}{b} + \\frac{d}{b} \\\\ y = -\\frac{a}{b}x + \\frac{d}{b}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11d-q13b",
@@ -9322,7 +9517,8 @@
               "explain": "Identify the gradient $m$ and the $y$-intercept $c$.",
               "work": "m = -\\frac{a}{b}, \\quad c = \\frac{d}{b}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11d-q14",
@@ -9354,7 +9550,8 @@
               "work": "\\frac{x}{a} + \\frac{y}{b} = 1"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "sg2022-q3e",
@@ -9380,7 +9577,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sg2022-q3f",
@@ -9410,7 +9608,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s2-q1v",
@@ -9437,7 +9636,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s2-q2b",
@@ -9468,7 +9668,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11d-q13",
@@ -9496,7 +9697,8 @@
                   "explain": "Divide every term by $b$ to solve for $y$.",
                   "work": "y = \\frac{-ax}{b} + \\frac{d}{b} \\\\ y = -\\frac{a}{b}x + \\frac{d}{b}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11d-q13b",
@@ -9518,7 +9720,8 @@
                   "explain": "Identify the gradient $m$ and the $y$-intercept $c$.",
                   "work": "m = -\\frac{a}{b}, \\quad c = \\frac{d}{b}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) y = -\\frac{a}{b}x + \\frac{d}{b}, b) m = -\\frac{a}{b}, c = \\frac{d}{b}",
@@ -9559,7 +9762,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q8e",
@@ -9592,7 +9796,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t2q2",
@@ -9628,7 +9833,8 @@
                   "explain": "Compare with $y=mx+c$: the coefficient of $x$ is the gradient.",
                   "work": "\\(m = \\frac{1}{2}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t2q2b",
@@ -9650,7 +9856,8 @@
                   "explain": "Comparing with $y = mx + c$, the constant term $c$ is the $y$-intercept.",
                   "work": "\\(c = -2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -9698,7 +9905,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1b",
@@ -9730,7 +9938,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1c",
@@ -9762,7 +9971,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1d",
@@ -9794,7 +10004,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1e",
@@ -9826,7 +10037,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1f",
@@ -9858,7 +10070,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1g",
@@ -9890,7 +10103,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1h",
@@ -9922,7 +10136,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q1i",
@@ -9954,7 +10169,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2a",
@@ -9986,7 +10202,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2b",
@@ -10018,7 +10235,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2c",
@@ -10050,7 +10268,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2d",
@@ -10082,7 +10301,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2e",
@@ -10114,7 +10334,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2f",
@@ -10146,7 +10367,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2g",
@@ -10178,7 +10400,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2h",
@@ -10210,7 +10433,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2i",
@@ -10242,7 +10466,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2j",
@@ -10274,7 +10499,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2k",
@@ -10306,7 +10532,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q2l",
@@ -10338,7 +10565,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11e-q3a",
@@ -10370,7 +10598,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3b",
@@ -10402,7 +10631,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3c",
@@ -10434,7 +10664,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3d",
@@ -10466,7 +10697,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3e",
@@ -10498,7 +10730,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3f",
@@ -10530,7 +10763,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3g",
@@ -10562,7 +10796,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3h",
@@ -10594,7 +10829,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3i",
@@ -10626,7 +10862,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3j",
@@ -10658,7 +10895,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3k",
@@ -10690,7 +10928,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3l",
@@ -10722,7 +10961,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3m",
@@ -10754,7 +10994,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3n",
@@ -10786,7 +11027,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3o",
@@ -10818,7 +11060,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3p",
@@ -10850,7 +11093,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3q",
@@ -10882,7 +11126,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q3r",
@@ -10914,7 +11159,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4a",
@@ -10946,7 +11192,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4b",
@@ -10978,7 +11225,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4c",
@@ -11010,7 +11258,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4d",
@@ -11042,7 +11291,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4e",
@@ -11074,7 +11324,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11e-q4f",
@@ -11106,7 +11357,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "willoughby2019-s2-q3",
@@ -11135,7 +11387,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t2q3",
@@ -11177,7 +11430,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-11"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -11218,7 +11472,8 @@
               "work": "\\(y = 2x + 2\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1b",
@@ -11252,7 +11507,8 @@
               "work": "\\(y = 3x - 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1c",
@@ -11286,7 +11542,8 @@
               "work": "\\(y = 5x + 7\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1d",
@@ -11320,7 +11577,8 @@
               "work": "\\(y = 3x + 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1e",
@@ -11354,7 +11612,8 @@
               "work": "\\(y = \\frac{1}{2}x + \\frac{9}{2}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1f",
@@ -11388,7 +11647,8 @@
               "work": "\\(y = \\frac{2}{3}x - 4\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1g",
@@ -11422,7 +11682,8 @@
               "work": "\\(y = -\\frac{1}{3}x - \\frac{2}{3}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q1h",
@@ -11456,7 +11717,8 @@
               "work": "\\(y = -\\frac{2}{5}x - \\frac{17}{5}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q2a",
@@ -11502,7 +11764,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q2b",
@@ -11548,7 +11811,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q2c",
@@ -11594,7 +11858,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q2d",
@@ -11640,7 +11905,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q3a",
@@ -11677,7 +11943,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q3b",
@@ -11714,7 +11981,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q3c",
@@ -11751,7 +12019,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11f"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11f-q4a",
@@ -11785,7 +12054,8 @@
               "work": "\\(y = 2x - 3\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q4b",
@@ -11819,7 +12089,8 @@
               "work": "\\(y = 3x - 7\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q4c",
@@ -11853,7 +12124,8 @@
               "work": "\\(y = 2x - 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q4d",
@@ -11887,7 +12159,8 @@
               "work": "\\(y = -3x - 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q4e",
@@ -11921,7 +12194,8 @@
               "work": "\\(y = -4x + 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q4f",
@@ -11955,7 +12229,8 @@
               "work": "\\(y = 2x + 1\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11f-q5a",
@@ -12001,7 +12276,8 @@
               "work": "2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q5b",
@@ -12047,7 +12323,8 @@
               "work": "(1, 1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q5c",
@@ -12093,7 +12370,8 @@
               "work": "\\(y = -\\frac{1}{2}x + \\frac{3}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q5d",
@@ -12135,7 +12413,8 @@
               "work": "\\((0, 1.5)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q5e",
@@ -12181,7 +12460,8 @@
               "work": "d = \\sqrt{1 + 0.25} = \\sqrt{1.25}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q6a",
@@ -12214,7 +12494,8 @@
               "work": "\\(y = 2x - 7\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q6b",
@@ -12247,7 +12528,8 @@
               "work": "\\((0, -7)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q6c",
@@ -12280,7 +12562,8 @@
               "work": "\\(11/3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q6d",
@@ -12313,7 +12596,8 @@
               "work": "\\(y = 11/3x - 7\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q7a",
@@ -12346,7 +12630,8 @@
               "work": "\\(6\\sqrt{5}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q7b",
@@ -12374,7 +12659,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q7c",
@@ -12407,7 +12693,8 @@
               "work": "\\(y = 2x\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q7d",
@@ -12440,7 +12727,8 @@
               "work": "\\((6, 12)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8a",
@@ -12473,7 +12761,8 @@
               "work": "\\((4, 5)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8b",
@@ -12506,7 +12795,8 @@
               "work": "\\((8, -1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8c",
@@ -12539,7 +12829,8 @@
               "work": "\\(-1.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8d",
@@ -12572,7 +12863,8 @@
               "work": "\\(y = -3/2x + 11\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8e",
@@ -12605,7 +12897,8 @@
               "work": "\\((5.5, 2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11f-q8f",
@@ -12638,7 +12931,8 @@
               "work": "\\(y = 3x - 14.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "willoughby2019-s2-q1iv",
@@ -12676,7 +12970,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11f-q5",
@@ -12734,7 +13029,8 @@
                   "explain": "Simplify the numerator and denominator to get the final gradient.",
                   "work": "m = \\frac{12}{6} \\\\ m = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q5b",
@@ -12773,7 +13069,8 @@
                   "explain": "Simplify to find the coordinates of $C$.",
                   "work": "M = \\left(\\frac{2}{2}, \\frac{2}{2}\\right) \\\\ C = (1, 1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q5c",
@@ -12812,7 +13109,8 @@
                   "explain": "Expand and rearrange into the slope-intercept form $y = mx + c$.",
                   "work": "y - 1 = -\\frac{1}{2}x + \\frac{1}{2} \\\\ y = -\\frac{1}{2}x + \\frac{3}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q5d",
@@ -12851,7 +13149,8 @@
                   "explain": "State the coordinates of $D$.",
                   "work": "D = (0, 1.5)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q5e",
@@ -12894,7 +13193,8 @@
                   "explain": "Simplify to find the final distance.",
                   "work": "d = \\sqrt{1.25}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) m = 2, b) C(1, 1), c) y = -1/2x + 3/2, d) D(0, 1.5), e) CD = \\sqrt{1.25} = \\frac{\\sqrt{5}}{2}",
@@ -12944,7 +13244,8 @@
                   "explain": "Expand and rearrange into the slope-intercept form $y = mx + c$.",
                   "work": "y + 3 = 2x - 4 \\\\ y = 2x - 7"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q6b",
@@ -12970,7 +13271,8 @@
                   "explain": "State the coordinates of point $D$.",
                   "work": "D = (0, -7)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q6c",
@@ -12996,7 +13298,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m = \\frac{-11}{-3} = \\frac{11}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q6d",
@@ -13018,7 +13321,8 @@
                   "explain": "Substitute the gradient $m = \\frac{11}{3}$ and the $y$-intercept $c = -7$ (from point $D$).",
                   "work": "y = \\frac{11}{3}x - 7"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) y = 2x - 7, b) D(0, -7), c) m = 11/3, d) y = 11/3x - 7",
@@ -13072,7 +13376,8 @@
                   "explain": "Express in simplified surd form.",
                   "work": "d = \\sqrt{36 \\times 5} \\\\ d = 6\\sqrt{5}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q7b",
@@ -13098,7 +13403,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m = \\frac{12}{6} \\\\ m = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q7c",
@@ -13124,7 +13430,8 @@
                   "explain": "Expand and rearrange.",
                   "work": "y - 6 = 2x - 6 \\\\ y = 2x"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q7d",
@@ -13150,7 +13457,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "M = \\left(\\frac{12}{2}, \\frac{24}{2}\\right) \\\\ M = (6, 12)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 6\\sqrt{5} km, b) 2, c) y = 2x, d) (6, 12)",
@@ -13200,7 +13508,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "M = \\left(\\frac{8}{2}, \\frac{10}{2}\\right) \\\\ M = (4, 5)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q8b",
@@ -13226,7 +13535,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "N = \\left(\\frac{16}{2}, \\frac{-2}{2}\\right) \\\\ N = (8, -1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q8c",
@@ -13252,7 +13562,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m = \\frac{-6}{4} = -1.5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q8d",
@@ -13278,7 +13589,8 @@
                   "explain": "Expand and rearrange.",
                   "work": "y - 5 = -\\frac{3}{2}x + 6 \\\\ y = -\\frac{3}{2}x + 11"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q8e",
@@ -13304,7 +13616,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "P = \\left(\\frac{11}{2}, \\frac{4}{2}\\right) \\\\ P = (5.5, 2)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11f-q8f",
@@ -13330,7 +13643,8 @@
                   "explain": "Expand and rearrange.",
                   "work": "y - 2 = 3x - 16.5 \\\\ y = 3x - 14.5"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) M(4, 5), b) N(8, -1), c) m = -1.5, d) y = -3/2x + 11, e) P(5.5, 2), f) y = 3x - 14.5",
@@ -13393,7 +13707,8 @@
               "work": "\\text{Gradient } 3\\text{: a and d} \\\\ \\text{Gradient } -2\\text{: b, c and h} \\\\ \\text{Gradient } \\frac{1}{2}\\text{: e and f}"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2a",
@@ -13440,7 +13755,8 @@
               "work": "y - 7 = 3x - 6 \\implies y = 3x + 1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2b",
@@ -13487,7 +13803,8 @@
               "work": "y - 3 = 2(x + 1) \\implies y - 3 = 2x + 2 \\implies y = 2x + 5"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2c",
@@ -13521,7 +13838,8 @@
               "work": "y + 3 = -1(x + 2) \\implies y + 3 = -x - 2 \\implies y = -x - 5"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2d",
@@ -13555,7 +13873,8 @@
               "work": "y + 2 = -\\frac{1}{3}x + 1 \\implies y = -\\frac{1}{3}x - 1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2e",
@@ -13589,7 +13908,8 @@
               "work": "y + 4 = 2x - 2 \\implies y = 2x - 6"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q2f",
@@ -13623,7 +13943,8 @@
               "work": "y + 3 = -\\frac{1}{3}x + 2 \\implies y = -\\frac{1}{3}x - 1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q3",
@@ -13666,7 +13987,8 @@
               "work": "a = 4 - 3 = 1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q4",
@@ -13713,7 +14035,8 @@
               "work": "a = 2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q5",
@@ -13747,7 +14070,8 @@
               "work": "a = -3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q6",
@@ -13779,7 +14103,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -3"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6b",
@@ -13805,7 +14130,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6c",
@@ -13831,7 +14157,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{2}{5}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6d",
@@ -13857,7 +14184,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{1}{4}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6e",
@@ -13883,7 +14211,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{3}{2}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6f",
@@ -13909,7 +14238,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6g",
@@ -13935,7 +14265,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = \\frac{1}{4}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6h",
@@ -13961,7 +14292,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = 3"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6i",
@@ -13987,7 +14319,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{5}{3}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y9-11g-q6j",
@@ -14013,7 +14346,8 @@
                   "explain": "Solve for $m_2$ by taking the negative reciprocal.",
                   "work": "m_2 = -\\frac{4}{3}"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "answer": "-3, -1/3, -2/5, -1/4, -3/2, 1/3, 1/4, 3, -5/3, -4/3",
@@ -14057,7 +14391,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q8a",
@@ -14104,7 +14439,8 @@
               "work": "y - 5 = -\\frac{1}{3}x + \\frac{2}{3} \\implies y = -\\frac{1}{3}x + \\frac{17}{3}"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q8b",
@@ -14151,7 +14487,8 @@
               "work": "y - 4 = -\\frac{1}{2}x - 1 \\implies y = -\\frac{1}{2}x + 3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q8c",
@@ -14185,7 +14522,8 @@
               "work": "y + 2 = x + 3 \\implies y = x + 1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q8d",
@@ -14219,7 +14557,8 @@
               "work": "y + 5 = 4x - 8 \\implies y = 4x - 13"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q8e",
@@ -14253,7 +14592,8 @@
               "work": "y + 4 = -\\frac{1}{3}x + \\frac{2}{3} \\implies y = -\\frac{1}{3}x - \\frac{10}{3}"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q8f",
@@ -14287,7 +14627,8 @@
               "work": "y + 3 = 2x - 8 \\implies y = 2x - 11"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11g-q9a",
@@ -14339,7 +14680,8 @@
               "work": "(3, 4.5)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9b",
@@ -14391,7 +14733,8 @@
               "work": "(6, 3)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9c",
@@ -14443,7 +14786,8 @@
               "work": "-\\frac{1}{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9d",
@@ -14495,7 +14839,8 @@
               "work": "-\\frac{1}{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9e",
@@ -14543,7 +14888,8 @@
               "work": "\\text{They are parallel}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9f",
@@ -14595,7 +14941,8 @@
               "work": "-4.5 \\text{ and } -4.5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q9g",
@@ -14665,7 +15012,8 @@
               "work": "\\text{Parallelogram}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11g-q10",
@@ -14708,7 +15056,8 @@
               "work": "a + 2 = -\\frac{1}{3} \\\\ a = -2 - \\frac{1}{3} \\\\ a = -\\frac{7}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-11g-q11",
@@ -14751,7 +15100,8 @@
               "work": "3a + 1 = -\\frac{1}{2} \\\\ 3a = -\\frac{3}{2} \\\\ a = -\\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y9-11g-q12a",
@@ -14783,7 +15133,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11g-q12b",
@@ -14815,7 +15166,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11g-q12c",
@@ -14851,7 +15203,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11g-q12d",
@@ -14887,7 +15240,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11g-q13",
@@ -14922,7 +15276,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m_{AB} = \\frac{4}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q13b",
@@ -14948,7 +15303,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m_{BC} = \\frac{-3}{4} = -\\frac{3}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q13c",
@@ -14970,7 +15326,8 @@
                   "explain": "Simplify the multiplication.",
                   "work": "m_{AB} \\times m_{BC} = -1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q13d",
@@ -14996,7 +15353,8 @@
                   "explain": "Therefore, the angle formed by these two lines is a right angle.",
                   "work": "\\angle B = 90^\\circ"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Proof: Gradient m_AB = 4/3, m_BC = -3/4.\nSince m_AB * m_BC = -1, AB is perpendicular to BC, so angle B is 90 degrees.",
@@ -15049,7 +15407,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m_{AC} = \\frac{1}{7}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q14b",
@@ -15075,7 +15434,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m_{BD} = \\frac{-7}{1} = -7"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q14c",
@@ -15097,7 +15457,8 @@
                   "explain": "Simplify the multiplication.",
                   "work": "m_{AC} \\times m_{BD} = -1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q14d",
@@ -15119,7 +15480,8 @@
                   "explain": "Since the product of the gradients is -1, the lines are perpendicular.",
                   "work": "AC \\perp BD"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Proof: Gradient m_AC = 1/7, m_BD = -7.\nSince m_AC * m_BD = -1, the diagonals AC and BD are perpendicular.",
@@ -15192,7 +15554,8 @@
               "explain": "Final answer: (3, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((3, 1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15b",
@@ -15224,7 +15587,8 @@
               "explain": "Final answer: -0.4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-0.4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15c",
@@ -15256,7 +15620,8 @@
               "explain": "Final answer: y = -2/5x + 11/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = -2/5x + 11/5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15d",
@@ -15314,7 +15679,8 @@
               "explain": "Final answer: y = 5/4x - 11/2; y = -7x + 33. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = 5/4x - 11/2; y = -7x + 33\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15e",
@@ -15346,7 +15712,8 @@
               "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15f",
@@ -15378,7 +15745,8 @@
               "explain": "Final answer: y = -1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = -1/4x + 7/4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15g",
@@ -15410,7 +15778,8 @@
               "explain": "Final answer: y = 2/3x - 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = 2/3x - 2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q15h",
@@ -15442,7 +15811,8 @@
               "explain": "Final answer: y = -3x + 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = -3x + 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q16a",
@@ -15474,7 +15844,8 @@
               "explain": "Final answer: y = -2/3x + 14/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = -2/3x + 14/3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q16b",
@@ -15506,7 +15877,8 @@
               "explain": "Final answer: y = 3x - 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = 3x - 7\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q16c",
@@ -15538,7 +15910,8 @@
               "explain": "Final answer: y = 1/4x + 7/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(y = 1/4x + 7/4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q17a",
@@ -15570,7 +15943,8 @@
               "explain": "Final answer: \\sqrt{5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\sqrt{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q17b",
@@ -15597,7 +15971,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y9-11g-q17c",
@@ -15629,7 +16004,8 @@
               "explain": "Final answer: -1/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-1/2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q17d",
@@ -15661,7 +16037,8 @@
               "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11g-q17e",
@@ -15693,7 +16070,8 @@
               "explain": "Final answer: (6, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((6, 4)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "sg2022-q4a",
@@ -15728,7 +16106,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sg2022-q6a",
@@ -15766,7 +16145,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s2-q4",
@@ -15801,7 +16181,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11g-q6a",
@@ -15832,7 +16213,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6b",
@@ -15863,7 +16245,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6c",
@@ -15894,7 +16277,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6d",
@@ -15925,7 +16309,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6e",
@@ -15956,7 +16341,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6f",
@@ -15987,7 +16373,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6g",
@@ -16018,7 +16405,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6h",
@@ -16049,7 +16437,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6i",
@@ -16080,7 +16469,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q6j",
@@ -16111,7 +16501,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11g-q12",
@@ -16156,7 +16547,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m = \\frac{8}{4} = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q12b",
@@ -16182,7 +16574,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "C = \\left(\\frac{10}{2}, \\frac{16}{2}\\right) = (5, 8)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q12c",
@@ -16212,7 +16605,8 @@
                   "explain": "Expand and rearrange.",
                   "work": "y - 8 = -\\frac{1}{2}x + \\frac{5}{2} \\\\ y = -\\frac{1}{2}x + \\frac{21}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q12d",
@@ -16242,7 +16636,8 @@
                   "explain": "Identify the $y$-intercept ($c$) from the equation $y = mx + c$ and convert it to a decimal.",
                   "work": "c = \\frac{21}{2} = 10.5"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) m = 2, b) C(5, 8), c) y = -1/2x + 21/2, d) 10.5",
@@ -16291,7 +16686,8 @@
                   "explain": "Simplify to find the coordinates.",
                   "work": "S = \\left(\\frac{6}{2}, \\frac{2}{2}\\right) = (3, 1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15b",
@@ -16317,7 +16713,8 @@
                   "explain": "Simplify to find the gradient as a decimal.",
                   "work": "m_{SR} = \\frac{-2}{5} = -0.4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15c",
@@ -16347,7 +16744,8 @@
                   "explain": "Solve for $y$ to get the slope-intercept form.",
                   "work": "y = -\\frac{2}{5}x + \\frac{6}{5} + \\frac{5}{5} \\implies y = -\\frac{2}{5}x + \\frac{11}{5}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15d",
@@ -16369,7 +16767,8 @@
                   "explain": "Find the midpoint $U$ of $PR$ and the equation of median $QU$.",
                   "work": "U = \\left(\\frac{2+8}{2}, \\frac{-3-1}{2}\\right) = (5, -2) \\\\ m_{QU} = \\frac{-2 - 5}{5 - 4} = -7 \\\\ y - 5 = -7(x - 4) \\implies y = -7x + 33"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15e",
@@ -16395,7 +16794,8 @@
                   "explain": "Simplify to find the gradient.",
                   "work": "m_{PQ} = \\frac{8}{2} = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15f",
@@ -16421,7 +16821,8 @@
                   "explain": "Expand and rearrange into slope-intercept form.",
                   "work": "y = -\\frac{1}{4}x + \\frac{3}{4} + \\frac{4}{4} \\implies y = -\\frac{1}{4}x + \\frac{7}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15g",
@@ -16451,7 +16852,8 @@
                   "explain": "Expand and rearrange into slope-intercept form.",
                   "work": "y = \\frac{2}{3}x - 4 + 2 \\implies y = \\frac{2}{3}x - 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q15h",
@@ -16481,7 +16883,8 @@
                   "explain": "Expand and rearrange into slope-intercept form.",
                   "work": "y + 2 = -3x + 15 \\implies y = -3x + 13"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) S(3, 1), b) m_SR = -0.4, c) y = -2/5x + 11/5, d) y = 5/4x - 11/2; y = -7x + 33, e) m_PQ = 4, f) y = -1/4x + 7/4, g) y = 2/3x - 2, h) y = -3x + 13",
@@ -16534,7 +16937,8 @@
                   "explain": "Expand to get the slope-intercept form.",
                   "work": "y = -\\frac{2}{3}x + \\frac{14}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q16b",
@@ -16564,7 +16968,8 @@
                   "explain": "Expand to get the slope-intercept form.",
                   "work": "y = 3x - 15 + 8 \\implies y = 3x - 7"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q16c",
@@ -16594,7 +16999,8 @@
                   "explain": "Expand to get the slope-intercept form.",
                   "work": "y = \\frac{1}{4}x - \\frac{1}{4} + \\frac{8}{4} \\implies y = \\frac{1}{4}x + \\frac{7}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) y = -2/3x + 14/3, b) y = 3x - 7, c) y = 1/4x + 7/4",
@@ -16643,7 +17049,8 @@
                   "explain": "Simplify the expression under the square root.",
                   "work": "d_{AB} = \\sqrt{1^2 + 2^2} = \\sqrt{1 + 4} = \\sqrt{5}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q17b",
@@ -16669,7 +17076,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "m_{AB} = \\frac{2}{1} = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q17c",
@@ -16695,7 +17103,8 @@
                   "explain": "Find the negative reciprocal of the gradient of AB.",
                   "work": "m_{BC} = -\\frac{1}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q17d",
@@ -16725,7 +17134,8 @@
                   "explain": "Solve for c.",
                   "work": "c = 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11g-q17e",
@@ -16755,7 +17165,8 @@
                   "explain": "Calculate final coordinates.",
                   "work": "D = (6, 4)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) \\sqrt{5}, b) 2, c) -1/2, d) 6, e) (6, 4)",
@@ -16800,7 +17211,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t2q4",
@@ -16846,7 +17258,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-11"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -16883,7 +17296,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1b",
@@ -16913,7 +17327,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1c",
@@ -16943,7 +17358,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1d",
@@ -16990,7 +17406,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1e",
@@ -17020,7 +17437,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1f",
@@ -17067,7 +17485,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1g",
@@ -17097,7 +17516,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1h",
@@ -17127,7 +17547,8 @@
               "work": "25 = 25, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q1i",
@@ -17174,7 +17595,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2a",
@@ -17204,7 +17626,8 @@
               "work": "64 = 64, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2b",
@@ -17251,7 +17674,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2c",
@@ -17298,7 +17722,8 @@
               "work": "Yes"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2d",
@@ -17345,7 +17770,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2e",
@@ -17375,7 +17801,8 @@
               "work": "64 = 64, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2f",
@@ -17422,7 +17849,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2g",
@@ -17452,7 +17880,8 @@
               "work": "64 = 64, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2h",
@@ -17482,7 +17911,8 @@
               "work": "64 = 64, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q2i",
@@ -17529,7 +17959,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3a",
@@ -17576,7 +18007,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3b",
@@ -17606,7 +18038,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3c",
@@ -17636,7 +18069,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3d",
@@ -17666,7 +18100,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3e",
@@ -17696,7 +18131,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3f",
@@ -17726,7 +18162,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3g",
@@ -17773,7 +18210,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3h",
@@ -17803,7 +18241,8 @@
               "work": "50 = 50, therefore the point lies on the circle."
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q3i",
@@ -17850,7 +18289,8 @@
               "work": "No"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q4a",
@@ -17885,7 +18325,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4b",
@@ -17920,7 +18361,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4c",
@@ -17955,7 +18397,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4d",
@@ -17990,7 +18433,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4e",
@@ -18025,7 +18469,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4f",
@@ -18060,7 +18505,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4g",
@@ -18095,7 +18541,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4h",
@@ -18130,7 +18577,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q4i",
@@ -18165,7 +18613,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11h"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-11h-q5a",
@@ -18199,7 +18648,8 @@
               "work": "\\(x^2 + y^2 = 121\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q5b",
@@ -18235,7 +18685,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q5c",
@@ -18271,7 +18722,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q5d",
@@ -18307,7 +18759,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q6a",
@@ -18341,7 +18794,8 @@
               "work": "\\(x^2 + y^2 = 8\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6b",
@@ -18375,7 +18829,8 @@
               "work": "\\(x^2 + y^2 = 13\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6c",
@@ -18409,7 +18864,8 @@
               "work": "\\(x^2 + y^2 = 17\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6d",
@@ -18443,7 +18899,8 @@
               "work": "\\(x^2 + y^2 = 65\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6e",
@@ -18477,7 +18934,8 @@
               "work": "\\(x^2 + y^2 = 25\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6f",
@@ -18511,7 +18969,8 @@
               "work": "\\(x^2 + y^2 = 169\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6g",
@@ -18547,7 +19006,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q6h",
@@ -18583,7 +19043,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q6i",
@@ -18617,7 +19078,8 @@
               "work": "\\(x^2 + y^2 = 29\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6j",
@@ -18651,7 +19113,8 @@
               "work": "\\(x^2 + y^2 = 25\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6k",
@@ -18685,7 +19148,8 @@
               "work": "\\(x^2 + y^2 = 289\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q6l",
@@ -18721,7 +19185,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q7a",
@@ -18755,7 +19220,8 @@
               "work": "\\(x^2 + y^2 = 16\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q7b",
@@ -18789,7 +19255,8 @@
               "work": "\\(x^2 + y^2 = 49\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q7c",
@@ -18823,7 +19290,8 @@
               "work": "\\(x^2 + y^2 = \\dfrac{25}{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q7d",
@@ -18857,7 +19325,8 @@
               "work": "\\(x^2 + y^2 = \\dfrac{81}{4}\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-11h-q7e",
@@ -18893,7 +19362,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-11h-q8",
@@ -18929,7 +19399,8 @@
               "work": "\\(D(5, -12)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11h-q9a",
@@ -18975,7 +19446,8 @@
               "work": "\\(6\\sqrt{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11h-q9b",
@@ -19021,7 +19493,8 @@
               "work": "\\(72\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11h-q10",
@@ -19058,7 +19531,8 @@
                   "work": "m = \\\\frac{14}{-2} = -7"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y9-11h-q10b",
@@ -19086,7 +19560,8 @@
                   "work": "y - 8 = -7x + 42 \\\\ y = -7x + 42 + 8 \\\\ y = -7x + 50"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y9-11h-q10c",
@@ -19118,7 +19593,8 @@
                   "work": "AB = \\\\sqrt{100 \\\\times 2} = 10\\\\sqrt{2}"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y9-11h-q10d",
@@ -19146,7 +19622,8 @@
                   "work": "\\\\text{Area} = (\\\\sqrt{200})^2 = 200"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ]
         },
@@ -19193,7 +19670,8 @@
               "explain": "Final answer: 3\\sqrt{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(3\\sqrt{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q11b",
@@ -19238,7 +19716,8 @@
               "explain": "Final answer: 6\\sqrt{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\sqrt{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q11c",
@@ -19283,7 +19762,8 @@
               "explain": "Final answer: 6\\sqrt{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\sqrt{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q11d",
@@ -19328,7 +19808,8 @@
               "explain": "Final answer: Equilateral. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(Equilateral\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q12a",
@@ -19360,7 +19841,8 @@
               "explain": "Final answer: 6\\sqrt{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\sqrt{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q12b",
@@ -19388,7 +19870,8 @@
               "work": "Proof: Angle AXO = Angle AYB = 90 degrees, Angle XAO = Angle YAB is a common angle.\nHence similar by AA."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y9-11h-q12c",
@@ -19420,7 +19903,8 @@
               "explain": "Final answer: OX = 2\\sqrt{3}, x^2 + y^2 = 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(OX = 2\\sqrt{3}, x^2 + y^2 = 12\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11h-q9",
@@ -19459,7 +19943,8 @@
                   "explain": "Simplify the surd: \\(72 = 36 \\times 2\\), so \\(\\sqrt{72} = \\sqrt{36 \\times 2} = \\sqrt{36} \\times \\sqrt{2} = 6\\sqrt{2}\\).",
                   "work": "\\(AB = 6\\sqrt{2}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q9b",
@@ -19485,7 +19970,8 @@
                   "explain": "Multiply to get the final answer.",
                   "work": "\\(\\text{Area} = 72 \\text{ square units}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 6\\sqrt{2}, b) 72",
@@ -19529,7 +20015,8 @@
                   "explain": "Take the square root of both sides. Since the problem states \\(a > 0\\), we take the positive root.",
                   "work": "\\(a = \\sqrt{27} = 3\\sqrt{3}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q11b",
@@ -19559,7 +20046,8 @@
                   "explain": "Add and simplify the surd.",
                   "work": "\\(AB = \\sqrt{108} = \\sqrt{36 \\times 3} = 6\\sqrt{3}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q11c",
@@ -19585,7 +20073,8 @@
                   "explain": "Simplify the result.",
                   "work": "\\(BC = 3\\sqrt{3} + 3\\sqrt{3} = 6\\sqrt{3}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q11d",
@@ -19607,7 +20096,8 @@
                   "explain": "Since all three sides of \\(\\Delta ABC\\) are equal, it is an equilateral triangle.",
                   "work": "\\(AB = BC = AC = 6\\sqrt{3} \\implies \\text{Equilateral}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 3\\sqrt{3}, b) 6\\sqrt{3}, c) 6\\sqrt{3}, d) Equilateral",
@@ -19646,7 +20136,8 @@
                   "explain": "Simplify the expression to find the height.",
                   "work": "\\(AY = 6\\sqrt{3}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q12b",
@@ -19672,7 +20163,8 @@
                   "explain": "Since two pairs of corresponding angles are equal, the triangles are similar by the AA (Angle-Angle) Similarity criterion.",
                   "work": "\\(\\Delta AXO \\sim \\Delta AYB \\quad \\text{by AA Similarity}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11h-q12c",
@@ -19702,7 +20194,8 @@
                   "explain": "The radius is \\(2\\sqrt{3}\\). The equation of a circle centered at the origin is \\(x^2 + y^2 = r^2\\).",
                   "work": "\\(x^2 + y^2 = (2\\sqrt{3})^2 = 12\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 6\\sqrt{3}, b) Proof: Angle AXO = Angle AYB = 90 degrees, Angle XAO = Angle YAB is a common angle. Hence similar by AA.",
@@ -19748,7 +20241,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q1b",
@@ -19783,7 +20277,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q1c",
@@ -19818,7 +20313,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q2",
@@ -19866,7 +20362,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-11i-q3",
@@ -19913,7 +20410,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-11i-q4",
@@ -19962,7 +20460,8 @@
               "work": "\\(D = (8, 2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-11i-q5",
@@ -20014,7 +20513,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-11i-q6a",
@@ -20044,7 +20544,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q6b",
@@ -20074,7 +20575,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q6c",
@@ -20108,7 +20610,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q6d",
@@ -20138,7 +20641,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q6e",
@@ -20168,7 +20672,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q6f",
@@ -20209,7 +20714,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-11i-q7",
@@ -20251,7 +20757,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-11i-q8",
@@ -20338,7 +20845,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-11i-q9",
@@ -20439,7 +20947,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-11i-q10",
@@ -20485,7 +20994,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year9ch11i"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-11i-q11a",
@@ -20513,7 +21023,8 @@
               "work": "Proof: Distance from origin O(0,0) to P(x,y) is radius R."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y9-11i-q11b",
@@ -20541,7 +21052,8 @@
               "work": "Proof: Multiply gradients of PA and PB to show they equal -1."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y9-11i-q11c",
@@ -20569,7 +21081,8 @@
               "work": "Proof: Substitute coordinates and expand."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y9-11i-q1",
@@ -20610,7 +21123,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"320\" height=\"320\" viewBox=\"-11 -11 22 22\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g transform=\"scale(1,-1)\">\n    <line x1=\"-11\" y1=\"-11\" x2=\"11\" y2=\"-11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-11\" x2=\"-11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-10\" x2=\"11\" y2=\"-10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-10\" y1=\"-11\" x2=\"-10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-9\" x2=\"11\" y2=\"-9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-9\" y1=\"-11\" x2=\"-9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-8\" x2=\"11\" y2=\"-8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-8\" y1=\"-11\" x2=\"-8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-7\" x2=\"11\" y2=\"-7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-7\" y1=\"-11\" x2=\"-7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-6\" x2=\"11\" y2=\"-6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-6\" y1=\"-11\" x2=\"-6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-5\" x2=\"11\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-5\" y1=\"-11\" x2=\"-5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-4\" x2=\"11\" y2=\"-4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-4\" y1=\"-11\" x2=\"-4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-3\" x2=\"11\" y2=\"-3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-3\" y1=\"-11\" x2=\"-3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-2\" x2=\"11\" y2=\"-2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-2\" y1=\"-11\" x2=\"-2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-1\" x2=\"11\" y2=\"-1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-1\" y1=\"-11\" x2=\"-1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"1\" x2=\"11\" y2=\"1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"1\" y1=\"-11\" x2=\"1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"2\" x2=\"11\" y2=\"2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"2\" y1=\"-11\" x2=\"2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"3\" x2=\"11\" y2=\"3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"3\" y1=\"-11\" x2=\"3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"4\" x2=\"11\" y2=\"4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"4\" y1=\"-11\" x2=\"4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"5\" x2=\"11\" y2=\"5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"5\" y1=\"-11\" x2=\"5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"6\" x2=\"11\" y2=\"6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"6\" y1=\"-11\" x2=\"6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"7\" x2=\"11\" y2=\"7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"7\" y1=\"-11\" x2=\"7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"8\" x2=\"11\" y2=\"8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"8\" y1=\"-11\" x2=\"8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"9\" x2=\"11\" y2=\"9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"9\" y1=\"-11\" x2=\"9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"10\" x2=\"11\" y2=\"10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"10\" y1=\"-11\" x2=\"10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"11\" y1=\"-11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/>\n    <line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"-2\" y1=\"5\" x2=\"8\" y2=\"0\" stroke=\"#6366f1\" stroke-width=\"0.12\"/>\n    <circle cx=\"-2\" cy=\"5\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"8\" cy=\"0\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"3\" cy=\"2.5\" r=\"0.25\" fill=\"#ef4444\"/>\n  </g>\n  <text x=\"-3.5\" y=\"-5.5\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(−2, 5)</text>\n  <text x=\"8.3\" y=\"-0.2\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(8, 0)</text>\n  <text x=\"3.4\" y=\"-2.8\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#ef4444\">P(3, 2.5)</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q1b",
@@ -20642,7 +21156,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"320\" height=\"320\" viewBox=\"-11 -11 22 22\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g transform=\"scale(1,-1)\">\n    <line x1=\"-11\" y1=\"-11\" x2=\"11\" y2=\"-11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-11\" x2=\"-11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-10\" x2=\"11\" y2=\"-10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-10\" y1=\"-11\" x2=\"-10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-9\" x2=\"11\" y2=\"-9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-9\" y1=\"-11\" x2=\"-9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-8\" x2=\"11\" y2=\"-8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-8\" y1=\"-11\" x2=\"-8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-7\" x2=\"11\" y2=\"-7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-7\" y1=\"-11\" x2=\"-7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-6\" x2=\"11\" y2=\"-6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-6\" y1=\"-11\" x2=\"-6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-5\" x2=\"11\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-5\" y1=\"-11\" x2=\"-5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-4\" x2=\"11\" y2=\"-4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-4\" y1=\"-11\" x2=\"-4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-3\" x2=\"11\" y2=\"-3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-3\" y1=\"-11\" x2=\"-3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-2\" x2=\"11\" y2=\"-2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-2\" y1=\"-11\" x2=\"-2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-1\" x2=\"11\" y2=\"-1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-1\" y1=\"-11\" x2=\"-1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"1\" x2=\"11\" y2=\"1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"1\" y1=\"-11\" x2=\"1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"2\" x2=\"11\" y2=\"2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"2\" y1=\"-11\" x2=\"2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"3\" x2=\"11\" y2=\"3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"3\" y1=\"-11\" x2=\"3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"4\" x2=\"11\" y2=\"4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"4\" y1=\"-11\" x2=\"4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"5\" x2=\"11\" y2=\"5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"5\" y1=\"-11\" x2=\"5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"6\" x2=\"11\" y2=\"6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"6\" y1=\"-11\" x2=\"6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"7\" x2=\"11\" y2=\"7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"7\" y1=\"-11\" x2=\"7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"8\" x2=\"11\" y2=\"8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"8\" y1=\"-11\" x2=\"8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"9\" x2=\"11\" y2=\"9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"9\" y1=\"-11\" x2=\"9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"10\" x2=\"11\" y2=\"10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"10\" y1=\"-11\" x2=\"10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"11\" y1=\"-11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/>\n    <line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"-2\" y1=\"5\" x2=\"8\" y2=\"0\" stroke=\"#6366f1\" stroke-width=\"0.12\"/>\n    <circle cx=\"-2\" cy=\"5\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"8\" cy=\"0\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"4.666666666666667\" cy=\"1.6666666666666667\" r=\"0.25\" fill=\"#ef4444\"/>\n  </g>\n  <text x=\"-3.5\" y=\"-5.5\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(−2, 5)</text>\n  <text x=\"8.3\" y=\"-0.2\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(8, 0)</text>\n  <text x=\"5.066666666666667\" y=\"-1.9666666666666668\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#ef4444\">P(14/3, 5/3)</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q1c",
@@ -20678,7 +21193,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"320\" height=\"320\" viewBox=\"-11 -11 22 22\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g transform=\"scale(1,-1)\">\n    <line x1=\"-11\" y1=\"-11\" x2=\"11\" y2=\"-11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-11\" x2=\"-11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-10\" x2=\"11\" y2=\"-10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-10\" y1=\"-11\" x2=\"-10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-9\" x2=\"11\" y2=\"-9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-9\" y1=\"-11\" x2=\"-9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-8\" x2=\"11\" y2=\"-8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-8\" y1=\"-11\" x2=\"-8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-7\" x2=\"11\" y2=\"-7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-7\" y1=\"-11\" x2=\"-7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-6\" x2=\"11\" y2=\"-6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-6\" y1=\"-11\" x2=\"-6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-5\" x2=\"11\" y2=\"-5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-5\" y1=\"-11\" x2=\"-5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-4\" x2=\"11\" y2=\"-4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-4\" y1=\"-11\" x2=\"-4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-3\" x2=\"11\" y2=\"-3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-3\" y1=\"-11\" x2=\"-3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-2\" x2=\"11\" y2=\"-2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-2\" y1=\"-11\" x2=\"-2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"-1\" x2=\"11\" y2=\"-1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-1\" y1=\"-11\" x2=\"-1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"1\" x2=\"11\" y2=\"1\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"1\" y1=\"-11\" x2=\"1\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"2\" x2=\"11\" y2=\"2\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"2\" y1=\"-11\" x2=\"2\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"3\" x2=\"11\" y2=\"3\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"3\" y1=\"-11\" x2=\"3\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"4\" x2=\"11\" y2=\"4\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"4\" y1=\"-11\" x2=\"4\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"5\" x2=\"11\" y2=\"5\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"5\" y1=\"-11\" x2=\"5\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"6\" x2=\"11\" y2=\"6\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"6\" y1=\"-11\" x2=\"6\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"7\" x2=\"11\" y2=\"7\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"7\" y1=\"-11\" x2=\"7\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"8\" x2=\"11\" y2=\"8\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"8\" y1=\"-11\" x2=\"8\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"9\" x2=\"11\" y2=\"9\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"9\" y1=\"-11\" x2=\"9\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"10\" x2=\"11\" y2=\"10\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"10\" y1=\"-11\" x2=\"10\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"-11\" y1=\"11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/><line x1=\"11\" y1=\"-11\" x2=\"11\" y2=\"11\" stroke=\"#e2e8f0\" stroke-width=\"0.05\"/>\n    <line x1=\"-11\" y1=\"0\" x2=\"11\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"11\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n    <line x1=\"-2\" y1=\"5\" x2=\"8\" y2=\"0\" stroke=\"#6366f1\" stroke-width=\"0.12\"/>\n    <circle cx=\"-2\" cy=\"5\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"8\" cy=\"0\" r=\"0.22\" fill=\"#6366f1\"/>\n    <circle cx=\"2\" cy=\"3\" r=\"0.25\" fill=\"#ef4444\"/>\n  </g>\n  <text x=\"-3.5\" y=\"-5.5\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(−2, 5)</text>\n  <text x=\"8.3\" y=\"-0.2\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(8, 0)</text>\n  <text x=\"2.4\" y=\"-3.3\" font-size=\"0.75\" font-family=\"sans-serif\" fill=\"#ef4444\">P(2, 3)</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) (3, 2.5), b) (14/3, 5/3), c) (2, 3)",
@@ -20717,7 +21233,8 @@
                   "explain": "Set equal to the given gradient and solve for \\(b\\).",
                   "work": "\\(\\dfrac{3}{b-1} = \\dfrac{3}{4} \\implies b - 1 = 4 \\implies b = 5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q6b",
@@ -20738,7 +21255,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"260\" height=\"260\" viewBox=\"-4 -10 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#e2e8f0\" stroke-width=\"0.05\">\n    <line x1=\"-4\" y1=\"-10\" x2=\"-4\" y2=\"2\"/><line x1=\"-3\" y1=\"-10\" x2=\"-3\" y2=\"2\"/><line x1=\"-2\" y1=\"-10\" x2=\"-2\" y2=\"2\"/><line x1=\"-1\" y1=\"-10\" x2=\"-1\" y2=\"2\"/><line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\"/><line x1=\"1\" y1=\"-10\" x2=\"1\" y2=\"2\"/><line x1=\"2\" y1=\"-10\" x2=\"2\" y2=\"2\"/><line x1=\"3\" y1=\"-10\" x2=\"3\" y2=\"2\"/><line x1=\"4\" y1=\"-10\" x2=\"4\" y2=\"2\"/><line x1=\"5\" y1=\"-10\" x2=\"5\" y2=\"2\"/><line x1=\"6\" y1=\"-10\" x2=\"6\" y2=\"2\"/><line x1=\"7\" y1=\"-10\" x2=\"7\" y2=\"2\"/>\n    <line x1=\"-4\" y1=\"-10\" x2=\"8\" y2=\"-10\"/><line x1=\"-4\" y1=\"-9\" x2=\"8\" y2=\"-9\"/><line x1=\"-4\" y1=\"-8\" x2=\"8\" y2=\"-8\"/><line x1=\"-4\" y1=\"-7\" x2=\"8\" y2=\"-7\"/><line x1=\"-4\" y1=\"-6\" x2=\"8\" y2=\"-6\"/><line x1=\"-4\" y1=\"-5\" x2=\"8\" y2=\"-5\"/><line x1=\"-4\" y1=\"-4\" x2=\"8\" y2=\"-4\"/><line x1=\"-4\" y1=\"-3\" x2=\"8\" y2=\"-3\"/><line x1=\"-4\" y1=\"-2\" x2=\"8\" y2=\"-2\"/><line x1=\"-4\" y1=\"-1\" x2=\"8\" y2=\"-1\"/><line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\"/><line x1=\"-4\" y1=\"1\" x2=\"8\" y2=\"1\"/><line x1=\"-4\" y1=\"2\" x2=\"8\" y2=\"2\"/>\n  </g>\n  <line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"1\" y1=\"-1\" x2=\"5\" y2=\"-4\" stroke=\"#ef4444\" stroke-width=\"0.14\"/>\n  <line x1=\"5\" y1=\"-4\" x2=\"2\" y2=\"-8\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <line x1=\"2\" y1=\"-8\" x2=\"-2\" y2=\"-5\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <line x1=\"-2\" y1=\"-5\" x2=\"1\" y2=\"-1\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <circle cx=\"1\" cy=\"-1\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"5\" cy=\"-4\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"2\" cy=\"-8\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"-2\" cy=\"-5\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <text x=\"1.2\" y=\"-0.7\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(1, 1)</text>\n  <text x=\"5.2\" y=\"-4.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(b, 4)</text>\n  <text x=\"2.2\" y=\"-8.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">C(2, c)</text>\n  <text x=\"-4.2\" y=\"-5.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">D</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q6c",
@@ -20763,7 +21281,8 @@
                   "explain": "Square both sides and solve for \\(c\\).",
                   "work": "\\(9 + (c-4)^2 = 25\\)\n\\((c-4)^2 = 16\\)\n\\(c - 4 = \\pm 4\\)\n\\(c = 8 \\text{ or } c = 0\\)\n\\(\\therefore c = 8\\) (since \\(c\\) is a positive integer)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q6d",
@@ -20784,7 +21303,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"260\" height=\"260\" viewBox=\"-4 -10 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#e2e8f0\" stroke-width=\"0.05\">\n    <line x1=\"-4\" y1=\"-10\" x2=\"-4\" y2=\"2\"/><line x1=\"-3\" y1=\"-10\" x2=\"-3\" y2=\"2\"/><line x1=\"-2\" y1=\"-10\" x2=\"-2\" y2=\"2\"/><line x1=\"-1\" y1=\"-10\" x2=\"-1\" y2=\"2\"/><line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\"/><line x1=\"1\" y1=\"-10\" x2=\"1\" y2=\"2\"/><line x1=\"2\" y1=\"-10\" x2=\"2\" y2=\"2\"/><line x1=\"3\" y1=\"-10\" x2=\"3\" y2=\"2\"/><line x1=\"4\" y1=\"-10\" x2=\"4\" y2=\"2\"/><line x1=\"5\" y1=\"-10\" x2=\"5\" y2=\"2\"/><line x1=\"6\" y1=\"-10\" x2=\"6\" y2=\"2\"/><line x1=\"7\" y1=\"-10\" x2=\"7\" y2=\"2\"/>\n    <line x1=\"-4\" y1=\"-10\" x2=\"8\" y2=\"-10\"/><line x1=\"-4\" y1=\"-9\" x2=\"8\" y2=\"-9\"/><line x1=\"-4\" y1=\"-8\" x2=\"8\" y2=\"-8\"/><line x1=\"-4\" y1=\"-7\" x2=\"8\" y2=\"-7\"/><line x1=\"-4\" y1=\"-6\" x2=\"8\" y2=\"-6\"/><line x1=\"-4\" y1=\"-5\" x2=\"8\" y2=\"-5\"/><line x1=\"-4\" y1=\"-4\" x2=\"8\" y2=\"-4\"/><line x1=\"-4\" y1=\"-3\" x2=\"8\" y2=\"-3\"/><line x1=\"-4\" y1=\"-2\" x2=\"8\" y2=\"-2\"/><line x1=\"-4\" y1=\"-1\" x2=\"8\" y2=\"-1\"/><line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\"/><line x1=\"-4\" y1=\"1\" x2=\"8\" y2=\"1\"/><line x1=\"-4\" y1=\"2\" x2=\"8\" y2=\"2\"/>\n  </g>\n  <line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"1\" y1=\"-1\" x2=\"5\" y2=\"-4\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <line x1=\"5\" y1=\"-4\" x2=\"2\" y2=\"-8\" stroke=\"#ef4444\" stroke-width=\"0.14\"/>\n  <line x1=\"2\" y1=\"-8\" x2=\"-2\" y2=\"-5\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <line x1=\"-2\" y1=\"-5\" x2=\"1\" y2=\"-1\" stroke=\"#cbd5e1\" stroke-width=\"0.14\"/>\n  <circle cx=\"1\" cy=\"-1\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"5\" cy=\"-4\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"2\" cy=\"-8\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"-2\" cy=\"-5\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <text x=\"1.2\" y=\"-0.7\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(1, 1)</text>\n  <text x=\"5.2\" y=\"-4.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(b, 4)</text>\n  <text x=\"2.2\" y=\"-8.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">C(2, c)</text>\n  <text x=\"-4.2\" y=\"-5.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">D</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q6e",
@@ -20805,7 +21325,8 @@
                     "html": "\n<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"260\" height=\"260\" viewBox=\"-4 -10 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#e2e8f0\" stroke-width=\"0.05\">\n    <line x1=\"-4\" y1=\"-10\" x2=\"-4\" y2=\"2\"/><line x1=\"-3\" y1=\"-10\" x2=\"-3\" y2=\"2\"/><line x1=\"-2\" y1=\"-10\" x2=\"-2\" y2=\"2\"/><line x1=\"-1\" y1=\"-10\" x2=\"-1\" y2=\"2\"/><line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\"/><line x1=\"1\" y1=\"-10\" x2=\"1\" y2=\"2\"/><line x1=\"2\" y1=\"-10\" x2=\"2\" y2=\"2\"/><line x1=\"3\" y1=\"-10\" x2=\"3\" y2=\"2\"/><line x1=\"4\" y1=\"-10\" x2=\"4\" y2=\"2\"/><line x1=\"5\" y1=\"-10\" x2=\"5\" y2=\"2\"/><line x1=\"6\" y1=\"-10\" x2=\"6\" y2=\"2\"/><line x1=\"7\" y1=\"-10\" x2=\"7\" y2=\"2\"/>\n    <line x1=\"-4\" y1=\"-10\" x2=\"8\" y2=\"-10\"/><line x1=\"-4\" y1=\"-9\" x2=\"8\" y2=\"-9\"/><line x1=\"-4\" y1=\"-8\" x2=\"8\" y2=\"-8\"/><line x1=\"-4\" y1=\"-7\" x2=\"8\" y2=\"-7\"/><line x1=\"-4\" y1=\"-6\" x2=\"8\" y2=\"-6\"/><line x1=\"-4\" y1=\"-5\" x2=\"8\" y2=\"-5\"/><line x1=\"-4\" y1=\"-4\" x2=\"8\" y2=\"-4\"/><line x1=\"-4\" y1=\"-3\" x2=\"8\" y2=\"-3\"/><line x1=\"-4\" y1=\"-2\" x2=\"8\" y2=\"-2\"/><line x1=\"-4\" y1=\"-1\" x2=\"8\" y2=\"-1\"/><line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\"/><line x1=\"-4\" y1=\"1\" x2=\"8\" y2=\"1\"/><line x1=\"-4\" y1=\"2\" x2=\"8\" y2=\"2\"/>\n  </g>\n  <line x1=\"-4\" y1=\"0\" x2=\"8\" y2=\"0\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"0\" y1=\"-10\" x2=\"0\" y2=\"2\" stroke=\"#94a3b8\" stroke-width=\"0.12\"/>\n  <line x1=\"1\" y1=\"-1\" x2=\"5\" y2=\"-4\" stroke=\"#6366f1\" stroke-width=\"0.14\"/>\n  <line x1=\"5\" y1=\"-4\" x2=\"2\" y2=\"-8\" stroke=\"#6366f1\" stroke-width=\"0.14\"/>\n  <line x1=\"2\" y1=\"-8\" x2=\"-2\" y2=\"-5\" stroke=\"#6366f1\" stroke-width=\"0.14\"/>\n  <line x1=\"-2\" y1=\"-5\" x2=\"1\" y2=\"-1\" stroke=\"#6366f1\" stroke-width=\"0.14\"/>\n  <circle cx=\"1\" cy=\"-1\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"5\" cy=\"-4\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"2\" cy=\"-8\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <circle cx=\"-2\" cy=\"-5\" r=\"0.2\" fill=\"#4f46e5\"/>\n  <text x=\"1.2\" y=\"-0.7\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">A(1, 1)</text>\n  <text x=\"5.2\" y=\"-4.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">B(b, 4)</text>\n  <text x=\"2.2\" y=\"-8.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">C(2, c)</text>\n  <text x=\"-4.2\" y=\"-5.2\" font-size=\"0.6\" font-family=\"sans-serif\" fill=\"#4f46e5\">D</text>\n</svg>\n</div>"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11i-q6f",
@@ -20837,7 +21358,8 @@
                   "explain": "Set the two equations equal, multiply by 12 to clear fractions:",
                   "work": "\\(\\dfrac{3}{4}x + \\dfrac{13}{2} = -\\dfrac{4}{3}x + \\dfrac{7}{3}\\)\n\\(9x + 78 = -16x + 28\\)\n\\(25x = -50 \\implies x = -2\\)\n\\(y = -\\dfrac{4}{3}(-2) + \\dfrac{7}{3} = \\dfrac{8+7}{3} = 5\\)\n\\(\\therefore D = (-2,\\ 5)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 5, b) 5, c) 8, d) -4/3, e) CD: 3/4, AD: -4/3, f) D(-2, 5)",
@@ -20879,7 +21401,8 @@
                   "explain": "Set \\(OP = R\\) and square both sides to remove the square root.",
                   "work": "\\(\\sqrt{x^2 + y^2} = R \\implies x^2 + y^2 = R^2 \\quad \\blacksquare\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y9-11i-q11b",
@@ -20916,7 +21439,8 @@
                   "explain": "Since \\(m_{PA} \\times m_{PB} = -1\\), the lines \\(PA\\) and \\(PB\\) are perpendicular. This proves the angle in a semicircle is \\(90°\\).",
                   "work": "\\(\\therefore\\ \\angle APB = 90^\\circ\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y9-11i-q11c",
@@ -20957,7 +21481,8 @@
                   "explain": "Simplify and substitute \\(x^2 + y^2 = R^2\\) from part (a).",
                   "work": "\\(= 2x^2 + 2y^2 + 2R^2 = 2(x^2 + y^2) + 2R^2 = 2R^2 + 2R^2 = 4R^2 \\quad \\blacksquare\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "a) Proof: OP^2 = x^2 + y^2 = R^2, b) Proof: Gradient m_PA = y/(x+R), m_PB = y/(x-R). Show m_PA * m_PB = -1, c) Proof: PA^2 + PB^2 = (x+R)^2 + y^2 + (x-R)^2 + y^2 = 2x^2 + 2y^2 + 2R^2 = 4R^2",
@@ -20997,7 +21522,8 @@
                   "explain": "Add the numerators, then divide each by 2.",
                   "work": "\\(M = \\left(\\frac{6}{2}, \\frac{6}{2}\\right) = (3, 3)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t2q1b",
@@ -21023,7 +21549,8 @@
                   "explain": "Square each term and add, then simplify — since $5$ has no square factors, this is already the exact (surd) form.",
                   "work": "\\(OC = \\sqrt{2^2 + 1^2} = \\sqrt{4+1} = \\sqrt{5}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t2q1c",
@@ -21045,7 +21572,8 @@
                   "explain": "Substitute $O(0,0)$ and $C(2,1)$, then simplify the fraction.",
                   "work": "\\(m = \\frac{1-0}{2-0} = \\frac{1}{2}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t2q1d",
@@ -21075,7 +21603,8 @@
                   "explain": "Rearrange all terms to one side to get general form $ax+by+c=0$.",
                   "work": "\\(2y - 10 - x + 4 = 0 \\implies -x + 2y - 6 = 0 \\implies x - 2y + 6 = 0\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t2q1e",
@@ -21105,7 +21634,8 @@
                   "explain": "Write the full coordinate pair.",
                   "work": "\\(A = (-6, 0)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {

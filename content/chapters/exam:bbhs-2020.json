@@ -51,7 +51,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020-mc2",
@@ -89,7 +90,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc3",
@@ -133,7 +135,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc4",
@@ -174,7 +177,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-mc5",
@@ -215,7 +219,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-mc6",
@@ -260,7 +265,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc7",
@@ -301,7 +307,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc8",
@@ -341,7 +348,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc9",
@@ -384,7 +392,8 @@
             "dnaConfidence": 1,
             "dnaReclassifiedAt": "2026-08-15T12:36:49.406Z",
             "dnaReclassifiedReason": "Question is pure complement-rule probability (\"at least one red marble, without replacement\") — zero calculus content."
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-mc10",
@@ -438,7 +447,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020-11a",
@@ -476,7 +486,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-11b",
@@ -514,7 +525,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-12a",
@@ -552,7 +564,8 @@
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-12b",
@@ -586,7 +599,8 @@
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-12c",
@@ -620,7 +634,8 @@
           "dna": {
             "dnaId": "SERIES-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-13a",
@@ -664,7 +679,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-13b",
@@ -702,7 +718,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-14a",
@@ -796,7 +813,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-14b",
@@ -894,7 +912,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-15",
@@ -938,7 +957,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-16",
@@ -976,7 +996,8 @@
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-17a",
@@ -1072,7 +1093,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-17b",
@@ -1163,7 +1185,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-17c",
@@ -1254,7 +1277,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-18a",
@@ -1351,7 +1375,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020-18b",
@@ -1392,7 +1417,8 @@
           "dna": {
             "dnaId": "CALC-TAN-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-19a",
@@ -1485,7 +1511,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-19b",
@@ -1578,7 +1605,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-20",
@@ -1669,7 +1697,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-21",
@@ -1765,7 +1794,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-22",
@@ -1813,7 +1843,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020-23",
@@ -1854,7 +1885,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-24a",
@@ -1897,7 +1929,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-24b",
@@ -1940,7 +1973,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-25a",
@@ -1981,7 +2015,8 @@
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-25b",
@@ -2030,7 +2065,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-25c",
@@ -2067,7 +2103,8 @@
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-25d",
@@ -2104,7 +2141,8 @@
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-26a",
@@ -2191,7 +2229,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-26b",
@@ -2292,7 +2331,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-26d",
@@ -2389,7 +2429,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-27a",
@@ -2430,7 +2471,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-27b",
@@ -2471,7 +2513,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-27c",
@@ -2512,7 +2555,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-28a",
@@ -2553,7 +2597,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-28b",
@@ -2594,7 +2639,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-28c",
@@ -2635,7 +2681,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-29a",
@@ -2684,7 +2731,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-29b",
@@ -2733,7 +2781,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-30a",
@@ -2773,7 +2822,8 @@
             "dnaConfidence": 1,
             "dnaReclassifiedAt": "2026-08-15T10:12:53.287Z",
             "dnaReclassifiedReason": "Misclassified as FIN-GP-01 via topic_label rule (\"Applications of APs and GPs\" chapter) — question is arithmetic (AP), not geometric."
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-30b",
@@ -2813,7 +2863,8 @@
             "dnaConfidence": 1,
             "dnaReclassifiedAt": "2026-08-15T10:12:53.358Z",
             "dnaReclassifiedReason": "Misclassified as FIN-GP-01 via topic_label rule (\"Applications of APs and GPs\" chapter) — question is arithmetic (AP), not geometric."
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-30c",
@@ -2853,7 +2904,8 @@
             "dnaConfidence": 1,
             "dnaReclassifiedAt": "2026-08-15T10:12:53.450Z",
             "dnaReclassifiedReason": "Misclassified as FIN-GP-01 via topic_label rule (\"Applications of APs and GPs\" chapter) — question is arithmetic (AP), not geometric."
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-31a",
@@ -2894,7 +2946,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-31b",
@@ -2939,7 +2992,8 @@
           },
           "alsoIn": [
             "exam:blacktownboys2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020-31d",
@@ -2980,7 +3034,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bbhs2020-31e",
@@ -3021,7 +3076,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-32a",
@@ -3059,7 +3115,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-32b",
@@ -3097,7 +3154,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020-32c",
@@ -3135,7 +3193,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bbhs2020-32d",
@@ -3173,7 +3232,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc1",
@@ -3214,7 +3274,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-mc2",
@@ -3248,7 +3309,8 @@
               "work": "\\(30°\\)"
             }
           ],
-          "hscType": "functions-and-graphs"
+          "hscType": "functions-and-graphs",
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc3",
@@ -3288,7 +3350,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc4",
@@ -3325,7 +3388,8 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
-          "hscType": "data-analysis"
+          "hscType": "data-analysis",
+          "xp": 1
         },
         {
           "id": "bbhs2020s-mc5",
@@ -3362,7 +3426,8 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
-          "hscType": "data-analysis"
+          "hscType": "data-analysis",
+          "xp": 1
         },
         {
           "id": "bbhs2020s-mc6",
@@ -3403,7 +3468,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc7",
@@ -3440,7 +3506,8 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
-          "hscType": "data-analysis"
+          "hscType": "data-analysis",
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc8",
@@ -3476,7 +3543,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc9",
@@ -3513,7 +3581,8 @@
           "meta": {
             "examPaper": "bbhs-2020"
           },
-          "hscType": "differentiation-rules"
+          "hscType": "differentiation-rules",
+          "xp": 2
         },
         {
           "id": "bbhs2020s-mc10",
@@ -3560,7 +3629,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-11a",
@@ -3600,7 +3670,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-11b",
@@ -3640,7 +3711,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-12a",
@@ -3680,7 +3752,8 @@
           "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-12c",
@@ -3710,7 +3783,8 @@
               "work": "\\(S_{35} = \\frac{35 \\times 176}{2} = \\frac{6160}{2} = 3080\\)"
             }
           ],
-          "hscType": "arithmetic-series"
+          "hscType": "arithmetic-series",
+          "xp": 1
         },
         {
           "id": "bbhs2020s-13a",
@@ -3750,7 +3824,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-13b",
@@ -3784,7 +3859,8 @@
               "work": "\\(x \\le -1\\) or \\(x \\ge 4\\)"
             }
           ],
-          "hscType": "functions-and-graphs"
+          "hscType": "functions-and-graphs",
+          "xp": 2
         },
         {
           "id": "bbhs2020s-14a",
@@ -3825,7 +3901,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-14b",
@@ -3866,7 +3943,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-15",
@@ -3906,7 +3984,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-16",
@@ -3946,7 +4025,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-17a",
@@ -3988,7 +4068,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-17b",
@@ -4028,7 +4109,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-17c",
@@ -4068,7 +4150,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-18a",
@@ -4108,7 +4191,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-18b",
@@ -4149,7 +4233,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-19a",
@@ -4189,7 +4274,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-19b",
@@ -4229,7 +4315,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-20",
@@ -4269,7 +4356,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-21",
@@ -4311,7 +4399,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-22",
@@ -4355,7 +4444,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-23",
@@ -4396,7 +4486,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-24a",
@@ -4438,7 +4529,8 @@
           "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-24b",
@@ -4480,7 +4572,8 @@
           "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-25a",
@@ -4521,7 +4614,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-25b",
@@ -4562,7 +4656,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-25c",
@@ -4599,7 +4694,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-25d",
@@ -4636,7 +4732,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-26a",
@@ -4672,7 +4769,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-26b",
@@ -4716,7 +4814,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-26d",
@@ -4756,7 +4855,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-27a",
@@ -4797,7 +4897,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-27b",
@@ -4838,7 +4939,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-27c",
@@ -4879,7 +4981,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-28a",
@@ -4920,7 +5023,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-28b",
@@ -4961,7 +5065,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-28c",
@@ -5002,7 +5107,8 @@
           "hscType": "continuous-distributions",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-29a",
@@ -5050,7 +5156,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-29b",
@@ -5098,7 +5205,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-30a",
@@ -5138,7 +5246,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-30b",
@@ -5172,7 +5281,8 @@
               "work": "The 36th row."
             }
           ],
-          "hscType": "financial-mathematics"
+          "hscType": "financial-mathematics",
+          "xp": 2
         },
         {
           "id": "bbhs2020s-30c",
@@ -5206,7 +5316,8 @@
               "work": "\\(40\\) rows"
             }
           ],
-          "hscType": "financial-mathematics"
+          "hscType": "financial-mathematics",
+          "xp": 3
         },
         {
           "id": "bbhs2020s-31a",
@@ -5247,7 +5358,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-31b",
@@ -5288,7 +5400,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-31d",
@@ -5329,7 +5442,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bbhs2020s-31e",
@@ -5370,7 +5484,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-32a",
@@ -5410,7 +5525,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-32b",
@@ -5450,7 +5566,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bbhs2020s-32c",
@@ -5490,7 +5607,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bbhs2020s-32d",
@@ -5530,7 +5648,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:blacktownboys2020similar"
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

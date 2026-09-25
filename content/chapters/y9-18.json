@@ -45,7 +45,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sg2022-q7b-ii",
@@ -86,7 +87,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             }
           ],
           "meta": {
@@ -145,7 +147,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         }
       ]
     }

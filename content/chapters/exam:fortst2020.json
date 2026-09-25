@@ -50,7 +50,8 @@
           "dna": {
             "dnaId": "SEQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         }
       ]
     }

@@ -44,7 +44,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 1
         }
       ]
     }

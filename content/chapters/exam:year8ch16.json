@@ -38,7 +38,8 @@
                   "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
                   "work": "\\\\text{Probability} = \\\\frac{13}{25} \\\\text{ (Final answer)}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-16a-q12b",
@@ -64,7 +65,8 @@
                   "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
                   "work": "\\\\text{Probability} = \\\\frac{12}{25} \\\\text{ (Final answer)}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-16a-q12c",
@@ -90,7 +92,8 @@
                   "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
                   "work": "\\\\text{Probability} = \\\\frac{7}{25} \\\\text{ (Final answer)}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers.",

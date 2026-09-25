@@ -36,7 +36,8 @@
               "work": "\\(\\frac{\\sin \\theta}{\\cos \\theta} \\times \\frac{\\cos \\theta}{1} = \\sin \\theta\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-6k-q3b",
@@ -67,7 +68,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4a",
@@ -97,7 +99,8 @@
               "work": "1st quadrant: \\(x = 30^\\circ\\)<br>4th quadrant: \\(x = 360^\\circ - 30^\\circ = 330^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"211.6\" y1=\"20\" x2=\"211.6\" y2=\"230\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  \n  <!-- Beautiful SVG Fraction for x = sqrt(3)/2 -->\n  <text x=\"215\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">x =</text>\n  <text x=\"246\" y=\"24\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">√3</text>\n  <line x1=\"243\" y1=\"28\" x2=\"265\" y2=\"28\" stroke=\"#f57f17\" stroke-width=\"1.5\" />\n  <text x=\"249\" y=\"42\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">2</text>\n\n  <line x1=\"125\" y1=\"125\" x2=\"211.6\" y2=\"75\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <circle cx=\"211.6\" cy=\"75\" r=\"4\" fill=\"#1565c0\" />\n  <path d=\"M 145 125 A 20 20 0 0 0 142.3 115.0\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <text x=\"158.8\" y=\"115.9\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1565c0\" dominant-baseline=\"middle\" text-anchor=\"middle\">30°</text>\n  <line x1=\"125\" y1=\"125\" x2=\"211.6\" y2=\"175\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <circle cx=\"211.6\" cy=\"175\" r=\"4\" fill=\"#d84315\" />\n  <path d=\"M 160 125 A 35 35 0 1 0 155.3 142.5\" fill=\"none\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <text x=\"71.9\" y=\"110.8\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#d84315\" dominant-baseline=\"middle\" text-anchor=\"middle\">330°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4c",
@@ -127,7 +130,8 @@
               "work": "1st quadrant: \\(x = 45^\\circ\\)<br>3rd quadrant: \\(x = 180^\\circ + 45^\\circ = 225^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"25\" y1=\"225\" x2=\"225\" y2=\"25\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  <text x=\"210\" y=\"20\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">y = x</text>\n  <line x1=\"125\" y1=\"125\" x2=\"195.7\" y2=\"54.3\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <circle cx=\"195.7\" cy=\"54.3\" r=\"4\" fill=\"#2e7d32\" />\n  <path d=\"M 145 125 A 20 20 0 0 0 139.1 110.9\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <text x=\"157.3\" y=\"111.6\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#2e7d32\" dominant-baseline=\"middle\" text-anchor=\"middle\">45°</text>\n  <line x1=\"125\" y1=\"125\" x2=\"54.3\" y2=\"195.7\" stroke=\"#0277bd\" stroke-width=\"2\" />\n  <circle cx=\"54.3\" cy=\"195.7\" r=\"4\" fill=\"#0277bd\" />\n  <path d=\"M 155 125 A 30 30 0 1 0 103.8 146.2\" fill=\"none\" stroke=\"#0277bd\" stroke-width=\"2\" />\n  <text x=\"107.8\" y=\"83.4\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#0277bd\" dominant-baseline=\"middle\" text-anchor=\"middle\">225°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4e",
@@ -157,7 +161,8 @@
               "work": "1st quadrant: \\(x = 60^\\circ\\)<br>3rd quadrant: \\(x = 180^\\circ + 60^\\circ = 240^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"67.3\" y1=\"225\" x2=\"182.7\" y2=\"25\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  <text x=\"190\" y=\"35\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">y = √3x</text>\n  <line x1=\"125\" y1=\"125\" x2=\"175\" y2=\"38.4\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <circle cx=\"175\" cy=\"38.4\" r=\"4\" fill=\"#2e7d32\" />\n  <path d=\"M 145 125 A 20 20 0 0 0 135.0 107.7\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <text x=\"155.3\" y=\"107.5\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#2e7d32\" dominant-baseline=\"middle\" text-anchor=\"middle\">60°</text>\n  <line x1=\"125\" y1=\"125\" x2=\"75\" y2=\"211.6\" stroke=\"#0277bd\" stroke-width=\"2\" />\n  <circle cx=\"75\" cy=\"211.6\" r=\"4\" fill=\"#0277bd\" />\n  <path d=\"M 155 125 A 30 30 0 1 0 110.0 151.0\" fill=\"none\" stroke=\"#0277bd\" stroke-width=\"2\" />\n  <text x=\"102.5\" y=\"86.0\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#0277bd\" dominant-baseline=\"middle\" text-anchor=\"middle\">240°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4g",
@@ -191,7 +196,8 @@
               "work": "3rd quadrant: \\(x = 180^\\circ + 30^\\circ = 210^\\circ\\)<br>4th quadrant: \\(x = 360^\\circ - 30^\\circ = 330^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"10\" y1=\"175\" x2=\"240\" y2=\"175\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  \n  <!-- Beautiful SVG Fraction for y = -1/2 -->\n  <text x=\"175\" y=\"195\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">y = -</text>\n  <text x=\"212\" y=\"188\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">1</text>\n  <line x1=\"206\" y1=\"192\" x2=\"225\" y2=\"192\" stroke=\"#f57f17\" stroke-width=\"1.5\" />\n  <text x=\"211\" y=\"206\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">2</text>\n\n  <line x1=\"125\" y1=\"125\" x2=\"38.4\" y2=\"175\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <circle cx=\"38.4\" cy=\"175\" r=\"4\" fill=\"#1565c0\" />\n  <path d=\"M 145 125 A 20 20 0 1 0 107.7 135.0\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <text x=\"115.9\" y=\"91.2\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1565c0\" dominant-baseline=\"middle\" text-anchor=\"middle\">210°</text>\n  <line x1=\"125\" y1=\"125\" x2=\"211.6\" y2=\"175\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <circle cx=\"211.6\" cy=\"175\" r=\"4\" fill=\"#d84315\" />\n  <path d=\"M 155 125 A 30 30 0 1 0 151.0 140.0\" fill=\"none\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <text x=\"76.7\" y=\"112.1\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#d84315\" dominant-baseline=\"middle\" text-anchor=\"middle\">330°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4h",
@@ -225,7 +231,8 @@
               "work": "2nd quadrant: \\(x = 180^\\circ - 45^\\circ = 135^\\circ\\)<br>3rd quadrant: \\(x = 180^\\circ + 45^\\circ = 225^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"54.3\" y1=\"10\" x2=\"54.3\" y2=\"240\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  \n  <!-- Beautiful SVG Fraction for x = -1/sqrt(2) -->\n  <text x=\"5\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">x = -</text>\n  <text x=\"44\" y=\"17\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">1</text>\n  <line x1=\"39\" y1=\"21\" x2=\"58\" y2=\"21\" stroke=\"#f57f17\" stroke-width=\"1.5\" />\n  <text x=\"39\" y=\"35\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">√2</text>\n\n  <line x1=\"125\" y1=\"125\" x2=\"54.3\" y2=\"54.3\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <circle cx=\"54.3\" cy=\"54.3\" r=\"4\" fill=\"#1565c0\" />\n  <path d=\"M 145 125 A 20 20 0 0 0 110.9 110.9\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <text x=\"138.4\" y=\"92.7\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1565c0\" dominant-baseline=\"middle\" text-anchor=\"middle\">135°</text>\n  <line x1=\"125\" y1=\"125\" x2=\"54.3\" y2=\"195.7\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <circle cx=\"54.3\" cy=\"195.7\" r=\"4\" fill=\"#d84315\" />\n  <path d=\"M 155 125 A 30 30 0 1 0 103.8 146.2\" fill=\"none\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <text x=\"107.8\" y=\"83.4\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#d84315\" dominant-baseline=\"middle\" text-anchor=\"middle\">225°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6k-q4i",
@@ -255,7 +262,8 @@
               "work": "Q1: \\(60^\\circ\\)<br>Q2: \\(180^\\circ - 60^\\circ = 120^\\circ\\)<br>Q3: \\(180^\\circ + 60^\\circ = 240^\\circ\\)<br>Q4: \\(360^\\circ - 60^\\circ = 300^\\circ\\)<br><div style=\"text-align: center; margin: 20px 0;\">\n<svg width=\"250\" height=\"250\" viewBox=\"0 0 250 250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle cx=\"125\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"#ccc\" stroke-width=\"2\" />\n  <line x1=\"10\" y1=\"125\" x2=\"240\" y2=\"125\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"125\" y1=\"10\" x2=\"125\" y2=\"240\" stroke=\"#999\" stroke-width=\"1.5\" />\n  <line x1=\"10\" y1=\"38.4\" x2=\"240\" y2=\"38.4\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  <line x1=\"10\" y1=\"211.6\" x2=\"240\" y2=\"211.6\" stroke=\"#ffca28\" stroke-width=\"2\" stroke-dasharray=\"4,4\" />\n  \n  <text x=\"175\" y=\"15\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">y =</text>\n  <text x=\"206\" y=\"9\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">√3</text>\n  <line x1=\"204\" y1=\"13\" x2=\"225\" y2=\"13\" stroke=\"#f57f17\" stroke-width=\"1.5\" />\n  <text x=\"210\" y=\"27\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">2</text>\n  \n  <text x=\"160\" y=\"235\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#f57f17\" font-weight=\"bold\">y = -</text>\n  <text x=\"200\" y=\"227\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">√3</text>\n  <line x1=\"198\" y1=\"231\" x2=\"219\" y2=\"231\" stroke=\"#f57f17\" stroke-width=\"1.5\" />\n  <text x=\"204\" y=\"245\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#f57f17\" font-weight=\"bold\">2</text>\n\n  <line x1=\"125\" y1=\"125\" x2=\"175\" y2=\"38.4\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <circle cx=\"175\" cy=\"38.4\" r=\"4\" fill=\"#1565c0\" />\n  <path d=\"M 140 125 A 15 15 0 0 0 132.5 112.0\" fill=\"none\" stroke=\"#1565c0\" stroke-width=\"2\" />\n  <text x=\"146.7\" y=\"112.5\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1565c0\" dominant-baseline=\"middle\" text-anchor=\"middle\">60°</text>\n  \n  <line x1=\"125\" y1=\"125\" x2=\"75\" y2=\"38.4\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <circle cx=\"75\" cy=\"38.4\" r=\"4\" fill=\"#d84315\" />\n  <path d=\"M 150 125 A 25 25 0 0 0 112.5 103.3\" fill=\"none\" stroke=\"#d84315\" stroke-width=\"2\" />\n  <text x=\"142.5\" y=\"94.7\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#d84315\" dominant-baseline=\"middle\" text-anchor=\"middle\">120°</text>\n  \n  <line x1=\"125\" y1=\"125\" x2=\"75\" y2=\"211.6\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <circle cx=\"75\" cy=\"211.6\" r=\"4\" fill=\"#2e7d32\" />\n  <path d=\"M 160 125 A 35 35 0 1 0 107.5 155.3\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"2\" />\n  <text x=\"102.5\" y=\"86.0\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#2e7d32\" dominant-baseline=\"middle\" text-anchor=\"middle\">240°</text>\n  \n  <line x1=\"125\" y1=\"125\" x2=\"175\" y2=\"211.6\" stroke=\"#8e24aa\" stroke-width=\"2\" />\n  <circle cx=\"175\" cy=\"211.6\" r=\"4\" fill=\"#8e24aa\" />\n  <path d=\"M 170 125 A 45 45 0 1 0 147.5 164.0\" fill=\"none\" stroke=\"#8e24aa\" stroke-width=\"2\" />\n  <text x=\"77.4\" y=\"97.5\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#8e24aa\" dominant-baseline=\"middle\" text-anchor=\"middle\">300°</text>\n</svg>\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

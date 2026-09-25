@@ -216,7 +216,8 @@
               "work": "The total angle \\(\\angle PQR = 95^\\circ\\). We know \\(\\angle OQR = 35^\\circ\\).\n\n\\(\\angle PQO = 95^\\circ - 35^\\circ = 60^\\circ\\)\n\n\\(\\Delta OPQ\\) is isosceles (\\(OP = OQ\\)), so the base angles are equal.\n\n\\(\\beta = \\angle PQO\\)\n\n\\(\\beta = 60^\\circ\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         }
       ]
     }

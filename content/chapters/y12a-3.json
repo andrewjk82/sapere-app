@@ -34,7 +34,8 @@
               "work": "Since \\( 8 > 0 \\), the gradient is positive, meaning the function is increasing at \\( x = 2 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q2b",
@@ -62,7 +63,8 @@
               "work": "Since \\( 1 > 0 \\), the gradient is positive, meaning the function is increasing at \\( x = 2 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q2c",
@@ -90,7 +92,8 @@
               "work": "Since \\( -1 < 0 \\), the gradient is negative, meaning the function is decreasing at \\( x = 3 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q2d",
@@ -118,7 +121,8 @@
               "work": "Since \\( y'(2) = 0 \\), the gradient is zero, meaning the function is stationary at \\( x = 2 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q2e",
@@ -146,7 +150,8 @@
               "work": "Since \\( 14 > 0 \\), the function is increasing at \\( x = -1 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q2f",
@@ -174,7 +179,8 @@
               "work": "Since \\( y'(1) = 0 \\), the function is stationary at \\( x = 1 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3a",
@@ -203,7 +209,8 @@
               "work": "\\[ f'(x) = 2x - 4 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3bi",
@@ -227,7 +234,8 @@
               "work": "Since \\( -4 < 0 \\), the function is decreasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3bii",
@@ -251,7 +259,8 @@
               "work": "Since \\( -2 < 0 \\), the function is decreasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3biii",
@@ -275,7 +284,8 @@
               "work": "Since \\( f'(2) = 0 \\), the function is stationary."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3biv",
@@ -299,7 +309,8 @@
               "work": "Since \\( 2 > 0 \\), the function is increasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q3bv",
@@ -323,7 +334,8 @@
               "work": "Since \\( 4 > 0 \\), the function is increasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4a",
@@ -352,7 +364,8 @@
               "work": "\\[ f'(x) = 3x^2 - 6x - 9 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4bi",
@@ -376,7 +389,8 @@
               "work": "Since \\( 15 > 0 \\), the function is increasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4bii",
@@ -400,7 +414,8 @@
               "work": "Since \\( f'(-1) = 0 \\), the function is stationary."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4biii",
@@ -424,7 +439,8 @@
               "work": "Since \\( -9 < 0 \\), the function is decreasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4biv",
@@ -448,7 +464,8 @@
               "work": "Since \\( f'(3) = 0 \\), the function is stationary."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q4bv",
@@ -472,7 +489,8 @@
               "work": "Since \\( 15 > 0 \\), the function is increasing."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5a",
@@ -497,7 +515,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x - 6 = 0 \\]\n\\[ 2x = 6 \\]\n\\[ x = 3 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5b",
@@ -522,7 +541,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x - 8 = 0 \\]\n\\[ 2x = 8 \\]\n\\[ x = 4 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5c",
@@ -547,7 +567,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 2x + 4 = 0 \\]\n\\[ 2x = -4 \\]\n\\[ x = -2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5d",
@@ -572,7 +593,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 6x - 12 = 0 \\]\n\\[ 6x = 12 \\]\n\\[ x = 2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5e",
@@ -597,7 +619,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 3x^2 - 12x = 0 \\]\nFactor out the common term \\( 3x \\):\n\\[ 3x(x - 4) = 0 \\]\nSo, \\( x = 0 \\) or \\( x = 4 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q5f",
@@ -622,7 +645,8 @@
               "work": "A stationary point occurs when \\( y' = 0 \\):\n\\[ 3x^2 - 27 = 0 \\]\n\\[ 3x^2 = 27 \\]\n\\[ x^2 = 9 \\]\nSo, \\( x = -3 \\) or \\( x = 3 \\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q6a",
@@ -648,7 +672,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q6b",
@@ -674,7 +699,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q6c",
@@ -700,7 +726,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q6d",
@@ -726,7 +753,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q7",
@@ -758,7 +786,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(0) > 0 \\), the curve is increasing."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q7b",
@@ -784,7 +813,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(0) < 0 \\), the curve is decreasing."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q7c",
@@ -810,7 +840,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(0) = 0 \\), the curve is stationary."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -844,7 +875,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(1) = 0 \\), the curve is stationary."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q8b",
@@ -870,7 +902,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(1) > 0 \\), the curve is increasing."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q8c",
@@ -896,7 +929,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(1) < 0 \\), the curve is decreasing."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -930,7 +964,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(2) > 0 \\), the curve is increasing."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q9b",
@@ -956,7 +991,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(2) < 0 \\), the curve is decreasing."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q9c",
@@ -982,7 +1018,8 @@
                   "explain": "Determine status from the sign of the derivative.",
                   "work": "Since \\( f'(2) > 0 \\), the curve is increasing."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1012,7 +1049,8 @@
               "explain": "Determine status from the sign of the derivative.",
               "work": "Since \\( f'(1) > 0 \\), the curve is increasing."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q10b",
@@ -1040,7 +1078,8 @@
               "explain": "Determine status from the sign of the derivative.",
               "work": "Since \\( f'(1) < 0 \\), the curve is decreasing."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q10c",
@@ -1068,7 +1107,8 @@
               "explain": "Determine status from the sign of the derivative.",
               "work": "Since \\( f'(1) > 0 \\), the curve is increasing."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q11",
@@ -1092,7 +1132,8 @@
                   "explain": "Differentiate the terms.",
                   "work": "Apply the power rule to \\( f(x) = 6x - x^2 \\):\n\\[ f'(x) = 6 - 2x \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q11bi",
@@ -1114,7 +1155,8 @@
                   "explain": "Solve the inequality algebraically.",
                   "work": "Move \\( 2x \\) to the other side to keep the variable positive:\n\\[ 6 > 2x \\]\nDivide both sides by 2:\n\\[ 3 > x \\]\nWhich is the same as:\n\\[ x < 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q11bii",
@@ -1136,7 +1178,8 @@
                   "explain": "Solve the inequality algebraically.",
                   "work": "Move \\( 2x \\) to the other side:\n\\[ 6 < 2x \\]\nDivide both sides by 2:\n\\[ 3 < x \\]\nWhich is the same as:\n\\[ x > 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q11biii",
@@ -1158,7 +1201,8 @@
                   "explain": "Solve the equation.",
                   "work": "Move \\( 2x \\) to the other side:\n\\[ 6 = 2x \\]\nDivide by 2:\n\\[ x = 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q11c",
@@ -1180,7 +1224,8 @@
                   "explain": "Interpret the geometric shape.",
                   "work": "From the previous parts, we know:\n- \\( f'(3) = 0 \\) (stationary point)\n- \\( f'(x) > 0 \\) for \\( x < 3 \\) (increasing before the point)\n- \\( f'(x) < 0 \\) for \\( x > 3 \\) (decreasing after the point)\nSince the curve goes up, peaks at \\( (3,9) \\), and then goes down, this point is a local maximum, and the shape is a concave-down parabola."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1206,7 +1251,8 @@
                   "explain": "Differentiate using power rule.",
                   "work": "Apply the power rule to \\( f(x) = x^2 - 6x + 8 \\):\n\\[ f'(x) = 2x - 6 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q12bi",
@@ -1228,7 +1274,8 @@
                   "explain": "Solve the inequality algebraically.",
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x > 6 \\]\nDivide both sides by 2:\n\\[ x > 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q12bii",
@@ -1250,7 +1297,8 @@
                   "explain": "Solve the inequality algebraically.",
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x < 6 \\]\nDivide both sides by 2:\n\\[ x < 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q12biii",
@@ -1272,7 +1320,8 @@
                   "explain": "Solve the equation.",
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x = 6 \\]\nDivide by 2:\n\\[ x = 3 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q12c",
@@ -1294,7 +1343,8 @@
                   "explain": "Interpret the geometric shape.",
                   "work": "From the previous parts, we know:\n- \\( f'(3) = 0 \\) (stationary point)\n- \\( f'(x) < 0 \\) for \\( x < 3 \\) (decreasing before the point)\n- \\( f'(x) > 0 \\) for \\( x > 3 \\) (increasing after the point)\nSince the curve goes down, hits bottom at \\( (3,-1) \\), and then goes up, this point is a local minimum, and the shape is a concave-up parabola."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1328,7 +1378,8 @@
                   "explain": "Factor the quadratic trinomial.",
                   "work": "Find two numbers that multiply to -5 and add to -4 (which are -5 and +1):\n\\[ f'(x) = 3(x-5)(x+1) \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q13b",
@@ -1350,7 +1401,8 @@
                   "explain": "Determine where the derivative is positive.",
                   "work": "A function is increasing where \\( f'(x) > 0 \\).\nSince it is a concave-up parabola, it lies above the x-axis on the outer regions:\n\\[ x < -1 \\quad \\text{or} \\quad x > 5 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1376,7 +1428,8 @@
                   "explain": "Differentiate terms using power rule.",
                   "work": "Apply the power rule to \\( f(x) = x^3 + x^2 - 5x + 3 \\):\n\\[ f'(x) = 3x^2 + 2x - 5 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q14b",
@@ -1402,7 +1455,8 @@
                   "explain": "Solve for the roots.",
                   "work": "Set each bracket to zero:\n\\[ 3x+5 = 0 \\implies x = -\\frac{5}{3} \\]\n\\[ x-1 = 0 \\implies x = 1 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q14c",
@@ -1424,7 +1478,8 @@
                   "explain": "Identify the x-intercepts.",
                   "work": "From the previous part, the zeroes of \\( f'(x) \\) are \\( -5/3 \\) and \\( 1 \\). Therefore, the graph crosses the x-axis at these points."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q14d",
@@ -1446,7 +1501,8 @@
                   "explain": "Solve the inequality using the graph.",
                   "work": "We know \\( y = f'(x) \\) is a concave-up parabola with x-intercepts at \\( -5/3 \\) and \\( 1 \\).\nThe parabola lies below the x-axis (is negative) *between* the two roots:\n\\[ -\\frac{5}{3} < x < 1 \\]"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ]
         },
@@ -1472,7 +1528,8 @@
               "explain": "Solve the inequality \\( y' > 0 \\).",
               "work": "Set the derivative greater than zero to find where the function is increasing:\n\\[ 2x - 6 > 0 \\]\nMove 6 to the other side:\n\\[ 2x > 6 \\]\nDivide by 2:\n\\[ x > 3 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q15b",
@@ -1496,7 +1553,8 @@
               "explain": "Solve the inequality \\( y' > 0 \\).",
               "work": "Set the derivative greater than zero:\n\\[ -8 - 2x > 0 \\]\nMove \\( 2x \\) to the other side to keep the coefficient positive:\n\\[ -8 > 2x \\]\nDivide by 2:\n\\[ -4 > x \\]\nWhich is the same as:\n\\[ x < -4 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q15c",
@@ -1520,7 +1578,8 @@
               "explain": "Solve the quadratic inequality \\( y' > 0 \\).",
               "work": "Set the derivative greater than zero:\n\\[ 3x^2 - 12 > 0 \\]\nDivide by 3:\n\\[ x^2 - 4 > 0 \\]\nFactor as a difference of two squares:\n\\[ (x - 2)(x + 2) > 0 \\]\nThis is a concave-up parabola with roots at \\( x = 2 \\) and \\( x = -2 \\). It is positive on the outside of the roots:\n\\[ x < -2 \\quad \\text{or} \\quad x > 2 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q15d",
@@ -1544,7 +1603,8 @@
               "explain": "Solve the quadratic inequality \\( y' > 0 \\).",
               "work": "Set the derivative greater than zero:\n\\[ 3x^2 - 12x > 0 \\]\nFactor out \\( 3x \\):\n\\[ 3x(x - 4) > 0 \\]\nThis is a concave-up parabola with roots at \\( x = 0 \\) and \\( x = 4 \\). It is positive on the outside of the roots:\n\\[ x < 0 \\quad \\text{or} \\quad x > 4 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q16a",
@@ -1581,7 +1641,8 @@
               "explain": "Differentiate to find the shape of the derivative.",
               "work": "The derivative of a positive quadratic is a linear function with a positive slope (e.g. \\( y' = 2x \\)). This matches Graph III."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q16b",
@@ -1618,7 +1679,8 @@
               "explain": "Differentiate to find the shape of the derivative.",
               "work": "The derivative of a positive cubic is a positive quadratic (a parabola opening upwards). It has roots where the original cubic has turning points (around \\( x = -1 \\) and \\( x = 1 \\)). This matches Graph I."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q16c",
@@ -1655,7 +1717,8 @@
               "explain": "Differentiate to find the shape of the derivative.",
               "work": "The derivative of a negative quadratic is a linear function with a negative slope (e.g. \\( y' = -2x \\)). This matches Graph II."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q16d",
@@ -1692,7 +1755,8 @@
               "explain": "Differentiate to find the shape of the derivative.",
               "work": "The derivative of a negative cubic is a negative quadratic (a parabola opening downwards). It has roots at the turning points of the cubic (around \\( x = -1 \\) and \\( x = 1 \\)). This matches Graph IV."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3a-q17",
@@ -1720,7 +1784,8 @@
                   "explain": "Differentiate using the power rule.",
                   "work": "\\[ f'(x) = -2(-1)x^{-2} = 2x^{-2} = \\frac{2}{x^2} \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q17b",
@@ -1738,7 +1803,8 @@
                   "explain": "Analyze the sign of the derivative.",
                   "work": "For all \\( x \\neq 0 \\), the denominator \\( x^2 \\) is strictly positive.\nTherefore, \\( f'(x) = \\frac{2}{x^2} > 0 \\) for all \\( x \\) in the domain.\nSince the derivative is always positive, the function is always increasing on its domain."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3a-q17c",
@@ -1769,7 +1835,8 @@
                   "explain": "Explain the apparent contradiction.",
                   "work": "Although \\( f(-1) > f(2) \\), this does not contradict the fact that the function is strictly increasing.\nThe function has a vertical asymptote at \\( x = 0 \\), which breaks the domain into two separate branches.\nThe property of being 'increasing' applies within each continuous interval (branch), not across the asymptote."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1799,7 +1866,8 @@
                   "explain": "Apply the quotient rule.",
                   "work": "\\[ f'(x) = \\frac{u'v - uv'}{v^2} \\]\n\\[ f'(x) = \\frac{3(x-4) - (3x)(1)}{(x-4)^2} \\]\n\\[ f'(x) = \\frac{3x - 12 - 3x}{(x-4)^2} \\]\n\\[ f'(x) = -\\frac{12}{(x-4)^2} \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q18b",
@@ -1821,7 +1889,8 @@
                   "explain": "Evaluate the denominator and overall sign.",
                   "work": "For any \\( x \\neq 4 \\), the square \\( (x-4)^2 \\) is strictly positive.\nTherefore, a negative numerator (-12) divided by a positive denominator is strictly negative.\nSince \\( f'(x) < 0 \\) for all \\( x \\neq 4 \\), the function is always decreasing."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ]
         },
@@ -1855,7 +1924,8 @@
                   "explain": "Simplify the numerator.",
                   "work": "\\[ f'(x) = \\frac{3x^4 + 9x^2 - 2x^4}{(x^2+3)^2} \\]\n\\[ f'(x) = \\frac{x^4 + 9x^2}{(x^2+3)^2} = \\frac{x^2(x^2+9)}{(x^2+3)^2} \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q19b",
@@ -1877,7 +1947,8 @@
                   "explain": "Examine the remaining term \\( x^2 \\).",
                   "work": "The term \\( x^2 \\) is strictly positive for all \\( x \\neq 0 \\), and equals 0 at \\( x = 0 \\).\nThus, \\( f'(x) > 0 \\) (increasing) for all \\( x \\neq 0 \\).\nAt \\( x = 0 \\), \\( f'(0) = 0 \\) (stationary)."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "meta": {
@@ -1910,7 +1981,8 @@
                   "explain": "Differentiate term by term.",
                   "work": "\\[ f'(x) = \\frac{1}{3}(3x^2) + 2x + 2 \\]\n\\[ f'(x) = x^2 + 2x + 2 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q20b",
@@ -1932,7 +2004,8 @@
                   "explain": "Analyze the sign of the completed square.",
                   "work": "Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\),\n\\[ (x+1)^2 + 1 \\geq 1 > 0 \\]\nBecause \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing everywhere."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3a-q20c",
@@ -1954,7 +2027,8 @@
                   "explain": "Deduce the number of x-intercepts.",
                   "work": "Since \\( f(-3) < 0 \\) and \\( f(0) > 0 \\), the curve crosses the x-axis at least once.\nFurthermore, because the function is strictly increasing from \\( -\\infty \\) to \\( \\infty \\), it cannot cross back down.\nTherefore, there is exactly one x-intercept."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1993,7 +2067,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q21b",
@@ -2030,7 +2105,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q21c",
@@ -2067,7 +2143,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q21e",
@@ -2104,7 +2181,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q21g",
@@ -2141,7 +2219,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q21h",
@@ -2178,7 +2257,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3a-q22",
@@ -2202,7 +2282,8 @@
                   "explain": "Differentiate the function.",
                   "work": "\\[ f(x) = 4 - 7x + 3x^2 - x^3 \\]\n\\[ f'(x) = -7 + 6x - 3x^2 \\]\n\\[ f'(x) = -3x^2 + 6x - 7 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q22b",
@@ -2224,7 +2305,8 @@
                   "explain": "Analyze the result.",
                   "work": "Since \\( \\Delta < 0 \\), the quadratic has no real roots and does not cross the x-axis.\nBecause the leading coefficient is negative (-3), the parabola opens downwards and is always below the x-axis.\nTherefore, \\( f'(x) < 0 \\) for all \\( x \\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3a-q22c",
@@ -2246,7 +2328,8 @@
                   "explain": "Determine the number of solutions.",
                   "work": "A continuous, strictly decreasing cubic function will cross the x-axis exactly once.\nThus, the equation \\( 4 - 7x + 3x^2 - x^3 = 0 \\) has exactly 1 solution."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -2288,7 +2371,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "bb2020-q8",
@@ -2328,7 +2412,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hh2020-q16",
@@ -2369,7 +2454,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -2405,7 +2491,8 @@
               "work": "2x = 8 \\implies x = 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q1b",
@@ -2434,7 +2521,8 @@
               "work": "2x = -6 \\implies x = -3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q1c",
@@ -2467,7 +2555,8 @@
               "work": "x = 2 \\quad \\text{or} \\quad x = -2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2a",
@@ -2500,7 +2589,8 @@
               "work": "\\text{Stationary point: } (3, 1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2b",
@@ -2533,7 +2623,8 @@
               "work": "\\text{Stationary point: } (5, 0)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2c",
@@ -2566,7 +2657,8 @@
               "work": "\\text{Stationary point: } (2, -5)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2d",
@@ -2599,7 +2691,8 @@
               "work": "\\text{Stationary point: } (2, 1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2e",
@@ -2632,7 +2725,8 @@
               "work": "y(4) = 4^3 - 6(4)^2 = 64 - 96 = -32 \\implies (4, -32)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q2f",
@@ -2665,7 +2759,8 @@
               "work": "\\text{Stationary point: } (2, -43)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q3a",
@@ -2715,7 +2810,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q3b",
@@ -2765,7 +2861,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q3c",
@@ -2815,7 +2912,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q3d",
@@ -2865,7 +2963,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q4a",
@@ -2897,7 +2996,8 @@
               "work": "\\text{Slope changes } - \\rightarrow 0 \\rightarrow + \\implies \\text{Minimum}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q4b",
@@ -2929,7 +3029,8 @@
               "work": "\\text{Slope changes } + \\rightarrow 0 \\rightarrow - \\implies \\text{Maximum}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q4c",
@@ -2961,7 +3062,8 @@
               "work": "\\text{Slope changes from negative to zero to positive } \\implies \\text{Minimum}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q4d",
@@ -2993,7 +3095,8 @@
               "work": "\\text{Slope changes } + \\rightarrow 0 \\rightarrow + \\implies \\text{Stationary point of inflection}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q5a",
@@ -3039,7 +3142,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q5b",
@@ -3085,7 +3189,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3b-q6",
@@ -3113,7 +3218,8 @@
                   "explain": "Factor out the greatest common term \\( 6x \\).",
                   "work": "\\frac{dy}{dx} = 6x(x - 2)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3b-q6b",
@@ -3160,7 +3266,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -3194,7 +3301,8 @@
                   "explain": "Factor the difference of two squares.",
                   "work": "\\frac{dy}{dx} = 3(3 - x)(3 + x)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3b-q7b",
@@ -3241,7 +3349,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true
@@ -3293,7 +3402,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q8b",
@@ -3342,7 +3452,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q8c",
@@ -3391,7 +3502,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q8d",
@@ -3440,7 +3552,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q9",
@@ -3468,7 +3581,8 @@
                   "explain": "Factor out the common term \\( (x-3)^2 \\).",
                   "work": "\\begin{aligned} y' &= (x-3)^2 [ (x-3) + 3x ] \\\\ &= (x-3)^2(4x - 3) \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3b-q9b",
@@ -3511,7 +3625,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -3537,7 +3652,8 @@
               "explain": "A horizontal tangent means the derivative is zero at that point. Set \\( \\frac{dy}{dx} = 0 \\) when \\( x = 3 \\).",
               "work": "\\begin{aligned} 2(3) + a &= 0 \\\\ 6 + a &= 0 \\\\ a &= -6 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q12b",
@@ -3561,7 +3677,8 @@
               "explain": "A turning point means the derivative is zero at that point. Set \\( y' = 0 \\) when \\( x = -2 \\).",
               "work": "\\begin{aligned} 2(-2) + a &= 0 \\\\ -4 + a &= 0 \\\\ a &= 4 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q13aa",
@@ -3585,7 +3702,8 @@
               "explain": "A turning point at \\( (-1, 2) \\) means \\( f'(-1) = 0 \\).",
               "work": "\\begin{aligned} 2a(-1) + 6 &= 0 \\\\ -2a + 6 &= 0 \\\\ 2a &= 6 \\\\ a &= 3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q13ac",
@@ -3609,7 +3727,8 @@
               "explain": "Use the coordinates of the turning point \\( (-1, 2) \\) to find \\( c \\).",
               "work": "\\begin{aligned} f(-1) &= 2 \\\\ 3(-1)^2 + 6(-1) + c &= 2 \\\\ 3 - 6 + c &= 2 \\\\ -3 + c &= 2 \\\\ c &= 5 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q13bb",
@@ -3637,7 +3756,8 @@
               "explain": "Solve the simultaneous equations for \\( b \\).",
               "work": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (27 + 6b + c) - (3 - 2b + c) &= 0 - 0 \\\\ 24 + 8b &= 0 \\\\ 8b &= -24 \\\\ b &= -3 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q13bc",
@@ -3661,7 +3781,8 @@
               "explain": "Solve for \\( c \\).",
               "work": "\\begin{aligned} 3 - 2(-3) + c &= 0 \\\\ 3 + 6 + c &= 0 \\\\ 9 + c &= 0 \\\\ c &= -9 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q14a",
@@ -3690,7 +3811,8 @@
               "work": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (a - b + c) - (a + b + c) &= 10 - 6 \\\\ -2b &= 4 \\\\ b &= -2 \\\\ \\\\ \\text{Substitute } b = -2 \\text{ into (3):} \\\\ -2 &= 2a \\\\ a &= -1 \\\\ \\\\ \\text{Substitute } a = -1 \\text{ and } b = -2 \\text{ into (1):} \\\\ -1 - 2 + c &= 6 \\\\ -3 + c &= 6 \\\\ c &= 9 \\end{aligned}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3b-q15a",
@@ -3715,7 +3837,8 @@
               "work": "\\begin{aligned} 0 &= a(0)^2 + b(0) + c \\\\ 0 &= 0 + 0 + c \\\\ c &= 0 \\end{aligned}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3b-q15b",
@@ -3744,7 +3867,8 @@
               "work": "\\begin{aligned} \\frac{dy}{dx}(0) &= 2a(0) + b \\\\ 3 &= 0 + b \\\\ b &= 3 \\end{aligned}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3b-q15c",
@@ -3773,7 +3897,8 @@
               "work": "\\begin{aligned} 4a &= -3 \\\\ a &= -\\frac{3}{4} \\end{aligned}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3b-q16",
@@ -3805,7 +3930,8 @@
                   "explain": "Factor the numerator.",
                   "work": "\\begin{aligned} f'(x) &= \\frac{4(1 - x^2)}{(x^2+1)^2} \\\\ &= \\frac{4(1-x)(1+x)}{(x^2+1)^2} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3b-q16b",
@@ -3831,7 +3957,8 @@
                   "explain": "Determine their nature using a table of slopes.",
                   "work": "\\text{We analyze the sign of } f'(x) = \\frac{4(1-x^2)}{(x^2+1)^2}:\n\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & -2 & -1 & 0 & 1 & 2 \\\\ \\hline\nf'(x) & -0.48 & 0 & 4 & 0 & -0.48 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash\n\\end{array}\n\\]\n\n- At \\(x=-1\\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\((-1,-2)\\)\n- At \\(x=1\\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\((1,2)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3b-q16c",
@@ -3867,7 +3994,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "y12a-3b-q16d",
@@ -3961,7 +4089,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -3996,7 +4125,8 @@
               "work": "\\frac{dy}{dx}(2) = 3a(2)^2 + 2b(2) + c = 0 \\implies 12a + 4b + c = 0"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3b-q17b",
@@ -4028,7 +4158,8 @@
               "work": "9a + 3b + 3c = -27"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3b-q17c",
@@ -4068,7 +4199,8 @@
               "work": "b = -1.5(2) = -3 \\quad \\text{and} \\quad c = -6(2) = -12"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3b-q17d",
@@ -4096,7 +4228,8 @@
               "work": "-2 - 3 + 12 + d = 17 \\implies 7 + d = 17 \\implies d = 10"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3b-q18a",
@@ -4136,7 +4269,8 @@
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y12a-3b-q18b",
@@ -4176,7 +4310,8 @@
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y12a-3b-q18c",
@@ -4208,7 +4343,8 @@
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hg2020-q16",
@@ -4241,7 +4377,8 @@
                   "explain": "State both intercepts.",
                   "work": "\\(\\therefore\\) \\(x\\)-intercept \\((2,0)\\); \\(y\\)-intercept \\((0,-2)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q16b",
@@ -4272,7 +4409,8 @@
                   "explain": "Use the second derivative \\(f''(x)=6x-4\\) to test the nature of each point.",
                   "work": "At \\(x=\\tfrac13\\): \\(f''=-2<0\\) → maximum. At \\(x=1\\): \\(f''=2>0\\) → minimum."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q16c",
@@ -4302,7 +4440,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             }
           ],
           "manual": true,
@@ -4328,7 +4467,8 @@
               "explain": "Substitute the value of \\( b = -2 \\) into the third equation \\( -2a + b = 0 \\).",
               "work": "-2a + (-2) = 0 \\implies -2a = 2 \\implies a = -1"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q14bb",
@@ -4345,7 +4485,8 @@
               "explain": "Solve for \\( b \\).",
               "work": "b = -2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3b-q14bc",
@@ -4362,7 +4503,8 @@
               "explain": "Substitute these values into the first equation \\( a + b + c = 6 \\) to solve for \\( c \\).",
               "work": "-1 + (-2) + c = 6 \\implies -3 + c = 6 \\implies c = 9"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -4398,7 +4540,8 @@
               "work": "\\begin{aligned} y''' &= 12 \\times 2x^{2-1} \\\\ &= 24x \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1b",
@@ -4427,7 +4570,8 @@
               "work": "\\begin{aligned} y''' &= 56 \\times 6x^{6-1} \\\\ &= 336x^5 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1c",
@@ -4456,7 +4600,8 @@
               "work": "\\begin{aligned} y''' &= 30 \\times 4x^{4-1} \\\\ &= 120x^3 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1d",
@@ -4485,7 +4630,8 @@
               "work": "\\begin{aligned} y''' &= 20 \\times 3x^{3-1} \\\\ &= 60x^2 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1e",
@@ -4514,7 +4660,8 @@
               "work": "\\begin{aligned} y''' &= 36 \\times 2x^{2-1} \\\\ &= 72x \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1f",
@@ -4543,7 +4690,8 @@
               "work": "\\begin{aligned} y''' &= 40 \\times 3x^{3-1} \\\\ &= 120x^2 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1g",
@@ -4572,7 +4720,8 @@
               "work": "y''' = 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1h",
@@ -4601,7 +4750,8 @@
               "work": "y''' = 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1i",
@@ -4630,7 +4780,8 @@
               "work": "\\begin{aligned} y''' &= 18(1)x^{1-1} - 0 \\\\ &= 18 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q1j",
@@ -4659,7 +4810,8 @@
               "work": "\\begin{aligned} y''' &= 40 \\times 3x^{3-1} + 24(1)x^{1-1} \\\\ &= 120x^2 + 24 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2a",
@@ -4688,7 +4840,8 @@
               "work": "\\begin{aligned} y'' &= 2(1)x^{1-1} + 0 \\\\ &= 2 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2b",
@@ -4717,7 +4870,8 @@
               "work": "\\begin{aligned} y'' &= 3 \\times 2x^{2-1} - 6(1)x^{1-1} \\\\ &= 6x - 6 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2c",
@@ -4746,7 +4900,8 @@
               "work": "\\begin{aligned} y'' &= 2(1)x^{1-1} - 0 \\\\ &= 2 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2d",
@@ -4775,7 +4930,8 @@
               "work": "\\begin{aligned} y'' &= 4(1)x^{1-1} - 0 \\\\ &= 4 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2e",
@@ -4804,7 +4960,8 @@
               "work": "\\begin{aligned} y'' &= 30 \\times 4x^{4-1} - 16 \\times 3x^{3-1} \\\\ &= 120x^3 - 48x^2 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q2f",
@@ -4833,7 +4990,8 @@
               "work": "\\begin{aligned} y'' &= 21 \\times 6x^{6-1} + 45 \\times 4x^{4-1} \\\\ &= 126x^5 + 180x^3 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3c-q3a",
@@ -4861,7 +5019,8 @@
               "explain": "Find the third derivative.",
               "work": "\\begin{aligned} y''' &= -0.24 \\times (-1.6)x^{-1.6-1} \\\\ &= 0.384x^{-2.6} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q3b",
@@ -4889,7 +5048,8 @@
               "explain": "Find the third derivative.",
               "work": "\\begin{aligned} y''' &= 12 \\times (-5)x^{-5-1} \\\\ &= -60x^{-6} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q3c",
@@ -4917,7 +5077,8 @@
               "explain": "Find the third derivative.",
               "work": "\\begin{aligned} y''' &= 20 \\times (-6)x^{-6-1} \\\\ &= -120x^{-7} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q3d",
@@ -4945,7 +5106,8 @@
               "explain": "Find the third derivative.",
               "work": "\\begin{aligned} y''' &= 24 \\times (-4)x^{-4-1} \\\\ &= -96x^{-5} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q3e",
@@ -4973,7 +5135,8 @@
               "explain": "Find the third derivative.",
               "work": "\\begin{aligned} y''' &= -40 \\times (-6)x^{-6-1} \\\\ &= 240x^{-7} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q4a",
@@ -5001,7 +5164,8 @@
               "explain": "Apply the power rule to the first derivative to find the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -4 \\times (-5)x^{-5-1} \\\\ &= 20x^{-6} \\\\ &= \\frac{20}{x^6} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q4b",
@@ -5029,7 +5193,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -5 \\times (-6)x^{-6-1} \\\\ &= 30x^{-7} \\\\ &= \\frac{30}{x^7} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q4c",
@@ -5057,7 +5222,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -12 \\times (-4)x^{-4-1} \\\\ &= 48x^{-5} \\\\ &= \\frac{48}{x^5} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q4d",
@@ -5085,7 +5251,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -10 \\times (-3)x^{-3-1} \\\\ &= 30x^{-4} \\\\ &= \\frac{30}{x^4} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q5a",
@@ -5109,7 +5276,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 3 \\times 2(x+2)^{2-1} \\times \\frac{d}{dx}[x+2] \\\\ &= 6(x+2)^1 \\times 1 \\\\ &= 6(x+2) \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q5b",
@@ -5133,7 +5301,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 8 \\times 3(2x-3)^{3-1} \\times \\frac{d}{dx}[2x-3] \\\\ &= 24(2x-3)^2 \\times 2 \\\\ &= 48(2x-3)^2 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q5c",
@@ -5157,7 +5326,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= -9 \\times 2(1-3x)^{2-1} \\times \\frac{d}{dx}[1-3x] \\\\ &= -18(1-3x)^1 \\times (-3) \\\\ &= 54(1-3x) \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q5d",
@@ -5181,7 +5351,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= -8 \\times 7(5-x)^{7-1} \\times \\frac{d}{dx}[5-x] \\\\ &= -56(5-x)^6 \\times (-1) \\\\ &= 56(5-x)^6 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q6a",
@@ -5209,7 +5380,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= -1 \\times (-2)(x+3)^{-2-1} \\times \\frac{d}{dx}[x+3] \\\\ &= 2(x+3)^{-3} \\times 1 \\\\ &= 2(x+3)^{-3} \\\\ &= \\frac{2}{(x+3)^3} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q6b",
@@ -5237,7 +5409,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 3 \\times (-4)(2-x)^{-4-1} \\times \\frac{d}{dx}[2-x] \\\\ &= -12(2-x)^{-5} \\times (-1) \\\\ &= 12(2-x)^{-5} \\\\ &= \\frac{12}{(2-x)^5} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q6c",
@@ -5265,7 +5438,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= -8 \\times (-3)(4x+3)^{-3-1} \\times \\frac{d}{dx}[4x+3] \\\\ &= 24(4x+3)^{-4} \\times 4 \\\\ &= 96(4x+3)^{-4} \\\\ &= \\frac{96}{(4x+3)^4} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q6d",
@@ -5293,7 +5467,8 @@
               "explain": "Apply the chain rule again to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 18 \\times (-4)(5-2x)^{-4-1} \\times \\frac{d}{dx}[5-2x] \\\\ &= -72(5-2x)^{-5} \\times (-2) \\\\ &= 144(5-2x)^{-5} \\\\ &= \\frac{144}{(5-2x)^5} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7a",
@@ -5321,7 +5496,8 @@
               "explain": "Apply the power rule to the first derivative to find the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -\\frac{1}{2}x^{-\\frac{1}{2}-1} \\\\ &= -\\frac{1}{2}x^{-3/2} \\\\ &= -\\frac{1}{2x^{3/2}} \\\\ &= -\\frac{1}{2x\\sqrt{x}} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7b",
@@ -5349,7 +5525,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= \\frac{2}{3} \\times \\left(-\\frac{1}{3}\\right)x^{-\\frac{1}{3}-1} \\\\ &= -\\frac{2}{9}x^{-4/3} \\\\ &= -\\frac{2}{9x^{4/3}} \\\\ &= -\\frac{2}{9x\\sqrt[3]{x}} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7c",
@@ -5377,7 +5554,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= \\frac{5}{2} \\times \\frac{3}{2}x^{\\frac{3}{2}-1} \\\\ &= \\frac{15}{4}x^{1/2} \\\\ &= \\frac{15}{4}\\sqrt{x} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7d",
@@ -5405,7 +5583,8 @@
               "explain": "Apply the power rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -1 \\times \\left(-\\frac{3}{2}\\right)x^{-\\frac{3}{2}-1} \\\\ &= \\frac{3}{2}x^{-5/2} \\\\ &= \\frac{3}{2x^{5/2}} \\\\ &= \\frac{3}{2x^2\\sqrt{x}} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7e",
@@ -5433,7 +5612,8 @@
               "explain": "Apply the chain rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= \\frac{1}{2} \\times \\left(-\\frac{1}{2}\\right)(x+3)^{-\\frac{1}{2}-1} \\times \\frac{d}{dx}[x+3] \\\\ &= -\\frac{1}{4}(x+3)^{-3/2} \\times 1 \\\\ &= -\\frac{1}{4(x+3)^{3/2}} \\\\ &= -\\frac{1}{4(x+3)\\sqrt{x+3}} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q7f",
@@ -5461,7 +5641,8 @@
               "explain": "Apply the chain rule again for the second derivative.",
               "work": "\\begin{aligned} f''(x) &= -\\frac{3}{2} \\times \\left(-\\frac{1}{2}\\right)(1-3x)^{-\\frac{1}{2}-1} \\times \\frac{d}{dx}[1-3x] \\\\ &= \\frac{3}{4}(1-3x)^{-3/2} \\times (-3) \\\\ &= -\\frac{9}{4}(1-3x)^{-3/2} \\\\ &= -\\frac{9}{4(1-3x)^{3/2}} \\\\ &= -\\frac{9}{4(1-3x)\\sqrt{1-3x}} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q8a",
@@ -5485,7 +5666,8 @@
               "explain": "Substitute \\( x = 1 \\) into the derivative.",
               "work": "\\begin{aligned} f'(1) &= 8(2(1) - 3)^3 \\\\ &= 8(2 - 3)^3 \\\\ &= 8(-1)^3 \\\\ &= -8 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q8bi",
@@ -5509,7 +5691,8 @@
               "explain": "Substitute \\( x = 0 \\) into the expression for \\( f'(x) \\).",
               "work": "\\begin{aligned} f'(0) &= 3(0)^2 + 8(0) + 6 \\\\ &= 0 + 0 + 6 \\\\ &= 6 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q8bii",
@@ -5533,7 +5716,8 @@
               "explain": "Substitute \\( x = 1 \\) into \\( f'(x) \\).",
               "work": "\\begin{aligned} f'(1) &= 3(1)^2 + 8(1) + 6 \\\\ &= 3 + 8 + 6 \\\\ &= 17 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q8biii",
@@ -5557,7 +5741,8 @@
               "explain": "Substitute \\( x = 0 \\) into \\( f''(x) \\).",
               "work": "\\begin{aligned} f''(0) &= 6(0) + 8 \\\\ &= 0 + 8 \\\\ &= 8 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q8biv",
@@ -5581,7 +5766,8 @@
               "explain": "Substitute \\( x = 1 \\) into \\( f''(x) \\).",
               "work": "\\begin{aligned} f''(1) &= 6(1) + 8 \\\\ &= 6 + 8 \\\\ &= 14 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9ai",
@@ -5605,7 +5791,8 @@
               "explain": "Substitute \\( x = 2 \\) into the first derivative.",
               "work": "\\begin{aligned} f'(2) &= 4 + 3(2)^2 \\\\ &= 4 + 3(4) \\\\ &= 16 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9aii",
@@ -5629,7 +5816,8 @@
               "explain": "Substitute \\( x = 2 \\) into the second derivative.",
               "work": "\\begin{aligned} f''(2) &= 6(2) \\\\ &= 12 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9aiii",
@@ -5653,7 +5841,8 @@
               "explain": "Evaluate the third derivative at \\( x = 2 \\).",
               "work": "\\begin{aligned} f'''(2) &= 6 \\quad (\\text{since } f'''(x) \\text{ is constant}) \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9aiv",
@@ -5677,7 +5866,8 @@
               "explain": "Evaluate the fourth derivative at \\( x = 2 \\).",
               "work": "\\begin{aligned} f''''(2) &= 0 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9bi",
@@ -5701,7 +5891,8 @@
               "explain": "Substitute \\( x = 1 \\) into the first derivative.",
               "work": "\\begin{aligned} f'(1) &= 12(3(1) - 2)^3 \\\\ &= 12(1)^3 \\\\ &= 12 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9bii",
@@ -5725,7 +5916,8 @@
               "explain": "Substitute \\( x = 1 \\) into the second derivative.",
               "work": "\\begin{aligned} f''(1) &= 108(3(1) - 2)^2 \\\\ &= 108(1)^2 \\\\ &= 108 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9biii",
@@ -5749,7 +5941,8 @@
               "explain": "Substitute \\( x = 1 \\) into the third derivative.",
               "work": "\\begin{aligned} f'''(1) &= 648(3(1) - 2) \\\\ &= 648(1) \\\\ &= 648 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q9biv",
@@ -5773,7 +5966,8 @@
               "explain": "Evaluate the fourth derivative (which is a constant).",
               "work": "\\begin{aligned} f''''(1) &= 1944 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q10a",
@@ -5801,7 +5995,8 @@
               "explain": "Apply the chain rule to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 2 \\times (-2)(x + 2)^{-3} \\times \\frac{d}{dx}[x + 2] \\\\ &= -4(x + 2)^{-3} \\times 1 \\\\ &= -\\frac{4}{(x+2)^3} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q10b",
@@ -5829,7 +6024,8 @@
               "explain": "Apply the chain rule to find the second derivative.",
               "work": "\\begin{aligned} y'' &= 10 \\times (-2)(3x + 4)^{-3} \\times \\frac{d}{dx}[3x + 4] \\\\ &= -20(3x + 4)^{-3} \\times 3 \\\\ &= -60(3x + 4)^{-3} \\\\ &= -\\frac{60}{(3x+4)^3} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q11",
@@ -5853,7 +6049,8 @@
               "explain": "Apply the product rule again to find \\( f''(x) \\). Let \\( u = 5x - 2 \\) and \\( v = (x - 2)^3 \\).",
               "work": "\\begin{aligned} u' &= 5, \\quad v' = 3(x - 2)^2 \\times 1 = 3(x - 2)^2 \\\\ f''(x) &= u'v + uv' \\\\ &= 5(x - 2)^3 + (5x - 2) \\cdot 3(x - 2)^2 \\\\ &= (x - 2)^2 [ 5(x - 2) + 3(5x - 2) ] \\\\ &= (x - 2)^2 [ 5x - 10 + 15x - 6 ] \\\\ &= (x - 2)^2 (20x - 16) \\\\ &= 4(5x - 4)(x - 2)^2 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q12a",
@@ -5881,7 +6078,8 @@
               "explain": "Set the second derivative to zero and solve the equation for \\( x \\).",
               "work": "\\begin{aligned} y'' &= 0 \\\\ 12x^2 - 36 &= 0 \\\\ 12x^2 &= 36 \\\\ x^2 &= \\frac{36}{12} \\\\ x^2 &= 3 \\\\ x &= \\pm\\sqrt{3} \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q12b",
@@ -5909,7 +6107,8 @@
               "explain": "Set the second derivative to zero and solve the linear equation for \\( x \\).",
               "work": "\\begin{aligned} y'' &= 0 \\\\ 6x + 6 &= 0 \\\\ 6x &= -6 \\\\ x &= -1 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3c-q13a",
@@ -5938,7 +6137,8 @@
               "work": "\\begin{aligned} \\frac{d^3}{dx^3}[x^m] &= \\frac{d}{dx}[m(m-1)x^{m-2}] \\\\ &= m(m-1)(m-2)x^{m-2-1} \\\\ &= m(m-1)(m-2)x^{m-3} \\end{aligned}"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3c-q13b",
@@ -5963,7 +6163,8 @@
               "work": "\\begin{aligned} \\frac{d^{m+1}}{dx^{m+1}}[x^m] &= \\frac{d}{dx}[m!] \\\\ &= 0 \\quad (\\text{since } m! \\text{ is a constant}) \\end{aligned}"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "hg2020-q24",
@@ -5988,7 +6189,8 @@
                   "explain": "Differentiate \\(\\dfrac{dy}{dx}=x^3+2x-7\\) term by term.",
                   "work": "\\(\\dfrac{d^2y}{dx^2} = 3x^2+2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q24b",
@@ -6009,7 +6211,8 @@
                   "work": "\\(\\therefore \\dfrac{d^2y}{dx^2} \\ge 2\\) for all values of \\(x\\), as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "hg2020-q24c",
@@ -6036,7 +6239,8 @@
                   "explain": "Write the final equation.",
                   "work": "\\(y = \\dfrac{x^4}{4}+x^2-7x+10\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q24d",
@@ -6063,7 +6267,8 @@
                   "explain": "Use point-gradient form at \\(P(2,4)\\), then rearrange into general form with integer coefficients.",
                   "work": "\\(y-4 = -\\dfrac15(x-2) \\;\\Rightarrow\\; 5y-20 = -(x-2) \\;\\Rightarrow\\; x+5y-22=0\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -6112,7 +6317,8 @@
               "work": "\\text{Since } f''(0) = -12 < 0 \\text{, the curve is concave down.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q2b",
@@ -6145,7 +6351,8 @@
               "work": "\\text{Since } f''(0) = 6 > 0 \\text{, the curve is concave up.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q2c",
@@ -6178,7 +6385,8 @@
               "work": "\\text{Since } f''(0) = 6 > 0 \\text{, the curve is concave up.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q2d",
@@ -6211,7 +6419,8 @@
               "work": "\\text{Since } f''(0) = -10 < 0 \\text{, the curve is concave down.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q3a",
@@ -6244,7 +6453,8 @@
               "work": "\\text{Since } f''(3) = 2 > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q3b",
@@ -6277,7 +6487,8 @@
               "work": "\\text{Since } f''(3) = -2 < 0 \\text{, the point at } x = 3 \\text{ is a local maximum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q3c",
@@ -6310,7 +6521,8 @@
               "work": "\\begin{aligned} f''(3) &= 6(3) = 18 > 0 \\end{aligned} \\\\ \\text{Since } f''(3) > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q3d",
@@ -6343,7 +6555,8 @@
               "work": "\\begin{aligned} f''(3) &= 6(3) - 6 = 18 - 6 = 12 > 0 \\end{aligned} \\\\ \\text{Since } f''(3) > 0 \\text{, the point at } x = 3 \\text{ is a local minimum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3d-q4",
@@ -6375,7 +6588,8 @@
                   "explain": "Determine concavity.",
                   "work": "\\text{Since } y'' = 2 > 0 \\text{ for all } x \\text{, the curve is always concave up.}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3d-q4b",
@@ -6401,7 +6615,8 @@
                   "explain": "Determine concavity.",
                   "work": "\\text{Since } y'' = -8 < 0 \\text{ for all } x \\text{, the curve is always concave down.}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 180
@@ -6432,7 +6647,8 @@
                   "explain": "Find the second derivative.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &= 6x - 12 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q5bi",
@@ -6450,7 +6666,8 @@
                   "explain": "The curve is concave up when the second derivative is positive.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &> 0 \\\\ 6x - 12 &> 0 \\\\ 6x &> 12 \\\\ x &> 2 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q5bii",
@@ -6468,7 +6685,8 @@
                   "explain": "The curve is concave down when the second derivative is negative.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &< 0 \\\\ 6x - 12 &< 0 \\\\ 6x &< 12 \\\\ x &< 2 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -6499,7 +6717,8 @@
                   "explain": "Find the second derivative.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &= 12x - 6 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q6bi",
@@ -6517,7 +6736,8 @@
                   "explain": "The curve is concave up when the second derivative is positive.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &> 0 \\\\ 12x - 6 &> 0 \\\\ 12x &> 6 \\\\ x &> 0.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q6bii",
@@ -6535,7 +6755,8 @@
                   "explain": "The curve is concave down when the second derivative is negative.",
                   "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &< 0 \\\\ 12x - 6 &< 0 \\\\ 12x &< 6 \\\\ x &< 0.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -6566,7 +6787,8 @@
                   "explain": "Find the second derivative.",
                   "work": "\\begin{aligned} y'' &= 2(3)x - 12 \\\\ &= 6x - 12 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q10b",
@@ -6592,7 +6814,8 @@
                   "explain": "Determine nature using the second derivative.",
                   "work": "\\begin{aligned} y''(5) &= 6(5) - 12 = 18 > 0 \\implies \\text{Minimum at } (5, -80) \\\\ y''(-1) &= 6(-1) - 12 = -18 < 0 \\implies \\text{Maximum at } (-1, 28) \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q10c",
@@ -6618,7 +6841,8 @@
                   "explain": "Verify concavity changes.",
                   "work": "\\text{For } x < 2, y'' < 0. \\text{ For } x > 2, y'' > 0. \\text{ Thus, } (2, -26) \\text{ is a point of inflection.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q10d",
@@ -6648,7 +6872,8 @@
                   "explain": "Combine all key features to identify the correct summary.",
                   "work": "\\text{Max at } (-1, 28), \\text{ Min at } (5, -80), \\text{ Inflection at } (2, -26)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q10e",
@@ -6685,7 +6910,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -6721,7 +6947,8 @@
                   "explain": "Solve the quadratic inequality.",
                   "work": "\\text{The roots are } x = 4 \\text{ and } x = -1. \\text{ This is an upward-opening parabola, so it is positive outside the roots: } \\\\ x < -1 \\text{ or } x > 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q12b",
@@ -6747,7 +6974,8 @@
                   "explain": "Solve the quadratic inequality.",
                   "work": "\\text{The parabola is below the x-axis between the roots: } \\\\ -1 < x < 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q12c",
@@ -6769,7 +6997,8 @@
                   "explain": "For the curve to be concave up, the second derivative must be positive.",
                   "work": "\\begin{aligned} y'' &> 0 \\\\ 12x - 18 &> 0 \\\\ 12x &> 18 \\\\ x &> \\frac{18}{12} \\\\ x &> 1.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q12d",
@@ -6791,7 +7020,8 @@
                   "explain": "For the curve to be concave down, the second derivative must be negative.",
                   "work": "\\begin{aligned} 12x - 18 &< 0 \\\\ 12x &< 18 \\\\ x &< 1.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -6822,7 +7052,8 @@
                   "explain": "Apply the power rule again to find the second derivative.",
                   "work": "\\begin{aligned} y'' &= 2 \\times 3x + 12 \\\\ &= 6x + 12 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q13b",
@@ -6848,7 +7079,8 @@
                   "explain": "Verify concavity changes across \\( x = -2 \\).",
                   "work": "\\text{For } x < -2, y'' < 0. \\text{ For } x > -2, y'' > 0. \\text{ Therefore, } (-2, 58) \\text{ is a point of inflection.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q13c",
@@ -6866,7 +7098,8 @@
                   "explain": "The point of inflection occurs at \\( x = -2 \\). Evaluate \\( y'(-2) \\) to find the gradient.",
                   "work": "\\begin{aligned} y'(-2) &= 3(-2)^2 + 12(-2) - 15 \\\\ &= 3(4) - 24 - 15 \\\\ &= 12 - 24 - 15 \\\\ &= -27 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q13d",
@@ -6888,7 +7121,8 @@
                   "explain": "Expand and simplify into \\( y = mx + c \\) form.",
                   "work": "\\begin{aligned} y - 58 &= -27x - 54 \\\\ y &= -27x - 54 + 58 \\\\ y &= -27x + 4 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 300
@@ -6919,7 +7153,8 @@
                   "explain": "An inflection point at \\( x = 3 \\) means \\( y''(3) = 0 \\).",
                   "work": "\\begin{aligned} 6(3) - 2a &= 0 \\\\ 18 - 2a &= 0 \\\\ 2a &= 18 \\\\ a &= 9 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q15b",
@@ -6941,7 +7176,8 @@
                   "explain": "The curve is concave up at \\( x = -1 \\) if \\( y''(-1) > 0 \\).",
                   "work": "\\begin{aligned} 6(-1) + 6a &> 0 \\\\ -6 + 6a &> 0 \\\\ 6a &> 6 \\\\ a &> 1 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q15c",
@@ -6975,7 +7211,8 @@
                   "explain": "Find \\( b \\).",
                   "work": "\\begin{aligned} b &= -1 - (-2.5) \\\\ b &= -1 + 2.5 \\\\ b &= 1.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q15d",
@@ -7005,7 +7242,8 @@
                   "explain": "Combine the conditions. For both to be true, \\( a \\) must be greater than the larger value.",
                   "work": "\\text{Since } a > \\frac{2}{3} \\text{ is a stricter condition than } a > -1 \\text{, the final answer is: } \\\\ a > \\frac{2}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -7053,7 +7291,8 @@
                   "explain": "Combine the results.",
                   "work": "\\text{The original curve is increasing and concave down.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -7094,7 +7333,8 @@
                   "explain": "Interpret the discriminant.",
                   "work": "\\text{Since } \\Delta < 0 \\text{, the quadratic equation has no real roots. Therefore, the function has no stationary points.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q18b",
@@ -7120,7 +7360,8 @@
                   "explain": "Verify that the concavity changes across \\( x = 2 \\).",
                   "work": "\\text{For } x < 2, \\, y'' < 0 \\, \\text{(concave down)}. \\\\ \\text{For } x > 2, \\, y'' > 0 \\, \\text{(concave up)}. \\\\ \\text{Since } y'' \\text{ changes sign, there is a point of inflection at } x = 2."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q18c",
@@ -7146,7 +7387,8 @@
                   "explain": "Combine this with the fact that cubic functions are continuous and have a range of \\( (-\\infty, \\infty) \\).",
                   "work": "\\text{A continuous, strictly increasing curve that goes from } -\\infty \\text{ to } \\infty \\text{ must cross the x-axis exactly once.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -7185,7 +7427,8 @@
                   "explain": "Use the \\( x \\)-intercept at \\( x = -1 \\) to solve for \\( a \\). Substitute \\( b = -3a \\), \\( c = 0 \\), and \\( d = 8 \\).",
                   "work": "\\begin{aligned} y(-1) &= a(-1)^3 + b(-1)^2 + 0(-1) + 8 = 0 \\\\ -a + b + 8 &= 0 \\\\ -a + (-3a) + 8 &= 0 \\\\ -4a &= -8 \\\\ a &= 2 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q19b",
@@ -7207,7 +7450,8 @@
                   "explain": "Substitute the value of \\( a = 2 \\).",
                   "work": "\\begin{aligned} b &= -3(2) \\\\ b &= -6 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q19c",
@@ -7229,7 +7473,8 @@
                   "explain": "A turning point at \\( (0, 8) \\) means the derivative is zero at \\( x = 0 \\).",
                   "work": "\\begin{aligned} y'(0) &= 3a(0)^2 + 2b(0) + c = 0 \\\\ c &= 0 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3d-q19d",
@@ -7247,7 +7492,8 @@
                   "explain": "A turning point at \\( (0, 8) \\) means the curve passes through \\( (0, 8) \\). Substitute \\( x = 0 \\) into the original equation.",
                   "work": "\\begin{aligned} y(0) &= a(0)^3 + b(0)^2 + c(0) + d \\\\ 8 &= 0 + 0 + 0 + d \\\\ d &= 8 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -7290,7 +7536,8 @@
           },
           "dna": {
             "dnaId": "CALC-STAT-01"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "glenwood2020-q32",
@@ -7330,7 +7577,8 @@
                   "explain": "Also check where \\( f''(x)=0 \\) for any additional (non-stationary) inflection points: \\( f''(x)=12x(x-2)=0 \\) gives \\( x=0 \\) (already found) and \\( x=2 \\). Since \\( f'(2)=4(4)(-1)=-16\\ne0 \\), this is a non-stationary inflection point.",
                   "work": "f(2)=16-32=-16 \\Rightarrow \\text{inflection at }(2,-16)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "glenwood2020-q32b",
@@ -7363,7 +7611,8 @@
                   "work": "<svg viewBox=\"0 0 460 280\" width=\"100%\" height=\"auto\" style=\"max-width:460px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"44\" y1=\"101.60000000000002\" x2=\"416\" y2=\"101.60000000000002\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/><line x1=\"137\" y1=\"236\" x2=\"137\" y2=\"44\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arrow)\"/><defs><marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"4\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#94a3b8\"/></marker></defs><line x1=\"261\" y1=\"97.60000000000002\" x2=\"261\" y2=\"105.60000000000002\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"261\" y=\"119.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">2</text><line x1=\"323\" y1=\"97.60000000000002\" x2=\"323\" y2=\"105.60000000000002\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"323\" y=\"119.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">3</text><line x1=\"385\" y1=\"97.60000000000002\" x2=\"385\" y2=\"105.60000000000002\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"385\" y=\"119.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">4</text><line x1=\"133\" y1=\"163.04\" x2=\"141\" y2=\"163.04\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"127\" y=\"167.04\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">-16</text><line x1=\"133\" y1=\"205.28\" x2=\"141\" y2=\"205.28\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><text x=\"127\" y=\"209.28\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">-27</text><path d=\"M44.00,30.32 L45.86,34.88 L47.72,39.22 L49.58,43.36 L51.44,47.31 L53.30,51.05 L55.16,54.61 L57.02,57.99 L58.88,61.20 L60.74,64.23 L62.60,67.10 L64.46,69.80 L66.32,72.36 L68.18,74.76 L70.04,77.03 L71.90,79.15 L73.76,81.14 L75.62,83.01 L77.48,84.75 L79.34,86.37 L81.20,87.88 L83.06,89.29 L84.92,90.58 L86.78,91.78 L88.64,92.89 L90.50,93.91 L92.36,94.83 L94.22,95.68 L96.08,96.46 L97.94,97.15 L99.80,97.78 L101.66,98.35 L103.52,98.85 L105.38,99.30 L107.24,99.70 L109.10,100.04 L110.96,100.34 L112.82,100.60 L114.68,100.82 L116.54,101.00 L118.40,101.15 L120.26,101.28 L122.12,101.37 L123.98,101.45 L125.84,101.51 L127.70,101.55 L129.56,101.57 L131.42,101.59 L133.28,101.60 L135.14,101.60 L137.00,101.60 L138.86,101.60 L140.72,101.60 L142.58,101.61 L144.44,101.63 L146.30,101.65 L148.16,101.69 L150.02,101.73 L151.88,101.80 L153.74,101.88 L155.60,101.98 L157.46,102.11 L159.32,102.25 L161.18,102.42 L163.04,102.62 L164.90,102.84 L166.76,103.09 L168.62,103.38 L170.48,103.69 L172.34,104.04 L174.20,104.42 L176.06,104.84 L177.92,105.29 L179.78,105.78 L181.64,106.30 L183.50,106.87 L185.36,107.47 L187.22,108.11 L189.08,108.79 L190.94,109.51 L192.80,110.28 L194.66,111.08 L196.52,111.93 L198.38,112.82 L200.24,113.74 L202.10,114.71 L203.96,115.72 L205.82,116.78 L207.68,117.87 L209.54,119.01 L211.40,120.18 L213.26,121.39 L215.12,122.65 L216.98,123.94 L218.84,125.27 L220.70,126.64 L222.56,128.04 L224.42,129.48 L226.28,130.95 L228.14,132.46 L230.00,134.00 L231.86,135.57 L233.72,137.17 L235.58,138.80 L237.44,140.46 L239.30,142.14 L241.16,143.84 L243.02,145.57 L244.88,147.32 L246.74,149.08 L248.60,150.87 L250.46,152.67 L252.32,154.48 L254.18,156.30 L256.04,158.13 L257.90,159.97 L259.76,161.81 L261.62,163.65 L263.48,165.50 L265.34,167.34 L267.20,169.17 L269.06,170.99 L270.92,172.80 L272.78,174.60 L274.64,176.38 L276.50,178.14 L278.36,179.88 L280.22,181.59 L282.08,183.27 L283.94,184.92 L285.80,186.53 L287.66,188.11 L289.52,189.64 L291.38,191.12 L293.24,192.55 L295.10,193.93 L296.96,195.24 L298.82,196.50 L300.68,197.69 L302.54,198.81 L304.40,199.86 L306.26,200.83 L308.12,201.71 L309.98,202.51 L311.84,203.22 L313.70,203.83 L315.56,204.34 L317.42,204.74 L319.28,205.04 L321.14,205.22 L323.00,205.28 L324.86,205.22 L326.72,205.02 L328.58,204.70 L330.44,204.23 L332.30,203.62 L334.16,202.86 L336.02,201.94 L337.88,200.86 L339.74,199.62 L341.60,198.20 L343.46,196.60 L345.32,194.82 L347.18,192.86 L349.04,190.69 L350.90,188.33 L352.76,185.75 L354.62,182.97 L356.48,179.96 L358.34,176.73 L360.20,173.26 L362.06,169.56 L363.92,165.61 L365.78,161.41 L367.64,156.95 L369.50,152.22 L371.36,147.23 L373.22,141.95 L375.08,136.39 L376.94,130.53 L378.80,124.38 L380.66,117.92 L382.52,111.14 L384.38,104.04 L386.24,96.61 L388.10,88.85 L389.96,80.74 L391.82,72.27 L393.68,63.45 L395.54,54.26 L397.40,44.70 L399.26,34.75 L401.12,24.41 L402.98,13.68 L404.84,2.53 L406.70,-9.03 L408.56,-21.01 L410.42,-33.43 L412.28,-46.29 L414.14,-59.60 L416.00,-73.36\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"137\" cy=\"101.60000000000002\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"143\" y=\"91.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">(0,0) infl.</text><circle cx=\"261\" cy=\"163.04\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"269\" y=\"167.04\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">(2,-16) infl.</text><circle cx=\"323\" cy=\"205.28\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"331\" y=\"219.28\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">(3,-27) min</text><circle cx=\"385\" cy=\"101.60000000000002\" r=\"3.4\" fill=\"#1e293b\"/><text x=\"391\" y=\"91.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\">(4,0)</text><text x=\"430\" y=\"105.60000000000002\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" fill=\"#475569\">x</text><text x=\"137\" y=\"30\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" fill=\"#475569\" text-anchor=\"middle\">y</text></svg>"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             }
           ],
           "steps": [
@@ -7432,7 +7681,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q34",
@@ -7478,7 +7728,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 4
         }
       ]
     },
@@ -7530,7 +7781,8 @@
                   "explain": "Identify point \\( A \\) (other than origin).",
                   "work": "\\text{The non-zero intercept is at } (12, 0)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q1b",
@@ -7556,7 +7808,8 @@
                   "explain": "Find the y-coordinate for the maximum turning point \\( B \\). (From the graph/equation, \\( x=8 \\) is the maximum).",
                   "work": "\\begin{aligned} y(8) &= 12(8)^2 - (8)^3 \\\\ &= 12(64) - 512 \\\\ &= 768 - 512 = 256 \\end{aligned} \\\\ \\implies B(8, 256)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q1c",
@@ -7582,7 +7835,8 @@
                   "explain": "Find the y-coordinate.",
                   "work": "\\begin{aligned} y(4) &= 12(4)^2 - (4)^3 \\\\ &= 12(16) - 64 \\\\ &= 192 - 64 = 128 \\end{aligned} \\\\ \\implies C(4, 128)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -7618,7 +7872,8 @@
                   "explain": "Find inflection point.",
                   "work": "y'' = 6x - 12 = 6(x-2) = 0 \\implies x=2 \\\\ y(2) = 2(-1)^2 = 2 \\implies (2,2)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q7a_sketch",
@@ -7643,7 +7898,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q7b",
@@ -7665,7 +7921,8 @@
                   "explain": "Find inflection point.",
                   "work": "y'' = 6x - 6 = 6(x-1) = 0 \\implies x=1 \\\\ y(1) = 1 - 3 - 9 + 8 = -3 \\implies (1,-3)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q7b_sketch",
@@ -7690,7 +7947,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true
@@ -7732,7 +7990,8 @@
               ],
               "ext": {
                 "ans": "Local minimum at (0, 10), horizontal point of inflection at (2, 26)."
-              }
+              },
+              "xp": 2
             },
             {
               "id": "y12a-3e-q9b",
@@ -7761,7 +8020,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Local minimum at (0,10), stationary point of inflection at (2,26), and non-stationary point of inflection at (2/3, 16.52).",
@@ -7794,7 +8054,8 @@
                   "explain": "Differentiate using the chain rule.",
                   "work": "\\begin{aligned} f'(x) &= -1 \\cdot 2(x^2 - 9)^{-2} \\cdot \\frac{d}{dx}(x^2 - 9) \\\\ &= -2(x^2 - 9)^{-2} \\cdot 2x \\\\ &= -\\frac{4x}{(x^2 - 9)^2} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q10b",
@@ -7824,7 +8085,8 @@
                   "explain": "Conclude.",
                   "work": "\\text{Since the gradient changes from positive to negative, the point is a local maximum.}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q10c",
@@ -7846,7 +8108,8 @@
                   "explain": "State the symmetry.",
                   "work": "\\text{Since } f(-x) = f(x) \\text{, the function is even. Even functions are symmetric under reflection across the y-axis.}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q10d",
@@ -7868,7 +8131,8 @@
                   "explain": "State the domain and asymptotes.",
                   "work": "\\text{The function is undefined at } x = 3, -3 \\text{. Therefore, the domain is all real } x \\neq -3, 3 \\text{ and the vertical asymptotes are the lines } x = 3 \\text{ and } x = -3."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q10e",
@@ -7890,7 +8154,8 @@
                   "explain": "Identify the horizontal asymptote.",
                   "work": "\\text{Since the function approaches 0 as } x \\text{ gets very large in either direction, the horizontal asymptote is } y = 0."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q10f",
@@ -7923,7 +8188,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q10g",
@@ -7945,7 +8211,8 @@
                   "explain": "Combine the intervals.",
                   "work": "\\text{Range is } y \\le -\\frac{2}{9} \\text{ or } y > 0."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -7977,7 +8244,8 @@
                   "explain": "Substitute into the formula.",
                   "work": "\\begin{aligned} f'(x) &= \\frac{(x^2 - 9)(2) - (2x)(2x)}{(x^2 - 9)^2} \\\\ &= \\frac{2x^2 - 18 - 4x^2}{(x^2 - 9)^2} \\\\ &= \\frac{-2x^2 - 18}{(x^2 - 9)^2} \\\\ &= -\\frac{2(x^2 + 9)}{(x^2 - 9)^2} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q11b",
@@ -8003,7 +8271,8 @@
                   "explain": "Conclude.",
                   "work": "\\text{Thus, } f'(x) \\text{ is always strictly negative. The curve has no turning points and is always decreasing.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11c",
@@ -8025,7 +8294,8 @@
                   "explain": "Find the gradient at \\( x = 0 \\) using \\( f'(x) \\).",
                   "work": "\\begin{aligned} f'(0) &= -\\frac{2(0^2 + 9)}{(0^2 - 9)^2} = -\\frac{18}{81} = -\\frac{2}{9} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11d",
@@ -8047,7 +8317,8 @@
                   "explain": "State the domain and asymptotes.",
                   "work": "\\text{The function is undefined at } x = 3, -3 \\text{. Therefore, the domain is all real } x \\neq -3, 3 \\text{ and the vertical asymptotes are } x = -3 \\text{ and } x = 3."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11e",
@@ -8069,7 +8340,8 @@
                   "explain": "Identify the horizontal asymptote.",
                   "work": "\\text{The horizontal asymptote is } y = 0."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q11f",
@@ -8091,7 +8363,8 @@
                   "explain": "State the symmetry.",
                   "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd. It displays rotational point symmetry of 180 degrees about the origin.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11g",
@@ -8107,7 +8380,8 @@
                   "explain": "Test values.",
                   "work": "\\begin{aligned} \\text{For } x = -4: y &= \\frac{-8}{16 - 9} < 0 \\\\ \\text{For } x = -1: y &= \\frac{-2}{1 - 9} > 0 \\\\ \\text{For } x = 1: y &= \\frac{2}{1 - 9} < 0 \\\\ \\text{For } x = 4: y &= \\frac{8}{16 - 9} > 0 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11h",
@@ -8140,7 +8414,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11i",
@@ -8162,7 +8437,8 @@
                   "explain": "State the range.",
                   "work": "\\text{The range is all real numbers.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -8202,7 +8478,8 @@
                     "svg": "fig:a93c2f9b65"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q26b",
@@ -8232,7 +8509,8 @@
                   "explain": "State the point of inflection.",
                   "work": "\\((0,-1)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q26c",
@@ -8259,7 +8537,8 @@
                   "work": "Sketch matches the curve shown above, restricted to \\(-3 \\le x \\le 2\\)."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "bb2020-q26d",
@@ -8285,7 +8564,8 @@
                   "explain": "The largest of these three values is the maximum value on the restricted domain — it occurs at the left endpoint, not at the turning point.",
                   "work": "\\(\\therefore\\) Maximum value is \\(17\\), at \\(x=-3\\)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -8326,7 +8606,8 @@
                   "explain": "Use the second derivative to classify. Pitfall: mixing up which sign of \\( f'' \\) means max vs min gives the swapped-nature distractor.",
                   "work": "\\(f''(x)=6x+12; \\ f''(-3)=-6\\lt 0\\Rightarrow\\text{max}; \\ f''(-1)=6\\gt 0\\Rightarrow\\text{min}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q20b",
@@ -8352,7 +8633,8 @@
                   "explain": "Evaluate \\( f(-2) \\) to find the y-coordinate. Pitfall: confusing the inflection point with the nearby stationary max \\((-3,4)\\).",
                   "work": "\\(f(-2)=-8+24-18+4=2 \\;\\Rightarrow\\; (-2,2)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q20c",
@@ -8373,7 +8655,8 @@
                   "work": "<svg viewBox=\"0 0 148 508\" width=\"148\" height=\"508\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"20\" y1=\"460\" x2=\"140\" y2=\"460\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"110\" y1=\"500\" x2=\"110\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <path d=\"M 30,460 C 38,410 44,380 50,380 C 56,380 64,404 70,420 C 76,436 84,460 90,460 C 96,460 118,340 130,60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"50\" cy=\"380\" r=\"4\" fill=\"#2563eb\"/>\n  <circle cx=\"70\" cy=\"420\" r=\"4\" fill=\"#f59e0b\"/>\n  <circle cx=\"90\" cy=\"460\" r=\"4\" fill=\"#2563eb\"/>\n  <circle cx=\"30\" cy=\"460\" r=\"4\" fill=\"#475569\"/>\n  <circle cx=\"130\" cy=\"60\" r=\"4\" fill=\"#475569\"/>\n  <text x=\"58\" y=\"374\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(-3,4) max</text>\n  <text x=\"78\" y=\"436\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#b45309\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(-2,2) inflection</text>\n  <text x=\"98\" y=\"476\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(-1,0) min</text>\n  <text x=\"24\" y=\"478\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(-4,0)</text>\n  <text x=\"90\" y=\"54\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(1,20)</text>\n</g>\n</svg>\n\n\\(\\text{smooth cubic curve through all five points}\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "gosford2020-q20d",
@@ -8399,7 +8682,8 @@
                   "explain": "Pitfall: reporting the local maximum value (4) instead of checking the endpoint, which is actually larger here.",
                   "work": "\\(\\text{global maximum} = 20 \\text{ at } x=1\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -8440,7 +8724,8 @@
                   "explain": "Solve \\(\\tan x=-1\\) within \\(-\\pi \\le x \\le \\pi\\): tangent is negative in quadrants 2 and 4, with reference angle \\(\\pi/4\\).",
                   "work": "\\(x = -\\dfrac{\\pi}{4}\\) (Q4) or \\(x = \\pi-\\dfrac{\\pi}{4}=\\dfrac{3\\pi}{4}\\) (Q2)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q24b",
@@ -8471,7 +8756,8 @@
                   "explain": "Use \\(y''=-\\sin x-\\cos x\\) to test nature: at \\(x=\\pi/4\\), \\(y''=-\\tfrac{1}{\\sqrt2}-\\tfrac{1}{\\sqrt2}<0\\) (max); at \\(x=-3\\pi/4\\), \\(y''=\\tfrac{1}{\\sqrt2}+\\tfrac{1}{\\sqrt2}>0\\) (min).",
                   "work": "\\(\\left(\\dfrac{\\pi}{4},\\sqrt2\\right)\\) is a maximum; \\(\\left(-\\dfrac{3\\pi}{4},-\\sqrt2\\right)\\) is a minimum"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q24c",
@@ -8502,7 +8788,8 @@
                   "explain": "State both points of inflection.",
                   "work": "\\(\\left(-\\dfrac{\\pi}{4},0\\right)\\) and \\(\\left(\\dfrac{3\\pi}{4},0\\right)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q24d",
@@ -8523,7 +8810,8 @@
                   "work": "\\(\\therefore\\) not points of horizontal inflection, since \\(y'\\ne0\\) there"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "hh2020-q24e",
@@ -8550,7 +8838,8 @@
                   "work": "Curve as shown, with all critical points and endpoints labelled."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             }
           ],
           "manual": true,
@@ -8604,7 +8893,8 @@
               "work": "\\text{Point } B \\text{ is a 'valley' relative to its neighbors, making it a local minimum. It is not a global minimum because the curve falls lower elsewhere.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3f-q1b",
@@ -8642,7 +8932,8 @@
               "work": "\\text{Point } C \\text{ is a peak relative to its surroundings but is lower than } E \\text{, so it is a local maximum. Point } D \\text{ is a valley but higher than } F \\text{, so it is a local minimum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3f-q1c",
@@ -8680,7 +8971,8 @@
               "work": "\\text{At point } H \\text{, the curve flattens out (zero gradient) but continues to fall. This means concavity changes and the tangent is horizontal, so } H \\text{ is a horizontal point of inflection.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3f-q1d",
@@ -8718,7 +9010,8 @@
               "work": "\\text{Point } J \\text{ is the absolute lowest point on the entire domain shown, making it the global minimum.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "hillsgrammar-25-2u-q19",
@@ -8755,7 +9048,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -8798,7 +9092,8 @@
                   "explain": "Since \\(\\dfrac{d^2h}{dt^2} = -2 < 0\\) for all \\(t\\), the curve is concave down at \\(t = 2\\). This confirms that \\(t = 2\\) gives a **maximum** height, not a minimum.",
                   "work": "\\(\\dfrac{d^2h}{dt^2} = -2 < 0 \\implies\\) maximum at \\(t = 2\\) seconds \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q1b",
@@ -8824,7 +9119,8 @@
                   "explain": "Add the values together to get the maximum height.",
                   "work": "\\(h(2) = 9\\) metres"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -8859,7 +9155,8 @@
                   "explain": "Expand the brackets by distributing \\(x\\).",
                   "work": "\\(P = 24x - 3x^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q2b",
@@ -8889,7 +9186,8 @@
                   "explain": "Confirm this value gives a maximum by checking the second derivative \\(\\dfrac{d^2P}{dx^2}\\).",
                   "work": "\\(\\dfrac{d^2P}{dx^2} = -6\\)\n\nSince \\(-6 < 0\\), the curve is concave down at \\(x = 4\\), confirming it is a maximum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q2c",
@@ -8915,7 +9213,8 @@
                   "explain": "Calculate the final result.",
                   "work": "\\(P_{\\max} = 48\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -8958,7 +9257,8 @@
                   "explain": "Finally, collect the like terms (the \\(x^2\\) terms) to simplify the expression completely.",
                   "work": "\\(Q = x^2 + x^2 - 20x + 100\\)\n\n\\(Q = 2x^2 - 20x + 100 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q3b",
@@ -8992,7 +9292,8 @@
                   "explain": "Check the sign of the second derivative. A positive second derivative means the curve is concave up, indicating a local minimum.",
                   "work": "\\(\\dfrac{d^2Q}{dx^2} = 4 > 0 \\implies\\) concave up \\(\\implies\\) minimum at \\(x = 5\\). \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q3c",
@@ -9022,7 +9323,8 @@
                   "explain": "Finally, perform the addition and subtraction from left to right.",
                   "work": "\\(Q = (50 - 100) + 100\\)\n\n\\(Q = -50 + 100\\)\n\n\\(Q_{\\min} = 50\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -9065,7 +9367,8 @@
                   "explain": "Finally, to find an expression for the width, make \\(w\\) the subject by subtracting \\(x\\) from both sides.",
                   "work": "\\(w = 12 - x \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q4b",
@@ -9091,7 +9394,8 @@
                   "explain": "Expand the brackets by distributing the \\(x\\) to both terms inside.",
                   "work": "\\(A = x(12) - x(x)\\)\n\n\\(A = 12x - x^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q4c",
@@ -9125,7 +9429,8 @@
                   "explain": "Check the sign of the second derivative. A negative second derivative means the curve is concave down, indicating a local maximum.",
                   "work": "\\(\\dfrac{d^2A}{dx^2} = -2 < 0 \\implies\\) concave down \\(\\implies\\) maximum at \\(x = 6\\). \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q4d",
@@ -9151,7 +9456,8 @@
                   "explain": "Perform the subtraction to find the final maximum area.",
                   "work": "\\(A_{\\max} = 36 \\text{ cm}^2\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -9186,7 +9492,8 @@
                   "explain": "To find an expression for the parallel side \\(L\\), make \\(L\\) the subject by subtracting \\(2x\\) from both sides.",
                   "work": "\\(L = 60 - 2x \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q5b",
@@ -9212,7 +9519,8 @@
                   "explain": "Expand the brackets by distributing the \\(x\\) to both terms inside.",
                   "work": "\\(A = x(60) - x(2x)\\)\n\n\\(A = 60x - 2x^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q5c",
@@ -9246,7 +9554,8 @@
                   "explain": "Check the sign of the second derivative. A negative second derivative means the curve is concave down, indicating a local maximum.",
                   "work": "\\(\\dfrac{d^2A}{dx^2} = -4 < 0 \\implies\\) concave down \\(\\implies\\) maximum at \\(x = 15\\). \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q5d",
@@ -9276,7 +9585,8 @@
                   "explain": "Perform the subtraction to find the final maximum area.",
                   "work": "\\(A_{\\max} = 450 \\text{ m}^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -9320,7 +9630,8 @@
                   "explain": "Substitute \\(t = 4\\) into the second derivative to confirm it's a maximum.",
                   "work": "\\(\\text{At } t = 4: \\dfrac{d^2V}{dt^2} = 12 - 6(4) = 12 - 24 = -12\\)\n\nSince \\(-12 < 0\\), \\(t = 4\\) is a maximum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q6b",
@@ -9346,7 +9657,8 @@
                   "explain": "Calculate the final quantity.",
                   "work": "\\(V = 96 - 64 = 32\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -9381,7 +9693,8 @@
                   "explain": "To find an expression for the width, make width the subject by dividing both sides of the equation by \\(x\\).",
                   "work": "\\(\\text{width} = \\dfrac{64}{x} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q7b",
@@ -9407,7 +9720,8 @@
                   "explain": "Multiply the terms in the second bracket. \\(2 \\times \\dfrac{64}{x}\\) is \\(\\dfrac{128}{x}\\).",
                   "work": "\\(P = 2x + \\dfrac{128}{x} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q7c",
@@ -9457,7 +9771,8 @@
                   "explain": "Check the sign of the second derivative at \\(x = 8\\). A positive second derivative means the curve is concave up, indicating a local minimum.",
                   "work": "\\(\\text{At } x = 8: \\dfrac{d^2P}{dx^2} = \\dfrac{256}{8^3} > 0 \\implies\\) concave up \\(\\implies\\) minimum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q7d",
@@ -9483,7 +9798,8 @@
                   "explain": "Add the terms to find the final minimum perimeter.",
                   "work": "\\(P_{\\min} = 32 \\text{ cm}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -9601,7 +9917,8 @@
                   "explain": "Multiply the terms to simplify the expression completely.",
                   "work": "\\(L = 2x + \\dfrac{450}{x} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q8bi",
@@ -9651,7 +9968,8 @@
                   "explain": "Check the sign of the second derivative at \\(x = 15\\). A positive second derivative means the curve is concave up, indicating a local minimum.",
                   "work": "\\(\\text{At } x = 15: \\dfrac{d^2L}{dx^2} = \\dfrac{900}{15^3} > 0 \\implies\\) concave up \\(\\implies\\) minimum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q8bii",
@@ -9673,7 +9991,8 @@
                   "explain": "Evaluate the fraction to find the final value.",
                   "work": "\\(y = 10\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -9714,7 +10033,8 @@
                   "explain": "Divide both sides by 4 to make \\(w\\) the subject.",
                   "work": "\\(w = \\dfrac{24 - 3h}{4}\\)\n\n\\(w = \\dfrac{1}{4}(24 - 3h) \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q9b",
@@ -9740,7 +10060,8 @@
                   "explain": "Expand the bracket by distributing the \\(h\\) and multiplying each term by \\(\\dfrac{1}{4}\\).",
                   "work": "\\(A = \\dfrac{1}{4} \\times h \\times 24 - \\dfrac{1}{4} \\times h \\times 3h\\)\n\n\\(A = 6h - \\dfrac{3}{4}h^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q9ci",
@@ -9774,7 +10095,8 @@
                   "explain": "To verify that \\(h = 4\\) is a maximum, check the second derivative \\(\\dfrac{d^2A}{dh^2}\\).",
                   "work": "\\(\\dfrac{d^2A}{dh^2} = -\\dfrac{3}{2}\\)\n\nSince \\(-\\dfrac{3}{2} < 0\\), the curve is concave down, confirming a maximum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q9cii",
@@ -9800,7 +10122,8 @@
                   "explain": "Perform the subtraction inside the bracket, then multiply by \\(dfrac{1}{4}\\).",
                   "work": "\\(w = \\dfrac{1}{4}(12)\\)\n\n\\(w = 3 \\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true
@@ -9831,7 +10154,8 @@
                   "explain": "Expand the brackets by distributing \\(x\\) across each term.",
                   "work": "\\(R = 70x - \\dfrac{1}{2}x^2\\) dollars"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q11b",
@@ -9857,7 +10181,8 @@
                   "explain": "Collect like terms: combine the \\(x^2\\) terms (\\(-\\dfrac{1}{2}x^2 - \\dfrac{1}{4}x^2 = -\\dfrac{3}{4}x^2\\)) and the \\(x\\) terms (\\(70x - 10x = 60x\\)).",
                   "work": "\\(P = -\\dfrac{3}{4}x^2 + 60x - 20\\) dollars"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q11c",
@@ -9887,7 +10212,8 @@
                   "explain": "State the answer in context.",
                   "work": "\\(x = 40\\) telescopes should be made daily to maximise profit."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -9918,7 +10244,8 @@
                   "explain": "Rearrange to make \\(h\\) the subject by subtracting \\(2\\pi r\\) from both sides.",
                   "work": "\\(h = 12 - 2\\pi r \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q12b",
@@ -9940,7 +10267,8 @@
                   "explain": "Substitute the expression for \\(h\\) from part (a) into the volume formula.",
                   "work": "\\(V = \\pi r^2 (12 - 2\\pi r) \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q12c",
@@ -9974,7 +10302,8 @@
                   "explain": "Confirm this is a maximum by checking the second derivative \\(\\dfrac{d^2V}{dr^2}\\).",
                   "work": "\\(\\dfrac{d^2V}{dr^2} = 24\\pi - 12\\pi^2 r\\)\n\nAt \\(r = \\dfrac{4}{\\pi}\\): \\(\\dfrac{d^2V}{dr^2} = 24\\pi - 12\\pi^2 \\cdot \\dfrac{4}{\\pi} = 24\\pi - 48\\pi = -24\\pi < 0 \\implies\\) maximum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q12d",
@@ -10004,7 +10333,8 @@
                   "explain": "Subtract the fractions (same denominator) to get the maximum volume.",
                   "work": "\\(V_{\\max} = \\dfrac{64}{\\pi}\\) m\\(^3\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 180
@@ -10039,7 +10369,8 @@
                   "explain": "Solve for \\( h \\).",
                   "work": "rh = 12 - r^2 \\implies h = \\frac{12 - r^2}{r}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q13b",
@@ -10061,7 +10392,8 @@
                   "explain": "Simplify.",
                   "work": "V = \\pi r(12 - r^2) = \\pi(12r - r^3)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q13c",
@@ -10087,7 +10419,8 @@
                   "explain": "Substitute \\( r = 2 \\) into \\( V \\).",
                   "work": "V = \\pi(2)(12 - 4) = 16\\pi"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -10118,7 +10451,8 @@
                   "explain": "Add all five faces together: 1 base + 4 side faces.",
                   "work": "\\(S = x^2 + 4 \\times xh = x^2 + 4xh \\text{ cm}^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q14b",
@@ -10148,7 +10482,8 @@
                   "explain": "Simplify the second term: \\(4x \\times \\dfrac{108}{x^2} = \\dfrac{432x}{x^2} = \\dfrac{432}{x}\\).",
                   "work": "\\(S = x^2 + \\dfrac{432}{x} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q14ci",
@@ -10182,7 +10517,8 @@
                   "explain": "Confirm this is a minimum by checking the second derivative.",
                   "work": "\\(\\dfrac{d^2S}{dx^2} = 2 + \\dfrac{864}{x^3}\\)\n\nAt \\(x = 6\\): \\(\\dfrac{d^2S}{dx^2} = 2 + \\dfrac{864}{216} = 2 + 4 = 6 > 0 \\implies\\) concave up \\(\\implies\\) minimum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q14cii",
@@ -10208,7 +10544,8 @@
                   "explain": "Notice that \\(h = 3\\) cm and \\(x = 6\\) cm, so the height is exactly half the base length. This is a useful check: for a lidless square box with fixed volume, the optimal height is always half the base length.",
                   "work": "\\(h = 3 = \\dfrac{6}{2} = \\dfrac{x}{2} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -10247,7 +10584,8 @@
                   "explain": "Now multiply through by \\(x\\) to get the full expression for \\(V\\).",
                   "work": "\\(V = x(216 - 66x + 4x^2) = 216x - 66x^2 + 4x^3 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q15b",
@@ -10281,7 +10619,8 @@
                   "explain": "Confirm \\(x = 2\\) gives a maximum by checking the second derivative.",
                   "work": "\\(\\dfrac{d^2V}{dx^2} = -132 + 24x\\)\n\nAt \\(x = 2\\): \\(\\dfrac{d^2V}{dx^2} = -132 + 48 = -84 < 0 \\implies\\) concave down \\(\\implies\\) maximum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q15c",
@@ -10307,7 +10646,8 @@
                   "explain": "Evaluate to get the maximum volume.",
                   "work": "\\(V_{\\max} = 200\\) cm\\(^3\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10461,7 +10801,8 @@
                   "explain": "Simplify by evaluating \\(4 \\times 3x = 12x\\) and collecting like terms.",
                   "work": "\\(S = 12x + 4x + 4h = 16x + 4h\\) m"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q16b",
@@ -10491,7 +10832,8 @@
                   "explain": "Simplify \\(4 \\times \\dfrac{54}{x^2} = \\dfrac{216}{x^2}\\).",
                   "work": "\\(S = 16x + \\dfrac{216}{x^2} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q16ci",
@@ -10529,7 +10871,8 @@
                   "explain": "Confirm this is a minimum by checking the second derivative.",
                   "work": "\\(\\dfrac{d^2S}{dx^2} = \\dfrac{1296}{x^4}\\)\n\nAt \\(x = 3\\): \\(\\dfrac{d^2S}{dx^2} = \\dfrac{1296}{81} = 16 > 0 \\implies\\) concave up \\(\\implies\\) minimum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q16cii",
@@ -10555,7 +10898,8 @@
                   "explain": "State the dimensions of the frame that minimise steel usage.",
                   "work": "\\(\\text{Width} = 3 \\text{ m, Length} = 9 \\text{ m, Height} = 6 \\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10674,7 +11018,8 @@
                   "explain": "Substitute this expression for \\(d^2\\) into the strength formula \\(s = kwd^2\\).",
                   "work": "\\(s = kw(3600 - w^2) \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q17bi",
@@ -10708,7 +11053,8 @@
                   "explain": "Confirm this is a maximum by checking the second derivative.",
                   "work": "\\(\\dfrac{d^2s}{dw^2} = -6kw\\)\n\nAt \\(w = 20\\sqrt{3}\\): \\(\\dfrac{d^2s}{dw^2} = -6k(20\\sqrt{3}) < 0\\) (since \\(k > 0\\)) \\implies\\) maximum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q17bii",
@@ -10734,7 +11080,8 @@
                   "explain": "Observe the relationship between width and depth: \\(\\dfrac{d}{w} = \\dfrac{20\\sqrt{6}}{20\\sqrt{3}} = \\sqrt{2}\\), so the depth is \\(\\sqrt{2}\\) times the width for the strongest beam.",
                   "work": "\\(d = w\\sqrt{2} = 20\\sqrt{6}\\) cm \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10868,7 +11215,8 @@
                   "explain": "Conclude using similarity tests.",
                   "work": "\\(\\text{Since two angles are equal, the third must also be equal. Therefore, the triangles are similar (AA similarity test).}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q19b",
@@ -10890,7 +11238,8 @@
                   "explain": "Simplify the fraction \\(\\frac{30}{9}\\) and solve for \\(h\\).",
                   "work": "\\(\\dfrac{30 - h}{r} = \\dfrac{10}{3}\\)\n\n\\(30 - h = \\dfrac{10}{3}r\\)\n\n\\(h = 30 - \\dfrac{10}{3}r \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q19c",
@@ -10916,7 +11265,8 @@
                   "explain": "Expand the brackets by distributing \\(\\pi r^2\\) to both terms.",
                   "work": "\\(V = 30\\pi r^2 - \\dfrac{10}{3}\\pi r^3 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q19d",
@@ -10946,7 +11296,8 @@
                   "explain": "Confirm it is a maximum using the second derivative.",
                   "work": "\\(\\dfrac{d^2V}{dr^2} = 60\\pi - 20\\pi r\\)\n\nAt \\(r = 6\\): \\(\\dfrac{d^2V}{dr^2} = 60\\pi - 120\\pi = -60\\pi < 0 \\implies\\) maximum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -11068,7 +11419,8 @@
                   "explain": "Equate the gradients since the points are collinear, and solve for \\(xy\\).",
                   "work": "\\(\\dfrac{4}{-x} = \\dfrac{y}{-6}\\)\n\nMultiply both sides by \\(6x\\):\n\\(-24 = -xy\\)\n\n\\(xy = 24 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q20b",
@@ -11102,7 +11454,8 @@
                   "explain": "Multiply by \\(\\dfrac{1}{2}\\) to get the final expression.",
                   "work": "\\(A = 24 + \\dfrac{72}{x} + 2x = 24 + 2x + \\dfrac{72}{x} \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q20c",
@@ -11132,7 +11485,8 @@
                   "explain": "Substitute \\(x = 6\\) back into the area equation to find the minimum possible area.",
                   "work": "\\(A = 24 + 2(6) + \\dfrac{72}{6}\\)\n\n\\(A = 24 + 12 + 12\\)\n\n\\(A_{\\min} = 48 \\text{ cm}^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -11167,7 +11521,8 @@
                   "explain": "Distribute the \\(v\\) in the denominator into the bracket to get the required form.",
                   "work": "\\(C = 300 \\left(\\dfrac{8100}{v} + \\dfrac{v^2}{v}\\right)\\)\n\n\\(C = 300 \\left(\\dfrac{8100}{v} + v\\right) \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q22b",
@@ -11197,7 +11552,8 @@
                   "explain": "Check the second derivative to confirm this is a minimum.",
                   "work": "\\(\\dfrac{d^2C}{dv^2} = 300\\left(\\dfrac{16200}{v^3}\\right)\\)\n\nAt \\(v = 90\\), this is positive, so the curve is concave up, indicating a minimum. \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q22c",
@@ -11223,7 +11579,8 @@
                   "explain": "The question asks for the cost in dollars. Convert cents to dollars by dividing by 100.",
                   "work": "\\(C = \\dfrac{54000}{100} = 540\\)\n\nMinimum cost is "
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -11403,7 +11760,8 @@
                   "explain": "The total time \\(T\\) is the sum of the rowing time and running time.",
                   "work": "\\(T = \\dfrac{1}{6}\\sqrt{64 + x^2} + \\dfrac{1}{10}(15 - x) \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q23b",
@@ -11429,7 +11787,8 @@
                   "explain": "State the final boundary values.",
                   "work": "\\(T(0) = \\dfrac{17}{6}, \\quad T(15) = \\dfrac{17}{6}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q23c",
@@ -11459,7 +11818,8 @@
                   "explain": "Solve the resulting equation for \\(x\\).",
                   "work": "\\(16x^2 = 576\\)\n\n\\(x^2 = 36\\)\n\n\\(x = 6\\) (since \\(x \\ge 0\\))"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q23d",
@@ -11485,7 +11845,8 @@
                   "explain": "Find a common denominator (30) to add the fractions.",
                   "work": "\\(T(6) = \\dfrac{5}{3} + \\dfrac{9}{10} = \\dfrac{50}{30} + \\dfrac{27}{30}\\)\n\n\\(T(6) = \\dfrac{77}{30} \\text{ hours}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240,
@@ -11537,7 +11898,8 @@
                     "svg": "fig:08b666fceb"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q32b",
@@ -11565,7 +11927,8 @@
                   "work": "\\(A = 16\\pi r-2r^2-\\dfrac12\\pi r^2\\), as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "bb2020-q32c",
@@ -11599,7 +11962,8 @@
                     "svg": "fig:08b666fceb"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q32d",
@@ -11626,7 +11990,8 @@
                   "explain": "Round to 1 decimal place.",
                   "work": "\\(A \\approx 176.9\\text{ m}^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -11671,7 +12036,8 @@
                   "explain": "Add the two times together to get the total time for the trip.",
                   "work": "T(x) = \\dfrac{\\sqrt{x^2+9}}{4}+\\dfrac{6-x}{5} \\quad \\blacksquare"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "glenwood2020-q34b",
@@ -11709,7 +12075,8 @@
                   "explain": "State the minimum time as a decimal, and convert the 0.65 hour remainder to minutes.",
                   "work": "T(4) = 1.65\\ \\text{hours} = 1\\ \\text{hour } 39\\ \\text{minutes}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "steps": [
@@ -11774,7 +12141,8 @@
                   "work": "\\(l^2 = 300\\times\\dfrac{3}{2\\pi} = \\dfrac{900}{2\\pi} = \\dfrac{450}{\\pi}\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "gosford2020-q32b",
@@ -11799,7 +12167,8 @@
                   "work": "\\(V = \\dfrac13r^2\\sqrt{450\\pi-\\pi^2r^2} \\ \\blacksquare\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "gosford2020-q32c",
@@ -11825,7 +12194,8 @@
                   "explain": "Solve for \\(r\\). A sign test either side of this value (\\(dV/dr\\gt 0\\) before, \\(\\lt 0\\) after) confirms it is a maximum, not a minimum.",
                   "work": "\\(r^2 = \\dfrac{300}{\\pi} \\;\\Rightarrow\\; r=\\sqrt{\\dfrac{300}{\\pi}}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -11872,7 +12242,8 @@
                   "explain": "Simplify.",
                   "work": "\\(A = xe^{-x/5}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q31b",
@@ -11903,7 +12274,8 @@
                   "explain": "Substitute \\(x=5\\) into the area formula to find the maximum area.",
                   "work": "\\(A_{\\max} = 5e^{-5/5} = 5e^{-1}\\) units\\(^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q31c",
@@ -11944,7 +12316,8 @@
                   "explain": "Subtract the integral from the trapezium area.",
                   "work": "\\(A = \\dfrac{25}{4}\\ln4-\\dfrac{15}{2}\\) units\\(^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -11995,7 +12368,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q33b",
@@ -12037,7 +12411,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hillsgrammar-25-2u-q33c",
@@ -12070,7 +12445,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -12103,7 +12479,8 @@
               "work": "For \\( f(x) = x^5 \\), the exponent is 5. We add 1 to get 6, and divide by 6:\n\\[ \\int x^5 \\, dx = \\frac{x^{5+1}}{5+1} + C \\]\n\\[ = \\frac{x^6}{6} + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1b",
@@ -12129,7 +12506,8 @@
               "work": "For \\( f(x) = x^4 \\), the exponent is 4. We add 1 to get 5, and divide by 5:\n\\[ \\int x^4 \\, dx = \\frac{x^{4+1}}{4+1} + C \\]\n\\[ = \\frac{x^5}{5} + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1c",
@@ -12155,7 +12533,8 @@
               "work": "For \\( f(x) = x^8 \\), the exponent is 8. We add 1 to get 9, and divide by 9:\n\\[ \\int x^8 \\, dx = \\frac{x^{8+1}}{8+1} + C \\]\n\\[ = \\frac{x^9}{9} + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1d",
@@ -12181,7 +12560,8 @@
               "work": "For \\( f(x) = 4x \\), the exponent is 1. We add 1 to get 2, and divide by 2:\n\\[ \\int 4x^1 \\, dx = 4 \\left( \\frac{x^{1+1}}{1+1} \\right) + C \\]\n\\[ = \\frac{4x^2}{2} + C \\]\n\\[ = 2x^2 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1e",
@@ -12207,7 +12587,8 @@
               "work": "For \\( f(x) = 7 \\):\n\\[ \\int 7 \\, dx = 7x + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1f",
@@ -12233,7 +12614,8 @@
               "work": "For \\( f(x) = 6x^5 \\), the exponent is 5. We add 1 to get 6, and divide by 6:\n\\[ \\int 6x^5 \\, dx = 6 \\left( \\frac{x^{5+1}}{5+1} \\right) + C \\]\n\\[ = \\frac{6x^6}{6} + C \\]\n\\[ = x^6 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1g",
@@ -12259,7 +12641,8 @@
               "work": "For \\( f(x) = 16x^7 \\), the exponent is 7. We add 1 to get 8, and divide by 8:\n\\[ \\int 16x^7 \\, dx = 16 \\left( \\frac{x^{7+1}}{7+1} \\right) + C \\]\n\\[ = \\frac{16x^8}{8} + C \\]\n\\[ = 2x^8 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q1h",
@@ -12285,7 +12668,8 @@
               "work": "\\[ \\int 0 \\, dx = C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2a",
@@ -12311,7 +12695,8 @@
               "work": "Add 1 to the exponent of each term and divide by the new exponent:\n\\[ = \\frac{x^{3+1}}{3+1} + \\frac{x^{5+1}}{5+1} + C \\]\n\\[ = \\frac{x^4}{4} + \\frac{x^6}{6} + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2b",
@@ -12341,7 +12726,8 @@
               "work": "Simplify the fractions:\n\\[ = x^3 - x^4 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2c",
@@ -12371,7 +12757,8 @@
               "work": "Simplify the fractions:\n\\[ = x^3 + x^6 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2d",
@@ -12401,7 +12788,8 @@
               "work": "Simplify the fractions:\n\\[ = \\frac{x^3}{3} - x^2 + 3x + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2e",
@@ -12431,7 +12819,8 @@
               "work": "Simplify the fractions:\n\\[ = 4x - 3x^2 + 3x^8 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q2f",
@@ -12461,7 +12850,8 @@
               "work": "Simplify the fractions:\n\\[ = x^4 - x^5 - x^6 + C \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3a",
@@ -12487,7 +12877,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{x^3}{3} - 2x^2 + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3b",
@@ -12513,7 +12904,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{x^3}{3} - \\frac{x^2}{2} - 6x + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3c",
@@ -12539,7 +12931,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{2x^3}{3} + \\frac{5x^2}{2} - 3x + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3d",
@@ -12565,7 +12958,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{2x^6}{3} - \\frac{3x^4}{4} + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3e",
@@ -12591,7 +12985,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{3x^6}{2} + 2x^3 + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q3f",
@@ -12617,7 +13012,8 @@
               "work": "Apply the power rule \\(\\int x^n dx = \\frac{x^{n+1}}{n+1}\\) to each term:\n\\[\\int f(x) dx = \\frac{x^4}{4} - \\frac{2x^3}{3} + \\frac{x^2}{2} - 2x + C\\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4ai",
@@ -12651,7 +13047,8 @@
               "work": "Substitute \\( C = 4 \\) back into the equation:\n\\[ y = x^2 + 5x + 4 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4aii",
@@ -12685,7 +13082,8 @@
               "work": "Substitute \\( C = 4 \\) back into the equation:\n\\[ y = x^2 + 5x + 4 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4bi",
@@ -12719,7 +13117,8 @@
               "work": "Substitute \\( C = 2 \\) back into the equation:\n\\[ y = 2x^3 + 3x + 2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4bii",
@@ -12753,7 +13152,8 @@
               "work": "Substitute \\( C = 2 \\) back into the equation:\n\\[ y = 2x^3 + 3x + 2 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4ci",
@@ -12787,7 +13187,8 @@
               "work": "Substitute \\( C = 1 \\) back into the equation:\n\\[ y = x^3 - 3x^2 + 4x + 1 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q4cii",
@@ -12821,7 +13222,8 @@
               "work": "Substitute \\( C = 1 \\) back into the equation:\n\\[ y = x^3 - 3x^2 + 4x + 1 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3h-q5a",
@@ -12850,7 +13252,8 @@
               "explain": "Convert back to fraction form",
               "work": "-\\frac{1}{2x^2} + C"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q5b",
@@ -12879,7 +13282,8 @@
               "explain": "Convert back to positive exponent form",
               "work": "-\\frac{1}{3x^3} + C"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q5c",
@@ -12908,7 +13312,8 @@
               "explain": "Write as a positive index fraction",
               "work": "\\frac{1}{x^3} + C"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q5d",
@@ -12937,7 +13342,8 @@
               "explain": "Convert back to fraction form",
               "work": "\\frac{1}{x^4} + C"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q5e",
@@ -12966,7 +13372,8 @@
               "explain": "Convert to fraction form",
               "work": "-\\frac{1}{2x^2} + \\frac{1}{3x^3} + C"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q6a",
@@ -12999,7 +13406,8 @@
               "explain": "State the final expression.",
               "work": "Dividing by a fraction is mathematically identical to multiplying by its reciprocal (flip the fraction):\n\\[ = \\frac{3}{4}x^{\\frac{4}{3}} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q6b",
@@ -13032,7 +13440,8 @@
               "explain": "State the final expression.",
               "work": "Dividing by a fraction is mathematically identical to multiplying by its reciprocal (flip the fraction):\n\\[ = \\frac{3}{2}x^{\\frac{2}{3}} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q6c",
@@ -13065,7 +13474,8 @@
               "explain": "State the final expression.",
               "work": "Dividing by a fraction is mathematically identical to multiplying by its reciprocal (flip the fraction):\n\\[ = \\frac{2}{3}x^{\\frac{3}{2}} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q6d",
@@ -13098,7 +13508,8 @@
               "explain": "State the final expression.",
               "work": "Dividing by \\( \\frac{1}{2} \\) is mathematically identical to multiplying by 2:\n\\[ = 3 \\left( 2x^{\\frac{1}{2}} \\right) + C \\]\n\\[ = 6x^{\\frac{1}{2}} + C = 6\\sqrt{x} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q6e",
@@ -13131,7 +13542,8 @@
               "explain": "State the final expression.",
               "work": "Dividing by a fraction is mathematically identical to multiplying by its reciprocal (flip the fraction):\n\\[ = \\frac{4}{7}x^{\\frac{7}{4}} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q7a",
@@ -13164,7 +13576,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = 3 \\) back into the general equation:\n\\[ y = 2\\sqrt{x} + 3 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q7b",
@@ -13197,7 +13610,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = 6 \\) back into the general equation:\n\\[ y = 2\\sqrt{x} + 6 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q8a",
@@ -13243,7 +13657,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q8b",
@@ -13289,7 +13704,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q8c",
@@ -13335,7 +13751,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q8d",
@@ -13381,7 +13798,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9a",
@@ -13410,7 +13828,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(x-2)^5}{1(5)} + C \\]\n\\[ = \\frac{(x-2)^5}{5} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9b",
@@ -13439,7 +13858,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(x+3)^6}{1(6)} + C \\]\n\\[ = \\frac{(x+3)^6}{6} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9c",
@@ -13468,7 +13888,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(x+2)^3}{1(3)} + C \\]\n\\[ = \\frac{(x+2)^3}{3} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9d",
@@ -13497,7 +13918,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(3x+1)^5}{3(5)} + C \\]\n\\[ = \\frac{(3x+1)^5}{15} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9e",
@@ -13526,7 +13948,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(2x-5)^6}{2(6)} + C \\]\n\\[ = \\frac{(2x-5)^6}{12} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9f",
@@ -13555,7 +13978,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(4x-1)^4}{4(4)} + C \\]\n\\[ = \\frac{(4x-1)^4}{16} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9g",
@@ -13584,7 +14008,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(1-2x)^4}{-2(4)} + C \\]\n\\[ = -\\frac{(1-2x)^4}{8} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9h",
@@ -13613,7 +14038,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(2-3x)^5}{-3(5)} + C \\]\n\\[ = -\\frac{(2-3x)^5}{15} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9i",
@@ -13646,7 +14072,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator:\n\\[ = \\frac{(x-3)^{-4}}{-4} + C \\]\n\\[ = -\\frac{1}{4(x-3)^4} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q9j",
@@ -13679,7 +14106,8 @@
               "explain": "Simplify the arithmetic.",
               "work": "Calculate the numbers in the exponent and the denominator. Note that a negative times a negative becomes positive:\n\\[ = \\frac{(1-2x)^{-5}}{-2(-5)} + C \\]\n\\[ = \\frac{(1-2x)^{-5}}{10} + C \\]\n\\[ = \\frac{1}{10(1-2x)^5} + C \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q10a",
@@ -13708,7 +14136,8 @@
               "explain": "State the final primitive.",
               "work": "Evaluating this gives:\n\\[\\frac{2}{3}(x+3)^{\\frac{3}{2}} + C\\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q10b",
@@ -13737,7 +14166,8 @@
               "explain": "State the final primitive.",
               "work": "Evaluating this gives:\n\\[\\frac{2}{3}(x-2)^{\\frac{3}{2}} + C\\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q10c",
@@ -13766,7 +14196,8 @@
               "explain": "State the final primitive.",
               "work": "Evaluating this gives:\n\\[-\\frac{2}{3}(3-x)^{\\frac{3}{2}} + C\\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q10d",
@@ -13795,7 +14226,8 @@
               "explain": "State the final primitive.",
               "work": "Evaluating this gives:\n\\[\\frac{2}{9}(3x-5)^{\\frac{3}{2}} + C\\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q10e",
@@ -13824,7 +14256,8 @@
               "explain": "State the final primitive.",
               "work": "Evaluating this gives:\n\\[\\frac{1}{3}(2x-3)^{\\frac{3}{2}} + C\\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q11a",
@@ -13857,7 +14290,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = 3 \\) back into the general equation:\n\\[ y = \\frac{(x-2)^5}{5} + 3 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q11b",
@@ -13890,7 +14324,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = -\\frac{25}{12} \\) back into the general equation:\n\\[ y = \\frac{(3x+1)^4}{12} - \\frac{25}{12} \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q11c",
@@ -13923,7 +14358,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = \\frac{7}{9} \\) back into the general equation:\n\\[ y = \\frac{2}{9}(3x+1)^{\\frac{3}{2}} + \\frac{7}{9} \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q12a",
@@ -13956,7 +14392,8 @@
               "explain": "State the final equation.",
               "work": "Since \\( C = 0 \\), the final equation is:\n\\[ y = x^5 - x^3 + 2x \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q12b",
@@ -13989,7 +14426,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = -1 \\) back into the general equation:\n\\[ y = -x^3 + 2x^2 + 3x - 1 \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q12c",
@@ -14022,7 +14460,8 @@
               "explain": "State the final equation.",
               "work": "Substitute \\( C = \\frac{25}{12} \\) back into the general equation:\n\\[ y = -\\frac{(2-3x)^4}{12} + \\frac{25}{12} \\]"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3h-q13",
@@ -14055,7 +14494,8 @@
               "explain": "Find the value of y when t = 2.",
               "work": "Now substitute \\( t = 2 \\) into our specific equation:\n\\[ y = (2)^4 - 2(2)^3 + 3(2) + 5 \\]\n\\[ y = 16 - 2(8) + 6 + 5 \\]\n\\[ y = 16 - 16 + 11 \\]\n\\[ y = 11 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-3h-q14",
@@ -14089,7 +14529,8 @@
               "work": "In mathematics, division by zero is strictly undefined. Because applying the formula results in a zero in the denominator (\\( \\frac{1}{0} \\)), the power rule completely breaks down and cannot be used here.\n\n*(Note: This is why the primitive of \\( x^{-1} \\) is defined separately using the natural logarithm: \\( \\ln|x| + C \\)).*"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3h-q15",
@@ -14123,7 +14564,8 @@
               "work": "We are given that \\( y = 3 \\) when \\( x = 1 \\). Substitute these values to find \\( C_2 \\):\n\\[ 3 = 2(1)^3 + (1)^2 - 3(1) + C_2 \\]\n\\[ 3 = 2 + 1 - 3 + C_2 \\]\n\\[ 3 = 0 + C_2 \\]\n\\[ C_2 = 3 \\]\n\nSubstitute \\( C_2 = 3 \\) back into the equation for our final answer:\n\\[ y = 2x^3 + x^2 - 3x + 3 \\]"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3h-q16",
@@ -14155,7 +14597,8 @@
                   "explain": "Solve for the constant C1",
                   "work": "11 = -9 + C_1 \\implies C_1 = 20 \\implies f'(x) = x^2 - 6x + 20"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3h-q16b",
@@ -14181,7 +14624,8 @@
                   "explain": "Solve for the constant C2",
                   "work": "20 = 42 + C_2 \\implies C_2 = -22 \\implies f(x) = \\frac{x^3}{3} - 3x^2 + 20x - 22"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3h-q16c",
@@ -14199,7 +14643,8 @@
                   "explain": "Find the y-intercept",
                   "work": "The y-intercept occurs when \\( x = 0 \\). Substitute \\( x = 0 \\) into the equation for \\( f(x) \\):\n\\[ f(0) = \\frac{0^3}{3} - 3(0)^2 + 20(0) - 22 \\]\n\\[ f(0) = -22 \\]\nThus, the y-intercept is \\( (0, -22) \\)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -14230,7 +14675,8 @@
                   "explain": "Integrate y' to find the general equation for y.",
                   "work": "Now integrate \\( y' \\) to find \\( y \\). Remember to add a second constant \\( D \\):\n\\[ y = \\int (12x - 3x^2 + C) \\, dx \\]\n\\[ y = \\frac{12x^2}{2} - \\frac{3x^3}{3} + Cx + D \\]\n\\[ y = 6x^2 - x^3 + Cx + D \\]\n\\[ y = -x^3 + 6x^2 + Cx + D \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3h-q17b",
@@ -14260,7 +14706,8 @@
                   "explain": "State the final curve equation.",
                   "work": "Substitute \\( C = 5 \\) and \\( D = 0 \\) back into the general equation:\n\\[ y = -x^3 + 6x^2 + 5x + 0 \\]\n\\[ y = -x^3 + 6x^2 + 5x \\]"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -14295,7 +14742,8 @@
                   "explain": "Combine the results.",
                   "work": "Since both branches have the exact same derivative, we can combine them and write:\n\\[ g'(x) = -\\frac{4}{x^2} \\quad \\text{for all } x \\neq 0 \\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3h-q18b",
@@ -14317,7 +14765,8 @@
                   "explain": "Evaluate point A(2, 3).",
                   "work": "For \\( x = 2 \\), since \\( 2 > 0 \\), we must use the top branch \\( g(x) = \\frac{4}{x} + 1 \\).\n\\[ g(2) = \\frac{4}{2} + 1 \\]\n\\[ g(2) = 2 + 1 = 3 \\]\nThis matches the y-coordinate of \\( A(2, 3) \\), so the graph correctly passes through this point."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3h-q18c",
@@ -14360,7 +14809,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -14397,7 +14847,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "gosford2020-q12",
@@ -14432,7 +14883,8 @@
           },
           "dna": {
             "dnaId": "CALC-INT-01"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -14482,7 +14934,8 @@
               "work": "\\text{Point C is located between B and D. Point H is located after G. Both lie on the upward-sloping sections, so their gradients are positive.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q1b",
@@ -14525,7 +14978,8 @@
               "work": "\\text{Point A is to the left of B. Points E and F are between D and G. Thus, } f'(x) < 0 \\text{ at A, E, F.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q1c",
@@ -14568,7 +15022,8 @@
               "work": "\\text{The stationary points are exactly at B, D, and G.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q1d",
@@ -14611,7 +15066,8 @@
               "work": "\\text{Points A and B are in the left concave up region. Points G and H are in the right concave up region. Thus, A, B, G, H.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q1e",
@@ -14654,7 +15110,8 @@
               "work": "\\text{Points D and E lie between C and F, inside the concave down region. Thus, D, E.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q1f",
@@ -14697,7 +15154,8 @@
               "work": "\\text{The points of inflection are C and F.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q2a",
@@ -14723,7 +15181,8 @@
               "work": "f'(x) = 3x^2 - 6x - 9"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q2bi",
@@ -14748,7 +15207,8 @@
               "work": "\\text{Since } f'(0) = -9 < 0 \\text{, the function is decreasing at } x = 0."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q2bii",
@@ -14773,7 +15233,8 @@
               "work": "\\text{Since } f'(4) = 15 > 0 \\text{, the function is increasing at } x = 4."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q2biii",
@@ -14798,7 +15259,8 @@
               "work": "\\text{Since } f'(-1) = 0 \\text{, the function is stationary at } x = -1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q2biv",
@@ -14823,7 +15285,8 @@
               "work": "\\text{Since } f'(3) = 0 \\text{, the function is stationary at } x = 3."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q3a",
@@ -14845,7 +15308,8 @@
               "work": "f'(x) = 2x - 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q3bi",
@@ -14875,7 +15339,8 @@
               "work": "x > 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q3bii",
@@ -14901,7 +15366,8 @@
               "work": "x < 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q3biii",
@@ -14927,7 +15393,8 @@
               "work": "2x = 6 \\implies x = 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q4a",
@@ -14956,7 +15423,8 @@
               "work": "\\text{Since } f'(1) = 4 > 0 \\text{, the function is increasing at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q4b",
@@ -14989,7 +15457,8 @@
               "work": "\\text{Since } f'(1) = -4 < 0 \\text{, the function is decreasing at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q4c",
@@ -15018,7 +15487,8 @@
               "work": "\\text{Since } f'(1) = 0 \\text{, the function is stationary at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q4d",
@@ -15047,7 +15517,8 @@
               "work": "\\text{Since } f'(1) = -4 < 0 \\text{, the function is decreasing at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q5a",
@@ -15073,7 +15544,8 @@
               "work": "\\text{Apply the power rule again to } 6x^5:\\\\ y'' = 30x^4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q5b",
@@ -15099,7 +15571,8 @@
               "work": "\\text{Differentiate } 4x^3 - 6x \\text{ again:}\\\\ y'' = 12x^2 - 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q5c",
@@ -15125,7 +15598,8 @@
               "work": "\\text{Apply the rule again to } y':\\\\ y'' = 12(x-3)^2 \\times 1 = 12(x-3)^2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q5d",
@@ -15155,7 +15629,8 @@
               "work": "y'' = -2(-2)x^{-3} = 4x^{-3} = \\frac{4}{x^3}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q6a",
@@ -15188,7 +15663,8 @@
               "work": "\\text{Since } f''(1) = 2 > 0 \\text{, the curve is concave up at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q6b",
@@ -15221,7 +15697,8 @@
               "work": "\\text{Since } f''(1) = -42 < 0 \\text{, the curve is concave down at } x = 1."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q7",
@@ -15249,7 +15726,8 @@
                   "explain": "Differentiate f'(x) to get f''(x)",
                   "work": "f''(x) = 12x - 18"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q7bi",
@@ -15275,7 +15753,8 @@
                   "explain": "Solve for x",
                   "work": "12x > 18 \\implies x > \\frac{18}{12} \\implies x > 1.5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q7bii",
@@ -15301,7 +15780,8 @@
                   "explain": "Solve for x",
                   "work": "12x < 18 \\implies x < \\frac{18}{12} \\implies x < 1.5"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -15341,7 +15821,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q8b",
@@ -15378,7 +15859,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q8c",
@@ -15411,7 +15893,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q8d",
@@ -15444,7 +15927,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3i-q9a",
@@ -15489,7 +15973,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q9b",
@@ -15534,7 +16019,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q9c",
@@ -15583,7 +16069,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q9d",
@@ -15632,7 +16119,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q10",
@@ -15679,7 +16167,8 @@
                   "explain": "Evaluate the function at x = 3 to find point Q",
                   "work": "y(3) = 3^3 - 3(3)^2 - 9(3) + 15 = 27 - 27 - 27 + 15 = -12 \\implies Q(3, -12)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q10b",
@@ -15701,7 +16190,8 @@
                   "explain": "Set second derivative strictly positive",
                   "work": "6x - 6 > 0 \\implies 6x > 6 \\implies x > 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q10c",
@@ -15727,7 +16217,8 @@
                   "explain": "State inequality range",
                   "work": "-12 < k < 20"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -15782,7 +16273,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3i-q11b",
@@ -15835,7 +16327,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3i-q11c",
@@ -15888,7 +16381,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-3i-q12",
@@ -15943,7 +16437,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q12b",
@@ -15965,7 +16460,8 @@
                   "explain": "Select the absolute minimum and maximum values",
                   "work": "\\text{The largest value is } 56 \\text{ at } x=-2 \\text{, and the smallest value is } -52 \\text{ at } x=4."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -16000,7 +16496,8 @@
               "explain": "Solve for a",
               "work": "a = -4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q13ba",
@@ -16033,7 +16530,8 @@
               "explain": "Solve the simultaneous equations for a",
               "work": "\\text{Substitute } b = 4a \\text{ from the first equation into the second equation:}\\\\ 2a - (4a) = -2 \\implies -2a = -2 \\implies a = 1"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q13bb",
@@ -16066,7 +16564,8 @@
               "explain": "Solve the simultaneous equations for b",
               "work": "\\text{We have two equations:}\\\\ \\text{1) } b = 4a\\\\ \\text{2) } 2a - b = -2\\\\ \\text{Substitute (1) into (2):}\\\\ 2a - (4a) = -2 \\implies -2a = -2 \\implies a = 1.\\\\ \\text{Now substitute } a = 1 \\text{ back into equation (1) to find } b:\\\\ b = 4(1) = 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-3i-q14",
@@ -16096,7 +16595,8 @@
                   "explain": "Substitute x = 2 into y",
                   "work": "y(2) = 2^4 - 4(2)^3 + 12 = 16 - 32 + 12 = -4 \\implies (2, -4) \\text{ is inflection point}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3i-q14b",
@@ -16122,7 +16622,8 @@
                   "explain": "Evaluate at the given point",
                   "work": "\\text{The point of inflection is at } x = 2 \\text{. Substitute } x = 2 \\text{ into } y':\\\\ y'(2) = 4(2)^3 - 12(2)^2 = 32 - 48 = -16"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q14c",
@@ -16138,7 +16639,8 @@
                   "explain": "Expand and rearrange to standard form",
                   "work": "y + 4 = -16x + 32 \\implies 16x + y - 28 = 0"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ]
         },
@@ -16168,7 +16670,8 @@
                   "explain": "Evaluate the formula",
                   "work": "\\text{Substitute } t = 0 \\text{ into the formula } S = 600 + 54t^2 - 3t^4:\\\\ S(0) = 600 + 54(0)^2 - 3(0)^4 = 600"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q15b",
@@ -16198,7 +16701,8 @@
                   "explain": "Find the final value",
                   "work": "S(5) = 600 + 1350 - 1875 = 75"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q15c",
@@ -16228,7 +16732,8 @@
                   "explain": "Evaluate S at critical points and endpoints",
                   "work": "\\text{We know } S(0) = 600 \\text{ and } S(5) = 75.\\\\ \\text{Now evaluate at } t = 3:\\\\ S(3) = 600 + 54(3)^2 - 3(3)^4 = 600 + 486 - 243 = 843.\\\\ \\text{Comparing 600, 75, and 843, the maximum is 843.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -16262,7 +16767,8 @@
                   "explain": "Distribute x to get final expression",
                   "work": "V = 4x^3 - 64x^2 + 240x"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q16b",
@@ -16296,7 +16802,8 @@
                   "explain": "Calculate the maximum volume",
                   "work": "\\text{Substitute } x = \\frac{10}{3} \\text{ back into the factored volume formula:}\\\\ V = \\frac{10}{3}\\left(20 - 2\\left(\\frac{10}{3}\\right)\\right)\\left(12 - 2\\left(\\frac{10}{3}\\right)\\right)\\\\ V = \\frac{10}{3}\\left(\\frac{40}{3}\\right)\\left(\\frac{16}{3}\\right) = \\frac{6400}{27}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -16330,7 +16837,8 @@
                   "explain": "Expand the expression",
                   "work": "V = \\frac{1}{3}\\pi r^2(15) - \\frac{1}{3}\\pi r^2(r) = 5\\pi r^2 - \\frac{1}{3}\\pi r^3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3i-q17b",
@@ -16356,7 +16864,8 @@
                   "explain": "Find stationary points",
                   "work": "\\text{Set the derivative to zero:}\\\\ 10\\pi r - \\pi r^2 = 0\\\\ \\pi r(10 - r) = 0\\\\ \\text{Since a cone must have a positive radius } (r > 0)\\text{, we divide by } \\pi r \\text{ to get:}\\\\ 10 - r = 0 \\implies r = 10"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -16389,7 +16898,8 @@
               "work": "\\text{Since it is an indefinite integral, we must add the arbitrary constant } C:\\\\ \\frac{x^9}{9} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q18b",
@@ -16419,7 +16929,8 @@
               "work": "\\text{Simplify the coefficient and add the constant of integration } C:\\\\ 2x^2 + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q18c",
@@ -16449,7 +16960,8 @@
               "work": "\\text{Always add } C \\text{ for indefinite integrals:}\\\\ 6x + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q18d",
@@ -16475,7 +16987,8 @@
               "work": "\\text{Simplify the coefficient and add } C:\\\\ 3x^5 + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q18e",
@@ -16513,7 +17026,8 @@
               "work": "3x^2 + 2x^3 - x^4 + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q19a",
@@ -16543,7 +17057,8 @@
               "work": "\\text{Since this is an indefinite integral, add } + C \\text{ at the end:}\\\\ \\frac{2x^3}{3} - 3x^2 + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q19b",
@@ -16573,7 +17088,8 @@
               "work": "\\text{Always add } + C \\text{ for indefinite integrals:}\\\\ \\frac{x^3}{3} - x^2 - 8x + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q19c",
@@ -16603,7 +17119,8 @@
               "work": "3x^3 - 6x^2 + 4x + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q20a",
@@ -16633,7 +17150,8 @@
               "work": "\\text{Always add } + C \\text{ for indefinite integrals:}\\\\ \\frac{(x+3)^5}{5} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q20b",
@@ -16655,7 +17173,8 @@
               "work": "\\text{Apply the composite linear integration rule. Increase the power from 6 to 7, and divide by 7(1).}\\\\ \\int (x-2)^6 \\, dx = \\frac{(x-2)^7}{7} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q20c",
@@ -16681,7 +17200,8 @@
               "work": "\\frac{(3x-1)^5}{15} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q21a",
@@ -16711,7 +17231,8 @@
               "work": "-\\frac{1}{2x^2} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q21b",
@@ -16737,7 +17258,8 @@
               "work": "\\text{Increase the power by 1: } \\frac{1}{3} + 1 = \\frac{4}{3}\\text{. Divide by } \\frac{4}{3} \\text{, which is equivalent to multiplying by } \\frac{3}{4}:\\\\ \\int x^{\\frac{1}{3}} \\, dx = \\frac{x^{\\frac{4}{3}}}{\\frac{4}{3}} + C = \\frac{3}{4}x^{\\frac{4}{3}} + C"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q22",
@@ -16767,7 +17289,8 @@
               "work": "\\text{Substitute } C = 4 \\text{ back into the original equation:}\\\\ y = x^3 - 3x^2 + 2x + 4"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-3i-q23",
@@ -16801,7 +17324,8 @@
               "work": "\\text{Substitute } x = 3 \\text{ into the complete function:}\\\\ f(3) = 3(3)^2 - 2(3) + 3 = 27 - 6 + 3 = 24"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         }
       ]
     }

@@ -29,7 +29,8 @@
               "explain": "There are 4 equally likely sections, and blue is 1 of them.",
               "work": "\\(P(\\text{blue}) = \\dfrac{\\text{favourable outcomes}}{\\text{total outcomes}} = \\dfrac{1}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-chan-1-q2",
@@ -53,7 +54,8 @@
               "explain": "The probability of red is the number of red counters over the total.",
               "work": "\\(P(\\text{red})=\\dfrac{3}{8}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -88,7 +90,8 @@
               "explain": "Coin B's larger number of trials gives a result much closer to the true probability — this is a general property of random trials.",
               "work": "Coin B is closer"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-chan-2-q2",
@@ -112,7 +115,8 @@
               "explain": "Convert to a percentage.",
               "work": "\\(\\dfrac{22}{30}\\times100\\%\\approx73.3\\%\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -143,7 +147,8 @@
               "explain": "Multiply by the number of trials to find the expected count.",
               "work": "\\(60\\times\\dfrac16=10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-chan-3-q2",
@@ -171,7 +176,8 @@
               "explain": "Compare the two values.",
               "work": "\\(30\\%\\gt25\\%\\) — the observed result is somewhat higher than expected"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

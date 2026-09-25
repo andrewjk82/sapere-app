@@ -44,7 +44,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -85,7 +86,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y10-8a-q2b-theta",
@@ -123,7 +125,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-8a-q2c-theta",
@@ -154,7 +157,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2c-y",
@@ -185,7 +189,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8a-q2d-alpha",
@@ -212,7 +217,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2d-beta",
@@ -249,7 +255,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2d-y",
@@ -284,7 +291,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2e-theta",
@@ -318,7 +326,8 @@
                 "html": "<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n<g transform=\"translate(0, 0)\">\n  <path d=\"M 80 150 L 220 150 L 150 29 Z\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"80\" cy=\"150\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"220\" cy=\"150\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"150\" cy=\"29\" r=\"4\" fill=\"#1e40af\"/>\n  <line x1=\"220\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <text x=\"150\" y=\"15\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text><text x=\"70\" y=\"170\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text><text x=\"215\" y=\"175\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">D</text><text x=\"275\" y=\"175\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">E</text><text x=\"190\" y=\"140\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">55°</text>\n  </g></svg></div>"
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-8a-q2e-alpha",
@@ -352,7 +361,8 @@
                 "html": "<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n<g transform=\"translate(0, 0)\">\n  <line x1=\"20\" y1=\"50\" x2=\"280\" y2=\"50\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <line x1=\"60\" y1=\"20\" x2=\"200\" y2=\"180\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  <circle cx=\"86\" cy=\"50\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"174\" cy=\"150\" r=\"4\" fill=\"#1e40af\"/>\n  <text x=\"40\" y=\"40\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text><text x=\"90\" y=\"40\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text><text x=\"190\" y=\"140\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">G</text><text x=\"120\" y=\"40\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">70°</text><text x=\"140\" y=\"140\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">110°</text>\n  </g></svg></div>"
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-8a-q2f-alpha",
@@ -400,7 +410,8 @@
           },
           "ext": {
             "explanation": "**Finding α = ∠PTU**\n\nSince line \\(PQ \\parallel\\) line \\(RS\\), we can draw an auxiliary line through point \\(T\\) that is parallel to both lines. This helps us use alternate interior angles.\n\nThe auxiliary line through \\(T\\) is parallel to \\(PQ\\). By the **Alternate Interior Angles** theorem, the angle on the left part of \\(\\angle PTU\\) is equal to \\(\\angle TPQ\\):\n$$\\angle \\text{(left part)} = 48^\\circ$$\n\nThe auxiliary line is also parallel to \\(RS\\). Since \\(\\angle TUS = 73^\\circ\\), by the **Alternate Interior Angles** theorem, the right part of \\(\\angle PTU\\) is equal to \\(\\angle TUS\\):\n$$\\angle \\text{(right part)} = 73^\\circ$$\n\nAdding both parts gives the total angle for \\(\\alpha\\):\n$$\\alpha = 48^\\circ + 73^\\circ = \\boxed{121^\\circ}$$"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2f-beta",
@@ -448,7 +459,8 @@
           },
           "ext": {
             "explanation": "**Finding β = ∠AKC**\n\n**Key Concept:** Draw an auxiliary line through \\(K\\) parallel to both \\(EF\\) and \\(GH\\).\n\n**Step 1 — Find the interior angle at \\(A\\):**\nSince \\(\\angle KAE = 130°\\), and \\(EAF\\) is a straight line:\n$$\\angle KAF = 180° - 130° = 50°$$\n\n**Step 2 — Apply Alternate Interior Angles at \\(K\\) (upper part):**\nThe auxiliary line through \\(K\\) is parallel to \\(EF\\). Transversal \\(AK\\) cuts them.\nBy the **Alternate Interior Angles Theorem**:\n$$\\angle_{\\text{upper}} = \\angle KAF = 50°$$\n\n**Step 3 — Find the interior angle at \\(C\\):**\nSince \\(\\angle KCG = 125°\\), and \\(GCH\\) is a straight line:\n$$\\angle KCH = 180° - 125° = 55°$$\n\n**Step 4 — Apply Alternate Interior Angles at \\(K\\) (lower part):**\nThe auxiliary line through \\(K\\) is parallel to \\(GH\\). Transversal \\(KC\\) cuts them.\nBy the **Alternate Interior Angles Theorem**:\n$$\\angle_{\\text{lower}} = \\angle KCH = 55°$$\n\n**Step 5 — Add both parts:**\n$$\\beta = \\angle AKC = 50° + 55° = \\boxed{105°}$$"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2g-alpha",
@@ -486,7 +498,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-8a-q2g-theta",
@@ -519,7 +532,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2h-alpha",
@@ -556,7 +570,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2h-beta",
@@ -593,7 +608,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8a-q2i-alpha",
@@ -627,7 +643,8 @@
                 "html": "<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n<g transform=\"translate(0, 0)\">\n  <path d=\"M 80 150 L 220 150 L 150 29 Z\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <circle cx=\"80\" cy=\"150\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"220\" cy=\"150\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"150\" cy=\"29\" r=\"4\" fill=\"#1e40af\"/>\n  <line x1=\"150\" y1=\"29\" x2=\"280\" y2=\"29\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"4,4\" stroke-linecap=\"round\"/>\n  <text x=\"135\" y=\"20\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text><text x=\"65\" y=\"170\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text><text x=\"235\" y=\"170\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text>\n  </g></svg></div>"
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-8a-q2i-beta",
@@ -658,7 +675,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2j-alpha",
@@ -689,7 +707,8 @@
                 "html": "<div style=\"display:flex;justify-content:center;align-items:center;margin:10px 0;\">\n<svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n<g transform=\"translate(0, 0)\">\n  <circle cx=\"150\" cy=\"100\" r=\"80\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"3\"/>\n  <circle cx=\"150\" cy=\"100\" r=\"4\" fill=\"#1e40af\"/>\n  <path d=\"M 150 100 L 80 140 M 150 100 L 220 140 M 80 140 L 150 20 M 220 140 L 150 20\" stroke=\"#2563eb\" stroke-width=\"3\" fill=\"none\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"140\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"220\" cy=\"140\" r=\"4\" fill=\"#1e40af\"/><circle cx=\"150\" cy=\"20\" r=\"4\" fill=\"#1e40af\"/>\n  <text x=\"150\" y=\"55\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">60°</text><text x=\"150\" y=\"130\" font-family=\"'Outfit',sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">120°</text>\n  </g></svg></div>"
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-8a-q2k-alpha",
@@ -724,7 +743,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8a-q2l-alpha",
@@ -755,7 +775,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2m-alpha",
@@ -796,7 +817,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8a-q2m-beta",
@@ -830,7 +852,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8a-q3",
@@ -865,7 +888,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8a-q4",
@@ -900,7 +924,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "jr2013-qCd",
@@ -944,7 +969,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q10",
@@ -983,7 +1009,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q29",
@@ -1023,7 +1050,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jrhy2008-q30",
@@ -1064,7 +1092,8 @@
           },
           "figure": {
             "svg": "fig:4a9a60aa48"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sth2013-q12",
@@ -1110,7 +1139,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -1158,7 +1188,8 @@
                   "work": "\\(\\therefore \\angle LCD = \\angle LXB\\), as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "jrhy2008-q34b",
@@ -1197,7 +1228,8 @@
                   "explain": "Write the circle equation using this centre and radius (radius squared \\(=\\left(\\dfrac{5\\sqrt5}{2}\\right)^2=\\dfrac{125}{4}=31.25\\)).",
                   "work": "\\((x-8)^2+(y-2.5)^2 = 31.25\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "manual": true,
@@ -1261,7 +1293,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sth2013-q8",
@@ -1304,7 +1337,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -1364,7 +1398,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sth2013-q9",
@@ -1407,7 +1442,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q17e",
@@ -1456,7 +1492,8 @@
                   "explain": "Two pairs of equal angles: the triangles are equiangular. (SAS and SSS can't be used — \\(x\\) and \\(y\\) are unknown, so the side ratios aren't known yet.)",
                   "work": "\\(\\triangle XPQ\\sim\\triangle XWY\\ (\\text{equiangular})\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "sth2013-q17e-ii",
@@ -1483,7 +1520,8 @@
                   "explain": "Cross-multiply and solve. (\\(\\tfrac{64}{5}\\) is XY, the whole side — not \\(x\\).)",
                   "work": "\\(5(8+x)=64\\ \\Rightarrow\\ 5x=24\\ \\Rightarrow\\ x=\\tfrac{24}5=4.8\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "sth2013-q17e-iii",
@@ -1510,7 +1548,8 @@
                   "explain": "Solve for \\(y\\). (Using \\(\\tfrac{5}{3}\\) — part to part — instead of \\(\\tfrac58\\) gives the wrong \\(\\tfrac{18}5\\).)",
                   "work": "\\(5y=48\\ \\Rightarrow\\ y=\\tfrac{48}5=9.6\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1555,7 +1594,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1696,7 +1736,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8e-q1a-b",
@@ -1830,7 +1871,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8e-q1b-a",
@@ -1959,7 +2001,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8e-q1b-b",
@@ -2093,7 +2136,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8e-q2",
@@ -2127,7 +2171,8 @@
               "work": "\\(30\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-8e-q3a-i",
@@ -2240,7 +2285,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q3a-ii",
@@ -2357,7 +2403,8 @@
               "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-8e-q3b",
@@ -2438,7 +2485,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q4a-i",
@@ -2575,7 +2623,8 @@
               "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
               "work": "\\(AAA\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-8e-q4a-ii",
@@ -2707,7 +2756,8 @@
               "work": "3"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y10-8e-q4b",
@@ -2808,7 +2858,8 @@
               "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
               "work": "\\(AAS\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-8e-q5",
@@ -2840,7 +2891,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8e-q6a",
@@ -2875,7 +2927,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y10-8e-q6b",
@@ -2915,7 +2968,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y10-8e-q6c",
@@ -2958,7 +3012,8 @@
           },
           "alsoIn": [
             "exam:year10ch8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-8e-q7a",
@@ -2986,7 +3041,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y10-8e-q7b",
@@ -3018,7 +3074,8 @@
               "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
               "work": "\\(120\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-8e-q8",
@@ -3050,7 +3107,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-8e-q9",
@@ -3082,7 +3140,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-8e-q10",
@@ -3173,7 +3232,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch8e"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-8e-q11a",
@@ -3201,7 +3261,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q11b",
@@ -3229,7 +3290,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q12",
@@ -3266,7 +3328,8 @@
               "work": "\\(y = hs/w\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-8e-q13a",
@@ -3294,7 +3357,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q13b",
@@ -3322,7 +3386,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q14a",
@@ -3453,7 +3518,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q14b",
@@ -3584,7 +3650,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q15a",
@@ -3612,7 +3679,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q15b",
@@ -3643,7 +3711,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y10-8e-q3",
@@ -3754,7 +3823,8 @@
                   "explain": "Conclude similarity via AAA.",
                   "work": "\\( \\Delta APQ \\sim \\Delta ABC \\text{ (AAA)} \\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-8e-q3a-ii",
@@ -3859,7 +3929,8 @@
                   "explain": "Solve for \\(x\\).",
                   "work": "\\( x = 2 \\times 3 = 6 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-8e-q3b",
@@ -3940,7 +4011,8 @@
                   "explain": "Apply RHS congruence rule.",
                   "work": "\\( \\Delta PMR \\equiv \\Delta PMS \\text{ (RHS)} \\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Check sub-questions",
@@ -3975,7 +4047,8 @@
                   "explain": "Conclude the similarity rule.",
                   "work": "Since all corresponding angles are equal, \\( \\Delta ABC \\sim \\Delta DEF \\) by the AAA (Angle-Angle-Angle) similarity rule."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-8e-q4a-ii",
@@ -4001,7 +4074,8 @@
                   "explain": "Solve for \\(x\\).",
                   "work": "\\( x = 4 \\times \\frac{6}{8} = 3 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-8e-q4b",
@@ -4025,7 +4099,8 @@
                   "explain": "Conclude the congruence rule.",
                   "work": "We have two corresponding angles and one corresponding side equal. Therefore, \\( \\Delta AEO \\equiv \\Delta BFO \\) by the AAS (Angle-Angle-Side) congruence rule."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Check sub-questions",
@@ -4069,7 +4144,8 @@
                   "explain": "Conclude similarity.",
                   "work": "Since two angles are equal, the third must also be equal. The triangles \\( \\Delta PQL \\) and \\( \\Delta NML \\) are similar by the AA (or AAA) similarity test."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-8e-q7b",
@@ -4095,7 +4171,8 @@
                   "explain": "Simplify and solve for PQ.",
                   "work": "The right side simplifies to \\( \\frac{80}{40} = 2 \\). Multiplying both sides by 60 yields \\( PQ = 60 \\times 2 = 120 \\text{ m} \\)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Check sub-questions",
@@ -4238,7 +4315,8 @@
                   "explain": "Conclude similarity.",
                   "work": "\\Delta ABO \\sim \\Delta CDO \\text{ (AAA)}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-8e-q11b",
@@ -4258,7 +4336,8 @@
                   "explain": "Multiply by 2 to clear the fraction.",
                   "work": "2AC = 3OC"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Check sub-questions",
@@ -4300,7 +4379,8 @@
                   "explain": "Apply a congruence test.",
                   "work": "Since we have two pairs of equal sides (\\(FB = FB\\) and \\(DF = EF\\)) and their included angles are equal (\\(\\angle DFB = \\angle EFB = 90^\\circ\\)), we can conclude that \\(\\Delta DFB \\equiv \\Delta EFB\\) by the SAS (Side-Angle-Side) congruence test."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-8e-q13b",
@@ -4323,7 +4403,8 @@
                   "explain": "Apply a congruence test.",
                   "work": "In \\(\\Delta ABD\\) and \\(\\Delta CBE\\), we have two pairs of equal sides (\\(AB = CB\\) and \\(AD = CE\\)) and their included angles are equal (\\(\\angle A = \\angle C\\)). Thus, \\(\\Delta ABD \\equiv \\Delta CBE\\) by the SAS (Side-Angle-Side) congruence test."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Check sub-questions",
@@ -4461,7 +4542,8 @@
                   "explain": "Conclude similarity.",
                   "work": "\\Delta ABE \\sim \\Delta ADF \\text{ (AAA)}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-8e-q14b",
@@ -4481,7 +4563,8 @@
                   "explain": "Prove congruence by SAS and conclude side equality.",
                   "work": "\\Delta ADE \\equiv \\Delta ABF \\text{ (SAS)} \\implies DE = BF"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Check sub-questions",
@@ -4522,7 +4605,8 @@
                   "explain": "Apply a similarity test and conclude.",
                   "work": "Because the ratio of two corresponding sides is equal and the included angle (\\(\\angle A\\)) is common, we can conclude that \\(\\Delta AMN \\sim \\Delta ABC\\) by the SAS (Side-Angle-Side) similarity test. Since the triangles are similar, their corresponding angles are equal (\\(\\angle AMN = \\angle ABC\\)). Because these are corresponding angles on a transversal, it proves that the lines must be parallel: \\(BC \\parallel MN\\)."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-8e-q15b",
@@ -4549,7 +4633,8 @@
                   "explain": "Use similarity to find the ratio of lengths.",
                   "work": "Because these triangles are similar, the ratio of their corresponding sides is equal: \\(\\frac{PN}{BP} = \\frac{MN}{BC}\\). From part (a), we know \\(\\Delta AMN \\sim \\Delta ABC\\) with a ratio of \\(\\frac{1}{4}\\), meaning \\(\\frac{MN}{BC} = \\frac{1}{4}\\). Therefore, \\(\\frac{PN}{BP} = \\frac{1}{4}\\). Multiplying both sides by \\(4 \\cdot BP\\) gives \\(BP = 4PN\\)."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Check sub-questions",

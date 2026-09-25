@@ -41,7 +41,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs-y7-t4-2021-q23b",
@@ -81,7 +82,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs-y7-t4-2024-pyth-2",
@@ -118,7 +120,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs-y7-t4-2024-secb-e",
@@ -157,7 +160,8 @@
           "timeLimit": 240,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-ep1-q1_pythagoras",
@@ -191,7 +195,8 @@
               "explain": "Take the square root to find \\(d\\). Since \\(d\\) is a length, it must be positive.",
               "work": "\\(d = \\sqrt{625} = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "mrcroker-q3a",
@@ -235,7 +240,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "mrcroker-q5",
@@ -279,7 +285,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "mrcroker-q6",
@@ -314,7 +321,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "mrcroker-q7i",
@@ -348,7 +356,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "mrcroker-q9",
@@ -391,7 +400,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs2026-p2a",
@@ -422,7 +432,8 @@
               "explain": "Take the square root.",
               "work": "\\(x=\\sqrt{100}=10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-p2b",
@@ -453,7 +464,8 @@
               "explain": "Divide by 25 and take the square root (rejecting the negative root since \\(x>0\\)).",
               "work": "\\(x^2=4 \\Rightarrow x=2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-p3-2",
@@ -480,7 +492,8 @@
               "explain": "Take the square root.",
               "work": "\\(AD=\\sqrt{225}=15\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-wm2b",
@@ -511,7 +524,8 @@
               "explain": "Simplify, leaving the answer in exact (surd) form.",
               "work": "\\(400-25=375 \\Rightarrow x=\\sqrt{375}\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -555,7 +569,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q23a",
@@ -595,7 +610,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs-y7-t4-2024-pyth-1a",
@@ -632,7 +648,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-pyth-1b",
@@ -670,7 +687,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-ep1-q2_pythagoras",
@@ -704,7 +722,8 @@
               "explain": "Take the square root and round to 1 decimal place.",
               "work": "\\(w = \\sqrt{28.29} \\approx 5.3188 \\approx 5.3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-p3-1",
@@ -731,7 +750,8 @@
               "explain": "Take the square root.",
               "work": "\\(AB=\\sqrt{144}=12\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -849,7 +869,8 @@
               "explain": "Step 4: Solve for $x$.",
               "work": "\\( x = \\sqrt{169} = 13 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q2a",
@@ -944,7 +965,8 @@
               "explain": "Step 4: Solve for the hypotenuse $x$.",
               "work": "\\( x = \\sqrt{1156} = 34 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q2b",
@@ -1039,7 +1061,8 @@
               "explain": "Step 4: Solve for the hypotenuse $x$.",
               "work": "\\( x = \\sqrt{7225} = 85 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q2c",
@@ -1134,7 +1157,8 @@
               "explain": "Step 4: Solve for the missing leg $x$.",
               "work": "\\( x = \\sqrt{1600} = 40 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q3a-x",
@@ -1252,7 +1276,8 @@
               "explain": "Step 4: Solve for $x$.",
               "work": "\\( x = \\sqrt{169} = 13 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q3a-y",
@@ -1370,7 +1395,8 @@
               "explain": "Step 4: Solve for $y$.",
               "work": "\\( y = \\sqrt{400} = 20 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q3b",
@@ -1500,7 +1526,8 @@
               "explain": "Step 4: Solve for $x$.",
               "work": "\\( x = \\sqrt{289} = 17 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q4",
@@ -1603,7 +1630,8 @@
               "explain": "Step 4: Solve for the length $b$.",
               "work": "\\( b = \\sqrt{3600} = 60 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q5",
@@ -1719,7 +1747,8 @@
               "explain": "Step 4: Solve for the height $h$.",
               "work": "\\( h = \\sqrt{225} = 15 \\text{ m} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q6",
@@ -1816,7 +1845,8 @@
               "explain": "Step 4: Solve for $x$ and round to 2 decimal places.",
               "work": "\\( x = \\sqrt{50} \\approx 7.07106... \\)<br>\\( x \\approx 7.07 \\text{ m} \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-8d-q7",
@@ -1918,7 +1948,8 @@
               "explain": "Step 4: Evaluate and solve for $AD$.",
               "work": "\\( AD^2 = 1024 + 576 = 1600 \\)<br>\\( AD = \\sqrt{1600} = 40 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8a",
@@ -1951,7 +1982,8 @@
               "explain": "Step 4: Name the right angle.",
               "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $AB$, the opposite vertex is $C$. Therefore, it is right-angled at $C$."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8b",
@@ -1987,7 +2019,8 @@
           ],
           "alsoIn": [
             "exam:year8ch8review"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8c",
@@ -2020,7 +2053,8 @@
               "explain": "Step 4: Name the right angle.",
               "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $BC$, the opposite vertex is $A$. Therefore, it is right-angled at $A$."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8d",
@@ -2056,7 +2090,8 @@
           ],
           "alsoIn": [
             "exam:year8ch8review"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8e",
@@ -2089,7 +2124,8 @@
               "explain": "Step 4: Name the right angle.",
               "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $AC$, the opposite vertex is $B$. Therefore, it is right-angled at $B$."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-8d-q8f",
@@ -2122,7 +2158,8 @@
               "explain": "Step 4: Name the right angle.",
               "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $BC$, the opposite vertex is $A$. Therefore, it is right-angled at $A$."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

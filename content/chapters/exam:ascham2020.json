@@ -65,7 +65,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-mc3v",
@@ -123,7 +124,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -172,7 +174,8 @@
                   "explain": "Take the square root to find \\(TE\\) and round to the nearest metre.",
                   "work": "\\\\[ TE = \\\\sqrt{825126.9} \\\\approx 908.36 \\\\approx 908 \\\\text{ m} \\\\]"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q18_b",
@@ -209,7 +212,8 @@
                   "explain": "Round to the nearest degree.",
                   "work": "\\\\[ 158^{\\\\circ} \\\\]"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Use the cosine rule for (a), then the sine rule and bearings logic for (b).",
@@ -244,7 +248,8 @@
                   "explain": "Sketch an inverted ∩-shaped parabola, twice as tall.",
                   "work": "\\text{∩-shaped, passing through } (-1, -6)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q22-b",
@@ -260,7 +265,8 @@
                   "explain": "Key point: $(-1, 3) \\to (-6, 3)$.",
                   "work": "(-1, 3) \\to (-6, 3)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "\\(y=-2f(x)\\): point maps to \\((-1,-6)\\). \\(y=f(x/2+2)\\): point maps to \\((-6,3)\\).",
@@ -320,7 +326,8 @@
                   "work": "\\(A = 50\\theta + 150\\sin\\theta = 50(\\theta + 3\\sin\\theta)\\) cm\\(^2\\)"
                 }
               ],
-              "inactive": true
+              "inactive": true,
+              "xp": 4
             },
             {
               "id": "asc2020-q32-b",
@@ -547,7 +554,8 @@
                   "work": "\\(\\theta \\approx 1.91\\) rad"
                 }
               ],
-              "inactive": true
+              "inactive": true,
+              "xp": 4
             }
           ],
           "answer": "See parts (a) and (b)",
@@ -601,7 +609,8 @@
           "meta": {
             "source": "Ascham 2020 Trial Q30",
             "examPaper": "Ascham 2020"
-          }
+          },
+          "xp": 4
         }
       ]
     },
@@ -644,7 +653,8 @@
                   "work": "$$ \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.980 \\end{aligned} $$"
                 }
               ],
-              "hscType": "other"
+              "hscType": "other",
+              "xp": 2
             },
             {
               "id": "asc2020-q17-b",
@@ -678,7 +688,8 @@
                   "work": "\\(\\hat{y} = -1.07x + 9.63\\)"
                 }
               ],
-              "hscType": "other"
+              "hscType": "other",
+              "xp": 2
             }
           ],
           "answer": "See parts (a) and (b)",
@@ -730,7 +741,8 @@
                   "explain": "Finally, we multiply both sides of the equation by the reciprocal fraction to isolate and determine the constant value.",
                   "work": "a = \\dfrac{3}{500}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "asc2020-q31-b",
@@ -756,7 +768,8 @@
                   "explain": "Finally, we substitute the variable limit into the expression and simplify the constants to obtain the cumulative distribution function.",
                   "work": "= \\dfrac{15x^2 - x^3}{500} = \\dfrac{x^2(15-x)}{500}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "asc2020-q31-c",
@@ -782,7 +795,8 @@
                   "explain": "Finally, we subtract the cumulative probability from 1 to obtain the complement probability.",
                   "work": "P(X > 7) = 1 - 0.784 = 0.216"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "options": [
@@ -900,7 +914,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         }
       ]
     }

@@ -36,7 +36,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-ep1-trig-1",
@@ -70,7 +71,8 @@
               "explain": "Round to one decimal place.",
               "work": "\\(x = 10.9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-trig-2",
@@ -104,7 +106,8 @@
               "explain": "Convert to degrees and minutes.",
               "work": "\\(\\theta = 68^\\circ 11' 54.9'' \\approx 68^\\circ 12'\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-trig-3",
@@ -147,7 +150,8 @@
               "explain": "Round to the nearest metre.",
               "work": "\\(152\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-trig-4a",
@@ -181,7 +185,8 @@
               "explain": "Round to the nearest degree.",
               "work": "\\(123^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-trig-4b",
@@ -219,7 +224,8 @@
               "explain": "Round to the nearest km.",
               "work": "\\(1484\\text{ km}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -270,7 +276,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -318,7 +325,8 @@
             "examType": "Assessment Task",
             "grade": "9",
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ch9t3-q4b",
@@ -359,7 +367,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ch9t3-q5",
@@ -397,7 +406,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ch9t3-q8",
@@ -425,7 +435,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "mrcroker-q1a",
@@ -463,7 +474,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q1a",
@@ -500,7 +512,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q1b",
@@ -542,7 +555,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t1q1a",
@@ -585,7 +599,8 @@
             "grade": "9",
             "topic": "y9-13",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t1q1b",
@@ -628,7 +643,8 @@
             "grade": "9",
             "topic": "y9-13",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -673,7 +689,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "mrcroker-q3b",
@@ -705,7 +722,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sg2022-q1h",
@@ -735,7 +753,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sg2022-q3g",
@@ -775,7 +794,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q1c",
@@ -812,7 +832,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t1q2",
@@ -855,7 +876,8 @@
             "grade": "9",
             "topic": "y9-13",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -905,7 +927,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ch9t3-q7",
@@ -949,7 +972,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "ch9t3-q9",
@@ -993,7 +1017,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "ch9t3-q11",
@@ -1027,7 +1052,8 @@
             "school": "Chatswood High School",
             "examType": "Assessment Task",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "mrcroker-q4",
@@ -1072,7 +1098,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "mrcroker-q7ii",
@@ -1110,7 +1137,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sg2022-q2d",
@@ -1150,7 +1178,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q3a",
@@ -1187,7 +1216,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q3b",
@@ -1220,7 +1250,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t1q4",
@@ -1261,7 +1292,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-13"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1303,7 +1335,8 @@
                   "explain": "Point \\(A\\) is in the South-East quadrant, so the compass bearing is expressed as South, this angle, East.",
                   "work": "Compass bearing \\(=\\) S62°E"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "ch9t3-q10b",
@@ -1326,7 +1359,8 @@
                   "explain": "The bearing of \\(O\\) from \\(A\\) (looking back) is this bearing plus \\(180°\\) (since it is less than \\(180°\\)).",
                   "work": "True bearing of \\(O\\) from \\(A\\) \\(= 118°+180° = 298°\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1366,7 +1400,8 @@
                     "svg": "fig:e999b00bf1"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "ch9t3-q12b",
@@ -1401,7 +1436,8 @@
                   "explain": "Round to the nearest degree.",
                   "work": "\\(\\approx 163°\\text{T}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1448,7 +1484,8 @@
           "meta": {
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-willoughby-17-y-pc-q2ii",
@@ -1485,7 +1522,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pc-q2iii",
@@ -1510,7 +1548,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t1q3",
@@ -1546,7 +1585,8 @@
                   "explain": "Calculate and round to the nearest km.",
                   "work": "\\(x \\approx 385.67 \\approx 386 \\text{ km}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t1q3b",
@@ -1568,7 +1608,8 @@
                   "explain": "Since \\(310^\\circ > 180^\\circ\\), we subtract \\(180^\\circ\\).",
                   "work": "\\(310^\\circ - 180^\\circ = 130^\\circ\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {

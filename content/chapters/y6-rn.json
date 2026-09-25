@@ -34,7 +34,8 @@
               "explain": "Thus, the shaded region represents 0.3 of the total grid area. This matches the first option.",
               "work": "\\\\(\\text{Decimal} = 0.3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q1b",
@@ -62,7 +63,8 @@
               "explain": "We conclude that 58 hundredths is equal to 0.58, representing the shaded area.",
               "work": "\\\\(\\text{Decimal} = 0.58\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q1c",
@@ -90,7 +92,8 @@
               "explain": "Therefore, the shaded area written as a decimal is 0.09.",
               "work": "\\\\(\\text{Decimal} = 0.09\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q2a",
@@ -118,7 +121,8 @@
               "explain": "We conclude that the place value of 7 in 53.72 is tenths, which corresponds to the value 0.7.",
               "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q2b",
@@ -146,7 +150,8 @@
               "explain": "Hence, the place value of the digit 7 is hundredths (0.07).",
               "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q2c",
@@ -174,7 +179,8 @@
               "explain": "Thus, the place value of 7 is tens.",
               "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q2d",
@@ -202,7 +208,8 @@
               "explain": "We conclude that the place value of 7 in 5.937 is thousandths.",
               "work": "\\dots \\\\implies \\\\text{Thousandths}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q3a",
@@ -230,7 +237,8 @@
               "explain": "Ordering from greatest to least, we get 5.71 first, then 5.7 (or 5.70), and finally 5.69.",
               "work": "\\\\(5.71, 5.7, 5.69\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q3b",
@@ -258,7 +266,8 @@
               "explain": "Putting them together from greatest to least gives us 3.54, then 3.47, and lastly 3.45.",
               "work": "\\\\(3.54 > 3.47 > 3.45\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q4a",
@@ -286,7 +295,8 @@
               "explain": "This fraction cannot be simplified further because 3 and 10 share no common factors other than 1. Thus, the final answer is 3/10.",
               "work": "\\\\(\\text{Simplified} = \\\\frac{3}{10}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q4b",
@@ -314,7 +324,8 @@
               "explain": "Combine the whole number and the fraction to write it as a mixed numeral.",
               "work": "\\\\(2.9 = 2\\\\frac{9}{10}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q4c",
@@ -342,7 +353,8 @@
               "explain": "Since 7 is a prime number and does not divide 100, the fraction is in its simplest form.",
               "work": "\\\\(\\text{Result} = \\\\frac{7}{100}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q4d",
@@ -370,7 +382,8 @@
               "explain": "Check if 57/100 can be simplified. 57 is divisible by 3 and 19, but 100 is not. Thus, the fraction is in its simplest form.",
               "work": "\\\\(\\text{Final Fraction} = \\\\frac{57}{100}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q5a",
@@ -398,7 +411,8 @@
               "explain": "Therefore, the decimal representation is 0.6.",
               "work": "\\\\(\\text{Result} = 0.6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q5b",
@@ -426,7 +440,8 @@
               "explain": "Thus, the fraction 23/100 is equivalent to the decimal 0.23.",
               "work": "\\\\(\\text{Result} = 0.23\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q5c",
@@ -454,7 +469,8 @@
               "explain": "Thus, the fraction written as a decimal is 0.007.",
               "work": "\\\\(\\text{Result} = 0.007\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q5d",
@@ -482,7 +498,8 @@
               "explain": "Add the whole number and decimal parts together to get the final decimal number.",
               "work": "\\\\(3 + 0.18 = 3.18\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q10a",
@@ -510,7 +527,8 @@
               "explain": "Add the whole dollars and the decimal dollar amount together.",
               "work": "\\\\(\\$8 + \\$0.14 = \\$8.14\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q10b",
@@ -538,7 +556,8 @@
               "explain": "Combine the whole dollars with the cents decimal value.",
               "work": "\\\\(\\$93 + \\$0.05 = \\$93.05\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q10c",
@@ -566,7 +585,8 @@
               "explain": "Sum the components. In finance, keep the trailing zero (write .50 instead of .5) to explicitly denote the cents value.",
               "work": "\\\\(\\$4 + \\$0.50 = \\$4.50\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-q10d",
@@ -594,7 +614,8 @@
               "explain": "Combine the dollars and cents to get the final decimal notation.",
               "work": "\\\\(\\$27 + \\$0.09 = \\$27.09\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q1a",
@@ -622,7 +643,8 @@
               "explain": "Thus, the place value of 3 is hundredths, representing 0.03.",
               "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q1b",
@@ -650,7 +672,8 @@
               "explain": "Thus, the place value of 3 in 17.3 is tenths.",
               "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q1c",
@@ -678,7 +701,8 @@
               "explain": "Therefore, the place value of 3 is tens.",
               "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q1d",
@@ -706,7 +730,8 @@
               "explain": "We conclude that the place value of 3 is thousandths.",
               "work": "\\\\(\\text{Result} = \\\\text{Thousandths}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q2a",
@@ -734,7 +759,8 @@
               "explain": "Add all values together to obtain the final decimal representation.",
               "work": "\\\\(500 + 0 + 3 + 0.8 + 0.06 = 503.86\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l2-q3a",
@@ -762,7 +788,8 @@
               "explain": "Combine everything into the standard expanded notation format.",
               "work": "\\\\(67.25 = (6 \\\\times 10) + (7 \\\\times 1) + \\\\left(2 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l2-q3b",
@@ -790,7 +817,8 @@
               "explain": "Combine the terms. We can include the tenths place as a zero fraction to show complete expansion.",
               "work": "\\\\(4.036 = (4 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(3 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l2-q3c",
@@ -818,7 +846,8 @@
               "explain": "Combine all terms into the complete expanded notation.",
               "work": "\\\\(907.418 = (9 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l2-q4a",
@@ -846,7 +875,8 @@
               "explain": "Arrange the original numbers in order from least to greatest.",
               "work": "\\\\(4.07 < 4.27 < 4.7 < 4.702 < 4.72\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l2-q5a",
@@ -870,7 +900,8 @@
               "explain": "Write this as a fraction with a denominator of 10.",
               "work": "\\dots \\\\implies \\\\frac{9}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q5b",
@@ -894,7 +925,8 @@
               "explain": "Write the value as a fraction.",
               "work": "\\\\(\\text{Fraction} = \\\\frac{57}{100}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q5c",
@@ -922,7 +954,8 @@
               "explain": "Combine the whole number and fraction to write as a mixed numeral.",
               "work": "\\\\(4.03 = 4\\\\frac{3}{100}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q5d",
@@ -946,7 +979,8 @@
               "explain": "Write this as a fraction with a denominator of 1000.",
               "work": "\\\\(\\text{Fraction} = \\\\frac{253}{1000}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q6a",
@@ -970,7 +1004,8 @@
               "explain": "To write 17 hundredths as a decimal, place the digits so the last digit ends in the hundredths column.",
               "work": "\\\\(\\frac{17}{100} = 0.17\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q6b",
@@ -994,7 +1029,8 @@
               "explain": "Convert 5 tenths into decimal form.",
               "work": "\\\\(\\frac{5}{10} = 0.5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q6c",
@@ -1018,7 +1054,8 @@
               "explain": "Convert 8 tenths to decimal format.",
               "work": "\\\\(\\frac{8}{10} = 0.8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l2-q6d",
@@ -1042,7 +1079,8 @@
               "explain": "Convert 15 hundredths to decimal format.",
               "work": "\\\\(\\frac{15}{100} = 0.15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l3-q1a",
@@ -1070,7 +1108,8 @@
               "explain": "Combine both parts to form the final decimal number.",
               "work": "\\\\(865 + 0.902 = 865.902\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q2a",
@@ -1098,7 +1137,8 @@
               "explain": "Write down the complete expanded notation.",
               "work": "\\\\(51.32 = (5 \\\\times 10) + (1 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q2b",
@@ -1126,7 +1166,8 @@
               "explain": "Combine the terms. The zero hundredths term can be shown explicitly.",
               "work": "\\\\(6.705 = (6 \\\\times 1) + \\\\left(7 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(0 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q2c",
@@ -1154,7 +1195,8 @@
               "explain": "Combine the terms to form the final expanded expression.",
               "work": "\\\\(0.914 = \\\\left(9 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q2d",
@@ -1182,7 +1224,8 @@
               "explain": "Combine the terms.",
               "work": "\\\\(207.06 = (2 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q3a",
@@ -1210,7 +1253,8 @@
               "explain": "Order the original numbers from greatest to least according to their compared decimal values.",
               "work": "\\\\(1.403 > 1.4 > 1.34 > 1.304 > 1.04\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q4a",
@@ -1238,7 +1282,8 @@
               "explain": "Divide both the numerator and denominator by 2 to write the fraction in simplest form.",
               "work": "\\\\(\\frac{6 \\div 2}{10 \\div 2} = \\\\frac{3}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l3-q4b",
@@ -1266,7 +1311,8 @@
               "explain": "Divide the numerator and denominator by 25 to simplify.",
               "work": "\\\\(\\frac{25 \\div 25}{100 \\div 25} = \\\\frac{1}{4}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l3-q4c",
@@ -1294,7 +1340,8 @@
               "explain": "Divide numerator and denominator by 2 to get the simplest fraction.",
               "work": "\\\\(\\frac{46 \\div 2}{100 \\div 2} = \\\\frac{23}{50}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l3-q4d",
@@ -1322,7 +1369,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by 5.",
               "work": "\\\\(\\frac{35 \\div 5}{100 \\div 5} = \\\\frac{7}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l3-q11a",
@@ -1350,7 +1398,8 @@
               "explain": "Re-insert the total number of decimal places. 0.4 has one and 7.00 has two, making three decimal places, or write it directly as dollars.",
               "work": "\\\\(0.4 \\\\times 7 = 2.8 \\\\implies \\$2.80\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q11b",
@@ -1378,7 +1427,8 @@
               "explain": "Add the correct unit of measurement (kg) to complete the solution.",
               "work": "\\\\(\\text{Result} = 1.5\\\\text{ kg}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l3-q11c",
@@ -1406,7 +1456,8 @@
               "explain": "Conclude that the result is 9 apples.",
               "work": "\\\\(9 \\\\text{ apples}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l4-q1a",
@@ -1434,7 +1485,8 @@
               "explain": "Divide the numerator and denominator by 25 to simplify the fraction.",
               "work": "\\\\(\\frac{75 \\div 25}{100 \\div 25} = \\\\frac{3}{4}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q1b",
@@ -1466,7 +1518,8 @@
               "explain": "Combine the whole number and simplified fraction.",
               "work": "\\\\(3 + \\\\frac{9}{20} = 3\\\\frac{9}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q1c",
@@ -1494,7 +1547,8 @@
               "explain": "Divide the numerator and denominator by 8 to simplify.",
               "work": "\\\\(\\frac{8 \\div 8}{1000 \\div 8} = \\\\frac{1}{125}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q1d",
@@ -1522,7 +1576,8 @@
               "explain": "Divide the numerator and denominator by 125 to simplify.",
               "work": "\\/ \\\\frac{125 \\div 125}{1000 \\div 125} = \\\\frac{1}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q2a",
@@ -1546,7 +1601,8 @@
               "explain": "Convert 55 hundredths to decimal form.",
               "work": "\\\\(\\frac{55}{100} = 0.55\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q2b",
@@ -1570,7 +1626,8 @@
               "explain": "Convert 74 hundredths to decimal form.",
               "work": "\\\\(\\frac{74}{100} = 0.74\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q2c",
@@ -1594,7 +1651,8 @@
               "explain": "Write 135 thousandths in decimal form, placing the last digit in the thousandths place.",
               "work": "\\\\(\\frac{135}{1000} = 0.135\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q2d",
@@ -1618,7 +1676,8 @@
               "explain": "Convert 14 thousandths into decimal form, using a placeholder zero for the tenths place.",
               "work": "\\\\(\\frac{14}{1000} = 0.014\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l4-q7a",
@@ -1646,7 +1705,8 @@
               "explain": "Position the decimal point to get the value in dollars.",
               "work": "\\\\(0.6 \\\\times 1.5 = 0.9 \\\\implies \\$0.90\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l4-q7b",
@@ -1674,7 +1734,8 @@
               "explain": "Place the decimal point back to get the dollar value.",
               "work": "\\\\(14220 \\\\implies \\$14.22\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l4-q7c",
@@ -1702,7 +1763,8 @@
               "explain": "Multiply the result by 3 to find three quarters of the amount.",
               "work": "\\\\(3 \\\\times \\$0.60 = \\$1.80\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-rn-2-l5-q1a",
@@ -1734,7 +1796,8 @@
               "explain": "State the final decimal value representing the drone's completion portion. Therefore, \\\\(\\frac{3}{8}\\\\) is equivalent to \\\\(0.375\\\\).",
               "work": "\\\\(\\text{Decimal Portion} = 0.375\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q1b",
@@ -1766,7 +1829,8 @@
               "explain": "Verify that the decimal value represents the correct proportion of the kilogram. Therefore, \\\\(\\frac{32}{125}\\\\) of a kilogram is equal to 0.256 kilograms.",
               "work": "\\\\(\\text{Decimal Value} = 0.256\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q1c",
@@ -1798,7 +1862,8 @@
               "explain": "Confirm the final decimal representation of the soil moisture. The crop field's soil moisture is 0.275 of its maximum capacity.",
               "work": "\\\\(\\text{Decimal Value} = 0.275\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q1d",
@@ -1830,7 +1895,8 @@
               "explain": "Conclude that the decimal equivalent of the completion ratio is 0.2. This means the aircraft has completed 0.2 of its test cruise.",
               "work": "\\\\(\\text{Decimal Value} = 0.2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q11",
@@ -1866,7 +1932,8 @@
               "explain": "Add the decimal hours to the whole hours to find the final answer. The total duration is 3.2 hours.",
               "work": "\\\\(3 + 0.2 = 3.2\\\\text{ hours}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q12a",
@@ -1898,7 +1965,8 @@
               "explain": "Conclude that the decimal equivalent of the width is 3.2 cm.",
               "work": "\\\\(\\text{Total Width} = 3.2\\\\text{ cm}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q12b",
@@ -1930,7 +1998,8 @@
               "explain": "Conclude that the sample weight expressed as a decimal is 5.637 kg.",
               "work": "\\\\(\\text{Total Weight} = 5.637\\\\text{ kg}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q12c",
@@ -1962,7 +2031,8 @@
               "explain": "Conclude that the reservoir holds 4.038 litres of coolant.",
               "work": "\\\\(\\text{Total Volume} = 4.038\\\\text{ L}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l5-q12d",
@@ -1994,7 +2064,8 @@
               "explain": "Conclude that the mounting rail length expressed as a decimal is 4.06 metres.",
               "work": "\\\\(\\text{Total Length} = 4.06\\\\text{ m}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-rn-2-l1-q1a",
@@ -2030,7 +2101,8 @@
               "work": "\\\\(\\text{Percentage} = 47\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q1b",
@@ -2066,7 +2138,8 @@
               "work": "\\\\(\\text{Percentage} = 60\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q1c",
@@ -2102,7 +2175,8 @@
               "work": "\\\\(\\text{Percentage} = 12.5\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q2",
@@ -2135,7 +2209,8 @@
               "work": "\\\\(\\text{Incorrect percentage} = 26\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q3a",
@@ -2164,7 +2239,8 @@
               "work": "\\\\(\\text{Simplest form} = \\\\frac{31}{100}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q3b",
@@ -2193,7 +2269,8 @@
               "work": "\\\\(\\text{Simplest form} = \\\\frac{49}{100}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q3c",
@@ -2222,7 +2299,8 @@
               "work": "\\\\(\\text{Simplest form} = \\\\frac{7}{100}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q3d",
@@ -2251,7 +2329,8 @@
               "work": "\\\\(\\text{Simplest form} = \\\\frac{19}{100}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q4a",
@@ -2284,7 +2363,8 @@
               "work": "\\\\(\\text{Percentage} = 17\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q4b",
@@ -2317,7 +2397,8 @@
               "work": "\\\\(\\text{Percentage} = 45\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q4c",
@@ -2350,7 +2431,8 @@
               "work": "\\\\(\\text{Percentage} = 50\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q4d",
@@ -2383,7 +2465,8 @@
               "work": "\\\\(\\text{Percentage} = 25\\%\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q5a",
@@ -2412,7 +2495,8 @@
               "work": "\\\\(\\text{Decimal} = 0.57\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q5b",
@@ -2441,7 +2525,8 @@
               "work": "\\\\(\\text{Decimal} = 0.62\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q5c",
@@ -2470,7 +2555,8 @@
               "work": "\\\\(\\text{Decimal} = 0.08\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q5d",
@@ -2503,7 +2589,8 @@
               "work": "\\\\(\\text{Decimal} = 0.4\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-2-l1-q6a",
@@ -2539,7 +2626,8 @@
               "explain": "Confirm that 75% corresponds to decimal 0.75, fraction 75/100, and simplest fraction 3/4.",
               "work": "\\\\(\\text{Equivalents: } 0.75, \\\\frac{75}{100}, \\\\frac{3}{4}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2579,7 +2667,8 @@
               "work": "\\\\(\\text{Result} = 100\\\\text{ g}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-3-l1-q7b",
@@ -2612,7 +2701,8 @@
               "work": "\\\\(\\text{Result} = 250\\\\text{ mL}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-3-l1-q7c",
@@ -2645,7 +2735,8 @@
               "work": "\\\\(\\text{Result} = 120\\\\text{ cents}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-rn-3-l1-q7d",
@@ -2678,7 +2769,8 @@
               "work": "\\\\(\\text{Result} = 150\\\\text{ cm}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         }
       ]
     }

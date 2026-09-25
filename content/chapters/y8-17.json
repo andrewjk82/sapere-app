@@ -42,7 +42,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q1b",
@@ -78,7 +79,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q2a",
@@ -111,7 +113,8 @@
               "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q2b",
@@ -144,7 +147,8 @@
               "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q2c",
@@ -175,7 +179,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q2d",
@@ -211,7 +216,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q3a",
@@ -247,7 +253,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q3b",
@@ -283,7 +290,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q3c",
@@ -319,7 +327,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q3d",
@@ -355,7 +364,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4a",
@@ -388,7 +398,8 @@
               "explain": "Final answer: 26. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(26\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4b",
@@ -421,7 +432,8 @@
               "explain": "Final answer: -10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4c",
@@ -457,7 +469,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4d",
@@ -493,7 +506,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4e",
@@ -529,7 +543,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q4f",
@@ -565,7 +580,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q5a",
@@ -601,7 +617,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q5b",
@@ -637,7 +654,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q5c",
@@ -670,7 +688,8 @@
               "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q5d",
@@ -703,7 +722,8 @@
               "explain": "Final answer: -8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q5e",
@@ -739,7 +759,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q6ai",
@@ -775,7 +796,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q6aii",
@@ -811,7 +833,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q6aiii",
@@ -847,7 +870,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q6bi",
@@ -883,7 +907,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q6bii",
@@ -919,7 +944,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q7a",
@@ -955,7 +981,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q7b",
@@ -991,7 +1018,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q7c",
@@ -1027,7 +1055,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q8a",
@@ -1060,7 +1089,8 @@
               "explain": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(60\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q8b",
@@ -1096,7 +1126,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q8c",
@@ -1132,7 +1163,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-17a-q9a",
@@ -1165,7 +1197,8 @@
               "explain": "Final answer: \\frac{x}{6}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(\\frac{x}{6}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q9b",
@@ -1198,7 +1231,8 @@
               "explain": "Final answer: P = 12 + \\frac{x}{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(P = 12 + \\frac{x}{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q9ci",
@@ -1234,7 +1268,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q9cii",
@@ -1270,7 +1305,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q9di",
@@ -1306,7 +1342,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q9dii",
@@ -1342,7 +1379,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q10",
@@ -1378,7 +1416,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q11a",
@@ -1414,7 +1453,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q11b",
@@ -1447,7 +1487,8 @@
               "explain": "Final answer: 41. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(41\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q11c",
@@ -1480,7 +1521,8 @@
               "explain": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(100\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17a-q12a",
@@ -1513,7 +1555,8 @@
               "explain": "Final answer: 17. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(17\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-17a-q12b",
@@ -1546,7 +1589,8 @@
               "explain": "Final answer: 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-17a-q12c",
@@ -1579,7 +1623,8 @@
               "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(13\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1621,7 +1666,8 @@
               "explain": "Write the final factorised expression.",
               "work": "\\(3b(4ab + 1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-q5a",
@@ -1645,7 +1691,8 @@
               "explain": "Divide each term by the HCF to find what's left inside the brackets.",
               "work": "\\(4x+8=4(x+2)\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-q5b",
@@ -1669,7 +1716,8 @@
               "explain": "Divide each term by 5.",
               "work": "\\(15m-10a=5(3m-2a)\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-q5c",
@@ -1693,7 +1741,8 @@
               "explain": "Divide each term by \\(-3\\).",
               "work": "\\(-3m-9=-3(m+3)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-q5d",
@@ -1717,7 +1766,8 @@
               "explain": "Divide each term by \\(2k^2\\).",
               "work": "\\(6k^3-2k^2=2k^2(3k-1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-q5e",
@@ -1741,7 +1791,8 @@
               "explain": "This doesn't cancel with the denominator \\(d\\), so the simplified form is the factorised fraction.",
               "work": "\\(\\dfrac{6e(c-2)}{d}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1784,7 +1835,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q1b",
@@ -1820,7 +1872,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q1c",
@@ -1856,7 +1909,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q2",
@@ -1905,7 +1959,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q3a",
@@ -1941,7 +1996,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q3b",
@@ -1982,7 +2038,8 @@
               "explain": "State the final answer.",
               "work": "a = 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q3c",
@@ -2027,7 +2084,8 @@
               "explain": "State the final answer.",
               "work": "t = 5"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4a",
@@ -2056,7 +2114,8 @@
               "explain": "Write the expression for the length, \\(l\\).",
               "work": "l = w + 5"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4b",
@@ -2092,7 +2151,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4c",
@@ -2128,7 +2188,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4d",
@@ -2160,7 +2221,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4e",
@@ -2192,7 +2254,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4f",
@@ -2228,7 +2291,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4g",
@@ -2264,7 +2328,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q4h",
@@ -2308,7 +2373,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5a",
@@ -2333,7 +2399,8 @@
               "explain": "State the final HCF.",
               "work": "6"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5b",
@@ -2362,7 +2429,8 @@
               "explain": "Combine the results to state the final HCF.",
               "work": "3"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5c",
@@ -2391,7 +2459,8 @@
               "explain": "Multiply the numerical HCF by the variable HCF.",
               "work": "5x"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5d",
@@ -2423,7 +2492,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5e",
@@ -2452,7 +2522,8 @@
               "explain": "State the final HCF.",
               "work": "8ab"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5f",
@@ -2481,7 +2552,8 @@
               "explain": "State the final HCF.",
               "work": "7x^2y"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5g",
@@ -2510,7 +2582,8 @@
               "explain": "State the final HCF.",
               "work": "12a^2b"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q5h",
@@ -2534,7 +2607,8 @@
               "work": "1"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y8-17e-q6a",
@@ -2563,7 +2637,8 @@
               "explain": "Factor out the common 4 and place it in front of a single set of brackets.",
               "work": "4(y + 2)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6b",
@@ -2592,7 +2667,8 @@
               "explain": "Factor out the common 7.",
               "work": "7(m - 6)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6c",
@@ -2621,7 +2697,8 @@
               "explain": "Factor out the common 3.",
               "work": "3(-1 + 11p) \\text{ or } 3(11p - 1)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6d",
@@ -2650,7 +2727,8 @@
               "explain": "Factor out the common 6. Do not forget the '+ 1' from the second term!",
               "work": "6(10y + 1)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6e",
@@ -2679,7 +2757,8 @@
               "explain": "Factor out the common -15.",
               "work": "-15(z - 3)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6f",
@@ -2708,7 +2787,8 @@
               "explain": "Factor out the common \\(x\\). Remember the '- 1' from the second term.",
               "work": "x(3x - 1)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6g",
@@ -2737,7 +2817,8 @@
               "explain": "Factor out the common 5.",
               "work": "5(3y^2 + 1)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6h",
@@ -2766,7 +2847,8 @@
               "explain": "Factor out the common \\(8a\\).",
               "work": "8a(9 - a)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6i",
@@ -2795,7 +2877,8 @@
               "explain": "Factor out the common \\(-2q\\). Be careful with the sign inside the brackets.",
               "work": "-2q(p + 4)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6j",
@@ -2824,7 +2907,8 @@
               "explain": "Factor out the common \\(6a\\).",
               "work": "6a(3 + b)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6k",
@@ -2853,7 +2937,8 @@
               "explain": "Factor out the common \\(7xy\\).",
               "work": "7xy(2 + y)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q6l",
@@ -2882,7 +2967,8 @@
               "explain": "Factor out the common \\(6mp\\).",
               "work": "6mp(5n - m)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7a",
@@ -2911,7 +2997,8 @@
               "explain": "Simplify the expression to get the final answer.",
               "work": "3m + 12"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7b",
@@ -2940,7 +3027,8 @@
               "explain": "Simplify. A negative times a negative gives a positive.",
               "work": "-6x + 15"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7c",
@@ -2969,7 +3057,8 @@
               "explain": "Simplify. A negative times a negative gives a positive.",
               "work": "-10x + 15"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7d",
@@ -3002,7 +3091,8 @@
               "explain": "Collect the like terms in the middle (\\(-8x + 3x\\)) to get the final answer.",
               "work": "= 4x^2 - 5x - 6"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7e",
@@ -3034,7 +3124,8 @@
           ],
           "alsoIn": [
             "exam:year8ch17e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7f",
@@ -3063,7 +3154,8 @@
               "explain": "Evaluate the square to get the final answer.",
               "work": "= 9 - x^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7g",
@@ -3096,7 +3188,8 @@
               "explain": "Collect the like terms in the middle (\\(15z + 6z\\)) to get the final answer.",
               "work": "= 9z^2 + 21z + 10"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7h",
@@ -3125,7 +3218,8 @@
               "explain": "Evaluate the squares to get the final answer.",
               "work": "= 9z^2 - 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7i",
@@ -3154,7 +3248,8 @@
               "explain": "Simplify each term to get the final answer.",
               "work": "= x^2 + 6x + 9"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7j",
@@ -3183,7 +3278,8 @@
               "explain": "Simplify each term to get the final answer.",
               "work": "= 9b^2 + 12b + 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7k",
@@ -3216,7 +3312,8 @@
               "explain": "Collect the like terms in the middle (\\(6s - 12s\\)) to get the final answer.",
               "work": "= 9s^2 - 6s - 8"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q7l",
@@ -3249,7 +3346,8 @@
               "explain": "Collect the like terms in the middle (\\(-6ab + 3ab\\)) to get the final answer.",
               "work": "= 9a^2 - 3ab - 2b^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8a",
@@ -3278,7 +3376,8 @@
               "explain": "Write the factorised expression using these two numbers. Since both numbers are the same, we can write it as a perfect square.",
               "work": "(x + 4)(x + 4) = (x + 4)^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8b",
@@ -3307,7 +3406,8 @@
               "explain": "Write the factorised expression. Since both numbers are the same, we can write it as a perfect square.",
               "work": "(a + 3)(a + 3) = (a + 3)^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8c",
@@ -3336,7 +3436,8 @@
               "explain": "Write the factorised expression using these two numbers.",
               "work": "(x - 3)(x - 5)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8d",
@@ -3365,7 +3466,8 @@
               "explain": "Write the factorised expression using these two numbers.",
               "work": "(x + 1)(x + 4)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8e",
@@ -3394,7 +3496,8 @@
               "explain": "Write the factorised expression. Since both numbers are the same, we can write it as a perfect square.",
               "work": "(a - 3)(a - 3) = (a - 3)^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8f",
@@ -3423,7 +3526,8 @@
               "explain": "Write the factorised expression using these two numbers.",
               "work": "(x + 2)(x + 8)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8g",
@@ -3452,7 +3556,8 @@
               "explain": "Write the factorised expression using these two numbers.",
               "work": "(x - 5)(x + 2)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8h",
@@ -3481,7 +3586,8 @@
               "explain": "Write the factorised expression using these two numbers.",
               "work": "(a - 7)(a + 4)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8i",
@@ -3510,7 +3616,8 @@
               "explain": "Write the factorised expression. Since both numbers are the same, write it as a perfect square.",
               "work": "(a - 2)(a - 2) = (a - 2)^2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8j",
@@ -3539,7 +3646,8 @@
               "explain": "Write the factorised expression.",
               "work": "(x - 1)(x - 7)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8k",
@@ -3568,7 +3676,8 @@
               "explain": "Write the factorised expression.",
               "work": "(x - 7)(x + 5)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-17e-q8l",
@@ -3597,7 +3706,8 @@
               "explain": "Write the factorised expression.",
               "work": "(x - 6)(x + 3)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

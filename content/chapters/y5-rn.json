@@ -40,7 +40,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -76,7 +77,8 @@
               "work": "\\(11\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q1b",
@@ -105,7 +107,8 @@
               "work": "\\(17\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q1c",
@@ -134,7 +137,8 @@
               "work": "\\(26\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q1d",
@@ -163,7 +167,8 @@
               "work": "\\(53\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q1e",
@@ -192,7 +197,8 @@
               "work": "\\(34\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q2a",
@@ -221,7 +227,8 @@
               "work": "\\(\\text{VIII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q2b",
@@ -250,7 +257,8 @@
               "work": "\\(\\text{XIII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q2c",
@@ -279,7 +287,8 @@
               "work": "\\(\\text{XVIII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q2d",
@@ -308,7 +317,8 @@
               "work": "\\(\\text{XIX}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q2e",
@@ -337,7 +347,8 @@
               "work": "\\(\\text{XL} + \\text{II} = \\text{XLII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q3a",
@@ -352,7 +363,8 @@
           ],
           "answer": 2,
           "hint": "[object Object],[object Object],[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q3b",
@@ -367,7 +379,8 @@
           ],
           "answer": 2,
           "hint": "[object Object],[object Object],[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q3c",
@@ -382,7 +395,8 @@
           ],
           "answer": 1,
           "hint": "[object Object],[object Object],[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q3d",
@@ -411,7 +425,8 @@
               "work": "\\(\\text{One thousand, five hundred and forty-two}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q4a",
@@ -440,7 +455,8 @@
               "work": "\\(300 + 96 = 396\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q4b",
@@ -469,7 +485,8 @@
               "work": "\\(500 + 32 = 532\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q5a",
@@ -498,7 +515,8 @@
               "work": "\\(754\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q5b",
@@ -527,7 +545,8 @@
               "work": "\\(347\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q14a",
@@ -556,7 +575,8 @@
               "work": "\\(900\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q14b",
@@ -585,7 +605,8 @@
               "work": "\\(2000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q14c",
@@ -610,7 +631,8 @@
               "work": "\\(1 \\times 1 = 1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-q14d",
@@ -639,7 +661,8 @@
               "work": "\\(3000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q1a",
@@ -680,7 +703,8 @@
               "work": "\\\\(\\\\text{Next terms} = 11\\%, 9 \\\\frac{1}{2}\\%\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q1b",
@@ -717,7 +741,8 @@
               "work": "\\\\(\\\\text{Next terms} = 162, 486\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q1c",
@@ -754,7 +779,8 @@
               "work": "\\\\(\\\\text{Next terms} = 12.0, 13.2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q1d",
@@ -791,7 +817,8 @@
               "work": "\\\\(\\\\text{Next terms} = 35, 42\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q1e",
@@ -828,7 +855,8 @@
               "work": "\\\\(\\\\text{Next terms} = 10, 7.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q2a",
@@ -849,7 +877,8 @@
               "work": "\\(4 = 5 - 1 = \\text{IV}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q2b",
@@ -874,7 +903,8 @@
               "work": "\\(\\text{XV}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q2c",
@@ -895,7 +925,8 @@
               "work": "\\(20 = \\text{XX}\\), \\(3 = \\text{III} \\implies \\text{XXIII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q2d",
@@ -916,7 +947,8 @@
               "work": "\\(50 = \\text{L}\\), \\(5 = \\text{V}\\), \\(1 = \\text{I} \\implies \\text{LVI}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q2e",
@@ -937,7 +969,8 @@
               "work": "\\(50 = \\text{L}\\), \\(20 = \\text{XX} \\implies \\text{LXX}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q3a",
@@ -952,7 +985,8 @@
           ],
           "answer": 2,
           "hint": "[object Object],[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q3b",
@@ -967,7 +1001,8 @@
           ],
           "answer": 3,
           "hint": "[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q3c",
@@ -982,7 +1017,8 @@
           ],
           "answer": 1,
           "hint": "[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q3d",
@@ -997,7 +1033,8 @@
           ],
           "answer": 2,
           "hint": "[object Object]",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q4a",
@@ -1018,7 +1055,8 @@
               "work": "\\(100 + 53 = 153\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q4b",
@@ -1039,7 +1077,8 @@
               "work": "\\(600 + 28 = 628\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q4c",
@@ -1060,7 +1099,8 @@
               "work": "\\(400 + 9 = 409\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q4d",
@@ -1081,7 +1121,8 @@
               "work": "\\(1000 + 40 = 1040\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q5a",
@@ -1106,7 +1147,8 @@
               "work": "\\(574\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q5b",
@@ -1131,7 +1173,8 @@
               "work": "\\(805\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q6a",
@@ -1156,7 +1199,8 @@
               "work": "\\((4 \\times 100) + (5 \\times 10) + (2 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q6b",
@@ -1177,7 +1221,8 @@
               "work": "\\((7 \\times 100) + (4 \\times 10) + (8 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q6c",
@@ -1198,7 +1243,8 @@
               "work": "\\((5 \\times 100) + (9 \\times 10) + (0 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l2-q6d",
@@ -1219,7 +1265,8 @@
               "work": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q1a",
@@ -1244,7 +1291,8 @@
               "work": "\\(17\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q1b",
@@ -1269,7 +1317,8 @@
               "work": "\\(20 + 9 = 29\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q1c",
@@ -1294,7 +1343,8 @@
               "work": "\\(40 + 2 = 42\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q1d",
@@ -1319,7 +1369,8 @@
               "work": "\\(72\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q2a",
@@ -1348,7 +1399,8 @@
               "work": "\\(\\text{XXIV}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q2b",
@@ -1377,7 +1429,8 @@
               "work": "\\(\\text{XXXIX}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q2c",
@@ -1406,7 +1459,8 @@
               "work": "\\(\\text{LXIV}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q2d",
@@ -1435,7 +1489,8 @@
               "work": "\\(\\text{XCV}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q3a",
@@ -1460,7 +1515,8 @@
               "work": "\\(\\text{Tens}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q3b",
@@ -1481,7 +1537,8 @@
               "work": "\\(7 \\implies \\text{Units column}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q3c",
@@ -1502,7 +1559,8 @@
               "work": "\\(2 \\implies \\text{Units}\\) \n \\(0 \\implies \\text{Tens}\\) \n \\(7 \\implies \\text{Hundreds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q3d",
@@ -1523,7 +1581,8 @@
               "work": "\\(2 \\implies \\text{Units}\\) \n \\(7 \\implies \\text{Tens}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q4a",
@@ -1544,7 +1603,8 @@
               "work": "\\(683 \\implies \\text{Six hundred and eighty-three}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q4b",
@@ -1565,7 +1625,8 @@
               "work": "\\(4312 \\implies \\text{Four thousand, three hundred and twelve}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q4c",
@@ -1586,7 +1647,8 @@
               "work": "\\(5072 \\implies \\text{Five thousand and seventy-two}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q10a",
@@ -1615,7 +1677,8 @@
               "work": "\\(19, 17, 14, 13, 7, 5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q10b",
@@ -1636,7 +1699,8 @@
               "work": "\\(32 > 27 > 25 > 11 > 9 > 4\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q11a",
@@ -1665,7 +1729,8 @@
               "work": "\\(4, 7, 11, 19, 21, 23\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q11b",
@@ -1686,7 +1751,8 @@
               "work": "\\(11 < 18 < 23 < 49 < 68 < 83\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q14a",
@@ -1715,7 +1781,8 @@
               "work": "\\(\\text{Five hundred and thirty-six}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q14b",
@@ -1744,7 +1811,8 @@
               "work": "\\(\\text{Five thousand, three hundred and two}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l3-q14c",
@@ -1773,7 +1841,8 @@
               "work": "\\(\\text{Five hundred and four}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q1a",
@@ -1802,7 +1871,8 @@
               "work": "\\(152\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q1b",
@@ -1831,7 +1901,8 @@
               "work": "\\(225\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q1c",
@@ -1856,7 +1927,8 @@
               "work": "\\(90 + 9 = 99\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q1d",
@@ -1881,7 +1953,8 @@
               "work": "\\(500 + 50 + 5 = 555\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q2a",
@@ -1910,7 +1983,8 @@
               "work": "\\(\\text{CXXIII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q2b",
@@ -1939,7 +2013,8 @@
               "work": "\\(\\text{LXXIX}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q2c",
@@ -1968,7 +2043,8 @@
               "work": "\\(\\text{CCCXXVII}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q2d",
@@ -1989,7 +2065,8 @@
               "work": "\\(500 = \\text{D}, \\; 30 = \\text{XXX} \\implies \\text{DXXX}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q3a",
@@ -2014,7 +2091,8 @@
               "work": "\\(\\text{Hundreds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q3b",
@@ -2035,7 +2113,8 @@
               "work": "\\(1 \\implies \\text{Units}, \\; 3 \\implies \\text{Tens}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q3c",
@@ -2056,7 +2135,8 @@
               "work": "\\(4 \\implies \\text{Units}, \\; 1 \\implies \\text{Tens}, \\; 9 \\implies \\text{Hundreds}, \\; 3 \\implies \\text{Thousands}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q3d",
@@ -2077,7 +2157,8 @@
               "work": "\\(3 \\implies \\text{Units}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q4a",
@@ -2102,7 +2183,8 @@
               "work": "\\((7 \\times 100) + (3 \\times 10) + (1 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q4b",
@@ -2123,7 +2205,8 @@
               "work": "\\((5 \\times 1000) + (7 \\times 100) + (3 \\times 10) + (1 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q4c",
@@ -2148,7 +2231,8 @@
               "work": "\\((9 \\times 10000) + (5 \\times 1000) + (7 \\times 100) + (0 \\times 10) + (2 \\times 1)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q11a",
@@ -2169,7 +2253,8 @@
               "work": "\\(7 > 6\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q11b",
@@ -2194,7 +2279,8 @@
               "work": "\\(9 < 11\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q11c",
@@ -2219,7 +2305,8 @@
               "work": "\\(49 = 49\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-l4-q11d",
@@ -2240,7 +2327,8 @@
               "work": "\\(179 < 201\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-1-hard-q1a",
@@ -2269,7 +2357,8 @@
               "work": "\\(800\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1b",
@@ -2298,7 +2387,8 @@
               "work": "\\(70\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1c",
@@ -2327,7 +2417,8 @@
               "work": "\\(7\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1d",
@@ -2356,7 +2447,8 @@
               "work": "\\(70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2a",
@@ -2388,7 +2480,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year5ch1"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2b",
@@ -2420,7 +2513,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year5ch1"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2c",
@@ -2452,7 +2546,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year5ch1"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2d",
@@ -2484,7 +2579,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year5ch1"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q5a",
@@ -2513,7 +2609,8 @@
               "work": "\\(7\\ 483\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q5b",
@@ -2542,7 +2639,8 @@
               "work": "\\(905\\ 048\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1a_p34",
@@ -2575,7 +2673,8 @@
               "work": "\\text{Three million, five hundred and eighty-four thousand, eight hundred and six}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1b_p34",
@@ -2608,7 +2707,8 @@
               "work": "\\text{Eighty-six million, four thousand and three}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q1c_p34",
@@ -2637,7 +2737,8 @@
               "work": "\\text{Seven hundred and sixteen thousand, five hundred and forty-two}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2a_p34",
@@ -2666,7 +2767,8 @@
               "work": "\\(81\\ 482 \\approx 81\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2b_p34",
@@ -2695,7 +2797,8 @@
               "work": "\\(584\\ 000 + 1\\ 000 = 585\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q2c_p34",
@@ -2724,7 +2827,8 @@
               "work": "\\(2\\ 507\\ 500 \\approx 2\\ 508\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q3a",
@@ -2753,7 +2857,8 @@
               "work": "\\(3\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q3b",
@@ -2782,7 +2887,8 @@
               "work": "\\(700\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q3c",
@@ -2811,7 +2917,8 @@
               "work": "\\(50\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q3d",
@@ -2840,7 +2947,8 @@
               "work": "\\(6\\ 000\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q14a",
@@ -2869,7 +2977,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q14b",
@@ -2898,7 +3007,8 @@
               "work": "\\(12\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q14c",
@@ -2927,7 +3037,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-hard-q14d",
@@ -2956,7 +3067,8 @@
               "work": "\\(1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-1-l1-q1a",
@@ -2989,7 +3101,8 @@
               "work": "\\\\(\\\\text{Locker Numbers} = 12, 14, 16, 18\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q1b",
@@ -3022,7 +3135,8 @@
               "work": "\\\\(\\\\text{Odd Station Numbers} = 19, 21, 23, 25\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q1c",
@@ -3055,7 +3169,8 @@
               "work": "\\\\(\\\\text{Valid Block Sizes} = 9, 16, 25, 36\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q1d",
@@ -3088,7 +3203,8 @@
               "work": "\\\\(\\\\text{Triangular Numbers} = 1, 3, 6, 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2a",
@@ -3125,7 +3241,8 @@
               "work": "\\\\(\\\\text{Next terms} = 14, 16\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2b",
@@ -3162,7 +3279,8 @@
               "work": "\\\\(\\\\text{Next elevations} = 29, 32\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2c",
@@ -3199,7 +3317,8 @@
               "work": "\\\\(\\\\text{Next temperatures} = 11, 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2d",
@@ -3236,7 +3355,8 @@
               "work": "\\\\(\\\\text{Next values} = \\\\$48, \\\\$96\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2e",
@@ -3273,7 +3393,8 @@
               "work": "\\\\(\\\\text{Next heights} = 6.9\\\\text{ cm}, 7.3\\\\text{ cm}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2f",
@@ -3310,7 +3431,8 @@
               "work": "\\\\(\\\\text{Next volumes} = 1 \\\\frac{3}{4}\\\\text{ L}, 2\\\\text{ L}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2g",
@@ -3347,7 +3469,8 @@
               "work": "\\\\(\\\\text{Next percentages} = 28\\%, 25\\%\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q2h",
@@ -3384,7 +3507,8 @@
               "work": "\\\\(\\\\text{Next levels} = 81, 100\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l2-q1f",
@@ -3421,7 +3545,8 @@
               "work": "\\\\(\\\\text{Next terms} = 36, 25\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -3457,7 +3582,8 @@
               "work": "\\frac{6}{10} = 0.6"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q5b",
@@ -3490,7 +3616,8 @@
               "work": "\\frac{1}{2} = 0.5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q5c",
@@ -3519,7 +3646,8 @@
               "work": "\\frac{8}{100} = 0.08"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-q6a",
@@ -3545,7 +3673,8 @@
               "work": "\\text{Place value} = \\text{hundredths} \\; \\left(\\frac{3}{100}\\right)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q6b",
@@ -3571,7 +3700,8 @@
               "work": "\\text{Place Value} = \\text{tenths} \\; \\left(\\frac{3}{10}\\right)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q6c",
@@ -3597,7 +3727,8 @@
               "work": "\\text{Place Value} = \\text{tens} \\; (30)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q6d",
@@ -3623,7 +3754,8 @@
               "work": "\\text{Place Value} = \\text{thousandths} \\; \\left(\\frac{3}{1000}\\right)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-q7a",
@@ -3653,7 +3785,8 @@
               "work": "503 + 0.8 + 0.06 = 503.86"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-q7b",
@@ -3683,7 +3816,8 @@
               "work": "475 + 0.938 = 475.938"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-q8a",
@@ -3709,7 +3843,8 @@
               "work": "6 \\text{ tenths} = 0.6"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q8b",
@@ -3735,7 +3870,8 @@
               "work": "23 \\text{ hundredths} = 0.23"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-q8c",
@@ -3761,7 +3897,8 @@
               "work": "7 \\text{ thousandths} = 0.007"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-q8d",
@@ -3791,7 +3928,8 @@
               "work": "3 + 0.18 = 3.18"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q5a",
@@ -3820,7 +3958,8 @@
               "work": "\\frac{3}{10} = 0.3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q5b",
@@ -3849,7 +3988,8 @@
               "work": "\\frac{73}{100} = 0.73"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q5c",
@@ -3878,7 +4018,8 @@
               "work": "\\frac{4}{100} = 0.04"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q6a",
@@ -3911,7 +4052,8 @@
               "work": "3 + 0.42 = 3.42"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q6b",
@@ -3944,7 +4086,8 @@
               "work": "41 + 0.54 = 41.54"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q6c",
@@ -3977,7 +4120,8 @@
               "work": "14 + 0.36 = 14.36"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q7a",
@@ -4007,7 +4151,8 @@
               "work": "\\text{Total} = $103.18"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q7b",
@@ -4037,7 +4182,8 @@
               "work": "\\text{Total} = $68.09"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q7c",
@@ -4067,7 +4213,8 @@
               "work": "\\text{Total} = $1005.04"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q7d",
@@ -4097,7 +4244,8 @@
               "work": "\\text{Total} = $36.00"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p61-q8a",
@@ -4127,7 +4275,8 @@
               "work": "\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q8b",
@@ -4153,7 +4302,8 @@
               "work": "\\frac{4 \\div 2}{10 \\div 2} = \\frac{2}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q8c",
@@ -4179,7 +4329,8 @@
               "work": "\\frac{25 \\div 25}{100 \\div 25} = \\frac{1}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p61-q8d",
@@ -4205,7 +4356,8 @@
               "work": "\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q8a",
@@ -4227,7 +4379,8 @@
               "work": "\\frac{7}{10} = 0.7"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p62-q8b",
@@ -4249,7 +4402,8 @@
               "work": "\\frac{19}{100} = 0.19"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p62-q8c",
@@ -4271,7 +4425,8 @@
               "work": "\\frac{3}{100} = 0.03"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p62-q8d",
@@ -4293,7 +4448,8 @@
               "work": "\\frac{345}{1000} = 0.345"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p62-q8e",
@@ -4315,7 +4471,8 @@
               "work": "\\frac{36}{1000} = 0.036"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p62-q9a",
@@ -4341,7 +4498,8 @@
               "work": "8 + 0.3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q9b",
@@ -4363,7 +4521,8 @@
               "work": "67.25 = 60 + 7 + 0.2 + 0.05"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q9c",
@@ -4385,7 +4544,8 @@
               "work": "4.036 = 4 + 0.03 + 0.006"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q9d",
@@ -4407,7 +4567,8 @@
               "work": "907.418 = 900 + 7 + 0.4 + 0.01 + 0.008"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q10a",
@@ -4437,7 +4598,8 @@
               "work": "4.07, \\ 4.27, \\ 4.7, \\ 4.702, \\ 4.72"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q10b",
@@ -4463,7 +4625,8 @@
               "work": "7.040 < 7.304 < 7.340 < 7.400 < 7.430"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q11a",
@@ -4485,7 +4648,8 @@
               "work": "0.9 = \\frac{9}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q11b",
@@ -4507,7 +4671,8 @@
               "work": "0.57 = \\frac{57}{100}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q11c",
@@ -4537,7 +4702,8 @@
               "work": "4\\frac{3}{100}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p62-q11d",
@@ -4559,7 +4725,8 @@
               "work": "0.253 = \\frac{253}{1000}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q5a",
@@ -4589,7 +4756,8 @@
               "work": "860 + 0.954 = 860.954"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q6a",
@@ -4611,7 +4779,8 @@
               "work": "51.32 = 50 + 1 + 0.3 + 0.02"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q6b",
@@ -4633,7 +4802,8 @@
               "work": "6.705 = 6 + 0.7 + 0.005"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q6c",
@@ -4655,7 +4825,8 @@
               "work": "0.914 = 0.9 + 0.01 + 0.004"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q6d",
@@ -4677,7 +4848,8 @@
               "work": "207.06 = 200 + 7 + 0.06"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q7a",
@@ -4707,7 +4879,8 @@
               "work": "1.403, \\ 1.4, \\ 1.34, \\ 1.304, \\ 1.04"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q7b",
@@ -4733,7 +4906,8 @@
               "work": "7.910 > 7.900 > 7.190 > 7.109 > 7.090 > 7.009"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q8a",
@@ -4755,7 +4929,8 @@
               "work": "\\frac{3}{10} = 0.3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q8b",
@@ -4777,7 +4952,8 @@
               "work": "\\frac{4}{100} = 0.04"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q8c",
@@ -4799,7 +4975,8 @@
               "work": "\\frac{13}{100} = 0.13"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q8d",
@@ -4825,7 +5002,8 @@
               "work": "\\frac{5}{10} = 0.5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q8e",
@@ -4851,7 +5029,8 @@
               "work": "\\frac{8}{10} = 0.8"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q9a",
@@ -4873,7 +5052,8 @@
               "work": "\\( \\begin{array}{r} 86.72 \\\\ +\\ 12.45 \\\\ \\hline 99.17 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q9b",
@@ -4895,7 +5075,8 @@
               "work": "\\( \\begin{array}{r} 96.75 \\\\ +\\ 32.48 \\\\ \\hline 129.23 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q9c",
@@ -4917,7 +5098,8 @@
               "work": "\\( \\begin{array}{r} 135.06 \\\\ +\\ 17.29 \\\\ \\hline 152.35 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q9d",
@@ -4939,7 +5121,8 @@
               "work": "\\( \\begin{array}{r} 168.39 \\\\ +\\ 29.54 \\\\ \\hline 197.93 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q10a",
@@ -4961,7 +5144,8 @@
               "work": "3.71 \\to 37.1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q10b",
@@ -4983,7 +5167,8 @@
               "work": "4.96 \\to 496"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q10c",
@@ -5005,7 +5190,8 @@
               "work": "38.5 \\to 3.85"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q10d",
@@ -5027,7 +5213,8 @@
               "work": "493.6 \\to 4.936"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-2-p63-q11a",
@@ -5049,7 +5236,8 @@
               "work": "\\( \\begin{array}{r} 8.35 \\\\ +\\ 16.72 \\\\ +\\ 0.56 \\\\ \\hline 25.63 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q11b",
@@ -5071,7 +5259,8 @@
               "work": "\\( \\begin{array}{r} 183.47 \\\\ -\\ 69.18 \\\\ \\hline 114.29 \\end{array} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q11c",
@@ -5097,7 +5286,8 @@
               "work": "\\text{Total} = $17.35"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-2-p63-q11d",
@@ -5119,7 +5309,8 @@
               "work": "\\frac{6.25}{5} = 1.25"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -5160,7 +5351,8 @@
               "work": "\\(\\text{GST} = \\$2.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q9b",
@@ -5194,7 +5386,8 @@
               "work": "\\(\\text{GST} = \\$1.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q9c",
@@ -5228,7 +5421,8 @@
               "work": "\\(\\text{GST} = \\$8.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q9d",
@@ -5262,7 +5456,8 @@
               "work": "\\(\\text{GST} = \\$3.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q10a",
@@ -5292,7 +5487,8 @@
               "work": "\\(\\text{Fraction} = \\frac{1}{10}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q10b",
@@ -5322,7 +5518,8 @@
               "work": "\\(\\text{Fraction} = \\frac{1}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q10c",
@@ -5352,7 +5549,8 @@
               "work": "\\(\\text{Fraction} = \\frac{3}{10}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q10d",
@@ -5382,7 +5580,8 @@
               "work": "\\(\\text{Fraction} = \\frac{1}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q11a",
@@ -5412,7 +5611,8 @@
               "work": "\\(\\text{Value} = \\$20.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q11b",
@@ -5442,7 +5642,8 @@
               "work": "\\(\\text{Value} = \\$60.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q11c",
@@ -5472,7 +5673,8 @@
               "work": "\\(\\text{Value} = \\$20.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q11d",
@@ -5502,7 +5704,8 @@
               "work": "\\(\\text{Value} = \\$60.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q7a-l2",
@@ -5535,7 +5738,8 @@
               "work": "\\(\\text{Percentage} = \\frac{60}{100} = 60\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q7b-l2",
@@ -5576,7 +5780,8 @@
               "work": "\\(\\text{Percentage} = 14\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q7c-l2",
@@ -5617,7 +5822,8 @@
               "work": "\\(\\text{Percentage} = 17\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q7d-l2",
@@ -5654,7 +5860,8 @@
               "work": "\\(\\text{Percentage} = 68\\%\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-4-q8a-l2",
@@ -5684,7 +5891,8 @@
               "work": "\\(\\text{Final Price} = \\$5.28\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q8b-l2",
@@ -5714,7 +5922,8 @@
               "work": "\\(\\text{Final Price} = \\$1.98\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q8c-l2",
@@ -5744,7 +5953,8 @@
               "work": "\\(\\text{Final Price} = 66\\text{ cents}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q8d-l2",
@@ -5774,7 +5984,8 @@
               "work": "\\(\\text{Final Price} = \\$14.85\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q1b-l3",
@@ -5807,7 +6018,8 @@
               "work": "\\(10\\% \\text{ of } \\$130.00 = \\$130.00 \\div 10 = \\$13.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q6a-l3",
@@ -5837,7 +6049,8 @@
               "work": "\\(\\text{Final Price} = \\$2.97\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q6b-l3",
@@ -5867,7 +6080,8 @@
               "work": "\\(\\text{Final Price} = \\$4.07\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q6c-l3",
@@ -5897,7 +6111,8 @@
               "work": "\\(\\text{Final Price} = 44\\text{ cents}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q6d-l3",
@@ -5927,7 +6142,8 @@
               "work": "\\(\\text{Final Price} = \\$15.29\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q2a-l4",
@@ -5957,7 +6173,8 @@
               "work": "\\(\\text{Final Price} = \\$192.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q2b-l4",
@@ -5987,7 +6204,8 @@
               "work": "\\(\\text{Final Price} = \\$52.25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q2c-l4",
@@ -6017,7 +6235,8 @@
               "work": "\\(\\text{Final Price} = \\$42.24\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q5a-l4",
@@ -6051,7 +6270,8 @@
               "work": "\\(\\text{GST} = \\$73.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-4-q5b-l4",
@@ -6085,7 +6305,8 @@
               "work": "\\(\\text{GST} = \\$38.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-4-q5c-l4",
@@ -6119,7 +6340,8 @@
               "work": "\\(\\text{GST} = \\$16.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-rn-4-q5d-l4",
@@ -6153,7 +6375,8 @@
               "work": "\\(\\text{GST} = \\$14.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     },
@@ -6190,7 +6413,8 @@
               "work": "\\(\\text{Discount} = \\$10.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-5-q12b",
@@ -6220,7 +6444,8 @@
               "work": "\\(\\text{Discount} = \\$3.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-5-q12c",
@@ -6250,7 +6475,8 @@
               "work": "\\(\\text{Discount} = \\$15.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-5-q12d",
@@ -6284,7 +6510,8 @@
               "work": "\\(\\text{Discount} = \\$7.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rn-5-q9a-l2",
@@ -6314,7 +6541,8 @@
               "work": "\\(\\text{Discount} = \\$60.00 \\div 10 = \\$6.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q9b-l2",
@@ -6344,7 +6572,8 @@
               "work": "\\(\\text{Discount} = \\$7.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q9c-l2",
@@ -6374,7 +6603,8 @@
               "work": "\\(\\text{Discount} = \\$5.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q9d-l2",
@@ -6404,7 +6634,8 @@
               "work": "\\(\\text{Discount} = \\$24.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q4a-l4",
@@ -6434,7 +6665,8 @@
               "work": "\\(\\text{Sale Price} = \\$21.60\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q4b-l4",
@@ -6468,7 +6700,8 @@
               "work": "\\(\\text{Sale Price} = \\$36.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q4c-l4",
@@ -6502,7 +6735,8 @@
               "work": "\\(\\text{Sale Price} = \\$52.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rn-5-q4d-l4",
@@ -6536,7 +6770,8 @@
               "work": "\\(\\text{Sale Price} = \\$109.50\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     }

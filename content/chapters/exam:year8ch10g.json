@@ -191,7 +191,8 @@
                   "explain": "State the real length.",
                   "work": "\\(24\\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q16b",
@@ -221,7 +222,8 @@
                   "explain": "State the real width.",
                   "work": "\\(12\\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q16c",
@@ -251,7 +253,8 @@
                   "explain": "State the real distance.",
                   "work": "\\(6.4\\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q16d",
@@ -281,7 +284,8 @@
                   "explain": "State the real area.",
                   "work": "\\(288\\text{ m}^2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-10g-q16e",
@@ -313,7 +317,8 @@
                   "explain": "State the real distance.",
                   "work": "\\(1\\text{ m}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions"
@@ -352,7 +357,8 @@
                   "explain": "State the final answer.",
                   "work": "\\(\\text{She will walk } 4.5\\text{ km}.\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y8-10g-q22b",
@@ -382,7 +388,8 @@
                   "explain": "State the final answer.",
                   "work": "\\(\\text{She will walk } 13.5\\text{ km}.\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y8-10g-q22c",
@@ -412,7 +419,8 @@
                   "explain": "State the final answer.",
                   "work": "\\(\\text{She will walk } 22.5\\text{ km}.\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions"

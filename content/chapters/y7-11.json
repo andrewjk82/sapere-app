@@ -35,7 +35,8 @@
               "work": "\\(-15\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "1dLOerOvsyxzSXssePjd",
@@ -64,7 +65,8 @@
               "work": "\\(-2700\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "2D0I4bPufKkwSSRStwCK",
@@ -93,7 +95,8 @@
               "work": "\\(-53\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "4YPHNk24omxleMWZetRp",
@@ -122,7 +125,8 @@
               "work": "\\(60\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "5aEr477Ijq1ztwB1U0mQ",
@@ -151,7 +155,8 @@
               "work": "\\(57\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "5EahXY85LIMieaoCcYoi",
@@ -180,7 +185,8 @@
               "work": "\\(-5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "6b5x69oKDBDh23yf1y5C",
@@ -209,7 +215,8 @@
               "work": "\\(64\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "6wmwsabCXXGzv4tsaoqT",
@@ -238,7 +245,8 @@
               "work": "\\(-63\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "7tkg0t2wfqFiubesM0KT",
@@ -267,7 +275,8 @@
               "work": "\\(1500 - 8y\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "8QINA3MCti9dAKsr12ns",
@@ -296,7 +305,8 @@
               "work": "\\(900\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "8R2GnxCRAZWEv1mPQmw7",
@@ -325,7 +335,8 @@
               "work": "\\(40\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "9CHGkt0YtSEH4xd137Yk",
@@ -354,7 +365,8 @@
               "work": "\\(-3375\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "27ECxZ8rnesyDJGGBYzn",
@@ -383,7 +395,8 @@
               "work": "\\(1500 - y\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "A0IBg3LA1wS78BV9rQCf",
@@ -412,7 +425,8 @@
               "work": "\\(19\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "A0UB1Fl5MfWVSaqC3got",
@@ -441,7 +455,8 @@
               "work": "\\(-300\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "aCDgzXolJfjfpVfqvXc5",
@@ -470,7 +485,8 @@
               "work": "\\(1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "ALuBV3kauMHrvb6KjzgB",
@@ -499,7 +515,8 @@
               "work": "\\(216\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "aRUZV2hNvi8WbNTQDlLn",
@@ -528,7 +545,8 @@
               "work": "\\(-2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "bJITN0Xn5gqHrsKz6kPk",
@@ -557,7 +575,8 @@
               "work": "\\(11\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "cPxT5j3cdN8WON7Wn5MV",
@@ -586,7 +605,8 @@
               "work": "\\(20\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "D5T0EaMwq3K1YbSIDTS9",
@@ -615,7 +635,8 @@
               "work": "\\(12\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "E1ujPwUBodpDPR9v5KqN",
@@ -644,7 +665,8 @@
               "work": "\\(860\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "eACpETHwfenmT0Nv0nA5",
@@ -673,7 +695,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "EBWPqJ5SCsLMk9KDiwFS",
@@ -702,7 +725,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "EdVmS3GRIjSlTIowC5iR",
@@ -731,7 +755,8 @@
               "work": "\\(57\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "edYHO18vAccZRxF3WPmY",
@@ -760,7 +785,8 @@
               "work": "\\(-12\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "eNU6CFjceEewdvFhkNnv",
@@ -789,7 +815,8 @@
               "work": "\\(-3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "FCfGqhLcSXvAw3XDKv34",
@@ -818,7 +845,8 @@
               "work": "\\(36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "FE5OR40rux5UyIeZeo29",
@@ -847,7 +875,8 @@
               "work": "\\(36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "FIxPOgpWNsYrXBp9sceX",
@@ -876,7 +905,8 @@
               "work": "\\(-216\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "fIzlTkqqq9C2Wi84el3c",
@@ -905,7 +935,8 @@
               "work": "\\(-48\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "G92ZahoO4KOQ8X10Xbjr",
@@ -934,7 +965,8 @@
               "work": "\\(-1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "gFUng7IG5c50pFnt272p",
@@ -963,7 +995,8 @@
               "work": "\\(17\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "HhPxvqiPdUVljD8f5SVK",
@@ -992,7 +1025,8 @@
               "work": "\\(28 - 8t\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Hqv5RL8szksuxamUzW5b",
@@ -1021,7 +1055,8 @@
               "work": "\\(-10\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "IA3Emj9gjt6w4By0fdwg",
@@ -1050,7 +1085,8 @@
               "work": "\\(256\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "iHX2Iv8tkxjFnS2m7dyZ",
@@ -1079,7 +1115,8 @@
               "work": "\\(28 - 2t\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "IRQIHUpyQb0hFCw9lwpr",
@@ -1108,7 +1145,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "j6P2sSmoYYNSVgxJ1ftE",
@@ -1137,7 +1175,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "jOjtyazZjgtabpKOZRZF",
@@ -1166,7 +1205,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "khszPSfSYOaCwPMK6vtG",
@@ -1195,7 +1235,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "KQY0OKBoAX7uPUpFTVTE",
@@ -1224,7 +1265,8 @@
               "work": "\\(450\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "lcO1cmTmS6PA0eLb3aaV",
@@ -1253,7 +1295,8 @@
               "work": "\\(44\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "lSo0984cuQMw1CrHaCwZ",
@@ -1282,7 +1325,8 @@
               "work": "\\(-64\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "LuLv5o5VpaVgbBAnHESc",
@@ -1311,7 +1355,8 @@
               "work": "\\(-81\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "MRxPkd8xm00hKQl88JsI",
@@ -1340,7 +1385,8 @@
               "work": "\\(180\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Mwi8d5dK5jj59LoAwp2U",
@@ -1369,7 +1415,8 @@
               "work": "\\(-6\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "nI0gHxUTOHSsnVkZTA8Q",
@@ -1398,7 +1445,8 @@
               "work": "\\(540\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "o5xrxQdBlzpdlTN2R4R4",
@@ -1427,7 +1475,8 @@
               "work": "\\(-125\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "OCrcEN487oFGSkb7XLzO",
@@ -1456,7 +1505,8 @@
               "work": "\\(-72\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "OHtZbPb8MsMOdHE6qox3",
@@ -1485,7 +1535,8 @@
               "work": "\\(-75\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "OIlgKUmJVpDh047az0bw",
@@ -1514,7 +1565,8 @@
               "work": "\\(10^\\circ\\text{C}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "pKvdlN4ORCB1cx1IQ6H6",
@@ -1543,7 +1595,8 @@
               "work": "\\(-105\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "pkZA2b1HIz7nU9zTH2nM",
@@ -1572,7 +1625,8 @@
               "work": "\\(36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "pZksOKOdOnz9QrC1enrK",
@@ -1601,7 +1655,8 @@
               "work": "\\(2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "q5XsVUCmyIzaOKpeIN6v",
@@ -1630,7 +1685,8 @@
               "work": "\\(15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "QFCTkCZM915h88BV5hIP",
@@ -1659,7 +1715,8 @@
               "work": "\\(-69\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "QHxh0wVfwaOBtcDwuuRN",
@@ -1688,7 +1745,8 @@
               "work": "\\(216\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "QIY0udvUxY2j32NqPEH2",
@@ -1717,7 +1775,8 @@
               "work": "\\(40500\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "qJJGGISK9QJKOwHnkA6V",
@@ -1746,7 +1805,8 @@
               "work": "\\(-100\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "rFUxjuQClj7Nv1p9lrJY",
@@ -1775,7 +1835,8 @@
               "work": "\\(-625\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "RgZPT8p4mrvBTYtxZuVl",
@@ -1804,7 +1865,8 @@
               "work": "\\(300\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "RIqJySxs5fxoJt38iPzU",
@@ -1833,7 +1895,8 @@
               "work": "\\(-\\frac{1}{3}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "rjhMVV1hsLWfRFwRiQPX",
@@ -1862,7 +1925,8 @@
               "work": "\\(20\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "rrLegqJ5fSocx6v4A9nv",
@@ -1891,7 +1955,8 @@
               "work": "\\(-45\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "SDDDwUO1ROKdSDEjXO53",
@@ -1920,7 +1985,8 @@
               "work": "\\(16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "Sm85j1JcDMk1nku6KXBZ",
@@ -1949,7 +2015,8 @@
               "work": "\\(52\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "SXg1jPtjcUFp7rYXkFBx",
@@ -1978,7 +2045,8 @@
               "work": "\\(10\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "TftvBQN2rNUxzUm5jmZT",
@@ -2007,7 +2075,8 @@
               "work": "\\(-9\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Unbc9RJ12jayCeHpH1ub",
@@ -2036,7 +2105,8 @@
               "work": "\\(-3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "V5THYgKwWjI2BtvrsO5n",
@@ -2065,7 +2135,8 @@
               "work": "\\(27\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "xJEncp7ET8ylboFzHohh",
@@ -2094,7 +2165,8 @@
               "work": "\\(45\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "XYQtjmYt9Kr1zijuD0pS",
@@ -2123,7 +2195,8 @@
               "work": "\\(-27\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y7-killara-23-q9",
@@ -2150,7 +2223,8 @@
               "explain": "Calculate the final value by adding the numbers.",
               "work": "y = 7"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "yf5kSz9ayx41rjYnYMEB",
@@ -2179,7 +2253,8 @@
               "work": "\\(27\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "yWK0cLNiTPHDPe8Z3UnN",
@@ -2208,7 +2283,8 @@
               "work": "\\(-9\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "Z5SlpDxX2BvnamDdfLbZ",
@@ -2237,7 +2313,8 @@
               "work": "\\(16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "zO25IacbtHD59YoIacbr",
@@ -2266,7 +2343,8 @@
               "work": "\\(-16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -2297,7 +2375,8 @@
             {
               "explain": "Therefore, the angle is \\(40^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -2331,7 +2410,8 @@
             {
               "explain": "\\( = 300^\\circ \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2369,7 +2449,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-killara-23-q17",
@@ -2401,7 +2482,8 @@
                   "explain": "Combine them to form the final rule.",
                   "work": "m = 3s + 1"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y7-killara-23-q17d",
@@ -2427,7 +2509,8 @@
                   "explain": "Calculate the final number of matchsticks.",
                   "work": "m = 90 + 1 = 91"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -2461,7 +2544,8 @@
                   "explain": "Solve for $k$.",
                   "work": "-6 + 12 = 6 \\implies k = 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y7-killara-23-q24b",
@@ -2487,7 +2571,8 @@
                   "explain": "The triangle is a right-angled triangle bounded by the x and y axes. The base is 2 and the height is 1.5 (taking absolute lengths). Calculate the area.",
                   "work": "\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 2 \\times 1.5 = 1.5"
                 }
-              ]
+              ],
+              "xp": 5
             }
           ]
         }

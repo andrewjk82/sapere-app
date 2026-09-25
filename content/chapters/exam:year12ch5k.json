@@ -32,7 +32,8 @@
               "work": "\\(y=\\dfrac{x-1}{\\ln 3}\\)"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 3
         },
         {
           "id": "y12a-5k-q9ci",
@@ -58,7 +59,8 @@
               "work": "\\(y=\\dfrac{x-1}{\\ln 4}\\)"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 2
         }
       ]
     }

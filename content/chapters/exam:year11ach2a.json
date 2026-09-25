@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q1g",
@@ -64,7 +65,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q2a",
@@ -84,7 +86,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q2c",
@@ -101,7 +104,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q3a",
@@ -121,7 +125,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q3b",
@@ -138,7 +143,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q3h",
@@ -155,7 +161,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q3k",
@@ -184,7 +191,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-2a-q5a",
@@ -201,7 +209,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q5d",
@@ -230,7 +239,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2a-q6b",
@@ -259,7 +269,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

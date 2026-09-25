@@ -20,14 +20,16 @@
               "type": "short",
               "stem": "How many 6-day weeks are in one year?",
               "answer": "600",
-              "solution": "\\frac{3600}{6}"
+              "solution": "\\frac{3600}{6}",
+              "xp": 2
             },
             {
               "id": "1779441535211",
               "type": "short",
               "stem": "How many 8-day weeks are in one year?",
               "answer": "450",
-              "solution": "\\frac{3600}{8}"
+              "solution": "\\frac{3600}{8}",
+              "xp": 2
             }
           ],
           "answer": "360",
@@ -68,7 +70,8 @@
               "work": "\\(77\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q1b",
@@ -97,7 +100,8 @@
               "work": "\\(104\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q1c",
@@ -126,7 +130,8 @@
               "work": "\\(156\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q1d",
@@ -155,7 +160,8 @@
               "work": "\\(139\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q1e",
@@ -184,7 +190,8 @@
               "work": "\\(96\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q1f",
@@ -213,7 +220,8 @@
               "work": "\\(140\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2a",
@@ -238,7 +246,8 @@
               "work": "\\(56 + 5 = 61\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2b",
@@ -263,7 +272,8 @@
               "work": "\\(118 + 7 = 125\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2c",
@@ -288,7 +298,8 @@
               "work": "\\(73 + 8 = 81\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2d",
@@ -313,7 +324,8 @@
               "work": "\\(218 + 5 = 223\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2e",
@@ -342,7 +354,8 @@
               "work": "\\(44 + 21 = 65\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q2f",
@@ -371,7 +384,8 @@
               "work": "\\(74 + 23 = 97\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3a",
@@ -396,7 +410,8 @@
               "work": "\\(26 - 8 = 18\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3b",
@@ -421,7 +436,8 @@
               "work": "\\(34 - 8 = 26\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3c",
@@ -446,7 +462,8 @@
               "work": "\\(55 - 7 = 48\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3d",
@@ -471,7 +488,8 @@
               "work": "\\(75 - 7 = 68\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3e",
@@ -496,7 +514,8 @@
               "work": "\\(65 - 7 = 58\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q3f",
@@ -525,7 +544,8 @@
               "work": "\\(83 - 8 = 75\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4a",
@@ -550,7 +570,8 @@
               "work": "\\(175 + 1645 = 1820\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4b",
@@ -575,7 +596,8 @@
               "work": "\\(979 + 8372 = 9351\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4c",
@@ -600,7 +622,8 @@
               "work": "\\(10080 + 75 = 10155\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4d",
@@ -625,7 +648,8 @@
               "work": "\\(864 + 719 = 1583\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4e",
@@ -650,7 +674,8 @@
               "work": "\\(1269 + 433 = 1702\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4f",
@@ -679,7 +704,8 @@
               "work": "\\(755 + 38 = 793\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4g",
@@ -708,7 +734,8 @@
               "work": "\\(851 + 29 = 880\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4h",
@@ -737,7 +764,8 @@
               "work": "\\(1040 + 1443 = 2483\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q4i",
@@ -766,7 +794,8 @@
               "work": "\\(1035 + 56 = 1091\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5a",
@@ -787,7 +816,8 @@
               "work": "\\(763 - 388 = 375\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5b",
@@ -808,7 +838,8 @@
               "work": "\\(1922 - 429 = 1493\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5c",
@@ -829,7 +860,8 @@
               "work": "\\(1406 - 387 = 1019\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5d",
@@ -850,7 +882,8 @@
               "work": "\\(2765 - 1690 = 1075\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5e",
@@ -871,7 +904,8 @@
               "work": "\\(919 - 580 = 339\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5f",
@@ -892,7 +926,8 @@
               "work": "\\(1298 - 400 = 898\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5g",
@@ -913,7 +948,8 @@
               "work": "\\(1090 - 138 = 952\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q5h",
@@ -934,7 +970,8 @@
               "work": "\\(45679 - 34899 = 10780\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-1a-q6",
@@ -959,7 +996,8 @@
               "work": "\\(1105 + 962 + 435 + 168 + 45 = 2715\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q7",
@@ -984,7 +1022,8 @@
               "work": "\\(234355 - 218245 = 16110\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q8",
@@ -1009,7 +1048,8 @@
               "work": "\\(3158 + 6968 = 10126\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q9",
@@ -1034,7 +1074,8 @@
               "work": "\\(55415 - 2015 = 53400\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q10a",
@@ -1055,7 +1096,8 @@
               "work": "\\(245 + 598 = 843\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q10b",
@@ -1080,7 +1122,8 @@
               "work": "\\(245 + 843 = 1088\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q11",
@@ -1105,7 +1148,8 @@
               "work": "\\(325600 - 64800 = 260800\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q12a",
@@ -1130,7 +1174,8 @@
               "work": "\\(498810000 + 281912000 = 780722000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q12b",
@@ -1155,7 +1200,8 @@
               "work": "\\(498810000 - 281912000 = 216898000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q13a",
@@ -1176,7 +1222,8 @@
               "work": "\\(1715 - 1642 = 73\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q13b",
@@ -1197,7 +1244,8 @@
               "work": "\\(1848 - 1642 = 206\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q13c",
@@ -1218,7 +1266,8 @@
               "work": "\\(1848 - 1715 = 133\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q14",
@@ -1243,7 +1292,8 @@
               "work": "\\(6045 + 4255 = 10300\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q15",
@@ -1268,7 +1318,8 @@
               "work": "\\(46345172 - 30138004 = 16207168\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q16",
@@ -1293,7 +1344,8 @@
               "work": "\\(4322854 - 2542813 = 1780041\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-q17",
@@ -1318,7 +1370,8 @@
               "work": "\\(3598 - 3230 = 368\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1a-h1",
@@ -1346,7 +1399,8 @@
               "explain": "Subtract the containers transferred on Wednesday.",
               "work": "\\(3790 - 670 = 3120\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h2",
@@ -1374,7 +1428,8 @@
               "explain": "Sum the capacities of all three reservoirs.",
               "work": "\\(4500 + 3300 + 4100 = 11900\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h3",
@@ -1402,7 +1457,8 @@
               "explain": "Subtract the combined usage from the total initial sheets.",
               "work": "\\(35000 - 20000 - 9000 = 6000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h4",
@@ -1430,7 +1486,8 @@
               "explain": "Sum the populations of all colonies.",
               "work": "\\(1350 + 900 + 1800 = 4050\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h5",
@@ -1458,7 +1515,8 @@
               "explain": "Add the final climb.",
               "work": "\\(1930 + 1200 = 3130\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h6",
@@ -1486,7 +1544,8 @@
               "explain": "Divide the remaining fasteners among the cells.",
               "work": "\\(5650 \\div 5 = 1130\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h7",
@@ -1510,7 +1569,8 @@
               "explain": "Find files cataloged in Sector C.",
               "work": "\\(4600 - 2500 = 2100\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h8",
@@ -1534,7 +1594,8 @@
               "explain": "Determine the harvest of Farm Z.",
               "work": "\\(1440 - 250 = 1190\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h9",
@@ -1562,7 +1623,8 @@
               "explain": "Calculate the weight of Bucket C.",
               "work": "\\(4150 + 600 = 4750\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h10",
@@ -1590,7 +1652,8 @@
               "explain": "Sum the mileages of all fleets.",
               "work": "\\(5600 + 3800 + 5300 = 14700\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h11",
@@ -1622,7 +1685,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 6 + 4 + 6 = 16\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h12",
@@ -1650,7 +1714,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(8809 - 420 = 8389\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h13",
@@ -1678,7 +1743,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(7954 - 1446 = 6508\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h14",
@@ -1706,7 +1772,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(6200 - 1900 = 4300\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h15",
@@ -1734,7 +1801,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(4314 - 575 = 3739\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h16",
@@ -1766,7 +1834,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 4 + 4 + 5 = 13\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h17",
@@ -1794,7 +1863,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(9433 - 470 = 8963\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h18",
@@ -1822,7 +1892,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(8434 - 1571 = 6863\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h19",
@@ -1850,7 +1921,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(6500 - 2000 = 4500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h20",
@@ -1878,7 +1950,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(4580 - 600 = 3980\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h21",
@@ -1910,7 +1983,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 2 + 4 + 4 = 10\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h22",
@@ -1938,7 +2012,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(9988 - 520 = 9468\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h23",
@@ -1966,7 +2041,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(8983 - 1696 = 7287\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h24",
@@ -1994,7 +2070,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(6900 - 2100 = 4800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h25",
@@ -2022,7 +2099,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(4854 - 625 = 4229\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h26",
@@ -2054,7 +2132,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 7 + 4 + 3 = 14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h27",
@@ -2082,7 +2161,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(10620 - 570 = 10050\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h28",
@@ -2110,7 +2190,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(9463 - 1821 = 7642\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h29",
@@ -2138,7 +2219,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(7400 - 2200 = 5200\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h30",
@@ -2166,7 +2248,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(5128 - 650 = 4478\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h31",
@@ -2198,7 +2281,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 5 + 4 + 2 = 11\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h32",
@@ -2226,7 +2310,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(11244 - 620 = 10624\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h33",
@@ -2254,7 +2339,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(10020 - 1946 = 8074\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h34",
@@ -2282,7 +2368,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(7700 - 2400 = 5300\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h35",
@@ -2310,7 +2397,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(5471 - 675 = 4796\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h36",
@@ -2342,7 +2430,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 3 + 4 + 1 = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h37",
@@ -2370,7 +2459,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(11799 - 670 = 11129\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h38",
@@ -2398,7 +2488,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(10569 - 2071 = 8498\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h39",
@@ -2426,7 +2517,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(8100 - 2500 = 5600\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h40",
@@ -2454,7 +2546,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(5668 - 700 = 4968\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h41",
@@ -2486,7 +2579,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 8 + 4 + 6 = 18\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h42",
@@ -2514,7 +2608,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(12354 - 720 = 11634\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h43",
@@ -2542,7 +2637,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(11049 - 2196 = 8853\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h44",
@@ -2570,7 +2666,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(8600 - 2600 = 6000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h45",
@@ -2598,7 +2695,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(5942 - 725 = 5217\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h46",
@@ -2630,7 +2728,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 6 + 4 + 5 = 15\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h47",
@@ -2658,7 +2757,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(13055 - 770 = 12285\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h48",
@@ -2686,7 +2786,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(11606 - 2321 = 9285\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h49",
@@ -2714,7 +2815,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(8900 - 2700 = 6200\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h50",
@@ -2742,7 +2844,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(6285 - 750 = 5535\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h51",
@@ -2774,7 +2877,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 4 + 4 + 4 = 12\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h52",
@@ -2802,7 +2906,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(13610 - 820 = 12790\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h53",
@@ -2830,7 +2935,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(12155 - 2446 = 9709\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h54",
@@ -2858,7 +2964,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(9300 - 2900 = 6400\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h55",
@@ -2886,7 +2993,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(6482 - 775 = 5707\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h56",
@@ -2918,7 +3026,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 2 + 4 + 3 = 9\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h57",
@@ -2946,7 +3055,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(14165 - 870 = 13295\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h58",
@@ -2974,7 +3084,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(12635 - 2571 = 10064\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h59",
@@ -3002,7 +3113,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(9800 - 3000 = 6800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h60",
@@ -3030,7 +3142,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(6756 - 800 = 5956\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h61",
@@ -3062,7 +3175,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 7 + 4 + 2 = 13\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h62",
@@ -3090,7 +3204,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(14866 - 920 = 13946\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h63",
@@ -3118,7 +3233,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(13115 - 2696 = 10419\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h64",
@@ -3146,7 +3262,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(10100 - 3100 = 7000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h65",
@@ -3174,7 +3291,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(7099 - 825 = 6274\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h66",
@@ -3206,7 +3324,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 5 + 4 + 1 = 10\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h67",
@@ -3234,7 +3353,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(15421 - 970 = 14451\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h68",
@@ -3262,7 +3382,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(13741 - 2821 = 10920\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h69",
@@ -3290,7 +3411,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(10500 - 3300 = 7200\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h70",
@@ -3318,7 +3440,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(7373 - 850 = 6523\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h71",
@@ -3350,7 +3473,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 3 + 4 + 6 = 13\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h72",
@@ -3378,7 +3502,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(15976 - 1020 = 14956\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h73",
@@ -3406,7 +3531,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(14221 - 2946 = 11275\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h74",
@@ -3434,7 +3560,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(11000 - 3400 = 7600\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h75",
@@ -3462,7 +3589,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(7570 - 875 = 6695\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h76",
@@ -3494,7 +3622,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 8 + 4 + 5 = 17\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h77",
@@ -3522,7 +3651,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(16600 - 1070 = 15530\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h78",
@@ -3550,7 +3680,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(14701 - 3071 = 11630\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h79",
@@ -3578,7 +3709,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(11300 - 3500 = 7800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h80",
@@ -3606,7 +3738,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(7913 - 900 = 7013\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h81",
@@ -3638,7 +3771,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 6 + 4 + 4 = 14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h82",
@@ -3666,7 +3800,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(17232 - 1120 = 16112\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h83",
@@ -3694,7 +3829,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(15327 - 3196 = 12131\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h84",
@@ -3722,7 +3858,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(11700 - 3600 = 8100\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h85",
@@ -3750,7 +3887,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(8187 - 925 = 7262\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h86",
@@ -3782,7 +3920,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 4 + 4 + 3 = 11\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h87",
@@ -3810,7 +3949,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(17787 - 1170 = 16617\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h88",
@@ -3838,7 +3978,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(15807 - 3321 = 12486\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h89",
@@ -3866,7 +4007,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(12200 - 3800 = 8400\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h90",
@@ -3894,7 +4036,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(8384 - 950 = 7434\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h91",
@@ -3926,7 +4069,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 2 + 4 + 2 = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h92",
@@ -3954,7 +4098,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(18411 - 1220 = 17191\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h93",
@@ -3982,7 +4127,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(16287 - 3446 = 12841\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h94",
@@ -4010,7 +4156,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(12500 - 3900 = 8600\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h95",
@@ -4038,7 +4185,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(8727 - 975 = 7752\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h96",
@@ -4070,7 +4218,8 @@
               "explain": "Calculate the sum of the digits.",
               "work": "\\(\\text{A} + \\text{B} + \\text{C} = 7 + 4 + 1 = 12\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h97",
@@ -4098,7 +4247,8 @@
               "explain": "Subtract the temperature drop to find the final net change.",
               "work": "\\(19043 - 1270 = 17773\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h98",
@@ -4126,7 +4276,8 @@
               "explain": "Subtract the extracted total from the input total.",
               "work": "\\(16836 - 3571 = 13265\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h99",
@@ -4154,7 +4305,8 @@
               "explain": "Subtract the rounded Storage 2 count from the rounded Storage 1 count.",
               "work": "\\(12900 - 4000 = 8900\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-1a-h100",
@@ -4182,7 +4334,8 @@
               "explain": "Subtract the net secondary drop from the step one limit.",
               "work": "\\(9001 - 1000 = 8001\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -4219,7 +4372,8 @@
               "work": "\\\\(\\text{Result} = 1440\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q2",
@@ -4249,7 +4403,8 @@
               "work": "\\\\(\\text{Result} = 13200\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q3",
@@ -4279,7 +4434,8 @@
               "work": "\\\\(\\text{Result} = 540\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q4",
@@ -4309,7 +4465,8 @@
               "work": "\\\\(\\text{Result} = 770\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q5",
@@ -4339,7 +4496,8 @@
               "work": "\\\\(\\text{Result} = 1400\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q6",
@@ -4369,7 +4527,8 @@
               "work": "\\\\(\\text{Result} = 630\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q7",
@@ -4399,7 +4558,8 @@
               "work": "\\\\(\\text{Result} = 693\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q8",
@@ -4429,7 +4589,8 @@
               "work": "\\\\(\\text{Result} = 504\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q9",
@@ -4459,7 +4620,8 @@
               "work": "\\\\(\\text{Result} = 672\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q10",
@@ -4489,7 +4651,8 @@
               "work": "\\\\(\\text{Result} = 1666\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q11",
@@ -4519,7 +4682,8 @@
               "work": "\\\\(\\text{Result} = 612\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q12",
@@ -4549,7 +4713,8 @@
               "work": "\\\\(\\text{Result} = 585\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q13",
@@ -4579,7 +4744,8 @@
               "work": "\\\\(\\text{Result} = 107\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q14",
@@ -4609,7 +4775,8 @@
               "work": "\\\\(\\text{Result} = 88\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q15",
@@ -4639,7 +4806,8 @@
               "work": "\\\\(\\text{Result} = 106\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q16",
@@ -4669,7 +4837,8 @@
               "work": "\\\\(\\text{Result} = 494\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q17",
@@ -4699,7 +4868,8 @@
               "work": "\\\\(\\text{Result} = 91\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q18",
@@ -4729,7 +4899,8 @@
               "work": "\\\\(\\text{Result} = 91\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q19",
@@ -4759,7 +4930,8 @@
               "work": "\\\\(\\text{Result} = 23 r 4\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q20",
@@ -4789,7 +4961,8 @@
               "work": "\\\\(\\text{Result} = 49\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q21",
@@ -4819,7 +4992,8 @@
               "work": "\\\\(\\text{Result} = 66 r 8\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q22",
@@ -4849,7 +5023,8 @@
               "work": "\\\\(\\text{Result} = 113 r 1\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q23",
@@ -4879,7 +5054,8 @@
               "work": "\\\\(\\text{Result} = 31 r 2\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q24",
@@ -4909,7 +5085,8 @@
               "work": "\\\\(\\text{Result} = 37 r 12\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q25",
@@ -4939,7 +5116,8 @@
               "work": "\\\\(\\text{Result} = 4942\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q26",
@@ -4969,7 +5147,8 @@
               "work": "\\\\(\\text{Result} = 16588\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q27",
@@ -4999,7 +5178,8 @@
               "work": "\\\\(\\text{Result} = 14694\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q28",
@@ -5029,7 +5209,8 @@
               "work": "\\\\(\\text{Result} = 29988\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q29",
@@ -5059,7 +5240,8 @@
               "work": "\\\\(\\text{Result} = 38016\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q30",
@@ -5089,7 +5271,8 @@
               "work": "\\\\(\\text{Result} = 31325\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q31",
@@ -5119,7 +5302,8 @@
               "work": "\\\\(\\text{Result} = 4860\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q32",
@@ -5149,7 +5333,8 @@
               "work": "\\\\(\\text{Result} = 22464\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q33",
@@ -5179,7 +5364,8 @@
               "work": "\\\\(\\text{Result} = 28336\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q34",
@@ -5209,7 +5395,8 @@
               "work": "\\\\(\\text{Result} = 33396\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q35",
@@ -5239,7 +5426,8 @@
               "work": "\\\\(\\text{Result} = 278\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q36",
@@ -5269,7 +5457,8 @@
               "work": "\\\\(\\text{Result} = 135\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q37",
@@ -5299,7 +5488,8 @@
               "work": "\\\\(\\text{Result} = 1078\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q38",
@@ -5329,7 +5519,8 @@
               "work": "\\\\(\\text{Result} = 83\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q39",
@@ -5359,7 +5550,8 @@
               "work": "\\\\(\\text{Result} = 675\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q40",
@@ -5389,7 +5581,8 @@
               "work": "\\\\(\\text{Result} = 136\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q41",
@@ -5419,7 +5612,8 @@
               "work": "\\\\(\\text{Result} = 8677\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q42",
@@ -5449,7 +5643,8 @@
               "work": "\\\\(\\text{Result} = 4360\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q43",
@@ -5479,7 +5674,8 @@
               "work": "\\\\(\\text{Result} = 857 r 6\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q44",
@@ -5509,7 +5705,8 @@
               "work": "\\\\(\\text{Result} = 813\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q45",
@@ -5539,7 +5736,8 @@
               "work": "\\\\(\\text{Result} = 63 r 9\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q46",
@@ -5569,7 +5767,8 @@
               "work": "\\\\(\\text{Result} = 65 r 10\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q47",
@@ -5599,7 +5798,8 @@
               "work": "\\\\(\\text{Result} = 146 r 8\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q48",
@@ -5629,7 +5829,8 @@
               "work": "\\\\(\\text{Result} = 503 r 3\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q49",
@@ -5659,7 +5860,8 @@
               "work": "\\\\(\\text{Result} = 122\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q50",
@@ -5689,7 +5891,8 @@
               "work": "\\\\(\\text{Result} = 212 r 14\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q51",
@@ -5719,7 +5922,8 @@
               "work": "\\\\(\\text{Result} = 83 r 4\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q52",
@@ -5749,7 +5953,8 @@
               "work": "\\\\(\\text{Result} = 247 r 15\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q53",
@@ -5779,7 +5984,8 @@
               "work": "\\\\(\\text{Result} = 11136\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q54",
@@ -5809,7 +6015,8 @@
               "work": "\\\\(\\text{Result} = 840\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q55",
@@ -5839,7 +6046,8 @@
               "work": "\\\\(\\text{Result} = 792\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q56",
@@ -5869,7 +6077,8 @@
               "work": "\\\\(\\text{Result} = 1428\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q57",
@@ -5899,7 +6108,8 @@
               "work": "\\\\(\\text{Result} = 103200\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q58",
@@ -5929,7 +6139,8 @@
               "work": "\\\\(\\text{Result} = 3315\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q59",
@@ -5959,7 +6170,8 @@
               "work": "\\\\(\\text{Result} = 3145\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q60",
@@ -5989,7 +6201,8 @@
               "work": "\\\\(\\text{Result} = Plan A\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q61",
@@ -6019,7 +6232,8 @@
               "work": "\\\\(\\text{Result} = 561858990\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q62",
@@ -6049,7 +6263,8 @@
               "work": "\\\\(\\text{Result} = 5500\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q63",
@@ -6079,7 +6294,8 @@
               "work": "\\\\(\\text{Result} = 21\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1b-backup-q64",
@@ -6109,7 +6325,8 @@
               "work": "\\\\(\\text{Result} = a:1562 r 6, b:468 r 30\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q65",
@@ -6139,7 +6356,8 @@
               "work": "\\\\(\\text{Result} = 600, 450, 360, d:25/18.75/15\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-1b-backup-q66",
@@ -6169,7 +6387,8 @@
               "work": "\\\\(\\text{Result} = 72\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -6201,7 +6420,8 @@
               "work": "\\(14298 - 13710 = 588\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q2",
@@ -6226,7 +6446,8 @@
               "work": "\\(888 \\times 5 = 4440\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q3a",
@@ -6255,7 +6476,8 @@
               "work": "\\(19.00 < 26.00\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q3b",
@@ -6284,7 +6506,8 @@
               "work": "\\(26.00 - 19.00 = 7.00\\text{ dollars}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q4",
@@ -6309,7 +6532,8 @@
               "work": "\\(85\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q5",
@@ -6334,7 +6558,8 @@
               "work": "\\(1537 + 23 = 1560\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q6",
@@ -6359,7 +6584,8 @@
               "work": "\\(137 + 491 = 628\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q7a",
@@ -6380,7 +6606,8 @@
               "work": "\\(347 - 106 = 241\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q7b",
@@ -6401,7 +6628,8 @@
               "work": "\\(135 + 106 = 241\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q8",
@@ -6430,7 +6658,8 @@
               "work": "\\(x = 17 \\times 37 = 629\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-1c-q9",
@@ -6455,7 +6684,8 @@
               "work": "\\(2537 \\div 43 = 59\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

@@ -34,7 +34,8 @@
               "explain": "Calculate the original price.",
               "work": "\\(\\text{Original Price} = 240.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q7",
@@ -61,7 +62,8 @@
               "explain": "Evaluate the division.",
               "work": "\\(\\text{Original List Price} = 85000.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

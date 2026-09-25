@@ -50,7 +50,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-mc2",
@@ -91,7 +92,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-mc3",
@@ -184,7 +186,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-mc4",
@@ -225,7 +228,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-mc5",
@@ -265,7 +269,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-mc6",
@@ -425,7 +430,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-mc7",
@@ -475,7 +481,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-mc8",
@@ -519,7 +526,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-mc9",
@@ -616,7 +624,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-mc10",
@@ -661,7 +670,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q11a",
@@ -754,7 +764,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q11bi",
@@ -795,7 +806,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "abb2020-q11bii",
@@ -836,7 +848,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q11c",
@@ -880,7 +893,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q11d",
@@ -978,7 +992,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q11ei",
@@ -1075,7 +1090,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q11eii",
@@ -1168,7 +1184,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-q11eiii",
@@ -1265,7 +1282,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q11eiv",
@@ -1312,7 +1330,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-q12ai",
@@ -1344,7 +1363,8 @@
                   "explain": "For the second factor, \\(x^2 + 1 = 0\\) has no real solutions because \\(x^2 \\geq 0\\) for every real \\(x\\), so \\(x^2 + 1 \\geq 1 > 0\\). Therefore there is only one real \\(x\\)-intercept.",
                   "work": "x^2 + 1 = 0 \\implies \\text{no real solutions} \\implies x\\text{-intercept: } (2, 0)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "abb2020-q12ai-y",
@@ -1370,7 +1390,8 @@
                   "explain": "So the graph cuts the \\(y\\)-axis at the point where \\(y = -2\\).",
                   "work": "y\\text{-intercept: } (0, -2)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "For the $x$-intercept, set $h(x) = 0$. For the $y$-intercept, evaluate $h(0)$.",
@@ -1504,7 +1525,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q12aiii",
@@ -1538,7 +1560,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 4
         },
         {
           "id": "abb2020-q12b",
@@ -1578,7 +1601,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q12ci",
@@ -1616,7 +1640,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "abb2020-q12cii",
@@ -1654,7 +1679,8 @@
           "dna": {
             "dnaId": "FUNC-GRAPH-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 4
         },
         {
           "id": "abb2020-q13a",
@@ -1751,7 +1777,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q13bi",
@@ -1848,7 +1875,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q13bii",
@@ -1941,7 +1969,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q13ci",
@@ -1988,7 +2017,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q13cii",
@@ -2033,7 +2063,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q13d",
@@ -2078,7 +2109,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q13ei",
@@ -2127,7 +2159,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q13eii",
@@ -2176,7 +2209,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q13eiii",
@@ -2217,7 +2251,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q13eiv",
@@ -2250,7 +2285,8 @@
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "abb2020-q14a",
@@ -2297,7 +2333,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q14b",
@@ -2341,7 +2378,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q14c",
@@ -2386,7 +2424,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q14di",
@@ -2431,7 +2470,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q14dii",
@@ -2476,7 +2516,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q14diii",
@@ -2513,7 +2554,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q14div",
@@ -2554,7 +2596,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q15ai",
@@ -2647,7 +2690,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q15aii",
@@ -2748,7 +2792,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q15aiii",
@@ -2782,7 +2827,8 @@
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "abb2020-q15aiv",
@@ -2826,7 +2872,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q15av",
@@ -2872,7 +2919,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q15b",
@@ -2918,7 +2966,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q15c",
@@ -2962,7 +3011,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q16ai",
@@ -3003,7 +3053,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-q16aii",
@@ -3039,7 +3090,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q16aiii",
@@ -3079,7 +3131,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "abb2020-q16aiv",
@@ -3123,7 +3176,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q16bi",
@@ -3161,7 +3215,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q16bii",
@@ -3202,7 +3257,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "abb2020-q16biii",
@@ -3240,7 +3296,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "abb2020-q16biv",
@@ -3281,7 +3338,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "abb2020-q16bv",
@@ -3325,7 +3383,8 @@
           },
           "alsoIn": [
             "exam:abbotsleigh2020"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

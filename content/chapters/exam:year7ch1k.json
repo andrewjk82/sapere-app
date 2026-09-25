@@ -52,7 +52,8 @@
               "work": "\\(\\text{Boxes} = 178, quad \\text{Leftover} = 15\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-1k-h41",
@@ -83,7 +84,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 328, quad \\text{Remainder} = 23\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h42",
@@ -114,7 +116,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 308, quad \\text{Remainder} = 19\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h43",
@@ -145,7 +148,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 624, quad \\text{Remainder} = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h44",
@@ -176,7 +180,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 676, quad \\text{Remainder} = 4\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h45",
@@ -207,7 +212,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 204, quad \\text{Remainder} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h46",
@@ -238,7 +244,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 429, quad \\text{Remainder} = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h47",
@@ -269,7 +276,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 706, quad \\text{Remainder} = 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h48",
@@ -300,7 +308,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 264, quad \\text{Remainder} = 20\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h49",
@@ -331,7 +340,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 529, quad \\text{Remainder} = 13\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h50",
@@ -362,7 +372,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 11\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h51",
@@ -393,7 +404,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 505, quad \\text{Remainder} = 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h52",
@@ -424,7 +436,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 354, quad \\text{Remainder} = 23\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h53",
@@ -455,7 +468,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 613, quad \\text{Remainder} = 3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h54",
@@ -486,7 +500,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 496, quad \\text{Remainder} = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h55",
@@ -517,7 +532,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 364, quad \\text{Remainder} = 21\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h56",
@@ -548,7 +564,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h57",
@@ -579,7 +596,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 665, quad \\text{Remainder} = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h58",
@@ -610,7 +628,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 715, quad \\text{Remainder} = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h59",
@@ -641,7 +660,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 312, quad \\text{Remainder} = 11\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h60",
@@ -672,7 +692,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 583, quad \\text{Remainder} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h61",
@@ -703,7 +724,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 617, quad \\text{Remainder} = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h62",
@@ -734,7 +756,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h63",
@@ -765,7 +788,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 256, quad \\text{Remainder} = 29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h64",
@@ -796,7 +820,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 306, quad \\text{Remainder} = 23\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h65",
@@ -827,7 +852,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 400, quad \\text{Remainder} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h66",
@@ -858,7 +884,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 573, quad \\text{Remainder} = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h67",
@@ -889,7 +916,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 705, quad \\text{Remainder} = 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h68",
@@ -920,7 +948,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 365, quad \\text{Remainder} = 0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h69",
@@ -951,7 +980,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 372, quad \\text{Remainder} = 23\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h70",
@@ -982,7 +1012,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 630, quad \\text{Remainder} = 0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h71",
@@ -1013,7 +1044,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 546, quad \\text{Remainder} = 17\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h72",
@@ -1044,7 +1076,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 358, quad \\text{Remainder} = 0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h73",
@@ -1075,7 +1108,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 533, quad \\text{Remainder} = 4\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h74",
@@ -1106,7 +1140,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 336, quad \\text{Remainder} = 27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h75",
@@ -1137,7 +1172,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 272, quad \\text{Remainder} = 27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h76",
@@ -1168,7 +1204,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 625, quad \\text{Remainder} = 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h77",
@@ -1199,7 +1236,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 224, quad \\text{Remainder} = 29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h78",
@@ -1230,7 +1268,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 530, quad \\text{Remainder} = 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h79",
@@ -1261,7 +1300,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y7-1k-h80",
@@ -1292,7 +1332,8 @@
               "explain": "Complete the division process and identify the final quotient and remainder.",
               "work": "\\(\\text{Quotient} = 290, quad \\text{Remainder} = 30\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

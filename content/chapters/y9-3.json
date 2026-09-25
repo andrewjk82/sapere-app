@@ -30,7 +30,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{68}{100} = 0.68\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1b",
@@ -54,7 +55,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{8.4}{100} = 0.084\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1c",
@@ -78,7 +80,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{95}{100} = 0.95\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1d",
@@ -102,7 +105,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{24}{100} = 0.24\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1e",
@@ -126,7 +130,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{6}{100} = 0.06\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1f",
@@ -150,7 +155,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{4.75}{100} = 0.0475\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1g",
@@ -174,7 +180,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{185}{100} = 1.85\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1h",
@@ -198,7 +205,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{0.4}{100} = 0.004\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1i",
@@ -222,7 +230,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{68}{100} = 0.8225\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1j",
@@ -246,7 +255,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{0.2}{100} = 0.002\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1k",
@@ -270,7 +280,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{153.8}{100} = 1.538\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-1l",
@@ -294,7 +305,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{68}{100} = 0.0075\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2a",
@@ -318,7 +330,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{45}{100} = \\frac{9}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2b",
@@ -342,7 +355,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{64}{100} = \\frac{16}{25}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2c",
@@ -366,7 +380,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{85}{100} = \\frac{17}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2d",
@@ -390,7 +405,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{68}{100} = \\frac{3}{8}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2e",
@@ -414,7 +430,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{68}{100} = \\frac{1}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2f",
@@ -438,7 +455,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{68}{100} = \\frac{1}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2g",
@@ -462,7 +480,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{8.25}{100} = \\frac{33}{400}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2h",
@@ -486,7 +505,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{5.6}{100} = \\frac{7}{125}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2i",
@@ -510,7 +530,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{240}{100} = \\frac{12}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2j",
@@ -534,7 +555,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{175}{100} = \\frac{7}{4}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2k",
@@ -558,7 +580,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{68}{100} = \\frac{9}{8}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-2l",
@@ -582,7 +605,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{144}{100} = \\frac{36}{25}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3a",
@@ -610,7 +634,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 80%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3b",
@@ -638,7 +663,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 62.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3c",
@@ -666,7 +692,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 43.75%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3d",
@@ -694,7 +721,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 325%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3e",
@@ -722,7 +750,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 45%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3f",
@@ -750,7 +779,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 33.33%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3g",
@@ -778,7 +808,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 166.67%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3h",
@@ -806,7 +837,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 1.75%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3i",
@@ -834,7 +866,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 56%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3j",
@@ -862,7 +895,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 34.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3k",
@@ -890,7 +924,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 8%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3l",
@@ -918,7 +953,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 2.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3m",
@@ -946,7 +982,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 140%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3n",
@@ -974,7 +1011,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 305%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3o",
@@ -1002,7 +1040,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 128.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-3p",
@@ -1030,7 +1069,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 0.45%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4a",
@@ -1054,7 +1094,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{48}{100} = \\frac{12}{25}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4b",
@@ -1078,7 +1119,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{48}{100} = 0.48\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4c",
@@ -1098,7 +1140,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 60%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4d",
@@ -1118,7 +1161,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 0.6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4e",
@@ -1138,7 +1182,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 24%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4f",
@@ -1158,7 +1203,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } \\frac{6}{25}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4g",
@@ -1182,7 +1228,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{22.5}{100} = \\frac{9}{40}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4h",
@@ -1206,7 +1253,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
               "work": "\\\\(\\frac{22.5}{100} = 0.225\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-4i",
@@ -1226,7 +1274,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 8%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5a",
@@ -1250,7 +1299,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{18}{100} = 9\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5b",
@@ -1274,7 +1324,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{62}{100} = 1240\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5c",
@@ -1298,7 +1349,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{34}{100} = 61.88\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5d",
@@ -1322,7 +1374,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{140}{100} = 875\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5e",
@@ -1346,7 +1399,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{18.5}{100} = 155.4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5f",
@@ -1370,7 +1424,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{125.4}{100} = 689.7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5g",
@@ -1394,7 +1449,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{3.5}{100} = 14.7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5h",
@@ -1418,7 +1474,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{0.2}{100} = 16\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-5i",
@@ -1442,7 +1499,8 @@
               "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
               "work": "\\\\(\\frac{180}{100} = 1323\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6a",
@@ -1462,7 +1520,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 11.60\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6b",
@@ -1482,7 +1541,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 241.40\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6c",
@@ -1502,7 +1562,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 99.00\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6d",
@@ -1522,7 +1583,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 1740.00\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6e",
@@ -1542,7 +1604,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 2.10\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6f",
@@ -1562,7 +1625,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 22.00\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6g",
@@ -1582,7 +1646,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 99.00\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6h",
@@ -1602,7 +1667,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 1.90\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-6i",
@@ -1622,7 +1688,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 157.50\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3a-7a",
@@ -1650,7 +1717,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 22.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-7b",
@@ -1678,7 +1746,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 2.0%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-7c",
@@ -1706,7 +1775,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 3.5%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-7d",
@@ -1734,7 +1804,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 200.0%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-7e",
@@ -1762,7 +1833,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 25.0%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-7f",
@@ -1790,7 +1862,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 400.0%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8a",
@@ -1818,7 +1891,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 21.25%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8b",
@@ -1846,7 +1920,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 1.50%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8c",
@@ -1877,7 +1952,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-3a-8d",
@@ -1905,7 +1981,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 2.38%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8e",
@@ -1933,7 +2010,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 2.74%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8f",
@@ -1961,7 +2039,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 7.00%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8g",
@@ -1989,7 +2068,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 1250.00%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8h",
@@ -2017,7 +2097,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 0.55%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8i",
@@ -2045,7 +2126,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 18250.00%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8j",
@@ -2073,7 +2155,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 0.81%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8k",
@@ -2101,7 +2184,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 0.02%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-8l",
@@ -2129,7 +2213,8 @@
               "explain": "Append the percentage symbol to complete the conversion.",
               "work": "\\\\(= 4.44%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-9a",
@@ -2160,7 +2245,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-3a-9b",
@@ -2191,7 +2277,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-3a-9c",
@@ -2222,7 +2309,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-3a-9d",
@@ -2253,7 +2341,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-3a-10",
@@ -2285,7 +2374,8 @@
               "explain": "Since the number of students must be a whole number, we round the result to the nearest integer.",
               "work": "\\\\(34.4 \\approx 34\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-11a",
@@ -2317,7 +2407,8 @@
               "explain": "The final result represents the exact weight of aluminium in grams.",
               "work": "\\\\(\\text{Weight of aluminium} = 1.08\\text{ g}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-11b",
@@ -2349,7 +2440,8 @@
               "explain": "The result represents the lead weight inside the alloy in grams.",
               "work": "\\\\(\\text{Weight of lead} = 0.0084\\text{ g}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-12",
@@ -2385,7 +2477,8 @@
               "explain": "Combine the integer minutes and the calculated seconds to write the final answer.",
               "work": "\\\\(55 \\text{ minutes } 6 \\text{ seconds}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3a-13a",
@@ -2417,7 +2510,8 @@
               "explain": "The result is the number of new members added during the drive.",
               "work": "\\\\(\\text{Increase} = 2,250\\text{ members}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-13b",
@@ -2445,7 +2539,8 @@
               "explain": "Conclude with the updated size of the football club membership.",
               "work": "\\\\(\\text{New membership} = 17,250\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-14",
@@ -2465,7 +2560,8 @@
               "explain": "Identify the mathematical operation and the input values to calculate.",
               "work": "\\\\(\\text{Target calculation: } 0.003224\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-15ai",
@@ -2493,7 +2589,8 @@
               "explain": "Simplify the calculation.",
               "work": "\\\\(\\frac{4.2 \\times 100}{30} = \\frac{420}{30} = 14\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-15aii",
@@ -2521,7 +2618,8 @@
               "explain": "Perform the multiplication and division.",
               "work": "\\\\(\\frac{15}{30} = 0.5\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-15aiii",
@@ -2549,7 +2647,8 @@
               "explain": "Simplify the fraction value.",
               "work": "\\\\(\\frac{12}{30} = 0.4\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-15b",
@@ -2581,7 +2680,8 @@
               "explain": "State the final answer in grams.",
               "work": "\\\\(\\text{Weight} = 35\\text{ g}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-16a",
@@ -2609,7 +2709,8 @@
               "explain": "Round the resulting value to 1 decimal place.",
               "work": "\\\\(25.1808\\% \\approx 25.2\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-16b",
@@ -2637,7 +2738,8 @@
               "explain": "Round the final value to the nearest integer.",
               "work": "\\\\(397.127\\% \\approx 397\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-17a",
@@ -2665,7 +2767,8 @@
               "explain": "Round the percentage to 1 decimal place.",
               "work": "\\\\(27.333...\\% \\approx 27.3\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-17b",
@@ -2693,7 +2796,8 @@
               "explain": "Round to 1 decimal place.",
               "work": "\\\\(30.263\\% \\approx 30.3\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-18a",
@@ -2721,7 +2825,8 @@
               "explain": "Round the result to the nearest integer.",
               "work": "\\\\(56.45\\% \\approx 56\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3a-18b",
@@ -2749,7 +2854,8 @@
               "explain": "Round the value to the nearest integer.",
               "work": "\\\\(177.14\\% \\approx 177\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-ep1-q1",
@@ -2780,7 +2886,8 @@
               "explain": "Add the two commission amounts together.",
               "work": "\\(\\\\$5,400 + \\\\$7,660 = \\\\$13,060\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q2",
@@ -2811,7 +2918,8 @@
               "explain": "Add all the amounts to find the total pay.",
               "work": "\\(\\\\$594.70 + \\\\$46.95 + \\\\$125.20 = \\\\$766.85\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q3",
@@ -2834,7 +2942,8 @@
               "explain": "Divide the total pay by the total equivalent hours to find the normal hourly rate.",
               "work": "\\(\\text{Hourly rate} = \\frac{\\\\$1029}{42} = \\\\$24.50\\text{/hour}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q4",
@@ -2865,7 +2974,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$2,902\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q5",
@@ -2892,7 +3002,8 @@
               "explain": "Calculate the interest.",
               "work": "\\(I = \\\\$646.80\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q6",
@@ -2923,7 +3034,8 @@
               "explain": "Solve for \\(n\\).",
               "work": "\\(13.50 = 18 \\times \\frac{n}{12}\\)<br>\\(13.50 = 1.5n\\)<br>\\(n = \\frac{13.50}{1.5} = 9\\text{ months}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q7a",
@@ -2946,7 +3058,8 @@
               "explain": "Calculate the result.",
               "work": "\\(\\text{Taxable income} = \\\\$79,279\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q7b",
@@ -2981,7 +3094,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$17,313\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q7c",
@@ -3004,7 +3118,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$1,189\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q7d",
@@ -3023,7 +3138,8 @@
               "explain": "Add the income tax and the Medicare Levy.",
               "work": "\\(\\text{Total tax} = \\\\$17,313 + \\\\$1,189 = \\\\$18,502\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q7e",
@@ -3052,7 +3168,8 @@
             {
               "explain": "She has to repay \\(\\\\$1,031\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q8",
@@ -3083,7 +3200,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$17,439\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q8-compound-a-i",
@@ -3114,7 +3232,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$7,428\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q8-compound-a-ii",
@@ -3145,7 +3264,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$7,798\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-ep1-q8-compound-b",
@@ -3176,7 +3296,8 @@
               "explain": "Round to the nearest dollar.",
               "work": "\\(\\\\$1,941\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -3215,7 +3336,8 @@
               "explain": "State the final capacity value.",
               "work": "\\\\(\\text{Remaining battery} = 2730\\text{ mAh}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-2",
@@ -3247,7 +3369,8 @@
               "explain": "Conclude with the final count of new koalas.",
               "work": "\\\\(\\text{New koalas} = 27\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-3",
@@ -3279,7 +3402,8 @@
               "explain": "The savings amount represents the value subtracted from the original price.",
               "work": "\\\\(\\text{Savings} = \\$9\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-4",
@@ -3311,7 +3435,8 @@
               "explain": "The result is the weight of water needed for the concrete mixture.",
               "work": "\\\\(\\text{Water weight} = 9\\text{ kg}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-5",
@@ -3339,7 +3464,8 @@
               "explain": "Multiply this ratio by 100 to find the percentage.",
               "work": "\\\\(\\text{Percentage} = \\frac{38}{50} \\times 100 = 76\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-6",
@@ -3371,7 +3497,8 @@
               "explain": "Conclude with the weight in grams.",
               "work": "\\\\(\\text{Cocoa solids} = 28\\text{ g}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-7",
@@ -3403,7 +3530,8 @@
               "explain": "State the number of residents preferring public transport.",
               "work": "\\\\(\\text{Count} = 120\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-8",
@@ -3435,7 +3563,8 @@
               "explain": "State the final commission amount.",
               "work": "\\\\(\\text{Commission} = \\$13,000\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-9",
@@ -3467,7 +3596,8 @@
               "explain": "State the final number of batteries replaced.",
               "work": "\\\\(\\text{Phones} = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-10",
@@ -3495,7 +3625,8 @@
               "explain": "Multiply the ratio by 100 to obtain the percentage.",
               "work": "\\\\(\\frac{28}{80} \\times 100 = 35\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-3b-11",
@@ -3531,7 +3662,8 @@
               "explain": "Conclude with the original price in dollars.",
               "work": "\\\\(\\text{Original Price} = \\$640\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-12",
@@ -3563,7 +3695,8 @@
               "explain": "Simplify the fraction to find the integer total.",
               "work": "\\\\(\\text{Total items} = 450\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-13",
@@ -3591,7 +3724,8 @@
               "explain": "Convert the ratio to a percentage by multiplying by 100.",
               "work": "\\\\(\\text{Markup Percentage} = \\frac{48}{120} \\times 100 = 40\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-14",
@@ -3623,7 +3757,8 @@
               "explain": "Conclude with the pre-GST cost.",
               "work": "\\\\(\\text{Price before GST} = \\$120\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-15",
@@ -3651,7 +3786,8 @@
               "explain": "Multiply the ratio by 100 to convert to a percentage increase.",
               "work": "\\\\(\\text{Increase} = \\frac{10.80}{45} \\times 100 = 24\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-16",
@@ -3683,7 +3819,8 @@
               "explain": "State the final weight of zinc in grams.",
               "work": "\\\\(\\text{Weight of zinc} = 52.5\\text{ g}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-17",
@@ -3715,7 +3852,8 @@
               "explain": "Subtract the second dispatch from the intermediate remainder to find the final count.",
               "work": "\\\\(\\text{Final Boxes} = 408 - 81.6 = 326.4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-18",
@@ -3747,7 +3885,8 @@
               "explain": "Round the percentage value to one decimal place.",
               "work": "\\\\(\\text{Error} \\approx 11.1\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-19",
@@ -3779,7 +3918,8 @@
               "explain": "State the dollar amount reserved for other expenses.",
               "work": "\\\\(\\text{Other Expenses} = \\$2160\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-20",
@@ -3807,7 +3947,8 @@
               "explain": "State the final value of the land in dollars.",
               "work": "\\\\(\\text{Final Value} = \\$323,840\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-3b-21",
@@ -3839,7 +3980,8 @@
               "explain": "Subtract the defective processors from the total output to find the number of non-defective processors.",
               "work": "\\\\(\\text{Non-defective} = 2500 - 80 = 2420\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-22",
@@ -3871,7 +4013,8 @@
               "explain": "Solve for the new total weight of wheat by dividing the dry solid mass by 0.90.",
               "work": "\\\\(\\text{New Weight} = \\frac{15.3}{0.90} = 17\\text{ tonnes}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-23",
@@ -3907,7 +4050,8 @@
               "explain": "Conclude with the cost in dollars.",
               "work": "\\\\(\\text{Cost} = \\$900\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-24",
@@ -3939,7 +4083,8 @@
               "explain": "Divide the total salt by the total solution volume and multiply by 100 to get the final percentage.",
               "work": "\\\\(\\text{Concentration} = \\frac{1.38}{10} \\times 100 = 13.8\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-25",
@@ -3971,7 +4116,8 @@
               "explain": "Convert this decimal difference to percentage representation.",
               "work": "\\\\(\\text{Percentage decrease} = 32\\%\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-26",
@@ -4007,7 +4153,8 @@
               "explain": "State the pre-increase value of the property in dollars.",
               "work": "\\\\(\\text{Value} = \\$900,000\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-27",
@@ -4043,7 +4190,8 @@
               "explain": "State the final gross income amount.",
               "work": "\\\\(\\text{Total Income} = \\$220,000\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-28",
@@ -4075,7 +4223,8 @@
               "explain": "Subtract the original volume from the new total volume to find the volume of water to add.",
               "work": "\\\\(\\text{Water to add} = 840 - 700 = 140\\text{ mL}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-29",
@@ -4111,7 +4260,8 @@
               "explain": "State the final wholesale cost of the generator.",
               "work": "\\\\(\\text{Wholesale Cost} = \\$2000\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-3b-30",
@@ -4139,7 +4289,8 @@
               "explain": "Conclude with the drilling speed in meters per hour.",
               "work": "\\\\(\\text{Final drilling speed} = 78.2\\text{ m/h}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -4182,7 +4333,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sg2022-q4d-ii",
@@ -4220,7 +4372,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             }
           ],
           "meta": {
@@ -4273,7 +4426,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         }
       ]
     }

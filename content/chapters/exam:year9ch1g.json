@@ -383,7 +383,8 @@
               "work": "\\(\\text{Area} = 5 \\times 8 = 40\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1g-q8d",
@@ -759,7 +760,8 @@
               "work": "\\(40 + 24 - 15 - 9 = 64 - 24 = 40\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

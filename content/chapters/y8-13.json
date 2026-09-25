@@ -270,7 +270,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5a-beta",
@@ -534,7 +535,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5b-x",
@@ -860,7 +862,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5b-y",
@@ -1186,7 +1189,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5b-z",
@@ -1512,7 +1516,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5c-alpha",
@@ -1954,7 +1959,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5c-beta",
@@ -2396,7 +2402,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5d",
@@ -2704,7 +2711,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5e",
@@ -2924,7 +2932,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5f-x",
@@ -3248,7 +3257,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5f-y",
@@ -3572,7 +3582,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q5f-z",
@@ -3896,7 +3907,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q6a",
@@ -3932,7 +3944,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q6b",
@@ -3965,7 +3978,8 @@
               "explain": "Final answer: 44. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(44\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q6c",
@@ -3998,7 +4012,8 @@
               "explain": "Final answer: 31. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(31\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q6d",
@@ -4031,7 +4046,8 @@
               "explain": "Final answer: 88. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(88\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13a-q7a",
@@ -4060,7 +4076,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-13a-q7b",
@@ -4089,7 +4106,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-13a-q7c",
@@ -4118,7 +4136,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-13a-q8",
@@ -4396,7 +4415,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch13"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-13a-q9a",
@@ -4425,7 +4445,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y8-13a-q9b",
@@ -4454,7 +4475,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y8-13a-q10a",
@@ -4483,7 +4505,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 4
         },
         {
           "id": "y8-13a-q10b",
@@ -4512,7 +4535,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y8-13a-q12",
@@ -4817,7 +4841,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 4
         },
         {
           "id": "y8-13a-q13",
@@ -5116,7 +5141,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 4
         },
         {
           "id": "y8-13a-q9",
@@ -5230,13 +5256,15 @@
               "id": "y8-13a-q9a",
               "type": "review",
               "stem": "a) Use the fact that the angle sum of a quadrilateral is $360^\\circ$ to prove that $\\theta + \\phi = 180^\\circ$.",
-              "answer": "\\angle W + \\angle X + \\angle Y + \\angle Z = 360^\\circ \\implies 2\\theta + 2\\phi = 360^\\circ \\implies \\theta + \\phi = 180^\\circ."
+              "answer": "\\angle W + \\angle X + \\angle Y + \\angle Z = 360^\\circ \\implies 2\\theta + 2\\phi = 360^\\circ \\implies \\theta + \\phi = 180^\\circ.",
+              "xp": 3
             },
             {
               "id": "y8-13a-q9b",
               "type": "review",
               "stem": "b) Hence prove that $WXYZ$ is a parallelogram.",
-              "answer": "Since $\\angle W + \\angle X = 180^\\circ$, co-interior angles are supplementary, so $XY \\parallel WZ$. Similarly, since $\\angle W + \\angle Z = 180^\\circ$, $WX \\parallel YZ$. Since both pairs of opposite sides are parallel, $WXYZ$ is a parallelogram."
+              "answer": "Since $\\angle W + \\angle X = 180^\\circ$, co-interior angles are supplementary, so $XY \\parallel WZ$. Similarly, since $\\angle W + \\angle Z = 180^\\circ$, $WX \\parallel YZ$. Since both pairs of opposite sides are parallel, $WXYZ$ is a parallelogram.",
+              "xp": 3
             }
           ],
           "answer": "See proofs for parts a and b.",
@@ -5650,7 +5678,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1a-alpha",
@@ -6052,7 +6081,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1a-beta",
@@ -6454,7 +6484,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1b-x",
@@ -6744,7 +6775,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1b-y",
@@ -7034,7 +7066,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1b-z",
@@ -7324,7 +7357,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1b-alpha",
@@ -7614,7 +7648,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1b-beta",
@@ -7904,7 +7939,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1c-x",
@@ -8149,7 +8185,8 @@
               "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1c-alpha",
@@ -8394,7 +8431,8 @@
               "explain": "Final answer: 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(40\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q1c-beta",
@@ -8642,7 +8680,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2a-x",
@@ -8844,7 +8883,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2a-alpha",
@@ -9046,7 +9086,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2a-beta",
@@ -9248,7 +9289,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2b-alpha",
@@ -9451,7 +9493,8 @@
               "explain": "Final answer: 90. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(90\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2b-beta",
@@ -9657,7 +9700,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2c-y",
@@ -9904,7 +9948,8 @@
               "explain": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2c-z",
@@ -10151,7 +10196,8 @@
               "explain": "Final answer: 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q2c-alpha",
@@ -10401,7 +10447,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q3a-x",
@@ -10662,7 +10709,8 @@
               "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q3a-alpha",
@@ -10923,7 +10971,8 @@
               "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(45\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q3a-beta",
@@ -10959,7 +11008,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q3b-z",
@@ -11339,7 +11389,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q3b-alpha",
@@ -11716,7 +11767,8 @@
               "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(45\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q3b-beta",
@@ -12093,7 +12145,8 @@
               "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(45\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-13d-q6a",
@@ -12246,7 +12299,8 @@
               "explain": "Final answer: 20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q6b",
@@ -12419,7 +12473,8 @@
               "explain": "Final answer: 32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(32\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q6c",
@@ -12576,7 +12631,8 @@
               "explain": "Final answer: 34. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(34\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q6d",
@@ -12729,7 +12785,8 @@
               "explain": "Final answer: 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(24\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q7a",
@@ -12882,7 +12939,8 @@
               "explain": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(100\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q7b",
@@ -13063,7 +13121,8 @@
               "explain": "Final answer: 120. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(120\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q7c",
@@ -13222,7 +13281,8 @@
               "explain": "Final answer: 126. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(126\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-13d-q7d",
@@ -13434,7 +13494,8 @@
           ],
           "alsoIn": [
             "exam:year8ch13d"
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

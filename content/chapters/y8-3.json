@@ -40,7 +40,8 @@
               "work": "\\\\(\\\\text{HCF}(9, 15) = 3\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q1b",
@@ -74,7 +75,8 @@
               "work": "\\\\(\\\\text{HCF}(8, 20) = 4\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q1c",
@@ -108,7 +110,8 @@
               "work": "\\\\(\\\\text{HCF}(15, 8) = 1\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q1d",
@@ -142,7 +145,8 @@
               "work": "\\\\(\\\\text{HCF}(21, 24) = 3\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q1e",
@@ -172,7 +176,8 @@
               "work": "\\\\(\\\\text{HCF}(1, 10) = 1\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q1f",
@@ -206,7 +211,8 @@
               "work": "\\\\(\\\\text{HCF}(6, 18) = 6\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2a",
@@ -236,7 +242,8 @@
               "work": "\\\\(\\\\text{HCF} = 2^3 = 8\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2b",
@@ -266,7 +273,8 @@
               "work": "\\\\(\\\\text{HCF}(14, 21) = 7\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2c",
@@ -296,7 +304,8 @@
               "work": "\\\\(\\\\text{HCF} = 3 \\\\times 5 = 15\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2d",
@@ -326,7 +335,8 @@
               "work": "\\\\(\\\\text{HCF}(36, 25) = 1\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2e",
@@ -356,7 +366,8 @@
               "work": "\\\\(\\\\text{HCF}(48, 20) = 2^2 = 4\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q2f",
@@ -386,7 +397,8 @@
               "work": "\\\\(\\\\text{HCF}(34, 85) = 17\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q2g",
@@ -412,7 +424,8 @@
               "work": "\\\\(\\\\text{HCF} = 2^3 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q2h",
@@ -438,7 +451,8 @@
               "work": "\\\\(\\\\text{HCF}(21, 9, 20) = 1\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q2i",
@@ -464,7 +478,8 @@
               "work": "\\\\(\\\\text{HCF} = 2^1 \\\\times 5^1 = 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q3a",
@@ -494,7 +509,8 @@
               "work": "\\\\(\\\\text{LCM}(6, 8) = 24\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q3b",
@@ -524,7 +540,8 @@
               "work": "\\\\(\\\\text{LCM}(15, 20) = 60\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q3c",
@@ -554,7 +571,8 @@
               "work": "\\\\(\\\\text{LCM}(4, 9) = 36\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q3d",
@@ -580,7 +598,8 @@
               "work": "\\\\(\\\\text{LCM}(6, 12) = 12\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q3e",
@@ -606,7 +625,8 @@
               "work": "\\\\(\\\\text{LCM}(1, 6) = 6\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q3f",
@@ -636,7 +656,8 @@
               "work": "\\\\(\\\\text{LCM}(8, 12) = 24\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4a",
@@ -662,7 +683,8 @@
               "work": "\\\\(\\\\text{LCM} = 3^2 \\\\times 5 = 9 \\\\times 5 = 45\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4b",
@@ -688,7 +710,8 @@
               "work": "\\\\(\\\\text{LCM}(9, 10) = 9 \\\\times 10 = 90\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4c",
@@ -710,7 +733,8 @@
               "work": "\\\\(\\\\text{LCM}(19, 1) = 19\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4d",
@@ -736,7 +760,8 @@
               "work": "\\\\(\\\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4e",
@@ -758,7 +783,8 @@
               "work": "\\\\(\\\\text{LCM}(6, 36) = 36\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4f",
@@ -780,7 +806,8 @@
               "work": "\\\\(\\\\text{LCM}(25, 100) = 100\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-3a-q4g",
@@ -806,7 +833,8 @@
               "work": "\\\\(\\\\text{LCM} = 2^3 \\\\times 3 = 8 \\\\times 3 = 24\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q4h",
@@ -832,7 +860,8 @@
               "work": "\\\\(\\\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q4i",
@@ -858,7 +887,8 @@
               "work": "\\\\(\\\\text{LCM} = 2^3 \\\\times 3 \\\\times 5 = 8 \\\\times 15 = 120\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-3a-q5b",
@@ -887,7 +917,8 @@
               "explain": "Count the total number of primes in this combined list.",
               "work": "\\(\\text{Total count} = 12 \\text{ prime numbers}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3a-q5c",
@@ -916,7 +947,8 @@
               "explain": "The remaining numbers are composite because they have factors other than 1 and themselves. Note ODD composites like 45, 49, 55, 57 must be included too — only excluding primes, not just picking the even numbers.",
               "work": "\\(\\text{Composite numbers}: 42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3a-q6a",
@@ -942,7 +974,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 10 = \\\\{2, 5\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6b",
@@ -968,7 +1001,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 18 = \\\\{2, 3\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6c",
@@ -994,7 +1028,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 21 = \\\\{3, 7\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6d",
@@ -1020,7 +1055,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 42 = \\\\{2, 3, 7\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6e",
@@ -1046,7 +1082,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 52 = \\\\{2, 13\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6f",
@@ -1072,7 +1109,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 46 = \\\\{2, 23\\\\}\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q6g",
@@ -1102,7 +1140,8 @@
               "work": "\\\\(\\\\text{Prime divisors of } 175 = \\\\{5, 7\\\\}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q7a-1",
@@ -1128,7 +1167,8 @@
               "work": "\\\\(14 = 2 \\\\times 7 \\\\quad \\\\checkmark\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q7a-2",
@@ -1154,7 +1194,8 @@
               "work": "\\\\(15 = 3 \\\\times 5 \\\\quad \\\\checkmark\\\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-3a-q7b-1",
@@ -1184,7 +1225,8 @@
               "work": "\\\\(42 = 2 \\\\times 3 \\\\times 7\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q7b-2",
@@ -1214,7 +1256,8 @@
               "work": "\\\\(70 = 2 \\\\times 5 \\\\times 7\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q7c-1",
@@ -1236,7 +1279,8 @@
               "work": "\\\\(25 = 5^2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q7c-2",
@@ -1258,7 +1302,8 @@
               "work": "\\\\(27 = 3^3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8a",
@@ -1284,7 +1329,8 @@
               "work": "\\\\(13 = 2^2 + 3^2 = 4 + 9\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8b",
@@ -1310,7 +1356,8 @@
               "work": "\\\\(17 = 1^2 + 4^2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8c",
@@ -1336,7 +1383,8 @@
               "work": "\\\\(29 = 2^2 + 5^2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8d",
@@ -1362,7 +1410,8 @@
               "work": "\\\\(37 = 1^2 + 6^2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8e",
@@ -1384,7 +1433,8 @@
               "work": "\\\\(4^2 + 5^2 = 16 + 25 = 41\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q8f",
@@ -1406,7 +1456,8 @@
               "work": "\\\\(2^2 + 7^2 = 4 + 49 = 53\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-3a-q9",
@@ -1440,7 +1491,8 @@
               "work": "\\\\(\\\\text{Tile side length} = 15 \\\\text{ m}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-3a-q10",
@@ -1474,7 +1526,8 @@
               "work": "\\\\(\\\\text{Answer: } 60 \\\\text{ days}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-3a-q11",
@@ -1508,7 +1561,8 @@
               "work": "\\\\(\\\\text{Answer: } 20 \\\\text{ min}\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-3a-q12",
@@ -1542,7 +1596,8 @@
               "work": "\\\\(65 \\\\times 17 = 1105 \\\\quad \\\\checkmark\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-3a-q13",
@@ -1575,7 +1630,8 @@
               "explain": "All components used (13, 109, 11, 113, 19) are verified prime numbers, confirming Goldbach's conjecture for these values.",
               "work": "\\(\\text{All components are prime.} \\checkmark\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-3a-q15",
@@ -1608,7 +1664,8 @@
               "explain": "Since every other factor pair is still distinct, the self-paired square root makes the total number of distinct factors odd.",
               "work": "\\(\\text{Total count} = 2m + 1 \\implies \\text{Odd}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-3a-q5ai",
@@ -1627,7 +1684,8 @@
               "explain": "Check the upper limit. Make sure the list ends exactly at 40.",
               "work": "\\\\(40 = 2 \\times 20 \\implies \\text{List contains exactly 20 numbers.}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3a-q5aii",
@@ -1646,7 +1704,8 @@
               "explain": "Check the upper limit. Since the next multiple is 42, which exceeds 40, our list must stop at 39.",
               "work": "\\\\(39 = 3 \\times 13 < 40\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3a-q5aiii",
@@ -1665,7 +1724,8 @@
               "explain": "Check the upper limit. The final term is exactly 40.",
               "work": "\\\\(40 = 5 \\times 8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3a-q14",
@@ -1698,7 +1758,8 @@
               "explain": "Gather the six distinct factors found.",
               "work": "\\\\(\\{6, 10, 15, 22, 33, 55\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1733,7 +1794,8 @@
             {
               "explain": "Therefore, \\(\\sqrt[3]{729} = 9\\)."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q15",
@@ -1755,7 +1817,8 @@
               "explain": "Add the powers 5 and 9.",
               "work": "\\(a^{5+9} = a^{14}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q16",
@@ -1777,7 +1840,8 @@
               "explain": "Multiply the powers 3 and 2.",
               "work": "\\(a^{3 \\times 2} = a^6\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1815,7 +1879,8 @@
               "explain": "Write this in index notation.",
               "work": "\\(2^2 \\times 3 \\times 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1854,7 +1919,8 @@
               "explain": "Combine and sort these values in ascending order to list all distinct factors of 18.",
               "work": "\\\\(\\\\text{Factors} = \\{1, 2, 3, 6, 9, 18\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q1b",
@@ -1882,7 +1948,8 @@
               "explain": "Since 19 has no positive divisors other than 1 and itself, it is a prime number.",
               "work": "\\\\(\\\\text{Factors of } 19 = \\{1, 19\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q1c",
@@ -1914,7 +1981,8 @@
               "explain": "No other integers between 10 and 14 divide 140. Combine all pairs in order.",
               "work": "\\\\(\\\\text{Factors} = \\{1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, 140\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q1d",
@@ -1942,7 +2010,8 @@
               "explain": "No integers between 7 and 15 other than these divide 105 exactly. List all factors.",
               "work": "\\\\(\\\\text{Factors} = \\{1, 3, 5, 7, 15, 21, 35, 105\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q1e",
@@ -1970,7 +2039,8 @@
               "explain": "23 is a prime number, so there are no other integer factors between 2 and 23.",
               "work": "\\\\(\\\\text{Factors} = \\{1, 2, 23, 46\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q1f",
@@ -2002,7 +2072,8 @@
               "explain": "Combine all distinct factors in order.",
               "work": "\\\\(\\\\text{Factors} = \\{1, 2, 4, 5, 10, 20, 25, 50, 100\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q2",
@@ -2034,7 +2105,8 @@
               "explain": "The remaining numbers have no small prime factors and are prime.",
               "work": "\\\\(\\\\text{Primes} = \\{61, 67, 71, 73, 79, 83, 89, 97\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q3a",
@@ -2058,7 +2130,8 @@
               "explain": "When the larger number is divisible by the smaller, the LCM is the larger number.",
               "work": "\\\\(\\\\text{LCM}(4, 28) = 28\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q3b",
@@ -2086,7 +2159,8 @@
               "explain": "Multiply these powers together.",
               "work": "\\\\(\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q3c",
@@ -2114,7 +2188,8 @@
               "explain": "Calculate the product.",
               "work": "\\\\(\\text{LCM} = 20 \\\\times 77 = 1540\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q3d",
@@ -2142,7 +2217,8 @@
               "explain": "Compute the final product.",
               "work": "\\\\(\\text{LCM} = 4 \\\\times 3 \\\\times 25 = 12 \\\\times 25 = 300\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q4a",
@@ -2170,7 +2246,8 @@
               "explain": "Therefore, the only common factor they share is 1.",
               "work": "\\\\(\\\\text{HCF}(13, 20) = 1\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q4b",
@@ -2194,7 +2271,8 @@
               "explain": "Identify shared prime factors. The only shared prime is 7 (power 1).",
               "work": "\\\\(\\\\text{HCF} = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q4c",
@@ -2218,7 +2296,8 @@
               "explain": "Take the lowest power of each shared prime factor: \\\\(2^2\\\\) and \\\\(3^1\\\\).",
               "work": "\\\\(\\\\text{HCF} = 2^2 \\\\times 3 = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q4d",
@@ -2246,7 +2325,8 @@
               "explain": "Multiply to find the final HCF.",
               "work": "\\\\(\\text{HCF} = 4 \\\\times 5 \\\\times 7 = 140\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q5a1",
@@ -2274,7 +2354,8 @@
               "explain": "Multiply HCF and LCM.",
               "work": "\\\\(\\text{Product} = 6 \\\\times 126 = 756\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q5a2",
@@ -2297,7 +2378,8 @@
               "explain": "Compare the two results to conclude they are equal.",
               "work": "\\\\(756 = 756 \\\\quad \\\\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q5b1",
@@ -2325,7 +2407,8 @@
               "explain": "Calculate the multiplication.",
               "work": "\\\\(\\text{Product} = 2880\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q5b2",
@@ -2348,7 +2431,8 @@
               "explain": "Compare the two results to conclude they are equal.",
               "work": "\\\\(2880 = 2880 \\\\quad \\\\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q6a",
@@ -2376,7 +2460,8 @@
               "explain": "Equate the exponents to find \\\\(x\\\\).",
               "work": "\\\\(x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6b",
@@ -2404,7 +2489,8 @@
               "explain": "Equate exponents.",
               "work": "\\\\(x = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6c",
@@ -2436,7 +2522,8 @@
               "explain": "Equate exponents.",
               "work": "\\\\(x = 10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6d",
@@ -2464,7 +2551,8 @@
               "explain": "Equate bases.",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6e",
@@ -2488,7 +2576,8 @@
               "explain": "Calculate the value of \\\\(2^6\\\\).",
               "work": "\\\\(2^6 = 64\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6f",
@@ -2516,7 +2605,8 @@
               "explain": "Since the exponents are equal, the positive base must be equal.",
               "work": "\\\\(x = 8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6g",
@@ -2544,7 +2634,8 @@
               "explain": "Equate exponents and solve.",
               "work": "\\\\(4 + x = 6 \\implies x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6h",
@@ -2572,7 +2663,8 @@
               "explain": "Divide by 3.",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q6i",
@@ -2604,7 +2696,8 @@
               "explain": "Equate exponents and solve.",
               "work": "\\\\(4x = 20 \\implies x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q7a",
@@ -2628,7 +2721,8 @@
               "explain": "Perform the multiplication.",
               "work": "\\\\(7 \\\\times 7 = 49\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7b",
@@ -2652,7 +2746,8 @@
               "explain": "Since 12 × 12 = 144:",
               "work": "\\\\(\\\\sqrt{144} = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7c",
@@ -2676,7 +2771,8 @@
               "explain": "Substitute \\\\(a = 83\\\\).",
               "work": "\\\\(\\\\sqrt{83^2} = 83\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7d",
@@ -2700,7 +2796,8 @@
               "explain": "Take the square root.",
               "work": "\\\\(\\\\sqrt{27^2} = 27\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7e",
@@ -2724,7 +2821,8 @@
               "explain": "Square the result.",
               "work": "\\\\(25^2 = 25 \\\\times 25 = 625\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7f",
@@ -2752,7 +2850,8 @@
               "explain": "Test 59.",
               "work": "\\\\(59 \\\\times 59 = 3481 \\\\quad \\\\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q7g",
@@ -2776,7 +2875,8 @@
               "explain": "Multiply.",
               "work": "\\\\(20 \\\\times 20 = 400, \\\\quad 400 \\\\times 20 = 8000\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q8a1",
@@ -2804,7 +2904,8 @@
               "explain": "List all solutions.",
               "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8a2",
@@ -2832,7 +2933,8 @@
               "explain": "List all solutions.",
               "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8a3",
@@ -2860,7 +2962,8 @@
               "explain": "List solutions.",
               "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8b1",
@@ -2888,7 +2991,8 @@
               "explain": "Test only even candidates: 22+0=22 (no), 22+2=24 (yes), 22+4=26 (no), 22+6=28 (no), 22+8=30 (yes).",
               "work": "\\\\(x = 2 \\text{ or } 8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8b2",
@@ -2916,7 +3020,8 @@
               "explain": "For \\\\(6+x\\\\) to be a multiple of 3, \\\\(x\\\\) must be a multiple of 3.",
               "work": "\\\\(x \\\\in \\\\{0, 3, 6, 9\\\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8b3",
@@ -2944,7 +3049,8 @@
               "explain": "Test even digits: 9+0=9 (yes), 9+2=11 (no), 9+4=13 (no), 9+6=15 (yes), 9+8=17 (no).",
               "work": "\\\\(x = 0 \\text{ or } 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8c1",
@@ -2972,7 +3078,8 @@
               "explain": "Test candidates: 2+0=2, 2+2=4, 2+4=6 (yes!), 2+6=8, 2+8=10. The only valid digit is 4.",
               "work": "\\\\(x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8c2",
@@ -3000,7 +3107,8 @@
               "explain": "Check if last two digits (20) are divisible by 4.",
               "work": "\\\\(20 \\\\div 4 = 5 \\quad \\text{(divisible by 4)}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q8c3",
@@ -3028,7 +3136,8 @@
               "explain": "For \\\\(18 + x\\\\) to be a multiple of 3, \\\\(x\\\\) must be a multiple of 3.",
               "work": "\\\\(x \\\\in \\\\{0, 3, 6, 9\\\\}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q9",
@@ -3052,7 +3161,8 @@
               "explain": "We need \\\\(x - 3\\\\) to be divisible by 11. Since \\\\(x\\\\) is a digit (0 to 9), the only way is if the sum is 0.",
               "work": "\\\\(x - 3 = 0 \\implies x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q10c",
@@ -3080,7 +3190,8 @@
               "explain": "19 is prime. Write as product.",
               "work": "\\\\(228 = 2^2 \\\\times 3 \\\\times 19\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q11a",
@@ -3104,7 +3215,8 @@
               "explain": "Multiply the results.",
               "work": "\\\\(9 \\\\times 125 = 1125\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q11b",
@@ -3128,7 +3240,8 @@
               "explain": "Multiply by 7.",
               "work": "\\\\(7 \\\\times 121 = 847\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q11c",
@@ -3156,7 +3269,8 @@
               "explain": "Multiply by 14.",
               "work": "\\\\(180 \\\\times 14 = 2520\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-3f-q11d",
@@ -3180,7 +3294,8 @@
               "explain": "Express in index notation.",
               "work": "\\\\(2520 = 2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q12a1",
@@ -3208,7 +3323,8 @@
               "explain": "Multiply.",
               "work": "\\\\(\\text{HCF} = 4 \\\\times 9 \\\\times 5 = 180\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q12a2",
@@ -3236,7 +3352,8 @@
               "explain": "Compute product.",
               "work": "\\\\(\\text{LCM} = 8 \\\\times 27 \\\\times 25 \\\\times 7 = 37800\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q12b1",
@@ -3264,7 +3381,8 @@
               "explain": "Multiply.",
               "work": "\\\\(\\text{HCF} = 2 \\\\times 9 = 18\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q12b2",
@@ -3292,7 +3410,8 @@
               "explain": "Multiply.",
               "work": "\\\\(\\text{LCM} = 2 \\\\times 27 \\\\times 25 \\\\times 49 = 66150\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q13a",
@@ -3320,7 +3439,8 @@
               "explain": "Final multiplication.",
               "work": "\\\\(= 600\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q13b",
@@ -3348,7 +3468,8 @@
               "explain": "Final multiplication.",
               "work": "\\\\(= 6000\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q13c",
@@ -3376,7 +3497,8 @@
               "explain": "Final calculation.",
               "work": "\\\\(300 \\\\times 15 = 4500\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q13d",
@@ -3404,7 +3526,8 @@
               "explain": "Multiply by 10.",
               "work": "\\\\(324 \\\\times 10 = 3240\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

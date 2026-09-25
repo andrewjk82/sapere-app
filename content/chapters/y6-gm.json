@@ -33,7 +33,8 @@
               "explain": "This region is Quadrant II.",
               "work": "\\(P(-3,4)\\) is in Quadrant II"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-gm-1-q2",
@@ -61,7 +62,8 @@
               "explain": "Combine to state the coordinates.",
               "work": "\\((-5,-2)\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -88,7 +90,8 @@
               "explain": "Multiply by 100, since \\(1\\text{ m}=100\\text{ cm}\\).",
               "work": "\\(3.5\\times100=350\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-gm-2-q2",
@@ -108,7 +111,8 @@
               "explain": "Divide by 1000, since \\(1\\text{ km}=1000\\text{ m}\\).",
               "work": "\\(2500\\div1000=2.5\\text{ km}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-gm-2-q3",
@@ -128,7 +132,8 @@
               "explain": "Divide by 10, since \\(1\\text{ cm}=10\\text{ mm}\\).",
               "work": "\\(45\\div10=4.5\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -159,7 +164,8 @@
               "explain": "Compare with \\(1050\\text{ m}\\).",
               "work": "\\(1200\\text{ m} \\gt 1050\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-gm-3-q2",
@@ -183,7 +189,8 @@
               "explain": "Convert centimetres to metres by dividing by 100.",
               "work": "\\(360\\div100=3.6\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -217,7 +224,8 @@
               "explain": "Solve for \\(x\\).",
               "work": "\\(x=180°-65°=115°\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-gm-4-q2",
@@ -241,7 +249,8 @@
               "explain": "Solve for \\(y\\).",
               "work": "\\(y=180-38=142\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -275,7 +284,8 @@
               "explain": "Simplify and solve for \\(x\\).",
               "work": "\\(210°+x=360° \\Rightarrow x=150°\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-gm-5-q2",
@@ -299,7 +309,8 @@
               "explain": "Subtract from \\(360°\\) to find \\(y\\).",
               "work": "\\(y=360-275=85\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -333,7 +344,8 @@
               "explain": "Vertically opposite angles are always equal.",
               "work": "\\(x=72°\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-gm-6-q2",
@@ -353,7 +365,8 @@
               "explain": "The angle vertically opposite a given angle is always equal to it.",
               "work": "\\(\\text{Vertically opposite angle}=115°\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

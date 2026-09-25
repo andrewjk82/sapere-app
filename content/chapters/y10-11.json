@@ -39,7 +39,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q1b",
@@ -72,7 +73,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q1c",
@@ -105,7 +107,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q1d",
@@ -139,7 +142,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q2a",
@@ -173,7 +177,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q2b",
@@ -207,7 +212,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q2c",
@@ -241,7 +247,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q2d",
@@ -275,7 +282,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q3a",
@@ -316,7 +324,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q3b",
@@ -357,7 +366,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q3c",
@@ -398,7 +408,8 @@
               "work": "\\\\(\\\\text{No}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q3d",
@@ -449,7 +460,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q3e",
@@ -500,7 +512,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q3f",
@@ -551,7 +564,8 @@
               "work": "\\\\(\\\\text{No}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4a",
@@ -602,7 +616,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4b",
@@ -653,7 +668,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4c",
@@ -704,7 +720,8 @@
               "work": "\\\\(\\\\text{No}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4d",
@@ -755,7 +772,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4e",
@@ -806,7 +824,8 @@
               "work": "\\\\(\\\\text{Yes}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q4f",
@@ -857,7 +876,8 @@
               "work": "\\\\(\\\\text{No}\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-11a-q5a",
@@ -906,7 +926,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q5b",
@@ -955,7 +976,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q5c",
@@ -1004,7 +1026,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q5d",
@@ -1053,7 +1076,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q5e",
@@ -1101,7 +1125,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q5f",
@@ -1149,7 +1174,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-11a-q6a",
@@ -1186,7 +1212,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q6b",
@@ -1223,7 +1250,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q6c",
@@ -1260,7 +1288,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q6d",
@@ -1297,7 +1326,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q6e",
@@ -1334,7 +1364,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q6f",
@@ -1371,7 +1402,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q7a",
@@ -1408,7 +1440,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q7b",
@@ -1445,7 +1478,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q7c",
@@ -1482,7 +1516,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q7d",
@@ -1519,7 +1554,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q8a",
@@ -1548,7 +1584,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-11a-q8b",
@@ -1581,7 +1618,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11a-q9",
@@ -1615,7 +1653,8 @@
               "work": "\\((x-5)^2 + (y+12)^2 = 169\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11a-q10a",
@@ -1647,7 +1686,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q10b",
@@ -1679,7 +1719,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q11a",
@@ -1711,7 +1752,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q11b",
@@ -1743,7 +1785,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q11c",
@@ -1779,7 +1822,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q12a",
@@ -1815,7 +1859,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q12b",
@@ -1847,7 +1892,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-11a-q12c",
@@ -1883,7 +1929,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q13",
@@ -1917,7 +1964,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q15",
@@ -1951,7 +1999,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "nbsc2021y10-q7",
@@ -1987,7 +2036,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y10-11a-q10",
@@ -2022,7 +2072,8 @@
                   "work": "\\((x - 5)^2 + (y - 8)^2 = 25\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-11a-q10b",
@@ -2051,7 +2102,8 @@
                   "work": "\\((x - 5)^2 + (y - 8)^2 = 64\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -2089,7 +2141,8 @@
                   "work": "\\(d = 6\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-11a-q11b",
@@ -2118,7 +2171,8 @@
                   "work": "\\(M = (6, 8)\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-11a-q11c",
@@ -2151,7 +2205,8 @@
                   "work": "\\((x - 6)^2 + (y - 8)^2 = 9\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -2193,7 +2248,8 @@
                   "work": "\\(d = 10\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-11a-q12b",
@@ -2222,7 +2278,8 @@
                   "work": "\\(M = (4, 1)\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-11a-q12c",
@@ -2255,7 +2312,8 @@
                   "work": "\\((x - 4)^2 + (y - 1)^2 = 25\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -2291,7 +2349,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2320,7 +2379,8 @@
               "work": "Given \\(y = \\frac{1}{x}\\), substitute \\(x = 2\\):\n\n\\(y = \\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-1b",
@@ -2346,7 +2406,8 @@
               "work": "\\(y = -\\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-1c",
@@ -2372,7 +2433,8 @@
               "work": "Dividing 1 by a fraction is the same as taking the reciprocal of that fraction:\n\n\\(y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-1d",
@@ -2398,7 +2460,8 @@
               "work": "Dividing 1 by a fraction gives its reciprocal:\n\n\\(y = \\frac{2}{3}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-1e",
@@ -2424,7 +2487,8 @@
               "work": "Dividing 1 by a fraction gives its reciprocal:\n\n\\(y = -\\frac{3}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-2a",
@@ -2450,7 +2514,8 @@
               "work": "\\(y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-2b",
@@ -2476,7 +2541,8 @@
               "work": "\\(y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-2c",
@@ -2502,7 +2568,8 @@
               "work": "Dividing by a fraction is the same as multiplying by its reciprocal:\n\n\\(y = 12 \\times (-2) = -24\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-2d",
@@ -2528,7 +2595,8 @@
               "work": "Dividing by a fraction is the same as multiplying by its reciprocal:\n\n\\(y = 12 \\times \\left(-\\frac{2}{3}\\right) = -8\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-2e",
@@ -2554,7 +2622,8 @@
               "work": "Dividing by a fraction is the same as multiplying by its reciprocal:\n\n\\(y = 12 \\times \\frac{4}{3} = 16\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-3a",
@@ -2580,7 +2649,8 @@
               "work": "\\(y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-3b",
@@ -2606,7 +2676,8 @@
               "work": "\\(y = \\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-3c",
@@ -2632,7 +2703,8 @@
               "work": "A negative divided by a negative is positive, and the reciprocal of \\(\\frac{1}{2}\\) is 2:\n\n\\(y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-3d",
@@ -2658,7 +2730,8 @@
               "work": "Dividing 1 by a fraction gives its reciprocal:\n\n\\(y = -\\frac{2}{3}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-3e",
@@ -2688,7 +2761,8 @@
               "work": "Dividing 1 by a fraction is the same as taking the reciprocal:\n\n\\(y = \\frac{2}{3}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-4a",
@@ -2714,7 +2788,8 @@
               "work": "\\(y = \\frac{1}{1} = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-4b",
@@ -2740,7 +2815,8 @@
               "work": "\\(y = \\frac{1}{-1} = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-4c",
@@ -2766,7 +2842,8 @@
               "work": "\\(y = \\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-4d",
@@ -2792,7 +2869,8 @@
               "work": "\\(y = \\frac{1}{0.5} = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-4e",
@@ -2818,7 +2896,8 @@
               "work": "\\(y = \\frac{1}{-0.25} = -4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-5a",
@@ -2882,7 +2961,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-5b",
@@ -2904,7 +2984,8 @@
               "work": "For \\(y = \\frac{4}{x}\\):\n- If \\(x = -4\\): \\(y = \\frac{4}{-4} = -1\\)\n- If \\(x = -2\\): \\(y = \\frac{4}{-2} = -2\\)\n- If \\(x = -1\\): \\(y = \\frac{4}{-1} = -4\\)\n- If \\(x = 1\\): \\(y = \\frac{4}{1} = 4\\)\n- If \\(x = 2\\): \\(y = \\frac{4}{2} = 2\\)\n- If \\(x = 4\\): \\(y = \\frac{4}{4} = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-6a",
@@ -2968,7 +3049,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-6b",
@@ -2990,7 +3072,8 @@
               "work": "For \\(y = \\frac{1}{x+2}\\):\n- If \\(x = -4\\): \\(y = \\frac{1}{-4+2} = -\\frac{1}{2}\\)\n- If \\(x = -3\\): \\(y = \\frac{1}{-3+2} = -1\\)\n- If \\(x = 2\\frac{1}{2}\\) (or \\(2.5\\)): \\(y = \\frac{1}{2.5+2} = \\frac{1}{4.5} = \\frac{2}{9}\\)\n- If \\(x = 1\\frac{1}{2}\\) (or \\(1.5\\)): \\(y = \\frac{1}{1.5+2} = \\frac{1}{3.5} = \\frac{2}{7}\\)\n- If \\(x = -1\\): \\(y = \\frac{1}{-1+2} = 1\\)\n- If \\(x = 0\\): \\(y = \\frac{1}{0+2} = \\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-7a",
@@ -3016,7 +3099,8 @@
               "work": "\\(y = \\frac{12}{-\\frac{1}{1000}} = 12 \\times (-1000) = -12000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-7b",
@@ -3042,7 +3126,8 @@
               "work": "\\(y = \\frac{12}{-\\frac{1}{5}} = 12 \\times (-5) = -60\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-7c",
@@ -3068,7 +3153,8 @@
               "work": "\\(y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-7d",
@@ -3094,7 +3180,8 @@
               "work": "\\(y = \\frac{1}{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-7e",
@@ -3120,7 +3207,8 @@
               "work": "\\(y = \\frac{1}{12}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-8a",
@@ -3146,7 +3234,8 @@
               "work": "\\(y = \\frac{6}{-3} = -2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-8b",
@@ -3172,7 +3261,8 @@
               "work": "\\(y = \\frac{6}{-2} = -3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-8c",
@@ -3198,7 +3288,8 @@
               "work": "\\(y = \\frac{6}{-0.01}\\)\n\n\\(y = \\frac{6}{-\\frac{1}{100}} = 6 \\times (-100) = -600\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-8d",
@@ -3224,7 +3315,8 @@
               "work": "\\(y = \\frac{6}{0.01}\\)\n\n\\(y = \\frac{6}{\\frac{1}{100}} = 6 \\times 100 = 600\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-8e",
@@ -3250,7 +3342,8 @@
               "work": "\\(y = \\frac{6}{997}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-9a",
@@ -3276,7 +3369,8 @@
               "work": "\\(y = \\frac{12}{3} = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-9b",
@@ -3302,7 +3396,8 @@
               "work": "\\(y = \\frac{12}{0.1}\\)\n\n\\(y = \\frac{12}{\\frac{1}{10}} = 12 \\times 10 = 120\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-9c",
@@ -3328,7 +3423,8 @@
               "work": "\\(y = \\frac{12}{0.01}\\)\n\n\\(y = \\frac{12}{\\frac{1}{100}} = 12 \\times 100 = 1200\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-9d",
@@ -3354,7 +3450,8 @@
               "work": "\\(y = \\frac{12}{-0.01}\\)\n\n\\(y = \\frac{12}{-\\frac{1}{100}} = 12 \\times (-100) = -1200\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-9e",
@@ -3380,7 +3477,8 @@
               "work": "\\(y = \\frac{12}{-0.001}\\)\n\n\\(y = \\frac{12}{-\\frac{1}{1000}} = 12 \\times (-1000) = -12000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-10a",
@@ -3444,7 +3542,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-10b",
@@ -3508,7 +3607,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-10c",
@@ -3572,7 +3672,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-10d",
@@ -3636,7 +3737,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-11a",
@@ -3700,7 +3802,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-11b",
@@ -3764,7 +3867,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-11c",
@@ -3828,7 +3932,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-11d",
@@ -3892,7 +3997,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-12a",
@@ -3956,7 +4062,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-12b",
@@ -4020,7 +4127,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-12c",
@@ -4084,7 +4192,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-12d",
@@ -4148,7 +4257,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13ai",
@@ -4212,7 +4322,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13aii",
@@ -4276,7 +4387,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13bi",
@@ -4340,7 +4452,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13bii",
@@ -4404,7 +4517,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13ci",
@@ -4468,7 +4582,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13cii",
@@ -4532,7 +4647,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13di",
@@ -4596,7 +4712,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-13dii",
@@ -4660,7 +4777,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-14a",
@@ -4724,7 +4842,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-14b",
@@ -4788,7 +4907,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-14c",
@@ -4852,7 +4972,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11b-14d",
@@ -4916,7 +5037,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "jr2013-q9",
@@ -4946,7 +5068,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "nbsc2021y10-q9",
@@ -4986,7 +5109,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q19c",
@@ -5016,7 +5140,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -5082,7 +5207,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "1b",
@@ -5141,7 +5267,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "1c",
@@ -5187,7 +5314,8 @@
               "explain": "State the final coordinates.",
               "work": "\\((2, 1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "1d",
@@ -5246,7 +5374,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2a",
@@ -5305,7 +5434,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2b",
@@ -5364,7 +5494,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2c",
@@ -5423,7 +5554,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2d",
@@ -5482,7 +5614,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2e",
@@ -5541,7 +5674,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "2f",
@@ -5603,7 +5737,8 @@
           ],
           "alsoIn": [
             "exam:year10ch11c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3a",
@@ -5662,7 +5797,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3b",
@@ -5721,7 +5857,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3c",
@@ -5780,7 +5917,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3d",
@@ -5839,7 +5977,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4a",
@@ -5898,7 +6037,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4b",
@@ -5957,7 +6097,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4c",
@@ -6016,7 +6157,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4d",
@@ -6062,7 +6204,8 @@
               "explain": "Substitute the \\(x\\) values back into \\(y = 2x\\) to find the corresponding \\(y\\) coordinates.",
               "work": "$$ \\text{For } x = 2, \\ y = 2(2) = 4 \\implies (2, 4) $$\\n$$ \\text{For } x = -2, \\ y = 2(-2) = -4 \\implies (-2, -4) $$"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4e",
@@ -6121,7 +6264,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4f",
@@ -6180,7 +6324,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5a",
@@ -6239,7 +6384,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5b",
@@ -6298,7 +6444,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5c",
@@ -6357,7 +6504,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5d",
@@ -6416,7 +6564,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "6a",
@@ -6478,7 +6627,8 @@
           ],
           "alsoIn": [
             "exam:year10ch11c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "6b",
@@ -6511,7 +6661,8 @@
               "explain": "State the final coordinates.",
               "work": "\\(OAX = \\frac{1}{4}, OBY = \\frac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4g",
@@ -6570,7 +6721,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4h",
@@ -6629,7 +6781,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4i",
@@ -6688,7 +6841,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "4j",
@@ -6747,7 +6901,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "7",
@@ -6780,7 +6935,8 @@
               "explain": "State the final coordinates.",
               "work": "\\((2, 3)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "8",
@@ -6826,7 +6982,8 @@
               "explain": "State the final coordinates.",
               "work": "No points of intersection"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "9a",
@@ -6872,7 +7029,8 @@
               "explain": "State the final coordinates.",
               "work": "\\(a = 3\\sqrt{2}, -3\\sqrt{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "9b",
@@ -6918,7 +7076,8 @@
               "explain": "State the final coordinates.",
               "work": "\\(-3\\sqrt{2} < a < 3\\sqrt{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "9c",
@@ -6964,7 +7123,8 @@
               "explain": "State the final coordinates.",
               "work": "\\(a < -3\\sqrt{2}\\) or \\(a > 3\\sqrt{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "10",
@@ -7023,7 +7183,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "jr2012-q15",
@@ -7057,7 +7218,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -7093,7 +7255,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1b",
@@ -7122,7 +7285,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1c",
@@ -7151,7 +7315,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1d",
@@ -7180,7 +7345,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1e",
@@ -7209,7 +7375,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1f",
@@ -7238,7 +7405,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1g",
@@ -7267,7 +7435,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1h",
@@ -7296,7 +7465,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1i",
@@ -7325,7 +7495,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1j",
@@ -7354,7 +7525,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1k",
@@ -7383,7 +7555,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1l",
@@ -7412,7 +7585,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1m",
@@ -7441,7 +7615,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1n",
@@ -7470,7 +7645,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1o",
@@ -7499,7 +7675,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1p",
@@ -7528,7 +7705,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1q",
@@ -7557,7 +7735,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q1r",
@@ -7586,7 +7765,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q2a",
@@ -7628,7 +7808,8 @@
               "work": "y \\ge 2x + 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q2b",
@@ -7670,7 +7851,8 @@
               "work": "y < -x + 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q2c",
@@ -7712,7 +7894,8 @@
               "work": "y < -2x + 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q2d",
@@ -7754,7 +7937,8 @@
               "work": "y \\ge 3x - 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q3a",
@@ -7796,7 +7980,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3b",
@@ -7838,7 +8023,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3c",
@@ -7867,7 +8053,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3d",
@@ -7896,7 +8083,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3e",
@@ -7938,7 +8126,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3f",
@@ -7967,7 +8156,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3g",
@@ -7996,7 +8186,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3h",
@@ -8025,7 +8216,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3i",
@@ -8054,7 +8246,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3j",
@@ -8083,7 +8276,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3k",
@@ -8112,7 +8306,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q3l",
@@ -8141,7 +8336,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4a",
@@ -8187,7 +8383,8 @@
               "work": "y = -x + 3 \\implies y \\le -x + 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4b",
@@ -8229,7 +8426,8 @@
               "work": "y = x - 2 \\implies y \\ge x - 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4c",
@@ -8271,7 +8469,8 @@
               "work": "y \\ge 1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4d",
@@ -8313,7 +8512,8 @@
               "work": "y < 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4e",
@@ -8355,7 +8555,8 @@
               "work": "y = x \\implies y \\ge x"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q4f",
@@ -8397,7 +8598,8 @@
               "work": "m = -1, c = 4 \\implies y = -x + 4 \\implies x + y \\le 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11d-q5a",
@@ -8426,7 +8628,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q5b",
@@ -8455,7 +8658,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q5c",
@@ -8484,7 +8688,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q5d",
@@ -8513,7 +8718,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11d-q6",
@@ -8542,7 +8748,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "sth2013-q3",
@@ -8588,7 +8795,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -8650,7 +8858,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q1b",
@@ -8679,7 +8888,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q1c",
@@ -8734,7 +8944,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q1d",
@@ -8763,7 +8974,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2a",
@@ -8792,7 +9004,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2b",
@@ -8821,7 +9034,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2c",
@@ -8850,7 +9064,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2d",
@@ -8879,7 +9094,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2e",
@@ -8908,7 +9124,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q2f",
@@ -8937,7 +9154,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q3a",
@@ -8974,7 +9192,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11e-q3b",
@@ -9011,7 +9230,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11e-q3c",
@@ -9048,7 +9268,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11e-q3d",
@@ -9085,7 +9306,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch11e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-11e-q4a",
@@ -9119,7 +9341,8 @@
               "work": "\\(x^2 + y^2 = 25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q4b",
@@ -9153,7 +9376,8 @@
               "work": "\\((x+2)^2 + (y-3)^2 = 16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q4c",
@@ -9187,7 +9411,8 @@
               "work": "\\((x-3)^2 + (y-4)^2 = 4\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q4d",
@@ -9221,7 +9446,8 @@
               "work": "\\((x+3)^2 + (y+5)^2 = 49\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-11e-q5a",
@@ -9250,7 +9476,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q5b",
@@ -9279,7 +9506,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q5c",
@@ -9308,7 +9536,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q6a",
@@ -9337,7 +9566,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q6b",
@@ -9366,7 +9596,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q6c",
@@ -9395,7 +9626,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q6d",
@@ -9424,7 +9656,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q7a",
@@ -9484,7 +9717,8 @@
               "work": "\\((2, 9), (-2, 17)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q7b",
@@ -9544,7 +9778,8 @@
               "work": "\\((0, 3), (3, -21)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q8a",
@@ -9604,7 +9839,8 @@
               "work": "\\((5, 0)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q8b",
@@ -9664,7 +9900,8 @@
               "work": "\\((6, 0), (-6, 0)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q8c",
@@ -9724,7 +9961,8 @@
               "work": "\\((3, 3\\sqrt{3}), (-3, -3\\sqrt{3})\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q9a",
@@ -9783,7 +10021,8 @@
               "explain": "Final answer: (3, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((3, 4)\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-11e-q9b",
@@ -9845,7 +10084,8 @@
           ],
           "alsoIn": [
             "exam:year10ch11e"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-11e-q10a",
@@ -9874,7 +10114,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10b",
@@ -9903,7 +10144,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10c",
@@ -9932,7 +10174,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10d",
@@ -9961,7 +10204,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10e",
@@ -9990,7 +10234,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10f",
@@ -10019,7 +10264,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10g",
@@ -10048,7 +10294,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q10h",
@@ -10077,7 +10324,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q11a",
@@ -10105,7 +10353,8 @@
               "work": "\\((2, -1)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q11b",
@@ -10133,7 +10382,8 @@
               "work": "\\((4, 12)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q11c",
@@ -10161,7 +10411,8 @@
               "work": "\\((1, 4)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q11d",
@@ -10189,7 +10440,8 @@
               "work": "\\((1, -1)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q11e",
@@ -10217,7 +10469,8 @@
               "work": "\\((3, 2)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q11f",
@@ -10245,7 +10498,8 @@
               "work": "\\((-1, 6)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-11e-q12a",
@@ -10274,7 +10528,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q12b",
@@ -10303,7 +10558,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q12c",
@@ -10332,7 +10588,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q12d",
@@ -10361,7 +10618,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q13a",
@@ -10421,7 +10679,8 @@
               "work": "\\((4, 2), (-2, -4)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q13b",
@@ -10481,7 +10740,8 @@
               "work": "\\((1/2, -4), (2, -1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q13c",
@@ -10515,7 +10775,8 @@
               "work": "\\((4, 2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-11e-q13d",
@@ -10548,7 +10809,8 @@
               "work": "\\(\\text{No points of intersection}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

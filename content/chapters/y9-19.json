@@ -43,7 +43,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-19d"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t7q4",
@@ -84,7 +85,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-19d"
-          }
+          },
+          "xp": 2
         }
       ]
     }

@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q3b",
@@ -64,7 +65,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q3c",
@@ -93,7 +95,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q3d",
@@ -122,7 +125,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q3e",
@@ -151,7 +155,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q3f",
@@ -180,7 +185,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q4e",
@@ -209,7 +215,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q5a",
@@ -238,7 +245,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q5b",
@@ -267,7 +275,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q9a",
@@ -296,7 +305,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q10b",
@@ -325,7 +335,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q10c",
@@ -354,7 +365,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q13",
@@ -383,7 +395,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q14a-len",
@@ -417,7 +430,8 @@
               "work": "\\(\\sqrt{17},\\; \\sqrt{17}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q14b-len",
@@ -451,7 +465,8 @@
               "work": "\\(\\sqrt{29},\\; \\sqrt{29}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q18a",
@@ -480,7 +495,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q18b",
@@ -509,7 +525,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q19a",
@@ -551,7 +568,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q19b",
@@ -593,7 +611,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q19c",
@@ -622,7 +641,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q21",
@@ -655,7 +675,8 @@
               "explain": "Expand and collect terms.",
               "work": "\\(3a = -4a - 8 \\Rightarrow 7a = -8 \\Rightarrow a = -\\dfrac{8}{7}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11a-7b-q22",
@@ -692,7 +713,8 @@
               "explain": "Rearrange: \\(k^2 - k = 0 \\Rightarrow k(k-1) = 0\\). So \\(k = 0\\) or \\(k = 1\\).",
               "work": "\\(k = 0,\\; 1\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

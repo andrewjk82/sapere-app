@@ -45,7 +45,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "4ZJUhTwn7pQoGna4XYQg",
@@ -81,7 +82,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5gaBFVo5gqrcMtzujVJ2",
@@ -117,7 +119,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5kX2VpbZu3gKhLFogt9E",
@@ -153,7 +156,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5ZtAmgXIvwWls5CuCl0L",
@@ -189,7 +193,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "7eEpot2RcKyEkdwjiVB5",
@@ -225,7 +230,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "59Gud0BTSeROyyuYFmWt",
@@ -261,7 +267,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "aqUp4z7zrA7LOdkgRkF9",
@@ -296,7 +303,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "avnSxsjOGTJX9yLuUKvR",
@@ -332,7 +340,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "b2WlUWLK4u4iy3Wb2UyB",
@@ -368,7 +377,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "BkjYjqjR2AxXwLGBabtd",
@@ -403,7 +413,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cRHdEqbZZgAOABG4ZoMa",
@@ -439,7 +450,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "CwuqwZqft3edfNJEoXGO",
@@ -474,7 +486,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Da1sBuDaEvN76xcgj0Oi",
@@ -510,7 +523,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "DMONIx9xADm6X71aM8CM",
@@ -546,7 +560,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "dnWRdhvYGhLSanepWfai",
@@ -582,7 +597,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Ea0ahiAYpVr7SN28Qp0q",
@@ -618,7 +634,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "eh1CnHF3AdxQwhvQr1gR",
@@ -654,7 +671,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "EjYADCrsOiqikWDddGrB",
@@ -690,7 +708,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "fL6yotvp0PFbNCrPrrc2",
@@ -725,7 +744,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "GnYkA6F9f9FeI7arZepk",
@@ -760,7 +780,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "GTDaDiAMqtlozTAJc6TQ",
@@ -796,7 +817,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "huAGWw1lBPx3dEWY9hVM",
@@ -831,7 +853,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "IgEm7BxYCcZV52HJBuGu",
@@ -866,7 +889,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "IJMMNnxRipeslQFdHthh",
@@ -901,7 +925,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "iR6GsCe1HBFxh7U6P2Fb",
@@ -937,7 +962,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "kgpa6EKJ4uvc4cYdwtGV",
@@ -973,7 +999,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "kkk5eWs70Ro3rpvzu44h",
@@ -1009,7 +1036,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "lY1uOZaO6vYR77QhfMyF",
@@ -1045,7 +1073,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "MLLJBjezwiPGBOvkjvka",
@@ -1081,7 +1110,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "oCmMjasqsPOJWWhq6y6N",
@@ -1117,7 +1147,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "omDlaBcmyJtCRlsW5uFq",
@@ -1153,7 +1184,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "PCPwWcFiMMmFOcARhSQ0",
@@ -1189,7 +1221,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "Q2VJuroUQ0OsYXZ7mI7l",
@@ -1225,7 +1258,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Q4KlFeU1b9uNbVpoc7SV",
@@ -1261,7 +1295,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "re9VDCFmB44wUiDRdUMO",
@@ -1296,7 +1331,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "RhaRlFn0d3kDgvY96Two",
@@ -1331,7 +1367,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "SEFfytGuCVINIUw6sWW6",
@@ -1371,7 +1408,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "T7xvfMqwKZDjgYDUv8oT",
@@ -1407,7 +1445,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "TkWX93tt1FsLjFp0YORm",
@@ -1442,7 +1481,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "UFKvOszGtrlyhiINpVQT",
@@ -1478,7 +1518,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "UIdZTlAseOaXrgMGiAzg",
@@ -1513,7 +1554,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Whv6yFSUtOaa9PEVvjQs",
@@ -1548,7 +1590,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "wUGB9vXdniDMP007IIFL",
@@ -1583,7 +1626,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "XUNCWQqAEiNZm57jOgXg",
@@ -1619,7 +1663,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "YsCARHOcfOH5JNWz7iUU",
@@ -1655,7 +1700,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ZvB3f9UqXoCHvMojYK2L",
@@ -1690,7 +1736,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -1731,7 +1778,8 @@
               "work": "\\(3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q1aii",
@@ -1765,7 +1813,8 @@
               "work": "\\(\\frac{2}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q1aiii",
@@ -1799,7 +1848,8 @@
               "work": "\\(-\\dfrac{7}{3}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q1bi",
@@ -1833,7 +1883,8 @@
               "work": "\\(-\\dfrac{1}{3}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q1bii",
@@ -1867,7 +1918,8 @@
               "work": "\\(-\\dfrac{5}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q1biii",
@@ -1901,7 +1953,8 @@
               "work": "\\(\\dfrac{3}{7}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2a-grad",
@@ -1935,7 +1988,8 @@
               "work": "\\(m_{AB} = -1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2a-perp",
@@ -1969,7 +2023,8 @@
               "work": "\\(m_{\\perp} = 1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2b-grad",
@@ -2003,7 +2058,8 @@
               "work": "\\(m_{AB} = 2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2b-perp",
@@ -2037,7 +2093,8 @@
               "work": "\\(m_{\\perp} = -\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2c-grad",
@@ -2071,7 +2128,8 @@
               "work": "\\(m_{AB} = \\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2c-perp",
@@ -2105,7 +2163,8 @@
               "work": "\\(m_{\\perp} = -2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2d-grad",
@@ -2139,7 +2198,8 @@
               "work": "\\(m_{AB} = -\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2d-perp",
@@ -2173,7 +2233,8 @@
               "work": "\\(m_{\\perp} = 2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2e-grad",
@@ -2207,7 +2268,8 @@
               "work": "\\(m_{AB} = 2\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2e-perp",
@@ -2241,7 +2303,8 @@
               "work": "\\(m_{\\perp} = -\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2f-grad",
@@ -2275,7 +2338,8 @@
               "work": "\\(m_{AB} = -\\dfrac{3}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q2f-perp",
@@ -2309,7 +2373,8 @@
               "work": "\\(m_{\\perp} = \\dfrac{4}{3}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q4a",
@@ -2338,7 +2403,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q4b",
@@ -2367,7 +2433,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q4c",
@@ -2401,7 +2468,8 @@
               "work": "parallelogram"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q4d",
@@ -2434,7 +2502,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q6a",
@@ -2468,7 +2537,8 @@
               "work": "\\(m \\approx 0.58\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q6b",
@@ -2502,7 +2572,8 @@
               "work": "\\(m \\approx -1.73\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q6c",
@@ -2536,7 +2607,8 @@
               "work": "\\(m = 1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q6d",
@@ -2570,7 +2642,8 @@
               "work": "\\(m \\approx 1.73\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q7a",
@@ -2604,7 +2677,8 @@
               "work": "\\(60^{\\circ}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q7b",
@@ -2638,7 +2712,8 @@
               "work": "\\(135^{\\circ}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q7c",
@@ -2672,7 +2747,8 @@
               "work": "\\(63^{\\circ}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q7d",
@@ -2706,7 +2782,8 @@
               "work": "\\(45^{\\circ}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q8a",
@@ -2740,7 +2817,8 @@
               "work": "less than"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q8b",
@@ -2774,7 +2852,8 @@
               "work": "equal to"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q8c",
@@ -2808,7 +2887,8 @@
               "work": "less than"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q8d",
@@ -2842,7 +2922,8 @@
               "work": "more than"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q9b",
@@ -2871,7 +2952,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q9c",
@@ -2900,7 +2982,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q10a",
@@ -2929,7 +3012,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q11a",
@@ -2961,7 +3045,8 @@
               "work": "yes"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q11b",
@@ -2993,7 +3078,8 @@
               "work": "no"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q12",
@@ -3022,7 +3108,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q14a-proof",
@@ -3051,7 +3138,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q14a-area",
@@ -3085,7 +3173,8 @@
               "work": "\\(8.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q14b-proof",
@@ -3114,7 +3203,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q14b-area",
@@ -3148,7 +3238,8 @@
               "work": "\\(14.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q15a",
@@ -3182,7 +3273,8 @@
               "work": "\\(A(0, 0)\\) and \\(B(1, 4)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q15b",
@@ -3216,7 +3308,8 @@
               "work": "\\(A(0, 0)\\) and \\(B(1, 0)\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7b-q16a",
@@ -3250,7 +3343,8 @@
               "work": "\\(k = -5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q16b",
@@ -3284,7 +3378,8 @@
               "work": "\\(k = 7.5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7b-q17a",
@@ -3322,7 +3417,8 @@
                   "explain": "Therefore the y-intercept is \\(B(0, 4)\\).",
                   "work": "\\(A(-2, 0),\\; B(0, 4)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-7b-q17a-b",
@@ -3354,7 +3450,8 @@
                   "explain": "Alternatively, read the coefficient of \\(x\\) from \\(y = 2x + 4\\): the gradient is 2.",
                   "work": "\\(m = 2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-7b-q17a-c",
@@ -3386,7 +3483,8 @@
                   "explain": "Evaluate and round to the nearest degree: \\(\\tan^{-1}(2) \\approx 63.43^{\\circ}\\).",
                   "work": "\\(\\alpha \\approx 63^{\\circ}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "A(-2, 0), B(0, 4); m = 2; α ≈ 63°",
@@ -3439,7 +3537,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q17c",
@@ -3468,7 +3567,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q17d",
@@ -3497,7 +3597,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7b-q20a",
@@ -3530,7 +3631,8 @@
               "explain": "Evaluate to two decimal places.",
               "work": "\\(m = \\tan 75^{\\circ} \\approx 3.73\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7b-q20b",
@@ -3563,7 +3665,8 @@
               "explain": "Evaluate to two decimal places.",
               "work": "\\(m = \\tan 45^{\\circ} = 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7b-q20c",
@@ -3596,7 +3699,8 @@
               "explain": "Evaluate to two decimal places.",
               "work": "\\(m = \\tan 60^{\\circ} = \\sqrt{3} \\approx 1.73\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7b-q20d",
@@ -3629,7 +3733,8 @@
               "explain": "Evaluate to two decimal places.",
               "work": "\\(m = \\tan 30^{\\circ} = \\dfrac{1}{\\sqrt{3}} \\approx 0.58\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bb2020-q2",
@@ -3672,7 +3777,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "gosford2020-q11",
@@ -3705,7 +3811,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "gosford-2020"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -3742,7 +3849,8 @@
               "work": "\\( x = 5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q2a-yint",
@@ -3772,7 +3880,8 @@
               "work": "\\( y = 2 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q2b-xint",
@@ -3802,7 +3911,8 @@
               "work": "\\( x = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q2b-yint",
@@ -3828,7 +3938,8 @@
               "work": "\\( y = -9 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q2c-xint",
@@ -3854,7 +3965,8 @@
               "work": "\\( x = 6 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q2c-yint",
@@ -3880,7 +3992,8 @@
               "work": "\\( y = -2 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q3",
@@ -3913,7 +4026,8 @@
               "explain": "All three points satisfy the equation."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4a-vert",
@@ -3939,7 +4053,8 @@
               "work": "\\( x = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4a-horiz",
@@ -3965,7 +4080,8 @@
               "work": "\\( y = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4b-vert",
@@ -3991,7 +4107,8 @@
               "work": "\\( x = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4b-horiz",
@@ -4017,7 +4134,8 @@
               "work": "\\( y = -2 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4c-vert",
@@ -4043,7 +4161,8 @@
               "work": "\\( x = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q4c-horiz",
@@ -4069,7 +4188,8 @@
               "work": "\\( y = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5a-grad",
@@ -4095,7 +4215,8 @@
               "work": "\\( m = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5a-yint",
@@ -4121,7 +4242,8 @@
               "work": "\\( b = -5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5b-grad",
@@ -4147,7 +4269,8 @@
               "work": "\\( m = \\frac{1}{4} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5b-yint",
@@ -4173,7 +4296,8 @@
               "work": "\\( b = -2 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5c-grad",
@@ -4199,7 +4323,8 @@
               "work": "\\( m = -1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5c-yint",
@@ -4221,7 +4346,8 @@
               "work": "\\( b = 5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5d-grad",
@@ -4243,7 +4369,8 @@
               "work": "\\( m = -\\frac{3}{8} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q5d-yint",
@@ -4269,7 +4396,8 @@
               "work": "\\( b = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q6a",
@@ -4295,7 +4423,8 @@
               "work": "\\( y = -4x + 6 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q6b",
@@ -4321,7 +4450,8 @@
               "work": "\\( y = -4x - \\frac{3}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q6c",
@@ -4347,7 +4477,8 @@
               "work": "\\( y = -4x + 0 \\implies y = -4x \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q7a",
@@ -4373,7 +4504,8 @@
               "work": "\\( y = 6x - 5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q7b",
@@ -4399,7 +4531,8 @@
               "work": "\\( y = -\\frac{3}{4}x - 5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q7c",
@@ -4425,7 +4558,8 @@
               "work": "\\( y = 0x - 5 \\implies y = -5 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q8a",
@@ -4451,7 +4585,8 @@
               "work": "\\( x - y + 4 = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q8b",
@@ -4477,7 +4612,8 @@
               "work": "\\( 3x + y - 6 = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q8c",
@@ -4507,7 +4643,8 @@
               "work": "\\( x - 4y - 8 = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q8d",
@@ -4537,7 +4674,8 @@
               "work": "\\( x + 3y - 6 = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9a-grad",
@@ -4563,7 +4701,8 @@
               "work": "\\( m = 1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9a-yint",
@@ -4589,7 +4728,8 @@
               "work": "\\( b = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9b-grad",
@@ -4615,7 +4755,8 @@
               "work": "\\( m = -1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9b-yint",
@@ -4641,7 +4782,8 @@
               "work": "\\( b = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9c-grad",
@@ -4667,7 +4809,8 @@
               "work": "\\( m = \\frac{1}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9c-yint",
@@ -4693,7 +4836,8 @@
               "work": "\\( b = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9d-grad",
@@ -4723,7 +4867,8 @@
               "work": "\\( m = -\\frac{2}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q9d-yint",
@@ -4749,7 +4894,8 @@
               "work": "\\( b = \\frac{4}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10a-grad",
@@ -4775,7 +4921,8 @@
               "work": "\\( m = 1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10a-angle",
@@ -4801,7 +4948,8 @@
               "work": "\\( \\alpha = 45^\\circ \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10b-grad",
@@ -4827,7 +4975,8 @@
               "work": "\\( m = -1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10b-angle",
@@ -4853,7 +5002,8 @@
               "work": "\\( \\alpha = 180^\\circ - 45^\\circ = 135^\\circ \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10c-grad",
@@ -4875,7 +5025,8 @@
               "work": "\\( m = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10c-angle",
@@ -4905,7 +5056,8 @@
               "work": "\\( \\alpha \\approx 72^\\circ \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10d-grad",
@@ -4927,7 +5079,8 @@
               "work": "\\( m = -\\frac{1}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q10d-angle",
@@ -4961,7 +5114,8 @@
               "work": "\\( \\alpha \\approx 153^\\circ \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q11a",
@@ -4991,7 +5145,8 @@
               "work": "\\( A(3, 0), B(0, 4) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q11b",
@@ -5021,7 +5176,8 @@
               "work": "\\( A(-3, 0), B(0, 9) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q11c",
@@ -5051,7 +5207,8 @@
               "work": "\\( A(-5, 0), B(0, 2) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12a-grad",
@@ -5077,7 +5234,8 @@
               "work": "\\( m = \\frac{6}{3} = 2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12a-eq",
@@ -5103,7 +5261,8 @@
               "work": "\\( 2x - y + 3 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12b-grad",
@@ -5129,7 +5288,8 @@
               "work": "\\( m = -2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12b-eq",
@@ -5155,7 +5315,8 @@
               "work": "\\( 2x + y = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12c-grad",
@@ -5181,7 +5342,8 @@
               "work": "\\( m = \\frac{-2}{6} = -\\frac{1}{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q12c-eq",
@@ -5211,7 +5373,8 @@
               "work": "\\( x + 3y + 9 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13a-par",
@@ -5241,7 +5404,8 @@
               "work": "\\( y = -3x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13a-perp",
@@ -5271,7 +5435,8 @@
               "work": "\\( y = \\frac{1}{3}x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13b-par",
@@ -5301,7 +5466,8 @@
               "work": "\\( y = \\frac{4}{3}x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13b-perp",
@@ -5331,7 +5497,8 @@
               "work": "\\( y = -\\frac{3}{4}x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13c-par",
@@ -5361,7 +5528,8 @@
               "work": "\\( y = -\\frac{2}{5}x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q13c-perp",
@@ -5391,7 +5559,8 @@
               "work": "\\( y = \\frac{5}{2}x + 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q15",
@@ -5421,7 +5590,8 @@
               "work": "\\text{The lines are } 3x - 4y + 6 = 0 \\text{ and } 4x + 3y + 1 = 0."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q16a",
@@ -5455,7 +5625,8 @@
               "work": "\\( S(4, -1) \\) and \\( P(4, -5) \\implies x = 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q16b",
@@ -5485,7 +5656,8 @@
               "work": "\\( y = 1x + 8 \\implies x - y + 8 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17a-grad",
@@ -5511,7 +5683,8 @@
               "work": "\\( m = 1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17a-eq",
@@ -5537,7 +5710,8 @@
               "work": "\\( x - y + 4 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17b-grad",
@@ -5563,7 +5737,8 @@
               "work": "\\( m = \\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17b-eq",
@@ -5589,7 +5764,8 @@
               "work": "\\( \\sqrt{3}x - y - 2 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17c-grad",
@@ -5615,7 +5791,8 @@
               "work": "\\( m = \\frac{1}{\\sqrt{3}} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17c-eq",
@@ -5645,7 +5822,8 @@
               "work": "\\( x - \\sqrt{3}y - 3\\sqrt{3} = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17d-grad",
@@ -5671,7 +5849,8 @@
               "work": "\\( m = -1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q17d-eq",
@@ -5697,7 +5876,8 @@
               "work": "\\( x + y - 2 = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7c-q18a",
@@ -5730,7 +5910,8 @@
               "explain": "Calculate its angle of inclination.",
               "work": "\\( \\tan \\alpha_2 = -\\frac{4}{3} \\implies \\alpha_2 \\approx 180^{\\circ} - 53.13^{\\circ} \\approx 127^{\\circ} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7c-q19a",
@@ -5759,7 +5940,8 @@
               "explain": "If parallel, the gradients are equal.",
               "work": "\\( m_1 = m_2 \\implies 2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7c-q19b",
@@ -5788,7 +5970,8 @@
               "explain": "Solve for \\(k\\).",
               "work": "\\( -\\frac{2}{k} = -1 \\implies k = 2 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "gosford2020-q25",
@@ -5823,7 +6006,8 @@
                   "explain": "Reduce to simplest form. Pitfall: subtracting coordinates in the wrong order (or wrong point order) flips the sign, giving \\( +4/3 \\).",
                   "work": "\\(m_{AC} = -\\dfrac43\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q25b",
@@ -5849,7 +6033,8 @@
                   "explain": "Pitfall: forgetting to divide by 2 (using the sum directly) gives \\( (-4,-2) \\).",
                   "work": "X = (-2,-1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q25c",
@@ -5875,7 +6060,8 @@
                   "explain": "Solve the y-equation. Pitfall: using B's y-coordinate (\\(2\\)) instead of the given midpoint y-value (\\(-1\\)) in the equation leads to an incorrect \\(y_D\\).",
                   "work": "\\(-2 = 2+y_D \\;\\Rightarrow\\; y_D = -4 \\;\\Rightarrow\\; D=(-6,-4)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -5923,7 +6109,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -5964,7 +6151,8 @@
               "work": "\\[ 4x - y - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q2a",
@@ -5998,7 +6186,8 @@
               "work": "\\[ 5x - y + 21 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q2b",
@@ -6032,7 +6221,8 @@
               "work": "\\[ 3x + y + 3 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q2c",
@@ -6066,7 +6256,8 @@
               "work": "\\[ 3x - 4y + 33 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q2d",
@@ -6100,7 +6291,8 @@
               "work": "\\[ 5x + 2y + 3 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q3a",
@@ -6134,7 +6326,8 @@
               "work": "\\[ 2x + 5y - 19 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q3b",
@@ -6168,7 +6361,8 @@
               "work": "\\[ 2x + 5y - 10 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q3c",
@@ -6202,7 +6396,8 @@
               "work": "\\[ 2x + 5y = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q3d",
@@ -6236,7 +6431,8 @@
               "work": "\\[ 2x + 5y + 25 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q4a",
@@ -6270,7 +6466,8 @@
               "work": "\\[ 3x - y - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q4b",
@@ -6304,7 +6501,8 @@
               "work": "\\[ x + y - 6 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q4c",
@@ -6338,7 +6536,8 @@
               "work": "\\[ 4x + y = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q4d",
@@ -6372,7 +6571,8 @@
               "work": "\\[ x - 4y + 9 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q4e",
@@ -6406,7 +6606,8 @@
               "work": "\\[ 3x + 5y + 9 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q5a",
@@ -6440,7 +6641,8 @@
               "work": "\\[ y - 6 = 3x - 9 \\]\n\\[ y = 3x - 3 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q5b",
@@ -6474,7 +6676,8 @@
               "work": "\\[ y - 6 = -\\frac{1}{3}x + 1 \\]\n\\[ y = -\\frac{1}{3}x + 7 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q5c",
@@ -6508,7 +6711,8 @@
               "work": "\\[ y + 6 = \\frac{1}{4}x - 1 \\]\n\\[ y = \\frac{1}{4}x - 7 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q5d",
@@ -6542,7 +6746,8 @@
               "work": "\\[ y - 4 = \\frac{2}{5}x + 2 \\]\n\\[ y = \\frac{2}{5}x + 6 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q5e",
@@ -6576,7 +6781,8 @@
               "work": "\\[ y = \\frac{5}{3}x + 5 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q6a",
@@ -6614,7 +6820,8 @@
               "work": "\\( m = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q6b",
@@ -6648,7 +6855,8 @@
               "work": "\\[ y - 5 = 3x - 9 \\]\n\\[ 3x - y - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7a-grad",
@@ -6682,7 +6890,8 @@
               "work": "\\[ m = \\frac{4}{2} = 2 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7a-eq",
@@ -6716,7 +6925,8 @@
               "work": "\\[ y - 3 = 2x - 4 \\]\n\\[ 2x - y - 1 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7b-grad",
@@ -6750,7 +6960,8 @@
               "work": "\\[ m = \\frac{-8}{4} = -2 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7b-eq",
@@ -6784,7 +6995,8 @@
               "work": "\\[ y + 4 = -2x + 4 \\]\n\\[ 2x + y = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7c-grad",
@@ -6818,7 +7030,8 @@
               "work": "\\[ m = \\frac{-2}{-6} = \\frac{1}{3} \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7c-eq",
@@ -6852,7 +7065,8 @@
               "work": "Multiply by 3:\n\\[ 3(y - 5) = x - 4 \\]\n\\[ 3y - 15 = x - 4 \\]\n\\[ x - 3y + 11 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7d-grad",
@@ -6886,7 +7100,8 @@
               "work": "\\[ m = \\frac{3}{2} \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7d-eq",
@@ -6920,7 +7135,8 @@
               "work": "Multiply by 2:\n\\[ 2(y - 3) = 3x \\]\n\\[ 2y - 6 = 3x \\]\n\\[ 3x - 2y + 6 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7e-grad",
@@ -6954,7 +7170,8 @@
               "work": "\\[ m = -\\frac{2}{3} \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7e-eq",
@@ -6988,7 +7205,8 @@
               "work": "Multiply by 3:\n\\[ 3(y + 2) = -2x \\]\n\\[ 3y + 6 = -2x \\]\n\\[ 2x + 3y + 6 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7f-grad",
@@ -7022,7 +7240,8 @@
               "work": "\\[ m = \\frac{4}{4} = 1 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q7f-eq",
@@ -7056,7 +7275,8 @@
               "work": "\\[ y = x - 4 \\]\n\\[ x - y - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q8a",
@@ -7090,7 +7310,8 @@
               "work": "\\[ m = \\frac{8}{-4} = -2 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q8bi",
@@ -7124,7 +7345,8 @@
               "work": "\\[ y + 3 = -2x + 4 \\]\n\\[ 2x + y - 1 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q8bii",
@@ -7158,7 +7380,8 @@
               "work": "Multiply by 2:\n\\[ 2(y + 3) = x - 2 \\]\n\\[ 2y + 6 = x - 2 \\]\n\\[ x - 2y - 8 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q9a",
@@ -7192,7 +7415,8 @@
               "work": "\\[ 3x - 4y + 3 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q9b",
@@ -7226,7 +7450,8 @@
               "work": "\\[ 3x - 4y - 16 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q10a",
@@ -7260,7 +7485,8 @@
               "work": "\\[ 3x - 2y - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q10b",
@@ -7294,7 +7520,8 @@
               "work": "\\[ 3x - 2y + 13 = 0 \\]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7d-q11a",
@@ -7328,7 +7555,8 @@
               "work": "Substitute \\(x = 3\\) into (1):\n\\[ 3 + y = 3 \\implies y = 0 \\]\nIntersection point: \\( (3, 0) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q11b",
@@ -7352,7 +7580,8 @@
                   "explain": "Solve for the intersection of \\\\(\\\\ell_1\\\\) and \\\\(\\\\ell_2\\\\).",
                   "work": "From \\\\(\\\\ell_1\\\\): \\\\(y = 3 - x\\\\).\nSubstitute into \\\\(\\\\ell_2\\\\):\n\\\\[ 3x - (3 - x) = 9 \\\\]\n\\\\[ 4x - 3 = 9 \\\\implies 4x = 12 \\\\implies x = 3 \\\\]\nSubstitute back: \\\\(y = 3 - 3 = 0\\\\).\nIntersection point is \\\\((3, 0)\\\\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-7d-q11b_2",
@@ -7372,7 +7601,8 @@
                   "explain": "Conclude concurrency.",
                   "work": "Because all three lines intersect at the same point \\\\((3, 0)\\\\), they are concurrent (Yes)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Substitute x = 3 and y = 0 into the equation 2x - 5y = 6 and check if it holds.",
@@ -7427,7 +7657,8 @@
               "work": "Since \\(9 = 9\\), the third line passes through \\((-3, 4)\\). Therefore, the three lines are concurrent (yes)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q11cii",
@@ -7459,7 +7690,8 @@
               "work": "Since \\(\\frac{125}{7} \\neq 21\\), the first line does not pass through the intersection. Therefore, they are not concurrent (no)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12a-grad",
@@ -7493,7 +7725,8 @@
               "work": "The gradient \\(m\\) is the coefficient of \\(x\\).\n\\[ m = -3 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12a-par",
@@ -7527,7 +7760,8 @@
               "work": "\\[ y + 1 = -3x + 9 \\]\n\\[ y = -3x + 8 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12a-perp",
@@ -7561,7 +7795,8 @@
               "work": "\\[ y = \\frac{1}{3}x + \\frac{2}{3} + 5 \\]\n\\[ y = \\frac{1}{3}x + \\frac{17}{3} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12b-grad",
@@ -7595,7 +7830,8 @@
               "work": "From \\(y = mx + b\\), the gradient is \\(m\\).\n\\[ m = \\frac{4}{3} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12b-par",
@@ -7629,7 +7865,8 @@
               "work": "\\[ y + 1 = \\frac{4}{3}x - 4 \\]\n\\[ y = \\frac{4}{3}x - 5 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12b-perp",
@@ -7663,7 +7900,8 @@
               "work": "\\[ y = -\\frac{3}{4}x - \\frac{6}{4} + 5 \\]\n\\[ y = -\\frac{3}{4}x - \\frac{3}{2} + \\frac{10}{2} = -\\frac{3}{4}x + \\frac{7}{2} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12c-grad",
@@ -7697,7 +7935,8 @@
               "work": "From \\(y = mx + b\\), the gradient is \\(m\\).\n\\[ m = -\\frac{2}{5} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12c-par",
@@ -7731,7 +7970,8 @@
               "work": "\\[ y + 1 = -\\frac{2}{5}x + \\frac{6}{5} \\]\n\\[ y = -\\frac{2}{5}x + \\frac{1}{5} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q12c-perp",
@@ -7765,7 +8005,8 @@
               "work": "\\[ y = \\frac{5}{2}x + 5 + 5 \\]\n\\[ y = \\frac{5}{2}x + 10 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13a-grad",
@@ -7799,7 +8040,8 @@
               "work": "From exact values of trigonometric ratios:\n\\[ m = 1 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13a-eq",
@@ -7833,7 +8075,8 @@
               "work": "\\[ y = x - 2 \\]\n\\[ x - y - 2 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13b-grad",
@@ -7867,7 +8110,8 @@
               "work": "Since \\(120^\\circ\\) is in the second quadrant, tangent is negative:\n\\[ m = -\\sqrt{3} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13b-eq",
@@ -7901,7 +8145,8 @@
               "work": "\\[ y = -\\sqrt{3}(x + 2) \\]\n\\[ y = -\\sqrt{3}x - 2\\sqrt{3} \\]\n\\[ \\sqrt{3}x + y + 2\\sqrt{3} = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13c-grad",
@@ -7935,7 +8180,8 @@
               "work": "From exact trigonometric values:\n\\[ m = \\frac{1}{\\sqrt{3}} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13c-eq",
@@ -7969,7 +8215,8 @@
               "work": "Multiply by \\(\\sqrt{3}\\):\n\\[ \\sqrt{3}(y + 2) = x - 3 \\]\n\\[ \\sqrt{3}y + 2\\sqrt{3} = x - 3 \\]\n\\[ x - \\sqrt{3}y - 3 - 2\\sqrt{3} = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13d-grad",
@@ -8003,7 +8250,8 @@
               "work": "Since \\(150^\\circ\\) is in the second quadrant, tangent is negative:\n\\[ m = -\\frac{1}{\\sqrt{3}} \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q13d-eq",
@@ -8037,7 +8285,8 @@
               "work": "Multiply by \\(\\sqrt{3}\\):\n\\[ \\sqrt{3}(y + 4) = -(x + 3) \\]\n\\[ \\sqrt{3}y + 4\\sqrt{3} = -x - 3 \\]\n\\[ x + \\sqrt{3}y + 3 + 4\\sqrt{3} = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14a-i",
@@ -8071,7 +8320,8 @@
               "work": "\\[ x - 4 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14a-ii",
@@ -8105,7 +8355,8 @@
               "work": "\\[ y + 2 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14b",
@@ -8139,7 +8390,8 @@
               "work": "Multiply by 3:\n\\[ 3y = -4x + 12 \\]\n\\[ 4x + 3y - 12 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14c-i",
@@ -8173,7 +8425,8 @@
               "work": "\\[ x - y + 5 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14c-ii",
@@ -8207,7 +8460,8 @@
               "work": "\\[ \\sqrt{3}x + y - 5 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q14d",
@@ -8241,7 +8495,8 @@
               "work": "\\[ y = -\\sqrt{3}x - 4\\sqrt{3} \\]\n\\[ \\sqrt{3}x + y + 4\\sqrt{3} = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q15b",
@@ -8275,7 +8530,8 @@
               "work": "Sorted by x-coordinate, the points are:\n\\[ (-10, -14), (-4, -2), (0, -4), (6, 8) \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q16a",
@@ -8304,7 +8560,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7d-q16b",
@@ -8341,7 +8598,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y11a-7d-q17a",
@@ -8375,7 +8633,8 @@
               "work": "\\[ \\tan \\theta = 1 \\implies \\theta = 45^\\circ \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q17b",
@@ -8409,7 +8668,8 @@
               "work": "\\[ x - y - 1 = 0 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q17d",
@@ -8438,7 +8698,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7d-q17e",
@@ -8472,7 +8733,8 @@
               "work": "Since two sides are equal, \\(\\triangle ABC\\) is an isosceles triangle."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q17f",
@@ -8506,7 +8768,8 @@
               "work": "\\[ \\text{Area} = \\frac{1}{2} \\times 4\\sqrt{2} \\times 3\\sqrt{2} = \\frac{1}{2} \\times 24 = 12 \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q17g",
@@ -8540,7 +8803,8 @@
               "work": "\\[ 5 + y = 4 \\implies y = -1 \\]\nThe point \\(E\\) is \\((6, -1)\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q18a",
@@ -8573,7 +8837,8 @@
               "explain": "Rearrange into general form.",
               "work": "Multiply by 3:\n\\[ 3y = 4x + 12 \\]\n\\[ 4x - 3y + 12 = 0 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7d-q18b",
@@ -8606,7 +8871,8 @@
               "explain": "Conclude isosceles triangle.",
               "work": "Since \\(ML = MP = 5\\), two sides of \\(\\triangle LMP\\) are equal. Therefore, \\(\\triangle LMP\\) is an isosceles triangle."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7d-q18d",
@@ -8634,7 +8900,8 @@
               "work": "\\[ m_{NP} \\times m_{PL} = -\\frac{1}{3} \\times 3 = -1 \\]\nSince the product is \\(-1\\), \\(NP \\perp PL\\), which means \\(\\angle NPL = 90^\\circ\\)."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11a-7d-q18e",
@@ -8667,7 +8934,8 @@
               "explain": "Write circle equation.",
               "work": "\\[ (x - h)^2 + (y - k)^2 = r^2 \\]\n\\[ (x - 0)^2 + (y - 4)^2 = 5^2 \\]\n\\[ x^2 + (y - 4)^2 = 25 \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7d-q19",
@@ -8700,7 +8968,8 @@
               "explain": "Solve for k.",
               "work": "Substitute \\(x = 3, y = -5\\):\n\\[ k(3) - (-5) - 9 = 0 \\implies 3k + 5 - 9 = 0 \\implies 3k = 4 \\]\n\\[ k = \\frac{4}{3} \\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-7d-q20b",
@@ -8733,7 +9002,8 @@
               "explain": "Solve for \\(\\mu\\).",
               "work": "\\[ 3\\mu = -8 \\]\n\\[ \\mu = -\\frac{8}{3} \\]"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

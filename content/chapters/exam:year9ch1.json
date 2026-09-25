@@ -34,7 +34,8 @@
               "work": "\\(21 - 20 = 1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1a-q3b",
@@ -61,7 +62,8 @@
               "work": "\\(14 + 20 = 34\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1a-q3c",
@@ -88,7 +90,8 @@
               "work": "\\(-7 - 8 = -15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1a-q3d",
@@ -115,7 +118,8 @@
               "work": "\\(-21 + 8 = -13\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1a-q14",
@@ -141,7 +145,8 @@
               "explain": "Multiply the simplified terms and round to the nearest integer.",
               "work": "\\(2152.5 \\times 20.25 = 43588.125 \\approx 43588\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q15",
@@ -167,7 +172,8 @@
               "explain": "Multiply the results.",
               "work": "\\(6.25 \\times 16 = 100\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q16",
@@ -193,7 +199,8 @@
               "explain": "Calculate the final product.",
               "work": "\\(800 \\times 1.25 \\times 0.88 = 880\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q18",
@@ -219,7 +226,8 @@
               "explain": "Multiply the simplified values.",
               "work": "\\(22 \\times 10 = 220\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q19",
@@ -250,7 +258,8 @@
               "explain": "Compute the square root, rounding to three decimal places.",
               "work": "\\(\\sqrt{0.0661} \\approx 0.257\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q20",
@@ -276,7 +285,8 @@
               "explain": "Perform the subtraction.",
               "work": "\\(98 - 78.4 = 19.6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q23",
@@ -302,7 +312,8 @@
               "explain": "Compute the division.",
               "work": "\\(\\frac{0.000009}{0.15} = 0.00006\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q24",
@@ -332,7 +343,8 @@
               "explain": "Divide 1 by the denominator and round to one decimal place.",
               "work": "\\(\\frac{1}{0.02512} \\approx 39.808 \\approx 39.8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q26",
@@ -358,7 +370,8 @@
               "explain": "Divide the terms.",
               "work": "\\(\\frac{468.75}{50} = 9.375\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q27",
@@ -384,7 +397,8 @@
               "explain": "Calculate the final numerator value and divide.",
               "work": "\\(64 \\times 1600 = 102400, quad \\frac{102400}{2000} = 51.2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q28",
@@ -410,7 +424,8 @@
               "explain": "Multiply by initial volume and subtract the cost.",
               "work": "\\(300 \\times 1.21 = 363, \\quad 363 - 50 = 313\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q29",
@@ -436,7 +451,8 @@
               "explain": "Sum the terms and round to two decimal places.",
               "work": "\\(10 + 1.8367 = 11.8367 \\approx 11.84\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q30",
@@ -466,7 +482,8 @@
               "explain": "Find the square root of 468 and round to one decimal place.",
               "work": "\\(\\sqrt{468} \\approx 21.633 \\approx 21.6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q33",
@@ -492,7 +509,8 @@
               "explain": "Divide the second term and complete the subtraction.",
               "work": "\\(\\frac{627.2}{392} = 1.6, \\quad 6 - 1.6 = 4.4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q54",
@@ -518,7 +536,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{64 + 50.0} = \\sqrt{114.0} \\approx 10.68\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q55",
@@ -544,7 +563,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(1000 \\times 0.64 = 640.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q56",
@@ -570,7 +590,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{1.44 + 2.56} = \\sqrt{4.0} = 2.0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q57",
@@ -596,7 +617,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{36 + 180.0} = \\sqrt{216.0} \\approx 14.7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q58",
@@ -622,7 +644,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(27 + (18) + -10 = 35\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q59",
@@ -648,7 +671,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(2000 \\times 0.729 = 1458.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q60",
@@ -674,7 +698,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(2000 \\times 0.9025 = 1805.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q62",
@@ -700,7 +725,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(-12 + (8) + -15 = -19\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q63",
@@ -726,7 +752,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{5.76 + 2.56} = \\sqrt{8.32} = 2.88\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q64",
@@ -753,7 +780,8 @@
               "explain": "Add and subtract the terms from left to right.",
               "work": "\\(27 - 12 + 10 = 25\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q65",
@@ -779,7 +807,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(42.0 - 6.0 = 36.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q67",
@@ -805,7 +834,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{36 + 180.0} = \\sqrt{216.0} \\approx 14.7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q69",
@@ -831,7 +861,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(30.0 - 5.0 = 25.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q71",
@@ -857,7 +888,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(17.5 - 6.0 = 11.5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q73",
@@ -883,7 +915,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(5000 \\times 0.512 = 2560.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q74",
@@ -909,7 +942,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{5.76 + 4.0} = \\sqrt{9.76} = 3.12\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q76",
@@ -935,7 +969,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{25 + 100.0} = \\sqrt{125.0} \\approx 11.18\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-1a-q77",
@@ -961,7 +996,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(2000 \\times 0.64 = 1280.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-1a-q81",
@@ -987,7 +1023,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(17.5 - 6.0 = 11.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q83",
@@ -1013,7 +1050,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(30.0 - 6.0 = 24.0\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q84",
@@ -1039,7 +1077,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(5000 \\times 0.8574 = 4286.87\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q86",
@@ -1065,7 +1104,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(12.5 - 3.0 = 9.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q88",
@@ -1091,7 +1131,8 @@
               "explain": "Multiply by the principal \\(P\\).",
               "work": "\\(2000 \\times 0.64 = 1280.0\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q89",
@@ -1117,7 +1158,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(42.0 - 3.0 = 39.0\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q90",
@@ -1143,7 +1185,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(42.0 - 10.0 = 32.0\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q91",
@@ -1169,7 +1212,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{36 + 75.0} = \\sqrt{111.0} \\approx 10.54\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q92",
@@ -1195,7 +1239,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(12 + (10) + 10 = 32\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q93",
@@ -1221,7 +1266,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{64 + 100.0} = \\sqrt{164.0} \\approx 12.81\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q99",
@@ -1247,7 +1293,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(8 + (-8) + -15 = -15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q102",
@@ -1273,7 +1320,8 @@
               "explain": "Sum the terms inside the square root and evaluate the root.",
               "work": "\\(\\sqrt{25 + 100.0} = \\sqrt{125.0} \\approx 11.18\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q105",
@@ -1299,7 +1347,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(-12 + (-8) + -15 = -35\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q107",
@@ -1325,7 +1374,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(12.5 - 5.0 = 7.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q108",
@@ -1351,7 +1401,8 @@
               "explain": "Sum the terms to find the final value.",
               "work": "\\(-12 + (10) + 10 = 8\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-1a-q109",
@@ -1377,7 +1428,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{5.76 + 2.56} = \\sqrt{8.32} = 2.88\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q111",
@@ -1403,7 +1455,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{2.25 + 10.24} = \\sqrt{12.49} = 3.53\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q112",
@@ -1429,7 +1482,8 @@
               "explain": "Add the squared terms and take the square root.",
               "work": "\\(\\sqrt{5.76 + 4.0} = \\sqrt{9.76} = 3.12\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y9-1a-q113",
@@ -1455,7 +1509,8 @@
               "explain": "Subtract to find the force.",
               "work": "\\(42.0 - 6.0 = 36.0\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

@@ -41,7 +41,8 @@
                   "explain": "Solve for \\(m\\).",
                   "work": "\\(m = 1 - 0.84 = 0.16\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q23b",
@@ -67,7 +68,8 @@
                   "explain": "Evaluate each term and sum.",
                   "work": "\\(= 4.8+4.2+3.52+9.2 = 21.72\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q23c",
@@ -94,7 +96,8 @@
                   "explain": "Complete the subtraction.",
                   "work": "\\(\\text{Var}(X) = 1.4816\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -143,7 +146,8 @@
           },
           "dna": {
             "dnaId": "PROB-DIST-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "gosford2020-q4",
@@ -179,7 +183,8 @@
           },
           "dna": {
             "dnaId": "STAT-DESC-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hg2020-q13",
@@ -211,7 +216,8 @@
                   "explain": "Substitute the given probabilities and add.",
                   "work": "\\(= 0.4+0.2 = 0.6\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q13b",
@@ -238,7 +244,8 @@
                   "explain": "Use the variance formula \\(\\text{Var}(X)=E(X^2)-\\mu^2\\).",
                   "work": "\\(\\text{Var}(X) = 5.2-2^2 = 5.2-4 = 1.2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -283,7 +290,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q28",
@@ -323,7 +331,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "killara2026-q15",
@@ -352,7 +361,8 @@
                   "explain": "Solve for A.",
                   "work": "\\(A=24-10=14\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "killara2026-q15b",
@@ -375,7 +385,8 @@
                   "explain": "Divide by the total number of students surveyed.",
                   "work": "\\(\\dfrac{24}{40}=\\dfrac35\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "killara2026-q15c",
@@ -398,7 +409,8 @@
                   "explain": "A variable restricted to distinct, countable values (not any value in a range) is discrete.",
                   "work": "\\(\\text{Discrete}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         }
@@ -447,7 +459,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "killara2026-q7",
@@ -487,7 +500,8 @@
               "explain": "Therefore, the only false statement is \\\"The mode is 6\\\".",
               "work": "\\\\(\\\\text{False: The mode is 6}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

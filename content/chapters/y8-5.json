@@ -38,7 +38,8 @@
               "explain": "Finally, we compute the subtraction. \\(180 - 35 = 145\\), so the size of \\(x\\) is \\(145^\\circ\\). This corresponds directly to our selected option.",
               "work": "x = 145^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1b",
@@ -70,7 +71,8 @@
               "explain": "Finally, we perform the calculation. \\(90 - 30 = 60\\), so the size of \\(x\\) is \\(60^\\circ\\). This matches the correct option.",
               "work": "x = 60^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1c",
@@ -102,7 +104,8 @@
               "explain": "Finally, we compute the sum. \\(90 + 52 = 142\\), so \\(x\\) is \\(142^\\circ\\). This corresponds to option D.",
               "work": "x = 142^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1d",
@@ -134,7 +137,8 @@
               "explain": "Finally, we compute the subtraction. \\(180 - 145 = 35\\), so the value of \\(x\\) is \\(35^\\circ\\). This corresponds to option A.",
               "work": "x = 35^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1e",
@@ -166,7 +170,8 @@
               "explain": "Finally, we state the size of the angle directly. Since the angle \\(x\\) is a straight angle, its measure is exactly \\(180^\\circ\\). This matches option C.",
               "work": "x = 180^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1f",
@@ -200,7 +205,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5a-q1g",
@@ -232,7 +238,8 @@
               "explain": "Finally, we subtract the sum of the known angles from \\(360^\\circ\\) to calculate the reflex angle \\(x\\) completing the circle. \\(360 - 120 = 240\\), so the reflex angle \\(x\\) is \\(240^\\circ\\).",
               "work": "x = 360^\\circ - 120^\\circ = 240^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q1h",
@@ -264,7 +271,8 @@
               "explain": "Finally, we subtract the sum of the known angles from \\(360^\\circ\\) to calculate the measure of the remaining angle \\(x\\). \\(360 - 220 = 140\\), so \\(x = 140^\\circ\\).",
               "work": "x = 360^\\circ - 220^\\circ = 140^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q2a",
@@ -296,7 +304,8 @@
               "explain": "Finally, we look directly across the intersection vertex Q from \\(\\angle PQR\\). The angle on the opposite side is formed by rays QT and QS, which is named \\(\\angle TQS\\). This matches option C.",
               "work": "\\text{Vertically opposite: } \\angle TQS"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q2b",
@@ -328,7 +337,8 @@
               "explain": "Finally, we identify the angle directly opposite to \\(\\angle PQR\\) across the vertex Q. This angle lies between rays QV and QU, so it is named \\(\\angle VQU\\). This matches option D.",
               "work": "\\text{Vertically opposite: } \\angle VQU"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q2c",
@@ -360,7 +370,8 @@
               "explain": "Finally, we look directly across the vertex Q from \\(\\angle PQR\\). The angle on the opposite side is formed by rays QA and QC, which is named \\(\\angle AQC\\). This matches option C.",
               "work": "\\text{Vertically opposite to } \\angle PQR = \\angle AQC"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q3a",
@@ -392,7 +403,8 @@
               "explain": "Finally, we compute the subtraction. \\(180 - 62 = 118\\), so the measure of \\(\\alpha\\) is \\(118^\\circ\\). This matches option C.",
               "work": "\\alpha = 118^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q3b-theta",
@@ -427,7 +439,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5a-q3b-beta",
@@ -462,7 +475,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5a-q3c-alpha",
@@ -494,7 +508,8 @@
               "explain": "Finally, we apply the geometric theorem that vertically opposite angles are equal. Therefore, \\(\\alpha\\) is exactly equal to \\(52^\\circ\\). This matches option B.",
               "work": "\\alpha = 52^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q3c-beta",
@@ -526,7 +541,8 @@
               "explain": "Finally, we compute the subtraction. \\(180 - 52 = 128\\), so the measure of \\(\\beta\\) is \\(128^\\circ\\). This matches option D.",
               "work": "\\beta = 128^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4a",
@@ -558,7 +574,8 @@
               "explain": "Finally, we apply the theorem that vertically opposite angles are equal in size. Therefore, \\(\\theta\\) is exactly equal to \\(42^\\circ\\). This matches option B.",
               "work": "\\theta = 42^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4b",
@@ -590,7 +607,8 @@
               "explain": "Finally, we solve for \\(\\beta\\) by subtracting \\(120^\\circ\\) and dividing by 2. \\(2\\beta = 60^\\circ\\), so \\(\\beta = 30^\\circ\\). This matches option B.",
               "work": "2\\beta = 60^\\circ \\;\\Rightarrow\\; \\beta = 30^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4c",
@@ -622,7 +640,8 @@
               "explain": "Finally, we divide both sides by 4 to find \\(\\alpha\\). \\(\\alpha = 180^\\circ / 4 = 45^\\circ\\). This matches option B.",
               "work": "\\alpha = 45^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4d",
@@ -654,7 +673,8 @@
               "explain": "Finally, we solve for \\(\\alpha\\) by dividing \\(360^\\circ\\) by 6. \\(\\alpha = 360^\\circ / 6 = 60^\\circ\\). This matches option B.",
               "work": "\\alpha = 60^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4e",
@@ -686,7 +706,8 @@
               "explain": "Finally, we solve for \\(\\beta\\) by subtracting \\(100^\\circ\\) and dividing by 2. \\(2\\beta = 260^\\circ\\), so \\(\\beta = 130^\\circ\\). This matches option D.",
               "work": "2\\beta = 260^\\circ \\;\\Rightarrow\\; \\beta = 130^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4f-theta",
@@ -718,7 +739,8 @@
               "explain": "Finally, we solve for \\(\\theta\\) by subtraction. \\(\\theta = 180^\\circ - 60^\\circ = 120^\\circ\\). This matches option C.",
               "work": "\\theta = 120^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4f-gamma",
@@ -753,7 +775,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5a-q4g",
@@ -785,7 +808,8 @@
               "explain": "Finally, we simplify the equation and solve for \\(\\alpha\\). \\(2\\alpha + 20^circ = 180^circ \\;Rightarrow\\; 2\\alpha = 160^circ \\;Rightarrow\\; alpha = 80^circ\\). This matches option C.",
               "work": "2\\alpha = 160^\\circ \\;\\Rightarrow\\; \\alpha = 80^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-5a-q4h",
@@ -817,7 +841,8 @@
               "explain": "Finally, we combine like terms and solve for \\(\\alpha\\). \\(5\\alpha = 90^circ \\;Rightarrow\\; alpha = 18^circ\\). This matches option B.",
               "work": "5\\alpha = 90^\\circ \\;\\Rightarrow\\; \\alpha = 18^\\circ"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q1a",
@@ -835,7 +860,8 @@
             {
               "explain": "Supplementary angles are two angles that add up to \\(180^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2a",
@@ -859,7 +885,8 @@
             {
               "explain": "\\(x = 90 - 65 = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2e",
@@ -883,7 +910,8 @@
             {
               "explain": "Divide both sides by 2: \\(e = 35\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-a1c",
@@ -906,7 +934,8 @@
               "explain": "A revolution must measure exactly 360° (a complete turn around a point). The diagram only shows one angle between two rays, not a full turn.",
               "work": "\\(\\text{False}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-a2",
@@ -929,7 +958,8 @@
               "explain": "The vertex of the angle (where the two rays meet) is K, so K must be the middle letter.",
               "work": "\\(\\angle JKL\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-a3a",
@@ -956,7 +986,8 @@
               "explain": "Evaluate.",
               "work": "\\(x=56\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-a3b",
@@ -983,7 +1014,8 @@
               "explain": "Solve for \\(x\\).",
               "work": "\\(x=106-30=76\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1011,7 +1043,8 @@
             {
               "explain": "Angles that add up to \\(180^\\circ\\) are called supplementary."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2c",
@@ -1035,7 +1068,8 @@
             {
               "explain": "Corresponding angles are equal on parallel lines. Therefore, \\(y = 42\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-a1a",
@@ -1058,7 +1092,8 @@
               "explain": "\\(\\angle BGH\\) and \\(\\angle DHF\\) sit in matching corners at the two intersection points, on the same side of the transversal.",
               "work": "\\(\\text{Corresponding angles}\\Rightarrow\\angle BGH=\\angle DHF\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-a1b",
@@ -1081,7 +1116,8 @@
               "explain": "Both angles lie between the two parallel lines, on the same side of the transversal — this is the definition of co-interior (allied) angles.",
               "work": "\\(\\text{Co-interior angles on parallel lines sum to }180°\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1121,7 +1157,8 @@
             {
               "explain": "\\(z = 60\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-a3c-x",
@@ -1148,7 +1185,8 @@
               "explain": "Solve for \\(x\\).",
               "work": "\\(x=106\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-a3c-y",
@@ -1171,7 +1209,8 @@
               "explain": "Because the two transversals are parallel to each other, \\(y°\\) corresponds to \\(x°\\) (same relative position at each line).",
               "work": "\\(y=x=106\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "hghs2026-a3d",
@@ -1202,7 +1241,8 @@
               "explain": "\\(x°=\\angle AEC\\) is the sum of these two alternate angles.",
               "work": "\\(x=75+34=109\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1233,7 +1273,8 @@
             {
               "explain": "\\(p = 107\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1261,7 +1302,8 @@
             {
               "explain": "Since all 3 angles in an equilateral triangle are equal, each angle is \\(180^\\circ \\div 3 = 60^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b",
@@ -1291,7 +1333,8 @@
             {
               "explain": "\\(m = 55\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1319,7 +1362,8 @@
             {
               "explain": "Therefore, the angle sum of a quadrilateral is \\(2 \\times 180^\\circ = 360^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2d",
@@ -1349,7 +1393,8 @@
             {
               "explain": "\\(a = 360 - 255 = 105\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1391,7 +1436,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Parallelogram sides -->\n  <polygon points=\"100,140 140,50 300,50 260,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Parallel line arrows -->\n  <!-- AB and DC (single arrow) -->\n  <path d=\"M 122 105 L 118 95 L 128 99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <path d=\"M 282 105 L 278 95 L 288 99\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <!-- AD and BC (double arrow) -->\n  <path d=\"M 172 140 L 182 140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/>\n  \n  <!-- Vertices circles -->\n  <circle cx=\"100\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"140\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"300\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"260\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"315\" y=\"45\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"275\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles (symmetrical arcs & clear labels inside the corners) -->\n  <!-- A: 40deg (radius 22) -->\n  <path d=\"M 121 133 A 22 22 0 0 0 108 122\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"123\" y=\"125\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">40°</text>\n  \n  <!-- B: alpha (radius 22) -->\n  <path d=\"M 130 72 A 22 22 0 0 0 159 60\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"148\" y=\"75\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2a_beta",
@@ -1426,7 +1472,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Parallelogram sides -->\n  <polygon points=\"100,140 140,50 300,50 260,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Vertices circles -->\n  <circle cx=\"100\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"140\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"300\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"260\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"315\" y=\"45\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"275\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- A: 40deg -->\n  <path d=\"M 121 133 A 22 22 0 0 0 108 122\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"123\" y=\"125\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">40°</text>\n  \n  <!-- C: beta (radius 22) -->\n  <path d=\"M 279 57 A 22 22 0 0 0 292 68\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"277\" y=\"68\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2a_gamma",
@@ -1461,7 +1508,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Parallelogram sides -->\n  <polygon points=\"100,140 140,50 300,50 260,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Vertices circles -->\n  <circle cx=\"100\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"140\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"300\" cy=\"50\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"260\" cy=\"140\" r=\"4.5\" fill=\"#64748b\" stroke=\"#fff\" stroke-width=\"1\"/>\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"315\" y=\"45\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"275\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- A: 40deg -->\n  <path d=\"M 121 133 A 22 22 0 0 0 108 122\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"123\" y=\"125\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">40°</text>\n  \n  <!-- D: gamma (radius 22) -->\n  <path d=\"M 241 130 A 22 22 0 0 0 270 122\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"252\" y=\"115\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">γ</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2c_alpha",
@@ -1496,7 +1544,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Trapezium sides -->\n  <polygon points=\"80,140 130,50 270,50 320,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Parallel line arrows on BC and AD -->\n  <path d=\"M 195,50 L 205,45 L 205,55 Z M 195,140 L 205,135 L 205,145 Z\" fill=\"#475569\"/>\n  \n  <!-- Labels -->\n  <text x=\"65\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"120\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"280\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"335\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- A: 65deg -->\n  <path d=\"M 102 131 A 24 24 0 0 0 90 118\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"108\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">65°</text>\n  \n  <!-- B: alpha (radius 22) -->\n  <path d=\"M 120 68 A 22 22 0 0 0 148 60\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"135\" y=\"75\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2c_beta",
@@ -1531,7 +1580,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Trapezium sides -->\n  <polygon points=\"80,140 130,50 270,50 320,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Parallel line arrows -->\n  <path d=\"M 195,50 L 205,45 L 205,55 Z M 195,140 L 205,135 L 205,145 Z\" fill=\"#475569\"/>\n  \n  <!-- Labels -->\n  <text x=\"65\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"120\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"280\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"335\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- D: 55deg -->\n  <path d=\"M 298 118 A 24 24 0 0 0 310 131\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"292\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">55°</text>\n  \n  <!-- C: beta -->\n  <path d=\"M 252 60 A 22 22 0 0 0 280 68\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"265\" y=\"75\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2d_alpha",
@@ -1566,7 +1616,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Triangle sides and extended line -->\n  <line x1=\"100\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"40\" x2=\"140\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"40\" x2=\"260\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Equal side ticks -->\n  <!-- tick on PQ -->\n  <path d=\"M 166,80 L 174,90\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <!-- tick on PR -->\n  <path d=\"M 234,80 L 226,90\" stroke=\"#475569\" stroke-width=\"2\"/>\n  \n  <!-- Labels -->\n  <text x=\"200\" y=\"25\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"130\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"260\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <!-- Angles -->\n  <!-- P: 40deg (radius 20) -->\n  <path d=\"M 189 57 A 20 20 0 0 0 211 57\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"200\" y=\"72\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">40°</text>\n  \n  <!-- Q: alpha (radius 22) -->\n  <path d=\"M 152 112 A 22 22 0 0 0 162 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"160\" y=\"112\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2d_beta",
@@ -1604,7 +1655,8 @@
           },
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Triangle sides and extended line -->\n  <line x1=\"100\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"40\" x2=\"140\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"40\" x2=\"260\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"200\" y=\"25\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"130\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"260\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"350\" y=\"150\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <!-- Angles -->\n  <!-- R interior: alpha = 70deg -->\n  <text x=\"240\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">70°</text>\n  \n  <!-- R exterior: beta (radius 22) -->\n  <path d=\"M 272 112 A 22 22 0 0 1 282 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"288\" y=\"112\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2e_alpha",
@@ -1639,7 +1691,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Right-angle triangle and extension line -->\n  <line x1=\"100\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"150\" y1=\"30\" x2=\"250\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Right angle box at C -->\n  <rect x=\"150\" y=\"115\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  \n  <!-- Ticks on CA and CB -->\n  <path d=\"M 145,75 L 155,85\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <path d=\"M 195,125 L 205,135\" stroke=\"#475569\" stroke-width=\"2\"/>\n  \n  <!-- Labels -->\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"135\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"250\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"350\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- A: alpha -->\n  <path d=\"M 150 48 A 18 18 0 0 1 163 43\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"166\" y=\"60\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2e_beta",
@@ -1677,7 +1730,8 @@
           },
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Right-angle triangle and extension line -->\n  <line x1=\"100\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"150\" y1=\"130\" x2=\"150\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"150\" y1=\"30\" x2=\"250\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Right angle box at C -->\n  <rect x=\"150\" y=\"115\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  \n  <!-- Labels -->\n  <text x=\"150\" y=\"20\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"135\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"250\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"350\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles -->\n  <!-- B interior: alpha = 45deg -->\n  <text x=\"232\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">45°</text>\n  \n  <!-- B exterior: beta (radius 22) -->\n  <path d=\"M 264 116 A 22 22 0 0 1 272 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"278\" y=\"112\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2f_alpha",
@@ -1712,7 +1766,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Right-angle triangle and extension line -->\n  <line x1=\"80\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"120\" y1=\"30\" x2=\"270\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Right angle box at Q -->\n  <rect x=\"120\" y=\"115\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  \n  <!-- Labels -->\n  <text x=\"120\" y=\"20\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"105\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"270\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"350\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <!-- Angles -->\n  <!-- P: 2alpha -->\n  <path d=\"M 120 48 A 18 18 0 0 1 133 42\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"138\" y=\"60\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">2α</text>\n  \n  <!-- R interior: alpha -->\n  <path d=\"M 248 115 A 22 22 0 0 0 248 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"240\" y=\"122\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q2f_beta",
@@ -1747,7 +1802,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Right-angle triangle and extension line -->\n  <line x1=\"80\" y1=\"130\" x2=\"350\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"120\" y1=\"130\" x2=\"120\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"120\" y1=\"30\" x2=\"270\" y2=\"130\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Right angle box at Q -->\n  <rect x=\"120\" y=\"115\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  \n  <!-- Labels -->\n  <text x=\"120\" y=\"20\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"105\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"270\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"350\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <!-- Angles -->\n  <!-- R interior: alpha = 30deg -->\n  <text x=\"240\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">30°</text>\n  \n  <!-- R exterior: beta (radius 22) -->\n  <path d=\"M 284 116 A 22 22 0 0 1 292 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"298\" y=\"112\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n</svg>"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-5h-q3a",
@@ -1782,7 +1838,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Quadrilateral sides -->\n  <polygon points=\"90,140 120,40 280,40 250,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"75\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"110\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"290\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"265\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- A: 65deg -->\n  <path d=\"M 112 135 A 22 22 0 0 0 99 119\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"115\" y=\"123\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">65°</text>\n  \n  <!-- B: 120deg -->\n  <path d=\"M 111 60 A 22 22 0 0 0 138 48\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"127\" y=\"65\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">120°</text>\n  \n  <!-- C: gamma -->\n  <path d=\"M 262 48 A 22 22 0 0 0 289 60\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"271\" y=\"65\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">γ</text>\n  \n  <!-- D: 70deg -->\n  <path d=\"M 241 119 A 22 22 0 0 0 228 135\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"232\" y=\"123\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">70°</text>\n</svg>"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-5h-q3b",
@@ -1820,7 +1877,8 @@
           },
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Triangle sides -->\n  <polygon points=\"100,130 200,40 300,130\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"135\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"200\" y=\"25\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"315\" y=\"135\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- A: alpha -->\n  <path d=\"M 121 121 A 22 22 0 0 0 115 130\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"124\" y=\"122\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n  \n  <!-- B: 50deg -->\n  <path d=\"M 189 57 A 20 20 0 0 0 211 57\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"200\" y=\"72\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">50°</text>\n  \n  <!-- C: alpha -->\n  <path d=\"M 285 130 A 22 22 0 0 0 279 121\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"276\" y=\"122\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-5h-q3c",
@@ -1855,7 +1913,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Quadrilateral sides -->\n  <polygon points=\"90,140 110,40 280,50 240,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"75\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"100\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"290\" y=\"42\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"255\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- A: 70deg -->\n  <path d=\"M 112 135 A 22 22 0 0 0 99 119\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"115\" y=\"123\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">70°</text>\n  \n  <!-- B: 2alpha -->\n  <path d=\"M 102 59 A 22 22 0 0 0 128 48\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"118\" y=\"65\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">2α</text>\n  \n  <!-- C: 110deg -->\n  <path d=\"M 262 48 A 22 22 0 0 0 289 60\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"268\" y=\"65\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">110°</text>\n  \n  <!-- D: alpha -->\n  <path d=\"M 231 119 A 22 22 0 0 0 218 135\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"222\" y=\"123\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-5h-q3d",
@@ -1890,7 +1949,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Parallelogram sides -->\n  <polygon points=\"100,140 140,50 300,50 260,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"85\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  <text x=\"315\" y=\"45\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"275\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- A: beta -->\n  <path d=\"M 121 133 A 22 22 0 0 0 108 122\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"123\" y=\"125\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n  \n  <!-- B: 130deg -->\n  <path d=\"M 130 72 A 22 22 0 0 0 159 60\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"148\" y=\"75\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">130°</text>\n  \n  <!-- C: beta -->\n  <path d=\"M 279 57 A 22 22 0 0 0 292 68\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"277\" y=\"68\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">β</text>\n  \n  <!-- D: 130deg -->\n  <path d=\"M 241 130 A 22 22 0 0 0 270 122\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"252\" y=\"115\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">130°</text>\n</svg>"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-5h-q3e",
@@ -1925,7 +1985,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Quadrilateral sides -->\n  <polygon points=\"90,140 90,50 270,40 300,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Labels -->\n  <text x=\"75\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"75\" y=\"42\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"280\" y=\"32\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"315\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- P: 70deg -->\n  <path d=\"M 112 140 A 22 22 0 0 0 90 118\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"110\" y=\"125\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">70°</text>\n  \n  <!-- Q: theta -->\n  <path d=\"M 90 72 A 22 22 0 0 0 112 50\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"108\" y=\"68\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">θ</text>\n  \n  <!-- R: theta -->\n  <path d=\"M 248 41 A 22 22 0 0 0 270 62\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"252\" y=\"62\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">θ</text>\n  \n  <!-- S: 50deg -->\n  <path d=\"M 278 140 A 22 22 0 0 0 293 119\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"272\" y=\"125\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">50°</text>\n</svg>"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-5h-q3f",
@@ -1960,7 +2021,8 @@
           ],
           "ext": {
             "graphData.html": "<svg viewBox=\"0 0 400 180\" width=\"100%\" height=\"180\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Trapezium sides -->\n  <polygon points=\"80,140 140,50 260,50 320,140\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Parallel line arrows on PQ and SR -->\n  <path d=\"M 195,50 L 205,45 L 205,55 Z M 195,140 L 205,135 L 205,145 Z\" fill=\"#475569\"/>\n  \n  <!-- Labels -->\n  <text x=\"65\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"270\" y=\"40\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"335\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  \n  <!-- Angles (radius 22) -->\n  <!-- S: 65deg -->\n  <path d=\"M 102 131 A 24 24 0 0 0 90 118\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"108\" y=\"122\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"12\" font-weight=\"900\" font-family=\"'Outfit'\">65°</text>\n  \n  <!-- P: 115deg -->\n  <path d=\"M 120 68 A 22 22 0 0 0 148 60\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"135\" y=\"75\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">115°</text>\n  \n  <!-- Q: 100deg -->\n  <path d=\"M 252 60 A 22 22 0 0 0 280 68\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\"/>\n  <text x=\"265\" y=\"75\" text-anchor=\"middle\" fill=\"#6366f1\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">100°</text>\n  \n  <!-- R: alpha -->\n  <path d=\"M 298 118 A 24 24 0 0 0 310 131\" fill=\"none\" stroke=\"#f43f5e\" stroke-width=\"1.8\"/>\n  <text x=\"292\" y=\"122\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit'\">α</text>\n</svg>"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2003,7 +2065,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1a_beta",
@@ -2039,7 +2102,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1b_alpha",
@@ -2071,7 +2135,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1b_beta",
@@ -2107,7 +2172,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1b_gamma",
@@ -2134,7 +2200,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-5i-q1d_alpha",
@@ -2162,7 +2229,8 @@
               "explain": "The bottom-left angle \\(75^\\circ\\) and the top-right angle \\(\\alpha\\) are opposite angles in the parallelogram, which are equal. Alternatively, by corresponding angles along the parallel transversals, they are equal.",
               "work": "\\alpha = 75"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1d_beta",
@@ -2194,7 +2262,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1e_alpha",
@@ -2226,7 +2295,8 @@
           },
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1e_beta",
@@ -2253,7 +2323,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-5i-q1f_alpha",
@@ -2284,7 +2355,8 @@
           ],
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q1f_beta",
@@ -2315,7 +2387,8 @@
           ],
           "alsoIn": [
             "exam:year8ch5challenge"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-5i-q2",
@@ -2457,49 +2530,56 @@
               "type": "short",
               "stem": "a) Find the size of $\\angle BAC$.",
               "answer": "80°",
-              "solution": "1. $\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal: $\\angle ACB = \\angle ABC = 50^\\circ$.\n2. The sum of angles in a triangle is $180^\\circ$, so:\n   $$\\angle BAC = 180^\\circ - 50^\\circ - 50^\\circ = 80^\\circ$$"
+              "solution": "1. $\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal: $\\angle ACB = \\angle ABC = 50^\\circ$.\n2. The sum of angles in a triangle is $180^\\circ$, so:\n   $$\\angle BAC = 180^\\circ - 50^\\circ - 50^\\circ = 80^\\circ$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q2a_acb",
               "type": "short",
               "stem": "a) Find the size of $\\angle ACB$.",
               "answer": "50°",
-              "solution": "$\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal:\n$$\\angle ACB = \\angle ABC = 50^\\circ$$"
+              "solution": "$\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal:\n$$\\angle ACB = \\angle ABC = 50^\\circ$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q2b_fic",
               "type": "short",
               "stem": "b) Find the size of $\\angle FIC$.",
               "answer": "50°",
-              "solution": "Since $DI \\parallel AF$ (which is line $AC$), the corresponding angles are equal:\n$$\\angle FIC = \\angle ACB = 50^\\circ$$"
+              "solution": "Since $DI \\parallel AF$ (which is line $AC$), the corresponding angles are equal:\n$$\\angle FIC = \\angle ACB = 50^\\circ$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q2b_proof",
               "type": "review",
               "stem": "b) Prove that $\\triangle FIC$ is isosceles.",
               "answer": "Proof: Since FI || AC, the corresponding angles are equal, and the base angles are equal.",
-              "solution": "1. Since $FI \\parallel AC$, the corresponding angle $\\angle FIC = \\angle ACB = 50^\\circ$.\n2. Since $\\angle FCI = \\angle ACB = 50^\\circ$, the triangle $\\triangle FIC$ has two equal angles:\n   $$\\angle FIC = \\angle FCI = 50^\\circ$$\n3. Since it has two equal angles, $\\triangle FIC$ is an isosceles triangle with $FI = FC$."
+              "solution": "1. Since $FI \\parallel AC$, the corresponding angle $\\angle FIC = \\angle ACB = 50^\\circ$.\n2. Since $\\angle FCI = \\angle ACB = 50^\\circ$, the triangle $\\triangle FIC$ has two equal angles:\n   $$\\angle FIC = \\angle FCI = 50^\\circ$$\n3. Since it has two equal angles, $\\triangle FIC$ is an isosceles triangle with $FI = FC$.",
+              "xp": 3
             },
             {
               "id": "y8-5i-q2c",
               "type": "review",
               "stem": "c) Prove that $DB = DI$.",
               "answer": "Proof: Since DI || AC, the corresponding angle equals the base angle, making DB = DI.",
-              "solution": "1. Since $DI \\parallel AC$, the corresponding angle $\\angle DIB = \\angle ACB = 50^\\circ$.\n2. We are given $\\angle DBI = \\angle ABC = 50^\\circ$.\n3. In $\\triangle DIB$, we have two equal angles:\n   $$\\angle DIB = \\angle DBI = 50^\\circ$$\n4. Therefore, $\\triangle DIB$ is an isosceles triangle, which proves that the opposite sides are equal:\n   $$DB = DI$$"
+              "solution": "1. Since $DI \\parallel AC$, the corresponding angle $\\angle DIB = \\angle ACB = 50^\\circ$.\n2. We are given $\\angle DBI = \\angle ABC = 50^\\circ$.\n3. In $\\triangle DIB$, we have two equal angles:\n   $$\\angle DIB = \\angle DBI = 50^\\circ$$\n4. Therefore, $\\triangle DIB$ is an isosceles triangle, which proves that the opposite sides are equal:\n   $$DB = DI$$",
+              "xp": 3
             },
             {
               "id": "y8-5i-q2d_gif",
               "type": "short",
               "stem": "d) If $GD = GI$ and $\\angle FGI = 36^\\circ$, find the size of $\\angle GIF$.",
               "answer": "72°",
-              "solution": "1. $GD = GI$, so $\\triangle GDI$ is an isosceles triangle with $\\angle GID = \\angle GDI$.\n2. Since $EG \\parallel FI$ and the line is parallel, we can calculate the angles.\n3. Using $\\angle FGI = 36^\\circ$, we find:\n   $$\\angle GIF = 72^\\circ$$"
+              "solution": "1. $GD = GI$, so $\\triangle GDI$ is an isosceles triangle with $\\angle GID = \\angle GDI$.\n2. Since $EG \\parallel FI$ and the line is parallel, we can calculate the angles.\n3. Using $\\angle FGI = 36^\\circ$, we find:\n   $$\\angle GIF = 72^\\circ$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q2d_efg",
               "type": "short",
               "stem": "d) If $GD = GI$ and $\\angle FGI = 36^\\circ$, find the size of $\\angle EFG$.",
               "answer": "108°",
-              "solution": "1. The sum of interior angles on the same side is $180^\\circ$.\n2. We have:\n   $$\\angle EFG = 180^\\circ - 72^\\circ = 108^\\circ$$"
+              "solution": "1. The sum of interior angles on the same side is $180^\\circ$.\n2. We have:\n   $$\\angle EFG = 180^\\circ - 72^\\circ = 108^\\circ$$",
+              "xp": 2
             }
           ],
           "options": [
@@ -2654,35 +2734,40 @@
               "type": "short",
               "stem": "a) Let $\\angle ABC$ be $\\alpha$. Express the size of $\\angle AOC$ in terms of $\\alpha$.",
               "answer": "2α",
-              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOC = 2\\alpha$$"
+              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOC = 2\\alpha$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q3b",
               "type": "short",
               "stem": "b) Let $\\angle ACB$ be $\\beta$. Express the size of $\\angle AOB$ in terms of $\\beta$.",
               "answer": "2β",
-              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOB = 2\\beta$$"
+              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOB = 2\\beta$$",
+              "xp": 2
             },
             {
               "id": "y8-5i-q3c_proof",
               "type": "review",
               "stem": "c) Prove that $\\triangle ABC$ is a right-angled triangle.",
               "answer": "Proof: The angle in a semicircle is a right angle, which is 90 degrees.",
-              "solution": "1. The line $BC$ passes through the centre of the circle $O$, meaning $BC$ is a diameter.\n2. The angle $\\angle BAC$ is subtended by the diameter $BC$ at the circumference.\n3. By the angle in a semicircle theorem, $\\angle BAC = 90^\\circ$.\n4. Therefore, $\\triangle ABC$ is a right-angled triangle with the right angle at $A$."
+              "solution": "1. The line $BC$ passes through the centre of the circle $O$, meaning $BC$ is a diameter.\n2. The angle $\\angle BAC$ is subtended by the diameter $BC$ at the circumference.\n3. By the angle in a semicircle theorem, $\\angle BAC = 90^\\circ$.\n4. Therefore, $\\triangle ABC$ is a right-angled triangle with the right angle at $A$.",
+              "xp": 3
             },
             {
               "id": "y8-5i-q3c_names",
               "type": "short",
               "stem": "c) Hence name two other right-angled triangles in the diagram.",
               "answer": "BDC, DEC",
-              "solution": "1. $\\triangle BDC$: Since $BC$ is the diameter, $\\angle BDC = 90^\\circ$ (angle in a semicircle). Thus, $\\triangle BDC$ is a right-angled triangle.\n2. $\\triangle DEC$: The line segment $DC$ and $EC$ form a right angle at $D$ or $E$. In the diagram, the angle subtended by diameter or right-angle tangent properties makes $\\triangle DEC$ a right-angled triangle."
+              "solution": "1. $\\triangle BDC$: Since $BC$ is the diameter, $\\angle BDC = 90^\\circ$ (angle in a semicircle). Thus, $\\triangle BDC$ is a right-angled triangle.\n2. $\\triangle DEC$: The line segment $DC$ and $EC$ form a right angle at $D$ or $E$. In the diagram, the angle subtended by diameter or right-angle tangent properties makes $\\triangle DEC$ a right-angled triangle.",
+              "xp": 3
             },
             {
               "id": "y8-5i-q3d",
               "type": "short",
               "stem": "d) If $\\angle ECD = 20^\\circ$, find the size of $\\angle ABD$.",
               "answer": "70°",
-              "solution": "1. The angles subtended by the same arc at the circumference are equal.\n2. Solving using the cyclic quadrilateral properties and right angle triangle relationships, we find:\n   $$\\angle ABD = 90^\\circ - 20^\\circ = 70^\\circ$$"
+              "solution": "1. The angles subtended by the same arc at the circumference are equal.\n2. Solving using the cyclic quadrilateral properties and right angle triangle relationships, we find:\n   $$\\angle ABD = 90^\\circ - 20^\\circ = 70^\\circ$$",
+              "xp": 2
             }
           ],
           "options": [

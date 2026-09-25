@@ -16,7 +16,8 @@
           "stem": "Rationalise the denominator of $\\frac{5}{\\sqrt{3}}$",
           "answer": "5√3/3",
           "solution": "(5 * √3) / (√3 * √3) =\n$\\frac{5\\sqrt{3}}{3}$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ERKQ2M7swOvHYyRx0WnA",
@@ -35,7 +36,8 @@
               "work": "$\\sqrt{100\\times3}=\\sqrt{100}\\times \\sqrt{3}\\\\$\n$10\\sqrt{3}$\n "
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "FfhUsBLyoiNT9Mcadczq",
@@ -55,7 +57,8 @@
               "explain": "√147 = √(49 × 3) = √49 × √3 = 7√3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "j1nargV1hyKE1u6ltUH6",
@@ -70,7 +73,8 @@
           ],
           "answer": 0,
           "solution": "$$\n\\begin{aligned}\n\\phi^2 &= \\left( \\frac{\\sqrt{5} + 1}{2} \\right)^2\n\\text{ 1. Apply the exponent to both the numerator and the denominator.}\\\\\n&= \\frac{(\\sqrt{5} + 1)^2}{2^2} \n\\text{  2. Expand the numerator using the perfect square formula:} (a+b)^2 = a^2 + 2ab + b^2. \\\\\n&= \\frac{(\\sqrt{5})^2 + 2(\\sqrt{5})(1) + 1^2}{4} \n\\text{ 3. Simplify the squared terms: } (\\sqrt{5})^2=5 \\text{ and } 1^2=1. \\\\\n&= \\frac{5 + 2\\sqrt{5} + 1}{4} \n\\text{ 4. Combine the rational terms (5 and 1)in the numerator.} \\\\\n&= \\frac{6 + 2\\sqrt{5}}{4} \n\\text{ 5. Factor out the common factor of 2 in the numerator.} \\\\\n&= \\frac{2(3 + \\sqrt{5})}{4} \n\\text{ 6. Cancel the common factor of 2 from the numerator and the denominator.}\\\\\n&= \\frac{3 + \\sqrt{5}}{2}\n\\end{aligned}\n$$\n",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "vdayKFZtt6UcYHgnuQQ6",
@@ -79,7 +83,8 @@
           "stem": "Rationalise the denominator: $\\frac{1}{\\sqrt{3} - \\sqrt{2}}$",
           "answer": "$\\sqrt{3} + \\sqrt{2}$",
           "solution": "$$\n\\begin{aligned}\n\\frac{1}{\\sqrt{3} - \\sqrt{2}} &= \\frac{1}{\\sqrt{3} - \\sqrt{2}} \\times \\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}} \\text{ ( Multiply the numerator and the denominator by the conjugate of the denominator:} \n(\\sqrt{3} + \\sqrt{2}).) \\\\\n&= \\frac{1(\\sqrt{3} + \\sqrt{2})}{(\\sqrt{3} - \\sqrt{2})(\\sqrt{3} + \\sqrt{2})} \\text{  (Apply the difference of two squares formula to the denominator:}(a - b)(a + b) = a^2 - b^2. )\\\\\n&= \\frac{\\sqrt{3} + \\sqrt{2}}{(\\sqrt{3})^2 - (\\sqrt{2})^2} \\text{ ( Simplify the squared terms in the denominator:} \n\\quad(\\sqrt{3})^2 = 3 \\text{ and } (\\sqrt{2})^2 = 2. )\\\\\n&= \\frac{\\sqrt{3} + \\sqrt{2}}{3 - 2} \\text{ ( Subtract the values in the denominator.)}\\\\ \n&= \\frac{\\sqrt{3} + \\sqrt{2}}{1} \\text{ ( Any number divided by 1 is itself.)} \\\\\n&= \\sqrt{3} + \\sqrt{2}\n\\end{aligned}\n$$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "VWvkj4dU76HqoRuqifhe",
@@ -88,7 +93,8 @@
           "stem": "Write as a single surd: $4\\sqrt{3}$",
           "answer": "√48",
           "solution": "4√3 = √(4² × 3) = √(16 × 3) = √48",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -132,7 +138,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch2"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-2a-q2a",
@@ -162,7 +169,8 @@
               "work": "\\( = 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2b",
@@ -192,7 +200,8 @@
               "work": "\\( = 2\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2c",
@@ -222,7 +231,8 @@
               "work": "\\( = 4\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2d",
@@ -252,7 +262,8 @@
               "work": "\\( = 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2e",
@@ -282,7 +293,8 @@
               "work": "\\( = 3\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2f",
@@ -312,7 +324,8 @@
               "work": "\\( = 6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2g",
@@ -342,7 +355,8 @@
               "work": "\\( = 7\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2h",
@@ -372,7 +386,8 @@
               "work": "\\( = 10\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2i",
@@ -402,7 +417,8 @@
               "work": "\\( = 12\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2j",
@@ -432,7 +448,8 @@
               "work": "\\( = 7\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2k",
@@ -462,7 +479,8 @@
               "work": "\\( = 4\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2l",
@@ -492,7 +510,8 @@
               "work": "\\( = 5\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2m",
@@ -522,7 +541,8 @@
               "work": "\\( = 7\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2n",
@@ -552,7 +572,8 @@
               "work": "\\( = 7\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2o",
@@ -578,7 +599,8 @@
               "work": "\\( \\\\sqrt{225} = 15 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2p",
@@ -604,7 +626,8 @@
               "work": "\\( \\\\sqrt{900} = 30 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2q",
@@ -634,7 +657,8 @@
               "work": "\\( = 15\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2r",
@@ -664,7 +688,8 @@
               "work": "\\( = 20\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2s",
@@ -694,7 +719,8 @@
               "work": "\\( = 10\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q2t",
@@ -724,7 +750,8 @@
               "work": "\\( = 24\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3a",
@@ -754,7 +781,8 @@
               "work": "\\( = 10\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3b",
@@ -784,7 +812,8 @@
               "work": "\\( = 20\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3c",
@@ -814,7 +843,8 @@
               "work": "\\( = 18\\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3d",
@@ -844,7 +874,8 @@
               "work": "\\( = 15\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3e",
@@ -874,7 +905,8 @@
               "work": "\\( = 24\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3f",
@@ -904,7 +936,8 @@
               "work": "\\( = 35\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3g",
@@ -934,7 +967,8 @@
               "work": "\\( = 24\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3h",
@@ -964,7 +998,8 @@
               "work": "\\( = 35\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3i",
@@ -994,7 +1029,8 @@
               "work": "\\( = 66\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3j",
@@ -1020,7 +1056,8 @@
               "work": "\\( 56 \\\\times 10 = 560 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3k",
@@ -1050,7 +1087,8 @@
               "work": "\\( = 35\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3l",
@@ -1080,7 +1118,8 @@
               "work": "\\( = 12\\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3m",
@@ -1110,7 +1149,8 @@
               "work": "\\( = 8\\\\sqrt{13} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3n",
@@ -1140,7 +1180,8 @@
               "work": "\\( = 25\\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q3o",
@@ -1170,7 +1211,8 @@
               "work": "\\( = 40\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4a",
@@ -1200,7 +1242,8 @@
               "work": "\\( = \\\\sqrt{8} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4b",
@@ -1230,7 +1273,8 @@
               "work": "\\( = \\\\sqrt{45} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4c",
@@ -1260,7 +1304,8 @@
               "work": "\\( = \\\\sqrt{147} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4d",
@@ -1290,7 +1335,8 @@
               "work": "\\( = \\\\sqrt{216} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4e",
@@ -1320,7 +1366,8 @@
               "work": "\\( = \\\\sqrt{300} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4f",
@@ -1350,7 +1397,8 @@
               "work": "\\( = \\\\sqrt{160} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4g",
@@ -1380,7 +1428,8 @@
               "work": "\\( = \\\\sqrt{605} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4h",
@@ -1410,7 +1459,8 @@
               "work": "\\( = \\\\sqrt{2450} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4i",
@@ -1440,7 +1490,8 @@
               "work": "\\( = \\\\sqrt{108} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q4j",
@@ -1470,7 +1521,8 @@
               "work": "\\( = \\\\sqrt{180} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q5a",
@@ -1496,7 +1548,8 @@
               "work": "\\( = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q5b",
@@ -1522,7 +1575,8 @@
               "work": "\\( = \\\\sqrt{77} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q5c",
@@ -1552,7 +1606,8 @@
               "work": "\\( \\\\sqrt{40} = \\\\sqrt{4 \\\\times 10} = 2\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q5d",
@@ -1578,7 +1633,8 @@
               "work": "\\( = \\\\sqrt{39} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q5e",
@@ -1608,7 +1664,8 @@
               "work": "\\( \\\\sqrt{48} = \\\\sqrt{16 \\\\times 3} = 4\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6a",
@@ -1634,7 +1691,8 @@
               "work": "\\( = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6b",
@@ -1660,7 +1718,8 @@
               "work": "\\( = \\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6c",
@@ -1686,7 +1745,8 @@
               "work": "\\( = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6d",
@@ -1712,7 +1772,8 @@
               "work": "\\( = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6e",
@@ -1738,7 +1799,8 @@
               "work": "\\( = \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q6f",
@@ -1768,7 +1830,8 @@
               "work": "\\( \\\\sqrt{8} = \\\\sqrt{4 \\\\times 2} = 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7a",
@@ -1794,7 +1857,8 @@
               "work": "\\( = \\\\sqrt{14} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7b",
@@ -1824,7 +1888,8 @@
               "work": "\\( = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7c",
@@ -1854,7 +1919,8 @@
               "work": "\\( \\\\sqrt{18} = \\\\sqrt{9 \\\\times 2} = 3\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7d",
@@ -1884,7 +1950,8 @@
               "work": "\\( 2\\\\sqrt{2} \\\\times 3 = 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7e",
@@ -1910,7 +1977,8 @@
               "work": "\\( = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7f",
@@ -1940,7 +2008,8 @@
               "work": "\\( 5 - 5 = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7g",
@@ -1970,7 +2039,8 @@
               "work": "\\( = 25 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q7h",
@@ -2000,7 +2070,8 @@
               "work": "\\( = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8a",
@@ -2030,7 +2101,8 @@
               "work": "\\( x = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8b",
@@ -2060,7 +2132,8 @@
               "work": "\\( x = \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8c",
@@ -2090,7 +2163,8 @@
               "work": "\\( x = \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8d",
@@ -2120,7 +2194,8 @@
               "work": "\\( x = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8e",
@@ -2150,7 +2225,8 @@
               "work": "\\( x = \\\\sqrt{33} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q8f",
@@ -2180,7 +2256,8 @@
               "work": "\\( x = \\\\frac{\\\\sqrt{20}}{\\\\sqrt{4}} = \\\\sqrt{\\\\frac{20}{4}} = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2a-q9a",
@@ -2206,7 +2283,8 @@
               "work": "\\( A = \\\\sqrt{7 \\\\times 3} = \\\\sqrt{21} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q9b",
@@ -2236,7 +2314,8 @@
               "work": "\\( = \\\\frac{1}{2}\\\\sqrt{30} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q9c",
@@ -2262,7 +2341,8 @@
               "work": "\\( A = 17 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q9d",
@@ -2288,7 +2368,8 @@
               "work": "\\( s = \\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q9e",
@@ -2318,7 +2399,8 @@
               "work": "\\( s = \\\\sqrt{9 \\\\times 7} = 3\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10a",
@@ -2348,7 +2430,8 @@
               "work": "\\( x = \\\\sqrt{18} = \\\\sqrt{9 \\\\times 2} = 3\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10b",
@@ -2378,7 +2461,8 @@
               "work": "\\( x = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10c",
@@ -2408,7 +2492,8 @@
               "work": "\\( x = \\\\sqrt{45} = \\\\sqrt{9 \\\\times 5} = 3\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10d",
@@ -2438,7 +2523,8 @@
               "work": "\\( x^2 = 8 \\\\implies x = \\\\sqrt{8} = 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10e",
@@ -2468,7 +2554,8 @@
               "work": "\\( x = \\\\sqrt{50} = \\\\sqrt{25 \\\\times 2} = 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q10f",
@@ -2498,7 +2585,8 @@
               "work": "\\( x^2 = 45 \\\\implies x = \\\\sqrt{45} = \\\\sqrt{9 \\\\times 5} = 3\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q11a",
@@ -2528,7 +2616,8 @@
               "work": "\\( A = 16 \\\\times 7 = 112 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q11b",
@@ -2558,7 +2647,8 @@
               "work": "\\( d = 4\\\\sqrt{14} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2a-q12a",
@@ -2587,7 +2677,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch2"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-2a-q12b",
@@ -2620,7 +2711,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch2"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "jr2012-q9",
@@ -2650,7 +2742,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q22",
@@ -2680,7 +2773,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2013-qD",
@@ -2717,7 +2811,8 @@
                   "explain": "Solve \\(\\sqrt x+1=3\\) for \\(x\\).",
                   "work": "\\(\\sqrt x=2 \\Rightarrow x=4\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qDb",
@@ -2752,7 +2847,8 @@
                   "explain": "Evaluate.",
                   "work": "\\(= 10\\times\\dfrac{25}{52} = \\dfrac{250}{52} = \\dfrac{125}{26}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "jr2013-qDc",
@@ -2777,7 +2873,8 @@
                   "work": "LHS \\(= \\dfrac{2(1+\\cos x)}{\\sin x(1+\\cos x)} = \\dfrac{2}{\\sin x}\\) = RHS, as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "jr2013-qDd",
@@ -2814,7 +2911,8 @@
                   "explain": "State the final answer for \\(\\angle ABC\\).",
                   "work": "\\(\\therefore \\angle ABC = 141°19'\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qDe",
@@ -2841,7 +2939,8 @@
                   "work": "\\(\\angle YXB=\\angle YBX \\Rightarrow BY=XY\\) (sides opposite equal angles in a triangle), as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "jr2013-qDf",
@@ -2876,7 +2975,8 @@
                   "explain": "Rationalise the denominator.",
                   "work": "P \\(= \\dfrac{2\\pi\\sqrt3}{27}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -2915,7 +3015,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s5-q4b",
@@ -2950,7 +3051,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2983,7 +3085,8 @@
               "work": "\\( = 13\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q1b",
@@ -3009,7 +3112,8 @@
               "work": "\\( = 22\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q1c",
@@ -3035,7 +3139,8 @@
               "work": "\\( = 3\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q1d",
@@ -3061,7 +3166,8 @@
               "work": "\\( = -23\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q1e",
@@ -3087,7 +3193,8 @@
               "work": "\\( = -1\\\\sqrt{5} = -\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q1f",
@@ -3113,7 +3220,8 @@
               "work": "\\( = 19\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2a",
@@ -3143,7 +3251,8 @@
               "work": "\\( = 10\\\\sqrt{3} + 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2b",
@@ -3173,7 +3282,8 @@
               "work": "\\( = 8\\\\sqrt{5} - 8\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2c",
@@ -3203,7 +3313,8 @@
               "work": "\\( = 11\\\\sqrt{10} - 3\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2d",
@@ -3233,7 +3344,8 @@
               "work": "\\( = -3\\\\sqrt{2} + 8\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2e",
@@ -3263,7 +3375,8 @@
               "work": "\\( = 6\\\\sqrt{13} - 3\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q2f",
@@ -3293,7 +3406,8 @@
               "work": "\\( = 9\\\\sqrt{3} - \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3a",
@@ -3323,7 +3437,8 @@
               "work": "\\( = 6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3b",
@@ -3353,7 +3468,8 @@
               "work": "\\( = 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3c",
@@ -3383,7 +3499,8 @@
               "work": "\\( = 4\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3d",
@@ -3413,7 +3530,8 @@
               "work": "\\( = 13\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3e",
@@ -3443,7 +3561,8 @@
               "work": "\\( = -3\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3f",
@@ -3473,7 +3592,8 @@
               "work": "\\( = -2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3g",
@@ -3503,7 +3623,8 @@
               "work": "\\( = 3\\\\sqrt{2} + 4\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3h",
@@ -3533,7 +3654,8 @@
               "work": "\\( = \\\\sqrt{7} + 8\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3i",
@@ -3563,7 +3685,8 @@
               "work": "\\( = -7\\\\sqrt{5} + 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q3j",
@@ -3593,7 +3716,8 @@
               "work": "\\( = -2\\\\sqrt{3} - 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4a",
@@ -3623,7 +3747,8 @@
               "work": "\\( = 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4b",
@@ -3653,7 +3778,8 @@
               "work": "\\( = 5\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4c",
@@ -3683,7 +3809,8 @@
               "work": "\\( = 1\\\\sqrt{2} = \\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4d",
@@ -3713,7 +3840,8 @@
               "work": "\\( 5\\\\sqrt{2} - 6\\\\sqrt{2} = -\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4e",
@@ -3747,7 +3875,8 @@
               "work": "\\( (8\\\\sqrt{2} + 12\\\\sqrt{2}) - 9\\\\sqrt{3} = 20\\\\sqrt{2} - 9\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4f",
@@ -3781,7 +3910,8 @@
               "work": "\\( 21\\\\sqrt{3} + 8\\\\sqrt{3} - 2\\\\sqrt{3} = (21 + 8 - 2)\\\\sqrt{3} = 27\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4g",
@@ -3811,7 +3941,8 @@
               "work": "\\( 6\\\\sqrt{5} + 2\\\\sqrt{5} + 5\\\\sqrt{5} = (6 + 2 + 5)\\\\sqrt{5} = 13\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4h",
@@ -3841,7 +3972,8 @@
               "work": "\\( 9\\\\sqrt{7} + 4\\\\sqrt{7} - 10\\\\sqrt{7} = (9 + 4 - 10)\\\\sqrt{7} = 3\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4i",
@@ -3875,7 +4007,8 @@
               "work": "\\( 2\\\\sqrt{11} + 12\\\\sqrt{11} + 6\\\\sqrt{11} = 20\\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q4j",
@@ -3909,7 +4042,8 @@
               "work": "\\( 22\\\\sqrt{3} - 36\\\\sqrt{3} + 8\\\\sqrt{3} = -6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5a",
@@ -3939,7 +4073,8 @@
               "work": "\\( 6\\\\sqrt{2} - 5\\\\sqrt{2} = 1\\\\sqrt{2} = \\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5b",
@@ -3969,7 +4104,8 @@
               "work": "\\( 4\\\\sqrt{3} + 2\\\\sqrt{3} = 6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5c",
@@ -3999,7 +4135,8 @@
               "work": "\\( 2\\\\sqrt{2} + \\\\sqrt{2} + 3\\\\sqrt{2} = (2 + 1 + 3)\\\\sqrt{2} = 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5d",
@@ -4029,7 +4166,8 @@
               "work": "\\( 2\\\\sqrt{3} + 4\\\\sqrt{3} - 5\\\\sqrt{3} = (2 + 4 - 5)\\\\sqrt{3} = 1\\\\sqrt{3} = \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5e",
@@ -4063,7 +4201,8 @@
               "work": "\\( 4\\\\sqrt{2} - 10\\\\sqrt{2} + 15\\\\sqrt{2} = 9\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5f",
@@ -4093,7 +4232,8 @@
               "work": "\\( 4\\\\sqrt{5} - 8\\\\sqrt{5} - 3\\\\sqrt{5} = -7\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5g",
@@ -4123,7 +4263,8 @@
               "work": "\\( 3\\\\sqrt{6} + 2\\\\sqrt{6} = 5\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5h",
@@ -4157,7 +4298,8 @@
               "work": "\\( 3\\\\sqrt{3} - 4\\\\sqrt{3} + 5\\\\sqrt{3} = 4\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5i",
@@ -4191,7 +4333,8 @@
               "work": "\\( 3\\\\sqrt{5} + 4\\\\sqrt{5} - 5\\\\sqrt{5} = 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5j",
@@ -4221,7 +4364,8 @@
               "work": "\\( \\\\sqrt{2} + 4\\\\sqrt{2} + 6\\\\sqrt{2} = (1 + 4 + 6)\\\\sqrt{2} = 11\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5k",
@@ -4251,7 +4395,8 @@
               "work": "\\( = (6 - 4 + \\\\frac{1}{2})\\\\sqrt{5} = (2 + 0.5)\\\\sqrt{5} = \\\\frac{5}{2}\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q5l",
@@ -4281,7 +4426,8 @@
               "work": "\\( 15\\\\sqrt{2} - 6\\\\sqrt{5} - 4\\\\sqrt{5} = 15\\\\sqrt{2} - 10\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2b-q6a",
@@ -4311,7 +4457,8 @@
               "work": "\\( 2\\\\sqrt{3} + 6\\\\sqrt{2} - 6\\\\sqrt{3} + 4\\\\sqrt{2} = (6 + 4)\\\\sqrt{2} + (2 - 6)\\\\sqrt{3} = 10\\\\sqrt{2} - 4\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q6b",
@@ -4341,7 +4488,8 @@
               "work": "\\( 12\\\\sqrt{2} - 4\\\\sqrt{5} + 3\\\\sqrt{5} + 12\\\\sqrt{2} = 24\\\\sqrt{2} - 1\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q6c",
@@ -4371,7 +4519,8 @@
               "work": "\\( 12\\\\sqrt{3} + 18\\\\sqrt{10} - 6\\\\sqrt{3} - 3\\\\sqrt{10} = 6\\\\sqrt{3} + 15\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q6d",
@@ -4401,7 +4550,8 @@
               "work": "\\( 12\\\\sqrt{3} - 9\\\\sqrt{2} + 12\\\\sqrt{3} - 10\\\\sqrt{2} = 24\\\\sqrt{3} - 19\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q7a",
@@ -4431,7 +4581,8 @@
               "work": "\\( \\\\sqrt{7} = \\\\sqrt{x} \\\\implies x = 7 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q7b",
@@ -4461,7 +4612,8 @@
               "work": "\\( \\\\sqrt{5} = \\\\sqrt{x} \\\\implies x = 5 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q7c",
@@ -4491,7 +4643,8 @@
               "work": "\\( -\\\\sqrt{6} = -\\\\sqrt{x} \\\\implies x = 6 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8ap",
@@ -4517,7 +4670,8 @@
               "work": "\\( P = 2\\\\sqrt{3} + 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8aa",
@@ -4543,7 +4697,8 @@
               "work": "\\( A = \\\\sqrt{3 \\\\times 2} = \\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8ad",
@@ -4573,7 +4728,8 @@
               "work": "\\( d = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8bp",
@@ -4599,7 +4755,8 @@
               "work": "\\( P = 2\\\\sqrt{5} + 2\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8ba",
@@ -4625,7 +4782,8 @@
               "work": "\\( A = \\\\sqrt{5 \\\\times 3} = \\\\sqrt{15} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2b-q8bd",
@@ -4655,7 +4813,8 @@
               "work": "\\( d = \\\\sqrt{8} = \\\\sqrt{4 \\\\times 2} = 2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "willoughby2019-s5-q4c",
@@ -4694,7 +4853,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -4727,7 +4887,8 @@
               "work": "\\\\( = \\\\sqrt{21} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q1b",
@@ -4753,7 +4914,8 @@
               "work": "\\\\( = \\\\sqrt{35} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q1c",
@@ -4783,7 +4945,8 @@
               "work": "\\\\( = 3\\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q1d",
@@ -4809,7 +4972,8 @@
               "work": "\\\\( = \\\\sqrt{51} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q1e",
@@ -4839,7 +5003,8 @@
               "work": "\\\\( = 2\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q1f",
@@ -4869,7 +5034,8 @@
               "work": "\\\\( = 2\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2a",
@@ -4895,7 +5061,8 @@
               "work": "\\\\( = \\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2b",
@@ -4921,7 +5088,8 @@
               "work": "\\\\( = \\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2c",
@@ -4951,7 +5119,8 @@
               "work": "\\\\( = 3 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2d",
@@ -4977,7 +5146,8 @@
               "work": "\\\\( = \\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2e",
@@ -5003,7 +5173,8 @@
               "work": "\\\\( = \\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q2f",
@@ -5029,7 +5200,8 @@
               "work": "\\\\( = \\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3a",
@@ -5059,7 +5231,8 @@
               "work": "\\\\( = 15\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3b",
@@ -5089,7 +5262,8 @@
               "work": "\\\\( = 48\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3c",
@@ -5119,7 +5293,8 @@
               "work": "\\\\( = 32\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3d",
@@ -5145,7 +5320,8 @@
               "work": "\\\\( = 15\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3e",
@@ -5171,7 +5347,8 @@
               "work": "\\\\( = -24\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3f",
@@ -5197,7 +5374,8 @@
               "work": "\\\\( = -24\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3g",
@@ -5223,7 +5401,8 @@
               "work": "\\\\( = 20\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3h",
@@ -5249,7 +5428,8 @@
               "work": "\\\\( = 14\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q3i",
@@ -5275,7 +5455,8 @@
               "work": "\\\\( = -27\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4a",
@@ -5301,7 +5482,8 @@
               "work": "\\\\( = 3\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4b",
@@ -5327,7 +5509,8 @@
               "work": "\\\\( = \\\\frac{3}{2}\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4c",
@@ -5357,7 +5540,8 @@
               "work": "\\\\( = \\\\frac{2}{3}(2) = \\\\frac{4}{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4d",
@@ -5383,7 +5567,8 @@
               "work": "\\\\( = -\\\\frac{8}{3}\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4e",
@@ -5409,7 +5594,8 @@
               "work": "\\\\( = -2\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q4f",
@@ -5439,7 +5625,8 @@
               "work": "\\\\( = \\\\frac{1}{3} \\\\times \\\\frac{\\\\sqrt{1}}{\\\\sqrt{2}} \\\\times \\\\frac{\\\\sqrt{2}}{\\\\sqrt{2}} = \\\\frac{\\\\sqrt{2}}{6} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5a",
@@ -5461,7 +5648,8 @@
               "work": "\\\\( \\\\sqrt{3} \\\\times \\\\sqrt{3} = (\\\\sqrt{3})^2 = 3 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5b",
@@ -5483,7 +5671,8 @@
               "work": "\\\\( \\\\sqrt{7} \\\\times \\\\sqrt{7} = (\\\\sqrt{7})^2 = 7 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5c",
@@ -5509,7 +5698,8 @@
               "work": "\\\\( = 4(5) = 20 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5d",
@@ -5535,7 +5725,8 @@
               "work": "\\\\( = 7(2) = 14 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5e",
@@ -5561,7 +5752,8 @@
               "work": "\\\\( = 12(3) = 36 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5f",
@@ -5587,7 +5779,8 @@
               "work": "\\\\( = 20(2) = 40 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5g",
@@ -5613,7 +5806,8 @@
               "work": "\\\\( = -6(5) = -30 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5h",
@@ -5639,7 +5833,8 @@
               "work": "\\\\( = 15(6) = 90 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q5i",
@@ -5665,7 +5860,8 @@
               "work": "\\\\( = -16(7) = -112 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6a",
@@ -5695,7 +5891,8 @@
               "work": "\\\\( x = \\\\frac{2\\\\sqrt{2}}{2} = \\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6b",
@@ -5725,7 +5922,8 @@
               "work": "\\\\( x = \\\\frac{3\\\\sqrt{3}}{3} = \\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6c",
@@ -5755,7 +5953,8 @@
               "work": "\\\\( x = \\\\frac{10\\\\sqrt{5}}{5} = 2\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6d",
@@ -5785,7 +5984,8 @@
               "work": "\\\\( x = \\\\frac{6\\\\sqrt{2}}{2} = 3\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6e",
@@ -5815,7 +6015,8 @@
               "work": "\\\\( x = \\\\frac{14\\\\sqrt{7}}{7} = 2\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6f",
@@ -5845,7 +6046,8 @@
               "work": "\\\\( x = \\\\frac{20\\\\sqrt{5}}{5} = 4\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6g",
@@ -5875,7 +6077,8 @@
               "work": "\\\\( x = \\\\frac{12\\\\sqrt{2}}{2} = 6\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6h",
@@ -5905,7 +6108,8 @@
               "work": "\\\\( x = \\\\frac{36\\\\sqrt{3}}{3} = 12\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6i",
@@ -5935,7 +6139,8 @@
               "work": "\\\\( x = \\\\frac{25\\\\sqrt{5}}{5} = 5\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6j",
@@ -5965,7 +6170,8 @@
               "work": "\\\\( x = \\\\frac{18\\\\sqrt{3}}{3} = 6\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6k",
@@ -5991,7 +6197,8 @@
               "work": "\\\\( x = \\\\frac{27\\\\sqrt{3}}{3} = 9\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q6l",
@@ -6021,7 +6228,8 @@
               "work": "\\\\( x = \\\\frac{250\\\\sqrt{5}}{5} = 50\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7a",
@@ -6047,7 +6255,8 @@
               "work": "\\\\( x = -3\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7b",
@@ -6073,7 +6282,8 @@
               "work": "\\\\( x = -3\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7c",
@@ -6099,7 +6309,8 @@
               "work": "\\\\( x = 3\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7d",
@@ -6125,7 +6336,8 @@
               "work": "\\\\( x = 4\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7e",
@@ -6151,7 +6363,8 @@
               "work": "\\\\( x = 24\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7f",
@@ -6177,7 +6390,8 @@
               "work": "\\\\( x = 30\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7g",
@@ -6207,7 +6421,8 @@
               "work": "\\\\( x = 4\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7h",
@@ -6237,7 +6452,8 @@
               "work": "\\\\( x = 7\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7i",
@@ -6267,7 +6483,8 @@
               "work": "\\\\( x = 4\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q7j",
@@ -6297,7 +6514,8 @@
               "work": "\\\\( x = 6\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8a",
@@ -6323,7 +6541,8 @@
               "work": "\\\\( = 21\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8b",
@@ -6349,7 +6568,8 @@
               "work": "\\\\( = 31\\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8c",
@@ -6375,7 +6595,8 @@
               "work": "\\\\( = 6\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8d",
@@ -6401,7 +6622,8 @@
               "work": "\\\\( = 8\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8e",
@@ -6427,7 +6649,8 @@
               "work": "\\\\( = 2\\\\sqrt{30} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8f",
@@ -6457,7 +6680,8 @@
               "work": "\\\\( = 60\\\\sqrt{2} - 48\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8g",
@@ -6483,7 +6707,8 @@
               "work": "\\\\( = 9\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8h",
@@ -6509,7 +6734,8 @@
               "work": "\\\\( = -3\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8i",
@@ -6539,7 +6765,8 @@
               "work": "\\\\( = \\\\frac{6\\\\sqrt{2}}{2} = 3\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q8j",
@@ -6569,7 +6796,8 @@
               "work": "\\\\( = \\\\frac{3\\\\sqrt{3}}{3} = \\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9a",
@@ -6595,7 +6823,8 @@
               "work": "\\\\( = 9 \\\\times 3 = 27 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9b",
@@ -6621,7 +6850,8 @@
               "work": "\\\\( = 9 \\\\times 2 = 18 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9c",
@@ -6647,7 +6877,8 @@
               "work": "\\\\( = 4 \\\\times 5 = 20 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9d",
@@ -6673,7 +6904,8 @@
               "work": "\\\\( = 16 \\\\times 6 = 96 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9e",
@@ -6699,7 +6931,8 @@
               "work": "\\\\( = 4 \\\\times 7 = 28 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9f",
@@ -6725,7 +6958,8 @@
               "work": "\\\\( = 25 \\\\times 2 = 50 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9g",
@@ -6751,7 +6985,8 @@
               "work": "\\\\( = 9 \\\\times 5 = 45 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q9h",
@@ -6777,7 +7012,8 @@
               "work": "\\\\( = 36 \\\\times 3 = 108 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10a",
@@ -6799,7 +7035,8 @@
               "work": "\\\\(\\\\left(\\\\sqrt{2}\\\\right)^2 = 2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10b",
@@ -6821,7 +7058,8 @@
               "work": "\\\\(\\\\left(\\\\sqrt{3}\\\\right)^2 = 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10c",
@@ -6847,7 +7085,8 @@
               "work": "\\\\( = 3 \\\\times \\\\sqrt{3} = 3\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10d",
@@ -6873,7 +7112,8 @@
               "work": "\\\\( = 3 \\\\times 3 = 9 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10e",
@@ -6899,7 +7139,8 @@
               "work": "\\\\( = 9 \\\\times \\\\sqrt{3} = 9\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10f",
@@ -6925,7 +7166,8 @@
               "work": "\\\\( = (3)^3 = 27 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10g",
@@ -6951,7 +7193,8 @@
               "work": "\\\\( = 2\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10h",
@@ -6977,7 +7220,8 @@
               "work": "\\\\( = 7\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10i",
@@ -7007,7 +7251,8 @@
               "work": "\\\\( = 81\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10j",
@@ -7037,7 +7282,8 @@
               "work": "\\\\( = 24\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10k",
@@ -7067,7 +7313,8 @@
               "work": "\\\\( = 54\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10l",
@@ -7097,7 +7344,8 @@
               "work": "\\\\( = 135\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10m",
@@ -7127,7 +7375,8 @@
               "work": "\\\\( = 16\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10n",
@@ -7157,7 +7406,8 @@
               "work": "\\\\( = 189\\\\sqrt{7} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10o",
@@ -7187,7 +7437,8 @@
               "work": "\\\\( = 64 \\\\times 3^3 = 64 \\\\times 27 = 1728 \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q10p",
@@ -7217,7 +7468,8 @@
               "work": "\\\\( = 32 \\\\times (4\\\\sqrt{2}) = 128\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2c-q11a",
@@ -7243,7 +7495,8 @@
               "work": "\\\\( = \\\\sqrt{6} + \\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11b",
@@ -7269,7 +7522,8 @@
               "work": "\\\\( = \\\\sqrt{15} + \\\\sqrt{35} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11c",
@@ -7299,7 +7553,8 @@
               "work": "\\\\( = \\\\sqrt{30} - \\\\sqrt{4 \\\\times 3} = \\\\sqrt{30} - 2\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11d",
@@ -7325,7 +7580,8 @@
               "work": "\\\\( = 6\\\\sqrt{15} - 4\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11e",
@@ -7351,7 +7607,8 @@
               "work": "\\\\( = 12\\\\sqrt{6} + 15\\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11f",
@@ -7377,7 +7634,8 @@
               "work": "\\\\( = 3\\\\sqrt{10} - 3\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11g",
@@ -7407,7 +7665,8 @@
               "work": "\\\\( = 6\\\\sqrt{6} + 2(3) = 6\\\\sqrt{6} + 6 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11h",
@@ -7437,7 +7696,8 @@
               "work": "\\\\( = 6(2\\\\sqrt{3}) + 9(3\\\\sqrt{2}) = 12\\\\sqrt{3} + 27\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11i",
@@ -7467,7 +7727,8 @@
               "work": "\\\\( = 8(5\\\\sqrt{2}) - 6(2\\\\sqrt{5}) = 40\\\\sqrt{2} - 12\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11j",
@@ -7497,7 +7758,8 @@
               "work": "\\\\( = 15(2) - 3(2\\\\sqrt{3}) = 30 - 6\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11k",
@@ -7527,7 +7789,8 @@
               "work": "\\\\( = 12(3) + 8(3\\\\sqrt{2}) = 36 + 24\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11l",
@@ -7557,7 +7820,8 @@
               "work": "\\\\( = 10(2\\\\sqrt{3}) - 2(6) = 20\\\\sqrt{3} - 12 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11m",
@@ -7587,7 +7851,8 @@
               "work": "\\\\( = 9(10) - 6(2\\\\sqrt{10}) = 90 - 12\\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11n",
@@ -7617,7 +7882,8 @@
               "work": "\\\\( = 8(7\\\\sqrt{5}) - 6(7\\\\sqrt{3}) = 56\\\\sqrt{5} - 42\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q11o",
@@ -7647,7 +7913,8 @@
               "work": "\\\\( = 6(11\\\\sqrt{2}) - 10(11\\\\sqrt{3}) = 66\\\\sqrt{2} - 110\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12a",
@@ -7673,7 +7940,8 @@
               "work": "\\\\( = \\\\sqrt{6} + \\\\sqrt{14} + \\\\sqrt{15} + \\\\sqrt{35} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12b",
@@ -7699,7 +7967,8 @@
               "work": "\\\\( = \\\\sqrt{21} + \\\\sqrt{6} + \\\\sqrt{35} + \\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12c",
@@ -7725,7 +7994,8 @@
               "work": "\\\\( = \\\\sqrt{15} - \\\\sqrt{21} + \\\\sqrt{10} - \\\\sqrt{14} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12d",
@@ -7755,7 +8025,8 @@
               "work": "\\\\( = \\\\sqrt{6} - 2\\\\sqrt{3} + \\\\sqrt{15} - \\\\sqrt{30} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12e",
@@ -7785,7 +8056,8 @@
               "work": "\\\\( = 6(2) + 7\\\\sqrt{6} - 3(3) = 12 + 7\\\\sqrt{6} - 9 = 3 + 7\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12f",
@@ -7815,7 +8087,8 @@
               "work": "\\\\( = 36 - 11\\\\sqrt{6} + 4 = 40 - 11\\\\sqrt{6} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12g",
@@ -7845,7 +8118,8 @@
               "work": "\\\\( = 30 - 4\\\\sqrt{5} - 2 = 28 - 4\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12h",
@@ -7875,7 +8149,8 @@
               "work": "\\\\( = 12\\\\sqrt{6} - 3(2\\\\sqrt{3}) + 8(3\\\\sqrt{2}) - 12 = 12\\\\sqrt{6} - 6\\\\sqrt{3} + 24\\\\sqrt{2} - 12 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12i",
@@ -7905,7 +8180,8 @@
               "work": "\\\\( = 18 - 5\\\\sqrt{15} - 20 = -2 - 5\\\\sqrt{15} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12j",
@@ -7935,7 +8211,8 @@
               "work": "\\\\( = 3\\\\sqrt{15} - 6\\\\sqrt{10} + \\\\sqrt{6} - 4 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12k",
@@ -7965,7 +8242,8 @@
               "work": "\\\\( = 24 - 10\\\\sqrt{10} + 10 = 34 - 10\\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q12l",
@@ -7991,7 +8269,8 @@
               "work": "\\\\( = 2\\\\sqrt{10} - 4\\\\sqrt{15} - 6\\\\sqrt{2} + 12\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13a",
@@ -8021,7 +8300,8 @@
               "work": "\\\\( = -6(2\\\\sqrt{3}) = -12\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13b",
@@ -8051,7 +8331,8 @@
               "work": "\\\\( = -\\\\frac{2\\\\sqrt{3}}{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13c",
@@ -8081,7 +8362,8 @@
               "work": "\\\\( = 18 + 24 = 42 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13d",
@@ -8111,7 +8393,8 @@
               "work": "\\\\( = \\\\frac{4}{72} + \\\\frac{3}{72} = \\\\frac{7}{72} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13e",
@@ -8141,7 +8424,8 @@
               "work": "\\\\( = 27 \\\\times 2\\\\sqrt{2} = 54\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13f",
@@ -8171,7 +8455,8 @@
               "work": "\\\\( = (54\\\\sqrt{2}) \\\\times (24) = 1296\\\\sqrt{2} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13g",
@@ -8201,7 +8486,8 @@
               "work": "\\\\( = \\\\frac{4}{9\\\\sqrt{2}} = \\\\frac{4\\\\sqrt{2}}{9 \\\\times 2} = \\\\frac{2\\\\sqrt{2}}{9} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q13h",
@@ -8231,7 +8517,8 @@
               "work": "\\\\( = 18 - 24 = -6 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14a",
@@ -8257,7 +8544,8 @@
               "work": "\\\\( = (3 + 3) + (\\\\sqrt{5} - \\\\sqrt{5}) = 6 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14b",
@@ -8287,7 +8575,8 @@
               "work": "\\\\( = (3 + 6) + (\\\\sqrt{5} - 2\\\\sqrt{5}) = 9 - \\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14c",
@@ -8317,7 +8606,8 @@
               "work": "\\\\( = (9 + 6) + (3\\\\sqrt{5} - 2\\\\sqrt{5}) = 15 + \\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14d",
@@ -8347,7 +8637,8 @@
               "work": "\\\\( = (3 - 3) + (\\\\sqrt{5} + \\\\sqrt{5}) = 2\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14e",
@@ -8377,7 +8668,8 @@
               "work": "\\\\( = (3 - 6) + (\\\\sqrt{5} + 2\\\\sqrt{5}) = -3 + 3\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14f",
@@ -8407,7 +8699,8 @@
               "work": "\\\\( = 9 - 5 = 4 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14g",
@@ -8437,7 +8730,8 @@
               "work": "\\\\( = \\\\sqrt{4 \\\\times 3} = 2\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q14h",
@@ -8467,7 +8761,8 @@
               "work": "\\\\( = 2 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15aa",
@@ -8497,7 +8792,8 @@
               "work": "\\\\( = 6\\\\sqrt{10} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15ap",
@@ -8527,7 +8823,8 @@
               "work": "\\\\( = 6\\\\sqrt{2} + 4\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15ba",
@@ -8557,7 +8854,8 @@
               "work": "\\\\( = 6 \\\\times 5 = 30 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15bp",
@@ -8587,7 +8885,8 @@
               "work": "\\\\( = 10\\\\sqrt{5} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15ca",
@@ -8617,7 +8916,8 @@
               "work": "\\\\( = 36 - (4 \\\\times 3) = 36 - 12 = 24 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15cp",
@@ -8647,7 +8947,8 @@
               "work": "\\\\( = 2(12) = 24 \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15da",
@@ -8677,7 +8978,8 @@
               "work": "\\\\( = 6 + 2\\\\sqrt{3} + 3\\\\sqrt{3} + 3 = 9 + 5\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q15dp",
@@ -8707,7 +9009,8 @@
               "work": "\\\\( = 10 + 4\\\\sqrt{3} \\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2c-q16",
@@ -8882,7 +9185,8 @@
                   "explain": "Take the positive square root to find the side length.",
                   "work": "\\(b = \\sqrt{16} = 4\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2c-q16b",
@@ -8910,7 +9214,8 @@
                   "explain": "Simplify.",
                   "work": "\\(P = 12 + 4\\sqrt{2}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2c-q16c",
@@ -8938,7 +9243,8 @@
                   "explain": "Distribute the 2 to write the final area in exact form.",
                   "work": "\\(A = 4 + 6\\sqrt{2}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 60,
@@ -9075,7 +9381,8 @@
                   "explain": "Expand the expression to state it in exact form.",
                   "work": "\\(P = 12 + 8\\sqrt{5}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2c-q17b",
@@ -9107,7 +9414,8 @@
                   "explain": "Combine constant integers.",
                   "work": "\\(= 29 + 12\\sqrt{5}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 60,
@@ -9147,7 +9455,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2012-q31a",
@@ -9183,7 +9492,8 @@
             "examType": "Yearly",
             "grade": "10",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q31b",
@@ -9219,7 +9529,8 @@
             "examType": "Yearly",
             "grade": "10",
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "jr2012-q31c",
@@ -9259,7 +9570,8 @@
             "examType": "Yearly",
             "grade": "10",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q31d",
@@ -9295,7 +9607,8 @@
             "examType": "Yearly",
             "grade": "10",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q31e",
@@ -9338,7 +9651,8 @@
             "examType": "Yearly",
             "grade": "10",
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q31f",
@@ -9373,7 +9687,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2012-q31g",
@@ -9423,7 +9738,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2012-q31h",
@@ -9456,7 +9772,8 @@
                   "explain": "Combine both proportionalities into a single equation using a constant of proportionality \\(k\\), then simplify the two square roots into one.",
                   "work": "\\(r = k\\dfrac{\\sqrt{v}}{\\sqrt{h}} = k\\sqrt{\\dfrac{v}{h}}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2012-q31h-ii",
@@ -9495,7 +9812,8 @@
                   "explain": "Since \\(r_2\\) is exactly half of the original \\(r\\), state the percentage change.",
                   "work": "\\(\\therefore r\\) decreases by \\(50\\%\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -9538,7 +9856,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -9575,7 +9894,8 @@
               "work": "\\( = 8 + 2\\\\sqrt{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1b",
@@ -9605,7 +9925,8 @@
               "work": "\\( = 9 + 2\\\\sqrt{14} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1c",
@@ -9635,7 +9956,8 @@
               "work": "\\( = 7 - 2\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1d",
@@ -9665,7 +9987,8 @@
               "work": "\\( = 11 - 2\\\\sqrt{30} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1e",
@@ -9695,7 +10018,8 @@
               "work": "\\( = 18 + 6\\\\sqrt{2} + 1 = 19 + 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1f",
@@ -9725,7 +10049,8 @@
               "work": "\\( = 20 - 12\\\\sqrt{5} + 9 = 29 - 12\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1g",
@@ -9755,7 +10080,8 @@
               "work": "\\( = 18 + 6\\\\sqrt{6} + 3 = 21 + 6\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1h",
@@ -9785,7 +10111,8 @@
               "work": "\\( = 45 - 12\\\\sqrt{10} + 8 = 53 - 12\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1i",
@@ -9815,7 +10142,8 @@
               "work": "\\( = 27 + 12\\\\sqrt{15} + 20 = 47 + 12\\\\sqrt{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1j",
@@ -9849,7 +10177,8 @@
               "work": "\\( = 42 - 24\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1k",
@@ -9879,7 +10208,8 @@
               "work": "\\( = 37 - 20\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1l",
@@ -9909,7 +10239,8 @@
               "work": "\\( = 9 - 24\\\\sqrt{2} + 32 = 41 - 24\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1m",
@@ -9939,7 +10270,8 @@
               "work": "\\( = \\\\frac{1}{9} + \\\\frac{18}{9} - \\\\frac{2}{3}\\\\sqrt{2} = \\\\frac{19}{9} - \\\\frac{2}{3}\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q1n",
@@ -9969,7 +10301,8 @@
               "work": "\\( = \\\\frac{144}{9} + \\\\frac{2}{9} - \\\\frac{8\\\\sqrt{2}}{3} = \\\\frac{146}{9} - \\\\frac{8\\\\sqrt{2}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2a",
@@ -9999,7 +10332,8 @@
               "work": "\\( = 23 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2b",
@@ -10029,7 +10363,8 @@
               "work": "\\( = -4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2c",
@@ -10059,7 +10394,8 @@
               "work": "\\( = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2d",
@@ -10089,7 +10425,8 @@
               "work": "\\( = 4 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2e",
@@ -10119,7 +10456,8 @@
               "work": "\\( = 18 - 1 = 17 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2f",
@@ -10149,7 +10487,8 @@
               "work": "\\( = 20 - 9 = 11 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2g",
@@ -10179,7 +10518,8 @@
               "work": "\\( = 20 - 18 = 2 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2h",
@@ -10209,7 +10549,8 @@
               "work": "\\( = 28 - 27 = 1 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2i",
@@ -10239,7 +10580,8 @@
               "work": "\\( = 27 - 5 = 22 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2j",
@@ -10269,7 +10611,8 @@
               "work": "\\( = 24 - 45 = -21 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2k",
@@ -10299,7 +10642,8 @@
               "work": "\\( = \\\\frac{1}{9} - \\\\frac{2}{9} = -\\\\frac{1}{9} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q2l",
@@ -10329,7 +10673,8 @@
               "work": "\\( = \\\\frac{36}{9} - \\\\frac{5}{9} = \\\\frac{31}{9} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2d-q3a",
@@ -10359,7 +10704,8 @@
               "work": "\\( = 9 + 6\\\\sqrt{2} + 2 = 11 + 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q3b",
@@ -10389,7 +10735,8 @@
               "work": "\\( = 9 - 6\\\\sqrt{2} + 2 = 11 - 6\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q3c",
@@ -10423,7 +10770,8 @@
               "work": "\\( = 16 + 24\\\\sqrt{2} + 18 = 34 + 24\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q3d",
@@ -10457,7 +10805,8 @@
               "work": "\\( = 16 - 24\\\\sqrt{2} + 18 = 34 - 24\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q4a",
@@ -10487,7 +10836,8 @@
               "work": "\\( = 7 - 9 = -2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q4b",
@@ -10517,7 +10867,8 @@
               "work": "\\( = 2\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q4c",
@@ -10547,7 +10898,8 @@
               "work": "\\( x^2 + y^2 = (16 + 6\\\\sqrt{7}) + (16 - 6\\\\sqrt{7}) = 32 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q4d",
@@ -10577,7 +10929,8 @@
               "work": "\\( x^2 - y^2 = (6)(2\\\\sqrt{7}) = 12\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q5",
@@ -10738,7 +11091,8 @@
                   "explain": "Evaluate the final product.",
                   "work": "\\(A = 16\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2d-q5b",
@@ -10766,7 +11120,8 @@
                   "explain": "Take the square root to find the hypotenuse.",
                   "work": "\\(c = \\sqrt{64} = 8\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 60,
@@ -10798,7 +11153,8 @@
               "work": "\\( = (4 + 2) + (2\\\\sqrt{5} + 4\\\\sqrt{5}) = 6 + 6\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q6b",
@@ -10824,7 +11180,8 @@
               "work": "\\( = (4 - 2) + (2\\\\sqrt{5} - 4\\\\sqrt{5}) = 2 - 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q6c",
@@ -10854,7 +11211,8 @@
               "work": "\\( = 8 + 20\\\\sqrt{5} + 40 = 48 + 20\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q6d",
@@ -10884,7 +11242,8 @@
               "work": "\\( x^2 + y^2 = (36 + 16\\\\sqrt{5}) + (84 + 16\\\\sqrt{5}) = 120 + 32\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q6e",
@@ -10914,7 +11273,8 @@
               "work": "\\( = 12 + 12\\\\sqrt{5} - 12\\\\sqrt{5} - 12(5) = 12 - 60 = -48 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2d-q7",
@@ -11087,7 +11447,8 @@
                   "explain": "Take the square root and simplify the radical: \\(\\sqrt{112} = \\sqrt{16 \\times 7}\\).",
                   "work": "\\(c = 4\\sqrt{7}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2d-q7b",
@@ -11111,7 +11472,8 @@
                   "explain": "Simplify by combining the constants. The terms with \\(\\sqrt{5}\\) cancel out.",
                   "work": "\\(P = 12 + 4\\sqrt{7}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-2d-q7c",
@@ -11139,7 +11501,8 @@
                   "explain": "Evaluate the expression.",
                   "work": "\\(A = \\frac{1}{2} (16) = 8\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 60,
@@ -11180,7 +11543,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qBb",
@@ -11215,7 +11579,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qBc",
@@ -11250,7 +11615,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qBd",
@@ -11279,7 +11645,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qBe",
@@ -11305,7 +11672,8 @@
                   "explain": "Factor part (i): \\(\\alpha^2\\beta+\\alpha\\beta^2=\\alpha\\beta(\\alpha+\\beta)\\).",
                   "work": "\\(\\alpha\\beta(\\alpha+\\beta) = \\dfrac12\\times(-2) = -1\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qBe-2",
@@ -11325,7 +11693,8 @@
                   "explain": "Substitute into the combined fraction.",
                   "work": "\\(\\dfrac{3}{(1/2)^3} = \\dfrac{3}{1/8} = 24\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -11366,7 +11735,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qBg",
@@ -11413,7 +11783,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jrhy2008-q28",
@@ -11447,7 +11818,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q32",
@@ -11477,7 +11849,8 @@
               "explain": "Simplify the second factor.",
               "work": "\\(= (x+3y)(x^2-3xy+9y^2)\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jrhy2008-q32c",
@@ -11509,7 +11882,8 @@
                   "explain": "Substitute the two equations into the family of lines formula.",
                   "work": "3x-2y+7 + k(4x-y+1) = 0"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jrhy2008-q32c-ii",
@@ -11539,7 +11913,8 @@
                   "explain": "Simplify the equation into general form.",
                   "work": "\\begin{aligned} 2x - y + 3 &= 0 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ]
         },
@@ -11575,7 +11950,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -11608,7 +11984,8 @@
               "work": "\\( = \\\\frac{7\\\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1b",
@@ -11634,7 +12011,8 @@
               "work": "\\( = 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1c",
@@ -11660,7 +12038,8 @@
               "work": "\\( = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1d",
@@ -11686,7 +12065,8 @@
               "work": "\\( = \\\\frac{2\\\\sqrt{3}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1e",
@@ -11712,7 +12092,8 @@
               "work": "\\( = \\\\sqrt{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1f",
@@ -11738,7 +12119,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{15}}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1g",
@@ -11764,7 +12146,8 @@
               "work": "\\( = \\\\frac{2\\\\sqrt{5}}{2} = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1h",
@@ -11790,7 +12173,8 @@
               "work": "\\( = \\\\frac{3\\\\sqrt{3}}{15} = \\\\frac{\\\\sqrt{3}}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1i",
@@ -11816,7 +12200,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{10}}{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1j",
@@ -11842,7 +12227,8 @@
               "work": "\\( = \\\\frac{3\\\\sqrt{14}}{14} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1k",
@@ -11868,7 +12254,8 @@
               "work": "\\( = \\\\frac{2\\\\sqrt{35}}{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1l",
@@ -11894,7 +12281,8 @@
               "work": "\\( = \\\\frac{6\\\\sqrt{5} + 5}{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1m",
@@ -11920,7 +12308,8 @@
               "work": "\\( = \\\\frac{4\\\\sqrt{3} - 3 \\\\times 3}{6} = \\\\frac{4\\\\sqrt{3} - 9}{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1n",
@@ -11946,7 +12335,8 @@
               "work": "\\( = \\\\frac{10 + 3\\\\sqrt{10}}{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q1o",
@@ -11972,7 +12362,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{35} - 3\\\\sqrt{10}}{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2a",
@@ -12002,7 +12393,8 @@
               "work": "\\( = \\\\frac{4\\\\sqrt{5} + 15\\\\sqrt{2}}{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2b",
@@ -12032,7 +12424,8 @@
               "work": "\\( = \\\\frac{28\\\\sqrt{3} - 3\\\\sqrt{7}}{21} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2c",
@@ -12062,7 +12455,8 @@
               "work": "\\( = \\\\frac{14\\\\sqrt{6} + 15\\\\sqrt{7}}{70} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2d",
@@ -12092,7 +12486,8 @@
               "work": "\\( = \\\\frac{10\\\\sqrt{15} - \\\\sqrt{5}}{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2e",
@@ -12122,7 +12517,8 @@
               "work": "\\( = \\\\frac{9\\\\sqrt{5} - 5\\\\sqrt{3}}{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2f",
@@ -12152,7 +12548,8 @@
               "work": "\\( = \\\\frac{7\\\\sqrt{2} - 2\\\\sqrt{7}}{14} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2g",
@@ -12182,7 +12579,8 @@
               "work": "\\( = \\\\frac{5\\\\sqrt{2} - 4\\\\sqrt{5}}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q2h",
@@ -12212,7 +12610,8 @@
               "work": "\\( = \\\\frac{39\\\\sqrt{5} - 10\\\\sqrt{13}}{65} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3a",
@@ -12238,7 +12637,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{3}+1}{3-1} = \\\\frac{\\\\sqrt{3}+1}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3b",
@@ -12264,7 +12664,8 @@
               "work": "\\( = \\\\frac{5-\\\\sqrt{2}}{25-2} = \\\\frac{5-\\\\sqrt{2}}{23} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3c",
@@ -12290,7 +12691,8 @@
               "work": "\\( = \\\\frac{2(\\\\sqrt{5}-1)}{4} = \\\\frac{\\\\sqrt{5}-1}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3d",
@@ -12316,7 +12718,8 @@
               "work": "\\( = \\\\frac{4(3+\\\\sqrt{5})}{4} = 3+\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3e",
@@ -12342,7 +12745,8 @@
               "work": "\\( = \\\\frac{3(\\\\sqrt{5}+\\\\sqrt{3})}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3f",
@@ -12368,7 +12772,8 @@
               "work": "\\( = \\\\frac{6(\\\\sqrt{7}+\\\\sqrt{3})}{4} = \\\\frac{3(\\\\sqrt{7}+\\\\sqrt{3})}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3g",
@@ -12394,7 +12799,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{10}-\\\\sqrt{6}}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3h",
@@ -12420,7 +12826,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{35}-\\\\sqrt{10}}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3i",
@@ -12446,7 +12853,8 @@
               "work": "\\( = \\\\frac{4(\\\\sqrt{7}+\\\\sqrt{5})}{2} = 2(\\\\sqrt{7}+\\\\sqrt{5}) \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3j",
@@ -12472,7 +12880,8 @@
               "work": "\\( = \\\\frac{8(\\\\sqrt{11}+\\\\sqrt{7})}{4} = 2(\\\\sqrt{11}+\\\\sqrt{7}) \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3k",
@@ -12498,7 +12907,8 @@
               "work": "\\( = \\\\frac{6 \\\\times 3 + 3\\\\sqrt{6}}{12 - 2} = \\\\frac{18+3\\\\sqrt{6}}{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3l",
@@ -12524,7 +12934,8 @@
               "work": "\\( = \\\\frac{6 - 6\\\\sqrt{10}}{-18} = \\\\frac{\\\\sqrt{10}-1}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3m",
@@ -12550,7 +12961,8 @@
               "work": "\\( = \\\\frac{6\\\\sqrt{6}+6\\\\sqrt{2}}{12} = \\\\frac{\\\\sqrt{6}+\\\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3n",
@@ -12576,7 +12988,8 @@
               "work": "\\( = \\\\frac{6\\\\sqrt{6}+3\\\\sqrt{2}}{11} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3o",
@@ -12602,7 +13015,8 @@
               "work": "\\( = \\\\frac{4\\\\sqrt{10}-6\\\\sqrt{5}}{-1} = 6\\\\sqrt{5}-4\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3p",
@@ -12628,7 +13042,8 @@
               "work": "\\( = \\\\frac{12 + 3\\\\sqrt{10} + 2\\\\sqrt{10} + 5}{3} = \\\\frac{17+5\\\\sqrt{10}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3q",
@@ -12654,7 +13069,8 @@
               "work": "\\( = \\\\frac{18+7\\\\sqrt{6}}{-6} = -\\\\frac{18+7\\\\sqrt{6}}{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3r",
@@ -12680,7 +13096,8 @@
               "work": "\\( = \\\\frac{18+6\\\\sqrt{2}+1}{18-1} = \\\\frac{19+6\\\\sqrt{2}}{17} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3s",
@@ -12706,7 +13123,8 @@
               "work": "\\( = \\\\frac{25+5\\\\sqrt{21}}{20} = \\\\frac{5+\\\\sqrt{21}}{4} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q3t",
@@ -12732,7 +13150,8 @@
               "work": "\\( = \\\\frac{17-4\\\\sqrt{15}}{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2e-q4a",
@@ -12762,7 +13181,8 @@
               "work": "\\( \\\\frac{4(\\\\sqrt{5}-\\\\sqrt{3})}{8} + \\\\frac{9+\\\\sqrt{5}}{8} = \\\\frac{9+5\\\\sqrt{5}-4\\\\sqrt{3}}{8} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q4b",
@@ -12792,7 +13212,8 @@
               "work": "\\( = \\\\frac{3\\\\sqrt{3}-1}{13} + \\\\frac{13(\\\\sqrt{3}+\\\\sqrt{2})}{13} = \\\\frac{16\\\\sqrt{3}+13\\\\sqrt{2}-1}{13} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q4c",
@@ -12822,7 +13243,8 @@
               "work": "\\( = \\\\frac{66-22\\\\sqrt{6}+18+3\\\\sqrt{3}}{11} = \\\\frac{84+3\\\\sqrt{3}-22\\\\sqrt{6}}{11} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q4d",
@@ -12848,7 +13270,8 @@
               "work": "\\( = \\\\frac{9\\\\sqrt{2}-3\\\\sqrt{5}-(6\\\\sqrt{2}+2\\\\sqrt{5})}{13} = \\\\frac{3\\\\sqrt{2}-5\\\\sqrt{5}}{13} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q4e",
@@ -12874,7 +13297,8 @@
               "work": "\\( = \\\\frac{9\\\\sqrt{3}-3\\\\sqrt{2}-(3\\\\sqrt{3}+\\\\sqrt{2})}{25} = \\\\frac{6\\\\sqrt{3}-4\\\\sqrt{2}}{25} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q4f",
@@ -12904,7 +13328,8 @@
               "work": "\\( \\\\frac{7+2\\\\sqrt{10}}{3} + \\\\frac{7-2\\\\sqrt{10}}{3} = \\\\frac{14}{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q5a",
@@ -12930,7 +13355,8 @@
               "work": "\\( x + y = 3\\\\sqrt{2} + 4\\\\sqrt{2} = 7\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q5b",
@@ -12956,7 +13382,8 @@
               "work": "\\( x - y = 3\\\\sqrt{2} - 4\\\\sqrt{2} = -\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q5c",
@@ -12982,7 +13409,8 @@
               "work": "\\( xy = 3\\\\sqrt{2} \\\\times 4\\\\sqrt{2} = 12 \\\\times 2 = 24 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q5d",
@@ -13008,7 +13436,8 @@
               "work": "\\( \\\\frac{x}{y} = \\\\frac{3\\\\sqrt{2}}{4\\\\sqrt{2}} = \\\\frac{3}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q5e",
@@ -13038,7 +13467,8 @@
               "work": "\\( x^3 + y^3 = 54\\\\sqrt{2} + 128\\\\sqrt{2} = 182\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q6",
@@ -13064,7 +13494,8 @@
               "work": "\\( = \\\\frac{8(\\\\sqrt{3}+1)}{2} = 4(\\\\sqrt{3}+1) \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q7a",
@@ -13094,7 +13525,8 @@
               "work": "\\( \\\\frac{2\\\\sqrt{2}-2}{2} + \\\\frac{2-\\\\sqrt{2}}{2} = \\\\frac{\\\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q7b",
@@ -13124,7 +13556,8 @@
               "work": "\\( \\\\frac{6-4\\\\sqrt{2}}{2} + \\\\frac{3-2\\\\sqrt{2}}{2} = \\\\frac{9-6\\\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q7c",
@@ -13150,7 +13583,8 @@
               "work": "\\( = 3\\\\sqrt{2} + 4 + 3 + 2\\\\sqrt{2} = 7 + 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q7d",
@@ -13176,7 +13610,8 @@
               "work": "\\( = 6\\\\sqrt{2} + 4 \\\\times 2 + 12 + 8\\\\sqrt{2} = 20 + 14\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8a",
@@ -13202,7 +13637,8 @@
               "work": "\\( x^2 = \\\\left(\\\\frac{\\\\sqrt{5}+1}{2}\\\\right)^2 = \\\\frac{5+2\\\\sqrt{5}+1}{4} = \\\\frac{6+2\\\\sqrt{5}}{4} = \\\\frac{3+\\\\sqrt{5}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8b",
@@ -13224,7 +13660,8 @@
               "work": "\\( \\\\frac{1}{x} = \\\\frac{\\\\sqrt{5}-1}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8c",
@@ -13250,7 +13687,8 @@
               "work": "\\( = \\\\frac{3-\\\\sqrt{5}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8d",
@@ -13272,7 +13710,8 @@
               "work": "\\( x + \\\\frac{1}{x} = \\\\frac{\\\\sqrt{5}+1}{2} + \\\\frac{\\\\sqrt{5}-1}{2} = \\\\frac{2\\\\sqrt{5}}{2} = \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8e",
@@ -13294,7 +13733,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x} = \\\\frac{3+\\\\sqrt{5}}{2} + \\\\frac{\\\\sqrt{5}-1}{2} = \\\\frac{2+2\\\\sqrt{5}}{2} = 1+\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q8f",
@@ -13316,7 +13756,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x^2} = \\\\frac{3+\\\\sqrt{5}}{2} + \\\\frac{3-\\\\sqrt{5}}{2} = \\\\frac{6}{2} = 3 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9ia",
@@ -13342,7 +13783,8 @@
               "work": "\\( x^2 = \\\\left(\\\\frac{3-\\\\sqrt{3}}{2}\\\\right)^2 = \\\\frac{9-6\\\\sqrt{3}+3}{4} = \\\\frac{12-6\\\\sqrt{3}}{4} = \\\\frac{6-3\\\\sqrt{3}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9ib",
@@ -13364,7 +13806,8 @@
               "work": "\\( \\\\frac{2}{3-\\\\sqrt{3}} \\\\times \\\\frac{3+\\\\sqrt{3}}{3+\\\\sqrt{3}} = \\\\frac{2(3+\\\\sqrt{3})}{9-3} = \\\\frac{2(3+\\\\sqrt{3})}{6} = \\\\frac{3+\\\\sqrt{3}}{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9ic",
@@ -13386,7 +13829,8 @@
               "work": "\\( \\\\frac{1}{x^2} = \\\\left(\\\\frac{3+\\\\sqrt{3}}{3}\\\\right)^2 = \\\\frac{9+6\\\\sqrt{3}+3}{9} = \\\\frac{12+6\\\\sqrt{3}}{9} = \\\\frac{4+2\\\\sqrt{3}}{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9id",
@@ -13408,7 +13852,8 @@
               "work": "\\( x + \\\\frac{1}{x} = \\\\frac{3(3-\\\\sqrt{3})}{6} + \\\\frac{2(3+\\\\sqrt{3})}{6} = \\\\frac{9-3\\\\sqrt{3}+6+2\\\\sqrt{3}}{6} = \\\\frac{15-\\\\sqrt{3}}{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9ie",
@@ -13430,7 +13875,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x} = \\\\frac{3(6-3\\\\sqrt{3})}{6} + \\\\frac{2(3+\\\\sqrt{3})}{6} = \\\\frac{18-9\\\\sqrt{3}+6+2\\\\sqrt{3}}{6} = \\\\frac{24-7\\\\sqrt{3}}{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9if",
@@ -13452,7 +13898,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x^2} = \\\\frac{3(6-3\\\\sqrt{3})}{6} + \\\\frac{2(4+2\\\\sqrt{3})}{6} = \\\\frac{18-9\\\\sqrt{3}+8+4\\\\sqrt{3}}{6} = \\\\frac{26-5\\\\sqrt{3}}{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iia",
@@ -13478,7 +13925,8 @@
               "work": "\\( x^2 = (6\\\\sqrt{2}+8)^2 = 72 + 96\\\\sqrt{2} + 64 = 136+96\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iib",
@@ -13500,7 +13948,8 @@
               "work": "\\( \\\\frac{1}{6\\\\sqrt{2}+8} \\\\times \\\\frac{6\\\\sqrt{2}-8}{6\\\\sqrt{2}-8} = \\\\frac{6\\\\sqrt{2}-8}{72-64} = \\\\frac{6\\\\sqrt{2}-8}{8} = \\\\frac{3\\\\sqrt{2}-4}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iic",
@@ -13522,7 +13971,8 @@
               "work": "\\( \\\\frac{1}{x^2} = \\\\left(\\\\frac{3\\\\sqrt{2}-4}{4}\\\\right)^2 = \\\\frac{18-24\\\\sqrt{2}+16}{16} = \\\\frac{34-24\\\\sqrt{2}}{16} = \\\\frac{17-12\\\\sqrt{2}}{8} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iid",
@@ -13544,7 +13994,8 @@
               "work": "\\( x + \\\\frac{1}{x} = \\\\frac{4(6\\\\sqrt{2}+8)}{4} + \\\\frac{3\\\\sqrt{2}-4}{4} = \\\\frac{24\\\\sqrt{2}+32+3\\\\sqrt{2}-4}{4} = \\\\frac{27\\\\sqrt{2}+28}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iie",
@@ -13566,7 +14017,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x} = \\\\frac{4(136+96\\\\sqrt{2})}{4} + \\\\frac{3\\\\sqrt{2}-4}{4} = \\\\frac{544+384\\\\sqrt{2}+3\\\\sqrt{2}-4}{4} = \\\\frac{540+387\\\\sqrt{2}}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2e-q9iif",
@@ -13588,7 +14040,8 @@
               "work": "\\( x^2 + \\\\frac{1}{x^2} = \\\\frac{8(136+96\\\\sqrt{2})}{8} + \\\\frac{17-12\\\\sqrt{2}}{8} = \\\\frac{1088+768\\\\sqrt{2}+17-12\\\\sqrt{2}}{8} = \\\\frac{1105+756\\\\sqrt{2}}{8} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "sth2013-q18c",
@@ -13622,7 +14075,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -13651,7 +14105,8 @@
               "work": "\\( 3\\\\sqrt{3} + 4\\\\sqrt{3} - \\\\sqrt{3} = 6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q1b",
@@ -13673,7 +14128,8 @@
               "work": "\\( -3\\\\sqrt{5} - 4\\\\sqrt{5} + 9\\\\sqrt{5} = 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q1c",
@@ -13699,7 +14155,8 @@
               "work": "\\( = 4\\\\sqrt{2} - 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q1d",
@@ -13725,7 +14182,8 @@
               "work": "\\( = 10\\\\sqrt{3} - 3\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q2a",
@@ -13747,7 +14205,8 @@
               "work": "\\( 4\\\\sqrt{3} + 3\\\\sqrt{3} = 7\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q2b",
@@ -13769,7 +14228,8 @@
               "work": "\\( 5\\\\sqrt{2} - 2\\\\sqrt{2} = 3\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q2c",
@@ -13791,7 +14251,8 @@
               "work": "\\( 3\\\\sqrt{5} - 5\\\\sqrt{5} = -2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q2d",
@@ -13813,7 +14274,8 @@
               "work": "\\( 4\\\\sqrt{3} + 5\\\\sqrt{3} = 9\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q3a",
@@ -13835,7 +14297,8 @@
               "work": "\\( 3\\\\sqrt{2} \\\\times 4\\\\sqrt{6} = 12\\\\sqrt{12} = 12 \\\\times 2\\\\sqrt{3} = 24\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q3b",
@@ -13857,7 +14320,8 @@
               "work": "\\( 2\\\\sqrt{3} \\\\times 5\\\\sqrt{6} = 10\\\\sqrt{18} = 10 \\\\times 3\\\\sqrt{2} = 30\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q3c",
@@ -13879,7 +14343,8 @@
               "work": "\\( 5\\\\sqrt{3} \\\\times 2\\\\sqrt{7} = 10\\\\sqrt{21} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q3d",
@@ -13901,7 +14366,8 @@
               "work": "\\( 6\\\\sqrt{5} \\\\times 3\\\\sqrt{6} = 18\\\\sqrt{30} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4a",
@@ -13923,7 +14389,8 @@
               "work": "\\( \\\\sqrt{50} = \\\\sqrt{25 \\\\times 2} = 5\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4b",
@@ -13945,7 +14412,8 @@
               "work": "\\( \\\\sqrt{28} = \\\\sqrt{4 \\\\times 7} = 2\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4c",
@@ -13967,7 +14435,8 @@
               "work": "\\( \\\\sqrt{40} = \\\\sqrt{4 \\\\times 10} = 2\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4d",
@@ -13989,7 +14458,8 @@
               "work": "\\( \\\\sqrt{32} = \\\\sqrt{16 \\\\times 2} = 4\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4e",
@@ -14011,7 +14481,8 @@
               "work": "\\( \\\\sqrt{75} = \\\\sqrt{25 \\\\times 3} = 5\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4f",
@@ -14033,7 +14504,8 @@
               "work": "\\( \\\\sqrt{63} = \\\\sqrt{9 \\\\times 7} = 3\\\\sqrt{7} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4g",
@@ -14055,7 +14527,8 @@
               "work": "\\( \\\\sqrt{192} = \\\\sqrt{64 \\\\times 3} = 8\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4h",
@@ -14077,7 +14550,8 @@
               "work": "\\( \\\\sqrt{180} = \\\\sqrt{36 \\\\times 5} = 6\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4i",
@@ -14099,7 +14573,8 @@
               "work": "\\( \\\\sqrt{2592} = \\\\sqrt{1296 \\\\times 2} = 36\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4j",
@@ -14121,7 +14596,8 @@
               "work": "\\( \\\\sqrt{768} = \\\\sqrt{256 \\\\times 3} = 16\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q4k",
@@ -14143,7 +14619,8 @@
               "work": "\\( \\\\sqrt{450} = \\\\sqrt{225 \\\\times 2} = 15\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5a",
@@ -14165,7 +14642,8 @@
               "work": "\\( 2\\\\sqrt{5} + 2\\\\sqrt{5} = 4\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5b",
@@ -14187,7 +14665,8 @@
               "work": "\\( \\\\sqrt{24} + \\\\sqrt{6} = 2\\\\sqrt{6} + \\\\sqrt{6} = 3\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5c",
@@ -14209,7 +14688,8 @@
               "work": "\\( 4\\\\sqrt{3} + 2\\\\sqrt{3} = 6\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5d",
@@ -14231,7 +14711,8 @@
               "work": "\\( 3\\\\sqrt{2} + 4\\\\sqrt{2} = 7\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5e",
@@ -14253,7 +14734,8 @@
               "work": "\\( 5\\\\sqrt{7} = \\\\sqrt{5^2 \\\\times 7} = \\\\sqrt{25 \\\\times 7} = \\\\sqrt{175} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5f",
@@ -14275,7 +14757,8 @@
               "work": "\\( 8\\\\sqrt{3} = \\\\sqrt{8^2 \\\\times 3} = \\\\sqrt{64 \\\\times 3} = \\\\sqrt{192} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5g",
@@ -14297,7 +14780,8 @@
               "work": "\\( 3\\\\sqrt{10} = \\\\sqrt{3^2 \\\\times 10} = \\\\sqrt{9 \\\\times 10} = \\\\sqrt{90} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q5h",
@@ -14319,7 +14803,8 @@
               "work": "\\( 5\\\\sqrt{6} = \\\\sqrt{5^2 \\\\times 6} = \\\\sqrt{25 \\\\times 6} = \\\\sqrt{150} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6a",
@@ -14345,7 +14830,8 @@
               "work": "\\( 3\\\\sqrt{2} + 6\\\\sqrt{2} = 9\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6b",
@@ -14371,7 +14857,8 @@
               "work": "\\( \\\\sqrt{45} + \\\\sqrt{27} = 3\\\\sqrt{5} + 3\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6c",
@@ -14397,7 +14884,8 @@
               "work": "\\( 8\\\\sqrt{5} - 3(2\\\\sqrt{5}) = 8\\\\sqrt{5} - 6\\\\sqrt{5} = 2\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6d",
@@ -14423,7 +14911,8 @@
               "work": "\\( 2(3\\\\sqrt{5}) + 4(4\\\\sqrt{5}) = 6\\\\sqrt{5} + 16\\\\sqrt{5} = 22\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6e",
@@ -14449,7 +14938,8 @@
               "work": "\\( 5(2\\\\sqrt{2}) + 2(5\\\\sqrt{2}) - 4(3\\\\sqrt{2}) = 10\\\\sqrt{2} + 10\\\\sqrt{2} - 12\\\\sqrt{2} = 8\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q6f",
@@ -14475,7 +14965,8 @@
               "work": "\\( 3(3\\\\sqrt{3}) + 2(6\\\\sqrt{3}) + 5(2\\\\sqrt{3}) = 9\\\\sqrt{3} + 12\\\\sqrt{3} + 10\\\\sqrt{3} = 31\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q7a",
@@ -14501,7 +14992,8 @@
               "work": "\\( 2\\\\sqrt{3} + 3(3\\\\sqrt{3}) + 2(4\\\\sqrt{3}) - 4\\\\sqrt{3} = 2\\\\sqrt{3} + 9\\\\sqrt{3} + 8\\\\sqrt{3} - 4\\\\sqrt{3} = 15\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q7b",
@@ -14531,7 +15023,8 @@
               "work": "\\( = 12\\\\sqrt{3} - 10\\\\sqrt{3} + 6\\\\sqrt{3} - 8\\\\sqrt{3} = 0 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q7c",
@@ -14561,7 +15054,8 @@
               "work": "\\( = 5\\\\sqrt{3} + 4\\\\sqrt{3} - 6\\\\sqrt{5} + 12\\\\sqrt{5} = 9\\\\sqrt{3} + 6\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q7d",
@@ -14591,7 +15085,8 @@
               "work": "\\( = 12\\\\sqrt{2} - 5\\\\sqrt{5} + 15\\\\sqrt{2} - 8\\\\sqrt{5} = 27\\\\sqrt{2} - 13\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8a",
@@ -14617,7 +15112,8 @@
               "work": "\\( = 12\\\\sqrt{2} + 3(2) = 12\\\\sqrt{2} + 6 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8b",
@@ -14643,7 +15139,8 @@
               "work": "\\( = 8(3) - 12\\\\sqrt{3} = 24 - 12\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8c",
@@ -14669,7 +15166,8 @@
               "work": "\\( = 15(2) - 6\\\\sqrt{10} = 30 - 6\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8d",
@@ -14695,7 +15193,8 @@
               "work": "\\( = 20\\\\sqrt{7} - 12(7) = 20\\\\sqrt{7} - 84 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8e",
@@ -14721,7 +15220,8 @@
               "work": "\\( = 6\\\\sqrt{5} - 2(5) = 6\\\\sqrt{5} - 10 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q8f",
@@ -14747,7 +15247,8 @@
               "work": "\\( = 6(6) - 10\\\\sqrt{12} = 36 - 10(2\\\\sqrt{3}) = 36 - 20\\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9a",
@@ -14777,7 +15278,8 @@
               "work": "\\( = 9 - 7\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9b",
@@ -14807,7 +15309,8 @@
               "work": "\\( = 63 - 13\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9c",
@@ -14833,7 +15336,8 @@
               "work": "\\( = 6 - 3 = 3 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9d",
@@ -14859,7 +15363,8 @@
               "work": "\\( = 9(2) - 7 = 18 - 7 = 11 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9e",
@@ -14885,7 +15390,8 @@
               "work": "\\( = 25(3) - 9(2) = 75 - 18 = 57 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9f",
@@ -14911,7 +15417,8 @@
               "work": "\\( = 7 + 2\\\\sqrt{14} + 2 = 9 + 2\\\\sqrt{14} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9g",
@@ -14937,7 +15444,8 @@
               "work": "\\( = 9(2) + 6\\\\sqrt{10} + 5 = 18 + 6\\\\sqrt{10} + 5 = 23 + 6\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9h",
@@ -14963,7 +15471,8 @@
               "work": "\\( = 9(5) - 6\\\\sqrt{15} + 3 = 45 - 6\\\\sqrt{15} + 3 = 48 - 6\\\\sqrt{15} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9i",
@@ -14989,7 +15498,8 @@
               "work": "\\( = 16(2) - 3 = 32 - 3 = 29 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9j",
@@ -15015,7 +15525,8 @@
               "work": "\\( = x - y \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9k",
@@ -15041,7 +15552,8 @@
               "work": "\\( = 6 - 6\\\\sqrt{6} + 9 = 15 - 6\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q9l",
@@ -15067,7 +15579,8 @@
               "work": "\\( = 16 + 8\\\\sqrt{5} + 5 = 21 + 8\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10a",
@@ -15089,7 +15602,8 @@
               "work": "\\( \\\\frac{3}{\\\\sqrt{2}} \\\\times \\\\frac{\\\\sqrt{2}}{\\\\sqrt{2}} = \\\\frac{3\\\\sqrt{2}}{2} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10b",
@@ -15111,7 +15625,8 @@
               "work": "\\( \\\\frac{5}{3\\\\sqrt{5}} \\\\times \\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}} = \\\\frac{5\\\\sqrt{5}}{15} = \\\\frac{\\\\sqrt{5}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10c",
@@ -15133,7 +15648,8 @@
               "work": "\\( \\\\frac{6}{5\\\\sqrt{3}} \\\\times \\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}} = \\\\frac{6\\\\sqrt{3}}{15} = \\\\frac{2\\\\sqrt{3}}{5} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10d",
@@ -15155,7 +15671,8 @@
               "work": "\\( \\\\frac{8}{3\\\\sqrt{2}} \\\\times \\\\frac{\\\\sqrt{2}}{\\\\sqrt{2}} = \\\\frac{8\\\\sqrt{2}}{6} = \\\\frac{4\\\\sqrt{2}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10e",
@@ -15181,7 +15698,8 @@
               "work": "\\( = \\\\frac{4 \\\\times 3\\\\sqrt{5}}{75} = \\\\frac{12\\\\sqrt{5}}{75} = \\\\frac{4\\\\sqrt{5}}{25} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10f",
@@ -15203,7 +15721,8 @@
               "work": "\\( \\\\frac{3\\\\sqrt{5}}{6\\\\sqrt{3}} \\\\times \\\\frac{\\\\sqrt{3}}{\\\\sqrt{3}} = \\\\frac{3\\\\sqrt{15}}{18} = \\\\frac{\\\\sqrt{15}}{6} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10g",
@@ -15225,7 +15744,8 @@
               "work": "\\( \\\\frac{5\\\\sqrt{3}}{3\\\\sqrt{5}} \\\\times \\\\frac{\\\\sqrt{5}}{\\\\sqrt{5}} = \\\\frac{5\\\\sqrt{15}}{15} = \\\\frac{\\\\sqrt{15}}{3} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q10h",
@@ -15251,7 +15771,8 @@
               "work": "\\( = \\\\frac{30 \\\\times 5\\\\sqrt{2}}{120} = \\\\frac{150\\\\sqrt{2}}{120} = \\\\frac{5\\\\sqrt{2}}{4} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-2f-q11a",
@@ -15277,7 +15798,8 @@
               "work": "\\( = \\\\frac{\\\\sqrt{3}+\\\\sqrt{5}}{-2} = -\\\\frac{\\\\sqrt{3}+\\\\sqrt{5}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q11b",
@@ -15303,7 +15825,8 @@
               "work": "\\( = \\\\frac{3+\\\\sqrt{3}}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q11c",
@@ -15329,7 +15852,8 @@
               "work": "\\( = \\\\frac{4(5-\\\\sqrt{7})}{18} = \\\\frac{2(5-\\\\sqrt{7})}{9} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q11d",
@@ -15355,7 +15879,8 @@
               "work": "\\( = \\\\frac{6(4+\\\\sqrt{10})}{6} = 4+\\\\sqrt{10} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q12a",
@@ -15377,7 +15902,8 @@
               "work": "\\( \\\\frac{1}{\\\\sqrt{3}-1} \\\\times \\\\frac{\\\\sqrt{3}+1}{\\\\sqrt{3}+1} = \\\\frac{\\\\sqrt{3}+1}{3-1} = \\\\frac{\\\\sqrt{3}+1}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q12b",
@@ -15399,7 +15925,8 @@
               "work": "\\( \\\\frac{1}{\\\\sqrt{5}+2} \\\\times \\\\frac{\\\\sqrt{5}-2}{\\\\sqrt{5}-2} = \\\\frac{\\\\sqrt{5}-2}{5-4} = \\\\sqrt{5}-2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q12c",
@@ -15421,7 +15948,8 @@
               "work": "\\( \\\\frac{1}{\\\\sqrt{5}+\\\\sqrt{3}} \\\\times \\\\frac{\\\\sqrt{5}-\\\\sqrt{3}}{\\\\sqrt{5}-\\\\sqrt{3}} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{3}}{5-3} = \\\\frac{\\\\sqrt{5}-\\\\sqrt{3}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q12d",
@@ -15443,7 +15971,8 @@
               "work": "\\( \\\\frac{1}{\\\\sqrt{5}-\\\\sqrt{3}} \\\\times \\\\frac{\\\\sqrt{5}+\\\\sqrt{3}}{\\\\sqrt{5}+\\\\sqrt{3}} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{3}}{5-3} = \\\\frac{\\\\sqrt{5}+\\\\sqrt{3}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q13p",
@@ -15469,7 +15998,8 @@
               "work": "\\( p = -3 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q13q",
@@ -15495,7 +16025,8 @@
               "work": "\\( q = -2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q14a",
@@ -15521,7 +16052,8 @@
               "work": "\\( = \\\\frac{2(\\\\sqrt{3}+1) + (\\\\sqrt{3}-1)}{2} = \\\\frac{3\\\\sqrt{3}+1}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q14b",
@@ -15551,7 +16083,8 @@
               "work": "\\( \\\\frac{6+3\\\\sqrt{3}}{2} - \\\\frac{4-2\\\\sqrt{3}}{2} = \\\\frac{2+5\\\\sqrt{3}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q15a",
@@ -15577,7 +16110,8 @@
               "work": "\\( x+y = 2(3+2\\\\sqrt{2}) = 6+4\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q15b",
@@ -15599,7 +16133,8 @@
               "work": "\\( x-y = 0 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q15c",
@@ -15621,7 +16156,8 @@
               "work": "\\( xy = (3+2\\\\sqrt{2})^2 = 9 + 12\\\\sqrt{2} + 8 = 17+12\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q15d",
@@ -15643,7 +16179,8 @@
               "work": "\\( \\\\frac{x}{y} = 1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16a",
@@ -15665,7 +16202,8 @@
               "work": "\\( x+y = (3+\\\\sqrt{2})+(5-\\\\sqrt{2}) = 8 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16b",
@@ -15687,7 +16225,8 @@
               "work": "\\( x-y = (3+\\\\sqrt{2})-(5-\\\\sqrt{2}) = 3+\\\\sqrt{2}-5+\\\\sqrt{2} = -2+2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16c",
@@ -15717,7 +16256,8 @@
               "work": "\\( x^2+y^2 = (11+6\\\\sqrt{2})+(27-10\\\\sqrt{2}) = 38-4\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16d",
@@ -15743,7 +16283,8 @@
               "work": "\\( x^2-y^2 = 8 \\\\times (-2+2\\\\sqrt{2}) = -16+16\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16e",
@@ -15765,7 +16306,8 @@
               "work": "\\( \\\\frac{1}{3+\\\\sqrt{2}} \\\\times \\\\frac{3-\\\\sqrt{2}}{3-\\\\sqrt{2}} = \\\\frac{3-\\\\sqrt{2}}{9-2} = \\\\frac{3-\\\\sqrt{2}}{7} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16f",
@@ -15791,7 +16333,8 @@
               "work": "\\( = \\\\frac{23(3-\\\\sqrt{2})+7(5+\\\\sqrt{2})}{161} = \\\\frac{104-16\\\\sqrt{2}}{161} = \\\\frac{8(13-2\\\\sqrt{2})}{161} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16g",
@@ -15817,7 +16360,8 @@
               "work": "\\( = \\\\frac{2(17-15\\\\sqrt{2})}{161} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q16h",
@@ -15843,7 +16387,8 @@
               "work": "\\( = 13+2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q17",
@@ -15925,7 +16470,8 @@
                   "work": "\\(P = 12 + 4\\sqrt{2}\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-2f-q17b",
@@ -15955,7 +16501,8 @@
                   "work": "\\(= 11 + 6\\sqrt{2}\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 60
@@ -16044,7 +16591,8 @@
                   "work": "\\(l = \\frac{36 - 12\\sqrt{2}}{9 - 2} = \\frac{36 - 12\\sqrt{2}}{7}\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 60
@@ -16073,7 +16621,8 @@
               "work": "\\( x = \\\\sqrt{22} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q19b",
@@ -16099,7 +16648,8 @@
               "work": "\\( x = 3\\\\sqrt{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q19c",
@@ -16125,7 +16675,8 @@
               "work": "\\( x = \\\\sqrt{85} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q19d",
@@ -16151,7 +16702,8 @@
               "work": "\\( x = 2\\\\sqrt{14} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q19e",
@@ -16177,7 +16729,8 @@
               "work": "\\( x = \\\\frac{28(4-\\\\sqrt{2})}{16-2} = \\\\frac{28(4-\\\\sqrt{2})}{14} = 2(4-\\\\sqrt{2}) = 8-2\\\\sqrt{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q19f",
@@ -16203,7 +16756,8 @@
               "work": "\\( x = \\\\frac{15(2\\\\sqrt{3}-\\\\sqrt{5})}{(2\\\\sqrt{3})^2-(\\\\sqrt{5})^2} = \\\\frac{15(2\\\\sqrt{3}-\\\\sqrt{5})}{12-5} = \\\\frac{30\\\\sqrt{3}-15\\\\sqrt{5}}{7} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20ai",
@@ -16225,7 +16779,8 @@
               "work": "\\( k^2 = \\\\frac{(\\\\sqrt{5}+1)^2}{4} = \\\\frac{5+2\\\\sqrt{5}+1}{4} = \\\\frac{6+2\\\\sqrt{5}}{4} = \\\\frac{3+\\\\sqrt{5}}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20aii",
@@ -16247,7 +16802,8 @@
               "work": "\\( \\\\frac{2}{\\\\sqrt{5}+1} \\\\times \\\\frac{\\\\sqrt{5}-1}{\\\\sqrt{5}-1} = \\\\frac{2(\\\\sqrt{5}-1)}{5-1} = \\\\frac{2(\\\\sqrt{5}-1)}{4} = \\\\frac{\\\\sqrt{5}-1}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20aiii",
@@ -16273,7 +16829,8 @@
               "work": "\\( 1 + \\\\frac{1}{k} = k \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20aiv",
@@ -16295,7 +16852,8 @@
               "work": "\\( k^3 = \\\\frac{(\\\\sqrt{5}+1)(3+\\\\sqrt{5})}{4} = \\\\frac{3\\\\sqrt{5}+5+3+\\\\sqrt{5}}{4} = \\\\frac{8+4\\\\sqrt{5}}{4} = 2+\\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20av",
@@ -16321,7 +16879,8 @@
               "work": "\\( \\\\frac{\\\\sqrt{5}+1}{2} + \\\\frac{3-\\\\sqrt{5}}{2} = \\\\frac{4}{2} = 2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2f-q20bi",
@@ -16344,7 +16903,8 @@
               "work": "\\( \\\\therefore k^2 = k+1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-2f-q20bii",
@@ -16367,7 +16927,8 @@
               "work": "\\( k^3 = k^2 + k \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-2f-q20biii",
@@ -16390,7 +16951,8 @@
               "work": "\\( k = \\\\frac{k}{k} + \\\\frac{1}{k} = 1 + \\\\frac{1}{k} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-2f-q21",
@@ -16415,7 +16977,8 @@
               "explain": "Perimeter of a square = \\(4s\\).",
               "work": "\\( P = 4 \\times 6\\\\sqrt{2} = 24\\\\sqrt{2} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q22a",
@@ -16440,7 +17003,8 @@
               "explain": "Add and simplify.",
               "work": "\\( 3(\\\\sqrt{5}+2) + 3(\\\\sqrt{5}-2) = 6\\\\sqrt{5} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q22b",
@@ -16461,7 +17025,8 @@
               "explain": "From rationalisation: \\(\\frac{3}{\\sqrt{5}-2} = 3(\\sqrt{5}+2)\\) and \\(\\frac{3}{\\sqrt{5}+2} = 3(\\sqrt{5}-2)\\). Subtract.",
               "work": "\\( 3(\\\\sqrt{5}+2) - 3(\\\\sqrt{5}-2) = 3\\\\sqrt{5}+6-3\\\\sqrt{5}+6 = 12 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q22c",
@@ -16482,7 +17047,8 @@
               "explain": "Multiply the fractions and apply difference of squares in the denominator.",
               "work": "\\( \\\\frac{3}{\\\\sqrt{5}-2} \\\\times \\\\frac{3}{\\\\sqrt{5}+2} = \\\\frac{9}{(\\\\sqrt{5})^2-4} = \\\\frac{9}{1} = 9 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q22d",
@@ -16507,7 +17073,8 @@
               "explain": "Rationalise using conjugate \\((\\sqrt{5}+2)\\).",
               "work": "\\( = \\\\frac{(\\\\sqrt{5}+2)^2}{5-4} = (\\\\sqrt{5}+2)^2 = 5+4\\\\sqrt{5}+4 = 9+4\\\\sqrt{5} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q23",
@@ -16532,7 +17099,8 @@
               "explain": "For the diagram where the length is \\(\\frac{4}{3\\sqrt{3}}\\), the width is:",
               "work": "\\( \\\\text{width} = \\\\frac{24}{\\\\frac{4}{3\\\\sqrt{3}}} = 24 \\\\times \\\\frac{3\\\\sqrt{3}}{4} = 18\\\\sqrt{3} \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q24a",
@@ -16553,7 +17121,8 @@
               "explain": "Add \\(x\\) and \\(y\\) directly.",
               "work": "\\( x+y = (4+2\\\\sqrt{3})+(4-2\\\\sqrt{3}) = 8 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q24b",
@@ -16574,7 +17143,8 @@
               "explain": "Use difference of squares: \\((a+b)(a-b) = a^2 - b^2\\).",
               "work": "\\( xy = (4)^2 - (2\\\\sqrt{3})^2 = 16 - 12 = 4 \\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2f-q24c",
@@ -16595,7 +17165,8 @@
               "explain": "From the previous parts, \\(xy = 4\\). So \\(\\sqrt{xy} = \\sqrt{4} = 2\\).",
               "work": "\\( \\\\sqrt{xy} = \\\\sqrt{4} = 2 \\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -16621,7 +17192,8 @@
               "work": "\\( = a + 2\\\\sqrt{ab} + b = a + b + 2\\\\sqrt{ab} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-2g-q1bi",
@@ -16651,7 +17223,8 @@
               "work": "\\( \\\\sqrt{14 + 2\\\\sqrt{33}} = \\\\sqrt{(\\\\sqrt{11} + \\\\sqrt{3})^2} = \\\\sqrt{11} + \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q1bii",
@@ -16677,7 +17250,8 @@
               "work": "\\( \\\\sqrt{14 - 2\\\\sqrt{33}} = \\\\sqrt{(\\\\sqrt{11} - \\\\sqrt{3})^2} = \\\\sqrt{11} - \\\\sqrt{3} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q1biii",
@@ -16707,7 +17281,8 @@
               "work": "\\( \\\\sqrt{12 + 2\\\\sqrt{35}} = \\\\sqrt{(\\\\sqrt{7} + \\\\sqrt{5})^2} = \\\\sqrt{7} + \\\\sqrt{5} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q2a",
@@ -16733,7 +17308,8 @@
               "work": "\\( = (x+y) - x^2 = x + y - x^2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q2b",
@@ -16763,7 +17339,8 @@
               "work": "\\( = 9 + 9y^2 - 4 = 5 + 9y^2 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q2c",
@@ -16793,7 +17370,8 @@
               "work": "\\( = 2 + a - 2 + a = 2a \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q2d",
@@ -16819,7 +17397,8 @@
               "work": "\\( \\\\frac{(\\\\sqrt{x} - \\\\sqrt{y})(\\\\sqrt{x} + \\\\sqrt{y})}{\\\\sqrt{x} - \\\\sqrt{y}} = \\\\sqrt{x} + \\\\sqrt{y} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q2e",
@@ -16849,7 +17428,8 @@
               "work": "\\( = 2x + 2\\\\sqrt{x^2 - y^2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3a",
@@ -16883,7 +17463,8 @@
               "work": "\\( \\\\sqrt{x} = \\\\frac{3}{2} \\\\implies x = \\\\left(\\\\frac{3}{2}\\\\right)^2 = \\\\frac{9}{4} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3b",
@@ -16917,7 +17498,8 @@
               "work": "\\( 9 = x - 7 \\\\implies x = 16 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3c",
@@ -16959,7 +17541,8 @@
               "work": "\\( x = 3 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3d",
@@ -16993,7 +17576,8 @@
               "work": "\\( x = 9 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3e",
@@ -17027,7 +17611,8 @@
               "work": "\\( x = 16 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q3f",
@@ -17061,7 +17646,8 @@
               "work": "\\( 36 = 12x \\\\implies x = 3 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q4",
@@ -17091,7 +17677,8 @@
               "work": "\\( = a - 4\\\\sqrt{a} + 6 - \\\\frac{4}{\\\\sqrt{a}} + \\\\frac{1}{a} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q5",
@@ -17113,7 +17700,8 @@
               "work": "\\( \\\\frac{1}{\\\\sqrt[3]{6}} \\\\times \\\\frac{\\\\sqrt[3]{36}}{\\\\sqrt[3]{36}} = \\\\frac{\\\\sqrt[3]{36}}{6} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q6",
@@ -17143,7 +17731,8 @@
               "work": "\\( = \\\\frac{1 - \\\\sqrt{3} - \\\\sqrt{2} + \\\\sqrt{6}}{(1-2)(1-3)} = \\\\frac{1 - \\\\sqrt{2} - \\\\sqrt{3} + \\\\sqrt{6}}{(-1)(-2)} = \\\\frac{\\\\sqrt{6} - \\\\sqrt{2} - \\\\sqrt{3} + 1}{2} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q7",
@@ -17177,7 +17766,8 @@
               "work": "\\( = \\\\frac{3\\\\sqrt{5} + 5\\\\sqrt{3} - 2\\\\sqrt{30}}{30} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q8",
@@ -17207,7 +17797,8 @@
               "work": "\\( = \\\\frac{(x^2+xy+y^2)(x+y-\\\\sqrt{xy})}{x^2+xy+y^2} = x - \\\\sqrt{xy} + y \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q9a",
@@ -17234,7 +17825,8 @@
               "work": "\\sqrt{\\frac{216}{35}} = \\sqrt{\\frac{36 \\times 6}{35}} = 6\\sqrt{\\frac{6}{35}}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y10-2g-q9b",
@@ -17261,7 +17853,8 @@
               "work": "\\text{Mixed number} = n\\frac{n}{n^2 - 1} \\quad (n > 1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-2g-q10",
@@ -17286,7 +17879,8 @@
               "explain": "Apply Pythagoras theorem and coordinate ratios to express height of point C.",
               "work": "h_C = 3\\sqrt{2}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q11",
@@ -17315,7 +17909,8 @@
               "explain": "Sum the terms and cancel out the intermediate values (telescoping series).",
               "work": "\\dfrac{\\sqrt{11} - \\sqrt{3}}{2}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q12",
@@ -17344,7 +17939,8 @@
               "explain": "Simplify the denominators and rationalise the resulting fractions to find the answer.",
               "work": "\\dfrac{\\sqrt{2}+1}{4+\\sqrt{2}} - \\dfrac{\\sqrt{2}-1}{4-\\sqrt{2}} = \\dfrac{2}{7}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q13a",
@@ -17373,7 +17969,8 @@
               "explain": "Evaluate the sum value.",
               "work": "444 + 9 = 453"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q13b",
@@ -17402,7 +17999,8 @@
               "explain": "Perform the final calculation.",
               "work": "1078 + 84 = 1162"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q14ai",
@@ -17430,7 +18028,8 @@
               "explain": "Evaluate the square root to find the exact length of diagonal AC.",
               "work": "AC = \\sqrt{36 + 9} = \\sqrt{45} = 3\\sqrt{5}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q14aii",
@@ -17458,7 +18057,8 @@
               "explain": "Substitute the values to find the exact length of EC.",
               "work": "EC = 3\\sqrt{5} - 3"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q14aiii",
@@ -17497,7 +18097,8 @@
           ],
           "alsoIn": [
             "exam:year10ch2g"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q14aiv",
@@ -17533,7 +18134,8 @@
               "explain": "Finally, calculate the exact length of GC. Since the ratio \\\\( \\\\frac{CG}{CE} = \\\\frac{1}{2} \\\\), GC is exactly half of CE.",
               "work": "\\\\( GC = \\\\frac{CE}{2} = \\\\frac{3\\\\sqrt{5} - 3}{2} \\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-2g-q14b",
@@ -17564,7 +18166,8 @@
               "explain": "Simplify the equation to find the final numerical value.",
               "work": "\\dfrac{9(6 - 2\\sqrt{5})}{4} + \\dfrac{9\\sqrt{5}-9}{2} = \\dfrac{54-18\\sqrt{5}}{4} + \\dfrac{18\\sqrt{5}-18}{4} = \\dfrac{36}{4} = 9"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

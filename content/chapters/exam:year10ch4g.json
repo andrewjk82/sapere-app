@@ -31,7 +31,8 @@
               "work": "M = (4, 3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-4g-q2b",
@@ -55,7 +56,8 @@
               "work": "M = (4, 3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-4g-q2c",
@@ -73,7 +75,8 @@
               "work": "M = (0, 3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-4g-q2d",
@@ -91,7 +94,8 @@
               "work": "M = (-2, 1)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         }
       ]
     }

@@ -36,7 +36,8 @@
               "work": "\\(Compare terms: A = 12 and B = 35.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7b",
@@ -65,7 +66,8 @@
               "work": "\\(Find B: B = 6A = 6 \\times 3 = 18.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7c",
@@ -94,7 +96,8 @@
               "work": "\\(Find B: -B = -4A = -24 \\implies B = 24.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7d",
@@ -123,7 +126,8 @@
               "work": "\\(Find B: B = 3A = 6.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7e",
@@ -152,7 +156,8 @@
               "work": "\\(Find B: B = 4A + 1 = 4(3) + 1 = 13.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7f",
@@ -181,7 +186,8 @@
               "work": "\\(Find B: B = 5A - 3 = 5(2) - 3 = 7.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7g",
@@ -210,7 +216,8 @@
               "work": "\\(Compare linear coefficients: 5A + 2B = 12 \\implies 10 + 2B = 12 \\implies B = 1.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-1e-q7h",
@@ -239,7 +246,8 @@
               "work": "\\(We have (Ax-3)(Bx+2) = ABx^2 + (2A-3B)x - 6.\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

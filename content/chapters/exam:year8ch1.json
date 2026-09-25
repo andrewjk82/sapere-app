@@ -40,7 +40,8 @@
               "work": "\\(2C = 104874 \\implies C = 52437\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

@@ -34,7 +34,8 @@
               "explain": "Combine to state the new coordinates.",
               "work": "\\((6,2)\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-2ds-1-q2",
@@ -54,7 +55,8 @@
               "explain": "Reflecting in the \\(y\\)-axis negates the \\(x\\)-coordinate and keeps \\(y\\) the same.",
               "work": "\\((2,5) \\to (-2,5)\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -81,7 +83,8 @@
               "explain": "Multiply both dimensions by the scale factor, 2.",
               "work": "\\(3\\times2=6, \\quad 4\\times2=8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-2ds-2-q2",
@@ -105,7 +108,8 @@
               "explain": "Multiply the original area by this factor.",
               "work": "\\(12\\times9=108\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -143,7 +147,8 @@
               "explain": "Add the two rectangle areas.",
               "work": "\\(48+20=68\\text{ units}^2\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -177,7 +182,8 @@
               "explain": "Substitute the base (8 cm) and the perpendicular height (5 cm).",
               "work": "\\(\\text{Area}=8\\times5=40\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -211,7 +217,8 @@
               "explain": "Substitute the base (10 cm) and height (6 cm).",
               "work": "\\(\\text{Area}=\\dfrac12\\times10\\times6=30\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-2ds-5-q2",
@@ -235,7 +242,8 @@
               "explain": "Evaluate.",
               "work": "\\(=30\\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     }

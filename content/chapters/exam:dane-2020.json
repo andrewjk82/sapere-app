@@ -50,7 +50,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-mc2",
@@ -94,7 +95,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-mc3",
@@ -138,7 +140,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc4",
@@ -182,7 +185,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc5",
@@ -226,7 +230,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc6",
@@ -298,7 +303,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc7",
@@ -342,7 +348,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc8",
@@ -386,7 +393,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-mc9",
@@ -430,7 +438,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-mc10",
@@ -529,7 +538,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q11",
@@ -605,7 +615,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-q12a",
@@ -681,7 +692,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-q12b",
@@ -725,7 +737,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-q13a",
@@ -814,7 +827,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q13b",
@@ -858,7 +872,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q14a",
@@ -934,7 +949,8 @@
           },
           "alsoIn": [
             "exam:year11ch1e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q14b",
@@ -978,7 +994,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q15",
@@ -1022,7 +1039,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q16",
@@ -1066,7 +1084,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q17a",
@@ -1107,7 +1126,8 @@
           "dna": {
             "dnaId": "PROB-COND-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "dane2020-q17b",
@@ -1152,7 +1172,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q18",
@@ -1196,7 +1217,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q19a",
@@ -1240,7 +1262,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q19b",
@@ -1284,7 +1307,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q20",
@@ -1328,7 +1352,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q21a",
@@ -1376,7 +1401,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q21b",
@@ -1437,7 +1463,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q22a",
@@ -1481,7 +1508,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q22b",
@@ -1525,7 +1553,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q23",
@@ -1569,7 +1598,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q24a",
@@ -1613,7 +1643,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-q24b",
@@ -1657,7 +1688,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q25a",
@@ -1701,7 +1733,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q25b",
@@ -1745,7 +1778,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q26",
@@ -1789,7 +1823,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q27",
@@ -1886,7 +1921,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020-q28",
@@ -1930,7 +1966,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q29a",
@@ -2006,7 +2043,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q29b",
@@ -2050,7 +2088,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q30",
@@ -2126,7 +2165,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q31",
@@ -2173,7 +2213,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q32a",
@@ -2213,7 +2254,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q32b",
@@ -2257,7 +2299,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020-q33a",
@@ -2329,7 +2372,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q33b",
@@ -2373,7 +2417,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q34a",
@@ -2470,7 +2515,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q34b",
@@ -2595,7 +2641,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q35",
@@ -2635,7 +2682,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q36a",
@@ -2679,7 +2727,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q36b",
@@ -2723,7 +2772,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q37",
@@ -2846,7 +2896,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q38a",
@@ -2890,7 +2941,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q38b",
@@ -2934,7 +2986,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020-q39a",
@@ -3063,7 +3116,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020-q39b",
@@ -3107,7 +3161,8 @@
           },
           "alsoIn": [
             "exam:danebank2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-mc1",
@@ -3147,7 +3202,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-mc2",
@@ -3188,7 +3244,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-mc3",
@@ -3228,7 +3285,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc4",
@@ -3268,7 +3326,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc5",
@@ -3309,7 +3368,8 @@
           "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc6",
@@ -3377,7 +3437,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc7",
@@ -3417,7 +3478,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc8",
@@ -3453,7 +3515,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-mc9",
@@ -3494,7 +3557,8 @@
           "hscType": "data-analysis",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-mc10",
@@ -3534,7 +3598,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q11",
@@ -3606,7 +3671,8 @@
           "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q12a",
@@ -3678,7 +3744,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-q12b",
@@ -3719,7 +3786,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-q13a",
@@ -3857,7 +3925,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q13b",
@@ -3897,7 +3966,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q14a",
@@ -3969,7 +4039,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:year11ch1e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q14b",
@@ -4009,7 +4080,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q15",
@@ -4050,7 +4122,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q16",
@@ -4090,7 +4163,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q17a",
@@ -4127,7 +4201,8 @@
           "meta": {
             "examPaper": "dane-2020"
           },
-          "hscType": "conditional-probability"
+          "hscType": "conditional-probability",
+          "xp": 2
         },
         {
           "id": "dane2020s-q17b",
@@ -4164,7 +4239,8 @@
           "meta": {
             "examPaper": "dane-2020"
           },
-          "hscType": "conditional-probability"
+          "hscType": "conditional-probability",
+          "xp": 2
         },
         {
           "id": "dane2020s-q18",
@@ -4205,7 +4281,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q19a",
@@ -4245,7 +4322,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q19b",
@@ -4286,7 +4364,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q20",
@@ -4326,7 +4405,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q21a",
@@ -4370,7 +4450,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q22a",
@@ -4410,7 +4491,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q22b",
@@ -4452,7 +4534,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q23",
@@ -4492,7 +4575,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q24a",
@@ -4532,7 +4616,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-q24b",
@@ -4573,7 +4658,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q25a",
@@ -4613,7 +4699,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q25b",
@@ -4654,7 +4741,8 @@
           "hscType": "bivariate-statistics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q26",
@@ -4694,7 +4782,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q27",
@@ -4734,7 +4823,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dane2020s-q28",
@@ -4774,7 +4864,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q29a",
@@ -4846,7 +4937,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q29b",
@@ -4886,7 +4978,8 @@
           "hscType": "optimisation",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q30",
@@ -4958,7 +5051,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q31",
@@ -4998,7 +5092,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q32a",
@@ -5034,7 +5129,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q32b",
@@ -5074,7 +5170,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "dane2020s-q33a",
@@ -5142,7 +5239,8 @@
           "hscType": "areas-and-volumes",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q33b",
@@ -5183,7 +5281,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q34a",
@@ -5223,7 +5322,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q34b",
@@ -5263,7 +5363,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q35",
@@ -5303,7 +5404,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q36a",
@@ -5343,7 +5445,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q36b",
@@ -5383,7 +5486,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q37",
@@ -5423,7 +5527,8 @@
           "hscType": "financial-mathematics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q38a",
@@ -5463,7 +5568,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q38b",
@@ -5504,7 +5610,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dane2020s-q39a",
@@ -5576,7 +5683,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "dane2020s-q39b",
@@ -5617,7 +5725,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:danebank2020similar"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

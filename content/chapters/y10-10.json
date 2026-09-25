@@ -36,7 +36,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -77,7 +78,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q15",
@@ -120,7 +122,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 3
         }
       ]
     }

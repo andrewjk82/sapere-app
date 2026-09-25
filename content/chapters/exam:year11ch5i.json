@@ -88,7 +88,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q4a",
@@ -144,7 +145,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q4b",
@@ -187,7 +189,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q4c",
@@ -230,7 +233,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q4d",
@@ -273,7 +277,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q5a",
@@ -342,7 +347,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q5c",
@@ -398,7 +404,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q5d",
@@ -467,7 +474,8 @@
               }
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q6a",
@@ -510,7 +518,8 @@
               "work": "If we take any point \\((x, y)\\) on the graph (e.g., in the top right) and rotate it \\(180^{\\circ}\\) around the origin \\((0,0)\\), it perfectly lands on a corresponding point \\((-x, -y)\\) on the bottom left.\n\nThis means \\(f(-x) = -f(x)\\). Therefore, the function is **Odd**."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q6c",
@@ -549,7 +558,8 @@
               "work": "If you fold the graph along the y-axis, the left half is a perfect mirror image of the right half. Every point \\((x, y)\\) has a corresponding point \\((-x, y)\\). \n\nThis means \\(f(-x) = f(x)\\). Therefore, the function is **Even**."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-5i-q7a",
@@ -629,7 +639,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q7b",
@@ -709,7 +720,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q8a",
@@ -756,7 +768,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q8b",
@@ -803,7 +816,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q8c",
@@ -850,7 +864,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q9a",
@@ -914,7 +929,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q9b",
@@ -978,7 +994,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q9c",
@@ -1042,7 +1059,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q10d",
@@ -1072,7 +1090,8 @@
               "work": "x = -\\frac{3}{5}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q11a",
@@ -1106,7 +1125,8 @@
               "work": "\\therefore \\text{Neither}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q11b",
@@ -1140,7 +1160,8 @@
               "work": "\\therefore \\text{Even}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q11c",
@@ -1174,7 +1195,8 @@
               "work": "\\therefore \\text{Odd}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q11d",
@@ -1208,7 +1230,8 @@
               "work": "\\therefore \\text{Odd}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q12a",
@@ -1258,7 +1281,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q13a",
@@ -1292,7 +1316,8 @@
               "work": "\\text{Centre } (0, 2), \\text{ Radius } 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q13b",
@@ -1326,7 +1351,8 @@
               "work": "\\text{Centre } (-4, 0), \\text{ Radius } 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q13c",
@@ -1360,7 +1386,8 @@
               "work": "\\text{Centre } (3, -4), \\text{ Radius } 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q13d",
@@ -1394,7 +1421,8 @@
               "work": "\\text{Centre } (5, -6), \\text{ Radius } 9"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15a",
@@ -1424,7 +1452,8 @@
               "work": "f(2) = 4(2) - 3 = 8 - 3 = 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15b",
@@ -1454,7 +1483,8 @@
               "work": "g(-3) = (-3)^2 + 2 = 9 + 2 = 11"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15c",
@@ -1484,7 +1514,8 @@
               "work": "f(18) = 4(18) - 3 = 72 - 3 = 69"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15d",
@@ -1514,7 +1545,8 @@
               "work": "g(13) = 13^2 + 2 = 169 + 2 = 171"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15e",
@@ -1544,7 +1576,8 @@
               "work": "4(a^2) + 4(2) - 3 = 4a^2 + 8 - 3 = 4a^2 + 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q15f",
@@ -1578,7 +1611,8 @@
               "work": "16a^2 - 24a + 11"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q16ai",
@@ -1612,7 +1646,8 @@
               "work": "\\text{Domain } x \\ge 0, \\text{ Range } y \\ge -2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q17a",
@@ -1666,7 +1701,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q18a",
@@ -1700,7 +1736,8 @@
               "work": "\\text{Horizontal dilation by a scale factor of } 3."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19a",
@@ -1738,7 +1775,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19d",
@@ -1776,7 +1814,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19e",
@@ -1818,7 +1857,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19f",
@@ -1856,7 +1896,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19h",
@@ -1894,7 +1935,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19i",
@@ -1932,7 +1974,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19k",
@@ -1970,7 +2013,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19l",
@@ -2008,7 +2052,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19m",
@@ -2046,7 +2091,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19n",
@@ -2084,7 +2130,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q19p",
@@ -2126,7 +2173,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-5i-q20",
@@ -2151,7 +2199,8 @@
               "explain": "Test the reflection in the y-axis and x-axis.",
               "work": "1. Let \\(y = f(x)\\).\n2. Reflection in the y-axis maps \\(x \\to -x\\), resulting in \\(y = f(-x)\\).\n3. Reflection in the x-axis maps \\(y \\to -y\\), resulting in \\(y = -f(-x)\\).\n\nIf we reverse the order:\n1. Reflection in x-axis gives \\(y = -f(x)\\).\n2. Reflection in y-axis gives \\(y = -f(-x)\\).\n\nBoth orders produce \\(y = -f(-x)\\). Therefore, these transformations commute."
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11a-5i-q21b",
@@ -2245,7 +2294,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

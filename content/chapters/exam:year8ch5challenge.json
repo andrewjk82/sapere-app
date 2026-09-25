@@ -43,7 +43,8 @@
               "work": "\\alpha = 140"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 3
         },
         {
           "id": "y8-5i-q1c_beta",
@@ -72,7 +73,8 @@
               "work": "\\beta = 140"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 3
         }
       ]
     }

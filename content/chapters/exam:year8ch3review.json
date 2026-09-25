@@ -39,7 +39,8 @@
               "explain": "11 is prime. Write as product.",
               "work": "\\\\(330 = 2 \\\\times 3 \\\\times 5 \\\\times 11\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q10b",
@@ -71,7 +72,8 @@
               "explain": "Collect all factors using exponents.",
               "work": "\\\\(2520 = 2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-3f-q10d",
@@ -103,7 +105,8 @@
               "explain": "13 is prime. Write in index form.",
               "work": "\\\\(1170 = 2 \\\\times 3^2 \\\\times 5 \\\\times 13\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

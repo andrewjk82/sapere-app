@@ -38,7 +38,8 @@
               "explain": "Add the digits in the units column: 6 + 2 = 8. Place the decimal point in the same relative position.",
               "work": "\\\\(6 + 2 = 8 \\\\implies 8.88\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-q6b",
@@ -70,7 +71,8 @@
               "explain": "Add the units column, including the carry: 4 + 1 + 1 = 6.",
               "work": "\\\\(4 + 1 + 1 = 6 \\\\implies 6.27\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-q6c",
@@ -102,7 +104,8 @@
               "explain": "Add the units column: 5 + 8 + 1 (carry) = 14.",
               "work": "\\\\(5 + 8 + 1 = 14 \\\\implies 14.43\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-q7a",
@@ -130,7 +133,8 @@
               "explain": "Subtract the units column: 3 - 2 = 1. Insert the decimal point in the correct vertical position.",
               "work": "\\\\(3 - 2 = 1 \\\\implies 1.4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-q7b",
@@ -158,7 +162,8 @@
               "explain": "Subtract the units column (now 7 - 3): 7 - 3 = 4.",
               "work": "\\\\(7 - 3 = 4 \\\\implies 4.8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-q7c",
@@ -186,7 +191,8 @@
               "explain": "Subtract the units digits (now 8 - 4): 8 - 4 = 4.",
               "work": "\\\\(8 - 4 = 4 \\\\implies 4.5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-ar-2-l2-q7a",
@@ -214,7 +220,8 @@
               "explain": "Add the units column, including the carry: 6 + 2 + 1 = 9. Finally, add the tens column: 8 + 1 = 9.",
               "work": "\\\\(86.72 + 12.45 = 99.17\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q7b",
@@ -242,7 +249,8 @@
               "explain": "Add units: 6 + 2 + 1 (carry) = 9. Add tens: 9 + 3 = 12.",
               "work": "\\\\(96.75 + 32.48 = 129.23\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q7c",
@@ -270,7 +278,8 @@
               "explain": "Add units: 5 + 7 = 12 (write 2, carry 1). Add tens: 3 + 1 + 1 (carry) = 5. Add hundreds: 1.",
               "work": "\\\\(135.06 + 17.29 = 152.35\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q8a",
@@ -298,7 +307,8 @@
               "explain": "Subtract units: 6 - 1 = 5. Subtract tens: 1 - 0 = 1.",
               "work": "\\\\(16.79 - 1.43 = 15.36\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q8b",
@@ -326,7 +336,8 @@
               "explain": "Subtract whole numbers: 34 - 7 = 27.",
               "work": "\\\\(34.65 - 7.18 = 27.47\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q8c",
@@ -354,7 +365,8 @@
               "explain": "Subtract units (3 - 7 requires borrowing from tens, so 13 - 7 = 6). Subtract tens: 5 - 1 = 4.",
               "work": "\\\\(64.29 - 17.58 = 46.71\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q11a",
@@ -386,7 +398,8 @@
               "explain": "Add whole dollars: 8 + 16 + 0 + 1 (carry) = 25.",
               "work": "\\\\(\\$8.35 + \\$16.72 + \\$0.56 = \\$25.63\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l2-q11b",
@@ -414,7 +427,8 @@
               "explain": "Subtract dollars column: 3 - 9 requires borrowing (13 - 9 = 4). 7 - 6 = 1. 1 - 0 = 1.",
               "work": "\\\\(\\$183.47 - \\$69.18 = \\$114.29\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q5a",
@@ -446,7 +460,8 @@
               "explain": "Add units: 6 + 3 + 8 + 1 (carry) = 18 (write 8, carry 1). Add tens: 1 + 5 + 1 (carry) = 7.",
               "work": "\\\\(16.73 + 53.21 + 8.97 = 78.91\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q5b",
@@ -478,7 +493,8 @@
               "explain": "Add units: 5 + 4 + 7 + 2 (carry) = 18 (write 8, carry 1). Add tens: 3 + 2 + 1 (carry) = 6.",
               "work": "\\\\(35.90 + 4.86 + 27.59 = 68.35\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q5c",
@@ -510,7 +526,8 @@
               "explain": "Add units: 7 + 9 + 8 + 1 (carry) = 25 (write 5, carry 2). Add tens: 0 + 4 + 2 (carry) = 6. Add hundreds: 1.",
               "work": "\\\\(107.31 + 9.562 + 48.37 = 165.242\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l3-q6a",
@@ -542,7 +559,8 @@
               "explain": "Subtract units (7 - 4 = 3) and tens (6 - 1 = 5).",
               "work": "\\\\(68.35 - 14.93 = 53.42\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q6b",
@@ -570,7 +588,8 @@
               "explain": "Subtract units: 7 - 3 = 4. Subtract tens (borrowing from hundreds): 15 - 6 = 9. Hundreds: 2.",
               "work": "\\\\(357.21 - 63.18 = 294.03\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q6c",
@@ -598,7 +617,8 @@
               "explain": "Borrow from tens (9 becomes 8) to make 16 units. Subtract: 16 - 8 = 8. Subtract tens: 8 - 3 = 5. Subtract hundreds: 4 - 1 = 3.",
               "work": "\\\\(496.72 - 138.15 = 358.57\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l3-q12a",
@@ -634,7 +654,8 @@
               "explain": "Add units: 2 + 6 + 0 + 5 + 1 (carry) = 14 (write 4, carry 1). Add tens: 3 + 7 + 0 + 1 + 1 (carry) = 12 (write 2, carry 1). Add hundreds: 1 + 1 (carry) = 2.",
               "work": "\\\\(\\$132.00 + \\$76.08 + \\$0.72 + \\$15.94 = \\$224.74\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l3-q12b",
@@ -662,7 +683,8 @@
               "explain": "Subtract columns from right to left: 10 - 2 = 8, 9 - 7 = 2, 9 - 6 = 3, 9 - 1 = 8.",
               "work": "\\\\(\\$100.00 - \\$16.72 = \\$83.28\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l4-q3a",
@@ -694,7 +716,8 @@
               "explain": "Add the units column: 8 + 4 + 8 + 0 + 2 (carry) = 22 (write 2, carry 2). Add tens: 2 + 2 (carry) = 4. Add hundreds: 1.",
               "work": "\\\\(\\$8.60 + \\$4.98 + \\$128.37 + \\$0.70 = \\$142.65\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l4-q3b",
@@ -726,7 +749,8 @@
               "explain": "Add units: 9 + 0 + 0 + 9 + 1 (carry) = 19 (write 9, carry 1). Add tens: 6 + 7 + 1 (carry) = 14 (write 4, carry 1). Add hundreds: 3 + 1 (carry) = 4.",
               "work": "\\\\(\\$369.14 + \\$70.32 + \\$0.15 + \\$9.65 = \\$449.26\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l4-q3c",
@@ -758,7 +782,8 @@
               "explain": "Add units: 3 + 0 + 5 + 8 + 1 (carry) = 17 (write 7, carry 1). Add tens: 9 + 0 + 0 + 4 + 1 (carry) = 14 (write 4, carry 1). Add hundreds: 7 + 2 + 1 (carry) = 10.",
               "work": "\\\\(\\$793.58 + \\$0.16 + \\$205.07 + \\$48.35 = \\$1047.16\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l4-q4a",
@@ -786,7 +811,8 @@
               "explain": "Subtract units (1 - 6 requires borrowing, so 11 - 6 = 5). Subtract tens: 6 - 1 = 5.",
               "work": "\\\\(\\$72.35 - \\$16.47 = \\$55.88\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l4-q4b",
@@ -814,7 +840,8 @@
               "explain": "Subtract whole dollars: 130 - 48 = 82.",
               "work": "\\\\(\\$130.47 - \\$48.29 = \\$82.18\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l4-q4c",
@@ -842,7 +869,8 @@
               "explain": "Borrow where needed. 12 - 5 = 7 (hundredths). 10 - 8 = 2 (tenths). 42 - 12 = 30 (dollars).",
               "work": "\\\\(\\$43.12 - \\$12.85 = \\$30.27\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l4-q9a",
@@ -870,7 +898,8 @@
               "explain": "Subtract the columns: 2 - 0 = 2. 7 - 8 requires borrowing (17 - 8 = 9). 12 - 5 = 7.",
               "work": "\\\\(13.72 - 5.80 = 7.92\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l4-q9c",
@@ -898,7 +927,8 @@
               "explain": "Borrow across columns to complete the subtraction: 11 - 4 = 7. 9 - 9 = 0. 17 - 3 = 14.",
               "work": "\\\\(18.01 - 3.94 = 14.07\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-ar-2-l4-q9e",
@@ -926,7 +956,8 @@
               "explain": "Align decimal points and subtract: 25.00 - 21.61 = 3.39.",
               "work": "\\\\(\\\\begin{array}{r} 25.00 \\\\ - 21.61 \\\\ \\hline \\\\end{array} \\\\implies 3.39\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l5-q2",
@@ -958,7 +989,8 @@
               "explain": "Verify that the final calculated difference represents the remaining budget. The logistics courier has \\\\(\\$18.78\\\\) left in their daily budget.",
               "work": "\\\\(\\text{Remaining Budget} = \\\\$18.78\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-ar-2-l5-q3",
@@ -990,7 +1022,8 @@
               "explain": "Confirm the remaining budget in dollars. The environmental volunteer team has \\\\(\\$14.17\\\\) remaining.",
               "work": "\\\\(\\text{Remaining Budget} = \\\\$14.17\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1025,7 +1058,8 @@
               "explain": "Round the hundredths digit up by 1 and truncate the following digits.",
               "work": "\\\\(\\$3.476 \\\\approx \\$3.48\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

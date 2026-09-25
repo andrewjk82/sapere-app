@@ -42,7 +42,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "1b94VfH8awfF3NEcHGqh",
@@ -76,7 +77,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "7t8abug45WHidE5rol61",
@@ -112,7 +114,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "9pjeUekBq2n29rnjyAD1",
@@ -148,7 +151,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "A1s22EGzMFqbHSmEs7Vw",
@@ -182,7 +186,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "BUda5VwB9FTy9VXLJZyf",
@@ -215,7 +220,8 @@
           "timeLimit": 60,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "DezURalw61NDJ8MxiuX5",
@@ -250,7 +256,8 @@
           "timeLimit": 60,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "DvpYSV8I0JYMnT6fYqba",
@@ -285,7 +292,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "DztytMoe0P2ZS3qtZZyp",
@@ -317,7 +325,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -343,7 +352,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_c",
@@ -369,7 +379,8 @@
               ],
               "ext": {
                 "partLabel": "c"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_d",
@@ -395,7 +406,8 @@
               ],
               "ext": {
                 "partLabel": "d"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -457,7 +469,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -482,7 +495,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_c",
@@ -511,7 +525,8 @@
               ],
               "ext": {
                 "partLabel": "c"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_d",
@@ -536,7 +551,8 @@
               ],
               "ext": {
                 "partLabel": "d"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -601,7 +617,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Mlss5QCs71c1ARrP6gGr",
@@ -633,7 +650,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -659,7 +677,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -718,7 +737,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -740,7 +760,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -799,7 +820,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cbY62T9Mv1PhTvyDULxc",
@@ -836,7 +858,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "dyURshoixJRkjfz6PCbP",
@@ -873,7 +896,8 @@
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "k1SNd5nbMWNz1qRFbLBQ",
@@ -905,7 +929,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -931,7 +956,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_c",
@@ -957,7 +983,8 @@
               ],
               "ext": {
                 "partLabel": "c"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_d",
@@ -983,7 +1010,8 @@
               ],
               "ext": {
                 "partLabel": "d"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -1042,7 +1070,8 @@
               ],
               "ext": {
                 "partLabel": "a"
-              }
+              },
+              "xp": 2
             },
             {
               "id": "sq_b",
@@ -1064,7 +1093,8 @@
               ],
               "ext": {
                 "partLabel": "b"
-              }
+              },
+              "xp": 2
             }
           ],
           "options": [
@@ -1127,7 +1157,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "killara2026-q18",
@@ -1152,7 +1183,8 @@
                   "explain": "Only-F is the total who did F, minus those who also did S.",
                   "work": "\\(25-7=18\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "killara2026-q18b",
@@ -1171,7 +1203,8 @@
                   "explain": "Use the conditional probability formula with the counts directly.",
                   "work": "\\(P(F\\mid S)=\\dfrac{n(F\\cap S)}{n(S)}=\\dfrac{7}{18}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1202,7 +1235,8 @@
                   "explain": "Substitute the given values.",
                   "work": "\\(=0.45+0.30-0.57=0.18\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "killara2026-q19b",
@@ -1225,7 +1259,8 @@
                   "explain": "Since \\(0.135\\ne0.18\\), the independence condition fails.",
                   "work": "\\(S\\text{ and }M\\text{ are not independent}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         }
@@ -1261,7 +1296,8 @@
                   "work": "<svg viewBox=\"0 0 492 342\" width=\"492\" height=\"342\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:14px;border:1px solid #e2e8f0;padding:4px;\">\n  <g transform=\"translate(16,16)\"><circle cx=\"70\" cy=\"150\" r=\"4.5\" fill=\"#334155\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"240\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"20\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"290\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"230\" cy=\"70\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"230\" cy=\"240\" r=\"4\" fill=\"#d97706\"/><circle cx=\"400\" cy=\"20\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"110\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"190\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"290\" r=\"4.5\" fill=\"#334155\"/>\n    <text x=\"142.84458247200067\" y=\"90.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"133.84458247200067\" y1=\"95.68916494400135\" x2=\"151.84458247200067\" y2=\"95.68916494400135\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"142.84458247200067\" y=\"111.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"142.15582016587905\" y=\"203.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <line x1=\"133.15582016587905\" y1=\"208.9452085939928\" x2=\"151.15582016587905\" y2=\"208.9452085939928\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"142.15582016587905\" y=\"224.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"311.0496714641183\" y=\"26.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">1</text>\n    <line x1=\"302.0496714641183\" y1=\"31.568882978002215\" x2=\"320.0496714641183\" y2=\"31.568882978002215\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"47.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.3353706603912\" y=\"100.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"302.3353706603912\" y1=\"105.57467469333722\" x2=\"320.3353706603912\" y2=\"105.57467469333722\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.3353706603912\" y=\"121.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.0496714641183\" y=\"196.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">2</text>\n    <line x1=\"302.0496714641183\" y1=\"201.56888297800222\" x2=\"320.0496714641183\" y2=\"201.56888297800222\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"217.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text>\n    <text x=\"310.4853388161352\" y=\"275.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"301.4853388161352\" y1=\"280.3498480251403\" x2=\"319.4853388161352\" y2=\"280.3498480251403\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"310.4853388161352\" y=\"296.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text><text x=\"216\" y=\"62\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C</text><text x=\"214\" y=\"258\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C'</text><text x=\"420\" y=\"25\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text><text x=\"420\" y=\"195\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text></g>\n</svg>\n\n\\(P(D|C')=\\dfrac25, \\quad P(D'|C')=1-\\dfrac25=\\dfrac35\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "gosford2020-q22bi",
@@ -1287,7 +1323,8 @@
                   "explain": "Multiply the fractions. Pitfall: using \\( P(D'|C)=3/4 \\) instead of \\( P(D|C)=1/4 \\) here gives the wrong branch.",
                   "work": "\\(P(C\\cap D) = \\dfrac{3}{28}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q22bii",
@@ -1313,7 +1350,8 @@
                   "explain": "Subtract from 1. Pitfall: computing \\( P(C'\\cap D') \\) but forgetting to subtract from 1 leaves the complement value itself as a wrong \"answer\".",
                   "work": "\\(P(\\text{at least one}) = 1-\\dfrac{12}{35} = \\dfrac{23}{35}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1366,7 +1404,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q2",
@@ -1399,7 +1438,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "killara2026-q6",
@@ -1435,7 +1475,8 @@
               "explain": "Simplify the fraction by dividing numerator and denominator by their greatest common divisor (4).",
               "work": "\\\\(\\\\frac{76 \\\\div 4}{132 \\\\div 4} = \\\\frac{19}{33}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1473,7 +1514,8 @@
                   "work": "\n<svg viewBox=\"0 0 600 600\" width=\"100%\" height=\"auto\" style=\"max-width:600px;display:block;margin:1rem auto;background-color:#fff;border-radius:12px;border:1px solid #ccc;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Styles -->\n  <style>\n    .branch { stroke: #3b82f6; stroke-width: 2; fill: none; }\n    .node { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; }\n    .prob-text { font-family: sans-serif; font-size: 11px; fill: #dc2626; font-weight: bold; }\n    .prob-line { stroke: #dc2626; stroke-width: 1.5; }\n    .outcome { font-family: monospace; font-size: 13px; fill: #475569; }\n  </style>\n\n  <!-- Root to Layer 1 Branches -->\n  <path d=\"M 50 300 L 180 100\" class=\"branch\" />\n  <path d=\"M 50 300 L 180 300\" class=\"branch\" />\n  <path d=\"M 50 300 L 180 500\" class=\"branch\" />\n\n  <!-- L1 Probabilities -->\n  \n  <rect x=\"120\" y=\"163\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"174\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"124\" y1=\"177\" x2=\"136\" y2=\"177\" class=\"prob-line\" />\n  <text x=\"130\" y=\"188\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n  \n  <rect x=\"120\" y=\"286\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"297\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"124\" y1=\"300\" x2=\"136\" y2=\"300\" class=\"prob-line\" />\n  <text x=\"130\" y=\"311\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n  \n  <rect x=\"120\" y=\"409\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"420\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"124\" y1=\"423\" x2=\"136\" y2=\"423\" class=\"prob-line\" />\n  <text x=\"130\" y=\"434\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n\n  <!-- L1 Nodes -->\n  <text x=\"185\" y=\"104\" class=\"node\">S</text>\n  <text x=\"185\" y=\"304\" class=\"node\">M</text>\n  <text x=\"185\" y=\"504\" class=\"node\">L</text>\n\n  <!-- S Node to Layer 2 Branches -->\n  <path d=\"M 210 100 L 420 40\" class=\"branch\" />\n  <path d=\"M 210 100 L 420 100\" class=\"branch\" />\n  <path d=\"M 210 100 L 420 160\" class=\"branch\" />\n\n  <!-- S Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"49\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"60\" class=\"prob-text\" text-anchor=\"middle\">2</text>\n  <line x1=\"334\" y1=\"63\" x2=\"346\" y2=\"63\" class=\"prob-line\" />\n  <text x=\"340\" y=\"74\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"86\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"97\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"334\" y1=\"100\" x2=\"346\" y2=\"100\" class=\"prob-line\" />\n  <text x=\"340\" y=\"111\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"123\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"134\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"334\" y1=\"137\" x2=\"346\" y2=\"137\" class=\"prob-line\" />\n  <text x=\"340\" y=\"148\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- M Node to Layer 2 Branches -->\n  <path d=\"M 210 300 L 420 240\" class=\"branch\" />\n  <path d=\"M 210 300 L 420 300\" class=\"branch\" />\n  <path d=\"M 210 300 L 420 360\" class=\"branch\" />\n\n  <!-- M Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"249\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"260\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"334\" y1=\"263\" x2=\"346\" y2=\"263\" class=\"prob-line\" />\n  <text x=\"340\" y=\"274\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"286\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"297\" class=\"prob-text\" text-anchor=\"middle\">7</text>\n  <line x1=\"334\" y1=\"300\" x2=\"346\" y2=\"300\" class=\"prob-line\" />\n  <text x=\"340\" y=\"311\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"323\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"334\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"334\" y1=\"337\" x2=\"346\" y2=\"337\" class=\"prob-line\" />\n  <text x=\"340\" y=\"348\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- L Node to Layer 2 Branches -->\n  <path d=\"M 210 500 L 420 440\" class=\"branch\" />\n  <path d=\"M 210 500 L 420 500\" class=\"branch\" />\n  <path d=\"M 210 500 L 420 560\" class=\"branch\" />\n\n  <!-- L Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"449\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"460\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"334\" y1=\"463\" x2=\"346\" y2=\"463\" class=\"prob-line\" />\n  <text x=\"340\" y=\"474\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"486\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"497\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"334\" y1=\"500\" x2=\"346\" y2=\"500\" class=\"prob-line\" />\n  <text x=\"340\" y=\"511\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"523\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"534\" class=\"prob-text\" text-anchor=\"middle\">4</text>\n  <line x1=\"334\" y1=\"537\" x2=\"346\" y2=\"537\" class=\"prob-line\" />\n  <text x=\"340\" y=\"548\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- Layer 2 Nodes & Outcomes -->\n  <text x=\"430\" y=\"44\" class=\"node\">S</text> <text x=\"460\" y=\"44\" class=\"outcome\">SS</text>\n  <text x=\"430\" y=\"104\" class=\"node\">M</text> <text x=\"460\" y=\"104\" class=\"outcome\">SM</text>\n  <text x=\"430\" y=\"164\" class=\"node\">L</text> <text x=\"460\" y=\"164\" class=\"outcome\">SL</text>\n  \n  <text x=\"430\" y=\"244\" class=\"node\">S</text> <text x=\"460\" y=\"244\" class=\"outcome\">MS</text>\n  <text x=\"430\" y=\"304\" class=\"node\">M</text> <text x=\"460\" y=\"304\" class=\"outcome\">MM</text>\n  <text x=\"430\" y=\"364\" class=\"node\">L</text> <text x=\"460\" y=\"364\" class=\"outcome\">ML</text>\n  \n  <text x=\"430\" y=\"444\" class=\"node\">S</text> <text x=\"460\" y=\"444\" class=\"outcome\">LS</text>\n  <text x=\"430\" y=\"504\" class=\"node\">M</text> <text x=\"460\" y=\"504\" class=\"outcome\">LM</text>\n  <text x=\"430\" y=\"564\" class=\"node\">L</text> <text x=\"460\" y=\"564\" class=\"outcome\">LL</text>\n</svg>\n"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "glenwood2020-q33b",
@@ -1507,7 +1549,8 @@
                   "explain": "Add the three probabilities together, then simplify the fraction to lowest terms.",
                   "work": "P(\\text{same size}) = \\dfrac{6+56+20}{240} = \\dfrac{82}{240} = \\dfrac{41}{120}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "steps": [
@@ -1573,7 +1616,8 @@
                   "explain": "Use \\( \\sum P(X=x)=1 \\) to solve for \\( b \\). Pitfall: swapping which unknown solves from the sum-to-1 equation versus the mean equation gives the a=0.18,b=0.34 distractor.",
                   "work": "\\(0.34+b+0.2+0.15+0.13=1 \\;\\Rightarrow\\; b=0.18\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q18b",
@@ -1599,7 +1643,8 @@
                   "explain": "Simplify. Pitfall: forgetting to subtract \\( [E(X)]^2 \\) and reporting \\( E(X^2)=2.31 \\) directly is a common mistake.",
                   "work": "\\(\\text{Var}(X) = 2.31-0.3025 = 2.0075\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -1639,7 +1684,8 @@
                   "explain": "The probability of selecting blue is the number of blue lollies over the total.",
                   "work": "\\(P(B) = \\dfrac{9}{16}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q19b",
@@ -1670,7 +1716,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\(= \\dfrac{21}{40}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1716,7 +1763,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q11b",
@@ -1761,7 +1809,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "killara2026-q27",
@@ -1789,7 +1838,8 @@
               "explain": "Divide to apply Bayes' theorem.",
               "work": "\\(P(\\text{biased}\\mid\\text{even})=\\dfrac{3/5}{23/30}=\\dfrac{3}{5}\\times\\dfrac{30}{23}=\\dfrac{18}{23}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1834,7 +1884,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hh2020-q4",
@@ -1864,7 +1915,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         }
       ]
     }

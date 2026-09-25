@@ -44,7 +44,8 @@
                   "explain": "Factor \\(x^{2} e^{x}\\): \\(y'=x^{2} e^{x}(3+x)=x^{2} e^{x}(x+3)\\).",
                   "work": "\\(y'=x^{2} e^{x}(x+3)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "car2020s-q14b",
@@ -76,7 +77,8 @@
                   "explain": "Cancel a common factor of 3: numerator \\(x e^{x}-e^{x}+1\\), denominator \\(3x^{2}\\). So \\(f'(x)=\\dfrac{x e^{x}-e^{x}+1}{3x^{2}}\\).",
                   "work": "\\(\\dfrac{xe^{x}-e^{x}+1}{3x^{2}}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See parts (a) and (b).",
@@ -134,7 +136,8 @@
                   "explain": "Therefore the loss during the second year is approximately \\(\\$265\\).",
                   "work": "\\(\\text{Loss} \\approx \\$265\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "car2020s-q37b",
@@ -174,7 +177,8 @@
                   "explain": "Since \\(5 < 5.65 < 6\\), this occurs between the end of year 5 and the end of year 6 — that is, during the 6th year of ownership.",
                   "work": "\\(\\text{During the 6th year}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "See parts (a) and (b).",
@@ -229,7 +233,8 @@
                   "explain": "Step 4: Find the second derivative \\(y''\\) and use it to determine the nature of each stationary point.",
                   "work": "$$ \\begin{aligned} y'' &= 12x - 6 \\\\\\\\ \\text{At } x = -1: &\\quad y'' = 12(-1) - 6 = -18 < 0 \\implies \\text{Local Maximum at } (-1, 12) \\\\\\\\ \\text{At } x = 2: &\\quad y'' = 12(2) - 6 = 18 > 0 \\implies \\text{Local Minimum at } (2, -15) \\end{aligned} $$"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "car2020s-q18b",
@@ -262,7 +267,8 @@
                   "explain": "Step 4: Conclude that a change in concavity confirms a point of inflection.",
                   "work": "$$ \\text{Since concavity changes, there is a true point of inflection at } \\left(\\frac{1}{2}, -1.5\\right). $$"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "car2020s-q18c",
@@ -294,7 +300,8 @@
                   "work": "\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"210\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"185\" y=\"165\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"50.0,240.0 56.0,216.8 62.0,195.6 68.0,176.5 74.0,159.3 80.0,144.0 86.0,130.5 92.0,118.7 98.0,108.6 104.0,100.0 110.0,93.0 116.0,87.4 122.0,83.2 128.0,80.3 134.0,78.6 140.0,78.0 146.0,78.5 152.0,80.1 158.0,82.5 164.0,85.9 170.0,90.0 176.0,94.8 182.0,100.3 188.0,106.4 194.0,113.0 200.0,120.0 206.0,127.4 212.0,135.0 218.0,142.9 224.0,150.9 230.0,159.0 236.0,167.1 242.0,175.1 248.0,183.0 254.0,190.6 260.0,198.0 266.0,205.0 272.0,211.6 278.0,217.7 284.0,223.2 290.0,228.0 296.0,232.1 302.0,235.5 308.0,237.9 314.0,239.5 320.0,240.0 326.0,239.4 332.0,237.7 338.0,234.8 344.0,230.6 350.0,225.0 356.0,218.0 362.0,209.4 368.0,199.3 374.0,187.5 380.0,174.0 386.0,158.7 392.0,141.5 398.0,122.4 404.0,101.2\" />\n  \n  <!-- Points -->\n  <circle cx=\"140\" cy=\"78\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"130\" y=\"65\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(-1, 12)</text>\n  \n  <circle cx=\"320\" cy=\"240\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"325\" y=\"255\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(2, -15)</text>\n  \n  <circle cx=\"230\" cy=\"159\" r=\"4\" fill=\"#059669\" />\n  <text x=\"240\" y=\"150\" fill=\"#059669\" font-size=\"12\" font-family=\"sans-serif\">POI (0.5, -1.5)</text>\n</svg>\n</div>\n"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             }
           ]
         }

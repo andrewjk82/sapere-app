@@ -38,7 +38,8 @@
               "work": "\\( -3 = -3 \\implies \\text{Yes} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q1b",
@@ -70,7 +71,8 @@
               "work": "\\( 0 = 0 \\implies \\text{Yes} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q1c",
@@ -102,7 +104,8 @@
               "work": "\\( \\text{No} \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-7c-q14a",
@@ -136,7 +139,8 @@
               "work": "\\text{Parallelogram}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7c-q14b",
@@ -170,7 +174,8 @@
               "work": "\\text{Rectangle}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7c-q18b",
@@ -199,7 +204,8 @@
               "explain": "Since two base angles are equal, the triangle is isosceles.",
               "work": "\\text{Isosceles}"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

@@ -50,7 +50,8 @@
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-q14cii",
@@ -113,7 +114,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 4
         },
         {
           "id": "bar2020-q14ciiv",
@@ -176,7 +178,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 4
         }
       ]
     }

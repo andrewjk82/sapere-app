@@ -31,7 +31,8 @@
               "explain": "Calculate the multiplication to find the final answer.",
               "work": "\\(81\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q1b",
@@ -56,7 +57,8 @@
               "explain": "Calculate the multiplication to find the final answer.",
               "work": "\\(121\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q1c",
@@ -81,7 +83,8 @@
               "explain": "Calculate the multiplication to find the final answer.",
               "work": "\\(49\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q1d",
@@ -106,7 +109,8 @@
               "explain": "Calculate the multiplication to find the final answer.",
               "work": "\\(225\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q2a",
@@ -131,7 +135,8 @@
               "explain": "Since \\(8 \\times 8 = 64\\), the square root is 8.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q2b",
@@ -156,7 +161,8 @@
               "explain": "Since \\(12 \\times 12 = 144\\), the square root is 12.",
               "work": "\\(12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q2c",
@@ -181,7 +187,8 @@
               "explain": "Since \\(14 \\times 14 = 196\\), the square root is 14.",
               "work": "\\(14\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q2d",
@@ -206,7 +213,8 @@
               "explain": "Since \\(30 \\times 30 = 900\\), the square root is 30.",
               "work": "\\(30\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q3a",
@@ -231,7 +239,8 @@
               "explain": "Add the two results to find the final answer.",
               "work": "\\(49 + 576 = 625\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q3b",
@@ -256,7 +265,8 @@
               "explain": "Add the two results to find the final answer.",
               "work": "\\(81 + 144 = 225\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q3c",
@@ -281,7 +291,8 @@
               "explain": "Subtract the two results to find the final answer.",
               "work": "\\(400 - 256 = 144\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q3d",
@@ -306,7 +317,8 @@
               "explain": "Subtract the two results to find the final answer.",
               "work": "\\(289 - 225 = 64\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4a",
@@ -341,7 +353,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{100}\\)<br>\\(x = 10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4b",
@@ -376,7 +389,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{400}\\)<br>\\(x = 20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4c",
@@ -411,7 +425,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{625}\\)<br>\\(x = 25\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4d",
@@ -446,7 +461,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{169}\\)<br>\\(x = 13\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4e",
@@ -481,7 +497,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{625}\\)<br>\\(x = 25\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q4f",
@@ -516,7 +533,8 @@
               "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
               "work": "\\(x = \\sqrt{676}\\)<br>\\(x = 26\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-9a-q5row2a2",
@@ -541,7 +559,8 @@
               "explain": "Calculate the result.",
               "work": "\\(36\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row2b2",
@@ -566,7 +585,8 @@
               "explain": "Calculate the result.",
               "work": "\\(64\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row2c2",
@@ -591,7 +611,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(36 + 64 = 100\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row2c",
@@ -616,7 +637,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{100}\\)<br>\\(c = 10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row3a2",
@@ -641,7 +663,8 @@
               "explain": "Calculate the result.",
               "work": "\\(81\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row3b2",
@@ -666,7 +689,8 @@
               "explain": "Calculate the result.",
               "work": "\\(144\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row3c2",
@@ -691,7 +715,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(81 + 144 = 225\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row3c",
@@ -716,7 +741,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{225}\\)<br>\\(c = 15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row4a2",
@@ -741,7 +767,8 @@
               "explain": "Calculate the result.",
               "work": "\\(144\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row4b2",
@@ -766,7 +793,8 @@
               "explain": "Calculate the result.",
               "work": "\\(256\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row4c2",
@@ -791,7 +819,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(144 + 256 = 400\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row4c",
@@ -816,7 +845,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{400}\\)<br>\\(c = 20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row5a2",
@@ -841,7 +871,8 @@
               "explain": "Calculate the result.",
               "work": "\\(225\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row5b2",
@@ -866,7 +897,8 @@
               "explain": "Calculate the result.",
               "work": "\\(400\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row5c2",
@@ -891,7 +923,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(225 + 400 = 625\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q5row5c",
@@ -916,7 +949,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{625}\\)<br>\\(c = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row1a2",
@@ -941,7 +975,8 @@
               "explain": "Calculate the result.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row1b2",
@@ -966,7 +1001,8 @@
               "explain": "Calculate the result.",
               "work": "\\(16\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row1c2",
@@ -991,7 +1027,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(9 + 16 = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row1c",
@@ -1016,7 +1053,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{25}\\)<br>\\(c = 5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row2a2",
@@ -1041,7 +1079,8 @@
               "explain": "Calculate the result.",
               "work": "\\(25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row2b2",
@@ -1066,7 +1105,8 @@
               "explain": "Calculate the result.",
               "work": "\\(144\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row2c2",
@@ -1091,7 +1131,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(25 + 144 = 169\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row2c",
@@ -1116,7 +1157,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{169}\\)<br>\\(c = 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row3a2",
@@ -1141,7 +1183,8 @@
               "explain": "Calculate the result.",
               "work": "\\(49\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row3b2",
@@ -1166,7 +1209,8 @@
               "explain": "Calculate the result.",
               "work": "\\(576\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row3c2",
@@ -1191,7 +1235,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(49 + 576 = 625\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row3c",
@@ -1216,7 +1261,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{625}\\)<br>\\(c = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row4a2",
@@ -1241,7 +1287,8 @@
               "explain": "Calculate the result.",
               "work": "\\(81\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row4b2",
@@ -1266,7 +1313,8 @@
               "explain": "Calculate the result.",
               "work": "\\(1600\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row4c2",
@@ -1291,7 +1339,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(81 + 1600 = 1681\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row4c",
@@ -1316,7 +1365,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{1681}\\)<br>\\(c = 41\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row5a2",
@@ -1341,7 +1391,8 @@
               "explain": "Calculate the result.",
               "work": "\\(121\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row5b2",
@@ -1366,7 +1417,8 @@
               "explain": "Calculate the result.",
               "work": "\\(3600\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row5c2",
@@ -1391,7 +1443,8 @@
               "explain": "Add the two squares together to find \\(c^2\\).",
               "work": "\\(121 + 3600 = 3721\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q6row5c",
@@ -1416,7 +1469,8 @@
               "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
               "work": "\\(c = \\sqrt{3721}\\)<br>\\(c = 61\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7ax",
@@ -1455,7 +1509,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{400}\\)<br>\\(x = 20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7bx",
@@ -1494,7 +1549,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{169}\\)<br>\\(x = 13\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7by",
@@ -1533,7 +1589,8 @@
               "explain": "Take the square root to find \\(y\\).",
               "work": "\\(y = \\sqrt{225}\\)<br>\\(y = 15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7cx",
@@ -1572,7 +1629,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{676}\\)<br>\\(x = 26\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7dy",
@@ -1611,7 +1669,8 @@
               "explain": "Take the square root to find \\(y\\).",
               "work": "\\(y = \\sqrt{676}\\)<br>\\(y = 26\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7dx",
@@ -1650,7 +1709,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{900}\\)<br>\\(x = 30\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7ey",
@@ -1689,7 +1749,8 @@
               "explain": "Calculate and take the square root to find \\(y\\).",
               "work": "\\(y = \\sqrt{676}\\)<br>\\(y = 26\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7ex",
@@ -1728,7 +1789,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{289}\\)<br>\\(x = 17\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7fx",
@@ -1767,7 +1829,8 @@
               "explain": "Take the square root to find \\(x\\).",
               "work": "\\(x = \\sqrt{256}\\)<br>\\(x = 16\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7fz",
@@ -1806,7 +1869,8 @@
               "explain": "Take the square root to find \\(z\\).",
               "work": "\\(z = \\sqrt{400}\\)<br>\\(z = 20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-9a-q7fy",
@@ -1845,7 +1909,8 @@
               "explain": "Calculate \\(y\\) using Pythagoras' theorem.",
               "work": "\\(y = \\sqrt{20^2 + 15^2} = \\sqrt{400 + 225} = \\sqrt{625}\\)<br>\\(y = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-p1",
@@ -1873,7 +1938,8 @@
               "explain": "Since both sides are equal, \\((5,12,13)\\) is indeed a Pythagorean triad.",
               "work": "\\(169=169\\ \\checkmark\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     }

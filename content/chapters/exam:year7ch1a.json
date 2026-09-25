@@ -29,7 +29,8 @@
               "work": "\\( \\text{Shaded line from } -11 \\text{ to } 13 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y7-1a-q12",
@@ -51,7 +52,8 @@
               "work": "\\( \\text{Shaded line from } -12 \\text{ to } 14 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y7-1a-q13",
@@ -73,7 +75,8 @@
               "work": "\\( \\text{Shaded line from } -13 \\text{ to } 15 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y7-1a-q14",
@@ -95,7 +98,8 @@
               "work": "\\( \\text{Shaded line from } -14 \\text{ to } 16 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y7-1a-q15",
@@ -117,7 +121,8 @@
               "work": "\\( \\text{Shaded line from } -15 \\text{ to } 17 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         }
       ]
     }

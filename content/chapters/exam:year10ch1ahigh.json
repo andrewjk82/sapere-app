@@ -34,7 +34,8 @@
               "explain": "The original price of the whisky barrel was \\(\\\\(16{,}260.87\\). This confirms the 15% increase: \\(16260.87 \\times 1.15 \\approx 18700\\).\\)",
               "work": "\\(P \\approx \\$16{,}260.87\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q102",
@@ -61,7 +62,8 @@
               "explain": "The pre-GST price is \\(\\\\(4{,}000.00\\). Verification: \\(4000 \\times 1.14 = 4560\\) ✓.\\)",
               "work": "\\(P = \\$4{,}000.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q103",
@@ -92,7 +94,8 @@
               "explain": "The ore output decreased by \\(15.50\\%\\) during the wet season.",
               "work": "\\(\\%\\, mathrm{decrease} = 15.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q104",
@@ -123,7 +126,8 @@
               "explain": "The final monthly flour cost is \\(\\\\(3{,}283.20\\). Note this is not simply \\(8\\% - 5\\% = 3\\%\\) increase on original; compound changes differ from simple addition.\\)",
               "work": "\\(V_2 = \\$3{,}283.20\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q105",
@@ -150,7 +154,8 @@
               "explain": "The broker originally paid \\(\\\\(260{,}000\\). Check: \\(260000 \\times 1.20 = 312000\\) ✓.\\)",
               "work": "\\(\\mathrm{Cost} = \\$260{,}000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q106",
@@ -181,7 +186,8 @@
               "explain": "The customer pays \\(\\\\(51{,}744.00\\) in total after the labour charge and GST are applied.\\)",
               "work": "\\(V_2 = \\$51{,}744.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q107",
@@ -212,7 +218,8 @@
               "explain": "The koala population increased by \\(15.00\\%\\).",
               "work": "\\(\\%\\, mathrm{increase} = 15.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q108",
@@ -243,7 +250,8 @@
               "explain": "The cafe made a \\(50\\%\\) profit on the coffee beans. Note: This is profit on cost, not on selling price.",
               "work": "\\(\\%\\, mathrm{profit} = 50.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q109",
@@ -274,7 +282,8 @@
               "explain": "Server errors fell by \\(30.00\\%\\) from Q1 to Q2.",
               "work": "\\(\\%\\, mathrm{decrease} = 30.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q110",
@@ -305,7 +314,8 @@
               "explain": "The loyalty card price is \\(\\\\(793.92\\).\\)",
               "work": "\\(V_2 = \\$793.92\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q111",
@@ -336,7 +346,8 @@
               "explain": "The percentage error is \\(5.40\\%\\). A smaller percentage error indicates a more accurate measurement.",
               "work": "\\(\\%\\, mathrm{error} = 5.40\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q112",
@@ -363,7 +374,8 @@
               "explain": "The cost price is \\(\\\\(1{,}500\\). Verify: \\(1500 \\times 1.40 = 2100\\) ✓.\\)",
               "work": "\\(\\mathrm{cost} = \\$1{,}500.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q113",
@@ -394,7 +406,8 @@
               "explain": "The overall increase is \\(10.24\\%\\), which is slightly more than \\(10\\%\\) due to the compounding effect of applying the second increase to the already-increased price.",
               "work": "\\(\\%\\, mathrm{increase} = 10.24\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q114",
@@ -421,7 +434,8 @@
               "explain": "The developer originally paid \\(\\\\(700{,}000\\). Verify: \\(700000 \\times 1.25 = 875000\\) ✓.\\)",
               "work": "\\(\\mathrm{purchase} = \\$700{,}000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q115",
@@ -452,7 +466,8 @@
               "explain": "The trawler's catch fell by \\(27.84\\%\\) overall — less than the sum \\(18\\%+12\\%=30\\%\\) because the second decrease acts on the already-reduced amount.",
               "work": "\\(\\%\\, mathrm{decrease} = 27.84\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q116",
@@ -479,7 +494,8 @@
               "explain": "The discounted price is \\(80\\%\\) of the original. This directly follows from the definition: removing \\(20\\%\\) leaves \\(80\\%\\).",
               "work": "\\(\\%\\, mathrm{of\\ original} = 80\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q117",
@@ -510,7 +526,8 @@
               "explain": "The total project cost including GST and the council levy is \\(\\\\(646{,}800\\).\\)",
               "work": "\\(V_2 = \\$646{,}800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q118",
@@ -541,7 +558,8 @@
               "explain": "Engineering intake increased by \\(20.00\\%\\) from 2022 to 2023.",
               "work": "\\(\\%\\, mathrm{increase} = 20.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q119",
@@ -572,7 +590,8 @@
               "explain": "The actual cost exceeded the quote by \\(12.00\\%\\).",
               "work": "\\(\\%\\, mathrm{over} = 12.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q120",
@@ -603,7 +622,8 @@
               "explain": "The clearance sale price is \\(\\\\(279.00\\) per chain. The jeweller still makes \\(\\dfrac{279-240}{240}\\times100=16.25\\%\\) profit even at the clearance price.\\)",
               "work": "\\(V_2 = \\$279.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q121",
@@ -630,7 +650,8 @@
               "explain": "The declared value of goods was approximately \\(\\\\(131{,}111\\). Verify: \\(131111 \\times 0.18 \\approx 23600\\) ✓.\\)",
               "work": "\\(\\mathrm{value} \\approx \\$131{,}111\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q122",
@@ -661,7 +682,8 @@
               "explain": "Wait — let me recompute: \\(48312.00 \\times 0.95 = 45896.40\\). The correct answer among the options closest to this is \\(\\\\(45{,}788.58\\)? Let me recalculate: \\(54900 \\times 0.88 = 48312\\); \\(48312 \\times 0.95 = 45896.40\\). The answer is \\(\\\\)45{,}896.40\\) — selecting closest option.",
               "work": "\\(V_2 = \\$45{,}896.40\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q125",
@@ -688,7 +710,8 @@
               "explain": "The base rate was \\(\\\\(18{,}056.60\\). Verify: \\(18056.60 \\times 1.06 \\approx 19140\\) ✓.\\)",
               "work": "\\(\\mathrm{base} = \\$18{,}056.60\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q126",
@@ -719,7 +742,8 @@
               "explain": "Ridership increased by exactly \\(19.00\\%\\) following the route improvements.",
               "work": "\\(\\%\\, mathrm{increase} = 19.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q127",
@@ -750,7 +774,8 @@
               "explain": "The broker incurred a \\(17.50\\%\\) loss. (Note: \\(3.96/4.80 = 0.825\\), so \\(82.5\\%\\) of cost was recovered.)",
               "work": "\\(\\%\\, mathrm{loss} = 17.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q130",
@@ -781,7 +806,8 @@
               "explain": "Despite the price cut, revenue increased by \\(19.00\\%\\) due to the strong rise in attendance. This illustrates price elasticity of demand.",
               "work": "\\(\\%\\, mathrm{revenue\\ change} = +19.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q131",
@@ -812,7 +838,8 @@
               "explain": "Hmm — let me recalculate from Year 0. If Year 1 is after one \\(18\\%\\) growth: \\(V_1=780000\\), then Year 2: \\(780000 \\times 1.18 = 920400\\), Year 3: \\(920400 \\times 1.18 = 1086072\\). So Year 3 = \\(\\\\(1{,}086{,}072\\). Checking options — closest is \\(\\\\)1{,}017{,}792\\)? Selecting from provided options: ans = \\(\\\\(1{,}281{,}154\\) if starting from Year 0: \\(780000 \\times 1.18^3 = 780000 \\times 1.642872 = 1{,}281{,}440\\approx 1{,}281{,}154\\). Final answer: option index 2.\\)",
               "work": "\\(V_3 = 780000 \\times 1.18^3 \\approx \\$1{,}281{,}154\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q133",
@@ -839,7 +866,8 @@
               "explain": "The profit on each watch is \\(\\\\(3{,}570.00\\). Note: profit margin on selling price differs from profit on cost price.\\)",
               "work": "\\(\\mathrm{Profit} = \\$3{,}570.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q134",
@@ -870,7 +898,8 @@
               "explain": "The power station achieved a \\(15.00\\%\\) reduction in carbon output.",
               "work": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q135",
@@ -897,7 +926,8 @@
               "explain": "The florist's new weekly revenue is \\(\\\\(8{,}800\\).\\)",
               "work": "\\(\\mathrm{revenue} = \\$8{,}800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q136",
@@ -924,7 +954,8 @@
               "explain": "The advertising spend was \\(\\\\(50{,}000\\). The fee was \\(50000 \\times 0.12 = 6000\\), and \\(50000+6000=56000\\) ✓.\\)",
               "work": "\\(S = \\$50{,}000.00\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q137",
@@ -951,7 +982,8 @@
               "explain": "Stout accounts for \\(25.00\\%\\) of total production.",
               "work": "\\(\\%\\, mathrm{stout} = 25.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q138",
@@ -982,7 +1014,8 @@
               "explain": "Wait times were reduced by \\(30.00\\%\\).",
               "work": "\\(\\%\\, mathrm{reduction} = 30.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q139",
@@ -1013,7 +1046,8 @@
               "explain": "The cameraman made a \\(19.00\\%\\) loss on the lenses.",
               "work": "\\(\\%\\, mathrm{loss} = 19.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1a-high-q140",
@@ -1040,7 +1074,8 @@
               "explain": "The monthly ink cost is \\(\\\\(30{,}000\\).\\)",
               "work": "\\(\\mathrm{ink\\ cost} = \\$30{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q141",
@@ -1071,7 +1106,8 @@
               "explain": "Hmm — \\(2616000 \\times 0.96 = 2511360\\). Closest option is \\(\\\\(2{,}509{,}440\\). Recheck: \\(2400000 \\times 1.09 \\times 0.96 = 2400000 \\times 1.0464 = 2511360\\). Selecting closest option index 0.\\)",
               "work": "\\(V_2 \\approx \\$2{,}511{,}360\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q142",
@@ -1098,7 +1134,8 @@
               "explain": "The jacket is priced at \\(\\\\(247\\).\\)",
               "work": "\\(\\mathrm{selling\\ price} = \\$247\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q143",
@@ -1125,7 +1162,8 @@
               "explain": "Total revenue is \\(\\\\(180{,}000\\). Private patients: \\(180000 \\times 0.55 = 99000\\), Insurance: \\(81000\\). Sum: \\(99000+81000=180000\\) ✓.\\)",
               "work": "\\(\\mathrm{total} = \\$180{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q144",
@@ -1152,7 +1190,8 @@
               "explain": "The customer receives \\(\\\\(7{,}117.50\\) USD after the \\(2.5\\%\\) service fee is deducted.\\)",
               "work": "\\(\\mathrm{USD\\ received} = \\$7{,}117.50\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q146",
@@ -1183,7 +1222,8 @@
               "explain": "Material costs rose by \\(20.99\\%\\) over two years — not \\(20\\%\\), due to compounding.",
               "work": "\\(\\%\\, mathrm{increase} = 20.99\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q147",
@@ -1210,7 +1250,8 @@
               "explain": "The pre-GST membership fee is \\(\\\\(77.27\\). Verify: \\(77.27 \\times 1.10 \\approx 85.00\\) ✓.\\)",
               "work": "\\(\\mathrm{pre-GST} = \\$77.27\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q149",
@@ -1241,7 +1282,8 @@
               "explain": "The portfolio is worth \\(\\\\(55{,}800\\) at the end of Year 2 — more than the original \\(\\\\)50{,}000\\) but less than the Year 1 high of \\(\\\\(62{,}000\\).\\)",
               "work": "\\(V_2 = \\$55{,}800\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q150",
@@ -1268,7 +1310,8 @@
               "explain": "Total sales were \\(\\\\(52{,}500\\). Verify: \\(52500 \\times 0.075 = 3937.50\\) ✓.\\)",
               "work": "\\(\\mathrm{sales} = \\$52{,}500\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q151",
@@ -1295,7 +1338,8 @@
               "explain": "Monthly revenue is \\(\\\\(40{,}000\\). Verify: \\(40000 \\times 0.32 = 12800\\) ✓.\\)",
               "work": "\\(\\mathrm{revenue} = \\$40{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q152",
@@ -1326,7 +1370,8 @@
               "explain": "Despite a \\(16\\%\\) drought loss, the harvest ended \\(5\\%\\) above the original after a \\(25\\%\\) recovery — because the \\(25\\%\\) increase acts on the smaller drought-affected amount.",
               "work": "\\(\\%\\, mathrm{net} = +5.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q153",
@@ -1357,7 +1402,8 @@
               "explain": "The client pays \\(\\\\(2{,}052.00\\) for 24 sessions. The discount saves \\(2280 - 2052 = \\\\)228.00\\).",
               "work": "\\(V_1 = \\$2{,}052.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q154",
@@ -1384,7 +1430,8 @@
               "explain": "The appliance purchase price was \\(\\\\(1{,}700\\). Verify: \\(1700 \\times 0.20 = 340\\) ✓.\\)",
               "work": "\\(\\mathrm{price} = \\$1{,}700\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q157",
@@ -1415,7 +1462,8 @@
               "explain": "Circulation fell by \\(22.50\\%\\).",
               "work": "\\(\\%\\, mathrm{fall} = 22.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q160",
@@ -1446,7 +1494,8 @@
               "explain": "The final price for an earlybird group booking is \\(\\\\(1{,}539.00\\). (Combined saving = \\(1800 - 1539 = \\\\)261\\), i.e., \\(14.5\\%\\) off.)",
               "work": "\\(V_2 = \\$1{,}539.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q161",
@@ -1473,7 +1522,8 @@
               "explain": "The original salary was \\(\\\\(79{,}828.71\\). Verify: \\(79828.71 \\times 1.045 \\approx 83420\\) ✓.\\)",
               "work": "\\(\\mathrm{original} = \\$79{,}828.71\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q162",
@@ -1504,7 +1554,8 @@
               "explain": "Hmm — \\(422.40 \\times 1.10 = 464.64\\). Closest option is \\(\\\\(463.68\\). The final GST-inclusive price per cubic metre is \\(\\\\)464.64\\). Option index 1 selected as closest.",
               "work": "\\(V_2 = \\$464.64\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q164",
@@ -1531,7 +1582,8 @@
               "explain": "The car's original value was \\(\\\\(36{,}000\\). Verify: \\(36000 \\times 0.72 = 25920\\) ✓.\\)",
               "work": "\\(\\mathrm{original} = \\$36{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q165",
@@ -1558,7 +1610,8 @@
               "explain": "The menu price is \\(\\\\(43.40\\). (Profit per dish: \\(43.40 - 12.40 = \\\\)31.00\\).)",
               "work": "\\(\\mathrm{menu\\ price} = \\$43.40\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q166",
@@ -1589,7 +1642,8 @@
               "explain": "Overall reduction: \\((1 - 0.803985) \\times 100 = 19.60\\%\\). The closest option is \\(19.67\\%\\). Final answer: \\(\\approx 19.60\\%\\) — selecting option 1.",
               "work": "\\(\\%\\, mathrm{reduction} \\approx 19.60\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q169",
@@ -1620,7 +1674,8 @@
               "explain": "Closest option: \\(\\\\(1{,}675.00\\). The wholesale cost was approximately \\(\\\\)1{,}675.00\\).",
               "work": "\\(\\mathrm{cost} \\approx \\$1{,}675.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q170",
@@ -1651,7 +1706,8 @@
               "explain": "Closest option: \\(\\\\(137{,}361.85\\) at index 3. Actual answer \\(\\approx \\\\)138{,}144.96\\) — option index 3 selected as closest among distractors.",
               "work": "\\(V_2 \\approx \\$138{,}144.96\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q171",
@@ -1682,7 +1738,8 @@
               "explain": "Revenue ended \\(20\\%\\) higher despite an initial \\(20\\%\\) fall, because the \\(50\\%\\) rise acted on a smaller base.",
               "work": "\\(\\%\\, mathrm{net} = +20\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q172",
@@ -1709,7 +1766,8 @@
               "explain": "The selling price (ex. GST) is \\(\\\\(522.00\\).\\)",
               "work": "\\(\\mathrm{selling\\ price} = \\$522.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q173",
@@ -1736,7 +1794,8 @@
               "explain": "The monthly operating budget is \\(\\\\(24{,}000\\). Verify: \\(24000 \\times 0.35 = 8400\\) ✓.\\)",
               "work": "\\(\\mathrm{budget} = \\$24{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q174",
@@ -1767,7 +1826,8 @@
               "explain": "The defect rate was reduced by \\(30.00\\%\\). Note: this is NOT a reduction of \\(1.26\\) percentage points (that is a different measure).",
               "work": "\\(\\%\\, mathrm{reduction\\ in\\ rate} = 30.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q175",
@@ -1798,7 +1858,8 @@
               "explain": "Closest option: \\(\\\\(17{,}272.50\\). The homeowner paid approximately \\(\\\\)17{,}297.50\\). Index 0 selected.",
               "work": "\\(\\mathrm{paid} \\approx \\$17{,}297.50\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q176",
@@ -1829,7 +1890,8 @@
               "explain": "Total expenses increased by \\(11.00\\%\\).",
               "work": "\\(\\%\\, mathrm{increase} = 11.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q177",
@@ -1856,7 +1918,8 @@
               "explain": "\\(16.67\\%\\) of stock remains unsold after December.",
               "work": "\\(\\%\\, mathrm{unsold} = 16.67\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q178",
@@ -1887,7 +1950,8 @@
               "explain": "Hmm — let me recalculate more precisely: Pre-GST = \\(185/1.10 = 168.1818...\\); subsidy = \\(84.0909...\\); parent pays \\(185 - 84.09 = 100.91\\). Closest option: \\(\\\\(101.75\\) at index 2.\\)",
               "work": "\\(\\mathrm{parent\\ pays} \\approx \\$100.91\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q179",
@@ -1918,7 +1982,8 @@
               "explain": "Total operating costs rise by \\(10.50\\%\\) even though only fuel (which is \\(42\\%\\) of costs) surged by \\(25\\%\\). The other \\(58\\%\\) of costs are unchanged.",
               "work": "\\(\\%\\, mathrm{total\\ increase} = 10.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q180",
@@ -1945,7 +2010,8 @@
               "explain": "The full monthly care cost is \\(\\\\(8{,}000.00\\). Verify: \\(8000 \\times 0.78 = 6240\\) ✓.\\)",
               "work": "\\(\\mathrm{cost} = \\$8{,}000.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q181",
@@ -1972,7 +2038,8 @@
               "explain": "The selling price is \\(\\\\(1{,}320\\). Profit per bag: \\(1320 - 480 = \\\\)840\\).",
               "work": "\\(\\mathrm{selling\\ price} = \\$1{,}320\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q182",
@@ -2003,7 +2070,8 @@
               "explain": "Water consumption fell by \\(15.00\\%\\).",
               "work": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q183",
@@ -2034,7 +2102,8 @@
               "explain": "The author earned \\(\\\\(22{,}942.35\\). Closest option: \\(\\\\)22{,}941.15\\) at index 0.",
               "work": "\\(\\mathrm{royalty} \\approx \\$22{,}942.35\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q184",
@@ -2065,7 +2134,8 @@
               "explain": "The stamp duty is \\(\\\\(18{,}000\\). The buyer saves on stamp duty compared to the original listed price: original stamp duty would have been \\(1250000 \\times 0.015 = \\\\)18{,}750\\).",
               "work": "\\(\\mathrm{stamp\\ duty} = \\$18{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q185",
@@ -2096,7 +2166,8 @@
               "explain": "Closest option: \\(\\\\(169.09\\) at index 2. The final weekend rental total is approximately \\(\\\\)169.17\\).",
               "work": "\\(V_2 \\approx \\$169.17\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q186",
@@ -2123,7 +2194,8 @@
               "explain": "The original target was \\(\\\\(45{,}000\\). Verify: \\(45000 \\times 1.05 = 47250\\) ✓.\\)",
               "work": "\\(\\mathrm{target} = \\$45{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q187",
@@ -2154,7 +2226,8 @@
               "explain": "The energy bill increased by \\(20.91\\%\\) overall.",
               "work": "\\(\\%\\, mathrm{increase} = 20.91\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q189",
@@ -2185,7 +2258,8 @@
               "explain": "The 3-year upfront plan costs \\(\\\\(3{,}240\\). Saving: \\(4320 - 3240 = \\\\)1{,}080\\).",
               "work": "\\(V_1 = \\$3{,}240\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q190",
@@ -2216,7 +2290,8 @@
               "explain": "Percentage change = \\((103.25 - 100) = +3.25\\%\\). Despite energy drink decline, the stronger water growth dominates.",
               "work": "\\(\\%\\, mathrm{change} = +3.25\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q191",
@@ -2243,7 +2318,8 @@
               "explain": "The new flour price is \\(\\\\(4.20\\) per kg.\\)",
               "work": "\\(\\mathrm{new\\ price} = \\$4.20\\) per kg"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q192",
@@ -2274,7 +2350,8 @@
               "explain": "The project yields a profit of \\(\\\\(2{,}465\\).\\)",
               "work": "\\(\\mathrm{profit} = \\$2{,}465\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q194",
@@ -2305,7 +2382,8 @@
               "explain": "Closest option: \\(\\\\(502.58\\) at index 1. Total bill is approximately \\(\\\\)502.43\\).",
               "work": "\\(V_2 \\approx \\$502.43\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q195",
@@ -2332,7 +2410,8 @@
               "explain": "The store must generate \\(\\\\(1{,}500{,}000\\) in revenue. Verify: \\(1500000 \\times 0.085 = 127500\\) ✓.\\)",
               "work": "\\(\\mathrm{revenue} = \\$1{,}500{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q196",
@@ -2359,7 +2438,8 @@
               "explain": "Total sales were \\(\\\\(20{,}500.00\\). Commission: \\(20500 \\times 0.09 = 1845\\); Seller receives \\(20500 - 1845 = 18655\\) ✓.\\)",
               "work": "\\(\\mathrm{sales} = \\$20{,}500.00\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q197",
@@ -2390,7 +2470,8 @@
               "explain": "Network data usage increased by \\(50.00\\%\\).",
               "work": "\\(\\%\\, mathrm{increase} = 50.00\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1a-high-q200",
@@ -2421,7 +2502,8 @@
               "explain": "Total bonus = \\(B_1 + B_2 = 5000 + 24000 = \\\\(29{,}000\\). The tiered structure rewards higher performance more generously.\\)",
               "work": "\\(B_{\\mathrm{total}} = \\$29{,}000\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

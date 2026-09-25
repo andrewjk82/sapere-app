@@ -39,7 +39,8 @@
               "explain": "<strong>Step 4:</strong> Combine the sorted lists:<br>\n      $60, 50, 35, -35, -40, -41, -50, -600$."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "iAMQexiiHj2g8VYib42X",
@@ -68,7 +69,8 @@
               "work": "\\(-20 °C\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -96,7 +98,8 @@
             {
               "explain": "Point B is 2 units left on the x-axis and 3 units up on the y-axis. So x = -2, y = 3. \\(B(-2, 3)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "0cm8QgobcrvmWwtFUJOm",
@@ -125,7 +128,8 @@
               "work": "<svg width=\"340\" height=\"90\" viewBox=\"0 0 340 90\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Main line -->\n    <line x1=\"20\" y1=\"45\" x2=\"320\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- Left Arrow -->\n    <path d=\"M 20 45 L 28 41 L 28 49 Z\" fill=\"#1e293b\"/>\n    <!-- Right Arrow -->\n    <path d=\"M 320 45 L 312 41 L 312 49 Z\" fill=\"#1e293b\"/>\n    <line x1=\"30\" y1=\"40\" x2=\"30\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"30\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-10</text><line x1=\"44\" y1=\"40\" x2=\"44\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"40\" x2=\"58\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"58\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-8</text><line x1=\"72\" y1=\"40\" x2=\"72\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"40\" x2=\"86\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"86\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-6</text><line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"40\" x2=\"114\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"114\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-4</text><line x1=\"128\" y1=\"40\" x2=\"128\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"142\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-2</text><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"184\" y1=\"40\" x2=\"184\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"198\" y1=\"40\" x2=\"198\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"198\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"212\" y1=\"40\" x2=\"212\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"226\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"240\" y1=\"40\" x2=\"240\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"254\" y1=\"40\" x2=\"254\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"254\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"268\" y1=\"40\" x2=\"268\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"282\" y1=\"40\" x2=\"282\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"282\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"296\" y1=\"40\" x2=\"296\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"40\" x2=\"310\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"310\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text>\n    <circle cx=\"44\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"72\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"100\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"128\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/>\n  </svg>"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "0ZzYX0fBzViB4QVWqk2d",
@@ -154,7 +158,8 @@
               "work": "\\(-16\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "1WIj72tNM4d2xALIbA3V",
@@ -183,7 +188,8 @@
               "work": "\\(64\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "1yKnir7UoXIOkfoP7Emi",
@@ -212,7 +218,8 @@
               "work": "\\(-7, -6, -5, -4, -3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "3WXtGWSjq2NO2VZCEISu",
@@ -241,7 +248,8 @@
               "work": "\\(-6, -5, -4, -3\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "4EXv4lfY7y5AV3vg9gtv",
@@ -270,7 +278,8 @@
               "work": "\\(-35 °C\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "4nTpfiUz7EWK2GDDHfh5",
@@ -299,7 +308,8 @@
               "work": "\\(-12, -10, -8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "4rpo6R8p8n4RgH4ux5tX",
@@ -328,7 +338,8 @@
               "work": "\\(<\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "4xgyAGAcETWIW3qQPdpP",
@@ -357,7 +368,8 @@
               "work": "\\(-7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "6olKqSYXYDTZO6Mc4jQM",
@@ -386,7 +398,8 @@
               "work": "\\(-3, -2, -1, 0, 1, 2, 3, 4\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "8DGGUgvefnhF2KbgDrZt",
@@ -415,7 +428,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "8nXRAf6nSxOj03DKUgvG",
@@ -444,7 +458,8 @@
               "work": "\\(21\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "9gMnCH1XYsT1DCuNH4cw",
@@ -473,7 +488,8 @@
               "work": "\\(50^\\circ\\text{C}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "bNQeED9qVoCFoen3SE7n",
@@ -502,7 +518,8 @@
               "work": "\\(5\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "BWqmDLXj98glejqvaNNG",
@@ -531,7 +548,8 @@
               "work": "\\(-7\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "CbhR6aIIYSdg7DIHEb4j",
@@ -560,7 +578,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "CDL6xhM59h5iGb6WRQoa",
@@ -589,7 +608,8 @@
               "work": "\\(9278\\text{ m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "CZMlexskbW9Ggxq9esKR",
@@ -618,7 +638,8 @@
               "work": "\\(-28\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "e7REtCPRstfFe92l4y1y",
@@ -647,7 +668,8 @@
               "work": "\\(600\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "F9zj7znLSsGeV5pbgVMP",
@@ -676,7 +698,8 @@
               "work": "\\(-3, -2, -1, 0, 1, 2, 3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "FpxIbniqUdkkHv0ZF3BB",
@@ -705,7 +728,8 @@
               "work": "<svg width=\"340\" height=\"90\" viewBox=\"0 0 340 90\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Main line -->\n    <line x1=\"20\" y1=\"45\" x2=\"320\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- Left Arrow -->\n    <path d=\"M 20 45 L 28 41 L 28 49 Z\" fill=\"#1e293b\"/>\n    <!-- Right Arrow -->\n    <path d=\"M 320 45 L 312 41 L 312 49 Z\" fill=\"#1e293b\"/>\n    <line x1=\"30\" y1=\"40\" x2=\"30\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"30\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-10</text><line x1=\"44\" y1=\"40\" x2=\"44\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"40\" x2=\"58\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"58\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-8</text><line x1=\"72\" y1=\"40\" x2=\"72\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"40\" x2=\"86\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"86\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-6</text><line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"40\" x2=\"114\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"114\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-4</text><line x1=\"128\" y1=\"40\" x2=\"128\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"142\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-2</text><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"184\" y1=\"40\" x2=\"184\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"198\" y1=\"40\" x2=\"198\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"198\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"212\" y1=\"40\" x2=\"212\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"226\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"240\" y1=\"40\" x2=\"240\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"254\" y1=\"40\" x2=\"254\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"254\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"268\" y1=\"40\" x2=\"268\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"282\" y1=\"40\" x2=\"282\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"282\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"296\" y1=\"40\" x2=\"296\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"40\" x2=\"310\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"310\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text>\n    <circle cx=\"100\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"114\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"128\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"156\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/>\n  </svg>"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "FQc16g0RDqI9fXoNgKiA",
@@ -734,7 +758,8 @@
               "work": "\\(\\text{(i) } 36 \\quad \\text{and} \\quad \\text{(ii) } -36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "fRrmTpYGwEhnGKEe3b26",
@@ -763,7 +788,8 @@
               "work": "\\(-45\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "GDw7HUcjTgbf2i6vLcYC",
@@ -792,7 +818,8 @@
               "work": "\\(-7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "gfL6zbGBBtGt0h1ZoJ0r",
@@ -821,7 +848,8 @@
               "work": "\\(<\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "GTgUhkBXPfLryI5arR1l",
@@ -850,7 +878,8 @@
               "work": "\\(-36, -32, -28, -24\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "GvZEb3kLTbeiYHecLCag",
@@ -879,7 +908,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "HYpZ66MKSXVGiXl15U5M",
@@ -908,7 +938,8 @@
               "work": "<svg width=\"340\" height=\"90\" viewBox=\"0 0 340 90\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Main line -->\n    <line x1=\"20\" y1=\"45\" x2=\"320\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- Left Arrow -->\n    <path d=\"M 20 45 L 28 41 L 28 49 Z\" fill=\"#1e293b\"/>\n    <!-- Right Arrow -->\n    <path d=\"M 320 45 L 312 41 L 312 49 Z\" fill=\"#1e293b\"/>\n    <line x1=\"30\" y1=\"40\" x2=\"30\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"30\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-10</text><line x1=\"44\" y1=\"40\" x2=\"44\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"40\" x2=\"58\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"58\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-8</text><line x1=\"72\" y1=\"40\" x2=\"72\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"40\" x2=\"86\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"86\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-6</text><line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"40\" x2=\"114\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"114\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-4</text><line x1=\"128\" y1=\"40\" x2=\"128\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"142\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-2</text><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"184\" y1=\"40\" x2=\"184\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"198\" y1=\"40\" x2=\"198\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"198\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"212\" y1=\"40\" x2=\"212\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"226\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"240\" y1=\"40\" x2=\"240\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"254\" y1=\"40\" x2=\"254\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"254\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"268\" y1=\"40\" x2=\"268\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"282\" y1=\"40\" x2=\"282\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"282\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"296\" y1=\"40\" x2=\"296\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"40\" x2=\"310\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"310\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text>\n    <circle cx=\"128\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"156\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"184\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"198\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"212\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/>\n  </svg>"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "iikZdtR8ft52G8pn08SV",
@@ -937,7 +968,8 @@
               "work": "\\(14\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "itWCoRv6QkEkFR4IvVMI",
@@ -966,7 +998,8 @@
               "work": "\\(32\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "JdWiojJRIbhv8KBDqbK7",
@@ -995,7 +1028,8 @@
               "work": "<svg width=\"340\" height=\"90\" viewBox=\"0 0 340 90\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:8px; border:1px solid #e2e8f0; display:block; margin:10px auto;\">\n    <!-- Main line -->\n    <line x1=\"20\" y1=\"45\" x2=\"320\" y2=\"45\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n    <!-- Left Arrow -->\n    <path d=\"M 20 45 L 28 41 L 28 49 Z\" fill=\"#1e293b\"/>\n    <!-- Right Arrow -->\n    <path d=\"M 320 45 L 312 41 L 312 49 Z\" fill=\"#1e293b\"/>\n    <line x1=\"30\" y1=\"40\" x2=\"30\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"30\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-10</text><line x1=\"44\" y1=\"40\" x2=\"44\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"40\" x2=\"58\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"58\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-8</text><line x1=\"72\" y1=\"40\" x2=\"72\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"86\" y1=\"40\" x2=\"86\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"86\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-6</text><line x1=\"100\" y1=\"40\" x2=\"100\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"40\" x2=\"114\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"114\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-4</text><line x1=\"128\" y1=\"40\" x2=\"128\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"142\" y1=\"40\" x2=\"142\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"142\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">-2</text><line x1=\"156\" y1=\"40\" x2=\"156\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"170\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">0</text><line x1=\"184\" y1=\"40\" x2=\"184\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"198\" y1=\"40\" x2=\"198\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"198\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">2</text><line x1=\"212\" y1=\"40\" x2=\"212\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"226\" y1=\"40\" x2=\"226\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"226\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">4</text><line x1=\"240\" y1=\"40\" x2=\"240\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"254\" y1=\"40\" x2=\"254\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"254\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">6</text><line x1=\"268\" y1=\"40\" x2=\"268\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"282\" y1=\"40\" x2=\"282\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"282\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">8</text><line x1=\"296\" y1=\"40\" x2=\"296\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"40\" x2=\"310\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"310\" y=\"65\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"10\" font-weight=\"600\" font-family=\"'Outfit'\">10</text>\n    <circle cx=\"58\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"86\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"114\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/><circle cx=\"142\" cy=\"45\" r=\"5\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.5\"/>\n  </svg>"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "lXlwNCEF58RWo6NXYoEo",
@@ -1024,7 +1058,8 @@
               "work": "\\(-4, -7, -10\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "mp33Y3XmFJvC6DQ88ZJl",
@@ -1053,7 +1088,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "nkseONJ2un1rXLhbYQqp",
@@ -1082,7 +1118,8 @@
               "work": "\\(50\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "OarD8KXNSSitLlfoOeOD",
@@ -1111,7 +1148,8 @@
               "work": "\\(-9\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "OF9GA3iX0eYS5NDVCx2G",
@@ -1140,7 +1178,8 @@
               "work": "\\(35\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "ojLi5iCnLVqOMeMtFORG",
@@ -1169,7 +1208,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "OnOJiZNrOs1yjPRXZ63G",
@@ -1198,7 +1238,8 @@
               "work": "\\(-16\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "OySWAyniqLctYvLsQrLE",
@@ -1227,7 +1268,8 @@
               "work": "\\(-48\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "Qh1VRUyQABVtUJbpd9MU",
@@ -1256,7 +1298,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "qU6hhM7fZLTMSfqzuAWV",
@@ -1285,7 +1328,8 @@
               "work": "\\(<\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "RDnoFaiLNaXqfvO6khS0",
@@ -1314,7 +1358,8 @@
               "work": "\\(19\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "RqwzUlyOkb31tyaW4HK5",
@@ -1343,7 +1388,8 @@
               "work": "\\(>\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "RsR3GivA9jsd0wIbHwTu",
@@ -1371,7 +1417,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(3700\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Sp9MNAueCmg6IxyDwwjf",
@@ -1400,7 +1447,8 @@
               "work": "\\(-15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "SrxtklvNasmBmWbUn277",
@@ -1428,7 +1476,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(-1500, -150, -15, -8, 0, 7, 15, 150\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "sTgwo9kNNnwI9NlJ7PXt",
@@ -1457,7 +1506,8 @@
               "work": "\\(15^\\circ\\text{C}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "tGdp6Qc0ztoBF5MSgVlT",
@@ -1486,7 +1536,8 @@
               "work": "\\(9^\\circ\\text{C}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "tMeF18IfxalgLvhAHOVG",
@@ -1515,7 +1566,8 @@
               "work": "\\(10\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "u42d52GYQESgNEeFdIkx",
@@ -1544,7 +1596,8 @@
               "work": "\\(-12\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "UcKSm2VjPiVVd9QWW4HZ",
@@ -1573,7 +1626,8 @@
               "work": "\\(63\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "ULtjHYJXyJb4zciwIe1J",
@@ -1602,7 +1656,8 @@
               "work": "\\(270\\text{ m}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "V6ptP9yRI85ibZ1bYue9",
@@ -1631,7 +1686,8 @@
               "work": "\\(17\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "VI1R48uWD9FU3dPb9mAL",
@@ -1660,7 +1716,8 @@
               "work": "\\(-38 °C\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "W79FpwKcDe8gJTGkn93s",
@@ -1689,7 +1746,8 @@
               "work": "\\(-4\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "WHU9Cw4kIgd5jlMcYhFA",
@@ -1718,7 +1776,8 @@
               "work": "\\(-45, -40, -35\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "WMxc01eWraRE0bjDwGkm",
@@ -1747,7 +1806,8 @@
               "work": "\\(18\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "wOYI3S2lGDauJRBPwKjV",
@@ -1776,7 +1836,8 @@
               "work": "\\(-8\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "WTdiGhbvvzV2zz5hg8aw",
@@ -1805,7 +1866,8 @@
               "work": "\\(-22 °C\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "WVd5tx5xde8GglWXPi3h",
@@ -1834,7 +1896,8 @@
               "work": "\\(-155, -154, -153, -152, -151, -150\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "x3y2ykH9QwTGjF9Opfue",
@@ -1863,7 +1926,8 @@
               "work": "\\(-45\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "xau8lVefa5lNZDq1YvG0",
@@ -1892,7 +1956,8 @@
               "work": "\\(15\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "xDzlSQYsYDaK4bbf63GY",
@@ -1921,7 +1986,8 @@
               "work": "\\(-12\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "XMsCWwsfG9LzZFQGmxuD",
@@ -1950,7 +2016,8 @@
               "work": "\\(-11\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "xvYldWqTE410VXhplPEl",
@@ -1978,7 +2045,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(-18^\\circ\\text{C}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "yq5RwC5T065and02vw3G",
@@ -2006,7 +2074,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(-23\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "ZfGlVlsuAZoCTf4G5bev",
@@ -2034,7 +2103,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(27 \\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "ZjTg92axmlbD7OevOrwA",
@@ -2063,7 +2133,8 @@
               "work": "\\(-1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "znjMmtSH10jahjrJaleS",
@@ -2092,7 +2163,8 @@
               "work": "\\(-3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "ZO30blsWRlse37ji6ogI",
@@ -2121,7 +2193,8 @@
               "work": "\\(-5\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         }
       ]
     },
@@ -2155,7 +2228,8 @@
             {
               "explain": "Therefore, the y-values increase."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2186,7 +2260,8 @@
             {
               "explain": "\\( = -19 \\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     }

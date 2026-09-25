@@ -19,13 +19,15 @@
               "id": "y7-3g-q1a",
               "type": "short",
               "stem": "a) How many sticks are there in the fifth diagram?",
-              "answer": "21"
+              "answer": "21",
+              "xp": 2
             },
             {
               "id": "y7-3g-q1b",
               "type": "short",
               "stem": "b) How many sticks are there in the 50th diagram?",
-              "answer": "201"
+              "answer": "201",
+              "xp": 2
             }
           ],
           "answer": "N/A",
@@ -42,13 +44,15 @@
               "id": "y7-3g-q11a",
               "type": "short",
               "stem": "a) Find the perimeter of the rectangle.",
-              "answer": "2y + 18"
+              "answer": "2y + 18",
+              "xp": 2
             },
             {
               "id": "y7-3g-q11b",
               "type": "short",
               "stem": "b) Find the area of the rectangle.",
-              "answer": "5y + 20"
+              "answer": "5y + 20",
+              "xp": 2
             }
           ],
           "answer": "N/A",

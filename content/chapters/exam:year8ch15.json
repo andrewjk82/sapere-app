@@ -125,7 +125,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(12\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-15a-q7b",
@@ -157,7 +158,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(120\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "h = 12, Area = 120 cm^2"
@@ -269,7 +271,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(15\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q8b",
@@ -301,7 +304,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(120\\)"
                 }
-              ]
+              ],
+              "xp": 4
             }
           ],
           "answer": "x = 15, Area = 120 m^2"
@@ -471,7 +475,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(30\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q10b",
@@ -503,7 +508,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(21\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q10c",
@@ -535,7 +541,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(15 by 10.5\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q10d",
@@ -567,7 +574,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(94.5\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q10e",
@@ -599,7 +607,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(15\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y8-15a-q10f",
@@ -631,7 +640,8 @@
                   "explain": "Evaluate the mathematical expression and calculate the result.",
                   "work": "\\(157.5\\)"
                 }
-              ]
+              ],
+              "xp": 4
             }
           ],
           "answer": "See sub-questions for individual answers.",

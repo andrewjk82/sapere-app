@@ -29,7 +29,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q2",
@@ -52,7 +53,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q3",
@@ -75,7 +77,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q4",
@@ -98,7 +101,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q5",
@@ -121,7 +125,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q6",
@@ -144,7 +149,8 @@
           "timeLimit": 90,
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-20-practice-q7",
@@ -170,7 +176,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "2TiEa0S7802kxnSK04Pv",
@@ -198,7 +205,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "F = 6, E = 12, V = 8"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "6G0ff89neJ2uLLRf8h2L",
@@ -226,7 +234,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "V - E + F = 2 for all five Platonic solids (Euler's formula)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "09ug56WNhETeKwdAT2zl",
@@ -254,7 +263,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "All three shapes (E, F, and G) are prisms"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "aBuzYSXQxy1GI3jzUHdl",
@@ -282,7 +292,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "F = 6, E = 10, V = 6"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "DbMgjwpZtTWYgX0yHLxY",
@@ -310,7 +321,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "F = 4, E = 6, V = 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "FOUcpbqIUgjOBIS0FpMe",
@@ -338,7 +350,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "F = 5, E = 9, V = 6"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "gYW84ugbPXo3yUw7GGUv",
@@ -366,7 +379,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "Shapes D and E are polyhedra"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "jkiMfvyVa969omFCA7CS",
@@ -394,7 +408,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "F = 5, E = 8, V = 5"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "mDl4TBZ2YDy1kcoWQyQH",
@@ -422,7 +437,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "Only Shape A is a polyhedron"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "nCKo52mDIP3LflkqCgSY",
@@ -450,7 +466,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "Only Shape D is a prism"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "noMuAGc7hT6Y0SOgvxSO",
@@ -478,7 +495,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "(b) V - E + F = 2; (c) F = n + 1, E = 2n, V = n + 1; (d) V - E + F = (n + 1) - 2n + (n + 1) = 2"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "wmxAxsAKLuFECkgVTxTR",
@@ -506,7 +524,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "(b) V - E + F = 2; (c) F = n + 2, E = 3n, V = 2n; (d) V - E + F = 2n - 3n + (n + 2) = 2"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

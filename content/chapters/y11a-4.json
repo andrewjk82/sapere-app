@@ -45,7 +45,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "2r4c9WlMcusuYqNqM2BN",
@@ -80,7 +81,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "3WKoAHUocRfXX6xgA8Lk",
@@ -115,7 +117,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "3YLiIB4qQsXHjOYe9jq4",
@@ -157,7 +160,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "4cRHBQ8FNvTMdBdZKcrn",
@@ -194,7 +198,8 @@
           "meta": {
             "course": "Advanced",
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "4KU0IksLgW5h0vWHgAz7",
@@ -218,7 +223,8 @@
                   "explain": "The initial balance is $150,000. It earns $750 per month, so after n months, we add 750n.",
                   "work": "$$ B = 150000 + 750n $$"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "4KU0IksLgW5h0vWHgAz7_2",
@@ -240,7 +246,8 @@
                   "explain": "Solve for n by subtracting 150,000 and dividing by 750.",
                   "work": "$$ 750n \\le 6000 \\implies n \\le 8 $$"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "4KU0IksLgW5h0vWHgAz7_3",
@@ -266,7 +273,8 @@
                   "explain": "Since n must be greater than 16, the first valid integer month is 17.",
                   "work": "$$ n = 17 $$"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300,
@@ -309,7 +317,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5mp8RUumG6gnKZWZTFKR",
@@ -341,7 +350,8 @@
                   "explain": "Divide both sides by 3 to isolate \\(x\\).",
                   "work": "\\(x = 2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "5mp8RUumG6gnKZWZTFKR-sub2",
@@ -367,7 +377,8 @@
                   "explain": "Divide both sides by the positive coefficient 3 to solve for \\(x\\). Since 3 is positive, the inequality sign direction remains unchanged.",
                   "work": "\\(x \\ge 2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "Step 1: $0 = 3x - 6 \\implies x = 2$.\nStep 2: Line is increasing (slope 3), so it is $\\ge 0$ for $x \\ge 2$.",
@@ -420,7 +431,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5Yp2ANI5E16Rr1zksODI",
@@ -455,7 +467,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "6xEX9JmBxBpGg1M25nMT",
@@ -491,7 +504,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "7N2I5vb7hHHKFetWuBJ8",
@@ -518,7 +532,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "7OtGtsmFPW9xKnvnQ7vh",
@@ -565,7 +580,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "7WcRh29sqRvnvbHBsUqZ",
@@ -602,7 +618,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "8BgEaD2iGac1zD7BuO2f",
@@ -640,7 +657,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "8Dpx3rxhWSzLtG1vVYWY",
@@ -675,7 +693,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "9P859Ytwt6QswiY3XQhM",
@@ -716,7 +735,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "9sQwGrvqZ2G7F4dUl6Rp",
@@ -749,7 +769,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "11iA6IEgszSBaQMlKjXs",
@@ -794,7 +815,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "35KQiyObK0xv3cajdzxL",
@@ -825,7 +847,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "48H60PKD0OJFepdjDdny",
@@ -864,7 +887,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "A4wSzxRTtUMCUnuE2fua",
@@ -895,7 +919,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "A9gNVRWvJhPQATnXr736",
@@ -930,7 +955,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "AgMUvO2RlYFy0YJmGmAl",
@@ -961,7 +987,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "AVr4ITOwoh8OqGboWPoH",
@@ -1002,7 +1029,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bLNG2qrGqWeP5tWSE5sE",
@@ -1039,7 +1067,8 @@
           "meta": {
             "course": "Advanced",
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bqknLC0FY5Jask9aoMnZ",
@@ -1078,7 +1107,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "CVMYOubMhyEndJUCkEoA",
@@ -1114,7 +1144,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cxIDm4iCvT0Lgl8OeGvw",
@@ -1149,7 +1180,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cZOyJ8DpqNcn09XyHm1f",
@@ -1180,7 +1212,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Dg9SrHOS6mCIXfdmspNp",
@@ -1213,7 +1246,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "dm0lWE3773D9gzXFoHCH",
@@ -1249,7 +1283,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "dRWs11g3wmlExtUhWRkw",
@@ -1280,7 +1315,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "dTbpX5xNHaR31kEXGiSe",
@@ -1315,7 +1351,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "EJAR4aWrLZm4htwHDQOg",
@@ -1348,7 +1385,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "EXvWDrRqqlD0R6aT2Jjv",
@@ -1387,7 +1425,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "FAjrM3TxFQTF6toCjCV1",
@@ -1423,7 +1462,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "FbznkT9sJdAHEngd9DXQ",
@@ -1458,7 +1498,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "FZysdBsMgbjAvynT73jz",
@@ -1489,7 +1530,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "GnDb6aFhWOGVJqpDoVK7",
@@ -1521,7 +1563,8 @@
                   "explain": "Divide both sides by 30 to find \\(x\\).",
                   "work": "\\(x = 40\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "GnDb6aFhWOGVJqpDoVK7-sub2",
@@ -1551,7 +1594,8 @@
                   "explain": "Divide by 30. Since number of items must be a whole integer, we round up 23.33 to the next whole number.",
                   "work": "\\(x \\ge 23.33 \\implies x = 24\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "GnDb6aFhWOGVJqpDoVK7-sub3",
@@ -1581,7 +1625,8 @@
                   "explain": "Divide both sides by 30 to solve for \\(x\\).",
                   "work": "\\(x = 90\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "Step 1: Profit $P = 70n - (1200 + 40n) = 30n - 1200$. (i) $P=0 \\implies n=40$. (ii) $P \\ge -500 \\implies 30n \\ge 700 \\implies n \\ge 23.3 \\implies 24$. (iii) $P ge 1500 \\implies 30n \\ge 2700 \\implies n=90$.",
@@ -1627,7 +1672,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "HArsAcBIruItEaFZnXmM",
@@ -1656,7 +1702,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "HibFHZNEY5CRK9w2sRmn",
@@ -1693,7 +1740,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hzKzm7FEWsQs60rCWrSw",
@@ -1724,7 +1772,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "jATKW7a40VCyPEzq580b",
@@ -1741,7 +1790,8 @@
           "solution": "Divide by -2 and flip the sign:\n\\[-2x \\geq -10\\]\n\\[x \\leq \\frac{-10}{-2}\\]\n\\[x \\leq 5\\]",
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "JukEmuzN0RMnvBlu6LlQ",
@@ -1777,7 +1827,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "k636TsnDdWnnz9jySLEt",
@@ -1809,7 +1860,8 @@
                   "explain": "Divide both sides by 4 to solve for \\(x\\).",
                   "work": "\\(x = 1.5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "k636TsnDdWnnz9jySLEt-sub2",
@@ -1835,7 +1887,8 @@
                   "explain": "Divide both sides by the positive number 4.",
                   "work": "\\(x < 1.5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "Step 1: $3x - 2 = 4 - x \\implies 4x = 6 \\implies x = 1.5$.\nStep 2: Line 1 is increasing, Line 2 is decreasing. Line 1 < Line 2 for $x < 1.5$.",
@@ -1874,7 +1927,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "kMihqbAzrc8oy9YgTb96",
@@ -1909,7 +1963,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "KYrgvVxbMNj2ATbb5tyq",
@@ -1946,7 +2001,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "L0u8czzqcjKzjTIbi9Yy",
@@ -1991,7 +2047,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "l3UoBi7rJnAvq52l7vUT",
@@ -2029,7 +2086,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "L5tYjjdIMeongyjvkwOf",
@@ -2065,7 +2123,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "lAxcosBDfR95kld4hmci",
@@ -2096,7 +2155,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "LYmIPeaxhLOJqQFzkwdL",
@@ -2135,7 +2195,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "MD1SM5H6iHLFD3O4AG5D",
@@ -2170,7 +2231,8 @@
           "timeLimit": 60,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "mLkM3yeohJAEGi8BFHMz",
@@ -2197,7 +2259,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "naJObMX0VQW6oaDlD3v2",
@@ -2228,7 +2291,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "NXCLLhrvvU1Gwen7N5nx",
@@ -2264,7 +2328,8 @@
           "timeLimit": 60,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "oO9qi0cUIlXxJjQ8lwi4",
@@ -2301,7 +2366,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "OQ6TAOmFb2JtOyWu707i",
@@ -2336,7 +2402,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "oVeNdAlppLUhcikLsSsP",
@@ -2373,7 +2440,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "OWJgXyCMYMWj65x9aLtC",
@@ -2414,7 +2482,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "p62H90Lshc8DECtOTzk6",
@@ -2449,7 +2518,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "pF2XMHgW918DD0NbKqiC",
@@ -2480,7 +2550,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "PFQZe21U70JfJKVZOAEE",
@@ -2515,7 +2586,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "pIvBbINzFq2D803WuQcA",
@@ -2542,7 +2614,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "PjaKBz7NcoDbDq2fp5n2",
@@ -2577,7 +2650,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "Pt7RX97ssqRaQHZitzIU",
@@ -2612,7 +2686,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "PtR51zOqn9q8GxE8xDJk",
@@ -2648,7 +2723,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Pw3f8TRbfIk2MM8nb4Wj",
@@ -2689,7 +2765,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "qDrG6Het59TqZK1RHqjd",
@@ -2734,7 +2811,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "QJat8up0KBfSVjJUsOZX",
@@ -2765,7 +2843,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "R6Dn621gUOJlJGMEb7zp",
@@ -2796,7 +2875,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "r8ERxs4vutbiZgyjM0m7",
@@ -2837,7 +2917,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "rfSDSqxWFoFIr54pfH1u",
@@ -2874,7 +2955,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "RpKabfVjlQyyKmuvV9kR",
@@ -2911,7 +2993,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "rxtJwRziaJ3MQ1FNhFiY",
@@ -2953,7 +3036,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "rZRedTpkEN3zLSDaGWbu",
@@ -2992,7 +3076,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "S7y2Fp2dwlzznQygdaOQ",
@@ -3023,7 +3108,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "SKnYOWpefFnz8kAMUpYh",
@@ -3064,7 +3150,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sN0jaHmZKSBEsYEdXOQe",
@@ -3089,7 +3176,8 @@
           "solution": "Both endpoints include the \"equal to\" part (\\(\\leq\\)), so we use **closed circles** at both -4 and 2 and connect them.",
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "t64yfaYlVFfhteqiaSjT",
@@ -3126,7 +3214,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "TD9FVSkLrYkw0OgVlWMz",
@@ -3161,7 +3250,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "tQ2I09PuNwYkpPRBSG2w",
@@ -3202,7 +3292,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Tsx1qz4UIqqwzpNxg7z2",
@@ -3237,7 +3328,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ukp3WLXgggycz7u7nShR",
@@ -3274,7 +3366,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Ul2jxNgUfThURZdrTSzN",
@@ -3305,7 +3398,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "up0tforOKdFCWfeiBGae",
@@ -3342,7 +3436,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "uW2ucn4njeJVx0clk1m1",
@@ -3373,7 +3468,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "VClxa4LKWCvbOp0pkDkx",
@@ -3408,7 +3504,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "vGs6WLhO4hQGwbNdiArb",
@@ -3435,7 +3532,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ViZzerHbjOgkFTryjH2F",
@@ -3469,7 +3567,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "VJY3qZ1tcz6szWyhFffV",
@@ -3505,7 +3604,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "wHHGRlevXz9MVpunzs9e",
@@ -3546,7 +3646,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "xf9Bkba8RXjrCWW32p9f",
@@ -3583,7 +3684,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "xPFjzSE3KpQ0gkRF2yOH",
@@ -3610,7 +3712,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "xQJbEzcaOlA1vzb5A3sv",
@@ -3645,7 +3748,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "YCF4bmnbqFlpkCAxpuqp",
@@ -3680,7 +3784,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "yDIw6rwFhRrOrMZZF218",
@@ -3719,7 +3824,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "YlxFubrTH9n8Jw136DHO",
@@ -3754,7 +3860,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "yZ9h7hxjXaynCNbdmNRX",
@@ -3792,7 +3899,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Z9dlOfW9Yhz92W0CHMbL",
@@ -3823,7 +3931,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "zCWas5yBy4yI62J0diYp",
@@ -3850,7 +3959,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Ztl0sw25hhuHCZoHn0Y7",
@@ -3886,7 +3996,8 @@
           ],
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -3929,7 +4040,8 @@
           },
           "dna": {
             "dnaId": "ALG-EQ-01"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hg2020-q6",
@@ -3963,7 +4075,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y11a-4b-q8c",
@@ -3987,7 +4100,8 @@
               "work": "f_a(x) \\le 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -4021,7 +4135,8 @@
               "explain": "Examine whether the value is a perfect square. Because 5 is not a perfect square, the square root of the discriminant \\(\\sqrt{5}\\) is irrational, yielding two distinct irrational zeroes."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q1b",
@@ -4045,7 +4160,8 @@
               "explain": "Since the discriminant is strictly negative, the square root term \\(\\sqrt{\\Delta}\\) is imaginary. Therefore, the quadratic has no real zeroes."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q1c",
@@ -4073,7 +4189,8 @@
               "explain": "This results in exactly one unique real solution, which is a pair of equal rational zeroes (also known as a double root)."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q1d",
@@ -4101,7 +4218,8 @@
               "explain": "Because the coefficients are rational and the square root of the discriminant is rational, the quadratic has two distinct rational zeroes."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q1e",
@@ -4125,7 +4243,8 @@
               "explain": "Because the discriminant is negative, we cannot take a real square root of it. Thus, there are no real zeroes."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q1f",
@@ -4153,7 +4272,8 @@
               "explain": "This results in two distinct rational zeroes."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q3a",
@@ -4182,7 +4302,8 @@
               "work": "\\(144 - 4k = 0 \\implies 144 = 4k \\implies k = 36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4c-q4a",
@@ -4211,7 +4332,8 @@
               "work": "\\(16 - 4p \\ge 0 \\implies 16 \\ge 4p \\implies p \\le 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4c-q4b",
@@ -4244,7 +4366,8 @@
               "work": "\\(p \\ne 0 \\implies p \\le 3 \\text{ and } p \\ne 0\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q4c",
@@ -4274,7 +4397,8 @@
               "work": "20 \\ge 8p \\implies p \\le \\frac{20}{8} \\implies p \\le \\frac{5}{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q4d",
@@ -4304,7 +4428,8 @@
               "work": "24 \\ge 24p \\implies p \\le 1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q5a",
@@ -4333,7 +4458,8 @@
               "work": "\\(64 - 4\\lambda < 0 \\implies 64 < 4\\lambda \\implies \\lambda > 16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4c-q5b",
@@ -4362,7 +4488,8 @@
               "work": "\\(144 - 8\\lambda < 0 \\implies 144 < 8\\lambda \\implies \\lambda > 18\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q5c",
@@ -4395,7 +4522,8 @@
               "work": "\\(37 < 12\\lambda \\implies \\lambda > \\frac{37}{12}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q5d",
@@ -4428,7 +4556,8 @@
               "work": "\\(96 < 16\\lambda \\implies \\lambda > 6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q6a",
@@ -4457,7 +4586,8 @@
               "work": "\\(4g^2 = 100 \\implies g^2 = 25 \\implies g = \\pm 5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q6b",
@@ -4486,7 +4616,8 @@
               "work": "\\((g - 2)(g - 6) = 0 \\implies g = 2 \\quad \\text{or} \\quad g = 6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q6c",
@@ -4519,7 +4650,8 @@
               "work": "\\(g+2 = 6 \\implies g = 4; \\quad g+2 = -6 \\implies g = -8\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q6d",
@@ -4548,7 +4680,8 @@
               "work": "\\(-8g + 5 = 0 \\implies g = \\frac{5}{8} \\quad (\\text{since } 2(\\frac{5}{8})-1 \\ne 0)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q7",
@@ -4580,7 +4713,8 @@
                   "explain": "Simplify the squared term and multiplication.",
                   "work": "\\(\\Delta = 4g^2 - 12g\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4c-q7-sub2",
@@ -4606,7 +4740,8 @@
                   "explain": "Solve for \\(g\\).",
                   "work": "\\(g = 0 \\quad \\text{or} \\quad g = 3\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4c-q7-sub3",
@@ -4630,7 +4765,8 @@
                 {
                   "explain": "Since \\(y = 3\\) is a straight line, not a parabola (quadratic function), the value \\(g = 0\\) is mathematically invalid."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y11a-4c-q7-sub4",
@@ -4656,7 +4792,8 @@
                   "explain": "Simplify the final equation.",
                   "work": "\\(y = 3x^2 - 6x + 3\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "See detailed steps below.",
@@ -4690,7 +4827,8 @@
               "work": "(k - 6)(k + 6) \\ge 0 \\implies k \\le -6 \\quad \\mathrm{or} \\quad k \\ge 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q8b",
@@ -4720,7 +4858,8 @@
               "work": "(k - 4)(k + 4) \\ge 0 \\implies k \\le -4 \\quad \\mathrm{or} \\quad k \\ge 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q8c",
@@ -4750,7 +4889,8 @@
               "work": "(k - 2)(k + 6) \\ge 0 \\implies k \\le -6 \\quad \\mathrm{or} \\quad k \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q8d",
@@ -4780,7 +4920,8 @@
               "work": "(k - 7)(k + 1) \\ge 0 \\implies k \\le -1 \\quad \\mathrm{or} \\quad k \\ge 7"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q9a",
@@ -4810,7 +4951,8 @@
               "work": "(\\lambda - 4)(\\lambda + 4) < 0 \\implies -4 < \\lambda < 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q9b",
@@ -4840,7 +4982,8 @@
               "work": "(\\lambda - 4)(\\lambda + 4) > 0 \\implies \\lambda < -4 \\quad \\mathrm{or} \\quad \\lambda > 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q9c",
@@ -4870,7 +5013,8 @@
               "work": "\\lambda^2 + 4 \\ge 4 > 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q9d",
@@ -4900,7 +5044,8 @@
               "work": "0 < \\lambda < \\frac{3}{5}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q11a",
@@ -4930,7 +5075,8 @@
               "work": "\\Delta = (-6)^2 - 4(1)(9) = 0 \\implies x = 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q11bi",
@@ -4960,7 +5106,8 @@
               "work": "\\Delta = (-8)^2 - 4(1)(16) = 0 \\implies x = 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q11bii",
@@ -4990,7 +5137,8 @@
               "work": "\\Delta = 6^2 - 4(1)(10) = 36 - 40 = -4 < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q12a",
@@ -5020,7 +5168,8 @@
               "work": "\\Delta = 2^2 - 4(2)(5) = 4 - 40 = -36 < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q12bi",
@@ -5050,7 +5199,8 @@
               "work": "\\Delta = 4^2 - 4(1)(4) = 0 \\implies x = -2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q12bii",
@@ -5080,7 +5230,8 @@
               "work": "\\Delta = 2^2 - 4(1)(1) = 0 \\implies x = -1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q13ai",
@@ -5110,7 +5261,8 @@
               "work": "2x^2 + 4x - 5 = 0"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q13aii",
@@ -5138,7 +5290,8 @@
               "explain": "Since \\(\\Delta = 56 > 0\\) (strictly positive), the line intersects the circle at two distinct points."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q13bi",
@@ -5168,7 +5321,8 @@
               "work": "\\Delta = 6^2 - 4(2)(7) = 36 - 56 = -20 < 0 \\implies 0 \\mathrm{\\:intersections}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q13bii",
@@ -5198,7 +5352,8 @@
               "work": "\\Delta = (-6)^2 - 4(1)(9) = 36 - 36 = 0 \\implies 1 \\mathrm{\\:intersection}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q14",
@@ -5226,7 +5381,8 @@
                   "explain": "Subtract \\(x\\) and \\(b\\) from both sides to gather all terms on the left.",
                   "work": "\\(3x^2 - 6x + 2 - b = 0 \\implies 3x^2 - 6x + (2 - b) = 0\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q14-sub2",
@@ -5248,7 +5404,8 @@
                   "explain": "Simplify and solve for \\(b\\).",
                   "work": "\\(36 - 12(2 - b) = 0 \\implies 36 - 24 + 12b = 0 \\implies 12 + 12b = 0 \\implies b = -1\\)"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "solution": "See detailed steps below.",
@@ -5284,7 +5441,8 @@
                   "explain": "Simplify the inequality and solve for \\(m\\).",
                   "work": "\\(16m^2 - 20 > 0 \\implies m^2 > \\frac{5}{4} \\implies m < -\\frac{\\sqrt{5}}{2} \\quad \\text{or} \\quad m > \\frac{\\sqrt{5}}{2}\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q15-sub2",
@@ -5306,7 +5464,8 @@
                   "explain": "Substitute \\(x = 0\\) back into the circle equation to verify it has two intersection points.",
                   "work": "\\(0^2 + (y - 3)^2 = 4 \\implies y - 3 = \\pm 2 \\implies y = 1 \\quad \\text{or} \\quad y = 5\\)"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "solution": "See detailed steps below."
@@ -5341,7 +5500,8 @@
                   "explain": "Solve for \\(b\\) in terms of \\(m\\).",
                   "work": "\\(b = -\\frac{1}{8}m^2\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q16-sub2",
@@ -5363,7 +5523,8 @@
                   "explain": "Substitute \\(x = \\frac{m}{4}\\) back into the parabola equation to find the \\(y\\)-coordinate.",
                   "work": "\\(y = 2x^2 = 2\\left(\\frac{m}{4}\\right)^2 = 2\\left(\\frac{m^2}{16}\\right) = \\frac{m^2}{8}\\)"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "solution": "See detailed steps below."
@@ -5403,7 +5564,8 @@
               "explain": "Determine the corresponding values of \\(b\\) and write the line equations.",
               "work": "m = 2 \\implies b = -1 \\implies y = 2x - 1 \\\\ m = 6 \\implies b = -9 \\implies y = 6x - 9"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y11a-4c-q18",
@@ -5436,7 +5598,8 @@
               "explain": "Factorise the quadratic expression in \\(m\\) and solve the inequality.",
               "work": "9m^2 - 82m + 9 < 0 \\implies (9m - 1)(m - 9) < 0 \\implies \\frac{1}{9} < m < 9"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y11a-4c-q20",
@@ -5462,7 +5625,8 @@
             {
               "explain": "If \\(d < r\\), the line cuts the circle at two points (secant). If \\(d = r\\), the line touches the circle at one point (tangent). If \\(d > r\\), the line does not intersect the circle."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-4c-q10",
@@ -5489,7 +5653,8 @@
                   "explain": "Complete the square by adding the square of half the coefficient of \\(x\\), which is \\(\\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2}\\), to both sides.",
                   "work": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{y-c}{a} + \\frac{b^2}{4a^2}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q10b",
@@ -5510,7 +5675,8 @@
                   "explain": "Since the left side is a perfect square of a real number, it must be non-negative. If \\(\\Delta < 0\\), the right side is negative, which is a contradiction. Thus, no real solutions exist.",
                   "work": "\\mathrm{No\\:real\\:solutions}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q10c",
@@ -5531,7 +5697,8 @@
                   "explain": "Solve for \\(x\\) to show there is only one distinct root.",
                   "work": "x = -\\frac{b}{2a}"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q10d",
@@ -5552,7 +5719,8 @@
                   "explain": "Combine the terms over the common denominator to obtain the quadratic formula.",
                   "work": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "answer": "Complete the proofs for parts a, b, c, and d.",
@@ -5591,7 +5759,8 @@
                   "explain": "Observe that \\(\\Delta_2\\) is also a sum of a perfect square and a positive number, hence always positive.",
                   "work": "\\lambda^2 + 16 \\ge 16 > 0"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4c-q19b",
@@ -5612,7 +5781,8 @@
                   "explain": "Since the parabola opens upwards and its vertex/lowest parts must lie below the x-axis (as it passes through the negative y-intercept \\((0, -2)\\)), it must cross the x-axis twice: once on the left and once on the right of the y-axis. This guarantees two real and distinct roots.",
                   "work": "\\mathrm{Crosses\\:x-axis\\:twice}"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ],
           "answer": "Refer to proof steps for parts a and b.",
@@ -5655,7 +5825,8 @@
                   "explain": "Solve for \\(a\\) by dividing by 5.",
                   "work": "a = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q1b",
@@ -5681,7 +5852,8 @@
                   "explain": "Solve for \\(b\\) by dividing by -5.",
                   "work": "b = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q1c",
@@ -5707,7 +5879,8 @@
                   "explain": "Choosing these values makes one of the coefficients zero, which simplifies the equation to directly solve for the other constant.",
                   "work": "\\mathrm{Isolates\\:one\\:variable\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q1d",
@@ -5737,7 +5910,8 @@
                   "explain": "Substitute \\(a = 4\\) back to find \\(b\\), confirming it yields the same values.",
                   "work": "4 + b = 6 \\implies b = 2"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "solution": "See detailed steps below.",
@@ -5777,7 +5951,8 @@
                   "explain": "Divide by 5 to solve for \\(a\\).",
                   "work": "a = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q2b",
@@ -5803,7 +5978,8 @@
                   "explain": "Divide by -5 to solve for \\(b\\).",
                   "work": "b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q2c",
@@ -5829,7 +6005,8 @@
                   "explain": "Using these roots eliminates one variable and allows solving for the other directly.",
                   "work": "\\mathrm{Eliminates\\:one\\:term\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q2d",
@@ -5859,7 +6036,8 @@
                   "explain": "Substitute \\(a = 2\\) back into \\(a+b = 5\\) to find \\(b\\).",
                   "work": "2 + b = 5 \\implies b = 3"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "solution": "See detailed steps below.",
@@ -5896,7 +6074,8 @@
                   "explain": "Equate the coefficients of the quadratic term from both sides.",
                   "work": "a = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q3b",
@@ -5922,7 +6101,8 @@
                   "explain": "Evaluate the right-hand side, noting that the terms with \\(a\\) and \\(b\\) become zero.",
                   "work": "c = 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q3c",
@@ -5948,7 +6128,8 @@
                   "explain": "Solve the linear equation for \\(b\\).",
                   "work": "b = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q3d",
@@ -5974,7 +6155,8 @@
                   "explain": "Using this value simplifies the expanded terms \\((x-1)^2\\) and \\((x-1)\\) to 1, leaving a very simple equation to solve for \\(b\\).",
                   "work": "\\mathrm{Simplifies\\:arithmetic\\:to\\:1}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "solution": "See detailed steps below.",
@@ -6014,7 +6196,8 @@
                   "explain": "Equate the coefficients of \\(x^2\\) from both sides to find the value of \\(a\\).",
                   "work": "a = 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q4b",
@@ -6040,7 +6223,8 @@
                   "explain": "State the value of \\(c\\).",
                   "work": "c = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q4c",
@@ -6066,7 +6250,8 @@
                   "explain": "Solve for \\(b\\).",
                   "work": "b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q4d",
@@ -6092,7 +6277,8 @@
                   "explain": "Using \\(x=3\\) reduces all powers of \\((x-2)\\) to 1, which simplifies substitution math.",
                   "work": "\\mathrm{Reduces\\:arithmetic\\:complexity}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "solution": "See detailed steps below.",
@@ -6129,7 +6315,8 @@
               "work": "1(4-3)^2 + b(4-3) + 12 = 4^2 + 4 \\implies 1 + b + 12 = 20 \\implies b = 7"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q6b",
@@ -6159,7 +6346,8 @@
               "work": "3(3-2)^2 + b(3-2) + 12 = 3(3)^2 - 2(3) + 4 \\implies 15 + b = 25 \\implies b = 10"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q7a",
@@ -6189,7 +6377,8 @@
               "work": "1(-2+3)^2 + B(-2+3) + 9 = (-2)^2 \\implies 1 + B + 9 = 4 \\implies B = -6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q7b",
@@ -6219,7 +6408,8 @@
               "work": "1(4-3)^2 + B(4-3) + 9 = 4^2 \\implies 1 + B + 9 = 16 \\implies B = 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q7c",
@@ -6249,7 +6439,8 @@
               "work": "1(-3+4)^2 + B(-3+4) + 16 = (-3)^2 \\implies 17 + B = 9 \\implies B = -8"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q8a",
@@ -6279,7 +6470,8 @@
               "work": "3(-1+2)^2 + B(-1+2) + 4 = 3(-1)^2 + 2(-1) - 4 \\implies 7 + B = -3 \\implies B = -10"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q8b",
@@ -6309,7 +6501,8 @@
               "work": "2(3-2)^2 + q(3-2) - 5 = 2(3)^2 - 5(3) - 3 \\implies 2 + q - 5 = 0 \\implies q = 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q9",
@@ -6347,7 +6540,8 @@
               "work": "y = 2x^2 + 5x + 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4d-q10",
@@ -6381,7 +6575,8 @@
               "work": "18 - 4a + 4c = 2 \\implies a - c = 4 \\\\ (a+c) + (a-c) = 8 + 4 \\implies 2a = 12 \\implies a = 6 \\\\ c = 8 - 6 = 2 \\\\ b = 18 - 4(6) = -6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4d-q11",
@@ -6415,7 +6610,8 @@
               "work": "a + 2 + 1 = 5 \\implies a = 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4d-q14",
@@ -6447,7 +6643,8 @@
                   "explain": "Solve the system: \\(A = -B \\implies -4B = 8 \\implies B = -2\\) and \\(A = 2\\).",
                   "work": "A = 2, \\quad B = -2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q14b",
@@ -6477,7 +6674,8 @@
                   "explain": "Evaluate the final arithmetic expression.",
                   "work": "\\mathrm{Sum} = 2(144) + 2(169) - 2 = 288 + 338 - 2 = 624"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "See detailed steps below.",
@@ -6514,7 +6712,8 @@
               "explain": "State the identity theorem: since two quadratics (the LHS and the RHS) agree at three distinct points, they must be identical for all values of \\(x\\).",
               "work": "\\mathrm{Identity\\:holds\\:for\\:all\\:} x"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y11a-4d-q16",
@@ -6546,7 +6745,8 @@
                   "explain": "State the final algebraic identity.",
                   "work": "x^2 = (x-d)^2 + 2d(x-d) + d^2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q16b",
@@ -6572,7 +6772,8 @@
                   "explain": "For part (iii) \\(x - 12\\), substitute \\(d = 12\\) into the identity.",
                   "work": "x^2 = (x - 12)^2 + 24(x - 12) + 144"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q16c",
@@ -6598,7 +6799,8 @@
                   "explain": "Collect and simplify the terms.",
                   "work": "3(x-2)^2 + (12 - 4)(x-2) + (12 - 8 + 5) = 3(x-2)^2 + 8(x-2) + 9"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "solution": "See detailed steps below.",
@@ -6636,7 +6838,8 @@
                   "work": "a = 3"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 2
             },
             {
               "id": "y11a-4d-q5b",
@@ -6664,7 +6867,8 @@
                   "work": "c = 17"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 2
             },
             {
               "id": "y11a-4d-q5c",
@@ -6692,7 +6896,8 @@
                   "work": "20 + b = 6 \\implies b = -14"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 2
             },
             {
               "id": "y11a-4d-q5d",
@@ -6720,7 +6925,8 @@
                   "work": "3x^2 - 2x + 1 = 3(x+2)^2 - 14(x+2) + 17"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -6759,7 +6965,8 @@
                   "work": "A = 2"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y11a-4d-q12b",
@@ -6787,7 +6994,8 @@
                   "work": "2(1^2 - 0^2) + 2(2^2 - 1^2) + \\dots + 2(25^2 - 24^2) = 2(25^2 - 0) = 2(625) = 1250"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of A and B and the sum.",
@@ -6826,7 +7034,8 @@
                   "work": "11(2)^2 - 5(2) + 4 = 11(3-2)^2 + b(3-2) + 88 \\implies 38 = 11 + b + 88 \\implies b = -61"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y11a-4d-q13b",
@@ -6854,7 +7063,8 @@
                   "work": "11(0.01)^2 - 61(0.01) + 88 = 11(0.0001) - 0.61 + 88 = 0.0011 - 0.61 + 88 = 87.3911"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -6916,7 +7126,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y11a-4e-q1a",
@@ -6946,7 +7157,8 @@
               "work": "x < 5"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q1b",
@@ -6976,7 +7188,8 @@
               "work": "x > 4"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q1c",
@@ -7006,7 +7219,8 @@
               "work": "x \\le -4"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q1d",
@@ -7036,7 +7250,8 @@
               "work": "x \\ge -2"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q1e",
@@ -7066,7 +7281,8 @@
               "work": "x > 3"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q1f",
@@ -7096,7 +7312,8 @@
               "work": "x \\le -2"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y11a-4e-q2a",
@@ -7126,7 +7343,8 @@
               "work": "\\therefore\\; (1, 6]"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q2b",
@@ -7160,7 +7378,8 @@
               "work": "\\therefore\\; [-1, 4)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q2c",
@@ -7194,7 +7413,8 @@
               "work": "-3 \\le x < 3 \\implies [-3, 3)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q3",
@@ -7224,7 +7444,8 @@
               "work": "-9 < x < 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q4a",
@@ -7254,7 +7475,8 @@
               "work": "\\therefore\\; 1\\; \\mathrm{rational\\; zero}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q4b",
@@ -7284,7 +7506,8 @@
               "work": "\\therefore\\; 2\\; \\mathrm{irrational\\; zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q4c",
@@ -7314,7 +7537,8 @@
               "work": "\\therefore\\; 2\\; \\mathrm{rational\\; zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q5",
@@ -7412,7 +7636,8 @@
                   "explain": "State the final solutions.",
                   "work": "\\therefore\\; x = -1, \\; 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4e-q5b",
@@ -7438,7 +7663,8 @@
                   "explain": "Combine these intervals into the final solution statement.",
                   "work": "\\therefore\\; x < -1 \\; \\mathrm{or} \\; x > 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4e-q5c",
@@ -7464,7 +7690,8 @@
                   "explain": "Formulate this range as a single compound inequality.",
                   "work": "\\therefore\\; -1 < x < 4"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Look at the intersections and positions of the parabola relative to the horizontal x-axis.",
@@ -7553,7 +7780,8 @@
               "work": "\\therefore\\; -3 < x < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q6b",
@@ -7649,7 +7877,8 @@
               "work": "\\therefore\\; x \\le -5 \\; \\mathrm{or} \\; x \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q7a",
@@ -7679,7 +7908,8 @@
               "work": "-5 < x < 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q7b",
@@ -7709,7 +7939,8 @@
               "work": "x \\le -4 \\quad \\mathrm{or} \\quad x \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q7c",
@@ -7739,7 +7970,8 @@
               "work": "x < 0 \\quad \\mathrm{or} \\quad x > 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q7d",
@@ -7769,7 +8001,8 @@
               "work": "-4 \\le x \\le 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4e-q7e",
@@ -7799,7 +8032,8 @@
               "work": "x \\le -2 \\quad \\mathrm{or} \\quad x \\ge 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q7f",
@@ -7829,7 +8063,8 @@
               "work": "-2 < x < 0.5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q8a",
@@ -7859,7 +8094,8 @@
               "work": "64 \\ge 4k \\implies k \\le 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q8b",
@@ -7889,7 +8125,8 @@
               "work": "4k = 64 \\implies k = 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q8c",
@@ -7919,7 +8156,8 @@
               "work": "64 < 4k \\implies k > 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q9a",
@@ -7949,7 +8187,8 @@
               "work": "m \\le -2 \\quad \\mathrm{or} \\quad m \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q9b",
@@ -7979,7 +8218,8 @@
               "work": "m^2 = 4 \\implies m = \\pm 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q9c",
@@ -8009,7 +8249,8 @@
               "work": "-2 < m < 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-4e-q10",
@@ -8042,7 +8283,8 @@
               "explain": "Factorise the quadratic and state the final values of \\(\\ell\\).",
               "work": "(\\ell - 6)(\\ell + 2) = 0 \\implies \\ell = 6 \\quad \\mathrm{or} \\quad \\ell = -2"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11a-4e-q12",
@@ -8074,7 +8316,8 @@
                   "explain": "Formulate the area \\(A\\) as the product of the two perpendicular side lengths.",
                   "work": "A = x(13 - x)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4e-q12b",
@@ -8104,7 +8347,8 @@
                   "explain": "Identify the range of \\(x\\) that makes the product negative (between the roots).",
                   "work": "4 < x < 9"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for expression and solution interval.",
@@ -8142,7 +8386,8 @@
                   "explain": "Isolate the term for the third side.",
                   "work": "\\mathrm{Third\\; Side} = 80 - 2x"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4e-q13b",
@@ -8172,7 +8417,8 @@
                   "explain": "Identify the range of values for \\(x\\) and determine the minimum boundary.",
                   "work": "10 \\le x \\le 30 \\implies \\mathrm{smallest\\; } x = 10"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for expressions and calculations.",
@@ -8214,7 +8460,8 @@
                   "explain": "Substitute another simple value, e.g., \\(x = 3\\), to solve for \\(b\\).",
                   "work": "2(3)^2 - 3(3) + 5 = 2(3-2)^2 + b(3-2) + 7 \\implies 14 = 9 + b \\implies b = 5"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y11a-4e-q14b",
@@ -8244,7 +8491,8 @@
                   "explain": "Add the terms together to get the final result.",
                   "work": "\\therefore\\; 7.1518"
                 }
-              ]
+              ],
+              "xp": 4
             }
           ],
           "answer": "Refer to sub-questions for constants and evaluation.",
@@ -8287,7 +8535,8 @@
               "explain": "State the final values for \\(p\\), \\(q\\), and \\(r\\).",
               "work": "\\therefore\\; p = 2, \\; q = -2, \\; r = 2"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

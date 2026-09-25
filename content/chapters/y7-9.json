@@ -30,7 +30,8 @@
             {
               "explain": "Lilit has 324 stamps, so \\( 4N = 324 \\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -61,7 +62,8 @@
             {
               "explain": "Multiply both sides by 3: \\( x = 12 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

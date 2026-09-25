@@ -30,7 +30,8 @@
               "explain": "Add the faces together.",
               "work": "\\(2+3=5\\text{ faces}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-3ds-1-q2",
@@ -54,7 +55,8 @@
               "explain": "Add the single apex point at the top.",
               "work": "\\(4+1=5\\) vertices"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-3ds-1-q3",
@@ -74,7 +76,8 @@
               "explain": "A cube has 6 identical square faces (top, bottom, and 4 sides).",
               "work": "6 faces"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -112,7 +115,8 @@
               "explain": "Evaluate.",
               "work": "\\(V=60\\text{ cm}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-3ds-2-q2",
@@ -136,7 +140,8 @@
               "explain": "Evaluate.",
               "work": "\\(V=3\\text{ m}^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-3ds-2-q3",
@@ -160,7 +165,8 @@
               "explain": "Simplify \\(6\\times4=24\\), then divide.",
               "work": "\\(72=24h \\Rightarrow h=72\\div24=3\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

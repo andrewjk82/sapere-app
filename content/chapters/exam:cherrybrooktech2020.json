@@ -28,7 +28,8 @@
                   "explain": "Sketch a curve positive before $x=-3$, negative between $-3$ and $-1$, positive between $-1$ and $2$, negative after $2$.",
                   "work": "\\text{Sign chart: }+,\\,0,-,\\,0,+,\\,0,-"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "cths2020-q24b",
@@ -44,7 +45,8 @@
                   "explain": "Key features shift: max at $(-3,\\cdot)\\to(3,\\cdot)$; min at $(-1,\\cdot)\\to(1,\\cdot)$; max at $(2,\\cdot)\\to(-2,\\cdot)$.",
                   "work": "\\text{Reflected graph with max at }x=3,\\text{ min at }x=1"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "(a) $f'(x)$: zero at $x=-3$, $x=-1$, $x=2$; positive on $(-\\infty,-3)$ and $(-1,2)$; negative on $(-3,-1)$ and $(2,\\infty)$.\n(b) $f(-x)$: reflection of $f(x)$ in the $y$-axis; local max at $x=3$, local min at $x=1$, decreasing for large positive $x$.",
@@ -101,7 +103,8 @@
                   "explain": "Find points of inflection by setting \\(y'' = 0\\).",
                   "work": "12x + 6 = 0 \\Rightarrow x = -\\frac{1}{2}\n\\text{POI at } \\left(-\\frac{1}{2}, \\frac{3}{2}\\right)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "cths2020-q21b",
@@ -171,7 +174,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             }
           ],
           "manual": true,

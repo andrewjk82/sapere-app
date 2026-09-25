@@ -44,7 +44,8 @@
               "work": "\\(\\text{Final Answer: } 48\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-19a-q1b",
@@ -74,7 +75,8 @@
               "work": "\\(\\text{Median} = \\frac{45 + 45}{2}\\)\n\\(\\text{Median} = \\frac{90}{2} = 45\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-19a-q1c",
@@ -108,7 +110,8 @@
               "work": "\\(\\text{Final Answer: } 88\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-19a-q2a",
@@ -148,7 +151,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q2b",
@@ -184,7 +188,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q3",
@@ -221,7 +226,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year8ch19"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-19a-q4a",
@@ -257,7 +263,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-19a-q4b",
@@ -293,7 +300,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y8-19a-q4c",
@@ -327,7 +335,8 @@
             "The mean (\\(\\$14.95\\)) is a better indicator because the median ignores the extreme value of \\(\\$49.50\\).",
             "Both the mean and the median are equally good indicators of her usual spending.",
             "The median is a better indicator because it is higher than the mean."
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-19a-q5a",
@@ -361,7 +370,8 @@
               "work": "Therefore, the only way to get an average of 2 is if every single entry is exactly 2."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-19a-q5b",
@@ -399,7 +409,8 @@
               "work": "\\text{Number of 2s} = \\text{Number of 4s}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-19a-q5c",
@@ -433,7 +444,8 @@
               "work": "Therefore, the only way to get an average of 4 is if every single entry is exactly 4."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-19a-q6a",
@@ -473,7 +485,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q6b",
@@ -513,7 +526,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q7a",
@@ -549,7 +563,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q7b",
@@ -585,7 +600,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q7c",
@@ -621,7 +637,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q7d",
@@ -657,7 +674,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q8a",
@@ -696,7 +714,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q8b",
@@ -731,7 +750,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q8c",
@@ -763,7 +783,8 @@
           "timeLimit": 180,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q9a",
@@ -792,7 +813,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-19a-q10a",
@@ -821,7 +843,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y8-19a-q10b",
@@ -857,7 +880,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-19a-q10c",
@@ -893,7 +917,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1_1",
@@ -926,7 +951,8 @@
             {
               "explain": "Therefore, the mode is 7 and 19."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1_2",
@@ -953,7 +979,8 @@
               "explain": "Subtract the lowest score from the highest score.",
               "work": "\\(\\text{Range} = 46 - 6 = 40\\)<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">6</text>\n</svg></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q1_3",
@@ -984,7 +1011,8 @@
               "explain": "Calculate the average.",
               "work": "\\(\\text{Median} = \\frac{19 + 22}{2} = 20.5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2a_data",
@@ -1009,7 +1037,8 @@
               "explain": "Add the \\(fx\\) values together.",
               "work": "\\(\\sum fx = 4 + 24 + 56 + 30 + 18 + 14 + 16 = 162\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b_1",
@@ -1036,7 +1065,8 @@
               "explain": "Subtract the lowest from the highest.",
               "work": "\\(\\text{Range} = 8 - 2 = 6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b_2",
@@ -1058,7 +1088,8 @@
             {
               "explain": "Therefore, the mode is 4."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b_3",
@@ -1087,7 +1118,8 @@
               "explain": "Since the cumulative frequency reaches 24 when \\(x=4\\), the 19th score falls into this group.",
               "work": "\\(\\text{Median} = 4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b_4",
@@ -1114,7 +1146,8 @@
               "explain": "Calculate the division and round to 1 decimal place.",
               "work": "\\(\\text{Mean} \\approx 4.378... \\approx 4.4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-19a-q2",
@@ -1154,7 +1187,8 @@
                   "explain": "Calculate the average of these two values.",
                   "work": "\\(\\text{Median} = \\frac{51 + 51}{2}\\)\n\\(\\text{Median} = \\frac{102}{2} = 51\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-19a-q2b",
@@ -1184,7 +1218,8 @@
                   "explain": "The question asks to round the answer correct to two decimal places. Look at the third decimal digit (6). Since it is 5 or greater, we round up the second digit.",
                   "work": "\\(50.416... \\rightarrow 50.42\\)\n\\(\\text{Final Answer: } 50.42\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers.",
@@ -1228,7 +1263,8 @@
                   "explain": "Calculate the average of the 10th and 11th values.",
                   "work": "\\(\\text{Median} = \\frac{32 + 32}{2}\\)\n\\(\\text{Median} = 32\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-19a-q6b",
@@ -1262,7 +1298,8 @@
                   "explain": "Divide the total sum by the number of values (20).",
                   "work": "\\(\\text{Mean} = \\frac{610}{20} = 30.5\\)\n\\(\\text{Final Answer: } 30.5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers.",
@@ -1337,7 +1374,8 @@
                   "explain": "Round to two decimal places. The third decimal digit is 3 (< 5), so we round down.",
                   "work": "\\(13.553... \\approx 13.55\\)\n\\(\\text{Final Answer: } 13.55 \\text{ hectares}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-19a-q8c",
@@ -1361,7 +1399,8 @@
                   "explain": "Therefore, the median (8.5 ha) better represents the \"typical\" suburb size in this city, while the mean gives a misleadingly high value due to the outliers.",
                   "work": "\\(\\text{Median is the better measure of centre.}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers.",
@@ -1409,7 +1448,8 @@
                   "explain": "Combine the stems and leaves into the final plot. Always include a key to explain what the plot means.",
                   "work": "See the correct plot in the answer:\n\n\\(\\begin{array}{r|l} 2 & 5\\ 6\\ 7\\ 8\\ 9\\ 9 \\\\ 3 & 0\\ 1\\ 1\\ 2\\ 3\\ 3\\ 7\\ 7\\ 7\\ 7\\ 8\\ 8 \\\\ 4 & 0\\ 3 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-19a-q10b",
@@ -1439,7 +1479,8 @@
                   "explain": "Calculate the average of these two middle values.",
                   "work": "\\(\\text{Median} = \\frac{3.2 + 3.3}{2}\\)\n\\(\\text{Median} = \\frac{6.5}{2} = 3.25\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y8-19a-q10c",
@@ -1469,7 +1510,8 @@
                   "explain": "Divide the total sum by the number of data points (20).",
                   "work": "\\(\\text{Mean} = \\frac{66.1}{20}\\)\n\\(\\text{Mean} = 3.305\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers.",
@@ -1514,7 +1556,8 @@
           "timeLimit": 180,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     }

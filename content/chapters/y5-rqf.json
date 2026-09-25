@@ -43,7 +43,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-q3e",
@@ -79,7 +80,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-q4c",
@@ -112,7 +114,8 @@
           "timeLimit": 30,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q2b",
@@ -144,7 +147,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q3c",
@@ -180,7 +184,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q4a",
@@ -212,7 +217,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p62-q7d",
@@ -241,7 +247,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p63-q2d",
@@ -269,7 +276,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -309,7 +317,8 @@
               "work": "\\text{Fraction} = \\frac{2}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q1b",
@@ -342,7 +351,8 @@
               "work": "\\text{Fraction} = \\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q1c",
@@ -379,7 +389,8 @@
               "work": "\\frac{3 \\div 3}{6 \\div 3} = \\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q1d",
@@ -416,7 +427,8 @@
               "work": "\\frac{8 \\div 8}{16 \\div 8} = \\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q1f",
@@ -453,7 +465,8 @@
               "work": "\\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q4a",
@@ -483,7 +496,8 @@
               "work": "\\frac{1}{6} > \\frac{1}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-q4b",
@@ -513,7 +527,8 @@
               "work": "\\frac{1}{3} > \\frac{3}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-q4d",
@@ -543,7 +558,8 @@
               "work": "\\frac{11}{12} > \\frac{5}{6}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-q4e",
@@ -573,7 +589,8 @@
               "work": "\\frac{4}{12} = \\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q1a",
@@ -606,7 +623,8 @@
               "work": "5 \\times \\frac{1}{2} = \\frac{5}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q1b",
@@ -639,7 +657,8 @@
               "work": "\\text{Improper Fraction} = \\frac{5}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q1c",
@@ -672,7 +691,8 @@
               "work": "\\frac{10 \\div 2}{6 \\div 2} = \\frac{5}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q2a",
@@ -701,7 +721,8 @@
               "work": "2\\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q2c",
@@ -734,7 +755,8 @@
               "work": "1\\frac{2}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q3a",
@@ -767,7 +789,8 @@
               "work": "\\text{Improper fraction} = \\frac{9}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q3b",
@@ -800,7 +823,8 @@
               "work": "\\text{Improper fraction} = \\frac{5}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q4b",
@@ -829,7 +853,8 @@
               "work": "1\\frac{2}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p61-q4c",
@@ -858,7 +883,8 @@
               "work": "2\\frac{3}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p62-q1a",
@@ -891,7 +917,8 @@
               "work": "\\text{Fraction} = \\frac{4}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q1b",
@@ -924,7 +951,8 @@
               "work": "\\text{Fraction} = \\frac{5}{6}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q1c",
@@ -953,7 +981,8 @@
               "work": "\\frac{4 \\div 2}{10 \\div 2} = \\frac{2}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p62-q1d",
@@ -982,7 +1011,8 @@
               "work": "\\frac{3}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q4a",
@@ -1008,7 +1038,8 @@
               "work": "\\frac{5}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q4b",
@@ -1034,7 +1065,8 @@
               "work": "\\frac{11}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q4c",
@@ -1060,7 +1092,8 @@
               "work": "\\frac{7}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q4d",
@@ -1086,7 +1119,8 @@
               "work": "\\frac{7}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q5a",
@@ -1112,7 +1146,8 @@
               "work": "4\\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q5b",
@@ -1138,7 +1173,8 @@
               "work": "2\\frac{2}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q5c",
@@ -1164,7 +1200,8 @@
               "work": "4\\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p62-q5d",
@@ -1190,7 +1227,8 @@
               "work": "2\\frac{1}{7}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-1-p63-q2a",
@@ -1215,7 +1253,8 @@
               "work": "\\frac{5}{10} > \\frac{4}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p63-q2b",
@@ -1240,7 +1279,8 @@
               "work": "\\frac{9}{12} = \\frac{9}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-1-p63-q2c",
@@ -1265,7 +1305,8 @@
               "work": "\\frac{5}{8} < \\frac{6}{8}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -1294,7 +1335,8 @@
               "work": "\\frac{5 + 1}{7} = \\frac{6}{7}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-2-p62-q6b",
@@ -1316,7 +1358,8 @@
               "work": "\\frac{7 + 4}{15} = \\frac{11}{15}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-2-p62-q7a",
@@ -1338,7 +1381,8 @@
               "work": "\\frac{9 - 2}{10} = \\frac{7}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-2-p62-q7b",
@@ -1360,7 +1404,8 @@
               "work": "\\frac{17 - 6}{20} = \\frac{11}{20}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-2-p63-q3a",
@@ -1382,7 +1427,8 @@
               "work": "\\frac{5 + 3}{9} = \\frac{8}{9}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-2-p63-q4a",
@@ -1404,7 +1450,8 @@
               "work": "\\frac{11 - 4}{12} = \\frac{7}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -1441,7 +1488,8 @@
               "work": "\\frac{2}{3} = \\frac{6}{9}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-q2b",
@@ -1471,7 +1519,8 @@
               "work": "\\frac{3}{4} = \\frac{6}{8}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-q2c",
@@ -1501,7 +1550,8 @@
               "work": "\\frac{4}{5} = \\frac{12}{15}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-q2d",
@@ -1531,7 +1581,8 @@
               "work": "\\frac{3}{5} = \\frac{6}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-q3a",
@@ -1564,7 +1615,8 @@
               "work": "\\frac{5}{6} = \\frac{10}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-q3b",
@@ -1597,7 +1649,8 @@
               "work": "\\frac{1}{3} = \\frac{2}{6}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-q3c",
@@ -1630,7 +1683,8 @@
               "work": "\\frac{3}{6} = \\frac{6}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-q3d",
@@ -1663,7 +1717,8 @@
               "work": "\\frac{2}{3} = \\frac{8}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p62-q2a",
@@ -1689,7 +1744,8 @@
               "work": "1 \\times 5 = 5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-p62-q2b",
@@ -1715,7 +1771,8 @@
               "work": "3 \\times 5 = 15"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-p62-q2c",
@@ -1741,7 +1798,8 @@
               "work": "1 \\times 25 = 25"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-p62-q2d",
@@ -1767,7 +1825,8 @@
               "work": "2 \\times 6 = 12"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-rqf-3-p62-q6c",
@@ -1793,7 +1852,8 @@
               "work": "\\frac{2}{8} + \\frac{1}{8} = \\frac{3}{8}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p62-q6d",
@@ -1819,7 +1879,8 @@
               "work": "\\frac{5}{10} + \\frac{4}{10} = \\frac{9}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p62-q7c",
@@ -1849,7 +1910,8 @@
               "work": "\\frac{3 \\div 3}{6 \\div 3} = \\frac{1}{2}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q3b",
@@ -1875,7 +1937,8 @@
               "work": "\\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q3c",
@@ -1905,7 +1968,8 @@
               "work": "\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q3d",
@@ -1931,7 +1995,8 @@
               "work": "\\frac{2}{8} + \\frac{3}{8} = \\frac{5}{8}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q4b",
@@ -1957,7 +2022,8 @@
               "work": "\\frac{11}{12} - \\frac{6}{12} = \\frac{5}{12}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q4c",
@@ -1987,7 +2053,8 @@
               "work": "\\frac{5 \\div 5}{20 \\div 5} = \\frac{1}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-3-p63-q4d",
@@ -2013,7 +2080,8 @@
               "work": "\\frac{7}{10} - \\frac{6}{10} = \\frac{1}{10}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -2042,7 +2110,8 @@
               "work": "\\frac{6 \\div 3}{15 \\div 3} = \\frac{2}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p62-q3b",
@@ -2064,7 +2133,8 @@
               "work": "\\frac{9 \\div 3}{12 \\div 3} = \\frac{3}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p62-q3c",
@@ -2086,7 +2156,8 @@
               "work": "\\frac{3 \\div 3}{9 \\div 3} = \\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p62-q3d",
@@ -2108,7 +2179,8 @@
               "work": "\\frac{15 \\div 3}{18 \\div 3} = \\frac{5}{6}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p63-q1a",
@@ -2130,7 +2202,8 @@
               "work": "\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p63-q1b",
@@ -2152,7 +2225,8 @@
               "work": "\\frac{10 \\div 10}{30 \\div 10} = \\frac{1}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p63-q1c",
@@ -2174,7 +2248,8 @@
               "work": "\\frac{25 \\div 25}{100 \\div 25} = \\frac{1}{4}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p63-q1d",
@@ -2196,7 +2271,8 @@
               "work": "\\frac{12 \\div 3}{15 \\div 3} = \\frac{4}{5}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-rqf-6-p63-q1e",
@@ -2218,7 +2294,8 @@
               "work": "\\frac{8 \\div 4}{12 \\div 4} = \\frac{2}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     }

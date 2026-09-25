@@ -22,7 +22,8 @@
           ],
           "answer": 0,
           "hint": "Exclusive inequality uses round brackets.",
-          "solution": "$x < 5$ means everything from negative infinity up to 5 (not included)."
+          "solution": "$x < 5$ means everything from negative infinity up to 5 (not included).",
+          "xp": 2
         },
         {
           "id": "s2a_12",
@@ -37,7 +38,8 @@
           ],
           "answer": null,
           "hint": "Greater than means towards positive infinity.",
-          "solution": "$x > -4$ starts at -4 (not included)."
+          "solution": "$x > -4$ starts at -4 (not included).",
+          "xp": 2
         },
         {
           "id": "s2a_15",
@@ -52,7 +54,8 @@
           ],
           "answer": 0,
           "hint": "Infinity means no upper bound.",
-          "solution": "$x > 3$"
+          "solution": "$x > 3$",
+          "xp": 2
         }
       ]
     }

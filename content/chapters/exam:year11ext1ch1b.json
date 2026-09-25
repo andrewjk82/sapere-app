@@ -36,7 +36,8 @@
               "work": "(b+2)(b+3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4b",
@@ -66,7 +67,8 @@
               "work": "(m+3)(m+4)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4c",
@@ -96,7 +98,8 @@
               "work": "(n+1)(n+7)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4d",
@@ -126,7 +129,8 @@
               "work": "(y+4)(y+5)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4e",
@@ -156,7 +160,8 @@
               "work": "(z+5)(z+6)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4f",
@@ -186,7 +191,8 @@
               "work": "(u+2)(u+11)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4g",
@@ -216,7 +222,8 @@
               "work": "(p-1)(p-4)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4h",
@@ -246,7 +253,8 @@
               "work": "(d-3)(d-5)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4i",
@@ -276,7 +284,8 @@
               "work": "(b-2)(b-7)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4j",
@@ -306,7 +315,8 @@
               "work": "(c-3)(c-6)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4k",
@@ -336,7 +346,8 @@
               "work": "(v-2)(v+3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4l",
@@ -366,7 +377,8 @@
               "work": "(w-3)(w+2)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4m",
@@ -396,7 +408,8 @@
               "work": "(x-5)(x+2)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4n",
@@ -426,7 +439,8 @@
               "work": "(k+5)(k-2)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4o",
@@ -456,7 +470,8 @@
               "work": "(q-7)(q+3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4p",
@@ -486,7 +501,8 @@
               "work": "(z+8)(z-4)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4q",
@@ -516,7 +532,8 @@
               "work": "(d-4)(d-9)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4r",
@@ -546,7 +563,8 @@
               "work": "(v-5)(v-9)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4s",
@@ -576,7 +594,8 @@
               "work": "(y-9)(y+8)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4t",
@@ -606,7 +625,8 @@
               "work": "(y+9)(y-5)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4u",
@@ -636,7 +656,8 @@
               "work": "(u-9)(u+4)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4v",
@@ -666,7 +687,8 @@
               "work": "(q+13)(q-3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4w",
@@ -696,7 +718,8 @@
               "work": "(v-20)(v+3)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q4x",
@@ -726,7 +749,8 @@
               "work": "(w+26)(w-2)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5a",
@@ -756,7 +780,8 @@
               "work": "(y+3)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5b",
@@ -786,7 +811,8 @@
               "work": "(z+4)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5c",
@@ -816,7 +842,8 @@
               "work": "(m+6)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5d",
@@ -846,7 +873,8 @@
               "work": "(n-5)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5e",
@@ -876,7 +904,8 @@
               "work": "(u-7)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5f",
@@ -906,7 +935,8 @@
               "work": "(y+9)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5g",
@@ -936,7 +966,8 @@
               "work": "(v-15)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q5h",
@@ -966,7 +997,8 @@
               "work": "(b-13)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6a",
@@ -996,7 +1028,8 @@
               "work": "y^2 + 10y + 25 = (y + 5)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6b",
@@ -1026,7 +1059,8 @@
               "work": "z^2 + 12z + 36 = (z + 6)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6c",
@@ -1056,7 +1090,8 @@
               "work": "m^2 - 16m + 64 = (m - 8)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6d",
@@ -1086,7 +1121,8 @@
               "work": "n^2 - 40n + 400 = (n - 20)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6e",
@@ -1116,7 +1152,8 @@
               "work": "v^2 + 3v + \\frac{9}{4} = (v + \\frac{3}{2})^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6f",
@@ -1146,7 +1183,8 @@
               "work": "w^2 - 5w + \\frac{25}{4} = (w - \\frac{5}{2})^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6g",
@@ -1176,7 +1214,8 @@
               "work": "k^2 + 60k + 900 = (k + 30)^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q6h",
@@ -1206,7 +1245,8 @@
               "work": "d^2 - 15d + \\frac{225}{4} = (d - \\frac{15}{2})^2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7a",
@@ -1240,7 +1280,8 @@
               "work": "\\((2y+1)(y+1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7b",
@@ -1274,7 +1315,8 @@
               "work": "\\((3z+1)(z+2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7c",
@@ -1308,7 +1350,8 @@
               "work": "\\((2m+1)(m+5)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7d",
@@ -1342,7 +1385,8 @@
               "work": "\\((5n+2)(n+2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7e",
@@ -1376,7 +1420,8 @@
               "work": "\\((3p-1)(p-1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7f",
@@ -1410,7 +1455,8 @@
               "work": "\\((2q-3)(q-2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7g",
@@ -1444,7 +1490,8 @@
               "work": "\\((3u-5)(u-1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7h",
@@ -1478,7 +1525,8 @@
               "work": "\\((5v-1)(2v-3)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7i",
@@ -1512,7 +1560,8 @@
               "work": "\\((3w-5)(w+1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7j",
@@ -1546,7 +1595,8 @@
               "work": "\\((3k+7)(k-1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7k",
@@ -1580,7 +1630,8 @@
               "work": "\\((2a+5)(a-1)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7l",
@@ -1614,7 +1665,8 @@
               "work": "\\((2b-1)(b+5)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7m",
@@ -1648,7 +1700,8 @@
               "work": "\\((3c+2)(c-4)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7n",
@@ -1682,7 +1735,8 @@
               "work": "\\((3d-5)(d+2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7o",
@@ -1716,7 +1770,8 @@
               "work": "\\((4m-3)(2m+5)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7p",
@@ -1750,7 +1805,8 @@
               "work": "\\((5n+2)(2n-3)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7q",
@@ -1784,7 +1840,8 @@
               "work": "\\((5p-2)(3p+4)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7r",
@@ -1818,7 +1875,8 @@
               "work": "\\((3q+5)(q+4)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7s",
@@ -1852,7 +1910,8 @@
               "work": "\\((7u-4)(u+2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7t",
@@ -1886,7 +1945,8 @@
               "work": "\\((7v-3)(v-3)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7u",
@@ -1920,7 +1980,8 @@
               "work": "\\((7w+2)(w-2)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7v",
@@ -1954,7 +2015,8 @@
               "work": "\\((3k-4)(k+6)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7w",
@@ -1988,7 +2050,8 @@
               "work": "\\((2x+3)(2x-5)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q7x",
@@ -2022,7 +2085,8 @@
               "work": "\\((2y-3)(y+7)\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 2
         },
         {
           "id": "y11e1-1b-q8a",
@@ -2052,7 +2116,8 @@
               "work": "(m-6)(m+6)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8b",
@@ -2082,7 +2147,8 @@
               "work": "n(n-36)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8c",
@@ -2112,7 +2178,8 @@
               "work": "(p-6)(p-20)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8d",
@@ -2146,7 +2213,8 @@
               "work": "\\((3q+8)(q+6)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8e",
@@ -2176,7 +2244,8 @@
               "work": "(u+4)(u^2+6)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8f",
@@ -2210,7 +2279,8 @@
               "work": "\\((7-v)(7+v)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8g",
@@ -2244,7 +2314,8 @@
               "work": "\\(w^2(49-w)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8h",
@@ -2274,7 +2345,8 @@
               "work": "(k+9)^2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8i",
@@ -2304,7 +2376,8 @@
               "work": "(x-20)(x+2)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8j",
@@ -2338,7 +2411,8 @@
               "work": "\\((3y-4)(y+6)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8k",
@@ -2372,7 +2446,8 @@
               "work": "\\((2z-11)(2z+1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8l",
@@ -2406,7 +2481,8 @@
               "work": "\\((m-5)(3m^2-2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8m",
@@ -2440,7 +2516,8 @@
               "work": "\\((3x+y)(x-2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8n",
@@ -2474,7 +2551,8 @@
               "work": "\\(4p^3q^3(2p+3q)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8o",
@@ -2508,7 +2586,8 @@
               "work": "\\((8u-9v)(8u+9v)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8p",
@@ -2538,7 +2617,8 @@
               "work": "(w-6)(w-10)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8q",
@@ -2572,7 +2652,8 @@
               "work": "\\((5x+13)(x-2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8r",
@@ -2606,7 +2687,8 @@
               "work": "\\((3y+2)(y+11)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8s",
@@ -2640,7 +2722,8 @@
               "work": "\\((3z+7)(z+4)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8t",
@@ -2674,7 +2757,8 @@
               "work": "\\(4k(k^2+3k+5)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8u",
@@ -2704,7 +2788,8 @@
               "work": "(m+16)(m-4)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8v",
@@ -2738,7 +2823,8 @@
               "work": "\\((4p-3q)(p-2)(p+2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8w",
@@ -2771,7 +2857,8 @@
               "work": "\\((x+y-z)(x+y+z)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q8x",
@@ -2805,7 +2892,8 @@
               "work": "\\((3b-4)^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9a",
@@ -2839,7 +2927,8 @@
               "work": "\\(5(m-3)(m+3)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9b",
@@ -2869,7 +2958,8 @@
               "work": "(a^2+b^2)(a-b)(a+b)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9c",
@@ -2899,7 +2989,8 @@
               "work": "y(y-1)(y+1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9d",
@@ -2933,7 +3024,8 @@
               "work": "\\(3(z-3)(z+2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9e",
@@ -2967,7 +3059,8 @@
               "work": "\\(k(4-k)(4+k)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9f",
@@ -3001,7 +3094,8 @@
               "work": "\\((9+c^2)(3-c)(3+c)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9g",
@@ -3035,7 +3129,8 @@
               "work": "\\(3(2p-3)(p+5)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9h",
@@ -3065,7 +3160,8 @@
               "work": "x(x+1)(x^2+1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9i",
@@ -3095,7 +3191,8 @@
               "work": "(m+4)(m-1)(m+1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9j",
@@ -3125,7 +3222,8 @@
               "work": "n(n-1)(n-8)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9k",
@@ -3155,7 +3253,8 @@
               "work": "(u-3)(u+3)(u^2+1)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1b-q9l",
@@ -3185,7 +3284,8 @@
               "work": "(y-1)(y+1)(b-3)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         }
       ]
     }

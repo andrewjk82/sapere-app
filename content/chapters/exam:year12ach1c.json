@@ -40,7 +40,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 2916 \\implies 2916 - 4 = 2912 = 7 \\times 416.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h6",
@@ -73,7 +74,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h8",
@@ -106,7 +108,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 243 \\implies 243 - 3 = 240 = 5 \\times 48.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h13",
@@ -139,7 +142,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h15",
@@ -172,7 +176,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 256 \\implies 256 - 4 = 252 = 7 \\times 36.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h20",
@@ -205,7 +210,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h22",
@@ -238,7 +244,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 320 \\implies 320 - 5 = 315 = 7 \\times 45.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h27",
@@ -271,7 +278,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h29",
@@ -304,7 +312,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 768 \\implies 768 - 3 = 765 = 5 \\times 153.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h34",
@@ -337,7 +346,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h36",
@@ -370,7 +380,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 5120 \\implies 5120 - 5 = 5115 = 11 \\times 465.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h41",
@@ -403,7 +414,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h43",
@@ -436,7 +448,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 512 \\implies 512 - 2 = 510 = 5 \\times 102.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h48",
@@ -469,7 +482,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h50",
@@ -502,7 +516,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 16384 \\implies 16384 - 4 = 16380 = 9 \\times 1820.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h55",
@@ -535,7 +550,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h57",
@@ -568,7 +584,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 2560 \\implies 2560 - 5 = 2555 = 7 \\times 365.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h62",
@@ -601,7 +618,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h64",
@@ -634,7 +652,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 640 \\implies 640 - 5 = 635 = 5 \\times 127.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h69",
@@ -667,7 +686,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h71",
@@ -700,7 +720,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 768 \\implies 768 - 3 = 765 = 5 \\times 153.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h76",
@@ -733,7 +754,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h78",
@@ -766,7 +788,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 3645 \\implies 3645 - 5 = 3640 = 7 \\times 520.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h83",
@@ -799,7 +822,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h85",
@@ -832,7 +856,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 20480 \\implies 20480 - 5 = 20475 = 9 \\times 2275.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h90",
@@ -865,7 +890,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h92",
@@ -898,7 +924,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 16384 \\implies 16384 - 4 = 16380 = 9 \\times 1820.\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h97",
@@ -931,7 +958,8 @@
               "explain": "Find the first term of the progression.",
               "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1c-h99",
@@ -964,7 +992,8 @@
               "explain": "Identify the smallest term satisfying the remainder condition.",
               "work": "\\(G_m = 640 \\implies 640 - 5 = 635 = 5 \\times 127.\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

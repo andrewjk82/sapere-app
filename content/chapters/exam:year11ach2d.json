@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2d-q1b",
@@ -64,7 +65,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2d-q1c",
@@ -93,7 +95,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2d-q1d",
@@ -122,7 +125,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2d-q2a",
@@ -151,7 +155,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

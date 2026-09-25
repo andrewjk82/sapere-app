@@ -25,7 +25,8 @@
                   "explain": "Find gradient between \\((-2, 0)\\) and \\((0, 4)\\).",
                   "work": "m = \\frac{4 - 0}{0 - (-2)} = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7b",
@@ -37,7 +38,8 @@
                   "explain": "Use point-slope form with \\((-3, 0)\\) and \\(m = 4\\).",
                   "work": "y = 4(x + 3) \\implies y = 4x + 12"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7c",
@@ -49,7 +51,8 @@
                   "explain": "Substitute \\(y = 0\\) into \\(y = \\frac{1}{2}x + 5\\).",
                   "work": "0 = \\frac{1}{2}x + 5 \\implies x = -10"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7d",
@@ -61,7 +64,8 @@
                   "explain": "Substitute \\(y = 0\\) into \\(y = \\frac{3}{4}x - 3\\).",
                   "work": "0 = \\frac{3}{4}x - 3 \\implies x = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7e",
@@ -73,7 +77,8 @@
                   "explain": "Use point-slope form with \\((-6, 0)\\) and \\(m = -1\\).",
                   "work": "y = -1(x + 6) \\implies y = -x - 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7f",
@@ -85,7 +90,8 @@
                   "explain": "Substitute \\(y = 0\\) into \\(y = -2x + 10\\).",
                   "work": "0 = -2x + 10 \\implies x = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-11c-q7g",
@@ -97,7 +103,8 @@
                   "explain": "Find gradient between \\((8, 0)\\) and \\((0, 2)\\).",
                   "work": "m = \\frac{2 - 0}{0 - 8} = -\\frac{1}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "a) 2, b) 12, c) -10, d) 4, e) -6, f) 5, g) -1/4",

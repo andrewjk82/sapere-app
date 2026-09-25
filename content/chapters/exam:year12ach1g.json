@@ -37,7 +37,8 @@
               "work": "\\(920 = P \\times 15.9374 \\implies P = \\frac{920}{15.9374} \\approx 57.73\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1g-q11-5",
@@ -67,7 +68,8 @@
               "work": "\\(950 = P \\times 15.9374 \\implies P = \\frac{950}{15.9374} \\approx 59.61\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1g-q11-8",
@@ -97,7 +99,8 @@
               "work": "\\(980 = P \\times 15.9374 \\implies P = \\frac{980}{15.9374} \\approx 61.49\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1g-q11-11",
@@ -127,7 +130,8 @@
               "work": "\\(1010 = P \\times 15.9374 \\implies P = \\frac{1010}{15.9374} \\approx 63.37\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1g-q11-14",
@@ -157,7 +161,8 @@
               "work": "\\(1040 = P \\times 15.9374 \\implies P = \\frac{1040}{15.9374} \\approx 65.26\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1g-hard-2",
@@ -190,7 +195,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 340 + 240 = 580\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-7",
@@ -223,7 +229,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 1190 + 840 = 2030\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-12",
@@ -256,7 +263,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 2040 + 1440 = 3480\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-17",
@@ -289,7 +297,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 2890 + 2040 = 4930\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-22",
@@ -322,7 +331,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 3740 + 2640 = 6380\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-27",
@@ -355,7 +365,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 4590 + 3240 = 7830\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-32",
@@ -388,7 +399,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 5440 + 3840 = 9280\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-37",
@@ -421,7 +433,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 6290 + 4440 = 10730\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-42",
@@ -454,7 +467,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 7140 + 5040 = 12180\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-47",
@@ -487,7 +501,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 7990 + 5640 = 13630\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-52",
@@ -520,7 +535,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 8840 + 6240 = 15080\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-57",
@@ -553,7 +569,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 9690 + 6840 = 16530\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-62",
@@ -586,7 +603,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 10540 + 7440 = 17980\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-67",
@@ -619,7 +637,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 11390 + 8040 = 19430\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-72",
@@ -652,7 +671,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 12240 + 8640 = 20880\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-77",
@@ -685,7 +705,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 13090 + 9240 = 22330\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-82",
@@ -718,7 +739,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 13940 + 9840 = 23780\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-87",
@@ -751,7 +773,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 14790 + 10440 = 25230\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-92",
@@ -784,7 +807,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 15640 + 11040 = 26680\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1g-hard-97",
@@ -817,7 +841,8 @@
               "explain": "Combine both sums to find the total sum of the first 8 terms.",
               "work": "\\(S_{\\text{total}} = S_{\\text{odd}} + S_{\\text{even}} = 16490 + 11640 = 28130\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

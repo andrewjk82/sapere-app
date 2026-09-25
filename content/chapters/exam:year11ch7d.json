@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11a-7d-q17c",
@@ -69,7 +70,8 @@
               "work": "\\[ D = (3, 2) \\]"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-7d-q18c",
@@ -102,7 +104,8 @@
               "explain": "Solve for y.",
               "work": "\\[ y = 8 \\]\nThe coordinates of \\(N\\) are \\((3, 8)\\)."
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11a-7d-q20a",
@@ -135,7 +138,8 @@
               "explain": "Calculate final value.",
               "work": "\\[ \\mu = 6 \\]"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

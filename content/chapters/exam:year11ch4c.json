@@ -36,7 +36,8 @@
               "work": "\\Delta = 4 \\implies \\mathrm{two\\:rational\\:roots}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q2b",
@@ -66,7 +67,8 @@
               "work": "\\Delta = 40 \\implies \\mathrm{two\\:irrational\\:roots}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q2c",
@@ -96,7 +98,8 @@
               "work": "\\Delta = -16 < 0 \\implies \\mathrm{no\\:real\\:roots}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q2d",
@@ -126,7 +129,8 @@
               "work": "\\Delta = 0 \\implies \\mathrm{one\\:double\\:rational\\:root}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q2e",
@@ -156,7 +160,8 @@
               "work": "\\Delta = -3 < 0 \\implies \\mathrm{no\\:real\\:roots}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q2f",
@@ -186,7 +191,8 @@
               "work": "\\sqrt{361} = 19 \\implies \\mathrm{two\\:distinct\\:rational\\:roots}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q3b",
@@ -217,7 +223,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q3c",
@@ -247,7 +254,8 @@
               "work": "16 - 12k - 24 = 0 \\implies -12k = 8 \\implies k = -\\frac{2}{3}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q3d",
@@ -277,7 +285,8 @@
               "work": "8(k-3) = 64 \\implies k - 3 = 8 \\implies k = 11"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

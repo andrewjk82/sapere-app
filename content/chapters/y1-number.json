@@ -17,7 +17,8 @@
           "answer": "6",
           "hint": "Add",
           "solution": "$3+3=6$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

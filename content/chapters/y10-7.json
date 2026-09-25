@@ -42,7 +42,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -94,7 +95,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1b",
@@ -152,7 +154,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1c",
@@ -197,7 +200,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1d",
@@ -242,7 +246,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1e",
@@ -287,7 +292,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1f",
@@ -345,7 +351,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1g",
@@ -390,7 +397,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1h",
@@ -435,7 +443,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1i",
@@ -480,7 +489,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1j",
@@ -525,7 +535,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1k",
@@ -570,7 +581,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q1l",
@@ -615,7 +627,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2a",
@@ -661,7 +674,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2b",
@@ -707,7 +721,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2c",
@@ -753,7 +768,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2d",
@@ -799,7 +815,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2e",
@@ -845,7 +862,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q2f",
@@ -891,7 +909,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3a",
@@ -930,7 +949,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3b",
@@ -969,7 +989,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3c",
@@ -1008,7 +1029,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3d",
@@ -1047,7 +1069,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3e",
@@ -1086,7 +1109,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q3f",
@@ -1125,7 +1149,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4a",
@@ -1177,7 +1202,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4b",
@@ -1229,7 +1255,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4c",
@@ -1268,7 +1295,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4d",
@@ -1307,7 +1335,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4e",
@@ -1346,7 +1375,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4f",
@@ -1385,7 +1415,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4g",
@@ -1424,7 +1455,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4h",
@@ -1463,7 +1495,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q4i",
@@ -1503,7 +1536,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7a-q5a",
@@ -1558,7 +1592,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q5b",
@@ -1613,7 +1648,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q5c",
@@ -1668,7 +1704,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q5d",
@@ -1723,7 +1760,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q6a",
@@ -1782,7 +1820,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q6b",
@@ -1841,7 +1880,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q6c",
@@ -1900,7 +1940,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q6d",
@@ -1959,7 +2000,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q7a",
@@ -2007,7 +2049,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q7b",
@@ -2055,7 +2098,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q7c",
@@ -2103,7 +2147,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7a-q8a",
@@ -2140,7 +2185,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q8b",
@@ -2177,7 +2223,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q8c",
@@ -2214,7 +2261,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q8d",
@@ -2251,7 +2299,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q9a",
@@ -2288,7 +2337,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q9b",
@@ -2325,7 +2375,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q9c",
@@ -2362,7 +2413,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q9d",
@@ -2399,7 +2451,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year10ch7a"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7a-q10a",
@@ -2452,7 +2505,8 @@
               "work": "<div style=\"text-align:center;margin:16px 0;\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\" width=\"350\" height=\"350\" style=\"font-family:sans-serif;\">\n  <defs>\n    <marker id=\"arr10a-x\" markerWidth=\"6\" markerHeight=\"4\" refX=\"6\" refY=\"2\" orient=\"auto\"><path d=\"M0,0 L6,2 L0,4 Z\" fill=\"#94a3b8\"/></marker>\n    <marker id=\"arr10a-y\" markerWidth=\"6\" markerHeight=\"4\" refX=\"3\" refY=\"0\" orient=\"auto\"><path d=\"M0,6 L3,0 L6,6 Z\" fill=\"#94a3b8\"/></marker>\n  </defs>\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"175\" x2=\"330\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arr10a-x)\"/>\n  <line x1=\"175\" y1=\"330\" x2=\"175\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arr10a-y)\"/>\n  <text x=\"322\" y=\"170\" font-size=\"13\" fill=\"#64748b\">x</text>\n  <text x=\"178\" y=\"20\" font-size=\"13\" fill=\"#64748b\">y</text>\n  <!-- Grid labels -->\n  <text x=\"171\" y=\"192\" font-size=\"11\" fill=\"#94a3b8\">O</text>\n  <!-- Axis of symmetry y = -x (dashed) -->\n  <line x1=\"20\" y1=\"330\" x2=\"330\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"5,4\"/>\n  <text x=\"285\" y=\"45\" font-size=\"11\" fill=\"#64748b\">y = −x</text>\n  <!-- Rotated parabola -->\n  <polyline points=\"311.1,233.3 301.9,227.3 293.1,221.5 284.5,216.1 276.3,210.9 268.3,206.1 260.7,201.6 253.4,197.4 246.4,193.5 239.7,189.9 233.3,186.7 227.3,183.7 221.5,181.1 216.1,178.7 210.9,176.7 206.1,175.0 201.6,173.6 197.4,172.5 193.5,171.7 189.9,171.3 186.7,171.1 183.7,171.3 181.1,171.7 178.7,172.5 176.7,173.6 175.0,175.0 173.6,176.7 172.5,178.7 171.7,181.1 171.3,183.7 171.1,186.7 171.3,189.9 171.7,193.5 172.5,197.4 173.6,201.6 175.0,206.1 176.7,210.9 178.7,216.1 181.1,221.5 183.7,227.3 186.7,233.3 189.9,239.7 193.5,246.4 197.4,253.4 201.6,260.7 206.1,268.3 210.9,276.3 216.1,284.5 221.5,293.1 227.3,301.9 233.3,311.1\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <!-- Key points -->\n  <circle cx=\"175\" cy=\"175\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"180\" y=\"168\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">Vertex (0,0)</text>\n  <!-- (1,1) → (0, -√2) -->\n  <circle cx=\"175\" cy=\"206\" r=\"4\" fill=\"#f97316\"/>\n  <text x=\"180\" y=\"210\" font-size=\"10\" fill=\"#f97316\">(1,1)→(0,−√2)</text>\n  <!-- (-1,1) → (√2, 0) -->\n  <circle cx=\"206\" cy=\"175\" r=\"4\" fill=\"#f97316\"/>\n  <text x=\"210\" y=\"172\" font-size=\"10\" fill=\"#f97316\">(−1,1)→(√2,0)</text>\n  <text x=\"80\" y=\"300\" font-size=\"12\" fill=\"#4f46e5\" font-weight=\"bold\">Rotated 135° clockwise</text>\n</svg>\n</div>"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-7a-q10b",
@@ -2506,7 +2560,8 @@
               "work": "<div style=\"text-align:center;margin:16px 0;\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 350\" width=\"350\" height=\"350\" style=\"font-family:sans-serif;\">\n  <defs>\n    <marker id=\"arr10b-x\" markerWidth=\"6\" markerHeight=\"4\" refX=\"6\" refY=\"2\" orient=\"auto\"><path d=\"M0,0 L6,2 L0,4 Z\" fill=\"#94a3b8\"/></marker>\n    <marker id=\"arr10b-y\" markerWidth=\"6\" markerHeight=\"4\" refX=\"3\" refY=\"0\" orient=\"auto\"><path d=\"M0,6 L3,0 L6,6 Z\" fill=\"#94a3b8\"/></marker>\n  </defs>\n  <!-- Axes (center at 280,175) -->\n  <line x1=\"20\" y1=\"175\" x2=\"330\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arr10b-x)\"/>\n  <line x1=\"280\" y1=\"330\" x2=\"280\" y2=\"20\" stroke=\"#94a3b8\" stroke-width=\"1.5\" marker-end=\"url(#arr10b-y)\"/>\n  <text x=\"322\" y=\"170\" font-size=\"13\" fill=\"#64748b\">x</text>\n  <text x=\"283\" y=\"20\" font-size=\"13\" fill=\"#64748b\">y</text>\n  <text x=\"274\" y=\"192\" font-size=\"11\" fill=\"#94a3b8\">O</text>\n  <!-- x=0 axis of symmetry (y-axis = x-axis here, horizontal) highlight -->\n  <text x=\"286\" y=\"140\" font-size=\"11\" fill=\"#64748b\">axis: y=0</text>\n  <!-- Rotated parabola x = -y² -->\n  <polyline points=\"142.5,230.0 153.3,227.8 163.6,225.6 173.5,223.4 183.0,221.2 192.0,219.0 200.6,216.8 208.7,214.6 216.4,212.4 223.7,210.2 230.5,208.0 236.9,205.8 242.8,203.6 248.3,201.4 253.4,199.2 258.0,197.0 262.2,194.8 265.9,192.6 269.2,190.4 272.1,188.2 274.5,186.0 276.5,183.8 278.0,181.6 279.1,179.4 279.8,177.2 280.0,175.0 279.8,172.8 279.1,170.6 278.0,168.4 276.5,166.2 274.5,164.0 272.1,161.8 269.2,159.6 265.9,157.4 262.2,155.2 258.0,153.0 253.4,150.8 248.3,148.6 242.8,146.4 236.9,144.2 230.5,142.0 223.7,139.8 216.4,137.6 208.7,135.4 200.6,133.2 192.0,131.0 183.0,128.8 173.5,126.6 163.6,124.4 153.3,122.2 142.5,120.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <!-- Key points -->\n  <circle cx=\"280\" cy=\"175\" r=\"5\" fill=\"#dc2626\"/>\n  <text x=\"285\" y=\"168\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\">Vertex (0,0)</text>\n  <!-- (1,1) → (-1, 1) -->\n  <circle cx=\"258\" cy=\"153\" r=\"4\" fill=\"#f97316\"/>\n  <text x=\"195\" y=\"150\" font-size=\"10\" fill=\"#f97316\">(1,1)→(−1,1)</text>\n  <!-- (-1,1) → (-1,-1) -->\n  <circle cx=\"258\" cy=\"197\" r=\"4\" fill=\"#f97316\"/>\n  <text x=\"193\" y=\"200\" font-size=\"10\" fill=\"#f97316\">(−1,1)→(−1,−1)</text>\n  <!-- (2,4) → (-4,2) -->\n  <circle cx=\"192\" cy=\"131\" r=\"4\" fill=\"#f97316\"/>\n  <text x=\"115\" y=\"128\" font-size=\"10\" fill=\"#f97316\">(2,4)→(−4,2)</text>\n  <text x=\"60\" y=\"300\" font-size=\"12\" fill=\"#4f46e5\" font-weight=\"bold\">Rotated 90° anticlockwise: x = −y²</text>\n</svg>\n</div>"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "nbsc2021y10-q6",
@@ -2534,7 +2589,8 @@
                   "explain": "Pitfall: forgetting to check the sign of \\(\\Delta\\) and just reading off the numeric value can lead to the wrong count of intercepts.",
                   "work": "\\(\\Delta = -12 \\lt 0 \\;\\Rightarrow\\; \\text{no real x-intercepts (0 x-intercepts)}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "nbsc2021y10-q6b",
@@ -2560,7 +2616,8 @@
                   "explain": "Pitfall: forgetting the negative sign in \\(x=-b/2a\\) (using \\(x=b/2a\\) instead) gives \\(x=-2\\), a wrong vertex.",
                   "work": "\\(\\text{Vertex} = (2,3)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -2599,7 +2656,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s4-q1b",
@@ -2634,7 +2692,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s4-q1c",
@@ -2665,7 +2724,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s4-q1d",
@@ -2700,7 +2760,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s4-q2",
@@ -2733,7 +2794,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q19d",
@@ -2772,7 +2834,8 @@
                     "svg": "fig:ee763fc124"
                   }
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "sth2013-q19d-ii",
@@ -2795,7 +2858,8 @@
                     "svg": "fig:4b07e8eef3"
                   }
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "sth2013-q19d-iii",
@@ -2822,7 +2886,8 @@
                     "svg": "fig:3259315260"
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         }
@@ -2865,7 +2930,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2911,7 +2977,8 @@
                   "explain": "Simplify the \\(y\\)-coordinate expression (the \\(1(0)\\) term vanishes).",
                   "work": "\\(y = \\dfrac{3t^2}{4}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2012-q33a-iii",
@@ -2950,7 +3017,8 @@
                   "explain": "State both solutions — a common mistake is to only report one of the two values of \\(t\\).",
                   "work": "\\(P=(1,3) \\text{ or } P=\\left(-\\dfrac{11}{4},\\dfrac{27}{4}\\right)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -2995,7 +3063,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 4
         },
         {
           "id": "jr2012-q33c",
@@ -3028,7 +3097,8 @@
                   "explain": "Multiply the two results together — the \\(a\\) and \\(c\\) factors cancel completely.",
                   "work": "\\(\\alpha\\beta(\\gamma+\\delta) = \\dfrac{c}{a}\\times\\left(-\\dfrac{a}{c}\\right) = -1\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "jr2012-q33c-ii",
@@ -3055,7 +3125,8 @@
                   "explain": "Add the two results — they are exact opposites, so they cancel to zero.",
                   "work": "\\(\\dfrac1\\alpha+\\dfrac1\\beta+\\gamma\\delta = -\\dfrac{b}{c}+\\dfrac{b}{c} = 0\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -3132,7 +3203,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2012-q33e",
@@ -3169,7 +3241,8 @@
                   "explain": "Multiply both sides by \\(22\\) to solve for \\(\\Sigma x^2\\).",
                   "work": "\\(\\Sigma(x^2) = 22\\times4479.04 = 98\\,538.88\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2012-q33e-ii",
@@ -3200,7 +3273,8 @@
                   "explain": "Substitute the new \\(\\Sigma x^2\\), new \\(n=17\\) and the exact (unrounded) new mean into the rewritten formula to avoid compounding rounding error.",
                   "work": "New \\(\\sigma=\\sqrt{\\dfrac{96\\,972.88}{17}-\\left(\\dfrac{1278}{17}\\right)^2}=\\sqrt{5704.287-5651.501}=\\sqrt{52.785}\\approx7.3\\) (1 d.p.)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -3245,7 +3319,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -3292,7 +3367,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -3345,7 +3421,8 @@
               "work": "\\( (-4, 0) \\text{ and } (-1, 0) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q1b",
@@ -3391,7 +3468,8 @@
               "work": "\\( (-\\frac{2}{3}, 0) \\text{ and } (4, 0) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q1c",
@@ -3424,7 +3502,8 @@
               "work": "\\( (-3, 0) \\text{ and } (-7, 0) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q1d",
@@ -3457,7 +3536,8 @@
               "work": "\\( (5, 0) \\text{ and } (1, 0) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q2a",
@@ -3503,7 +3583,8 @@
               "work": "Vertex: \\( (-4, -11) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q2b",
@@ -3549,7 +3630,8 @@
               "work": "Vertex: \\( (3, -5) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q2c",
@@ -3595,7 +3677,8 @@
               "work": "Vertex: \\( (-2, -5) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q2d",
@@ -3641,7 +3724,8 @@
               "work": "Vertex: \\( (-2, -7) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q3a",
@@ -3673,7 +3757,8 @@
               "work": "\\( a = \\frac{10}{-10} = -1 \\)\n\\( y = -1(x + 2)(x - 5) \\)\n\\( y = -(x + 2)(x - 5) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q3b",
@@ -3705,7 +3790,8 @@
               "work": "\\( a = \\frac{10}{5} = 2 \\)\n\\( y = 2(x - 2)(x - 6) \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q4a",
@@ -3737,7 +3823,8 @@
               "work": "\\( 16 = 16a \\)\n\\( a = 1 \\)\n\\( y = 1(x - 4)^2 - 3 \\)\n\\( y = (x - 4)^2 - 3 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q4b",
@@ -3769,7 +3856,8 @@
               "work": "\\( -8 = 4a \\)\n\\( a = -2 \\)\n\\( y = -2(x - 3)^2 + 6 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q5a",
@@ -3814,7 +3902,8 @@
               "work": "\\( y = 2(x - 3)^2 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q5c",
@@ -3859,7 +3948,8 @@
               "work": "\\( y = (x - 4)^2 - 5 \\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6a",
@@ -3916,7 +4006,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6b",
@@ -3973,7 +4064,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6c",
@@ -4030,7 +4122,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6d",
@@ -4070,7 +4163,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6e",
@@ -4110,7 +4204,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q6f",
@@ -4167,7 +4262,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-7h-q7a",
@@ -4212,7 +4308,8 @@
               "explain": "Final answer: (1, -8). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((1, -8)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q8a",
@@ -4244,7 +4341,8 @@
               "explain": "Final answer: 16 - 2x. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(16 - 2x\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q8b",
@@ -4276,7 +4374,8 @@
               "explain": "Final answer: A = 16x - 2x^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(A = 16x - 2x^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q8c",
@@ -4308,7 +4407,8 @@
               "explain": "Final answer: length 8 m, width 4 m. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "length 8 m, width 4 m"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q9a",
@@ -4353,7 +4453,8 @@
               "explain": "Final answer: (-2, -9). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((-2, -9)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q9b",
@@ -4398,7 +4499,8 @@
               "explain": "Final answer: (0, -5), (-5, 0), (1, 0). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\((0, -5), (-5, 0), (1, 0)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q9c",
@@ -4437,7 +4539,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y10-7h-q9d",
@@ -4482,7 +4585,8 @@
               "explain": "Final answer: -5 \\le x \\le 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(-5 \\le x \\le 1\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q10a",
@@ -4533,7 +4637,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y10-7h-q10b",
@@ -4576,7 +4681,8 @@
               "explain": "Therefore, the parabola satisfies \\(y < 0\\) for all \\(x\\) values **strictly between** \\(-1\\) and \\(3\\):",
               "work": "\\(-1 < x < 3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-7h-q11a",
@@ -4621,7 +4727,8 @@
               "work": "\\(-5 < x < 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7h-q11b",
@@ -4666,7 +4773,8 @@
               "work": "\\(x \\le -3 \\quad \\text{or} \\quad x \\ge -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7h-q11c",
@@ -4723,7 +4831,8 @@
               "work": "\\(x \\le -4 \\quad \\text{or} \\quad x \\ge 6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-7h-q7",
@@ -4759,7 +4868,8 @@
                   "explain": "Combine the \\( x \\) and \\( y \\) coordinates to write the final vertex point.",
                   "work": "Vertex: \\( (1, -8) \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q7b",
@@ -4789,7 +4899,8 @@
                   "explain": "Write the \\( x \\)-intercepts as coordinate points.",
                   "work": "\\( (-1, 0) \\text{ and } (3, 0) \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -4831,7 +4942,8 @@
                   "explain": "This can also be simplified by dividing both terms in the numerator by 2.",
                   "work": "\\( y = 16 - 2x \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q8b",
@@ -4857,7 +4969,8 @@
                   "explain": "Substitute these expressions into the area formula.",
                   "work": "\\( A = x(16 - 2x) \\)\nor \\( A = 16x - 2x^2 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q8c",
@@ -4886,7 +4999,8 @@
                   "explain": "Therefore, the dimensions that give the maximum area are 8 m and 4 m.",
                   "work": "Dimensions: \\( 8 \\text{ m and } 4 \\text{ m} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90,
@@ -4927,7 +5041,8 @@
                   "explain": "The equation is now in the form \\( y = a(x - h)^2 + k \\). The turning point is \\( (h, k) \\). Remember to flip the sign inside the bracket.",
                   "work": "Turning point: \\( (-2, -9) \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q9b",
@@ -4957,7 +5072,8 @@
                   "explain": "Write these as coordinate points.",
                   "work": "x-intercepts: \\( (-5, 0) \\) and \\( (1, 0) \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q9c",
@@ -4994,7 +5110,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q9d",
@@ -5034,7 +5151,8 @@
                   "explain": "Therefore, the solution is all \\( x \\)-values from \\( -5 \\) up to \\( 1 \\), inclusive.",
                   "work": "\\( -5 \\le x \\le 1 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -5087,7 +5205,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-7h-q10b",
@@ -5128,7 +5247,8 @@
                   "explain": "Therefore, the parabola satisfies \\(y < 0\\) for all \\(x\\) values **strictly between** \\(-1\\) and \\(3\\):",
                   "work": "\\(-1 < x < 3\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -5167,7 +5287,8 @@
           "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     }

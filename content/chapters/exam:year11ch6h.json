@@ -51,7 +51,8 @@
               "work": "\\(\\text{Total} = 80 + 124.6 + 167.6 = 372.2 \\approx 372\\text{ km}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

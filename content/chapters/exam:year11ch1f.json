@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "41b587abf81daca012bf2ff6936ba675",
@@ -68,7 +69,8 @@
               "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(0\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "58147252bdc92d59f284c90760ee55c8",
@@ -97,7 +99,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "8e255461b5cb152124f6fa334ce970d0",
@@ -118,7 +121,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "8fe204292b3eb597966dd9927308c371",
@@ -143,7 +147,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "a0ad87daccd6c3b2e3fa255b9709c93f",
@@ -168,7 +173,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "bf64dfbabcdddbd2f3536781c189b76f",
@@ -189,7 +195,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11-1f-h1",
@@ -213,7 +220,8 @@
               "work": "\\((1x - 2)(5x + 10)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h2",
@@ -237,7 +245,8 @@
               "work": "\\((1x - 2)(7x + 12)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h3",
@@ -261,7 +270,8 @@
               "work": "\\((1x - 2)(9x + 14)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h4",
@@ -285,7 +295,8 @@
               "work": "\\((1x - 2)(11x + 16)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h9",
@@ -309,7 +320,8 @@
               "work": "\\((2x + 3)(4x^2 - 6x + 9)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h10",
@@ -333,7 +345,8 @@
               "work": "\\((3x + 4)(9x^2 - 12x + 16)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h11",
@@ -357,7 +370,8 @@
               "work": "\\((4x + 5)(16x^2 - 20x + 25)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h12",
@@ -381,7 +395,8 @@
               "work": "\\((5x + 6)(25x^2 - 30x + 36)\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h21",
@@ -405,7 +420,8 @@
               "work": "\\(\\frac{x^2 + 2x + 4}{x + 2}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h22",
@@ -429,7 +445,8 @@
               "work": "\\(\\frac{x^2 + 3x + 9}{x + 3}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h23",
@@ -453,7 +470,8 @@
               "work": "\\(\\frac{x^2 + 4x + 16}{x + 4}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h24",
@@ -477,7 +495,8 @@
               "work": "\\(\\frac{x^2 + 5x + 25}{x + 5}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h25",
@@ -501,7 +520,8 @@
               "work": "\\(\\frac{(x + 2)(x + 3)}{(x - 2)(x - 3)}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h26",
@@ -525,7 +545,8 @@
               "work": "\\(\\frac{(x + 3)(x + 4)}{(x - 3)(x - 4)}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h27",
@@ -549,7 +570,8 @@
               "work": "\\(\\frac{(x + 4)(x + 5)}{(x - 4)(x - 5)}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h28",
@@ -573,7 +595,8 @@
               "work": "\\(\\frac{(x + 5)(x + 6)}{(x - 5)(x - 6)}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h33",
@@ -597,7 +620,8 @@
               "work": "\\(\\frac{(x - 2)x^2}{x(x - 2)(x + 2)} = \\frac{x}{x + 2}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h34",
@@ -621,7 +645,8 @@
               "work": "\\(\\frac{(x - 3)x^2}{x(x - 3)(x + 3)} = \\frac{x}{x + 3}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h35",
@@ -645,7 +670,8 @@
               "work": "\\(\\frac{(x - 4)x^2}{x(x - 4)(x + 4)} = \\frac{x}{x + 4}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h36",
@@ -669,7 +695,8 @@
               "work": "\\(\\frac{(x - 5)x^2}{x(x - 5)(x + 5)} = \\frac{x}{x + 5}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h37",
@@ -693,7 +720,8 @@
               "work": "\\(\\frac{(x - 2)(x - 4)}{(x - 2)^2} \\times \\frac{x(x - 2)}{x(x - 3)} = \\frac{x - 4}{x - 3}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h38",
@@ -717,7 +745,8 @@
               "work": "\\(\\frac{(x - 3)(x - 5)}{(x - 3)^2} \\times \\frac{x(x - 3)}{x(x - 4)} = \\frac{x - 5}{x - 4}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h39",
@@ -741,7 +770,8 @@
               "work": "\\(\\frac{(x - 4)(x - 6)}{(x - 4)^2} \\times \\frac{x(x - 4)}{x(x - 5)} = \\frac{x - 6}{x - 5}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h40",
@@ -765,7 +795,8 @@
               "work": "\\(\\frac{(x - 5)(x - 7)}{(x - 5)^2} \\times \\frac{x(x - 5)}{x(x - 6)} = \\frac{x - 7}{x - 6}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h41",
@@ -789,7 +820,8 @@
               "work": "\\(x^2 - 2x - 4 = 0 \\Rightarrow (x - 3)(x + 1) = 0 \\Rightarrow x = -1, 3\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h42",
@@ -813,7 +845,8 @@
               "work": "\\(x^2 - 3x - 5 = 0 \\Rightarrow (x - 4)(x + 1) = 0 \\Rightarrow x = -1, 4\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h43",
@@ -837,7 +870,8 @@
               "work": "\\(x^2 - 4x - 6 = 0 \\Rightarrow (x - 5)(x + 1) = 0 \\Rightarrow x = -1, 5\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h44",
@@ -861,7 +895,8 @@
               "work": "\\(x^2 - 5x - 7 = 0 \\Rightarrow (x - 6)(x + 1) = 0 \\Rightarrow x = -1, 6\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h45",
@@ -885,7 +920,8 @@
               "work": "\\(-4x + 12 = 0 \\Rightarrow x = \\frac{3}{2}2\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h46",
@@ -909,7 +945,8 @@
               "work": "\\(-6x + 27 = 0 \\Rightarrow x = \\frac{3}{2}3\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h47",
@@ -933,7 +970,8 @@
               "work": "\\(-8x + 48 = 0 \\Rightarrow x = \\frac{3}{2}4\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h48",
@@ -957,7 +995,8 @@
               "work": "\\(-10x + 75 = 0 \\Rightarrow x = \\frac{3}{2}5\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h57",
@@ -981,7 +1020,8 @@
               "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (1)(3) = -k \\Rightarrow 3 = -k \\Rightarrow k = -3\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h58",
@@ -1005,7 +1045,8 @@
               "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (2)(4) = -k \\Rightarrow 8 = -k \\Rightarrow k = -8\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h59",
@@ -1029,7 +1070,8 @@
               "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (3)(5) = -k \\Rightarrow 15 = -k \\Rightarrow k = -15\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h60",
@@ -1053,7 +1095,8 @@
               "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (4)(6) = -k \\Rightarrow 24 = -k \\Rightarrow k = -24\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h65",
@@ -1077,7 +1120,8 @@
               "work": "\\(x = 1 \\Rightarrow y = 3, quad x = 2 \\Rightarrow y = 6\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h66",
@@ -1101,7 +1145,8 @@
               "work": "\\(x = 1 \\Rightarrow y = 4, quad x = 2 \\Rightarrow y = 8\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h67",
@@ -1125,7 +1170,8 @@
               "work": "\\(x = 1 \\Rightarrow y = 5, quad x = 2 \\Rightarrow y = 10\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h68",
@@ -1149,7 +1195,8 @@
               "work": "\\(x = 1 \\Rightarrow y = 6, quad x = 2 \\Rightarrow y = 12\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h77",
@@ -1173,7 +1220,8 @@
               "work": "\\(x( (5)x + 16 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{5} \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h78",
@@ -1197,7 +1245,8 @@
               "work": "\\(x( (10)x + 54 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{10} \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h79",
@@ -1221,7 +1270,8 @@
               "work": "\\(x( (17)x + 128 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{17} \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h80",
@@ -1245,7 +1295,8 @@
               "work": "\\(x( (26)x + 250 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{26} \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h93",
@@ -1269,7 +1320,8 @@
               "work": "\\((w - 4)(w - 7) = 0 \\Rightarrow w = 4, quad l = 7\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h94",
@@ -1293,7 +1345,8 @@
               "work": "\\((w - 5)(w - 8) = 0 \\Rightarrow w = 5, quad l = 8\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h95",
@@ -1317,7 +1370,8 @@
               "work": "\\((w - 6)(w - 9) = 0 \\Rightarrow w = 6, quad l = 9\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h96",
@@ -1341,7 +1395,8 @@
               "work": "\\((w - 7)(w - 10) = 0 \\Rightarrow w = 7, quad l = 10\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h97",
@@ -1365,7 +1420,8 @@
               "work": "\\(t = 2.5 \\text{ seconds}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h98",
@@ -1389,7 +1445,8 @@
               "work": "\\(t = 3 \\text{ seconds}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h99",
@@ -1413,7 +1470,8 @@
               "work": "\\(t = 3.5 \\text{ seconds}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11-1f-h100",
@@ -1437,7 +1495,8 @@
               "work": "\\(t = 4 \\text{ seconds}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         }
       ]
     }

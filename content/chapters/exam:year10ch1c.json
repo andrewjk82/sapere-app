@@ -30,7 +30,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 25433 \\times (1 - \\frac{8}{100}) = 25433 \\times 0.92 \\approx 23398\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q51",
@@ -57,7 +58,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{599.28}{0.7426} \\approx \\$807\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q52",
@@ -84,7 +86,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q53",
@@ -111,7 +114,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.2198}{1.07} = 1.14 \\implies x = 14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q54",
@@ -134,7 +138,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 29021 \\times (1 - \\frac{2}{100}) = 29021 \\times 0.98 \\approx 28440\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q55",
@@ -161,7 +166,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$765 \\times 1.0430 \\approx \\$797.86\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q56",
@@ -188,7 +194,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{834.72}{0.7644} \\approx \\$1092\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q57",
@@ -215,7 +222,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q58",
@@ -242,7 +250,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.2100}{1.10} = 1.10 \\implies x = 10\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q59",
@@ -265,7 +274,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 30887 \\times (1 - \\frac{8}{100}) = 30887 \\times 0.92 \\approx 28416\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q60",
@@ -292,7 +302,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$980 \\times 1.0990 \\approx \\$1077.03\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q62",
@@ -319,7 +330,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q63",
@@ -346,7 +358,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1978}{1.13} = 1.06 \\implies x = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q64",
@@ -369,7 +382,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 30439 \\times (1 - \\frac{5}{100}) = 30439 \\times 0.95 \\approx 28917\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q65",
@@ -396,7 +410,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$295 \\times 1.1651 \\approx \\$343.71\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q67",
@@ -423,7 +438,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q68",
@@ -450,7 +466,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1856}{1.04} = 1.14 \\implies x = 14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q69",
@@ -473,7 +490,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 23905 \\times (1 - \\frac{2}{100}) = 23905 \\times 0.98 \\approx 23427\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q70",
@@ -500,7 +518,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$510 \\times 1.0789 \\approx \\$550.25\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q72",
@@ -527,7 +546,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q73",
@@ -554,7 +574,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1770}{1.07} = 1.10 \\implies x = 10\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q74",
@@ -577,7 +598,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 25661 \\times (1 - \\frac{8}{100}) = 25661 \\times 0.92 \\approx 23608\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q75",
@@ -604,7 +626,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$725 \\times 0.9960 \\approx \\$722.08\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q76",
@@ -631,7 +654,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{835.82}{0.8099} \\approx \\$1032\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q77",
@@ -658,7 +682,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q78",
@@ -685,7 +710,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1660}{1.10} = 1.06 \\implies x = 6\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q79",
@@ -708,7 +734,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 27465 \\times (1 - \\frac{5}{100}) = 27465 \\times 0.95 \\approx 26091\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q80",
@@ -735,7 +762,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$940 \\times 1.2027 \\approx \\$1130.53\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q87",
@@ -762,7 +790,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q88",
@@ -789,7 +818,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1440}{1.04} = 1.10 \\implies x = 10\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q89",
@@ -812,7 +842,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 29008 \\times (1 - \\frac{8}{100}) = 29008 \\times 0.92 \\approx 26688\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q90",
@@ -839,7 +870,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$470 \\times 1.0303 \\approx \\$484.25\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q92",
@@ -866,7 +898,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q93",
@@ -893,7 +926,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.1342}{1.07} = 1.06 \\implies x = 6\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q94",
@@ -916,7 +950,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 30861 \\times (1 - \\frac{5}{100}) = 30861 \\times 0.95 \\approx 29318\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q95",
@@ -943,7 +978,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$685 \\times 1.0899 \\approx \\$746.61\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q96",
@@ -970,7 +1006,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{831.45}{0.8554} \\approx \\$972\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q97",
@@ -997,7 +1034,8 @@
               "explain": "Subtract the multiplier from 1 and multiply by 100 to get the net percentage drop.",
               "work": "\\(\\text{Net Decrease} = (1 - 0.7050) \\times 100\\% = 29.50\\%\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q98",
@@ -1024,7 +1062,8 @@
               "explain": "Solve for the unknown rate x by dividing by the first half multiplier.",
               "work": "\\(1 + \\frac{x}{100} = \\frac{1.2540}{1.10} = 1.14 \\implies x = 14\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q99",
@@ -1047,7 +1086,8 @@
               "explain": "Apply the second year's percentage decrease to find the final count.",
               "work": "\\(P_2 = 24042 \\times (1 - \\frac{2}{100}) = 24042 \\times 0.98 \\approx 23561\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q100",
@@ -1074,7 +1114,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$900 \\times 1.1508 \\approx \\$1035.76\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-q7a",
@@ -1102,7 +1143,8 @@
               "work": "\\(\\text{Answer} = 3.46\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-1c-q7b",
@@ -1130,7 +1172,8 @@
               "work": "\\(\\text{Answer} = 3.09\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-1c-q7c",
@@ -1158,7 +1201,8 @@
               "work": "\\(\\text{Answer} = 2.86\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

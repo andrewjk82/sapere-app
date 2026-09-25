@@ -31,7 +31,8 @@
               "explain": "Calculate.",
               "work": "\\(A = 54\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-1b",
@@ -56,7 +57,8 @@
               "explain": "Calculate.",
               "work": "\\(s = 20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-1c",
@@ -81,7 +83,8 @@
               "explain": "Calculate.",
               "work": "\\(A = 20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-1d",
@@ -110,7 +113,8 @@
               "explain": "Calculate.",
               "work": "\\(A = 40\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-1e",
@@ -139,7 +143,8 @@
               "explain": "Calculate.",
               "work": "\\(v = 35\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-1f",
@@ -168,7 +173,8 @@
               "explain": "Calculate.",
               "work": "\\(E = 125\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2a",
@@ -197,7 +203,8 @@
               "explain": "Calculate root.",
               "work": "\\(x \\approx 34.6410... \\approx 34.641\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2b",
@@ -226,7 +233,8 @@
               "explain": "Round.",
               "work": "\\(V \\approx 4712.3889... \\approx 4712.389\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2c",
@@ -255,7 +263,8 @@
               "explain": "Calculate.",
               "work": "\\(t = 25 + 27 = 52\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2d",
@@ -284,7 +293,8 @@
               "explain": "Calculate.",
               "work": "\\(T \\approx 19.8899... \\approx 19.890\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2e",
@@ -313,7 +323,8 @@
               "explain": "Calculate.",
               "work": "\\(s = 96 + 144 = 240\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-2f",
@@ -342,7 +353,8 @@
               "explain": "Round.",
               "work": "\\(A \\approx 7110.503... \\approx 7110.50\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-3a",
@@ -367,7 +379,8 @@
               "explain": "Calculate.",
               "work": "\\(v = 8 + 24 = 32\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-3b",
@@ -396,7 +409,8 @@
               "explain": "Rearrange.",
               "work": "\\(u = 50 - 18 = 32\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-3c",
@@ -425,7 +439,8 @@
               "explain": "Solve.",
               "work": "\\(a = 10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-3d",
@@ -454,7 +469,8 @@
               "explain": "Solve.",
               "work": "\\(t = 18\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4a",
@@ -483,7 +499,8 @@
               "explain": "Solve.",
               "work": "\\(a = 55\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4b",
@@ -512,7 +529,8 @@
               "explain": "Solve.",
               "work": "\\(40n = 360 \\implies n = 9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4c",
@@ -541,7 +559,8 @@
               "explain": "Solve.",
               "work": "\\(m = 42\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4d",
@@ -570,7 +589,8 @@
               "explain": "Solve.",
               "work": "\\(P = \\frac{1800}{0.6} = 3000\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4e",
@@ -599,7 +619,8 @@
               "explain": "Divide by 2.",
               "work": "\\(188 = 80 + 18h \\implies 108 = 18h \\implies h = 6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4f",
@@ -628,7 +649,8 @@
               "explain": "Solve.",
               "work": "\\(w = 12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4g",
@@ -657,7 +679,8 @@
               "explain": "Solve.",
               "work": "\\(650 = 50a \\implies a = 13\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-4h",
@@ -686,7 +709,8 @@
               "explain": "Divide by 4 and solve.",
               "work": "\\(14 = n-1 \\implies n = 15\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-5a",
@@ -715,7 +739,8 @@
               "explain": "Solve for v (v > 0).",
               "work": "\\(v = \\sqrt{64} = 8.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-5b",
@@ -744,7 +769,8 @@
               "explain": "Solve for v.",
               "work": "\\(v = \\sqrt{85} \\approx 9.219... \\approx 9.2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-5c",
@@ -773,7 +799,8 @@
               "explain": "Solve for v.",
               "work": "\\(v = \\sqrt{310} \\approx 17.606... \\approx 17.6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-5d",
@@ -802,7 +829,8 @@
               "explain": "Solve for v.",
               "work": "\\(v = \\sqrt{121.84} \\approx 11.038... \\approx 11.0\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-6a",
@@ -831,7 +859,8 @@
               "explain": "Solve.",
               "work": "\\(f = 2\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-6b",
@@ -860,7 +889,8 @@
               "explain": "Solve.",
               "work": "\\(f = 6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-6c",
@@ -889,7 +919,8 @@
               "explain": "Solve.",
               "work": "\\(f = 6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-6d",
@@ -918,7 +949,8 @@
               "explain": "Solve.",
               "work": "\\(f = 3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-7a",
@@ -947,7 +979,8 @@
               "explain": "Solve.",
               "work": "\\(10u = 25 \\implies u = 2.5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-7b",
@@ -976,7 +1009,8 @@
               "explain": "Solve.",
               "work": "\\(6 = 8a \\implies a = 0.75\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-8a",
@@ -1005,7 +1039,8 @@
               "explain": "Solve.",
               "work": "\\(u = 6\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-8b",
@@ -1034,7 +1069,8 @@
               "explain": "Solve.",
               "work": "\\(u = 20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-9a",
@@ -1059,7 +1095,8 @@
               "explain": "Calculate.",
               "work": "\\(P = \\frac{15}{5} = 3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-9b",
@@ -1084,7 +1121,8 @@
               "explain": "Calculate.",
               "work": "\\(P = \\frac{50}{10} = 5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-9c",
@@ -1113,7 +1151,8 @@
               "explain": "Round.",
               "work": "\\(P \\approx 1.4285... \\approx 1.429\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-9d",
@@ -1142,7 +1181,8 @@
               "explain": "Simplify.",
               "work": "\\(P = \\frac{17}{7} \\approx 2.4285... \\approx 2.429\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9-6a-10",
@@ -1172,7 +1212,8 @@
                   "explain": "Solve for \\(x\\) by taking the square root. Since side length must be positive, take the positive root.",
                   "work": "x = \\sqrt{30}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-6a-10b",
@@ -1194,7 +1235,8 @@
                   "explain": "Round the result to 2 decimal places.",
                   "work": "x \\approx 5.48"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1231,7 +1273,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-6a-12",
@@ -1263,7 +1306,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-13a",
@@ -1291,7 +1335,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-13b",
@@ -1323,7 +1368,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-13c",
@@ -1355,7 +1401,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-14",
@@ -1394,7 +1441,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-15a",
@@ -1437,7 +1485,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-15b",
@@ -1480,7 +1529,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-15c",
@@ -1523,7 +1573,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-15d",
@@ -1566,7 +1617,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-16a",
@@ -1602,7 +1654,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-16b",
@@ -1638,7 +1691,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-16c",
@@ -1674,7 +1728,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-16d",
@@ -1710,7 +1765,8 @@
           ],
           "alsoIn": [
             "exam:year9ch6"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17a",
@@ -1743,7 +1799,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 22.500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17b",
@@ -1776,7 +1833,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 26.125\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17c",
@@ -1809,7 +1867,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 48.000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17d",
@@ -1842,7 +1901,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 58.500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17e",
@@ -1875,7 +1935,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 82.500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6a-17f",
@@ -1908,7 +1969,8 @@
               "explain": "Calculate the final distance.",
               "work": "\\(d = 110.500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-killara-24-t4-pb-q2a",
@@ -1933,7 +1995,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-killara-24-t4-pb-q2b",
@@ -1958,7 +2021,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-killara-24-t4-pb-q2c",
@@ -1983,7 +2047,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y9-killara-24-t4-pb-q3_2",
@@ -2020,7 +2085,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2070,7 +2136,8 @@
               "work": "\\(x = y - 5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q1b",
@@ -2110,7 +2177,8 @@
               "work": "\\(x = y + 3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q1c",
@@ -2150,7 +2218,8 @@
               "work": "\\(x = \\dfrac{y}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q1d",
@@ -2190,7 +2259,8 @@
               "work": "\\(x = 6y\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q1e",
@@ -2230,7 +2300,8 @@
               "work": "\\(q = p + r\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q1f",
@@ -2270,7 +2341,8 @@
               "work": "\\(n = m - k\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-6b-q2a",
@@ -2313,7 +2385,8 @@
               "work": "\\(x = \\dfrac{y - 7}{2}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q2b",
@@ -2353,7 +2426,8 @@
               "work": "\\(x = \\dfrac{y + 3}{5}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q2c",
@@ -2393,7 +2467,8 @@
               "work": "\\(x = \\dfrac{y}{3} - 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q2d",
@@ -2442,7 +2517,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q2e",
@@ -2485,7 +2561,8 @@
               "work": "\\(t = \\dfrac{v - u}{a}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q2f",
@@ -2528,7 +2605,8 @@
               "work": "\\(u = v - at\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q3a",
@@ -2574,7 +2652,8 @@
               "work": "\\(x = a(y - b)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q3b",
@@ -2617,7 +2696,8 @@
               "work": "\\(m = 2a - n\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q3c",
@@ -2657,7 +2737,8 @@
               "work": "\\(u = vt\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q3d",
@@ -2696,7 +2777,8 @@
               "explain": "So the focal length is the product of the distances over their sum.",
               "work": "\\(f = \\dfrac{uv}{u + v}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q3e",
@@ -2735,7 +2817,8 @@
               "explain": "Take the reciprocal of both sides.",
               "work": "\\(u = \\dfrac{fv}{v - f}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q4a",
@@ -2778,7 +2861,8 @@
               "work": "\\(l = \\dfrac{A}{w}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q4b",
@@ -2821,7 +2905,8 @@
               "work": "\\(h = \\dfrac{2A}{b}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q4c",
@@ -2864,7 +2949,8 @@
               "work": "\\(r = \\sqrt{\\dfrac{A}{\\pi}}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q4d",
@@ -2907,7 +2993,8 @@
               "work": "\\(r = \\dfrac{C}{2\\pi}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q4e",
@@ -2950,7 +3037,8 @@
               "work": "\\(h = \\dfrac{V}{\\pi r^{2}}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q4f",
@@ -2989,7 +3077,8 @@
               "explain": "Take the positive square root.",
               "work": "\\(r = \\sqrt{\\dfrac{3V}{\\pi h}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q4g",
@@ -3032,7 +3121,8 @@
               "work": "\\(h = \\dfrac{2A}{a + b}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q4h",
@@ -3075,7 +3165,8 @@
               "work": "\\(w = \\dfrac{P}{2} - l\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y9-6b-q5a",
@@ -3114,7 +3205,8 @@
               "explain": "Split the fraction: \\(\\dfrac{s}{t} - \\dfrac{\\tfrac{1}{2}at^{2}}{t} = \\dfrac{s}{t} - \\dfrac{1}{2}at\\).",
               "work": "\\(u = \\dfrac{s}{t} - \\dfrac{1}{2}at\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q5b",
@@ -3156,7 +3248,8 @@
               "explain": "Write with \\(a\\) as the subject.",
               "work": "\\(a = \\dfrac{v^{2} - u^{2}}{2s}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q5c",
@@ -3199,7 +3292,8 @@
               "work": "\\(C = \\dfrac{5}{9}(F - 32)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q5d",
@@ -3238,7 +3332,8 @@
               "explain": "Take the positive square root (speed is non-negative).",
               "work": "\\(v = \\sqrt{\\dfrac{2E}{m}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q5e",
@@ -3281,7 +3376,8 @@
               "work": "\\(T = \\dfrac{100I}{PR}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q5f",
@@ -3320,7 +3416,8 @@
               "explain": "Divide by \\((l + w)\\) and rewrite the left side with common denominator 2: \\(\\dfrac{S - 2lw}{2(l + w)}\\).",
               "work": "\\(h = \\dfrac{S - 2lw}{2(l + w)}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q6a",
@@ -3360,7 +3457,8 @@
               "work": "\\(x = ay^{2}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q6b",
@@ -3403,7 +3501,8 @@
               "work": "\\(a = \\sqrt{c^{2} - b^{2}}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-6b-q6c",
@@ -3442,7 +3541,8 @@
               "explain": "Multiply both sides by \\(g\\).",
               "work": "\\(l = \\dfrac{T^{2}g}{4\\pi^{2}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q6d",
@@ -3487,7 +3587,8 @@
                 "svg": "fig:f7202821f5"
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-6b-q7a",
@@ -3527,7 +3628,8 @@
               "work": "\\(r \\approx \\sqrt{15.9236} \\approx 3.99\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y9-6b-q7b",
@@ -3567,7 +3669,8 @@
               "work": "\\(t = 5\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y9-6b-q7c",
@@ -3607,7 +3710,8 @@
               "work": "\\(C = 30\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y9-6b-q7d",
@@ -3646,7 +3750,8 @@
               "explain": "Divide to find the height.",
               "work": "\\(h = 8\\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sg2022-q1m",
@@ -3676,7 +3781,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sg2022-q3d",
@@ -3710,7 +3816,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sg2022-q8a",
@@ -3744,7 +3851,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "willoughby2019-s3-q2",
@@ -3775,7 +3883,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pb2-q4",
@@ -3812,7 +3921,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t3q2",
@@ -3851,7 +3961,8 @@
           },
           "figure": {
             "svg": "fig:e7cacf2145"
-          }
+          },
+          "xp": 2
         }
       ]
     }

@@ -44,7 +44,8 @@
               "work": "f'(x) > 0 \\implies A, F, G"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q1b",
@@ -81,7 +82,8 @@
               "work": "f'(x) < 0 \\implies C, D"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q1c",
@@ -118,7 +120,8 @@
               "work": "f'(x) = 0 \\implies B, E"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21d",
@@ -154,7 +157,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 4
         },
         {
           "id": "y12a-3a-q21f",
@@ -190,7 +194,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 4
         },
         {
           "id": "y12a-3a-q23a",
@@ -228,7 +233,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 4
         },
         {
           "id": "y12a-3a-q23c",
@@ -266,7 +272,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 4
         },
         {
           "id": "y12a-3a-q23d",
@@ -304,7 +311,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 4
         }
       ]
     }

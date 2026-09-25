@@ -36,7 +36,8 @@
               "explain": "Compare the numerators to order them from least to greatest.",
               "work": "\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8} \\implies \\frac{1}{2}, frac{5}{8}, frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-frac-q18",
@@ -61,7 +62,8 @@
               "explain": "Divide the total pies by the number of people.",
               "work": "7 \\div 10 = \\frac{7}{10}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-frac-q21",
@@ -90,7 +92,8 @@
               "explain": "Find the original wage. \\\\(\\frac{3}{4}\\\\) of the wage is \\\\\\\\(300. Divide by 3 to find \\\\)\\frac{1}{4}\\(, then multiply by 4.\\)",
               "work": "\\begin{aligned} \\frac{1}{4} \\text{ of wage} &= 300 \\div 3 = 100 \\\\ \\text{Total wage} &= 100 \\times 4 = 400 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

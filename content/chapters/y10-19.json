@@ -36,7 +36,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -73,7 +74,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jr2013-q6",
@@ -107,7 +109,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -153,7 +156,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-qCb",
@@ -179,7 +183,8 @@
                   "explain": "Sketch both curves on the same axes over \\([-180°,180°]\\) — the sine curve swings from \\(-3\\) to \\(3\\) while the squared-cosine curve stays flat between 0 and 1.",
                   "work": "Both curves plotted on \\([-180°,180°]\\); note where they cross — this is used in part (ii)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qCb-ii",
@@ -210,7 +215,8 @@
                   "explain": "Combine all solutions found.",
                   "work": "\\(\\therefore\\) there are \\(4\\) solutions to \\(3\\sin2x-\\cos^2x=0\\) for \\(-180°\\le x\\le180°\\)."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "manual": true,

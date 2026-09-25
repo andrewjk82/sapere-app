@@ -48,7 +48,8 @@
                   "explain": "Identify the x-coordinates of the turning points from the given information.",
                   "work": "\\text{The turning points are at } (-2, -4) \\text{ and } (3, 6). \\text{ Thus, } f'(x) = 0 \\text{ at } x = -2 \\text{ and } x = 3."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q2b",
@@ -70,7 +71,8 @@
                   "explain": "Identify the x-coordinate of the point of inflection from the given information.",
                   "work": "\\text{The point of inflection is at } (0.5, 1). \\text{ Thus, } f''(x) = 0 \\text{ at } x = 0.5."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q2c",
@@ -92,7 +94,8 @@
                   "explain": "Determine the interval.",
                   "work": "\\text{Between } x = -2 \\text{ and } x = 3 \\text{, the graph is rising. Therefore, it is increasing for } -2 < x < 3."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q2d",
@@ -118,7 +121,8 @@
                   "explain": "State the interval.",
                   "work": "\\text{The curve is concave up before the inflection point, so for } x < 0.5."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -154,7 +158,8 @@
                   "explain": "Solve for \\( x \\).",
                   "work": "\\begin{aligned} x = 6 \\text{ or } x = -2 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q3b",
@@ -172,7 +177,8 @@
                   "explain": "Substitute \\( x = 0 \\) into the equation.",
                   "work": "\\begin{aligned} y(0) &= 0^2 - 4(0) - 12 \\\\ &= -12 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q3c",
@@ -198,7 +204,8 @@
                   "explain": "Find the y-coordinate.",
                   "work": "\\begin{aligned} y(2) &= 2^2 - 4(2) - 12 \\\\ &= 4 - 8 - 12 = -16 \\end{aligned} \\\\ \\implies (2, -16)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q3d",
@@ -224,7 +231,8 @@
                   "explain": "Conclude the nature.",
                   "work": "\\text{Therefore, the stationary point is a minimum.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q3e",
@@ -261,7 +269,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -304,7 +313,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q4b",
@@ -337,7 +347,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -374,7 +385,8 @@
                   "explain": "Conclude the symmetry.",
                   "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd. Odd functions have rotational point symmetry of } 180^{\\circ} \\text{ about the origin.}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q5b",
@@ -400,7 +412,8 @@
                   "explain": "Differentiate \\( y' \\) to find \\( y'' \\).",
                   "work": "\\begin{aligned} y'' &= \\frac{d}{dx}(12 - 3x^2) \\\\ &= -6x \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q5c",
@@ -426,7 +439,8 @@
                   "explain": "Determine the nature using \\( y'' = -6x \\).",
                   "work": "\\begin{aligned} y''(2) &= -6(2) = -12 < 0 \\implies (2, 16) \\text{ is a maximum} \\\\ y''(-2) &= -6(-2) = 12 > 0 \\implies (-2, -16) \\text{ is a minimum} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q5d",
@@ -452,7 +466,8 @@
                   "explain": "Conclude.",
                   "work": "\\text{Since } y'' \\text{ changes sign across } x = 0 \\text{, it is a point of inflection.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q5e",
@@ -470,7 +485,8 @@
                   "explain": "Substitute the x-coordinate of the inflection point into the gradient function.",
                   "work": "\\begin{aligned} y'(x) &= 12 - 3x^2 \\\\ y'(0) &= 12 - 3(0)^2 = 12 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q5f",
@@ -503,7 +519,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -535,7 +552,8 @@
                   "explain": "Differentiate \\( f'(x) \\) to find \\( f''(x) \\).",
                   "work": "\\begin{aligned} f''(x) &= 12x - 18 \\\\ &= 6(2x - 3) \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q6b",
@@ -561,7 +579,8 @@
                   "explain": "Determine the nature using \\( f''(x) = 12x - 18 \\).",
                   "work": "\\begin{aligned} f''(0) &= -18 < 0 \\implies (0, 12) \\text{ is a maximum} \\\\ f''(3) &= 12(3) - 18 = 36 - 18 = 18 > 0 \\implies (3, -15) \\text{ is a minimum} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q6c",
@@ -587,7 +606,8 @@
                   "explain": "Find the gradient at \\( x = 1.5 \\).",
                   "work": "\\begin{aligned} f'(1.5) &= 6(1.5)^2 - 18(1.5) \\\\ &= 6(2.25) - 27 \\\\ &= 13.5 - 27 = -13.5 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q6d",
@@ -620,7 +640,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -652,7 +673,8 @@
                   "explain": "Differentiate \\( y' \\) to find \\( y'' \\).",
                   "work": "\\begin{aligned} y'' &= 24x - 12x^2 \\\\ &= 12x(2 - x) \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q8b",
@@ -674,7 +696,8 @@
                   "explain": "Find the corresponding y-coordinates.",
                   "work": "\\begin{aligned} y(0) &= 4(0)^3 - (0)^4 + 5 = 5 \\implies (0, 5) \\\\ y(3) &= 4(27) - (81) + 5 = 108 - 81 + 5 = 32 \\implies (3, 32) \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q8c",
@@ -704,7 +727,8 @@
                   "explain": "Explain why it fails.",
                   "work": "\\text{The second derivative test is inconclusive when } y'' = 0. \\text{ We must use the first derivative test to determine its nature.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q8d",
@@ -726,7 +750,8 @@
                   "explain": "Interpret the result.",
                   "work": "\\text{Since the gradient is positive before and after } x = 0 \\text{, the curve flattens out but continues to rise. Thus, } (0, 5) \\text{ is a horizontal (stationary) point of inflection.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q8e",
@@ -752,7 +777,8 @@
                   "explain": "Conclude.",
                   "work": "\\text{Since } y'' \\text{ changes from positive to negative across } x = 2 \\text{, there is a change in concavity, making it a point of inflection.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3e-q8f",
@@ -785,7 +811,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -817,7 +844,8 @@
                   "explain": "Combine over a common denominator.",
                   "work": "\\begin{aligned} y' &= \\frac{x^2}{x^2} - \\frac{4}{x^2} = \\frac{x^2 - 4}{x^2} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y12a-3e-q12b",
@@ -847,7 +875,8 @@
                   "explain": "Evaluate \\( y'' \\).",
                   "work": "\\begin{aligned} y''(2) &= \\frac{8}{8} = 1 > 0 \\implies (2, 4) \\text{ is a minimum} \\\\ y''(-2) &= \\frac{8}{-8} = -1 < 0 \\implies (-2, -4) \\text{ is a maximum} \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q12c",
@@ -869,7 +898,8 @@
                   "explain": "State the symmetry.",
                   "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd and has rotational symmetry about the origin.}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y12a-3e-q12d",
@@ -891,7 +921,8 @@
                   "explain": "State the domain and asymptote.",
                   "work": "\\text{The domain is all real } x \\neq 0 \\text{, and the vertical asymptote is } x = 0."
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q12e",
@@ -903,7 +934,8 @@
                   "explain": "Analyze the sign on either side of the asymptote.",
                   "work": "\\begin{aligned} \\text{For } x < 0 \\text{ (e.g., } x = -1), y &= -1 - 4 = -5 < 0 \\\\ \\text{For } x > 0 \\text{ (e.g., } x = 1), y &= 1 + 4 = 5 > 0 \\end{aligned}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q12f",
@@ -936,7 +968,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3e-q12g",
@@ -958,7 +991,8 @@
                   "explain": "Combine.",
                   "work": "\\text{Range is } y \\le -4 \\text{ or } y \\ge 4."
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "0",

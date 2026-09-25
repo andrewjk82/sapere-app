@@ -34,7 +34,8 @@
               "explain": "Place the result over the original denominator.",
               "work": "\\(\\frac{31}{7}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q5a",
@@ -60,7 +61,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by 5.",
               "work": "\\(\\frac{10 \\div 5}{25 \\div 5} = \\frac{2}{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "0PFIiH59TousCHovFQOi",
@@ -89,7 +91,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{1}{4}, \\frac{1}{3}, \\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3A82OLLX7oYHQM8yb0Ol",
@@ -116,7 +119,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are not equal, the answer is No."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "3HzF7FDcCqnPuN72BKvu",
@@ -145,7 +149,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "4xlYyxjapc50gydVJXVB",
@@ -174,7 +179,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{45}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "5IjlFmBdJF6ItX9foRpP",
@@ -203,7 +209,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{16}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "7HuZ9B4x1fE0a1QUW44L",
@@ -230,7 +237,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are equal, the answer is Yes."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "8tg2QtQI5SFgNV3sMkTU",
@@ -259,7 +267,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "87rG9ZHBoaVHuyaOJGAG",
@@ -288,7 +297,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{33}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "AgEFkDFmc3vze4qqJE78",
@@ -317,7 +327,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "b1Sv2Cxj5J9BdVz0Lv4w",
@@ -346,7 +357,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{5}{7}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "B3HefHHpeaHBfiDfTB7m",
@@ -375,7 +387,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{26}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "CGHM59zvFn9nGmtMqfFT",
@@ -404,7 +417,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cTu4FbpEaRrFlozSumAK",
@@ -433,7 +447,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "e31o1Y8AtI41B5g2ClN9",
@@ -462,7 +477,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "F2oNuZDqKkhJDWN1LYnG",
@@ -491,7 +507,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{20}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "FpfpPTULGsFcvfjGHBQW",
@@ -520,7 +537,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{9}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hBkn8kWyo1TFKy1CYfXU",
@@ -549,7 +567,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{3}{10}, \\frac{2}{5}, \\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "iDWLulgj1Mee8fU9uDoG",
@@ -578,7 +597,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{24}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "io0eJuP1lCbpLhccznwD",
@@ -607,7 +627,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{1}{2}, \\frac{3}{5}, \\frac{7}{10}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "iuYpGZPWBFiTIrMGRt1e",
@@ -636,7 +657,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "IY5jaPquYKMPbG6N1R1Z",
@@ -665,7 +687,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{50}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "jGtmVRvcMWBUM9XLg7KT",
@@ -694,7 +717,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{7}{12}, \\frac{2}{3}, \\frac{5}{6}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "JQh3pMSUTDdtm1TVYljf",
@@ -723,7 +747,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{7}{9}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "kQR1v4inLEC0HlyeTCGS",
@@ -752,7 +777,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "N2qYuh6TIBGXGkPQora6",
@@ -781,7 +807,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Nd4dV6ioERkbfMFgHti0",
@@ -808,7 +835,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are equal, the answer is Yes."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "OLzYyI1g1fg6l9V4KITO",
@@ -829,7 +857,8 @@
               "explain": "Solve the question step-by-step.",
               "work": "LCD of 6, 8, 4 is 24.\n\\frac{5}{6} = \\frac{20}{24}\n\\frac{7}{8} = \\frac{21}{24}\n\\frac{3}{4} = \\frac{18}{24}\nOrder: 18 < 20 < 21."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "OptMntzeSKPAyvvzL8R6",
@@ -858,7 +887,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "pEt2zsjH2J8plaAHHjtr",
@@ -887,7 +917,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "pF3zb1fnjoO0oylB3llU",
@@ -916,7 +947,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{42}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "qhuZ3ebkmUdsLY4wGw3A",
@@ -945,7 +977,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "sskF6rW8dK6usFG7vHqK",
@@ -974,7 +1007,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{1}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "vqF0eNasaky5cc9S8z5S",
@@ -1001,7 +1035,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are not equal, the answer is No."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "VYI8afKNp0A4tQRSoPoT",
@@ -1028,7 +1063,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are equal, the answer is Yes."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "w2cbtrma2sSo2NpMxxkH",
@@ -1057,7 +1093,8 @@
               "explain": "Arrange them in order.",
               "work": "\\frac{5}{18}, \\frac{1}{3}, \\frac{4}{9}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "XnM9DML9nRv66TYXpM68",
@@ -1078,7 +1115,8 @@
               "explain": "Solve the question step-by-step.",
               "work": "LCD of 2, 3, 4 is 12.\n\\frac{1}{2} = \\frac{6}{12}\n\\frac{2}{3} = \\frac{8}{12}\n\\frac{3}{4} = \\frac{9}{12}\nOrder: 6 < 8 < 9."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "XTt8GTonlSFwa7tVdqtP",
@@ -1107,7 +1145,8 @@
               "explain": "Divide both numerator and denominator by the HCF to simplify.",
               "work": "Result: \\frac{7}{9}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y9wz9DSBbUxWytaBwyYC",
@@ -1136,7 +1175,8 @@
               "explain": "Multiply the numerator by the same multiplier.",
               "work": "Result: \\frac{30}{60}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Ygv5WyhR0et9Tu1FBUJM",
@@ -1163,7 +1203,8 @@
               "explain": "Check equivalence.",
               "work": "Since they are equal, the answer is Yes."
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -1199,7 +1240,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{5}{9}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "1dSLJOUO2eYbUYLlCVCq",
@@ -1228,7 +1270,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "2XEhagqzbdZP0mpSypnk",
@@ -1257,7 +1300,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{11}{15}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "3SGmx2L4yBCyX9OqED3v",
@@ -1286,7 +1330,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{7}{12}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "5I9cws15pwLTl7oXEYeZ",
@@ -1315,7 +1360,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 6\\frac{2}{9}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "7Ck23jPrTkZ3VbnSftsQ",
@@ -1344,7 +1390,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "A01UuRVYMafQ8dUrxFXz",
@@ -1373,7 +1420,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 4\\frac{1}{4} km"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "aGEPcjB4z42WJ1diE6Ba",
@@ -1402,7 +1450,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{1}{6}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "AQixrzIh79FC9SgjTBCJ",
@@ -1431,7 +1480,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 5\\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bGvFVLuLRYOzIr05KuVi",
@@ -1460,7 +1510,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{11}{30}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bjcsAiocXLzTjm61qNbM",
@@ -1489,7 +1540,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{5}{18}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "DA1Oeg1avyaviIUqP2s2",
@@ -1518,7 +1570,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 2\\frac{2}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "dfuBc2oNq1YBcUv9Fy8n",
@@ -1547,7 +1600,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 5\\frac{9}{20} km"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dja5zmGW50PBoKiamJPV",
@@ -1576,7 +1630,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Dnv5AC0ahkalczpAmIoq",
@@ -1605,7 +1660,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 4\\frac{3}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "eSyndmbNlJ5iN0epAhxQ",
@@ -1634,7 +1690,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 4\\frac{1}{12}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "FBa9JZroSLIxHIc4IR1e",
@@ -1663,7 +1720,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fPXxI2jXPyxy4FqO23vg",
@@ -1692,7 +1750,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 3\\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "gszW6ZdUTGgrGZYSdKGx",
@@ -1721,7 +1780,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{2}{7}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "gvqvpEUCwYBJG4dQ0IRk",
@@ -1750,7 +1810,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{7}{12}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "H1LZCwrsjp256uB3F5eH",
@@ -1779,7 +1840,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hduWF3FQuYWiBJ4NjccU",
@@ -1808,7 +1870,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hZf1lXyrbCHgX6DOE0tB",
@@ -1837,7 +1900,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{13}{64}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "IsK7FK70TYZpFNxGV7WU",
@@ -1866,7 +1930,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{5}{24}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "jVAS49NQaYlGvyrq1uz9",
@@ -1895,7 +1960,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{3}{8}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jvVE3f5ZRyLvdml4mRc6",
@@ -1924,7 +1990,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 5\\frac{3}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "jZ3d4SzlqIu3v0P1SwtU",
@@ -1953,7 +2020,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{13}{21}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "k5YcFJYr4TEtK7dzrZg9",
@@ -1982,7 +2050,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 3\\frac{5}{6}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "kkuGpCPXZDgqDVJAo56E",
@@ -2011,7 +2080,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{17}{18}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Kqb94eChZhDQbge3WRFV",
@@ -2040,7 +2110,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "l0d081s7Ro9Lth56rJVk",
@@ -2069,7 +2140,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{31}{40}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "lGHNZpf1xIVTiO4YvGbn",
@@ -2098,7 +2170,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 2\\frac{2}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "MC6EnlNJwVA2MLeTBcBm",
@@ -2127,7 +2200,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{2}{9}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "O4azefYsGN9pmC2qgptV",
@@ -2156,7 +2230,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{13}{24}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "OzBaKPYjLmgSa1u6ceCE",
@@ -2185,7 +2260,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "p9WtQaH3PkVCdJIWycMN",
@@ -2214,7 +2290,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{14}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "qPGxf8Z9L2D2WTv2aFdJ",
@@ -2243,7 +2320,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{11}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "qvjIM5UyV0LckcmyZyk8",
@@ -2272,7 +2350,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 3\\frac{13}{20}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "R0xs4ddXq5CoSjGREEYE",
@@ -2301,7 +2380,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{11}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "rFcAWyFEKRFcHYCTb0BY",
@@ -2330,7 +2410,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{1}{6}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "RxkUZuPd2IGfQ83s9TaQ",
@@ -2359,7 +2440,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 3\\frac{1}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "s2Yr9nlS2SE5yLJvEy43",
@@ -2388,7 +2470,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 2\\frac{2}{7}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "SAjB7fF7n2XcJWMYeAtn",
@@ -2417,7 +2500,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{2}{13}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "sFGi4Cd7qt0PNcasJDbM",
@@ -2446,7 +2530,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 6\\frac{1}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "sMS7Kp0MXmyZ1kMc3EQX",
@@ -2475,7 +2560,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "TGiZJt6SywYDLbk2umad",
@@ -2504,7 +2590,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{19}{20}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "U1sLVCa2mj5bTINB6Kca",
@@ -2533,7 +2620,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 6\\frac{1}{12}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "u3yuhIde2AUtGVhH4ADa",
@@ -2562,7 +2650,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{9}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "unNzVM0NA8nBhvIwOkc5",
@@ -2591,7 +2680,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 4\\frac{11}{12}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "V3EYhFleJwR7XWteqqAC",
@@ -2620,7 +2710,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{7}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "vjPDiq83FGA5OCZPzX5k",
@@ -2649,7 +2740,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{11}{12}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "vnNyPVaQPNOKrBnH0XJz",
@@ -2678,7 +2770,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{20}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "wX0y547GM6PJsyrHBQea",
@@ -2707,7 +2800,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{3}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "XmaesEvSzkF07bPbzb4y",
@@ -2736,7 +2830,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{23}{30} L"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "xuAT8VEDIYGKpQoYmNes",
@@ -2765,7 +2860,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "xw8sCi9JcxqBLWSkFKhH",
@@ -2794,7 +2890,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{1}{4}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "Xygt4AfpGKbFBJzFEcbX",
@@ -2823,7 +2920,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{4}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "YjxS1ElMMa9qhk1PRnda",
@@ -2852,7 +2950,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{1}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "yRqGuAmNxdZQgYbTPbgQ",
@@ -2881,7 +2980,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 5\\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "zH4xvBIVLhK9K6tyy0rN",
@@ -2910,7 +3010,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: 1\\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "ZOX5wckTCuxXMfy1ViTc",
@@ -2939,7 +3040,8 @@
               "explain": "Convert the whole number 1 to a fraction with a matching denominator and solve.",
               "work": "Result: \\frac{11}{15}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "zUfMJp7eotk61YcTzml5",
@@ -2968,7 +3070,8 @@
               "explain": "Add or subtract the numerators while keeping the common denominator.",
               "work": "Result: \\frac{5}{12}"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -3004,7 +3107,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 60 mm"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "3lnYoVhYhDMUBhQN3Saq",
@@ -3033,7 +3137,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 60 m"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5gDsVoeukKMcmzmlMvLO",
@@ -3062,7 +3167,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{3}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "05RYq8xtF9bCfKEFhGzo",
@@ -3091,7 +3197,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{2}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "5Rzr40EAsXTxl365mUPj",
@@ -3120,7 +3227,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 16 L"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "6i1NRHtOrrbkApQB36Qv",
@@ -3149,7 +3257,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{7}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "7lzA3uH1vE8WgAjrLRCt",
@@ -3178,7 +3287,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 60 kg"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "AnoNDivTL6n7zHJ2PYfc",
@@ -3207,7 +3317,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: 2\\frac{1}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bo87YrrF3lq1U3vkuuH3",
@@ -3236,7 +3347,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{4}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "BqBi3EEaYwUHbAOnUSvi",
@@ -3265,7 +3377,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{8}{25}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cDUmYw6SMP0fIccgWDcV",
@@ -3294,7 +3407,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 5"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cEaoPFr9xYrIEchNPNe6",
@@ -3323,7 +3437,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 3"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cW1WXBEAZUIdwEo4DRCn",
@@ -3352,7 +3467,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 28"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "DQXbT2SIXbTKEbkxHu9d",
@@ -3381,7 +3497,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{1}{6}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "e4HmcL51uTVtY2b9520P",
@@ -3410,7 +3527,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{6}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fsUxy4ygZF5BvcKVm7gi",
@@ -3439,7 +3557,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 24"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "FXsP352XgNWVQR3m3D17",
@@ -3468,7 +3587,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 9 km"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "GmooH8DkP1Y7fXFNetfm",
@@ -3497,7 +3617,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 3"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "h74w03oYyQDsCXWnXErI",
@@ -3526,7 +3647,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{27}{70}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "HxlHwTnz1lvI6mR04GAN",
@@ -3555,7 +3677,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{7}{36}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "I2U7VZN3KBeEijWnuLOm",
@@ -3584,7 +3707,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{1}{36}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "IJghKyMJ65qtkGGj15C9",
@@ -3613,7 +3737,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 720"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "iRfKIO7rMQABb36s61A7",
@@ -3642,7 +3767,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 4"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "iuws6tP1favLiFZrqn1H",
@@ -3671,7 +3797,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{1}{30}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "iWMSDjEmC1uYGUmDYdmC",
@@ -3700,7 +3827,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "jfMX5iDgQsdMXUNlkzS0",
@@ -3729,7 +3857,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{1}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "K8cF5BBxepP1nVJ0a5AH",
@@ -3758,7 +3887,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "KyO52hcNhp72JdRoGKaN",
@@ -3787,7 +3917,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{15}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "LFnCw5i9xI5tm2LEkW8p",
@@ -3816,7 +3947,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{3}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "LIqAackjmT3Z7ZLqTDRj",
@@ -3845,7 +3977,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{9}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "MlRASiFn6bxaRUHjD2T3",
@@ -3874,7 +4007,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{2}{3}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "mr8N2gptQYexhl6uGmij",
@@ -3903,7 +4037,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 4"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "NZCWk2Ew8GEsc8L2UwIq",
@@ -3932,7 +4067,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: 1\\frac{19}{36}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "oMGPrSnIgCcOpodOvMnX",
@@ -3961,7 +4097,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 3"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "qnMiqxj7KnbTC6Wh3osO",
@@ -3990,7 +4127,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 180 km"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "RSwGixwcKD98vqMgQ8Z5",
@@ -4019,7 +4157,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{20}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "RvaTzyc7VmJgottcy91l",
@@ -4048,7 +4187,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 6"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "RylPdLFGBVJE1ug0WjXu",
@@ -4077,7 +4217,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{1}{42}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Sc5bkOr3V39pP2GWhSiW",
@@ -4106,7 +4247,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 32 m"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "SyzghUUjVMLjVJc8i71x",
@@ -4135,7 +4277,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 3500 m"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "TceY3C4CCVFWTdq9taTX",
@@ -4164,7 +4307,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{3}{8}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "tFNkF34fRDoF9i7xZ8E5",
@@ -4193,7 +4337,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{3}{10}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Toc30zt1X7acakDs6Cvo",
@@ -4222,7 +4367,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 3"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "TQN5NH3GzfqLN2UT33Wp",
@@ -4251,7 +4397,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: 7\\frac{1}{2}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Ua3FEvK8CnDc7lKK3ooi",
@@ -4284,7 +4431,8 @@
               "explain": "Multiply the remaining numbers to get the final result.",
               "work": "\\( 35 \\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "WFpE7glhC1jOc6DTWcpN",
@@ -4313,7 +4461,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: 12"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "WmcQQv6n8p3qv6H53sIH",
@@ -4342,7 +4491,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{2}{5}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "wqYBZlc1BOHmD9AM1uDZ",
@@ -4371,7 +4521,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 16"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "ZSHch8nXb9q1XU02GdkM",
@@ -4400,7 +4551,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: 4"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Ztc5l6gZpa3Q0gBB0XPl",
@@ -4429,7 +4581,8 @@
               "explain": "Multiply the numerators and the denominators, then simplify to simplest form.",
               "work": "Result: \\frac{16}{21}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "zUmR75KShNye4Yjz3iPs",
@@ -4458,7 +4611,8 @@
               "explain": "Multiply the remaining terms to find the final simplified fraction.",
               "work": "Result: \\frac{2}{5}"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -4488,7 +4642,8 @@
               "explain": "In dot notation, we write the repeating sequence once and place a dot over the first and last digits of the sequence.",
               "work": "\\(5.\\dot{9}6\\dot{5}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -4525,7 +4680,8 @@
             {
               "explain": "The rounded number is \\(9.705\\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -4557,7 +4713,8 @@
               "explain": "Divide both by 5 to simplify.",
               "work": "\\\\(\\\\frac{29}{7}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1b",
@@ -4586,7 +4743,8 @@
               "explain": "Write the simplified fraction.",
               "work": "\\\\(\\\\frac{1}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1c",
@@ -4615,7 +4773,8 @@
               "explain": "Write the simplified fraction.",
               "work": "\\\\(\\\\frac{13}{8}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1d",
@@ -4640,7 +4799,8 @@
               "explain": "Divide both by 6 to simplify.",
               "work": "\\\\(\\\\frac{2}{7}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1e",
@@ -4669,7 +4829,8 @@
               "explain": "Add the integer part to the new mixed numeral.",
               "work": "\\\\(1 + 1 \\\\frac{3}{4} = 2 \\\\frac{3}{4}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1f",
@@ -4694,7 +4855,8 @@
               "explain": "Divide both by 4 to simplify.",
               "work": "\\\\(\\\\frac{2}{45}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1g",
@@ -4719,7 +4881,8 @@
               "explain": "Divide both by 11 to simplify.",
               "work": "\\\\(\\\\frac{7}{11}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q1h",
@@ -4744,7 +4907,8 @@
               "explain": "Divide both by 12 to simplify.",
               "work": "\\\\(\\\\frac{7}{12}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2a",
@@ -4777,7 +4941,8 @@
               "explain": "Convert the improper fraction to a mixed numeral and combine.",
               "work": "\\\\(7 + 1 \\\\frac{1}{12} = 8 \\\\frac{1}{12}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2b",
@@ -4806,7 +4971,8 @@
               "explain": "Subtract the fractions and combine with the whole number.",
               "work": "\\\\(4 \\\\frac{4}{15}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2c",
@@ -4839,7 +5005,8 @@
               "explain": "Convert the improper fraction to a mixed numeral and combine.",
               "work": "\\\\(8 + 1 \\\\frac{7}{12} = 9 \\\\frac{7}{12}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2d",
@@ -4868,7 +5035,8 @@
               "explain": "Subtract the fractions and combine with the whole number.",
               "work": "\\\\(7 \\\\frac{11}{30}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2e",
@@ -4901,7 +5069,8 @@
               "explain": "Convert the improper fraction to a mixed numeral and combine.",
               "work": "\\\\(6 + 1 \\\\frac{1}{24} = 7 \\\\frac{1}{24}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q2f",
@@ -4930,7 +5099,8 @@
               "explain": "Subtract the whole numbers and the fractions.",
               "work": "\\\\(3 \\\\frac{5}{12}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q3a",
@@ -4959,7 +5129,8 @@
               "explain": "Divide 140 by 20 to simplify before multiplying.",
               "work": "\\\\(7 \\\\times 13 = 91\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3b",
@@ -4988,7 +5159,8 @@
               "explain": "Divide 150 by 3 to simplify before multiplying.",
               "work": "\\\\(50 \\\\times 5 = 250\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3c",
@@ -5017,7 +5189,8 @@
               "explain": "Convert the improper fraction back to a mixed numeral.",
               "work": "\\\\(3 \\\\frac{3}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3d",
@@ -5050,7 +5223,8 @@
               "explain": "Convert the improper fraction back to a mixed numeral.",
               "work": "\\\\(5 \\\\frac{3}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3e",
@@ -5079,7 +5253,8 @@
               "explain": "Multiply the simplified fractions.",
               "work": "\\\\(15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3f",
@@ -5108,7 +5283,8 @@
               "explain": "Multiply the numerators and denominators.",
               "work": "\\\\(\\\\frac{108}{125}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3g",
@@ -5137,7 +5313,8 @@
               "explain": "Simplify by dividing the numerator and denominator by 9.",
               "work": "\\\\(5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q3h",
@@ -5166,7 +5343,8 @@
               "explain": "Convert the improper fraction back to a mixed numeral.",
               "work": "\\\\(16 \\\\frac{1}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-2h-q4",
@@ -5195,7 +5373,8 @@
               "explain": "Calculate the total length of the fencing material.",
               "work": "\\\\(45 \\\\text{ m}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q5",
@@ -5224,7 +5403,8 @@
               "explain": "Write the result as a mixed numeral.",
               "work": "\\\\(15 \\\\frac{5}{24}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q6",
@@ -5253,7 +5433,8 @@
               "explain": "Subtract the red and blue wearers from the total to find those who wore white.",
               "work": "\\\\(80 - (20 + 30) = 80 - 50 = 30\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q7",
@@ -5286,7 +5467,8 @@
               "explain": "Subtract the petrol expense to find the final amount left.",
               "work": "\\\\(1200 - 450 = 750\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q9a",
@@ -5311,7 +5493,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor, 30.",
               "work": "\\\\(\\\\frac{1}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q9b",
@@ -5352,7 +5535,8 @@
               "explain": "Write the new fraction of helium balloons and simplify.",
               "work": "\\\\(\\\\frac{24}{129} = \\\\frac{8}{43}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q10",
@@ -5389,7 +5573,8 @@
               "explain": "Calculate the final freestyle time.",
               "work": "\\\\(50 \\\\text{ seconds}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11a",
@@ -5414,7 +5599,8 @@
               "explain": "Count the total number of decimal places (1 + 1 = 2) and place the decimal point.",
               "work": "\\\\(3.64\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11b",
@@ -5443,7 +5629,8 @@
               "explain": "Calculate the final sum.",
               "work": "\\\\(2.78\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11c",
@@ -5476,7 +5663,8 @@
               "explain": "Calculate the final sum.",
               "work": "\\\\(12.2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11d",
@@ -5501,7 +5689,8 @@
               "explain": "Subtract to find the difference.",
               "work": "\\\\(8.65\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11e",
@@ -5530,7 +5719,8 @@
               "explain": "Calculate the final difference.",
               "work": "\\\\(25.679\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-2h-q11f",
@@ -5559,7 +5749,8 @@
               "explain": "Calculate the final sum.",
               "work": "\\\\(5085.92\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

@@ -117,7 +117,8 @@
               "work": "\\(120^\\circ\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "SzqcVtyeJ0xlMWH1rswo",
@@ -146,7 +147,8 @@
               "work": "\\(65^\\circ\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -177,7 +179,8 @@
             {
               "explain": "\\( 7 \\text{ cm}^2 = 7 \\times 100 = 700 \\text{ mm}^2 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "BmFlqtV1lBNkiBkN5jx4",
@@ -209,7 +212,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "BmWgY4amhfBrSUDvUnyS",
@@ -241,7 +245,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "CyaCpEEZnG0PaCC39iAA",
@@ -269,7 +274,8 @@
               "explain": "State the final answer and verify it makes sense.",
               "work": "<div style=\"text-align:left\"><p>\\(\\beta = 180^\\circ - 137^\\circ = 43^\\circ\\)</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "E5kjSyYBbwY55C35QJ29",
@@ -301,7 +307,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "fhEHMxyAdhVA5fkZNhpO",
@@ -333,7 +340,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "fvy1qDq78QiXk4tPsxlt",
@@ -361,7 +369,8 @@
               "explain": "State the final answer.",
               "work": "<div style=\"text-align:left\"><p>Exterior angle</p></div>"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "gDYsW7NkPNHbFXbFFRsu",
@@ -393,7 +402,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "i2LmwtGa1MENVVm5918z",
@@ -421,7 +431,8 @@
               "explain": "State the final answer.",
               "work": "<div style=\"text-align:left\"><p>No — a triangle can have at most one acute exterior angle.</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "I3epSHZJkQD4hBLmTuOk",
@@ -453,7 +464,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "J9Ca3QPzztiZ53S7QBN9",
@@ -481,7 +493,8 @@
               "explain": "State the final answer.",
               "work": "\\(27^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "ml3LsWYBnr5YoC7WXFbE",
@@ -509,7 +522,8 @@
               "explain": "Use the angle sum of a triangle to solve for \\(\\alpha\\).",
               "work": "<div style=\"text-align:left\"><p>\\(\\alpha + 70^\\circ + 35^\\circ = 180^\\circ\\)</p><p>\\(\\alpha + 105^\\circ = 180^\\circ\\)</p><p>\\(\\alpha = 180^\\circ - 105^\\circ = 75^\\circ\\)</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "OjPOwZzLbeqxVfsSKBcn",
@@ -536,7 +550,8 @@
               "explain": "State the final answer.",
               "work": "Yes, if the corresponding interior angle is obtuse."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "OU0xWJzJ78E74MrqEIZB",
@@ -563,7 +578,8 @@
               "explain": "State the final answer.",
               "work": "\\(No, because two right angles would sum to exactly 180^circ, leaving 0^circ for the third angle.\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "OY5WoXBgMr9xKKvM8iZt",
@@ -590,7 +606,8 @@
               "explain": "State the final answer.",
               "work": "The sum of the two opposite interior angles \\(\\angle A + \\angle C\\)."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "rgioUQgEFsZxSMOcaUBn",
@@ -618,7 +635,8 @@
               "explain": "State the final answer.",
               "work": "\\(180^\\circ\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "sr91hfAtmzxGHeFk52S1",
@@ -653,7 +671,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "UFLg9lhN2Cjv0G3gUGcn",
@@ -681,7 +700,8 @@
               "explain": "State the final answer.",
               "work": "<div style=\"text-align:left\"><p>No — two obtuse angles would make the sum exceed \\(180^\\circ\\), which is impossible.</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "vfwvbXkJH9W6cWfoZt5e",
@@ -713,7 +733,8 @@
               "explain": "Use the second isosceles triangle to solve for \\(\\theta\\).",
               "work": "<div style=\"text-align:left\"><p>In \\(\\triangle SQR\\), we are given \\(SR = RQ\\) (double ticks), meaning it is an isosceles triangle with apex \\(R\\).</p><p>Therefore, its base angles are equal: \\(\\theta = \\angle QSR = \\angle SQR = 55^\\circ\\).</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Vqy7bicKuEvGwI7cGkq9",
@@ -741,7 +762,8 @@
               "explain": "Apply the angle sum of a triangle.",
               "work": "<div style=\"text-align:left\"><p>The angles of triangle \\(SQR\\) sum to \\(180^\\circ\\):</p><p>\\(\\gamma + 50^\\circ + 45^\\circ = 180^\\circ\\)</p><p>\\(\\gamma = 180^\\circ - 95^\\circ = \\mathbf{85^\\circ}\\)</p></div>"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "VrvfVwGOduOqDcqkZrXD",
@@ -769,7 +791,8 @@
               "explain": "Use alternate interior angles to find \\(w\\).",
               "work": "Since \\(AB \\parallel DC\\) and \\(AC\\) is a transversal:\n\\(w = \\angle DCA = \\angle BAC = 40^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "w19sLx2CljvRBkICDmdN",
@@ -801,7 +824,8 @@
               "explain": "Solve the equation for β.",
               "work": "<div style=\"text-align:left\"><p>Equating the two expressions for \\(\\angle ADB\\):</p><p>\\(55^\\circ + \\beta = 2\\beta + 55^\\circ\\)?</p><p>Using angle sum at \\(E\\) in \\(\\triangle ABE\\) with exterior at \\(D\\):</p><p>\\(\\angle ADB = \\angle ABE + \\angle BAE\\). And \\(\\angle ADB = 125^\\circ - \\beta\\) (supplement of \\(\\angle ADE\\))... wait we said \\(\\angle ADB = 55^\\circ + \\beta\\).</p><p>Exterior angle at \\(D\\) of \\(\\triangle ABE\\): \\(\\angle ADE = \\angle ABE + \\angle BAE = 2\\beta + 55^\\circ\\).</p><p>But \\(\\angle ADE = 125^\\circ - \\beta\\) (from step 1).</p><p>\\(125^\\circ - \\beta = 2\\beta + 55^\\circ \\implies 70^\\circ = 3\\beta \\implies \\beta = \\mathbf{10^\\circ}\\) ✓</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "WSsXenvcp0ej7PkMLaEc",
@@ -829,7 +853,8 @@
               "explain": "State the final answer.",
               "work": "<div style=\"text-align:left\"><p>Since \\(S\\) is the apex of the large triangle \\(PQR\\):</p><p>\\(\\alpha = \\angle PSQ = 180^\\circ - 45^\\circ - 55^\\circ = \\mathbf{80^\\circ}\\)</p></div>"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "x47PGdgwnPZinBm65vz2",
@@ -861,7 +886,8 @@
               "explain": "Calculate \\(\\alpha\\).",
               "work": "<div style=\"text-align:left\"><p>Since the diagonal bisects the \\(70^\\circ\\) angle at \\(B\\):</p><p>\\(\\alpha = \\angle ABD = \\frac{70^\\circ}{2} = \\mathbf{35^\\circ}\\)</p></div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Z1bWGliPaOLIX7SCdL33",
@@ -889,7 +915,8 @@
               "explain": "State the final answer.",
               "work": "\\(2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q2-mc",
@@ -919,7 +946,8 @@
             {
               "explain": "Therefore, 'Angle sum of a square' does not equal \\(180^\\circ\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q4i",
@@ -946,7 +974,8 @@
             {
               "explain": "\\( n = 40 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q4iii",
@@ -973,7 +1002,8 @@
             {
               "explain": "\\( x = 70 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q4iv",
@@ -1003,7 +1033,8 @@
             {
               "explain": "Then \\( x + 40 + 80 = 180 \\implies x + 120 = 180 \\implies x = 60 \\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1031,7 +1062,8 @@
             {
               "explain": "\\(11.5 \\times 10 = 115 \\text{ mm}\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1059,7 +1091,8 @@
             {
               "explain": "\\(200 \\times 100 = 20,000 \\text{ mm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q8c",
@@ -1083,7 +1116,8 @@
             {
               "explain": "Therefore, \\(1 \\text{ km}^2 = 100 \\text{ ha}\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q8d",
@@ -1104,7 +1138,8 @@
             {
               "explain": "\\(100,000 \\div 1,000,000 = 0.1 \\text{ m}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q1-mc",
@@ -1125,7 +1160,8 @@
             {
               "explain": "Therefore, 'Three equal angles' is the correct property."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1153,7 +1189,8 @@
             {
               "explain": "\\(4 + 7 + 5 + 3 = 19 \\text{ cm}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q9b",
@@ -1177,7 +1214,8 @@
             {
               "explain": "\\(8 \\times 19 = 152 \\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q9c",
@@ -1210,7 +1248,8 @@
             {
               "explain": "Perimeter = \\(14 + 3 + 5 + 5 + 4 + 5 + 5 + 3 = 44 \\text{ cm}\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q15a",
@@ -1237,7 +1276,8 @@
             {
               "explain": "\\(\\text{Number of posts} = \\frac{\\text{Total Perimeter}}{\\text{Spacing}} = \\frac{100}{2} = 50\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q15b",
@@ -1261,7 +1301,8 @@
             {
               "explain": "\\(\\text{Total rails} = 50 \\text{ gaps} \\times 2 \\text{ rails/gap} = 100 \\text{ rails}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-area-q2a",
@@ -1285,7 +1326,8 @@
             {
               "explain": "\\( \\text{Area} = 6 \\times 6 = 36 \\text{ cm}^2 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-area-q2b",
@@ -1312,7 +1354,8 @@
             {
               "explain": "\\( = 12 \\times 5 = 60 \\text{ cm}^2 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-area-q3",
@@ -1339,7 +1382,8 @@
             {
               "explain": "\\( b = 16 \\text{ cm} \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1367,7 +1411,8 @@
             {
               "explain": "\\(\\text{Area} = 7 \\times 7 = 49 \\text{ cm}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q10b",
@@ -1391,7 +1436,8 @@
             {
               "explain": "\\(\\text{Area} = \\frac{1}{2} \\times 1.4 \\times 1 = 0.7 \\text{ m}^2\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q10c",
@@ -1415,7 +1461,8 @@
             {
               "explain": "\\(\\text{Area} = \\frac{1}{2} \\times 22 \\times 4 = 11 \\times 4 = 44 \\text{ cm}^2\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q17",
@@ -1445,7 +1492,8 @@
             {
               "explain": "\\(h = \\frac{60}{6} = 10\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q18",
@@ -1469,7 +1517,8 @@
             {
               "explain": "\\(\\text{Area} = \\frac{1}{2} \\times a \\times d = \\frac{ad}{2}\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-ep2-q19",
@@ -1502,7 +1551,8 @@
             {
               "explain": "Total Area = \\(4y^2 + 2y^2 = 6y^2\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-q4ii",
@@ -1532,7 +1582,8 @@
             {
               "explain": "\\( n = 70 \\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

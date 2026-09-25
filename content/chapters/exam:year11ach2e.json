@@ -39,7 +39,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2e-q4f",
@@ -69,7 +70,8 @@
               "work": "\\\\((-4, infty)\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2e-q5e",
@@ -103,7 +105,8 @@
               "work": "\\\\(x > 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-2e-q8a",
@@ -137,7 +140,8 @@
               "work": "= \\\\sqrt{3}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-2e-q8b",
@@ -171,7 +175,8 @@
               "work": "= 7\\\\sqrt{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-2e-q8c",
@@ -205,7 +210,8 @@
               "work": "= 4\\\\sqrt{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-2e-q8d",
@@ -239,7 +245,8 @@
               "work": "= 8\\\\sqrt{6} - 6\\\\sqrt{5}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-2e-q14",
@@ -273,7 +280,8 @@
               "work": "\\\\sqrt{x} = \\\\sqrt{50} \\\\implies x = 50"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

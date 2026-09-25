@@ -103,7 +103,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc1v",
@@ -141,7 +142,8 @@
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-mc2",
@@ -238,7 +240,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc2v",
@@ -335,7 +338,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc3",
@@ -379,7 +383,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-mc3v",
@@ -476,7 +481,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-mc4",
@@ -510,7 +516,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-mc4v",
@@ -544,7 +551,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-mc5",
@@ -589,7 +597,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-mc5v",
@@ -634,7 +643,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-mc6",
@@ -691,7 +701,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-mc6v",
@@ -744,7 +755,8 @@
           "dna": {
             "dnaId": "CALC-AREA-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 3
         },
         {
           "id": "baulko2020-mc7",
@@ -789,7 +801,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc7v",
@@ -834,7 +847,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc8",
@@ -879,7 +893,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-mc8v",
@@ -924,7 +939,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc9",
@@ -968,7 +984,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc9v",
@@ -1012,7 +1029,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc10",
@@ -1056,7 +1074,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-mc10v",
@@ -1100,7 +1119,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11ai",
@@ -1194,7 +1214,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 1
         },
         {
           "id": "baulko2020-q11aiv",
@@ -1288,7 +1309,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 1
         },
         {
           "id": "baulko2020-q11aii",
@@ -1385,7 +1407,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11aiiv",
@@ -1476,7 +1499,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-q11b",
@@ -1520,7 +1544,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11bv",
@@ -1564,7 +1589,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11c",
@@ -1663,7 +1689,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q11cv",
@@ -1709,7 +1736,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q11d",
@@ -1753,7 +1781,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11dv",
@@ -1797,7 +1826,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11ei",
@@ -1890,7 +1920,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-q11eii",
@@ -1987,7 +2018,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-q11eiiv",
@@ -2025,7 +2057,8 @@
           "dna": {
             "dnaId": "CALC-INT-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-q11fi",
@@ -2072,7 +2105,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q11fii",
@@ -2117,7 +2151,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q11fiiv",
@@ -2162,7 +2197,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q12a",
@@ -2202,7 +2238,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12av",
@@ -2242,7 +2279,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12bi",
@@ -2287,7 +2325,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12bii",
@@ -2332,7 +2371,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12biiv",
@@ -2377,7 +2417,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12ci",
@@ -2417,7 +2458,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12cii",
@@ -2461,7 +2503,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q12ciiv",
@@ -2505,7 +2548,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q13ai",
@@ -2547,7 +2591,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q13aii",
@@ -2590,7 +2635,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-q13aiiv",
@@ -2633,7 +2679,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-q13bi",
@@ -2678,7 +2725,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q13bii",
@@ -2718,7 +2766,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q13biii",
@@ -2762,7 +2811,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-q13biiiv",
@@ -2807,7 +2857,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q13ci",
@@ -2856,7 +2907,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q13cii",
@@ -2905,7 +2957,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q13ciiv",
@@ -2946,7 +2999,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q13di",
@@ -2987,7 +3041,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q13dii",
@@ -3084,7 +3139,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q13diii",
@@ -3185,7 +3241,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q13div",
@@ -3233,7 +3290,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q13divv",
@@ -3285,7 +3343,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14ai",
@@ -3325,7 +3384,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-q14aii",
@@ -3422,7 +3482,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q14aiiv",
@@ -3519,7 +3580,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14bi",
@@ -3563,7 +3625,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q14bii",
@@ -3607,7 +3670,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14biii",
@@ -3647,7 +3711,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14biiv",
@@ -3691,7 +3756,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q14ci",
@@ -3737,7 +3803,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14cii",
@@ -3782,7 +3849,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q14ciiv",
@@ -3827,7 +3895,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q15ai",
@@ -3872,7 +3941,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q15aii",
@@ -3917,7 +3987,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q15aiii",
@@ -3958,7 +4029,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "baulko2020-q15aiv",
@@ -4003,7 +4075,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q15aivv",
@@ -4044,7 +4117,8 @@
           "dna": {
             "dnaId": "CALC-MOTION-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "baulko2020-q15bi",
@@ -4156,7 +4230,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q15bii",
@@ -4249,7 +4324,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q15biii",
@@ -4342,7 +4418,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q15ci",
@@ -4387,7 +4464,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q15cii",
@@ -4432,7 +4510,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "baulko2020-q15ciiv",
@@ -4477,7 +4556,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q16ai",
@@ -4564,7 +4644,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 3
         },
         {
           "id": "baulko2020-q16aii",
@@ -4658,7 +4739,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q16aiii",
@@ -4756,7 +4838,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q16aiiiv",
@@ -4854,7 +4937,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q16bi",
@@ -4894,7 +4978,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q16bii",
@@ -4987,7 +5072,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 5
         },
         {
           "id": "baulko2020-q16ci",
@@ -5045,7 +5131,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q16cii",
@@ -5146,7 +5233,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "baulko2020-q16ciii",
@@ -5190,7 +5278,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "baulko2020-q16ciiiiv",
@@ -5287,7 +5376,8 @@
           },
           "alsoIn": [
             "exam:baulkham2020"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

@@ -103,7 +103,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc1v",
@@ -200,7 +201,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc2",
@@ -241,7 +243,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-mc2v",
@@ -282,7 +285,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-mc3",
@@ -326,7 +330,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc3v",
@@ -370,7 +375,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc4",
@@ -411,7 +417,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-mc4v",
@@ -452,7 +459,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-mc5",
@@ -498,7 +506,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc5v",
@@ -544,7 +553,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-mc6",
@@ -589,7 +599,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc6v",
@@ -634,7 +645,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc7",
@@ -679,7 +691,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc7v",
@@ -724,7 +737,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc8",
@@ -769,7 +783,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc8v",
@@ -814,7 +829,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc9",
@@ -858,7 +874,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc9v",
@@ -902,7 +919,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-mc10",
@@ -948,7 +966,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-mc10v",
@@ -994,7 +1013,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q11aa",
@@ -1092,7 +1112,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q11aav",
@@ -1186,7 +1207,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-q11ab",
@@ -1284,7 +1306,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q11abv",
@@ -1382,7 +1405,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q11bi",
@@ -1479,7 +1503,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q11biv",
@@ -1576,7 +1601,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q11bii",
@@ -1673,7 +1699,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q11biiv",
@@ -1770,7 +1797,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q11ci",
@@ -1810,7 +1838,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q11cii",
@@ -1850,7 +1879,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q11ciii",
@@ -1894,7 +1924,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q11ciiiv",
@@ -1938,7 +1969,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q12a",
@@ -2037,7 +2069,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12av",
@@ -2136,7 +2169,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12b",
@@ -2233,7 +2267,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12bv",
@@ -2330,7 +2365,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12c",
@@ -2427,7 +2463,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12cv",
@@ -2524,7 +2561,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q12di",
@@ -2569,7 +2607,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q12div",
@@ -2614,7 +2653,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q12dii",
@@ -2659,7 +2699,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q12diiv",
@@ -2704,7 +2745,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q13ai",
@@ -2749,7 +2791,8 @@
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bar2020-q13aiv",
@@ -2790,7 +2833,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q13aii",
@@ -2839,7 +2883,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q13aiiv",
@@ -2880,7 +2925,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q13aiiiv",
@@ -2921,7 +2967,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q13bi",
@@ -2965,7 +3012,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q13biv",
@@ -3009,7 +3057,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q13bii",
@@ -3053,7 +3102,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q13biiv",
@@ -3097,7 +3147,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q13c",
@@ -3142,7 +3193,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q13cv",
@@ -3187,7 +3239,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q14ai",
@@ -3303,7 +3356,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bar2020-q14aiv",
@@ -3394,7 +3448,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bar2020-q14aii",
@@ -3485,7 +3540,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bar2020-q14aiiv",
@@ -3576,7 +3632,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bar2020-q14b",
@@ -3616,7 +3673,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q14ci",
@@ -3662,7 +3720,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q15ai",
@@ -3763,7 +3822,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q15aiv",
@@ -3811,7 +3871,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q15aii",
@@ -3855,7 +3916,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q15bi",
@@ -3901,7 +3963,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q15biv",
@@ -3951,7 +4014,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q15bii",
@@ -3996,7 +4060,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q15biiv",
@@ -4041,7 +4106,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q16ai",
@@ -4130,7 +4196,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "bar2020-q16aii",
@@ -4170,7 +4237,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q16aiii",
@@ -4214,7 +4282,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q16aiiiv",
@@ -4258,7 +4327,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q16b",
@@ -4303,7 +4373,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q16bv",
@@ -4348,7 +4419,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q16c",
@@ -4395,7 +4467,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q16cv",
@@ -4442,7 +4515,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q17a",
@@ -4486,7 +4560,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q17av",
@@ -4530,7 +4605,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q17bi",
@@ -4649,7 +4725,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q17biia",
@@ -4767,7 +4844,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q17biib",
@@ -4866,7 +4944,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q17biibv",
@@ -4965,7 +5044,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q18ai",
@@ -5010,7 +5090,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q18aiv",
@@ -5055,7 +5136,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q18aii",
@@ -5100,7 +5182,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q18aiiv",
@@ -5145,7 +5228,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q18bi",
@@ -5189,7 +5273,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q18bii",
@@ -5267,7 +5352,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q18biii",
@@ -5312,7 +5398,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q18biiiiv",
@@ -5357,7 +5444,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q19ai",
@@ -5402,7 +5490,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q19aiv",
@@ -5447,7 +5536,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q19aii",
@@ -5492,7 +5582,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q19aiiv",
@@ -5537,7 +5628,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q19bi",
@@ -5582,7 +5674,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "bar2020-q19bii",
@@ -5627,7 +5720,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "bar2020-q19biii",
@@ -5671,7 +5765,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "bar2020-q19biiiiv",
@@ -5715,7 +5810,8 @@
           },
           "alsoIn": [
             "exam:barker2020"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

@@ -30,7 +30,8 @@
               "work": "45y \\neq 20y"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         }
       ]
     }

@@ -38,7 +38,8 @@
               "work": "\\(\\sqrt{x} = 2 \\implies x = 4; \\quad \\sqrt{x} = 4 \\implies x = 16\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "0c6273f8a1039597ddb2516eacf4a51d",
@@ -78,7 +79,8 @@
           "timeLimit": 90,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "114db22804ab07b88abccc0b9edb6385",
@@ -110,7 +112,8 @@
               "work": "\\(\\sqrt{x} = 3 \\implies x = 9; \\quad \\sqrt{x} = 5 \\implies x = 25\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "114f420e680907a09a8ef89329fcc05f",
@@ -142,7 +145,8 @@
               "work": "\\(x^2 = 2 \\implies x = \\pm\\sqrt{2}; \\quad x^2 = 3 \\implies x = \\pm\\sqrt{3}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "231c10b5ee9072f0f7fefe5843da2498",
@@ -182,7 +186,8 @@
           "timeLimit": 60,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 1
         },
         {
           "id": "23d623cd53221924be0cd12afcdcc3aa",
@@ -222,7 +227,8 @@
           "timeLimit": 90,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "3c6d284c837474ac72ccfdcc1ed75078",
@@ -262,7 +268,8 @@
           "timeLimit": 90,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "480675d9a8ceb9efb67f8a7c1b4f9597",
@@ -302,7 +309,8 @@
           "timeLimit": 60,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 1
         },
         {
           "id": "54c281b5472f262ca8f385b7ed738835",
@@ -338,7 +346,8 @@
           "timeLimit": 90,
           "meta": {
             "verificationNeeded": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "7159fc59e9c35d639cfa18441fdcab8a",
@@ -383,7 +392,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "75e20c0b255e36ef32a90f76359df5ad",
@@ -415,7 +425,8 @@
               "work": "\\(\\sqrt{x} = 1 \\implies x = 1; \\quad \\sqrt{x} = 3 \\implies x = 9\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "ac25eadb4575a562fa1c1125dfe11003",
@@ -448,7 +459,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "c37da4662128b68d0c27b4b2ec672e60",
@@ -480,7 +492,8 @@
               "work": "\\(x^2 = 1 \\implies x = \\pm 1; \\quad x^2 = 2 \\implies x = \\pm\\sqrt{2}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "f1c466b5912eb87a13a5150c714f6188",
@@ -515,7 +528,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "f346087fa04c6fae381bc6b259cc8cfb",
@@ -548,7 +562,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "f703b921fca6e128bdb3d0dabbf65186",
@@ -580,7 +595,8 @@
               "work": "\\(x^2 = 3 \\implies x = \\pm\\sqrt{3}; \\quad x^2 = 4 \\implies x = \\pm 2\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "fa097cbac5cafda2eed6b38b16ac2b56",
@@ -614,7 +630,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         }
       ]
     },
@@ -659,7 +676,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "fortst2020-q17b",
@@ -697,7 +715,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "fortst2020s-q5",
@@ -731,7 +750,8 @@
               "work": "\\(100 \\geq 24k \\Rightarrow k \\leq \\frac{100}{24} = \\frac{25}{6}\\)"
             }
           ],
-          "hscType": "arithmetic-series"
+          "hscType": "arithmetic-series",
+          "xp": 2
         },
         {
           "id": "fortst2020s-q17b",
@@ -765,7 +785,8 @@
               "work": "\\(t \\approx 20.5 \\Rightarrow \\text{about 21 minutes}\\)"
             }
           ],
-          "hscType": "arithmetic-series"
+          "hscType": "arithmetic-series",
+          "xp": 2
         }
       ]
     }

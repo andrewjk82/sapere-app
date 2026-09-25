@@ -38,7 +38,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2",
@@ -66,7 +67,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3",
@@ -94,7 +96,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q4",
@@ -119,7 +122,8 @@
               "explain": "Sum the grouped values.",
               "work": "200 + 60 + 9 = 269"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q5",
@@ -144,7 +148,8 @@
               "explain": "Add the components together.",
               "work": "700 + 60 = 760"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q6",
@@ -173,7 +178,8 @@
               "explain": "Combine the components together.",
               "work": "DCCC + XL = DCCCXL"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q7",
@@ -202,7 +208,8 @@
               "explain": "Combine the parts in order.",
               "work": "CM + XL + VI = CMXLVI"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q8",
@@ -231,7 +238,8 @@
               "explain": "Combine all parts together.",
               "work": "M + CM + XC + VI = MCMXCVI"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9",
@@ -260,7 +268,8 @@
               "explain": "Combine the symbols.",
               "work": "CD + XXX + IX = CDXXXIX"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q10",
@@ -289,7 +298,8 @@
               "explain": "Add the numerals together.",
               "work": "LXXX + VIII = LXXXVIII"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q11",
@@ -321,7 +331,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q12",
@@ -353,7 +364,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q13",
@@ -381,7 +393,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q14",
@@ -410,7 +423,8 @@
               "explain": "Sum all the expanded parts.",
               "work": "70,000 + 4,000 + 0 + 90 + 3 = 74,093"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q15",
@@ -442,7 +456,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q16",
@@ -470,7 +485,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q17",
@@ -495,7 +511,8 @@
               "explain": "Combine these parts into a single numeric value.",
               "work": "405,212"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q18",
@@ -520,7 +537,8 @@
               "explain": "Add these numbers together, noting the zero placeholders.",
               "work": "\\begin{array}{r l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q19",
@@ -548,7 +566,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q20",
@@ -576,7 +595,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q21",
@@ -604,7 +624,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q22",
@@ -632,7 +653,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q23",
@@ -660,7 +682,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q24",
@@ -688,7 +711,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q25",
@@ -716,7 +740,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q26",
@@ -748,7 +773,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q27",
@@ -777,7 +803,8 @@
               "explain": "Compare the two final values.",
               "work": "18 = 18 \\rightarrow 3 \\times (4 + 2) = 20 - 2"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q28",
@@ -805,7 +832,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q29",
@@ -837,7 +865,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q30",
@@ -865,7 +894,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q31",
@@ -890,7 +920,8 @@
               "explain": "Subtract column-by-column starting from units, borrowing from the next left columns where necessary.",
               "work": "\\begin{array}{rccccc} & 7 & 14 & 12 & 10 & 14 \\\\ & \\cancel{8} & \\cancel{5} & \\cancel{3} & \\cancel{1} & \\cancel{4} \\\\ - & 6 & 7 & 4 & 2 & 9 \\\\ \\hline & 1 & 7 & 8 & 8 & 5 \\end{array}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q32",
@@ -926,7 +957,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q33",
@@ -947,7 +979,8 @@
               "explain": "Perform long division step-by-step.",
               "work": "\\begin{array}{r|l} \\mathbf{698} & \\text{quotient} \\\\ 25 \\overline{) 17,459} & \\\\ -150 & (25 \\times 6) \\\\ \\hline 245 & \\\\ -225 & (25 \\times 9) \\\\ \\hline 209 & \\\\ -200 & (25 \\times 8) \\\\ \\hline \\mathbf{9} & \\text{remainder} \\end{array}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q34",
@@ -975,7 +1008,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q35",
@@ -1003,7 +1037,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q36",
@@ -1035,7 +1070,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q37",
@@ -1063,7 +1099,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q38",
@@ -1091,7 +1128,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q39",
@@ -1127,7 +1165,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q40",
@@ -1159,7 +1198,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q41",
@@ -1195,7 +1235,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q42",
@@ -1231,7 +1272,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q43",
@@ -1263,7 +1305,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q44",
@@ -1292,7 +1335,8 @@
               "explain": "Perform the subtraction.",
               "work": "30 - 2 = 28"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q45",
@@ -1317,7 +1361,8 @@
               "explain": "Multiply step-by-step.",
               "work": "\\begin{aligned} 3 \\times 3 &= 9 \\\\ 9 \\times 3 &= 27 \\\\ 27 \\times 3 &= 81 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q46",
@@ -1345,7 +1390,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q47",
@@ -1373,7 +1419,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q48",
@@ -1398,7 +1445,8 @@
               "explain": "Perform the repeated multiplication.",
               "work": "\\begin{aligned} 2 \\times 2 &= 4 \\\\ 4 \\times 2 &= 8 \\\\ 8 \\times 2 &= 16 \\\\ 16 \\times 2 &= 32 \\\\ 32 \\times 2 &= 64 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q49",
@@ -1423,7 +1471,8 @@
               "explain": "Substitute back and perform operations from left to right.",
               "work": "\\begin{aligned} 18 - 4 + 3 &= 14 + 3 \\\\ &= 17 \\end{aligned}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q50",
@@ -1455,7 +1504,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q51",
@@ -1484,7 +1534,8 @@
               "explain": "Subtract the original sum from the new sum to find the value of the added number.",
               "work": "\\text{Fifth number} = 50 - 32 = 18"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q52",
@@ -1513,7 +1564,8 @@
               "explain": "Divide the new total runs by 7 matches to find the new average.",
               "work": "\\text{New average} = \\frac{252}{7} = 36"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q53",
@@ -1545,7 +1597,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q54",
@@ -1581,7 +1634,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q55",
@@ -1610,7 +1664,8 @@
               "explain": "Subtract 3.",
               "work": "9 - 3 = 6"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q56",
@@ -1635,7 +1690,8 @@
               "explain": "Subtract 12 from 16 to find the difference.",
               "work": "16 - 12 = 4"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q57",
@@ -1660,7 +1716,8 @@
               "explain": "Divide the sum by the count of numbers (5).",
               "work": "\\text{Average} = \\frac{50}{5} = 10"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q58",
@@ -1685,7 +1742,8 @@
               "explain": "Divide by the count of numbers (4).",
               "work": "\\text{Average} = \\frac{56}{4} = 14"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q59",
@@ -1714,7 +1772,8 @@
               "explain": "Add 9 to find the total.",
               "work": "48 + 9 = 57"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q60",
@@ -1739,7 +1798,8 @@
               "explain": "Divide the total students by the number of classes (6).",
               "work": "\\text{Average} = \\frac{180}{6} = 30"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q1a_p16",
@@ -1764,7 +1824,8 @@
               "explain": "Sum the values from left to right.",
               "work": "\\(10 + 1 + 1 = 12\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1b_p16",
@@ -1789,7 +1850,8 @@
               "explain": "Sum the values from left to right.",
               "work": "\\(10 + 5 = 15\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1c_p16",
@@ -1814,7 +1876,8 @@
               "explain": "Sum the values from left to right.",
               "work": "\\(10 + 10 + 5 + 1 + 1 = 27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1d_p16",
@@ -1839,7 +1902,8 @@
               "explain": "Sum the values.",
               "work": "\\(50 + 4 = 54\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q2a_p16",
@@ -1868,7 +1932,8 @@
               "explain": "Combine the representations.",
               "work": "\\text{XIV}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2b_p16",
@@ -1897,7 +1962,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{XVII}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2c_p16",
@@ -1926,7 +1992,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{XXI}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2d_p16",
@@ -1955,7 +2022,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{XLIV}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3a_p16",
@@ -1983,7 +2051,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3b_p16",
@@ -2011,7 +2080,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3c_p16",
@@ -2039,7 +2109,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3d_p16",
@@ -2067,7 +2138,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q4a_p16",
@@ -2095,7 +2167,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q4b_p16",
@@ -2123,7 +2196,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q5a_p16",
@@ -2151,7 +2225,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q5b_p16",
@@ -2179,7 +2254,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6a_p16",
@@ -2208,7 +2284,8 @@
               "explain": "Compare the distances. Since 4 is less than 6, 84 is closer to 80.",
               "work": "\\(4 < 6 \\implies 80\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6b_p16",
@@ -2237,7 +2314,8 @@
               "explain": "Change the units digit to zero.",
               "work": "\\(84 \\approx 80\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7a_p16",
@@ -2270,7 +2348,8 @@
               "explain": "State the final sum.",
               "work": "\\(79\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7b_p16",
@@ -2303,7 +2382,8 @@
               "explain": "State the final sum.",
               "work": "\\(93\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7c_p16",
@@ -2336,7 +2416,8 @@
               "explain": "State the final sum.",
               "work": "\\(137\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8a_p16",
@@ -2369,7 +2450,8 @@
               "explain": "State the final difference.",
               "work": "\\(23\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8b_p16",
@@ -2402,7 +2484,8 @@
               "explain": "State the final difference.",
               "work": "\\(43\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8c_p16",
@@ -2435,7 +2518,8 @@
               "explain": "State the final difference.",
               "work": "\\(46\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9a_p16",
@@ -2464,7 +2548,8 @@
               "explain": "Evaluate the products and add them together.",
               "work": "\\(50 + 15 = 65\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9b_p16",
@@ -2493,7 +2578,8 @@
               "explain": "Evaluate the products and add them together.",
               "work": "\\(70 + 42 = 112\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9c_p16",
@@ -2518,7 +2604,8 @@
               "explain": "Evaluate the simplified expression.",
               "work": "\\(30 \\times 4 = 120\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10a_p16",
@@ -2543,7 +2630,8 @@
               "explain": "Evaluate the division.",
               "work": "\\(48 \\div 8 = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10b_p16",
@@ -2572,7 +2660,8 @@
               "explain": "Sum the quotients.",
               "work": "\\(10 + 8 = 18\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10c_p16",
@@ -2601,7 +2690,8 @@
               "explain": "Sum the quotients.",
               "work": "\\(10 + 3 = 13\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q11a_p16",
@@ -2626,7 +2716,8 @@
               "explain": "Add 4 to the product.",
               "work": "\\(18 + 4 = 22\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q11b_p16",
@@ -2651,7 +2742,8 @@
               "explain": "Add 7 to the product.",
               "work": "\\(7 + 12 = 19\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q11c_p16",
@@ -2676,7 +2768,8 @@
               "explain": "Add 12 to the quotient.",
               "work": "\\(12 + 4 = 16\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q12a_p16",
@@ -2701,7 +2794,8 @@
               "explain": "Evaluate the product.",
               "work": "\\(20\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q12b_p16",
@@ -2726,7 +2820,8 @@
               "explain": "Evaluate the sum.",
               "work": "\\(13\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q12c_p16",
@@ -2751,7 +2846,8 @@
               "explain": "Evaluate the subtraction.",
               "work": "\\(7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q12d_p16",
@@ -2776,7 +2872,8 @@
               "explain": "Evaluate the division.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q12e_p16",
@@ -2801,7 +2898,8 @@
               "explain": "Divide the sum by the count of numbers (2).",
               "work": "\\(20 \\div 2 = 10\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q1a_p17",
@@ -2826,7 +2924,8 @@
               "explain": "Sum the values from left to right.",
               "work": "\\(10 + 5 + 1 + 1 + 1 = 18\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1b_p17",
@@ -2851,7 +2950,8 @@
               "explain": "Add the values.",
               "work": "\\(10 + 10 + 9 = 29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1c_p17",
@@ -2876,7 +2976,8 @@
               "explain": "Sum the values.",
               "work": "\\(40 + 1 + 1 = 42\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1d_p17",
@@ -2901,7 +3002,8 @@
               "explain": "Sum the values from left to right.",
               "work": "\\(50 + 10 + 10 + 1 + 1 = 72\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q2a_p17",
@@ -2930,7 +3032,8 @@
               "explain": "Combine the representations.",
               "work": "\\text{XXIV}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2b_p17",
@@ -2959,7 +3062,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{XXXIX}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2c_p17",
@@ -2988,7 +3092,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{LXIV}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2d_p17",
@@ -3017,7 +3122,8 @@
               "explain": "Combine the symbols.",
               "work": "\\text{XCV}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3a_p17",
@@ -3042,7 +3148,8 @@
               "explain": "Calculate the numerical place value.",
               "work": "\\(7 \\times 10 = 70\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3b_p17",
@@ -3067,7 +3174,8 @@
               "explain": "Calculate the numerical place value.",
               "work": "\\(7 \\times 1 = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3c_p17",
@@ -3092,7 +3200,8 @@
               "explain": "Calculate the numerical place value.",
               "work": "\\(7 \\times 100 = 700\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q3d_p17",
@@ -3117,7 +3226,8 @@
               "explain": "Calculate the numerical place value.",
               "work": "\\(7 \\times 10 = 70\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q4a_p17",
@@ -3145,7 +3255,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q4b_p17",
@@ -3173,7 +3284,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q4c_p17",
@@ -3201,7 +3313,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q5a_p17",
@@ -3229,7 +3342,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q5b_p17",
@@ -3254,7 +3368,8 @@
               "explain": "Sum the values.",
               "work": "\\(7086\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6a_p17",
@@ -3279,7 +3394,8 @@
               "explain": "Since 4 < 5, round down.",
               "work": "\\(749 \\approx 700\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6b_p17",
@@ -3304,7 +3420,8 @@
               "explain": "Since 5 \\ge 5, round up.",
               "work": "\\(751 \\approx 800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6c_p17",
@@ -3329,7 +3446,8 @@
               "explain": "Since 5 \\ge 5, round up.",
               "work": "\\(750 \\approx 800\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q6d_p17",
@@ -3354,7 +3472,8 @@
               "explain": "Since 3 < 5, round down.",
               "work": "\\(1432 \\approx 1400\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7a_p17",
@@ -3387,7 +3506,8 @@
               "explain": "Add the hundreds: 3 + 1 (carry) = 4.",
               "work": "\\(3 + 1 = 4\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7b_p17",
@@ -3419,7 +3539,8 @@
           ],
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q7c_p17",
@@ -3452,7 +3573,8 @@
               "explain": "Add the hundreds: 7 + 3 = 10.",
               "work": "\\(7 + 3 = 10\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8a_p17",
@@ -3477,7 +3599,8 @@
               "explain": "Subtract the tens.",
               "work": "\\(7 - 2 = 5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8b_p17",
@@ -3502,7 +3625,8 @@
               "explain": "Subtract remaining tens.",
               "work": "\\(6 - 3 = 3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q8c_p17",
@@ -3531,7 +3655,8 @@
               "explain": "Subtract hundreds.",
               "work": "\\(2 - 0 = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9a_p17",
@@ -3556,7 +3681,8 @@
               "explain": "Multiply tens and add carry: (3 x 6) + 4 = 22.",
               "work": "\\((3 \\times 6) + 4 = 22\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9b_p17",
@@ -3577,7 +3703,8 @@
               "explain": "Multiply by 10 by shifting decimal place.",
               "work": "\\(48 \\times 10 = 480\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q9c_p17",
@@ -3606,7 +3733,8 @@
               "explain": "Add the two partial products.",
               "work": "\\(177 + 590 = 767\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10a_p17",
@@ -3631,7 +3759,8 @@
               "explain": "Divide the remaining units: 21 / 3 = 7.",
               "work": "\\(21 \\div 3 = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10b_p17",
@@ -3656,7 +3785,8 @@
               "explain": "Divide the remaining units: 14 / 7 = 2.",
               "work": "\\(14 \\div 7 = 2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q10c_p17",
@@ -3681,7 +3811,8 @@
               "explain": "Calculate the remainder.",
               "work": "\\(53 - 52 = 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q11a_p17",
@@ -3706,7 +3837,8 @@
               "explain": "Add 8 to the product.",
               "work": "\\(8 + 14 = 22\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q11b_p17",
@@ -3731,7 +3863,8 @@
               "explain": "Divide 12 by the sum.",
               "work": "\\(12 \\div 4 = 3\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q11c_p17",
@@ -3760,7 +3893,8 @@
               "explain": "Perform addition.",
               "work": "\\(4 + 1 = 5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q12a_p17",
@@ -3785,7 +3919,8 @@
               "explain": "Divide the sum by 3.",
               "work": "\\(18 \\div 3 = 6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q12b_p17",
@@ -3810,7 +3945,8 @@
               "explain": "Divide the sum by 5.",
               "work": "\\(45 \\div 5 = 9\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-wn-q1a_p18",
@@ -3839,7 +3975,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q1b_p18",
@@ -3868,7 +4005,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q1c_p18",
@@ -3897,7 +4035,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q1d_p18",
@@ -3926,7 +4065,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2a_p18",
@@ -3959,7 +4099,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q2b_p18",
@@ -3992,7 +4133,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q2c_p18",
@@ -4025,7 +4167,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q2d_p18",
@@ -4058,7 +4201,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3a_p18",
@@ -4087,7 +4231,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3b_p18",
@@ -4116,7 +4261,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3c_p18",
@@ -4145,7 +4291,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q3d_p18",
@@ -4174,7 +4321,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q4a_p18",
@@ -4207,7 +4355,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q4b_p18",
@@ -4240,7 +4389,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q4c_p18",
@@ -4273,7 +4423,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q5a_p18",
@@ -4307,7 +4458,8 @@
               "work": "\\\\(472 + 629 + 254 = 1355\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q5b_p18",
@@ -4341,7 +4493,8 @@
               "work": "\\\\(645 + 438 + 294 = 1377\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q5c_p18",
@@ -4379,7 +4532,8 @@
               "work": "\\\\(1594 + 685 + 473 = 2752\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6a_p18",
@@ -4413,7 +4567,8 @@
               "work": "\\\\(20 + 5 = 25\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q6b_p18",
@@ -4447,7 +4602,8 @@
               "work": "\\\\(359 - 64 = 295\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q6c_p18",
@@ -4481,7 +4637,8 @@
               "work": "\\\\(743 - 358 = 385\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q7a_p18",
@@ -4511,7 +4668,8 @@
               "work": "\\\\(292 + 730 = 1022\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q7b_p18",
@@ -4541,7 +4699,8 @@
               "work": "\\\\(536 + 670 = 1206\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q7c_p18",
@@ -4571,7 +4730,8 @@
               "work": "\\\\(135 + 900 = 1035\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q8a_p18",
@@ -4601,7 +4761,8 @@
               "work": "\\\\(68 \\\\div 4 = 17\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q8b_p18",
@@ -4631,7 +4792,8 @@
               "work": "\\\\(91 \\\\div 7 = 13\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q8c_p18",
@@ -4661,7 +4823,8 @@
               "work": "\\\\(139 \\\\div 6 = 23 \\\\text{ remainder } 1\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q9a_p18",
@@ -4683,7 +4846,8 @@
               "work": "\\\\(7 > 6\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9b_p18",
@@ -4709,7 +4873,8 @@
               "work": "\\\\(25 = 25\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9c_p18",
@@ -4731,7 +4896,8 @@
               "work": "\\\\(3 < 10\\\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10a_p18",
@@ -4757,7 +4923,8 @@
               "work": "\\\\(8 \\\\times 9 = 72\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10b_p18",
@@ -4783,7 +4950,8 @@
               "work": "\\\\(36 + 47 = 83\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10c_p18",
@@ -4809,7 +4977,8 @@
               "work": "\\\\(45 \\\\div 9 = 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10d_p18",
@@ -4835,7 +5004,8 @@
               "work": "\\\\(73 - 14 = 59\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10e_p18",
@@ -4861,7 +5031,8 @@
               "work": "\\\\(9 \\\\times 9 = 81\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10f_p18",
@@ -4887,7 +5058,8 @@
               "work": "\\\\(2 \\\\times 2 \\\\times 2 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10g_p18",
@@ -4913,7 +5085,8 @@
               "work": "\\\\(7 \\\\times 7 = 49\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q11a_p18",
@@ -4939,7 +5112,8 @@
               "work": "\\\\(7^3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q11b_p18",
@@ -4965,7 +5139,8 @@
               "work": "\\\\(4^5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y6-wn-q11c_p18",
@@ -4991,7 +5166,8 @@
               "work": "\\\\(5 \\\\times 10^3\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q1a_p19",
@@ -5021,7 +5197,8 @@
               "work": "\\\\(200 + 60 + 2 = 262\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q1b_p19",
@@ -5051,7 +5228,8 @@
               "work": "\\\\(400 + 40 + 4 = 444\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q1c_p19",
@@ -5081,7 +5259,8 @@
               "work": "\\\\(999\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q2a_p19",
@@ -5114,7 +5293,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q2b_p19",
@@ -5147,7 +5327,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q2c_p19",
@@ -5180,7 +5361,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q3a_p19",
@@ -5213,7 +5395,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q3b_p19",
@@ -5243,7 +5426,8 @@
               "work": "\\\\(802076\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q4a_p19",
@@ -5273,7 +5457,8 @@
               "work": "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q4b_p19",
@@ -5303,7 +5488,8 @@
               "work": "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q4c_p19",
@@ -5333,7 +5519,8 @@
               "work": "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q5a_p19",
@@ -5363,7 +5550,8 @@
               "work": "\\\\(2236\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q5b_p19",
@@ -5393,7 +5581,8 @@
               "work": "\\\\(100 + 2262 = 2362\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q5c_p19",
@@ -5426,7 +5615,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-wn-q6a_p19",
@@ -5456,7 +5646,8 @@
               "work": "\\\\(600 + 40 + 6 = 646\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6b_p19",
@@ -5486,7 +5677,8 @@
               "work": "\\\\((500-200) + (120-40) + (12-8) = 300 + 80 + 4 = 384\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6c_p19",
@@ -5516,7 +5708,8 @@
               "work": "\\\\(4000 + 600 + 30 + 1 = 4631\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q7a_p19",
@@ -5549,7 +5742,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q7b_p19",
@@ -5582,7 +5776,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q7c_p19",
@@ -5615,7 +5810,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q8a_p19",
@@ -5645,7 +5841,8 @@
               "work": "\\\\(\\text{Remainder} = 5\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q8b_p19",
@@ -5678,7 +5875,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q8c_p19",
@@ -5711,7 +5909,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q9a_p19",
@@ -5741,7 +5940,8 @@
               "work": "\\\\(16 + 4 + 1 = 20 + 1 = 21\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9b_p19",
@@ -5771,7 +5971,8 @@
               "work": "\\\\(12 + 1 = 13\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9c_p19",
@@ -5801,7 +6002,8 @@
               "work": "\\\\(24 \\div 3 = 8\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9d_p19",
@@ -5831,7 +6033,8 @@
               "work": "\\\\(15 + 1 = 16\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9e_p19",
@@ -5861,7 +6064,8 @@
               "work": "\\\\(18 - 2 = 16\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q9f_p19",
@@ -5891,7 +6095,8 @@
               "work": "\\\\(12 \\div 3 = 4\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q10a_p19",
@@ -5921,7 +6126,8 @@
               "work": "\\\\(9 - 4 = 5\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q10b_p19",
@@ -5951,7 +6157,8 @@
               "work": "\\\\(17\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q10c_p19",
@@ -5981,7 +6188,8 @@
               "work": "\\\\(30 + 7 = 37\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q11a_p19",
@@ -6011,7 +6219,8 @@
               "work": "\\\\(7 \\\neq 6\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q11b_p19",
@@ -6044,7 +6253,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q11c_p19",
@@ -6074,7 +6284,8 @@
               "work": "\\\\(8 < 5 + 6\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q1a_p20",
@@ -6107,7 +6318,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q1b_p20",
@@ -6140,7 +6352,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q1c_p20",
@@ -6173,7 +6386,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q2a_p20",
@@ -6203,7 +6417,8 @@
               "work": "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (0 \\\\times 10^2) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q2b_p20",
@@ -6233,7 +6448,8 @@
               "work": "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q2c_p20",
@@ -6263,7 +6479,8 @@
               "work": "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q3a_p20",
@@ -6296,7 +6513,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q3b_p20",
@@ -6329,7 +6547,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q3c_p20",
@@ -6362,7 +6581,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q4a_p20",
@@ -6392,7 +6612,8 @@
               "work": "\\\\(\\text{Thousands: } 11-6=5,\\ \\text{Ten-thousands: } 8-7=1 \\implies 15414\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q4b_p20",
@@ -6422,7 +6643,8 @@
               "work": "\\\\(\\text{Thousands: } 13-7=6,\\ \\text{Ten-thousands: } 4-4=0 \\implies 6293\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q4c_p20",
@@ -6452,7 +6674,8 @@
               "work": "\\\\(\\text{Thousands: } 13-8=5,\\ \\text{Ten-thousands: } 6-6=0 \\implies 5177\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q5a_p20",
@@ -6482,7 +6705,8 @@
               "work": "\\\\(10104 + 117880 + 505200 = 633184\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q5b_p20",
@@ -6515,7 +6739,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q5c_p20",
@@ -6545,7 +6770,8 @@
               "work": "\\\\(44580 + 534960 + 6241200 = 6820740\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6a_p20",
@@ -6575,7 +6801,8 @@
               "work": "\\\\(22 \\div 32 = 0 \\quad \\text{remainder } 22 \\implies \\text{Quotient} = 480,\\ \\text{Remainder} = 22\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6b_p20",
@@ -6605,7 +6832,8 @@
               "work": "\\\\(199 \\div 63 = 3 \\quad \\text{remainder } 10 \\implies \\text{Quotient} = 393,\\ \\text{Remainder} = 10\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q6c_p20",
@@ -6635,7 +6863,8 @@
               "work": "\\\\(3 \\div 17 = 0 \\text{ rem } 3 \\implies \\text{Quotient} = 4240,\\ \\text{Remainder} = 3\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q7a_p20",
@@ -6665,7 +6894,8 @@
               "work": "\\\\(7 \\\\times 8 - 13 = 56 - 13 = 43\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q7b_p20",
@@ -6695,7 +6925,8 @@
               "work": "\\\\(96 - (2 \\\\times 10) + 4 = 96 - 20 + 4 = 76 + 4 = 80\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y6-wn-q8a_p20",
@@ -6725,7 +6956,8 @@
               "work": "\\\\(54 - 2 = 52\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q8b_p20",
@@ -6755,7 +6987,8 @@
               "work": "\\\\(36 + 7 = 43\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q9a_p20",
@@ -6785,7 +7018,8 @@
               "work": "\\\\(\\text{Fourth number} = 36 - 21 = 15\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q9b_p20",
@@ -6815,7 +7049,8 @@
               "work": "\\\\(\\text{New average} = 258 \\div 6 = 43\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q10a_p20",
@@ -6848,7 +7083,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year6wholenumber"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-wn-q10b_p20",
@@ -6878,7 +7114,8 @@
               "work": "\\\\(16 \\\\times 16 = 256\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q10c_p20",
@@ -6908,7 +7145,8 @@
               "work": "\\\\(36 \\\\times 36 = 1296\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y6-wn-q10d_p20",
@@ -6938,7 +7176,8 @@
               "work": "\\\\(250\\\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

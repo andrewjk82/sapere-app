@@ -27,7 +27,8 @@
               "explain": "List the numbers",
               "work": "-14, -13, -12, -11"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q1b",
@@ -48,7 +49,8 @@
               "explain": "List the numbers",
               "work": "-99, -98, -97, -96"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q1c",
@@ -69,7 +71,8 @@
               "explain": "List the numbers",
               "work": "-4, -3, -2, -1, 0, 1"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q1d",
@@ -90,7 +93,8 @@
               "explain": "List the numbers",
               "work": "-209, -208, -207, -206"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q2a",
@@ -128,7 +132,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-4a-q2b",
@@ -166,7 +171,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-4a-q2c",
@@ -204,7 +210,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-4a-q2d",
@@ -242,7 +249,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 1
         },
         {
           "id": "y8-4a-q3",
@@ -263,7 +271,8 @@
               "explain": "Calculate next terms",
               "work": "$-8, -4, 0$"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q4",
@@ -284,7 +293,8 @@
               "explain": "Calculate next terms",
               "work": "$5, 0, -5$"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q5",
@@ -305,7 +315,8 @@
               "explain": "Calculate next terms",
               "work": "$-16, -8, 0, 8$"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q6a",
@@ -340,7 +351,8 @@
               "explain": "Read thermometer",
               "work": "10^\\circ\\text{C}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q6b",
@@ -375,7 +387,8 @@
               "explain": "Read thermometer",
               "work": "-20^\\circ\\text{C}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q6c",
@@ -410,7 +423,8 @@
               "explain": "Read thermometer",
               "work": "-12^\\circ\\text{C}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q6d",
@@ -445,7 +459,8 @@
               "explain": "Read thermometer",
               "work": "4^\\circ\\text{C}"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7a",
@@ -466,7 +481,8 @@
               "explain": "Change sign",
               "work": "-8"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7b",
@@ -487,7 +503,8 @@
               "explain": "Change sign",
               "work": "7"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7c",
@@ -508,7 +525,8 @@
               "explain": "Change sign",
               "work": "-42"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7d",
@@ -529,7 +547,8 @@
               "explain": "Change sign",
               "work": "12"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7e",
@@ -550,7 +569,8 @@
               "explain": "Change sign",
               "work": "85"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7f",
@@ -571,7 +591,8 @@
               "explain": "Change sign",
               "work": "-93"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7g",
@@ -592,7 +613,8 @@
               "explain": "Change sign",
               "work": "567"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7h",
@@ -613,7 +635,8 @@
               "explain": "Change sign",
               "work": "-20000"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7i",
@@ -634,7 +657,8 @@
               "explain": "Change sign",
               "work": "4500"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7j",
@@ -655,7 +679,8 @@
               "explain": "Change sign",
               "work": "-8900"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7k",
@@ -676,7 +701,8 @@
               "explain": "Change sign",
               "work": "67000"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4a-q7l",
@@ -697,7 +723,8 @@
               "explain": "Change sign",
               "work": "-84000"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q9",
@@ -721,7 +748,8 @@
             {
               "explain": "The total decrease is \\(6 + 8 = 14^\\circ\\text{C}\\)."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -753,7 +781,8 @@
             {
               "explain": "Therefore, \\((-12) \\div (-12) = 1\\)."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q10b",
@@ -783,7 +812,8 @@
             {
               "explain": "The missing number is 5."
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -818,7 +848,8 @@
               "explain": "Therefore, -18 + 26 equals 8. This is a positive result because the positive term outweighed the negative one.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q1b",
@@ -843,7 +874,8 @@
               "explain": "Add the two numbers together.",
               "work": "32 + 54 = 86"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q1c",
@@ -875,7 +907,8 @@
               "explain": "Therefore, 45 - 82 + 19 equals -18, a negative result since the subtraction of 82 outweighed the additions. This shows how working left to right keeps track of the running total correctly.",
               "work": "\\(-18\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q1d",
@@ -907,7 +940,8 @@
               "explain": "Therefore, 19 - 25 - 8 equals -14, since both subtractions reduced the running total below zero. This confirms the running total became increasingly negative with each step.",
               "work": "\\(-14\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q1e",
@@ -939,7 +973,8 @@
               "explain": "Add the final term, 72, to the running total to reach the answer. The result is a positive number since the additions outweighed the subtraction.",
               "work": "\\(925 + 72 = 997\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q1f",
@@ -971,7 +1006,8 @@
               "explain": "Add 12 and 17 to reach the final answer. The result is positive because subtracting a negative bracket increased the total.",
               "work": "\\(12 + 17 = 29\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2a",
@@ -1003,7 +1039,8 @@
               "explain": "Subtract 8 from 20 to complete the calculation. The final result is a positive number.",
               "work": "\\(20 - 8 = 12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2b",
@@ -1035,7 +1072,8 @@
               "explain": "Therefore, -4 \\times -8 - 15 equals 17, a positive result since the multiplication of two negatives produced a positive that outweighed the subtraction. This confirms that multiplying two negative numbers together always produces a positive result.",
               "work": "\\(17\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2c",
@@ -1067,7 +1105,8 @@
               "explain": "Add the two results together to complete the calculation. Both terms are negative, so the final answer is also negative.",
               "work": "\\(-7 + (-21) = -28\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2d",
@@ -1099,7 +1138,8 @@
               "explain": "Subtract -40 from 45, which is the same as adding 40, to reach the final answer. This completes the calculation and gives a positive result.",
               "work": "\\(45 - (-40) = 45 + 40 = 85\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2e",
@@ -1131,7 +1171,8 @@
               "explain": "Divide the numerator by the denominator to complete the calculation. The result is negative since a negative divided by a positive gives a negative value.",
               "work": "\\(\\frac{-126}{9} = -14\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2f",
@@ -1163,7 +1204,8 @@
               "explain": "Subtract the second fraction from the first, converting the subtraction of a negative into addition to reach the final answer. This gives a larger positive result than either fraction alone.",
               "work": "\\(50 - (-18) = 50 + 18 = 68\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2g",
@@ -1195,7 +1237,8 @@
               "explain": "Therefore, -\\frac{5}{12} + \\frac{3}{7} equals \\frac{1}{84}, a small positive fraction since the positive term was very slightly larger once converted. Even though the fractions started far apart in size, converting to a common denominator revealed how close they actually were.",
               "work": "\\(\\frac{1}{84}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q2h",
@@ -1227,7 +1270,8 @@
               "explain": "Add the two fractions together to complete the calculation. The result is positive since the larger fraction was positive.",
               "work": "\\(-\\frac{2}{4} + \\frac{9}{4} = \\frac{7}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q3",
@@ -1259,7 +1303,8 @@
               "explain": "Therefore, Perisher was 12.5 degrees Celsius warmer than Mount Buller that day.",
               "work": "\\(12.5^\\circ\\text{C}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q4",
@@ -1305,7 +1350,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q5",
@@ -1337,7 +1383,8 @@
               "explain": "Apply the triangle area formula, half of base times height, to find the final area. This formula works for any triangle once the base and perpendicular height are known.",
               "work": "\\(\\frac{1}{2} \\times 6 \\times 4 = 12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q7a",
@@ -1369,7 +1416,8 @@
               "explain": "Subtract the numerators, then convert the resulting improper fraction back into a mixed number. The answer is negative since 69 twelfths is larger than 40 twelfths.",
               "work": "\\(\\frac{40}{12} - \\frac{69}{12} = -\\frac{29}{12} = -2\\frac{5}{12}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q7b",
@@ -1401,7 +1449,8 @@
               "explain": "Add 14.5 and 7.2 to reach the final answer, which is a positive decimal value.",
               "work": "\\(14.5 + 7.2 = 21.7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q7c",
@@ -1433,7 +1482,8 @@
               "explain": "Simplify the resulting fraction to lowest terms and convert to a mixed number for the final answer. Writing the answer as a mixed number makes its size easier to interpret.",
               "work": "\\(-\\frac{60}{8} = -\\frac{15}{2} = -7\\frac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-4h-q8",
@@ -1465,7 +1515,8 @@
               "explain": "Subtract the total decreases from the total increases to find how much Sam had left at the end of the week. Since the increases were larger than the decreases, Sam ended the week with a positive balance.",
               "work": "\\(3595.50 - 970.75 = 2624.75\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-4h-q9",
@@ -1497,7 +1548,8 @@
               "explain": "Therefore, the mountain measures 9355 metres from its base on the sea floor to its peak above sea level. This total height combines both the portion above sea level and the portion below it.",
               "work": "\\(9355\\text{ m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-4h-q10",
@@ -1529,7 +1581,8 @@
               "explain": "Divide the marks lost by the penalty per incorrect answer to find the number of incorrect answers. This gives the number of questions Harry answered incorrectly.",
               "work": "\\(30 \\div 3 = 10\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

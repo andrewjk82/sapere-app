@@ -30,7 +30,8 @@
             {
               "explain": "\\( = 80\\% \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "0TELHarsFFU13m2DNF6Y",
@@ -63,7 +64,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5KwFGsMPBc7Oo88pQ0Ll",
@@ -96,7 +98,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "6GflvMkAMvovOZ4n7nM4",
@@ -132,7 +135,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "7J7OgW8VaiFJNEL3Qgn2",
@@ -165,7 +169,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "13BUQpyHDDLpNo6hzJN5",
@@ -206,7 +211,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "38PInmr3psGdNl8YI52m",
@@ -239,7 +245,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "51Nkihc8gW3a2RYyKjBQ",
@@ -272,7 +279,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "b8UlJSCUUJSxKNR5H5OL",
@@ -305,7 +313,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "b88zApuCGfA8kPbosBzC",
@@ -345,7 +354,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 3
         },
         {
           "id": "bArwNDmBod7ycDN4rNXk",
@@ -378,7 +388,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "f5nbRDFPcKFMvhvDTSYZ",
@@ -411,7 +422,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "fNQ69lDlezVLxly0cFcK",
@@ -452,7 +464,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "FOkES2VjwC2ntqqGNa0x",
@@ -485,7 +498,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Gf9CKGC6heJZadwnswAO",
@@ -518,7 +532,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "IT97K2p7zjP7f86oGoI6",
@@ -558,7 +573,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jpuFgbE61lzmMXFWkVp9",
@@ -596,7 +612,8 @@
           ],
           "meta": {
             "topic": "Fractions on a number line"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "LrcHYq4VPKKAplGfoLMR",
@@ -634,7 +651,8 @@
           ],
           "meta": {
             "topic": "Fractions on a number line"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "lTA9xFFreaduZeiQseUA",
@@ -674,7 +692,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "LUniCVFFq1FbaPuOJpoq",
@@ -715,7 +734,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "mmpLmudIE2YNEDqeD4dM",
@@ -748,7 +768,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "MrB0aAU2IadXYB8myw3w",
@@ -788,7 +809,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "MTEjIJUs7ZhlB852KfpH",
@@ -821,7 +843,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "nDNNDWnEFDG6V7PcUrQ5",
@@ -854,7 +877,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "p6XjSnXfXf1HCnyr65YN",
@@ -887,7 +911,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "r2InZegCdSe3iW7DFD5O",
@@ -921,7 +946,8 @@
           ],
           "meta": {
             "topic": "Fractions from situations"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "vd0J3WTvJZUO9E1fno0J",
@@ -954,7 +980,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         },
         {
           "id": "YQgbl5UGoCn6ClF6y8yu",
@@ -987,7 +1014,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Z5Eq8NK3sacIcT0NezWI",
@@ -1024,7 +1052,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "zrNM93GJRjrT6uoGVW4k",
@@ -1061,7 +1090,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ZzJKPsaxCQgEq7ByecGZ",
@@ -1097,7 +1127,8 @@
           },
           "ext": {
             "gridConfig": null
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -1130,7 +1161,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-4-practice-q2",
@@ -1156,7 +1188,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q1",
@@ -1188,7 +1221,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2021-q7",
@@ -1220,7 +1254,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "0W8A9z8irIaI5DYjhHvk",
@@ -1254,7 +1289,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "1u7GZcETrBbsXvPlA9TI",
@@ -1288,7 +1324,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "3F3zToCo86F4hqqiLpn6",
@@ -1322,7 +1359,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5uEJzKUIbpfkqBUO4kRq",
@@ -1356,7 +1394,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "8EoZNAf5DgleRu2dC6Q8",
@@ -1390,7 +1429,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "aGLAgEZtTcTF5noxYiWN",
@@ -1424,7 +1464,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "B4DDUEzJliLZpNQbYYcA",
@@ -1458,7 +1499,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bkQigEVefiMQT2MSdsYC",
@@ -1492,7 +1534,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "C5uWmALtxvXOqgYuMPkq",
@@ -1526,7 +1569,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cgLJVSQVMJeSvWfQS6qs",
@@ -1560,7 +1604,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "EybX38i8ePAA6dgjKgsN",
@@ -1594,7 +1639,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "g3An7khfj68BM3aWHNXz",
@@ -1628,7 +1674,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "g19bQxuVwAYad835ZrDM",
@@ -1662,7 +1709,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "gLzCZIpyasgSqRyxRtNV",
@@ -1696,7 +1744,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hxEsDCJWrVJirTaQKkRU",
@@ -1730,7 +1779,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "iyQxLYKOrxlw5Bv3ZZJU",
@@ -1764,7 +1814,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "k7cnuejIjyFtptzczLWf",
@@ -1794,7 +1845,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "KxXFAUh4Fhteumc5k9Co",
@@ -1828,7 +1880,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "kyqlQlHoP9nx1fKHRFJ7",
@@ -1862,7 +1915,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "OlfU6vaDDLAyX9hrBfVD",
@@ -1896,7 +1950,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "RRIxc5eRiGJ6KL6niwV6",
@@ -1930,7 +1985,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sYuaDcpk5cxGnnOhnMuY",
@@ -1964,7 +2020,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "UddlIo5Xp901Eb88Q6RT",
@@ -1998,7 +2055,8 @@
           ],
           "meta": {
             "topic": "Simplifying fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "wuzWLodF36MdVqcBevRH",
@@ -2028,7 +2086,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Z94PZAEXoJYhbexIBQ9y",
@@ -2062,7 +2121,8 @@
           ],
           "meta": {
             "topic": "Equivalent fractions"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2095,7 +2155,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-4-practice-q4",
@@ -2121,7 +2182,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2021-q2",
@@ -2152,7 +2214,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5ayX6ktyOrcHETDlF6Of",
@@ -2186,7 +2249,8 @@
           ],
           "meta": {
             "topic": "Mixed numerals and division by whole numbers"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5zRmO5utmEYj8lJms7oY",
@@ -2220,7 +2284,8 @@
           ],
           "meta": {
             "topic": "Mixed numerals and division by whole numbers"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "aJa6lMtHjFEt868QJxoJ",
@@ -2254,7 +2319,8 @@
           ],
           "meta": {
             "topic": "Improper fractions to mixed numerals"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "mqIK7s3IqYzunBPjn3M7",
@@ -2288,7 +2354,8 @@
           ],
           "meta": {
             "topic": "Mixed numerals and division by whole numbers"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "pKRhKnSD2nKBpFyseqWa",
@@ -2322,7 +2389,8 @@
           ],
           "meta": {
             "topic": "Mixed numerals and division by whole numbers"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "UrsHRx0IV01yiLHND5FS",
@@ -2356,7 +2424,8 @@
           ],
           "meta": {
             "topic": "Mixed numerals and division by whole numbers"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2389,7 +2458,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q8",
@@ -2421,7 +2491,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "0Z92m1j9T7cF5QYuNjtt",
@@ -2451,7 +2522,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "4q74JWAFFPxjIzrsYIip",
@@ -2485,7 +2557,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "8FDHNcWlMs3JPOi5rgIk",
@@ -2519,7 +2592,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "Bs0EZRUmhEsk4mrgIGBy",
@@ -2549,7 +2623,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hVhaqApjUjz4gdqLM9Ou",
@@ -2583,7 +2658,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "KJKL4PaAMBMvq8uxZnBb",
@@ -2621,7 +2697,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "MFQPirScLfUEAW1QxXCy",
@@ -2655,7 +2732,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "QjMm0UBHcRHuvWiV5jG5",
@@ -2685,7 +2763,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "qOQCsqrTUeZQdJgomShG",
@@ -2719,7 +2798,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "TBXU3KB3pkzSOV94hRjP",
@@ -2733,7 +2813,8 @@
             "3\\frac{1}{4}, 2\\frac{1}{3}, 1\\frac{3}{10}, 1\\frac{1}{5}, \\frac{2}{5}$"
           ],
           "answer": 0,
-          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Compare the whole parts first</strong><br>- $\\frac{2}{5}$ has whole part $0$.<br>- $1\\frac{1}{5}$ and $1\\frac{3}{10}$ have whole part $1$. Compare their fractions: $\\frac{1}{5} = \\frac{2}{10} < \\frac{3}{10}$, so $1\\frac{1}{5} < 1\\frac{3}{10}$.<br>- $2\\frac{1}{3}$ has whole part $2$.<br>- $3\\frac{1}{4}$ has whole part $3$.</p><p><strong>Step 2: Form final ordered list</strong><br>$\\frac{2}{5} < 1\\frac{1}{5} < 1\\frac{3}{10} < 2\\frac{1}{3} < 3\\frac{1}{4}$.</p></div>"
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Compare the whole parts first</strong><br>- $\\frac{2}{5}$ has whole part $0$.<br>- $1\\frac{1}{5}$ and $1\\frac{3}{10}$ have whole part $1$. Compare their fractions: $\\frac{1}{5} = \\frac{2}{10} < \\frac{3}{10}$, so $1\\frac{1}{5} < 1\\frac{3}{10}$.<br>- $2\\frac{1}{3}$ has whole part $2$.<br>- $3\\frac{1}{4}$ has whole part $3$.</p><p><strong>Step 2: Form final ordered list</strong><br>$\\frac{2}{5} < 1\\frac{1}{5} < 1\\frac{3}{10} < 2\\frac{1}{3} < 3\\frac{1}{4}$.</p></div>",
+          "xp": 3
         },
         {
           "id": "u6erMuLpP3tYX8jhAfHo",
@@ -2767,7 +2848,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "ZOzOKM9DjEJPArOnKQpY",
@@ -2801,7 +2883,8 @@
           ],
           "meta": {
             "topic": "Comparison of fractions"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -2834,7 +2917,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-4-practice-q7",
@@ -2860,7 +2944,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "2w754c872iVaca6ZbZVZ",
@@ -2894,7 +2979,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "3Eyjj4b2yOeFrZD3njAp",
@@ -2928,7 +3014,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "4TthyndcsISmM1vqkJOM",
@@ -2958,7 +3045,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "4ZXJepgAwvzpoEfC0ujL",
@@ -2992,7 +3080,8 @@
           ],
           "meta": {
             "topic": "Fraction sequences"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "5cfEjrZwaBTZV1L8I6Qz",
@@ -3030,7 +3119,8 @@
           ],
           "meta": {
             "topic": "Fraction sequences"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "7F5xuhRm5MJqtY0KzQrM",
@@ -3064,7 +3154,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Adr6WovADN5b2PTzPPBh",
@@ -3098,7 +3189,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "BA8QnLtReUhczwm2jRiK",
@@ -3128,7 +3220,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "BmEqdg4bQAdhhKCBbgDI",
@@ -3162,7 +3255,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "c9OEtue3XjakNF3PFR3t",
@@ -3196,7 +3290,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cE2vptR1PZDSGv0yVgFY",
@@ -3226,7 +3321,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "cG6laz4JS32Bdr28akxU",
@@ -3260,7 +3356,8 @@
           ],
           "meta": {
             "topic": "Fraction sequences"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "D33IxTDI6U4XYYmxDLVS",
@@ -3290,7 +3387,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "EGWyMx3tg8fPV8EL86mT",
@@ -3320,7 +3418,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ftWwrYjArCw6fClaS2V8",
@@ -3354,7 +3453,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "gcyTbgOorhvuOBbq6iQX",
@@ -3388,7 +3488,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "gRve4iYJbdYrMPMTm9Wl",
@@ -3422,7 +3523,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "IHG0yIA3Hgs2dkVKR3GN",
@@ -3456,7 +3558,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "iNUKDNLpAX7CEY4tet4t",
@@ -3490,7 +3593,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "kevxuohNDE0CQwREAbXu",
@@ -3524,7 +3628,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ltjrMKuh3Xb2QuOoSpyd",
@@ -3558,7 +3663,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "mYqba6kHwhUgKn3ElPjP",
@@ -3592,7 +3698,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "p8NtwlBbosfZj4KDjTRT",
@@ -3626,7 +3733,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "piIE2QiVsfv8XqM5KVou",
@@ -3660,7 +3768,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Rjzg82G5aOIqxsyZS0Nc",
@@ -3694,7 +3803,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "vKPCijs4Am7LsMmHcgG3",
@@ -3728,7 +3838,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "YdeAlg4xgFdHJ2EfReHN",
@@ -3762,7 +3873,8 @@
           ],
           "meta": {
             "topic": "Addition and subtraction of fractions"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -3807,7 +3919,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "c7bdCzuNdy4b11rYdTIv",
@@ -3841,7 +3954,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "kaEQiZzZfQd4dxQ3xZfc",
@@ -3879,7 +3993,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "KM8RnHjwRzdGjHDaoE1X",
@@ -3913,7 +4028,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "RkkzKW8QOXw2cMv1O6Sk",
@@ -3951,7 +4067,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y7-4f-q1a",
@@ -3964,7 +4081,8 @@
               "explain": "The decimal ends in the tenths place, so we place the number over 10.",
               "work": "\\(0.3 = \\frac{3}{10}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1b",
@@ -3977,7 +4095,8 @@
               "explain": "The decimal ends in the tenths place, so we place the number over 10.",
               "work": "\\(0.9 = \\frac{9}{10}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1c",
@@ -3990,7 +4109,8 @@
               "explain": "The decimal ends in the hundredths place, so we place the number over 100.",
               "work": "\\(0.01 = \\frac{1}{100}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1d",
@@ -4003,7 +4123,8 @@
               "explain": "The decimal ends in the hundredths place, so we place the number over 100.",
               "work": "\\(0.07 = \\frac{7}{100}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1e",
@@ -4020,7 +4141,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (2).",
               "work": "\\(\\frac{4}{10} = \\frac{4 \\div 2}{10 \\div 2} = \\frac{2}{5}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1f",
@@ -4037,7 +4159,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (2).",
               "work": "\\(\\frac{8}{10} = \\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1g",
@@ -4054,7 +4177,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (5).",
               "work": "\\(\\frac{15}{100} = \\frac{15 \\div 5}{100 \\div 5} = \\frac{3}{20}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1h",
@@ -4071,7 +4195,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (4).",
               "work": "\\(\\frac{4}{100} = \\frac{4 \\div 4}{100 \\div 4} = \\frac{1}{25}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1i",
@@ -4088,7 +4213,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (125).",
               "work": "\\(\\frac{125}{1000} = \\frac{125 \\div 125}{1000 \\div 125} = \\frac{1}{8}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q1j",
@@ -4105,7 +4231,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (125).",
               "work": "\\(\\frac{625}{1000} = \\frac{625 \\div 125}{1000 \\div 125} = \\frac{5}{8}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2a",
@@ -4126,7 +4253,8 @@
               "explain": "Combine the whole number and the fraction.",
               "work": "\\(3\\frac{9}{10}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2b",
@@ -4147,7 +4275,8 @@
               "explain": "Combine the whole number and the fraction.",
               "work": "\\(5\\frac{3}{10}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2c",
@@ -4168,7 +4297,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (5).",
               "work": "\\(1 + \\frac{5 \\div 5}{10 \\div 5} = 1\\frac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2d",
@@ -4189,7 +4319,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (2).",
               "work": "\\(2 + \\frac{8 \\div 2}{10 \\div 2} = 2\\frac{4}{5}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2e",
@@ -4210,7 +4341,8 @@
               "explain": "Combine the whole number and the fraction.",
               "work": "\\(12\\frac{1}{100}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2f",
@@ -4231,7 +4363,8 @@
               "explain": "Combine the whole number and the fraction.",
               "work": "\\(9\\frac{9}{100}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2g",
@@ -4252,7 +4385,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (2).",
               "work": "\\(7 + \\frac{14 \\div 2}{100 \\div 2} = 7\\frac{7}{50}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2h",
@@ -4273,7 +4407,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (25).",
               "work": "\\(13 + \\frac{25 \\div 25}{100 \\div 25} = 13\\frac{1}{4}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2i",
@@ -4294,7 +4429,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (2).",
               "work": "\\(234 + \\frac{34 \\div 2}{100 \\div 2} = 234\\frac{17}{50}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y7-4f-q2j",
@@ -4315,7 +4451,8 @@
               "explain": "Simplify the fraction by dividing the numerator and denominator by their highest common factor (8).",
               "work": "\\(8 + \\frac{16 \\div 8}{1000 \\div 8} = 8\\frac{2}{125}\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -4348,7 +4485,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y7-4-practice-q9",
@@ -4370,7 +4508,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y7-4-practice-q10",
@@ -4396,7 +4535,8 @@
           ],
           "meta": {
             "examPaper": "y7-practice-1"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "0R8b9Ln6CmSfNuPaXiBa",
@@ -4426,7 +4566,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "2BABN4Mrzy6PrQkHQa7L",
@@ -4456,7 +4597,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "3QdpGhg3TAtOxEFNsBhF",
@@ -4486,7 +4628,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "3sqUoY9dNauAMa79FYSc",
@@ -4516,7 +4659,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5K8zSna8pfKseB5E4wqz",
@@ -4546,7 +4690,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Cpujy40znOySjfLcfrDn",
@@ -4576,7 +4721,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "NBtyYt1lKSZkxm7hM2CY",
@@ -4606,7 +4752,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "nZ15HOOLIGsi8y7eOJCL",
@@ -4636,7 +4783,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "o0bfRxehzK4SPhRbvVnv",
@@ -4666,7 +4814,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ovMhz4bEHfJ0Fs51ct0H",
@@ -4696,7 +4845,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "r2ngYLIQr5As7Ba9UL6B",
@@ -4726,7 +4876,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sKRjDKaTOvDQar677nnD",
@@ -4756,7 +4907,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "VuJ1TTVZiALRTdy5RNzT",
@@ -4786,7 +4938,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "wgzTNgPzBcEyGf3RN9y7",
@@ -4816,7 +4969,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "WT0NSc0A9HQNp7F9F420",
@@ -4846,7 +5000,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "xT0gBdFkPE0x01fc5Sl0",
@@ -4876,7 +5031,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ZwZcvF2cpd51TEYjFw1D",
@@ -4910,7 +5066,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -4951,7 +5108,8 @@
               "work": "\\(15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1b",
@@ -4985,7 +5143,8 @@
               "work": "\\(\\dfrac{21}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1c",
@@ -5019,7 +5178,8 @@
               "work": "\\(\\dfrac{24}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1d",
@@ -5053,7 +5213,8 @@
               "work": "\\(\\dfrac{35}{3}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1e",
@@ -5087,7 +5248,8 @@
               "work": "\\(\\dfrac{40}{7}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1f",
@@ -5121,7 +5283,8 @@
               "work": "\\(\\dfrac{72}{5}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1g",
@@ -5155,7 +5318,8 @@
               "work": "\\(12\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q1h",
@@ -5189,7 +5353,8 @@
               "work": "\\(15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2a",
@@ -5223,7 +5388,8 @@
               "work": "\\(\\dfrac{14}{15}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2b",
@@ -5257,7 +5423,8 @@
               "work": "\\(\\dfrac{27}{8}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2c",
@@ -5291,7 +5458,8 @@
               "work": "\\(\\dfrac{25}{12}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2d",
@@ -5325,7 +5493,8 @@
               "work": "\\(\\dfrac{10}{9}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2e",
@@ -5359,7 +5528,8 @@
               "work": "\\(\\dfrac{14}{15}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2f",
@@ -5393,7 +5563,8 @@
               "work": "\\(\\dfrac{4}{5}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2g",
@@ -5427,7 +5598,8 @@
               "work": "\\(\\dfrac{15}{8}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q2h",
@@ -5461,7 +5633,8 @@
               "work": "\\(\\dfrac{35}{24}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3a",
@@ -5495,7 +5668,8 @@
               "work": "\\(\\dfrac{3}{2}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3b",
@@ -5529,7 +5703,8 @@
               "work": "\\(\\dfrac{2}{3}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3c",
@@ -5563,7 +5738,8 @@
               "work": "\\(\\dfrac{5}{6}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3d",
@@ -5597,7 +5773,8 @@
               "work": "\\(\\dfrac{3}{4}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3e",
@@ -5631,7 +5808,8 @@
               "work": "\\(\\dfrac{2}{3}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3f",
@@ -5665,7 +5843,8 @@
               "work": "\\(\\dfrac{3}{2}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 1
         },
         {
           "id": "y7-4i-q3g",
@@ -5699,7 +5878,8 @@
               "work": "\\(\\dfrac{3}{4}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q3h",
@@ -5733,7 +5913,8 @@
               "work": "\\(\\dfrac{5}{6}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q3i",
@@ -5767,7 +5948,8 @@
               "work": "\\(\\dfrac{2}{3}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q3j",
@@ -5801,7 +5983,8 @@
               "work": "\\(\\dfrac{3}{2}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q3k",
@@ -5835,7 +6018,8 @@
               "work": "\\(\\dfrac{4}{15}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q3l",
@@ -5869,7 +6053,8 @@
               "work": "\\(\\dfrac{2}{3}\\)"
             }
           ],
-          "timeLimit": 75
+          "timeLimit": 75,
+          "xp": 2
         },
         {
           "id": "y7-4i-q4a",
@@ -5903,7 +6088,8 @@
               "work": "\\(\\dfrac{3}{5}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4b",
@@ -5937,7 +6123,8 @@
               "work": "\\(\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4c",
@@ -5971,7 +6158,8 @@
               "work": "\\(\\dfrac{5}{3}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4d",
@@ -6005,7 +6193,8 @@
               "work": "\\(\\dfrac{3}{4}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4e",
@@ -6039,7 +6228,8 @@
               "work": "\\(\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4f",
@@ -6073,7 +6263,8 @@
               "work": "\\(1\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4g",
@@ -6107,7 +6298,8 @@
               "work": "\\(\\dfrac{16}{5}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4h",
@@ -6141,7 +6333,8 @@
               "work": "\\(\\dfrac{7}{5}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4i",
@@ -6175,7 +6368,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q4j",
@@ -6209,7 +6403,8 @@
               "work": "\\(\\dfrac{5}{6}\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y7-4i-q5",
@@ -6249,7 +6444,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-4i-q6",
@@ -6289,7 +6485,8 @@
               "work": "\\(25\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-4i-q7",
@@ -6329,7 +6526,8 @@
               "work": "\\(30\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "1SWNgaRobtYXjdQ9GaOO",
@@ -6359,7 +6557,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "3H4AUMXhU63OX3H7cwMc",
@@ -6389,7 +6588,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "5uwO2Hl2DFgnOXgt8kZ9",
@@ -6419,7 +6619,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "FyCcqiyGFzlvk12gFuTF",
@@ -6453,7 +6654,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "FyZqMAqTeAUf05CMMkJu",
@@ -6483,7 +6685,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "gPxvEOR8qSTmp4DcFOkE",
@@ -6513,7 +6716,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hr8LPLuJEOX1WHPlufqE",
@@ -6547,7 +6751,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "IH1vDp6vEw4OZDUI8HoT",
@@ -6581,7 +6786,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y6KJZUQi2XrF1mTq8JQ1",
@@ -6615,7 +6821,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -6656,7 +6863,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "j2k2QhPP7P2q9P4r72VP",
@@ -6690,7 +6898,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Oal6j6oP2E150sg9kLci",
@@ -6724,7 +6933,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "Q7rIuBVGzSj7ZVWdymNu",
@@ -6758,7 +6968,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "uwh1erZNgeBmGLWIF6Uv",
@@ -6792,7 +7003,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "VyUHo6sv0r1cYsUdFhaM",
@@ -6826,7 +7038,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -6867,7 +7080,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jLmBajsieWTyOPg2tI2k",
@@ -6909,7 +7123,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "UjI6UDzBouaVMbSim2rY",
@@ -6943,7 +7158,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "v1UcqIZuTy2jsumlvNCZ",
@@ -6977,7 +7193,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "ZmPOnhSya2QYOOEkH9f3",
@@ -7015,7 +7232,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -7052,7 +7270,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "bGc6KIhycISaCTqhc9dl",
@@ -7090,7 +7309,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "BUrpcNm8SkSHeQca9quy",
@@ -7124,7 +7344,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "Lf6ctecshDW0l3KEvyab",
@@ -7154,7 +7375,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "lgrbvxFpvY27AgwakoKU",
@@ -7188,7 +7410,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "oaBKW1x9E57PewsIl8jP",
@@ -7222,7 +7445,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "OoJBNVlq3qTFyCb4jD3M",
@@ -7256,7 +7480,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "PKaqN0hAosyA8ZyvzJbe",
@@ -7286,7 +7511,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "SeqNjU3HPLii3xuGZFRC",
@@ -7316,7 +7542,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "XACIRaDjfCLQckBoYG1X",
@@ -7350,7 +7577,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "ydJCnuWkRTwhYPCXY1ps",
@@ -7380,7 +7608,8 @@
           ],
           "meta": {
             "topic": "Multiplication and division of fractions"
-          }
+          },
+          "xp": 1
         }
       ]
     }

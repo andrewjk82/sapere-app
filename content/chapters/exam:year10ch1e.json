@@ -34,7 +34,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 40000 \\times 0.693842 \\approx 27753.69\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q18a",
@@ -61,7 +62,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 47000 \\times 0.652120 \\approx 30649.66\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q19a",
@@ -88,7 +90,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 55000 \\times 0.612710 \\approx 33699.04\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q20a",
@@ -115,7 +118,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 62000 \\times 0.575494 \\approx 35680.60\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q21a",
@@ -142,7 +146,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 70000 \\times 0.693842 \\approx 48568.97\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q22a",
@@ -169,7 +174,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 77000 \\times 0.652120 \\approx 50213.27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q23a",
@@ -196,7 +202,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 84000 \\times 0.612710 \\approx 51467.62\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q24a",
@@ -223,7 +230,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 42000 \\times 0.575494 \\approx 24170.73\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q25a",
@@ -250,7 +258,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 49000 \\times 0.693842 \\approx 33998.28\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-q26a",
@@ -277,7 +286,8 @@
               "explain": "Evaluate the power and calculate the final depreciated book value.",
               "work": "\\(A \\approx 57000 \\times 0.652120 \\approx 37170.86\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1e-high-q61",
@@ -304,7 +314,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$22728.45\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q62",
@@ -331,7 +342,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$25172.37\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q63",
@@ -358,7 +370,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$27479.05\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q64",
@@ -385,7 +398,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$29653.41\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q65",
@@ -412,7 +426,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$31700.18\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q66",
@@ -439,7 +454,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$33623.99\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q67",
@@ -466,7 +482,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$35429.32\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q68",
@@ -493,7 +510,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$37120.53\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q69",
@@ -520,7 +538,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$38701.86\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1e-high-q70",
@@ -547,7 +566,8 @@
               "explain": "Compute the book value and round to two decimal places.",
               "work": "\\(V_{12} \\approx \\$40177.40\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

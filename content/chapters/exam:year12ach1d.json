@@ -49,7 +49,8 @@
               "work": "\\(n = 9\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1d-q10b",
@@ -91,7 +92,8 @@
               "work": "\\(n = 10\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1d-q10c",
@@ -133,7 +135,8 @@
               "work": "\\(n = 63\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-1d-q17c",
@@ -165,7 +168,8 @@
               "work": "\\(d = 0 \\quad \\mathrm{or} \\quad d = a\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y12a-1d-q17d",
@@ -197,7 +201,8 @@
               "work": "\\(d = 0 \\quad \\mathrm{or} \\quad d = 3a\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y12a-1d-q18a",
@@ -221,7 +226,8 @@
               "work": "\\(a = 3^6, quad r = \\dfrac{1}{27}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 4
         },
         {
           "id": "y12a-1d-hard-c1-q1",
@@ -254,7 +260,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{9} = 55000 + 20000 = 75000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q2",
@@ -287,7 +294,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{10} = 60000 + 27000 = 87000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q3",
@@ -320,7 +328,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{8} = 65000 + 24500 = 89500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q4",
@@ -353,7 +362,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{9} = 70000 + 16000 = 86000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q5",
@@ -386,7 +396,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{10} = 50000 + 22500 = 72500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q6",
@@ -419,7 +430,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{8} = 55000 + 21000 = 76000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q7",
@@ -452,7 +464,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{9} = 60000 + 28000 = 88000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q8",
@@ -485,7 +498,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{10} = 65000 + 18000 = 83000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q9",
@@ -518,7 +532,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{8} = 70000 + 17500 = 87500\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c1-q10",
@@ -551,7 +566,8 @@
               "explain": "Perform the multiplication and addition to calculate the final salary.",
               "work": "\\(T_{9} = 50000 + 24000 = 74000\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q1",
@@ -584,7 +600,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{6} = 1200 \\times 1.3382 \\approx 1606\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q2",
@@ -617,7 +634,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{7} = 1400 \\times 1.5007 \\approx 2101\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q3",
@@ -650,7 +668,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{5} = 1600 \\times 1.3605 \\approx 2177\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q4",
@@ -683,7 +702,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{6} = 1800 \\times 1.5386 \\approx 2770\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q5",
@@ -716,7 +736,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{7} = 1000 \\times 1.3401 \\approx 1340\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q6",
@@ -749,7 +770,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{5} = 1200 \\times 1.2625 \\approx 1515\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q7",
@@ -782,7 +804,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{6} = 1400 \\times 1.4026 \\approx 1964\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q8",
@@ -815,7 +838,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{7} = 1600 \\times 1.5869 \\approx 2539\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q9",
@@ -848,7 +872,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{5} = 1800 \\times 1.4116 \\approx 2541\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c2-q10",
@@ -881,7 +906,8 @@
               "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
               "work": "\\(T_{6} = 1000 \\times 1.2763 \\approx 1276\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q1",
@@ -918,7 +944,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(12)}{\\ln(1.5)} \\approx 6.13 \\Rightarrow n > 7.13 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q2",
@@ -955,7 +982,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(14)}{\\ln(1.5)} \\approx 6.51 \\Rightarrow n > 7.51 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q3",
@@ -992,7 +1020,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(16)}{\\ln(1.5)} \\approx 6.84 \\Rightarrow n > 7.84 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q4",
@@ -1029,7 +1058,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(18)}{\\ln(1.5)} \\approx 7.13 \\Rightarrow n > 8.13 \\Rightarrow n = 9\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q5",
@@ -1066,7 +1096,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(10)}{\\ln(1.5)} \\approx 5.68 \\Rightarrow n > 6.68 \\Rightarrow n = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q6",
@@ -1103,7 +1134,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(12)}{\\ln(1.5)} \\approx 6.13 \\Rightarrow n > 7.13 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q7",
@@ -1140,7 +1172,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(14)}{\\ln(1.5)} \\approx 6.51 \\Rightarrow n > 7.51 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q8",
@@ -1177,7 +1210,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(16)}{\\ln(1.5)} \\approx 6.84 \\Rightarrow n > 7.84 \\Rightarrow n = 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q9",
@@ -1214,7 +1248,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(18)}{\\ln(1.5)} \\approx 7.13 \\Rightarrow n > 8.13 \\Rightarrow n = 9\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c4-q10",
@@ -1251,7 +1286,8 @@
               "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
               "work": "\\(n - 1 > \\frac{\\ln(10)}{\\ln(1.5)} \\approx 5.68 \\Rightarrow n > 6.68 \\Rightarrow n = 7\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q1",
@@ -1284,7 +1320,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{4} = 25 \\times 0.4096 = 10.24\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q2",
@@ -1317,7 +1354,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{5} = 30 \\times 0.3277 = 9.83\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q3",
@@ -1350,7 +1388,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{3} = 35 \\times 0.5120 = 17.92\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q4",
@@ -1383,7 +1422,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{4} = 40 \\times 0.4096 = 16.38\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q5",
@@ -1416,7 +1456,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{5} = 20 \\times 0.3277 = 6.55\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q6",
@@ -1449,7 +1490,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{3} = 25 \\times 0.5120 = 12.80\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q7",
@@ -1482,7 +1524,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{4} = 30 \\times 0.4096 = 12.29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q8",
@@ -1515,7 +1558,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{5} = 35 \\times 0.3277 = 11.47\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q9",
@@ -1548,7 +1592,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{3} = 40 \\times 0.5120 = 20.48\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c6-q10",
@@ -1581,7 +1626,8 @@
               "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
               "work": "\\(H_{4} = 20 \\times 0.4096 = 8.19\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q1",
@@ -1614,7 +1660,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times 0.4641}{0.10} = 7658\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q2",
@@ -1647,7 +1694,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{2200 \\times 0.4641}{0.10} = 10210\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q3",
@@ -1680,7 +1728,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{2750 \\times 0.4641}{0.10} = 12763\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q4",
@@ -1713,7 +1762,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times 0.4641}{0.10} = 15315\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q5",
@@ -1746,7 +1796,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{1100 \\times 0.4641}{0.10} = 5105\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q6",
@@ -1779,7 +1830,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times 0.4641}{0.10} = 7658\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q7",
@@ -1812,7 +1864,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{2200 \\times 0.4641}{0.10} = 10210\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q8",
@@ -1845,7 +1898,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{2750 \\times 0.4641}{0.10} = 12763\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q9",
@@ -1878,7 +1932,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times 0.4641}{0.10} = 15315\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c7-q10",
@@ -1911,7 +1966,8 @@
               "explain": "Simplify the denominator and evaluate the expression.",
               "work": "\\(S_{4} = \\frac{1100 \\times 0.4641}{0.10} = 5105\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q1",
@@ -1944,7 +2000,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{150}{0.70} = 214.29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q2",
@@ -1977,7 +2034,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{200}{0.65} = 307.69\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q3",
@@ -2010,7 +2068,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{250}{0.60} = 416.67\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q4",
@@ -2043,7 +2102,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{300}{0.55} = 545.45\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q5",
@@ -2076,7 +2136,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{100}{0.75} = 133.33\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q6",
@@ -2109,7 +2170,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{150}{0.70} = 214.29\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q7",
@@ -2142,7 +2204,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{200}{0.65} = 307.69\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q8",
@@ -2175,7 +2238,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{250}{0.60} = 416.67\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q9",
@@ -2208,7 +2272,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{300}{0.55} = 545.45\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-1d-hard-c10-q10",
@@ -2241,7 +2306,8 @@
               "explain": "Simplify the denominator and evaluate the division.",
               "work": "\\(S_{\\infty} = \\frac{100}{0.75} = 133.33\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

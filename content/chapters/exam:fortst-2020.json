@@ -51,7 +51,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc3",
@@ -99,7 +100,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-mc4",
@@ -176,7 +178,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc5",
@@ -220,7 +223,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc6",
@@ -264,7 +268,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc7",
@@ -348,7 +353,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-mc8",
@@ -425,7 +431,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc9",
@@ -470,7 +477,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-mc10",
@@ -510,7 +518,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q1a",
@@ -652,7 +661,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q1b",
@@ -696,7 +706,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q2a",
@@ -740,7 +751,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q2b",
@@ -837,7 +849,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q2c",
@@ -934,7 +947,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q3a",
@@ -1031,7 +1045,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020-q3b",
@@ -1126,7 +1141,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q4",
@@ -1223,7 +1239,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q6",
@@ -1263,7 +1280,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q7",
@@ -1325,7 +1343,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q8",
@@ -1371,7 +1390,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q9",
@@ -1415,7 +1435,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q10a",
@@ -1453,7 +1474,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "fortst2020-q10b",
@@ -1497,7 +1519,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q10c",
@@ -1594,7 +1617,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q10d",
@@ -1691,7 +1715,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q10e",
@@ -1752,7 +1777,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q10f",
@@ -1798,7 +1824,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q10g",
@@ -1840,7 +1867,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q11a",
@@ -1884,7 +1912,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q11b",
@@ -1928,7 +1957,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q11c",
@@ -1972,7 +2002,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q12a",
@@ -2017,7 +2048,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q12b",
@@ -2062,7 +2094,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q13a",
@@ -2103,7 +2136,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q13b",
@@ -2148,7 +2182,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q13c",
@@ -2192,7 +2227,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q14a",
@@ -2269,7 +2305,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q14b",
@@ -2314,7 +2351,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020-q14c",
@@ -2424,7 +2462,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020-q15a",
@@ -2501,7 +2540,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q15b",
@@ -2542,7 +2582,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020-q16a",
@@ -2587,7 +2628,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q16b",
@@ -2632,7 +2674,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q16c",
@@ -2677,7 +2720,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q16d",
@@ -2722,7 +2766,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020-q17a",
@@ -2767,7 +2812,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020-q17c",
@@ -2812,7 +2858,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q17d",
@@ -2857,7 +2904,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q18a",
@@ -2898,7 +2946,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020-q18b",
@@ -2939,7 +2988,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q18c",
@@ -2980,7 +3030,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q18d",
@@ -3022,7 +3073,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020-q19a",
@@ -3079,7 +3131,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020-q19b",
@@ -3121,7 +3174,8 @@
           },
           "alsoIn": [
             "exam:fortst2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020s-mc1",
@@ -3162,7 +3216,8 @@
           "hscType": "arithmetic-series",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020s-mc2",
@@ -3203,7 +3258,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc3",
@@ -3243,7 +3299,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-mc4",
@@ -3316,7 +3373,8 @@
           "hscType": "trapezoidal-rule",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc5",
@@ -3356,7 +3414,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc6",
@@ -3396,7 +3455,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc7",
@@ -3468,7 +3528,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-mc8",
@@ -3541,7 +3602,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc9",
@@ -3582,7 +3644,8 @@
           "hscType": "probability-distributions",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-mc10",
@@ -3622,7 +3685,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q1a",
@@ -3760,7 +3824,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q1b",
@@ -3800,7 +3865,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q2a",
@@ -3840,7 +3906,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q2b",
@@ -3880,7 +3947,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q2c",
@@ -3920,7 +3988,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q3a",
@@ -3960,7 +4029,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020s-q3b",
@@ -4002,7 +4072,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q4",
@@ -4042,7 +4113,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q6",
@@ -4078,7 +4150,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q7",
@@ -4152,7 +4225,8 @@
           "meta": {
             "examPaper": "fortst-2020"
           },
-          "hscType": "data-analysis"
+          "hscType": "data-analysis",
+          "xp": 3
         },
         {
           "id": "fortst2020s-q8",
@@ -4192,7 +4266,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q9",
@@ -4232,7 +4307,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q10a",
@@ -4266,7 +4342,8 @@
               "work": "x\\)-intercepts \\((-3, 0)\\) and \\((1, 0)\\); \\(y\\)-intercept \\((0, -3)"
             }
           ],
-          "hscType": "functions-and-graphs"
+          "hscType": "functions-and-graphs",
+          "xp": 1
         },
         {
           "id": "fortst2020s-q10b",
@@ -4306,7 +4383,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q10c",
@@ -4346,7 +4424,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q10d",
@@ -4386,7 +4465,8 @@
           "hscType": "applications-of-differentiation",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q10e",
@@ -4437,7 +4517,8 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "hscType": "applications-of-differentiation"
+          "hscType": "applications-of-differentiation",
+          "xp": 2
         },
         {
           "id": "fortst2020s-q10f",
@@ -4479,7 +4560,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q10g",
@@ -4517,7 +4599,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q11a",
@@ -4557,7 +4640,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q11b",
@@ -4597,7 +4681,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q11c",
@@ -4637,7 +4722,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q12a",
@@ -4678,7 +4764,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q12b",
@@ -4719,7 +4806,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q13a",
@@ -4756,7 +4844,8 @@
           "hscType": "conditional-probability",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q13b",
@@ -4793,7 +4882,8 @@
           "meta": {
             "examPaper": "fortst-2020"
           },
-          "hscType": "conditional-probability"
+          "hscType": "conditional-probability",
+          "xp": 2
         },
         {
           "id": "fortst2020s-q13c",
@@ -4833,7 +4923,8 @@
           "hscType": "geometric-series",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q14a",
@@ -4906,7 +4997,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q14b",
@@ -4947,7 +5039,8 @@
           "hscType": "exponential-and-log",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "fortst2020s-q14c",
@@ -4996,7 +5089,8 @@
           "hscType": "integration-techniques",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020s-q15a",
@@ -5069,7 +5163,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q15b",
@@ -5110,7 +5205,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020s-q16a",
@@ -5151,7 +5247,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q16b",
@@ -5192,7 +5289,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q16c",
@@ -5233,7 +5331,8 @@
           "hscType": "motion-kinematics",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q16d",
@@ -5274,7 +5373,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020s-q17a",
@@ -5315,7 +5415,8 @@
           "hscType": "functions-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020s-q17c",
@@ -5356,7 +5457,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q17d",
@@ -5397,7 +5499,8 @@
           "hscType": "rates-of-change",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q18a",
@@ -5434,7 +5537,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "fortst2020s-q18b",
@@ -5467,7 +5571,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q18c",
@@ -5504,7 +5609,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q18d",
@@ -5542,7 +5648,8 @@
           "hscType": "trig-equations-and-graphs",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "fortst2020s-q19a",
@@ -5615,7 +5722,8 @@
           "hscType": "trig-applications",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "fortst2020s-q19b",
@@ -5655,7 +5763,8 @@
           "hscType": "differentiation-rules",
           "alsoIn": [
             "exam:fortst2020similar"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

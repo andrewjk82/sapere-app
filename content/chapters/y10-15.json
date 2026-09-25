@@ -42,7 +42,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15a-q2",
@@ -75,7 +76,8 @@
               "work": "\\(2/5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15a-q3",
@@ -108,7 +110,8 @@
               "work": "\\(1/3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15a-q4",
@@ -141,7 +144,8 @@
               "work": "\\(2/3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15a-q5",
@@ -177,7 +181,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15a-q6a",
@@ -196,7 +201,8 @@
               "explain": "Determine all possible recorded maximum numbers.",
               "work": "Box 1 has {3, 4, 8, 9}, Box 2 has {4, 5, 6, 7, 8}.\nFor 3 in Box 1: max with {4, 5, 6, 7, 8} gives 4, 5, 6, 7, 8.\nFor 4 in Box 1: max gives 4, 5, 6, 7, 8.\nFor 8 in Box 1: max gives 8, 8, 8, 8, 8.\nFor 9 in Box 1: max gives 9, 9, 9, 9, 9.\nThe distinct maximum numbers recorded are 4, 5, 6, 7, 8, 9."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15a-q6b",
@@ -215,7 +221,8 @@
               "explain": "Count the frequency of each outcome out of the 20 total combinations.",
               "work": "Total pairs = 4 * 5 = 20.\n4 occurs when picking (3,4) or (4,4) -> 2 times.\n5 occurs when picking (3,5) or (4,5) -> 2 times.\n6 occurs when picking (3,6) or (4,6) -> 2 times.\n7 occurs when picking (3,7) or (4,7) -> 2 times.\n8 occurs from (3,8), (4,8), and (8,any) -> 2 + 5 = 7 times.\n9 occurs from (9,any) -> 5 times.\nTherefore: P(4)=P(5)=P(6)=P(7)=2/20=1/10, P(8)=7/20, P(9)=5/20=1/4."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15a-q6c",
@@ -234,7 +241,8 @@
               "explain": "Add the probabilities for outcomes greater than 7.",
               "work": "Outcomes > 7 are 8 and 9.\nP(>7) = P(8) + P(9) = 7/20 + 5/20 = 12/20 = 3/5."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15a-q7",
@@ -270,7 +278,8 @@
                   "explain": "Final answer: {(2,3), (2,5), (2,8), (3,3), (3,5), (3,8), (4,3), (4,5), (4,8)}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
                   "work": "\\({(2,3), (2,5), (2,8), (3,3), (3,5), (3,8), (4,3), (4,5), (4,8)}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q7b",
@@ -300,7 +309,8 @@
                   "explain": "Final answer: 1/9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
                   "work": "\\(1/9\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q7c",
@@ -318,7 +328,8 @@
                   "explain": "Count the pairs with both odd numbers.",
                   "work": "Odd in Box 1: 3\nOdd in Box 2: 3, 5\nPairs: (3,3), (3,5)\nThere are 2 such pairs out of 9 total.\nProbability = \\(2 / 9\\)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -345,7 +356,8 @@
                   "explain": "Calculate all possible sums.",
                   "work": "Box 1 has {2, 3, 4, 5}, Box 2 has {2, 3, 4}.\nThe minimum sum is 2+2=4.\nThe maximum sum is 5+4=9.\nAll integer sums between 4 and 9 are possible."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q8b",
@@ -363,7 +375,8 @@
                   "explain": "Count the frequency of each sum out of the 12 possible combinations.",
                   "work": "Total pairs = 4 * 3 = 12.\n4 occurs 1 time: (2,2)\n5 occurs 2 times: (2,3), (3,2)\n6 occurs 3 times: (2,4), (3,3), (4,2)\n7 occurs 3 times: (3,4), (4,3), (5,2)\n8 occurs 2 times: (4,4), (5,3)\n9 occurs 1 time: (5,4)\nProbabilities are these frequencies divided by 12."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q8c",
@@ -381,7 +394,8 @@
                   "explain": "Add the probabilities for sums less than 6.",
                   "work": "Sums < 6 are 4 and 5.\nP(<6) = P(4) + P(5) = 1/12 + 2/12 = 3/12 = 1/4."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -408,7 +422,8 @@
                   "explain": "Count the number of ways both dice can land on an odd number.",
                   "work": "Odd numbers on a die: {1, 3, 5}\nNumber of ways for die 1 = 3\nNumber of ways for die 2 = 3\nTotal successful outcomes = 3 * 3 = 9\nTotal outcomes for two dice = 36\nProbability = 9 / 36 = 1 / 4."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q9b",
@@ -426,7 +441,8 @@
                   "explain": "Count the number of outcomes with exactly one 5.",
                   "work": "5 on die 1 and not 5 on die 2: 5 outcomes (5,1), (5,2), (5,3), (5,4), (5,6)\nNot 5 on die 1 and 5 on die 2: 5 outcomes\nTotal successful outcomes = 5 + 5 = 10\nTotal outcomes = 36\nProbability = 10 / 36 = 5 / 18."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q9c",
@@ -444,7 +460,8 @@
                   "explain": "Count the number of outcomes matching the condition.",
                   "work": "4 on die 1, odd on die 2: (4,1), (4,3), (4,5) -> 3 outcomes\nOdd on die 1, 4 on die 2: (1,4), (3,4), (5,4) -> 3 outcomes\nTotal successful outcomes = 3 + 3 = 6\nProbability = 6 / 36 = 1 / 6."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -471,7 +488,8 @@
                   "explain": "Determine the maximum and minimum possible differences.",
                   "work": "Max difference: 6 - 1 = 5\nMin difference: 1 - 6 = -5\nAll integer values between -5 and 5 are possible."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q10b",
@@ -489,7 +507,8 @@
                   "explain": "Find the number of positive outcomes and divide by the total number of outcomes.",
                   "work": "Total outcomes = 36.\nPositive differences occur when die1 > die2.\nThere are 15 such pairs (e.g. (2,1), (3,1), (3,2), ...).\nProbability = 15/36 = 5/12."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q10c",
@@ -507,7 +526,8 @@
                   "explain": "Find the number of outcomes that result in 0.",
                   "work": "A difference of 0 occurs when die1 = die2: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6).\nTotal 6 outcomes.\nProbability = 6/36 = 1/6."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q10d",
@@ -525,7 +545,8 @@
                   "explain": "Find the number of outcomes that result in 2.",
                   "work": "Difference of 2 pairs: (3,1), (4,2), (5,3), (6,4).\nTotal 4 outcomes.\nProbability = 4/36 = 1/9."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q10e",
@@ -543,7 +564,8 @@
                   "explain": "Determine which outcomes are even (divisible by 2).",
                   "work": "The difference die1 - die2 is even if both dice are even or both are odd.\nOdd pairs: 3 x 3 = 9\nEven pairs: 3 x 3 = 9\nTotal even differences = 18.\nProbability = 18/36 = 1/2."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -570,7 +592,8 @@
                   "explain": "Determine the total number of combinations.",
                   "work": "There are 6 balls in total.\nSince the selection is with replacement, the number of possible ordered pairs is \\(6 \\times 6 = 36\\).\nThe set contains all pairs from \\((B_1,B_1)\\) to \\((R,R)\\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q11bi",
@@ -588,7 +611,8 @@
                   "explain": "Count the number of ways to pick two balls of the same color.",
                   "work": "Total outcomes = 36.\nP(Blue, Blue): 3 blue balls, so \\(3 \\times 3 = 9\\) ways.\nP(Green, Green): 2 green balls, so \\(2 \\times 2 = 4\\) ways.\nP(Red, Red): 1 red ball, so \\(1 \\times 1 = 1\\) way.\nTotal ways for same colour = \\(9 + 4 + 1 = 14\\).\nProbability = \\(14 / 36 = 7 / 18\\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q11bii",
@@ -606,7 +630,8 @@
                   "explain": "Use the complement rule.",
                   "work": "P(different colours) = 1 - P(same colour)\n\\(= 1 - \\frac{7}{18}\\)\n\\(= \\frac{11}{18}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -633,7 +658,8 @@
                   "explain": "Sum the number of boys with surname length 8 or more.",
                   "work": "Boys with 8 letters: 72\nBoys with 9 letters: 30\nBoys with 10 letters: 8\nBoys with 11 letters: 0\nTotal = \\(72 + 30 + 8 = 110\\)\nProbability = \\(110 / 600 = 11 / 60\\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q12b",
@@ -651,7 +677,8 @@
                   "explain": "Sum the number of boys with surname length 3, 4, or 5.",
                   "work": "Boys with 3 letters: 12\nBoys with 4 letters: 75\nBoys with 5 letters: 130\nTotal = \\(12 + 75 + 130 = 217\\)\nProbability = \\(217 / 600\\)."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15a-q12c",
@@ -669,7 +696,8 @@
                   "explain": "Sum the number of boys with surname lengths 5, 6, 7, and 8.",
                   "work": "Boys with 5 letters: 130\nBoys with 6 letters: 165\nBoys with 7 letters: 108\nBoys with 8 letters: 72\nTotal = \\(130 + 165 + 108 + 72 = 475\\)\nProbability = \\(475 / 600 = 95 / 120 = 19 / 24\\)."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -707,7 +735,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "jr2013-q2",
@@ -737,7 +766,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "jr2013-qF",
@@ -770,7 +800,8 @@
                   "explain": "Evaluate.",
                   "work": "\\(= \\dfrac{60}{441} = \\dfrac{20}{147}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qFb",
@@ -801,7 +832,8 @@
                   "explain": "Evaluate.",
                   "work": "\\(P(-1) = -4\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jr2013-qFc",
@@ -848,7 +880,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "jr2013-qFd",
@@ -887,7 +920,8 @@
                   "work": "Using equal angles at the circumference (standing on arc \\(XP\\)) and matching alternate angles with transversal \\(BX\\) (or \\(AY\\)), conclude \\(\\angle XQP=\\angle ABX\\) (alternate angles) \\(\\Rightarrow QP\\parallel AB\\), as required."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             }
           ],
           "manual": true,
@@ -930,7 +964,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s7-q1b",
@@ -968,7 +1003,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "willoughby2019-s7-q1c",
@@ -1006,7 +1042,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q20d",
@@ -1040,7 +1077,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -1080,7 +1118,8 @@
               "work": "\\(3/5\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15b-q2",
@@ -1113,7 +1152,8 @@
               "work": "\\(12/13\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15b-q3",
@@ -1146,7 +1186,8 @@
               "work": "\\(17/20\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15b-q4",
@@ -1179,7 +1220,8 @@
               "work": "\\(97/100\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15b-q5",
@@ -1212,7 +1254,8 @@
                   "explain": "Calculate the probability by dividing the count of 'B' by the total letters.",
                   "work": "P(B) = \\frac{2}{11}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q5b",
@@ -1239,7 +1282,8 @@
                   "explain": "Calculate the probability by dividing the count of 'I' by the total letters.",
                   "work": "P(I) = \\frac{2}{11}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q5c",
@@ -1266,7 +1310,8 @@
                   "explain": "Calculate the probability by dividing the count of vowels by the total number of letters.",
                   "work": "P(\\text{vowel}) = \\frac{4}{11}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q5d",
@@ -1293,7 +1338,8 @@
                   "explain": "Substitute the value and calculate the result.",
                   "work": "P(\\text{not } B) = 1 - \\frac{2}{11} = \\frac{9}{11}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -1329,7 +1375,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{4} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q6b",
@@ -1356,7 +1403,8 @@
                   "explain": "Calculate the probability and simplify the fraction.",
                   "work": "P(\\text{Court card}) = \\frac{16}{52} = \\frac{4}{13}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q6c",
@@ -1383,7 +1431,8 @@
                   "explain": "Calculate the probability and simplify the fraction.",
                   "work": "P(\\text{Spade} \\cap \\text{Court card}) = \\frac{4}{52} = \\frac{1}{13}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q6d",
@@ -1410,7 +1459,8 @@
                   "explain": "Substitute the values to find the final probability.",
                   "work": "\\( = \\frac{13}{52} + \\frac{16}{52} - \\frac{4}{52} = \\frac{25}{52} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q6e",
@@ -1437,7 +1487,8 @@
                   "explain": "The probability of drawing a card that fits both conditions is 0.",
                   "work": "P(A \\cap B) = 0"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q6f",
@@ -1468,7 +1519,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{8}{13} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -1504,7 +1556,8 @@
                   "explain": "Count the number of outcomes in the intersection and calculate the probability.",
                   "work": "P(A \\cap B) = \\frac{1}{6}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q7b",
@@ -1531,7 +1584,8 @@
                   "explain": "Count the number of outcomes in the union and calculate the probability.",
                   "work": "P(A \\cup B) = \\frac{3}{6} = \\frac{1}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q7c",
@@ -1558,7 +1612,8 @@
                   "explain": "Count the number of outcomes in the intersection and calculate the probability.",
                   "work": "P(A \\cap B) = \\frac{1}{6}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q7d",
@@ -1585,7 +1640,8 @@
                   "explain": "Count the number of outcomes in the union and calculate the probability.",
                   "work": "P(A \\cup B) = \\frac{3}{6} = \\frac{1}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q7e",
@@ -1612,7 +1668,8 @@
                   "explain": "Count the number of outcomes in the intersection and calculate the probability.",
                   "work": "P(A \\cap B) = \\frac{2}{6} = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q7f",
@@ -1639,7 +1696,8 @@
                   "explain": "Count the number of outcomes in the union and calculate the probability.",
                   "work": "P(A \\cup B) = \\frac{4}{6} = \\frac{2}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -1675,7 +1733,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{3}{10} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8b",
@@ -1698,7 +1757,8 @@
                   "explain": "Divide by the total number of people.",
                   "work": "P(\\text{Red}) = \\frac{43}{200}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8c",
@@ -1729,7 +1789,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{2} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8d",
@@ -1760,7 +1821,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{27}{40} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8e",
@@ -1787,7 +1849,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{10} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8f",
@@ -1818,7 +1881,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{27}{40} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8g",
@@ -1849,7 +1913,8 @@
                   "explain": "Calculate the final fraction.",
                   "work": "\\( = \\frac{157}{200} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8h",
@@ -1876,7 +1941,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{10} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q8i",
@@ -1903,7 +1969,8 @@
                   "explain": "Subtract this from 1 to find the complement.",
                   "work": "1 - \\frac{1}{10} = \\frac{9}{10}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 450
@@ -1964,7 +2031,8 @@
                   }
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "y10-15b-q9bi",
@@ -1991,7 +2059,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{4} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q9bii",
@@ -2018,7 +2087,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{3} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q9biii",
@@ -2045,7 +2115,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{12} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -2085,7 +2156,8 @@
                   "explain": "Divide the intersection by the total number of students.",
                   "work": "P(\\text{Both}) = \\frac{10}{50} = \\frac{1}{5}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q10b",
@@ -2112,7 +2184,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{2} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q10c",
@@ -2139,7 +2212,8 @@
                   "explain": "Divide by the total number of students and simplify.",
                   "work": "P(\\text{Only one sport}) = \\frac{40}{50} = \\frac{4}{5}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q10d",
@@ -2162,7 +2236,8 @@
                   "explain": "Divide by the total number of students and simplify.",
                   "work": "P(\\text{Cricket only}) = \\frac{15}{50} = \\frac{3}{10}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -2198,7 +2273,8 @@
                   "explain": "Simplify the fraction by dividing numerator and denominator by 5.",
                   "work": "\\( = \\frac{13}{16} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q11b",
@@ -2225,7 +2301,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{3}{16} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q11c",
@@ -2248,7 +2325,8 @@
                   "explain": "Divide by the total number of students and simplify.",
                   "work": "P(\\text{German only}) = \\frac{25}{80} = \\frac{5}{16}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q11d",
@@ -2275,7 +2353,8 @@
                   "explain": "Divide by the total and simplify.",
                   "work": "P(\\text{Exactly one}) = \\frac{40}{80} = \\frac{1}{2}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -2311,7 +2390,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{4} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12b",
@@ -2338,7 +2418,8 @@
                   "explain": "Simplify the fraction by dividing numerator and denominator by 5.",
                   "work": "\\( = \\frac{17}{120} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12c",
@@ -2365,7 +2446,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{11}{100} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12d",
@@ -2396,7 +2478,8 @@
                   "explain": "Simplify the fraction by dividing numerator and denominator by 3.",
                   "work": "\\( = \\frac{7}{200} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12e",
@@ -2427,7 +2510,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{4}{150} = \\frac{2}{75} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12f",
@@ -2458,7 +2542,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{100} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q12g",
@@ -2489,7 +2574,8 @@
                   "explain": "Simplify the fraction.",
                   "work": "\\( = \\frac{1}{300} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 450
@@ -2529,7 +2615,8 @@
                   "explain": "Sum all these distinct regions to find the total number of people owning at least one device, then subtract from 90 to find those owning none.",
                   "work": "\\(\\begin{aligned} \\text{Total owning at least one} &= 28 + 20 + 16 + 5 + 7 + 4 + 3 = 83 \\\\ \\text{Total owning none} &= 90 - 83 = 7 \\\\ P(\\text{none}) &= \\frac{7}{90} \\end{aligned}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q13b",
@@ -2560,7 +2647,8 @@
                   "explain": "Find the probability by dividing by the total number of people.",
                   "work": "\\(P(\\text{Exactly one}) = \\frac{64}{90} = \\frac{32}{45}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q13c",
@@ -2591,7 +2679,8 @@
                   "explain": "Find the probability by dividing by the total group size (90).",
                   "work": "\\(P(\\text{Exactly two}) = \\frac{16}{90} = \\frac{8}{45}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -2631,7 +2720,8 @@
                   "explain": "Substitute the probabilities and simplify the fraction.",
                   "work": "\\( = \\frac{13}{52} + \\frac{1}{52} = \\frac{14}{52} = \\frac{7}{26} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q14b",
@@ -2662,7 +2752,8 @@
                   "explain": "Calculate the final probability and simplify.",
                   "work": "\\( = \\frac{13}{52} + \\frac{4}{52} - \\frac{1}{52} = \\frac{16}{52} = \\frac{4}{13} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15b-q14c",
@@ -2693,7 +2784,8 @@
                   "explain": "Calculate the final probability and simplify.",
                   "work": "\\( = \\frac{13}{52} + \\frac{13}{52} = \\frac{26}{52} = \\frac{1}{2} \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -2728,7 +2820,8 @@
               "explain": "Final Answer & Pitfall: When using the addition rule, remember to subtract the intersection P(A \\cap B) to avoid double-counting!",
               "work": "\\(1/2\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jr2012-q11",
@@ -2767,7 +2860,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q16g",
@@ -2797,7 +2891,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sth2013-q18h",
@@ -2836,7 +2931,8 @@
                     "svg": "fig:c80bd2d79c"
                   }
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "sth2013-q18h-ii",
@@ -2863,7 +2959,8 @@
                   "explain": "Divide by the whole class. (\\(\\tfrac9{20}\\) divides by History students only — that's a conditional probability.)",
                   "work": "\\(P=\\dfrac9{26}\\)"
                 }
-              ]
+              ],
+              "xp": 1
             }
           ]
         }
@@ -2911,7 +3008,8 @@
                   "work": "\\(2/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q1b",
@@ -2944,7 +3042,8 @@
                   "work": "\\(5/9\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q1c",
@@ -2977,7 +3076,8 @@
                   "work": "\\(1/3\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q1d",
@@ -3010,7 +3110,8 @@
                   "work": "\\(5/9\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q1e",
@@ -3043,7 +3144,8 @@
                   "work": "\\(2/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q1f",
@@ -3076,7 +3178,8 @@
                   "work": "\\(2/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 600
@@ -3118,7 +3221,8 @@
                   "work": "\\(1/3\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q2b",
@@ -3151,7 +3255,8 @@
                   "work": "\\(3/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3187,7 +3292,8 @@
               "work": "\\(3/7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15c-q4",
@@ -3226,7 +3332,8 @@
                   "work": "\\(4/13\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q4b",
@@ -3259,7 +3366,8 @@
                   "work": "\\(1/13\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3301,7 +3409,8 @@
                   "work": "\\(2/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q5b",
@@ -3334,7 +3443,8 @@
                   "work": "\\(3/10\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q5c",
@@ -3367,7 +3477,8 @@
                   "work": "\\(4/9\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q5d",
@@ -3400,7 +3511,8 @@
                   "work": "\\(4/15\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3442,7 +3554,8 @@
                   "work": "\\(7/20\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q6b",
@@ -3475,7 +3588,8 @@
                   "work": "\\(39/100\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q6c",
@@ -3508,7 +3622,8 @@
                   "work": "\\(22/51\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q6d",
@@ -3541,7 +3656,8 @@
                   "work": "\\(2/5\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3583,7 +3699,8 @@
                   "work": "\\(19/20\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q7b",
@@ -3616,7 +3733,8 @@
                   "work": "\\(7/10\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q7c",
@@ -3649,7 +3767,8 @@
                   "work": "\\(17/20\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q7d",
@@ -3682,7 +3801,8 @@
                   "work": "\\(11/17\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q7e",
@@ -3715,7 +3835,8 @@
                   "work": "\\(17/19\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3753,7 +3874,8 @@
                 }
               ],
               "manual": true,
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q8b",
@@ -3782,7 +3904,8 @@
                 }
               ],
               "manual": true,
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q8c",
@@ -3815,7 +3938,8 @@
                   "work": "\\(5/6\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q8d",
@@ -3848,7 +3972,8 @@
                   "work": "\\(1/6\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q8e",
@@ -3881,7 +4006,8 @@
                   "work": "\\(15/17\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y10-15c-q8f",
@@ -3914,7 +4040,8 @@
                   "work": "\\(2/17\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "timeLimit": 300
@@ -3956,7 +4083,8 @@
                   "work": "\\(1/15\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q9b",
@@ -3989,7 +4117,8 @@
                   "work": "\\(11/23\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q9c",
@@ -4022,7 +4151,8 @@
                   "work": "\\(3/4\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q9d",
@@ -4055,7 +4185,8 @@
                   "work": "\\(11/23\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q9e",
@@ -4088,7 +4219,8 @@
                   "work": "\\(3/7\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -4130,7 +4262,8 @@
                   "work": "\\(8/35\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q10b",
@@ -4163,7 +4296,8 @@
                   "work": "\\(2/7\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q10c",
@@ -4196,7 +4330,8 @@
                   "work": "\\(3/8\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 600
@@ -4238,7 +4373,8 @@
                   "work": "\\(P(A \\mid B) = \\frac{0.2}{0.5} = \\frac{2}{5}\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-15c-q11b",
@@ -4267,7 +4403,8 @@
                   "work": "\\(P(B \\mid A) = \\frac{0.2}{0.4} = \\frac{1}{2}\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -4307,7 +4444,8 @@
               "work": "\\(0.38 = \\frac{38}{100} = \\frac{19}{50}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -4343,7 +4481,8 @@
               "work": "\\(\\frac{7}{40} \\neq \\frac{8}{40}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-15d-q2",
@@ -4380,7 +4519,8 @@
               "work": "\\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-15d-q3",
@@ -4418,7 +4558,8 @@
                   "explain": "Final answer: 7/25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
                   "work": "\\(7/25\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y10-15d-q3b",
@@ -4450,7 +4591,8 @@
                   "explain": "Final answer: 27/50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
                   "work": "\\(27/50\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 300
@@ -4477,7 +4619,8 @@
               "work": "\\(\\frac{14}{50} \\neq \\frac{27}{50}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-15d-q3d",
@@ -4501,7 +4644,8 @@
               "work": "\\(\\frac{26}{125} = \\frac{130}{625} \\neq \\frac{99}{625}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-15d-q4a",
@@ -4533,7 +4677,8 @@
               "explain": "Final answer: 1/10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(1/10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15d-q4b",
@@ -4565,7 +4710,8 @@
               "explain": "Final answer: 3/10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(3/10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15d-q4c",
@@ -4597,7 +4743,8 @@
               "explain": "Final answer: 9/20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(9/20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15d-q4d",
@@ -4629,7 +4776,8 @@
               "explain": "Final answer: 11/20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
               "work": "\\(11/20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15d-q5",
@@ -4818,7 +4966,8 @@
               "work": "\\(P(A \\cap B) = P(A) \\times P(B) = \\frac{3}{25}\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y10-15d-q6a",
@@ -4846,7 +4995,8 @@
               "work": "A 6 by 6 table showing all 36 possible outcomes and their sums, ranging from 2 to 12."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y10-15d-q6b",
@@ -4881,7 +5031,8 @@
             "Not independent",
             "Mutually exclusive",
             "Cannot be determined"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-15d-q6c",
@@ -4908,7 +5059,8 @@
             "Not mutually exclusive",
             "Independent",
             "Cannot be determined"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "jr2012-q28",
@@ -4942,7 +5094,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "nbsc2021y10-q2",
@@ -4982,7 +5135,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "willoughby2019-s7-q2",
@@ -5017,7 +5171,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "y10-15d-q4",
@@ -5043,7 +5198,8 @@
                   "explain": "Multiply the fractions to obtain the final answer.",
                   "work": "= \\frac{2}{20} = \\frac{1}{10}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15d-q4b",
@@ -5063,7 +5219,8 @@
                   "explain": "Multiply the fractions.",
                   "work": "= \\frac{6}{20} = \\frac{3}{10}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15d-q4c",
@@ -5083,7 +5240,8 @@
                   "explain": "Multiply the fractions.",
                   "work": "= \\frac{9}{20}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15d-q4d",
@@ -5107,7 +5265,8 @@
                   "explain": "Simplify to obtain the final answer.",
                   "work": "= \\frac{11}{20}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "1/10",
@@ -5133,7 +5292,8 @@
                   "explain": "The sample space has \\(6 \\times 6 = 36\\) equally likely outcomes.",
                   "work": "n(S) = 36"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15d-q6b",
@@ -5167,7 +5327,8 @@
                 "Not independent",
                 "Mutually exclusive",
                 "Cannot be determined"
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y10-15d-q6c",
@@ -5193,7 +5354,8 @@
                 "Not mutually exclusive",
                 "Independent",
                 "Cannot be determined"
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions.",
@@ -5238,7 +5400,8 @@
               "work": "\\(1/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q1b",
@@ -5272,7 +5435,8 @@
               "work": "\\(9/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q1c",
@@ -5306,7 +5470,8 @@
               "work": "\\(3/8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q1d",
@@ -5343,7 +5508,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q1e",
@@ -5380,7 +5546,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q1f",
@@ -5414,7 +5581,8 @@
               "work": "\\(7/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2a",
@@ -5448,7 +5616,8 @@
               "work": "\\(1/17\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2b",
@@ -5482,7 +5651,8 @@
               "work": "\\(19/34\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2c",
@@ -5516,7 +5686,8 @@
               "work": "\\(13/34\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2d",
@@ -5550,7 +5721,8 @@
               "work": "\\(13/68\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2e",
@@ -5584,7 +5756,8 @@
               "work": "\\(13/68\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q2f",
@@ -5618,7 +5791,8 @@
               "work": "\\(15/34\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q3a",
@@ -5652,7 +5826,8 @@
               "work": "\\(7/26\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q3b",
@@ -5686,7 +5861,8 @@
               "work": "\\(7/13\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q3c",
@@ -5720,7 +5896,8 @@
               "work": "\\(7/26\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q3d",
@@ -5754,7 +5931,8 @@
               "work": "\\(5/26\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q4a",
@@ -5788,7 +5966,8 @@
               "work": "\\(1/7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q4b",
@@ -5822,7 +6001,8 @@
               "work": "\\(8/35\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q4c",
@@ -5856,7 +6036,8 @@
               "work": "\\(2/7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q4d",
@@ -5890,7 +6071,8 @@
               "work": "\\(2/35\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q5a",
@@ -5927,7 +6109,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q5b",
@@ -5964,7 +6147,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q5c",
@@ -6001,7 +6185,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q5d",
@@ -6038,7 +6223,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q5e",
@@ -6072,7 +6258,8 @@
               "work": "\\(35/36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q6a",
@@ -6106,7 +6293,8 @@
               "work": "\\(46/295\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q6b",
@@ -6140,7 +6328,8 @@
               "work": "\\(21/59\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q6c",
@@ -6174,7 +6363,8 @@
               "work": "\\(144/295\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q7a",
@@ -6211,7 +6401,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q7b",
@@ -6245,7 +6436,8 @@
               "work": "\\(12/25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q7c",
@@ -6279,7 +6471,8 @@
               "work": "\\(4/25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q7d",
@@ -6313,7 +6506,8 @@
               "work": "\\(13/25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q8a",
@@ -6347,7 +6541,8 @@
               "work": "\\(1/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q8b",
@@ -6381,7 +6576,8 @@
               "work": "\\(1/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q8c",
@@ -6418,7 +6614,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q8d",
@@ -6452,7 +6649,8 @@
               "work": "\\(1/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q8e",
@@ -6486,7 +6684,8 @@
               "work": "\\(15/16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q9a",
@@ -6520,7 +6719,8 @@
               "work": "\\(1/216\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q9b",
@@ -6554,7 +6754,8 @@
               "work": "\\(125/216\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q9c",
@@ -6588,7 +6789,8 @@
               "work": "\\(1/8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q9d",
@@ -6622,7 +6824,8 @@
               "work": "\\(1/8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q9e",
@@ -6659,7 +6862,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q9f",
@@ -6696,7 +6900,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch15e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-15e-q10a",
@@ -6730,7 +6935,8 @@
               "work": "\\(3/7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y10-15e-q10b",
@@ -6764,7 +6970,8 @@
               "work": "\\(3/7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "nbsc2021y10-q1",
@@ -6791,7 +6998,8 @@
                   "work": "\\(\\text{after } W: \\ P(B)=\\dfrac{4}{11}, \\quad P(W)=\\dfrac{7}{11}\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "nbsc2021y10-q1b",
@@ -6817,7 +7025,8 @@
                   "explain": "Simplify the fraction. Pitfall: forgetting to add BOTH same-colour paths (only computing BB or only WW) misses half the answer.",
                   "work": "\\(\\dfrac{68}{132} = \\dfrac{17}{33}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {

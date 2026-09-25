@@ -30,7 +30,8 @@
               "work": "x = 2, x = 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-5a-q4h",
@@ -53,7 +54,8 @@
               "work": "h = 3, h = 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-5a-q4j",
@@ -76,7 +78,8 @@
               "work": "y = -9, y = 1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

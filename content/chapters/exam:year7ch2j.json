@@ -37,7 +37,8 @@
               "work": "2^3 \\times 2^3 \\times 5^3 = 2^6 \\times 5^3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y7-2j-q15i",
@@ -67,7 +68,8 @@
               "work": "2^{10} \\times 2 \\times 5 = 2^{11} \\times 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

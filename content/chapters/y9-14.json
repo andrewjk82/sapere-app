@@ -52,7 +52,8 @@
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -87,7 +88,8 @@
               "work": "\\(Yes\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q1b",
@@ -111,7 +113,8 @@
               "work": "\\(No\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2ai",
@@ -174,7 +177,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2aii",
@@ -237,7 +241,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2aiii",
@@ -300,7 +305,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2bi",
@@ -386,7 +392,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2bii",
@@ -472,7 +479,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q2biii",
@@ -558,7 +566,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3a",
@@ -644,7 +653,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3b",
@@ -730,7 +740,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3c",
@@ -816,7 +827,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3d",
@@ -902,7 +914,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3e",
@@ -988,7 +1001,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3f",
@@ -1074,7 +1088,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3g",
@@ -1160,7 +1175,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3h",
@@ -1246,7 +1262,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3i",
@@ -1332,7 +1349,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3j",
@@ -1418,7 +1436,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3k",
@@ -1504,7 +1523,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q3l",
@@ -1590,7 +1610,8 @@
               }
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14a-q4a",
@@ -1659,7 +1680,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q4b",
@@ -1728,7 +1750,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q5a",
@@ -1797,7 +1820,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q5b",
@@ -1866,7 +1890,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q6",
@@ -1935,7 +1960,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q7ai",
@@ -2021,7 +2047,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q7aii",
@@ -2107,7 +2134,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q7aiii",
@@ -2193,7 +2221,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14a-q7b",
@@ -2215,7 +2244,8 @@
               "work": "If the intersection point involves non-integer values (e.g., fractional or decimal coordinates like \\(x = 1.34, y = 2.57\\)), it is extremely difficult to read the exact values from a hand-drawn grid. Algebraic methods are required for exact precision in such cases."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-ep1-alg-eq-1d",
@@ -2254,7 +2284,8 @@
               "explain": "State the final answer.",
               "work": "\\(x = 6, y = -2\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -2307,7 +2338,8 @@
               "work": "x=-1, y=2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1b",
@@ -2357,7 +2389,8 @@
               "work": "x=-4, y=-7"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1c",
@@ -2403,7 +2436,8 @@
               "work": "x=-5, y=-12"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1d",
@@ -2453,7 +2487,8 @@
               "work": "x=1, y=7"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1e",
@@ -2503,7 +2538,8 @@
               "work": "x=2, y=0"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1f",
@@ -2549,7 +2585,8 @@
               "work": "x=3, y=-1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1g",
@@ -2599,7 +2636,8 @@
               "work": "x=2, y=2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1h",
@@ -2645,7 +2683,8 @@
               "work": "x=-2, y=11"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q1i",
@@ -2691,7 +2730,8 @@
               "work": "x=2, y=4"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2a",
@@ -2741,7 +2781,8 @@
               "work": "x=2, y=4"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2b",
@@ -2791,7 +2832,8 @@
               "work": "x=4, y=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2c",
@@ -2845,7 +2887,8 @@
               "work": "x=3, y=8"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2d",
@@ -2895,7 +2938,8 @@
               "work": "x=-1, y=4"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2e",
@@ -2949,7 +2993,8 @@
               "work": "x=1, y=3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2f",
@@ -2999,7 +3044,8 @@
               "work": "x=7, y=2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2g",
@@ -3053,7 +3099,8 @@
               "work": "x=2, y=4"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2h",
@@ -3103,7 +3150,8 @@
               "work": "x=3, y=8"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2i",
@@ -3157,7 +3205,8 @@
               "work": "x=-1, y=6"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2j",
@@ -3211,7 +3260,8 @@
               "work": "x=4, y=3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2k",
@@ -3261,7 +3311,8 @@
               "work": "x=3, y=-2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q2l",
@@ -3307,7 +3358,8 @@
               "work": "x=3, y=0"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3a",
@@ -3357,7 +3409,8 @@
               "work": "x=4, y=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3b",
@@ -3411,7 +3464,8 @@
               "work": "x=7, y=3"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3c",
@@ -3461,7 +3515,8 @@
               "work": "x=-6, y=-4"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3d",
@@ -3515,7 +3570,8 @@
               "work": "x=1, y=-1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3e",
@@ -3569,7 +3625,8 @@
               "work": "a=7, b=5"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3f",
@@ -3619,7 +3676,8 @@
               "work": "a=5, b=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3g",
@@ -3669,7 +3727,8 @@
               "work": "a=6, b=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q3h",
@@ -3719,7 +3778,8 @@
               "work": "a=7, b=9"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q4a",
@@ -3777,7 +3837,8 @@
               "work": "x=2, y=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q4b",
@@ -3839,7 +3900,8 @@
               "work": "x=2, y=1"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q4c",
@@ -3897,7 +3959,8 @@
               "work": "a=1, b=2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y9-14b-q4d",
@@ -3955,7 +4018,8 @@
               "work": "a=3, b=-2"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "sg2022-q3h",
@@ -4001,7 +4065,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q4",
@@ -4042,7 +4107,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -4087,7 +4153,8 @@
               "work": "\\(x = 5, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q1b",
@@ -4125,7 +4192,8 @@
               "work": "\\(x = 4, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q1c",
@@ -4163,7 +4231,8 @@
               "work": "\\(x = 2, \\; y = -2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q1d",
@@ -4201,7 +4270,8 @@
               "work": "\\(x = 3, \\; y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q1e",
@@ -4239,7 +4309,8 @@
               "work": "\\(x = 5, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q1f",
@@ -4277,7 +4348,8 @@
               "work": "\\(x = -2, \\; y = -3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2a",
@@ -4315,7 +4387,8 @@
               "work": "\\(x = 2, \\; y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2b",
@@ -4353,7 +4426,8 @@
               "work": "\\(x = 2, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2c",
@@ -4391,7 +4465,8 @@
               "work": "\\(x = 3, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2d",
@@ -4429,7 +4504,8 @@
               "work": "\\(x = 3, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2e",
@@ -4467,7 +4543,8 @@
               "work": "\\(x = 2, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2f",
@@ -4505,7 +4582,8 @@
               "work": "\\(x = 5, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2g",
@@ -4543,7 +4621,8 @@
               "work": "\\(x = 3, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2h",
@@ -4581,7 +4660,8 @@
               "work": "\\(x = -1, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2i",
@@ -4619,7 +4699,8 @@
               "work": "\\(x = -2, \\; y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2j",
@@ -4657,7 +4738,8 @@
               "work": "\\(x = 4, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2k",
@@ -4695,7 +4777,8 @@
               "work": "\\(x = 3, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q2l",
@@ -4733,7 +4816,8 @@
               "work": "\\(x = -5, \\; y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3a",
@@ -4775,7 +4859,8 @@
               "work": "\\(x = 4, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3b",
@@ -4817,7 +4902,8 @@
               "work": "\\(x = -2, \\; y = -3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3c",
@@ -4859,7 +4945,8 @@
               "work": "\\(x = 4, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3d",
@@ -4901,7 +4988,8 @@
               "work": "\\(x = -4, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3e",
@@ -4943,7 +5031,8 @@
               "work": "\\(x = -2, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3f",
@@ -4985,7 +5074,8 @@
               "work": "\\(x = 2, \\; y = 0\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3g",
@@ -5027,7 +5117,8 @@
               "work": "\\(x = 1, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q3h",
@@ -5069,7 +5160,8 @@
               "work": "\\(x = 1, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4a",
@@ -5111,7 +5203,8 @@
               "work": "\\(x = 3, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4b",
@@ -5153,7 +5246,8 @@
               "work": "\\(x = 3, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4c",
@@ -5195,7 +5289,8 @@
               "work": "\\(x = -1, \\; y = 5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4d",
@@ -5237,7 +5332,8 @@
               "work": "\\(x = 4, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4e",
@@ -5279,7 +5375,8 @@
               "work": "\\(x = 5, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4f",
@@ -5317,7 +5414,8 @@
               "work": "\\(x = -1, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4g",
@@ -5359,7 +5457,8 @@
               "work": "\\(x = 2, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4h",
@@ -5401,7 +5500,8 @@
               "work": "\\(x = 4, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4i",
@@ -5443,7 +5543,8 @@
               "work": "\\(x = -1, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4j",
@@ -5485,7 +5586,8 @@
               "work": "\\(x = 5, \\; y = 0\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4k",
@@ -5527,7 +5629,8 @@
               "work": "\\(x = 3, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q4l",
@@ -5569,7 +5672,8 @@
               "work": "\\(x = -2, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5a",
@@ -5611,7 +5715,8 @@
               "work": "\\(x = 3, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5b",
@@ -5653,7 +5758,8 @@
               "work": "\\(x = 3, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5c",
@@ -5695,7 +5801,8 @@
               "work": "\\(x = 1, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5d",
@@ -5737,7 +5844,8 @@
               "work": "\\(x = -3, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5e",
@@ -5779,7 +5887,8 @@
               "work": "\\(x = -1, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5f",
@@ -5821,7 +5930,8 @@
               "work": "\\(x = 3, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5g",
@@ -5863,7 +5973,8 @@
               "work": "\\(a = 4, \\; b = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5h",
@@ -5905,7 +6016,8 @@
               "work": "\\(a = 5, \\; b = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5i",
@@ -5947,7 +6059,8 @@
               "work": "\\(a = 4, \\; b = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5j",
@@ -5989,7 +6102,8 @@
               "work": "\\(a = -1, \\; b = -5\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q5l",
@@ -6031,7 +6145,8 @@
               "work": "\\(a = 4, \\; b = 6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6a",
@@ -6073,7 +6188,8 @@
               "work": "\\(x = 1, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6b",
@@ -6115,7 +6231,8 @@
               "work": "\\(x = 5, \\; y = 2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6c",
@@ -6157,7 +6274,8 @@
               "work": "\\(x = 4, \\; y = -3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6d",
@@ -6199,7 +6317,8 @@
               "work": "\\(x = -2, \\; y = 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6e",
@@ -6241,7 +6360,8 @@
               "work": "\\(x = -2, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6f",
@@ -6283,7 +6403,8 @@
               "work": "\\(x = 7, \\; y = 3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6g",
@@ -6325,7 +6446,8 @@
               "work": "\\(x = 4, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6h",
@@ -6367,7 +6489,8 @@
               "work": "\\(x = 2, \\; y = -1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6i",
@@ -6409,7 +6532,8 @@
               "work": "\\(x = 1, \\; y = -4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6j",
@@ -6451,7 +6575,8 @@
               "work": "\\(x = 3, \\; y = 10\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6k",
@@ -6493,7 +6618,8 @@
               "work": "\\(x = 5, \\; y = 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14c-q6l",
@@ -6535,7 +6661,8 @@
               "work": "\\(x = 1, \\; y = 0\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "sg2022-q4b",
@@ -6581,7 +6708,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "willoughby2019-s3-q4",
@@ -6623,7 +6751,8 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-19-t3q4",
@@ -6665,7 +6794,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-14c"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -6705,7 +6835,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the larger number is 24."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q1b",
@@ -6738,7 +6869,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the smaller number is 18."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q2a",
@@ -6775,7 +6907,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Jane's number is 36."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q2b",
@@ -6808,7 +6941,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Jacqui's number is 12."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q3a",
@@ -6845,7 +6979,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the larger number is 34."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q3b",
@@ -6878,7 +7013,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the smaller number is 30."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q4a",
@@ -6915,7 +7051,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the larger number is 8."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q4b",
@@ -6956,7 +7093,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the smaller number is 7."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q5a",
@@ -6993,7 +7131,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Martha's present age is 35."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q5b",
@@ -7026,7 +7165,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the daughter's present age is 9."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q6a",
@@ -7059,7 +7199,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the length of the base is 10 cm."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q6b",
@@ -7096,7 +7237,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the length of each equal side is 14 cm."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q7",
@@ -7133,7 +7275,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Oscar's current age is 24."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q8a",
@@ -7174,7 +7317,8 @@
               "explain": "State the final answer.",
               "work": "Thus, a can of soft drink costs 3.00."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q8b",
@@ -7219,7 +7363,8 @@
               "explain": "State the final answer.",
               "work": "Thus, a chocolate bar costs 2.00."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q9",
@@ -7256,7 +7401,8 @@
               "explain": "State the final answer.",
               "work": "Thus, a hamburger costs 3.00."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q10",
@@ -7293,7 +7439,8 @@
               "explain": "State the final answer.",
               "work": "Thus, each man weighs 100 kg."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q11",
@@ -7326,7 +7473,8 @@
               "explain": "State the final answer.",
               "work": "Thus, each shirt costs 20.00."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q12a",
@@ -7359,7 +7507,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the width of the paddock is 26 m."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q12b",
@@ -7396,7 +7545,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the length of the paddock is 58 m."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q13a",
@@ -7433,7 +7583,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Jie is 35 years old now."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q13b",
@@ -7466,7 +7617,8 @@
               "explain": "State the final answer.",
               "work": "Thus, Tan is 15 years old now."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q14a",
@@ -7507,7 +7659,8 @@
               "explain": "State the final answer.",
               "work": "Thus, there are 35 ten-cent pieces."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q14b",
@@ -7544,7 +7697,8 @@
               "explain": "State the final answer.",
               "work": "Thus, there are 30 fifty-cent pieces."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q15",
@@ -7585,7 +7739,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the original number is 36."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q16",
@@ -7626,7 +7781,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the fraction is \\( \\frac{6}{9} \\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q17",
@@ -7667,7 +7823,8 @@
               "explain": "State the final answer.",
               "work": "Thus, the fraction is \\( \\frac{7}{10} \\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q18a",
@@ -7708,7 +7865,8 @@
               "explain": "State the final answer.",
               "work": "Thus, he originally bought 30 of the 40-cent stamps."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14d-q18b",
@@ -7745,7 +7903,8 @@
               "explain": "State the final answer.",
               "work": "Thus, he originally bought 20 of the 70-cent stamps."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-killara-24-t4-pc-t2q5",
@@ -7790,7 +7949,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -7831,7 +7991,8 @@
               "work": "\\((2, 1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1b",
@@ -7865,7 +8026,8 @@
               "work": "\\((2, -3)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1c",
@@ -7899,7 +8061,8 @@
               "work": "\\((6, 10)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1d",
@@ -7946,7 +8109,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1e",
@@ -7980,7 +8144,8 @@
               "work": "\\((1, -3)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1f",
@@ -8014,7 +8179,8 @@
               "work": "\\((2, -1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1g",
@@ -8048,7 +8214,8 @@
               "work": "\\((2, -1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1h",
@@ -8082,7 +8249,8 @@
               "work": "\\((2, 1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1i",
@@ -8116,7 +8284,8 @@
               "work": "\\((1, 1)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1j",
@@ -8163,7 +8332,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1k",
@@ -8197,7 +8367,8 @@
               "work": "\\((2, 3)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q1l",
@@ -8231,7 +8402,8 @@
               "work": "\\((3, 2)\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2a",
@@ -8278,7 +8450,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2b",
@@ -8325,7 +8498,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2c",
@@ -8372,7 +8546,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2d",
@@ -8419,7 +8594,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2e",
@@ -8466,7 +8642,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2f",
@@ -8500,7 +8677,8 @@
               "work": "No solutions"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q2g",
@@ -8547,7 +8725,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14e-q3a",
@@ -8589,7 +8768,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-14e-q3b",
@@ -8631,7 +8811,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-14e-q3c",
@@ -8673,7 +8854,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-14e-q3d",
@@ -8715,7 +8897,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-14e-q4",
@@ -8757,7 +8940,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y9-14e-q5a",
@@ -8802,7 +8986,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q5b",
@@ -8847,7 +9032,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q6a",
@@ -8892,7 +9078,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q6b",
@@ -8937,7 +9124,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q7a",
@@ -8982,7 +9170,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q7b",
@@ -9027,7 +9216,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q8a",
@@ -9072,7 +9262,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q8b",
@@ -9117,7 +9308,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14e-q5",
@@ -9153,7 +9345,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 3 = 9\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14e-q5b",
@@ -9183,7 +9376,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 3 = 9\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",
@@ -9225,7 +9419,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 4 = 12\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14e-q6b",
@@ -9255,7 +9450,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 2 = 6\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",
@@ -9297,7 +9493,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 3 = 9\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14e-q8b",
@@ -9327,7 +9524,8 @@
                   "explain": "Calculate the area",
                   "work": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 10 \\times 5 = 25\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",
@@ -9382,7 +9580,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q1b",
@@ -9424,7 +9623,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q1c",
@@ -9466,7 +9666,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q2a",
@@ -9514,7 +9715,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q2b",
@@ -9561,7 +9763,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q2c",
@@ -9609,7 +9812,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q3a",
@@ -9657,7 +9861,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q3b",
@@ -9704,7 +9909,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q3c",
@@ -9752,7 +9958,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q4a",
@@ -9786,7 +9993,8 @@
               "work": "Since the lines intersect at exactly one point when \\(m \\neq -2\\), and at infinitely many points when \\(m = -2\\), they will **always** intersect. Therefore, there are **no** values of \\(m\\) where they do not intersect."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q4b",
@@ -9820,7 +10028,8 @@
               "work": "Since the lines intersect at exactly one point when \\(m \\neq -2\\), and at infinitely many points when \\(m = -2\\), they intersect for **all real values of** \\(m\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q4c",
@@ -9849,7 +10058,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q5a",
@@ -9883,7 +10093,8 @@
               "work": "Therefore, the lines will only intersect if they are identical, which happens when \\(k = 12\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q5b",
@@ -9917,7 +10128,8 @@
               "work": "Therefore, the lines will not intersect when they are strictly parallel, which happens when \\(k \\neq 12\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q5c",
@@ -9952,7 +10164,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q6a",
@@ -9982,7 +10195,8 @@
           "timeLimit": 90,
           "figure": {
             "svg": "fig:9b1b56a2f3"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-14f-q6b",
@@ -10014,7 +10228,8 @@
           "timeLimit": 90,
           "figure": {
             "svg": "fig:9b1b56a2f3"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-14f-q7a",
@@ -10049,7 +10264,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14f-q7b",
@@ -10083,7 +10299,8 @@
               "work": "Therefore, \\(m = -2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     },
@@ -10124,7 +10341,8 @@
               "work": "The solution is \\(x = 2, y = 5\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q1b",
@@ -10158,7 +10376,8 @@
               "work": "The solution is \\(x = 2, y = 5\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q1c",
@@ -10192,7 +10411,8 @@
               "work": "The solution is \\(x = 2, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q1d",
@@ -10226,7 +10446,8 @@
               "work": "The solution is \\(x = 1, y = 3\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q2a",
@@ -10260,7 +10481,8 @@
               "work": "The solution is \\(x = 1, y = 4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q2b",
@@ -10294,7 +10516,8 @@
               "work": "The solution is \\(x = 1, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q2c",
@@ -10328,7 +10551,8 @@
               "work": "The solution is \\(x = 2, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q2d",
@@ -10362,7 +10586,8 @@
               "work": "The solution is \\(x = 2, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q3a",
@@ -10396,7 +10621,8 @@
               "work": "The solution is \\(x = 7, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q3b",
@@ -10430,7 +10656,8 @@
               "work": "The solution is \\(x = 3, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q3c",
@@ -10464,7 +10691,8 @@
               "work": "The solution is \\(x = 2, y = 4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q3d",
@@ -10498,7 +10726,8 @@
               "work": "The solution is \\(x = 2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q4a",
@@ -10532,7 +10761,8 @@
               "work": "The solution is \\(x = 3, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q4b",
@@ -10566,7 +10796,8 @@
               "work": "The solution is \\(x = 2, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q4c",
@@ -10600,7 +10831,8 @@
               "work": "The solution is \\(x = 2, y = -2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q4d",
@@ -10634,7 +10866,8 @@
               "work": "The solution is \\(x = 2, y = 4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q5a",
@@ -10668,7 +10901,8 @@
               "work": "The solution is \\(x = 2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q5b",
@@ -10702,7 +10936,8 @@
               "work": "The solution is \\(x = 2, y = 3\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q5c",
@@ -10736,7 +10971,8 @@
               "work": "The solution is \\(x = 2, y = -4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q5d",
@@ -10770,7 +11006,8 @@
               "work": "The solution is \\(x = 2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q6a",
@@ -10804,7 +11041,8 @@
               "work": "The solution is \\(x = 2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q6b",
@@ -10838,7 +11076,8 @@
               "work": "The solution is \\(x = -2, y = -4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q6c",
@@ -10872,7 +11111,8 @@
               "work": "The solution is \\(x = 18, y = 3\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q6d",
@@ -10906,7 +11146,8 @@
               "work": "The solution is \\(x = -2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q7a",
@@ -10940,7 +11181,8 @@
               "work": "The solution is \\(x = 2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q7b",
@@ -10974,7 +11216,8 @@
               "work": "The solution is \\(x = 4, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q7c",
@@ -11008,7 +11251,8 @@
               "work": "The solution is \\(x = 0, y = 5\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q7d",
@@ -11042,7 +11286,8 @@
               "work": "The solution is \\(x = 4, y = -1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q8a",
@@ -11076,7 +11321,8 @@
               "work": "The solution is \\(x = 1, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q8b",
@@ -11110,7 +11356,8 @@
               "work": "The solution is \\(x = 3, y = -2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q8c",
@@ -11144,7 +11391,8 @@
               "work": "The solution is \\(x = -2, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q8d",
@@ -11178,7 +11426,8 @@
               "work": "The solution is \\(x = 3, y = 6\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9a",
@@ -11212,7 +11461,8 @@
               "work": "The solution is \\(x = 3, y = 2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9b",
@@ -11246,7 +11496,8 @@
               "work": "The solution is \\(x = 2, y = -1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9c",
@@ -11280,7 +11531,8 @@
               "work": "The solution is \\(x = 2, y = -4\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9d",
@@ -11314,7 +11566,8 @@
               "work": "The solution is \\(x = -1, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9e",
@@ -11348,7 +11601,8 @@
               "work": "The solution is \\(x = -1, y = 1\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q9f",
@@ -11382,7 +11636,8 @@
               "work": "The solution is \\(x = -6, y = -2\\)."
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10a",
@@ -11429,7 +11684,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10b",
@@ -11476,7 +11732,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10c",
@@ -11523,7 +11780,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10d",
@@ -11570,7 +11828,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10e",
@@ -11617,7 +11876,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q10f",
@@ -11664,7 +11924,8 @@
               }
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y9-14g-q11a",
@@ -11706,7 +11967,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q11b",
@@ -11748,7 +12010,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q11c",
@@ -11790,7 +12053,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q12a",
@@ -11832,7 +12096,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q12b",
@@ -11874,7 +12139,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q12c",
@@ -11911,7 +12177,8 @@
               }
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y9-14g-q13a",
@@ -11953,7 +12220,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q13b",
@@ -11995,7 +12263,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q14a",
@@ -12036,7 +12305,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q14b",
@@ -12077,7 +12347,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q15a",
@@ -12106,7 +12377,8 @@
               "explain": "Solve for the number of adults (a).",
               "work": "From Equation 1, we can express \\(c\\) in terms of \\(a\\):\n\\[c = 500 - a\\]\nSubstitute this into Equation 2:\n\\[20a + 10(500 - a) = 7000\\]\n\\[20a + 5000 - 10a = 7000\\]\n\\[10a = 2000\\]\n\\[a = 200\\]\nSo, 200 adults attended."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q15b",
@@ -12131,7 +12403,8 @@
               "explain": "Solve for the number of children (c).",
               "work": "From Equation 1, express \\(a\\) in terms of \\(c\\):\n\\[a = 500 - c\\]\nSubstitute this into Equation 2:\n\\[20(500 - c) + 10c = 7000\\]\n\\[10000 - 20c + 10c = 7000\\]\n\\[-10c = -3000\\]\n\\[c = 300\\]\nSo, 300 children attended."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q16a",
@@ -12160,7 +12433,8 @@
               "explain": "Solve for the larger number (x).",
               "work": "From Eq 1, \\(y = x - 6\\).\nSubstitute into Eq 2:\n\\[3x + 2(x - 6) = 38\\]\n\\[3x + 2x - 12 = 38\\]\n\\[5x = 50 \\implies x = 10\\]\nThe larger number is 10."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q16b",
@@ -12189,7 +12463,8 @@
               "explain": "Solve for the smaller number (y).",
               "work": "From Eq 1, \\(x = y + 6\\).\nSubstitute into Eq 2:\n\\[3(y + 6) + 2y = 38\\]\n\\[3y + 18 + 2y = 38\\]\n\\[5y = 20 \\implies y = 4\\]\nThe smaller number is 4."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q17",
@@ -12231,7 +12506,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q18a",
@@ -12276,7 +12552,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q18b",
@@ -12321,7 +12598,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q19",
@@ -12363,7 +12641,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q20a",
@@ -12405,7 +12684,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q20b",
@@ -12443,7 +12723,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q21a",
@@ -12476,7 +12757,8 @@
               "explain": "State the final answer.",
               "work": "The solution is \\(x = 4, y = 12\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q21b",
@@ -12509,7 +12791,8 @@
               "explain": "State the final answer.",
               "work": "The solution is \\(x = 3, y = 2\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q22",
@@ -12538,7 +12821,8 @@
               "explain": "Solve for y (denominator) and form the fraction.",
               "work": "Substitute \\(x = 10\\) back into \\(y = x + 4\\):\n\\[y = 10 + 4 = 14\\]\nTherefore, the original fraction is \\(\\frac{10}{14}\\). (Note: We do not simplify this fraction, as simplifying it would change the original numerator and denominator values)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q23a",
@@ -12571,7 +12855,8 @@
               "explain": "Substitute to find y.",
               "work": "Substitute \\(x = 6\\) back into the second equation:\n\\(\\frac{6}{3} - \\frac{y}{3} = 1\\)\n\\(2 - \\frac{y}{3} = 1\\)\n\\(-\\frac{y}{3} = -1\\)\n\\(y = 3\\)\n\nThe final solution is \\(x = 6, y = 3\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q23b",
@@ -12604,7 +12889,8 @@
               "explain": "Substitute to find y.",
               "work": "Substitute \\(x = 8\\) back into the first equation:\n\\(\\frac{8}{4} + \\frac{y}{5} = 3\\)\n\\(2 + \\frac{y}{5} = 3\\)\n\\(\\frac{y}{5} = 1\\)\n\\(y = 5\\)\n\nThe final solution is \\(x = 8, y = 5\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q24",
@@ -12637,7 +12923,8 @@
               "explain": "Verify and state the final answer.",
               "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q25a",
@@ -12681,7 +12968,8 @@
           ],
           "figure": {
             "svg": "fig:d28e36016d"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-14g-q25b",
@@ -12727,7 +13015,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q25c",
@@ -12773,7 +13062,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q26",
@@ -12815,7 +13105,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q27a",
@@ -12841,7 +13132,8 @@
               "explain": "Verify and state the final answer.",
               "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q27b",
@@ -12867,7 +13159,8 @@
               "explain": "Verify and state the final answer.",
               "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q28a",
@@ -12893,7 +13186,8 @@
               "explain": "Verify and state the final answer.",
               "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q28b",
@@ -12919,7 +13213,8 @@
               "explain": "Verify and state the final answer.",
               "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y9-14g-q29a",
@@ -12965,7 +13260,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q29b",
@@ -13003,7 +13299,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q30a",
@@ -13036,7 +13333,8 @@
               "explain": "Find the corresponding y-coordinate.",
               "work": "Substitute \\(x = 1\\) back into our isolated equation for \\(y\\):\n\\[y = 5 - 2(1)\\]\n\\[y = 5 - 2\\]\n\\[y = 3\\]\n\nThe coordinates of vertex A are \\((1, 3)\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q30b",
@@ -13069,7 +13367,8 @@
               "explain": "Solve for y.",
               "work": "Substitute \\(x = 2\\) back into Equation 2 to find \\(y\\):\n\\[2 - y = 1\\]\n\nSubtract 1 from both sides:\n\\[1 = y\\]\n\\[y = 1\\]\n\nThe coordinates of vertex B are \\((2, 1)\\)."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q30c",
@@ -13115,7 +13414,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q31",
@@ -13148,7 +13448,8 @@
               "explain": "Calculate the actual perimeter.",
               "work": "Now substitute \\(p=6\\) and \\(q=3\\) into the original side length expressions to find the actual dimensions:\nLength (AB): \\(p + q = 6 + 3 = 9\\)\nWidth (DA): \\(q + 5 = 3 + 5 = 8\\)\n\nThe formula for the perimeter of a rectangle is \\(2 \\times (\\text{Length} + \\text{Width})\\):\n\\[\\text{Perimeter} = 2 \\times (9 + 8)\\]\n\\[\\text{Perimeter} = 2 \\times 17\\]\n\\[\\text{Perimeter} = 34\\]"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q32",
@@ -13198,7 +13499,8 @@
                 }
               }
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y9-14g-q14",
@@ -13245,7 +13547,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y9-14g-q14b",
@@ -13286,7 +13589,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "See sub-questions",
@@ -13340,7 +13644,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14g-q18b",
@@ -13383,7 +13688,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",
@@ -13424,7 +13730,8 @@
                   "explain": "Verify and state the final answer.",
                   "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14g-q27b",
@@ -13454,7 +13761,8 @@
                   "explain": "Verify and state the final answer.",
                   "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",
@@ -13495,7 +13803,8 @@
                   "explain": "Verify and state the final answer.",
                   "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-14g-q28b",
@@ -13525,7 +13834,8 @@
                   "explain": "Verify and state the final answer.",
                   "work": "Check your solution by substituting the values back into the original equations to ensure they hold true."
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions",

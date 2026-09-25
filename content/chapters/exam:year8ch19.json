@@ -25,7 +25,8 @@
                 "\\(\\$10.75\\)",
                 "\\(\\$10.50\\)"
               ],
-              "answer": 2
+              "answer": 2,
+              "xp": 2
             },
             {
               "id": "y8-19a-q4b",
@@ -37,7 +38,8 @@
                 "\\(\\$15.95\\)",
                 "\\(\\$10.75\\)"
               ],
-              "answer": 1
+              "answer": 1,
+              "xp": 2
             },
             {
               "id": "y8-19a-q4c",
@@ -61,7 +63,8 @@
                   "explain": "The median (\\(\\$10.75\\)) only cares about the middle numbers when ordered, so it completely ignores how extreme the outlier is. Therefore, \\(\\$10.75\\) is a much better reflection of her \"usual\" daily spending.",
                   "work": "\\text{The median is a better indicator.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers."
@@ -82,7 +85,8 @@
                 "\\(101\\)",
                 "\\(102\\)"
               ],
-              "answer": 1
+              "answer": 1,
+              "xp": 2
             },
             {
               "id": "y8-19a-q7b",
@@ -94,7 +98,8 @@
                 "\\(100\\)",
                 "\\(98.5\\)"
               ],
-              "answer": 2
+              "answer": 2,
+              "xp": 2
             },
             {
               "id": "y8-19a-q7c",
@@ -106,7 +111,8 @@
                 "\\(100\\)",
                 "\\(98.5\\)"
               ],
-              "answer": 3
+              "answer": 3,
+              "xp": 2
             },
             {
               "id": "y8-19a-q7d",
@@ -118,7 +124,8 @@
                 "\\(98.83\\)",
                 "\\(99.50\\)"
               ],
-              "answer": 1
+              "answer": 1,
+              "xp": 2
             }
           ],
           "answer": "See sub-questions for individual answers."

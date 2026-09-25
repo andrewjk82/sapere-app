@@ -50,7 +50,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-mc1v",
@@ -94,7 +95,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-mc2",
@@ -138,7 +140,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc2v",
@@ -182,7 +185,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc4",
@@ -227,7 +231,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc4v",
@@ -272,7 +277,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc5",
@@ -317,7 +323,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-mc5v",
@@ -358,7 +365,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "asc2020-mc6",
@@ -404,7 +412,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-mc6v",
@@ -446,7 +455,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 1
         },
         {
           "id": "asc2020-mc7",
@@ -492,7 +502,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc7v",
@@ -535,7 +546,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-mc8",
@@ -657,7 +669,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc8v",
@@ -782,7 +795,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc9",
@@ -827,7 +841,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-mc9v",
@@ -868,7 +883,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-mc10",
@@ -913,7 +929,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-mc10v",
@@ -958,7 +975,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q11v",
@@ -1002,7 +1020,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-q12",
@@ -1047,7 +1066,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q12v",
@@ -1092,7 +1112,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q13",
@@ -1193,7 +1214,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q13v",
@@ -1294,7 +1316,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q14",
@@ -1391,7 +1414,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q14v",
@@ -1488,7 +1512,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q15",
@@ -1533,7 +1558,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q15v",
@@ -1574,7 +1600,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q16-a",
@@ -1612,7 +1639,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 1
         },
         {
           "id": "asc2020-q16-b",
@@ -1650,7 +1678,8 @@
           "dna": {
             "dnaId": "TRIG-EQ-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 1
         },
         {
           "id": "asc2020-q16v",
@@ -1694,7 +1723,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-q17-a",
@@ -1728,7 +1758,8 @@
           "dna": {
             "dnaId": "STAT-CORR-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q17-b",
@@ -1766,7 +1797,8 @@
           "dna": {
             "dnaId": "STAT-BIV-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q17v",
@@ -1796,7 +1828,8 @@
                   "explain": "So the regression equation is $\\hat{y} = bx + a$, using the given slope $b=-1.5$ and the intercept found above.",
                   "work": "\\(\\hat{y} = -1.5x + 14.9\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q17v-b",
@@ -1817,7 +1850,8 @@
                   "explain": "To predict $y$ when $x=5$, substitute $x=5$ into the regression equation $\\hat{y} = -1.5x + 14.9$ found in part (a) and simplify.",
                   "work": "\\(\\hat{y} = -1.5(5) + 14.9 = -7.5 + 14.9 = 7.4\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -1869,7 +1903,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 3
         },
         {
           "id": "asc2020-q18-b",
@@ -1907,7 +1942,8 @@
           "dna": {
             "dnaId": "TRIG-GEO-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 3
         },
         {
           "id": "asc2020-q18v",
@@ -1951,7 +1987,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q19",
@@ -1996,7 +2033,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-q19v",
@@ -2041,7 +2079,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "asc2020-q20",
@@ -2086,7 +2125,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q20v",
@@ -2131,7 +2171,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q21",
@@ -2179,7 +2220,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q21v",
@@ -2227,7 +2269,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "asc2020-q22-a",
@@ -2261,7 +2304,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q22-b",
@@ -2295,7 +2339,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 3
         },
         {
           "id": "asc2020-q22v",
@@ -2341,7 +2386,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q23",
@@ -2385,7 +2431,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q23v",
@@ -2423,7 +2470,8 @@
           "dna": {
             "dnaId": "ALG-EQ-01",
             "dnaConfidence": 0.85
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q24-a",
@@ -2514,7 +2562,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q24-b",
@@ -2605,7 +2654,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q24-c",
@@ -2639,7 +2689,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q24v",
@@ -2683,7 +2734,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q25",
@@ -2780,7 +2832,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q25v",
@@ -2877,7 +2930,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q26",
@@ -2917,7 +2971,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q26v",
@@ -2961,7 +3016,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q27",
@@ -3058,7 +3114,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q27v",
@@ -3155,7 +3212,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q28-a",
@@ -3193,7 +3251,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q28-b",
@@ -3231,7 +3290,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q28-c",
@@ -3269,7 +3329,8 @@
           "dna": {
             "dnaId": "PROB-DIST-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q28v",
@@ -3314,7 +3375,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "asc2020-q29",
@@ -3411,7 +3473,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q29v",
@@ -3508,7 +3571,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q30-a",
@@ -3595,7 +3659,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q30-b",
@@ -3686,7 +3751,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q30-c",
@@ -3777,7 +3843,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q30-d",
@@ -3868,7 +3935,8 @@
               }
             ],
             "hasReasoningBlueprint": true
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q30v",
@@ -3990,7 +4058,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q31-a",
@@ -4024,7 +4093,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q31-b",
@@ -4062,7 +4132,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q31-c",
@@ -4100,7 +4171,8 @@
           "dna": {
             "dnaId": "PROB-CONT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q31v",
@@ -4145,7 +4217,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q32-a",
@@ -4381,7 +4454,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q32-b",
@@ -4612,7 +4686,8 @@
           "dna": {
             "dnaId": "CALC-OPT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q32v",
@@ -5050,7 +5125,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "asc2020-q33-a",
@@ -5088,7 +5164,8 @@
           "dna": {
             "dnaId": "STAT-DESC-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q33-b",
@@ -5122,7 +5199,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 1
         },
         {
           "id": "asc2020-q33-c",
@@ -5160,7 +5238,8 @@
           "dna": {
             "dnaId": "PROB-NORM-01",
             "dnaConfidence": 0.6
-          }
+          },
+          "xp": 4
         },
         {
           "id": "asc2020-q33v",
@@ -5205,7 +5284,8 @@
           },
           "alsoIn": [
             "exam:ascham2020"
-          ]
+          ],
+          "xp": 4
         }
       ]
     },
@@ -5251,7 +5331,8 @@
               "work": "\\(t = 30\\ \\text{min (10:15 am)}\\)"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 3
         },
         {
           "id": "asc2020-q34-b",
@@ -5294,7 +5375,8 @@
             }
           ],
           "timeLimit": 150,
-          "inactive": true
+          "inactive": true,
+          "xp": 5
         },
         {
           "id": "asc2020-q34-c",
@@ -5332,7 +5414,8 @@
               "work": "\\(100 - \\dfrac{18}{\\pi}\\ \\text{kL}\\)"
             }
           ],
-          "inactive": true
+          "inactive": true,
+          "xp": 5
         },
         {
           "id": "asc2020-q34",
@@ -5376,7 +5459,8 @@
                   "work": "\\(t = 30\\ \\text{min (10:15 am)}\\)"
                 }
               ],
-              "inactive": true
+              "inactive": true,
+              "xp": 3
             },
             {
               "id": "asc2020-q34-b",
@@ -5419,7 +5503,8 @@
                 }
               ],
               "timeLimit": 150,
-              "inactive": true
+              "inactive": true,
+              "xp": 5
             },
             {
               "id": "asc2020-q34-c",
@@ -5457,7 +5542,8 @@
                   "work": "\\(100 - \\dfrac{18}{\\pi}\\ \\text{kL}\\)"
                 }
               ],
-              "inactive": true
+              "inactive": true,
+              "xp": 5
             }
           ],
           "hint": "Set flow rate to zero for (a); integrate with \\(V(0)=100\\) for (b); minimise cosine for (c).",

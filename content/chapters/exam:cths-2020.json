@@ -50,7 +50,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-mc2",
@@ -91,7 +92,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-mc3",
@@ -136,7 +138,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cths2020-mc4",
@@ -181,7 +184,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-mc5",
@@ -226,7 +230,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-mc6",
@@ -266,7 +271,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cths2020-mc7",
@@ -311,7 +317,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-mc8",
@@ -355,7 +362,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-mc9",
@@ -397,7 +405,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-mc10",
@@ -450,7 +459,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-q11",
@@ -494,7 +504,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q12",
@@ -587,7 +598,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q13",
@@ -627,7 +639,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q14",
@@ -725,7 +738,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q15",
@@ -799,7 +813,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q16",
@@ -843,7 +858,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q17",
@@ -883,7 +899,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-q18",
@@ -930,7 +947,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q19",
@@ -971,7 +989,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q20",
@@ -1064,7 +1083,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q22",
@@ -1105,7 +1125,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-q23",
@@ -1202,7 +1223,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q24a",
@@ -1240,7 +1262,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 3
         },
         {
           "id": "cths2020-q24b",
@@ -1278,7 +1301,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020-q25",
@@ -1371,7 +1395,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020-q26",
@@ -1417,7 +1442,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q27",
@@ -1462,7 +1488,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q28",
@@ -1503,7 +1530,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q29",
@@ -1548,7 +1576,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q30",
@@ -1594,7 +1623,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q31",
@@ -1638,7 +1668,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q32",
@@ -1683,7 +1714,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q33",
@@ -1724,7 +1756,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q34",
@@ -1765,7 +1798,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020-q35",
@@ -1810,7 +1844,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020-q36",
@@ -1854,7 +1889,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-mc1",
@@ -1902,7 +1938,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-mc2",
@@ -1943,7 +1980,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-mc3",
@@ -1988,7 +2026,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cths2020s-mc4",
@@ -2033,7 +2072,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-mc5",
@@ -2131,7 +2171,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-mc6",
@@ -2171,7 +2212,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "cths2020s-mc7",
@@ -2216,7 +2258,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-mc8",
@@ -2260,7 +2303,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-mc9",
@@ -2306,7 +2350,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-mc10",
@@ -2359,7 +2404,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-q11",
@@ -2399,7 +2445,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q12",
@@ -2496,7 +2543,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q13",
@@ -2540,7 +2588,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q14",
@@ -2638,7 +2687,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q15",
@@ -2712,7 +2762,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q16",
@@ -2756,7 +2807,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q17",
@@ -2800,7 +2852,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-q18",
@@ -2843,7 +2896,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q19",
@@ -2888,7 +2942,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q20",
@@ -2985,7 +3040,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q22",
@@ -3030,7 +3086,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-q23",
@@ -3127,7 +3184,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q24a",
@@ -3165,7 +3223,8 @@
           "dna": {
             "dnaId": "CALC-STAT-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 3
         },
         {
           "id": "cths2020s-q24b",
@@ -3203,7 +3262,8 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01",
             "dnaConfidence": 0.95
-          }
+          },
+          "xp": 2
         },
         {
           "id": "cths2020s-q25",
@@ -3247,7 +3307,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "cths2020s-q26",
@@ -3293,7 +3354,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q27",
@@ -3338,7 +3400,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-q28",
@@ -3383,7 +3446,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q29",
@@ -3428,7 +3492,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-q30",
@@ -3474,7 +3539,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-q31",
@@ -3518,7 +3584,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q32",
@@ -3563,7 +3630,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-q34",
@@ -3608,7 +3676,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "cths2020s-q35",
@@ -3653,7 +3722,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "cths2020s-q36",
@@ -3697,7 +3767,8 @@
           },
           "alsoIn": [
             "exam:cherrybrooktech2020similar"
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

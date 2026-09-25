@@ -64,7 +64,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q1b",
@@ -122,7 +123,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q1c",
@@ -180,7 +182,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q1d",
@@ -238,7 +241,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q1e",
@@ -296,7 +300,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q1f",
@@ -328,7 +333,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q2a",
@@ -386,7 +392,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q2b",
@@ -444,7 +451,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q2c",
@@ -502,7 +510,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18a-q2d",
@@ -560,7 +569,8 @@
           "timeLimit": 180,
           "alsoIn": [
             "exam:year8ch18"
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -625,7 +635,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q1b",
@@ -683,7 +694,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q2a",
@@ -712,7 +724,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-18i-q2b",
@@ -770,7 +783,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q3a",
@@ -799,7 +813,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-18i-q3b",
@@ -861,7 +876,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q3c",
@@ -921,7 +937,8 @@
               "work": "\\(y=3x\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-18i-q3d",
@@ -981,7 +998,8 @@
               "work": "\\(y=-4x\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-18i-q4a",
@@ -1010,7 +1028,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y8-18i-q4b",
@@ -1073,7 +1092,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q4c",
@@ -1136,7 +1156,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q4d",
@@ -1173,7 +1194,8 @@
           "timeLimit": 30,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-18i-q5",
@@ -1207,7 +1229,8 @@
               "work": "\\(-2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-18i-q6a",
@@ -1270,7 +1293,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q6b",
@@ -1333,7 +1357,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q6c",
@@ -1396,7 +1421,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q7a",
@@ -1459,7 +1485,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q7b",
@@ -1522,7 +1549,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q7c",
@@ -1585,7 +1613,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q7d",
@@ -1648,7 +1677,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q8a",
@@ -1853,7 +1883,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q8b",
@@ -2058,7 +2089,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q8c",
@@ -2263,7 +2295,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q9a",
@@ -2300,7 +2333,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q9b",
@@ -2337,7 +2371,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-18i-q10a",
@@ -2373,7 +2408,8 @@
           ],
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q10b",
@@ -2409,7 +2445,8 @@
           ],
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q10c",
@@ -2445,7 +2482,8 @@
           ],
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q11a",
@@ -2502,7 +2540,8 @@
             "\\(5\\)",
             "\\(-2\\)",
             "\\(0\\)"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q11b",
@@ -2564,7 +2603,8 @@
           ],
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q11c",
@@ -2600,7 +2640,8 @@
           ],
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q12a",
@@ -2657,7 +2698,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q12b",
@@ -2688,7 +2730,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-18i-q12c",
@@ -2719,7 +2762,8 @@
           "manual": true,
           "alsoIn": [
             "exam:year8ch18i"
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

@@ -42,7 +42,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "asc2020-q31b",
@@ -78,7 +79,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "asc2020-q31c",
@@ -114,7 +116,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bb2020-q28",
@@ -151,7 +154,8 @@
                   "explain": "Option B comes from mistakenly integrating over a symmetric domain \\([-8,8]\\) instead of the actual domain \\([0,8]\\) (doubling the integral). Option C comes from flipping the equation the wrong way (writing \\(k=\\tfrac{1024}{3}\\) instead of its reciprocal). Option D comes from dropping the \"3\" in the final simplification.",
                   "work": "Compare: symmetric-domain slip \\(\\to\\tfrac{3}{2048}\\); flipped reciprocal \\(\\to\\tfrac{1024}{3}\\); dropped numerator \\(\\to\\tfrac{1}{1024}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q28b",
@@ -178,7 +182,8 @@
                   "explain": "Distribute the \\(\\tfrac{3}{1024}\\) across both terms and simplify.",
                   "work": "\\(F(x) = \\dfrac{192x}{1024}-\\dfrac{x^3}{1024} = \\dfrac{3x}{16}-\\dfrac{x^3}{1024}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q28c",
@@ -205,7 +210,8 @@
                   "explain": "Complete the subtraction and round to 4 significant figures.",
                   "work": "\\(P(X>5) = 1-\\dfrac{835}{1024} = \\dfrac{189}{1024} \\approx 0.1846\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -255,7 +261,8 @@
           },
           "dna": {
             "dnaId": "PROB-CONT-01"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "glenwood2020-q24",
@@ -291,7 +298,8 @@
                   "explain": "Solve for \\( a \\).",
                   "work": "a = \\dfrac{1}{72}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "glenwood2020-q24b",
@@ -321,7 +329,8 @@
                   "explain": "Simplify the resulting fraction to lowest terms.",
                   "work": "P(3\\le X\\le5) = \\dfrac{98}{216} = \\dfrac{49}{108}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "steps": [
@@ -391,7 +400,8 @@
           },
           "dna": {
             "dnaId": "PROB-NORM-01"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hg2020-q21",
@@ -427,7 +437,8 @@
                   "explain": "Add the two areas.",
                   "work": "\\(= 0.625\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q21b",
@@ -453,7 +464,8 @@
                   "explain": "Apply the triangle area formula.",
                   "work": "\\(P(1\\le X\\le 2) = \\dfrac12(1)(1) = 0.5\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -499,7 +511,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -530,7 +543,8 @@
                   "explain": "We begin by finding the value of b. Since all probabilities in the distribution must sum to exactly one, we set up an addition equation.",
                   "work": "0.2 + 0.15 + 0.08 + b + 0.12 + 0.10 = 1 \\implies 0.65 + b = 1 \\implies b = 0.35"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "cths2020s-q33-b",
@@ -548,7 +562,8 @@
                   "explain": "We calculate the probability of X being strictly between one and four (inclusive of four) by summing probabilities for two, three, and four.",
                   "work": "P(1 < X \\leq 4) = P(2) + P(3) + P(4) = 0.15 + 0.08 + 0.35 = 0.58"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "cths2020s-q33-c",
@@ -566,7 +581,8 @@
                   "explain": "We calculate the conditional probability of X being less than or equal to four given X is greater than one.",
                   "work": "P(X \\leq 4 \\mid X > 1) = \\dfrac{P(1 < X \\leq 4)}{P(X > 1)} = \\dfrac{0.58}{1 - 0.20} = \\dfrac{0.58}{0.80} = \\dfrac{29}{40}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "cths2020s-q33-d",
@@ -584,7 +600,8 @@
                   "explain": "We compute the expected value E(X) by summing the products of each outcome and its corresponding probability.",
                   "work": "E(X) = 1(0.2) + 2(0.15) + 3(0.08) + 4(0.35) + 5(0.12) + 6(0.10) = 3.34"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "For (a): $\\sum P=1$. For (c): $P(X\\leq4|X>1)=\\frac{P(1<X\\leq4)}{P(X>1)}$. For (d)–(f): use standard formulas.",
@@ -623,7 +640,8 @@
                   "explain": "Round the resulting value to the nearest integer.",
                   "work": "1.86 \\approx 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q28-b",
@@ -645,7 +663,8 @@
                   "explain": "Next, we calculate the variance by subtracting the square of the expected value from the expectation of X squared.",
                   "work": "\\text{Var}(X) = E(X^2) - [E(X)]^2 = 4.44 - (1.86)^2 = 0.9804"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q28-c",
@@ -671,7 +690,8 @@
                   "explain": "Compare the two values and select the job that offers higher expected weekly earnings.",
                   "work": "700 > 650 \\implies \\text{Shop } X"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "options": [
@@ -717,7 +737,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q28b",
@@ -745,7 +766,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "asc2020-q28c",
@@ -777,7 +799,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "gosford2020-q27",
@@ -804,7 +827,8 @@
                   "work": "\\(k\\left[\\dfrac{64}{3}-8-\\dfrac13-1\\right] = k(12) = 1 \\;\\Rightarrow\\; k=\\dfrac1{12} \\ \\blacksquare\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             },
             {
               "id": "gosford2020-q27b",
@@ -830,7 +854,8 @@
                   "explain": "Evaluate and simplify, substituting the lower bound value \\( \\tfrac13-1+2=\\tfrac43 \\). Pitfall: forgetting to subtract the constant of integration (the lower-bound value) leaves the \"-1/9\" term off, giving the third distractor.",
                   "work": "\\(F(x) = \\dfrac1{12}\\left(\\dfrac{x^3}{3}-x^2+2x-\\dfrac43\\right) = \\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q27c",
@@ -855,7 +880,8 @@
                   "work": "\\(F(3.2)\\lt 0.5\\lt F(3.3) \\;\\Rightarrow\\; \\text{median} \\in (3.2,3.3) \\ \\blacksquare\\)"
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 3
             }
           ],
           "manual": true,
@@ -905,7 +931,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hh2020-q21",
@@ -938,7 +965,8 @@
                   "explain": "Set this equal to 1 and solve.",
                   "work": "\\(a = 1\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q21b",
@@ -969,7 +997,8 @@
                   "explain": "Evaluate and subtract \\([E(X)]^2\\).",
                   "work": "\\(E(X^2) = \\dfrac13-\\dfrac14+\\dfrac13 = \\dfrac{5}{12}; \\qquad \\text{Var}(X) = \\dfrac{5}{12}-\\left(\\dfrac{17}{30}\\right)^2 = \\dfrac{43}{900}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1015,7 +1044,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hg2020-q30",
@@ -1055,7 +1085,8 @@
             "school": "Hornsby Girls High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hh2020-q7",
@@ -1089,7 +1120,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hh2020-q27",
@@ -1125,7 +1157,8 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1164,7 +1197,8 @@
                   "explain": "Substitute the mean value of fifteen and isolate the standard deviation.",
                   "work": "15 + \\\\sigma = 16.5 \\\\implies \\\\sigma = 1.5\\\\text{ minutes}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q33-b",
@@ -1203,7 +1237,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q33-c",
@@ -1229,7 +1264,8 @@
                   "explain": "Round the value to two decimal places to obtain the qualifying limit time.",
                   "work": "t \\\\approx 11.51\\\\text{ minutes}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0",
@@ -1272,7 +1308,8 @@
                   "explain": "Substitute the mean value of fifteen and isolate the standard deviation.",
                   "work": "15 + \\sigma = 16.5 \\implies \\sigma = 1.5\\text{ minutes}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "asc2020-q33a-b",
@@ -1311,7 +1348,8 @@
                     }
                   }
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "In a normal distribution, approximately 16% of data lies above $\\mu + \\sigma$ (i.e. more than 1 SD above the mean). Use this to set up an equation.",
@@ -1360,7 +1398,8 @@
             "school": "Blacktown Boys High School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "bb2020-q27",
@@ -1392,7 +1431,8 @@
                   "explain": "Substitute the given mean and standard deviation.",
                   "work": "\\(68.95 + 2(18.45) = 68.95+36.9 = 105.85\\) grams"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q27b",
@@ -1422,7 +1462,8 @@
                   "explain": "The percentage *above* Rahul is the complement of the percentage below him.",
                   "work": "\\(100\\%-16\\% = 84\\%\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q27c",
@@ -1456,7 +1497,8 @@
                   "explain": "Evaluate the division.",
                   "work": "\\(= 4000\\) people"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1502,7 +1544,8 @@
           },
           "dna": {
             "dnaId": "PROB-NORM-01"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "gosford2020-q19",
@@ -1538,7 +1581,8 @@
           },
           "dna": {
             "dnaId": "PROB-NORM-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hg2020-q25",
@@ -1567,7 +1611,8 @@
                   "explain": "Evaluate.",
                   "work": "\\(= 48\\) hours"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q25b",
@@ -1590,7 +1635,8 @@
                   "explain": "Solve for \\(\\sigma\\).",
                   "work": "\\(\\sigma = \\dfrac{12}{4} = 3\\) hours"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hg2020-q25c",
@@ -1617,7 +1663,8 @@
                   "explain": "Evaluate the subtraction and division.",
                   "work": "\\(= \\dfrac{31.7\\%}{2} = 15.85\\%\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1665,7 +1712,8 @@
                   "explain": "Solve for \\(\\mu\\).",
                   "work": "\\(\\mu = 200+9.984 = 209.984 \\approx 209.98\\text{ g}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "hh2020-q33b",
@@ -1688,7 +1736,8 @@
                   "work": "Graph shows shaded region \\([200,210]\\) covering 98% of the area, centred on \\(\\mu=205\\)."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "hh2020-q33c",
@@ -1719,7 +1768,8 @@
                   "explain": "Evaluate and round to 2 decimal places.",
                   "work": "\\(\\sigma \\approx 2.145 \\approx 2.15\\text{ g}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -1771,7 +1821,8 @@
           ],
           "meta": {
             "examPaper": "asc-2020"
-          }
+          },
+          "xp": 3
         }
       ]
     }

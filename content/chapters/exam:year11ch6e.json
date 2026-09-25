@@ -45,7 +45,8 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{secant}| = \\frac{13}{5} \\\\implies \\text{hyp}=13, \\text{adj}=5 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{13^2 - 5^2} = 12 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan \\theta = -\\frac{\\text{opp}}{\\text{adj}} = -\\frac{12}{5} \\]\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6e-q10b",
@@ -84,7 +85,8 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{cosecant}| = \\frac{5}{2} \\\\implies \\text{hyp}=5, \\text{opp}=2 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{adj} = \\sqrt{5^2 - 2^2} = \\sqrt{21} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan B = -\\frac{\\text{opp}}{\\text{adj}} = -\\frac{2}{\\sqrt{21}} \\]\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-6e-q10c",
@@ -123,7 +125,8 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{secant}| = \\sqrt{3} \\\\implies \\text{hyp}=\\sqrt{3}, \\text{adj}=1 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{(\\sqrt{3})^2 - 1^2} = \\sqrt{2} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\cot \\theta = \\frac{\\text{adj}}{\\text{opp}} = \\frac{1}{\\sqrt{2}} \\]\n</div>"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

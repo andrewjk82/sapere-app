@@ -34,7 +34,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{276.43}{0.7743} \\approx \\$357\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q5",
@@ -61,7 +62,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$415 \\times 1.1651 \\approx \\$483.52\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q6",
@@ -88,7 +90,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{500.89}{0.7802} \\approx \\$642\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q10",
@@ -115,7 +118,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$630 \\times 1.0789 \\approx \\$679.72\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q11",
@@ -142,7 +146,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{615.16}{0.6636} \\approx \\$927\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q15",
@@ -169,7 +174,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$845 \\times 0.9960 \\approx \\$841.60\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q16",
@@ -196,7 +202,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{981.60}{0.8099} \\approx \\$1212\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q20",
@@ -223,7 +230,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$1060 \\times 1.2027 \\approx \\$1274.85\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q21",
@@ -250,7 +258,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{1224.25}{0.8178} \\approx \\$1497\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q25",
@@ -277,7 +286,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$375 \\times 1.1149 \\approx \\$418.08\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q26",
@@ -304,7 +314,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{405.77}{0.6972} \\approx \\$582\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q30",
@@ -331,7 +342,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$590 \\times 1.0303 \\approx \\$607.89\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q31",
@@ -358,7 +370,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{609.59}{0.7031} \\approx \\$867\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q35",
@@ -385,7 +398,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$805 \\times 1.0899 \\approx \\$877.40\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q36",
@@ -412,7 +426,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{985.42}{0.8554} \\approx \\$1152\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q40",
@@ -439,7 +454,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$1020 \\times 1.1508 \\approx \\$1173.86\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q41",
@@ -466,7 +482,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{1050.16}{0.7308} \\approx \\$1437\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q45",
@@ -493,7 +510,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$335 \\times 1.0647 \\approx \\$356.66\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q46",
@@ -520,7 +538,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{385.60}{0.7387} \\approx \\$522\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q50",
@@ -547,7 +566,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$550 \\times 1.1275 \\approx \\$620.14\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q61",
@@ -574,7 +594,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{1066.21}{0.7743} \\approx \\$1377\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-1c-high-q66",
@@ -601,7 +622,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{360.45}{0.7802} \\approx \\$462\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q71",
@@ -628,7 +650,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{495.71}{0.6636} \\approx \\$747\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q81",
@@ -655,7 +678,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{1077.04}{0.8178} \\approx \\$1317\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q85",
@@ -682,7 +706,8 @@
               "explain": "Apply the net factor to the original value to find the final price.",
               "work": "\\(\\text{Final Price} = \\$255 \\times 1.1149 \\approx \\$284.30\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q86",
@@ -709,7 +734,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{280.27}{0.6972} \\approx \\$402\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y10-1c-high-q91",
@@ -736,7 +762,8 @@
               "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
               "work": "\\(\\text{Original Price} = \\frac{483.03}{0.7031} \\approx \\$687\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

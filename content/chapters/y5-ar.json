@@ -35,7 +35,8 @@
               "work": "\\(79\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q9b",
@@ -64,7 +65,8 @@
               "work": "\\(93\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q9c",
@@ -93,7 +95,8 @@
               "work": "\\(118\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q9d",
@@ -122,7 +125,8 @@
               "work": "\\(146\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q10a",
@@ -151,7 +155,8 @@
               "work": "\\(22\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q10b",
@@ -180,7 +185,8 @@
               "work": "\\(36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q10c",
@@ -209,7 +215,8 @@
               "work": "\\(40\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q10d",
@@ -242,7 +249,8 @@
               "work": "\\(46\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q13b",
@@ -267,7 +275,8 @@
               "work": "\\(8 + 3 = 11\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q13c",
@@ -292,7 +301,8 @@
               "work": "\\(9 - 2 = 7\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-q13e",
@@ -321,7 +331,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q10a",
@@ -342,7 +353,8 @@
               "work": "\\(1+6=7\\) \\n \\(5+3=8 \\implies 87\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q10b",
@@ -371,7 +383,8 @@
               "work": "\\(62\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q10c",
@@ -392,7 +405,8 @@
               "work": "\\(3+2=5\\) \\n \\(8+4=12 \\implies 125\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q10d",
@@ -421,7 +435,8 @@
               "work": "\\(152\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q11a",
@@ -442,7 +457,8 @@
               "work": "\\(9-3=6\\) \\n \\(7-4=3 \\implies 36\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q11b",
@@ -463,7 +479,8 @@
               "work": "\\(5-2=3\\) \\n \\(8-4=4 \\implies 43\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q11c",
@@ -484,7 +501,8 @@
               "work": "\\(5-5=0\\) \\n \\(9-3=6 \\implies 60\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q11d",
@@ -517,7 +535,8 @@
               "work": "\\(49\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q14a",
@@ -538,7 +557,8 @@
               "work": "\\(13 + 8 = 21\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q14b",
@@ -559,7 +579,8 @@
               "work": "\\(25 - 13 = 12\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l2-q14d",
@@ -584,7 +605,8 @@
               "work": "\\(32 \\div 2 = 16\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q6a",
@@ -617,7 +639,8 @@
               "work": "\\(411\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q6b",
@@ -638,7 +661,8 @@
               "work": "\\(3+4=7\\) \\n \\(2+5=7\\) \\n \\(4+0=4 \\implies 477\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q6c",
@@ -671,7 +695,8 @@
               "work": "\\(1081\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q6d",
@@ -704,7 +729,8 @@
               "work": "\\(1634\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q7a",
@@ -725,7 +751,8 @@
               "work": "\\(9-5=4\\) \\n \\(7-2=5 \\implies 54\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q7b",
@@ -750,7 +777,8 @@
               "work": "\\(14-6=8\\) \\n \\(6-3=3 \\implies 38\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q7c",
@@ -779,7 +807,8 @@
               "work": "\\(12-5=7\\) \\n \\(2-0=2 \\implies 276\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q7d",
@@ -812,7 +841,8 @@
               "work": "\\(576\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q12a",
@@ -841,7 +871,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l3-q12b",
@@ -870,7 +901,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q7a",
@@ -903,7 +935,8 @@
               "work": "\\(1355\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q7b",
@@ -936,7 +969,8 @@
               "work": "\\(1377\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q7c",
@@ -973,7 +1007,8 @@
               "work": "\\(2752\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q7d",
@@ -1010,7 +1045,8 @@
               "work": "\\(12754\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q8a",
@@ -1043,7 +1079,8 @@
               "work": "\\(25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q8b",
@@ -1076,7 +1113,8 @@
               "work": "\\(295\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q8c",
@@ -1109,7 +1147,8 @@
               "work": "\\(385\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q8d",
@@ -1142,7 +1181,8 @@
               "work": "\\(555\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q12b",
@@ -1163,7 +1203,8 @@
               "work": "\\(36 + 47 = 83\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q12d",
@@ -1184,7 +1225,8 @@
               "work": "\\(73 - 14 = 59\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l4-q14b",
@@ -1213,7 +1255,8 @@
               "work": "\\(35\\text{ seconds}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l5-q2",
@@ -1246,7 +1289,8 @@
               "work": "\\(168\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l5-q3",
@@ -1275,7 +1319,8 @@
               "work": "\\(373\\text{ km}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l5-q7",
@@ -1304,7 +1349,8 @@
               "work": "\\(18\\text{ dollars}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l5-q14a",
@@ -1337,7 +1383,8 @@
               "work": "\\(18\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-l5-q14b",
@@ -1366,7 +1413,8 @@
               "work": "\\(18 - 5 = 13\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-1-hard-q6a",
@@ -1395,7 +1443,8 @@
               "work": "\\(1\\ 168 + 2\\ 083 = 3\\ 251\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q6b",
@@ -1432,7 +1481,8 @@
               "work": "\\(1\\ 377\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q6c",
@@ -1461,7 +1511,8 @@
               "work": "\\(7\\ 080 + 1\\ 295 + 94 = 8\\ 375 + 94 = 8\\ 469\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q6d",
@@ -1502,7 +1553,8 @@
               "work": "\\(63\\ 496\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q7a",
@@ -1539,7 +1591,8 @@
               "work": "\\(588\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q7b",
@@ -1576,7 +1629,8 @@
               "work": "\\(364\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q7c",
@@ -1612,7 +1666,8 @@
           "timeLimit": 60,
           "alsoIn": [
             "exam:year5ch2"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q7d",
@@ -1653,7 +1708,8 @@
               "work": "\\(2\\ 165\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q1a",
@@ -1682,7 +1738,8 @@
               "work": "\\(1\\ 823\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q1b",
@@ -1711,7 +1768,8 @@
               "work": "\\(2\\ 531\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q2",
@@ -1740,7 +1798,8 @@
               "work": "\\(60.00 - 28.20 = 31.80\\text{ dollars}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q4",
@@ -1769,7 +1828,8 @@
               "work": "\\(40 \\times (40 + 1) = 40 \\times 41 = 1\\ 640\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q7",
@@ -1802,7 +1862,8 @@
               "work": "\\(11\\ 400\\ 000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q12a",
@@ -1831,7 +1892,8 @@
               "work": "\\(x - 1 = 173\\), \\(x = 174\\), \\(x + 1 = 175\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q12b",
@@ -1860,7 +1922,8 @@
               "work": "\\(x - 2 = 363\\), \\(x = 365\\), \\(x + 2 = 367\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q12c",
@@ -1889,7 +1952,8 @@
               "work": "\\(7 \\times 14 = 98\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q6a_p34",
@@ -1926,7 +1990,8 @@
               "work": "\\(23\\ 273\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q6b_p34",
@@ -1963,7 +2028,8 @@
               "work": "\\(29\\ 457\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q8a",
@@ -1996,7 +2062,8 @@
               "work": "\\(2\\ 107\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q8b",
@@ -2033,7 +2100,8 @@
               "work": "\\(2\\ 485\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q8c",
@@ -2062,7 +2130,8 @@
               "work": "\\(2\\ 657\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q8d",
@@ -2091,7 +2160,8 @@
               "work": "\\(621\\ 629\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-hard-q11",
@@ -2120,7 +2190,8 @@
               "work": "\\(252 \\div 6 = 42\\text{ runs}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l1-q3a",
@@ -2157,7 +2228,8 @@
               "work": "\\\\(\\\\text{Values: } 19, 20; \\\\quad \\\\text{Rule: } B = T + 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q3b",
@@ -2194,7 +2266,8 @@
               "work": "\\\\(\\\\text{Values: } 33, 36; \\\\quad \\\\text{Rule: } B = 3T\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q3c",
@@ -2231,7 +2304,8 @@
               "work": "\\\\(\\\\text{Values: } 31, 32; \\\\quad \\\\text{Rule: } B = T - 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q3d",
@@ -2268,7 +2342,8 @@
               "work": "\\\\(\\\\text{Values: } 5, 4; \\\\quad \\\\text{Rule: } B = T \\\\div 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q3e",
@@ -2305,7 +2380,8 @@
               "work": "\\\\(\\\\text{Values: } 16 \\\\frac{1}{2}, 20 \\\\frac{1}{2}; \\\\quad \\\\text{Rule: } B = T + 4 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q3f",
@@ -2342,7 +2418,8 @@
               "work": "\\\\(\\\\text{Values: } 9.5, 6.5; \\\\quad \\\\text{Rule: } B = T - 1.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4a",
@@ -2379,7 +2456,8 @@
               "work": "\\\\(\\\\text{Missing values} = 11, 12, 13\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4b",
@@ -2416,7 +2494,8 @@
               "work": "\\\\(\\\\text{Missing values} = 27, 28, 29\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4c",
@@ -2453,7 +2532,8 @@
               "work": "\\\\(\\\\text{Missing values} = 15, 13, 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4d",
@@ -2490,7 +2570,8 @@
               "work": "\\\\(\\\\text{Missing values} = 32, 40, 48\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4e",
@@ -2527,7 +2608,8 @@
               "work": "\\\\(\\\\text{Missing values} = 6 \\\\frac{1}{2}, 7 \\\\frac{1}{2}, 8 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l1-q4f",
@@ -2564,7 +2646,8 @@
               "work": "\\\\(\\\\text{Missing values} = 10.5, 13.5, 16.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2a",
@@ -2601,7 +2684,8 @@
               "work": "\\\\(\\text{Missing numbers: } 8\\text{ and } 10; \\quad \\text{Rule: Bottom} = \\text{Top} \\div 2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2b",
@@ -2638,7 +2722,8 @@
               "work": "\\\\(\\text{Missing numbers: } 28\\text{ and } 44; \\quad \\text{Rule: Bottom} = \\text{Top} \\times 4\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2c",
@@ -2675,7 +2760,8 @@
               "work": "\\\\(\\text{Missing numbers: } 12\\text{ and } 17; \\quad \\text{Rule: Bottom} = \\text{Top} - 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2d",
@@ -2712,7 +2798,8 @@
               "work": "\\\\(\\text{Missing numbers: } 18.4\\text{ and } 21.4; \\quad \\text{Rule: Bottom} = \\text{Top} + 3.4\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2e",
@@ -2749,7 +2836,8 @@
               "work": "\\\\(\\text{Missing numbers: } 55\\text{ and } 85; \\quad \\text{Rule: Bottom} = \\text{Top} \\times 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q2f",
@@ -2786,7 +2874,8 @@
               "work": "\\\\(\\text{Missing numbers: } 21\\text{ and } 27; \\quad \\text{Rule: Bottom} = \\text{Top} \\times 1.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3a",
@@ -2823,7 +2912,8 @@
               "work": "\\\\(\\text{Missing values: } 11, 12, 13\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3b",
@@ -2860,7 +2950,8 @@
               "work": "\\\\(\\text{Missing values: } 4 \\\\frac{1}{2}, 5 \\\\frac{1}{2}, 6 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3c",
@@ -2897,7 +2988,8 @@
               "work": "\\\\(\\text{Missing values: } 5, 7, 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3d",
@@ -2934,7 +3026,8 @@
               "work": "\\\\(\\text{Missing values: } 15, 18, 24\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3e",
@@ -2971,7 +3064,8 @@
               "work": "\\\\(\\text{Missing values: } 12.5, 13.5, 16.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q3f",
@@ -3008,7 +3102,8 @@
               "work": "\\\\(\\text{Missing values: } 45, 67, 83\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4a",
@@ -3037,7 +3132,8 @@
               "work": "\\\\(5 + 3 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4b",
@@ -3066,7 +3162,8 @@
               "work": "\\\\(7 \\times 2 = 14\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4c",
@@ -3095,7 +3192,8 @@
               "work": "\\\\(13.7 - 3.5 = 10.2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4d",
@@ -3128,7 +3226,8 @@
               "work": "\\\\(5 \\\\frac{3}{4} - 2 \\\\frac{1}{4} = 3 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4e",
@@ -3157,7 +3256,8 @@
               "work": "\\\\(24 \\div 3 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4f",
@@ -3186,7 +3286,8 @@
               "work": "\\\\(7 \\times 5 = 35\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4g",
@@ -3215,7 +3316,8 @@
               "work": "\\\\(9.4 \\div 2 = 4.7\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4h",
@@ -3244,7 +3346,8 @@
               "work": "\\\\(5.5 + 3.1 = 8.6\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l2-q4i",
@@ -3273,7 +3376,8 @@
               "work": "\\\\(3 \\times 3 = 9\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q1a",
@@ -3309,7 +3413,8 @@
               "work": "\\\\(\\text{Missing values: } 12, 16, 20, 24, 28, 32, 36\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q1b",
@@ -3337,7 +3442,8 @@
               "work": "\\\\(M = D \\times 4\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q1c",
@@ -3369,7 +3475,8 @@
               "work": "\\\\(M = 80\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q2a",
@@ -3405,7 +3512,8 @@
               "work": "\\\\(\\text{Missing values: } 16, 21, 26, 31, 36\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q2b",
@@ -3437,7 +3545,8 @@
               "work": "\\\\(M = 5H + 1\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q2c",
@@ -3469,7 +3578,8 @@
               "work": "\\\\(M = 51\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q3a",
@@ -3506,7 +3616,8 @@
               "work": "\\\\(\\text{Missing numbers: } 17, 18, 21\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q3b",
@@ -3543,7 +3654,8 @@
               "work": "\\\\(\\text{Missing numbers: } 7.2, 8.2, 17.2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q3c",
@@ -3580,7 +3692,8 @@
               "work": "\\\\(\\text{Missing fractions: } \\frac{5}{10}, \\frac{7}{10}, \\frac{9}{10}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q3d",
@@ -3617,7 +3730,8 @@
               "work": "\\\\(\\text{Missing numbers: } 9, 25, 49\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q3e",
@@ -3654,7 +3768,8 @@
               "work": "\\\\(\\text{Missing numbers: } 1.0, 1.5, 2.0\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q3f",
@@ -3691,7 +3806,8 @@
               "work": "\\\\(\\text{Missing fractions: } 4 \\\\frac{1}{4}, 5 \\\\frac{1}{4}, 7 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l3-q4a",
@@ -3720,7 +3836,8 @@
               "work": "\\\\(19 - 12 = 7\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4b",
@@ -3749,7 +3866,8 @@
               "work": "\\\\(1.5 \\times 4 = 6\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4c",
@@ -3778,7 +3896,8 @@
               "work": "\\\\(4.6 + 3.4 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4d",
@@ -3807,7 +3926,8 @@
               "work": "\\\\(12.3 \\div 3 = 4.1\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4e",
@@ -3836,7 +3956,8 @@
               "work": "\\\\(15.3 - 7.3 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4f",
@@ -3865,7 +3986,8 @@
               "work": "\\\\(4.1 \\times 3 = 12.3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4g",
@@ -3898,7 +4020,8 @@
               "work": "\\\\(1 \\frac{1}{2} + 1 \\frac{1}{2} + 1 \\frac{1}{2} = 4 \\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4h",
@@ -3927,7 +4050,8 @@
               "work": "\\\\(12.5 \\div 2 = 6.25\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q4i",
@@ -3956,7 +4080,8 @@
               "work": "\\\\(2.8 + 2.8 = 5.6\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5a",
@@ -3985,7 +4110,8 @@
               "work": "\\\\(13 + 7 = 20\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5b",
@@ -4014,7 +4140,8 @@
               "work": "\\\\(6 \\times 5 = 30\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5c",
@@ -4043,7 +4170,8 @@
               "work": "\\\\(19 - 8 = 11\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5d",
@@ -4072,7 +4200,8 @@
               "work": "\\\\(15 \\div 3 = 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5e",
@@ -4101,7 +4230,8 @@
               "work": "\\\\(6 \\frac{1}{2} + 3 \\frac{1}{2} = 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l3-q5f",
@@ -4130,7 +4260,8 @@
               "work": "\\\\(12.5 - 4.3 = 8.2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l4-q1a",
@@ -4166,7 +4297,8 @@
               "work": "\\\\(\\\\text{Missing perimeters: } 36, 42, 48, 54\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q1b",
@@ -4199,7 +4331,8 @@
               "work": "\\\\(P = 6S + 6\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q1c",
@@ -4232,7 +4365,8 @@
               "work": "\\\\(\\\\text{Matchsticks needed} = 42\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2a",
@@ -4265,7 +4399,8 @@
               "work": "\\\\(\\\\text{Outputs: } 7, 9, 15, 19\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2b",
@@ -4298,7 +4433,8 @@
               "work": "\\\\(\\\\text{Outputs: } 10, 13, 16, 22\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2c",
@@ -4331,7 +4467,8 @@
               "work": "\\\\(\\\\text{Outputs: } 3, 8, 15, 48\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2d",
@@ -4364,7 +4501,8 @@
               "work": "\\\\(\\\\text{Outputs: } 7, 8, 10, 13\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2e",
@@ -4397,7 +4535,8 @@
               "work": "\\\\(\\\\text{Outputs: } 4, 6, 12, 16\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q2f",
@@ -4430,7 +4569,8 @@
               "work": "\\\\(\\\\text{Outputs: } 15 \\\\frac{1}{2}, 20 \\\\frac{1}{2}, 25 \\\\frac{1}{2}, 30 \\\\frac{1}{2}\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3a",
@@ -4463,7 +4603,8 @@
               "work": "\\\\(\\\\text{Rule: } \\\\text{Square} = 3\\\\text{Triangle} + 2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3b",
@@ -4496,7 +4637,8 @@
               "work": "\\\\(\\\\text{Rule: } \\\\text{Square} = 4\\\\text{Triangle} - 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3c",
@@ -4529,7 +4671,8 @@
               "work": "\\\\(\\\\text{Rule: } \\\\text{Hexagon} = \\\\text{Triangle}^2 + 1\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3d",
@@ -4562,7 +4705,8 @@
               "work": "\\\\(\\\\text{Rule: } \\\\text{Hexagon} = \\\\frac{\\\\text{Triangle}}{2} + 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3e",
@@ -4595,7 +4739,8 @@
               "work": "\\\\(\\\\text{Rule: } B = 3A\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q3f",
@@ -4628,7 +4773,8 @@
               "work": "\\\\(\\\\text{Rule: } B = 2A + 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4a",
@@ -4661,7 +4807,8 @@
               "work": "\\\\(3(4) - 2 = 12 - 2 = 10\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4b",
@@ -4694,7 +4841,8 @@
               "work": "\\\\(6(4) + 5 = 24 + 5 = 29\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4c",
@@ -4727,7 +4875,8 @@
               "work": "\\\\(4(0.5) + 3 = 2 + 3 = 5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4d",
@@ -4760,7 +4909,8 @@
               "work": "\\\\(16 \\\\div 5 = 3.2\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4e",
@@ -4793,7 +4943,8 @@
               "work": "\\\\(7 \\\\times 3 \\\\frac{1}{7} = 7 \\\\times \\\\frac{22}{7} = 22\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l4-q4f",
@@ -4826,7 +4977,8 @@
               "work": "\\\\((12 \\\\div 3) + 5 = 4 + 5 = 9\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q1a",
@@ -4859,7 +5011,8 @@
               "work": "\\\\(\\\\text{Total unique handshakes} = 45\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l5-q2a",
@@ -4896,7 +5049,8 @@
               "work": "\\\\(\\\\text{Matches needed} = 130\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-1-l5-q3a",
@@ -4929,7 +5083,8 @@
               "work": "\\\\(19 + 7 = 26\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q3b",
@@ -4962,7 +5117,8 @@
               "work": "\\\\(84 - 11 = 73\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q3c",
@@ -4995,7 +5151,8 @@
               "work": "\\\\(6 \\\\times 9 = 54\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q3d",
@@ -5028,7 +5185,8 @@
               "work": "\\\\(84 \\\\div 7 = 12\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q3e",
@@ -5061,7 +5219,8 @@
               "work": "\\\\(7(6) - 5 = 42 - 5 = 37\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q3f",
@@ -5094,7 +5253,8 @@
               "work": "\\\\((12 \\\\div 3) + 4 = 4 + 4 = 8\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4a",
@@ -5127,7 +5287,8 @@
               "work": "\\\\(\\\\text{Outputs: } 2, 5, 7\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4b",
@@ -5160,7 +5321,8 @@
               "work": "\\\\(\\\\text{Outputs: } 28, 31, 43\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4c",
@@ -5193,7 +5355,8 @@
               "work": "\\\\(\\\\text{Outputs: } 45, 63, 126\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4d",
@@ -5226,7 +5389,8 @@
               "work": "\\\\(\\\\text{Outputs: } 1.75, 2.25, 3\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4e",
@@ -5259,7 +5423,8 @@
               "work": "\\\\(\\\\text{Outputs: } 17, 21, 27\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-1-l5-q4f",
@@ -5292,7 +5457,8 @@
               "work": "\\\\(\\\\text{Outputs: } -3.5, -2, 0.5\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -5325,7 +5491,8 @@
               "work": "\\\\(63 \\\\approx 60\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q8b",
@@ -5351,7 +5518,8 @@
               "work": "\\\\(87 \\\\approx 90\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q8c",
@@ -5377,7 +5545,8 @@
               "work": "\\\\(24 \\\\approx 20\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l2-q9a",
@@ -5402,7 +5571,8 @@
               "work": "\\\\(58 \\\\approx 60\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l2-q9b",
@@ -5427,7 +5597,8 @@
               "work": "\\\\(94 \\\\approx 90\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l2-q9c",
@@ -5453,7 +5624,8 @@
               "work": "\\\\(35 \\\\approx 40\\\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l3-q5a",
@@ -5483,7 +5655,8 @@
               "work": "\\(749 \\approx 700\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l3-q5b",
@@ -5508,7 +5681,8 @@
               "work": "\\(751 \\text{ is closer to } 800 \\implies 751 \\approx 800\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l3-q5c",
@@ -5530,7 +5704,8 @@
               "work": "\\(750 \\approx 800\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l3-q5d",
@@ -5556,7 +5731,8 @@
               "work": "\\(1432 \\approx 1400\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-l3-q5e",
@@ -5582,7 +5758,8 @@
               "work": "\\(1751 \\approx 1800\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-hard-q3a",
@@ -5612,7 +5789,8 @@
               "work": "\\(600 + 700 = 1\\ 300\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-2-hard-q3b",
@@ -5642,7 +5820,8 @@
               "work": "\\(800 - 400 = 400\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-2-hard-q3c",
@@ -5671,7 +5850,8 @@
               "work": "\\(6\\ 400 + 3\\ 100 = 9\\ 500\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-2-hard-q3d",
@@ -5701,7 +5881,8 @@
               "work": "\\(5\\ 900 - 1\\ 600 = 4\\ 300\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-2-hard-q4a",
@@ -5730,7 +5911,8 @@
               "work": "\\(580 + 320 = 900\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-2-q2a",
@@ -5764,7 +5946,8 @@
               "work": "\\(\\text{Rounded amount} = \\$12.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q2b",
@@ -5798,7 +5981,8 @@
               "work": "\\(\\text{Rounded price} = \\$6.85\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q2c",
@@ -5832,7 +6016,8 @@
               "work": "\\(\\text{Rounded amount} = \\$9.35\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q2d",
@@ -5866,7 +6051,8 @@
               "work": "\\(\\text{Rounded price} = \\$4.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-2-q2a-l2",
@@ -5900,7 +6086,8 @@
               "work": "\\(\\text{Rounded total} = \\$130.25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-2-q2b-l2",
@@ -5934,7 +6121,8 @@
               "work": "\\(\\text{Rounded total} = \\$16.80\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-2-q2c-l2",
@@ -5968,7 +6156,8 @@
               "work": "\\(\\text{Rounded price} = \\$19.25\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-2-q2d-l2",
@@ -6002,7 +6191,8 @@
               "work": "\\(\\text{Rounded total} = \\$54.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-2-q5b-l3",
@@ -6040,7 +6230,8 @@
               "work": "\\(\\text{Rounded Change} = \\$7.15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -6081,7 +6272,8 @@
               "work": "\\(\\text{Total Cost} = \\$37.28\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1b",
@@ -6115,7 +6307,8 @@
               "work": "\\(\\text{Change} = \\$4.60\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1c",
@@ -6149,7 +6342,8 @@
               "work": "\\(1740\\text{ cents} = \\$17.40\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1d",
@@ -6183,7 +6377,8 @@
               "work": "\\(172\\text{ cents} = \\$1.72\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1e",
@@ -6217,7 +6412,8 @@
               "work": "\\(7386\\text{ cents} = \\$73.86\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1f",
@@ -6251,7 +6447,8 @@
               "work": "\\(357\\text{ cents} = \\$3.57\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1g",
@@ -6281,7 +6478,8 @@
               "work": "\\(362.7 = \\$362.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1h",
@@ -6311,7 +6509,8 @@
               "work": "\\(\\text{Station Share} = \\$2.93\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-3-q1a-l2",
@@ -6349,7 +6548,8 @@
               "work": "\\(\\text{Total Sum} = \\$142.70\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q1b-l2",
@@ -6387,7 +6587,8 @@
               "work": "\\(\\text{Remaining} = \\$83.17\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q1c-l2",
@@ -6421,7 +6622,8 @@
               "work": "\\(4215\\text{ cents} = \\$42.15\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q1d-l2",
@@ -6455,7 +6657,8 @@
               "work": "\\(480\\text{ cents} = \\$4.80\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q1e-l2",
@@ -6485,7 +6688,8 @@
               "work": "\\(172.3 = \\$172.30\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q1f-l2",
@@ -6515,7 +6719,8 @@
               "work": "\\(3.8 = \\$3.80\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-3-q5a-l3",
@@ -6549,7 +6754,8 @@
               "work": "\\(\\text{Total Spent} = \\$3.96 + \\$8.22 + \\$10.65 = \\$22.83\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         }
       ]
     },
@@ -6586,7 +6792,8 @@
               "work": "\\(\\text{New Balance} = \\$278.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q4b",
@@ -6616,7 +6823,8 @@
               "work": "\\(\\text{New Balance} = \\$350.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q4c",
@@ -6646,7 +6854,8 @@
               "work": "\\(\\text{New Balance} = \\$217.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q5",
@@ -6680,7 +6889,8 @@
               "work": "\\(\\text{Net Wage} = \\$291.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q6",
@@ -6714,7 +6924,8 @@
               "work": "\\(\\text{Net Profit} = \\$96.00 - \\$23.00 = \\$73.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q7",
@@ -6748,7 +6959,8 @@
               "work": "\\(\\text{Leftover} = \\$134.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q8",
@@ -6782,7 +6994,8 @@
               "work": "\\(\\text{Total Savings} = \\$2010.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q4a-l2",
@@ -6816,7 +7029,8 @@
               "work": "\\(\\text{New Balance} = \\$424.45\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q4b-l2",
@@ -6850,7 +7064,8 @@
               "work": "\\(\\text{New Balance} = \\$480.23\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q4c-l2",
@@ -6884,7 +7099,8 @@
               "work": "\\(\\text{New Balance} = \\$187.71\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q5-l2",
@@ -6918,7 +7134,8 @@
               "work": "\\(\\text{Net Wage} = \\$440.47\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q6a-l2",
@@ -6948,7 +7165,8 @@
               "work": "\\(\\text{Revenue} = \\$3750.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q6b-l2",
@@ -6978,7 +7196,8 @@
               "work": "\\(\\text{Expenses} = \\$1950.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q6c-l2",
@@ -7012,7 +7231,8 @@
               "work": "\\(\\text{Net Profit} = \\$1800.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1a-l3",
@@ -7045,7 +7265,8 @@
               "work": "\\(\\text{Total Payable} = \\$130.00 + \\$13.00 = \\$143.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1c-l3",
@@ -7082,7 +7303,8 @@
               "work": "\\(\\text{Sum of base prices} = \\$130.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1d-l3",
@@ -7112,7 +7334,8 @@
               "work": "\\(\\text{Invoice Number} = 38546\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q2a-l3",
@@ -7146,7 +7369,8 @@
               "work": "\\(\\text{Net Profit} = \\$394.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q2b-l3",
@@ -7184,7 +7408,8 @@
               "work": "\\(\\text{Net Profit} = \\$280.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q2c-l3",
@@ -7214,7 +7439,8 @@
               "work": "\\(\\text{Net Profit} = \\$465.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q2d-l3",
@@ -7248,7 +7474,8 @@
               "work": "\\(\\text{Total Profit} = \\$1139.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q2e-l3",
@@ -7278,7 +7505,8 @@
               "work": "\\(\\text{Difference} = \\$71.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q4-l3",
@@ -7316,7 +7544,8 @@
               "work": "\\(\\text{Change} = \\$100.00 - \\$82.24 = \\$17.76\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-4-q1a-l4",
@@ -7349,7 +7578,8 @@
               "work": "\\(\\text{Est. Net Income} = \\$320.00 - \\$263.00 = \\$57.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-4-q1b-l4",
@@ -7382,7 +7612,8 @@
               "work": "\\(\\text{Actual Net Income} = \\$295.00 - \\$278.00 = \\$17.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y5-ar-4-q1c-l4",
@@ -7415,7 +7646,8 @@
               "work": "\\(\\$25.00 > \\$10.00 > \\$5.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1d-l4",
@@ -7448,7 +7680,8 @@
               "work": "\\(\\text{Savings} = \\$35.00 - \\$0.00 = \\$35.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1e-l4",
@@ -7477,7 +7710,8 @@
               "work": "\\(\\text{Actual Amount} = \\text{NIL}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q1f-l4",
@@ -7506,7 +7740,8 @@
               "work": "\\(\\text{Estimate} = \\$30.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y5-ar-4-q1g-l4",
@@ -7535,7 +7770,8 @@
               "work": "\\(\\text{Net Income shortfall} = \\$40.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q1h-l4",
@@ -7564,7 +7800,8 @@
               "work": "\\(\\text{Wages Increase} = \\$215.00 - \\$190.00 = \\$25.00\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y5-ar-4-q3-l4",
@@ -7594,7 +7831,8 @@
               "work": "\\(\\text{Final Balance} = \\$634.00 - \\$234.68 = \\$399.32\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     }

@@ -36,7 +36,8 @@
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sg2022-q6b",
@@ -80,7 +81,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             },
             {
               "id": "sg2022-q6b-ii",
@@ -122,7 +124,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             }
           ],
           "options": [
@@ -187,7 +190,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pb2-q5b",
@@ -216,7 +220,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -260,7 +265,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -316,7 +322,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 3
             },
             {
               "id": "sg2022-q6c-ii",
@@ -350,7 +357,8 @@
                 "school": "Sydney Grammar School",
                 "examType": "Annual Examination",
                 "grade": "9"
-              }
+              },
+              "xp": 2
             }
           ],
           "meta": {
@@ -407,7 +415,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -443,7 +452,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t2q3b",
@@ -480,7 +490,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t2q3c",
@@ -525,7 +536,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t2q6",
@@ -573,7 +585,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-killara-24-t4-pc-t2q8",
@@ -614,7 +627,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q6b",
@@ -643,7 +657,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q6c",
@@ -672,7 +687,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q6d",
@@ -709,7 +725,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q7a",
@@ -742,7 +759,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q7b",
@@ -771,7 +789,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q7c",
@@ -808,7 +827,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y9-willoughby-17-y-pb-q7d",
@@ -835,7 +855,8 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y9-willoughby-19-t4q1",
@@ -866,7 +887,8 @@
                   "explain": "Every term with $x$ becomes $0$, leaving only the constant.",
                   "work": "\\(y = 0 - 0 - 8 = -8\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t4q1b",
@@ -892,7 +914,8 @@
                   "explain": "Apply the null factor law: either bracket can equal zero.",
                   "work": "\\(x - 4 = 0 \\text{ or } x + 2 = 0 \\implies x = 4, -2\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t4q1c",
@@ -918,7 +941,8 @@
                   "explain": "Check using the axis-of-symmetry formula $x = \\frac{-b}{2a}$ from $y=x^2-2x-8$ (where $a=1,b=-2$).",
                   "work": "\\(x = \\frac{-(-2)}{2(1)} = \\frac{2}{2} = 1\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t4q1d",
@@ -948,7 +972,8 @@
                   "explain": "Combine into a coordinate pair.",
                   "work": "\\((1, -9)\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -998,7 +1023,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-17e"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1046,7 +1072,8 @@
             "school": "Killara High School",
             "examType": "Task 4",
             "grade": "9"
-          }
+          },
+          "xp": 2
         }
       ]
     }

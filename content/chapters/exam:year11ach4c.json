@@ -40,7 +40,8 @@
               "work": "\\(4, two rational roots\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q2b",
@@ -74,7 +75,8 @@
               "work": "\\(40, two irrational roots\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q2c",
@@ -108,7 +110,8 @@
               "work": "\\(-16, no real roots\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q2d",
@@ -142,7 +145,8 @@
               "work": "\\(0, one double rational root\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q2e",
@@ -176,7 +180,8 @@
               "work": "\\(-3, no real roots\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q2f",
@@ -210,7 +215,8 @@
               "work": "\\(361, two rational roots\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y11a-4c-q3b",
@@ -239,7 +245,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q3c",
@@ -273,7 +280,8 @@
               "work": "\\(-2/3\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4c-q3d",
@@ -307,7 +315,8 @@
               "work": "\\(11\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

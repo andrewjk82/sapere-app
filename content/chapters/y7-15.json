@@ -34,7 +34,8 @@
           "timeLimit": 60,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-eq-1b",
@@ -62,7 +63,8 @@
           "timeLimit": 60,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "2IpTJMcqvA45xGjph4gl",
@@ -90,7 +92,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(n = 12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "3VCQGRNFnpRFvQPtBACD",
@@ -118,7 +121,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(12x + 18 = 378\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "5OLajbrcWcsk0za1LO6f",
@@ -146,7 +150,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(8n = 96\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "8SOK2UZ5GrHXp53WJ2hb",
@@ -174,7 +179,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "9iQj7JXO1W9cduNrYGrx",
@@ -202,7 +208,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 32\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "53BWnLQL10wmGZabBsET",
@@ -230,7 +237,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 12\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "aCHI13yJZ3NxMn8SN6eY",
@@ -258,7 +266,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 19\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "aJFUv8nvEsnyLjlMriZp",
@@ -286,7 +295,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 7\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "BI1MdAQzMepevH0HVfLF",
@@ -314,7 +324,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 30\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "BTgE3kJnYeqhcePOGfnU",
@@ -342,7 +353,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 48\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "d4HEUCYsbxHHV59fpbb3",
@@ -370,7 +382,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "DfbUBeHJqtcAHFzvoVIP",
@@ -398,7 +411,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(7c + 9 = 149\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "dVGdBjSWMJxIyRthk8sh",
@@ -426,7 +440,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 90\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "e2aDYBd0NCFZQa3miUMf",
@@ -454,7 +469,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 15\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "H7iO9lnLF6TpTlO0cK4r",
@@ -482,7 +498,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "J8d1z8Wp2rfSSQ6a3n5D",
@@ -510,7 +527,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 35\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "JIJTdIucFOw9E6GKV3Lm",
@@ -538,7 +556,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "KetTkUfuvKeN93KLVMEO",
@@ -566,7 +585,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 8\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "laxL6uvQXfpyueRnkKTR",
@@ -594,7 +614,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(28 - x = 19\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "Lq3zJMVHxyqVyv7Ksdk9",
@@ -622,7 +643,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 23\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "LVZZ6rgnL7EMWjQ2REhN",
@@ -650,7 +672,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 4.5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "LZVPB8hfCSax5clmnymP",
@@ -678,7 +701,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "N4UgC3pQhgw9dnWXDUPL",
@@ -706,7 +730,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(10 pencils\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "OH9jrrJqtV3bACCmjdoP",
@@ -734,7 +759,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "OtCfYNpC5AlghSr3ZOuv",
@@ -762,7 +788,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(c = 20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "oVRVa4IsueChizcAYhTE",
@@ -790,7 +817,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "PBZwvCliom7COu19Em3P",
@@ -818,7 +846,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 8\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "s3cKrBXejP3JJjU3kuI7",
@@ -846,7 +875,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(4x + 6 = 46\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "sCGnvXkvb0bGY05fI3HS",
@@ -874,7 +904,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 25\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "T3NtD58407B7BgAH7RpZ",
@@ -902,7 +933,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 4\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "voGOJBhTqmIn4qx8v8P9",
@@ -930,7 +962,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 32\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Vrf7zt9QS8bzBPvn7ZOi",
@@ -958,7 +991,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 18\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "w2TypDtp8FHuNKmgTddg",
@@ -986,7 +1020,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(18a + 25 = 475\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "xgpYOOOPI7aPItaOOAoy",
@@ -1014,7 +1049,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "Yc7A5PQsDMIUAoEUAtaJ",
@@ -1042,7 +1078,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(x = 5\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "ZdaITMrR6QhOzndvTFos",
@@ -1070,7 +1107,8 @@
               "explain": "State the final simplified answer and match it to the correct option.",
               "work": "\\(a = 29\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-e1a",
@@ -1090,7 +1128,8 @@
               "explain": "Subtract 12 from both sides.",
               "work": "\\(p=30-12=18\\)"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -1128,7 +1167,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs2026-e2",
@@ -1156,7 +1196,8 @@
               "explain": "Both sides equal 5, so \\(M=9\\) is indeed a solution.",
               "work": "\\(\\text{LHS}=\\text{RHS}=5\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1194,7 +1235,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q11",
@@ -1226,7 +1268,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2021-q22a-iii",
@@ -1258,7 +1301,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2021-q22a-iv",
@@ -1294,7 +1338,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-eq-1c",
@@ -1322,7 +1367,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-eq-1d",
@@ -1349,7 +1395,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-eq-1f",
@@ -1376,7 +1423,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs2026-e1b",
@@ -1400,7 +1448,8 @@
               "explain": "Divide both sides by 5.",
               "work": "\\(x=9\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-e1c",
@@ -1424,7 +1473,8 @@
               "explain": "Subtract 2 from both sides.",
               "work": "\\(m=31\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "hghs2026-e1e",
@@ -1444,7 +1494,8 @@
               "explain": "Take the square root of both sides — remember both the positive and negative root satisfy the equation.",
               "work": "\\(x=\\pm\\sqrt{81}=\\pm9\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1488,7 +1539,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -1526,7 +1578,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs2026-e1d",
@@ -1550,7 +1603,8 @@
               "explain": "Add 4 to both sides.",
               "work": "\\(x=8\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1594,7 +1648,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs-y7-t4-2024-eq-1e",
@@ -1626,7 +1681,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs2026-e4",
@@ -1654,7 +1710,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\(x=3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "hghs2026-wm1",
@@ -1682,7 +1739,8 @@
               "explain": "Add 11 to both sides, then divide by 2.",
               "work": "\\(12=2x \\Rightarrow x=6\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1721,7 +1779,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "hghs2026-e3",
@@ -1749,7 +1808,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\(l=4\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }

@@ -31,7 +31,8 @@
                   "explain": "Divide by 4 since a square has 4 equal sides.",
                   "work": "\\text{Side length} = \\frac{x}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q10aii",
@@ -53,7 +54,8 @@
                   "explain": "Divide by 4.",
                   "work": "\\text{Side length} = \\frac{16 - x}{4}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q10b",
@@ -79,7 +81,8 @@
                   "explain": "Factor out 2.",
                   "work": "A = \\frac{2(x^2 - 16x + 128)}{16} = \\frac{1}{8}(x^2 - 16x + 128)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q10c",
@@ -101,7 +104,8 @@
                   "explain": "Find stationary point.",
                   "work": "\\frac{1}{4}(x - 8) = 0 \\implies x = 8"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-3g-q10d",
@@ -119,7 +123,8 @@
                   "explain": "Substitute \\( x = 8 \\) into \\( A \\).",
                   "work": "A = \\frac{1}{8}(8^2 - 16(8) + 128) = \\frac{1}{8}(64 - 128 + 128) = \\frac{64}{8} = 8 \\text{ cm}^2"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "0"
@@ -158,7 +163,8 @@
                   "explain": "The volume of the box is given by \\(V = \\text{length} \\times \\text{width} \\times \\text{height} = xyh\\). Substitute the expression for \\(xy\\) into the volume formula.",
                   "work": "\\(V = (216 - 24h)h = 216h - 24h^2 \\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y12a-3g-q18bi",
@@ -184,7 +190,8 @@
                   "explain": "Confirm this gives a maximum by checking the second derivative.",
                   "work": "\\(\\dfrac{d^2V}{dh^2} = -48 < 0 \\implies\\) maximum \\(\\checkmark\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q18bii",
@@ -214,7 +221,8 @@
                   "explain": "The question states that the length \\(x\\) is greater than or equal to the width \\(y\\). Therefore, \\(x\\) must be the larger value.",
                   "work": "\\(\\text{Since } x \\ge y, \\text{ we choose } x = 18 \\text{ m.}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q18biii",
@@ -232,7 +240,8 @@
                   "explain": "Substitute \\(x = 18\\) back into \\(x + y = 24\\) to find \\(y\\).",
                   "work": "\\(18 + y = 24 \\implies y = 6\\) m"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "0",
@@ -268,7 +277,8 @@
                   "explain": "Solve for \\( y \\).",
                   "work": "y - 4 = \\frac{50}{x - 2} \\implies y = 4 + \\frac{50}{x - 2}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y12a-3g-q21b",
@@ -286,7 +296,8 @@
                   "explain": "Total area.",
                   "work": "A = xy = x\\left(4 + \\frac{50}{x - 2}\\right) = \\frac{4x(x - 2) + 50x}{x - 2} = \\frac{4x^2 - 8x + 50x}{x - 2} = \\frac{4x^2 + 42x}{x - 2}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y12a-3g-q21c",
@@ -316,7 +327,8 @@
                   "explain": "Final result.",
                   "work": "\\frac{4(x^2 - 4x - 21)}{(x - 2)^2}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q21di",
@@ -334,7 +346,8 @@
                   "explain": "Find stationary point.",
                   "work": "\\frac{dA}{dx} = 0 \\implies x = 7 \\text{ (since } x>0)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-3g-q21dii",
@@ -352,7 +365,8 @@
                   "explain": "Substitute \\( x = 7 \\) into \\( y \\).",
                   "work": "y = 4 + \\frac{50}{7 - 2} = 4 + \\frac{50}{5} = 4 + 10 = 14"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "0",

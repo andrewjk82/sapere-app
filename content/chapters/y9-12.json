@@ -37,7 +37,8 @@
                   "explain": "Simplify the fraction by dividing numerator and denominator by their common factor, $2$.",
                   "work": "\\(\\frac{38 \\div 2}{100 \\div 2} = \\frac{19}{50}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t7q1b",
@@ -63,7 +64,8 @@
                   "explain": "Simplify by dividing numerator and denominator by $4$.",
                   "work": "\\(\\frac{8 \\div 4}{100 \\div 4} = \\frac{2}{25}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y9-willoughby-19-t7q1c",
@@ -89,7 +91,8 @@
                   "explain": "Calculate: $\\frac{6 \\times 800}{100} = \\frac{4800}{100}$.",
                   "work": "\\(= 48 \\text{ boxes}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -135,7 +138,8 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-12d"
-          }
+          },
+          "xp": 2
         }
       ]
     }

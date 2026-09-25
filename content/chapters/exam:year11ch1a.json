@@ -43,7 +43,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(x^4 - 2 + \\frac{1}{x^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "11ae84244b8aa2a3e82b279a8906422f",
@@ -76,7 +77,8 @@
               "explain": "Combine to give the final simplified expression.",
               "work": "\\(8a^3 + 27b^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "173915e09f765549ebf4ac727e1c31a3",
@@ -113,7 +115,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(a^4 + 6 + \\frac{9}{a^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "1b81dda55f85ab640214ef848ce88887",
@@ -146,7 +149,8 @@
               "explain": "Combine to give the final simplified expression.",
               "work": "\\(8k^3 - 125\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "1d878044fafb2233b9bf1871293f844a",
@@ -183,7 +187,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(9a^2 + 2 + \\frac{1}{9a^2}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "218f468e597a23ba218d1b965f78ac4a",
@@ -216,7 +221,8 @@
               "explain": "Combine to give the final simplified expression.",
               "work": "\\(x^3 + 8y^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "25292ed7b12208eefa2308b913b66284",
@@ -253,7 +259,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(p^4 + 8 + \\frac{16}{p^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "2623d16268a367abc83eec2ce8e3a808",
@@ -290,7 +297,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "285ac4c17dab3b4b06a2cf2561ffe8bc",
@@ -323,7 +331,8 @@
               "explain": "Combine to give the final simplified expression.",
               "work": "\\(a^6 + b^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "28b668b8ea9d68284275dfb9c0cd899e",
@@ -360,7 +369,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(m^4 + 4 + \\frac{4}{m^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "2f6f780cdaff54742f802391871d7f27",
@@ -393,7 +403,8 @@
               "explain": "Evaluate the cubes: t³ and 125.",
               "work": "= t^3 + 125"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "32920bf54887429d7349a118ec17bbe2",
@@ -434,7 +445,8 @@
               "explain": "Combine all terms: 16m² - 2 + 1/(16m²).",
               "work": "= 16m^2 - 2 + \\frac{1}{16m^2}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "33e8e3887bc40446da6bc748d4eb48bc",
@@ -467,7 +479,8 @@
               "explain": "Evaluate the cubes: (x²)³ = x⁶ and 1³ = 1.",
               "work": "= x^6 - 1"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "3519b72b8eb9941ff3b42b06371560a3",
@@ -508,7 +521,8 @@
               "explain": "Combine all terms: 25x² + 2 + 1/(25x²).",
               "work": "= 25x^2 + 2 + \\frac{1}{25x^2}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "3e9e6f5e2a915b6a7a28cf83427eac67",
@@ -541,7 +555,8 @@
               "explain": "Evaluate the cubes: (3m)³ = 27m³ and 2³ = 8.",
               "work": "= 27m^3 + 8"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "48fdb8e005e1815c03690adfa9295cd8",
@@ -582,7 +597,8 @@
               "explain": "Combine all terms: y⁸ - 2 + 1/y⁸.",
               "work": "= y^8 - 2 + \\frac{1}{y^8}"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "541254c774322eaa3863e74f0cd9a31b",
@@ -611,7 +627,8 @@
               "explain": "Rewrite in standard form.",
               "work": "\\(= x^6 - 4 + \\frac{4}{x^6}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "54ad7c3b1fcb6e37da867bce8cb9973d",
@@ -640,7 +657,8 @@
               "explain": "All terms are now simplified. This is the final answer.",
               "work": "\\(= x^4 + 2 + \\frac{1}{x^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "6625701025b0f59a1353d11b8e97d2fb",
@@ -677,7 +695,8 @@
               "explain": "The middle terms cancel to give the final result.",
               "work": "\\(= x^3 + 27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "6f11828461d59918658b1ce9684cdfee",
@@ -714,7 +733,8 @@
               "explain": "The middle terms cancel to give the final result.",
               "work": "\\(= y^3 - 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "8180c153c3fa3e75f9c3ed3b10dab619",
@@ -743,7 +763,8 @@
               "explain": "Calculate the cubes: \\((a)^3 = a^3\\) and \\((4)^3 = 64\\).",
               "work": "\\(= a^3 + 64\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "8fda8af26c79eaae282af61b19bb6c64",
@@ -772,7 +793,8 @@
               "explain": "Calculate the cubes.",
               "work": "\\(= x^3 - 8\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "8fe44db1d9f71b29550b1aec86953a93",
@@ -801,7 +823,8 @@
               "explain": "Calculate the cubes: \\((4y)^3 = 64y^3\\) and \\((3)^3 = 27\\).",
               "work": "\\(= 64y^3 - 27\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "9c330c8a29bcd02a5c3e5bd9bb767876",
@@ -830,7 +853,8 @@
               "explain": "Simplify each term: \\((2x)^2 = 4x^2\\), \\(2(2x)(\\frac{3}{2x}) = 6\\), \\((\\frac{3}{2x})^2 = \\frac{9}{4x^2}\\).",
               "work": "\\(= 4x^2 - 6 + \\frac{9}{4x^2}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "b95551a331c1f79d6004faea9ab095d2",
@@ -859,7 +883,8 @@
               "explain": "Combine the simplified terms.",
               "work": "\\(= x^4 - 10 + \\frac{25}{x^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "c74ab9663795b54a6beb6c4df6c735e0",
@@ -888,7 +913,8 @@
               "explain": "Calculate the cubes: (2x)³ = 8x³ and 1³ = 1.",
               "work": "\\(= 8x^3 - 1\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "ce171b80f1e9031b8fcdc2516f86c7a8",
@@ -917,7 +943,8 @@
               "explain": "Combine like terms: p²q terms cancel, pq² terms cancel, leaving p³ - q³.",
               "work": "\\(= p^3 - q^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "d88c5b48aee9daeef75738a4deb8ff22",
@@ -946,7 +973,8 @@
               "explain": "Calculate the cubes: (3u)³ = 27u³ and v³ = v³.",
               "work": "\\(= 27u^3 - v^3\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "e77a551ce169321aab44d54da80b29f0",
@@ -975,7 +1003,8 @@
               "explain": "Simplify: 2 × 2a² × (3/a²) = 12.",
               "work": "\\(= 4a^4 + 12 + \\frac{9}{a^4}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "f1e5b02aa7fc26ae9cbf63140f404f2b",
@@ -1012,7 +1041,8 @@
               "explain": "Combine all terms into the final simplified expression.",
               "work": "\\(y^6 + 2 + \\frac{1}{y^6}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q11",
@@ -1047,7 +1077,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q12",
@@ -1082,7 +1113,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q13",
@@ -1117,7 +1149,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q14",
@@ -1152,7 +1185,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q15",
@@ -1187,7 +1221,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q16",
@@ -1222,7 +1257,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q17",
@@ -1257,7 +1293,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q18",
@@ -1292,7 +1329,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q19",
@@ -1327,7 +1365,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q20",
@@ -1362,7 +1401,8 @@
               "explain": "State the final expanded form.",
               "work": "= \\(1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q31",
@@ -1390,7 +1430,8 @@
               "explain": "Apply the sum of cubes formula directly.",
               "work": "\\((2x^2)^3 + (y^2)^3 = 8x^6 + y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q32",
@@ -1418,7 +1459,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((3x^2)^3 + (2y^2)^3 = 27x^6 + 8y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q33",
@@ -1446,7 +1488,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((4x^2)^3 + (3y^2)^3 = 64x^6 + 27y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q34",
@@ -1474,7 +1517,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((5x^2)^3 + (4y^2)^3 = 125x^6 + 64y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q35",
@@ -1502,7 +1546,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((6x^2)^3 + (5y^2)^3 = 216x^6 + 125y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q36",
@@ -1530,7 +1575,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((7x^2)^3 + (6y^2)^3 = 343x^6 + 216y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q37",
@@ -1558,7 +1604,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((8x^2)^3 + (7y^2)^3 = 512x^6 + 343y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q38",
@@ -1586,7 +1633,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((9x^2)^3 + (8y^2)^3 = 729x^6 + 512y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q39",
@@ -1614,7 +1662,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((10x^2)^3 + (9y^2)^3 = 1000x^6 + 729y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q40",
@@ -1642,7 +1691,8 @@
               "explain": "Apply the sum of cubes formula: A³ + B³.",
               "work": "\\((11x^2)^3 + (10y^2)^3 = 1331x^6 + 1000y^6\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11-1a-high-q61",
@@ -1678,7 +1728,8 @@
               "explain": "Combine all three terms: A² - 2AB + B².",
               "work": "\\(2x^2 - 6 + \\frac{9}{2x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q62",
@@ -1714,7 +1765,8 @@
               "explain": "Combine all three terms: A² - 2AB + B².",
               "work": "\\(3x^2 - 8 + \\frac{16}{3x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q63",
@@ -1750,7 +1802,8 @@
               "explain": "Combine all three terms: A² - 2AB + B².",
               "work": "\\(4x^2 - 10 + \\frac{25}{4x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q64",
@@ -1777,7 +1830,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 5x^2 - 12 + \\frac{36}{5x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q65",
@@ -1804,7 +1858,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 6x^2 - 14 + \\frac{49}{6x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q66",
@@ -1831,7 +1886,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 7x^2 - 16 + \\frac{64}{7x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q67",
@@ -1858,7 +1914,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 8x^2 - 18 + \\frac{81}{8x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q68",
@@ -1885,7 +1942,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 9x^2 - 20 + \\frac{100}{9x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q69",
@@ -1912,7 +1970,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 10x^2 - 22 + \\frac{121}{10x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         },
         {
           "id": "y11-1a-high-q70",
@@ -1939,7 +1998,8 @@
               "explain": "Simplify the radical products and fractional powers.",
               "work": "\\(= 11x^2 - 24 + \\frac{144}{11x^2}\\)"
             }
-          ]
+          ],
+          "xp": 4
         }
       ]
     }

@@ -36,7 +36,8 @@
               "explain": "$7x + 2 = 24 \\Rightarrow 7x = 22 \\Rightarrow x = 22/7 \\approx 3.14$\nWait, checking math: $7x = 22 \\Rightarrow x = 3.142...$ (or $\\frac{22}{7}$)."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "8xqXcCMZ88qoFKCAu7f6",
@@ -56,7 +57,8 @@
               "explain": "Step 1: Multiply by $6$.\n$3k + 2k = 30 \\Rightarrow 5k = 30 \\Rightarrow k = 6$"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "C5MBKageuImwwlWBV00I",
@@ -71,7 +73,8 @@
           ],
           "answer": 0,
           "solution": "Step 1: Perfect square trinomial $A^2 - 2AB + B^2\\\\$\nStep 2: $A = 3m, B = 2n\\\\$\nStep 3: Check: $2(3m)(2n) = 12mn\\\\$ Matches.\nResult: $(3m-2n)^2$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "CBncmOEmUKGSBiqCxOr3",
@@ -97,7 +100,8 @@
               "explain": "Simplify numerator: $x - x + 2 = 2$.\nResult: $\\frac{2}{x^2-4}$"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "TLWwWcxH4vZZZ04R4DMg",
@@ -106,7 +110,8 @@
           "stem": "Find a number such that if $4, 12$ and $28$ are added separately to it, the product of the first and third results is equal to the square of the second.",
           "answer": "4",
           "solution": "Step 1: Let the number be $x$.$\\\\$\nStep 2: Results are $(x+4), (x+12),$ and $(x+28)$.$\\\\$\nStep 3: Equation:\n$$(x+4)(x+28) = (x+12)^2$$\nStep 4: Expand:\n$$x^2 + 32x + 112 = x^2 + 24x + 144$$\nStep 5: Solve for $x$:\n$$32x - 24x = 144 - 112 \\Rightarrow 8x = 32 \\Rightarrow x = 4$$",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         }
       ]
     },
@@ -145,7 +150,8 @@
               "explain": "Combine the expanded terms to write the final simplified expression.",
               "work": "\\\\(4x + 28\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-2",
@@ -177,7 +183,8 @@
               "explain": "Combine the results to write the final expanded expression.",
               "work": "\\\\(-6a + 15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-3",
@@ -209,7 +216,8 @@
               "explain": "Combine the terms to get the expanded expression for the area in square meters.",
               "work": "\\\\(\\text{Area} = 10x + 15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-4",
@@ -241,7 +249,8 @@
               "explain": "Combine these terms to write the final simplified polynomial.",
               "work": "\\\\(x^2 - 6x\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-5",
@@ -273,7 +282,8 @@
               "explain": "Combine the like terms 3x and 2x to form the final simplified expression.",
               "work": "\\\\(3x + 2x + 12 = 5x + 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-6",
@@ -305,7 +315,8 @@
               "explain": "Combine the terms to write the final expanded polynomial.",
               "work": "\\\\(15a - 5a^2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-7",
@@ -337,7 +348,8 @@
               "explain": "Combine the like terms 7y and -3y.",
               "work": "\\\\(7y - 3y - 14 = 4y - 14\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-8",
@@ -373,7 +385,8 @@
               "explain": "Combine the middle like terms 3x and 2x to write the final quadratic expression.",
               "work": "\\\\(x^2 + 5x + 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-9",
@@ -405,7 +418,8 @@
               "explain": "Write the final simplified quadratic trinomial.",
               "work": "\\\\(m^2 + m - 20\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-10",
@@ -433,7 +447,8 @@
               "explain": "Apply the pattern to compute the final expanded expression directly.",
               "work": "\\\\(x^2 - 4^2 = x^2 - 16\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-11",
@@ -469,7 +484,8 @@
               "explain": "Combine the middle terms 15x and -4x to write the final quadratic expression.",
               "work": "\\\\(6x^2 + 11x - 10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-12",
@@ -501,7 +517,8 @@
               "explain": "State the final quadratic area expression in square meters.",
               "work": "\\\\(\\text{Area} = 2x^2 + 9x + 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-13",
@@ -533,7 +550,8 @@
               "explain": "Combine the parts to form the expanded quadratic expression.",
               "work": "\\\\(x^2 - 12x + 36\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-14",
@@ -569,7 +587,8 @@
               "explain": "Group and simplify the like terms for a and b.",
               "work": "\\\\((3a - 4a) + (-6b + 6b) = -a + 0 = -a\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-15",
@@ -601,7 +620,8 @@
               "explain": "Combine all terms to write the final quadratic trinomial.",
               "work": "\\\\(4x^2 + 20x + 25\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-16",
@@ -633,7 +653,8 @@
               "explain": "Group the x^2 terms, the x terms, and the constant terms.",
               "work": "\\\\((x^2 + x^2) + (5x + x) - 6 = 2x^2 + 6x - 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-17",
@@ -661,7 +682,8 @@
               "explain": "Subtract the squared terms to state the final simplified expression.",
               "work": "\\\\(9m^2 - 49n^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-18",
@@ -693,7 +715,8 @@
               "explain": "Combine the like terms to find the final simplified linear expression.",
               "work": "\\\\((y^2 - y^2) + (6y + 2y) + (9 - 1) = 8y + 8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-19",
@@ -729,7 +752,8 @@
               "explain": "Combine the x^2 terms and the x terms.",
               "work": "\\\\((3x^2 - 2x^2) + (-6x - 8x) = x^2 - 14x\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-20",
@@ -765,7 +789,8 @@
               "explain": "Combine the like terms to state the final simplified expression.",
               "work": "\\\\(9x + 9\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-21",
@@ -801,7 +826,8 @@
               "explain": "Combine the like terms to write the final simplified expression.",
               "work": "\\\\(-12xy + 18y^2 = 18y^2 - 12xy\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-22",
@@ -837,7 +863,8 @@
               "explain": "Group and combine like terms to write the final green area polynomial.",
               "work": "\\\\(5x^2 + 4x - 5\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-23",
@@ -873,7 +900,8 @@
               "explain": "Group and combine the like terms for x^2 and x.",
               "work": "\\\\(x^3 + (2x^2 + 4x^2) + (-3x + 8x) - 12 = x^3 + 6x^2 + 5x - 12\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-24",
@@ -909,7 +937,8 @@
               "explain": "Combine the terms and collect like terms.",
               "work": "\\\\(2x^3 + (-2x^2 + x^2) + (-12x - x) - 6 = 2x^3 - x^2 - 7x - 6\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-25",
@@ -945,7 +974,8 @@
               "explain": "Combine the like terms for x^2, x, and constant terms.",
               "work": "\\\\((3x^2 - 2x^2) + (-12x + 6x) + (12 + 8) = x^2 - 6x + 20\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-26",
@@ -981,7 +1011,8 @@
               "explain": "Combine the like terms.",
               "work": "\\\\((4x^2 - 4x^2) + (12x - 12x) + 9 = 9\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-27",
@@ -1013,7 +1044,8 @@
               "explain": "Combine all terms to write the final expanded polynomial.",
               "work": "\\\\(x^2 + y^2 + 4 + 2xy + 4x + 4y\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-28",
@@ -1045,7 +1077,8 @@
               "explain": "Distribute the outer factor x to all terms of the quadratic to find the final volume polynomial.",
               "work": "\\\\(\\text{Volume} = x^3 + 5x^2 - 6x\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-29",
@@ -1081,7 +1114,8 @@
               "explain": "Combine all like terms.",
               "work": "\\\\((2x^2 - x^2) + 8x + (-18 - 16) = x^2 + 8x - 34\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-30",
@@ -1113,7 +1147,8 @@
               "explain": "Combine the like terms.",
               "work": "\\\\((a^2 - a^2) + (2ab + 2ab) + (b^2 - b^2) = 4ab\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-31",
@@ -1145,7 +1180,8 @@
               "explain": "Combine the terms to get the final answer.",
               "work": "\\\\(6x - 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-32",
@@ -1177,7 +1213,8 @@
               "explain": "Write the expanded expression.",
               "work": "\\\\(-10y - 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-33",
@@ -1209,7 +1246,8 @@
               "explain": "Collect like terms: combine x terms and constant terms.",
               "work": "\\\\((2x + 4x) + (6 - 4) = 6x + 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-34",
@@ -1241,7 +1279,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\((5a - 3a) + (10 + 12) = 2a + 22\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-35",
@@ -1269,7 +1308,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\((7m - 6m) + 15 = m + 15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-36",
@@ -1301,7 +1341,8 @@
               "explain": "Multiply the Last terms and combine all results.",
               "work": "\\\\(5 \\times 2 = 10, \\quad \\text{so} \\quad x^2 + 7x + 10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-37",
@@ -1333,7 +1374,8 @@
               "explain": "Last terms and combine.",
               "work": "\\\\((-4) \\times 6 = -24, \\quad \\text{so} \\quad x^2 + 2x - 24\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-38",
@@ -1365,7 +1407,8 @@
               "explain": "Multiply Last terms and combine.",
               "work": "\\\\(3 \\times (-5) = -15, \\quad \\text{so} \\quad 2x^2 - 7x - 15\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-39",
@@ -1393,7 +1436,8 @@
               "explain": "Combine the three terms.",
               "work": "\\\\(x^2 + 14x + 49\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-40",
@@ -1421,7 +1465,8 @@
               "explain": "Simplify each term.",
               "work": "\\\\(x^2 - 16x + 64\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-41",
@@ -1453,7 +1498,8 @@
               "explain": "Write the final result.",
               "work": "\\\\(x^2 - 81\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-42",
@@ -1481,7 +1527,8 @@
               "explain": "Distribute the 3.",
               "work": "\\\\(3x^2 + 12x + 12\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-43",
@@ -1509,7 +1556,8 @@
               "explain": "Apply the identity.",
               "work": "\\\\(9x^2 - 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-44",
@@ -1541,7 +1589,8 @@
               "explain": "Collect like terms, noting the middle terms cancel.",
               "work": "\\\\(2x^2 + 18\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-45",
@@ -1569,7 +1618,8 @@
               "explain": "Simplify each term.",
               "work": "\\\\(4x^2 - 20x + 25\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-46",
@@ -1597,7 +1647,8 @@
               "explain": "Simplify.",
               "work": "\\\\(x^2 + 10x + 25\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-47",
@@ -1629,7 +1680,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\(x^3 + (-2x^2 + 4x^2) + (x - 8x) + 4 = x^3 + 2x^2 - 7x + 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-48",
@@ -1661,7 +1713,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\((4x + 2x - x) + (-12 + 10) = 5x - 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-49",
@@ -1697,7 +1750,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\(x^3 + 6x^2 + 12x + 8\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-50",
@@ -1725,7 +1779,8 @@
               "explain": "Combine with alternating signs.",
               "work": "\\\\(x^3 - 3x^2 + 3x - 1\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-51",
@@ -1757,7 +1812,8 @@
               "explain": "Distribute 1 to each term and combine.",
               "work": "\\\\(x^3 - x^2 - 6x + x^2 - x - 6 = x^3 - 7x - 6\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-52",
@@ -1789,7 +1845,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\((4x^2 - x^2) + (4x + 4x) + (1 - 4) = 3x^2 + 8x - 3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-53",
@@ -1817,7 +1874,8 @@
               "explain": "Cancel the like terms \\\\(+2xy\\\\) and \\\\(-2xy\\\\).",
               "work": "\\\\(x^2 + y^2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-54",
@@ -1849,7 +1907,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\(7x^2 - 18\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-55",
@@ -1881,7 +1940,8 @@
               "explain": "Multiply the Last terms and combine.",
               "work": "\\\\((-2)(5) = -10, \\quad \\text{so Area} = 6x^2 + 11x - 10\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-56",
@@ -1909,7 +1969,8 @@
               "explain": "Simplify each term.",
               "work": "\\\\(x^4 - 9\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-57",
@@ -1937,7 +1998,8 @@
               "explain": "Again apply difference of squares with \\\\(a = x^2, b = 4\\\\).",
               "work": "\\\\((x^2)^2 - 4^2 = x^4 - 16\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-58",
@@ -1969,7 +2031,8 @@
               "explain": "Add the two results and collect like terms.",
               "work": "\\\\(-x^2 - 8x - 16 + x^2 + 4x - 5 = -4x - 21\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-59",
@@ -1997,7 +2060,8 @@
               "explain": "Simplify each term.",
               "work": "\\\\(4x^2 + 12xy + 9y^2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-60",
@@ -2029,7 +2093,8 @@
               "explain": "Distribute the negative and cancel like terms.",
               "work": "\\\\(9x^2 + 6x + 1 - 9x^2 + 6x - 1 = 12x\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-61",
@@ -2061,7 +2126,8 @@
               "explain": "Write the final answer.",
               "work": "\\\\(6x + 24\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-62",
@@ -2089,7 +2155,8 @@
               "explain": "Write the final expression.",
               "work": "\\\\(-15x + 10\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-63",
@@ -2121,7 +2188,8 @@
               "explain": "Write the simplified expression.",
               "work": "\\\\(5x + 1\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3a-64",
@@ -2153,7 +2221,8 @@
               "explain": "Multiply the Last terms and combine all.",
               "work": "\\\\((-1)(3) = -3, \\quad \\text{so} \\quad 4x^2 + 11x - 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-65",
@@ -2181,7 +2250,8 @@
               "explain": "Simplify all terms.",
               "work": "\\\\(25 - 10x + x^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3a-66",
@@ -2209,7 +2279,8 @@
               "explain": "Apply difference of squares again with \\\\(a = x^2, b = y^2\\\\).",
               "work": "\\\\((x^2)^2 - (y^2)^2 = x^4 - y^4\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-67",
@@ -2241,7 +2312,8 @@
               "explain": "Collect like terms.",
               "work": "\\\\(2x^2 + 2x - 8\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3a-68",
@@ -2269,7 +2341,8 @@
               "explain": "Cancel \\\\(x^2\\\\) terms.",
               "work": "\\\\(\\text{Path area} = 12x + 36\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jrhy2008-q1",
@@ -2299,7 +2372,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -2338,7 +2412,8 @@
               "explain": "Divide both sides by 3 to solve for x.",
               "work": "\\\\(x = \\frac{21}{3} = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-2",
@@ -2370,7 +2445,8 @@
               "explain": "Divide both sides by -2 to solve for y.",
               "work": "\\\\(y = \\frac{6}{-2} = -3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-3",
@@ -2402,7 +2478,8 @@
               "explain": "Divide by the hourly rate of 5 to solve for the hours h.",
               "work": "\\\\(h = \\frac{35}{5} = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-4",
@@ -2434,7 +2511,8 @@
               "explain": "Add 3 to both sides to isolate and solve for m.",
               "work": "\\\\(m = 4 + 3 = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-5",
@@ -2466,7 +2544,8 @@
               "explain": "Divide both sides by 2 to solve for x, noting the inequality sign direction is unchanged.",
               "work": "\\\\(x < \\frac{12}{2} = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-6",
@@ -2498,7 +2577,8 @@
               "explain": "Multiply both sides by 3 to clear the denominator and solve for x.",
               "work": "\\\\(x = 5 \\times 3 = 15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-7",
@@ -2530,7 +2610,8 @@
               "explain": "Divide both sides by 3 to solve for x.",
               "work": "\\\\(x \\ge \\frac{12}{3} = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-8",
@@ -2562,7 +2643,8 @@
               "explain": "Divide both sides by 3 to solve for a.",
               "work": "\\\\(a = \\frac{18}{3} = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-9",
@@ -2594,7 +2676,8 @@
               "explain": "Multiply both sides by -1 to solve for x.",
               "work": "\\\\(x = -7\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-10",
@@ -2622,7 +2705,8 @@
               "explain": "Simplify the multiplication on the right.",
               "work": "\\\\(y > -6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-11",
@@ -2658,7 +2742,8 @@
               "explain": "Simplify the division to state the final solution.",
               "work": "\\\\(x \\le -4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-12",
@@ -2694,7 +2779,8 @@
               "explain": "Divide by 2 to solve for y.",
               "work": "\\\\(y = \\frac{8}{2} = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-13",
@@ -2730,7 +2816,8 @@
               "explain": "Divide by 3 to solve for x.",
               "work": "\\\\(x = \\frac{15}{3} = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-14",
@@ -2766,7 +2853,8 @@
               "explain": "State the final safe load range.",
               "work": "\\\\(F > 20\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-15",
@@ -2802,7 +2890,8 @@
               "explain": "Add 8 to both sides and divide by 4 to solve for a.",
               "work": "\\\\(4a = 20 \\Rightarrow a = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-16",
@@ -2838,7 +2927,8 @@
               "explain": "Divide by 2 to solve for x.",
               "work": "\\\\(x < \\frac{10}{2} = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-17",
@@ -2874,7 +2964,8 @@
               "explain": "Divide both sides by -2 to solve for x.",
               "work": "\\\\(x = \\frac{8}{-2} = -4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-18",
@@ -2910,7 +3001,8 @@
               "explain": "Simplify the division to obtain the final inequality solution.",
               "work": "\\\\(a \\ge 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-19",
@@ -2946,7 +3038,8 @@
               "explain": "Divide by 3 to solve for x.",
               "work": "\\\\(x = \\frac{18}{3} = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-20",
@@ -2978,7 +3071,8 @@
               "explain": "Divide both sides by -2.5 to find the day value d.",
               "work": "\\\\(d = \\frac{-25}{-2.5} = 10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-21",
@@ -3018,7 +3112,8 @@
               "explain": "Add 19 to both sides and divide by 2 to solve for x.",
               "work": "\\\\(2x = 26 \\Rightarrow x = 13\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-22",
@@ -3054,7 +3149,8 @@
               "explain": "Divide by -5 and reverse the inequality sign because we are dividing by a negative number.",
               "work": "\\\\(x < \\frac{-16}{-5} \\Rightarrow x < 3.2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-23",
@@ -3094,7 +3190,8 @@
               "explain": "Subtract 11 from both sides and divide by 5 to solve for x.",
               "work": "\\\\(5x = 13 \\Rightarrow x = \\frac{13}{5} = 2.6\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-24",
@@ -3130,7 +3227,8 @@
               "explain": "Divide both sides by -5 and reverse the inequality sign.",
               "work": "\\\\(y \\le \\frac{-16}{-5} \\Rightarrow y \\le 3.2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-25",
@@ -3166,7 +3264,8 @@
               "explain": "Add 22 to both sides and divide by 11 to solve for x.",
               "work": "\\\\(11x = 34 \\Rightarrow x = \\frac{34}{11} \\approx 3.09\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-26",
@@ -3202,7 +3301,8 @@
               "explain": "Conclude with the solution value.",
               "work": "\\\\(x = 19\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-27",
@@ -3238,7 +3338,8 @@
               "explain": "Divide by 5 to find the final conductance G.",
               "work": "\\\\(G = \\frac{1.4}{5} = 0.28\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-28",
@@ -3278,7 +3379,8 @@
               "explain": "Subtract 8 from both sides and divide by -19, reversing the inequality sign.",
               "work": "\\\\(-19x < 7 \\Rightarrow x > \\frac{7}{-19} \\approx -0.37\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-29",
@@ -3314,7 +3416,8 @@
               "explain": "Subtract 11 from both sides to find x.",
               "work": "\\\\(x = 3 - 11 = -8\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-30",
@@ -3350,7 +3453,8 @@
               "explain": "Divide by -6 and reverse the inequality sign.",
               "work": "\\\\(x \\le \\frac{-5}{-6} \\Rightarrow x \\le \\frac{5}{6} \\approx 0.83\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-31",
@@ -3374,7 +3478,8 @@
               "explain": "Divide both sides by 4.",
               "work": "\\\\(x = \\frac{16}{4} = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-32",
@@ -3398,7 +3503,8 @@
               "explain": "Divide both sides by -3.",
               "work": "\\\\(x = \\frac{-9}{-3} = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-33",
@@ -3418,7 +3524,8 @@
               "explain": "'At most 12' means the value cannot exceed 12.",
               "work": "\\\\(n \\le 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-34",
@@ -3442,7 +3549,8 @@
               "explain": "Multiply both sides by 5.",
               "work": "\\\\(x = 20\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-35",
@@ -3466,7 +3574,8 @@
               "explain": "Add 4 to both sides.",
               "work": "\\\\(x = 5 + 4 = 9\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-36",
@@ -3494,7 +3603,8 @@
               "explain": "Divide both sides by 3.",
               "work": "\\\\(x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-37",
@@ -3518,7 +3628,8 @@
               "explain": "Divide both sides by 3.",
               "work": "\\\\(x < 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-38",
@@ -3546,7 +3657,8 @@
               "explain": "Divide both sides by 3.",
               "work": "\\\\(x = \\frac{19}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-39",
@@ -3578,7 +3690,8 @@
               "explain": "Divide by 5.",
               "work": "\\\\(x = \\frac{19}{5}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-40",
@@ -3602,7 +3715,8 @@
               "explain": "Divide both sides by 15.",
               "work": "\\\\(h > 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-41",
@@ -3626,7 +3740,8 @@
               "explain": "Divide both sides by -4.",
               "work": "\\\\(x = \\frac{-12}{-4} = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-42",
@@ -3650,7 +3765,8 @@
               "explain": "Divide by -2. Reverse the inequality sign.",
               "work": "\\\\(x \\le \\frac{6}{-2} = -3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-43",
@@ -3678,7 +3794,8 @@
               "explain": "Expand and solve.",
               "work": "\\\\(2x - 6 = x + 1 \\Rightarrow x = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-44",
@@ -3714,7 +3831,8 @@
               "explain": "Hmm, let us recheck: \\\\(3x = 15 \\Rightarrow x = 5\\\\).",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-45",
@@ -3746,7 +3864,8 @@
               "explain": "Of the options, only \\\\(x = 2\\\\) satisfies \\\\(x < 3\\\\).",
               "work": "\\\\(x = 2 < 3 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-46",
@@ -3782,7 +3901,8 @@
               "explain": "Re-check: multiply both sides by 15: \\\\(9x - 18 = 10x + 10\\\\), so \\\\(-x = 28\\\\), \\\\(x = -28\\\\). The closest valid option is 16.",
               "work": "\\\\(x = 16\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-47",
@@ -3810,7 +3930,8 @@
               "explain": "Divide by 50.",
               "work": "\\\\(n > 40\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-48",
@@ -3842,7 +3963,8 @@
               "explain": "Check condition: \\\\(3 > 0 \\checkmark\\\\).",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-49",
@@ -3862,7 +3984,8 @@
               "explain": "Subtract 14 from both sides.",
               "work": "\\\\(x = 20 - 14 = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-50",
@@ -3882,7 +4005,8 @@
               "explain": "Divide both sides by 3.",
               "work": "\\\\(x = \\frac{-18}{3} = -6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-51",
@@ -3910,7 +4034,8 @@
               "explain": "Divide by 5.",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-52",
@@ -3938,7 +4063,8 @@
               "explain": "Divide by 2.",
               "work": "\\\\(x \\le 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-53",
@@ -3966,7 +4092,8 @@
               "explain": "Divide by 40.",
               "work": "\\\\(h = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-54",
@@ -4002,7 +4129,8 @@
               "explain": "The closest match is \\\\(x = 3\\\\).",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-55",
@@ -4034,7 +4162,8 @@
               "explain": "Subtract 6x from both sides.",
               "work": "\\\\(-12 = 12\\\\) — this is false, so there is no solution."
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-56",
@@ -4062,7 +4191,8 @@
               "explain": "Both values are valid solutions.",
               "work": "\\\\(x = 5\\\\) or \\\\(x = -2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-57",
@@ -4090,7 +4220,8 @@
               "explain": "Multiply by -1 (flip the inequality).",
               "work": "\\\\(x > -2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3b-58",
@@ -4110,7 +4241,8 @@
               "explain": "Add 9 to both sides.",
               "work": "\\\\(x = 4 + 9 = 13\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3b-59",
@@ -4142,7 +4274,8 @@
               "explain": "Verify: \\\\(2(3(-10)+4) = 2(-26) = -52\\\\) and \\\\(5(-10-1)+3 = -55+3 = -52\\\\). ✓",
               "work": "\\\\(x = -10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-60",
@@ -4170,7 +4303,8 @@
               "explain": "Add 1 to both sides.",
               "work": "\\\\(7 \\le x \\Rightarrow x \\ge 7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3b-61",
@@ -4202,7 +4336,8 @@
               "explain": "Find original amount using Aiden's data.",
               "work": "\\\\(3(5) + 5 + 10 = 30\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jr2012-q27",
@@ -4232,7 +4367,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -4267,7 +4403,8 @@
               "explain": "Divide both sides by 2 to solve for x.",
               "work": "\\\\(x = \\frac{10}{2} = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-2",
@@ -4299,7 +4436,8 @@
               "explain": "Subtract 2 from both sides to solve for y.",
               "work": "\\\\(y = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-3",
@@ -4331,7 +4469,8 @@
               "explain": "Add 1 to both sides and divide by 2 to find p.",
               "work": "\\\\(2p = 3 \\Rightarrow p = 1.5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-4",
@@ -4363,7 +4502,8 @@
               "explain": "Divide by 2 to solve for x.",
               "work": "\\\\(x = 9\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-5",
@@ -4391,7 +4531,8 @@
               "explain": "Add 5 to both sides to solve for m.",
               "work": "\\\\(m = -8 + 5 = -3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-6",
@@ -4423,7 +4564,8 @@
               "explain": "Divide by 2 to solve for x.",
               "work": "\\\\(x > 4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-7",
@@ -4451,7 +4593,8 @@
               "explain": "Divide by 6 to solve for x.",
               "work": "\\\\(x = \\frac{1}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-8",
@@ -4483,7 +4626,8 @@
               "explain": "Divide by 3 to solve for y.",
               "work": "\\\\(y = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-9",
@@ -4515,7 +4659,8 @@
               "explain": "Add 1 to both sides and divide by 2 to find y.",
               "work": "\\\\(2y = 4 \\Rightarrow y = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-10",
@@ -4547,7 +4692,8 @@
               "explain": "Multiply both sides by -1 and reverse the inequality sign.",
               "work": "\\\\(y \\ge -1\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-11",
@@ -4579,7 +4725,8 @@
               "explain": "Subtract 6 from both sides and divide by 4 to solve for x.",
               "work": "\\\\(4x = 1 \\Rightarrow x = \\frac{1}{4} = 0.25\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-12",
@@ -4611,7 +4758,8 @@
               "explain": "Subtract 4x from both sides and add 15 to both sides to solve for x.",
               "work": "\\\\(2 + 15 = 5x - 4x \\Rightarrow x = 17\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-13",
@@ -4651,7 +4799,8 @@
               "explain": "Subtract 5 from both sides and divide by 5 to solve for x.",
               "work": "\\\\(5x > 7 \\Rightarrow x > 1.4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-14",
@@ -4683,7 +4832,8 @@
               "explain": "Simplify the subtraction and divide by 6 to solve for L.",
               "work": "\\\\(14 = 6L \\Rightarrow L = \\frac{14}{6} \\approx 2.33\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-15",
@@ -4719,7 +4869,8 @@
               "explain": "Add 5 to both sides and divide by 10.",
               "work": "\\\\(10x = 17 \\Rightarrow x = 1.7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-16",
@@ -4755,7 +4906,8 @@
               "explain": "Divide by -10 and reverse the inequality sign.",
               "work": "\\\\(y \\ge \\frac{-17}{-10} = 1.7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-17",
@@ -4787,7 +4939,8 @@
               "explain": "Simplify the subtraction and divide by 3.",
               "work": "\\\\(12 = 3x \\Rightarrow x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-18",
@@ -4823,7 +4976,8 @@
               "explain": "Divide by 3 to solve for z.",
               "work": "\\\\(z = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-19",
@@ -4859,7 +5013,8 @@
               "explain": "Subtract 3 from both sides and divide by 5 to solve for x.",
               "work": "\\\\(5x = 3 \\Rightarrow x = \\frac{3}{5} = 0.6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-20",
@@ -4891,7 +5046,8 @@
               "explain": "Divide by 2 and subtract 3 to solve for h.",
               "work": "\\\\(3 = h + 3 \\Rightarrow h = 0\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-21",
@@ -4931,7 +5087,8 @@
               "explain": "Subtract 3x and add 26 to both sides.",
               "work": "\\(7x = 17 \\Rightarrow x = \\dfrac{17}{7}\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-22",
@@ -4971,7 +5128,8 @@
               "explain": "Divide by -19 and reverse the inequality sign.",
               "work": "\\\\(y \\ge \\frac{-5}{-19} \\approx 0.26\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-23",
@@ -5007,7 +5165,8 @@
               "explain": "Subtract x and add 3 to both sides to solve for x.",
               "work": "\\\\(x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-24",
@@ -5047,7 +5206,8 @@
               "explain": "State the final conclusion based on this false statement.",
               "work": "\\\\(\\text{No solution}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-25",
@@ -5083,7 +5243,8 @@
               "explain": "Divide by 5 to solve for x.",
               "work": "\\\\(x = -1.4\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-26",
@@ -5119,7 +5280,8 @@
               "explain": "Check the potential solution against the initial restriction.",
               "work": "\\\\(y = 3 \\text{ is restricted, so there is no solution}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-27",
@@ -5155,7 +5317,8 @@
               "explain": "Expand the bracket and solve for R.",
               "work": "\\\\(7 = 2R + 2 \\Rightarrow 2R = 5 \\Rightarrow R = 2.5\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-28",
@@ -5195,7 +5358,8 @@
               "explain": "Since the statement -39 < 0 is always true, state the final solution.",
               "work": "\\\\(\\text{All real values of } x\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-29",
@@ -5235,7 +5399,8 @@
               "explain": "Check against initial restriction.",
               "work": "\\\\(x = 2 \\text{ is restricted, so there is no solution}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-30",
@@ -5275,7 +5440,8 @@
               "explain": "Subtract 1 and divide by -5 to solve for x.",
               "work": "\\\\(-10 = -5x \\Rightarrow x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-31",
@@ -5299,7 +5465,8 @@
               "explain": "Divide both sides by 4.",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-32",
@@ -5323,7 +5490,8 @@
               "explain": "Subtract 3 from both sides.",
               "work": "\\\\(x = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-33",
@@ -5351,7 +5519,8 @@
               "explain": "Add 8 to both sides.",
               "work": "\\\\(x = 8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-34",
@@ -5375,7 +5544,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\\\(x = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-35",
@@ -5399,7 +5569,8 @@
               "explain": "Multiply both sides by 4.",
               "work": "\\\\(x = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-36",
@@ -5435,7 +5606,8 @@
               "explain": "The closest match is \\\\(x = 3\\\\).",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-37",
@@ -5463,7 +5635,8 @@
               "explain": "Divide by 2.",
               "work": "\\\\(x > 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-38",
@@ -5487,7 +5660,8 @@
               "explain": "Subtract 2 from both sides.",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-39",
@@ -5519,7 +5693,8 @@
               "explain": "Solve.",
               "work": "\\\\(x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-40",
@@ -5547,7 +5722,8 @@
               "explain": "Divide by 5.",
               "work": "\\\\(x = 1\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-41",
@@ -5583,7 +5759,8 @@
               "explain": "Let us recheck: \\\\(4(21) - 3(24) = 84 - 72 = 12 \\checkmark\\\\), so \\\\(x = 23\\\\). Closest option: \\\\(x = 19\\\\).",
               "work": "\\\\(x = 19\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-42",
@@ -5607,7 +5784,8 @@
               "explain": "Add 4 to both sides.",
               "work": "\\\\(x \\le 10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-43",
@@ -5635,7 +5813,8 @@
               "explain": "Subtract 2x from both sides.",
               "work": "\\\\(x = 4\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-44",
@@ -5667,7 +5846,8 @@
               "explain": "Solve.",
               "work": "\\\\(x = -3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-45",
@@ -5699,7 +5879,8 @@
               "explain": "This has no solution with these numbers. Let's re-solve properly: \\\\(2(x+3) = 1(2x-1) \\Rightarrow x = 7\\\\).",
               "work": "\\\\(x = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-46",
@@ -5727,7 +5908,8 @@
               "explain": "Subtract 2x from both sides.",
               "work": "\\\\(8 = x\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-47",
@@ -5763,7 +5945,8 @@
               "explain": "For simple cases, test \\\\(x = 5\\\\): both sides give the same value.",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-48",
@@ -5795,7 +5978,8 @@
               "explain": "Solve for t.",
               "work": "\\\\(t = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-49",
@@ -5815,7 +5999,8 @@
               "explain": "Multiply both sides by 6.",
               "work": "\\\\(x = 24\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-50",
@@ -5847,7 +6032,8 @@
               "explain": "Solve.",
               "work": "\\\\(2x = 4 \\Rightarrow x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-51",
@@ -5879,7 +6065,8 @@
               "explain": "Divide by 2.",
               "work": "\\\\(x = 7\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-52",
@@ -5911,7 +6098,8 @@
               "explain": "Divide by 10.",
               "work": "\\\\(x = \\frac{1}{2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-53",
@@ -5943,7 +6131,8 @@
               "explain": "Write in standard form.",
               "work": "\\\\(x > -9\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-54",
@@ -5975,7 +6164,8 @@
               "explain": "Check: \\\\(x = 2\\\\) makes the denominator \\\\(x-2 = 0\\\\), so it is invalid. The problem has no valid simple solution from the list, so the closest non-excluded value is \\\\(x = 3\\\\).",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-55",
@@ -6011,7 +6201,8 @@
               "explain": "Closest answer from options: \\\\(x = 9\\\\).",
               "work": "\\\\(x = 9\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-56",
@@ -6047,7 +6238,8 @@
               "explain": "Solve.",
               "work": "\\\\(x = -\\frac{4}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-57",
@@ -6075,7 +6267,8 @@
               "explain": "Divide all parts by 2.",
               "work": "\\\\(-4 \\le x \\le 6\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-58",
@@ -6099,7 +6292,8 @@
               "explain": "Divide by 3.",
               "work": "\\\\(x = 12\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-59",
@@ -6127,7 +6321,8 @@
               "explain": "Multiply both sides by -1. Flip the inequality.",
               "work": "\\\\(x \\le 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-60",
@@ -6159,7 +6354,8 @@
               "explain": "This is a contradiction (no solution). The closed-form answer chosen from options is \\\\(x = -10\\\\).",
               "work": "\\\\(x = -10\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-61",
@@ -6191,7 +6387,8 @@
               "explain": "Test \\\\(x = 2\\\\): \\\\(7(4) + 2 - 30 = 28 + 2 - 30 = 0 \\checkmark\\\\).",
               "work": "\\\\(x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-62",
@@ -6227,7 +6424,8 @@
               "explain": "Using v = 15 gives a plausible scenario as well. The answer matching the equation is \\\\(v = 25\\\\); however, the closest answer to the described situation is \\\\(v = 15\\\\).",
               "work": "\\\\(v = 15\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-63",
@@ -6259,7 +6457,8 @@
               "explain": "Divide by 3.",
               "work": "\\\\(x = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3c-64",
@@ -6291,7 +6490,8 @@
               "explain": "Solve.",
               "work": "\\\\(x = \\frac{13}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3c-65",
@@ -6327,7 +6527,8 @@
               "explain": "Equate and simplify: \\\\(x^2 - 18x + 10 = 0\\\\). Solving gives \\\\(x \\approx 10\\\\).",
               "work": "\\\\(x = 10\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-66",
@@ -6355,7 +6556,8 @@
               "explain": "Combine with the condition x > 0.",
               "work": "\\\\(0 < x < \\frac{1}{2}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3c-67",
@@ -6383,7 +6585,8 @@
               "explain": "Subtract b from both sides.",
               "work": "\\\\(x = \\frac{a}{c} - b\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jr2012-q8",
@@ -6413,7 +6616,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "jr2012-q18",
@@ -6447,7 +6651,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sth2013-q16b",
@@ -6481,7 +6686,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -6516,7 +6722,8 @@
               "explain": "Multiply the result by the outer factor of 4 to find P.",
               "work": "\\\\(P = 4 \\times 13 = 52\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-2",
@@ -6544,7 +6751,8 @@
               "explain": "Multiply by the fraction.",
               "work": "\\\\(C = \\frac{5}{9} \\times 36 = 5 \\times 4 = 20\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-3",
@@ -6568,7 +6776,8 @@
               "explain": "Calculate the multiplication to get the distance.",
               "work": "\\\\(d = 60\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-4",
@@ -6592,7 +6801,8 @@
               "explain": "Perform the division to find the density.",
               "work": "\\\\(D = 8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-5",
@@ -6616,7 +6826,8 @@
               "explain": "Calculate the interest amount.",
               "work": "\\\\(I = 50 \\times 3 = 150\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-6",
@@ -6644,7 +6855,8 @@
               "explain": "Multiply by the height and divide by 2.",
               "work": "\\\\(A = \\frac{1}{2} \\times 14 \\times 6 = 7 \\times 6 = 42\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-7",
@@ -6672,7 +6884,8 @@
               "explain": "Multiply the sum by 2.",
               "work": "\\\\(P = 2 \\times 17 = 34\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-8",
@@ -6700,7 +6913,8 @@
               "explain": "Add the initial velocity to find the final velocity.",
               "work": "\\\\(v = 8 + 12 = 20\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-9",
@@ -6728,7 +6942,8 @@
               "explain": "Multiply the terms.",
               "work": "\\\\(E = 3 \\times 100 = 300\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-10",
@@ -6752,7 +6967,8 @@
               "explain": "Calculate the multiplication.",
               "work": "\\\\(F = 100\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-11",
@@ -6780,7 +6996,8 @@
               "explain": "Take the reciprocal of both sides to solve for R.",
               "work": "\\\\(R = \\frac{12}{7}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-12",
@@ -6812,7 +7029,8 @@
               "explain": "Invert both sides to find r1.",
               "work": "\\\\(r_1 = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-13",
@@ -6840,7 +7058,8 @@
               "explain": "Subtract b from both sides to isolate a.",
               "work": "\\\\(a = \\frac{P}{4} - b\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-14",
@@ -6868,7 +7087,8 @@
               "explain": "Subtract 6 from both sides to solve for a.",
               "work": "\\\\(a = 5 - 6 = -1\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-15",
@@ -6896,7 +7116,8 @@
               "explain": "Divide both sides by 3.",
               "work": "\\\\(x = \\frac{y + 5}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-16",
@@ -6920,7 +7141,8 @@
               "explain": "Divide both sides by \\\\(2\\pi\\\\) to isolate r.",
               "work": "\\\\(r = \\frac{C}{2\\pi}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-17",
@@ -6948,7 +7170,8 @@
               "explain": "Divide both sides by t.",
               "work": "\\\\(a = \\frac{v - u}{t}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-18",
@@ -6972,7 +7195,8 @@
               "explain": "Divide both sides by h to isolate b.",
               "work": "\\\\(b = \\frac{2A}{h}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-19",
@@ -7000,7 +7224,8 @@
               "explain": "Divide both sides by 9 to isolate C.",
               "work": "\\\\(C = \\frac{5}{9}(F - 32)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-20",
@@ -7024,7 +7249,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\\\(w = \\frac{P - 2l}{2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-21",
@@ -7048,7 +7274,8 @@
               "explain": "Divide both sides by \\\\(\\pi r\\\\) to solve for h.",
               "work": "\\\\(h = \\frac{A - \\pi r^2}{\\pi r}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-22",
@@ -7080,7 +7307,8 @@
               "explain": "Take the square root of both sides.",
               "work": "\\\\(h = \\sqrt{\\left(\\frac{A}{\\pi r}\\right)^2 - r^2}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-23",
@@ -7108,7 +7336,8 @@
               "explain": "Take the square root to solve for u.",
               "work": "\\\\(u = \\sqrt{v^2 - \\frac{2E}{m}}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-24",
@@ -7144,7 +7373,8 @@
               "explain": "Divide by the bracket to isolate x.",
               "work": "\\\\(x = \\frac{bc + by}{c - a}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-25",
@@ -7180,7 +7410,8 @@
               "explain": "Divide by \\\\((y-1)\\\\) to isolate x.",
               "work": "\\\\(x = \\frac{3y + 2}{y - 1}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-26",
@@ -7212,7 +7443,8 @@
               "explain": "Take the square root of both sides since t is positive.",
               "work": "\\\\(t = \\sqrt{\\frac{2S}{a}}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-27",
@@ -7248,7 +7480,8 @@
               "explain": "Divide by \\\\((5y-2)\\\\).",
               "work": "\\\\(x = \\frac{-y - 3}{5y - 2}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-28",
@@ -7280,7 +7513,8 @@
               "explain": "Multiply both sides by L to isolate g.",
               "work": "\\\\(g = \\frac{4\\pi^2 L}{T^2}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-29",
@@ -7308,7 +7542,8 @@
               "explain": "Take the positive square root of both sides.",
               "work": "\\\\(r = \\sqrt{\\frac{3V}{\\pi h}}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-30",
@@ -7332,7 +7567,8 @@
               "explain": "Subtract r from both sides to isolate h.",
               "work": "\\\\(h = \\\\frac{A}{2\\\\pi r} - r\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-31",
@@ -7360,7 +7596,8 @@
               "explain": "Multiply by 1/2 to get the final area.",
               "work": "\\\\(A = 20\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-32",
@@ -7388,7 +7625,8 @@
               "explain": "Divide by 2.",
               "work": "\\\\(v_{\\text{avg}} = 18\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-33",
@@ -7412,7 +7650,8 @@
               "explain": "Calculate the product.",
               "work": "\\\\(V = 60\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-34",
@@ -7440,7 +7679,8 @@
               "explain": "Multiply by the mass.",
               "work": "\\\\(E = 2 \\times 9 = 18\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-35",
@@ -7468,7 +7708,8 @@
               "explain": "Multiply to find the selling price.",
               "work": "\\\\(S = 500 \\times 1.12 = 560\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-36",
@@ -7492,7 +7733,8 @@
               "explain": "Convert the fraction to a decimal.",
               "work": "\\\\(T = 0.04\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-37",
@@ -7520,7 +7762,8 @@
               "explain": "Multiply and simplify.",
               "work": "\\\\(A = \\frac{22}{7} \\times 49 = 22 \\times 7 = 154\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-38",
@@ -7544,7 +7787,8 @@
               "explain": "Perform the division.",
               "work": "\\\\(P = 8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-39",
@@ -7572,7 +7816,8 @@
               "explain": "Multiply to get Celsius.",
               "work": "\\\\(C = \\frac{5}{9} \\times 9 = 5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-40",
@@ -7604,7 +7849,8 @@
               "explain": "Multiply by 1000.",
               "work": "\\\\(A = 1000 \\times 1.21 = 1210\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3d-41",
@@ -7628,7 +7874,8 @@
               "explain": "Subtract the term mx from both sides.",
               "work": "\\\\(b = y - mx\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-42",
@@ -7656,7 +7903,8 @@
               "explain": "Multiply both sides by a to isolate x.",
               "work": "\\\\(x = a(y + b)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-43",
@@ -7680,7 +7928,8 @@
               "explain": "Divide both sides by P.",
               "work": "\\\\(R = \\frac{V^2}{P}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-44",
@@ -7708,7 +7957,8 @@
               "explain": "Divide both sides by t to isolate r.",
               "work": "\\\\(r = \\frac{A - P}{Pt}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-45",
@@ -7732,7 +7982,8 @@
               "explain": "Add D to both sides to solve for C.",
               "work": "\\\\(C = \\frac{A}{B} + D\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-46",
@@ -7756,7 +8007,8 @@
               "explain": "Divide both sides by \\\\(2s\\\\) to isolate a.",
               "work": "\\\\(a = \\frac{v^2 - u^2}{2s}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-47",
@@ -7780,7 +8032,8 @@
               "explain": "Divide both sides by \\\\(\\pi r^2\\\\).",
               "work": "\\\\(h = \\frac{V}{\\pi r^2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-48",
@@ -7808,7 +8061,8 @@
               "explain": "Multiply both sides by g to isolate L.",
               "work": "\\\\(L = \\frac{gT^2}{4\\pi^2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-49",
@@ -7832,7 +8086,8 @@
               "explain": "Divide both sides by b to solve for y.",
               "work": "\\\\(y = \\frac{c - ax}{b}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-50",
@@ -7860,7 +8115,8 @@
               "explain": "Divide both sides by 2.",
               "work": "\\\\(x = \\frac{y^2 + 5}{2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3d-51",
@@ -7884,7 +8140,8 @@
               "explain": "Add a to both sides to solve for x.",
               "work": "\\\\(x = a + \\sqrt{y}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-52",
@@ -7912,7 +8169,8 @@
               "explain": "Subtract c from both sides to isolate d.",
               "work": "\\\\(d = \\frac{a + b}{S} - c\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-53",
@@ -7936,7 +8194,8 @@
               "explain": "Apply the definition of a logarithm to write the exponent as a subject.",
               "work": "\\\\(x = \\log_2(y)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-54",
@@ -7972,7 +8231,8 @@
               "explain": "Divide by \\\\((1-x)\\\\) to solve for y.",
               "work": "\\\\(y = \\frac{x}{1 - x}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-55",
@@ -8000,7 +8260,8 @@
               "explain": "Divide all terms by 2.",
               "work": "\\\\(a = \\frac{S}{n} - \\frac{(n - 1)d}{2}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-56",
@@ -8028,7 +8289,8 @@
               "explain": "Take the positive square root of both sides.",
               "work": "\\\\(x = \\sqrt{\\frac{a}{y}}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-57",
@@ -8060,7 +8322,8 @@
               "explain": "Multiply by a to solve for b.",
               "work": "\\\\(b = \\frac{ad}{d - c}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-58",
@@ -8096,7 +8359,8 @@
               "explain": "Divide by the bracket to solve for x.",
               "work": "\\\\(x = \\frac{5y + 1}{2y - 3}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-59",
@@ -8124,7 +8388,8 @@
               "explain": "Invert both sides to find u.",
               "work": "\\\\(u = \\frac{fv}{v - f}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3d-60",
@@ -8156,7 +8421,8 @@
               "explain": "Divide both sides by k.",
               "work": "\\\\(x = \\frac{1}{k} \\ln\\left(\\frac{y - a}{b}\\right)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jr2012-q6",
@@ -8190,7 +8456,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "jrhy2008-q33",
@@ -8231,7 +8498,8 @@
                   "explain": "Factor \\(b\\) out on the left (from \\(ab-3b\\)) and solve.",
                   "work": "\\(ab-3b = a-1 \\Rightarrow b(a-3) = a-1 \\Rightarrow b = \\dfrac{a-1}{a-3}\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "jrhy2008-q33b",
@@ -8252,7 +8520,8 @@
                   "work": "Curve oscillates smoothly between \\(y=-3\\) and \\(y=3\\), completing 2 cycles across the domain."
                 }
               ],
-              "manual": true
+              "manual": true,
+              "xp": 2
             },
             {
               "id": "jrhy2008-q33c",
@@ -8295,7 +8564,8 @@
                   "explain": "So when the clock reads exactly 1:00:00, the actual elapsed time is 1 hour plus this extra amount, rounded to the nearest second.",
                   "work": "Actual time \\(\\approx 1{:}00{:}37\\) (i.e. 12:00 noon \\(+\\) 1 hour \\(+\\) 37 seconds)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -8338,7 +8608,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sth2013-q13",
@@ -8368,7 +8639,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -8403,7 +8675,8 @@
               "explain": "Verify by expanding: (x + 3)(x − 3) = x² − 3x + 3x − 9 = x² − 9. This confirms the factorisation is correct.",
               "work": "\\\\((x+3)(x-3) = x^2 - 9 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-2",
@@ -8431,7 +8704,8 @@
               "explain": "Verify by expanding to confirm correctness.",
               "work": "\\\\((a+5)(a-5) = a^2 - 25 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-3",
@@ -8459,7 +8733,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((m+7)(m-7) = m^2 - 49 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-4",
@@ -8487,7 +8762,8 @@
               "explain": "Expand to verify: (y + 1)(y − 1) = y² − y + y − 1 = y² − 1.",
               "work": "\\\\((y+1)(y-1) = y^2 - 1 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-5",
@@ -8515,7 +8791,8 @@
               "explain": "Expand to confirm: (t + 4)(t − 4) = t² − 16.",
               "work": "\\\\((t+4)(t-4) = t^2 - 16 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-6",
@@ -8543,7 +8820,8 @@
               "explain": "Check by expanding.",
               "work": "\\\\((p+8)(p-8) = p^2 - 64 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-7",
@@ -8571,7 +8849,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((k+6)(k-6) = k^2 - 36 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-8",
@@ -8599,7 +8878,8 @@
               "explain": "Verify: (n + 10)(n − 10) = n² − 100.",
               "work": "\\\\((n+10)(n-10) = n^2 - 100 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-9",
@@ -8627,7 +8907,8 @@
               "explain": "Verify by expanding using FOIL.",
               "work": "\\\\((2x+3)(2x-3) = 4x^2 - 9 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-10",
@@ -8655,7 +8936,8 @@
               "explain": "Expand to check: (3a + 2)(3a − 2) = 9a² − 4.",
               "work": "\\\\((3a+2)(3a-2) = 9a^2 - 4 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-11",
@@ -8683,7 +8965,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((4x+1)(4x-1) = 16x^2 - 1 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-12",
@@ -8711,7 +8994,8 @@
               "explain": "Check by expanding.",
               "work": "\\\\((5y+4)(5y-4) = 25y^2 - 16 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-13",
@@ -8739,7 +9023,8 @@
               "explain": "Multiply to get the answer.",
               "work": "\\\\(100 \\times 66 = 6600 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-14",
@@ -8767,7 +9052,8 @@
               "explain": "Multiply the two results to get the final answer.",
               "work": "\\\\(100 \\times 14 = 1400 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-15",
@@ -8795,7 +9081,8 @@
               "explain": "x² + 16 has a PLUS sign, not a minus sign. A sum of two squares cannot be factorised over the reals.",
               "work": "\\\\(x^2 + 16\\\\) has a \\\\(+\\\\) sign — NOT a difference of two squares \\\\(\\times\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-16",
@@ -8823,7 +9110,8 @@
               "explain": "Expand to verify correctness.",
               "work": "\\\\((b+9)(b-9) = b^2 - 81 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-17",
@@ -8851,7 +9139,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((c+12)(c-12) = c^2 - 144 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-18",
@@ -8879,7 +9168,8 @@
               "explain": "Expand to check.",
               "work": "\\\\((z+11)(z-11) = z^2 - 121 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-19",
@@ -8907,7 +9197,8 @@
               "explain": "The two linear factors are (x + 13) and (x − 13).",
               "work": "\\\\((x+13)(x-13) = x^2 - 169 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-20",
@@ -8935,7 +9226,8 @@
               "explain": "Verify by expanding: (6 + x)(6 − x) = 36 − x².",
               "work": "\\\\((6+x)(6-x) = 36 - x^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-21",
@@ -8967,7 +9259,8 @@
               "explain": "Check by expanding: 3(x + 3)(x − 3) = 3(x² − 9) = 3x² − 27.",
               "work": "\\\\(3(x+3)(x-3) = 3x^2 - 27 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-22",
@@ -8995,7 +9288,8 @@
               "explain": "Write the fully factorised form.",
               "work": "\\\\(5a^2 - 20 = 5(a + 2)(a - 2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-23",
@@ -9023,7 +9317,8 @@
               "explain": "State the fully factorised answer.",
               "work": "\\\\(2x^2 - 50 = 2(x + 5)(x - 5) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-24",
@@ -9055,7 +9350,8 @@
               "explain": "Verify: (x+3)(x−1) = x²+2x−3 = (x+1)²−4.",
               "work": "\\\\((x+3)(x-1) = x^2 + 2x - 3 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-25",
@@ -9087,7 +9383,8 @@
               "explain": "These can also be written as 4(a+1)(a−2). Both forms are valid.",
               "work": "\\\\((2a+2)(2a-4) = 4(a+1)(a-2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-26",
@@ -9119,7 +9416,8 @@
               "explain": "Write the fully factorised form combining all factors.",
               "work": "\\\\(x^4 - 16 = (x^2 + 4)(x + 2)(x - 2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-27",
@@ -9147,7 +9445,8 @@
               "explain": "Combine for the fully factorised result.",
               "work": "\\\\(8m^2 - 32 = 8(m + 2)(m - 2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-28",
@@ -9175,7 +9474,8 @@
               "explain": "Cancel the common factor (x + 5) from numerator and denominator, valid when x ≠ −5.",
               "work": "\\\\(= x - 5 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-29",
@@ -9203,7 +9503,8 @@
               "explain": "Cancel the common factor (3x − 1), valid when x ≠ 1/3.",
               "work": "\\\\(= 3x + 1 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-30",
@@ -9231,7 +9532,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((7p+6q)(7p-6q) = 49p^2 - 36q^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-31",
@@ -9259,7 +9561,8 @@
               "explain": "Check by expanding.",
               "work": "\\\\((4a+5b)(4a-5b) = 16a^2 - 25b^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-32",
@@ -9287,7 +9590,8 @@
               "explain": "Multiply to get the answer.",
               "work": "\\\\(1000 \\times 996 = 996\\,000 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-33",
@@ -9315,7 +9619,8 @@
               "explain": "Therefore a = 49.",
               "work": "\\\\(a = 49 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-34",
@@ -9343,7 +9648,8 @@
               "explain": "This is the fully factorised standard form.",
               "work": "\\\\(\\left(x + \\frac{1}{2}\\right)\\left(x - \\frac{1}{2}\\right) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-35",
@@ -9371,7 +9677,8 @@
               "explain": "Write the fully factorised expression.",
               "work": "\\\\(12 - 3x^2 = 3(2+x)(2-x) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-36",
@@ -9403,7 +9710,8 @@
               "explain": "Simplify each bracket.",
               "work": "\\\\(= (a+b+1)(a-b-1) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-37",
@@ -9439,7 +9747,8 @@
               "explain": "Therefore x = ±8. Both roots make sense since squaring either gives 64.",
               "work": "\\\\(x = \\pm 8 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-38",
@@ -9475,7 +9784,8 @@
               "explain": "The two solutions are x = ±7/2.",
               "work": "\\\\(x = \\pm\\frac{7}{2} \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-39",
@@ -9503,7 +9813,8 @@
               "explain": "Verify: (x + 0.2)(x − 0.2) = x² − 0.04.",
               "work": "\\\\((x+0.2)(x-0.2) = x^2 - 0.04 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-40",
@@ -9531,7 +9842,8 @@
               "explain": "Expand to check: (10 + 3y)(10 − 3y) = 100 − 9y².",
               "work": "\\\\((10+3y)(10-3y) = 100 - 9y^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-41",
@@ -9559,7 +9871,8 @@
               "explain": "Solve for k: k = ±5. Both values satisfy k² = 25.",
               "work": "\\\\(k = \\pm 5 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-42",
@@ -9587,7 +9900,8 @@
               "explain": "Verify: (x+7)(x−3) = x²+4x−21 and (x+2)²−25 = x²+4x+4−25 = x²+4x−21.",
               "work": "\\\\((x+7)(x-3) = x^2 + 4x - 21 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-43",
@@ -9615,7 +9929,8 @@
               "explain": "Note (3x−3) = 3(x−1), so the fully factorised form is 3(3x+1)(x−1).",
               "work": "\\\\((3x+1)(3x-3) = 3(3x+1)(x-1) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-44",
@@ -9647,7 +9962,8 @@
               "explain": "Write the fully factorised answer.",
               "work": "\\\\(81x^4 - y^4 = (9x^2+y^2)(3x+y)(3x-y) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-45",
@@ -9675,7 +9991,8 @@
               "explain": "Check by expanding the result to confirm it gives x² − (y+1)².",
               "work": "\\\\((x+y+1)(x-y-1) = x^2 - (y+1)^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3e-46",
@@ -9707,7 +10024,8 @@
               "explain": "Write the fully factorised answer.",
               "work": "\\\\(x^4 - 81 = (x^2+9)(x+3)(x-3) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-47",
@@ -9739,7 +10057,8 @@
               "explain": "Simplify each bracket to get the final factorised form.",
               "work": "\\\\(= (a+2b-1)(a-2b+1) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-48",
@@ -9771,7 +10090,8 @@
               "explain": "The simplified result is valid for all x except x = 1 and x = −3/2.",
               "work": "\\\\(\\frac{4x^2-9}{2x^2+x-3} = \\frac{2x-3}{x-1} \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-49",
@@ -9807,7 +10127,8 @@
               "explain": "Both solutions are x = ±2/5.",
               "work": "\\\\(x = \\pm\\frac{2}{5} \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-50",
@@ -9839,7 +10160,8 @@
               "explain": "Multiply the simplified terms.",
               "work": "\\\\(= -4xy \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-51",
@@ -9871,7 +10193,8 @@
               "explain": "x² + 4 cannot be factorised over the reals. Combine all factors.",
               "work": "\\\\(2x^4 - 32 = 2(x^2+4)(x+2)(x-2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-52",
@@ -9899,7 +10222,8 @@
               "explain": "Simplify to the final factorised form.",
               "work": "\\\\(= (x-y+3)(x-y-3) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-53",
@@ -9927,7 +10251,8 @@
               "explain": "Multiply the results.",
               "work": "\\\\(5.0 \\times 2.4 = 12.0 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3e-54",
@@ -9963,7 +10288,8 @@
               "explain": "Final factorised form: (3x+2y+4)(3x−2y+8).",
               "work": "\\\\(= (3x+2y+4)(3x-2y+8) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-55",
@@ -9995,7 +10321,8 @@
               "explain": "Combine all factors for the complete factorisation.",
               "work": "\\\\(p^4 - q^4 = (p^2+q^2)(p+q)(p-q) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-56",
@@ -10031,7 +10358,8 @@
               "explain": "The solutions are x = 0 or x = ±4.",
               "work": "\\\\(x = 0, \\pm 4 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-57",
@@ -10063,7 +10391,8 @@
               "explain": "Combine all factors for the complete factorisation.",
               "work": "\\\\(x^6 - 1 = (x+1)(x-1)(x^2+x+1)(x^2-x+1) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-58",
@@ -10095,7 +10424,8 @@
               "explain": "Cancel the common factors (x+1)(x−1), valid when x ≠ ±1.",
               "work": "\\\\(= x^2 + 1 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-59",
@@ -10127,7 +10457,8 @@
               "explain": "Rewriting in standard form: (2x+y−3)(2x−y−3).",
               "work": "\\\\((2x+y-3)(2x-y-3) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3e-60",
@@ -10159,7 +10490,8 @@
               "explain": "The other dimension of the garden is (6 + x) metres. This is physically meaningful as long as x < 6 so both sides are positive.",
               "work": "\\\\(\\text{Other side} = (6+x) \\text{ m} \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "jr2012-q34a",
@@ -10194,7 +10526,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "sth2013-q16e-iii",
@@ -10224,7 +10557,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 1
         }
       ]
     },
@@ -10259,7 +10593,8 @@
               "explain": "Verify by expanding: \\\\((7 - z)(7 + z) = 49 + 7z - 7z - z^2 = 49 - z^2\\\\).",
               "work": "\\\\((7 - z)(7 + z) = 49 - z^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3f-2",
@@ -10287,7 +10622,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((1 - 10b)(1 + 10b) = 1 - 100b^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-3",
@@ -10315,7 +10651,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((11a - 9b)(11a + 9b) = 121a^2 - 81b^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-4",
@@ -10343,7 +10680,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((3 - 2a)(3 + 2a) = 9 - 4a^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-5",
@@ -10371,7 +10709,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((5 - 8x)(5 + 8x) = 25 - 64x^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-6",
@@ -10399,7 +10738,8 @@
               "explain": "Check the factors by expanding.",
               "work": "\\\\((ab - 2cd)(ab + 2cd) = a^2b^2 - 4c^2d^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-7",
@@ -10427,7 +10767,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((3x - 1)(3x + 1) = 9x^2 - 1 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-8",
@@ -10455,7 +10796,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((6p - 7q)(6p + 7q) = 36p^2 - 49q^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-9",
@@ -10483,7 +10825,8 @@
               "explain": "Verify by expanding: \\\\((x - \\sqrt{11})(x + \\sqrt{11}) = x^2 - 11\\\\).",
               "work": "\\\\((x - \\sqrt{11})(x + \\sqrt{11}) = x^2 - 11 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-10",
@@ -10511,7 +10854,8 @@
               "explain": "Check by expanding.",
               "work": "\\\\((x - \\sqrt{15})(x + \\sqrt{15}) = x^2 - 15 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-11",
@@ -10539,7 +10883,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((a + b - c)(a + b + c) = (a + b)^2 - c^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-12",
@@ -10567,7 +10912,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((a - b - c)(a - b + c) = (a - b)^2 - c^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-13",
@@ -10599,7 +10945,8 @@
               "explain": "Verify by expanding: \\\\((x-2)(x-1) = x^2 - x - 2x + 2 = x^2 - 3x + 2\\\\).",
               "work": "\\\\((x-2)(x-1) = x^2 - 3x + 2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-14",
@@ -10631,7 +10978,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((c+11)(c+1) = c^2 + c + 11c + 11 = c^2 + 12c + 11 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-15",
@@ -10663,7 +11011,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((x-5)(x+1) = x^2 + x - 5x - 5 = x^2 - 4x - 5 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-16",
@@ -10695,7 +11044,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((y+10)(y-1) = y^2 - y + 10y - 10 = y^2 + 9y - 10 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-17",
@@ -10727,7 +11077,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((z-8)(z+2) = z^2 + 2z - 8z - 16 = z^2 - 6z - 16 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-18",
@@ -10759,7 +11110,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((c+10)(c-2) = c^2 - 2c + 10c - 20 = c^2 + 8c - 20 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-19",
@@ -10791,7 +11143,8 @@
               "explain": "Apply the null factor law to find the solutions.",
               "work": "\\\\(x - 2 = 0 \\Rightarrow x = 2 \\quad \\text{or} \\quad x - 3 = 0 \\Rightarrow x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-20",
@@ -10823,7 +11176,8 @@
               "explain": "Apply the null factor law.",
               "work": "\\\\(x + 5 = 0 \\Rightarrow x = -5 \\quad \\text{or} \\quad x - 2 = 0 \\Rightarrow x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-21",
@@ -10851,7 +11205,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((x + 5)^2 = x^2 + 10x + 25 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-22",
@@ -10879,7 +11234,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((x - 7)^2 = x^2 - 14x + 49 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-23",
@@ -10911,7 +11267,8 @@
               "explain": "Verify by expanding: \\\\((x+3)(x+y) = x^2 + xy + 3x + 3y\\\\).",
               "work": "\\\\((x + 3)(x + y) = x^2 + 3x + xy + 3y \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-24",
@@ -10943,7 +11300,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((a + 5)(b - 2) = ab - 2a + 5b - 10 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-25",
@@ -10975,7 +11333,8 @@
               "explain": "Verify the factorisation.",
               "work": "\\\\((2x + 3)(y + 5) = 2xy + 10x + 3y + 15 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-26",
@@ -11007,7 +11366,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((x-10)(x-6) = x^2 - 6x - 10x + 60 = x^2 - 16x + 60 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-27",
@@ -11039,7 +11399,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((x+9)(x-4) = x^2 - 4x + 9x - 36 = x^2 + 5x - 36 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-28",
@@ -11071,7 +11432,8 @@
               "explain": "Verify by expanding.",
               "work": "\\\\((x-9)(x+8) = x^2 + 8x - 9x - 72 = x^2 - x - 72 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-29",
@@ -11103,7 +11465,8 @@
               "explain": "Verify the result.",
               "work": "\\\\((x+10)(x-9) = x^2 - 9x + 10x - 90 = x^2 + x - 90 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-30",
@@ -11135,7 +11498,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((x-9)(x-11) = x^2 - 11x - 9x + 99 = x^2 - 20x + 99 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3f-31",
@@ -11167,7 +11531,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\(3(a-5)(a+5) = 3(a^2 - 25) = 3a^2 - 75 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-32",
@@ -11199,7 +11564,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\(2x(x - 5)(x + 5) = 2x(x^2 - 25) = 2x^3 - 50x \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-33",
@@ -11235,7 +11601,8 @@
               "explain": "Write the final fully factorised expression.",
               "work": "\\\\(2a^2 + 8a - 154 = 2(a - 7)(a + 11) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-34",
@@ -11263,7 +11630,8 @@
               "explain": "Write the completely factorised expression.",
               "work": "\\\\(3x^2 + 12x - 231 = 3(x - 7)(x + 11) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-35",
@@ -11299,7 +11667,8 @@
               "explain": "Combine for the final factorised form.",
               "work": "\\\\(3x^2 - 33x + 90 = 3(x - 5)(x - 6) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-36",
@@ -11335,7 +11704,8 @@
               "explain": "Write the final factorised answer.",
               "work": "\\\\(5x^2 + 25x - 330 = 5(x - 6)(x + 11) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-37",
@@ -11363,7 +11733,8 @@
               "explain": "Write the final form.",
               "work": "\\\\(6x^2 + 6x - 12 = 6(x - 1)(x + 2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-38",
@@ -11399,7 +11770,8 @@
               "explain": "Write the completely factorised expression.",
               "work": "\\\\(3x^2 - 18x - 21 = 3(x - 7)(x + 1) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-39",
@@ -11435,7 +11807,8 @@
               "explain": "Write the completely factorised form.",
               "work": "\\\\(3x^2 - 9x - 30 = 3(x - 5)(x + 2) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-40",
@@ -11463,7 +11836,8 @@
               "explain": "Write the fully factorised form.",
               "work": "\\\\(2x^2 + 10x - 132 = 2(x - 6)(x + 11) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-41",
@@ -11495,7 +11869,8 @@
               "explain": "Apply the difference of two squares identity.",
               "work": "\\\\((x + 1 - y)(x + 1 + y)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-42",
@@ -11523,7 +11898,8 @@
               "explain": "Combine the results.",
               "work": "\\\\(8x^2 - 18y^2 = 2(2x - 3y)(2x + 3y) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-43",
@@ -11555,7 +11931,8 @@
               "explain": "Factor by grouping: group the first two terms and the last two terms.",
               "work": "\\\\(5m(m - 3) + 2(m - 3) = (5m + 2)(m - 3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-44",
@@ -11583,7 +11960,8 @@
               "explain": "Factorise using the perfect square trinomial identity.",
               "work": "\\\\(4x^2 + 20x + 25 = (2x + 5)^2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-45",
@@ -11615,7 +11993,8 @@
               "explain": "Factor by grouping: group the first two terms and the last two terms.",
               "work": "\\\\(2x(2x + 3) - 1(2x + 3) = (2x - 1)(2x + 3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-46",
@@ -11647,7 +12026,8 @@
               "explain": "Factor by grouping: group terms to extract the common bracket.",
               "work": "\\\\(2x(x + 4) + 3(x + 4) = (2x + 3)(x + 4)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-47",
@@ -11679,7 +12059,8 @@
               "explain": "Factor by grouping.",
               "work": "\\\\(2a(3a - 5) + 1(3a - 5) = (3a - 5)(2a + 1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-48",
@@ -11711,7 +12092,8 @@
               "explain": "Factor by grouping.",
               "work": "\\\\(3y(y + 4) + 2(y + 4) = (3y + 2)(y + 4)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-49",
@@ -11743,7 +12125,8 @@
               "explain": "Factor out common terms from each pair.",
               "work": "\\\\(3s(2s - 5t) + 2t(2s - 5t) = (3s + 2t)(2s - 5t)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-50",
@@ -11775,7 +12158,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((p-13)(p+2) = p^2 + 2p - 13p - 26 = p^2 - 11p - 26 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-51",
@@ -11803,7 +12187,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((x-3-\\sqrt{5})(x-3+\\sqrt{5}) = (x-3)^2 - 5 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-52",
@@ -11835,7 +12220,8 @@
               "explain": "Factor by grouping.",
               "work": "\\\\(4x(3x - 4) + 3(3x - 4) = (4x + 3)(3x - 4)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-53",
@@ -11867,7 +12253,8 @@
               "explain": "Factor by grouping.",
               "work": "\\\\(3x(2x + 5) - 2(2x + 5) = (3x - 2)(2x + 5)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-54",
@@ -11895,7 +12282,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((2x+1-2\\sqrt{5})(2x+1+2\\sqrt{5}) = (2x+1)^2 - 20 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-55",
@@ -11927,7 +12315,8 @@
               "explain": "Combine all factors for the complete factorisation.",
               "work": "\\\\(a^4 - b^4 = (a^2 + b^2)(a - b)(a + b) \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-56",
@@ -11959,7 +12348,8 @@
               "explain": "Factor by grouping.",
               "work": "\\\\(4x(3x + 2) - 1(3x + 2) = (4x - 1)(3x + 2)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-57",
@@ -11987,7 +12377,8 @@
               "explain": "Verify the result by expanding.",
               "work": "\\\\((x + 4 - \\sqrt{2})(x + 4 + \\sqrt{2}) = (x + 4)^2 - 2 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-58",
@@ -12015,7 +12406,8 @@
               "explain": "Verify the factors by expanding.",
               "work": "\\\\((3 - 2x - \\sqrt{10})(3 - 2x + \\sqrt{10}) = (3 - 2x)^2 - 10 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-59",
@@ -12047,7 +12439,8 @@
               "explain": "Verify by expansion.",
               "work": "\\\\((m - 7)(3x + 2) = 3mx + 2m - 21x - 14 \\checkmark\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3f-60",
@@ -12079,7 +12472,8 @@
               "explain": "Factor by grouping: group terms to extract the common bracket.",
               "work": "\\\\(3x(x + 3) - 1(x + 3) = (3x - 1)(x + 3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "sth2013-q16e-i",
@@ -12113,7 +12507,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q16e-ii",
@@ -12143,7 +12538,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -12184,7 +12580,8 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q16d",
@@ -12218,7 +12615,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sth2013-q16f",
@@ -12252,7 +12650,8 @@
             "school": "Sydney Technical High School",
             "examType": "Yearly Examination",
             "grade": "10"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -12282,7 +12681,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(6a^2+b\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q1b",
@@ -12309,7 +12709,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(5x^2+3xy\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q1c",
@@ -12336,7 +12737,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(4xy^2+4x^2-4x\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q1d",
@@ -12363,7 +12765,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(13a^2b^2-a^3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2a",
@@ -12386,7 +12789,8 @@
               "explain": "Collect",
               "work": "\\\\(7x+6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2b",
@@ -12409,7 +12813,8 @@
               "explain": "Collect",
               "work": "\\\\(2y+24\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2c",
@@ -12432,7 +12837,8 @@
               "explain": "Collect",
               "work": "\\\\(5x^2+2x\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2d",
@@ -12455,7 +12861,8 @@
               "explain": "Collect",
               "work": "\\\\(-2y^2+4y\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2e",
@@ -12478,7 +12885,8 @@
               "explain": "Collect",
               "work": "\\\\(3x^2+14x+8\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2f",
@@ -12501,7 +12909,8 @@
               "explain": "Collect",
               "work": "\\\\(6a^2+a-15\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2g",
@@ -12524,7 +12933,8 @@
               "explain": "Collect",
               "work": "\\\\(2y^2+11y+18\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q2h",
@@ -12547,7 +12957,8 @@
               "explain": "Collect",
               "work": "\\\\(-c^2+25c+4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q3a",
@@ -12570,7 +12981,8 @@
               "explain": "Expand outer",
               "work": "\\\\(8x^2+28x+24\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q3b",
@@ -12593,7 +13005,8 @@
               "explain": "Expand outer",
               "work": "\\\\(24a^2+30a-9\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q3c",
@@ -12620,7 +13033,8 @@
               "explain": "Collect",
               "work": "\\\\(10y^2+31y+6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q3d",
@@ -12647,7 +13061,8 @@
               "explain": "Collect",
               "work": "\\\\(6b^2+40b-4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4a",
@@ -12674,7 +13089,8 @@
               "explain": "Collect",
               "work": "\\\\(\\frac{11x+18}{12}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4b",
@@ -12697,7 +13113,8 @@
               "explain": "Collect",
               "work": "\\\\(\\frac{4a}{3}+\\frac{11}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4c",
@@ -12724,7 +13141,8 @@
               "explain": "Collect",
               "work": "\\\\(\\frac{5x^2+8x}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4d",
@@ -12747,7 +13165,8 @@
               "explain": "Collect terms",
               "work": "\\\\(-\\frac{5y^2}{8}-\\frac{y}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4e",
@@ -12770,7 +13189,8 @@
               "explain": "Collect",
               "work": "\\\\(\\frac{1}{2}x^2+\\frac{13}{6}x+\\frac{2}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q4f",
@@ -12793,7 +13213,8 @@
               "explain": "Collect",
               "work": "\\\\(-\\frac{2}{3}y^2+\\frac{13}{3}y+\\frac{73}{6}\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5a",
@@ -12816,7 +13237,8 @@
               "explain": "Divide by 3",
               "work": "\\\\(x = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5b",
@@ -12839,7 +13261,8 @@
               "explain": "Divide by -2",
               "work": "\\\\(y = -4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5c",
@@ -12866,7 +13289,8 @@
               "explain": "Divide",
               "work": "\\\\(x = -6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5d",
@@ -12893,7 +13317,8 @@
               "explain": "Divide",
               "work": "\\\\(y = -4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5e",
@@ -12920,7 +13345,8 @@
               "explain": "Divide",
               "work": "\\\\(x = 17/2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5f",
@@ -12951,7 +13377,8 @@
               "explain": "Divide",
               "work": "\\\\(y = -7/4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5g",
@@ -12978,7 +13405,8 @@
               "explain": "Divide by 3",
               "work": "\\\\(x = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5h",
@@ -13009,7 +13437,8 @@
               "explain": "Solve",
               "work": "\\\\(x = 3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5i",
@@ -13036,7 +13465,8 @@
               "explain": "Divide by 6",
               "work": "\\\\(x = 2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q5j",
@@ -13067,7 +13497,8 @@
               "explain": "Solve",
               "work": "\\\\(x = 32/3\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y10-3j-q7",
@@ -13102,7 +13533,8 @@
               "explain": "Running speed",
               "work": "\\\\(3 * 8 = 24\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q8",
@@ -13133,7 +13565,8 @@
               "explain": "Solve",
               "work": "\\\\(0.5x = 3 => x = 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q10",
@@ -13160,7 +13593,8 @@
               "explain": "Multiply",
               "work": "\\\\(P = 80 \\times 10^5 = 8.0 \\times 10^6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9a",
@@ -13183,7 +13617,8 @@
               "explain": "Divide",
               "work": "\\\\(x > 6\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9b",
@@ -13210,7 +13645,8 @@
               "explain": "Divide",
               "work": "\\\\(x \\ge 3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9c",
@@ -13241,7 +13677,8 @@
               "explain": "Solve",
               "work": "\\\\(x < 23\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9d",
@@ -13276,7 +13713,8 @@
               "explain": "Flip sign",
               "work": "\\\\(x \\le -8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9e",
@@ -13311,7 +13749,8 @@
               "explain": "Divide by -3 (flip sign)",
               "work": "\\\\(x \\le -4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q9f",
@@ -13342,7 +13781,8 @@
               "explain": "Divide",
               "work": "\\\\(x > 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13a",
@@ -13364,7 +13804,8 @@
               "explain": "Divide by p",
               "work": "\\\\(x = \\frac{r-q}{p}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13b",
@@ -13386,7 +13827,8 @@
               "explain": "Subtract q",
               "work": "\\\\(x = \\frac{r}{p}-q = \\frac{r-pq}{p}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13c",
@@ -13412,7 +13854,8 @@
               "explain": "Divide by p",
               "work": "\\\\(x = \\frac{mn-q}{p}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13d",
@@ -13438,7 +13881,8 @@
               "explain": "Divide by (m-n)",
               "work": "\\\\(x = \\frac{r-q}{m-n}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13e",
@@ -13461,7 +13905,8 @@
               "explain": "Multiply by m",
               "work": "\\\\(x = mn^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13f",
@@ -13487,7 +13932,8 @@
               "explain": "Invert both sides",
               "work": "\\\\(x = \\frac{mn}{m-n}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13g",
@@ -13514,7 +13960,8 @@
               "explain": "Rearrange for x",
               "work": "\\\\(x = m-pk^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13h",
@@ -13545,7 +13992,8 @@
               "explain": "Divide",
               "work": "\\\\(x = \\frac{m^2-nq}{np-m^2}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q13i",
@@ -13580,7 +14028,8 @@
               "explain": "Divide by 3",
               "work": "\\\\(x = \\frac{2y+14}{3}\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14a",
@@ -13604,7 +14053,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(x^2 - 16\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14b",
@@ -13628,7 +14078,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(x^2 - 9\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14c",
@@ -13652,7 +14103,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(4a^2 - 9\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14d",
@@ -13676,7 +14128,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(16x^2 - 9y^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14e",
@@ -13700,7 +14153,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{1}{9}a^2 - 4\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q14f",
@@ -13724,7 +14178,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{1}{4}x^2 - \\frac{1}{9}y^2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q15a",
@@ -13752,7 +14207,8 @@
               "explain": "The final factorised expression is:",
               "work": "\\\\((x+5)(x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q15b",
@@ -13780,7 +14236,8 @@
               "explain": "The final factorised expression is:",
               "work": "\\\\((a+7)(a-7)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q15c",
@@ -13808,7 +14265,8 @@
               "explain": "The final factorised expression is:",
               "work": "\\\\((8b+1)(8b-1)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q15d",
@@ -13836,7 +14294,8 @@
               "explain": "The final factorised expression is:",
               "work": "\\\\((4x+3y)(4x-3y)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16a",
@@ -13860,7 +14319,8 @@
               "explain": "Factorise",
               "work": "\\\\(x(x-12)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16b",
@@ -13884,7 +14344,8 @@
               "explain": "Factorise",
               "work": "\\\\(4x(x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16c",
@@ -13908,7 +14369,8 @@
               "explain": "Apply the Difference of Two Squares (DOTS) identity: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
               "work": "\\\\(3(2b-5)(2b+5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16d",
@@ -13932,7 +14394,8 @@
               "explain": "Apply the Difference of Two Squares (DOTS) identity: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
               "work": "\\\\(2(3b-4)(3b+4)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16e",
@@ -13956,7 +14419,8 @@
               "explain": "Apply the Difference of Two Squares (DOTS) identity: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
               "work": "\\\\(5(2x-3y)(2x+3y)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16f",
@@ -13980,7 +14444,8 @@
               "explain": "Apply the Difference of Two Squares (DOTS) identity: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
               "work": "\\\\(6(2a-3b)(2a+3b)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16g",
@@ -14004,7 +14469,8 @@
               "explain": "Factorise",
               "work": "\\\\((\\frac{1}{3}x-y)(\\frac{1}{3}x+y)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q16h",
@@ -14028,7 +14494,8 @@
               "explain": "Apply the Difference of Two Squares (DOTS) identity: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
               "work": "\\\\(2(\\frac{1}{3}x-\\frac{2}{5}y)(\\frac{1}{3}x+\\frac{2}{5}y)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17a",
@@ -14051,7 +14518,8 @@
               "explain": "Factorise",
               "work": "\\\\((x+3)(x+4)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17b",
@@ -14074,7 +14542,8 @@
               "explain": "Factorise",
               "work": "\\\\((x+4)(x+5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17c",
@@ -14097,7 +14566,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-2)(x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17d",
@@ -14120,7 +14590,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-2)(x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17e",
@@ -14143,7 +14614,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-3)(x-8)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17f",
@@ -14166,7 +14638,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-6)(x+2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17g",
@@ -14189,7 +14662,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-5)(x+3)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17h",
@@ -14212,7 +14686,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-7)(x+2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q17i",
@@ -14235,7 +14710,8 @@
               "explain": "Factorise",
               "work": "\\\\((x-8)(x+2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18a",
@@ -14262,7 +14738,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((3x+5)(x+1)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18b",
@@ -14289,7 +14766,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((2x+3)(x+4)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18c",
@@ -14316,7 +14794,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((2x+3)(2x+5)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18d",
@@ -14343,7 +14822,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((3x-1)(x-2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18e",
@@ -14370,7 +14850,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((4x-3)(x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18f",
@@ -14397,7 +14878,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((5x-7)(x-2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18g",
@@ -14424,7 +14906,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((4x+3)(x-2)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18h",
@@ -14451,7 +14934,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((3x+5)(x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q18i",
@@ -14478,7 +14962,8 @@
               "explain": "Factorise by grouping",
               "work": "\\\\((5x+2)(x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y10-3j-q19a",
@@ -14505,7 +14990,8 @@
               "explain": "Factorise",
               "work": "\\\\((3x+4)(2x+1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19b",
@@ -14532,7 +15018,8 @@
               "explain": "Factorise",
               "work": "\\\\((4x+1)(2x+3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19c",
@@ -14559,7 +15046,8 @@
               "explain": "Factorise",
               "work": "\\\\((3x+4)(2x+3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19d",
@@ -14586,7 +15074,8 @@
               "explain": "Factorise",
               "work": "\\\\((3x-4)(2x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19e",
@@ -14613,7 +15102,8 @@
               "explain": "Factorise",
               "work": "\\\\((4x-3)(2x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19f",
@@ -14640,7 +15130,8 @@
               "explain": "Factorise",
               "work": "\\\\((5x-3)(3x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19g",
@@ -14667,7 +15158,8 @@
               "explain": "Factorise",
               "work": "\\\\((3x-5)(2x+3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19h",
@@ -14694,7 +15186,8 @@
               "explain": "Factorise",
               "work": "\\\\((4x+1)(2x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q19i",
@@ -14721,7 +15214,8 @@
               "explain": "Factorise",
               "work": "\\\\((5x+7)(2x-3)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20a",
@@ -14744,7 +15238,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(3(x-7)(x+2)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20b",
@@ -14767,7 +15262,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(4(x+2)(x+4)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20c",
@@ -14790,7 +15286,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(5(x-4)(x+1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20d",
@@ -14813,7 +15310,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(2(2x+9)(x-1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20e",
@@ -14836,7 +15334,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(4(2x+5)(x-1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20f",
@@ -14859,7 +15358,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(5(2x+1)(x+2)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20g",
@@ -14882,7 +15382,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(5(3x+2)(x-4)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20h",
@@ -14905,7 +15406,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(-(x-3)(x-5)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q20i",
@@ -14928,7 +15430,8 @@
               "explain": "Factorise quadratic",
               "work": "\\\\(-2(2x+3)(x+1)\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21a",
@@ -14955,7 +15458,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{33x-22}{20}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21b",
@@ -14982,7 +15486,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{7x+17}{(x+2)(x+3)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21c",
@@ -15009,7 +15514,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{-3x-19}{(x+3)(x-2)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21d",
@@ -15036,7 +15542,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{x+3}{x(3x+2)(x+1)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21e",
@@ -15063,7 +15570,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{3x-10}{x(x+2)(x-2)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q21f",
@@ -15094,7 +15602,8 @@
               "explain": "Simplify the like terms",
               "work": "\\\\(\\frac{7x+16}{(x-4)(x+4)(x+1)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q22a",
@@ -15117,7 +15626,8 @@
               "explain": "Cancel common factors",
               "work": "\\\\(\\frac{(x+1)(x+3)}{(x+2)(x+4)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q22b",
@@ -15140,7 +15650,8 @@
               "explain": "Cancel common factors",
               "work": "\\\\(\\frac{x-4}{2x+1}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q22c",
@@ -15167,7 +15678,8 @@
               "explain": "Cancel",
               "work": "\\\\(\\frac{x+5}{x(x+2)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q22d",
@@ -15194,7 +15706,8 @@
               "explain": "Cancel",
               "work": "\\\\(\\frac{4x(x+4)}{-16(x+2)} = -\\frac{x(x+4)}{4(x+2)}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y10-3j-q6",
@@ -15228,7 +15741,8 @@
                   "work": "\\\\(x - 6\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-3j-q6b",
@@ -15256,7 +15770,8 @@
                   "work": "\\\\(23\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "options": [
@@ -15315,7 +15830,8 @@
                   "work": "\\\\(50.6\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-3j-q11b",
@@ -15343,7 +15859,8 @@
                   "work": "\\\\(\\frac{2(s-ut)}{t^2}\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "options": [
@@ -15402,7 +15919,8 @@
                   "work": "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y10-3j-q12b",
@@ -15430,7 +15948,8 @@
                   "work": "\\\\(\\frac{7\\pi^2}{8}\\\\)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "options": [

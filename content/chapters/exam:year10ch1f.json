@@ -31,7 +31,8 @@
               "work": "I = 2240"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q2",
@@ -59,7 +60,8 @@
               "work": "\\(N = \\frac{1530}{510} = 3\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q3",
@@ -91,7 +93,8 @@
               "work": "0.06 \\times 100\\% = 6\\%"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q4a",
@@ -115,7 +118,8 @@
               "work": "250 \\times 0.7 = 175"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q6a",
@@ -139,7 +143,8 @@
               "work": "\\(\\text{Original} = \\frac{15.60}{0.65} = 24\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q6b",
@@ -163,7 +168,8 @@
               "work": "\\(\\text{Original} = \\frac{52}{0.65} = 80\\)"
             }
           ],
-          "timeLimit": 30
+          "timeLimit": 30,
+          "xp": 1
         },
         {
           "id": "y10-1f-q10a",
@@ -191,7 +197,8 @@
               "work": "\\(\\text{Increase of 30\\%}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-1f-q10b",
@@ -219,7 +226,8 @@
               "work": "\\(\\text{Increase of 10\\%}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-1f-q10c",
@@ -247,7 +255,8 @@
               "work": "\\(\\text{Decrease of 30\\%}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-1f-q10d",
@@ -275,7 +284,8 @@
               "work": "\\(\\text{Decrease of 10\\%}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-1f-q11",
@@ -303,7 +313,8 @@
               "work": "$30693.31"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y10-1f-q12a",
@@ -327,7 +338,8 @@
               "work": "A \\approx 20073.38"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         }
       ]
     }

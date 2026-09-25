@@ -36,7 +36,8 @@
               "explain": "Match to original numbers",
               "work": "-\\frac{7}{6}, -\\frac{5}{8}, -0.05, 0.3, frac{15}{10}, frac{1}{0.5}"
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     }

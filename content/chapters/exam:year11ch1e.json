@@ -42,7 +42,8 @@
               "work": "\\( 3x - 4 \\)\\( x - 1 \\) = 0 \\Rightarrow x = 1, frac{4}{3}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "28b5b5587400b36fa5661953a6cacc08",
@@ -71,7 +72,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "2e20f8c8dfa884a2eff75040655549dc",
@@ -99,7 +101,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "2fe0e5358aa698159efceaefd4bfdcda",
@@ -127,7 +130,8 @@
               "work": "\\( 10(4 \\) + 7 = 47)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "34fb82c3ec8c5df6ffba7bb09010cd3b",
@@ -155,7 +159,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "35e8d9c99a6f09056cce7811f2d584fa",
@@ -183,7 +188,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "3b05b816e4499f2d4dbd6fba5432288e",
@@ -207,7 +213,8 @@
               "work": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, frac{5}{4}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "3b6eadddf1541fde142a2985473c8238",
@@ -247,7 +254,8 @@
               "work": "x = 3 - 2\\( 1 \\) = 1 \\quad \\text{and} \\quad x = 3 - 2\\( \\frac{5}{4} \\) = \\frac{1}{2}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "42bd9ca3e63bbeee1b2fd9cd5a710594",
@@ -275,7 +283,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "44224bf28f1a748f914f5709e2789728",
@@ -304,7 +313,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "4a6a54257f213a3728fdddb571713559",
@@ -333,7 +343,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "4eeae08b74aac0c8b4e31a8af76103d4",
@@ -362,7 +373,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "55cc4c5079f3dd2f8657d9de12f4ece6",
@@ -391,7 +403,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "6594d01c7b2ead4b270dea606dee53ca",
@@ -419,7 +432,8 @@
               "work": "\\( w = 10 \\\text{ m}, quad l = 15 \\\text{ m} \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "68547d33a9b1f5203ebc84ba2065fdb8",
@@ -443,7 +457,8 @@
               "work": "\\( y = 25 - 13 = 12 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "8038202108157639f28e58e9166578d8",
@@ -471,7 +486,8 @@
               "work": "\\( y = 3, quad x = 5 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "90b8e001d3e3eb99cf3481fd4972c2b7",
@@ -499,7 +515,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "9a7b4755f8d23742f112bae12b32097a",
@@ -527,7 +544,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "a836365201c6d81fcac465999d23ce73",
@@ -555,7 +573,8 @@
               "work": "\\( A = 80°, quad B = 40°, quad C = 60° \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "b201f4ae39eadf091befb338dfae20e2",
@@ -583,7 +602,8 @@
               "work": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, quad a = 6)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "b760544a298899134a26e5a446274832",
@@ -611,7 +631,8 @@
               "work": "\\( t = 5 \\\text{ or } t = 7 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "bef3cda3c9aaad5298a6a6f5484cd3b2",
@@ -640,7 +661,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "c741afa93212d157934ca37036157c8a",
@@ -664,7 +686,8 @@
               "work": "\\( x^2 = 25 \\Rightarrow x = \\pm 5, quad y = \\pm 5 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "caecba5d5f82149e0f4943d6e4a2e402",
@@ -692,7 +715,8 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "ddb8f37fc0e4c5df214181e142d94a35",
@@ -720,7 +744,8 @@
               "work": "\\( y = 6, quad x = 10 \\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "e0e4d6469f0b269ef847221ef8761118",
@@ -749,7 +774,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         }
       ]
     }

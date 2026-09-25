@@ -35,7 +35,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q1bi",
@@ -65,7 +66,8 @@
               "work": "\\(7\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q1bii",
@@ -95,7 +97,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q1c",
@@ -129,7 +132,8 @@
               "work": "\\(247\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q1d",
@@ -162,7 +166,8 @@
               "explain": "Compute \\(15\\times 188 = 15\\times 200 - 15\\times 12 = 3000 - 180 = 2820\\). Final answer: \\(S_{30} = 2820\\). Context: this is the total of the first thirty terms of the AP starting at 7 with difference 6.",
               "work": "\\(2820\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q3a",
@@ -190,7 +195,8 @@
               "work": "\\text{GP with } r=3"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q3bi",
@@ -220,7 +226,8 @@
               "work": "\\(4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q3bii",
@@ -250,7 +257,8 @@
               "work": "\\(3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q3c",
@@ -283,7 +291,8 @@
               "explain": "Final answer: \\(T_6 = 972\\). Spot-check: \\(T_1=4\\), \\(T_2=12\\), \\(T_3=36\\), \\(T_4=108\\), \\(T_5=324\\), \\(T_6=972\\).",
               "work": "\\(972\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q3d",
@@ -316,7 +325,8 @@
               "explain": "Final answer: \\(S_6 = 1456\\). Check: sum \\(4+12+36+108+324+972 = 1456\\).",
               "work": "\\(1456\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4a",
@@ -344,7 +354,8 @@
               "work": "\\text{GP: } r=\\dfrac{1}{3}"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q4bi",
@@ -374,7 +385,8 @@
               "work": "\\(162\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4bii",
@@ -404,7 +416,8 @@
               "work": "\\(\\dfrac{1}{3}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4c",
@@ -433,7 +446,8 @@
               "explain": "Final answer: \\(T_6 = \\dfrac{2}{3}\\). Spot-check the chain: \\(162,\\ 54,\\ 18,\\ 6,\\ 2,\\ \\dfrac{2}{3}\\).",
               "work": "\\(\\dfrac{2}{3}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4d",
@@ -467,7 +481,8 @@
               "work": "\\(\\dfrac{728}{3}\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4ei",
@@ -497,7 +512,8 @@
               "work": "\\(|r| < 1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q4eii",
@@ -527,7 +543,8 @@
               "work": "\\(243\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5ai",
@@ -556,7 +573,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q5aii",
@@ -589,7 +607,8 @@
               "work": "\\(43\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5aiii",
@@ -622,7 +641,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5aiv",
@@ -655,7 +675,8 @@
               "work": "\\(13\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5av",
@@ -688,7 +709,8 @@
               "work": "\\(1027\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5bi",
@@ -716,7 +738,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5bii",
@@ -749,7 +772,8 @@
               "work": "\\(-1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5ci",
@@ -778,7 +802,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q5cii",
@@ -811,7 +836,8 @@
               "work": "\\(-4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5ciii",
@@ -840,7 +866,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q5civ",
@@ -873,7 +900,8 @@
               "work": "\\(-4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5cv",
@@ -906,7 +934,8 @@
               "work": "\\(82n - 2n^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q5cvi",
@@ -935,7 +964,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6ai",
@@ -964,7 +994,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6aii",
@@ -997,7 +1028,8 @@
               "work": "\\(1.02\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6aiiii",
@@ -1030,7 +1062,8 @@
               "work": "\\(263.90\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6aiv",
@@ -1063,7 +1096,8 @@
               "work": "\\(3458.69\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6bi",
@@ -1092,7 +1126,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6bii",
@@ -1125,7 +1160,8 @@
               "work": "\\(1.2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6biii",
@@ -1158,7 +1194,8 @@
               "work": "\\(7441.6\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6biv",
@@ -1187,7 +1224,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6ci",
@@ -1216,7 +1254,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6cii",
@@ -1249,7 +1288,8 @@
               "work": "\\(1/3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6ciii",
@@ -1278,7 +1318,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q6civ",
@@ -1311,7 +1352,8 @@
               "work": "\\(53.999\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q6cv",
@@ -1340,7 +1382,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q7a",
@@ -1373,7 +1416,8 @@
               "work": "\\(96500\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q7b",
@@ -1406,7 +1450,8 @@
               "work": "\\(646000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q7c",
@@ -1439,7 +1484,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q8a",
@@ -1468,7 +1514,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q8b",
@@ -1501,7 +1548,8 @@
               "work": "\\(1.06\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q8c",
@@ -1534,7 +1582,8 @@
               "work": "\\(135327\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q8d",
@@ -1567,7 +1616,8 @@
               "work": "\\(890772\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9ci",
@@ -1595,7 +1645,8 @@
               "work": "The signs of the terms alternate between positive and negative (e.g.\n\\( a, -ar, ar^2, -ar^3, \\dots \\))."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9cii",
@@ -1623,7 +1674,8 @@
               "work": "All terms in the sequence are identical to the first term (it is a constant sequence: \\( a, a, a, \\dots \\))."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9ciii",
@@ -1651,7 +1703,8 @@
               "work": "The terms alternate in sign but remain constant in absolute value (e.g.\n\\( a, -a, a, -a, \\dots \\))."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9civ",
@@ -1679,7 +1732,8 @@
               "work": "The absolute value of the terms decreases, and the sequence converges towards zero."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q10a1",
@@ -1713,7 +1767,8 @@
               "work": "\\( \\$55000 \\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10a2",
@@ -1743,7 +1798,8 @@
               "work": "\\(\\$61\\,000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10a3",
@@ -1773,7 +1829,8 @@
               "work": "\\(\\$67\\,000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10a4",
@@ -1803,7 +1860,8 @@
               "work": "\\text{constant difference } d=6000\\ \\Rightarrow\\ \\text{AP}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10b1",
@@ -1833,7 +1891,8 @@
               "work": "\\(\\$45\\,000\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10b2",
@@ -1863,7 +1922,8 @@
               "work": "\\(\\$50\\,400\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10b3",
@@ -1893,7 +1953,8 @@
               "work": "\\(\\$56\\,448\\)"
             }
           ],
-          "timeLimit": 100
+          "timeLimit": 100,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10b4",
@@ -1923,7 +1984,8 @@
               "work": "\\text{constant ratio } r=1.12\\ \\Rightarrow\\ \\text{GP}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q10c",
@@ -1957,7 +2019,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q10d",
@@ -1991,7 +2054,8 @@
               "work": "\\(\\$2\\,481\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q11ai",
@@ -2024,7 +2088,8 @@
               "explain": "Final answer: \\(T_n = 4000n + 56000\\). Context: this linear formula gives Oliver-style arithmetic wage growth year by year, and is used in the next part to find when the salary doubles.",
               "work": "\\(T_n = 4000n + 56000\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q11aii",
@@ -2058,7 +2123,8 @@
               "work": "\\(16\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q11b",
@@ -2092,7 +2158,8 @@
               "work": "\\( \\$93080 \\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q12ai",
@@ -2123,7 +2190,8 @@
               "work": "\\(16\\ \\text{m}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q12aii",
@@ -2154,7 +2222,8 @@
               "work": "\\(24\\ \\text{m}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q12aiii",
@@ -2185,7 +2254,8 @@
               "work": "\\(32\\ \\text{m}\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q12b",
@@ -2220,7 +2290,8 @@
               "work": "\\(8n + 8\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q12ci",
@@ -2250,7 +2321,8 @@
               "explain": "Final answer: \\(8\\) troughs. Context: the row has eight feed troughs if the longest single round trip is 72 m.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q12cii",
@@ -2285,7 +2357,8 @@
               "work": "\\(352\\ \\text{m}\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q13a",
@@ -2323,7 +2396,8 @@
               "work": "\\(22\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q13b",
@@ -2356,7 +2430,8 @@
               "explain": "Final answer: \\(1683\\). Context: the sum of all the \"shopping days\" figures printed across the 22 Sunday advertisements.",
               "work": "\\(1683\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q13c",
@@ -2390,7 +2465,8 @@
               "work": "\\text{Wednesday}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q14a",
@@ -2423,7 +2499,8 @@
               "explain": "Final answer: \\(100000\\) active users on 1 February. Context: under linear (arithmetic) monthly growth, February sits exactly halfway in value between January and March.",
               "work": "\\(100000\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q14b",
@@ -2457,7 +2534,8 @@
               "work": "\\(60000\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q15a",
@@ -2490,7 +2568,8 @@
               "explain": "Final answer: \\(D = \\$5000\\). Context: each year Daniel's salary rises by five thousand dollars under this arithmetic salary model.",
               "work": "\\( \\$5000 \\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q15b",
@@ -2524,7 +2603,8 @@
               "work": "\\( \\$6000 \\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q15c",
@@ -2558,7 +2638,8 @@
               "work": "\\(14\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q15d",
@@ -2596,7 +2677,8 @@
               "work": "\\(14\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q16a1",
@@ -2626,7 +2708,8 @@
               "work": "\\(64,\\ 32,\\ 16\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q16a2",
@@ -2655,7 +2738,8 @@
               "explain": "Final answer: consecutive ratios both equal \\(\\dfrac{1}{2}\\), so the distances form a GP with \\(r = \\dfrac{1}{2}\\). Context: each run is half the distance of the previous run under this fitness pattern.",
               "work": "\\(r = \\dfrac{1}{2}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q16a3",
@@ -2689,7 +2773,8 @@
               "work": "\\(64\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q16a4",
@@ -2719,7 +2804,8 @@
               "work": "\\(\\dfrac{1}{2}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y12a-8a-q16b",
@@ -2748,7 +2834,8 @@
               "explain": "Final answer: \\(128\\) m. Context: even if the cone pattern continues forever, John's total running distance approaches 128 metres and never exceeds it.",
               "work": "\\(128\\ \\text{m}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q16c",
@@ -2778,7 +2865,8 @@
               "work": "\\(r = 2\\ \\text{(diverges)}\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 2
         },
         {
           "id": "y12a-8a-q17a",
@@ -2812,7 +2900,8 @@
               "work": "\\(\\left(\\dfrac{2}{3}\\right)^{\\frac{1}{5}}\\)"
             }
           ],
-          "timeLimit": 150
+          "timeLimit": 150,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q17b",
@@ -2846,7 +2935,8 @@
               "work": "\\(12.84\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8a-q18",
@@ -2881,7 +2971,8 @@
                   "explain": "Final answer: the series is a GP with first term \\(a = 1\\) and common ratio \\(r = \\cos^{2} x\\). Context: this is the standard GP setup used for infinite geometric series of powers of a fixed quantity.",
                   "work": "\\(a = 1,\\quad r = \\cos^{2} x\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18aii",
@@ -2910,7 +3001,8 @@
                   "explain": "Final answer: \\(0,\\ \\pi,\\ 2\\pi\\). Context: these are the only points in the given domain where the GP of cosine powers fails to have a limiting sum.",
                   "work": "\\(0,\\ \\pi,\\ 2\\pi\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18aiii",
@@ -2939,7 +3031,8 @@
                   "explain": "Final answer: \\(\\operatorname{cosec}^{2} x\\). Context: the infinite sum of successive even powers of cosine collapses to cosec squared via the GP limiting-sum formula.",
                   "work": "\\(\\operatorname{cosec}^{2} x\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18aiv",
@@ -2968,7 +3061,8 @@
                   "explain": "Final answer: the series sums to 1, matching \\(\\operatorname{cosec}^{2} x = 1\\). Context: a zero common ratio is a valid (and convergent) GP case.",
                   "work": "\\(S = 1\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18bi",
@@ -2997,7 +3091,8 @@
                   "explain": "Final answer: GP with common ratio \\(r = \\sin^{2} x\\). Context: this mirrors part (a) with sine replacing cosine.",
                   "work": "\\(a = 1,\\quad r = \\sin^{2} x\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18bii",
@@ -3026,7 +3121,8 @@
                   "explain": "Final answer: \\(\\dfrac{\\pi}{2},\\ \\dfrac{3\\pi}{2}\\). Context: at these angles sine has magnitude 1, so the geometric ratio is 1 and there is no finite limiting sum.",
                   "work": "\\(\\dfrac{\\pi}{2},\\ \\dfrac{3\\pi}{2}\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18biii",
@@ -3055,7 +3151,8 @@
                   "explain": "Final answer: \\(\\sec^{2} x\\). Context: the infinite sum of even powers of sine is sec squared when the GP converges.",
                   "work": "\\(\\sec^{2} x\\)"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q18biv",
@@ -3084,7 +3181,8 @@
                   "explain": "Final answer: the series sums to 1, matching \\(\\sec^{2} x = 1\\). Context: zero common ratio is a valid convergent GP case, parallel to \\(\\cos x = 0\\) in part (a).",
                   "work": "\\(S = 1\\)"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "hint": "Each series is a GP. Use |r|<1 for convergence and S_∞ = a/(1-r).",
@@ -3129,7 +3227,8 @@
                   "work": "\\(x = 36\\)"
                 }
               ],
-              "timeLimit": 180
+              "timeLimit": 180,
+              "xp": 3
             },
             {
               "id": "y12a-8a-q19b",
@@ -3163,7 +3262,8 @@
                   "work": "\\(x = 18\\)"
                 }
               ],
-              "timeLimit": 180
+              "timeLimit": 180,
+              "xp": 3
             },
             {
               "id": "y12a-8a-q19ci",
@@ -3197,7 +3297,8 @@
                   "work": "\\(x = 24\\)"
                 }
               ],
-              "timeLimit": 150
+              "timeLimit": 150,
+              "xp": 3
             },
             {
               "id": "y12a-8a-q19cii",
@@ -3226,7 +3327,8 @@
                   "explain": "Final answer: \\(72\\) m. Context: the elegant way to total an infinite geometric flight path is to multiply constant bee speed by the finite lifetime of the motion until the bulldozers collide.",
                   "work": "\\(72\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "Use closing speeds for each leg; total bee distance = 3V × total time.",
@@ -3266,7 +3368,8 @@
                   "work": "\\text{AP with } d=2"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 1
             },
             {
               "id": "y12a-8a-q2aii",
@@ -3296,7 +3399,8 @@
                   "work": "\\(2\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y12a-8a-q2aiii",
@@ -3326,7 +3430,8 @@
                   "work": "\\(2\\)"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y12a-8a-q2aiv",
@@ -3356,7 +3461,8 @@
                   "work": "\\(400\\)"
                 }
               ],
-              "timeLimit": 100
+              "timeLimit": 100,
+              "xp": 1
             },
             {
               "id": "y12a-8a-q2b",
@@ -3389,7 +3495,8 @@
                   "explain": "Final answer: \\(160400\\). Context: total of the first 400 positive even numbers.",
                   "work": "\\(160400\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "hint": "The terms form an AP. Find a, d, n, then use S_n = (1/2)n(a+l).",
@@ -3422,7 +3529,8 @@
                   "explain": "Evaluate.",
                   "work": "\\(T_8 = 59\\) rose plants"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q30b",
@@ -3449,7 +3557,8 @@
                   "explain": "Since \\(n\\) must be a whole row number, round up to the next integer.",
                   "work": "\\(\\therefore\\) Row 27 is the first row with more than 150 plants."
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q30c",
@@ -3480,7 +3589,8 @@
                   "explain": "Solve for \\(n\\), rejecting the negative (non-physical) solution.",
                   "work": "\\(n=30\\) or \\(n=-\\dfrac{193}{5}\\) (rejected, since \\(n\\) must be a positive whole number) \\(\\;\\Rightarrow\\; n=30\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -3511,7 +3621,8 @@
                   "explain": "Conclude that the sequence is geometric",
                   "work": "\\text{Common ratio } r = 3 \\text{ is constant}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q3bi",
@@ -3523,7 +3634,8 @@
                   "explain": "Identify the first term",
                   "work": "a = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q3bii",
@@ -3535,7 +3647,8 @@
                   "explain": "Identify the common ratio",
                   "work": "r = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q3c",
@@ -3555,7 +3668,8 @@
                   "explain": "Calculate the power and final value",
                   "work": "T_6 = 4 \\times 3^5 = 4 \\times 243 = 972"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q3d",
@@ -3575,7 +3689,8 @@
                   "explain": "Simplify the denominator and evaluate",
                   "work": "S_6 = \\frac{4(729 - 1)}{2} = 2 \\times 728 = 1456"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -3600,7 +3715,8 @@
                   "explain": "Confirm constant ratio",
                   "work": "\\text{GP with } r = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q4bi",
@@ -3612,7 +3728,8 @@
                   "explain": "State first term",
                   "work": "a = 162"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q4bii",
@@ -3624,7 +3741,8 @@
                   "explain": "State common ratio",
                   "work": "r = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q4c",
@@ -3644,7 +3762,8 @@
                   "explain": "Simplify the fraction",
                   "work": "T_6 = \\frac{162}{243} = \\frac{2}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q4d",
@@ -3664,7 +3783,8 @@
                   "explain": "Calculate product",
                   "work": "S_6 = 162 \\times \\frac{3}{2} \\times \\frac{728}{729} = 243 \\times \\frac{728}{729} = \\frac{728}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q4ei",
@@ -3680,7 +3800,8 @@
                   "explain": "Compare ratio",
                   "work": "\\left|\\frac{1}{3}\\right| < 1 \\implies \\text{converges}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q4eii",
@@ -3696,7 +3817,8 @@
                   "explain": "Calculate final sum",
                   "work": "S_{\\infty} = \\frac{162}{\\frac{2}{3}} = 162 \\times \\frac{3}{2} = 243"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -3717,7 +3839,8 @@
                   "explain": "Verify differences",
                   "work": "49 - 43 = 6, \\quad 55 - 49 = 6"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q5aii",
@@ -3729,7 +3852,8 @@
                   "explain": "Identify first term",
                   "work": "a = 43"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5aiii",
@@ -3741,7 +3865,8 @@
                   "explain": "Identify common difference",
                   "work": "d = 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5aiv",
@@ -3757,7 +3882,8 @@
                   "explain": "Find n",
                   "work": "6(n-1) = 72 \\implies n - 1 = 12 \\implies n = 13"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5av",
@@ -3773,7 +3899,8 @@
                   "explain": "Calculate value",
                   "work": "S_{13} = \\frac{13}{2} \\times 158 = 13 \\times 79 = 1027"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5bi",
@@ -3793,7 +3920,8 @@
                   "explain": "Calculate sum",
                   "work": "S_{41} = \\frac{41}{2} \\times 0 = 0"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5bii",
@@ -3813,7 +3941,8 @@
                   "explain": "Solve for d",
                   "work": "40d = -40 \\implies d = -1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5ci",
@@ -3825,7 +3954,8 @@
                   "explain": "Calculate differences",
                   "work": "76 - 80 = -4, \\quad 72 - 76 = -4"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q5cii",
@@ -3837,7 +3967,8 @@
                   "explain": "Identify common difference",
                   "work": "d = -4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5ciii",
@@ -3853,7 +3984,8 @@
                   "explain": "Simplify",
                   "work": "T_n = 80 - 4n + 4 = 84 - 4n"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q5civ",
@@ -3873,7 +4005,8 @@
                   "explain": "Find the 22nd term value",
                   "work": "T_{22} = 84 - 4 \\times 22 = 84 - 88 = -4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5cv",
@@ -3893,7 +4026,8 @@
                   "explain": "Multiply out",
                   "work": "S_n = n(82 - 2n) = 82n - 2n^2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q5cvi",
@@ -3913,7 +4047,8 @@
                   "explain": "Find least integer",
                   "work": "n_{\\text{min}} = 42"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -3934,7 +4069,8 @@
                   "explain": "Calculate consecutive ratios",
                   "work": "\\frac{204}{200} = 1.02, \\quad \\frac{208.08}{204} = 1.02"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q6aii",
@@ -3946,7 +4082,8 @@
                   "explain": "State common ratio",
                   "work": "r = 1.02"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6aiiii",
@@ -3962,7 +4099,8 @@
                   "explain": "Calculate value and round",
                   "work": "T_{15} \\approx 200 \\times 1.31947879 = 263.8957 \\approx 263.90"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6aiv",
@@ -3982,7 +4120,8 @@
                   "explain": "Round to two decimal places",
                   "work": "3458.69"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6bi",
@@ -3994,7 +4133,8 @@
                   "explain": "Calculate ratios",
                   "work": "\\frac{1200}{1000} = 1.2, \\quad \\frac{1440}{1200} = 1.2"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q6bii",
@@ -4006,7 +4146,8 @@
                   "explain": "State common ratio",
                   "work": "r = 1.2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6biii",
@@ -4022,7 +4163,8 @@
                   "explain": "Calculate value",
                   "work": "S_5 = \\frac{1000(2.48832 - 1)}{0.2} = 5000 \\times 1.48832 = 7441.6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6biv",
@@ -4038,7 +4180,8 @@
                   "explain": "Compare ratio",
                   "work": "1.2 > 1 \\implies \\text{no limiting sum}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q6ci",
@@ -4050,7 +4193,8 @@
                   "explain": "Verify consecutive ratios",
                   "work": "\\frac{12}{36} = \\frac{1}{3}, \\quad \\frac{4}{12} = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q6cii",
@@ -4062,7 +4206,8 @@
                   "explain": "State common ratio",
                   "work": "r = \\frac{1}{3}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6ciii",
@@ -4078,7 +4223,8 @@
                   "explain": "Calculate limiting sum",
                   "work": "S_{\\infty} = \\frac{36}{1 - \\frac{1}{3}} = 54"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q6civ",
@@ -4098,7 +4244,8 @@
                   "explain": "Round to 3 decimal places",
                   "work": "53.999"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q6cv",
@@ -4114,7 +4261,8 @@
                   "explain": "Conclude they are approximately equal",
                   "work": "53.999 \\approx 54.000"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -4149,7 +4297,8 @@
                   "explain": "Calculate salary",
                   "work": "T_8 = 65000 + 31500 = 96500"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q7b",
@@ -4175,7 +4324,8 @@
                   "explain": "Calculate total earnings",
                   "work": "S_8 = 4 \\times 161500 = 646000"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q7c",
@@ -4201,7 +4351,8 @@
                   "explain": "Find n",
                   "work": "n = 9"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -4226,7 +4377,8 @@
                   "explain": "Conclude it is GP",
                   "work": "\\text{GP with ratio } 1.06"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8a-q8b",
@@ -4244,7 +4396,8 @@
                   "explain": "Identify ratio",
                   "work": "r = 1.06"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q8c",
@@ -4270,7 +4423,8 @@
                   "explain": "Calculate value and round",
                   "work": "T_8 \\approx 90000 \\times 1.503630 = 135326.72 \\approx 135327"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8a-q8d",
@@ -4296,7 +4450,8 @@
                   "explain": "Calculate total sum and round",
                   "work": "S_8 = 1500000 \\times 0.5938481 \\approx 890772.15 \\approx 890772"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -4326,7 +4481,8 @@
               "explain": "Analyze the result.",
               "work": "\\text{Since } T_n = a \\text{ for all } n, \\text{ every term in the sequence is identical to the first term } a."
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9aii",
@@ -4353,7 +4509,8 @@
               "explain": "Conclude the behavior of the sequence.",
               "work": "\\text{Since each term is smaller than the previous one, the sequence is strictly decreasing.}"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8a-q9b",
@@ -4380,7 +4537,8 @@
               "explain": "Check if the defining property of a GP holds for these terms.",
               "work": "\\text{The common ratio } r \\text{ is defined as } \\frac{T_{n+1}}{T_n}. \\text{ However, for } n \\geq 2, \\frac{T_3}{T_2} = \\frac{0}{0}, \\text{ which is mathematically undefined.}"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -4423,7 +4581,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1b",
@@ -4459,7 +4618,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1c",
@@ -4495,7 +4655,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1d",
@@ -4526,7 +4687,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1e",
@@ -4562,7 +4724,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1f",
@@ -4598,7 +4761,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1g",
@@ -4634,7 +4798,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1h",
@@ -4670,7 +4835,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1i",
@@ -4706,7 +4872,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1j",
@@ -4737,7 +4904,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1k",
@@ -4773,7 +4941,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q1l",
@@ -4809,7 +4978,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q2a",
@@ -4838,7 +5008,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q2bi",
@@ -4871,7 +5042,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q2bii",
@@ -4904,7 +5076,8 @@
               "work": "\\(1.1\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q2c",
@@ -4937,7 +5110,8 @@
               "work": "\\(22.82\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q2d",
@@ -4970,7 +5144,8 @@
               "work": "\\(20\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q3a1",
@@ -4999,7 +5174,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q3a2",
@@ -5032,7 +5208,8 @@
               "work": "\\(1.06\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q3b1",
@@ -5065,7 +5242,8 @@
               "work": "\\(84474\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q3b2",
@@ -5098,7 +5276,8 @@
               "work": "\\(659040\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q3c",
@@ -5131,7 +5310,8 @@
               "work": "\\(12\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q4",
@@ -5167,7 +5347,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8b"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8b-q5a",
@@ -5199,7 +5380,8 @@
               "explain": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(6\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5b",
@@ -5231,7 +5413,8 @@
               "explain": "Final answer: 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5c",
@@ -5263,7 +5446,8 @@
               "explain": "Final answer: 23. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(23\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5d",
@@ -5290,7 +5474,8 @@
               "work": "\\(3\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5e",
@@ -5322,7 +5507,8 @@
               "explain": "Final answer: 10. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5f",
@@ -5354,7 +5540,8 @@
               "explain": "Final answer: 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5g",
@@ -5386,7 +5573,8 @@
               "explain": "Final answer: 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5h",
@@ -5418,7 +5606,8 @@
               "explain": "Final answer: 9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5i",
@@ -5450,7 +5639,8 @@
               "explain": "Final answer: 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5j",
@@ -5477,7 +5667,8 @@
               "work": "\\(3\\)"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5k",
@@ -5509,7 +5700,8 @@
               "explain": "Final answer: 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(5\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q5l",
@@ -5541,7 +5733,8 @@
               "explain": "Final answer: 10. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q6a",
@@ -5573,7 +5766,8 @@
               "explain": "Final answer: 20. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q6b",
@@ -5605,7 +5799,8 @@
               "explain": "Final answer: 12. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(12\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q6c",
@@ -5637,7 +5832,8 @@
               "explain": "Final answer: 16. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(16\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q7a1",
@@ -5669,7 +5865,8 @@
               "explain": "Final answer: 60%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(60%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q7a2",
@@ -5701,7 +5898,8 @@
               "explain": "Final answer: 36%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(36%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q7a3",
@@ -5733,7 +5931,8 @@
               "explain": "Final answer: 16%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(16%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q7b",
@@ -5761,7 +5960,8 @@
               "work": "Two layers of SF40 would let through \\( 0.6 \\times 0.6 = 0.36 = 36\\% \\) of UV light, which is exactly the amount of UV light let through by a single layer of SF64."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q7c",
@@ -5793,7 +5993,8 @@
               "explain": "Final answer: 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(4\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q7d",
@@ -5825,7 +6026,8 @@
               "explain": "Final answer: 8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(8\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q8a",
@@ -5857,7 +6059,8 @@
               "explain": "Final answer: 4*(0.75)^(n-1). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(4*(0.75)^(n-1)\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q8b",
@@ -5889,7 +6092,8 @@
               "explain": "Final answer: 16/3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(16/3\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q8ci",
@@ -5917,7 +6121,8 @@
               "work": "Substitute the formula: \\( 4 \\times 0.75^{n-1} < 0.02 \\implies 0.75^{n-1} < 0.005 \\).\nTake the reciprocal of both sides (which reverses the inequality):\n\\( \\left(\\frac{1}{0.75}\\right)^{n-1} > \\frac{1}{0.005} \\implies \\left(\\frac{4}{3}\\right)^{n-1} > 200 \\)."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q8cii",
@@ -5949,7 +6154,8 @@
               "explain": "Final answer: 20. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(20\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q9a",
@@ -5981,7 +6187,8 @@
               "explain": "Final answer: 9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q9b",
@@ -6013,7 +6220,8 @@
               "explain": "Final answer: 7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(7\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q10a",
@@ -6041,7 +6249,8 @@
               "work": "An increase of 400% adds 4 times the original amount to itself:\n\\( \\text{New Amount} = \\text{Original} + 400\\% \\times \\text{Original} = P + 4P = 5P \\).\nThus, the final amount is 5 times the original amount."
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q10b",
@@ -6073,7 +6282,8 @@
               "explain": "Final answer: 9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(9\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8b-q11a",
@@ -6106,7 +6316,8 @@
               "work": "\\(16*(1-0.75^n)\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q11bi",
@@ -6135,7 +6346,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8b-q11bii",
@@ -6168,7 +6380,8 @@
               "work": "\\(16\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q11c",
@@ -6201,7 +6414,8 @@
               "work": "\\(26\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8b-q2",
@@ -6227,7 +6441,8 @@
                   "explain": "Conclude that the sequence is geometric since the ratio is constant",
                   "work": "\\text{Common ratio } r = 1.1"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q2bi",
@@ -6245,7 +6460,8 @@
                   "explain": "Identify the first term from the sequence",
                   "work": "a = 8"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q2bii",
@@ -6263,7 +6479,8 @@
                   "explain": "Identify the common ratio from part a",
                   "work": "r = 1.1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q2c",
@@ -6289,7 +6506,8 @@
                   "explain": "Calculate value and round to two decimal places",
                   "work": "T_{12} \\approx 8 \\times 2.8531167 = 22.8249 \\approx 22.82"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q2d",
@@ -6315,7 +6533,8 @@
                   "explain": "State the number of terms satisfying the condition",
                   "work": "\\text{The first 20 terms are less than 50.}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -6336,7 +6555,8 @@
                   "explain": "Examine ratio between consecutive years' salaries",
                   "work": "\\frac{T_{n+1}}{T_n} = 1.06 \\quad (\\text{constant})"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q3a2",
@@ -6354,7 +6574,8 @@
                   "explain": "Identify the common ratio from the increment factor",
                   "work": "r = 1 + 0.06 = 1.06"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q3b1",
@@ -6380,7 +6601,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "T_{10} \\approx 50\\,000 \\times 1.689479 = 84473.95 \\approx 84\\,474"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q3b2",
@@ -6406,7 +6628,8 @@
                   "explain": "Calculate final sum and round",
                   "work": "S_{10} \\approx 659\\,039.75 \\approx 659\\,040"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q3c",
@@ -6432,7 +6655,8 @@
                   "explain": "Determine the smallest integer n",
                   "work": "n - 1 = 11 \\implies n = 12 \\text{ (Year 12)}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -6467,7 +6691,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 6"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5b",
@@ -6493,7 +6718,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 15"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5c",
@@ -6519,7 +6745,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 23"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5d",
@@ -6539,7 +6766,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5e",
@@ -6565,7 +6793,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 10"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5f",
@@ -6591,7 +6820,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 15"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5g",
@@ -6617,7 +6847,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5h",
@@ -6643,7 +6874,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 9"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5i",
@@ -6669,7 +6901,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 15"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5j",
@@ -6689,7 +6922,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5k",
@@ -6715,7 +6949,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q5l",
@@ -6741,7 +6976,8 @@
                   "explain": "Select the smallest integer n",
                   "work": "n_{\\text{min}} = 10"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -6779,7 +7015,8 @@
                   "explain": "Determine the largest integer n",
                   "work": "n - 1 \\le 19 \\implies n \\le 20 \\implies 20 \\text{ terms}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q6b",
@@ -6809,7 +7046,8 @@
                   "explain": "Find the smallest integer n",
                   "work": "n-1 \\ge 11 \\implies n \\ge 12 \\text{ (Year 12)}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q6c",
@@ -6839,7 +7077,8 @@
                   "explain": "Find the smallest integer n",
                   "work": "n-1 \\ge 15 \\implies n \\ge 16 \\text{ (Year 16)}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -6865,7 +7104,8 @@
                   "explain": "Subtract the percentage cut out from 100%",
                   "work": "100\\% - 40\\% = 60\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q7a2",
@@ -6883,7 +7123,8 @@
                   "explain": "Subtract the percentage cut out from 100%",
                   "work": "100\\% - 64\\% = 36\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q7a3",
@@ -6901,7 +7142,8 @@
                   "explain": "Subtract the percentage cut out from 100%",
                   "work": "100\\% - 84\\% = 16\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q7b",
@@ -6917,7 +7159,8 @@
                   "explain": "Compare to the fraction let through by SF64 (36%)",
                   "work": "36\\% = 36\\% \\implies \\text{Equivalent}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q7c",
@@ -6943,7 +7186,8 @@
                   "explain": "Calculate value and determine the smallest integer n",
                   "work": "n \\ge 3.59 \\implies n = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q7d",
@@ -6969,7 +7213,8 @@
                   "explain": "Calculate value and determine the smallest integer n",
                   "work": "n \\ge 7.66 \\implies n = 8"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -6993,7 +7238,8 @@
                   "explain": "Write the term formula",
                   "work": "T_n = a r^{n-1} = 4 \\times 0.75^{n-1}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q8b",
@@ -7009,7 +7255,8 @@
                   "explain": "Solve for H",
                   "work": "H = \\frac{4}{0.75} = \\frac{4}{\\frac{3}{4}} = \\frac{16}{3} \\approx 5.33 \\text{ metres}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q8ci",
@@ -7029,7 +7276,8 @@
                   "explain": "Take the reciprocal of both sides (reversing inequality)",
                   "work": "\\left(\\frac{1}{0.75}\\right)^{n-1} > \\frac{1}{0.005} \\implies \\left(\\frac{4}{3}\\right)^{n-1} > 200"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q8cii",
@@ -7049,7 +7297,8 @@
                   "explain": "Determine the smallest integer n",
                   "work": "n-1 \\ge 19 \\implies n \\ge 20 \\text{ (20 times)}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -7087,7 +7336,8 @@
                   "explain": "Find smallest integer n",
                   "work": "n-1 \\ge 8 \\implies n \\ge 9 \\text{ (Year 9)}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q9b",
@@ -7121,7 +7371,8 @@
                   "explain": "Find smallest integer n",
                   "work": "n = 7 \\text{ (Year 7)}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -7145,7 +7396,8 @@
                   "explain": "Combine terms",
                   "work": "\\text{New} = 5P \\implies \\text{multiply by } 5"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q10b",
@@ -7175,7 +7427,8 @@
                   "explain": "Find smallest integer n representing full years",
                   "work": "n = 9 \\text{ years}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -7209,7 +7462,8 @@
                   "explain": "Simplify",
                   "work": "S_n = 16(1 - 0.75^n)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q11bi",
@@ -7225,7 +7479,8 @@
                   "explain": "Verify condition",
                   "work": "|0.75| = 0.75 < 1 \\implies \\text{converges}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8b-q11bii",
@@ -7247,7 +7502,8 @@
                   "explain": "Calculate value",
                   "work": "S = \\frac{4}{0.25} = 16"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8b-q11c",
@@ -7277,7 +7533,8 @@
                   "explain": "Calculate value and find the smallest integer n",
                   "work": "n > 25.64 \\implies n = 26"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -7323,7 +7580,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1aii",
@@ -7356,7 +7614,8 @@
               "work": "\\(7200\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1bi",
@@ -7392,7 +7651,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1bii",
@@ -7425,7 +7685,8 @@
               "work": "\\(620\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1ci",
@@ -7461,7 +7722,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1cii",
@@ -7494,7 +7756,8 @@
               "work": "\\(12160\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1di",
@@ -7530,7 +7793,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q1dii",
@@ -7563,7 +7827,8 @@
               "work": "\\(19725\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2ai",
@@ -7599,7 +7864,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2aii",
@@ -7632,7 +7898,8 @@
               "work": "\\(998.91\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2bi",
@@ -7668,7 +7935,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2bii",
@@ -7701,7 +7969,8 @@
               "work": "\\(135.29\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2ci",
@@ -7737,7 +8006,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2cii",
@@ -7770,7 +8040,8 @@
               "work": "\\(2865.90\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2di",
@@ -7806,7 +8077,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q2dii",
@@ -7839,7 +8111,8 @@
               "work": "\\(2720.34\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3ai",
@@ -7875,7 +8148,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3aii",
@@ -7908,7 +8182,8 @@
               "work": "\\(1327.87\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3bi",
@@ -7944,7 +8219,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3bii",
@@ -7977,7 +8253,8 @@
               "work": "\\(243.45\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3ci",
@@ -8013,7 +8290,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3cii",
@@ -8046,7 +8324,8 @@
               "work": "\\(3548.22\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3di",
@@ -8082,7 +8361,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q3dii",
@@ -8115,7 +8395,8 @@
               "work": "\\(2752.04\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q4a",
@@ -8151,7 +8432,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q4b",
@@ -8187,7 +8469,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q4c",
@@ -8223,7 +8506,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q4d",
@@ -8259,7 +8543,8 @@
           "timeLimit": 90,
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8c-q5a",
@@ -8292,7 +8577,8 @@
               "work": "\\(9920\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q5b",
@@ -8325,7 +8611,8 @@
               "work": "\\(30000\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q5c",
@@ -8358,7 +8645,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q5d",
@@ -8391,7 +8679,8 @@
               "work": "\\(6%\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y12a-8c-q6a",
@@ -8424,7 +8713,8 @@
               "work": "\\(12000+660n\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q6b",
@@ -8453,7 +8743,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8c-q7a",
@@ -8486,7 +8777,8 @@
               "work": "\\(149923.84\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q7b",
@@ -8519,7 +8811,8 @@
               "work": "\\(100076.16\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q8a",
@@ -8552,7 +8845,8 @@
               "work": "Liam (Liam: \\(31,575, Sophia: \\)31,545)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q8b",
@@ -8585,7 +8879,8 @@
               "work": "Sophia, by 7.00"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q9a",
@@ -8617,7 +8912,8 @@
               "explain": "Final answer: 2160. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(2160\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q9b",
@@ -8652,7 +8948,8 @@
           ],
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q9c",
@@ -8687,7 +8984,8 @@
           ],
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q9d",
@@ -8722,7 +9020,8 @@
           ],
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q10a",
@@ -8750,7 +9049,8 @@
               "explain": "Calculate the final principal amount and round correctly.",
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate the Principal:</b><br>\n  Substitute the known values into our rearranged formula:\n  \\[ P = \\frac{35000}{(1 + 0.12)^8} \\]\n  \\[ P = \\frac{35000}{1.12^8} \\approx 14135.91 \\]\n  Rounding to the nearest dollar gives the final answer:\n  \\[ P \\approx \\$14,136 \\]\n</div>"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q10b",
@@ -8782,7 +9082,8 @@
               "explain": "Final answer: 12518. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(12518\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q10c",
@@ -8817,7 +9118,8 @@
           ],
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q11",
@@ -8849,7 +9151,8 @@
               "explain": "Final answer: 30158. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(30158\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q12a",
@@ -8881,7 +9184,8 @@
               "explain": "Final answer: 10788.82. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(10788.82\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q12b",
@@ -8913,7 +9217,8 @@
               "explain": "Final answer: 2788.82. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(2788.82\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q12c",
@@ -8945,7 +9250,8 @@
               "explain": "Final answer: 8.72%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(8.72%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q13a",
@@ -8977,7 +9283,8 @@
               "explain": "Final answer: 20235.27. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(20235.27\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q13b",
@@ -9009,7 +9316,8 @@
               "explain": "Final answer: 5.8%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(5.8%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q13c",
@@ -9041,7 +9349,8 @@
               "explain": "Final answer: 93. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(93\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q14",
@@ -9076,7 +9385,8 @@
           ],
           "alsoIn": [
             "exam:year12ach8c"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q15a",
@@ -9108,7 +9418,8 @@
               "explain": "Final answer: 21. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(21\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q15b",
@@ -9140,7 +9451,8 @@
               "explain": "Final answer: 21. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(21\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q15c",
@@ -9172,7 +9484,8 @@
               "explain": "Final answer: 10. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q15d",
@@ -9204,7 +9517,8 @@
               "explain": "Final answer: 7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(7\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q16a",
@@ -9236,7 +9550,8 @@
               "explain": "Final answer: 10. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(10\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q16b",
@@ -9268,7 +9583,8 @@
               "explain": "Final answer: 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q16c",
@@ -9300,7 +9616,8 @@
               "explain": "Final answer: 19. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(19\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q16d",
@@ -9332,7 +9649,8 @@
               "explain": "Final answer: 30. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(30\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q17",
@@ -9364,7 +9682,8 @@
               "explain": "Final answer: 126. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(126\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q18a1",
@@ -9396,7 +9715,8 @@
               "explain": "Final answer: 100((1.015)^12-1)%, 19.56%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(100((1.015)^12-1)%, 19.56%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q18a2",
@@ -9428,7 +9748,8 @@
               "explain": "Final answer: log(2)/log(1.015) months, 46.56 months. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "log(2)/log(1.015) months, 46.56 months"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q18b1",
@@ -9460,7 +9781,8 @@
               "explain": "Final answer: k=ln(1.015), 100(e^(12k)-1)%, 19.56%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "\\(k=ln(1.015), 100(e^(12k)-1)%, 19.56%\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q18b2",
@@ -9492,7 +9814,8 @@
               "explain": "Final answer: ln(2)/k months, 46.56 months. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
               "work": "ln(2)/k months, 46.56 months"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8c-q19",
@@ -9525,7 +9848,8 @@
               "work": "\\(7.0%\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8c-q20a",
@@ -9558,7 +9882,8 @@
               "work": "\\(4800\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q20b",
@@ -9591,7 +9916,8 @@
               "work": "\\(24800\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8c-q20c",
@@ -9624,7 +9950,8 @@
               "work": "\\(5.53%\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q21a",
@@ -9657,7 +9984,8 @@
               "work": "\\(29239\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q21b",
@@ -9690,7 +10018,8 @@
               "work": "\\(30000\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 2
         },
         {
           "id": "y12a-8c-q22a",
@@ -9719,7 +10048,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "y12a-8c-q22b",
@@ -9752,7 +10082,8 @@
               "work": "\\(9\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 3
         },
         {
           "id": "glenwood2020-q2",
@@ -9796,7 +10127,8 @@
           },
           "dna": {
             "dnaId": "FIN-INTEREST-01"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8c-q6",
@@ -9818,7 +10150,8 @@
                   "explain": "Expand formula",
                   "work": "A_n = 12000 + 660n"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q6b",
@@ -9838,7 +10171,8 @@
                   "explain": "Conclude based on calculations",
                   "work": "19920 \\le 20000 \\quad \\text{and} \\quad 20580 > 20000 \\implies \\text{Exceeds at 13 years}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -9863,7 +10197,8 @@
                   "explain": "Evaluate term",
                   "work": "A = 250000 \\times (0.88)^4 = 149923.84"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q7b",
@@ -9879,7 +10214,8 @@
                   "explain": "Calculate loss",
                   "work": "L = 250000 - 149923.84 = 100076.16"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9908,7 +10244,8 @@
                   "explain": "Compare the two values",
                   "work": "31575 > 31545 \\implies \\text{Liam has the better investment.}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q8b",
@@ -9928,7 +10265,8 @@
                   "explain": "Determine the difference in value",
                   "work": "31581.85 - 31575 = 6.85"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9953,7 +10291,8 @@
                   "explain": "Calculate using compound interest formula",
                   "work": "A = 8000 \\times (1.00625)^{48} \\approx 10788.82"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q12b",
@@ -9965,7 +10304,8 @@
                   "explain": "Subtract the principal from final value",
                   "work": "I = A - P = 10788.82 - 8000 = 2788.82"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q12c",
@@ -9981,7 +10321,8 @@
                   "explain": "Solve for simple interest rate \\( R \\)",
                   "work": "R = \\frac{2788.82}{32000} \\approx 0.08715 = 8.72\\%"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10011,7 +10352,8 @@
                   "explain": "Calculate the compound interest value",
                   "work": "A = 15000 \\times (1 + \\frac{0.05}{12})^{72} \\approx 20235.27"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q13b",
@@ -10033,7 +10375,8 @@
                   "explain": "Solve for rate \\( R \\)",
                   "work": "R = \\frac{5235.27}{90000} \\approx 0.05817 = 5.8\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q13c",
@@ -10059,7 +10402,8 @@
                   "explain": "Find smallest integer representing full months",
                   "work": "n = 93"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10093,7 +10437,8 @@
                   "explain": "Determine smallest integer n",
                   "work": "n = 10 \\text{ years}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q16b",
@@ -10119,7 +10464,8 @@
                   "explain": "Determine smallest integer n",
                   "work": "n = 15 \\text{ years}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q16c",
@@ -10145,7 +10491,8 @@
                   "explain": "Determine smallest integer n",
                   "work": "n = 19 \\text{ years}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q16d",
@@ -10171,7 +10518,8 @@
                   "explain": "Determine smallest integer n",
                   "work": "n = 30 \\text{ years}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10199,7 +10547,8 @@
                   "explain": "Calculate and round to four significant figures",
                   "work": "100 \\times (1.195618 - 1)\\% = 19.5618\\% \\approx 19.56\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q18a2",
@@ -10219,7 +10568,8 @@
                   "explain": "Calculate the value and round to four significant figures",
                   "work": "t \\approx 46.555 \\approx 46.56 \\text{ months}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q18b1",
@@ -10239,7 +10589,8 @@
                   "explain": "Find approximate value correct to four significant figures",
                   "work": "100 \\times (1.195618 - 1)\\% \\approx 19.56\\%"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q18b2",
@@ -10259,7 +10610,8 @@
                   "explain": "Calculate the value and round to four significant figures",
                   "work": "t \\approx 46.555 \\approx 46.56 \\text{ months}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -10285,7 +10637,8 @@
                   "explain": "Use simple interest formula \\( I = PRn \\)",
                   "work": "I = 20000 \\times 0.06 \\times 4 = 4800"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q20b",
@@ -10303,7 +10656,8 @@
                   "explain": "Add interest to the principal",
                   "work": "A = P + I = 20000 + 4800 = 24800"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8c-q20c",
@@ -10329,7 +10683,8 @@
                   "explain": "Convert to percentage and round to three significant figures",
                   "work": "R = 1.24^{0.25} - 1 \\approx 1.05525 - 1 = 5.525\\% \\approx 5.53\\%"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -10360,7 +10715,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "A_{incorrect} = 40814.68 \\times 0.716393 \\approx 29239.34 \\approx 29239"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8c-q21b",
@@ -10382,7 +10738,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "P = \\frac{40814.68}{1.360489} \\approx 30000"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -10411,7 +10768,8 @@
                   "explain": "Divide by 50000 to isolate exponential factor",
                   "work": "1.02^n = \\frac{59700.50}{50000} = 1.19401 \\approx 1.1940"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8c-q22b",
@@ -10437,7 +10795,8 @@
                   "explain": "Round to the nearest quarter",
                   "work": "n \\approx 9"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 180
@@ -10476,7 +10835,8 @@
               "work": "\\( A \\approx 1088.39 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1aii",
@@ -10505,7 +10865,8 @@
               "work": "\\( A \\approx 1007.77 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1aiii",
@@ -10534,7 +10895,8 @@
               "work": "\\( A \\approx 933.12 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1aiv",
@@ -10563,7 +10925,8 @@
               "work": "\\( A = 864.00 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1av",
@@ -10588,7 +10951,8 @@
               "work": "\\( \\text{Total} = 3893.28 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1bi",
@@ -10609,7 +10973,8 @@
               "work": "\\( 864, 933.12, 1007.77, 1088.39 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1bii",
@@ -10638,7 +11003,8 @@
               "work": "\\( n = 4 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q1biii",
@@ -10667,7 +11033,8 @@
               "work": "\\( S_4 \\approx 3893.28 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2ai",
@@ -10696,7 +11063,8 @@
               "work": "\\( A \\approx 2007.34 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2aii",
@@ -10725,7 +11093,8 @@
               "work": "\\( A \\approx 1893.72 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2aiii",
@@ -10758,7 +11127,8 @@
               "work": "\\( 1786.52, 1685.40, 1590.00 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2aiv",
@@ -10783,7 +11153,8 @@
               "work": "\\( \\text{Total} = 8962.98 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2bi",
@@ -10804,7 +11175,8 @@
               "work": "\\( 1590, 1685.40, 1786.52, 1893.72, 2007.34 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2bii",
@@ -10833,7 +11205,8 @@
               "work": "\\( n = 5 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q2biii",
@@ -10862,7 +11235,8 @@
               "work": "\\( S_5 \\approx 8962.98 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q3ai",
@@ -10887,7 +11261,8 @@
               "work": "\\( A = 2000(1.08)^{10} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q3aii",
@@ -10912,7 +11287,8 @@
               "work": "\\( A = 2000(1.08)^9 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q3aiii",
@@ -10937,7 +11313,8 @@
               "work": "\\( A = 2000(1.08)^1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q3aiv",
@@ -10962,7 +11339,8 @@
               "work": "\\( A_{10} = 2000(1.08)^1 + \\dots + 2000(1.08)^{10} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q3b",
@@ -10991,7 +11369,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q4ai",
@@ -11020,7 +11399,8 @@
               "work": "\\( A = 400(1.004)^{36} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q4aii",
@@ -11045,7 +11425,8 @@
               "work": "\\( A = 400(1.004)^{35} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q4aiii",
@@ -11070,7 +11451,8 @@
               "work": "\\( A = 400(1.004)^1 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q4aiv",
@@ -11095,7 +11477,8 @@
               "work": "\\( A_{36} = 400(1.004)^1 + \\dots + 400(1.004)^{36} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q4b",
@@ -11124,7 +11507,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q5ai",
@@ -11153,7 +11537,8 @@
               "work": "\\( A \\approx 16991 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q5aii",
@@ -11182,7 +11567,8 @@
               "work": "\\( A \\approx 15806 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q5aiii",
@@ -11211,7 +11597,8 @@
               "work": "\\( A = 4300 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q5aiv",
@@ -11236,7 +11623,8 @@
               "work": "\\( A_{20} = 4000(1.075)^1 + \\dots + 4000(1.075)^{20} \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q5b",
@@ -11261,7 +11649,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q5c",
@@ -11286,7 +11675,8 @@
               "work": "\\( \\text{Total contributions} = 4000 \\times 20 = 80000 \\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q6a",
@@ -11315,7 +11705,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q6b",
@@ -11340,7 +11731,8 @@
               "work": "\\( A_{25} \\approx 1184316 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q6c",
@@ -11365,7 +11757,8 @@
               "work": "\\( \\text{Excess} = 1184316 - 375000 = 809316 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q6d",
@@ -11386,7 +11779,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q6e",
@@ -11415,7 +11809,8 @@
               "work": "\\( M \\approx 18998 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q7a",
@@ -11440,7 +11835,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q7b",
@@ -11465,7 +11861,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q7ci",
@@ -11490,7 +11887,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q7cii",
@@ -11515,7 +11913,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q7ciii",
@@ -11548,7 +11947,8 @@
               "work": "\\( n = 22 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8a",
@@ -11573,7 +11973,8 @@
               "work": "\\text{Total investment} = 20 \\times 12000 = 240000"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8b",
@@ -11602,7 +12003,8 @@
               "work": "\\( A \\approx 55931 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8c",
@@ -11635,7 +12037,8 @@
               "work": "\\( A_{20} \\approx 593075 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8di",
@@ -11664,7 +12067,8 @@
               "work": "\\( A_n = 162000(1.08^n - 1) \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8dii",
@@ -11689,7 +12093,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8d-q8diii",
@@ -11722,7 +12127,8 @@
               "work": "\\( n = 28 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q8e",
@@ -11751,7 +12157,8 @@
               "work": "\\( M \\approx 24280 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q9a",
@@ -11776,7 +12183,8 @@
               "work": "\\( \\text{Total deposited} = 21 \\times 50 = 1050 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q9b",
@@ -11805,7 +12213,8 @@
               "work": "\\( \\text{Total received} = 2878.23 + 50 = 2928.23 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q10a",
@@ -11838,7 +12247,8 @@
               "work": "\\( A_7 \\approx 56678 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q10b",
@@ -11871,7 +12281,8 @@
               "work": "\\( A_{27} \\approx 518709 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q10c",
@@ -11904,7 +12315,8 @@
               "work": "\\( A_{40} \\approx 1465805 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q11a",
@@ -11937,7 +12349,8 @@
               "work": "\\( S_6 \\approx 157204 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q11b",
@@ -11970,7 +12383,8 @@
               "work": "\\( S_{12} \\approx 350447 \\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q12",
@@ -12006,7 +12420,8 @@
           "timeLimit": 360,
           "alsoIn": [
             "exam:year12ach8d"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-8d-q13a",
@@ -12039,7 +12454,8 @@
               "work": "\\( A_{40} \\approx 223825 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q13bi",
@@ -12072,7 +12488,8 @@
               "work": "\\( A_{25} \\approx 63164 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q13bii",
@@ -12105,7 +12522,8 @@
               "work": "\\( \\text{Payout} = 103329.25 \\approx 103329 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q14a",
@@ -12138,7 +12556,8 @@
               "work": "\\( A_{10} \\approx 44351 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8d-q14b",
@@ -12171,7 +12590,8 @@
               "work": "\\( n = \\frac{\\ln(3.1807)}{\\ln(1.07)} \\approx 17.1 \\implies n = 18 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "bb2020-q19",
@@ -12206,7 +12626,8 @@
                   "explain": "Multiply the annual payment by this factor to get the present value.",
                   "work": "\\(PV = 7500 \\times 6.2098 = \\$46\\,573.50\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "bb2020-q19b",
@@ -12236,7 +12657,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "\\(M = \\$3005.485\\ldots \\approx \\$3005.49\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "manual": true,
@@ -12282,7 +12704,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q32a",
@@ -12324,7 +12747,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hillsgrammar-25-2u-q32b",
@@ -12370,7 +12794,8 @@
             "school": "The Hills Grammar School",
             "examType": "Trial HSC",
             "grade": "12"
-          }
+          },
+          "xp": 4
         },
         {
           "id": "y12a-8d-q1",
@@ -12396,7 +12821,8 @@
                   "explain": "Round to the nearest cent",
                   "work": "A_1 \\approx 1088.39"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1aii",
@@ -12416,7 +12842,8 @@
                   "explain": "Round to the nearest cent",
                   "work": "A_2 \\approx 1007.77"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1aiii",
@@ -12432,7 +12859,8 @@
                   "explain": "Substitute into compound interest formula",
                   "work": "A_3 = 800 \\times (1.08)^2 = 933.12"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1aiv",
@@ -12448,7 +12876,8 @@
                   "explain": "Substitute into compound interest formula",
                   "work": "A_4 = 800 \\times 1.08 = 864"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1av",
@@ -12464,7 +12893,8 @@
                   "explain": "Evaluate the sum",
                   "work": "A_{\\text{total}} = 3893.28"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1bi",
@@ -12476,7 +12906,8 @@
                   "explain": "Arrange the values from smallest (fourth instalment) to largest (first instalment)",
                   "work": "\\text{Values: } 864, \\; 933.12, \\; 1007.77, \\; 1088.39"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1bii",
@@ -12488,7 +12919,8 @@
                   "explain": "Observe the terms of the GP: \\( 864, \\; 864(1.08), \\; 864(1.08)^2, \\; 864(1.08)^3 \\)",
                   "work": "a = 864, \\quad r = \\frac{933.12}{864} = 1.08, \\quad n = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q1biii",
@@ -12504,7 +12936,8 @@
                   "explain": "Calculate the sum and round to two decimal places",
                   "work": "S_4 = \\frac{864 \\times 0.36048896}{0.08} = 3893.28"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -12533,7 +12966,8 @@
                   "explain": "Round to nearest cent",
                   "work": "A_1 \\approx 2007.34"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2aii",
@@ -12549,7 +12983,8 @@
                   "explain": "Round to nearest cent",
                   "work": "A_2 \\approx 1893.72"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2aiii",
@@ -12561,7 +12996,8 @@
                   "explain": "The 3rd instalment earns 3 years of interest; 4th earns 2 years; 5th earns 1 year.",
                   "work": "A_3 = 1500(1.06)^3 \\approx 1786.52, \\quad A_4 = 1500(1.06)^2 = 1685.40, \\quad A_5 = 1500(1.06)^1 = 1590.00"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2aiv",
@@ -12577,7 +13013,8 @@
                   "explain": "Calculate the sum",
                   "work": "A_{\\text{total}} = 8962.98"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2bi",
@@ -12589,7 +13026,8 @@
                   "explain": "Arrange the calculated values from 5th instalment to 1st instalment",
                   "work": "\\text{Values: } 1590, \\; 1685.40, \\; 1786.52, \\; 1893.72, \\; 2007.34"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2bii",
@@ -12601,7 +13039,8 @@
                   "explain": "Observe terms of the GP: \\( 1590, \\; 1590(1.06), \\dots \\)",
                   "work": "a = 1590, \\quad r = 1.06, \\quad n = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q2biii",
@@ -12617,7 +13056,8 @@
                   "explain": "Calculate and round to two decimal places",
                   "work": "S_5 = \\frac{1590 \\times 0.33822558}{0.06} \\approx 8962.98"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -12638,7 +13078,8 @@
                   "explain": "The first contribution is made at the start and earns interest for all 10 years.",
                   "work": "A_1 = 2000 \\times (1.08)^{10}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q3aii",
@@ -12650,7 +13091,8 @@
                   "explain": "The second contribution is invested 1 year later, earning interest for 9 years.",
                   "work": "A_2 = 2000 \\times (1.08)^{9}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q3aiii",
@@ -12662,7 +13104,8 @@
                   "explain": "The tenth contribution is made at the start of the final year and compounds for 1 year.",
                   "work": "A_{10} = 2000 \\times 1.08"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q3aiv",
@@ -12674,7 +13117,8 @@
                   "explain": "Sum the compounding value of all 10 instalments in ascending order",
                   "work": "A_{10} = 2000(1.08) + 2000(1.08)^2 + \\dots + 2000(1.08)^{10}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q3b",
@@ -12694,7 +13138,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "A_{10} = 27000 \\times (1.08^{10} - 1) \\approx 27000 \\times 1.158925 = 31291"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -12715,7 +13160,8 @@
                   "explain": "Determine monthly interest rate: \\( 4.8\\% / 12 = 0.4\\% = 0.004 \\). First instalment compounds for 36 months.",
                   "work": "A_1 = 400 \\times (1 + 0.004)^{36} = 400 \\times (1.004)^{36}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q4aii",
@@ -12727,7 +13173,8 @@
                   "explain": "The second contribution is made 1 month later and compounds for 35 months.",
                   "work": "A_2 = 400 \\times (1.004)^{35}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q4aiii",
@@ -12739,7 +13186,8 @@
                   "explain": "The 36th contribution is made at the start of the final month and compounds for 1 month.",
                   "work": "A_{36} = 400 \\times 1.004"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q4aiv",
@@ -12751,7 +13199,8 @@
                   "explain": "Sum the compounding value of all 36 instalments in ascending order",
                   "work": "A_{36} = 400(1.004) + 400(1.004)^2 + \\dots + 400(1.004)^{36}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q4b",
@@ -12771,7 +13220,8 @@
                   "explain": "Calculate value and round to the nearest dollar",
                   "work": "A_{36} = 100400 \\times (1.004^{36} - 1) \\approx 100400 \\times 0.15425 = 15487"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 90
@@ -12796,7 +13246,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "A_1 = 4000 \\times 4.247851 = 16991.40 \\approx 16991"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q5aii",
@@ -12812,7 +13263,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "A_2 = 4000 \\times 3.951489 = 15805.96 \\approx 15806"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q5aiii",
@@ -12824,7 +13276,8 @@
                   "explain": "The 20th contribution is made at the start of the final year and compounds for 1 year.",
                   "work": "A_{20} = 4000 \\times 1.075 = 4300"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q5aiv",
@@ -12836,7 +13289,8 @@
                   "explain": "Sum the compounding value of all 20 instalments in ascending order",
                   "work": "A_{20} = 4000(1.075) + 4000(1.075)^2 + \\dots + 4000(1.075)^{20}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q5b",
@@ -12852,7 +13306,8 @@
                   "explain": "Write in specified format",
                   "work": "A_{20} = \\frac{4000 \\times 1.075 \\times (1.075^{20} - 1)}{0.075}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q5c",
@@ -12868,7 +13323,8 @@
                   "explain": "Calculate the total contribution amount",
                   "work": "\\text{Contributions} = 20 \\times 4000 = $80000"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -12893,7 +13349,8 @@
                   "explain": "Use GP sum formula",
                   "work": "A_{25} = \\frac{15000 \\times 1.08 \\times (1.08^{25} - 1)}{0.08}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q6b",
@@ -12915,7 +13372,8 @@
                   "explain": "Evaluate term to the nearest integer",
                   "work": "A_{25} \\approx 202500 \\times 5.848475 = 1184316.22 \\implies 1184316"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q6c",
@@ -12937,7 +13395,8 @@
                   "explain": "Subtract contributions from the total final value",
                   "work": "\\text{Excess} = 1184316 - 375000 = 809316"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q6d",
@@ -12953,7 +13412,8 @@
                   "explain": "Apply GP sum formula",
                   "work": "A_{25} = \\frac{M \\times 1.08 \\times (1.08^{25} - 1)}{0.08}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q6e",
@@ -12979,7 +13439,8 @@
                   "explain": "Evaluate the expression",
                   "work": "M \\approx 18998.31 \\implies 18998"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13004,7 +13465,8 @@
                   "explain": "Apply GP sum formula",
                   "work": "A_n = \\frac{M \\times 1.065 \\times (1.065^n - 1)}{0.065}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q7b",
@@ -13024,7 +13486,8 @@
                   "explain": "Evaluate",
                   "work": "M \\approx 21741.664 \\implies $21741.66"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q7ci",
@@ -13044,7 +13507,8 @@
                   "explain": "Add 1 to both sides",
                   "work": "(1.065)^n > \\frac{1000000 \\times 0.065}{21741.66 \\times 1.065} + 1"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q7cii",
@@ -13060,7 +13524,8 @@
                   "explain": "Add 1 and state result",
                   "work": "2.80718 + 1 = 3.8072 \\implies (1.065)^n > 3.8072"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q7ciii",
@@ -13080,7 +13545,8 @@
                   "explain": "Find smallest integer solution",
                   "work": "n = 22"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13111,7 +13577,8 @@
                   "explain": "Multiply number of payments by the instalment size",
                   "work": "\\text{Total investment} = 20 \\times 12000 = 240000"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q8b",
@@ -13137,7 +13604,8 @@
                   "explain": "Round to nearest dollar",
                   "work": "A \\approx 55931"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q8c",
@@ -13163,7 +13631,8 @@
                   "explain": "Round to nearest dollar",
                   "work": "A_{20} \\approx 593075"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q8di",
@@ -13185,7 +13654,8 @@
                   "explain": "Simplify coefficient",
                   "work": "A_n = 162000 \\times (1.08^n - 1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q8dii",
@@ -13205,7 +13675,8 @@
                   "explain": "Final form",
                   "work": "1.08^n > \\frac{200}{27} + 1"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8d-q8diii",
@@ -13231,7 +13702,8 @@
                   "explain": "Find smallest integer n",
                   "work": "n = 28"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q8e",
@@ -13257,7 +13729,8 @@
                   "explain": "Evaluate value",
                   "work": "M \\approx 24280.22 \\implies 24280"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13288,7 +13761,8 @@
                   "explain": "Multiply by deposit amount",
                   "work": "\\text{Total account deposits} = 21 \\times 50 = 1050"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q9b",
@@ -13314,7 +13788,8 @@
                   "explain": "Add the \\( \\$50 \\) cash given in hand on the 21st birthday",
                   "work": "\\text{Total received} = S_{21} + 50 = 2878.23 + 50 = 2928.23"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13349,7 +13824,8 @@
                   "explain": "Evaluate sum and round to nearest dollar",
                   "work": "S_7 = 86000 \\times (1.075^7 - 1) \\approx 56678.18 \\implies 56678"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q10b",
@@ -13375,7 +13851,8 @@
                   "explain": "Evaluate sum and round to nearest dollar",
                   "work": "S_{27} = 86000 \\times (1.075^{27} - 1) \\approx 86000 \\times 6.03149 = 518708.52 \\implies 518709"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q10c",
@@ -13401,7 +13878,8 @@
                   "explain": "Evaluate sum and round to nearest dollar",
                   "work": "S_{40} = 86000 \\times (1.075^{40} - 1) \\approx 86000 \\times 17.04424 = 1465804.70 \\implies 1465805"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13436,7 +13914,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "S_6 = \\frac{24000 \\times 0.229255}{0.035} \\approx 157203.66 \\implies 157204"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q11b",
@@ -13458,7 +13937,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "S_{12} = \\frac{24000 \\times 0.511069}{0.035} \\approx 350447.09 \\implies 350447"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -13493,7 +13973,8 @@
                   "explain": "Round to the nearest dollar",
                   "work": "S_{40} \\approx 223825"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q13bi",
@@ -13519,7 +14000,8 @@
                   "explain": "Round to the nearest dollar",
                   "work": "S_{25} \\approx 63164"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q13bii",
@@ -13545,7 +14027,8 @@
                   "explain": "Calculate and round to the nearest dollar",
                   "work": "\\text{Payout} = 63164 + 0.25 \\times 160661 = 63164 + 40165.25 = 103329.25 \\approx 103329"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -13580,7 +14063,8 @@
                   "explain": "Round to the nearest dollar",
                   "work": "S_{10} \\approx 44351"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8d-q14b",
@@ -13610,7 +14094,8 @@
                   "explain": "Find smallest integer n",
                   "work": "n = 18"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -13654,7 +14139,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1bi",
@@ -13686,7 +14172,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1bii",
@@ -13718,7 +14205,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1biii",
@@ -13750,7 +14238,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1biv",
@@ -13775,7 +14264,8 @@
               "work": "A = 288.59(1.06)^0 = 288.59(1) = 288.59"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1bv",
@@ -13806,7 +14296,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1ci",
@@ -13827,7 +14318,8 @@
               "work": "288.59, \\ 305.91, \\ 324.26, \\ 343.72"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1cii",
@@ -13851,7 +14343,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q1ciii",
@@ -13880,7 +14373,8 @@
               "work": "S_n \\approx 1262.476 \\approx 1262.48"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2a",
@@ -13914,7 +14408,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2bi",
@@ -13943,7 +14438,8 @@
               "work": "A \\approx 1576.689 \\approx 1576.69"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2bii",
@@ -13972,7 +14468,8 @@
               "work": "A \\approx 1516.047 \\approx 1516.05"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2biii",
@@ -14001,7 +14498,8 @@
               "work": "A \\approx 1457.744 \\approx 1457.74"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2biv",
@@ -14030,7 +14528,8 @@
               "work": "A \\approx 1401.670 \\approx 1401.67"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2bv",
@@ -14055,7 +14554,8 @@
               "work": "A = 1347.76(1.04)^0 = 1347.76(1) = 1347.76"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2bvi",
@@ -14086,7 +14586,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2ci",
@@ -14107,7 +14608,8 @@
               "work": "1347.76, \\ 1401.67, \\ 1457.74, \\ 1516.05, \\ 1576.69"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2cii",
@@ -14131,7 +14633,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q2ciii",
@@ -14160,7 +14663,8 @@
               "work": "S_n \\approx 7299.914 \\approx 7299.91"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3ai",
@@ -14187,7 +14691,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3aii",
@@ -14216,7 +14721,8 @@
               "work": "A \\approx 4591.028 \\approx 4591.03"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3aiii",
@@ -14245,7 +14751,8 @@
               "work": "A \\approx 4331.159 \\approx 4331.16"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3aiv",
@@ -14274,7 +14781,8 @@
               "work": "A \\approx 2880.433 \\approx 2880.43"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3av",
@@ -14299,7 +14807,8 @@
               "work": "A = 2717.39(1.06)^0 = 2717.39"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3avi",
@@ -14326,7 +14835,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3b",
@@ -14353,7 +14863,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q3c",
@@ -14387,7 +14898,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4ai",
@@ -14412,7 +14924,8 @@
               "work": "A = 120000(1.004)^{180}"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4aii",
@@ -14437,7 +14950,8 @@
               "work": "A = M(1.004)^{179}"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4aiii1",
@@ -14462,7 +14976,8 @@
               "work": "A = M(1.004)^{178}"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4aiii2",
@@ -14487,7 +15002,8 @@
               "work": "A = M(1.004)^0 = M(1) = M"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4aiv",
@@ -14508,7 +15024,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4b",
@@ -14529,7 +15046,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4c",
@@ -14550,7 +15068,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4d",
@@ -14575,7 +15094,8 @@
               "work": "\\(937.01\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q4e",
@@ -14603,7 +15123,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5ai",
@@ -14628,7 +15149,8 @@
               "work": "\\(15000*1.01^48\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5aii",
@@ -14653,7 +15175,8 @@
               "work": "\\(M*1.01^47\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5aiii1",
@@ -14678,7 +15201,8 @@
               "work": "\\(M*1.01^46\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5aiii2",
@@ -14703,7 +15227,8 @@
               "work": "\\(M\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5aiv",
@@ -14724,7 +15249,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5b",
@@ -14745,7 +15271,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q5c",
@@ -14770,7 +15297,8 @@
               "work": "\\(395\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 1
         },
         {
           "id": "y12a-8e-q6a",
@@ -14791,7 +15319,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q6b",
@@ -14812,7 +15341,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q6c",
@@ -14833,7 +15363,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q7a",
@@ -14854,7 +15385,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q7b",
@@ -14875,7 +15407,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q7c",
@@ -14900,7 +15433,8 @@
               "work": "\\(185,284 owing, more\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q7d",
@@ -14921,7 +15455,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q7e",
@@ -14942,7 +15477,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q7f",
@@ -14967,7 +15503,8 @@
               "work": "\\(70\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q8a",
@@ -14988,7 +15525,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q8b",
@@ -15009,7 +15547,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q8c",
@@ -15034,7 +15573,8 @@
               "work": "\\(59\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q9a",
@@ -15055,7 +15595,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q9b",
@@ -15076,7 +15617,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q9c",
@@ -15101,7 +15643,8 @@
               "work": "\\(1432.86\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q9d",
@@ -15129,7 +15672,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8e-q9e",
@@ -15154,7 +15698,8 @@
               "work": "\\(3.6%\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q10a",
@@ -15197,7 +15742,8 @@
           },
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8e-q10b",
@@ -15241,7 +15787,8 @@
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8e-q11a",
@@ -15284,7 +15831,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8e-q11b",
@@ -15303,7 +15851,8 @@
           "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8e-q11c",
@@ -15332,7 +15881,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q12a",
@@ -15361,7 +15911,8 @@
           "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8e-q12b",
@@ -15401,7 +15952,8 @@
           "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y12a-8e-q13a",
@@ -15434,7 +15986,8 @@
               "work": "PV = \\frac{4030}{1.030225} \\approx \\( \\$3911.77 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q13b",
@@ -15463,7 +16016,8 @@
               "work": "\\text{Interest saved} = \\( \\$88.23 \\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q14a",
@@ -15496,7 +16050,8 @@
               "work": "\\(A_{12} \\approx 209814.00 - 23308.25 = 186505.75 \\implies 186506\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q14b",
@@ -15533,7 +16088,8 @@
               "work": "\\(\\frac{M(1.006^{168} - 1)}{0.006} = 186505.75(1.006)^{168}\\)<br>\\(M = 186505.75 \\times \\frac{0.006 \\times 1.006^{168}}{1.006^{168} - 1}\\)<br>\\(M = 186505.75 \\times \\frac{0.0163906}{1.731776} \\approx 1765.17\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q15a",
@@ -15560,7 +16116,8 @@
           },
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-8e-q15b",
@@ -15581,7 +16138,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q15c",
@@ -15618,7 +16176,8 @@
               "work": "\\(M = \\frac{400000 \\times 1.005^{179} \\times 0.005}{1.005^{180} - 1}\\)<br>\\(M = \\frac{400000 \\times 2.441885 \\times 0.005}{2.454094 - 1}\\)<br>\\(M = \\frac{4883.77}{1.454094} \\approx 3358.63 \\implies 3359\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8e-q16",
@@ -15658,7 +16217,8 @@
           "timeLimit": 360,
           "alsoIn": [
             "exam:year12ach8e"
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y12a-8e-q17a",
@@ -15679,7 +16239,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q17b",
@@ -15716,7 +16277,8 @@
               "work": "\\(n = 61\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18a",
@@ -15743,7 +16305,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18b",
@@ -15770,7 +16333,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18c",
@@ -15797,7 +16361,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18d",
@@ -15824,7 +16389,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18e",
@@ -15853,7 +16419,8 @@
               "work": "M \\approx 1146.59"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8e-q18f",
@@ -15878,7 +16445,8 @@
               "work": "A_{300} \\approx 26882"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "glenwood2020-q23",
@@ -15910,7 +16478,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "PV = \\$124\\,103.39"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "glenwood2020-q23b",
@@ -15940,7 +16509,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "R \\approx \\$656.62"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "steps": [
@@ -16009,7 +16579,8 @@
                   "explain": "Evaluate. Pitfall: simply multiplying \\(1200\\times6=7200\\) (ignoring compounding interest entirely) gives the first distractor.",
                   "work": "\\(FV = \\$7569.72\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "gosford2020-q31b",
@@ -16035,7 +16606,8 @@
                   "explain": "Evaluate. Pitfall: reporting the annuity's final amount itself (\\$7569.72) instead of discounting it back to a present lump sum.",
                   "work": "\\(P \\approx \\$6721.69\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
@@ -16068,7 +16640,8 @@
                   "explain": "Form the balance expression.",
                   "work": "A_{180} = 180000 \\times 1.005^{180} - \\sum_{k=0}^{179} 1600 \\times 1.005^k"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q6b",
@@ -16084,7 +16657,8 @@
                   "explain": "Combine with the compounded loan principal.",
                   "work": "A_{180} = 180000 \\times 1.005^{180} - \\frac{1600(1.005^{180} - 1)}{0.005}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8e-q6c",
@@ -16100,7 +16674,8 @@
                   "explain": "Evaluate.",
                   "work": "A_{180} \\approx 441736.92 - 465310.08 = -23573.16"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -16125,7 +16700,8 @@
                   "explain": "Write the balance expression after \\( n \\) payments.",
                   "work": "A_n = 300000 \\times 1.005^n - \\sum_{k=0}^{n-1} 2200 \\times 1.005^k"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q7b",
@@ -16141,7 +16717,8 @@
                   "explain": "Combine terms.",
                   "work": "A_n = 300000 \\times 1.005^n - \\frac{2200(1.005^n - 1)}{0.005}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8e-q7c",
@@ -16167,7 +16744,8 @@
                   "explain": "Compare with half the principal ($150000).",
                   "work": "185284 > 150000 \\implies \\text{more}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q7d",
@@ -16183,7 +16761,8 @@
                   "explain": "Evaluate to the nearest dollar.",
                   "work": "A_{300} \\approx -185095.80 \\implies -$185,096"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q7e",
@@ -16203,7 +16782,8 @@
                   "explain": "Take the logarithm of both sides.",
                   "work": "n \\log 1.005 = \\log\\left(\\frac{22}{7}\\right) \\implies n = \\frac{\\log(22/7)}{\\log 1.005}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q7f",
@@ -16225,7 +16805,8 @@
                   "explain": "Round up to 230 months, then subtract from the contract term (300 months).",
                   "work": "\\text{Months early} = 300 - 230 = 70"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -16250,7 +16831,8 @@
                   "explain": "Write compound interest loan growth and repayment GP sum.",
                   "work": "\\text{Loan} = 400000(1.0055)^n, \\quad \\text{Payments} = 8000 \\times \\frac{1.0055^n - 1}{0.0055}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8e-q8b",
@@ -16266,7 +16848,8 @@
                   "explain": "Isolate the exponential term.",
                   "work": "1054545.45 \\times 1.0055^n = 1454545.45 \\implies 1.0055^n \\approx 1.3793 \\approx 1.38"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q8c",
@@ -16288,7 +16871,8 @@
                   "explain": "Evaluate the division and round to the next whole month.",
                   "work": "n \\approx \\frac{0.32208}{0.005485} \\approx 58.7 \\implies 59"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -16335,7 +16919,8 @@
                   "explain": "Solve for \\(M\\) and round to the nearest dollar.",
                   "work": "\\(\\frac{M(1.056^{10} - 1)}{0.056} = 40000(1.056)^{10}\\)<br>\\(M = 40000 \\times \\frac{0.056 \\times 1.056^{10}}{1.056^{10} - 1} \\approx \\frac{3862.736}{0.724436}\\)<br>\\(M \\approx 5331.78 \\implies 5332\\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q11b",
@@ -16351,7 +16936,8 @@
                   "explain": "Evaluate the terms.",
                   "work": "A_{10} \\approx 68977.44 - 95214.286 \\times 0.724436 \\approx 68977.44 - 68976.62 = 0.82"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q11c",
@@ -16363,7 +16949,8 @@
                   "explain": "Rounding the payment introduces a small error in each payment, which compounds over the term of the loan.",
                   "work": "\\text{Error} = 5332.00 - 5331.78 = 0.22"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -16394,7 +16981,8 @@
                   "explain": "Express the balance as the compounded principal minus the GP sum of payments.",
                   "work": "A_{300} = P \\times 1.005^{300} - \\sum_{k=0}^{299} 1800 \\times 1.005^k"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q12b",
@@ -16420,7 +17008,8 @@
                   "explain": "Evaluate the product.",
                   "work": "P \\approx 360000 \\times 0.776034 \\approx 279372.24"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -16459,7 +17048,8 @@
                   "explain": "Calculate PV by dividing both sides by \\( 1.015^2 = 1.030225 \\).",
                   "work": "PV = \\frac{4030}{1.030225} \\approx \\( \\$3911.77 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q13b",
@@ -16485,7 +17075,8 @@
                   "explain": "Interpretation: by saving up \\( \\$3911.77 \\) over two months instead of using the credit card, the cardholder would save \\( \\$88.23 \\) in interest charges.",
                   "work": "\\text{Interest saved} = \\( \\$88.23 \\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -16520,7 +17111,8 @@
                   "explain": "Evaluate and round to the nearest dollar.",
                   "work": "A_{12} \\approx 209814.00 - 23308.25 = 186505.75 \\implies 186506"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q14b",
@@ -16546,7 +17138,8 @@
                   "explain": "Substitute \\( 1.006^{168} \\approx 2.731776 \\).",
                   "work": "M = 186505.75 \\times \\frac{0.0163906}{1.731776} \\approx 1765.17"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -16567,7 +17160,8 @@
                   "explain": "Describe how interest charges change as principal reduces.",
                   "work": "\\text{Interest per month} = A_n \\times 0.004"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q17b",
@@ -16593,7 +17187,8 @@
                   "explain": "Take logarithms of both sides.",
                   "work": "n = \\frac{\\log 1.271186}{\\log 1.004} \\approx 60.1 \\implies 61"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -16624,7 +17219,8 @@
                   "explain": "The balance after 1 month is the principal plus interest, minus the instalment.",
                   "work": "A_1 = P(1 + 0.004) - M = 1.004P - M"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q18b",
@@ -16646,7 +17242,8 @@
                   "explain": "Simplifying the expression gives the recurrence relation.",
                   "work": "A_{n+1} = 1.004 A_n - M"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q18c",
@@ -16668,7 +17265,8 @@
                   "explain": "Extend the pattern to \\( n \\) months. The principal is multiplied by \\( 1.004^n \\), and the instalments form a series of \\( n \\) terms.",
                   "work": "A_n = 1.004^n P - M(1 + 1.004 + \\dots + 1.004^{n-1})"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q18d",
@@ -16690,7 +17288,8 @@
                   "explain": "Since \\( \\frac{1}{0.004} = 250 \\), we can substitute this back into the expression for \\( A_n \\).",
                   "work": "A_n = 1.004^n P - 250 M(1.004^n - 1)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q18e",
@@ -16716,7 +17315,8 @@
                   "explain": "Evaluate the expression.",
                   "work": "M \\approx 1146.59"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8e-q18f",
@@ -16738,7 +17338,8 @@
                   "explain": "Evaluate the expression and round to the nearest dollar.",
                   "work": "A_{300} \\approx 26882"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -16777,7 +17378,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q1b",
@@ -16810,7 +17412,8 @@
               "work": "\\(20\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q1c",
@@ -16843,7 +17446,8 @@
               "work": "\\(2970\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q2a",
@@ -16872,7 +17476,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q2b",
@@ -16901,7 +17506,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q2ci",
@@ -16934,7 +17540,8 @@
               "work": "\\(32\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q2cii",
@@ -16967,7 +17574,8 @@
               "work": "\\(31.969\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q2ciii",
@@ -16996,7 +17604,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q3a",
@@ -17029,7 +17638,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q3b",
@@ -17062,7 +17672,8 @@
               "work": "\\(119\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q3c",
@@ -17095,7 +17706,8 @@
               "work": "\\(59\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q3d",
@@ -17128,7 +17740,8 @@
               "work": "\\(8\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q4",
@@ -17164,7 +17777,8 @@
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8f"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y12a-8f-q5",
@@ -17197,7 +17811,8 @@
               "work": "\\(25\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q6a",
@@ -17226,7 +17841,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q6bi",
@@ -17259,7 +17875,8 @@
               "work": "\\(69810\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q6bii",
@@ -17292,7 +17909,8 @@
               "work": "\\(566005\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q7a",
@@ -17325,7 +17943,8 @@
               "work": "\\(47000+5000n\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q7b",
@@ -17358,7 +17977,8 @@
               "work": "\\(2023\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q8",
@@ -17391,7 +18011,8 @@
               "work": "\\(2033\\)"
             }
           ],
-          "timeLimit": 240
+          "timeLimit": 240,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q9a",
@@ -17424,7 +18045,8 @@
               "work": "\\(19059.62\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q9b",
@@ -17457,7 +18079,8 @@
               "work": "\\(4059.62\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q9c",
@@ -17490,7 +18113,8 @@
               "work": "\\(5.41%\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q10a",
@@ -17523,7 +18147,8 @@
               "work": "\\(19683\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q10b",
@@ -17556,7 +18181,8 @@
               "work": "\\(2579\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q10c",
@@ -17589,7 +18215,8 @@
               "work": "\\(45725\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q10d",
@@ -17622,7 +18249,8 @@
               "work": "\\(3931\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q11a",
@@ -17651,7 +18279,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q11b",
@@ -17684,7 +18313,8 @@
               "work": "\\(148035\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q11c",
@@ -17717,7 +18347,8 @@
               "work": "\\(58035\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q11d",
@@ -17746,7 +18377,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q12a",
@@ -17775,7 +18407,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q12b",
@@ -17808,7 +18441,8 @@
               "work": "\\(15387.48\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q13a",
@@ -17841,7 +18475,8 @@
               "work": "\\(170000*1.005^180 - 1450(1 + ... + 1.005^179)\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q13b",
@@ -17870,7 +18505,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q13c",
@@ -17899,7 +18535,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q13d",
@@ -17932,7 +18569,8 @@
               "work": "\\(1434.56\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q14a",
@@ -17965,7 +18603,8 @@
               "work": "\\(1500000*1.004^n - 16500(1 + ... + 1.004^(n-1))\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q14b",
@@ -17994,7 +18633,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 3
         },
         {
           "id": "y12a-8f-q14c",
@@ -18027,7 +18667,8 @@
               "work": "\\(789,567 owing, more\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q14d",
@@ -18056,7 +18697,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q14e",
@@ -18085,7 +18727,8 @@
             }
           ],
           "manual": true,
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q14f",
@@ -18118,7 +18761,8 @@
               "work": "\\(6\\)"
             }
           ],
-          "timeLimit": 360
+          "timeLimit": 360,
+          "xp": 2
         },
         {
           "id": "y12a-8f-q1",
@@ -18140,7 +18784,8 @@
                   "explain": "Write down the first term and common difference.",
                   "work": "a = 25, \\quad d = 13"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q1b",
@@ -18162,7 +18807,8 @@
                   "explain": "Solve for \\( n \\).",
                   "work": "13(n-1) = 247 \\implies n-1 = 19 \\implies n = 20"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q1c",
@@ -18184,7 +18830,8 @@
                   "explain": "Evaluate the sum.",
                   "work": "S_{20} = 10 \\times 297 = 2970"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -18205,7 +18852,8 @@
                   "explain": "Find the ratio between successive terms.",
                   "work": "\\frac{T_2}{T_1} = \\frac{8}{16} = 0.5, \\quad \\frac{T_3}{T_2} = \\frac{4}{8} = 0.5"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q2b",
@@ -18217,7 +18865,8 @@
                   "explain": "Check if the ratio satisfies the convergence condition.",
                   "work": "|r| = 0.5 < 1"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q2ci",
@@ -18233,7 +18882,8 @@
                   "explain": "Evaluate.",
                   "work": "S_{\\infty} = \\frac{16}{0.5} = 32"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q2cii",
@@ -18253,7 +18903,8 @@
                   "explain": "Round to three decimal places.",
                   "work": "S_{10} \\approx 31.969"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q2ciii",
@@ -18269,7 +18920,8 @@
                   "explain": "Round the 10-term sum to three significant figures.",
                   "work": "S_{10} = 31.96875 \\approx 32.0"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -18304,7 +18956,8 @@
                   "explain": "Find the smallest integer.",
                   "work": "n = 8"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q3b",
@@ -18330,7 +18983,8 @@
                   "explain": "Find the smallest integer.",
                   "work": "n = 119"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q3c",
@@ -18356,7 +19010,8 @@
                   "explain": "Find the smallest integer.",
                   "work": "n = 59"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q3d",
@@ -18382,7 +19037,8 @@
                   "explain": "Find the smallest integer.",
                   "work": "n = 8"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -18403,7 +19059,8 @@
                   "explain": "State the multiplier for consecutive years.",
                   "work": "T_{k+1} = T_k \\times 1.05 \\implies r = 1.05"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q6bi",
@@ -18419,7 +19076,8 @@
                   "explain": "Evaluate and round to the nearest dollar.",
                   "work": "T_{10} \\approx 45000 \\times 1.551328 \\approx 69809.77 \\implies 69810"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q6bii",
@@ -18439,7 +19097,8 @@
                   "explain": "Evaluate and round to the nearest dollar.",
                   "work": "S_{10} \\approx 566005.14 \\implies 566005"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -18470,7 +19129,8 @@
                   "explain": "Simplify the expression.",
                   "work": "T_n = 52000 + 5000n - 5000 = 47000 + 5000n"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q7b",
@@ -18500,7 +19160,8 @@
                   "explain": "Find the year corresponding to \\( n = 12 \\). Note 2012 corresponds to \\( n = 1 \\).",
                   "work": "\\text{Year} = 2012 + 11 = 2023"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 240
@@ -18529,7 +19190,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "A \\approx 15000 \\times 1.270641 \\approx 19059.62"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q9b",
@@ -18545,7 +19207,8 @@
                   "explain": "Evaluate.",
                   "work": "\\text{Interest} = 4059.62"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q9c",
@@ -18565,7 +19228,8 @@
                   "explain": "Convert to percentage and round to three significant figures.",
                   "work": "R \\approx 5.41\\%"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -18596,7 +19260,8 @@
                   "explain": "Evaluate the formula.",
                   "work": "A = 30000 \\times (0.9)^4 = 30000 \\times 0.6561 = 19683"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q10b",
@@ -18622,7 +19287,8 @@
                   "explain": "Round to the nearest dollar.",
                   "work": "\\text{Average Loss} \\approx 2579"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q10c",
@@ -18648,7 +19314,8 @@
                   "explain": "Round to the nearest dollar.",
                   "work": "P_0 \\approx 45725"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q10d",
@@ -18674,7 +19341,8 @@
                   "explain": "Round to the nearest dollar.",
                   "work": "\\text{Average Loss} \\approx 3931"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -18699,7 +19367,8 @@
                   "explain": "Apply the GP sum formula with \\( a = 6360 \\) and \\( r = 1.06 \\).",
                   "work": "A_{15} = \\frac{6360 \\times (1.06^{15} - 1)}{0.06} = \\frac{6000 \\times 1.06 \\times (1.06^{15} - 1)}{0.06}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q11b",
@@ -18721,7 +19390,8 @@
                   "explain": "Multiply and round to the nearest dollar.",
                   "work": "A_{15} \\approx 106000 \\times 1.396558 = 148035.148 \\implies 148035"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q11c",
@@ -18743,7 +19413,8 @@
                   "explain": "Subtract contributions from the final value.",
                   "work": "\\text{Excess} = 148035 - 90000 = 58035"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q11d",
@@ -18763,7 +19434,8 @@
                   "explain": "Verify inequality.",
                   "work": "275975 > 264000"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "timeLimit": 360
@@ -18788,7 +19460,8 @@
                   "explain": "Use GP sum formula.",
                   "work": "A_n = \\frac{1.06M(1.06^n - 1)}{0.06}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q12b",
@@ -18808,7 +19481,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "M = \\frac{36000}{2.339563} \\approx 15387.48"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -18833,7 +19507,8 @@
                   "explain": "Form the balance expression.",
                   "work": "A_{180} = 170000 \\times 1.005^{180} - 1450(1 + 1.005 + \\dots + 1.005^{179})"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q13b",
@@ -18849,7 +19524,8 @@
                   "explain": "Combine with the compounded loan principal.",
                   "work": "A_{180} = 170000 \\times 1.005^{180} - \\frac{1450(1.005^{180} - 1)}{0.005}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q13c",
@@ -18865,7 +19541,8 @@
                   "explain": "Evaluate the terms.",
                   "work": "A_{180} \\approx 417195.98 - 421687.26 = -4491.28"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q13d",
@@ -18885,7 +19562,8 @@
                   "explain": "Evaluate and round to the nearest cent.",
                   "work": "M \\approx 1434.56"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360
@@ -18916,7 +19594,8 @@
                   "explain": "Write the balance expression after \\( n \\) months.",
                   "work": "A_n = 1500000 \\times 1.004^n - 16500(1 + 1.004 + \\dots + 1.004^{n-1})"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q14b",
@@ -18932,7 +19611,8 @@
                   "explain": "Form the simplified balance expression.",
                   "work": "A_n = 1500000 \\times 1.004^n - \\frac{16500(1.004^n - 1)}{0.004}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y12a-8f-q14c",
@@ -18958,7 +19638,8 @@
                   "explain": "Compare the owing amount with half of the principal ($750000).",
                   "work": "789567 > 750000 \\implies \\text{more}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q14d",
@@ -18974,7 +19655,8 @@
                   "explain": "Evaluate to the nearest dollar.",
                   "work": "A_{120} \\approx -113138.63 \\implies -$113139"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q14e",
@@ -18994,7 +19676,8 @@
                   "explain": "Take base-10 logarithms of both sides.",
                   "work": "n \\log_{10} 1.004 = \\log_{10}(11/7) \\implies n = \\frac{\\log_{10}(11/7)}{\\log_{10} 1.004}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y12a-8f-q14f",
@@ -19016,7 +19699,8 @@
                   "explain": "Round up to 114 months, then subtract from the contract term (120 months).",
                   "work": "\\text{Months early} = 120 - 114 = 6"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 360

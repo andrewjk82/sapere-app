@@ -40,7 +40,8 @@
               "work": "\\(p^2 + 2pq + q^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6b",
@@ -74,7 +75,8 @@
               "work": "\\(p^2 - 2pq + q^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6c",
@@ -108,7 +110,8 @@
               "work": "\\(p^2 - q^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6d",
@@ -142,7 +145,8 @@
               "work": "\\(b^2 + 8b + 16\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6e",
@@ -176,7 +180,8 @@
               "work": "\\(c^2 - 10c + 25\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6f",
@@ -210,7 +215,8 @@
               "work": "\\(d^2 + 12d + 36\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6g",
@@ -244,7 +250,8 @@
               "work": "\\(e^2 - 49\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6h",
@@ -278,7 +285,8 @@
               "work": "\\(64 - k^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6i",
@@ -312,7 +320,8 @@
               "work": "\\(81 + 18m + m^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6j",
@@ -346,7 +355,8 @@
               "work": "\\(100 - 20n + n^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6k",
@@ -380,7 +390,8 @@
               "work": "\\(v^2 - 144\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6l",
@@ -414,7 +425,8 @@
               "work": "\\(w^2 + 26w + 169\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6m",
@@ -448,7 +460,8 @@
               "work": "\\(9x^2 + 12x + 4\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6n",
@@ -482,7 +495,8 @@
               "work": "\\(16y^2 - 40y + 25\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6o",
@@ -516,7 +530,8 @@
               "work": "\\(25z^2 + 30z + 9\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6p",
@@ -550,7 +565,8 @@
               "work": "\\(9p^2 + 24pq + 16q^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6q",
@@ -584,7 +600,8 @@
               "work": "\\(16u^2 - 25v^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q6r",
@@ -618,7 +635,8 @@
               "work": "\\(25m^2 - 9n^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q7a",
@@ -648,7 +666,8 @@
               "work": "u^2 + 2 + \\frac{1}{u^2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q7b",
@@ -678,7 +697,8 @@
               "work": "u^2 - 2 + \\frac{1}{u^2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y11e1-1a-q7c",
@@ -708,7 +728,8 @@
               "work": "u^2 - \\frac{1}{u^2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         }
       ]
     }

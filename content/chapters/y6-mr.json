@@ -34,7 +34,8 @@
               "explain": "Thus, 2.1 multiplied by 4 equals 8.4.",
               "work": "\\\\(2.1 \\\\times 4 = 8.4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-q8b",
@@ -62,7 +63,8 @@
               "explain": "We simplify 19.0 to the whole number 19.",
               "work": "\\\\(19.0 = 19\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-q8c",
@@ -90,7 +92,8 @@
               "explain": "Thus, the product of 6.4 and 8 is 51.2.",
               "work": "\\\\(6.4 \\\\times 8 = 51.2\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-q9a",
@@ -118,7 +121,8 @@
               "explain": "Divide the tenths digit: 8 divided by 2 is 4. Placing this after the decimal point yields 3.4.",
               "work": "\\\\(8 \\\\div 2 = 4 \\\\implies 3.4\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-q9b",
@@ -146,7 +150,8 @@
               "explain": "Carry the remainder of 2 into the tenths column, combining it with 5 to make 25 tenths. Divide: 25 divided by 5 is 5.",
               "work": "\\\\(25 \\\\div 5 = 5 \\\\implies 1.5\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-q9c",
@@ -174,7 +179,8 @@
               "explain": "Divide the tenths digit: 4 divided by 4 is 1. Putting the components together gives 2.1.",
               "work": "\\\\(4 \\\\div 4 = 1 \\\\implies 2.1\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-l2-q9a",
@@ -198,7 +204,8 @@
               "explain": "Insert the decimal point since the factor 5.4 has one decimal place.",
               "work": "\\\\(378 \\\\implies 37.8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l2-q9b",
@@ -222,7 +229,8 @@
               "explain": "Position the decimal point to match the single decimal place in the factor 13.2.",
               "work": "\\\\(660 \\\\implies 66.0 = 66\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l2-q9c",
@@ -250,7 +258,8 @@
               "explain": "Place the decimal point in the product so that there are 2 places after it.",
               "work": "\\\\(28 \\\\implies 0.28\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l2-q10a",
@@ -274,7 +283,8 @@
               "explain": "Carry the remainder of 1 into the tenths column, giving 15 tenths. Divide: 15 divided by 5 is 3.",
               "work": "\\\\(15 \\\\div 5 = 3 \\\\implies 1.3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l2-q10b",
@@ -298,7 +308,8 @@
               "explain": "Combine the remainder 3 with the tenths digit 2 to get 32 tenths. Divide: 32 divided by 4 is 8.",
               "work": "\\\\(32 \\\\div 4 = 8 \\\\implies 0.8\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l2-q10c",
@@ -322,7 +333,8 @@
               "explain": "Combine the remainder 2 with the hundredths digit 1 to make 21 hundredths. Divide: 21 divided by 3 is 7.",
               "work": "\\\\(21 \\\\div 3 = 7 \\\\implies 0.07\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l2-q11c",
@@ -346,7 +358,8 @@
               "explain": "Since the factor $3.47 has two decimal places, the product must also have two decimal places.",
               "work": "\\\\(1735 \\\\implies \\$17.35\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l2-q11d",
@@ -374,7 +387,8 @@
               "explain": "Carry the remainder of 2 to make 25 hundredths. 25 divided by 5 is 5.",
               "work": "\\\\(25 \\\\div 5 = 5 \\\\implies \\$1.25\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q7a",
@@ -398,7 +412,8 @@
               "explain": "Place the decimal point back. Since 12.5 has one decimal place, the answer must have one decimal place.",
               "work": "\\\\(875 \\\\implies 87.5\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q7b",
@@ -426,7 +441,8 @@
               "explain": "Insert the decimal point to show two decimal places.",
               "work": "\\\\(15 \\\\implies 0.15\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q7c",
@@ -450,7 +466,8 @@
               "explain": "Count decimal places in factors. 0.32 has two decimal places, so the product must have two decimal places.",
               "work": "\\\\(256 \\\\implies 2.56\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q8a",
@@ -474,7 +491,8 @@
               "explain": "Carry the remainder of 1 to the tenths column to make 18 tenths. Divide: 18 divided by 6 is 3.",
               "work": "\\\\(18 \\\\div 6 = 3 \\\\implies 2.3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q8b",
@@ -502,7 +520,8 @@
               "explain": "Carry 1 to the tenths column to make 15 tenths. Divide: 15 divided by 5 is 3.",
               "work": "\\\\(15 \\\\div 5 = 3 \\\\implies 27.3\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q8c",
@@ -530,7 +549,8 @@
               "explain": "Carry 5 to make 56 hundredths. Divide: 56 divided by 7 is 8.",
               "work": "\\\\(56 \\\\div 7 = 8 \\\\implies 6.38\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l3-q9a",
@@ -554,7 +574,8 @@
               "explain": "Perform the shift on the decimal number 7.31.",
               "work": "\\\\(7.31 \\\\times 10 = 73.1\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-l3-q9b",
@@ -578,7 +599,8 @@
               "explain": "Move the decimal point on 6.32. After moving two places, it becomes 632. We must add one trailing zero placeholder to complete the three-place shift.",
               "work": "\\\\(6.32 \\\\times 1000 = 6320\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q9c",
@@ -602,7 +624,8 @@
               "explain": "Perform the decimal shift on the number 4.089.",
               "work": "\\\\(4.089 \\\\times 100 = 408.9\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q10a",
@@ -626,7 +649,8 @@
               "explain": "Shift the decimal point of 73.2 to obtain the quotient.",
               "work": "\\\\(73.2 \\\\div 10 = 7.32\\\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-mr-2-l3-q10b",
@@ -650,7 +674,8 @@
               "explain": "Perform the decimal shift on the number 816.9.",
               "work": "\\\\(816.9 \\\\div 100 = 8.169\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q10c",
@@ -674,7 +699,8 @@
               "explain": "Move the decimal point on 27.35. Since there are only two digits to the left of the decimal, add one leading zero as a placeholder.",
               "work": "\\\\(27.35 \\\\div 1000 = 0.02735\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l3-q12c",
@@ -702,7 +728,8 @@
               "explain": "Format the value as money by adding a trailing zero in the hundredths place to show cents.",
               "work": "\\\\(74.2 = \\$74.20\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l3-q12d",
@@ -726,7 +753,8 @@
               "explain": "Shift the decimal point of 13.50 one place to the left to find the value in dollars.",
               "work": "\\\\(\\$13.50 \\\\div 10 = \\$1.35\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q5a",
@@ -750,7 +778,8 @@
               "explain": "Re-insert the two decimal places to format the product as dollars and cents.",
               "work": "\\\\(22932 \\\\implies \\$229.32\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q5b",
@@ -774,7 +803,8 @@
               "explain": "Place the decimal point. Since the original value has two decimal places, the answer must also have two decimal places.",
               "work": "\\\\(9792 \\\\implies \\$97.92\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l4-q5c",
@@ -798,7 +828,8 @@
               "explain": "Position the decimal point to match the two decimal places of the currency value.",
               "work": "\\\\(26001 \\\\implies \\$260.01\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l4-q6a",
@@ -826,7 +857,8 @@
               "explain": "Carry the remainder 6 to the hundredths place to make 63. 63 divided by 9 is 7.",
               "work": "\\\\(63 \\\\div 9 = 7 \\\\implies \\$5.67\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q6b",
@@ -854,7 +886,8 @@
               "explain": "Carry 1 to make 14 hundredths. Divide: 14 divided by 7 is 2.",
               "work": "\\\\(14 \\\\div 7 = 2 \\\\implies \\$4.72\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q6c",
@@ -882,7 +915,8 @@
               "explain": "Carry 3 to make 36 hundredths. Divide: 36 divided by 12 is 3.",
               "work": "\\\\(36 \\\\div 12 = 3 \\\\implies \\$8.73\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l4-q8a",
@@ -910,7 +944,8 @@
               "explain": "Write the result with two decimal places using a placeholder zero.",
               "work": "\\\\(0.3 \\\\times 0.3 = 0.09\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q8b",
@@ -934,7 +969,8 @@
               "explain": "Add the product 2.1 to the first term 4.1.",
               "work": "\\\\(4.1 + 2.1 = 6.2\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q8c",
@@ -962,7 +998,8 @@
               "explain": "Perform addition: add 6.4 to the result.",
               "work": "\\\\(7.31 + 6.4 = 13.71\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l4-q9b",
@@ -990,7 +1027,8 @@
               "explain": "Re-insert the two decimal places of the factor 8.75.",
               "work": "\\\\(4375 \\\\implies 43.75\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l4-q9d",
@@ -1022,7 +1060,8 @@
               "explain": "Carry 2 to make 25 hundredths. 25 divided by 5 is 5.",
               "work": "\\\\(25 \\\\div 5 = 5 \\\\implies 1.75\\\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-mr-2-l5-q4",
@@ -1054,7 +1093,8 @@
               "explain": "State the final conclusion with appropriate units. The warehouse robot will travel a total distance of 109.8 metres in one minute.",
               "work": "\\\\(\\text{Total Distance} = 109.8\\\\text{ m}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q5",
@@ -1086,7 +1126,8 @@
               "explain": "Write the final cost with the currency symbol. The total cost to buy 8.5 metres of carbon fiber tape is \\\\(\\$39.95\\\\).",
               "work": "\\\\(\\text{Total Cost} = \\\\$39.95\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q6",
@@ -1118,7 +1159,8 @@
               "explain": "Conclude that the average cycle time is 10.7 seconds. This represents the central tendency of the assembly time.",
               "work": "\\\\(\\text{Average} = 10.7\\\\text{ seconds}\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q7",
@@ -1150,7 +1192,8 @@
               "explain": "Confirm the final cost in dollars. The total cost of the liquid nitrogen is \\\\(\\$10.92\\\\).",
               "work": "\\\\(\\text{Total Cost} = \\\\$10.92\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q8",
@@ -1182,7 +1225,8 @@
               "explain": "Conclude with the final cost in dollars. The client will be charged \\\\(\\$259.70\\\\) for the printing service.",
               "work": "\\\\(\\text{Total Cost} = \\\\$259.70\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q9",
@@ -1218,7 +1262,8 @@
               "explain": "Express the result in currency terms. The average operating cost of the heating pump is \\\\(\\$8.35\\\\) per hour.",
               "work": "\\\\(\\text{Hourly Cost} = \\\\$8.35\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y6-mr-2-l5-q10",
@@ -1250,7 +1295,8 @@
               "explain": "Confirm the final credit amount. The household will receive a total credit of \\\\(\\$112.00\\\\).",
               "work": "\\\\(\\text{Total Credit} = \\\\$112.00\\\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

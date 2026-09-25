@@ -36,7 +36,8 @@
               "work": "\\(-\\frac{1}{6} + 1 - \\frac{8}{9} = -\\frac{3}{18} + \\frac{18}{18} - \\frac{16}{18} = -\\frac{1}{18}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1h-q4c",
@@ -65,7 +66,8 @@
               "work": "\\(8 - \\frac{1}{4} + \\frac{1}{2} = 8 + \\frac{1}{4} = \\frac{33}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y9-1h-q4d",
@@ -94,7 +96,8 @@
               "work": "\\(\\frac{1}{4} - 24 + 1 = \\frac{1}{4} - 23 = -\\frac{91}{4}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

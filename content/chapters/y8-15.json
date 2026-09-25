@@ -199,7 +199,8 @@
               "work": "\\(\\text{Shaded Area} = \\text{Total Area} - \\text{Cut-out Area}\\)<br>\\(\\text{Shaded Area} = 40 - 8 = 32\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15a-q2b",
@@ -322,7 +323,8 @@
               "work": "\\(\\text{Shaded Area} = \\text{Total Area} - \\text{Unshaded Area}\\)<br>\\(\\text{Shaded Area} = 60 - 30 = 30\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15a-q2c",
@@ -461,7 +463,8 @@
               "work": "\\(\\text{Shaded Area} = \\text{Outer Area} - \\text{Inner Area}\\)<br>\\(\\text{Shaded Area} = 225 - 81 = 144\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15a-q2d",
@@ -602,7 +605,8 @@
               "work": "\\(\\text{Area} = \\frac{(16 + 6)}{2} \\times 9\\)<br>\\(\\text{Area} = \\frac{22}{2} \\times 9\\)<br>\\(\\text{Area} = 11 \\times 9 = 99\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15a-q3",
@@ -630,7 +634,8 @@
           ],
           "alsoIn": [
             "exam:year8ch15"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q4",
@@ -666,7 +671,8 @@
           ],
           "alsoIn": [
             "exam:year8ch15"
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q5a",
@@ -764,7 +770,8 @@
               "explain": "Multiply the numbers together (\\(3 \\times 5 = 15\\)) and write the variables next to each other to express multiplication in algebra.",
               "work": "\\(\\text{Area} = (3 \\times 5) \\times (x \\times y)\\)<br>\\(\\text{Area} = 15xy\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q5b",
@@ -850,7 +857,8 @@
               "explain": "Square both the number (\\(4^2 = 16\\)) and the variable (\\(a^2 = a^2\\)) to find the final algebraic expression.",
               "work": "\\(\\text{Area} = 4^2 \\times a^2\\)<br>\\(\\text{Area} = 16a^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q5c",
@@ -945,7 +953,8 @@
               "explain": "Multiply the terms in the numerator (\\(10 \\times 9 = 90\\) and \\(y \\times x = xy\\)), and then divide by 2.",
               "work": "\\(\\text{Area} = \\frac{90xy}{2}\\)<br>\\(\\text{Area} = 45xy\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q5d",
@@ -1056,7 +1065,8 @@
               "explain": "Finally, add the two areas together to find the total area of the compound figure.",
               "work": "\\(\\text{Total Area} = 16m^2 + 8m^2\\)<br>\\(\\text{Total Area} = 24m^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-15a-q6",
@@ -1092,7 +1102,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-15a-q7a",
@@ -1123,7 +1134,8 @@
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "y8-15a-q7b",
@@ -1151,7 +1163,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(120\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q8a",
@@ -1179,7 +1192,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q8b",
@@ -1207,7 +1221,8 @@
           "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-15a-q9",
@@ -1240,7 +1255,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(16\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10a",
@@ -1268,7 +1284,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(30\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10b",
@@ -1296,7 +1313,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(21\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10c",
@@ -1324,7 +1342,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(15 by 10.5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10d",
@@ -1352,7 +1371,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(94.5\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10e",
@@ -1380,7 +1400,8 @@
               "explain": "Evaluate the mathematical expression and calculate the result.",
               "work": "\\(15\\)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y8-15a-q10f",
@@ -1412,7 +1433,8 @@
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-ep1-q2a_area",
@@ -1439,7 +1461,8 @@
               "explain": "Substitute the values and calculate.",
               "work": "\\(\\text{Area} = \\frac{1}{2} \\times 14 \\times 8.2 = 7 \\times 8.2 = 57.4\\text{ m}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y8-ep1-q2b_area",
@@ -1466,7 +1489,8 @@
               "explain": "Substitute the values and calculate.",
               "work": "\\(\\text{Area} = 22 \\times 13 = 286\\text{ m}^2\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1503,7 +1527,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1542,7 +1567,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1583,7 +1609,8 @@
           "timeLimit": 90,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "hghs-y7-t4-2024-pav-6b",
@@ -1625,7 +1652,8 @@
           "timeLimit": 180,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         }
       ]
     },
@@ -1667,7 +1695,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 3
         },
         {
           "id": "y8-ep1-q4_volume",
@@ -1698,7 +1727,8 @@
               "explain": "Calculate the result to 2 decimal places.",
               "work": "\\(V \\approx 3.14159 \\times 2.56 \\times 3.7 \\approx 29.757... \\approx 29.76\\text{ m}^3\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1739,7 +1769,8 @@
           ],
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "hghs-y7-t4-2024-secb-b",
@@ -1776,7 +1807,8 @@
           "timeLimit": 150,
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1804,7 +1836,8 @@
             {
               "explain": "Area = \\(100\\text{ m} \\times 100\\text{ m} = 10,000\\text{ m}^2\\)."
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y8-ep1-q1b_area",
@@ -1829,7 +1862,8 @@
             {
               "explain": "\\(1\\text{ cm}^2 = 100\\text{ mm}^2\\)."
             }
-          ]
+          ],
+          "xp": 1
         }
       ]
     },
@@ -1963,7 +1997,8 @@
               "work": "\\(\\text{Total Area} = 108 + 192\\)\n\\(\\text{Total Area} = 300\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q1b",
@@ -2108,7 +2143,8 @@
               "work": "\\(\\text{Total Area} = 180 + 100\\)\n\\(\\text{Total Area} = 280\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q1c",
@@ -2216,7 +2252,8 @@
               "work": "\\(\\text{Area} = \\text{base} \\times \\text{height}\\)\n\\(\\text{Area} = 16 \\times 8\\)\n\\(\\text{Area} = 128\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15i-q1d",
@@ -2262,7 +2299,8 @@
               "work": "\\(\\text{Total Area} = \\left(280 + \\frac{49\\pi}{2}\\right)\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q1e",
@@ -2300,7 +2338,8 @@
               "work": "\\(\\text{Area} = \\frac{270}{360} \\times \\pi \\times r^2\\)\n\\(\\text{Area} = \\frac{3}{4} \\times \\pi \\times 12^2 = \\frac{3}{4} \\times 144\\pi = 108\\pi\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q1f",
@@ -2338,7 +2377,8 @@
               "work": "\\(\\text{Large quarter-circle} = \\frac{1}{4} \\times \\pi \\times 16^2 = 64\\pi\\)\n\\(\\text{Small quarter-circle} = \\frac{1}{4} \\times \\pi \\times 10^2 = 25\\pi\\)\n\\(\\text{Area} = 64\\pi - 25\\pi = 39\\pi\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-15i-q2a",
@@ -2482,7 +2522,8 @@
               "work": "\\(\\text{Volume} = 120\\text{ m}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15i-q2b",
@@ -2598,7 +2639,8 @@
               "work": "\\(\\text{Volume} = \\text{Base Area} \\times \\text{length}\\)\n\\(\\text{Volume} = 30 \\times 15\\)\n\\(\\text{Volume} = 450\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 1
         },
         {
           "id": "y8-15i-q2c",
@@ -2636,7 +2678,8 @@
               "work": "\\(V = \\pi \\times 4^2 \\times 20\\)\n\\(V = \\pi \\times 16 \\times 20\\)\n\\(V = 320\\pi\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q3a",
@@ -2784,7 +2827,8 @@
               "work": "\\(\\text{Surface Area} = 28 + 56 + 16\\)\n\\(\\text{Surface Area} = 100\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y8-15i-q3b",
@@ -2921,7 +2965,8 @@
               "work": "\\(\\text{Total Surface Area} = 12 + 120\\)\n\\(\\text{Total Surface Area} = 132\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 3
         },
         {
           "id": "y8-15i-q4a",
@@ -2951,7 +2996,8 @@
               "work": "\\(5 \\times 100 = 500\\text{ mm}^2\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4b",
@@ -2981,7 +3027,8 @@
               "work": "\\(12 \\times 10000 = 120000\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4c",
@@ -3011,7 +3058,8 @@
               "work": "\\(4000 \\div 100 = 40\\text{ cm}^2\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4d",
@@ -3037,7 +3085,8 @@
               "work": "\\(7.2 \\times 10000 = 72000\\text{ m}^2\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4e",
@@ -3071,7 +3120,8 @@
               "work": "\\(500 \\div 1000 = 0.5\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4f",
@@ -3101,7 +3151,8 @@
               "work": "\\(3 \\times 1000000 = 3000000\\text{ cm}^3\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4g",
@@ -3127,7 +3178,8 @@
               "work": "\\(2500 \\div 1000 = 2.5\\text{ kL}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q4h",
@@ -3153,7 +3205,8 @@
               "work": "\\(0.4 \\times 1000000 = 400000\\text{ L}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 2
         },
         {
           "id": "y8-15i-q5a",
@@ -3179,7 +3232,8 @@
               "work": "\\(5 \\times 7 = 35\\text{ days}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-15i-q5b",
@@ -3209,7 +3263,8 @@
               "work": "\\(180 \\div 60 = 3\\text{ h}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-15i-q5c",
@@ -3239,7 +3294,8 @@
               "work": "\\(2.5 \\times 24 = 60\\text{ hours}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-15i-q5d",
@@ -3269,7 +3325,8 @@
               "work": "\\(52\\text{ full weeks}\\)"
             }
           ],
-          "timeLimit": 45
+          "timeLimit": 45,
+          "xp": 1
         },
         {
           "id": "y8-15i-q6a",
@@ -3417,7 +3474,8 @@
               "work": "\\(40000 \\div 1000 = 40\\text{ L}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 2
         },
         {
           "id": "y8-15i-q6b",
@@ -3463,7 +3521,8 @@
               "work": "\\(3000 \\times 3.14159 \\approx 9424.8\\text{ mL}\\)\n\\(9424.8 \\div 1000 \\approx 9.4\\text{ L}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 3
         },
         {
           "id": "y8-15i-q7a",
@@ -3500,7 +3559,8 @@
               "work": "\\(30\\text{ min} + 2\\text{ h} + 15\\text{ min}\\)\n\\(= 2\\text{ hours } 45\\text{ minutes}\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y8-15i-q7b",
@@ -3537,7 +3597,8 @@
               "work": "\\(20\\text{ min} + 3\\text{ h} + 20\\text{ min}\\)\n\\(= 3\\text{ hours } 40\\text{ minutes}\\)"
             }
           ],
-          "timeLimit": 180
+          "timeLimit": 180,
+          "xp": 1
         }
       ]
     }

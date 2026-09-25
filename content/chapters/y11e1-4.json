@@ -46,7 +46,8 @@
               "work": "-2 < x < 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q1aii",
@@ -86,7 +87,8 @@
               "work": "x < -2 \\quad \\mathrm{or} \\quad x > 2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q1bi",
@@ -126,7 +128,8 @@
               "work": "1 < x < 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q1bii",
@@ -166,7 +169,8 @@
               "work": "x < 1 \\quad \\mathrm{or} \\quad x > 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q1ci",
@@ -206,7 +210,8 @@
               "work": "x < -3 \\quad \\mathrm{or} \\quad x > 1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q1cii",
@@ -246,7 +251,8 @@
               "work": "-3 < x < 1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2ai",
@@ -286,7 +292,8 @@
               "work": "x = 2, \\; 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2aii",
@@ -332,7 +339,8 @@
             "\\( 2 < x < 4 \\)",
             "\\( x \\le 2 \\text{ or } x \\ge 4 \\)",
             "\\( 2 \\le x \\le 4 \\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2aiii",
@@ -378,7 +386,8 @@
             "\\( x < 2 \\text{ or } x > 4 \\)",
             "\\( 2 \\le x \\le 4 \\)",
             "\\( x \\le 2 \\text{ or } x \\ge 4 \\)"
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2bi",
@@ -418,7 +427,8 @@
               "work": "x = -3, \\; 1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2bii",
@@ -458,7 +468,8 @@
               "work": "x < -3 \\quad \\mathrm{or} \\quad x > 1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2biii",
@@ -498,7 +509,8 @@
               "work": "-3 < x < 1"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2ci",
@@ -538,7 +550,8 @@
               "work": "x = 0, \\; 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2cii",
@@ -578,7 +591,8 @@
               "work": "0 < x < 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q2ciii",
@@ -618,7 +632,8 @@
               "work": "x < 0 \\quad \\mathrm{or} \\quad x > 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q3ai",
@@ -658,7 +673,8 @@
               "work": "0 < x < 6"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q3aii",
@@ -698,7 +714,8 @@
               "work": "x \\le -2 \\quad \\mathrm{or} \\quad x \\ge 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q3aiii",
@@ -738,7 +755,8 @@
               "work": "x \\le 0 \\quad \\mathrm{or} \\quad x \\ge 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4ai",
@@ -761,7 +779,8 @@
               "work": "-3 < x < 5"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4aii",
@@ -784,7 +803,8 @@
               "work": "-2 < x < 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4aiii",
@@ -807,7 +827,8 @@
               "work": "x \\le 3 \\quad \\mathrm{or} \\quad x \\ge 6"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4aiv",
@@ -830,7 +851,8 @@
               "work": "x \\le -4 \\quad \\mathrm{or} \\quad x \\ge -2"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4av",
@@ -853,7 +875,8 @@
               "work": "x < -3 \\quad \\mathrm{or} \\quad x > 3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q4avi",
@@ -876,7 +899,8 @@
               "work": "-4 \\le x \\le -3"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11a-4b-q5",
@@ -902,7 +926,8 @@
                   "explain": "Because the parabola opens upwards, it is negative between the roots.",
                   "work": "-4 < x < 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q5b",
@@ -922,7 +947,8 @@
                   "explain": "Since the parabola opens upwards, it is positive or zero in the outer regions.",
                   "work": "x \\le 1 \\quad \\mathrm{or} \\quad x \\ge 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q5c",
@@ -942,7 +968,8 @@
                   "explain": "Because the parabola opens upwards, it is strictly positive outside the roots.",
                   "work": "x < -5 \\quad \\mathrm{or} \\quad x > -2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q5d",
@@ -962,7 +989,8 @@
                   "explain": "Since the parabola opens upwards, it is below or on the horizontal axis in the closed interval between the roots.",
                   "work": "-2 \\le x \\le 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q5e",
@@ -982,7 +1010,8 @@
                   "explain": "Since the parabola opens upwards, it is negative or zero between the boundary values.",
                   "work": "-1.5 \\le x \\le 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q5f",
@@ -1002,7 +1031,8 @@
                   "explain": "Since the simplified parabola opens upwards, it is negative between the roots.",
                   "work": "-1 < x < 5"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1031,7 +1061,8 @@
                   "explain": "State the solution representing the interval between the roots.",
                   "work": "-2 \\le x \\le 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q6b",
@@ -1051,7 +1082,8 @@
                   "explain": "Because it is greater than zero and opens upwards, state the outer intervals.",
                   "work": "x < 0 \\quad \\mathrm{or} \\quad x > 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q6c",
@@ -1071,7 +1103,8 @@
                   "explain": "State the outer regions.",
                   "work": "x \\le -10 \\quad \\mathrm{or} \\quad x \\ge 10"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q6d",
@@ -1091,7 +1124,8 @@
                   "explain": "The inequality requires it to be strictly greater than zero, which excludes only the value where the square is zero.",
                   "work": "x \\neq 0"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q6e",
@@ -1111,7 +1145,8 @@
                   "explain": "A squared term cannot be strictly negative; it can only equal zero. Solve the equation.",
                   "work": "x - 4 = 0 \\implies x = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q6f",
@@ -1131,7 +1166,8 @@
                   "explain": "Solve the inequality by stating the interval between the roots.",
                   "work": "1 \\le x \\le 5"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1160,7 +1196,8 @@
                   "explain": "Factorise and solve for the boundary points.",
                   "work": "(x-5)(x+2) < 0 \\implies -2 < x < 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q7b",
@@ -1180,7 +1217,8 @@
                   "explain": "Factorise the quadratic and state the interval between the roots.",
                   "work": "(x+3)(x-1) \\le 0 \\implies -3 \\le x \\le 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q7c",
@@ -1200,7 +1238,8 @@
                   "explain": "Since the parabola opens upwards, state the outer intervals.",
                   "work": "x \\le -1 \\quad \\mathrm{or} \\quad x \\ge 1.5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q7d",
@@ -1220,7 +1259,8 @@
                   "explain": "Divide by 5 to solve the resulting linear inequation.",
                   "work": "x < -\\frac{3}{5} \\implies x < -0.6"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1263,7 +1303,8 @@
               "work": "-1 < x < 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4b-q8b",
@@ -1303,7 +1344,8 @@
               "work": "x \\le -2 \\quad \\mathrm{or} \\quad x \\ge 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4b-q9",
@@ -1329,7 +1371,8 @@
                   "explain": "Calculate the corresponding \\(y\\)-coordinates for the intersection points: \\(y(-2) = 10\\) and \\(y(2) = -2\\). Sketch the curves crossing at these points.",
                   "work": "(-2, 10), \\; (2, -2)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q9b",
@@ -1348,7 +1391,8 @@
                   "explain": "State the interval of \\(x\\) where the parabola is below the line.",
                   "work": "-2 < x < 2"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1375,7 +1419,8 @@
               "work": "(x-2)(x-3) > 0 \\implies x < 2 \\quad \\mathrm{or} \\quad x > 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4b-q11",
@@ -1401,7 +1446,8 @@
                   "explain": "Simplify the product formula.",
                   "work": "P = x(40-x)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q11b",
@@ -1421,7 +1467,8 @@
                   "explain": "Factorise the quadratic expression to solve for \\(x\\).",
                   "work": "(x-10)(x-30) \\le 0 \\implies 10 \\le x \\le 30"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q11c",
@@ -1440,7 +1487,8 @@
                   "explain": "List all distinct pairs satisfying the conditions.",
                   "work": "(10, 30), \\; (11, 29), \\; (12, 28), \\; (13, 27), \\; (14, 26), \\; (15, 25), \\; (16, 24), \\; (17, 23), \\; (18, 22), \\; (19, 21), \\; (20, 20)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1469,7 +1517,8 @@
                   "explain": "Multiply the two side expressions to find the area \\(A\\).",
                   "work": "A = x(100 - x)"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q12b",
@@ -1489,7 +1538,8 @@
                   "explain": "Factorise the quadratic expression to solve for the range of \\(x\\).",
                   "work": "(x-40)(x-60) < 0 \\implies 40 < x < 60"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1518,7 +1568,8 @@
                   "explain": "Solve for \\(L\\) to find the expression for the third side.",
                   "work": "L = 60 - 2x"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q13b",
@@ -1542,7 +1593,8 @@
                   "explain": "Calculate the corresponding length of the third side. The only solution is a width of 15 m and a length of 30 m.",
                   "work": "60 - 2(15) = 30"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -1573,7 +1625,8 @@
               "work": "0 < r \\le 1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11a-4b-q15",
@@ -1605,7 +1658,8 @@
                   "explain": "Add 2 to all parts of the inequality to find the final range.",
                   "work": "9 + 2 < x^2 + 2 < 25 + 2 \\implies 11 < x^2 + 2 < 27"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4b-q15b",
@@ -1631,7 +1685,8 @@
                   "explain": "Combine these bounds to find the range of \\(x^2\\) and add 2 to calculate the final range.",
                   "work": "0 \\le x^2 \\le 16 \\implies 2 \\le x^2 + 2 \\le 18"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ]
         },
@@ -1656,7 +1711,8 @@
               "explain": "Substitute the constant \\(k\\) back to write the final formula.",
               "work": "n = 8(100-p)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-4b-q16b",
@@ -1679,7 +1735,8 @@
               "explain": "Rearrange to write down the final expression.",
               "work": "T = 8p(100-p)"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-4b-q16c",
@@ -1706,7 +1763,8 @@
               "explain": "Factorise the quadratic to find the roots and solve the inequality.",
               "work": "(p-25)(p-75) \\le 0 \\implies 25 \\le p \\le 75"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11a-4b-q16d",
@@ -1733,7 +1791,8 @@
               "explain": "Combine this with the staying in business price condition \\(25 \\le p \\le 75\\) from part c.",
               "work": "25 \\le p \\le 40 \\quad \\mathrm{or} \\quad 60 \\le p \\le 75"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -1770,7 +1829,8 @@
               "work": "\\mathrm{Zeroes\\:are\\:distinct\\:and\\:irrational}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q1b",
@@ -1800,7 +1860,8 @@
               "work": "\\mathrm{No\\:real\\:zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q1c",
@@ -1830,7 +1891,8 @@
               "work": "\\mathrm{Equal\\:rational\\:zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q1d",
@@ -1860,7 +1922,8 @@
               "work": "\\mathrm{Distinct\\:rational\\:zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q1e",
@@ -1890,7 +1953,8 @@
               "work": "\\mathrm{No\\:real\\:zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q1f",
@@ -1920,7 +1984,8 @@
               "work": "\\mathrm{Distinct\\:rational\\:zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q3a",
@@ -1950,7 +2015,8 @@
               "work": "4k = 144 \\implies k = 36"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q4a",
@@ -1980,7 +2046,8 @@
               "work": "16 \\ge 4p \\implies p \\le 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q4b",
@@ -2010,7 +2077,8 @@
               "work": "p \ne 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q4c",
@@ -2040,7 +2108,8 @@
               "work": "20 \\ge 8p \\implies p \\le \\frac{20}{8} \\implies p \\le \\frac{5}{2}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q4d",
@@ -2070,7 +2139,8 @@
               "work": "24 \\ge 24p \\implies p \\le 1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q5a",
@@ -2100,7 +2170,8 @@
               "work": "64 < 4\\lambda \\implies \\lambda > 16"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q5b",
@@ -2130,7 +2201,8 @@
               "work": "144 < 8\\lambda \\implies \\lambda > 18"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q5c",
@@ -2160,7 +2232,8 @@
               "work": "37 < 12\\lambda \\implies \\lambda > \\frac{37}{12}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q5d",
@@ -2190,7 +2263,8 @@
               "work": "96 < 16\\lambda \\implies \\lambda > 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q6a",
@@ -2220,7 +2294,8 @@
               "work": "4g^2 = 100 \\implies g^2 = 25 \\implies g = \\pm 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q6b",
@@ -2250,7 +2325,8 @@
               "work": "(g - 2)(g - 6) = 0 \\implies g = 2 \\quad \\mathrm{or} \\quad g = 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q6c",
@@ -2280,7 +2356,8 @@
               "work": "g + 2 = \\pm 6 \\implies g = 4 \\quad \\mathrm{or} \\quad g = -8"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q6d",
@@ -2310,7 +2387,8 @@
               "work": "-8g + 5 = 0 \\implies 8g = 5 \\implies g = \\frac{5}{8}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q7",
@@ -2344,7 +2422,8 @@
                   "work": "\\Delta = 4g^2 - 12g"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y11e1-4c-q7b",
@@ -2372,7 +2451,8 @@
                   "work": "g = 0 \\quad \\mathrm{or} \\quad g = 3"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y11e1-4c-q7c",
@@ -2400,7 +2480,8 @@
                   "work": "\\mathrm{Not\\:a\\:parabola}"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 3
             },
             {
               "id": "y11e1-4c-q7d",
@@ -2428,7 +2509,8 @@
                   "work": "y = 3x^2 - 6x + 3"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "options": [
@@ -2470,7 +2552,8 @@
               "work": "(k - 6)(k + 6) \\ge 0 \\implies k \\le -6 \\quad \\mathrm{or} \\quad k \\ge 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q8b",
@@ -2500,7 +2583,8 @@
               "work": "(k - 4)(k + 4) \\ge 0 \\implies k \\le -4 \\quad \\mathrm{or} \\quad k \\ge 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q8c",
@@ -2530,7 +2614,8 @@
               "work": "(k - 2)(k + 6) \\ge 0 \\implies k \\le -6 \\quad \\mathrm{or} \\quad k \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q8d",
@@ -2560,7 +2645,8 @@
               "work": "(k - 7)(k + 1) \\ge 0 \\implies k \\le -1 \\quad \\mathrm{or} \\quad k \\ge 7"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q9a",
@@ -2590,7 +2676,8 @@
               "work": "(\\lambda - 4)(\\lambda + 4) < 0 \\implies -4 < \\lambda < 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q9b",
@@ -2620,7 +2707,8 @@
               "work": "(\\lambda - 4)(\\lambda + 4) > 0 \\implies \\lambda < -4 \\quad \\mathrm{or} \\quad \\lambda > 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q9c",
@@ -2650,7 +2738,8 @@
               "work": "\\lambda^2 + 4 \\ge 4 > 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q9d",
@@ -2680,7 +2769,8 @@
               "work": "0 < \\lambda < \\frac{3}{5}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q10",
@@ -2713,7 +2803,8 @@
                   "explain": "Complete the square by adding the square of half the coefficient of \\(x\\), which is \\(\\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2}\\), to both sides.",
                   "work": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{y-c}{a} + \\frac{b^2}{4a^2}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y11e1-4c-q10b",
@@ -2740,7 +2831,8 @@
                   "explain": "Since the left side is a perfect square of a real number, it must be non-negative. If \\(\\Delta < 0\\), the right side is negative, which is a contradiction. Thus, no real solutions exist.",
                   "work": "\\mathrm{No\\:real\\:solutions}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y11e1-4c-q10c",
@@ -2767,7 +2859,8 @@
                   "explain": "Solve for \\(x\\) to show there is only one distinct root.",
                   "work": "x = -\\frac{b}{2a}"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y11e1-4c-q10d",
@@ -2794,7 +2887,8 @@
                   "explain": "Combine the terms over the common denominator to obtain the quadratic formula.",
                   "work": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
                 }
-              ]
+              ],
+              "xp": 4
             }
           ],
           "options": [
@@ -2836,7 +2930,8 @@
               "work": "\\Delta = (-6)^2 - 4(1)(9) = 0 \\implies x = 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q11bi",
@@ -2866,7 +2961,8 @@
               "work": "\\Delta = (-8)^2 - 4(1)(16) = 0 \\implies x = 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q11bii",
@@ -2896,7 +2992,8 @@
               "work": "\\Delta = 6^2 - 4(1)(10) = 36 - 40 = -4 < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q12a",
@@ -2926,7 +3023,8 @@
               "work": "\\Delta = 2^2 - 4(2)(5) = 4 - 40 = -36 < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q12bi",
@@ -2956,7 +3054,8 @@
               "work": "\\Delta = 4^2 - 4(1)(4) = 0 \\implies x = -2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q12bii",
@@ -2986,7 +3085,8 @@
               "work": "\\Delta = 2^2 - 4(1)(1) = 0 \\implies x = -1"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q13ai",
@@ -3016,7 +3116,8 @@
               "work": "2x^2 + 4x - 5 = 0"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q13aii",
@@ -3046,7 +3147,8 @@
               "work": "\\Delta = 56 > 0 \\implies \\mathrm{intersects\\:twice}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4c-q13bi",
@@ -3076,7 +3178,8 @@
               "work": "\\Delta = 6^2 - 4(2)(7) = 36 - 56 = -20 < 0 \\implies 0 \\mathrm{\\:intersections}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q13bii",
@@ -3106,7 +3209,8 @@
               "work": "\\Delta = (-6)^2 - 4(1)(9) = 36 - 36 = 0 \\implies 1 \\mathrm{\\:intersection}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4c-q14",
@@ -3140,7 +3244,8 @@
                   "work": "3x^2 - 6x + (2 - b) = 0"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y11e1-4c-q14b",
@@ -3168,7 +3273,8 @@
                   "work": "36 - 12(2 - b) = 0 \\implies 36 - 24 + 12b = 0 \\implies 12b = -12 \\implies b = -1"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "options": [
@@ -3217,7 +3323,8 @@
                   "explain": "Solve the quadratic inequality for \\(m\\).",
                   "work": "16m^2 > 20 \\implies m^2 > \\frac{5}{4} \\implies m < -\\frac{\\sqrt{5}}{2} \\quad \\mathrm{or} \\quad m > \\frac{\\sqrt{5}}{2}"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y11e1-4c-q15b",
@@ -3245,7 +3352,8 @@
                   "work": "y - 3 = \\pm 2 \\implies y = 1 \\quad \\mathrm{or} \\quad y = 5"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             }
           ],
           "options": [
@@ -3286,7 +3394,8 @@
                   "work": "\\Delta = (-m)^2 - 4(2)(-b) = 0 \\implies m^2 + 8b = 0 \\implies b = -\\frac{1}{8}m^2"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 3
             },
             {
               "id": "y11e1-4c-q16b",
@@ -3313,7 +3422,8 @@
                   "explain": "Simplify the expression for the \\(y\\) coordinate.",
                   "work": "y = \\frac{m^2}{8}"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "options": [
@@ -3361,7 +3471,8 @@
               "explain": "Determine the corresponding values of \\(b\\) and write the line equations.",
               "work": "m = 2 \\implies b = -1 \\implies y = 2x - 1 \\\\ m = 6 \\implies b = -9 \\implies y = 6x - 9"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q18",
@@ -3394,7 +3505,8 @@
               "explain": "Factorise the quadratic expression in \\(m\\) and solve the inequality.",
               "work": "9m^2 - 82m + 9 < 0 \\implies (9m - 1)(m - 9) < 0 \\implies \\frac{1}{9} < m < 9"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11e1-4c-q19",
@@ -3435,7 +3547,8 @@
                   "explain": "Observe that \\(\\Delta_2\\) is also a sum of a perfect square and a positive number, hence always positive.",
                   "work": "\\lambda^2 + 16 \\ge 16 > 0"
                 }
-              ]
+              ],
+              "xp": 4
             },
             {
               "id": "y11e1-4c-q19b",
@@ -3462,7 +3575,8 @@
                   "explain": "Since the parabola opens upwards and its vertex/lowest parts must lie below the x-axis (as it passes through the negative y-intercept \\((0, -2)\\)), it must cross the x-axis twice: once on the left and once on the right of the y-axis. This guarantees two real and distinct roots.",
                   "work": "\\mathrm{Crosses\\:x-axis\\:twice}"
                 }
-              ]
+              ],
+              "xp": 4
             }
           ],
           "options": [
@@ -3511,7 +3625,8 @@
               "explain": "Compare the distance \\(d\\) to the radius \\(r\\). Since \\(\\frac{3}{\\sqrt{2}} = 1.5\\sqrt{2} > \\sqrt{2}\\), the line is further from the center than the radius, so they do not intersect.",
               "work": "\\frac{3}{\\sqrt{2}} > \\sqrt{2} \\implies \\mathrm{no\\:intersections}"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -3544,7 +3659,8 @@
                   "explain": "Solve for \\(a\\) by dividing by 5.",
                   "work": "a = 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q1b",
@@ -3564,7 +3680,8 @@
                   "explain": "Solve for \\(b\\) by dividing by -5.",
                   "work": "b = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q1c",
@@ -3584,7 +3701,8 @@
                   "explain": "Choosing these values makes one of the coefficients zero, which simplifies the equation to directly solve for the other constant.",
                   "work": "\\mathrm{Isolates\\:one\\:variable\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q1d",
@@ -3608,7 +3726,8 @@
                   "explain": "Substitute \\(a = 4\\) back to find \\(b\\), confirming it yields the same values.",
                   "work": "4 + b = 6 \\implies b = 2"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a and b.",
@@ -3639,7 +3758,8 @@
                   "explain": "Divide by 5 to solve for \\(a\\).",
                   "work": "a = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q2b",
@@ -3659,7 +3779,8 @@
                   "explain": "Divide by -5 to solve for \\(b\\).",
                   "work": "b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q2c",
@@ -3679,7 +3800,8 @@
                   "explain": "Using these roots eliminates one variable and allows solving for the other directly.",
                   "work": "\\mathrm{Eliminates\\:one\\:term\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q2d",
@@ -3703,7 +3825,8 @@
                   "explain": "Substitute \\(a = 2\\) back into \\(a+b = 5\\) to find \\(b\\).",
                   "work": "2 + b = 5 \\implies b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a and b.",
@@ -3734,7 +3857,8 @@
                   "explain": "Equate the coefficients of the quadratic term from both sides.",
                   "work": "a = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q3b",
@@ -3754,7 +3878,8 @@
                   "explain": "Evaluate the right-hand side, noting that the terms with \\(a\\) and \\(b\\) become zero.",
                   "work": "c = 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q3c",
@@ -3774,7 +3899,8 @@
                   "explain": "Solve the linear equation for \\(b\\).",
                   "work": "b = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q3d",
@@ -3794,7 +3920,8 @@
                   "explain": "Using this value simplifies the expanded terms \\((x-1)^2\\) and \\((x-1)\\) to 1, leaving a very simple equation to solve for \\(b\\).",
                   "work": "\\mathrm{Simplifies\\:arithmetic\\:to\\:1}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -3825,7 +3952,8 @@
                   "explain": "Equate the coefficients of \\(x^2\\) from both sides to find the value of \\(a\\).",
                   "work": "a = 1"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q4b",
@@ -3845,7 +3973,8 @@
                   "explain": "State the value of \\(c\\).",
                   "work": "c = 5"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q4c",
@@ -3865,7 +3994,8 @@
                   "explain": "Solve for \\(b\\).",
                   "work": "b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q4d",
@@ -3885,7 +4015,8 @@
                   "explain": "Using \\(x=3\\) reduces all powers of \\((x-2)\\) to 1, which simplifies substitution math.",
                   "work": "\\mathrm{Reduces\\:arithmetic\\:complexity}"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -3916,7 +4047,8 @@
                   "explain": "Equate the coefficients of \\(x^2\\).",
                   "work": "a = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q5b",
@@ -3936,7 +4068,8 @@
                   "explain": "State the final value of \\(c\\).",
                   "work": "c = 17"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q5c",
@@ -3956,7 +4089,8 @@
                   "explain": "Set \\(f(-1) = g(-1)\\) and solve for \\(b\\).",
                   "work": "20 + b = 6 \\implies b = -14"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q5d",
@@ -3976,7 +4110,8 @@
                   "explain": "Equate to \\(g(x)\\) to state the identity.",
                   "work": "3x^2 - 2x + 1 = 3(x+2)^2 - 14(x+2) + 17"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -4005,7 +4140,8 @@
               "work": "1(4-3)^2 + b(4-3) + 12 = 4^2 + 4 \\implies 1 + b + 12 = 20 \\implies b = 7"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q6b",
@@ -4029,7 +4165,8 @@
               "work": "3(3-2)^2 + b(3-2) + 12 = 3(3)^2 - 2(3) + 4 \\implies 15 + b = 25 \\implies b = 10"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q7a",
@@ -4053,7 +4190,8 @@
               "work": "1(-2+3)^2 + B(-2+3) + 9 = (-2)^2 \\implies 1 + B + 9 = 4 \\implies B = -6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q7b",
@@ -4077,7 +4215,8 @@
               "work": "1(4-3)^2 + B(4-3) + 9 = 4^2 \\implies 1 + B + 9 = 16 \\implies B = 6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q7c",
@@ -4101,7 +4240,8 @@
               "work": "1(-3+4)^2 + B(-3+4) + 16 = (-3)^2 \\implies 17 + B = 9 \\implies B = -8"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q8a",
@@ -4125,7 +4265,8 @@
               "work": "3(-1+2)^2 + B(-1+2) + 4 = 3(-1)^2 + 2(-1) - 4 \\implies 7 + B = -3 \\implies B = -10"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q8b",
@@ -4149,7 +4290,8 @@
               "work": "2(3-2)^2 + q(3-2) - 5 = 2(3)^2 - 5(3) - 3 \\implies 2 + q - 5 = 0 \\implies q = 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q9",
@@ -4181,7 +4323,8 @@
               "work": "y = 2x^2 + 5x + 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q10",
@@ -4209,7 +4352,8 @@
               "work": "18 - 4a + 4c = 2 \\implies a - c = 4 \\\\ (a+c) + (a-c) = 8 + 4 \\implies 2a = 12 \\implies a = 6 \\\\ c = 8 - 6 = 2 \\\\ b = 18 - 4(6) = -6"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q11",
@@ -4237,7 +4381,8 @@
               "work": "a + 2 + 1 = 5 \\implies a = 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4d-q12",
@@ -4263,7 +4408,8 @@
                   "explain": "Solve for \\(A\\) using \\(A = -B\\).",
                   "work": "A = 2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q12b",
@@ -4283,7 +4429,8 @@
                   "explain": "Observe that this is a telescoping sum and simplify.",
                   "work": "2(1^2 - 0^2) + 2(2^2 - 1^2) + \\dots + 2(25^2 - 24^2) = 2(25^2 - 0) = 2(625) = 1250"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for values of A and B and the sum.",
@@ -4314,7 +4461,8 @@
                   "explain": "Substitute \\(x = 2\\) along with \\(a = 11\\) and \\(c = 88\\) to solve for \\(b\\).",
                   "work": "11(2)^2 - 5(2) + 4 = 11(3-2)^2 + b(3-2) + 88 \\implies 38 = 11 + b + 88 \\implies b = -61"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q13b",
@@ -4334,7 +4482,8 @@
                   "explain": "Perform the arithmetic calculation.",
                   "work": "11(0.01)^2 - 61(0.01) + 88 = 11(0.0001) - 0.61 + 88 = 0.0011 - 0.61 + 88 = 87.3911"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for values of a, b, and c.",
@@ -4365,7 +4514,8 @@
                   "explain": "Solve the system: \\(A = -B \\implies -4B = 8 \\implies B = -2\\) and \\(A = 2\\).",
                   "work": "A = 2, \\quad B = -2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q14b",
@@ -4389,7 +4539,8 @@
                   "explain": "Evaluate the final arithmetic expression.",
                   "work": "\\mathrm{Sum} = 2(144) + 2(169) - 2 = 288 + 338 - 2 = 624"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for values of A and B and the sum.",
@@ -4421,7 +4572,8 @@
               "work": "\\mathrm{Identity\\:holds\\:for\\:all\\:} x"
             }
           ],
-          "manual": true
+          "manual": true,
+          "xp": 3
         },
         {
           "id": "y11e1-4d-q16",
@@ -4453,7 +4605,8 @@
                   "explain": "State the final algebraic identity.",
                   "work": "x^2 = (x-d)^2 + 2d(x-d) + d^2"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q16b-i",
@@ -4471,7 +4624,8 @@
                   "explain": "For part (i) \\(x - 2\\), substitute \\(d = 2\\) into the identity.",
                   "work": "x^2 = (x - 2)^2 + 4(x - 2) + 4"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q16b-ii",
@@ -4489,7 +4643,8 @@
                   "explain": "For part (ii) \\(x + 4\\), substitute \\(d = -4\\) into the identity.",
                   "work": "x^2 = (x + 4)^2 - 8(x + 4) + 16"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q16b-iii",
@@ -4507,7 +4662,8 @@
                   "explain": "For part (iii) \\(x - 12\\), substitute \\(d = 12\\) into the identity.",
                   "work": "x^2 = (x - 12)^2 + 24(x - 12) + 144"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11e1-4d-q16c",
@@ -4533,7 +4689,8 @@
                   "explain": "Collect and simplify the terms.",
                   "work": "3(x-2)^2 + (12 - 4)(x-2) + (12 - 8 + 5) = 3(x-2)^2 + 8(x-2) + 9"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "answer": "Refer to sub-questions for expressions.",
@@ -4571,7 +4728,8 @@
               "explain": "Sketch the solution on a number line by placing an open circle at 5 (since it is strictly less than) and drawing an arrow pointing to the left."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q1b",
@@ -4598,7 +4756,8 @@
               "explain": "Represent the solution on a number line with an open circle at 4 and an arrow pointing to the right."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q1c",
@@ -4625,7 +4784,8 @@
               "explain": "On the number line, draw a solid circle at -4 (since the inequality includes equals to) and an arrow pointing to the left."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q1d",
@@ -4652,7 +4812,8 @@
               "explain": "Sketch the solution on a number line with a solid circle at -2 and an arrow pointing to the right."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q1e",
@@ -4679,7 +4840,8 @@
               "explain": "Graph the solution on a number line with an open circle at 3 and an arrow pointing to the right."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q1f",
@@ -4706,7 +4868,8 @@
               "explain": "Sketch a solid circle at -2 on the number line and draw an arrow pointing to the left."
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q2a",
@@ -4730,7 +4893,8 @@
               "work": "\\therefore\\; (1, 6]"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q2b",
@@ -4758,7 +4922,8 @@
               "work": "\\therefore\\; [-1, 4)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q2c",
@@ -4786,7 +4951,8 @@
               "work": "-3 \\le x < 3 \\implies [-3, 3)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q3",
@@ -4810,7 +4976,8 @@
               "work": "-9 < x < 3"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q4a",
@@ -4834,7 +5001,8 @@
               "work": "\\therefore\\; 1\\; \\mathrm{rational\\; zero}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q4b",
@@ -4858,7 +5026,8 @@
               "work": "\\therefore\\; 2\\; \\mathrm{irrational\\; zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q4c",
@@ -4882,7 +5051,8 @@
               "work": "\\therefore\\; 2\\; \\mathrm{rational\\; zeroes}"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "y11e1-4e-q5",
@@ -4976,7 +5146,8 @@
                   "work": "\\therefore\\; x = -1, \\; 4"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y11e1-4e-q5b",
@@ -4998,7 +5169,8 @@
                   "work": "\\therefore\\; x < -1 \\; \\mathrm{or} \\; x > 4"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "y11e1-4e-q5c",
@@ -5020,7 +5192,8 @@
                   "work": "\\therefore\\; -1 < x < 4"
                 }
               ],
-              "timeLimit": 60
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "answer": "a) x = -1, 4; b) x < -1 or x > 4; c) -1 < x < 4",
@@ -5100,7 +5273,8 @@
               "work": "\\therefore\\; -3 < x < 0"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q6b",
@@ -5190,7 +5364,8 @@
               "work": "\\therefore\\; x \\le -5 \\; \\mathrm{or} \\; x \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7a",
@@ -5214,7 +5389,8 @@
               "work": "-5 < x < 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7b",
@@ -5238,7 +5414,8 @@
               "work": "x \\le -4 \\quad \\mathrm{or} \\quad x \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7c",
@@ -5262,7 +5439,8 @@
               "work": "x < 0 \\quad \\mathrm{or} \\quad x > 5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7d",
@@ -5286,7 +5464,8 @@
               "work": "-4 \\le x \\le 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7e",
@@ -5310,7 +5489,8 @@
               "work": "x \\le -2 \\quad \\mathrm{or} \\quad x \\ge 4"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q7f",
@@ -5334,7 +5514,8 @@
               "work": "-2 < x < 0.5"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q8a",
@@ -5358,7 +5539,8 @@
               "work": "64 \\ge 4k \\implies k \\le 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q8b",
@@ -5382,7 +5564,8 @@
               "work": "4k = 64 \\implies k = 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q8c",
@@ -5406,7 +5589,8 @@
               "work": "64 < 4k \\implies k > 16"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q9a",
@@ -5430,7 +5614,8 @@
               "work": "m \\le -2 \\quad \\mathrm{or} \\quad m \\ge 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q9b",
@@ -5454,7 +5639,8 @@
               "work": "m^2 = 4 \\implies m = \\pm 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q9c",
@@ -5478,7 +5664,8 @@
               "work": "-2 < m < 2"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "xp": 2
         },
         {
           "id": "y11e1-4e-q10",
@@ -5505,7 +5692,8 @@
               "explain": "Factorise the quadratic and state the final values of \\(\\ell\\).",
               "work": "(\\ell - 6)(\\ell + 2) = 0 \\implies \\ell = 6 \\quad \\mathrm{or} \\quad \\ell = -2"
             }
-          ]
+          ],
+          "xp": 3
         },
         {
           "id": "y11e1-4e-q12",
@@ -5533,7 +5721,8 @@
                   "work": "A = x(13 - x)"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y11e1-4e-q12b",
@@ -5558,7 +5747,8 @@
                   "explain": "Identify the range of \\(x\\) that makes the product negative (between the roots).",
                   "work": "4 < x < 9"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for expression and solution interval.",
@@ -5591,7 +5781,8 @@
                   "work": "\\mathrm{Third\\; Side} = 80 - 2x"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 2
             },
             {
               "id": "y11e1-4e-q13b",
@@ -5616,7 +5807,8 @@
                   "explain": "Identify the range of values for \\(x\\) and determine the minimum boundary.",
                   "work": "10 \\le x \\le 30 \\implies \\mathrm{smallest\\; } x = 10"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for expressions and calculations.",
@@ -5652,7 +5844,8 @@
                   "explain": "Substitute another simple value, e.g., \\(x = 3\\), to solve for \\(b\\).",
                   "work": "2(3)^2 - 3(3) + 5 = 2(3-2)^2 + b(3-2) + 7 \\implies 14 = 9 + b \\implies b = 5"
                 }
-              ]
+              ],
+              "xp": 3
             },
             {
               "id": "y11e1-4e-q14b",
@@ -5678,7 +5871,8 @@
                   "work": "\\therefore\\; 7.1518"
                 }
               ],
-              "timeLimit": 90
+              "timeLimit": 90,
+              "xp": 3
             }
           ],
           "answer": "Refer to sub-questions for constants and evaluation.",
@@ -5714,7 +5908,8 @@
               "explain": "State the final values for \\(p\\), \\(q\\), and \\(r\\).",
               "work": "\\therefore\\; p = 2, \\; q = -2, \\; r = 2"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     }

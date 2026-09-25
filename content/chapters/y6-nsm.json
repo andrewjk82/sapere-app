@@ -26,7 +26,8 @@
               "explain": "Multiply by 1000, since \\(1\\text{ kg}=1000\\text{ g}\\).",
               "work": "\\(2.5\\times1000=2500\\text{ g}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-nsm-1-q2",
@@ -46,7 +47,8 @@
               "explain": "Divide by 1000.",
               "work": "\\(3200\\div1000=3.2\\text{ kg}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-nsm-1-q3",
@@ -66,7 +68,8 @@
               "explain": "Subtract the mass of the empty box from the gross mass.",
               "work": "\\(850-60=790\\text{ g}\\)"
             }
-          ]
+          ],
+          "xp": 3
         }
       ]
     },
@@ -101,7 +104,8 @@
               "explain": "Add the two parts together.",
               "work": "\\(2\\text{ h }15\\text{ min}+1\\text{ h }20\\text{ min}=3\\text{ h }35\\text{ min}\\)"
             }
-          ]
+          ],
+          "xp": 2
         },
         {
           "id": "y6-nsm-2-q2",
@@ -125,7 +129,8 @@
               "explain": "Times after 12:00 noon are labelled \"pm\".",
               "work": "\\(15{:}30 = 3{:}30\\text{ pm}\\)"
             }
-          ]
+          ],
+          "xp": 1
         },
         {
           "id": "y6-nsm-2-q3",
@@ -153,7 +158,8 @@
               "explain": "Add this to the hour of 07:00.",
               "work": "\\(07{:}00+1\\text{ h }35\\text{ min}=08{:}35\\)"
             }
-          ]
+          ],
+          "xp": 2
         }
       ]
     }
