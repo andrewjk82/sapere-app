@@ -38,6 +38,7 @@ const Base = {
   steps: z.array(Step).optional(),
   manual: z.literal(true).optional(),
   timeLimit: z.number().int().positive().optional(),
+  xp: z.number().int().min(1).max(10).optional(),   // per-question XP (1–10); multipart: set on each part
   inactive: z.literal(true).optional(),
   alsoIn: z.array(z.string()).optional(),
   hscType: z.string().optional(),          // HSC type-practice category slug

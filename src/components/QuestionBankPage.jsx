@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock, Star
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
@@ -511,6 +511,24 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const total = liveIds.length;
   const isFillBlank = q?.type === 'fill_blank';
   const isShort = q?.type === 'short_answer';
+  // Per-question XP (1–10). Multi-part questions store it on each part, so
+  // the whole subQuestions array is patched with the one part changed.
+  const handleSetXp = async (sIdx, xp) => {
+    if (!q?.id) return;
+    const fields = sIdx == null
+      ? { xp }
+      : { subQuestions: q.subQuestions.map((sq, i) => (i === sIdx ? { ...sq, xp } : sq)) };
+    try {
+      if (cdnEnabledAtAll()) await contentPatch(q.id, fields, { chapterId: q.chapterId || chapter?.id });
+      else await updateDoc(doc(db, 'questions', q.id), fields);
+      setLoadedQuestions(prev => ({ ...prev, [q.id]: { ...prev[q.id], ...fields } }));
+      showToast(`XP set to ${xp}${sIdx == null ? '' : ` for part (${String.fromCharCode(97 + sIdx)})`}`, 'success');
+    } catch (err) {
+      console.error('Failed to update XP:', err);
+      showToast('Failed to update XP', 'error');
+    }
+  };
+
   const isMC = q && !isShort && !isFillBlank && !q.subQuestions?.length && (q.options || []).length > 0;
   const isTeacherReview = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
 
@@ -767,6 +785,43 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   );
                 })}
               </div>
+
+              {/* XP — 1–10 per question; a multi-part question gets one per part */}
+              {(q?.subQuestions?.length > 0
+                ? q.subQuestions.map((sq, sIdx) => ({ key: sq.id || sIdx, label: `(${String.fromCharCode(97 + sIdx)})`, value: sq.xp, sIdx }))
+                : [{ key: 'q', label: null, value: q?.xp, sIdx: null }]
+              ).map((row) => (
+                <div key={row.key} style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                  <Star size={14} style={{ color: '#64748b', flexShrink: 0 }} />
+                  {row.label && <span style={{ fontWeight: 800, fontSize: '0.78rem', color: '#64748b', minWidth: 22 }}>{row.label}</span>}
+                  {Array.from({ length: 10 }, (_, i) => i + 1).map((xp) => {
+                    const isActive = Number(row.value) === xp;
+                    return (
+                      <button
+                        key={xp}
+                        type="button"
+                        disabled={!q?.id}
+                        onClick={() => handleSetXp(row.sIdx, xp)}
+                        style={{
+                          padding: '6px 0', width: 38, borderRadius: '10px',
+                          border: `1px solid ${isActive ? '#f59e0b' : '#e2e8f0'}`,
+                          background: isActive ? '#f59e0b' : '#fff',
+                          color: isActive ? '#fff' : '#475569',
+                          fontWeight: 800, fontSize: '0.78rem',
+                          cursor: q?.id ? 'pointer' : 'not-allowed',
+                          opacity: q?.id ? 1 : 0.5,
+                          transition: 'all 0.15s',
+                        }}
+                      >
+                        {xp}
+                      </button>
+                    );
+                  })}
+                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: row.value ? '#b45309' : '#94a3b8', marginLeft: 4 }}>
+                    {row.value ? `${row.value} XP` : 'XP not set'}
+                  </span>
+                </div>
+              ))}
             </div>
 
             {/* Clickable dot navigation */}

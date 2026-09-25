@@ -51,6 +51,7 @@ export const toLegacy = (q, ctx = {}) => {
     acceptedAnswers: q.accepted || [],
     difficulty: q.difficulty || '',
     timeLimit: q.timeLimit || 120,
+    xp: q.xp ?? null,
     requiresManualGrading: q.manual === true,
     isManual: true,
     isActive: q.inactive !== true,
@@ -100,7 +101,7 @@ const stepsFwd = (arr) => (Array.isArray(arr) ? arr : []).map((s) => {
 });
 const META_KEYS = ['source', 'sourcePaper', 'sourceId', 'sourcePdf', 'school', 'examType', 'course', 'grade', 'tags', 'reviewStatus', 'verificationNeeded', 'manualReview', 'topic'];
 const DNA_KEYS = ['dnaId', 'dnaConfidence', 'reasoning_blueprint', 'hasReasoningBlueprint', 'dnaReclassifiedAt', 'dnaReclassifiedReason'];
-const KNOWN = new Set(['id', 'type', 'question', 'options', 'answer', 'acceptedAnswers', 'hint', 'solution', 'solutionSteps', 'graphData', 'questionImage', 'subQuestions', 'blanks', 'difficulty', 'timeLimit', 'requiresManualGrading', 'isManual', 'isActive', 'origin', 'examPaper', 'questionType', 'topicId', 'topicCode', 'topicTitle', 'chapterId', 'chapterTitle', 'year', 'title', 'createdAt', 'updatedAt', 'isNew', 'bankVersion', 'contentBump', ...META_KEYS, ...DNA_KEYS]);
+const KNOWN = new Set(['id', 'type', 'question', 'options', 'answer', 'acceptedAnswers', 'hint', 'solution', 'solutionSteps', 'graphData', 'questionImage', 'subQuestions', 'blanks', 'difficulty', 'timeLimit', 'xp', 'requiresManualGrading', 'isManual', 'isActive', 'origin', 'examPaper', 'questionType', 'topicId', 'topicCode', 'topicTitle', 'chapterId', 'chapterTitle', 'year', 'title', 'createdAt', 'updatedAt', 'isNew', 'bankVersion', 'contentBump', ...META_KEYS, ...DNA_KEYS]);
 
 /**
  * Legacy document (what QuestionBankModal saves) → canonical question. Throws on an MC whose answer
@@ -145,6 +146,7 @@ export const fromLegacy = (d, prev = null) => {
   const st = stepsFwd(d.solutionSteps); if (st.length) q.steps = st;
   if (d.requiresManualGrading === true) q.manual = true;
   if (d.timeLimit && Number(d.timeLimit) !== 120) q.timeLimit = Number(d.timeLimit);
+  { const xp = Number(d.xp); if (Number.isInteger(xp) && xp >= 1 && xp <= 10) q.xp = xp; }
   if (d.isActive === false) q.inactive = true;
   if (nz(d.questionType)) q.hscType = str(d.questionType); else if (prev?.hscType) q.hscType = prev.hscType;
   const meta = { ...(prev?.meta || {}) };
