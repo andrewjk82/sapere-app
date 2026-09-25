@@ -673,7 +673,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3a-q6b",
@@ -700,7 +700,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3a-q6c",
@@ -727,7 +727,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3a-q6d",
@@ -754,7 +754,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3a-q7",
@@ -1133,7 +1133,7 @@
                   "work": "Apply the power rule to \\( f(x) = 6x - x^2 \\):\n\\[ f'(x) = 6 - 2x \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q11bi",
@@ -1156,7 +1156,7 @@
                   "work": "Move \\( 2x \\) to the other side to keep the variable positive:\n\\[ 6 > 2x \\]\nDivide both sides by 2:\n\\[ 3 > x \\]\nWhich is the same as:\n\\[ x < 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q11bii",
@@ -1179,7 +1179,7 @@
                   "work": "Move \\( 2x \\) to the other side:\n\\[ 6 < 2x \\]\nDivide both sides by 2:\n\\[ 3 < x \\]\nWhich is the same as:\n\\[ x > 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q11biii",
@@ -1202,7 +1202,7 @@
                   "work": "Move \\( 2x \\) to the other side:\n\\[ 6 = 2x \\]\nDivide by 2:\n\\[ x = 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q11c",
@@ -1252,7 +1252,7 @@
                   "work": "Apply the power rule to \\( f(x) = x^2 - 6x + 8 \\):\n\\[ f'(x) = 2x - 6 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q12bi",
@@ -1275,7 +1275,7 @@
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x > 6 \\]\nDivide both sides by 2:\n\\[ x > 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q12bii",
@@ -1298,7 +1298,7 @@
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x < 6 \\]\nDivide both sides by 2:\n\\[ x < 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q12biii",
@@ -1321,7 +1321,7 @@
                   "work": "Move \\( 6 \\) to the other side:\n\\[ 2x = 6 \\]\nDivide by 2:\n\\[ x = 3 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q12c",
@@ -1502,7 +1502,7 @@
                   "work": "We know \\( y = f'(x) \\) is a concave-up parabola with x-intercepts at \\( -5/3 \\) and \\( 1 \\).\nThe parabola lies below the x-axis (is negative) *between* the two roots:\n\\[ -\\frac{5}{3} < x < 1 \\]"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ]
         },
@@ -1836,7 +1836,7 @@
                   "work": "Although \\( f(-1) > f(2) \\), this does not contradict the fact that the function is strictly increasing.\nThe function has a vertical asymptote at \\( x = 0 \\), which breaks the domain into two separate branches.\nThe property of being 'increasing' applies within each continuous interval (branch), not across the asymptote."
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -1982,7 +1982,7 @@
                   "work": "\\[ f'(x) = \\frac{1}{3}(3x^2) + 2x + 2 \\]\n\\[ f'(x) = x^2 + 2x + 2 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q20b",
@@ -2005,7 +2005,7 @@
                   "work": "Since \\( (x+1)^2 \\geq 0 \\) for all real \\( x \\),\n\\[ (x+1)^2 + 1 \\geq 1 > 0 \\]\nBecause \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing everywhere."
                 }
               ],
-              "xp": 3
+              "xp": 1
             },
             {
               "id": "y12a-3a-q20c",
@@ -2028,7 +2028,7 @@
                   "work": "Since \\( f(-3) < 0 \\) and \\( f(0) > 0 \\), the curve crosses the x-axis at least once.\nFurthermore, because the function is strictly increasing from \\( -\\infty \\) to \\( \\infty \\), it cannot cross back down.\nTherefore, there is exactly one x-intercept."
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ]
         },
@@ -2068,7 +2068,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21b",
@@ -2106,7 +2106,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21c",
@@ -2144,7 +2144,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21e",
@@ -2182,7 +2182,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21g",
@@ -2220,7 +2220,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q21h",
@@ -2258,7 +2258,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3a-q22",
@@ -2283,7 +2283,7 @@
                   "work": "\\[ f(x) = 4 - 7x + 3x^2 - x^3 \\]\n\\[ f'(x) = -7 + 6x - 3x^2 \\]\n\\[ f'(x) = -3x^2 + 6x - 7 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q22b",
@@ -2306,7 +2306,7 @@
                   "work": "Since \\( \\Delta < 0 \\), the quadratic has no real roots and does not cross the x-axis.\nBecause the leading coefficient is negative (-3), the parabola opens downwards and is always below the x-axis.\nTherefore, \\( f'(x) < 0 \\) for all \\( x \\)."
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3a-q22c",
@@ -2329,7 +2329,7 @@
                   "work": "A continuous, strictly decreasing cubic function will cross the x-axis exactly once.\nThus, the equation \\( 4 - 7x + 3x^2 - x^3 = 0 \\) has exactly 1 solution."
                 }
               ],
-              "xp": 3
+              "xp": 1
             }
           ],
           "timeLimit": 240
@@ -2372,7 +2372,7 @@
           ],
           "manual": true,
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "bb2020-q8",
@@ -2455,7 +2455,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 3
+          "xp": 4
         }
       ]
     },
@@ -2811,7 +2811,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q3b",
@@ -2862,7 +2862,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q3c",
@@ -2913,7 +2913,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q3d",
@@ -2964,7 +2964,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q4a",
@@ -2997,7 +2997,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q4b",
@@ -3030,7 +3030,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q4c",
@@ -3063,7 +3063,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q4d",
@@ -3096,7 +3096,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q5a",
@@ -3143,7 +3143,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q5b",
@@ -3190,7 +3190,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y12a-3b-q6",
@@ -3219,7 +3219,7 @@
                   "work": "\\frac{dy}{dx} = 6x(x - 2)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3b-q6b",
@@ -3302,7 +3302,7 @@
                   "work": "\\frac{dy}{dx} = 3(3 - x)(3 + x)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3b-q7b",
@@ -3403,7 +3403,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q8b",
@@ -3453,7 +3453,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q8c",
@@ -3503,7 +3503,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q8d",
@@ -3553,7 +3553,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q9",
@@ -3626,7 +3626,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -3703,7 +3703,7 @@
               "work": "\\begin{aligned} 2a(-1) + 6 &= 0 \\\\ -2a + 6 &= 0 \\\\ 2a &= 6 \\\\ a &= 3 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q13ac",
@@ -3728,7 +3728,7 @@
               "work": "\\begin{aligned} f(-1) &= 2 \\\\ 3(-1)^2 + 6(-1) + c &= 2 \\\\ 3 - 6 + c &= 2 \\\\ -3 + c &= 2 \\\\ c &= 5 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q13bb",
@@ -3757,7 +3757,7 @@
               "work": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (27 + 6b + c) - (3 - 2b + c) &= 0 - 0 \\\\ 24 + 8b &= 0 \\\\ 8b &= -24 \\\\ b &= -3 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q13bc",
@@ -3782,7 +3782,7 @@
               "work": "\\begin{aligned} 3 - 2(-3) + c &= 0 \\\\ 3 + 6 + c &= 0 \\\\ 9 + c &= 0 \\\\ c &= -9 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q14a",
@@ -3812,7 +3812,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q15a",
@@ -3838,7 +3838,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q15b",
@@ -3868,7 +3868,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q15c",
@@ -3898,7 +3898,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q16",
@@ -3995,7 +3995,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3b-q16d",
@@ -4090,7 +4090,7 @@
                   }
                 }
               ],
-              "xp": 3
+              "xp": 4
             }
           ],
           "timeLimit": 240
@@ -4126,7 +4126,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q17b",
@@ -4159,7 +4159,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q17c",
@@ -4200,7 +4200,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q17d",
@@ -4229,7 +4229,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q18a",
@@ -4270,7 +4270,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q18b",
@@ -4311,7 +4311,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y12a-3b-q18c",
@@ -4344,7 +4344,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "hg2020-q16",
@@ -4378,7 +4378,7 @@
                   "work": "\\(\\therefore\\) \\(x\\)-intercept \\((2,0)\\); \\(y\\)-intercept \\((0,-2)\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "hg2020-q16b",
@@ -4410,7 +4410,7 @@
                   "work": "At \\(x=\\tfrac13\\): \\(f''=-2<0\\) → maximum. At \\(x=1\\): \\(f''=2>0\\) → minimum."
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "hg2020-q16c",
@@ -4441,7 +4441,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true,
@@ -4468,7 +4468,7 @@
               "work": "-2a + (-2) = 0 \\implies -2a = 2 \\implies a = -1"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q14bb",
@@ -4486,7 +4486,7 @@
               "work": "b = -2"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y12a-3b-q14bc",
@@ -4504,7 +4504,7 @@
               "work": "-1 + (-2) + c = 6 \\implies -3 + c = 6 \\implies c = 9"
             }
           ],
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -5020,7 +5020,7 @@
               "work": "\\begin{aligned} y''' &= -0.24 \\times (-1.6)x^{-1.6-1} \\\\ &= 0.384x^{-2.6} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q3b",
@@ -5049,7 +5049,7 @@
               "work": "\\begin{aligned} y''' &= 12 \\times (-5)x^{-5-1} \\\\ &= -60x^{-6} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q3c",
@@ -5078,7 +5078,7 @@
               "work": "\\begin{aligned} y''' &= 20 \\times (-6)x^{-6-1} \\\\ &= -120x^{-7} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q3d",
@@ -5107,7 +5107,7 @@
               "work": "\\begin{aligned} y''' &= 24 \\times (-4)x^{-4-1} \\\\ &= -96x^{-5} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q3e",
@@ -5136,7 +5136,7 @@
               "work": "\\begin{aligned} y''' &= -40 \\times (-6)x^{-6-1} \\\\ &= 240x^{-7} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q4a",
@@ -5165,7 +5165,7 @@
               "work": "\\begin{aligned} f''(x) &= -4 \\times (-5)x^{-5-1} \\\\ &= 20x^{-6} \\\\ &= \\frac{20}{x^6} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q4b",
@@ -5194,7 +5194,7 @@
               "work": "\\begin{aligned} f''(x) &= -5 \\times (-6)x^{-6-1} \\\\ &= 30x^{-7} \\\\ &= \\frac{30}{x^7} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q4c",
@@ -5223,7 +5223,7 @@
               "work": "\\begin{aligned} f''(x) &= -12 \\times (-4)x^{-4-1} \\\\ &= 48x^{-5} \\\\ &= \\frac{48}{x^5} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q4d",
@@ -5252,7 +5252,7 @@
               "work": "\\begin{aligned} f''(x) &= -10 \\times (-3)x^{-3-1} \\\\ &= 30x^{-4} \\\\ &= \\frac{30}{x^4} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q5a",
@@ -5667,7 +5667,7 @@
               "work": "\\begin{aligned} f'(1) &= 8(2(1) - 3)^3 \\\\ &= 8(2 - 3)^3 \\\\ &= 8(-1)^3 \\\\ &= -8 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q8bi",
@@ -5692,7 +5692,7 @@
               "work": "\\begin{aligned} f'(0) &= 3(0)^2 + 8(0) + 6 \\\\ &= 0 + 0 + 6 \\\\ &= 6 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q8bii",
@@ -5717,7 +5717,7 @@
               "work": "\\begin{aligned} f'(1) &= 3(1)^2 + 8(1) + 6 \\\\ &= 3 + 8 + 6 \\\\ &= 17 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q8biii",
@@ -5742,7 +5742,7 @@
               "work": "\\begin{aligned} f''(0) &= 6(0) + 8 \\\\ &= 0 + 8 \\\\ &= 8 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q8biv",
@@ -5767,7 +5767,7 @@
               "work": "\\begin{aligned} f''(1) &= 6(1) + 8 \\\\ &= 6 + 8 \\\\ &= 14 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q9ai",
@@ -5792,7 +5792,7 @@
               "work": "\\begin{aligned} f'(2) &= 4 + 3(2)^2 \\\\ &= 4 + 3(4) \\\\ &= 16 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q9aii",
@@ -5817,7 +5817,7 @@
               "work": "\\begin{aligned} f''(2) &= 6(2) \\\\ &= 12 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q9aiii",
@@ -5842,7 +5842,7 @@
               "work": "\\begin{aligned} f'''(2) &= 6 \\quad (\\text{since } f'''(x) \\text{ is constant}) \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q9aiv",
@@ -5867,7 +5867,7 @@
               "work": "\\begin{aligned} f''''(2) &= 0 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q9bi",
@@ -5996,7 +5996,7 @@
               "work": "\\begin{aligned} y'' &= 2 \\times (-2)(x + 2)^{-3} \\times \\frac{d}{dx}[x + 2] \\\\ &= -4(x + 2)^{-3} \\times 1 \\\\ &= -\\frac{4}{(x+2)^3} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q10b",
@@ -6025,7 +6025,7 @@
               "work": "\\begin{aligned} y'' &= 10 \\times (-2)(3x + 4)^{-3} \\times \\frac{d}{dx}[3x + 4] \\\\ &= -20(3x + 4)^{-3} \\times 3 \\\\ &= -60(3x + 4)^{-3} \\\\ &= -\\frac{60}{(3x+4)^3} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q11",
@@ -6050,7 +6050,7 @@
               "work": "\\begin{aligned} u' &= 5, \\quad v' = 3(x - 2)^2 \\times 1 = 3(x - 2)^2 \\\\ f''(x) &= u'v + uv' \\\\ &= 5(x - 2)^3 + (5x - 2) \\cdot 3(x - 2)^2 \\\\ &= (x - 2)^2 [ 5(x - 2) + 3(5x - 2) ] \\\\ &= (x - 2)^2 [ 5x - 10 + 15x - 6 ] \\\\ &= (x - 2)^2 (20x - 16) \\\\ &= 4(5x - 4)(x - 2)^2 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q12a",
@@ -6079,7 +6079,7 @@
               "work": "\\begin{aligned} y'' &= 0 \\\\ 12x^2 - 36 &= 0 \\\\ 12x^2 &= 36 \\\\ x^2 &= \\frac{36}{12} \\\\ x^2 &= 3 \\\\ x &= \\pm\\sqrt{3} \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q12b",
@@ -6108,7 +6108,7 @@
               "work": "\\begin{aligned} y'' &= 0 \\\\ 6x + 6 &= 0 \\\\ 6x &= -6 \\\\ x &= -1 \\end{aligned}"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3c-q13a",
@@ -6138,7 +6138,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3c-q13b",
@@ -6164,7 +6164,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "hg2020-q24",
@@ -6190,7 +6190,7 @@
                   "work": "\\(\\dfrac{d^2y}{dx^2} = 3x^2+2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "hg2020-q24b",
@@ -6212,7 +6212,7 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "hg2020-q24c",
@@ -6240,7 +6240,7 @@
                   "work": "\\(y = \\dfrac{x^4}{4}+x^2-7x+10\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "hg2020-q24d",
@@ -6268,7 +6268,7 @@
                   "work": "\\(y-4 = -\\dfrac15(x-2) \\;\\Rightarrow\\; 5y-20 = -(x-2) \\;\\Rightarrow\\; x+5y-22=0\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true,
@@ -6589,7 +6589,7 @@
                   "work": "\\text{Since } y'' = 2 > 0 \\text{ for all } x \\text{, the curve is always concave up.}"
                 }
               ],
-              "xp": 3
+              "xp": 1
             },
             {
               "id": "y12a-3d-q4b",
@@ -6616,7 +6616,7 @@
                   "work": "\\text{Since } y'' = -8 < 0 \\text{ for all } x \\text{, the curve is always concave down.}"
                 }
               ],
-              "xp": 3
+              "xp": 1
             }
           ],
           "timeLimit": 180
@@ -6788,7 +6788,7 @@
                   "work": "\\begin{aligned} y'' &= 2(3)x - 12 \\\\ &= 6x - 12 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3d-q10b",
@@ -6842,7 +6842,7 @@
                   "work": "\\text{For } x < 2, y'' < 0. \\text{ For } x > 2, y'' > 0. \\text{ Thus, } (2, -26) \\text{ is a point of inflection.}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3d-q10d",
@@ -6911,7 +6911,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true,
@@ -7053,7 +7053,7 @@
                   "work": "\\begin{aligned} y'' &= 2 \\times 3x + 12 \\\\ &= 6x + 12 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3d-q13b",
@@ -7099,7 +7099,7 @@
                   "work": "\\begin{aligned} y'(-2) &= 3(-2)^2 + 12(-2) - 15 \\\\ &= 3(4) - 24 - 15 \\\\ &= 12 - 24 - 15 \\\\ &= -27 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3d-q13d",
@@ -7122,7 +7122,7 @@
                   "work": "\\begin{aligned} y - 58 &= -27x - 54 \\\\ y &= -27x - 54 + 58 \\\\ y &= -27x + 4 \\end{aligned}"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 300
@@ -7154,7 +7154,7 @@
                   "work": "\\begin{aligned} 6(3) - 2a &= 0 \\\\ 18 - 2a &= 0 \\\\ 2a &= 18 \\\\ a &= 9 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q15b",
@@ -7177,7 +7177,7 @@
                   "work": "\\begin{aligned} 6(-1) + 6a &> 0 \\\\ -6 + 6a &> 0 \\\\ 6a &> 6 \\\\ a &> 1 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q15c",
@@ -7212,7 +7212,7 @@
                   "work": "\\begin{aligned} b &= -1 - (-2.5) \\\\ b &= -1 + 2.5 \\\\ b &= 1.5 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q15d",
@@ -7243,7 +7243,7 @@
                   "work": "\\text{Since } a > \\frac{2}{3} \\text{ is a stricter condition than } a > -1 \\text{, the final answer is: } \\\\ a > \\frac{2}{3}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "timeLimit": 300
@@ -7334,7 +7334,7 @@
                   "work": "\\text{Since } \\Delta < 0 \\text{, the quadratic equation has no real roots. Therefore, the function has no stationary points.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q18b",
@@ -7361,7 +7361,7 @@
                   "work": "\\text{For } x < 2, \\, y'' < 0 \\, \\text{(concave down)}. \\\\ \\text{For } x > 2, \\, y'' > 0 \\, \\text{(concave up)}. \\\\ \\text{Since } y'' \\text{ changes sign, there is a point of inflection at } x = 2."
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q18c",
@@ -7388,7 +7388,7 @@
                   "work": "\\text{A continuous, strictly increasing curve that goes from } -\\infty \\text{ to } \\infty \\text{ must cross the x-axis exactly once.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -7428,7 +7428,7 @@
                   "work": "\\begin{aligned} y(-1) &= a(-1)^3 + b(-1)^2 + 0(-1) + 8 = 0 \\\\ -a + b + 8 &= 0 \\\\ -a + (-3a) + 8 &= 0 \\\\ -4a &= -8 \\\\ a &= 2 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q19b",
@@ -7451,7 +7451,7 @@
                   "work": "\\begin{aligned} b &= -3(2) \\\\ b &= -6 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q19c",
@@ -7474,7 +7474,7 @@
                   "work": "\\begin{aligned} y'(0) &= 3a(0)^2 + 2b(0) + c = 0 \\\\ c &= 0 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3d-q19d",
@@ -7493,7 +7493,7 @@
                   "work": "\\begin{aligned} y(0) &= a(0)^3 + b(0)^2 + c(0) + d \\\\ 8 &= 0 + 0 + 0 + d \\\\ d &= 8 \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -7578,7 +7578,7 @@
                   "work": "f(2)=16-32=-16 \\Rightarrow \\text{inflection at }(2,-16)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "glenwood2020-q32b",
@@ -7612,7 +7612,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 3
             }
           ],
           "steps": [
@@ -7782,7 +7782,7 @@
                   "work": "\\text{The non-zero intercept is at } (12, 0)."
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q1b",
@@ -7809,7 +7809,7 @@
                   "work": "\\begin{aligned} y(8) &= 12(8)^2 - (8)^3 \\\\ &= 12(64) - 512 \\\\ &= 768 - 512 = 256 \\end{aligned} \\\\ \\implies B(8, 256)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q1c",
@@ -7836,7 +7836,7 @@
                   "work": "\\begin{aligned} y(4) &= 12(4)^2 - (4)^3 \\\\ &= 12(16) - 64 \\\\ &= 192 - 64 = 128 \\end{aligned} \\\\ \\implies C(4, 128)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true,
@@ -7873,7 +7873,7 @@
                   "work": "y'' = 6x - 12 = 6(x-2) = 0 \\implies x=2 \\\\ y(2) = 2(-1)^2 = 2 \\implies (2,2)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q7a_sketch",
@@ -7899,7 +7899,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q7b",
@@ -7922,7 +7922,7 @@
                   "work": "y'' = 6x - 6 = 6(x-1) = 0 \\implies x=1 \\\\ y(1) = 1 - 3 - 9 + 8 = -3 \\implies (1,-3)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q7b_sketch",
@@ -7948,7 +7948,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true
@@ -7991,7 +7991,7 @@
               "ext": {
                 "ans": "Local minimum at (0, 10), horizontal point of inflection at (2, 26)."
               },
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q9b",
@@ -8021,7 +8021,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "Local minimum at (0,10), stationary point of inflection at (2,26), and non-stationary point of inflection at (2/3, 16.52).",
@@ -8055,7 +8055,7 @@
                   "work": "\\begin{aligned} f'(x) &= -1 \\cdot 2(x^2 - 9)^{-2} \\cdot \\frac{d}{dx}(x^2 - 9) \\\\ &= -2(x^2 - 9)^{-2} \\cdot 2x \\\\ &= -\\frac{4x}{(x^2 - 9)^2} \\end{aligned}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q10b",
@@ -8109,7 +8109,7 @@
                   "work": "\\text{Since } f(-x) = f(x) \\text{, the function is even. Even functions are symmetric under reflection across the y-axis.}"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3e-q10d",
@@ -8155,7 +8155,7 @@
                   "work": "\\text{Since the function approaches 0 as } x \\text{ gets very large in either direction, the horizontal asymptote is } y = 0."
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3e-q10f",
@@ -8189,7 +8189,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q10g",
@@ -8272,7 +8272,7 @@
                   "work": "\\text{Thus, } f'(x) \\text{ is always strictly negative. The curve has no turning points and is always decreasing.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q11c",
@@ -8341,7 +8341,7 @@
                   "work": "\\text{The horizontal asymptote is } y = 0."
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3e-q11f",
@@ -8364,7 +8364,7 @@
                   "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd. It displays rotational point symmetry of 180 degrees about the origin.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q11g",
@@ -8415,7 +8415,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3e-q11i",
@@ -8479,7 +8479,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "bb2020-q26b",
@@ -8538,7 +8538,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "bb2020-q26d",
@@ -8607,7 +8607,7 @@
                   "work": "\\(f''(x)=6x+12; \\ f''(-3)=-6\\lt 0\\Rightarrow\\text{max}; \\ f''(-1)=6\\gt 0\\Rightarrow\\text{min}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "gosford2020-q20b",
@@ -8656,7 +8656,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "gosford2020-q20d",
@@ -8757,7 +8757,7 @@
                   "work": "\\(\\left(\\dfrac{\\pi}{4},\\sqrt2\\right)\\) is a maximum; \\(\\left(-\\dfrac{3\\pi}{4},-\\sqrt2\\right)\\) is a minimum"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "hh2020-q24c",
@@ -8789,7 +8789,7 @@
                   "work": "\\(\\left(-\\dfrac{\\pi}{4},0\\right)\\) and \\(\\left(\\dfrac{3\\pi}{4},0\\right)\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "hh2020-q24d",
@@ -8811,7 +8811,7 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 4
             },
             {
               "id": "hh2020-q24e",
@@ -8839,7 +8839,7 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 4
             }
           ],
           "manual": true,
@@ -9156,7 +9156,7 @@
                   "work": "\\(P = 24x - 3x^2 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q2b",
@@ -9214,7 +9214,7 @@
                   "work": "\\(P_{\\max} = 48\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9258,7 +9258,7 @@
                   "work": "\\(Q = x^2 + x^2 - 20x + 100\\)\n\n\\(Q = 2x^2 - 20x + 100 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q3b",
@@ -9324,7 +9324,7 @@
                   "work": "\\(Q = (50 - 100) + 100\\)\n\n\\(Q = -50 + 100\\)\n\n\\(Q_{\\min} = 50\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9368,7 +9368,7 @@
                   "work": "\\(w = 12 - x \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q4b",
@@ -9395,7 +9395,7 @@
                   "work": "\\(A = x(12) - x(x)\\)\n\n\\(A = 12x - x^2 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q4c",
@@ -9457,7 +9457,7 @@
                   "work": "\\(A_{\\max} = 36 \\text{ cm}^2\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9493,7 +9493,7 @@
                   "work": "\\(L = 60 - 2x \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q5b",
@@ -9520,7 +9520,7 @@
                   "work": "\\(A = x(60) - x(2x)\\)\n\n\\(A = 60x - 2x^2 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q5c",
@@ -9658,7 +9658,7 @@
                   "work": "\\(V = 96 - 64 = 32\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 90
@@ -9799,7 +9799,7 @@
                   "work": "\\(P_{\\min} = 32 \\text{ cm}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -9969,7 +9969,7 @@
                   "work": "\\(\\text{At } x = 15: \\dfrac{d^2L}{dx^2} = \\dfrac{900}{15^3} > 0 \\implies\\) concave up \\(\\implies\\) minimum. \\(\\checkmark\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3g-q8bii",
@@ -9992,7 +9992,7 @@
                   "work": "\\(y = 10\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -10034,7 +10034,7 @@
                   "work": "\\(w = \\dfrac{24 - 3h}{4}\\)\n\n\\(w = \\dfrac{1}{4}(24 - 3h) \\checkmark\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3g-q9b",
@@ -10096,7 +10096,7 @@
                   "work": "\\(\\dfrac{d^2A}{dh^2} = -\\dfrac{3}{2}\\)\n\nSince \\(-\\dfrac{3}{2} < 0\\), the curve is concave down, confirming a maximum. \\(\\checkmark\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y12a-3g-q9cii",
@@ -10123,7 +10123,7 @@
                   "work": "\\(w = \\dfrac{1}{4}(12)\\)\n\n\\(w = 3 \\text{ m}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true
@@ -10245,7 +10245,7 @@
                   "work": "\\(h = 12 - 2\\pi r \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q12b",
@@ -10268,7 +10268,7 @@
                   "work": "\\(V = \\pi r^2 (12 - 2\\pi r) \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q12c",
@@ -10334,7 +10334,7 @@
                   "work": "\\(V_{\\max} = \\dfrac{64}{\\pi}\\) m\\(^3\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 180
@@ -10370,7 +10370,7 @@
                   "work": "rh = 12 - r^2 \\implies h = \\frac{12 - r^2}{r}"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q13b",
@@ -10393,7 +10393,7 @@
                   "work": "V = \\pi r(12 - r^2) = \\pi(12r - r^3)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q13c",
@@ -10452,7 +10452,7 @@
                   "work": "\\(S = x^2 + 4 \\times xh = x^2 + 4xh \\text{ cm}^2 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q14b",
@@ -10483,7 +10483,7 @@
                   "work": "\\(S = x^2 + \\dfrac{432}{x} \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q14ci",
@@ -10585,7 +10585,7 @@
                   "work": "\\(V = x(216 - 66x + 4x^2) = 216x - 66x^2 + 4x^3 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q15b",
@@ -10833,7 +10833,7 @@
                   "work": "\\(S = 16x + \\dfrac{216}{x^2} \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q16ci",
@@ -10872,7 +10872,7 @@
                   "work": "\\(\\dfrac{d^2S}{dx^2} = \\dfrac{1296}{x^4}\\)\n\nAt \\(x = 3\\): \\(\\dfrac{d^2S}{dx^2} = \\dfrac{1296}{81} = 16 > 0 \\implies\\) concave up \\(\\implies\\) minimum \\(\\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q16cii",
@@ -11216,7 +11216,7 @@
                   "work": "\\(\\text{Since two angles are equal, the third must also be equal. Therefore, the triangles are similar (AA similarity test).}\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q19b",
@@ -11266,7 +11266,7 @@
                   "work": "\\(V = 30\\pi r^2 - \\dfrac{10}{3}\\pi r^3 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q19d",
@@ -11420,7 +11420,7 @@
                   "work": "\\(\\dfrac{4}{-x} = \\dfrac{y}{-6}\\)\n\nMultiply both sides by \\(6x\\):\n\\(-24 = -xy\\)\n\n\\(xy = 24 \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q20b",
@@ -11455,7 +11455,7 @@
                   "work": "\\(A = 24 + \\dfrac{72}{x} + 2x = 24 + 2x + \\dfrac{72}{x} \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q20c",
@@ -11522,7 +11522,7 @@
                   "work": "\\(C = 300 \\left(\\dfrac{8100}{v} + \\dfrac{v^2}{v}\\right)\\)\n\n\\(C = 300 \\left(\\dfrac{8100}{v} + v\\right) \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q22b",
@@ -11761,7 +11761,7 @@
                   "work": "\\(T = \\dfrac{1}{6}\\sqrt{64 + x^2} + \\dfrac{1}{10}(15 - x) \\checkmark\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3g-q23b",
@@ -11846,7 +11846,7 @@
                   "work": "\\(T(6) = \\dfrac{5}{3} + \\dfrac{9}{10} = \\dfrac{50}{30} + \\dfrac{27}{30}\\)\n\n\\(T(6) = \\dfrac{77}{30} \\text{ hours}\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
           "timeLimit": 240,
@@ -11899,7 +11899,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "bb2020-q32b",
@@ -11928,7 +11928,7 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 4
             },
             {
               "id": "bb2020-q32c",
@@ -11963,7 +11963,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "bb2020-q32d",
@@ -11991,7 +11991,7 @@
                   "work": "\\(A \\approx 176.9\\text{ m}^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "manual": true,
@@ -12037,7 +12037,7 @@
                   "work": "T(x) = \\dfrac{\\sqrt{x^2+9}}{4}+\\dfrac{6-x}{5} \\quad \\blacksquare"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "glenwood2020-q34b",
@@ -12076,7 +12076,7 @@
                   "work": "T(4) = 1.65\\ \\text{hours} = 1\\ \\text{hour } 39\\ \\text{minutes}"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "steps": [
@@ -12142,7 +12142,7 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 5
             },
             {
               "id": "gosford2020-q32b",
@@ -12168,7 +12168,7 @@
                 }
               ],
               "manual": true,
-              "xp": 2
+              "xp": 5
             },
             {
               "id": "gosford2020-q32c",
@@ -12195,7 +12195,7 @@
                   "work": "\\(r^2 = \\dfrac{300}{\\pi} \\;\\Rightarrow\\; r=\\sqrt{\\dfrac{300}{\\pi}}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 5
             }
           ],
           "manual": true,
@@ -12243,7 +12243,7 @@
                   "work": "\\(A = xe^{-x/5}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "hh2020-q31b",
@@ -12275,7 +12275,7 @@
                   "work": "\\(A_{\\max} = 5e^{-5/5} = 5e^{-1}\\) units\\(^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "hh2020-q31c",
@@ -12317,7 +12317,7 @@
                   "work": "\\(A = \\dfrac{25}{4}\\ln4-\\dfrac{15}{2}\\) units\\(^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "manual": true,
@@ -12369,7 +12369,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "hillsgrammar-25-2u-q33b",
@@ -12446,7 +12446,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -14137,7 +14137,7 @@
               "work": "Evaluating this gives:\n\\[\\frac{2}{3}(x+3)^{\\frac{3}{2}} + C\\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q10b",
@@ -14167,7 +14167,7 @@
               "work": "Evaluating this gives:\n\\[\\frac{2}{3}(x-2)^{\\frac{3}{2}} + C\\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q10c",
@@ -14197,7 +14197,7 @@
               "work": "Evaluating this gives:\n\\[-\\frac{2}{3}(3-x)^{\\frac{3}{2}} + C\\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q10d",
@@ -14227,7 +14227,7 @@
               "work": "Evaluating this gives:\n\\[\\frac{2}{9}(3x-5)^{\\frac{3}{2}} + C\\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q10e",
@@ -14257,7 +14257,7 @@
               "work": "Evaluating this gives:\n\\[\\frac{1}{3}(2x-3)^{\\frac{3}{2}} + C\\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q11a",
@@ -14291,7 +14291,7 @@
               "work": "Substitute \\( C = 3 \\) back into the general equation:\n\\[ y = \\frac{(x-2)^5}{5} + 3 \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q11b",
@@ -14325,7 +14325,7 @@
               "work": "Substitute \\( C = -\\frac{25}{12} \\) back into the general equation:\n\\[ y = \\frac{(3x+1)^4}{12} - \\frac{25}{12} \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q11c",
@@ -14359,7 +14359,7 @@
               "work": "Substitute \\( C = \\frac{7}{9} \\) back into the general equation:\n\\[ y = \\frac{2}{9}(3x+1)^{\\frac{3}{2}} + \\frac{7}{9} \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q12a",
@@ -14393,7 +14393,7 @@
               "work": "Since \\( C = 0 \\), the final equation is:\n\\[ y = x^5 - x^3 + 2x \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q12b",
@@ -14427,7 +14427,7 @@
               "work": "Substitute \\( C = -1 \\) back into the general equation:\n\\[ y = -x^3 + 2x^2 + 3x - 1 \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q12c",
@@ -14461,7 +14461,7 @@
               "work": "Substitute \\( C = \\frac{25}{12} \\) back into the general equation:\n\\[ y = -\\frac{(2-3x)^4}{12} + \\frac{25}{12} \\]"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y12a-3h-q13",
@@ -14495,7 +14495,7 @@
               "work": "Now substitute \\( t = 2 \\) into our specific equation:\n\\[ y = (2)^4 - 2(2)^3 + 3(2) + 5 \\]\n\\[ y = 16 - 2(8) + 6 + 5 \\]\n\\[ y = 16 - 16 + 11 \\]\n\\[ y = 11 \\]"
             }
           ],
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3h-q14",
@@ -14530,7 +14530,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3h-q15",
@@ -14565,7 +14565,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3h-q16",
@@ -14598,7 +14598,7 @@
                   "work": "11 = -9 + C_1 \\implies C_1 = 20 \\implies f'(x) = x^2 - 6x + 20"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3h-q16b",
@@ -14625,7 +14625,7 @@
                   "work": "20 = 42 + C_2 \\implies C_2 = -22 \\implies f(x) = \\frac{x^3}{3} - 3x^2 + 20x - 22"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3h-q16c",
@@ -14644,7 +14644,7 @@
                   "work": "The y-intercept occurs when \\( x = 0 \\). Substitute \\( x = 0 \\) into the equation for \\( f(x) \\):\n\\[ f(0) = \\frac{0^3}{3} - 3(0)^2 + 20(0) - 22 \\]\n\\[ f(0) = -22 \\]\nThus, the y-intercept is \\( (0, -22) \\)."
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "timeLimit": 240
@@ -14676,7 +14676,7 @@
                   "work": "Now integrate \\( y' \\) to find \\( y \\). Remember to add a second constant \\( D \\):\n\\[ y = \\int (12x - 3x^2 + C) \\, dx \\]\n\\[ y = \\frac{12x^2}{2} - \\frac{3x^3}{3} + Cx + D \\]\n\\[ y = 6x^2 - x^3 + Cx + D \\]\n\\[ y = -x^3 + 6x^2 + Cx + D \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3h-q17b",
@@ -14707,7 +14707,7 @@
                   "work": "Substitute \\( C = 5 \\) and \\( D = 0 \\) back into the general equation:\n\\[ y = -x^3 + 6x^2 + 5x + 0 \\]\n\\[ y = -x^3 + 6x^2 + 5x \\]"
                 }
               ],
-              "xp": 3
+              "xp": 1
             }
           ],
           "timeLimit": 240
@@ -14743,7 +14743,7 @@
                   "work": "Since both branches have the exact same derivative, we can combine them and write:\n\\[ g'(x) = -\\frac{4}{x^2} \\quad \\text{for all } x \\neq 0 \\]"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3h-q18b",
@@ -14766,7 +14766,7 @@
                   "work": "For \\( x = 2 \\), since \\( 2 > 0 \\), we must use the top branch \\( g(x) = \\frac{4}{x} + 1 \\).\n\\[ g(2) = \\frac{4}{2} + 1 \\]\n\\[ g(2) = 2 + 1 = 3 \\]\nThis matches the y-coordinate of \\( A(2, 3) \\), so the graph correctly passes through this point."
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y12a-3h-q18c",
@@ -14810,7 +14810,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "timeLimit": 240
@@ -14884,7 +14884,7 @@
           "dna": {
             "dnaId": "CALC-INT-01"
           },
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -16218,7 +16218,7 @@
                   "work": "-12 < k < 20"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ]
         },
@@ -16596,7 +16596,7 @@
                   "work": "y(2) = 2^4 - 4(2)^3 + 12 = 16 - 32 + 12 = -4 \\implies (2, -4) \\text{ is inflection point}"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y12a-3i-q14b",
@@ -16733,7 +16733,7 @@
                   "work": "\\text{We know } S(0) = 600 \\text{ and } S(5) = 75.\\\\ \\text{Now evaluate at } t = 3:\\\\ S(3) = 600 + 54(3)^2 - 3(3)^4 = 600 + 486 - 243 = 843.\\\\ \\text{Comparing 600, 75, and 843, the maximum is 843.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -16803,7 +16803,7 @@
                   "work": "\\text{Substitute } x = \\frac{10}{3} \\text{ back into the factored volume formula:}\\\\ V = \\frac{10}{3}\\left(20 - 2\\left(\\frac{10}{3}\\right)\\right)\\left(12 - 2\\left(\\frac{10}{3}\\right)\\right)\\\\ V = \\frac{10}{3}\\left(\\frac{40}{3}\\right)\\left(\\frac{16}{3}\\right) = \\frac{6400}{27}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         },
@@ -16865,7 +16865,7 @@
                   "work": "\\text{Set the derivative to zero:}\\\\ 10\\pi r - \\pi r^2 = 0\\\\ \\pi r(10 - r) = 0\\\\ \\text{Since a cone must have a positive radius } (r > 0)\\text{, we divide by } \\pi r \\text{ to get:}\\\\ 10 - r = 0 \\implies r = 10"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "timeLimit": 240
@@ -16899,7 +16899,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3i-q18b",
@@ -16930,7 +16930,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3i-q18c",
@@ -16961,7 +16961,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3i-q18d",
@@ -16988,7 +16988,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3i-q18e",
@@ -17027,7 +17027,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y12a-3i-q19a",
@@ -17058,7 +17058,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q19b",
@@ -17089,7 +17089,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q19c",
@@ -17120,7 +17120,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q20a",
@@ -17151,7 +17151,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q20b",
@@ -17174,7 +17174,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q20c",
@@ -17201,7 +17201,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q21a",
@@ -17232,7 +17232,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q21b",
@@ -17259,7 +17259,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q22",
@@ -17290,7 +17290,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y12a-3i-q23",
@@ -17325,7 +17325,7 @@
             }
           ],
           "timeLimit": 240,
-          "xp": 3
+          "xp": 2
         }
       ]
     }
