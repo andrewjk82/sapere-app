@@ -671,8 +671,8 @@
         {
           "id": "1d3dea947f7b4a31390d6260a27595ef",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Find the value of \\(302 \\times 298\\) using special expansions.",
+          "difficulty": "hard",
           "options": [
             "\\(90000\\)",
             "\\(90004\\)",
@@ -700,7 +700,16 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 3,
+          "keyPoints": [
+            {
+              "text": "special expansions",
+              "note": "\\( (300+2)(300-2) \\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "1df31b465f9383be6d44abeb33bc6df9",
