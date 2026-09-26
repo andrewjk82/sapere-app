@@ -864,9 +864,6 @@
           "type": "mc",
           "stem": "On a Cartesian plane, the points \\(E(-4, 0)\\) and \\(F(0, 3)\\) are plotted. On which axis is \\(F(0, 3)\\) located?",
           "difficulty": "easy",
-          "figure": {
-            "svg": "fig:6ba08cced6"
-          },
           "options": [
             "The \\(y\\)-axis",
             "The \\(x\\)-axis",
@@ -877,7 +874,10 @@
           "steps": [
             {
               "explain": "A point on the \\(y\\)-axis has its \\(x\\)-coordinate equal to 0.",
-              "work": "\\(F(0, 3)\\) has \\(x = 0\\), so it lies on the \\(y\\)-axis."
+              "work": "\\(F(0, 3)\\) has \\(x = 0\\), so it lies on the \\(y\\)-axis.",
+              "figure": {
+                "svg": "fig:6ba08cced6"
+              }
             }
           ],
           "xp": 1,
