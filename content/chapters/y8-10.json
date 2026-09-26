@@ -1583,8 +1583,8 @@
         {
           "id": "wghs2023-y8-s2q1c",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Simplify the ratio: 3 hours to 18 minutes.",
+          "difficulty": "medium",
           "options": [
             "\\(10 : 1\\)",
             "\\(1 : 6\\)",
@@ -1602,11 +1602,13 @@
               "work": "\\(10 : 1\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
