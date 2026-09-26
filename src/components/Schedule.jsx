@@ -885,11 +885,22 @@ const Schedule = ({ students = [] }) => {
                           {normalizeSubjectLabel(session.subject)} {isGroup && `(${group.length})`}
                         </div>
                         <div style={{ fontSize: eventNameSize, fontWeight: 800, color: '#0f172a', lineHeight: '1.15', minHeight: 0, overflow: 'hidden' }}>
-                          {group.map((s, i) => (
-                            <div key={i} style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                              {s.studentName}
-                            </div>
-                          ))}
+                          {group.map((s, i) => {
+                            // Short boxes (< ~45px) keep a single truncated line; taller ones
+                            // (1hr+ classes) let a long name wrap onto a 2nd line instead of
+                            // clipping mid-word, since group lists still need to stay compact.
+                            const nameLines = !isGroup && height >= 45 ? 2 : 1;
+                            return (
+                              <div
+                                key={i}
+                                style={nameLines === 1
+                                  ? { whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }
+                                  : { display: '-webkit-box', WebkitLineClamp: nameLines, WebkitBoxOrient: 'vertical', overflow: 'hidden', wordBreak: 'break-word' }}
+                              >
+                                {s.studentName}
+                              </div>
+                            );
+                          })}
                         </div>
                         {height >= 36 && (
                           <div style={{ fontSize: '9px', color: '#475569', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '3px', fontWeight: 800 }}>
