@@ -24,7 +24,15 @@ const CLOSE = 'QZKPCLOSE';
 
 const mathRanges = (stem) => {
   const out = [];
-  for (const m of String(stem).matchAll(MATH_BLOCK)) out.push([m.index, m.index + m[0].length]);
+  const src = String(stem);
+  for (const m of src.matchAll(MATH_BLOCK)) {
+    // Old seeds double-escape delimiters ("\\(" in the file = `\\(`): the regex matches from the
+    // second backslash, so pull the start back over any extra backslashes — a highlight must
+    // never split them, or toDisplayText can no longer heal the delimiter.
+    let start = m.index;
+    while (start > 0 && src[start - 1] === '\\') start -= 1;
+    out.push([start, m.index + m[0].length]);
+  }
   return out;
 };
 

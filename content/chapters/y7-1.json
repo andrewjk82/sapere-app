@@ -392,7 +392,17 @@
               "work": "\\( D = 70 \\text{ km} \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "\\( -45 \\text{ km} \\)",
+              "note": "Below ground is negative. Count the distance up to 0, then from 0 up to the balloon."
+            },
+            {
+              "text": "absolute distance",
+              "note": "Distance is never negative — it is how far apart the two points are."
+            }
+          ]
         },
         {
           "id": "y7-1a-q17",
@@ -1530,7 +1540,17 @@
               "work": "\\( \\text{Sum} = -1 + (-23) = -24 \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "exactly",
+              "note": "There are two numbers 11 units from −12: one to the left and one to the right."
+            },
+            {
+              "text": "sum of all possible values",
+              "note": "Find both values of x first, then add them together."
+            }
+          ]
         },
         {
           "id": "y7-1a-q57",
@@ -2664,7 +2684,17 @@
               "work": "\\( M = \\frac{-1.3}2 = -0.65 \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "The midpoint is halfway: add the two coordinates and divide by 2."
+            },
+            {
+              "text": "\\( -4.2 \\)",
+              "note": "Watch the sign — adding a negative number moves you left."
+            }
+          ]
         },
         {
           "id": "y7-1a-q97",
@@ -3289,7 +3319,13 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\\\( 2 + 38 + 5 \\\\)",
+              "note": "Look for numbers that make a round ten: 2 + 38 = 40."
+            }
+          ]
         },
         {
           "id": "y7-1b-q2c",
@@ -4812,7 +4848,17 @@
               "work": "\\( 120 + 32 = 152 \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "three light wavelengths",
+              "note": "Add all three bandwidths together."
+            },
+            {
+              "text": "\\( 75 \\)",
+              "note": "Group numbers that are easy to add first, e.g. 45 + 75 = 120."
+            }
+          ]
         },
         {
           "id": "y7-1b-h44",
@@ -7685,7 +7731,13 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\\\( 738 + 1064 + 529 \\\\)",
+              "note": "Line up the units, tens, hundreds and thousands columns before adding, and carry when a column reaches 10."
+            }
+          ]
         },
         {
           "id": "y7-1c-q2d",
@@ -9161,7 +9213,17 @@
               "work": "\\\\( 750000 - 185000 = 565000 \\\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "burn",
+              "note": "“Burn” means the tokens are destroyed — this is a subtraction."
+            },
+            {
+              "text": "\\\\( 185000 \\\\)",
+              "note": "Subtract column by column; borrow from the next column when the top digit is smaller."
+            }
+          ]
         },
         {
           "id": "y7-1c-h29",
@@ -11084,7 +11146,13 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(  712 - 255  \\)",
+              "note": "In the units column 2 − 5 needs a borrow from the tens."
+            }
+          ]
         },
         {
           "id": "y7-1d-q3c",
@@ -13936,23 +14004,33 @@
           "difficulty": "hard",
           "stem": "Gabriel measures a historical dig trench starting at a depth marker of \\( -14600 \\) mm. After reinforcing the trench walls, they raise the floor by \\( 4255 \\) mm to avoid groundwater. Solve for the new depth coordinate.",
           "options": [
-            "\\( 10245 \\)",
-            "\\( 10335 \\)",
-            "\\( 10344 \\)",
-            "\\( 10345 \\)"
+            "\\( -10245 \\)",
+            "\\( -10335 \\)",
+            "\\( -18855 \\)",
+            "\\( -10345 \\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Identify the initial total amount and the quantity to be subtracted from the problem description.",
-              "work": "\\( 14600 - 4255 \\)"
+              "explain": "The trench starts below ground, so its depth coordinate is negative. Raising the floor moves it up (towards 0), so add.",
+              "work": "\\( -14600 + 4255 \\)"
             },
             {
-              "explain": "Perform the subtraction calculation.",
-              "work": "\\( 14600 - 4255 = 10345 \\)"
+              "explain": "Adding a smaller positive number to a negative number: subtract the sizes and keep the negative sign.",
+              "work": "\\( -14600 + 4255 = -10345 \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "\\( -14600 \\)",
+              "note": "The trench starts below zero, so its coordinate is negative."
+            },
+            {
+              "text": "raise the floor",
+              "note": "Raising the floor moves the depth UP towards 0 — add 4255 to −14600."
+            }
+          ]
         },
         {
           "id": "y7-1d-h87",
@@ -15915,7 +15993,13 @@
               "work": "\\( 17 \\times 137 = 2329 \\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "each tower",
+              "note": "“Each” tells you to multiply: towers × apartments per tower."
+            }
+          ]
         },
         {
           "id": "y7-1e-h41",
@@ -17892,7 +17976,13 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(64 \\times 102\\)",
+              "note": "Split 102 into 100 + 2, then 64 × 100 + 64 × 2."
+            }
+          ]
         },
         {
           "id": "y7-1f-q3a",
@@ -19506,7 +19596,17 @@
               "work": "= 17 \\times (42) = 714"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "each of 17 boxes",
+              "note": "Every step uses the same 17 boxes — work out the units per box first, then multiply by 17 once."
+            },
+            {
+              "text": "removed",
+              "note": "Removed units are subtracted: (37 + 22 − 17) per box."
+            }
+          ]
         },
         {
           "id": "y7-1f-high-q32",
@@ -21830,7 +21930,17 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "expanded form",
+              "note": "Write each digit times its place value: hundreds, tens and units."
+            },
+            {
+              "text": "the digit 4",
+              "note": "Count positions from the right: units, tens, hundreds."
+            }
+          ]
         },
         {
           "id": "y7-1g-q2f",
@@ -25495,7 +25605,13 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\begin{array}{r l} * \\; 8 \\\\ \\times \\quad 6 \\\\ \\hline 5 \\; 2 \\; * \\end{array}\\)",
+              "note": "Start with the units column: 8 × 6 = 48, so the last digit is 8 and you carry 4."
+            }
+          ]
         },
         {
           "id": "y7-1h-q6b",
@@ -26965,7 +27081,17 @@
               "work": "\\(117,990\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "Each rack",
+              "note": "Two “each”s mean two multiplications: racks × servers × requests."
+            },
+            {
+              "text": "138 requests per minute",
+              "note": "Find the number of servers first (19 × 45), then multiply by 138."
+            }
+          ]
         },
         {
           "id": "y7-1h-h40",
@@ -29119,7 +29245,13 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "smallest possible remainder",
+              "note": "The remainder must be smaller than 8 — use the biggest multiple of 8 that fits into 87."
+            }
+          ]
         },
         {
           "id": "y7-1i-q5e",
@@ -31977,7 +32109,13 @@
               "work": "\\(200 - 1 = 199\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "distributive law of division",
+              "note": "Divide each part by 9 separately: 1800 ÷ 9 − 9 ÷ 9."
+            }
+          ]
         },
         {
           "id": "y7-1i-h94",
@@ -32882,7 +33020,13 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(8544 \\div 12\\)",
+              "note": "12 doesn’t go into 8, so start with 85 ÷ 12."
+            }
+          ]
         },
         {
           "id": "y7-1j-q5",
@@ -35973,7 +36117,13 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "quotient r remainder",
+              "note": "The remainder is what is left over after the last subtraction — it must be less than 105."
+            }
+          ]
         },
         {
           "id": "y7-1k-q3",
@@ -36957,7 +37107,13 @@
               "work": "\\(\\therefore\\; 306\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "per qubit",
+              "note": "“Per” means share equally — divide the operations by the number of qubits."
+            }
+          ]
         },
         {
           "id": "y7-1k-h25",
@@ -40490,7 +40646,17 @@
               "work": "\\(65 \\times 2 = 130\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "\\(6\\text{ equal beakers}\\)",
+              "note": "Divide first to find how much acid is in one beaker."
+            },
+            {
+              "text": "to each beaker",
+              "note": "Add the water to ONE beaker’s amount, then combine 2 beakers."
+            }
+          ]
         },
         {
           "id": "y7-1l-h27",
@@ -42389,7 +42555,17 @@
               "work": "\\(440 + 480 = 920\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "in every plot",
+              "note": "Take 5 off each plot’s saplings before multiplying by the number of plots."
+            },
+            {
+              "text": "across both sections",
+              "note": "Work out Sector A and Sector B separately, then add them."
+            }
+          ]
         },
         {
           "id": "y7-1l-h90",
@@ -43218,7 +43394,13 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "buses are needed",
+              "note": "Every student needs a seat — if there is a remainder, you need one more bus."
+            }
+          ]
         },
         {
           "id": "y7-1m-q6",
@@ -44680,7 +44862,17 @@
               "work": "\\(807 - 510 = 297\\)"
             }
           ],
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "in each window",
+              "note": "The same decrease happens 3 times: multiply 170 by 3 first."
+            },
+            {
+              "text": "decreases",
+              "note": "A decrease is subtracted from the starting reading."
+            }
+          ]
         },
         {
           "id": "y7-1m-h41",
