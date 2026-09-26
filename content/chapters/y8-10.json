@@ -1529,8 +1529,8 @@
         {
           "id": "wghs2023-y8-s2q1a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify the ratio \\(6 : 15\\).",
+          "difficulty": "easy",
           "options": [
             "\\(2 : 5\\)",
             "\\(3 : 5\\)",
@@ -1544,11 +1544,13 @@
               "work": "\\(6 \\div 3 : 15 \\div 3 = 2 : 5\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
