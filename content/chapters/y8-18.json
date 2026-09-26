@@ -699,8 +699,8 @@
         {
           "id": "wghs2023-y8-s3q3ai",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "The point \\(A(-3, 4)\\) is plotted on a Cartesian plane. In which quadrant is point \\(A\\)?",
+          "difficulty": "easy",
           "options": [
             "Quadrant II",
             "Quadrant I",
@@ -714,11 +714,13 @@
               "work": "\\(x < 0, y > 0 \\Rightarrow \\text{Quadrant II}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
