@@ -1283,8 +1283,11 @@
         {
           "id": "wghs2023-y8-s2q14a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Mrs Coffey's running training is described in the travel graph below. How long (in minutes) did she stop for the first time?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:c618c26959"
+          },
           "options": [
             "\\(30 \\text{ minutes}\\)",
             "\\(60 \\text{ minutes}\\)",
@@ -1298,14 +1301,13 @@
               "work": "\\(\\text{Duration} = 10{:}30\\,\\text{am} - 10{:}00\\,\\text{am} = 30 \\text{ min}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
-          },
-          "figure": {
-            "svg": "fig:c618c26959"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
