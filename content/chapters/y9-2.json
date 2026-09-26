@@ -2481,8 +2481,8 @@
         {
           "id": "killara2023-y9-t4a-q18b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Expand and simplify \\\\((2\\sqrt{6} + 3)(2\\sqrt{6} - 3)\\\\).",
+          "difficulty": "medium",
           "options": [
             "15",
             "24",
@@ -2500,6 +2500,7 @@
               "work": "\\\\((4 \\times 6) - 9 = 24 - 9 = 15\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
