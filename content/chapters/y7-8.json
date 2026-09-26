@@ -3342,11 +3342,9 @@
         },
         {
           "id": "sgs2020-y7-q1g",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "manual": true,
-          "stem": "A rectangle has a perimeter of \\(30\\) centimetres. Sketch an example of a rectangle that has perimeter \\(30\\) centimetres (other than \\(11 \\text{ cm}\\) by \\(4 \\text{ cm}\\)).",
-          "answer": "",
+          "stem": "A rectangle has a perimeter of \\(30\\) centimetres. Which of the following could be the dimensions of a different rectangle that also has a perimeter of \\(30\\text{ cm}\\) (other than \\(11 \\text{ cm}\\) by \\(4 \\text{ cm}\\))?",
           "hint": "The sum of the length and width must be half the perimeter.",
           "steps": [
             {
@@ -3362,7 +3360,14 @@
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
           },
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\(10\\text{ cm}\\) by \\(5\\text{ cm}\\)",
+            "\\(12\\text{ cm}\\) by \\(18\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\) by \\(15\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\) by \\(22\\text{ cm}\\)"
+          ],
+          "answer": 0
         }
       ]
     },

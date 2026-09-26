@@ -2761,11 +2761,10 @@
         },
         {
           "id": "sgs2020-y7-q7a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "manual": true,
-          "stem": "It is estimated that about \\(2.3\\) million people gathered around Sydney Harbour on New Year's Eve 2019 to view the fireworks. There were approximately \\(25\\) million people in Australia at that time. (i) What fraction attended? (ii) What percentage did not attend?",
-          "answer": "",
+          "stem": "It is estimated that about \\(2.3\\) million people gathered around Sydney Harbour on New Year's Eve 2019 to view the fireworks. There were approximately \\(25\\) million people in Australia at that time. What fraction of the people in Australia attended, and what percentage did not attend?",
+          "answer": 0,
           "hint": "Convert decimal fractions to whole numbers, and subtract the attended percentage from 100%.",
           "steps": [
             {
@@ -2785,7 +2784,13 @@
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
           },
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\(\\frac{23}{250}\\) attended, and \\(90.8\\%\\) did not attend",
+            "\\(\\frac{2.3}{25}\\) attended, and \\(9.2\\%\\) did not attend",
+            "\\(\\frac{23}{100}\\) attended, and \\(80.2\\%\\) did not attend",
+            "\\(\\frac{1}{10}\\) attended, and \\(90\\%\\) did not attend"
+          ]
         }
       ]
     }

@@ -1921,11 +1921,10 @@
         },
         {
           "id": "sgs2020-y7-q6c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "manual": true,
-          "stem": "A number \\(n\\) is multiplied by \\(4\\) and then increased by \\(10\\). The result is \\(-6\\). Form an equation and solve to find \\(n\\).",
-          "answer": "",
+          "stem": "A number \\(n\\) is multiplied by \\(4\\) and then increased by \\(10\\). The result is \\(-6\\). What is the value of \\(n\\)?",
+          "answer": 0,
           "hint": "Translate the words into an algebraic equation, then solve.",
           "steps": [
             {
@@ -1945,7 +1944,13 @@
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
           },
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\(-4\\)",
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(-16\\)"
+          ]
         },
         {
           "id": "sgs2020-y7-q9c",
