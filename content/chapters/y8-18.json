@@ -780,8 +780,8 @@
         {
           "id": "wghs2023-y8-s3q3d",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "What special name do we give to the point \\(O(0, 0)\\)?",
+          "difficulty": "easy",
           "options": [
             "The origin",
             "The y-intercept",
@@ -795,11 +795,13 @@
               "work": "\\((0,0) = \\text{the origin}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
