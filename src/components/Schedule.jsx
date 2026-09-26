@@ -766,8 +766,7 @@ const Schedule = ({ students = [] }) => {
   // Hour row height (slotH) is measured so all timeSlots fit the body height.
   const minEventH = Math.max(18, Math.min(28, slotH - 4));
   const eventPad = slotH < 40 ? '4px 6px' : '8px 9px';
-  const eventTitleSize = slotH < 40 ? '9px' : '10px';
-  const eventNameSize = slotH < 40 ? '10px' : '11px';
+  const eventNameSize = slotH < 40 ? '11px' : '12px';
 
   const renderCalendarView = () => (
     <div style={{ 
@@ -913,11 +912,11 @@ const Schedule = ({ students = [] }) => {
                         }}
                         onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                         onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        title={group.map(s => s.studentName).join(', ')}
                       >
-                        <div style={{ fontSize: eventTitleSize, fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {normalizeSubjectLabel(session.subject)} {isGroup && `(${group.length})`}
-                        </div>
-                        <div style={{ fontSize: eventNameSize, fontWeight: 800, color: '#0f172a', lineHeight: '1.15', minHeight: 0, overflow: 'hidden' }}>
+                        {/* Everyone here teaches Maths, and the box is small — just the
+                            student name(s), no subject label or time. */}
+                        <div style={{ fontSize: eventNameSize, fontWeight: 800, color: '#0f172a', lineHeight: '1.2', minHeight: 0, overflow: 'hidden', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                           {group.map((s, i) => {
                             // Short boxes (< ~45px) keep a single truncated line; taller ones
                             // (1hr+ classes) let a long name wrap onto a 2nd line instead of
@@ -935,11 +934,6 @@ const Schedule = ({ students = [] }) => {
                             );
                           })}
                         </div>
-                        {height >= 36 && (
-                          <div style={{ fontSize: '9px', color: '#475569', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '3px', fontWeight: 800 }}>
-                            <Clock size={9} />{session.startTime}
-                          </div>
-                        )}
                       </div>
                     );
                   });
