@@ -24,6 +24,7 @@ const src = readFileSync(file, 'utf8');
 const ch = JSON.parse(src);
 
 const findText = (stem, pattern) => {
+  if (typeof pattern === 'function') return pattern(stem);
   if (typeof pattern === 'string') {
     const at = stem.indexOf(pattern);
     return at < 0 ? null : [at, at + pattern.length];
@@ -38,7 +39,7 @@ const rendersSame = (stem, kps) => render(insertKeyPointMarkers(stem, kps).split
 
 const keyPointsFor = (stem) => {
   for (const rule of RULES) {
-    if (!rule.when.test(stem)) continue;
+    if (!(typeof rule.when === 'function' ? rule.when(stem) : rule.when.test(stem))) continue;
     const kps = [];
     for (const [pattern, note] of rule.points) {
       const hit = findText(stem, pattern);

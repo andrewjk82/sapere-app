@@ -7,14 +7,63 @@ const M = String.raw`\\{1,2}\((?:(?!\\{1,2}\)).)*?\\{1,2}\)`; // one inline math
 const lastMath = new RegExp(`${M}(?![\\s\\S]*${M})`, 's');
 
 // ── Word-problem cue phrases ──
-const SUB_CUE = /\b(defective|removes|rejects|discarded|send|reused|deletes|killed|become permanently unresponsive|evaporate|melt away|manually|paid off|expended|cut away|die off|discharges|allocates|consumes|bleaches|would not be able|relocated|purchased|release|drives south|backfill\w*|decreas\w*|falls?|fell|fallen|drops?|dropped|reduc\w*|lost|loss of|withdr[ae]w\w*|withdrawal|rejected|removed?|remove|burns?|burned|destroy\w*|used up|uses|drains?|draws? down|hauls?( away)?|trimmed away|separated|set aside|shipping|shipped|caught|migrated out|terminat\w*|deallocates|extracts?|takes|spends?|gave away|sold)\b/i;
+const SUB_CUE = /\b(defective|removes|rejects|discarded|send|reused|deletes|killed|become permanently unresponsive|evaporate|melt away|manually|paid off|expended|cut away|die off|discharges|allocates|consumes|bleaches|would not be able|relocated|purchased|release|drives south|backfill\w*|decreas\w*|falls?|fell|fallen|drops?|dropped|reduc\w*|lost|loss of|withdr[ae]w\w*|withdrawal|rejected|removed?|remove|burns?|burned|destroy\w*|used up|uses|drains?|draws? down|hauls?( away)?|trimmed away|separated|set aside|shipping a batch|shipped|caught|migrated out|terminat\w*|deallocates|extracts?|takes|spends?|gave away|sold)\b/i;
 const LEFT_CUE = /\b(survived|healthy|free|standing|final|expect\w*|remaining|remain\w*|left|leftover|still|new|approved|functional|usable|safely stored|active|unburned|now)\b/i;
 const TOTAL_CUE = /\b(over the \w+ days|were present|total|combined|altogether|in all|aggregated|in the week|sum)\b/i;
 const EACH_CUE = /\b(each|per|every)\b/i;
 const SHARE_CUE = /\b(per|average|each|equally|holds?|holding|contains exactly|in each)\b/i;
 const ROUND_UP_CUE = /\b(must be delivered|are needed|needed|are required|required)\b/i;
 
+// The question sentence (after the last full stop that isn't inside a number/maths).
+const questionStart = (stem) => {
+  const cut = stem.replace(/\s+$/, '').search(/[^.!?]*[?.]?$/);
+  const idx = stem.lastIndexOf('. ', Math.max(0, stem.length - 2));
+  return Math.max(0, idx >= 0 ? idx + 2 : cut);
+};
+const inQuestion = (re) => (stem) => {
+  const from = questionStart(stem);
+  const m = stem.slice(from).match(re);
+  return m ? [from + m.index, from + m.index + m[0].length] : null;
+};
+// A take-away verb only counts when a quantity follows it closely ("burns \( 185000 \)").
+const subVerb = (stem) => {
+  for (const m of stem.matchAll(new RegExp(SUB_CUE.source, 'gi'))) {
+    const after = stem.slice(m.index + m[0].length, m.index + m[0].length + 45);
+    const before = stem.slice(Math.max(0, m.index - 30), m.index);
+    if (/\d/.test(after) || /\d[^.]*$/.test(before)) return [m.index, m.index + m[0].length];
+  }
+  return null;
+};
+
+// "uses 75 kg each day … how many days" → the question counts the groups → division.
+const asksForGroups = (stem) => {
+  const q = stem.slice(questionStart(stem)).toLowerCase();
+  for (const m of stem.matchAll(/\b(?:each|per|every)\s+([a-z]+)/gi)) {
+    const unit = m[1].toLowerCase().replace(/s$/, '');
+    if (new RegExp(`how many ${unit}s?\\b`).test(q)) return true;
+  }
+  // "packing crates that hold 38 … How many crates": the groups are named in the story but
+  // never counted — the question is asking for that count, so it's a division.
+  const hm = q.match(/how many ([a-z-]+)/);
+  if (hm) {
+    const unit = hm[1].replace(/s$/, '');
+    const body = stem.slice(0, questionStart(stem)).toLowerCase();
+    const named = new RegExp(`\\b${unit}s?\\b`).test(body);
+    const counted = new RegExp(`\\d[^.]{0,20}?\\b${unit}s?\\b`).test(body);
+    if (named && !counted) return true;
+  }
+  return false;
+};
+const MUL_BODY = /\beach\b[^.?]{0,60}\d|\d[^.?]{0,40}\b(per|each)\b|\brows? by\b|\bby \\{1,2}\( ?\d+/i;
+
 export const RULES = [
+  { when: /slips back/, points: [
+    [/crawls up/, 'Over a full night (climb then slip) it only gains 3 − 2 = 1 metre.'],
+    [/get out of the ditch/, 'On the last night it reaches the top before slipping — it climbs out and doesn’t slip back. Check each night.'],
+  ] },
+  { when: /\bfrom \\{1,2}\( ?\d+ ?\\{1,2}\)[^.]{0,40}\bto \\{1,2}\(/, points: [
+    [/\bfrom \\{1,2}\( ?\d+ ?\\{1,2}\)[^.]{0,40}\bto /, 'The change between two values is their difference — subtract the smaller from the larger.'],
+  ] },
   // ───────────── Specific wording (any topic) ─────────────
   { when: /how many more|winning margin/i, points: [[/winning margin|how many more/i, '“How many more” means find the difference — subtract the smaller from the larger.']] },
   { when: /\b(fewer|less than)\b[\s\S]*\btimes\b/, points: [
@@ -29,10 +78,6 @@ export const RULES = [
   { when: /in weeks/, points: [[/in weeks/, 'There are 52 weeks in a year — multiply.']] },
   { when: /(collected|travelled)[\s\S]*(earn|travel|altogether|total|How far)/i, points: [[/collected|travelled/, 'Add each amount together.']] },
   { when: /value of the digit/, points: [[/value of the digit \d/, 'A digit’s value depends on its place — count positions from the right.']] },
-  { when: /(divides? [\w\s]*into|segmented into|each (bus|block|rack|computer|shop)|per channel|crates of \d+|stored in \d+)/, points: [
-    [/(divides? [\w\s]*into|segmented into|each (bus|block|rack|computer)|per channel|crates of \d+|in each rack)/, 'Sharing into equal groups — divide the total by the number (or size) of the groups.'],
-    [/filled|prepared/, 'Only full groups count — ignore any remainder.'],
-  ] },
   { when: /is added to the result/, points: [[/is added to the result/, 'Work out both products first, then add them.']] },
   { when: /subtracted from the result|result of multiplying[\s\S]*subtract/i, points: [[/result of multiplying/, 'Work out each product first, then subtract as the words say.']] },
   { when: /in days/, points: [[/in days/, 'Use 365 days in a year — multiply.']] },
@@ -40,10 +85,6 @@ export const RULES = [
   { when: /Write as a numeral/, points: [[/Write as a numeral/, 'A million has 6 zeros — fill every empty place value with 0.']] },
   { when: /\d+ adults/, points: [[/\d+ adults/, 'Adults + children = the whole population, so subtract the adults.']] },
   { when: /\bcloser\b/, points: [[/\bcloser\b/, '“Closer” means a smaller distance — subtract.']] },
-  { when: /\b(on|in) each \w+|each (model|node|locker|computer)|ampoules of \d+|over \d+ hours|packed in (boxes|cases) of|into bags of|per [a-z]+( [a-z]+)?\?/, points: [
-    [/\b(on|in) each \w+( \w+)?|each (model|node|locker|computer)|ampoules of \d+ \w+|over \d+ hours|packed in (boxes|cases) of \d+|bags of \d+|per [a-z]+( [a-z]+)?(?=\?)/, 'Sharing into equal groups — divide the total by the number (or size) of the groups.'],
-    [/completed|delivered|filled/, 'Count only full groups — unless every item must fit, then you need one more.'],
-  ] },
   { when: /Work from left to right|calculating from left to right/, points: [[lastMath, 'Work strictly from left to right, one operation at a time.']] },
   { when: /distributive law to carry out/, points: [[lastMath, 'Look for the common factor: a × c − b × c = (a − b) × c.']] },
   { when: /per (hour|day|minute)[\s\S]*How many[\s\S]*in an? \d+/, points: [
@@ -54,8 +95,8 @@ export const RULES = [
   { when: /withdraw \$/, points: [
     [/account balance/, 'Start from the balance, take away the withdrawal (it can go below 0), then add the deposit.'],
   ] },
-  { when: /\b99\d\b[\s\S]*(mentally|distributive)/, points: [
-    [/\b99\d\b( kits)?/, 'Round up to 1000, multiply, then subtract the extra lots you added (e.g. 998 = 1000 − 2).'],
+  { when: /\b(99\d|100\d)\b[\s\S]*(mentally|distributive)/, points: [
+    [/\b(99\d|100\d)\b( kits)?/, 'Use a round number: e.g. 998 = 1000 − 2 or 1003 = 1000 + 3 — multiply the 1000 part, then adjust.'],
   ] },
   { when: /Each \w+ operates for \d+ hours per day/, points: [
     [/Each \w+ operates/, 'Three “per/each” quantities — multiply all three numbers.'],
@@ -64,6 +105,8 @@ export const RULES = [
   { when: /mixed numeral/, points: [[lastMath, 'Divide: the quotient is the whole number and the remainder goes over the divisor.']] },
   { when: /exactly five 5s/, points: [[/exactly five 5s/, 'Check each option: count the 5s, then work it out using the order of operations.']] },
   { when: /\\times 10\^\{?\d+\}? \+/, points: [[lastMath, 'Each term is a digit times a power of ten — the power tells you which place it goes in.']] },
+  { when: /^Find \\\(-\d+ \\times \d+\\\)/, points: [[lastMath, 'A negative times a positive is negative.']] },
+  { when: /Put a whole number in the box/, points: [[lastMath, 'Use the distributive law: a × (b − c) = a × b − a × c. Match both sides.']] },
   { when: /smallest possible remainder/, points: [
     [/smallest possible remainder/, 'The remainder must be smaller than the divisor — use the biggest multiple that fits.'],
   ] },
@@ -76,7 +119,7 @@ export const RULES = [
     [/\b(deficit|shortfall)\b/, 'A deficit/shortfall is the gap between the target and what actually happened — subtract.'],
   ] },
   { when: /backfill/, points: [[/backfill\w*/, 'Backfilling makes the hole shallower, so the depth gets smaller — subtract.']] },
-  { when: /\blonger\b|\bmore than\b(?! Anna)/, points: [[/\d+ \w+ longer|\blonger\b|more than/, '“Longer / more than” means add the extra amount.']] },
+  { when: /\blonger\b|\bmore than\b(?! Anna| once)/, points: [[/\d+ \w+ longer|\blonger\b|more than/, '“Longer / more than” means add the extra amount.']] },
   { when: /trip meter/, points: [[/showed/, 'The distance between two readings is the later reading minus the earlier one.']] },
   { when: /\b(left|leave)\b[\s\S]*\b(joined|get on|got on)\b/, points: [
     [/\b(left|leave)\b/, 'People leaving are subtracted…'],
@@ -96,10 +139,6 @@ export const RULES = [
   { when: /can be used more than once/, points: [[/can be used more than once/, 'Digits can repeat — list them systematically, largest hundreds digit first.']] },
   { when: /(rows|packets|packs|cartons?) of \d+|contains \d+ packets/, points: [
     [/(rows|packets|packs) of \d+|contains \d+ packets/, 'Equal groups — multiply the number of groups by the amount in each.'],
-  ] },
-  { when: /(evenly|equal (groups|lengths)|into (racks|boxes) of|containers of|per (cycle|thread|slot)|fully completed|completely filled|tour groups?)/, points: [
-    [/(evenly|equal (groups|lengths)|racks of \d+|boxes of \d+|containers of \d+ \w+|per (cycle|thread|slot)|people in a tour group)/, 'Sharing into equal groups — divide the total by the size (or number) of the groups.'],
-    [/fully completed|completely filled|filled/, 'Only full groups count — ignore any remainder.'],
   ] },
   // ───────────── 1a Operations with integers ─────────────
   { when: /Let \\\( M_2/, points: [
@@ -297,24 +336,36 @@ export const RULES = [
   ] },
 
   // ───────────── Generic word problems (by operation cue) ─────────────
-  // Division-type questions first (topics 1i–1k and similar wording).
-  { when: /(How many [\w\s-]+ (are|is) (filled|created|required|needed|delivered)|how many [\w\s-]+ does each|each [\w\s-]+ get|per (hour|second|run|batch|week|day|register|stage|area|line|qubit|core|substation|module|rack|node|shop|zone|block|unit|person)|average|equally|distributed|divided)/i, points: [
-    [SHARE_CUE, 'Sharing into equal groups — divide the total by the number of groups.'],
-    [ROUND_UP_CUE, 'If there is a remainder, one more is needed to fit everything.'],
+  // Multiplication: the story gives an amount per/each group and asks for the whole.
+  { when: (stem) => MUL_BODY.test(stem) && !asksForGroups(stem)
+      && !inQuestion(/(how many|how much|what|find|calculate|determine)[^?.]*\b(each|per)\b|average/i)(stem)
+      && Boolean(inQuestion(/total|how many|how much|altogether|in all/i)(stem)), points: [
+    [/\beach \w+|\bper \w+|\brows? by \\{1,2}\( ?\d+ ?\\{1,2}\)|\brows? by/i, '“Each/per” gives the amount in ONE group — multiply by the number of groups.'],
+    [inQuestion(/total|how many|how much/i), 'The total of equal groups is found by multiplying.'],
   ] },
-  { when: SUB_CUE, points: [
-    [SUB_CUE, 'This amount is taken away — subtract it from the starting amount.'],
-    [LEFT_CUE, 'The question asks what is left after the change.'],
+  // Division: the QUESTION asks for an amount per/each (or an average), or the story says the
+  // total is shared/divided/packed into groups.
+  { when: (stem) => asksForGroups(stem) || Boolean(inQuestion(/(how many|how much|what|find|calculate|determine|solve for)[^?.]*\b(each|per)\b|average|evenly|equally/i)(stem))
+      || /\b(equally|evenly|divided|divides|splits?|shared|distributed|segmented|packed in \w+ of|into (racks|boxes|bags|cases|crates|batches|vials|sacks|groups) of|(boxes|bags|cases|crates|containers|ampoules|vials|sacks|racks|pallets|bottles) (of|holding|that hold)|equal (groups|lengths))\b/i.test(stem), points: [
+    [(stem) => {
+      const m = stem.match(/\b(equally|evenly|divided|divides|splits?|shared|distributed|segmented|packed in \w+ of \d+|(boxes|bags|cases|crates|containers|ampoules|vials|sacks|racks|pallets|bottles) (of|holding|that hold) \d+|equal (groups|lengths))\b/i);
+      if (m) return [m.index, m.index + m[0].length];
+      return inQuestion(/\b(on |in )?each \w+|\bper \w+|average|how many \w+/i)(stem);
+    }, 'Sharing into equal groups — divide the total by the number (or size) of the groups.'],
+    [inQuestion(/fully completed|completely filled|filled|needed|required|must be delivered|prepared/i), 'Count only full groups — unless everything must fit, then you need one more.'],
+  ] },
+  { when: (stem) => Boolean(inQuestion(TOTAL_CUE)(stem)) && !inQuestion(LEFT_CUE)(stem), points: [
+    [inQuestion(TOTAL_CUE), 'Total/combined means add all the amounts together.'],
+  ] },
+  { when: (stem) => Boolean(subVerb(stem)), points: [
+    [subVerb, 'This amount is taken away — subtract it from the starting amount.'],
+    [inQuestion(LEFT_CUE), 'The question asks what is left after the change.'],
   ] },
   { when: /\b(ascends|raises?|rises|climbs)\b.*\\\( ?-?\d/, points: [
     [/\b(ascends|raises?|rises|climbs)\b/, 'Going up moves the value towards 0 (or higher) — add.'],
   ] },
-  { when: /\beach\b[\s\S]*\b(total|how many|find|calculate|solve|determine)\b|\b(rows?|by \\\( \d+ \\\))\b/i, points: [
-    [EACH_CUE, '“Each” means equal groups — multiply the number of groups by the amount in each.'],
-    [TOTAL_CUE, 'The total of equal groups is found by multiplying.'],
-  ] },
-  { when: TOTAL_CUE, points: [
-    [TOTAL_CUE, 'Total/combined means add all the amounts together.'],
+  { when: (stem) => Boolean(inQuestion(TOTAL_CUE)(stem)), points: [
+    [inQuestion(TOTAL_CUE), 'Total/combined means add all the amounts together.'],
     [/\\\( ?\d+ ?\\\)[^.]*?, (and )?\\\( ?\d+ ?\\\)/, 'Group numbers that are easy to add first, then add the rest.'],
   ] },
 
