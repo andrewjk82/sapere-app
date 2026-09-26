@@ -2567,8 +2567,8 @@
         {
           "id": "wghs2023-y8-q3b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Tania paid a plumber a total of \\(\\\\). The plumber charged a one-off fee of \\(\\\\) and then \\(\\\\) per hour. For how many hours did the plumber work?",
+          "difficulty": "medium",
           "options": [
             "\\(22 \\text{ hours}\\)",
             "\\(20 \\text{ hours}\\)",
@@ -2590,11 +2590,13 @@
               "work": "\\(h = 22 \\text{ hours}\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
