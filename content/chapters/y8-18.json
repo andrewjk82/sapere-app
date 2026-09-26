@@ -575,8 +575,8 @@
         {
           "id": "wghs2023-y8-s3q1a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Which of the following correctly completes the table of values for \\(y = 3x - 4\\) when \\(x = -3, -2, -1, 0, 1, 2, 3\\)?",
+          "difficulty": "easy",
           "options": [
             "\\(-13, -10, -7, -4, -1, 2, 5\\)",
             "\\(-9, -6, -3, 0, 3, 6, 9\\)",
@@ -594,11 +594,13 @@
               "work": "\\(-13, -10, -7, -4, -1, 2, 5\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
