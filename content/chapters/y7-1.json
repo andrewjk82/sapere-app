@@ -552,40 +552,36 @@
           "id": "y7-1a-q18",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -12 \\) and point \\( B \\) is at \\( 2 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -12 \\) and point \\( B \\) is at \\( 2 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-10\\)",
-            "\\(-8\\)",
-            "\\(-6\\)",
-            "\\(-2\\)"
+            "\\(4\\)",
+            "\\(14\\)",
+            "\\(10\\)",
+            "\\(-8\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 2 - (-12) = 14 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{2}{7} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{2}{7} \\) of AB.",
               "work": "\\( AP = \\frac{2}{7} \\times 14 = 4 \\)"
-            },
-            {
-              "explain": "P is 4 units to the right of A (towards B), so add 4 to A.",
-              "work": "\\( P = -12 + 4 = -8 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{2}{7} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q19",
@@ -899,40 +895,36 @@
           "id": "y7-1a-q27",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -11 \\) and point \\( B \\) is at \\( 13 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{1}{4} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -11 \\) and point \\( B \\) is at \\( 13 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{1}{4} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-7\\)",
-            "\\(-5\\)",
-            "\\(-3\\)",
-            "\\(7\\)"
+            "\\(6\\)",
+            "\\(24\\)",
+            "\\(18\\)",
+            "\\(-5\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 13 - (-11) = 24 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{1}{4} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{1}{4} \\) of AB.",
               "work": "\\( AP = \\frac{1}{4} \\times 24 = 6 \\)"
-            },
-            {
-              "explain": "P is 6 units to the right of A (towards B), so add 6 to A.",
-              "work": "\\( P = -11 + 6 = -5 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{1}{4} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q28",
@@ -1245,40 +1237,36 @@
           "id": "y7-1a-q36",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -18 \\) and point \\( B \\) is at \\( -8 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -18 \\) and point \\( B \\) is at \\( -8 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-15\\)",
-            "\\(-14\\)",
-            "\\(-13\\)",
-            "\\(-12\\)"
+            "\\(4\\)",
+            "\\(10\\)",
+            "\\(6\\)",
+            "\\(-14\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = -8 - (-18) = 10 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{2}{5} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{2}{5} \\) of AB.",
               "work": "\\( AP = \\frac{2}{5} \\times 10 = 4 \\)"
-            },
-            {
-              "explain": "P is 4 units to the right of A (towards B), so add 4 to A.",
-              "work": "\\( P = -18 + 4 = -14 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{2}{5} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q37",
@@ -1592,40 +1580,36 @@
           "id": "y7-1a-q45",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -6 \\) and point \\( B \\) is at \\( 4 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -6 \\) and point \\( B \\) is at \\( 4 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{5} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-3\\)",
-            "\\(-2\\)",
-            "\\(-1\\)",
-            "\\(0\\)"
+            "\\(4\\)",
+            "\\(10\\)",
+            "\\(6\\)",
+            "\\(-2\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 4 - (-6) = 10 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{2}{5} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{2}{5} \\) of AB.",
               "work": "\\( AP = \\frac{2}{5} \\times 10 = 4 \\)"
-            },
-            {
-              "explain": "P is 4 units to the right of A (towards B), so add 4 to A.",
-              "work": "\\( P = -6 + 4 = -2 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{2}{5} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q46",
@@ -1938,40 +1922,36 @@
           "id": "y7-1a-q54",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -12 \\) and point \\( B \\) is at \\( 2 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{5}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -12 \\) and point \\( B \\) is at \\( 2 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{5}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-8\\)",
-            "\\(-4\\)",
-            "\\(-2\\)",
-            "\\(0\\)"
+            "\\(10\\)",
+            "\\(14\\)",
+            "\\(4\\)",
+            "\\(-2\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 2 - (-12) = 14 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{5}{7} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{5}{7} \\) of AB.",
               "work": "\\( AP = \\frac{5}{7} \\times 14 = 10 \\)"
-            },
-            {
-              "explain": "P is 10 units to the right of A (towards B), so add 10 to A.",
-              "work": "\\( P = -12 + 10 = -2 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{5}{7} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q55",
@@ -2285,40 +2265,36 @@
           "id": "y7-1a-q63",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -9 \\) and point \\( B \\) is at \\( 23 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{4} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -9 \\) and point \\( B \\) is at \\( 23 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{4} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-1\\)",
-            "\\(13\\)",
-            "\\(15\\)",
-            "\\(17\\)"
+            "\\(24\\)",
+            "\\(32\\)",
+            "\\(8\\)",
+            "\\(15\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 23 - (-9) = 32 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{3}{4} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{3}{4} \\) of AB.",
               "work": "\\( AP = \\frac{3}{4} \\times 32 = 24 \\)"
-            },
-            {
-              "explain": "P is 24 units to the right of A (towards B), so add 24 to A.",
-              "work": "\\( P = -9 + 24 = 15 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{3}{4} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q64",
@@ -2632,40 +2608,36 @@
           "id": "y7-1a-q72",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -13 \\) and point \\( B \\) is at \\( 3 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{8} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -13 \\) and point \\( B \\) is at \\( 3 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{8} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-9\\)",
-            "\\(-7\\)",
-            "\\(-5\\)",
-            "\\(-3\\)"
+            "\\(6\\)",
+            "\\(16\\)",
+            "\\(10\\)",
+            "\\(-7\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 3 - (-13) = 16 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{3}{8} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{3}{8} \\) of AB.",
               "work": "\\( AP = \\frac{3}{8} \\times 16 = 6 \\)"
-            },
-            {
-              "explain": "P is 6 units to the right of A (towards B), so add 6 to A.",
-              "work": "\\( P = -13 + 6 = -7 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{3}{8} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q73",
@@ -2979,40 +2951,36 @@
           "id": "y7-1a-q81",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -5 \\) and point \\( B \\) is at \\( 22 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{9} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -5 \\) and point \\( B \\) is at \\( 22 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{2}{9} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(3\\)",
-            "\\(1\\)",
-            "\\(4\\)",
-            "\\(16\\)"
+            "\\(6\\)",
+            "\\(27\\)",
+            "\\(21\\)",
+            "\\(1\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 22 - (-5) = 27 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{2}{9} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{2}{9} \\) of AB.",
               "work": "\\( AP = \\frac{2}{9} \\times 27 = 6 \\)"
-            },
-            {
-              "explain": "P is 6 units to the right of A (towards B), so add 6 to A.",
-              "work": "\\( P = -5 + 6 = 1 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{2}{9} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q82",
@@ -3325,40 +3293,36 @@
           "id": "y7-1a-q90",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -7 \\) and point \\( B \\) is at \\( 14 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -7 \\) and point \\( B \\) is at \\( 14 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{3}{7} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(0\\)",
-            "\\(2\\)",
-            "\\(4\\)",
-            "\\(5\\)"
+            "\\(9\\)",
+            "\\(21\\)",
+            "\\(12\\)",
+            "\\(2\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 14 - (-7) = 21 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{3}{7} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{3}{7} \\) of AB.",
               "work": "\\( AP = \\frac{3}{7} \\times 21 = 9 \\)"
-            },
-            {
-              "explain": "P is 9 units to the right of A (towards B), so add 9 to A.",
-              "work": "\\( P = -7 + 9 = 2 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{3}{7} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q91",
@@ -3671,40 +3635,36 @@
           "id": "y7-1a-q99",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "On a number line, point \\( A \\) is at \\( -9 \\) and point \\( B \\) is at \\( 7 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{5}{8} \\) of the distance from \\( A \\) to \\( B \\). Find the coordinate of \\( P \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -9 \\) and point \\( B \\) is at \\( 7 \\). Point \\( P \\) lies between \\( A \\) and \\( B \\) so that the distance from \\( A \\) to \\( P \\) is \\( \\frac{5}{8} \\) of the distance from \\( A \\) to \\( B \\). Find the distance from \\( A \\) to \\( P \\).",
           "options": [
-            "\\(-3\\)",
-            "\\(3\\)",
-            "\\(1\\)",
-            "\\(4\\)"
+            "\\(10\\)",
+            "\\(16\\)",
+            "\\(6\\)",
+            "\\(1\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "steps": [
             {
               "explain": "Find the distance from A to B (right end minus left end).",
               "work": "\\( AB = 7 - (-9) = 16 \\)"
             },
             {
-              "explain": "The distance from A to P is \\( \\frac{5}{8} \\) of that.",
+              "explain": "The distance from A to P is \\( \\frac{5}{8} \\) of AB.",
               "work": "\\( AP = \\frac{5}{8} \\times 16 = 10 \\)"
-            },
-            {
-              "explain": "P is 10 units to the right of A (towards B), so add 10 to A.",
-              "work": "\\( P = -9 + 10 = 1 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
               "text": "\\( \\frac{5}{8} \\)",
-              "note": "Find the whole distance from A to B first, then take this fraction of it."
+              "note": "Take this fraction of the whole distance AB."
             },
             {
-              "text": "the distance from \\( A \\) to \\( P \\)",
-              "note": "Measure from A: P is that many units from A, moving towards B."
+              "text": "the distance from \\( A \\) to \\( B \\)",
+              "note": "Find AB first: right end minus left end — subtracting a negative adds."
             }
           ],
-          "hint": "Work out the whole distance AB first, then take the fraction of it and move that far from A towards B."
+          "hint": "Work out the whole distance AB first, then take the fraction of it."
         },
         {
           "id": "y7-1a-q100",
