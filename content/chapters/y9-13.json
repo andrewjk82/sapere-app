@@ -645,6 +645,38 @@
             "origin": "teacher"
           },
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the value of \\\\(\\cos \\theta\\\\).",
+          "options": [
+            "\\\\(\\frac{4}{5}\\\\)",
+            "\\\\(\\frac{3}{5}\\\\)",
+            "\\\\(\\frac{3}{4}\\\\)",
+            "\\\\(\\frac{5}{4}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the sides of the right-angled triangle relative to \\\\(\\theta\\\\).",
+              "work": "\\\\(\\text{Adjacent} = 8, \\text{Hypotenuse} = 10\\\\)"
+            },
+            {
+              "explain": "Apply the cosine ratio.",
+              "work": "\\\\(\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{8}{10} = \\frac{4}{5}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:bb9d6b5d11"
+          }
         }
       ]
     },
@@ -878,6 +910,31 @@
             "origin": "teacher"
           },
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find angle \\\\(\\theta\\\\), given \\\\(\\sin \\theta = \\frac{1}{2}\\\\).",
+          "options": [
+            "\\\\(30^\\circ\\\\)",
+            "\\\\(45^\\circ\\\\)",
+            "\\\\(60^\\circ\\\\)",
+            "\\\\(90^\\circ\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Use the inverse sine function to find the angle.",
+              "work": "\\\\(\\theta = \\sin^{-1}(\\frac{1}{2}) = 30^\\circ\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1618,6 +1675,154 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-13"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The distance of a ski slope is 415m with a vertical drop of 115m. Find the angle of depression from the top of the slope to the nearest degree.",
+          "options": [
+            "16°",
+            "15°",
+            "74°",
+            "73°"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the trigonometric ratio. The angle of elevation at the bottom is equal to the angle of depression at the top (alternate angles).",
+              "work": "\\\\(\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{115}{415}\\\\)"
+            },
+            {
+              "explain": "Calculate the angle.",
+              "work": "\\\\(\\theta = \\sin^{-1}(\\frac{115}{415}) \\approx 16.09^\\circ \\approx 16^\\circ\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:88e60db122"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An observer on top of a building 66m high, finds the angle of elevation to the top of a taller building to be \\\\(34^\\circ\\\\). The angle of depression to the foot of the same building is \\\\(51^\\circ\\\\). Calculate the height of the taller building, given the buildings are on the same ground level, to the nearest metre.",
+          "options": [
+            "102 m",
+            "90 m",
+            "108 m",
+            "112 m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let \\\\(d\\\\) be the horizontal distance between the buildings. Use the lower triangle (angle of depression) to find \\\\(d\\\\).",
+              "work": "\\\\(\\tan 51^\\circ = \\frac{66}{d} \\Rightarrow d = \\frac{66}{\\tan 51^\\circ} \\approx 53.44 \\text{ m}\\\\)"
+            },
+            {
+              "explain": "Let \\\\(h\\\\) be the height of the taller building above the observer. Use the upper triangle (angle of elevation) to find \\\\(h\\\\).",
+              "work": "\\\\(\\tan 34^\\circ = \\frac{h}{d} \\Rightarrow h = d \\tan 34^\\circ \\approx 53.44 \\times \\tan 34^\\circ \\approx 36.05 \\text{ m}\\\\)"
+            },
+            {
+              "explain": "Calculate the total height of the taller building.",
+              "work": "\\\\(\\text{Total height} = 66 + 36.05 = 102.05 \\approx 102 \\text{ m}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:326b4cc61d"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A light plane takes off flying due north, then turns and flies due west. The plane then has a bearing of \\\\(340^\\circ\\\\) from its starting point with a direct distance of 16km. Calculate the due north distance that the plane flew, to the nearest km.",
+          "options": [
+            "15 km",
+            "14 km",
+            "13 km",
+            "16 km"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A bearing of \\\\(340^\\circ\\\\) means the plane is \\\\(360^\\circ - 340^\\circ = 20^\\circ\\\\) West of North from the starting point.",
+              "work": ""
+            },
+            {
+              "explain": "Form a right-angled triangle. The hypotenuse is the direct distance (16km), and the due north distance is the adjacent side to the \\\\(20^\\circ\\\\) angle.",
+              "work": "\\\\(\\cos 20^\\circ = \\frac{\\text{Adjacent}}{16}\\\\)"
+            },
+            {
+              "explain": "Calculate the due north distance.",
+              "work": "\\\\(\\text{North distance} = 16 \\cos 20^\\circ \\approx 15.03 \\approx 15 \\text{ km}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:e651874536"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "On a golf course, the tree is a distance of 130m due west from the pin (the flag stick). Bruce’s first shot hits the ball 100m but not at the correct angle. On his second shot, Bruce hits the ball 35m and gets it in the hole. Find the bearing that he hits his first stroke (to the nearest degree).",
+          "options": [
+            "081°",
+            "009°",
+            "099°",
+            "071°"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The path forms a triangle with sides 130m, 100m, and 35m. We want to find the angle \\\\(a\\\\) at the tree.",
+              "work": ""
+            },
+            {
+              "explain": "Use the Cosine Rule to find \\\\(a\\\\).",
+              "work": "\\\\(\\cos a = \\frac{100^2 + 130^2 - 35^2}{2 \\times 100 \\times 130}\\\\)"
+            },
+            {
+              "explain": "Calculate the value.",
+              "work": "\\\\(\\cos a = \\frac{10000 + 16900 - 1225}{26000} = \\frac{25675}{26000} \\approx 0.9875\\\\)"
+            },
+            {
+              "explain": "Find the angle \\\\(a\\\\).",
+              "work": "\\\\(a = \\cos^{-1}(0.9875) \\approx 9^\\circ\\\\)"
+            },
+            {
+              "explain": "The bearing is measured clockwise from North. Since the pin is due East (\\\\(090^\\circ\\\\)), and the angle \\\\(a\\\\) is North of East, subtract \\\\(9^\\circ\\\\) from \\\\(090^\\circ\\\\).",
+              "work": "\\\\(090^\\circ - 9^\\circ = 081^\\circ\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:1c5c0f2780"
           }
         }
       ]

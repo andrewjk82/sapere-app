@@ -24348,6 +24348,35 @@
             "examPaper": "willoughby-2019-y9"
           },
           "xp": 1
+        },
+        {
+          "id": "killara2023-y9-t4a-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\\\((5p + 1)(p - 2)\\\\).",
+          "options": [
+            "\\\\(5p^2 - 9p - 2\\\\)",
+            "\\\\(5p^2 - 10p - 2\\\\)",
+            "\\\\(5p^2 + p - 2\\\\)",
+            "\\\\(5p^2 - 9p + 2\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Expand using the FOIL method (First, Outer, Inner, Last).",
+              "work": "\\\\(5p(p) + 5p(-2) + 1(p) + 1(-2)\\\\)"
+            },
+            {
+              "explain": "Simplify and combine like terms.",
+              "work": "\\\\(5p^2 - 10p + p - 2 = 5p^2 - 9p - 2\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -30017,6 +30046,213 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\(\\frac{7m}{5} - \\frac{3m}{5}\\\\).",
+          "options": [
+            "\\\\(\\frac{4m}{5}\\\\)",
+            "\\\\(\\frac{10m}{5}\\\\)",
+            "\\\\(\\frac{4m}{10}\\\\)",
+            "\\\\(4m\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since the denominators are the same, subtract the numerators directly.",
+              "work": "\\\\(\\frac{7m - 3m}{5} = \\\\frac{4m}{5}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand and simplify \\\\(2(x - 3y) + 2y\\\\).",
+          "options": [
+            "\\\\(2x - 4y\\\\)",
+            "\\\\(2x - 8y\\\\)",
+            "\\\\(2x - y\\\\)",
+            "\\\\(2x + 4y\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply each term inside the bracket by 2.",
+              "work": "\\\\(2x - 6y + 2y\\\\)"
+            },
+            {
+              "explain": "Combine the like terms in \\\\(y\\\\).",
+              "work": "\\\\(2x - 4y\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\(\\frac{3n}{13} \\\\times \\\\frac{7}{m}\\\\).",
+          "options": [
+            "\\\\(\\frac{21n}{13m}\\\\)",
+            "\\\\(\\frac{3n+7}{13m}\\\\)",
+            "\\\\(\\frac{21nm}{13}\\\\)",
+            "\\\\(\\frac{10n}{13m}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the numerators together and denominators together.",
+              "work": "\\\\(\\frac{3n \\\\times 7}{13 \\\\times m} = \\\\frac{21n}{13m}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\\\(\\frac{x-1}{3} - \\frac{2}{5}\\\\).",
+          "options": [
+            "\\\\(\\frac{5x-11}{15}\\\\)",
+            "\\\\(\\frac{x-3}{15}\\\\)",
+            "\\\\(\\frac{5x-1}{15}\\\\)",
+            "\\\\(\\frac{x-3}{2}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find a common denominator, which is 15.",
+              "work": "\\\\(\\frac{5(x-1)}{15} - \\frac{6}{15}\\\\)"
+            },
+            {
+              "explain": "Expand the numerator and subtract.",
+              "work": "\\\\(\\frac{5x - 5 - 6}{15} = \\\\frac{5x - 11}{15}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(7.3\\bar{2}\\\\) as a fraction.",
+          "options": [
+            "\\\\(7 \\frac{29}{90}\\\\)",
+            "\\\\(7 \\frac{32}{99}\\\\)",
+            "\\\\(\\frac{732}{100}\\\\)",
+            "\\\\(7 \\frac{8}{25}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let \\\\(x = 7.3222...\\\\). Multiply by 10 to move the decimal point before the repeating part.",
+              "work": "\\\\(10x = 73.222...\\\\)"
+            },
+            {
+              "explain": "Multiply by 100 to move the decimal point after the first repeating part.",
+              "work": "\\\\(100x = 732.222...\\\\)"
+            },
+            {
+              "explain": "Subtract the two equations to eliminate the repeating decimal.",
+              "work": "\\\\(100x - 10x = 732 - 73 \\Rightarrow 90x = 659\\\\)"
+            },
+            {
+              "explain": "Solve for \\\\(x\\\\) and convert to a mixed numeral.",
+              "work": "\\\\(x = \\frac{659}{90} = 7 \\frac{29}{90}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q25a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\\\(\\frac{x^2 - 3x - 10}{x^2 - 5x}\\\\).",
+          "options": [
+            "\\\\(\\frac{x+2}{x}\\\\)",
+            "\\\\(\\frac{x-2}{x}\\\\)",
+            "\\\\(\\frac{x+5}{x}\\\\)",
+            "\\\\(\\frac{x-5}{x}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factorise the numerator and the denominator.",
+              "work": "\\\\(\\frac{(x-5)(x+2)}{x(x-5)}\\\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\\\((x-5)\\\\).",
+              "work": "\\\\(\\frac{x+2}{x}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify \\\\(\\frac{3}{4 - x^2} + \\frac{4}{x(x-2)}\\\\).",
+          "options": [
+            "\\\\(\\frac{x+8}{x(x-2)(x+2)}\\\\)",
+            "\\\\(\\frac{-x+8}{x(x-2)(x+2)}\\\\)",
+            "\\\\(\\frac{7x+8}{x(x-2)(x+2)}\\\\)",
+            "\\\\(\\frac{x-8}{x(x-2)(x+2)}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factorise the denominators. Note that \\\\(4 - x^2 = -(x^2 - 4) = -(x-2)(x+2)\\\\).",
+              "work": "\\\\(\\frac{-3}{(x-2)(x+2)} + \\frac{4}{x(x-2)}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator, which is \\\\(x(x-2)(x+2)\\\\).",
+              "work": "\\\\(\\frac{-3x}{x(x-2)(x+2)} + \\frac{4(x+2)}{x(x-2)(x+2)}\\\\)"
+            },
+            {
+              "explain": "Expand the numerators and simplify.",
+              "work": "\\\\(\\frac{-3x + 4x + 8}{x(x-2)(x+2)} = \\\\frac{x+8}{x(x-2)(x+2)}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

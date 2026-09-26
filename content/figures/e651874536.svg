@@ -1,0 +1,14 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="-100 -180 120 200">
+  <!-- North Arrow -->
+  <line x1="0" y1="0" x2="0" y2="-170" stroke="gray" stroke-dasharray="4,4"/>
+  <text x="5" y="-165" font-size="12">N</text>
+  <!-- Flight Path -->
+  <polyline points="0,0 0,-150 -60,-150" fill="none" stroke="blue" stroke-width="2"/>
+  <!-- Resultant / hypotenuse -->
+  <line x1="0" y1="0" x2="-60" y2="-150" stroke="red" stroke-dasharray="4,4"/>
+  <text x="-40" y="-70" font-size="12" fill="red">16 km</text>
+  <text x="-60" y="-160" font-size="12">West</text>
+  <!-- Bearing angle -->
+  <path d="M 0 -30 A 30 30 0 0 0 -11 -28" fill="none" stroke="black"/>
+  <text x="-25" y="-35" font-size="12">20°</text>
+</svg>

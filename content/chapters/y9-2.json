@@ -1612,6 +1612,35 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the irrational numbers from below: \\\\(\\sqrt{8}, \\sqrt{36}, 4.\\bar{3}, \\sqrt{22}, \\pi, \\frac{12}{23}\\\\).",
+          "options": [
+            "\\\\(\\sqrt{8}, \\sqrt{22}, \\pi\\\\)",
+            "\\\\(\\sqrt{8}, \\sqrt{36}, \\pi\\\\)",
+            "\\\\(\\sqrt{22}, \\pi, 4.\\bar{3}\\\\)",
+            "\\\\(\\sqrt{8}, \\sqrt{22}, \\frac{12}{23}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify rational numbers. \\\\(\\sqrt{36} = 6\\\\), \\\\(4.\\bar{3} = 4 \\frac{1}{3}\\\\), and \\\\(\\frac{12}{23}\\\\) can be written as fractions.",
+              "work": ""
+            },
+            {
+              "explain": "The remaining numbers cannot be written as simple fractions and are irrational.",
+              "work": "\\\\(\\sqrt{8}, \\sqrt{22}, \\pi\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1990,6 +2019,93 @@
             "topic": "y9-2b"
           },
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\((\\sqrt{15})^2\\\\).",
+          "options": [
+            "15",
+            "225",
+            "\\\\(\\sqrt{15}\\\\)",
+            "30"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Squaring a square root gives the original number.",
+              "work": "\\\\((\\sqrt{15})^2 = 15\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\(\\sqrt{12}\\\\).",
+          "options": [
+            "\\\\(2\\sqrt{3}\\\\)",
+            "\\\\(3\\sqrt{2}\\\\)",
+            "\\\\(4\\sqrt{3}\\\\)",
+            "\\\\(6\\sqrt{2}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find the largest perfect square factor of 12, which is 4.",
+              "work": "\\\\(\\sqrt{12} = \\sqrt{4 \\times 3}\\\\)"
+            },
+            {
+              "explain": "Simplify the surd.",
+              "work": "\\\\(\\sqrt{4} \\times \\sqrt{3} = 2\\sqrt{3}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine which is the greater number: \\\\(7\\sqrt{2}\\\\) or \\\\(3\\sqrt{11}\\\\).",
+          "options": [
+            "\\\\(3\\sqrt{11}\\\\)",
+            "\\\\(7\\sqrt{2}\\\\)",
+            "They are equal",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Express both numbers as entire surds (squaring the coefficient and moving it inside the root).",
+              "work": "\\\\(7\\sqrt{2} = \\sqrt{7^2 \\times 2} = \\sqrt{49 \\times 2} = \\sqrt{98}\\\\)"
+            },
+            {
+              "explain": "Do the same for the second number.",
+              "work": "\\\\(3\\sqrt{11} = \\sqrt{3^2 \\times 11} = \\sqrt{9 \\times 11} = \\sqrt{99}\\\\)"
+            },
+            {
+              "explain": "Compare the numbers under the square roots.",
+              "work": "\\\\(\\sqrt{99} > \\sqrt{98}\\\\), so \\\\(3\\sqrt{11} > 7\\sqrt{2}\\\\)."
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2073,6 +2189,31 @@
             "grade": "9"
           },
           "xp": 1
+        },
+        {
+          "id": "killara2023-y9-t4a-q17a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\(2\\sqrt{5} - 9\\sqrt{5}\\\\).",
+          "options": [
+            "\\\\(-7\\sqrt{5}\\\\)",
+            "\\\\(11\\sqrt{5}\\\\)",
+            "\\\\(-7\\\\)",
+            "\\\\(-\\sqrt{5}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Combine like surds by subtracting their coefficients.",
+              "work": "\\\\((2 - 9)\\sqrt{5} = -7\\sqrt{5}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2119,6 +2260,97 @@
             "grade": "9"
           },
           "xp": 3
+        },
+        {
+          "id": "killara2023-y9-t4a-q19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the fraction in simplest form with a rational denominator: \\\\(\\frac{\\sqrt{8}}{\\sqrt{6}}\\\\).",
+          "options": [
+            "\\\\(\\frac{2\\sqrt{3}}{3}\\\\)",
+            "\\\\(\\frac{\\sqrt{12}}{3}\\\\)",
+            "\\\\(\\frac{\\sqrt{48}}{6}\\\\)",
+            "\\\\(\\frac{\\sqrt{3}}{3}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "First, simplify the fraction under a single root if possible.",
+              "work": "\\\\(\\sqrt{\\frac{8}{6}} = \\sqrt{\\frac{4}{3}}\\\\)"
+            },
+            {
+              "explain": "Simplify the numerator and rationalise the denominator.",
+              "work": "\\\\(\\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the fraction in simplest form with a rational denominator: \\\\(\\frac{1 - \\sqrt{5}}{\\sqrt{5}}\\\\).",
+          "options": [
+            "\\\\(\\frac{\\sqrt{5} - 5}{5}\\\\)",
+            "\\\\(\\frac{\\sqrt{5} + 5}{5}\\\\)",
+            "\\\\(\\frac{\\sqrt{5} - 1}{5}\\\\)",
+            "\\\\(\\frac{1 - 5\\sqrt{5}}{5}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the numerator and denominator by \\\\(\\sqrt{5}\\\\).",
+              "work": "\\\\(\\frac{(1 - \\sqrt{5}) \\times \\sqrt{5}}{\\sqrt{5} \\times \\sqrt{5}}\\\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\\\(\\frac{\\sqrt{5} - 5}{5}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the values of \\\\(p\\\\) and \\\\(q\\\\) such that \\\\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\\\).",
+          "options": [
+            "\\\\(p = 5, q = 2\\\\)",
+            "\\\\(p = 2, q = 5\\\\)",
+            "\\\\(p = 5, q = -2\\\\)",
+            "\\\\(p = -5, q = -2\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Rationalise the denominator by multiplying by the conjugate \\\\(\\sqrt{5} + 2\\\\).",
+              "work": "\\\\(\\frac{\\sqrt{5}(\\sqrt{5} + 2)}{(\\sqrt{5} - 2)(\\sqrt{5} + 2)}\\\\)"
+            },
+            {
+              "explain": "Expand the numerator and denominator.",
+              "work": "\\\\(\\frac{5 + 2\\sqrt{5}}{5 - 4}\\\\)"
+            },
+            {
+              "explain": "Simplify to find \\\\(p\\\\) and \\\\(q\\\\).",
+              "work": "\\\\(5 + 2\\sqrt{5}\\\\), so \\\\(p = 5\\\\) and \\\\(q = 2\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2153,6 +2385,155 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "killara2023-y9-t4a-q17b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\\\(3\\sqrt{2} \\times 2\\sqrt{7}\\\\).",
+          "options": [
+            "\\\\(6\\sqrt{14}\\\\)",
+            "\\\\(5\\sqrt{14}\\\\)",
+            "\\\\(6\\sqrt{9}\\\\)",
+            "\\\\(5\\sqrt{9}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the coefficients and multiply the surds.",
+              "work": "\\\\( (3 \\times 2) \\sqrt{2 \\times 7} = 6\\sqrt{14}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q17c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\\\(\\frac{10\\sqrt{54}}{\\sqrt{6}}\\\\).",
+          "options": [
+            "30",
+            "10",
+            "90",
+            "\\\\(10\\sqrt{9}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide the surds.",
+              "work": "\\\\(10\\sqrt{\\frac{54}{6}} = 10\\sqrt{9}\\\\)"
+            },
+            {
+              "explain": "Simplify the perfect square.",
+              "work": "\\\\(10 \\times 3 = 30\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q18a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\\\(\\sqrt{3}(5\\sqrt{2} - 2\\sqrt{3})\\\\).",
+          "options": [
+            "\\\\(5\\sqrt{6} - 6\\\\)",
+            "\\\\(5\\sqrt{6} - 2\\sqrt{3}\\\\)",
+            "\\\\(5\\sqrt{5} - 6\\\\)",
+            "\\\\(15\\sqrt{2} - 6\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Expand the bracket.",
+              "work": "\\\\(\\sqrt{3} \\times 5\\sqrt{2} - \\sqrt{3} \\times 2\\sqrt{3}\\\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\\\(5\\sqrt{6} - 2 \\times 3 = 5\\sqrt{6} - 6\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\\\((2\\sqrt{6} + 3)(2\\sqrt{6} - 3)\\\\).",
+          "options": [
+            "15",
+            "24",
+            "3",
+            "21"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Recognise this is a difference of two squares: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
+              "work": "\\\\((2\\sqrt{6})^2 - (3)^2\\\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\\\((4 \\times 6) - 9 = 24 - 9 = 15\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "killara2023-y9-t4a-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Use the expansion of \\\\((a - b)^2 = a^2 - 2ab + b^2\\\\) to square \\\\(\\sqrt{6 + \\sqrt{11}} - \\sqrt{6 - \\sqrt{11}}\\\\), and hence simplify it.",
+          "options": [
+            "\\\\(\\sqrt{2}\\\\)",
+            "2",
+            "\\\\(2\\sqrt{2}\\\\)",
+            "\\\\(\\sqrt{11}\\\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Square the expression using the given identity.",
+              "work": "\\\\( (\\sqrt{6 + \\sqrt{11}})^2 - 2\\sqrt{(6 + \\sqrt{11})(6 - \\sqrt{11})} + (\\sqrt{6 - \\sqrt{11}})^2 \\\\)"
+            },
+            {
+              "explain": "Simplify the squared terms.",
+              "work": "\\\\( (6 + \\sqrt{11}) - 2\\sqrt{36 - 11} + (6 - \\sqrt{11}) \\\\)"
+            },
+            {
+              "explain": "Combine terms and calculate the middle part.",
+              "work": "\\\\( 12 - 2\\sqrt{25} = 12 - 2(5) = 12 - 10 = 2 \\\\)"
+            },
+            {
+              "explain": "Since the squared value is 2, the original value is \\\\(\\sqrt{2}\\\\). (It is positive because \\\\(6 + \\sqrt{11} > 6 - \\sqrt{11}\\\\)).",
+              "work": "\\\\(\\sqrt{2}\\\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4A 2023",
+            "school": "Killara High School",
+            "grade": "9",
+            "origin": "teacher"
+          }
         }
       ]
     }

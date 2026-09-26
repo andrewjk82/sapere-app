@@ -1,0 +1,14 @@
+<svg width="250" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 150">
+  <polygon points="30,120 220,120 180,40" fill="none" stroke="blue" stroke-width="2"/>
+  <text x="30" y="135" font-size="12">Tree</text>
+  <text x="220" y="135" font-size="12">Pin</text>
+  <text x="110" y="135" font-size="12">130 m</text>
+  <text x="90" y="70" font-size="12">100 m</text>
+  <text x="205" y="75" font-size="12">35 m</text>
+  <!-- N arrow -->
+  <line x1="30" y1="120" x2="30" y2="80" stroke="gray" stroke-dasharray="4,4"/>
+  <text x="25" y="75" font-size="12">N</text>
+  <!-- Angle a -->
+  <path d="M 60 120 A 30 30 0 0 0 50 105" fill="none" stroke="black"/>
+  <text x="65" y="112" font-size="12">a°</text>
+</svg>

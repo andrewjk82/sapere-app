@@ -1,0 +1,20 @@
+<svg width="250" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 200">
+  <!-- Ground -->
+  <line x1="10" y1="180" x2="240" y2="180" stroke="black" stroke-width="2"/>
+  <!-- Building 1 (Observer) -->
+  <rect x="20" y="110" width="50" height="70" fill="#f0f0f0" stroke="black"/>
+  <text x="35" y="150" font-size="12">66m</text>
+  <!-- Building 2 -->
+  <rect x="160" y="30" width="60" height="150" fill="#f0f0f0" stroke="black"/>
+  <!-- Observer point -->
+  <circle cx="70" cy="110" r="3" fill="red"/>
+  <!-- Sight lines -->
+  <line x1="70" y1="110" x2="160" y2="30" stroke="red" stroke-dasharray="3,3"/>
+  <line x1="70" y1="110" x2="160" y2="180" stroke="blue" stroke-dasharray="3,3"/>
+  <line x1="70" y1="110" x2="160" y2="110" stroke="black" stroke-dasharray="2,2"/>
+  <!-- Angles -->
+  <path d="M 100 110 A 30 30 0 0 0 95 88" fill="none" stroke="black"/>
+  <text x="105" y="100" font-size="10">34°</text>
+  <path d="M 100 110 A 30 30 0 0 1 90 126" fill="none" stroke="black"/>
+  <text x="100" y="130" font-size="10">51°</text>
+</svg>

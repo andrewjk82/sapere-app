@@ -1,0 +1,9 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 220 120">
+  <polygon points="0,80 160,80 160,0" fill="none" stroke="black" stroke-width="2"/>
+  <rect x="150" y="70" width="10" height="10" fill="none" stroke="black" stroke-width="1"/>
+  <text x="70" y="30" font-family="serif" font-size="16">10</text>
+  <text x="80" y="95" font-family="serif" font-size="16">8</text>
+  <text x="170" y="45" font-family="serif" font-size="16">6</text>
+  <path d="M 30 80 A 30 30 0 0 0 25 68" fill="none" stroke="black"/>
+  <text x="35" y="75" font-family="serif" font-size="16">θ</text>
+</svg>
