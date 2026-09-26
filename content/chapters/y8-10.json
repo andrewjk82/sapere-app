@@ -1735,8 +1735,8 @@
         {
           "id": "wghs2023-y8-s2q3",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Jack and Jill have weights in the ratio \\(6 : 5\\). If Jill's weight is \\(75\\) kg, what is Jack's weight?",
+          "difficulty": "medium",
           "options": [
             "\\(90 \\text{ kg}\\)",
             "\\(62.5 \\text{ kg}\\)",
@@ -1754,11 +1754,13 @@
               "work": "\\(6 \\times 15 = 90 \\text{ kg}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
