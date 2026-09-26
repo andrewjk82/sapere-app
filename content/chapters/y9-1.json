@@ -30254,6 +30254,7 @@
               "work": "\\\\(\\frac{-3x + 4x + 8}{x(x-2)(x+2)} = \\\\frac{x+8}{x(x-2)(x+2)}\\\\)"
             }
           ],
+          "timeLimit": 90,
           "xp": 2,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
