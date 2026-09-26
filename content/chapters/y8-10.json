@@ -1382,8 +1382,11 @@
         {
           "id": "wghs2023-y8-s2q14d",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "What was Mrs Coffey's speed on the return journey home?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:10a3df63e8"
+          },
           "options": [
             "\\(8 \\text{ km/h}\\)",
             "\\(16 \\text{ km/h}\\)",
@@ -1404,14 +1407,13 @@
               "work": "\\(\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{16}{2} = 8 \\text{ km/h}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
-          },
-          "figure": {
-            "svg": "fig:10a3df63e8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
