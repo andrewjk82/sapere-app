@@ -1774,23 +1774,22 @@
         {
           "id": "wghs2023-y8-s2q4",
           "type": "mc",
-          "stem": "Divide \\$48 in the ratio \\(5 : 3\\).",
-          "difficulty": "medium",
-          "options": [
-            "\\(\\$30 \\text{ and } \\$18\\)",
-            "\\(\\$25 \\text{ and } \\$23\\)",
-            "\\(\\$24 \\text{ and } \\$24\\)",
-            "\\(\\$20 \\text{ and } \\$28\\)"
+"difficulty": "medium",
+          "stem": "Divide $48 in the ratio \\(5 : 3\\).",          "options": [
+            "$30 and $18",
+            "$25 and $23",
+            "$24 and $24",
+            "$20 and $28"
           ],
           "answer": 0,
           "steps": [
             {
               "explain": "Total parts = 5 + 3 = 8.",
-              "work": "\\(1 \\text{ part} = \\$48 \\div 8 = \\$6\\)"
+              "work": "\\(1 \\text{ part} = 48 \\div 8 = 6\\)"
             },
             {
               "explain": "Calculate each share.",
-              "work": "\\(5 \\times 6 = \\$30 \\text{ and } 3 \\times 6 = \\$18\\)"
+              "work": "\\(5 \\times 6 = 30 \\text{ and } 3 \\times 6 = 18\\)"
             }
           ],
           "xp": 2,
