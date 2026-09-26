@@ -3521,12 +3521,26 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Find two numbers that multiply to 6 and add to -5.",
-              "work": "\\\\((-2) \\times (-3) = 6 \\quad \\text{and} \\quad (-2) + (-3) = -5\\\\)"
+              "explain": "We need two numbers that **multiply** to the constant term (6) and **add** to the coefficient of \\(x\\) (−5).",
+              "work": "\\((-2) \\times (-3) = 6 \\quad \\text{and} \\quad (-2) + (-3) = -5 \\checkmark\\)",
+              "figure": {
+                "svg": "fig:b23261f5b5"
+              }
             },
             {
-              "explain": "Write in factorised form.",
-              "work": "\\\\((x - 2)(x - 3)\\\\)"
+              "explain": "Set up the **cross**: place \\(x\\) in both left boxes and the two numbers (−2 and −3) in the right boxes. Multiply diagonally to check the middle term.",
+              "work": "\\(x \\times (-3) = -3x \\quad \\text{and} \\quad x \\times (-2) = -2x\\)",
+              "figure": {
+                "svg": "fig:b958b83609"
+              }
+            },
+            {
+              "explain": "The diagonal products sum to the middle term, confirming our numbers are correct.",
+              "work": "\\(-3x + (-2x) = -5x \\checkmark\\)"
+            },
+            {
+              "explain": "Read off the factors from the rows: top row gives \\((x - 2)\\), bottom row gives \\((x - 3)\\).",
+              "work": "\\(x^2 - 5x + 6 = (x - 2)(x - 3)\\)"
             }
           ],
           "xp": 1,
@@ -3535,6 +3549,9 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:166695954a"
           }
         },
         {
