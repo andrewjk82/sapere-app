@@ -852,15 +852,47 @@ const Schedule = ({ students = [] }) => {
                     return acc;
                   }, {});
 
-                  return Object.values(groups).map(group => {
+                  // Two bookings whose time ranges overlap (even partially — e.g. a class
+                  // starting mid-way through another) used to render as identical full-width
+                  // absolutely-positioned boxes, so the later one fully covered the earlier
+                  // one and only a sliver of its header peeked out at the top. Lay out
+                  // overlapping bookings side by side instead, like a normal calendar.
+                  const items = Object.values(groups).map(group => {
                     const session = group[0];
+                    return { group, session, start: parseTime(session.startTime), end: parseTime(session.endTime) };
+                  }).sort((a, b) => a.start - b.start || a.end - b.end);
+
+                  // Greedy column assignment: each item takes the first column whose
+                  // previous occupant has already ended by this item's start time.
+                  const colEnds = []; // colEnds[i] = end time currently occupying column i
+                  items.forEach(item => {
+                    let col = colEnds.findIndex(end => end <= item.start);
+                    if (col === -1) { col = colEnds.length; }
+                    colEnds[col] = item.end;
+                    item.col = col;
+                  });
+
+                  // Cluster contiguous/overlapping items so a narrow event doesn't get
+                  // squeezed by a column count that belongs to an unrelated time slot later
+                  // in the day — a cluster's width is shared only among its own items.
+                  let clusterEnd = -Infinity;
+                  const clusters = [];
+                  items.forEach(item => {
+                    if (item.start >= clusterEnd) { clusters.push({ cols: 0, items: [] }); clusterEnd = -Infinity; }
+                    const cluster = clusters[clusters.length - 1];
+                    cluster.items.push(item);
+                    cluster.cols = Math.max(cluster.cols, item.col + 1);
+                    clusterEnd = Math.max(clusterEnd, item.end);
+                  });
+                  clusters.forEach(cluster => cluster.items.forEach(item => { item.totalCols = cluster.cols; }));
+
+                  return items.map(({ group, session, start, end, col, totalCols }) => {
                     const isGroup = group.length > 1;
-                    
-                    const start = parseTime(session.startTime);
-                    const end = parseTime(session.endTime);
+
                     const top = (start - GRID_START_HOUR) * slotH;
                     const height = Math.max((end - start) * slotH - 3, minEventH);
                     const accent = getSessionAccent(session);
+                    const colWidth = 100 / totalCols;
 
                     return (
                       <div
@@ -868,7 +900,8 @@ const Schedule = ({ students = [] }) => {
                         onClick={() => handleOpenDetails(isGroup ? { ...session, isGroupedClass: true, groupStudents: group } : session)}
                         style={{
                           position: 'absolute', top: `${top + 1}px`, height: `${height}px`,
-                          left: '4px', right: '4px',
+                          left: totalCols > 1 ? `calc(${col * colWidth}% + 4px)` : '4px',
+                          right: totalCols > 1 ? `calc(${100 - (col + 1) * colWidth}% + ${col < totalCols - 1 ? 2 : 4}px)` : '4px',
                           backgroundColor: `${accent}14`, borderLeft: `3px solid ${accent}`,
                           borderRadius: '8px', padding: eventPad,
                           cursor: 'pointer', zIndex: 5, overflow: 'hidden',
