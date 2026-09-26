@@ -2078,8 +2078,8 @@
         {
           "id": "killara2023-y9-t4a-q26",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Determine which is the greater number: \\\\(7\\sqrt{2}\\\\) or \\\\(3\\sqrt{11}\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(3\\sqrt{11}\\\\)",
             "\\\\(7\\sqrt{2}\\\\)",
@@ -2101,6 +2101,7 @@
               "work": "\\\\(\\sqrt{99} > \\sqrt{98}\\\\), so \\\\(3\\sqrt{11} > 7\\sqrt{2}\\\\)."
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
