@@ -2183,8 +2183,8 @@
         {
           "id": "wghs2023-y8-q1a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Solve \\(2x + 4 = 12\\).",
+          "difficulty": "easy",
           "options": [
             "\\(x = 4\\)",
             "\\(x = 8\\)",
@@ -2202,11 +2202,13 @@
               "work": "\\(x = \\dfrac{8}{2} = 4\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
