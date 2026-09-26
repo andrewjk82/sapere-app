@@ -3485,8 +3485,8 @@
         {
           "id": "killara2023-y9-t4a-q6",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Factorise \\\\(x^2 + 3x + 2\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\((x + 1)(x + 2)\\\\)",
             "\\\\((x - 1)(x - 2)\\\\)",
@@ -3504,6 +3504,7 @@
               "work": "\\\\((x + 1)(x + 2)\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
