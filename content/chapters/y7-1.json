@@ -3759,8 +3759,8 @@
         {
           "id": "sgs2020-y7-q6f",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A frog is at the bottom of a \\(6\\) metre deep ditch. Each night it crawls up \\(3\\) metres and then falls asleep and slips back \\(2\\) metres. Assuming it does not move during the day, how many nights will it take the frog to get out of the ditch?",
+          "difficulty": "hard",
           "options": [
             "\\(4\\)",
             "\\(6\\)",
@@ -3768,6 +3768,7 @@
             "\\(3\\)"
           ],
           "answer": 0,
+          "hint": "Track the frog night by night: after each climb, check whether it has reached 6 m before it slips back.",
           "steps": [
             {
               "explain": "Calculate the net gain per night.",
@@ -3778,22 +3779,22 @@
               "work": "\\text{It takes 4 nights.}"
             }
           ],
-          "meta": {
-            "source": "SGS 2020 Form I Annual Examination",
-            "grade": "7"
-          },
           "xp": 3,
           "keyPoints": [
             {
-              "text": "crawls up",
-              "note": "Over a full night (climb then slip) it only gains 3 − 2 = 1 metre."
-            },
-            {
               "text": "get out of the ditch",
               "note": "On the last night it reaches the top before slipping — it climbs out and doesn’t slip back. Check each night."
+            },
+            {
+              "text": "crawls up \\(3\\) metres and then falls asleep and slips back \\(2\\) metres.",
+              "note": "Over a full night (climb then slip) it only gains 3 − 2 = 1 metre."
             }
           ],
-          "hint": "Track the frog night by night: after each climb, check whether it has reached 6 m before it slips back."
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7",
+            "origin": "teacher"
+          }
         },
         {
           "id": "sgs2020-y7-q7c",
