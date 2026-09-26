@@ -1298,7 +1298,10 @@
           "steps": [
             {
               "explain": "Find the horizontal (flat) section on the graph where Mrs Coffey's distance stayed constant for the first time. The graph is flat from 10:00 am to 10:30 am.",
-              "work": "\\(\\text{Duration} = 10{:}30\\,\\text{am} - 10{:}00\\,\\text{am} = 30 \\text{ min}\\)"
+              "work": "\\(\\text{Duration} = 10{:}30\\,\\text{am} - 10{:}00\\,\\text{am} = 30 \\text{ min}\\)",
+              "figure": {
+                "svg": "fig:c618c26959"
+              }
             }
           ],
           "xp": 1,
@@ -1308,6 +1311,9 @@
             "examType": "Assessment Task 4",
             "grade": "8",
             "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:10a3df63e8"
           }
         },
         {
@@ -1325,7 +1331,10 @@
           "steps": [
             {
               "explain": "Find the second flat section on the graph. It runs from 12:00 pm to 1:00 pm at 16 km.",
-              "work": "\\(\\text{Stop time} = 12{:}00\\,\\text{pm}\\), \\(\\text{Duration} = 1{:}00\\,\\text{pm} - 12{:}00\\,\\text{pm} = 1 \\text{ hour}\\)"
+              "work": "\\(\\text{Stop time} = 12{:}00\\,\\text{pm}\\), \\(\\text{Duration} = 1{:}00\\,\\text{pm} - 12{:}00\\,\\text{pm} = 1 \\text{ hour}\\)",
+              "figure": {
+                "svg": "fig:d1eb8b46d1"
+              }
             }
           ],
           "meta": {
@@ -1335,7 +1344,7 @@
             "grade": "8"
           },
           "figure": {
-            "svg": "fig:d1eb8b46d1"
+            "svg": "fig:10a3df63e8"
           }
         },
         {
@@ -1353,7 +1362,10 @@
           "steps": [
             {
               "explain": "She ran 16 km out (to the furthest point) and 16 km back home.",
-              "work": "\\(16 + 16 = 32 \\text{ km}\\)"
+              "work": "\\(16 + 16 = 32 \\text{ km}\\)",
+              "figure": {
+                "svg": "fig:0e3d3aba12"
+              }
             }
           ],
           "meta": {
@@ -1363,7 +1375,7 @@
             "grade": "8"
           },
           "figure": {
-            "svg": "fig:0e3d3aba12"
+            "svg": "fig:10a3df63e8"
           }
         },
         {
@@ -1381,7 +1393,10 @@
           "steps": [
             {
               "explain": "The return journey goes from 16 km at 1:00 pm to 0 km at 3:00 pm.",
-              "work": "\\(\\text{Distance} = 16 \\text{ km}, \\quad \\text{Time} = 2 \\text{ hours}\\)"
+              "work": "\\(\\text{Distance} = 16 \\text{ km}, \\quad \\text{Time} = 2 \\text{ hours}\\)",
+              "figure": {
+                "svg": "fig:fe3622ff9c"
+              }
             },
             {
               "explain": "Apply the speed formula.",
@@ -1395,7 +1410,7 @@
             "grade": "8"
           },
           "figure": {
-            "svg": "fig:fe3622ff9c"
+            "svg": "fig:10a3df63e8"
           }
         },
         {
@@ -1413,7 +1428,10 @@
           "steps": [
             {
               "explain": "Mrs Coffey: returns home at 3 pm (speed 8 km/h from 1 pm).",
-              "work": "\\(\\text{Coffey at 3pm: } 16 - 8 \\times 2 = 0 \\text{ km}\\)"
+              "work": "\\(\\text{Coffey at 3pm: } 16 - 8 \\times 2 = 0 \\text{ km}\\)",
+              "figure": {
+                "svg": "fig:1c286119fe"
+              }
             },
             {
               "explain": "Mrs Wheatley: leaves lunch at 3 pm, walks home at rate of 8 km in 2 hours = 4 km/h.",
@@ -1431,7 +1449,7 @@
             "grade": "8"
           },
           "figure": {
-            "svg": "fig:1c286119fe"
+            "svg": "fig:ac24b8f9ea"
           }
         }
       ]
