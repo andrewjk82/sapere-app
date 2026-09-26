@@ -155,7 +155,7 @@
           "keyPoints": [
             {
               "text": "ascending order",
-              "note": "Ascending means smallest first. With negatives, the bigger the number after the minus sign, the smaller it is. Such as \\( 2,3, 1 => 1,2,3 \\)"
+              "note": "Ascending means smallest first. With negatives, the bigger the number after the minus sign, the smaller it is. Such as \\( (2,3, 1 => 1,2,3) \\)"
             }
           ],
           "meta": {
