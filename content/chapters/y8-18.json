@@ -643,8 +643,9 @@
         {
           "id": "wghs2023-y8-s3q2a",
           "type": "mc",
-"difficulty": "medium",
-          "stem": "What is the rule for the following table of values?",          "options": [
+          "difficulty": "medium",
+          "stem": "What is the rule for the following table of values?",
+          "options": [
             "\\(y = 0.5x + 3\\)",
             "\\(y = 2x + 3\\)",
             "\\(y = x + 2\\)",
@@ -666,16 +667,18 @@
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-"grade": "8"
+            "grade": "8"
           },
           "figure": {
-            "svg": "fig:270e29e658"          }
+            "svg": "fig:270e29e658"
+          }
         },
         {
           "id": "wghs2023-y8-s3q2b",
           "type": "mc",
-"difficulty": "medium",
-          "stem": "What is the rule for the following table of values?",          "options": [
+          "difficulty": "medium",
+          "stem": "What is the rule for the following table of values?",
+          "options": [
             "\\(y = -4x + 1\\)",
             "\\(y = 4x + 1\\)",
             "\\(y = -4x - 1\\)",
@@ -697,10 +700,11 @@
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-"grade": "8"
+            "grade": "8"
           },
           "figure": {
-            "svg": "fig:8cc0d4c1e1"          }
+            "svg": "fig:8cc0d4c1e1"
+          }
         },
         {
           "id": "wghs2023-y8-s3q3ai",
@@ -717,7 +721,10 @@
           "steps": [
             {
               "explain": "Negative x, positive y → Quadrant II.",
-              "work": "\\(x < 0, y > 0 \\Rightarrow \\text{Quadrant II}\\)"
+              "work": "\\(x < 0, y > 0 \\Rightarrow \\text{Quadrant II}\\)",
+              "figure": {
+                "svg": "fig:9e07e44d4d"
+              }
             }
           ],
           "xp": 1,
@@ -744,7 +751,10 @@
           "steps": [
             {
               "explain": "Positive x, negative y → Quadrant IV.",
-              "work": "\\(x > 0, y < 0 \\Rightarrow \\text{Quadrant IV}\\)"
+              "work": "\\(x > 0, y < 0 \\Rightarrow \\text{Quadrant IV}\\)",
+              "figure": {
+                "svg": "fig:e9c726984c"
+              }
             }
           ],
           "xp": 1,
