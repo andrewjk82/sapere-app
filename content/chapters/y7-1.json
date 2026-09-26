@@ -228,8 +228,8 @@
         {
           "id": "y7-1a-q4",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Yesterday Peter had $65 in his bank account. Then he was allowed to withdraw $117. Today, he deposited $30 into this account. What is his account balance now?",
+          "difficulty": "medium",
           "options": [
             "-\\(\\$82\\)",
             "-\\(\\$22\\)",
@@ -256,16 +256,21 @@
               "work": "-\\(\\$22\\)"
             }
           ],
-          "meta": {
-            "examPaper": "Willoughby-Y7-Task3"
-          },
           "xp": 2,
           "keyPoints": [
             {
               "text": "account balance",
               "note": "Start from the balance, take away the withdrawal (it can go below 0), then add the deposit."
+            },
+            {
+              "text": "deposited",
+              "note": "Put money into the account. it means plus"
             }
-          ]
+          ],
+          "meta": {
+            "examPaper": "Willoughby-Y7-Task3",
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q5",
