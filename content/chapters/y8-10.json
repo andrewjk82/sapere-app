@@ -1614,8 +1614,8 @@
         {
           "id": "wghs2023-y8-s2q2a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "An athletics team consists of 24 boys and 18 girls. What is the ratio of boys to girls in simplest terms?",
+          "difficulty": "easy",
           "options": [
             "\\(4 : 3\\)",
             "\\(3 : 4\\)",
@@ -1629,11 +1629,13 @@
               "work": "\\(24 \\div 6 : 18 \\div 6 = 4 : 3\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
