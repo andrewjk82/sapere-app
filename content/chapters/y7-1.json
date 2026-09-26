@@ -17948,8 +17948,8 @@
         {
           "id": "y7-1f-q2f",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Carry out the calculation mentally, using the distributive laws: \\(64 \\times 102\\)",
+          "difficulty": "easy",
           "options": [
             "\\\\(9792\\\\)",
             "\\\\(6528\\\\)",
@@ -17979,10 +17979,13 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\(64 \\times 102\\)",
-              "note": "Split 102 into 100 + 2, then 64 × 100 + 64 × 2."
+              "text": "the distributive laws",
+              "note": "\\(a(b+c)=ab+ac\\)"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1f-q3a",
