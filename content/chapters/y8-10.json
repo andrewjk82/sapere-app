@@ -1556,8 +1556,8 @@
         {
           "id": "wghs2023-y8-s2q1b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Simplify the ratio \\(\\dfrac{2}{5} : \\dfrac{3}{4}\\).",
+          "difficulty": "medium",
           "options": [
             "\\(8 : 15\\)",
             "\\(2 : 3\\)",
@@ -1571,11 +1571,13 @@
               "work": "\\(\\dfrac{2}{5} \\times 20 : \\dfrac{3}{4} \\times 20 = 8 : 15\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
