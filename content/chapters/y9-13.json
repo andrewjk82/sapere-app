@@ -914,8 +914,11 @@
         {
           "id": "killara2023-y9-t4a-q11",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Find angle \\\\(\\theta\\\\), given \\\\(\\sin \\theta = \\frac{1}{2}\\\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:d3e03ccb89"
+          },
           "options": [
             "\\\\(30^\\circ\\\\)",
             "\\\\(45^\\circ\\\\)",
@@ -933,14 +936,12 @@
               "work": "\\(\\theta = \\sin^{-1}\\!\\left(\\dfrac{1}{2}\\right) = 30^\\circ\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:d3e03ccb89"
           }
         }
       ]
