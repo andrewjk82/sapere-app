@@ -1286,7 +1286,7 @@
           "stem": "Mrs Coffey's running training is described in the travel graph below. How long (in minutes) did she stop for the first time?",
           "difficulty": "easy",
           "figure": {
-            "svg": "fig:c618c26959"
+            "svg": "fig:10a3df63e8"
           },
           "options": [
             "\\(30 \\text{ minutes}\\)",
@@ -1311,9 +1311,6 @@
             "examType": "Assessment Task 4",
             "grade": "8",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:10a3df63e8"
           }
         },
         {
@@ -1419,27 +1416,27 @@
           "difficulty": "hard",
           "stem": "Mrs Wheatley left home at 11 am, walked 8 km over 2 hours, stopped for lunch for 2 hours, then walked home arriving at 5 pm. At approximately what time did Mrs Coffey and Mrs Wheatley cross paths on the return journey?",
           "options": [
-            "\\(\\text{Approximately 3:00 pm}\\)",
             "\\(\\text{Approximately 2:00 pm}\\)",
+            "\\(\\text{Approximately 3:00 pm}\\)",
             "\\(\\text{Approximately 1:30 pm}\\)",
             "\\(\\text{Approximately 4:00 pm}\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Mrs Coffey: returns home at 3 pm (speed 8 km/h from 1 pm).",
-              "work": "\\(\\text{Coffey at 3pm: } 16 - 8 \\times 2 = 0 \\text{ km}\\)",
+              "explain": "Mrs Coffey returns from 1 pm at 16 km, heading home at 8 km/h. Mrs Wheatley is stopped for lunch at 8 km from 1 pm to 3 pm. Find when Coffey passes the 8 km mark.",
+              "work": "\\(\\text{Coffey position} = 16 - 8 \\times (t - 1\\text{pm})\\)"
+            },
+            {
+              "explain": "Set Coffey's position equal to 8 km (Wheatley's lunch stop location) and solve for time.",
+              "work": "\\(16 - 8 \\times (t - 1) = 8 \\Rightarrow 8 \\times (t-1) = 8 \\Rightarrow t - 1 = 1 \\Rightarrow t = 2\\text{ pm}\\)"
+            },
+            {
+              "explain": "At 2:00 pm, Mrs Coffey is at 8 km on her way home, and Mrs Wheatley is at 8 km on her lunch stop. They are at the same location — they cross paths at 2:00 pm.",
+              "work": "\\(\\text{Coffey at 2pm: } 16 - 8 \\times 1 = 8\\text{ km} \\quad \\text{Wheatley at 2pm: } 8\\text{ km (lunch)} \\checkmark\\)",
               "figure": {
                 "svg": "fig:1c286119fe"
               }
-            },
-            {
-              "explain": "Mrs Wheatley: leaves lunch at 3 pm, walks home at rate of 8 km in 2 hours = 4 km/h.",
-              "work": "\\(\\text{Wheatley at 3pm: } 8 \\text{ km (just started return)}\\)"
-            },
-            {
-              "explain": "Mrs Coffey arrives home at 3 pm (at 0 km), so they cross right at 3 pm near home.",
-              "work": "\\(\\text{They cross at approximately } 3{:}00 \\text{ pm}\\)"
             }
           ],
           "meta": {
