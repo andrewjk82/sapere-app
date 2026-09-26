@@ -1777,9 +1777,6 @@
           "type": "mc",
           "stem": "A light plane takes off flying due north, then turns and flies due west. The plane then has a bearing of \\\\(340^\\circ\\\\) from its starting point with a direct distance of 16km. Calculate the due north distance that the plane flew, to the nearest km.",
           "difficulty": "hard",
-          "figure": {
-            "svg": "fig:e651874536"
-          },
           "options": [
             "15 km",
             "14 km",
@@ -1789,15 +1786,25 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "A bearing of \\\\(340^\\circ\\\\) means the plane is \\\\(360^\\circ - 340^\\circ = 20^\\circ\\\\) West of North from the starting point."
+              "explain": "A bearing of \\(340^\\circ\\) is measured clockwise from due North. Draw the situation: the plane ends up West of North. Subtract from \\(360^\\circ\\): the angle from the North line is \\(360^\\circ - 340^\\circ = 20^\\circ\\).",
+              "work": "",
+              "figure": {
+                "svg": "fig:377f79c953"
+              }
             },
             {
-              "explain": "Form a right-angled triangle. The hypotenuse is the direct distance (16km), and the due north distance is the adjacent side to the \\\\(20^\\circ\\\\) angle.",
-              "work": "\\\\(\\cos 20^\\circ = \\frac{\\text{Adjacent}}{16}\\\\)"
+              "explain": "Form a right-angled triangle. The angle at the starting point between North and the flight path is \\(20^\\circ\\). The **hypotenuse** is the direct distance (16 km). We want the **North distance** (Adjacent side). → Use **cosine** ratio.",
+              "work": "\\(cos 20^\\circ = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\dfrac{\\text{North dist}}{16}\\)",
+              "figure": {
+                "svg": "fig:ce34771103"
+              }
             },
             {
-              "explain": "Calculate the due north distance.",
-              "work": "\\\\(\\text{North distance} = 16 \\cos 20^\\circ \\approx 15.03 \\approx 15 \\text{ km}\\\\)"
+              "explain": "Solve for the North distance.",
+              "work": "\\(\\text{North distance} = 16 \\cos 20^\\circ \\approx 15.03 \\approx 15 \\text{ km}\\)",
+              "figure": {
+                "svg": "fig:487acf0067"
+              }
             }
           ],
           "timeLimit": 90,
@@ -1814,9 +1821,6 @@
           "type": "mc",
           "stem": "On a golf course, the tree is a distance of 130m due west from the pin (the flag stick). Bruce’s first shot hits the ball 100m but not at the correct angle. On his second shot, Bruce hits the ball 35m and gets it in the hole. Find the bearing that he hits his first stroke (to the nearest degree).",
           "difficulty": "hard",
-          "figure": {
-            "svg": "fig:1c5c0f2780"
-          },
           "options": [
             "081°",
             "009°",
@@ -1826,23 +1830,32 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "The path forms a triangle with sides 130m, 100m, and 35m. We want to find the angle \\\\(a\\\\) at the tree."
+              "explain": "Visualise the problem. The tree is due West of the pin, so the pin is due East from the tree. The three paths — tree→ball (100m), ball→pin (35m), and tree→pin (130m) — form a triangle. We need the angle \\(a\\) at the tree between the East direction and the first shot.",
+              "work": "",
+              "figure": {
+                "svg": "fig:45b288a16c"
+              }
             },
             {
-              "explain": "Use the Cosine Rule to find \\\\(a\\\\).",
-              "work": "\\\\(\\cos a = \\frac{100^2 + 130^2 - 35^2}{2 \\times 100 \\times 130}\\\\)"
+              "explain": "Since we know **all three sides** (130m, 100m, 35m) but no angles, use the **Cosine Rule** to find angle \\(a\\) at the tree.",
+              "work": "\\(cos a = \\dfrac{b^2 + c^2 - a^2}{2bc} = \\dfrac{100^2 + 130^2 - 35^2}{2 \\times 100 \\times 130}\\)",
+              "figure": {
+                "svg": "fig:708ac136e4"
+              }
             },
             {
-              "explain": "Calculate the value.",
-              "work": "\\\\(\\cos a = \\frac{10000 + 16900 - 1225}{26000} = \\frac{25675}{26000} \\approx 0.9875\\\\)"
+              "explain": "Calculate \\(cos a\\) and find angle \\(a\\).",
+              "work": "\\(cos a = \\dfrac{25675}{26000} \\approx 0.9875 \\implies a = \\cos^{-1}(0.9875) \\approx 9^\\circ\\)",
+              "figure": {
+                "svg": "fig:4dbdcb0b3e"
+              }
             },
             {
-              "explain": "Find the angle \\\\(a\\\\).",
-              "work": "\\\\(a = \\cos^{-1}(0.9875) \\approx 9^\\circ\\\\)"
-            },
-            {
-              "explain": "The bearing is measured clockwise from North. Since the pin is due East (\\\\(090^\\circ\\\\)), and the angle \\\\(a\\\\) is North of East, subtract \\\\(9^\\circ\\\\) from \\\\(090^\\circ\\\\).",
-              "work": "\\\\(090^\\circ - 9^\\circ = 081^\\circ\\\\)"
+              "explain": "Convert to a true bearing. The pin is due East (\\(090^\\circ\\)). The first shot was \\(9^\\circ\\) **North** of East (slightly toward North from East), so subtract from \\(090^\\circ\\).",
+              "work": "\\(090^\\circ - 9^\\circ = 081^\\circ\\)",
+              "figure": {
+                "svg": "fig:089fa398bf"
+              }
             }
           ],
           "xp": 2,

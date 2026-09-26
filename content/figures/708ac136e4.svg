@@ -1,0 +1,18 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f0fdf4" rx="8"/>
+  <!-- Sides highlighted -->
+  <line x1="50" y1="155" x2="250" y2="155" stroke="#16a34a" stroke-width="4"/>
+  <line x1="50" y1="155" x2="210" y2="128" stroke="#2563eb" stroke-width="4"/>
+  <line x1="210" y1="128" x2="250" y2="155" stroke="#e11d48" stroke-width="4"/>
+  <!-- Angle a at Tree -->
+  <path d="M 90 155 A 40 40 0 0 0 88.5 148" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+  <text x="96" y="150" font-family="serif" font-size="16" fill="#8b5cf6" font-weight="bold">a</text>
+  <!-- Labels -->
+  <rect x="120" y="163" width="60" height="20" rx="4" fill="#dcfce7"/>
+  <text x="125" y="178" font-family="serif" font-size="13" fill="#16a34a" font-weight="bold">130 m</text>
+  <rect x="95" y="118" width="60" height="20" rx="4" fill="#dbeafe"/>
+  <text x="100" y="133" font-family="serif" font-size="13" fill="#2563eb" font-weight="bold">100 m</text>
+  <rect x="222" y="128" width="40" height="20" rx="4" fill="#ffe4e6"/>
+  <text x="227" y="143" font-family="serif" font-size="13" fill="#e11d48" font-weight="bold">35 m</text>
+  <text x="150" y="30" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#475569">Cosine Rule: all 3 sides known → find angle a</text>
+</svg>
