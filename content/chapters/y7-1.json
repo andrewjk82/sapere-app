@@ -763,8 +763,8 @@
         {
           "id": "y7-1a-q23",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An experimental robotics device made by BioSynth Labs starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
+          "difficulty": "hard",
           "options": [
             "\\(-26\\)",
             "\\(-6\\)",
@@ -789,14 +789,25 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "units to the left",
-              "note": "Left is negative, right is positive — add the moves in order."
+              "text": "starts at position \\( 0 \\)",
+              "note": "Begin from the starting position, not from 0 (unless it is 0)."
             },
             {
-              "text": "starts at position",
-              "note": "Begin from the starting position, not from 0 (unless it is 0)."
+              "text": "\\( 12 \\) units to the left",
+              "note": "\\( -12 \\)"
+            },
+            {
+              "text": "\\( 20 \\) units to the right",
+              "note": "\\( 20 \\)"
+            },
+            {
+              "text": "finally \\( 14 \\) units to the left.",
+              "note": "\\( -14 \\)"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q24",
