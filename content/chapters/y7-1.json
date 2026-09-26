@@ -124,8 +124,8 @@
         {
           "id": "y7-1a-q1",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Arrange in ascending order: \\(2, 5, 8, -4, -2, -6\\)",
+          "difficulty": "medium",
           "options": [
             "\\(8, 5, 2, -2, -4, -6\\)",
             "\\(-6, -4, -2, 2, 5, 8\\)",
@@ -151,16 +151,17 @@
               "work": "\\(-6, -4, -2, 2, 5, 8\\)"
             }
           ],
-          "meta": {
-            "examPaper": "Willoughby-Y7-Task3"
-          },
           "xp": 2,
           "keyPoints": [
             {
               "text": "ascending order",
-              "note": "Ascending means smallest first. With negatives, the bigger the number after the minus sign, the smaller it is."
+              "note": "Ascending means smallest first. With negatives, the bigger the number after the minus sign, the smaller it is. Such as \\( 2,3, 1 => 1,2,3 \\)"
             }
-          ]
+          ],
+          "meta": {
+            "examPaper": "Willoughby-Y7-Task3",
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q2",
