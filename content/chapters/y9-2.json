@@ -2048,8 +2048,8 @@
         {
           "id": "killara2023-y9-t4a-q10",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\(\\sqrt{12}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(2\\sqrt{3}\\\\)",
             "\\\\(3\\sqrt{2}\\\\)",
@@ -2067,6 +2067,7 @@
               "work": "\\\\(\\sqrt{4} \\times \\sqrt{3} = 2\\sqrt{3}\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
