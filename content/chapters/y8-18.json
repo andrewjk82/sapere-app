@@ -575,7 +575,7 @@
         {
           "id": "wghs2023-y8-s3q1a",
           "type": "mc",
-          "stem": "Which of the following correctly completes the table of values for \\(y = 3x - 4\\) when \\(x = -3, -2, -1, 0, 1, 2, 3\\)?",
+          "stem": "Which of the following correctly completes the table of values for \\(y = 3x - 4\\)?",
           "difficulty": "easy",
           "options": [
             "\\(-13, -10, -7, -4, -1, 2, 5\\)",
@@ -601,12 +601,15 @@
             "examType": "Assessment Task 4",
             "grade": "8",
             "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:5877b94685"
           }
         },
         {
           "id": "wghs2023-y8-s3q1b",
           "type": "mc",
-          "stem": "Which of the following correctly completes the table of values for \\(12x + 3y = 6\\) when \\(x = -2, -1, 0, 1, 2\\)?",
+          "stem": "Which of the following correctly completes the table of values for \\(12x + 3y = 6\\)?",
           "difficulty": "medium",
           "options": [
             "\\(10, 6, 2, -2, -6\\)",
@@ -632,14 +635,16 @@
             "examType": "Assessment Task 4",
             "grade": "8",
             "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:ed8c57a287"
           }
         },
         {
           "id": "wghs2023-y8-s3q2a",
           "type": "mc",
-          "stem": "A table of values gives: \\(x = -2, -1, 0, 1, 2\\) and \\(y = 2, 2.5, 3, 3.5, 4\\). What is the rule?",
-          "difficulty": "medium",
-          "options": [
+"difficulty": "medium",
+          "stem": "What is the rule for the following table of values?",          "options": [
             "\\(y = 0.5x + 3\\)",
             "\\(y = 2x + 3\\)",
             "\\(y = x + 2\\)",
@@ -661,16 +666,16 @@
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8",
-            "origin": "teacher"
-          }
+"grade": "8"
+          },
+          "figure": {
+            "svg": "fig:270e29e658"          }
         },
         {
           "id": "wghs2023-y8-s3q2b",
           "type": "mc",
-          "stem": "A table of values gives: \\(x = -2, -1, 0, 1, 2\\) and \\(y = 9, 5, 1, -3, -7\\). What is the rule?",
-          "difficulty": "medium",
-          "options": [
+"difficulty": "medium",
+          "stem": "What is the rule for the following table of values?",          "options": [
             "\\(y = -4x + 1\\)",
             "\\(y = 4x + 1\\)",
             "\\(y = -4x - 1\\)",
@@ -692,9 +697,10 @@
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8",
-            "origin": "teacher"
-          }
+"grade": "8"
+          },
+          "figure": {
+            "svg": "fig:8cc0d4c1e1"          }
         },
         {
           "id": "wghs2023-y8-s3q3ai",
