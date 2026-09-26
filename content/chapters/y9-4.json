@@ -3510,8 +3510,8 @@
         {
           "id": "killara2023-y9-t4a-q14a",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Factorise \\\\(x^2 - 5x + 6\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\((x - 2)(x - 3)\\\\)",
             "\\\\((x + 2)(x + 3)\\\\)",
@@ -3529,6 +3529,7 @@
               "work": "\\\\((x - 2)(x - 3)\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
