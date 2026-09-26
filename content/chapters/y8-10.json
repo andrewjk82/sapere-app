@@ -1204,8 +1204,8 @@
         {
           "id": "wghs2023-y8-s2q8a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write \\(20 \\text{ km in } 4 \\text{ hours}\\) as a rate in simplest form.",
+          "difficulty": "easy",
           "options": [
             "\\(5 \\text{ km/h}\\)",
             "\\(20 \\text{ km/h}\\)",
@@ -1219,11 +1219,13 @@
               "work": "\\(20 \\div 4 = 5 \\text{ km/h}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
