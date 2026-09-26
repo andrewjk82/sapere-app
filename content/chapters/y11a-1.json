@@ -140,7 +140,7 @@
             "\\(-4y-12\\)",
             "\\(+4y+12\\)",
             "\\(-6y-14\\)",
-            "Alternative D"
+            "\\(-4y+12\\)"
           ],
           "answer": 0,
           "solution": "1. \\(-4y - 12\\)",
@@ -454,7 +454,7 @@
             "\\(x^2+10x+25\\)",
             "\\(x^4+12x+27\\)",
             "\\(x^2-10x-25\\)",
-            "Alternative D"
+            "\\(x^2+25\\)"
           ],
           "answer": 0,
           "solution": "\\(x^2+10x+25\\)",
@@ -486,9 +486,9 @@
           "stem": "Expand and simplify: \\(x(x + 2) - x(x - 3)\\)",
           "options": [
             "\\(5x\\)",
-            "Alternative D",
+            "\\(-x\\)",
             "\\(7x\\)",
-            "Alternative C"
+            "\\(2x^2+5x\\)"
           ],
           "answer": 0,
           "solution": "1. \\(5x\\)",
@@ -581,7 +581,7 @@
           "options": [
             "\\(m^4+4mn+n^4\\)",
             "\\(m^2+2mn+n^2\\)",
-            "Alternative D",
+            "\\(m^2+n^2\\)",
             "\\(m^2-2mn-n^2\\)"
           ],
           "answer": 1,
@@ -647,7 +647,7 @@
             "\\(2x+5\\)",
             "\\(2x-5\\)",
             "\\(4x+7\\)",
-            "Alternative D"
+            "\\(5\\)"
           ],
           "answer": 0,
           "solution": "\\(= (6x-4x) + (9-4) = 2x+5\\)",
@@ -894,7 +894,7 @@
           "stem": "Expand: \\((k + 8)^2\\)",
           "options": [
             "\\(k^4+18k+66\\)",
-            "Alternative D",
+            "\\(k^2+64\\)",
             "\\(k^2-16k-64\\)",
             "\\(k^2+16k+64\\)"
           ],
@@ -964,7 +964,7 @@
           "options": [
             "\\(2x + 5\\)",
             "\\(2x - 5\\)",
-            "Alternative D",
+            "\\(2x + 1\\)",
             "\\(4x + 7\\)"
           ],
           "answer": 0,
@@ -1027,7 +1027,7 @@
           "stem": "Expand and simplify: \\(2(x - 3) - 3(x - 1)\\)",
           "options": [
             "\\(-x - 5\\)",
-            "Alternative D",
+            "\\(-x + 3\\)",
             "\\(-x - 3\\)",
             "\\(+x + 3\\)"
           ],
@@ -1178,12 +1178,12 @@
           "id": "326967100407fd68a210906e4974b111",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "3(x + 5) + 4(3x - 2)",
+          "stem": "Expand and simplify: \\(3(x + 5) + 4(3x - 2)\\)",
           "options": [
             "\\(15x - 7\\)",
             "\\(15x + 7\\)",
             "\\(17x + 9\\)",
-            "Alternative D"
+            "\\(15x + 23\\)"
           ],
           "answer": 1,
           "hint": "Distribute the 3 and 4 across the brackets.",
@@ -1525,7 +1525,7 @@
             "\\(7x-14\\)",
             "\\(7x+14\\)",
             "\\(9x-16\\)",
-            "Alternative D"
+            "\\(7x-2\\)"
           ],
           "answer": 0,
           "solution": "\\(7x - 14\\)",
@@ -1555,7 +1555,7 @@
             "\\(x + 6\\)",
             "\\(x - 6\\)",
             "\\(x + 8\\)",
-            "Alternative D"
+            "\\(x + 2\\)"
           ],
           "answer": 0,
           "solution": "x + 6",
@@ -2184,7 +2184,7 @@
           "difficulty": "medium",
           "stem": "Expand: \\(2x(y - z)\\)",
           "options": [
-            "Alternative D",
+            "\\(2xy-z\\)",
             "\\(2xy-2xz\\)",
             "\\(2xy+2xz\\)",
             "\\(4xy-4xz\\)"
@@ -2430,7 +2430,7 @@
             "\\(-6y^2-3y\\)",
             "\\(+6y^2+3y\\)",
             "\\(-8y^4-5y\\)",
-            "Alternative D"
+            "\\(-6y^2-y\\)"
           ],
           "answer": 0,
           "solution": "\\(-6y^2 - 3y\\)",
@@ -2671,10 +2671,10 @@
           "difficulty": "medium",
           "stem": "Expand and simplify: \\((3x - 2y) - (2x - 3y)\\)",
           "options": [
-            "Alternative D",
+            "\\(x-5y\\)",
             "\\(x+y\\)",
             "\\(x-y\\)",
-            "Alternative C"
+            "\\(5x-5y\\)"
           ],
           "answer": 1,
           "solution": "\\((3x - 2y) - (2x - 3y) = x + y\\)",
@@ -2704,7 +2704,7 @@
             "\\(x - 11\\)",
             "\\(x + 11\\)",
             "\\(x - 13\\)",
-            "Alternative D"
+            "\\(x - 5\\)"
           ],
           "answer": 0,
           "solution": "\\(4(x - 2) - 3(x + 1) = x - 11\\)",
@@ -3362,7 +3362,7 @@
           "stem": "Expand: \\(6(2x + 3)\\)",
           "options": [
             "\\(12x+18\\)",
-            "Alternative D",
+            "\\(12x+3\\)",
             "\\(12x-18\\)",
             "\\(14x+20\\)"
           ],
@@ -4350,7 +4350,7 @@
           "stem": "Expand: \\(4(3x - 2y)\\)",
           "options": [
             "\\(14x-10y\\)",
-            "Alternative D",
+            "\\(12x-2y\\)",
             "\\(12x+8y\\)",
             "\\(12x-8y\\)"
           ],
@@ -4410,7 +4410,7 @@
           "stem": "Expand: \\(4(x - 3)\\)",
           "options": [
             "\\(6x-14\\)",
-            "Alternative D",
+            "\\(4x-3\\)",
             "\\(4x+12\\)",
             "\\(4x-12\\)"
           ],
@@ -4566,7 +4566,7 @@
           "stem": "Expand: \\(-(x + 7)\\)",
           "options": [
             "\\(-x-7\\)",
-            "Alternative D",
+            "\\(-x+7\\)",
             "\\(+x+7\\)",
             "\\(-x-9\\)"
           ],
@@ -4658,7 +4658,7 @@
           "stem": "Expand: \\(x(x + 5)\\)",
           "options": [
             "\\(x^4+7x\\)",
-            "Alternative D",
+            "\\(x^2+5\\)",
             "\\(x^2-5x\\)",
             "\\(x^2+5x\\)"
           ],
@@ -4856,7 +4856,7 @@
             "\\(2x-6y\\)",
             "\\(2x+6y\\)",
             "\\(4x+8y\\)",
-            "Alternative D"
+            "\\(2x+3y\\)"
           ],
           "answer": 1,
           "solution": "\\(2x + 6y\\)",
@@ -5293,7 +5293,7 @@
           "stem": "Expand and simplify: \\(7 - (x + 2)\\)",
           "options": [
             "\\(5 - x\\)",
-            "Alternative D",
+            "\\(9 - x\\)",
             "\\(5 + x\\)",
             "\\(7 - x\\)"
           ],
@@ -5574,7 +5574,7 @@
           "difficulty": "easy",
           "stem": "Expand: \\(k(x - 5)\\)",
           "options": [
-            "Alternative D",
+            "\\(kx-5\\)",
             "\\(kx-7k\\)",
             "\\(kx+5k\\)",
             "\\(kx-5k\\)"

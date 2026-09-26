@@ -318,9 +318,9 @@
           "stem": "Insert the correct symbol (\\(>\\) or \\(<\\)) in the box to make a true statement:<br>\\(3 \\; \\Box \\; -(-4)\\)",
           "options": [
             "\\(<\\)",
-            "\\(-<\\)",
-            "\\(option 2\\)",
-            "\\(option 3\\)"
+            "\\(>\\)",
+            "\\(=\\)",
+            "\\(\\ge\\)"
           ],
           "answer": 0,
           "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>First simplify the right-hand side: \\(-(-4) = 4\\). Now compare: \\(3\\) is less than \\(4\\). Thus, \\(3 < -(-4)\\).</p>\n    </div>",
@@ -827,10 +827,10 @@
           "difficulty": "easy",
           "stem": "Insert the correct symbol (\\(>\\) or \\(<\\)) in the box to make a true statement:<br>\\(-9 \\; \\Box \\; -5\\)",
           "options": [
-            "\\(-<\\)",
+            "\\(>\\)",
             "\\(<\\)",
-            "\\(option 2\\)",
-            "\\(option 3\\)"
+            "\\(=\\)",
+            "\\(\\ge\\)"
           ],
           "answer": 1,
           "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>On a number line, \\(-9\\) lies to the left of \\(-5\\). The further to the left a number is, the smaller it is. Thus, \\(-9 < -5\\).</p>\n    </div>",
