@@ -2798,12 +2798,12 @@
               "difficulty": "easy",
               "stem": "Evaluate \\(\\log_b6\\).",
               "options": [
-                "\\(1.11\\)",
                 "\\(0.29\\)",
                 "\\(0.25\\)",
+                "\\(1.11\\)",
                 "\\(1.58\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "\\(6=2\\times3\\), and the log of a product is the sum of the logs.",
               "steps": [
                 {
@@ -2850,12 +2850,12 @@
           "difficulty": "easy",
           "stem": "Evaluate \\(\\log_2\\left(\\dfrac18\\right)\\).",
           "options": [
-            "\\(-3\\)",
             "\\(3\\)",
             "\\(-8\\)",
+            "\\(-3\\)",
             "\\(-2\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Write \\(\\dfrac18\\) as a power of 2.",
           "steps": [
             {
@@ -2912,12 +2912,12 @@
           "difficulty": "medium",
           "stem": "Solve for \\(x\\): \\(\\log_2(x+1)-\\log_2(x-1)=3\\).",
           "options": [
-            "\\(x=\\tfrac97\\)",
             "\\(x=\\tfrac79\\)",
             "\\(x=-\\tfrac97\\)",
-            "\\(x=\\tfrac75\\)"
+            "\\(x=\\tfrac75\\)",
+            "\\(x=\\tfrac97\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Combine into one log, then change to index form.",
           "steps": [
             {
@@ -3859,12 +3859,12 @@
           "difficulty": "medium",
           "stem": "If \\(4^t=100\\), find \\(t\\) correct to 2 decimal places.",
           "options": [
-            "\\(3.32\\)",
             "\\(25.00\\)",
             "\\(1.66\\)",
-            "\\(0.30\\)"
+            "\\(0.30\\)",
+            "\\(3.32\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Take logs of both sides: \\(t=\\dfrac{\\log100}{\\log4}\\).",
           "steps": [
             {
@@ -3894,12 +3894,12 @@
           "difficulty": "hard",
           "stem": "Let \\(x=\\log_ba\\) and \\(y=\\log_ab\\). Which statement is true?",
           "options": [
-            "\\(xy=1\\), so \\(\\log_ba\\cdot\\log_ab=1\\)",
             "\\(x=y\\) for all valid \\(a\\) and \\(b\\)",
+            "\\(xy=1\\), so \\(\\log_ba\\cdot\\log_ab=1\\)",
             "\\(x+y=1\\)",
             "\\(xy=ab\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Write both statements in index form: \\(b^x=a\\) and \\(a^y=b\\).",
           "steps": [
             {
@@ -4684,12 +4684,12 @@
               "difficulty": "medium",
               "stem": "Find the coordinates of C.",
               "options": [
-                "\\(\\left(\\tfrac13,-1\\right)\\)",
                 "\\(\\left(-1,\\tfrac13\\right)\\)",
+                "\\(\\left(\\tfrac13,-1\\right)\\)",
                 "\\((3,-1)\\)",
                 "\\(\\left(\\tfrac15,-1\\right)\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "C is on \\(y=\\log_3x\\) at the same height as D, so \\(\\log_3x=-1\\).",
               "steps": [
                 {
@@ -4715,12 +4715,12 @@
               "difficulty": "medium",
               "stem": "Find the area of rectangle ABCD.",
               "options": [
-                "\\(\\tfrac23\\text{ units}^2\\)",
                 "\\(\\tfrac13\\text{ units}^2\\)",
                 "\\(\\tfrac43\\text{ units}^2\\)",
+                "\\(\\tfrac23\\text{ units}^2\\)",
                 "\\(\\tfrac32\\text{ units}^2\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "A is the y-intercept of \\(y=5^x\\). The width comes from C.",
               "steps": [
                 {

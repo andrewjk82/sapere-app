@@ -708,10 +708,10 @@
           "options": [
             "&#8203;\\\\(f'(a) < f'(b) < f(c)\\\\)",
             "&#8203;\\\\(f(c) < f'(a) < f(b)\\\\)",
-            "&#8203;\\\\(f(a) < f'(b) < f'(c)\\\\)",
-            "&#8203;\\\\(f'(a) < f'(b) < f'(c)\\\\)"
+            "&#8203;\\\\(f'(a) < f'(b) < f'(c)\\\\)",
+            "&#8203;\\\\(f(a) < f'(b) < f'(c)\\\\)"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "Point \\(a\\) lies deep below the x-axis (a large negative function value), \\(b\\) is a stationary point so \\(f'(b)=0\\), and \\(c\\) is on a steep rising part of the curve.",
           "steps": [
             {
@@ -787,12 +787,12 @@
             "svg": "fig:12869f9380"
           },
           "options": [
-            "&#8203;\\(f'(x)\\to 0\\)",
             "&#8203;\\(f'(x)\\to a\\)",
+            "&#8203;\\(f'(x)\\to 0\\)",
             "&#8203;\\(f'(x)\\to \\infty\\)",
             "&#8203;\\(f'(x)\\) is undefined"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "A horizontal asymptote means the curve flattens out and stops rising or falling as \\(x\\) gets large.",
           "steps": [
             {
@@ -845,12 +845,12 @@
               "type": "mc",
               "stem": "Find the instantaneous rate of change of the car's speed at \\\\(t=5\\\\) seconds.",
               "options": [
-                "&#8203;\\(\\dfrac{12}{5}\\ \\text{m/s}^2\\)",
                 "&#8203;\\(1\\ \\text{m/s}^2\\)",
                 "&#8203;\\(20\\ \\text{m/s}^2\\)",
-                "&#8203;\\(\\dfrac{5}{12}\\ \\text{m/s}^2\\)"
+                "&#8203;\\(\\dfrac{5}{12}\\ \\text{m/s}^2\\)",
+                "&#8203;\\(\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Use the quotient rule with \\(u=500t\\), \\(v=t^2+100\\), then evaluate \\(v'(5)\\).",
               "steps": [
                 {
@@ -929,12 +929,12 @@
           "difficulty": "medium",
           "stem": "The function \\(f(x)=x^2+2\\). Use differentiation by first principles, \\(f'(x)=\\lim\\limits_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\), to find \\(f'(x)\\).",
           "options": [
-            "&#8203;\\(2x\\)",
             "&#8203;\\(x^2+2x\\)",
             "&#8203;\\(2x+2\\)",
-            "&#8203;\\(x\\)"
+            "&#8203;\\(x\\)",
+            "&#8203;\\(2x\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Expand \\(f(x+h)=(x+h)^2+2\\), subtract \\(f(x)\\), divide by \\(h\\), then let \\(h\\to 0\\).",
           "steps": [
             {
@@ -1080,12 +1080,12 @@
               "type": "mc",
               "stem": "Determine the velocity function \\\\(v(t)\\\\) of the robot.",
               "options": [
-                "&#8203;\\(v(t)=3t^2-16t+16\\)",
                 "&#8203;\\(v(t)=3t^2-8t+16\\)",
+                "&#8203;\\(v(t)=3t^2-16t+16\\)",
                 "&#8203;\\(v(t)=t^2-16t+16\\)",
                 "&#8203;\\(v(t)=3t^2-16t\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "First expand \\(x(t)=t(t-4)^2\\) into a cubic in \\(t\\), then differentiate term by term.",
               "steps": [
                 {
@@ -1104,12 +1104,12 @@
               "type": "mc",
               "stem": "Using \\\\(v(t)=3t^2-16t+16\\\\), find the times at which the robot is stationary.",
               "options": [
-                "&#8203;\\(t=4\\ \\text{or}\\ t=\\dfrac{4}{3}\\)",
                 "&#8203;\\(t=4\\ \\text{only}\\)",
                 "&#8203;\\(t=8\\ \\text{or}\\ t=\\dfrac{8}{3}\\)",
+                "&#8203;\\(t=4\\ \\text{or}\\ t=\\dfrac{4}{3}\\)",
                 "&#8203;\\(t=0\\ \\text{or}\\ t=6\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "The robot is stationary when \\(v(t)=0\\). Solve the quadratic \\(3t^2-16t+16=0\\).",
               "steps": [
                 {
@@ -1156,12 +1156,12 @@
               "type": "mc",
               "stem": "Find the total distance the robot has travelled over the interval \\\\(0\\\\le t\\\\le6\\\\), correct to the nearest metre.",
               "options": [
-                "&#8203;\\(43\\ \\text{m}\\)",
                 "&#8203;\\(24\\ \\text{m}\\)",
                 "&#8203;\\(34\\ \\text{m}\\)",
-                "&#8203;\\(19\\ \\text{m}\\)"
+                "&#8203;\\(19\\ \\text{m}\\)",
+                "&#8203;\\(43\\ \\text{m}\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "The robot changes direction at \\(t=\\dfrac43\\) and \\(t=4\\) (the stationary points). Add up the distance travelled in each separate leg of the trip — do not just subtract the start and end position.",
               "steps": [
                 {
@@ -1228,12 +1228,12 @@
           "difficulty": "hard",
           "stem": "Consider \\(f(x)=ax^2+bx+5\\). The tangent to the graph at \\(x=1\\) has equation \\(y=8x-2\\). Find the value of \\(a-b\\).",
           "options": [
+            "&#8203;\\(13\\)",
             "&#8203;\\(-2\\)",
             "&#8203;\\(1\\)",
-            "&#8203;\\(8\\)",
-            "&#8203;\\(13\\)"
+            "&#8203;\\(8\\)"
           ],
-          "answer": 3,
+          "answer": 0,
           "hint": "The tangent line gives you both the y-value at \\(x=1\\) (from the line equation) and the gradient there (the line's slope).",
           "steps": [
             {
@@ -1261,12 +1261,12 @@
           "difficulty": "medium",
           "stem": "Using \\(f(x)=x^2+2\\) and \\(f'(x)=2x\\), find the equation of the tangent to the curve at the point where \\(x=2\\).",
           "options": [
-            "&#8203;\\(y=4x-2\\)",
             "&#8203;\\(y=4x+2\\)",
+            "&#8203;\\(y=4x-2\\)",
             "&#8203;\\(y=2x-2\\)",
             "&#8203;\\(y=4x-6\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "First find the point of contact \\((2, f(2))\\), then the gradient \\(f'(2)\\), then use \\(y-y_1=m(x-x_1)\\).",
           "steps": [
             {
@@ -1441,12 +1441,12 @@
           "difficulty": "medium",
           "stem": "Consider \\(f(x)=(3x^2-2)^5\\). \\(f'(x)\\) is equal to:",
           "options": [
-            "&#8203;\\(30x(3x^2-2)^4\\)",
             "&#8203;\\(30x(3x^2-2)^5\\)",
             "&#8203;\\(5(3x^2-2)^4\\)",
+            "&#8203;\\(30x(3x^2-2)^4\\)",
             "&#8203;\\(30(3x^2-2)^5\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Use the chain rule: differentiate the outer power, then multiply by the derivative of the inner function.",
           "steps": [
             {

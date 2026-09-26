@@ -1914,12 +1914,12 @@
           "difficulty": "medium",
           "stem": "A lead cube of side 8 cm is melted down to make lead spheres, each with radius 7 mm. How many complete spheres can be made?",
           "options": [
-            "\\(356\\)",
             "\\(357\\)",
             "\\(44\\)",
+            "\\(356\\)",
             "\\(475\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Work in the same units (e.g. cm: \\(7\\text{ mm}=0.7\\text{ cm}\\)), divide the volumes, and keep only complete spheres.",
           "steps": [
             {
@@ -3717,12 +3717,12 @@
             "svg": "fig:7864adb9be"
           },
           "options": [
-            "\\(896\\text{ cm}^3\\)",
             "\\(2688\\text{ cm}^3\\)",
+            "\\(896\\text{ cm}^3\\)",
             "\\(1024\\text{ cm}^3\\)",
             "\\(384\\text{ cm}^3\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Frustum = large pyramid − small pyramid, with \\(V=\\tfrac13Ah\\) for each.",
           "steps": [
             {

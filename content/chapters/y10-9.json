@@ -3338,12 +3338,12 @@
           "difficulty": "medium",
           "stem": "If \\(m=\\dfrac{1.6\\times10^{-19}}{1.76\\times10^{11}}\\), write \\(m\\) in scientific notation correct to 4 significant figures.",
           "options": [
-            "\\(9.091\\times10^{-31}\\)",
             "\\(9.091\\times10^{-30}\\)",
             "\\(9.091\\times10^{-8}\\)",
+            "\\(9.091\\times10^{-31}\\)",
             "\\(2.816\\times10^{-8}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Divide the numbers, and subtract the powers of ten: \\(-19-11\\).",
           "steps": [
             {
@@ -3561,12 +3561,12 @@
           "difficulty": "easy",
           "stem": "Solve for \\(x\\): \\(3^x=\\dfrac1{81}\\).",
           "options": [
-            "\\(x=-4\\)",
             "\\(x=4\\)",
             "\\(x=-3\\)",
-            "\\(x=-27\\)"
+            "\\(x=-27\\)",
+            "\\(x=-4\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Write \\(\\dfrac1{81}\\) as a power of 3.",
           "steps": [
             {

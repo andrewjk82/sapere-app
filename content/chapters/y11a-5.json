@@ -9785,12 +9785,12 @@
           "difficulty": "medium",
           "stem": "Using \\(k=4\\), so that \\(f(x)=x^5-5x^3+4x\\), which statement about \\(f(x)\\) is true?",
           "options": [
-            "&#8203;The function \\(f(x)\\) is an odd function, since \\(f(-x)=-f(x)\\)",
             "&#8203;The function \\(f(x)\\) is an even function, since \\(f(-x)=f(x)\\)",
             "&#8203;The function \\(f(x)\\) is neither odd nor even",
+            "&#8203;The function \\(f(x)\\) is an odd function, since \\(f(-x)=-f(x)\\)",
             "&#8203;The function \\(f(x)\\) is both odd and even"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Compute \\(f(-x)\\) and compare it with \\(f(x)\\) and \\(-f(x)\\).",
           "steps": [
             {
@@ -17282,12 +17282,12 @@
           "difficulty": "medium",
           "stem": "Let \\(f(x)=|2x-4|-3\\). The domain and range of \\(f(x)\\) are:",
           "options": [
-            "&#8203;Domain: \\((-\\infty,\\infty)\\), Range: \\([-3,\\infty)\\)",
             "&#8203;Domain: \\([2,\\infty)\\), Range: \\([-3,\\infty)\\)",
             "&#8203;Domain: \\((-\\infty,\\infty)\\), Range: \\((-3,\\infty)\\)",
-            "&#8203;Domain: \\((-\\infty,2)\\cup(2,\\infty)\\), Range: \\([0,\\infty)\\)"
+            "&#8203;Domain: \\((-\\infty,2)\\cup(2,\\infty)\\), Range: \\([0,\\infty)\\)",
+            "&#8203;Domain: \\((-\\infty,\\infty)\\), Range: \\([-3,\\infty)\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "An absolute value expression \\(|2x-4|\\) is defined for every real \\(x\\), and its minimum value is 0.",
           "steps": [
             {
@@ -17710,12 +17710,12 @@
               "type": "mc",
               "stem": "Find \\\\(f(g(x))\\\\).",
               "options": [
-                "&#8203;\\(x^2-4x+3\\)",
                 "&#8203;\\(x^2+4x-3\\)",
                 "&#8203;\\(9-x^2\\)",
+                "&#8203;\\(x^2-4x+3\\)",
                 "&#8203;\\((3-x)^2\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Substitute \\(g(x)=\\sqrt{3-x}\\) into \\(f\\), and simplify \\((\\sqrt{3-x})^4=(3-x)^2\\).",
               "steps": [
                 {
@@ -22309,12 +22309,12 @@
               "type": "mc",
               "stem": "Find the value of \\\\(k\\\\) that makes \\\\(f(x)\\\\) continuous at \\\\(x=1\\\\).",
               "options": [
-                "&#8203;\\(3\\)",
                 "&#8203;\\(2\\)",
+                "&#8203;\\(3\\)",
                 "&#8203;\\(1\\)",
                 "&#8203;\\(-3\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "For continuity at \\(x=1\\), the two pieces must meet: \\(2(1)^2=k(1)-1\\).",
               "steps": [
                 {
@@ -22352,12 +22352,12 @@
               "type": "mc",
               "stem": "Using \\\\(k=3\\\\), the graph of \\\\(f(x)\\\\) has a discontinuity at \\\\(x=3\\\\). What are the two y-values on either side of this jump?",
               "options": [
-                "&#8203;\\(8\\) (open circle) jumping down to \\(2\\) (closed circle)",
                 "&#8203;\\(2\\) (open circle) jumping up to \\(8\\) (closed circle)",
                 "&#8203;\\(6\\) (open circle) jumping down to \\(2\\) (closed circle)",
+                "&#8203;\\(8\\) (open circle) jumping down to \\(2\\) (closed circle)",
                 "&#8203;There is no discontinuity at \\(x=3\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Evaluate the middle piece \\(3x-1\\) as \\(x\\to 3^-\\), and the third piece at \\(x=3\\).",
               "steps": [
                 {

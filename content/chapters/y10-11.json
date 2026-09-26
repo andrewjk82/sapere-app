@@ -2324,12 +2324,12 @@
           "difficulty": "easy",
           "stem": "Which description matches the graph of \\(x^2+y^2=4\\)?",
           "options": [
-            "A circle with centre \\((0,0)\\) and radius 2, cutting the axes at \\((\\pm2,0)\\) and \\((0,\\pm2)\\)",
             "A circle with centre \\((0,0)\\) and radius 4, cutting the axes at \\((\\pm4,0)\\) and \\((0,\\pm4)\\)",
             "A circle with centre \\((2,2)\\) and radius 2",
-            "A parabola with vertex \\((0,4)\\)"
+            "A parabola with vertex \\((0,4)\\)",
+            "A circle with centre \\((0,0)\\) and radius 2, cutting the axes at \\((\\pm2,0)\\) and \\((0,\\pm2)\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Compare with the circle equation \\(x^2+y^2=r^2\\).",
           "steps": [
             {
@@ -5118,12 +5118,12 @@
           "difficulty": "easy",
           "stem": "For the curve \\(y=\\dfrac{-2}{x}\\), find the equation of the vertical asymptote.",
           "options": [
-            "\\(x=0\\)",
             "\\(y=0\\)",
             "\\(x=-2\\)",
+            "\\(x=0\\)",
             "\\(y=-2\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "A vertical asymptote occurs where the function is undefined.",
           "steps": [
             {

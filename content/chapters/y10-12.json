@@ -16721,12 +16721,12 @@
             "svg": "fig:02b69fa94e"
           },
           "options": [
-            "\\(24\\sqrt3\\text{ cm}^2\\)",
             "\\(48\\text{ cm}^2\\)",
             "\\(24\\text{ cm}^2\\)",
-            "\\(12\\sqrt3\\text{ cm}^2\\)"
+            "\\(12\\sqrt3\\text{ cm}^2\\)",
+            "\\(24\\sqrt3\\text{ cm}^2\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Area = base × perpendicular height. Find the height from the 6 cm side and the 60° angle.",
           "steps": [
             {
@@ -18346,12 +18346,12 @@
               "difficulty": "medium",
               "stem": "Find the distance \\(AB\\), correct to 1 decimal place.",
               "options": [
-                "\\(14.2\\text{ km}\\)",
                 "\\(7.6\\text{ km}\\)",
+                "\\(14.2\\text{ km}\\)",
                 "\\(15.9\\text{ km}\\)",
                 "\\(11.4\\text{ km}\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "First find \\(\\angle APB\\) from the two bearings, then use the cosine rule.",
               "steps": [
                 {
@@ -18381,12 +18381,12 @@
               "difficulty": "medium",
               "stem": "Find the angle \\(PAB\\), to the nearest degree.",
               "options": [
-                "\\(24^\\circ\\)",
                 "\\(31^\\circ\\)",
                 "\\(55^\\circ\\)",
+                "\\(24^\\circ\\)",
                 "\\(35^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Use the sine rule: the side opposite \\(\\angle PAB\\) is \\(PB=7\\text{ km}\\).",
               "steps": [
                 {

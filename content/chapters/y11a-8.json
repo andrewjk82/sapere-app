@@ -4895,12 +4895,12 @@
           "difficulty": "medium",
           "stem": "Which of the following correctly simplifies \\(\\log_3(27x^2)\\) in terms of \\(\\log_3 x\\)?",
           "options": [
-            "&#8203;\\(3+2\\log_3 x\\)",
             "&#8203;\\(27+2\\log_3 x\\)",
             "&#8203;\\(3+\\log_3 x\\)",
-            "&#8203;\\(1+2\\log_3 x\\)"
+            "&#8203;\\(1+2\\log_3 x\\)",
+            "&#8203;\\(3+2\\log_3 x\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Split \\(\\log_3(27x^2)\\) into \\(\\log_3(27)+\\log_3(x^2)\\) using the log of a product law.",
           "steps": [
             {
@@ -4949,12 +4949,12 @@
               "type": "mc",
               "stem": "Determine the population of the town in 2036, to the nearest whole person.",
               "options": [
-                "&#8203;\\(25391\\ \\text{people}\\)",
                 "&#8203;\\(18630\\ \\text{people}\\)",
+                "&#8203;\\(25391\\ \\text{people}\\)",
                 "&#8203;\\(23400\\ \\text{people}\\)",
                 "&#8203;\\(25400\\ \\text{people}\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "2036 is 10 years after 2026, so substitute \\(t=10\\).",
               "steps": [
                 {
@@ -4977,12 +4977,12 @@
               "type": "mc",
               "stem": "Determine the year the population exceeds 70,000, to the nearest year.",
               "options": [
-                "&#8203;\\(2065\\)",
                 "&#8203;\\(2066\\)",
                 "&#8203;\\(2064\\)",
+                "&#8203;\\(2065\\)",
                 "&#8203;\\(2036\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Set \\(P=70000\\), solve for \\(t\\) using logarithms, then add \\(t\\) (rounded) onto the year 2026.",
               "steps": [
                 {

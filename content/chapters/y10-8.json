@@ -1466,12 +1466,12 @@
               "difficulty": "medium",
               "stem": "Which test proves that \\(\\triangle XPQ\\sim\\triangle XWY\\)?",
               "options": [
-                "Equiangular (AA): \\(\\angle X\\) is common and \\(\\angle XPQ=\\angle XWY\\) (corresponding angles, \\(PQ\\parallel WY\\))",
                 "SAS: \\(XP:XW=XQ:XY\\) with the included angle equal",
                 "SSS: all three pairs of sides are in the same ratio",
+                "Equiangular (AA): \\(\\angle X\\) is common and \\(\\angle XPQ=\\angle XWY\\) (corresponding angles, \\(PQ\\parallel WY\\))",
                 "RHS: both triangles are right-angled"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Look for two pairs of equal angles. One angle is shared; the parallel lines give another.",
               "steps": [
                 {
@@ -1529,12 +1529,12 @@
               "difficulty": "medium",
               "stem": "Find the value of \\(y\\).",
               "options": [
-                "\\(\\tfrac{48}{5}\\)",
                 "\\(\\tfrac{15}{4}\\)",
                 "\\(\\tfrac{18}{5}\\)",
-                "\\(\\tfrac{64}{5}\\)"
+                "\\(\\tfrac{64}{5}\\)",
+                "\\(\\tfrac{48}{5}\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Use the same ratio \\(5:8\\) with the parallel sides PQ and WY.",
               "steps": [
                 {
@@ -1562,12 +1562,12 @@
             "svg": "fig:1784c41d70"
           },
           "options": [
-            "\\(8\\)",
             "\\(4.5\\)",
             "\\(2\\)",
-            "\\(12\\)"
+            "\\(12\\)",
+            "\\(8\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "The triangles ABC and EDC are similar. Match A with E and B with D.",
           "steps": [
             {

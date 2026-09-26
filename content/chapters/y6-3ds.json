@@ -14,12 +14,12 @@
           "difficulty": "easy",
           "stem": "How many faces does a triangular prism have?",
           "options": [
-            "\\(5\\)",
             "\\(6\\)",
             "\\(4\\)",
+            "\\(5\\)",
             "\\(3\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "A triangular prism has 2 triangular ends and some rectangular sides connecting them.",
           "steps": [
             {
@@ -64,12 +64,12 @@
           "difficulty": "medium",
           "stem": "A cube is unfolded flat into its net. How many square faces does the net contain?",
           "options": [
-            "\\(6\\)",
             "\\(4\\)",
             "\\(8\\)",
-            "\\(12\\)"
+            "\\(12\\)",
+            "\\(6\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "A cube has the same number of faces whether folded up or laid out flat as a net.",
           "steps": [
             {
@@ -95,12 +95,12 @@
             "svg": "fig:624cd8cab0"
           },
           "options": [
-            "\\(60\\text{ cm}^3\\)",
             "\\(12\\text{ cm}^3\\)",
+            "\\(60\\text{ cm}^3\\)",
             "\\(35\\text{ cm}^3\\)",
             "\\(47\\text{ cm}^3\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Volume of a rectangular prism \\(=\\text{length}\\times\\text{width}\\times\\text{height}\\).",
           "steps": [
             {
@@ -124,12 +124,12 @@
           "difficulty": "hard",
           "stem": "A fish tank measures \\(2\\text{ m}\\) long, \\(1\\text{ m}\\) wide and \\(1.5\\text{ m}\\) high. Find its volume in cubic metres.",
           "options": [
-            "\\(3\\text{ m}^3\\)",
             "\\(4.5\\text{ m}^3\\)",
             "\\(2\\text{ m}^3\\)",
+            "\\(3\\text{ m}^3\\)",
             "\\(1.5\\text{ m}^3\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Multiply the three dimensions together.",
           "steps": [
             {

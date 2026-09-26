@@ -17,12 +17,12 @@
             "svg": "fig:79d1f8f903"
           },
           "options": [
-            "\\(10\\)",
             "\\(6\\)",
             "\\(4\\)",
+            "\\(10\\)",
             "\\(18\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Find the netball values for boys and girls, then subtract.",
           "steps": [
             {
@@ -67,12 +67,12 @@
           "difficulty": "medium",
           "stem": "A line graph records temperature through the day: 6am — \\(10°\\text{C}\\), 9am — \\(14°\\text{C}\\), 12pm — \\(22°\\text{C}\\), 3pm — \\(25°\\text{C}\\), 6pm — \\(19°\\text{C}\\). What is the range of temperatures recorded?",
           "options": [
-            "\\(15°\\text{C}\\)",
             "\\(25°\\text{C}\\)",
             "\\(10°\\text{C}\\)",
-            "\\(6°\\text{C}\\)"
+            "\\(6°\\text{C}\\)",
+            "\\(15°\\text{C}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Range = highest value − lowest value.",
           "steps": [
             {
@@ -102,12 +102,12 @@
             "svg": "fig:41e2efbd6f"
           },
           "options": [
-            "It makes the difference between the bars look much bigger than it really is",
             "It makes the difference between the bars look smaller than it really is",
+            "It makes the difference between the bars look much bigger than it really is",
             "It has no effect on how the bars look",
             "It makes both bars look identical"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Compare the true difference (65−55=10) to how large that difference LOOKS when the axis is cut off at 50 rather than starting at 0.",
           "steps": [
             {
@@ -127,12 +127,12 @@
           "difficulty": "medium",
           "stem": "A pie chart shows the favourite fruit of a class: Apples \\(40\\%\\), Bananas \\(35\\%\\), Oranges \\(35\\%\\). What is wrong with this pie chart?",
           "options": [
-            "The percentages add up to more than \\(100\\%\\), which is impossible for a whole pie chart",
             "Pie charts cannot show fruit data",
             "There are too few categories",
+            "The percentages add up to more than \\(100\\%\\), which is impossible for a whole pie chart",
             "Nothing is wrong with it"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Add up all the percentages shown.",
           "steps": [
             {
@@ -184,12 +184,12 @@
           "difficulty": "hard",
           "stem": "A graph in a news article shows that both ice-cream sales and shark attacks increase during summer months. Does this mean ice-cream sales cause shark attacks?",
           "options": [
-            "No — both are likely caused by a third factor (warm weather leads to more swimming and more ice-cream eating)",
             "Yes — the graph proves ice-cream causes shark attacks",
             "Yes, but only in coastal towns",
-            "No, because sharks do not eat ice-cream"
+            "No, because sharks do not eat ice-cream",
+            "No — both are likely caused by a third factor (warm weather leads to more swimming and more ice-cream eating)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Two things happening at the same time (correlation) does not mean one causes the other.",
           "steps": [
             {

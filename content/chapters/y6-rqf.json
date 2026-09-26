@@ -15,11 +15,11 @@
           "stem": "Which fraction is greater: \\(\\dfrac{3}{4}\\) or \\(\\dfrac{5}{6}\\)?",
           "options": [
             "\\(\\dfrac{3}{4}\\)",
-            "\\(\\dfrac{5}{6}\\)",
             "They are equal",
+            "\\(\\dfrac{5}{6}\\)",
             "Cannot be compared"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "Convert both fractions to a common denominator (12), then compare the numerators.",
           "steps": [
             {
@@ -43,12 +43,12 @@
           "difficulty": "medium",
           "stem": "Which fraction is greater: \\(\\dfrac{2}{5}\\) or \\(\\dfrac{3}{7}\\)?",
           "options": [
-            "\\(\\dfrac{2}{5}\\)",
             "\\(\\dfrac{3}{7}\\)",
+            "\\(\\dfrac{2}{5}\\)",
             "They are equal",
             "Cannot be compared"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Find the lowest common denominator of 5 and 7, which is 35.",
           "steps": [
             {
@@ -72,12 +72,12 @@
           "difficulty": "easy",
           "stem": "Which of the following fractions is equivalent to \\(\\dfrac{2}{3}\\)?",
           "options": [
-            "\\(\\dfrac{6}{9}\\)",
             "\\(\\dfrac{4}{9}\\)",
             "\\(\\dfrac{3}{2}\\)",
-            "\\(\\dfrac{2}{6}\\)"
+            "\\(\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{6}{9}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply the numerator and denominator by the same number.",
           "steps": [
             {
@@ -100,12 +100,12 @@
           "difficulty": "easy",
           "stem": "Calculate: \\(\\dfrac{1}{2}+\\dfrac{1}{4}\\).",
           "options": [
-            "\\(\\dfrac{3}{4}\\)",
             "\\(\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{3}{4}\\)",
             "\\(\\dfrac{1}{6}\\)",
             "\\(\\dfrac{2}{4}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Since 4 is a multiple of 2, rewrite \\(\\dfrac12\\) with a denominator of 4.",
           "steps": [
             {
@@ -125,12 +125,12 @@
           "difficulty": "medium",
           "stem": "Calculate: \\(\\dfrac{2}{3}+\\dfrac{1}{6}\\).",
           "options": [
-            "\\(\\dfrac{5}{6}\\)",
             "\\(\\dfrac{3}{9}\\)",
             "\\(\\dfrac{3}{6}\\)",
+            "\\(\\dfrac{5}{6}\\)",
             "\\(\\dfrac{1}{2}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Since 6 is a multiple of 3, rewrite \\(\\dfrac23\\) with a denominator of 6.",
           "steps": [
             {
@@ -182,12 +182,12 @@
           "difficulty": "easy",
           "stem": "Find \\(\\dfrac{3}{5}\\) of \\(40\\).",
           "options": [
-            "\\(24\\)",
             "\\(15\\)",
             "\\(8\\)",
-            "\\(35\\)"
+            "\\(35\\)",
+            "\\(24\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Divide 40 by the denominator first, then multiply by the numerator.",
           "steps": [
             {
@@ -207,12 +207,12 @@
           "difficulty": "medium",
           "stem": "A netball team scored 60 points in a match. \\(\\dfrac{2}{3}\\) of the points were scored in the first half. How many points were scored in the first half?",
           "options": [
-            "\\(40\\)",
             "\\(30\\)",
+            "\\(40\\)",
             "\\(20\\)",
             "\\(45\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Divide 60 by 3, then multiply by 2.",
           "steps": [
             {
@@ -232,12 +232,12 @@
           "difficulty": "medium",
           "stem": "Find \\(\\dfrac{7}{10}\\) of \\(90\\).",
           "options": [
-            "\\(63\\)",
             "\\(70\\)",
             "\\(9\\)",
+            "\\(63\\)",
             "\\(83\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Divide 90 by 10 first, then multiply by 7.",
           "steps": [
             {
@@ -289,12 +289,12 @@
           "difficulty": "hard",
           "stem": "If \\(\\dfrac{2}{5}\\) of a number is \\(20\\), what is the number?",
           "options": [
-            "\\(50\\)",
             "\\(40\\)",
             "\\(8\\)",
-            "\\(100\\)"
+            "\\(100\\)",
+            "\\(50\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Find one fifth first (divide by 2), then multiply by 5 to find the whole.",
           "steps": [
             {
@@ -321,12 +321,12 @@
           "difficulty": "easy",
           "stem": "Simplify \\(\\dfrac{12}{18}\\) to its lowest terms.",
           "options": [
-            "\\(\\dfrac{2}{3}\\)",
             "\\(\\dfrac{6}{9}\\)",
+            "\\(\\dfrac{2}{3}\\)",
             "\\(\\dfrac{4}{6}\\)",
             "\\(\\dfrac{1}{2}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Find the highest common factor of 12 and 18.",
           "steps": [
             {
@@ -346,12 +346,12 @@
           "difficulty": "medium",
           "stem": "Simplify \\(\\dfrac{15}{20}\\) to its lowest terms.",
           "options": [
-            "\\(\\dfrac{3}{4}\\)",
             "\\(\\dfrac{5}{10}\\)",
             "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{3}{4}\\)",
             "&#8203;\\(\\dfrac{15}{20}\\) (already simplest)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Find the highest common factor of 15 and 20.",
           "steps": [
             {

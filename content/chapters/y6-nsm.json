@@ -14,12 +14,12 @@
           "difficulty": "easy",
           "stem": "Convert \\(2.5\\text{ kg}\\) to grams.",
           "options": [
-            "\\(2500\\text{ g}\\)",
             "\\(250\\text{ g}\\)",
             "\\(25\\text{ g}\\)",
+            "\\(2500\\text{ g}\\)",
             "\\(0.0025\\text{ g}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "There are 1000 g in 1 kg.",
           "steps": [
             {
@@ -56,12 +56,12 @@
           "difficulty": "hard",
           "stem": "A box of cereal has a gross mass (box + contents) of \\(850\\text{ g}\\). The empty box weighs \\(60\\text{ g}\\). What is the net mass of the cereal alone?",
           "options": [
-            "\\(790\\text{ g}\\)",
             "\\(910\\text{ g}\\)",
             "\\(60\\text{ g}\\)",
-            "\\(850\\text{ g}\\)"
+            "\\(850\\text{ g}\\)",
+            "\\(790\\text{ g}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Net mass = gross mass − mass of the container.",
           "steps": [
             {
@@ -84,12 +84,12 @@
           "difficulty": "medium",
           "stem": "A train departs at \\(9{:}45\\text{ am}\\) and arrives at \\(1{:}20\\text{ pm}\\). How long is the journey?",
           "options": [
-            "\\(3\\text{ h } 35\\text{ min}\\)",
             "\\(3\\text{ h } 25\\text{ min}\\)",
+            "\\(3\\text{ h } 35\\text{ min}\\)",
             "\\(4\\text{ h } 35\\text{ min}\\)",
             "\\(2\\text{ h } 35\\text{ min}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Find the time from 9:45am to 12:00pm first, then add the remaining time to 1:20pm.",
           "steps": [
             {
@@ -113,12 +113,12 @@
           "difficulty": "easy",
           "stem": "Write \\(15{:}30\\) (24-hour time) as a 12-hour time.",
           "options": [
-            "\\(3{:}30\\text{ pm}\\)",
             "\\(5{:}30\\text{ pm}\\)",
             "\\(3{:}30\\text{ am}\\)",
+            "\\(3{:}30\\text{ pm}\\)",
             "\\(1{:}30\\text{ pm}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Subtract 12 from the hour if it is 13 or more.",
           "steps": [
             {

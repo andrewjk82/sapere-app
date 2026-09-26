@@ -1171,12 +1171,12 @@
               "type": "mc",
               "stem": "How many employees have completed only the first-aid course (F, but not S)?",
               "options": [
-                "&#8203;\\(18\\)",
                 "&#8203;\\(25\\)",
                 "&#8203;\\(11\\)",
-                "&#8203;\\(7\\)"
+                "&#8203;\\(7\\)",
+                "&#8203;\\(18\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Subtract the number who did both courses from the total number who did the first-aid course.",
               "steps": [
                 {
@@ -1191,12 +1191,12 @@
               "type": "mc",
               "stem": "Find \\\\(P(F\\\\mid S)\\\\).",
               "options": [
-                "&#8203;\\(\\dfrac{7}{18}\\)",
                 "&#8203;\\(\\dfrac{7}{25}\\)",
+                "&#8203;\\(\\dfrac{7}{18}\\)",
                 "&#8203;\\(\\dfrac{18}{25}\\)",
                 "&#8203;\\(\\dfrac{11}{18}\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "\\(P(F\\mid S)=\\dfrac{P(F\\cap S)}{P(S)}\\), which is the same as \\(\\dfrac{n(F\\cap S)}{n(S)}\\).",
               "steps": [
                 {
@@ -1219,12 +1219,12 @@
               "type": "mc",
               "stem": "Given that \\\\(P(S\\\\cup M)=0.57\\\\), find \\\\(P(S\\\\cap M)\\\\).",
               "options": [
-                "&#8203;\\(0.18\\)",
                 "&#8203;\\(0.75\\)",
                 "&#8203;\\(0.12\\)",
+                "&#8203;\\(0.18\\)",
                 "&#8203;\\(0.135\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Use the addition rule \\(P(S\\cup M)=P(S)+P(M)-P(S\\cap M)\\), rearranged for \\(P(S\\cap M)\\).",
               "steps": [
                 {
@@ -1447,12 +1447,12 @@
           "difficulty": "medium",
           "stem": "A library has 8 fiction books and 4 non-fiction books. A student chooses two books one after another without replacement. What is the probability that at least one is non-fiction?",
           "options": [
-            "&#8203;\\(\\dfrac{19}{33}\\)",
             "&#8203;\\(\\dfrac{20}{33}\\)",
+            "&#8203;\\(\\dfrac{19}{33}\\)",
             "&#8203;\\(\\dfrac{24}{36}\\)",
             "&#8203;\\(\\dfrac{22}{33}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "It's easier to find \\(1-P(\\text{both fiction})\\).",
           "steps": [
             {
@@ -1818,12 +1818,12 @@
           "difficulty": "hard",
           "stem": "A magician has three 6-sided dice: one always shows 6 (biased), one has \\(P(\\text{even})=0.8\\) (biased), and one is fair. A die is selected at random and rolled, showing an even number. What is the probability that it was one of the two biased dice?",
           "options": [
-            "&#8203;\\(\\dfrac{18}{23}\\)",
             "&#8203;\\(\\dfrac{2}{3}\\)",
+            "&#8203;\\(\\dfrac{18}{23}\\)",
             "&#8203;\\(\\dfrac{23}{30}\\)",
             "&#8203;\\(\\dfrac{9}{15}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Use Bayes' theorem: \\(P(\\text{biased}\\mid\\text{even})=\\dfrac{P(\\text{biased}\\cap\\text{even})}{P(\\text{even})}\\), building both from the full probability tree (each die chosen with probability \\(\\frac13\\)).",
           "steps": [
             {

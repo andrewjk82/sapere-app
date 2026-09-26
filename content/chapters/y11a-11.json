@@ -4020,12 +4020,12 @@
               "type": "mc",
               "stem": "The shaded plot of land ABCD has an area of \\\\(974\\\\ \\\\text{m}^2\\\\). Calculate the length of \\\\(OC=s\\\\), to the nearest metre.",
               "options": [
-                "&#8203;\\(30\\ \\text{m}\\)",
                 "&#8203;\\(21\\ \\text{m}\\)",
                 "&#8203;\\(45\\ \\text{m}\\)",
-                "&#8203;\\(35\\ \\text{m}\\)"
+                "&#8203;\\(35\\ \\text{m}\\)",
+                "&#8203;\\(30\\ \\text{m}\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Find the area of the full sector OAB first, subtract the shaded area to get the area of triangle OCD, then use \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) to solve for \\(s\\).",
               "steps": [
                 {

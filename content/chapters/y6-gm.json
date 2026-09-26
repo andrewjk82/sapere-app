@@ -18,11 +18,11 @@
           },
           "options": [
             "Quadrant I",
-            "Quadrant II",
             "Quadrant III",
+            "Quadrant II",
             "Quadrant IV"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "The \\(x\\)-coordinate is negative and the \\(y\\)-coordinate is positive.",
           "steps": [
             {
@@ -78,12 +78,12 @@
           "difficulty": "easy",
           "stem": "Convert \\(3.5\\text{ m}\\) to centimetres.",
           "options": [
-            "\\(350\\text{ cm}\\)",
             "\\(35\\text{ cm}\\)",
             "\\(3500\\text{ cm}\\)",
-            "\\(0.035\\text{ cm}\\)"
+            "\\(0.035\\text{ cm}\\)",
+            "\\(350\\text{ cm}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "There are 100 cm in 1 m.",
           "steps": [
             {
@@ -99,12 +99,12 @@
           "difficulty": "medium",
           "stem": "Convert \\(2500\\text{ m}\\) to kilometres.",
           "options": [
-            "\\(2.5\\text{ km}\\)",
             "\\(25\\text{ km}\\)",
+            "\\(2.5\\text{ km}\\)",
             "\\(0.25\\text{ km}\\)",
             "\\(250\\text{ km}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "There are 1000 m in 1 km.",
           "steps": [
             {
@@ -120,12 +120,12 @@
           "difficulty": "easy",
           "stem": "Convert \\(45\\text{ mm}\\) to centimetres.",
           "options": [
-            "\\(4.5\\text{ cm}\\)",
             "\\(450\\text{ cm}\\)",
             "\\(0.45\\text{ cm}\\)",
+            "\\(4.5\\text{ cm}\\)",
             "\\(45\\text{ cm}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "There are 10 mm in 1 cm.",
           "steps": [
             {
@@ -173,12 +173,12 @@
           "difficulty": "hard",
           "stem": "A garden path is made from 8 paving stones, each \\(45\\text{ cm}\\) long, laid end to end. What is the total length of the path in metres?",
           "options": [
-            "\\(3.6\\text{ m}\\)",
             "\\(36\\text{ m}\\)",
             "\\(0.36\\text{ m}\\)",
-            "\\(45\\text{ m}\\)"
+            "\\(45\\text{ m}\\)",
+            "\\(3.6\\text{ m}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply the number of stones by the length of each, then convert to metres.",
           "steps": [
             {
@@ -208,12 +208,12 @@
             "svg": "fig:e6c8e3588f"
           },
           "options": [
-            "\\(115°\\)",
             "\\(65°\\)",
+            "\\(115°\\)",
             "\\(25°\\)",
             "\\(295°\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Angles on a straight line add to \\(180°\\).",
           "steps": [
             {
@@ -233,12 +233,12 @@
           "difficulty": "easy",
           "stem": "Two angles on a straight line are \\(38°\\) and \\(y°\\). Find \\(y\\).",
           "options": [
-            "\\(142\\)",
             "\\(38\\)",
             "\\(52\\)",
+            "\\(142\\)",
             "\\(322\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Angles on a straight line add to \\(180°\\).",
           "steps": [
             {
@@ -293,12 +293,12 @@
           "difficulty": "easy",
           "stem": "Four angles meet at a point: \\(70°\\), \\(95°\\), \\(110°\\) and \\(y°\\). Find \\(y\\).",
           "options": [
-            "\\(85\\)",
             "\\(95\\)",
             "\\(360\\)",
-            "\\(275\\)"
+            "\\(275\\)",
+            "\\(85\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Angles at a point add to \\(360°\\).",
           "steps": [
             {
@@ -328,12 +328,12 @@
             "svg": "fig:ec803d539b"
           },
           "options": [
-            "\\(72°\\)",
             "\\(108°\\)",
+            "\\(72°\\)",
             "\\(18°\\)",
             "\\(288°\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Vertically opposite angles (angles across the intersection point from each other) are always equal.",
           "steps": [
             {
@@ -353,12 +353,12 @@
           "difficulty": "medium",
           "stem": "Two straight lines cross at a point. One of the four angles formed is \\(115°\\). What is the size of the angle vertically opposite to it?",
           "options": [
-            "\\(115°\\)",
             "\\(65°\\)",
             "\\(245°\\)",
+            "\\(115°\\)",
             "\\(90°\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Vertically opposite angles are equal.",
           "steps": [
             {

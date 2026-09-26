@@ -17,12 +17,12 @@
             "svg": "fig:be25d6b986"
           },
           "options": [
-            "\\(\\dfrac{1}{4}\\)",
             "\\(\\dfrac{1}{2}\\)",
             "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{1}{4}\\)",
             "\\(1\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "There are 4 equal sections in total, and only 1 is blue.",
           "steps": [
             {
@@ -70,12 +70,12 @@
           "difficulty": "hard",
           "stem": "Coin A is flipped 10 times and lands on heads 8 times. Coin B is flipped 1000 times and lands on heads 512 times. Which coin's result is closer to the theoretical probability of \\(50\\%\\), and why?",
           "options": [
-            "Coin B — larger trials tend to give results closer to the theoretical probability",
             "Coin A — smaller trials are always more accurate",
             "Both are equally accurate",
-            "Neither is close to 50%"
+            "Neither is close to 50%",
+            "Coin B — larger trials tend to give results closer to the theoretical probability"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Compare \\(\\dfrac{8}{10}\\) and \\(\\dfrac{512}{1000}\\) as percentages.",
           "steps": [
             {
@@ -99,12 +99,12 @@
           "difficulty": "medium",
           "stem": "A die is rolled 30 times and lands on an even number 22 times. What is the experimental probability of rolling an even number, as a percentage?",
           "options": [
-            "\\(73.3\\%\\)",
             "\\(22\\%\\)",
+            "\\(73.3\\%\\)",
             "\\(30\\%\\)",
             "\\(50\\%\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Divide the number of favourable outcomes by the total number of trials.",
           "steps": [
             {
@@ -131,12 +131,12 @@
           "difficulty": "medium",
           "stem": "A fair die is rolled 60 times. Based on theoretical probability, how many times would you expect to roll a 6?",
           "options": [
-            "\\(10\\)",
             "\\(6\\)",
             "\\(60\\)",
+            "\\(10\\)",
             "\\(1\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The theoretical probability of rolling a 6 is \\(\\dfrac16\\). Multiply this by the number of trials.",
           "steps": [
             {

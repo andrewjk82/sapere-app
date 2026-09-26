@@ -2843,12 +2843,12 @@
               "difficulty": "easy",
               "stem": "Find the y-intercept.",
               "options": [
-                "\\(y=3\\)",
                 "\\(y=4\\)",
                 "\\(y=5\\)",
-                "\\(y=-3\\)"
+                "\\(y=-3\\)",
+                "\\(y=3\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Substitute \\(x=0\\).",
               "steps": [
                 {
@@ -2867,12 +2867,12 @@
               "difficulty": "medium",
               "stem": "Find the x-intercepts.",
               "options": [
-                "\\(x=1\\text{ and }x=-3\\)",
                 "\\(x=-1\\text{ and }x=3\\)",
+                "\\(x=1\\text{ and }x=-3\\)",
                 "\\(x=3\\text{ and }x=-5\\)",
                 "\\(x=2\\text{ and }x=-2\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "Set \\(y=0\\), isolate the square, then take square roots (both signs).",
               "steps": [
                 {
@@ -3290,12 +3290,12 @@
           "difficulty": "easy",
           "stem": "Which description matches the graph of \\(y=x^2-x\\)?",
           "options": [
-            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\), and the y-axis at \\(y=0\\)",
             "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=-1\\), and the y-axis at \\(y=0\\)",
+            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\), and the y-axis at \\(y=0\\)",
             "A concave-down parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\)",
             "A concave-up parabola cutting the x-axis at \\(x=\\pm1\\), and the y-axis at \\(y=-1\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Factorise to find the x-intercepts, and look at the sign of \\(x^2\\) for concavity.",
           "steps": [
             {

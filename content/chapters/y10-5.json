@@ -3188,12 +3188,12 @@
           "difficulty": "medium",
           "stem": "Rearrange \\(x=\\dfrac{5x-3}{x}\\) into the form \\(ax^2+bx+c=0\\) and hence solve for \\(x\\), correct to 2 decimal places.",
           "options": [
-            "\\(x=4.30\\text{ or }x=0.70\\)",
             "\\(x=5.54\\text{ or }x=-0.54\\)",
             "\\(x=-0.70\\text{ or }x=-4.30\\)",
-            "\\(x=8.61\\text{ or }x=1.39\\)"
+            "\\(x=8.61\\text{ or }x=1.39\\)",
+            "\\(x=4.30\\text{ or }x=0.70\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply both sides by \\(x\\), bring every term to one side, then use the quadratic formula.",
           "steps": [
             {
@@ -3465,12 +3465,12 @@
           "difficulty": "medium",
           "stem": "Solve for \\(t\\), leaving your answer in simplest exact form: \\(t^2-4t-2=0\\).",
           "options": [
-            "\\(t=2\\pm\\sqrt6\\)",
             "\\(t=-2\\pm\\sqrt6\\)",
+            "\\(t=2\\pm\\sqrt6\\)",
             "\\(t=2\\pm2\\sqrt6\\)",
             "\\(t=4\\pm\\sqrt6\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Use the quadratic formula, then simplify the surd and divide every term by 2.",
           "steps": [
             {

@@ -2869,12 +2869,12 @@
           "difficulty": "easy",
           "stem": "If the probability of an event occurring is \\(\\dfrac1x\\), what is the probability of the event not occurring?",
           "options": [
-            "\\(\\dfrac{x-1}{x}\\)",
             "\\(\\dfrac{1-x}{x}\\)",
             "\\(x-1\\)",
+            "\\(\\dfrac{x-1}{x}\\)",
             "\\(\\dfrac{1}{x-1}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "\\(P(\\text{not }E)=1-P(E)\\).",
           "steps": [
             {
@@ -2912,12 +2912,12 @@
               "difficulty": "easy",
               "stem": "How many students take both History and Geography?",
               "options": [
-                "\\(11\\)",
                 "\\(37\\)",
+                "\\(11\\)",
                 "\\(6\\)",
                 "\\(3\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "\\(20+17\\) counts the students who take both subjects twice.",
               "steps": [
                 {
@@ -2940,12 +2940,12 @@
               "difficulty": "easy",
               "stem": "Find the probability that a student chosen at random will study History but not Geography.",
               "options": [
-                "\\(\\tfrac9{26}\\)",
                 "\\(\\tfrac{10}{13}\\)",
                 "\\(\\tfrac{11}{26}\\)",
+                "\\(\\tfrac9{26}\\)",
                 "\\(\\tfrac9{20}\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "History only = History total − both.",
               "steps": [
                 {

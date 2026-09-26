@@ -1918,12 +1918,12 @@
           "difficulty": "easy",
           "stem": "Which calculation correctly shows whether \\((5,12,13)\\) is a Pythagorean triad?",
           "options": [
-            "\\(5^2+12^2=13^2\\), since \\(25+144=169\\)",
             "\\(5^2+12^2=13^2\\), since \\(25+144=170\\)",
+            "\\(5^2+12^2=13^2\\), since \\(25+144=169\\)",
             "\\(5+12=13\\), since \\(17\\ne13\\)",
             "\\(5^2\\times12^2=13^2\\), since \\(60\\ne169\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Check whether the sum of the squares of the two smaller numbers equals the square of the largest number.",
           "steps": [
             {

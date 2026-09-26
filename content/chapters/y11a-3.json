@@ -9848,12 +9848,12 @@
           "difficulty": "medium",
           "stem": "The function \\(f(x)=x^5-5x^3+kx\\) passes through the point \\((2,0)\\). Find the value of \\(k\\).",
           "options": [
-            "&#8203;\\(4\\)",
             "&#8203;\\(-4\\)",
+            "&#8203;\\(4\\)",
             "&#8203;\\(8\\)",
             "&#8203;\\(2\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Substitute \\(x=2, f(x)=0\\) into the equation and solve for \\(k\\).",
           "steps": [
             {
@@ -15373,12 +15373,12 @@
           "difficulty": "easy",
           "stem": "The function \\(f(x)=3x^2-12x+7\\) has its vertex at:",
           "options": [
-            "&#8203;\\((2,-5)\\)",
             "&#8203;\\((2,-7)\\)",
             "&#8203;\\((-2,-5)\\)",
+            "&#8203;\\((2,-5)\\)",
             "&#8203;\\((4,7)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The x-coordinate of the vertex of \\(ax^2+bx+c\\) is \\(x=-\\dfrac{b}{2a}\\).",
           "steps": [
             {

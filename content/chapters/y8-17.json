@@ -1700,12 +1700,12 @@
           "difficulty": "easy",
           "stem": "Factorise: \\(15m-10a\\).",
           "options": [
-            "\\(5(3m-2a)\\)",
             "\\(5(3m-a)\\)",
             "\\(15(m-10a)\\)",
-            "\\(m(15-10a)\\)"
+            "\\(m(15-10a)\\)",
+            "\\(5(3m-2a)\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "The HCF of 15 and 10 is 5.",
           "steps": [
             {
@@ -1725,12 +1725,12 @@
           "difficulty": "medium",
           "stem": "Factorise: \\(-3m-9\\).",
           "options": [
-            "\\(-3(m+3)\\)",
             "\\(3(m+3)\\)",
+            "\\(-3(m+3)\\)",
             "\\(-3(m-3)\\)",
             "\\(-9(m+3)\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Taking out a negative common factor flips the sign of each remaining term.",
           "steps": [
             {
@@ -1750,12 +1750,12 @@
           "difficulty": "medium",
           "stem": "Factorise: \\(6k^3-2k^2\\).",
           "options": [
-            "\\(2k^2(3k-1)\\)",
             "\\(2k(3k^2-k)\\)",
             "\\(3k(2k^2-k)\\)",
+            "\\(2k^2(3k-1)\\)",
             "\\(2k^2(3k-2)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Take out the highest common factor, including the highest common power of \\(k\\).",
           "steps": [
             {

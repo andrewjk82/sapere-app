@@ -14,12 +14,12 @@
           "difficulty": "easy",
           "stem": "A point at \\((2, 3)\\) is translated 4 units right and 1 unit down. What are its new coordinates?",
           "options": [
-            "\\((6, 2)\\)",
             "\\((6, 4)\\)",
             "\\((-2, 2)\\)",
+            "\\((6, 2)\\)",
             "\\((2, 7)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Moving right increases the \\(x\\)-coordinate; moving down decreases the \\(y\\)-coordinate.",
           "steps": [
             {
@@ -71,12 +71,12 @@
           "difficulty": "easy",
           "stem": "A rectangle measuring \\(3\\text{ cm}\\) by \\(4\\text{ cm}\\) is enlarged by a scale factor of \\(2\\). What are the new dimensions?",
           "options": [
-            "\\(6\\text{ cm}\\times8\\text{ cm}\\)",
             "\\(5\\text{ cm}\\times6\\text{ cm}\\)",
             "\\(3\\text{ cm}\\times8\\text{ cm}\\)",
-            "\\(9\\text{ cm}\\times12\\text{ cm}\\)"
+            "\\(9\\text{ cm}\\times12\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\times8\\text{ cm}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply each side length by the scale factor.",
           "steps": [
             {
@@ -92,12 +92,12 @@
           "difficulty": "hard",
           "stem": "A shape has an area of \\(12\\text{ cm}^2\\). It is enlarged by a scale factor of \\(3\\). What is the area of the enlarged shape?",
           "options": [
-            "\\(108\\text{ cm}^2\\)",
             "\\(36\\text{ cm}^2\\)",
+            "\\(108\\text{ cm}^2\\)",
             "\\(15\\text{ cm}^2\\)",
             "\\(24\\text{ cm}^2\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "When lengths are scaled by a factor \\(k\\), area is scaled by \\(k^2\\), not just \\(k\\).",
           "steps": [
             {
@@ -127,12 +127,12 @@
             "svg": "fig:15c8630de4"
           },
           "options": [
-            "\\(68\\text{ units}^2\\)",
             "\\(48\\text{ units}^2\\)",
             "\\(80\\text{ units}^2\\)",
+            "\\(68\\text{ units}^2\\)",
             "\\(60\\text{ units}^2\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Split the L-shape into a left rectangle (full height) and a right rectangle (the upper part only), then add their areas.",
           "steps": [
             {
@@ -201,12 +201,12 @@
             "svg": "fig:91faaf824c"
           },
           "options": [
-            "\\(30\\text{ cm}^2\\)",
             "\\(60\\text{ cm}^2\\)",
             "\\(16\\text{ cm}^2\\)",
-            "\\(48\\text{ cm}^2\\)"
+            "\\(48\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
           "steps": [
             {
@@ -226,12 +226,12 @@
           "difficulty": "easy",
           "stem": "A triangle has a base of \\(12\\text{ cm}\\) and a height of \\(5\\text{ cm}\\). Find its area.",
           "options": [
-            "\\(30\\text{ cm}^2\\)",
             "\\(60\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)",
             "\\(17\\text{ cm}^2\\)",
             "\\(35\\text{ cm}^2\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
           "steps": [
             {

@@ -2934,12 +2934,12 @@
           "difficulty": "easy",
           "stem": "Solve simultaneously: \\(x-y=-2\\) and \\(2x+3y=41\\).",
           "options": [
-            "\\(x=7,\\ y=9\\)",
             "\\(x=9,\\ y=7\\)",
             "\\(x=13,\\ y=5\\)",
-            "\\(x=4,\\ y=11\\)"
+            "\\(x=4,\\ y=11\\)",
+            "\\(x=7,\\ y=9\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Make \\(x\\) the subject of the first equation and substitute into the second.",
           "steps": [
             {
@@ -5503,12 +5503,12 @@
               "difficulty": "easy",
               "stem": "Find the gradient of \\(AC\\).",
               "options": [
-                "\\(-\\tfrac83\\)",
                 "\\(-\\tfrac38\\)",
                 "\\(\\tfrac83\\)",
-                "\\(-\\tfrac85\\)"
+                "\\(-\\tfrac85\\)",
+                "\\(-\\tfrac83\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Gradient \\(=\\dfrac{\\text{rise}}{\\text{run}}=\\dfrac{y_2-y_1}{x_2-x_1}\\).",
               "steps": [
                 {
@@ -5531,12 +5531,12 @@
               "difficulty": "medium",
               "stem": "Find the equation of \\(AC\\) in general form.",
               "options": [
-                "\\(8x+3y-29=0\\)",
                 "\\(8x-3y+13=0\\)",
+                "\\(8x+3y-29=0\\)",
                 "\\(3x+8y-59=0\\)",
                 "\\(8x+3y-13=0\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "Use point-gradient form with \\(A(1,7)\\) and \\(m=-\\tfrac83\\), then clear the fraction.",
               "steps": [
                 {
@@ -5563,12 +5563,12 @@
               "difficulty": "medium",
               "stem": "If \\(ABCD\\) is a parallelogram, find the coordinates of \\(D\\).",
               "options": [
-                "\\((6,1)\\)",
                 "\\((2,-3)\\)",
                 "\\((-4,13)\\)",
+                "\\((6,1)\\)",
                 "\\((2.5,3)\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "The diagonals of a parallelogram bisect each other, so AC and BD share a midpoint.",
               "steps": [
                 {

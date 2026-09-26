@@ -412,12 +412,12 @@
             "svg": "fig:d4b2672ec5"
           },
           "options": [
-            "\\(x=10\\)",
             "\\(x=14\\)",
             "\\(x=\\sqrt{28}\\)",
+            "\\(x=10\\)",
             "\\(x=100\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Use Pythagoras' theorem, \\(a^2+b^2=c^2\\), with \\(x\\) as the hypotenuse.",
           "steps": [
             {
@@ -485,12 +485,12 @@
             "svg": "fig:b073729716"
           },
           "options": [
-            "\\(15\\text{ m}\\)",
             "\\(21\\text{ m}\\)",
+            "\\(15\\text{ m}\\)",
             "\\(3\\text{ m}\\)",
             "\\(\\sqrt{63}\\text{ m}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "AD is the hypotenuse of right triangle ABD.",
           "steps": [
             {
@@ -520,12 +520,12 @@
             "svg": "fig:0e7ff8a1fa"
           },
           "options": [
-            "\\(\\sqrt{375}\\text{ m}\\)",
             "\\(\\sqrt{325}\\text{ m}\\)",
+            "\\(\\sqrt{375}\\text{ m}\\)",
             "\\(5\\text{ m}\\)",
             "\\(\\sqrt{500}\\text{ m}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "The vertical difference in height is \\(15-10=5\\text{ m}\\). This, the horizontal distance, and the 20 m escalator form a right-angled triangle with the escalator as the hypotenuse.",
           "steps": [
             {
@@ -760,12 +760,12 @@
             "svg": "fig:b073729716"
           },
           "options": [
-            "\\(12\\text{ m}\\)",
             "\\(18\\text{ m}\\)",
             "\\(8\\text{ m}\\)",
-            "\\(\\sqrt{194}\\text{ m}\\)"
+            "\\(\\sqrt{194}\\text{ m}\\)",
+            "\\(12\\text{ m}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "AC is the hypotenuse of right triangle ABC, so \\(AB^2=AC^2-CB^2\\).",
           "steps": [
             {

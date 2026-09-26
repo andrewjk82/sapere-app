@@ -10535,12 +10535,12 @@
           "difficulty": "easy",
           "stem": "Factorise fully: \\(2x^2-72\\).",
           "options": [
-            "\\(2(x-6)(x+6)\\)",
             "\\(2(x^2-36)\\)",
             "\\((x-6)(x+6)\\)",
-            "\\(2(x-6)^2\\)"
+            "\\(2(x-6)^2\\)",
+            "\\(2(x-6)(x+6)\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Take out the common factor first, then look for a difference of two squares.",
           "steps": [
             {
@@ -12481,12 +12481,12 @@
           "difficulty": "medium",
           "stem": "Factorise fully: \\(15x^2-x-2\\).",
           "options": [
-            "\\((3x+1)(5x-2)\\)",
             "\\((3x-1)(5x+2)\\)",
             "\\((5x+1)(3x-2)\\)",
+            "\\((3x+1)(5x-2)\\)",
             "\\((15x+1)(x-2)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Find two numbers that multiply to \\(15\\times(-2)=-30\\) and add to \\(-1\\).",
           "steps": [
             {
@@ -12589,12 +12589,12 @@
           "difficulty": "medium",
           "stem": "Write as a single fraction: \\(\\dfrac{m+n}{2}-\\dfrac{m-n}{3}\\).",
           "options": [
-            "\\(\\dfrac{m+5n}{6}\\)",
             "\\(\\dfrac{m+n}{6}\\)",
+            "\\(\\dfrac{m+5n}{6}\\)",
             "\\(\\dfrac{5m+n}{6}\\)",
             "\\(\\dfrac{m+5n}{5}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Use the common denominator 6, and put the second numerator in brackets before subtracting.",
           "steps": [
             {
@@ -12624,12 +12624,12 @@
           "difficulty": "medium",
           "stem": "Simplify \\(\\dfrac{x^2-81}{x^2-10x+9}\\).",
           "options": [
-            "\\(\\dfrac{x+9}{x-1}\\)",
             "\\(\\dfrac{x-9}{x-1}\\)",
+            "\\(\\dfrac{x+9}{x-1}\\)",
             "\\(\\dfrac{x+9}{x+1}\\)",
             "\\(\\dfrac{x+9}{x-9}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Factorise the numerator (difference of two squares) and the denominator (a monic quadratic), then cancel the common factor.",
           "steps": [
             {

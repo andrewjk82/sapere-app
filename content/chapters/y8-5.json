@@ -922,12 +922,12 @@
             "svg": "fig:d6cd21117b"
           },
           "options": [
-            "False — the shaded angle is a reflex angle (between 180° and 360°), not a complete 360° turn",
             "True — any shaded angle at a point is a revolution",
             "True — the shaded region goes all the way around point I",
-            "False — a revolution must be less than 180°"
+            "False — a revolution must be less than 180°",
+            "False — the shaded angle is a reflex angle (between 180° and 360°), not a complete 360° turn"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "A revolution is exactly one complete turn, 360°. Check whether the shaded region really goes all the way around I.",
           "steps": [
             {
@@ -950,12 +950,12 @@
             "svg": "fig:92ce216c14"
           },
           "options": [
-            "\\(\\angle JKL\\)",
             "\\(\\angle KJL\\)",
+            "\\(\\angle JKL\\)",
             "\\(\\angle LJK\\)",
             "\\(\\angle JLK\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Name an angle with the vertex letter in the middle.",
           "steps": [
             {
@@ -974,12 +974,12 @@
             "svg": "fig:8e96fc67a8"
           },
           "options": [
-            "\\(56\\), since complementary angles sum to 90°",
             "\\(34\\), since the angles are equal",
             "\\(90\\), since it's a right angle",
+            "\\(56\\), since complementary angles sum to 90°",
             "\\(146\\), since angles on a straight line sum to 180°"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The two angles together make up the right angle \\(\\angle ABC=90°\\).",
           "steps": [
             {
@@ -1104,12 +1104,12 @@
             "svg": "fig:fbddd93497"
           },
           "options": [
-            "Corresponding angles (equal)",
             "Alternate angles (equal)",
             "Co-interior angles (sum to 180°)",
+            "Corresponding angles (equal)",
             "Vertically opposite angles (equal)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Angles in matching positions at each intersection, on the same side of the transversal, are corresponding angles.",
           "steps": [
             {
@@ -1193,12 +1193,12 @@
             "svg": "fig:a30a57d7a3"
           },
           "options": [
-            "\\(106\\)",
             "\\(74\\)",
             "\\(180\\)",
-            "\\(16\\)"
+            "\\(16\\)",
+            "\\(106\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Co-interior angles on parallel lines add to 180°.",
           "steps": [
             {
@@ -1224,12 +1224,12 @@
             "svg": "fig:a30a57d7a3"
           },
           "options": [
-            "\\(106\\)",
             "\\(74\\)",
+            "\\(106\\)",
             "\\(180\\)",
             "\\(53\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Since the two transversals are parallel, \\(y°\\) and \\(x°\\) are corresponding angles.",
           "steps": [
             {
@@ -1255,12 +1255,12 @@
             "svg": "fig:b06b17b58b"
           },
           "options": [
-            "\\(109\\)",
             "\\(41\\)",
             "\\(75\\)",
+            "\\(109\\)",
             "\\(150\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Construct FG through E, parallel to AB and CD. Then use alternate angles twice: once between FG and CD, once between FG and AB.",
           "steps": [
             {
