@@ -606,8 +606,8 @@
         {
           "id": "wghs2023-y8-s3q1b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Which of the following correctly completes the table of values for \\(12x + 3y = 6\\) when \\(x = -2, -1, 0, 1, 2\\)?",
+          "difficulty": "medium",
           "options": [
             "\\(10, 6, 2, -2, -6\\)",
             "\\(-10, -6, 2, 6, 10\\)",
@@ -625,11 +625,13 @@
               "work": "\\(x=-2: y=2-4(-2)=10; x=-1: y=6; x=0: y=2; x=1: y=-2; x=2: y=-6\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
