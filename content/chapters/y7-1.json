@@ -2777,6 +2777,141 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(-6 \\times 8\\).",
+          "options": [
+            "\\(-48\\)",
+            "\\(48\\)",
+            "\\(-14\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A negative multiplied by a positive gives a negative.",
+              "work": "\\(-6 \\times 8 = -48\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q1bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(3 - 7\\).",
+          "options": [
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(-10\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Subtracting a larger number from a smaller number yields a negative result.",
+              "work": "\\(3 - 7 = -4\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Suzy is \\(64\\) years old. She emigrated from Canada \\(37\\) years ago and obtained her Master's degree \\(11\\) years after she arrived. How old was she when she received her Master's?",
+          "options": [
+            "\\(38\\)",
+            "\\(27\\)",
+            "\\(48\\)",
+            "\\(16\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find her age when she arrived.",
+              "work": "\\(64 - 37 = 27\\)"
+            },
+            {
+              "explain": "Add 11 years to find her age when she obtained her degree.",
+              "work": "\\(27 + 11 = 38\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q6f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A frog is at the bottom of a \\(6\\) metre deep ditch. Each night it crawls up \\(3\\) metres and then falls asleep and slips back \\(2\\) metres. Assuming it does not move during the day, how many nights will it take the frog to get out of the ditch?",
+          "options": [
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the net gain per night.",
+              "work": "\\(3 - 2 = 1 \\text{ metre}\\)"
+            },
+            {
+              "explain": "On the 4th night, it will start at 3m, climb 3m and reach the top before falling asleep.",
+              "work": "\\text{It takes 4 nights.}"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q7c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many positive integers less than \\(1000\\) have the sum of their digits equal to \\(5\\)?",
+          "options": [
+            "\\(21\\)",
+            "\\(15\\)",
+            "\\(20\\)",
+            "\\(25\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Count systematically. Single digits: 5.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "Double digits: 14, 23, 32, 41, 50.",
+              "work": "\\(5\\)"
+            },
+            {
+              "explain": "Triple digits starting with 1, 2, 3, 4, 5.",
+              "work": "\\text{e.g. 104, 113, 122... total 15}"
+            },
+            {
+              "explain": "Add them up.",
+              "work": "\\(1 + 5 + 15 = 21\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -42648,12 +42783,12 @@
           "difficulty": "hard",
           "stem": "Find the missing whole number, represented by \\(\\bigcirc\\), that makes this number sentence true: \\([3\\times\\bigcirc^2+(\\sqrt{25}-\\bigcirc)]=\\sqrt{\\bigcirc}\\times9\\times3-5\\).",
           "options": [
-            "\\(4\\)",
             "\\(3\\)",
             "\\(5\\)",
+            "\\(4\\)",
             "\\(2\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Try substituting small whole numbers and checking both sides — start with \\(\\bigcirc=4\\), since \\(\\sqrt{\\bigcirc}\\) should be a whole number.",
           "steps": [
             {
@@ -42674,6 +42809,33 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(12 + 2 \\times (-13)\\).",
+          "options": [
+            "\\(-14\\)",
+            "\\(-182\\)",
+            "\\(38\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Perform multiplication first.",
+              "work": "\\(12 - 26\\)"
+            },
+            {
+              "explain": "Perform addition/subtraction.",
+              "work": "\\(-14\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

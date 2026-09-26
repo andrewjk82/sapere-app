@@ -2581,6 +2581,79 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "sgs2020-y7-q2ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(27\\%\\) in decimal form.",
+          "options": [
+            "\\(0.27\\)",
+            "\\(2.7\\)",
+            "\\(0.027\\)",
+            "\\(27.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide by 100.",
+              "work": "\\(27 \\div 100 = 0.27\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q3ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(0.052\\) as a percentage.",
+          "options": [
+            "\\(5.2\\%\\)",
+            "\\(52\\%\\)",
+            "\\(0.52\\%\\)",
+            "\\(520\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply by 100.",
+              "work": "\\(0.052 \\times 100 = 5.2\\%\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q3aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(3 \\frac{2}{5}\\) as a percentage.",
+          "options": [
+            "\\(340\\%\\)",
+            "\\(325\\%\\)",
+            "\\(3.4\\%\\)",
+            "\\(34\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Convert to an improper fraction or decimal.",
+              "work": "\\(3 \\frac{2}{5} = 3.4\\)"
+            },
+            {
+              "explain": "Multiply by 100.",
+              "work": "\\(3.4 \\times 100 = 340\\%\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -2658,6 +2731,56 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           },
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(5\\%\\) of \\(\\$90\\).",
+          "options": [
+            "\\(\\$4.50\\)",
+            "\\(\\$45\\)",
+            "\\(\\$0.45\\)",
+            "\\(\\$5.90\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the percentage as a fraction by the amount.",
+              "work": "\\(\\frac{5}{100} \\times 90 = \\frac{450}{100} = \\$4.50\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q7a",
+          "type": "review",
+          "difficulty": "medium",
+          "manual": true,
+          "stem": "It is estimated that about \\(2.3\\) million people gathered around Sydney Harbour on New Year's Eve 2019 to view the fireworks. There were approximately \\(25\\) million people in Australia at that time. (i) What fraction attended? (ii) What percentage did not attend?",
+          "answer": "",
+          "hint": "Convert decimal fractions to whole numbers, and subtract the attended percentage from 100%.",
+          "steps": [
+            {
+              "explain": "Fraction attended:",
+              "work": "\\(\\frac{2.3}{25} = \\frac{23}{250}\\)"
+            },
+            {
+              "explain": "Percentage attended:",
+              "work": "\\(\\frac{23}{250} \\times 100\\% = 9.2\\%\\)"
+            },
+            {
+              "explain": "Percentage that did not attend:",
+              "work": "\\(100\\% - 9.2\\% = 90.8\\%\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     }

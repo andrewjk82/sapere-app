@@ -205,6 +205,106 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q5ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The whole numbers from \\(1\\) to \\(25\\) inclusive are written on cards and placed in a bag. One card is drawn at random. Find the probability that the number on the card is the number \\(22\\).",
+          "options": [
+            "\\(\\frac{1}{25}\\)",
+            "\\(\\frac{22}{25}\\)",
+            "\\(\\frac{1}{22}\\)",
+            "\\(\\frac{1}{24}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "There is only one card with the number 22.",
+              "work": "\\(\\frac{1}{25}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q5aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The whole numbers from \\(1\\) to \\(25\\) inclusive are written on cards and placed in a bag. One card is drawn at random. Find the probability that the number on the card is divisible by \\(4\\).",
+          "options": [
+            "\\(\\frac{6}{25}\\)",
+            "\\(\\frac{4}{25}\\)",
+            "\\(\\frac{5}{25}\\)",
+            "\\(\\frac{7}{25}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "List the numbers divisible by 4.",
+              "work": "\\(4, 8, 12, 16, 20, 24\\) (6 numbers)"
+            },
+            {
+              "explain": "Calculate the probability.",
+              "work": "\\(\\frac{6}{25}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q5aiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The whole numbers from \\(1\\) to \\(25\\) inclusive are written on cards and placed in a bag. One card is drawn at random. Find the probability that the number on the card is not divisible by \\(4\\).",
+          "options": [
+            "\\(\\frac{19}{25}\\)",
+            "\\(\\frac{21}{25}\\)",
+            "\\(\\frac{18}{25}\\)",
+            "\\(\\frac{6}{25}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Subtract the probability of drawing a number divisible by 4 from 1.",
+              "work": "\\(1 - \\frac{6}{25} = \\frac{19}{25}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q5aiv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The whole numbers from \\(1\\) to \\(25\\) inclusive are written on cards and placed in a bag. One card is drawn at random. Find the probability that the number on the card is a square number.",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{4}{25}\\)",
+            "\\(\\frac{6}{25}\\)",
+            "\\(\\frac{1}{25}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "List the square numbers from 1 to 25.",
+              "work": "\\(1, 4, 9, 16, 25\\) (5 numbers)"
+            },
+            {
+              "explain": "Calculate the probability and simplify.",
+              "work": "\\(\\frac{5}{25} = \\frac{1}{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     }

@@ -2008,6 +2008,29 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\frac{5}{8} \\times \\frac{3}{7}\\).",
+          "options": [
+            "\\(\\frac{15}{56}\\)",
+            "\\(\\frac{8}{15}\\)",
+            "\\(\\frac{35}{24}\\)",
+            "\\(\\frac{15}{15}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\(\\frac{5 \\times 3}{8 \\times 7} = \\frac{15}{56}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

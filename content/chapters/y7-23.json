@@ -7040,12 +7040,12 @@
           "difficulty": "easy",
           "stem": "Write an algebraic expression for: \"The number of times 3 divides into \\(e\\)\".",
           "options": [
-            "\\(\\dfrac{e}{3}\\)",
             "\\(\\dfrac{3}{e}\\)",
             "\\(3e\\)",
+            "\\(\\dfrac{e}{3}\\)",
             "\\(e-3\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "\"The number of times 3 divides into e\" means e divided by 3.",
           "steps": [
             {
@@ -10090,6 +10090,56 @@
           ],
           "timeLimit": 30,
           "xp": 1
+        },
+        {
+          "id": "sgs2020-y7-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(w(2w + 3)\\).",
+          "options": [
+            "\\(2w^2 + 3w\\)",
+            "\\(2w^2 + 3\\)",
+            "\\(3w^2 + 3w\\)",
+            "\\(5w^2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the term outside the brackets by each term inside.",
+              "work": "\\(w \\times 2w + w \\times 3 = 2w^2 + 3w\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(4(x + 2) + 5(x - 3)\\).",
+          "options": [
+            "\\(9x - 7\\)",
+            "\\(9x - 1\\)",
+            "\\(9x + 23\\)",
+            "\\(20x - 7\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Expand the brackets.",
+              "work": "\\(4x + 8 + 5x - 15\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(9x - 7\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

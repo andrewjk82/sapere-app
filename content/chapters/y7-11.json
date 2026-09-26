@@ -2345,6 +2345,29 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(-a^2\\) if \\(a = -3\\).",
+          "options": [
+            "\\(-9\\)",
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute -3 into the expression.",
+              "work": "\\(-(-3)^2 = -(9) = -9\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

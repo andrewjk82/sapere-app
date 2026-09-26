@@ -3265,12 +3265,12 @@
           "difficulty": "easy",
           "stem": "Rewrite into conventional algebraic notation: \\(-8 \\div (k+4\\times j)\\).",
           "options": [
-            "\\(\\dfrac{-8}{k+4j}\\)",
             "\\(\\dfrac{-8}{4k+j}\\)",
             "\\(-8(k+4j)\\)",
-            "\\(\\dfrac{-8}{k}+4j\\)"
+            "\\(\\dfrac{-8}{k}+4j\\)",
+            "\\(\\dfrac{-8}{k+4j}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "\\(4\\times j\\) is written as \\(4j\\), and \\(a\\div b\\) is written as the fraction \\(\\dfrac{a}{b}\\), keeping the whole denominator together.",
           "steps": [
             {
@@ -5255,12 +5255,12 @@
           "difficulty": "medium",
           "stem": "Simplify: \\(4bc-8a+2bc-a\\).",
           "options": [
-            "\\(6bc-9a\\)",
             "\\(6bc-7a\\)",
+            "\\(6bc-9a\\)",
             "\\(6bc-8a\\)",
             "\\(2bc-9a\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Collect the \\(bc\\) terms together, and the \\(a\\) terms together, being careful with the negative signs.",
           "steps": [
             {
@@ -5277,6 +5277,52 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(10y - 6y\\).",
+          "options": [
+            "\\(4y\\)",
+            "\\(16y\\)",
+            "\\(4\\)",
+            "\\(-4y\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Subtract the coefficients of the like terms.",
+              "work": "\\(10y - 6y = 4y\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q4bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(7x^3 - 2x - 11x^3 + 7x\\).",
+          "options": [
+            "\\(-4x^3 + 5x\\)",
+            "\\(-4x^3 + 9x\\)",
+            "\\(18x^3 + 5x\\)",
+            "\\(x^3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Group like terms together.",
+              "work": "\\((7x^3 - 11x^3) + (-2x + 7x) = -4x^3 + 5x\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -6710,12 +6756,12 @@
           "difficulty": "easy",
           "stem": "Expand by applying the distributive law: \\(6(x+y)\\).",
           "options": [
-            "\\(6x+6y\\)",
             "\\(6x+y\\)",
             "\\(6xy\\)",
-            "\\(x+6y\\)"
+            "\\(x+6y\\)",
+            "\\(6x+6y\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply the term outside the brackets by each term inside.",
           "steps": [
             {
@@ -6731,12 +6777,12 @@
           "difficulty": "easy",
           "stem": "Expand: \\(-9(5+2x)\\).",
           "options": [
-            "\\(-45-18x\\)",
             "\\(-45+18x\\)",
+            "\\(-45-18x\\)",
             "\\(45-18x\\)",
             "\\(-14-11x\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Multiply \\(-9\\) by each term inside the brackets — watch the signs carefully.",
           "steps": [
             {
@@ -6752,12 +6798,12 @@
           "difficulty": "medium",
           "stem": "Expand: \\(4n(2n+5m)\\).",
           "options": [
-            "\\(8n^2+20mn\\)",
             "\\(8n+20mn\\)",
             "\\(8n^2+20m\\)",
+            "\\(8n^2+20mn\\)",
             "\\(6n^2+9mn\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Multiply \\(4n\\) by each term inside the brackets, using index laws for the \\(n\\times n\\) term.",
           "steps": [
             {
@@ -7983,12 +8029,12 @@
           "difficulty": "medium",
           "stem": "Simplify: \\(5x\\times4\\times{-2y}\\).",
           "options": [
-            "\\(-40xy\\)",
             "\\(40xy\\)",
             "\\(-20xy\\)",
+            "\\(-40xy\\)",
             "\\(-40x+y\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Multiply the numbers together first, then multiply the pronumerals together.",
           "steps": [
             {
@@ -9335,12 +9381,12 @@
           "difficulty": "medium",
           "stem": "A bacterium splits in two every 5 minutes, and new cells continue splitting the same way. How long will it take for 1 cell to divide into 64 cells?",
           "options": [
-            "\\(30\\text{ minutes}\\)",
             "\\(20\\text{ minutes}\\)",
             "\\(64\\text{ minutes}\\)",
+            "\\(30\\text{ minutes}\\)",
             "\\(320\\text{ minutes}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The number of cells doubles every 5 minutes: \\(1,2,4,8,16,32,64,\\ldots\\). Count how many doublings are needed to reach 64.",
           "steps": [
             {

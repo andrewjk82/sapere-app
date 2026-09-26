@@ -2691,6 +2691,29 @@
           ],
           "timeLimit": 45,
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(3\\) kilometres to centimetres.",
+          "options": [
+            "\\(300\\,000 \\text{ cm}\\)",
+            "\\(3\\,000 \\text{ cm}\\)",
+            "\\(30\\,000 \\text{ cm}\\)",
+            "\\(3\\,000\\,000 \\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply by 1000 to convert to metres, then by 100 to convert to centimetres.",
+              "work": "\\(3 \\times 1000 \\times 100 = 300\\,000\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -3022,6 +3045,33 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(5\\) oranges weigh \\(1.5\\) kilograms, find the weight of \\(8\\) similar sized oranges.",
+          "options": [
+            "\\(2.4 \\text{ kg}\\)",
+            "\\(3 \\text{ kg}\\)",
+            "\\(2.1 \\text{ kg}\\)",
+            "\\(1.2 \\text{ kg}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find the weight of one orange.",
+              "work": "\\(1.5 \\div 5 = 0.3 \\text{ kg}\\)"
+            },
+            {
+              "explain": "Multiply by 8.",
+              "work": "\\(0.3 \\times 8 = 2.4 \\text{ kg}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -3287,6 +3337,29 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1g",
+          "type": "review",
+          "difficulty": "easy",
+          "manual": true,
+          "stem": "A rectangle has a perimeter of \\(30\\) centimetres. Sketch an example of a rectangle that has perimeter \\(30\\) centimetres (other than \\(11 \\text{ cm}\\) by \\(4 \\text{ cm}\\)).",
+          "answer": "",
+          "hint": "The sum of the length and width must be half the perimeter.",
+          "steps": [
+            {
+              "explain": "The semi-perimeter is \\(15 \\text{ cm}\\).",
+              "work": "\\(l + w = 15\\)"
+            },
+            {
+              "explain": "Choose any two numbers that add to 15, e.g., 10 and 5.",
+              "work": "\\text{A } 10 \\text{ cm by } 5 \\text{ cm rectangle.}"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

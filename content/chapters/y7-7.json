@@ -3093,6 +3093,29 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           },
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q2cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(\\frac{3}{8}\\) in decimal form.",
+          "options": [
+            "\\(0.375\\)",
+            "\\(0.38\\)",
+            "\\(0.125\\)",
+            "\\(3.8\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide 3 by 8.",
+              "work": "\\(3 \\div 8 = 0.375\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -3250,6 +3273,29 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(8.36 + 1.054\\).",
+          "options": [
+            "\\(9.414\\)",
+            "\\(9.314\\)",
+            "\\(8.414\\)",
+            "\\(9.404\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Align the decimal points and add.",
+              "work": "\\(8.360 + 1.054 = 9.414\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -3505,6 +3551,29 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q2di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(42 \\div 0.7\\).",
+          "options": [
+            "\\(60\\)",
+            "\\(6\\)",
+            "\\(600\\)",
+            "\\(0.6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply both numbers by 10 to remove the decimal.",
+              "work": "\\(420 \\div 7 = 60\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

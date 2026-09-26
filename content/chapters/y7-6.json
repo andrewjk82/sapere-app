@@ -796,6 +796,79 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q1cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(m^{14} \\div m^6\\).",
+          "options": [
+            "\\(m^8\\)",
+            "\\(m^{20}\\)",
+            "\\(m^{84}\\)",
+            "\\(m^{2.3}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Subtract the indices when dividing terms with the same base.",
+              "work": "\\(m^{14 - 6} = m^8\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q8bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{5x^4}{9y} \\times \\frac{3y^2}{20x^5}\\).",
+          "options": [
+            "\\(\\frac{y}{12x}\\)",
+            "\\(\\frac{y^2}{12x}\\)",
+            "\\(\\frac{x}{12y}\\)",
+            "\\(\\frac{15xy}{180}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the numerators and denominators and cancel common factors.",
+              "work": "\\(\\frac{15x^4y^2}{180x^5y} = \\frac{y}{12x}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q8bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{(7m^5)^2}{15m - m}\\).",
+          "options": [
+            "\\(\\frac{7m^9}{2}\\)",
+            "\\(\\frac{49m^9}{14}\\)",
+            "\\(\\frac{7m^{10}}{2}\\)",
+            "\\(\\frac{7m^2}{2}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Expand the numerator and simplify the denominator.",
+              "work": "\\(\\frac{49m^{10}}{14m}\\)"
+            },
+            {
+              "explain": "Cancel common factors.",
+              "work": "\\(\\frac{7m^9}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },

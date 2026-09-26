@@ -2413,6 +2413,29 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(24\\).",
+          "options": [
+            "\\(1, 2, 3, 4, 6, 8, 12, 24\\)",
+            "\\(2, 3, 4, 6, 8, 12\\)",
+            "\\(1, 2, 4, 6, 8, 12, 24\\)",
+            "\\(24, 48, 72, 96\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find all the numbers that divide exactly into 24.",
+              "work": "\\(1, 2, 3, 4, 6, 8, 12, 24\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -3844,6 +3867,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgs2020-y7-q7b",
+          "type": "review",
+          "difficulty": "medium",
+          "manual": true,
+          "stem": "Find the prime factorisation of \\(756\\). You are given that \\(90 = 2 \\times 3^2 \\times 5\\). Write down the Highest Common Factor and Lowest Common Multiple of \\(90\\) and \\(756\\) in index form.",
+          "answer": "",
+          "hint": "Use a factor tree for 756.",
+          "steps": [
+            {
+              "explain": "Prime factorisation of 756:",
+              "work": "\\(756 = 2^2 \\times 3^3 \\times 7\\)"
+            },
+            {
+              "explain": "HCF:",
+              "work": "\\(2 \\times 3^2\\)"
+            },
+            {
+              "explain": "LCM:",
+              "work": "\\(2^2 \\times 3^3 \\times 5 \\times 7\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q9d",
+          "type": "review",
+          "difficulty": "hard",
+          "manual": true,
+          "stem": "List all the numbers from \\(1\\) to \\(100\\) inclusive which have \\(7\\) as their smallest prime factor.",
+          "answer": "",
+          "hint": "Find multiples of 7 that are not divisible by 2, 3, or 5.",
+          "steps": [
+            {
+              "explain": "The numbers must be of the form 7 times another number, where the other number has no prime factors less than 7.",
+              "work": "\\text{Check } 7 \\times 1, 7 \\times 7, 7 \\times 11, 7 \\times 13\\)"
+            },
+            {
+              "explain": "List them.",
+              "work": "\\(7, 49, 77, 91\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -5199,12 +5272,12 @@
           "difficulty": "medium",
           "stem": "Write \\(\\dfrac{6^4}{6^5}\\) in expanded form and simplify.",
           "options": [
-            "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}=\\dfrac16\\)",
             "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}=1\\)",
             "\\(6^{-1}=-6\\)",
-            "\\(\\dfrac{6^4}{6^5}=6\\)"
+            "\\(\\dfrac{6^4}{6^5}=6\\)",
+            "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}=\\dfrac16\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Write out both powers in full, then cancel matching factors of 6 from the top and bottom.",
           "steps": [
             {
@@ -5224,12 +5297,12 @@
           "difficulty": "easy",
           "stem": "Simplify \\((5^x)^3\\).",
           "options": [
-            "\\(5^{3x}\\)",
             "\\(5^{x+3}\\)",
+            "\\(5^{3x}\\)",
             "\\(5^{x^3}\\)",
             "\\(15^x\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "When raising a power to another power, multiply the indices.",
           "steps": [
             {
@@ -5245,12 +5318,12 @@
           "difficulty": "easy",
           "stem": "Simplify \\(9^5\\times9^2\\), giving your answer with positive indices.",
           "options": [
-            "\\(9^7\\)",
             "\\(9^{10}\\)",
             "\\(81^7\\)",
+            "\\(9^7\\)",
             "\\(9^3\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "When multiplying powers with the same base, add the indices.",
           "steps": [
             {
@@ -5291,12 +5364,12 @@
           "difficulty": "easy",
           "stem": "Simplify \\((8^{10})^3\\).",
           "options": [
-            "\\(8^{30}\\)",
             "\\(8^{13}\\)",
             "\\(8^{1000}\\)",
-            "\\(24^{10}\\)"
+            "\\(24^{10}\\)",
+            "\\(8^{30}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply the indices when raising a power to another power.",
           "steps": [
             {
@@ -5312,12 +5385,12 @@
           "difficulty": "medium",
           "stem": "Simplify \\((4^0\\times3^4\\div3^3)^2\\).",
           "options": [
-            "\\(9\\)",
             "\\(3\\)",
+            "\\(9\\)",
             "\\(81\\)",
             "\\(6\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Anything to the power of 0 is 1. Simplify inside the brackets first, then apply the outer power.",
           "steps": [
             {
@@ -7677,12 +7750,12 @@
           "difficulty": "easy",
           "stem": "Evaluate \\(\\sqrt{49}\\).",
           "options": [
-            "\\(7\\)",
             "\\(\\pm7\\)",
             "\\(24.5\\)",
-            "\\(14\\)"
+            "\\(14\\)",
+            "\\(7\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "The square root symbol \\(\\sqrt{\\ }\\) always means the positive (principal) square root only.",
           "steps": [
             {
@@ -7698,12 +7771,12 @@
           "difficulty": "medium",
           "stem": "Evaluate \\(\\sqrt[3]{-216}\\).",
           "options": [
-            "\\(-6\\)",
             "\\(6\\)",
+            "\\(-6\\)",
             "\\(-72\\)",
             "\\(-36\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Unlike square roots, cube roots of negative numbers are real and negative.",
           "steps": [
             {
@@ -7712,6 +7785,33 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "sgs2020-y7-q8c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The area of a square is \\(2.56\\) square metres. Find its perimeter.",
+          "options": [
+            "\\(6.4 \\text{ m}\\)",
+            "\\(1.6 \\text{ m}\\)",
+            "\\(10.24 \\text{ m}\\)",
+            "\\(3.2 \\text{ m}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find the side length by taking the square root of the area.",
+              "work": "\\(\\sqrt{2.56} = 1.6 \\text{ m}\\)"
+            },
+            {
+              "explain": "Multiply by 4 to find the perimeter.",
+              "work": "\\(1.6 \\times 4 = 6.4 \\text{ m}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -8582,12 +8682,12 @@
           "difficulty": "hard",
           "stem": "Using \\(432=2^4\\times3^3\\) and \\(500=2^2\\times5^3\\), express the HCF and LCM of 432 and 500 in index form.",
           "options": [
-            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^4\\times3^3\\times5^3\\)",
             "\\(\\text{HCF}=2^2\\times3^3\\times5^3,\\ \\ \\text{LCM}=2^4\\times3^3\\times5^3\\)",
             "\\(\\text{HCF}=2^4,\\ \\ \\text{LCM}=2^2\\times3^3\\times5^3\\)",
-            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^6\\times3^3\\times5^3\\)"
+            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^6\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^4\\times3^3\\times5^3\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "The HCF only includes prime factors common to BOTH numbers, using the lower power. The LCM includes every prime factor, using the higher power.",
           "steps": [
             {
@@ -9462,12 +9562,12 @@
           "difficulty": "medium",
           "stem": "Find the smallest number that is greater than 1000 and is divisible by 6.",
           "options": [
-            "\\(1002\\)",
             "\\(1001\\)",
             "\\(1003\\)",
+            "\\(1002\\)",
             "\\(1006\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Divide 1000 by 6 to see how far past the last multiple of 6 it is, then find the next multiple.",
           "steps": [
             {

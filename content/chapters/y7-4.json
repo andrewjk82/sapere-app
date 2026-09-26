@@ -3875,6 +3875,64 @@
             "topic": "Addition and subtraction of fractions"
           },
           "xp": 1
+        },
+        {
+          "id": "sgs2020-y7-q2diii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\frac{3}{12} - \\frac{3}{5}\\).",
+          "options": [
+            "\\(-\\frac{7}{20}\\)",
+            "\\(\\frac{7}{20}\\)",
+            "\\(-\\frac{21}{60}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find a common denominator.",
+              "work": "\\(\\frac{15}{60} - \\frac{36}{60}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(-\\frac{21}{60}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(-\\frac{7}{20}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
+        },
+        {
+          "id": "sgs2020-y7-q4biii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{3d}{5} + \\frac{d}{7}\\).",
+          "options": [
+            "\\(\\frac{26d}{35}\\)",
+            "\\(\\frac{4d}{12}\\)",
+            "\\(\\frac{4d}{35}\\)",
+            "\\(\\frac{26d}{12}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find a common denominator.",
+              "work": "\\(\\frac{21d}{35} + \\frac{5d}{35}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\frac{26d}{35}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
@@ -6823,6 +6881,33 @@
             "topic": "Multiplication and division of fractions"
           },
           "xp": 1
+        },
+        {
+          "id": "sgs2020-y7-q2dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(1 \\frac{1}{7} \\div \\frac{2}{3}\\).",
+          "options": [
+            "\\(1 \\frac{5}{7}\\)",
+            "\\(\\frac{16}{21}\\)",
+            "\\(2 \\frac{1}{7}\\)",
+            "\\(1 \\frac{2}{21}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Convert the mixed numeral to an improper fraction.",
+              "work": "\\(\\frac{8}{7} \\div \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Multiply by the reciprocal.",
+              "work": "\\(\\frac{8}{7} \\times \\frac{3}{2} = \\frac{24}{14} = \\frac{12}{7} = 1 \\frac{5}{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7"
+          }
         }
       ]
     },
