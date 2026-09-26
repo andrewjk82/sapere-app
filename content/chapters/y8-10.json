@@ -3993,8 +3993,8 @@
         {
           "id": "wghs2023-y8-s2q13",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "The time in Sydney is 10 hours ahead of GMT (London). What is the time in Sydney when it is 10 am in London?",
+          "difficulty": "easy",
           "options": [
             "\\(8{:}00 \\text{ pm}\\)",
             "\\(12{:}00 \\text{ pm (noon)}\\)",
@@ -4008,11 +4008,13 @@
               "work": "\\(10{:}00 \\text{ am} + 10 \\text{ h} = 8{:}00 \\text{ pm Sydney time}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
