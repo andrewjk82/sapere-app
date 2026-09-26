@@ -2214,8 +2214,8 @@
         {
           "id": "wghs2023-y8-q1b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Solve \\(\\dfrac{x}{2} - 6 = -2\\).",
+          "difficulty": "easy",
           "options": [
             "\\(x = 8\\)",
             "\\(x = 4\\)",
@@ -2233,11 +2233,13 @@
               "work": "\\(x = 4 \\times 2 = 8\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
