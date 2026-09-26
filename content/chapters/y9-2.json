@@ -2419,8 +2419,8 @@
         {
           "id": "killara2023-y9-t4a-q17c",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Simplify \\\\(\\frac{10\\sqrt{54}}{\\sqrt{6}}\\\\).",
+          "difficulty": "medium",
           "options": [
             "30",
             "10",
@@ -2438,6 +2438,7 @@
               "work": "\\\\(10 \\times 3 = 30\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
