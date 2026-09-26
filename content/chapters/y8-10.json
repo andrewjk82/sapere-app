@@ -1766,8 +1766,8 @@
         {
           "id": "wghs2023-y8-s2q4",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Divide \\$48 in the ratio \\(5 : 3\\).",
+          "difficulty": "medium",
           "options": [
             "\\(\\$30 \\text{ and } \\$18\\)",
             "\\(\\$25 \\text{ and } \\$23\\)",
@@ -1785,11 +1785,13 @@
               "work": "\\(5 \\times 6 = \\$30 \\text{ and } 3 \\times 6 = \\$18\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
