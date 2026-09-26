@@ -3221,8 +3221,8 @@
         {
           "id": "killara2023-y9-t4a-q14b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Factorise \\\\(a^2 - 9\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\((a - 3)(a + 3)\\\\)",
             "\\\\((a - 9)(a + 1)\\\\)",
@@ -3240,6 +3240,7 @@
               "work": "\\\\((a - 3)(a + 3)\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
