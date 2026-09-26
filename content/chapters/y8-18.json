@@ -840,8 +840,11 @@
         {
           "id": "wghs2023-y8-s3q3b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "On a Cartesian plane, the points \\(E(-4, 0)\\) and \\(F(0, 3)\\) are plotted. On which axis is \\(F(0, 3)\\) located?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:6ba08cced6"
+          },
           "options": [
             "The \\(y\\)-axis",
             "The \\(x\\)-axis",
@@ -855,14 +858,13 @@
               "work": "\\(F(0, 3)\\) has \\(x = 0\\), so it lies on the \\(y\\)-axis."
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
-          },
-          "figure": {
-            "svg": "fig:6ba08cced6"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
