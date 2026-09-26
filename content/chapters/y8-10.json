@@ -1252,8 +1252,8 @@
         {
           "id": "wghs2023-y8-s2q10",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "In 15 hours a train travels 600 km. How far will it travel in 11 hours at the same rate?",
+          "difficulty": "medium",
           "options": [
             "\\(440 \\text{ km}\\)",
             "\\(420 \\text{ km}\\)",
@@ -1271,11 +1271,13 @@
               "work": "\\(40 \\times 11 = 440 \\text{ km}\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
