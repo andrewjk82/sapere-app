@@ -1231,7 +1231,7 @@
         {
           "id": "wghs2023-y8-s2q8b",
           "type": "mc",
-          "stem": "Write \\$107.50 for 50 litres as a rate in simplest form.",
+          "stem": "Write $107.50 for 50 litres as a rate in simplest form.",
           "difficulty": "easy",
           "options": [
             "\\(\\$2.15 \\text{/L}\\)",
@@ -1774,8 +1774,9 @@
         {
           "id": "wghs2023-y8-s2q4",
           "type": "mc",
-"difficulty": "medium",
-          "stem": "Divide $48 in the ratio \\(5 : 3\\).",          "options": [
+          "difficulty": "medium",
+          "stem": "Divide $48 in the ratio \\(5 : 3\\).",
+          "options": [
             "$30 and $18",
             "$25 and $23",
             "$24 and $24",
