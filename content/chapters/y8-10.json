@@ -3951,8 +3951,8 @@
         {
           "id": "wghs2023-y8-s2q9",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A tap leaks at a rate of 1 L every 4 hours. How many minutes will it take for the tap to leak a total of 200 mL?",
+          "difficulty": "medium",
           "options": [
             "\\(48 \\text{ min}\\)",
             "\\(80 \\text{ min}\\)",
@@ -3970,11 +3970,13 @@
               "work": "\\(200 \\div \\frac{1000}{240} = 200 \\times \\frac{240}{1000} = 48 \\text{ min}\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
