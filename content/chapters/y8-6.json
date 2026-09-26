@@ -2315,8 +2315,8 @@
         {
           "id": "wghs2023-y8-q2a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Solve \\(m^2 = 81\\).",
+          "difficulty": "easy",
           "options": [
             "\\(m = \\pm 9\\)",
             "\\(m = 9\\)",
@@ -2330,11 +2330,13 @@
               "work": "\\(m = \\pm\\sqrt{81} = \\pm 9\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
