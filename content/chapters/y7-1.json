@@ -684,8 +684,8 @@
         {
           "id": "y7-1a-q21",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A thermometer scale on a pressure chamber has major markers at \\( -20 \\text{°C} \\) and \\( 30 \\text{°C} \\). The space between these markers is divided into exactly \\( 10 \\) equal segments. Find the temperature coordinate at the \\( 2 \\)-th marker from the left.",
+          "difficulty": "hard",
           "options": [
             "\\(-15\\)",
             "\\(-10\\)",
@@ -714,10 +714,13 @@
               "note": "Find the size of one segment: the gap between the markers ÷ the number of segments."
             },
             {
-              "text": "major markers at",
+              "text": "major markers at \\( -20 \\text{°C} \\) and \\( 30 \\text{°C} \\)",
               "note": "The gap is the higher value minus the lower one — subtracting a negative adds."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q22",
