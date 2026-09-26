@@ -30050,8 +30050,8 @@
         {
           "id": "killara2023-y9-t4a-q1",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\(\\frac{7m}{5} - \\frac{3m}{5}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(\\frac{4m}{5}\\\\)",
             "\\\\(\\frac{10m}{5}\\\\)",
@@ -30065,6 +30065,7 @@
               "work": "\\\\(\\frac{7m - 3m}{5} = \\\\frac{4m}{5}\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
