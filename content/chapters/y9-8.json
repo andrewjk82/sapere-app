@@ -6277,8 +6277,8 @@
         {
           "id": "killara2023-y9-t4a-q23",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Write \\\\(a^2 \\times \\sqrt[5]{a}\\\\) in index form.",
+          "difficulty": "medium",
           "options": [
             "\\\\(a^{\\frac{11}{5}}\\\\)",
             "\\\\(a^{\\frac{10}{5}}\\\\)",
@@ -6296,6 +6296,7 @@
               "work": "\\\\(a^{2 + \\frac{1}{5}} = a^{\\frac{11}{5}}\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
