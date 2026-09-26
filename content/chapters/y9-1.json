@@ -30077,8 +30077,8 @@
         {
           "id": "killara2023-y9-t4a-q3",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Expand and simplify \\\\(2(x - 3y) + 2y\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(2x - 4y\\\\)",
             "\\\\(2x - 8y\\\\)",
@@ -30096,6 +30096,7 @@
               "work": "\\\\(2x - 4y\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
