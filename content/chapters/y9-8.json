@@ -6252,8 +6252,8 @@
         {
           "id": "killara2023-y9-t4a-q9",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Express \\\\(x^{\\frac{2}{3}}\\\\) in surd form.",
+          "difficulty": "easy",
           "options": [
             "\\\\(\\sqrt[3]{x^2}\\\\)",
             "\\\\(\\sqrt{x^3}\\\\)",
@@ -6267,6 +6267,7 @@
               "work": "\\\\(x^{\\frac{2}{3}} = \\\\sqrt[3]{x^2}\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
