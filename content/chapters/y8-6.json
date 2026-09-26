@@ -2528,8 +2528,8 @@
         {
           "id": "wghs2023-y8-q3a",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "If a number has 3 added to it and then is doubled, the result is equal to 5. Find the number.",
+          "difficulty": "medium",
           "options": [
             "\\(-0.5\\)",
             "\\(1\\)",
@@ -2555,11 +2555,13 @@
               "work": "\\(n = -0.5\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
