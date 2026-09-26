@@ -24352,8 +24352,8 @@
         {
           "id": "killara2023-y9-t4a-q13",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Expand and simplify \\\\((5p + 1)(p - 2)\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(5p^2 - 9p - 2\\\\)",
             "\\\\(5p^2 - 10p - 2\\\\)",
@@ -24371,6 +24371,7 @@
               "work": "\\\\(5p^2 - 10p + p - 2 = 5p^2 - 9p - 2\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
