@@ -1732,8 +1732,8 @@
         {
           "id": "killara2023-y9-t4a-q27",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An observer on top of a building 66m high, finds the angle of elevation to the top of a taller building to be \\\\(34^\\circ\\\\). The angle of depression to the foot of the same building is \\\\(51^\\circ\\\\). Calculate the height of the taller building, given the buildings are on the same ground level, to the nearest metre.",
+          "difficulty": "hard",
           "options": [
             "102 m",
             "90 m",
@@ -1764,6 +1764,7 @@
               }
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
