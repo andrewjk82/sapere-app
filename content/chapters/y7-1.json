@@ -812,8 +812,8 @@
         {
           "id": "y7-1a-q24",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "In a chemistry measurement system, point \\( C_1 \\) is at coordinate \\( -2.6 \\) and point \\( C_2 \\) is at coordinate \\( 3.1 \\). Find the exact coordinate of the midpoint of segment \\( C_1 C_2 \\).",
+          "difficulty": "hard",
           "options": [
             "\\(-0.25\\)",
             "\\(0.25\\)",
@@ -840,12 +840,11 @@
             {
               "text": "midpoint",
               "note": "The midpoint is halfway: add the two coordinates and divide by 2."
-            },
-            {
-              "text": "\\( -2.6 \\)",
-              "note": "Watch the sign — adding a negative number moves you left."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q25",
