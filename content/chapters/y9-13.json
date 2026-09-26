@@ -649,8 +649,11 @@
         {
           "id": "killara2023-y9-t4a-q12",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write the value of \\\\(\\cos \\theta\\\\).",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:bb9d6b5d11"
+          },
           "options": [
             "\\\\(\\frac{4}{5}\\\\)",
             "\\\\(\\frac{3}{5}\\\\)",
@@ -668,14 +671,12 @@
               "work": "\\\\(\\cos \\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{8}{10} = \\frac{4}{5}\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:bb9d6b5d11"
           }
         }
       ]
