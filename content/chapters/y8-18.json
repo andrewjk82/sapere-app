@@ -753,8 +753,8 @@
         {
           "id": "wghs2023-y8-s3q3ci",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "The point \\(E(-4, 0)\\) is plotted on a Cartesian plane. On which axis is \\(E\\) located?",
+          "difficulty": "easy",
           "options": [
             "The \\(x\\)-axis",
             "The \\(y\\)-axis",
@@ -768,11 +768,13 @@
               "work": "\\(E(-4, 0) \\text{ lies on the } x\\text{-axis}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
