@@ -3829,12 +3829,12 @@
           "xp": 4,
           "keyPoints": [
             {
-              "text": "sum",
-              "note": "Total/combined means add all the amounts together."
-            },
-            {
               "text": "positive integers",
               "note": "The number greater than 0"
+            },
+            {
+              "text": "sum of their digits",
+              "note": "Such as \\) 122 => 1+2+2 =5 \\)"
             }
           ],
           "meta": {
