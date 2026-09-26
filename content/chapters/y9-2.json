@@ -2298,8 +2298,8 @@
         {
           "id": "killara2023-y9-t4a-q19b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Express the fraction in simplest form with a rational denominator: \\\\(\\frac{1 - \\sqrt{5}}{\\sqrt{5}}\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(\\frac{\\sqrt{5} - 5}{5}\\\\)",
             "\\\\(\\frac{\\sqrt{5} + 5}{5}\\\\)",
@@ -2317,6 +2317,7 @@
               "work": "\\\\(\\frac{\\sqrt{5} - 5}{5}\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
