@@ -2447,8 +2447,8 @@
         {
           "id": "wghs2023-y8-q1f",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Solve \\(2y + 18 = 11 - 5y\\).",
+          "difficulty": "medium",
           "options": [
             "\\(y = -1\\)",
             "\\(y = 1\\)",
@@ -2470,11 +2470,13 @@
               "work": "\\(y = -1\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
