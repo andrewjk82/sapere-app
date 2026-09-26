@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-150 -100 300 200" width="300" height="200" style="background-color: white;">
+  <!-- Grid and Axes -->
+  <line x1="-150" y1="0" x2="150" y2="0" stroke="#ccc" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="#ccc" stroke-width="1"/>
+  <text x="135" y="15" font-family="sans-serif" font-size="12" fill="#555">x</text>
+  <text x="5" y="-85" font-family="sans-serif" font-size="12" fill="#555">y</text>
+
+  <!-- Right side (Original) -->
+  <path d="M 0,-40 Q 50,80 100,-40" fill="none" stroke="#2563eb" stroke-width="2" />
+  <circle cx="50" cy="20" r="4" fill="#2563eb" />
+  <text x="60" y="30" font-family="sans-serif" font-size="12" fill="#2563eb">(1, -1)</text>
+  <circle cx="0" cy="-40" r="4" fill="#2563eb" />
+  <text x="10" y="-45" font-family="sans-serif" font-size="12" fill="#2563eb">(0, 2)</text>
+
+  <!-- Left side (Reflected) -->
+  <path d="M 0,-40 Q -50,80 -100,-40" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4" />
+  <circle cx="-50" cy="20" r="4" fill="#dc2626" />
+  <text x="-105" y="30" font-family="sans-serif" font-size="12" fill="#dc2626">(-1, -1)</text>
+</svg>

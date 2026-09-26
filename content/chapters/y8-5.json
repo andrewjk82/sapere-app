@@ -917,22 +917,26 @@
           "id": "hghs2026-a1c",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "The diagram shows a single angle marked at point I, between two rays IJ and IK. Is it correct to say this diagram shows a revolution?",
+          "stem": "The shaded angle at point I lies between rays IJ and IK. Is it correct to say this diagram shows a revolution?",
           "figure": {
-            "svg": "fig:ab87ba0eb6"
+            "svg": "fig:d6cd21117b"
           },
           "options": [
-            "False — a revolution is a complete 360° turn, not a single marked angle",
-            "True — any angle at a point is a revolution",
-            "True — the rays IJ and IK make a full turn",
-            "False — there is no such thing as a revolution"
+            "False — the shaded angle is a reflex angle (between 180° and 360°), not a complete 360° turn",
+            "True — any shaded angle at a point is a revolution",
+            "True — the shaded region goes all the way around point I",
+            "False — a revolution must be less than 180°"
           ],
           "answer": 0,
-          "hint": "A revolution is defined as one complete turn, measuring exactly 360°.",
+          "hint": "A revolution is exactly one complete turn, 360°. Check whether the shaded region really goes all the way around I.",
           "steps": [
             {
-              "explain": "A revolution must measure exactly 360° (a complete turn around a point). The diagram only shows one angle between two rays, not a full turn.",
-              "work": "\\(\\text{False}\\)"
+              "explain": "The shaded region is the larger angle between the rays IJ and IK. It is bigger than a straight angle but does not close a full circle — the gap between IJ and IK is unshaded.",
+              "work": "\\(180^\\circ<\\angle JIK_{\\text{reflex}}<360^\\circ\\)"
+            },
+            {
+              "explain": "An angle between 180° and 360° is a reflex angle. A revolution must measure exactly 360°, so the statement is false.",
+              "work": "\\(\\text{Reflex angle}\\ne\\text{revolution}\\ \\Rightarrow\\ \\text{False}\\)"
             }
           ],
           "xp": 1
@@ -941,9 +945,9 @@
           "id": "hghs2026-a2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Use the letters given in the diagram to name the marked angle.",
+          "stem": "Use the letters given in the diagram to name the shaded angle.",
           "figure": {
-            "svg": "fig:91d46c6b9d"
+            "svg": "fig:92ce216c14"
           },
           "options": [
             "\\(\\angle JKL\\)",
@@ -1077,7 +1081,7 @@
           "difficulty": "easy",
           "stem": "Two parallel lines AB and CD are cut by a transversal EF, meeting them at G and H respectively. What is the relationship between \\(\\angle BGH\\) and \\(\\angle DHF\\), which lie on the same side of the transversal in matching positions?",
           "figure": {
-            "svg": "fig:29c7c1c999"
+            "svg": "fig:fbddd93497"
           },
           "options": [
             "Corresponding angles (equal)",
@@ -1101,7 +1105,7 @@
           "difficulty": "medium",
           "stem": "For the same parallel lines AB, CD and transversal EF (meeting at G and H), why does \\(\\angle AGH+\\angle CHG=180°\\)?",
           "figure": {
-            "svg": "fig:2eb1415bca"
+            "svg": "fig:41f295fd4f"
           },
           "options": [
             "Co-interior angles on parallel lines sum to 180°",

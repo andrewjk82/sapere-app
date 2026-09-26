@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -120 240 240" width="240" height="240" style="background-color: white;">
+  <line x1="-100" y1="0" x2="100" y2="0" stroke="#ccc" stroke-width="1"/>
+  <line x1="0" y1="-100" x2="0" y2="100" stroke="#ccc" stroke-width="1"/>
+  <text x="90" y="15" font-family="sans-serif" font-size="12" fill="#555">x</text>
+  <text x="5" y="-90" font-family="sans-serif" font-size="12" fill="#555">y</text>
+  <line x1="0" y1="0" x2="43.3" y2="-75" stroke="#2563eb" stroke-width="2"/>
+  <path d="M 0,-40 A 40 40 0 0 1 23,-40" fill="none" stroke="#2563eb" stroke-width="1"/>
+  <text x="10" y="-50" font-family="sans-serif" font-size="12" fill="#2563eb">30°</text>
+</svg>
