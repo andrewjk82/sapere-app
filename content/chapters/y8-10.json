@@ -1799,8 +1799,8 @@
         {
           "id": "wghs2023-y8-s2q6",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A paint colour 'Hot Pink' is made by mixing red and white paint in the ratio \\(5 : 3\\). In a 4-litre can of 'Hot Pink', how much red paint is used?",
+          "difficulty": "medium",
           "options": [
             "\\(2.5 \\text{ L}\\)",
             "\\(2 \\text{ L}\\)",
@@ -1818,11 +1818,13 @@
               "work": "\\(5 \\times 0.5 = 2.5 \\text{ L}\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
