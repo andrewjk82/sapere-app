@@ -2342,8 +2342,8 @@
         {
           "id": "wghs2023-y8-q2b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Solve \\(x^2 = 66\\). Write your answer to two decimal places.",
+          "difficulty": "easy",
           "options": [
             "\\(x \\approx \\pm 8.12\\)",
             "\\(x \\approx \\pm 8.12\\)",
@@ -2357,11 +2357,13 @@
               "work": "\\(x = \\pm\\sqrt{66} \\approx \\pm 8.12\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
