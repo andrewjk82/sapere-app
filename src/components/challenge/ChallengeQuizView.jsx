@@ -969,9 +969,9 @@ const ChallengeQuizView = ({
           onClick={() => setKpBubble(null)}
           style={{ position: 'fixed', inset: 0, zIndex: 2090 }}
         >
-          <div style={{ position: 'fixed', top: kpBubble.top, left: kpBubble.left, width: 280, background: '#1e1b4b', color: '#fff', borderRadius: 14, padding: '10px 14px', fontSize: '0.88rem', lineHeight: 1.5, boxShadow: '0 12px 28px rgba(15,23,42,0.25)' }}>
-            <Lightbulb size={14} style={{ verticalAlign: '-2px', marginRight: 6, color: '#fde68a' }} />
-            <MathView content={kpBubble.note} style={{ display: 'inline', color: '#fff' }} />
+          <div style={{ position: 'fixed', top: kpBubble.top, left: kpBubble.left, width: 280, background: '#1e1b4b', color: '#fff', borderRadius: 14, padding: '10px 14px', fontSize: '0.88rem', lineHeight: 1.5, boxShadow: '0 12px 28px rgba(15,23,42,0.25)', display: 'flex', gap: 8, alignItems: 'flex-start' }}>
+            <Lightbulb size={15} style={{ flexShrink: 0, marginTop: 3, color: '#fde68a' }} />
+            <MathView content={kpBubble.note} style={{ color: '#fff', flex: 1, minWidth: 0 }} />
           </div>
         </div>
       )}

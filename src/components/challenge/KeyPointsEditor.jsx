@@ -156,6 +156,24 @@ const KeyPointsEditor = ({ question, chapterId, draft, setDraft, onSaved }) => {
                           rows={2}
                           style={{ width: '100%', boxSizing: 'border-box', borderRadius: '10px', border: '1px solid #e2e8f0', padding: '8px 10px', fontSize: '0.88rem', fontFamily: 'inherit', resize: 'vertical' }}
                         />
+                        {/\\[()]/.test(kp.note) && (() => {
+                          // Live preview for tips with maths, plus a nudge when \( and \) don't pair up.
+                          const opens = (kp.note.match(/\\\(/g) || []).length;
+                          const closes = (kp.note.match(/\\\)/g) || []).length;
+                          const bad = opens !== closes || kp.note.indexOf('\\)') < kp.note.indexOf('\\(') || (closes > 0 && opens === 0);
+                          return (
+                            <div style={{ fontSize: '0.8rem', color: '#475569' }}>
+                              {bad && (
+                                <div style={{ color: '#b45309', fontWeight: 700, marginBottom: 4 }}>
+                                  Maths must start with \( and end with \)
+                                </div>
+                              )}
+                              <div style={{ background: '#1e1b4b', color: '#fff', borderRadius: 10, padding: '6px 10px' }}>
+                                <MathView content={kp.note} style={{ color: '#fff' }} />
+                              </div>
+                            </div>
+                          );
+                        })()}
                       </div>
                     );
                   })}
