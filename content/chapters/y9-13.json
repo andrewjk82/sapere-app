@@ -925,8 +925,12 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Use the inverse sine function to find the angle.",
-              "work": "\\\\(\\theta = \\sin^{-1}(\\frac{1}{2}) = 30^\\circ\\\\)"
+              "explain": "A triangle with \\(\\sin \\theta = \\dfrac{1}{2}\\) has opposite side = 1 and hypotenuse = 2.",
+              "work": "\\(\\sin \\theta = \\dfrac{\\text{opp}}{\\text{hyp}} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Use the inverse sine function to find \\(\\theta\\).",
+              "work": "\\(\\theta = \\sin^{-1}\\!\\left(\\dfrac{1}{2}\\right) = 30^\\circ\\)"
             }
           ],
           "meta": {
@@ -934,6 +938,9 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:d3e03ccb89"
           }
         }
       ]
