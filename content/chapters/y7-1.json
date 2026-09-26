@@ -3699,8 +3699,8 @@
         {
           "id": "y7-1a-q100",
           "type": "mc",
+          "stem": "During a geological depth analysis, Wyatt registers a sensor marker at depth \\( A = -39 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 9 \\) meters, find the coordinate of the endpoint \\( B \\) of the segment.",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Wyatt registers a sensor marker at depth \\( A = -39 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 9 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
           "options": [
             "\\(-87\\)",
             "\\(-30\\)",
@@ -3732,7 +3732,10 @@
               "text": "\\( A = -39 \\)",
               "note": "A is negative — find how far A is from M first."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "sgs2020-y7-q1bi",
