@@ -1115,8 +1115,8 @@
         {
           "id": "y7-1a-q32",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An experimental robotics device made by Quantum Research starts at position \\( 0 \\) on a test track coordinate line. It moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left. Determine its final coordinate.",
+          "difficulty": "hard",
           "options": [
             "\\(-26\\)",
             "\\(-6\\)",
@@ -1141,14 +1141,17 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "units to the left",
-              "note": "Left is negative, right is positive — add the moves in order."
-            },
-            {
               "text": "starts at position",
               "note": "Begin from the starting position, not from 0 (unless it is 0)."
+            },
+            {
+              "text": "moves \\( 12 \\) units to the left, then \\( 20 \\) units to the right, and finally \\( 14 \\) units to the left",
+              "note": "Left is negative, right is positive — add the moves in order."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1a-q33",
