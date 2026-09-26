@@ -1689,8 +1689,8 @@
         {
           "id": "killara2023-y9-t4a-q21",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "The distance of a ski slope is 415m with a vertical drop of 115m. Find the angle of depression from the top of the slope to the nearest degree.",
+          "difficulty": "medium",
           "options": [
             "16°",
             "15°",
@@ -1701,7 +1701,6 @@
           "steps": [
             {
               "explain": "Draw the situation. The skier starts at point A (top of slope), descends to point B (bottom). The slope AB = 415 m is the **hypotenuse**. The vertical drop BC = 115 m is the side **opposite** to angle θ. The angle of depression θ is measured from the **horizontal** at A downward to the slope.",
-              "work": "",
               "figure": {
                 "svg": "fig:1747f4f474"
               }
@@ -1721,6 +1720,7 @@
               }
             }
           ],
+          "timeLimit": 90,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
