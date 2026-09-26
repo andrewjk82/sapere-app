@@ -2267,8 +2267,8 @@
         {
           "id": "killara2023-y9-t4a-q19a",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Express the fraction in simplest form with a rational denominator: \\\\(\\frac{\\sqrt{8}}{\\sqrt{6}}\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(\\frac{2\\sqrt{3}}{3}\\\\)",
             "\\\\(\\frac{\\sqrt{12}}{3}\\\\)",
@@ -2286,6 +2286,7 @@
               "work": "\\\\(\\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
