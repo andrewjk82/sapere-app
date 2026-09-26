@@ -30108,8 +30108,8 @@
         {
           "id": "killara2023-y9-t4a-q5",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\(\\frac{3n}{13} \\\\times \\\\frac{7}{m}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(\\frac{21n}{13m}\\\\)",
             "\\\\(\\frac{3n+7}{13m}\\\\)",
@@ -30123,6 +30123,7 @@
               "work": "\\\\(\\frac{3n \\\\times 7}{13 \\\\times m} = \\\\frac{21n}{13m}\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
