@@ -14299,7 +14299,7 @@
           "id": "y7-1d-q5a1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c} & 8 & 5 \\ - & 3 & A \\ hline & B & 8 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array} \\)",
           "options": [
             "\\( 6 \\)",
             "\\( 7 \\)",
@@ -14326,7 +14326,7 @@
           "id": "y7-1d-q5a2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c} & 8 & 5 \\ - & 3 & A \\ hline & B & 8 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c} & 8 & 5 \\\\ - & 3 & A \\\\ \\hline & B & 8 \\end{array} \\)",
           "options": [
             "\\( 3 \\)",
             "\\( 4 \\)",
@@ -14353,7 +14353,7 @@
           "id": "y7-1d-q5b1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c} & 8 & A \\ - & B & 6 \\ hline & 3 & 8 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array} \\)",
           "options": [
             "\\( 3 \\)",
             "\\( 4 \\)",
@@ -14380,7 +14380,7 @@
           "id": "y7-1d-q5b2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c} & 8 & A \\ - & B & 6 \\ hline & 3 & 8 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c} & 8 & A \\\\ - & B & 6 \\\\ \\hline & 3 & 8 \\end{array} \\)",
           "options": [
             "\\( 3 \\)",
             "\\( 4 \\)",
@@ -14407,7 +14407,7 @@
           "id": "y7-1d-q5c1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 3 & 4 & A & B \\ - & C & D & 8 & 6 \\ hline & & & 4 & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array} \\)",
           "options": [
             "\\( 2 \\)",
             "\\( 3 \\)",
@@ -14438,7 +14438,7 @@
           "id": "y7-1d-q5c2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 3 & 4 & A & B \\ - & C & D & 8 & 6 \\ hline & & & 4 & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array} \\)",
           "options": [
             "\\( 4 \\)",
             "\\( 5 \\)",
@@ -14465,7 +14465,7 @@
           "id": "y7-1d-q5c3",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 3 & 4 & A & B \\ - & C & D & 8 & 6 \\ hline & & & 4 & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array} \\)",
           "options": [
             "\\( 2 \\)",
             "\\( 3 \\)",
@@ -14496,7 +14496,7 @@
           "id": "y7-1d-q5c4",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  D  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 3 & 4 & A & B \\ - & C & D & 8 & 6 \\ hline & & & 4 & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  D  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 3 & 4 & A & B \\\\ - & C & D & 8 & 6 \\\\ \\hline & & & 4 & 9 \\end{array} \\)",
           "options": [
             "\\( 2 \\)",
             "\\( 3 \\)",
@@ -14523,7 +14523,7 @@
           "id": "y7-1d-q5d1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 1 & A & 6 & B \\ - & & 5 & C & 8 \\ hline & & 6 & 2 & 7 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array} \\)",
           "options": [
             "\\( 0 \\)",
             "\\( 1 \\)",
@@ -14558,7 +14558,7 @@
           "id": "y7-1d-q5d2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 1 & A & 6 & B \\ - & & 5 & C & 8 \\ hline & & 6 & 2 & 7 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array} \\)",
           "options": [
             "\\( 4 \\)",
             "\\( 5 \\)",
@@ -14585,7 +14585,7 @@
           "id": "y7-1d-q5d3",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 1 & A & 6 & B \\ - & & 5 & C & 8 \\ hline & & 6 & 2 & 7 end{array} \\)",
+          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 1 & A & 6 & B \\\\ - & & 5 & C & 8 \\\\ \\hline & & 6 & 2 & 7 \\end{array} \\)",
           "options": [
             "\\( 2 \\)",
             "\\( 3 \\)",
@@ -14612,7 +14612,7 @@
           "id": "y7-1d-q5e1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & A & 8 & 5 & B \\ - & & C & 3 & 2 \\ hline & 1 & 9 & 2 & 5 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array} \\)",
           "options": [
             "\\( 1 \\)",
             "\\( 2 \\)",
@@ -14647,7 +14647,7 @@
           "id": "y7-1d-q5e2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & A & 8 & 5 & B \\ - & & C & 3 & 2 \\ hline & 1 & 9 & 2 & 5 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array} \\)",
           "options": [
             "\\( 6 \\)",
             "\\( 7 \\)",
@@ -14674,7 +14674,7 @@
           "id": "y7-1d-q5e3",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & A & 8 & 5 & B \\ - & & C & 3 & 2 \\ hline & 1 & 9 & 2 & 5 end{array} \\)",
+          "stem": "Find the missing digit \\(  C  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & A & 8 & 5 & B \\\\ - & & C & 3 & 2 \\\\ \\hline & 1 & 9 & 2 & 5 \\end{array} \\)",
           "options": [
             "\\( 8 \\)",
             "\\( 9 \\)",
@@ -14701,7 +14701,7 @@
           "id": "y7-1d-q5f1",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 6 & 4 & 8 & A \\ - & 3 & 2 & 5 & 7 \\ hline & 3 & 2 & B & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  A  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array} \\)",
           "options": [
             "\\( 5 \\)",
             "\\( 6 \\)",
@@ -14728,7 +14728,7 @@
           "id": "y7-1d-q5f2",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \begin{array}{r c c c c} & 6 & 4 & 8 & A \\ - & 3 & 2 & 5 & 7 \\ hline & 3 & 2 & B & 9 end{array} \\)",
+          "stem": "Find the missing digit \\(  B  \\) to make the vertical subtraction correct:\n\n\\( \\begin{array}{r c c c c} & 6 & 4 & 8 & A \\\\ - & 3 & 2 & 5 & 7 \\\\ \\hline & 3 & 2 & B & 9 \\end{array} \\)",
           "options": [
             "\\( 1 \\)",
             "\\( 2 \\)",

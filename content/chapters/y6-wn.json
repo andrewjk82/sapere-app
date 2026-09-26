@@ -1028,7 +1028,7 @@
           "steps": [
             {
               "explain": "Show the regrouping (borrowing) of \\(8,000\\).",
-              "work": "\\begin{array}{rccc} 7 & 9 & 9 & 10 \\\\ \\cancel{8} & \\cancel{0} & \\cancel{0} & \\cancel{0} \\\\ - \\quad 2 & 4 & 7 & 8 \\\\ hline \\end{array}"
+              "work": "\\begin{array}{rccc} 7 & 9 & 9 & 10 \\\\ \\cancel{8} & \\cancel{0} & \\cancel{0} & \\cancel{0} \\\\ - \\quad 2 & 4 & 7 & 8 \\\\ \\hline \\end{array}"
             },
             {
               "explain": "Perform the column subtractions.",
