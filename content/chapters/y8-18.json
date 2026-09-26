@@ -807,8 +807,8 @@
         {
           "id": "wghs2023-y8-s3q4",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Find the coordinates of the point of intersection of the lines \\(y = -2x + 4\\) and \\(y = \\dfrac{3}{2}x - 1\\).",
+          "difficulty": "hard",
           "options": [
             "\\(\\left(\\dfrac{10}{7},\\, \\dfrac{8}{7}\\right)\\)",
             "\\((2, 0)\\)",
@@ -834,11 +834,13 @@
               "work": "\\(y = -\\dfrac{20}{7} + 4 = \\dfrac{8}{7}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
