@@ -1,0 +1,20 @@
+<svg width="300" height="220" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220">
+  <!-- Ground -->
+  <line x1="20" y1="200" x2="280" y2="200" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Observer Building -->
+  <rect x="40" y="100" width="40" height="100" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Taller Building -->
+  <rect x="200" y="40" width="40" height="160" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  
+  <!-- Highlight Building parts -->
+  <line x1="200" y1="40" x2="200" y2="100" stroke="#8b5cf6" stroke-width="4"/>
+  <line x1="200" y1="100" x2="200" y2="200" stroke="#0284c7" stroke-width="4"/>
+  
+  <line x1="180" y1="100" x2="220" y2="100" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  
+  <text x="210" y="75" font-family="serif" font-size="14" fill="#8b5cf6" font-weight="bold">h = 36.05 m</text>
+  <text x="210" y="155" font-family="serif" font-size="14" fill="#0284c7" font-weight="bold">66 m</text>
+  
+  <text x="60" y="90" font-family="sans-serif" font-size="16" fill="#0f172a">Total Height = 66 + 36.05</text>
+  <text x="110" y="115" font-family="sans-serif" font-size="16" fill="#0f172a">= 102.05 m</text>
+</svg>

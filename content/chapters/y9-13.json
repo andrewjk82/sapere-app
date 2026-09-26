@@ -1743,16 +1743,25 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Let \\\\(d\\\\) be the horizontal distance between the buildings. Use the lower triangle (angle of depression) to find \\\\(d\\\\).",
-              "work": "\\\\(\\tan 51^\\circ = \\frac{66}{d} \\Rightarrow d = \\frac{66}{\\tan 51^\\circ} \\approx 53.44 \\text{ m}\\\\)"
+              "explain": "Let \\(d\\) be the horizontal distance between the buildings. We can find \\(d\\) using the lower triangle formed by the angle of depression (\\(51^\\circ\\)) and the known height (66m). The opposite side is 66m, and the adjacent side is \\(d\\).",
+              "work": "\\(\tan 51^\\circ = \\frac{66}{d} \\Rightarrow d = \\frac{66}{\\tan 51^\\circ} \\approx 53.44 \\text{ m}\\)",
+              "figure": {
+                "svg": "fig:496b900c71"
+              }
             },
             {
-              "explain": "Let \\\\(h\\\\) be the height of the taller building above the observer. Use the upper triangle (angle of elevation) to find \\\\(h\\\\).",
-              "work": "\\\\(\\tan 34^\\circ = \\frac{h}{d} \\Rightarrow h = d \\tan 34^\\circ \\approx 53.44 \\times \\tan 34^\\circ \\approx 36.05 \\text{ m}\\\\)"
+              "explain": "Let \\(h\\) be the height of the taller building above the observer. In the upper triangle, the angle of elevation is \\(34^\\circ\\), and the adjacent side \\(d\\) is \\(53.44 \\text{ m}\\). We use the tangent ratio to find the opposite side \\(h\\).",
+              "work": "\\(\tan 34^\\circ = \\frac{h}{d} \\Rightarrow h = d \\tan 34^\\circ \\approx 53.44 \\times \\tan 34^\\circ \\approx 36.05 \\text{ m}\\)",
+              "figure": {
+                "svg": "fig:181c3e3710"
+              }
             },
             {
-              "explain": "Calculate the total height of the taller building.",
-              "work": "\\\\(\\text{Total height} = 66 + 36.05 = 102.05 \\approx 102 \\text{ m}\\\\)"
+              "explain": "Calculate the total height of the taller building by adding the two parts together.",
+              "work": "\\(\\text{Total height} = 66 + 36.05 = 102.05 \\approx 102 \\text{ m}\\)",
+              "figure": {
+                "svg": "fig:1969a4718c"
+              }
             }
           ],
           "meta": {
@@ -1760,9 +1769,6 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:326b4cc61d"
           }
         },
         {

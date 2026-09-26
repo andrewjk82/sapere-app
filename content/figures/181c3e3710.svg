@@ -1,0 +1,27 @@
+<svg width="300" height="220" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220">
+  <!-- Ground -->
+  <line x1="20" y1="200" x2="280" y2="200" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Observer Building -->
+  <rect x="40" y="100" width="40" height="100" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Taller Building -->
+  <rect x="200" y="40" width="40" height="160" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  
+  <!-- Lower triangle (faded) -->
+  <line x1="80" y1="100" x2="200" y2="200" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <!-- Upper triangle HIGHLIGHTED -->
+  <!-- Horizontal line of sight (adj) -->
+  <line x1="80" y1="100" x2="200" y2="100" stroke="#eab308" stroke-width="3"/>
+  <!-- Line of sight for elevation (hyp) -->
+  <line x1="80" y1="100" x2="200" y2="40" stroke="#1d4ed8" stroke-width="2.5"/>
+  <!-- Height part (opp) -->
+  <line x1="200" y1="100" x2="200" y2="40" stroke="#059669" stroke-width="3"/>
+  
+  <!-- Angle of elevation 34 -->
+  <path d="M 120 100 A 40 40 0 0 0 115 82.5" fill="none" stroke="#e11d48" stroke-width="2"/>
+  <text x="130" y="85" font-family="serif" font-size="14" fill="#e11d48">34°</text>
+  
+  <!-- Labels -->
+  <text x="210" y="75" font-family="serif" font-size="14" fill="#059669" font-weight="bold">h (opp)</text>
+  <text x="110" y="115" font-family="serif" font-size="14" fill="#b45309" font-weight="bold">d = 53.44 m (adj)</text>
+</svg>
