@@ -30200,8 +30200,8 @@
         {
           "id": "killara2023-y9-t4a-q25a",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Simplify \\\\(\\frac{x^2 - 3x - 10}{x^2 - 5x}\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(\\frac{x+2}{x}\\\\)",
             "\\\\(\\frac{x-2}{x}\\\\)",
@@ -30219,6 +30219,7 @@
               "work": "\\\\(\\frac{x+2}{x}\\\\)"
             }
           ],
+          "timeLimit": 90,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
