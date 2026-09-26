@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import ChallengeQuizView from './ChallengeQuizView';
 import ChallengeReviewView from './ChallengeReviewView';
 import SecretNoteView from './SecretNoteView';
+import KeyPointsEditor from './KeyPointsEditor';
 import { answersMatch } from '../../utils/answerMatching';
 import { prepareShuffledMcOptions, gradeMcSelection } from '../../utils/mcOptionShuffle';
 import {
@@ -34,6 +35,7 @@ const TABS = [
   { key: 'daily', label: 'Daily Challenge' },
   { key: 'review', label: 'Review' },
   { key: 'secretNote', label: 'Secret Note' },
+  { key: 'hint', label: 'Hint' },
 ];
 
 /**
@@ -47,7 +49,7 @@ const TABS = [
  * tab uses SecretNoteView's `previewQuestions` prop, which bypasses its
  * localStorage/Firestore side effects entirely.
  */
-const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 'daily' }) => {
+const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 'daily', onQuestionUpdated }) => {
   const [activeTab, setActiveTab] = useState(initialTab);
 
   // Two independent clones — Daily Challenge mutates `_shuffledAnswer` etc.
@@ -321,6 +323,14 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
           onClose={onClose}
           isMobile={false}
           previewQuestions={[secretNoteQuestion]}
+        />
+      )}
+
+      {activeTab === 'hint' && (
+        <KeyPointsEditor
+          question={question}
+          chapterId={chapter?.id}
+          onSaved={onQuestionUpdated}
         />
       )}
 

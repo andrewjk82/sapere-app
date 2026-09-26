@@ -39,6 +39,8 @@ const Base = {
   manual: z.literal(true).optional(),
   timeLimit: z.number().int().positive().optional(),
   xp: z.number().int().min(1).max(10).optional(),   // per-question XP (1–10); multipart: set on each part
+  // Highlighted after a wrong answer: `text` is an exact substring of `stem`, `note` the tip.
+  keyPoints: z.array(z.object({ text: z.string().min(1), note: z.string().min(1) })).max(6).optional(),
   inactive: z.literal(true).optional(),
   alsoIn: z.array(z.string()).optional(),
   hscType: z.string().optional(),          // HSC type-practice category slug

@@ -7,6 +7,7 @@ import { parseNumberLineFromText } from '../utils/numberLineParser';
 import SvgGraph from './SvgGraph';
 import { encodeSvgDataUrl } from '../utils/geometrySvg';
 import { toDisplayText } from '../utils/mathPreprocess';
+import { insertKeyPointMarkers, keyPointMarkersToHtml } from '../utils/keyPoints';
 import TrigonometricBoundaryAnglesTable from './TrigonometricBoundaryAnglesTable';
 
 // toDisplayText lives in a React-free module so the seed/seeder LaTeX
@@ -51,11 +52,16 @@ const convertMarkdownTables = (str) => {
   return out.join('\n');
 };
 
-const MathView = ({ content, graphData: rawGraphData, style, align }) => {
+// `keyPoints` (optional, [{ text, note }]) highlights parts of the content — see
+// utils/keyPoints.js; `onKeyPointClick(index, markElement)` fires when one is tapped.
+const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, onKeyPointClick }) => {
   const containerRef = useRef(null);
+  const hasKeyPoints = typeof content === 'string' && Array.isArray(keyPoints) && keyPoints.length > 0;
+  const keyPointsSig = hasKeyPoints ? JSON.stringify(keyPoints) : '';
 
   // Pre-process: convert markdown tables to HTML before line-splitting
-  const processedContent = typeof content === 'string' ? convertMarkdownTables(content) : content;
+  const markedContent = hasKeyPoints ? insertKeyPointMarkers(content, keyPoints) : content;
+  const processedContent = typeof markedContent === 'string' ? convertMarkdownTables(markedContent) : markedContent;
 
   let lines = [];
   if (typeof processedContent === 'string') {
@@ -136,10 +142,19 @@ const MathView = ({ content, graphData: rawGraphData, style, align }) => {
     const el = containerRef.current;
     if (!el) return undefined;
 
+    const rendered = lines.map((line) => {
+      const html = toDisplayText(line, '', { currencyHtml: true });
+      return hasKeyPoints ? keyPointMarkersToHtml(html) : html;
+    });
+    // A marker that toDisplayText pulled inside maths (rare currency/\text edge cases) can't
+    // become a highlight — rather than show marker text, drop the highlights for this render.
+    const safe = hasKeyPoints && rendered.some((h) => h.includes('QZKP'))
+      ? lines.map((line) => toDisplayText(line.replace(/QZKPOPEN\d+QZKPMID|QZKPCLOSE/g, ''), '', { currencyHtml: true }))
+      : rendered;
     lines.forEach((line, idx) => {
       const childEl = el.querySelector(`.math-view-line-${idx}`);
       if (childEl) {
-        childEl.innerHTML = toDisplayText(line, '', { currencyHtml: true });
+        childEl.innerHTML = safe[idx];
       }
     });
 
@@ -228,7 +243,7 @@ const MathView = ({ content, graphData: rawGraphData, style, align }) => {
       cancelled = true;
       if (retryTimer) clearTimeout(retryTimer);
     };
-  }, [content, rawGraphData]);
+  }, [content, rawGraphData, keyPointsSig]);
 
   const hasText = lines.some((l) => String(l || '').trim().length > 0);
   const combinedStyle = {
@@ -272,7 +287,14 @@ const MathView = ({ content, graphData: rawGraphData, style, align }) => {
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
       {hasText && (
-        <div ref={containerRef} style={textStyle}>
+        <div
+          ref={containerRef}
+          style={textStyle}
+          onClick={onKeyPointClick ? (e) => {
+            const mark = e.target.closest?.('mark.sapere-kp');
+            if (mark) onKeyPointClick(Number(mark.dataset.kp), mark);
+          } : undefined}
+        >
           {lines.map((line, idx) => {
             const hasDisplayMath = /\\+\[|\$\$/.test(String(line));
             const isPureMath = /^\s*(?:\$\$|\\+\[|\$|\\+\()[\s\S]+?(?:\$\$|\\+\]|\$|\\+\))[\s,;:?.!]*$/.test(String(line).trim());

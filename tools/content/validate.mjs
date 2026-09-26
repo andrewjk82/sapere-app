@@ -52,6 +52,9 @@ const walk = (q, file, isPart = false) => {
   }
   if (!q.stem && q.type !== 'multipart' && !q.inactive) errors.push(`${where}: empty stem`);
   checkTex(q.stem, where); checkTex(q.hint, where); checkTex(q.solution, where);
+  // keyPoints must point at text that is still in the stem (a later stem edit can orphan one).
+  // Warning, not error: a stale highlight just doesn't show — it must never block a deploy.
+  (q.keyPoints || []).forEach((kp, i) => { if (!String(q.stem || '').includes(kp.text)) warn.push(`${where}: keyPoint ${i} text not found in stem`); });
   (q.steps || []).forEach((s, i) => { checkTex(s.explain, `${where}.step${i}`); checkTex(s.work, `${where}.step${i}`); });
   const figs = [q.figure?.svg, ...(q.steps || []).map((s) => s.figure?.svg)].filter(Boolean);
   for (const f of figs) if (!fs.existsSync(path.join('content/figures', `${f.slice(4)}.svg`))) errors.push(`${where}: missing figure ${f}`);

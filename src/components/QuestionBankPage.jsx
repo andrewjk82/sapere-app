@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock, Star
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock, Star, Highlighter
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
@@ -717,6 +717,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     { tab: 'daily', label: 'Daily', icon: Zap },
                     { tab: 'review', label: 'Review', icon: Eye },
                     { tab: 'secretNote', label: 'Note', icon: BookLock },
+                    { tab: 'hint', label: 'Hint', icon: Highlighter },
                   ].map(({ tab, label, icon: Icon }) => (
                     <button
                       key={tab}
@@ -1472,6 +1473,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             topic={topic}
             initialTab={previewInitialTab}
             onClose={() => setPreviewingQuestion(null)}
+            onQuestionUpdated={(fields) => {
+              const id = previewingQuestion.id;
+              setLoadedQuestions(prev => ({ ...prev, [id]: { ...prev[id], ...fields } }));
+              setPreviewingQuestion(prev => (prev && prev.id === id ? { ...prev, ...fields } : prev));
+            }}
           />
         )}
       </AnimatePresence>
