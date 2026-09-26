@@ -30161,8 +30161,8 @@
         {
           "id": "killara2023-y9-t4a-q22",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Write \\\\(7.3\\bar{2}\\\\) as a fraction.",
+          "difficulty": "medium",
           "options": [
             "\\\\(7 \\frac{29}{90}\\\\)",
             "\\\\(7 \\frac{32}{99}\\\\)",
@@ -30188,6 +30188,7 @@
               "work": "\\\\(x = \\frac{659}{90} = 7 \\frac{29}{90}\\\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
