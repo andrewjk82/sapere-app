@@ -532,6 +532,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const isMC = q && !isShort && !isFillBlank && !q.subQuestions?.length && (q.options || []).length > 0;
   const isTeacherReview = q?.type === 'teacher_review' || q?.requiresManualGrading === true;
 
+  const previewOpenRef = useRef(false);
+  useEffect(() => { previewOpenRef.current = Boolean(previewingQuestion); }, [previewingQuestion]);
   const goPrev = useCallback(() => { setCurrentIdx((i) => Math.max(0, i - 1)); setShowHint(false); setPreviewAnswer(''); }, []);
   const goNext = useCallback(() => { setCurrentIdx((i) => Math.min(total - 1, i + 1)); setShowHint(false); setPreviewAnswer(''); }, [total]);
 
@@ -540,6 +542,9 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
         return;
       }
+      // While a preview is open the arrows would move the bank underneath it and leave the
+      // preview showing a different question — the preview has its own ‹ › buttons.
+      if (previewOpenRef.current) return;
       if (e.key === 'ArrowLeft') {
         goPrev();
       } else if (e.key === 'ArrowRight') {
@@ -1468,7 +1473,18 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       <AnimatePresence>
         {previewingQuestion && (
           <QuestionPreviewModal
+            key={previewingQuestion.id}
             question={previewingQuestion}
+            position={{ index: currentIdx, total }}
+            onNavigate={(delta) => {
+              // Hint tab: step through the bank without closing the preview.
+              const nextIdx = Math.max(0, Math.min(total - 1, currentIdx + delta));
+              const target = questions[nextIdx];
+              if (nextIdx === currentIdx || !target || target.loading) return;
+              setCurrentIdx(nextIdx);
+              setPreviewInitialTab('hint');
+              setPreviewingQuestion(target);
+            }}
             chapter={chapter}
             topic={topic}
             initialTab={previewInitialTab}

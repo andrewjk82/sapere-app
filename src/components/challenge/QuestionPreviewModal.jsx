@@ -50,7 +50,7 @@ const TABS = [
  * tab uses SecretNoteView's `previewQuestions` prop, which bypasses its
  * localStorage/Firestore side effects entirely.
  */
-const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 'daily', onQuestionUpdated }) => {
+const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 'daily', onQuestionUpdated, position, onNavigate }) => {
   const [activeTab, setActiveTab] = useState(initialTab);
   // Hint tab: draft key points, shown live on the real quiz screen while the teacher edits.
   const [kpDraft, setKpDraft] = useState(() => initialKeyPointsDraft(question));
@@ -363,6 +363,26 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
           boxShadow: '0 16px 32px rgba(0,0,0,0.28)',
         }}
       >
+        {activeTab === 'hint' && onNavigate && position && (
+          <div style={{ display: 'flex', alignItems: 'center', gap: '2px', marginRight: '4px', color: '#e2e8f0', fontSize: '0.78rem', fontWeight: 800 }}>
+            {[-1, 1].map((d) => (
+              <button
+                key={d}
+                type="button"
+                title={d < 0 ? 'Previous question' : 'Next question'}
+                disabled={d < 0 ? position.index <= 0 : position.index >= position.total - 1}
+                onClick={() => {
+                  const dirty = JSON.stringify(kpDraft) !== JSON.stringify(initialKeyPointsDraft(question));
+                  if (dirty && !window.confirm('Discard unsaved highlights for this question?')) return;
+                  onNavigate(d);
+                }}
+                style={{ width: '30px', height: '30px', borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.12)', color: '#fff', cursor: 'pointer', fontSize: '1rem', lineHeight: 1 }}
+              >
+                {d < 0 ? '‹' : '›'}
+              </button>
+            )).reduce((acc, el, i) => (i === 0 ? [el, <span key="pos" style={{ padding: '0 6px', whiteSpace: 'nowrap' }}>{position.index + 1} / {position.total}</span>] : [...acc, el]), [])}
+          </div>
+        )}
         {TABS.map((t) => (
           <button
             key={t.key}
