@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "studyPresence": {
+      ".read": "auth != null",
+      "$uid": {
+        ".write": "auth != null && auth.uid === $uid",
+        ".validate": "!newData.exists() || (newData.hasChildren(['name', 'bankedSec', 'running', 'since']) && newData.child('name').isString() && newData.child('name').val().length <= 40 && newData.child('avatarUrl').val().length <= 2000 && newData.child('bankedSec').isNumber() && newData.child('running').isBoolean() && newData.child('since').isNumber())"
+      }
+    },
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

@@ -5,6 +5,8 @@ import { flushStudySession } from '../../services/studyTimeService';
 import { getDeviceId, publishSessionTransition, fetchRemoteSessionState } from '../../services/studySessionSyncService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
+import { publishStudyPresence, clearStudyPresence } from '../../services/studyPresenceService';
+import StudyingNowStrip from './StudyingNowStrip';
 import { nowMs, splitSecondsIntoHourBuckets } from '../../utils/timeUtils';
 import { SUBJECT_COLOR_PALETTE, DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import AddSubjectModal from './AddSubjectModal';
@@ -229,6 +231,19 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     return () => window.removeEventListener('beforeunload', handler);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, subject]);
+
+  // "Studying now" presence: one RTDB write per start/pause/resume/stop while a session is
+  // open (focus screen or checklist), removed when it ends — see studyPresenceService.
+  const inSession = focusMode && (phase === 'running' || phase === 'paused');
+  useEffect(() => {
+    if (!uid) return;
+    if (inSession) {
+      publishStudyPresence({ uid, profile, avatarUrl, bankedSec: currentTotalSec(), running: phase === 'running' });
+    } else {
+      clearStudyPresence(uid);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [uid, inSession, phase]);
 
   const handleStart = async () => {
     const remote = await fetchRemoteSessionState(uid);
@@ -589,6 +604,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
           <span style={{ fontSize: '0.7rem', fontWeight: 600, color: 'rgba(255,255,255,0.35)', marginTop: 28 }}>
             Tap anywhere to end session
           </span>
+          <StudyingNowStrip uid={uid} />
         </motion.div>
       )}
       {focusMode && sessionStage !== 'focus' && (
