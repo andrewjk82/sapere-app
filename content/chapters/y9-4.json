@@ -3120,8 +3120,8 @@
         {
           "id": "killara2023-y9-t4a-q15",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Factorise \\\\(4x^2 + 20x + 3x + 15\\\\) by grouping.",
+          "difficulty": "medium",
           "options": [
             "\\\\((4x + 3)(x + 5)\\\\)",
             "\\\\((4x + 5)(x + 3)\\\\)",
@@ -3143,6 +3143,7 @@
               "work": "\\\\((4x + 3)(x + 5)\\\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
