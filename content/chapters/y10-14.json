@@ -3584,33 +3584,34 @@
         },
         {
           "id": "y10-14b-q5a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "stem": "Simplify the expression (where \\(a, b > 0\\) and \\(a, b \\neq 1\\)):<br><br>\\((\\log_{x} y)(\\log_{y} x)\\)",
-          "answer": "1",
+          "stem": "Simplify the expression (where \\(x, y > 0\\) and \\(x, y \\neq 1\\)):<br><br>\\((\\log_{x} y)(\\log_{y} x)\\)",
+          "answer": 1,
           "hint": "Use the change of base formula to express the second logarithm in base \\(x\\).",
           "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Change of base: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\log_{y} x = \\frac{\\log_{x} x}{\\log_{x} y} = \\frac{1}{\\log_{x} y}\\)"
+              "explain": "Use the change of base formula to express both logarithms in a common base, such as base \\(10\\) or natural log.",
+              "work": "\\(log_{x} y = \frac{log y}{log x}\\) and \\(log_{y} x = \frac{log x}{log y}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\((\\log_{x} y) \\times \\left(\\frac{1}{\\log_{x} y}\\right)\\)"
+              "explain": "Substitute these fractions into the original expression and multiply.",
+              "work": "\\( ( \\frac{\\log y}{\\log x} ) \\times ( \\frac{\\log x}{\\log y} ) \\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "explain": "Cancel the common terms in the numerator and denominator to find the final answer.",
               "work": "\\(1\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(x\\)",
+            "\\(y\\)"
+          ]
         },
         {
           "id": "y10-14b-q5b",

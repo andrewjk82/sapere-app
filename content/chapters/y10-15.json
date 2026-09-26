@@ -5950,20 +5950,20 @@
           "solution": "The total number of beads is \\(6 + 4 + 5 = 15\\). The probability of drawing a yellow bead first is \\(\\frac{6}{15}\\). Since the bead is not replaced, 5 yellow beads remain out of 14. The probability of drawing 2 yellow beads is \\(\\frac{6}{15} \\times \\frac{5}{14} = \\frac{2}{5} \\times \\frac{5}{14} = \\frac{2}{14} = \\frac{1}{7}\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sampling with replacement and without replacement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Calculate the total number of beads.",
               "work": "\\(\\mathrm{Total} = 6 + 4 + 5 = 15\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "Find the probability of drawing a yellow bead first.",
               "work": "\\(P(Y_1) = \\frac{6}{15} = \\frac{2}{5}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "explain": "Since there is no replacement, find the probability of drawing a second yellow bead from the remaining beads.",
               "work": "\\(P(Y_2 \\mid Y_1) = \\frac{5}{14}\\)"
             },
             {
-              "explain": "Final answer: 1/7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(1/7\\)"
+              "explain": "Multiply the probabilities together.",
+              "work": "\\(P(Y_1 \\cap Y_2) = \\frac{2}{5} \\times \\frac{5}{14} = \\frac{2}{14} = \\frac{1}{7}\\)"
             }
           ],
           "timeLimit": 60,
@@ -5975,30 +5975,30 @@
           "difficulty": "easy",
           "stem": "Chloe has 6 yellow beads, 4 pink beads and 5 green beads in a jar. Chloe randomly takes one bead out and then a second (no replacement). Find the probability that she obtains a yellow and a pink bead in any order.",
           "options": [
-            "\\(-0.22857142857142856\\)",
-            "\\(-0.7714285714285715\\)",
             "\\(8/35\\)",
-            "\\(1.2285714285714286\\)"
+            "\\(4/35\\)",
+            "\\(16/75\\)",
+            "\\(1/7\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Find the probabilities of yellow then pink and pink then yellow, then add them.",
           "solution": "This can happen as yellow then pink, or pink then yellow. The probability is \\(P(Y_1 \\cap P_2) + P(P_1 \\cap Y_2) = \\left(\\frac{6}{15} \\times \\frac{4}{14}\\right) + \\left(\\frac{4}{15} \\times \\frac{6}{14}\\right) = \\frac{24}{210} + \\frac{24}{210} = \\frac{48}{210} = \\frac{8}{35}\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sampling with replacement and without replacement: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Identify the two possible orders: Yellow then Pink, or Pink then Yellow.",
+              "work": "\\(P(\\text{Y and P in any order}) = P(Y_1 \\cap P_2) + P(P_1 \\cap Y_2)\\)"
+            },
+            {
+              "explain": "Calculate the probability of drawing a Yellow bead then a Pink bead (without replacement).",
               "work": "\\(P(Y_1 \\cap P_2) = \\frac{6}{15} \\times \\frac{4}{14} = \\frac{24}{210}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "Calculate the probability of drawing a Pink bead then a Yellow bead.",
               "work": "\\(P(P_1 \\cap Y_2) = \\frac{4}{15} \\times \\frac{6}{14} = \\frac{24}{210}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(P(\\mathrm{yellow\\ and\\ pink}) = \\frac{24}{210} + \\frac{24}{210} = \\frac{48}{210} = \\frac{8}{35}\\)"
-            },
-            {
-              "explain": "Final answer: 8/35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(8/35\\)"
+              "explain": "Add the probabilities of the two mutually exclusive outcomes.",
+              "work": "\\(P(\\text{Y and P in any order}) = \\frac{24}{210} + \\frac{24}{210} = \\frac{48}{210} = \\frac{8}{35}\\)"
             }
           ],
           "timeLimit": 60,

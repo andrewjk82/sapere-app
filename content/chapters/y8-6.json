@@ -3950,32 +3950,37 @@
         },
         {
           "id": "y8-6h-q10",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Entry fee for an amusement park is \\(22 per adult and \\)12 per child. The cost of each ride is \\(7 per person. A family of \\)2\\( adults and \\)2\\( children went to the park and spent \\)124 on rides and entrance tickets. If the whole family always went on rides together, how many rides did they go on?",
-          "answer": "2",
+          "stem": "Entry fee for an amusement park is \\ per adult and \\ per child. The cost of each ride is \\ per person. A family of 2 adults and 2 children went to the park and spent \\ on rides and entrance tickets. If the whole family always went on rides together, how many rides did they go on?",
+          "answer": 0,
           "hint": "Calculate the total cost of entry tickets first.",
           "solution": "2",
           "steps": [
             {
-              "explain": "Cost of entry tickets",
-              "work": "2(22) + 2(12) = 68"
+              "explain": "First, calculate the total cost of the entrance tickets for \\(2\\) adults and \\(2\\) children.",
+              "work": "\\(\\text{Entrance cost} = (2 \\times 22) + (2 \\times 12) = 44 + 24 = 68\\)"
             },
             {
-              "explain": "Amount spent on rides",
-              "work": "124 - 68 = 56"
+              "explain": "Subtract the entrance cost from the total amount spent to find how much was spent on rides.",
+              "work": "\\(\\text{Money for rides} = 124 - 68 = 56\\)"
             },
             {
-              "explain": "Cost per family ride (4 people)",
-              "work": "4 \\times 7 = 28"
+              "explain": "Calculate the cost of one ride for the whole family (4 people).",
+              "work": "\\(\\text{Cost per family ride} = 4 \\times 7 = 28\\)"
             },
             {
-              "explain": "Number of rides",
-              "work": "56 / 28 = 2"
+              "explain": "Divide the total money spent on rides by the cost per family ride to find the number of rides.",
+              "work": "\\(\\text{Number of rides} = \\frac{56}{28} = 2\\)"
             }
           ],
-          "manual": true,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ]
         },
         {
           "id": "y8-6h-q11_weeknight",

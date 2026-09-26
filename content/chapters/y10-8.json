@@ -3236,64 +3236,6 @@
           "xp": 3
         },
         {
-          "id": "y10-8e-q11a",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Analyze the properties of the diagonals in the trapezium shown.\na) Prove that \\(\\Delta ABO\\) is similar to \\(\\Delta CDO\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
-        },
-        {
-          "id": "y10-8e-q11b",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Analyze the properties of the diagonals in the trapezium shown.\nb) Hence, prove that \\(2AC = 3OC\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
-            },
-            {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
-            },
-            {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
-            },
-            {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
-        },
-        {
           "id": "y10-8e-q12",
           "type": "mc",
           "difficulty": "medium",
@@ -4300,7 +4242,7 @@
             {
               "id": "y10-8e-q11a",
               "type": "review",
-              "stem": "a) Prove that \\(\\Delta ABO\\) is similar to \\(\\Delta CDO\\).",
+              "stem": "Prove that \\(\\Delta ABO\\) is similar to \\(\\Delta CDO\\).",
               "answer": "In \\(\\Delta ABO\\) and \\(\\Delta CDO\\):\n- \\(\\angle AOB = \\angle COD\\) (vertically opposite angles).\n- \\(\\angle ABO = \\angle CDO\\) (alternate angles, since \\(AB \\parallel DC\\)).\n- \\(\\angle BAO = \\angle DCO\\) (alternate angles, since \\(AB \\parallel DC\\)).\n\nTherefore, \\(\\Delta ABO \\sim \\Delta CDO\\) by the AAA similarity test.",
               "steps": [
                 {
@@ -4321,7 +4263,7 @@
             {
               "id": "y10-8e-q11b",
               "type": "review",
-              "stem": "b) Hence, prove that \\(2AC = 3OC\\).",
+              "stem": "Hence, prove that \\(2AC = 3OC\\).",
               "answer": "From part a, since \\(\\Delta ABO \\sim \\Delta CDO\\), the ratio of corresponding sides is:\n\\(\\frac{AO}{OC} = \\frac{AB}{CD}\\)\n\nWe are given \\(AB = \\frac{1}{2}CD\\), which means \\(\\frac{AB}{CD} = \\frac{1}{2}\\).\n\nTherefore:\n\\(\\frac{AO}{OC} = \\frac{1}{2} \\implies OC = 2AO \\implies AO = \\frac{1}{2}OC\\)\n\nWe know that the total diagonal \\(AC\\) is:\n\\(AC = AO + OC\\)\n\nSubstitute \\(AO = \\frac{1}{2}OC\\) into the equation:\n\\(AC = \\frac{1}{2}OC + OC = \\frac{3}{2}OC\\)\n\nMultiply both sides by 2:\n\\(2AC = 3OC\\)",
               "steps": [
                 {

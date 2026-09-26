@@ -7247,39 +7247,88 @@
         },
         {
           "id": "y11a-5B-new-2",
-          "type": "review",
-          "difficulty": "easy",
-          "stem": "Consider the hyperbola \\(y = \\frac{3}{x - 1}\\).\n**a)** Show that when \\(x\\) is replaced with \\(-x\\), the equation becomes \\(y = -\\frac{3}{x + 1}\\).\n**b)** Copy and complete a table of values for \\(x = -4, -3, -2, -1, 0, 1, 2, 3, 4\\) for both equations (leave undefined where appropriate).\n**c)** Sketch the two hyperbolas and state the vertical asymptote of each.\n**d)** What geometric transformation maps \\(y = \\frac{3}{x - 1}\\) to \\(y = -\\frac{3}{x + 1}\\)?",
-          "answer": "See solution steps.\nTransformation is a reflection in the y-axis.",
-          "options": [
-            "\\(y = -\\frac{3}{x + 1}\\)",
-            "\\(y = \\frac{3}{x + 1}\\)",
-            "\\(y = -\\frac{3}{x - 1}\\)",
-            "\\(y = \\frac{3}{x - 3}\\)"
-          ],
-          "hint": "Replacing x with -x reflects the graph horizontally across the y-axis.",
-          "solution": "See solution steps.\nTransformation is a reflection in the y-axis.",
-          "steps": [
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the hyperbola \\(y = \\frac{3}{x - 1}\\). Answer the following questions.",
+          "parts": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\frac{3}{-x - 1} = \\frac{3}{-(x + 1)} = -\\frac{3}{x + 1}\\)"
+              "id": "y11a-5B-new-2a",
+              "type": "mc",
+              "stem": "a) What does the equation become when \\(x\\) is replaced with \\(-x\\)?",
+              "options": [
+                "\\(y = -\\frac{3}{x + 1}\\)",
+                "\\(y = \\frac{3}{x + 1}\\)",
+                "\\(y = -\\frac{3}{x - 1}\\)",
+                "\\(y = \\frac{3}{x - 3}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Substitute \\(-x\\) in place of \\(x\\) in the original equation.",
+                  "work": "\\(y = \\frac{3}{(-x) - 1}\\)"
+                },
+                {
+                  "explain": "Factor out \\(-1\\) from the denominator to simplify.",
+                  "work": "\\(y = \\frac{3}{-(x + 1)}\\)"
+                },
+                {
+                  "explain": "Move the negative sign to the front of the fraction.",
+                  "work": "\\(y = -\\frac{3}{x + 1}\\)"
+                }
+              ]
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(x = 1 \\text{ and } x = -1\\)"
+              "id": "y11a-5B-new-2b",
+              "type": "mc",
+              "stem": "b) What are the vertical asymptotes of the original hyperbola and the transformed hyperbola, respectively?",
+              "options": [
+                "\\(x = 1\\) and \\(x = -1\\)",
+                "\\(x = -1\\) and \\(x = 1\\)",
+                "\\(y = 1\\) and \\(y = -1\\)",
+                "\\(y = -1\\) and \\(y = 1\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "A vertical asymptote occurs where the denominator is zero. For the original hyperbola \\(y = \\frac{3}{x - 1}\\), set the denominator to zero.",
+                  "work": "\\(x - 1 = 0 \\implies x = 1\\)"
+                },
+                {
+                  "explain": "For the transformed hyperbola \\(y = -\\frac{3}{x + 1}\\), set its denominator to zero.",
+                  "work": "\\(x + 1 = 0 \\implies x = -1\\)"
+                }
+              ]
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\text{Reflection in the } y\\text{-axis}\\)"
-            },
-            {
-              "explain": "Final answer: See solution steps.\nTransformation is a reflection in the y-axis.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "See solution steps.\nTransformation is a reflection in the y-axis."
+              "id": "y11a-5B-new-2c",
+              "type": "mc",
+              "stem": "c) What geometric transformation maps \\(y = \\frac{3}{x - 1}\\) to \\(y = -\\frac{3}{x + 1}\\)?",
+              "options": [
+                "Reflection in the y-axis",
+                "Reflection in the x-axis",
+                "Translation 2 units left",
+                "Rotation by 180° about the origin"
+              ],
+              "answer": 0,
+              "figure": {
+                "svg": "fig:11a5b00002"
+              },
+              "steps": [
+                {
+                  "explain": "Recall the function transformation rules. Replacing \\(x\\) with \\(-x\\) (i.e., \\(f(-x)\\)) corresponds to a horizontal reflection.",
+                  "work": "\\(\\text{Transformation: } f(x) \\to f(-x)\\)"
+                },
+                {
+                  "explain": "A horizontal reflection maps every point \\((x, y)\\) to \\((-x, y)\\), which is a reflection across the y-axis.",
+                  "work": "\\(\\text{Reflection in the y-axis}\\)"
+                },
+                {
+                  "explain": "Looking at the graph, the original hyperbola (blue) and its asymptote \\(x=1\\) are mirrored exactly across the y-axis (orange dashed line) to form the new hyperbola (red) and its asymptote \\(x=-1\\).",
+                  "work": "\\(\\text{Confirmed by graph.}\\)"
+                }
+              ]
             }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3
+          ]
         },
         {
           "id": "y11a-5B-new-5",
@@ -8177,72 +8226,52 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "The graph of \\(y = f(x)\\) for \\(x \\ge 0\\) is a parabola-like curve starting at \\((0, 2)\\), dipping to a minimum at \\((1, -1)\\), and rising thereafter. Complete the sketch for all \\(x\\) so that \\(f(x)\\) becomes an **even** function.",
-          "answer": "A W-shaped curve symmetrical across the y-axis.",
-          "options": [
-            "\\((1, -1)\\)",
-            "\\((-1, -1)\\)",
-            "\\((-1, 1)\\)",
-            "\\((1, 1)\\)"
-          ],
           "hint": "Reflect the entire right side across the y-axis.",
-          "solution": "A W-shaped curve symmetrical across the y-axis.",
+          "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Reflect across } y\\text{-axis.}\\)"
+              "explain": "Recall that an even function is symmetric about the y-axis, meaning \\(f(-x) = f(x)\\).",
+              "work": "The right side (in blue) is reflected across the y-axis to form the left side (in red).\n\nfig:11a5c00021.svg"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Reflect the minimum point \\((1, -1)\\) across the y-axis by negating the x-coordinate.",
+              "work": "\\((-1, -1)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "A W-shaped curve symmetrical across the y-axis."
-            },
-            {
-              "explain": "Final answer: A W-shaped curve symmetrical across the y-axis.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "A W-shaped curve symmetrical across the y-axis."
+              "explain": "Combine the two sides to identify the overall shape.",
+              "work": "The resulting graph forms a W-shape that is symmetrical across the y-axis."
             }
           ],
-          "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 2,
+          "manual": true,
+          "answer": "See solution steps."
         },
         {
           "id": "y11a-5C-new-2c-ii",
           "type": "review",
           "difficulty": "easy",
           "stem": "The graph of \\(y = f(x)\\) for \\(x \\ge 0\\) starts at the origin \\((0, 0)\\), dips to a minimum at \\((1, -1)\\), and rises thereafter. Complete the sketch for all \\(x\\) so that \\(f(x)\\) becomes an **odd** function.",
-          "answer": "An S-shaped curve passing through the origin with a maximum at (-1, 1).",
-          "options": [
-            "\\((-1, -1)\\)",
-            "\\((1, 1)\\)",
-            "\\((-1, 1)\\)",
-            "\\((1, -1)\\)"
-          ],
           "hint": "Rotate the given right-side curve \\(180^{\\circ}\\) about the origin.",
-          "solution": "An S-shaped curve passing through the origin with a maximum at (-1, 1).",
+          "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Rotate } 180^\\circ \\text{ about origin.}\\)"
+              "explain": "Recall that an odd function has rotational symmetry of \\(180^\\circ\\) about the origin, meaning \\(f(-x) = -f(x)\\).",
+              "work": "The right side (in blue) is rotated \\(180^\\circ\\) around the origin to form the left side (in red).\n\nfig:11a5c00022.svg"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Rotate the minimum point \\((1, -1)\\) by negating both the x and y coordinates. This point becomes a local maximum on the left side.",
+              "work": "\\((-1, 1)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "An S-shaped curve passing through the origin with a maximum at (-1, 1)."
-            },
-            {
-              "explain": "Final answer: An S-shaped curve passing through the origin with a maximum at (-1, 1).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "An S-shaped curve passing through the origin with a maximum at (-1, 1)."
+              "explain": "Combine the two sides to identify the overall shape.",
+              "work": "The resulting graph forms an S-shape that is symmetrical about the origin."
             }
           ],
-          "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 2,
+          "manual": true,
+          "answer": "See solution steps."
         },
         {
           "id": "y11a-5C-new-3",

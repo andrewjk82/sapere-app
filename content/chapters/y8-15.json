@@ -1218,7 +1218,6 @@
               "work": "\\(\\text{Area} = \\text{width} \\times \\text{height}\\)<br>\\(\\text{Area} = 15 \\times 8\\)<br>\\(\\text{Area} = 120\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "origin": "teacher"
           },
@@ -1240,20 +1239,16 @@
           "solution": "1. Find the area of the square room: \\(\\text{Area}_{\\text{room}} = 6\\text{ m} \\times 6\\text{ m} = 36\\text{ m}^2\\).\n2. Find the area of the carpet: \\(\\text{Area}_{\\text{carpet}} = 5\\text{ m} \\times 4\\text{ m} = 20\\text{ m}^2\\).\n3. The uncovered floor area is: \\(36 - 20 = 16\\text{ m}^2\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Find the area of the square room.",
               "work": "\\(\\text{Area}_{\\text{room}} = 6^2 = 36\\text{ m}^2\\)"
             },
             {
-              "explain": "Evaluate the mathematical expression and calculate the result.",
+              "explain": "Find the area of the rectangular carpet.",
               "work": "\\(\\text{Area}_{\\text{carpet}} = 5 \\times 4 = 20\\text{ m}^2\\)"
             },
             {
-              "explain": "Evaluate the mathematical expression and calculate the result.",
+              "explain": "Subtract the carpet area from the room area to find the uncovered floor space.",
               "work": "\\(\\text{Uncovered Area} = 36 - 20 = 16\\text{ m}^2\\)"
-            },
-            {
-              "explain": "Evaluate the mathematical expression and calculate the result.",
-              "work": "\\(16\\)"
             }
           ],
           "xp": 3

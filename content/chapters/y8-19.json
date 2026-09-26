@@ -1379,9 +1379,9 @@
             },
             {
               "id": "y8-19a-q8c",
-              "type": "review",
-              "stem": "c) Which is a better measure of centre for this data set? Explain your answer.",
-              "answer": "The median (8.5 hectares) is a better measure of centre for this data set. The mean (13.55 hectares) is skewed upwards by a few very large suburbs (such as 42.3 and 29.4 hectares), which act as outliers and pull the average higher than what is typical.",
+              "type": "mc",
+              "stem": "c) Which is a better measure of centre for this data set?",
+              "answer": 1,
               "steps": [
                 {
                   "explain": "Let's compare the two measures of centre we calculated.",
@@ -1400,12 +1400,16 @@
                   "work": "\\(\\text{Median is the better measure of centre.}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 2,
+              "options": [
+                "Mean",
+                "Median",
+                "Mode"
+              ]
             }
           ],
           "answer": "See sub-questions for individual answers.",
           "hint": "Sort the data to identify the median, sum and divide by 13 to calculate the mean, and evaluate how extreme values affect the mean.",
-          "manual": true,
           "meta": {
             "origin": "teacher"
           }

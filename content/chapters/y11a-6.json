@@ -4721,93 +4721,117 @@
         },
         {
           "id": "y11a-6c-q5a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A ray makes an angle of \\(30^{\\circ}\\) with the positive y-axis in the first quadrant. Write down two positive angles between \\(0^{\\circ}\\) and \\(720^{\\circ}\\) and two negative angles between \\(-720^{\\circ}\\) and \\(0^{\\circ}\\) that are represented by this ray.",
-          "answer": "Positive: 60°, 420°.\nNegative: -300°, -660°.",
+          "answer": 0,
           "hint": "First find the angle in standard position (from positive x-axis).",
           "solution": "Positive: 60°, 420°.\nNegative: -300°, -660°.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(90^{\\circ} - 30^{\\circ} = 60^{\\circ}\\)"
+              "explain": "To find the angle in standard position, note that the ray makes an angle of \\(30^{\\circ}\\) with the positive y-axis (which is at \\(90^{\\circ}\\)) in the first quadrant. Thus, it is \\(30^{\\circ}\\) \"before\" the y-axis.",
+              "work": "Standard angle \\(= 90^{\\circ} - 30^{\\circ} = 60^{\\circ}\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\theta_1 = 60^{\\circ}, quad \\theta_2 = 60^{\\circ} + 360^{\\circ} = 420^{\\circ}\\)"
+              "explain": "To find another positive angle, we add one full revolution (\\(360^{\\circ}\\)).",
+              "work": "Second positive angle \\(= 60^{\\circ} + 360^{\\circ} = 420^{\\circ}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\theta_3 = 60^{\\circ} - 360^{\\circ} = -300^{\\circ}, quad \\theta_4 = 60^{\\circ} - 720^{\\circ} = -660^{\\circ}\\)"
+              "explain": "To find the negative angles, subtract \\(360^{\\circ}\\) successively.",
+              "work": "First negative angle \\(= 60^{\\circ} - 360^{\\circ} = -300^{\\circ}\\)\nSecond negative angle \\(= -300^{\\circ} - 360^{\\circ} = -660^{\\circ}\\)"
             },
             {
-              "explain": "Final answer: Positive: 60°, 420°.\nNegative: -300°, -660°.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Positive: 60°, 420°.\nNegative: -300°, -660°."
+              "explain": "List the required angles.",
+              "work": "\\(\\text{Positive: } 60^{\\circ}, 420^{\\circ} \\quad \\text{Negative: } -300^{\\circ}, -660^{\\circ}\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "Positive: \\(60^{\\circ}, 420^{\\circ}\\). Negative: \\(-300^{\\circ}, -660^{\\circ}\\).",
+            "Positive: \\(30^{\\circ}, 390^{\\circ}\\). Negative: \\(-330^{\\circ}, -690^{\\circ}\\).",
+            "Positive: \\(120^{\\circ}, 480^{\\circ}\\). Negative: \\(-240^{\\circ}, -600^{\\circ}\\).",
+            "Positive: \\(150^{\\circ}, 510^{\\circ}\\). Negative: \\(-210^{\\circ}, -570^{\\circ}\\)."
+          ],
+          "figure": {
+            "svg": "fig:11a6c0005a"
+          }
         },
         {
           "id": "y11a-6c-q5b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A ray makes an angle of \\(20^{\\circ}\\) to the left of the positive y-axis in the second quadrant. Write down two positive angles between \\(0^{\\circ}\\) and \\(720^{\\circ}\\) and two negative angles between \\(-720^{\\circ}\\) and \\(0^{\\circ}\\) that are represented by this ray.",
-          "answer": "Positive: 110°, 470°.\nNegative: -250°, -610°.",
+          "answer": 0,
           "hint": "Find standard position angle: 90° + 20° = 110°.",
-          "solution": "Positive: 110°, 470°.\nNegative: -250°, -610°.",
+          "solution": "0",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(90^{\\circ} + 20^{\\circ} = 110^{\\circ}\\)"
+              "explain": "To find the angles in standard position (measured anti-clockwise from the positive x-axis), first look at the diagram. The positive y-axis represents \\(90^{\\circ}\\). The ray is \\(20^{\\circ}\\) to the left (further anti-clockwise) from the y-axis.",
+              "work": "Standard angle \\(= 90^{\\circ} + 20^{\\circ} = 110^{\\circ}\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "explain": "To find another positive angle, we add one full revolution (\\(360^{\\circ}\\)) to our standard angle.",
+              "work": "Second positive angle \\(= 110^{\\circ} + 360^{\\circ} = 470^{\\circ}\\)"
+            },
+            {
+              "explain": "To find the negative angles, we subtract one full revolution (\\(360^{\\circ}\\)) from our standard angle, and then subtract another \\(360^{\\circ}\\).",
+              "work": "First negative angle \\(= 110^{\\circ} - 360^{\\circ} = -250^{\\circ}\\)\nSecond negative angle \\(= -250^{\\circ} - 360^{\\circ} = -610^{\\circ}\\)"
+            },
+            {
+              "explain": "The ray therefore represents the angles \\(110^{\\circ}, 470^{\\circ}\\) (positive) and \\(-250^{\\circ}, -610^{\\circ}\\) (negative).",
               "work": "\\(\\text{Positive: } 110^{\\circ}, 470^{\\circ} \\quad \\text{Negative: } -250^{\\circ}, -610^{\\circ}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Positive: 110°, 470°.\nNegative: -250°, -610°."
-            },
-            {
-              "explain": "Final answer: Positive: 110°, 470°.\nNegative: -250°, -610°.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Positive: 110°, 470°.\nNegative: -250°, -610°."
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "Positive: \\(110^{\\circ}, 470^{\\circ}\\). Negative: \\(-250^{\\circ}, -610^{\\circ}\\).",
+            "Positive: \\(70^{\\circ}, 430^{\\circ}\\). Negative: \\(-290^{\\circ}, -650^{\\circ}\\).",
+            "Positive: \\(160^{\\circ}, 520^{\\circ}\\). Negative: \\(-200^{\\circ}, -560^{\\circ}\\).",
+            "Positive: \\(200^{\\circ}, 560^{\\circ}\\). Negative: \\(-160^{\\circ}, -520^{\\circ}\\)."
+          ],
+          "figure": {
+            "svg": "fig:11a6c0005b"
+          }
         },
         {
           "id": "y11a-6c-q5c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A ray in the second quadrant makes an angle of \\(30^{\\circ}\\) with the negative x-axis. Write down two positive angles between \\(0^{\\circ}\\) and \\(720^{\\circ}\\) and two negative angles between \\(-720^{\\circ}\\) and \\(0^{\\circ}\\) that are represented by this ray.",
-          "answer": "Positive: 150°, 510°.\nNegative: -210°, -570°.",
+          "answer": 0,
           "hint": "Find standard position angle: 180° - 30° = 150°.",
           "solution": "Positive: 150°, 510°.\nNegative: -210°, -570°.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric functions of a general angle: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(180^{\\circ} - 30^{\\circ} = 150^{\\circ}\\)"
+              "explain": "To find the standard angle, consider the ray in the second quadrant making a \\(30^{\\circ}\\) angle with the negative x-axis (which is at \\(180^{\\circ}\\)). It is \\(30^{\\circ}\\) \"before\" the negative x-axis.",
+              "work": "Standard angle \\(= 180^{\\circ} - 30^{\\circ} = 150^{\\circ}\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "explain": "To find another positive angle, we add one full revolution.",
+              "work": "Second positive angle \\(= 150^{\\circ} + 360^{\\circ} = 510^{\\circ}\\)"
+            },
+            {
+              "explain": "To find the negative angles, subtract \\(360^{\\circ}\\) successively.",
+              "work": "First negative angle \\(= 150^{\\circ} - 360^{\\circ} = -210^{\\circ}\\)\nSecond negative angle \\(= -210^{\\circ} - 360^{\\circ} = -570^{\\circ}\\)"
+            },
+            {
+              "explain": "List the required angles.",
               "work": "\\(\\text{Positive: } 150^{\\circ}, 510^{\\circ} \\quad \\text{Negative: } -210^{\\circ}, -570^{\\circ}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Positive: 150°, 510°.\nNegative: -210°, -570°."
-            },
-            {
-              "explain": "Final answer: Positive: 150°, 510°.\nNegative: -210°, -570°.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Positive: 150°, 510°.\nNegative: -210°, -570°."
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "Positive: \\(150^{\\circ}, 510^{\\circ}\\). Negative: \\(-210^{\\circ}, -570^{\\circ}\\).",
+            "Positive: \\(210^{\\circ}, 570^{\\circ}\\). Negative: \\(-150^{\\circ}, -510^{\\circ}\\).",
+            "Positive: \\(120^{\\circ}, 480^{\\circ}\\). Negative: \\(-240^{\\circ}, -600^{\\circ}\\).",
+            "Positive: \\(330^{\\circ}, 690^{\\circ}\\). Negative: \\(-30^{\\circ}, -390^{\\circ}\\)."
+          ],
+          "figure": {
+            "svg": "fig:11a6c0005c"
+          }
         },
         {
           "id": "y11a-6c-q5d",

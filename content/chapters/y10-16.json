@@ -866,29 +866,29 @@
           "stem": "Given that \\(a \\propto \\sqrt{b}\\), what is the effect, correct to two decimal places, on \\(a\\) when \\(b\\) is increased by \\(25\\%\\)?",
           "options": [
             "increased by 11.80%",
-            "The opposite statement is true.",
-            "This is only true for acute angles.",
-            "This only holds when the triangle is isosceles."
+            "increased by 25.00%",
+            "increased by 12.50%",
+            "increased by 5.00%"
           ],
           "answer": 0,
           "hint": "If \\(b\\) increases by 25%, the new \\(b\\) is \\(1.25b\\). Find the new \\(a\\) and compare.",
           "solution": "a' = k*sqrt(1.25b) = a*sqrt(1.25) ~ a*1.1180. Increase of 11.80%.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Direct proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Write the proportionality equation with a constant \\(k\\).",
               "work": "\\(a = k\\sqrt{b}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "If \\(b\\) increases by 25%, the new value of \\(b\\) is \\(1.25b\\). Substitute this into the equation.",
               "work": "\\(a' = k\\sqrt{1.25b} = k\\sqrt{b} \\times \\sqrt{1.25}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "explain": "Substitute \\(a = k\\sqrt{b}\\) and calculate \\(\\sqrt{1.25}\\).",
               "work": "\\(a' = a \\times \\sqrt{1.25} \\approx a \\times 1.1180\\)"
             },
             {
-              "explain": "Final answer: increased by 11.80%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "increased by 11.80%"
+              "explain": "This means the new \\(a\\) is approximately \\(111.80\\%\\) of the original \\(a\\), which is an increase of \\(11.80\\%\\).",
+              "work": "\\(\\text{increased by } 11.80\\%\\)"
             }
           ],
           "timeLimit": 90,
@@ -901,29 +901,29 @@
           "stem": "Given that \\(a \\propto \\sqrt{b}\\), what is the effect, correct to two decimal places, on \\(a\\) when \\(b\\) is decreased by \\(8\\%\\)?",
           "options": [
             "decreased by 4.08%",
-            "The opposite statement is true.",
-            "This is only true for acute angles.",
-            "This only holds when the triangle is isosceles."
+            "decreased by 8.00%",
+            "decreased by 4.00%",
+            "decreased by 16.00%"
           ],
           "answer": 0,
           "hint": "If \\(b\\) decreases by 8%, the new \\(b\\) is \\(0.92b\\).",
           "solution": "a' = k*sqrt(0.92b) = a*sqrt(0.92) ~ a*0.9592. Decrease of 4.08%.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Direct proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Write the proportionality equation with a constant \\(k\\).",
               "work": "\\(a = k\\sqrt{b}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "If \\(b\\) decreases by 8%, the new value of \\(b\\) is \\(0.92b\\). Substitute this into the equation.",
               "work": "\\(a' = k\\sqrt{0.92b} = a \\times \\sqrt{0.92}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "explain": "Calculate \\(\\sqrt{0.92}\\).",
               "work": "\\(a' \\approx a \\times 0.9592\\)"
             },
             {
-              "explain": "Final answer: decreased by 4.08%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "decreased by 4.08%"
+              "explain": "This means the new \\(a\\) is approximately \\(95.92\\%\\) of the original \\(a\\), which is a decrease of \\(100\\% - 95.92\\% = 4.08\\%\\).",
+              "work": "\\(\\text{decreased by } 4.08\\%\\)"
             }
           ],
           "timeLimit": 90,
@@ -4315,33 +4315,38 @@
         },
         {
           "id": "y10-16d-q8a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "\\(a\\) is inversely proportional to \\(b^2\\). If \\(a = 8\\) when \\(b = 2\\), find \\(a\\) when \\(b = 4\\).",
-          "answer": "2",
+          "answer": 2,
           "hint": "First find the constant \\(k\\) in \\(a = \\frac{k}{b^2}\\).",
           "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "Set up the inverse proportion equation with a constant \\(k\\).",
               "work": "\\(a = \\frac{k}{b^2}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(8 = \\frac{k}{2^2} = \\frac{k}{4}\\)"
+              "explain": "Substitute the known values \\(a = 8\\) and \\(b = 2\\) to find \\(k\\).",
+              "work": "\\(8 = \\frac{k}{2^2} \\implies 8 = \\frac{k}{4}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(k = 32\\)"
+              "explain": "Solve for the constant \\(k\\).",
+              "work": "\\(k = 8 \\times 4 = 32\\)"
             },
             {
-              "explain": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(2\\)"
+              "explain": "Now substitute \\(k = 32\\) and \\(b = 4\\) into the original equation to find the new value of \\(a\\).",
+              "work": "\\(a = \\frac{32}{4^2} = \\frac{32}{16} = 2\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\(0.5\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(4\\)"
+          ]
         },
         {
           "id": "y10-16d-q8b",
@@ -4359,20 +4364,20 @@
           "solution": "a = 32/b^2\nWhen a = 9:\n9 = 32/b^2\nb^2 = 32/9\nb = \\sqrt{32}/3 = 4\\sqrt{2}/3",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "From the given information, we know the constant of proportionality is \\(k = 32\\).",
               "work": "\\(a = \\frac{32}{b^2}\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "Substitute \\(a = 9\\) into the equation.",
               "work": "\\(9 = \\frac{32}{b^2}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "explain": "Rearrange to solve for \\(b^2\\).",
               "work": "\\(b^2 = \\frac{32}{9}\\)"
             },
             {
-              "explain": "Final answer: 4\\sqrt{2}/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(4\\sqrt{2}/3\\)"
+              "explain": "Take the positive square root to find the exact positive value of \\(b\\).",
+              "work": "\\(b = \\frac{\\sqrt{32}}{\\sqrt{9}} = \\frac{4\\sqrt{2}}{3}\\)"
             }
           ],
           "timeLimit": 90,
