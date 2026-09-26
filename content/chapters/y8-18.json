@@ -726,8 +726,8 @@
         {
           "id": "wghs2023-y8-s3q3aii",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "The point \\(C(1, -2)\\) is plotted on a Cartesian plane. In which quadrant is point \\(C\\)?",
+          "difficulty": "easy",
           "options": [
             "Quadrant IV",
             "Quadrant I",
@@ -741,11 +741,13 @@
               "work": "\\(x > 0, y < 0 \\Rightarrow \\text{Quadrant IV}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
