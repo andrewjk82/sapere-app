@@ -3962,8 +3962,8 @@
         {
           "id": "wghs2023-y8-s2q12",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Jamie started a bus journey at 11:15 am on Tuesday. The journey took 19 hours and 27 minutes. At what time and day did she arrive?",
+          "difficulty": "medium",
           "options": [
             "\\(6{:}42 \\text{ am Wednesday}\\)",
             "\\(6{:}42 \\text{ am Thursday}\\)",
@@ -3981,11 +3981,13 @@
               "work": "\\(6{:}15 + 27 \\text{ min} = 6{:}42 \\text{ am Wednesday}\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
