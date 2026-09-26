@@ -1419,8 +1419,11 @@
         {
           "id": "wghs2023-y8-s2q14f",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Mrs Wheatley left home at 11 am, walked 8 km over 2 hours, stopped for lunch for 2 hours, then walked home arriving at 5 pm. At approximately what time did Mrs Coffey and Mrs Wheatley cross paths on the return journey?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "fig:ac24b8f9ea"
+          },
           "options": [
             "\\(\\text{Approximately 2:00 pm}\\)",
             "\\(\\text{Approximately 3:00 pm}\\)",
@@ -1445,14 +1448,13 @@
               }
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
-          },
-          "figure": {
-            "svg": "fig:ac24b8f9ea"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
