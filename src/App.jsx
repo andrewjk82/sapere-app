@@ -736,6 +736,8 @@ function App() {
     } catch { /* ignore */ }
   }, [activeTab]);
   const [reportsInitialTab, setReportsInitialTab] = useState('reports');
+  // Question id to open in the Question Bank when jumping there from Reports & Review.
+  const [bankJumpId, setBankJumpId] = useState(null);
   const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [selectedStudentId, setSelectedStudentId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -1369,7 +1371,7 @@ function App() {
       case 'Feedback':
         return <Feedback setActiveTab={handleTabChange} />;
       case 'Curriculum':
-        return <Curriculum />;
+        return <Curriculum initialSearchId={bankJumpId} onInitialSearchConsumed={() => setBankJumpId(null)} />;
       case 'ExamPrep':
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
       case 'Library':
@@ -1379,6 +1381,7 @@ function App() {
           <ReportsAdmin
             initialViewMode={reportsInitialTab}
             setInitialViewMode={setReportsInitialTab}
+            onOpenInBank={(id) => { setBankJumpId(id); handleTabChange('Curriculum'); }}
           />
         );
       case 'DnaWarmupReview':

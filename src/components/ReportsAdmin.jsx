@@ -225,7 +225,15 @@ const readLiveQuestion = async (qid) => {
   return snap.exists() ? { id: snap.id, ...snap.data() } : null;
 };
 
-const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
+const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenInBank }) => {
+  // A report often snapshots a sub-question's own id; open its parent so the bank finds it.
+  const openInBank = async (qid) => {
+    if (!qid || !onOpenInBank) return;
+    let target = qid;
+    try { if (cdnEnabledAtAll()) { const d = await adminGetQuestion(qid); if (d?.id) target = d.id; } } catch { /* fall back to the raw id */ }
+    onOpenInBank(target);
+  };
+  const idChipProps = (qid) => (onOpenInBank ? { role: 'button', title: 'Open in Question Bank', onClick: () => openInBank(qid) } : {});
   const { showToast } = useToast();
   const [viewMode, setViewMode] = useState(initialViewMode);
   
@@ -1013,7 +1021,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                   <SourceBadge report={report} />
                   <span style={{ padding: '2px 8px', background: '#f1f5f9', borderRadius: '12px', fontWeight: 600 }}>{report.questionData?.type || 'Multiple Choice'}</span>
                   {(report.questionId || report.questionData?.id) && (
-                    <span style={{ padding: '2px 10px', background: '#ede9fe', color: '#6d28d9', borderRadius: '12px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.78rem' }}>
+                    <span {...idChipProps(report.questionId || report.questionData?.id)} style={{ padding: '2px 10px', background: '#ede9fe', color: '#6d28d9', borderRadius: '12px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.78rem', ...(onOpenInBank ? { cursor: 'pointer', textDecoration: 'underline dotted' } : {}) }}>
                       ID: {report.questionId || report.questionData?.id}
                     </span>
                   )}
@@ -1126,7 +1134,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                   <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap', marginTop: '2px' }}>
                     <span style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: 600 }}>{item.year} • {item.chapterTitle}</span>
                     {item.questionId && (
-                      <span style={{ padding: '1px 8px', background: '#ede9fe', color: '#6d28d9', borderRadius: '10px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.72rem' }}>
+                      <span {...idChipProps(item.questionId)} style={{ padding: '1px 8px', background: '#ede9fe', color: '#6d28d9', borderRadius: '10px', fontWeight: 700, fontFamily: 'monospace', fontSize: '0.72rem', ...(onOpenInBank ? { cursor: 'pointer', textDecoration: 'underline dotted' } : {}) }}>
                         ID: {item.questionId}
                       </span>
                     )}

@@ -130,7 +130,7 @@ const saveCachedQuestionCounts = (counts, version = 0) => {
   }
 };
 
-const Curriculum = () => {
+const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
   // Heavy admin-only seed data + registry are code-split into curriculumSeeds.js
@@ -218,7 +218,8 @@ const Curriculum = () => {
   // QuestionBankPage to run one bounded documentId() prefix-range query
   // instead of reading a chapter's question_index, so this never scans the
   // full questions collection no matter how many chapters exist.
-  const [selectedGlobalSearch, setSelectedGlobalSearch] = useState(null);
+  const [selectedGlobalSearch, setSelectedGlobalSearch] = useState(initialSearchId);
+  useEffect(() => { if (initialSearchId) onInitialSearchConsumed?.(); }, [initialSearchId, onInitialSearchConsumed]);
   const [previewLesson, setPreviewLesson] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   // Live "questions changed" signal. Any add/delete path bumps
