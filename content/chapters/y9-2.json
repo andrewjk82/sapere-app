@@ -2392,8 +2392,8 @@
         {
           "id": "killara2023-y9-t4a-q17b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\(3\\sqrt{2} \\times 2\\sqrt{7}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(6\\sqrt{14}\\\\)",
             "\\\\(5\\sqrt{14}\\\\)",
@@ -2407,6 +2407,7 @@
               "work": "\\\\( (3 \\times 2) \\sqrt{2 \\times 7} = 6\\sqrt{14}\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
