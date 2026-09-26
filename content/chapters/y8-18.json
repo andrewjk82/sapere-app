@@ -571,6 +571,287 @@
             "exam:year8ch18"
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs2023-y8-s3q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly completes the table of values for \\(y = 3x - 4\\) when \\(x = -3, -2, -1, 0, 1, 2, 3\\)?",
+          "options": [
+            "\\(-13, -10, -7, -4, -1, 2, 5\\)",
+            "\\(-9, -6, -3, 0, 3, 6, 9\\)",
+            "\\(-7, -4, -1, 2, 5, 8, 11\\)",
+            "\\(-13, -10, -7, -4, 1, 2, 5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute each x value into \\(y = 3x - 4\\).",
+              "work": "\\(x=-3: y=3(-3)-4=-9-4=-13\\)"
+            },
+            {
+              "explain": "Continue for all values.",
+              "work": "\\(-13, -10, -7, -4, -1, 2, 5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following correctly completes the table of values for \\(12x + 3y = 6\\) when \\(x = -2, -1, 0, 1, 2\\)?",
+          "options": [
+            "\\(10, 6, 2, -2, -6\\)",
+            "\\(-10, -6, 2, 6, 10\\)",
+            "\\(2, 2, 2, 2, 2\\)",
+            "\\(-18, -10, 6, 18, 26\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Rearrange to \\(y = \\frac{6-12x}{3} = 2 - 4x\\).",
+              "work": "\\(y = 2 - 4x\\)"
+            },
+            {
+              "explain": "Substitute each x value.",
+              "work": "\\(x=-2: y=2-4(-2)=10; x=-1: y=6; x=0: y=2; x=1: y=-2; x=2: y=-6\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A table of values gives: \\(x = -2, -1, 0, 1, 2\\) and \\(y = 2, 2.5, 3, 3.5, 4\\). What is the rule?",
+          "options": [
+            "\\(y = 0.5x + 3\\)",
+            "\\(y = 2x + 3\\)",
+            "\\(y = x + 2\\)",
+            "\\(y = 0.5x + 2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find gradient: as x increases by 1, y increases by 0.5.",
+              "work": "\\(m = \\frac{\\Delta y}{\\Delta x} = 0.5\\)"
+            },
+            {
+              "explain": "Use y-intercept (when x=0, y=3).",
+              "work": "\\(y = 0.5x + 3\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A table of values gives: \\(x = -2, -1, 0, 1, 2\\) and \\(y = 9, 5, 1, -3, -7\\). What is the rule?",
+          "options": [
+            "\\(y = -4x + 1\\)",
+            "\\(y = 4x + 1\\)",
+            "\\(y = -4x - 1\\)",
+            "\\(y = -2x + 1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find gradient: as x increases by 1, y decreases by 4.",
+              "work": "\\(m = -4\\)"
+            },
+            {
+              "explain": "Use y-intercept (when x=0, y=1).",
+              "work": "\\(y = -4x + 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q3ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The point \\(A(-3, 4)\\) is plotted on a Cartesian plane. In which quadrant is point \\(A\\)?",
+          "options": [
+            "Quadrant II",
+            "Quadrant I",
+            "Quadrant III",
+            "Quadrant IV"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Negative x, positive y → Quadrant II.",
+              "work": "\\(x < 0, y > 0 \\Rightarrow \\text{Quadrant II}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q3aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The point \\(C(1, -2)\\) is plotted on a Cartesian plane. In which quadrant is point \\(C\\)?",
+          "options": [
+            "Quadrant IV",
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Positive x, negative y → Quadrant IV.",
+              "work": "\\(x > 0, y < 0 \\Rightarrow \\text{Quadrant IV}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q3ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The point \\(E(-4, 0)\\) is plotted on a Cartesian plane. On which axis is \\(E\\) located?",
+          "options": [
+            "The \\(x\\)-axis",
+            "The \\(y\\)-axis",
+            "Origin",
+            "No axis"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "When y = 0, the point lies on the x-axis.",
+              "work": "\\(E(-4, 0) \\text{ lies on the } x\\text{-axis}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What special name do we give to the point \\(O(0, 0)\\)?",
+          "options": [
+            "The origin",
+            "The y-intercept",
+            "The x-intercept",
+            "The midpoint"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The point (0,0) is called the origin.",
+              "work": "\\((0,0) = \\text{the origin}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the coordinates of the point of intersection of the lines \\(y = -2x + 4\\) and \\(y = \\dfrac{3}{2}x - 1\\).",
+          "options": [
+            "\\(\\left(\\dfrac{10}{7},\\, \\dfrac{8}{7}\\right)\\)",
+            "\\((2, 0)\\)",
+            "\\((1, 2)\\)",
+            "\\((0, 4)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set the equations equal to each other.",
+              "work": "\\(-2x + 4 = \\dfrac{3}{2}x - 1\\)"
+            },
+            {
+              "explain": "Multiply through by 2 to eliminate fractions.",
+              "work": "\\(-4x + 8 = 3x - 2\\)"
+            },
+            {
+              "explain": "Collect \\(x\\) terms and solve.",
+              "work": "\\(10 = 7x \\Rightarrow x = \\dfrac{10}{7}\\)"
+            },
+            {
+              "explain": "Substitute back into \\(y = -2x + 4\\).",
+              "work": "\\(y = -\\dfrac{20}{7} + 4 = \\dfrac{8}{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-s3q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On a Cartesian plane, the points \\(E(-4, 0)\\) and \\(F(0, 3)\\) are plotted. On which axis is \\(F(0, 3)\\) located?",
+          "options": [
+            "The \\(y\\)-axis",
+            "The \\(x\\)-axis",
+            "The origin",
+            "Quadrant I"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A point on the \\(y\\)-axis has its \\(x\\)-coordinate equal to 0.",
+              "work": "\\(F(0, 3)\\) has \\(x = 0\\), so it lies on the \\(y\\)-axis."
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          },
+          "figure": {
+            "svg": "fig:6ba08cced6"
+          }
         }
       ]
     },

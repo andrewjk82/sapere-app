@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 210" width="340" height="210">
+  <!-- Background -->
+  <rect width="340" height="210" fill="#f9f9f9" rx="6"/>
+  <!-- Grid -->
+  <g stroke="#e0e0e0" stroke-width="0.7">
+    <line x1="60" y1="20" x2="60" y2="180"/><line x1="90" y1="20" x2="90" y2="180"/><line x1="120" y1="20" x2="120" y2="180"/><line x1="150" y1="20" x2="150" y2="180"/><line x1="180" y1="20" x2="180" y2="180"/><line x1="210" y1="20" x2="210" y2="180"/><line x1="240" y1="20" x2="240" y2="180"/><line x1="270" y1="20" x2="270" y2="180"/><line x1="300" y1="20" x2="300" y2="180"/>
+    <line x1="60" y1="180" x2="300" y2="180"/><line x1="60" y1="148" x2="300" y2="148"/><line x1="60" y1="116" x2="300" y2="116"/><line x1="60" y1="84" x2="300" y2="84"/><line x1="60" y1="52" x2="300" y2="52"/><line x1="60" y1="20" x2="300" y2="20"/>
+  </g>
+  <!-- Axes -->
+  <line x1="60" y1="180" x2="305" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="60" y1="180" x2="60" y2="15" stroke="#333" stroke-width="1.5"/>
+  <!-- X axis labels -->
+  <text x="50" y="194" font-size="8.5" fill="#444">9am</text><text x="80" y="194" font-size="8.5" fill="#444">10am</text><text x="110" y="194" font-size="8.5" fill="#444">11am</text><text x="140" y="194" font-size="8.5" fill="#444">12pm</text><text x="170" y="194" font-size="8.5" fill="#444">1pm</text><text x="200" y="194" font-size="8.5" fill="#444">2pm</text><text x="230" y="194" font-size="8.5" fill="#444">3pm</text><text x="260" y="194" font-size="8.5" fill="#444">4pm</text><text x="290" y="194" font-size="8.5" fill="#444">5pm</text>
+  <!-- Y axis labels -->
+  <text x="32" y="184" font-size="9" fill="#444" text-anchor="end">0 km</text><text x="32" y="152" font-size="9" fill="#444" text-anchor="end">4 km</text><text x="32" y="120" font-size="9" fill="#444" text-anchor="end">8 km</text><text x="32" y="88" font-size="9" fill="#444" text-anchor="end">12 km</text><text x="32" y="56" font-size="9" fill="#444" text-anchor="end">16 km</text><text x="32" y="24" font-size="9" fill="#444" text-anchor="end">20 km</text>
+  <!-- Axis titles -->
+  <text x="180" y="205" font-size="10" fill="#333" text-anchor="middle">Time of Day</text>
+  <text x="12" y="100" font-size="10" fill="#333" text-anchor="middle" transform="rotate(-90,12,100)">Distance (km)</text>
+  <!-- Mrs Coffey's route (base, grey) -->
+  <polyline points="60,180 90,100 105,100 150,52 180,52 240,180" fill="none" stroke="#bbb" stroke-width="2" stroke-dasharray="4,2"/>
+  <!-- Highlight segments -->
+  <line x1="150" y1="52" x2="180" y2="52" stroke="#27ae60" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <!-- Mrs Coffey's route (solid red overlay) -->
+  <polyline points="60,180 90,100 105,100 150,52 180,52 240,180" fill="none" stroke="#e74c3c" stroke-width="2.5"/>
+  <!-- Mrs Wheatley's route -->
+  
+  <!-- Dots on Coffey's route -->
+  <circle cx="60" cy="180" r="3" fill="#e74c3c"/><circle cx="90" cy="100" r="3" fill="#e74c3c"/><circle cx="105" cy="100" r="3" fill="#e74c3c"/><circle cx="150" cy="52" r="3" fill="#e74c3c"/><circle cx="180" cy="52" r="3" fill="#e74c3c"/><circle cx="240" cy="180" r="3" fill="#e74c3c"/>
+  <!-- Highlight points -->
+  <circle cx="150" cy="52" r="5" fill="#27ae60" stroke="white" stroke-width="1.5"/><text x="157" y="47" font-size="9" fill="#27ae60" font-weight="bold">12pm</text><circle cx="180" cy="52" r="5" fill="#27ae60" stroke="white" stroke-width="1.5"/><text x="187" y="47" font-size="9" fill="#27ae60" font-weight="bold">1pm</text>
+  <!-- Legend -->
+  <rect x="62" y="22" width="95" height="20" fill="white" stroke="#ddd" rx="3"/>
+  <line x1="68" y1="32" x2="82" y2="32" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="85" y="36" font-size="8.5" fill="#e74c3c">Mrs Coffey</text>
+</svg>

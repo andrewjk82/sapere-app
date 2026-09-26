@@ -2179,6 +2179,180 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2023-y8-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(2x + 4 = 12\\).",
+          "options": [
+            "\\(x = 4\\)",
+            "\\(x = 8\\)",
+            "\\(x = 6\\)",
+            "\\(x = 3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Subtract 4 from both sides.",
+              "work": "\\(2x = 12 - 4 = 8\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x = \\dfrac{8}{2} = 4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(\\dfrac{x}{2} - 6 = -2\\).",
+          "options": [
+            "\\(x = 8\\)",
+            "\\(x = 4\\)",
+            "\\(x = -16\\)",
+            "\\(x = 16\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Add 6 to both sides.",
+              "work": "\\(\\dfrac{x}{2} = -2 + 6 = 4\\)"
+            },
+            {
+              "explain": "Multiply both sides by 2.",
+              "work": "\\(x = 4 \\times 2 = 8\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(\\dfrac{3x + 5}{4} = 2\\).",
+          "options": [
+            "\\(x = 1\\)",
+            "\\(x = 3\\)",
+            "\\(x = 2\\)",
+            "\\(x = -1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply both sides by 4.",
+              "work": "\\(3x + 5 = 8\\)"
+            },
+            {
+              "explain": "Subtract 5 from both sides.",
+              "work": "\\(3x = 3\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\(x = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(5(c + 4) = 2(2c - 1)\\).",
+          "options": [
+            "\\(c = -22\\)",
+            "\\(c = 22\\)",
+            "\\(c = -18\\)",
+            "\\(c = 2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(5c + 20 = 4c - 2\\)"
+            },
+            {
+              "explain": "Subtract \\(4c\\) from both sides.",
+              "work": "\\(c + 20 = -2\\)"
+            },
+            {
+              "explain": "Subtract 20 from both sides.",
+              "work": "\\(c = -22\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(m^2 = 81\\).",
+          "options": [
+            "\\(m = \\pm 9\\)",
+            "\\(m = 9\\)",
+            "\\(m = \\pm 40.5\\)",
+            "\\(m = \\pm 81\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Take the square root of both sides. Remember both positive and negative roots.",
+              "work": "\\(m = \\pm\\sqrt{81} = \\pm 9\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(x^2 = 66\\). Write your answer to two decimal places.",
+          "options": [
+            "\\(x \\approx \\pm 8.12\\)",
+            "\\(x \\approx \\pm 8.12\\)",
+            "\\(x \\approx 8.12\\)",
+            "\\(x \\approx 33\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(x = \\pm\\sqrt{66} \\approx \\pm 8.12\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
         }
       ]
     },
@@ -2261,6 +2435,39 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2023-y8-q1f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(2y + 18 = 11 - 5y\\).",
+          "options": [
+            "\\(y = -1\\)",
+            "\\(y = 1\\)",
+            "\\(y = -7\\)",
+            "\\(y = 7\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Add \\(5y\\) to both sides.",
+              "work": "\\(7y + 18 = 11\\)"
+            },
+            {
+              "explain": "Subtract 18 from both sides.",
+              "work": "\\(7y = -7\\)"
+            },
+            {
+              "explain": "Divide by 7.",
+              "work": "\\(y = -1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
         }
       ]
     },
@@ -2303,6 +2510,76 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs2023-y8-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If a number has 3 added to it and then is doubled, the result is equal to 5. Find the number.",
+          "options": [
+            "\\(-0.5\\)",
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(0.5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let the number be \\(n\\). Write an equation.",
+              "work": "\\(2(n + 3) = 5\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(2n + 6 = 5\\)"
+            },
+            {
+              "explain": "Subtract 6.",
+              "work": "\\(2n = -1\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(n = -0.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "wghs2023-y8-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tania paid a plumber a total of \\(\\\\). The plumber charged a one-off fee of \\(\\\\) and then \\(\\\\) per hour. For how many hours did the plumber work?",
+          "options": [
+            "\\(22 \\text{ hours}\\)",
+            "\\(20 \\text{ hours}\\)",
+            "\\(24 \\text{ hours}\\)",
+            "\\(18 \\text{ hours}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let \\(h\\) = number of hours. Write an equation.",
+              "work": "\\(150 + 125h = 2900\\)"
+            },
+            {
+              "explain": "Subtract 150.",
+              "work": "\\(125h = 2750\\)"
+            },
+            {
+              "explain": "Divide by 125.",
+              "work": "\\(h = 22 \\text{ hours}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8"
+          }
         }
       ]
     },

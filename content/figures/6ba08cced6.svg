@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -5 14 10" width="280" height="200">
+  <g stroke="#e8e8e8" stroke-width="0.1">
+    <line x1="-6" y1="-4" x2="-6" y2="4"/><line x1="-6" y1="-10" x2="6" y2="-10"/><line x1="-5" y1="-4" x2="-5" y2="4"/><line x1="-6" y1="-9" x2="6" y2="-9"/><line x1="-4" y1="-4" x2="-4" y2="4"/><line x1="-6" y1="-8" x2="6" y2="-8"/><line x1="-3" y1="-4" x2="-3" y2="4"/><line x1="-6" y1="-7" x2="6" y2="-7"/><line x1="-2" y1="-4" x2="-2" y2="4"/><line x1="-6" y1="-6" x2="6" y2="-6"/><line x1="-1" y1="-4" x2="-1" y2="4"/><line x1="-6" y1="-5" x2="6" y2="-5"/><line x1="0" y1="-4" x2="0" y2="4"/><line x1="-6" y1="-4" x2="6" y2="-4"/><line x1="1" y1="-4" x2="1" y2="4"/><line x1="-6" y1="-3" x2="6" y2="-3"/><line x1="2" y1="-4" x2="2" y2="4"/><line x1="-6" y1="-2" x2="6" y2="-2"/><line x1="3" y1="-4" x2="3" y2="4"/><line x1="-6" y1="-1" x2="6" y2="-1"/><line x1="4" y1="-4" x2="4" y2="4"/><line x1="-6" y1="0" x2="6" y2="0"/><line x1="5" y1="-4" x2="5" y2="4"/><line x1="-6" y1="1" x2="6" y2="1"/><line x1="6" y1="-4" x2="6" y2="4"/><line x1="-6" y1="2" x2="6" y2="2"/>
+  </g>
+  <line x1="-6.5" y1="0" x2="6.5" y2="0" stroke="#333" stroke-width="0.15"/>
+  <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="#333" stroke-width="0.15"/>
+  <polygon points="6.5,0 6.1,-0.15 6.1,0.15" fill="#333"/>
+  <polygon points="0,-4.5 -0.15,-4.1 0.15,-4.1" fill="#333"/>
+  <text x="6.7" y="0.35" font-size="0.6" fill="#333">x</text>
+  <text x="0.15" y="-4.7" font-size="0.6" fill="#333">y</text>
+  <text x="-5.15" y="0.6" font-size="0.45" fill="#888">-5</text><text x="-0.6" y="5.18" font-size="0.45" fill="#888">-5</text><text x="-4.15" y="0.6" font-size="0.45" fill="#888">-4</text><text x="-0.6" y="4.18" font-size="0.45" fill="#888">-4</text><text x="-3.15" y="0.6" font-size="0.45" fill="#888">-3</text><text x="-0.6" y="3.18" font-size="0.45" fill="#888">-3</text><text x="-2.15" y="0.6" font-size="0.45" fill="#888">-2</text><text x="-0.6" y="2.18" font-size="0.45" fill="#888">-2</text><text x="-1.15" y="0.6" font-size="0.45" fill="#888">-1</text><text x="-0.6" y="1.18" font-size="0.45" fill="#888">-1</text><text x="0.85" y="0.6" font-size="0.45" fill="#888">1</text><text x="-0.6" y="-0.8200000000000001" font-size="0.45" fill="#888">1</text><text x="1.85" y="0.6" font-size="0.45" fill="#888">2</text><text x="-0.6" y="-1.82" font-size="0.45" fill="#888">2</text><text x="2.85" y="0.6" font-size="0.45" fill="#888">3</text><text x="-0.6" y="-2.82" font-size="0.45" fill="#888">3</text><text x="3.85" y="0.6" font-size="0.45" fill="#888">4</text><text x="-0.6" y="-3.82" font-size="0.45" fill="#888">4</text><text x="4.85" y="0.6" font-size="0.45" fill="#888">5</text><text x="-0.6" y="-4.82" font-size="0.45" fill="#888">5</text>
+  <!-- E(-4,0) on x-axis -->
+  <circle cx="-4" cy="0" r="0.22" fill="#3498db" stroke="white" stroke-width="0.08"/>
+  <text x="-4.5" y="-0.4" font-size="0.55" fill="#3498db" font-weight="bold">E(-4,0)</text>
+  <!-- F(0,3) on y-axis - highlighted -->
+  <circle cx="0" cy="-3" r="0.28" fill="#e74c3c" stroke="white" stroke-width="0.1"/>
+  <text x="0.35" y="-3.2" font-size="0.55" fill="#e74c3c" font-weight="bold">F(0,3)</text>
+  <!-- Highlight y-axis -->
+  <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="#e74c3c" stroke-width="0.25" opacity="0.4"/>
+</svg>
