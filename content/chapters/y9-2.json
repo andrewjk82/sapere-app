@@ -2520,8 +2520,8 @@
         {
           "id": "killara2023-y9-t4a-q29",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Use the expansion of \\\\((a - b)^2 = a^2 - 2ab + b^2\\\\) to square \\\\(\\sqrt{6 + \\sqrt{11}} - \\sqrt{6 - \\sqrt{11}}\\\\), and hence simplify it.",
+          "difficulty": "hard",
           "options": [
             "\\\\(\\sqrt{2}\\\\)",
             "2",
@@ -2547,6 +2547,7 @@
               "work": "\\\\(\\sqrt{2}\\\\)"
             }
           ],
+          "xp": 3,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
