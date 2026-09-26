@@ -1811,8 +1811,11 @@
         {
           "id": "killara2023-y9-t4a-q30",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "On a golf course, the tree is a distance of 130m due west from the pin (the flag stick). Bruce’s first shot hits the ball 100m but not at the correct angle. On his second shot, Bruce hits the ball 35m and gets it in the hole. Find the bearing that he hits his first stroke (to the nearest degree).",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "fig:1c5c0f2780"
+          },
           "options": [
             "081°",
             "009°",
@@ -1822,8 +1825,7 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "The path forms a triangle with sides 130m, 100m, and 35m. We want to find the angle \\\\(a\\\\) at the tree.",
-              "work": ""
+              "explain": "The path forms a triangle with sides 130m, 100m, and 35m. We want to find the angle \\\\(a\\\\) at the tree."
             },
             {
               "explain": "Use the Cosine Rule to find \\\\(a\\\\).",
@@ -1842,14 +1844,12 @@
               "work": "\\\\(090^\\circ - 9^\\circ = 081^\\circ\\\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:1c5c0f2780"
           }
         }
       ]
