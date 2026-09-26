@@ -165,51 +165,65 @@
         },
         {
           "id": "y7-1a-q2",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that the midpoint of the interval on the number line between \\( A = -16 \\) and \\( B = 17 \\) is exactly \\( 0.5 \\). Explain your reasoning step-by-step.",
-          "answer": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-16 + 17}{2} = \\frac{1}{2} = 0.5 \\).",
-          "solution": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-16 + 17}{2} = \\frac{1}{2} = 0.5 \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -16 \\) and point \\( B \\) is at \\( 17 \\). What is the midpoint of \\( AB \\)?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "State the midpoint formula for two points on a number line.",
+              "explain": "The midpoint is halfway between A and B: add them, then divide by 2.",
               "work": "\\( M = \\frac{A + B}{2} \\)"
             },
             {
-              "explain": "Substitute the given coordinates into the formula.",
-              "work": "\\( M = \\frac{-16 + 17}{2} \\)"
-            },
-            {
-              "explain": "Simplify the numerator and compute the final coordinate.",
-              "work": "\\( M = \\frac{1}{2} = 0.5 \\)"
+              "explain": "Substitute the coordinates.",
+              "work": "\\( M = \\frac{-16 + 17}{2} = \\frac{1}{2} = 0.5 \\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "\\(0.5\\)",
+            "\\(1\\)",
+            "\\(16.5\\)",
+            "\\(-0.5\\)"
+          ],
+          "hint": "Add the two coordinates, then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "The midpoint is halfway: add the two coordinates and divide by 2."
+            }
+          ]
         },
         {
           "id": "y7-1a-q3",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that the midpoint of the interval on the number line between \\( A = -24 \\) and \\( B = 22 \\) is exactly \\( -1 \\). Explain your reasoning step-by-step.",
-          "answer": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-24 + 22}{2} = \\frac{-2}{2} = -1 \\).",
-          "solution": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-24 + 22}{2} = \\frac{-2}{2} = -1 \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -24 \\) and point \\( B \\) is at \\( 22 \\). What is the midpoint of \\( AB \\)?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "State the midpoint formula for two points on a number line.",
+              "explain": "The midpoint is halfway between A and B: add them, then divide by 2.",
               "work": "\\( M = \\frac{A + B}{2} \\)"
             },
             {
-              "explain": "Substitute the given coordinates into the formula.",
-              "work": "\\( M = \\frac{-24 + 22}{2} \\)"
-            },
-            {
-              "explain": "Simplify the numerator and compute the final coordinate.",
-              "work": "\\( M = \\frac{-2}{2} = -1 \\)"
+              "explain": "Substitute the coordinates.",
+              "work": "\\( M = \\frac{-24 + 22}{2} = \\frac{-2}{2} = -1 \\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(23\\)",
+            "\\(1\\)"
+          ],
+          "hint": "Add the two coordinates, then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "The midpoint is halfway: add the two coordinates and divide by 2."
+            }
+          ]
         },
         {
           "id": "y7-1a-q4",
@@ -255,27 +269,34 @@
         },
         {
           "id": "y7-1a-q5",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that the midpoint of the interval on the number line between \\( A = -40 \\) and \\( B = 32 \\) is exactly \\( -4 \\). Explain your reasoning step-by-step.",
-          "answer": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-40 + 32}{2} = \\frac{-8}{2} = -4 \\).",
-          "solution": "The midpoint formula is \\( M = \\frac{A + B}{2} \\). Substituting the values: \\( M = \\frac{-40 + 32}{2} = \\frac{-8}{2} = -4 \\).",
+          "stem": "On a number line, point \\( A \\) is at \\( -40 \\) and point \\( B \\) is at \\( 32 \\). What is the midpoint of \\( AB \\)?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "State the midpoint formula for two points on a number line.",
+              "explain": "The midpoint is halfway between A and B: add them, then divide by 2.",
               "work": "\\( M = \\frac{A + B}{2} \\)"
             },
             {
-              "explain": "Substitute the given coordinates into the formula.",
-              "work": "\\( M = \\frac{-40 + 32}{2} \\)"
-            },
-            {
-              "explain": "Simplify the numerator and compute the final coordinate.",
-              "work": "\\( M = \\frac{-8}{2} = -4 \\)"
+              "explain": "Substitute the coordinates.",
+              "work": "\\( M = \\frac{-40 + 32}{2} = \\frac{-8}{2} = -4 \\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "\\(-4\\)",
+            "\\(-8\\)",
+            "\\(36\\)",
+            "\\(4\\)"
+          ],
+          "hint": "Add the two coordinates, then divide by 2.",
+          "keyPoints": [
+            {
+              "text": "midpoint",
+              "note": "The midpoint is halfway: add the two coordinates and divide by 2."
+            }
+          ]
         },
         {
           "id": "y7-1a-q6",
