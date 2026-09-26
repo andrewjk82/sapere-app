@@ -587,7 +587,7 @@
           "id": "y7-1a-q19",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Teresa registers a sensor marker at depth \\( A = -36 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 14 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -36 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 14 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-86\\)",
             "\\(-22\\)",
@@ -597,29 +597,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 14 - (-36) = 50 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(14) - (-36) = 28 + 36 = 64 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 14 + 50 = 64 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -36 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -36 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q20",
@@ -930,7 +927,7 @@
           "id": "y7-1a-q28",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Caleb registers a sensor marker at depth \\( A = -44 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 14 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -44 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 14 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-102\\)",
             "\\(-30\\)",
@@ -940,29 +937,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 14 - (-44) = 58 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(14) - (-44) = 28 + 44 = 72 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 14 + 58 = 72 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -44 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -44 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q29",
@@ -1272,7 +1266,7 @@
           "id": "y7-1a-q37",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Lydia registers a sensor marker at depth \\( A = -25 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 17 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -25 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 17 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-67\\)",
             "\\(-8\\)",
@@ -1282,29 +1276,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 17 - (-25) = 42 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(17) - (-25) = 34 + 25 = 59 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 17 + 42 = 59 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -25 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -25 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q38",
@@ -1615,7 +1606,7 @@
           "id": "y7-1a-q46",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Ulysses registers a sensor marker at depth \\( A = -12 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 3 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -12 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 3 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-27\\)",
             "\\(-9\\)",
@@ -1625,29 +1616,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 3 - (-12) = 15 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(3) - (-12) = 6 + 12 = 18 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 3 + 15 = 18 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -12 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -12 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q47",
@@ -1957,7 +1945,7 @@
           "id": "y7-1a-q55",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Diana registers a sensor marker at depth \\( A = -24 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 1 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -24 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 1 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-49\\)",
             "\\(-23\\)",
@@ -1967,29 +1955,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 1 - (-24) = 25 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(1) - (-24) = 2 + 24 = 26 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 1 + 25 = 26 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -24 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -24 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q56",
@@ -2300,7 +2285,7 @@
           "id": "y7-1a-q64",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Marcus registers a sensor marker at depth \\( A = -40 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 16 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -40 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 16 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-96\\)",
             "\\(-24\\)",
@@ -2310,29 +2295,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 16 - (-40) = 56 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(16) - (-40) = 32 + 40 = 72 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 16 + 56 = 72 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -40 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -40 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q65",
@@ -2643,7 +2625,7 @@
           "id": "y7-1a-q73",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Valerie registers a sensor marker at depth \\( A = -38 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 7 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -38 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 7 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-83\\)",
             "\\(-31\\)",
@@ -2653,29 +2635,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 7 - (-38) = 45 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(7) - (-38) = 14 + 38 = 52 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 7 + 45 = 52 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -38 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -38 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q74",
@@ -2986,7 +2965,7 @@
           "id": "y7-1a-q82",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Ethan registers a sensor marker at depth \\( A = -24 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 6 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -24 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 6 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-54\\)",
             "\\(-18\\)",
@@ -2996,29 +2975,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 6 - (-24) = 30 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(6) - (-24) = 12 + 24 = 36 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 6 + 30 = 36 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -24 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -24 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q83",
@@ -3328,7 +3304,7 @@
           "id": "y7-1a-q91",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "During a geological depth analysis, Nora registers a sensor marker at depth \\( A = -21 \\) meters. If the midpoint of the geological segment lies at depth \\( M = -5 \\) meters, find the coordinate of the bottom endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -21 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( -5 \\). Find the coordinate of point \\( B \\).",
           "options": [
             "\\(-37\\)",
             "\\(-26\\)",
@@ -3338,29 +3314,26 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = -5 - (-21) = 16 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(-5) - (-21) = -10 + 21 = 11 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = -5 + 16 = 11 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -21 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -21 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
-          ]
+          ],
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "y7-1a-q92",
@@ -3669,7 +3642,7 @@
         {
           "id": "y7-1a-q100",
           "type": "mc",
-          "stem": "During a geological depth analysis, Wyatt registers a sensor marker at depth \\( A = -39 \\) meters. If the midpoint of the geological segment lies at depth \\( M = 9 \\) meters, find the coordinate of the endpoint \\( B \\) of the segment.",
+          "stem": "On a number line, point \\( A \\) is at \\( -39 \\). The midpoint \\( M \\) of the segment \\( AB \\) is at \\( 9 \\). Find the coordinate of point \\( B \\).",
           "difficulty": "hard",
           "options": [
             "\\(-87\\)",
@@ -3680,32 +3653,29 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Set up the midpoint formula relating \\( A \\), \\( B \\), and \\( M \\).",
-              "work": "\\( M = \\frac{A + B}{2} \\)"
+              "explain": "Find how far it is from A to the midpoint M.",
+              "work": "\\( AM = 9 - (-39) = 48 \\)"
             },
             {
-              "explain": "Rearrange the equation to solve for the unknown endpoint \\( B \\).",
-              "work": "\\( B = 2M - A \\)"
-            },
-            {
-              "explain": "Substitute the values to calculate the position of \\( B \\).",
-              "work": "\\( B = 2(9) - (-39) = 18 + 39 = 57 \\)"
+              "explain": "M is halfway, so B is the same distance again on the other side of M.",
+              "work": "\\( B = 9 + 48 = 57 \\)"
             }
           ],
           "xp": 2,
           "keyPoints": [
             {
-              "text": "midpoint of the geological segment",
-              "note": "M is exactly halfway, so B is as far beyond M as A is before it."
+              "text": "midpoint",
+              "note": "Halfway: B is as far past M as A is before it."
             },
             {
-              "text": "\\( A = -39 \\)",
-              "note": "A is negative — find how far A is from M first."
+              "text": "\\( -39 \\)",
+              "note": "A is negative — subtracting a negative adds when you find the distance to M."
             }
           ],
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "hint": "M is exactly halfway between A and B: go from A to M, then the same distance again."
         },
         {
           "id": "sgs2020-y7-q1bi",
