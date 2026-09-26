@@ -3095,8 +3095,8 @@
         {
           "id": "killara2023-y9-t4a-q4",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Factorise \\\\(5a^2 - 15b\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(5(a^2 - 3b)\\\\)",
             "\\\\(5a(a - 3b)\\\\)",
@@ -3110,6 +3110,7 @@
               "work": "\\\\(5(a^2 - 3b)\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
