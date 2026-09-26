@@ -279,123 +279,198 @@
         },
         {
           "id": "y7-1a-q6",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Prove that if two points on a number line, \\( X \\) and \\( Y \\), satisfy the equation \\( |X - Y| = 2 \\), then the distance between them is always \\( 2 \\) units, regardless of their absolute coordinates. Explain the algebraic transition.",
-          "answer": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 2 \\) directly translates to the geometric distance being \\( 2 \\).",
-          "solution": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 2 \\) directly translates to the geometric distance being \\( 2 \\).",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point \\( X \\) is at \\(-3\\). Point \\( Y \\) is \\(2\\) units away from \\( X \\). What are the two possible positions of \\( Y \\)?",
+          "options": [
+            "\\(-5\\) and \\(-1\\)",
+            "\\(-1\\) only",
+            "\\(1\\) and \\(5\\)",
+            "\\(-2\\) and \\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "“2 units away” can be to the left or to the right of X.",
           "steps": [
             {
-              "explain": "Define absolute value in terms of distance on the number line.",
-              "work": "\\( |a - b| \\text{ represents the distance between } a \\text{ and } b \\)"
+              "explain": "Moving 2 units to the right of X means adding 2.",
+              "work": "\\(-3 + 2 = -1\\)"
             },
             {
-              "explain": "Equate the definition to the given statement.",
-              "work": "\\( |X - Y| = 2 \\)"
+              "explain": "Moving 2 units to the left of X means subtracting 2.",
+              "work": "\\(-3 - 2 = -5\\)"
             },
             {
-              "explain": "Conclude that the distance is constant and independent of the absolute values of \\( X \\) and \\( Y \\).",
-              "work": "\\( \\text{Distance} = 2 \\)"
+              "explain": "Both points are the same distance from X, so there are two answers.",
+              "work": "\\(Y = -5 \\text{ or } Y = -1\\)"
             }
           ],
-          "manual": true,
-          "xp": 4
+          "keyPoints": [
+            {
+              "text": "units away",
+              "note": "Away can mean to the left OR to the right — check both directions."
+            },
+            {
+              "text": "two possible positions",
+              "note": "Find one position on each side of X."
+            }
+          ],
+          "xp": 2
         },
         {
           "id": "y7-1a-q7",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Prove that if two points on a number line, \\( X \\) and \\( Y \\), satisfy the equation \\( |X - Y| = 3 \\), then the distance between them is always \\( 3 \\) units, regardless of their absolute coordinates. Explain the algebraic transition.",
-          "answer": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 3 \\) directly translates to the geometric distance being \\( 3 \\).",
-          "solution": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 3 \\) directly translates to the geometric distance being \\( 3 \\).",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point \\( X \\) is at \\(4\\). Point \\( Y \\) is \\(3\\) units away from \\( X \\). What are the two possible positions of \\( Y \\)?",
+          "options": [
+            "\\(1\\) and \\(7\\)",
+            "\\(7\\) only",
+            "\\(-7\\) and \\(-1\\)",
+            "\\(-3\\) and \\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "“3 units away” can be to the left or to the right of X.",
           "steps": [
             {
-              "explain": "Define absolute value in terms of distance on the number line.",
-              "work": "\\( |a - b| \\text{ represents the distance between } a \\text{ and } b \\)"
+              "explain": "Moving 3 units to the right of X means adding 3.",
+              "work": "\\(4 + 3 = 7\\)"
             },
             {
-              "explain": "Equate the definition to the given statement.",
-              "work": "\\( |X - Y| = 3 \\)"
+              "explain": "Moving 3 units to the left of X means subtracting 3.",
+              "work": "\\(4 - 3 = 1\\)"
             },
             {
-              "explain": "Conclude that the distance is constant and independent of the absolute values of \\( X \\) and \\( Y \\).",
-              "work": "\\( \\text{Distance} = 3 \\)"
+              "explain": "Both points are the same distance from X, so there are two answers.",
+              "work": "\\(Y = 1 \\text{ or } Y = 7\\)"
             }
           ],
-          "manual": true,
-          "xp": 4
+          "keyPoints": [
+            {
+              "text": "units away",
+              "note": "Away can mean to the left OR to the right — check both directions."
+            },
+            {
+              "text": "two possible positions",
+              "note": "Find one position on each side of X."
+            }
+          ],
+          "xp": 2
         },
         {
           "id": "y7-1a-q8",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Prove that if two points on a number line, \\( X \\) and \\( Y \\), satisfy the equation \\( |X - Y| = 4 \\), then the distance between them is always \\( 4 \\) units, regardless of their absolute coordinates. Explain the algebraic transition.",
-          "answer": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 4 \\) directly translates to the geometric distance being \\( 4 \\).",
-          "solution": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 4 \\) directly translates to the geometric distance being \\( 4 \\).",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point \\( X \\) is at \\(-1\\). Point \\( Y \\) is \\(4\\) units away from \\( X \\). What are the two possible positions of \\( Y \\)?",
+          "options": [
+            "\\(-5\\) and \\(3\\)",
+            "\\(3\\) only",
+            "\\(-3\\) and \\(5\\)",
+            "\\(-4\\) and \\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "“4 units away” can be to the left or to the right of X.",
           "steps": [
             {
-              "explain": "Define absolute value in terms of distance on the number line.",
-              "work": "\\( |a - b| \\text{ represents the distance between } a \\text{ and } b \\)"
+              "explain": "Moving 4 units to the right of X means adding 4.",
+              "work": "\\(-1 + 4 = 3\\)"
             },
             {
-              "explain": "Equate the definition to the given statement.",
-              "work": "\\( |X - Y| = 4 \\)"
+              "explain": "Moving 4 units to the left of X means subtracting 4.",
+              "work": "\\(-1 - 4 = -5\\)"
             },
             {
-              "explain": "Conclude that the distance is constant and independent of the absolute values of \\( X \\) and \\( Y \\).",
-              "work": "\\( \\text{Distance} = 4 \\)"
+              "explain": "Both points are the same distance from X, so there are two answers.",
+              "work": "\\(Y = -5 \\text{ or } Y = 3\\)"
             }
           ],
-          "manual": true,
-          "xp": 4
+          "keyPoints": [
+            {
+              "text": "units away",
+              "note": "Away can mean to the left OR to the right — check both directions."
+            },
+            {
+              "text": "two possible positions",
+              "note": "Find one position on each side of X."
+            }
+          ],
+          "xp": 2
         },
         {
           "id": "y7-1a-q9",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Prove that if two points on a number line, \\( X \\) and \\( Y \\), satisfy the equation \\( |X - Y| = 5 \\), then the distance between them is always \\( 5 \\) units, regardless of their absolute coordinates. Explain the algebraic transition.",
-          "answer": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 5 \\) directly translates to the geometric distance being \\( 5 \\).",
-          "solution": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 5 \\) directly translates to the geometric distance being \\( 5 \\).",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point \\( X \\) is at \\(-6\\). Point \\( Y \\) is \\(5\\) units away from \\( X \\). What are the two possible positions of \\( Y \\)?",
+          "options": [
+            "\\(-11\\) and \\(-1\\)",
+            "\\(-1\\) only",
+            "\\(1\\) and \\(11\\)",
+            "\\(-5\\) and \\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "“5 units away” can be to the left or to the right of X.",
           "steps": [
             {
-              "explain": "Define absolute value in terms of distance on the number line.",
-              "work": "\\( |a - b| \\text{ represents the distance between } a \\text{ and } b \\)"
+              "explain": "Moving 5 units to the right of X means adding 5.",
+              "work": "\\(-6 + 5 = -1\\)"
             },
             {
-              "explain": "Equate the definition to the given statement.",
-              "work": "\\( |X - Y| = 5 \\)"
+              "explain": "Moving 5 units to the left of X means subtracting 5.",
+              "work": "\\(-6 - 5 = -11\\)"
             },
             {
-              "explain": "Conclude that the distance is constant and independent of the absolute values of \\( X \\) and \\( Y \\).",
-              "work": "\\( \\text{Distance} = 5 \\)"
+              "explain": "Both points are the same distance from X, so there are two answers.",
+              "work": "\\(Y = -11 \\text{ or } Y = -1\\)"
             }
           ],
-          "manual": true,
-          "xp": 4
+          "keyPoints": [
+            {
+              "text": "units away",
+              "note": "Away can mean to the left OR to the right — check both directions."
+            },
+            {
+              "text": "two possible positions",
+              "note": "Find one position on each side of X."
+            }
+          ],
+          "xp": 2
         },
         {
           "id": "y7-1a-q10",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Prove that if two points on a number line, \\( X \\) and \\( Y \\), satisfy the equation \\( |X - Y| = 6 \\), then the distance between them is always \\( 6 \\) units, regardless of their absolute coordinates. Explain the algebraic transition.",
-          "answer": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 6 \\) directly translates to the geometric distance being \\( 6 \\).",
-          "solution": "The absolute value expression \\( |X - Y| \\) is defined as the non-negative distance between two points \\( X \\) and \\( Y \\) on a number line. Thus, \\( |X - Y| = 6 \\) directly translates to the geometric distance being \\( 6 \\).",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point \\( X \\) is at \\(-2\\). Point \\( Y \\) is \\(6\\) units away from \\( X \\). What are the two possible positions of \\( Y \\)?",
+          "options": [
+            "\\(-8\\) and \\(4\\)",
+            "\\(4\\) only",
+            "\\(-4\\) and \\(8\\)",
+            "\\(-6\\) and \\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "“6 units away” can be to the left or to the right of X.",
           "steps": [
             {
-              "explain": "Define absolute value in terms of distance on the number line.",
-              "work": "\\( |a - b| \\text{ represents the distance between } a \\text{ and } b \\)"
+              "explain": "Moving 6 units to the right of X means adding 6.",
+              "work": "\\(-2 + 6 = 4\\)"
             },
             {
-              "explain": "Equate the definition to the given statement.",
-              "work": "\\( |X - Y| = 6 \\)"
+              "explain": "Moving 6 units to the left of X means subtracting 6.",
+              "work": "\\(-2 - 6 = -8\\)"
             },
             {
-              "explain": "Conclude that the distance is constant and independent of the absolute values of \\( X \\) and \\( Y \\).",
-              "work": "\\( \\text{Distance} = 6 \\)"
+              "explain": "Both points are the same distance from X, so there are two answers.",
+              "work": "\\(Y = -8 \\text{ or } Y = 4\\)"
             }
           ],
-          "manual": true,
-          "xp": 4
+          "keyPoints": [
+            {
+              "text": "units away",
+              "note": "Away can mean to the left OR to the right — check both directions."
+            },
+            {
+              "text": "two possible positions",
+              "note": "Find one position on each side of X."
+            }
+          ],
+          "xp": 2
         },
         {
           "id": "y7-1a-q16",
