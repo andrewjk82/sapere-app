@@ -2194,8 +2194,8 @@
         {
           "id": "killara2023-y9-t4a-q17a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\(2\\sqrt{5} - 9\\sqrt{5}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(-7\\sqrt{5}\\\\)",
             "\\\\(11\\sqrt{5}\\\\)",
@@ -2209,6 +2209,7 @@
               "work": "\\\\((2 - 9)\\sqrt{5} = -7\\sqrt{5}\\\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
