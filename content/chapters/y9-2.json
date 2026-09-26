@@ -2024,8 +2024,8 @@
         {
           "id": "killara2023-y9-t4a-q8",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Simplify \\\\((\\sqrt{15})^2\\\\).",
+          "difficulty": "easy",
           "options": [
             "15",
             "225",
@@ -2039,6 +2039,7 @@
               "work": "\\\\((\\sqrt{15})^2 = 15\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
