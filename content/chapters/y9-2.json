@@ -2450,8 +2450,8 @@
         {
           "id": "killara2023-y9-t4a-q18a",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Expand and simplify \\\\(\\sqrt{3}(5\\sqrt{2} - 2\\sqrt{3})\\\\).",
+          "difficulty": "medium",
           "options": [
             "\\\\(5\\sqrt{6} - 6\\\\)",
             "\\\\(5\\sqrt{6} - 2\\sqrt{3}\\\\)",
@@ -2469,6 +2469,7 @@
               "work": "\\\\(5\\sqrt{6} - 2 \\times 3 = 5\\sqrt{6} - 6\\\\)"
             }
           ],
+          "timeLimit": 45,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
