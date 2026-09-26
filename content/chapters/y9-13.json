@@ -1774,8 +1774,11 @@
         {
           "id": "killara2023-y9-t4a-q28",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A light plane takes off flying due north, then turns and flies due west. The plane then has a bearing of \\\\(340^\\circ\\\\) from its starting point with a direct distance of 16km. Calculate the due north distance that the plane flew, to the nearest km.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "fig:e651874536"
+          },
           "options": [
             "15 km",
             "14 km",
@@ -1785,8 +1788,7 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "A bearing of \\\\(340^\\circ\\\\) means the plane is \\\\(360^\\circ - 340^\\circ = 20^\\circ\\\\) West of North from the starting point.",
-              "work": ""
+              "explain": "A bearing of \\\\(340^\\circ\\\\) means the plane is \\\\(360^\\circ - 340^\\circ = 20^\\circ\\\\) West of North from the starting point."
             },
             {
               "explain": "Form a right-angled triangle. The hypotenuse is the direct distance (16km), and the due north distance is the adjacent side to the \\\\(20^\\circ\\\\) angle.",
@@ -1797,14 +1799,12 @@
               "work": "\\\\(\\text{North distance} = 16 \\cos 20^\\circ \\approx 15.03 \\approx 15 \\text{ km}\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:e651874536"
           }
         },
         {
