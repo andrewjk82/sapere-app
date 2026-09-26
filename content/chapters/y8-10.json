@@ -1349,8 +1349,11 @@
         {
           "id": "wghs2023-y8-s2q14c",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "How far did Mrs Coffey run in total (including the return journey)?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:10a3df63e8"
+          },
           "options": [
             "\\(32 \\text{ km}\\)",
             "\\(16 \\text{ km}\\)",
@@ -1367,14 +1370,13 @@
               }
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
-          },
-          "figure": {
-            "svg": "fig:10a3df63e8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
