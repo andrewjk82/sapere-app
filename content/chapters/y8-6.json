@@ -2245,8 +2245,8 @@
         {
           "id": "wghs2023-y8-q1c",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Solve \\(\\dfrac{3x + 5}{4} = 2\\).",
+          "difficulty": "easy",
           "options": [
             "\\(x = 1\\)",
             "\\(x = 3\\)",
@@ -2268,11 +2268,13 @@
               "work": "\\(x = 1\\)"
             }
           ],
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
