@@ -781,7 +781,10 @@
           "steps": [
             {
               "explain": "When y = 0, the point lies on the x-axis.",
-              "work": "\\(E(-4, 0) \\text{ lies on the } x\\text{-axis}\\)"
+              "work": "\\(E(-4, 0) \\text{ lies on the } x\\text{-axis}\\)",
+              "figure": {
+                "svg": "fig:6a50460bee"
+              }
             }
           ],
           "xp": 1,
@@ -808,7 +811,10 @@
           "steps": [
             {
               "explain": "The point (0,0) is called the origin.",
-              "work": "\\((0,0) = \\text{the origin}\\)"
+              "work": "\\((0,0) = \\text{the origin}\\)",
+              "figure": {
+                "svg": "fig:b6a76333e8"
+              }
             }
           ],
           "xp": 1,
