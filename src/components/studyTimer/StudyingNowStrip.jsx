@@ -12,7 +12,7 @@ const formatShort = (sec) => {
 };
 
 /**
- * Bottom strip on the black focus clock: other students studying right now, each with a
+ * Bottom strip on the black focus clock: everyone studying right now (you first), each with a
  * live timer. Mounted only while the focus clock is on screen, so the RTDB listener (and
  * its connection) exists only then — see studyPresenceService.
  */
@@ -54,7 +54,7 @@ const StudyingNowStrip = ({ uid }) => {
               </div>
             )}
             <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'rgba(255,255,255,0.75)', maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-              {p.name}
+              {p.isSelf ? 'You' : p.name}
             </span>
             <span style={{ fontSize: '0.7rem', fontWeight: 600, color: 'rgba(255,255,255,0.45)', fontVariantNumeric: 'tabular-nums' }}>
               {formatShort(presenceElapsedSec(p, offset))}

@@ -75,7 +75,7 @@ export const clearStudyPresence = async (uid) => {
 };
 
 /**
- * Live list of everyone else studying. `onChange(list, serverOffsetMs)` where each entry is
+ * Live list of everyone studying (the caller's own entry first, flagged isSelf). `onChange(list, serverOffsetMs)` where each entry is
  * { uid, name, avatarUrl, bankedSec, running, since }. Returns an unsubscribe function.
  */
 export const subscribeStudyPresence = (selfUid, onChange) => {
@@ -94,9 +94,10 @@ export const subscribeStudyPresence = (selfUid, onChange) => {
     unsubs.push(mod.onValue(mod.ref(db, 'studyPresence'), (snap) => {
       const val = snap.val() || {};
       latest = Object.entries(val)
-        .filter(([id, v]) => id !== selfUid && v && typeof v === 'object')
-        .map(([id, v]) => ({ uid: id, ...v }))
-        .sort((a, b) => (Number(a.since) || 0) - (Number(b.since) || 0));
+        .filter(([, v]) => v && typeof v === 'object')
+        .map(([id, v]) => ({ uid: id, ...v, isSelf: id === selfUid }))
+        // The student's own entry first (it also proves their write landed), then by start.
+        .sort((a, b) => (b.isSelf - a.isSelf) || ((Number(a.since) || 0) - (Number(b.since) || 0)));
       onChange(latest, offset);
     }, (e) => console.warn('[studyPresence] listen failed (non-fatal):', e?.code || e?.message || e)));
   }).catch(() => {});
