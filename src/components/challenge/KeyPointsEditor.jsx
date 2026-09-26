@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
-import { Highlighter, Trash2, Save, AlertTriangle, Lightbulb } from 'lucide-react';
+import { Highlighter, Trash2, Save, AlertTriangle } from 'lucide-react';
 import MathView from '../MathView';
-import { locateKeyPoints, snapToMath, sanitizeKeyPoints } from '../../utils/keyPoints';
+import { locateKeyPoints, snapToMath, sanitizeKeyPoints, initialKeyPointsDraft } from '../../utils/keyPoints';
 import { parseHintSteps } from '../../utils/hintSteps';
 import { contentPatch } from '../../services/contentApi';
 import { useToast } from '../../context/ToastContext';
@@ -9,13 +9,12 @@ import { useToast } from '../../context/ToastContext';
 const partLabel = (i) => `(${String.fromCharCode(97 + i)})`;
 
 /**
- * Question Bank → Hint tab. Teacher authors the per-question key points that Daily Practice
- * highlights after a student's first wrong answer (see utils/keyPoints.js):
- *   - "Student view": the stem exactly as it will look, highlights tappable → tip bubble
- *   - "Source": the raw stem; select text there and press "Highlight selection"
- * Maths is always highlighted as a whole expression. Saves through contentPatch (git).
+ * Question Bank → Hint tab, right-hand panel. The real Daily Challenge screen stays behind it
+ * with the draft highlights applied (QuestionPreviewModal passes `draft` to ChallengeQuizView),
+ * so the teacher sees exactly what a student will. Here: select text in the raw Source, add a
+ * tip, save. Maths is always highlighted as a whole expression. Saves through contentPatch.
  */
-const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
+const KeyPointsEditor = ({ question, chapterId, draft, setDraft, onSaved }) => {
   const { showToast } = useToast();
   const parts = Array.isArray(question?.subQuestions) ? question.subQuestions : [];
   const targets = useMemo(() => {
@@ -25,18 +24,11 @@ const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
     return list;
   }, [question, parts]);
 
-  const initial = useMemo(() => {
-    const out = { main: Array.isArray(question?.keyPoints) ? question.keyPoints : [] };
-    parts.forEach((sq, i) => { out[`p${i}`] = Array.isArray(sq?.keyPoints) ? sq.keyPoints : []; });
-    return out;
-  }, [question, parts]);
+  const initial = useMemo(() => initialKeyPointsDraft(question), [question]);
 
-  const [draft, setDraft] = useState(initial);
   const [targetKey, setTargetKey] = useState(targets[0]?.key || 'main');
-  const [active, setActive] = useState(null); // { idx, top, left }
   const [saving, setSaving] = useState(false);
   const sourceRef = useRef(null);
-  const previewRef = useRef(null);
   const noteRefs = useRef({});
 
   const target = targets.find((t) => t.key === targetKey) || targets[0];
@@ -45,7 +37,7 @@ const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
   const dirty = JSON.stringify(draft) !== JSON.stringify(initial);
   const hintSteps = parseHintSteps(targetKey === 'main' ? question?.hint : parts[target?.partIdx]?.hint);
 
-  const setKps = (next) => { setDraft((d) => ({ ...d, [targetKey]: next })); setActive(null); };
+  const setKps = (next) => { setDraft((d) => ({ ...d, [targetKey]: next })); };
 
   const addFromSelection = () => {
     const sel = window.getSelection?.();
@@ -65,13 +57,6 @@ const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
     sel.removeAllRanges();
     setTimeout(() => noteRefs.current[next.length - 1]?.focus(), 30);
     if (stem.indexOf(snapped, stem.indexOf(snapped) + 1) >= 0) showToast('That text appears more than once — the first one is highlighted', 'info');
-  };
-
-  const showBubble = (idx, mark) => {
-    const box = previewRef.current?.getBoundingClientRect();
-    const r = mark.getBoundingClientRect();
-    if (!box) return;
-    setActive({ idx, top: r.bottom - box.top + 8, left: Math.max(0, Math.min(r.left - box.left, box.width - 280)) });
   };
 
   const handleSave = async () => {
@@ -96,19 +81,20 @@ const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
     }
   };
 
-  const card = { background: '#fff', borderRadius: '20px', border: '1px solid #e2e8f0', padding: '20px 22px' };
+  const card = { background: '#fff', borderRadius: '18px', border: '1px solid #e2e8f0', padding: '14px 16px' };
   const label = { fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94a3b8', marginBottom: '10px' };
 
   return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 2000, background: '#f8fafc', overflowY: 'auto', padding: '84px 20px 48px' }}>
-      <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <div style={{ position: 'fixed', top: 72, right: 16, bottom: 16, width: 'min(400px, calc(100vw - 32px))', zIndex: 2500, background: '#f8fafc', borderRadius: 24, border: '1px solid #e2e8f0', boxShadow: '0 24px 48px rgba(15,23,42,0.18)', overflowY: 'auto', padding: 16 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <div style={{ fontWeight: 900, color: '#1e1b4b' }}>Highlights <span style={{ fontWeight: 600, color: '#94a3b8', fontSize: '0.8rem' }}>— tap one on the question to see its tip</span></div>
         {targets.length > 1 && (
           <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
             {targets.map((t) => (
               <button
                 key={t.key}
                 type="button"
-                onClick={() => { setTargetKey(t.key); setActive(null); }}
+                onClick={() => setTargetKey(t.key)}
                 style={{ padding: '7px 14px', borderRadius: '999px', border: '1px solid #ddd6fe', background: t.key === targetKey ? '#6d28d9' : '#fff', color: t.key === targetKey ? '#fff' : '#6d28d9', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer' }}
               >
                 {t.label}{(draft[t.key] || []).length ? ` · ${(draft[t.key] || []).length}` : ''}
@@ -121,30 +107,9 @@ const KeyPointsEditor = ({ question, chapterId, onSaved }) => {
           <div style={card}>This question has no stem to highlight.</div>
         ) : (
           <>
-            <div style={card}>
-              <div style={label}>Student view — after a wrong answer</div>
-              <div ref={previewRef} style={{ position: 'relative' }}>
-                <MathView
-                  content={target.stem}
-                  keyPoints={located.some((p) => p.found) ? kps : undefined}
-                  onKeyPointClick={showBubble}
-                  style={{ fontSize: '1rem', color: '#1e1b4b', lineHeight: 1.8 }}
-                />
-                {active && kps[active.idx] && (
-                  <div
-                    onClick={() => setActive(null)}
-                    style={{ position: 'absolute', top: active.top, left: active.left, width: '280px', zIndex: 5, background: '#1e1b4b', color: '#fff', borderRadius: '14px', padding: '10px 14px', fontSize: '0.88rem', lineHeight: 1.5, boxShadow: '0 12px 28px rgba(15,23,42,0.25)', cursor: 'pointer' }}
-                  >
-                    <Lightbulb size={14} style={{ verticalAlign: '-2px', marginRight: 6, color: '#fde68a' }} />
-                    {kps[active.idx].note || <i style={{ opacity: 0.6 }}>No tip written yet</i>}
-                  </div>
-                )}
-              </div>
-              {!kps.length && (
-                <p style={{ margin: '12px 0 0', color: '#94a3b8', fontSize: '0.85rem' }}>No highlights yet — students will see the step hint instead.</p>
-              )}
-            </div>
-
+            {!kps.length && (
+              <p style={{ margin: 0, color: '#94a3b8', fontSize: '0.82rem' }}>No highlights yet — students will see the step hint instead.</p>
+            )}
             <div style={card}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 10 }}>
                 <div style={{ ...label, marginBottom: 0 }}>Source — select text to highlight</div>

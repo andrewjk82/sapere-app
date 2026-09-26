@@ -3,6 +3,7 @@ import ChallengeQuizView from './ChallengeQuizView';
 import ChallengeReviewView from './ChallengeReviewView';
 import SecretNoteView from './SecretNoteView';
 import KeyPointsEditor from './KeyPointsEditor';
+import { initialKeyPointsDraft } from '../../utils/keyPoints';
 import { answersMatch } from '../../utils/answerMatching';
 import { prepareShuffledMcOptions, gradeMcSelection } from '../../utils/mcOptionShuffle';
 import {
@@ -51,6 +52,8 @@ const TABS = [
  */
 const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 'daily', onQuestionUpdated }) => {
   const [activeTab, setActiveTab] = useState(initialTab);
+  // Hint tab: draft key points, shown live on the real quiz screen while the teacher edits.
+  const [kpDraft, setKpDraft] = useState(() => initialKeyPointsDraft(question));
 
   // Two independent clones — Daily Challenge mutates `_shuffledAnswer` etc.
   // onto its clone; Secret Note has its own separate grading pass. Neither
@@ -242,7 +245,8 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
   useEffect(() => { handleAnswerRef.current = handleAnswer; });
 
   useEffect(() => {
-    if (step !== 'quiz' || !questionStartTime) return undefined;
+    // No countdown on the Hint tab — the teacher is editing, not answering against the clock.
+    if (step !== 'quiz' || !questionStartTime || activeTab === 'hint') return undefined;
     const timeLimit = (dailyQuestion?.timeLimit || 30) * 1000;
     const endTime = questionStartTime + timeLimit;
 
@@ -262,12 +266,14 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
 
     return () => clearInterval(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [step, questionStartTime]);
+  }, [step, questionStartTime, activeTab]);
 
   return (
     <>
-      {activeTab === 'daily' && (
+      {(activeTab === 'daily' || activeTab === 'hint') && (
         <ChallengeQuizView
+          keyPoints={activeTab === 'hint' ? kpDraft.main : null}
+          partKeyPoints={activeTab === 'hint' ? (dailyQuestion.subQuestions || []).map((_, i) => kpDraft[`p${i}`] || []) : null}
           step={step}
           questions={[dailyQuestion]}
           currentIdx={0}
@@ -330,6 +336,8 @@ const QuestionPreviewModal = ({ question, chapter, topic, onClose, initialTab = 
         <KeyPointsEditor
           question={question}
           chapterId={chapter?.id}
+          draft={kpDraft}
+          setDraft={setKpDraft}
           onSaved={onQuestionUpdated}
         />
       )}

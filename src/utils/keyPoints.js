@@ -89,3 +89,10 @@ export const sanitizeKeyPoints = (keyPoints) => (Array.isArray(keyPoints) ? keyP
   .map((kp) => ({ text: String(kp?.text || '').trim() ? String(kp.text) : '', note: String(kp?.note || '').trim() }))
   .filter((kp) => kp.text && kp.note)
   .slice(0, 6);
+
+/** Editor draft for a question: { main: [...], p0: [...], p1: [...] } (one list per part). */
+export const initialKeyPointsDraft = (question) => {
+  const out = { main: Array.isArray(question?.keyPoints) ? question.keyPoints : [] };
+  (question?.subQuestions || []).forEach((sq, i) => { out[`p${i}`] = Array.isArray(sq?.keyPoints) ? sq.keyPoints : []; });
+  return out;
+};

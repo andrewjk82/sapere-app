@@ -187,11 +187,22 @@ const ChallengeQuizView = ({
   shuffledOptions,
   questionComments = [],
   setQuestionComments,
+  // Key-point highlights (utils/keyPoints.js): main stem + one list per sub-question.
+  // Tapping one shows its tip in a bubble. Omitted → no highlights (normal quiz).
+  keyPoints = null,
+  partKeyPoints = null,
 }) => {
   const currentQuestion = questions[currentIdx] || {};
   // Use pre-shuffled options if provided, else fall back to question's own options
   const displayOptions = shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : getOptions(currentQuestion);
   const isFeedback = step === 'feedback';
+  const [kpBubble, setKpBubble] = useState(null); // { note, top, left }
+  const openKpBubble = (list) => (idx, mark) => {
+    const note = list?.[idx]?.note;
+    if (!note) return;
+    const r = mark.getBoundingClientRect();
+    setKpBubble({ note, top: r.bottom + 8, left: Math.max(12, Math.min(r.left, window.innerWidth - 300)) });
+  };
   const leftColumnRef = useRef(null);
   const feedbackRef = useRef(null);
   const sideScrollTouchYRef = useRef(null);
@@ -411,6 +422,8 @@ const ChallengeQuizView = ({
                 submitting — do not lump them in with graph_sketch. */}
             <MathView
               content={currentQuestion?.question}
+              keyPoints={keyPoints || undefined}
+              onKeyPointClick={keyPoints ? openKpBubble(keyPoints) : undefined}
               graphData={currentQuestion?.type === 'graph_sketch' ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
               style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
@@ -435,7 +448,7 @@ const ChallengeQuizView = ({
                     <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + sIdx)}
                     </div>
-                    <MathView content={sq.question} graphData={sq.type === 'graph_sketch' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
+                    <MathView content={sq.question} keyPoints={partKeyPoints?.[sIdx] || undefined} onKeyPointClick={partKeyPoints?.[sIdx] ? openKpBubble(partKeyPoints[sIdx]) : undefined} graphData={sq.type === 'graph_sketch' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
 
                   {sqTeacher ? (
@@ -950,6 +963,18 @@ const ChallengeQuizView = ({
           />
         )}
       </div>
+
+      {kpBubble && (
+        <div
+          onClick={() => setKpBubble(null)}
+          style={{ position: 'fixed', inset: 0, zIndex: 2090 }}
+        >
+          <div style={{ position: 'fixed', top: kpBubble.top, left: kpBubble.left, width: 280, background: '#1e1b4b', color: '#fff', borderRadius: 14, padding: '10px 14px', fontSize: '0.88rem', lineHeight: 1.5, boxShadow: '0 12px 28px rgba(15,23,42,0.25)' }}>
+            <Lightbulb size={14} style={{ verticalAlign: '-2px', marginRight: 6, color: '#fde68a' }} />
+            <MathView content={kpBubble.note} style={{ display: 'inline', color: '#fff' }} />
+          </div>
+        </div>
+      )}
 
       {/* Fullscreen zoom for graph-choice option images */}
       <AnimatePresence>
