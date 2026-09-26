@@ -1152,7 +1152,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sgs2020-y7-q1dii",
@@ -1175,7 +1176,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sgs2020-y7-q3ci",
@@ -1202,7 +1204,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 1
         },
         {
           "id": "sgs2020-y7-q3cii",
@@ -1233,7 +1236,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 2
         }
       ]
     },
@@ -1940,7 +1944,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 2
         },
         {
           "id": "sgs2020-y7-q9c",
@@ -1971,7 +1976,8 @@
           "meta": {
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
-          }
+          },
+          "xp": 3
         }
       ]
     }
