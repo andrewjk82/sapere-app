@@ -3799,8 +3799,8 @@
         {
           "id": "sgs2020-y7-q7c",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "How many positive integers less than \\(1000\\) have the sum of their digits equal to \\(5\\)?",
+          "difficulty": "hard",
           "options": [
             "\\(21\\)",
             "\\(15\\)",
@@ -3826,17 +3826,22 @@
               "work": "\\(1 + 5 + 15 = 21\\)"
             }
           ],
-          "meta": {
-            "source": "SGS 2020 Form I Annual Examination",
-            "grade": "7"
-          },
           "xp": 4,
           "keyPoints": [
             {
               "text": "sum",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "positive integers",
+              "note": "The number greater than 0"
             }
-          ]
+          ],
+          "meta": {
+            "source": "SGS 2020 Form I Annual Examination",
+            "grade": "7",
+            "origin": "teacher"
+          }
         }
       ]
     },
