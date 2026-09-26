@@ -2329,8 +2329,8 @@
         {
           "id": "killara2023-y9-t4a-q20",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Find the values of \\\\(p\\\\) and \\\\(q\\\\) such that \\\\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}\\\\).",
+          "difficulty": "hard",
           "options": [
             "\\\\(p = 5, q = 2\\\\)",
             "\\\\(p = 2, q = 5\\\\)",
@@ -2352,6 +2352,7 @@
               "work": "\\\\(5 + 2\\sqrt{5}\\\\), so \\\\(p = 5\\\\) and \\\\(q = 2\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
