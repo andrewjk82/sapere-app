@@ -1700,12 +1700,25 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Identify the trigonometric ratio. The angle of elevation at the bottom is equal to the angle of depression at the top (alternate angles).",
-              "work": "\\\\(\\sin \\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{115}{415}\\\\)"
+              "explain": "Draw the situation. The skier starts at point A (top of slope), descends to point B (bottom). The slope AB = 415 m is the **hypotenuse**. The vertical drop BC = 115 m is the side **opposite** to angle θ. The angle of depression θ is measured from the **horizontal** at A downward to the slope.",
+              "work": "",
+              "figure": {
+                "svg": "fig:1747f4f474"
+              }
             },
             {
-              "explain": "Calculate the angle.",
-              "work": "\\\\(\\theta = \\sin^{-1}(\\frac{115}{415}) \\approx 16.09^\\circ \\approx 16^\\circ\\\\)"
+              "explain": "Identify which sides are known relative to the angle of depression θ at A. The **opposite** side (vertical drop) = 115 m and the **hypotenuse** (slope distance) = 415 m are highlighted. This tells us to use the **sin** ratio.",
+              "work": "\\(\\sin \\theta = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}} = \\dfrac{115}{415}\\)",
+              "figure": {
+                "svg": "fig:c3959fa144"
+              }
+            },
+            {
+              "explain": "Calculate the angle using the inverse sine function.",
+              "work": "\\(\\theta = \\sin^{-1}\\!\\left(\\dfrac{115}{415}\\right) \\approx 16.09^\\circ \\approx 16^\\circ\\)",
+              "figure": {
+                "svg": "fig:30d23230ac"
+              }
             }
           ],
           "meta": {
@@ -1713,9 +1726,6 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:88e60db122"
           }
         },
         {
