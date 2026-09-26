@@ -86,7 +86,7 @@ export const keyPointMarkersToHtml = (html) => {
       return '</mark>';
     }
     depth += 1;
-    return `<mark class="sapere-kp" data-kp="${idx}" style="background:#fde68a;color:inherit;border-radius:4px;padding:0 2px;border-bottom:2px dashed #d97706;cursor:pointer">`;
+    return `<mark class="sapere-kp" data-kp="${idx}" style="background:#fde68a;color:inherit;border-radius:4px;padding:0 2px;cursor:pointer">`;
   });
   while (depth > 0) { out += '</mark>'; depth -= 1; }
   return out;
