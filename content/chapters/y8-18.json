@@ -840,7 +840,7 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Set the equations equal to each other.",
+              "explain": "Label the equations:\n\\(y = -2x + 4 \\quad (1)\\)\n\\(y = \\dfrac{3}{2}x - 1 \\quad (2)\\)\n\nUsing equation (1), \\(-2x + 4\\) can be substituted for \\(y\\) in equation (2).",
               "work": "\\(-2x + 4 = \\dfrac{3}{2}x - 1\\)"
             },
             {
@@ -849,11 +849,15 @@
             },
             {
               "explain": "Collect \\(x\\) terms and solve.",
-              "work": "\\(10 = 7x \\Rightarrow x = \\dfrac{10}{7}\\)"
+              "work": "\\(-4x - 3x = -2 - 8\\)\n\\(-7x = -10\\)\n\\(x = \\dfrac{10}{7}\\)"
             },
             {
-              "explain": "Substitute back into \\(y = -2x + 4\\).",
-              "work": "\\(y = -\\dfrac{20}{7} + 4 = \\dfrac{8}{7}\\)"
+              "explain": "Substituting \\(x = \\dfrac{10}{7}\\) into (1):",
+              "work": "\\(y = -2 \\times \\dfrac{10}{7} + 4 = -\\dfrac{20}{7} + \\dfrac{28}{7} = \\dfrac{8}{7}\\)"
+            },
+            {
+              "explain": "Check by substituting into (2):",
+              "work": "\\(y = \\dfrac{3}{2}x - 1 \\text{ gives } \\dfrac{3}{2} \\times \\dfrac{10}{7} - 1 = \\dfrac{15}{7} - \\dfrac{7}{7} = \\dfrac{8}{7} \\checkmark\\)\n\nHence the solution is \\(x = \\dfrac{10}{7}\\) and \\(y = \\dfrac{8}{7}\\)."
             }
           ],
           "xp": 2,
