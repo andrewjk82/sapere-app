@@ -1616,8 +1616,8 @@
         {
           "id": "killara2023-y9-t4a-q7",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "List the irrational numbers from below: \\\\(\\sqrt{8}, \\sqrt{36}, 4.\\bar{3}, \\sqrt{22}, \\pi, \\frac{12}{23}\\\\).",
+          "difficulty": "easy",
           "options": [
             "\\\\(\\sqrt{8}, \\sqrt{22}, \\pi\\\\)",
             "\\\\(\\sqrt{8}, \\sqrt{36}, \\pi\\\\)",
@@ -1627,14 +1627,14 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Identify rational numbers. \\\\(\\sqrt{36} = 6\\\\), \\\\(4.\\bar{3} = 4 \\frac{1}{3}\\\\), and \\\\(\\frac{12}{23}\\\\) can be written as fractions.",
-              "work": ""
+              "explain": "Identify rational numbers. \\\\(\\sqrt{36} = 6\\\\), \\\\(4.\\bar{3} = 4 \\frac{1}{3}\\\\), and \\\\(\\frac{12}{23}\\\\) can be written as fractions."
             },
             {
               "explain": "The remaining numbers cannot be written as simple fractions and are irrational.",
               "work": "\\\\(\\sqrt{8}, \\sqrt{22}, \\pi\\\\)"
             }
           ],
+          "timeLimit": 60,
           "meta": {
             "source": "Killara High School Year 9 Task 4A 2023",
             "school": "Killara High School",
