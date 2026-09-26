@@ -407,9 +407,9 @@
           "id": "hghs2026-p2a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the value of \\(x\\) in the right-angled triangle, where the two legs are 6 cm and 8 cm.",
+          "stem": "Find the value of the pronumeral \\(x\\) in the right-angled triangle.",
           "figure": {
-            "svg": "fig:fba514cfeb"
+            "svg": "fig:d4b2672ec5"
           },
           "options": [
             "\\(x=10\\)",
@@ -421,16 +421,22 @@
           "hint": "Use Pythagoras' theorem, \\(a^2+b^2=c^2\\), with \\(x\\) as the hypotenuse.",
           "steps": [
             {
-              "explain": "Apply Pythagoras' theorem with the two given legs.",
-              "work": "\\(6^2+8^2=x^2\\)"
+              "explain": "The right angle is at A, so the side opposite it, BC (\\(x\\) cm), is the hypotenuse. AB = 6 cm and AC = 8 cm are the two shorter sides.",
+              "work": "\\(AB^2+AC^2=BC^2\\ \\Rightarrow\\ 6^2+8^2=x^2\\)",
+              "figure": {
+                "svg": "fig:a9ebdb144e"
+              }
             },
             {
-              "explain": "Simplify.",
+              "explain": "Square and add.",
               "work": "\\(36+64=100=x^2\\)"
             },
             {
-              "explain": "Take the square root.",
-              "work": "\\(x=\\sqrt{100}=10\\)"
+              "explain": "Take the positive square root (a length is positive).",
+              "work": "\\(x=\\sqrt{100}=10\\ (x>0)\\)",
+              "figure": {
+                "svg": "fig:fc8ee61ba9"
+              }
             }
           ],
           "xp": 1
@@ -439,9 +445,9 @@
           "id": "hghs2026-p2b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "A right-angled triangle has legs \\(3x\\) cm and \\(4x\\) cm, and hypotenuse 10 cm. Find the value of \\(x\\) (given \\(x>0\\)).",
+          "stem": "Find the value of \\(x\\) in the right-angled triangle (\\(x>0\\)).",
           "figure": {
-            "svg": "fig:39f25fb324"
+            "svg": "fig:f496d36648"
           },
           "options": [
             "\\(x=2\\)",
@@ -453,16 +459,19 @@
           "hint": "Apply Pythagoras' theorem, then solve for \\(x^2\\) before taking the square root.",
           "steps": [
             {
-              "explain": "Apply Pythagoras' theorem.",
-              "work": "\\((3x)^2+(4x)^2=10^2\\)"
+              "explain": "The right angle is at the top-left corner, so the 10 cm side opposite it is the hypotenuse. The two shorter sides are \\(3x\\) and \\(4x\\).",
+              "work": "\\((3x)^2+(4x)^2=10^2\\)",
+              "figure": {
+                "svg": "fig:5791193ab0"
+              }
             },
             {
-              "explain": "Expand and collect like terms.",
-              "work": "\\(9x^2+16x^2=100 \\Rightarrow 25x^2=100\\)"
+              "explain": "Square each bracket — both the number and the \\(x\\) are squared.",
+              "work": "\\(9x^2+16x^2=100\\ \\Rightarrow\\ 25x^2=100\\)"
             },
             {
-              "explain": "Divide by 25 and take the square root (rejecting the negative root since \\(x>0\\)).",
-              "work": "\\(x^2=4 \\Rightarrow x=2\\)"
+              "explain": "Divide by 25, then take the positive square root.",
+              "work": "\\(x^2=4\\ \\Rightarrow\\ x=2\\ (x>0)\\)"
             }
           ],
           "xp": 2
@@ -473,7 +482,7 @@
           "difficulty": "medium",
           "stem": "Using \\(AB=12\\text{ m}\\) and \\(BD=9\\text{ m}\\), with \\(\\angle ABD=90°\\), find the length of the second wire \\(AD\\).",
           "figure": {
-            "svg": "fig:6aa06bd580"
+            "svg": "fig:b073729716"
           },
           "options": [
             "\\(15\\text{ m}\\)",
@@ -485,12 +494,19 @@
           "hint": "AD is the hypotenuse of right triangle ABD.",
           "steps": [
             {
-              "explain": "Apply Pythagoras' theorem to triangle ABD.",
-              "work": "\\(AD^2=AB^2+BD^2=12^2+9^2=144+81=225\\)"
+              "explain": "Use the right triangle ABD. The pole AB = 12 m (found above) and BD = 9 m are the shorter sides; the wire AD (\\(y\\) m) is the hypotenuse.",
+              "work": "\\(AD^2=AB^2+BD^2\\)",
+              "figure": {
+                "svg": "fig:bcc194a7d2"
+              }
             },
             {
-              "explain": "Take the square root.",
-              "work": "\\(AD=\\sqrt{225}=15\\text{ m}\\)"
+              "explain": "Substitute and add.",
+              "work": "\\(y^2=12^2+9^2=144+81=225\\)"
+            },
+            {
+              "explain": "Take the positive square root.",
+              "work": "\\(y=\\sqrt{225}=15\\text{ m}\\)"
             }
           ],
           "xp": 2
@@ -501,7 +517,7 @@
           "difficulty": "hard",
           "stem": "Two cafes on opposite sides of a shopping-centre atrium are 10 m and 15 m above the ground floor. A 20 m escalator links them directly. Find the horizontal distance across the atrium between the two cafes, leaving your answer in exact form.",
           "figure": {
-            "svg": "fig:5e9d58c235"
+            "svg": "fig:0e7ff8a1fa"
           },
           "options": [
             "\\(\\sqrt{375}\\text{ m}\\)",
@@ -513,16 +529,26 @@
           "hint": "The vertical difference in height is \\(15-10=5\\text{ m}\\). This, the horizontal distance, and the 20 m escalator form a right-angled triangle with the escalator as the hypotenuse.",
           "steps": [
             {
-              "explain": "Find the vertical difference in height between the two cafes.",
-              "work": "\\(15-10=5\\text{ m}\\)"
+              "explain": "The cafes are at different heights. The vertical gap between them is the difference in heights.",
+              "work": "\\(15-10=5\\text{ m}\\)",
+              "figure": {
+                "svg": "fig:d6ad836c70"
+              }
             },
             {
-              "explain": "Apply Pythagoras' theorem, with the escalator (20 m) as the hypotenuse.",
-              "work": "\\(20^2-5^2=x^2\\)"
+              "explain": "Draw a horizontal line from Cafe 2 across to the other wall. This makes a right-angled triangle: the escalator (20 m) is the hypotenuse, the vertical side is 5 m, and the horizontal side \\(x\\) is the distance across the atrium.",
+              "work": "\\(x^2+5^2=20^2\\)",
+              "figure": {
+                "svg": "fig:6e3b68ea96"
+              }
             },
             {
-              "explain": "Simplify, leaving the answer in exact (surd) form.",
-              "work": "\\(400-25=375 \\Rightarrow x=\\sqrt{375}\\text{ m}\\)"
+              "explain": "Rearrange for \\(x^2\\).",
+              "work": "\\(x^2=400-25=375\\)"
+            },
+            {
+              "explain": "Leave the answer in exact form.",
+              "work": "\\(x=\\sqrt{375}\\text{ m}\\ (=5\\sqrt{15}\\text{ m})\\)"
             }
           ],
           "xp": 3
@@ -731,7 +757,7 @@
           "difficulty": "medium",
           "stem": "A power pole AB is supported by two wires AC and AD. \\(AC=13\\text{ m}\\), \\(CB=5\\text{ m}\\), and \\(\\angle ABC=90°\\). Find the height of the pole, \\(AB\\).",
           "figure": {
-            "svg": "fig:6aa06bd580"
+            "svg": "fig:b073729716"
           },
           "options": [
             "\\(12\\text{ m}\\)",
@@ -743,12 +769,22 @@
           "hint": "AC is the hypotenuse of right triangle ABC, so \\(AB^2=AC^2-CB^2\\).",
           "steps": [
             {
-              "explain": "Apply Pythagoras' theorem to triangle ABC, where AC is the hypotenuse.",
+              "explain": "Use the left right-angled triangle ABC. The wire AC (13 m) is opposite the right angle at B, so it is the hypotenuse; CB = 5 m is a shorter side and AB is the unknown.",
+              "work": "\\(AB^2+CB^2=AC^2\\)",
+              "figure": {
+                "svg": "fig:5fd91116b7"
+              }
+            },
+            {
+              "explain": "We need a shorter side, so subtract.",
               "work": "\\(AB^2=13^2-5^2=169-25=144\\)"
             },
             {
-              "explain": "Take the square root.",
-              "work": "\\(AB=\\sqrt{144}=12\\text{ m}\\)"
+              "explain": "Take the positive square root.",
+              "work": "\\(AB=\\sqrt{144}=12\\text{ m}\\)",
+              "figure": {
+                "svg": "fig:3c67231c20"
+              }
             }
           ],
           "xp": 2
