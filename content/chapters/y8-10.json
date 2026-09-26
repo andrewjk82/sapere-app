@@ -1668,8 +1668,8 @@
         {
           "id": "wghs2023-y8-s2q5",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Write the scale \\(4 \\text{ cm} : 2 \\text{ m}\\) in simplest ratio form.",
+          "difficulty": "medium",
           "options": [
             "\\(1 : 50\\)",
             "\\(4 : 200\\)",
@@ -1687,11 +1687,13 @@
               "work": "\\(1 : 50\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
