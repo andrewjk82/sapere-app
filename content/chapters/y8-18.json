@@ -668,8 +668,8 @@
         {
           "id": "wghs2023-y8-s3q2b",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A table of values gives: \\(x = -2, -1, 0, 1, 2\\) and \\(y = 9, 5, 1, -3, -7\\). What is the rule?",
+          "difficulty": "medium",
           "options": [
             "\\(y = -4x + 1\\)",
             "\\(y = 4x + 1\\)",
@@ -687,11 +687,13 @@
               "work": "\\(y = -4x + 1\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         },
         {
