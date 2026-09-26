@@ -1048,8 +1048,8 @@
         {
           "id": "wghs2023-y8-s2q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Which is the better buy: 180 g of chips for \\(\\.50\\), or 50 g of chips for \\(\\.40\\)?",
+          "difficulty": "medium",
           "options": [
             "180 g for \\(\\.50\\) (2.5 c/g vs 2.8 c/g)",
             "50 g for \\(\\.40\\) (cheaper per gram)",
@@ -1071,11 +1071,13 @@
               "work": "\\(\\text{180 g bag is better value (2.5 c/g < 2.8 c/g)}\\)"
             }
           ],
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
-            "grade": "8"
+            "grade": "8",
+            "origin": "teacher"
           }
         }
       ]
