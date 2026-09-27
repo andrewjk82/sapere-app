@@ -11762,8 +11762,8 @@
         {
           "id": "y7-1c-h34",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An airport luggage sorting system processed \\\\( 27500 \\\\) suitcases in a day. The ground crew sorted \\\\( 8940 \\\\) suitcases manually due to a conveyor belt error. How many suitcases were sorted automatically?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 18550 \\\\)",
             "\\\\( 18460 \\\\)",
@@ -11786,8 +11786,19 @@
             {
               "text": "manually",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 27500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 8940 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h35",
