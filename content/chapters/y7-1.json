@@ -5142,8 +5142,8 @@
         {
           "id": "y7-1b-q9",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "In three Year 7 classes, 27 students, 31 students and 26 students attended roll call one morning. How many Year 7 students were present?",
+          "difficulty": "medium",
           "options": [
             "\\\\( 84 \\\\)",
             "\\\\( 82 \\\\)",
@@ -5169,10 +5169,13 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "How many Year",
-              "note": "Sharing into equal groups — divide the total by the number (or size) of the groups."
+              "text": "How many Year 7 students were present?",
+              "note": "Sum of all Year7 Students"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-q10",
