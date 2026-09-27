@@ -13391,8 +13391,8 @@
         {
           "id": "y7-1c-h71",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An airport luggage loop handled \\\\( 27500 \\\\) bags. Over the morning rush, \\\\( 8940 \\\\) bags were redirected to international flights. How many bags remained on the domestic loop?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 18660 \\\\)",
             "\\\\( 18560 \\\\)",
@@ -13414,9 +13414,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 8940 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 27500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "redirected to international",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h72",
