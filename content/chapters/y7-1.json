@@ -12412,8 +12412,8 @@
         {
           "id": "y7-1c-h49",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A freighter was loaded with \\\\( 56420 \\\\) tons of wheat. At the first destination port, crane operators unloaded \\\\( 13780 \\\\) tons. Find the weight of the wheat remaining on the ship.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 42540 \\\\)",
             "\\\\( 42740 \\\\)",
@@ -12435,9 +12435,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 13780 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 56420 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "unloaded",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h50",
