@@ -12285,8 +12285,8 @@
         {
           "id": "y7-1c-h46",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An alpine reservoir holds \\\\( 90050 \\\\) cubic metres of water. To clear sediment, managers drain \\\\( 24680 \\\\) cubic metres. Calculate the updated water storage volume.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 65360 \\\\)",
             "\\\\( 65370 \\\\)",
@@ -12309,8 +12309,19 @@
             {
               "text": "drain",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 90050 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 24680 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h47",
