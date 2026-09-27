@@ -13903,8 +13903,8 @@
         {
           "id": "y7-1c-h83",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Scientists retrieved an ice core measuring \\\\( 14800 \\\\) mm. They cut away a section of \\\\( 2650 \\\\) mm to test for ancient pollen layers. Find the length of the remaining ice core.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12250 \\\\)",
             "\\\\( 12050 \\\\)",
@@ -13931,8 +13931,19 @@
             {
               "text": "remaining",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 14800 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 2650 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h84",
