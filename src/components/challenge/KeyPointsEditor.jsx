@@ -63,8 +63,10 @@ const KeyPointsEditor = ({ question, chapterId, draft, setDraft, onSaved }) => {
     const missingNote = Object.values(draft).some((list) => list.some((kp) => !String(kp.note || '').trim()));
     if (missingNote) { showToast('Every highlight needs a tip before saving', 'error'); return; }
     const fields = {};
-    if (JSON.stringify(draft.main) !== JSON.stringify(initial.main)) fields.keyPoints = sanitizeKeyPoints(draft.main);
-    if (parts.some((_, i) => JSON.stringify(draft[`p${i}`]) !== JSON.stringify(initial[`p${i}`]))) {
+    const mainChanged = JSON.stringify(draft.main) !== JSON.stringify(initial.main);
+    if (mainChanged) fields.keyPoints = sanitizeKeyPoints(draft.main);
+    const changedParts = parts.map((_, i) => JSON.stringify(draft[`p${i}`]) !== JSON.stringify(initial[`p${i}`]));
+    if (changedParts.some(Boolean)) {
       fields.subQuestions = parts.map((sq, i) => ({ ...sq, keyPoints: sanitizeKeyPoints(draft[`p${i}`]) }));
     }
     if (!Object.keys(fields).length) return;
@@ -72,6 +74,20 @@ const KeyPointsEditor = ({ question, chapterId, draft, setDraft, onSaved }) => {
     try {
       await contentPatch(question.id, fields, { chapterId: question.chapterId || chapterId });
       onSaved?.(fields);
+      // sanitizeKeyPoints trims/normalizes (e.g. whitespace in a tip note) —
+      // `initial` is re-derived from the now-updated `question` prop and will
+      // reflect those normalized values, so local `draft` must match them too
+      // or the dirty check (here and in QuestionPreviewModal's nav guard)
+      // stays true forever after a successful save, firing a false "discard
+      // unsaved highlights?" prompt on every next/prev question navigation.
+      if (mainChanged || changedParts.some(Boolean)) {
+        setDraft((d) => {
+          const next = { ...d };
+          if (mainChanged) next.main = sanitizeKeyPoints(d.main);
+          changedParts.forEach((changed, i) => { if (changed) next[`p${i}`] = sanitizeKeyPoints(d[`p${i}`]); });
+          return next;
+        });
+      }
       showToast('Highlights saved — live for students in about 2 minutes', 'success');
     } catch (err) {
       console.error('keyPoints save failed:', err);
