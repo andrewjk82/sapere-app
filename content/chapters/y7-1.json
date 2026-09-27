@@ -12072,8 +12072,8 @@
         {
           "id": "y7-1c-h41",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A chemical laboratory formulated \\\\( 95000 \\\\) capsules of a new trial medicine. Regulators selected \\\\( 3680 \\\\) capsules for destructive laboratory testing. How many capsules remain available?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 91320 \\\\)",
             "\\\\( 91420 \\\\)",
@@ -12096,8 +12096,19 @@
             {
               "text": "\\\\( 3680 \\\\)",
               "note": "Work through the calculation one step at a time."
+            },
+            {
+              "text": "\\\\( 95000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "destructive",
+              "note": "in means take away"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h42",
