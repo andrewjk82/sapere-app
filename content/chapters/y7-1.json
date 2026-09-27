@@ -13290,8 +13290,8 @@
         {
           "id": "y7-1c-h69",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A chemical vat holds \\\\( 16800 \\\\) ml of solvent. An open valve allows \\\\( 4250 \\\\) ml to drain into a secondary container. Find the volume of solvent left in the primary vat.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12540 \\\\)",
             "\\\\( 12450 \\\\)",
@@ -13318,8 +13318,19 @@
             {
               "text": "left",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 16800 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 4250 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h70",
