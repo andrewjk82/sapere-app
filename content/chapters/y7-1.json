@@ -11889,8 +11889,8 @@
         {
           "id": "y7-1c-h37",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A rare book archive contains \\\\( 15400 \\\\) manuscripts. If curators send \\\\( 2950 \\\\) manuscripts to a restoration laboratory for treatment, how many manuscripts remain in the archive?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12450 \\\\)",
             "\\\\( 12550 \\\\)",
@@ -11917,8 +11917,19 @@
             {
               "text": "remain",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 15400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 2950 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h38",
