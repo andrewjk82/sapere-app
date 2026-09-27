@@ -715,3 +715,23 @@ math-field::part(virtual-keyboard-toggle) {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* KaTeX's own CSS has no overflow handling for wide math (e.g. a
+   \begin{array}{...} table with many columns) — it just renders at its
+   natural width and spills past the question card on narrower screens
+   instead of wrapping or scrolling. This bites even content authored with
+   \(...\) (inline delimiters, MathView.jsx's default) since KaTeX still
+   renders a many-column array at full width regardless of display mode.
+   `.katex` is naturally `display:inline` for inline math, and overflow/
+   max-width have no effect on inline elements, so force inline-block —
+   harmless for ordinary short inline math (never wide enough to trigger
+   the scrollbar), it only kicks in for genuinely oversized content like
+   this. `.katex-display` (block-level, e.g. $$...$$) needs the same
+   treatment for the same reason. */
+.katex, .katex-display {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: middle;
+}
