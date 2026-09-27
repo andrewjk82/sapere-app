@@ -12845,8 +12845,8 @@
         {
           "id": "y7-1c-h59",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A research team extracted a glacier ice core of length \\\\( 14800 \\\\) mm. They cut away a section of \\\\( 2650 \\\\) mm to run carbon-dating tests. Find the length of the remaining core.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12250 \\\\)",
             "\\\\( 12150 \\\\)",
@@ -12873,8 +12873,19 @@
             {
               "text": "remaining",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 14800 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 2650 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h60",
