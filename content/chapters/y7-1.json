@@ -13346,8 +13346,8 @@
         {
           "id": "y7-1c-h70",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Ecologists estimate that a creek contains \\\\( 35200 \\\\) wild trout. An environmental study notes a population drop of \\\\( 11450 \\\\) trout over winter. How many trout remain in the creek?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 23850 \\\\)",
             "\\\\( 23750 \\\\)",
@@ -13374,8 +13374,19 @@
             {
               "text": "remain",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 35200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 11450 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h71",
