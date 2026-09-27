@@ -12326,8 +12326,8 @@
         {
           "id": "y7-1c-h47",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A satellite orbits Earth at an altitude of \\\\( 8510 \\\\) km. Mission control maneuvers the satellite, lowering its orbit by \\\\( 3648 \\\\) km. What is the satellite's new orbital altitude?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 4862 \\\\)",
             "\\\\( 4962 \\\\)",
@@ -12349,9 +12349,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 3648 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 8510 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "lowering",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h48",
