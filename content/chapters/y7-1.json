@@ -12240,8 +12240,8 @@
         {
           "id": "y7-1c-h45",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A shipping center had \\\\( 24000 \\\\) biodegradable packing boxes. After wrapping a major seasonal batch, workers used up \\\\( 8375 \\\\) boxes. Find the remaining box inventory.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 15625 \\\\)",
             "\\\\( 15615 \\\\)",
@@ -12268,8 +12268,19 @@
             {
               "text": "remaining",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 24000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 8375 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h46",
