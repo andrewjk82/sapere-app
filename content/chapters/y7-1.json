@@ -10819,8 +10819,8 @@
         {
           "id": "y7-1c-h8",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A hardware distribution warehouse had a stock of \\\\( 24000 \\\\) heavy-duty construction bolts. After shipping a batch of \\\\( 8375 \\\\) bolts to a shipyard, what is the warehouse inventory?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 15525 \\\\)",
             "\\\\( 15615 \\\\)",
@@ -10843,8 +10843,19 @@
             {
               "text": "shipping a batch",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 24000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 8375 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h9",
