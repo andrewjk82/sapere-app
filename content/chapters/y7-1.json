@@ -11934,8 +11934,8 @@
         {
           "id": "y7-1c-h38",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A construction company excavated \\\\( 72300 \\\\) cubic metres of earth for a transit tunnel. They reused \\\\( 18400 \\\\) cubic metres for site leveling. How much excavated earth was hauled away?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 53890 \\\\)",
             "\\\\( 53900 \\\\)",
@@ -11958,8 +11958,19 @@
             {
               "text": "reused",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 72300 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 18400 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h39",
