@@ -12901,8 +12901,8 @@
         {
           "id": "y7-1c-h60",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A volcanic vent released \\\\( 8560 \\\\) tons of ash on Monday. By Wednesday, the daily ash release had fallen by \\\\( 3280 \\\\) tons. Find the daily ash release on Wednesday.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 5180 \\\\)",
             "\\\\( 5380 \\\\)",
@@ -12923,10 +12923,21 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "release",
+              "text": "\\\\( 8560 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 3280 \\\\)",
+              "note": "The second key number"
+            },
+            {
+              "text": "fallen by",
               "note": "This amount is taken away — subtract it from the starting amount."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h61",
