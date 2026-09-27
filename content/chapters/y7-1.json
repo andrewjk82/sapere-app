@@ -5924,8 +5924,8 @@
         {
           "id": "y7-1b-h35",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A medical supply depot distributed three shipments of vaccine vials containing \\( 18900 \\), \\( 22400 \\), and \\( 9350 \\) doses. Determine the total doses distributed.",
+          "difficulty": "hard",
           "options": [
             "\\( 50550 \\)",
             "\\( 50640 \\)",
@@ -5952,8 +5952,15 @@
             {
               "text": "distributed",
               "note": "Sharing into equal groups — divide the total by the number (or size) of the groups."
+            },
+            {
+              "text": "total",
+              "note": "Total/combined means add all the amounts together."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h36",
