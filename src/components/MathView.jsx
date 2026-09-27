@@ -52,6 +52,49 @@ const convertMarkdownTables = (str) => {
   return out.join('\n');
 };
 
+// A wide \begin{array}/matrix (e.g. a many-column data table authored as raw
+// LaTeX) renders at its natural width regardless of display mode, and a
+// horizontal scrollbar (see the .katex/.katex-display overflow rule in
+// index.css) isn't discoverable — students just see it cut off at the card
+// edge with no visible hint there's more. Scale the whole KaTeX block down
+// to fit instead, so the entire table is always visible at once. Only
+// engages when content is genuinely wider than its line — ordinary inline
+// math is never affected.
+const fitWideMath = (target) => {
+  target.querySelectorAll('.katex').forEach((katexEl) => {
+    katexEl.style.transform = '';
+    katexEl.style.transformOrigin = '';
+    // index.css caps .katex at max-width:100% with overflow-x:auto as a
+    // baseline safety net. That constrains the element's own LAYOUT box
+    // (clientWidth), but transform:scale() only affects paint, not layout —
+    // so scaling while that cap is still active just repaints the same
+    // (still-clipped-at-100%) region smaller, hiding most of the table
+    // instead of shrinking the whole thing into view. Lift the cap here so
+    // scrollWidth reports the TRUE natural width and the box can lay out at
+    // full size before we scale it down.
+    katexEl.style.maxWidth = 'none';
+    katexEl.style.overflow = 'visible';
+    const wrapper = katexEl.closest('[class^="math-view-line-"]');
+    if (!wrapper) return;
+    wrapper.style.height = '';
+    wrapper.style.overflow = '';
+    const containerWidth = wrapper.clientWidth;
+    const naturalWidth = katexEl.scrollWidth;
+    if (containerWidth > 0 && naturalWidth > containerWidth + 1) {
+      const scale = containerWidth / naturalWidth;
+      const naturalHeight = katexEl.offsetHeight;
+      katexEl.style.transformOrigin = 'top center';
+      katexEl.style.transform = `scale(${scale})`;
+      wrapper.style.height = `${Math.ceil(naturalHeight * scale)}px`;
+      wrapper.style.overflow = 'hidden';
+    } else {
+      // Fits fine — revert to the CSS defaults (harmless no-op overflow/cap).
+      katexEl.style.maxWidth = '';
+      katexEl.style.overflow = '';
+    }
+  });
+};
+
 // `keyPoints` (optional, [{ text, note }]) highlights parts of the content — see
 // utils/keyPoints.js; `onKeyPointClick(index, markElement)` fires when one is tapped.
 const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, onKeyPointClick }) => {
@@ -229,6 +272,7 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
             },
             throwOnError: false,
           });
+          fitWideMath(target);
         } catch (err) {
           console.warn('KaTeX render error:', err);
         }
@@ -239,9 +283,16 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
     };
     renderMath();
 
+    // Re-fit on viewport/container resize (e.g. rotating a phone, resizing a
+    // split-screen panel) — the scale computed at render time is stale once
+    // the available width changes.
+    const handleResize = () => { if (containerRef.current) fitWideMath(containerRef.current); };
+    window.addEventListener('resize', handleResize);
+
     return () => {
       cancelled = true;
       if (retryTimer) clearTimeout(retryTimer);
+      window.removeEventListener('resize', handleResize);
     };
   }, [content, rawGraphData, keyPointsSig]);
 
