@@ -10218,8 +10218,8 @@
         {
           "id": "y7-1c-q6",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "The odometer of a car read 63876 kilometres at the beginning of a journey of 854 kilometres. What did it read at the end of the journey?",
+          "difficulty": "medium",
           "options": [
             "\\\\( 64730 \\\\)",
             "\\\\( 64740 \\\\)",
@@ -10243,8 +10243,19 @@
             {
               "text": "at the beginning of a journey",
               "note": "The odometer keeps counting up — add the journey to the starting reading."
+            },
+            {
+              "text": "63876",
+              "note": "The first key number"
+            },
+            {
+              "text": "854",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-q7",
