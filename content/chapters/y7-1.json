@@ -10972,8 +10972,8 @@
         {
           "id": "y7-1c-h14",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A high-performance server node has \\\\( 32768 \\\\) megabytes of RAM allocated to active containers. After terminating idle virtual machines, the system deallocates \\\\( 14350 \\\\) megabytes. How much memory is still allocated?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 18318 \\\\)",
             "\\\\( 18418 \\\\)",
@@ -10996,12 +10996,11 @@
             {
               "text": "deallocates",
               "note": "This amount is taken away — subtract it from the starting amount."
-            },
-            {
-              "text": "still",
-              "note": "The question asks what is left after the change."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h15",
