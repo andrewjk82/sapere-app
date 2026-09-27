@@ -11440,8 +11440,8 @@
         {
           "id": "y7-1c-h27",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A municipal reforestation initiative planted \\\\( 34200 \\\\) saplings across city parks. A severe summer drought killed \\\\( 5840 \\\\) saplings. How many saplings survived the season?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 28350 \\\\)",
             "\\\\( 28260 \\\\)",
@@ -11468,8 +11468,19 @@
             {
               "text": "survived",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 34200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 5840 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h28",
