@@ -13477,8 +13477,8 @@
         {
           "id": "y7-1c-h73",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A solar array produced \\\\( 96500 \\\\) kilowatt-hours. Cloud cover during mid-day reduced the expected output by \\\\( 12840 \\\\) kilowatt-hours. What was the net power output?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 83660 \\\\)",
             "\\\\( 83760 \\\\)",
@@ -13501,8 +13501,19 @@
             {
               "text": "reduced",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 96500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 12840 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h74",
