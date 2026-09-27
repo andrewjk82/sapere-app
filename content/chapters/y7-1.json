@@ -13118,8 +13118,8 @@
         {
           "id": "y7-1c-h65",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A cryptographic token project has a circulating supply of \\\\( 750000 \\\\) coins. A protocol upgrade permanently burns \\\\( 185000 \\\\) coins. What is the new circulating supply?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 565000 \\\\)",
             "\\\\( 565100 \\\\)",
@@ -13146,8 +13146,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 750000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 185000 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h66",
