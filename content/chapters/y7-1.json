@@ -12942,8 +12942,8 @@
         {
           "id": "y7-1c-h61",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A cargo terminal had \\\\( 72400 \\\\) shipping containers stacked in the yard. Freight trains hauled away \\\\( 15900 \\\\) containers in a week. Determine the container balance.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 56400 \\\\)",
             "\\\\( 56490 \\\\)",
@@ -12965,9 +12965,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 15900 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 72400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "hauled away",
+              "note": "It means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h62",
