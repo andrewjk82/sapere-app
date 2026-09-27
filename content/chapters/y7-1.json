@@ -12505,8 +12505,8 @@
         {
           "id": "y7-1c-h51",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A data center cooling unit dissipates \\\\( 32768 \\\\) BTUs of heat per hour. Modifying the airflow vents decreased the heat load by \\\\( 14350 \\\\) BTUs per hour. What is the new heat load?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 18408 \\\\)",
             "\\\\( 18518 \\\\)",
@@ -12533,8 +12533,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 32768 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 14350 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h52",
