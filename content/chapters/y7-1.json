@@ -12195,8 +12195,8 @@
         {
           "id": "y7-1c-h44",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A state grid had an active capacity of \\\\( 16050 \\\\) megawatts of coal-fired power. After decommissioning two old turbines, coal capacity dropped by \\\\( 3785 \\\\) megawatts. What is the new capacity?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12255 \\\\)",
             "\\\\( 12265 \\\\)",
@@ -12223,8 +12223,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 16050 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 3785 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h45",
