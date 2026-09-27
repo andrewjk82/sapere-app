@@ -14124,8 +14124,8 @@
         {
           "id": "y7-1c-h88",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A forest reserve received \\\\( 34200 \\\\) new pine seedlings. Wildlife grazing destroyed \\\\( 5840 \\\\) seedlings before protective screens could be installed. How many seedlings survived?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 28360 \\\\)",
             "\\\\( 28460 \\\\)",
@@ -14152,8 +14152,19 @@
             {
               "text": "survived",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 34200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 5840 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h89",
