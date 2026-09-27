@@ -12983,8 +12983,8 @@
         {
           "id": "y7-1c-h62",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A lab culture contains \\\\( 94500 \\\\) cells. Introducing an experimental enzyme destroys \\\\( 68200 \\\\) cells. How many cells survived the introduction?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 26290 \\\\)",
             "\\\\( 26200 \\\\)",
@@ -13011,8 +13011,19 @@
             {
               "text": "survived",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 94500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 68200 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h63",
