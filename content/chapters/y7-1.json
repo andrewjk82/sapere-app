@@ -14169,8 +14169,8 @@
         {
           "id": "y7-1c-h89",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A crypto coin project has a circulating pool of \\\\( 750000 \\\\) tokens. A hardfork permanently burns \\\\( 185000 \\\\) tokens. What is the new coin supply pool?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 564900 \\\\)",
             "\\\\( 564990 \\\\)",
@@ -14197,8 +14197,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 750000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 185000 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h90",
