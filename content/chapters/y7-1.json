@@ -13724,8 +13724,8 @@
         {
           "id": "y7-1c-h79",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A manufacturing mill processed \\\\( 84200 \\\\) kg of recycled paper. Drying and cleaning cycles removed \\\\( 11650 \\\\) kg of wet waste. Find the net weight of dry pulp produced.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 72450 \\\\)",
             "\\\\( 72540 \\\\)",
@@ -13748,8 +13748,19 @@
             {
               "text": "removed",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 84200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 11650 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h80",
