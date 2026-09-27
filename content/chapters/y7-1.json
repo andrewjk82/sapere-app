@@ -10302,8 +10302,8 @@
         {
           "id": "y7-1c-q8",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "The Amazon River is 6575 kilometres in length and the Nile River is 245 kilometres longer. What is the length of the Nile?",
+          "difficulty": "medium",
           "options": [
             "\\\\( 6820 \\\\)",
             "\\\\( 6830 \\\\)",
@@ -10327,8 +10327,19 @@
             {
               "text": "245 kilometres longer",
               "note": "“Longer / more than” means add the extra amount."
+            },
+            {
+              "text": "6575",
+              "note": "The first key number"
+            },
+            {
+              "text": "245",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-q9",
