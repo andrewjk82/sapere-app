@@ -11137,8 +11137,8 @@
         {
           "id": "y7-1c-h19",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An online marketplace shipped \\\\( 41280 \\\\) holiday orders. Customer service records show that \\\\( 3645 \\\\) packages were returned for refunds. How many orders were successfully kept?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 37535 \\\\)",
             "\\\\( 37735 \\\\)",
@@ -11161,8 +11161,15 @@
             {
               "text": "shipped",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "returned",
+              "note": "Returned means add back"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h20",
