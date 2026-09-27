@@ -8184,27 +8184,31 @@
         },
         {
           "id": "y7-1b-h1",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that the sum of the three integer payloads \\\\( 157 \\\\) kg, \\\\( 243 \\\\) kg, and \\\\( 89 \\\\) kg is exactly \\\\( 489 \\\\) kg by grouping the numbers that sum to a round hundred first. Write down your steps.",
-          "answer": "489",
-          "solution": "489",
+          "stem": "What is the sum of \\\\( 157 \\\\) kg, \\\\( 243 \\\\) kg, and \\\\( 89 \\\\) kg?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Identify and group the numbers whose units digits sum to 10 (or whose sum forms a round hundred).",
+              "explain": "Group the numbers whose units digits sum to 10 first — this creates a round hundred, making the addition much easier.",
               "work": "\\\\( (157 + 243) + 89 \\\\)"
             },
             {
-              "explain": "Compute the sum of the grouped pair.",
+              "explain": "Compute the grouped pair first.",
               "work": "\\\\( 400 + 89 \\\\)"
             },
             {
-              "explain": "Perform the final addition to obtain the total payload.",
-              "work": "\\\\( 489 \\\\)"
+              "explain": "Perform the final addition.",
+              "work": "\\\\( 400 + 89 = 489 \\\\) kg"
             }
           ],
-          "manual": true,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\\\( 489 \\\\) kg",
+            "\\\\( 479 \\\\) kg",
+            "\\\\( 499 \\\\) kg",
+            "\\\\( 389 \\\\) kg"
+          ]
         },
         {
           "id": "y7-1b-h2",
@@ -8256,14 +8260,13 @@
         },
         {
           "id": "y7-1b-h4",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that \\\\( 12 + 34 + 56 + 78 \\\\) is exactly equal to \\\\( 180 \\\\) by decomposing each two-digit number into its tens and units components before summing.",
-          "answer": "180",
-          "solution": "180",
+          "stem": "What is the sum of \\\\( 12 + 34 + 56 + 78 \\\\)?",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Decompose each number into tens and units.",
+              "explain": "Decompose each number into its tens and units components to make the addition easier.",
               "work": "\\\\( (10+30+50+70) + (2+4+6+8) \\\\)"
             },
             {
@@ -8275,16 +8278,20 @@
               "work": "\\\\( 180 \\\\)"
             }
           ],
-          "manual": true,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\\\( 180 \\\\)",
+            "\\\\( 170 \\\\)",
+            "\\\\( 190 \\\\)",
+            "\\\\( 200 \\\\)"
+          ]
         },
         {
           "id": "y7-1b-h5",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that if \\\\( A + 78 = 150 \\\\) and \\\\( B + 45 = 150 \\\\), then the sum \\\\( A + B \\\\) is exactly \\\\( 177 \\\\). Explain your steps algebraically.",
-          "answer": "177",
-          "solution": "177",
+          "stem": "If \\\\( A + 78 = 150 \\\\) and \\\\( B + 45 = 150 \\\\), what is the sum of \\\\( A + B \\\\)?",
+          "answer": 0,
           "steps": [
             {
               "explain": "Solve for the value of A.",
@@ -8299,8 +8306,13 @@
               "work": "\\\\( 72 + 105 = 177 \\\\)"
             }
           ],
-          "manual": true,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\\\( 177 \\\\)",
+            "\\\\( 167 \\\\)",
+            "\\\\( 187 \\\\)",
+            "\\\\( 197 \\\\)"
+          ]
         },
         {
           "id": "y7-1b-h6",
