@@ -13073,8 +13073,8 @@
         {
           "id": "y7-1c-h64",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A conservation area was stocked with \\\\( 34200 \\\\) native trees. A forestry team removed \\\\( 5840 \\\\) diseased trees to prevent wider infection. How many healthy trees remain?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 28460 \\\\)",
             "\\\\( 28360 \\\\)",
@@ -13101,8 +13101,19 @@
             {
               "text": "healthy",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 34200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 5840 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h65",
