@@ -13679,8 +13679,8 @@
         {
           "id": "y7-1c-h78",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A pharmaceutical machine produced \\\\( 95000 \\\\) capsules. A quality test batch of \\\\( 3680 \\\\) capsules was set aside for regulatory chemical checking. How many capsules remain?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 91220 \\\\)",
             "\\\\( 91420 \\\\)",
@@ -13707,8 +13707,19 @@
             {
               "text": "remain",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 95000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 3680 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h79",
