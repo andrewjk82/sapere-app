@@ -11309,8 +11309,8 @@
         {
           "id": "y7-1c-h24",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A port handled \\\\( 72400 \\\\) shipping containers in October. Due to a shipping channel blockage, November container traffic decreased by \\\\( 15900 \\\\) units. How many containers were handled in November?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 56500 \\\\)",
             "\\\\( 56600 \\\\)",
@@ -11333,8 +11333,23 @@
             {
               "text": "How many",
               "note": "The total of equal groups is found by multiplying."
+            },
+            {
+              "text": "\\\\( 72400 \\\\)",
+              "note": "The first key information"
+            },
+            {
+              "text": "\\\\( 15900 \\\\)",
+              "note": "The second key information"
+            },
+            {
+              "text": "decreased",
+              "note": "Minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h25",
