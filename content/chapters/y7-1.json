@@ -11582,8 +11582,8 @@
         {
           "id": "y7-1c-h30",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An offshore drilling rig extracted \\\\( 83400 \\\\) barrels of oil. A storage tank leak resulted in the loss of \\\\( 2680 \\\\) barrels. Calculate the volume of oil safely stored.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 80710 \\\\)",
             "\\\\( 80720 \\\\)",
@@ -11610,8 +11610,19 @@
             {
               "text": "safely stored",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 83400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 2680 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h31",
