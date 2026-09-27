@@ -14079,8 +14079,8 @@
         {
           "id": "y7-1c-h87",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A metal foundry poured \\\\( 156000 \\\\) kg of crude steel. Trimming the ends of the castings separated \\\\( 18450 \\\\) kg of scrap metal. What is the weight of the usable castings?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 137550 \\\\)",
             "\\\\( 137650 \\\\)",
@@ -14107,8 +14107,19 @@
             {
               "text": "usable",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 156000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 18450 \\\\)",
+              "note": "The econd key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h88",
