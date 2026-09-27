@@ -14034,8 +14034,8 @@
         {
           "id": "y7-1c-h86",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A biological culture contains \\\\( 94500 \\\\) active cells. Exposure to ultraviolet light destroys \\\\( 68200 \\\\) cells. How many active cells survived the UV exposure?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 26300 \\\\)",
             "\\\\( 26400 \\\\)",
@@ -14062,8 +14062,19 @@
             {
               "text": "active",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 94500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 68200 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h87",
