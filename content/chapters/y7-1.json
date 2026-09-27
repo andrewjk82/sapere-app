@@ -10260,8 +10260,8 @@
         {
           "id": "y7-1c-q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A shop had three employees. The manager received $985 per week, the senior assistant received $672 per week, and the junior assistant earned $456 per week. What was the total weekly wages bill for the shop?",
+          "difficulty": "medium",
           "options": [
             "\\\\( 2113 \\\\)",
             "\\\\( 2123 \\\\)",
@@ -10285,8 +10285,19 @@
             {
               "text": "total weekly wages bill",
               "note": "Total means add all three wages together."
+            },
+            {
+              "text": "985",
+              "note": "The first key number"
+            },
+            {
+              "text": "672",
+              "note": "Ths second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-q8",
