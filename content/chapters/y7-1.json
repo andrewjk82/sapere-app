@@ -12759,8 +12759,8 @@
         {
           "id": "y7-1c-h57",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A core router has a bandwidth threshold of \\\\( 96000 \\\\) megabits per second. During a router maintenance cycle, the capacity decreases by \\\\( 28450 \\\\) megabits per second. Solve for the active bandwidth.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 67540 \\\\)",
             "\\\\( 67450 \\\\)",
@@ -12787,8 +12787,19 @@
             {
               "text": "active",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 96000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 28450 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h58",
