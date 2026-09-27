@@ -11485,8 +11485,8 @@
         {
           "id": "y7-1c-h28",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A blockchain network mints \\\\( 750000 \\\\) governance tokens. To reduce supply inflation, the project developers burn \\\\( 185000 \\\\) tokens. Determine the remaining token supply.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 564900 \\\\)",
             "\\\\( 565100 \\\\)",
@@ -11512,9 +11512,16 @@
             },
             {
               "text": "\\\\( 185000 \\\\)",
-              "note": "Subtract column by column; borrow from the next column when the top digit is smaller."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 750000 \\\\)",
+              "note": "The first key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h29",
