@@ -11526,8 +11526,8 @@
         {
           "id": "y7-1c-h29",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An astronomical camera sensor contains \\\\( 48000 \\\\) light-sensitive pixels. Over years of radiation exposure, \\\\( 1375 \\\\) pixels become permanently unresponsive. How many functional pixels remain?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 46525 \\\\)",
             "\\\\( 46615 \\\\)",
@@ -11554,8 +11554,19 @@
             {
               "text": "functional",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 48000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 1375 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h30",
