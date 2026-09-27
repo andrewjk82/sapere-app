@@ -12804,8 +12804,8 @@
         {
           "id": "y7-1c-h58",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A subterranean aquifer holds \\\\( 534000 \\\\) kilolitres of fresh water. Extended pumping for farming draws out \\\\( 128600 \\\\) kilolitres. Determine the remaining water volume.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 405390 \\\\)",
             "\\\\( 405400 \\\\)",
@@ -12827,9 +12827,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 128600 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 534000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": " draws out",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h59",
