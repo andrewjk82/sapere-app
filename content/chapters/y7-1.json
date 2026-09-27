@@ -11803,8 +11803,8 @@
         {
           "id": "y7-1c-h35",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A factory manufactured \\\\( 41200 \\\\) metres of organic cotton fabric. After inspecting the rolls, weavers discarded \\\\( 2680 \\\\) metres due to dye defects. What length of fabric was approved?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 38420 \\\\)",
             "\\\\( 38510 \\\\)",
@@ -11831,8 +11831,19 @@
             {
               "text": "approved",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 41200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 2680 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h36",
