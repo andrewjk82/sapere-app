@@ -10160,8 +10160,8 @@
         {
           "id": "y7-1c-q5",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Find the sum of the specified numbers.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "y7-1c-q5a",
@@ -10184,13 +10184,7 @@
                   "work": "258 + 739 = 997"
                 }
               ],
-              "xp": 2,
-              "keyPoints": [
-                {
-                  "text": "hundred and",
-                  "note": "Write each number in digits first, then add in columns."
-                }
-              ]
+              "xp": 2
             },
             {
               "id": "y7-1c-q5b",
@@ -10213,16 +10207,13 @@
                   "work": "362 + 4581 = 4943"
                 }
               ],
-              "xp": 2,
-              "keyPoints": [
-                {
-                  "text": "hundred and",
-                  "note": "Write each number in digits first, then add in columns."
-                }
-              ]
+              "xp": 2
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-q6",
