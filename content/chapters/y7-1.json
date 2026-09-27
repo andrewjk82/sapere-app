@@ -5069,8 +5069,8 @@
         {
           "id": "y7-1b-q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "On the first day of my holidays, I travelled 85 kilometres from my home in Victor Harbor to Adelaide, then 516 kilometres from Adelaide to Broken Hill. The next day I travelled 298 kilometres from Broken Hill to Mildura. How many kilometres did I travel in the first two days of my trip?",
+          "difficulty": "medium",
           "options": [
             "\\\\( 899 \\\\)",
             "\\\\( 601 \\\\)",
@@ -5096,10 +5096,13 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "travelled",
+              "text": "How many kilometres did I travel in the first two days of my trip?",
               "note": "Add each amount together."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-q8",
