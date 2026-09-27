@@ -10252,8 +10252,8 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "total",
-              "note": "The total of equal groups is found by multiplying."
+              "text": "total weekly wages bill",
+              "note": "Total means add all three wages together."
             }
           ]
         },
@@ -14790,7 +14790,13 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "more than",
+              "note": "Bill has more than Anna — take away the extra amount to find Anna’s share."
+            }
+          ]
         },
         {
           "id": "y7-1d-q8",

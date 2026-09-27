@@ -13,8 +13,15 @@
  * highlight still renders normally.
  */
 
-// Same delimiters MathView treats as maths (incl. the escaped-\$ rule for currency).
+// Same delimiters MathView treats as maths. `\(...\)` / `\[...\]` / `$$...$$` are unambiguous.
+// A bare `$...$` pair is not: unescaped currency like "$65 ... withdraw $117" (two prose dollar
+// amounts in the same sentence) looks identical to a single-dollar maths block, and toDisplayText
+// already renders it as plain currency, not maths — see isProseNotMath below, mirrored from its
+// currency heuristic (mathPreprocess.js) so a highlight never gets stretched across a whole
+// sentence just because it happens to sit between two dollar signs.
 const MATH_BLOCK = /\$\$[\s\S]*?\$\$|(?<!\\)\$[\s\S]*?(?<!\\)\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]/g;
+const isProseNotMath = (raw, inner) => raw[0] === '$' && raw[1] !== '$'
+  && (/[.!?]\s+[A-Z]/.test(inner) || (inner.match(/[a-zA-Z]{3,}/g) || []).length >= 4);
 
 // Plain ASCII: toDisplayText rewrites unusual code points (private-use chars came out as
 // "<span>$</span>"), but leaves letter runs alone. Chosen to never occur in real content.
@@ -26,6 +33,7 @@ const mathRanges = (stem) => {
   const out = [];
   const src = String(stem);
   for (const m of src.matchAll(MATH_BLOCK)) {
+    if (isProseNotMath(m[0], m[0].slice(1, -1))) continue;
     // Old seeds double-escape delimiters ("\\(" in the file = `\\(`): the regex matches from the
     // second backslash, so pull the start back over any extra backslashes — a highlight must
     // never split them, or toDisplayText can no longer heal the delimiter.
