@@ -2310,68 +2310,108 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
           >
             <AnimatePresence mode="wait">
-              {step === 'start' && restoredDraft && (() => {
-                // Auto-resume: restore state and jump straight back into quiz.
-                // This runs once after mount when a draft is found.
+              {step === 'start' && restoredDraft && restoredDraft.allExpired && (() => {
+                // All questions timed out while away — nothing to resume, so
+                // auto-submit as abandoned/zero and stay on the start screen
+                // (no navigation, so nothing surprising for the student here).
                 const d = restoredDraft;
-                if (d.allExpired) {
-                  // All questions timed out — auto-submit as abandoned/zero.
-                  clearDraft();
-                  setRestoredDraft(null);
-                  // Kick off finishQuiz after state settles via a tiny timeout.
-                  setChallengeType(d.challengeType);
-                  setCurrentSessionId(d.currentSessionId);
-                  setCalcSessionMeta(d.calcSessionMeta);
-                  setQuestions(d.questions);
-                  setUserAnswers(d.userAnswers);
-                  setAnswerResults(d.answerResults);
-                  setScore(d.score);
-                  setTimeout(() => {
-                    finishQuizRef.current?.(true); // isAbandoned=true
-                  }, 100);
-                } else {
-                  // Resume mid-quiz at the fast-forwarded question + time.
-                  setChallengeType(d.challengeType);
-                  setCurrentSessionId(d.currentSessionId);
-                  setCalcSessionMeta(d.calcSessionMeta);
-                  setQuestions(d.questions);
-                  setCurrentIdx(d.currentIdx);
-                  setScore(d.score);
-                  setUserAnswers(d.userAnswers);
-                  setAnswerResults(d.answerResults);
-                  setShuffledOptions(d.shuffledOptions || []);
-                  setSubAnswers(d.subAnswers || {});
-                  setTimeLeft(d.timeLeft);
-                  // The per-question countdown effect only runs once questionStartTime
-                  // is set (normally done by setupQuestion() on a fresh start / next
-                  // question). This resume path skipped that, so questionStartTime
-                  // stayed null and the countdown effect's early-return left the timer
-                  // frozen at d.timeLeft forever — no pressure at all, most noticeable
-                  // in Extreme mode where the whole point is a short clock.
-                  resumeDurationRef.current = d.timeLeft;
-                  setQuestionStartTime(Date.now());
-                  quizStartTimeRef.current = Date.now();
-                  setStep('quiz');
-                  if (setIsLocked) setIsLocked(true);
-                  setRestoredDraft(null);
-                  try {
-                    const rq = d.questions?.[d.currentIdx];
-                    window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
-                      detail: {
-                        uid: user?.uid,
-                        phase: 'start',
-                        challengeType: d.challengeType,
-                        questionIndex: d.currentIdx,
-                        hasHint: Boolean(hintTextOf(rq)),
-                        hintText: hintTextOf(rq),
-                        timeLimit: Number(rq?.timeLimit) || 30,
-                      },
-                    }));
-                  } catch { /* ignore */ }
-                }
+                clearDraft();
+                setRestoredDraft(null);
+                setChallengeType(d.challengeType);
+                setCurrentSessionId(d.currentSessionId);
+                setCalcSessionMeta(d.calcSessionMeta);
+                setQuestions(d.questions);
+                setUserAnswers(d.userAnswers);
+                setAnswerResults(d.answerResults);
+                setScore(d.score);
+                setTimeout(() => {
+                  finishQuizRef.current?.(true); // isAbandoned=true
+                }, 100);
                 return null;
               })()}
-              {step === 'start' && (
+              {step === 'start' && restoredDraft && !restoredDraft.allExpired && (
+                <motion.div
+                  key="resume-prompt"
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -12 }}
+                  style={{
+                    borderRadius: 28, padding: '28px 24px', background: '#fff',
+                    border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.1)',
+                    textAlign: 'center', maxWidth: 420, margin: '40px auto',
+                  }}
+                >
+                  <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', marginBottom: 8 }}>
+                    Resume your unfinished challenge?
+                  </div>
+                  <div style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600, marginBottom: 20 }}>
+                    You left off at question {restoredDraft.currentIdx + 1} of {restoredDraft.questions.length}.
+                  </div>
+                  <div style={{ display: 'flex', gap: 12, justifyContent: 'center' }}>
+                    <button
+                      type="button"
+                      onClick={() => { clearDraft(); setRestoredDraft(null); }}
+                      style={{
+                        padding: '12px 20px', borderRadius: 14, border: '1px solid #e2e8f0',
+                        background: '#f8fafc', color: '#334155', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer',
+                      }}
+                    >
+                      Start Fresh
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const d = restoredDraft;
+                        setChallengeType(d.challengeType);
+                        setCurrentSessionId(d.currentSessionId);
+                        setCalcSessionMeta(d.calcSessionMeta);
+                        setQuestions(d.questions);
+                        setCurrentIdx(d.currentIdx);
+                        setScore(d.score);
+                        setUserAnswers(d.userAnswers);
+                        setAnswerResults(d.answerResults);
+                        setShuffledOptions(d.shuffledOptions || []);
+                        setSubAnswers(d.subAnswers || {});
+                        setTimeLeft(d.timeLeft);
+                        // The per-question countdown effect only runs once questionStartTime
+                        // is set (normally done by setupQuestion() on a fresh start / next
+                        // question). This resume path skips that, so questionStartTime
+                        // would stay null and the countdown effect's early-return would leave
+                        // the timer frozen at d.timeLeft forever — no pressure at all, most
+                        // noticeable in Extreme mode where the whole point is a short clock.
+                        resumeDurationRef.current = d.timeLeft;
+                        setQuestionStartTime(Date.now());
+                        quizStartTimeRef.current = Date.now();
+                        setStep('quiz');
+                        if (setIsLocked) setIsLocked(true);
+                        setRestoredDraft(null);
+                        try {
+                          const rq = d.questions?.[d.currentIdx];
+                          window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+                            detail: {
+                              uid: user?.uid,
+                              phase: 'start',
+                              challengeType: d.challengeType,
+                              questionIndex: d.currentIdx,
+                              hasHint: Boolean(hintTextOf(rq)),
+                              hintText: hintTextOf(rq),
+                              timeLimit: Number(rq?.timeLimit) || 30,
+                            },
+                          }));
+                        } catch { /* ignore */ }
+                      }}
+                      style={{
+                        padding: '12px 20px', borderRadius: 14, border: 'none',
+                        background: '#6366f1', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer',
+                        boxShadow: '0 10px 24px rgba(99,102,241,0.35)',
+                      }}
+                    >
+                      Resume
+                    </button>
+                  </div>
+                </motion.div>
+              )}
+              {step === 'start' && !restoredDraft && (
                 <ChallengeStartView
                   key="start"
                   studentProfile={studentProfile}
