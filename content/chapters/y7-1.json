@@ -12591,8 +12591,8 @@
         {
           "id": "y7-1c-h53",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An commercial bank had outstanding student loans totalling \\\\( 856000 \\\\) dollars. After a federal restructuring, they wrote off \\\\( 294500 \\\\) dollars of debt. What is the active loan balance?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 561490 \\\\)",
             "\\\\( 561500 \\\\)",
@@ -12614,9 +12614,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 294500 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 856000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "wrote off",
+              "note": "It means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h54",
