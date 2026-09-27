@@ -13208,8 +13208,8 @@
         {
           "id": "y7-1c-h67",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A refinery pumped \\\\( 83400 \\\\) barrels of gasoline. Delivering fuel to terminal hubs depleted the stock by \\\\( 2680 \\\\) barrels. Calculate the gasoline balance at the refinery.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 80710 \\\\)",
             "\\\\( 80620 \\\\)",
@@ -13231,9 +13231,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 2680 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 83400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "depleted the stock",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h68",
