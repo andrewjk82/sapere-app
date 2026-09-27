@@ -10643,8 +10643,8 @@
         {
           "id": "y7-1c-h4",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An excavation shaft reaches a depth of \\\\( 3250 \\\\) mm below the reference datum. The team decides to backfill the shaft by \\\\( 1185 \\\\) mm for safety. Find the new depth of the excavation bottom.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 2065 \\\\)",
             "\\\\( 2165 \\\\)",
@@ -10667,8 +10667,19 @@
             {
               "text": "backfill",
               "note": "Backfilling makes the hole shallower, so the depth gets smaller — subtract."
+            },
+            {
+              "text": "\\\\( 3250 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 1185 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h5",
