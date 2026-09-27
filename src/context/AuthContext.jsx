@@ -5,6 +5,8 @@ import {
   createUserWithEmailAndPassword,
   signOut,
   signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
   sendEmailVerification,
   sendPasswordResetEmail,
   signInWithCustomToken
@@ -39,6 +41,11 @@ export const AuthProvider = ({ children }) => {
       setIsAdmin(firebaseUser?.email?.toLowerCase() === ADMIN_EMAIL.toLowerCase());
       setLoading(false);
     });
+
+    // Surfaces errors from the signInWithRedirect fallback (e.g. an account
+    // already exists with a different sign-in method) — a redirect that
+    // succeeds is already handled by onAuthStateChanged above.
+    getRedirectResult(auth).catch((err) => console.error('[auth] Google redirect sign-in failed:', err));
 
     return unsubscribe;
   }, []);
@@ -90,8 +97,23 @@ export const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const loginWithGoogle = () => {
-    return signInWithPopup(auth, googleProvider);
+  // Popups get silently killed by ad/popup blockers, some corporate networks,
+  // and in-app browsers — that showed up as a generic "Google login failed"
+  // with no way for the student to tell why. Fall back to a full-page
+  // redirect for exactly those cases; onAuthStateChanged above picks up the
+  // result when the redirect lands back on this page.
+  const loginWithGoogle = async () => {
+    try {
+      return await signInWithPopup(auth, googleProvider);
+    } catch (err) {
+      const popupUnavailable = [
+        'auth/popup-blocked',
+        'auth/operation-not-supported-in-this-environment',
+        'auth/cancelled-popup-request',
+      ].includes(err?.code);
+      if (!popupUnavailable) throw err;
+      return signInWithRedirect(auth, googleProvider);
+    }
   };
 
   const logout = () => {
