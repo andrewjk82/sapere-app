@@ -13948,8 +13948,8 @@
         {
           "id": "y7-1c-h84",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A volcano monitoring station records an emission of \\\\( 8560 \\\\) kg of carbon dioxide. Following a period of volcanic rest, the emission decreases by \\\\( 3280 \\\\) kg. Calculate the new emission.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 5280 \\\\)",
             "\\\\( 5380 \\\\)",
@@ -13976,8 +13976,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 8560 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 3280 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h85",
