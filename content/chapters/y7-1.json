@@ -13249,8 +13249,8 @@
         {
           "id": "y7-1c-h68",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A microgrid storage battery held \\\\( 52000 \\\\) kilowatt-hours. Supplying backup power to a hospital consumed \\\\( 17850 \\\\) kilowatt-hours. Determine the battery charge level.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 34050 \\\\)",
             "\\\\( 34250 \\\\)",
@@ -13272,9 +13272,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 17850 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 52000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "consumed",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h69",
