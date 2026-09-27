@@ -37,7 +37,6 @@ const LearningPath = ({ profile }) => {
   };
   const rawYears = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
   const years = rawYears.map(normalizeYearLabel).filter(Boolean);
-  const year = years[0] || 'Year 3';
   const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
   // Active course for multi-course students (e.g. Advanced + Extension 1)
   const [activeCourse, setActiveCourse] = useState(courses[0] || 'Advanced');
@@ -48,6 +47,14 @@ const LearningPath = ({ profile }) => {
     }
   }, [profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
   const course = activeCourse;
+  // A student can be assigned multiple years (e.g. Year 11 + Year 12) with a
+  // single flat assignedCourse list shared across both — years[0] alone isn't
+  // enough once a course only exists under one of them (e.g. "Extension 2" is
+  // Year-12-only). Picking the wrong year here silently fell through to
+  // CURRICULUM_DATA[wrongYear]'s FIRST course as a "fallback", showing e.g.
+  // Year 11 Standard chapters for a Year 12 Extension 2 student.
+  const year = years.find((y) => ['Year 11', 'Year 12'].includes(y) && CURRICULUM_DATA[y]?.[activeCourse])
+    || years[0] || 'Year 3';
 
   // ── Fetch curriculum ──────────────────────────────────────────────────
   useEffect(() => {
