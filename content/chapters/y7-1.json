@@ -13518,8 +13518,8 @@
         {
           "id": "y7-1c-h74",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A museum collection has \\\\( 15400 \\\\) ancient coins. Curators lend \\\\( 2950 \\\\) coins to a partner museum for an exhibition. How many coins remain in the archive?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12440 \\\\)",
             "\\\\( 12350 \\\\)",
@@ -13541,9 +13541,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 2950 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 15400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "lend",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h75",
