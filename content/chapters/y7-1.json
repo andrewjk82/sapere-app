@@ -10684,8 +10684,8 @@
         {
           "id": "y7-1c-h5",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A tagging study registered \\\\( 4512 \\\\) juvenile green sea turtles nesting in a bay. Over the monsoon season, \\\\( 1684 \\\\) turtles migrated out to the deep ocean. How many tagged turtles remain in the bay?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 2828 \\\\)",
             "\\\\( 2818 \\\\)",
@@ -10712,8 +10712,19 @@
             {
               "text": "remain",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 4512 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 1684 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h6",
