@@ -11717,8 +11717,8 @@
         {
           "id": "y7-1c-h33",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A conservation hatchery stocked a creek with \\\\( 35200 \\\\) rainbow trout fingerlings. Seasonal monitoring indicates that \\\\( 11450 \\\\) fingerlings were caught or did not survive. How many trout remain?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 23850 \\\\)",
             "\\\\( 23750 \\\\)",
@@ -11745,8 +11745,19 @@
             {
               "text": "remain",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 35200 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 11450 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h34",
