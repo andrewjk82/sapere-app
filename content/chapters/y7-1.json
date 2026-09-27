@@ -11848,8 +11848,8 @@
         {
           "id": "y7-1c-h36",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A solar facility generated \\\\( 96500 \\\\) megawatt-hours of electricity. Maintenance shutdowns reduced the final grid output by \\\\( 12840 \\\\) megawatt-hours. Find the electricity delivered to the grid.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 83660 \\\\)",
             "\\\\( 83760 \\\\)",
@@ -11872,8 +11872,19 @@
             {
               "text": "reduced",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 96500 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 12840 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h37",
