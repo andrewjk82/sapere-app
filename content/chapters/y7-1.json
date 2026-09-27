@@ -10921,8 +10921,11 @@
         {
           "id": "y7-1c-h13",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Before a major typhoon makes landfall, the atmospheric pressure at a weather station drops from \\\\( 1013 \\\\) hectopascals to \\\\( 946 \\\\) hectopascals. By how much did the pressure decrease?",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "fig:396926daa5"
+          },
           "options": [
             "\\\\( 57 \\\\)",
             "\\\\( -33 \\\\)",
@@ -10943,16 +10946,16 @@
               }
             }
           ],
-          "figure": {
-            "svg": "fig:396926daa5"
-          },
           "xp": 2,
           "keyPoints": [
             {
-              "text": "from \\\\( 1013 \\\\) hectopascals to ",
+              "text": "drops from \\\\( 1013 \\\\) hectopascals to \\\\( 946 \\\\) hectopascals.",
               "note": "The change between two values is their difference — subtract the smaller from the larger."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h14",
