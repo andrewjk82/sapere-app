@@ -13776,8 +13776,8 @@
         {
           "id": "y7-1c-h80",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A transit system logged \\\\( 52400 \\\\) passenger boardings on Friday. Due to weekend schedules, boardings on Saturday decreased by \\\\( 13650 \\\\). How many boardings were logged on Saturday?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 38740 \\\\)",
             "\\\\( 38850 \\\\)",
@@ -13800,8 +13800,19 @@
             {
               "text": "How many",
               "note": "The total of equal groups is found by multiplying."
+            },
+            {
+              "text": "\\\\( 52400 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 13650 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h81",
