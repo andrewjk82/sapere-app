@@ -10729,8 +10729,8 @@
         {
           "id": "y7-1c-h6",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A high-capacity grain silo contained \\\\( 78310 \\\\) bushels of barley. A commercial brewery purchased \\\\( 19450 \\\\) bushels. How much barley remains in the silo?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 58760 \\\\)",
             "\\\\( 58850 \\\\)",
@@ -10757,8 +10757,19 @@
             {
               "text": "remains",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 78310 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 19450 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h7",
