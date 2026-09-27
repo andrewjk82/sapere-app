@@ -10774,8 +10774,8 @@
         {
           "id": "y7-1c-h7",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A thermal plant's cooling loop holds \\\\( 16050 \\\\) litres of purified water. Evaporation losses during a high-temperature cycle remove \\\\( 3785 \\\\) litres. What volume of water is left in the loop?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12265 \\\\)",
             "\\\\( 12365 \\\\)",
@@ -10802,8 +10802,19 @@
             {
               "text": "left",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 16050 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 3785 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h8",
