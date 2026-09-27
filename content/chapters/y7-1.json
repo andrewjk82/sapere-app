@@ -11627,8 +11627,8 @@
         {
           "id": "y7-1c-h31",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A community battery storage facility has a maximum charge capacity of \\\\( 52000 \\\\) kilowatt-hours. During peak evening hours, it discharges \\\\( 17850 \\\\) kilowatt-hours to the grid. What is the remaining stored energy?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 34250 \\\\)",
             "\\\\( 34140 \\\\)",
@@ -11655,8 +11655,19 @@
             {
               "text": "remaining",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 52000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 17850 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h32",
