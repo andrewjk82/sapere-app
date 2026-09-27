@@ -265,6 +265,10 @@
             {
               "text": "deposited",
               "note": "Put money into the account. it means plus"
+            },
+            {
+              "text": "withdraw",
+              "note": "Take money out. It means minus"
             }
           ],
           "meta": {
