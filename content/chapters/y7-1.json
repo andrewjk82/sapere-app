@@ -13862,8 +13862,8 @@
         {
           "id": "y7-1c-h82",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A fulfillment center had \\\\( 24000 \\\\) sustainable cardboard shipping sleeves. After packing a heavy batch of books, they used \\\\( 8375 \\\\) sleeves. Determine the sleeve stock.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 15615 \\\\)",
             "\\\\( 15625 \\\\)",
@@ -13885,9 +13885,20 @@
           "keyPoints": [
             {
               "text": "\\\\( 8375 \\\\)",
-              "note": "Work through the calculation one step at a time."
+              "note": "The second key number"
+            },
+            {
+              "text": "\\\\( 24000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "used",
+              "note": "it means minus"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h83",
