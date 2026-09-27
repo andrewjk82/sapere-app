@@ -13028,8 +13028,8 @@
         {
           "id": "y7-1c-h63",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A mill produced \\\\( 156000 \\\\) tons of structural beams. Inspectors rejected \\\\( 18450 \\\\) tons due to cooling cracks. What weight of structural beams was approved for sale?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 137550 \\\\)",
             "\\\\( 137540 \\\\)",
@@ -13056,8 +13056,19 @@
             {
               "text": "approved",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 156000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 18450 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h64",
