@@ -11975,8 +11975,8 @@
         {
           "id": "y7-1c-h39",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A city power grid had a peak load demand of \\\\( 86000 \\\\) megawatts. Implementing smart thermostats reduced the peak demand by \\\\( 4950 \\\\) megawatts. Find the new peak grid load.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 81040 \\\\)",
             "\\\\( 81050 \\\\)",
@@ -12003,8 +12003,19 @@
             {
               "text": "new",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 86000 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 4950 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h40",
