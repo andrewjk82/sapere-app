@@ -11672,8 +11672,8 @@
         {
           "id": "y7-1c-h32",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A manufacturing vat holds \\\\( 16800 \\\\) millilitres of solvent. A ventilation malfunction allows \\\\( 4250 \\\\) millilitres to evaporate. What volume of solvent remains in the vat?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 12550 \\\\)",
             "\\\\( 12650 \\\\)",
@@ -11700,8 +11700,19 @@
             {
               "text": "remains",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 16800 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 4250 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h33",
