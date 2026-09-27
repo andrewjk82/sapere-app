@@ -10816,8 +10816,8 @@
         {
           "id": "y7-1c-h10",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A telescope detects a supernova at a distance of \\\\( 8510 \\\\) light years. A closer star cluster is situated at a distance of \\\\( 3648 \\\\) light years from the supernova. Find the distance to the closer star cluster.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 4962 \\\\)",
             "\\\\( 4852 \\\\)",
@@ -10840,8 +10840,15 @@
             {
               "text": "closer",
               "note": "“Closer” means a smaller distance — subtract."
+            },
+            {
+              "text": "from the supernova.",
+              "note": "Please be careful it is not from telescope. draw the situation"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h11",
