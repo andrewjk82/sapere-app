@@ -12550,8 +12550,8 @@
         {
           "id": "y7-1c-h52",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A deep-sea vessel measures an ocean trench depth at \\\\( 10920 \\\\) feet. A nearby underwater ridge rises to \\\\( 4580 \\\\) feet. Find the difference in height between the ridge and the trench floor.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 6240 \\\\)",
             "\\\\( 6330 \\\\)",
@@ -12574,8 +12574,15 @@
             {
               "text": "rises",
               "note": "Going up moves the value towards 0 (or higher) — add."
+            },
+            {
+              "text": "\\\\( 10920 \\\\)",
+              "note": "The first key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h53",
