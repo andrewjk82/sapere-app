@@ -10598,8 +10598,8 @@
         {
           "id": "y7-1c-h3",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An ecological census counted \\\\( 64800 \\\\) breeding pairs of emperor penguins on an ice shelf. Due to shifting currents, \\\\( 15950 \\\\) pairs relocated to a different nesting ground. Calculate the remaining penguin pairs.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 48850 \\\\)",
             "\\\\( 48950 \\\\)",
@@ -10626,8 +10626,19 @@
             {
               "text": "remaining",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 64800 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 15950 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h4",
