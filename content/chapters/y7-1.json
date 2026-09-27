@@ -12464,8 +12464,8 @@
         {
           "id": "y7-1c-h50",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A coastal wind farm generated \\\\( 10130 \\\\) megawatt-hours of clean power in storm winds. When the winds died down, the output decreased by \\\\( 9460 \\\\) megawatt-hours. Calculate the low-wind output.",
+          "difficulty": "hard",
           "options": [
             "\\\\( 670 \\\\)",
             "\\\\( 660 \\\\)",
@@ -12488,8 +12488,19 @@
             {
               "text": "decreased",
               "note": "This amount is taken away — subtract it from the starting amount."
+            },
+            {
+              "text": "\\\\( 10130 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 9460 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h51",
