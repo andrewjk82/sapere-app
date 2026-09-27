@@ -12632,8 +12632,8 @@
         {
           "id": "y7-1c-h54",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A semiconductor facility processed \\\\( 62450 \\\\) silicon wafers. An ultraviolet scanning check identified \\\\( 4790 \\\\) defective wafers. How many silicon wafers were approved?",
+          "difficulty": "hard",
           "options": [
             "\\\\( 57660 \\\\)",
             "\\\\( 57760 \\\\)",
@@ -12660,8 +12660,19 @@
             {
               "text": "approved",
               "note": "The question asks what is left after the change."
+            },
+            {
+              "text": "\\\\( 62450 \\\\)",
+              "note": "The first key number"
+            },
+            {
+              "text": "\\\\( 4790 \\\\)",
+              "note": "The second key number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1c-h55",
