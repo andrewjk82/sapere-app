@@ -224,7 +224,7 @@ export const analyzeInkPages = (pagesStrokes = []) => {
   };
 };
 
-const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange, onInkChange }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
   const displayCanvasRef = useRef(null); // top layer: tip + pointer events
@@ -275,6 +275,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   strokesRef.current = strokes;
+  // Lets a host (homework drafts) autosave without polling. Ref'd so a new
+  // callback identity each parent render doesn't re-fire the effect.
+  const onInkChangeRef = useRef(onInkChange);
+  onInkChangeRef.current = onInkChange;
+  useEffect(() => { onInkChangeRef.current?.(); }, [strokes, pages]);
   isSubmittedRef.current = isSubmitted;
   activeToolRef.current = activeTool;
   eraserModeRef.current = eraserMode;
@@ -1142,6 +1147,25 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         return all
           .filter((ps, index) => force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps))
           .map(ps => getCompositeDataURL(ps || []));
+      },
+      getPagesData: () => {
+        const all = [...pages];
+        all[currentPage] = getCurrentPageStrokes();
+        return { pages: all, pageTypes: [...pageTypes], currentPage };
+      },
+      loadPagesData: (data) => {
+        if (!Array.isArray(data?.pages) || data.pages.length === 0) return;
+        const nextPages = data.pages.map((p) => (Array.isArray(p) ? p : []));
+        const idx = Math.min(Math.max(0, Number(data.currentPage) || 0), nextPages.length - 1);
+        setPages(nextPages);
+        setPageTypes(
+          Array.isArray(data.pageTypes) && data.pageTypes.length === nextPages.length
+            ? data.pageTypes
+            : nextPages.map(() => false),
+        );
+        setCurrentPage(idx);
+        setStrokes(nextPages[idx]);
+        setUndoStack([]);
       },
       clear: () => {
         setStrokes([]);
