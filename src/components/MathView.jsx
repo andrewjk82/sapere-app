@@ -283,6 +283,17 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
     };
     renderMath();
 
+    // The KaTeX_Main webfont (loaded via @font-face in katex.css) usually
+    // hasn't finished downloading yet on a fresh page load, so the very
+    // first fitWideMath() run measures glyph widths using the fallback
+    // font — typically narrower than KaTeX_Main. The scale computed from
+    // that undersized measurement isn't aggressive enough once the real
+    // font swaps in and the table reflows wider, leaving a column or two
+    // still cut off. Re-measure once the font is actually ready.
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(() => { if (!cancelled && containerRef.current) fitWideMath(containerRef.current); });
+    }
+
     // Re-fit on viewport/container resize (e.g. rotating a phone, resizing a
     // split-screen panel) — the scale computed at render time is stale once
     // the available width changes.
