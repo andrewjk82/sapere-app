@@ -83,7 +83,16 @@ const fitWideMath = (target) => {
     if (containerWidth > 0 && naturalWidth > containerWidth + 1) {
       const scale = containerWidth / naturalWidth;
       const naturalHeight = katexEl.offsetHeight;
-      katexEl.style.transformOrigin = 'top center';
+      // 'top left', not 'top center': a centered line's text-align:center
+      // does NOT split an over-wide inline-block's overflow evenly across
+      // both sides — the browser renders it flush against the line's start
+      // edge (left, in LTR) with all the overflow spilling off the right.
+      // Scaling around the element's own center (which sits well right of
+      // the line's actual left edge once it's wider than the line) leaves a
+      // gap on the left while the right edge still overflows. Scaling from
+      // the left edge — which already lines up with the container's left
+      // edge — is what actually pulls the whole table inside the box.
+      katexEl.style.transformOrigin = 'top left';
       katexEl.style.transform = `scale(${scale})`;
       wrapper.style.height = `${Math.ceil(naturalHeight * scale)}px`;
       wrapper.style.overflow = 'hidden';
