@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
@@ -192,8 +193,8 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     pointerEvents: active ? 'auto' : 'none',
   });
 
-  return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 1000, background: '#f8fafc', display: 'flex', flexDirection: 'column' }}>
+  return createPortal(
+    <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: '#f8fafc', display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', background: '#fff', borderBottom: '1px solid #e2e8f0' }}>
         <button type="button" onClick={handleClose} aria-label="Back" style={{ border: 0, background: 'transparent', cursor: 'pointer', display: 'flex', padding: 6 }}>
           <ArrowLeft size={20} />
@@ -258,7 +259,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
       </div>
 
       {confirming && (
-        <div style={{ position: 'fixed', inset: 0, background: 'rgba(15,23,42,0.45)', display: 'grid', placeItems: 'center', zIndex: 1001 }}>
+        <div style={{ position: 'fixed', inset: 0, background: 'rgba(15,23,42,0.45)', display: 'grid', placeItems: 'center', zIndex: 10001 }}>
           <div style={{ background: '#fff', borderRadius: 20, padding: 24, maxWidth: 360, width: 'calc(100% - 32px)' }}>
             <div style={{ fontWeight: 800, fontSize: '1.05rem', color: '#1e1b4b' }}>Submit your homework?</div>
             <p style={{ color: '#64748b', fontSize: '0.88rem' }}>Your teacher will be notified and can see every page you wrote.</p>
@@ -269,7 +270,8 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
           </div>
         </div>
       )}
-    </div>
+    </div>,
+    document.body,
   );
 };
 

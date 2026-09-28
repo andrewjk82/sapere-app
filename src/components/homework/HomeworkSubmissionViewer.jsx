@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ChevronLeft, ChevronRight, CheckCircle2, ZoomIn, ZoomOut, Loader2 } from 'lucide-react';
 import { fetchSubmission, fetchSubmissionPages, markHomeworkChecked } from '../../services/homeworkService';
 import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
@@ -68,8 +69,8 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
   const topics = (submission?.topics || []).map((t) => t.label).join(', ');
   const subtitle = [submission?.sessionDate, topics].filter(Boolean).join(' · ');
 
-  return (
-    <div style={{ position: 'fixed', inset: 0, zIndex: 1000, background: 'rgba(15,23,42,0.85)', display: 'flex', flexDirection: 'column' }}>
+  return createPortal(
+    <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.85)', display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 14px', color: '#fff' }}>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 800 }}>{mode === 'teacher' ? (submission?.studentName || 'Homework') : 'Your homework'}</div>
@@ -120,7 +121,8 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
           <button type="button" aria-label="Next page" disabled={page === pages.length - 1} onClick={() => { setPage((p) => p + 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === pages.length - 1 ? 0.3 : 1 }}><ChevronRight size={24} /></button>
         </div>
       )}
-    </div>
+    </div>,
+    document.body,
   );
 };
 

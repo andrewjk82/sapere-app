@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -10,6 +10,7 @@ import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import { toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
+import { toDrivePreviewUrl, toDriveOpenUrl } from '../utils/homework';
 import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
@@ -29,6 +30,7 @@ const LearningPath = ({ profile }) => {
   const [selectedTopic, setSelectedTopic] = useState(null);    // { topic, chapter }
   const [showGraph3D, setShowGraph3D] = useState(false);
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
+  const [pdfPreview, setPdfPreview] = useState(null); // { url, openUrl, title } | null — topic worksheet
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -470,13 +472,38 @@ const LearningPath = ({ profile }) => {
                       const started = pct > 0 && pct < 100;
                       const chipColor = done ? '#10b981' : started ? '#f59e0b' : '#e2e8f0';
                       const textColor = done ? '#fff' : started ? '#fff' : '#94a3b8';
+                      const pdfUrl = toDrivePreviewUrl(t.homeworkPdfUrl);
+                      const chipStyle = {
+                        display: 'inline-flex', alignItems: 'center', gap: '3px',
+                        padding: '2px 7px', borderRadius: '999px',
+                        background: chipColor, color: textColor,
+                        fontSize: '0.65rem', fontWeight: 800,
+                      };
+                      if (pdfUrl) {
+                        return (
+                          <button
+                            key={t.id}
+                            type="button"
+                            title={`Open worksheet: ${t.code ? `${t.code} · ` : ''}${t.title || ''}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setPdfPreview({ url: pdfUrl, openUrl: toDriveOpenUrl(t.homeworkPdfUrl), title: `${t.code ? `${t.code} · ` : ''}${t.title || ''}` });
+                            }}
+                            style={{
+                              ...chipStyle,
+                              border: '1.5px solid #8b5cf6', cursor: 'pointer',
+                              color: done || started ? textColor : '#6d28d9',
+                              background: done || started ? chipColor : '#f5f3ff',
+                            }}
+                          >
+                            <FileText size={10} />
+                            {t.code || t.id}
+                            {pct > 0 && !done && <span style={{ opacity: 0.9 }}>{pct}%</span>}
+                          </button>
+                        );
+                      }
                       return (
-                        <span key={t.id} style={{
-                          display: 'inline-flex', alignItems: 'center', gap: '3px',
-                          padding: '2px 7px', borderRadius: '999px',
-                          background: chipColor, color: textColor,
-                          fontSize: '0.65rem', fontWeight: 800,
-                        }}>
+                        <span key={t.id} style={chipStyle}>
                           {t.code || t.id}
                           {pct > 0 && !done && <span style={{ opacity: 0.9 }}>{pct}%</span>}
                         </span>
@@ -537,6 +564,31 @@ const LearningPath = ({ profile }) => {
           <CheatSheetLightbox preview={cheatSheetPreview} onClose={() => setCheatSheetPreview(null)} />
         )}
       </AnimatePresence>
+
+      {pdfPreview && createPortal(
+        <div
+          onClick={() => setPdfPreview(null)}
+          style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            style={{ width: 'min(960px, 100%)', height: 'min(90vh, 1100px)', background: '#fff', borderRadius: 20, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.35)' }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
+              <FileText size={18} color="#7c3aed" />
+              <div style={{ flex: 1, minWidth: 0, fontWeight: 800, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pdfPreview.title || 'Worksheet'}</div>
+              <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
+                <ExternalLink size={14} /> Open in Google Drive
+              </a>
+              <button type="button" aria-label="Close" onClick={() => setPdfPreview(null)} style={{ border: 0, background: 'transparent', cursor: 'pointer', padding: 4, display: 'flex', color: '#64748b' }}>
+                <X size={20} />
+              </button>
+            </div>
+            <iframe title="Worksheet" src={pdfPreview.url} allow="autoplay" style={{ flex: 1, width: '100%', border: 0, background: '#f1f5f9' }} />
+          </div>
+        </div>,
+        document.body,
+      )}
     </div>
   );
 };
