@@ -25,6 +25,7 @@ import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
+import HomeworkCard from './homework/HomeworkCard';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -565,6 +566,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             </div>
           </div>
         )}
+
+        {!isAdmin && <HomeworkCard sessions={studentSessions} profile={profile} user={user} />}
 
         {!isAdmin && <OnlineStudySessionCard />}
 
