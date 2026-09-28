@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import taxonomyData from '../../tools/scripts/output/question_types_taxonomy.json';
+import HomeworkInbox from './homework/HomeworkInbox';
 
 // ──────────────────────────────────────────────────────────
 // Helpers
@@ -368,6 +369,8 @@ const AdminDashboard = ({
         <h2>Good morning, {userName}</h2>
         <span className="ad__date">{formatDate()}</span>
       </div>
+
+      <HomeworkInbox />
 
       {/* Student health columns */}
       <div className="ad__pulse">

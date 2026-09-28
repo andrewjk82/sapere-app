@@ -77,6 +77,8 @@ import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
 import StudentDashboardCard from "./studentDetail/StudentDashboardCard";
 import ChallengeHistoryCard from "./ChallengeHistoryCard";
+import HomeworkSubmissionViewer from "./homework/HomeworkSubmissionViewer";
+import { markHomeworkChecked } from "../services/homeworkService";
 import "./student-detail.css";
 
 const ROLE_OPTIONS = [
@@ -172,6 +174,7 @@ const StudentDetail = ({ studentId, onBack }) => {
   const [completedChapters, setCompletedChapters] = useState([]);
   const [homeworkSessions, setHomeworkSessions] = useState([]);
   const [homeworkLoading, setHomeworkLoading] = useState(false);
+  const [viewHomeworkId, setViewHomeworkId] = useState(null);
   const [dailyPracticeConfig, setDailyPracticeConfig] = useState({ years: [], chapters: [] });
 
   const [booking, setBooking] = useState(false);
@@ -1054,10 +1057,16 @@ const StudentDetail = ({ studentId, onBack }) => {
     // Optimistic update so the UI responds instantly.
     setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, isHomeworkCompleted: next } : s));
     try {
-      await updateDoc(doc(db, 'sessions', session.id), {
-        isHomeworkCompleted: next,
-        homeworkCompletedAt: next ? new Date().toISOString() : null,
-      });
+      if (next && session.homeworkStatus === 'submitted') {
+        // Submitted online: close the submission too (starts the 30-day originals timer).
+        await markHomeworkChecked(session.id);
+        setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, homeworkStatus: 'checked' } : s));
+      } else {
+        await updateDoc(doc(db, 'sessions', session.id), {
+          isHomeworkCompleted: next,
+          homeworkCompletedAt: next ? new Date().toISOString() : null,
+        });
+      }
       showToast(next ? 'Homework marked as completed.' : 'Homework set back to pending.', 'success');
     } catch (err) {
       // Revert on failure.
@@ -2238,6 +2247,18 @@ const StudentDetail = ({ studentId, onBack }) => {
                       </div>
                     )}
 
+                    {(session.homeworkStatus === 'submitted' || session.homeworkStatus === 'checked') && (
+                      <div style={{ marginTop: '12px' }}>
+                        <button
+                          type="button"
+                          onClick={() => setViewHomeworkId(session.id)}
+                          style={{ padding: '8px 14px', borderRadius: '12px', border: '1.5px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer' }}
+                        >
+                          View submission{session.homeworkStatus === 'submitted' ? ' · new' : ''}
+                        </button>
+                      </div>
+                    )}
+
                     {/* Complete toggle — teacher checks HW off as done */}
                     {session.homework && (
                       <div style={{ marginTop: '14px', display: 'flex', justifyContent: 'flex-end' }}>
@@ -2262,6 +2283,14 @@ const StudentDetail = ({ studentId, onBack }) => {
                   </div>
                 );
               })
+            )}
+            {viewHomeworkId && (
+              <HomeworkSubmissionViewer
+                sessionId={viewHomeworkId}
+                mode="teacher"
+                onClose={() => setViewHomeworkId(null)}
+                onChecked={(id) => setHomeworkSessions((prev) => prev.map((s) => s.id === id ? { ...s, homeworkStatus: 'checked', isHomeworkCompleted: true } : s))}
+              />
             )}
           </div>
         );
