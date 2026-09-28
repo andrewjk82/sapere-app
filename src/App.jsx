@@ -1183,7 +1183,14 @@ function App() {
     );
   }
 
-  if (authMode !== 'login' && ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin))) {
+  // No `authMode !== 'login'` gate here on purpose: `signInWithRedirect` (the Google
+  // sign-in fallback on iOS Safari / home-screen PWAs) does a full page reload, which
+  // resets `authMode` back to its 'login' default regardless of which flow the user
+  // was actually in — an authenticated user with no profile doc must reach this wizard
+  // no matter what authMode happens to be after that reload (2026-09-28 incident: new
+  // students signing up with Google on iOS Safari landed authenticated but stuck with
+  // no way back into the signup wizard).
+  if ((hasPendingSignup && !profile) || (profileLoaded && !profile && !isAdmin)) {
     return <Signup key="signup-pending" onToggleMode={() => setAuthMode('login')} />;
   }
 

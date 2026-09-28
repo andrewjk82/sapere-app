@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Mail, Lock, AlertCircle, ArrowRight, CheckCircle2, User, Users, GraduationCap, School, Phone, MapPin, Plus, Trash2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/config';
@@ -31,7 +31,36 @@ const Signup = ({ onToggleMode }) => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const { signup, loginWithGoogle, logout } = useAuth();
+  const { signup, loginWithGoogle, logout, user } = useAuth();
+
+  // Recovery path for Google sign-in: on iOS Safari (especially added-to-home-screen
+  // PWAs), signInWithPopup often falls back to signInWithRedirect, which can land back
+  // on a fresh page load in a context where sessionStorage('pendingSignupStep') didn't
+  // survive the round trip — the wizard would otherwise reset to Step 1 (email/password)
+  // even though the user is already authenticated via Google. Treat `user` becoming
+  // truthy as the source of truth instead: if we're still showing Step 1 once a user is
+  // authenticated, skip to Step 2 and (re)write the pending profile doc, mirroring what
+  // the email/password Step 1 already does — a Google user who never reaches Step 3
+  // would otherwise be authenticated with no Firestore profile at all.
+  useEffect(() => {
+    if (!user || step !== 1) return;
+    (async () => {
+      try {
+        await setDoc(doc(db, 'users', user.uid), {
+          uid: user.uid,
+          email: user.email,
+          status: 'Pending Profile',
+          role: 'student',
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        }, { merge: true });
+      } catch (e) {
+        console.warn('pending profile doc create failed (non-fatal):', e?.code);
+      }
+      sessionStorage.setItem('pendingSignupStep', '2');
+      setStep(2);
+    })();
+  }, [user, step]);
 
   const handleNextStep = async () => {
     if (step === 1) {
