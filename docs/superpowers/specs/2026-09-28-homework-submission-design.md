@@ -149,6 +149,20 @@ peak around ~100MB (30-day window); thumbnails grow ~3–4MB/month.
   submit → appears in teacher list → check → student sees `Checked ✓`.
 - Real device (teacher): iPad Safari home-screen install — pen input and split view.
 
+## Amendments from implementation planning (2026-09-28)
+
+These supersede the matching statements above; see the plan
+(`docs/superpowers/plans/2026-09-28-homework-submission.md`) for the reasoning.
+
+- Retention uses a `purgeAfter: 'YYYY-MM-DD'` field set on check and removed on purge
+  (single-field range query, no composite index) instead of `checkedAt` + `originalsDeletedAt == null`.
+- The push notification opens the app root (send-notif's link is fixed); "Homework to check" is at
+  the top of the admin dashboard.
+- Rules are verified manually; there is no emulator test setup in the repo.
+- `pages/{i}` docs also store `studentId`.
+- Opening a homework reads the student's curriculum doc(s) fresh: +1–2 reads per open.
+- Unstarted homework older than 14 days is hidden from the student's list.
+
 ## Files expected to change
 
 New: `src/components/homework/HomeworkCard.jsx`, `HomeworkWorkspace.jsx`,
