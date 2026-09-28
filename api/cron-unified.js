@@ -4,6 +4,7 @@ import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEma
 import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail, genericEmail, onlineStudySessionEmail } from './_lib/emailTemplates.js';
 import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './_lib/examPrepReport.js';
 import { settleSprintWeek } from './_lib/timesTableSprintSettlement.js';
+import { purgeCheckedHomeworkOriginals } from './_lib/homeworkRetention.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -569,6 +570,20 @@ export default async function handler(req, res) {
       logs.push(`[D+1] Cleanup error: ${e.message}`);
     }
     } // end D+1 cleanup 2 AM gate
+
+    // ══════════════════════════════════════════════════════════════════════
+    // PART 5.5: Homework originals retention
+    // Same 1–5 AM Sydney window as the D+1 cleanup. purgeAfter is removed once
+    // a submission is purged, so later runs in the window re-query 0 docs.
+    // ══════════════════════════════════════════════════════════════════════
+    if (sydTotalMin >= 60 && sydTotalMin < 300) {
+      try {
+        const hw = await purgeCheckedHomeworkOriginals(db, admin.firestore.FieldValue, { todayStr });
+        if (hw.purged > 0) logs.push(`[Homework] Purged originals for ${hw.purged} submission(s), ${hw.pagesDeleted} page(s).`);
+      } catch (e) {
+        logs.push(`[Homework] Retention error: ${e.message}`);
+      }
+    }
 
     // ══════════════════════════════════════════════════════════════════════
     // PART 6: Weekly Times Table Sprint settlement
