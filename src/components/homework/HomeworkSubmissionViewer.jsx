@@ -100,16 +100,19 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
       )}
       {error && <div role="alert" style={{ textAlign: 'center', color: '#fecaca', fontWeight: 700 }}>{error}</div>}
 
-      <div style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', justifyContent: 'center', alignItems: zoom === 1 ? 'center' : 'flex-start', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
+      {/* Centre with margin:auto, not justify/align-content:center — a page taller
+          (or, zoomed, wider) than the viewport would otherwise overflow off the
+          top/left where it can't be scrolled to, hiding the top of the page. */}
+      <div key={page} style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
         {loading ? (
-          <Loader2 size={28} color="#fff" style={SPIN} />
+          <Loader2 size={28} color="#fff" style={{ ...SPIN, margin: 'auto' }} />
         ) : pages.length === 0 ? (
-          <div style={{ color: '#cbd5e1', fontWeight: 700 }}>No pages to show.</div>
+          <div style={{ color: '#cbd5e1', fontWeight: 700, margin: 'auto' }}>No pages to show.</div>
         ) : (
           <img
             src={pages[page]}
             alt={`Page ${page + 1}`}
-            style={{ background: '#fff', borderRadius: 12, width: `${zoom * 100}%`, maxWidth: zoom === 1 ? 900 : 'none', height: 'auto' }}
+            style={{ margin: 'auto', flexShrink: 0, background: '#fff', borderRadius: 12, width: `${zoom * 100}%`, maxWidth: zoom === 1 ? 900 : 'none', height: 'auto' }}
           />
         )}
       </div>
