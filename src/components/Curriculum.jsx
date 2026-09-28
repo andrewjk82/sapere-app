@@ -182,14 +182,14 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   const [editingChapter, setEditingChapter] = useState(null); // { mode: 'add'|'edit', chapter: {} }
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [editingSubtopicIndex, setEditingSubtopicIndex] = useState(-1);
-  const [subtopicForm, setSubtopicForm] = useState({ code: '', title: '', page: '', homeworkPdfUrl: '' });
+  const [subtopicForm, setSubtopicForm] = useState({ code: '', title: '', page: '' });
   const [editingCheatSheetIndex, setEditingCheatSheetIndex] = useState(-1);
   const [cheatSheetForm, setCheatSheetForm] = useState({ label: '', url: '' });
 
   const closeEditingChapterModal = () => {
     setEditingChapter(null);
     setEditingSubtopicIndex(-1);
-    setSubtopicForm({ code: '', title: '', page: '', homeworkPdfUrl: '' });
+    setSubtopicForm({ code: '', title: '', page: '' });
   };
   // Chapter card click navigates to a topics list page (not a modal); choosing
   // a topic opens the student-style question bank page for that topic.
@@ -384,17 +384,14 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     }
 
     const currentTopics = [...(editingChapter.chapter.topics || [])];
-    const homeworkPdfUrl = toDrivePreviewUrl(subtopicForm.homeworkPdfUrl);
-    // Keep fields this form doesn't edit (e.g. `group`); homeworkPdfUrl comes only from the form so clearing it removes it.
-    // eslint-disable-next-line no-unused-vars
-    const { homeworkPdfUrl: _prevPdf, ...preserved } = editingSubtopicIndex >= 0 ? (currentTopics[editingSubtopicIndex] || {}) : {};
+    // Keep fields this form doesn't edit (homeworkPdfUrl is edited inline on each row, `group`, …).
+    const preserved = editingSubtopicIndex >= 0 ? (currentTopics[editingSubtopicIndex] || {}) : {};
     const newSubtopic = {
       ...preserved,
       id: subtopicForm.id || `${editingChapter.chapter.id}-${subtopicForm.code.toLowerCase()}`,
       code: subtopicForm.code,
       title: subtopicForm.title,
       page: subtopicForm.page ? parseInt(subtopicForm.page) : '',
-      ...(homeworkPdfUrl ? { homeworkPdfUrl } : {}),
     };
 
     if (editingSubtopicIndex >= 0) {
@@ -411,7 +408,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
       }
     });
 
-    setSubtopicForm({ code: '', title: '', page: '', homeworkPdfUrl: '' });
+    setSubtopicForm({ code: '', title: '', page: '' });
     setEditingSubtopicIndex(-1);
   };
 
@@ -421,8 +418,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
       id: subtopic.id,
       code: subtopic.code,
       title: subtopic.title,
-      page: subtopic.page || '',
-      homeworkPdfUrl: subtopic.homeworkPdfUrl || ''
+      page: subtopic.page || ''
     });
   };
 
@@ -438,7 +434,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     });
     
     if (editingSubtopicIndex === index) {
-      setSubtopicForm({ code: '', title: '', page: '', homeworkPdfUrl: '' });
+      setSubtopicForm({ code: '', title: '', page: '' });
       setEditingSubtopicIndex(-1);
     } else if (editingSubtopicIndex > index) {
       setEditingSubtopicIndex(editingSubtopicIndex - 1);
@@ -498,6 +494,12 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     }
   };
 
+  const handleSubtopicPdfChange = (index, value) => {
+    const currentTopics = [...(editingChapter.chapter.topics || [])];
+    currentTopics[index] = { ...currentTopics[index], homeworkPdfUrl: value };
+    setEditingChapter({ ...editingChapter, chapter: { ...editingChapter.chapter, topics: currentTopics } });
+  };
+
   const handleSaveChapter = async (e) => {
     e.preventDefault();
     let chapterData = { ...editingChapter.chapter };
@@ -506,16 +508,14 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
     // we automatically append it to the topics array before saving!
     if (subtopicForm.code && subtopicForm.title) {
       const currentTopics = [...(chapterData.topics || [])];
-      const homeworkPdfUrl = toDrivePreviewUrl(subtopicForm.homeworkPdfUrl);
-      // eslint-disable-next-line no-unused-vars
-      const { homeworkPdfUrl: _prevPdf, ...preserved } = editingSubtopicIndex >= 0 ? (currentTopics[editingSubtopicIndex] || {}) : {};
+      // Keep fields this form doesn't edit (homeworkPdfUrl is edited inline on each row, `group`, …).
+      const preserved = editingSubtopicIndex >= 0 ? (currentTopics[editingSubtopicIndex] || {}) : {};
       const newSubtopic = {
         ...preserved,
         id: subtopicForm.id || `${chapterData.id || ''}-${subtopicForm.code.toLowerCase()}`,
         code: subtopicForm.code,
         title: subtopicForm.title,
         page: subtopicForm.page ? parseInt(subtopicForm.page) : '',
-        ...(homeworkPdfUrl ? { homeworkPdfUrl } : {}),
       };
       if (editingSubtopicIndex >= 0) {
         currentTopics[editingSubtopicIndex] = newSubtopic;
@@ -523,8 +523,18 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
         currentTopics.push(newSubtopic);
       }
       chapterData.topics = currentTopics;
-      setSubtopicForm({ code: '', title: '', page: '', homeworkPdfUrl: '' });
+      setSubtopicForm({ code: '', title: '', page: '' });
       setEditingSubtopicIndex(-1);
+    }
+
+    // Homework PDFs are typed raw on each row: store the Drive /preview form,
+    // and drop the key when blank (Firestore rejects undefined values).
+    if (Array.isArray(chapterData.topics)) {
+      chapterData.topics = chapterData.topics.map((t) => {
+        const { homeworkPdfUrl: raw, ...rest } = t || {};
+        const pdf = toDrivePreviewUrl(raw);
+        return pdf ? { ...rest, homeworkPdfUrl: pdf } : rest;
+      });
     }
 
     // Same UX fix for a cheat sheet typed but not [+]'d.
@@ -3957,12 +3967,16 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                   <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>
                     Subtopics ({editingChapter.chapter.topics?.length || 0})
                   </label>
+                  <div style={{ fontSize: '0.72rem', color: '#94a3b8', margin: '-6px 0 10px' }}>
+                    Homework PDF: paste a Google Drive link under each subtopic, shared as “Anyone with the link”.
+                  </div>
                   
                   {/* Scrollable Subtopics List */}
                   {(editingChapter.chapter.topics && editingChapter.chapter.topics.length > 0) ? (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '180px', overflowY: 'auto', marginBottom: '14px', paddingRight: '4px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '360px', overflowY: 'auto', marginBottom: '14px', paddingRight: '4px' }}>
                       {editingChapter.chapter.topics.map((sub, index) => (
-                        <div key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                        <div key={index} style={{ padding: '10px 14px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', overflow: 'hidden' }}>
                             <span style={{ background: '#e0e7ff', color: '#4f46e5', fontWeight: 800, fontSize: '0.75rem', padding: '2px 8px', borderRadius: '6px' }}>
                               {sub.code}
@@ -3985,6 +3999,13 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                               <Trash2 size={13} />
                             </button>
                           </div>
+                        </div>
+                        <input
+                          placeholder="Homework PDF — Google Drive link (optional)"
+                          value={sub.homeworkPdfUrl || ''}
+                          onChange={e => handleSubtopicPdfChange(index, e.target.value)}
+                          style={{ marginTop: '8px', width: '100%', padding: '6px 10px', borderRadius: '8px', border: '1px solid #e2e8f0', background: '#fff', fontSize: '0.78rem', color: '#334155' }}
+                        />
                         </div>
                       ))}
                     </div>
@@ -4041,21 +4062,12 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                       {editingSubtopicIndex >= 0 && (
                         <button 
                           type="button" 
-                          onClick={() => { setEditingSubtopicIndex(-1); setSubtopicForm({ code: '', title: '', page: '', homeworkPdfUrl: '' }); }} 
+                          onClick={() => { setEditingSubtopicIndex(-1); setSubtopicForm({ code: '', title: '', page: '' }); }} 
                           style={{ padding: '8px 10px', background: '#cbd5e1', color: '#475569', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 700, fontSize: '0.8rem' }}
                         >
                           Cancel
                         </button>
                       )}
-                    </div>
-                    <input
-                      placeholder="Homework PDF — Google Drive link (optional)"
-                      value={subtopicForm.homeworkPdfUrl || ''}
-                      onChange={e => setSubtopicForm({ ...subtopicForm, homeworkPdfUrl: e.target.value })}
-                      style={{ width: '100%', padding: '8px 10px', borderRadius: '8px', border: '1px solid #cbd5e1', background: '#fff', fontSize: '0.8rem', color: '#334155' }}
-                    />
-                    <div style={{ fontSize: '0.7rem', color: '#94a3b8', marginTop: '-2px' }}>
-                      Share the file as “Anyone with the link” so students can see it.
                     </div>
                   </div>
                 </div>
