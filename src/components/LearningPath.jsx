@@ -38,45 +38,46 @@ const LearningPath = ({ profile }) => {
   const rawYears = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear || 'Year 3'];
   const years = rawYears.map(normalizeYearLabel).filter(Boolean);
   const courses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
-  // Active course for multi-course students (e.g. Advanced + Extension 1)
-  const [activeCourse, setActiveCourse] = useState(courses[0] || 'Advanced');
-  // Keep activeCourse in sync if profile changes
-  useEffect(() => {
-    if (courses.length > 0 && !courses.includes(activeCourse)) {
-      setActiveCourse(courses[0]);
-    }
-  }, [profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
-  const course = activeCourse;
-  // A student can carry a stale/duplicate entry in assignedYear (e.g. an old
-  // plain "9" left over from before being reassigned to "Year 10") alongside
-  // the current one. years[0] alone then silently picks the wrong year's
-  // curriculum, which the chapter-lock check in the `nodes` useMemo below
-  // compares against `assignedChapters` — none of those ids match the wrong
-  // year, so every chapter renders locked even though the teacher correctly
-  // assigned every Year 10 chapter (2026-09-28 incident: thiery/Year 10).
-  // Prefer whichever year in `years` actually contains an assigned chapter id.
-  const getChaptersForYear = (y) => {
-    const data = CURRICULUM_DATA[y];
-    if (!data) return null;
-    // Year 7-10: flat array. Year 11/12: object keyed by course (see
-    // resolveFallbackCurriculum below, same dual shape).
-    return Array.isArray(data) ? data : (data[activeCourse] || null);
-  };
   const assignedChapterIds = Array.isArray(profile?.assignedChapters) ? profile.assignedChapters : [];
-  const yearMatchesAssignedChapters = (y) => {
-    if (!assignedChapterIds.length) return false;
-    const chapters = getChaptersForYear(y);
-    return Array.isArray(chapters) && chapters.some((c) => assignedChapterIds.includes(c.id));
-  };
-  // A student can be assigned multiple years (e.g. Year 11 + Year 12) with a
-  // single flat assignedCourse list shared across both — years[0] alone isn't
-  // enough once a course only exists under one of them (e.g. "Extension 2" is
-  // Year-12-only). Picking the wrong year here silently fell through to
-  // CURRICULUM_DATA[wrongYear]'s FIRST course as a "fallback", showing e.g.
-  // Year 11 Standard chapters for a Year 12 Extension 2 student.
-  const year = years.find(yearMatchesAssignedChapters)
-    || years.find((y) => ['Year 11', 'Year 12'].includes(y) && CURRICULUM_DATA[y]?.[activeCourse])
-    || years[0] || 'Year 3';
+
+  // A student can be assigned several years (e.g. Year 7 + Year 11 + Year 12)
+  // and several courses. Each (year, course) pair that has curriculum is a
+  // "track" the student can switch between. Year 7-10 curriculum is a flat
+  // chapter array (one track per year); Year 11/12 is keyed by course, and a
+  // course only exists under some years (Extension 2 is Year-12-only).
+  // Previously the page silently picked ONE year and had only course tabs, so
+  // any other assigned year was unreachable (2026-09-29: Year 7 added to a
+  // Year 11/12 student never appeared).
+  const tracks = useMemo(() => {
+    const yearNum = (y) => parseInt(String(y).replace(/\D/g, ''), 10) || 0;
+    const all = [];
+    [...new Set(years)].sort((a, b) => yearNum(a) - yearNum(b)).forEach((y) => {
+      const data = CURRICULUM_DATA[y];
+      if (data && !Array.isArray(data)) {
+        courses.filter((c) => data[c]).forEach((c) => all.push({ key: `${y}|${c}`, year: y, course: c, chapters: data[c] }));
+      } else {
+        all.push({ key: y, year: y, course: null, chapters: Array.isArray(data) ? data : [] });
+      }
+    });
+    // Once the teacher has assigned chapters, a track with none of them would
+    // render entirely locked (e.g. a stale plain "9" left in assignedYear next
+    // to "Year 10" — 2026-09-28 thiery incident) — hide it.
+    const withAssigned = all.filter((t) => t.chapters.some((c) => assignedChapterIds.includes(c.id)));
+    const visible = assignedChapterIds.length && withAssigned.length ? withAssigned : all;
+    if (visible.length === 0) return [{ key: years[0] || 'Year 3', year: years[0] || 'Year 3', course: null, chapters: [] }];
+    return visible;
+  }, [profile?.assignedYear, profile?.assignedCourse, profile?.assignedChapters]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const [selectedTrackKey, setSelectedTrackKey] = useState(null);
+  // Tabs are shown in year order, but the initial tab follows the teacher's
+  // assignedYear order (the student's main year is usually listed first).
+  const defaultTrack = years.map((y) => tracks.find((t) => t.year === y)).find(Boolean) || tracks[0];
+  const activeTrack = tracks.find((t) => t.key === selectedTrackKey) || defaultTrack;
+  const year = activeTrack.year;
+  const activeCourse = activeTrack.course || courses[0] || 'Advanced';
+  const course = activeCourse;
+  const sameYearTracks = tracks.every((t) => t.year === tracks[0].year);
+  const trackLabel = (t) => (t.course ? (sameYearTracks ? t.course : `${t.year} · ${t.course}`) : t.year);
 
   // ── Fetch curriculum ──────────────────────────────────────────────────
   useEffect(() => {
@@ -303,19 +304,19 @@ const LearningPath = ({ profile }) => {
 
   return (
     <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-      {/* Top-left row: course toggle (multi-course students) + subject switch */}
-      {(courses.length > 1 || availableSubjects.length > 1) && (
+      {/* Top-left row: year/course track toggle (multi-year or multi-course students) + subject switch */}
+      {(tracks.length > 1 || availableSubjects.length > 1) && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', flexWrap: 'wrap' }}>
-          {/* Course toggle — shown only when enrolled in 2+ courses */}
-          {courses.length > 1 && (
-            <div style={{ display: 'inline-flex', padding: '4px', borderRadius: '14px', background: 'rgba(99,102,241,0.08)', gap: '4px', border: '1px solid rgba(99,102,241,0.15)' }}>
-              {courses.map((c) => {
-                const isActive = activeCourse === c;
-                const accent = COURSE_ACCENTS[c] || COURSE_ACCENTS['Advanced'];
+          {tracks.length > 1 && (
+            <div style={{ display: 'inline-flex', flexWrap: 'wrap', padding: '4px', borderRadius: '14px', background: 'rgba(99,102,241,0.08)', gap: '4px', border: '1px solid rgba(99,102,241,0.15)' }}>
+              {tracks.map((t) => {
+                const c = trackLabel(t);
+                const isActive = activeTrack.key === t.key;
+                const accent = COURSE_ACCENTS[t.course] || COURSE_ACCENTS['Advanced'];
                 return (
                   <button
-                    key={c}
-                    onClick={() => { setActiveCourse(c); setSelectedChapter(null); setSelectedTopic(null); }}
+                    key={t.key}
+                    onClick={() => { setSelectedTrackKey(t.key); setSelectedChapter(null); setSelectedTopic(null); }}
                     style={{
                       padding: '8px 18px', borderRadius: '10px', border: 'none', cursor: 'pointer',
                       fontSize: '0.82rem', fontWeight: 800, letterSpacing: '0.01em',
