@@ -47,13 +47,35 @@ const LearningPath = ({ profile }) => {
     }
   }, [profile?.assignedCourse]); // eslint-disable-line react-hooks/exhaustive-deps
   const course = activeCourse;
+  // A student can carry a stale/duplicate entry in assignedYear (e.g. an old
+  // plain "9" left over from before being reassigned to "Year 10") alongside
+  // the current one. years[0] alone then silently picks the wrong year's
+  // curriculum, which the chapter-lock check in the `nodes` useMemo below
+  // compares against `assignedChapters` — none of those ids match the wrong
+  // year, so every chapter renders locked even though the teacher correctly
+  // assigned every Year 10 chapter (2026-09-28 incident: thiery/Year 10).
+  // Prefer whichever year in `years` actually contains an assigned chapter id.
+  const getChaptersForYear = (y) => {
+    const data = CURRICULUM_DATA[y];
+    if (!data) return null;
+    // Year 7-10: flat array. Year 11/12: object keyed by course (see
+    // resolveFallbackCurriculum below, same dual shape).
+    return Array.isArray(data) ? data : (data[activeCourse] || null);
+  };
+  const assignedChapterIds = Array.isArray(profile?.assignedChapters) ? profile.assignedChapters : [];
+  const yearMatchesAssignedChapters = (y) => {
+    if (!assignedChapterIds.length) return false;
+    const chapters = getChaptersForYear(y);
+    return Array.isArray(chapters) && chapters.some((c) => assignedChapterIds.includes(c.id));
+  };
   // A student can be assigned multiple years (e.g. Year 11 + Year 12) with a
   // single flat assignedCourse list shared across both — years[0] alone isn't
   // enough once a course only exists under one of them (e.g. "Extension 2" is
   // Year-12-only). Picking the wrong year here silently fell through to
   // CURRICULUM_DATA[wrongYear]'s FIRST course as a "fallback", showing e.g.
   // Year 11 Standard chapters for a Year 12 Extension 2 student.
-  const year = years.find((y) => ['Year 11', 'Year 12'].includes(y) && CURRICULUM_DATA[y]?.[activeCourse])
+  const year = years.find(yearMatchesAssignedChapters)
+    || years.find((y) => ['Year 11', 'Year 12'].includes(y) && CURRICULUM_DATA[y]?.[activeCourse])
     || years[0] || 'Year 3';
 
   // ── Fetch curriculum ──────────────────────────────────────────────────
