@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BookOpenCheck } from 'lucide-react';
 import { fetchPendingSubmissions } from '../../services/homeworkService';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
+import { isSafeImageDataUrl } from '../../utils/homework';
 
 // Admin dashboard strip of homework submissions awaiting a check.
 // One filtered query (status == 'submitted') per mount; renders nothing when empty.
@@ -36,7 +37,7 @@ const HomeworkInbox = () => {
             onClick={() => setOpenId(item.id)}
             style={{ flex: '0 0 160px', textAlign: 'left', border: '1px solid #e2e8f0', borderRadius: 14, background: '#f8fafc', padding: 8, cursor: 'pointer' }}
           >
-            {item.thumbnails?.[0] && (
+            {isSafeImageDataUrl(item.thumbnails?.[0]) && (
               <img src={item.thumbnails[0]} alt="" style={{ width: '100%', height: 90, objectFit: 'cover', objectPosition: 'top', borderRadius: 8, background: '#fff' }} />
             )}
             <div style={{ fontWeight: 800, fontSize: '0.82rem', color: '#1e1b4b', marginTop: 6 }}>{item.studentName || 'Student'}</div>

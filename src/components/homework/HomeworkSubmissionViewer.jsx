@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { X, ChevronLeft, ChevronRight, CheckCircle2, ZoomIn, ZoomOut, Loader2 } from 'lucide-react';
 import { fetchSubmission, fetchSubmissionPages, markHomeworkChecked } from '../../services/homeworkService';
 import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
+import { isSafeImageDataUrl } from '../../utils/homework';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const ICON_BTN = { border: 0, background: 'transparent', color: '#fff', padding: 6, cursor: 'pointer' };
@@ -34,8 +35,10 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
           images = await fetchSubmissionPages(sessionId);
         }
         if (cancelled) return;
-        if (images.length === 0 && sub?.thumbnails?.length) {
-          images = sub.thumbnails;
+        images = images.filter(isSafeImageDataUrl);
+        const thumbnails = (sub?.thumbnails || []).filter(isSafeImageDataUrl);
+        if (images.length === 0 && thumbnails.length) {
+          images = thumbnails;
           setIsThumbnailOnly(true);
         }
         setPages(images);

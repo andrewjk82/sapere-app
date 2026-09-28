@@ -85,5 +85,11 @@ export const dataUrlBytes = (dataUrl) => {
   return Math.floor((b64.length * 3) / 4) - padding;
 };
 
-export const purgeAfterDate = (from = new Date(), days = HOMEWORK_RETENTION_DAYS) =>
+// Submission images are written by the student's client, so a crafted doc could
+// hold a remote URL that the teacher's browser would fetch (IP/referrer beacon).
+// Only inline raster data URLs are ever rendered.
+const SAFE_IMAGE_DATA_URL = /^data:image\/(png|jpe?g|webp);base64,/;
+export const isSafeImageDataUrl = (value) => typeof value === 'string' && SAFE_IMAGE_DATA_URL.test(value);
+
+export const purgeAfterDate =(from = new Date(), days = HOMEWORK_RETENTION_DAYS) =>
   new Date(from.getTime() + days * DAY_MS).toISOString().slice(0, 10);

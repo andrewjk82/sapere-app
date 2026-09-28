@@ -14,6 +14,7 @@ import {
   buildTopicPdfMap,
   dataUrlBytes,
   purgeAfterDate,
+  isSafeImageDataUrl,
 } from '../src/utils/homework.js';
 
 let passed = 0;
@@ -106,6 +107,17 @@ test('dataUrlBytes estimates decoded size', () => {
 test('purgeAfterDate adds the retention window', () => {
   assert.equal(purgeAfterDate(new Date('2026-09-28T00:00:00Z')), '2026-10-28');
   assert.equal(purgeAfterDate(new Date('2026-09-28T00:00:00Z'), 1), '2026-09-29');
+});
+
+test('isSafeImageDataUrl only accepts inline raster data URLs', () => {
+  assert.equal(isSafeImageDataUrl('data:image/jpeg;base64,AAAA'), true);
+  assert.equal(isSafeImageDataUrl('data:image/png;base64,AAAA'), true);
+  assert.equal(isSafeImageDataUrl('data:image/webp;base64,AAAA'), true);
+  assert.equal(isSafeImageDataUrl('https://evil.example/beacon.png'), false);
+  assert.equal(isSafeImageDataUrl('//evil.example/x.png'), false);
+  assert.equal(isSafeImageDataUrl('data:image/svg+xml;base64,AAAA'), false);
+  assert.equal(isSafeImageDataUrl('data:text/html;base64,AAAA'), false);
+  assert.equal(isSafeImageDataUrl(null), false);
 });
 
 test('page limit constant', () => {
