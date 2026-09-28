@@ -4532,11 +4532,11 @@
           "keyPoints": [
             {
               "text": "\\(45\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "note": "Convert a percent to a decimal by dividing by 100; this decimal can then be used as a multiplier."
             },
             {
               "text": "as a decimal",
-              "note": "Divide the percentage by 100 to write it as a decimal."
+              "note": "Move the decimal point two places left when dividing by 100."
             }
           ]
         },
@@ -4568,11 +4568,11 @@
           "keyPoints": [
             {
               "text": "\\(6.4\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "note": "Convert a percent to a decimal by dividing by 100; this decimal can then be used as a multiplier."
             },
             {
               "text": "as a decimal",
-              "note": "Divide the percentage by 100 to write it as a decimal."
+              "note": "Move the decimal point two places left when dividing by 100."
             }
           ]
         },
@@ -4820,15 +4820,11 @@
           "keyPoints": [
             {
               "text": "\\(35\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
-            },
-            {
-              "text": "as a fraction",
-              "note": "Write the percentage over 100, then simplify the fraction."
+              "note": "Write a percent as a fraction over 100, then simplify."
             },
             {
               "text": "lowest terms",
-              "note": "Reduce numerator and denominator by their greatest common factor."
+              "note": "Divide numerator and denominator by their greatest common factor."
             }
           ]
         },
@@ -4860,15 +4856,11 @@
           "keyPoints": [
             {
               "text": "\\(48\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
-            },
-            {
-              "text": "as a fraction",
-              "note": "Write the percentage over 100, then simplify the fraction."
+              "note": "Write a percent as a fraction over 100, then simplify."
             },
             {
               "text": "lowest terms",
-              "note": "Reduce numerator and denominator by their greatest common factor."
+              "note": "Divide numerator and denominator by their greatest common factor."
             }
           ]
         },
@@ -6047,12 +6039,12 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "50",
-              "note": "This is the whole quantity. Multiply it by the percentage written as a decimal to find the part."
+              "text": "\\(18\\%\\) of \\(50\\)",
+              "note": "“Of” means multiply: convert 18% to a decimal and multiply by the whole quantity 50."
             },
             {
-              "text": "\\(18\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "text": "correct to two decimal places",
+              "note": "Carry full precision through the multiplication, then round the final value."
             }
           ]
         },
@@ -6083,12 +6075,12 @@
           "xp": 1,
           "keyPoints": [
             {
-              "text": "412",
-              "note": "This is the whole quantity. Multiply it by the percentage written as a decimal to find the part."
+              "text": "\\(42\\%\\) of \\(412\\)",
+              "note": "“Of” means multiply: convert 42% to a decimal and multiply by the whole quantity 412."
             },
             {
-              "text": "\\(42\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "text": "correct to two decimal places",
+              "note": "Carry full precision through the multiplication, then round the final value."
             }
           ]
         },
