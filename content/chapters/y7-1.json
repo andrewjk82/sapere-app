@@ -6064,8 +6064,8 @@
         {
           "id": "y7-1b-h32",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A chemical plant blends three batches of solvent containing \\( 8950 \\) liters, \\( 12400 \\) liters, and \\( 5250 \\) liters. Find the total volume of blended solvent.",
+          "difficulty": "hard",
           "options": [
             "\\( 26500 \\)",
             "\\( 26590 \\)",
@@ -6092,8 +6092,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 8950 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 12400 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 5250 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h33",
