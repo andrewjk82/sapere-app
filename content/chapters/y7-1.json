@@ -5819,8 +5819,8 @@
         {
           "id": "y7-1b-h27",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Researchers monitoring a coral reef count three populations of reef fish: \\( 3560 \\) damselfish, \\( 2840 \\) clownfish, and \\( 1120 \\) wrasses. Find the total number of fish counted.",
+          "difficulty": "hard",
           "options": [
             "\\( 7420 \\)",
             "\\( 7510 \\)",
@@ -5847,8 +5847,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 2840 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 3560 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 1120 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h28",
