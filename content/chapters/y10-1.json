@@ -6860,7 +6860,7 @@
             },
             {
               "text": "Calculate the number of students in the school who",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the percentage that remains after the stated change, then apply it to the original total."
             }
           ]
         },
@@ -6986,7 +6986,7 @@
             },
             {
               "text": "how many minutes and seconds was Team A in possess",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the percentage that remains after the stated change, then apply it to the original total."
             }
           ]
         },
@@ -7384,7 +7384,7 @@
             },
             {
               "text": "\\(9\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the commission rate as a decimal. Divide the commission amount by this rate to find the sales amount."
             },
             {
               "text": "commission",
@@ -7424,7 +7424,7 @@
             },
             {
               "text": "\\(6.8\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the commission rate as a decimal. Divide the commission amount by this rate to find the sales amount."
             },
             {
               "text": "commission",
@@ -9493,7 +9493,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\) on the marked-up price",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -9540,7 +9540,7 @@
             },
             {
               "text": "discount of \\( 12\\% \\) off the marked-up price",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -9587,7 +9587,7 @@
             },
             {
               "text": "discounts them by \\( 15\\% \\) during a trade show",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -9634,7 +9634,7 @@
             },
             {
               "text": "discounted by \\( 30\\% \\) during a inventory clearance sale",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -9677,7 +9677,7 @@
             },
             {
               "text": "discount of \\( 12",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "Determine the original list price",
@@ -9724,7 +9724,7 @@
             },
             {
               "text": "discount of \\( 14\\% \\) is applied",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The discounted amount is the fraction left after the reduction. Divide by that remaining fraction to work back to the original price."
             },
             {
               "text": "Determine the original retail price",
@@ -9771,7 +9771,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The discounted amount is the fraction left after the reduction. Divide by that remaining fraction to work back to the original price."
             },
             {
               "text": "Find the list price before the discount",
@@ -10512,7 +10512,7 @@
             },
             {
               "text": "\\( 3\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Convert the percentage to a decimal multiplier and apply it to the relevant amount for this question."
             },
             {
               "text": "find the net weekly output of non-defective sh",
@@ -11033,7 +11033,7 @@
             },
             {
               "text": "\\( 15\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             }
           ]
         },
@@ -11178,7 +11178,7 @@
             },
             {
               "text": "Calculate the percentage savings of the hybrid truc",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the change as a fraction of the original amount, then multiply by 100%."
             }
           ]
         },
@@ -11221,7 +11221,7 @@
             },
             {
               "text": "Calculate the percentage coal savings of the eco-bo",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the change as a fraction of the original amount, then multiply by 100%."
             }
           ]
         },
@@ -11393,7 +11393,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\) on shipping",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             },
             {
               "text": "\\( 12\\% \\)",
@@ -11444,7 +11444,7 @@
             },
             {
               "text": "discount of \\( 20\\% \\) on shipping valued at \\( 3500 \\) dollars",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             },
             {
               "text": "\\( 8\\% \\)",
@@ -11495,7 +11495,7 @@
             },
             {
               "text": "discount of \\( 25\\% \\) on shipping of \\( 2400 \\) dollars",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             },
             {
               "text": "\\( 15\\% \\)",
@@ -12780,7 +12780,7 @@
           "keyPoints": [
             {
               "text": "510",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "15%",
@@ -12820,7 +12820,7 @@
           "keyPoints": [
             {
               "text": "5980",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "15%",
@@ -13144,7 +13144,7 @@
             },
             {
               "text": "discount on all summer stock",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(30\\%\\)",
@@ -13188,7 +13188,7 @@
             },
             {
               "text": "discount on all summer stock",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(30\\%\\)",
@@ -13232,7 +13232,7 @@
             },
             {
               "text": "discount on all summer stock",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(30\\%\\)",
@@ -13276,7 +13276,7 @@
             },
             {
               "text": "discount on all summer stock",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(30\\%\\)",
@@ -13316,11 +13316,11 @@
           "keyPoints": [
             {
               "text": "1650",
-              "note": "This is the starting price before adjustments. Use it as the base for the first change only."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "discount",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The discounted amount is the fraction left after the reduction. Divide by that remaining fraction to work back to the original price."
             },
             {
               "text": "\\(45\\%\\)",
@@ -13360,11 +13360,11 @@
           "keyPoints": [
             {
               "text": "220",
-              "note": "This is the starting price before adjustments. Use it as the base for the first change only."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "discount",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The discounted amount is the fraction left after the reduction. Divide by that remaining fraction to work back to the original price."
             },
             {
               "text": "\\(45\\%\\)",
@@ -13404,11 +13404,11 @@
           "keyPoints": [
             {
               "text": "44",
-              "note": "This is the starting price before adjustments. Use it as the base for the first change only."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "discount",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The discounted amount is the fraction left after the reduction. Divide by that remaining fraction to work back to the original price."
             },
             {
               "text": "\\(45\\%\\)",
@@ -13815,11 +13815,11 @@
           "keyPoints": [
             {
               "text": "3500",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -13855,11 +13855,11 @@
           "keyPoints": [
             {
               "text": "125000",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -13895,11 +13895,11 @@
           "keyPoints": [
             {
               "text": "6.40",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "note": "This is the amount after the percentage change. Use the remaining or increased multiplier to work backwards to the original."
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -13935,7 +13935,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -13971,7 +13971,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -14007,7 +14007,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -14043,7 +14043,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -14079,7 +14079,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -14115,7 +14115,7 @@
             },
             {
               "text": "\\(10\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "10%",
@@ -14343,7 +14343,7 @@
             },
             {
               "text": "discount will restore it to its original price",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "100%",
@@ -14911,7 +14911,7 @@
             },
             {
               "text": "discount on all tennis racquets",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "45%",
@@ -14969,7 +14969,7 @@
             },
             {
               "text": "discounts it by \\( 8\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -15012,7 +15012,7 @@
             },
             {
               "text": "discount it by \\( 15\\% \\) during a sale",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -15051,7 +15051,7 @@
             },
             {
               "text": "discounts them by \\( 12\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the marked-up price. Use 1 minus the discount rate as the multiplier for this step."
             }
           ]
         },
@@ -16135,7 +16135,7 @@
             },
             {
               "text": "discounts of \\( 20\\% \\) and \\( 10\\% \\) on a baseline shipping c",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             }
           ]
         },
@@ -16178,7 +16178,7 @@
             },
             {
               "text": "discounts of \\( 15\\% \\) and \\( 5\\% \\) on shipping valued at \\(",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             }
           ]
         },
@@ -16217,7 +16217,7 @@
             },
             {
               "text": "discounts of \\( 20\\% \\) and \\( 12\\% \\) on shipping of \\( 3000 \\",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             }
           ]
         },
@@ -17559,7 +17559,7 @@
             },
             {
               "text": "2.5%",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Convert the percentage to a decimal multiplier and apply it to the relevant amount for this question."
             }
           ]
         },
@@ -17603,7 +17603,7 @@
             },
             {
               "text": "2.5%",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Convert the percentage to a decimal multiplier and apply it to the relevant amount for this question."
             }
           ]
         },
@@ -17639,7 +17639,7 @@
             },
             {
               "text": "Find the percentage reduction in radioactivity over a period",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Use the remaining fraction after each weekly decrease, then apply it for the stated number of weeks."
             }
           ]
         },
@@ -17675,7 +17675,7 @@
             },
             {
               "text": "Find the percentage reduction in radioactivity over a period",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Use the remaining fraction after each weekly decrease, then apply it for the stated number of weeks."
             }
           ]
         },
@@ -17711,7 +17711,7 @@
             },
             {
               "text": "Find the percentage reduction in radioactivity over a period",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Use the remaining fraction after each weekly decrease, then apply it for the stated number of weeks."
             }
           ]
         },
@@ -29312,7 +29312,7 @@
           "keyPoints": [
             {
               "text": "59000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 18\\% \\)",
@@ -29715,7 +29715,7 @@
           "keyPoints": [
             {
               "text": "67000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 17\\% \\)",
@@ -30118,7 +30118,7 @@
           "keyPoints": [
             {
               "text": "74000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 16\\% \\)",
@@ -30521,7 +30521,7 @@
           "keyPoints": [
             {
               "text": "82000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 15\\% \\)",
@@ -30924,7 +30924,7 @@
           "keyPoints": [
             {
               "text": "89000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 23\\% \\)",
@@ -31327,7 +31327,7 @@
           "keyPoints": [
             {
               "text": "56000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 22\\% \\)",
@@ -31730,7 +31730,7 @@
           "keyPoints": [
             {
               "text": "64000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 21\\% \\)",
@@ -32133,7 +32133,7 @@
           "keyPoints": [
             {
               "text": "71000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 20\\% \\)",
@@ -32536,7 +32536,7 @@
           "keyPoints": [
             {
               "text": "79000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 19\\% \\)",
@@ -32939,7 +32939,7 @@
           "keyPoints": [
             {
               "text": "86000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\( 18\\% \\)",
@@ -33581,7 +33581,7 @@
           "keyPoints": [
             {
               "text": "92000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(15.9\\%\\)",
@@ -33620,7 +33620,7 @@
           "keyPoints": [
             {
               "text": "104000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(16.8\\%\\)",
@@ -33659,7 +33659,7 @@
           "keyPoints": [
             {
               "text": "116000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(17.7\\%\\)",
@@ -33698,7 +33698,7 @@
           "keyPoints": [
             {
               "text": "128000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(18.6\\%\\)",
@@ -33737,7 +33737,7 @@
           "keyPoints": [
             {
               "text": "140000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(19.5\\%\\)",
@@ -33776,7 +33776,7 @@
           "keyPoints": [
             {
               "text": "152000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(20.4\\%\\)",
@@ -33815,7 +33815,7 @@
           "keyPoints": [
             {
               "text": "164000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(21.3\\%\\)",
@@ -33854,7 +33854,7 @@
           "keyPoints": [
             {
               "text": "176000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(22.2\\%\\)",
@@ -33893,7 +33893,7 @@
           "keyPoints": [
             {
               "text": "188000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(23.1\\%\\)",
@@ -33932,7 +33932,7 @@
           "keyPoints": [
             {
               "text": "200000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(24.0\\%\\)",
@@ -36201,7 +36201,7 @@
           "keyPoints": [
             {
               "text": "1.75",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$60000\\) each. Machine 1 depreciates by \\(12.9\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36240,7 +36240,7 @@
           "keyPoints": [
             {
               "text": "2.00",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$70000\\) each. Machine 1 depreciates by \\(13.8\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36279,7 +36279,7 @@
           "keyPoints": [
             {
               "text": "2.25",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$80000\\) each. Machine 1 depreciates by \\(14.7\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36318,7 +36318,7 @@
           "keyPoints": [
             {
               "text": "2.50",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$90000\\) each. Machine 1 depreciates by \\(15.6\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36357,7 +36357,7 @@
           "keyPoints": [
             {
               "text": "2.75",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$100000\\) each. Machine 1 depreciates by \\(16.5\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36396,7 +36396,7 @@
           "keyPoints": [
             {
               "text": "3.00",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$110000\\) each. Machine 1 depreciates by \\(17.4\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36435,7 +36435,7 @@
           "keyPoints": [
             {
               "text": "3.25",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$120000\\) each. Machine 1 depreciates by \\(18.3\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36474,7 +36474,7 @@
           "keyPoints": [
             {
               "text": "3.50",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$130000\\) each. Machine 1 depreciates by \\(19.2\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36513,7 +36513,7 @@
           "keyPoints": [
             {
               "text": "3.75",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$140000\\) each. Machine 1 depreciates by \\(20.1\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -36552,7 +36552,7 @@
           "keyPoints": [
             {
               "text": "4.00",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "$150000\\) each. Machine 1 depreciates by \\(21.0\\%\\) p.a. using reducing balance. Machine 2 depreciates on a unit-of-use basis at \\(\\$",
@@ -37393,7 +37393,7 @@
           "keyPoints": [
             {
               "text": "36500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(4.9\\%\\)",
@@ -37436,7 +37436,7 @@
           "keyPoints": [
             {
               "text": "43000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(5.3\\%\\)",
@@ -37479,7 +37479,7 @@
           "keyPoints": [
             {
               "text": "49500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(5.7\\%\\)",
@@ -37522,7 +37522,7 @@
           "keyPoints": [
             {
               "text": "56000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(6.1\\%\\)",
@@ -37565,7 +37565,7 @@
           "keyPoints": [
             {
               "text": "62500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(6.5\\%\\)",
@@ -37608,7 +37608,7 @@
           "keyPoints": [
             {
               "text": "69000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(6.9\\%\\)",
@@ -37651,7 +37651,7 @@
           "keyPoints": [
             {
               "text": "75500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(7.3\\%\\)",
@@ -37694,7 +37694,7 @@
           "keyPoints": [
             {
               "text": "82000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(7.7\\%\\)",
@@ -37780,7 +37780,7 @@
           "keyPoints": [
             {
               "text": "95000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the initial amount being invested or financed. Use it as the principal when comparing interest costs."
             },
             {
               "text": "\\(8.5\\%\\)",
@@ -38297,7 +38297,7 @@
             },
             {
               "text": "discount of \\(16",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(11.0\\%\\)",
@@ -38348,7 +38348,7 @@
             },
             {
               "text": "discount of \\(18",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(12.0\\%\\)",
@@ -38399,7 +38399,7 @@
             },
             {
               "text": "discount of \\(19",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(13.0\\%\\)",
@@ -38450,7 +38450,7 @@
             },
             {
               "text": "discount of \\(21",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply the discount to the shipping amount specified, then combine the reduced shipping cost with the adjusted goods cost."
             },
             {
               "text": "\\(14.0\\%\\)",
@@ -38501,7 +38501,7 @@
             },
             {
               "text": "discount of \\(22",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(15.0\\%\\)",
@@ -38552,7 +38552,7 @@
             },
             {
               "text": "discount of \\(24",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(16.0\\%\\)",
@@ -38603,7 +38603,7 @@
             },
             {
               "text": "discount of \\(25",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(17.0\\%\\)",
@@ -38654,7 +38654,7 @@
             },
             {
               "text": "discount of \\(27",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(18.0\\%\\)",
@@ -38705,7 +38705,7 @@
             },
             {
               "text": "discount of \\(28",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(19.0\\%\\)",
@@ -38756,7 +38756,7 @@
             },
             {
               "text": "discount of \\(30",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "\\(20.0\\%\\)",
@@ -41199,7 +41199,7 @@
           "keyPoints": [
             {
               "text": "75500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(14.4\\%\\)",
@@ -41242,7 +41242,7 @@
           "keyPoints": [
             {
               "text": "84000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(15.2\\%\\)",
@@ -41285,7 +41285,7 @@
           "keyPoints": [
             {
               "text": "92500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(16.0\\%\\)",
@@ -41328,7 +41328,7 @@
           "keyPoints": [
             {
               "text": "101000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(16.8\\%\\)",
@@ -41371,7 +41371,7 @@
           "keyPoints": [
             {
               "text": "109500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(17.6\\%\\)",
@@ -41414,7 +41414,7 @@
           "keyPoints": [
             {
               "text": "118000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(18.4\\%\\)",
@@ -41457,7 +41457,7 @@
           "keyPoints": [
             {
               "text": "126500",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(19.2\\%\\)",
@@ -41500,7 +41500,7 @@
           "keyPoints": [
             {
               "text": "135000",
-              "note": "This is the initial total volume/mass. First calculate the amount of active substance."
+              "note": "This is the asset’s initial purchase value. Use it as the starting value for the depreciation calculation."
             },
             {
               "text": "\\(20.0\\%\\)",
@@ -41551,7 +41551,7 @@
             },
             {
               "text": "\\(22.9\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -41602,7 +41602,7 @@
             },
             {
               "text": "\\(23.8\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -41653,7 +41653,7 @@
             },
             {
               "text": "\\(24.7\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -41704,7 +41704,7 @@
             },
             {
               "text": "\\(25.6\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -41755,7 +41755,7 @@
             },
             {
               "text": "\\(26.5\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -41795,7 +41795,7 @@
             },
             {
               "text": "discount on all items in the store",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             },
             {
               "text": "$30\\%$",
@@ -41839,7 +41839,7 @@
             },
             {
               "text": "discount has been allowed",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "A discount leaves 100% minus the discount rate. Apply that remaining fraction to the price being discounted."
             }
           ]
         },
@@ -42470,7 +42470,7 @@
             },
             {
               "text": "\\(27.4\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -42521,7 +42521,7 @@
             },
             {
               "text": "\\(28.3\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -42572,7 +42572,7 @@
             },
             {
               "text": "\\(29.2\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -42623,7 +42623,7 @@
             },
             {
               "text": "\\(30.1\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
@@ -42674,7 +42674,7 @@
             },
             {
               "text": "\\(31.0\\%\\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Write the rate as a decimal and apply it only to the taxable amount described in the question."
             },
             {
               "text": "Calculate the firm's net profit after tax as a perc",
