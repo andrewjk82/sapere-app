@@ -5333,8 +5333,8 @@
         {
           "id": "y7-1b-h17",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Conservationists tracked three migrating herds of caribou containing \\( 1850 \\), \\( 2430 \\), and \\( 975 \\) animals. Calculate the total number of caribou tracked.",
+          "difficulty": "hard",
           "options": [
             "\\( 5155 \\)",
             "\\( 5245 \\)",
@@ -5361,8 +5361,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 1850 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 2430 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 975 \\)",
+              "note": "add this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h18",
