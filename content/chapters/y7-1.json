@@ -5868,8 +5868,8 @@
         {
           "id": "y7-1b-h28",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A suspension bridge construction project uses three structural steel cable segments measuring \\( 850 \\) meters, \\( 925 \\) meters, and \\( 430 \\) meters. What is the total length of the cables?",
+          "difficulty": "hard",
           "options": [
             "\\( 2105 \\)",
             "\\( 2195 \\)",
@@ -5896,8 +5896,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 850 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 925 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 430 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h29",
