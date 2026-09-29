@@ -729,8 +729,8 @@
         {
           "id": "y10-1a-high-q13",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "The number of active users of a decentralized finance application grows from \\( 8000 \\) by \\( 25\\% \\) in month 1, but due to market correction, drops by \\( 10\\% \\) in month 2. Find the user base at the end of month 2.",
+          "difficulty": "hard",
           "options": [
             "\\(8960\\)",
             "\\(9600\\)",
@@ -764,14 +764,17 @@
               "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
             },
             {
-              "text": "\\( 10\\% \\)",
-              "note": "This is a decrease. Keep 100% minus this rate, then multiply the current amount by that remaining fraction."
-            },
-            {
               "text": "Find the user base at the end of month 2",
               "note": "Multiply the change factors in order; do not add the percentages. Compare the final multiplier with 1 for the net percentage change."
+            },
+            {
+              "text": "drops by \\( 10\\% \\)",
+              "note": "This is a decrease. Keep 100% minus this rate, then multiply the current amount by that remaining fraction."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q14",
