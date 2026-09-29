@@ -8213,6 +8213,18 @@
             {
               "text": "sum",
               "note": "Add all three numbers"
+            },
+            {
+              "text": "\\\\( 157 \\\\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\\\( 243 \\\\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\\\( 89 \\\\)",
+              "note": "add this number"
             }
           ],
           "meta": {
