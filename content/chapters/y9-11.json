@@ -8246,7 +8246,7 @@
             },
             {
               "explain": "Calculate the value of \\(y\\).",
-              "work": "y = 12 - 3\\ny = 9"
+              "work": "\\(y = 12 - 3 = 9\\)"
             },
             {
               "explain": "State the final \\(y\\)-coordinate.",
@@ -8360,7 +8360,7 @@
             },
             {
               "explain": "Calculate the value of \\(y\\).",
-              "work": "y = -8 - 3\\ny = -11"
+              "work": "\\(y = -8 - 3 = -11\\)"
             },
             {
               "explain": "State the final \\(y\\)-coordinate.",

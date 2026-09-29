@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 380 180' width='380' height='180' font-family='sans-serif'>
+  <rect width='380' height='180' fill='#f8fafc' rx='8'/>
+  <!-- Figure U -->
+  <rect x='20' y='50' width='100' height='50' fill='#dbeafe' stroke='#2563eb' stroke-width='2' rx='2'/>
+  <line x1='20' y1='50' x2='120' y2='100' stroke='#2563eb' stroke-width='1.5' stroke-dasharray='4,3'/>
+  <text x='70' y='120' text-anchor='middle' fill='#1e40af' font-size='12' font-weight='bold'>Figure U</text>
+  <text x='70' y='134' text-anchor='middle' fill='#2563eb' font-size='11'>4 × 2</text>
+  <!-- VS -->
+  <text x='175' y='88' text-anchor='middle' fill='#64748b' font-size='22' font-weight='bold'>vs</text>
+  <!-- Figure W (bigger) -->
+  <rect x='215' y='45' width='130' height='65' fill='#fee2e2' stroke='#dc2626' stroke-width='2' rx='2'/>
+  <line x1='215' y1='45' x2='345' y2='110' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='4,3'/>
+  <text x='280' y='128' text-anchor='middle' fill='#b91c1c' font-size='12' font-weight='bold'>Figure W</text>
+  <text x='280' y='142' text-anchor='middle' fill='#dc2626' font-size='11'>5 × 2.5</text>
+  <!-- Not equal -->
+  <text x='355' y='88' fill='#dc2626' font-size='28' font-weight='bold'>≠</text>
+  <!-- explanation -->
+  <text x='190' y='168' text-anchor='middle' fill='#dc2626' font-size='12'>Different dimensions — NOT congruent ✗</text>
+</svg>

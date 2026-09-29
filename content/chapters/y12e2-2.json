@@ -7,37 +7,412 @@
       "topicId": "y12e2-2A",
       "code": "2A",
       "title": "The Language of Proof",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2A-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following best describes a **mathematical proof**?",
+          "options": [
+            "A sequence of logical deductions from given assumptions that establishes the truth of a statement",
+            "A numerical example that demonstrates a pattern",
+            "A diagram showing a geometric relationship",
+            "A hypothesis that has been tested many times"
+          ],
+          "answer": 0,
+          "solution": "A mathematical proof is a rigorous logical argument that establishes the truth of a statement from axioms and previously proven results.",
+          "steps": [
+            {
+              "explain": "Identify what distinguishes a proof from other mathematical reasoning.",
+              "work": "A proof must logically deduce the conclusion from accepted assumptions using valid inference rules."
+            },
+            {
+              "explain": "Eliminate the other options.",
+              "work": "Numerical examples (option B) are not proofs — they may show a pattern but cannot establish universal truth. Diagrams (option C) can illustrate but not prove. A hypothesis (option D) is unproven conjecture."
+            },
+            {
+              "explain": "State the correct definition.",
+              "work": "Option A correctly defines a proof as a sequence of logical deductions from given assumptions."
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2A-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a proof by **direct method**, we:",
+          "options": [
+            "Assume the conclusion is false and derive a contradiction",
+            "Assume the negation of the hypothesis and prove the negation of the conclusion",
+            "Start from the hypothesis and use logical steps to reach the conclusion",
+            "Test specific numerical examples to confirm the result"
+          ],
+          "answer": 2,
+          "solution": "In a direct proof, we start from the hypothesis (given conditions) and use logical steps to arrive at the conclusion.",
+          "steps": [
+            {
+              "explain": "Recall the definition of a direct proof.",
+              "work": "A direct proof starts with the hypothesis \\(P\\) and uses axioms, definitions, and previously established results to prove the conclusion \\(Q\\), establishing \\(P \\Rightarrow Q\\)."
+            },
+            {
+              "explain": "Distinguish from other proof types.",
+              "work": "Option A is proof by contradiction. Option B is proof by contrapositive. Option D is not a proof method at all."
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2A-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The statement \\(P \\Rightarrow Q\\) is logically equivalent to:",
+          "options": [
+            "\\(Q \\Rightarrow P\\)",
+            "\\(\\neg P \\Rightarrow \\neg Q\\)",
+            "\\(\\neg Q \\Rightarrow \\neg P\\)",
+            "\\(P \\Rightarrow \\neg Q\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(P \\Rightarrow Q\\) is logically equivalent to its contrapositive \\(\\neg Q \\Rightarrow \\neg P\\).",
+          "steps": [
+            {
+              "explain": "Write out the truth table for \\(P \\Rightarrow Q\\).",
+              "work": "\\(P \\Rightarrow Q\\) is false only when \\(P\\) is true and \\(Q\\) is false."
+            },
+            {
+              "explain": "Check the contrapositive \\(\\neg Q \\Rightarrow \\neg P\\).",
+              "work": "\\(\\neg Q \\Rightarrow \\neg P\\) is false only when \\(\\neg Q\\) is true (i.e. \\(Q\\) false) and \\(\\neg P\\) is false (i.e. \\(P\\) true). This is identical to \\(P \\Rightarrow Q\\)."
+            },
+            {
+              "explain": "Confirm the equivalence.",
+              "work": "\\(P \\Rightarrow Q \\equiv \\neg Q \\Rightarrow \\neg P\\). The converse \\(Q \\Rightarrow P\\) (option A) and inverse \\(\\neg P \\Rightarrow \\neg Q\\) (option B) are NOT equivalent."
+            }
+          ],
+          "xp": 2
+        }
+      ]
     },
     {
       "topicId": "y12e2-2B",
       "code": "2B",
       "title": "Number Proofs",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2B-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Prove that the sum of two odd integers is even. Which of the following is the correct setup for a direct proof?",
+          "options": [
+            "Let \\(m = 2a\\) and \\(n = 2b\\) for integers \\(a, b\\)",
+            "Let \\(m = 2a + 1\\) and \\(n = 2b + 1\\) for integers \\(a, b\\)",
+            "Let \\(m = 2a + 1\\) and \\(n = 2b\\) for integers \\(a, b\\)",
+            "Assume \\(m + n\\) is odd and derive a contradiction"
+          ],
+          "answer": 1,
+          "solution": "Since \\(m\\) and \\(n\\) are odd, we write \\(m = 2a+1\\) and \\(n = 2b+1\\). Then \\(m+n = 2a+2b+2 = 2(a+b+1)\\), which is even.",
+          "steps": [
+            {
+              "explain": "Write odd integers in general form.",
+              "work": "Any odd integer can be written as \\(2k+1\\) for some integer \\(k\\). So let \\(m = 2a+1\\) and \\(n = 2b+1\\) for integers \\(a, b\\)."
+            },
+            {
+              "explain": "Add the two integers.",
+              "work": "\\(m + n = (2a+1) + (2b+1) = 2a + 2b + 2 = 2(a+b+1)\\)"
+            },
+            {
+              "explain": "Conclude.",
+              "work": "Since \\(a+b+1\\) is an integer, \\(m+n = 2(a+b+1)\\) is divisible by 2, hence even. \\(\\square\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y12e2-2B-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which statement correctly proves that \\(\\sqrt{2}\\) is irrational?",
+          "options": [
+            "Direct proof: show \\(\\sqrt{2} = p/q\\) for integers \\(p, q\\)",
+            "Proof by contradiction: assume \\(\\sqrt{2} = p/q\\) in lowest terms and derive that both \\(p\\) and \\(q\\) are even",
+            "Proof by induction: show \\(\\sqrt{n}\\) is irrational for all \\(n \\geq 2\\)",
+            "Proof by contrapositive: if \\(n\\) is not a perfect square then \\(\\sqrt{n}\\) is rational"
+          ],
+          "answer": 1,
+          "solution": "The classic proof is by contradiction: assume \\(\\sqrt{2} = p/q\\) in lowest terms, then \\(2q^2 = p^2\\), so \\(p\\) is even. Write \\(p = 2k\\), then \\(q^2 = 2k^2\\), so \\(q\\) is also even — contradicting \\(p/q\\) being in lowest terms.",
+          "steps": [
+            {
+              "explain": "Assume for contradiction that \\(\\sqrt{2}\\) is rational.",
+              "work": "Suppose \\(\\sqrt{2} = \\dfrac{p}{q}\\) where \\(p, q \\in \\mathbb{Z}\\), \\(q \\neq 0\\), and \\(\\gcd(p,q) = 1\\) (in lowest terms)."
+            },
+            {
+              "explain": "Square both sides and rearrange.",
+              "work": "\\(2 = \\dfrac{p^2}{q^2} \\Rightarrow p^2 = 2q^2\\). So \\(p^2\\) is even, which means \\(p\\) is even. Write \\(p = 2k\\)."
+            },
+            {
+              "explain": "Show \\(q\\) is also even — contradiction.",
+              "work": "\\((2k)^2 = 2q^2 \\Rightarrow 4k^2 = 2q^2 \\Rightarrow q^2 = 2k^2\\). So \\(q\\) is even. But then \\(\\gcd(p,q) \\geq 2\\), contradicting our assumption. Therefore \\(\\sqrt{2}\\) is irrational. \\(\\square\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
     },
     {
       "topicId": "y12e2-2C",
       "code": "2C",
       "title": "Proof by Contraposition and by Contradiction",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2C-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "To prove \\(P \\Rightarrow Q\\) by **contraposition**, we prove:",
+          "options": [
+            "\\(P \\Rightarrow \\neg Q\\)",
+            "\\(\\neg Q \\Rightarrow \\neg P\\)",
+            "\\(\\neg P \\Rightarrow \\neg Q\\)",
+            "\\(Q \\Rightarrow P\\)"
+          ],
+          "answer": 1,
+          "solution": "Proof by contraposition proves the equivalent statement \\(\\neg Q \\Rightarrow \\neg P\\) instead of \\(P \\Rightarrow Q\\).",
+          "steps": [
+            {
+              "explain": "Recall the contrapositive.",
+              "work": "The contrapositive of \\(P \\Rightarrow Q\\) is \\(\\neg Q \\Rightarrow \\neg P\\). These are logically equivalent."
+            },
+            {
+              "explain": "Use this in a proof.",
+              "work": "Instead of assuming \\(P\\) and proving \\(Q\\), we assume \\(\\neg Q\\) (the negation of the conclusion) and prove \\(\\neg P\\) (the negation of the hypothesis)."
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2C-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "To prove 'If \\(n^2\\) is odd then \\(n\\) is odd' by contraposition, we assume:",
+          "options": [
+            "\\(n^2\\) is odd",
+            "\\(n\\) is even",
+            "\\(n^2\\) is even",
+            "\\(n\\) is odd and \\(n^2\\) is even"
+          ],
+          "answer": 1,
+          "solution": "The contrapositive of 'If \\(n^2\\) is odd then \\(n\\) is odd' is 'If \\(n\\) is not odd (i.e. even) then \\(n^2\\) is not odd (i.e. even)'. So we assume \\(n\\) is even.",
+          "steps": [
+            {
+              "explain": "Identify \\(P\\) and \\(Q\\) in the original statement.",
+              "work": "\\(P\\): \\(n^2\\) is odd. \\(Q\\): \\(n\\) is odd."
+            },
+            {
+              "explain": "Form the contrapositive \\(\\neg Q \\Rightarrow \\neg P\\).",
+              "work": "\\(\\neg Q\\): \\(n\\) is NOT odd, i.e. \\(n\\) is even.\\n\\(\\neg P\\): \\(n^2\\) is NOT odd, i.e. \\(n^2\\) is even."
+            },
+            {
+              "explain": "Carry out the proof.",
+              "work": "Assume \\(n\\) is even, so \\(n = 2k\\) for some integer \\(k\\). Then \\(n^2 = 4k^2 = 2(2k^2)\\), which is even. \\(\\square\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
     },
     {
       "topicId": "y12e2-2D",
       "code": "2D",
       "title": "Algebraic Inequalities",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2D-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following is always true for real numbers \\(a\\) and \\(b\\)?",
+          "options": [
+            "\\(a^2 + b^2 \\geq 2ab\\)",
+            "\\(a^2 + b^2 \\leq 2ab\\)",
+            "\\(a^2 + b^2 = ab\\)",
+            "\\(a^2 - b^2 \\geq 0\\)"
+          ],
+          "answer": 0,
+          "solution": "The AM-GM inequality states \\(\\dfrac{a^2+b^2}{2} \\geq ab\\), i.e. \\(a^2+b^2 \\geq 2ab\\), since \\((a-b)^2 \\geq 0\\).",
+          "steps": [
+            {
+              "explain": "Start with a known non-negative expression.",
+              "work": "For all real \\(a, b\\): \\((a-b)^2 \\geq 0\\)"
+            },
+            {
+              "explain": "Expand.",
+              "work": "\\(a^2 - 2ab + b^2 \\geq 0\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(a^2 + b^2 \\geq 2ab \\quad \\square\\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2D-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Prove that for positive reals \\(x\\) and \\(y\\): \\(\\dfrac{x}{y} + \\dfrac{y}{x} \\geq 2\\). Which first step is correct?",
+          "options": [
+            "Assume \\(\\dfrac{x}{y} + \\dfrac{y}{x} < 2\\) and derive a contradiction",
+            "Note that \\(\\dfrac{x}{y} + \\dfrac{y}{x} - 2 = \\dfrac{(x-y)^2}{xy} \\geq 0\\)",
+            "Set \\(x = y\\) to verify equality",
+            "Apply the triangle inequality"
+          ],
+          "answer": 1,
+          "solution": "\\(\\dfrac{x}{y} + \\dfrac{y}{x} - 2 = \\dfrac{x^2 + y^2 - 2xy}{xy} = \\dfrac{(x-y)^2}{xy} \\geq 0\\) since \\((x-y)^2 \\geq 0\\) and \\(xy > 0\\).",
+          "steps": [
+            {
+              "explain": "Combine the left side over a common denominator.",
+              "work": "\\(\\dfrac{x}{y} + \\dfrac{y}{x} - 2 = \\dfrac{x^2 + y^2 - 2xy}{xy}\\)"
+            },
+            {
+              "explain": "Factor the numerator.",
+              "work": "\\(= \\dfrac{(x-y)^2}{xy}\\)"
+            },
+            {
+              "explain": "Conclude.",
+              "work": "Since \\((x-y)^2 \\geq 0\\) and \\(xy > 0\\) (as \\(x, y > 0\\)), we have \\(\\dfrac{(x-y)^2}{xy} \\geq 0\\), so \\(\\dfrac{x}{y} + \\dfrac{y}{x} \\geq 2\\). \\(\\square\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
     },
     {
       "topicId": "y12e2-2E",
       "code": "2E",
       "title": "Induction",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2E-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a proof by mathematical induction, which is the correct order of steps?",
+          "options": [
+            "Inductive step → Base case → Conclusion",
+            "Base case → Inductive step → Conclusion",
+            "Conclusion → Base case → Inductive step",
+            "Base case → Conclusion → Inductive step"
+          ],
+          "answer": 1,
+          "solution": "Mathematical induction: (1) Prove the base case, (2) Assume true for \\(n = k\\) (inductive hypothesis) and prove true for \\(n = k+1\\), (3) Conclude by induction.",
+          "steps": [
+            {
+              "explain": "Step 1 — Base case.",
+              "work": "Verify the statement is true for the initial value (usually \\(n = 1\\))."
+            },
+            {
+              "explain": "Step 2 — Inductive step.",
+              "work": "Assume the statement is true for \\(n = k\\) (inductive hypothesis). Then prove it is true for \\(n = k+1\\)."
+            },
+            {
+              "explain": "Step 3 — Conclusion.",
+              "work": "By the principle of mathematical induction, the statement is true for all integers \\(n \\geq 1\\)."
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2E-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Prove by induction that \\(1 + 2 + 3 + \\cdots + n = \\dfrac{n(n+1)}{2}\\). In the inductive step, if the result holds for \\(n = k\\), what do we add to both sides?",
+          "options": [
+            "\\(k\\)",
+            "\\(k+1\\)",
+            "\\(k(k+1)\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "solution": "Assume \\(1+2+\\cdots+k = \\dfrac{k(k+1)}{2}\\). Add \\((k+1)\\) to both sides to obtain the result for \\(n = k+1\\).",
+          "steps": [
+            {
+              "explain": "State the inductive hypothesis.",
+              "work": "Assume \\(S_k = 1+2+\\cdots+k = \\dfrac{k(k+1)}{2}\\)."
+            },
+            {
+              "explain": "Add the next term \\((k+1)\\) to both sides.",
+              "work": "\\(S_{k+1} = S_k + (k+1) = \\dfrac{k(k+1)}{2} + (k+1)\\)"
+            },
+            {
+              "explain": "Simplify to show the formula holds for \\(n = k+1\\).",
+              "work": "\\(= (k+1)\\left(\\dfrac{k}{2} + 1\\right) = (k+1) \\cdot \\dfrac{k+2}{2} = \\dfrac{(k+1)(k+2)}{2}\\)"
+            },
+            {
+              "explain": "This matches \\(\\dfrac{n(n+1)}{2}\\) with \\(n = k+1\\). \\(\\square\\)",
+              "work": "By induction, \\(\\displaystyle\\sum_{i=1}^{n} i = \\dfrac{n(n+1)}{2}\\) for all \\(n \\geq 1\\)."
+            }
+          ],
+          "xp": 2
+        }
+      ]
     },
     {
       "topicId": "y12e2-2F",
       "code": "2F",
       "title": "Inequalities in Geometry and Calculus",
-      "questions": []
+      "questions": [
+        {
+          "id": "y12e2-2F-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The **triangle inequality** states that for sides \\(a\\), \\(b\\), \\(c\\) of a triangle:",
+          "options": [
+            "\\(a + b < c\\)",
+            "\\(a + b > c\\)",
+            "\\(a + b = c\\)",
+            "\\(a^2 + b^2 > c^2\\)"
+          ],
+          "answer": 1,
+          "solution": "The triangle inequality states that the sum of any two sides of a triangle is strictly greater than the third side: \\(a + b > c\\).",
+          "steps": [
+            {
+              "explain": "Recall the triangle inequality.",
+              "work": "For any triangle with sides \\(a\\), \\(b\\), \\(c\\): \\(a + b > c\\), \\(a + c > b\\), and \\(b + c > a\\)."
+            },
+            {
+              "explain": "Understand why.",
+              "work": "The shortest path between two points is a straight line. The direct side \\(c\\) is always shorter than travelling via the two other sides \\(a + b\\)."
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y12e2-2F-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using calculus, we can show \\(e^x \\geq 1 + x\\) for all real \\(x\\). Which approach is correct?",
+          "options": [
+            "Let \\(f(x) = e^x - 1 - x\\). Show \\(f(0) = 0\\) and \\(f'(x) = e^x - 1\\), which is \\(\\geq 0\\) for \\(x \\geq 0\\) and \\(\\leq 0\\) for \\(x \\leq 0\\), so \\(f(x) \\geq f(0) = 0\\)",
+            "Substitute \\(x = 0\\) to verify \\(e^0 = 1 + 0 = 1\\)",
+            "Take the derivative of both sides and compare",
+            "Apply the AM-GM inequality directly"
+          ],
+          "answer": 0,
+          "solution": "Let \\(f(x) = e^x - 1 - x\\). Then \\(f(0) = 0\\) and \\(f'(x) = e^x - 1\\). Since \\(e^x \\geq 1\\) for \\(x \\geq 0\\), \\(f\\) is increasing for \\(x \\geq 0\\) so \\(f(x) \\geq f(0) = 0\\). Similarly for \\(x \\leq 0\\). Hence \\(e^x \\geq 1 + x\\) for all \\(x\\).",
+          "steps": [
+            {
+              "explain": "Define \\(f(x) = e^x - 1 - x\\) and evaluate at \\(x = 0\\).",
+              "work": "\\(f(0) = e^0 - 1 - 0 = 1 - 1 = 0\\)"
+            },
+            {
+              "explain": "Differentiate.",
+              "work": "\\(f'(x) = e^x - 1\\)"
+            },
+            {
+              "explain": "Analyse the sign of \\(f'(x)\\).",
+              "work": "\\(f'(x) \\geq 0 \\iff e^x \\geq 1 \\iff x \\geq 0\\). So \\(f\\) has a global minimum at \\(x = 0\\). Therefore \\(f(x) \\geq 0\\) for all \\(x\\), i.e. \\(e^x \\geq 1 + x\\). \\(\\square\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
     }
   ]
 }

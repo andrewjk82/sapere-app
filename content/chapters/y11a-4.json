@@ -1116,38 +1116,24 @@
           "difficulty": "easy",
           "stem": "Choose the correct graph for: $x > 3$",
           "options": [
-            {
-              "figure": {
-                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 60' width='300' height='60' font-family='sans-serif'>\n  <!-- Number line base -->\n  <line x1='0' y1='30' x2='300' y2='30' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Ticks -->\n  <line x1='50' y1='25' x2='50' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='150' y1='25' x2='150' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='250' y1='25' x2='250' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Labels -->\n  <text x='50' y='50' text-anchor='middle' fill='#64748b' font-size='12'>2</text>\n  <text x='150' y='50' text-anchor='middle' fill='#64748b' font-size='12'>3</text>\n  <text x='250' y='50' text-anchor='middle' fill='#64748b' font-size='12'>4</text>\n  \n  <!-- Inequality path -->\n  <line x1='150' y1='30' x2='290' y2='30' stroke='#2563eb' stroke-width='3'/><polygon points='290,25 300,30 290,35' fill='#2563eb'/>\n  <!-- Circle -->\n  <circle cx='150' cy='30' r='5' fill='white' stroke='#2563eb' stroke-width='2'/>\n</svg>"
-              }
-            },
-            {
-              "figure": {
-                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 60' width='300' height='60' font-family='sans-serif'>\n  <!-- Number line base -->\n  <line x1='0' y1='30' x2='300' y2='30' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Ticks -->\n  <line x1='50' y1='25' x2='50' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='150' y1='25' x2='150' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='250' y1='25' x2='250' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Labels -->\n  <text x='50' y='50' text-anchor='middle' fill='#64748b' font-size='12'>2</text>\n  <text x='150' y='50' text-anchor='middle' fill='#64748b' font-size='12'>3</text>\n  <text x='250' y='50' text-anchor='middle' fill='#64748b' font-size='12'>4</text>\n  \n  <!-- Inequality path -->\n  <line x1='150' y1='30' x2='10' y2='30' stroke='#2563eb' stroke-width='3'/><polygon points='10,25 0,30 10,35' fill='#2563eb'/>\n  <!-- Circle -->\n  <circle cx='150' cy='30' r='5' fill='white' stroke='#2563eb' stroke-width='2'/>\n</svg>"
-              }
-            },
-            {
-              "figure": {
-                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 60' width='300' height='60' font-family='sans-serif'>\n  <!-- Number line base -->\n  <line x1='0' y1='30' x2='300' y2='30' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Ticks -->\n  <line x1='50' y1='25' x2='50' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='150' y1='25' x2='150' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='250' y1='25' x2='250' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Labels -->\n  <text x='50' y='50' text-anchor='middle' fill='#64748b' font-size='12'>2</text>\n  <text x='150' y='50' text-anchor='middle' fill='#64748b' font-size='12'>3</text>\n  <text x='250' y='50' text-anchor='middle' fill='#64748b' font-size='12'>4</text>\n  \n  <!-- Inequality path -->\n  <line x1='150' y1='30' x2='290' y2='30' stroke='#2563eb' stroke-width='3'/><polygon points='290,25 300,30 290,35' fill='#2563eb'/>\n  <!-- Circle -->\n  <circle cx='150' cy='30' r='5' fill='#2563eb' stroke='#2563eb' stroke-width='2'/>\n</svg>"
-              }
-            },
-            {
-              "figure": {
-                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 60' width='300' height='60' font-family='sans-serif'>\n  <!-- Number line base -->\n  <line x1='0' y1='30' x2='300' y2='30' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Ticks -->\n  <line x1='50' y1='25' x2='50' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='150' y1='25' x2='150' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <line x1='250' y1='25' x2='250' y2='35' stroke='#94a3b8' stroke-width='2'/>\n  <!-- Labels -->\n  <text x='50' y='50' text-anchor='middle' fill='#64748b' font-size='12'>2</text>\n  <text x='150' y='50' text-anchor='middle' fill='#64748b' font-size='12'>3</text>\n  <text x='250' y='50' text-anchor='middle' fill='#64748b' font-size='12'>4</text>\n  \n  <!-- Inequality path -->\n  <line x1='150' y1='30' x2='10' y2='30' stroke='#2563eb' stroke-width='3'/><polygon points='10,25 0,30 10,35' fill='#2563eb'/>\n  <!-- Circle -->\n  <circle cx='150' cy='30' r='5' fill='#2563eb' stroke='#2563eb' stroke-width='2'/>\n</svg>"
-              }
-            }
+            "Open circle at \\(3\\), arrow pointing right",
+            "Open circle at \\(3\\), arrow pointing left",
+            "Closed circle at \\(3\\), arrow pointing right",
+            "Closed circle at \\(3\\), arrow pointing left"
           ],
           "answer": 0,
           "solution": "Step 1: Identify the inequality symbol. $x > 3$ means $x$ is greater than 3.\nStep 2: Use an **open circle** because 3 is not included ($>$).\nStep 3: Draw an arrow pointing to the **right** for greater than.",
           "steps": [
             {
-              "explain": "Examine the given inequality: \\(x > 3\\)."
+              "explain": "The inequality \\(x > 3\\) means all values **greater than** 3 (not including 3 itself).",
+              "work": "Use an **open circle** at \\(3\\) (since \\(x = 3\\) is NOT included) and shade to the **right** (since \\(x > 3\\))."
             },
             {
-              "explain": "Since it is strictly greater than (>), the boundary value 3 is excluded. Place an open circle at 3 on the number line."
-            },
-            {
-              "explain": "The values of x are larger than 3, so draw an arrow pointing to the right to represent all numbers greater than 3."
+              "explain": "Identify the correct number line diagram.",
+              "work": "Option A shows an open circle at 3 with the arrow pointing right — this correctly represents \\(x > 3\\).",
+              "figure": {
+                "svg": "fig:f80fc28418"
+              }
             }
           ],
           "meta": {

@@ -1,0 +1,9 @@
+<svg width="340" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80">
+  <rect width="340" height="80" fill="#f8fafc" rx="8"/>
+  <text x="170" y="22" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#475569" font-weight="bold">Rearrange equation</text>
+  <rect x="40" y="30" width="120" height="38" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="100" y="54" text-anchor="middle" font-family="serif" font-size="14" fill="#1d4ed8">y − 2 = g(x)</text>
+  <text x="170" y="54" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#64748b">→</text>
+  <rect x="180" y="30" width="120" height="38" rx="6" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="240" y="54" text-anchor="middle" font-family="serif" font-size="14" fill="#b45309">y = g(x) + 2</text>
+</svg>
