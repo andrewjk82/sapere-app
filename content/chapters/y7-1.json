@@ -5284,8 +5284,8 @@
         {
           "id": "y7-1b-h16",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A cargo vessel is loaded with three shipments of wheat weighing \\( 4520 \\) kg, \\( 3890 \\) kg, and \\( 1245 \\) kg respectively. Find the total weight of the wheat cargo.",
+          "difficulty": "hard",
           "options": [
             "\\( 9555 \\)",
             "\\( 9645 \\)",
@@ -5312,8 +5312,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 4520 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 3890 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 1245 \\)",
+              "note": "add this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h17",
