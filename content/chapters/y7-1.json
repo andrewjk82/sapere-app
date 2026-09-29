@@ -5676,8 +5676,8 @@
         {
           "id": "y7-1b-h24",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A hybrid power station generates electricity from three sources: wind turbine (\\( 7350 \\) kW), solar array (\\( 4890 \\) kW), and biomass generator (\\( 2110 \\) kW). Find the total power output.",
+          "difficulty": "hard",
           "options": [
             "\\( 14250 \\)",
             "\\( 14340 \\)",
@@ -5704,8 +5704,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 7350 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 4890 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 2110 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h25",
