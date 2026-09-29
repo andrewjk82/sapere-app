@@ -5431,8 +5431,8 @@
         {
           "id": "y7-1b-h19",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A city water reservoir receives three inflows of \\( 12500 \\) liters, \\( 8900 \\) liters, and \\( 4350 \\) liters from different tributaries. What is the total volume of water added?",
+          "difficulty": "hard",
           "options": [
             "\\( 25650 \\)",
             "\\( 25740 \\)",
@@ -5459,8 +5459,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 12500 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 4350 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 8900 \\)",
+              "note": "add this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h20",
