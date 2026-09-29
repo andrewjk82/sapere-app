@@ -17,7 +17,10 @@ export const toDrivePreviewUrl = (url) => {
   const trimmed = String(url || '').trim();
   if (!trimmed) return '';
   const id = extractDriveFileId(trimmed);
-  return id ? `https://drive.google.com/file/d/${id}/preview` : trimmed;
+  // Use the embedded Google Docs viewer — unlike /preview it renders all pages
+  // with scrolling rather than freezing on page 1.
+  const fileUrl = id ? `https://drive.google.com/file/d/${id}/view` : trimmed;
+  return `https://docs.google.com/viewer?embedded=true&url=${encodeURIComponent(fileUrl)}`;
 };
 
 export const toDriveOpenUrl = (url) => {
