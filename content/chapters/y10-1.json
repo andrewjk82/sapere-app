@@ -321,7 +321,7 @@
             },
             {
               "text": "clearance discount of \\( 12\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply this discount to the price after the markup. What fraction of that marked-up price remains?"
             }
           ]
         },
@@ -364,7 +364,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\) off the marked-up price",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply this discount to the price after the markup. What fraction of that marked-up price remains?"
             }
           ]
         },
@@ -407,7 +407,7 @@
             },
             {
               "text": "discount of \\( 18\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply this discount to the price after the markup. What fraction of that marked-up price remains?"
             }
           ]
         },
@@ -450,7 +450,7 @@
             },
             {
               "text": "discounts them by \\( 10\\% \\) during a trade show",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply this discount to the price after the markup. What fraction of that marked-up price remains?"
             }
           ]
         },
@@ -493,7 +493,7 @@
             },
             {
               "text": "discounted by \\( 25\\% \\) during a inventory clearance sale",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Apply this discount to the price after the markup. What fraction of that marked-up price remains?"
             }
           ]
         },
@@ -532,7 +532,7 @@
             },
             {
               "text": "discount of \\( 10\\% \\) on the original list price",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The stated amount is the result after the percentage change, so identify what fraction of the original it represents."
             },
             {
               "text": "Determine the original list price",
@@ -574,8 +574,8 @@
               "note": "This is the starting price before adjustments. Use it as the base for the first change only."
             },
             {
-              "text": "discount of \\( 12",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "text": "discount of \\( 12.5\\% \\) is applied",
+              "note": "A 12.5% discount leaves 87.5% of the original price. The discounted price is therefore 87.5% of the original."
             },
             {
               "text": "Determine the original retail price",
@@ -618,7 +618,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "The stated amount is the result after the percentage change, so identify what fraction of the original it represents."
             },
             {
               "text": "Find the list price before the discount",
@@ -716,7 +716,7 @@
             },
             {
               "text": "Determine the total yeast count after two hours",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -810,7 +810,7 @@
             },
             {
               "text": "Find the final honeybee population",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -857,7 +857,7 @@
             },
             {
               "text": "Determine the final queries per second",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -904,7 +904,7 @@
             },
             {
               "text": "find the amount spent on battery testing",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -951,7 +951,7 @@
             },
             {
               "text": "Find the walkway budget",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -998,7 +998,7 @@
             },
             {
               "text": "Find the amount spent on marine studies",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1045,7 +1045,7 @@
             },
             {
               "text": "find the usability testing budget",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1092,7 +1092,7 @@
             },
             {
               "text": "find the pacemaker budget",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1346,7 +1346,7 @@
             },
             {
               "text": "Find the net percentage efficiency of the sola",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1385,11 +1385,11 @@
             },
             {
               "text": "loss",
-              "note": "Profit or loss amount = rate × cost price. If the gain/loss amount is given, divide by the decimal rate to find cost."
+              "note": "This loss is taken from the amount that reached this stage. Keep the fraction that remains after the loss."
             },
             {
               "text": "Compute the net efficiency of the turbine system",
-              "note": "For selling price, add profit to cost or subtract loss; for a percentage, divide the change by cost."
+              "note": "Use the amount after the previous change as the base for this step."
             }
           ]
         },
@@ -1428,7 +1428,7 @@
             },
             {
               "text": "Find the net percentage of queries processed b",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1471,7 +1471,7 @@
             },
             {
               "text": "Calculate the net defect reporting percentage",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
             }
           ]
         },
@@ -1510,11 +1510,11 @@
             },
             {
               "text": "loss",
-              "note": "Profit or loss amount = rate × cost price. If the gain/loss amount is given, divide by the decimal rate to find cost."
+              "note": "This loss is taken from the amount that reached this stage. Keep the fraction that remains after the loss."
             },
             {
               "text": "Determine the net signal propagation efficiency",
-              "note": "For selling price, add profit to cost or subtract loss; for a percentage, divide the change by cost."
+              "note": "Use the amount after the previous change as the base for this step."
             }
           ]
         },
@@ -1557,7 +1557,7 @@
             },
             {
               "text": "determine the total customs tariff as a percentage",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Apply the rate only to the amount above the stated threshold."
             }
           ]
         },
@@ -1596,15 +1596,15 @@
             },
             {
               "text": "\\( 15\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Apply the rate only to the amount above the stated threshold."
             },
             {
               "text": "profit",
-              "note": "Profit or loss amount = rate × cost price. If the gain/loss amount is given, divide by the decimal rate to find cost."
+              "note": "Find the amount above the threshold before applying the rate."
             },
             {
               "text": "find the corporate surcharge as a percentage o",
-              "note": "For selling price, add profit to cost or subtract loss; for a percentage, divide the change by cost."
+              "note": "If the charge is given, work backwards from the charge to find the amount that was taxed, then add the threshold."
             }
           ]
         },
@@ -1647,7 +1647,7 @@
             },
             {
               "text": "find the carbon fine as a percentage of total",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Apply the rate only to the amount above the stated threshold."
             }
           ]
         },
@@ -1690,7 +1690,7 @@
             },
             {
               "text": "determine the surcharge as a percentage of total wa",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Apply the rate only to the amount above the stated threshold."
             }
           ]
         },
@@ -1729,11 +1729,11 @@
             },
             {
               "text": "\\( 2.5\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Apply the rate only to the amount above the stated threshold."
             },
             {
               "text": "find the weekly pool fee as a percentage of to",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount above the threshold before applying the rate."
             }
           ]
         },
@@ -1987,7 +1987,7 @@
             },
             {
               "text": "\\( 5\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Separate the sales into the stated commission bands."
             },
             {
               "text": "\\( 8\\% \\)",
@@ -2128,7 +2128,7 @@
             },
             {
               "text": "\\( 4\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Separate the sales into the stated commission bands."
             },
             {
               "text": "\\( 7\\% \\)",
@@ -2175,7 +2175,7 @@
             },
             {
               "text": "\\( 3.5\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Separate the sales into the stated commission bands."
             },
             {
               "text": "\\( 5\\% \\)",
@@ -2324,7 +2324,7 @@
             },
             {
               "text": "Find the apiary price",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "The stated amount is the result after the percentage change, so identify what fraction of the original it represents."
             }
           ]
         },
@@ -2500,7 +2500,7 @@
             },
             {
               "text": "Find the percentage by which the efficiency (kWh per panel) o",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -2578,7 +2578,7 @@
             },
             {
               "text": "Calculate the percentage by which Culture A's hourl",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -2617,7 +2617,7 @@
             },
             {
               "text": "Find the percentage by which the link density of Center A exc",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -2656,15 +2656,15 @@
             },
             {
               "text": "\\( 4\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Find the amount of the relevant component in each group before combining them."
             },
             {
               "text": "\\( 9\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Add the component amounts and add the total amounts; do not average the percentages directly."
             },
             {
               "text": "Find the overall defect rate of the combined m",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Divide the combined component amount by the combined total to find the overall percentage."
             }
           ]
         },
@@ -2707,7 +2707,7 @@
             },
             {
               "text": "Calculate the overall percentage of defective bolts",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -2750,7 +2750,7 @@
             },
             {
               "text": "Find the moisture percentage of the mixture",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -2789,15 +2789,15 @@
             },
             {
               "text": "\\( 2.0\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Find the amount of the relevant component in each group before combining them."
             },
             {
               "text": "\\( 4.5\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Add the component amounts and add the total amounts; do not average the percentages directly."
             },
             {
               "text": "Compute the combined defect rate",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Divide the combined component amount by the combined total to find the overall percentage."
             }
           ]
         },
@@ -2844,7 +2844,7 @@
             },
             {
               "text": "computer lab merges two student laptop batches",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -3000,7 +3000,7 @@
             },
             {
               "text": "find the percentage contraction in the volume of concrete tha",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Identify the fixed total value and the quantity that changes when the cost changes."
             }
           ]
         },
@@ -3078,7 +3078,7 @@
             },
             {
               "text": "discount of \\( 20\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             }
           ]
         },
@@ -3117,7 +3117,7 @@
             },
             {
               "text": "discount of \\( 10\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             }
           ]
         },
@@ -3156,7 +3156,7 @@
             },
             {
               "text": "discounts the remaining \\( 60\\% \\) of stock by \\( 30\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             }
           ]
         },
@@ -3195,7 +3195,7 @@
             },
             {
               "text": "discount of \\( 15\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             }
           ]
         },
@@ -3234,7 +3234,7 @@
             },
             {
               "text": "discount of \\( 50\\% \\)",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             }
           ]
         },
@@ -3273,7 +3273,7 @@
             },
             {
               "text": "Find the percentage savings in energy consumption",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use the original amount as the reference for the percentage change."
             }
           ]
         },
@@ -3312,7 +3312,7 @@
             },
             {
               "text": "Determine the percentage efficiency savings",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use the original amount as the reference for the percentage change."
             }
           ]
         },
@@ -3390,7 +3390,7 @@
             },
             {
               "text": "Find the percentage reduction in fuel consumption",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use the original amount as the reference for the percentage change."
             }
           ]
         },
@@ -3429,7 +3429,7 @@
             },
             {
               "text": "Determine the percentage grid savings",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use the original amount as the reference for the percentage change."
             }
           ]
         },
@@ -3476,7 +3476,7 @@
             },
             {
               "text": "find the percentage of copper in the new alloy",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -3570,7 +3570,7 @@
             },
             {
               "text": "find the percentage of potassium in the blend",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -3617,7 +3617,7 @@
             },
             {
               "text": "determine the yellow pigment percentage of the mix",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -3664,7 +3664,7 @@
             },
             {
               "text": "find the percentage of nickel in the combined alloy",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Find the amount of the relevant component in each group before combining them."
             }
           ]
         },
@@ -3957,7 +3957,7 @@
             },
             {
               "text": "Find the percentage of streams revenue that goes to the marke",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "The second percentage applies to the share found in the first step."
             }
           ]
         },
@@ -4039,7 +4039,7 @@
             },
             {
               "text": "Find the percentage of hardware sales going to the patent att",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "The second percentage applies to the share found in the first step."
             }
           ]
         },
@@ -4078,7 +4078,7 @@
             },
             {
               "text": "Find the percentage of total sales going to the advertising f",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "The second percentage applies to the share found in the first step."
             }
           ]
         },
@@ -4117,11 +4117,11 @@
             },
             {
               "text": "\\( 32\\% \\)",
-              "note": "Convert this interest rate to a decimal before substituting it into the interest formula."
+              "note": "Apply the rate only to the amount above the stated threshold."
             },
             {
               "text": "find their total income",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Find the amount above the threshold before applying the rate."
             }
           ]
         },
@@ -4160,7 +4160,7 @@
             },
             {
               "text": "find their total carbon emissions",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Apply the rate only to the amount above the stated threshold."
             }
           ]
         },
@@ -4203,11 +4203,11 @@
             },
             {
               "text": "profit",
-              "note": "Profit or loss amount = rate × cost price. If the gain/loss amount is given, divide by the decimal rate to find cost."
+              "note": "Apply the rate only to the amount above the stated threshold."
             },
             {
               "text": "find their total profits",
-              "note": "For selling price, add profit to cost or subtract loss; for a percentage, divide the change by cost."
+              "note": "Find the amount above the threshold before applying the rate."
             }
           ]
         },
@@ -4336,11 +4336,11 @@
           "keyPoints": [
             {
               "text": "6.0",
-              "note": "This is the part. Divide it by the whole amount before converting the ratio to a percentage."
+              "note": "Identify the part being asked about and the total that forms the whole."
             },
             {
               "text": "100",
-              "note": "This is the whole. Use the same units for the part and whole before dividing."
+              "note": "Express the part as a fraction of the whole, then multiply by 100%."
             },
             {
               "text": "By what percentage is the fuel efficiency of Vehicle B bette",
@@ -4383,7 +4383,7 @@
             },
             {
               "text": "Find the percentage by which Miner B's efficiency is better t",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Identify the part being asked about and the total that forms the whole."
             }
           ]
         },
@@ -4422,7 +4422,7 @@
             },
             {
               "text": "2.00",
-              "note": "Use this given amount as the relevant base or value in the method identified by the other hint."
+              "note": "Identify the part being asked about and the total that forms the whole."
             }
           ]
         },
@@ -4461,7 +4461,7 @@
             },
             {
               "text": "Calculate the percentage savings of the hybrid truc",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Identify the part being asked about and the total that forms the whole."
             }
           ]
         },
@@ -4500,7 +4500,7 @@
             },
             {
               "text": "Calculate the percentage savings of the eco-boiler",
-              "note": "Multiply the whole by the percentage as a decimal; convert a fractional minute to seconds if needed."
+              "note": "Identify the part being asked about and the total that forms the whole."
             }
           ]
         },
@@ -8585,12 +8585,12 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "3",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "text": "increased by \\(22\\%\\)",
+              "note": "An increase of 22% means the new output is 122% of the original. To work backwards, divide the new output by 1.22."
             },
             {
-              "text": "increased by \\(22\\%\\)",
-              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
+              "text": "new daily output is \\(3{,}660\\) metres",
+              "note": "This is 122% of the original output. Use it as the final amount when reversing the percentage increase."
             }
           ],
           "meta": {
@@ -8630,16 +8630,16 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "What is the net percentage change from the origin",
-              "note": "Percentage change = (new − original) ÷ original × 100%. The sign shows increase or decrease."
+              "text": "reduced the price of premium cheese by \\(30\\%\\)",
+              "note": "After a 30% reduction, what fraction of the original price remains? Use that fraction for the first multiplier."
             },
             {
-              "text": "reduced the price of premium cheese by \\(30\\%\\).",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "text": "increased by \\(30\\%\\)",
+              "note": "Apply this increase to the reduced price. Use a multiplier greater than 1 for this second change."
             },
             {
-              "text": "ncreased by \\(30\\%\\)",
-              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+              "text": "net percentage change from the original price",
+              "note": "Combine the two multipliers, then compare the final price with the original price to find the net change."
             }
           ],
           "meta": {
@@ -8680,11 +8680,11 @@
           "keyPoints": [
             {
               "text": "1",
-              "note": "This is the part. Divide it by the whole amount before converting the ratio to a percentage."
+              "note": "Identify the part being asked about and the total that forms the whole."
             },
             {
               "text": "800",
-              "note": "This is the whole. Use the same units for the part and whole before dividing."
+              "note": "Express the part as a fraction of the whole, then multiply by 100%."
             },
             {
               "text": "What percentage of total revenue comes from premium seats",
@@ -8730,7 +8730,7 @@
             },
             {
               "text": "what is the new weekly yield",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Start with the original amount and identify the fraction that remains after the change."
             }
           ]
         },
@@ -8764,11 +8764,11 @@
           "keyPoints": [
             {
               "text": "3",
-              "note": "This is the part. Divide it by the whole amount before converting the ratio to a percentage."
+              "note": "Identify the part being asked about and the total that forms the whole."
             },
             {
               "text": "8",
-              "note": "This is the whole. Use the same units for the part and whole before dividing."
+              "note": "Express the part as a fraction of the whole, then multiply by 100%."
             },
             {
               "text": "What percentage of the weekly target was this",
@@ -8814,7 +8814,7 @@
             },
             {
               "text": "How many widgets passed quality control",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Start with the original amount and identify the fraction that remains after the change."
             }
           ]
         },
@@ -8894,7 +8894,7 @@
             },
             {
               "text": "How many packages arrived undamaged",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Start with the original amount and identify the fraction that remains after the change."
             }
           ]
         },
@@ -8936,7 +8936,7 @@
             },
             {
               "text": "What is the annual interest rate",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use simple interest: interest = principal × annual rate × time in years."
             }
           ]
         },
@@ -8970,7 +8970,7 @@
           "keyPoints": [
             {
               "text": "discounts plants by \\(40\\%\\) in a clearance sale",
-              "note": "Use the the discount rate discount on the marked-up price, not the original cost. Multiply that new price by 1 − discount rate to find the final price."
+              "note": "Use the original price as the base for the first change."
             },
             {
               "text": "\\(15\\%\\)",
@@ -9016,7 +9016,7 @@
             },
             {
               "text": "624",
-              "note": "Use this given amount as the relevant base or value in the method identified by the other hint."
+              "note": "Use the starting amount and final amount to find the total growth multiplier."
             }
           ]
         },
@@ -9054,7 +9054,7 @@
             },
             {
               "text": "3",
-              "note": "Use this given amount as the relevant base or value in the method identified by the other hint."
+              "note": "Identify the part being asked about and the total that forms the whole."
             }
           ]
         },
@@ -9092,11 +9092,11 @@
           "keyPoints": [
             {
               "text": "2",
-              "note": "This is the part. Divide it by the whole amount before converting the ratio to a percentage."
+              "note": "Identify the part being asked about and the total that forms the whole."
             },
             {
               "text": "400",
-              "note": "This is the whole. Use the same units for the part and whole before dividing."
+              "note": "Express the part as a fraction of the whole, then multiply by 100%."
             },
             {
               "text": "What percentage of total revenue came from general admiss",
@@ -9142,7 +9142,7 @@
             },
             {
               "text": "what is the approximate annual growth rate",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Use the starting amount and final amount to find the total growth multiplier."
             }
           ]
         },
@@ -9230,7 +9230,7 @@
             },
             {
               "text": "000",
-              "note": "Use this given amount as the relevant base or value in the method identified by the other hint."
+              "note": "Use the starting amount and final amount to find the total growth multiplier."
             }
           ]
         },
@@ -9268,11 +9268,11 @@
           "keyPoints": [
             {
               "text": "420",
-              "note": "This is the part. Divide it by the whole amount before converting the ratio to a percentage."
+              "note": "Identify the part being asked about and the total that forms the whole."
             },
             {
               "text": "1",
-              "note": "This is the whole. Use the same units for the part and whole before dividing."
+              "note": "Express the part as a fraction of the whole, then multiply by 100%."
             },
             {
               "text": "What percentage of total revenue came from business class",
@@ -9326,7 +9326,7 @@
             },
             {
               "text": "How many more kilograms per day are successfully r",
-              "note": "Choose multiplication to find a part/new amount, or divide by the percentage multiplier when working backwards."
+              "note": "Start with the original amount and identify the fraction that remains after the change."
             }
           ]
         },
