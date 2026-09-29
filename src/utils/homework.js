@@ -17,8 +17,12 @@ export const toDrivePreviewUrl = (url) => {
   const trimmed = String(url || '').trim();
   if (!trimmed) return '';
   const id = extractDriveFileId(trimmed);
-  // rm=minimal adds page-forward/back arrows so students can navigate all pages.
-  return id ? `https://drive.google.com/file/d/${id}/preview?rm=minimal` : trimmed;
+  if (!id) return trimmed;
+  // Google Docs gview with the direct-download URL reliably renders every page
+  // of a Drive-hosted PDF inside an iframe, unlike /preview which often freezes
+  // after the first page.
+  const dlUrl = `https://drive.google.com/uc?export=download&id=${id}`;
+  return `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(dlUrl)}`;
 };
 
 export const toDriveOpenUrl = (url) => {
