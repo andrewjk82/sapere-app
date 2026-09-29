@@ -6243,6 +6243,18 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 18900 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 22400 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 9350 \\)",
+              "note": "Use this number"
             }
           ],
           "meta": {
