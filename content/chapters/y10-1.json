@@ -8701,8 +8701,8 @@
         {
           "id": "y10-1a-high-q129",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A hydroponics farm increased its lettuce yield by \\(35\\%\\) after installing LED grow lights. If the yield before was \\(2{,}400\\) kg per week, what is the new weekly yield?",
+          "difficulty": "hard",
           "options": [
             "\\(2{,}760\\) kg",
             "\\(3{,}240\\) kg",
@@ -8731,14 +8731,17 @@
               "note": "This is the starting amount or whole. Identify the percentage base before calculating."
             },
             {
-              "text": "\\(35\\%\\)",
-              "note": "This is a decrease. Keep 100% minus this rate, then multiply the current amount by that remaining fraction."
-            },
-            {
               "text": "what is the new weekly yield",
               "note": "Start with the original amount and identify the fraction that remains after the change."
+            },
+            {
+              "text": "increased its lettuce yield by \\(35\\%\\)",
+              "note": "This is a decrease. Keep 100% minus this rate, then multiply the current amount by that remaining fraction."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q132",
