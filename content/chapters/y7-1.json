@@ -5917,8 +5917,8 @@
         {
           "id": "y7-1b-h29",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A forest conservation team planted three blocks of native saplings: Block A (\\( 12500 \\) oak), Block B (\\( 9800 \\) pine), and Block C (\\( 6450 \\) birch). Calculate the total saplings planted.",
+          "difficulty": "hard",
           "options": [
             "\\( 28650 \\)",
             "\\( 28740 \\)",
@@ -5945,8 +5945,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 12500 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 6450 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 9800 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h30",
