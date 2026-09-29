@@ -8847,12 +8847,12 @@
           "xp": 3,
           "keyPoints": [
             {
-              "text": "7",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "text": "decreased by \\(12.5\\%\\)",
+              "note": "A decrease of 12.5% leaves 87.5% of the original consumption."
             },
             {
-              "text": "\\(12.5\\%\\)",
-              "note": "This is a decrease. Keep 100% minus this rate, then multiply the current amount by that remaining fraction."
+              "text": "new consumption is \\(7{,}350\\) tonnes per month",
+              "note": "This is 87.5% of the original consumption. Divide by 0.875 to work backwards."
             }
           ]
         },
