@@ -5770,8 +5770,8 @@
         {
           "id": "y7-1b-h26",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A regional train line recorded ridership of \\( 14200 \\) on Monday, \\( 16800 \\) on Tuesday, and \\( 9350 \\) on Wednesday. Calculate the total ridership over these three days.",
+          "difficulty": "hard",
           "options": [
             "\\( 40250 \\)",
             "\\( 40340 \\)",
@@ -5798,8 +5798,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 14200 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 16800 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 9350 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h27",
