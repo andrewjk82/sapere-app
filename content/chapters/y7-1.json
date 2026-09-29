@@ -6113,8 +6113,8 @@
         {
           "id": "y7-1b-h33",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A security protocol requires verification of three prime hashes containing \\( 5400 \\) bits, \\( 8192 \\) bits, and \\( 2048 \\) bits. Solve for the total bits verified.",
+          "difficulty": "hard",
           "options": [
             "\\( 15540 \\)",
             "\\( 15630 \\)",
@@ -6141,8 +6141,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 5400 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 2048 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 8192 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h34",
