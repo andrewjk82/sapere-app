@@ -844,20 +844,20 @@
           "xp": 2,
           "keyPoints": [
             {
-              "text": "25000",
-              "note": "This is the starting amount or whole. Identify the percentage base before calculating."
+              "text": "processes \\( 25000 \\) queries per second",
+              "note": "This is the starting capacity. Apply each percentage increase to the current capacity."
             },
             {
-              "text": "\\( 18\\% \\)",
-              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
+              "text": "capacity increases by \\( 18\\% \\)",
+              "note": "An 18% increase gives a multiplier of 1.18 for the first change."
             },
             {
-              "text": "\\( 5\\% \\)",
-              "note": "Apply this next rate to the amount after the previous change; do not apply it to the original amount again."
+              "text": "add another \\( 5\\% \\) capacity",
+              "note": "Apply this second increase to the capacity after the 18% increase."
             },
             {
               "text": "Determine the final queries per second",
-              "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
+              "note": "Multiply the two increase factors in order and apply the result to the starting capacity."
             }
           ]
         },
