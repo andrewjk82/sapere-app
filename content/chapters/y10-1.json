@@ -679,8 +679,8 @@
         {
           "id": "y10-1a-high-q12",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A yeast cell colony starts with \\( 5000 \\) cells. The population grows by \\( 8\\% \\) in the first hour and by \\( 12\\% \\) in the second hour. Determine the total yeast count after two hours.",
+          "difficulty": "hard",
           "options": [
             "\\(6000\\)",
             "\\(5900\\)",
@@ -710,18 +710,21 @@
               "note": "This is the starting amount or whole. Identify the percentage base before calculating."
             },
             {
-              "text": "\\( 8\\% \\)",
-              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
-            },
-            {
               "text": "\\( 12\\% \\)",
               "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
             },
             {
               "text": "Determine the total yeast count after two hours",
               "note": "Treat each percentage change as a multiplier and apply the changes in the order given."
+            },
+            {
+              "text": "grows by \\( 8\\% \\) ",
+              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q13",
