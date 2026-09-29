@@ -8559,8 +8559,8 @@
         {
           "id": "y10-1a-high-q123",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A textile factory's loom output increased by \\(22\\%\\) after automation. If the new daily output is \\(3{,}660\\) metres, what was the daily output before automation? Round to the nearest metre.",
+          "difficulty": "hard",
           "options": [
             "\\(3{,}000\\) m",
             "\\(2{,}950\\) m",
@@ -8589,10 +8589,13 @@
               "note": "This is the starting amount or whole. Identify the percentage base before calculating."
             },
             {
-              "text": "\\(22\\%\\)",
+              "text": "increased by \\(22\\%\\)",
               "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q124",
