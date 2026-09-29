@@ -5627,8 +5627,8 @@
         {
           "id": "y7-1b-h23",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A database server processed three data streams containing \\( 6800 \\) MB, \\( 12450 \\) MB, and \\( 3120 \\) MB of transaction logs. Solve for the total processed data size.",
+          "difficulty": "hard",
           "options": [
             "\\( 22270 \\)",
             "\\( 22360 \\)",
@@ -5655,8 +5655,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 12450 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 6800 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 3120 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h24",
