@@ -5529,8 +5529,8 @@
         {
           "id": "y7-1b-h21",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An orchard harvested three varieties of apples, yielding \\( 2850 \\) organic Granny Smiths, \\( 3120 \\) Honeycrisps, and \\( 1475 \\) Fujis. Calculate the total apple yield.",
+          "difficulty": "hard",
           "options": [
             "\\( 7345 \\)",
             "\\( 7435 \\)",
@@ -5557,8 +5557,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 2850 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 3120 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 1475 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h22",
