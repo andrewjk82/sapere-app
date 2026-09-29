@@ -6162,8 +6162,8 @@
         {
           "id": "y7-1b-h34",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A spacecraft fuel system consists of a main tank (\\( 45800 \\) kg), secondary booster (\\( 24900 \\) kg), and orbital maneuvering reserve (\\( 3850 \\) kg). Calculate the total fuel weight.",
+          "difficulty": "hard",
           "options": [
             "\\( 74450 \\)",
             "\\( 74540 \\)",
@@ -6190,8 +6190,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 45800 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 24900 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 3850 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h35",
