@@ -8185,8 +8185,14 @@
         {
           "id": "y7-1b-h1",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "What is the sum of \\\\( 157 \\\\) kg, \\\\( 243 \\\\) kg, and \\\\( 89 \\\\) kg?",
+          "difficulty": "hard",
+          "options": [
+            "\\\\( 489 \\\\) kg",
+            "\\\\( 479 \\\\) kg",
+            "\\\\( 499 \\\\) kg",
+            "\\\\( 389 \\\\) kg"
+          ],
           "answer": 0,
           "steps": [
             {
@@ -8203,12 +8209,15 @@
             }
           ],
           "xp": 2,
-          "options": [
-            "\\\\( 489 \\\\) kg",
-            "\\\\( 479 \\\\) kg",
-            "\\\\( 499 \\\\) kg",
-            "\\\\( 389 \\\\) kg"
-          ]
+          "keyPoints": [
+            {
+              "text": "sum",
+              "note": "Add all three numbers"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h2",
