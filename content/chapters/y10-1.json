@@ -8600,8 +8600,8 @@
         {
           "id": "y10-1a-high-q124",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A supermarket reduced the price of premium cheese by \\(30\\%\\). After the sale, the price was increased by \\(30\\%\\). What is the net percentage change from the original price?",
+          "difficulty": "hard",
           "options": [
             "\\(0\\%\\)",
             "\\(-9\\%\\)",
@@ -8634,10 +8634,17 @@
               "note": "Percentage change = (new − original) ÷ original × 100%. The sign shows increase or decrease."
             },
             {
-              "text": "\\(30\\%\\)",
+              "text": "reduced the price of premium cheese by \\(30\\%\\).",
+              "note": "Use this percentage as a decimal multiplier for the relevant amount."
+            },
+            {
+              "text": "ncreased by \\(30\\%\\)",
               "note": "Use this percentage as a decimal multiplier for the relevant amount."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q128",
