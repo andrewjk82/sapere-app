@@ -5966,8 +5966,8 @@
         {
           "id": "y7-1b-h30",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A multi-day athletics tournament registered \\( 8560 \\) spectators on day one, \\( 11240 \\) on day two, and \\( 6800 \\) on day three. Determine the total spectator attendance.",
+          "difficulty": "hard",
           "options": [
             "\\( 26500 \\)",
             "\\( 26590 \\)",
@@ -5994,8 +5994,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 8560 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 11240 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 6800 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h31",
