@@ -6015,8 +6015,8 @@
         {
           "id": "y7-1b-h31",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A university archive restored three historical collections containing \\( 3250 \\) rare manuscripts, \\( 4890 \\) photographs, and \\( 1560 \\) maps. How many items were restored in total?",
+          "difficulty": "hard",
           "options": [
             "\\( 9600 \\)",
             "\\( 9690 \\)",
@@ -6043,8 +6043,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 4890 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 1560 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 3250 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h32",
