@@ -5725,8 +5725,8 @@
         {
           "id": "y7-1b-h25",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Archaeologists at a historical site uncovered three categories of artifacts: \\( 450 \\) pottery shards, \\( 890 \\) metal coins, and \\( 125 \\) bone tools. Find the total artifact count.",
+          "difficulty": "hard",
           "options": [
             "\\( 1365 \\)",
             "\\( 1455 \\)",
@@ -5753,8 +5753,19 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 450 \\)",
+              "note": "Use this number"
+            },
+            {
+              "text": "\\( 890 \\)",
+              "note": "Use this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h26",
