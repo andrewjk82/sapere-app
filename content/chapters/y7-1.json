@@ -5382,8 +5382,8 @@
         {
           "id": "y7-1b-h18",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An astronomer cataloged three new stellar clusters with \\( 3400 \\), \\( 5680 \\), and \\( 1290 \\) stars. Determine the total count of cataloged stars.",
+          "difficulty": "hard",
           "options": [
             "\\( 10270 \\)",
             "\\( 10360 \\)",
@@ -5410,8 +5410,23 @@
             {
               "text": "total",
               "note": "Total/combined means add all the amounts together."
+            },
+            {
+              "text": "\\( 3400 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 5680 \\)",
+              "note": "add this number"
+            },
+            {
+              "text": "\\( 1290 \\)",
+              "note": "add this number"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-1b-h19",
