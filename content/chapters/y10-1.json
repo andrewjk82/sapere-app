@@ -629,8 +629,8 @@
         {
           "id": "y10-1a-high-q11",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "The population of a rare koala reserve is \\( 1200 \\). If the population increases by \\( 15\\% \\) in the first year and then by \\( 20\\% \\) in the second year, find the final population of the reserve.",
+          "difficulty": "hard",
           "options": [
             "\\(1680\\)",
             "\\(1656\\)",
@@ -660,18 +660,21 @@
               "note": "This is the starting amount. Apply each later change to the result of the previous step."
             },
             {
-              "text": "\\( 15\\% \\)",
-              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
-            },
-            {
               "text": "\\( 20\\% \\)",
               "note": "Apply this next rate to the amount after the previous change; do not apply it to the original amount again."
             },
             {
               "text": "find the final population of the reserve",
               "note": "Multiply the change factors in order; do not add the percentages. Compare the final multiplier with 1 for the net percentage change."
+            },
+            {
+              "text": "increases by \\( 15\\% \\)",
+              "note": "This is an increase. Convert it to a multiplier greater than 1 and apply it to the amount at this stage."
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-high-q12",
