@@ -3168,71 +3168,7 @@
           "id": "y9-7a-q6d-alpha",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "<svg viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width: 440px; display: block; margin: 1rem auto; background-color: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; padding: 0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker id=\"sleek-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto-start-reverse\"><path d=\"M0,1 L6,3.5 L0,6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></marker>\n</defs>\n  <path d=\"M 193.3128047094055,63.30254039744158 A 24,24 0 0,1 166.6871952905945,63.30254039744158\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"180\" y=\"85.33333333333334\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">α</text>\n  <path d=\"M 146.22222222222223,130 A 24,24 0 0,1 135.53502693162773,149.96920706410825\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"159.25255537047585\" y=\"149.81803287234501\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">105°</text>\n  <path d=\"M 166.6871952905945,196.6974596025584 A 24,24 0 0,1 193.3128047094055,196.6974596025584\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"180\" y=\"174.66666666666666\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">β</text>\n  <line x1=\"180\" y1=\"43.333333333333336\" x2=\"122.22222222222221\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(151.11111111111111, 86.66666666666667) rotate(123.6900675259798)\"><line x1=\"-2.5\" y1=\"-5\" x2=\"-2.5\" y2=\"5\" stroke=\"#475569\" stroke-width=\"1.8\" /></g>\n  <line x1=\"180\" y1=\"43.333333333333336\" x2=\"237.77777777777777\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(208.88888888888889, 86.66666666666667) rotate(56.309932474020215)\"><line x1=\"-2.5\" y1=\"-5\" x2=\"-2.5\" y2=\"5\" stroke=\"#475569\" stroke-width=\"1.8\" /></g>\n  <line x1=\"122.22222222222221\" y1=\"130\" x2=\"180\" y2=\"216.66666666666666\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(151.11111111111111, 173.33333333333331) rotate(56.30993247402021)\"><line x1=\"0\" y1=\"-5\" x2=\"0\" y2=\"5\" stroke=\"#475569\" stroke-width=\"1.8\" /></g>\n  <line x1=\"180\" y1=\"216.66666666666666\" x2=\"237.77777777777777\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(208.88888888888889, 173.33333333333331) rotate(-56.309932474020215)\"><line x1=\"0\" y1=\"-5\" x2=\"0\" y2=\"5\" stroke=\"#475569\" stroke-width=\"1.8\" /></g>\n  <line x1=\"122.22222222222221\" y1=\"130\" x2=\"237.77777777777777\" y2=\"130\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <g transform=\"translate(180, 130) rotate(0)\"><line x1=\"0\" y1=\"-5\" x2=\"0\" y2=\"5\" stroke=\"#475569\" stroke-width=\"1.8\" /></g>\n</svg>\n\nFind the angle marked with the pronumeral \\(\\alpha\\), giving reasons.",
-          "figure": {
-            "geometry": {
-              "width": 220,
-              "points": {
-                "P": [
-                  0,
-                  3
-                ],
-                "Q": [
-                  -2,
-                  0
-                ],
-                "R": [
-                  2,
-                  0
-                ],
-                "S": [
-                  0,
-                  -3
-                ]
-              },
-              "segments": [
-                {
-                  "from": "P",
-                  "to": "Q",
-                  "ticks": 2
-                },
-                {
-                  "from": "P",
-                  "to": "R",
-                  "ticks": 2
-                },
-                {
-                  "from": "Q",
-                  "to": "S",
-                  "ticks": 1
-                },
-                {
-                  "from": "S",
-                  "to": "R",
-                  "ticks": 1
-                },
-                {
-                  "from": "Q",
-                  "to": "R",
-                  "ticks": 1
-                }
-              ],
-              "angles": [
-                {
-                  "at": "P",
-                  "label": "α"
-                },
-                {
-                  "at": "Q",
-                  "label": "105°"
-                },
-                {
-                  "at": "S",
-                  "label": "β"
-                }
-              ]
-            }
-          },
+          "stem": "<svg viewBox=\"0 0 300 280\" width=\"100%\" height=\"auto\" style=\"max-width: 400px; display: block; margin: 1rem auto; background-color: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; padding: 0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"150,40 60,140 240,140\" fill=\"#eff6ff\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <polygon points=\"60,140 150,240 240,140\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n\n  <path d=\"M 130,62 A 30,30 0 0,0 170,62\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"150\" y=\"85\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">α</text>\n\n  <path d=\"M 130,218 A 30,30 0 0,1 170,218\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"150\" y=\"195\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">β</text>\n\n  <path d=\"M 80,118 A 30,30 0 0,0 80,162\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/>\n  <text x=\"110\" y=\"145\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">105°</text>\n\n  <g stroke=\"#1e293b\" stroke-width=\"2\">\n    <line x1=\"150\" y1=\"133\" x2=\"150\" y2=\"147\"/>\n    <line x1=\"98\" y1=\"184\" x2=\"112\" y2=\"196\"/>\n    <line x1=\"188\" y1=\"196\" x2=\"202\" y2=\"184\"/>\n  </g>\n\n  <g stroke=\"#1e293b\" stroke-width=\"2\">\n    <line x1=\"96\" y1=\"94\" x2=\"110\" y2=\"82\"/>\n    <line x1=\"100\" y1=\"98\" x2=\"114\" y2=\"86\"/>\n    <line x1=\"186\" y1=\"86\" x2=\"200\" y2=\"98\"/>\n    <line x1=\"190\" y1=\"82\" x2=\"204\" y2=\"94\"/>\n  </g>\n\n  <text x=\"150\" y=\"25\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">P</text>\n  <text x=\"40\" y=\"145\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Q</text>\n  <text x=\"260\" y=\"145\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">R</text>\n  <text x=\"150\" y=\"265\" font-family=\"sans-serif\" font-size=\"16\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">S</text>\n</svg>\n\nFind the angle marked with the pronumeral \\(alpha\\), giving reasons.",
           "options": [
             "\\\\(0^\\\\circ\\\\) (Equilateral & isosceles properties)",
             "\\\\(90^\\\\circ\\\\) (Co-interior angles)",
@@ -3819,73 +3755,6 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Find the angle marked with the pronumeral \\(\\gamma\\), giving reasons.",
-          "figure": {
-            "geometry": {
-              "width": 220,
-              "points": {
-                "R": [
-                  0,
-                  3
-                ],
-                "T": [
-                  -2,
-                  0
-                ],
-                "U": [
-                  2,
-                  0
-                ],
-                "S": [
-                  0,
-                  -3
-                ]
-              },
-              "segments": [
-                {
-                  "from": "R",
-                  "to": "T",
-                  "ticks": 2
-                },
-                {
-                  "from": "R",
-                  "to": "U",
-                  "ticks": 2
-                },
-                {
-                  "from": "S",
-                  "to": "T",
-                  "ticks": 3
-                },
-                {
-                  "from": "S",
-                  "to": "U",
-                  "ticks": 3
-                },
-                {
-                  "from": "T",
-                  "to": "U"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "R",
-                  "label": "α"
-                },
-                {
-                  "at": "T",
-                  "label": "60°"
-                },
-                {
-                  "at": "U",
-                  "label": "80°"
-                },
-                {
-                  "at": "S",
-                  "label": "γ"
-                }
-              ]
-            }
-          },
           "image": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMzAwIDI4MCcgd2lkdGg9JzEwMCUnIGhlaWdodD0nYXV0bycgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyBzdHlsZT0nZGlzcGxheTpibG9jazttYXJnaW46MCBhdXRvO21heC1oZWlnaHQ6MjgwcHg7Jz4KICAgIDxwb2x5Z29uIHBvaW50cz0nMTUwLDMwIDI1MCwxMjAgMTUwLDI1MCA1MCwxMjAnIGZpbGw9JyNmOGZhZmMnIHN0cm9rZT0nIzY0NzQ4Yicgc3Ryb2tlLXdpZHRoPScxLjUnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz4KICAgIDxsaW5lIHgxPScxNTAnIHkxPSczMCcgeDI9JzI1MCcgeTI9JzEyMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzI1MCcgeTE9JzEyMCcgeDI9JzE1MCcgeTI9JzI1MCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzE1MCcgeTE9JzI1MCcgeDI9JzUwJyB5Mj0nMTIwJyBzdHJva2U9JyMxZTI5M2InIHN0cm9rZS13aWR0aD0nMi41Jy8+CiAgICA8bGluZSB4MT0nNTAnIHkxPScxMjAnIHgyPScxNTAnIHkyPSczMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzUwJyB5MT0nMTIwJyB4Mj0nMjUwJyB5Mj0nMTIwJyBzdHJva2U9JyM5NGEzYjgnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWRhc2hhcnJheT0nNSw1Jy8+CiAgICAKICAgIDwhLS0gVGlja3MgLS0+CiAgICA8IS0tIFJUIChTbG9wZSAtMC45LCBBbmdsZSAtNDIgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwgNzUpIHJvdGF0ZSgtNDIpIj4KICAgICAgPGxpbmUgeDE9Ii0zLjUiIHkxPSItNyIgeDI9Ii0zLjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iMy41IiB5MT0iLTciIHgyPSIzLjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogICAgPCEtLSBSVSAoU2xvcGUgMC45LCBBbmdsZSA0MiBkZWcpIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAwLCA3NSkgcm90YXRlKDQyKSI+CiAgICAgIDxsaW5lIHgxPSItMy41IiB5MT0iLTciIHgyPSItMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjMuNSIgeTE9Ii03IiB4Mj0iMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwvZz4KICAgIDwhLS0gU1QgKFNsb3BlIDEuMywgQW5nbGUgNTIuNCBkZWcpIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwLCAxODUpIHJvdGF0ZSg1Mi40KSI+CiAgICAgIDxsaW5lIHgxPSItNC41IiB5MT0iLTciIHgyPSItNC41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSItNyIgeDI9IjAiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iNC41IiB5MT0iLTciIHgyPSI0LjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogICAgPCEtLSBTVSAoU2xvcGUgLTEuMywgQW5nbGUgLTUyLjQgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCwgMTg1KSByb3RhdGUoLTUyLjQpIj4KICAgICAgPGxpbmUgeDE9Ii00LjUiIHkxPSItNyIgeDI9Ii00LjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9Ii03IiB4Mj0iMCIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDxsaW5lIHgxPSI0LjUiIHkxPSItNyIgeDI9IjQuNSIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8L2c+CiAgICAKICAgIDwhLS0gVGV4dCBMYWJlbHMgLS0+CiAgICA8dGV4dCB4PScxNTAnIHk9JzIwJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5SPC90ZXh0PgogICAgPHRleHQgeD0nMzUnIHk9JzEyNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzQ3NTU2OScgdGV4dC1hbmNob3I9J21pZGRsZSc+VDwvdGV4dD4KICAgIDx0ZXh0IHg9JzI2NScgeT0nMTI1JyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5VPC90ZXh0PgogICAgPHRleHQgeD0nMTUwJyB5PScyNzAnIGZvbnQtZmFtaWx5PSdzeXN0ZW0tdWksIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyM0NzU1NjknIHRleHQtYW5jaG9yPSdtaWRkbGUnPlM8L3RleHQ+CiAgICAKICAgIDwhLS0gQW5nbGVzIC0tPgogICAgPHRleHQgeD0nMTUwJyB5PSc2NScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2VhNTgwYycgdGV4dC1hbmNob3I9J21pZGRsZSc+zrE8L3RleHQ+CiAgICA8dGV4dCB4PScxNTAnIHk9JzIxNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2VhNTgwYycgdGV4dC1hbmNob3I9J21pZGRsZSc+zrM8L3RleHQ+CiAgICAKICAgIDwhLS0gTGVmdCBzaWRlIC0tPgogICAgPHRleHQgeD0nOTAnIHk9JzEwNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNScgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzAyODRjNycgdGV4dC1hbmNob3I9J21pZGRsZSc+NjDCsDwvdGV4dD4KICAgIDx0ZXh0IHg9JzkwJyB5PScxMzgnIGZvbnQtZmFtaWx5PSdzeXN0ZW0tdWksIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyNlYTU4MGMnIHRleHQtYW5jaG9yPSdtaWRkbGUnPs6yPC90ZXh0PgogICAgCiAgICA8IS0tIFJpZ2h0IHNpZGU6IG1vdmVkIGRvd24gdG8gYmUgY2xlYXJseSBiZWxvdyB0aGUgZGFzaGVkIGxpbmUgLS0+CiAgICA8dGV4dCB4PScyMTAnIHk9JzEzOCcgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNScgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzAyODRjNycgdGV4dC1hbmNob3I9J21pZGRsZSc+ODDCsDwvdGV4dD4KICAgIAo8L3N2Zz4=",
           "options": [
             "\\\\(20^\\\\circ\\\\) (Angles at a point)",

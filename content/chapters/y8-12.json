@@ -637,148 +637,7 @@
           "difficulty": "easy",
           "stem": "In the diagram below, which figure is congruent to Figure U?",
           "figure": {
-            "geometry": {
-              "width": 280,
-              "showPointLabels": false,
-              "points": {
-                "A1": [
-                  0,
-                  0
-                ],
-                "B1": [
-                  4,
-                  0
-                ],
-                "C1": [
-                  4,
-                  2
-                ],
-                "D1": [
-                  0,
-                  2
-                ],
-                "A2": [
-                  5.5,
-                  0
-                ],
-                "B2": [
-                  7.5,
-                  0
-                ],
-                "C2": [
-                  7.5,
-                  4
-                ],
-                "D2": [
-                  5.5,
-                  4
-                ],
-                "A3": [
-                  9,
-                  0
-                ],
-                "B3": [
-                  13,
-                  0
-                ],
-                "C3": [
-                  13,
-                  2.5
-                ],
-                "D3": [
-                  9,
-                  2.5
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A1",
-                  "to": "B1"
-                },
-                {
-                  "from": "B1",
-                  "to": "C1"
-                },
-                {
-                  "from": "C1",
-                  "to": "D1"
-                },
-                {
-                  "from": "D1",
-                  "to": "A1"
-                },
-                {
-                  "from": "A1",
-                  "to": "C1"
-                },
-                {
-                  "from": "A2",
-                  "to": "B2"
-                },
-                {
-                  "from": "B2",
-                  "to": "C2"
-                },
-                {
-                  "from": "C2",
-                  "to": "D2"
-                },
-                {
-                  "from": "D2",
-                  "to": "A2"
-                },
-                {
-                  "from": "A2",
-                  "to": "C2"
-                },
-                {
-                  "from": "A3",
-                  "to": "B3"
-                },
-                {
-                  "from": "B3",
-                  "to": "C3"
-                },
-                {
-                  "from": "C3",
-                  "to": "D3"
-                },
-                {
-                  "from": "D3",
-                  "to": "A3"
-                },
-                {
-                  "from": "A3",
-                  "to": "C3"
-                }
-              ],
-              "freeLabels": [
-                {
-                  "point": [
-                    2,
-                    -0.5
-                  ],
-                  "text": "Figure U",
-                  "italic": false
-                },
-                {
-                  "point": [
-                    6.5,
-                    -0.5
-                  ],
-                  "text": "Figure V",
-                  "italic": false
-                },
-                {
-                  "point": [
-                    11,
-                    -0.5
-                  ],
-                  "text": "Figure W",
-                  "italic": false
-                }
-              ]
-            }
+            "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 200' width='520' height='200' font-family='sans-serif'>\n  <!-- Background -->\n  <rect width='520' height='200' fill='#f8fafc' rx='10'/>\n\n  <!-- ===== Figure U: 4×2 horizontal rectangle ===== -->\n  <rect x='30' y='50' width='120' height='60' fill='#eff6ff' stroke='#2563eb' stroke-width='2.5' rx='2'/>\n  <!-- diagonal: top-left to bottom-right -->\n  <line x1='30' y1='50' x2='150' y2='110' stroke='#2563eb' stroke-width='2' stroke-dasharray='5,3'/>\n  <!-- width label -->\n  <line x1='30' y1='125' x2='150' y2='125' stroke='#2563eb' stroke-width='1.5' marker-start='url(#arrowBlue)' marker-end='url(#arrowBlue)'/>\n  <text x='90' y='140' text-anchor='middle' fill='#2563eb' font-size='13' font-weight='bold'>4 cm</text>\n  <!-- height label -->\n  <line x1='15' y1='50' x2='15' y2='110' stroke='#2563eb' stroke-width='1.5'/>\n  <text x='10' y='84' text-anchor='middle' fill='#2563eb' font-size='13' font-weight='bold' transform='rotate(-90,10,84)'>2 cm</text>\n  <!-- Figure label -->\n  <text x='90' y='158' text-anchor='middle' fill='#1e40af' font-size='14' font-weight='bold'>Figure U</text>\n  <!-- Right angle marker -->\n  <rect x='130' y='50' width='10' height='10' fill='none' stroke='#2563eb' stroke-width='1.5'/>\n\n  <!-- ===== Figure V: 2×4 vertical rectangle ===== -->\n  <rect x='210' y='20' width='60' height='120' fill='#f0fdf4' stroke='#16a34a' stroke-width='2.5' rx='2'/>\n  <!-- diagonal: top-left to bottom-right -->\n  <line x1='210' y1='20' x2='270' y2='140' stroke='#16a34a' stroke-width='2' stroke-dasharray='5,3'/>\n  <!-- width label -->\n  <line x1='210' y1='155' x2='270' y2='155' stroke='#16a34a' stroke-width='1.5'/>\n  <text x='240' y='170' text-anchor='middle' fill='#16a34a' font-size='13' font-weight='bold'>2 cm</text>\n  <!-- height label -->\n  <line x1='195' y1='20' x2='195' y2='140' stroke='#16a34a' stroke-width='1.5'/>\n  <text x='190' y='84' text-anchor='middle' fill='#16a34a' font-size='13' font-weight='bold' transform='rotate(-90,190,80)'>4 cm</text>\n  <!-- Figure label -->\n  <text x='240' y='188' text-anchor='middle' fill='#15803d' font-size='14' font-weight='bold'>Figure V</text>\n  <!-- Congruent badge -->\n  <text x='240' y='14' text-anchor='middle' fill='#15803d' font-size='12' font-weight='bold'>✓ same sides</text>\n  <!-- Right angle marker -->\n  <rect x='250' y='20' width='10' height='10' fill='none' stroke='#16a34a' stroke-width='1.5'/>\n\n  <!-- ===== Figure W: 5×2.5 rectangle ===== -->\n  <rect x='350' y='55' width='140' height='70' fill='#fff1f2' stroke='#dc2626' stroke-width='2.5' rx='2'/>\n  <!-- diagonal: top-left to bottom-right -->\n  <line x1='350' y1='55' x2='490' y2='125' stroke='#dc2626' stroke-width='2' stroke-dasharray='5,3'/>\n  <!-- width label -->\n  <line x1='350' y1='140' x2='490' y2='140' stroke='#dc2626' stroke-width='1.5'/>\n  <text x='420' y='155' text-anchor='middle' fill='#dc2626' font-size='13' font-weight='bold'>5 cm</text>\n  <!-- height label -->\n  <line x1='335' y1='55' x2='335' y2='125' stroke='#dc2626' stroke-width='1.5'/>\n  <text x='330' y='90' text-anchor='middle' fill='#dc2626' font-size='13' font-weight='bold' transform='rotate(-90,330,90)'>2.5 cm</text>\n  <!-- Figure label -->\n  <text x='420' y='170' text-anchor='middle' fill='#b91c1c' font-size='14' font-weight='bold'>Figure W</text>\n  <!-- Different badge -->\n  <text x='420' y='47' text-anchor='middle' fill='#b91c1c' font-size='12' font-weight='bold'>✗ different size</text>\n  <!-- Right angle marker -->\n  <rect x='470' y='55' width='10' height='10' fill='none' stroke='#dc2626' stroke-width='1.5'/>\n</svg>"
           },
           "options": [
             "Figure V",
@@ -787,168 +646,33 @@
             "None of the above"
           ],
           "answer": 0,
-          "hint": "Check the dimensions (width and height) of the rectangles to see if they are the same.",
+          "hint": "Look at the dimensions (width and height) of each rectangle. Two shapes are congruent if they have exactly the same side lengths — even if one is rotated.",
           "solution": "1. Figure U is a horizontal \\(4 \\times 2\\) rectangle with a diagonal.\n2. Figure V is a vertical \\(2 \\times 4\\) rectangle with a diagonal. It is a \\(90^\\circ\\) rotated version of Figure U, meaning it is congruent.\n3. Figure W is a larger rectangle of size \\(5 \\times 2.5\\), so it is not congruent.\nTherefore, Figure V is congruent to Figure U.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Congruence of figures in the plane: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\text{Dimensions: } 2 \\times 4 \\implies \\text{Congruent to } 4 \\times 2 \\text{ under rotation}\\)",
+              "explain": "Read Figure U. It is a horizontal rectangle with a diagonal drawn from one corner to another.",
+              "work": "\\(\\text{Figure U dimensions: width} = 4\\text{ cm}, \\text{ height} = 2\\text{ cm}\\)",
               "figure": {
-                "geometry": {
-                  "width": 280,
-                  "showPointLabels": false,
-                  "points": {
-                    "A1": [
-                      0,
-                      0
-                    ],
-                    "B1": [
-                      4,
-                      0
-                    ],
-                    "C1": [
-                      4,
-                      2
-                    ],
-                    "D1": [
-                      0,
-                      2
-                    ],
-                    "A2": [
-                      5.5,
-                      0
-                    ],
-                    "B2": [
-                      7.5,
-                      0
-                    ],
-                    "C2": [
-                      7.5,
-                      4
-                    ],
-                    "D2": [
-                      5.5,
-                      4
-                    ],
-                    "A3": [
-                      9,
-                      0
-                    ],
-                    "B3": [
-                      13,
-                      0
-                    ],
-                    "C3": [
-                      13,
-                      2.5
-                    ],
-                    "D3": [
-                      9,
-                      2.5
-                    ]
-                  },
-                  "segments": [
-                    {
-                      "from": "A1",
-                      "to": "B1"
-                    },
-                    {
-                      "from": "B1",
-                      "to": "C1"
-                    },
-                    {
-                      "from": "C1",
-                      "to": "D1"
-                    },
-                    {
-                      "from": "D1",
-                      "to": "A1"
-                    },
-                    {
-                      "from": "A1",
-                      "to": "C1"
-                    },
-                    {
-                      "from": "A2",
-                      "to": "B2"
-                    },
-                    {
-                      "from": "B2",
-                      "to": "C2"
-                    },
-                    {
-                      "from": "C2",
-                      "to": "D2"
-                    },
-                    {
-                      "from": "D2",
-                      "to": "A2"
-                    },
-                    {
-                      "from": "A2",
-                      "to": "C2"
-                    },
-                    {
-                      "from": "A3",
-                      "to": "B3"
-                    },
-                    {
-                      "from": "B3",
-                      "to": "C3"
-                    },
-                    {
-                      "from": "C3",
-                      "to": "D3"
-                    },
-                    {
-                      "from": "D3",
-                      "to": "A3"
-                    },
-                    {
-                      "from": "A3",
-                      "to": "C3"
-                    }
-                  ],
-                  "freeLabels": [
-                    {
-                      "point": [
-                        2,
-                        -0.5
-                      ],
-                      "text": "Figure U",
-                      "italic": false
-                    },
-                    {
-                      "point": [
-                        6.5,
-                        -0.5
-                      ],
-                      "text": "Figure V",
-                      "italic": false
-                    },
-                    {
-                      "point": [
-                        11,
-                        -0.5
-                      ],
-                      "text": "Figure W",
-                      "italic": false
-                    }
-                  ]
-                }
+                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140' width='220' height='140' font-family='sans-serif'>\n  <rect width='220' height='140' fill='#eff6ff' rx='8'/>\n  <rect x='30' y='25' width='120' height='60' fill='#dbeafe' stroke='#2563eb' stroke-width='2.5' rx='2'/>\n  <line x1='30' y1='25' x2='150' y2='85' stroke='#2563eb' stroke-width='2' stroke-dasharray='5,3'/>\n  <rect x='130' y='25' width='10' height='10' fill='none' stroke='#2563eb' stroke-width='1.5'/>\n  <line x1='30' y1='100' x2='150' y2='100' stroke='#2563eb' stroke-width='1.5' marker-end='url(#a)'/>\n  <text x='90' y='115' text-anchor='middle' fill='#1e40af' font-size='14' font-weight='bold'>width = 4 cm</text>\n  <text x='10' y='60' text-anchor='middle' fill='#1e40af' font-size='14' font-weight='bold' transform='rotate(-90,12,58)'>height = 2 cm</text>\n  <text x='90' y='132' text-anchor='middle' fill='#1e40af' font-size='13' font-weight='bold'>Figure U</text>\n</svg>"
               }
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(\\text{Dimensions: } 5 \\times 2.5 \\implies \\text{Not congruent}\\)"
+              "explain": "Compare Figure V with Figure U. Figure V is a vertical rectangle — it looks different, but measure its sides.",
+              "work": "\\(\\text{Figure V dimensions: width} = 2\\text{ cm}, \\text{ height} = 4\\text{ cm}\\)\n\nSame side lengths as Figure U, just rotated 90°. → \\(\\textbf{Congruent} \\cong\\)",
+              "figure": {
+                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 180' width='360' height='180' font-family='sans-serif'>\n  <rect width='360' height='180' fill='#f8fafc' rx='8'/>\n  <!-- Figure U -->\n  <rect x='20' y='40' width='100' height='50' fill='#dbeafe' stroke='#2563eb' stroke-width='2' rx='2'/>\n  <line x1='20' y1='40' x2='120' y2='90' stroke='#2563eb' stroke-width='1.5' stroke-dasharray='4,3'/>\n  <text x='70' y='110' text-anchor='middle' fill='#1e40af' font-size='12' font-weight='bold'>Figure U</text>\n  <text x='70' y='124' text-anchor='middle' fill='#2563eb' font-size='11'>4 × 2</text>\n  <!-- VS -->\n  <text x='165' y='80' text-anchor='middle' fill='#64748b' font-size='22' font-weight='bold'>vs</text>\n  <!-- Figure V (rotated) -->\n  <rect x='210' y='20' width='50' height='100' fill='#dcfce7' stroke='#16a34a' stroke-width='2' rx='2'/>\n  <line x1='210' y1='20' x2='260' y2='120' stroke='#16a34a' stroke-width='1.5' stroke-dasharray='4,3'/>\n  <text x='235' y='138' text-anchor='middle' fill='#15803d' font-size='12' font-weight='bold'>Figure V</text>\n  <text x='235' y='152' text-anchor='middle' fill='#16a34a' font-size='11'>2 × 4</text>\n  <!-- Congruent arrow -->\n  <text x='285' y='78' fill='#15803d' font-size='28' font-weight='bold'>≅</text>\n  <text x='308' y='95' fill='#15803d' font-size='11' font-weight='bold'>Same</text>\n  <text x='308' y='108' fill='#15803d' font-size='11' font-weight='bold'>sides!</text>\n  <!-- rotation note -->\n  <text x='165' y='168' text-anchor='middle' fill='#15803d' font-size='12'>90° rotation — congruent ✓</text>\n</svg>"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "Figure V"
+              "explain": "Compare Figure W with Figure U. Figure W looks similar but check its actual dimensions carefully.",
+              "work": "\\(\\text{Figure W dimensions: width} = 5\\text{ cm}, \\text{ height} = 2.5\\text{ cm}\\)\n\nDifferent side lengths! → \\(\\textbf{Not congruent}\\)",
+              "figure": {
+                "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 380 180' width='380' height='180' font-family='sans-serif'>\n  <rect width='380' height='180' fill='#f8fafc' rx='8'/>\n  <!-- Figure U -->\n  <rect x='20' y='50' width='100' height='50' fill='#dbeafe' stroke='#2563eb' stroke-width='2' rx='2'/>\n  <line x1='20' y1='50' x2='120' y2='100' stroke='#2563eb' stroke-width='1.5' stroke-dasharray='4,3'/>\n  <text x='70' y='120' text-anchor='middle' fill='#1e40af' font-size='12' font-weight='bold'>Figure U</text>\n  <text x='70' y='134' text-anchor='middle' fill='#2563eb' font-size='11'>4 × 2</text>\n  <!-- VS -->\n  <text x='175' y='88' text-anchor='middle' fill='#64748b' font-size='22' font-weight='bold'>vs</text>\n  <!-- Figure W (bigger) -->\n  <rect x='215' y='45' width='130' height='65' fill='#fee2e2' stroke='#dc2626' stroke-width='2' rx='2'/>\n  <line x1='215' y1='45' x2='345' y2='110' stroke='#dc2626' stroke-width='1.5' stroke-dasharray='4,3'/>\n  <text x='280' y='128' text-anchor='middle' fill='#b91c1c' font-size='12' font-weight='bold'>Figure W</text>\n  <text x='280' y='142' text-anchor='middle' fill='#dc2626' font-size='11'>5 × 2.5</text>\n  <!-- Not equal -->\n  <text x='355' y='88' fill='#dc2626' font-size='28' font-weight='bold'>≠</text>\n  <!-- explanation -->\n  <text x='190' y='168' text-anchor='middle' fill='#dc2626' font-size='12'>Different dimensions — NOT congruent ✗</text>\n</svg>"
+              }
             },
             {
-              "explain": "Final answer: Figure V. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "Figure V"
+              "explain": "Conclusion: Only Figure V has the same side lengths (4 cm and 2 cm) as Figure U.",
+              "work": "\\(\\text{Figure V} \\cong \\text{Figure U}\\quad \\checkmark\\)"
             }
           ],
           "xp": 1

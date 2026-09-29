@@ -9014,7 +9014,7 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( x^2 - 1 \\)",
           "options": [
-            "\\((x + 1)(x - 1)\\)",
+            "\\(x(x - 1)\\)",
             "\\((x - 1)(x - 1)\\)",
             "\\((x + 1)(x + 1)\\)",
             "\\((x - 1)(x + 1)\\)"
@@ -14219,16 +14219,16 @@
           "id": "y11a-1B-q6c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(a^2 + -20*a + \\dots = (a + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(a^2 - 20a + \\dots = (a + \\dots)^2\\)",
           "options": [
             "10, 100",
             "200, 10",
             "100, -10",
             "100, 10"
           ],
-          "answer": 3,
+          "answer": 2,
           "hint": "Recall that \\((a+b)^2 = a^2 + 2ab + b^2\\).",
-          "solution": "The missing terms are 100, 10.",
+          "solution": "The missing terms are 100, -10.",
           "steps": [
             {
               "explain": "For a perfect square trinomial \\((a + b)^2 = a^2 + 2ba + b^2\\)",
@@ -14254,16 +14254,16 @@
           "id": "y11a-1B-q6d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(b^2 + -100*b + \\dots = (b + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(b^2 - 100b + \\dots = (b + \\dots)^2\\)",
           "options": [
             "5000, 50",
             "2500, 50",
             "2500, -50",
             "50, 2500"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "Recall that \\((a+b)^2 = a^2 + 2ab + b^2\\).",
-          "solution": "The missing terms are 2500, 50.",
+          "solution": "The missing terms are 2500, -50.",
           "steps": [
             {
               "explain": "For a perfect square trinomial \\((b + c)^2 = b^2 + 2cb + c^2\\)",
@@ -14331,9 +14331,9 @@
             "12.25, 3.5",
             "12.25, -3.5"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "Recall that \\((a+b)^2 = a^2 + 2ab + b^2\\).",
-          "solution": "The missing terms are 12.25, 3.5.",
+          "solution": "The missing terms are 12.25, -3.5.",
           "steps": [
             {
               "explain": "For a perfect square trinomial \\((t + e)^2 = t^2 + 2et + e^2\\)",
@@ -15951,7 +15951,7 @@
           "id": "y11a-1B-q8w",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factor the following expression completely:\n\n\\(- r^{2} + left(p + q\right)^{2}\\)",
+          "stem": "Factor the following expression completely:\n\n\\(- r^{2} + (p + q)^{2}\\)",
           "options": [
             "\\\\(\\left(p - q + r\\right) \\left(p + q - r\\right)\\\\)",
             "\\\\(\\left(p + q + r\\right)^{2}\\\\)",
@@ -15960,7 +15960,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(p + q - r\right) left(p + q + r\right)\\).",
+          "solution": "The completely factored form is \\((p + q - r)(p + q + r)\\).",
           "steps": [
             {
               "explain": "Recognize this as a difference of squares.",

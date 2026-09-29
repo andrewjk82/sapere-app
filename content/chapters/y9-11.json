@@ -1428,16 +1428,20 @@
           "solution": "We have \\(PQ = \\sqrt{40}\\), \\(PR = \\sqrt{20}\\), and \\(QR = \\sqrt{20}\\):\n1. Since \\(PR = QR\\), the triangle is isosceles.\n2. Since \\(PR^2 + QR^2 = 20 + 20 = 40 = PQ^2\\), it satisfies Pythagoras' theorem and is right-angled at \\(R\\).\nTherefore, the triangle is a right-angled isosceles triangle.",
           "steps": [
             {
-              "explain": "Summarise the three side lengths calculated in the previous parts.",
-              "work": "\\(PQ = 2\\sqrt{10}\\)<br>\\(PR = 2\\sqrt{5}\\)<br>\\(QR = 2\\sqrt{5}\\)"
+              "explain": "Summarise the three side lengths squared (it is easier to work with the squared lengths for Pythagoras).",
+              "work": "\\(PQ^2 = 40\\)<br>\\(PR^2 = 20\\)<br>\\(QR^2 = 20\\)"
             },
             {
               "explain": "Compare the lengths. Notice that two of the sides are exactly equal.",
-              "work": "\\(PR = QR = 2\\sqrt{5}\\)"
+              "work": "\\(PR^2 = QR^2 = 20 \\implies PR = QR\\)<br>Therefore, it is an isosceles triangle."
             },
             {
-              "explain": "State the mathematical name for a triangle with two equal sides.",
-              "work": "\\(\\text{Isosceles triangle}\\)"
+              "explain": "Check if the triangle satisfies Pythagoras theorem to see if it is also a right-angled triangle.",
+              "work": "\\(PR^2 + QR^2 = 20 + 20 = 40\\)<br>\\(PQ^2 = 40\\)"
+            },
+            {
+              "explain": "Since the sum of the squares of the two shorter sides equals the square of the longest side, the triangle is right-angled.",
+              "work": "\\(PR^2 + QR^2 = PQ^2\\)<br>Therefore, it is a right-angled isosceles triangle."
             }
           ],
           "timeLimit": 90,
@@ -8205,63 +8209,48 @@
               "width": 360,
               "height": 280,
               "boundingbox": [
-                -6,
-                6,
-                6,
-                -6
+                -2,
+                12,
+                5,
+                -5
               ],
-              "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+              "script": "board.suspendUpdate(); board.create('arrow', [[-2,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-5],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.8, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 11.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -2, 5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('point', [3, 9], {name:'(3, 9)', color:'#10b981', size:3, label:{offset:[-40, 15]}}); board.create('segment', [[3,0], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('segment', [[0,9], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('text', [1.5, 4, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
             }
           },
           "options": [
-            "Yes",
-            "No"
+            "\\(9\\)",
+            "\\(12\\)",
+            "\\(3\\)",
+            "\\(-9\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Substitute the x-value and evaluate y.",
           "solution": "Substitute \\(x = 3\\) into the equation:\n\\(y = 4(3) - 3 = 9\\).",
           "steps": [
             {
-              "explain": "Substitute the $x$-coordinate of the point $(0, 0)$ into the equation.",
-              "work": "x = 0",
+              "explain": "Substitute the given \\(x\\)-coordinate (\\(x=3\\)) into the equation of the line \\(y = 4x - 3\\).",
+              "work": "y = 4(3) - 3",
               "figure": {
                 "jsxGraph": {
                   "width": 360,
                   "height": 280,
                   "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
+                    -2,
+                    12,
+                    5,
+                    -5
                   ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-2,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-5],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.8, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 11.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -2, 5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('point', [3, 9], {name:'(3, 9)', color:'#10b981', size:3, label:{offset:[-40, 15]}}); board.create('segment', [[3,0], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('segment', [[0,9], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('text', [1.5, 4, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
                 }
               }
             },
             {
-              "explain": "Calculate the corresponding $y$-value.",
-              "work": "y = 0"
+              "explain": "Calculate the value of \\(y\\).",
+              "work": "y = 12 - 3\\ny = 9"
             },
             {
-              "explain": "Since the calculated $y$-value does not match the $y$-coordinate of the given point $(0, 0)$, it does not lie on the line.",
-              "work": "0 \\neq 0 \\implies \\text{No}",
-              "figure": {
-                "jsxGraph": {
-                  "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
-                  ],
-                  "width": 360,
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-                  "height": 280
-                }
-              }
-            },
-            {
-              "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(9\\)"
+              "explain": "State the final \\(y\\)-coordinate.",
+              "work": "\\(\\text{The } y\\text{-coordinate is } 9\\)"
             }
           ],
           "timeLimit": 30,
@@ -8334,63 +8323,48 @@
               "width": 360,
               "height": 280,
               "boundingbox": [
-                -6,
-                6,
-                6,
-                -6
+                -4,
+                3,
+                3,
+                -14
               ],
-              "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[3,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-14],[0,3]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [2.5, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 2.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -4, 3], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('point', [-2, -11], {name:'(-2, -11)', color:'#10b981', size:3, label:{offset:[10, -10]}}); board.create('segment', [[-2,0], [-2,-11]], {strokeColor:'#10b981', dash:2}); board.create('segment', [[0,-11], [-2,-11]], {strokeColor:'#10b981', dash:2}); board.unsuspendUpdate();"
             }
           },
           "options": [
-            "Yes",
-            "No"
+            "\\(-11\\)",
+            "\\(-5\\)",
+            "\\(-8\\)",
+            "\\(11\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Substitute the x-value and evaluate y.",
           "solution": "Substitute \\(x = -2\\) into the equation:\n\\(y = 4(-2) - 3 = -11\\).",
           "steps": [
             {
-              "explain": "Substitute the $x$-coordinate of the point $(0, 0)$ into the equation.",
-              "work": "x = 0",
+              "explain": "Substitute the given \\(x\\)-coordinate (\\(x=-2\\)) into the equation of the line \\(y = 4x - 3\\).",
+              "work": "y = 4(-2) - 3",
               "figure": {
                 "jsxGraph": {
                   "width": 360,
                   "height": 280,
                   "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
+                    -4,
+                    3,
+                    3,
+                    -14
                   ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[3,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-14],[0,3]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [2.5, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 2.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -4, 3], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('point', [-2, -11], {name:'(-2, -11)', color:'#10b981', size:3, label:{offset:[10, -10]}}); board.create('segment', [[-2,0], [-2,-11]], {strokeColor:'#10b981', dash:2}); board.create('segment', [[0,-11], [-2,-11]], {strokeColor:'#10b981', dash:2}); board.unsuspendUpdate();"
                 }
               }
             },
             {
-              "explain": "Calculate the corresponding $y$-value.",
-              "work": "y = 0"
+              "explain": "Calculate the value of \\(y\\).",
+              "work": "y = -8 - 3\\ny = -11"
             },
             {
-              "explain": "Since the calculated $y$-value does not match the $y$-coordinate of the given point $(0, 0)$, it does not lie on the line.",
-              "work": "0 \\neq 0 \\implies \\text{No}",
-              "figure": {
-                "jsxGraph": {
-                  "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
-                  ],
-                  "width": 360,
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-                  "height": 280
-                }
-              }
-            },
-            {
-              "explain": "Final answer: -11. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(-11\\)"
+              "explain": "State the final \\(y\\)-coordinate.",
+              "work": "\\(\\text{The } y\\text{-coordinate is } -11\\)"
             }
           ],
           "timeLimit": 30,

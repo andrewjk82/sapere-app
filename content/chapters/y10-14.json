@@ -3615,33 +3615,33 @@
         },
         {
           "id": "y10-14b-q5b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify the expression (where \\(x, y, z > 0\\) and not equal to \\(1\\)):<br><br>\\((\\log_{x} y)(\\log_{y} z)(\\log_{z} x)\\)",
-          "answer": "1",
+          "answer": 0,
           "hint": "Use the change of base formula to convert all terms to the same base (e.g., base \\(x\\)).",
-          "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Change of base: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\log_{y} z = \\frac{\\log_{x} z}{\\log_{x} y}\\)"
+              "explain": "Use the **change of base** rule to express all logarithms with the same base. Let's convert everything to base \\(x\\).",
+              "work": "\\\\(log_y z = \\frac{log_x z}{log_x y}\\\\) and \\\\(log_z x = \\frac{log_x x}{log_x z} = \\frac{1}{log_x z}\\\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(\\log_{z} x = \\frac{\\log_{x} x}{\\log_{x} z} = \\frac{1}{\\log_{x} z}\\)"
+              "explain": "Substitute these into the original expression.",
+              "work": "\\\\(log_x y \\times \\frac{log_x z}{log_x y} \\times \\frac{1}{log_x z}\\\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\((\\log_{x} y) \\times \\left(\\frac{\\log_{x} z}{\\log_{x} y}\\right) \\times \\left(\\frac{1}{\\log_{x} z}\\right)\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(1\\)"
+              "explain": "Cancel out the common terms in the numerator and denominator.",
+              "work": "\\\\(1\\\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
-          "xp": 1
+          "xp": 1,
+          "options": [
+            "\\\\( 1 \\\\)",
+            "\\\\( 0 \\\\)",
+            "\\\\( xyz \\\\)",
+            "\\\\( \\\\log_x(yz) \\\\)"
+          ]
         },
         {
           "id": "y10-14b-q6a",

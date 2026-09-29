@@ -951,30 +951,36 @@
           "difficulty": "medium",
           "stem": "A function \\(y = g(x)\\) is a semi-circle centred at \\((0,0)\\) with radius 3. Sketch the graph of \\(y - 2 = g(x)\\).",
           "answer": "Semi-circle shifted up by 2.\nNew centre: (0, 2).",
-          "options": [
-            "\\((0, 2)\\)",
-            "\\((0, -2)\\)",
-            "\\((2, 0)\\)",
-            "\\((-2, 0)\\)"
-          ],
           "hint": "Rearrange the equation to make \\(y\\) the subject.",
           "solution": "Semi-circle shifted up by 2.\nNew centre: (0, 2).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = g(x) + 2\\)"
+              "explain": "First, make \\(y\\) the subject of the equation so we can see the transformation clearly.",
+              "work": "y - 2 = g(x) \\implies y = g(x) + 2",
+              "figure": {
+                "svg": "fig:af4c2fc66e"
+              }
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(Centre: (0, 0) \\to (0, 2)\\)"
+              "explain": "Identify the transformation. Adding a constant \\(+2\\) to the entire function \\(g(x)\\) translates the graph **vertically upwards** by 2 units.",
+              "work": "y = g(x) + k \\text{ is a vertical shift.}",
+              "figure": {
+                "svg": "fig:74391630f1"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Semi-circle shifted up by 2.\nNew centre: (0, 2)."
+              "explain": "Find the new centre. The original centre was \\((0, 0)\\). Shifting it up by 2 units changes the \\(y\\)-coordinate.",
+              "work": "(0,\\,0) \\longrightarrow (0,\\,2)",
+              "figure": {
+                "svg": "fig:76876b43c7"
+              }
             },
             {
-              "explain": "Final answer: Semi-circle shifted up by 2.\nNew centre: (0, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Semi-circle shifted up by 2.\nNew centre: (0, 2)."
+              "explain": "Sketch the graph. Draw the original semi-circle (dashed) and the new semi-circle (solid) shifted up by 2.",
+              "work": "\\text{New centre: } (0, 2)",
+              "figure": {
+                "svg": "fig:de70aa83ef"
+              }
             }
           ],
           "manual": true,
@@ -987,30 +993,36 @@
           "difficulty": "medium",
           "stem": "A function \\(y = g(x)\\) is a semi-circle centred at \\((0,0)\\) with radius 3. Sketch the graph of \\(y = g(x - 5)\\).",
           "answer": "Semi-circle shifted right by 5.\nNew centre: (5, 0).",
-          "options": [
-            "\\((5, 0)\\)",
-            "\\((-5, 0)\\)",
-            "\\((0, 5)\\)",
-            "\\((0, -5)\\)"
-          ],
           "hint": "Replacing \\(x\\) with \\(x-5\\) shifts the graph to the right.",
           "solution": "Semi-circle shifted right by 5.\nNew centre: (5, 0).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Shift right 5 units."
+              "explain": "Observe the new function equation \\(y = g(x - 5)\\). Here, \\(x\\) is replaced by \\((x - 5)\\).",
+              "work": "y = g(x - 5)",
+              "figure": {
+                "svg": "fig:6efba845a6"
+              }
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(Centre: (0, 0) \\to (5, 0)\\)"
+              "explain": "Identify the transformation. Replacing \\(x\\) with \\((x - h)\\) translates the graph **horizontally**. Since \\(h = 5\\), it shifts **right** by 5 units.",
+              "work": "y = g(x - h) \\implies \\text{shift right by } h.",
+              "figure": {
+                "svg": "fig:291539424c"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Semi-circle shifted right by 5.\nNew centre: (5, 0)."
+              "explain": "Find the new centre. The original centre was \\((0, 0)\\). Shifting it right by 5 units changes the \\(x\\)-coordinate.",
+              "work": "(0,\\,0) \\longrightarrow (5,\\,0)",
+              "figure": {
+                "svg": "fig:382377880b"
+              }
             },
             {
-              "explain": "Final answer: Semi-circle shifted right by 5.\nNew centre: (5, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Semi-circle shifted right by 5.\nNew centre: (5, 0)."
+              "explain": "Sketch the graph. Draw the new semi-circle shifted right by 5 units along the x-axis.",
+              "work": "\\text{New centre: } (5, 0)",
+              "figure": {
+                "svg": "fig:80ca249fad"
+              }
             }
           ],
           "manual": true,
@@ -8278,39 +8290,57 @@
         },
         {
           "id": "y11a-5C-new-3",
-          "type": "review",
+          "type": "multipart",
           "difficulty": "easy",
-          "stem": "Consider the function \\(f(x) = x^4 - 3x^2 + 5\\).\n**a)** Simplify \\(f(-x)\\).\n**b)** Hence, show algebraically that \\(f(x)\\) is an even function.",
-          "answer": "See solution steps.",
-          "options": [
-            "\\(f(-x) = x^4 - 3x^2 + 5\\); Even",
-            "\\(f(-x) = -x^4 + 3x^2 - 5\\); Odd",
-            "\\(f(-x) = x^4 + 3x^2 + 5\\); Neither",
-            "\\(f(-x) = -x^4 - 3x^2 + 5\\); Neither"
-          ],
-          "hint": "Substitute \\(-x\\) into the function and simplify. Even functions satisfy \\(f(-x) = f(x)\\).",
-          "solution": "See solution steps.",
-          "steps": [
+          "stem": "Consider the function \\\\(f(x) = x^4 - 3x^2 + 5\\\\).",
+          "parts": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(f(-x) = (-x)^4 - 3(-x)^2 + 5\\)"
+              "id": "y11a-5C-new-3a",
+              "type": "mc",
+              "stem": "**(a)** Simplify \\\\(f(-x)\\\\).",
+              "options": [
+                "\\\\(x^4 - 3x^2 + 5\\\\)",
+                "\\\\(-x^4 + 3x^2 - 5\\\\)",
+                "\\\\(x^4 + 3x^2 + 5\\\\)",
+                "\\\\(-x^4 - 3x^2 + 5\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Substitute \\\\(-x\\\\) into the function in place of \\\\(x\\\\).",
+                  "work": "\\\\(f(-x) = (-x)^4 - 3(-x)^2 + 5\\\\)"
+                },
+                {
+                  "explain": "Simplify the expression. Since the powers are even, the negative signs disappear (i.e. \\\\((-x)^2 = x^2\\\\) and \\\\((-x)^4 = x^4\\\\)).",
+                  "work": "\\\\(f(-x) = x^4 - 3x^2 + 5\\\\)"
+                }
+              ],
+              "xp": 1
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(= x^4 - 3x^2 + 5\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Since f(-x) = x^4 - 3x^2 + 5 = f(x), the function is even."
-            },
-            {
-              "explain": "Final answer: See solution steps.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "See solution steps."
+              "id": "y11a-5C-new-3b",
+              "type": "mc",
+              "stem": "**(b)** Hence, determine the symmetry of the function \\\\(f(x)\\\\).",
+              "options": [
+                "Even",
+                "Odd",
+                "Neither even nor odd",
+                "Both even and odd"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Compare the simplified expression for \\\\(f(-x)\\\\) with the original function \\\\(f(x)\\\\).",
+                  "work": "From part (a), \\\\(f(-x) = x^4 - 3x^2 + 5\\\\).<br>The original function is \\\\(f(x) = x^4 - 3x^2 + 5\\\\)."
+                },
+                {
+                  "explain": "Since \\\\(f(-x) = f(x)\\\\), the function is an even function (and has y-axis symmetry).",
+                  "work": "\\\\(f(-x) = f(x) \\implies \\text{Even function}\\\\)"
+                }
+              ],
+              "xp": 1
             }
-          ],
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 2
+          ]
         },
         {
           "id": "y11a-5C-new-4",
@@ -24480,96 +24510,105 @@
           "xp": 2
         },
         {
-          "id": "y11a-5i-q23a",
-          "type": "review",
+          "id": "y11a-5i-q23",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 - 9 & \\text{for } x < 3 \\\\ x - 3 & \\text{for } x \\ge 3 \\end{cases}\\)\nIs the curve continuous at \\(x = 3\\)?",
-          "answer": "0",
-          "hint": "Check if left limit and right limit are equal at \\(x = 3\\).",
-          "solution": "0",
-          "steps": [
+          "stem": "Consider the piecewise function:\n\\\\(f(x) = \\\\begin{cases} x^2 - 9 & \\\\text{for } x < 3 \\\\\\\\ x - 3 & \\\\text{for } x \\\\ge 3 \\\\end{cases}\\\\)",
+          "parts": [
             {
-              "explain": "State the condition for continuity at \\(x = 3\\).",
-              "work": "We must check if the left-hand limit, right-hand limit, and the function value at \\(x = 3\\) all match."
-            },
-            {
-              "explain": "Evaluate the left-hand limit at \\(x = 3\\).",
-              "work": "For \\(x < 3\\), the function is \\(f(x) = x^2 - 9\\).\n\nLeft-hand limit: \\( \\lim_{x \\to 3^-} (x^2 - 9) = 3^2 - 9 = 9 - 9 = 0 \\)."
-            },
-            {
-              "explain": "Evaluate the right-hand limit and function value at \\(x = 3\\).",
-              "work": "For \\(x \\ge 3\\), the function is \\(f(x) = x - 3\\).\n\nRight-hand limit: \\( \\lim_{x \\to 3^+} (x - 3) = 3 - 3 = 0 \\).\n\nFunction value: \\(f(3) = 3 - 3 = 0\\)."
-            },
-            {
-              "explain": "Compare the limits to determine continuity.",
-              "work": "Since the left-hand limit (\\(0\\)) equals the right-hand limit (\\(0\\)) and equals the function value (\\(0\\)), the curve seamlessly connects at \\(x = 3\\). \n\nTherefore, the curve is **continuous** at \\(x = 3\\).",
-              "figure": {
-                "jsxGraph": {
-                  "width": 400,
-                  "height": 400,
-                  "boundingbox": [
-                    -2,
-                    8,
-                    6,
-                    -10
-                  ],
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-10],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x) - 9; }, -4, 3], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return x - 3; }, 3, 8], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.unsuspendUpdate();"
+              "id": "y11a-5i-q23a",
+              "type": "mc",
+              "stem": "**(a)** Is the function continuous at \\\\(x = 3\\\\)?",
+              "options": [
+                "Yes — the left-hand and right-hand limits both equal \\\\(0\\\\), and \\\\(f(3) = 0\\\\)",
+                "No — the left-hand limit does not equal the right-hand limit",
+                "No — \\\\(f(3)\\\\) is undefined",
+                "Cannot be determined without more information"
+              ],
+              "answer": 0,
+              "hint": "Check if the left-hand limit, right-hand limit, and function value at \\\\(x = 3\\\\) all agree.",
+              "steps": [
+                {
+                  "explain": "A function is continuous at \\\\(x = 3\\\\) if: \\\\(\\\\lim_{x \\\\to 3^-} f(x) = \\\\lim_{x \\\\to 3^+} f(x) = f(3)\\\\).",
+                  "work": "\\\\(\\\\text{Check left, right limits and } f(3).\\\\)"
+                },
+                {
+                  "explain": "Evaluate the **left-hand limit** using \\\\(f(x) = x^2 - 9\\\\) (the piece for \\\\(x < 3\\\\)).",
+                  "work": "\\\\(\\\\lim_{x \\\\to 3^-}(x^2 - 9) = 3^2 - 9 = 0\\\\)"
+                },
+                {
+                  "explain": "Evaluate the **right-hand limit** and **function value** using \\\\(f(x) = x - 3\\\\) (the piece for \\\\(x \\\\ge 3\\\\)).",
+                  "work": "\\\\(\\\\lim_{x \\\\to 3^+}(x - 3) = 0 \\\\quad \\\\text{and} \\\\quad f(3) = 3 - 3 = 0\\\\)"
+                },
+                {
+                  "explain": "Since all three values match, the function is continuous at \\\\(x = 3\\\\).",
+                  "work": "\\\\(0 = 0 = 0 \\\\implies \\\\text{Continuous at } x = 3.\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 400,
+                      "height": 400,
+                      "boundingbox": [
+                        -2,
+                        8,
+                        6,
+                        -10
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-11],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x) - 9; }, -5, 3], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return x - 3; }, 3, 8], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('point', [3, 0], {size:4, fillColor:'#10b981', strokeColor:'#10b981', name:'(3, 0)', label:{offset:[8,8]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
                 }
-              }
+              ],
+              "xp": 1
+            },
+            {
+              "id": "y11a-5i-q23b",
+              "type": "mc",
+              "stem": "**(b)** What are the **domain** and **range** of \\\\(f(x)\\\\)?",
+              "options": [
+                "Domain: all real \\\\(x\\\\), Range: \\\\(y \\\\ge -9\\\\)",
+                "Domain: all real \\\\(x\\\\), Range: \\\\(y \\\\ge 0\\\\)",
+                "Domain: \\\\(x \\\\ge 3\\\\), Range: \\\\(y \\\\ge -9\\\\)",
+                "Domain: all real \\\\(x\\\\), Range: \\\\(-9 \\\\le y \\\\le 0\\\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the range of each piece separately, then take the union.",
+              "steps": [
+                {
+                  "explain": "The function is defined for **all** \\\\(x\\\\): piece 1 handles \\\\(x < 3\\\\), piece 2 handles \\\\(x \\\\ge 3\\\\). So **Domain: all real \\\\(x\\\\)**.",
+                  "work": "\\\\(x \\\\in \\\\mathbb{R}\\\\)"
+                },
+                {
+                  "explain": "For \\\\(x < 3\\\\): \\\\(y = x^2 - 9\\\\) is a parabola with vertex \\\\((0, -9)\\\\). As \\\\(x \\\\to -\\\\infty\\\\) or \\\\(x \\\\to 3^-\\\\), \\\\(y\\\\) ranges from \\\\(-9\\\\) to \\\\(+\\\\infty\\\\).",
+                  "work": "\\\\(\\\\text{Range of piece 1: } y \\\\in [-9, +\\\\infty)\\\\)"
+                },
+                {
+                  "explain": "For \\\\(x \\\\ge 3\\\\): \\\\(y = x - 3\\\\) starts at \\\\(y = 0\\\\) and increases.",
+                  "work": "\\\\(\\\\text{Range of piece 2: } y \\\\in [0, +\\\\infty)\\\\)"
+                },
+                {
+                  "explain": "The union of \\\\([-9, \\\\infty)\\\\) and \\\\([0, \\\\infty)\\\\) is simply \\\\([-9, \\\\infty)\\\\).",
+                  "work": "\\\\(\\\\therefore \\\\text{Range: } y \\\\ge -9\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 400,
+                      "height": 400,
+                      "boundingbox": [
+                        -3,
+                        8,
+                        6,
+                        -11
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-11],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x) - 9; }, -5, 3], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return x - 3; }, 3, 8], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('point', [3, 0], {size:4, fillColor:'#10b981', strokeColor:'#10b981', name:'(3, 0)', label:{offset:[8,8]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ],
+              "xp": 1
             }
           ],
-          "manual": true,
-          "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          },
-          "xp": 2
-        },
-        {
-          "id": "y11a-5i-q23b",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 - 9 & \\text{for } x < 3 \\\\ x - 3 & \\text{for } x \\ge 3 \\end{cases}\\)\nWhat are the domain and range of the function?",
-          "answer": "Domain: All real x, Range: y >= -9",
-          "hint": "Evaluate range of \\(x^2 - 9\\) on \\(x < 3\\) and range of \\(x - 3\\) on \\(x \\ge 3\\).",
-          "solution": "Domain: All real x, Range: y >= -9",
-          "steps": [
-            {
-              "explain": "Determine the domain of the piecewise function.",
-              "work": "The function is defined as \\(x^2 - 9\\) for all \\(x < 3\\) and as \\(x - 3\\) for all \\(x \\ge 3\\). Because every real number falls into one of these intervals, the function is defined everywhere.\n\n**Domain: All real x (\\(x \\in \\mathbb{R}\\))**."
-            },
-            {
-              "explain": "Determine the range of the left piece (\\(x < 3\\)).",
-              "work": "For \\(x < 3\\), the graph is \\(y = x^2 - 9\\). This is a parabola opening upwards with its vertex at \\((0, -9)\\).\n\nAs \\(x\\) ranges from \\(-\\infty\\) up to \\(3\\) (not inclusive), the \\(y\\)-values go from \\(+\\infty\\) down to the minimum at \\(-9\\), and then back up towards \\(0\\) (since \\(3^2 - 9 = 0\\)). \n\nSo, this piece covers all \\(y\\)-values in the interval \\([-9, \\infty)\\)."
-            },
-            {
-              "explain": "Determine the range of the right piece (\\(x \\ge 3\\)).",
-              "work": "For \\(x \\ge 3\\), the graph is a straight line \\(y = x - 3\\) with a positive slope.\n\nAs \\(x\\) increases from \\(3\\) to \\(+\\infty\\), the \\(y\\)-values increase steadily from \\(0\\) to \\(+\\infty\\). \n\nSo, this piece covers all \\(y\\)-values in the interval \\([0, \\infty)\\)."
-            },
-            {
-              "explain": "Combine the ranges to find the overall range.",
-              "work": "The overall range is the union of the two intervals: \\([-9, \\infty) \\cup [0, \\infty)\\).\n\nSince the interval \\([0, \\infty)\\) is completely contained within \\([-9, \\infty)\\), the union is just the larger set: \\([-9, \\infty)\\).\n\n**Range: \\(y \\ge -9\\)**.",
-              "figure": {
-                "jsxGraph": {
-                  "width": 400,
-                  "height": 400,
-                  "boundingbox": [
-                    -3,
-                    8,
-                    6,
-                    -11
-                  ],
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-11],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x) - 9; }, -5, 3], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return x - 3; }, 3, 8], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.unsuspendUpdate();"
-                }
-              }
-            }
-          ],
-          "manual": true,
-          "timeLimit": 90,
-          "meta": {
-            "course": "Advanced"
-          },
-          "xp": 2
+          }
         },
         {
           "id": "y11a-5i-q12b-sketch",

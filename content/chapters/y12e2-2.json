@@ -1,0 +1,43 @@
+{
+  "chapterId": "y12e2-2",
+  "title": "Chapter 2: Nature of Proof",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-2A",
+      "code": "2A",
+      "title": "The Language of Proof",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2B",
+      "code": "2B",
+      "title": "Number Proofs",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2C",
+      "code": "2C",
+      "title": "Proof by Contraposition and by Contradiction",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2D",
+      "code": "2D",
+      "title": "Algebraic Inequalities",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2E",
+      "code": "2E",
+      "title": "Induction",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2F",
+      "code": "2F",
+      "title": "Inequalities in Geometry and Calculus",
+      "questions": []
+    }
+  ]
+}

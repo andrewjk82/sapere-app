@@ -1045,7 +1045,7 @@
               "work": "Inside bracket: \\( 3 - 15 = -12 \\)\nOutside factor: \\( 2 \\times 3 = 6 \\)"
             },
             {
-              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (6) \\times (-12) \\) — when multiplying two negatives, the result is positive.",
+              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (6) \\times (-12) \\) \u2014 when multiplying two negatives, the result is positive.",
               "work": "\\( 6 \\times (-12) = -72 \\)"
             }
           ],
@@ -1105,7 +1105,7 @@
               "work": "Inside bracket: \\( -1 - 6 = -7 \\)\nOutside factor: \\( 2 \\times -1 = -2 \\)"
             },
             {
-              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (-2) \\times (-7) \\) — when multiplying two negatives, the result is positive.",
+              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (-2) \\times (-7) \\) \u2014 when multiplying two negatives, the result is positive.",
               "work": "\\( -2 \\times (-7) = 14 \\)"
             }
           ],
@@ -1135,7 +1135,7 @@
               "work": "Inside bracket: \\( -3 - -6 = 3 \\)\nOutside factor: \\( 2 \\times -3 = -6 \\)"
             },
             {
-              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (-6) \\times (3) \\) — when multiplying two negatives, the result is positive.",
+              "explain": "Now multiply the outside factor by the bracket result. Remember: \\( (-6) \\times (3) \\) \u2014 when multiplying two negatives, the result is positive.",
               "work": "\\( -6 \\times (3) = -18 \\)"
             }
           ],
@@ -1161,7 +1161,7 @@
               "work": "\\( 2\\left(\\frac{1}{2}\\right)\\left(\\left(\\frac{1}{2}\\right) - 3\\left(\\frac{1}{3}\\right)\\right) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the bracket first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the bracket first.",
               "work": "Inner: \\( \\frac{1}{2} - 3 \\times \\frac{1}{3} = 0.5 - 1 = -0.5 \\)\nOuter: \\( 2 \\times \\frac{1}{2} = 1 \\)"
             },
             {
@@ -1191,7 +1191,7 @@
               "work": "\\( 2\\left(\\frac{1}{3}\\right)\\left(\\left(\\frac{1}{3}\\right) - 3\\left(\\frac{1}{2}\\right)\\right) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the bracket first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the bracket first.",
               "work": "Inner: \\( \\frac{1}{3} - 3 \\times \\frac{1}{2} = 0.333 - 1.5 = -1.167 \\)\nOuter: \\( 2 \\times \\frac{1}{3} = 0.667 \\)"
             },
             {
@@ -1224,7 +1224,7 @@
               "work": "\\( (3)\\big(2(2) - (1)\\big) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first. Calculate each multiplication before subtracting.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first. Calculate each multiplication before subtracting.",
               "work": "\\( 2 \\times (2) = 4 \\)\n\\( 4 - (1) = 3 \\)"
             },
             {
@@ -1254,7 +1254,7 @@
               "work": "\\( (-2)\\big(2(3) - (-1)\\big) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first. Calculate each multiplication before subtracting.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first. Calculate each multiplication before subtracting.",
               "work": "\\( 2 \\times (3) = 6 \\)\n\\( 6 - (-1) = 7 \\)"
             },
             {
@@ -1284,7 +1284,7 @@
               "work": "\\( (5)\\big(2(-3) - (4)\\big) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first. Calculate each multiplication before subtracting.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first. Calculate each multiplication before subtracting.",
               "work": "\\( 2 \\times (-3) = -6 \\)\n\\( -6 - (4) = -10 \\)"
             },
             {
@@ -1314,7 +1314,7 @@
               "work": "\\( (2)\\big(2(7) - (-3)\\big) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first. Calculate each multiplication before subtracting.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first. Calculate each multiplication before subtracting.",
               "work": "\\( 2 \\times (7) = 14 \\)\n\\( 14 - (-3) = 17 \\)"
             },
             {
@@ -1344,7 +1344,7 @@
               "work": "\\( \\left(\\frac{1}{2}\\right)\\left(2\\left(\\frac{1}{4}\\right) - \\left(\\frac{1}{3}\\right)\\right) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the bracket first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the bracket first.",
               "work": "\\( 2 \\times (\\frac{1}{4}) = 0.5 \\)\n\\( 0.5 - (\\frac{1}{3}) = 0.167 \\)"
             },
             {
@@ -1377,7 +1377,7 @@
               "work": "\\( \\left(\\frac{1}{3}\\right)\\left(2\\left(-\\frac{1}{2}\\right) - \\left(-\\frac{1}{4}\\right)\\right) \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the bracket first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the bracket first.",
               "work": "\\( 2 \\times (-\\frac{1}{2}) = -1 \\)\n\\( -1 - (-\\frac{1}{4}) = -0.75 \\)"
             },
             {
@@ -1410,7 +1410,7 @@
               "work": "\\( \\frac{(6) + (5)}{3} \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate the numerator (top) first.",
+              "explain": "Use BODMAS \u2014 evaluate the numerator (top) first.",
               "work": "\\( (6) + (5) = 11 \\)"
             },
             {
@@ -1443,7 +1443,7 @@
               "work": "\\( \\frac{(-6) + (5)}{3} \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate the numerator (top) first.",
+              "explain": "Use BODMAS \u2014 evaluate the numerator (top) first.",
               "work": "\\( (-6) + (5) = -1 \\)"
             },
             {
@@ -1476,7 +1476,7 @@
               "work": "\\( \\frac{(6) + (-5)}{3} \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate the numerator (top) first.",
+              "explain": "Use BODMAS \u2014 evaluate the numerator (top) first.",
               "work": "\\( (6) + (-5) = 1 \\)"
             },
             {
@@ -1509,7 +1509,7 @@
               "work": "\\( \\frac{(-6) + (-5)}{3} \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate the numerator (top) first.",
+              "explain": "Use BODMAS \u2014 evaluate the numerator (top) first.",
               "work": "\\( (-6) + (-5) = -11 \\)"
             },
             {
@@ -1845,7 +1845,7 @@
               "work": "\\( E = \\frac{240}{1000 \\times (1 + 0.004(50))} \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the parentheses first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the parentheses first.",
               "work": "\\( 0.004 \\times 50 = 0.2 \\)\n\\( 1 + 0.2 = 1.2 \\)"
             },
             {
@@ -1903,7 +1903,7 @@
               "work": "\\( V = 12500(1 - 0.2)^{3} - 1500 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate the parentheses and power first.",
+              "explain": "Use BODMAS \u2014 evaluate the parentheses and power first.",
               "work": "\\( 1 - 0.2 = 0.8 \\)\n\\( (0.8)^{3} = 0.512 \\)"
             },
             {
@@ -2628,7 +2628,7 @@
               "work": "\\( A = \\frac{1}{2}(20 + 30) \\times 8 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first.",
               "work": "\\( 20 + 30 = 50 \\)"
             },
             {
@@ -2657,7 +2657,7 @@
               "work": "\\( A = \\frac{1}{2}(20 + 22) \\times 8 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first.",
               "work": "\\( 20 + 22 = 42 \\)"
             },
             {
@@ -2686,7 +2686,7 @@
               "work": "\\( A = \\frac{1}{2}(20 + 18) \\times 12 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first.",
               "work": "\\( 20 + 18 = 38 \\)"
             },
             {
@@ -2802,7 +2802,7 @@
               "work": "\\( A = \\frac{1}{2}(20 + 30) \\times 12 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first.",
               "work": "\\( 20 + 30 = 50 \\)"
             },
             {
@@ -2976,7 +2976,7 @@
               "work": "\\( A = \\frac{1}{2}(12 + 18) \\times 8 \\)"
             },
             {
-              "explain": "Use BODMAS — evaluate inside the brackets first.",
+              "explain": "Use BODMAS \u2014 evaluate inside the brackets first.",
               "work": "\\( 12 + 18 = 30 \\)"
             },
             {
@@ -3092,7 +3092,7 @@
               "work": "\\(\\dfrac{(-4)^2}{2}\\)"
             },
             {
-              "explain": "Square \\(-4\\) first — a negative squared is positive.",
+              "explain": "Square \\(-4\\) first \u2014 a negative squared is positive.",
               "work": "\\(=\\dfrac{16}{2}\\)"
             },
             {
@@ -5665,7 +5665,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{6x +9 4x -16}{12} = \\frac{10x -7}{12}\\)"
+              "work": "\\(\\frac{6x +9 + 4x -16}{12} = \\frac{10x -7}{12}\\)"
             }
           ],
           "xp": 2
@@ -5693,7 +5693,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{9x +6 5x -20}{15} = \\frac{14x -14}{15}\\)"
+              "work": "\\(\\frac{9x +6 + 5x -20}{15} = \\frac{14x -14}{15}\\)"
             }
           ],
           "xp": 2
@@ -5749,7 +5749,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{6x +9 8x -4}{12} = \\frac{14x +5}{12}\\)"
+              "work": "\\(\\frac{6x +9 + 8x -4}{12} = \\frac{14x +5}{12}\\)"
             }
           ],
           "xp": 2
@@ -5777,7 +5777,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{20x +5 9x -6}{15} = \\frac{29x -1}{15}\\)"
+              "work": "\\(\\frac{20x +5 + 9x -6}{15} = \\frac{29x -1}{15}\\)"
             }
           ],
           "xp": 2
@@ -5788,24 +5788,25 @@
           "difficulty": "hard",
           "stem": "A water purification plant measures filter efficiency across multiple stages. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{2x -1}{3}\\). Simplify this expression into a single fraction.",
           "options": [
-            "\\(\\frac{6x +0}{6}\\)",
-            "\\(\\frac{18x +0}{9}\\)",
-            "\\(\\frac{18x + 5}{9}\\)",
-            "\\(\\frac{18x - 0}{9}\\)"
+            "\\(2x\\)",
+            "\\(\frac{2x}{3}\\)",
+            "\\(6x\\)",
+            "\\(2x + 1\\)"
           ],
-          "answer": 1,
-          "solution": "1",
+          "answer": 0,
+          "solution": "0",
           "steps": [
             {
-              "explain": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\)."
+              "explain": "Since the denominators are the same, simply add the numerators.",
+              "work": "\\(\frac{(4x + 1) + (2x - 1)}{3}\\)"
             },
             {
-              "explain": "Multiply the numerator of each fraction by the denominator of the other.",
-              "work": "\\(\\frac{3(4x +1) + 3(2x -1)}{9}\\)"
+              "explain": "Combine like terms in the numerator.",
+              "work": "\\(\frac{4x + 2x + 1 - 1}{3} = \\frac{6x}{3}\\)"
             },
             {
-              "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{12x +3 6x -3}{9} = \\frac{18x +0}{9}\\)"
+              "explain": "Simplify the fraction by dividing by the common factor of 3.",
+              "work": "\\(2x\\)"
             }
           ],
           "xp": 2
@@ -5889,7 +5890,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+              "work": "\\(\\frac{12x +3 + 3x -12}{9} = \\frac{15x -9}{9}\\)"
             }
           ],
           "xp": 2
@@ -5925,10 +5926,10 @@
           "difficulty": "hard",
           "stem": "A deep-sea research submarine calculates hydraulic pressure on its hull. This analysis monitors signal routing coefficients represented by \\(\\frac{3x +2}{5} + \\frac{3x -2}{5}\\). Simplify this expression into a single fraction.",
           "options": [
-            "\\(\\frac{30x - 0}{25}\\)",
-            "\\(\\frac{6x +0}{10}\\)",
+            "\\(\\frac{30x }{25}\\)",
+            "\\(\\frac{6x }{10}\\)",
             "\\(\\frac{30x + 5}{25}\\)",
-            "\\(\\frac{30x +0}{25}\\)"
+            "\\(\\frac{30x }{25}\\)"
           ],
           "answer": 3,
           "solution": "3",
@@ -5942,7 +5943,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{15x +10 15x -10}{25} = \\frac{30x +0}{25}\\)"
+              "work": "\\(\\frac{15x +10 + 15x -10}{25} = \\frac{30x +0}{25}\\)"
             }
           ],
           "xp": 2
@@ -5998,7 +5999,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{10x +15 12x -8}{20} = \\frac{22x +7}{20}\\)"
+              "work": "\\(\\frac{10x +15 + 12x -8}{20} = \\frac{22x +7}{20}\\)"
             }
           ],
           "xp": 2
@@ -6026,7 +6027,7 @@
             },
             {
               "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{9x +6 10x -5}{15} = \\frac{19x +1}{15}\\)"
+              "work": "\\(\\frac{9x +6 + 10x -5}{15} = \\frac{19x +1}{15}\\)"
             }
           ],
           "xp": 2
@@ -13268,7 +13269,7 @@
               "work": "\\(x(x+5) = x \\times x + x \\times 5\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(x^2+5x\\)"
             }
           ],
@@ -13295,7 +13296,7 @@
               "work": "\\(y(y+6) = y \\times y + y \\times 6\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(y^2+6y\\)"
             }
           ],
@@ -13322,7 +13323,7 @@
               "work": "\\(p(p-8) = p \\times p - p \\times 8\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(p^2-8p\\)"
             }
           ],
@@ -13349,7 +13350,7 @@
               "work": "\\(q(q-7) = q \\times q - q \\times 7\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(q^2-7q\\)"
             }
           ],
@@ -13376,7 +13377,7 @@
               "work": "\\(m(4m+1) = m \\times 4m + m \\times 1\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(4m^2+m\\)"
             }
           ],
@@ -13403,7 +13404,7 @@
               "work": "\\(n(3n+8) = n \\times 3n + n \\times 8\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(3n^2+8n\\)"
             }
           ],
@@ -13430,7 +13431,7 @@
               "work": "\\(3a(2a-5) = 3a \\times 2a - 3a \\times 5\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(6a^2-15a\\)"
             }
           ],
@@ -13457,7 +13458,7 @@
               "work": "\\(2b(4b-9) = 2b \\times 4b - 2b \\times 9\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(8b^2-18b\\)"
             }
           ],
@@ -13484,7 +13485,7 @@
               "work": "\\(3x(4x+5) = 3x \\times 4x + 3x \\times 5\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(12x^2+15x\\)"
             }
           ],
@@ -13511,7 +13512,7 @@
               "work": "\\(2y(5y+8) = 2y \\times 5y + 2y \\times 8\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(10y^2+16y\\)"
             }
           ],
@@ -13538,7 +13539,7 @@
               "work": "\\(-p(3p-5) = -p \\times 3p - (-p) \\times 5\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(-3p^2+5p\\)"
             }
           ],
@@ -13565,7 +13566,7 @@
               "work": "\\(-q(4q-3) = -q \\times 4q - (-q) \\times 3\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(-4q^2+3q\\)"
             }
           ],
@@ -13592,7 +13593,7 @@
               "work": "\\(-3x(4x-2) = -3x \\times 4x - (-3x) \\times 2\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(-12x^2+6x\\)"
             }
           ],
@@ -13619,7 +13620,7 @@
               "work": "\\(-2y(6y+5) = -2y \\times 6y + (-2y) \\times 5\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(-12y^2-10y\\)"
             }
           ],
@@ -13646,7 +13647,7 @@
               "work": "\\(-5a(2a-3) = -5a \\times 2a - (-5a) \\times 3\\)"
             },
             {
-              "explain": "Simplify variables (remember that x multiplied by x is x²).",
+              "explain": "Simplify variables (remember that x multiplied by x is x\u00b2).",
               "work": "\\(-10a^2+15a\\)"
             }
           ],
@@ -15884,7 +15885,7 @@
               "work": "\\(y(y^2+4) = y \\times y^2 + y \\times 4\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(y^3+4y\\)"
             }
           ],
@@ -15911,7 +15912,7 @@
               "work": "\\(a(a^2+3a+2) = a \\times a^2 + a \\times 3a + a \\times 2\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(a^3+3a^2+2a\\)"
             }
           ],
@@ -15938,7 +15939,7 @@
               "work": "\\(3y(y^2-4y) = 3y \\times y^2 - 3y \\times 4y\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(3y^3-12y^2\\)"
             }
           ],
@@ -15965,7 +15966,7 @@
               "work": "\\(3a^2(4-a) = 3a^2 \\times 4 - 3a^2 \\times a\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(12a^2-3a^3\\)"
             }
           ],
@@ -15992,7 +15993,7 @@
               "work": "\\(4p(2p^2+3) = 4p \\times 2p^2 + 4p \\times 3\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(8p^3+12p\\)"
             }
           ],
@@ -16019,7 +16020,7 @@
               "work": "\\(5x^2(2+3x-x^2) = 5x^2 \\times 2 + 5x^2 \\times 3x - 5x^2 \\times x^2\\)"
             },
             {
-              "explain": "Simplify exponents (remember that x² multiplied by x is x³, and x² multiplied by x² is x⁴).",
+              "explain": "Simplify exponents (remember that x\u00b2 multiplied by x is x\u00b3, and x\u00b2 multiplied by x\u00b2 is x\u2074).",
               "work": "\\(10x^2+15x^3-5x^4\\)"
             }
           ],
@@ -19787,7 +19788,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((2x+3)^2 = (2x)^2 + 2(2x)(3) + 3^2\\)"
             },
             {
@@ -19814,7 +19815,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((3m+n)^2 = (3m)^2 + 2(3m)(n) + n^2\\)"
             },
             {
@@ -19841,7 +19842,7 @@
           "solution": "2",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((3p+2q)^2 = (3p)^2 + 2(3p)(2q) + (2q)^2\\)"
             },
             {
@@ -19868,7 +19869,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((4x+3y)^2 = (4x)^2 + 2(4x)(3y) + (3y)^2\\)"
             },
             {
@@ -19895,7 +19896,7 @@
           "solution": "2",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((3a+2b)^2 = (3a)^2 + 2(3a)(2b) + (2b)^2\\)"
             },
             {
@@ -19922,7 +19923,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((3x+4)^2 = (3x)^2 + 2(3x)(4) + 4^2\\)"
             },
             {
@@ -19949,7 +19950,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((4y+b)^2 = (4y)^2 + 2(4y)(b) + b^2\\)"
             },
             {
@@ -19976,7 +19977,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the perfect square expansion: (u+v)² = u² + 2uv + v².",
+              "explain": "Apply the perfect square expansion: (u+v)\u00b2 = u\u00b2 + 2uv + v\u00b2.",
               "work": "\\((6m+5n)^2 = (6m)^2 + 2(6m)(5n) + (5n)^2\\)"
             },
             {
@@ -20003,7 +20004,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((2x-3)^2 = (2x)^2 - 2(2x)(3) + 3^2\\)"
             },
             {
@@ -20030,7 +20031,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((3x-4)^2 = (3x)^2 - 2(3x)(4) + 4^2\\)"
             },
             {
@@ -20057,7 +20058,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((3m-n)^2 = (3m)^2 - 2(3m)(n) + n^2\\)"
             },
             {
@@ -20084,7 +20085,7 @@
           "solution": "1",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((3p-2q)^2 = (3p)^2 - 2(3p)(2q) + (2q)^2\\)"
             },
             {
@@ -20111,7 +20112,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((4x-3y)^2 = (4x)^2 - 2(4x)(3y) + (3y)^2\\)"
             },
             {
@@ -20138,7 +20139,7 @@
           "solution": "1",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((3a-2b)^2 = (3a)^2 - 2(3a)(2b) + (2b)^2\\)"
             },
             {
@@ -20165,7 +20166,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((4p-q)^2 = (4p)^2 - 2(4p)(q) + q^2\\)"
             },
             {
@@ -20192,7 +20193,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square subtraction rule: (u-v)² = u² - 2uv + v².",
+              "explain": "Apply the perfect square subtraction rule: (u-v)\u00b2 = u\u00b2 - 2uv + v\u00b2.",
               "work": "\\((5y-6)^2 = (5y)^2 - 2(5y)(6) + 6^2\\)"
             },
             {
@@ -21937,10 +21938,10 @@
             "\\(2x^2 + 20x + 25\\)"
           ],
           "answer": 0,
-          "hint": "Perfect square: (a + b)² = a² + 2ab + b²",
+          "hint": "Perfect square: (a + b)\u00b2 = a\u00b2 + 2ab + b\u00b2",
           "steps": [
             {
-              "explain": "Use the perfect square formula: (a + b)² = a² + 2ab + b², where a = 2x and b = 5.",
+              "explain": "Use the perfect square formula: (a + b)\u00b2 = a\u00b2 + 2ab + b\u00b2, where a = 2x and b = 5.",
               "work": "\\((2x + 5)^2 = (2x)^2 + 2(2x)(5) + 5^2\\)"
             },
             {
@@ -21980,7 +21981,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((x-5)(x+5) = (x)^2 - (5)^2\\)"
             },
             {
@@ -22007,7 +22008,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((y-8)(y+8) = (y)^2 - (8)^2\\)"
             },
             {
@@ -22034,7 +22035,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((a-4)(a+4) = (a)^2 - (4)^2\\)"
             },
             {
@@ -22061,7 +22062,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((b-9)(b+9) = (b)^2 - (9)^2\\)"
             },
             {
@@ -22088,7 +22089,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((z-6)(z+6) = (z)^2 - (6)^2\\)"
             },
             {
@@ -22115,7 +22116,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((p-3)(p+3) = (p)^2 - (3)^2\\)"
             },
             {
@@ -22142,7 +22143,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((w-8)(8+w) = (w)^2 - (8)^2\\)"
             },
             {
@@ -22169,7 +22170,7 @@
           "solution": "2",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((12+x)(12-x) = (12)^2 - (x)^2\\)"
             },
             {
@@ -22196,7 +22197,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares expansion rule: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((m-7)(m+7) = (m)^2 - (7)^2\\)"
             },
             {
@@ -22223,7 +22224,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((3x-1)(3x+1) = (3x)^2 - (1)^2\\)"
             },
             {
@@ -22250,7 +22251,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((4m-3)(4m+3) = (4m)^2 - (3)^2\\)"
             },
             {
@@ -22277,7 +22278,7 @@
           "solution": "1",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((2a-5)(2a+5) = (2a)^2 - (5)^2\\)"
             },
             {
@@ -22304,7 +22305,7 @@
           "solution": "1",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((5x-3)(5x+3) = (5x)^2 - (3)^2\\)"
             },
             {
@@ -22331,7 +22332,7 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((3y+5)(3y-5) = (3y)^2 - (5)^2\\)"
             },
             {
@@ -22358,7 +22359,7 @@
           "solution": "1",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A² - B².",
+              "explain": "Apply the difference of two squares identity: (A-B)(A+B) = A\u00b2 - B\u00b2.",
               "work": "\\((6b+5)(6b-5) = (6b)^2 - (5)^2\\)"
             },
             {
@@ -22659,7 +22660,7 @@
               "work": "\\(\\text{The expression has the terms: } y^2-1\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Difference}\\text{ expansion.}\\)"
             }
           ],
@@ -22686,7 +22687,7 @@
               "work": "\\(\\text{The expression has the terms: } y^2-4y+4\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Perfect}\\text{ expansion.}\\)"
             }
           ],
@@ -22713,7 +22714,7 @@
               "work": "\\(\\text{The expression has the terms: } x^2-16\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Difference}\\text{ expansion.}\\)"
             }
           ],
@@ -22740,7 +22741,7 @@
               "work": "\\(\\text{The expression has the terms: } 9x^2-36\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Difference}\\text{ expansion.}\\)"
             }
           ],
@@ -22767,7 +22768,7 @@
               "work": "\\(\\text{The expression has the terms: } 9a^2+24a+16\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Perfect}\\text{ expansion.}\\)"
             }
           ],
@@ -22794,7 +22795,7 @@
               "work": "\\(\\text{The expression has the terms: } 16b^2-8b+1\\)"
             },
             {
-              "explain": "Check if it follows the trinomial form A² ± 2AB + B² or the binomial difference form A² - B².",
+              "explain": "Check if it follows the trinomial form A\u00b2 \u00b1 2AB + B\u00b2 or the binomial difference form A\u00b2 - B\u00b2.",
               "work": "\\(\\text{This matches the form of } \\text{Perfect}\\text{ expansion.}\\)"
             }
           ],
@@ -24329,10 +24330,10 @@
             "\\(12x^2 - 3y^2\\)"
           ],
           "answer": 0,
-          "hint": "Difference of squares: (a - b)(a + b) = a² - b²",
+          "hint": "Difference of squares: (a - b)(a + b) = a\u00b2 - b\u00b2",
           "steps": [
             {
-              "explain": "Use the difference of squares formula: (a - b)(a + b) = a² - b², where a = 12x and b = 3y.",
+              "explain": "Use the difference of squares formula: (a - b)(a + b) = a\u00b2 - b\u00b2, where a = 12x and b = 3y.",
               "work": "\\((12x - 3y)(12x + 3y) = (12x)^2 - (3y)^2\\)"
             },
             {
@@ -26883,7 +26884,7 @@
           "hint": "Expand each part separately, then carefully subtract.",
           "steps": [
             {
-              "explain": "Expand (3m - 1)² using the perfect square formula.",
+              "explain": "Expand (3m - 1)\u00b2 using the perfect square formula.",
               "work": "\\((3m - 1)^2 = 9m^2 - 6m + 1\\)"
             },
             {
@@ -26996,7 +26997,7 @@
               "answer": 0,
               "steps": [
                 {
-                  "explain": "Expand using FOIL — First: $2x \\times x$, Outer: $2x \\times 4$, Inner: $-3 \\times x$, Last: $-3 \\times 4$.",
+                  "explain": "Expand using FOIL \u2014 First: $2x \\times x$, Outer: $2x \\times 4$, Inner: $-3 \\times x$, Last: $-3 \\times 4$.",
                   "work": "\\(2x^2 + 8x - 3x - 12\\)"
                 },
                 {
@@ -27042,7 +27043,7 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "This has the form $(a-b)(a+b)$ — the difference of two squares — with $a=12x$ and $b=3y$, so all cross-terms cancel.",
+                  "explain": "This has the form $(a-b)(a+b)$ \u2014 the difference of two squares \u2014 with $a=12x$ and $b=3y$, so all cross-terms cancel.",
                   "work": "\\((12x)^2 - (3y)^2\\)"
                 },
                 {
@@ -29099,7 +29100,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((y+9)^2\\)"
             },
             {
@@ -29126,7 +29127,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((a+8)^2\\)"
             },
             {
@@ -29153,7 +29154,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((m-12)^2\\)"
             },
             {
@@ -29180,7 +29181,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((p-7)^2\\)"
             },
             {
@@ -29207,7 +29208,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((a-3b)^2\\)"
             },
             {
@@ -29234,7 +29235,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((3x+4y)^2\\)"
             },
             {
@@ -29261,7 +29262,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((4m+3)^2\\)"
             },
             {
@@ -29288,7 +29289,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the perfect square identity: (u ± v)² = u² ± 2uv + v².",
+              "explain": "Apply the perfect square identity: (u \u00b1 v)\u00b2 = u\u00b2 \u00b1 2uv + v\u00b2.",
               "work": "\\((3y-5)^2\\)"
             },
             {
@@ -29315,7 +29316,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((y-8)(y+8)\\)"
             },
             {
@@ -29342,7 +29343,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((a-9)(a+9)\\)"
             },
             {
@@ -29369,7 +29370,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((x-2)(x+2)\\)"
             },
             {
@@ -29396,7 +29397,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((m-12)(m+12)\\)"
             },
             {
@@ -29423,7 +29424,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((4a-1)(4a+1)\\)"
             },
             {
@@ -29450,7 +29451,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((6y-5)(6y+5)\\)"
             },
             {
@@ -29477,7 +29478,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((8b-3)(8b+3)\\)"
             },
             {
@@ -29504,7 +29505,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((8-5x)(8+5x)\\)"
             },
             {
@@ -29531,7 +29532,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((4x+3y)(4x-3y)\\)"
             },
             {
@@ -29558,7 +29559,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((10a+b)(10a-b)\\)"
             },
             {
@@ -29585,7 +29586,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((6m+5n)(6m-5n)\\)"
             },
             {
@@ -29612,7 +29613,7 @@
           "solution": "0",
           "steps": [
             {
-              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u² - v².",
+              "explain": "Apply the difference of two squares identity: (u-v)(u+v) = u\u00b2 - v\u00b2.",
               "work": "\\((7y+2b)(7y-2b)\\)"
             },
             {
