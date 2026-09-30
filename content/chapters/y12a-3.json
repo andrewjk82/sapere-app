@@ -671,7 +671,6 @@
               "work": "Since \\( f'(x) < 0 \\) for all \\( x \\), the function is strictly decreasing."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -698,7 +697,6 @@
               "work": "Since \\( f'(x) > 0 \\) for all \\( x \\), the function is strictly increasing."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -725,7 +723,6 @@
               "work": "For all \\( x \\neq 0 \\), \\( 3x^2 > 0 \\), so the curve is increasing.\nAt \\( x = 0 \\), \\( f'(0) = 0 \\), so the curve is stationary."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -752,7 +749,6 @@
               "work": "When \\( x > 0 \\), \\( f'(x) > 0 \\) (increasing).\nWhen \\( x < 0 \\), \\( f'(x) < 0 \\) (decreasing).\nWhen \\( x = 0 \\), \\( f'(0) = 0 \\) (stationary)."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -3811,7 +3807,6 @@
               "work": "\\begin{aligned} \\text{Subtract (1) from (2):} \\\\ (a - b + c) - (a + b + c) &= 10 - 6 \\\\ -2b &= 4 \\\\ b &= -2 \\\\ \\\\ \\text{Substitute } b = -2 \\text{ into (3):} \\\\ -2 &= 2a \\\\ a &= -1 \\\\ \\\\ \\text{Substitute } a = -1 \\text{ and } b = -2 \\text{ into (1):} \\\\ -1 - 2 + c &= 6 \\\\ -3 + c &= 6 \\\\ c &= 9 \\end{aligned}"
             }
           ],
-          "manual": true,
           "xp": 3
         },
         {
@@ -3837,7 +3832,6 @@
               "work": "\\begin{aligned} 0 &= a(0)^2 + b(0) + c \\\\ 0 &= 0 + 0 + c \\\\ c &= 0 \\end{aligned}"
             }
           ],
-          "manual": true,
           "xp": 3
         },
         {
@@ -3867,7 +3861,6 @@
               "work": "\\begin{aligned} \\frac{dy}{dx}(0) &= 2a(0) + b \\\\ 3 &= 0 + b \\\\ b &= 3 \\end{aligned}"
             }
           ],
-          "manual": true,
           "xp": 3
         },
         {
@@ -3897,7 +3890,6 @@
               "work": "\\begin{aligned} 4a &= -3 \\\\ a &= -\\frac{3}{4} \\end{aligned}"
             }
           ],
-          "manual": true,
           "xp": 3
         },
         {
@@ -4265,7 +4257,6 @@
               "work": "\\text{At points } (x, y) \\text{ and } (-x, y)\\text{, the tangents are mirror images, meaning their slopes are equal but opposite in sign.}"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
@@ -4306,7 +4297,6 @@
               "work": "\\text{At points } (x, y) \\text{ and } (-x, -y)\\text{, the tangent lines are parallel, meaning their slopes are identical.}"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"
@@ -4339,7 +4329,6 @@
               "work": "\\begin{aligned} \\text{If } n \\text{ is odd (e.g., } n=3, 5, 7 \\dots) \\text{, then } f(x) = x^n \\text{ is an odd function.} \\\\ \\text{Its derivative is } f'(x) = n x^{n-1}\\text{.} \\\\ \\text{Since } n \\text{ is odd, } n-1 \\text{ must be an even integer.} \\\\ \\text{Thus, } f'(x) \\text{ is an even function.} \\end{aligned}"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "meta": {
             "origin": "teacher"

@@ -14135,7 +14135,6 @@
               "work": "A \\approx 1262.48"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
@@ -14295,7 +14294,6 @@
               "work": "1262.48 = 1262.48"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "xp": 1
         },
@@ -14404,7 +14402,6 @@
               "work": "A \\approx 7299.917 \\approx 7299.92"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
@@ -14585,7 +14582,6 @@
               "work": "7299.91 \\approx 7299.92"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "xp": 1
         },
@@ -14690,7 +14686,6 @@
               "work": "A = 20000(1.06)^{10}"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "xp": 1
         },
@@ -14834,7 +14829,6 @@
               "work": "A_{10} = 20000(1.06)^{10} - [2717.39 + 2717.39(1.06) + \\dots + 2717.39(1.06)^9]"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "xp": 1
         },
@@ -14862,7 +14856,6 @@
               "work": "A_{10} = 20000(1.06)^{10} - \\frac{2717.39(1.06^{10} - 1)}{0.06}"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "xp": 1
         },
@@ -14894,7 +14887,6 @@
               "work": "A_{10} \\approx 0"
             }
           ],
-          "manual": true,
           "timeLimit": 240,
           "alsoIn": [
             "exam:year12ach8e"
@@ -15908,7 +15900,6 @@
               "work": "Monthly payment is \\( 21600 / 12 = \\$1800 \\).\nMonthly rate is \\( 6\\%/12 = 0.5\\% = 0.005 \\).\nTerm is 300 months.\nCompounded principal is \\( P(1.005)^{300} \\) and payments GP sum is \\( \\frac{1800(1.005^{300} - 1)}{0.005} \\).\nSubtracting these gives the balance."
             }
           ],
-          "manual": true,
           "meta": {
             "origin": "teacher"
           },
@@ -15949,7 +15940,6 @@
               "work": "\\(P(1.005)^{300} = 360000(1.005^{300} - 1)\\)<br>\\(P = 360000 \\times \\frac{1.005^{300} - 1}{1.005^{300}} = 360000(1 - 1.005^{-300})\\)<br>\\(P \\approx 279372.24 \\implies 279372\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "origin": "teacher"
           },
@@ -16304,7 +16294,6 @@
               "work": "A_1 = P(1 + 0.004) - M = 1.004P - M"
             }
           ],
-          "manual": true,
           "timeLimit": 360,
           "xp": 2
         },
@@ -16332,7 +16321,6 @@
               "work": "A_{n+1} = 1.004 A_n - M"
             }
           ],
-          "manual": true,
           "timeLimit": 360,
           "xp": 2
         },
@@ -16360,7 +16348,6 @@
               "work": "A_n = 1.004^n P - M(1 + 1.004 + \\dots + 1.004^{n-1})"
             }
           ],
-          "manual": true,
           "timeLimit": 360,
           "xp": 2
         },
@@ -16388,7 +16375,6 @@
               "work": "A_n = 1.004^n P - 250 M(1.004^n - 1)"
             }
           ],
-          "manual": true,
           "timeLimit": 360,
           "xp": 2
         },

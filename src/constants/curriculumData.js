@@ -3411,7 +3411,19 @@ export const CURRICULUM_DATA = {
     ],
     'Extension 2': [
       { id: 'y12e2-1', title: 'Complex Numbers', modules: 15 },
-      { id: 'y12e2-2', title: 'Nature of Proof', modules: 12 },
+      {
+        id: 'y12e2-2',
+        title: 'Chapter 2: Nature of Proof',
+        modules: 6,
+        topics: [
+          { id: 'y12e2-2A', code: '2A', title: 'The Language of Proof' },
+          { id: 'y12e2-2B', code: '2B', title: 'Number Proofs' },
+          { id: 'y12e2-2C', code: '2C', title: 'Proof by Contraposition and by Contradiction' },
+          { id: 'y12e2-2D', code: '2D', title: 'Algebraic Inequalities' },
+          { id: 'y12e2-2E', code: '2E', title: 'Induction' },
+          { id: 'y12e2-2F', code: '2F', title: 'Inequalities in Geometry and Calculus' }
+        ]
+      },
       { id: 'y12e2-3', title: 'Integration Techniques', modules: 18 }
     ],
   }

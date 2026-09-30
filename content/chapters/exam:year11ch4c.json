@@ -222,7 +222,6 @@
               "work": "12k = 36 \\implies k = 3"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },

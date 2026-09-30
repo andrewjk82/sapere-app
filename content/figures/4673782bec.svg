@@ -2,7 +2,7 @@
   <rect width='220' height='140' fill='#eff6ff' rx='8'/>
   <rect x='30' y='25' width='120' height='60' fill='#dbeafe' stroke='#2563eb' stroke-width='2.5' rx='2'/>
   <line x1='30' y1='25' x2='150' y2='85' stroke='#2563eb' stroke-width='2' stroke-dasharray='5,3'/>
-  <rect x='130' y='25' width='10' height='10' fill='none' stroke='#2563eb' stroke-width='1.5'/>
+  <rect x='140' y='25' width='10' height='10' fill='none' stroke='#2563eb' stroke-width='1.5'/>
   <line x1='30' y1='100' x2='150' y2='100' stroke='#2563eb' stroke-width='1.5' marker-end='url(#a)'/>
   <text x='90' y='115' text-anchor='middle' fill='#1e40af' font-size='14' font-weight='bold'>width = 4 cm</text>
   <text x='10' y='60' text-anchor='middle' fill='#1e40af' font-size='14' font-weight='bold' transform='rotate(-90,12,58)'>height = 2 cm</text>

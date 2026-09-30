@@ -9714,7 +9714,6 @@
               }
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -9811,7 +9810,6 @@
               }
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -9860,7 +9858,6 @@
               }
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -9957,7 +9954,6 @@
               }
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -10163,7 +10159,6 @@
               "work": "Since the lines only intersect when they are identical (\\(k = 12\\)), they will intersect at infinitely many points along the entire line."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },
@@ -10263,7 +10258,6 @@
               "work": "Therefore, \\(n = 2\\)."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "xp": 2
         },

@@ -3553,7 +3553,6 @@
               "work": "\\(AB \\approx 8.342 - 3.264 \\approx 5.078 \\approx 5.1\\text{ cm}\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -3594,7 +3593,6 @@
               "work": "\\(PC \\approx \\frac{16.58}{1.035} \\approx 16.01 \\approx 16\\text{ cm}\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -3639,7 +3637,6 @@
               "work": "\\(\\alpha = \\tan^{-1}\\left(\\frac{5.788}{11.57}\\right) \\approx 26.58^{\\circ} \\approx 26^{\\circ}35'\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -3680,7 +3677,6 @@
               "work": "\\(x = 10(\\sqrt{3} - 1)\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -3721,7 +3717,6 @@
               "work": "\\(x = \\frac{30 - 10\\sqrt{3}}{3} = \\frac{10}{3}(3 - \\sqrt{3})\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -3762,7 +3757,6 @@
               "work": "\\(x = \\left(10 - \\frac{10}{3}\\right)\\sqrt{3} = \\frac{20}{3}\\sqrt{3}\\)"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -15928,7 +15922,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Apply the given angle:</b><br>\n  \\[ \\text{Let } \\theta = 18^\\circ \\implies \\sin 18^\\circ = \\cos (90^\\circ - 18^\\circ) = \\cos 72^\\circ \\]\n  <br><br>\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Conclusion:</b><br>\n  \\[ \\text{The statement is True.} \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -15961,7 +15954,6 @@
               "work": "\\(\\text{The statement is True.}\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -15994,7 +15986,6 @@
               "work": "\\(\\text{The statement is True.}\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16019,7 +16010,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Apply the given angle:</b><br>\n  \\[ \\text{Let } \\theta = 27^\\circ \\implies \\sin^2 27^\\circ + \\cos^2 27^\\circ = 1 \\]\n  <br><br>\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Conclusion:</b><br>\n  \\[ \\text{The statement is True.} \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16044,7 +16034,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Apply the given angle:</b><br>\n  \\[ \\text{Let } \\theta = 50^\\circ \\implies 1 + \\tan^2 50^\\circ = \\sec^2 50^\\circ \\]\n  <br><br>\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Conclusion:</b><br>\n  \\[ \\text{The statement is True.} \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16069,7 +16058,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Apply the given angle:</b><br>\n  \\[ \\text{Let } \\theta = 35^\\circ \\implies \\csc^2 35^\\circ - 1 = \\cot^2 35^\\circ \\]\n  <br><br>\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Conclusion:</b><br>\n  \\[ \\text{The statement is True.} \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16237,7 +16225,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. State the final simplified result:</b><br>\n  \\[ \\cos x \\cdot \\sec x = \\cos x \\cdot \\frac{1}{\\cos x} = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16265,7 +16252,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. State the final simplified result:</b><br>\n  \\[ \\tan y \\cdot \\cot y = \\tan y \\cdot \\frac{1}{\\tan y} = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16293,7 +16279,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. State the final simplified result:</b><br>\n  \\[ \\sin z \\cdot \\csc z = \\sin z \\cdot \\frac{1}{\\sin z} = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "xp": 1
         },
@@ -16540,7 +16525,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Apply the identity directly:</b><br>\n  The sum of squared sine and cosine for the same angle is exactly 1.<br>\n  \\[ \\text{Result} = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
@@ -16799,7 +16783,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. State the final simplified result:</b><br>\n  \\[ \\csc^2 \\theta - \\cot^2 \\theta = (1 + \\cot^2 \\theta) - \\cot^2 \\theta = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
@@ -16944,7 +16927,6 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. State the final simplified result:</b><br>\n  \\[ \\cos^2 \\theta \\cdot \\sec^2 \\theta = \\cos^2 \\theta \\cdot \\frac{1}{\\cos^2 \\theta} = 1 \\]\n</div>"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
@@ -24711,7 +24693,6 @@
               "work": "\\\\[ \\\\cos x \\\\approx -0.1890 \\\\]"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -24804,7 +24785,6 @@
               "work": "\\\\[3\\\\sqrt{3} + \\\\sqrt{7} \\\\approx 7.84\\\\]"
             }
           ],
-          "manual": true,
           "xp": 4
         },
         {
@@ -24842,7 +24822,6 @@
               "work": "\\\\[ x \\\\approx 5.1962 - 2.6458 \\\\] \\\\[ x \\\\approx 2.55 \\\\]"
             }
           ],
-          "manual": true,
           "hscType": "multiple_choice",
           "xp": 4
         },

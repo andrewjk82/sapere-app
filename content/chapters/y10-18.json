@@ -93,7 +93,6 @@
               "work": "\\(\\text{max}_A = 40 < \\text{max}_B = 48 \\Rightarrow B \\text{ has the greater maximum}\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "origin": "teacher"
           },
@@ -421,7 +420,6 @@
               "work": "The general trend (not a perfect line) is: higher Maths tends to come with higher English — a weak-to-moderate positive relationship."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"

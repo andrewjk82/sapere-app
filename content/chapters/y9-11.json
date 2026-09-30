@@ -1511,7 +1511,6 @@
               "work": "Since \\(AB = 5\\) and \\(AC = 5\\), two sides are equal, so the triangle is isosceles."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "manualReview": false
@@ -1708,7 +1707,6 @@
               "work": "Since \\(AB = BC = CD = DA = 5\\), all four sides are equal, so \\(ABCD\\) is a rhombus."
             }
           ],
-          "manual": true,
           "meta": {
             "manualReview": false
           },
@@ -8906,7 +8904,6 @@
               "work": "a = 6,\\; b = -2,\\; c = 9"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "origin": "teacher"
