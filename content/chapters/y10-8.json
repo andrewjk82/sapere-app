@@ -2635,20 +2635,20 @@
           "solution": "3",
           "steps": [
             {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
+              "explain": "Identify the corresponding angles to prove the triangles are similar.",
+              "work": "\\\\( \\\\angle A = \\\\angle D = 120^\\\\circ \\\\) and \\\\( \\\\angle C = \\\\angle F = 25^\\\\circ \\\\). Therefore, \\\\( \\\\Delta ABC \\\\sim \\\\Delta DEF \\\\) (AAA)."
             },
             {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
+              "explain": "Set up the ratio of corresponding sides.",
+              "work": "\\\\( \\\\frac{DE}{AB} = \\\\frac{DF}{AC} \\\\)"
             },
             {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
+              "explain": "Substitute the known lengths into the ratio.",
+              "work": "\\\\( \\\\frac{x}{4} = \\\\frac{6}{8} \\\\)"
             },
             {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "3"
+              "explain": "Solve for \\\\(x\\\\).",
+              "work": "\\\\( x = 4 \\\\times \\\\frac{3}{4} = 3 \\\\)"
             }
           ],
           "manual": true,
@@ -3900,16 +3900,20 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Set up the similarity ratio.",
-                  "work": "Since \\( \\Delta ABC \\sim \\Delta DEF \\), the ratio of their corresponding sides must be equal: \\( \\frac{DE}{AB} = \\frac{DF}{AC} \\)"
+                  "explain": "Identify the corresponding angles to prove the triangles are similar.",
+                  "work": "\\\\( \\\\angle A = \\\\angle D = 120^\\\\circ \\\\) and \\\\( \\\\angle C = \\\\angle F = 25^\\\\circ \\\\). Therefore, \\\\( \\\\Delta ABC \\\\sim \\\\Delta DEF \\\\) (AAA)."
                 },
                 {
-                  "explain": "Substitute the known side lengths.",
-                  "work": "\\( \\frac{x}{4} = \\frac{6}{8} \\)"
+                  "explain": "Set up the ratio of corresponding sides.",
+                  "work": "\\\\( \\\\frac{DE}{AB} = \\\\frac{DF}{AC} \\\\)"
                 },
                 {
-                  "explain": "Solve for \\(x\\).",
-                  "work": "\\( x = 4 \\times \\frac{6}{8} = 3 \\)"
+                  "explain": "Substitute the known lengths into the ratio.",
+                  "work": "\\\\( \\\\frac{x}{4} = \\\\frac{6}{8} \\\\)"
+                },
+                {
+                  "explain": "Solve for \\\\(x\\\\).",
+                  "work": "\\\\( x = 4 \\\\times \\\\frac{3}{4} = 3 \\\\)"
                 }
               ],
               "xp": 2
@@ -4481,4 +4485,4 @@
       ]
     }
   ]
-}\n
+}
