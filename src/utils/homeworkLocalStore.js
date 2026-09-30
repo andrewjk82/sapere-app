@@ -98,3 +98,44 @@ export const requestPersistentStorage = async () => {
     }
   } catch { /* best effort */ }
 };
+
+// ── PDF blob cache ──────────────────────────────────────────────────
+// Stores the raw PDF blob keyed by Google Drive file-id so repeated
+// opens skip the network round-trip and render instantly via the
+// browser's native PDF viewer.
+const PDF_DB = 'sapere-pdf-cache';
+const PDF_STORE = 'blobs';
+let pdfDbP = null;
+
+const openPdfDb = () => {
+  if (pdfDbP) return pdfDbP;
+  pdfDbP = new Promise((res, rej) => {
+    if (typeof indexedDB === 'undefined') { rej(new Error('no idb')); return; }
+    const r = indexedDB.open(PDF_DB, 1);
+    r.onupgradeneeded = () => { if (!r.result.objectStoreNames.contains(PDF_STORE)) r.result.createObjectStore(PDF_STORE); };
+    r.onsuccess = () => { const db = r.result; db.onclose = () => { pdfDbP = null; }; db.onversionchange = () => { db.close(); pdfDbP = null; }; res(db); };
+    r.onerror = () => rej(r.error);
+  }).catch(e => { pdfDbP = null; throw e; });
+  return pdfDbP;
+};
+
+const pdfTx = async (mode, op) => {
+  const db = await openPdfDb();
+  return new Promise((res, rej) => {
+    let tx;
+    try { tx = db.transaction(PDF_STORE, mode); } catch { pdfDbP = null; rej(new Error('tx')); return; }
+    const r = op(tx.objectStore(PDF_STORE));
+    tx.oncomplete = () => res(r?.result);
+    tx.onerror = () => rej(tx.error);
+  });
+};
+
+export const loadCachedPdf = async (id) => {
+  if (!id) return null;
+  try { return (await pdfTx('readonly', s => s.get(id))) || null; } catch { return null; }
+};
+
+export const cachePdf = async (id, blob) => {
+  if (!id || !blob) return;
+  try { await pdfTx('readwrite', s => s.put(blob, id)); } catch {}
+};

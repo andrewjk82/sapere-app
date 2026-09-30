@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
-import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
+import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage, loadCachedPdf, cachePdf } from '../../utils/homeworkLocalStore';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
-import { toDrivePreviewUrl, toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
+import { toDrivePreviewUrl, toDriveOpenUrl, extractDriveFileId, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
 const WIDE_MIN = 900;
 const SUBMIT_ERRORS = {
@@ -125,6 +125,53 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const rawPdf = activeTopic ? pdfMap[activeTopic.id] : '';
   const embedUrl = toDrivePreviewUrl(rawPdf);
 
+  // ── PDF cache: show instantly from IndexedDB, otherwise fetch & cache ──
+  const [resolvedPdfUrl, setResolvedPdfUrl] = useState('');
+  const [pdfLoading, setPdfLoading] = useState(false);
+  const driveFileId = useMemo(() => extractDriveFileId(rawPdf), [rawPdf]);
+
+  useEffect(() => {
+    setResolvedPdfUrl('');
+    if (!rawPdf) return;
+    if (!driveFileId) { setResolvedPdfUrl(rawPdf); return; }
+
+    let cancelled = false;
+    let objUrl = '';
+    setPdfLoading(true);
+
+    (async () => {
+      // 1) Check local cache
+      const cached = await loadCachedPdf(driveFileId);
+      if (!cancelled && cached) {
+        objUrl = URL.createObjectURL(cached);
+        setResolvedPdfUrl(objUrl);
+        setPdfLoading(false);
+        return;
+      }
+      // 2) Try fetching the PDF directly from Google Drive
+      try {
+        const res = await fetch(`https://drive.google.com/uc?export=download&id=${driveFileId}`);
+        if (!res.ok) throw new Error(res.status);
+        const ct = res.headers.get('content-type') || '';
+        // Google sometimes returns an HTML virus-scan page for large files
+        if (!ct.includes('pdf') && !ct.includes('octet-stream')) throw new Error('not pdf');
+        const blob = await res.blob();
+        if (cancelled) return;
+        await cachePdf(driveFileId, blob);
+        objUrl = URL.createObjectURL(blob);
+        setResolvedPdfUrl(objUrl);
+      } catch {
+        // 3) Fall back to gview
+        if (!cancelled) setResolvedPdfUrl(embedUrl);
+      } finally {
+        if (!cancelled) setPdfLoading(false);
+      }
+    })();
+
+    return () => { cancelled = true; if (objUrl) URL.revokeObjectURL(objUrl); };
+  }, [rawPdf, driveFileId, embedUrl]);
+
+
   const pdfPane = (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0 }}>
       {topics.length > 1 && (
@@ -147,21 +194,32 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         </div>
       )}
       <div style={{ flex: 1, minHeight: 0, position: 'relative', background: '#f1f5f9' }}>
-        {embedUrl ? (
+        {resolvedPdfUrl ? (
           <iframe
-            key={embedUrl}
+            key={resolvedPdfUrl}
             title="Homework worksheet"
-            src={embedUrl}
+            src={resolvedPdfUrl}
             allow="autoplay"
             style={{ width: '100%', height: '100%', border: 0, pointerEvents: dragging ? 'none' : 'auto' }}
           />
+        ) : pdfLoading ? (
+          <div style={{ height: '100%', display: 'grid', placeItems: 'center' }}>
+            <div style={{ textAlign: 'center' }}>
+              <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa', marginBottom: 8 }} />
+              <div style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem' }}>Loading worksheet…</div>
+            </div>
+          </div>
+        ) : rawPdf ? (
+          <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
+            Could not load worksheet.
+          </div>
         ) : (
           <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
             No worksheet for this topic.
           </div>
         )}
       </div>
-      {embedUrl && (
+      {rawPdf && (
         <a
           href={toDriveOpenUrl(rawPdf)}
           target="_blank"
