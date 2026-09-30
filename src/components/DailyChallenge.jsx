@@ -2443,6 +2443,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                     calc: { total: getNoteCount('calc', user?.uid), due: getDueCount('calc', user?.uid), nextDueAt: getNextDueAt('calc', user?.uid) },
                   }}
                   onOpenSecretNote={(k) => { setSecretNoteKind(k); setStep('secretNote'); }}
+                  user={user}
                 />
               )}
 

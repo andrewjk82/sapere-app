@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   BookOpen,
@@ -15,10 +15,15 @@ import {
   HelpCircle,
   X,
   RefreshCw,
+  BookOpenCheck,
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
 import { nextReviewPhrase } from '../../utils/secretNote';
+import HomeworkCard from '../homework/HomeworkCard';
+import { useProfile } from '../../context/ProfileContext';
+import { collection, query, where, onSnapshot } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 
 // ── Per-kind palette + glyph for the session cards ─────────
 const KIND = {
@@ -534,8 +539,22 @@ const ChallengeStartView = ({
   newFeedbackCount = 0,
   onViewFeedback,
   onOpenFeedback,
+  user,
 }) => {
   const calculationEnabled = studentProfile?.calculationEnabled !== false;
+
+  // ── Homework sessions (loaded via real-time listener) ──
+  const { profile: hwProfile } = useProfile();
+  const [hwSessions, setHwSessions] = useState([]);
+  useEffect(() => {
+    if (!user?.uid) return;
+    const q = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+    const unsub = onSnapshot(q, (snap) => {
+      setHwSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+    }, () => {});
+    return () => unsub();
+  }, [user?.uid]);
+
 
   // Lessons for assigned Clock Reading topics — one entry per distinct lesson
   // (each clock stage maps several topic ids to the same lesson spec).
@@ -750,6 +769,9 @@ const ChallengeStartView = ({
             />
           )}
         </div>
+
+        {/* Homework section */}
+        <HomeworkCard sessions={hwSessions} profile={hwProfile} user={user} />
 
         {/* Row 2: weekly grids + accuracy ring */}
         <div className="cs__row2">

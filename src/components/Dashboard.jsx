@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight } from 'lucide-react';
+import { Plus, Search, Users, Clock, CheckCircle2, GraduationCap, X, Calendar, Check, Trophy, Star, Bell, BookOpen, ChevronRight, PlayCircle, Target, AlertTriangle, TrendingUp, ArrowRight, PenLine } from 'lucide-react';
 import StatCard from './StatCard';
 import StudentRow from './StudentRow';
 import { useAuth } from '../context/AuthContext';
@@ -25,7 +25,7 @@ import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
-import HomeworkCard from './homework/HomeworkCard';
+import { getHomeworkItems } from '../utils/homework';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -567,7 +567,41 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           </div>
         )}
 
-        {!isAdmin && <HomeworkCard sessions={studentSessions} profile={profile} user={user} />}
+        {!isAdmin && (() => {
+          const hwItems = getHomeworkItems(studentSessions);
+          const pending = hwItems.filter(i => i.status === 'todo');
+          if (pending.length === 0) return null;
+          return (
+            <button
+              type="button"
+              onClick={() => setActiveTab?.('Challenge')}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 14,
+                width: '100%', marginBottom: 24, padding: '16px 20px',
+                borderRadius: 20, border: '1px solid #ddd6fe',
+                background: 'linear-gradient(135deg, #f5f3ff, #ede9fe)',
+                cursor: 'pointer', textAlign: 'left',
+                boxShadow: '0 4px 16px rgba(124,58,237,0.1)',
+                transition: 'transform 0.15s',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
+            >
+              <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 42, height: 42, borderRadius: 14, background: '#7c3aed', flexShrink: 0 }}>
+                <PenLine size={20} color="#fff" />
+              </span>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#4c1d95' }}>
+                  Homework — {pending.length} to do
+                </div>
+                <div style={{ fontSize: '0.78rem', color: '#6d28d9', marginTop: 2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  {pending.map(p => p.topics.map(t => t.label).join(', ')).join(' · ')}
+                </div>
+              </div>
+              <ArrowRight size={18} color="#7c3aed" />
+            </button>
+          );
+        })()}
 
         {!isAdmin && <OnlineStudySessionCard />}
 
