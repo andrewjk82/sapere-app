@@ -6260,12 +6260,12 @@
           "difficulty": "easy",
           "stem": "Solve the logarithmic equation: \\(\\log_x 343 = 3\\)",
           "options": [
+            "\\(-7\\)",
+            "\\(6\\)",
             "\\(7\\)",
-            "\\(114.3\\)",
-            "\\(340\\)",
-            "\\(1029\\)"
+            "\\(8\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Rewrite in exponential form.",
           "solution": "x^3 = 343 -> x = 7",
           "steps": [

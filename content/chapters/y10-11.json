@@ -2663,7 +2663,7 @@
             "\\(y = 1\\)",
             "\\(y = -1\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "Two negatives make a positive.",
           "solution": "y = -1/(-2) = 1/2",
           "steps": [
