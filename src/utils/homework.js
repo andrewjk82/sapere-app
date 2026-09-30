@@ -18,11 +18,9 @@ export const toDrivePreviewUrl = (url) => {
   if (!trimmed) return '';
   const id = extractDriveFileId(trimmed);
   if (!id) return trimmed;
-  // Google Docs gview with the direct-download URL reliably renders every page
-  // of a Drive-hosted PDF inside an iframe, unlike /preview which often freezes
-  // after the first page.
-  const dlUrl = `https://drive.google.com/uc?export=download&id=${id}`;
-  return `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(dlUrl)}`;
+  // Google Drive's native /preview endpoint handles multi-page PDFs reliably,
+  // unlike gview which often truncates after the first page.
+  return `https://drive.google.com/file/d/${id}/preview`;
 };
 
 export const toDriveOpenUrl = (url) => {
