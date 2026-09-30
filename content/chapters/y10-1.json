@@ -6724,8 +6724,8 @@
         {
           "id": "y10-1a-q8d",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Find what percentage 300 m is of 6 km, correct to two decimal places.",
+          "difficulty": "easy",
           "options": [
             "5.00%",
             "5.25%",
@@ -6754,8 +6754,15 @@
             {
               "text": "6",
               "note": "This is the whole. Use the same units for the part and whole before dividing."
+            },
+            {
+              "text": "percentage",
+              "note": "The one quantity divide by the other quantity and multiply 100%"
             }
-          ]
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y10-1a-q8e",
