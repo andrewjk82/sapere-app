@@ -7743,11 +7743,11 @@
             },
             {
               "explain": "Expand each product and power.",
-              "work": "\\(= x^4 + 4x^2 + 1 - 4x^3 - -4x + -2x^2\\)"
+              "work": "\\(= x^4 + 4x^2 + 1 - 4x^3 + 4x - 2x^2\\)"
             },
             {
               "explain": "Combine like terms of x^2 and arrange the polynomial in standard order.",
-              "work": "\\(= x^4 - 4x^3 + 2x^2 - -4x + 1\\)"
+              "work": "\\(= x^4 - 4x^3 + 2x^2 + 4x + 1\\)"
             }
           ],
           "timeLimit": 60,
@@ -9020,11 +9020,11 @@
             "\\((x - 1)(x + 1)\\)"
           ],
           "answer": 3,
-          "solution": "(x - 1)(x + 1)",
+          "solution": "\\\\((x - 1)(x + 1)\\\\)",
           "steps": [
             {
               "explain": "Apply the identity \\( A^2 - B^2 = (A - B)(A + B) \\).",
-              "work": "x^2 - 1^2 = (x - 1)(x + 1)"
+              "work": "\\\\(x^2 - 1^2 = (x - 1)(x + 1)\\\\)"
             }
           ],
           "timeLimit": 60,
@@ -11805,7 +11805,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(2 left(x + 4\right)\\).",
+          "solution": "The completely factored form is \\(2 \\left(x + 4\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -11832,7 +11832,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(3 left(2 a - 5\right)\\).",
+          "solution": "The completely factored form is \\(3 \\left(2 a - 5\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -11859,7 +11859,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(a left(x - y\right)\\).",
+          "solution": "The completely factored form is \\(a \\left(x - y\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -11886,7 +11886,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(5 a left(4 b - 3 c\right)\\).",
+          "solution": "The completely factored form is \\(5 a \\left(4 b - 3 c\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -11913,7 +11913,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(x left(x + 3\right)\\).",
+          "solution": "The completely factored form is \\(x \\left(x + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -11940,7 +11940,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(p left(p + 2 q\right)\\).",
+          "solution": "The completely factored form is \\(p \\left(p + 2 q\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -11967,7 +11967,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(3 a left(a - 2 b\right)\\).",
+          "solution": "The completely factored form is \\(3 a \\left(a - 2 b\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -11994,7 +11994,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(6 x left(2 x + 3\right)\\).",
+          "solution": "The completely factored form is \\(6 x \\left(2 x + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -12021,7 +12021,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(4 c left(5 d - 8\right)\\).",
+          "solution": "The completely factored form is \\(4 c \\left(5 d - 8\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -12048,7 +12048,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(a b left(a + b\right)\\).",
+          "solution": "The completely factored form is \\(a b \\left(a + b\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all terms",
@@ -12075,7 +12075,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(2 a^{2} left(a + 3\right)\\).",
+          "solution": "The completely factored form is \\(2 a^{2} \\left(a + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -12102,7 +12102,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(7 x^{2} y left(x - 2 y\right)\\).",
+          "solution": "The completely factored form is \\(7 x^{2} y \\left(x - 2 y\right)\\).",
           "steps": [
             {
               "explain": "Identify the greatest common factor",
@@ -12129,7 +12129,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(m + n\right) left(p + q\right)\\).",
+          "solution": "The completely factored form is \\(\\left(m + n\right) \\left(p + q\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12160,7 +12160,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a + b\right) left(x - y\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a + b\right) \\left(x - y\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12191,7 +12191,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a + 2\right) left(x + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a + 2\right) \\left(x + 3\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12222,7 +12222,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a + b\right) left(a + c\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a + b\right) \\left(a + c\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12253,7 +12253,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(z - 1\right) left(z^{2} + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(z - 1\right) \\left(z^{2} + 1\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12284,7 +12284,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a + b\right) left(c - d\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a + b\right) \\left(c - d\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12315,7 +12315,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(p - q\right) left(u - v\right)\\).",
+          "solution": "The completely factored form is \\(\\left(p - q\right) \\left(u - v\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12346,7 +12346,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 3\right) left(x - y\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 3\right) \\left(x - y\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12377,7 +12377,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(p - q\right) left(x - 5\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(p - q\right) \\left(x - 5\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12408,7 +12408,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 a - b\right) left(x - y\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 a - b\right) \\left(x - y\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12439,7 +12439,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 1\right) left(b + c\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 1\right) \\left(b + c\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12470,7 +12470,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 4\right) left(x^{2} - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 4\right) \\left(x^{2} - 3\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12501,7 +12501,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 3\right) left(a^{2} - 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 3\right) \\left(a^{2} - 2\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12532,7 +12532,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 t + 5\right) left(t^{2} - 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 t + 5\right) \\left(t^{2} - 5\right)\\).",
           "steps": [
             {
               "explain": "Group terms with common factors",
@@ -12563,7 +12563,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(- a + 2 x^{2}\right) left(x - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(- a + 2 x^{2}\right) \\left(x - 3\right)\\).",
           "steps": [
             {
               "explain": "Rearrange and group terms with common factors",
@@ -12594,7 +12594,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 1\right) left(a + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 1\right) \\left(a + 1\right)\\).",
           "steps": [
             {
               "explain": "Recognize difference of squares pattern: a² - b² = (a-b)(a+b)",
@@ -12621,7 +12621,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(b - 2\right) left(b + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(b - 2\right) \\left(b + 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize difference of squares pattern: a² - b² = (a-b)(a+b)",
@@ -12648,7 +12648,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(c - 3\right) left(c + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(c - 3\right) \\left(c + 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize difference of squares pattern: a² - b² = (a-b)(a+b)",
@@ -12675,7 +12675,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(d - 10\right) left(d + 10\right)\\).",
+          "solution": "The completely factored form is \\(\\left(d - 10\right) \\left(d + 10\right)\\).",
           "steps": [
             {
               "explain": "Recognize difference of squares pattern: a² - b² = (a-b)(a+b)",
@@ -12702,7 +12702,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(y - 5\right) left(y + 5\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(y - 5\right) \\left(y + 5\right)\\).",
           "steps": [
             {
               "explain": "Rewrite as difference of squares",
@@ -12733,7 +12733,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(n - 1\right) left(n + 1\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(n - 1\right) \\left(n + 1\right)\\).",
           "steps": [
             {
               "explain": "Rewrite as difference of squares",
@@ -12764,7 +12764,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(x - 7\right) left(x + 7\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(x - 7\right) \\left(x + 7\right)\\).",
           "steps": [
             {
               "explain": "Rewrite as difference of squares",
@@ -12795,7 +12795,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(p - 12\right) left(p + 12\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(p - 12\right) \\left(p + 12\right)\\).",
           "steps": [
             {
               "explain": "Rewrite as difference of squares",
@@ -12826,7 +12826,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 c - 3\right) left(2 c + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 c - 3\right) \\left(2 c + 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize difference of squares with coefficient",
@@ -12853,7 +12853,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(3 u - 1\right) left(3 u + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(3 u - 1\right) \\left(3 u + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = 9u² and b² = 1.",
@@ -12884,7 +12884,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(5 x - 4\right) left(5 x + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(5 x - 4\right) \\left(5 x + 4\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = 25x² and b² = 16.",
@@ -12915,7 +12915,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(7 k - 1\right) left(7 k + 1\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(7 k - 1\right) \\left(7 k + 1\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a difference of squares: a² - b² where a² = 1 and b² = 49k².",
@@ -12946,7 +12946,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 2 y\right) left(x + 2 y\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 2 y\right) \\left(x + 2 y\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = x² and b² = 4y².",
@@ -12977,7 +12977,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(3 a - b\right) left(3 a + b\right)\\).",
+          "solution": "The completely factored form is \\(\\left(3 a - b\right) \\left(3 a + b\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = 9a² and b² = b².",
@@ -13008,7 +13008,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(5 m - 6 n\right) left(5 m + 6 n\right)\\).",
+          "solution": "The completely factored form is \\(\\left(5 m - 6 n\right) \\left(5 m + 6 n\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = 25m² and b² = 36n².",
@@ -13039,7 +13039,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(9 a b - 8\right) left(9 a b + 8\right)\\).",
+          "solution": "The completely factored form is \\(\\left(9 a b - 8\right) \\left(9 a b + 8\right)\\).",
           "steps": [
             {
               "explain": "Identify this as a difference of squares: a² - b² where a² = 81a²b² and b² = 64.",
@@ -13070,7 +13070,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a + 1\right) left(a + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a + 1\right) \\left(a + 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: a² + 3a + 2 needs to be factored into (a + p)(a + q).",
@@ -13105,7 +13105,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(k + 2\right) left(k + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(k + 2\right) \\left(k + 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: k² + 5k + 6 needs to be factored.",
@@ -13140,7 +13140,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(m + 1\right) left(m + 6\right)\\).",
+          "solution": "The completely factored form is \\(\\left(m + 1\right) \\left(m + 6\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: m² + 7m + 6.",
@@ -13175,7 +13175,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 3\right) left(x + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 3\right) \\left(x + 5\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: x² + 8x + 15.",
@@ -13210,7 +13210,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(y + 4\right) left(y + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(y + 4\right) \\left(y + 5\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: y² + 9y + 20.",
@@ -13245,7 +13245,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t + 2\right) left(t + 10\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t + 2\right) \\left(t + 10\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: t² + 12t + 20.",
@@ -13280,7 +13280,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 3\right) left(x - 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 3\right) \\left(x - 1\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: x² - 4x + 3.",
@@ -13315,7 +13315,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(c - 5\right) left(c - 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(c - 5\right) \\left(c - 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: c² - 7c + 10.",
@@ -13350,7 +13350,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 4\right) left(a - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 4\right) \\left(a - 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: a² - 7a + 12.",
@@ -13385,7 +13385,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(b - 6\right) left(b - 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(b - 6\right) \\left(b - 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: b² - 8b + 12.",
@@ -13420,7 +13420,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t - 1\right) left(t + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t - 1\right) \\left(t + 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: t² + t - 2.",
@@ -13455,7 +13455,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(u - 2\right) left(u + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(u - 2\right) \\left(u + 1\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: u² - u - 2.",
@@ -13490,7 +13490,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(w - 4\right) left(w + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(w - 4\right) \\left(w + 2\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: w² - 2w - 8.",
@@ -13525,7 +13525,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 2\right) left(a + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 2\right) \\left(a + 4\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: a² + 2a - 8.",
@@ -13560,7 +13560,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(p - 5\right) left(p + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(p - 5\right) \\left(p + 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: p² - 2p - 15.",
@@ -13595,7 +13595,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(y - 4\right) left(y + 7\right)\\).",
+          "solution": "The completely factored form is \\(\\left(y - 4\right) \\left(y + 7\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: y² + 3y - 28.",
@@ -13630,7 +13630,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(c - 9\right) left(c - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(c - 9\right) \\left(c - 3\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: c² - 12c + 27.",
@@ -13665,7 +13665,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(u - 7\right) left(u - 6\right)\\).",
+          "solution": "The completely factored form is \\(\\left(u - 7\right) \\left(u - 6\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: u² - 13u + 42.",
@@ -13700,7 +13700,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 10\right) left(x + 9\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 10\right) \\left(x + 9\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: x² - x - 90.",
@@ -13735,7 +13735,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 5\right) left(x + 8\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 5\right) \\left(x + 8\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: x² + 3x - 40.",
@@ -13770,7 +13770,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t - 8\right) left(t + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t - 8\right) \\left(t + 4\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: t² - 4t - 32.",
@@ -13805,7 +13805,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(p - 3\right) left(p + 12\right)\\).",
+          "solution": "The completely factored form is \\(\\left(p - 3\right) \\left(p + 12\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: p² + 9p - 36.",
@@ -13840,7 +13840,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(u - 20\right) left(u + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(u - 20\right) \\left(u + 4\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: u² - 16u - 80.",
@@ -13875,7 +13875,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t - 2\right) left(t + 25\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t - 2\right) \\left(t + 25\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a quadratic trinomial: t² + 23t - 50.",
@@ -13910,7 +13910,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 2\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(x + 2\right)^{2}\\).",
           "steps": [
             {
               "explain": "Recognize this as a perfect square trinomial: x² + 4x + 4.",
@@ -13941,7 +13941,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(y + 1\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(y + 1\right)^{2}\\).",
           "steps": [
             {
               "explain": "Recognize this as a perfect square trinomial: y² + 2y + 1.",
@@ -13972,7 +13972,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(p + 7\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(p + 7\right)^{2}\\).",
           "steps": [
             {
               "explain": "Recognize this as a perfect square trinomial: p² + 14p + 49.",
@@ -14003,7 +14003,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(m - 6\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(m - 6\right)^{2}\\).",
           "steps": [
             {
               "explain": "Recognize this as a perfect square trinomial: m² - 12m + 36.",
@@ -14034,7 +14034,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t - 8\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(t - 8\right)^{2}\\).",
           "steps": [
             {
               "explain": "Recognize this as a perfect square trinomial: t² - 16t + 64.",
@@ -14065,7 +14065,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 10\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(x + 10\right)^{2}\\).",
           "steps": [
             {
               "explain": "Identify the structure and coefficients",
@@ -14096,7 +14096,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(u - 20\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(u - 20\right)^{2}\\).",
           "steps": [
             {
               "explain": "Identify the structure and coefficients",
@@ -14127,7 +14127,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 12\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(a - 12\right)^{2}\\).",
           "steps": [
             {
               "explain": "Identify the structure and coefficients",
@@ -14149,7 +14149,7 @@
           "id": "y11a-1B-q6a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(x^2 + 6*x + \\dots = (x + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(x^2 + 6x + \\dots = (x + \\dots)^2\\)",
           "options": [
             "18, 3",
             "9, -3",
@@ -14184,7 +14184,7 @@
           "id": "y11a-1B-q6b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(y^2 + 8*y + \\dots = (y + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(y^2 + 8y + \\dots = (y + \\dots)^2\\)",
           "options": [
             "4, 16",
             "16, 4",
@@ -14324,7 +14324,7 @@
           "id": "y11a-1B-q6f",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(t^2 + -7*t + \\dots = (t + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(t^2 - 7t + \\dots = (t + \\dots)^2\\)",
           "options": [
             "24.5, 3.5",
             "3.5, 12.25",
@@ -14359,7 +14359,7 @@
           "id": "y11a-1B-q6g",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(m^2 + 50*m + \\dots = (m + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(m^2 + 50m + \\dots = (m + \\dots)^2\\)",
           "options": [
             "625, -25",
             "1250, 25",
@@ -14386,7 +14386,7 @@
           "id": "y11a-1B-q6h",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(c^2 + -13*c + \\dots = (c + \\dots)^2\\)",
+          "stem": "Find the missing terms (in order) to complete the perfect square:\n\n\\(c^2 - 13c + \\dots = (c + \\dots)^2\\)",
           "options": [
             "42.25, 6.5",
             "42.25, -6.5",
@@ -14422,7 +14422,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 1\right) left(3 x + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 1\right) \\left(3 x + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14453,7 +14453,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 2\right) left(2 x + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 2\right) \\left(2 x + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14484,7 +14484,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 5\right) left(3 x + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 5\right) \\left(3 x + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14515,7 +14515,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 2\right) left(3 x + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 2\right) \\left(3 x + 2\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14546,7 +14546,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 1\right) left(2 x - 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 1\right) \\left(2 x - 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14577,7 +14577,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 2\right) left(5 x - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 2\right) \\left(5 x - 3\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14608,7 +14608,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 1\right) left(5 x - 6\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 1\right) \\left(5 x - 6\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients for ax² + bx + c",
@@ -14639,7 +14639,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 x - 3\right) left(3 x - 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 x - 3\right) \\left(3 x - 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14674,7 +14674,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 1\right) left(2 x - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 1\right) \\left(2 x - 3\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14709,7 +14709,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 1\right) left(2 x + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 1\right) \\left(2 x + 5\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14744,7 +14744,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 1\right) left(3 x + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 1\right) \\left(3 x + 5\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14779,7 +14779,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 5\right) left(3 x - 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 5\right) \\left(3 x - 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14814,7 +14814,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 5\right) left(2 x + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 5\right) \\left(2 x + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14849,7 +14849,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 3\right) left(2 x - 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 3\right) \\left(2 x - 5\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14884,7 +14884,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 3\right) left(6 x - 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 3\right) \\left(6 x - 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14919,7 +14919,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 x - 3\right) left(3 x + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 x - 3\right) \\left(3 x + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14954,7 +14954,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 x + 3\right) left(3 x - 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 x + 3\right) \\left(3 x - 2\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -14989,7 +14989,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 4\right) left(5 x + 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 4\right) \\left(5 x + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15024,7 +15024,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 2\right) left(5 x - 6\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 2\right) \\left(5 x - 6\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15059,7 +15059,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 3\right) left(5 x - 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 3\right) \\left(5 x - 4\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15094,7 +15094,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 3\right) left(5 x + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 3\right) \\left(5 x + 4\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15129,7 +15129,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 6\right) left(5 x - 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 6\right) \\left(5 x - 2\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15164,7 +15164,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(3 x - 4\right) left(3 x + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(3 x - 4\right) \\left(3 x + 2\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15199,7 +15199,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x + 6\right) left(3 x - 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x + 6\right) \\left(3 x - 5\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15234,7 +15234,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 5\right) left(a + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 5\right) \\left(a + 5\right)\\).",
           "steps": [
             {
               "explain": "Recognize the difference of squares pattern",
@@ -15261,7 +15261,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(b left(b - 25\right)\\).",
+          "solution": "The completely factored form is \\(b \\left(b - 25\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor",
@@ -15288,7 +15288,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(c - 20\right) left(c - 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(c - 20\right) \\left(c - 5\right)\\).",
           "steps": [
             {
               "explain": "Identify the structure and coefficients",
@@ -15323,7 +15323,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(d + 10\right) left(2 d + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(d + 10\right) \\left(2 d + 5\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15358,7 +15358,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(e + 5\right) left(e^{2} + 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(e + 5\right) \\left(e^{2} + 5\right)\\).",
           "steps": [
             {
               "explain": "Identify the structure of the expression",
@@ -15389,7 +15389,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(f - 4\right) left(f + 4\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(f - 4\right) \\left(f + 4\right)\\).",
           "steps": [
             {
               "explain": "Recognize the difference of squares pattern",
@@ -15416,7 +15416,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- g^{2} left(g - 16\right)\\).",
+          "solution": "The completely factored form is \\(- g^{2} \\left(g - 16\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor",
@@ -15443,7 +15443,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(h + 8\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(h + 8\right)^{2}\\).",
           "steps": [
             {
               "explain": "Identify the structure and coefficients",
@@ -15474,7 +15474,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(i - 18\right) left(i + 2\right)\\).",
+          "solution": "The completely factored form is \\(\\left(i - 18\right) \\left(i + 2\right)\\).",
           "steps": [
             {
               "explain": "Identify coefficients of the quadratic",
@@ -15509,7 +15509,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(j + 4\right) left(5 j - 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(j + 4\right) \\left(5 j - 4\right)\\).",
           "steps": [
             {
               "explain": "Identify the expression as a quadratic trinomial in the form \\(aj^2 + bj + c\\) where \\(a = 5\\), \\(b = 16\\), and \\(c = -16\\).",
@@ -15548,7 +15548,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 k - 9\right) left(2 k + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(2 k - 9\right) \\left(2 k + 1\right)\\).",
           "steps": [
             {
               "explain": "Identify the expression as a quadratic trinomial where \\(a = 4\\), \\(b = -16\\), \\(c = -9\\).",
@@ -15583,7 +15583,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(k - 8\right) left(2 k^{2} - 3\right)\\).",
+          "solution": "The completely factored form is \\(\\left(k - 8\right) \\left(2 k^{2} - 3\right)\\).",
           "steps": [
             {
               "explain": "Group the four terms into two pairs.",
@@ -15618,7 +15618,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 2\right) left(2 a + b\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 2\right) \\left(2 a + b\right)\\).",
           "steps": [
             {
               "explain": "Group the four terms into two pairs.",
@@ -15653,7 +15653,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(3 m^{2} n^{4} left(2 m + 3 n\right)\\).",
+          "solution": "The completely factored form is \\(3 m^{2} n^{4} \\left(2 m + 3 n\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factors in both terms.",
@@ -15684,7 +15684,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(7 p - 11 q\right) left(7 p + 11 q\right)\\).",
+          "solution": "The completely factored form is \\(\\left(7 p - 11 q\right) \\left(7 p + 11 q\right)\\).",
           "steps": [
             {
               "explain": "Recognize this as a difference of squares: \\(A^2 - B^2\\).",
@@ -15715,7 +15715,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t - 10\right) left(t - 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t - 10\right) \\left(t - 4\right)\\).",
           "steps": [
             {
               "explain": "Identify as a quadratic trinomial with leading coefficient 1.",
@@ -15750,7 +15750,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t + 4\right) left(3 t - 10\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t + 4\right) \\left(3 t - 10\right)\\).",
           "steps": [
             {
               "explain": "Identify the quadratic trinomial: \\(a = 3, b = 2, c = -40\\)",
@@ -15785,7 +15785,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t + 10\right) left(5 t + 4\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t + 10\right) \\left(5 t + 4\right)\\).",
           "steps": [
             {
               "explain": "Identify the quadratic: \\(a = 5, b = 54, c = 40\\)",
@@ -15820,7 +15820,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(t + 5\right) left(5 t + 8\right)\\).",
+          "solution": "The completely factored form is \\(\\left(t + 5\right) \\left(5 t + 8\right)\\).",
           "steps": [
             {
               "explain": "Identify the quadratic: \\(a = 5, b = 33, c = 40\\)",
@@ -15855,7 +15855,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(5 t left(t^{2} + 2 t + 3\right)\\).",
+          "solution": "The completely factored form is \\(5 t \\left(t^{2} + 2 t + 3\right)\\).",
           "steps": [
             {
               "explain": "Identify the common factor in all three terms.",
@@ -15890,7 +15890,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(u - 3\right) left(u + 18\right)\\).",
+          "solution": "The completely factored form is \\(\\left(u - 3\right) \\left(u + 18\right)\\).",
           "steps": [
             {
               "explain": "Identify as a quadratic trinomial with leading coefficient 1.",
@@ -15925,7 +15925,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(3 x - 2 y\right) left(x^{2} - 5\right)\\).",
+          "solution": "The completely factored form is \\(\\left(3 x - 2 y\right) \\left(x^{2} - 5\right)\\).",
           "steps": [
             {
               "explain": "Group the four terms into two pairs.",
@@ -15991,7 +15991,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(2 a - 3\right)^{2}\\).",
+          "solution": "The completely factored form is \\(\\left(2 a - 3\right)^{2}\\).",
           "steps": [
             {
               "explain": "Check if this is a perfect square trinomial: \\(A^2 - 2AB + B^2 = (A - B)^2\\)",
@@ -16022,7 +16022,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(3 left(a - 2\right) left(a + 2\right)\\).",
+          "solution": "The completely factored form is \\(3 \\left(a - 2\right) \\left(a + 2\right)\\).",
           "steps": [
             {
               "explain": "Factor out the greatest common factor.",
@@ -16057,7 +16057,7 @@
           ],
           "answer": 3,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - y\right) left(x + y\right) left(x^{2} + y^{2}\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - y\right) \\left(x + y\right) \\left(x^{2} + y^{2}\right)\\).",
           "steps": [
             {
               "explain": "Recognize as a difference of squares with \\(x^4 = (x^2)^2\\) and \\(y^4 = (y^2)^2\\).",
@@ -16092,7 +16092,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(x left(x - 1\right) left(x + 1\right)\\).",
+          "solution": "The completely factored form is \\(x \\left(x - 1\right) \\left(x + 1\right)\\).",
           "steps": [
             {
               "explain": "Factor out the greatest common factor \\(x\\).",
@@ -16127,7 +16127,7 @@
           ],
           "answer": 1,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(5 left(x - 3\right) left(x + 2\right)\\).",
+          "solution": "The completely factored form is \\(5 \\left(x - 3\right) \\left(x + 2\right)\\).",
           "steps": [
             {
               "explain": "Factor out the GCF of 5.",
@@ -16162,7 +16162,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- y left(y - 5\right) left(y + 5\right)\\).",
+          "solution": "The completely factored form is \\(- y \\left(y - 5\right) \\left(y + 5\right)\\).",
           "steps": [
             {
               "explain": "Factor out the GCF of \\(y\\).",
@@ -16197,7 +16197,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(- left(a - 2\right) left(a + 2\right) left(a^{2} + 4\right)\\).",
+          "solution": "The completely factored form is \\(- \\left(a - 2\right) \\left(a + 2\right) \\left(a^{2} + 4\right)\\).",
           "steps": [
             {
               "explain": "Recognize as a difference of squares: \\(16 = 4^2\\) and \\(a^4 = (a^2)^2\\)",
@@ -16232,7 +16232,7 @@
           ],
           "answer": 2,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(2 left(x + 5\right) left(2 x - 3\right)\\).",
+          "solution": "The completely factored form is \\(2 \\left(x + 5\right) \\left(2 x - 3\right)\\).",
           "steps": [
             {
               "explain": "Factor out the GCF of 2.",
@@ -16267,7 +16267,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(a left(a + 1\right) left(a^{2} + 1\right)\\).",
+          "solution": "The completely factored form is \\(a \\left(a + 1\right) \\left(a^{2} + 1\right)\\).",
           "steps": [
             {
               "explain": "Factor out the GCF of \\(a\\).",
@@ -16302,7 +16302,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(c - 1\right) left(c + 1\right) left(c + 9\right)\\).",
+          "solution": "The completely factored form is \\(\\left(c - 1\right) \\left(c + 1\right) \\left(c + 9\right)\\).",
           "steps": [
             {
               "explain": "Group the four terms.",
@@ -16337,7 +16337,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(x left(x - 7\right) left(x - 1\right)\\).",
+          "solution": "The completely factored form is \\(x \\left(x - 7\right) \\left(x - 1\right)\\).",
           "steps": [
             {
               "explain": "Factor out the GCF of \\(x\\).",
@@ -16372,7 +16372,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(x - 2\right) left(x + 2\right) left(x^{2} + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(x - 2\right) \\left(x + 2\right) \\left(x^{2} + 1\right)\\).",
           "steps": [
             {
               "explain": "Treat this as a quadratic in \\(x^2\\): let \\(u = x^2\\), giving \\(u^2 - 3u - 4\\).",
@@ -16407,7 +16407,7 @@
           ],
           "answer": 0,
           "hint": "Look for common factors, difference of squares, or quadratic patterns.",
-          "solution": "The completely factored form is \\(left(a - 2\right) left(x - 1\right) left(x + 1\right)\\).",
+          "solution": "The completely factored form is \\(\\left(a - 2\right) \\left(x - 1\right) \\left(x + 1\right)\\).",
           "steps": [
             {
               "explain": "Group the terms into two pairs.",

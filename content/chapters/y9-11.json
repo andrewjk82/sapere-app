@@ -8214,7 +8214,7 @@
                 5,
                 -5
               ],
-              "script": "board.suspendUpdate(); board.create('arrow', [[-2,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-5],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.8, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 11.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -2, 5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('point', [3, 9], {name:'(3, 9)', color:'#10b981', size:3, label:{offset:[-40, 15]}}); board.create('segment', [[3,0], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('segment', [[0,9], [3,9]], {strokeColor:'#10b981', dash:2}); board.create('text', [1.5, 4, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+              "script": "board.suspendUpdate(); board.create('arrow', [[-2,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-5],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.8, -0.5, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.2, 11.5, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -2, 5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.5, 4, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
             }
           },
           "options": [
