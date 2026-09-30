@@ -711,69 +711,6 @@
           "type": "mc",
           "difficulty": "easy",
           "stem": "<svg viewBox=\"0 0 360 260\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs><marker id=\"sleek-arrow\" markerWidth=\"7\" markerHeight=\"7\" refX=\"5\" refY=\"3.5\" orient=\"auto-start-reverse\"><path d=\"M0,1 L6,3.5 L0,6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></marker></defs>\n  <path d=\"M 190.73312629199899,151.46625258399797 A 24,24 0 0,1 158.53374741600203,140.73312629199899\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"166.7184338272928\" y=\"169.8446985181216\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">90°</text>\n  <path d=\"M 169.26687370800101,108.53374741600203 A 24,24 0 0,1 185.820855000872,106.71657999651204\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"175.4170955805566\" y=\"88.25078459321367\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">3α</text>\n  <path d=\"M 185.820855000872,106.71657999651204 A 24,24 0 0,1 201.46625258399797,119.266873708001\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" />\n  <text x=\"206.2805505308383\" y=\"97.23824388412527\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">α</text>\n  <line x1=\"93.33333333333334\" y1=\"173.33333333333334\" x2=\"266.6666666666667\" y2=\"86.66666666666667\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <line x1=\"136.66666666666669\" y1=\"43.333333333333336\" x2=\"223.33333333333334\" y2=\"216.66666666666669\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n  <line x1=\"180\" y1=\"130\" x2=\"201.66666666666669\" y2=\"43.333333333333336\" stroke=\"#475569\" stroke-width=\"1.8\"  />\n</svg>\n\nFind the angle marked with \\(\\alpha\\).",
-          "figure": {
-            "geometry": {
-              "width": 260,
-              "points": {
-                "N": [
-                  0,
-                  0
-                ],
-                "K": [
-                  -2,
-                  0
-                ],
-                "L": [
-                  2,
-                  0
-                ],
-                "S": [
-                  1,
-                  2
-                ],
-                "R": [
-                  -1,
-                  2
-                ]
-              },
-              "segments": [
-                {
-                  "from": "K",
-                  "to": "L",
-                  "arrow": true
-                },
-                {
-                  "from": "L",
-                  "to": "K",
-                  "arrow": true
-                },
-                {
-                  "from": "N",
-                  "to": "S",
-                  "arrow": true
-                },
-                {
-                  "from": "N",
-                  "to": "R",
-                  "arrow": true
-                }
-              ],
-              "angles": [
-                {
-                  "at": "N",
-                  "label": "α"
-                },
-                {
-                  "at": "N",
-                  "label": "100°"
-                },
-                {
-                  "at": "N",
-                  "label": "4α"
-                }
-              ]
-            }
-          },
           "options": [
             "\\(12.5^\\circ\\)",
             "\\(22.5^\\circ\\)",
@@ -3549,78 +3486,11 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Find the angle marked with the pronumeral \\(\\alpha\\), giving reasons.",
-          "figure": {
-            "geometry": {
-              "width": 220,
-              "points": {
-                "R": [
-                  0,
-                  3
-                ],
-                "T": [
-                  -2,
-                  0
-                ],
-                "U": [
-                  2,
-                  0
-                ],
-                "S": [
-                  0,
-                  -3
-                ]
-              },
-              "segments": [
-                {
-                  "from": "R",
-                  "to": "T",
-                  "ticks": 2
-                },
-                {
-                  "from": "R",
-                  "to": "U",
-                  "ticks": 2
-                },
-                {
-                  "from": "S",
-                  "to": "T",
-                  "ticks": 3
-                },
-                {
-                  "from": "S",
-                  "to": "U",
-                  "ticks": 3
-                },
-                {
-                  "from": "T",
-                  "to": "U"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "R",
-                  "label": "α"
-                },
-                {
-                  "at": "T",
-                  "label": "60°"
-                },
-                {
-                  "at": "U",
-                  "label": "80°"
-                },
-                {
-                  "at": "S",
-                  "label": "γ"
-                }
-              ]
-            }
-          },
           "image": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMzAwIDI4MCcgd2lkdGg9JzEwMCUnIGhlaWdodD0nYXV0bycgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyBzdHlsZT0nZGlzcGxheTpibG9jazttYXJnaW46MCBhdXRvO21heC1oZWlnaHQ6MjgwcHg7Jz4KICAgIDwhLS0gQmFzZSBTaGFwZSAtLT4KICAgIDxwb2x5Z29uIHBvaW50cz0nMTUwLDMwIDI1MCwxMjAgMTUwLDI1MCA1MCwxMjAnIGZpbGw9JyNmOGZhZmMnIHN0cm9rZT0nIzY0NzQ4Yicgc3Ryb2tlLXdpZHRoPScxLjUnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz4KICAgIDxsaW5lIHgxPScxNTAnIHkxPSczMCcgeDI9JzI1MCcgeTI9JzEyMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzI1MCcgeTE9JzEyMCcgeDI9JzE1MCcgeTI9JzI1MCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzE1MCcgeTE9JzI1MCcgeDI9JzUwJyB5Mj0nMTIwJyBzdHJva2U9JyMxZTI5M2InIHN0cm9rZS13aWR0aD0nMi41Jy8+CiAgICA8bGluZSB4MT0nNTAnIHkxPScxMjAnIHgyPScxNTAnIHkyPSczMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzUwJyB5MT0nMTIwJyB4Mj0nMjUwJyB5Mj0nMTIwJyBzdHJva2U9JyM5NGEzYjgnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWRhc2hhcnJheT0nNSw1Jy8+CiAgICAKICAgIDwhLS0gQW5nbGUgQXJjcyAtLT4KICAgIDxwYXRoIGQ9Ik0gMTMxLjQyLDQ2LjcyIFEgMTUwLDYwIDE2OC41OCw0Ni43MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDxwYXRoIGQ9Ik0gMTM0LjgsMjMwLjIgUSAxNTAsMjEwIDE2NS4yLDIzMC4yIiBmaWxsPSJub25lIiBzdHJva2U9IiMzYjgyZjYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHBhdGggZD0iTSA2OC41OCwxMDMuMjggUSA3OCwxMDkuMyA3NSwxMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNiODJmNiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8cGF0aCBkPSJNIDc1LDEyMCBRIDc2LjksMTMzLjIgNjUuMiwxMzkuOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDxwYXRoIGQ9Ik0gMjI1LDEyMCBRIDIyMy4xLDEzMy4yIDIzNC44LDEzOS44IiBmaWxsPSJub25lIiBzdHJva2U9IiMzYjgyZjYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgCiAgICA8IS0tIFRpY2tzIC0tPgogICAgPCEtLSBSVCAoU2xvcGUgLTAuOSwgQW5nbGUgLTQyIGRlZykgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAsIDc1KSByb3RhdGUoLTQyKSI+CiAgICAgIDxsaW5lIHgxPSItMy41IiB5MT0iLTciIHgyPSItMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjMuNSIgeTE9Ii03IiB4Mj0iMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwvZz4KICAgIDwhLS0gUlUgKFNsb3BlIDAuOSwgQW5nbGUgNDIgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCwgNzUpIHJvdGF0ZSg0MikiPgogICAgICA8bGluZSB4MT0iLTMuNSIgeTE9Ii03IiB4Mj0iLTMuNSIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDxsaW5lIHgxPSIzLjUiIHkxPSItNyIgeDI9IjMuNSIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8L2c+CiAgICA8IS0tIFNUIChTbG9wZSAxLjMsIEFuZ2xlIDUyLjQgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwgMTg1KSByb3RhdGUoNTIuNCkiPgogICAgICA8bGluZSB4MT0iLTQuNSIgeTE9Ii03IiB4Mj0iLTQuNSIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iLTciIHgyPSIwIiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjQuNSIgeTE9Ii03IiB4Mj0iNC41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwvZz4KICAgIDwhLS0gU1UgKFNsb3BlIC0xLjMsIEFuZ2xlIC01Mi40IGRlZykgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDAsIDE4NSkgcm90YXRlKC01Mi40KSI+CiAgICAgIDxsaW5lIHgxPSItNC41IiB5MT0iLTciIHgyPSItNC41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSItNyIgeDI9IjAiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iNC41IiB5MT0iLTciIHgyPSI0LjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogICAgCiAgICA8IS0tIFZlcnRleCBMYWJlbHMgLS0+CiAgICA8dGV4dCB4PScxNTAnIHk9JzIwJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5SPC90ZXh0PgogICAgPHRleHQgeD0nMzUnIHk9JzEyNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzQ3NTU2OScgdGV4dC1hbmNob3I9J21pZGRsZSc+VDwvdGV4dD4KICAgIDx0ZXh0IHg9JzI2NScgeT0nMTI1JyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5VPC90ZXh0PgogICAgPHRleHQgeD0nMTUwJyB5PScyNzAnIGZvbnQtZmFtaWx5PSdzeXN0ZW0tdWksIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyM0NzU1NjknIHRleHQtYW5jaG9yPSdtaWRkbGUnPlM8L3RleHQ+CiAgICAKICAgIDwhLS0gQW5nbGVzIFRleHQgLS0+CiAgICA8dGV4dCB4PScxNTAnIHk9JzczJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjZWE1ODBjJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz7OsTwvdGV4dD4KICAgIDx0ZXh0IHg9JzE1MCcgeT0nMjAyJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjZWE1ODBjJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz7OszwvdGV4dD4KICAgIAogICAgPCEtLSBMZWZ0IHNpZGUgLS0+CiAgICA8dGV4dCB4PSc5NScgeT0nMTA4JyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE1JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjMWUyOTNiJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz42MMKwPC90ZXh0PgogICAgPHRleHQgeD0nOTUnIHk9JzE0MicgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2VhNTgwYycgdGV4dC1hbmNob3I9J21pZGRsZSc+zrI8L3RleHQ+CiAgICAKICAgIDwhLS0gUmlnaHQgc2lkZSAtLT4KICAgIDx0ZXh0IHg9JzIwNScgeT0nMTQyJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE1JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjMWUyOTNiJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz44MMKwPC90ZXh0PgogICAgCjwvc3ZnPg==",
           "options": [
             "\\\\(30^\\\\circ\\\\) (Isosceles triangle properties)",
             "\\\\(60^\\\\circ\\\\) (Angle sum of a triangle)",
-            "\\\\(60^\\\\circ\\\\) (Isosceles triangle properties)",
+            "\\(120^\\circ\\) (Isosceles triangle properties)",
             "\\\\(70^\\\\circ\\\\) (Vertically opposite angles)"
           ],
           "answer": 1,
@@ -3654,73 +3524,6 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Find the angle marked with the pronumeral \\(\\beta\\), giving reasons.",
-          "figure": {
-            "geometry": {
-              "width": 220,
-              "points": {
-                "R": [
-                  0,
-                  3
-                ],
-                "T": [
-                  -2,
-                  0
-                ],
-                "U": [
-                  2,
-                  0
-                ],
-                "S": [
-                  0,
-                  -3
-                ]
-              },
-              "segments": [
-                {
-                  "from": "R",
-                  "to": "T",
-                  "ticks": 2
-                },
-                {
-                  "from": "R",
-                  "to": "U",
-                  "ticks": 2
-                },
-                {
-                  "from": "S",
-                  "to": "T",
-                  "ticks": 3
-                },
-                {
-                  "from": "S",
-                  "to": "U",
-                  "ticks": 3
-                },
-                {
-                  "from": "T",
-                  "to": "U"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "R",
-                  "label": "α"
-                },
-                {
-                  "at": "T",
-                  "label": "60°"
-                },
-                {
-                  "at": "U",
-                  "label": "80°"
-                },
-                {
-                  "at": "S",
-                  "label": "γ"
-                }
-              ]
-            }
-          },
           "image": "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PScwIDAgMzAwIDI4MCcgd2lkdGg9JzEwMCUnIGhlaWdodD0nYXV0bycgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyBzdHlsZT0nZGlzcGxheTpibG9jazttYXJnaW46MCBhdXRvO21heC1oZWlnaHQ6MjgwcHg7Jz4KICAgIDxwb2x5Z29uIHBvaW50cz0nMTUwLDMwIDI1MCwxMjAgMTUwLDI1MCA1MCwxMjAnIGZpbGw9JyNmOGZhZmMnIHN0cm9rZT0nIzY0NzQ4Yicgc3Ryb2tlLXdpZHRoPScxLjUnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnLz4KICAgIDxsaW5lIHgxPScxNTAnIHkxPSczMCcgeDI9JzI1MCcgeTI9JzEyMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzI1MCcgeTE9JzEyMCcgeDI9JzE1MCcgeTI9JzI1MCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzE1MCcgeTE9JzI1MCcgeDI9JzUwJyB5Mj0nMTIwJyBzdHJva2U9JyMxZTI5M2InIHN0cm9rZS13aWR0aD0nMi41Jy8+CiAgICA8bGluZSB4MT0nNTAnIHkxPScxMjAnIHgyPScxNTAnIHkyPSczMCcgc3Ryb2tlPScjMWUyOTNiJyBzdHJva2Utd2lkdGg9JzIuNScvPgogICAgPGxpbmUgeDE9JzUwJyB5MT0nMTIwJyB4Mj0nMjUwJyB5Mj0nMTIwJyBzdHJva2U9JyM5NGEzYjgnIHN0cm9rZS13aWR0aD0nMicgc3Ryb2tlLWRhc2hhcnJheT0nNSw1Jy8+CiAgICAKICAgIDwhLS0gVGlja3MgLS0+CiAgICA8IS0tIFJUIChTbG9wZSAtMC45LCBBbmdsZSAtNDIgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwgNzUpIHJvdGF0ZSgtNDIpIj4KICAgICAgPGxpbmUgeDE9Ii0zLjUiIHkxPSItNyIgeDI9Ii0zLjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iMy41IiB5MT0iLTciIHgyPSIzLjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogICAgPCEtLSBSVSAoU2xvcGUgMC45LCBBbmdsZSA0MiBkZWcpIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAwLCA3NSkgcm90YXRlKDQyKSI+CiAgICAgIDxsaW5lIHgxPSItMy41IiB5MT0iLTciIHgyPSItMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjMuNSIgeTE9Ii03IiB4Mj0iMy41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwvZz4KICAgIDwhLS0gU1QgKFNsb3BlIDEuMywgQW5nbGUgNTIuNCBkZWcpIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwLCAxODUpIHJvdGF0ZSg1Mi40KSI+CiAgICAgIDxsaW5lIHgxPSItNC41IiB5MT0iLTciIHgyPSItNC41IiB5Mj0iNyIgc3Ryb2tlPSIjMWUyOTNiIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSItNyIgeDI9IjAiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iNC41IiB5MT0iLTciIHgyPSI0LjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPC9nPgogICAgPCEtLSBTVSAoU2xvcGUgLTEuMywgQW5nbGUgLTUyLjQgZGVnKSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCwgMTg1KSByb3RhdGUoLTUyLjQpIj4KICAgICAgPGxpbmUgeDE9Ii00LjUiIHkxPSItNyIgeDI9Ii00LjUiIHkyPSI3IiBzdHJva2U9IiMxZTI5M2IiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9Ii03IiB4Mj0iMCIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDxsaW5lIHgxPSI0LjUiIHkxPSItNyIgeDI9IjQuNSIgeTI9IjciIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8L2c+CiAgICAKICAgIDwhLS0gVGV4dCBMYWJlbHMgLS0+CiAgICA8dGV4dCB4PScxNTAnIHk9JzIwJyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5SPC90ZXh0PgogICAgPHRleHQgeD0nMzUnIHk9JzEyNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzQ3NTU2OScgdGV4dC1hbmNob3I9J21pZGRsZSc+VDwvdGV4dD4KICAgIDx0ZXh0IHg9JzI2NScgeT0nMTI1JyBmb250LWZhbWlseT0nc3lzdGVtLXVpLCBzYW5zLXNlcmlmJyBmb250LXNpemU9JzE2JyBmb250LXdlaWdodD0nNzAwJyBmaWxsPScjNDc1NTY5JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz5VPC90ZXh0PgogICAgPHRleHQgeD0nMTUwJyB5PScyNzAnIGZvbnQtZmFtaWx5PSdzeXN0ZW0tdWksIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyM0NzU1NjknIHRleHQtYW5jaG9yPSdtaWRkbGUnPlM8L3RleHQ+CiAgICAKICAgIDwhLS0gQW5nbGVzIC0tPgogICAgPHRleHQgeD0nMTUwJyB5PSc2NScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2VhNTgwYycgdGV4dC1hbmNob3I9J21pZGRsZSc+zrE8L3RleHQ+CiAgICA8dGV4dCB4PScxNTAnIHk9JzIxNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNicgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nI2VhNTgwYycgdGV4dC1hbmNob3I9J21pZGRsZSc+zrM8L3RleHQ+CiAgICAKICAgIDwhLS0gTGVmdCBzaWRlIC0tPgogICAgPHRleHQgeD0nOTAnIHk9JzEwNScgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNScgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzAyODRjNycgdGV4dC1hbmNob3I9J21pZGRsZSc+NjDCsDwvdGV4dD4KICAgIDx0ZXh0IHg9JzkwJyB5PScxMzgnIGZvbnQtZmFtaWx5PSdzeXN0ZW0tdWksIHNhbnMtc2VyaWYnIGZvbnQtc2l6ZT0nMTYnIGZvbnQtd2VpZ2h0PSc3MDAnIGZpbGw9JyNlYTU4MGMnIHRleHQtYW5jaG9yPSdtaWRkbGUnPs6yPC90ZXh0PgogICAgCiAgICA8IS0tIFJpZ2h0IHNpZGU6IG1vdmVkIGRvd24gdG8gYmUgY2xlYXJseSBiZWxvdyB0aGUgZGFzaGVkIGxpbmUgLS0+CiAgICA8dGV4dCB4PScyMTAnIHk9JzEzOCcgZm9udC1mYW1pbHk9J3N5c3RlbS11aSwgc2Fucy1zZXJpZicgZm9udC1zaXplPScxNScgZm9udC13ZWlnaHQ9JzcwMCcgZmlsbD0nIzAyODRjNycgdGV4dC1hbmNob3I9J21pZGRsZSc+ODDCsDwvdGV4dD4KICAgIAo8L3N2Zz4=",
           "options": [
             "\\\\(10^\\\\circ\\\\) (Isosceles triangle properties)",
