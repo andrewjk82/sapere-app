@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useState, useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X, Loader2 } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -10,7 +10,8 @@ import { useAuth } from '../context/AuthContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import { toThumbnailUrl, getChapterCheatSheets } from '../utils/cheatSheetUtils';
-import { toDrivePreviewUrl, toDriveOpenUrl } from '../utils/homework';
+import { toDrivePreviewUrl, toDriveOpenUrl, extractDriveFileId } from '../utils/homework';
+import { loadCachedPdf, cachePdf } from '../utils/homeworkLocalStore';
 import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
@@ -31,6 +32,59 @@ const LearningPath = ({ profile }) => {
   const [showGraph3D, setShowGraph3D] = useState(false);
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [pdfPreview, setPdfPreview] = useState(null); // { url, openUrl, title } | null — topic worksheet
+
+  // ── Cached PDF resolver: identical to HomeworkWorkspace's approach ──
+  const [resolvedPdfSrc, setResolvedPdfSrc] = useState('');
+  const [pdfResolving, setPdfResolving] = useState(false);
+  const pdfObjUrlRef = useRef('');
+
+  useEffect(() => {
+    // Revoke previous blob URL
+    if (pdfObjUrlRef.current) { URL.revokeObjectURL(pdfObjUrlRef.current); pdfObjUrlRef.current = ''; }
+    setResolvedPdfSrc('');
+    if (!pdfPreview?.url) return;
+
+    // Extract the raw Drive URL from the gview wrapper
+    const rawUrl = pdfPreview.openUrl || pdfPreview.url;
+    const fileId = extractDriveFileId(rawUrl);
+    if (!fileId) { setResolvedPdfSrc(pdfPreview.url); return; }
+
+    let cancelled = false;
+    setPdfResolving(true);
+
+    (async () => {
+      // 1) Check local cache
+      const cached = await loadCachedPdf(fileId);
+      if (!cancelled && cached) {
+        const u = URL.createObjectURL(cached);
+        pdfObjUrlRef.current = u;
+        setResolvedPdfSrc(u);
+        setPdfResolving(false);
+        return;
+      }
+      // 2) Try fetching directly
+      try {
+        const res = await fetch(`https://drive.google.com/uc?export=download&id=${fileId}`);
+        if (!res.ok) throw new Error(res.status);
+        const ct = res.headers.get('content-type') || '';
+        if (!ct.includes('pdf') && !ct.includes('octet-stream')) throw new Error('not pdf');
+        const blob = await res.blob();
+        if (cancelled) return;
+        await cachePdf(fileId, blob);
+        const u = URL.createObjectURL(blob);
+        pdfObjUrlRef.current = u;
+        setResolvedPdfSrc(u);
+      } catch {
+        // 3) Fall back to gview
+        if (!cancelled) setResolvedPdfSrc(pdfPreview.url);
+      } finally {
+        if (!cancelled) setPdfResolving(false);
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [pdfPreview]);
+
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -584,7 +638,16 @@ const LearningPath = ({ profile }) => {
                 <X size={20} />
               </button>
             </div>
-            <iframe title="Worksheet" src={pdfPreview.url} allow="autoplay" style={{ flex: 1, width: '100%', border: 0, background: '#f1f5f9' }} />
+            {resolvedPdfSrc ? (
+              <iframe title="Worksheet" src={resolvedPdfSrc} allow="autoplay" style={{ flex: 1, width: '100%', border: 0, background: '#f1f5f9' }} />
+            ) : (
+              <div style={{ flex: 1, display: 'grid', placeItems: 'center', background: '#f1f5f9' }}>
+                <div style={{ textAlign: 'center' }}>
+                  <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa', marginBottom: 8 }} />
+                  <div style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem' }}>Loading worksheet…</div>
+                </div>
+              </div>
+            )}
           </div>
         </div>,
         document.body,
