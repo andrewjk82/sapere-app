@@ -3264,9 +3264,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(11c - 6c\\).",
           "options": [
             "\\(5c\\)",
-            "\\\\(-\\(5c\\)\\\\)",
-            "\\\\(\\(7c\\)\\\\)",
-            "\\\\(\\(3c\\)\\\\)"
+            "\\(-5c\\)",
+            "\\(7c\\)",
+            "\\(3c\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3293,9 +3293,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(15d - 8d\\).",
           "options": [
             "\\(7d\\)",
-            "\\\\(-\\(7d\\)\\\\)",
-            "\\\\(\\(9d\\)\\\\)",
-            "\\\\(\\(5d\\)\\\\)"
+            "\\(-7d\\)",
+            "\\(9d\\)",
+            "\\(5d\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3351,9 +3351,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(9a^2 - 6a^2\\).",
           "options": [
             "\\(3a^2\\)",
-            "\\\\(-\\(3a^2\\)\\\\)",
-            "\\\\(\\(5a^2\\)\\\\)",
-            "\\\\(\\(1a^2\\)\\\\)"
+            "\\(-3a^2\\)",
+            "\\(5a^2\\)",
+            "\\(1a^2\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3438,9 +3438,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(6m - 4m - 9m\\).",
           "options": [
             "\\(-7m\\)",
-            "\\\\(\\(+7m\\)\\\\)",
-            "\\\\(-\\(-7m\\)\\\\)",
-            "\\\\(\\(-9m\\)\\\\)"
+            "\\(+7m\\)",
+            "\\(--7m\\)",
+            "\\(-9m\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3496,9 +3496,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(9a^2 + 5a^2 - 12a^2\\).",
           "options": [
             "\\(2a^2\\)",
-            "\\\\(-\\(2a^2\\)\\\\)",
-            "\\\\(\\(4a^2\\)\\\\)",
-            "\\\\(\\(0a^2\\)\\\\)"
+            "\\(-2a^2\\)",
+            "\\(4a^2\\)",
+            "\\(0a^2\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3583,9 +3583,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(3mn - 7mn + 10mn\\).",
           "options": [
             "\\(6mn\\)",
-            "\\\\(-\\(6mn\\)\\\\)",
-            "\\\\(\\(8mn\\)\\\\)",
-            "\\\\(\\(4mn\\)\\\\)"
+            "\\(-6mn\\)",
+            "\\(8mn\\)",
+            "\\(4mn\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3612,9 +3612,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(15xy - 8xy - 20xy\\).",
           "options": [
             "\\(-13xy\\)",
-            "\\\\(\\(+13xy\\)\\\\)",
-            "\\\\(-\\(-13xy\\)\\\\)",
-            "\\\\(\\(-15xy\\)\\\\)"
+            "\\(+13xy\\)",
+            "\\(--13xy\\)",
+            "\\(-15xy\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3641,9 +3641,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(14a^2d - 10a^2d - 6a^2d\\).",
           "options": [
             "\\(-2a^2d\\)",
-            "\\\\(\\(+2a^2d\\)\\\\)",
-            "\\\\(-\\(-2a^2d\\)\\\\)",
-            "\\\\(\\(-4a^2d\\)\\\\)"
+            "\\(+2a^2d\\)",
+            "\\(--2a^2d\\)",
+            "\\(-4a^2d\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3695,9 +3695,9 @@
           "stem": "Find the missing term to complete the statement: \\(5b - \\text{?} = 2b\\).",
           "options": [
             "\\(3b\\)",
-            "\\\\(-\\(3b\\)\\\\)",
-            "\\\\(\\(5b\\)\\\\)",
-            "\\\\(\\(1b\\)\\\\)"
+            "\\(-3b\\)",
+            "\\(5b\\)",
+            "\\(1b\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3745,9 +3745,9 @@
           "stem": "Find the missing term to complete the statement: \\(11pq - \\text{?} = 6pq\\).",
           "options": [
             "\\(5pq\\)",
-            "\\\\(-\\(5pq\\)\\\\)",
-            "\\\\(\\(7pq\\)\\\\)",
-            "\\\\(\\(3pq\\)\\\\)"
+            "\\(-5pq\\)",
+            "\\(7pq\\)",
+            "\\(3pq\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3820,9 +3820,9 @@
           "stem": "Find the missing term to complete the statement: \\(8ab - \\text{?} = -2ab\\).",
           "options": [
             "\\(10ab\\)",
-            "\\\\(-\\(10ab\\)\\\\)",
-            "\\\\(\\(12ab\\)\\\\)",
-            "\\\\(\\(8ab\\)\\\\)"
+            "\\(-10ab\\)",
+            "\\(12ab\\)",
+            "\\(8ab\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3845,9 +3845,9 @@
           "stem": "Find the missing term to complete the statement: \\(5m^2n - \\text{?} = -6m^2n\\).",
           "options": [
             "\\(11m^2n\\)",
-            "\\\\(-\\(11m^2n\\)\\\\)",
-            "\\\\(\\(13m^2n\\)\\\\)",
-            "\\\\(\\(9m^2n\\)\\\\)"
+            "\\(-11m^2n\\)",
+            "\\(13m^2n\\)",
+            "\\(9m^2n\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3870,9 +3870,9 @@
           "stem": "Find the missing term to complete the statement: \\(-7a^2b + \\text{?} = a^2b\\).",
           "options": [
             "\\(8a^2b\\)",
-            "\\\\(-\\(8a^2b\\)\\\\)",
-            "\\\\(\\(10a^2b\\)\\\\)",
-            "\\\\(\\(6a^2b\\)\\\\)"
+            "\\(-8a^2b\\)",
+            "\\(10a^2b\\)",
+            "\\(6a^2b\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -3895,9 +3895,9 @@
           "stem": "Find the missing term to complete the statement: \\(-6lm + \\text{?} = lm\\).",
           "options": [
             "\\(7lm\\)",
-            "\\\\(-\\(7lm\\)\\\\)",
-            "\\\\(\\(9lm\\)\\\\)",
-            "\\\\(\\(5lm\\)\\\\)"
+            "\\(-7lm\\)",
+            "\\(9lm\\)",
+            "\\(5lm\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4020,9 +4020,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(9 - 2m + 5 + 7m\\).",
           "options": [
             "\\(5m + 14\\)",
-            "\\\\(\\(5m - 14\\)\\\\)",
-            "\\\\(-\\(5m + 14\\)\\\\)",
-            "\\\\(\\(7m + 14\\)\\\\)"
+            "\\(5m - 14\\)",
+            "\\(-5m + 14\\)",
+            "\\(7m + 14\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4120,9 +4120,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(-3x^2 + 5x - 2x^2 + 7x\\).",
           "options": [
             "\\(-5x^2 + 12x\\)",
-            "\\\\(\\(+5x^2 - 12x\\)\\\\)",
-            "\\\\(-\\(-5x^2 + 12x\\)\\\\)",
-            "\\\\(\\(+5x^2 + 12x\\)\\\\)"
+            "\\(+5x^2 - 12x\\)",
+            "\\(--5x^2 + 12x\\)",
+            "\\(+5x^2 + 12x\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4395,9 +4395,9 @@
           "stem": "Simplify the expression by collecting like terms: \\(8x^2 - 12x^2 + y^2 + 12y^2\\).",
           "options": [
             "\\(-4x^2 + 13y^2\\)",
-            "\\\\(\\(+4x^2 - 13y^2\\)\\\\)",
-            "\\\\(-\\(-4x^2 + 13y^2\\)\\\\)",
-            "\\\\(\\(+4x^2 + 13y^2\\)\\\\)"
+            "\\(+4x^2 - 13y^2\\)",
+            "\\(--4x^2 + 13y^2\\)",
+            "\\(+4x^2 + 13y^2\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4730,9 +4730,9 @@
           "stem": "Simplify the fractional expression: \\(\\frac{z}{3} - \\frac{z}{5}\\).",
           "options": [
             "\\(\\frac{2z}{15}\\)",
-            "\\\\(-\\(\\frac{2z}{15}\\)\\\\)",
-            "\\\\(\\(\\frac{4z}{15}\\)\\\\)",
-            "\\\\(\\(\\frac{0z}{15}\\)\\\\)"
+            "\\(-\\frac{2z}{15}\\)",
+            "\\(\\frac{4z}{15}\\)",
+            "\\(\\frac{0z}{15}\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4808,9 +4808,9 @@
           "stem": "Simplify the fractional expression: \\(\\frac{x}{2} - \\frac{x}{7}\\).",
           "options": [
             "\\(\\frac{5x}{14}\\)",
-            "\\\\(-\\(\\frac{5x}{14}\\)\\\\)",
-            "\\\\(\\(\\frac{7x}{14}\\)\\\\)",
-            "\\\\(\\(\\frac{3x}{14}\\)\\\\)"
+            "\\(-\\frac{5x}{14}\\)",
+            "\\(\\frac{7x}{14}\\)",
+            "\\(\\frac{3x}{14}\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4834,9 +4834,9 @@
           "stem": "Simplify the fractional expression: \\(\\frac{x}{3} - \\frac{x}{7}\\).",
           "options": [
             "\\(\\frac{4x}{21}\\)",
-            "\\\\(-\\(\\frac{4x}{21}\\)\\\\)",
-            "\\\\(\\(\\frac{6x}{21}\\)\\\\)",
-            "\\\\(\\(\\frac{2x}{21}\\)\\\\)"
+            "\\(-\\frac{4x}{21}\\)",
+            "\\(\\frac{6x}{21}\\)",
+            "\\(\\frac{2x}{21}\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -4912,9 +4912,9 @@
           "stem": "Simplify the fractional expression: \\(c - \\frac{c}{7}\\).",
           "options": [
             "\\(\\frac{6c}{7}\\)",
-            "\\\\(-\\(\\frac{6c}{7}\\)\\\\)",
-            "\\\\(\\(\\frac{8c}{7}\\)\\\\)",
-            "\\\\(\\(\\frac{4c}{7}\\)\\\\)"
+            "\\(-\\frac{6c}{7}\\)",
+            "\\(\\frac{8c}{7}\\)",
+            "\\(\\frac{4c}{7}\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -5042,9 +5042,9 @@
           "stem": "Simplify the fractional expression: \\(\\frac{7x}{11} - \\frac{x}{2}\\).",
           "options": [
             "\\(\\frac{3x}{22}\\)",
-            "\\\\(-\\(\\frac{3x}{22}\\)\\\\)",
-            "\\\\(\\(\\frac{5x}{22}\\)\\\\)",
-            "\\\\(\\(\\frac{1x}{22}\\)\\\\)"
+            "\\(-\\frac{3x}{22}\\)",
+            "\\(\\frac{5x}{22}\\)",
+            "\\(\\frac{1x}{22}\\)"
           ],
           "answer": 0,
           "solution": "0",
@@ -6138,7 +6138,7 @@
           "difficulty": "easy",
           "stem": "Simplify the algebraic multiplication expression: \\\\(8d \\\times (-9)\\\\)",
           "options": [
-            "\\\\(+72d\\\\)",
+            "\\(+72d\\\\)",
             "\\\\(-72d\\\\)",
             "\\\\(72d\\\\)",
             "\\\\(-74d\\\\)"
@@ -6852,7 +6852,7 @@
           "stem": "Find the missing term to make the equation true: \\\\(-5b \\\times \\\text{[?]} = 10b^2\\\\)",
           "options": [
             "\\\\(-2b\\\\)",
-            "\\\\(+2b\\\\)",
+            "\\(+2b\\\\)",
             "\\\\(2b\\\\)",
             "\\\\(-4b\\\\)"
           ],
@@ -6882,7 +6882,7 @@
           "difficulty": "easy",
           "stem": "Find the missing term to make the equation true: \\\\(-3\\\\ell \\\times \\\text{[?]} = 24\\\\ell^2\\\\)",
           "options": [
-            "\\\\(+8\\\\ell\\\\)",
+            "\\(+8\\\\ell\\\\)",
             "\\\\(8\\\\ell\\\\)",
             "\\\\(-8\\\\ell\\\\)",
             "\\\\(-10\\\\ell\\\\)"
@@ -6975,7 +6975,7 @@
           "difficulty": "easy",
           "stem": "Find the missing term to make the equation true: \\\\(-3ab \\\times \\\text{[?]} = 15ab^2c\\\\)",
           "options": [
-            "\\\\(+5bc\\\\)",
+            "\\(+5bc\\\\)",
             "\\\\(-5bc\\\\)",
             "\\\\(5bc\\\\)",
             "\\\\(-7bc\\\\)"
@@ -7006,7 +7006,7 @@
           "difficulty": "easy",
           "stem": "Find the missing term to make the equation true: \\\\(-2de \\\times \\\text{[?]} = 10d^2ef\\\\)",
           "options": [
-            "\\\\(+5df\\\\)",
+            "\\(+5df\\\\)",
             "\\\\(5df\\\\)",
             "\\\\(-5df\\\\)",
             "\\\\(-7df\\\\)"
@@ -7316,7 +7316,7 @@
           "difficulty": "easy",
           "stem": "Simplify the algebraic expression: \\\\(-18x^2 \\\\div 9\\\\)",
           "options": [
-            "\\\\(+2x^2\\\\)",
+            "\\(+2x^2\\\\)",
             "\\\\(2x^2\\\\)",
             "\\\\(-2x^2\\\\)",
             "\\\\(-4x^2\\\\)"
@@ -7472,7 +7472,7 @@
           "stem": "Simplify the algebraic fraction by cancelling common factors: \\\\(-\\\frac{12m}{18}\\\\)",
           "options": [
             "\\\\(-\\\frac{2m}{3}\\\\)",
-            "\\\\(+\\\frac{2m}{3}\\\\)",
+            "\\(+\\\frac{2m}{3}\\\\)",
             "\\\\(\\\frac{2m}{3}\\\\)",
             "\\\\(-\\\frac{4m}{3}\\\\)"
           ],
@@ -7596,7 +7596,7 @@
           "stem": "Simplify the algebraic fraction by cancelling common factors: \\\\(-\\\frac{3ab}{b}\\\\)",
           "options": [
             "\\\\(-3a\\\\)",
-            "\\\\(+3a\\\\)",
+            "\\(+3a\\\\)",
             "\\\\(3a\\\\)",
             "\\\\(-5a\\\\)"
           ],
@@ -7689,7 +7689,7 @@
           "stem": "Simplify the algebraic fraction by cancelling common factors: \\\\(-\\\frac{4xy}{8x}\\\\)",
           "options": [
             "\\\\(-\\\frac{y}{2}\\\\)",
-            "\\\\(+\\\frac{y}{2}\\\\)",
+            "\\(+\\\frac{y}{2}\\\\)",
             "\\\\(\\\frac{y}{2}\\\\)",
             "\\\\(-\\\frac{y}{4}\\\\)"
           ],
@@ -12986,9 +12986,9 @@
           "stem": "Expand the expression using the distributive law: \\(-\\frac{1}{3}(12l-9)\\).",
           "options": [
             "\\(-4l+3\\)",
-            "\\\\(\\(+4l-3\\)\\\\)",
-            "\\\\(-\\(-4l+3\\)\\\\)",
-            "\\\\(\\(+4l+3\\)\\\\)"
+            "\\(+4l-3\\)",
+            "\\(--4l+3\\)",
+            "\\(+4l+3\\)"
           ],
           "answer": 0,
           "hint": "Distribute the fraction to both terms and simplify the fractions.",
@@ -13013,9 +13013,9 @@
           "stem": "Expand the expression using the distributive law: \\(-\\frac{1}{5}(20p-25)\\).",
           "options": [
             "\\(-4p+5\\)",
-            "\\\\(\\(+4p-5\\)\\\\)",
-            "\\\\(-\\(-4p+5\\)\\\\)",
-            "\\\\(\\(+4p+5\\)\\\\)"
+            "\\(+4p-5\\)",
+            "\\(--4p+5\\)",
+            "\\(+4p+5\\)"
           ],
           "answer": 0,
           "hint": "Distribute the fraction to both terms and simplify the fractions.",
@@ -13040,9 +13040,9 @@
           "stem": "Expand the expression using the distributive law: \\(-\\frac{3}{4}(12m-16)\\).",
           "options": [
             "\\(-9m+12\\)",
-            "\\\\(\\(+9m-12\\)\\\\)",
-            "\\\\(-\\(-9m+12\\)\\\\)",
-            "\\\\(\\(+9m+12\\)\\\\)"
+            "\\(+9m-12\\)",
+            "\\(--9m+12\\)",
+            "\\(+9m+12\\)"
           ],
           "answer": 0,
           "hint": "Distribute the fraction to both terms and simplify the fractions.",
@@ -13525,9 +13525,9 @@
           "difficulty": "easy",
           "stem": "Expand: \\(-p(3p-5)\\).",
           "options": [
-            "\\\\(\\(+3p^2-5p\\)\\\\)",
-            "\\\\(-\\(-3p^2+5p\\)\\\\)",
-            "\\\\(\\(+3p^2+5p\\)\\\\)",
+            "\\(+3p^2-5p\\)",
+            "\\(--3p^2+5p\\)",
+            "\\(+3p^2+5p\\)",
             "\\(-3p^2+5p\\)"
           ],
           "answer": 3,
@@ -13634,9 +13634,9 @@
           "stem": "Expand: \\(-5a(2a-3)\\).",
           "options": [
             "\\(-10a^2+15a\\)",
-            "\\\\(\\(+10a^2-15a\\)\\\\)",
-            "\\\\(-\\(-10a^2+15a\\)\\\\)",
-            "\\\\(\\(+10a^2+15a\\)\\\\)"
+            "\\(+10a^2-15a\\)",
+            "\\(--10a^2+15a\\)",
+            "\\(+10a^2+15a\\)"
           ],
           "answer": 0,
           "hint": "Variable terms multiply: e.g. \\(x \\times x = x^2\\).",
@@ -13796,9 +13796,9 @@
           "stem": "Expand the expression: \\(-3p(2p-5q)\\).",
           "options": [
             "\\(-6p^2+15pq\\)",
-            "\\\\(\\(+6p^2-15pq\\)\\\\)",
-            "\\\\(-\\(-6p^2+15pq\\)\\\\)",
-            "\\\\(\\(+6p^2+15pq\\)\\\\)"
+            "\\(+6p^2-15pq\\)",
+            "\\(--6p^2+15pq\\)",
+            "\\(+6p^2+15pq\\)"
           ],
           "answer": 0,
           "hint": "Keep track of multiple variables and their powers.",
@@ -13930,9 +13930,9 @@
           "difficulty": "easy",
           "stem": "Expand the expression: \\(-5b(3a-2b)\\).",
           "options": [
-            "\\\\(\\(+15ab-10b^2\\)\\\\)",
-            "\\\\(-\\(-15ab+10b^2\\)\\\\)",
-            "\\\\(\\(+15ab+10b^2\\)\\\\)",
+            "\\(+15ab-10b^2\\)",
+            "\\(--15ab+10b^2\\)",
+            "\\(+15ab+10b^2\\)",
             "\\(-15ab+10b^2\\)"
           ],
           "answer": 3,
@@ -13957,9 +13957,9 @@
           "difficulty": "easy",
           "stem": "Expand the expression: \\(-8x(2y-5x)\\).",
           "options": [
-            "\\\\(\\(+16xy-40x^2\\)\\\\)",
-            "\\\\(-\\(-16xy+40x^2\\)\\\\)",
-            "\\\\(\\(+16xy+40x^2\\)\\\\)",
+            "\\(+16xy-40x^2\\)",
+            "\\(--16xy+40x^2\\)",
+            "\\(+16xy+40x^2\\)",
             "\\(-16xy+40x^2\\)"
           ],
           "answer": 3,
@@ -14065,10 +14065,10 @@
           "difficulty": "easy",
           "stem": "A student expanded the expression \\(-4(x-6)\\) and obtained \\(-4x-24\\). Identify the error and choose the correct expansion.",
           "options": [
-            "\\\\(\\(+4x-24\\)\\\\)",
+            "\\(+4x-24\\)",
             "\\(-4x+24\\)",
-            "\\\\(-\\(-4x+24\\)\\\\)",
-            "\\\\(\\(+4x+24\\)\\\\)"
+            "\\(--4x+24\\)",
+            "\\(+4x+24\\)"
           ],
           "answer": 1,
           "hint": "Make sure to multiply the term outside the brackets by BOTH terms inside the brackets.",
@@ -14201,9 +14201,9 @@
           "stem": "A student expanded the expression \\(-5(a-7)\\) and obtained \\(5a+35\\). Identify the error and choose the correct expansion.",
           "options": [
             "\\(-5a+35\\)",
-            "\\\\(\\(+5a-35\\)\\\\)",
-            "\\\\(-\\(-5a+35\\)\\\\)",
-            "\\\\(\\(+5a+35\\)\\\\)"
+            "\\(+5a-35\\)",
+            "\\(--5a+35\\)",
+            "\\(+5a+35\\)"
           ],
           "answer": 0,
           "hint": "Make sure to multiply the term outside the brackets by BOTH terms inside the brackets.",
@@ -14502,10 +14502,10 @@
           "difficulty": "easy",
           "stem": "Expand and collect like terms: \\(7(a-4)-5a\\).",
           "options": [
-            "\\\\(\\(2a+28\\)\\\\)",
+            "\\(2a+28\\)",
             "\\(2a-28\\)",
-            "\\\\(-\\(2a-28\\)\\\\)",
-            "\\\\(\\(4a-28\\)\\\\)"
+            "\\(-2a-28\\)",
+            "\\(4a-28\\)"
           ],
           "answer": 1,
           "hint": "First expand the brackets, then identify and combine terms with the same variable parts.",
@@ -14533,10 +14533,10 @@
           "difficulty": "easy",
           "stem": "Expand and collect like terms: \\(3(b-5)-2b\\).",
           "options": [
-            "\\\\(\\(b+15\\)\\\\)",
-            "\\\\(-\\(b-15\\)\\\\)",
+            "\\(b+15\\)",
+            "\\(-b-15\\)",
             "\\(b-15\\)",
-            "\\\\(\\(b-17\\)\\\\)"
+            "\\(b-17\\)"
           ],
           "answer": 2,
           "hint": "First expand the brackets, then identify and combine terms with the same variable parts.",
@@ -14720,9 +14720,9 @@
           "stem": "Expand and collect like terms: \\(5(2-4b)+22b\\).",
           "options": [
             "\\(2b+10\\)",
-            "\\\\(\\(2b-10\\)\\\\)",
-            "\\\\(-\\(2b+10\\)\\\\)",
-            "\\\\(\\(4b+10\\)\\\\)"
+            "\\(2b-10\\)",
+            "\\(-2b+10\\)",
+            "\\(4b+10\\)"
           ],
           "answer": 0,
           "hint": "First expand the brackets, then identify and combine terms with the same variable parts.",
@@ -15251,10 +15251,10 @@
           "difficulty": "medium",
           "stem": "Expand and collect like terms: \\(4(a+6)-3(a+5)\\).",
           "options": [
-            "\\\\(\\(a-9\\)\\\\)",
-            "\\\\(-\\(a+9\\)\\\\)",
+            "\\(a-9\\)",
+            "\\(-a+9\\)",
             "\\(a+9\\)",
-            "\\\\(\\(a+11\\)\\\\)"
+            "\\(a+11\\)"
           ],
           "answer": 2,
           "hint": "Expand both sets of brackets first, paying close attention to signs, then collect the like terms.",
@@ -15282,10 +15282,10 @@
           "difficulty": "medium",
           "stem": "Expand and collect like terms: \\(6(b-3)-5(b+2)\\).",
           "options": [
-            "\\\\(\\(b+28\\)\\\\)",
+            "\\(b+28\\)",
             "\\(b-28\\)",
-            "\\\\(-\\(b-28\\)\\\\)",
-            "\\\\(\\(b-30\\)\\\\)"
+            "\\(-b-28\\)",
+            "\\(b-30\\)"
           ],
           "answer": 1,
           "hint": "Expand both sets of brackets first, paying close attention to signs, then collect the like terms.",
@@ -15500,9 +15500,9 @@
           "stem": "Expand and collect like terms: \\(4x(x+3)-x(4x+5)\\).",
           "options": [
             "\\(7x\\)",
-            "\\\\(-\\(7x\\)\\\\)",
-            "\\\\(\\(9x\\)\\\\)",
-            "\\\\(\\(5x\\)\\\\)"
+            "\\(-7x\\)",
+            "\\(9x\\)",
+            "\\(5x\\)"
           ],
           "answer": 0,
           "hint": "Expand both sets of brackets first, paying close attention to signs, then collect the like terms.",
@@ -17658,9 +17658,9 @@
           "stem": "Expand and collect like terms: \\((2a+b)(4b-a)\\).",
           "options": [
             "\\(-2a^2+7ab+4b^2\\)",
-            "\\\\(\\(+2a^2-7ab-4b^2\\)\\\\)",
-            "\\\\(-\\(-2a^2+7ab+4b^2\\)\\\\)",
-            "\\\\(\\(+2a^2+7ab+4b^2\\)\\\\)"
+            "\\(+2a^2-7ab-4b^2\\)",
+            "\\(--2a^2+7ab+4b^2\\)",
+            "\\(+2a^2+7ab+4b^2\\)"
           ],
           "answer": 0,
           "hint": "Distribute terms and combine variable products like \\(ab\\). Keep variables sorted alphabetically where standard.",
@@ -17688,10 +17688,10 @@
           "difficulty": "easy",
           "stem": "Expand and collect like terms: \\((3p+4q)(2q-3p)\\).",
           "options": [
-            "\\\\(\\(+9p^2+6pq-8q^2\\)\\\\)",
-            "\\\\(-\\(-9p^2-6pq+8q^2\\)\\\\)",
+            "\\(+9p^2+6pq-8q^2\\)",
+            "\\(--9p^2-6pq+8q^2\\)",
             "\\(-9p^2-6pq+8q^2\\)",
-            "\\\\(\\(+9p^2-6pq+8q^2\\)\\\\)"
+            "\\(+9p^2-6pq+8q^2\\)"
           ],
           "answer": 2,
           "hint": "Distribute terms and combine variable products like \\(ab\\). Keep variables sorted alphabetically where standard.",
@@ -17719,9 +17719,9 @@
           "difficulty": "easy",
           "stem": "Expand and collect like terms: \\((3p-4q)(2q-3p)\\).",
           "options": [
-            "\\\\(\\(+9p^2-18pq+8q^2\\)\\\\)",
-            "\\\\(-\\(-9p^2+18pq-8q^2\\)\\\\)",
-            "\\\\(\\(+9p^2+18pq-8q^2\\)\\\\)",
+            "\\(+9p^2-18pq+8q^2\\)",
+            "\\(--9p^2+18pq-8q^2\\)",
+            "\\(+9p^2+18pq-8q^2\\)",
             "\\(-9p^2+18pq-8q^2\\)"
           ],
           "answer": 3,
@@ -18170,10 +18170,10 @@
           "difficulty": "medium",
           "stem": "Fill in the missing binomial expression: \\((x+6)(......) = x^2+7x+6\\).",
           "options": [
-            "\\\\(\\(x-1\\)\\\\)",
+            "\\(x-1\\)",
             "\\(x+1\\)",
-            "\\\\(-\\(x+1\\)\\\\)",
-            "\\\\(\\(x+3\\)\\\\)"
+            "\\(-x+1\\)",
+            "\\(x+3\\)"
           ],
           "answer": 1,
           "hint": "Divide the leading term by the outer term, and divide the constant term by the outer constant term to find the missing parts.",
@@ -18205,10 +18205,10 @@
           "difficulty": "medium",
           "stem": "Fill in the missing binomial expression: \\((x+5)(......) = x^2+8x+15\\).",
           "options": [
-            "\\\\(\\(x-3\\)\\\\)",
-            "\\\\(-\\(x+3\\)\\\\)",
+            "\\(x-3\\)",
+            "\\(-x+3\\)",
             "\\(x+3\\)",
-            "\\\\(\\(x+5\\)\\\\)"
+            "\\(x+5\\)"
           ],
           "answer": 2,
           "hint": "Divide the leading term by the outer term, and divide the constant term by the outer constant term to find the missing parts.",
@@ -18241,9 +18241,9 @@
           "stem": "Fill in the missing binomial expression: \\((x+7)(......) = x^2+5x-14\\).",
           "options": [
             "\\(x-2\\)",
-            "\\\\(\\(x+2\\)\\\\)",
-            "\\\\(-\\(x-2\\)\\\\)",
-            "\\\\(\\(x-4\\)\\\\)"
+            "\\(x+2\\)",
+            "\\(-x-2\\)",
+            "\\(x-4\\)"
           ],
           "answer": 0,
           "hint": "Divide the leading term by the outer term, and divide the constant term by the outer constant term to find the missing parts.",
@@ -18276,9 +18276,9 @@
           "stem": "Fill in the missing binomial expression: \\((x+3)(......) = x^2-2x-15\\).",
           "options": [
             "\\(x-5\\)",
-            "\\\\(\\(x+5\\)\\\\)",
-            "\\\\(-\\(x-5\\)\\\\)",
-            "\\\\(\\(x-7\\)\\\\)"
+            "\\(x+5\\)",
+            "\\(-x-5\\)",
+            "\\(x-7\\)"
           ],
           "answer": 0,
           "hint": "Divide the leading term by the outer term, and divide the constant term by the outer constant term to find the missing parts.",
@@ -18415,9 +18415,9 @@
           "stem": "Fill in the missing binomial expression: \\((3x+4)(......) = 3x^2+x-4\\).",
           "options": [
             "\\(x-1\\)",
-            "\\\\(\\(x+1\\)\\\\)",
-            "\\\\(-\\(x-1\\)\\\\)",
-            "\\\\(\\(x-3\\)\\\\)"
+            "\\(x+1\\)",
+            "\\(-x-1\\)",
+            "\\(x-3\\)"
           ],
           "answer": 0,
           "hint": "Divide the leading term by the outer term, and divide the constant term by the outer constant term to find the missing parts.",
@@ -24394,9 +24394,9 @@
           "stem": "Simplify the expression by expanding and collecting like terms:\\n\\((x+3)^2 - (x+5)^2\\)",
           "options": [
             "\\(-4x-16\\)",
-            "\\\\(\\(+4x+16\\)\\\\)",
-            "\\\\(-\\(-4x-16\\)\\\\)",
-            "\\\\(\\(+4x-16\\)\\\\)"
+            "\\(+4x+16\\)",
+            "\\(--4x-16\\)",
+            "\\(+4x-16\\)"
           ],
           "answer": 0,
           "hint": "Expand each term individually, then subtract or add, taking care with negative signs.",
@@ -24487,9 +24487,9 @@
           "stem": "Simplify the expression by expanding and collecting like terms:\\n\\((a+5)(a-4) - (a+2)(a-3)\\)",
           "options": [
             "\\(2a-14\\)",
-            "\\\\(\\(2a+14\\)\\\\)",
-            "\\\\(-\\(2a-14\\)\\\\)",
-            "\\\\(\\(4a-14\\)\\\\)"
+            "\\(2a+14\\)",
+            "\\(-2a-14\\)",
+            "\\(4a-14\\)"
           ],
           "answer": 0,
           "hint": "Expand each term individually, then subtract or add, taking care with negative signs.",
@@ -24580,9 +24580,9 @@
           "stem": "Simplify the expression by expanding and collecting like terms:\\n\\((3x+y)(y-3x) + (3x-y)^2\\)",
           "options": [
             "\\(2y^2-6xy\\)",
-            "\\\\(\\(2y^2+6xy\\)\\\\)",
-            "\\\\(-\\(2y^2-6xy\\)\\\\)",
-            "\\\\(\\(4y^2-6xy\\)\\\\)"
+            "\\(2y^2+6xy\\)",
+            "\\(-2y^2-6xy\\)",
+            "\\(4y^2-6xy\\)"
           ],
           "answer": 0,
           "hint": "Expand each term individually, then subtract or add, taking care with negative signs.",
@@ -25424,9 +25424,9 @@
           "stem": "Find the value of \\(x^2\\) and simplify when \\(x = -5m\\)",
           "options": [
             "\\(25m^2\\)",
-            "\\\\(-\\(25m^2\\)\\\\)",
-            "\\\\(\\(27m^2\\)\\\\)",
-            "\\\\(\\(23m^2\\)\\\\)"
+            "\\(-25m^2\\)",
+            "\\(27m^2\\)",
+            "\\(23m^2\\)"
           ],
           "answer": 0,
           "hint": "Square the entire expression. For binomials, use perfect square expansions.",
@@ -25536,9 +25536,9 @@
           "stem": "Find the value of \\(x^2 + 4x\\) and simplify when \\(x = -3b\\)",
           "options": [
             "\\(9b^2-12b\\)",
-            "\\\\(\\(9b^2+12b\\)\\\\)",
-            "\\\\(-\\(9b^2-12b\\)\\\\)",
-            "\\\\(\\(11b^2-12b\\)\\\\)"
+            "\\(9b^2+12b\\)",
+            "\\(-9b^2-12b\\)",
+            "\\(11b^2-12b\\)"
           ],
           "answer": 0,
           "hint": "Substitute the given expression for x into both x^2 and 4x, expand, and collect any like terms.",
@@ -26624,9 +26624,9 @@
           "stem": "Simplify the algebraic expression by first removing brackets:\\n\\(-(-3a-(2b-(3a-2b)+(2a-3b)))\\)",
           "options": [
             "\\(2a+b\\)",
-            "\\\\(\\(2a-b\\)\\\\)",
-            "\\\\(-\\(2a+b\\)\\\\)",
-            "\\\\(\\(4a+b\\)\\\\)"
+            "\\(2a-b\\)",
+            "\\(-2a+b\\)",
+            "\\(4a+b\\)"
           ],
           "answer": 0,
           "hint": "Remove the innermost brackets first, keeping track of sign changes, then work outwards.",
@@ -26814,9 +26814,9 @@
           "stem": "Expand and simplify the expression:\\n\\(\\\\left(x + \\\\frac{2}{y}\\\\right)\\\\left(y - \\\\frac{2}{x}\\\\right)\\)",
           "options": [
             "\\(xy-\\\\frac{4}{xy}\\)",
-            "\\\\(\\(xy+\\\\frac{4}{xy}\\)\\\\)",
-            "\\\\(-\\(xy-\\\\frac{4}{xy}\\)\\\\)",
-            "\\\\(\\(xy-\\\\frac{6}{xy}\\)\\\\)"
+            "\\(xy+\\\\frac{4}{xy}\\)",
+            "\\(-xy-\\\\frac{4}{xy}\\)",
+            "\\(xy-\\\\frac{6}{xy}\\)"
           ],
           "answer": 0,
           "hint": "Work step by step: expand bracketed parts individually, then combine all parts and collect like terms.",
@@ -27792,9 +27792,9 @@
           "stem": "Simplify the expression by collecting like terms:\\n\\(8p-5p\\)",
           "options": [
             "\\(3p\\)",
-            "\\\\(-\\(3p\\)\\\\)",
-            "\\\\(\\(5p\\)\\\\)",
-            "\\\\(\\(1p\\)\\\\)"
+            "\\(-3p\\)",
+            "\\(5p\\)",
+            "\\(1p\\)"
           ],
           "answer": 0,
           "hint": "Add or subtract the coefficients of identical variable terms.",
@@ -27884,9 +27884,9 @@
           "stem": "Simplify the expression by collecting like terms:\\n\\(11p-12p+8p\\)",
           "options": [
             "\\(7p\\)",
-            "\\\\(-\\(7p\\)\\\\)",
-            "\\\\(\\(9p\\)\\\\)",
-            "\\\\(\\(5p\\)\\\\)"
+            "\\(-7p\\)",
+            "\\(9p\\)",
+            "\\(5p\\)"
           ],
           "answer": 0,
           "hint": "Add or subtract the coefficients of identical variable terms.",
@@ -27907,9 +27907,9 @@
           "stem": "Simplify the expression by collecting like terms:\\n\\(6x^2+4x^2-11x^2\\)",
           "options": [
             "\\(-x^2\\)",
-            "\\\\(\\(+x^2\\)\\\\)",
-            "\\\\(-\\(-x^2\\)\\\\)",
-            "\\\\(\\(-x^4\\)\\\\)"
+            "\\(+x^2\\)",
+            "\\(--x^2\\)",
+            "\\(-x^4\\)"
           ],
           "answer": 0,
           "hint": "Add or subtract the coefficients of identical variable terms.",
@@ -28038,9 +28038,9 @@
           "stem": "Find the missing term to make the equation true:\\n\\(7pq - \\\\Box = -4pq\\)",
           "options": [
             "\\(11pq\\)",
-            "\\\\(-\\(11pq\\)\\\\)",
-            "\\\\(\\(13pq\\)\\\\)",
-            "\\\\(\\(9pq\\)\\\\)"
+            "\\(-11pq\\)",
+            "\\(13pq\\)",
+            "\\(9pq\\)"
           ],
           "answer": 0,
           "hint": "Let the missing term be B, isolate B on one side of the equation, and collect like terms.",
@@ -28065,9 +28065,9 @@
           "stem": "Find the missing term to make the equation true:\\n\\(2x^2y - \\\\Box = -7x^2y\\)",
           "options": [
             "\\(9x^2y\\)",
-            "\\\\(-\\(9x^2y\\)\\\\)",
-            "\\\\(\\(11x^2y\\)\\\\)",
-            "\\\\(\\(7x^2y\\)\\\\)"
+            "\\(-9x^2y\\)",
+            "\\(11x^2y\\)",
+            "\\(7x^2y\\)"
           ],
           "answer": 0,
           "hint": "Let the missing term be B, isolate B on one side of the equation, and collect like terms.",
@@ -28092,9 +28092,9 @@
           "stem": "Find the missing term to make the equation true:\\n\\(-9p^2q + \\\\Box = 3p^2q\\)",
           "options": [
             "\\(12p^2q\\)",
-            "\\\\(-\\(12p^2q\\)\\\\)",
-            "\\\\(\\(14p^2q\\)\\\\)",
-            "\\\\(\\(10p^2q\\)\\\\)"
+            "\\(-12p^2q\\)",
+            "\\(14p^2q\\)",
+            "\\(10p^2q\\)"
           ],
           "answer": 0,
           "hint": "Let the missing term be B, isolate B on one side of the equation, and collect like terms.",
@@ -28119,9 +28119,9 @@
           "stem": "Find the missing term to make the equation true:\\n\\(-6xy + \\\\Box = 3xy\\)",
           "options": [
             "\\(9xy\\)",
-            "\\\\(-\\(9xy\\)\\\\)",
-            "\\\\(\\(11xy\\)\\\\)",
-            "\\\\(\\(7xy\\)\\\\)"
+            "\\(-9xy\\)",
+            "\\(11xy\\)",
+            "\\(7xy\\)"
           ],
           "answer": 0,
           "hint": "Let the missing term be B, isolate B on one side of the equation, and collect like terms.",
@@ -28146,9 +28146,9 @@
           "stem": "Find the missing term to make the equation true:\\n\\(12ab^2 - \\\\Box = -6ab^2\\)",
           "options": [
             "\\(18ab^2\\)",
-            "\\\\(-\\(18ab^2\\)\\\\)",
-            "\\\\(\\(20ab^2\\)\\\\)",
-            "\\\\(\\(16ab^2\\)\\\\)"
+            "\\(-18ab^2\\)",
+            "\\(20ab^2\\)",
+            "\\(16ab^2\\)"
           ],
           "answer": 0,
           "hint": "Let the missing term be B, isolate B on one side of the equation, and collect like terms.",
@@ -28254,9 +28254,9 @@
           "stem": "Expand and simplify the algebraic expression:\\n\\(-5(3m+4)\\)",
           "options": [
             "\\(-15m-20\\)",
-            "\\\\(\\(+15m+20\\)\\\\)",
-            "\\\\(-\\(-15m-20\\)\\\\)",
-            "\\\\(\\(+15m-20\\)\\\\)"
+            "\\(+15m+20\\)",
+            "\\(--15m-20\\)",
+            "\\(+15m-20\\)"
           ],
           "answer": 0,
           "hint": "Multiply the outside term by each term inside the brackets, then combine any like terms.",
@@ -28578,9 +28578,9 @@
           "stem": "Expand and simplify the algebraic expression:\\n\\(3(b-1)-2b\\)",
           "options": [
             "\\(b-3\\)",
-            "\\\\(\\(b+3\\)\\\\)",
-            "\\\\(-\\(b-3\\)\\\\)",
-            "\\\\(\\(b-5\\)\\\\)"
+            "\\(b+3\\)",
+            "\\(-b-3\\)",
+            "\\(b-5\\)"
           ],
           "answer": 0,
           "hint": "Multiply the outside term by each term inside the brackets, then combine any like terms.",
