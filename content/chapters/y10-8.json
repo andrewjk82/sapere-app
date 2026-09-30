@@ -2630,112 +2630,7 @@
           "id": "y10-8e-q4a-ii",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Analyze similarity and congruence in the figures shown.\na) ii) Calculate the value of \\(x\\).",
-          "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  2,
-                  3
-                ],
-                "B": [
-                  0,
-                  0
-                ],
-                "C": [
-                  5,
-                  0.5
-                ],
-                "D": [
-                  8,
-                  3.2
-                ],
-                "E": [
-                  6.2,
-                  0.2
-                ],
-                "F": [
-                  11.2,
-                  0.7
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                },
-                {
-                  "from": "D",
-                  "to": "E"
-                },
-                {
-                  "from": "E",
-                  "to": "F"
-                },
-                {
-                  "from": "F",
-                  "to": "D"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "120°"
-                },
-                {
-                  "at": "C",
-                  "label": "25°"
-                },
-                {
-                  "at": "D",
-                  "label": "120°"
-                },
-                {
-                  "at": "F",
-                  "label": "25°"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "4 cm"
-                },
-                {
-                  "between": [
-                    "A",
-                    "C"
-                  ],
-                  "text": "8 cm"
-                },
-                {
-                  "between": [
-                    "D",
-                    "F"
-                  ],
-                  "text": "6 cm"
-                },
-                {
-                  "between": [
-                    "D",
-                    "E"
-                  ],
-                  "text": "x cm"
-                }
-              ]
-            }
-          },
+          "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
           "answer": "3",
           "solution": "3",
           "steps": [
@@ -3995,7 +3890,7 @@
             {
               "id": "y10-8e-q4a-ii",
               "type": "mc",
-              "stem": "a) ii) Calculate the value of \\(x\\).",
+              "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
               "options": [
                 "2",
                 "3",
@@ -4586,4 +4481,4 @@
       ]
     }
   ]
-}
+}\n
