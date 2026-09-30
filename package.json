@@ -44,10 +44,10 @@
     "test:content-parts": "npm run content:publish && node --no-warnings tools/content/tests/partResolution.mjs"
   },
   "dependencies": {
-    "3d-force-graph": "^1.80.0",
     "@babel/generator": "^7.27.0",
     "@babel/parser": "^7.27.0",
     "@babel/traverse": "^7.27.0",
+    "3d-force-graph": "^1.80.0",
     "firebase": "^12.12.1",
     "firebase-admin": "^13.8.0",
     "framer-motion": "^12.38.0",
@@ -59,6 +59,7 @@
     "mathjs": "^15.2.0",
     "mathlive": "^0.110.0",
     "nodemailer": "^8.0.7",
+    "pdfjs-dist": "^4.4.168",
     "perfect-freehand": "^1.2.3",
     "qrcode.react": "^4.2.0",
     "react": "^19.2.5",

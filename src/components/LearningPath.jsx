@@ -15,6 +15,7 @@ import { loadCachedPdf, cachePdf } from '../utils/homeworkLocalStore';
 import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
+import PdfViewer from './PdfViewer';
 import './learning-path.css';
 
 // Per-chapter XP is derived from its lesson count so the numbers are stable
@@ -638,16 +639,7 @@ const LearningPath = ({ profile }) => {
                 <X size={20} />
               </button>
             </div>
-            {resolvedPdfSrc ? (
-              <iframe title="Worksheet" src={resolvedPdfSrc} allow="autoplay" style={{ flex: 1, width: '100%', border: 0, background: '#f1f5f9' }} />
-            ) : (
-              <div style={{ flex: 1, display: 'grid', placeItems: 'center', background: '#f1f5f9' }}>
-                <div style={{ textAlign: 'center' }}>
-                  <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa', marginBottom: 8 }} />
-                  <div style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem' }}>Loading worksheet…</div>
-                </div>
-              </div>
-            )}
+            <PdfViewer src={resolvedPdfSrc} fallback={pdfPreview?.url} style={{ flex: 1 }} />
           </div>
         </div>,
         document.body,

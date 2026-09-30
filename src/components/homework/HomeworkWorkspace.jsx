@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
+import PdfViewer from '../PdfViewer';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage, loadCachedPdf, cachePdf } from '../../utils/homeworkLocalStore';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
 import { toDrivePreviewUrl, toDriveOpenUrl, extractDriveFileId, MAX_HOMEWORK_PAGES } from '../../utils/homework';
@@ -194,21 +195,12 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         </div>
       )}
       <div style={{ flex: 1, minHeight: 0, position: 'relative', background: '#f1f5f9' }}>
-        {resolvedPdfUrl ? (
-          <iframe
-            key={resolvedPdfUrl}
-            title="Homework worksheet"
+        {(resolvedPdfUrl || pdfLoading) ? (
+          <PdfViewer
             src={resolvedPdfUrl}
-            allow="autoplay"
-            style={{ width: '100%', height: '100%', border: 0, pointerEvents: dragging ? 'none' : 'auto' }}
+            fallback={embedUrl}
+            style={{ width: '100%', height: '100%', pointerEvents: dragging ? 'none' : 'auto' }}
           />
-        ) : pdfLoading ? (
-          <div style={{ height: '100%', display: 'grid', placeItems: 'center' }}>
-            <div style={{ textAlign: 'center' }}>
-              <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa', marginBottom: 8 }} />
-              <div style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem' }}>Loading worksheet…</div>
-            </div>
-          </div>
         ) : rawPdf ? (
           <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
             Could not load worksheet.
