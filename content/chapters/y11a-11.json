@@ -4238,9 +4238,6 @@
               "id": "hg2020-q31a",
               "type": "review",
               "stem": "(a) Draw a graph of \\(y=h(t)\\) for \\(0 \\le t \\le 24\\).",
-              "figure": {
-                "svg": "fig:30ca076879"
-              },
               "answer": "",
               "steps": [
                 {
