@@ -106,13 +106,10 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         {!isAdmin && (
           <SidebarItem icon={Trophy} label="Daily Study" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
         )}
-        {/* Labelled "Times Table", not "Sprint": FlameBuddy already calls the
-            Daily Calculation task a sprint ("Start sprint" → Challenge tab) and
-            LeaderboardModal is titled "Challenge Sprint", so a bare "Sprint"
-            here would be the third different thing under that name.
-            Visible to the teacher too — admin runs are a practice mode and are
-            never recorded (see TimesTableSprint). */}
-        <SidebarItem icon={Timer} label="Times Table" active={activeTab === 'TimesTableSprint'} onClick={() => setActiveTab('TimesTableSprint')} disabled={isLocked && activeTab !== 'TimesTableSprint'} />
+        {/* Student-facing name for the Times Table Sprint tab (renamed from
+            "Times Table", 2026-10). Visible to the teacher too — admin runs are
+            a practice mode and are never recorded (see TimesTableSprint). */}
+        <SidebarItem icon={Timer} label="Daily Challenge" active={activeTab === 'TimesTableSprint'} onClick={() => setActiveTab('TimesTableSprint')} disabled={isLocked && activeTab !== 'TimesTableSprint'} />
 
         {!isAdmin && (
           <SidebarItem icon={Clock} label="Study Planner" active={activeTab === 'StudyTimer'} onClick={() => setActiveTab('StudyTimer')} disabled={isLocked} />
