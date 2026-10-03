@@ -746,3 +746,86 @@
 .tts-hub-card__glyph { font-size: 2.6rem; font-weight: 900; line-height: 1; color: var(--hub-accent); }
 .tts-hub-card__name { font-weight: 900; color: #1e1b4b; font-size: 1rem; text-align: center; white-space: nowrap; }
 .tts-hub-card__best { font-family: var(--spr-mono); font-size: 0.78rem; font-weight: 700; color: #64748b; white-space: nowrap; }
+
+/* ── Start screen: match Sapere's light cards and violet accents ────────── */
+.tts-start .tts-instrument--hero {
+  padding: 22px 24px 0;
+  border: 1px solid #ede9f6;
+  border-radius: 24px;
+  background: #fff;
+  color: #1e1b4b;
+  box-shadow: 0 10px 28px rgba(35, 25, 74, 0.06);
+}
+
+.tts-start .tts-instrument--hero::before { display: none; }
+.tts-start .tts-hero-heading { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.tts-start .tts-hero-kicker {
+  margin: 0 0 4px;
+  color: #7c3aed;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.tts-start .tts-hero-title {
+  color: #1e1b4b;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 850;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+.tts-start .tts-best-badge {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #f2edff;
+  color: #6d28d9;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+.tts-start .tts-led--xl {
+  margin-top: 16px;
+  color: #7c3aed;
+  font-family: var(--spr-mono);
+  font-size: clamp(2.5rem, 9vw, 3rem);
+  letter-spacing: -0.055em;
+  text-shadow: none;
+  animation: none;
+}
+.tts-start .tts-hero-sub { color: #77758e; font-size: 0.84rem; font-weight: 600; }
+.tts-start .tts-console { border-top-color: #ece9f4; }
+.tts-start .tts-console__cell { border-right-color: #ece9f4; padding: 12px 14px 15px; }
+.tts-start .tts-console__label { color: #77758e; font-size: 0.62rem; }
+.tts-start .tts-console__value { color: #1e1b4b; font-size: 0.95rem; }
+.tts-start .tts-btn--primary {
+  border-radius: 15px;
+  padding: 15px 22px;
+  background: #1e1b4b;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(30, 27, 75, 0.16);
+}
+.tts-start .tts-btn--primary:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(30, 27, 75, 0.2); }
+.tts-start .tts-start__board {
+  border: 1px solid #f1f5f9;
+  border-radius: 24px;
+  box-shadow: 0 10px 28px rgba(35, 25, 74, 0.045);
+}
+.tts-start .tts-eyebrow { color: #1e1b4b; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: none; }
+.tts-start .tts-row { border-left-color: transparent; background: #f8f7fc; }
+.tts-start .tts-row--1,
+.tts-start .tts-row--me { border-left-color: transparent; background: #f2edff; }
+.tts-start .tts-lane { background: #eeebf5; color: #77758e; }
+.tts-start .tts-lane--1 { background: #e5dcff; color: #6d28d9; }
+.tts-start .tts-row__name { color: #1e1b4b; }
+.tts-start .tts-row__time { color: #7c3aed; }
+.tts-start .tts-row__xp { color: #7c3aed; }
+.tts-start .tts-empty { color: #77758e; }
+
+@media (max-width: 480px) {
+  .tts-start .tts-instrument--hero { padding: 19px 17px 0; border-radius: 22px; }
+  .tts-start .tts-console__cell { padding-left: 8px; padding-right: 8px; }
+  .tts-start .tts-console__value { font-size: 0.82rem; }
+  .tts-start .tts-card { padding: 18px; border-radius: 22px; }
+  .tts-start .tts-hero-title { font-size: 1.08rem; }
+}

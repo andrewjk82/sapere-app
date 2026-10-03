@@ -11,10 +11,18 @@ const SprintStartView = ({
   const leader = top5[0];
 
   return (
-    <div className="tts-shell" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+    <div className="tts-shell tts-start" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
       <div className="tts-instrument tts-instrument--hero tts-reveal">
-        <p className="tts-watermark" aria-hidden="true">{(type?.name || 'Sprint').toUpperCase()}</p>
-        <h3 className="tts-hero-title">{type?.name} Sprint</h3>
+        <div className="tts-hero-heading">
+          <div>
+            <p className="tts-hero-kicker">Weekly sprint</p>
+            <h3 className="tts-hero-title">{type?.name} Sprint</h3>
+          </div>
+          {!practiceOnly && Number.isFinite(myBestTimeMs) && (
+            <span className="tts-best-badge">Personal best</span>
+          )}
+          {practiceOnly && leader && <span className="tts-best-badge">Weekly leader</span>}
+        </div>
         <p className="tts-led tts-led--glow tts-led--xl">
           {practiceOnly
             ? (leader ? formatSprintTime(leader.bestTimeMs) : '--.---')
@@ -61,7 +69,7 @@ const SprintStartView = ({
         Start sprint
       </button>
 
-      <div className="tts-card">
+      <div className="tts-card tts-start__board">
         <label className="tts-eyebrow">This week's top 5</label>
         <SprintLeaderboard
           top5={top5}
