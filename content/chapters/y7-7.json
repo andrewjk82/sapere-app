@@ -3390,6 +3390,28 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y7-t3-2018-p1-q32",
+          "type": "mc",
+          "stem": "Evaluate \\( 7.54 \\times 1000 \\).",
+          "options": [
+            "7540",
+            "75400",
+            "75.4",
+            "0.00754"
+          ],
+          "answer": 0,
+          "hint": "Move the decimal point to the right for each zero in 1000.",
+          "steps": [
+            {
+              "explain": "1000 has 3 zeros, so move the decimal point 3 places to the right."
+            },
+            {
+              "explain": "\\( 7.54 \\rightarrow 75.4 \\rightarrow 754 \\rightarrow 7540 \\)"
+            }
+          ],
+          "xp": 1
         }
       ]
     },
@@ -3468,6 +3490,121 @@
             {
               "explain": "Multiply as whole numbers, then place the decimal point: \\( 315 \\times 4 = 1260 \\)",
               "work": "\\( 3.15 \\times 4 = \\$12.60 \\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-t3-2018-p1-q34",
+          "type": "mc",
+          "stem": "Given that \\( 38 \\times 92 = 3496 \\), use this result to find the value of \\( 380 \\times 0.92 \\).",
+          "options": [
+            "349.6",
+            "34.96",
+            "3496",
+            "3.496"
+          ],
+          "answer": 0,
+          "hint": "Compare the factors: 380 is \\(10 \\times 38\\), and 0.92 is \\(92 \\div 100\\).",
+          "steps": [
+            {
+              "explain": "\\( 380 = 38 \\times 10 \\)"
+            },
+            {
+              "explain": "\\( 0.92 = 92 \\div 100 \\)"
+            },
+            {
+              "explain": "\\( 380 \\times 0.92 = (38 \\times 10) \\times (92 \\div 100) \\)"
+            },
+            {
+              "explain": "\\( = (38 \\times 92) \\times (10 \\div 100) \\)"
+            },
+            {
+              "explain": "\\( = 3496 \\times 0.1 \\)"
+            },
+            {
+              "explain": "\\( = 349.6 \\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-t3-2018-p1-q35",
+          "type": "mc",
+          "stem": "Evaluate \\( 2.3 \\times 5.2 \\).",
+          "options": [
+            "11.96",
+            "119.6",
+            "1.196",
+            "10.96"
+          ],
+          "answer": 0,
+          "hint": "Multiply 23 by 52, then place the decimal point so there are two decimal places.",
+          "steps": [
+            {
+              "explain": "\\( 23 \\times 52 = 1196 \\)"
+            },
+            {
+              "explain": "2.3 has 1 decimal place, and 5.2 has 1 decimal place."
+            },
+            {
+              "explain": "The answer must have \\( 1 + 1 = 2 \\) decimal places."
+            },
+            {
+              "explain": "\\( 2.3 \\times 5.2 = 11.96 \\)"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y7-t3-2018-p1-q39",
+          "type": "mc",
+          "stem": "Complete the following sentence: When a positive number \\(x\\) is multiplied by another number less than one, the result will be ______ than \\(x\\).",
+          "options": [
+            "less",
+            "greater",
+            "equal to",
+            "one"
+          ],
+          "answer": 0,
+          "hint": "Try an example: \\( 10 \\times 0.5 \\).",
+          "steps": [
+            {
+              "explain": "Example: Let \\(x = 10\\). Multiply by 0.5 (which is less than one)."
+            },
+            {
+              "explain": "\\( 10 \\times 0.5 = 5 \\)"
+            },
+            {
+              "explain": "5 is less than 10."
+            },
+            {
+              "explain": "Therefore, the result will always be less than \\(x\\)."
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-t3-2018-p1-q41",
+          "type": "mc",
+          "stem": "The Liverpool Women's Cricket Club is having a pizza night. They order 16 Super Supreme pizzas at $13.70 each and 10 Hawaiian at $11.50 each. How much will the club need to spend?",
+          "options": [
+            "$334.20",
+            "$324.20",
+            "$344.20",
+            "$319.20"
+          ],
+          "answer": 0,
+          "hint": "Calculate the total for Super Supreme and Hawaiian pizzas separately, then add them.",
+          "steps": [
+            {
+              "explain": "Cost of 16 Super Supreme: \\( 16 \\times 13.70 = \\$219.20 \\)"
+            },
+            {
+              "explain": "Cost of 10 Hawaiian: \\( 10 \\times 11.50 = \\$115.00 \\)"
+            },
+            {
+              "explain": "Total cost: \\( 219.20 + 115.00 = \\$334.20 \\)"
             }
           ],
           "xp": 2
@@ -3576,6 +3713,65 @@
             "source": "SGS 2020 Form I Annual Examination",
             "grade": "7"
           },
+          "xp": 1
+        },
+        {
+          "id": "y7-t3-2018-p1-q36",
+          "type": "mc",
+          "stem": "Evaluate \\( 0.732 \\div 6 \\).",
+          "options": [
+            "0.122",
+            "1.22",
+            "0.0122",
+            "12.2"
+          ],
+          "answer": 0,
+          "hint": "Divide as normal, keeping the decimal point in the same position.",
+          "steps": [
+            {
+              "explain": "\\( 0 \\div 6 = 0 \\)"
+            },
+            {
+              "explain": "\\( 7 \\div 6 = 1 \\) remainder 1"
+            },
+            {
+              "explain": "\\( 13 \\div 6 = 2 \\) remainder 1"
+            },
+            {
+              "explain": "\\( 12 \\div 6 = 2 \\)"
+            },
+            {
+              "explain": "Result: 0.122"
+            }
+          ],
+          "xp": 1
+        },
+        {
+          "id": "y7-t3-2018-p1-q37",
+          "type": "mc",
+          "stem": "Evaluate \\( 10.4 \\div 0.05 \\).",
+          "options": [
+            "208",
+            "20.8",
+            "2.08",
+            "2080"
+          ],
+          "answer": 0,
+          "hint": "Multiply both numbers by 100 to remove the decimal from the divisor.",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by 100:"
+            },
+            {
+              "explain": "\\( 10.4 \\div 0.05 = (10.4 \\times 100) \\div (0.05 \\times 100) \\)"
+            },
+            {
+              "explain": "\\( = 1040 \\div 5 \\)"
+            },
+            {
+              "explain": "\\( = 208 \\)"
+            }
+          ],
           "xp": 1
         }
       ]
@@ -3952,6 +4148,37 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           },
           "xp": 1
+        },
+        {
+          "id": "y7-t3-2018-p1-q33",
+          "type": "mc",
+          "stem": "Round 2.3749 to two decimal places.",
+          "options": [
+            "2.37",
+            "2.38",
+            "2.375",
+            "2.374"
+          ],
+          "answer": 0,
+          "hint": "Look at the third decimal place to decide if you round up.",
+          "steps": [
+            {
+              "explain": "The number is 2.3749."
+            },
+            {
+              "explain": "The second decimal place is 7."
+            },
+            {
+              "explain": "The third decimal place is 4."
+            },
+            {
+              "explain": "Since 4 is less than 5, we keep the 7 as it is."
+            },
+            {
+              "explain": "Rounded to two decimal places: 2.37"
+            }
+          ],
+          "xp": 2
         }
       ]
     }

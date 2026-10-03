@@ -1238,6 +1238,29 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "y7-ep2-q5",
+          "type": "mc",
+          "stem": "Verify whether \\(x = -1\\) is a solution to the equation \\(2 - x = 2(x + 3)\\).",
+          "options": [
+            "No, it is not a solution.",
+            "Yes, it is a solution."
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x = -1\\) into both the left-hand side (LHS) and right-hand side (RHS) of the equation.",
+          "steps": [
+            {
+              "explain": "LHS: \\(2 - (-1) = 2 + 1 = 3\\)"
+            },
+            {
+              "explain": "RHS: \\(2(-1 + 3) = 2(2) = 4\\)"
+            },
+            {
+              "explain": "Since LHS \\(\\neq\\) RHS (\\(3 \\neq 4\\)), \\(x = -1\\) is not a solution."
+            }
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1303,6 +1326,28 @@
             {
               "explain": "Both sides equal 5, so \\(M=9\\) is indeed a solution.",
               "work": "\\(\\text{LHS}=\\text{RHS}=5\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q6a",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ x - 12 = 25 \\]",
+          "options": [
+            "\\(x = 37\\)",
+            "\\(x = 13\\)",
+            "\\(x = -13\\)",
+            "\\(x = 47\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 12 to both sides of the equation.",
+          "steps": [
+            {
+              "explain": "\\(x = 25 + 12\\)"
+            },
+            {
+              "explain": "\\(x = 37\\)"
             }
           ],
           "xp": 2
@@ -1604,6 +1649,56 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y7-ep2-q6c",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 4y - 10 = -2 \\]",
+          "options": [
+            "\\(y = 2\\)",
+            "\\(y = -3\\)",
+            "\\(y = -2\\)",
+            "\\(y = 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 10 to both sides, then divide by 4.",
+          "steps": [
+            {
+              "explain": "Add 10 to both sides: \\(4y = -2 + 10\\)"
+            },
+            {
+              "explain": "\\(4y = 8\\)"
+            },
+            {
+              "explain": "Divide by 4: \\(y = 2\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q6e",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ \\frac{x + 4}{5} = 3 \\]",
+          "options": [
+            "\\(x = 11\\)",
+            "\\(x = 19\\)",
+            "\\(x = -1\\)",
+            "\\(x = \\frac{7}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 5 first to remove the fraction.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 5: \\(x + 4 = 3 \\times 5\\)"
+            },
+            {
+              "explain": "\\(x + 4 = 15\\)"
+            },
+            {
+              "explain": "Subtract 4 from both sides: \\(x = 15 - 4 = 11\\)"
+            }
+          ],
+          "xp": 2
         }
       ]
     },
@@ -1648,6 +1743,59 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           },
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q6d",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 1 - 3c = 10 \\]",
+          "options": [
+            "\\(c = -3\\)",
+            "\\(c = 3\\)",
+            "\\(c = -4\\)",
+            "\\(c = -\\frac{11}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 1 from both sides, then divide by -3.",
+          "steps": [
+            {
+              "explain": "Subtract 1 from both sides: \\(-3c = 10 - 1\\)"
+            },
+            {
+              "explain": "\\(-3c = 9\\)"
+            },
+            {
+              "explain": "Divide by -3: \\(c = \\frac{9}{-3} = -3\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q6f",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ \\frac{3x}{5} + 4 = 1 \\]",
+          "options": [
+            "\\(x = -5\\)",
+            "\\(x = 5\\)",
+            "\\(x = -\\frac{5}{3}\\)",
+            "\\(x = -15\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 4 from both sides first, then multiply by 5.",
+          "steps": [
+            {
+              "explain": "Subtract 4 from both sides: \\(\\frac{3x}{5} = 1 - 4\\)"
+            },
+            {
+              "explain": "\\(\\frac{3x}{5} = -3\\)"
+            },
+            {
+              "explain": "Multiply both sides by 5: \\(3x = -15\\)"
+            },
+            {
+              "explain": "Divide by 3: \\(x = -5\\)"
+            }
+          ],
           "xp": 2
         }
       ]
@@ -1710,6 +1858,35 @@
             {
               "explain": "Add 4 to both sides.",
               "work": "\\(x=8\\)"
+            }
+          ],
+          "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15f",
+      "code": "16F",
+      "title": "Collecting like terms and solving equations",
+      "questions": [
+        {
+          "id": "y7-ep2-q6b",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 8n - 3n = 15 \\]",
+          "options": [
+            "\\(n = 3\\)",
+            "\\(n = 5\\)",
+            "\\(n = 75\\)",
+            "\\(n = -3\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the left side of the equation first by combining like terms.",
+          "steps": [
+            {
+              "explain": "Combine like terms on the LHS: \\(5n = 15\\)"
+            },
+            {
+              "explain": "Divide both sides by 5: \\(n = 3\\)"
             }
           ],
           "xp": 2
@@ -1983,6 +2160,93 @@
             "grade": "7"
           },
           "xp": 3
+        },
+        {
+          "id": "y7-ep2-q7a",
+          "type": "mc",
+          "stem": "Write the following as an equation and solve for \\(x\\):\n\"2 less than \\(x\\) equals 15.\"",
+          "options": [
+            "\\(x = 17\\)",
+            "\\(x = 13\\)",
+            "\\(x = 15\\)",
+            "\\(x = -13\\)"
+          ],
+          "answer": 0,
+          "hint": "\"2 less than x\" means starting with x and subtracting 2.",
+          "steps": [
+            {
+              "explain": "The phrase \"2 less than \\(x\\)\" translates to \\(x - 2\\)."
+            },
+            {
+              "explain": "Setting it equal to 15 gives the equation: \\(x - 2 = 15\\)."
+            },
+            {
+              "explain": "Adding 2 to both sides gives \\(x = 17\\)."
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q7b",
+          "type": "mc",
+          "stem": "Write the following as an equation and solve for \\(x\\):\n\"The difference between 33 and \\(6x\\) is 3.\"",
+          "options": [
+            "\\(x = 5\\)",
+            "\\(x = 6\\)",
+            "\\(x = -5\\)",
+            "\\(x = 36\\)"
+          ],
+          "answer": 0,
+          "hint": "The difference between A and B translates to A - B.",
+          "steps": [
+            {
+              "explain": "The difference between 33 and \\(6x\\) translates to \\(33 - 6x\\)."
+            },
+            {
+              "explain": "Setting it equal to 3 gives the equation: \\(33 - 6x = 3\\)."
+            },
+            {
+              "explain": "Subtract 33 from both sides: \\(-6x = 3 - 33\\)"
+            },
+            {
+              "explain": "\\(-6x = -30\\)"
+            },
+            {
+              "explain": "Divide by -6: \\(x = 5\\)"
+            }
+          ],
+          "xp": 2
+        },
+        {
+          "id": "y7-ep2-q16",
+          "type": "mc",
+          "stem": "ABC is an isosceles triangle. The perimeter of ABC is 45 cm. Solve for \\(x\\) by first forming an equation.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,150 150,150 100,50\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"45\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">A</text>\n  <text x=\"155\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\">C</text>\n  <text x=\"100\" y=\"40\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">B</text>\n  \n  <text x=\"60\" y=\"100\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\\(x+5\\)</text>\n  <text x=\"100\" y=\"170\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\\(3x\\)</text>\n  \n  <!-- Ticks -->\n  <line x1=\"70\" y1=\"95\" x2=\"80\" y2=\"105\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"120\" y1=\"105\" x2=\"130\" y2=\"95\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <!-- Arrows for base -->\n  <line x1=\"50\" y1=\"165\" x2=\"150\" y2=\"165\" stroke=\"black\" stroke-width=\"1\"/>\n  <polygon points=\"50,165 60,162 60,168\" fill=\"black\"/>\n  <polygon points=\"150,165 140,162 140,168\" fill=\"black\"/>\n</svg></div>",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = 5\\)",
+            "\\(x = 9\\)",
+            "\\(x = 8\\)"
+          ],
+          "answer": 0,
+          "hint": "The tick marks show that AB and AC are equal in length.",
+          "steps": [
+            {
+              "explain": "Since \\(\\triangle ABC\\) is isosceles, \\(AB = AC = x + 5\\)."
+            },
+            {
+              "explain": "The perimeter is the sum of all sides: \\((x + 5) + (x + 5) + 3x = 45\\)."
+            },
+            {
+              "explain": "Combine like terms: \\(5x + 10 = 45\\)."
+            },
+            {
+              "explain": "Subtract 10: \\(5x = 35\\)."
+            },
+            {
+              "explain": "Divide by 5: \\(x = 7\\)."
+            }
+          ],
+          "xp": 2
         }
       ]
     }
