@@ -3424,7 +3424,62 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-2F', code: '2F', title: 'Inequalities in Geometry and Calculus' }
         ]
       },
-      { id: 'y12e2-3', title: 'Integration Techniques', modules: 18 }
+      {
+        id: 'y12e2-3',
+        title: 'Chapter 3: Complex Numbers II: de Moivre and Euler',
+        modules: 5,
+        topics: [
+          { id: 'y12e2-3A', code: '3A', title: 'Powers of Complex Numbers' },
+          { id: 'y12e2-3B', code: '3B', title: 'Trigonometric Identities' },
+          { id: 'y12e2-3C', code: '3C', title: 'Roots of Complex Numbers' },
+          { id: 'y12e2-3D', code: '3D', title: 'Exponential Form: Euler\'s Formula' },
+          { id: 'y12e2-3E', code: '3E', title: 'Applications of Exponential Form' }
+        ]
+      },
+      {
+        id: 'y12e2-4',
+        title: 'Chapter 4: Integration',
+        modules: 9,
+        topics: [
+          { id: 'y12e2-4A', code: '4A', title: 'The Standard Integrals' },
+          { id: 'y12e2-4B', code: '4B', title: 'Algebraic Manipulation' },
+          { id: 'y12e2-4C', code: '4C', title: 'Substitution' },
+          { id: 'y12e2-4D', code: '4D', title: 'Partial Fractions' },
+          { id: 'y12e2-4E', code: '4E', title: 'Denominators with Quadratics' },
+          { id: 'y12e2-4F', code: '4F', title: 'Integration by Parts' },
+          { id: 'y12e2-4G', code: '4G', title: 'Trigonometric Integrals' },
+          { id: 'y12e2-4H', code: '4H', title: 'Reduction Formulae' },
+          { id: 'y12e2-4I', code: '4I', title: 'Miscellaneous Integrals' }
+        ]
+      },
+      {
+        id: 'y12e2-5',
+        title: 'Chapter 5: Vectors',
+        modules: 7,
+        topics: [
+          { id: 'y12e2-5A', code: '5A', title: 'Coordinates in Three Dimensions' },
+          { id: 'y12e2-5B', code: '5B', title: 'Vectors in Three Dimensions' },
+          { id: 'y12e2-5C', code: '5C', title: 'The Dot Product' },
+          { id: 'y12e2-5D', code: '5D', title: 'Applications of the Dot Product' },
+          { id: 'y12e2-5E', code: '5E', title: 'Vector Proofs in Geometry' },
+          { id: 'y12e2-5F', code: '5F', title: 'The Vector Equation of a Line' },
+          { id: 'y12e2-5G', code: '5G', title: 'Vector Equations of Circles, Spheres and Planes' }
+        ]
+      },
+      {
+        id: 'y12e2-6',
+        title: 'Chapter 6: Mechanics',
+        modules: 7,
+        topics: [
+          { id: 'y12e2-6A', code: '6A', title: 'Forces and Acceleration' },
+          { id: 'y12e2-6B', code: '6B', title: 'Simple Harmonic Motion and Time' },
+          { id: 'y12e2-6C', code: '6C', title: 'Simple Harmonic Motion and Displacement' },
+          { id: 'y12e2-6D', code: '6D', title: 'Horizontal Resisted Motion' },
+          { id: 'y12e2-6E', code: '6E', title: 'Vertical Resisted Motion' },
+          { id: 'y12e2-6F', code: '6F', title: 'Projectile Motion' },
+          { id: 'y12e2-6G', code: '6G', title: 'Miscellaneous Problems' }
+        ]
+      }
     ],
   }
 };
