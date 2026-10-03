@@ -52,7 +52,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
 
   return (
     <div className="cs__homework-wrap">
-      <article className={`cs__test-card cs__test-card--homework ${todoCount > 0 ? 'cs__test-card--pending' : 'cs__test-card--completed'}`}>
+      <article className={`cs__test-card cs__test-card--interactive cs__test-card--homework ${todoCount > 0 ? 'cs__test-card--pending' : 'cs__test-card--completed'}`}>
         <button
           type="button"
           className="cs__tile-main"

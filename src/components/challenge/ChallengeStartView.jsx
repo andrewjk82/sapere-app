@@ -408,7 +408,7 @@ const TestRow = ({
 
   return (
     <>
-      <article className={`cs__test-card cs__test-card--with-note cs__test-card--${cardState}${ended ? ' cs__test-card--ended' : ''}`}>
+      <article className={`cs__test-card cs__test-card--interactive cs__test-card--with-note cs__test-card--${cardState}${ended ? ' cs__test-card--ended' : ''}`}>
         <button type="button" className="cs__tile-main" onClick={openSession} disabled={loading} aria-label={`${title}${stateLabel ? `: ${stateLabel}` : ''}`}>
           {stateLabel && <span className="cs__tile-status">{stateLabel}</span>}
           <Icon className="cs__tile-watermark" aria-hidden="true" />
@@ -636,7 +636,7 @@ const ChallengeStartView = ({
             const hasNew = newFeedbackCount > 0;
             const openFeedback = onOpenFeedback || onViewFeedback;
             return (
-              <article className="cs__test-card cs__test-card--neutral">
+              <article className="cs__test-card cs__test-card--interactive cs__test-card--neutral">
                 <button type="button" className="cs__tile-main" onClick={openFeedback} aria-label="Teacher Feedback">
                   {hasNew && <span className="cs__tile-status">{newFeedbackCount} new</span>}
                   <MessageCircle className="cs__tile-watermark" aria-hidden="true" />
@@ -853,6 +853,8 @@ const challengeStartStyles = `
     background: #fff; box-shadow: 0 4px 14px rgba(40,34,91,.04); overflow: hidden;
     display: flex; flex-direction: column;
   }
+  .cs__test-card--interactive { cursor: pointer; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+  .cs__test-card--interactive:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(40,34,91,.11); border-color: #d8d1eb; }
   .cs__test-card--pending, .cs__test-card--ended { background: #fff4f2; border-color: #f2dfdc; }
   .cs__test-card--completed { background: #f1f8f1; border-color: #dcebdc; }
   .cs__test-card--loading, .cs__test-card--neutral { background: #fff; }
@@ -887,6 +889,10 @@ const challengeStartStyles = `
   .cs__note-strip--calc { color: #6650b1; }
   .cs__homework-wrap { min-width: 0; }
   .cs__homework-extra { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+  @media (prefers-reduced-motion: reduce) {
+    .cs__test-card--interactive { transition: none; }
+    .cs__test-card--interactive:hover { transform: none; }
+  }
 
   /* Secret Note footer — gradient CTA, same button size as above */
   .cs__lessons {
