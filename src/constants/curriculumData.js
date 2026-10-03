@@ -3410,36 +3410,52 @@ export const CURRICULUM_DATA = {
       }
     ],
     'Extension 2': [
-      { id: 'y12e2-1', title: 'Complex Numbers', modules: 15 },
+      {
+        id: 'y12e2-1',
+        title: 'Chapter 1: Complex Numbers I',
+        modules: 8,
+        topics: [
+          { id: 'y12e2-1A', code: '1A', title: 'The Arithmetic of Complex Numbers' },
+          { id: 'y12e2-1B', code: '1B', title: 'Quadratic Equations' },
+          { id: 'y12e2-1C', code: '1C', title: 'The Argand Diagram' },
+          { id: 'y12e2-1D', code: '1D', title: 'Modulus-Argument Form' },
+          { id: 'y12e2-1E', code: '1E', title: 'Vectors and the Complex Plane' },
+          { id: 'y12e2-1F', code: '1F', title: 'Curves and Regions in the Argand Diagram' },
+          { id: 'y12e2-1G', code: '1G', title: 'Polynomials and Complex Numbers' },
+          { id: 'y12e2-1H', code: '1H', title: 'Chapter Review Exercise' }
+        ]
+      },
       {
         id: 'y12e2-2',
         title: 'Chapter 2: Nature of Proof',
-        modules: 6,
+        modules: 7,
         topics: [
           { id: 'y12e2-2A', code: '2A', title: 'The Language of Proof' },
           { id: 'y12e2-2B', code: '2B', title: 'Number Proofs' },
           { id: 'y12e2-2C', code: '2C', title: 'Proof by Contraposition and by Contradiction' },
           { id: 'y12e2-2D', code: '2D', title: 'Algebraic Inequalities' },
           { id: 'y12e2-2E', code: '2E', title: 'Induction' },
-          { id: 'y12e2-2F', code: '2F', title: 'Inequalities in Geometry and Calculus' }
+          { id: 'y12e2-2F', code: '2F', title: 'Inequalities in Geometry and Calculus' },
+          { id: 'y12e2-2G', code: '2G', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-3',
         title: 'Chapter 3: Complex Numbers II: de Moivre and Euler',
-        modules: 5,
+        modules: 6,
         topics: [
           { id: 'y12e2-3A', code: '3A', title: 'Powers of Complex Numbers' },
           { id: 'y12e2-3B', code: '3B', title: 'Trigonometric Identities' },
           { id: 'y12e2-3C', code: '3C', title: 'Roots of Complex Numbers' },
           { id: 'y12e2-3D', code: '3D', title: 'Exponential Form: Euler\'s Formula' },
-          { id: 'y12e2-3E', code: '3E', title: 'Applications of Exponential Form' }
+          { id: 'y12e2-3E', code: '3E', title: 'Applications of Exponential Form' },
+          { id: 'y12e2-3F', code: '3F', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-4',
         title: 'Chapter 4: Integration',
-        modules: 9,
+        modules: 10,
         topics: [
           { id: 'y12e2-4A', code: '4A', title: 'The Standard Integrals' },
           { id: 'y12e2-4B', code: '4B', title: 'Algebraic Manipulation' },
@@ -3449,13 +3465,14 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-4F', code: '4F', title: 'Integration by Parts' },
           { id: 'y12e2-4G', code: '4G', title: 'Trigonometric Integrals' },
           { id: 'y12e2-4H', code: '4H', title: 'Reduction Formulae' },
-          { id: 'y12e2-4I', code: '4I', title: 'Miscellaneous Integrals' }
+          { id: 'y12e2-4I', code: '4I', title: 'Miscellaneous Integrals' },
+          { id: 'y12e2-4J', code: '4J', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-5',
         title: 'Chapter 5: Vectors',
-        modules: 7,
+        modules: 8,
         topics: [
           { id: 'y12e2-5A', code: '5A', title: 'Coordinates in Three Dimensions' },
           { id: 'y12e2-5B', code: '5B', title: 'Vectors in Three Dimensions' },
@@ -3463,13 +3480,14 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-5D', code: '5D', title: 'Applications of the Dot Product' },
           { id: 'y12e2-5E', code: '5E', title: 'Vector Proofs in Geometry' },
           { id: 'y12e2-5F', code: '5F', title: 'The Vector Equation of a Line' },
-          { id: 'y12e2-5G', code: '5G', title: 'Vector Equations of Circles, Spheres and Planes' }
+          { id: 'y12e2-5G', code: '5G', title: 'Vector Equations of Circles, Spheres and Planes' },
+          { id: 'y12e2-5H', code: '5H', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-6',
         title: 'Chapter 6: Mechanics',
-        modules: 7,
+        modules: 8,
         topics: [
           { id: 'y12e2-6A', code: '6A', title: 'Forces and Acceleration' },
           { id: 'y12e2-6B', code: '6B', title: 'Simple Harmonic Motion and Time' },
@@ -3477,7 +3495,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-6D', code: '6D', title: 'Horizontal Resisted Motion' },
           { id: 'y12e2-6E', code: '6E', title: 'Vertical Resisted Motion' },
           { id: 'y12e2-6F', code: '6F', title: 'Projectile Motion' },
-          { id: 'y12e2-6G', code: '6G', title: 'Miscellaneous Problems' }
+          { id: 'y12e2-6G', code: '6G', title: 'Miscellaneous Problems' },
+          { id: 'y12e2-6H', code: '6H', title: 'Chapter Review Exercise' }
         ]
       }
     ],
