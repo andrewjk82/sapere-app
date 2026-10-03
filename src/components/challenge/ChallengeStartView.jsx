@@ -408,7 +408,7 @@ const TestRow = ({
 
   return (
     <>
-      <article className={`cs__test-card cs__test-card--${cardState}${ended ? ' cs__test-card--ended' : ''}`}>
+      <article className={`cs__test-card cs__test-card--with-note cs__test-card--${cardState}${ended ? ' cs__test-card--ended' : ''}`}>
         <button type="button" className="cs__tile-main" onClick={openSession} disabled={loading} aria-label={`${title}${stateLabel ? `: ${stateLabel}` : ''}`}>
           {stateLabel && <span className="cs__tile-status">{stateLabel}</span>}
           <Icon className="cs__tile-watermark" aria-hidden="true" />
@@ -856,6 +856,7 @@ const challengeStartStyles = `
   .cs__test-card--pending, .cs__test-card--ended { background: #fff4f2; border-color: #f2dfdc; }
   .cs__test-card--completed { background: #f1f8f1; border-color: #dcebdc; }
   .cs__test-card--loading, .cs__test-card--neutral { background: #fff; }
+  .cs__test-card--with-note .cs__tile-title { transform: translateY(29px); }
   .cs__tile-main {
     appearance: none; position: relative; isolation: isolate; overflow: hidden;
     display: flex; align-items: center; justify-content: center; flex: 1; width: 100%; min-height: 0;
