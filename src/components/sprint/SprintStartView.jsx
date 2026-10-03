@@ -1,16 +1,11 @@
 import React from 'react';
 import { Crown, Hourglass, Flame } from 'lucide-react';
 import SprintLeaderboard from './SprintLeaderboard';
-import { FlameBuddyAvatar } from '../FlameBuddy';
-import '../FlameBuddy.css';
 import { formatSprintTime, formatResetCountdown } from '../../utils/sprintWeek';
-import { WRONG_ANSWER_PENALTY_MS } from '../../services/timesTableSprintService';
-import { SPRINT_QUESTION_COUNT, describeSprint } from '../../utils/sprintQuestions';
-import { SPRINT_XP_TIERS, SPRINT_XP_PARTICIPATION } from '../../constants/sprintXp';
 import { getSprintType } from '../../utils/sprintTypes';
 
 const SprintStartView = ({
-  typeId, year, myBestTimeMs, myRank, attemptsCount, top5, myUserId, msUntilReset, practiceOnly, onStart,
+  typeId, myBestTimeMs, myRank, attemptsCount, top5, myUserId, msUntilReset, practiceOnly, onStart,
 }) => {
   const type = getSprintType(typeId);
   const leader = top5[0];
@@ -65,19 +60,6 @@ const SprintStartView = ({
       <button type="button" className="tts-btn tts-btn--primary" onClick={onStart}>
         Start sprint
       </button>
-
-      <div className="tts-card tts-coach">
-        <div className="tts-coach-avatar">
-          <FlameBuddyAvatar mood="idle" />
-        </div>
-        <div className="tts-coach-bubble">
-          <span className="tts-coach-name">Flame Buddy</span>
-          Here's the deal — {SPRINT_QUESTION_COUNT} questions, {describeSprint(typeId, year)}.
-          Get one wrong and it just adds {WRONG_ANSWER_PENALTY_MS / 1000} seconds and moves on, no big drama.
-          Run it as many times as you like — only your fastest time counts.
-          When the week resets, the top three pocket {SPRINT_XP_TIERS.join(' / ')} XP, and everyone who had a go still gets {SPRINT_XP_PARTICIPATION}.
-        </div>
-      </div>
 
       <div className="tts-card">
         <label className="tts-eyebrow">This week's top 5</label>

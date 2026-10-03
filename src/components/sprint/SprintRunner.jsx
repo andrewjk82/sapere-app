@@ -164,7 +164,6 @@ const SprintRunner = ({ typeId, onBack, setIsLocked, onQuizActiveChange }) => {
           >
             <SprintStartView
               typeId={typeId}
-              year={profile?.year}
               myBestTimeMs={myResult?.bestTimeMs != null ? Number(myResult.bestTimeMs) : undefined}
               myRank={myRank}
               attemptsCount={myResult?.attemptsCount}
