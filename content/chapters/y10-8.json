@@ -2628,10 +2628,10 @@
         },
         {
           "id": "y10-8e-q4a-ii",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
-          "answer": "3",
+          "answer": 1,
           "solution": "3",
           "steps": [
             {
@@ -2651,8 +2651,13 @@
               "work": "\\\\( x = 4 \\\\times \\\\frac{3}{4} = 3 \\\\)"
             }
           ],
-          "manual": true,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "\\\\( 2 \\\\)",
+            "\\\\( 3 \\\\)",
+            "\\\\( 4 \\\\)",
+            "\\\\( 12 \\\\)"
+          ]
         },
         {
           "id": "y10-8e-q4b",
@@ -3892,10 +3897,10 @@
               "type": "mc",
               "stem": "Calculate the value of \\\\(x\\\\).\\n<svg viewBox=\"0 0 400 150\" width=\"100%\" height=\"auto\" style=\"max-width:500px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle ABC -->\n  <polygon points=\"80,40 40,100 160,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"80\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n  <text x=\"25\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n  <text x=\"175\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n  <text x=\"85\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"135\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"45\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">4 cm</text>\n  <text x=\"130\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm</text>\n\n  <!-- Triangle DEF -->\n  <polygon points=\"260,40 220,100 340,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <text x=\"260\" y=\"30\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n  <text x=\"205\" y=\"105\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text>\n  <text x=\"355\" y=\"115\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text>\n  <text x=\"265\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">120°</text>\n  <text x=\"315\" y=\"102\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">25°</text>\n  <text x=\"225\" y=\"65\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">x cm</text>\n  <text x=\"310\" y=\"60\" font-family=\"system-ui\" font-size=\"14\" fill=\"#1e293b\" text-anchor=\"middle\">6 cm</text>\n</svg>",
               "options": [
-                "2",
-                "3",
-                "4",
-                "4.5"
+                "\\\\( 2 \\\\)",
+                "\\\\( 3 \\\\)",
+                "\\\\( 4 \\\\)",
+                "\\\\( 12 \\\\)"
               ],
               "answer": 1,
               "steps": [
