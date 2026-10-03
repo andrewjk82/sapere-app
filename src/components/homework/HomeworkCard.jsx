@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react';
-import { ChevronDown, ChevronUp, CheckCircle2, Clock, PenLine, ClipboardCheck } from 'lucide-react';
+import { ChevronRight, CheckCircle2, Clock, PenLine, ClipboardCheck } from 'lucide-react';
 import { getHomeworkItems } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
+import HomeworkHistory from './HomeworkHistory';
 
 const BADGE = {
   todo: { label: 'To do', color: '#7c3aed', bg: '#f5f3ff', Icon: PenLine },
@@ -38,7 +39,6 @@ const Row = ({ item, onOpen }) => {
 const HomeworkCard = ({ sessions, profile, user }) => {
   const items = useMemo(() => getHomeworkItems(sessions), [sessions]);
   const active = items.filter((i) => i.status !== 'checked');
-  const history = items.filter((i) => i.status === 'checked');
   const [showHistory, setShowHistory] = useState(false);
   const [openItem, setOpenItem] = useState(null);
 
@@ -56,7 +56,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
         <button
           type="button"
           className="cs__tile-main"
-          onClick={() => latest ? setOpenItem(latest) : setShowHistory((v) => !v)}
+          onClick={() => latest ? setOpenItem(latest) : setShowHistory(true)}
           aria-label={`Homework: ${todoCount > 0 ? `${todoCount} to do` : allChecked ? 'All checked' : 'Submitted'}`}
         >
           <span className="cs__tile-status">
@@ -67,20 +67,19 @@ const HomeworkCard = ({ sessions, profile, user }) => {
         </button>
       </article>
 
-      {(otherActive.length > 0 || history.length > 0) && (
-        <div className="cs__homework-extra">
-          {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
-          {history.length > 0 && latest && (
-            <button
-              type="button"
-              onClick={() => setShowHistory((v) => !v)}
-              style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: 4, border: 0, background: 'transparent', color: '#64748b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', padding: 0 }}
-            >
-              {showHistory ? <ChevronUp size={14} /> : <ChevronDown size={14} />} History ({history.length})
-            </button>
-          )}
-          {showHistory && history.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
-        </div>
+      <div className="cs__homework-extra">
+        {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
+        <button
+          type="button"
+          onClick={() => setShowHistory(true)}
+          style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: 4, border: 0, background: 'transparent', color: '#64748b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', padding: 0 }}
+        >
+          View all homework <ChevronRight size={14} />
+        </button>
+      </div>
+
+      {showHistory && (
+        <HomeworkHistory sessions={sessions} onOpen={setOpenItem} onClose={() => setShowHistory(false)} />
       )}
 
       {openItem && openSession && openItem.status !== 'checked' && (
@@ -94,7 +93,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
         />
       )}
       {openItem && openItem.status === 'checked' && (
-        <HomeworkSubmissionViewer sessionId={openItem.sessionId} mode="student" uid={user?.uid} onClose={() => setOpenItem(null)} />
+        <HomeworkSubmissionViewer sessionId={openItem.sessionId} mode="student" uid={user?.uid} info={openItem} onClose={() => setOpenItem(null)} />
       )}
     </div>
   );

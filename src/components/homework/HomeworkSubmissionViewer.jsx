@@ -9,8 +9,11 @@ const SPIN = { animation: 'spin 0.8s linear infinite' };
 const ICON_BTN = { border: 0, background: 'transparent', color: '#fff', padding: 6, cursor: 'pointer' };
 
 // mode 'teacher': originals from Firestore (thumbnails once purged) + "Mark as checked".
-// mode 'student': the copy kept on this device (thumbnails as a fallback).
-const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) => {
+// mode 'student': the copy kept on this device, with no Firestore read at all;
+// only when this device has no copy is the submission doc read once for its
+// thumbnails. `info` ({ date, topics, status }) comes from the in-memory
+// session so the header doesn't need that doc either.
+const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onChecked }) => {
   const [submission, setSubmission] = useState(null);
   const [pages, setPages] = useState([]);
   const [isThumbnailOnly, setIsThumbnailOnly] = useState(false);
@@ -24,19 +27,20 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
     let cancelled = false;
     (async () => {
       try {
-        // Paper homework the teacher ticked has no submission doc → null.
-        const sub = await fetchSubmission(sessionId);
-        if (cancelled) return;
-        setSubmission(sub);
+        let sub = null;
         let images = [];
         if (mode === 'student') {
           const local = await loadHomeworkLocal(uid, sessionId);
-          images = local?.submittedImages || [];
-        } else if (sub && !sub.originalsDeletedAt) {
-          images = await fetchSubmissionPages(sessionId);
+          images = (local?.submittedImages || []).filter(isSafeImageDataUrl);
+          // Paper homework the teacher ticked has no submission doc → null.
+          if (images.length === 0) sub = await fetchSubmission(sessionId);
+        } else {
+          sub = await fetchSubmission(sessionId);
+          if (sub && !sub.originalsDeletedAt) images = await fetchSubmissionPages(sessionId);
+          images = images.filter(isSafeImageDataUrl);
         }
         if (cancelled) return;
-        images = images.filter(isSafeImageDataUrl);
+        setSubmission(sub);
         const thumbnails = (sub?.thumbnails || []).filter(isSafeImageDataUrl);
         if (images.length === 0 && thumbnails.length) {
           images = thumbnails;
@@ -66,8 +70,9 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
     }
   };
 
-  const topics = (submission?.topics || []).map((t) => t.label).join(', ');
-  const subtitle = [submission?.sessionDate, topics].filter(Boolean).join(' · ');
+  const topics = (submission?.topics || info?.topics || []).map((t) => t.label).join(', ');
+  const subtitle = [submission?.sessionDate || info?.date, topics].filter(Boolean).join(' · ');
+  const status = submission?.status || info?.status;
 
   return createPortal(
     <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.85)', display: 'flex', flexDirection: 'column' }}>
@@ -87,7 +92,7 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, onClose, onChecked }) 
             {checking ? <Loader2 size={16} style={SPIN} /> : <CheckCircle2 size={16} />} Mark as checked
           </button>
         )}
-        {submission?.status === 'checked' && (
+        {status === 'checked' && (
           <span style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#6ee7b7', fontWeight: 800 }}><CheckCircle2 size={16} /> Checked</span>
         )}
         <button type="button" aria-label="Close" onClick={onClose} style={ICON_BTN}><X size={22} /></button>

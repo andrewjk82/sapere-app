@@ -62,6 +62,30 @@ export const getHomeworkItems = (sessions, { today = new Date() } = {}) => {
     .sort((a, b) => b.date.localeCompare(a.date));
 };
 
+// Every homework the student ever had, newest first, for the History screen.
+// Built only from sessions already in memory (no reads). A to-do older than
+// the active window is 'missed'.
+export const getHomeworkHistory = (sessions, { today = new Date() } = {}) => {
+  const cutoff = toLocalDateStr(new Date(today.getTime() - HOMEWORK_ACTIVE_WINDOW_DAYS * DAY_MS));
+  return (Array.isArray(sessions) ? sessions : [])
+    .filter((s) => s?.id && Array.isArray(s.learnedTopics) && s.learnedTopics.length > 0)
+    .map((s) => {
+      const status = getHomeworkStatus(s);
+      const date = s.date || '';
+      const hasMark = s.homeworkScore != null && Number(s.homeworkTotal) > 0;
+      return {
+        sessionId: s.id,
+        date,
+        topics: s.learnedTopics
+          .map((t) => ({ id: t?.id || '', label: t?.label || t?.title || t?.id || '' }))
+          .filter((t) => t.id),
+        status: status === 'todo' && date < cutoff ? 'missed' : status,
+        mark: hasMark ? `${Number(s.homeworkScore)}/${Number(s.homeworkTotal)}` : '',
+      };
+    })
+    .sort((a, b) => b.date.localeCompare(a.date));
+};
+
 export const curriculumDocIdsForProfile = (profile = {}) => {
   const rawYears = Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear];
   const rawCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse];

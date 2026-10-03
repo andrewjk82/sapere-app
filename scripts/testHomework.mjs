@@ -10,6 +10,7 @@ import {
   toDriveOpenUrl,
   getHomeworkStatus,
   getHomeworkItems,
+  getHomeworkHistory,
   curriculumDocIdsForProfile,
   buildTopicPdfMap,
   dataUrlBytes,
@@ -131,6 +132,21 @@ test('isSafeImageDataUrl only accepts inline raster data URLs', () => {
 
 test('page limit constant', () => {
   assert.equal(MAX_HOMEWORK_PAGES, 10);
+});
+
+test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries the mark', () => {
+  const today = new Date('2026-10-04T12:00:00');
+  const sessions = [
+    { id: 'old', date: '2026-08-01', learnedTopics: [{ id: 't1', label: '1A' }] },
+    { id: 'new', date: '2026-10-02', learnedTopics: [{ id: 't2', label: '1B' }] },
+    { id: 'chk', date: '2026-07-01', learnedTopics: [{ id: 't3' }], homeworkStatus: 'checked', homeworkScore: 8, homeworkTotal: 10 },
+    { id: 'none', date: '2026-10-03', learnedTopics: [] },
+  ];
+  const items = getHomeworkHistory(sessions, { today });
+  assert.deepEqual(items.map((i) => [i.sessionId, i.status, i.mark]), [
+    ['new', 'todo', ''], ['old', 'missed', ''], ['chk', 'checked', '8/10'],
+  ]);
+  assert.equal(items[2].topics[0].label, 't3');
 });
 
 console.log(`\n${passed} passed`);
