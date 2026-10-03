@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
-import { ChevronRight, CheckCircle2, Clock, PenLine, ClipboardCheck } from 'lucide-react';
-import { getHomeworkItems } from '../../utils/homework';
+import { CheckCircle2, Clock, PenLine, ClipboardCheck, History } from 'lucide-react';
+import { getHomeworkItems, getHomeworkHistory } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import HomeworkHistory from './HomeworkHistory';
@@ -38,6 +38,7 @@ const Row = ({ item, onOpen }) => {
 // Calculation / Teacher Feedback cards above it.
 const HomeworkCard = ({ sessions, profile, user }) => {
   const items = useMemo(() => getHomeworkItems(sessions), [sessions]);
+  const pastCount = useMemo(() => getHomeworkHistory(sessions).length, [sessions]);
   const active = items.filter((i) => i.status !== 'checked');
   const [showHistory, setShowHistory] = useState(false);
   const [openItem, setOpenItem] = useState(null);
@@ -52,7 +53,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
 
   return (
     <div className="cs__homework-wrap">
-      <article className={`cs__test-card cs__test-card--interactive cs__test-card--homework ${todoCount > 0 ? 'cs__test-card--pending' : 'cs__test-card--completed'}`}>
+      <article className={`cs__test-card cs__test-card--interactive cs__test-card--with-note cs__test-card--homework ${todoCount > 0 ? 'cs__test-card--pending' : 'cs__test-card--completed'}`}>
         <button
           type="button"
           className="cs__tile-main"
@@ -65,18 +66,21 @@ const HomeworkCard = ({ sessions, profile, user }) => {
           <ClipboardCheck className="cs__tile-watermark" aria-hidden="true" />
           <span className="cs__tile-title">Homework</span>
         </button>
+        {/* Same footer strip as the Secret Note one on the cards beside it. */}
+        <button type="button" className="cs__note-strip" onClick={() => setShowHistory(true)}>
+          <History size={15} aria-hidden="true" />
+          <span className="cs__note-main">
+            <strong>Homework history</strong>
+            <span className="cs__note-sub">{pastCount} past assignment{pastCount === 1 ? '' : 's'}</span>
+          </span>
+        </button>
       </article>
 
-      <div className="cs__homework-extra">
-        {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
-        <button
-          type="button"
-          onClick={() => setShowHistory(true)}
-          style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: 4, border: 0, background: 'transparent', color: '#64748b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', padding: 0 }}
-        >
-          View all homework <ChevronRight size={14} />
-        </button>
-      </div>
+      {otherActive.length > 0 && (
+        <div className="cs__homework-extra">
+          {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
+        </div>
+      )}
 
       {showHistory && (
         <HomeworkHistory sessions={sessions} onOpen={setOpenItem} onClose={() => setShowHistory(false)} />
