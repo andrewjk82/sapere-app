@@ -12,6 +12,10 @@ import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
 import ScheduleLessonModal from './ScheduleLessonModal';
+import LessonTopicPicker from './schedule/LessonTopicPicker';
+import {
+  groupMeta, findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework,
+} from '../utils/lessonTopics';
 
 const TIME_OPTIONS = [
   '7:00 AM', '7:30 AM', '8:00 AM', '8:30 AM', '9:00 AM', '9:30 AM', '10:00 AM', '10:30 AM',
@@ -104,7 +108,9 @@ const buildSessionUpdatePayload = (editData) => ({
   endTime: editData.endTime || '',
   learnedTopics: Array.isArray(editData.learnedTopics) ? editData.learnedTopics : [],
   notes: editData.notes || '',
-  homework: editData.homework || '',
+  // Covered topics are the homework; the saved text (emails, weekly report)
+  // is those topic lines plus the teacher's optional extra note.
+  homework: composeHomework(Array.isArray(editData.learnedTopics) ? editData.learnedTopics : [], editData.homeworkExtra),
   isHomeworkCompleted: Boolean(editData.isHomeworkCompleted),
   attendance: editData.attendance || '',
   homeworkScore: editData.homeworkScore === '' ? null : Number(editData.homeworkScore),
@@ -138,6 +144,8 @@ const getStudentDisplayYear = (student = {}) => {
   return years.find(year => typeof year === 'string' && year.startsWith('Year ')) || 'Year 11';
 };
 
+// Chapters the student's year(s)/course(s) cover, each tagged with its group
+// (one year, or year + course for Years 11–12) so the topic picker can tab by it.
 const getStudentCurriculumChapters = (student = {}) => {
   const years = Array.isArray(student.assignedYear) ? student.assignedYear : [student.assignedYear || student.year || student.level || 'Year 11'];
   const courses = Array.isArray(student.assignedCourse) ? student.assignedCourse : [student.assignedCourse || student.course || 'Advanced'];
@@ -147,20 +155,23 @@ const getStudentCurriculumChapters = (student = {}) => {
     const yearData = CURRICULUM_DATA[year];
     if (!yearData) return;
     if (Array.isArray(yearData)) {
-      chapters.push(...yearData);
+      yearData.forEach((chapter) => chapters.push({ chapter, meta: groupMeta(year) }));
       return;
     }
+    let added = 0;
     courses.forEach((course) => {
-      if (Array.isArray(yearData[course])) chapters.push(...yearData[course]);
+      if (!Array.isArray(yearData[course])) return;
+      yearData[course].forEach((chapter) => chapters.push({ chapter, meta: groupMeta(year, course) }));
+      added += 1;
     });
-    if (chapters.length === 0) {
-      const firstCourse = Object.values(yearData).find(Array.isArray);
-      if (firstCourse) chapters.push(...firstCourse);
+    if (added === 0) {
+      const [firstCourse, firstChapters] = Object.entries(yearData).find(([, v]) => Array.isArray(v)) || [];
+      if (firstChapters) firstChapters.forEach((chapter) => chapters.push({ chapter, meta: groupMeta(year, firstCourse) }));
     }
   });
 
   const seen = new Set();
-  return chapters.filter((chapter) => {
+  return chapters.filter(({ chapter }) => {
     if (!chapter?.id || seen.has(chapter.id)) return false;
     seen.add(chapter.id);
     return true;
@@ -173,7 +184,7 @@ const getAssignedCurriculumTopics = (student = {}) => {
   const chapters = getStudentCurriculumChapters(student);
   const items = [];
 
-  chapters.forEach((chapter) => {
+  chapters.forEach(({ chapter, meta }) => {
     if (Array.isArray(chapter.topics) && chapter.topics.length > 0) {
       chapter.topics.forEach((topic) => {
         const isAssigned = assignedIds.has(topic.id) || assignedIds.has(chapter.id);
@@ -183,7 +194,11 @@ const getAssignedCurriculumTopics = (student = {}) => {
           id: topic.id,
           label: `${topic.code ? `${topic.code} · ` : ''}${topic.group ? `${topic.group}: ` : ''}${topic.title}`,
           chapterTitle: chapter.title,
-          completed: completedIds.has(topic.id)
+          completed: completedIds.has(topic.id),
+          chapterId: chapter.id,
+          code: topic.code || '',
+          title: `${topic.group ? `${topic.group}: ` : ''}${topic.title}`,
+          ...meta,
         });
       });
       return;
@@ -193,7 +208,10 @@ const getAssignedCurriculumTopics = (student = {}) => {
         id: chapter.id,
         label: chapter.title,
         chapterTitle: chapter.title,
-        completed: completedIds.has(chapter.id)
+        completed: completedIds.has(chapter.id),
+        chapterId: chapter.id,
+        title: chapter.title,
+        ...meta,
       });
     }
   });
@@ -412,7 +430,7 @@ const Schedule = ({ students = [] }) => {
     setSelectedSession(session);
     setEditData({
       notes: session.notes || '',
-      homework: session.homework || '',
+      homeworkExtra: splitHomeworkExtra(session.homework, Array.isArray(session.learnedTopics) ? session.learnedTopics : []),
       isHomeworkCompleted: session.isHomeworkCompleted || false,
       attendance: session.attendance || '',
       homeworkScore: session.homeworkScore ?? '',
@@ -433,31 +451,24 @@ const Schedule = ({ students = [] }) => {
     activeStudentProfile ? getAssignedCurriculumTopics(activeStudentProfile) : []
   ), [activeStudentProfile]);
 
+  // "Next up": the topic after the furthest one covered in this student's
+  // previous lesson (sessions are already in memory — no reads).
+  const nextUpTopic = useMemo(() => {
+    if (!selectedSession || curriculumTopicOptions.length === 0) return null;
+    const prev = findPreviousCoveredSession(sessions, selectedSession);
+    const picked = new Set((editData.learnedTopics || []).map((t) => t.id));
+    return prev ? findNextTopic(curriculumTopicOptions, prev.learnedTopics, picked) : null;
+  }, [selectedSession, sessions, curriculumTopicOptions, editData.learnedTopics]);
+
   const toggleLearnedTopic = (topic) => {
     setEditData(prev => {
       const current = Array.isArray(prev.learnedTopics) ? prev.learnedTopics : [];
       const exists = current.some(item => item.id === topic.id);
-
-      // Keep the Homework field in sync — a checked "Today covered" topic is
-      // added as a homework line; unchecking removes it. Manual homework text
-      // the teacher typed is preserved.
-      const topicLine = String(topic?.label || topic?.title || topic?.id || '').trim();
-      const lines = String(prev.homework || '').split('\n');
-      let nextHomework;
-      if (exists) {
-        nextHomework = lines.filter(l => l.trim() !== topicLine).join('\n').trim();
-      } else if (topicLine && !lines.some(l => l.trim() === topicLine)) {
-        nextHomework = [String(prev.homework || '').trim(), topicLine].filter(Boolean).join('\n');
-      } else {
-        nextHomework = prev.homework;
-      }
-
       return {
         ...prev,
         learnedTopics: exists
           ? current.filter(item => item.id !== topic.id)
           : [...current, topic],
-        homework: nextHomework,
       };
     });
   };
@@ -1267,58 +1278,14 @@ const Schedule = ({ students = [] }) => {
                 <div>
                   <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Today Covered</label>
                   {isAdmin ? (
-                    <div style={{ border: '2px solid #f1f5f9', borderRadius: '16px', padding: '14px', display: 'grid', gap: '10px', maxHeight: '220px', overflowY: 'auto', background: '#fff' }}>
-                      {curriculumTopicOptions.length === 0 ? (
-                        <div style={{ color: '#64748b', fontWeight: 700, fontSize: '0.9rem' }}>
-                          No assigned curriculum found{activeStudentProfile ? ` for ${getStudentDisplayYear(activeStudentProfile)}` : ''}.
-                        </div>
-                      ) : (
-                        curriculumTopicOptions.map((topic) => {
-                          const checked = (editData.learnedTopics || []).some(item => item.id === topic.id);
-                          return (
-                            <button
-                              key={topic.id}
-                              type="button"
-                              onClick={() => toggleLearnedTopic(topic)}
-                              style={{
-                                border: 'none',
-                                background: checked ? '#eef2ff' : '#f8fafc',
-                                borderRadius: '12px',
-                                padding: '10px 12px',
-                                display: 'flex',
-                                alignItems: 'flex-start',
-                                gap: '10px',
-                                textAlign: 'left',
-                                cursor: 'pointer'
-                              }}
-                            >
-                              <span style={{
-                                width: '20px',
-                                height: '20px',
-                                borderRadius: '6px',
-                                border: `2px solid ${checked ? '#6366f1' : '#cbd5e1'}`,
-                                background: checked ? '#6366f1' : '#fff',
-                                color: '#fff',
-                                display: 'grid',
-                                placeItems: 'center',
-                                flexShrink: 0,
-                                marginTop: '1px'
-                              }}>
-                                {checked && <Check size={13} strokeWidth={3} />}
-                              </span>
-                              <span style={{ minWidth: 0 }}>
-                                <span style={{ display: 'block', color: checked ? '#312e81' : '#1e293b', fontWeight: 800, fontSize: '0.88rem', lineHeight: 1.35 }}>
-                                  {topic.label}
-                                </span>
-                                <span style={{ display: 'block', color: '#94a3b8', fontWeight: 700, fontSize: '0.72rem', marginTop: '2px' }}>
-                                  {topic.chapterTitle}{topic.completed ? ' · completed' : ''}
-                                </span>
-                              </span>
-                            </button>
-                          );
-                        })
-                      )}
-                    </div>
+                    <LessonTopicPicker
+                      key={`${selectedSession.id}:${curriculumTopicOptions.length > 0}`}
+                      options={curriculumTopicOptions}
+                      selected={editData.learnedTopics || []}
+                      onToggle={toggleLearnedTopic}
+                      nextUp={nextUpTopic}
+                      emptyText={`No assigned curriculum found${activeStudentProfile ? ` for ${getStudentDisplayYear(activeStudentProfile)}` : ''}.`}
+                    />
                   ) : (
                     <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '20px', color: '#1e1b4b', fontSize: '1rem', display: 'flex', flexDirection: 'column', gap: '12px', border: '1px solid #f1f5f9' }}>
                       {Array.isArray(selectedSession.learnedTopics) && selectedSession.learnedTopics.length > 0
@@ -1344,7 +1311,22 @@ const Schedule = ({ students = [] }) => {
                 <div>
                   <label style={{ display: 'block', fontSize: '0.7rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '10px' }}>Homework</label>
                   {isAdmin
-                    ? <textarea rows={2} value={editData.homework} onChange={e => setEditData({ ...editData, homework: e.target.value })} style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '20px', padding: '18px', fontSize: '1.05rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', resize: 'none', boxSizing: 'border-box' }} />
+                    ? (
+                      <div style={{ display: 'grid', gap: '8px' }}>
+                        <div style={{ color: '#475569', fontWeight: 700, fontSize: '0.85rem' }}>
+                          {(editData.learnedTopics || []).length > 0
+                            ? `Today's ${(editData.learnedTopics || []).length === 1 ? 'topic is' : `${(editData.learnedTopics || []).length} topics are`} set as homework (worksheet PDFs).`
+                            : 'Pick today’s topics above — they become the homework.'}
+                        </div>
+                        <textarea
+                          rows={1}
+                          placeholder="Extra homework note (optional)"
+                          value={editData.homeworkExtra || ''}
+                          onChange={e => setEditData({ ...editData, homeworkExtra: e.target.value })}
+                          style={{ width: '100%', border: '2px solid #f1f5f9', borderRadius: '16px', padding: '12px 14px', fontSize: '0.95rem', fontWeight: 700, color: '#1e1b4b', outline: 'none', resize: 'vertical', boxSizing: 'border-box', fontFamily: 'inherit' }}
+                        />
+                      </div>
+                    )
                     : <div style={{ background: '#f8fafc', padding: '20px', borderRadius: '20px', color: '#1e1b4b', fontSize: '1.05rem', fontWeight: 700, border: '1px solid #f1f5f9' }}>{selectedSession.homework || 'No homework assigned.'}</div>
                   }
                 </div>
