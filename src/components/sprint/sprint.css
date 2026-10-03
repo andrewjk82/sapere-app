@@ -720,7 +720,7 @@
 }
 
 /* ── Daily Challenge hub ─────────────────────────────────────────────── */
-.tts-hub { max-width: 980px; margin: 0 auto; width: 100%; }
+.tts-hub { max-width: 980px; margin: 0 auto; width: 100%; container-type: inline-size; }
 .tts-hub__back {
   display: flex; align-items: center; gap: 6px; background: none; border: none;
   color: #64748b; font-weight: 700; cursor: pointer; padding: 0 0 14px; font-family: inherit;
@@ -728,8 +728,9 @@
 .tts-hub__head h2 { margin: 0; font-size: 1.9rem; font-weight: 900; color: #1e1b4b; }
 .tts-hub__head p { margin: 4px 0 18px; color: #6d6a85; font-weight: 600; }
 .tts-hub__grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
-@media (max-width: 900px) { .tts-hub__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .tts-hub__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Columns follow the hub's own width (it sits beside the sidebar), not the window. */
+@container (max-width: 720px) { .tts-hub__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@container (max-width: 420px) { .tts-hub__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .tts-hub-card {
   aspect-ratio: 1 / 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 6px; padding: 12px; border-radius: 24px; border: 2px solid color-mix(in srgb, var(--hub-accent) 25%, #fff);
@@ -739,5 +740,5 @@
 }
 .tts-hub-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(15, 23, 42, 0.1); }
 .tts-hub-card__glyph { font-size: 2.6rem; font-weight: 900; line-height: 1; color: var(--hub-accent); }
-.tts-hub-card__name { font-weight: 900; color: #1e1b4b; font-size: 1rem; text-align: center; }
-.tts-hub-card__best { font-family: var(--spr-mono); font-size: 0.78rem; font-weight: 700; color: #64748b; }
+.tts-hub-card__name { font-weight: 900; color: #1e1b4b; font-size: 1rem; text-align: center; white-space: nowrap; }
+.tts-hub-card__best { font-family: var(--spr-mono); font-size: 0.78rem; font-weight: 700; color: #64748b; white-space: nowrap; }
