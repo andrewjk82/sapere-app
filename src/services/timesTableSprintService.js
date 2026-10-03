@@ -1,11 +1,12 @@
 /**
  * timesTableSprintService.js
  *
- * Weekly Times Table Sprint: 20 unique multiplication facts, timed to the
- * millisecond, unlimited attempts per week, best time counts.
+ * Weekly Daily Challenge sprints (one leaderboard per sprint type per week —
+ * see src/utils/sprintTypes.js): 20 questions, timed to the millisecond,
+ * unlimited attempts per week, best time counts.
  *
  * Traffic model — the leaderboard has to feel live without being polled:
- *   - `timestable_sprint_meta/{weekId}` is ONE small doc holding the whole
+ *   - `timestable_sprint_meta/{boardId}` is ONE small doc holding the whole
  *     top 5. Clients attach a single onSnapshot to it, so Firestore only
  *     bills when the top 5 actually changes.
  *   - That doc is mirrored into localStorage, so a returning student paints
@@ -27,22 +28,18 @@ import { db } from '../firebase/config';
 import { localCache } from './localCacheService';
 import { trackRead, trackWrite } from './trafficTrackerService';
 import { buildAvatarUrl, buildDisplayName } from '../utils/avatarUtils';
-import { getSprintWeekId, getPreviousSprintWeekId } from '../utils/sprintWeek';
+import { getPreviousSprintWeekId } from '../utils/sprintWeek';
+import { SPRINT_TYPES, sprintBoardId } from '../utils/sprintTypes';
 
 export const RESULTS_COLLECTION = 'timestable_sprint_results';
 export const META_COLLECTION = 'timestable_sprint_meta';
 export const ATTEMPTS_COLLECTION = 'timestable_sprint_attempts';
 
-export const SPRINT_QUESTION_COUNT = 20;
 export const WRONG_ANSWER_PENALTY_MS = 3000;
 export const TOP_N = 5;
 
-/** Weekly XP payout by finishing rank; everyone else who played gets 5. */
-export const SPRINT_XP_TIERS = [100, 50, 20];
-export const SPRINT_XP_PARTICIPATION = 5;
-
-const cacheKeyFor = (weekId) => `ttsprint:meta:${weekId}`;
-const myBestKeyFor = (weekId, userId) => `ttsprint:mybest:${weekId}:${userId}`;
+const cacheKeyFor = (boardId) => `ttsprint:meta:${boardId}`;
+const myBestKeyFor = (boardId, userId) => `ttsprint:mybest:${boardId}:${userId}`;
 
 /**
  * The student's own best, mirrored locally after every run.
@@ -50,14 +47,14 @@ const myBestKeyFor = (weekId, userId) => `ttsprint:mybest:${weekId}:${userId}`;
  * Their own time can only change by running a sprint, which always writes
  * through here — so the dashboard card can show it without a Firestore read.
  */
-export const readCachedMyBest = (weekId, userId) => {
-  if (!weekId || !userId) return null;
-  const cached = localCache.get(myBestKeyFor(weekId, userId));
+export const readCachedMyBest = (boardId, userId) => {
+  if (!boardId || !userId) return null;
+  const cached = localCache.get(myBestKeyFor(boardId, userId));
   return Number.isFinite(Number(cached?.bestTimeMs)) ? cached : null;
 };
 
-const writeCachedMyBest = (weekId, userId, bestTimeMs, attemptsCount) => {
-  localCache.set(myBestKeyFor(weekId, userId), { bestTimeMs, attemptsCount });
+const writeCachedMyBest = (boardId, userId, bestTimeMs, attemptsCount) => {
+  localCache.set(myBestKeyFor(boardId, userId), { bestTimeMs, attemptsCount });
 };
 
 // "New" badge on the dashboard card — a one-time introduction, not a weekly
@@ -74,55 +71,17 @@ export const markSprintIntroSeen = (userId) => {
   localCache.set(introSeenKeyFor(userId), true);
 };
 
-// ── Questions ──────────────────────────────────────────────────────────────
-
-/**
- * Years 1–3 drill the basic tables (2–9); everyone else gets the full
- * Australian 12×12 grid. Unknown/unset year falls back to the wider range.
- */
-export const getFactorRangeForYear = (year) => {
-  const n = Number(String(year ?? '').replace(/[^0-9]/g, ''));
-  return Number.isFinite(n) && n >= 1 && n <= 3 ? { min: 2, max: 9 } : { min: 2, max: 12 };
-};
-
-/**
- * 20 distinct multiplication facts. a×b and b×a are the same fact, so the
- * pool is built from unordered pairs and each pair is drawn at most once —
- * the displayed orientation is then randomised for variety.
- */
-export const generateSprintQuestions = (year, count = SPRINT_QUESTION_COUNT) => {
-  const { min, max } = getFactorRangeForYear(year);
-
-  const pool = [];
-  for (let a = min; a <= max; a++) {
-    for (let b = a; b <= max; b++) pool.push([a, b]);
-  }
-
-  // Fisher–Yates, then take the first `count` — guarantees no repeats.
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
-
-  return pool.slice(0, Math.min(count, pool.length)).map(([a, b]) => {
-    const flip = Math.random() < 0.5;
-    const left = flip ? b : a;
-    const right = flip ? a : b;
-    return { pairKey: `${a}x${b}`, left, right, answer: a * b };
-  });
-};
-
 // ── Leaderboard meta (cached + realtime) ───────────────────────────────────
 
 /** Last known top 5 from localStorage — paints instantly, costs nothing. */
-export const readCachedSprintMeta = (weekId) => {
-  const cached = localCache.get(cacheKeyFor(weekId));
+export const readCachedSprintMeta = (boardId) => {
+  const cached = localCache.get(cacheKeyFor(boardId));
   return cached && Array.isArray(cached.top5) ? cached : null;
 };
 
-const writeCachedSprintMeta = (weekId, meta) => {
-  localCache.set(cacheKeyFor(weekId), {
-    weekId,
+const writeCachedSprintMeta = (boardId, meta) => {
+  localCache.set(cacheKeyFor(boardId), {
+    weekId: boardId,
     version: Number(meta?.version) || 0,
     signature: meta?.signature || '',
     top5: Array.isArray(meta?.top5) ? meta.top5 : [],
@@ -134,19 +93,19 @@ const writeCachedSprintMeta = (weekId, meta) => {
  * Single realtime listener on the top-5 doc. Emits the cached value first so
  * the UI never flashes empty, then live updates. Returns an unsubscribe fn.
  */
-export const subscribeSprintMeta = (weekId, onChange) => {
-  const cached = readCachedSprintMeta(weekId);
+export const subscribeSprintMeta = (boardId, onChange) => {
+  const cached = readCachedSprintMeta(boardId);
   if (cached) onChange(cached);
 
   return onSnapshot(
-    doc(db, META_COLLECTION, weekId),
+    doc(db, META_COLLECTION, boardId),
     (snap) => {
       const data = snap.exists()
-        ? { weekId, ...snap.data() }
-        : { weekId, version: 0, signature: '', top5: [], participantCount: 0 };
+        ? { weekId: boardId, ...snap.data() }
+        : { weekId: boardId, version: 0, signature: '', top5: [], participantCount: 0 };
       // Cache hits are served locally by the SDK and cost nothing.
       if (!snap.metadata.fromCache) trackRead(1, 'ttsprint_meta');
-      writeCachedSprintMeta(weekId, data);
+      writeCachedSprintMeta(boardId, data);
       onChange(data);
     },
     (err) => console.warn('[ttsprint] meta listener error:', err?.code || err),
@@ -173,12 +132,12 @@ const couldChangeTop5 = (meta, userId, newBestMs) => {
  * actually differs from what is already published.
  * @returns {Promise<object|null>} the new meta, or null when nothing changed.
  */
-const refreshTop5 = async (weekId) => {
+const refreshTop5 = async (boardId) => {
   const queryStartedAt = Date.now();
 
   const snap = await getDocs(query(
     collection(db, RESULTS_COLLECTION),
-    where('weekId', '==', weekId),
+    where('weekId', '==', boardId),
     orderBy('bestTimeMs', 'asc'),
     limit(TOP_N),
   ));
@@ -200,7 +159,7 @@ const refreshTop5 = async (weekId) => {
   try {
     const agg = await getCountFromServer(query(
       collection(db, RESULTS_COLLECTION),
-      where('weekId', '==', weekId),
+      where('weekId', '==', boardId),
     ));
     participantCount = agg.data().count || 0;
     trackRead(1, 'ttsprint_count');
@@ -210,7 +169,7 @@ const refreshTop5 = async (weekId) => {
 
   let published = null;
   await runTransaction(db, async (tx) => {
-    const metaRef = doc(db, META_COLLECTION, weekId);
+    const metaRef = doc(db, META_COLLECTION, boardId);
     const current = (await tx.get(metaRef)).data() || null;
 
     // Another finisher published after our query started — theirs is fresher.
@@ -220,7 +179,7 @@ const refreshTop5 = async (weekId) => {
     if (current && current.signature === signature) return;
 
     published = {
-      weekId,
+      weekId: boardId,
       version: Date.now(),
       signature,
       top5,
@@ -240,12 +199,12 @@ const refreshTop5 = async (weekId) => {
  * The student's own placing. One count aggregation (billed as a single read),
  * used on the start screen and again after a run to animate the change.
  */
-export const fetchSprintRank = async (weekId, bestTimeMs) => {
+export const fetchSprintRank = async (boardId, bestTimeMs) => {
   if (!Number.isFinite(bestTimeMs)) return null;
   try {
     const agg = await getCountFromServer(query(
       collection(db, RESULTS_COLLECTION),
-      where('weekId', '==', weekId),
+      where('weekId', '==', boardId),
       where('bestTimeMs', '<', bestTimeMs),
     ));
     trackRead(1, 'ttsprint_rank');
@@ -257,14 +216,14 @@ export const fetchSprintRank = async (weekId, bestTimeMs) => {
 };
 
 /** This student's own result doc for the week — a point read by doc id. */
-export const fetchMySprintResult = async (weekId, userId) => {
-  if (!weekId || !userId) return null;
+export const fetchMySprintResult = async (boardId, userId) => {
+  if (!boardId || !userId) return null;
   try {
-    const snap = await getDoc(doc(db, RESULTS_COLLECTION, `${weekId}_${userId}`));
+    const snap = await getDoc(doc(db, RESULTS_COLLECTION, `${boardId}_${userId}`));
     trackRead(1, 'ttsprint_my_result');
     if (!snap.exists()) return null;
     const data = snap.data();
-    writeCachedMyBest(weekId, userId, Number(data.bestTimeMs), Number(data.attemptsCount) || 0);
+    writeCachedMyBest(boardId, userId, Number(data.bestTimeMs), Number(data.attemptsCount) || 0);
     return data;
   } catch (err) {
     console.warn('[ttsprint] own result fetch failed:', err?.code || err);
@@ -277,7 +236,8 @@ export const fetchMySprintResult = async (weekId, userId) => {
 // detects "was I just settled, and have I not seen the modal for that week
 // yet" so the dashboard can congratulate the student once per settlement.
 //
-// The "seen" flag is stored on the result doc itself (`payoutSeen: true`),
+// The "seen" flag is stored on each board's result doc itself
+// (`payoutSeen: true`, per board),
 // not just in localStorage. A localStorage-only flag is device-scoped: it
 // resets on a different device, a cleared cache, Safari ITP storage eviction,
 // or the quota-exceeded eviction in localCacheService.js dropping this exact
@@ -288,39 +248,50 @@ export const fetchMySprintResult = async (weekId, userId) => {
 const payoutSeenKeyFor = (userId) => `ttsprint:payoutSeen:${userId}`;
 
 /**
- * Point read of the student's own result doc for the week that most recently
- * settled. Returns null if nothing to celebrate (not settled yet, didn't
- * play, or already shown).
+ * After a weekly settlement: point-read last week's result doc on each of the
+ * five boards (5 reads, once — skipped entirely once this week is marked seen
+ * on this device) and return the settled, not-yet-acknowledged payouts.
  */
-export const checkPendingSprintPayout = async (userId) => {
+export const checkPendingSprintPayouts = async (userId) => {
   if (!userId) return null;
   const weekId = getPreviousSprintWeekId();
   if (localCache.get(payoutSeenKeyFor(userId)) === weekId) return null;
 
-  const result = await fetchMySprintResult(weekId, userId);
-  if (!result || !Number.isFinite(Number(result.settledXp))) return null;
-  if (result.payoutSeen) {
-    // Already acknowledged (possibly from another device) — sync the local
-    // fast-path cache so this device stops re-fetching too.
-    localCache.set(payoutSeenKeyFor(userId), weekId);
+  const results = await Promise.all(SPRINT_TYPES.map(async (type) => {
+    const boardId = sprintBoardId(type.id, weekId);
+    return { type, boardId, result: await fetchMySprintResult(boardId, userId) };
+  }));
+
+  const settled = results.filter(({ result }) => result && Number.isFinite(Number(result.settledXp)));
+  const items = settled
+    .filter(({ result }) => !result.payoutSeen)
+    .map(({ type, boardId, result }) => ({
+      typeId: type.id,
+      name: type.name,
+      boardId,
+      rank: Number.isFinite(Number(result.settledRank)) ? Number(result.settledRank) : null,
+      xp: Number(result.settledXp),
+      bestTimeMs: Number(result.bestTimeMs) || null,
+    }));
+
+  if (items.length === 0) {
+    // Everything settled was already acknowledged (maybe on another device):
+    // sync the local fast path so this device stops re-reading.
+    if (settled.length > 0) localCache.set(payoutSeenKeyFor(userId), weekId);
     return null;
   }
-
-  return {
-    weekId,
-    xp: Number(result.settledXp),
-    rank: Number.isFinite(Number(result.settledRank)) ? Number(result.settledRank) : null,
-    bestTimeMs: Number(result.bestTimeMs) || null,
-  };
+  return { weekId, xp: items.reduce((sum, i) => sum + i.xp, 0), items };
 };
 
-export const markSprintPayoutSeen = (userId, weekId) => {
+export const markSprintPayoutSeen = (userId, weekId, boardIds = []) => {
   if (!userId || !weekId) return;
   localCache.set(payoutSeenKeyFor(userId), weekId);
-  // Best-effort — server-side flag is what makes this stick across devices/
-  // storage resets. Rules allow a student to update their own result row.
-  updateDoc(doc(db, RESULTS_COLLECTION, `${weekId}_${userId}`), { payoutSeen: true }).catch((err) => {
-    console.warn('[ttsprint] payoutSeen sync failed:', err?.code || err);
+  // Best-effort — the server-side flag is what makes this stick across
+  // devices/storage resets. Rules allow a student to update their own row.
+  boardIds.forEach((boardId) => {
+    updateDoc(doc(db, RESULTS_COLLECTION, `${boardId}_${userId}`), { payoutSeen: true }).catch((err) => {
+      console.warn('[ttsprint] payoutSeen sync failed:', err?.code || err);
+    });
   });
 };
 
@@ -336,11 +307,12 @@ export const SPRINT_PAYOUT_PREVIEW_EVENT = 'sapere:sprint-payout-preview';
  * @returns {{ improved, bestTimeMs, previousBestMs, attemptsCount, meta }}
  */
 export const submitSprintRun = async ({
-  userId, profile, timeMs, wrongCount = 0, weekId = getSprintWeekId(), currentMeta = null,
+  userId, profile, timeMs, wrongCount = 0, boardId, sprintType = 'times', currentMeta = null,
 }) => {
   if (!userId) throw new Error('submitSprintRun requires a userId');
+  if (!boardId) throw new Error('submitSprintRun requires a boardId');
 
-  const resultRef = doc(db, RESULTS_COLLECTION, `${weekId}_${userId}`);
+  const resultRef = doc(db, RESULTS_COLLECTION, `${boardId}_${userId}`);
   const name = buildDisplayName(profile);
   const avatarUrl = buildAvatarUrl(profile, userId);
   const year = profile?.year || profile?.assignedYear || '';
@@ -362,7 +334,8 @@ export const submitSprintRun = async ({
 
     tx.set(resultRef, {
       userId,
-      weekId,
+      weekId: boardId,
+      sprintType,
       name,
       avatarUrl,
       year,
@@ -376,17 +349,17 @@ export const submitSprintRun = async ({
     }, { merge: true });
   });
   trackWrite(1, 'ttsprint_result');
-  writeCachedMyBest(weekId, userId, bestTimeMs, attemptsCount);
+  writeCachedMyBest(boardId, userId, bestTimeMs, attemptsCount);
 
   // Append-only audit trail. Never read on the hot path; failure is harmless.
   addDoc(collection(db, ATTEMPTS_COLLECTION), {
-    userId, weekId, timeMs, wrongCount, createdAt: serverTimestamp(),
+    userId, weekId: boardId, sprintType, timeMs, wrongCount, createdAt: serverTimestamp(),
   }).then(() => trackWrite(1, 'ttsprint_attempt')).catch(() => {});
 
   let meta = currentMeta;
   if (improved && couldChangeTop5(currentMeta, userId, bestTimeMs)) {
     try {
-      meta = (await refreshTop5(weekId)) || currentMeta;
+      meta = (await refreshTop5(boardId)) || currentMeta;
     } catch (err) {
       console.warn('[ttsprint] top-5 refresh failed:', err?.code || err);
     }
