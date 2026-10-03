@@ -945,14 +945,14 @@ const challengeStartStyles = `
 
   /* Panels */
   .cs__row2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
-  .cs__panel { padding: 22px 24px; border-radius: 22px; background: white; border: 1px solid #f1f5f9; box-shadow: 0 10px 28px rgba(0,0,0,0.04); }
-  .cs__phead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .cs__panel { padding: 15px 16px; border-radius: 22px; background: white; border: 1px solid #f1f5f9; box-shadow: 0 10px 28px rgba(0,0,0,0.04); }
+  .cs__phead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 11px; }
   .cs__phead h4 { font-size: 1rem; font-weight: 900; color: #1e1b4b; margin: 0; }
 
   /* Weekly block */
-  .cs__week-block { padding: 4px 2px 0; }
-  .cs__week-block--divider { margin-top: 18px; padding-top: 18px; border-top: 1px solid #f1f5f9; }
-  .cs__week-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .cs__week-block { padding: 3px 2px 0; }
+  .cs__week-block--divider { margin-top: 12px; padding-top: 12px; border-top: 1px solid #f1f5f9; }
+  .cs__week-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
   .cs__week-label { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 800; color: #1e1b4b; }
   .cs__week-ico { width: 22px; height: 22px; border-radius: 7px; display: grid; place-items: center; }
   .cs__week-ico--daily { background: #e0e7ff; color: #4338ca; }
@@ -960,12 +960,12 @@ const challengeStartStyles = `
   .cs__week-avg { font-size: 0.78rem; color: #6d6a85; font-weight: 700; }
   .cs__week-avg strong { color: #1e1b4b; font-weight: 900; }
 
-  .cs__week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
-  .cs__day { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-  .cs__day-score { font-size: 0.72rem; font-weight: 800; color: #475569; height: 14px; }
+  .cs__week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 7px; }
+  .cs__day { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+  .cs__day-score { font-size: 0.68rem; font-weight: 800; color: #475569; height: 12px; }
   .cs__day-score.is-empty { color: #cbd5e1; }
   .cs__day-bar-wrap {
-    width: 100%; height: 90px; border-radius: 14px;
+    width: 100%; height: 60px; border-radius: 11px;
     background: #f8fafc; border: 1px solid #f1f5f9;
     display: flex; align-items: flex-end; justify-content: center;
     overflow: hidden; padding: 5px;
@@ -986,23 +986,23 @@ const challengeStartStyles = `
     font-size: 0.62rem;
     letter-spacing: 0.08em;
   }
-  .cs__day-d { font-size: 0.78rem; color: #94a3b8; font-weight: 800; letter-spacing: 0.04em; }
+  .cs__day-d { font-size: 0.7rem; color: #94a3b8; font-weight: 800; letter-spacing: 0.04em; }
   .cs__day-d.is-today { color: #8b5cf6; }
 
   /* Accuracy ring */
-  .cs__ring-panel { display: flex; flex-direction: column; align-items: center; gap: 22px; }
+  .cs__ring-panel { display: flex; flex-direction: column; align-items: center; gap: 15px; }
   .cs__ring-panel .cs__phead { width: 100%; }
-  .cs__ring { position: relative; width: 220px; height: 220px; display: grid; place-items: center; }
+  .cs__ring { position: relative; width: 150px; height: 150px; display: grid; place-items: center; }
   .cs__ring svg { position: absolute; inset: 0; transform: rotate(-90deg); width: 100%; height: 100%; }
   .cs__ring-center { display: flex; flex-direction: column; align-items: center; }
-  .cs__ring-num { font-size: 3.2rem; font-weight: 900; color: #1e1b4b; line-height: 1; letter-spacing: -0.02em; }
-  .cs__ring-lbl { font-size: 0.72rem; color: #8b7aa7; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; margin-top: 6px; }
-  .cs__ring-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; width: 100%; padding-top: 18px; border-top: 1px solid #f1f5f9; }
+  .cs__ring-num { font-size: 2.35rem; font-weight: 900; color: #1e1b4b; line-height: 1; letter-spacing: -0.02em; }
+  .cs__ring-lbl { font-size: 0.66rem; color: #8b7aa7; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; margin-top: 5px; }
+  .cs__ring-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; padding-top: 12px; border-top: 1px solid #f1f5f9; }
   .cs__ring-item { text-align: center; }
-  .cs__ring-v { font-size: 1.7rem; font-weight: 900; color: #1e1b4b; line-height: 1; }
+  .cs__ring-v { font-size: 1.3rem; font-weight: 900; color: #1e1b4b; line-height: 1; }
   .cs__ring-v--accent { color: #8b5cf6; }
-  .cs__ring-l { font-size: 0.66rem; color: #94a3b8; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 6px; }
-  .cs__ring-empty { padding: 24px 8px; text-align: center; color: #94a3b8; }
+  .cs__ring-l { font-size: 0.6rem; color: #94a3b8; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 5px; }
+  .cs__ring-empty { padding: 16px 8px; text-align: center; color: #94a3b8; }
   .cs__ring-empty svg { color: #c4b5fd; margin-bottom: 10px; }
   .cs__ring-empty h5 { font-size: 0.95rem; color: #1e1b4b; margin: 0 0 6px; font-weight: 800; }
   .cs__ring-empty p { color: #6d6a85; font-size: 0.85rem; margin: 0; line-height: 1.5; max-width: 240px; margin-left: auto; margin-right: auto; }
@@ -1045,7 +1045,7 @@ const challengeStartStyles = `
     .cs__tile-watermark { width: 56px; height: 56px; }
     .cs__tile-title { font-size: .94rem; }
     .cs__head { flex-direction: column; align-items: flex-start; gap: 10px; }
-    .cs__day-bar-wrap { height: 70px; }
+    .cs__day-bar-wrap { height: 46px; }
   }
 `;
 
