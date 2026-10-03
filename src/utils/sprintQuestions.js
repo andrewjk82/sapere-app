@@ -39,6 +39,50 @@ const pickUnique = (count, make, rng, maxAttempts = 5000) => {
 export const getFactorRangeForYear = (year) => (isLowerPrimary(year) ? { min: 2, max: 9 } : { min: 2, max: 12 });
 const addRange = (year) => (isLowerPrimary(year) ? { min: 1, max: 20 } : { min: 10, max: 99 });
 
+// Algebra: several equation shapes, rotated so a run never sits on one shape.
+// Every form returns the rendered equation and x; answers stay positive
+// integers (digit keypad). x is 1–12 except the divide-x forms, where x is a
+// multiple of the divisor.
+const coef = (a) => (a === 1 ? 'x' : `${a}x`);
+const ALG_ONE_STEP = [
+  (r) => { const x = randInt(1, 12, r); const a = randInt(1, 20, r); return [`x + ${a} = ${x + a}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(1, 20, r); return [`${a} + x = ${x + a}`, x]; },
+  (r) => { const x = randInt(2, 12, r); const a = randInt(1, x - 1, r); return [`x ${MINUS} ${a} = ${x - a}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const c = randInt(1, 20, r); return [`${x + c} ${MINUS} x = ${c}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(2, 12, r); return [`${a}x = ${a * x}`, x]; },
+  (r) => { const a = randInt(2, 9, r); const c = randInt(2, 9, r); return [`x ÷ ${a} = ${c}`, a * c]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(1, 20, r); return [`${x + a} = x + ${a}`, x]; },
+];
+const ALG_MIXED = [
+  (r) => { const x = randInt(1, 12, r); const a = randInt(2, 9, r); const b = randInt(1, 20, r); return [`${a}x + ${b} = ${a * x + b}`, x]; },
+  (r) => { const x = randInt(2, 12, r); const a = randInt(2, 9, r); const b = randInt(1, Math.min(20, a * x - 1), r); return [`${a}x ${MINUS} ${b} = ${a * x - b}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(2, 9, r); const b = randInt(1, 20, r); return [`${a * x + b} = ${a}x + ${b}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(2, 6, r); const b = randInt(1, 9, r); return [`${a}(x + ${b}) = ${a * (x + b)}`, x]; },
+  (r) => { const x = randInt(2, 12, r); const a = randInt(2, 6, r); const b = randInt(1, x - 1, r); return [`${a}(x ${MINUS} ${b}) = ${a * (x - b)}`, x]; },
+  (r) => { const a = randInt(2, 5, r); const k = randInt(1, 12, r); const b = randInt(1, 12, r); return [`x/${a} + ${b} = ${k + b}`, a * k]; },
+  (r) => { const a = randInt(2, 5, r); const c = randInt(2, 12, r); const b = randInt(1, Math.min(12, a * c - 1), r); return [`(x + ${b})/${a} = ${c}`, a * c - b]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(3, 9, r); const c = randInt(1, a - 1, r); const b = randInt(1, 20, r); return [`${a}x + ${b} = ${coef(c)} + ${(a - c) * x + b}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(2, 6, r); const b = randInt(2, 6, r); return [`${a}x + ${b}x = ${(a + b) * x}`, x]; },
+  (r) => { const x = randInt(1, 12, r); const a = randInt(1, 5, r); const c = randInt(1, 20, r); return [`${a * x + c} ${MINUS} ${coef(a)} = ${c}`, x]; },
+];
+
+// Round-robin over the forms in a fresh shuffled order each cycle; duplicates
+// re-rolled (same hard attempt cap as pickUnique).
+const pickRotating = (count, forms, rng, maxAttempts = 5000) => {
+  const out = [];
+  const seen = new Set();
+  let order = [];
+  for (let i = 0; i < maxAttempts && out.length < count; i++) {
+    if (order.length === 0) order = shuffle(forms.map((_, k) => k), rng);
+    const [prompt, answer] = forms[order[0]](rng);
+    if (seen.has(prompt)) continue;
+    order.shift();
+    seen.add(prompt);
+    out.push({ key: prompt, prompt, answer, subPrompt: 'x = ?' });
+  }
+  return out;
+};
+
 const GENERATORS = {
   add: (year, count, rng) => {
     const { min, max } = addRange(year);
@@ -74,30 +118,7 @@ const GENERATORS = {
       return { key: `${a * b}/${a}`, prompt: `${a * b} ÷ ${a}`, answer: b };
     }, rng);
   },
-  alg: (year, count, rng) => pickUnique(count, (r) => {
-    const x = randInt(1, 12, r);
-    let prompt;
-    if (isPrimary(year)) {
-      const kind = randInt(0, 2, r);
-      if (kind === 0 || (kind === 1 && x < 2)) {
-        const a = randInt(1, 20, r);
-        prompt = `x + ${a} = ${x + a}`;
-      } else if (kind === 1) {
-        const a = randInt(1, x - 1, r);
-        prompt = `x ${MINUS} ${a} = ${x - a}`;
-      } else {
-        const a = randInt(2, 12, r);
-        prompt = `${a}x = ${a * x}`;
-      }
-    } else {
-      const a = randInt(2, 9, r);
-      const b = randInt(1, 20, r);
-      prompt = r() < 0.5 || a * x - b <= 0
-        ? `${a}x + ${b} = ${a * x + b}`
-        : `${a}x ${MINUS} ${b} = ${a * x - b}`;
-    }
-    return { key: prompt, prompt, answer: x, subPrompt: 'x = ?' };
-  }, rng),
+  alg: (year, count, rng) => pickRotating(count, isPrimary(year) ? ALG_ONE_STEP : ALG_MIXED, rng),
 };
 
 export const generateSprintQuestions = (typeId, year, { count = SPRINT_QUESTION_COUNT, rng = Math.random } = {}) => {
@@ -114,7 +135,7 @@ export const describeSprint = (typeId, year) => {
     case 'sub': return isLowerPrimary(year) ? 'subtracting within 40' : 'two-digit subtraction';
     case 'times': return `${min}× to ${max}× tables`;
     case 'div': return `dividing by ${min} to ${max}`;
-    case 'alg': return isPrimary(year) ? 'one-step equations — find x' : 'two-step equations — find x';
+    case 'alg': return isPrimary(year) ? 'one-step equations — find x' : 'mixed equations — find x';
     default: return '';
   }
 };

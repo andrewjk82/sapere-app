@@ -12,6 +12,13 @@ import { WRONG_ANSWER_PENALTY_MS } from '../../services/timesTableSprintService'
  * displayed time includes accumulated penalties so the cost of a mistake is
  * visible while they play.
  */
+// Longer algebra prompts ("9x + 14 = 8x + 25") step down so they stay on one line.
+const promptSizeClass = (prompt) => {
+  const len = String(prompt).length;
+  if (len > 13) return ' tts-question__text--xlong';
+  return len > 9 ? ' tts-question__text--long' : '';
+};
+
 const SprintQuizView = ({ questions, onFinish }) => {
   const [index, setIndex] = useState(0);
   const [entry, setEntry] = useState('');
@@ -126,7 +133,7 @@ const SprintQuizView = ({ questions, onFinish }) => {
           )}
         </AnimatePresence>
 
-        <p className={`tts-question__text${String(question.prompt).length > 9 ? ' tts-question__text--long' : ''}`}>
+        <p className={`tts-question__text${promptSizeClass(question.prompt)}`}>
           {question.prompt}
         </p>
         {question.subPrompt && (

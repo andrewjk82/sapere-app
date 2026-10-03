@@ -389,6 +389,10 @@
 .tts-question__text--long {
   font-size: clamp(1.6rem, 8vw, 3rem);
 }
+.tts-question__text--xlong {
+  font-size: clamp(1.15rem, 5.4vw, 2.4rem);
+  white-space: nowrap;
+}
 
 .tts-answer {
   margin-top: 14px;

@@ -23,12 +23,16 @@ const MINUS = '−';
 const solve = (typeId, q) => {
   const p = q.prompt.replaceAll(MINUS, '-');
   if (typeId === 'alg') {
-    let m = p.match(/^x \+ (\d+) = (\d+)$/); if (m) return Number(m[2]) - Number(m[1]);
-    m = p.match(/^x - (\d+) = (\d+)$/); if (m) return Number(m[2]) + Number(m[1]);
-    m = p.match(/^(\d+)x = (\d+)$/); if (m) return Number(m[2]) / Number(m[1]);
-    m = p.match(/^(\d+)x \+ (\d+) = (\d+)$/); if (m) return (Number(m[3]) - Number(m[2])) / Number(m[1]);
-    m = p.match(/^(\d+)x - (\d+) = (\d+)$/); if (m) return (Number(m[3]) + Number(m[2])) / Number(m[1]);
-    throw new Error(`unparseable algebra prompt: ${q.prompt}`);
+    // Substitute x into both sides; linear, so it must hold at x and fail at x + 1.
+    if (!/^[0-9x+\-*/÷() =]+$/.test(p) || (p.match(/=/g) || []).length !== 1) {
+      throw new Error(`unparseable algebra prompt: ${q.prompt}`);
+    }
+    const js = p.replaceAll('÷', '/').replace(/(\d)(x|\()/g, '$1*$2');
+    const [lhs, rhs] = js.split('=');
+    const diff = (x) => Function('x', `return (${lhs}) - (${rhs});`)(x);
+    assert.ok(Math.abs(diff(q.answer)) < 1e-9, `${q.prompt} not satisfied by x = ${q.answer}`);
+    assert.ok(Math.abs(diff(q.answer + 1)) > 1e-9, `${q.prompt} holds for every x`);
+    return q.answer;
   }
   const m = p.match(/^(\d+) ([+\-×÷]) (\d+)$/);
   if (!m) throw new Error(`unparseable prompt: ${q.prompt}`);
@@ -89,10 +93,25 @@ test('year bands drive difficulty', () => {
   const lowDiv = generateSprintQuestions('div', 'Year 3', { rng });
   assert.ok(lowDiv.every((q) => q.answer >= 2 && q.answer <= 9));
   const oneStep = generateSprintQuestions('alg', 'Year 5', { rng });
-  assert.ok(oneStep.every((q) => /^(x [+−] \d+|\d+x) = \d+$/.test(q.prompt)), oneStep.map((q) => q.prompt).join(' | '));
+  assert.ok(oneStep.every((q) => !/[()/]/.test(q.prompt) && (q.prompt.match(/x/g) || []).length === 1), oneStep.map((q) => q.prompt).join(' | '));
   const twoStep = generateSprintQuestions('alg', 'Year 9', { rng });
-  assert.ok(twoStep.every((q) => /^\d+x [+−] \d+ = \d+$/.test(q.prompt)), twoStep.map((q) => q.prompt).join(' | '));
-  assert.ok(twoStep.every((q) => q.answer <= 12 && q.subPrompt === 'x = ?'));
+  assert.ok(twoStep.every((q) => q.answer >= 1 && q.answer <= 60 && q.subPrompt === 'x = ?'));
+});
+
+test('algebra rotates through its equation shapes', () => {
+  const shape = (q) => q.prompt.replace(/\d+/g, 'n').replace(/nx/g, 'x');
+  for (const [year, forms] of [['Year 5', 7], ['Year 9', 10]]) {
+    for (let seed = 1; seed <= 50; seed++) {
+      const qs = generateSprintQuestions('alg', year, { rng: seeded(seed) });
+      assert.equal(qs.length, 20);
+      const shapes = new Set(qs.map(shape));
+      assert.ok(shapes.size >= forms, `${year} seed ${seed}: only ${shapes.size} shapes`);
+      for (let i = 1; i < qs.length; i++) {
+        // never the same shape twice in a row inside a cycle
+        if (i % forms !== 0) assert.notEqual(shape(qs[i]), shape(qs[i - 1]));
+      }
+    }
+  }
 });
 
 test('describeSprint gives a phrase for every type', () => {
