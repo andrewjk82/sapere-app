@@ -66,6 +66,14 @@ const ALG_MIXED = [
   (r) => { const x = randInt(1, 12, r); const a = randInt(1, 5, r); const c = randInt(1, 20, r); return [`${a * x + c} ${MINUS} ${coef(a)} = ${c}`, x]; },
 ];
 
+// KaTeX source for an algebra prompt, so x reads as a variable (italic) and
+// divisions stack as fractions: "(x + 6)/3 = 5" → "\\dfrac{x + 6}{3} = 5".
+export const algebraLatex = (prompt) => prompt
+  .replaceAll(MINUS, '-')
+  .replaceAll('÷', '\\div')
+  .replace(/\(([^()]+)\)\/(\d+)/g, '\\dfrac{$1}{$2}')
+  .replace(/x\/(\d+)/g, '\\dfrac{x}{$1}');
+
 // Round-robin over the forms in a fresh shuffled order each cycle; duplicates
 // re-rolled (same hard attempt cap as pickUnique).
 const pickRotating = (count, forms, rng, maxAttempts = 5000) => {
@@ -78,7 +86,7 @@ const pickRotating = (count, forms, rng, maxAttempts = 5000) => {
     if (seen.has(prompt)) continue;
     order.shift();
     seen.add(prompt);
-    out.push({ key: prompt, prompt, answer, subPrompt: 'x = ?' });
+    out.push({ key: prompt, prompt, answer, subPrompt: 'x = ?', latex: algebraLatex(prompt) });
   }
   return out;
 };

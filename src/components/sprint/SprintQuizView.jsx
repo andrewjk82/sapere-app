@@ -12,6 +12,20 @@ import { WRONG_ANSWER_PENALTY_MS } from '../../services/timesTableSprintService'
  * displayed time includes accumulated penalties so the cost of a mistake is
  * visible while they play.
  */
+// Algebra prompts render through KaTeX (loaded globally from index.html) so x
+// reads as a variable, not a times sign. Falls back to plain text if KaTeX
+// hasn't loaded. Input is generator-built, never user text.
+const renderLatex = (tex) => {
+  try {
+    return window.katex ? window.katex.renderToString(tex, { throwOnError: true }) : '';
+  } catch {
+    return '';
+  }
+};
+
+// "x = ?" — \text keeps normal spacing around the question mark.
+const subPromptLatex = (sub) => String(sub).replace('?', '\\text{?}');
+
 // Longer algebra prompts ("9x + 14 = 8x + 25") step down so they stay on one line.
 const promptSizeClass = (prompt) => {
   const len = String(prompt).length;
@@ -133,11 +147,23 @@ const SprintQuizView = ({ questions, onFinish }) => {
           )}
         </AnimatePresence>
 
-        <p className={`tts-question__text${promptSizeClass(question.prompt)}`}>
-          {question.prompt}
-        </p>
+        {question.latex && renderLatex(question.latex) ? (
+          <p
+            className={`tts-question__text tts-question__text--math${promptSizeClass(question.prompt)}`}
+            dangerouslySetInnerHTML={{ __html: renderLatex(question.latex) }}
+          />
+        ) : (
+          <p className={`tts-question__text${promptSizeClass(question.prompt)}`}>
+            {question.prompt}
+          </p>
+        )}
         {question.subPrompt && (
-          <p style={{ margin: '-6px 0 8px', fontWeight: 800, color: '#64748b', fontSize: '1rem' }}>{question.subPrompt}</p>
+          <p
+            className="tts-question__sub"
+            {...(renderLatex(subPromptLatex(question.subPrompt))
+              ? { dangerouslySetInnerHTML: { __html: renderLatex(subPromptLatex(question.subPrompt)) } }
+              : { children: question.subPrompt })}
+          />
         )}
         <div className={`tts-answer${entry === '' ? ' tts-answer--empty' : ''}`}>
           {entry === '' ? '?' : entry}

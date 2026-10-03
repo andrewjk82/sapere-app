@@ -3,6 +3,7 @@
  * Usage: npm run test:sprint
  */
 import assert from 'node:assert';
+import katex from 'katex';
 import { SPRINT_TYPES, getSprintType, sprintBoardId } from '../src/utils/sprintTypes.js';
 import { SPRINT_XP_TIERS, SPRINT_XP_PARTICIPATION, xpForRank } from '../src/constants/sprintXp.js';
 import {
@@ -96,6 +97,18 @@ test('year bands drive difficulty', () => {
   assert.ok(oneStep.every((q) => !/[()/]/.test(q.prompt) && (q.prompt.match(/x/g) || []).length === 1), oneStep.map((q) => q.prompt).join(' | '));
   const twoStep = generateSprintQuestions('alg', 'Year 9', { rng });
   assert.ok(twoStep.every((q) => q.answer >= 1 && q.answer <= 60 && q.subPrompt === 'x = ?'));
+});
+
+test('algebra questions carry valid KaTeX', () => {
+  for (const year of ['Year 3', 'Year 9']) {
+    for (let seed = 1; seed <= 30; seed++) {
+      for (const q of generateSprintQuestions('alg', year, { rng: seeded(seed) })) {
+        assert.ok(q.latex && !q.latex.includes('−'), q.prompt);
+        katex.renderToString(q.latex, { throwOnError: true });
+        if (q.prompt.includes('/')) assert.ok(q.latex.includes('\\dfrac'), q.latex);
+      }
+    }
+  }
 });
 
 test('algebra rotates through its equation shapes', () => {

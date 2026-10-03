@@ -389,6 +389,9 @@
 .tts-question__text--long {
   font-size: clamp(1.6rem, 8vw, 3rem);
 }
+.tts-question__text--math { font-family: inherit; font-weight: 400; }
+.tts-question__text--math .katex { font-size: 1em; }
+.tts-question__sub { margin: 2px 0 10px; font-weight: 800; color: #64748b; font-size: 1.35rem; }
 .tts-question__text--xlong {
   font-size: clamp(1.15rem, 5.4vw, 2.4rem);
   white-space: nowrap;
