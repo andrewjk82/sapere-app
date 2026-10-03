@@ -31,6 +31,15 @@ test('extractDriveFileId handles share, open?id= and uc?id= links', () => {
   assert.equal(extractDriveFileId(undefined), null);
 });
 
+test('extractDriveFileId reads Google Docs viewer (gview) wrappers', () => {
+  const gview = 'https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Ddownload%26id%3D13lto_vrV838XFNFZtT8al_vIkCotMx7v';
+  assert.equal(extractDriveFileId(gview), '13lto_vrV838XFNFZtT8al_vIkCotMx7v');
+  assert.equal(extractDriveFileId('https://docs.google.com/gview?url=https://drive.google.com/uc?export=download&id=PLAIN1&embedded=true'), 'PLAIN1');
+  assert.equal(extractDriveFileId('https://drive.usercontent.google.com/download?id=UC9&export=download'), 'UC9');
+  assert.equal(extractDriveFileId('https://docs.google.com/gview?url=https%3A%2F%2Fexample.com%2Fa.pdf'), null);
+  assert.equal(extractDriveFileId('https://drive.google.com/file/d/%E0%A4%A/view'), '%E0%A4%A'); // bad escape must not throw
+});
+
 test('toDrivePreviewUrl normalises Drive links and passes others through', () => {
   assert.equal(
     toDrivePreviewUrl(' https://drive.google.com/file/d/ABC/view?usp=sharing '),

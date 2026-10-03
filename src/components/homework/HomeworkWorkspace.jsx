@@ -1,11 +1,12 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
-import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage, loadCachedPdf, cachePdf } from '../../utils/homeworkLocalStore';
+import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
+import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
-import { toDrivePreviewUrl, toDriveOpenUrl, extractDriveFileId, MAX_HOMEWORK_PAGES } from '../../utils/homework';
+import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
 const WIDE_MIN = 900;
 const SUBMIT_ERRORS = {
@@ -124,53 +125,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
 
   const activeTopic = topics[topicIdx];
   const rawPdf = activeTopic ? pdfMap[activeTopic.id] : '';
-  const embedUrl = toDrivePreviewUrl(rawPdf);
-
-  // ── PDF cache: show instantly from IndexedDB, otherwise fetch & cache ──
-  const [resolvedPdfUrl, setResolvedPdfUrl] = useState('');
-  const [pdfLoading, setPdfLoading] = useState(false);
-  const driveFileId = useMemo(() => extractDriveFileId(rawPdf), [rawPdf]);
-
-  useEffect(() => {
-    setResolvedPdfUrl('');
-    if (!rawPdf) return;
-    if (!driveFileId) { setResolvedPdfUrl(rawPdf); return; }
-
-    let cancelled = false;
-    let objUrl = '';
-    setPdfLoading(true);
-
-    (async () => {
-      // 1) Check local cache
-      const cached = await loadCachedPdf(driveFileId);
-      if (!cancelled && cached) {
-        objUrl = URL.createObjectURL(cached);
-        setResolvedPdfUrl(objUrl);
-        setPdfLoading(false);
-        return;
-      }
-      // 2) Try fetching the PDF directly from Google Drive
-      try {
-        const res = await fetch(`https://drive.google.com/uc?export=download&id=${driveFileId}`);
-        if (!res.ok) throw new Error(res.status);
-        const ct = res.headers.get('content-type') || '';
-        // Google sometimes returns an HTML virus-scan page for large files
-        if (!ct.includes('pdf') && !ct.includes('octet-stream')) throw new Error('not pdf');
-        const blob = await res.blob();
-        if (cancelled) return;
-        await cachePdf(driveFileId, blob);
-        objUrl = URL.createObjectURL(blob);
-        setResolvedPdfUrl(objUrl);
-      } catch {
-        // 3) Fall back to gview
-        if (!cancelled) setResolvedPdfUrl(embedUrl);
-      } finally {
-        if (!cancelled) setPdfLoading(false);
-      }
-    })();
-
-    return () => { cancelled = true; if (objUrl) URL.revokeObjectURL(objUrl); };
-  }, [rawPdf, driveFileId, embedUrl]);
+  const worksheet = useWorksheetPdf(rawPdf);
 
 
   const pdfPane = (
@@ -195,16 +150,13 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         </div>
       )}
       <div style={{ flex: 1, minHeight: 0, position: 'relative', background: '#f1f5f9' }}>
-        {(resolvedPdfUrl || pdfLoading) ? (
+        {rawPdf ? (
           <PdfViewer
-            src={resolvedPdfUrl}
-            fallback={embedUrl}
+            src={worksheet.src}
+            loading={worksheet.loading}
+            fallback={worksheet.fallback}
             style={{ width: '100%', height: '100%', pointerEvents: dragging ? 'none' : 'auto' }}
           />
-        ) : rawPdf ? (
-          <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
-            Could not load worksheet.
-          </div>
         ) : (
           <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
             No worksheet for this topic.

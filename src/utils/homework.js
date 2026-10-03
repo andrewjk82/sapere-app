@@ -7,11 +7,20 @@ export const HOMEWORK_ACTIVE_WINDOW_DAYS = 14;
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+const safeDecode = (s) => { try { return decodeURIComponent(s); } catch { return s; } };
+
+// Accepts share links (/file/d/{id}/view), /preview, open?id=, uc?id=,
+// drive.usercontent.google.com, and Google Docs viewer wrappers
+// (docs.google.com/gview?url=<encoded drive uc link>) — many stored topic
+// links use the gview form.
 export const extractDriveFileId = (url) => {
-  if (!url || typeof url !== 'string' || !url.includes('drive.google.com')) return null;
-  const match = url.match(/\/file\/d\/([^/?#]+)/) || url.match(/[?&]id=([^&#]+)/);
+  if (!url || typeof url !== 'string') return null;
+  const decoded = safeDecode(url);
+  if (!/drive\.google\.com|drive\.usercontent\.google\.com/.test(decoded)) return null;
+  const match = url.match(/\/file\/d\/([^/?#]+)/) || decoded.match(/[?&]id=([^&#]+)/);
   return match ? match[1] : null;
 };
+
 
 export const toDrivePreviewUrl = (url) => {
   const trimmed = String(url || '').trim();
