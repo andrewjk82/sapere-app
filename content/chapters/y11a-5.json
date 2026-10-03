@@ -735,30 +735,24 @@
           "difficulty": "medium",
           "stem": "A function \\(y = f(x)\\) has roots at \\(x=-3, 0, 3\\) and a local maximum at \\((-1.5, 2)\\). Sketch the graph of \\(y = f(x - 4)\\).",
           "answer": "Graph shifted right by 4.\nNew roots: 1, 4, 7.\nNew local max: (2.5, 2).",
-          "options": [
-            "\\((2.5, 2)\\)",
-            "\\((-5.5, 2)\\)",
-            "\\((-1.5, 6)\\)",
-            "\\((-1.5, -2)\\)"
-          ],
           "hint": "The transformation \\(f(x-k)\\) shifts the graph \\(k\\) units to the right.",
           "solution": "Graph shifted right by 4.\nNew roots: 1, 4, 7.\nNew local max: (2.5, 2).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Shift right 4 units."
+              "explain": "Understand the transformation. The function \\\\(y = f(x - 4)\\\\) represents a horizontal translation of the original graph \\\\(y = f(x)\\\\) by 4 units to the right.",
+              "work": "\\\\( f(x) \\\\to f(x-4) \\\\Rightarrow \\\\text{Shift right by } 4 \\\\text{ units} \\\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\((-1.5, 2) \\to (2.5, 2)\\)"
+              "explain": "Calculate the new positions of the roots. Add 4 to the x-coordinate of each original root: \\\\(x = -3, 0, 3\\\\).",
+              "work": "\\\\( -3 + 4 = 1 \\\\)\\\\n\\\\( 0 + 4 = 4 \\\\)\\\\n\\\\( 3 + 4 = 7 \\\\)\\\\n\\\\text{New roots are at } x = 1, 4, 7."
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Graph shifted right by 4.\nNew roots: 1, 4, 7.\nNew local max: (2.5, 2)."
+              "explain": "Calculate the new position of the local maximum. The x-coordinate is shifted right by 4, while the y-coordinate remains unchanged.",
+              "work": "\\\\( (-1.5 + 4, 2) = (2.5, 2) \\\\)\\\\n\\\\text{New local maximum is at } (2.5, 2)."
             },
             {
-              "explain": "Final answer: Graph shifted right by 4.\nNew roots: 1, 4, 7.\nNew local max: (2.5, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Graph shifted right by 4.\nNew roots: 1, 4, 7.\nNew local max: (2.5, 2)."
+              "explain": "Sketch the final graph. Draw a smooth curve passing through the new roots and turning at the new local maximum.",
+              "work": "\\\\text{The graph is shifted horizontally by 4 units.} \\\\n<svg viewBox=\"0 0 360 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"350\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"20\" y1=\"10\" x2=\"20\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  \n  <!-- Curve -->\n  <path d=\"M 10,190 C 30,140 40,110 55,100 C 75,80 90,60 107.5,60 C 125,60 140,80 160,100 C 180,120 195,140 212.5,140 C 230,140 245,120 265,100 C 285,80 300,30 310,10\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2.5\" />\n  \n  <!-- Points and Labels -->\n  <circle cx=\"55\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"55\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">1</text>\n  \n  <circle cx=\"160\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"160\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n  \n  <circle cx=\"265\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"265\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">7</text>\n  \n  <circle cx=\"107.5\" cy=\"60\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"107.5\" y=\"48\" font-family=\"system-ui\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">(2.5, 2)</text>\n  \n  <!-- Origin -->\n  <text x=\"10\" y=\"115\" font-family=\"system-ui\" font-size=\"12\" fill=\"#64748b\">0</text>\n</svg>"
             }
           ],
           "manual": true,
@@ -771,30 +765,24 @@
           "difficulty": "medium",
           "stem": "A function \\(y = f(x)\\) has roots at \\(x=-3, 0, 3\\) and a local maximum at \\((-1.5, 2)\\). Sketch the graph of \\(y = f(x + 2)\\).",
           "answer": "Graph shifted left by 2.\nNew roots: -5, -2, 1.\nNew local max: (-3.5, 2).",
-          "options": [
-            "\\((-3.5, 2)\\)",
-            "\\((0.5, 2)\\)",
-            "\\((-1.5, 4)\\)",
-            "\\((-1.5, 0)\\)"
-          ],
           "hint": "The transformation \\(f(x+k)\\) shifts the graph \\(k\\) units to the left.",
           "solution": "Graph shifted left by 2.\nNew roots: -5, -2, 1.\nNew local max: (-3.5, 2).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Shift left 2 units."
+              "explain": "Understand the transformation. The function \\\\(y = f(x + 2)\\\\) represents a horizontal translation of the original graph \\\\(y = f(x)\\\\) by 2 units to the left.",
+              "work": "\\\\( f(x) \\\\to f(x+2) \\\\Rightarrow \\\\text{Shift left by } 2 \\\\text{ units} \\\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\((-1.5, 2) \\to (-3.5, 2)\\)"
+              "explain": "Calculate the new positions of the roots. Subtract 2 from the x-coordinate of each original root: \\\\(x = -3, 0, 3\\\\).",
+              "work": "\\\\( -3 - 2 = -5 \\\\)\\\\n\\\\( 0 - 2 = -2 \\\\)\\\\n\\\\( 3 - 2 = 1 \\\\)\\\\n\\\\text{New roots are at } x = -5, -2, 1."
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Graph shifted left by 2.\nNew roots: -5, -2, 1.\nNew local max: (-3.5, 2)."
+              "explain": "Calculate the new position of the local maximum. The x-coordinate is shifted left by 2, while the y-coordinate remains unchanged.",
+              "work": "\\\\( (-1.5 - 2, 2) = (-3.5, 2) \\\\)\\\\n\\\\text{New local maximum is at } (-3.5, 2)."
             },
             {
-              "explain": "Final answer: Graph shifted left by 2.\nNew roots: -5, -2, 1.\nNew local max: (-3.5, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Graph shifted left by 2.\nNew roots: -5, -2, 1.\nNew local max: (-3.5, 2)."
+              "explain": "Sketch the final graph. Draw a smooth curve passing through the new roots and turning at the new local maximum.",
+              "work": "\\\\text{The graph is shifted horizontally by 2 units to the left.} \\\\n<svg viewBox=\"0 0 360 200\" width=\"100%\" height=\"auto\" style=\"max-width:400px;display:block;margin:1rem auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"350\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"280\" y1=\"10\" x2=\"280\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  \n  <!-- Curve (roots: -5, -2, 1) -> let scale be 1 unit = 35px, Origin at X=280. \n       X=-5 -> 280-175 = 105\n       X=-2 -> 280-70 = 210\n       X=1 -> 280+35 = 315\n       Max (-3.5, 2) -> 280-122.5=157.5, Y=60\n       Min (-0.5, -2) -> 280-17.5=262.5, Y=140\n  -->\n  <path d=\"M 60,190 C 80,140 90,110 105,100 C 125,80 140,60 157.5,60 C 175,60 190,80 210,100 C 230,120 245,140 262.5,140 C 280,140 295,120 315,100 C 335,80 350,30 360,10\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2.5\" />\n  \n  <circle cx=\"105\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"105\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">-5</text>\n  \n  <circle cx=\"210\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"210\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">-2</text>\n  \n  <circle cx=\"315\" cy=\"100\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"315\" y=\"118\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">1</text>\n  \n  <circle cx=\"157.5\" cy=\"60\" r=\"3\" fill=\"#ef4444\" />\n  <text x=\"157.5\" y=\"48\" font-family=\"system-ui\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">(-3.5, 2)</text>\n  \n  <!-- Origin -->\n  <text x=\"285\" y=\"115\" font-family=\"system-ui\" font-size=\"12\" fill=\"#64748b\">0</text>\n</svg>"
             }
           ],
           "manual": true,
@@ -807,12 +795,6 @@
           "difficulty": "medium",
           "stem": "A function \\(y = P(x)\\) has roots at \\(x=-4, 2\\) and a local maximum at \\((-1, 4)\\). Sketch the graph of \\(y = P(x + 3)\\).",
           "answer": "Graph shifted left by 3.\nNew roots: -7, -1.\nNew local max: (-4, 4).",
-          "options": [
-            "\\((-4, 4)\\)",
-            "\\((2, 4)\\)",
-            "\\((-1, 7)\\)",
-            "\\((-1, 1)\\)"
-          ],
           "hint": "The transformation \\(P(x+k)\\) shifts the graph \\(k\\) units to the left.",
           "solution": "Graph shifted left by 3.\nNew roots: -7, -1.\nNew local max: (-4, 4).",
           "steps": [
@@ -843,12 +825,6 @@
           "difficulty": "medium",
           "stem": "A function \\(y = P(x)\\) has roots at \\(x=-4, 2\\) and a local maximum at \\((-1, 4)\\). Sketch the graph of \\(y = P(x) + 2\\).",
           "answer": "Graph shifted up by 2.\nNew local max: (-1, 6).",
-          "options": [
-            "\\((-1, 6)\\)",
-            "\\((-1, 2)\\)",
-            "\\((1, 4)\\)",
-            "\\((-3, 4)\\)"
-          ],
           "hint": "Adding a constant to the function shifts the graph vertically.",
           "solution": "Graph shifted up by 2.\nNew local max: (-1, 6).",
           "steps": [
@@ -879,12 +855,6 @@
           "difficulty": "medium",
           "stem": "A function \\(y = h(x)\\) is a parabola with its vertex at \\((2, -3)\\). Sketch the graph of \\(y - 4 = h(x)\\).",
           "answer": "Graph shifted up by 4.\nNew vertex: (2, 1).",
-          "options": [
-            "\\((2, 1)\\)",
-            "\\((2, -7)\\)",
-            "\\((-2, -3)\\)",
-            "\\((6, -3)\\)"
-          ],
           "hint": "Rearrange the equation to make \\(y\\) the subject.",
           "solution": "Graph shifted up by 4.\nNew vertex: (2, 1).",
           "steps": [
@@ -915,12 +885,6 @@
           "difficulty": "medium",
           "stem": "A function \\(y = h(x)\\) is a parabola with its vertex at \\((2, -3)\\). Sketch the graph of \\(y = h(x) - 2\\).",
           "answer": "Graph shifted down by 2.\nNew vertex: (2, -5).",
-          "options": [
-            "\\((2, -5)\\)",
-            "\\((2, -1)\\)",
-            "\\((0, -3)\\)",
-            "\\((4, -3)\\)"
-          ],
           "hint": "Subtracting a constant shifts the graph downwards.",
           "solution": "Graph shifted down by 2.\nNew vertex: (2, -5).",
           "steps": [
