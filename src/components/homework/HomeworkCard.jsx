@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
-import { BookOpenCheck, ChevronDown, ChevronUp, CheckCircle2, Clock, PenLine } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, Clock, History, PenLine } from 'lucide-react';
+import SessionRing from '../challenge/SessionRing';
 import { getHomeworkItems } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
@@ -32,6 +33,9 @@ const Row = ({ item, onOpen }) => {
   );
 };
 
+// Rendered inside the Challenge page's card list, so it uses that page's
+// cs__ card classes and ring icon to look like the Daily practice /
+// Calculation / Teacher Feedback cards above it.
 const HomeworkCard = ({ sessions, profile, user }) => {
   const items = useMemo(() => getHomeworkItems(sessions), [sessions]);
   const active = items.filter((i) => i.status !== 'checked');
@@ -42,40 +46,59 @@ const HomeworkCard = ({ sessions, profile, user }) => {
   if (items.length === 0) return null;
 
   const openSession = openItem ? (sessions || []).find((s) => s.id === openItem.sessionId) : null;
+  const todoCount = active.filter((i) => i.status === 'todo').length;
+  const latest = active[0] || null;
+  const allChecked = active.length === 0;
+  const otherActive = active.slice(1);
 
   return (
-    <div className="app-panel" style={{ padding: 20, borderRadius: 24, marginBottom: 24 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
-        <BookOpenCheck size={18} color="#7c3aed" />
-        <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 800, color: '#1e1b4b' }}>Homework</h3>
-        {active.length > 0 && (
-          <span style={{ marginLeft: 'auto', fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed' }}>{active.length} open</span>
-        )}
-      </div>
-
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-        {active.length === 0 ? (
-          <div style={{ color: '#94a3b8', fontWeight: 600, fontSize: '0.88rem' }}>All caught up.</div>
-        ) : (
-          active.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)
-        )}
-      </div>
-
-      {history.length > 0 && (
-        <>
-          <button
-            type="button"
-            onClick={() => setShowHistory((v) => !v)}
-            style={{ marginTop: 12, display: 'flex', alignItems: 'center', gap: 4, border: 0, background: 'transparent', color: '#64748b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer' }}
-          >
-            {showHistory ? <ChevronUp size={14} /> : <ChevronDown size={14} />} History ({history.length})
-          </button>
-          {showHistory && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 8 }}>
-              {history.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
-            </div>
+    <div className="cs__test-card">
+      <div className="cs__test">
+        <SessionRing kind="homework" done={allChecked} />
+        <div className="cs__test-main">
+          <div className="cs__test-titlerow">
+            <h3>Homework</h3>
+            {todoCount > 0 ? (
+              <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> {todoCount} to do</span>
+            ) : allChecked ? (
+              <span className="cs__chip-state cs__chip-state--done"><CheckCircle2 size={13} /> All checked</span>
+            ) : (
+              <span className="cs__chip-state" style={{ color: '#0369a1', background: '#f0f9ff', borderColor: '#bae6fd' }}><Clock size={13} /> Submitted</span>
+            )}
+          </div>
+          <p>
+            {latest
+              ? `${latest.date} · ${latest.topics.map((t) => t.label).join(', ')}`
+              : `${history.length} homework checked by your teacher`}
+          </p>
+        </div>
+        <div className="cs__test-actions">
+          {latest ? (
+            <button type="button" className="cs__primary cs__primary--begin" onClick={() => setOpenItem(latest)}>
+              {latest.status === 'todo' ? 'Begin' : 'Open'} <ArrowRight size={16} />
+            </button>
+          ) : (
+            <button type="button" className="cs__primary cs__primary--review" onClick={() => setShowHistory((v) => !v)}>
+              <History size={16} /> History
+            </button>
           )}
-        </>
+        </div>
+      </div>
+
+      {(otherActive.length > 0 || history.length > 0) && (
+        <div style={{ borderTop: '1px solid #f1f5f9', background: '#fcfcfe', padding: '12px 22px 14px', display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
+          {history.length > 0 && latest && (
+            <button
+              type="button"
+              onClick={() => setShowHistory((v) => !v)}
+              style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: 4, border: 0, background: 'transparent', color: '#64748b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', padding: 0 }}
+            >
+              {showHistory ? <ChevronUp size={14} /> : <ChevronDown size={14} />} History ({history.length})
+            </button>
+          )}
+          {showHistory && history.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
+        </div>
       )}
 
       {openItem && openSession && openItem.status !== 'checked' && (

@@ -15,42 +15,16 @@ import {
   HelpCircle,
   X,
   RefreshCw,
-  BookOpenCheck,
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
 import { nextReviewPhrase } from '../../utils/secretNote';
 import HomeworkCard from '../homework/HomeworkCard';
+import SessionRing from './SessionRing';
+import { KIND } from './sessionKinds';
 import { useProfile } from '../../context/ProfileContext';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
 import { db } from '../../firebase/config';
-
-// ── Per-kind palette + glyph for the session cards ─────────
-const KIND = {
-  daily: { Glyph: BookOpen, ring: '#7c3aed', noteGrad: 'linear-gradient(135deg,#f5f3ff,#e7e0fb)', noteBorder: '#ddd6fe', badge: 'linear-gradient(135deg,#a78bfa,#7c3aed)' },
-  calc:  { Glyph: Target,   ring: '#d97706', noteGrad: 'linear-gradient(135deg,#fffbeb,#fef3c7)', noteBorder: '#fde68a', badge: 'linear-gradient(135deg,#fbbf24,#d97706)' },
-};
-
-// ── Progress ring icon: done → green ring + check; else dashed ring + glyph ──
-const SessionRing = ({ kind, done }) => {
-  const m = KIND[kind];
-  const Glyph = m.Glyph;
-  const size = 60, stroke = 6, r = (size - stroke) / 2;
-  return (
-    <div className="cs__sess-ring">
-      <svg width={size} height={size} aria-hidden="true">
-        {done ? (
-          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#10b981" strokeWidth={stroke} strokeLinecap="round" />
-        ) : (
-          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="#ddd6fe" strokeWidth={stroke} strokeLinecap="round" strokeDasharray="2 7" />
-        )}
-      </svg>
-      <span className="cs__ring-ico" style={{ color: done ? '#10b981' : m.ring }}>
-        {done ? <CheckCircle2 size={26} strokeWidth={2.4} /> : <Glyph size={24} strokeWidth={2.1} />}
-      </span>
-    </div>
-  );
-};
 
 // ── Secret Notebook footer strip (gradient CTA, lives inside the card) ──────
 const SecretNoteStrip = ({ kind, note, onOpen }) => {
@@ -709,38 +683,6 @@ const ChallengeStartView = ({
           )}
         </AnimatePresence>
 
-        {/* Teacher feedback entry — always available, highlighted when new */}
-        {(() => {
-          const hasNew = newFeedbackCount > 0;
-          const openFeedback = onOpenFeedback || onViewFeedback;
-          return (
-            <button
-              onClick={openFeedback}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '14px',
-                width: '100%', marginBottom: '16px',
-                padding: '16px 20px', borderRadius: '18px', border: 'none', cursor: 'pointer',
-                background: hasNew ? 'linear-gradient(135deg, #fef3c7, #fde68a)' : '#f8fafc',
-                boxShadow: hasNew ? '0 4px 16px rgba(245,158,11,0.18)' : 'none',
-                textAlign: 'left',
-              }}
-            >
-              <span style={{ fontSize: '1.6rem', flexShrink: 0 }}>💬</span>
-              <div style={{ flex: 1 }}>
-                <div style={{ fontWeight: 900, fontSize: '0.95rem', color: hasNew ? '#78350f' : '#1e293b' }}>
-                  {hasNew ? 'Teacher feedback arrived!' : 'Teacher Feedback'}
-                </div>
-                <div style={{ fontSize: '0.8rem', color: hasNew ? '#92400e' : '#64748b', marginTop: '2px' }}>
-                  {hasNew
-                    ? `${newFeedbackCount} new comment${newFeedbackCount > 1 ? 's' : ''} — tap to review`
-                    : 'View comments from your teacher'}
-                </div>
-              </div>
-              <ArrowRight size={18} color={hasNew ? '#b45309' : '#94a3b8'} />
-            </button>
-          );
-        })()}
-
         {/* Test cards (each with its attached Secret Note footer) */}
         <div className="cs__tests">
           <TestRow
@@ -768,10 +710,38 @@ const ChallengeStartView = ({
               onOpenLesson={setPreviewLesson}
             />
           )}
+          {(() => {
+            // Teacher feedback — same card shell as the tests; a chip flags new comments.
+            const hasNew = newFeedbackCount > 0;
+            const openFeedback = onOpenFeedback || onViewFeedback;
+            return (
+              <div className="cs__test-card">
+                <div className="cs__test">
+                  <SessionRing kind="feedback" done={false} />
+                  <div className="cs__test-main">
+                    <div className="cs__test-titlerow">
+                      <h3>Teacher Feedback</h3>
+                      {hasNew && (
+                        <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> {newFeedbackCount} new</span>
+                      )}
+                    </div>
+                    <p>
+                      {hasNew
+                        ? `${newFeedbackCount} new comment${newFeedbackCount > 1 ? 's' : ''} from your teacher`
+                        : 'View comments from your teacher'}
+                    </p>
+                  </div>
+                  <div className="cs__test-actions">
+                    <button type="button" className="cs__primary cs__primary--begin" onClick={openFeedback}>
+                      Open <ArrowRight size={16} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+          <HomeworkCard sessions={hwSessions} profile={hwProfile} user={user} />
         </div>
-
-        {/* Homework section */}
-        <HomeworkCard sessions={hwSessions} profile={hwProfile} user={user} />
 
         {/* Row 2: weekly grids + accuracy ring */}
         <div className="cs__row2">
