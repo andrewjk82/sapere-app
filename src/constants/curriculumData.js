@@ -1147,8 +1147,8 @@ export const CURRICULUM_DATA = {
     },
     {
       id: 'y7-4',
-      title: 'Fractions',
-      modules: 12,
+      title: 'Fractions – part 1',
+      modules: 7,
       topics: [
         { id: 'y7-4a', code: '4A', title: 'What is a fraction?', page: 97 },
         { id: 'y7-4b', code: '4B', title: 'Equivalent fractions and simplest form', page: 103 },
@@ -1156,12 +1156,23 @@ export const CURRICULUM_DATA = {
         { id: 'y7-4d', code: '4D', title: 'Comparison of fractions', page: 112 },
         { id: 'y7-4e', code: '4E', title: 'Addition and subtraction of fractions', page: 114 },
         { id: 'y7-4f', code: '4F', title: 'Word problems involving addition and subtraction of fractions', page: 118 },
-        { id: 'y7-4g', code: '4G', title: 'Subtraction of mixed numerals', page: 120 },
-        { id: 'y7-4h', code: '4H', title: 'Multiplication of fractions', page: 126 },
-        { id: 'y7-4i', code: '4I', title: 'Division of fractions', page: 129 },
-        { id: 'y7-4j', code: '4J', title: 'Multiplication and division of mixed numerals', page: 134 },
-        { id: 'y7-4k', code: '4K', title: 'Word problems involving fractions', page: 136 },
-        { id: 'y7-4l', code: '4L', title: 'Order of operations with fractions', page: 138 }
+        { id: 'y7-4g', code: '4G', title: 'Subtraction of mixed numerals', page: 120 }
+      ]
+    },
+    {
+      // Textbook (ICE-EM 7, 3rd ed.) Chapter 5. Split out of y7-4 on 2026-10-04;
+      // topic ids keep their y7-4 names so progress, questions and homework
+      // already recorded against them carry over.
+      id: 'y7-4p2',
+      title: 'Fractions – part 2',
+      modules: 6,
+      topics: [
+        { id: 'y7-4h', code: '5A', title: 'Multiplication of fractions', page: 126 },
+        { id: 'y7-4i', code: '5B', title: 'Division of fractions', page: 129 },
+        { id: 'y7-4j', code: '5C', title: 'Multiplication and division of mixed numerals', page: 134 },
+        { id: 'y7-4k', code: '5D', title: 'Word problems involving fractions', page: 136 },
+        { id: 'y7-4l', code: '5E', title: 'Order of operations with fractions', page: 138 },
+        { id: 'y7-4p2f', code: '5F', title: 'Review' }
       ]
     },
     {
@@ -1169,13 +1180,13 @@ export const CURRICULUM_DATA = {
       title: 'An introduction to geometry',
       modules: 7,
       topics: [
-        { id: 'y7-5a', code: '5A', title: 'Points, lines and planes', page: 144 },
-        { id: 'y7-5b', code: '5B', title: 'Intervals, rays and angles', page: 148 },
-        { id: 'y7-5c', code: '5C', title: 'Measuring angles', page: 151 },
-        { id: 'y7-5d', code: '5D', title: 'Angles at a point - geometric arguments', page: 157 },
-        { id: 'y7-5e', code: '5E', title: 'Angles associated with transversals', page: 163 },
-        { id: 'y7-5f', code: '5F', title: 'Further problems involving parallel lines', page: 172 },
-        { id: 'y7-5g', code: '5G', title: 'Proving that two lines are parallel', page: 178 }
+        { id: 'y7-5a', code: '6A', title: 'Points, lines and planes', page: 144 },
+        { id: 'y7-5b', code: '6B', title: 'Intervals, rays and angles', page: 148 },
+        { id: 'y7-5c', code: '6C', title: 'Measuring angles', page: 151 },
+        { id: 'y7-5d', code: '6D', title: 'Angles at a point - geometric arguments', page: 157 },
+        { id: 'y7-5e', code: '6E', title: 'Angles associated with transversals', page: 163 },
+        { id: 'y7-5f', code: '6F', title: 'Further problems involving parallel lines', page: 172 },
+        { id: 'y7-5g', code: '6G', title: 'Proving that two lines are parallel', page: 178 }
       ]
     },
     {
@@ -1183,10 +1194,10 @@ export const CURRICULUM_DATA = {
       title: 'Algebra with fractions',
       modules: 4,
       topics: [
-        { id: 'y7-6a', code: '6A', title: 'Division in algebra', page: 188 },
-        { id: 'y7-6b', code: '6B', title: 'Multiplication and division in algebra', page: 190 },
-        { id: 'y7-6c', code: '6C', title: 'Dividing and cancelling', page: 194 },
-        { id: 'y7-6d', code: '6D', title: 'Revision', page: 198 }
+        { id: 'y7-6a', code: '7A', title: 'Division in algebra', page: 188 },
+        { id: 'y7-6b', code: '7B', title: 'Multiplication and division in algebra', page: 190 },
+        { id: 'y7-6c', code: '7C', title: 'Dividing and cancelling', page: 194 },
+        { id: 'y7-6d', code: '7D', title: 'Revision', page: 198 }
       ]
     },
     {
@@ -1194,14 +1205,14 @@ export const CURRICULUM_DATA = {
       title: 'Decimals',
       modules: 8,
       topics: [
-        { id: 'y7-7a', code: '7A', title: 'Place value and comparison of decimals', page: 202 },
-        { id: 'y7-7b', code: '7B', title: 'Converting decimals to fractions and fractions to decimals', page: 207 },
-        { id: 'y7-7c', code: '7C', title: 'Addition and subtraction of decimals', page: 211 },
-        { id: 'y7-7d', code: '7D', title: 'Multiplication and division by powers of 10', page: 213 },
-        { id: 'y7-7e', code: '7E', title: 'Multiplication of one decimal by another', page: 217 },
-        { id: 'y7-7f', code: '7F', title: 'Division of decimals', page: 219 },
-        { id: 'y7-7g', code: '7G', title: 'Recurring decimals', page: 223 },
-        { id: 'y7-7h', code: '7H', title: 'Rounding of decimals', page: 225 }
+        { id: 'y7-7a', code: '8A', title: 'Place value and comparison of decimals', page: 202 },
+        { id: 'y7-7b', code: '8B', title: 'Converting decimals to fractions and fractions to decimals', page: 207 },
+        { id: 'y7-7c', code: '8C', title: 'Addition and subtraction of decimals', page: 211 },
+        { id: 'y7-7d', code: '8D', title: 'Multiplication and division by powers of 10', page: 213 },
+        { id: 'y7-7e', code: '8E', title: 'Multiplication of one decimal by another', page: 217 },
+        { id: 'y7-7f', code: '8F', title: 'Division of decimals', page: 219 },
+        { id: 'y7-7g', code: '8G', title: 'Recurring decimals', page: 223 },
+        { id: 'y7-7h', code: '8H', title: 'Rounding of decimals', page: 225 }
       ]
     },
     {
@@ -1209,16 +1220,16 @@ export const CURRICULUM_DATA = {
       title: 'Measurement',
       modules: 10,
       topics: [
-        { id: 'y7-8a', code: '8A', title: 'Units of measurement', page: 232 },
-        { id: 'y7-8b', code: '8B', title: 'Other units', page: 237 },
-        { id: 'y7-8c', code: '8C', title: 'The unitary method', page: 238 },
-        { id: 'y7-8d', code: '8D', title: 'Perimeter', page: 240 },
-        { id: 'y7-8e', code: '8E', title: 'Area', page: 243 },
-        { id: 'y7-8f', code: '8F', title: 'Areas by addition and subtraction', page: 247 },
-        { id: 'y7-8g', code: '8G', title: 'Areas of triangles and parallelograms', page: 251 },
-        { id: 'y7-8h', code: '8H', title: 'Volume of rectangular prisms', page: 259 },
-        { id: 'y7-8i', code: '8I', title: 'Time', page: 262 },
-        { id: 'y7-8j', code: '8J', title: 'Speed', page: 266 }
+        { id: 'y7-8a', code: '9A', title: 'Units of measurement', page: 232 },
+        { id: 'y7-8b', code: '9B', title: 'Other units', page: 237 },
+        { id: 'y7-8c', code: '9C', title: 'The unitary method', page: 238 },
+        { id: 'y7-8d', code: '9D', title: 'Perimeter', page: 240 },
+        { id: 'y7-8e', code: '9E', title: 'Area', page: 243 },
+        { id: 'y7-8f', code: '9F', title: 'Areas by addition and subtraction', page: 247 },
+        { id: 'y7-8g', code: '9G', title: 'Areas of triangles and parallelograms', page: 251 },
+        { id: 'y7-8h', code: '9H', title: 'Volume of rectangular prisms', page: 259 },
+        { id: 'y7-8i', code: '9I', title: 'Time', page: 262 },
+        { id: 'y7-8j', code: '9J', title: 'Speed', page: 266 }
       ]
     },
     {
@@ -1226,10 +1237,10 @@ export const CURRICULUM_DATA = {
       title: 'Review and problem-solving',
       modules: 4,
       topics: [
-        { id: 'y7-9a', code: '9A', title: 'Review', page: 276 },
-        { id: 'y7-9b', code: '9B', title: 'Problem-solving', page: 288 },
-        { id: 'y7-9c', code: '9C', title: 'Number bases', page: 293 },
-        { id: 'y7-9d', code: '9D', title: 'Binary numbers', page: 296 }
+        { id: 'y7-9a', code: '10A', title: 'Review', page: 276 },
+        { id: 'y7-9b', code: '10B', title: 'Problem-solving', page: 288 },
+        { id: 'y7-9c', code: '10C', title: 'Number bases', page: 293 },
+        { id: 'y7-9d', code: '10D', title: 'Binary numbers', page: 296 }
       ]
     },
     {
@@ -1237,12 +1248,12 @@ export const CURRICULUM_DATA = {
       title: 'Integers',
       modules: 6,
       topics: [
-        { id: 'y7-10a', code: '10A', title: 'Negative integers', page: 300 },
-        { id: 'y7-10b', code: '10B', title: 'Addition and subtraction of a positive integer', page: 304 },
-        { id: 'y7-10c', code: '10C', title: 'Addition and subtraction of a negative integer', page: 306 },
-        { id: 'y7-10d', code: '10D', title: 'Multiplication involving negative integers', page: 310 },
-        { id: 'y7-10e', code: '10E', title: 'Division involving negative integers', page: 312 },
-        { id: 'y7-10f', code: '10F', title: 'Indices and order of operations', page: 315 }
+        { id: 'y7-10a', code: '11A', title: 'Negative integers', page: 300 },
+        { id: 'y7-10b', code: '11B', title: 'Addition and subtraction of a positive integer', page: 304 },
+        { id: 'y7-10c', code: '11C', title: 'Addition and subtraction of a negative integer', page: 306 },
+        { id: 'y7-10d', code: '11D', title: 'Multiplication involving negative integers', page: 310 },
+        { id: 'y7-10e', code: '11E', title: 'Division involving negative integers', page: 312 },
+        { id: 'y7-10f', code: '11F', title: 'Indices and order of operations', page: 315 }
       ]
     },
     {
@@ -1250,10 +1261,10 @@ export const CURRICULUM_DATA = {
       title: 'Algebra and the Cartesian plane',
       modules: 4,
       topics: [
-        { id: 'y7-11a', code: '11A', title: 'Substitution with integers', page: 323 },
-        { id: 'y7-11b', code: '11B', title: 'The Cartesian plane', page: 326 },
-        { id: 'y7-11c', code: '11C', title: 'Completing tables and plotting points', page: 330 },
-        { id: 'y7-11d', code: '11D', title: 'Finding rules', page: 333 }
+        { id: 'y7-11a', code: '12A', title: 'Substitution with integers', page: 323 },
+        { id: 'y7-11b', code: '12B', title: 'The Cartesian plane', page: 326 },
+        { id: 'y7-11c', code: '12C', title: 'Completing tables and plotting points', page: 330 },
+        { id: 'y7-11d', code: '12D', title: 'Finding rules', page: 333 }
       ]
     },
     {
@@ -1261,11 +1272,11 @@ export const CURRICULUM_DATA = {
       title: 'Triangles and constructions',
       modules: 5,
       topics: [
-        { id: 'y7-12a', code: '12A', title: 'Angles in triangles', page: 344 },
-        { id: 'y7-12b', code: '12B', title: 'Circles and compasses', page: 351 },
-        { id: 'y7-12c', code: '12C', title: 'Isosceles and equilateral triangles', page: 355 },
-        { id: 'y7-12d', code: '12D', title: 'Constructions with compasses and a straight edge', page: 360 },
-        { id: 'y7-12e', code: '12E', title: 'Quadrilaterals', page: 363 }
+        { id: 'y7-12a', code: '13A', title: 'Angles in triangles', page: 344 },
+        { id: 'y7-12b', code: '13B', title: 'Circles and compasses', page: 351 },
+        { id: 'y7-12c', code: '13C', title: 'Isosceles and equilateral triangles', page: 355 },
+        { id: 'y7-12d', code: '13D', title: 'Constructions with compasses and a straight edge', page: 360 },
+        { id: 'y7-12e', code: '13E', title: 'Quadrilaterals', page: 363 }
       ]
     },
     {
@@ -1273,10 +1284,10 @@ export const CURRICULUM_DATA = {
       title: 'Negative fractions and decimals',
       modules: 4,
       topics: [
-        { id: 'y7-13a', code: '13A', title: 'Addition and subtraction of negative fractions', page: 373 },
-        { id: 'y7-13b', code: '13B', title: 'Multiplication and division of negative fractions', page: 376 },
-        { id: 'y7-13c', code: '13C', title: 'Negative decimals', page: 380 },
-        { id: 'y7-13d', code: '13D', title: 'Substitution involving negative fractions and decimals', page: 382 }
+        { id: 'y7-13a', code: '14A', title: 'Addition and subtraction of negative fractions', page: 373 },
+        { id: 'y7-13b', code: '14B', title: 'Multiplication and division of negative fractions', page: 376 },
+        { id: 'y7-13c', code: '14C', title: 'Negative decimals', page: 380 },
+        { id: 'y7-13d', code: '14D', title: 'Substitution involving negative fractions and decimals', page: 382 }
       ]
     },
     {
@@ -1284,12 +1295,12 @@ export const CURRICULUM_DATA = {
       title: 'Percentages and ratios',
       modules: 6,
       topics: [
-        { id: 'y7-14a', code: '14A', title: 'Percentages, fractions and decimals', page: 387 },
-        { id: 'y7-14b', code: '14B', title: 'One quantity as a percentage of another', page: 392 },
-        { id: 'y7-14c', code: '14C', title: 'Percentage of a quantity', page: 394 },
-        { id: 'y7-14d', code: '14D', title: 'Ratios', page: 395 },
-        { id: 'y7-14e', code: '14E', title: 'Solving problems with ratios', page: 399 },
-        { id: 'y7-14f', code: '14F', title: 'Best buys', page: 400 }
+        { id: 'y7-14a', code: '15A', title: 'Percentages, fractions and decimals', page: 387 },
+        { id: 'y7-14b', code: '15B', title: 'One quantity as a percentage of another', page: 392 },
+        { id: 'y7-14c', code: '15C', title: 'Percentage of a quantity', page: 394 },
+        { id: 'y7-14d', code: '15D', title: 'Ratios', page: 395 },
+        { id: 'y7-14e', code: '15E', title: 'Solving problems with ratios', page: 399 },
+        { id: 'y7-14f', code: '15F', title: 'Best buys', page: 400 }
       ]
     },
     {
@@ -1297,14 +1308,14 @@ export const CURRICULUM_DATA = {
       title: 'Solving equations',
       modules: 8,
       topics: [
-        { id: 'y7-15a', code: '15A', title: 'An introduction to equations', page: 406 },
-        { id: 'y7-15b', code: '15B', title: 'Equivalent equations', page: 408 },
-        { id: 'y7-15c', code: '15C', title: 'Solving equations involving more than one step', page: 412 },
-        { id: 'y7-15d', code: '15D', title: 'Equations with negative solutions', page: 414 },
-        { id: 'y7-15e', code: '15E', title: 'Expanding brackets and solving equations', page: 415 },
-        { id: 'y7-15f', code: '15F', title: 'Collecting like terms and solving equations', page: 418 },
-        { id: 'y7-15g', code: '15G', title: 'Equations with pronumerals on both sides', page: 421 },
-        { id: 'y7-15h', code: '15H', title: 'Solving problems using equations', page: 422 }
+        { id: 'y7-15a', code: '16A', title: 'An introduction to equations', page: 406 },
+        { id: 'y7-15b', code: '16B', title: 'Equivalent equations', page: 408 },
+        { id: 'y7-15c', code: '16C', title: 'Solving equations involving more than one step', page: 412 },
+        { id: 'y7-15d', code: '16D', title: 'Equations with negative solutions', page: 414 },
+        { id: 'y7-15e', code: '16E', title: 'Expanding brackets and solving equations', page: 415 },
+        { id: 'y7-15f', code: '16F', title: 'Collecting like terms and solving equations', page: 418 },
+        { id: 'y7-15g', code: '16G', title: 'Equations with pronumerals on both sides', page: 421 },
+        { id: 'y7-15h', code: '16H', title: 'Solving problems using equations', page: 422 }
       ]
     },
     {
@@ -1312,8 +1323,8 @@ export const CURRICULUM_DATA = {
       title: 'Probability',
       modules: 2,
       topics: [
-        { id: 'y7-16a', code: '16A', title: 'An introduction to probability', page: 429 },
-        { id: 'y7-16b', code: '16B', title: 'Experiments and counting', page: 431 }
+        { id: 'y7-16a', code: '17A', title: 'An introduction to probability', page: 429 },
+        { id: 'y7-16b', code: '17B', title: 'Experiments and counting', page: 431 }
       ]
     },
     {
@@ -1321,13 +1332,13 @@ export const CURRICULUM_DATA = {
       title: 'Transformations and symmetry',
       modules: 7,
       topics: [
-        { id: 'y7-17a', code: '17A', title: 'Translations', page: 442 },
-        { id: 'y7-17b', code: '17B', title: 'Rotations', page: 446 },
-        { id: 'y7-17c', code: '17C', title: 'Reflections', page: 451 },
-        { id: 'y7-17d', code: '17D', title: 'Combinations of transformations', page: 454 },
-        { id: 'y7-17e', code: '17E', title: 'Transformations in the Cartesian plane', page: 459 },
-        { id: 'y7-17f', code: '17F', title: 'Symmetry', page: 462 },
-        { id: 'y7-17g', code: '17G', title: 'Regular polygons', page: 465 }
+        { id: 'y7-17a', code: '18A', title: 'Translations', page: 442 },
+        { id: 'y7-17b', code: '18B', title: 'Rotations', page: 446 },
+        { id: 'y7-17c', code: '18C', title: 'Reflections', page: 451 },
+        { id: 'y7-17d', code: '18D', title: 'Combinations of transformations', page: 454 },
+        { id: 'y7-17e', code: '18E', title: 'Transformations in the Cartesian plane', page: 459 },
+        { id: 'y7-17f', code: '18F', title: 'Symmetry', page: 462 },
+        { id: 'y7-17g', code: '18G', title: 'Regular polygons', page: 465 }
       ]
     },
     {
@@ -1335,12 +1346,12 @@ export const CURRICULUM_DATA = {
       title: 'Graphs and tables',
       modules: 6,
       topics: [
-        { id: 'y7-18a', code: '18A', title: 'Reading tables', page: 474 },
-        { id: 'y7-18b', code: '18B', title: 'The pictogram', page: 477 },
-        { id: 'y7-18c', code: '18C', title: 'Column graphs', page: 481 },
-        { id: 'y7-18d', code: '18D', title: 'Divided bar charts and pie charts', page: 485 },
-        { id: 'y7-18e', code: '18E', title: 'Line graphs', page: 492 },
-        { id: 'y7-18f', code: '18F', title: 'Applications of the line graph', page: 495 }
+        { id: 'y7-18a', code: '19A', title: 'Reading tables', page: 474 },
+        { id: 'y7-18b', code: '19B', title: 'The pictogram', page: 477 },
+        { id: 'y7-18c', code: '19C', title: 'Column graphs', page: 481 },
+        { id: 'y7-18d', code: '19D', title: 'Divided bar charts and pie charts', page: 485 },
+        { id: 'y7-18e', code: '19E', title: 'Line graphs', page: 492 },
+        { id: 'y7-18f', code: '19F', title: 'Applications of the line graph', page: 495 }
       ]
     },
     {
@@ -1348,10 +1359,10 @@ export const CURRICULUM_DATA = {
       title: 'Statistics',
       modules: 4,
       topics: [
-        { id: 'y7-19a', code: '19A', title: 'Data and dot plots', page: 506 },
-        { id: 'y7-19b', code: '19B', title: 'Mode', page: 509 },
-        { id: 'y7-19c', code: '19C', title: 'Stem-and-leaf plots', page: 512 },
-        { id: 'y7-19d', code: '19D', title: 'Median, mean and range', page: 514 }
+        { id: 'y7-19a', code: '20A', title: 'Data and dot plots', page: 506 },
+        { id: 'y7-19b', code: '20B', title: 'Mode', page: 509 },
+        { id: 'y7-19c', code: '20C', title: 'Stem-and-leaf plots', page: 512 },
+        { id: 'y7-19d', code: '20D', title: 'Median, mean and range', page: 514 }
       ]
     },
     {
@@ -1359,8 +1370,8 @@ export const CURRICULUM_DATA = {
       title: 'Polyhedra and three-dimensional drawing',
       modules: 2,
       topics: [
-        { id: 'y7-20a', code: '20A', title: 'Polyhedra', page: 523 },
-        { id: 'y7-20b', code: '20B', title: 'Drawing a solid', page: 527 }
+        { id: 'y7-20a', code: '21A', title: 'Polyhedra', page: 523 },
+        { id: 'y7-20b', code: '21B', title: 'Drawing a solid', page: 527 }
       ]
     },
     {
@@ -1368,8 +1379,8 @@ export const CURRICULUM_DATA = {
       title: 'Review and problem-solving',
       modules: 2,
       topics: [
-        { id: 'y7-21a', code: '21A', title: 'Review', page: 534 },
-        { id: 'y7-21b', code: '21B', title: 'Tessellations', page: 544 }
+        { id: 'y7-21a', code: '22A', title: 'Review', page: 534 },
+        { id: 'y7-21b', code: '22B', title: 'Tessellations', page: 544 }
       ]
     },
     {
@@ -1377,14 +1388,14 @@ export const CURRICULUM_DATA = {
       title: 'Sets and Venn diagrams',
       modules: 8,
       topics: [
-        { id: 'y7-22a', code: '22A', title: 'Describing and naming sets' },
-        { id: 'y7-22b', code: '22B', title: 'Finite and infinite sets' },
-        { id: 'y7-22c', code: '22C', title: 'Subsets of a set' },
-        { id: 'y7-22d', code: '22D', title: 'Sets and the number line' },
-        { id: 'y7-22e', code: '22E', title: 'Union and intersection' },
-        { id: 'y7-22f', code: '22F', title: 'Set complements and Venn diagrams' },
-        { id: 'y7-22g', code: '22G', title: 'Keeping count with Venn diagrams' },
-        { id: 'y7-22h', code: '22H', title: 'Problem-solving using Venn diagrams' }
+        { id: 'y7-22a', code: '23A', title: 'Describing and naming sets' },
+        { id: 'y7-22b', code: '23B', title: 'Finite and infinite sets' },
+        { id: 'y7-22c', code: '23C', title: 'Subsets of a set' },
+        { id: 'y7-22d', code: '23D', title: 'Sets and the number line' },
+        { id: 'y7-22e', code: '23E', title: 'Union and intersection' },
+        { id: 'y7-22f', code: '23F', title: 'Set complements and Venn diagrams' },
+        { id: 'y7-22g', code: '23G', title: 'Keeping count with Venn diagrams' },
+        { id: 'y7-22h', code: '23H', title: 'Problem-solving using Venn diagrams' }
       ]
     },
     {
@@ -1392,16 +1403,16 @@ export const CURRICULUM_DATA = {
       title: 'Algebra',
       modules: 10,
       topics: [
-        { id: 'y7-23a', code: '23A', title: 'Algebraic expressions', page: 80 },
-        { id: 'y7-23b', code: '23B', title: 'Like terms and unlike terms', page: 81 },
-        { id: 'y7-23c', code: '23C', title: 'Simplifying algebraic expressions', page: 82 },
-        { id: 'y7-23d', code: '23D', title: 'Collecting like terms', page: 83 },
-        { id: 'y7-23e', code: '23E', title: 'Algebraic abbreviations', page: 84 },
-        { id: 'y7-23f', code: '23F', title: 'Substitution', page: 85 },
-        { id: 'y7-23g', code: '23G', title: 'Index notation', page: 86 },
-        { id: 'y7-23h', code: '23H', title: 'Multiplying, dividing and expanding', page: 87 },
-        { id: 'y7-23i', code: '23I', title: 'Applying algebra', page: 88 },
-        { id: 'y7-23j', code: '23J', title: 'Problem solving with algebra', page: 89 }
+        { id: 'y7-23a', code: '24A', title: 'Algebraic expressions', page: 80 },
+        { id: 'y7-23b', code: '24B', title: 'Like terms and unlike terms', page: 81 },
+        { id: 'y7-23c', code: '24C', title: 'Simplifying algebraic expressions', page: 82 },
+        { id: 'y7-23d', code: '24D', title: 'Collecting like terms', page: 83 },
+        { id: 'y7-23e', code: '24E', title: 'Algebraic abbreviations', page: 84 },
+        { id: 'y7-23f', code: '24F', title: 'Substitution', page: 85 },
+        { id: 'y7-23g', code: '24G', title: 'Index notation', page: 86 },
+        { id: 'y7-23h', code: '24H', title: 'Multiplying, dividing and expanding', page: 87 },
+        { id: 'y7-23i', code: '24I', title: 'Applying algebra', page: 88 },
+        { id: 'y7-23j', code: '24J', title: 'Problem solving with algebra', page: 89 }
       ]
     }
   ],

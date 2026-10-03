@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { migrateMovedTopicProgress } from '../utils/topicMoves';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, Lock, Play, BookOpen,
@@ -57,6 +58,7 @@ const STATE = {
 
 // Scan localStorage for all topic metas under a chapter — no dependency on chapter.topics
 const loadChapterProgress = (uid, chapterId) => {
+  migrateMovedTopicProgress(uid);
   const prefix = `sapere:tp:${uid}:${chapterId}:`;
   const prog = {};
   try {

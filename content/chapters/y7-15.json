@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-15",
-  "title": "Chapter 15: Equations",
+  "title": "Chapter 16: Equations",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-15a",
-      "code": "15A",
+      "code": "16A",
       "title": "An introduction to equations",
       "questions": [
         {
@@ -1243,7 +1243,7 @@
     },
     {
       "topicId": "y7-15b",
-      "code": "15B",
+      "code": "16B",
       "title": "Equivalent equations",
       "questions": [
         {
@@ -1311,7 +1311,7 @@
     },
     {
       "topicId": "y7-15c",
-      "code": "15C",
+      "code": "16C",
       "title": "Solving equations involving more than one step",
       "questions": [
         {
@@ -1609,7 +1609,7 @@
     },
     {
       "topicId": "y7-15d",
-      "code": "15D",
+      "code": "16D",
       "title": "Equations with negative solutions",
       "questions": [
         {
@@ -1654,7 +1654,7 @@
     },
     {
       "topicId": "y7-15e",
-      "code": "15E",
+      "code": "16E",
       "title": "Expanding brackets and solving equations",
       "questions": [
         {
@@ -1718,7 +1718,7 @@
     },
     {
       "topicId": "y7-15g",
-      "code": "15G",
+      "code": "16G",
       "title": "Equations with pronumerals on both sides",
       "questions": [
         {
@@ -1854,7 +1854,7 @@
     },
     {
       "topicId": "y7-15h",
-      "code": "15H",
+      "code": "16H",
       "title": "Solving problems using equations",
       "questions": [
         {

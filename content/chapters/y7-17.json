@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-17",
-  "title": "Chapter 17: Transformations and Symmetry",
+  "title": "Chapter 18: Transformations and Symmetry",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-17a",
-      "code": "17A",
+      "code": "18A",
       "title": "Translations",
       "questions": [
         {
@@ -360,7 +360,7 @@
     },
     {
       "topicId": "y7-17f",
-      "code": "17F",
+      "code": "18F",
       "title": "Symmetry",
       "questions": [
         {
@@ -390,7 +390,7 @@
     },
     {
       "topicId": "y7-17g",
-      "code": "17G",
+      "code": "18G",
       "title": "Regular polygons",
       "questions": [
         {

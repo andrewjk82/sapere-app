@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useMemo, useState } from 'react';
+import { migrateMovedTopicProgress } from '../utils/topicMoves';
 import { createPortal } from 'react-dom';
 import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
@@ -157,6 +158,7 @@ const LearningPath = ({ profile }) => {
   // chapterId can contain ':' (e.g. "exam:FortSt2020") but topicId never does,
   // so we split on the LAST ':' to separate chapterId from topicId.
   const scanProgress = (uid) => {
+    migrateMovedTopicProgress(uid);
     const prefix = `sapere:tp:${uid}:`;
     const p = {};
     try {

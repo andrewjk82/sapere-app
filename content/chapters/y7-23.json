@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-23",
-  "title": "Chapter 23: Algebra",
+  "title": "Chapter 24: Algebra",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-23a",
-      "code": "23A",
+      "code": "24A",
       "title": "Algebraic expressions",
       "questions": [
         {
@@ -795,7 +795,7 @@
     },
     {
       "topicId": "y7-23b",
-      "code": "23B",
+      "code": "24B",
       "title": "Like terms and unlike terms",
       "questions": [
         {
@@ -1983,7 +1983,7 @@
     },
     {
       "topicId": "y7-23c",
-      "code": "23C",
+      "code": "24C",
       "title": "Simplifying algebraic expressions",
       "questions": [
         {
@@ -3943,7 +3943,7 @@
     },
     {
       "topicId": "y7-23d",
-      "code": "23D",
+      "code": "24D",
       "title": "Collecting like terms",
       "questions": [
         {
@@ -5360,7 +5360,7 @@
     },
     {
       "topicId": "y7-23e",
-      "code": "23E",
+      "code": "24E",
       "title": "Writing algebraic expressions",
       "questions": [
         {
@@ -7084,7 +7084,7 @@
     },
     {
       "topicId": "y7-23f",
-      "code": "23F",
+      "code": "24F",
       "title": "Substitution",
       "questions": [
         {
@@ -8491,7 +8491,7 @@
     },
     {
       "topicId": "y7-23h",
-      "code": "23H",
+      "code": "24H",
       "title": "Multiplying, dividing and expanding",
       "questions": [
         {
@@ -10147,7 +10147,7 @@
     },
     {
       "topicId": "y7-23i",
-      "code": "23I",
+      "code": "24I",
       "title": "Applying algebra",
       "questions": [
         {
@@ -10738,7 +10738,7 @@
     },
     {
       "topicId": "y7-23j",
-      "code": "23J",
+      "code": "24J",
       "title": "Problem solving with algebra",
       "questions": [
         {

@@ -1,6 +1,6 @@
 {
   "chapterId": "y7-8",
-  "title": "Chapter 8: Measurement",
+  "title": "Chapter 9: Measurement",
   "year": "Year 7",
   "topics": [
     {
@@ -106,7 +106,7 @@
     },
     {
       "topicId": "y7-8a",
-      "code": "8A",
+      "code": "9A",
       "title": "Units of measurement",
       "questions": [
         {
@@ -2720,7 +2720,7 @@
     },
     {
       "topicId": "y7-8b",
-      "code": "8B",
+      "code": "9B",
       "title": "Other units",
       "questions": [
         {
@@ -2929,7 +2929,7 @@
     },
     {
       "topicId": "y7-8c",
-      "code": "8C",
+      "code": "9C",
       "title": "The unitary method",
       "questions": [
         {
@@ -3079,7 +3079,7 @@
     },
     {
       "topicId": "y7-8d",
-      "code": "8D",
+      "code": "9D",
       "title": "Perimeter",
       "questions": [
         {
@@ -3373,7 +3373,7 @@
     },
     {
       "topicId": "y7-8e",
-      "code": "8E",
+      "code": "9E",
       "title": "Area",
       "questions": [
         {
@@ -3500,7 +3500,7 @@
     },
     {
       "topicId": "y7-8f",
-      "code": "8F",
+      "code": "9F",
       "title": "Areas by addition and subtraction",
       "questions": [
         {
@@ -3652,7 +3652,7 @@
     },
     {
       "topicId": "y7-8g",
-      "code": "8G",
+      "code": "9G",
       "title": "Areas of triangles and parallelograms",
       "questions": [
         {
@@ -3761,7 +3761,7 @@
     },
     {
       "topicId": "y7-8i",
-      "code": "8I",
+      "code": "9I",
       "title": "Time",
       "questions": [
         {

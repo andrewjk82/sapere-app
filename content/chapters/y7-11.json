@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-11",
-  "title": "Chapter 11: Linear equations",
+  "title": "Chapter 12: Linear equations",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-11a",
-      "code": "11A",
+      "code": "12A",
       "title": "Substitution with integers",
       "questions": [
         {
@@ -2441,7 +2441,7 @@
     },
     {
       "topicId": "y7-11d",
-      "code": "11D",
+      "code": "12D",
       "title": "Finding rules",
       "questions": [
         {

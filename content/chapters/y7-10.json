@@ -1,6 +1,6 @@
 {
   "chapterId": "y7-10",
-  "title": "Chapter 10: Integers",
+  "title": "Chapter 11: Integers",
   "year": "Year 7",
   "topics": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "topicId": "y7-10a",
-      "code": "10A",
+      "code": "11A",
       "title": "Negative integers",
       "questions": [
         {

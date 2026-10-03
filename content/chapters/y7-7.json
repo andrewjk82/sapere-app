@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-7",
-  "title": "Chapter 7: Decimals",
+  "title": "Chapter 8: Decimals",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-7a",
-      "code": "7A",
+      "code": "8A",
       "title": "Place value and comparison of decimals",
       "questions": [
         {
@@ -2256,7 +2256,7 @@
     },
     {
       "topicId": "y7-7b",
-      "code": "7B",
+      "code": "8B",
       "title": "Converting decimals to fractions and fractions to decimals",
       "questions": [
         {
@@ -3122,7 +3122,7 @@
     },
     {
       "topicId": "y7-7c",
-      "code": "7C",
+      "code": "8C",
       "title": "Addition and subtraction of decimals",
       "questions": [
         {
@@ -3303,7 +3303,7 @@
     },
     {
       "topicId": "y7-7d",
-      "code": "7D",
+      "code": "8D",
       "title": "Multiplication and division by powers of 10",
       "questions": [
         {
@@ -3395,7 +3395,7 @@
     },
     {
       "topicId": "y7-7e",
-      "code": "7E",
+      "code": "8E",
       "title": "Multiplication of one decimal by another",
       "questions": [
         {
@@ -3476,7 +3476,7 @@
     },
     {
       "topicId": "y7-7f",
-      "code": "7F",
+      "code": "8F",
       "title": "Division of decimals",
       "questions": [
         {
@@ -3582,7 +3582,7 @@
     },
     {
       "topicId": "y7-7g",
-      "code": "7G",
+      "code": "8G",
       "title": "Recurring decimals",
       "questions": [
         {
@@ -3917,7 +3917,7 @@
     },
     {
       "topicId": "y7-7h",
-      "code": "7H",
+      "code": "8H",
       "title": "Rounding of decimals",
       "questions": [
         {

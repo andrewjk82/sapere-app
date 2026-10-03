@@ -1,6 +1,6 @@
 {
   "chapterId": "y7-6",
-  "title": "Chapter 6: Algebra with fractions",
+  "title": "Chapter 7: Algebra with fractions",
   "year": "Year 7",
   "topics": [
     {
@@ -43,7 +43,7 @@
     },
     {
       "topicId": "y7-6a",
-      "code": "6A",
+      "code": "7A",
       "title": "Division in algebra",
       "questions": [
         {
@@ -877,7 +877,7 @@
     },
     {
       "topicId": "y7-6b",
-      "code": "6B",
+      "code": "7B",
       "title": "Multiplication and division",
       "questions": [
         {
@@ -3131,7 +3131,7 @@
     },
     {
       "topicId": "y7-6c",
-      "code": "6C",
+      "code": "7C",
       "title": "Dividing and cancelling",
       "questions": [
         {
@@ -4702,7 +4702,7 @@
     },
     {
       "topicId": "y7-6d",
-      "code": "6D",
+      "code": "7D",
       "title": "Revision",
       "questions": [
         {

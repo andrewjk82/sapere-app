@@ -1,11 +1,11 @@
 {
   "chapterId": "y7-14",
-  "title": "Chapter 14: Percentages and Ratios",
+  "title": "Chapter 15: Percentages and Ratios",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-14a",
-      "code": "14A",
+      "code": "15A",
       "title": "Percentages, fractions and decimals",
       "questions": [
         {
@@ -2662,7 +2662,7 @@
     },
     {
       "topicId": "y7-14c",
-      "code": "14C",
+      "code": "15C",
       "title": "Percentage of a quantity",
       "questions": [
         {
