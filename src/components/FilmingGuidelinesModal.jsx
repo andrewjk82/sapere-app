@@ -48,13 +48,13 @@ const FilmingGuidelinesModal = ({ open, onCancel, onProceed }) => (
               type="button"
               onClick={onProceed}
               style={{
-                flex: 1, padding: '13px 16px', borderRadius: 14, border: 'none',
+                flex: 1.7, padding: '13px 16px', borderRadius: 14, border: 'none',
                 background: 'linear-gradient(135deg, #2563eb, #4338ca)', color: '#fff',
                 fontWeight: 800, fontSize: '0.88rem', cursor: 'pointer',
                 boxShadow: '0 10px 24px rgba(37,99,235,0.35)',
               }}
             >
-              Proceed to Zoom
+              Enter Online Study Room
             </button>
           </div>
         </motion.div>

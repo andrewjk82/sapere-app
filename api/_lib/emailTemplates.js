@@ -145,7 +145,7 @@ export function onlineStudySessionEmail({ name = 'there', zoomLink = '', startLa
       <p style="margin:0 0 20px;font-size:14px;line-height:1.6;color:#6d6a85;">
         Tonight's study room is open from ${esc(startLabel)} to ${esc(endLabel)}. Save the link below and join once it starts.
       </p>
-      ${button('Join Zoom room', zoomLink || APP_URL, '#4338ca')}
+      ${button('Join Online Study Room', zoomLink || APP_URL, '#4338ca')}
     </div>`;
   return {
     subject: `Study room opens at ${startLabel} tonight`,

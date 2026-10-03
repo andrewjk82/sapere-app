@@ -71,8 +71,8 @@ const OnlineStudySessionCard = () => {
         </div>
         <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
           {config?.manualOpen && !inWindow
-            ? 'Tap to join the Zoom room'
-            : 'Tap to join the Zoom room · open until 10:30 PM'}
+            ? 'Tap to join the Online Study Room'
+            : 'Tap to join the Online Study Room · open until 10:30 PM'}
         </div>
       </div>
     </button>
