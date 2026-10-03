@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import HomeworkMarkingPanel from './HomeworkMarkingPanel';
 import { createPortal } from 'react-dom';
 import { X, ChevronLeft, ChevronRight, CheckCircle2, ZoomIn, ZoomOut, Loader2 } from 'lucide-react';
 import { fetchSubmission, fetchSubmissionPages, markHomeworkChecked } from '../../services/homeworkService';
@@ -56,11 +57,21 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
     return () => { cancelled = true; };
   }, [sessionId, mode, uid]);
 
-  const handleCheck = async () => {
+  // Teacher marking layout: answer key + marking on the left, the student's
+  // pages on the right; on a narrow screen the three are tabs.
+  const [isWide, setIsWide] = useState(() => window.innerWidth >= 900);
+  const [narrowTab, setNarrowTab] = useState('work');
+  useEffect(() => {
+    const onResize = () => setIsWide(window.innerWidth >= 900);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
+  const handleCheck = async (grade = null) => {
     setChecking(true);
     setError('');
     try {
-      await markHomeworkChecked(sessionId);
+      await markHomeworkChecked(sessionId, grade);
       setSubmission((s) => ({ ...s, status: 'checked' }));
       onChecked?.(sessionId);
     } catch {
@@ -73,6 +84,7 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
   const topics = (submission?.topics || info?.topics || []).map((t) => t.label).join(', ');
   const subtitle = [submission?.sessionDate || info?.date, topics].filter(Boolean).join(' · ');
   const status = submission?.status || info?.status;
+  const marking = mode === 'teacher' && submission?.status === 'submitted' && (submission?.topics || []).length > 0;
 
   return createPortal(
     <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.85)', display: 'flex', flexDirection: 'column' }}>
@@ -87,8 +99,8 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
         </div>
         <button type="button" aria-label="Zoom out" onClick={() => setZoom((z) => Math.max(1, z - 0.5))} style={ICON_BTN}><ZoomOut size={20} /></button>
         <button type="button" aria-label="Zoom in" onClick={() => setZoom((z) => Math.min(3, z + 0.5))} style={ICON_BTN}><ZoomIn size={20} /></button>
-        {mode === 'teacher' && submission?.status === 'submitted' && (
-          <button type="button" disabled={checking} onClick={handleCheck} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '8px 14px', borderRadius: 12, border: 0, background: '#10b981', color: '#fff', fontWeight: 800, cursor: checking ? 'default' : 'pointer' }}>
+        {mode === 'teacher' && submission?.status === 'submitted' && !(submission?.topics || []).length && (
+          <button type="button" disabled={checking} onClick={() => handleCheck()} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '8px 14px', borderRadius: 12, border: 0, background: '#10b981', color: '#fff', fontWeight: 800, cursor: checking ? 'default' : 'pointer' }}>
             {checking ? <Loader2 size={16} style={SPIN} /> : <CheckCircle2 size={16} />} Mark as checked
           </button>
         )}
@@ -105,30 +117,56 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
       )}
       {error && <div role="alert" style={{ textAlign: 'center', color: '#fecaca', fontWeight: 700 }}>{error}</div>}
 
-      {/* Centre with margin:auto, not justify/align-content:center — a page taller
-          (or, zoomed, wider) than the viewport would otherwise overflow off the
-          top/left where it can't be scrolled to, hiding the top of the page. */}
-      <div key={page} style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
-        {loading ? (
-          <Loader2 size={28} color="#fff" style={{ ...SPIN, margin: 'auto' }} />
-        ) : pages.length === 0 ? (
-          <div style={{ color: '#cbd5e1', fontWeight: 700, margin: 'auto' }}>No pages to show.</div>
-        ) : (
-          <img
-            src={pages[page]}
-            alt={`Page ${page + 1}`}
-            style={{ margin: 'auto', flexShrink: 0, background: '#fff', borderRadius: 12, width: `${zoom * 100}%`, maxWidth: zoom === 1 ? 900 : 'none', height: 'auto' }}
-          />
-        )}
-      </div>
-
-      {pages.length > 1 && (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, padding: 12, color: '#fff' }}>
-          <button type="button" aria-label="Previous page" disabled={page === 0} onClick={() => { setPage((p) => p - 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === 0 ? 0.3 : 1 }}><ChevronLeft size={24} /></button>
-          <span style={{ fontWeight: 700 }}>{page + 1} / {pages.length}</span>
-          <button type="button" aria-label="Next page" disabled={page === pages.length - 1} onClick={() => { setPage((p) => p + 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === pages.length - 1 ? 0.3 : 1 }}><ChevronRight size={24} /></button>
+      {marking && !isWide && (
+        <div style={{ display: 'flex', gap: 6, padding: '0 12px 8px' }}>
+          {[['work', 'Student work'], ['answers', 'Answers'], ['marking', 'Marking']].map(([key, label]) => (
+            <button key={key} type="button" onClick={() => setNarrowTab(key)} style={{ flex: 1, border: 0, borderRadius: 10, padding: '8px', fontWeight: 800, cursor: 'pointer', background: narrowTab === key ? '#fff' : 'rgba(255,255,255,0.15)', color: narrowTab === key ? '#1e1b4b' : '#fff' }}>
+              {label}
+            </button>
+          ))}
         </div>
       )}
+      <div style={{ flex: 1, minHeight: 0, display: 'flex' }}>
+        {/* Hidden, not unmounted, on the narrow "Student work" tab so the marks survive. */}
+        {marking && (
+          <div style={{ width: isWide ? '44%' : '100%', minWidth: 0, background: '#fff', borderRight: isWide ? '1px solid #e2e8f0' : 0, display: isWide || narrowTab !== 'work' ? 'block' : 'none' }}>
+            <HomeworkMarkingPanel
+              topics={submission.topics}
+              layout={isWide ? 'stack' : narrowTab === 'work' ? 'marking' : narrowTab}
+              saving={checking}
+              onSave={handleCheck}
+            />
+          </div>
+        )}
+        {(!marking || isWide || narrowTab === 'work') && (
+          <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column' }}>
+          {/* Centre with margin:auto, not justify/align-content:center — a page taller
+              (or, zoomed, wider) than the viewport would otherwise overflow off the
+              top/left where it can't be scrolled to, hiding the top of the page. */}
+          <div key={page} style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
+            {loading ? (
+              <Loader2 size={28} color="#fff" style={{ ...SPIN, margin: 'auto' }} />
+            ) : pages.length === 0 ? (
+              <div style={{ color: '#cbd5e1', fontWeight: 700, margin: 'auto' }}>No pages to show.</div>
+            ) : (
+              <img
+                src={pages[page]}
+                alt={`Page ${page + 1}`}
+                style={{ margin: 'auto', flexShrink: 0, background: '#fff', borderRadius: 12, width: `${zoom * 100}%`, maxWidth: zoom === 1 ? 900 : 'none', height: 'auto' }}
+              />
+            )}
+          </div>
+
+          {pages.length > 1 && (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, padding: 12, color: '#fff' }}>
+              <button type="button" aria-label="Previous page" disabled={page === 0} onClick={() => { setPage((p) => p - 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === 0 ? 0.3 : 1 }}><ChevronLeft size={24} /></button>
+              <span style={{ fontWeight: 700 }}>{page + 1} / {pages.length}</span>
+              <button type="button" aria-label="Next page" disabled={page === pages.length - 1} onClick={() => { setPage((p) => p + 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === pages.length - 1 ? 0.3 : 1 }}><ChevronRight size={24} /></button>
+            </div>
+          )}
+          </div>
+        )}
+      </div>
     </div>,
     document.body,
   );

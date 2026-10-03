@@ -139,7 +139,7 @@ test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries th
   const sessions = [
     { id: 'old', date: '2026-08-01', learnedTopics: [{ id: 't1', label: '1A' }] },
     { id: 'new', date: '2026-10-02', learnedTopics: [{ id: 't2', label: '1B' }] },
-    { id: 'chk', date: '2026-07-01', learnedTopics: [{ id: 't3' }], homeworkStatus: 'checked', homeworkScore: 8, homeworkTotal: 10 },
+    { id: 'chk', date: '2026-07-01', learnedTopics: [{ id: 't3' }], homeworkStatus: 'checked', homeworkScore: 8, homeworkTotal: 10, homeworkComment: ' Good work ' },
     { id: 'none', date: '2026-10-03', learnedTopics: [] },
   ];
   const items = getHomeworkHistory(sessions, { today });
@@ -147,6 +147,7 @@ test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries th
     ['new', 'todo', ''], ['old', 'missed', ''], ['chk', 'checked', '8/10'],
   ]);
   assert.equal(items[2].topics[0].label, 't3');
+  assert.equal(items[2].comment, 'Good work');
 });
 
 console.log(`\n${passed} passed`);

@@ -88,6 +88,9 @@ const HomeworkHistory = ({ sessions, onOpen, onClose }) => {
                         <div style={{ fontWeight: 700, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           {item.topics.map((t) => t.label).join(', ')}
                         </div>
+                        {item.comment && (
+                          <div style={{ fontSize: '0.78rem', color: '#4f46e5', fontWeight: 600, marginTop: 2 }}>“{item.comment}”</div>
+                        )}
                       </div>
                       {item.mark && <span style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.9rem' }}>{item.mark}</span>}
                       <span style={{ display: 'flex', alignItems: 'center', gap: 4, padding: '4px 10px', borderRadius: 999, background: b.bg, color: b.color, fontSize: '0.72rem', fontWeight: 800, whiteSpace: 'nowrap' }}>

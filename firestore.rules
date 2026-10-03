@@ -95,6 +95,12 @@ service cloud.firestore {
       allow update, delete: if isAdmin();
     }
 
+    // Textbook answer keys, one doc per curriculum topic (tools/answer-keys/).
+    // Teacher only — students must never be able to read the answers.
+    match /answer_keys/{topicId} {
+      allow read, write: if isAdmin();
+    }
+
     // Homework submissions — one per session (doc id = sessions/{sessionId} id);
     // full-size pages in pages/{i}. The student writes pages + this doc + the
     // session's homeworkStatus in ONE batch (homeworkService.submitHomework).

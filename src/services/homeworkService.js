@@ -131,7 +131,17 @@ export async function fetchPendingSubmissions() {
     .sort((a, b) => (a.submittedAt?.toMillis?.() || 0) - (b.submittedAt?.toMillis?.() || 0));
 }
 
-export async function markHomeworkChecked(sessionId) {
+// `grade` (optional, from the marking panel): { score, total, marks, comment }.
+// Stored on the session so the weekly report's Homework Mark and the
+// student's history pick it up with no extra reads.
+export async function markHomeworkChecked(sessionId, grade = null) {
+  const gradeFields = {};
+  if (grade && grade.total > 0) {
+    gradeFields.homeworkScore = grade.score;
+    gradeFields.homeworkTotal = grade.total;
+    gradeFields.homeworkMarks = grade.marks || {};
+  }
+  if (grade?.comment?.trim()) gradeFields.homeworkComment = grade.comment.trim();
   const batch = writeBatch(db);
   batch.update(doc(db, SUBMISSIONS, sessionId), {
     status: 'checked',
@@ -142,8 +152,25 @@ export async function markHomeworkChecked(sessionId) {
     isHomeworkCompleted: true,
     homeworkCompletedAt: new Date().toISOString(),
     homeworkStatus: 'checked',
+    ...gradeFields,
   });
   await batch.commit();
+}
+
+// Textbook answer keys (answer_keys/{topicId}, teacher-only). One read per
+// topic, kept in memory for the rest of the visit.
+const answerKeyCache = new Map();
+export async function fetchAnswerKeys(topicIds = []) {
+  const ids = [...new Set(topicIds.filter(Boolean))];
+  await Promise.all(ids.filter((id) => !answerKeyCache.has(id)).map(async (id) => {
+    try {
+      const snap = await getDoc(doc(db, 'answer_keys', id));
+      answerKeyCache.set(id, snap.exists() ? snap.data() : null);
+    } catch {
+      // not cached: a transient failure can be retried next open
+    }
+  }));
+  return Object.fromEntries(ids.map((id) => [id, answerKeyCache.get(id) || null]));
 }
 
 // 1–2 reads per homework open. Fetched fresh (not from LearningPath's cache)

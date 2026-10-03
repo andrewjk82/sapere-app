@@ -81,6 +81,7 @@ export const getHomeworkHistory = (sessions, { today = new Date() } = {}) => {
           .filter((t) => t.id),
         status: status === 'todo' && date < cutoff ? 'missed' : status,
         mark: hasMark ? `${Number(s.homeworkScore)}/${Number(s.homeworkTotal)}` : '',
+        comment: String(s.homeworkComment || '').trim(),
       };
     })
     .sort((a, b) => b.date.localeCompare(a.date));
