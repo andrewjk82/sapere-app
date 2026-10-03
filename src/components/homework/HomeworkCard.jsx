@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
-import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, Clock, History, PenLine } from 'lucide-react';
-import SessionRing from '../challenge/SessionRing';
+import { ChevronDown, ChevronUp, CheckCircle2, Clock, PenLine, ClipboardCheck } from 'lucide-react';
 import { getHomeworkItems } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
@@ -52,41 +51,24 @@ const HomeworkCard = ({ sessions, profile, user }) => {
   const otherActive = active.slice(1);
 
   return (
-    <div className="cs__test-card">
-      <div className="cs__test">
-        <SessionRing kind="homework" done={allChecked} />
-        <div className="cs__test-main">
-          <div className="cs__test-titlerow">
-            <h3>Homework</h3>
-            {todoCount > 0 ? (
-              <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> {todoCount} to do</span>
-            ) : allChecked ? (
-              <span className="cs__chip-state cs__chip-state--done"><CheckCircle2 size={13} /> All checked</span>
-            ) : (
-              <span className="cs__chip-state" style={{ color: '#0369a1', background: '#f0f9ff', borderColor: '#bae6fd' }}><Clock size={13} /> Submitted</span>
-            )}
-          </div>
-          <p>
-            {latest
-              ? `${latest.date} · ${latest.topics.map((t) => t.label).join(', ')}`
-              : `${history.length} homework checked by your teacher`}
-          </p>
-        </div>
-        <div className="cs__test-actions">
-          {latest ? (
-            <button type="button" className="cs__primary cs__primary--begin" onClick={() => setOpenItem(latest)}>
-              {latest.status === 'todo' ? 'Begin' : 'Open'} <ArrowRight size={16} />
-            </button>
-          ) : (
-            <button type="button" className="cs__primary cs__primary--review" onClick={() => setShowHistory((v) => !v)}>
-              <History size={16} /> History
-            </button>
-          )}
-        </div>
-      </div>
+    <div className="cs__homework-wrap">
+      <article className={`cs__test-card cs__test-card--homework ${todoCount > 0 ? 'cs__test-card--pending' : 'cs__test-card--completed'}`}>
+        <button
+          type="button"
+          className="cs__tile-main"
+          onClick={() => latest ? setOpenItem(latest) : setShowHistory((v) => !v)}
+          aria-label={`Homework: ${todoCount > 0 ? `${todoCount} to do` : allChecked ? 'All checked' : 'Submitted'}`}
+        >
+          <span className="cs__tile-status">
+            {todoCount > 0 ? `${todoCount} to do` : allChecked ? 'All checked' : 'Submitted'}
+          </span>
+          <ClipboardCheck className="cs__tile-watermark" aria-hidden="true" />
+          <span className="cs__tile-title">Homework</span>
+        </button>
+      </article>
 
       {(otherActive.length > 0 || history.length > 0) && (
-        <div style={{ borderTop: '1px solid #f1f5f9', background: '#fcfcfe', padding: '12px 22px 14px', display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <div className="cs__homework-extra">
           {otherActive.map((item) => <Row key={item.sessionId} item={item} onOpen={setOpenItem} />)}
           {history.length > 0 && latest && (
             <button

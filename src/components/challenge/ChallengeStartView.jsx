@@ -3,13 +3,11 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   BookOpen,
   Target,
-  CheckCircle2,
-  AlertTriangle,
   TrendingUp,
   Zap,
-  History,
   ArrowRight,
   BookLock,
+  MessageCircle,
   GraduationCap,
   Play,
   HelpCircle,
@@ -20,15 +18,13 @@ import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
 import { nextReviewPhrase } from '../../utils/secretNote';
 import HomeworkCard from '../homework/HomeworkCard';
-import SessionRing from './SessionRing';
 import { KIND } from './sessionKinds';
 import { useProfile } from '../../context/ProfileContext';
 import { collection, query, where, onSnapshot } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 
-// ── Secret Notebook footer strip (gradient CTA, lives inside the card) ──────
+// ── Secret Notebook footer strip ───────────────────────────────────────────
 const SecretNoteStrip = ({ kind, note, onOpen }) => {
-  const m = KIND[kind];
   const total = note?.total || 0;
   const due = note?.due || 0;
   // Three distinct states so students are never told "9 saved" and left to
@@ -36,7 +32,6 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
   //   • due > 0        → there IS something to review now
   //   • due 0, total>0 → caught up; the saved cards are scheduled for later
   //   • total 0        → nothing saved
-  const caughtUp = due === 0 && total > 0;
   const sub = total === 0
     ? 'no notes yet'
     : due > 0
@@ -45,24 +40,11 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
       : `${due} question${due === 1 ? '' : 's'} ready to review`)
     : `All caught up — ${total} come${total === 1 ? 's' : ''} back ${nextReviewPhrase(note?.nextDueAt)}`;
   return (
-    <button
-      type="button"
-      className={`cs__note-strip cs__note-strip--${kind}${caughtUp ? ' cs__note-strip--rest' : ''}`}
-      onClick={() => onOpen?.(kind)}
-    >
-      <span className="cs__note-badge" style={{ background: m.badge }}><BookLock size={17} /></span>
+    <button type="button" className={`cs__note-strip cs__note-strip--${kind}`} onClick={() => onOpen?.(kind)}>
+      <BookLock size={15} aria-hidden="true" />
       <span className="cs__note-main">
         <strong>Secret Note</strong>
         <span className="cs__note-sub">{sub}</span>
-      </span>
-      {/* CTA must not say "Review" when nothing is due — that is exactly what
-          made students expect a review and find an empty screen. */}
-      <span className="cs__note-cta">
-        {due > 0
-          ? <>Review <ArrowRight size={15} /></>
-          : total > 0
-          ? <>Caught up <CheckCircle2 size={15} /></>
-          : <>Open <ArrowRight size={15} /></>}
       </span>
     </button>
   );
@@ -410,77 +392,31 @@ const WeeklyBars = ({ data, kind }) => {
 const TestRow = ({
   kind,
   title,
-  meta,
   state, // 'idle' | 'loading' | 'completed' | 'abandoned'
   onBegin,
   onReview,
   note,
   onOpenNote,
-  lessons = [],
-  lessonsLabel = '',
-  onOpenLesson,
 }) => {
   const done = state === 'completed';
   const ended = state === 'abandoned';
   const loading = state === 'loading';
+  const Icon = kind === 'calc' ? Target : BookOpen;
+  const cardState = done ? 'completed' : loading ? 'loading' : 'pending';
+  const openSession = loading ? undefined : done || ended ? onReview : onBegin;
+  const stateLabel = done ? 'Completed' : ended ? 'Ended' : loading ? 'Checking…' : '';
+
   return (
-    <div className="cs__test-card">
-      <div className="cs__test">
-        <SessionRing kind={kind} done={done} />
-        <div className="cs__test-main">
-          <div className="cs__test-titlerow">
-            <h3>{title}</h3>
-            {done ? (
-              <span className="cs__chip-state cs__chip-state--done"><CheckCircle2 size={13} /> Done today</span>
-            ) : ended ? (
-              <span className="cs__chip-state cs__chip-state--ended"><AlertTriangle size={13} /> Ended</span>
-            ) : loading ? null : (
-              <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> Not done yet</span>
-            )}
-          </div>
-          <p>{meta}</p>
-        </div>
-        <div className="cs__test-actions">
-          {loading ? (
-            <span className="cs__status">Checking…</span>
-          ) : done || ended ? (
-            <button type="button" className="cs__primary cs__primary--review" onClick={onReview} title={`Review ${title}`}>
-              <History size={16} /> Review
-            </button>
-          ) : (
-            <button type="button" className="cs__primary cs__primary--begin" onClick={onBegin}>
-              Begin <ArrowRight size={16} />
-            </button>
-          )}
-        </div>
-      </div>
-      {lessons.length > 0 && (
-        <div className="cs__lessons">
-          <div className="cs__lessons-head">
-            <GraduationCap size={17} />
-            <span className="cs__lessons-title">Learn the path first</span>
-            {lessonsLabel && <span className="cs__lessons-sub"> · {lessonsLabel}</span>}
-          </div>
-          <div className="cs__lessons-grid">
-            {lessons.map((lesson, idx) => (
-              <button
-                key={lesson.title}
-                type="button"
-                className="cs__lesson-tile"
-                onClick={() => onOpenLesson?.(lesson)}
-              >
-                <div className="cs__lesson-toprow">
-                  <span className="cs__lesson-play"><Play size={18} fill="currentColor" /></span>
-                  <span className="cs__lesson-mins">{4 + idx} min</span>
-                </div>
-                <div className="cs__lesson-name">{lesson.title}</div>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-      <SecretNoteStrip kind={kind} note={note} onOpen={onOpenNote} />
-    </div>
+    <>
+      <article className={`cs__test-card cs__test-card--${cardState}${ended ? ' cs__test-card--ended' : ''}`}>
+        <button type="button" className="cs__tile-main" onClick={openSession} disabled={loading} aria-label={`${title}${stateLabel ? `: ${stateLabel}` : ''}`}>
+          {stateLabel && <span className="cs__tile-status">{stateLabel}</span>}
+          <Icon className="cs__tile-watermark" aria-hidden="true" />
+          <span className="cs__tile-title">{title}</span>
+        </button>
+        <SecretNoteStrip kind={kind} note={note} onOpen={onOpenNote} />
+      </article>
+    </>
   );
 };
 
@@ -499,9 +435,6 @@ const ChallengeStartView = ({
   // onBack and getChallengeMaxXp kept for prop compatibility
   // eslint-disable-next-line no-unused-vars
   onBack,
-  getQuestionCount,
-  getChallengeMaxXp,
-  hasCalculationTest = true,
   // eslint-disable-next-line no-unused-vars
   learningInsights,
   analytics,
@@ -543,7 +476,7 @@ const ChallengeStartView = ({
       if (lesson && !seen.has(lesson.title)) { seen.add(lesson.title); lessons.push(lesson); }
     });
     return lessons;
-  }, [studentProfile?.assignedChapters]);
+  }, [studentProfile]);
 
   const dailyNote = secretNote?.daily || { total: 0, due: 0 };
   const calcNote = secretNote?.calc || { total: 0, due: 0 };
@@ -614,12 +547,6 @@ const ChallengeStartView = ({
   const strongTopics = analytics?.strongTopics || [];
   const topRec = analytics?.recommendations?.[0] || null;
 
-  // Dynamic question counts / XP — fall back to safe defaults
-  const dailyQ = getQuestionCount ? getQuestionCount('daily') : 10;
-  const dailyXp = getChallengeMaxXp ? getChallengeMaxXp('daily', hasCalculationTest) : 100;
-  const calcQ = getQuestionCount ? getQuestionCount('calc') : 30;
-  const calcXp = getChallengeMaxXp ? getChallengeMaxXp('calc', hasCalculationTest) : 50;
-
   const trendChip =
     trendKey !== 'insufficient_data' ? (
       <span
@@ -688,7 +615,6 @@ const ChallengeStartView = ({
           <TestRow
             kind="daily"
             title="Daily practice"
-            meta={`${dailyQ} questions · ~5 minutes · up to ${dailyXp} XP`}
             state={dailyState}
             onBegin={onStartDailyQuiz}
             onReview={() => onViewHistory?.('daily')}
@@ -699,49 +625,49 @@ const ChallengeStartView = ({
             <TestRow
               kind="calc"
               title="Daily Calculation"
-              meta={`${calcQ} questions · ~3 minutes · up to ${calcXp} XP`}
               state={calcState}
               onBegin={onStartCalculationQuiz}
               onReview={() => onViewHistory?.('calc')}
               note={calcNote}
               onOpenNote={onOpenSecretNote}
-              lessons={clockLessons}
-              lessonsLabel="reading a clock"
-              onOpenLesson={setPreviewLesson}
             />
           )}
           {(() => {
-            // Teacher feedback — same card shell as the tests; a chip flags new comments.
             const hasNew = newFeedbackCount > 0;
             const openFeedback = onOpenFeedback || onViewFeedback;
             return (
-              <div className="cs__test-card">
-                <div className="cs__test">
-                  <SessionRing kind="feedback" done={false} />
-                  <div className="cs__test-main">
-                    <div className="cs__test-titlerow">
-                      <h3>Teacher Feedback</h3>
-                      {hasNew && (
-                        <span className="cs__chip-state cs__chip-state--todo"><span className="cs__chip-dot" /> {newFeedbackCount} new</span>
-                      )}
-                    </div>
-                    <p>
-                      {hasNew
-                        ? `${newFeedbackCount} new comment${newFeedbackCount > 1 ? 's' : ''} from your teacher`
-                        : 'View comments from your teacher'}
-                    </p>
-                  </div>
-                  <div className="cs__test-actions">
-                    <button type="button" className="cs__primary cs__primary--begin" onClick={openFeedback}>
-                      Open <ArrowRight size={16} />
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <article className="cs__test-card cs__test-card--neutral">
+                <button type="button" className="cs__tile-main" onClick={openFeedback} aria-label="Teacher Feedback">
+                  {hasNew && <span className="cs__tile-status">{newFeedbackCount} new</span>}
+                  <MessageCircle className="cs__tile-watermark" aria-hidden="true" />
+                  <span className="cs__tile-title">Teacher Feedback</span>
+                </button>
+              </article>
             );
           })()}
           <HomeworkCard sessions={hwSessions} profile={hwProfile} user={user} />
         </div>
+
+        {clockLessons.length > 0 && calculationEnabled && (
+          <div className="cs__lessons">
+            <div className="cs__lessons-head">
+              <GraduationCap size={17} />
+              <span className="cs__lessons-title">Learn the path first</span>
+              <span className="cs__lessons-sub"> · reading a clock</span>
+            </div>
+            <div className="cs__lessons-grid">
+              {clockLessons.map((lesson, idx) => (
+                <button key={lesson.title} type="button" className="cs__lesson-tile" onClick={() => setPreviewLesson(lesson)}>
+                  <div className="cs__lesson-toprow">
+                    <span className="cs__lesson-play"><Play size={18} fill="currentColor" /></span>
+                    <span className="cs__lesson-mins">{4 + idx} min</span>
+                  </div>
+                  <div className="cs__lesson-name">{lesson.title}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Row 2: weekly grids + accuracy ring */}
         <div className="cs__row2">
@@ -920,59 +846,50 @@ const challengeStartStyles = `
     font-weight: 800; font-size: 0.7rem;
   }
 
-  /* Test cards (original vertical list) */
-  .cs__tests { display: flex; flex-direction: column; gap: 12px; }
+  /* Uniform full-card actions */
+  .cs__tests { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
   .cs__test-card {
-    background: #ffffff; border-radius: 24px; border: 1px solid #f1f5f9;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.04); overflow: hidden;
+    min-width: 0; height: 212px; border-radius: 18px; border: 1px solid #e9e7f2;
+    background: #fff; box-shadow: 0 4px 14px rgba(40,34,91,.04); overflow: hidden;
+    display: flex; flex-direction: column;
   }
-  .cs__test {
-    display: flex; align-items: center; gap: 18px;
-    padding: 18px 22px;
+  .cs__test-card--pending, .cs__test-card--ended { background: #fff4f2; border-color: #f2dfdc; }
+  .cs__test-card--completed { background: #f1f8f1; border-color: #dcebdc; }
+  .cs__test-card--loading, .cs__test-card--neutral { background: #fff; }
+  .cs__tile-main {
+    appearance: none; position: relative; isolation: isolate; overflow: hidden;
+    display: flex; align-items: center; justify-content: center; flex: 1; width: 100%; min-height: 0;
+    padding: 20px; border: 0; background: transparent; color: inherit; font: inherit; text-align: center; cursor: pointer;
   }
-
-  /* Session ring icon: done → green ring + check, else dashed ring + glyph */
-  .cs__sess-ring { position: relative; width: 60px; height: 60px; flex-shrink: 0; }
-  .cs__sess-ring svg { display: block; }
-  .cs__ring-ico { position: absolute; inset: 0; display: grid; place-items: center; }
-
-  .cs__test-main { flex: 1; min-width: 0; }
-  .cs__test-titlerow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .cs__test-main h3 { font-size: 1.18rem; font-weight: 900; color: #1e1b4b; margin: 0; }
-  .cs__test-main p { color: #6d6a85; margin: 4px 0 0; font-size: 0.9rem; }
-
-  /* Status chip next to the title */
-  .cs__chip-state {
-    display: inline-flex; align-items: center; gap: 6px;
-    padding: 4px 10px; border-radius: 999px;
-    font-weight: 900; font-size: 0.72rem; border: 1.5px solid;
+  .cs__tile-main:disabled { cursor: default; }
+  .cs__tile-main:not(:disabled):hover { background: rgba(255,255,255,.16); }
+  .cs__tile-main:focus-visible { outline: 3px solid #8b75dc; outline-offset: -4px; border-radius: 17px; }
+  .cs__tile-title { position: relative; z-index: 1; max-width: 100%; color: #211e49; font-size: 1.08rem; font-weight: 850; letter-spacing: -.025em; line-height: 1.25; }
+  .cs__tile-watermark { position: absolute; z-index: -1; top: 11px; right: 11px; width: 68px; height: 68px; color: #7c4fe6; opacity: .11; stroke-width: 1.35; pointer-events: none; }
+  .cs__test-card--pending .cs__tile-watermark, .cs__test-card--ended .cs__tile-watermark { color: #bd756d; opacity: .13; }
+  .cs__test-card--completed .cs__tile-watermark { color: #578b5d; opacity: .14; }
+  .cs__test-card--neutral .cs__tile-watermark { color: #785fd1; opacity: .1; }
+  .cs__tile-status { position: absolute; z-index: 1; left: 14px; top: 14px; max-width: calc(100% - 92px); padding: 5px 8px; border: 1px solid rgba(180,112,104,.2); border-radius: 999px; background: rgba(255,255,255,.72); color: #9e625c; font-size: .65rem; font-weight: 750; line-height: 1; white-space: nowrap; }
+  .cs__test-card--completed .cs__tile-status { color: #4b7952; border-color: rgba(92,142,99,.2); }
+  .cs__test-card--neutral .cs__tile-status { color: #6d5baf; border-color: rgba(109,91,175,.18); }
+  .cs__note-strip {
+    appearance: none; display: flex; align-items: center; justify-content: center; gap: 8px;
+    width: 100%; height: 58px; flex: 0 0 58px; padding: 8px 12px; border: 0;
+    border-top: 1px solid rgba(98,80,150,.12); background: rgba(255,255,255,.52); color: #57439d;
+    font: inherit; text-align: center; cursor: pointer; transition: background .15s ease;
   }
-  .cs__chip-state--done { color: #15803d; background: #ecfdf5; border-color: #a7f3d0; }
-  .cs__chip-state--ended { color: #b91c1c; background: #fef2f2; border-color: #fecaca; }
-  .cs__chip-state--todo { color: #b45309; background: #fffbeb; border-color: #fde68a; }
-  .cs__chip-dot { width: 7px; height: 7px; border-radius: 50%; background: #f59e0b; }
-
-  .cs__test-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-
-  /* Unified primary button — Begin (to-do) ⇄ Review (done), same size */
-  .cs__primary {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 13px 24px; border-radius: 999px;
-    font-weight: 800; font-size: 0.9rem; cursor: pointer; border: 0;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .cs__primary:hover { transform: translateY(-1px); }
-  .cs__primary--begin { background: #1e1b4b; color: #fff; box-shadow: 0 10px 24px rgba(30,27,75,0.22); }
-  .cs__primary--review { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: #fff; box-shadow: 0 10px 24px rgba(124,58,237,0.24); }
-  .cs__status {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 12px 18px; border-radius: 999px;
-    font-weight: 800; font-size: 0.85rem; color: #475569;
-    background: #f8fafc; border: 1px solid #e2e8f0;
-  }
+  .cs__note-strip:hover { background: rgba(255,255,255,.86); }
+  .cs__note-strip > svg { width: 16px; height: 16px; flex: 0 0 auto; }
+  .cs__note-main { display: flex; align-items: baseline; justify-content: center; flex-wrap: wrap; column-gap: 7px; min-width: 0; line-height: 1.2; }
+  .cs__note-main strong { font-size: .76rem; font-weight: 800; color: #57439d; }
+  .cs__note-sub { font-size: .66rem; font-weight: 600; color: #77718b; }
+  .cs__note-strip--calc { color: #6650b1; }
+  .cs__homework-wrap { min-width: 0; }
+  .cs__homework-extra { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
 
   /* Secret Note footer — gradient CTA, same button size as above */
   .cs__lessons {
+    grid-column: 1 / -1;
     padding: 16px 18px 18px;
     border-top: 1px solid #eef0f6;
   }
@@ -1014,27 +931,7 @@ const challengeStartStyles = `
   .cs__lesson-play svg { margin-left: 2px; }
   .cs__lesson-mins { font-weight: 800; font-size: 1rem; color: #7c3aed; }
   .cs__lesson-name { font-weight: 800; font-size: 1.05rem; color: #1e1b4b; line-height: 1.35; }
-  .cs__note-strip {
-    display: flex; align-items: center; gap: 12px; width: 100%;
-    padding: 13px 18px; cursor: pointer; text-align: left;
-    border: 0; border-top: 1px solid #ddd6fe;
-    background: linear-gradient(135deg, #f5f3ff, #e7e0fb);
-    transition: filter 0.15s ease;
-  }
-  .cs__note-strip:hover { filter: brightness(0.98); }
-  .cs__note-strip--calc { border-top-color: #fde68a; background: linear-gradient(135deg, #fffbeb, #fef3c7); }
-  .cs__note-badge { width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0; display: grid; place-items: center; color: #fff; }
-  .cs__note-main { flex: 1; min-width: 0; line-height: 1.25; }
-  .cs__note-main strong { display: block; font-size: 0.9rem; font-weight: 900; color: #1e1b4b; }
-  .cs__note-sub { display: block; font-size: 0.72rem; font-weight: 700; color: #7c3aed; }
-  .cs__note-strip--calc .cs__note-sub { color: #b45309; }
-  .cs__note-cta {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 13px 24px; border-radius: 999px; flex-shrink: 0;
-    background: #7c3aed; color: #fff; font-weight: 800; font-size: 0.9rem;
-    box-shadow: 0 8px 18px rgba(124,58,237,0.3);
-  }
-  .cs__note-strip--calc .cs__note-cta { background: #d97706; box-shadow: 0 8px 18px rgba(217,119,6,0.3); }
+
 
   /* Panels */
   .cs__row2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
@@ -1127,15 +1024,17 @@ const challengeStartStyles = `
 
   /* Mobile */
   @media (max-width: 900px) {
+    .cs__tests { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .cs__row2 { grid-template-columns: 1fr; }
     .cs__row3 { grid-template-columns: 1fr; }
-    .cs__test { flex-wrap: wrap; }
-    .cs__test-actions { width: 100%; justify-content: flex-end; }
   }
   @media (max-width: 540px) {
+    .cs__tests { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .cs__test-card { height: 196px; }
+    .cs__tile-main { padding: 14px; }
+    .cs__tile-watermark { width: 56px; height: 56px; }
+    .cs__tile-title { font-size: .94rem; }
     .cs__head { flex-direction: column; align-items: flex-start; gap: 10px; }
-    .cs__test-actions { gap: 8px; }
-    .cs__primary, .cs__note-cta { padding: 11px 18px; font-size: 0.86rem; }
     .cs__day-bar-wrap { height: 70px; }
   }
 `;
