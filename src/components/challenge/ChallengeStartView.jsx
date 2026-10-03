@@ -878,10 +878,12 @@ const challengeStartStyles = `
   .cs__note-strip {
     appearance: none; display: flex; align-items: center; justify-content: center; gap: 8px;
     width: 100%; height: 58px; flex: 0 0 58px; padding: 8px 12px; border: 0;
-    border-top: 1px solid rgba(98,80,150,.12); background: rgba(255,255,255,.52); color: #57439d;
-    font: inherit; text-align: center; cursor: pointer; transition: background .15s ease;
+    border-top: 1px solid rgba(98,80,150,.16); background: rgba(124,58,237,.07); color: #57439d;
+    font: inherit; text-align: center; cursor: pointer; transition: background .15s ease, box-shadow .15s ease;
   }
-  .cs__note-strip:hover { background: rgba(255,255,255,.86); }
+  .cs__note-strip:hover { background: rgba(124,58,237,.14); box-shadow: inset 0 2px 0 rgba(124,58,237,.22); }
+  .cs__note-strip:active { background: rgba(124,58,237,.2); }
+  .cs__note-strip:focus-visible { outline: 2px solid #7c3aed; outline-offset: -4px; }
   .cs__note-strip > svg { width: 16px; height: 16px; flex: 0 0 auto; }
   .cs__note-main { display: flex; align-items: baseline; justify-content: center; flex-wrap: wrap; column-gap: 7px; min-width: 0; line-height: 1.2; }
   .cs__note-main strong { font-size: .76rem; font-weight: 800; color: #57439d; }
@@ -892,6 +894,7 @@ const challengeStartStyles = `
   @media (prefers-reduced-motion: reduce) {
     .cs__test-card--interactive { transition: none; }
     .cs__test-card--interactive:hover { transform: none; }
+    .cs__note-strip { transition: none; }
   }
 
   /* Secret Note footer — gradient CTA, same button size as above */
