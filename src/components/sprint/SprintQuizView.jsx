@@ -71,7 +71,7 @@ const SprintQuizView = ({ questions, onFinish }) => {
 
   const addDigit = useCallback((d) => {
     if (finishedRef.current) return;
-    const next = (entryRef.current + d).slice(0, 3); // 12×12 = 144, so 3 digits is the ceiling
+    const next = (entryRef.current + d).slice(0, 3); // every sprint's answers are 1–999
     entryRef.current = next;
     setEntry(next);
   }, []);
@@ -126,9 +126,12 @@ const SprintQuizView = ({ questions, onFinish }) => {
           )}
         </AnimatePresence>
 
-        <p className="tts-question__text">
-          {question.left} × {question.right}
+        <p className={`tts-question__text${String(question.prompt).length > 9 ? ' tts-question__text--long' : ''}`}>
+          {question.prompt}
         </p>
+        {question.subPrompt && (
+          <p style={{ margin: '-6px 0 8px', fontWeight: 800, color: '#64748b', fontSize: '1rem' }}>{question.subPrompt}</p>
+        )}
         <div className={`tts-answer${entry === '' ? ' tts-answer--empty' : ''}`}>
           {entry === '' ? '?' : entry}
         </div>

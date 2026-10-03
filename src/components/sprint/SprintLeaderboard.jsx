@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { formatSprintTime } from '../../utils/sprintWeek';
-import { SPRINT_XP_TIERS, SPRINT_XP_PARTICIPATION } from '../../services/timesTableSprintService';
+import { SPRINT_XP_TIERS, SPRINT_XP_PARTICIPATION } from '../../constants/sprintXp';
 
 /**
  * Top 5 for the week, plus the viewer's own standing when they are outside it.

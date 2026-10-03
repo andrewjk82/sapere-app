@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Crown } from 'lucide-react';
 import { formatSprintTime, formatResetCountdown, getSprintWeekId, getMsUntilWeeklyReset } from '../../utils/sprintWeek';
-import {
-  subscribeSprintMeta, readCachedSprintMeta, readCachedMyBest, hasSeenSprintIntro,
-} from '../../services/timesTableSprintService';
+import { readCachedMyBest, hasSeenSprintIntro } from '../../services/timesTableSprintService';
+import { SPRINT_TYPES, sprintBoardId } from '../../utils/sprintTypes';
 import './sprint.css';
 
 const liftHover = {
@@ -12,34 +10,28 @@ const liftHover = {
 };
 
 /**
- * Dashboard entry point for the weekly sprint: the time to beat and how long
- * is left to beat it. Styled as the same dark timing instrument as the rest
- * of the feature — deliberately moodier than the bright routine-task cards
- * around it, since this one is the competitive event, not a daily habit.
+ * Dashboard entry point for the Daily Challenge sprints: this week's personal
+ * best on each of the five, and the time left in the week. Styled as the same
+ * dark timing instrument as the rest of the feature — deliberately moodier
+ * than the bright routine-task cards around it, since this one is the
+ * competitive event, not a daily habit.
  *
- * Cost is one realtime listener on `timestable_sprint_meta/{weekId}` — a
- * single small doc that only changes when the top 5 changes. The student's
- * own best comes from the local mirror written by their last run, and the
- * countdown is local arithmetic, so neither adds a read.
+ * Zero Firestore reads — bests come from the device mirror written after each
+ * run, the countdown is local arithmetic (the old live top-5 listener is gone).
  */
 const SprintDashboardCard = ({ uid, onClick }) => {
   const weekId = getSprintWeekId();
-  const [meta, setMeta] = useState(() => readCachedSprintMeta(weekId) || { top5: [] });
   const [msLeft, setMsLeft] = useState(() => getMsUntilWeeklyReset());
-  const [myBest] = useState(() => readCachedMyBest(weekId, uid));
+  const [bests] = useState(() => SPRINT_TYPES.map((t) => ({ type: t, best: readCachedMyBest(sprintBoardId(t.id, weekId), uid) })));
   // Read once on mount: the flag only ever flips seen→unseen by opening the
   // card (TimesTableSprint marks it), so it can't change while this is up.
   const [showNewBadge] = useState(() => !hasSeenSprintIntro(uid));
-
-  useEffect(() => subscribeSprintMeta(weekId, setMeta), [weekId]);
+  const played = bests.filter((b) => b.best).length;
 
   useEffect(() => {
     const id = setInterval(() => setMsLeft(getMsUntilWeeklyReset()), 1000);
     return () => clearInterval(id);
   }, []);
-
-  const leader = meta?.top5?.[0];
-  const iAmLeader = leader && leader.userId === uid;
 
   return (
     // Plain, non-clipping wrapper so the badge can pop outside the corner;
@@ -66,26 +58,23 @@ const SprintDashboardCard = ({ uid, onClick }) => {
         <p className="tts-watermark" style={{ fontSize: '2.3rem', right: '-4px' }} aria-hidden="true">SPRINT</p>
 
         <label className="tts-eyebrow" style={{ position: 'relative', color: 'rgba(245,243,255,0.5)', marginBottom: '2px' }}>
-          Times Table Sprint
+          Daily Challenge
         </label>
 
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'baseline', gap: '8px' }}>
-          <Crown size={16} style={{ flexShrink: 0, alignSelf: 'center', color: 'var(--spr-lime)' }} />
-          <span className="tts-led tts-led--glow" style={{ fontSize: '1.65rem' }}>
-            {leader ? formatSprintTime(leader.bestTimeMs) : '--.---'}
-          </span>
-          <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(245,243,255,0.75)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            {leader ? (iAmLeader ? "that's you!" : leader.name) : 'no times yet'}
-          </span>
+        <div style={{ position: 'relative', display: 'flex', gap: '6px', marginTop: '4px' }}>
+          {bests.map(({ type, best }) => (
+            <div key={type.id} title={type.name} style={{ flex: 1, minWidth: 0, textAlign: 'center', borderRadius: '10px', padding: '4px 2px', background: 'rgba(255,255,255,0.08)' }}>
+              <div style={{ fontWeight: 900, fontSize: '1rem', color: type.accent, lineHeight: 1.1 }}>{type.glyph}</div>
+              <div className="tts-led" style={{ fontSize: '0.62rem', color: best ? '#f5f3ff' : 'rgba(245,243,255,0.4)' }}>
+                {best ? formatSprintTime(Number(best.bestTimeMs)) : '—'}
+              </div>
+            </div>
+          ))}
         </div>
 
         <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: 'rgba(245,243,255,0.8)', flexWrap: 'wrap' }}>
+          <span>{played}/5 played this week</span>
           <span>Resets in {formatResetCountdown(msLeft)}</span>
-          {myBest && (
-            <span className="tts-led" style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '999px', padding: '2px 10px', fontSize: '0.78rem', color: '#f5f3ff' }}>
-              You {formatSprintTime(Number(myBest.bestTimeMs))}
-            </span>
-          )}
         </div>
       </div>
     </div>

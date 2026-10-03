@@ -129,7 +129,7 @@ import {
   SN_CLEAR_PREVIEW_EVENT,
   buildSecretNoteClearPreviewPayload,
 } from './services/secretNoteBonusService';
-import { checkPendingSprintPayout, markSprintPayoutSeen, SPRINT_PAYOUT_PREVIEW_EVENT } from './services/timesTableSprintService';
+import { checkPendingSprintPayouts, markSprintPayoutSeen, SPRINT_PAYOUT_PREVIEW_EVENT } from './services/timesTableSprintService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -405,20 +405,26 @@ function App() {
     return () => window.removeEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
   }, []);
 
-  // Times Table Sprint weekly payout — congratulate once per settlement.
-  // XP is already minted server-side (api/_lib/timesTableSprintSettlement.js);
-  // this only checks the student's own result doc once on login.
+  // Daily Challenge sprint weekly payout — congratulate once per settlement,
+  // one card covering every sprint that paid. XP is already minted
+  // server-side (api/_lib/timesTableSprintSettlement.js); this only
+  // point-reads the student's own result docs (one per sprint) once on login.
   const [sprintPayout, setSprintPayout] = useState(null);
   const [sprintPayoutPreview, setSprintPayoutPreview] = useState(false);
   useEffect(() => {
     if (!user?.uid || isAdmin) return;
-    checkPendingSprintPayout(user.uid).then((payout) => {
+    checkPendingSprintPayouts(user.uid).then((payout) => {
       if (payout) setSprintPayout(payout);
     }).catch(() => {});
   }, [user?.uid, isAdmin]);
   useEffect(() => {
     const onPreview = (e) => {
-      setSprintPayout(e?.detail && Number(e.detail.xp) > 0 ? e.detail : { weekId: 'preview', xp: 100, rank: 1, bestTimeMs: 20499 });
+      setSprintPayout(Array.isArray(e?.detail?.items) ? e.detail : {
+        weekId: 'preview', xp: 12, items: [
+          { typeId: 'add', name: 'Addition', boardId: 'preview', rank: 1, xp: 10, bestTimeMs: 20499 },
+          { typeId: 'times', name: 'Times Table', boardId: 'preview', rank: 3, xp: 2, bestTimeMs: 24310 },
+        ],
+      });
       setSprintPayoutPreview(true);
     };
     window.addEventListener(SPRINT_PAYOUT_PREVIEW_EVENT, onPreview);
@@ -426,11 +432,11 @@ function App() {
   }, []);
   const dismissSprintPayout = useCallback(() => {
     if (user?.uid && sprintPayout?.weekId && !sprintPayoutPreview) {
-      markSprintPayoutSeen(user.uid, sprintPayout.weekId);
+      markSprintPayoutSeen(user.uid, sprintPayout.weekId, (sprintPayout.items || []).map((i) => i.boardId));
     }
     setSprintPayoutPreview(false);
     setSprintPayout(null);
-  }, [user?.uid, sprintPayout?.weekId, sprintPayoutPreview]);
+  }, [user?.uid, sprintPayout, sprintPayoutPreview]);
 
   // Teacher/admin: force-open medal celebration card (design QA only — no markMedalsSeen).
   useEffect(() => {
@@ -1512,7 +1518,7 @@ function App() {
         />
       )}
 
-      {/* Times Table Sprint weekly payout — congrats card, once per settlement.
+      {/* Daily Challenge sprint weekly payout — congrats card, once per settlement.
           Teachers/admins can force-open via Settings → Preview button. */}
       {user?.uid && !examInProgress && sprintPayout && (
         <SprintPayoutModal

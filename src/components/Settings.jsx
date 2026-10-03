@@ -739,7 +739,12 @@ const Settings = () => {
                     type="button"
                     className="app-button app-button--secondary"
                     onClick={() => window.dispatchEvent(new CustomEvent(SPRINT_PAYOUT_PREVIEW_EVENT, {
-                      detail: { weekId: 'preview', xp: 100, rank: 1, bestTimeMs: 20499 },
+                      detail: {
+                        weekId: 'preview', xp: 12, items: [
+                          { typeId: 'add', name: 'Addition', boardId: 'preview', rank: 1, xp: 10, bestTimeMs: 20499 },
+                          { typeId: 'times', name: 'Times Table', boardId: 'preview', rank: 3, xp: 2, bestTimeMs: 24310 },
+                        ],
+                      },
                     }))}
                     style={{
                       width: '100%',
@@ -757,7 +762,7 @@ const Settings = () => {
                     }}
                   >
                     <Sparkles size={16} />
-                    Preview Times Table Sprint payout modal
+                    Preview Daily Challenge payout modal
                   </button>
                 </div>
               </div>

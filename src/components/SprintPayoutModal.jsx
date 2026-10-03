@@ -4,11 +4,15 @@ import { formatSprintTime } from '../utils/sprintWeek';
 import './SecretNoteClearModal.css';
 
 /**
- * Congrats card for the weekly Times Table Sprint payout. XP is minted
+ * Congrats card for the weekly Daily Challenge sprint payout (one card for
+ * every sprint that paid). XP is minted
  * server-side in api/_lib/timesTableSprintSettlement.js — this only
  * announces it. Reuses the SecretNoteClearModal yellow-frame/XP-badge CSS
  * for visual consistency with the app's other celebration cards.
  */
+// Stable fallback so the useMemo below doesn't recompute on every render.
+const NO_ITEMS = [];
+
 export default function SprintPayoutModal({
   open,
   payload,
@@ -18,14 +22,13 @@ export default function SprintPayoutModal({
   isPreview = false,
 }) {
   const xp = Number(payload?.xp) || 0;
-  const rank = payload?.rank ?? null;
-  const bestTimeMs = payload?.bestTimeMs ?? null;
+  const items = Array.isArray(payload?.items) ? payload.items : NO_ITEMS;
 
   const endXp = Math.max(0, Number(currentXP) || 0);
   const startXp = isPreview ? endXp : Math.max(0, endXp - xp);
   const targetXp = isPreview ? endXp + xp : endXp;
 
-  const copy = useMemo(() => buildCopy(rank, firstName, xp), [rank, firstName, xp]);
+  const copy = useMemo(() => buildCopy(items, firstName, xp), [items, firstName, xp]);
   const isOpen = open && xp > 0;
 
   return (
@@ -82,7 +85,7 @@ export default function SprintPayoutModal({
                   {copy.msg}
                 </motion.p>
                 <motion.p className="snc-modal__sub" variants={itemVariants}>
-                  {bestTimeMs ? `Your best time: ${formatSprintTime(bestTimeMs)}` : copy.sub}
+                  {copy.sub}
                 </motion.p>
 
                 <motion.div className="snc-modal__xp-badge" variants={badgeVariants}>
@@ -115,20 +118,27 @@ export default function SprintPayoutModal({
   );
 }
 
-function buildCopy(rank, firstName, xp) {
+const ordinal = (n) => (n === 1 ? '1st' : n === 2 ? '2nd' : n === 3 ? '3rd' : `${n}th`);
+
+function buildCopy(items, firstName, xp) {
   const n = (firstName || '').trim();
   const hey = n ? `Hey ${n}` : 'Hey';
-
-  if (rank === 1) {
-    return { emoji: '🥇', msg: `${hey}! You finished 1st in this week's Times Table Sprint!`, sub: `That's +${xp} XP — amazing speed!` };
+  if (items.length === 1) {
+    const [it] = items;
+    const emoji = it.rank === 1 ? '🥇' : it.rank === 2 ? '🥈' : it.rank === 3 ? '🥉' : '⚡️';
+    const place = it.rank && it.rank <= 3 ? `finished ${ordinal(it.rank)} in` : 'took part in';
+    return {
+      emoji,
+      msg: `${hey}! You ${place} last week's ${it.name} Sprint!`,
+      sub: it.bestTimeMs ? `Your best time: ${formatSprintTime(it.bestTimeMs)}` : `+${xp} XP`,
+    };
   }
-  if (rank === 2) {
-    return { emoji: '🥈', msg: `${hey}! You finished 2nd in this week's Times Table Sprint!`, sub: `+${xp} XP — so close to the top!` };
-  }
-  if (rank === 3) {
-    return { emoji: '🥉', msg: `${hey}! You finished 3rd in this week's Times Table Sprint!`, sub: `+${xp} XP — great run!` };
-  }
-  return { emoji: '⚡️', msg: `${hey}! Nice work finishing this week's Times Table Sprint!`, sub: `+${xp} XP for taking part.` };
+  const best = Math.min(...items.map((it) => it.rank || 99));
+  return {
+    emoji: best === 1 ? '🥇' : best <= 3 ? '🏅' : '⚡️',
+    msg: `${hey}! You earned XP in ${items.length} sprints last week!`,
+    sub: items.map((it) => `${it.name} ${it.rank ? ordinal(it.rank) : ''} +${it.xp}`.replace('  ', ' ')).join(' · '),
+  };
 }
 
 function XpCountUp({ from, to, bonus }) {
