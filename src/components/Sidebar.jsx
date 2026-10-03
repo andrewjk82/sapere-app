@@ -104,7 +104,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         )}
         <SidebarItem icon={Calendar} label="Schedule" active={activeTab === 'Schedule'} onClick={() => setActiveTab('Schedule')} disabled={isLocked} />
         {!isAdmin && (
-          <SidebarItem icon={Trophy} label="Challenge" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
+          <SidebarItem icon={Trophy} label="Daily Study" active={activeTab === 'Challenge'} onClick={() => setActiveTab('Challenge')} disabled={isLocked && activeTab !== 'Challenge'} />
         )}
         {/* Labelled "Times Table", not "Sprint": FlameBuddy already calls the
             Daily Calculation task a sprint ("Start sprint" → Challenge tab) and

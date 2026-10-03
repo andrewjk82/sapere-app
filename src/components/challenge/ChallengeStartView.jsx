@@ -654,7 +654,7 @@ const ChallengeStartView = ({
         <div className="cs__head">
           <div>
             <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              Challenge
+              Daily Study
               <button
                 type="button"
                 onClick={() => setShowStudyGuide(true)}

@@ -116,7 +116,7 @@ const PRACTICE_STAGES = [
       { msg: "Midday check-in{commaName}: have we practiced yet? (Spoiler: not yet.)", sub: "Hop in now while the day's still soft and easy." },
       { msg: "If you start now{commaName}, you could be finished before the next snack.", sub: "That's basically free progress. I'm just saying." },
       { msg: "Post-lunch power hour{commaName}? Perfect for Daily Practice.", sub: "Your brain is online. Let's use it." },
-      { msg: "{heyName} — little reminder floating by.", sub: "Challenge tab is open. Practice is unfinished. You know the rest." },
+      { msg: "{heyName} — little reminder floating by.", sub: "Daily Study is open. Practice is unfinished. You know the rest." },
       { msg: "Not to be dramatic{commaName}, but practice is still on the list.", sub: "Knock it out and the afternoon feels lighter." },
       { msg: "Quick math break{commaName}? Your future self already high-fived you.", sub: "I'll wait here. (Not that I have a choice.)" },
     ],
@@ -139,7 +139,7 @@ const PRACTICE_STAGES = [
   {
     mood: 'thinking',
     lines: [
-      { msg: "Evening already{commaName}? Practice still says hi from the Challenge tab.", sub: "Do it now and you can actually relax after." },
+      { msg: "Evening already{commaName}? Practice still says hi from Daily Study.", sub: "Do it now and you can actually relax after." },
       { msg: "Hey {Name} — we still haven't practiced today.", sub: "I won't tell Andrew… yet. Let's just finish it, yeah?" },
       { msg: "{Name}, dinner can wait five more minutes. Practice first?", sub: "Okay maybe not dinner. But you get the idea." },
       { msg: "Your streak is peeking around the corner{commaName}.", sub: "Don't leave it hanging. Quick session?" },
