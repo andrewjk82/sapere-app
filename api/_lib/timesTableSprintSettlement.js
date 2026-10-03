@@ -1,36 +1,37 @@
 /* ==========================================================================
-   Weekly Times Table Sprint — XP settlement
+   Weekly sprint settlement (all Daily Challenge sprints)
    --------------------------------------------------------------------------
    Runs server-side (admin SDK) from api/cron-unified.js once a week has
    finished. The client never grants sprint XP: it only records times, so a
    tampered client can at most publish a fake time, never mint XP.
 
+   Each sprint type has its own leaderboard ("board"): Times Table uses the
+   bare week id, the others `${type}:${weekId}` (src/utils/sprintTypes.js).
+   Every board is settled independently with the same XP tiers
+   (src/constants/sprintXp.js); a failure in one board is logged and the
+   others still pay.
+
    Idempotency is load-bearing — the cron is pinged hourly and the settlement
-   window spans several hours, so the same week WILL be processed more than
-   once. `awardedUids` on timestable_sprint_settlement/{weekId} is the
+   window spans several hours, so the same board WILL be processed more than
+   once. `awardedUids` on timestable_sprint_settlement/{boardId} is the
    processed set; a uid already in it is skipped, so no student is ever paid
    twice.
 
    Week ids come from src/utils/sprintWeek.js so the browser and this job can
-   never disagree about which week a run belonged to. (Same cross-tree import
-   precedent as weeklyReport.js importing src/constants/curriculumData.js —
-   the module is dependency-free plain ESM.)
+   never disagree about which week a run belonged to.
    ========================================================================== */
 
 import { getPreviousSprintWeekId } from '../../src/utils/sprintWeek.js';
+import { SPRINT_TYPES, sprintBoardId } from '../../src/utils/sprintTypes.js';
+import { xpForRank } from '../../src/constants/sprintXp.js';
 
 export const RESULTS_COLLECTION = 'timestable_sprint_results';
 export const SETTLEMENT_COLLECTION = 'timestable_sprint_settlement';
 
-export const SPRINT_XP_TIERS = [100, 50, 20];
-export const SPRINT_XP_PARTICIPATION = 5;
-
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
 
-export const xpForRank = (rank) => SPRINT_XP_TIERS[rank - 1] ?? SPRINT_XP_PARTICIPATION;
-
 /**
- * Rank the week's participants: fastest first, and where two students share
+ * Rank a board's participants: fastest first, and where two students share
  * a time the one who reached it first is placed higher.
  */
 const rankParticipants = (docs) => docs
@@ -41,44 +42,34 @@ const rankParticipants = (docs) => docs
     || String(a.bestAchievedAt || '').localeCompare(String(b.bestAchievedAt || ''))
   ));
 
-/**
- * Settle one week.
- *
- * @param {FirebaseFirestore.Firestore} db
- * @param {object} admin — the firebase-admin namespace (for FieldValue)
- * @param {object} [options]
- * @param {string} [options.weekId] — defaults to the week just ended
- * @returns {Promise<{ weekId, awarded, skipped, participants, logs }>}
- */
-export async function settleSprintWeek(db, admin, { weekId, now = new Date() } = {}) {
-  const targetWeek = weekId || getPreviousSprintWeekId(now);
+/** Settle one leaderboard (one sprint type, one week). */
+export async function settleSprintBoard(db, admin, boardId) {
   const logs = [];
-
-  const settlementRef = db.collection(SETTLEMENT_COLLECTION).doc(targetWeek);
+  const settlementRef = db.collection(SETTLEMENT_COLLECTION).doc(boardId);
   const settlementSnap = await settlementRef.get();
   const settlement = settlementSnap.exists ? settlementSnap.data() : {};
 
   if (settlement.status === 'complete') {
-    logs.push(`[Sprint] Week ${targetWeek} already settled.`);
-    return { weekId: targetWeek, awarded: 0, skipped: 0, participants: 0, logs };
+    logs.push(`[Sprint] ${boardId} already settled.`);
+    return { boardId, awarded: 0, skipped: 0, participants: 0, logs };
   }
 
   const resultsSnap = await db.collection(RESULTS_COLLECTION)
-    .where('weekId', '==', targetWeek)
+    .where('weekId', '==', boardId)
     .orderBy('bestTimeMs', 'asc')
     .get();
 
   const ranked = rankParticipants(resultsSnap.docs);
   if (ranked.length === 0) {
     await settlementRef.set({
-      weekId: targetWeek,
+      weekId: boardId,
       status: 'complete',
       participantCount: 0,
       awardedUids: [],
       lastRunAt: admin.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
-    logs.push(`[Sprint] Week ${targetWeek}: nobody played.`);
-    return { weekId: targetWeek, awarded: 0, skipped: 0, participants: 0, logs };
+    logs.push(`[Sprint] ${boardId}: nobody played.`);
+    return { boardId, awarded: 0, skipped: 0, participants: 0, logs };
   }
 
   const alreadyAwarded = new Set(settlement.awardedUids || []);
@@ -125,12 +116,12 @@ export async function settleSprintWeek(db, admin, { weekId, now = new Date() } =
       alreadyAwarded.add(entry.userId);
       awarded++;
     } catch (e) {
-      logs.push(`[Sprint] ${entry.userId} award failed: ${e.message}`);
+      logs.push(`[Sprint] ${boardId} ${entry.userId} award failed: ${e.message}`);
     }
 
     // Record progress as we go: a timeout mid-loop must not replay payouts.
     await settlementRef.set({
-      weekId: targetWeek,
+      weekId: boardId,
       status: 'partial',
       awardedUids: [...alreadyAwarded],
       participantCount: ranked.length,
@@ -140,7 +131,7 @@ export async function settleSprintWeek(db, admin, { weekId, now = new Date() } =
 
   const complete = ranked.every((r) => alreadyAwarded.has(r.userId));
   await settlementRef.set({
-    weekId: targetWeek,
+    weekId: boardId,
     status: complete ? 'complete' : 'partial',
     awardedUids: [...alreadyAwarded],
     participantCount: ranked.length,
@@ -149,9 +140,27 @@ export async function settleSprintWeek(db, admin, { weekId, now = new Date() } =
   }, { merge: true });
 
   logs.push(
-    `[Sprint] Week ${targetWeek}: ${ranked.length} participant(s), ${awarded} awarded, ${skipped} already paid.`
+    `[Sprint] ${boardId}: ${ranked.length} participant(s), ${awarded} awarded, ${skipped} already paid.`
     + (podium[0] ? ` Winner: ${podium[0].name} (${podium[0].bestTimeMs}ms).` : ''),
   );
 
-  return { weekId: targetWeek, awarded, skipped, participants: ranked.length, logs };
+  return { boardId, awarded, skipped, participants: ranked.length, logs };
+}
+
+/** Settle every sprint's board for the week that just ended. */
+export async function settleSprintWeek(db, admin, { now = new Date() } = {}) {
+  const weekId = getPreviousSprintWeekId(now);
+  const logs = [];
+  let awarded = 0;
+  for (const type of SPRINT_TYPES) {
+    const boardId = sprintBoardId(type.id, weekId);
+    try {
+      const r = await settleSprintBoard(db, admin, boardId);
+      logs.push(...r.logs);
+      awarded += r.awarded;
+    } catch (e) {
+      logs.push(`[Sprint] ${type.name} (${boardId}) settlement error: ${e.message}`);
+    }
+  }
+  return { weekId, awarded, logs };
 }
