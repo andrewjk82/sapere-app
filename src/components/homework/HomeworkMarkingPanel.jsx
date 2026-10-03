@@ -10,6 +10,12 @@ const MARK_STYLE = {
   x: { bg: '#ef4444', fg: '#fff', text: '✗' },
   h: { bg: '#f59e0b', fg: '#fff', text: '½' },
 };
+// "Y10 1A" — homework can mix years, and "1A" alone is ambiguous.
+const tabLabel = (t) => {
+  const code = String(t.label || '').split(' · ')[0] || t.label || t.id;
+  const year = String(t.id || '').match(/^y(\d+)/);
+  return year ? `Y${year[1]} ${code}` : code;
+};
 const fmt = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 
 /**
@@ -32,7 +38,9 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
   }, [topicIds]);
 
   const topic = topics[active];
-  const answer = topic && keys ? keys[topic.id] : null;
+  const entry = topic && keys ? keys[topic.id] : null;
+  const loadFailed = Boolean(entry?.error);
+  const answer = entry && !entry.error ? entry : null;
   const { score, total } = scoreMarks(marks);
   const toggle = (k) => setMarks((prev) => ({ ...prev, [k]: nextMark(prev[k]) }));
 
@@ -45,7 +53,7 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
           onClick={() => setActive(i)}
           style={{ border: 0, borderRadius: 999, padding: '5px 11px', fontWeight: 800, fontSize: '0.76rem', cursor: 'pointer', background: i === active ? '#4f46e5' : '#f1f5f9', color: i === active ? '#fff' : '#475569' }}
         >
-          {t.label.split(' · ')[0] || t.label}
+          {tabLabel(t)}
         </button>
       ))}
     </div>
@@ -55,6 +63,8 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
     <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', background: '#fff', padding: 10 }}>
       {!keys ? (
         <Loader2 size={22} style={{ ...SPIN, display: 'block', margin: '30px auto', color: '#94a3b8' }} />
+      ) : loadFailed ? (
+        <div style={{ color: '#b91c1c', fontWeight: 700, textAlign: 'center', padding: 30 }}>Couldn’t load the answer key. Check your connection and reopen.</div>
       ) : !answer ? (
         <div style={{ color: '#94a3b8', fontWeight: 700, textAlign: 'center', padding: 30 }}>No answer key for this topic yet.</div>
       ) : (
@@ -75,7 +85,7 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
         {answer ? answer.sections.map((s) => (
           <div key={s.key} style={{ marginBottom: 12 }}>
             <div style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginBottom: 6 }}>
-              {topic.label.split(' · ')[0]} · {s.title}
+              {tabLabel(topic)} · {s.title}
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
               {s.labels.map((label) => {

@@ -166,11 +166,16 @@ export async function fetchAnswerKeys(topicIds = []) {
     try {
       const snap = await getDoc(doc(db, 'answer_keys', id));
       answerKeyCache.set(id, snap.exists() ? snap.data() : null);
-    } catch {
-      // not cached: a transient failure can be retried next open
+    } catch (err) {
+      // Not cached, so it is retried next open. Reported as an error rather
+      // than "no key" — e.g. permission-denied before the rule is deployed.
+      console.warn('[homework] answer key load failed:', id, err?.code || err);
     }
   }));
-  return Object.fromEntries(ids.map((id) => [id, answerKeyCache.get(id) || null]));
+  return Object.fromEntries(ids.map((id) => [
+    id,
+    answerKeyCache.has(id) ? answerKeyCache.get(id) : { error: true },
+  ]));
 }
 
 // 1–2 reads per homework open. Fetched fresh (not from LearningPath's cache)
