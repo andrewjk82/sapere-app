@@ -10029,10 +10029,10 @@
         },
         {
           "id": "y9-14f-q4c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "For the values of \\( m \\) where the lines \\( y = mx + 4 \\) and \\( 4x + 2y = 8 \\) intersect, comment on the nature of their intersection.",
-          "answer": "For m != -2, the lines intersect at exactly one point (0, 4).\nFor m = -2, the lines are identical, so they intersect at infinitely many points along the entire line.",
+          "answer": 1,
           "hint": "Compare the case where the gradients are different (m != -2) with the case where they are equal (m = -2).",
           "solution": "For m != -2, the lines intersect at exactly one point (0, 4).\nFor m = -2, the lines are identical, so they intersect at infinitely many points along the entire line.",
           "steps": [
@@ -10053,9 +10053,14 @@
               "work": "If \\(m = -2\\), the equation \\(x(0) = 0\\) is true for all \\(x\\). Both equations become \\(y = -2x + 4\\), meaning the lines are identical (infinitely many intersection points)."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "options": [
+            "For \\\\(m \\\\neq -2\\\\), they intersect at exactly one point \\\\((0,4)\\\\). For \\\\(m = -2\\\\), they are parallel and never intersect.",
+            "For \\\\(m \\\\neq -2\\\\), they intersect at exactly one point \\\\((0,4)\\\\). For \\\\(m = -2\\\\), they are identical lines (infinitely many points).",
+            "For \\\\(m \\\\neq 2\\\\), they intersect at exactly one point \\\\((0,4)\\\\). For \\\\(m = 2\\\\), they are identical lines (infinitely many points).",
+            "For all values of \\\\(m\\\\), they intersect at exactly one point \\\\((0,4)\\\\)."
+          ]
         },
         {
           "id": "y9-14f-q5a",
