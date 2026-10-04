@@ -475,15 +475,14 @@
         {
           "id": "y12adv-task1-q18i",
           "type": "review",
-          "difficulty": "hard",
           "stem": "The graph of h has axis of symmetry \\(x=2\\), with \\(A(0,3)\\) and minimum \\(B(2,0)\\). Sketch \\(y=h(x+2)\\), showing new A and B.",
+          "difficulty": "hard",
           "figure": {
             "svg": "fig:b3aab3b0d2"
           },
-          "manual": true,
           "answer": "A'(-2,3),\\quad B'(0,0),\\quad x=0",
-          "solution": "A'(-2,3),\\quad B'(0,0),\\quad x=0",
           "hint": "The input x+2 shifts the graph two units left.",
+          "solution": "A'(-2,3),\\quad B'(0,0),\\quad x=0",
           "steps": [
             {
               "explain": "Use the point rule.",
@@ -498,18 +497,20 @@
               "work": "A'(-2,3),\\quad B'(0,0)"
             }
           ],
-          "meta": {
-            "source": "SCN_20251126_1641.pdf",
-            "course": "Year 12 Advanced"
-          },
-          "xp": 3,
+          "manual": true,
           "timeLimit": 180,
+          "xp": 4,
           "keyPoints": [
             {
               "text": "\\(x=2\\)",
               "note": "The input x+2 shifts the graph two units left."
             }
-          ]
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced",
+            "origin": "teacher"
+          }
         }
       ]
     },
