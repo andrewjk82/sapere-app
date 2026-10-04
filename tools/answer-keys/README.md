@@ -31,3 +31,5 @@ render `pdftoppm -r 150` → `pages/p-NN.png`, then run the script in that direc
 to each chapter's review topic (`y12a-1j`, `y12a-2-2j`, `y12a-3I`, …).
 
 Cambridge 2nd-edition Extension 1 Year 11 (2025) uses the same layout; run `cambridge_adv11.py` unchanged (answers pages 761–888 of the full book).
+
+Cambridge 1st-edition Extension 1 Year 12 (2019): `cambridge_adv12.py` with `PAGE_TOP` (photo banner on the first answers page) and side-tab-safe crop bounds (55–541pt); the book comes as per-chapter PDFs plus `Ch18_Ans.pdf`.

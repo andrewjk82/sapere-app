@@ -2867,7 +2867,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-1F', code: '1F', title: 'Summing an arithmetic series' },
           { id: 'y12e1-1G', code: '1G', title: 'Summing a geometric series' },
           { id: 'y12e1-1H', code: '1H', title: 'The limiting sum of a geometric series' },
-          { id: 'y12e1-1I', code: '1I', title: 'Recurring decimals and geometric series' }
+          { id: 'y12e1-1I', code: '1I', title: 'Recurring decimals and geometric series' },
+          { id: 'y12e1-1-1j', code: '1J', title: 'Review' }
         ]
       },
       {
@@ -2876,7 +2877,8 @@ export const CURRICULUM_DATA = {
         modules: 2,
         topics: [
           { id: 'y12e1-2A', code: '2A', title: 'Using mathematical induction for series' },
-          { id: 'y12e1-2B', code: '2B', title: 'Proving divisibility by mathematical induction' }
+          { id: 'y12e1-2B', code: '2B', title: 'Proving divisibility by mathematical induction' },
+          { id: 'y12e1-2-2c', code: '2C', title: 'Review' }
         ]
       },
       {
@@ -2893,7 +2895,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-3G', code: '3G', title: 'Review of translations and reflections' },
           { id: 'y12e1-3H', code: '3H', title: 'Dilations' },
           { id: 'y12e1-3I', code: '3I', title: 'Combinations of transformations' },
-          { id: 'y12e1-3J', code: '3J', title: 'Trigonometric graphs' }
+          { id: 'y12e1-3J', code: '3J', title: 'Trigonometric graphs' },
+          { id: 'y12e1-3-3k', code: '3K', title: 'Review' }
         ]
       },
       {
@@ -2910,7 +2913,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-4G', code: '4G', title: 'Global maximum and minimum' },
           { id: 'y12e1-4H', code: '4H', title: 'Applications of maximisation and minimisation' },
           { id: 'y12e1-4I', code: '4I', title: 'Maximisation and minimisation in geometry' },
-          { id: 'y12e1-4J', code: '4J', title: 'Primitive functions' }
+          { id: 'y12e1-4J', code: '4J', title: 'Primitive functions' },
+          { id: 'y12e1-4-4k', code: '4K', title: 'Review' }
         ]
       },
       {
@@ -2926,7 +2930,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-5F', code: '5F', title: 'Finding areas by integration' },
           { id: 'y12e1-5G', code: '5G', title: 'Areas of compound regions' },
           { id: 'y12e1-5H', code: '5H', title: 'The trapezoidal rule' },
-          { id: 'y12e1-5I', code: '5I', title: 'The reverse chain rule' }
+          { id: 'y12e1-5I', code: '5I', title: 'The reverse chain rule' },
+          { id: 'y12e1-5-5j', code: '5J', title: 'Review' }
         ]
       },
       {
@@ -2944,7 +2949,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-6H', code: '6H', title: 'Applications of differentiation of log_e x' },
           { id: 'y12e1-6I', code: '6I', title: 'Integration of the reciprocal function' },
           { id: 'y12e1-6J', code: '6J', title: 'Applications of integration of 1/x' },
-          { id: 'y12e1-6K', code: '6K', title: 'Calculus with other bases' }
+          { id: 'y12e1-6K', code: '6K', title: 'Calculus with other bases' },
+          { id: 'y12e1-6-6l', code: '6L', title: 'Review' }
         ]
       },
       {
@@ -2956,7 +2962,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-7B', code: '7B', title: 'Differentiating the trigonometric functions' },
           { id: 'y12e1-7C', code: '7C', title: 'Applications of differentiation' },
           { id: 'y12e1-7D', code: '7D', title: 'Integrating the trigonometric functions' },
-          { id: 'y12e1-7E', code: '7E', title: 'Applications of integration' }
+          { id: 'y12e1-7E', code: '7E', title: 'Applications of integration' },
+          { id: 'y12e1-7-7f', code: '7F', title: 'Review' }
         ]
       },
       {
@@ -2969,7 +2976,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-8C', code: '8C', title: 'The dot product (or scalar product)' },
           { id: 'y12e1-8D', code: '8D', title: 'Geometric problems' },
           { id: 'y12e1-8E', code: '8E', title: 'Projections' },
-          { id: 'y12e1-8F', code: '8F', title: 'Applications to physical situations' }
+          { id: 'y12e1-8F', code: '8F', title: 'Applications to physical situations' },
+          { id: 'y12e1-8-8g', code: '8G', title: 'Review' }
         ]
       },
       {
@@ -2982,7 +2990,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-9C', code: '9C', title: 'Integrating with respect to time' },
           { id: 'y12e1-9D', code: '9D', title: 'Rates and differentiation' },
           { id: 'y12e1-9E', code: '9E', title: 'Review of related rates' },
-          { id: 'y12e1-9F', code: '9F', title: 'Rates and integration' }
+          { id: 'y12e1-9F', code: '9F', title: 'Rates and integration' },
+          { id: 'y12e1-9-9g', code: '9G', title: 'Review' }
         ]
       },
       {
@@ -2991,7 +3000,8 @@ export const CURRICULUM_DATA = {
         modules: 2,
         topics: [
           { id: 'y12e1-10A', code: '10A', title: 'Projectile motion — the time equations' },
-          { id: 'y12e1-10B', code: '10B', title: 'Projectile motion — the equation of path' }
+          { id: 'y12e1-10B', code: '10B', title: 'Projectile motion — the equation of path' },
+          { id: 'y12e1-10-10c', code: '10C', title: 'Review' }
         ]
       },
       {
@@ -3001,7 +3011,8 @@ export const CURRICULUM_DATA = {
         topics: [
           { id: 'y12e1-11A', code: '11A', title: 'Equations involving compound angles' },
           { id: 'y12e1-11B', code: '11B', title: 'The sum of sine and cosine functions' },
-          { id: 'y12e1-11C', code: '11C', title: 'Using the t-formula to solve equations' }
+          { id: 'y12e1-11C', code: '11C', title: 'Using the t-formula to solve equations' },
+          { id: 'y12e1-11-11d', code: '11D', title: 'Review' }
         ]
       },
       {
@@ -3014,7 +3025,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-12C', code: '12C', title: 'Further trigonometric integrals' },
           { id: 'y12e1-12D', code: '12D', title: 'Integration by substitution' },
           { id: 'y12e1-12E', code: '12E', title: 'Further integration by substitution' },
-          { id: 'y12e1-12F', code: '12F', title: 'Volumes of rotation' }
+          { id: 'y12e1-12F', code: '12F', title: 'Volumes of rotation' },
+          { id: 'y12e1-12-12g', code: '12G', title: 'Review' }
         ]
       },
       {
@@ -3025,8 +3037,9 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-13A', code: '13A', title: 'Differential equations' },
           { id: 'y12e1-13B', code: '13B', title: 'Slope fields' },
           { id: 'y12e1-13C', code: '13C', title: 'Separable differentiable equations' },
-          { id: 'y12e1-13D', code: '13D', title: "y' = g(y) and the logistic equation" },
-          { id: 'y12e1-13E', code: '13E', title: 'Applications of differential equations' }
+          { id: 'y12e1-13D', code: '13D', title: 'y\' = g(y) and the logistic equation' },
+          { id: 'y12e1-13E', code: '13E', title: 'Applications of differential equations' },
+          { id: 'y12e1-13-13f', code: '13F', title: 'Review' }
         ]
       },
       {
@@ -3038,7 +3051,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-14B', code: '14B', title: 'The use of logarithms with GPs' },
           { id: 'y12e1-14C', code: '14C', title: 'Simple and compound interest' },
           { id: 'y12e1-14D', code: '14D', title: 'Investing money by regular instalments' },
-          { id: 'y12e1-14E', code: '14E', title: 'Paying off a loan' }
+          { id: 'y12e1-14E', code: '14E', title: 'Paying off a loan' },
+          { id: 'y12e1-14-14f', code: '14F', title: 'Review' }
         ]
       },
       {
@@ -3051,7 +3065,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-15C', code: '15C', title: 'Quartiles and interquartile range' },
           { id: 'y12e1-15D', code: '15D', title: 'Bivariate data' },
           { id: 'y12e1-15E', code: '15E', title: 'Formulae for correlation and regression' },
-          { id: 'y12e1-15F', code: '15F', title: 'Using technology with bivariate data' }
+          { id: 'y12e1-15F', code: '15F', title: 'Using technology with bivariate data' },
+          { id: 'y12e1-15-15g', code: '15G', title: 'Review' }
         ]
       },
       {
@@ -3065,7 +3080,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-16D', code: '16D', title: 'The standard normal distribution' },
           { id: 'y12e1-16E', code: '16E', title: 'General normal distributions' },
           { id: 'y12e1-16F', code: '16F', title: 'Applications of the normal distribution' },
-          { id: 'y12e1-16G', code: '16G', title: 'Investigations using the normal distribution' }
+          { id: 'y12e1-16G', code: '16G', title: 'Investigations using the normal distribution' },
+          { id: 'y12e1-16-16h', code: '16H', title: 'Review' }
         ]
       },
       {
@@ -3076,7 +3092,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12e1-17A', code: '17A', title: 'Binomial probability' },
           { id: 'y12e1-17B', code: '17B', title: 'Binomial distributions' },
           { id: 'y12e1-17C', code: '17C', title: 'Normal approximations to a binomial' },
-          { id: 'y12e1-17D', code: '17D', title: 'Sample proportions' }
+          { id: 'y12e1-17D', code: '17D', title: 'Sample proportions' },
+          { id: 'y12e1-17-17e', code: '17E', title: 'Review' }
         ]
       }
     ],
