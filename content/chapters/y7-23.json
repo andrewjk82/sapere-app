@@ -406,8 +406,8 @@
         {
           "id": "y7-23a-q3a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />Seven times the number plus \\(8\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-7y + 8\\)",
             "\\(7y - 8\\)",
@@ -431,10 +431,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Seven times the number plus \\(8\\)",
+              "note": "Translate 'times' to multiplication and 'plus' to addition."
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q3b",
