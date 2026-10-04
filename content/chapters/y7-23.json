@@ -130,8 +130,8 @@
         {
           "id": "y7-23a-q1d",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an expression for the following.<br /><br />The difference between \\(p\\) and \\(q\\)",
+          "difficulty": "easy",
           "options": [
             "\\(p - q\\)",
             "\\(-p - q\\)",
@@ -155,7 +155,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "difference between",
+              "note": "it means minus"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q1e",
