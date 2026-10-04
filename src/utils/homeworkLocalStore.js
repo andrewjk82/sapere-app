@@ -59,7 +59,20 @@ const run = async (mode, operate) => {
 export const loadHomeworkLocal = async (uid, sessionId) => {
   if (!uid || !sessionId) return null;
   try {
-    return (await run('readonly', (store) => store.get(keyOf(uid, sessionId)))) || null;
+    const record = (await run('readonly', (store) => store.get(keyOf(uid, sessionId)))) || null;
+    if (!record) return null;
+    return {
+      ...record,
+      topicDrafts: record.topicDrafts || {},
+      // Keep the source legacy field for rollback safety while presenting it
+      // through the explicit combined-notes notebook in the new UI.
+      earlierCombinedDraft: record.earlierCombinedDraft || record.draft || null,
+      submittedPages: record.submittedPages || (record.submittedImages || []).map((image) => ({
+        image,
+        topicId: null,
+        topicLabel: 'Earlier combined notes',
+      })),
+    };
   } catch {
     return null;
   }
@@ -137,5 +150,5 @@ export const loadCachedPdf = async (id) => {
 
 export const cachePdf = async (id, blob) => {
   if (!id || !blob) return;
-  try { await pdfTx('readwrite', s => s.put(blob, id)); } catch {}
+  try { await pdfTx('readwrite', s => s.put(blob, id)); } catch { /* Best-effort cache only. */ }
 };

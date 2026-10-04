@@ -24,11 +24,12 @@ const fmt = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
  * 'stack' (both, split vertically) or 'answers' / 'marking' for one part
  * (narrow screens use tabs).
  */
-const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
+const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave, activeTopicIndex, onTopicChange, showTopicTabs = true }) => {
   const [keys, setKeys] = useState(null);
-  const [active, setActive] = useState(0);
+  const [localTopicIndex, setLocalTopicIndex] = useState(0);
   const [marks, setMarks] = useState({});
   const [comment, setComment] = useState('');
+  const selectedTopicIndex = activeTopicIndex ?? localTopicIndex;
 
   const topicIds = useMemo(() => topics.map((t) => t.id), [topics]);
   useEffect(() => {
@@ -37,21 +38,21 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave }) => {
     return () => { cancelled = true; };
   }, [topicIds]);
 
-  const topic = topics[active];
+  const topic = topics[selectedTopicIndex];
   const entry = topic && keys ? keys[topic.id] : null;
   const loadFailed = Boolean(entry?.error);
   const answer = entry && !entry.error ? entry : null;
   const { score, total } = scoreMarks(marks);
   const toggle = (k) => setMarks((prev) => ({ ...prev, [k]: nextMark(prev[k]) }));
 
-  const tabs = topics.length > 1 && (
+  const tabs = showTopicTabs && topics.length > 1 && (
     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', padding: '8px 10px', borderBottom: '1px solid #e2e8f0', background: '#fff' }}>
       {topics.map((t, i) => (
         <button
           key={t.id}
           type="button"
-          onClick={() => setActive(i)}
-          style={{ border: 0, borderRadius: 999, padding: '5px 11px', fontWeight: 800, fontSize: '0.76rem', cursor: 'pointer', background: i === active ? '#4f46e5' : '#f1f5f9', color: i === active ? '#fff' : '#475569' }}
+          onClick={() => onTopicChange ? onTopicChange(i) : setLocalTopicIndex(i)}
+          style={{ border: 0, borderRadius: 999, padding: '5px 11px', fontWeight: 800, fontSize: '0.76rem', cursor: 'pointer', background: i === selectedTopicIndex ? '#4f46e5' : '#f1f5f9', color: i === selectedTopicIndex ? '#fff' : '#475569' }}
         >
           {tabLabel(t)}
         </button>

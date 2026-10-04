@@ -23,31 +23,42 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
   const [loading, setLoading] = useState(true);
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState('');
+  const [activeGroupId, setActiveGroupId] = useState('');
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       try {
         let sub = null;
-        let images = [];
+        let records = [];
         if (mode === 'student') {
           const local = await loadHomeworkLocal(uid, sessionId);
-          images = (local?.submittedImages || []).filter(isSafeImageDataUrl);
+          records = (local?.submittedPages || (local?.submittedImages || []).map((image) => ({ image })))
+            .filter((record) => isSafeImageDataUrl(record?.image));
           // Paper homework the teacher ticked has no submission doc → null.
-          if (images.length === 0) sub = await fetchSubmission(sessionId);
+          if (records.length === 0) sub = await fetchSubmission(sessionId);
         } else {
           sub = await fetchSubmission(sessionId);
-          if (sub && !sub.originalsDeletedAt) images = await fetchSubmissionPages(sessionId);
-          images = images.filter(isSafeImageDataUrl);
+          if (sub && !sub.originalsDeletedAt) records = await fetchSubmissionPages(sessionId);
+          records = records.filter((record) => isSafeImageDataUrl(record?.image));
         }
         if (cancelled) return;
         setSubmission(sub);
-        const thumbnails = (sub?.thumbnails || []).filter(isSafeImageDataUrl);
-        if (images.length === 0 && thumbnails.length) {
-          images = thumbnails;
+        const thumbnails = (sub?.thumbnails || []).map((image, index) => ({ image, index }))
+          .filter((entry) => isSafeImageDataUrl(entry.image));
+        if (records.length === 0 && thumbnails.length) {
+          const pageTopics = sub?.pageTopics || [];
+          records = thumbnails.map(({ image, index }) => ({
+            image,
+            index,
+            topicId: pageTopics[index]?.topicId || null,
+            topicLabel: pageTopics[index]?.topicLabel || (pageTopics[index]?.topicId ? '' : 'Earlier combined notes'),
+          }));
           setIsThumbnailOnly(true);
         }
-        setPages(images);
+        setPages(records);
+        const availableTopics = sub?.topics || info?.topics || [];
+        setActiveGroupId(availableTopics[0]?.id || (records.some((record) => !record.topicId) ? '__earlier__' : ''));
       } catch {
         if (!cancelled) setError('Could not load this homework.');
       } finally {
@@ -55,7 +66,7 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
       }
     })();
     return () => { cancelled = true; };
-  }, [sessionId, mode, uid]);
+  }, [sessionId, mode, uid, info?.topics]);
 
   // Teacher marking layout: answer key + marking on the left, the student's
   // pages on the right; on a narrow screen the three are tabs.
@@ -81,10 +92,27 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
     }
   };
 
-  const topics = (submission?.topics || info?.topics || []).map((t) => t.label).join(', ');
-  const subtitle = [submission?.sessionDate || info?.date, topics].filter(Boolean).join(' · ');
+  const homeworkTopics = submission?.topics || info?.topics || [];
+  const topicSummary = homeworkTopics.map((t) => t.label).join(', ');
+  const subtitle = [submission?.sessionDate || info?.date, topicSummary].filter(Boolean).join(' · ');
   const status = submission?.status || info?.status;
-  const marking = mode === 'teacher' && submission?.status === 'submitted' && (submission?.topics || []).length > 0;
+  const marking = mode === 'teacher' && submission?.status === 'submitted' && homeworkTopics.length > 0;
+  const hasEarlierGroup = pages.some((record) => !record.topicId);
+  const topicGroups = [
+    ...homeworkTopics.map((topic) => ({ id: topic.id, label: topic.label || topic.title || topic.id })),
+    ...(hasEarlierGroup ? [{ id: '__earlier__', label: 'Earlier combined notes' }] : []),
+  ];
+  const selectedGroup = topicGroups.find((group) => group.id === activeGroupId) || topicGroups[0];
+  const activeTopicIndex = homeworkTopics.findIndex((topic) => topic.id === selectedGroup?.id);
+  const visiblePages = pages.filter((record) => selectedGroup?.id === '__earlier__' ? !record.topicId : record.topicId === selectedGroup?.id);
+  const activePage = Math.min(page, Math.max(visiblePages.length - 1, 0));
+
+  const selectGroup = (id) => {
+    if (id === activeGroupId) return;
+    setActiveGroupId(id);
+    setPage(0);
+    setZoom(1);
+  };
 
   return createPortal(
     <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.85)', display: 'flex', flexDirection: 'column' }}>
@@ -117,6 +145,16 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
       )}
       {error && <div role="alert" style={{ textAlign: 'center', color: '#fecaca', fontWeight: 700 }}>{error}</div>}
 
+      {topicGroups.length > 1 && (
+        <div style={{ display: 'flex', gap: 6, padding: '0 12px 8px', overflowX: 'auto' }}>
+          {topicGroups.map((group) => (
+            <button key={group.id} type="button" onClick={() => selectGroup(group.id)} style={{ flexShrink: 0, border: '1px solid', borderColor: selectedGroup?.id === group.id ? '#c4b5fd' : 'rgba(255,255,255,0.2)', borderRadius: 999, padding: '6px 12px', background: selectedGroup?.id === group.id ? '#ede9fe' : 'rgba(255,255,255,0.1)', color: selectedGroup?.id === group.id ? '#4c1d95' : '#fff', fontWeight: 800, cursor: 'pointer' }}>
+              {group.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {marking && !isWide && (
         <div style={{ display: 'flex', gap: 6, padding: '0 12px 8px' }}>
           {[['work', 'Student work'], ['answers', 'Answers'], ['marking', 'Marking']].map(([key, label]) => (
@@ -131,7 +169,10 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
         {marking && (
           <div style={{ width: isWide ? '44%' : '100%', minWidth: 0, background: '#fff', borderRight: isWide ? '1px solid #e2e8f0' : 0, display: isWide || narrowTab !== 'work' ? 'block' : 'none' }}>
             <HomeworkMarkingPanel
-              topics={submission.topics}
+              topics={homeworkTopics}
+              activeTopicIndex={activeTopicIndex}
+              onTopicChange={(index) => selectGroup(homeworkTopics[index]?.id)}
+              showTopicTabs={false}
               layout={isWide ? 'stack' : narrowTab === 'work' ? 'marking' : narrowTab}
               saving={checking}
               onSave={handleCheck}
@@ -143,25 +184,25 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
           {/* Centre with margin:auto, not justify/align-content:center — a page taller
               (or, zoomed, wider) than the viewport would otherwise overflow off the
               top/left where it can't be scrolled to, hiding the top of the page. */}
-          <div key={page} style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
+          <div key={`${selectedGroup?.id}:${activePage}`} style={{ flex: 1, minHeight: 0, overflow: 'auto', display: 'flex', padding: 12, touchAction: 'pan-x pan-y pinch-zoom' }}>
             {loading ? (
               <Loader2 size={28} color="#fff" style={{ ...SPIN, margin: 'auto' }} />
-            ) : pages.length === 0 ? (
-              <div style={{ color: '#cbd5e1', fontWeight: 700, margin: 'auto' }}>No pages to show.</div>
+            ) : visiblePages.length === 0 ? (
+              <div style={{ color: '#cbd5e1', fontWeight: 700, margin: 'auto' }}>No work submitted for this topic yet.</div>
             ) : (
               <img
-                src={pages[page]}
-                alt={`Page ${page + 1}`}
+                src={visiblePages[activePage].image}
+                alt={`${selectedGroup?.label || 'Homework'} page ${activePage + 1}`}
                 style={{ margin: 'auto', flexShrink: 0, background: '#fff', borderRadius: 12, width: `${zoom * 100}%`, maxWidth: zoom === 1 ? 900 : 'none', height: 'auto' }}
               />
             )}
           </div>
 
-          {pages.length > 1 && (
+          {visiblePages.length > 1 && (
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, padding: 12, color: '#fff' }}>
-              <button type="button" aria-label="Previous page" disabled={page === 0} onClick={() => { setPage((p) => p - 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === 0 ? 0.3 : 1 }}><ChevronLeft size={24} /></button>
-              <span style={{ fontWeight: 700 }}>{page + 1} / {pages.length}</span>
-              <button type="button" aria-label="Next page" disabled={page === pages.length - 1} onClick={() => { setPage((p) => p + 1); setZoom(1); }} style={{ ...ICON_BTN, opacity: page === pages.length - 1 ? 0.3 : 1 }}><ChevronRight size={24} /></button>
+              <button type="button" aria-label="Previous page" disabled={activePage === 0} onClick={() => { setPage((p) => Math.max(0, p - 1)); setZoom(1); }} style={{ ...ICON_BTN, opacity: activePage === 0 ? 0.3 : 1 }}><ChevronLeft size={24} /></button>
+              <span style={{ fontWeight: 700 }}>{activePage + 1} / {visiblePages.length}</span>
+              <button type="button" aria-label="Next page" disabled={activePage === visiblePages.length - 1} onClick={() => { setPage((p) => Math.min(visiblePages.length - 1, p + 1)); setZoom(1); }} style={{ ...ICON_BTN, opacity: activePage === visiblePages.length - 1 ? 0.3 : 1 }}><ChevronRight size={24} /></button>
             </div>
           )}
           </div>

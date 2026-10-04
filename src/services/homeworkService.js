@@ -48,15 +48,20 @@ const notifyTeacherHomeworkSubmitted = async ({ uid, studentName, topics, pageCo
   if (!response.ok) console.warn('[homework] send-notif returned', response.status);
 };
 
-export async function submitHomework({ uid, studentName, session, pageImages }) {
-  const images = (pageImages || []).filter(Boolean);
-  if (images.length === 0) throw new Error('empty');
-  if (images.length > MAX_HOMEWORK_PAGES) throw new Error('too-many-pages');
+export async function submitHomework({ uid, studentName, session, pageRecords, pageImages }) {
+  const records = (pageRecords || (pageImages || []).map((image) => ({ image })))
+    .filter((record) => record?.image);
+  if (records.length === 0) throw new Error('empty');
+  if (records.length > MAX_HOMEWORK_PAGES) throw new Error('too-many-pages');
 
   const originals = [];
-  for (const image of images) originals.push(await toOriginal(image));
+  for (const record of records) originals.push(await toOriginal(record.image));
   if (originals.reduce((sum, img) => sum + dataUrlBytes(img), 0) > MAX_BATCH_BYTES) throw new Error('too-large');
-  const thumbnails = await Promise.all(images.map(toThumbnail));
+  const thumbnails = await Promise.all(records.map((record) => toThumbnail(record.image)));
+  const pageTopics = records.map(({ topicId, topicLabel }) => ({
+    topicId: topicId || null,
+    topicLabel: topicLabel || (topicId ? '' : 'Earlier combined notes'),
+  }));
 
   const subRef = doc(db, SUBMISSIONS, session.id);
   const prevSnap = await getDoc(subRef);
@@ -72,7 +77,12 @@ export async function submitHomework({ uid, studentName, session, pageImages }) 
   const commit = async () => {
     const batch = writeBatch(db);
     originals.forEach((image, index) => {
-      batch.set(doc(db, SUBMISSIONS, session.id, 'pages', String(index)), { image, index, studentId: uid });
+      batch.set(doc(db, SUBMISSIONS, session.id, 'pages', String(index)), {
+        image,
+        index,
+        studentId: uid,
+        ...pageTopics[index],
+      });
     });
     for (let i = originals.length; i < prevCount; i += 1) {
       batch.delete(doc(db, SUBMISSIONS, session.id, 'pages', String(i)));
@@ -88,6 +98,7 @@ export async function submitHomework({ uid, studentName, session, pageImages }) 
       checkedAt: null,
       pageCount: originals.length,
       thumbnails,
+      pageTopics,
       originalsDeletedAt: null,
     });
     batch.update(doc(db, 'sessions', session.id), {
@@ -108,7 +119,11 @@ export async function submitHomework({ uid, studentName, session, pageImages }) 
   notifyTeacherHomeworkSubmitted({ uid, studentName, topics, pageCount: originals.length })
     .catch((err) => console.warn('[homework] notify failed (non-fatal):', err?.message || err));
 
-  return { originals, thumbnails };
+  return {
+    originals,
+    thumbnails,
+    submittedPages: originals.map((image, index) => ({ image, ...pageTopics[index] })),
+  };
 }
 
 export async function fetchSubmission(sessionId) {
@@ -121,8 +136,13 @@ export async function fetchSubmissionPages(sessionId) {
   return snap.docs
     .map((d) => d.data())
     .sort((a, b) => (a.index ?? 0) - (b.index ?? 0))
-    .map((p) => p.image)
-    .filter(Boolean);
+    .filter((p) => p.image)
+    .map((p) => ({
+      image: p.image,
+      index: p.index,
+      topicId: p.topicId || null,
+      topicLabel: p.topicLabel || (p.topicId ? '' : 'Earlier combined notes'),
+    }));
 }
 
 export async function fetchPendingSubmissions() {

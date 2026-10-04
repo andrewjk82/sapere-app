@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
@@ -9,6 +9,9 @@ import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../servi
 import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
 const WIDE_MIN = 900;
+const waitForCanvasCommit = () => new Promise((resolve) => {
+  requestAnimationFrame(() => requestAnimationFrame(resolve));
+});
 const SUBMIT_ERRORS = {
   empty: 'Write your working on the notepad before submitting.',
   'too-many-pages': `Homework can have at most ${MAX_HOMEWORK_PAGES} pages.`,
@@ -21,10 +24,20 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const canvasRef = useRef(null);
   const draftLoadedRef = useRef(false);
   const saveTimerRef = useRef(0);
-  const topics = (session?.learnedTopics || []).filter((t) => t?.id);
+  const exportingRef = useRef(false);
+  const topicDraftsRef = useRef({});
+  const earlierDraftRef = useRef(null);
+  const activeNotebookRef = useRef('');
+  const topics = useMemo(() => (session?.learnedTopics || []).filter((t) => t?.id), [session?.learnedTopics]);
+  const firstTopicId = topics[0]?.id || '';
 
   const [pdfMap, setPdfMap] = useState({});
   const [topicIdx, setTopicIdx] = useState(0);
+  const [activeNotebook, setActiveNotebook] = useState(topics[0]?.id || '');
+  const [hasEarlierNotes, setHasEarlierNotes] = useState(false);
+  const [loadedSessionKey, setLoadedSessionKey] = useState('');
+  const currentSessionKey = `${user?.uid || ''}:${session?.id || ''}`;
+  const notebooksLoaded = loadedSessionKey === currentSessionKey;
   const [isWide, setIsWide] = useState(() => window.innerWidth >= WIDE_MIN);
   const [pane, setPane] = useState('pdf');
   const [split, setSplit] = useState(0.5);
@@ -52,31 +65,83 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     loadHomeworkLocal(user?.uid, session?.id)
       .then((record) => {
         if (cancelled) return;
-        if (record?.draft) canvasRef.current?.loadPagesData(record.draft);
+        topicDraftsRef.current = record?.topicDrafts || {};
+        earlierDraftRef.current = record?.earlierCombinedDraft || null;
+        setHasEarlierNotes(Boolean(earlierDraftRef.current));
+        const initialNotebook = firstTopicId || (earlierDraftRef.current ? '__earlier__' : '');
+        activeNotebookRef.current = initialNotebook;
+        setActiveNotebook(initialNotebook);
+        setLoadedSessionKey(currentSessionKey);
+        const initialDraft = initialNotebook === '__earlier__'
+          ? earlierDraftRef.current
+          : topicDraftsRef.current[initialNotebook];
+        if (initialDraft) canvasRef.current?.loadPagesData(initialDraft);
+        else canvasRef.current?.clear();
       })
       .catch(() => {})
       .finally(() => {
         // Even if the device store failed, allow autosave from here on.
-        if (!cancelled) draftLoadedRef.current = true;
+        if (!cancelled) {
+          setLoadedSessionKey(currentSessionKey);
+          draftLoadedRef.current = true;
+        }
       });
     return () => { cancelled = true; window.clearTimeout(saveTimerRef.current); };
+  }, [currentSessionKey, firstTopicId, user?.uid, session?.id]);
+
+  const persistDrafts = useCallback((key, data) => {
+    if (!key || !data) return Promise.resolve(false);
+    if (key === '__earlier__') earlierDraftRef.current = data;
+    else topicDraftsRef.current = { ...topicDraftsRef.current, [key]: data };
+    setHasEarlierNotes(Boolean(earlierDraftRef.current));
+    return saveHomeworkLocal(user?.uid, session?.id, {
+      topicDrafts: topicDraftsRef.current,
+      earlierCombinedDraft: earlierDraftRef.current,
+    });
   }, [user?.uid, session?.id]);
+
+  const switchNotebook = useCallback((nextKey) => {
+    if (!nextKey || nextKey === activeNotebookRef.current) return;
+    if (nextKey !== '__earlier__') {
+      const nextTopicIdx = topics.findIndex((topic) => topic.id === nextKey);
+      if (nextTopicIdx >= 0) setTopicIdx(nextTopicIdx);
+    }
+    window.clearTimeout(saveTimerRef.current);
+    if (draftLoadedRef.current) {
+      const currentData = canvasRef.current?.getPagesData();
+      const currentKey = activeNotebookRef.current;
+      if (currentData) persistDrafts(currentKey, currentData);
+    }
+    activeNotebookRef.current = nextKey;
+    setActiveNotebook(nextKey);
+    const nextData = nextKey === '__earlier__' ? earlierDraftRef.current : topicDraftsRef.current[nextKey];
+    if (nextData) canvasRef.current?.loadPagesData(nextData);
+    else canvasRef.current?.clear();
+  }, [persistDrafts, topics]);
 
   const saveDraftNow = useCallback(() => {
     window.clearTimeout(saveTimerRef.current);
     if (!draftLoadedRef.current) return Promise.resolve(false);
     const draft = canvasRef.current?.getPagesData();
-    return draft ? saveHomeworkLocal(user?.uid, session?.id, { draft }) : Promise.resolve(false);
-  }, [user?.uid, session?.id]);
+    return draft ? persistDrafts(activeNotebookRef.current, draft) : Promise.resolve(false);
+  }, [persistDrafts]);
 
   const handleInkChange = useCallback(() => {
+    if (exportingRef.current) return;
     if (!draftLoadedRef.current) return; // don't overwrite a draft before it's restored
     window.clearTimeout(saveTimerRef.current);
+    const notebookKey = activeNotebookRef.current;
+    const draft = canvasRef.current?.getPagesData();
+    if (draft) {
+      if (notebookKey === '__earlier__') earlierDraftRef.current = draft;
+      else topicDraftsRef.current = { ...topicDraftsRef.current, [notebookKey]: draft };
+    }
     saveTimerRef.current = window.setTimeout(() => {
-      const draft = canvasRef.current?.getPagesData();
-      if (draft) saveHomeworkLocal(user?.uid, session?.id, { draft });
+      if (activeNotebookRef.current !== notebookKey) return;
+      const latestDraft = canvasRef.current?.getPagesData();
+      if (latestDraft) persistDrafts(notebookKey, latestDraft);
     }, 1200);
-  }, [user?.uid, session?.id]);
+  }, [persistDrafts]);
 
   // Flush the pending (debounced) autosave before leaving, while the canvas ref
   // is still attached — an unmount cleanup would run after it's detached.
@@ -91,19 +156,51 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     setSubmitting(true);
     try {
       await saveDraftNow();
-      // No `force`: returns every page that has ink (including the current one).
-      const pageImages = (await canvasRef.current?.exportPageImages()) || [];
-      const { originals } = await submitHomework({
+      exportingRef.current = true;
+      const pageRecords = [];
+      const activeKey = activeNotebookRef.current;
+      const activeDraft = canvasRef.current?.getPagesData();
+      try {
+        for (const topic of topics) {
+          const draft = topic.id === activeKey ? activeDraft : topicDraftsRef.current[topic.id];
+          if (!draft) continue;
+          if (topic.id !== activeKey) {
+            canvasRef.current?.loadPagesData(draft);
+            await waitForCanvasCommit();
+          }
+          // No `force`: returns every non-empty page for this notebook.
+          const images = (await canvasRef.current?.exportPageImages()) || [];
+          images.forEach((image) => pageRecords.push({ image, topicId: topic.id, topicLabel: topic.label || topic.title || topic.id }));
+        }
+        if (earlierDraftRef.current) {
+          if (activeKey !== '__earlier__') {
+            canvasRef.current?.loadPagesData(earlierDraftRef.current);
+            await waitForCanvasCommit();
+          }
+          const images = (await canvasRef.current?.exportPageImages()) || [];
+          images.forEach((image) => pageRecords.push({ image, topicId: null, topicLabel: 'Earlier combined notes' }));
+        }
+      } finally {
+        // Exporting other notebooks temporarily replaces the canvas state. Put
+        // the student's selected notebook back before re-enabling interaction.
+        if (activeDraft) {
+          canvasRef.current?.loadPagesData(activeDraft);
+          await waitForCanvasCommit();
+        }
+        exportingRef.current = false;
+      }
+      const { originals, submittedPages } = await submitHomework({
         uid: user.uid,
         studentName: studentDisplayName(profile, user),
         session,
-        pageImages,
+        pageRecords,
       });
-      await saveHomeworkLocal(user.uid, session.id, { submittedImages: originals });
+      await saveHomeworkLocal(user.uid, session.id, { submittedImages: originals, submittedPages });
       onSubmitted?.();
     } catch (err) {
       setError(SUBMIT_ERRORS[err?.message] || 'Submission failed — your work is saved on this device. Try again.');
     } finally {
+      exportingRef.current = false;
       setSubmitting(false);
     }
   };
@@ -136,7 +233,8 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
             <button
               key={t.id}
               type="button"
-              onClick={() => setTopicIdx(i)}
+              disabled={submitting}
+              onClick={() => { setTopicIdx(i); switchNotebook(t.id); }}
               style={{
                 whiteSpace: 'nowrap', padding: '6px 12px', borderRadius: 999, border: '1px solid',
                 borderColor: i === topicIdx ? '#7c3aed' : '#e2e8f0',
@@ -177,8 +275,26 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   );
 
   const notesPane = (
-    <div style={{ height: '100%', minHeight: 0, padding: 8, display: 'flex' }}>
-      <WorkingOutCanvas ref={canvasRef} isSubmitted={false} onInkChange={handleInkChange} />
+    <div style={{ height: '100%', minHeight: 0, padding: 8, display: 'flex', flexDirection: 'column' }}>
+      {(topics.length > 1 || hasEarlierNotes) && (
+        <div style={{ display: 'flex', gap: 6, padding: '0 0 8px', overflowX: 'auto', flexShrink: 0 }}>
+          {topics.map((topic) => (
+            <button key={topic.id} type="button" disabled={!notebooksLoaded || submitting} onClick={() => switchNotebook(topic.id)} style={{ whiteSpace: 'nowrap', padding: '6px 12px', borderRadius: 999, border: '1px solid', borderColor: activeNotebook === topic.id ? '#7c3aed' : '#e2e8f0', background: activeNotebook === topic.id ? '#f5f3ff' : '#fff', color: activeNotebook === topic.id ? '#6d28d9' : '#475569', fontWeight: 700, fontSize: '0.78rem' }}>
+              {topic.label || topic.title || topic.id} notes
+            </button>
+          ))}
+          {hasEarlierNotes && (
+            <button type="button" disabled={!notebooksLoaded || submitting} onClick={() => switchNotebook('__earlier__')} style={{ whiteSpace: 'nowrap', padding: '6px 12px', borderRadius: 999, border: '1px solid', borderColor: activeNotebook === '__earlier__' ? '#7c3aed' : '#e2e8f0', background: activeNotebook === '__earlier__' ? '#f5f3ff' : '#fff', color: activeNotebook === '__earlier__' ? '#6d28d9' : '#475569', fontWeight: 700, fontSize: '0.78rem' }}>
+              Earlier notes
+            </button>
+          )}
+        </div>
+      )}
+      <div style={{ flex: 1, minHeight: 0, display: 'flex' }}>
+        <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: notebooksLoaded && !submitting ? 'auto' : 'none' }}>
+          <WorkingOutCanvas ref={canvasRef} isSubmitted={false} onInkChange={handleInkChange} />
+        </div>
+      </div>
     </div>
   );
 
