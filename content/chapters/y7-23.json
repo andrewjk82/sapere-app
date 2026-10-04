@@ -208,8 +208,8 @@
         {
           "id": "y7-23a-q2a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an algebraic expression for the following.<br /><br />Eight times the number \\(k\\) minus \\(5\\)",
+          "difficulty": "easy",
           "options": [
             "\\(8k - 5\\)",
             "\\(-8k - 5\\)",
@@ -233,10 +233,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Eight times the number",
+              "note": "Multiply by 8  and then minus 5"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q2b",
