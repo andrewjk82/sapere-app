@@ -289,8 +289,8 @@
         {
           "id": "y7-23a-q2c",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an algebraic expression for the following.<br /><br />The sum of \\(4a\\), \\(6b\\) and \\(2c\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-4a + 6b + 2c\\)",
             "\\(4a - 6b - 2c\\)",
@@ -314,7 +314,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "sum of",
+              "note": "Add Three terms"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q2d",
