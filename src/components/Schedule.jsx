@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
 import { db } from '../firebase/config';
-import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc } from 'firebase/firestore';
+import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
@@ -485,11 +485,31 @@ const Schedule = ({ students = [] }) => {
       const updatePayload = buildSessionUpdatePayload(editData);
 
       if (choice === 'single') {
-        await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
+        if (selectedSession.groupId) {
+          // A group lesson is stored as one session document per student. Save
+          // this lesson instance to every member, while leaving future lessons
+          // in the recurring series untouched.
+          const groupQuery = query(
+            collection(db, 'sessions'),
+            where('groupId', '==', selectedSession.groupId)
+          );
+          const groupSnap = await getDocs(groupQuery);
+          const instanceDocs = groupSnap.docs.filter(
+            (sessionDoc) => (sessionDoc.data().date || '') === selectedSession.date
+          );
+
+          if (instanceDocs.length === 0) {
+            await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
+          } else {
+            const batch = writeBatch(db);
+            instanceDocs.forEach((sessionDoc) => batch.update(sessionDoc.ref, updatePayload));
+            await batch.commit();
+          }
+        } else {
+          await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
+        }
       } else if (choice === 'series' && selectedSession.groupId) {
         const q = query(collection(db, 'sessions'), where('groupId', '==', selectedSession.groupId));
-        
-        const { getDocs, writeBatch } = await import('firebase/firestore');
         const snap = await getDocs(q);
         const futureDocs = snap.docs.filter(d => (d.data().date || '') >= selectedSession.date);
         const dateShiftDays = getDateShiftDays(selectedSession.date, updatePayload.date);
@@ -854,9 +874,13 @@ const Schedule = ({ students = [] }) => {
             return (
               <div key={di} style={{ position: 'relative', height: `${timeSlots.length * slotH}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.9)' : 'none', background: di % 2 === 0 ? '#fff' : '#fcfdff' }}>
                 {(() => {
-                  // Group sessions by startTime, endTime, and subject to handle group classes
+                  // Group only sessions created as part of the same class.
+                  // Matching by time and subject alone can merge unrelated
+                  // students and make a single-student lesson look like a group.
                   const groups = daySessions.reduce((acc, s) => {
-                    const key = `${s.startTime}-${s.endTime}-${s.subject}`;
+                    const key = s.groupId
+                      ? `${s.groupId}-${s.startTime}-${s.endTime}-${s.subject}`
+                      : s.id;
                     if (!acc[key]) acc[key] = [];
                     acc[key].push(s);
                     return acc;
@@ -1444,9 +1468,13 @@ const Schedule = ({ students = [] }) => {
               <div style={{ width: '64px', height: '64px', backgroundColor: '#eef2ff', color: '#6366f1', borderRadius: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
                 <Save size={32} />
               </div>
-              <h3 style={{ margin: '0 0 12px', fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>Update recurring lesson?</h3>
+              <h3 style={{ margin: '0 0 12px', fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>
+                {saveChoiceOpen.isGroupedClass ? 'Update group lesson?' : 'Update recurring lesson?'}
+              </h3>
               <p style={{ margin: '0 0 28px', color: '#64748b', fontSize: '0.95rem', lineHeight: 1.5, fontWeight: 500 }}>
-                This is a recurring session. Would you like to update only this instance or the entire future series?
+                {saveChoiceOpen.isGroupedClass
+                  ? 'Choose whether to update this session for all students in the group or the entire future series.'
+                  : 'This is a recurring session. Would you like to update only this instance or the entire future series?'}
               </p>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -1454,13 +1482,13 @@ const Schedule = ({ students = [] }) => {
                   onClick={() => handleSaveDetails('single')}
                   style={{ width: '100%', backgroundColor: '#f1f5f9', color: '#334155', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
                 >
-                  Only this session
+                  {saveChoiceOpen.isGroupedClass ? 'This group session only' : 'Only this session'}
                 </button>
                 <button 
                   onClick={() => handleSaveDetails('series')}
                   style={{ width: '100%', backgroundColor: '#6366f1', color: '#fff', padding: '16px', borderRadius: '16px', border: 'none', fontWeight: 800, fontSize: '1rem', cursor: 'pointer' }}
                 >
-                  This and all future sessions
+                  {saveChoiceOpen.isGroupedClass ? 'This and all future group sessions' : 'This and all future sessions'}
                 </button>
                 <button 
                   onClick={() => setSaveChoiceOpen(null)}
