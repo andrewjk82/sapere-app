@@ -14,14 +14,20 @@ const HomeworkInbox = () => {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([fetchPendingSubmissions(), fetchHomeworkAwaitingSubmission()])
-      .then(([submissions, assignments]) => {
-        if (!cancelled) {
-          setItems(submissions);
-          setAssignedItems(assignments);
+    Promise.allSettled([fetchPendingSubmissions(), fetchHomeworkAwaitingSubmission()])
+      .then(([submissionsResult, assignmentsResult]) => {
+        if (cancelled) return;
+        if (submissionsResult.status === 'fulfilled') {
+          setItems(submissionsResult.value);
+        } else {
+          console.warn('[homework] submissions load failed:', submissionsResult.reason?.message || submissionsResult.reason);
+        }
+        if (assignmentsResult.status === 'fulfilled') {
+          setAssignedItems(assignmentsResult.value);
+        } else {
+          console.warn('[homework] assigned homework load failed:', assignmentsResult.reason?.message || assignmentsResult.reason);
         }
       })
-      .catch((err) => console.warn('[homework] inbox load failed:', err?.message || err))
       .finally(() => { if (!cancelled) setLoaded(true); });
     return () => { cancelled = true; };
   }, []);
