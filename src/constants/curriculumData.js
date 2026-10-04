@@ -2335,19 +2335,20 @@ export const CURRICULUM_DATA = {
       {
         id: 'y11a-7',
         title: 'Chapter 7: Lines in the coordinate plane',
-        modules: 5,
+        modules: 6,
         topics: [
           { id: 'y11a-7A', code: '7A', title: 'Lengths and midpoints of line segments' },
           { id: 'y11a-7B', code: '7B', title: 'Gradients of line segments and lines' },
           { id: 'y11a-7C', code: '7C', title: 'Equations of lines' },
           { id: 'y11a-7D', code: '7D', title: 'Further equations of lines' },
-          { id: 'y11a-7E', code: '7E', title: 'Using pronumerals in place of numbers' }
+          { id: 'y11a-7E', code: '7E', title: 'Using pronumerals in place of numbers' },
+          { id: 'y11a-7-7f', code: '7F', title: 'Review' }
         ]
       },
       {
         id: 'y11a-8',
         title: 'Chapter 8: Exponential and logarithmic functions',
-        modules: 7,
+        modules: 8,
         topics: [
           { id: 'y11a-8A', code: '8A', title: 'Indices' },
           { id: 'y11a-8B', code: '8B', title: 'Fractional indices' },
@@ -2355,13 +2356,14 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-8D', code: '8D', title: 'The laws for logarithms' },
           { id: 'y11a-8E', code: '8E', title: 'Equations involving logarithms and indices' },
           { id: 'y11a-8F', code: '8F', title: 'Exponential and logarithmic graphs' },
-          { id: 'y11a-8G', code: '8G', title: 'Applications of these functions' }
+          { id: 'y11a-8G', code: '8G', title: 'Applications of these functions' },
+          { id: 'y11a-8-8h', code: '8H', title: 'Review' }
         ]
       },
       {
         id: 'y11a-9',
         title: 'Chapter 9: Differentiation',
-        modules: 12,
+        modules: 13,
         topics: [
           { id: 'y11a-9A', code: '9A', title: 'Tangents and the derivative' },
           { id: 'y11a-9B', code: '9B', title: 'The derivative as a limit' },
@@ -2374,34 +2376,37 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-9I', code: '9I', title: 'The quotient rule' },
           { id: 'y11a-9J', code: '9J', title: 'Rates of change' },
           { id: 'y11a-9K', code: '9K', title: 'Average velocity and average speed' },
-          { id: 'y11a-9L', code: '9L', title: 'Instantaneous velocity and speed' }
+          { id: 'y11a-9L', code: '9L', title: 'Instantaneous velocity and speed' },
+          { id: 'y11a-9-9m', code: '9M', title: 'Review' }
         ]
       },
       {
         id: 'y11a-10',
         title: 'Chapter 10: Euler’s number',
-        modules: 3,
+        modules: 4,
         topics: [
           { id: 'y11a-10A', code: '10A', title: 'The exponential function base e' },
           { id: 'y11a-10B', code: '10B', title: 'Transformations of exponential functions' },
-          { id: 'y11a-10C', code: '10C', title: 'The logarithmic function base e' }
+          { id: 'y11a-10C', code: '10C', title: 'The logarithmic function base e' },
+          { id: 'y11a-10-10d', code: '10D', title: 'Review' }
         ]
       },
       {
         id: 'y11a-11',
         title: 'Chapter 11: Radian measure of angles',
-        modules: 4,
+        modules: 5,
         topics: [
           { id: 'y11a-11A', code: '11A', title: 'Radian measure of angle size' },
           { id: 'y11a-11B', code: '11B', title: 'Solving trigonometric equations' },
           { id: 'y11a-11C', code: '11C', title: 'Arcs and sectors of circles' },
-          { id: 'y11a-11D', code: '11D', title: 'Trigonometric graphs in radians' }
+          { id: 'y11a-11D', code: '11D', title: 'Trigonometric graphs in radians' },
+          { id: 'y11a-11-11e', code: '11E', title: 'Review' }
         ]
       },
       {
         id: 'y11a-12',
         title: 'Chapter 12: Probability',
-        modules: 7,
+        modules: 8,
         topics: [
           { id: 'y11a-12A', code: '12A', title: 'Sets and Venn diagrams' },
           { id: 'y11a-12B', code: '12B', title: 'Probability and sample spaces' },
@@ -2409,17 +2414,19 @@ export const CURRICULUM_DATA = {
           { id: 'y11a-12D', code: '12D', title: 'Venn diagrams and the addition theorem' },
           { id: 'y11a-12E', code: '12E', title: 'Multi-stage experiments and the product rule' },
           { id: 'y11a-12F', code: '12F', title: 'Probability tree diagrams' },
-          { id: 'y11a-12G', code: '12G', title: 'Conditional probability' }
+          { id: 'y11a-12G', code: '12G', title: 'Conditional probability' },
+          { id: 'y11a-12-12h', code: '12H', title: 'Review' }
         ]
       },
       {
         id: 'y11a-13',
         title: 'Chapter 13: Data and probability',
-        modules: 3,
+        modules: 4,
         topics: [
           { id: 'y11a-13A', code: '13A', title: 'Random variables and frequency tables' },
           { id: 'y11a-13B', code: '13B', title: 'Cumulative frequency' },
-          { id: 'y11a-13C', code: '13C', title: 'Grouped data' }
+          { id: 'y11a-13C', code: '13C', title: 'Grouped data' },
+          { id: 'y11a-13-13d', code: '13D', title: 'Review' }
         ]
       }
     ],
