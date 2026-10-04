@@ -1737,7 +1737,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-3d', code: '3D', title: 'Percentage increase and decrease' },
         { id: 'y9-3e', code: '3E', title: 'Repeated increase and decrease' },
         { id: 'y9-3f', code: '3F', title: 'Compound interest' },
-        { id: 'y9-3g', code: '3G', title: 'Depreciation' }
+        { id: 'y9-3g', code: '3G', title: 'Depreciation' },
+        { id: 'y9-3h', code: '3H', title: 'Review' }
       ]
     },
     {
@@ -1749,7 +1750,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-4b', code: '4B', title: 'Factorisation using the difference of two squares' },
         { id: 'y9-4c', code: '4C', title: 'Factorisation of simple quadratics' },
         { id: 'y9-4d', code: '4D', title: 'Quadratics with common factors' },
-        { id: 'y9-4e', code: '4E', title: 'Using factorisation to simplify algebraic expressions' }
+        { id: 'y9-4e', code: '4E', title: 'Using factorisation to simplify algebraic expressions' },
+        { id: 'y9-4f', code: '4F', title: 'Review' }
       ]
     },
     {
@@ -1775,7 +1777,8 @@ export const CURRICULUM_DATA = {
       topics: [
         { id: 'y9-6a', code: '6A', title: 'Substitution into formulas' },
         { id: 'y9-6b', code: '6B', title: 'Changing the subject of a formula' },
-        { id: 'y9-6c', code: '6C', title: 'Constructing formulas' }
+        { id: 'y9-6c', code: '6C', title: 'Constructing formulas' },
+        { id: 'y9-6d', code: '6D', title: 'Review' }
       ]
     },
     {
@@ -1787,7 +1790,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-7b', code: '7B', title: 'Reasoning with angles' },
         { id: 'y9-7c', code: '7C', title: 'Using congruence' },
         { id: 'y9-7d', code: '7D', title: 'Parallelograms' },
-        { id: 'y9-7e', code: '7E', title: 'Tests for rhombuses, rectangles and squares' }
+        { id: 'y9-7e', code: '7E', title: 'Tests for rhombuses, rectangles and squares' },
+        { id: 'y9-7f', code: '7F', title: 'Review' }
       ]
     },
     {
@@ -1799,7 +1803,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-8b', code: '8B', title: 'Negative indices' },
         { id: 'y9-8c', code: '8C', title: 'Fractional indices' },
         { id: 'y9-8d', code: '8D', title: 'Scientific notation' },
-        { id: 'y9-8e', code: '8E', title: 'Significant figures' }
+        { id: 'y9-8e', code: '8E', title: 'Significant figures' },
+        { id: 'y9-8f', code: '8F', title: 'Review' }
       ]
     },
     {
@@ -1811,7 +1816,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-9b', code: '9B', title: 'Using ratios in similar figures' },
         { id: 'y9-9c', code: '9C', title: 'The AAA similarity test for triangles' },
         { id: 'y9-9d', code: '9D', title: 'The SAS similarity test for triangles' },
-        { id: 'y9-9e', code: '9E', title: 'The SSS and RHS similarity tests' }
+        { id: 'y9-9e', code: '9E', title: 'The SSS and RHS similarity tests' },
+        { id: 'y9-9f', code: '9F', title: 'Review' }
       ]
     },
     {
@@ -1836,7 +1842,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-11f', code: '11F', title: 'The equation of a line using the gradient and a point' },
         { id: 'y9-11g', code: '11G', title: 'Parallel and perpendicular straight lines' },
         { id: 'y9-11h', code: '11H', title: 'The equation of a circle' },
-        { id: 'y9-11i', code: '11I', title: 'Challenge exercise' }
+        { id: 'y9-11i', code: '11I', title: 'Challenge exercise' },
+        { id: 'y9-11j', code: '11J', title: 'Review' }
       ]
     },
     {
@@ -1848,7 +1855,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-12b', code: '12B', title: 'The complement, union and intersection' },
         { id: 'y9-12c', code: '12C', title: 'Relative frequency' },
         { id: 'y9-12d', code: '12D', title: 'Multi-stage experiments' },
-        { id: 'y9-12e', code: '12E', title: 'Two-step experiments involving replacement' }
+        { id: 'y9-12e', code: '12E', title: 'Two-step experiments involving replacement' },
+        { id: 'y9-12f', code: '12F', title: 'Review' }
       ]
     },
     {
@@ -1862,7 +1870,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-13d', code: '13D', title: 'Finding angles' },
         { id: 'y9-13e', code: '13E', title: 'Miscellaneous exercises' },
         { id: 'y9-13f', code: '13F', title: 'Solving problems using trigonometry' },
-        { id: 'y9-13g', code: '13G', title: 'True bearings' }
+        { id: 'y9-13g', code: '13G', title: 'True bearings' },
+        { id: 'y9-13h', code: '13H', title: 'Review' }
       ]
     },
     {
@@ -1890,7 +1899,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-15d', code: '15D', title: 'Factorising the general quadratic ax^2 + bx + c' },
         { id: 'y9-15e', code: '15E', title: 'Simplifying, multiplying and dividing algebraic fractions' },
         { id: 'y9-15f', code: '15F', title: 'Adding and subtracting algebraic fractions' },
-        { id: 'y9-15g', code: '15G', title: 'Completing the square' }
+        { id: 'y9-15g', code: '15G', title: 'Completing the square' },
+        { id: 'y9-15h', code: '15H', title: 'Review' }
       ]
     },
     {
@@ -1917,7 +1927,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-17c', code: '17C', title: 'Quadratics in disguise' },
         { id: 'y9-17d', code: '17D', title: 'Applications of quadratic equations' },
         { id: 'y9-17e', code: '17E', title: 'Graphs of quadratics' },
-        { id: 'y9-17f', code: '17F', title: 'Solving quadratic equations by completing the square' }
+        { id: 'y9-17f', code: '17F', title: 'Solving quadratic equations by completing the square' },
+        { id: 'y9-17g', code: '17G', title: 'Review' }
       ]
     },
     {
@@ -1926,7 +1937,8 @@ export const CURRICULUM_DATA = {
       modules: 2,
       topics: [
         { id: 'y9-18a', code: '18A', title: 'Rates' },
-        { id: 'y9-18b', code: '18B', title: 'Direct proportion' }
+        { id: 'y9-18b', code: '18B', title: 'Direct proportion' },
+        { id: 'y9-18c', code: '18C', title: 'Review' }
       ]
     },
     {
@@ -1946,8 +1958,8 @@ export const CURRICULUM_DATA = {
       title: 'Chapter 20: Review and problem-solving',
       modules: 2,
       topics: [
-        { id: 'y9-10a', code: '20A', title: 'Review' },
-        { id: 'y9-10b', code: '20B', title: 'Problem-solving' }
+        { id: 'y9-20a', code: '20A', title: 'Review' },
+        { id: 'y9-20b', code: '20B', title: 'Problem-solving' }
       ]
     }
   ],

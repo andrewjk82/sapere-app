@@ -39,3 +39,7 @@ Cambridge Extension 2 Year 12 (Sadler & Ward, 2020): `cambridge_ext2.py` — "An
 ## ICE-EM Year 8 (two whole-book PDFs, answers at the back)
 
 `iceem_y8_answers.py`: the answers are single-column pages with a grey page head (y<92pt); headings "Exercise 2A", "Review exercise", "Challenge exercise", "Chapter 2 answers"; question numbers are the `Times-Bold` items (pdfjs). Chapter-9/20 reviews restart numbering per chapter, so those two are labelled "1.1", "10.3". Worksheets: `tools/hw-pdf/run_book.py` cuts chapter PDFs out of a whole book and runs `split_chapter.py`.
+
+## ICE-EM Year 9 (per-chapter PDFs, two answers PDFs)
+
+`iceem_y9_answers.py` = the Year 8 tool plus two heading variants ("Chapter 10A review", "Chapter 9 Answers", "20B   Problem-solving"). Chapters without a Review topic got one (3H, 4F, 6D, 7F, 8F, 9F, 11J, 12F, 13H, 15H, 17G, 18C); chapter 20 topic ids were duplicates of chapter 10 and are now `y9-20a/b`.
