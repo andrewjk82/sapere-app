@@ -88,8 +88,8 @@
         {
           "id": "y7-23a-q1c",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an expression for the following.<br /><br />The double of \\(4k\\)",
+          "difficulty": "easy",
           "options": [
             "\\(9k\\)",
             "\\(10k\\)",
@@ -113,10 +113,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "double",
+              "note": "It means times 2."
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q1d",
