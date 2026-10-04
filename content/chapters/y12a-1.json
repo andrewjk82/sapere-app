@@ -6505,6 +6505,74 @@
           ],
           "manual": true,
           "xp": 3
+        },
+        {
+          "id": "y12adv-task1-q2i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that \\(\\log_9x=\\frac12\\log_3x\\).",
+          "manual": true,
+          "answer": "\\log_9x=\\frac12\\log_3x",
+          "solution": "\\log_9x=\\frac12\\log_3x",
+          "hint": "Use change of base and rewrite 9 as 3 squared.",
+          "steps": [
+            {
+              "explain": "Apply change of base.",
+              "work": "\\log_9x=\\frac{\\log_3x}{\\log_39}"
+            },
+            {
+              "explain": "Since (log_39=2), simplify.",
+              "work": "\\log_9x=\\frac12\\log_3x"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(\\log_9x=\\frac12\\log_3x\\)",
+              "note": "Use change of base and rewrite 9 as 3 squared."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q2ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Using \\(\\log_9x=\\frac12\\log_3x\\), show that \\(\\log_3x+\\log_9x+\\log_{81}x+\\cdots\\) sums to \\(\\log_3x^2\\).",
+          "manual": true,
+          "answer": "S_\\infty=\\log_3x^2\\quad(x>1)",
+          "solution": "S_\\infty=\\log_3x^2\\quad(x>1)",
+          "hint": "Rewrite each term in base 3, then apply the infinite GP sum formula.",
+          "steps": [
+            {
+              "explain": "Rewrite terms in base 3.",
+              "work": "\\log_3x+\\frac12\\log_3x+\\frac14\\log_3x+\\cdots"
+            },
+            {
+              "explain": "Identify the GP parameters.",
+              "work": "a=\\log_3x,\\quad r=\\frac12"
+            },
+            {
+              "explain": "Sum the series; convergence requires x>1.",
+              "work": "S_\\infty=\\frac{\\log_3x}{1-\\frac12}=2\\log_3x=\\log_3x^2"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(\\log_9x=\\frac12\\log_3x\\)",
+              "note": "Rewrite each term in base 3, then apply the infinite GP sum formula."
+            }
+          ]
         }
       ]
     },
@@ -12515,6 +12583,38 @@
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "y12adv-task1-q8i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The expressions \\(x\\), \\(8x\\), and \\(3x^2\\) are consecutive terms of an arithmetic sequence. Show that \\(3x^2-15x=0\\).",
+          "manual": true,
+          "answer": "3x^2-15x=0",
+          "solution": "3x^2-15x=0",
+          "hint": "Set consecutive differences equal. Do not divide by x.",
+          "steps": [
+            {
+              "explain": "An arithmetic sequence has equal consecutive differences.",
+              "work": "8x-x=3x^2-8x"
+            },
+            {
+              "explain": "Rearrange and simplify.",
+              "work": "7x=3x^2-8x\\Rightarrow3x^2-15x=0"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(8x\\)",
+              "note": "Set consecutive differences equal. Do not divide by x."
+            }
+          ]
         }
       ]
     },
@@ -29944,6 +30044,42 @@
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "y12adv-task1-q10ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Concentric circles form annuli with areas \\(3\\pi,5\\pi,7\\pi,\\ldots\\). Show that the total area of the first n annuli is \\(S_n=\\pi n^2+2\\pi n\\).",
+          "manual": true,
+          "answer": "S_n=\\pi n^2+2\\pi n",
+          "solution": "S_n=\\pi n^2+2\\pi n",
+          "hint": "Treat annulus areas as an arithmetic sequence and use its sum formula.",
+          "steps": [
+            {
+              "explain": "Identify the first area and common difference.",
+              "work": "a=3\\pi,\\quad d=2\\pi"
+            },
+            {
+              "explain": "Apply the arithmetic sum formula.",
+              "work": "S_n=\\frac n2(2a+(n-1)d)"
+            },
+            {
+              "explain": "Substitute and simplify.",
+              "work": "S_n=\\frac n2(6\\pi+2\\pi(n-1))=\\pi n(n+2)"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(3\\pi,5\\pi,7\\pi,\\ldots\\)",
+              "note": "Treat annulus areas as an arithmetic sequence and use its sum formula."
+            }
+          ]
         }
       ]
     },

@@ -458,6 +458,87 @@
           "figure": {
             "svg": "fig:d73006fad1"
           }
+        },
+        {
+          "id": "y12adv-task1-q17i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "On the same axes, sketch \\(y=x^2+x-2\\) and \\(y=1-x\\), showing their intersections.",
+          "figure": {
+            "svg": "fig:0e11a9bef8"
+          },
+          "manual": true,
+          "answer": "(-3,4),(1,0)",
+          "solution": "(-3,4),(1,0)",
+          "hint": "Find intersections and key features before sketching.",
+          "steps": [
+            {
+              "explain": "Set the equations equal.",
+              "work": "x^2+x-2=1-x\\Rightarrow(x+3)(x-1)=0"
+            },
+            {
+              "explain": "Find intersection points and parabola features.",
+              "work": "(-3,4),(1,0);\\quad(-2,0),(1,0);\\quad\\text{vertex }(-\\frac12,-\\frac94)"
+            },
+            {
+              "explain": "Draw and label the parabola and line.",
+              "work": "y=1-x"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2+x-2\\)",
+              "note": "Find intersections and key features before sketching."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q18i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph of h has axis of symmetry \\(x=2\\), with \\(A(0,3)\\) and minimum \\(B(2,0)\\). Sketch \\(y=h(x+2)\\), showing new A and B.",
+          "figure": {
+            "svg": "fig:b3aab3b0d2"
+          },
+          "manual": true,
+          "answer": "A'(-2,3),\\quad B'(0,0),\\quad x=0",
+          "solution": "A'(-2,3),\\quad B'(0,0),\\quad x=0",
+          "hint": "The input x+2 shifts the graph two units left.",
+          "steps": [
+            {
+              "explain": "Use the point rule.",
+              "work": "(u,v)\\mapsto(u-2,v)"
+            },
+            {
+              "explain": "Move both labelled points and the symmetry axis.",
+              "work": "A(0,3)\\to A'(-2,3);\\quad B(2,0)\\to B'(0,0);\\quad x=2\\to x=0"
+            },
+            {
+              "explain": "Sketch the same curve shifted left.",
+              "work": "A'(-2,3),\\quad B'(0,0)",
+              "figure": {
+                "svg": "fig:7337b27f09"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(x=2\\)",
+              "note": "The input x+2 shifts the graph two units left."
+            }
+          ]
         }
       ]
     },
@@ -998,6 +1079,384 @@
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "y12adv-task1-q11",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph of \\(y=f(x)\\) is shown. On the same axes, sketch \\(y=f(2x-1)\\), showing all important features.",
+          "figure": {
+            "svg": "fig:cc5d74d696"
+          },
+          "manual": true,
+          "answer": "(0,2),(\\frac12,0),(\\frac34,-\\frac14),(1,0),(\\frac32,2)",
+          "solution": "(0,2),(\\frac12,0),(\\frac34,-\\frac14),(1,0),(\\frac32,2)",
+          "hint": "Map each source point (u,v) to ((u+1)/2,v).",
+          "steps": [
+            {
+              "explain": "Read source roots, vertex and reference points.",
+              "work": "(-1,2),(0,0),(\\frac12,-\\frac14),(1,0),(2,2)"
+            },
+            {
+              "explain": "Solve the inside transformation for the new x-coordinate.",
+              "work": "2x-1=u\\Rightarrow x=\\frac{u+1}{2}"
+            },
+            {
+              "explain": "Map and label every key point, then sketch the compressed parabola.",
+              "work": "(-1,2)\\to(0,2);\\ (0,0)\\to(\\frac12,0);\\ (\\frac12,-\\frac14)\\to(\\frac34,-\\frac14);\\ (1,0)\\to(1,0);\\ (2,2)\\to(\\frac32,2)",
+              "figure": {
+                "svg": "fig:570dd594be"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "The graph of \\(y=f(x)\\) is shown",
+              "note": "Map each source point (u,v) to ((u+1)/2,v)."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q12",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph of \\(y=f(x)\\) is shown. On the same axes, sketch \\(y=-2f(x-1)\\), showing all important features.",
+          "figure": {
+            "svg": "fig:6fb1a4c14d"
+          },
+          "manual": true,
+          "answer": "(0,-2),(1,0),(3,4),(4,0)",
+          "solution": "(0,-2),(1,0),(3,4),(4,0)",
+          "hint": "Shift each point right one, then multiply its y-coordinate by −2.",
+          "steps": [
+            {
+              "explain": "Use the point transformation rule.",
+              "work": "(u,v)\\mapsto(u+1,-2v)"
+            },
+            {
+              "explain": "Map the turning points and intercepts.",
+              "work": "(-1,1)\\to(0,-2);\\ (0,0)\\to(1,0);\\ (2,-2)\\to(3,4);\\ (3,0)\\to(4,0)"
+            },
+            {
+              "explain": "Sketch through mapped points; vertical reflection swaps max and min.",
+              "work": "\\text{new extrema: }(0,-2),(3,4)",
+              "figure": {
+                "svg": "fig:817c9f8c47"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "The graph of \\(y=f(x)\\) is shown",
+              "note": "Shift each point right one, then multiply its y-coordinate by −2."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q13i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The given upper semicircle \\(y=f(x)\\) has endpoints \\((-2,0),(2,0)\\) and maximum \\((0,2)\\). Sketch \\(y=2f(2x)\\) and label its intercepts.",
+          "figure": {
+            "svg": "fig:6a6fe1c383"
+          },
+          "manual": true,
+          "answer": "x\\text{-intercepts }(-1,0),(1,0);\\ y\\text{-intercept }(0,4)",
+          "solution": "x\\text{-intercepts }(-1,0),(1,0);\\ y\\text{-intercept }(0,4)",
+          "hint": "Halve x-coordinates and double y-coordinates.",
+          "steps": [
+            {
+              "explain": "Map source points by the inside and outside factors.",
+              "work": "(u,v)\\mapsto(\\frac u2,2v)"
+            },
+            {
+              "explain": "Transform the endpoints and maximum.",
+              "work": "(-2,0)\\to(-1,0);\\ (0,2)\\to(0,4);\\ (2,0)\\to(1,0)"
+            },
+            {
+              "explain": "Sketch and label the mapped points.",
+              "work": "(-1,0),(0,4),(1,0)",
+              "figure": {
+                "svg": "fig:7281aa25f6"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "The given upper semicircle \\(y=f(x)\\) has endpoints \\((-2,0),(2,0)\\) and maximum \\((0,2)\\)",
+              "note": "Halve x-coordinates and double y-coordinates."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q13ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Using the same upper semicircle \\(y=f(x)\\), sketch \\(y=-\\frac12f(\\frac x2)\\) and label its intercepts.",
+          "figure": {
+            "svg": "fig:6a6fe1c383"
+          },
+          "manual": true,
+          "answer": "x\\text{-intercepts }(-4,0),(4,0);\\ y\\text{-intercept }(0,-1)",
+          "solution": "x\\text{-intercepts }(-4,0),(4,0);\\ y\\text{-intercept }(0,-1)",
+          "hint": "Double x-coordinates; reflect across x-axis and halve y-coordinates.",
+          "steps": [
+            {
+              "explain": "Map points by (u,v) to (2u,−v/2).",
+              "work": "(u,v)\\mapsto(2u,-\\frac v2)"
+            },
+            {
+              "explain": "Transform the endpoints and maximum.",
+              "work": "(-2,0)\\to(-4,0);\\ (0,2)\\to(0,-1);\\ (2,0)\\to(4,0)"
+            },
+            {
+              "explain": "Sketch the lower semi-ellipse and label intercepts.",
+              "work": "(-4,0),(0,-1),(4,0)",
+              "figure": {
+                "svg": "fig:dadcf9ba1c"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "Using the same upper semicircle \\(y=f(x)\\), sketch \\(y=-\\frac12f(\\frac x2)\\) and label its",
+              "note": "Double x-coordinates; reflect across x-axis and halve y-coordinates."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q14",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph of f has vertical asymptote \\(x=1\\) and horizontal asymptote \\(y=1\\). Sketch \\(y=f(x-2)+2\\), showing intercepts and asymptotes.",
+          "figure": {
+            "svg": "fig:6207b34d04"
+          },
+          "manual": true,
+          "answer": "x=3,\\quad y=3\\text{ asymptotes}",
+          "solution": "x=3,\\quad y=3\\text{ asymptotes}",
+          "hint": "Translate every point and asymptote two right and two up.",
+          "steps": [
+            {
+              "explain": "Apply the translation.",
+              "work": "(u,v)\\mapsto(u+2,v+2)"
+            },
+            {
+              "explain": "Move the asymptotes.",
+              "work": "x=1\\to x=3;\\quad y=1\\to y=3"
+            },
+            {
+              "explain": "Move the y-intercept and sketch the branches.",
+              "work": "(0,-1)\\to(2,1)",
+              "figure": {
+                "svg": "fig:05805ee4dd"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(x=1\\)",
+              "note": "Translate every point and asymptote two right and two up."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q15ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph \\(y=\\frac2x\\) is translated upward by 1 unit, then reflected in the x-axis. Sketch the resulting graph, clearly indicating intercepts and asymptotes.",
+          "figure": {
+            "svg": "fig:6b46b2e2eb"
+          },
+          "manual": true,
+          "answer": "y=-\\frac2x-1;\\quad(-2,0);\\quad x=0, y=-1",
+          "solution": "y=-\\frac2x-1;\\quad(-2,0);\\quad x=0, y=-1",
+          "hint": "Apply the vertical translation first, then reflect all y-values in the x-axis.",
+          "steps": [
+            {
+              "explain": "Translate up then reflect.",
+              "work": "y=-\\left(\\frac2x+1\\right)=-\\frac2x-1"
+            },
+            {
+              "explain": "Find asymptotes and solve for x-intercept.",
+              "work": "x=0,\\ y=-1;\\quad0=-\\frac2x-1\\Rightarrow x=-2"
+            },
+            {
+              "explain": "State intercepts and sketch both branches.",
+              "work": "(-2,0);\\quad\\text{no y-intercept}",
+              "figure": {
+                "svg": "fig:6b46b2e2eb"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "The graph \\(y=\\frac2x\\)",
+              "note": "Translate upward first, then reflect the whole graph in the x-axis."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q16",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The graph of \\(y=2f(1-x)\\) is shown. Sketch \\(y=f(x)\\), showing its x-intercepts and turning points.",
+          "figure": {
+            "svg": "fig:9e55879c1a"
+          },
+          "manual": true,
+          "answer": "x\\text{-intercepts }(-1,0),(2,0);\\text{ extrema }(1,-1),(4,\\frac12)",
+          "solution": "x\\text{-intercepts }(-1,0),(2,0);\\text{ extrema }(1,-1),(4,\\frac12)",
+          "hint": "Undo the y-scale by halving y; recover x using x=1−X.",
+          "steps": [
+            {
+              "explain": "A transformed point (X,Y) maps back by x=1−X and y=Y/2.",
+              "work": "(X,Y)\\mapsto(1-X,\\frac Y2)"
+            },
+            {
+              "explain": "Recover intercepts and turning points.",
+              "work": "(-1,0)\\to(2,0);\\ (2,0)\\to(-1,0);\\ (-3,1)\\to(4,\\frac12);\\ (0,-2)\\to(1,-1)"
+            },
+            {
+              "explain": "Sketch through these features.",
+              "work": "(-1,0),(2,0),(1,-1),(4,\\frac12)",
+              "figure": {
+                "svg": "fig:36dba78a5a"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "The graph of \\(y=2f(1-x)\\) is shown",
+              "note": "Undo the y-scale by halving y; recover x using x=1−X."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q20i",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Given the graph of f, sketch \\(g(x)=f(2x)\\) and label transformed key points.",
+          "figure": {
+            "svg": "fig:bf6b01b9c9"
+          },
+          "manual": true,
+          "answer": "(2,8),(2.5,6),(3,8)",
+          "solution": "(2,8),(2.5,6),(3,8)",
+          "hint": "Halve every x-coordinate; preserve y-coordinates.",
+          "steps": [
+            {
+              "explain": "Apply the horizontal compression rule.",
+              "work": "(u,v)\\mapsto(\\frac u2,v)"
+            },
+            {
+              "explain": "Transform the marked points.",
+              "work": "(4,8)\\to(2,8);\\ (5,6)\\to(2.5,6);\\ (6,8)\\to(3,8)"
+            },
+            {
+              "explain": "Sketch the compressed graph from the origin through these points.",
+              "work": "(0,0),(2,8),(2.5,6),(3,8)",
+              "figure": {
+                "svg": "fig:9d3bc25e56"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "Given the graph of f, sketch \\(g(x)=f(2x)\\) and label transformed key points",
+              "note": "Halve every x-coordinate; preserve y-coordinates."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q20ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Given the same graph of f, sketch \\(h(x)=0.5f(x)\\) and label transformed key points.",
+          "figure": {
+            "svg": "fig:bf6b01b9c9"
+          },
+          "manual": true,
+          "answer": "(4,4),(5,3),(6,4)",
+          "solution": "(4,4),(5,3),(6,4)",
+          "hint": "Keep x-coordinates; halve y-coordinates.",
+          "steps": [
+            {
+              "explain": "Apply the vertical compression rule.",
+              "work": "(u,v)\\mapsto(u,0.5v)"
+            },
+            {
+              "explain": "Transform marked points.",
+              "work": "(4,8)\\to(4,4);\\ (5,6)\\to(5,3);\\ (6,8)\\to(6,4)"
+            },
+            {
+              "explain": "Sketch the scaled graph from the origin through those points.",
+              "work": "(0,0),(4,4),(5,3),(6,4)",
+              "figure": {
+                "svg": "fig:b859fc49a8"
+              }
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "Given the same graph of f, sketch \\(h(x)=0",
+              "note": "Keep x-coordinates; halve y-coordinates."
+            }
+          ]
         }
       ]
     },
@@ -1551,6 +2010,84 @@
             "source": "Year 12 Mathematics Advanced Assessment Task 1",
             "course": "Advanced"
           }
+        },
+        {
+          "id": "y12adv-task1-q24ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch \\(P(t)=180+44\\sin(\\frac{2\\pi t}{183})\\) for \\(0\\le t\\le366\\), labelling important features.",
+          "figure": {
+            "svg": "fig:d5a3d5852b"
+          },
+          "manual": true,
+          "answer": "\\text{midline }180,\\quad A=44,\\quad T=183",
+          "solution": "\\text{midline }180,\\quad A=44,\\quad T=183",
+          "hint": "Identify midline, amplitude and period; mark quarter-cycle points and repeat.",
+          "steps": [
+            {
+              "explain": "Identify midline, amplitude, period and range.",
+              "work": "P=180,\\quad A=44,\\quad T=183,\\quad136\\le P\\le224"
+            },
+            {
+              "explain": "Mark quarter-period points for the first cycle.",
+              "work": "(0,180),(45.75,224),(91.5,180),(137.25,136),(183,180)"
+            },
+            {
+              "explain": "Repeat the pattern to t=366 and sketch smoothly.",
+              "work": "(366,180)"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(0\\le t\\le366\\)",
+              "note": "Identify midline, amplitude and period; mark quarter-cycle points and repeat."
+            }
+          ]
+        },
+        {
+          "id": "y12adv-task1-q25ii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "For the Ferris wheel described, sketch the height h for \\(0\\le t\\le40\\) minutes. Label maximum and minimum heights.",
+          "figure": {
+            "svg": "fig:96fbf2cc0b"
+          },
+          "manual": true,
+          "answer": "\\min h=0,\\quad\\max h=70",
+          "solution": "\\min h=0,\\quad\\max h=70",
+          "hint": "The radius is 35 m, centre height 35 m, and period 20 minutes; the rider starts at the minimum.",
+          "steps": [
+            {
+              "explain": "Identify centre line, amplitude and period.",
+              "work": "h=35\\text{ midline},\\quad A=35,\\quad T=20"
+            },
+            {
+              "explain": "Mark the quarter-period points.",
+              "work": "(0,0),(5,35),(10,70),(15,35),(20,0)"
+            },
+            {
+              "explain": "Repeat the cycle to 40 minutes and sketch.",
+              "work": "(20,0),(25,35),(30,70),(35,35),(40,0)"
+            }
+          ],
+          "meta": {
+            "source": "SCN_20251126_1641.pdf",
+            "course": "Year 12 Advanced"
+          },
+          "xp": 3,
+          "timeLimit": 180,
+          "keyPoints": [
+            {
+              "text": "\\(0\\le t\\le40\\)",
+              "note": "The radius is 35 m, centre height 35 m, and period 20 minutes; the rider starts at the minimum."
+            }
+          ]
         }
       ]
     }
