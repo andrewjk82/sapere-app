@@ -106,10 +106,19 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot }) => {
         const viewport = page.getViewport({ scale: (width / base.width) * dpr });
         const canvas = canvasRef.current;
         if (!canvas) return;
-        canvas.width = Math.floor(viewport.width);
-        canvas.height = Math.floor(viewport.height);
-        task = page.render({ canvasContext: canvas.getContext('2d'), viewport });
+        // Keep the current page visible while pdf.js prepares the replacement
+        // bitmap; assigning canvas.width/height clears the visible surface.
+        const buffer = document.createElement('canvas');
+        buffer.width = Math.floor(viewport.width);
+        buffer.height = Math.floor(viewport.height);
+        task = page.render({ canvasContext: buffer.getContext('2d'), viewport });
         await task.promise;
+        if (cancelled || !canvasRef.current) return;
+        canvas.width = buffer.width;
+        canvas.height = buffer.height;
+        canvas.getContext('2d')?.drawImage(buffer, 0, 0);
+        buffer.width = 0;
+        buffer.height = 0;
       } catch (err) {
         if (err?.name !== 'RenderingCancelledException') console.warn('[PdfViewer] page render failed:', err);
       }
