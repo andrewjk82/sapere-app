@@ -250,8 +250,8 @@
         {
           "id": "y7-23a-q2b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an algebraic expression for the following.<br /><br />The sum of \\(7y\\) and \\(42\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-7y + 42\\)",
             "\\(7y + 42\\)",
@@ -275,7 +275,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "sum of",
+              "note": "Add two terms"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q2c",
