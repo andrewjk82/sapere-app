@@ -16,7 +16,8 @@ from PIL import Image
 P = json.load(open('parsed.json'))
 S = 150 / 72
 TOP, BOT = 46, 762
-LX0, LX1, RX0, RX1 = 45, 300, 300, 543
+LX0, LX1, RX0, RX1 = 55, 300, 300, 541   # side tab: x<54 on odd pages, x>=543 on even pages (2019 Ext1 Y12)
+PAGE_TOP = {(0, 'L'): 172, (0, 'R'): 148}   # 2019 Ext1 Y12: the first answers page opens with a photo banner + note
 COL_START = {'L': (54, 67), 'R': (303, 317)}   # x range of a question number
 
 
@@ -51,7 +52,7 @@ for pi, page in enumerate(P):
         hs = headings(ws)
         bounds = [h[0] for h in hs] + [bot]
         if key and (not hs or hs[0][0] - top > 4):
-            segs.append([key, pi + 1, col, TOP, bounds[0]])
+            segs.append([key, pi + 1, col, PAGE_TOP.get((pi, col), TOP), bounds[0]])
         for i, (y, kind, code) in enumerate(hs):
             if kind == 'CH':
                 key = None
@@ -68,7 +69,7 @@ meta, labels = {}, {}
 for key, ss in order.items():
     crops, nums = [], set()
     for _, pg, col, y0, y1 in ss:
-        im = Image.open(f'pages/p-{pg:02d}.png').convert('L')
+        im = Image.open(f'pages/p-{pg:0{len(str(len(P)))}d}.png').convert('L')  # pdftoppm pads file names to the page-count width
         x0, x1 = (LX0, LX1) if col == 'L' else (RX0, RX1)
         top = TOP if y0 <= TOP + 2 else max(TOP, y0 - 6)
         bot = BOT if y1 >= BOT - 10 else y1 - 3

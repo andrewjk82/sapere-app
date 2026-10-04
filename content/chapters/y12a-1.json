@@ -29930,11 +29930,10 @@
         },
         {
           "id": "y12adv-task1-q10ii",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Concentric circles form annuli with areas \\(3\\pi,5\\pi,7\\pi,\\ldots\\). Show that the total area of the first n annuli is \\(S_n=\\pi n^2+2\\pi n\\).",
-          "manual": true,
-          "answer": "S_n=\\pi n^2+2\\pi n",
+          "stem": "Concentric circles form annuli with areas \\\\(3\\\\pi,5\\\\pi,7\\\\pi,\\\\ldots\\\\). What is the total area of the first \\\\(n\\\\) annuli, \\\\(S_n\\\\)?",
+          "answer": 0,
           "solution": "S_n=\\pi n^2+2\\pi n",
           "hint": "Treat annulus areas as an arithmetic sequence and use its sum formula.",
           "steps": [
@@ -29962,6 +29961,12 @@
               "text": "\\(3\\pi,5\\pi,7\\pi,\\ldots\\)",
               "note": "Treat annulus areas as an arithmetic sequence and use its sum formula."
             }
+          ],
+          "options": [
+            "\\\\( \\\\pi n^2 + 2\\\\pi n \\\\)",
+            "\\\\( 2\\\\pi n^2 + \\\\pi n \\\\)",
+            "\\\\( \\\\pi n^2 + \\\\pi n \\\\)",
+            "\\\\( 2\\\\pi n^2 - \\\\pi n \\\\)"
           ]
         }
       ]
