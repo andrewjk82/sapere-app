@@ -27,7 +27,7 @@
     "test:secret-note-bonus": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteBonus.mjs",
     "test:secret-note-gradability": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteGradability.mjs",
     "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability",
-    "test:homework": "node scripts/testHomework.mjs && node scripts/testHomeworkMarking.mjs && node scripts/testHomeworkRetention.mjs && node scripts/testWorksheetProxy.mjs",
+    "test:homework": "node scripts/testHomework.mjs && node scripts/testHomeworkMarking.mjs && node scripts/testAnswerKeyCache.mjs && node scripts/testHomeworkRetention.mjs && node scripts/testWorksheetProxy.mjs",
     "test:lesson-topics": "node scripts/testLessonTopics.mjs",
     "test:sprint": "node scripts/testSprintQuestions.mjs && node scripts/testSprintSettlement.mjs",
     "test:teacher-review-subs": "node --import ./scripts/extResolve.mjs scripts/testTeacherReviewSubQuestions.mjs",

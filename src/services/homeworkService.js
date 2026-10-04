@@ -3,6 +3,7 @@ import {
 } from 'firebase/firestore';
 import { db, ADMIN_UID, ADMIN_EMAIL } from '../firebase/config';
 import { resizeDataUrlImage } from '../utils/imageResize';
+import { createAnswerKeyCache, idbAnswerKeyAdapter } from '../utils/answerKeyCache';
 import {
   MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForProfile, buildTopicPdfMap,
 } from '../utils/homework';
@@ -157,15 +158,21 @@ export async function markHomeworkChecked(sessionId, grade = null) {
   await batch.commit();
 }
 
-// Textbook answer keys (answer_keys/{topicId}, teacher-only). One read per
-// topic, kept in memory for the rest of the visit.
+// Textbook answer keys (answer_keys/{topicId}, teacher-only). Memory first, then
+// the device cache (a key read once is not read again for two weeks), then one
+// Firestore read per topic.
 const answerKeyCache = new Map();
+const persistentAnswerKeys = createAnswerKeyCache(idbAnswerKeyAdapter());
 export async function fetchAnswerKeys(topicIds = []) {
   const ids = [...new Set(topicIds.filter(Boolean))];
   await Promise.all(ids.filter((id) => !answerKeyCache.has(id)).map(async (id) => {
     try {
+      const saved = await persistentAnswerKeys.get(id);
+      if (saved) { answerKeyCache.set(id, saved); return; }
       const snap = await getDoc(doc(db, 'answer_keys', id));
-      answerKeyCache.set(id, snap.exists() ? snap.data() : null);
+      const data = snap.exists() ? snap.data() : null;
+      answerKeyCache.set(id, data);
+      persistentAnswerKeys.set(id, data);
     } catch (err) {
       // Not cached, so it is retried next open. Reported as an error rather
       // than "no key" — e.g. permission-denied before the rule is deployed.
