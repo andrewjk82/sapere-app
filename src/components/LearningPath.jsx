@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { migrateMovedTopicProgress } from '../utils/topicMoves';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X, PenLine } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -17,11 +17,10 @@ import CheatSheetLightbox from './CheatSheetLightbox';
 import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
+import WorkingOutCanvas from './WorkingOutCanvas';
+import { loadCurriculumNote, saveCurriculumNote } from '../utils/curriculumLocalNotes';
+import { requestPersistentStorage } from '../utils/homeworkLocalStore';
 import './learning-path.css';
-
-// Per-chapter XP is derived from its lesson count so the numbers are stable
-// and proportional even though XP is not tracked per chapter in the database.
-const XP_PER_LESSON = 12;
 
 const normalizeCurriculumTopics = (chapters) => (Array.isArray(chapters) ? chapters : []).map((chapter) => {
   if (!Array.isArray(chapter?.topics)) return chapter;
@@ -56,8 +55,62 @@ const LearningPath = ({ profile }) => {
   const [showGraph3D, setShowGraph3D] = useState(false);
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [pdfPreview, setPdfPreview] = useState(null); // { raw, url, openUrl, title } | null — topic worksheet
+  const curriculumNoteKey = pdfPreview?.noteKey;
+  const curriculumCanvasRef = useRef(null);
+  const curriculumNoteLoadedRef = useRef(false);
+  const curriculumNoteTimerRef = useRef(0);
+  const [isTablet, setIsTablet] = useState(() => (
+    typeof window !== 'undefined' && window.innerWidth >= 768 && window.innerWidth <= 1600
+      && (navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches)
+  ));
+  const [curriculumNoteReady, setCurriculumNoteReady] = useState(false);
 
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
+
+  useEffect(() => {
+    const updateTablet = () => setIsTablet(
+      window.innerWidth >= 768 && window.innerWidth <= 1600
+      && (navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches),
+    );
+    window.addEventListener('resize', updateTablet);
+    return () => window.removeEventListener('resize', updateTablet);
+  }, []);
+
+  useEffect(() => {
+    if (!curriculumNoteKey || !isTablet) return undefined;
+    let cancelled = false;
+    curriculumNoteLoadedRef.current = false;
+    setCurriculumNoteReady(false);
+    requestPersistentStorage();
+    loadCurriculumNote(curriculumNoteKey).then((data) => {
+      if (cancelled) return;
+      if (data) curriculumCanvasRef.current?.loadPagesData(data);
+      else curriculumCanvasRef.current?.clear();
+      curriculumNoteLoadedRef.current = true;
+      setCurriculumNoteReady(true);
+    });
+    return () => {
+      cancelled = true;
+      window.clearTimeout(curriculumNoteTimerRef.current);
+    };
+  }, [curriculumNoteKey, isTablet]);
+
+  const saveCurriculumNoteNow = useCallback(() => {
+    window.clearTimeout(curriculumNoteTimerRef.current);
+    if (!curriculumNoteLoadedRef.current || !curriculumNoteKey) return Promise.resolve(false);
+    const data = curriculumCanvasRef.current?.getPagesData();
+    return data ? saveCurriculumNote(curriculumNoteKey, data) : Promise.resolve(false);
+  }, [curriculumNoteKey]);
+
+  const handleCurriculumInkChange = useCallback(() => {
+    if (!curriculumNoteLoadedRef.current || !curriculumNoteKey) return;
+    window.clearTimeout(curriculumNoteTimerRef.current);
+    const key = curriculumNoteKey;
+    curriculumNoteTimerRef.current = window.setTimeout(() => {
+      const data = curriculumCanvasRef.current?.getPagesData();
+      if (data) saveCurriculumNote(key, data);
+    }, 800);
+  }, [curriculumNoteKey]);
 
 
   const normalizeYearLabel = (value) => {
@@ -516,7 +569,13 @@ const LearningPath = ({ profile }) => {
                             aria-label={`Open worksheet: ${t.code ? `${t.code} · ` : ''}${t.title || ''}`}
                             onClick={(e) => {
                               e.stopPropagation();
-                              setPdfPreview({ raw: t.homeworkPdfUrl, url: pdfUrl, openUrl: toDriveOpenUrl(t.homeworkPdfUrl), title: `${t.code ? `${t.code} · ` : ''}${t.title || ''}` });
+                              setPdfPreview({
+                                raw: t.homeworkPdfUrl,
+                                url: pdfUrl,
+                                openUrl: toDriveOpenUrl(t.homeworkPdfUrl),
+                                title: `${t.code ? `${t.code} · ` : ''}${t.title || ''}`,
+                                noteKey: `${activeTrack.key}:${t.id}:${t.homeworkPdfUrl}`,
+                              });
                             }}
                             style={{
                               ...chipStyle,
@@ -596,12 +655,12 @@ const LearningPath = ({ profile }) => {
 
       {pdfPreview && createPortal(
         <div
-          onClick={() => setPdfPreview(null)}
+          onClick={() => { saveCurriculumNoteNow(); setPdfPreview(null); }}
           style={{ position: 'fixed', inset: 0, zIndex: 10000, background: 'rgba(15,23,42,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            style={{ width: 'min(960px, 100%)', height: 'min(90vh, 1100px)', background: '#fff', borderRadius: 20, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.35)' }}
+            style={{ width: isTablet ? 'min(1500px, 100%)' : 'min(960px, 100%)', height: isTablet ? '94vh' : 'min(90vh, 1100px)', background: '#fff', borderRadius: 20, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.35)' }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
               <FileText size={18} color="#7c3aed" />
@@ -609,11 +668,31 @@ const LearningPath = ({ profile }) => {
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
                 <ExternalLink size={14} /> Open in Google Drive
               </a>
-              <button type="button" aria-label="Close" onClick={() => setPdfPreview(null)} style={{ border: 0, background: 'transparent', cursor: 'pointer', padding: 4, display: 'flex', color: '#64748b' }}>
+              <button type="button" aria-label="Close" onClick={() => { saveCurriculumNoteNow(); setPdfPreview(null); }} style={{ border: 0, background: 'transparent', cursor: 'pointer', padding: 4, display: 'flex', color: '#64748b' }}>
                 <X size={20} />
               </button>
             </div>
-            <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} style={{ flex: 1, minHeight: 0 }} />
+            {isTablet ? (
+              <div style={{ flex: 1, minHeight: 0, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }}>
+                <div style={{ minWidth: 0, minHeight: 0, display: 'flex', borderRight: '1px solid #e2e8f0' }}>
+                  <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} style={{ flex: 1, minHeight: 0 }} />
+                </div>
+                <section aria-label="Personal working notes" style={{ minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px', borderBottom: '1px solid #e2e8f0', background: '#fff', flexShrink: 0 }}>
+                    <PenLine size={16} color="#7c3aed" />
+                    <span style={{ fontWeight: 800, color: '#1e1b4b' }}>My notes</span>
+                    <span style={{ marginLeft: 'auto', fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>
+                      {curriculumNoteReady ? 'Saved on this device' : 'Loading notes…'}
+                    </span>
+                  </div>
+                  <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
+                    <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} onInkChange={handleCurriculumInkChange} />
+                  </div>
+                </section>
+              </div>
+            ) : (
+              <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} style={{ flex: 1, minHeight: 0 }} />
+            )}
           </div>
         </div>,
         document.body,
