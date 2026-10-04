@@ -1,16 +1,17 @@
 import { useState, useEffect, useCallback } from 'react';
 import { db } from '../firebase/config';
 import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
-import { Activity, Database, Server, Clock, Users, ArrowUpRight } from 'lucide-react';
+import { Activity, Database, Server, Clock, Users, ArrowUpRight, RefreshCw } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// P1: one-shot fetch + 60s poll while visible (not a permanent onSnapshot on
-// traffic_logs — that collection is write-heavy and was double-billing monitors).
-const POLL_MS = 60_000;
+// This is an on-demand snapshot. Do not poll traffic_logs: monitoring traffic
+// must not itself create recurring Firestore reads.
 
 const TrafficMonitorPanel = () => {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState(null);
   const [stats, setStats] = useState({
     totalReads: 0,
     totalWrites: 0,
@@ -47,41 +48,31 @@ const TrafficMonitorPanel = () => {
       activeSessions: sessions
     });
     setLoading(false);
+    setLastUpdated(new Date());
   }, []);
 
-  useEffect(() => {
-    let cancelled = false;
-    let timer = null;
-
-    const load = async () => {
-      if (document.visibilityState === 'hidden') return;
-      try {
-        const q = query(
-          collection(db, 'traffic_logs'),
-          orderBy('timestamp', 'desc'),
-          limit(100)
-        );
-        const snap = await getDocs(q);
-        if (!cancelled) applySnap(snap);
-      } catch (error) {
-        console.warn("TrafficMonitor fetch error:", error);
-        if (!cancelled) setLoading(false);
-      }
-    };
-
-    load();
-    timer = setInterval(load, POLL_MS);
-    const onVis = () => {
-      if (document.visibilityState === 'visible') load();
-    };
-    document.addEventListener('visibilitychange', onVis);
-
-    return () => {
-      cancelled = true;
-      clearInterval(timer);
-      document.removeEventListener('visibilitychange', onVis);
-    };
+  const load = useCallback(async () => {
+    if (document.visibilityState === 'hidden') return;
+    setRefreshing(true);
+    try {
+      const q = query(
+        collection(db, 'traffic_logs'),
+        orderBy('timestamp', 'desc'),
+        limit(50)
+      );
+      const snap = await getDocs(q);
+      applySnap(snap);
+    } catch (error) {
+      console.warn('TrafficMonitor fetch error:', error);
+      setLoading(false);
+    } finally {
+      setRefreshing(false);
+    }
   }, [applySnap]);
+
+  useEffect(() => {
+    load();
+  }, [load]);
 
   // Simple SVG sparkline generator for the last 20 logs
   const generateSparkline = (key, color) => {
@@ -165,13 +156,24 @@ const TrafficMonitorPanel = () => {
           <div>
             <h2 className="tm__title">
               <span className="tm__pulse-dot" />
-              Live Traffic Monitor
+              Traffic Monitor
             </h2>
-            <p className="tm__subtitle">Real-time telemetry and database usage metrics (last 100 updates)</p>
+            <p className="tm__subtitle">On-demand snapshot of the latest 50 telemetry updates</p>
           </div>
-          <div className="tm__badge">
-            <Clock size={14} />
-            <span>Telemetry Active</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+            <div className="tm__badge" title="This view does not refresh automatically">
+              <Clock size={14} />
+              <span>{lastUpdated ? `Updated ${lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}` : 'Manual refresh'}</span>
+            </div>
+            <button
+              type="button"
+              onClick={load}
+              disabled={refreshing}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '9px 13px', border: '1px solid #e0e7ff', borderRadius: 12, background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: refreshing ? 'wait' : 'pointer', opacity: refreshing ? 0.7 : 1 }}
+            >
+              <RefreshCw size={15} style={{ animation: refreshing ? 'tm-spin 1s linear infinite' : 'none' }} />
+              Refresh
+            </button>
           </div>
         </div>
 
@@ -349,6 +351,7 @@ const TrafficMonitorPanel = () => {
 // Co-located styles (matches project's inline/CSS convention)
 // ──────────────────────────────────────────────────────────
 const trafficStyles = `
+  @keyframes tm-spin { to { transform: rotate(360deg); } }
   .tm {
     display: flex;
     flex-direction: column;
