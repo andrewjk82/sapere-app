@@ -152,9 +152,8 @@ export async function fetchPendingSubmissions() {
     .sort((a, b) => (a.submittedAt?.toMillis?.() || 0) - (b.submittedAt?.toMillis?.() || 0));
 }
 
-// Every assigned session, regardless of whether it has been submitted or
-// checked. Homework can be represented by topic selections on older sessions
-// even when the free-text homework field is empty.
+// Assigned sessions still awaiting completion. Homework can be represented by
+// topic selections on older sessions even when the free-text field is empty.
 export async function fetchHomeworkAssignments() {
   const snap = await getDocs(collection(db, 'sessions'));
   const sessions = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
@@ -164,17 +163,18 @@ export async function fetchHomeworkAssignments() {
   ));
 
   return assignments
+    .filter((assignment) => (
+      assignment.homeworkStatus !== 'checked'
+      && assignment.isHomeworkCompleted !== true
+    ))
     .map((assignment) => {
       const next = sessions
         .filter((session) => session.studentId === assignment.studentId && (session.date || '') > (assignment.date || ''))
         .sort((a, b) => (a.date || '').localeCompare(b.date || ''))[0];
-      const isChecked = assignment.homeworkStatus === 'checked' || assignment.isHomeworkCompleted === true;
       return {
         ...assignment,
         homeworkDueDate: assignment.homeworkDueDate || next?.date || '',
-        displayHomeworkStatus: isChecked
-          ? 'Checked'
-          : assignment.homeworkStatus === 'submitted' ? 'Submitted' : 'Awaiting',
+        displayHomeworkStatus: assignment.homeworkStatus === 'submitted' ? 'Submitted' : 'Awaiting',
       };
     })
     .sort((a, b) => (a.homeworkDueDate || a.date || '').localeCompare(b.homeworkDueDate || b.date || ''));
