@@ -35,3 +35,7 @@ Cambridge 2nd-edition Extension 1 Year 11 (2025) uses the same layout; run `camb
 Cambridge 1st-edition Extension 1 Year 12 (2019): `cambridge_adv12.py` with `PAGE_TOP` (photo banner on the first answers page) and side-tab-safe crop bounds (55–541pt); the book comes as per-chapter PDFs plus `Ch18_Ans.pdf`.
 
 Cambridge Extension 2 Year 12 (Sadler & Ward, 2020): `cambridge_ext2.py` — "Answers to Exercises" PDF, two wide columns (x=80 / x=320), headings "Exercise 1A (Page 8)" / "Review Exercise 1H", labels like `7(a)`. Review keys map to the "Chapter Review Exercise" topic of each chapter (`y12e2-1H`).
+
+## ICE-EM Year 8 (two whole-book PDFs, answers at the back)
+
+`iceem_y8_answers.py`: the answers are single-column pages with a grey page head (y<92pt); headings "Exercise 2A", "Review exercise", "Challenge exercise", "Chapter 2 answers"; question numbers are the `Times-Bold` items (pdfjs). Chapter-9/20 reviews restart numbering per chapter, so those two are labelled "1.1", "10.3". Worksheets: `tools/hw-pdf/run_book.py` cuts chapter PDFs out of a whole book and runs `split_chapter.py`.
