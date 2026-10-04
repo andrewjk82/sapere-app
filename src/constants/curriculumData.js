@@ -1203,7 +1203,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y7-7',
       title: 'Decimals',
-      modules: 8,
+      modules: 9,
       topics: [
         { id: 'y7-7a', code: '8A', title: 'Place value and comparison of decimals', page: 202 },
         { id: 'y7-7b', code: '8B', title: 'Converting decimals to fractions and fractions to decimals', page: 207 },
@@ -1212,7 +1212,8 @@ export const CURRICULUM_DATA = {
         { id: 'y7-7e', code: '8E', title: 'Multiplication of one decimal by another', page: 217 },
         { id: 'y7-7f', code: '8F', title: 'Division of decimals', page: 219 },
         { id: 'y7-7g', code: '8G', title: 'Recurring decimals', page: 223 },
-        { id: 'y7-7h', code: '8H', title: 'Rounding of decimals', page: 225 }
+        { id: 'y7-7h', code: '8H', title: 'Rounding of decimals', page: 225 },
+        { id: 'y7-7-8i', code: '8I', title: 'Review' }
       ]
     },
     {
