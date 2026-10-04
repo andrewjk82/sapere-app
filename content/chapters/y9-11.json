@@ -7304,10 +7304,10 @@
             }
           },
           "options": [
-            "$m = -6,\\quad c = 3$",
-            "$m = 3,\\quad c = -6$",
-            "$m = 6,\\quad c = 3$",
-            "$m = -6,\\quad c = -3$"
+            "\\\\(m = -6,\\quad c = 3\\\\)",
+            "\\\\(m = 3,\\quad c = -6\\\\)",
+            "\\\\(m = 6,\\quad c = 3\\\\)",
+            "\\\\(m = -6,\\quad c = -3\\\\)"
           ],
           "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
@@ -21620,4 +21620,4 @@
       ]
     }
   ]
-}
+}\n
