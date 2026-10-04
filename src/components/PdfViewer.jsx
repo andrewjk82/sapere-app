@@ -26,9 +26,9 @@ const MAX_PAGE_WIDTH = 1000;
 const MAX_RENDER_WIDTH = 3200;
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 2.5;
-const ZOOM_STEP = 0.05;
+const ZOOM_STEP = 0.1;
 const MIN_PINCH_DISTANCE = 1;
-const PINCH_RESPONSE = 0.3;
+const PINCH_RESPONSE = 0.6;
 
 const distanceBetween = ([first, second]) => Math.hypot(
   second.x - first.x,
