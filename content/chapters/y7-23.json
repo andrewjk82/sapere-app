@@ -46,8 +46,8 @@
         {
           "id": "y7-23a-q1b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an expression for the following.<br /><br />\\(7\\) less than \\(3m\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-3m - 7\\)",
             "\\(4m - 7\\)",
@@ -71,10 +71,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "less than ",
+              "note": "minus"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q1c",
