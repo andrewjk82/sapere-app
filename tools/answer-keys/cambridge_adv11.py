@@ -24,7 +24,7 @@ def col_start(pg, col):
     if col == 'R':
         return (300, 318)
     l0 = 66 if pg % 2 == 0 else 57
-    return (l0 - 3, l0 + 10)
+    return (l0 - 9, l0 + 10)
 
 
 
