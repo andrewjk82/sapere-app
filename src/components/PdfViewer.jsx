@@ -12,7 +12,7 @@
  *   fallback – URL shown in an <iframe> when there's no src or pdf.js fails
  *   style    – container style overrides
  */
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Loader2, AlertTriangle, ZoomIn, ZoomOut } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 
@@ -33,6 +33,8 @@ const distanceBetween = ([first, second]) => Math.hypot(
   second.x - first.x,
   second.y - first.y,
 );
+
+const midpoint = ([first, second]) => ({ x: (first.x + second.x) / 2, y: (first.y + second.y) / 2 });
 
 const zoomForPinch = (pinch, points) => {
   if (!pinch || points.length < 2) return null;
@@ -139,8 +141,15 @@ const centered = (style, children) => (
 
 const PdfViewer = ({ src, loading, fallback, style }) => {
   const [scrollEl, setScrollEl] = useState(null);
+  const scrollRef = useRef(null);
+  const handleScrollRef = useCallback((node) => {
+    scrollRef.current = node;
+    setScrollEl(node);
+  }, []);
   const [width, setWidth] = useState(0);
   const [zoom, setZoom] = useState(1);
+  const zoomRef = useRef(1);
+  const pendingZoomAnchorRef = useRef(null);
   const touchPointsRef = useRef(new Map());
   const pinchRef = useRef(null);
   const lastPinchRenderAtRef = useRef(0);
@@ -148,6 +157,20 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const [opened, setOpened] = useState(null); // { src, pdf, numPages, ratio } | { src, failed: true }
   const doc = opened?.src === src && !opened.failed ? opened : null;
   const failed = opened?.src === src && opened.failed;
+
+  useLayoutEffect(() => {
+    zoomRef.current = zoom;
+    const anchor = pendingZoomAnchorRef.current;
+    const root = scrollRef.current;
+    if (!anchor || !root) return;
+    pendingZoomAnchorRef.current = null;
+    // Page content begins after the fixed outer padding. Keep the same PDF
+    // point under the gesture (or viewport centre for the toolbar) as its
+    // rendered width changes, instead of leaving it pinned to the left edge.
+    const origin = PAGE_GAP;
+    root.scrollLeft = Math.max(0, origin + anchor.docX * zoom - anchor.localX);
+    root.scrollTop = Math.max(0, origin + anchor.docY * zoom - anchor.localY);
+  }, [zoom]);
 
   useEffect(() => {
     if (!src) return undefined;
@@ -179,15 +202,39 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     return () => ro.disconnect();
   }, [scrollEl]);
 
+  const changeZoom = (nextValue) => {
+    const current = zoomRef.current;
+    const next = typeof nextValue === 'function' ? nextValue(current) : nextValue;
+    const root = scrollRef.current;
+    if (root && width && next !== current) {
+      const localX = root.clientWidth / 2;
+      const localY = root.clientHeight / 2;
+      pendingZoomAnchorRef.current = {
+        docX: (root.scrollLeft + localX - PAGE_GAP) / current,
+        docY: (root.scrollTop + localY - PAGE_GAP) / current,
+        localX,
+        localY,
+      };
+    }
+    setZoom(next);
+  };
+
   const handlePointerDown = (event) => {
     if (event.pointerType !== 'touch') return;
     touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
     try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* Safari may already own the pointer */ }
     if (touchPointsRef.current.size === 2) {
       const points = [...touchPointsRef.current.values()];
+      const center = midpoint(points);
+      const rect = event.currentTarget.getBoundingClientRect();
+      const localX = center.x - rect.left;
+      const localY = center.y - rect.top;
+      const startZoom = zoomRef.current;
       pinchRef.current = {
         startDistance: Math.max(MIN_PINCH_DISTANCE, distanceBetween(points)),
-        startZoom: zoom,
+        startZoom,
+        docX: (event.currentTarget.scrollLeft + localX - PAGE_GAP) / startZoom,
+        docY: (event.currentTarget.scrollTop + localY - PAGE_GAP) / startZoom,
       };
       lastPinchRenderAtRef.current = 0;
     }
@@ -201,9 +248,22 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
 
     const nextZoom = zoomForPinch(pinchRef.current, [...touchPointsRef.current.values()]);
     const now = performance.now();
-    // Rendering every page on every touch event is expensive on phones. Keep
-    // the pinch feedback smooth while limiting PDF canvas re-renders to ~15fps.
-    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 65) {
+    if (nextZoom !== null) {
+      const root = event.currentTarget;
+      const rect = root.getBoundingClientRect();
+      const center = midpoint([...touchPointsRef.current.values()]);
+      const localX = center.x - rect.left;
+      const localY = center.y - rect.top;
+      pendingZoomAnchorRef.current = {
+        docX: pinchRef.current.docX,
+        docY: pinchRef.current.docY,
+        localX,
+        localY,
+      };
+    }
+    // Re-rendering every PDF page for every pointer event is expensive. Update
+    // at ~24fps; scroll anchoring runs with each rendered zoom step.
+    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 42) {
       lastPinchRenderAtRef.current = now;
       setZoom(nextZoom);
     }
@@ -212,8 +272,21 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const handlePointerEnd = (event) => {
     if (!touchPointsRef.current.has(event.pointerId)) return;
     if (touchPointsRef.current.size >= 2 && pinchRef.current) {
-      const finalZoom = zoomForPinch(pinchRef.current, [...touchPointsRef.current.values()]);
-      if (finalZoom !== null) setZoom(finalZoom);
+      touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      const points = [...touchPointsRef.current.values()];
+      const finalZoom = zoomForPinch(pinchRef.current, points);
+      if (finalZoom !== null) {
+        const root = event.currentTarget;
+        const rect = root.getBoundingClientRect();
+        const center = midpoint(points);
+        pendingZoomAnchorRef.current = {
+          docX: pinchRef.current.docX,
+          docY: pinchRef.current.docY,
+          localX: center.x - rect.left,
+          localY: center.y - rect.top,
+        };
+        setZoom(finalZoom);
+      }
     }
     touchPointsRef.current.delete(event.pointerId);
     if (touchPointsRef.current.size < 2) pinchRef.current = null;
@@ -231,9 +304,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   if (!src || failed) {
     if (fallback) return (
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
-        <ZoomControls zoom={zoom} onZoomChange={setZoom} />
+        <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
         <div
-          ref={setScrollEl}
+          ref={handleScrollRef}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerEnd}
@@ -259,9 +332,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
-      <ZoomControls zoom={zoom} onZoomChange={setZoom} />
+        <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
       <div
-        ref={setScrollEl}
+        ref={handleScrollRef}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerEnd}
