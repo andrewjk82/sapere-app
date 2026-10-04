@@ -26,8 +26,9 @@ const MAX_PAGE_WIDTH = 1000;
 const MAX_RENDER_WIDTH = 3200;
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 2.5;
-const ZOOM_STEP = 0.25;
+const ZOOM_STEP = 0.1;
 const MIN_PINCH_DISTANCE = 1;
+const PINCH_DISTANCE_PER_E_FOLD = 240;
 
 const distanceBetween = ([first, second]) => Math.hypot(
   second.x - first.x,
@@ -38,8 +39,12 @@ const midpoint = ([first, second]) => ({ x: (first.x + second.x) / 2, y: (first.
 
 const zoomForPinch = (pinch, points) => {
   if (!pinch || points.length < 2) return null;
-  const next = pinch.startZoom * (distanceBetween(points) / pinch.startDistance);
-  return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Math.round(next * 100) / 100));
+  const distanceDelta = distanceBetween(points) - pinch.startDistance;
+  // A raw distance ratio reacts far too strongly when fingers start close
+  // together (a few pixels can mean a large percentage jump). Exponential
+  // travel keeps the response proportional while making each pixel gentler.
+  const next = pinch.startZoom * Math.exp(distanceDelta / PINCH_DISTANCE_PER_E_FOLD);
+  return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Math.round(next * 1000) / 1000));
 };
 
 const ZoomControls = ({ zoom, onZoomChange }) => (
