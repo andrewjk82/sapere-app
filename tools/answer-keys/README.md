@@ -20,3 +20,12 @@ Year 10 run — edit `PDF`/output paths for another book):
    Firestore `curriculum/Year_N` doc (Review/Challenge → the chapter's Revision topic, or a
    "Challenge exercise" topic when there is one), check samples by eye, then
    `node tools/answer-keys/upload.mjs <dir> "<book name>"`.
+
+## Cambridge CMS6 (Advanced Year 12, answers at the back of the full book)
+
+`cambridge_adv12.py` replaces steps 3–5 for this book: sections start at "Exercise 1A", the
+chapter review at "Chapter 1 review exercise" (key `1R`), question numbers are read by position
+(first token on a line at the column's left edge) instead of by font. Cut the answers pages out
+first (`pages 598–682` of `CMS6_Advanced12_fullbook.pdf`), run `pdftotext -bbox` → `parsed.json`,
+render `pdftoppm -r 150` → `pages/p-NN.png`, then run the script in that directory. Review keys map
+to each chapter's review topic (`y12a-1j`, `y12a-2-2j`, `y12a-3I`, …).
