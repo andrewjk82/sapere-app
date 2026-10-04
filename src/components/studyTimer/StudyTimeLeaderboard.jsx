@@ -58,10 +58,10 @@ const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = nul
   }, [effectiveTotalSec, inTop10, lastFlush]);
 
   return (
-    <div style={{ borderRadius: 32, background: 'linear-gradient(180deg, #1e1b4b, #312e81)', padding: '22px 20px', color: '#fff', boxShadow: '0 20px 50px rgba(49,46,129,0.28)' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-        <Crown size={18} color="#fbbf24" />
-        <span style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)' }}>
+    <div style={{ borderRadius: 26, background: 'linear-gradient(180deg, #ffffff, #faf8ff)', border: '1px solid #e9e4f7', padding: '20px 18px', color: '#1e1b4b', boxShadow: '0 12px 32px rgba(79,70,229,0.08)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+        <Crown size={18} color="#7c3aed" />
+        <span style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#77728f' }}>
           Study Time Leaders
         </span>
       </div>
@@ -77,13 +77,13 @@ const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = nul
               exit={{ opacity: 0, y: -10 }}
               transition={{ type: 'spring', damping: 26, stiffness: 220 }}
               style={{
-                display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, marginBottom: 4,
-                background: entry.uid === uid ? 'rgba(255,255,255,0.14)' : 'transparent',
+                display: 'flex', alignItems: 'center', gap: 10, padding: '5px 8px', borderRadius: 13, marginBottom: 2,
+                background: entry.uid === uid ? '#f0eaff' : 'transparent',
               }}
             >
               <RankBadge rank={i + 1} />
-              <img src={entry.avatarUrl || buildAvatarUrl(null, entry.uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
-              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: 'rgba(255,255,255,0.85)' }}>
+              <img src={entry.avatarUrl || buildAvatarUrl(null, entry.uid)} alt="" style={{ width: 28, height: 28, borderRadius: '50%', background: '#fff', border: '1px solid #ebe7f5', flexShrink: 0 }} />
+              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: '#403577' }}>
                 {formatTotal(entry.totalSec)}
               </span>
             </motion.div>
@@ -91,16 +91,16 @@ const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = nul
         </AnimatePresence>
 
         {top10.length === 0 && (
-          <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.6)', fontWeight: 600 }}>No study time logged yet. Be the first!</p>
+          <p style={{ fontSize: '0.78rem', color: '#9290a8', fontWeight: 600 }}>No study time logged yet. Be the first!</p>
         )}
 
         {!inTop10 && effectiveTotalSec > 0 && (
           <>
-            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', padding: '4px 0' }}>• • •</p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, background: 'rgba(255,255,255,0.14)' }}>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: '#aaa4c4', padding: '2px 0' }}>• • •</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '5px 8px', borderRadius: 13, background: '#f0eaff' }}>
               <RankBadge rank={myRank} />
-              <img src={buildAvatarUrl(profile, uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
-              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: 'rgba(255,255,255,0.85)' }}>
+              <img src={buildAvatarUrl(profile, uid)} alt="" style={{ width: 28, height: 28, borderRadius: '50%', background: '#fff', border: '1px solid #ebe7f5', flexShrink: 0 }} />
+              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: '#403577' }}>
                 {formatTotal(effectiveTotalSec)}
               </span>
             </div>
@@ -115,8 +115,8 @@ const RankBadge = ({ rank }) => (
   <span style={{
     width: 24, height: 24, borderRadius: '50%', display: 'grid', placeItems: 'center', flexShrink: 0,
     fontSize: '0.72rem', fontWeight: 900,
-    background: rank === 1 ? '#fbbf24' : rank === 2 ? '#cbd5e1' : rank === 3 ? '#d97706' : 'rgba(255,255,255,0.12)',
-    color: rank && rank <= 3 ? '#1e1b4b' : 'rgba(255,255,255,0.8)',
+    background: rank === 1 ? '#fef3c7' : rank === 2 ? '#f1f5f9' : rank === 3 ? '#ffedd5' : '#eeeafd',
+    color: '#554b82',
   }}>
     {rank ?? '–'}
   </span>

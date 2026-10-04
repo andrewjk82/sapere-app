@@ -136,7 +136,7 @@ const StudyTimerPage = () => {
         />
       )}
 
-      <div style={{ display: view === 'timer' ? 'grid' : 'none', gridTemplateColumns: isMobile ? '1fr' : '1fr 300px', gap: 24, alignItems: 'start' }}>
+      <div style={{ display: view === 'timer' ? 'grid' : 'none', gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1fr) minmax(320px, 0.3fr)', gap: 24, alignItems: 'start' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <SubjectStopwatch
             uid={user?.uid}
