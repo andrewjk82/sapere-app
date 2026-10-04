@@ -11,8 +11,8 @@
         {
           "id": "y7-23a-q1a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an expression for the following.<br /><br />The sum of \\(4x\\) and \\(5y\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-4x + 5y\\)",
             "\\(4x + 5y\\)",
@@ -29,14 +29,13 @@
             {
               "explain": "Confirm the final answer.",
               "work": "\\(4x + 5y\\)"
-            },
-            {
-              "explain": "Confirm the final answer.",
-              "work": "\\(4x + 5y\\)"
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q1b",
