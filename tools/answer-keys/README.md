@@ -29,3 +29,5 @@ chapter review at "Chapter 1 review exercise" (key `1R`), question numbers are r
 first (`pages 598–682` of `CMS6_Advanced12_fullbook.pdf`), run `pdftotext -bbox` → `parsed.json`,
 render `pdftoppm -r 150` → `pages/p-NN.png`, then run the script in that directory. Review keys map
 to each chapter's review topic (`y12a-1j`, `y12a-2-2j`, `y12a-3I`, …).
+
+Cambridge 2nd-edition Extension 1 Year 11 (2025) uses the same layout; run `cambridge_adv11.py` unchanged (answers pages 761–888 of the full book).

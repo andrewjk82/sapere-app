@@ -76,7 +76,7 @@ meta, labels = {}, {}
 for key, ss in order.items():
     crops, cand = [], []
     for _, pg, col, y0, y1 in ss:
-        im = Image.open(f'pages/p-{pg:02d}.png').convert('L')
+        im = Image.open(f'pages/p-{pg:0{len(str(len(P)))}d}.png').convert('L')  # pdftoppm pads file names to the page-count width
         x0, x1 = (LX0, LX1) if col == 'L' else (RX0, RX1)
         top = TOP if y0 <= TOP + 2 else max(TOP, y0 - 6)
         bot = BOT if y1 >= BOT - 10 else y1 - 3
