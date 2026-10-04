@@ -448,8 +448,8 @@
         {
           "id": "y7-23a-q3b",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />One quarter of the number minus three",
+          "difficulty": "easy",
           "options": [
             "\\(\\frac{y}{4} - 3\\)",
             "\\(-\\frac{y}{4} - 3\\)",
@@ -473,10 +473,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "One quarter of the number",
+              "note": "It means divide a number by 4"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q3c",
