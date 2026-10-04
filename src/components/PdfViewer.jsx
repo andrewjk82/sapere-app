@@ -157,8 +157,11 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   }, []);
   const [width, setWidth] = useState(0);
   const [zoom, setZoom] = useState(1);
+  const [renderZoom, setRenderZoom] = useState(1);
   const zoomRef = useRef(1);
   const pendingZoomAnchorRef = useRef(null);
+  const pageStackRef = useRef(null);
+  const pageSpacerRef = useRef(null);
   const touchPointsRef = useRef(new Map());
   const pinchRef = useRef(null);
   const lastPinchRenderAtRef = useRef(0);
@@ -169,6 +172,16 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
 
   useLayoutEffect(() => {
     zoomRef.current = zoom;
+  }, [zoom]);
+
+  useLayoutEffect(() => {
+    const stack = pageStackRef.current;
+    if (stack) stack.style.transform = 'none';
+    const spacer = pageSpacerRef.current;
+    if (spacer) {
+      spacer.style.width = `${Math.max(scrollRef.current?.clientWidth || 0, Math.round(width * renderZoom) + PAGE_GAP * 2)}px`;
+      spacer.style.height = 'auto';
+    }
     const anchor = pendingZoomAnchorRef.current;
     const root = scrollRef.current;
     if (!anchor || !root) return;
@@ -177,9 +190,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     // point under the gesture (or viewport centre for the toolbar) as its
     // rendered width changes, instead of leaving it pinned to the left edge.
     const origin = PAGE_GAP;
-    root.scrollLeft = Math.max(0, origin + anchor.docX * zoom - anchor.localX);
-    root.scrollTop = Math.max(0, origin + anchor.docY * zoom - anchor.localY);
-  }, [zoom]);
+    root.scrollLeft = Math.max(0, anchor.docX * renderZoom - anchor.localX);
+    root.scrollTop = Math.max(0, origin + anchor.docY * renderZoom - anchor.localY);
+  }, [renderZoom, width]);
 
   useEffect(() => {
     if (!src) return undefined;
@@ -219,13 +232,15 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
       const localX = root.clientWidth / 2;
       const localY = root.clientHeight / 2;
       pendingZoomAnchorRef.current = {
-        docX: (root.scrollLeft + localX - PAGE_GAP) / current,
+        docX: (root.scrollLeft + localX) / current,
         docY: (root.scrollTop + localY - PAGE_GAP) / current,
         localX,
         localY,
       };
     }
+    zoomRef.current = next;
     setZoom(next);
+    setRenderZoom(next);
   };
 
   const handlePointerDown = (event) => {
@@ -242,9 +257,18 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
       pinchRef.current = {
         startDistance: Math.max(MIN_PINCH_DISTANCE, distanceBetween(points)),
         startZoom,
-        docX: (event.currentTarget.scrollLeft + localX - PAGE_GAP) / startZoom,
+        docX: (event.currentTarget.scrollLeft + localX) / startZoom,
         docY: (event.currentTarget.scrollTop + localY - PAGE_GAP) / startZoom,
       };
+      const stack = pageStackRef.current;
+      const spacer = pageSpacerRef.current;
+      if (stack && spacer) {
+        // Keep the pinch preview as a compositor transform. pdf.js only
+        // rasterizes again once the gesture ends.
+        stack.style.transform = 'none';
+        spacer.style.width = `${stack.offsetWidth}px`;
+        spacer.style.height = `${stack.offsetHeight}px`;
+      }
       lastPinchRenderAtRef.current = 0;
     }
   };
@@ -269,13 +293,21 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         localX,
         localY,
       };
+      const scale = nextZoom / pinchRef.current.startZoom;
+      const stack = pageStackRef.current;
+      const spacer = pageSpacerRef.current;
+      if (stack && spacer) {
+        const baseWidth = stack.offsetWidth;
+        const baseHeight = stack.offsetHeight;
+        stack.style.transform = `scale(${scale})`;
+        spacer.style.width = `${baseWidth * scale}px`;
+        spacer.style.height = `${baseHeight * scale}px`;
+        root.scrollLeft = Math.max(0, pinchRef.current.docX * nextZoom - localX);
+        root.scrollTop = Math.max(0, PAGE_GAP + pinchRef.current.docY * nextZoom - localY);
+      }
+      if (now - lastPinchRenderAtRef.current >= 42) setZoom(nextZoom);
     }
-    // Re-rendering every PDF page for every pointer event is expensive. Update
-    // at ~24fps; scroll anchoring runs with each rendered zoom step.
-    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 42) {
-      lastPinchRenderAtRef.current = now;
-      setZoom(nextZoom);
-    }
+    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 42) lastPinchRenderAtRef.current = now;
   };
 
   const handlePointerEnd = (event) => {
@@ -294,7 +326,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
           localX: center.x - rect.left,
           localY: center.y - rect.top,
         };
+        zoomRef.current = finalZoom;
         setZoom(finalZoom);
+        setRenderZoom(finalZoom);
       }
     }
     touchPointsRef.current.delete(event.pointerId);
@@ -336,7 +370,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     ));
   }
 
-  const pageWidth = Math.round(width * zoom);
+  const pageWidth = Math.round(width * renderZoom);
   const contentWidth = Math.max(scrollEl?.clientWidth || 0, pageWidth + PAGE_GAP * 2);
 
   return (
@@ -355,17 +389,19 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
             <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa' }} />
           </div>
         ) : (
-          <div style={{ width: contentWidth, minHeight: '100%' }}>
-            {Array.from({ length: doc.numPages }, (_, i) => (
-              <PdfPage
-                key={i + 1}
-                pdf={doc.pdf}
-                pageNumber={i + 1}
-                width={pageWidth}
-                initialRatio={doc.ratio}
-                scrollRoot={scrollEl}
-              />
-            ))}
+          <div ref={pageSpacerRef} style={{ width: contentWidth, minHeight: '100%', position: 'relative' }}>
+            <div ref={pageStackRef} style={{ width: contentWidth, minHeight: '100%', transform: 'none', transformOrigin: 'top left', willChange: 'transform' }}>
+              {Array.from({ length: doc.numPages }, (_, i) => (
+                <PdfPage
+                  key={i + 1}
+                  pdf={doc.pdf}
+                  pageNumber={i + 1}
+                  width={pageWidth}
+                  initialRatio={doc.ratio}
+                  scrollRoot={scrollEl}
+                />
+              ))}
+            </div>
           </div>
         )}
       </div>
