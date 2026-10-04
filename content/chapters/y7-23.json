@@ -169,8 +169,8 @@
         {
           "id": "y7-23a-q1e",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an expression for the following.<br /><br />Three quarters of \\(w\\)",
+          "difficulty": "easy",
           "options": [
             "\\(\\frac{4w}{4}\\)",
             "\\(\\frac{3w}{4}\\)",
@@ -194,7 +194,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Three quarters ",
+              "note": "Multiply by \\( \\frac{3}{4} \\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q2a",
