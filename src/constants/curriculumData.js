@@ -3076,7 +3076,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-2',
         title: 'Chapter 2: Graphs and equations',
-        modules: 9,
+        modules: 10,
         topics: [
           { id: 'y12a-2A', code: '2A', title: 'The sign of a function' },
           { id: 'y12a-2B', code: '2B', title: 'Vertical and horizontal asymptotes' },
@@ -3086,7 +3086,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-2F', code: '2F', title: 'Review of translations and reflections' },
           { id: 'y12a-2G', code: '2G', title: 'Dilations' },
           { id: 'y12a-2H', code: '2H', title: 'Combinations of transformations' },
-          { id: 'y12a-2I', code: '2I', title: 'Trigonometric graphs' }
+          { id: 'y12a-2I', code: '2I', title: 'Trigonometric graphs' },
+          { id: 'y12a-2-2j', code: '2J', title: 'Review' }
         ]
       },
       {
@@ -3108,7 +3109,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-4',
         title: 'Chapter 4: Integration',
-        modules: 9,
+        modules: 10,
         topics: [
           { id: 'y12a-4A', code: '4A', title: 'Areas and the definite integral' },
           { id: 'y12a-4B', code: '4B', title: 'The fundamental theorem of calculus' },
@@ -3118,7 +3119,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-4F', code: '4F', title: 'Finding areas by integration' },
           { id: 'y12a-4G', code: '4G', title: 'Areas of compound regions' },
           { id: 'y12a-4H', code: '4H', title: 'The trapezoidal rule' },
-          { id: 'y12a-4I', code: '4I', title: 'The reverse chain rule' }
+          { id: 'y12a-4I', code: '4I', title: 'The reverse chain rule' },
+          { id: 'y12a-4-4j', code: '4J', title: 'Review' }
         ]
       },
       {
@@ -3143,26 +3145,28 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-6',
         title: 'Chapter 6: The trigonometric functions',
-        modules: 5,
+        modules: 6,
         topics: [
           { id: 'y12a-6A', code: '6A', title: 'The behaviour of sin x near the origin' },
           { id: 'y12a-6B', code: '6B', title: 'Differentiating the trigonometric functions' },
           { id: 'y12a-6C', code: '6C', title: 'Applications of differentiation' },
           { id: 'y12a-6D', code: '6D', title: 'Integrating the trigonometric functions' },
-          { id: 'y12a-6E', code: '6E', title: 'Applications of integration' }
+          { id: 'y12a-6E', code: '6E', title: 'Applications of integration' },
+          { id: 'y12a-6-6f', code: '6F', title: 'Review' }
         ]
       },
       {
         id: 'y12a-7',
         title: 'Chapter 7: Motion and rates',
-        modules: 6,
+        modules: 7,
         topics: [
           { id: 'y12a-7A', code: '7A', title: 'Average velocity and speed' },
           { id: 'y12a-7B', code: '7B', title: 'Velocity and acceleration as derivatives' },
           { id: 'y12a-7C', code: '7C', title: 'Integrating with respect to time' },
           { id: 'y12a-7D', code: '7D', title: 'Rates and differentiation' },
           { id: 'y12a-7E', code: '7E', title: 'Rates and integration' },
-          { id: 'y12a-7F', code: '7F', title: 'Exponential growth and decay' }
+          { id: 'y12a-7F', code: '7F', title: 'Exponential growth and decay' },
+          { id: 'y12a-7-7g', code: '7G', title: 'Review' }
         ]
       },
       {
@@ -3181,20 +3185,21 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12a-9',
         title: 'Chapter 9: Displaying and interpreting data',
-        modules: 6,
+        modules: 7,
         topics: [
           { id: 'y12a-9A', code: '9A', title: 'Displaying data' },
           { id: 'y12a-9B', code: '9B', title: 'Grouped data and histograms' },
           { id: 'y12a-9C', code: '9C', title: 'Quartiles and interquartile range' },
           { id: 'y12a-9D', code: '9D', title: 'Bivariate data' },
           { id: 'y12a-9E', code: '9E', title: 'Formulae for correlation and regression' },
-          { id: 'y12a-9F', code: '9F', title: 'Using technology with bivariate data' }
+          { id: 'y12a-9F', code: '9F', title: 'Using technology with bivariate data' },
+          { id: 'y12a-9-9g', code: '9G', title: 'Review' }
         ]
       },
       {
         id: 'y12a-10',
         title: 'Chapter 10: Continuous probability distributions',
-        modules: 7,
+        modules: 8,
         topics: [
           { id: 'y12a-10A', code: '10A', title: 'Relative frequency' },
           { id: 'y12a-10B', code: '10B', title: 'Continuous distributions' },
@@ -3202,7 +3207,8 @@ export const CURRICULUM_DATA = {
           { id: 'y12a-10D', code: '10D', title: 'The standard normal distribution' },
           { id: 'y12a-10E', code: '10E', title: 'General normal distributions' },
           { id: 'y12a-10F', code: '10F', title: 'Applications of the normal distribution' },
-          { id: 'y12a-10G', code: '10G', title: 'Investigations using the normal distribution' }
+          { id: 'y12a-10G', code: '10G', title: 'Investigations using the normal distribution' },
+          { id: 'y12a-10-10h', code: '10H', title: 'Review' }
         ]
       }
     ],
