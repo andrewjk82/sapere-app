@@ -27,6 +27,18 @@ const MAX_RENDER_WIDTH = 3200;
 const MIN_ZOOM = 0.5;
 const MAX_ZOOM = 2.5;
 const ZOOM_STEP = 0.25;
+const MIN_PINCH_DISTANCE = 1;
+
+const distanceBetween = ([first, second]) => Math.hypot(
+  second.x - first.x,
+  second.y - first.y,
+);
+
+const zoomForPinch = (pinch, points) => {
+  if (!pinch || points.length < 2) return null;
+  const next = pinch.startZoom * (distanceBetween(points) / pinch.startDistance);
+  return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Math.round(next * 100) / 100));
+};
 
 const ZoomControls = ({ zoom, onZoomChange }) => (
   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 6, flexShrink: 0, padding: '5px 10px', background: '#fff', borderBottom: '1px solid #e2e8f0' }}>
@@ -129,6 +141,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const [scrollEl, setScrollEl] = useState(null);
   const [width, setWidth] = useState(0);
   const [zoom, setZoom] = useState(1);
+  const touchPointsRef = useRef(new Map());
+  const pinchRef = useRef(null);
+  const lastPinchRenderAtRef = useRef(0);
   // Keyed by src so a new document never briefly shows the previous one.
   const [opened, setOpened] = useState(null); // { src, pdf, numPages, ratio } | { src, failed: true }
   const doc = opened?.src === src && !opened.failed ? opened : null;
@@ -164,6 +179,46 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     return () => ro.disconnect();
   }, [scrollEl]);
 
+  const handlePointerDown = (event) => {
+    if (event.pointerType !== 'touch') return;
+    touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* Safari may already own the pointer */ }
+    if (touchPointsRef.current.size === 2) {
+      const points = [...touchPointsRef.current.values()];
+      pinchRef.current = {
+        startDistance: Math.max(MIN_PINCH_DISTANCE, distanceBetween(points)),
+        startZoom: zoom,
+      };
+      lastPinchRenderAtRef.current = 0;
+    }
+  };
+
+  const handlePointerMove = (event) => {
+    if (!touchPointsRef.current.has(event.pointerId)) return;
+    touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (touchPointsRef.current.size < 2 || !pinchRef.current) return;
+    if (event.cancelable) event.preventDefault();
+
+    const nextZoom = zoomForPinch(pinchRef.current, [...touchPointsRef.current.values()]);
+    const now = performance.now();
+    // Rendering every page on every touch event is expensive on phones. Keep
+    // the pinch feedback smooth while limiting PDF canvas re-renders to ~15fps.
+    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 65) {
+      lastPinchRenderAtRef.current = now;
+      setZoom(nextZoom);
+    }
+  };
+
+  const handlePointerEnd = (event) => {
+    if (!touchPointsRef.current.has(event.pointerId)) return;
+    if (touchPointsRef.current.size >= 2 && pinchRef.current) {
+      const finalZoom = zoomForPinch(pinchRef.current, [...touchPointsRef.current.values()]);
+      if (finalZoom !== null) setZoom(finalZoom);
+    }
+    touchPointsRef.current.delete(event.pointerId);
+    if (touchPointsRef.current.size < 2) pinchRef.current = null;
+  };
+
   if (loading) {
     return centered(style, (
       <>
@@ -177,7 +232,14 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     if (fallback) return (
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
         <ZoomControls zoom={zoom} onZoomChange={setZoom} />
-        <div ref={setScrollEl} style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch' }}>
+        <div
+          ref={setScrollEl}
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerEnd}
+          onPointerCancel={handlePointerEnd}
+          style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
+        >
           <div style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%`, minWidth: `${zoom * 100}%`, minHeight: `${zoom * 100}%` }}>
             <iframe title="Worksheet" src={fallback} allow="autoplay" style={{ width: `${100 / zoom}%`, height: `${100 / zoom}%`, border: 0, transform: `scale(${zoom})`, transformOrigin: 'top left' }} />
           </div>
@@ -200,7 +262,11 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
       <ZoomControls zoom={zoom} onZoomChange={setZoom} />
       <div
         ref={setScrollEl}
-        style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch' }}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerEnd}
+        onPointerCancel={handlePointerEnd}
+        style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
       >
         {!doc || !width ? (
           <div style={{ display: 'grid', placeItems: 'center', minHeight: 200 }}>
