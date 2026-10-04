@@ -1006,26 +1006,27 @@
           "id": "y12adv-task1-q11",
           "type": "review",
           "difficulty": "hard",
-          "stem": "The graph of \\(y=f(x)\\) is shown. On the same axes, sketch \\(y=f(2x-1)\\), showing all important features.",
-          "figure": {
-            "svg": "fig:cc5d74d696"
-          },
+          "stem": "The graph of \\\\(y=f(x)\\\\) is shown below. On the same axes, sketch \\\\(y=f(2x-1)\\\\), showing all important features.\\n<svg viewBox=\"0 0 500 280\" width=\"100%\" style=\"max-width:500px;display:block;margin:auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#e2e8f0\" stroke-width=\"1\">\n    <line x1=\"0\" y1=\"40\" x2=\"500\" y2=\"40\" />\n    <line x1=\"0\" y1=\"120\" x2=\"500\" y2=\"120\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"40\" y1=\"0\" x2=\"40\" y2=\"280\" />\n    <line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"280\" />\n    <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"280\" />\n    <line x1=\"280\" y1=\"0\" x2=\"280\" y2=\"280\" />\n    <line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"280\" />\n    <line x1=\"440\" y1=\"0\" x2=\"440\" y2=\"280\" />\n  </g>\n  <defs>\n    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#64748b\" />\n    </marker>\n  </defs>\n  <line x1=\"20\" y1=\"200\" x2=\"480\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <line x1=\"200\" y1=\"260\" x2=\"200\" y2=\"20\" stroke=\"#64748b\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  \n  <text x=\"250\" y=\"20\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Given curve y = f(x)</text>\n\n  <path d=\"M 120,40 Q 240,400 360,40\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\" />\n  \n  <circle cx=\"120\" cy=\"40\" r=\"5\" fill=\"#fbbf24\" />\n  <text x=\"100\" y=\"30\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\">(-1, 2)</text>\n  \n  <circle cx=\"200\" cy=\"200\" r=\"5\" fill=\"#fbbf24\" />\n  <text x=\"170\" y=\"215\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\">(0, 0)</text>\n  \n  <circle cx=\"240\" cy=\"220\" r=\"5\" fill=\"#fbbf24\" />\n  <text x=\"240\" y=\"240\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">(0.5, -0.25)</text>\n  \n  <circle cx=\"280\" cy=\"200\" r=\"5\" fill=\"#fbbf24\" />\n  <text x=\"295\" y=\"215\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\">(1, 0)</text>\n  \n  <circle cx=\"360\" cy=\"40\" r=\"5\" fill=\"#fbbf24\" />\n  <text x=\"380\" y=\"30\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1e293b\">(2, 2)</text>\n</svg>",
           "manual": true,
           "answer": "(0,2),(\\frac12,0),(\\frac34,-\\frac14),(1,0),(\\frac32,2)",
           "solution": "(0,2),(\\frac12,0),(\\frac34,-\\frac14),(1,0),(\\frac32,2)",
           "hint": "Map each source point (u,v) to ((u+1)/2,v).",
           "steps": [
             {
-              "explain": "Read source roots, vertex and reference points.",
-              "work": "(-1,2),(0,0),(\\frac12,-\\frac14),(1,0),(2,2)"
+              "explain": "Identify the key points on the original graph \\\\(y = f(x)\\\\).",
+              "work": "\\\\text{Points: } (-1, 2), (0, 0), (0.5, -0.25), (1, 0), (2, 2)"
             },
             {
-              "explain": "Solve the inside transformation for the new x-coordinate.",
-              "work": "2x-1=u\\Rightarrow x=\\frac{u+1}{2}"
+              "explain": "Analyze the transformation \\\\(y = f(2x - 1)\\\\).",
+              "work": "\\\\text{To find the new x-coordinates, we solve } 2x - 1 = X \\\\implies 2x = X + 1 \\\\implies x = \\\\frac{X + 1}{2}."
             },
             {
-              "explain": "Map and label every key point, then sketch the compressed parabola.",
-              "work": "(-1,2)\\to(0,2);\\ (0,0)\\to(\\frac12,0);\\ (\\frac12,-\\frac14)\\to(\\frac34,-\\frac14);\\ (1,0)\\to(1,0);\\ (2,2)\\to(\\frac32,2)"
+              "explain": "Apply the transformation to each key point.",
+              "work": "\\\\text{Map each point } (X, Y) \\\\to \\\\left(\\\\frac{X + 1}{2}, Y\\\\right):\\n\\\\( (-1, 2) \\\\to (0, 2) \\\\)\\n\\\\( (0, 0) \\\\to (0.5, 0) \\\\)\\n\\\\( (0.5, -0.25) \\\\to (0.75, -0.25) \\\\)\\n\\\\( (1, 0) \\\\to (1, 0) \\\\)\\n\\\\( (2, 2) \\\\to (1.5, 2) \\\\)"
+            },
+            {
+              "explain": "Sketch the new graph, showing both the original curve (dashed) and the transformed curve on the same axes.",
+              "work": "\\\\text{The graph is compressed horizontally by a factor of 2, then shifted right by 0.5.}\\n<svg viewBox=\"0 0 500 280\" width=\"100%\" style=\"max-width:500px;display:block;margin:auto;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#e2e8f0\" stroke-width=\"1\">\n    <line x1=\"0\" y1=\"40\" x2=\"500\" y2=\"40\" />\n    <line x1=\"0\" y1=\"120\" x2=\"500\" y2=\"120\" />\n    <line x1=\"0\" y1=\"200\" x2=\"500\" y2=\"200\" />\n    <line x1=\"40\" y1=\"0\" x2=\"40\" y2=\"280\" />\n    <line x1=\"120\" y1=\"0\" x2=\"120\" y2=\"280\" />\n    <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"280\" />\n    <line x1=\"280\" y1=\"0\" x2=\"280\" y2=\"280\" />\n    <line x1=\"360\" y1=\"0\" x2=\"360\" y2=\"280\" />\n    <line x1=\"440\" y1=\"0\" x2=\"440\" y2=\"280\" />\n  </g>\n  <defs>\n    <marker id=\"arrow\" viewBox=\"0 0 10 10\" refX=\"5\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\">\n      <path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#64748b\" />\n    </marker>\n  </defs>\n  <line x1=\"20\" y1=\"200\" x2=\"480\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n  <line x1=\"200\" y1=\"260\" x2=\"200\" y2=\"20\" stroke=\"#64748b\" stroke-width=\"2\" marker-end=\"url(#arrow)\" />\n\n  <text x=\"250\" y=\"20\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Transformed curve y = f(2x - 1)</text>\n\n  <!-- Original Curve (faded) -->\n  <path d=\"M 120,40 Q 240,400 360,40\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2\" stroke-dasharray=\"5,5\" />\n  \n  <!-- New Curve -->\n  <path d=\"M 200,40 Q 260,400 320,40\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\" />\n  \n  <!-- New Points -->\n  <circle cx=\"200\" cy=\"40\" r=\"5\" fill=\"#f87171\" />\n  <text x=\"180\" y=\"30\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\">(0, 2)</text>\n  \n  <circle cx=\"240\" cy=\"200\" r=\"5\" fill=\"#f87171\" />\n  <text x=\"220\" y=\"215\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\">(0.5, 0)</text>\n  \n  <circle cx=\"260\" cy=\"220\" r=\"5\" fill=\"#f87171\" />\n  <text x=\"260\" y=\"240\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\" text-anchor=\"middle\">(0.75, -0.25)</text>\n  \n  <circle cx=\"280\" cy=\"200\" r=\"5\" fill=\"#f87171\" />\n  <text x=\"300\" y=\"215\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\">(1, 0)</text>\n  \n  <circle cx=\"320\" cy=\"40\" r=\"5\" fill=\"#f87171\" />\n  <text x=\"340\" y=\"30\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\">(1.5, 2)</text>\n</svg>"
             }
           ],
           "meta": {
