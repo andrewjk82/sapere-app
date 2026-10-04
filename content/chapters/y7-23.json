@@ -367,8 +367,8 @@
         {
           "id": "y7-23a-q2e",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an algebraic expression for the following.<br /><br />The average of \\(6m\\) and \\(10m\\)",
+          "difficulty": "easy",
           "options": [
             "\\(8m\\)",
             "\\(9m\\)",
@@ -392,7 +392,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "average",
+              "note": "Add them and divide by number of terms"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q3a",
