@@ -483,6 +483,8 @@ const Schedule = ({ students = [] }) => {
     setIsSaving(true);
     try {
       const updatePayload = buildSessionUpdatePayload(editData);
+      let homeworkChanged = false;
+      let homeworkWasAlreadyAssigned = false;
 
       if (choice === 'single') {
         if (selectedSession.groupId) {
@@ -497,8 +499,16 @@ const Schedule = ({ students = [] }) => {
           const instanceDocs = groupSnap.docs.filter(
             (sessionDoc) => (sessionDoc.data().date || '') === selectedSession.date
           );
+          homeworkChanged = instanceDocs.some(
+            (sessionDoc) => (sessionDoc.data().homework || '') !== updatePayload.homework
+          );
+          homeworkWasAlreadyAssigned = instanceDocs.some(
+            (sessionDoc) => Boolean(sessionDoc.data().homework)
+          );
 
           if (instanceDocs.length === 0) {
+            homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
+            homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
             await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
           } else {
             const batch = writeBatch(db);
@@ -506,12 +516,20 @@ const Schedule = ({ students = [] }) => {
             await batch.commit();
           }
         } else {
+          homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
+          homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
           await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
         }
       } else if (choice === 'series' && selectedSession.groupId) {
         const q = query(collection(db, 'sessions'), where('groupId', '==', selectedSession.groupId));
         const snap = await getDocs(q);
         const futureDocs = snap.docs.filter(d => (d.data().date || '') >= selectedSession.date);
+        homeworkChanged = futureDocs.some(
+          (sessionDoc) => (sessionDoc.data().homework || '') !== updatePayload.homework
+        );
+        homeworkWasAlreadyAssigned = futureDocs.some(
+          (sessionDoc) => Boolean(sessionDoc.data().homework)
+        );
         const dateShiftDays = getDateShiftDays(selectedSession.date, updatePayload.date);
 
         const batch = writeBatch(db);
@@ -535,8 +553,16 @@ const Schedule = ({ students = [] }) => {
       const recipients = selectedSession.isGroupedClass && Array.isArray(selectedSession.groupStudents)
         ? selectedSession.groupStudents
         : [selectedSession];
-      const text = buildScheduleUpdateMessage(selectedSession, updatePayload);
-      const html = buildScheduleUpdateHtml(selectedSession, updatePayload);
+      const homeworkNotification = homeworkChanged && Boolean(updatePayload.homework);
+      const notificationTitle = homeworkNotification
+        ? (homeworkWasAlreadyAssigned ? 'Homework updated' : 'New homework assigned')
+        : 'Your schedule has been updated';
+      const text = homeworkNotification
+        ? `${notificationTitle} for your ${normalizeSubjectLabel(selectedSession.subject || 'lesson')} session.\n\nDate: ${updatePayload.date}\nTime: ${updatePayload.startTime} - ${updatePayload.endTime}\n\nHomework:\n${updatePayload.homework}`
+        : buildScheduleUpdateMessage(selectedSession, updatePayload);
+      const html = homeworkNotification
+        ? `<p>${stripHtml(notificationTitle)} for your <strong>${stripHtml(normalizeSubjectLabel(selectedSession.subject || 'lesson'))}</strong> session.</p><p>${stripHtml(updatePayload.date)} · ${stripHtml(updatePayload.startTime)} - ${stripHtml(updatePayload.endTime)}</p><h3 style="margin:18px 0 8px; color:#1e1b4b;">Homework</h3><p style="white-space:pre-wrap; margin:0;">${stripHtml(updatePayload.homework)}</p>`
+        : buildScheduleUpdateHtml(selectedSession, updatePayload);
       // Fire update notifications in the background — don't block the save UI
       // on email delivery (Gmail SMTP can take several seconds per message).
       Promise.allSettled(recipients.map((recipient) => fetch('/api/send-notif', {
@@ -545,14 +571,17 @@ const Schedule = ({ students = [] }) => {
         body: JSON.stringify({
           studentId: recipient.studentId,
           email: recipient.studentEmail || recipient.email || '',
-          subject: 'Your schedule has been updated',
+          subject: notificationTitle,
           text,
           html,
           metadata: {
-            type: 'schedule_update',
+            type: homeworkNotification
+              ? (homeworkWasAlreadyAssigned ? 'homework_updated' : 'homework_assigned')
+              : 'schedule_update',
             sessionId: recipient.id || selectedSession.id,
             date: updatePayload.date,
-            learnedTopics: updatePayload.learnedTopics
+            learnedTopics: updatePayload.learnedTopics,
+            homework: homeworkNotification ? updatePayload.homework : undefined,
           }
         })
       }))).then((results) => {
