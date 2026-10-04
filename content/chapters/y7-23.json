@@ -33,6 +33,12 @@
           ],
           "timeLimit": 30,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "sum",
+              "note": "+"
+            }
+          ],
           "meta": {
             "origin": "teacher"
           }
