@@ -4482,7 +4482,7 @@
           "id": "y8-13a-q10a",
           "type": "review",
           "difficulty": "hard",
-          "stem": "In the quadrilateral \\(PQRS\\), the opposite sides are equal (\\(PQ = RS\\) and \\(PS = QR\\)). Join the diagonal \\(PR\\).\na) Prove that \\(\\triangle PQR \\equiv \\triangle RSP\\).",
+          "stem": "In the quadrilateral \\\\(PQRS\\\\), the opposite sides are equal (\\\\(PQ = RS\\\\) and \\\\(PS = QR\\\\)). Join the diagonal \\\\(PR\\\\). Prove that \\\\(\\triangle PQR \\\\equiv \\\\triangle RSP\\\\).",
           "answer": "In \\(\\triangle PQR\\) and \\(\\triangle RSP\\):\n1.\n\\(PQ = RS\\) (given)\n2.\n\\(QR = SP\\) (given)\n3.\n\\(PR = RP\\) (common side)\nTherefore, \\(\\triangle PQR \\equiv \\triangle RSP\\) (SSS).",
           "hint": "Write a full structured solution for the teacher to mark.",
           "solution": "In \\(\\triangle PQR\\) and \\(\\triangle RSP\\):\n1.\n\\(PQ = RS\\) (given)\n2.\n\\(QR = SP\\) (given)\n3.\n\\(PR = RP\\) (common side)\nTherefore, \\(\\triangle PQR \\equiv \\triangle RSP\\) (SSS).",
@@ -4512,7 +4512,7 @@
           "id": "y8-13a-q10b",
           "type": "review",
           "difficulty": "hard",
-          "stem": "In the quadrilateral \\(PQRS\\), the opposite sides are equal (\\(PQ = RS\\) and \\(PS = QR\\)). Join the diagonal \\(PR\\).\nb) Hence show that \\(PQ \\parallel SR\\) and \\(PS \\parallel QR\\), and hence that \\(PQRS\\) is a parallelogram.",
+          "stem": "In the quadrilateral \\\\(PQRS\\\\), the opposite sides are equal (\\\\(PQ = RS\\\\) and \\\\(PS = QR\\\\)). Join the diagonal \\\\(PR\\\\). Show that \\\\(PQ \\\\parallel SR\\\\) and \\\\(PS \\\\parallel QR\\\\), and hence that \\\\(PQRS\\\\) is a parallelogram.",
           "answer": "Since \\(\\triangle PQR \\equiv \\triangle RSP\\), corresponding angles are equal: \\(\\angle QPR = \\angle SRP\\).\nSince these alternate interior angles are equal, \\(PQ \\parallel SR\\).\nSimilarly, \\(\\angle PRQ = \\angle RPS \\implies PS \\parallel QR\\).\nSince both pairs of opposite sides are parallel, \\(PQRS\\) is a parallelogram.",
           "hint": "Write a full structured solution for the teacher to mark.",
           "solution": "Since \\(\\triangle PQR \\equiv \\triangle RSP\\), corresponding angles are equal: \\(\\angle QPR = \\angle SRP\\).\nSince these alternate interior angles are equal, \\(PQ \\parallel SR\\).\nSimilarly, \\(\\angle PRQ = \\angle RPS \\implies PS \\parallel QR\\).\nSince both pairs of opposite sides are parallel, \\(PQRS\\) is a parallelogram.",
@@ -13500,4 +13500,4 @@
       ]
     }
   ]
-}
+}\n
