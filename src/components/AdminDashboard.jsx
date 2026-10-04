@@ -372,38 +372,6 @@ const AdminDashboard = ({
 
       <HomeworkInbox />
 
-      {/* Student health columns */}
-      <div className="ad__pulse">
-        <HealthColumn
-          kind="risk"
-          title="At risk"
-          icon={AlertTriangle}
-          students={buckets.risk}
-          onSelect={onSelectStudent}
-        />
-        <HealthColumn
-          kind="watch"
-          title="Watch"
-          icon={Eye}
-          students={buckets.watch}
-          onSelect={onSelectStudent}
-        />
-        <HealthColumn
-          kind="steady"
-          title="Steady"
-          icon={CheckCircle2}
-          students={buckets.steady}
-          onSelect={onSelectStudent}
-        />
-        <HealthColumn
-          kind="thriving"
-          title="Thriving"
-          icon={TrendingUp}
-          students={buckets.thriving}
-          onSelect={onSelectStudent}
-        />
-      </div>
-
       {/* Awaiting review + Activity */}
       <div className="ad__row">
         <div className="ad__panel">
@@ -473,6 +441,38 @@ const AdminDashboard = ({
             </div>
           )}
         </div>
+      </div>
+
+      {/* Student health columns */}
+      <div className="ad__pulse">
+        <HealthColumn
+          kind="risk"
+          title="At risk"
+          icon={AlertTriangle}
+          students={buckets.risk}
+          onSelect={onSelectStudent}
+        />
+        <HealthColumn
+          kind="watch"
+          title="Watch"
+          icon={Eye}
+          students={buckets.watch}
+          onSelect={onSelectStudent}
+        />
+        <HealthColumn
+          kind="steady"
+          title="Steady"
+          icon={CheckCircle2}
+          students={buckets.steady}
+          onSelect={onSelectStudent}
+        />
+        <HealthColumn
+          kind="thriving"
+          title="Thriving"
+          icon={TrendingUp}
+          students={buckets.thriving}
+          onSelect={onSelectStudent}
+        />
       </div>
 
       {/* Overview + System status */}
