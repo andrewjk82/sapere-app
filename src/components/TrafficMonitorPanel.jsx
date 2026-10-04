@@ -3,9 +3,11 @@ import { db } from '../firebase/config';
 import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
 import { Activity, Database, Server, Clock, Users, ArrowUpRight, RefreshCw } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { localCache } from '../services/localCacheService';
 
 // This is an on-demand snapshot. Do not poll traffic_logs: monitoring traffic
 // must not itself create recurring Firestore reads.
+const TRAFFIC_CACHE_KEY = 'traffic-monitor:snapshot:v1';
 
 const TrafficMonitorPanel = () => {
   const [logs, setLogs] = useState([]);
@@ -19,15 +21,7 @@ const TrafficMonitorPanel = () => {
     activeSessions: new Set(),
   });
 
-  const applySnap = useCallback((snap) => {
-    const docs = snap.docs.map(d => ({
-      id: d.id,
-      ...d.data(),
-      formattedTime: d.data().timestamp
-        ? new Date(d.data().timestamp.seconds * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
-        : 'Just now'
-    }));
-
+  const applyLogs = useCallback((docs, updatedAt = Date.now()) => {
     let reads = 0;
     let writes = 0;
     let apis = 0;
@@ -48,13 +42,51 @@ const TrafficMonitorPanel = () => {
       activeSessions: sessions
     });
     setLoading(false);
-    setLastUpdated(new Date());
+    setLastUpdated(new Date(updatedAt));
+    localCache.set(TRAFFIC_CACHE_KEY, {
+      logs: docs,
+      totalReads: reads,
+      totalWrites: writes,
+      totalApiCalls: apis,
+      activeSessions: [...sessions],
+      updatedAt,
+    });
   }, []);
 
-  const load = useCallback(async () => {
+  const applySnap = useCallback((snap) => {
+    const docs = snap.docs.map(d => {
+      const data = d.data();
+      const timestampMs = data.timestamp?.toMillis?.() || (data.timestamp?.seconds ? data.timestamp.seconds * 1000 : 0);
+      return {
+        id: d.id,
+        ...data,
+        formattedTime: timestampMs
+          ? new Date(timestampMs).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+          : 'Just now'
+      };
+    });
+    applyLogs(docs);
+  }, [applyLogs]);
+
+  const load = useCallback(async (force = false, cachedSnapshot = null) => {
     if (document.visibilityState === 'hidden') return;
     setRefreshing(true);
     try {
+      if (!force && cachedSnapshot) {
+        const newest = await getDocs(query(
+          collection(db, 'traffic_logs'),
+          orderBy('timestamp', 'desc'),
+          limit(1)
+        ));
+        const newestId = newest.docs[0]?.id || null;
+        const cachedNewestId = cachedSnapshot.logs?.[0]?.id || null;
+        if (newestId === cachedNewestId) {
+          setLastUpdated(new Date(cachedSnapshot.updatedAt || Date.now()));
+          setLoading(false);
+          return;
+        }
+      }
+
       const q = query(
         collection(db, 'traffic_logs'),
         orderBy('timestamp', 'desc'),
@@ -71,7 +103,19 @@ const TrafficMonitorPanel = () => {
   }, [applySnap]);
 
   useEffect(() => {
-    load();
+    const cached = localCache.get(TRAFFIC_CACHE_KEY);
+    if (cached?.logs) {
+      setLogs(cached.logs);
+      setStats({
+        totalReads: cached.totalReads || 0,
+        totalWrites: cached.totalWrites || 0,
+        totalApiCalls: cached.totalApiCalls || 0,
+        activeSessions: new Set(cached.activeSessions || []),
+      });
+      setLastUpdated(new Date(cached.updatedAt || Date.now()));
+      setLoading(false);
+    }
+    load(false, cached);
   }, [load]);
 
   // Simple SVG sparkline generator for the last 20 logs
@@ -167,7 +211,7 @@ const TrafficMonitorPanel = () => {
             </div>
             <button
               type="button"
-              onClick={load}
+              onClick={() => load(true)}
               disabled={refreshing}
               style={{ display: 'inline-flex', alignItems: 'center', gap: 7, padding: '9px 13px', border: '1px solid #e0e7ff', borderRadius: 12, background: '#fff', color: '#4f46e5', fontWeight: 800, cursor: refreshing ? 'wait' : 'pointer', opacity: refreshing ? 0.7 : 1 }}
             >
