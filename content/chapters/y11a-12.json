@@ -1364,6 +1364,118 @@
           "dna": {
             "dnaId": "PROB-COND-01"
           }
+        },
+        {
+          "id": "y12adv-task1-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Pat and Chandra take turns rolling two fair dice. The first player to roll a double six wins, and Pat goes first. What is the probability that Pat wins on his first turn?",
+          "options": [
+            "\\(\\frac1{36}\\)",
+            "\\(\\frac1{18}\\)",
+            "\\(\\frac{11}{36}\\)",
+            "\\(\\frac{35}{36}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "two fair dice",
+              "note": "There are 36 equally likely ordered outcomes for one roll of two dice."
+            },
+            {
+              "text": "a double six",
+              "note": "Only the outcome \\( (6,6) \\) is a success."
+            },
+            {
+              "text": "Pat wins on his first turn",
+              "note": "For the first-turn event, count a success on Pat's first roll only."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Treat the two dice as an ordered pair; all 6×6 outcomes are equally likely.",
+              "work": "\\(6\\times6=36\\text{ outcomes}\\)",
+              "figure": {
+                "svg": "fig:e363eb54c4"
+              }
+            },
+            {
+              "explain": "There is exactly one double-six outcome among the 36 outcomes.",
+              "work": "\\(P(\\text{double six})=\\frac{1}{36}\\)",
+              "figure": {
+                "svg": "fig:519cf9a573"
+              }
+            },
+            {
+              "explain": "Pat wins on his first turn exactly when that first roll is a double six.",
+              "work": "\\(P(\\text{Pat wins first turn})=\\frac{1}{36}\\)",
+              "figure": {
+                "svg": "fig:1fd3b5034f"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q6ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Pat and Chandra take turns rolling two fair dice. The first player to roll a double six wins, and Pat goes first. What is the probability that Pat wins on one of Pat's first two turns?",
+          "options": [
+            "\\(\\frac{71}{1296}\\)",
+            "\\(\\frac{2521}{46656}\\)",
+            "\\(\\frac{71}{46656}\\)",
+            "\\(\\frac{1295}{46656}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "two fair dice",
+              "note": "A double six has probability \\(p=1/36\\); failure has probability \\(q=35/36\\)."
+            },
+            {
+              "text": "Pat goes first",
+              "note": "Pat can win on turn 1, or on his next turn after both players have failed once."
+            },
+            {
+              "text": "one of Pat's first two turns",
+              "note": "Add the disjoint paths: success immediately, or fail-fail-success."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let p be the probability of a double six and q the probability of not rolling one.",
+              "work": "\\(p=\\frac1{36},\\qquad q=1-p=\\frac{35}{36}\\)",
+              "figure": {
+                "svg": "fig:0487f0829a"
+              }
+            },
+            {
+              "explain": "On Pat's second turn, both Pat and Chandra must have failed on the first two throws.",
+              "work": "\\(P(\\text{win on Pat turn 2})=q^2p\\)",
+              "figure": {
+                "svg": "fig:58b526ea15"
+              }
+            },
+            {
+              "explain": "The first-turn win and second-turn win are disjoint events, so add their probabilities.",
+              "work": "\\(p+q^2p=\\frac1{36}+\\left(\\frac{35}{36}\\right)^2\\frac1{36}\\)\n\\(=\\frac{1296+1225}{46656}=\\frac{2521}{46656}\\)",
+              "figure": {
+                "svg": "fig:363363d26f"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -1839,6 +1951,62 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "y12adv-task1-q6iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Pat and Chandra take turns rolling two fair dice. The first player to roll a double six wins, and Pat goes first. If they keep playing until someone wins, what is the probability Pat eventually wins?",
+          "options": [
+            "\\(\\frac{36}{71}\\)",
+            "\\(\\frac12\\)",
+            "\\(\\frac{35}{71}\\)",
+            "\\(\\frac1{36}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "double six",
+              "note": "Pat succeeds on a turn with probability \\(p=1/36\\), and fails with probability \\(q=35/36\\)."
+            },
+            {
+              "text": "Pat goes first",
+              "note": "For Pat to win on his kth turn, each earlier pair of turns must contain two failures."
+            },
+            {
+              "text": "eventually wins",
+              "note": "Sum the infinite geometric series of Pat-win paths; its ratio is \\(q^2\\), since each full round has two failures."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A Pat-win path starts with success at his first turn, or with two failures before his next turn.",
+              "work": "\\(P(\\text{Pat wins})=p+q^2p+q^4p+\\cdots\\)",
+              "figure": {
+                "svg": "fig:667e38a760"
+              }
+            },
+            {
+              "explain": "Each additional round requires two more failures, so consecutive terms have ratio q squared.",
+              "work": "\\(r=q^2=\\left(\\frac{35}{36}\\right)^2\\)",
+              "figure": {
+                "svg": "fig:0e6e1dbcb7"
+              }
+            },
+            {
+              "explain": "Since q squared is less than one, apply the convergent infinite geometric sum.",
+              "work": "\\(P=\\frac{p}{1-q^2}=\\frac{1/36}{1-(35/36)^2}\\)\n\\(=\\frac{36}{71}\\)",
+              "figure": {
+                "svg": "fig:01b45eed30"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },

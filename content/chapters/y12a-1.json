@@ -12347,6 +12347,174 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "y12adv-task1-q1i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In an arithmetic sequence, the third term is \\(32\\) and the sixth term is \\(17\\). Find the common difference \\(d\\) and first term \\(a\\).",
+          "options": [
+            "\\(d=-5, a=42\\)",
+            "\\(d=5, a=22\\)",
+            "\\(d=-5, a=47\\)",
+            "\\(d=-3, a=38\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "third term is \\(32\\)",
+              "note": "This gives the equation \\(a+2d=32\\), because the third term is two common differences after the first."
+            },
+            {
+              "text": "sixth term is \\(17\\)",
+              "note": "This gives \\(a+5d=17\\). Subtract the term equations to find \\(d\\)."
+            },
+            {
+              "text": "common difference \\(d\\) and first term \\(a\\)",
+              "note": "Find \\(a\\) after \\(d\\), then check both values in the two given term equations."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the arithmetic-term rule and translate each stated term into an equation.",
+              "work": "\\(T_n=a+(n-1)d\\)\n\\(T_3=a+2d=32,\\qquad T_6=a+5d=17\\)",
+              "figure": {
+                "svg": "fig:5dc0331341"
+              }
+            },
+            {
+              "explain": "Subtract the first equation from the second to eliminate the first term.",
+              "work": "\\((a+5d)-(a+2d)=17-32\\)\n\\(3d=-15\\quad\\Rightarrow\\quad d=-5\\)",
+              "figure": {
+                "svg": "fig:7118733bb0"
+              }
+            },
+            {
+              "explain": "Substitute the common difference into either equation and verify the other term.",
+              "work": "\\(a+2(-5)=32\\quad\\Rightarrow\\quad a=42\\)\n\\(T_6=42+5(-5)=17\\)",
+              "figure": {
+                "svg": "fig:2f7a969f68"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q8ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The expressions \\(x\\), \\(8x\\) and \\(3x^2\\) are consecutive terms of an arithmetic sequence. Which option gives all possible pairs \\((x,\\text{fourth term})\\)?",
+          "options": [
+            "Only \\( (5,110)\\)",
+            "\\((0,0)\\) and \\( (5,110)\\)",
+            "\\((0,0)\\) and \\( (5,75)\\)",
+            "\\((0,0)\\) and \\( (5,105)\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "consecutive terms",
+              "note": "For three consecutive arithmetic terms, twice the middle term equals the sum of the outer terms."
+            },
+            {
+              "text": "all possible pairs",
+              "note": "Solve the resulting equation without dividing by x, so the zero solution is retained."
+            },
+            {
+              "text": "fourth term",
+              "note": "Once x is known, add the same common difference to the third term."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the equal-differences condition to the three consecutive terms.",
+              "work": "\\(8x-x=3x^2-8x\\)\n\\(3x^2-16x+x=0\\Rightarrow3x^2-15x=0\\)",
+              "figure": {
+                "svg": "fig:2bd77f6282"
+              }
+            },
+            {
+              "explain": "Factor the equation and keep both roots; cancelling x would lose a valid case.",
+              "work": "\\(3x(x-5)=0\\Rightarrow x=0\\text{ or }x=5\\)",
+              "figure": {
+                "svg": "fig:c8ceb55cb5"
+              }
+            },
+            {
+              "explain": "Find the common difference and extend each sequence by one term.",
+              "work": "\\(x=0:\\;0,0,0,0\\Rightarrow T_4=0\\)\\n\\(x=5:\\;5,40,75,110\\Rightarrow T_4=110\\)",
+              "figure": {
+                "svg": "fig:29bb7e0cc5"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q10i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Concentric circles create annuli with areas \\(3\\pi,5\\pi,7\\pi,\\ldots\\) square units. What is the area of the 10th annulus?",
+          "options": [
+            "\\(19\\pi\\)",
+            "\\(23\\pi\\)",
+            "\\(21\\pi\\)",
+            "\\(30\\pi\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "areas \\(3\\pi,5\\pi,7\\pi,\\ldots\\)",
+              "note": "These annulus areas form an arithmetic sequence with first term 3pi and difference 2pi."
+            },
+            {
+              "text": "10th annulus",
+              "note": "Use the nth-term rule with n=10; do not sum the first ten annuli."
+            },
+            {
+              "text": "area",
+              "note": "Keep the common factor pi in the units of area."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the first annulus area and the constant increase between successive annuli.",
+              "work": "\\(A_1=3\\pi,\\qquad d=5\\pi-3\\pi=2\\pi\\)",
+              "figure": {
+                "svg": "fig:e1913b0840"
+              }
+            },
+            {
+              "explain": "Use the arithmetic nth-term rule for the tenth annulus.",
+              "work": "\\(A_{10}=A_1+9d=3\\pi+9(2\\pi)\\)",
+              "figure": {
+                "svg": "fig:75bd5974e2"
+              }
+            },
+            {
+              "explain": "Simplify the multiple of pi and retain square units.",
+              "work": "\\(A_{10}=21\\pi\\text{ square units}\\)",
+              "figure": {
+                "svg": "fig:b67ae36e18"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -17511,6 +17679,118 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "y12adv-task1-q7i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A geometric series with a non-zero first term has positive common ratio \\(r\\ne1\\). Its first 4 terms sum to 17 times the sum of its first 2 terms. Find \\(r\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(8\\)",
+            "\\(16\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "first 4 terms",
+              "note": "Write \\(S_4=a(1+r+r^2+r^3)\\)."
+            },
+            {
+              "text": "17 times the sum of its first 2 terms",
+              "note": "Write \\(S_2=a(1+r)\\), then form the given ratio."
+            },
+            {
+              "text": "positive common ratio \\(r\\ne1\\)",
+              "note": "After cancelling the nonzero common factor, solve \\(1+r^2=17\\) and use positivity."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Represent the first four and first two terms using the first term a and common ratio r.",
+              "work": "\\(S_4=a(1+r+r^2+r^3),\\quad S_2=a(1+r)\\)",
+              "figure": {
+                "svg": "fig:59c3e9758d"
+              }
+            },
+            {
+              "explain": "Substitute the stated relation and factor the four-term sum.",
+              "work": "\\(a(1+r+r^2+r^3)=17a(1+r)\\)\n\\(a(1+r)(1+r^2)=17a(1+r)\\)",
+              "figure": {
+                "svg": "fig:5d37775785"
+              }
+            },
+            {
+              "explain": "Cancel the common nonzero factor and use the condition that r is positive.",
+              "work": "\\(1+r^2=17\\Rightarrow r^2=16\\Rightarrow r=4\\)",
+              "figure": {
+                "svg": "fig:7329030b62"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q7ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A geometric series has positive common ratio \\(r\\ne1\\). The sum of its first four terms is 17 times the sum of its first two terms, and its sixth term is \\(64\\). Find the first term.",
+          "options": [
+            "\\(16\\)",
+            "\\(\\frac1{16}\\)",
+            "\\(4\\)",
+            "\\(\\frac14\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "positive common ratio",
+              "note": "From the sum relation, first find \\(r=4\\)."
+            },
+            {
+              "text": "sixth term is \\(64\\)",
+              "note": "Use \\(T_6=ar^5\\), since the sixth term contains five ratio multipliers."
+            },
+            {
+              "text": "first term",
+              "note": "Substitute \\(r=4\\) and solve the sixth-term equation for a."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the relation between the partial sums to obtain the common ratio.",
+              "work": "\\(S_4=17S_2\\Rightarrow1+r^2=17\\Rightarrow r=4\\)",
+              "figure": {
+                "svg": "fig:1676d8d034"
+              }
+            },
+            {
+              "explain": "The nth term is a times r to the power n−1.",
+              "work": "\\(T_6=ar^{6-1}=a(4^5)\\)",
+              "figure": {
+                "svg": "fig:899072819d"
+              }
+            },
+            {
+              "explain": "Set the sixth term equal to 64 and isolate a.",
+              "work": "\\(64=1024a\\Rightarrow a=\\frac{64}{1024}=\\frac1{16}\\)",
+              "figure": {
+                "svg": "fig:9a69bb0d43"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -21440,6 +21720,230 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "id": "y12adv-task1-q4i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A lemon tree was \\(80\\) cm tall when planted. Its first year of growth was \\(50\\) cm, and each later year's growth was \\(90\\%\\) of the previous year's growth. What is its height after three years?",
+          "options": [
+            "\\(215.5\\text{ cm}\\)",
+            "\\(216.0\\text{ cm}\\)",
+            "\\(211.0\\text{ cm}\\)",
+            "\\(225.0\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "was \\(80\\) cm tall",
+              "note": "This is the height before the annual growth increments are added."
+            },
+            {
+              "text": "first year of growth was \\(50\\) cm",
+              "note": "This is the first term of the geometric sequence of yearly growth amounts."
+            },
+            {
+              "text": "each later year's growth was \\(90\\%\\)",
+              "note": "Each growth increment is 0.9 times the previous one; add the first three increments to the starting height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Keep the starting height separate from the yearly growth amounts.",
+              "work": "\\(H_0=80\\text{ cm},\\qquad G_1=50\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:5024e1c287"
+              }
+            },
+            {
+              "explain": "Generate the second and third growth increments using the 0.9 common ratio.",
+              "work": "\\(G_2=50(0.9)=45\\)\n\\(G_3=45(0.9)=40.5\\)",
+              "figure": {
+                "svg": "fig:e7ba0e1eff"
+              }
+            },
+            {
+              "explain": "Add all three annual increments to the initial height.",
+              "work": "\\(H_3=80+50+45+40.5=215.5\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:978218ca2f"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q4ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A lemon tree is \\(80\\) cm tall when planted. It grows \\(50\\) cm in the first year, and each later year's growth is \\(90\\%\\) of the previous year's growth. Why can this growth pattern never make the tree reach \\(10\\) metres?",
+          "options": [
+            "Because its annual growth becomes negative after year 10.",
+            "Because its total possible growth is \\(500\\) cm, giving a limiting height of \\(580\\) cm, below \\(1000\\) cm.",
+            "Because the height is bounded above by \\(500\\) cm.",
+            "Because the tree grows by the same \\(50\\) cm every year."
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "\\(90\\%\\) of the previous year's growth",
+              "note": "The yearly increases form a geometric sequence with first term 50 and ratio 0.9."
+            },
+            {
+              "text": "never make the tree reach \\(10\\) metres",
+              "note": "Compare the limiting total height with 10 metres; use the infinite geometric sum for the increments."
+            },
+            {
+              "text": "\\(10\\) metres",
+              "note": "Convert the target to centimetres before comparing it with the limiting height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The growth increments, rather than the total heights, form a geometric sequence.",
+              "work": "\\(a=50,\\qquad r=0.9\\)",
+              "figure": {
+                "svg": "fig:935e8b8a45"
+              }
+            },
+            {
+              "explain": "Because the ratio has magnitude below 1, the total accumulated growth has a finite limit.",
+              "work": "\\(S_\\infty=\\frac{50}{1-0.9}=500\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:337b47d20b"
+              }
+            },
+            {
+              "explain": "Add the greatest possible accumulated growth to the planted height and compare with the target.",
+              "work": "\\(H_\\text{limit}=80+500=580\\text{ cm}<1000\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:5b70358b33"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q4iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A lemon tree is \\(80\\) cm tall when planted. Its yearly growth begins at \\(50\\) cm and each year is \\(90\\%\\) of the previous year's growth. After how many complete years will it first reach at least \\(5\\) metres?",
+          "options": [
+            "\\(17\\) years",
+            "\\(19\\) years",
+            "\\(18\\) years",
+            "\\(20\\) years"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "yearly growth begins at \\(50\\) cm",
+              "note": "The accumulated increase after n years is the sum of a geometric sequence with first term 50."
+            },
+            {
+              "text": "each year is \\(90\\%\\) of the previous year's growth",
+              "note": "Use common ratio \\(0.9\\) in the finite-sum formula."
+            },
+            {
+              "text": "at least \\(5\\) metres",
+              "note": "Convert 5 m to 500 cm, subtract the initial 80 cm, and find the first whole n meeting the threshold."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The tree must gain 500−80=420 cm to reach 500 cm.",
+              "work": "\\(\\text{required growth}=500-80=420\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:1aafdf0a00"
+              }
+            },
+            {
+              "explain": "Sum the geometric sequence of yearly growth increments and set it at least 420.",
+              "work": "\\(S_n=\\frac{50(1-0.9^n)}{1-0.9}=500(1-0.9^n)\\)\n\\(500(1-0.9^n)\\ge420\\)",
+              "figure": {
+                "svg": "fig:426a4a6b79"
+              }
+            },
+            {
+              "explain": "Solve the inequality for n, then choose the least whole number that satisfies it.",
+              "work": "\\(0.9^n\\le0.16\\)\n\\(n\\ge\\frac{\\ln(0.16)}{\\ln(0.9)}\\approx17.39\\)\n\\(n_\\text{min}=18\\)",
+              "figure": {
+                "svg": "fig:6ba200af71"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q9i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Cube-shaped boxes have edge length \\(600\\) mm and are stacked in horizontal layers against a wall \\(10\\) m high. How many complete layers can fit vertically?",
+          "options": [
+            "\\(17\\)",
+            "\\(15\\)",
+            "\\(10\\)",
+            "\\(16\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "edge length \\(600\\) mm",
+              "note": "Each layer adds 600 mm to the total height."
+            },
+            {
+              "text": "wall \\(10\\) m high",
+              "note": "Convert the wall height to millimetres before dividing."
+            },
+            {
+              "text": "complete layers",
+              "note": "Take the greatest whole number of box-heights not exceeding the wall height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The vertical height occupied by one layer is one box edge.",
+              "work": "\\(h_\\text{layer}=600\\text{ mm}\\)",
+              "figure": {
+                "svg": "fig:95606080fb"
+              }
+            },
+            {
+              "explain": "Convert the wall height to the same unit as the boxes.",
+              "work": "\\(10\\text{ m}=10,000\\text{ mm}\\)",
+              "figure": {
+                "svg": "fig:71f0401491"
+              }
+            },
+            {
+              "explain": "Divide and take the integer part because only complete layers fit.",
+              "work": "\\(\\frac{10,000}{600}\\approx16.67\\Rightarrow16\\text{ complete layers}\\)",
+              "figure": {
+                "svg": "fig:fa1a8f3573"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -29212,6 +29716,234 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "id": "y12adv-task1-q1ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An arithmetic sequence has third term \\(32\\) and sixth term \\(17\\). Find the sum \\(T_{10}+T_{11}+\\cdots+T_{20}\\).",
+          "options": [
+            "\\(-308\\)",
+            "\\(-300\\)",
+            "\\(-253\\)",
+            "\\(-198\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "third term \\(32\\) and sixth term \\(17\\)",
+              "note": "Use these two terms to determine the sequence: \\(d=-5\\) and \\(a=42\\)."
+            },
+            {
+              "text": "T_{10}+T_{11}+\\cdots+T_{20}",
+              "note": "There are \\(20-10+1=11\\) terms; use the first and last terms of this selected block."
+            },
+            {
+              "text": "sum",
+              "note": "Pair the first and last terms, or apply the arithmetic-series sum formula to those 11 terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the sequence parameters from the two known terms.",
+              "work": "\\(a+2d=32,\\quad a+5d=17\\Rightarrow d=-5,\\ a=42\\)",
+              "figure": {
+                "svg": "fig:489d19004e"
+              }
+            },
+            {
+              "explain": "Calculate the endpoints of the requested block and count inclusively.",
+              "work": "\\(T_{10}=42+9(-5)=-3\\)\n\\(T_{20}=42+19(-5)=-53\\)\n\\(N=20-10+1=11\\)",
+              "figure": {
+                "svg": "fig:8c6337c0dd"
+              }
+            },
+            {
+              "explain": "Use the average of the first and last selected terms times the number of terms.",
+              "work": "\\(S=T_{10}+\\cdots+T_{20}=\\frac{11}{2}(-3-53)=-308\\)",
+              "figure": {
+                "svg": "fig:f142b2c907"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many terms of the arithmetic series \\(11+13+15+\\cdots\\) have a sum of \\(375\\)?",
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(20\\)",
+            "\\(25\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "series \\(11+13+15+\\cdots\\)",
+              "note": "The first term is \\(a=11\\), and the constant difference is \\(d=2\\)."
+            },
+            {
+              "text": "sum of \\(375\\)",
+              "note": "Set the arithmetic-series sum formula equal to 375 and solve for the number of terms."
+            },
+            {
+              "text": "How many terms",
+              "note": "The number of terms must be a positive integer; check the candidate in the sum formula."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the first term and common difference from the arithmetic series.",
+              "work": "\\(a=11,\\qquad d=13-11=2\\)",
+              "figure": {
+                "svg": "fig:03c151731a"
+              }
+            },
+            {
+              "explain": "Substitute these values into the sum formula.",
+              "work": "\\(375=\\frac n2[2(11)+(n-1)2]\\)\n\\(375=\\frac n2(2n+20)=n(n+10)\\)",
+              "figure": {
+                "svg": "fig:886c3d09aa"
+              }
+            },
+            {
+              "explain": "Solve the quadratic and retain the positive integer solution.",
+              "work": "\\(n^2+10n-375=0\\)\n\\(n=\\frac{-10\\pm\\sqrt{1600}}2=15\\text{ or }-25\\)\n\\(n=15\\)",
+              "figure": {
+                "svg": "fig:8c79013a0e"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q9ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Boxes are stacked in horizontal layers against a \\(10\\) m wall. The bottom layer contains \\(20\\) cubes, the next contains \\(19\\), and each layer above has one fewer cube. Each cube is \\(600\\) mm high, so the wall fits \\(16\\) complete layers. How many cubes fit in total?",
+          "options": [
+            "\\(216\\)",
+            "\\(185\\)",
+            "\\(200\\)",
+            "\\(160\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "bottom layer contains \\(20\\)",
+              "note": "This is the first term of the arithmetic sequence of layer counts."
+            },
+            {
+              "text": "each layer above has one fewer cube",
+              "note": "The layer counts form an AP with common difference \\(-1\\)."
+            },
+            {
+              "text": "\\(16\\) complete layers",
+              "note": "Use 16 terms; the top layer then contains 5 cubes."
+            },
+            {
+              "text": "in total",
+              "note": "Sum all layer counts rather than multiplying the bottom layer by the number of layers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The layer counts form an arithmetic sequence starting at 20 with difference −1.",
+              "work": "\\(a=20,\\qquad d=-1,\\qquad n=16\\)",
+              "figure": {
+                "svg": "fig:1f381d8bcc"
+              }
+            },
+            {
+              "explain": "Find the number of boxes in the final layer.",
+              "work": "\\(T_{16}=20+(16-1)(-1)=5\\)",
+              "figure": {
+                "svg": "fig:ccc137f186"
+              }
+            },
+            {
+              "explain": "Sum the arithmetic sequence using the average of its first and last terms.",
+              "work": "\\(S_{16}=\\frac{16}{2}(20+5)=200\\text{ boxes}\\)",
+              "figure": {
+                "svg": "fig:12cf2c65a7"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q10iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The areas of successive annuli are \\(3\\pi,5\\pi,7\\pi,\\ldots\\) square units. What is the minimum number of annuli needed for their combined area to be at least \\(300\\pi\\) square units?",
+          "options": [
+            "\\(16\\)",
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(17\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "areas of successive annuli are \\(3\\pi,5\\pi,7\\pi,\\ldots\\)",
+              "note": "The areas form an AP with first term 3pi and common difference 2pi."
+            },
+            {
+              "text": "combined area",
+              "note": "Use the arithmetic sum formula, not the tenth-term rule."
+            },
+            {
+              "text": "at least \\(300\\pi\\)",
+              "note": "Divide out pi and find the least integer n for which the sum reaches or exceeds 300."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Record the first area and difference for the arithmetic series.",
+              "work": "\\(a=3\\pi,\\qquad d=2\\pi\\)",
+              "figure": {
+                "svg": "fig:fefeb5fa80"
+              }
+            },
+            {
+              "explain": "Substitute into the arithmetic-series sum formula and simplify.",
+              "work": "\\(S_n=\\frac n2[2(3\\pi)+(n-1)2\\pi]=\\pi(n^2+2n)\\)",
+              "figure": {
+                "svg": "fig:3b45e0a57f"
+              }
+            },
+            {
+              "explain": "Cancel pi and solve the threshold inequality for the least whole n.",
+              "work": "\\(n^2+2n\\ge300\\)\n\\(n\\ge\\frac{-2+\\sqrt{1204}}2\\approx16.35\\)\n\\(n_\\text{min}=17\\)",
+              "figure": {
+                "svg": "fig:738959bc0b"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
@@ -43295,6 +44027,129 @@
             "grade": "12"
           },
           "xp": 1
+        },
+        {
+          "id": "y12adv-task1-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Squares have side lengths \\(x,x^2,x^3,\\ldots\\), where \\(0<x<1\\), and are placed consecutively along a line segment of length \\(L\\). Their total area is \\(\\frac{225}{64}\\text{ cm}^2\\). Find \\(L\\).",
+          "options": [
+            "\\(\\frac{15}{2}\\text{ cm}\\)",
+            "\\(\\frac{15}{4}\\text{ cm}\\)",
+            "\\(\\frac{17}{2}\\text{ cm}\\)",
+            "\\(\\frac{225}{64}\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "side lengths \\(x,x^2,x^3,\\ldots\\)",
+              "note": "The total length uses the geometric series with first term x and ratio x."
+            },
+            {
+              "text": "total area is \\(\\frac{225}{64}\\text{ cm}^2\\)",
+              "note": "Areas are \\(x^2,x^4,x^6,\\ldots\\), whose ratio is \\(x^2\\), not x."
+            },
+            {
+              "text": "where \\(0<x<1\\)",
+              "note": "This condition guarantees both length and area series converge."
+            },
+            {
+              "text": "Find \\(L\\)",
+              "note": "After finding x from the area series, sum the side lengths to obtain L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the areas separately from the side lengths: squaring each side doubles its exponent.",
+              "work": "\\(A_\\text{total}=x^2+x^4+x^6+\\cdots\\)",
+              "figure": {
+                "svg": "fig:e703495247"
+              }
+            },
+            {
+              "explain": "Apply the infinite geometric sum to the area series, whose first term and ratio are both x squared.",
+              "work": "\\(\\frac{x^2}{1-x^2}=\\frac{225}{64}\\)\n\\(64x^2=225-225x^2\\Rightarrow289x^2=225\\)",
+              "figure": {
+                "svg": "fig:eb5d8d0c9a"
+              }
+            },
+            {
+              "explain": "Use the given positive range for x to choose the positive square root.",
+              "work": "\\(x=\\frac{15}{17}\\)",
+              "figure": {
+                "svg": "fig:253c385bd2"
+              }
+            },
+            {
+              "explain": "The total length is a different geometric series, with first term x and ratio x.",
+              "work": "\\(L=x+x^2+x^3+\\cdots=\\frac{x}{1-x}\\)\n\\(L=\\frac{15/17}{2/17}=\\frac{15}{2}\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:253c385bd2"
+              }
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "y12adv-task1-q7iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A geometric series with a non-zero first term has positive common ratio \\(r\\ne1\\), and its first four terms sum to 17 times its first two terms. Why does this series not have a finite sum to infinity?",
+          "options": [
+            "Its common ratio is \\(\\frac14\\), so the sum is negative.",
+            "Its common ratio is \\(4\\), so the terms do not approach zero and the infinite-sum condition \\(|r|<1\\) fails.",
+            "The first term is zero, so no terms exist.",
+            "Every geometric series has a finite sum only when \\(r>1\\)."
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "positive common ratio",
+              "note": "The earlier sum relation determines the positive ratio as 4."
+            },
+            {
+              "text": "not have a finite sum to infinity",
+              "note": "An infinite geometric series converges only if the common ratio has magnitude less than 1."
+            },
+            {
+              "text": "sum to infinity",
+              "note": "Check \\(|r|<1\\); when \\(r=4\\), successive terms grow instead of approaching zero."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the ratio found from the partial-sum condition.",
+              "work": "\\(1+r^2=17\\Rightarrow r=4\\)",
+              "figure": {
+                "svg": "fig:1a9ac594e8"
+              }
+            },
+            {
+              "explain": "Recall the convergence condition for an infinite geometric series.",
+              "work": "\\(S_\\infty\\text{ exists only if }|r|<1\\)",
+              "figure": {
+                "svg": "fig:f16f2b83cd"
+              }
+            },
+            {
+              "explain": "Since 4 is outside the convergence interval, the terms do not tend to zero.",
+              "work": "\\(|4|>1\\quad\\Rightarrow\\quad\\text{no finite sum to infinity}\\)",
+              "figure": {
+                "svg": "fig:0a1ad7133b"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },

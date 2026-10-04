@@ -9870,6 +9870,62 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "y12adv-task1-q21i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A curve has minimum value \\(0\\) and maximum value \\(4\\). What is the range of the transformed function \\(g(x)=\\frac12 f(x)\\)?",
+          "options": [
+            "\\([0,2]\\)",
+            "\\([0,4]\\)",
+            "\\([0,2)\\)",
+            "\\([-2,0]\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "minimum value \\(0\\) and maximum value \\(4\\)",
+              "note": "These give the original range \\([0,4]\\)."
+            },
+            {
+              "text": "\\(g(x)=\\frac12 f(x)\\)",
+              "note": "Every y-value is multiplied by the positive factor one-half; the order of minimum and maximum is preserved."
+            },
+            {
+              "text": "range",
+              "note": "Scale both endpoints of the original range by one-half."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the stated minimum and maximum to identify all possible original y-values.",
+              "work": "\\(0\\le f(x)\\le4\\)",
+              "figure": {
+                "svg": "fig:4fdf33fdc9"
+              }
+            },
+            {
+              "explain": "Multiply the full inequality by the positive number one-half; the inequality directions stay the same.",
+              "work": "\\(0\\le\\frac12f(x)\\le2\\)",
+              "figure": {
+                "svg": "fig:f61d3bfb8a"
+              }
+            },
+            {
+              "explain": "State the transformed range with included endpoints, since both extrema are attained.",
+              "work": "\\(\\text{Range}(g)=[0,2]\\)",
+              "figure": {
+                "svg": "fig:4f277fcf4a"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "meta": {
+            "source": "Year 12 Mathematics Advanced Assessment Task 1",
+            "course": "Advanced"
+          }
         }
       ]
     },
