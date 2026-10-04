@@ -126,6 +126,14 @@ const addDaysToDateKey = (dateKey, days) => {
   return formatDateKey(date);
 };
 
+const getNextStudentSessionDate = (sessionDocs, studentId, afterDate, dateShiftDays = 0) => {
+  const nextSession = sessionDocs
+    .map((sessionDoc) => sessionDoc.data())
+    .filter((session) => session.studentId === studentId && (session.date || '') > (afterDate || ''))
+    .sort((a, b) => (a.date || '').localeCompare(b.date || ''))[0];
+  return nextSession ? addDaysToDateKey(nextSession.date, dateShiftDays) : '';
+};
+
 const getDateShiftDays = (fromDateKey, toDateKey) => {
   const fromDate = new Date(`${fromDateKey}T12:00:00`);
   const toDate = new Date(`${toDateKey}T12:00:00`);
@@ -509,16 +517,39 @@ const Schedule = ({ students = [] }) => {
           if (instanceDocs.length === 0) {
             homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
             homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
-            await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
+            const studentSnap = selectedSession.studentId
+              ? await getDocs(query(collection(db, 'sessions'), where('studentId', '==', selectedSession.studentId)))
+              : null;
+            const nextDate = studentSnap
+              ? getNextStudentSessionDate(studentSnap.docs, selectedSession.studentId, selectedSession.date)
+              : '';
+            await updateDoc(doc(db, 'sessions', selectedSession.id), {
+              ...updatePayload,
+              homeworkDueDate: updatePayload.homework ? nextDate : '',
+            });
           } else {
             const batch = writeBatch(db);
-            instanceDocs.forEach((sessionDoc) => batch.update(sessionDoc.ref, updatePayload));
+            instanceDocs.forEach((sessionDoc) => batch.update(sessionDoc.ref, {
+              ...updatePayload,
+              homeworkDueDate: updatePayload.homework
+                ? getNextStudentSessionDate(groupSnap.docs, sessionDoc.data().studentId, selectedSession.date)
+                : '',
+            }));
             await batch.commit();
           }
         } else {
           homeworkChanged = (selectedSession.homework || '') !== updatePayload.homework;
           homeworkWasAlreadyAssigned = Boolean(selectedSession.homework);
-          await updateDoc(doc(db, 'sessions', selectedSession.id), updatePayload);
+          const studentSnap = selectedSession.studentId
+            ? await getDocs(query(collection(db, 'sessions'), where('studentId', '==', selectedSession.studentId)))
+            : null;
+          const nextDate = studentSnap
+            ? getNextStudentSessionDate(studentSnap.docs, selectedSession.studentId, selectedSession.date)
+            : '';
+          await updateDoc(doc(db, 'sessions', selectedSession.id), {
+            ...updatePayload,
+            homeworkDueDate: updatePayload.homework ? nextDate : '',
+          });
         }
       } else if (choice === 'series' && selectedSession.groupId) {
         const q = query(collection(db, 'sessions'), where('groupId', '==', selectedSession.groupId));
@@ -537,6 +568,9 @@ const Schedule = ({ students = [] }) => {
           const currentDate = d.data().date || selectedSession.date;
           batch.update(d.ref, {
             date: addDaysToDateKey(currentDate, dateShiftDays),
+            homeworkDueDate: updatePayload.homework
+              ? getNextStudentSessionDate(futureDocs, d.data().studentId, currentDate, dateShiftDays)
+              : '',
             startTime: updatePayload.startTime,
             endTime: updatePayload.endTime,
             learnedTopics: updatePayload.learnedTopics,

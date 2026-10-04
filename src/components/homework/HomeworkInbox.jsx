@@ -1,25 +1,32 @@
 import { useEffect, useState } from 'react';
 import { BookOpenCheck } from 'lucide-react';
-import { fetchPendingSubmissions } from '../../services/homeworkService';
+import { fetchHomeworkAwaitingSubmission, fetchPendingSubmissions } from '../../services/homeworkService';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 
 // Admin dashboard strip of homework submissions awaiting a check.
-// One filtered query (status == 'submitted') per mount; renders nothing when empty.
+// Shows submissions awaiting teacher review and homework assignments still
+// awaiting student submission; renders nothing when both lists are empty.
 const HomeworkInbox = () => {
   const [items, setItems] = useState([]);
+  const [assignedItems, setAssignedItems] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const [openId, setOpenId] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
-    fetchPendingSubmissions()
-      .then((list) => { if (!cancelled) setItems(list); })
+    Promise.all([fetchPendingSubmissions(), fetchHomeworkAwaitingSubmission()])
+      .then(([submissions, assignments]) => {
+        if (!cancelled) {
+          setItems(submissions);
+          setAssignedItems(assignments);
+        }
+      })
       .catch((err) => console.warn('[homework] inbox load failed:', err?.message || err))
       .finally(() => { if (!cancelled) setLoaded(true); });
     return () => { cancelled = true; };
   }, []);
 
-  if (!loaded || (items.length === 0 && !openId)) return null;
+  if (!loaded || (items.length === 0 && assignedItems.length === 0 && !openId)) return null;
 
   return (
     <div style={{ background: '#fff', border: '1px solid #eef2f7', borderRadius: 20, padding: 16, marginBottom: 20 }}>
@@ -69,6 +76,30 @@ const HomeworkInbox = () => {
           </button>
         ))}
       </div>
+      {assignedItems.length > 0 && (
+        <div style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid #eef2f7' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <strong style={{ color: '#1e1b4b', fontSize: '0.9rem' }}>Awaiting submission</strong>
+            <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', background: '#f3edff', borderRadius: 999, padding: '3px 8px' }}>{assignedItems.length}</span>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 8 }}>
+            {assignedItems.map((assignment) => (
+              <div key={assignment.id} style={{ display: 'flex', alignItems: 'center', gap: 12, minWidth: 0, padding: '12px 14px', border: '1px solid #eceaf5', borderRadius: 14, background: '#fbfaff' }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ color: '#1e1b4b', fontWeight: 800, fontSize: '0.84rem' }}>{assignment.studentName || 'Student'}</div>
+                  <div style={{ color: '#77758f', fontSize: '0.74rem', lineHeight: 1.4, marginTop: 3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                    {(assignment.learnedTopics || []).map((topic) => topic?.label || topic?.title || topic?.id).filter(Boolean).join(', ') || assignment.homework}
+                  </div>
+                </div>
+                <div style={{ flex: '0 0 auto', textAlign: 'right', fontSize: '0.68rem', color: '#77758f', lineHeight: 1.5 }}>
+                  <div>Assigned {assignment.date || '—'}</div>
+                  <div style={{ color: assignment.homeworkDueDate ? '#6d45e8' : '#9b99ad', fontWeight: 750 }}>Due {assignment.homeworkDueDate || 'not scheduled'}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       {openId && (
         <HomeworkSubmissionViewer
           sessionId={openId}

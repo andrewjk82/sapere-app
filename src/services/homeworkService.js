@@ -152,6 +152,54 @@ export async function fetchPendingSubmissions() {
     .sort((a, b) => (a.submittedAt?.toMillis?.() || 0) - (b.submittedAt?.toMillis?.() || 0));
 }
 
+// Assigned homework that has not been submitted yet. Session documents are
+// per student, so this naturally produces one pending row for each student.
+export async function fetchHomeworkAwaitingSubmission() {
+  const snap = await getDocs(query(collection(db, 'sessions'), where('homework', '!=', '')));
+  const assignments = snap.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .filter((session) => (
+      String(session.homework || '').trim()
+      && session.homeworkStatus !== 'submitted'
+      && session.homeworkStatus !== 'checked'
+      && session.isHomeworkCompleted !== true
+    ));
+
+  const sessionsByGroup = new Map();
+  const sessionsByStudent = new Map();
+  await Promise.all(assignments.map(async (assignment) => {
+    if (assignment.homeworkDueDate) return;
+    const groupKey = assignment.groupId ? `group:${assignment.groupId}` : '';
+    const studentKey = assignment.studentId ? `student:${assignment.studentId}` : '';
+    const lookupKey = groupKey || studentKey;
+    if (!lookupKey) return;
+    const cache = groupKey ? sessionsByGroup : sessionsByStudent;
+    if (!cache.has(lookupKey)) {
+      cache.set(lookupKey, (async () => {
+        const constraint = groupKey
+          ? where('groupId', '==', assignment.groupId)
+          : where('studentId', '==', assignment.studentId);
+        const related = await getDocs(query(collection(db, 'sessions'), constraint));
+        return related.docs.map((d) => ({ id: d.id, ...d.data() }));
+      })());
+    }
+    await cache.get(lookupKey);
+  }));
+
+  return assignments
+    .map((assignment) => {
+      if (assignment.homeworkDueDate) return assignment;
+      const related = assignment.groupId
+        ? sessionsByGroup.get(`group:${assignment.groupId}`)
+        : sessionsByStudent.get(`student:${assignment.studentId}`);
+      const next = (related || [])
+        .filter((session) => session.studentId === assignment.studentId && (session.date || '') > (assignment.date || ''))
+        .sort((a, b) => (a.date || '').localeCompare(b.date || ''))[0];
+      return { ...assignment, homeworkDueDate: next?.date || '' };
+    })
+    .sort((a, b) => (a.homeworkDueDate || a.date || '').localeCompare(b.homeworkDueDate || b.date || ''));
+}
+
 // `grade` (optional, from the marking panel): { score, total, marks, comment }.
 // Stored on the session so the weekly report's Homework Mark and the
 // student's history pick it up with no extra reads.
