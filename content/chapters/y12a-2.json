@@ -499,7 +499,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 4,
+          "xp": 2,
           "keyPoints": [
             {
               "text": "\\(x=2\\)",
