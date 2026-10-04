@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BookOpenCheck } from 'lucide-react';
-import { fetchHomeworkAwaitingSubmission, fetchPendingSubmissions } from '../../services/homeworkService';
+import { fetchHomeworkAssignments, fetchPendingSubmissions } from '../../services/homeworkService';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 
 // Admin dashboard strip of homework submissions awaiting a check.
@@ -14,7 +14,7 @@ const HomeworkInbox = () => {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.allSettled([fetchPendingSubmissions(), fetchHomeworkAwaitingSubmission()])
+    Promise.allSettled([fetchPendingSubmissions(), fetchHomeworkAssignments()])
       .then(([submissionsResult, assignmentsResult]) => {
         if (cancelled) return;
         if (submissionsResult.status === 'fulfilled') {
@@ -85,7 +85,7 @@ const HomeworkInbox = () => {
       {assignedItems.length > 0 && (
         <div style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid #eef2f7' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <strong style={{ color: '#1e1b4b', fontSize: '0.9rem' }}>Awaiting submission</strong>
+            <strong style={{ color: '#1e1b4b', fontSize: '0.9rem' }}>Homework assigned</strong>
             <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', background: '#f3edff', borderRadius: 999, padding: '3px 8px' }}>{assignedItems.length}</span>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: 8 }}>
@@ -100,6 +100,7 @@ const HomeworkInbox = () => {
                 <div style={{ flex: '0 0 auto', textAlign: 'right', fontSize: '0.68rem', color: '#77758f', lineHeight: 1.5 }}>
                   <div>Assigned {assignment.date || '—'}</div>
                   <div style={{ color: assignment.homeworkDueDate ? '#6d45e8' : '#9b99ad', fontWeight: 750 }}>Due {assignment.homeworkDueDate || 'not scheduled'}</div>
+                  <div style={{ color: assignment.displayHomeworkStatus === 'Checked' ? '#15803d' : assignment.displayHomeworkStatus === 'Submitted' ? '#b45309' : '#64748b', fontWeight: 800, marginTop: 2 }}>{assignment.displayHomeworkStatus}</div>
                 </div>
               </div>
             ))}

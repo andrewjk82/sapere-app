@@ -152,50 +152,30 @@ export async function fetchPendingSubmissions() {
     .sort((a, b) => (a.submittedAt?.toMillis?.() || 0) - (b.submittedAt?.toMillis?.() || 0));
 }
 
-// Assigned homework that has not been submitted yet. Session documents are
-// per student, so this naturally produces one pending row for each student.
-export async function fetchHomeworkAwaitingSubmission() {
-  const snap = await getDocs(query(collection(db, 'sessions'), where('homework', '!=', '')));
-  const assignments = snap.docs
-    .map((d) => ({ id: d.id, ...d.data() }))
-    .filter((session) => (
-      String(session.homework || '').trim()
-      && session.homeworkStatus !== 'submitted'
-      && session.homeworkStatus !== 'checked'
-      && session.isHomeworkCompleted !== true
-    ));
-
-  const sessionsByGroup = new Map();
-  const sessionsByStudent = new Map();
-  await Promise.all(assignments.map(async (assignment) => {
-    if (assignment.homeworkDueDate) return;
-    const groupKey = assignment.groupId ? `group:${assignment.groupId}` : '';
-    const studentKey = assignment.studentId ? `student:${assignment.studentId}` : '';
-    const lookupKey = groupKey || studentKey;
-    if (!lookupKey) return;
-    const cache = groupKey ? sessionsByGroup : sessionsByStudent;
-    if (!cache.has(lookupKey)) {
-      cache.set(lookupKey, (async () => {
-        const constraint = groupKey
-          ? where('groupId', '==', assignment.groupId)
-          : where('studentId', '==', assignment.studentId);
-        const related = await getDocs(query(collection(db, 'sessions'), constraint));
-        return related.docs.map((d) => ({ id: d.id, ...d.data() }));
-      })());
-    }
-    await cache.get(lookupKey);
-  }));
+// Every assigned session, regardless of whether it has been submitted or
+// checked. Homework can be represented by topic selections on older sessions
+// even when the free-text homework field is empty.
+export async function fetchHomeworkAssignments() {
+  const snap = await getDocs(collection(db, 'sessions'));
+  const sessions = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+  const assignments = sessions.filter((session) => (
+    Boolean(String(session.homework || '').trim())
+    || (Array.isArray(session.learnedTopics) && session.learnedTopics.length > 0)
+  ));
 
   return assignments
     .map((assignment) => {
-      if (assignment.homeworkDueDate) return assignment;
-      const related = assignment.groupId
-        ? sessionsByGroup.get(`group:${assignment.groupId}`)
-        : sessionsByStudent.get(`student:${assignment.studentId}`);
-      const next = (related || [])
+      const next = sessions
         .filter((session) => session.studentId === assignment.studentId && (session.date || '') > (assignment.date || ''))
         .sort((a, b) => (a.date || '').localeCompare(b.date || ''))[0];
-      return { ...assignment, homeworkDueDate: next?.date || '' };
+      const isChecked = assignment.homeworkStatus === 'checked' || assignment.isHomeworkCompleted === true;
+      return {
+        ...assignment,
+        homeworkDueDate: assignment.homeworkDueDate || next?.date || '',
+        displayHomeworkStatus: isChecked
+          ? 'Checked'
+          : assignment.homeworkStatus === 'submitted' ? 'Submitted' : 'Awaiting',
+      };
     })
     .sort((a, b) => (a.homeworkDueDate || a.date || '').localeCompare(b.homeworkDueDate || b.date || ''));
 }
