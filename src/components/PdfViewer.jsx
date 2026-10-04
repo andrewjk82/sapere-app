@@ -373,7 +373,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
 
   if (!src || failed) {
     if (fallback) return (
-      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
         <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
         <div
           ref={handleScrollRef}
@@ -381,7 +381,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerEnd}
           onPointerCancel={handlePointerEnd}
-          style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
+          style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
         >
           <div style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%`, minWidth: `${zoom * 100}%`, minHeight: `${zoom * 100}%` }}>
             <iframe title="Worksheet" src={fallback} allow="autoplay" style={{ width: `${100 / zoom}%`, height: `${100 / zoom}%`, border: 0, transform: `scale(${zoom})`, transformOrigin: 'top left' }} />
@@ -401,7 +401,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const contentWidth = Math.max(scrollEl?.clientWidth || 0, pageWidth + PAGE_GAP * 2);
 
   return (
-    <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
         <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
       <div
         ref={handleScrollRef}
@@ -409,7 +409,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerEnd}
         onPointerCancel={handlePointerEnd}
-        style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
+        style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
       >
         {!doc || !width ? (
           <div style={{ display: 'grid', placeItems: 'center', minHeight: 200 }}>
