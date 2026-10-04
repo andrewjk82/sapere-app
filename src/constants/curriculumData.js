@@ -3059,8 +3059,6 @@ export const CURRICULUM_DATA = {
         title: 'Chapter 1: Sequences and series',
         modules: 10,
         topics: [
-          { id: 'y12a-1a', code: '1A', title: 'Miscellaneous questions' },
-          { id: 'y12a-1b', code: '1B', title: 'Miscellaneous questions' },
           { id: 'y12a-1A', code: '1A', title: 'Sequences and how to specify them' },
           { id: 'y12a-1B', code: '1B', title: 'Arithmetic sequences' },
           { id: 'y12a-1C', code: '1C', title: 'Geometric sequences' },

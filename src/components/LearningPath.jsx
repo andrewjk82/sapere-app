@@ -23,6 +23,28 @@ import './learning-path.css';
 // and proportional even though XP is not tracked per chapter in the database.
 const XP_PER_LESSON = 12;
 
+const normalizeCurriculumTopics = (chapters) => (Array.isArray(chapters) ? chapters : []).map((chapter) => {
+  if (!Array.isArray(chapter?.topics)) return chapter;
+  const topicsByCode = new Map();
+  chapter.topics.forEach((topic) => {
+    const code = String(topic?.code || '').trim().toUpperCase();
+    if (!code) return;
+    if (!topicsByCode.has(code)) topicsByCode.set(code, []);
+    topicsByCode.get(code).push(topic);
+  });
+  return {
+    ...chapter,
+    topics: chapter.topics.filter((topic) => {
+      const code = String(topic?.code || '').trim().toUpperCase();
+      const duplicates = topicsByCode.get(code) || [];
+      const isPlaceholder = String(topic?.title || '').trim().toLowerCase() === 'miscellaneous questions';
+      return !(duplicates.length > 1 && isPlaceholder && duplicates.some((other) => (
+        other !== topic && String(other?.title || '').trim().toLowerCase() !== 'miscellaneous questions'
+      )));
+    }),
+  };
+});
+
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
   const [activeSubject, setActiveSubject] = useState('Maths');
@@ -106,14 +128,14 @@ const LearningPath = ({ profile }) => {
     const cacheKey = `curriculum-doc:v1:${docId}`;
     const cached = localCache.get(cacheKey);
     if (Array.isArray(cached?.chapters) && cached.chapters.length > 0) {
-      setCurriculum(cached.chapters);
+      setCurriculum(normalizeCurriculumTopics(cached.chapters));
       setLoading(false);
     }
 
     const resolveFallbackCurriculum = () => {
       let data = CURRICULUM_DATA[year] || CURRICULUM_DATA[normalizeYearLabel(year)] || [];
       if (!Array.isArray(data)) data = data[course] || Object.values(data)[0] || [];
-      return Array.isArray(data) ? data : [];
+      return normalizeCurriculumTopics(data);
     };
 
     const loadCurriculum = async () => {
@@ -130,7 +152,7 @@ const LearningPath = ({ profile }) => {
         const snap = await getDoc(doc(db, 'curriculum', docId));
         if (cancelled) return;
         if (snap.exists() && snap.data().chapters?.length > 0) {
-          const chapters = snap.data().chapters;
+          const chapters = normalizeCurriculumTopics(snap.data().chapters);
           const version = remoteVersion || Date.now();
           if (!remoteVersion) {
             setDoc(doc(db, 'sync_meta', 'curriculum'), { version, updatedAt: serverTimestamp() }, { merge: true }).catch(() => {});
@@ -491,7 +513,7 @@ const LearningPath = ({ profile }) => {
                           <button
                             key={t.id}
                             type="button"
-                            title={`Open worksheet: ${t.code ? `${t.code} · ` : ''}${t.title || ''}`}
+                            aria-label={`Open worksheet: ${t.code ? `${t.code} · ` : ''}${t.title || ''}`}
                             onClick={(e) => {
                               e.stopPropagation();
                               setPdfPreview({ raw: t.homeworkPdfUrl, url: pdfUrl, openUrl: toDriveOpenUrl(t.homeworkPdfUrl), title: `${t.code ? `${t.code} · ` : ''}${t.title || ''}` });
