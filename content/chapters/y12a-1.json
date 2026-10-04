@@ -11,8 +11,8 @@
         {
           "id": "y12a-1a-h1",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "An arithmetic progression has a first term of \\(3\\) and a common difference of \\(5\\). A geometric progression has a first term of \\(3\\) and a common ratio of \\(2\\). Find the smallest term greater than \\(100\\) that is common to both sequences.",
+          "difficulty": "hard",
           "options": [
             "\\(768\\)",
             "\\(192\\)",
@@ -44,7 +44,28 @@
               "work": "The smallest common term is \\(768\\)."
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "keyPoints": [
+            {
+              "text": "arithmetic progression",
+              "note": "\\( T_n=a+(n-1)d \\)"
+            },
+            {
+              "text": "geometric progression",
+              "note": "\\( T_n= ar^{n-1} \\)"
+            },
+            {
+              "text": "a first term of \\(3\\) and a common ratio of \\(2\\)",
+              "note": "\\( a=3 , r=2 \\)"
+            },
+            {
+              "text": "a first term of \\(3\\) and a common difference of \\(5\\)",
+              "note": "\\( a=3, d= 5 \\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y12a-1a-h2",
