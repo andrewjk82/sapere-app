@@ -314,24 +314,15 @@
           "steps": [
             {
               "explain": "Move the line expression to the left; the boundary points are the given intersections.",
-              "work": "\\(x^2+x-2-(1-x)>0\\)\n\\(x^2+2x-3>0\\)",
-              "figure": {
-                "svg": "fig:0d8b81cc43"
-              }
+              "work": "\\(x^2+x-2-(1-x)>0\\)\n\\(x^2+2x-3>0\\)"
             },
             {
               "explain": "Factor the quadratic to identify the two critical x-values.",
-              "work": "\\((x+3)(x-1)>0\\)\n\\(x=-3\\text{ or }x=1\\text{ at the boundaries}\\)",
-              "figure": {
-                "svg": "fig:5496a68da9"
-              }
+              "work": "\\((x+3)(x-1)>0\\)\n\\(x=-3\\text{ or }x=1\\text{ at the boundaries}\\)"
             },
             {
               "explain": "An upward-opening quadratic is positive outside its roots. The inequality is strict, so endpoints are not included.",
-              "work": "\\(x<-3\\quad\\text{or}\\quad x>1\\)",
-              "figure": {
-                "svg": "fig:08e2efd6c2"
-              }
+              "work": "\\(x<-3\\quad\\text{or}\\quad x>1\\)"
             }
           ],
           "timeLimit": 60,
@@ -370,24 +361,15 @@
           "steps": [
             {
               "explain": "Use the vertical symmetry line to reflect the point at x=0 to the other point at the same height.",
-              "work": "\\(x_\\text{right}=2+(2-0)=4\\)",
-              "figure": {
-                "svg": "fig:b68ebdd2f2"
-              }
+              "work": "\\(x_\\text{right}=2+(2-0)=4\\)"
             },
             {
               "explain": "The minimum lies below y=3, so the U-shaped curve is below that level between the crossings and above it outside.",
-              "work": "\\(h(x)=3\\text{ at }x=0\\text{ and }x=4\\)",
-              "figure": {
-                "svg": "fig:cbabe11137"
-              }
+              "work": "\\(h(x)=3\\text{ at }x=0\\text{ and }x=4\\)"
             },
             {
               "explain": "Select the outside intervals and exclude the boundary points because the inequality is greater than, not greater than or equal to.",
-              "work": "\\(x\\in(-\\infty,0)\\cup(4,\\infty)\\)",
-              "figure": {
-                "svg": "fig:de49edab87"
-              }
+              "work": "\\(x\\in(-\\infty,0)\\cup(4,\\infty)\\)"
             }
           ],
           "timeLimit": 60,
@@ -429,24 +411,15 @@
           "steps": [
             {
               "explain": "Write the parabola in vertex form, then use the known point to determine its scale factor.",
-              "work": "\\(h(x)=a(x-2)^2,\\qquad h(0)=3\\)\n\\(4a=3\\Rightarrow a=\\frac{3}{4}\\)",
-              "figure": {
-                "svg": "fig:ef83c6d5e6"
-              }
+              "work": "\\(h(x)=a(x-2)^2,\\qquad h(0)=3\\)\n\\(4a=3\\Rightarrow a=\\frac{3}{4}\\)"
             },
             {
               "explain": "Substitute the vertex-form expression into both function terms in the equation.",
-              "work": "\\(\\frac{3}{4}[(x-2)^2+x^2]=3\\)\n\\((x-2)^2+x^2=4\\)",
-              "figure": {
-                "svg": "fig:122e4f9eba"
-              }
+              "work": "\\(\\frac{3}{4}[(x-2)^2+x^2]=3\\)\n\\((x-2)^2+x^2=4\\)"
             },
             {
               "explain": "Expand, factor, and count the distinct roots.",
-              "work": "\\(2x^2-4x=0\\Rightarrow2x(x-2)=0\\)\n\\(x=0\\text{ or }x=2;\\quad2\\text{ real solutions}\\)",
-              "figure": {
-                "svg": "fig:c76e1672c5"
-              }
+              "work": "\\(2x^2-4x=0\\Rightarrow2x(x-2)=0\\)\n\\(x=0\\text{ or }x=2;\\quad2\\text{ real solutions}\\)"
             }
           ],
           "timeLimit": 60,
@@ -521,10 +494,7 @@
             },
             {
               "explain": "Sketch the same curve shifted left.",
-              "work": "A'(-2,3),\\quad B'(0,0)",
-              "figure": {
-                "svg": "fig:7337b27f09"
-              }
+              "work": "A'(-2,3),\\quad B'(0,0)"
             }
           ],
           "meta": {
@@ -818,24 +788,15 @@
           "steps": [
             {
               "explain": "An upward translation adds 1 to every y-value.",
-              "work": "\\(y=\\frac2x+1\\)",
-              "figure": {
-                "svg": "fig:9ce2aa5461"
-              }
+              "work": "\\(y=\\frac2x+1\\)"
             },
             {
               "explain": "Reflection in the x-axis changes every output y to its negative; apply it to the whole translated expression.",
-              "work": "\\(y=-\\left(\\frac2x+1\\right)\\)",
-              "figure": {
-                "svg": "fig:403187a3d8"
-              }
+              "work": "\\(y=-\\left(\\frac2x+1\\right)\\)"
             },
             {
               "explain": "Distribute the negative sign to obtain the final equation.",
-              "work": "\\(y=-\\frac2x-1\\)",
-              "figure": {
-                "svg": "fig:6295e6ad51"
-              }
+              "work": "\\(y=-\\frac2x-1\\)"
             }
           ],
           "timeLimit": 60,
@@ -874,24 +835,15 @@
           "steps": [
             {
               "explain": "The inside change x+3 shifts the graph left by 3, so subtract 3 from the point's x-coordinate.",
-              "work": "\\(x'= -1-3=-4\\)",
-              "figure": {
-                "svg": "fig:9625e0701d"
-              }
+              "work": "\\(x'= -1-3=-4\\)"
             },
             {
               "explain": "The outside +3 shifts every y-coordinate up by 3.",
-              "work": "\\(y'=3+3=6\\)",
-              "figure": {
-                "svg": "fig:f33741da2c"
-              }
+              "work": "\\(y'=3+3=6\\)"
             },
             {
               "explain": "Combine the transformed coordinates.",
-              "work": "\\(P'=(-4,6)\\)",
-              "figure": {
-                "svg": "fig:824622b455"
-              }
+              "work": "\\(P'=(-4,6)\\)"
             }
           ],
           "timeLimit": 60,
@@ -930,24 +882,15 @@
           "steps": [
             {
               "explain": "There is no change inside f, so the x-coordinate stays the same.",
-              "work": "\\(x'=-1\\)",
-              "figure": {
-                "svg": "fig:1c95b78289"
-              }
+              "work": "\\(x'=-1\\)"
             },
             {
               "explain": "Apply the vertical dilation and then the upward translation to the original y-value.",
-              "work": "\\(y'=2(3)+3=9\\)",
-              "figure": {
-                "svg": "fig:3d93216e10"
-              }
+              "work": "\\(y'=2(3)+3=9\\)"
             },
             {
               "explain": "Write the image point using the transformed coordinates.",
-              "work": "\\(P'=(-1,9)\\)",
-              "figure": {
-                "svg": "fig:276daf5316"
-              }
+              "work": "\\(P'=(-1,9)\\)"
             }
           ],
           "timeLimit": 60,
@@ -986,24 +929,15 @@
           "steps": [
             {
               "explain": "For the image to have the same function value, set the transformed input equal to the original input −1.",
-              "work": "\\(2x+3=-1\\)",
-              "figure": {
-                "svg": "fig:2522403244"
-              }
+              "work": "\\(2x+3=-1\\)"
             },
             {
               "explain": "Solve the input equation; horizontal transformations act inversely on x-coordinates.",
-              "work": "\\(2x=-4\\Rightarrow x=-2\\)",
-              "figure": {
-                "svg": "fig:09b65c6ac4"
-              }
+              "work": "\\(2x=-4\\Rightarrow x=-2\\)"
             },
             {
               "explain": "The vertical output is unchanged because no outside transformation is applied.",
-              "work": "\\(y'=3\\quad\\Rightarrow\\quad P'=(-2,3)\\)",
-              "figure": {
-                "svg": "fig:275a05fcf6"
-              }
+              "work": "\\(y'=3\\quad\\Rightarrow\\quad P'=(-2,3)\\)"
             }
           ],
           "timeLimit": 60,
@@ -1046,31 +980,19 @@
           "steps": [
             {
               "explain": "Translate x squared right by m, then scale its output by k and move the graph down five.",
-              "work": "\\(g(x)=k(x-m)^2-5\\)",
-              "figure": {
-                "svg": "fig:4cc921a60e"
-              }
+              "work": "\\(g(x)=k(x-m)^2-5\\)"
             },
             {
               "explain": "Rewrite the given quadratic in completed-square form.",
-              "work": "\\(3x^2-12x+7=3(x^2-4x)+7\\)\n\\(=3[(x-2)^2-4]+7=3(x-2)^2-5\\)",
-              "figure": {
-                "svg": "fig:06506f6306"
-              }
+              "work": "\\(3x^2-12x+7=3(x^2-4x)+7\\)\n\\(=3[(x-2)^2-4]+7=3(x-2)^2-5\\)"
             },
             {
               "explain": "Compare the completed-square form term-by-term with the transformation form.",
-              "work": "\\(m=2,\\qquad k=3\\)",
-              "figure": {
-                "svg": "fig:13368b9a10"
-              }
+              "work": "\\(m=2,\\qquad k=3\\)"
             },
             {
               "explain": "Check the constant vertical translation agrees with the stated move down by five.",
-              "work": "\\(g(x)=3(x-2)^2-5\\)",
-              "figure": {
-                "svg": "fig:06506f6306"
-              }
+              "work": "\\(g(x)=3(x-2)^2-5\\)"
             }
           ],
           "timeLimit": 90,
@@ -1103,10 +1025,7 @@
             },
             {
               "explain": "Map and label every key point, then sketch the compressed parabola.",
-              "work": "(-1,2)\\to(0,2);\\ (0,0)\\to(\\frac12,0);\\ (\\frac12,-\\frac14)\\to(\\frac34,-\\frac14);\\ (1,0)\\to(1,0);\\ (2,2)\\to(\\frac32,2)",
-              "figure": {
-                "svg": "fig:570dd594be"
-              }
+              "work": "(-1,2)\\to(0,2);\\ (0,0)\\to(\\frac12,0);\\ (\\frac12,-\\frac14)\\to(\\frac34,-\\frac14);\\ (1,0)\\to(1,0);\\ (2,2)\\to(\\frac32,2)"
             }
           ],
           "meta": {
@@ -1145,10 +1064,7 @@
             },
             {
               "explain": "Sketch through mapped points; vertical reflection swaps max and min.",
-              "work": "\\text{new extrema: }(0,-2),(3,4)",
-              "figure": {
-                "svg": "fig:817c9f8c47"
-              }
+              "work": "\\text{new extrema: }(0,-2),(3,4)"
             }
           ],
           "meta": {
@@ -1187,10 +1103,7 @@
             },
             {
               "explain": "Sketch and label the mapped points.",
-              "work": "(-1,0),(0,4),(1,0)",
-              "figure": {
-                "svg": "fig:7281aa25f6"
-              }
+              "work": "(-1,0),(0,4),(1,0)"
             }
           ],
           "meta": {
@@ -1229,10 +1142,7 @@
             },
             {
               "explain": "Sketch the lower semi-ellipse and label intercepts.",
-              "work": "(-4,0),(0,-1),(4,0)",
-              "figure": {
-                "svg": "fig:dadcf9ba1c"
-              }
+              "work": "(-4,0),(0,-1),(4,0)"
             }
           ],
           "meta": {
@@ -1271,10 +1181,7 @@
             },
             {
               "explain": "Move the y-intercept and sketch the branches.",
-              "work": "(0,-1)\\to(2,1)",
-              "figure": {
-                "svg": "fig:05805ee4dd"
-              }
+              "work": "(0,-1)\\to(2,1)"
             }
           ],
           "meta": {
@@ -1313,10 +1220,7 @@
             },
             {
               "explain": "State intercepts and sketch both branches.",
-              "work": "(-2,0);\\quad\\text{no y-intercept}",
-              "figure": {
-                "svg": "fig:6b46b2e2eb"
-              }
+              "work": "(-2,0);\\quad\\text{no y-intercept}"
             }
           ],
           "meta": {
@@ -1355,10 +1259,7 @@
             },
             {
               "explain": "Sketch through these features.",
-              "work": "(-1,0),(2,0),(1,-1),(4,\\frac12)",
-              "figure": {
-                "svg": "fig:36dba78a5a"
-              }
+              "work": "(-1,0),(2,0),(1,-1),(4,\\frac12)"
             }
           ],
           "meta": {
@@ -1397,10 +1298,7 @@
             },
             {
               "explain": "Sketch the compressed graph from the origin through these points.",
-              "work": "(0,0),(2,8),(2.5,6),(3,8)",
-              "figure": {
-                "svg": "fig:9d3bc25e56"
-              }
+              "work": "(0,0),(2,8),(2.5,6),(3,8)"
             }
           ],
           "meta": {
@@ -1439,10 +1337,7 @@
             },
             {
               "explain": "Sketch the scaled graph from the origin through those points.",
-              "work": "(0,0),(4,4),(5,3),(6,4)",
-              "figure": {
-                "svg": "fig:b859fc49a8"
-              }
+              "work": "(0,0),(4,4),(5,3),(6,4)"
             }
           ],
           "meta": {
@@ -1686,24 +1581,15 @@
           "steps": [
             {
               "explain": "Read the vertical centre line from the constant term.",
-              "work": "\\(c=1.6\\text{ m}\\)",
-              "figure": {
-                "svg": "fig:5fff9e6d3f"
-              }
+              "work": "\\(c=1.6\\text{ m}\\)"
             },
             {
               "explain": "Cosine values lie between −1 and 1, so the amplitude gives the maximum distance from the centre.",
-              "work": "\\(-0.4\\le0.4\\cos(2\\pi t)\\le0.4\\)",
-              "figure": {
-                "svg": "fig:789969aaa6"
-              }
+              "work": "\\(-0.4\\le0.4\\cos(2\\pi t)\\le0.4\\)"
             },
             {
               "explain": "Add and subtract the amplitude from the centre height.",
-              "work": "\\(h_{\\min}=1.6-0.4=1.2\\text{ m}\\)\n\\(h_{\\max}=1.6+0.4=2.0\\text{ m}\\)",
-              "figure": {
-                "svg": "fig:1d76b286d8"
-              }
+              "work": "\\(h_{\\min}=1.6-0.4=1.2\\text{ m}\\)\n\\(h_{\\max}=1.6+0.4=2.0\\text{ m}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1742,24 +1628,15 @@
           "steps": [
             {
               "explain": "Identify the angular coefficient multiplying t inside the cosine.",
-              "work": "\\(b=2\\pi\\)",
-              "figure": {
-                "svg": "fig:81b250f07d"
-              }
+              "work": "\\(b=2\\pi\\)"
             },
             {
               "explain": "A cosine graph repeats after one full period.",
-              "work": "\\(T=\\frac{2\\pi}{|b|}\\)",
-              "figure": {
-                "svg": "fig:8736bf1b8e"
-              }
+              "work": "\\(T=\\frac{2\\pi}{|b|}\\)"
             },
             {
               "explain": "Substitute the coefficient and keep the time unit.",
-              "work": "\\(T=\\frac{2\\pi}{2\\pi}=1\\text{ s}\\)",
-              "figure": {
-                "svg": "fig:3cd9d1a9f3"
-              }
+              "work": "\\(T=\\frac{2\\pi}{2\\pi}=1\\text{ s}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1798,24 +1675,15 @@
           "steps": [
             {
               "explain": "The constant term gives the centre or midline of the price model.",
-              "work": "\\(P_\\text{mid}=180\\)",
-              "figure": {
-                "svg": "fig:475274a9a3"
-              }
+              "work": "\\(P_\\text{mid}=180\\)"
             },
             {
               "explain": "The sine function has maximum value 1, so the largest oscillating contribution is 44.",
-              "work": "\\(P_\\text{variation,max}=44(1)=44\\)",
-              "figure": {
-                "svg": "fig:b4edd29f64"
-              }
+              "work": "\\(P_\\text{variation,max}=44(1)=44\\)"
             },
             {
               "explain": "Add the largest variation to the midline.",
-              "work": "\\(P_{\\max}=180+44=224\\text{ cents per litre}\\)",
-              "figure": {
-                "svg": "fig:e6a937d929"
-              }
+              "work": "\\(P_{\\max}=180+44=224\\text{ cents per litre}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1854,31 +1722,19 @@
           "steps": [
             {
               "explain": "Set the given price equal to 202 and isolate the sine term.",
-              "work": "\\(202=180+44\\sin\\left(\\frac{2\\pi t}{183}\\right)\\)\n\\(\\sin\\left(\\frac{2\\pi t}{183}\\right)=\\frac{22}{44}=\\frac12\\)",
-              "figure": {
-                "svg": "fig:597529a670"
-              }
+              "work": "\\(202=180+44\\sin\\left(\\frac{2\\pi t}{183}\\right)\\)\n\\(\\sin\\left(\\frac{2\\pi t}{183}\\right)=\\frac{22}{44}=\\frac12\\)"
             },
             {
               "explain": "Let the angle be theta. As t goes from 0 to 366, theta runs from 0 to 4pi.",
-              "work": "\\(\\theta=\\frac{2\\pi t}{183},\\qquad0\\le\\theta\\le4\\pi\\)",
-              "figure": {
-                "svg": "fig:a3f0dfb223"
-              }
+              "work": "\\(\\theta=\\frac{2\\pi t}{183},\\qquad0\\le\\theta\\le4\\pi\\)"
             },
             {
               "explain": "Sine equals one-half at two angles in each 2pi cycle; list all four in the interval.",
-              "work": "\\(\\theta=\\frac\\pi6,\\frac{5\\pi}6,\\frac{13\\pi}6,\\frac{17\\pi}6\\)",
-              "figure": {
-                "svg": "fig:78221244d8"
-              }
+              "work": "\\(\\theta=\\frac\\pi6,\\frac{5\\pi}6,\\frac{13\\pi}6,\\frac{17\\pi}6\\)"
             },
             {
               "explain": "Convert each angle back to a day using the definition of theta.",
-              "work": "\\(t=\\frac{183\\theta}{2\\pi}\\)\n\\(t=15.25,\\;76.25,\\;198.25,\\;259.25\\text{ days}\\)",
-              "figure": {
-                "svg": "fig:78221244d8"
-              }
+              "work": "\\(t=\\frac{183\\theta}{2\\pi}\\)\n\\(t=15.25,\\;76.25,\\;198.25,\\;259.25\\text{ days}\\)"
             }
           ],
           "timeLimit": 90,
@@ -1917,24 +1773,15 @@
           "steps": [
             {
               "explain": "The wheel centre is one radius above the ground.",
-              "work": "\\(r=\\frac{70}{2}=35\\text{ m}\\)",
-              "figure": {
-                "svg": "fig:f727fb0454"
-              }
+              "work": "\\(r=\\frac{70}{2}=35\\text{ m}\\)"
             },
             {
               "explain": "Find the fraction of one revolution completed after 15 minutes.",
-              "work": "\\(\\frac{15}{20}=\\frac34\\text{ of a revolution}\\)",
-              "figure": {
-                "svg": "fig:1b2f43c7a8"
-              }
+              "work": "\\(\\frac{15}{20}=\\frac34\\text{ of a revolution}\\)"
             },
             {
               "explain": "From the lowest point, three quarters of a clockwise turn ends at the rightmost point, whose vertical height equals the centre height.",
-              "work": "\\(h=35\\text{ m}\\)",
-              "figure": {
-                "svg": "fig:493bee4793"
-              }
+              "work": "\\(h=35\\text{ m}\\)"
             }
           ],
           "timeLimit": 60,
@@ -1977,31 +1824,19 @@
           "steps": [
             {
               "explain": "The minimum is ground level and the maximum is one diameter above it.",
-              "work": "\\(h_{\\min}=0,\\qquad h_{\\max}=70\\)",
-              "figure": {
-                "svg": "fig:1619a653f3"
-              }
+              "work": "\\(h_{\\min}=0,\\qquad h_{\\max}=70\\)"
             },
             {
               "explain": "The midline is the average of the extrema; the amplitude is half their difference. Because the wheel starts at its minimum while cos(0)=1, the cosine coefficient is negative.",
-              "work": "\\(c=\\frac{0+70}{2}=35,\\qquad a=-\\frac{70-0}{2}=-35\\)",
-              "figure": {
-                "svg": "fig:780b3961b3"
-              }
+              "work": "\\(c=\\frac{0+70}{2}=35,\\qquad a=-\\frac{70-0}{2}=-35\\)"
             },
             {
               "explain": "Use the period formula for cosine to find the angular coefficient.",
-              "work": "\\(\\frac{2\\pi}{b}=20\\Rightarrow b=\\frac{2\\pi}{20}=\\frac\\pi{10}\\)",
-              "figure": {
-                "svg": "fig:69ba4a45ac"
-              }
+              "work": "\\(\\frac{2\\pi}{b}=20\\Rightarrow b=\\frac{2\\pi}{20}=\\frac\\pi{10}\\)"
             },
             {
               "explain": "Combine the three parameters and verify the starting height is zero.",
-              "work": "\\(h(t)=-35\\cos\\left(\\frac\\pi{10}t\\right)+35\\)\n\\(h(0)=-35(1)+35=0\\)",
-              "figure": {
-                "svg": "fig:69ba4a45ac"
-              }
+              "work": "\\(h(t)=-35\\cos\\left(\\frac\\pi{10}t\\right)+35\\)\n\\(h(0)=-35(1)+35=0\\)"
             }
           ],
           "timeLimit": 90,

@@ -9900,24 +9900,15 @@
           "steps": [
             {
               "explain": "Use the stated minimum and maximum to identify all possible original y-values.",
-              "work": "\\(0\\le f(x)\\le4\\)",
-              "figure": {
-                "svg": "fig:4fdf33fdc9"
-              }
+              "work": "\\(0\\le f(x)\\le4\\)"
             },
             {
               "explain": "Multiply the full inequality by the positive number one-half; the inequality directions stay the same.",
-              "work": "\\(0\\le\\frac12f(x)\\le2\\)",
-              "figure": {
-                "svg": "fig:f61d3bfb8a"
-              }
+              "work": "\\(0\\le\\frac12f(x)\\le2\\)"
             },
             {
               "explain": "State the transformed range with included endpoints, since both extrema are attained.",
-              "work": "\\(\\text{Range}(g)=[0,2]\\)",
-              "figure": {
-                "svg": "fig:4f277fcf4a"
-              }
+              "work": "\\(\\text{Range}(g)=[0,2]\\)"
             }
           ],
           "timeLimit": 60,
