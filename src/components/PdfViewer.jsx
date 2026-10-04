@@ -13,7 +13,7 @@
  *   style    – container style overrides
  */
 import { useEffect, useRef, useState } from 'react';
-import { Loader2, AlertTriangle } from 'lucide-react';
+import { Loader2, AlertTriangle, ZoomIn, ZoomOut } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
@@ -23,6 +23,44 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 
 const PAGE_GAP = 12;
 const MAX_PAGE_WIDTH = 1000;
+const MAX_RENDER_WIDTH = 3200;
+const MIN_ZOOM = 0.5;
+const MAX_ZOOM = 2.5;
+const ZOOM_STEP = 0.25;
+
+const ZoomControls = ({ zoom, onZoomChange }) => (
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 6, flexShrink: 0, padding: '5px 10px', background: '#fff', borderBottom: '1px solid #e2e8f0' }}>
+    <button
+      type="button"
+      aria-label="Zoom out"
+      title="Zoom out"
+      disabled={zoom <= MIN_ZOOM}
+      onClick={() => onZoomChange((value) => Math.max(MIN_ZOOM, Math.round((value - ZOOM_STEP) * 100) / 100))}
+      style={{ width: 34, height: 32, display: 'grid', placeItems: 'center', border: '1px solid #e2e8f0', borderRadius: 9, background: '#fff', color: '#334155', cursor: zoom <= MIN_ZOOM ? 'default' : 'pointer', opacity: zoom <= MIN_ZOOM ? 0.45 : 1 }}
+    >
+      <ZoomOut size={17} />
+    </button>
+    <button
+      type="button"
+      aria-label="Reset zoom to 100%"
+      title="Reset zoom"
+      onClick={() => onZoomChange(1)}
+      style={{ minWidth: 54, height: 32, padding: '0 6px', border: 0, borderRadius: 8, background: 'transparent', color: '#475569', fontSize: '0.78rem', fontWeight: 800, cursor: 'pointer' }}
+    >
+      {Math.round(zoom * 100)}%
+    </button>
+    <button
+      type="button"
+      aria-label="Zoom in"
+      title="Zoom in"
+      disabled={zoom >= MAX_ZOOM}
+      onClick={() => onZoomChange((value) => Math.min(MAX_ZOOM, Math.round((value + ZOOM_STEP) * 100) / 100))}
+      style={{ width: 34, height: 32, display: 'grid', placeItems: 'center', border: '1px solid #e2e8f0', borderRadius: 9, background: '#fff', color: '#334155', cursor: zoom >= MAX_ZOOM ? 'default' : 'pointer', opacity: zoom >= MAX_ZOOM ? 0.45 : 1 }}
+    >
+      <ZoomIn size={17} />
+    </button>
+  </div>
+);
 
 const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot }) => {
   const holderRef = useRef(null);
@@ -50,7 +88,7 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot }) => {
         if (cancelled) return;
         const base = page.getViewport({ scale: 1 });
         setRatio(base.height / base.width);
-        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const dpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / width);
         const viewport = page.getViewport({ scale: (width / base.width) * dpr });
         const canvas = canvasRef.current;
         if (!canvas) return;
@@ -90,6 +128,7 @@ const centered = (style, children) => (
 const PdfViewer = ({ src, loading, fallback, style }) => {
   const [scrollEl, setScrollEl] = useState(null);
   const [width, setWidth] = useState(0);
+  const [zoom, setZoom] = useState(1);
   // Keyed by src so a new document never briefly shows the previous one.
   const [opened, setOpened] = useState(null); // { src, pdf, numPages, ratio } | { src, failed: true }
   const doc = opened?.src === src && !opened.failed ? opened : null;
@@ -135,7 +174,16 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   }
 
   if (!src || failed) {
-    if (fallback) return <iframe title="Worksheet" src={fallback} allow="autoplay" style={{ width: '100%', height: '100%', border: 0, ...style }} />;
+    if (fallback) return (
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
+        <ZoomControls zoom={zoom} onZoomChange={setZoom} />
+        <div ref={setScrollEl} style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch' }}>
+          <div style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%`, minWidth: `${zoom * 100}%`, minHeight: `${zoom * 100}%` }}>
+            <iframe title="Worksheet" src={fallback} allow="autoplay" style={{ width: `${100 / zoom}%`, height: `${100 / zoom}%`, border: 0, transform: `scale(${zoom})`, transformOrigin: 'top left' }} />
+          </div>
+        </div>
+      </div>
+    );
     return centered({ background: '#fef2f2', ...style }, (
       <div style={{ color: '#dc2626' }}>
         <AlertTriangle size={28} style={{ marginBottom: 8 }} />
@@ -144,27 +192,35 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     ));
   }
 
+  const pageWidth = Math.round(width * zoom);
+  const contentWidth = Math.max(scrollEl?.clientWidth || 0, pageWidth + PAGE_GAP * 2);
+
   return (
-    <div
-      ref={setScrollEl}
-      style={{ height: '100%', overflowY: 'auto', overflowX: 'hidden', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', ...style }}
-    >
-      {!doc || !width ? (
-        <div style={{ display: 'grid', placeItems: 'center', minHeight: 200 }}>
-          <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa' }} />
-        </div>
-      ) : (
-        Array.from({ length: doc.numPages }, (_, i) => (
-          <PdfPage
-            key={i + 1}
-            pdf={doc.pdf}
-            pageNumber={i + 1}
-            width={width}
-            initialRatio={doc.ratio}
-            scrollRoot={scrollEl}
-          />
-        ))
-      )}
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style }}>
+      <ZoomControls zoom={zoom} onZoomChange={setZoom} />
+      <div
+        ref={setScrollEl}
+        style={{ flex: 1, minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch' }}
+      >
+        {!doc || !width ? (
+          <div style={{ display: 'grid', placeItems: 'center', minHeight: 200 }}>
+            <Loader2 size={28} style={{ animation: 'spin 0.8s linear infinite', color: '#a78bfa' }} />
+          </div>
+        ) : (
+          <div style={{ width: contentWidth, minHeight: '100%' }}>
+            {Array.from({ length: doc.numPages }, (_, i) => (
+              <PdfPage
+                key={i + 1}
+                pdf={doc.pdf}
+                pageNumber={i + 1}
+                width={pageWidth}
+                initialRatio={doc.ratio}
+                scrollRoot={scrollEl}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };
