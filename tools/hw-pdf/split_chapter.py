@@ -15,7 +15,9 @@ import re, subprocess, sys, os
 from pypdf import PdfReader, PdfWriter
 
 def page_words(pdf, n):
-    x = subprocess.run(['pdftotext', '-bbox', '-f', str(n), '-l', str(n), pdf, '-'], capture_output=True, text=True).stdout
+    r = subprocess.run(['pdftotext', '-bbox', '-f', str(n), '-l', str(n), pdf, '-'], capture_output=True, text=True)
+    if r.returncode != 0: return []   # poppler crashes on a few pages
+    x = r.stdout
     return [(float(c[1]), float(c[3]) - float(c[1]), c[4]) for c in re.findall(r'xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">(.*?)</word>', x)]
 
 def find_headings(pdf, npages, chap):
@@ -24,12 +26,17 @@ def find_headings(pdf, npages, chap):
     out, review, last = {}, None, npages
     for n in range(1, npages + 1):
         ws = page_words(pdf, n)
+        if not ws:   # pdftotext -bbox crashes on a few pages (Y8 6F/6G): fall back to the layout text, heading assumed at the top
+            lt = subprocess.run(['pdftotext', '-layout', '-f', str(n), '-l', str(n), pdf, '-'], capture_output=True, text=True).stdout
+            m = re.match(rf'\s*({chap})\s*([A-Z])\s{{3,}}\S', lt)
+            if m and m.group(1) + m.group(2) not in out: out[m.group(1) + m.group(2)] = (n, 0)
+            continue
         txt = ' '.join(w[2] for w in ws[:4])
         if txt.startswith('Answers to exercises'):
             last = n - 1
             break
         big = [w for w in ws if w[1] >= 55]
-        code = ''.join(w[2] for w in big)
+        code = re.sub(r'\s+', '', ''.join(w[2] for w in big))   # thin spaces: "6\u2009\u2009F"
         if re.fullmatch(rf'{chap}[A-Z]', code) and code not in out:
             out[code] = (n, min(w[0] for w in big))
         if review is None and out:   # only after the first section heading (whole-book files)
