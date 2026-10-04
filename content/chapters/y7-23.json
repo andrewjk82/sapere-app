@@ -490,8 +490,8 @@
         {
           "id": "y7-23a-q3c",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "If \\(y\\) represents any number, write an algebraic expression for the following.<br /><br />The sum of the number and \\(20\\)",
+          "difficulty": "easy",
           "options": [
             "\\(-y + 20\\)",
             "\\(y + 20\\)",
@@ -515,10 +515,19 @@
             }
           ],
           "timeLimit": 30,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "sum ",
+              "note": "Sum"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
           "alsoIn": [
             "exam:year7ch23a"
-          ],
-          "xp": 1
+          ]
         },
         {
           "id": "y7-23a-q3d",
