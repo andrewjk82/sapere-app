@@ -166,9 +166,9 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const pendingZoomAnchorRef = useRef(null);
   const pageStackRef = useRef(null);
   const pageSpacerRef = useRef(null);
-  const touchPointsRef = useRef(new Map());
   const pinchRef = useRef(null);
   const pinchAnimationFrameRef = useRef(0);
+  const schedulePinchFrameRef = useRef(null);
   const lastPinchRenderAtRef = useRef(0);
   // Keyed by src so a new document never briefly shows the previous one.
   const [opened, setOpened] = useState(null); // { src, pdf, numPages, ratio } | { src, failed: true }
@@ -250,7 +250,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
     setRenderZoom(next);
   };
 
-  const schedulePinchFrame = () => {
+  const schedulePinchFrame = useCallback(() => {
     if (pinchAnimationFrameRef.current || !pinchRef.current) return;
     pinchAnimationFrameRef.current = requestAnimationFrame(() => {
       pinchAnimationFrameRef.current = 0;
@@ -289,18 +289,25 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         pinchRef.current = null;
         return;
       }
-      if (!settled || pinch.finishRequested) schedulePinchFrame();
+      if (!settled || pinch.finishRequested) schedulePinchFrameRef.current?.();
     });
-  };
+  }, []);
 
-  const handlePointerDown = (event) => {
-    if (event.pointerType !== 'touch') return;
-    touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
-    try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* Safari may already own the pointer */ }
-    if (touchPointsRef.current.size === 2) {
-      const points = [...touchPointsRef.current.values()];
+  useEffect(() => { schedulePinchFrameRef.current = schedulePinchFrame; }, [schedulePinchFrame]);
+
+  // Pinch zoom uses native touch events, not pointer events: with touch-action
+  // set to pan, Safari/Chrome take over a moving finger for scrolling and send
+  // pointercancel, so a two-finger pinch was only recognised now and then.
+  // Non-passive touchmove + preventDefault keeps both fingers for the pinch.
+  useEffect(() => {
+    if (!scrollEl) return undefined;
+    const pointsOf = (touches) => [touches[0], touches[1]].map((t) => ({ x: t.clientX, y: t.clientY }));
+
+    const begin = (event) => {
+      if (event.touches.length !== 2) return;
+      const points = pointsOf(event.touches);
       const center = midpoint(points);
-      const rect = event.currentTarget.getBoundingClientRect();
+      const rect = scrollEl.getBoundingClientRect();
       const localX = center.x - rect.left;
       const localY = center.y - rect.top;
       const startZoom = zoomRef.current;
@@ -310,8 +317,8 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         targetZoom: startZoom,
         visualZoom: startZoom,
         center,
-        docX: (event.currentTarget.scrollLeft + localX) / startZoom,
-        docY: (event.currentTarget.scrollTop + localY - PAGE_GAP) / startZoom,
+        docX: (scrollEl.scrollLeft + localX) / startZoom,
+        docY: (scrollEl.scrollTop + localY - PAGE_GAP) / startZoom,
       };
       const stack = pageStackRef.current;
       const spacer = pageSpacerRef.current;
@@ -323,44 +330,52 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         spacer.style.height = `${stack.offsetHeight}px`;
       }
       lastPinchRenderAtRef.current = 0;
-    }
-  };
+      if (event.cancelable) event.preventDefault();
+    };
 
-  const handlePointerMove = (event) => {
-    if (!touchPointsRef.current.has(event.pointerId)) return;
-    touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
-    if (touchPointsRef.current.size < 2 || !pinchRef.current) return;
-    if (event.cancelable) event.preventDefault();
-
-    const nextZoom = zoomForPinch(pinchRef.current, [...touchPointsRef.current.values()]);
-    const now = performance.now();
-    if (nextZoom !== null) {
-      const center = midpoint([...touchPointsRef.current.values()]);
-      pinchRef.current.center = center;
-      pinchRef.current.targetZoom = nextZoom;
-      if (now - lastPinchRenderAtRef.current >= 42) setZoom(nextZoom);
-      schedulePinchFrame();
-    }
-    if (nextZoom !== null && now - lastPinchRenderAtRef.current >= 42) lastPinchRenderAtRef.current = now;
-  };
-
-  const handlePointerEnd = (event) => {
-    if (!touchPointsRef.current.has(event.pointerId)) return;
-    if (touchPointsRef.current.size >= 2 && pinchRef.current) {
-      touchPointsRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
-      const points = [...touchPointsRef.current.values()];
-      const finalZoom = zoomForPinch(pinchRef.current, points);
-      if (finalZoom !== null) {
-        const center = midpoint(points);
-        pinchRef.current.center = center;
-        pinchRef.current.targetZoom = finalZoom;
-        pinchRef.current.finishRequested = true;
-        schedulePinchFrame();
+    const move = (event) => {
+      const pinch = pinchRef.current;
+      if (!pinch || pinch.finishRequested || event.touches.length < 2) return;
+      if (event.cancelable) event.preventDefault();
+      const points = pointsOf(event.touches);
+      const nextZoom = zoomForPinch(pinch, points);
+      if (nextZoom === null) return;
+      pinch.center = midpoint(points);
+      pinch.targetZoom = nextZoom;
+      const now = performance.now();
+      if (now - lastPinchRenderAtRef.current >= 42) {
+        lastPinchRenderAtRef.current = now;
+        setZoom(nextZoom);
       }
-    }
-    touchPointsRef.current.delete(event.pointerId);
-    if (touchPointsRef.current.size < 2 && !pinchRef.current?.finishRequested) pinchRef.current = null;
-  };
+      schedulePinchFrame();
+    };
+
+    const end = (event) => {
+      const pinch = pinchRef.current;
+      if (!pinch || pinch.finishRequested || event.touches.length >= 2) return;
+      pinch.finishRequested = true;
+      schedulePinchFrame();
+    };
+
+    // Safari also fires its own gesture events for a pinch; stop it zooming the page.
+    const blockGesture = (event) => { if (event.cancelable) event.preventDefault(); };
+
+    const opts = { passive: false };
+    scrollEl.addEventListener('touchstart', begin, opts);
+    scrollEl.addEventListener('touchmove', move, opts);
+    scrollEl.addEventListener('touchend', end, opts);
+    scrollEl.addEventListener('touchcancel', end, opts);
+    scrollEl.addEventListener('gesturestart', blockGesture, opts);
+    scrollEl.addEventListener('gesturechange', blockGesture, opts);
+    return () => {
+      scrollEl.removeEventListener('touchstart', begin, opts);
+      scrollEl.removeEventListener('touchmove', move, opts);
+      scrollEl.removeEventListener('touchend', end, opts);
+      scrollEl.removeEventListener('touchcancel', end, opts);
+      scrollEl.removeEventListener('gesturestart', blockGesture, opts);
+      scrollEl.removeEventListener('gesturechange', blockGesture, opts);
+    };
+  }, [scrollEl, schedulePinchFrame]);
 
   if (loading) {
     return centered(style, (
@@ -377,10 +392,6 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
         <div
           ref={handleScrollRef}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerEnd}
-          onPointerCancel={handlePointerEnd}
           style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
         >
           <div style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%`, minWidth: `${zoom * 100}%`, minHeight: `${zoom * 100}%` }}>
@@ -405,10 +416,6 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
         <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
       <div
         ref={handleScrollRef}
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerUp={handlePointerEnd}
-        onPointerCancel={handlePointerEnd}
         style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
       >
         {!doc || !width ? (
