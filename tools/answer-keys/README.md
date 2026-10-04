@@ -33,3 +33,5 @@ to each chapter's review topic (`y12a-1j`, `y12a-2-2j`, `y12a-3I`, …).
 Cambridge 2nd-edition Extension 1 Year 11 (2025) uses the same layout; run `cambridge_adv11.py` unchanged (answers pages 761–888 of the full book).
 
 Cambridge 1st-edition Extension 1 Year 12 (2019): `cambridge_adv12.py` with `PAGE_TOP` (photo banner on the first answers page) and side-tab-safe crop bounds (55–541pt); the book comes as per-chapter PDFs plus `Ch18_Ans.pdf`.
+
+Cambridge Extension 2 Year 12 (Sadler & Ward, 2020): `cambridge_ext2.py` — "Answers to Exercises" PDF, two wide columns (x=80 / x=320), headings "Exercise 1A (Page 8)" / "Review Exercise 1H", labels like `7(a)`. Review keys map to the "Chapter Review Exercise" topic of each chapter (`y12e2-1H`).
