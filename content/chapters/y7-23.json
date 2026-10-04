@@ -328,8 +328,8 @@
         {
           "id": "y7-23a-q2d",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Write an algebraic expression for the following.<br /><br />The product of \\(5p\\) and \\(4q\\)",
+          "difficulty": "easy",
           "options": [
             "\\(21pq\\)",
             "\\(9pq\\)",
@@ -353,7 +353,16 @@
             }
           ],
           "timeLimit": 30,
-          "xp": 1
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "product of",
+              "note": "Product means multiplication."
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-23a-q2e",
