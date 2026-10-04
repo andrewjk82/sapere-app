@@ -11,10 +11,9 @@ const liftHover = {
 
 /**
  * Dashboard entry point for the Daily Challenge sprints: this week's personal
- * best on each of the five, and the time left in the week. Styled as the same
- * dark timing instrument as the rest of the feature — deliberately moodier
- * than the bright routine-task cards around it, since this one is the
- * competitive event, not a daily habit.
+ * best on each of the five, and the time left in the week. The dashboard
+ * version uses the app's light card palette; the sprint hub keeps its own
+ * timing-instrument treatment.
  *
  * Zero Firestore reads — bests come from the device mirror written after each
  * run, the countdown is local arithmetic (the old live top-5 listener is gone).
@@ -43,7 +42,7 @@ const SprintDashboardCard = ({ uid, onClick }) => {
         data-press
         {...liftHover}
         onClick={onClick}
-        className="tts-instrument tts-instrument--card"
+        className="tts-instrument tts-instrument--card tts-instrument--dashboard"
         style={{
           height: '100%',
           boxSizing: 'border-box',
@@ -57,22 +56,22 @@ const SprintDashboardCard = ({ uid, onClick }) => {
       >
         <p className="tts-watermark" style={{ fontSize: '2.3rem', right: '-4px' }} aria-hidden="true">SPRINT</p>
 
-        <label className="tts-eyebrow" style={{ position: 'relative', color: 'rgba(245,243,255,0.5)', marginBottom: '2px' }}>
+        <label className="tts-eyebrow" style={{ position: 'relative', color: '#8b84a5', marginBottom: '2px' }}>
           Daily Challenge
         </label>
 
         <div style={{ position: 'relative', display: 'flex', gap: '6px', marginTop: '4px' }}>
           {bests.map(({ type, best }) => (
-            <div key={type.id} title={type.name} style={{ flex: 1, minWidth: 0, textAlign: 'center', borderRadius: '10px', padding: '4px 2px', background: 'rgba(255,255,255,0.08)' }}>
+            <div key={type.id} title={type.name} style={{ flex: 1, minWidth: 0, textAlign: 'center', borderRadius: '10px', padding: '4px 2px', background: '#f2effb', border: '1px solid #ebe6f6' }}>
               <div style={{ fontWeight: 900, fontSize: '1rem', color: type.accent, lineHeight: 1.1 }}>{type.glyph}</div>
-              <div className="tts-led" style={{ fontSize: '0.62rem', color: best ? '#f5f3ff' : 'rgba(245,243,255,0.4)' }}>
+              <div className="tts-led" style={{ fontSize: '0.62rem', color: best ? '#393064' : '#a29bb8' }}>
                 {best ? formatSprintTime(Number(best.bestTimeMs)) : '—'}
               </div>
             </div>
           ))}
         </div>
 
-        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: 'rgba(245,243,255,0.8)', flexWrap: 'wrap' }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: '#716b88', flexWrap: 'wrap' }}>
           <span>{played}/5 played this week</span>
           <span>Resets in {formatResetCountdown(msLeft)}</span>
         </div>

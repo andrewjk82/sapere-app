@@ -140,6 +140,18 @@
   border-radius: 28px;
 }
 
+/* Dashboard preview sits among Sapere's light lavender cards. Keep the
+   darker timing-instrument look for the dedicated sprint experience only. */
+.tts-instrument--dashboard {
+  background: linear-gradient(135deg, #fff, #f8f6ff);
+  border: 1px solid #e9e4f7;
+  color: #1e1b4b;
+  box-shadow: 0 14px 34px rgba(79, 70, 229, 0.1);
+}
+
+.tts-instrument--dashboard::before { display: none; }
+.tts-instrument--dashboard .tts-watermark { color: rgba(109, 94, 252, 0.08); }
+
 /* Track-meet signage watermark — replaces the generic giant translucent
    lucide icon with something that belongs to this specific subject. */
 .tts-watermark {
@@ -681,13 +693,13 @@
   z-index: 2;
   padding: 3px 9px;
   border-radius: 999px;
-  background: #ff1744;
+  background: #6d5efc;
   color: #fff;
   font-family: var(--spr-display);
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   line-height: 1.5;
-  box-shadow: 0 0 0 3px var(--spr-track), 0 0 14px rgba(255, 23, 68, 0.85);
+  box-shadow: 0 0 0 3px #f8f6ff, 0 4px 12px rgba(109, 94, 252, 0.28);
   animation: tts-badge-pulse 1.8s ease-in-out infinite;
   pointer-events: none;
 }

@@ -51,9 +51,9 @@ const OnlineStudySessionCard = () => {
         display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
         margin: '0 0 24px', maxWidth: '100%',
         padding: '20px 24px', borderRadius: '28px',
-        background: 'linear-gradient(135deg, #2563eb, #4338ca)',
-        color: '#fff', textDecoration: 'none', cursor: 'pointer', border: 'none', textAlign: 'left',
-        boxShadow: '0 15px 35px rgba(37,99,235,0.25)',
+        background: 'linear-gradient(110deg, #ffffff, #f6f3ff)',
+        color: '#1e1b4b', textDecoration: 'none', cursor: 'pointer', border: '1px solid #e7e0f7', textAlign: 'left',
+        boxShadow: '0 8px 24px rgba(79,70,229,0.09)',
         position: 'relative', overflow: 'hidden',
         transition: 'transform 0.15s, box-shadow 0.15s',
       }}
@@ -61,15 +61,15 @@ const OnlineStudySessionCard = () => {
       onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
       onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
     >
-      <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-      <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+      <div style={{ position: 'absolute', top: '-32px', right: '-14px', width: '130px', height: '130px', borderRadius: '50%', background: 'rgba(124,58,237,0.045)' }} />
+      <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: '#eee9ff', color: '#6d5efc', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
         <Video size={22} />
       </div>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
+        <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8278a7', marginBottom: '3px' }}>
           Online Study Session · Live now
         </div>
-        <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
+        <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#27224e' }}>
           {config?.manualOpen && !inWindow
             ? 'Tap to join the Online Study Room'
             : 'Tap to join the Online Study Room · open until 10:30 PM'}
