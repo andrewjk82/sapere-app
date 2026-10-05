@@ -1060,7 +1060,10 @@ const StudentDetail = ({ studentId, onBack }) => {
     try {
       if (next && session.homeworkStatus === 'submitted') {
         // Submitted online: close the submission too (starts the 30-day originals timer).
-        await markHomeworkChecked(session.id);
+        await markHomeworkChecked(session.id, null, {
+          studentId: challengeResultsUid,
+          topics: (session.learnedTopics || []).map((t) => ({ id: t?.id, label: t?.label || t?.title || t?.id })),
+        });
         setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, homeworkStatus: 'checked' } : s));
       } else {
         await updateDoc(doc(db, 'sessions', session.id), {

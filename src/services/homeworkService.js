@@ -1,3 +1,4 @@
+import { buildCheckedNotification } from '../utils/homeworkMarking';
 import {
   collection, doc, getDoc, getDocs, query, where, writeBatch, serverTimestamp,
 } from 'firebase/firestore';
@@ -183,7 +184,7 @@ export async function fetchHomeworkAssignments() {
 // `grade` (optional, from the marking panel): { score, total, marks, comment }.
 // Stored on the session so the weekly report's Homework Mark and the
 // student's history pick it up with no extra reads.
-export async function markHomeworkChecked(sessionId, grade = null) {
+export async function markHomeworkChecked(sessionId, grade = null, notify = null) {
   const gradeFields = {};
   if (grade && grade.total > 0) {
     gradeFields.homeworkScore = grade.score;
@@ -204,7 +205,28 @@ export async function markHomeworkChecked(sessionId, grade = null) {
     ...gradeFields,
   });
   await batch.commit();
+  // Tell the student it is back. Push + in-app only (no email), and never blocks or fails the check.
+  if (notify?.studentId) {
+    notifyStudentHomeworkChecked({ studentId: notify.studentId, sessionId, topics: notify.topics || [], grade })
+      .catch((err) => console.warn('[homework] student notify failed (non-fatal):', err?.message || err));
+  }
 }
+
+const notifyStudentHomeworkChecked = async ({ studentId, sessionId, topics, grade }) => {
+  const { subject, text, score } = buildCheckedNotification({ topics, grade });
+  const response = await fetch('/api/send-notif', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      studentId,
+      skipEmail: true,
+      subject,
+      text,
+      metadata: { type: 'homework_checked', sessionId, ...(score ? { score } : {}) },
+    }),
+  });
+  if (!response.ok) console.warn('[homework] send-notif (student) returned', response.status);
+};
 
 // Textbook answer keys (answer_keys/{topicId}, teacher-only). Memory first, then
 // the device cache (a key read once is not read again for two weeks), then one

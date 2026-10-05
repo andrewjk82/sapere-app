@@ -5,9 +5,45 @@ import { X, ChevronLeft, ChevronRight, CheckCircle2, ZoomIn, ZoomOut, Loader2 } 
 import { fetchSubmission, fetchSubmissionPages, markHomeworkChecked } from '../../services/homeworkService';
 import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
 import { isSafeImageDataUrl } from '../../utils/homework';
+import { groupMarksByTopic } from '../../utils/homeworkMarking';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const ICON_BTN = { border: 0, background: 'transparent', color: '#fff', padding: 6, cursor: 'pointer' };
+const MARK_CHIP = {
+  c: { bg: '#10b981', text: '✓' },
+  x: { bg: '#ef4444', text: '✗' },
+  h: { bg: '#f59e0b', text: '½' },
+};
+
+// What the student sees once the teacher has checked: the score, the comment, and the ✓/✗/½
+// for every question the teacher marked in the topic being viewed. The answer key stays teacher-only.
+const StudentMarks = ({ info, topicId }) => {
+  const sections = topicId ? (groupMarksByTopic(info?.marks)[topicId] || []) : [];
+  if (!info?.mark && !info?.comment && sections.length === 0) return null;
+  return (
+    <div style={{ margin: '0 12px 8px', padding: '10px 12px', borderRadius: 14, background: 'rgba(255,255,255,0.96)', color: '#1e1b4b', maxHeight: '34vh', overflowY: 'auto' }}>
+      {(info.mark || info.comment) && (
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap', marginBottom: sections.length ? 8 : 0 }}>
+          {info.mark && <strong style={{ fontSize: '1.15rem' }}>{info.mark}</strong>}
+          {info.mark && <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.06em', textTransform: 'uppercase' }}>all topics</span>}
+          {info.comment && <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#4f46e5' }}>“{info.comment}”</span>}
+        </div>
+      )}
+      {sections.map(({ section, items }) => (
+        <div key={section} style={{ marginBottom: 6 }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginBottom: 4 }}>{section}</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+            {items.map(({ label, mark }) => (
+              <span key={label} aria-label={`Question ${label}: ${mark === 'c' ? 'correct' : mark === 'x' ? 'incorrect' : 'half marks'}`} style={{ minWidth: 40, padding: '5px 9px', borderRadius: 9, background: MARK_CHIP[mark].bg, color: '#fff', fontWeight: 800, fontSize: '0.8rem', textAlign: 'center' }}>
+                {label} {MARK_CHIP[mark].text}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 // mode 'teacher': originals from Firestore (thumbnails once purged) + "Mark as checked".
 // mode 'student': the copy kept on this device, with no Firestore read at all;
@@ -82,7 +118,10 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
     setChecking(true);
     setError('');
     try {
-      await markHomeworkChecked(sessionId, grade);
+      await markHomeworkChecked(sessionId, grade, {
+        studentId: submission?.studentId,
+        topics: submission?.topics || info?.topics || [],
+      });
       setSubmission((s) => ({ ...s, status: 'checked' }));
       onChecked?.(sessionId);
     } catch {
@@ -153,6 +192,10 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
             </button>
           ))}
         </div>
+      )}
+
+      {mode === 'student' && status === 'checked' && (
+        <StudentMarks info={info} topicId={selectedGroup?.id} />
       )}
 
       {marking && !isWide && (

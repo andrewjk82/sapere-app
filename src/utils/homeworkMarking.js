@@ -22,3 +22,40 @@ export const scoreMarks = (marks = {}) => {
 export const compactMarks = (marks = {}) => Object.fromEntries(
   Object.entries(marks).filter(([, m]) => m === 'c' || m === 'x' || m === 'h'),
 );
+
+const labelOrder = (a, b) => String(a).localeCompare(String(b), undefined, { numeric: true });
+
+// Marks grouped for display: { [topicId]: [{ section, items: [{ label, mark }] }] }, labels in
+// natural order ("2" before "10", "1.2" before "1.10"). Keys are markKey()s; a malformed key is skipped.
+export const groupMarksByTopic = (marks = {}) => {
+  const byTopic = {};
+  for (const [key, mark] of Object.entries(marks || {})) {
+    if (mark !== 'c' && mark !== 'x' && mark !== 'h') continue;
+    const [topicId, section, ...rest] = String(key).split('|');
+    const label = rest.join('|');
+    if (!topicId || !section || !label) continue;
+    const sections = byTopic[topicId] || (byTopic[topicId] = new Map());
+    if (!sections.has(section)) sections.set(section, []);
+    sections.get(section).push({ label, mark });
+  }
+  return Object.fromEntries(Object.entries(byTopic).map(([topicId, sections]) => [
+    topicId,
+    [...sections].map(([section, items]) => ({ section, items: items.sort((a, b) => labelOrder(a.label, b.label)) })),
+  ]));
+};
+
+const fmtScore = (n) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
+
+// Push / in-app notification sent to the student when the teacher finishes checking.
+export const buildCheckedNotification = ({ topics = [], grade = null } = {}) => {
+  const hasScore = grade && grade.total > 0;
+  const score = hasScore ? `${fmtScore(grade.score)}/${grade.total}` : '';
+  const topicLine = topics.map((t) => t?.label).filter(Boolean).join(', ');
+  const comment = String(grade?.comment || '').trim();
+  const lines = [
+    `Your teacher checked your homework${topicLine ? ` (${topicLine})` : ''}.`,
+    score ? `Score: ${score}` : '',
+    comment ? `“${comment.length > 140 ? `${comment.slice(0, 137)}…` : comment}”` : '',
+  ].filter(Boolean);
+  return { subject: score ? `Homework checked: ${score}` : 'Homework checked', text: lines.join('\n'), score };
+};
