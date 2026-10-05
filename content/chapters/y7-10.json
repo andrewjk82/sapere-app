@@ -2195,6 +2195,1926 @@
           ],
           "timeLimit": 45,
           "xp": 1
+        },
+        {
+          "id": "y7-ap-set01-q01",
+          "type": "mc",
+          "stem": "Evaluate \\(-(3+0)-(1-2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(-3\\)",
+            "\\(-2\\)",
+            "\\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(3)-(-1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(3+0)-(1-2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 1,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q02",
+          "type": "mc",
+          "stem": "Evaluate \\(-(8+9)+(8+9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(2\\)",
+            "\\(0\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(17)+(17)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(8+9)+(8+9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 2,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q03",
+          "type": "mc",
+          "stem": "Evaluate \\((9-7) -(1-2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((2) -(-1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(9-7) -(1-2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 3,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q04",
+          "type": "mc",
+          "stem": "Evaluate \\(- (6-6) + (0-0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(-1\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (0) + (0)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (6-6) + (0-0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 4,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q05",
+          "type": "mc",
+          "stem": "Evaluate \\(-(3-1)-(6-0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-7\\)",
+            "\\(-9\\)",
+            "\\(-8\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(2)-(6)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(3-1)-(6-0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 5,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q06",
+          "type": "mc",
+          "stem": "Evaluate \\(-(0-0)+(6-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-2\\)",
+            "\\(-4\\)",
+            "\\(3\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(0)+(-3)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(0-0)+(6-9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 6,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q07",
+          "type": "mc",
+          "stem": "Evaluate \\(- (1+5)-(5+4)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-15\\)",
+            "\\(-14\\)",
+            "\\(-16\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (6)-(9)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (1+5)-(5+4)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 7,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q08",
+          "type": "mc",
+          "stem": "Evaluate \\(- (3-0) + (1+9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(6\\)",
+            "\\(-7\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (3) + (10)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (3-0) + (1+9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 8,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q09",
+          "type": "mc",
+          "stem": "Evaluate \\(- (8+6) +(6+2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-5\\)",
+            "\\(-7\\)",
+            "\\(-6\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (14) +(8)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (8+6) +(6+2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 9,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q10",
+          "type": "mc",
+          "stem": "Evaluate \\((1+2)-(9+8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-13\\)",
+            "\\(-15\\)",
+            "\\(14\\)",
+            "\\(-14\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((3)-(17)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(1+2)-(9+8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 10,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q11",
+          "type": "mc",
+          "stem": "Evaluate \\(-(7-8)-(2-5)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(-4\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-1)-(-3)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(7-8)-(2-5)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 11,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q12",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4+8)-(8-5)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-14\\)",
+            "\\(-15\\)",
+            "\\(-16\\)",
+            "\\(15\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(12)-(3)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4+8)-(8-5)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 12,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q13",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4-8)+(1-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-3\\)",
+            "\\(-5\\)",
+            "\\(-4\\)",
+            "\\(4\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-4)+(-8)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4-8)+(1-9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 13,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q14",
+          "type": "mc",
+          "stem": "Evaluate \\((3+4)-(6+2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(0\\)",
+            "\\(-2\\)",
+            "\\(1\\)",
+            "\\(-1\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((7)-(8)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(3+4)-(6+2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 14,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q15",
+          "type": "mc",
+          "stem": "Evaluate \\((6+4)-(8-0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(1\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((10)-(8)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(6+4)-(8-0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 15,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q16",
+          "type": "mc",
+          "stem": "Evaluate \\((3+9)+(2+3)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(18\\)",
+            "\\(17\\)",
+            "\\(16\\)",
+            "\\(-17\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((12)+(5)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(17\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(3+9)+(2+3)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 16,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q17",
+          "type": "mc",
+          "stem": "Evaluate \\((7+7)+(7-7)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(15\\)",
+            "\\(13\\)",
+            "\\(14\\)",
+            "\\(-14\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((14)+(0)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(14\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(7+7)+(7-7)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 17,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q18",
+          "type": "mc",
+          "stem": "Evaluate \\(-(1-9)+(2-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-8)+(-7)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(1-9)+(2-9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 18,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q19",
+          "type": "mc",
+          "stem": "Evaluate \\(- (2+6) + (7-0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-1\\)",
+            "\\(0\\)",
+            "\\(-2\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (8) + (7)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (2+6) + (7-0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 19,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q20",
+          "type": "mc",
+          "stem": "Evaluate \\((7-5) +(2-2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(3\\)",
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((2) +(0)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(7-5) +(2-2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 20,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q21",
+          "type": "mc",
+          "stem": "Evaluate \\(- (8+7)+(5-1)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-10\\)",
+            "\\(-12\\)",
+            "\\(-11\\)",
+            "\\(11\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (15)+(4)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (8+7)+(5-1)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 21,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q22",
+          "type": "mc",
+          "stem": "Evaluate \\(-(9+0)-(7+2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-17\\)",
+            "\\(-19\\)",
+            "\\(18\\)",
+            "\\(-18\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(9)-(9)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-18\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(9+0)-(7+2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 22,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q23",
+          "type": "mc",
+          "stem": "Evaluate \\((8+2)-(1-6)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(14\\)",
+            "\\(-15\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\((10)-(-5)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "(8+2)-(1-6)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 23,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set01-q24",
+          "type": "mc",
+          "stem": "Evaluate \\(-(6-0) +(6-8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(6) +(-2)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(6-0) +(6-8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 1,
+            "sourceQuestion": 24,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q01",
+          "type": "mc",
+          "stem": "Evaluate \\(+(6+7)+(5-1)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(-17\\)",
+            "\\(17\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+(13)+(4)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(17\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+(6+7)+(5-1)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 1,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q02",
+          "type": "mc",
+          "stem": "Evaluate \\(-(9-1) +(0+3)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-5\\)",
+            "\\(-4\\)",
+            "\\(-6\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(8) +(3)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(9-1) +(0+3)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 2,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q03",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4-1)+(2+3)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(3\\)",
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(3)+(5)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4-1)+(2+3)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 3,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q04",
+          "type": "mc",
+          "stem": "Evaluate \\(+ (6+3)+(3+4)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(17\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(-16\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+ (9)+(7)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(16\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+ (6+3)+(3+4)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 4,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q05",
+          "type": "mc",
+          "stem": "Evaluate \\(-(9-8) + (8-6)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(1) + (2)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(9-8) + (8-6)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 5,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q06",
+          "type": "mc",
+          "stem": "Evaluate \\(-(9+2)+(0+1)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-10\\)",
+            "\\(-9\\)",
+            "\\(-11\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(11)+(1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(9+2)+(0+1)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 6,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q07",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4-1)+(8+2)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(6\\)",
+            "\\(-7\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(3)+(10)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4-1)+(8+2)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 7,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q08",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4+6)-(9-6)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-12\\)",
+            "\\(-14\\)",
+            "\\(-13\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(10)-(3)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4+6)-(9-6)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 8,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q09",
+          "type": "mc",
+          "stem": "Evaluate \\(+(9+4)-(8+4)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+(13)-(12)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+(9+4)-(8+4)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 9,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q10",
+          "type": "mc",
+          "stem": "Evaluate \\(+ (6-8) +(7+8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(13\\)",
+            "\\(14\\)",
+            "\\(12\\)",
+            "\\(-13\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+ (-2) +(15)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+ (6-8) +(7+8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 10,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q11",
+          "type": "mc",
+          "stem": "Evaluate \\(-(5-8)-(1+8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-5\\)",
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-3)-(9)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(5-8)-(1+8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 11,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q12",
+          "type": "mc",
+          "stem": "Evaluate \\(- (0-5) + (4+3)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(13\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(-12\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (-5) + (7)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (0-5) + (4+3)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 12,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q13",
+          "type": "mc",
+          "stem": "Evaluate \\(-(0-8)+(7+0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(16\\)",
+            "\\(14\\)",
+            "\\(-15\\)",
+            "\\(15\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-8)+(7)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(0-8)+(7+0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 13,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q14",
+          "type": "mc",
+          "stem": "Evaluate \\(+ (5-1)+(5-4)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+ (4)+(1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+ (5-1)+(5-4)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 14,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q15",
+          "type": "mc",
+          "stem": "Evaluate \\(+ (4+2)-(4+5)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(+ (6)-(9)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "+ (4+2)-(4+5)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 15,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q16",
+          "type": "mc",
+          "stem": "Evaluate \\(- (8+9)-(5-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-12\\)",
+            "\\(-14\\)",
+            "\\(-13\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (17)-(-4)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (8+9)-(5-9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 16,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q17",
+          "type": "mc",
+          "stem": "Evaluate \\(-(5+2) +(7-6)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-5\\)",
+            "\\(-7\\)",
+            "\\(6\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(7) +(1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(5+2) +(7-6)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 17,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q18",
+          "type": "mc",
+          "stem": "Evaluate \\(-(3-3)+ (4+8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(11\\)",
+            "\\(-12\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(0)+ (12)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(3-3)+ (4+8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 18,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q19",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4+0)-(9+0)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-12\\)",
+            "\\(-13\\)",
+            "\\(-14\\)",
+            "\\(13\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(4)-(9)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4+0)-(9+0)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 19,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q20",
+          "type": "mc",
+          "stem": "Evaluate \\(- (0-7)-(2+9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-3\\)",
+            "\\(-5\\)",
+            "\\(-4\\)",
+            "\\(4\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (-7)-(11)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (0-7)-(2+9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 20,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q21",
+          "type": "mc",
+          "stem": "Evaluate \\(-(4+3)-(4+9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-19\\)",
+            "\\(-21\\)",
+            "\\(20\\)",
+            "\\(-20\\)"
+          ],
+          "answer": 3,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(7)-(13)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-20\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(4+3)-(4+9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 21,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q22",
+          "type": "mc",
+          "stem": "Evaluate \\(-(0-3)+(7-8)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(1\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(-3)+(-1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(0-3)+(7-8)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 22,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q23",
+          "type": "mc",
+          "stem": "Evaluate \\(- (8-0)-(8-9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(- (8)-(-1)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "- (8-0)-(8-9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 23,
+            "year": "Y7"
+          }
+        },
+        {
+          "id": "y7-ap-set02-q24",
+          "type": "mc",
+          "stem": "Evaluate \\(-(5+4)-(3+9)\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(-20\\)",
+            "\\(-22\\)",
+            "\\(-21\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Work from the innermost brackets. A minus sign outside a bracket changes every sign inside it.",
+          "steps": [
+            {
+              "explain": "Evaluate each bracket before applying the outside signs.",
+              "work": "\\(-(9)-(12)\\)"
+            },
+            {
+              "explain": "Combine the signed values.",
+              "work": "\\(-21\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "-(5+4)-(3+9)",
+              "note": "Evaluate each bracket first, then apply the sign outside it."
+            }
+          ],
+          "meta": {
+            "source": "Algebra Workbook I",
+            "author": "Roger Furniss",
+            "publisher": "Five Senses Education",
+            "set": 2,
+            "sourceQuestion": 24,
+            "year": "Y7"
+          }
         }
       ]
     },
