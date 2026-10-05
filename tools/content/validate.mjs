@@ -57,7 +57,7 @@ const walk = (q, file, isPart = false) => {
   (q.keyPoints || []).forEach((kp, i) => { if (!String(q.stem || '').includes(kp.text)) warn.push(`${where}: keyPoint ${i} text not found in stem`); });
   (q.steps || []).forEach((s, i) => { checkTex(s.explain, `${where}.step${i}`); checkTex(s.work, `${where}.step${i}`); });
   const figs = [q.figure?.svg, ...(q.steps || []).map((s) => s.figure?.svg)].filter(Boolean);
-  for (const f of figs) if (!fs.existsSync(path.join('content/figures', `${f.slice(4)}.svg`))) errors.push(`${where}: missing figure ${f}`);
+  for (const f of figs) if (f.startsWith('fig:') && !fs.existsSync(path.join('content/figures', `${f.slice(4)}.svg`))) errors.push(`${where}: missing figure ${f}`);
   if (q.type === 'mc') {
     const texts = q.options.map((o) => (typeof o === 'string' ? o : o.text));
     texts.forEach((t) => checkTex(t, where));
