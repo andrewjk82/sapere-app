@@ -1,290 +1,143 @@
-# Past Paper Import Prompt
+# Past Paper PDF → Sapere Content Prompt
 
-아래 프롬프트를 Claude Code에 붙여넣고, 그 밑에 past paper 문제들을 붙여넣으면 됩니다.
+Use this prompt after extracting the past-paper PDF to text or images. Paste the extracted paper after the prompt. The output must be ready to add to the canonical content files in `content/chapters/`.
 
----
+## Workflow
 
-## 사용법
-
-1. 아래 [PROMPT] 전체 복사
-2. Claude Code에 붙여넣기
-3. 프롬프트 끝에 past paper 원문 텍스트 붙여넣기
-4. 전송
+1. Extract the PDF while preserving question numbering, section headings, diagram references, tables, and page numbers. Include page images or describe diagrams when text extraction cannot capture them.
+2. Check the repository's `CLAUDE.md`, `content/README.md`, `content/schema.js`, and `.agents/skills/sapere-math-question/SKILL.md` before authoring. These are the current source of truth for content format and question quality.
+3. Map each question to the right chapter and topic using the current content files and curriculum map. Do not invent topic IDs or titles.
+4. Produce canonical JSON question objects grouped by topic. Target `content/chapters/<chapterId>.json`; do not create or update legacy seed JS files or write question content to Firestore.
+5. Run `npm run content:validate` after integrating the questions into chapter JSON.
 
 ---
 
 ## [PROMPT]
 
-You are adding a new NSW HSC past paper to the Sapere app.
+You are converting an NSW HSC past-paper PDF into Sapere's canonical question content.
 
-### Your task
-Convert the past paper questions below into a JavaScript seed file matching the exact format of `/Users/andrewkim/Desktop/sapere1/src/constants/seedAbbotsleigh2020Questions.js`.
+### Goal
 
-### Output file
-Create a new file: `/Users/andrewkim/Desktop/sapere1/src/constants/seed[SchoolName][Year]Questions.js`
+Convert the supplied extracted paper into question objects that can be integrated into `content/chapters/<chapterId>.json`. Follow the repository's current instructions in `CLAUDE.md`, `content/README.md`, `content/schema.js`, and `.agents/skills/sapere-math-question/SKILL.md`. If any instruction here conflicts with those sources, follow the repository source of truth.
 
-Export a const array named `[SCHOOLNAME]_[YEAR]_QUESTIONS`.
+Do not edit legacy `src/constants/seed*.js` files, use the retired seed schema, or write questions to Firestore. Content is stored in git under `content/chapters/*.json`.
 
-### Question object format
+### Before writing
 
-```js
+- Identify the paper's school, year, exam type, sections, question numbers, and page numbers.
+- Map each question to an existing `chapterId`, `topicId`, `code`, and `title`. Verify these in the current chapter JSON and curriculum data; never guess.
+- Read any applicable chapter profile in `profiles/` before writing solutions. Follow its standard method and common-pitfall guidance. If a needed profile is absent, report which material is needed instead of inventing curriculum-specific methodology.
+- Preserve the question's mathematical meaning, wording, values, units, diagrams, and sub-question dependencies. Do not silently repair ambiguity or missing PDF content; flag it for review.
+
+### Output format
+
+Return one JSON object per question, grouped under the relevant topic, using the canonical `content/chapters/*.json` shape:
+
+```json
 {
-  id: 'xxx-mc1',           // e.g. 'ros2023-mc1', 'abb2022-q11a'
-  topicId: 'y12a-3F',      // see topic map below — MUST match exactly
-  c: '3F',                 // topic code only (no year prefix)
-  t: 'Global maximum and minimum',  // topic title from the map
-  source: 'Roseville 2023 Trial Q1',
-  type: 'multiple_choice', // or 'short_answer'
-  difficulty: 'medium',    // 'easy' | 'medium' | 'hard'
-  q: 'Question text with LaTeX using $...$ for inline and $$...$$ for display math',
-  a: 'Correct answer (LaTeX ok)',
-  opts: [                  // ONLY for multiple_choice — 4 options, correct answer included
-    'Option A',
-    'Option B',
-    'Option C',
-    'Option D'
+  "id": "ros2023-q1",
+  "type": "mc",
+  "stem": "Question text with LaTeX",
+  "options": ["Option A", "Option B", "Option C", "Option D"],
+  "answer": 0,
+  "hint": "A useful concise hint.",
+  "keyPoints": [
+    { "text": "the exact words from the stem", "note": "A short English tip explaining this phrase." }
   ],
-  h: 'One-sentence hint (LaTeX ok)',
-  s: 'Full solution text (LaTeX ok)',
-  solutionSteps: [         // 5–8 steps, every step has BOTH fields
-    { explanation: 'What to do and why (LaTeX ok)', workingOut: 'LaTeX math only, no $ wrapping needed' },
-    { explanation: '...', workingOut: '...' },
-    // ...
+  "solution": "A coherent full solution.",
+  "steps": [
+    { "explain": "Explain the purpose and reasoning for this step.", "work": "\\(a=b\\)" }
+  ],
+  "difficulty": "medium",
+  "meta": {
+    "source": "Roseville 2023 Trial, Question 1",
+    "school": "Roseville",
+    "year": 2023,
+    "page": 4
+  }
+}
+```
+
+The surrounding chapter structure is:
+
+```json
+{
+  "chapterId": "y12a-3",
+  "title": "Chapter title from the existing file",
+  "year": "12",
+  "topics": [
+    {
+      "topicId": "y12a-3F",
+      "code": "3F",
+      "title": "Topic title from the existing file",
+      "questions": []
+    }
   ]
 }
 ```
 
-### Rules
+Output only fields permitted by `content/schema.js`. In particular, use these canonical names:
 
-**IDs:**
-- Multiple choice: `[school][year]-mc1`, `[school][year]-mc2`, etc.
-- Free response: `[school][year]-q11a`, `[school][year]-q11bi`, etc.
-- School prefix: abb=Abbotsleigh, ros=Roseville, nor=Normanhurst, nsg=North Sydney Girls, baulko=Baulkham Hills, etc.
+- `type`: `mc`, `short`, `review`, or `multipart`
+- `stem`, `options`, `answer`, `hint`, `solution`, `steps`
+- `steps[]`: `explain`, optional `work`, and optional `figure`
+- `figure`: `{ "svg": "<svg>...</svg>" }` or a valid existing figure reference
+- `parts`: nested questions for a genuine multipart question
+- `manual: true` only where teacher marking is required
+- `keyPoints`: up to six `{ "text", "note" }` pairs for contextual, tappable highlights in the question stem
+- `meta` for provenance, including source, school, year, question label, and page when known
 
-**LaTeX:**
-- Always use `$...$` for inline math in `q`, `a`, `h`, `s`, `explanation` fields
-- In `workingOut` field: write raw LaTeX only (no `$` delimiters) — the app wraps it automatically
-- Use `\\` for backslash in JS strings (e.g. `\\frac`, `\\sqrt`, `\\pi`)
-- Fractions: `\\dfrac{a}{b}` for display size, `\\frac{a}{b}` for inline
-- Multiplication dot: `\\cdot`
-- Approximately: `\\approx`
-- Greek letters: `\\alpha`, `\\beta`, `\\theta`, `\\pi`, etc.
+Do not include legacy fields such as `q`, `a`, `opts`, `h`, `s`, `solutionSteps`, `explanation`, `workingOut`, `graphData`, `subQuestions`, `topicId` on an individual question, or topic code/title on an individual question.
 
-**solutionSteps — write 5–8 steps, detailed and professional:**
-- Every step must have a clear `explanation` (what you are doing and **why**) and a precise `workingOut` (the exact mathematical expression for that step only — no skipping).
-- Step 1: Identify the problem type and state the exact formula, rule, or theorem to be used (e.g. "Apply the cosine rule: $c^2 = a^2 + b^2 - 2ab\cos C$").
-- Step 2: Set up the equation or expression by substituting known values — show every substitution explicitly.
-- Steps 3–6: Execute **one mathematical operation per step** — factorise, differentiate, simplify, substitute, expand, etc. Do not combine multiple operations into one step.
-- Second-to-last step: Verify the answer — check the domain, apply the second derivative test, substitute back into the original equation, or confirm units/sign.
-- Last step: State the final answer clearly and completely, including units where applicable.
-- Write `explanation` in plain English as if explaining to a student who has never seen this type of problem. Avoid vague phrases like "simplify" — say exactly what is being simplified and how.
-- **Each `explanation` must be a full 1–3 sentence description** that covers: (1) what operation is being performed, (2) why it is being done at this point in the solution, and (3) what mathematical principle or rule justifies it. For example, instead of `"Differentiate."`, write `"Differentiate $y$ with respect to $x$ using the chain rule, because the function is a composition of an outer power and an inner trigonometric function. Bring down the power, reduce the exponent by 1, then multiply by the derivative of the inner function."`.
-- Never leave an `explanation` as a single word or a fragment. Every step must be self-contained and understandable without reading the other steps.
+### Question type and structure
 
-**type field:**
-- `multiple_choice` — Section I questions with 4 options
-- `short_answer` — Section II questions (free response, show working)
+- Use `mc` for a source multiple-choice question. `answer` is the zero-based numeric index of the correct option. Include all source options and verify the answer against the worked solution. Never guess a key; use `null` only for an unresolved key and clearly flag it for review.
+- Use `short` for a machine-markable response with a definitive answer. `answer` must be a string; add `accepted` only for genuinely equivalent accepted forms.
+- Use `review` with `manual: true` for proof, explanation, construction, sketching, or other responses that need teacher judgment. `answer` must be a string describing the expected result or marking guidance.
+- Use `multipart` when the source question has connected parts. Store each sub-question as a full canonical question in `parts`; keep shared source diagrams at the parent when appropriate. Avoid duplicating the parts' solutions in the parent's top-level `steps`.
+- Preserve the original numbering in IDs and provenance. IDs must be unique across the content bank; check existing IDs before choosing one. Use a stable readable prefix based on school and year, followed by the question label (for example, `ros2023-q11a`).
+- Assign difficulty based on the actual reasoning demand, not merely the exam section.
 
-**difficulty:**
-- `easy` — straightforward recall or single-step
-- `medium` — 2–3 steps, standard exam question
-- `hard` — multi-step, proof, or conceptual
+### Solutions and pedagogy
 
-**opts array:**
-- Include all 4 options for multiple_choice
-- The correct answer (`a`) must appear verbatim as one of the opts
-- For short_answer: set `opts: []`
+- Write a complete solution that stands on its own; do not rely on a student's having read sibling questions or earlier parts.
+- Use a suitable number of steps for the actual solution. Each `explain` should say what is being done and why. Each `work` should show the corresponding mathematical work without skipping essential reasoning.
+- Re-derive any value used from a sibling part when it is needed to solve this part.
+- For sketch/draw questions, do not put the answer diagram in the question's top-level `figure`. Build the diagram through the solution steps when useful.
+- For multi-part questions with per-part solutions, leave the parent's `steps` empty or omit them.
+- Follow any applicable chapter profile and the skill's current guidance on distractors, diagrams, student pitfalls, and answer conventions.
 
-**subQuestions and graphData (Geometry diagrams):**
-- If a question has sub-questions (`subQuestions` array) and all sub-questions refer to the same diagram (e.g. "in the diagram shown"), define `graphData` ONCE on the parent question level. Set `graphData: null` or omit it on the individual sub-question objects.
-- If the sub-questions require different diagrams, define `graphData` directly inside each sub-question object, and set the parent's `graphData` to `null`.
+### Hints and contextual highlights
 
-**Geometry Diagrams (graphData.geometry):**
-- **Mathematical Accuracy:** All coordinates, intersections, perpendicularity, and side lengths MUST be mathematically consistent and validated. Do not guess coordinates. For example, if a point $F$ is defined as the perpendicular intersection of two lines, calculate its coordinates exactly.
-- **No Degenerate Triangles:** Ensure that no three vertices of a triangle in the proof are collinear (which would render it as a straight line segment instead of a triangle).
-- **Proportions and Orientation:** Verify that the coordinates reflect the visual hierarchy (e.g., if a vertex is at the bottom in the textbook, it must have the lowest y-coordinate, and the figure should be balanced).
-- **Tick Marks and Angle Labels:** Use `ticks: 1` or `ticks: 2` on segments to indicate equal lengths (e.g., `{ from: "B", to: "D", ticks: 1 }`). Use `labelPos` for angles (especially right angles) to ensure the marker is drawn inside the correct quadrant.
+- Add both kinds of hint when useful: `hint` is the existing concise, whole-question hint; `keyPoints` are the new in-question highlights shown when a student taps a highlighted phrase.
+- For each new machine-markable question (`mc` or `short`), inspect the stem and add one to six `keyPoints` when it contains meaningful vocabulary, a condition, or a phrase that benefits from a targeted explanation. Do not add highlights just to fill a quota. For `review` or `multipart`, add them when they provide a clear student benefit; put part-specific highlights on the relevant question inside `parts`.
+- Each entry is `{ "text": "...", "note": "..." }`. `text` must be an exact, contiguous substring of that question's `stem`; keep it concise and meaningful. If the selected text touches a mathematical expression, the UI highlights the whole expression automatically.
+- Write every `note` in clear, concise English for the student. Explain what the highlighted phrase means or how to use it, then give a useful first move without disclosing the final answer. Make the tip specific to that phrase and this question, not a generic instruction such as “Read carefully.”
+- Keep `hint` and `keyPoints` complementary: the whole-question hint can suggest an overall strategy, while each highlight explains one local idea. Do not repeat the same tip in both fields. If no useful phrase exists, omit `keyPoints`; do not fabricate a highlight.
+- Before returning the JSON, verify that every `keyPoints[].text` occurs verbatim in its own `stem`, every note is non-empty English, and there are no more than six entries. A parent multipart question and each part have their own stem and key points.
 
-**Function Graphs (graphData.jsxGraph):**
-- **Sizing:** Default width/height should be set to `width: 400, height: 300` for clear layout.
-- **Axes & Arrows:** Axes should be created with double-ended arrows pointing in both positive and negative directions (e.g. `firstArrow: true, lastArrow: true` will be automatically formatted).
-- **Labels:** Always label the x-axis, y-axis (using text objects near the tips), and the origin with `'O'`. Point labels with LaTeX (e.g. `$(0, \sqrt{5})$`) are dynamically rendered as premium speech bubbles. When creating points and angles, always specify a default label offset option so they can be easily adjusted by the admin:
-  - **All angle objects:** add `label: {offset: [0, 0]}` by default.
-  - **All named point objects:** add `label: {offset: [0, 10]}` by default.
-  - This allows the administrator to fine-tune the positions [dx, dy] directly in the admin code editor.
-- **Curve Bounds:** Draw function curves from the very left edge of the bounding box to the very right edge (avoid leaving gaps or letting them float in mid-air).
-- **Points:** Plot and label all crucial features mentioned in the question (such as stationary points $P, Q$, vertices, intercepts) on the graph.
-- **Aspect Ratio:** If the graph is a function sketch (e.g. cubic, exponential) with unbalanced x and y domains, set `keepaspectratio: false` in `boardOptions` so it is not vertically squished.
-- **Styling / Color:** Do not specify color on `functiongraph`, `curve`, or `point` elements unless a specific color coding is requested. They automatically default to Slate (`#64748b`) matching the axes. Point markers automatically display with a clean, smaller size of `2.2`.
-- **Sketch Questions:** For questions that ask the student to draw or sketch a graph (e.g. "Sketch the graph of..."), set `type: "teacher_review"` in the seed question. This tells the application to hide the graph in the question body so the student can sketch it independently on the canvas, while queuing it in the teacher's grading list. Put the correct graph only in the worked solution.
+### LaTeX and diagrams
 
+- Use explicit `\\( ... \\)` delimiters for inline math in `stem`, `options`, `hint`, `solution`, `steps[].explain`, and `steps[].work`. Use `\\[ ... \\]` for display math where suitable. Do not rely on renderer auto-wrapping.
+- In JSON, escape every LaTeX backslash (`\\`). Keep ordinary prose outside math delimiters; wrap only mathematical expressions.
+- Preserve source diagrams faithfully. If a diagram is unavailable or extraction is ambiguous, identify the page/question and request the missing image or mark the figure for review. Never invent dimensions, coordinates, intersections, or geometric relationships.
+- When authoring a replacement SVG, follow the repository's diagram rules and verify the geometry and labels. Use the canonical `figure` field and a valid SVG string.
 
-**Terminology & Proof Logic:**
-- **Australian NSW Curriculum Terminology:** NEVER use American terms or acronyms like **"CPCTC"** (Corresponding Parts of Congruent Triangles are Congruent). Instead, write out: *"corresponding angles/sides of congruent triangles are equal"*.
-- **Logical Proof Flow:** Do not assume properties that are not explicitly marked as given in the diagram. For example, if $AB = CB$ is not given, prove it first (e.g., using SAS congruence on $\Delta ABG \equiv \Delta CBG$) rather than stating it is given.
+### Distractors and answer checks
 
-### Topic ID map (CambridgeMATHS Year 11/12 Advanced)
+- For any newly constructed options, use plausible misconceptions as distractors; do not generate random sign changes.
+- Keep option formats consistent (for example, do not mix fractions and decimals without a reason) and avoid impossible values for the context.
+- Independently solve each question and check every answer, unit, domain restriction, option key, and part dependency.
+- Do not alter source-provided options without noting why; retain the original answer choices when readable.
 
-**Year 11 (y11a-)**
-```
-1A Expanding brackets          1B Factoring                   1C Algebraic fractions
-1D Solving quadratic equations 1E Solving simultaneous equations
-2A Real numbers and intervals  2B Surds and their arithmetic  2C Further simplification of surds
-2D Rationalising the denominator 2E Binomial expansion of surds 2F Further rationalising 2G Surd equations
-3A Functions and function notation 3B Functions, relations, and graphs 3C Review of linear graphs
-3D Quadratic functions         3E Completing the square        3F The quadratic formulae and the graph
-3G Powers, cubics, and circles 3H Two graphs that have asymptotes 3I Direct and inverse variation
-4A Inequations and inequalities 4B Solving quadratic inequations 4C Intercepts and sign
-4D Odd and even symmetry       4E The absolute value function  4F Regions in the number plane
-5A Translations of known graphs 5B Reflection in axes          5C Even and odd symmetry
-5D Horizontal and vertical dilations 5E Absolute value function 5F Composite functions
-5G Combining transformations   5H Continuity and piecewise-defined functions
-6A Trig with right-angled triangles 6B Problems with right-angled triangles
-6C Trig functions of a general angle 6D Quadrant, sign, and related acute angle
-6E Given one trig function, find another 6F Trigonometric identities 6G Trigonometric equations
-6H The sine rule and the area formula 6I The cosine rule 6J Problems with general triangles
-7A Lengths and midpoints        7B Gradients                   7C Equations of lines
-7D Further equations of lines   7E Using pronumerals
-8A Indices  8B Fractional indices  8C Logarithms  8D Laws for logarithms
-8E Equations involving logs/indices  8F Exponential and logarithmic graphs  8G Applications
-9A Tangents and the derivative  9B The derivative as a limit   9C Differentiating powers of x
-9D dy/dx notation               9E Negative index powers       9F Fractional index powers
-9G The chain rule  9H The product rule  9I The quotient rule
-9J Rates of change  9K Average velocity and speed  9L Instantaneous velocity and speed
-10A The exponential function base e  10B Transformations of exponential functions  10C Logarithmic function base e
-11A Radian measure  11B Solving trig equations  11C Arcs and sectors  11D Trig graphs in radians
-12A Sets and Venn diagrams  12B Probability and sample spaces  12C Sample space graphs and tree diagrams
-12D Venn diagrams and the addition theorem  12E Multi-stage experiments  12F Probability tree diagrams  12G Conditional probability
-13A Random variables and frequency tables  13B Cumulative frequency  13C Grouped data
-```
+### Required response
 
-**Year 12 (y12a-)**
-```
-1A Sequences and how to specify them  1B Arithmetic sequences  1C Geometric sequences
-1D Solving problems involving APs and GPs  1E Adding up the terms of a sequence
-1F Summing an arithmetic series  1G Summing a geometric series  1H The limiting sum of a geometric series
-1I Recurring decimals and geometric series
-2A The sign of a function  2B Vertical and horizontal asymptotes  2C A curve-sketching menu
-2D Solving inequations  2E Using graphs to solve equations and inequations
-2F Review of translations and reflections  2G Dilations  2H Combinations of transformations  2I Trigonometric graphs
-3A Increasing, decreasing and stationary at a point  3B Stationary points and turning points
-3C Second and higher derivatives  3D Concavity and points of inflection
-3E Systematic curve sketching with the derivative  3F Global maximum and minimum
-3G Applications of maximisation and minimisation  3H Primitive functions
-4A Areas and the definite integral  4B The fundamental theorem of calculus
-4C The definite integral and its properties  4D Challenge – proving the fundamental theorem
-4E The indefinite integral  4F Finding areas by integration  4G Areas of compound regions  4H The trapezoidal rule
-5A Review of exponential functions base e  5B Differentiation of e^x  5C Applications of differentiation
-5D Integration of e^x  5E Applications of integration  5F Review of logarithmic functions
-5G Differentiation of logarithmic functions  5H Applications of differentiation of log
-5I Integration of the reciprocal function  5J Applications of integration of log  5K Calculus with other bases
-6A The trigonometric functions  6B Differentiating the trig functions  6C Applications of differentiation of trig
-6D Integrating the trig functions  6E Applications of integration of trig
-7A Average velocity and speed  7B Velocity and acceleration as derivatives  7C Integrating with respect to time
-7D Simple harmonic motion  7E Rates and integration  7F Harder rates problems
-8A Applications of APs and GPs  8B Financial applications of geometric series
-8C Simple and compound interest  8D Depreciation and loans  8E Paying off a loan
-9A The language of statistics  9B Grouped data and histograms  9C Quartiles and interquartile range
-9D Bivariate data  9E Line of best fit  9F Using technology with bivariate data
-10A Probability distributions  10B Continuous distributions  10C Mean and variance of a distribution
-10D The standard normal distribution  10E Normal distributions  10F Applications of the normal distribution
-10G Investigations using the normal distribution
-```
+1. List any extraction uncertainties, missing diagrams, unreadable text, or answer-key ambiguities.
+2. State the chapter/topic mapping used, with evidence from the repository.
+3. Provide the canonical JSON grouped by topic, ready to merge into the chapter files.
+4. Summarize question IDs and counts by topic.
+5. After integration, run `npm run content:validate` and report its result. Do not claim validation if the command was not run.
 
-### Source labelling (REQUIRED)
+### Extracted paper
 
-Every question **must** have a `source` field that names the school and year:
-
-```
-source: 'Blacktown Boys 2020 Trial Q1'
-```
-
-This applies to both original questions and similar variant questions — the source label is the same for both.
-
----
-
-### Similar variant questions (REQUIRED)
-
-For **every** original question, you must also create a paired **similar variant** question in a **separate file**:
-
-- File: `seed[SchoolName][Year]SimilarQuestions.js`
-- Export: `[SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS`
-- Use the same `id` prefix but append `s-`: e.g. `bbhs2020s-mc1`, `bbhs2020s-11a`
-
-**What to change in each variant:**
-- Numbers and values (e.g. side lengths 8, 10, 7 → 9, 12, 6)
-- Pronumerals and variable names (e.g. $A$ → $B$, $r$ → $k$)
-- Person names in word problems (e.g. Jesse → Mia, Shaon → Kaito)
-- Context/scenario (e.g. roses → sunflowers, cake shop → music store)
-- Keep the **same topic, same structure, same difficulty**
-
-The similar variants are combined with the originals in `Curriculum.jsx`:
-```js
-seed: [...SCHOOLNAME_YEAR_QUESTIONS, ...SCHOOLNAME_YEAR_SIMILAR_QUESTIONS]
-```
-
-Result: **2× the question count** (50 original + 50 similar = 100 total for a standard HSC paper).
-
----
-
-### After generating the file
-
-**Step 1: Register in Curriculum.jsx**
-
-Open `/Users/andrewkim/Desktop/sapere1/src/components/Curriculum.jsx`.
-
-At the top with the other imports (around line 83), add:
-```js
-import { [SCHOOLNAME]_[YEAR]_QUESTIONS } from '../constants/seed[SchoolName][Year]Questions.js';
-import { [SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS } from '../constants/seed[SchoolName][Year]SimilarQuestions.js';
-```
-
-Then find the array where exam papers are listed (search for `chapterId: 'exam:abbotsleigh-2020'`) and add a new entry in the same format:
-```js
-{
-  chapterId: 'exam:[school]-[year]',
-  badgeLabel: 'Y12 EXAM',
-  examPaper: '[school]-[year]',
-  chapterTitle: '[School] [Year] HSC Trial',
-  topicId: 'y12a-exam',
-  topicCode: 'EXAM',
-  topicTitle: '[School] [Year] Trial Exam',
-  year: 'Year 12',
-  seed: [...[SCHOOLNAME]_[YEAR]_QUESTIONS, ...[SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS],
-  label: 'Y12 · [School] [Year] HSC Trial (Advanced)'
-},
-```
-
-**Step 2: Register in allPastPaperQuestions.js (Practice Paper Generator)**
-
-Open `/Users/andrewkim/Desktop/sapere1/src/constants/allPastPaperQuestions.js`.
-
-Add the import near the top with the other imports:
-```js
-import { [SCHOOLNAME]_[YEAR]_QUESTIONS } from './seed[SchoolName][Year]Questions.js';
-```
-
-Then add the spread inside the `ALL_PAST_PAPER_QUESTIONS` array:
-```js
-export const ALL_PAST_PAPER_QUESTIONS = [
-  // ... existing entries ...
-  ...[SCHOOLNAME]_[YEAR]_QUESTIONS,
-  // ─── Add new past paper arrays above this line ────────────────────────────
-];
-```
-
-> This file powers the "Generate Practice Paper" button in HscJourney — students get randomised questions drawn from every registered past paper.
-
-**Step 3: Build and deploy**
-```
-npm run build
-git add -A
-git commit -m "feat: add [School] [Year] past paper questions"
-git push origin main
-npx vercel --prod
-```
-
----
-
-## Past paper text (paste below this line):
-
+[Paste extracted PDF text here. Include source filename, page numbers, and images/descriptions of figures.]
