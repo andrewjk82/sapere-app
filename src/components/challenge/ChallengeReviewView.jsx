@@ -13,6 +13,10 @@ import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { getOptions, getOptionText, getOptionImage } from '../../utils/challengeUtils';
 import { answersMatch } from '../../utils/answerMatching';
 import { resolveCorrectOptionText, resolveCorrectOptionIndex } from '../../utils/mcOptionShuffle';
+import { collectReportImages, fitReportImages, withTimeout } from '../../utils/reportImages';
+
+const REPORT_FETCH_TIMEOUT_MS = 8000;
+const REPORT_SEND_TIMEOUT_MS = 15000;
 
 // Resolve the "correct answer" display text — handles MC index answers and
 // shuffled-option questions stored with `_shuffledAnswer`.
@@ -58,10 +62,12 @@ const ChallengeReviewView = ({
   const [reportMessage, setReportMessage] = useState('');
   const [isSubmittingReport, setIsSubmittingReport] = useState(false);
   const [reportedIdxs, setReportedIdxs] = useState(new Set()); // already submitted
+  const [reportStatus, setReportStatus] = useState(null); // { kind: 'error' | 'queued', text }
 
   const handleReportSubmit = async () => {
     if (disableReport || !reportMessage.trim() || reportingIdx === null) return;
     setIsSubmittingReport(true);
+    setReportStatus(null);
     try {
       const reportQ = questions[reportingIdx] || {};
       const result = answerResults[reportingIdx] || null;
@@ -73,7 +79,7 @@ const ChallengeReviewView = ({
 
       if (!sketchDataUrl && workingOutPages.length === 0 && result?.hasWorkingOut && user?.uid && statColName && sessionId) {
         try {
-          const woSnap = await getDoc(doc(db, 'users', user.uid, statColName, sessionId, 'working_out', String(reportingIdx)));
+          const woSnap = await withTimeout(getDoc(doc(db, 'users', user.uid, statColName, sessionId, 'working_out', String(reportingIdx))), REPORT_FETCH_TIMEOUT_MS);
           if (woSnap.exists()) {
             const woData = woSnap.data();
             sketchDataUrl = woData.workingOut || null;
@@ -84,12 +90,15 @@ const ChallengeReviewView = ({
         }
       }
 
-      // workingOutPages가 있으면 첫 번째 페이지를 sketchDataUrl로 사용 (단일 이미지 미리보기용)
-      if (!sketchDataUrl && workingOutPages.length > 0) {
-        sketchDataUrl = workingOutPages[0];
-      }
+      // One copy of each image, small enough for Firestore's 1 MiB document limit.
+      // (The report used to carry page 1 twice — as sketchDataUrl and in the pages
+      // array — so a few pages of working out made it too big to save.)
+      const hadPages = workingOutPages.length > 0;
+      const { images: reportImages } = await fitReportImages(collectReportImages(sketchDataUrl, workingOutPages));
+      sketchDataUrl = hadPages ? null : (reportImages[0] || null);
+      workingOutPages = hadPages ? reportImages : [];
 
-      await addDoc(collection(db, 'reports'), {
+      await withTimeout(addDoc(collection(db, 'reports'), {
         studentId: user?.uid || '',
         studentName: user?.displayName || user?.email || 'Student',
         questionId: reportQ.id || '',
@@ -98,7 +107,7 @@ const ChallengeReviewView = ({
         answerResult: result,
         sketchDataUrl,
         workingOutPages,
-        hasSketch: Boolean(sketchDataUrl) || workingOutPages.length > 0,
+        hasSketch: reportImages.length > 0,
         source: 'review', // flagged during review, not during quiz
         // Direct stat pointers — review can happen days after the session, so
         // without these the admin's report-date probe would miss the attempt.
@@ -121,12 +130,20 @@ const ChallengeReviewView = ({
         message: reportMessage,
         status: 'open',
         createdAt: serverTimestamp(),
-      });
+      }), REPORT_SEND_TIMEOUT_MS);
       setReportedIdxs(prev => new Set([...prev, reportingIdx]));
       setReportingIdx(null);
       setReportMessage('');
     } catch (e) {
       console.error('Report error:', e);
+      if (e?.code === 'timeout') {
+        // Firestore keeps the write queued on this device and sends it when the
+        // connection recovers, so don't leave the student on a spinner.
+        setReportedIdxs(prev => new Set([...prev, reportingIdx]));
+        setReportStatus({ kind: 'queued', text: 'Your connection is slow. The report is saved on this device and will be sent automatically when it recovers. You can close this.' });
+      } else {
+        setReportStatus({ kind: 'error', text: 'The report could not be sent. Please check your connection and try again.' });
+      }
     } finally {
       setIsSubmittingReport(false);
     }
@@ -335,7 +352,7 @@ const ChallengeReviewView = ({
                 </span>
               ) : (
                 <button
-                  onClick={() => { setReportingIdx(idx); setReportMessage(''); }}
+                  onClick={() => { setReportingIdx(idx); setReportMessage(''); setReportStatus(null); }}
                   style={{
                     display: 'flex', alignItems: 'center', gap: '5px',
                     padding: '5px 12px', borderRadius: '999px',
@@ -722,6 +739,11 @@ const ChallengeReviewView = ({
                 <Flag size={16} />
                 {isSubmittingReport ? 'Submitting…' : 'Submit Report'}
               </button>
+              {reportStatus && (
+                <div role="status" style={{ padding: '12px 14px', borderRadius: '12px', fontSize: '0.82rem', fontWeight: 700, lineHeight: 1.45, background: reportStatus.kind === 'error' ? '#fef2f2' : '#eff6ff', color: reportStatus.kind === 'error' ? '#b91c1c' : '#1d4ed8' }}>
+                  {reportStatus.text}
+                </div>
+              )}
             </motion.div>
           </div>
         )}
