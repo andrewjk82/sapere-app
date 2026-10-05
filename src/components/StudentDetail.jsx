@@ -132,6 +132,7 @@ const curriculumSyncFields = [
   "assignedCourse",
   "assignedChapters",
   "completedChapters",
+  "chapterDates",
   "dailyPracticeConfig",
   "dailyQuestionCount",
   "calculationEnabled",
@@ -1160,18 +1161,34 @@ const StudentDetail = ({ studentId, onBack }) => {
       nextAssigned = nextAssigned.filter((id) => id !== chapterId); // Safety
     }
 
+    // Record when each chapter was assigned / completed — the Learning path forecast
+    // measures the student's pace from these dates.
+    // eslint-disable-next-line react-hooks/purity -- event handler, not render
+    const nowMs = Date.now();
+    const nextDates = { ...(student?.chapterDates || {}) };
+    if (nextCompleted.includes(chapterId)) {
+      nextDates[chapterId] = { ...(nextDates[chapterId] || {}), completedAt: nowMs };
+    } else if (nextAssigned.includes(chapterId)) {
+      nextDates[chapterId] = { assignedAt: nowMs };
+    } else {
+      delete nextDates[chapterId];
+    }
+
     // Update local state immediately for snappy UI
     setAssignedChapters(nextAssigned);
     setCompletedChapters(nextCompleted);
+    setStudent((prev) => (prev ? { ...prev, chapterDates: nextDates } : prev));
 
     try {
       await updateDoc(doc(db, activeStudentCollection, activeStudentId), {
         assignedChapters: nextAssigned,
         completedChapters: nextCompleted,
+        chapterDates: nextDates,
       });
       updateLocalStudentProfileCache({
         assignedChapters: nextAssigned,
         completedChapters: nextCompleted,
+        chapterDates: nextDates,
       });
       touchStudentListMeta();
     } catch (e) {

@@ -1,36 +1,35 @@
 import { useEffect, useMemo, useState } from 'react';
 import { CalendarDays, Flag, Hourglass } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { scanTopicProgress } from '../utils/topicProgressScan';
-import { spreadOverTerms, teachingFraction, todayUtc, yearStatus } from '../utils/schoolCalendar';
+import { buildStudentTracks } from '../utils/studentTracks';
+import { forecastTrack } from '../utils/pathForecast';
+import { termPieces, todayUtc, yearStatus } from '../utils/schoolCalendar';
 
 /**
- * LearningPathRoadmap — Year 1 → Year 12 school-year timeline.
+ * LearningPathRoadmap — one lane per track the student is actually working on
+ * (a Year 9 may be on Year 12 Extension 1, so lanes follow assignments, not school grade).
  *
- * Each year level is a bar laid over the calendar (months on the axis, Terms
- * 1–4 and the holidays as a linear band on top). A year's chapters are spread
- * evenly across the teaching weeks, so the bar reads as a suggested pace.
- * Year 11/12 add one row per course the student takes (Advanced is the base).
+ * Each lane is a chain of chapters laid over the calendar year (T1–T4 band on top):
+ * finished chapters end where they were completed, the rest are forecast from the
+ * student's own recent pace. Anything that runs past December is summarised at the lane end.
  */
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const COURSE_ORDER = ['Advanced', 'Standard', 'Extension 1', 'Extension 2'];
-const COURSE_SHORT = { Advanced: 'Adv', Standard: 'Std', 'Extension 1': 'Ext 1', 'Extension 2': 'Ext 2' };
 const COURSE_HUE = { Advanced: '#7c3aed', Standard: '#059669', 'Extension 1': '#0284c7', 'Extension 2': '#d97706' };
 const DAY = 86400000;
-const LABEL_W = 92;
-const MIN_W = 880;
+const LABEL_W = 132;
+const MIN_W = 900;
 
 const STATE_STYLE = {
-  done:    { bg: '#10b981', fg: '#fff' },
-  current: { bg: '#7c3aed', fg: '#fff' },
-  planned: { bg: '#c4b5fd', fg: '#4c1d95' },
-  none:    { bg: '#e0e7ff', fg: '#6366f1' },
+  done:    { bg: 'linear-gradient(90deg, #0d9488, #14b8a6)', fg: '#fff' },
+  current: { bg: 'linear-gradient(90deg, #6d28d9, #8b5cf6)', fg: '#fff' },
+  planned: { bg: 'linear-gradient(90deg, #c4b5fd, #ddd6fe)', fg: '#4c1d95' },
 };
 
-const yearNum = (v) => parseInt(String(v || '').replace(/\D/g, ''), 10) || 0;
 const fmt = (ts) => new Date(ts).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+const fmtLong = (ts) => new Date(ts).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const trackName = (t) => `${t.year.replace('Year ', 'Year ')}${t.course ? ` · ${t.course}` : ''}`;
 
 const LearningPathRoadmap = ({ profile }) => {
   const { user } = useAuth();
@@ -48,78 +47,43 @@ const LearningPathRoadmap = ({ profile }) => {
     return () => window.removeEventListener('sapere:progress-updated', onUpdate);
   }, [user?.uid]);
 
-  const rawYears = profile?.assignedYear;
-  const rawCourses = profile?.assignedCourse;
-  const myYears = useMemo(
-    () => (Array.isArray(rawYears) ? rawYears : [rawYears]).map(yearNum).filter(Boolean),
-    [rawYears],
-  );
-  const myCourses = useMemo(
-    () => (Array.isArray(rawCourses) ? rawCourses : [rawCourses]).filter((c) => COURSE_ORDER.includes(c)),
-    [rawCourses],
-  );
+  const status = useMemo(() => yearStatus(year, today), [year, today]);
+  const t0 = Date.UTC(year, 0, 1);
+  const yEnd = Date.UTC(year + 1, 0, 1);
+  const pos = (ts) => ((ts - t0) / (yEnd - t0)) * 100;
+  const todayPct = pos(today + DAY / 2);
 
-  // Advanced is always the base row for Year 11/12; the others appear only when assigned.
-  const seniorCourses = useMemo(() => COURSE_ORDER.filter((c) => c === 'Advanced' || myCourses.includes(c)), [myCourses]);
+  const tracks = useMemo(() => buildStudentTracks(profile), [profile]);
 
-  const rows = useMemo(() => {
-    const out = [];
-    for (let y = 1; y <= 12; y++) {
-      const data = CURRICULUM_DATA[`Year ${y}`];
-      if (data && !Array.isArray(data)) {
-        seniorCourses.filter((c) => data[c]).forEach((c) => out.push({ key: `${y}|${c}`, y, course: c, chapters: data[c] }));
-      } else {
-        out.push({ key: String(y), y, course: null, chapters: Array.isArray(data) ? data : [] });
-      }
-    }
-    return out;
-  }, [seniorCourses]);
-
-  // Chapter state mirrors LearningPath: done / current / planned for the student's own tracks.
-  const chapterState = useMemo(() => {
+  const lanes = useMemo(() => {
     const assigned = profile?.assignedChapters || [];
     const completed = profile?.completedChapters || [];
     const noAssignments = assigned.length === 0 && completed.length === 0;
-    return (row, chapter, idx) => {
-      const mine = myYears.includes(row.y)
-        && (!row.course || (myCourses.length ? myCourses.includes(row.course) : row.course === 'Advanced'));
-      if (!mine) return 'none';
-      const topics = Array.isArray(chapter.topics) ? chapter.topics : [];
-      const map = progress[chapter.id] || {};
-      const done = completed.includes(chapter.id) || (topics.length > 0 && topics.every((t) => (map[t.id] || 0) === 100));
-      if (done) return 'done';
-      if (assigned.includes(chapter.id) || (noAssignments && idx === 0)) return 'current';
-      return 'planned';
-    };
-  }, [profile?.assignedChapters, profile?.completedChapters, myYears, myCourses, progress]);
+    const dates = profile?.chapterDates || {};
+    return tracks.map((track) => {
+      const chapters = track.chapters.map((c, idx) => {
+        const topics = Array.isArray(c.topics) ? c.topics : [];
+        const map = progress[c.id] || {};
+        const teacherDone = completed.includes(c.id);
+        const allDone = topics.length > 0 && topics.every((t) => (map[t.id] || 0) === 100);
+        const isDone = teacherDone || allDone;
+        const pct = teacherDone ? 100 : topics.length ? Math.round(topics.reduce((s, t) => s + (map[t.id] || 0), 0) / topics.length) : 0;
+        return {
+          id: c.id, title: c.title, idx, pct, done: isDone,
+          current: !isDone && (assigned.includes(c.id) || (noAssignments && idx === 0)),
+          completedAt: dates[c.id]?.completedAt || null,
+          assignedAt: dates[c.id]?.assignedAt || null,
+        };
+      });
+      const f = forecastTrack({ chapters, today, year });
+      const doneCount = chapters.filter((c) => c.done).length;
+      return { track, chapters, forecast: f, doneCount };
+    });
+  }, [tracks, profile, progress, today, year]);
 
-  const status = useMemo(() => yearStatus(year, today), [year, today]);
-  const segs = status.segs;
-  const t0 = Date.UTC(year, 0, 1);
-  const span = Date.UTC(year + 1, 0, 1) - t0;
-  const pos = (ts) => ((ts - t0) / span) * 100;
-  const todayPct = pos(today + DAY / 2);
-
-  const bars = useMemo(() => rows.map((row) => {
-    const n = row.chapters.length;
-    const pieces = spreadOverTerms(year, n);
-    const states = row.chapters.map((c, i) => chapterState(row, c, i));
-    return { row, states, pieces };
-  }), [rows, year, chapterState]);
-
-  // ── Current-year summary (primary assigned year) ──────────────────────
-  const primary = useMemo(() => {
-    const y = myYears[0];
-    if (!y) return null;
-    const bar = bars.find((b) => b.row.y === y && (!b.row.course || b.row.course === (myCourses[0] || 'Advanced'))) || bars.find((b) => b.row.y === y);
-    if (!bar || bar.states.length === 0) return null;
-    const total = bar.states.length;
-    const done = bar.states.filter((s) => s === 'done').length;
-    const expected = Math.min(total, Math.floor(teachingFraction(year, today) * total + 0.5));
-    return { y, row: bar.row, total, done, expected, diff: done - expected };
-  }, [bars, myYears, myCourses, year, today]);
-
-  const paceText = !primary ? '' : primary.diff === 0 ? 'Right on pace' : primary.diff > 0 ? `${primary.diff} chapter${primary.diff === 1 ? '' : 's'} ahead of pace` : `${-primary.diff} chapter${primary.diff === -1 ? '' : 's'} behind pace`;
+  const primary = lanes[0] || null;
+  const nextBreak = status.next;
+  const inTerm = status.current?.type === 'term';
 
   const card = (lead) => ({
     padding: '18px 20px', borderRadius: '20px', position: 'relative', overflow: 'hidden',
@@ -138,8 +102,11 @@ const LearningPathRoadmap = ({ profile }) => {
     <div style={{ fontSize: '0.8rem', fontWeight: 700, marginTop: '6px', color: color || '#6d6a85' }}>{text}</div>
   );
 
-  const nextBreak = status.next;
-  const inTerm = status.current?.type === 'term';
+  const paceLine = (l) => {
+    const wks = l.forecast.daysPerChapter / 7;
+    const w = wks >= 10 ? Math.round(wks) : wks.toFixed(1);
+    return `${l.forecast.basis === 'measured' ? 'Your pace' : 'Estimated pace'}: 1 chapter / ${w} wk${wks === 1 ? '' : 's'}`;
+  };
 
   return (
     <div>
@@ -156,13 +123,16 @@ const LearningPathRoadmap = ({ profile }) => {
         </div>
         <div style={card(false)}>
           <Flag size={20} style={{ position: 'absolute', right: '16px', top: '14px', color: 'rgba(139,92,246,0.35)' }} />
-          {label(primary ? `Year ${primary.y}${primary.row.course ? ` · ${primary.row.course}` : ''} pace` : 'Your pace')}
+          {label(primary ? `${trackName(primary.track)} forecast` : 'Your forecast')}
           {primary ? (
             <>
-              {big(<>{primary.done}<span style={{ fontSize: '1rem', fontWeight: 700, color: '#8b7aa7' }}> / {primary.total} chapters</span></>)}
-              <div style={{ fontSize: '0.8rem', fontWeight: 800, marginTop: '6px', color: primary.diff >= 0 ? '#047857' : '#b45309' }}>{paceText}</div>
+              {big(<>{primary.doneCount}<span style={{ fontSize: '1rem', fontWeight: 700, color: '#8b7aa7' }}> / {primary.chapters.length} chapters</span></>)}
+              {primary.forecast.finish
+                ? sub(`Finish ≈ ${fmtLong(primary.forecast.finish)}`, '#4c1d95')
+                : sub('All chapters complete 🎉', '#047857')}
+              {primary.forecast.finish && <div style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '2px' }}>{paceLine(primary)}</div>}
             </>
-          ) : sub('Ask your teacher to assign a year to see your pace.')}
+          ) : sub('Ask your teacher to assign a year to see your forecast.')}
         </div>
         <div style={card(false)}>
           <Hourglass size={20} style={{ position: 'absolute', right: '16px', top: '14px', color: 'rgba(139,92,246,0.35)' }} />
@@ -180,13 +150,13 @@ const LearningPathRoadmap = ({ profile }) => {
       <div style={{ borderRadius: '24px', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(167,139,250,0.18)', boxShadow: '0 22px 50px rgba(91,33,182,0.06)', padding: '20px 0 18px' }}>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', padding: '0 24px', marginBottom: '14px' }}>
           <div>
-            <h3 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.2rem', color: '#1e1b4b', margin: 0 }}>Year 1 → Year 12 roadmap</h3>
+            <h3 style={{ fontFamily: '"Outfit", sans-serif', fontSize: '1.2rem', color: '#1e1b4b', margin: 0 }}>Your path in {year}</h3>
             <div style={{ fontSize: '0.84rem', color: '#6d6a85', fontWeight: 600, marginTop: '2px' }}>
-              Each chapter is spaced evenly across the {year} teaching weeks. Holidays are left empty.
+              Finished chapters sit where you completed them; the rest are forecast from your pace.
             </div>
           </div>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', fontSize: '0.74rem', fontWeight: 800, color: '#64748b' }}>
-            {[['done', 'Done'], ['current', 'In progress'], ['planned', 'Planned'], ['none', 'Other years']].map(([k, t]) => (
+            {[['done', 'Done'], ['current', 'In progress'], ['planned', 'Forecast']].map(([k, t]) => (
               <span key={k} style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
                 <span style={{ width: '12px', height: '12px', borderRadius: '4px', background: STATE_STYLE[k].bg }} />{t}
               </span>
@@ -199,36 +169,29 @@ const LearningPathRoadmap = ({ profile }) => {
 
         <div style={{ overflowX: 'auto', padding: '0 24px' }}>
           <div style={{ minWidth: LABEL_W + MIN_W }}>
-            {/* Terms + holidays (linear band) */}
-            <TimelineRow
-              label={<span style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.1em', color: '#8b7aa7' }}>TERMS</span>}
-              todayPct={todayPct}
-              height={30}
-            >
-              {segs.map((s) => (
-                <div
-                  key={s.id}
-                  title={`${s.label} · ${fmt(s.start)} – ${fmt(s.end - DAY)}`}
-                  style={{
-                    position: 'absolute', top: 0, bottom: 0, left: `${pos(s.start)}%`, width: `${pos(s.end) - pos(s.start)}%`,
-                    display: 'grid', placeItems: 'center', overflow: 'hidden', boxSizing: 'border-box',
-                    background: s.type === 'term' ? 'linear-gradient(135deg, #6366f1, #8b5cf6)' : 'repeating-linear-gradient(135deg, #f1f5f9, #f1f5f9 5px, #e8edf5 5px, #e8edf5 10px)',
-                    color: s.type === 'term' ? '#fff' : '#94a3b8',
-                    borderLeft: '2px solid #fff',
-                    fontSize: s.type === 'term' ? '0.78rem' : '0.62rem', fontWeight: 900, letterSpacing: '0.04em', whiteSpace: 'nowrap',
-                  }}
-                >
-                  {s.type === 'term' ? s.label : (pos(s.end) - pos(s.start) > 7 ? 'Holiday' : '')}
-                </div>
-              ))}
-            </TimelineRow>
+            <Lane label={<span style={{ fontSize: '0.64rem', fontWeight: 900, letterSpacing: '0.1em', color: '#8b7aa7' }}>TERMS</span>} todayPct={todayPct} height={32}>
+              {status.segs.map((s) => {
+                const w = pos(s.end) - pos(s.start);
+                return (
+                  <div
+                    key={s.id}
+                    title={`${s.label} · ${fmt(s.start)} – ${fmt(s.end - DAY)}`}
+                    style={{
+                      position: 'absolute', top: 0, bottom: 0, left: `${pos(s.start)}%`, width: `${w}%`,
+                      display: 'grid', placeItems: 'center', overflow: 'hidden', boxSizing: 'border-box',
+                      background: s.type === 'term' ? 'linear-gradient(135deg, #6366f1, #8b5cf6)' : 'repeating-linear-gradient(135deg, #f1f5f9, #f1f5f9 5px, #e8edf5 5px, #e8edf5 10px)',
+                      color: s.type === 'term' ? '#fff' : '#94a3b8',
+                      borderLeft: '2px solid #fff',
+                      fontSize: s.type === 'term' ? '0.78rem' : '0.62rem', fontWeight: 900, letterSpacing: '0.04em', whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {s.type === 'term' ? s.label : (w > 7 ? 'Holiday' : '')}
+                  </div>
+                );
+              })}
+            </Lane>
 
-            {/* Months */}
-            <TimelineRow
-              label={null}
-              todayPct={todayPct}
-              height={22}
-            >
+            <Lane label={null} todayPct={todayPct} height={22}>
               {MONTHS.map((m, i) => {
                 const a = Date.UTC(year, i, 1);
                 const b = Date.UTC(year, i + 1, 1);
@@ -240,62 +203,94 @@ const LearningPathRoadmap = ({ profile }) => {
                   }}>{m}</div>
                 );
               })}
-            </TimelineRow>
+            </Lane>
 
-            {/* Year rows */}
-            {bars.map(({ row, states, pieces }) => {
-              const mine = myYears.includes(row.y);
-              const hue = row.course ? COURSE_HUE[row.course] : '#4f46e5';
-              const firstOfYear = bars.find((b) => b.row.y === row.y).row === row;
+            {lanes.length === 0 && (
+              <div style={{ padding: '36px 8px', textAlign: 'center', color: '#94a3b8', fontWeight: 700, fontSize: '0.9rem' }}>
+                No curriculum assigned yet — your teacher will set up your path.
+              </div>
+            )}
+
+            {lanes.map(({ track, chapters, forecast, doneCount }) => {
+              const hue = track.course ? COURSE_HUE[track.course] : '#4f46e5';
+              const beyond = forecast.items.filter((it) => it.start >= yEnd);
+              const lastIn = [...forecast.items].reverse().find((it) => it.start < yEnd);
               return (
-                <TimelineRow
-                  key={row.key}
+                <Lane
+                  key={track.key}
                   label={
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', whiteSpace: 'nowrap' }}>
-                      <span style={{ fontFamily: '"Outfit", sans-serif', fontWeight: 900, fontSize: '0.92rem', color: mine ? hue : '#1e1b4b' }}>
-                        {firstOfYear || !row.course ? `Y${row.y}` : ''}
-                      </span>
-                      {row.course && (
-                        <span style={{ fontSize: '0.64rem', fontWeight: 900, padding: '2px 7px', borderRadius: '999px', background: `${hue}18`, color: hue }}>
-                          {COURSE_SHORT[row.course]}
-                        </span>
-                      )}
-                      {mine && !row.course && <span title="Your year" style={{ width: '6px', height: '6px', borderRadius: '50%', background: hue }} />}
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ fontFamily: '"Outfit", sans-serif', fontWeight: 900, fontSize: '0.88rem', color: hue, lineHeight: 1.15 }}>{trackName(track)}</div>
+                      <div style={{ fontSize: '0.66rem', fontWeight: 700, color: '#94a3b8', marginTop: '2px' }}>{doneCount} / {chapters.length} chapters</div>
                     </div>
                   }
                   todayPct={todayPct}
-                  height={34}
+                  height={56}
                   grid
                   monthLines={MONTHS.map((_, i) => pos(Date.UTC(year, i, 1)))}
-                  stripe={mine}
                 >
-                  {row.chapters.length === 0 && (
-                    <div style={{ position: 'absolute', left: '8px', top: 0, bottom: 0, display: 'flex', alignItems: 'center', fontSize: '0.7rem', fontWeight: 700, color: '#cbd5e1' }}>
-                      Chapters coming soon
+                  {forecast.items.flatMap((it) => {
+                    const st = STATE_STYLE[it.state];
+                    const pieces = termPieces(year, it.start, Math.min(it.end, yEnd));
+                    const longest = pieces.reduce((m, p) => (p.end - p.start > m.end - m.start ? p : m), pieces[0] || { start: 0, end: 0 });
+                    const pctText = it.state === 'done' ? '100%' : it.chapter.pct > 0 ? `${it.chapter.pct}%` : '';
+                    return pieces.map((p, k) => {
+                      const w = pos(p.end) - pos(p.start);
+                      const main = p === longest;
+                      return (
+                        <div key={`${it.chapter.id}-${k}`}>
+                          <div
+                            title={`Ch ${it.chapter.idx + 1} · ${it.chapter.title}\n${it.state === 'done' ? (it.approx ? 'Completed (date not recorded)' : `Completed ${fmt(it.end - DAY)}`) : `Forecast ${fmt(it.start)} – ${fmt(it.end - DAY)}`}${pctText ? `\nMastery ${pctText}` : ''}`}
+                            style={{
+                              position: 'absolute', top: '6px', height: '26px', left: `${pos(p.start)}%`, width: `${w}%`,
+                              background: st.bg, color: st.fg, borderRadius: '6px', boxSizing: 'border-box',
+                              borderRight: '1.5px solid #fff', overflow: 'hidden', padding: '0 6px',
+                              display: 'flex', alignItems: 'center', justifyContent: 'center',
+                              fontSize: '0.68rem', fontWeight: 800, whiteSpace: 'nowrap', textOverflow: 'ellipsis',
+                              opacity: it.approx ? 0.85 : 1,
+                              boxShadow: it.state === 'current' ? '0 0 0 2px rgba(124,58,237,0.25)' : 'none',
+                            }}
+                          >
+                            {main && w > 2.2 ? (
+                              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', minWidth: 0 }}>
+                                {w > 9 ? it.chapter.title.replace(/^Chapter\s*\d+\s*[:.-]\s*/i, '') : it.chapter.idx + 1}
+                              </span>
+                            ) : ''}
+                          </div>
+                          {main && w > 4 && pctText && (
+                            <div style={{ position: 'absolute', top: '37px', left: `${pos(p.start)}%`, width: `${w}%`, textAlign: 'center', fontSize: '0.62rem', fontWeight: 800, color: it.state === 'done' ? '#0f766e' : '#7c3aed' }}>
+                              {pctText}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    });
+                  })}
+                  {/* Anything forecast past December is summarised at the lane end */}
+                  {(beyond.length > 0 || (lastIn && lastIn.end > yEnd)) && (
+                    <div
+                      title={`Forecast finish ≈ ${forecast.finish ? fmtLong(forecast.finish) : ''}`}
+                      style={{
+                        position: 'absolute', right: 0, top: '6px', height: '26px', transform: 'translateX(0)',
+                        display: 'flex', alignItems: 'center', gap: '4px', padding: '0 10px 0 8px',
+                        borderRadius: '6px 13px 13px 6px', background: '#ede9fe', color: '#5b21b6',
+                        fontSize: '0.68rem', fontWeight: 900, whiteSpace: 'nowrap', zIndex: 2,
+                        boxShadow: '0 0 0 1.5px #fff',
+                      }}
+                    >
+                      {`→ ${year + 1} · ${beyond.length + (lastIn && lastIn.end > yEnd ? 1 : 0)} more`}
                     </div>
                   )}
-                  {row.chapters.map((c, i) => pieces[i].map((p, k) => {
-                    const st = STATE_STYLE[states[i]];
-                    const w = pos(p.end) - pos(p.start);
-                    return (
-                      <div
-                        key={`${c.id}-${k}`}
-                        title={`Ch ${i + 1} · ${c.title}\n${fmt(p.start)} – ${fmt(p.end - DAY)}`}
-                        style={{
-                          position: 'absolute', top: '5px', bottom: '5px', left: `${pos(p.start)}%`, width: `${w}%`,
-                          background: st.bg, color: st.fg, borderRadius: '5px', boxSizing: 'border-box',
-                          borderRight: '1.5px solid #fff', overflow: 'hidden',
-                          display: 'grid', placeItems: 'center', fontSize: '0.62rem', fontWeight: 900,
-                          boxShadow: states[i] === 'current' ? '0 0 0 2px rgba(124,58,237,0.25)' : 'none',
-                        }}
-                      >
-                        {k === 0 && w > 1.6 ? i + 1 : ''}
-                      </div>
-                    );
-                  }))}
-                </TimelineRow>
+                  {forecast.earlier > 0 && (
+                    <div style={{ position: 'absolute', left: '4px', top: '38px', fontSize: '0.62rem', fontWeight: 800, color: '#94a3b8' }}>
+                      ← {forecast.earlier} done earlier
+                    </div>
+                  )}
+                </Lane>
               );
             })}
+
+            {lanes.length > 0 && <Lane label={null} todayPct={todayPct} height={20} showTag />}
           </div>
         </div>
       </div>
@@ -304,23 +299,31 @@ const LearningPathRoadmap = ({ profile }) => {
 };
 
 /** One timeline lane: sticky label column + a relatively-positioned track with the today line. */
-const TimelineRow = ({ label, children, todayPct, height, grid = false, monthLines = [], stripe = false }) => (
-  <div style={{ display: 'flex', alignItems: 'stretch', marginBottom: grid ? '3px' : '4px' }}>
+const Lane = ({ label, children, todayPct, height, grid = false, monthLines = [], showTag = false }) => (
+  <div style={{ display: 'flex', alignItems: 'stretch', marginBottom: grid ? '6px' : '4px' }}>
     <div style={{
       width: LABEL_W, flexShrink: 0, display: 'flex', alignItems: 'center', position: 'sticky', left: 0, zIndex: 3,
-      background: '#fff', paddingRight: '6px',
+      background: '#fff', paddingRight: '8px',
     }}>
       {label}
     </div>
     <div style={{
-      position: 'relative', flex: 1, height, minWidth: MIN_W, borderRadius: grid ? '8px' : 0,
-      background: grid ? (stripe ? '#faf8ff' : '#fbfcff') : 'transparent',
+      position: 'relative', flex: 1, height, minWidth: MIN_W, borderRadius: grid ? '10px' : 0,
+      background: grid ? '#fbfaff' : 'transparent',
     }}>
       {grid && monthLines.map((l, i) => (
         <div key={i} style={{ position: 'absolute', top: 0, bottom: 0, left: `${l}%`, width: '1px', background: '#f1f0fe' }} />
       ))}
       {children}
       <div style={{ position: 'absolute', top: 0, bottom: 0, left: `${todayPct}%`, width: '2px', background: '#ef4444', opacity: 0.75, zIndex: 2, pointerEvents: 'none' }} />
+      {showTag && (
+        <div style={{
+          position: 'absolute', top: '4px', left: `${todayPct}%`, transform: 'translateX(-50%)', zIndex: 4,
+          background: '#ef4444', color: '#fff', fontSize: '0.6rem', fontWeight: 900, padding: '2px 7px', borderRadius: '5px', whiteSpace: 'nowrap',
+        }}>
+          Today
+        </div>
+      )}
     </div>
   </div>
 );

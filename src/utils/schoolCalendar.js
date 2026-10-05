@@ -69,35 +69,52 @@ export const yearStatus = (year, ts) => {
   };
 };
 
-/**
- * Spread `count` equal-sized blocks over the teaching days of the year (holidays
- * skipped). Returns, per block, the pieces it occupies — a block that straddles a
- * holiday is split in two so the bar never paints over the break.
- * Piece: { start, end } UTC timestamps (end exclusive).
- */
-export const spreadOverTerms = (year, count) => {
-  const terms = buildSegments(year).filter((s) => s.type === 'term');
-  const total = terms.reduce((s, t) => s + (t.end - t.start), 0);
-  return Array.from({ length: count }, (_, i) => {
-    const a = (i / count) * total;
-    const b = ((i + 1) / count) * total;
-    const pieces = [];
-    let cursor = 0;
-    terms.forEach((t) => {
-      const len = t.end - t.start;
-      const lo = Math.max(a, cursor);
-      const hi = Math.min(b, cursor + len);
-      if (hi > lo) pieces.push({ start: t.start + (lo - cursor), end: t.start + (hi - cursor), term: t.id });
-      cursor += len;
-    });
-    return pieces;
-  });
+const DAY_MS = DAY;
+
+/** Term intervals [{start,end}] for calendar years fromYear..toYear (end exclusive). */
+const termsBetween = (fromYear, toYear) => {
+  const out = [];
+  for (let y = fromYear; y <= toYear; y++) {
+    buildSegments(y).filter((s) => s.type === 'term').forEach((t) => out.push({ start: t.start, end: t.end }));
+  }
+  return out;
 };
 
-/** Fraction (0–1) of the teaching year elapsed at `ts` — used to compute expected pace. */
-export const teachingFraction = (year, ts) => {
-  const terms = buildSegments(year).filter((s) => s.type === 'term');
-  const total = terms.reduce((s, t) => s + (t.end - t.start), 0);
-  const done = terms.reduce((s, t) => s + Math.max(0, Math.min(t.end, ts + DAY) - t.start), 0);
-  return total ? done / total : 0;
+const HORIZON_YEARS = 6;
+
+/** Teaching (in-term) calendar days between two timestamps — holidays count as zero. */
+export const teachingDaysBetween = (a, b) => {
+  if (b <= a) return 0;
+  const y0 = new Date(a).getUTCFullYear();
+  const y1 = new Date(b).getUTCFullYear();
+  return termsBetween(y0, y1).reduce((sum, t) => sum + Math.max(0, Math.min(t.end, b) - Math.max(t.start, a)) / DAY_MS, 0);
 };
+
+/**
+ * Move `days` teaching days forward from `ts`, skipping holidays.
+ * A start that falls in a holiday jumps to the next term first.
+ */
+export const addTeachingDays = (ts, days) => {
+  const y0 = new Date(ts).getUTCFullYear();
+  let rest = days * DAY_MS;
+  let cursor = ts;
+  for (const t of termsBetween(y0, y0 + HORIZON_YEARS)) {
+    if (t.end <= cursor) continue;
+    const from = Math.max(cursor, t.start);
+    const room = t.end - from;
+    if (rest <= room) return from + rest;
+    rest -= room;
+    cursor = t.end;
+  }
+  return cursor;
+};
+
+/** Teaching days in one calendar year. */
+export const termDaysInYear = (year) => teachingDaysBetween(Date.UTC(year, 0, 1), Date.UTC(year + 1, 0, 1));
+
+/** Clip [a,b) to the term weeks of `year`: returns [{start,end}] (holidays are left out). */
+export const termPieces = (year, a, b) =>
+  buildSegments(year)
+    .filter((s) => s.type === 'term')
+    .map((t) => ({ start: Math.max(a, t.start), end: Math.min(b, t.end) }))
+    .filter((p) => p.end > p.start);
