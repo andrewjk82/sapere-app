@@ -3015,29 +3015,17 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
           </div>
         </div>
       )}
-      {!isAdmin && profile?.showHscGraph !== true && (
-        <div className="app-page__header">
-          <div className="app-page__title">
-            <h2>Your learning path</h2>
-            <p>Work through each chapter and topic at your own pace</p>
-          </div>
-        </div>
-      )}
-
       {!isAdmin ? (
-        profile?.showHscGraph === true ? (
-          // HSC-activated students see the past-paper journey by default,
-          // with an in-view toggle back to the regular curriculum roadmap.
-          // Title switches with the Past papers / Curriculum tabs inside HscJourney.
-          <HscJourney
-            hscRecords={hscRecords}
-            profile={profile}
-            curriculumSlot={<LearningPath profile={profile} />}
-            onPracticeByType={() => setShowPracticeByType(true)}
-          />
-        ) : (
-          <LearningPath profile={profile} />
-        )
+        // Every student gets the tab shell (Curriculum | Learning path). HSC-activated
+        // students additionally get the Past papers tab and land on it by default.
+        // Title switches with the active tab inside HscJourney.
+        <HscJourney
+          hscRecords={hscRecords}
+          profile={profile}
+          curriculumSlot={<LearningPath profile={profile} />}
+          onPracticeByType={() => setShowPracticeByType(true)}
+          showPapers={profile?.showHscGraph === true}
+        />
       ) : (
         <>
           {/* ── Sticky top bar ── */}

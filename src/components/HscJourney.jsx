@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { TrendingUp, TrendingDown, Award, Target, FileText, Info, X, Search, BookOpen, Layers } from 'lucide-react';
 import { calcProjectedMark, schoolRankToAvg } from '../constants/hscBandData';
 import { NSW_SCHOOL_RANKINGS, findSchoolRank } from '../constants/nswSchoolRankings';
+import LearningPathRoadmap from './LearningPathRoadmap';
 
 /**
  * HscJourney — the HSC past-paper "score graph journey" dashboard.
@@ -12,6 +13,7 @@ import { NSW_SCHOOL_RANKINGS, findSchoolRank } from '../constants/nswSchoolRanki
  *                     notes, topics?: [{ name, pct }] }
  *   profile         — student profile (for the year / course banner)
  *   curriculumSlot  — React node rendered when the toggle is on "Curriculum"
+ *   showPapers      — false hides the "Past papers" tab (students without the HSC graph)
  */
 
 // NSW HSC band from a percentage.
@@ -35,8 +37,8 @@ const fmtDate = (s) => {
   return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' });
 };
 
-const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPracticeByType = null }) => {
-  const [view, setView] = useState('papers'); // 'papers' | 'curriculum'
+const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPracticeByType = null, showPapers = true }) => {
+  const [view, setView] = useState(showPapers ? 'papers' : 'curriculum'); // 'papers' | 'curriculum' | 'roadmap'
   const [paperSeed, setPaperSeed] = useState(() => Date.now());
   const [showRankModal, setShowRankModal] = useState(false);
   const [rankSearch, setRankSearch] = useState('');
@@ -99,7 +101,7 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
   // ── Toggle ──────────────────────────────────────────────────────────────
   const toggle = (
     <div style={{ display: 'inline-flex', padding: '5px', borderRadius: '14px', background: 'rgba(167,139,250,0.12)', gap: '4px', flexShrink: 0 }}>
-      {[['papers', 'Past papers'], ['curriculum', 'Curriculum']].map(([key, label]) => (
+      {[...(showPapers ? [['papers', 'Past papers']] : []), ['curriculum', 'Curriculum'], ['roadmap', 'Learning path']].map(([key, label]) => (
         <button
           key={key}
           onClick={() => setView(key)}
@@ -124,12 +126,14 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
     <div className="app-page__header" style={{ marginBottom: '8px' }}>
       <div className="app-page__title">
         <h2>
-          {view === 'curriculum' ? 'Your learning path' : 'Past paper journey'}
+          {view === 'curriculum' ? 'Your curriculum' : view === 'roadmap' ? 'Learning path' : 'Past paper journey'}
         </h2>
         <p>
           {view === 'curriculum'
             ? 'Work through each chapter and topic at your own pace'
-            : papers.length > 0
+            : view === 'roadmap'
+              ? 'Year 1 to Year 12 across the school terms'
+              : papers.length > 0
               ? `${papers.length} paper${papers.length === 1 ? '' : 's'} completed · scores tracked by your teacher`
               : 'Your teacher will log each past paper you complete here'}
         </p>
@@ -143,6 +147,15 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
       <div>
         {banner}
         {curriculumSlot}
+      </div>
+    );
+  }
+
+  if (view === 'roadmap') {
+    return (
+      <div>
+        {banner}
+        <LearningPathRoadmap profile={profile} />
       </div>
     );
   }
