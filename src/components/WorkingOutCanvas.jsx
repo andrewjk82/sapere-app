@@ -1,6 +1,7 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
 import StickerLayer from './StickerLayer';
+import { eraseStrokesAlong } from '../utils/strokeErase';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
@@ -247,6 +248,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
   const canvasWrapperRef = useRef(null);
+  // Whole-stroke eraser gesture: { pointerId, last: {x, y}, base: strokes at pointerdown, current: strokes now }.
+  const strokeEraseRef = useRef(null);
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
@@ -618,20 +621,26 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     return appended;
   };
 
-  // ─── Stroke-eraser: remove whole strokes under the tap ────────────────────
-  const eraseStrokeAt = (pt) => {
-    const hitR = 16;
-    const next = strokesRef.current.filter(s => {
-      if (s.isEraser || !s.points) return true;
-      return !s.points.some(p => {
-        const dx = p[0] - pt.x, dy = p[1] - pt.y;
-        return dx * dx + dy * dy < hitR * hitR;
-      });
-    });
-    if (next.length !== strokesRef.current.length) {
-      setUndoStack(prev => [...prev, strokesRef.current]);
+  // ─── Stroke-eraser: scrub the pen across strokes to remove each one it touches ───
+  // The whole scrub is one undo step. `current` is tracked here because strokesRef
+  // only catches up on the next render.
+  const eraseStrokesTo = (from, to) => {
+    const gesture = strokeEraseRef.current;
+    if (!gesture) return;
+    const next = eraseStrokesAlong(gesture.current, from, to);
+    if (next !== gesture.current) {
+      gesture.current = next;
       setStrokes(next);
     }
+  };
+
+  const finishStrokeErase = (e) => {
+    const gesture = strokeEraseRef.current;
+    if (!gesture || (e?.pointerId != null && e.pointerId !== gesture.pointerId)) return false;
+    strokeEraseRef.current = null;
+    try { displayCanvasRef.current?.releasePointerCapture?.(gesture.pointerId); } catch { /* already released */ }
+    if (gesture.current !== gesture.base) setUndoStack(prev => [...prev, gesture.base]);
+    return true;
   };
 
   // Discard an in-progress stroke without committing (used when a pen press
@@ -752,7 +761,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     canceledPenStrokeRef.current = null;
 
     if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
-      eraseStrokeAt(pt);
+      strokeEraseRef.current = { pointerId: e.pointerId, last: pt, base: strokesRef.current, current: strokesRef.current };
+      eraseStrokesTo(pt, pt);
       activePointerIdRef.current = null;
       return;
     }
@@ -779,6 +789,19 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerMove = (e) => {
+    const erase = strokeEraseRef.current;
+    if (erase && e.pointerId === erase.pointerId) {
+      if (e.cancelable !== false) e.preventDefault();
+      const rect = canvasWrapperRef.current?.getBoundingClientRect?.() || rectRef.current;
+      const events = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length) ? e.getCoalescedEvents() : [e];
+      const origin = rectRef.current || rect;
+      for (const ev of events) {
+        const point = { x: ev.clientX - origin.left, y: ev.clientY - origin.top };
+        eraseStrokesTo(erase.last, point);
+        erase.last = point;
+      }
+      return;
+    }
     const isActivePointer =
       isDrawingRef.current &&
       currentStrokeRef.current &&
@@ -816,6 +839,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerUp = (e) => {
+    if (finishStrokeErase(e)) { if (e.cancelable !== false) e.preventDefault(); return; }
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
 
@@ -836,6 +860,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerCancel = (e) => {
+    if (finishStrokeErase(e)) return;
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e?.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
     if (e?.cancelable !== false) e?.preventDefault?.();
