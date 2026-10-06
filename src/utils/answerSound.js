@@ -52,21 +52,27 @@ const play = (build) => {
   } catch { /* sound is never worth breaking a quiz for */ }
 };
 
-// Ding (E6) … dong (A6): bright and rising.
-export const playCorrect = () => play((c) => {
+// Ding (E6) … dong (A6): bright and rising. `quick` (rapid-fire sprints, one answer
+// every second or so) is a single short ding so sounds never pile up.
+export const playCorrect = ({ quick = false } = {}) => play((c) => {
+  if (quick) {
+    note(c, 1760, 0, 0.18, 0.14);
+    return;
+  }
   note(c, 1318.5, 0, 0.45, 0.16);
   note(c, 1760, 0.16, 0.6, 0.16);
 });
 
 // Two close low notes, slightly sour and short: "dang".
-export const playWrong = () => play((c) => {
-  note(c, 196, 0, 0.42, 0.18, 'triangle', 1.5);
-  note(c, 207.7, 0, 0.42, 0.14, 'triangle', 1.5);
+export const playWrong = ({ quick = false } = {}) => play((c) => {
+  const dur = quick ? 0.24 : 0.42;
+  note(c, 196, 0, dur, 0.18, 'triangle', 1.5);
+  note(c, 207.7, 0, dur, 0.14, 'triangle', 1.5);
 });
 
 // For grading code that only knows right/wrong/pending: true → ding-dong, false → dang,
 // anything else (null/undefined = waiting for the teacher) → silent.
-export const playAnswerResult = (correct) => {
-  if (correct === true) playCorrect();
-  else if (correct === false) playWrong();
+export const playAnswerResult = (correct, options) => {
+  if (correct === true) playCorrect(options);
+  else if (correct === false) playWrong(options);
 };

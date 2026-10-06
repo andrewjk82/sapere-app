@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SprintKeypad from './SprintKeypad';
+import { playAnswerResult } from '../../utils/answerSound';
 import { formatSprintTime } from '../../utils/sprintWeek';
 import { WRONG_ANSWER_PENALTY_MS } from '../../services/timesTableSprintService';
 
@@ -68,7 +69,9 @@ const SprintQuizView = ({ questions, onFinish }) => {
     if (value === '') return;
 
     const question = questions[indexRef.current];
-    if (Number(value) !== question.answer) {
+    const right = Number(value) === question.answer;
+    playAnswerResult(right, { quick: true });
+    if (!right) {
       penaltyRef.current += WRONG_ANSWER_PENALTY_MS;
       wrongCountRef.current += 1;
       setWrongFlash((n) => n + 1);
