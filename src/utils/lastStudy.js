@@ -14,6 +14,8 @@ const clean = (raw) => {
     topicId: str(raw.topicId),
     topicCode: str(raw.topicCode),
     topicTitle: str(raw.topicTitle),
+    // Set when the last thing opened was the topic's worksheet PDF (its raw homeworkPdfUrl).
+    pdfUrl: str(raw.pdfUrl),
     at: Number.isFinite(raw.at) ? raw.at : 0,
   };
   return record.trackKey && record.chapterId ? record : null;
@@ -40,6 +42,8 @@ export const mergeLastStudy = (previous, visit, now = Date.now()) => {
     topicId: visit.topicId ?? (sameChapter ? base.topicId : ''),
     topicCode: visit.topicId ? visit.topicCode : (visit.topicId === undefined && sameChapter ? base.topicCode : ''),
     topicTitle: visit.topicId ? visit.topicTitle : (visit.topicId === undefined && sameChapter ? base.topicTitle : ''),
+    // Any later visit that is not a PDF (chapter or practice) replaces the PDF as "last studied".
+    pdfUrl: visit.pdfUrl || '',
     at: now,
   });
 };

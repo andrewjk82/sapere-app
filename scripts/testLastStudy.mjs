@@ -21,8 +21,17 @@ test('nothing stored → null; no uid → null', () => {
 test('save then load round-trips, keyed per student', () => {
   const s = memory();
   saveLastStudy('u1', visit, s, 1000);
-  assert.deepEqual(loadLastStudy('u1', s), { ...visit, topicId: '', topicCode: '', topicTitle: '', at: 1000 });
+  assert.deepEqual(loadLastStudy('u1', s), { ...visit, topicId: '', topicCode: '', topicTitle: '', pdfUrl: '', at: 1000 });
   assert.equal(loadLastStudy('u2', s), null);
+});
+
+test('opening a worksheet PDF is remembered; a later chapter visit replaces it', () => {
+  const s = memory();
+  saveLastStudy('u1', { ...visit, topicId: 'y7-5b', topicCode: '5B', topicTitle: 'Adding', pdfUrl: 'https://x/pdf' }, s, 1);
+  assert.equal(loadLastStudy('u1', s).pdfUrl, 'https://x/pdf');
+  assert.equal(loadLastStudy('u1', s).topicCode, '5B');
+  saveLastStudy('u1', visit, s, 2);
+  assert.equal(loadLastStudy('u1', s).pdfUrl, '');
 });
 
 test('opening a topic adds it; reopening the same chapter keeps it', () => {

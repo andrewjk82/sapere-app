@@ -326,6 +326,31 @@ const LearningPath = ({ profile }) => {
     }));
   }, [user?.uid, activeTrack.key, selectedTopic]);
 
+  // Topic worksheet PDF (path chip or "Continue studying"); remembered on this device.
+  const openWorksheet = (trackKey, chapter, topic) => {
+    const raw = topic.homeworkPdfUrl;
+    const url = toDrivePreviewUrl(raw);
+    if (!url) return;
+    setPdfPreview({
+      raw,
+      url,
+      openUrl: toDriveOpenUrl(raw),
+      title: `${topic.code ? `${topic.code} · ` : ''}${topic.title || ''}`,
+      noteKey: `${trackKey}:${topic.id}:${raw}`,
+    });
+    if (user?.uid) {
+      setLastStudy(saveLastStudy(user.uid, {
+        trackKey,
+        chapterId: chapter.id,
+        chapterTitle: chapter.title,
+        topicId: topic.id,
+        topicCode: topic.code || '',
+        topicTitle: topic.title || '',
+        pdfUrl: raw,
+      }));
+    }
+  };
+
   // Open the remembered chapter once its chapters are on screen (a track switch loads them first).
   const tryResume = useCallback(() => {
     const pending = pendingResumeRef.current;
@@ -344,6 +369,20 @@ const LearningPath = ({ profile }) => {
   );
   const continueStudying = () => {
     if (!resumeTarget) return;
+    if (resumeTarget.pdfUrl) {
+      // Last thing studied was a worksheet: reopen it directly (the stored record has all it needs).
+      if (resumeTarget.trackKey !== activeTrack.key) {
+        setSelectedTrackKey(resumeTarget.trackKey);
+        setSelectedChapter(null);
+        setSelectedTopic(null);
+      }
+      openWorksheet(
+        resumeTarget.trackKey,
+        { id: resumeTarget.chapterId, title: resumeTarget.chapterTitle },
+        { id: resumeTarget.topicId, code: resumeTarget.topicCode, title: resumeTarget.topicTitle, homeworkPdfUrl: resumeTarget.pdfUrl },
+      );
+      return;
+    }
     const pending = { chapterId: resumeTarget.chapterId };
     pendingResumeRef.current = pending;
     window.setTimeout(() => { if (pendingResumeRef.current === pending) pendingResumeRef.current = null; }, 6000);
@@ -493,7 +532,7 @@ const LearningPath = ({ profile }) => {
             <Play size={14} fill="#7c3aed" color="#7c3aed" />
             <span>Continue studying</span>
             <span style={{ fontWeight: 700, color: '#8b7aa7', fontSize: '0.74rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-              {shortChapterLabel(resumeTarget.chapterTitle)}{resumeTarget.topicCode ? ` · ${resumeTarget.topicCode}` : ''}
+              {shortChapterLabel(resumeTarget.chapterTitle)}{resumeTarget.topicCode ? ` · ${resumeTarget.topicCode}` : ''}{resumeTarget.pdfUrl ? ' worksheet' : ''}
             </span>
           </button>
         )}
@@ -625,13 +664,7 @@ const LearningPath = ({ profile }) => {
                             aria-label={`Open worksheet: ${t.code ? `${t.code} · ` : ''}${t.title || ''}`}
                             onClick={(e) => {
                               e.stopPropagation();
-                              setPdfPreview({
-                                raw: t.homeworkPdfUrl,
-                                url: pdfUrl,
-                                openUrl: toDriveOpenUrl(t.homeworkPdfUrl),
-                                title: `${t.code ? `${t.code} · ` : ''}${t.title || ''}`,
-                                noteKey: `${activeTrack.key}:${t.id}:${t.homeworkPdfUrl}`,
-                              });
+                              openWorksheet(activeTrack.key, n, t);
                             }}
                             style={{
                               ...chipStyle,
