@@ -96,9 +96,11 @@ service cloud.firestore {
     }
 
     // Textbook answer keys, one doc per curriculum topic (tools/answer-keys/).
-    // Teacher only — students must never be able to read the answers.
+    // Signed-in users may read (students check their own answers when redoing wrong
+    // homework questions; the app caches each key on the device). Only the teacher writes.
     match /answer_keys/{topicId} {
-      allow read, write: if isAdmin();
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
     }
 
     // Homework submissions — one per session (doc id = sessions/{sessionId} id);

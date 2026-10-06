@@ -126,6 +126,9 @@ const HomeworkHistory = ({ sessions, onOpen, onClose }) => {
                           <div style={{ fontSize: '0.78rem', color: '#4f46e5', fontWeight: 600, marginTop: 2 }}>“{item.comment}”</div>
                         )}
                       </div>
+                      {item.status === 'checked' && item.wrongCount > 0 && (
+                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#c2410c', background: '#fff7ed', borderRadius: 8, padding: '4px 7px', whiteSpace: 'nowrap' }}>{item.wrongCount} to redo</span>
+                      )}
                       {item.mark && <span style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.9rem' }}>{item.mark}</span>}
                       <span style={{ display: 'flex', alignItems: 'center', gap: 5, padding: '6px 9px', borderRadius: 10, background: b.bg, color: b.color, fontSize: '0.7rem', fontWeight: 800, whiteSpace: 'nowrap' }}>
                         <BadgeIcon size={13} /> <span className="homework-history-status-label">{b.label}</span>

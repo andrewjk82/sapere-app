@@ -248,6 +248,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
+  // Set when strokes are swapped in wholesale (page switch / loaded draft): a lone stroke landing on an
+  // empty page looks like "one stroke appended" and would otherwise skip the repaint.
+  const forceRedrawRef = useRef(false);
   const strokesRef = useRef([]);
 
   const handlersRef = useRef({});
@@ -495,7 +498,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const isAppend =
       strokes.length === prev.length + 1 &&
       prev.every((s, i) => s === strokes[i]);
-    if (!isAppend) redrawBackground();
+    if (!isAppend || forceRedrawRef.current) redrawBackground();
+    forceRedrawRef.current = false;
     bgRenderedRef.current = strokes;
   }, [strokes, redrawBackground]);
 
@@ -875,6 +879,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       const next = [...prev];
       next[currentPage] = strokesRef.current;
       setCurrentPage(idx);
+      forceRedrawRef.current = true;
       setStrokes(next[idx] || []);
       setUndoStack([]);
       return next;
@@ -1164,6 +1169,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             : nextPages.map(() => false),
         );
         setCurrentPage(idx);
+        forceRedrawRef.current = true;
         setStrokes(nextPages[idx]);
         setUndoStack([]);
       },

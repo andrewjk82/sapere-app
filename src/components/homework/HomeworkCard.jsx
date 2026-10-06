@@ -4,6 +4,7 @@ import { getHomeworkItems, getHomeworkHistory } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import HomeworkHistory from './HomeworkHistory';
+import HomeworkRedo from './HomeworkRedo';
 
 const BADGE = {
   todo: { label: 'To do', color: '#7c3aed', bg: '#f5f3ff', Icon: PenLine },
@@ -42,6 +43,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
   const active = items.filter((i) => i.status !== 'checked');
   const [showHistory, setShowHistory] = useState(false);
   const [openItem, setOpenItem] = useState(null);
+  const [redoItem, setRedoItem] = useState(null);
 
   if (items.length === 0) return null;
 
@@ -97,7 +99,17 @@ const HomeworkCard = ({ sessions, profile, user }) => {
         />
       )}
       {openItem && openItem.status === 'checked' && (
-        <HomeworkSubmissionViewer sessionId={openItem.sessionId} mode="student" uid={user?.uid} info={openItem} onClose={() => setOpenItem(null)} />
+        <HomeworkSubmissionViewer
+          sessionId={openItem.sessionId}
+          mode="student"
+          uid={user?.uid}
+          info={openItem}
+          onClose={() => setOpenItem(null)}
+          onRedo={() => { setRedoItem(openItem); setOpenItem(null); }}
+        />
+      )}
+      {redoItem && (
+        <HomeworkRedo item={redoItem} user={user} profile={profile} onClose={() => setRedoItem(null)} />
       )}
     </div>
   );

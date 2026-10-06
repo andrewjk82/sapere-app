@@ -1,4 +1,5 @@
 // Pure homework helpers — no Firebase imports, so scripts/testHomework.mjs can run them in Node.
+import { isWrongMark } from './homeworkRedo.js';
 
 export const MAX_HOMEWORK_PAGES = 10;
 export const HOMEWORK_RETENTION_DAYS = 30;
@@ -83,6 +84,7 @@ export const getHomeworkHistory = (sessions, { today = new Date() } = {}) => {
         mark: hasMark ? `${Number(s.homeworkScore)}/${Number(s.homeworkTotal)}` : '',
         comment: String(s.homeworkComment || '').trim(),
         marks: s.homeworkMarks && typeof s.homeworkMarks === 'object' ? s.homeworkMarks : {},
+        wrongCount: Object.values(s.homeworkMarks || {}).filter(isWrongMark).length,
       };
     })
     .sort((a, b) => b.date.localeCompare(a.date));

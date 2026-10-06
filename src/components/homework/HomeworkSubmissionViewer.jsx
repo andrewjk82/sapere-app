@@ -6,6 +6,7 @@ import { fetchSubmission, fetchSubmissionPages, markHomeworkChecked } from '../.
 import { loadHomeworkLocal } from '../../utils/homeworkLocalStore';
 import { isSafeImageDataUrl } from '../../utils/homework';
 import { groupMarksByTopic } from '../../utils/homeworkMarking';
+import { wrongQuestions } from '../../utils/homeworkRedo';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const ICON_BTN = { border: 0, background: 'transparent', color: '#fff', padding: 6, cursor: 'pointer' };
@@ -17,7 +18,8 @@ const MARK_CHIP = {
 
 // What the student sees once the teacher has checked: the score, the comment, and the ✓/✗/½
 // for every question the teacher marked in the topic being viewed. The answer key stays teacher-only.
-const StudentMarks = ({ info, topicId }) => {
+const StudentMarks = ({ info, topicId, onRedo }) => {
+  const wrongCount = wrongQuestions(info?.marks, info?.topics).length;
   const sections = topicId ? (groupMarksByTopic(info?.marks)[topicId] || []) : [];
   if (!info?.mark && !info?.comment && sections.length === 0) return null;
   return (
@@ -28,6 +30,11 @@ const StudentMarks = ({ info, topicId }) => {
           {info.mark && <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.06em', textTransform: 'uppercase' }}>all topics</span>}
           {info.comment && <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#4f46e5' }}>“{info.comment}”</span>}
         </div>
+      )}
+      {onRedo && wrongCount > 0 && (
+        <button type="button" onClick={onRedo} style={{ margin: '0 0 10px', padding: '9px 14px', borderRadius: 12, border: 0, background: '#7c3aed', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer' }}>
+          Redo wrong questions ({wrongCount})
+        </button>
       )}
       {sections.map(({ section, items }) => (
         <div key={section} style={{ marginBottom: 6 }}>
@@ -50,7 +57,7 @@ const StudentMarks = ({ info, topicId }) => {
 // only when this device has no copy is the submission doc read once for its
 // thumbnails. `info` ({ date, topics, status }) comes from the in-memory
 // session so the header doesn't need that doc either.
-const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onChecked }) => {
+const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onChecked, onRedo }) => {
   const [submission, setSubmission] = useState(null);
   const [pages, setPages] = useState([]);
   const [isThumbnailOnly, setIsThumbnailOnly] = useState(false);
@@ -195,7 +202,7 @@ const HomeworkSubmissionViewer = ({ sessionId, mode, uid, info, onClose, onCheck
       )}
 
       {mode === 'student' && status === 'checked' && (
-        <StudentMarks info={info} topicId={selectedGroup?.id} />
+        <StudentMarks info={info} topicId={selectedGroup?.id} onRedo={onRedo} />
       )}
 
       {marking && !isWide && (
