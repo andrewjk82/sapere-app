@@ -19,6 +19,7 @@ import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { loadCurriculumNote, saveCurriculumNote } from '../utils/curriculumLocalNotes';
+import { loadLastStudy, saveLastStudy, shortChapterLabel } from '../utils/lastStudy';
 import { requestPersistentStorage } from '../utils/homeworkLocalStore';
 import './learning-path.css';
 
@@ -53,6 +54,9 @@ const LearningPath = ({ profile }) => {
   const [selectedChapter, setSelectedChapter] = useState(null); // { chapter, state }
   const [selectedTopic, setSelectedTopic] = useState(null);    // { topic, chapter }
   const [showGraph3D, setShowGraph3D] = useState(false);
+  // Where the student last studied (this browser only) — drives the "Continue studying" button.
+  const [lastStudy, setLastStudy] = useState(null);
+  const pendingResumeRef = useRef(null); // { chapterId } waiting for its track's chapters to load
   const [cheatSheetPreview, setCheatSheetPreview] = useState(null); // { url, title } | null
   const [pdfPreview, setPdfPreview] = useState(null); // { raw, url, openUrl, title } | null — topic worksheet
   const curriculumNoteKey = pdfPreview?.noteKey;
@@ -298,6 +302,60 @@ const LearningPath = ({ profile }) => {
     };
   }, [nodes]);
 
+  useEffect(() => { setLastStudy(loadLastStudy(user?.uid)); }, [user?.uid]);
+
+  // Remember the chapter / topic as the student opens them.
+  useEffect(() => {
+    if (!user?.uid || !selectedChapter) return;
+    setLastStudy(saveLastStudy(user.uid, {
+      trackKey: activeTrack.key,
+      chapterId: selectedChapter.chapter.id,
+      chapterTitle: selectedChapter.chapter.title,
+    }));
+  }, [user?.uid, activeTrack.key, selectedChapter]);
+
+  useEffect(() => {
+    if (!user?.uid || !selectedTopic) return;
+    setLastStudy(saveLastStudy(user.uid, {
+      trackKey: activeTrack.key,
+      chapterId: selectedTopic.chapter.id,
+      chapterTitle: selectedTopic.chapter.title,
+      topicId: selectedTopic.topic.id,
+      topicCode: selectedTopic.topic.code || '',
+      topicTitle: selectedTopic.topic.title || '',
+    }));
+  }, [user?.uid, activeTrack.key, selectedTopic]);
+
+  // Open the remembered chapter once its chapters are on screen (a track switch loads them first).
+  const tryResume = useCallback(() => {
+    const pending = pendingResumeRef.current;
+    if (!pending || loading) return;
+    const node = nodes.find((n) => n.id === pending.chapterId);
+    if (!node) return;
+    pendingResumeRef.current = null;
+    if (node.state !== 'locked') setSelectedChapter({ chapter: node, state: node.state });
+  }, [nodes, loading]);
+  useEffect(() => { tryResume(); }, [tryResume]);
+
+  const resumeTarget = lastStudy && tracks.some((t) => t.key === lastStudy.trackKey) ? lastStudy : null;
+  const canContinue = Boolean(resumeTarget) && (
+    resumeTarget.trackKey !== activeTrack.key
+    || nodes.some((n) => n.id === resumeTarget.chapterId && n.state !== 'locked')
+  );
+  const continueStudying = () => {
+    if (!resumeTarget) return;
+    const pending = { chapterId: resumeTarget.chapterId };
+    pendingResumeRef.current = pending;
+    window.setTimeout(() => { if (pendingResumeRef.current === pending) pendingResumeRef.current = null; }, 6000);
+    if (resumeTarget.trackKey !== activeTrack.key) {
+      setSelectedTrackKey(resumeTarget.trackKey);
+      setSelectedChapter(null);
+      setSelectedTopic(null);
+    } else {
+      tryResume();
+    }
+  };
+
   if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
 
   // Show topic practice session
@@ -323,6 +381,7 @@ const LearningPath = ({ profile }) => {
           key={selectedChapter.chapter.id}
           chapter={selectedChapter.chapter}
           chapterState={selectedChapter.state}
+          lastTopicId={lastStudy && lastStudy.chapterId === selectedChapter.chapter.id ? lastStudy.topicId : ''}
           profile={profile}
           onBack={() => setSelectedChapter(null)}
           onStartTopic={(topic, chapter) => {
@@ -416,8 +475,28 @@ const LearningPath = ({ profile }) => {
         </div>
       )}
 
-      {/* Knowledge Graph button */}
-      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+      {/* Continue studying (remembered on this device) + Knowledge Graph button */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
+        {canContinue && (
+          <button
+            type="button"
+            onClick={continueStudying}
+            title={`Continue where you left off: ${resumeTarget.chapterTitle}${resumeTarget.topicCode ? ` · ${resumeTarget.topicCode}` : ''}`}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '8px', maxWidth: '100%',
+              padding: '8px 16px', borderRadius: '12px', cursor: 'pointer',
+              background: '#fff', color: '#5b21b6', border: '1.5px solid #c4b5fd',
+              fontSize: '0.82rem', fontWeight: 800,
+              boxShadow: '0 2px 10px rgba(124,58,237,0.12)',
+            }}
+          >
+            <Play size={14} fill="#7c3aed" color="#7c3aed" />
+            <span>Continue studying</span>
+            <span style={{ fontWeight: 700, color: '#8b7aa7', fontSize: '0.74rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+              {shortChapterLabel(resumeTarget.chapterTitle)}{resumeTarget.topicCode ? ` · ${resumeTarget.topicCode}` : ''}
+            </span>
+          </button>
+        )}
         <button
           onClick={() => setShowGraph3D(true)}
           style={{

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { migrateMovedTopicProgress } from '../utils/topicMoves';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -86,12 +86,18 @@ const clearChapterProgress = (uid, chapterId) => {
   } catch { /* ignore */ }
 };
 
-const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic }) => {
+const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopic, lastTopicId = '' }) => {
   const { user } = useAuth();
   // topicProgress: { [topicId]: { progress, masteredCount, totalQuestions } }
   const [topicProgress, setTopicProgress] = useState({});
   const [previewLesson, setPreviewLesson] = useState(null);
   const [resetting, setResetting] = useState(false);
+  const lastTopicRef = useRef(null);
+
+  // Coming back via "Continue studying": bring the topic they were on into view.
+  useEffect(() => {
+    if (lastTopicId) lastTopicRef.current?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }, [lastTopicId]);
 
   useEffect(() => {
     if (!user?.uid) return;
@@ -232,6 +238,7 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
           return (
             <motion.div
               key={topic.id}
+              ref={topic.id === lastTopicId ? lastTopicRef : undefined}
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.04 }}
@@ -239,7 +246,7 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                 display: 'flex', alignItems: 'center', gap: '14px',
                 padding: '16px 18px', borderRadius: '16px',
                 background: '#fff',
-                border: `1px solid ${s.border}`,
+                border: topic.id === lastTopicId ? '2px solid #a78bfa' : `1px solid ${s.border}`,
                 boxShadow: topic.state === 'current'
                   ? `0 8px 24px ${s.accent}14`
                   : '0 2px 8px rgba(15,23,42,0.04)',
@@ -263,6 +270,14 @@ const ChapterDetailView = ({ chapter, chapterState, profile, onBack, onStartTopi
                   }}>
                     {s.label}
                   </span>
+                  {topic.id === lastTopicId && (
+                    <span style={{
+                      fontSize: '0.6rem', fontWeight: 900, letterSpacing: '0.06em', textTransform: 'uppercase',
+                      padding: '2px 7px', borderRadius: '6px', background: '#ede9fe', color: '#6d28d9',
+                    }}>
+                      Last studied
+                    </span>
+                  )}
                 </div>
                 <div style={{ fontSize: '0.94rem', fontWeight: 800, color: '#1e1b4b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                   {topic.title}
