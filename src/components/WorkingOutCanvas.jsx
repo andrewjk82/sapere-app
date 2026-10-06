@@ -1216,19 +1216,26 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               <MousePointer2 size={14} />
               {palmGuard ? 'Pen Only' : 'All Touch'}
             </button>
-            <button onClick={() => setActiveTool('pen')} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
+            {/* Tapping the tool that is already selected swaps pen <-> eraser. */}
+            <button onClick={() => setActiveTool(tool => (tool === 'pen' ? 'eraser' : 'pen'))} title={activeTool === 'pen' ? 'Pen — tap again for eraser' : 'Pen'} aria-label="Pen" aria-pressed={activeTool === 'pen'} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
               <PenTool size={15} />
             </button>
             <button
-              onClick={() => {
-                if (activeTool === 'eraser') { setEraserMode(prev => prev === 'area' ? 'stroke' : 'area'); }
-                else { setActiveTool('eraser'); }
-              }}
+              onClick={() => setActiveTool(tool => (tool === 'eraser' ? 'pen' : 'eraser'))}
+              title={activeTool === 'eraser' ? 'Eraser — tap again for pen' : 'Eraser'}
+              aria-label="Eraser"
+              aria-pressed={activeTool === 'eraser'}
               style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', background: activeTool === 'eraser' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'eraser' ? '#4f46e5' : '#64748b' }}
             >
               <Eraser size={15} />
               {activeTool === 'eraser' && (
-                <span style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '2px 5px', borderRadius: '4px' }}>{eraserMode}</span>
+                // Tapping the mode label switches area <-> stroke (the button itself goes back to the pen).
+                <span
+                  role="button"
+                  aria-label={`Eraser mode: ${eraserMode}. Tap to change`}
+                  onClick={(e) => { e.stopPropagation(); setEraserMode(prev => (prev === 'area' ? 'stroke' : 'area')); }}
+                  style={{ fontSize: '0.65rem', fontWeight: 900, textTransform: 'uppercase', background: '#fff', padding: '5px 8px', margin: '-4px -4px -4px 0', borderRadius: '4px', cursor: 'pointer' }}
+                >{eraserMode}</span>
               )}
             </button>
             <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '30px', borderRadius: '8px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
