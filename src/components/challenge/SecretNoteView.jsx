@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { playAnswerResult } from '../../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, CheckCircle2, XCircle, Lightbulb, ArrowRight, ChevronDown,
@@ -617,6 +618,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         : answersMatch(val, prep.correctText);
     }
 
+    playAnswerResult(correct);
     const status = isPreview
       ? (correct ? (canTwin(question) ? 'needTwin' : 'graduated') : 'kept')
       : recordResult(kind, uid, question.id, correct);
@@ -637,6 +639,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
       ? gradeMcSelection(twin, val, optIdx, twinPrep.options)
       : answersMatch(val, twinPrep.correctText);
     setTwinGraded(correct);
+    playAnswerResult(correct);
     const status = isPreview
       ? (correct ? 'graduated' : 'kept')
       : recordTwinResult(kind, uid, question.id, correct);

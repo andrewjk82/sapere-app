@@ -44,6 +44,7 @@ import LessonPlayer from './lessons/LessonPlayer';
 import { getLesson } from '../lessons/registry';
 import { GraduationCap, Volume2 } from 'lucide-react';
 import { parseSolutionSteps } from '../utils/solutionSteps';
+import { playAnswerResult } from '../utils/answerSound';
 
 // Fisher–Yates shuffle (returns a new array).
 const shuffleArray = (arr) => {
@@ -276,6 +277,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const handleSubmit = () => {
     if (submitted) return;
     const correct = gradeQuestion(q, userAnswer);
+    if (!subNeedsTeacher(q)) playAnswerResult(correct);
     setIsCorrect(correct);
     setSubmitted(true);
     // Sketch pad always shown — ink level (empty/light/substantial) for FlameBuddy.

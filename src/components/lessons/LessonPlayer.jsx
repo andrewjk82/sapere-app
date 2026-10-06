@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { playAnswerResult } from '../../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ArrowRight, X, RotateCcw, Play, Pause, Volume2, VolumeX, Sparkles, Ban } from 'lucide-react';
 import MathView from '../MathView';
@@ -2593,7 +2594,7 @@ const Checkpoint = ({ prompt, options = [], explanation = '' }) => {
           const border = chosen ? (opt.correct ? '#22c55e' : '#ef4444') : revealCorrect ? '#86efac' : '#e2e8f0';
           const color = chosen ? (opt.correct ? '#15803d' : '#b91c1c') : '#1e293b';
           return (
-            <motion.button key={i} whileTap={{ scale: 0.94 }} onClick={() => setSelected(i)}
+            <motion.button key={i} whileTap={{ scale: 0.94 }} onClick={() => { setSelected(i); playAnswerResult(!!options[i]?.correct); }}
               style={{ padding: '10px 18px', borderRadius: 14, border: `2px solid ${border}`, background: bg, color, fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.9rem' }}>
               <MathView align="left" content={opt.text} style={{ fontSize: '0.9rem', fontWeight: 800, color: 'inherit' }} />
             </motion.button>

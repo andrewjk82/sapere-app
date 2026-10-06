@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { playAnswerResult } from '../../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, ArrowRight, CheckCircle2, XCircle, Clock,
@@ -504,6 +505,7 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
       ? gradeMcSelection(q, optionTextAt(q.options, userAnswer), userAnswer, q.options || [])
       : gradeQuestion(question, userAnswer).correct;
     const timedOut = forcedAnswer === '';
+    if (!timedOut) playAnswerResult(correct);
     setLastCorrect(correct);
     setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id, questionText: q.q || q.question }]);
     setShowFeedback(true);

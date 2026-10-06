@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { playAnswerResult } from '../utils/answerSound';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, Flag, ChevronLeft, ChevronRight,
@@ -1243,6 +1244,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     setSelectedOption(optionText);
     setSelectedOptionIdx(optIdx);
     setIsCorrect(correct);
+    if (!isGraphSketch) playAnswerResult(correct);
     
     // Scoring is now handled in the logic above based on sub-questions or individual results
     

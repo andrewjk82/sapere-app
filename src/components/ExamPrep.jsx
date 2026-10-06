@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { playAnswerResult } from '../utils/answerSound';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -232,6 +233,7 @@ const QuizView = ({
       ? gradeMcSelection(q, optionTextAt(q.options, userAnswer), userAnswer, q.options || [])
       : gradeQuestion(q, userAnswer).correct);
     const correct = needsTeacher ? null : gradeNow();
+    playAnswerResult(correct);
 
     // 손글씨 캡처는 setShowFeedback(리렌더로 캔버스 언마운트 가능)보다 먼저.
     let answerImages = [];
