@@ -13,8 +13,13 @@
  *   style    – container style overrides
  */
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Loader2, AlertTriangle, ZoomIn, ZoomOut } from 'lucide-react';
+import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, Eraser, Undo2, Trash2, Hand } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
+import {
+  HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS,
+  toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, removeStroke, countHighlights,
+} from '../utils/pdfHighlights';
+import { loadHighlights, saveHighlights } from '../utils/pdfHighlightStore';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -46,8 +51,11 @@ const zoomForPinch = (pinch, points) => {
   return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Math.round(next * 1000) / 1000));
 };
 
-const ZoomControls = ({ zoom, onZoomChange }) => (
-  <div style={{ position: 'absolute', top: 8, left: 8, zIndex: 5, display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 6, flexShrink: 0, padding: '5px 8px', background: 'rgba(255,255,255,0.96)', border: '1px solid #e2e8f0', borderRadius: 12, boxShadow: '0 3px 12px rgba(30,27,75,0.12)' }}>
+const BAR = { display: 'flex', alignItems: 'center', gap: 6, padding: '5px 8px', background: 'rgba(255,255,255,0.96)', border: '1px solid #e2e8f0', borderRadius: 12, boxShadow: '0 3px 12px rgba(30,27,75,0.12)' };
+const TOOL_BTN = (active) => ({ width: 34, height: 32, display: 'grid', placeItems: 'center', border: `1px solid ${active ? '#a5b4fc' : '#e2e8f0'}`, borderRadius: 9, background: active ? '#e0e7ff' : '#fff', color: active ? '#4f46e5' : '#334155', cursor: 'pointer' });
+
+const ZoomGroup = ({ zoom, onZoomChange }) => (
+  <div style={{ ...BAR, flexShrink: 0 }}>
     <button
       type="button"
       aria-label="Zoom out"
@@ -80,11 +88,105 @@ const ZoomControls = ({ zoom, onZoomChange }) => (
   </div>
 );
 
-const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot }) => {
+// Highlighter tools: on/off, colour, eraser, undo, finger-draws toggle, clear all.
+const HighlightGroup = ({ hl, setHl, canUndo, onUndo, hasAny, onClearAll }) => {
+  const [confirmClear, setConfirmClear] = useState(false);
+  useEffect(() => {
+    if (!confirmClear) return undefined;
+    const timer = setTimeout(() => setConfirmClear(false), 3000);
+    return () => clearTimeout(timer);
+  }, [confirmClear]);
+  return (
+    <div style={{ ...BAR, flexWrap: 'wrap' }}>
+      <button type="button" aria-label="Highlighter" aria-pressed={hl.on} title={hl.on ? 'Highlighter on — tap to stop' : 'Highlighter'} onClick={() => setHl((v) => ({ ...v, on: !v.on, tool: 'draw' }))} style={TOOL_BTN(hl.on)}>
+        <Highlighter size={17} />
+      </button>
+      {hl.on && (
+        <>
+          {HIGHLIGHT_COLORS.map((c) => (
+            <button key={c.id} type="button" aria-label={`${c.label} highlighter`} aria-pressed={hl.tool === 'draw' && hl.color === c.value} onClick={() => setHl((v) => ({ ...v, color: c.value, tool: 'draw' }))} style={{ width: 22, height: 22, borderRadius: '50%', border: hl.tool === 'draw' && hl.color === c.value ? '2px solid #4f46e5' : '1px solid #cbd5e1', background: c.value, cursor: 'pointer', padding: 0 }} />
+          ))}
+          <button type="button" aria-label="Erase highlights" aria-pressed={hl.tool === 'erase'} title="Erase highlights" onClick={() => setHl((v) => ({ ...v, tool: v.tool === 'erase' ? 'draw' : 'erase' }))} style={TOOL_BTN(hl.tool === 'erase')}>
+            <Eraser size={16} />
+          </button>
+          <button type="button" aria-label="Undo highlight" title="Undo" disabled={!canUndo} onClick={onUndo} style={{ ...TOOL_BTN(false), opacity: canUndo ? 1 : 0.4, cursor: canUndo ? 'pointer' : 'default' }}>
+            <Undo2 size={16} />
+          </button>
+          <button type="button" aria-label="Draw with finger" aria-pressed={hl.finger} title={hl.finger ? 'Finger draws (tap for pen only)' : 'Pen only — your finger scrolls (tap to draw with finger)'} onClick={() => setHl((v) => ({ ...v, finger: !v.finger }))} style={TOOL_BTN(hl.finger)}>
+            <Hand size={16} />
+          </button>
+          <button type="button" aria-label={confirmClear ? 'Tap again to clear all highlights' : 'Clear all highlights'} title={confirmClear ? 'Tap again to clear all highlights' : 'Clear all highlights'} disabled={!hasAny} onClick={() => { if (confirmClear) { setConfirmClear(false); onClearAll(); } else setConfirmClear(true); }} style={{ ...TOOL_BTN(confirmClear), opacity: hasAny ? 1 : 0.4, cursor: hasAny ? 'pointer' : 'default', color: confirmClear ? '#b91c1c' : '#334155', borderColor: confirmClear ? '#fca5a5' : '#e2e8f0', background: confirmClear ? '#fef2f2' : '#fff' }}>
+            <Trash2 size={16} />
+          </button>
+        </>
+      )}
+    </div>
+  );
+};
+
+const PdfToolbar = ({ zoom, onZoomChange, highlight }) => (
+  <div style={{ position: 'absolute', top: 8, left: 8, right: 8, zIndex: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8, pointerEvents: 'none' }}>
+    <div style={{ pointerEvents: 'auto' }}><ZoomGroup zoom={zoom} onZoomChange={onZoomChange} /></div>
+    {highlight && <div style={{ pointerEvents: 'auto' }}><HighlightGroup {...highlight} /></div>}
+  </div>
+);
+
+const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl, pinchingRef, onAddStroke, onEraseAt, onPan }) => {
   const holderRef = useRef(null);
   const canvasRef = useRef(null);
   const [near, setNear] = useState(pageNumber === 1);
   const [ratio, setRatio] = useState(initialRatio);
+  const [draft, setDraft] = useState(null);   // stroke being drawn: [[x, y], ...]
+  const gestureRef = useRef(null);             // { id, kind: 'draw' | 'erase' | 'pan', ... }
+
+  const pointOf = (event) => toPagePoint(event.clientX, event.clientY, holderRef.current?.getBoundingClientRect());
+
+  const handleDown = (event) => {
+    if (!hl.on || gestureRef.current || pinchingRef.current) return;
+    const isTouch = event.pointerType === 'touch';
+    try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* may already be captured */ }
+    if (isTouch && !hl.finger) {
+      // Pen-only mode: a finger scrolls. Touch-action is none here (so the pen is not hijacked), so pan by hand.
+      gestureRef.current = { id: event.pointerId, kind: 'pan', x: event.clientX, y: event.clientY };
+      return;
+    }
+    const point = pointOf(event);
+    if (!point) return;
+    if (hl.tool === 'erase') {
+      gestureRef.current = { id: event.pointerId, kind: 'erase' };
+      onEraseAt(pageNumber, point[0], point[1]);
+    } else {
+      gestureRef.current = { id: event.pointerId, kind: 'draw', points: [point] };
+      setDraft([point]);
+    }
+  };
+
+  const handleMove = (event) => {
+    const g = gestureRef.current;
+    if (!g || g.id !== event.pointerId) return;
+    if (pinchingRef.current) { gestureRef.current = null; setDraft(null); return; } // a second finger turned it into a pinch
+    if (g.kind === 'pan') {
+      onPan(event.clientX - g.x, event.clientY - g.y);
+      g.x = event.clientX;
+      g.y = event.clientY;
+      return;
+    }
+    const point = pointOf(event);
+    if (!point) return;
+    if (g.kind === 'erase') { onEraseAt(pageNumber, point[0], point[1]); return; }
+    const next = appendPoint(g.points, point);
+    if (next !== g.points) { g.points = next; setDraft(next); }
+  };
+
+  const handleUp = (event) => {
+    const g = gestureRef.current;
+    if (!g || g.id !== event.pointerId) return;
+    gestureRef.current = null;
+    if (g.kind === 'draw' && g.points?.length) {
+      onAddStroke(pageNumber, { id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, color: hl.color, w: HIGHLIGHT_WIDTH, pts: g.points });
+    }
+    setDraft(null);
+  };
 
   useEffect(() => {
     if (near || !holderRef.current || !scrollRoot) return undefined;
@@ -139,6 +241,23 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot }) => {
       }}
     >
       <canvas ref={canvasRef} style={{ width: '100%', height: '100%', display: 'block', borderRadius: 4 }} />
+      {(hl.on || strokes?.length > 0 || draft) && (
+        <svg
+          viewBox={`0 0 1 ${ratio}`}
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          onPointerDown={handleDown}
+          onPointerMove={handleMove}
+          onPointerUp={handleUp}
+          onPointerCancel={handleUp}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', borderRadius: 4, mixBlendMode: 'multiply', pointerEvents: hl.on ? 'auto' : 'none', touchAction: hl.on ? 'none' : 'auto', cursor: hl.on ? (hl.tool === 'erase' ? 'cell' : 'crosshair') : 'default' }}
+        >
+          {(strokes || []).map((stroke) => (
+            <path key={stroke.id} d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />
+          ))}
+          {draft && <path d={pointsToPath(draft)} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
+        </svg>
+      )}
       <span style={{ position: 'absolute', right: 8, bottom: 6, fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8' }}>
         {pageNumber}
       </span>
@@ -152,7 +271,7 @@ const centered = (style, children) => (
   </div>
 );
 
-const PdfViewer = ({ src, loading, fallback, style }) => {
+const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   const [scrollEl, setScrollEl] = useState(null);
   const scrollRef = useRef(null);
   const handleScrollRef = useCallback((node) => {
@@ -168,6 +287,14 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const pageSpacerRef = useRef(null);
   const pinchRef = useRef(null);
   const pinchAnimationFrameRef = useRef(0);
+
+  // Highlights: { [page]: strokes }, remembered per device under `storageKey` (the Drive file id).
+  const [hl, setHl] = useState({ on: false, tool: 'draw', color: HIGHLIGHT_COLORS[0].value, finger: false });
+  const [highlights, setHighlights] = useState({});
+  const [undoStack, setUndoStack] = useState([]); // [{ page, id }]
+  const highlightsLoadedRef = useRef('');
+  const saveTimerRef = useRef(0);
+  const highlightsRef = useRef({});
   const schedulePinchFrameRef = useRef(null);
   const lastPinchRenderAtRef = useRef(0);
   // Keyed by src so a new document never briefly shows the previous one.
@@ -176,6 +303,66 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   const failed = opened?.src === src && opened.failed;
 
   useEffect(() => () => cancelAnimationFrame(pinchAnimationFrameRef.current), []);
+
+  useEffect(() => {
+    if (!storageKey) return undefined;
+    let cancelled = false;
+    highlightsLoadedRef.current = '';
+    loadHighlights(storageKey).then((pages) => {
+      if (cancelled) return;
+      highlightsRef.current = pages;
+      setHighlights(pages);
+      setUndoStack([]);
+      highlightsLoadedRef.current = storageKey;
+    });
+    return () => {
+      cancelled = true;
+      window.clearTimeout(saveTimerRef.current);
+      // Flush a pending save for the document being left.
+      if (highlightsLoadedRef.current === storageKey) saveHighlights(storageKey, highlightsRef.current);
+    };
+  }, [storageKey]);
+
+  const commitHighlights = useCallback((next) => {
+    highlightsRef.current = next;
+    setHighlights(next);
+    if (!storageKey || highlightsLoadedRef.current !== storageKey) return;
+    window.clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = window.setTimeout(() => saveHighlights(storageKey, highlightsRef.current), 400);
+  }, [storageKey]);
+
+  const addHighlight = useCallback((page, stroke) => {
+    commitHighlights(addStroke(highlightsRef.current, page, stroke));
+    setUndoStack((stack) => [...stack.slice(-49), { page, id: stroke.id }]);
+  }, [commitHighlights]);
+
+  const eraseHighlights = useCallback((page, x, y) => {
+    const list = highlightsRef.current[page] || [];
+    const kept = eraseAt(list, x, y, ERASE_RADIUS);
+    if (kept === list) return;
+    const next = { ...highlightsRef.current };
+    if (kept.length > 0) next[page] = kept; else delete next[page];
+    commitHighlights(next);
+  }, [commitHighlights]);
+
+  const undoHighlight = useCallback(() => {
+    setUndoStack((stack) => {
+      const last = stack[stack.length - 1];
+      if (!last) return stack;
+      commitHighlights(removeStroke(highlightsRef.current, last.page, last.id));
+      return stack.slice(0, -1);
+    });
+  }, [commitHighlights]);
+
+  const panBy = useCallback((dx, dy) => {
+    const root = scrollRef.current;
+    if (!root) return;
+    root.scrollLeft -= dx;
+    root.scrollTop -= dy;
+  }, []);
+
+  const clearHighlights = useCallback(() => { commitHighlights({}); setUndoStack([]); }, [commitHighlights]);
+
 
   useLayoutEffect(() => {
     zoomRef.current = zoom;
@@ -389,7 +576,7 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
   if (!src || failed) {
     if (fallback) return (
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
-        <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
+        <PdfToolbar zoom={zoom} onZoomChange={changeZoom} highlight={null} />
         <div
           ref={handleScrollRef}
           style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
@@ -413,7 +600,11 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
-        <ZoomControls zoom={zoom} onZoomChange={changeZoom} />
+        <PdfToolbar
+          zoom={zoom}
+          onZoomChange={changeZoom}
+          highlight={storageKey && doc ? { hl, setHl, canUndo: undoStack.length > 0, onUndo: undoHighlight, hasAny: countHighlights(highlights) > 0, onClearAll: clearHighlights } : null}
+        />
       <div
         ref={handleScrollRef}
         style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
@@ -433,6 +624,12 @@ const PdfViewer = ({ src, loading, fallback, style }) => {
                   width={pageWidth}
                   initialRatio={doc.ratio}
                   scrollRoot={scrollEl}
+                  strokes={highlights[i + 1]}
+                  hl={hl}
+                  pinchingRef={pinchRef}
+                  onAddStroke={addHighlight}
+                  onEraseAt={eraseHighlights}
+                  onPan={panBy}
                 />
               ))}
             </div>

@@ -175,7 +175,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         <PdfViewer
           src={worksheet.src}
           loading={worksheet.loading}
-          fallback={worksheet.fallback}
+          fallback={worksheet.fallback} storageKey={worksheet.fileId}
           style={{ width: '100%', height: '100%', pointerEvents: dragging ? 'none' : 'auto' }}
         />
       ) : (

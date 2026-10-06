@@ -60,5 +60,7 @@ export function useWorksheetPdf(rawUrl) {
     src: done ? resolved.src : '',
     loading: Boolean(rawUrl && fileId && !done),
     fallback: toDrivePreviewUrl(rawUrl),
+    // Stable per-document key (e.g. for PDF highlights); '' when the link is not a Drive file.
+    fileId: fileId || '',
   };
 }

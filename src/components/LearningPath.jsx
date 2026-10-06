@@ -652,7 +652,7 @@ const LearningPath = ({ profile }) => {
             {isTablet ? (
               <div style={{ flex: 1, minHeight: 0, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }}>
                 <div style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', borderRight: '1px solid #e2e8f0' }}>
-                  <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
+                  <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
                 </div>
                 <section aria-label="Personal working notes" style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px', borderBottom: '1px solid #e2e8f0', background: '#fff', flexShrink: 0 }}>
@@ -668,7 +668,7 @@ const LearningPath = ({ profile }) => {
                 </section>
               </div>
             ) : (
-              <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} style={{ flex: 1, minHeight: 0 }} />
+              <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minHeight: 0 }} />
             )}
           </div>
         </div>,
