@@ -38,6 +38,7 @@ import PendingReviewPanel from './PendingReviewPanel';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
+import BookAnswersModal from './curriculum/BookAnswersModal';
 import HscTypePractice from './hsc/HscTypePractice';
 import { seedChapterQuestions } from '../services/chapterSeeder';
 import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
@@ -222,6 +223,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
   const [selectedGlobalSearch, setSelectedGlobalSearch] = useState(initialSearchId);
   useEffect(() => { if (initialSearchId) onInitialSearchConsumed?.(); }, [initialSearchId, onInitialSearchConsumed]);
   const [previewLesson, setPreviewLesson] = useState(null);
+  const [bookAnswersTopic, setBookAnswersTopic] = useState(null); // topic whose textbook answers are open
   const [questionCounts, setQuestionCounts] = useState({});
   // Live "questions changed" signal. Any add/delete path bumps
   // sync_meta/questions.version; this realtime listener mirrors that version so
@@ -2951,6 +2953,9 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
             <h2 style={{ margin: 0, fontSize: '1.7rem', fontWeight: 900, color: '#1e1b4b' }}>{ch.title}</h2>
             <p style={{ margin: '4px 0 0', color: '#64748b', fontWeight: 600 }}>{topics.length} {topics.length === 1 ? 'topic' : 'topics'}</p>
           </div>
+          {bookAnswersTopic && (
+            <BookAnswersModal topic={bookAnswersTopic} onClose={() => setBookAnswersTopic(null)} />
+          )}
           {previewLesson && (
             <LessonPlayer lesson={previewLesson} onClose={() => setPreviewLesson(null)} />
           )}
@@ -2983,6 +2988,14 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                         <ChevronRight size={18} color="#94a3b8" />
                       </div>
                       <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setBookAnswersTopic(t)}
+                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '9px', border: 'none', borderTop: '1px solid #e0f2fe', background: '#f0f9ff', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 800, color: '#0369a1', letterSpacing: '0.02em', width: '100%' }}
+                    >
+                      <BookOpen size={14} />
+                      Book answers
                     </button>
                     {hasLesson(t.id) && (
                       <button
