@@ -45,6 +45,15 @@ const normalizeCurriculumTopics = (chapters) => (Array.isArray(chapters) ? chapt
   };
 });
 
+// Touch device whose screen is tablet-sized (iPhones are under 600pt on the short side).
+const isTabletDevice = () => {
+  if (typeof window === 'undefined') return false;
+  const touch = navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches;
+  const short = Math.min(window.screen?.width || 0, window.screen?.height || 0);
+  const long = Math.max(window.screen?.width || 0, window.screen?.height || 0);
+  return touch && short >= 600 && long <= 1600;
+};
+
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
   const [activeSubject, setActiveSubject] = useState('Maths');
@@ -63,21 +72,20 @@ const LearningPath = ({ profile }) => {
   const curriculumCanvasRef = useRef(null);
   const curriculumNoteLoadedRef = useRef(false);
   const curriculumNoteTimerRef = useRef(0);
-  const [isTablet, setIsTablet] = useState(() => (
-    typeof window !== 'undefined' && window.innerWidth >= 768 && window.innerWidth <= 1600
-      && (navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches)
-  ));
+  // Notes sit beside the worksheet on tablets. Decided by the device's screen, not the
+  // current window width: on iPad the window narrows below 768px in portrait (iPad mini),
+  // Split View / Slide Over / Stage Manager, or while the page is pinch-zoomed, which made
+  // the notes appear on some opens and not others.
+  const [isTablet] = useState(isTabletDevice);
+  const [stackNotes, setStackNotes] = useState(() => typeof window !== 'undefined' && window.innerWidth < 700);
   const [curriculumNoteReady, setCurriculumNoteReady] = useState(false);
 
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
 
   useEffect(() => {
-    const updateTablet = () => setIsTablet(
-      window.innerWidth >= 768 && window.innerWidth <= 1600
-      && (navigator.maxTouchPoints > 0 || window.matchMedia('(pointer: coarse)').matches),
-    );
-    window.addEventListener('resize', updateTablet);
-    return () => window.removeEventListener('resize', updateTablet);
+    const updateLayout = () => setStackNotes(window.innerWidth < 700);
+    window.addEventListener('resize', updateLayout);
+    return () => window.removeEventListener('resize', updateLayout);
   }, []);
 
   useEffect(() => {
@@ -762,8 +770,8 @@ const LearningPath = ({ profile }) => {
               </button>
             </div>
             {isTablet ? (
-              <div style={{ flex: 1, minHeight: 0, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }}>
-                <div style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', borderRight: '1px solid #e2e8f0' }}>
+              <div style={{ flex: 1, minHeight: 0, display: 'grid', ...(stackNotes ? { gridTemplateRows: 'minmax(0, 1fr) minmax(0, 1fr)' } : { gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }) }}>
+                <div style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', ...(stackNotes ? { borderBottom: '1px solid #e2e8f0' } : { borderRight: '1px solid #e2e8f0' }) }}>
                   <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
                 </div>
                 <section aria-label="Personal working notes" style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
