@@ -1,5 +1,7 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
-import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
+import StickerLayer from './StickerLayer';
+import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
 const CANVAS_VERSION = 'v9.11-2finger-page';
@@ -269,6 +271,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [pages, setPages] = useState([[]]);
   const initialIsGraph = isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch';
   const [pageTypes, setPageTypes] = useState([initialIsGraph]);
+  // Stickers (e.g. an axes grid) per page, parallel to `pages`; edited in place, not part of the stroke history.
+  const [stickerPages, setStickerPages] = useState([[]]);
+  const [editingStickerId, setEditingStickerId] = useState(null);
 
   const [activeTool, setActiveTool] = useState('pen');
   const [eraserMode, setEraserMode] = useState('area');
@@ -282,7 +287,35 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   // callback identity each parent render doesn't re-fire the effect.
   const onInkChangeRef = useRef(onInkChange);
   onInkChangeRef.current = onInkChange;
-  useEffect(() => { onInkChangeRef.current?.(); }, [strokes, pages]);
+  useEffect(() => { onInkChangeRef.current?.(); }, [strokes, pages, stickerPages]);
+  useEffect(() => { setEditingStickerId(null); }, [currentPage]);
+  const pageStickers = stickerPages[currentPage] || [];
+
+  const updateSticker = (id, next) => setStickerPages((prev) => {
+    const all = prev.slice();
+    all[currentPage] = (all[currentPage] || []).map((st) => (st.id === id ? next : st));
+    return all;
+  });
+  const deleteSticker = (id) => {
+    setStickerPages((prev) => {
+      const all = prev.slice();
+      all[currentPage] = (all[currentPage] || []).filter((st) => st.id !== id);
+      return all;
+    });
+    setEditingStickerId(null);
+  };
+  const addGridSticker = () => {
+    const canvas = displayCanvasRef.current;
+    if (!canvas || isSubmitted || pageStickers.length >= STICKER_MAX_PER_PAGE) return;
+    const sticker = newGridSticker(`g${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`, canvas.clientWidth, canvas.clientHeight);
+    setStickerPages((prev) => {
+      const all = prev.slice();
+      all[currentPage] = [...(all[currentPage] || []), sticker];
+      return all;
+    });
+    setEditingStickerId(sticker.id);
+  };
+
   isSubmittedRef.current = isSubmitted;
   activeToolRef.current = activeTool;
   eraserModeRef.current = eraserMode;
@@ -1097,7 +1130,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       }
     };
 
-    const getCompositeDataURL = (pageStrokes) => {
+    const getCompositeDataURL = (pageStrokes, stickers = []) => {
       const displayCanvas = displayCanvasRef.current;
       if (!displayCanvas) return null;
       const tempCanvas = document.createElement('canvas');
@@ -1108,6 +1141,13 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       ctx.fillStyle = '#fff';
       ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
       drawBackground(ctx, dpr);
+      // Stickers sit under the ink, same as on screen.
+      const cssW = tempCanvas.width / dpr;
+      const cssH = tempCanvas.height / dpr;
+      stickers.forEach((st) => {
+        const { left, top, side } = stickerBox(st, cssW, cssH);
+        drawGridSticker(ctx, left * dpr, top * dpr, side * dpr);
+      });
       (pageStrokes || []).forEach(s => replayStroke(ctx, s, dpr));
       return tempCanvas.toDataURL('image/png');
     };
@@ -1143,26 +1183,28 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       exportImage: ({ force = false } = {}) => {
         const pageStrokes = getCurrentPageStrokes();
         return Promise.resolve(
-          (force || pageHasInk(pageStrokes)) ? getCompositeDataURL(pageStrokes) : null
+          (force || pageHasInk(pageStrokes)) ? getCompositeDataURL(pageStrokes, stickerPages[currentPage] || []) : null
         );
       },
       exportPageImages: async ({ force = false } = {}) => {
         const all = [...pages];
         all[currentPage] = getCurrentPageStrokes();
         return all
-          .filter((ps, index) => force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps))
-          .map(ps => getCompositeDataURL(ps || []));
+          .map((ps, index) => ({ ps, index }))
+          .filter(({ ps, index }) => (force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps)))
+          .map(({ ps, index }) => getCompositeDataURL(ps || [], stickerPages[index] || []));
       },
       getPagesData: () => {
         const all = [...pages];
         all[currentPage] = getCurrentPageStrokes();
-        return { pages: all, pageTypes: [...pageTypes], currentPage };
+        return { pages: all, pageTypes: [...pageTypes], currentPage, stickers: all.map((_, i) => stickerPages[i] || []) };
       },
       loadPagesData: (data) => {
         if (!Array.isArray(data?.pages) || data.pages.length === 0) return;
         const nextPages = data.pages.map((p) => (Array.isArray(p) ? p : []));
         const idx = Math.min(Math.max(0, Number(data.currentPage) || 0), nextPages.length - 1);
         setPages(nextPages);
+        setStickerPages(cleanStickerPages(data.stickers, nextPages.length));
         setPageTypes(
           Array.isArray(data.pageTypes) && data.pageTypes.length === nextPages.length
             ? data.pageTypes
@@ -1176,6 +1218,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       clear: () => {
         setStrokes([]);
         setPages([[]]); setCurrentPage(0);
+        setStickerPages([[]]);
         setPageTypes([initialIsGraph]);
         setUndoStack([]);
       },
@@ -1188,7 +1231,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         });
       },
     };
-  }, [pages, currentPage, isGraph, pageTypes, initialIsGraph]);
+  }, [pages, currentPage, isGraph, pageTypes, initialIsGraph, stickerPages]);
 
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
@@ -1268,6 +1311,16 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ChevronRight size={15} />
             </button>
+            <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />
+            <button
+              onClick={addGridSticker}
+              disabled={pageStickers.length >= STICKER_MAX_PER_PAGE}
+              title="Add an axes grid sticker — drag to move, drag the corner to resize"
+              aria-label="Add grid sticker"
+              style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', background: '#f1f5f9', color: '#64748b', fontWeight: 800, fontSize: '0.72rem' }}
+            >
+              <Grid3x3 size={15} /> Grid
+            </button>
             <div style={{ flex: 1 }} />
             {confirmClear ? (
               <>
@@ -1295,6 +1348,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: '#94a3b8', transform: 'translateX(-50%)', pointerEvents: 'none' }} />
           </>
         )}
+        <StickerLayer part="base" stickers={pageStickers} />
         <canvas
           ref={bgCanvasRef}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
@@ -1307,6 +1361,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
           ref={displayCanvasRef}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
         />
+        {!isSubmitted && (
+          <StickerLayer
+            part="editor"
+            stickers={pageStickers}
+            editingId={editingStickerId}
+            onUpdate={updateSticker}
+            onEdit={setEditingStickerId}
+            onDone={() => setEditingStickerId(null)}
+            onDelete={deleteSticker}
+          />
+        )}
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
             <div style={{ background: 'white', padding: '10px 20px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', fontWeight: 800, color: '#6366f1' }}>Submission Locked</div>

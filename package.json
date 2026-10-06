@@ -29,6 +29,7 @@
     "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability",
     "test:report-images": "node scripts/testReportImages.mjs",
     "test:pdf-highlights": "node scripts/testPdfHighlights.mjs",
+    "test:canvas-stickers": "node scripts/testCanvasStickers.mjs",
     "test:homework": "node scripts/testHomework.mjs && node scripts/testHomeworkMarking.mjs && node scripts/testHomeworkRedo.mjs && node scripts/testAnswerKeyCache.mjs && node scripts/testHomeworkRetention.mjs && node scripts/testWorksheetProxy.mjs",
     "test:lesson-topics": "node scripts/testLessonTopics.mjs",
     "test:sprint": "node scripts/testSprintQuestions.mjs && node scripts/testSprintSettlement.mjs",
