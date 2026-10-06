@@ -155,15 +155,31 @@ export async function fetchPendingSubmissions() {
 
 // Assigned sessions still awaiting completion. Homework can be represented by
 // topic selections on older sessions even when the free-text field is empty.
-export async function fetchHomeworkAssignments() {
-  const snap = await getDocs(collection(db, 'sessions'));
+// Only the last ASSIGNMENT_WINDOW_DAYS of sessions are read (a range query on
+// `date`), and the result is reused for ASSIGNMENT_CACHE_MS, so reopening the
+// dashboard does not re-read it. The old version read every session ever.
+const ASSIGNMENT_WINDOW_DAYS = 56;
+const ASSIGNMENT_CACHE_MS = 10 * 60 * 1000;
+let assignmentsCache = null; // { at, list }
+
+const dateKeyDaysAgo = (days) => {
+  const d = new Date(Date.now() - days * 86400000);
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+};
+
+export async function fetchHomeworkAssignments({ force = false } = {}) {
+  if (!force && assignmentsCache && Date.now() - assignmentsCache.at < ASSIGNMENT_CACHE_MS) {
+    return assignmentsCache.list;
+  }
+  const snap = await getDocs(query(collection(db, 'sessions'), where('date', '>=', dateKeyDaysAgo(ASSIGNMENT_WINDOW_DAYS))));
   const sessions = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
   const assignments = sessions.filter((session) => (
     Boolean(String(session.homework || '').trim())
     || (Array.isArray(session.learnedTopics) && session.learnedTopics.length > 0)
   ));
 
-  return assignments
+  const list = assignments
     .filter((assignment) => (
       assignment.homeworkStatus !== 'checked'
       && assignment.isHomeworkCompleted !== true
@@ -179,6 +195,8 @@ export async function fetchHomeworkAssignments() {
       };
     })
     .sort((a, b) => (a.homeworkDueDate || a.date || '').localeCompare(b.homeworkDueDate || b.date || ''));
+  assignmentsCache = { at: Date.now(), list };
+  return list;
 }
 
 // `grade` (optional, from the marking panel): { score, total, marks, comment }.
@@ -205,6 +223,7 @@ export async function markHomeworkChecked(sessionId, grade = null, notify = null
     ...gradeFields,
   });
   await batch.commit();
+  assignmentsCache = null;
   // Tell the student it is back. Push + in-app only (no email), and never blocks or fails the check.
   if (notify?.studentId) {
     notifyStudentHomeworkChecked({ studentId: notify.studentId, sessionId, topics: notify.topics || [], grade })
