@@ -4027,9 +4027,16 @@
         {
           "id": "manly2022-y7-frac-q3i",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(\\frac25+\\frac37\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\\\(\\\\frac{5}{12}\\\\)",
+            "\\\\(\\\\frac{29}{35}\\\\)",
+            "\\\\(\\\\frac{6}{35}\\\\)",
+            "\\\\(\\\\frac{14}{15}\\\\)"
+          ],
           "answer": 1,
+          "hint": "Find a common denominator before adding the numerators.",
           "steps": [
             {
               "explain": "Find the lowest common denominator (LCD) for 5 and 7, which is 35.",
@@ -4044,26 +4051,21 @@
               "work": "\\(\\frac{14 + 15}{35} = \\frac{29}{35}\\)"
             }
           ],
-          "meta": {
-            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
-            "school": "Manly Selective Campus",
-            "year": 2022,
-            "page": 4,
-            "variant": false
-          },
-          "hint": "Find a common denominator before adding the numerators.",
+          "xp": 1,
           "keyPoints": [
             {
               "text": "simplest form",
               "note": "A common denominator lets you combine the fractional parts."
             }
           ],
-          "options": [
-            "\\\\(\\\\frac{5}{12}\\\\)",
-            "\\\\(\\\\frac{29}{35}\\\\)",
-            "\\\\(\\\\frac{6}{35}\\\\)",
-            "\\\\(\\\\frac{14}{15}\\\\)"
-          ]
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false,
+            "origin": "teacher"
+          }
         },
         {
           "id": "manly2022-y7-frac-q3i-var",
