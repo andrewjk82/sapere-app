@@ -3235,7 +3235,7 @@
               "work": "\\(\\boxed{3.143}\\)"
             }
           ],
-          "timeLimit": 75,
+          "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
