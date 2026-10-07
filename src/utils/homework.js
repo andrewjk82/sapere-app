@@ -1,7 +1,11 @@
 // Pure homework helpers — no Firebase imports, so scripts/testHomework.mjs can run them in Node.
 import { isWrongMark } from './homeworkRedo.js';
 
-export const MAX_HOMEWORK_PAGES = 20;
+export const MAX_HOMEWORK_PAGES = 40;
+// A long homework is uploaded in several commits so no single one gets near
+// Firestore's 10 MiB commit limit or its per-request rule-access-call limit.
+export const UPLOAD_BATCH_MAX_PAGES = 8;
+export const UPLOAD_BATCH_MAX_BYTES = 5 * 1024 * 1024;
 export const HOMEWORK_RETENTION_DAYS = 3;
 // Lessons older than this with homework never started don't clutter the student's list.
 export const HOMEWORK_ACTIVE_WINDOW_DAYS = 14;
@@ -133,3 +137,27 @@ export const isSafeImageDataUrl = (value) => typeof value === 'string' && SAFE_I
 
 export const purgeAfterDate =(from = new Date(), days = HOMEWORK_RETENTION_DAYS) =>
   new Date(from.getTime() + days * DAY_MS).toISOString().slice(0, 10);
+
+// Splits a submission into commits. `pageBytes[i]` = size of page i; `staleIndexes` = page
+// docs left over from a longer earlier submission that must be deleted. Returns
+// [{ pages: [i…], deletes: [i…] }, …] in upload order. The LAST batch is the one that
+// flips the submission to complete, so small homework stays one atomic commit. Every
+// batch holds at most maxPages page operations (writes + deletes together).
+export const planUploadBatches = (pageBytes, staleIndexes = [], { maxPages = UPLOAD_BATCH_MAX_PAGES, maxBytes = UPLOAD_BATCH_MAX_BYTES } = {}) => {
+  const batches = [];
+  let current = { pages: [], deletes: [] };
+  let bytes = 0;
+  pageBytes.forEach((size, index) => {
+    const full = current.pages.length >= maxPages || (current.pages.length > 0 && bytes + size > maxBytes);
+    if (full) { batches.push(current); current = { pages: [], deletes: [] }; bytes = 0; }
+    current.pages.push(index);
+    bytes += size;
+  });
+  // Leftover deletes fill the last batch up to the op limit; the rest go in earlier delete-only batches.
+  const pending = [...staleIndexes];
+  const room = Math.max(0, maxPages - current.pages.length);
+  current.deletes = pending.splice(0, room);
+  const deleteOnly = [];
+  while (pending.length) deleteOnly.push({ pages: [], deletes: pending.splice(0, maxPages) });
+  return [...batches, ...deleteOnly, current];
+};

@@ -16,6 +16,8 @@ import {
   dataUrlBytes,
   purgeAfterDate,
   isSafeImageDataUrl,
+  planUploadBatches,
+  UPLOAD_BATCH_MAX_PAGES,
 } from '../src/utils/homework.js';
 
 let passed = 0;
@@ -130,8 +132,31 @@ test('isSafeImageDataUrl only accepts inline raster data URLs', () => {
   assert.equal(isSafeImageDataUrl(null), false);
 });
 
+test('planUploadBatches: short homework is one atomic batch', () => {
+  const plan = planUploadBatches([200e3, 200e3, 200e3]);
+  assert.deepEqual(plan, [{ pages: [0, 1, 2], deletes: [] }]);
+});
+
+test('planUploadBatches: long homework splits by page count and bytes; every page appears once, in order', () => {
+  const bytes = Array(25).fill(300e3);
+  const plan = planUploadBatches(bytes);
+  assert.ok(plan.length >= 4);
+  assert.deepEqual(plan.flatMap((b) => b.pages), [...Array(25).keys()]);
+  plan.forEach((b) => assert.ok(b.pages.length + b.deletes.length <= UPLOAD_BATCH_MAX_PAGES));
+  const heavy = planUploadBatches(Array(10).fill(900e3));
+  heavy.forEach((b) => assert.ok(b.pages.reduce((n, i) => n + 900e3, 0) <= 5 * 1024 * 1024));
+});
+
+test('planUploadBatches: stale pages are deleted, the last batch is always the final one', () => {
+  const plan = planUploadBatches([100e3, 100e3], [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
+  assert.deepEqual(plan.flatMap((b) => b.deletes).sort((a, b) => a - b), [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
+  assert.deepEqual(plan[plan.length - 1].pages, [0, 1]);
+  plan.forEach((b) => assert.ok(b.pages.length + b.deletes.length <= UPLOAD_BATCH_MAX_PAGES));
+  assert.equal(planUploadBatches([1], []).length, 1);
+});
+
 test('page limit constant', () => {
-  assert.equal(MAX_HOMEWORK_PAGES, 20);
+  assert.equal(MAX_HOMEWORK_PAGES, 40);
 });
 
 test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries the mark', () => {

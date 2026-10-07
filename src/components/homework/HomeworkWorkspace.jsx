@@ -44,6 +44,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const [dragging, setDragging] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(null); // { done, total } while a long homework uploads
   const [error, setError] = useState('');
 
   useEffect(() => {
@@ -194,6 +195,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         studentName: studentDisplayName(profile, user),
         session,
         pageRecords,
+        onProgress: setUploadProgress,
       });
       await saveHomeworkLocal(user.uid, session.id, { submittedImages: originals, submittedPages });
       onSubmitted?.();
@@ -202,6 +204,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     } finally {
       exportingRef.current = false;
       setSubmitting(false);
+      setUploadProgress(null);
     }
   };
 
@@ -331,7 +334,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         >
           {/* `spin` keyframes are defined globally in src/index.css; there is no `.spin` class. */}
           {submitting ? <Loader2 size={16} style={{ animation: 'spin 0.8s linear infinite' }} /> : <Send size={16} />}
-          {submitting ? 'Submitting…' : status === 'submitted' ? 'Resubmit' : 'Submit'}
+          {submitting ? (uploadProgress && uploadProgress.total > 1 ? `Uploading ${Math.min(uploadProgress.done + 1, uploadProgress.total)}/${uploadProgress.total}…` : 'Submitting…') : status === 'submitted' ? 'Resubmit' : 'Submit'}
         </button>
       </div>
 

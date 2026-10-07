@@ -6,12 +6,12 @@ import { db, ADMIN_UID, ADMIN_EMAIL } from '../firebase/config';
 import { resizeDataUrlImage } from '../utils/imageResize';
 import { createAnswerKeyCache, idbAnswerKeyAdapter } from '../utils/answerKeyCache';
 import {
-  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForProfile, buildTopicPdfMap,
+  MAX_HOMEWORK_PAGES, dataUrlBytes, purgeAfterDate, curriculumDocIdsForProfile, buildTopicPdfMap, planUploadBatches,
 } from '../utils/homework';
 
 const SUBMISSIONS = 'homework_submissions';
 const MAX_PAGE_BYTES = 900 * 1024;
-const MAX_BATCH_BYTES = 8 * 1024 * 1024; // Firestore commit limit is 10MiB
+const MAX_TOTAL_BYTES = 24 * 1024 * 1024; // all pages together; they are uploaded in several commits
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -51,7 +51,7 @@ const notifyTeacherHomeworkSubmitted = async ({ uid, studentName, topics, pageCo
   if (!response.ok) console.warn('[homework] send-notif returned', response.status);
 };
 
-export async function submitHomework({ uid, studentName, session, pageRecords, pageImages }) {
+export async function submitHomework({ uid, studentName, session, pageRecords, pageImages, onProgress }) {
   const records = (pageRecords || (pageImages || []).map((image) => ({ image })))
     .filter((record) => record?.image);
   if (records.length === 0) throw new Error('empty');
@@ -60,11 +60,11 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
   const totalBytes = (list) => list.reduce((sum, img) => sum + dataUrlBytes(img), 0);
   let originals = [];
   for (const record of records) originals.push(await toOriginal(record.image));
-  if (totalBytes(originals) > MAX_BATCH_BYTES) {
-    // A long homework: re-encode every page a little smaller (still readable) so it fits one commit.
+  if (totalBytes(originals) > MAX_TOTAL_BYTES) {
+    // A very long homework: re-encode every page a little smaller (still readable).
     originals = [];
     for (const record of records) originals.push(await toOriginal(record.image, { squeeze: true }));
-    if (totalBytes(originals) > MAX_BATCH_BYTES) throw new Error('too-large');
+    if (totalBytes(originals) > MAX_TOTAL_BYTES) throw new Error('too-large');
   }
   const thumbnails = await Promise.all(records.map((record) => toThumbnail(record.image)));
   const pageTopics = records.map(({ topicId, topicLabel }) => ({
@@ -81,49 +81,71 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
     .map((t) => ({ id: t?.id || '', label: t?.label || t?.title || t?.id || '' }))
     .filter((t) => t.id);
 
-  // Pages first, submission doc + session flag in the same batch: the teacher's
-  // list only ever sees complete submissions.
-  const commit = async () => {
+  // A short homework is ONE batch: pages + submission doc + session flag, so the
+  // teacher's list only ever sees complete submissions. A long one is uploaded in
+  // several smaller commits; the earlier ones write the submission doc with
+  // `uploading: true` (the teacher's list skips it) and only the last commit marks
+  // it complete and flags the session. A failed upload therefore never shows up
+  // half-done to the teacher — the student just submits again.
+  const stale = [];
+  for (let i = originals.length; i < prevCount; i += 1) stale.push(i);
+  const plan = planUploadBatches(originals.map(dataUrlBytes), stale);
+
+  const commitBatch = async ({ pages, deletes }, isLast) => {
     const batch = writeBatch(db);
-    originals.forEach((image, index) => {
+    pages.forEach((index) => {
       batch.set(doc(db, SUBMISSIONS, session.id, 'pages', String(index)), {
-        image,
+        image: originals[index],
         index,
         studentId: uid,
         ...pageTopics[index],
       });
     });
-    for (let i = originals.length; i < prevCount; i += 1) {
-      batch.delete(doc(db, SUBMISSIONS, session.id, 'pages', String(i)));
-    }
-    batch.set(subRef, {
+    deletes.forEach((index) => batch.delete(doc(db, SUBMISSIONS, session.id, 'pages', String(index))));
+    const base = {
       studentId: uid,
       studentName,
       sessionId: session.id,
       sessionDate: session.date || '',
       topics,
       status: 'submitted',
-      submittedAt: serverTimestamp(),
       checkedAt: null,
       pageCount: originals.length,
-      thumbnails,
-      pageTopics,
       originalsDeletedAt: null,
-    });
-    batch.update(doc(db, 'sessions', session.id), {
-      homeworkStatus: 'submitted',
-      homeworkSubmittedAt: serverTimestamp(),
-    });
+    };
+    if (isLast) {
+      batch.set(subRef, {
+        ...base,
+        submittedAt: serverTimestamp(),
+        thumbnails,
+        pageTopics,
+        uploading: false,
+      });
+      batch.update(doc(db, 'sessions', session.id), {
+        homeworkStatus: 'submitted',
+        homeworkSubmittedAt: serverTimestamp(),
+      });
+    } else {
+      batch.set(subRef, { ...base, uploading: true });
+    }
     await batch.commit();
   };
 
-  try {
-    await commit();
-  } catch (err) {
-    if (err?.code !== 'resource-exhausted') throw err;
-    await sleep(1500);
-    await commit();
+  const commitWithRetry = async (part, isLast) => {
+    try {
+      await commitBatch(part, isLast);
+    } catch (err) {
+      if (err?.code !== 'resource-exhausted') throw err;
+      await sleep(1500);
+      await commitBatch(part, isLast);
+    }
+  };
+
+  for (let i = 0; i < plan.length; i += 1) {
+    onProgress?.({ done: i, total: plan.length });
+    await commitWithRetry(plan[i], i === plan.length - 1);
   }
+  onProgress?.({ done: plan.length, total: plan.length });
 
   notifyTeacherHomeworkSubmitted({ uid, studentName, topics, pageCount: originals.length })
     .catch((err) => console.warn('[homework] notify failed (non-fatal):', err?.message || err));
@@ -158,6 +180,7 @@ export async function fetchPendingSubmissions() {
   const snap = await getDocs(query(collection(db, SUBMISSIONS), where('status', '==', 'submitted')));
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
+    .filter((item) => !item.uploading) // a long upload still in progress
     .sort((a, b) => (a.submittedAt?.toMillis?.() || 0) - (b.submittedAt?.toMillis?.() || 0));
 }
 
