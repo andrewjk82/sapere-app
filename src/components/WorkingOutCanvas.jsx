@@ -227,7 +227,7 @@ export const analyzeInkPages = (pagesStrokes = []) => {
   };
 };
 
-const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange, onInkChange }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange, onInkChange, hideTitle = false }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
   const displayCanvasRef = useRef(null); // top layer: tip + pointer events
@@ -1276,10 +1276,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         <div style={{ display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
           {/* Row 1: drawing tools */}
           <div style={{ display: 'flex', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
-            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
-              <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
-            </span>
+            {hideTitle ? <span style={{ marginRight: 'auto' }} /> : (
+              <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
+                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
+              </span>
+            )}
             <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
               <MousePointer2 size={14} />
               {palmGuard ? 'Pen Only' : 'All Touch'}

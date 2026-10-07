@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { scanTopicProgress } from '../utils/topicProgressScan';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X, PenLine } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -775,15 +775,11 @@ const LearningPath = ({ profile }) => {
                   <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
                 </div>
                 <section aria-label="Personal working notes" style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px', borderBottom: '1px solid #e2e8f0', background: '#fff', flexShrink: 0 }}>
-                    <PenLine size={16} color="#7c3aed" />
-                    <span style={{ fontWeight: 800, color: '#1e1b4b' }}>My notes</span>
-                    <span style={{ marginLeft: 'auto', fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>
-                      {curriculumNoteReady ? 'Saved on this device' : 'Loading notes…'}
-                    </span>
-                  </div>
-                  <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
-                    <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} onInkChange={handleCurriculumInkChange} />
+                  <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
+                    <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={handleCurriculumInkChange} />
+                    {!curriculumNoteReady && (
+                      <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
+                    )}
                   </div>
                 </section>
               </div>
