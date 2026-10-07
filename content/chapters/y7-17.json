@@ -531,7 +531,7 @@
           ],
           "answer": "Sample answers: (a) the block shape reflected across the vertical mirror line; (b) the kite reflected across the slanted mirror line. See the completed sample diagrams in the worked solutions for both parts.",
           "hint": "Reflect every vertex across its mirror line, preserving perpendicular distance.",
-          "timeLimit": 270,
+          "timeLimit": 90,
           "xp": 2,
           "keyPoints": [
             {
