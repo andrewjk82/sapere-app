@@ -8718,15 +8718,16 @@
         {
           "id": "manly2022-y7-frac-q2",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Given the numbers 24 and 60, answer both questions.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "manly2022-y7-frac-q2a",
               "type": "short",
-              "difficulty": "medium",
               "stem": "What is the highest common factor (HCF) of \\(24\\) and \\(60\\)?",
+              "difficulty": "medium",
               "answer": "12",
+              "hint": "List the prime factors of both numbers and keep only the factors they share.",
               "steps": [
                 {
                   "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
@@ -8736,27 +8737,28 @@
                   "work": "\\(\\operatorname{HCF}(24,60)=12\\)"
                 }
               ],
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "highest common factor (HCF)",
+                  "note": "The HCF is made from prime factors shared by both numbers."
+                }
+              ],
               "meta": {
                 "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
                 "school": "Manly Selective Campus",
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              },
-              "hint": "List the prime factors of both numbers and keep only the factors they share.",
-              "keyPoints": [
-                {
-                  "text": "highest common factor (HCF)",
-                  "note": "The HCF is made from prime factors shared by both numbers."
-                }
-              ]
+              }
             },
             {
               "id": "manly2022-y7-frac-q2b",
               "type": "short",
-              "difficulty": "medium",
               "stem": "What is the lowest common multiple (LCM) of \\(24\\) and \\(60\\)?",
+              "difficulty": "medium",
               "answer": "120",
+              "hint": "Build a number that is divisible by both given numbers.",
               "steps": [
                 {
                   "explain": "Use the prime factors and take each prime with the larger power needed by either number."
@@ -8766,20 +8768,26 @@
                   "work": "\\(\\operatorname{LCM}(24,60)=120\\)"
                 }
               ],
+              "keyPoints": [
+                {
+                  "text": "lowest common multiple (LCM)",
+                  "note": "The LCM must be divisible by each of the two given numbers."
+                }
+              ],
               "meta": {
                 "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
                 "school": "Manly Selective Campus",
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              },
-              "hint": "Build a number that is divisible by both given numbers.",
-              "keyPoints": [
-                {
-                  "text": "lowest common multiple (LCM)",
-                  "note": "The LCM must be divisible by each of the two given numbers."
-                }
-              ]
+              }
+            }
+          ],
+          "hint": "Use prime factors: the HCF uses shared factors, while the LCM must be a multiple of both numbers.",
+          "keyPoints": [
+            {
+              "text": "Given the numbers 24 and 60",
+              "note": "These two measures use the same pair of numbers but different factor rules."
             }
           ],
           "meta": {
@@ -8787,15 +8795,9 @@
             "school": "Manly Selective Campus",
             "year": 2022,
             "page": 4,
-            "variant": false
-          },
-          "hint": "Use prime factors: the HCF uses shared factors, while the LCM must be a multiple of both numbers.",
-          "keyPoints": [
-            {
-              "text": "Given the numbers 24 and 60",
-              "note": "These two measures use the same pair of numbers but different factor rules."
-            }
-          ]
+            "variant": false,
+            "origin": "teacher"
+          }
         },
         {
           "id": "manly2022-y7-frac-q2-var",
