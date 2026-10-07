@@ -4859,6 +4859,7 @@
             }
           ],
           "timeLimit": 60,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "simplest form",
