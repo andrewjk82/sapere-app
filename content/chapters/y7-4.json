@@ -2931,9 +2931,16 @@
         {
           "id": "manly2022-y7-frac-q1-var",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Place these fractions in ascending order: \\(\\frac34, \\frac56, \\frac7{12}, \\frac23\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)",
+            "\\(\\frac56, \\frac34, \\frac23, \\frac7{12}\\)",
+            "\\(\\frac7{12}, \\frac34, \\frac23, \\frac56\\)",
+            "\\(\\frac34, \\frac23, \\frac7{12}, \\frac56\\)"
+          ],
           "answer": 0,
+          "hint": "Choose a common denominator, then compare the equivalent numerators.",
           "steps": [
             {
               "explain": "Use a common denominator of 12.",
@@ -2948,26 +2955,20 @@
               "work": "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)"
             }
           ],
+          "keyPoints": [
+            {
+              "text": "ascending",
+              "note": "Use equivalent fractions with the same denominator to compare their sizes."
+            }
+          ],
           "meta": {
             "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
             "school": "Manly Selective Campus",
             "year": 2022,
             "page": 4,
-            "variant": false
-          },
-          "options": [
-            "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)",
-            "\\(\\frac56, \\frac34, \\frac23, \\frac7{12}\\)",
-            "\\(\\frac7{12}, \\frac34, \\frac23, \\frac56\\)",
-            "\\(\\frac34, \\frac23, \\frac7{12}, \\frac56\\)"
-          ],
-          "hint": "Choose a common denominator, then compare the equivalent numerators.",
-          "keyPoints": [
-            {
-              "text": "\\(\\frac34, \\frac56, \\frac7{12}, \\frac23\\)",
-              "note": "Use equivalent fractions with the same denominator to compare their sizes."
-            }
-          ]
+            "variant": false,
+            "origin": "teacher"
+          }
         }
       ]
     },
