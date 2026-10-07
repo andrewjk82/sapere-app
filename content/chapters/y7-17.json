@@ -664,12 +664,12 @@
           "difficulty": "medium",
           "stem": "What is the order of rotational symmetry of the shape shown?",
           "options": [
-            "3",
             "2",
             "4",
+            "3",
             "6"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Count how many times the pattern matches itself during one complete 360° turn.",
           "keyPoints": [
             {

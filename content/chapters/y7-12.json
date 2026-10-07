@@ -1037,129 +1037,6 @@
           "xp": 2
         },
         {
-          "id": "wghs-y7-2015-t3-s2-q1b",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "Which statement matches the geometric term “Exterior angle of a triangle”?",
-          "options": [
-            "The sum of the two opposite interior angles",
-            "The total angle inside a quadrilateral",
-            "A complete turn of 360°",
-            "A mirror image across a line"
-          ],
-          "answer": 0,
-          "hint": "Recall the standard meaning or angle rule for this geometry term.",
-          "keyPoints": [
-            {
-              "text": "Exterior angle of a triangle",
-              "note": "Connect “Exterior angle of a triangle” with its standard geometric definition or result."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Use the exterior-angle rule for a triangle.",
-              "work": "\\(\\text{exterior angle}=\\text{opposite interior angle}_1+\\text{opposite interior angle}_2\\)"
-            },
-            {
-              "explain": "Select the definition that states this rule.",
-              "work": "The matching statement is the correct choice."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
-            "school": "Willoughby Girls High School",
-            "year": 2015,
-            "page": 3,
-            "question": "q1b",
-            "section": "Section 2 (Geometry)",
-            "marks": 1
-          }
-        },
-        {
-          "id": "wghs-y7-2015-t3-s2-q1c",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "Which statement matches the geometric term “Angle sum of a triangle”?",
-          "options": [
-            "180°",
-            "360°",
-            "90°",
-            "270°"
-          ],
-          "answer": 0,
-          "hint": "Recall the standard meaning or angle rule for this geometry term.",
-          "keyPoints": [
-            {
-              "text": "Angle sum of a triangle",
-              "note": "Connect “Angle sum of a triangle” with its standard geometric definition or result."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "The three interior angles of every triangle have a fixed sum.",
-              "work": "\\(\\angle A+\\angle B+\\angle C=180^\\circ\\)"
-            },
-            {
-              "explain": "Select the definition that states this rule.",
-              "work": "The matching statement is the correct choice."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
-            "school": "Willoughby Girls High School",
-            "year": 2015,
-            "page": 3,
-            "question": "q1c",
-            "section": "Section 2 (Geometry)",
-            "marks": 1
-          }
-        },
-        {
-          "id": "wghs-y7-2015-t3-s2-q1d",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "Which statement matches the geometric term “Angle sum of a quadrilateral”?",
-          "options": [
-            "360°",
-            "180°",
-            "90°",
-            "720°"
-          ],
-          "answer": 0,
-          "hint": "Recall the standard meaning or angle rule for this geometry term.",
-          "keyPoints": [
-            {
-              "text": "Angle sum of a quadrilateral",
-              "note": "Connect “Angle sum of a quadrilateral” with its standard geometric definition or result."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "A quadrilateral can be split into two triangles.",
-              "work": "\\(2\\times180^\\circ=360^\\circ\\)"
-            },
-            {
-              "explain": "Select the definition that states this rule.",
-              "work": "The matching statement is the correct choice."
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
-            "school": "Willoughby Girls High School",
-            "year": 2015,
-            "page": 3,
-            "question": "q1d",
-            "section": "Section 2 (Geometry)",
-            "marks": 1
-          }
-        },
-        {
           "id": "wghs-y7-2015-t3-s2-q3",
           "type": "multipart",
           "difficulty": "medium",
@@ -1361,12 +1238,12 @@
               "difficulty": "medium",
               "stem": "Find \\(a\\) in the isosceles triangle shown.",
               "options": [
-                "\\(128^\\circ\\)",
-                "\\(76^\\circ\\)",
                 "\\(154^\\circ\\)",
-                "\\(26^\\circ\\)"
+                "\\(26^\\circ\\)",
+                "\\(128^\\circ\\)",
+                "\\(76^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Equal sides have equal opposite angles; then use the triangle angle sum.",
               "keyPoints": [
                 {
@@ -1413,9 +1290,9 @@
               "stem": "In the parallel-line triangle diagram, find \\(b\\).",
               "options": [
                 "\\(64^\\circ\\)",
-                "\\(74^\\circ\\)",
+                "\\(116^\\circ\\)",
                 "\\(42^\\circ\\)",
-                "\\(116^\\circ\\)"
+                "\\(74^\\circ\\)"
               ],
               "answer": 0,
               "hint": "Use the parallel arrows to identify a pair of corresponding angles.",
@@ -1463,12 +1340,12 @@
               "difficulty": "medium",
               "stem": "In the parallel-line triangle diagram, find \\(c\\).",
               "options": [
-                "\\(74^\\circ\\)",
-                "\\(64^\\circ\\)",
                 "\\(42^\\circ\\)",
-                "\\(106^\\circ\\)"
+                "\\(64^\\circ\\)",
+                "\\(106^\\circ\\)",
+                "\\(74^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "First transfer the 42° angle across the parallel lines, then use the small triangle.",
               "keyPoints": [
                 {
@@ -1514,12 +1391,12 @@
               "difficulty": "medium",
               "stem": "In the parallel-line triangle diagram, find \\(d\\).",
               "options": [
-                "\\(42^\\circ\\)",
                 "\\(64^\\circ\\)",
+                "\\(42^\\circ\\)",
                 "\\(74^\\circ\\)",
                 "\\(116^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "Compare d with the 42° angle on the parallel base.",
               "keyPoints": [
                 {
@@ -1565,12 +1442,12 @@
               "difficulty": "easy",
               "stem": "Find the exterior angle \\(e\\) in the triangle shown.",
               "options": [
-                "\\(108^\\circ\\)",
                 "\\(72^\\circ\\)",
-                "\\(132^\\circ\\)",
-                "\\(48^\\circ\\)"
+                "\\(48^\\circ\\)",
+                "\\(108^\\circ\\)",
+                "\\(132^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Add the two interior angles that are not adjacent to e.",
               "keyPoints": [
                 {
@@ -1618,8 +1495,8 @@
               "options": [
                 "\\(120^\\circ\\)",
                 "\\(60^\\circ\\)",
-                "\\(30^\\circ\\)",
-                "\\(150^\\circ\\)"
+                "\\(150^\\circ\\)",
+                "\\(30^\\circ\\)"
               ],
               "answer": 0,
               "hint": "Convert the 120° exterior angle to its adjacent interior angle, then use the equal-side marks.",
@@ -1667,12 +1544,12 @@
               "difficulty": "medium",
               "stem": "Find \\(g\\) in the quadrilateral shown.",
               "options": [
-                "\\(150^\\circ\\)",
-                "\\(140^\\circ\\)",
+                "\\(105^\\circ\\)",
                 "\\(160^\\circ\\)",
-                "\\(105^\\circ\\)"
+                "\\(140^\\circ\\)",
+                "\\(150^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Use the 360° interior angle sum for a quadrilateral.",
               "keyPoints": [
                 {
@@ -1718,12 +1595,12 @@
               "difficulty": "hard",
               "stem": "Find \\(h\\) in the concave quadrilateral shown.",
               "options": [
-                "\\(31^\\circ\\)",
                 "\\(125^\\circ\\)",
-                "\\(49^\\circ\\)",
-                "\\(53^\\circ\\)"
+                "\\(31^\\circ\\)",
+                "\\(53^\\circ\\)",
+                "\\(49^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "At the concave vertex, use the reflex interior angle rather than the smaller 94° outside angle.",
               "keyPoints": [
                 {
@@ -1769,12 +1646,12 @@
               "difficulty": "hard",
               "stem": "Find \\(m\\) in the four-sided figure with the two parallel horizontal lines.",
               "options": [
-                "\\(106^\\circ\\)",
-                "\\(74^\\circ\\)",
+                "\\(121^\\circ\\)",
                 "\\(92^\\circ\\)",
-                "\\(121^\\circ\\)"
+                "\\(106^\\circ\\)",
+                "\\(74^\\circ\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Convert each exterior angle to its adjacent interior angle, use the quadrilateral sum, then find m’s linear pair.",
               "keyPoints": [
                 {

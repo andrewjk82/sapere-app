@@ -2258,12 +2258,12 @@
           "difficulty": "easy",
           "stem": "What is the value of the digit 5 in \\(100.015\\)?",
           "options": [
-            "\\(0.005\\)",
-            "\\(0.05\\)",
             "\\(0.5\\)",
-            "\\(5\\)"
+            "\\(5\\)",
+            "\\(0.005\\)",
+            "\\(0.05\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Read the decimal places from left to right: tenths, hundredths, thousandths.",
           "keyPoints": [
             {
@@ -2304,8 +2304,8 @@
           "stem": "Arrange these decimals from smallest to largest: \\(0.7,\\;0.77,\\;0.077\\).",
           "options": [
             "\\(0.077,\\;0.7,\\;0.77\\)",
-            "\\(0.7,\\;0.077,\\;0.77\\)",
             "\\(0.77,\\;0.7,\\;0.077\\)",
+            "\\(0.7,\\;0.077,\\;0.77\\)",
             "\\(0.077,\\;0.77,\\;0.7\\)"
           ],
           "answer": 0,
@@ -3214,12 +3214,12 @@
           "difficulty": "medium",
           "stem": "Express \\(\\frac{22}{7}\\) as a decimal, correct to 3 decimal places.",
           "options": [
-            "\\(3.143\\)",
-            "\\(3.142\\)",
             "\\(3.140\\)",
-            "\\(3.14\\)"
+            "\\(3.142\\)",
+            "\\(3.14\\)",
+            "\\(3.143\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Divide 22 by 7 and keep one extra decimal digit so you can round to three places.",
           "keyPoints": [
             {
@@ -3259,12 +3259,12 @@
           "difficulty": "medium",
           "stem": "Express \\(0.82\\) as a fraction in its simplest form.",
           "options": [
-            "\\(\\frac{41}{50}\\)",
-            "\\(\\frac{82}{100}\\)",
             "\\(\\frac{4}{5}\\)",
-            "\\(\\frac{21}{25}\\)"
+            "\\(\\frac{41}{50}\\)",
+            "\\(\\frac{21}{25}\\)",
+            "\\(\\frac{82}{100}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Write the hundredths as a fraction over 100, then divide numerator and denominator by their HCF.",
           "keyPoints": [
             {
@@ -3485,12 +3485,12 @@
           "difficulty": "easy",
           "stem": "Calculate \\(2.4+0.07\\).",
           "options": [
-            "\\(2.47\\)",
-            "\\(2.11\\)",
+            "\\(9.4\\)",
             "\\(2.407\\)",
-            "\\(9.4\\)"
+            "\\(2.47\\)",
+            "\\(2.11\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Write both numbers with the decimal points aligned, then add hundredths to hundredths.",
           "keyPoints": [
             {
@@ -3531,9 +3531,9 @@
           "stem": "Calculate \\(3.7-0.35\\).",
           "options": [
             "\\(3.35\\)",
-            "\\(3.65\\)",
             "\\(3.42\\)",
-            "\\(0.32\\)"
+            "\\(0.32\\)",
+            "\\(3.65\\)"
           ],
           "answer": 0,
           "hint": "Rewrite 3.7 as 3.70 so both numbers have the same number of decimal places.",
@@ -3575,12 +3575,12 @@
           "difficulty": "easy",
           "stem": "Calculate \\(0.008+0.15+0.19\\).",
           "options": [
-            "\\(0.348\\)",
+            "\\(0.243\\)",
             "\\(0.258\\)",
             "\\(0.358\\)",
-            "\\(0.243\\)"
+            "\\(0.348\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Align the decimal points and add the hundredths and thousandths carefully.",
           "keyPoints": [
             {
@@ -3620,12 +3620,12 @@
           "difficulty": "medium",
           "stem": "Calculate \\(2015-20.15\\).",
           "options": [
+            "\\(2013.985\\)",
             "\\(1994.85\\)",
-            "\\(1994.95\\)",
             "\\(1995.15\\)",
-            "\\(2013.985\\)"
+            "\\(1994.95\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Write 2015 as 2015.00 so the decimal points and place values align.",
           "keyPoints": [
             {
@@ -3665,12 +3665,12 @@
           "difficulty": "medium",
           "stem": "Melanie starts with \\(\\$52.65\\) and returns with \\(\\$21.95\\). How much did she spend?",
           "options": [
-            "\\(\\$30.70\\)",
-            "\\(\\$31.70\\)",
             "\\(\\$74.60\\)",
-            "\\(\\$30.60\\)"
+            "\\(\\$30.60\\)",
+            "\\(\\$30.70\\)",
+            "\\(\\$31.70\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The amount spent is the starting balance minus the money left at the end.",
           "keyPoints": [
             {
@@ -3825,9 +3825,9 @@
           "stem": "Calculate \\(0.01\\times100\\).",
           "options": [
             "\\(1\\)",
+            "\\(0.001\\)",
             "\\(0.1\\)",
-            "\\(10\\)",
-            "\\(0.001\\)"
+            "\\(10\\)"
           ],
           "answer": 0,
           "hint": "Multiplying by 100 moves each digit two place-value columns to the left.",
@@ -3869,12 +3869,12 @@
           "difficulty": "easy",
           "stem": "Calculate \\(72.13\\div1000\\).",
           "options": [
-            "\\(0.07213\\)",
-            "\\(7.213\\)",
             "\\(0.7213\\)",
-            "\\(72130\\)"
+            "\\(7.213\\)",
+            "\\(72130\\)",
+            "\\(0.07213\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Dividing by 1000 moves the decimal point three places to the left.",
           "keyPoints": [
             {
@@ -3915,11 +3915,11 @@
           "stem": "Calculate \\(3\\div100\\).",
           "options": [
             "\\(0.3\\)",
-            "\\(0.33\\)",
             "\\(0.03\\)",
+            "\\(0.33\\)",
             "\\(0.003\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "Dividing by 100 moves the decimal point two places left.",
           "keyPoints": [
             {
@@ -4155,12 +4155,12 @@
           "difficulty": "easy",
           "stem": "Calculate \\(0.02\\times0.13\\).",
           "options": [
-            "\\(0.0026\\)",
-            "\\(0.026\\)",
             "\\(0.26\\)",
+            "\\(0.026\\)",
+            "\\(0.0026\\)",
             "\\(0.0015\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Multiply 2 by 13 first, then count the total decimal places in the two factors.",
           "keyPoints": [
             {
@@ -4201,8 +4201,8 @@
           "stem": "Given that \\(12\\times9=108\\), what is \\(1.2\\times0.9\\)?",
           "options": [
             "\\(1.08\\)",
-            "\\(10.8\\)",
             "\\(0.108\\)",
+            "\\(10.8\\)",
             "\\(108\\)"
           ],
           "answer": 0,
@@ -4245,9 +4245,9 @@
           "difficulty": "medium",
           "stem": "A container holds less than \\(0.8\\) litres of water. Which could be the amount of water in four such containers?",
           "options": [
+            "3.2 litres",
             "5 litres",
             "4.2 litres",
-            "3.2 litres",
             "2.4 litres"
           ],
           "answer": 3,
@@ -4296,12 +4296,12 @@
               "difficulty": "easy",
               "stem": "Calculate \\(1.245\\times100\\).",
               "options": [
+                "0.01245",
                 "124.5",
-                "12.45",
                 "1245",
-                "0.01245"
+                "12.45"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "Multiplying by 100 shifts the decimal point two places right.",
               "keyPoints": [
                 {
@@ -4337,12 +4337,12 @@
               "difficulty": "easy",
               "stem": "Calculate \\(0.015\\times7\\).",
               "options": [
-                "0.105",
                 "1.05",
                 "0.0105",
+                "0.105",
                 "0.95"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Multiply 15 by 7, then restore the three decimal places.",
               "keyPoints": [
                 {
@@ -4383,9 +4383,9 @@
               "stem": "Calculate \\(4.75\\times1.4\\).",
               "options": [
                 "6.65",
-                "66.5",
                 "0.665",
-                "5.15"
+                "5.15",
+                "66.5"
               ],
               "answer": 0,
               "hint": "Multiply 475 by 14, then place the decimal point using three total decimal places.",
@@ -4447,12 +4447,12 @@
           "difficulty": "medium",
           "stem": "Petrol costs \\(\\$1.49\\) per litre. What is the cost of 40 litres?",
           "options": [
-            "\\(\\$59.60\\)",
             "\\(\\$5.96\\)",
+            "\\(\\$41.49\\)",
             "\\(\\$60.00\\)",
-            "\\(\\$41.49\\)"
+            "\\(\\$59.60\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Multiply the price for one litre by the number of litres.",
           "keyPoints": [
             {
@@ -4657,12 +4657,12 @@
           "difficulty": "easy",
           "stem": "Calculate \\(0.8\\div0.2\\).",
           "options": [
+            "\\(0.16\\)",
             "\\(4\\)",
             "\\(0.4\\)",
-            "\\(0.16\\)",
             "\\(40\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Multiply both the dividend and divisor by 10 to make the divisor a whole number.",
           "keyPoints": [
             {
@@ -4708,12 +4708,12 @@
               "difficulty": "easy",
               "stem": "Calculate \\(3.123\\div10\\).",
               "options": [
-                "0.3123",
+                "0.03123",
                 "31.23",
-                "3.0123",
-                "0.03123"
+                "0.3123",
+                "3.0123"
               ],
-              "answer": 0,
+              "answer": 2,
               "hint": "Dividing by 10 shifts the decimal point one place left.",
               "keyPoints": [
                 {
@@ -4794,12 +4794,12 @@
               "difficulty": "medium",
               "stem": "Calculate \\(2.144\\div0.08\\).",
               "options": [
-                "26.8",
+                "268",
                 "2.68",
                 "0.268",
-                "268"
+                "26.8"
               ],
-              "answer": 0,
+              "answer": 3,
               "hint": "Multiply both numbers by 100 to turn the divisor into 8.",
               "keyPoints": [
                 {
@@ -4839,12 +4839,12 @@
               "difficulty": "medium",
               "stem": "Calculate \\(0.0313\\div40\\).",
               "options": [
-                "0.0007825",
                 "0.007825",
+                "0.0007825",
                 "0.07825",
                 "0.00007825"
               ],
-              "answer": 0,
+              "answer": 1,
               "hint": "Divide by 4, then divide by 10; this is equivalent to dividing by 40.",
               "keyPoints": [
                 {
@@ -4908,12 +4908,12 @@
           "difficulty": "medium",
           "stem": "A carton holds 0.6 litres of milk. How many full 0.25-litre glasses can be filled?",
           "options": [
-            "2 glasses",
-            "2.4 glasses",
+            "1 glass",
             "3 glasses",
-            "1 glass"
+            "2 glasses",
+            "2.4 glasses"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Divide the total milk by the amount per glass, then count only complete glasses.",
           "keyPoints": [
             {
@@ -5289,9 +5289,9 @@
           "stem": "Write \\(0.327327\\ldots\\) as a recurring decimal.",
           "options": [
             "\\(0.\\overline{327}\\)",
-            "\\(0.3\\overline{27}\\)",
             "\\(0.\\overline{32}7\\)",
-            "\\(0.327\\)"
+            "\\(0.327\\)",
+            "\\(0.3\\overline{27}\\)"
           ],
           "answer": 0,
           "hint": "Find the shortest block of digits that repeats without changing.",
@@ -5333,12 +5333,12 @@
           "difficulty": "medium",
           "stem": "Convert \\(\\frac{3}{11}\\) to a decimal.",
           "options": [
-            "\\(0.\\overline{27}\\)",
-            "\\(0.27\\)",
             "\\(0.\\overline{3}\\)",
-            "\\(0.272\\)"
+            "\\(0.27\\)",
+            "\\(0.272\\)",
+            "\\(0.\\overline{27}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Divide 3 by 11 and watch for the repeating two-digit block.",
           "keyPoints": [
             {
@@ -5449,12 +5449,12 @@
           "difficulty": "medium",
           "stem": "Round \\(2.798545\\) to 3 decimal places.",
           "options": [
-            "\\(2.799\\)",
-            "\\(2.798\\)",
             "\\(2.800\\)",
-            "\\(2.79\\)"
+            "\\(2.799\\)",
+            "\\(2.79\\)",
+            "\\(2.798\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Keep three decimal digits and inspect the fourth decimal digit.",
           "keyPoints": [
             {
@@ -5494,12 +5494,12 @@
           "difficulty": "easy",
           "stem": "Round \\(0.0069\\) to 1 decimal place.",
           "options": [
-            "\\(0.0\\)",
-            "\\(0.007\\)",
             "\\(0.1\\)",
+            "\\(0.007\\)",
+            "\\(0.0\\)",
             "\\(0.01\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "The tenths digit is 0; check the hundredths digit to decide whether it changes.",
           "keyPoints": [
             {
@@ -5540,9 +5540,9 @@
           "stem": "Round \\(4.24761\\) to the nearest thousandth.",
           "options": [
             "\\(4.248\\)",
+            "\\(4.2476\\)",
             "\\(4.247\\)",
-            "\\(4.25\\)",
-            "\\(4.2476\\)"
+            "\\(4.25\\)"
           ],
           "answer": 0,
           "hint": "The thousandths digit is the third digit after the decimal; inspect the fourth digit.",
@@ -5584,12 +5584,12 @@
           "difficulty": "easy",
           "stem": "Round \\(\\$21.43978\\) to the nearest cent.",
           "options": [
-            "\\(\\$21.44\\)",
-            "\\(\\$21.43\\)",
             "\\(\\$21.40\\)",
-            "\\(\\$21.439\\)"
+            "\\(\\$21.439\\)",
+            "\\(\\$21.43\\)",
+            "\\(\\$21.44\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "A cent is one hundredth of a dollar, so round to two decimal places.",
           "keyPoints": [
             {
