@@ -2462,7 +2462,7 @@
                 },
                 {
                   "explain": "Determine the quadrant based on the signs.",
-                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}\\)"
+                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}"
                 }
               ],
               "meta": {
@@ -2562,7 +2562,7 @@
                 },
                 {
                   "explain": "Determine the quadrant based on the signs.",
-                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}\\)"
+                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}"
                 }
               ],
               "meta": {

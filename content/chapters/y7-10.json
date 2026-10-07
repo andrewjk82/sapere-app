@@ -4540,7 +4540,7 @@
             },
             {
               "explain": "Conclude that the result depends on which integer has the larger absolute value.",
-              "work": "\\text{It can be positive, negative, or zero.}\\)"
+              "work": "\\text{It can be positive, negative, or zero.}"
             }
           ],
           "meta": {
@@ -4585,7 +4585,7 @@
             },
             {
               "explain": "Conclude that the result depends on which integer has the larger absolute value.",
-              "work": "\\text{It can be positive, negative, or zero.}\\)"
+              "work": "\\text{It can be positive, negative, or zero.}"
             }
           ],
           "meta": {
