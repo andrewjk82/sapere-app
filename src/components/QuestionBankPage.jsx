@@ -989,6 +989,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                         {sq.type !== 'multiple_choice' && sq.answer != null && String(sq.answer).trim() !== '' && (
                           <div style={{ marginTop: '12px', padding: '12px 16px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', color: '#166534', fontWeight: 800, fontSize: '0.9rem' }}>
                             Answer: <MathView content={String(sq.answer)} style={{ display: 'inline', fontWeight: 800 }} />
+                            {String(sq.answer).trimStart().startsWith('Sample answer:') && (() => {
+                              const sampleFigure = [...(sq.solutionSteps || [])].reverse().find((step) => step?.graphData)?.graphData;
+                              return sampleFigure ? (
+                                <div style={{ marginTop: '10px', borderRadius: '10px', overflow: 'hidden', border: '1px solid #bbf7d0', background: '#fff' }}>
+                                  <MathView content="" graphData={sampleFigure} style={{ minHeight: 'auto', margin: 0 }} />
+                                </div>
+                              ) : null;
+                            })()}
                           </div>
                         )}
 
