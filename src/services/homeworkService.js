@@ -15,8 +15,10 @@ const MAX_BATCH_BYTES = 8 * 1024 * 1024; // Firestore commit limit is 10MiB
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-const toOriginal = async (dataUrl) => {
-  let out = await resizeDataUrlImage(dataUrl, { maxWidth: 960, maxHeight: 1400, quality: 0.72 });
+const toOriginal = async (dataUrl, { squeeze = false } = {}) => {
+  let out = squeeze
+    ? await resizeDataUrlImage(dataUrl, { maxWidth: 800, maxHeight: 1200, quality: 0.5 })
+    : await resizeDataUrlImage(dataUrl, { maxWidth: 960, maxHeight: 1400, quality: 0.72 });
   if (dataUrlBytes(out) > MAX_PAGE_BYTES) {
     out = await resizeDataUrlImage(dataUrl, { maxWidth: 800, maxHeight: 1200, quality: 0.5 });
   }
@@ -55,9 +57,15 @@ export async function submitHomework({ uid, studentName, session, pageRecords, p
   if (records.length === 0) throw new Error('empty');
   if (records.length > MAX_HOMEWORK_PAGES) throw new Error('too-many-pages');
 
-  const originals = [];
+  const totalBytes = (list) => list.reduce((sum, img) => sum + dataUrlBytes(img), 0);
+  let originals = [];
   for (const record of records) originals.push(await toOriginal(record.image));
-  if (originals.reduce((sum, img) => sum + dataUrlBytes(img), 0) > MAX_BATCH_BYTES) throw new Error('too-large');
+  if (totalBytes(originals) > MAX_BATCH_BYTES) {
+    // A long homework: re-encode every page a little smaller (still readable) so it fits one commit.
+    originals = [];
+    for (const record of records) originals.push(await toOriginal(record.image, { squeeze: true }));
+    if (totalBytes(originals) > MAX_BATCH_BYTES) throw new Error('too-large');
+  }
   const thumbnails = await Promise.all(records.map((record) => toThumbnail(record.image)));
   const pageTopics = records.map(({ topicId, topicLabel }) => ({
     topicId: topicId || null,

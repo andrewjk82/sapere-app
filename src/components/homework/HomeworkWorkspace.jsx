@@ -14,7 +14,7 @@ const waitForCanvasCommit = () => new Promise((resolve) => {
 });
 const SUBMIT_ERRORS = {
   empty: 'Write your working on the notepad before submitting.',
-  'too-many-pages': `Homework can have at most ${MAX_HOMEWORK_PAGES} pages.`,
+  'too-many-pages': `Homework can have at most ${MAX_HOMEWORK_PAGES} pages in total (all notebooks together). Remove or merge a few pages and submit again.`,
   'page-too-large': 'One page is too detailed to upload. Try splitting it across two pages.',
   'too-large': 'This homework is too large to upload. Try using fewer pages.',
   'already-checked': 'Your teacher has already checked this homework.',
@@ -292,7 +292,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
       )}
       <div style={{ flex: 1, minHeight: 0, display: 'flex' }}>
         <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: notebooksLoaded && !submitting ? 'auto' : 'none' }}>
-          <WorkingOutCanvas ref={canvasRef} isSubmitted={false} onInkChange={handleInkChange} />
+          <WorkingOutCanvas ref={canvasRef} isSubmitted={false} maxPages={MAX_HOMEWORK_PAGES} onInkChange={handleInkChange} />
         </div>
       </div>
     </div>

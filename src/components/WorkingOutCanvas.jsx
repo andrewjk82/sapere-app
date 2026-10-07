@@ -227,7 +227,7 @@ export const analyzeInkPages = (pagesStrokes = []) => {
   };
 };
 
-const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange, onInkChange, hideTitle = false }, ref) => {
+const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange, onInkChange, hideTitle = false, maxPages = 0 }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
   const displayCanvasRef = useRef(null); // top layer: tip + pointer events
@@ -919,6 +919,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const addPage = () => {
+    if (maxPages > 0 && pages.length >= maxPages) return;
     setPages(prev => {
       const next = [...prev];
       next[currentPage] = strokesRef.current;
@@ -1332,10 +1333,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             </button>
             <button
               onClick={addPage}
-              title="Add page · two-finger swipe up = next · swipe down = previous"
-              style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer' }}
+              disabled={maxPages > 0 && pages.length >= maxPages}
+              title={maxPages > 0 && pages.length >= maxPages ? `Page limit reached (${maxPages})` : 'Add page · two-finger swipe up = next · swipe down = previous'}
+              style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer', opacity: maxPages > 0 && pages.length >= maxPages ? 0.5 : 1 }}
             >
-              {currentPage + 1}/{pages.length} +
+              {currentPage + 1}/{pages.length}{maxPages > 0 && pages.length >= maxPages ? ' max' : ' +'}
             </button>
             <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ChevronRight size={15} />

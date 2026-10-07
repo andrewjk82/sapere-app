@@ -1,7 +1,7 @@
 // Pure homework helpers — no Firebase imports, so scripts/testHomework.mjs can run them in Node.
 import { isWrongMark } from './homeworkRedo.js';
 
-export const MAX_HOMEWORK_PAGES = 10;
+export const MAX_HOMEWORK_PAGES = 20;
 export const HOMEWORK_RETENTION_DAYS = 30;
 // Lessons older than this with homework never started don't clutter the student's list.
 export const HOMEWORK_ACTIVE_WINDOW_DAYS = 14;

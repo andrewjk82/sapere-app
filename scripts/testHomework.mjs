@@ -131,7 +131,7 @@ test('isSafeImageDataUrl only accepts inline raster data URLs', () => {
 });
 
 test('page limit constant', () => {
-  assert.equal(MAX_HOMEWORK_PAGES, 10);
+  assert.equal(MAX_HOMEWORK_PAGES, 20);
 });
 
 test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries the mark', () => {
