@@ -444,7 +444,7 @@
               "type": "review",
               "difficulty": "medium",
               "stem": "Draw the mirror image of the block shape on the grid, using the vertical mirror line.",
-              "answer": "A reflected block shape with each vertex the same perpendicular distance from the mirror line.",
+              "answer": "Sample answer: Draw the block shape as a left-right reversed copy on the right of the vertical mirror line. Every corner stays on its original row and is the same number of grid squares from the mirror as before. The completed sample is shown in the solution diagram.",
               "manual": true,
               "hint": "Reflect each corner across the vertical line, keeping the same row and matching its distance from the line.",
               "keyPoints": [
@@ -489,7 +489,7 @@
               "type": "review",
               "difficulty": "medium",
               "stem": "Draw the mirror image of the kite on the grid, using the slanted mirror line.",
-              "answer": "A reflected kite with corresponding vertices at equal perpendicular distances from the mirror line.",
+              "answer": "Sample answer: Draw the kite on the opposite side of the slanted mirror line. Reflect each of its four vertices across the line at the same perpendicular distance, then connect the reflected vertices in order. The completed sample is shown in the solution diagram.",
               "manual": true,
               "hint": "Reflect the four vertices one at a time: measure the shortest perpendicular distance to the mirror line.",
               "keyPoints": [
@@ -547,7 +547,8 @@
             "question": "q2",
             "section": "Section 2 (Geometry)",
             "marks": 2
-          }
+          },
+          "answer": "Sample answers: (a) the block shape reflected across the vertical mirror line; (b) the kite reflected across the slanted mirror line. See the completed sample diagrams in the worked solutions for both parts."
         },
         {
           "id": "wghs-y7-2015-t3-s2-q5",
