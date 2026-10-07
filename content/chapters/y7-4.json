@@ -2913,7 +2913,7 @@
               "work": "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)"
             }
           ],
-          "timeLimit": 45,
+          "timeLimit": 60,
           "xp": 2,
           "keyPoints": [
             {
