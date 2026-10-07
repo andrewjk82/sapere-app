@@ -4051,6 +4051,7 @@
               "work": "\\(\\frac{14 + 15}{35} = \\frac{29}{35}\\)"
             }
           ],
+          "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
