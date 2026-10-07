@@ -8822,7 +8822,6 @@
                   "work": "\\(\\operatorname{HCF}(36,84)=12\\)"
                 }
               ],
-              "xp": 1,
               "keyPoints": [
                 {
                   "text": "highest common factor (HCF)",
@@ -8853,6 +8852,7 @@
                   "work": "\\(\\operatorname{LCM}(36,84)=252\\)"
                 }
               ],
+              "xp": 1,
               "keyPoints": [
                 {
                   "text": "lowest common multiple (LCM)",
