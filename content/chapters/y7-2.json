@@ -8803,15 +8803,16 @@
         {
           "id": "manly2022-y7-frac-q2-var",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Given the numbers 36 and 84, answer both questions.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "manly2022-y7-frac-q2-vara",
               "type": "short",
-              "difficulty": "medium",
               "stem": "What is the highest common factor (HCF) of \\(36\\) and \\(84\\)?",
+              "difficulty": "medium",
               "answer": "12",
+              "hint": "Compare the prime factorizations and identify their common factors.",
               "steps": [
                 {
                   "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
@@ -8821,27 +8822,28 @@
                   "work": "\\(\\operatorname{HCF}(36,84)=12\\)"
                 }
               ],
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "highest common factor (HCF)",
+                  "note": "Keep only prime factors that occur in both factorizations."
+                }
+              ],
               "meta": {
                 "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
                 "school": "Manly Selective Campus",
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              },
-              "hint": "Compare the prime factorizations and identify their common factors.",
-              "keyPoints": [
-                {
-                  "text": "highest common factor (HCF)",
-                  "note": "Keep only prime factors that occur in both factorizations."
-                }
-              ]
+              }
             },
             {
               "id": "manly2022-y7-frac-q2-varb",
               "type": "short",
-              "difficulty": "medium",
               "stem": "What is the lowest common multiple (LCM) of \\(36\\) and \\(84\\)?",
+              "difficulty": "medium",
               "answer": "252",
+              "hint": "Find the prime factors needed to make a multiple of each number.",
               "steps": [
                 {
                   "explain": "Use the prime factors and take each prime with the larger power needed by either number."
@@ -8851,20 +8853,26 @@
                   "work": "\\(\\operatorname{LCM}(36,84)=252\\)"
                 }
               ],
+              "keyPoints": [
+                {
+                  "text": "lowest common multiple (LCM)",
+                  "note": "Include enough prime factors to make a multiple of both numbers."
+                }
+              ],
               "meta": {
                 "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
                 "school": "Manly Selective Campus",
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              },
-              "hint": "Find the prime factors needed to make a multiple of each number.",
-              "keyPoints": [
-                {
-                  "text": "lowest common multiple (LCM)",
-                  "note": "Include enough prime factors to make a multiple of both numbers."
-                }
-              ]
+              }
+            }
+          ],
+          "hint": "Prime-factorise both values and use the shared factors for one part and combined factors for the other.",
+          "keyPoints": [
+            {
+              "text": "Given the numbers 36 and 84",
+              "note": "Use prime factors to find both the common divisor and common multiple."
             }
           ],
           "meta": {
@@ -8872,15 +8880,9 @@
             "school": "Manly Selective Campus",
             "year": 2022,
             "page": 4,
-            "variant": true
-          },
-          "hint": "Prime-factorise both values and use the shared factors for one part and combined factors for the other.",
-          "keyPoints": [
-            {
-              "text": "Given the numbers 36 and 84",
-              "note": "Use prime factors to find both the common divisor and common multiple."
-            }
-          ]
+            "variant": true,
+            "origin": "teacher"
+          }
         }
       ]
     },
