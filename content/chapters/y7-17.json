@@ -359,28 +359,24 @@
         {
           "id": "wghs-y7-2015-t3-s2-q4",
           "type": "review",
-          "difficulty": "hard",
           "stem": "Draw the final image when the T-shape is reflected in the mirror and then rotated 90° clockwise about point E.",
+          "difficulty": "hard",
+          "figure": {
+            "svg": "fig:cbb6dd62e7"
+          },
           "answer": "A T-shape reflected across the vertical mirror line, then rotated 90° clockwise about E.",
-          "manual": true,
           "hint": "Apply the transformations in the stated order. First reflect every point across the mirror, then rotate the image about E.",
-          "keyPoints": [
-            {
-              "text": "then rotated 90° clockwise",
-              "note": "“Then” gives the order: complete the reflection before turning the reflected image about E."
-            }
-          ],
           "steps": [
             {
               "explain": "Reflect the T-shape across the vertical mirror. Each point moves to the same height and equal horizontal distance on the other side.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"235\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"80,65 190,65 190,82 132,82 132,160 115,160 115,82 80,82\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"340,65 230,65 230,82 288,82 288,160 305,160 305,82 340,82\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"285\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">Reflected T</text></svg>"
+                "svg": "fig:080e7d08da"
               }
             },
             {
               "explain": "Now rotate the reflected image 90° clockwise about E. The centre E stays fixed; each point turns a quarter-turn around it.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"340,65 230,65 230,82 288,82 288,160 305,160 305,82 340,82\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"415,140 415,30 398,30 398,88 320,88 320,105 398,105 398,140\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"368\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">Final image</text></svg>"
+                "svg": "fig:e3f280944b"
               }
             },
             {
@@ -388,11 +384,15 @@
               "work": "Reflection and rotation preserve lengths."
             }
           ],
+          "manual": true,
           "timeLimit": 210,
-          "xp": 3,
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"235\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"80,65 190,65 190,82 132,82 132,160 115,160 115,82 80,82\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"115\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">T</text><text x=\"210\" y=\"252\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#ef4444\" font-weight=\"600\">Mirror</text></svg>"
-          },
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "then rotated 90° clockwise",
+              "note": "“Then” gives the order: complete the reflection before turning the reflected image about E."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -400,7 +400,8 @@
             "page": 5,
             "question": "q4",
             "section": "Section 2 (Geometry)",
-            "marks": 2
+            "marks": 2,
+            "origin": "teacher"
           }
         }
       ]
