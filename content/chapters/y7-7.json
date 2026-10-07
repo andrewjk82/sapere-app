@@ -3211,8 +3211,8 @@
         {
           "id": "wghs-y7-2015-t3-s1-q8",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Express \\(\\frac{22}{7}\\) as a decimal, correct to 3 decimal places.",
+          "difficulty": "medium",
           "options": [
             "\\(3.140\\)",
             "\\(3.142\\)",
@@ -3221,12 +3221,6 @@
           ],
           "answer": 3,
           "hint": "Divide 22 by 7 and keep one extra decimal digit so you can round to three places.",
-          "keyPoints": [
-            {
-              "text": "correct to 3 decimal places",
-              "note": "Keep three digits after the decimal point and use the fourth digit to decide whether to round."
-            }
-          ],
           "steps": [
             {
               "explain": "Divide the numerator by the denominator to obtain the decimal expansion.",
@@ -3241,8 +3235,14 @@
               "work": "\\(\\boxed{3.143}\\)"
             }
           ],
-          "timeLimit": 75,
-          "xp": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "correct to 3 decimal places",
+              "note": "Keep three digits after the decimal point and use the fourth digit to decide whether to round."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -3250,7 +3250,8 @@
             "page": 2,
             "question": "q8",
             "section": "Section 1 (Non-calculator)",
-            "marks": 1
+            "marks": 1,
+            "origin": "teacher"
           }
         },
         {
@@ -5285,8 +5286,8 @@
         {
           "id": "wghs-y7-2015-t3-s1-q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Write \\(0.327327\\ldots\\) as a recurring decimal.",
+          "difficulty": "medium",
           "options": [
             "\\(0.\\overline{327}\\)",
             "\\(0.\\overline{32}7\\)",
@@ -5295,12 +5296,6 @@
           ],
           "answer": 0,
           "hint": "Find the shortest block of digits that repeats without changing.",
-          "keyPoints": [
-            {
-              "text": "recurring decimal",
-              "note": "A bar is placed over exactly the group of digits that repeats indefinitely."
-            }
-          ],
           "steps": [
             {
               "explain": "Compare consecutive digits to identify the repeating cycle.",
@@ -5315,8 +5310,14 @@
               "work": "\\(\\boxed{0.\\overline{327}}\\)"
             }
           ],
-          "timeLimit": 75,
-          "xp": 2,
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "recurring decimal",
+              "note": "A bar is placed over exactly the group of digits that repeats indefinitely."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -5324,7 +5325,8 @@
             "page": 2,
             "question": "q7",
             "section": "Section 1 (Non-calculator)",
-            "marks": 1
+            "marks": 1,
+            "origin": "teacher"
           }
         },
         {
