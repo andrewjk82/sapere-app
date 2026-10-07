@@ -436,23 +436,19 @@
         {
           "id": "wghs-y7-2015-t3-s2-q2",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Draw the mirror images of the two objects on their grids.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "wghs-y7-2015-t3-s2-q2a",
               "type": "review",
-              "difficulty": "medium",
               "stem": "Draw the mirror image of the block shape on the grid, using the vertical mirror line.",
+              "difficulty": "medium",
+              "figure": {
+                "svg": "fig:b61933a962"
+              },
               "answer": "Sample answer: Draw the block shape as a left-right reversed copy on the right of the vertical mirror line. Every corner stays on its original row and is the same number of grid squares from the mirror as before. The completed sample is shown in the solution diagram.",
-              "manual": true,
               "hint": "Reflect each corner across the vertical line, keeping the same row and matching its distance from the line.",
-              "keyPoints": [
-                {
-                  "text": "vertical mirror line",
-                  "note": "A vertical reflection changes left and right but keeps each point at the same height."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Trace the outline and identify each corner’s horizontal distance from the mirror line.",
@@ -461,7 +457,7 @@
                 {
                   "explain": "Place the matching vertex on the opposite side, in the same horizontal row and the same number of squares away.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"260\" viewBox=\"0 0 440 260\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"258\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"30\" x2=\"260\" y2=\"225\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><path d=\"M85 85 H160 V100 H105 V130 H145 V145 H105 V175 H160 V190 H85 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M435 85 H360 V100 H415 V130 H375 V145 H415 V175 H360 V190 H435 Z\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\"/><text x=\"260\" y=\"242\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">Mirror line</text></svg>"
+                    "svg": "fig:6e53586d64"
                   }
                 },
                 {
@@ -469,11 +465,14 @@
                   "work": "Reflection preserves lengths and reverses orientation."
                 }
               ],
-              "timeLimit": 120,
-              "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 440 260\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"258\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"30\" x2=\"260\" y2=\"225\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><path d=\"M85 85 H160 V100 H105 V130 H145 V145 H105 V175 H160 V190 H85 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"260\" y=\"242\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">Mirror line</text></svg>"
-              },
+              "manual": true,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "vertical mirror line",
+                  "note": "A vertical reflection changes left and right but keeps each point at the same height."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -487,17 +486,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q2b",
               "type": "review",
-              "difficulty": "medium",
               "stem": "Draw the mirror image of the kite on the grid, using the slanted mirror line.",
+              "difficulty": "medium",
+              "figure": {
+                "svg": "fig:df85c981be"
+              },
               "answer": "Sample answer: Draw the kite on the opposite side of the slanted mirror line. Reflect each of its four vertices across the line at the same perpendicular distance, then connect the reflected vertices in order. The completed sample is shown in the solution diagram.",
-              "manual": true,
               "hint": "Reflect the four vertices one at a time: measure the shortest perpendicular distance to the mirror line.",
-              "keyPoints": [
-                {
-                  "text": "slanted mirror line",
-                  "note": "Measure perpendicular to the line; a diagonal mirror changes both horizontal and vertical position."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Label the kite’s four vertices and note their perpendicular distances from the mirror.",
@@ -506,7 +501,7 @@
                 {
                   "explain": "Mark each image vertex the same distance on the other side, then connect them in order.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"260\" viewBox=\"0 0 440 260\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"258\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"205\" y2=\"238\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><polygon points=\"65,160 100,110 65,75 35,110\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"191,78 131,90 113,44 157,31\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"205\" y=\"245\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\" font-weight=\"600\">Mirror</text></svg>"
+                    "svg": "fig:0f73a2a719"
                   }
                 },
                 {
@@ -514,11 +509,15 @@
                   "work": "Each original point and image point are equidistant from the mirror line."
                 }
               ],
+              "manual": true,
               "timeLimit": 150,
               "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 440 260\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"258\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"245\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"205\" y2=\"238\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><polygon points=\"65,160 100,110 65,75 35,110\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"205\" y=\"245\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#ef4444\" font-weight=\"600\">Mirror</text></svg>"
-              },
+              "keyPoints": [
+                {
+                  "text": "slanted mirror line",
+                  "note": "Measure perpendicular to the line; a diagonal mirror changes both horizontal and vertical position."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -530,15 +529,16 @@
               }
             }
           ],
+          "answer": "Sample answers: (a) the block shape reflected across the vertical mirror line; (b) the kite reflected across the slanted mirror line. See the completed sample diagrams in the worked solutions for both parts.",
           "hint": "Reflect every vertex across its mirror line, preserving perpendicular distance.",
+          "timeLimit": 270,
+          "xp": 2,
           "keyPoints": [
             {
               "text": "mirror images",
               "note": "A reflection flips the figure across its mirror line without changing its size."
             }
           ],
-          "timeLimit": 270,
-          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -546,9 +546,9 @@
             "page": 3,
             "question": "q2",
             "section": "Section 2 (Geometry)",
-            "marks": 2
-          },
-          "answer": "Sample answers: (a) the block shape reflected across the vertical mirror line; (b) the kite reflected across the slanted mirror line. See the completed sample diagrams in the worked solutions for both parts."
+            "marks": 2,
+            "origin": "teacher"
+          }
         },
         {
           "id": "wghs-y7-2015-t3-s2-q5",
