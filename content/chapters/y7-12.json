@@ -1712,13 +1712,13 @@
           "id": "wghs-y7-2015-t3-s2-q1",
           "type": "review",
           "difficulty": "medium",
-          "stem": "Draw a line connecting each geometry term to its definition or result.",
+          "stem": "Match each geometry term to its definition or result by drawing a line.",
           "answer": "Rotation → 360°; exterior angle of a triangle → sum of the two opposite interior angles; angle sum of a triangle → 180°; angle sum of a quadrilateral → 360°; reflection → mirror image.",
           "manual": true,
           "hint": "Recall the standard turn, angle-sum, exterior-angle, and transformation definitions, then connect each pair.",
           "keyPoints": [
             {
-              "text": "Draw a line connecting",
+              "text": "geometry term",
               "note": "Match each term to the statement that defines it or gives its standard angle result."
             }
           ],
