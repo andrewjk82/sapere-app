@@ -2889,9 +2889,16 @@
         {
           "id": "manly2022-y7-frac-q1",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Place these fractions in ascending order: \\(\\frac57, \\frac{12}{21}, \\frac23, \\frac9{14}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)",
+            "\\(\\frac57, \\frac23, \\frac9{14}, \\frac{12}{21}\\)",
+            "\\(\\frac{12}{21}, \\frac23, \\frac9{14}, \\frac57\\)",
+            "\\(\\frac9{14}, \\frac{12}{21}, \\frac57, \\frac23\\)"
+          ],
           "answer": 0,
+          "hint": "Rewrite the fractions with a common denominator so their sizes are easy to compare.",
           "steps": [
             {
               "explain": "Use a common denominator to compare the fractions.",
@@ -2906,26 +2913,20 @@
               "work": "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)"
             }
           ],
+          "keyPoints": [
+            {
+              "text": "ascending ",
+              "note": "Ascending means smallest to largest; compare equivalent fractions with a common denominator."
+            }
+          ],
           "meta": {
             "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
             "school": "Manly Selective Campus",
             "year": 2022,
             "page": 4,
-            "variant": false
-          },
-          "options": [
-            "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)",
-            "\\(\\frac57, \\frac23, \\frac9{14}, \\frac{12}{21}\\)",
-            "\\(\\frac{12}{21}, \\frac23, \\frac9{14}, \\frac57\\)",
-            "\\(\\frac9{14}, \\frac{12}{21}, \\frac57, \\frac23\\)"
-          ],
-          "hint": "Rewrite the fractions with a common denominator so their sizes are easy to compare.",
-          "keyPoints": [
-            {
-              "text": "\\(\\frac57, \\frac{12}{21}, \\frac23, \\frac9{14}\\)",
-              "note": "Ascending means smallest to largest; compare equivalent fractions with a common denominator."
-            }
-          ]
+            "variant": false,
+            "origin": "teacher"
+          }
         },
         {
           "id": "manly2022-y7-frac-q1-var",
