@@ -323,12 +323,6 @@
           "difficulty": "easy",
           "stem": "Sketch the circle \\((x - 4)^2 + y^2 = 16\\). Mark all intercepts with the axes and indicate the centre and radius.",
           "answer": "Circle with centre (4, 0), radius 4.\nx-intercepts (0,0), (8,0).\ny-intercept (0,0).",
-          "options": [
-            "Centre \\((4, 0)\\), radius \\(4\\), intercepts at \\((0,0)\\) and \\((8,0)\\)",
-            "Centre \\((-4, 0)\\), radius \\(4\\), intercepts at \\((0,0)\\) and \\((-8,0)\\)",
-            "Centre \\((4, 0)\\), radius \\(16\\), intercepts at \\((0,0)\\) and \\((8,0)\\)",
-            "Centre \\((0, 4)\\), radius \\(4\\), intercepts at \\((0,0)\\) and \\((0,8)\\)"
-          ],
           "hint": "The standard circle equation is \\((x-h)^2 + (y-k)^2 = r^2\\).",
           "solution": "Circle with centre (4, 0), radius 4.\nx-intercepts (0,0), (8,0).\ny-intercept (0,0).",
           "steps": [
@@ -359,12 +353,6 @@
           "difficulty": "easy",
           "stem": "Sketch the circle \\(x^2 + (y - 3)^2 = 9\\). Mark all intercepts with the axes and indicate the centre and radius.",
           "answer": "Circle with centre (0, 3), radius 3.\nx-intercept (0,0).\ny-intercepts (0,0), (0,6).",
-          "options": [
-            "Centre \\((0, 3)\\), radius \\(3\\), intercepts at \\((0,0)\\) and \\((0,6)\\)",
-            "Centre \\((0, -3)\\), radius \\(3\\), intercepts at \\((0,0)\\) and \\((0,-6)\\)",
-            "Centre \\((3, 0)\\), radius \\(3\\), intercepts at \\((0,0)\\) and \\((6,0)\\)",
-            "Centre \\((0, 3)\\), radius \\(9\\), intercepts at \\((0,0)\\) and \\((0,6)\\)"
-          ],
           "hint": "The standard circle equation is \\((x-h)^2 + (y-k)^2 = r^2\\).",
           "solution": "Circle with centre (0, 3), radius 3.\nx-intercept (0,0).\ny-intercepts (0,0), (0,6).",
           "steps": [
@@ -395,12 +383,6 @@
           "difficulty": "easy",
           "stem": "Sketch the circle \\(x^2 + (y + 5)^2 = 25\\). Mark all intercepts with the axes and indicate the centre and radius.",
           "answer": "Circle with centre (0, -5), radius 5.\nx-intercept (0,0).\ny-intercepts (0,0), (0,-10).",
-          "options": [
-            "Centre \\((0, -5)\\), radius \\(5\\), intercepts at \\((0,0)\\) and \\((0,-10)\\)",
-            "Centre \\((0, 5)\\), radius \\(5\\), intercepts at \\((0,0)\\) and \\((0,10)\\)",
-            "Centre \\((-5, 0)\\), radius \\(5\\), intercepts at \\((0,0)\\) and \\((-10,0)\\)",
-            "Centre \\((0, -5)\\), radius \\(25\\), intercepts at \\((0,0)\\) and \\((0,-10)\\)"
-          ],
           "hint": "The standard circle equation is \\((x-h)^2 + (y-k)^2 = r^2\\).",
           "solution": "Circle with centre (0, -5), radius 5.\nx-intercept (0,0).\ny-intercepts (0,0), (0,-10).",
           "steps": [
@@ -431,12 +413,6 @@
           "difficulty": "easy",
           "stem": "Sketch the circle \\((x + 2)^2 + y^2 = 4\\). Mark all intercepts with the axes and indicate the centre and radius.",
           "answer": "Circle with centre (-2, 0), radius 2.\nx-intercepts (0,0), (-4,0).\ny-intercept (0,0).",
-          "options": [
-            "Centre \\((-2, 0)\\), radius \\(2\\), intercepts at \\((0,0)\\) and \\((-4,0)\\)",
-            "Centre \\((2, 0)\\), radius \\(2\\), intercepts at \\((0,0)\\) and \\((4,0)\\)",
-            "Centre \\((-2, 0)\\), radius \\(4\\), intercepts at \\((0,0)\\) and \\((-4,0)\\)",
-            "Centre \\((0, -2)\\), radius \\(2\\), intercepts at \\((0,0)\\) and \\((0,-4)\\)"
-          ],
           "hint": "The standard circle equation is \\((x-h)^2 + (y-k)^2 = r^2\\).",
           "solution": "Circle with centre (-2, 0), radius 2.\nx-intercepts (0,0), (-4,0).\ny-intercept (0,0).",
           "steps": [

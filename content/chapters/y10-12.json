@@ -14,65 +14,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  11.87,
-                  0
-                ],
-                "C": [
-                  11.87,
-                  7.42
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "a cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "14 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "32°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,160.01684919966303 220,160.01684919966303 220,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 205 160.01684919966303 L 205 145.01684919966303 L 220 145.01684919966303\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"93.64334076951442\" y=\"155.36668744628665\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">32°</text>\n<text x=\"245\" y=\"115.00842459983151\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">a cm</text>\n<text x=\"126.74842121021321\" y=\"93.8094703902939\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">14 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDE2MC4wMTY4NDkxOTk2NjMwMyAyMjAsMTYwLjAxNjg0OTE5OTY2MzAzIDIyMCw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDIwNSAxNjAuMDE2ODQ5MTk5NjYzMDMgTCAyMDUgMTQ1LjAxNjg0OTE5OTY2MzAzIEwgMjIwIDE0NS4wMTY4NDkxOTk2NjMwMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjkzLjY0MzM0MDc2OTUxNDQyIiB5PSIxNTUuMzY2Njg3NDQ2Mjg2NjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjMywrA8L3RleHQ+Cjx0ZXh0IHg9IjI0NSIgeT0iMTE1LjAwODQyNDU5OTgzMTUxIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hIGNtPC90ZXh0Pgo8dGV4dCB4PSIxMjYuNzQ4NDIxMjEwMjEzMjEiIHk9IjkzLjgwOTQ3MDM5MDI5MzkiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-7.42\\)",
             "\\(6.42\\)",
@@ -112,65 +55,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  11.41
-                ],
-                "C": [
-                  3.7,
-                  11.41
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "b cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "12 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "72°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,220 60,60 111.8843120070114,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 75 L 75 75 L 75 60\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"70.1495743919098\" y=\"160.79730426482786\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">72°</text>\n<text x=\"35\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">b cm</text>\n<text x=\"109.72305706460735\" y=\"152.7115980653879\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">12 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDIyMCA2MCw2MCAxMTEuODg0MzEyMDA3MDExNCw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDYwIDc1IEwgNzUgNzUgTCA3NSA2MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjcwLjE0OTU3NDM5MTkwOTgiIHk9IjE2MC43OTczMDQyNjQ4Mjc4NiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzLCsDwvdGV4dD4KPHRleHQgeD0iMzUiIHk9IjE0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+YiBjbTwvdGV4dD4KPHRleHQgeD0iMTA5LjcyMzA1NzA2NDYwNzM1IiB5PSIxNTIuNzExNTk4MDY1Mzg3OSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTIgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-36.93\\)",
             "\\(35.93\\)",
@@ -210,65 +96,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  6.17
-                ],
-                "B": [
-                  5,
-                  6.17
-                ],
-                "C": [
-                  5,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "5 m"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "c m"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "51°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 189.65964343598054,60 189.65964343598054,220\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 174.65964343598054 60 L 174.65964343598054 75 L 189.65964343598054 75\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"91.5931625410769\" y=\"80.06227342246501\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">51°</text>\n<text x=\"124.82982171799027\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">5 m</text>\n<text x=\"214.65964343598054\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">c m</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDE4OS42NTk2NDM0MzU5ODA1NCw2MCAxODkuNjU5NjQzNDM1OTgwNTQsMjIwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTc0LjY1OTY0MzQzNTk4MDU0IDYwIEwgMTc0LjY1OTY0MzQzNTk4MDU0IDc1IEwgMTg5LjY1OTY0MzQzNTk4MDU0IDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iOTEuNTkzMTYyNTQxMDc2OSIgeT0iODAuMDYyMjczNDIyNDY1MDEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUxwrA8L3RleHQ+Cjx0ZXh0IHg9IjEyNC44Mjk4MjE3MTc5OTAyNyIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUgbTwvdGV4dD4KPHRleHQgeD0iMjE0LjY1OTY0MzQzNTk4MDU0IiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmMgbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-3.15\\)",
             "\\(2.15\\)",
@@ -308,65 +137,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  8.32,
-                  0
-                ],
-                "C": [
-                  0.63,
-                  2.2
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "8 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "d cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "label": "16°"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"24.999999999999986,170.40865384615384 255,170.40865384615384 42.41586538461537,109.59134615384615\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 38.286392031654714 124.01172929116909 L 52.707835036906616 128.1374997218003 L 56.837308389867275 113.71711658447738\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"200.5329258203065\" y=\"167.77073329774757\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">16°</text>\n<text x=\"154.20895993314932\" y=\"125.7714093263308\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8 cm</text>\n<text x=\"14.48075517587709\" y=\"139.4940355293858\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">d cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjI0Ljk5OTk5OTk5OTk5OTk4NiwxNzAuNDA4NjUzODQ2MTUzODQgMjU1LDE3MC40MDg2NTM4NDYxNTM4NCA0Mi40MTU4NjUzODQ2MTUzNywxMDkuNTkxMzQ2MTUzODQ2MTUiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSAzOC4yODYzOTIwMzE2NTQ3MTQgMTI0LjAxMTcyOTI5MTE2OTA5IEwgNTIuNzA3ODM1MDM2OTA2NjE2IDEyOC4xMzc0OTk3MjE4MDAzIEwgNTYuODM3MzA4Mzg5ODY3Mjc1IDExMy43MTcxMTY1ODQ0NzczOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjIwMC41MzI5MjU4MjAzMDY1IiB5PSIxNjcuNzcwNzMzMjk3NzQ3NTciIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE2wrA8L3RleHQ+Cjx0ZXh0IHg9IjE1NC4yMDg5NTk5MzMxNDkzMiIgeT0iMTI1Ljc3MTQwOTMyNjMzMDgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjggY208L3RleHQ+Cjx0ZXh0IHg9IjE0LjQ4MDc1NTE3NTg3NzA5IiB5PSIxMzkuNDk0MDM1NTI5Mzg1OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZCBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-2.2\\)",
             "\\(1.2\\)",
@@ -406,65 +178,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  4.8,
-                  0
-                ],
-                "C": [
-                  2.23,
-                  -2.39
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "4.8 cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "i cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "47°"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 220,60 134.33333333333334,139.66666666666669\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 124.1001946743837 128.69931178106594 L 135.0844826848345 118.48435133554943 L 145.31762134378414 129.45170622115018\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"92.09911465924115\" y=\"78.95158908844758\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">47°</text>\n<text x=\"140\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">4.8 cm</text>\n<text x=\"194.19160074252753\" y=\"123.14048001741801\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">i cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDIyMCw2MCAxMzQuMzMzMzMzMzMzMzMzMzQsMTM5LjY2NjY2NjY2NjY2NjY5IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTI0LjEwMDE5NDY3NDM4MzcgMTI4LjY5OTMxMTc4MTA2NTk0IEwgMTM1LjA4NDQ4MjY4NDgzNDUgMTE4LjQ4NDM1MTMzNTU0OTQzIEwgMTQ1LjMxNzYyMTM0Mzc4NDE0IDEyOS40NTE3MDYyMjExNTAxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjkyLjA5OTExNDY1OTI0MTE1IiB5PSI3OC45NTE1ODkwODg0NDc1OCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NDfCsDwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC44IGNtPC90ZXh0Pgo8dGV4dCB4PSIxOTQuMTkxNjAwNzQyNTI3NTMiIHk9IjEyMy4xNDA0ODAwMTc0MTgwMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aSBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-3.27\\)",
             "\\(2.27\\)",
@@ -504,65 +219,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  25.2,
-                  0
-                ],
-                "C": [
-                  10.41,
-                  12.41
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "j cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "16.2 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "label": "40°"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,138.79365079365078 220,138.79365079365078 126.0952380952381,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 116.45517737039036 71.49213771329111 L 127.94595249022915 81.13382258396044 L 137.5860132150769 69.64168487066932\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"187.1106909357045\" y=\"131.8231307851779\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">40°</text>\n<text x=\"189.11709383206792\" y=\"85.24553353042741\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">j cm</text>\n<text x=\"73.89405619213386\" y=\"88.33005752207914\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">16.2 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDEzOC43OTM2NTA3OTM2NTA3OCAyMjAsMTM4Ljc5MzY1MDc5MzY1MDc4IDEyNi4wOTUyMzgwOTUyMzgxLDYwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTE2LjQ1NTE3NzM3MDM5MDM2IDcxLjQ5MjEzNzcxMzI5MTExIEwgMTI3Ljk0NTk1MjQ5MDIyOTE1IDgxLjEzMzgyMjU4Mzk2MDQ0IEwgMTM3LjU4NjAxMzIxNTA3NjkgNjkuNjQxNjg0ODcwNjY5MzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPgo8dGV4dCB4PSIxODcuMTEwNjkwOTM1NzA0NSIgeT0iMTMxLjgyMzEzMDc4NTE3NzkiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQwwrA8L3RleHQ+Cjx0ZXh0IHg9IjE4OS4xMTcwOTM4MzIwNjc5MiIgeT0iODUuMjQ1NTMzNTMwNDI3NDEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmogY208L3RleHQ+Cjx0ZXh0IHg9IjczLjg5NDA1NjE5MjEzMzg2IiB5PSI4OC4zMzAwNTc1MjIwNzkxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTYuMiBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-21.15\\)",
             "\\(20.15\\)",
@@ -602,65 +260,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  14.74,
-                  0
-                ],
-                "C": [
-                  14.74,
-                  2.6
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "2.6 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "a cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "10°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"25,160.28493894165535 255,160.28493894165535 255,119.71506105834465\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 240 160.28493894165535 L 240 145.28493894165535 L 255 145.28493894165535\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"84.77152009121878\" y=\"160.05374538902979\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">10°</text>\n<text x=\"275\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">2.6 cm</text>\n<text x=\"136.52581788297985\" y=\"125.30405984427813\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">a cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjI1LDE2MC4yODQ5Mzg5NDE2NTUzNSAyNTUsMTYwLjI4NDkzODk0MTY1NTM1IDI1NSwxMTkuNzE1MDYxMDU4MzQ0NjUiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSAyNDAgMTYwLjI4NDkzODk0MTY1NTM1IEwgMjQwIDE0NS4yODQ5Mzg5NDE2NTUzNSBMIDI1NSAxNDUuMjg0OTM4OTQxNjU1MzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPgo8dGV4dCB4PSI4NC43NzE1MjAwOTEyMTg3OCIgeT0iMTYwLjA1Mzc0NTM4OTAyOTc5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDMyZjJmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMMKwPC90ZXh0Pgo8dGV4dCB4PSIyNzUiIHk9IjE0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi42IGNtPC90ZXh0Pgo8dGV4dCB4PSIxMzYuNTI1ODE3ODgyOTc5ODUiIHk9IjEyNS4zMDQwNTk4NDQyNzgxMyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+YSBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-14.97\\)",
             "\\(13.97\\)",
@@ -700,65 +301,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  5.67
-                ],
-                "C": [
-                  7,
-                  5.67
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "7 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "b cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "51°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,189.6 60,60 220,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 75 L 75 75 L 75 60\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"75.06582833065283\" y=\"163.00853253311428\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">51°</text>\n<text x=\"140\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">7 cm</text>\n<text x=\"35\" y=\"129.8\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">b cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDE4OS42IDYwLDYwIDIyMCw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDYwIDc1IEwgNzUgNzUgTCA3NSA2MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9Ijc1LjA2NTgyODMzMDY1MjgzIiB5PSIxNjMuMDA4NTMyNTMzMTE0MjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUxwrA8L3RleHQ+Cjx0ZXh0IHg9IjE0MCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjcgY208L3RleHQ+Cjx0ZXh0IHg9IjM1IiB5PSIxMjkuOCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+YiBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-5.67\\)",
             "\\(4.67\\)",
@@ -798,65 +342,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  9,
-                  0
-                ],
-                "C": [
-                  0,
-                  7.55
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "9 m"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "e m"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "right": true
-                },
-                {
-                  "at": "B",
-                  "label": "40°"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,194.22222222222223 220,194.22222222222223 60,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 75 194.22222222222223 L 75 179.22222222222223 L 60 179.22222222222223\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"187.1100180580948\" y=\"187.25355112384415\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">40°</text>\n<text x=\"140\" y=\"224.22222222222223\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">9 m</text>\n<text x=\"156.06732148139824\" y=\"112.95801265646419\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">e m</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDE5NC4yMjIyMjIyMjIyMjIyMyAyMjAsMTk0LjIyMjIyMjIyMjIyMjIzIDYwLDYwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNzUgMTk0LjIyMjIyMjIyMjIyMjIzIEwgNzUgMTc5LjIyMjIyMjIyMjIyMjIzIEwgNjAgMTc5LjIyMjIyMjIyMjIyMjIzIiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMTg3LjExMDAxODA1ODA5NDgiIHk9IjE4Ny4yNTM1NTExMjM4NDQxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NDDCsDwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSIyMjQuMjIyMjIyMjIyMjIyMjMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjkgbTwvdGV4dD4KPHRleHQgeD0iMTU2LjA2NzMyMTQ4MTM5ODI0IiB5PSIxMTIuOTU4MDEyNjU2NDY0MTkiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmUgbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-11.75\\)",
             "\\(10.75\\)",
@@ -896,65 +383,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral, correct to two decimal places.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  38.7,
-                  0
-                ],
-                "C": [
-                  34.6,
-                  11.91
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "h cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "12.6 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "label": "71°"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"45.000000000000014,169.23643410852713 235,169.23643410852713 214.8708010335917,110.76356589147287\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 200.68755110747455 115.6457192619947 L 205.57007066089716 129.82884313547356 L 219.75332058701431 124.94668976495171\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"217.08991023300317\" y=\"161.46033593505825\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">71°</text>\n<text x=\"140\" y=\"209.23643410852713\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">h cm</text>\n<text x=\"258.02935622157986\" y=\"133.60745437534723\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">12.6 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjQ1LjAwMDAwMDAwMDAwMDAxNCwxNjkuMjM2NDM0MTA4NTI3MTMgMjM1LDE2OS4yMzY0MzQxMDg1MjcxMyAyMTQuODcwODAxMDMzNTkxNywxMTAuNzYzNTY1ODkxNDcyODciIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSAyMDAuNjg3NTUxMTA3NDc0NTUgMTE1LjY0NTcxOTI2MTk5NDcgTCAyMDUuNTcwMDcwNjYwODk3MTYgMTI5LjgyODg0MzEzNTQ3MzU2IEwgMjE5Ljc1MzMyMDU4NzAxNDMxIDEyNC45NDY2ODk3NjQ5NTE3MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjIxNy4wODk5MTAyMzMwMDMxNyIgeT0iMTYxLjQ2MDMzNTkzNTA1ODI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDMyZjJmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43McKwPC90ZXh0Pgo8dGV4dCB4PSIxNDAiIHk9IjIwOS4yMzY0MzQxMDg1MjcxMyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aCBjbTwvdGV4dD4KPHRleHQgeD0iMjU4LjAyOTM1NjIyMTU3OTg2IiB5PSIxMzMuNjA3NDU0Mzc1MzQ3MjMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEyLjYgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-4.34\\)",
             "\\(3.34\\)",
@@ -994,65 +424,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  12.65,
-                  0
-                ],
-                "C": [
-                  0,
-                  6
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "14 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "6 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "right": true
-                },
-                {
-                  "at": "B",
-                  "label": "\\theta"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,135.88932806324112 220,135.88932806324112 60,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 75 135.88932806324112 L 75 120.88932806324112 L 60 120.88932806324112\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"185.8546381399805\" y=\"133.20204873643596\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"150.71367078909427\" y=\"80.35667478461346\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">14 cm</text>\n<text x=\"35\" y=\"102.94466403162056\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">6 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDEzNS44ODkzMjgwNjMyNDExMiAyMjAsMTM1Ljg4OTMyODA2MzI0MTEyIDYwLDYwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNzUgMTM1Ljg4OTMyODA2MzI0MTEyIEwgNzUgMTIwLjg4OTMyODA2MzI0MTEyIEwgNjAgMTIwLjg4OTMyODA2MzI0MTEyIiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMTg1Ljg1NDYzODEzOTk4MDUiIHk9IjEzMy4yMDIwNDg3MzY0MzU5NiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+zrg8L3RleHQ+Cjx0ZXh0IHg9IjE1MC43MTM2NzA3ODkwOTQyNyIgeT0iODAuMzU2Njc0Nzg0NjEzNDYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0IGNtPC90ZXh0Pgo8dGV4dCB4PSIzNSIgeT0iMTAyLjk0NDY2NDAzMTYyMDU2IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj42IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-25.4\\)",
             "\\(24.4\\)",
@@ -1092,65 +465,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  5
-                ],
-                "C": [
-                  7.48,
-                  5
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "5 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "9 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,166.951871657754 60,60 220,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 75 L 75 75 L 75 60\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"76.49599922820589\" y=\"141.08308468024174\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"35\" y=\"118.475935828877\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">5 cm</text>\n<text x=\"153.893143243389\" y=\"139.26007812098698\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">9 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDE2Ni45NTE4NzE2NTc3NTQgNjAsNjAgMjIwLDYwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNjAgNzUgTCA3NSA3NSBMIDc1IDYwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iNzYuNDk1OTk5MjI4MjA1ODkiIHk9IjE0MS4wODMwODQ2ODAyNDE3NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+zrg8L3RleHQ+Cjx0ZXh0IHg9IjM1IiB5PSIxMTguNDc1OTM1ODI4ODc3IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IGNtPC90ZXh0Pgo8dGV4dCB4PSIxNTMuODkzMTQzMjQzMzg5IiB5PSIxMzkuMjYwMDc4MTIwOTg2OTgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjkgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-33.7\\)",
             "\\(32.7\\)",
@@ -1190,65 +506,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  8
-                ],
-                "B": [
-                  14,
-                  8
-                ],
-                "C": [
-                  14,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "14 cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "8 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "right": true
-                },
-                {
-                  "at": "C",
-                  "label": "\\theta"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 220,60 220,151.42857142857144\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 205 60 L 205 75 L 220 75\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"202.43256136323683\" y=\"126.15671816942061\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"140\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">14 cm</text>\n<text x=\"245\" y=\"110.71428571428572\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDIyMCw2MCAyMjAsMTUxLjQyODU3MTQyODU3MTQ0IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMjA1IDYwIEwgMjA1IDc1IEwgMjIwIDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMjAyLjQzMjU2MTM2MzIzNjgzIiB5PSIxMjYuMTU2NzE4MTY5NDIwNjEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs64PC90ZXh0Pgo8dGV4dCB4PSIxNDAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNCBjbTwvdGV4dD4KPHRleHQgeD0iMjQ1IiB5PSIxMTAuNzE0Mjg1NzE0Mjg1NzIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjggY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-60.3\\)",
             "\\(59.3\\)",
@@ -1288,65 +547,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  11.6,
-                  0
-                ],
-                "C": [
-                  8.01,
-                  1.24
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "11.6 cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "3.8 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"30.000000000000014,151.75862068965517 250,151.75862068965517 181.91379310344826,128.24137931034483\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 167.0903636005483 130.5361424293955 L 181.26843827810904 135.4333047135669 L 196.091867781009 133.13854159451623\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"205.6207250990358\" y=\"149.3101336443117\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"140\" y=\"176.75862068965517\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">11.6 cm</text>\n<text x=\"222.48644626395264\" y=\"126.09590042991901\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">3.8 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjMwLjAwMDAwMDAwMDAwMDAxNCwxNTEuNzU4NjIwNjg5NjU1MTcgMjUwLDE1MS43NTg2MjA2ODk2NTUxNyAxODEuOTEzNzkzMTAzNDQ4MjYsMTI4LjI0MTM3OTMxMDM0NDgzIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTY3LjA5MDM2MzYwMDU0ODMgMTMwLjUzNjE0MjQyOTM5NTUgTCAxODEuMjY4NDM4Mjc4MTA5MDQgMTM1LjQzMzMwNDcxMzU2NjkgTCAxOTYuMDkxODY3NzgxMDA5IDEzMy4xMzg1NDE1OTQ1MTYyMyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjIwNS42MjA3MjUwOTkwMzU4IiB5PSIxNDkuMzEwMTMzNjQ0MzExNyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+zrg8L3RleHQ+Cjx0ZXh0IHg9IjE0MCIgeT0iMTc2Ljc1ODYyMDY4OTY1NTE3IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMS42IGNtPC90ZXh0Pgo8dGV4dCB4PSIyMjIuNDg2NDQ2MjYzOTUyNjQiIHk9IjEyNi4wOTU5MDA0Mjk5MTkwMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My44IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-19.1\\)",
             "\\(18.1\\)",
@@ -1386,65 +588,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  8,
-                  0
-                ],
-                "C": [
-                  3.25,
-                  3.93
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "8 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "5.1 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,138.60000000000002 220,138.60000000000002 125,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 115.4406986773436 71.5594012917045 L 126.99784968614392 81.12142307372245 L 136.55715100880033 69.56202178201795\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"187.06951261329385\" y=\"131.7432297621154\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"140\" y=\"168.60000000000002\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8 cm</text>\n<text x=\"73.23433118049249\" y=\"88.36783112890602\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">5.1 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDEzOC42MDAwMDAwMDAwMDAwMiAyMjAsMTM4LjYwMDAwMDAwMDAwMDAyIDEyNSw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDExNS40NDA2OTg2NzczNDM2IDcxLjU1OTQwMTI5MTcwNDUgTCAxMjYuOTk3ODQ5Njg2MTQzOTIgODEuMTIxNDIzMDczNzIyNDUgTCAxMzYuNTU3MTUxMDA4ODAwMzMgNjkuNTYyMDIxNzgyMDE3OTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPgo8dGV4dCB4PSIxODcuMDY5NTEyNjEzMjkzODUiIHk9IjEzMS43NDMyMjk3NjIxMTU0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDMyZjJmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7OuDwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSIxNjguNjAwMDAwMDAwMDAwMDIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjggY208L3RleHQ+Cjx0ZXh0IHg9IjczLjIzNDMzMTE4MDQ5MjQ5IiB5PSI4OC4zNjc4MzExMjg5MDYwMiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NS4xIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-39.6\\)",
             "\\(38.6\\)",
@@ -1484,65 +629,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of \\theta, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  13.2,
-                  0
-                ],
-                "C": [
-                  0,
-                  4.6
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "13.2 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "4.6 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "right": true
-                },
-                {
-                  "at": "C",
-                  "label": "\\theta"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,174.84848484848484 260,174.84848484848484 60,105.15151515151516\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 75 174.84848484848484 L 75 159.84848484848484 L 60 159.84848484848484\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"71.58382059918401\" y=\"126.45535213321736\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"160\" y=\"209.84848484848484\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">13.2 cm</text>\n<text x=\"30\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">4.6 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDE3NC44NDg0ODQ4NDg0ODQ4NCAyNjAsMTc0Ljg0ODQ4NDg0ODQ4NDg0IDYwLDEwNS4xNTE1MTUxNTE1MTUxNiIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDc1IDE3NC44NDg0ODQ4NDg0ODQ4NCBMIDc1IDE1OS44NDg0ODQ4NDg0ODQ4NCBMIDYwIDE1OS44NDg0ODQ4NDg0ODQ4NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjcxLjU4MzgyMDU5OTE4NDAxIiB5PSIxMjYuNDU1MzUyMTMzMjE3MzYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs64PC90ZXh0Pgo8dGV4dCB4PSIxNjAiIHk9IjIwOS44NDg0ODQ4NDg0ODQ4NCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTMuMiBjbTwvdGV4dD4KPHRleHQgeD0iMzAiIHk9IjE0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC42IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-70.8\\)",
             "\\(69.8\\)",
@@ -1582,65 +670,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  14.56
-                ],
-                "B": [
-                  0,
-                  0
-                ],
-                "C": [
-                  7.1,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "x cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "16.2 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "26°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 60,220 138.02197802197801,220\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 205 L 75 205 L 75 220\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"73.49481452190318\" y=\"123.46272300380329\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">26°</text>\n<text x=\"99.01098901098901\" y=\"250\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">x cm</text>\n<text x=\"121.48168319181444\" y=\"134.04244995303156\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">16.2 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDYwLDIyMCAxMzguMDIxOTc4MDIxOTc4MDEsMjIwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNjAgMjA1IEwgNzUgMjA1IEwgNzUgMjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iNzMuNDk0ODE0NTIxOTAzMTgiIHk9IjEyMy40NjI3MjMwMDM4MDMyOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjbCsDwvdGV4dD4KPHRleHQgeD0iOTkuMDEwOTg5MDEwOTg5MDEiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eCBjbTwvdGV4dD4KPHRleHQgeD0iMTIxLjQ4MTY4MzE5MTgxNDQ0IiB5PSIxMzQuMDQyNDQ5OTUzMDMxNTYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE2LjIgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-7.9\\)",
             "\\(6.9\\)",
@@ -1680,65 +711,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  12.04
-                ],
-                "C": [
-                  12,
-                  12.04
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "12 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "17 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,220 60,60 219.468438538206,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 75 L 75 75 L 75 60\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"73.36701387523202\" y=\"192.65308453562605\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"139.734219269103\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">12 cm</text>\n<text x=\"157.44127804703584\" y=\"162.6482313401324\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">17 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDIyMCA2MCw2MCAyMTkuNDY4NDM4NTM4MjA2LDYwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNjAgNzUgTCA3NSA3NSBMIDc1IDYwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iNzMuMzY3MDEzODc1MjMyMDIiIHk9IjE5Mi42NTMwODQ1MzU2MjYwNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+zrg8L3RleHQ+Cjx0ZXh0IHg9IjEzOS43MzQyMTkyNjkxMDMiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMiBjbTwvdGV4dD4KPHRleHQgeD0iMTU3LjQ0MTI3ODA0NzAzNTg0IiB5PSIxNjIuNjQ4MjMxMzQwMTMyNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTcgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-44.9\\)",
             "\\(43.9\\)",
@@ -1778,65 +752,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  28.58
-                ],
-                "B": [
-                  15.2,
-                  28.58
-                ],
-                "C": [
-                  15.2,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "15.2 cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "a cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "right": true
-                },
-                {
-                  "at": "C",
-                  "label": "62°"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 145.09447165850244,60 145.09447165850244,220\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 130.09447165850244 60 L 130.09447165850244 75 L 145.09447165850244 75\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"136.62547106659218\" y=\"191.04008202344676\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">62°</text>\n<text x=\"102.54723582925122\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">15.2 cm</text>\n<text x=\"170.09447165850244\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">a cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDE0NS4wOTQ0NzE2NTg1MDI0NCw2MCAxNDUuMDk0NDcxNjU4NTAyNDQsMjIwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTMwLjA5NDQ3MTY1ODUwMjQ0IDYwIEwgMTMwLjA5NDQ3MTY1ODUwMjQ0IDc1IEwgMTQ1LjA5NDQ3MTY1ODUwMjQ0IDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMTM2LjYyNTQ3MTA2NjU5MjE4IiB5PSIxOTEuMDQwMDgyMDIzNDQ2NzYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYywrA8L3RleHQ+Cjx0ZXh0IHg9IjEwMi41NDcyMzU4MjkyNTEyMiIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE1LjIgY208L3RleHQ+Cjx0ZXh0IHg9IjE3MC4wOTQ0NzE2NTg1MDI0NCIgeT0iMTQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-8.08\\)",
             "\\(7.08\\)",
@@ -1876,65 +793,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  7.88
-                ],
-                "B": [
-                  0,
-                  0
-                ],
-                "C": [
-                  2.26,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "a m"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "8.2 m"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "right": true
-                },
-                {
-                  "at": "C",
-                  "label": "74°"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"104.1497461928934,15 104.1497461928934,265 175.85025380710658,265\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 104.1497461928934 250 L 119.1497461928934 250 L 119.1497461928934 265\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"158.27992610126375\" y=\"256.7605293040359\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">74°</text>\n<text x=\"140\" y=\"295\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">a m</text>\n<text x=\"164.03118169214792\" y=\"138.10780829641442\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8.2 m</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjEwNC4xNDk3NDYxOTI4OTM0LDE1IDEwNC4xNDk3NDYxOTI4OTM0LDI2NSAxNzUuODUwMjUzODA3MTA2NTgsMjY1IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMTA0LjE0OTc0NjE5Mjg5MzQgMjUwIEwgMTE5LjE0OTc0NjE5Mjg5MzQgMjUwIEwgMTE5LjE0OTc0NjE5Mjg5MzQgMjY1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMTU4LjI3OTkyNjEwMTI2Mzc1IiB5PSIyNTYuNzYwNTI5MzA0MDM1OSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI2QzMmYyZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NzTCsDwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPmEgbTwvdGV4dD4KPHRleHQgeD0iMTY0LjAzMTE4MTY5MjE0NzkyIiB5PSIxMzguMTA3ODA4Mjk2NDE0NDIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjguMiBtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-2.26\\)",
             "\\(1.26\\)",
@@ -1974,65 +834,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  15,
-                  0
-                ],
-                "C": [
-                  4.27,
-                  -6.77
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "15 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "8 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 220,60 105.54666666666665,132.2133333333333\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 97.5445292086734 119.52610368681941 L 110.23051366203327 111.52199234019812 L 118.23265112002653 124.20922198671204\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"90.64725022251412\" y=\"81.90402478105757\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"140\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">15 cm</text>\n<text x=\"61.627950589143495\" y=\"114.44356242998875\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDIyMCw2MCAxMDUuNTQ2NjY2NjY2NjY2NjUsMTMyLjIxMzMzMzMzMzMzMzMiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSA5Ny41NDQ1MjkyMDg2NzM0IDExOS41MjYxMDM2ODY4MTk0MSBMIDExMC4yMzA1MTM2NjIwMzMyNyAxMTEuNTIxOTkyMzQwMTk4MTIgTCAxMTguMjMyNjUxMTIwMDI2NTMgMTI0LjIwOTIyMTk4NjcxMjA0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iOTAuNjQ3MjUwMjIyNTE0MTIiIHk9IjgxLjkwNDAyNDc4MTA1NzU3IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDMyZjJmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7OuDwvdGV4dD4KPHRleHQgeD0iMTQwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUgY208L3RleHQ+Cjx0ZXh0IHg9IjYxLjYyNzk1MDU4OTE0MzQ5NSIgeT0iMTE0LjQ0MzU2MjQyOTk4ODc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-57.8\\)",
             "\\(56.8\\)",
@@ -2072,65 +875,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  19,
-                  0
-                ],
-                "C": [
-                  11.84,
-                  9.22
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "19 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "15 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "\\theta"
-                },
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,137.6421052631579 220,137.6421052631579 159.70526315789473,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 147.8703642150036 69.21602772410948 L 157.0705750410276 81.06322658108452 L 168.90547398391874 71.84719885697504\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"188.56474470604732\" y=\"127.25299467794149\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">θ</text>\n<text x=\"140\" y=\"167.6421052631579\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">19 cm</text>\n<text x=\"94.49258537209823\" y=\"84.09622106009374\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">15 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDEzNy42NDIxMDUyNjMxNTc5IDIyMCwxMzcuNjQyMTA1MjYzMTU3OSAxNTkuNzA1MjYzMTU3ODk0NzMsNjAiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSAxNDcuODcwMzY0MjE1MDAzNiA2OS4yMTYwMjc3MjQxMDk0OCBMIDE1Ny4wNzA1NzUwNDEwMjc2IDgxLjA2MzIyNjU4MTA4NDUyIEwgMTY4LjkwNTQ3Mzk4MzkxODc0IDcxLjg0NzE5ODg1Njk3NTA0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMTg4LjU2NDc0NDcwNjA0NzMyIiB5PSIxMjcuMjUyOTk0Njc3OTQxNDkiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPs64PC90ZXh0Pgo8dGV4dCB4PSIxNDAiIHk9IjE2Ny42NDIxMDUyNjMxNTc5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xOSBjbTwvdGV4dD4KPHRleHQgeD0iOTQuNDkyNTg1MzcyMDk4MjMiIHk9Ijg0LjA5NjIyMTA2MDA5Mzc0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xNSBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(-52.1\\)",
             "\\(51.1\\)",
@@ -2170,65 +916,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  10
-                ],
-                "C": [
-                  1.76,
-                  10
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "10 m"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "x m"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "right": true
-                },
-                {
-                  "at": "C",
-                  "label": "80°"
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"118,265 118,15 162,15\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 118 30 L 133 30 L 133 15\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"145.14926484474626\" y=\"34.14399960150931\" font-family=\"Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">80°</text>\n<text x=\"93\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">10 m</text>\n<text x=\"164.62156935134792\" y=\"149.33339620583723\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">x m</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjExOCwyNjUgMTE4LDE1IDE2MiwxNSIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDExOCAzMCBMIDEzMyAzMCBMIDEzMyAxNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjE0NS4xNDkyNjQ4NDQ3NDYyNiIgeT0iMzQuMTQzOTk5NjAxNTA5MzEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjgwwrA8L3RleHQ+Cjx0ZXh0IHg9IjkzIiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIG08L3RleHQ+Cjx0ZXh0IHg9IjE2NC42MjE1NjkzNTEzNDc5MiIgeT0iMTQ5LjMzMzM5NjIwNTgzNzIzIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54IG08L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-10.15\\)",
             "\\(10.15\\)",
@@ -2268,65 +957,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  6.25
-                ],
-                "B": [
-                  8.6,
-                  6.25
-                ],
-                "C": [
-                  8.6,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "8.6 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "y cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "36°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 220,60 220,176.27906976744185\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 205 60 L 205 75 L 220 75\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"93.28626430788019\" y=\"75.81779129147634\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">36°</text>\n<text x=\"140\" y=\"40\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8.6 cm</text>\n<text x=\"125.3026995854871\" y=\"143.36302025409066\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">y cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDIyMCw2MCAyMjAsMTc2LjI3OTA2OTc2NzQ0MTg1IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gMjA1IDYwIEwgMjA1IDc1IEwgMjIwIDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iOTMuMjg2MjY0MzA3ODgwMTkiIHk9Ijc1LjgxNzc5MTI5MTQ3NjM0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDMyZjJmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zNsKwPC90ZXh0Pgo8dGV4dCB4PSIxNDAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44LjYgY208L3RleHQ+Cjx0ZXh0IHg9IjEyNS4zMDI2OTk1ODU0ODcxIiB5PSIxNDMuMzYzMDIwMjU0MDkwNjYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPnkgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(-10.63\\)",
             "\\(10.63\\)",
@@ -2366,65 +998,8 @@
           "difficulty": "easy",
           "stem": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  7.6,
-                  0
-                ],
-                "C": [
-                  7.6,
-                  9.39
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "7.6 cm"
-                },
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "a cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "51°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,220 189.49946751863683,220 189.49946751863683,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 174.49946751863683 220 L 174.49946751863683 205 L 189.49946751863683 205\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"91.58860801535654\" y=\"209.92817716226227\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">51°</text>\n<text x=\"124.74973375931842\" y=\"250\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">7.6 cm</text>\n<text x=\"214.49946751863683\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">a cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDIyMCAxODkuNDk5NDY3NTE4NjM2ODMsMjIwIDE4OS40OTk0Njc1MTg2MzY4Myw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDE3NC40OTk0Njc1MTg2MzY4MyAyMjAgTCAxNzQuNDk5NDY3NTE4NjM2ODMgMjA1IEwgMTg5LjQ5OTQ2NzUxODYzNjgzIDIwNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjkxLjU4ODYwODAxNTM1NjU0IiB5PSIyMDkuOTI4MTc3MTYyMjYyMjciIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjUxwrA8L3RleHQ+Cjx0ZXh0IHg9IjEyNC43NDk3MzM3NTkzMTg0MiIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43LjYgY208L3RleHQ+Cjx0ZXh0IHg9IjIxNC40OTk0Njc1MTg2MzY4MyIgeT0iMTQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5hIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(-9.39\\)",
             "\\(10.39\\)",
@@ -2464,58 +1039,8 @@
           "difficulty": "easy",
           "stem": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  0,
-                  3
-                ],
-                "C": [
-                  2.52,
-                  3
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "3 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "label": "40°"
-                },
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,220 60,60 194.4,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 75 L 75 75 L 75 60\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"71.97938939664135\" y=\"192.11392042697037\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#d32f2f\" text-anchor=\"middle\">40°</text>\n<text x=\"35\" y=\"145\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">3 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDIyMCA2MCw2MCAxOTQuNCw2MCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgo8cGF0aCBkPSJNIDYwIDc1IEwgNzUgNzUgTCA3NSA2MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjcxLjk3OTM4OTM5NjY0MTM1IiB5PSIxOTIuMTEzOTIwNDI2OTcwMzciIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkMzJmMmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjQwwrA8L3RleHQ+Cjx0ZXh0IHg9IjM1IiB5PSIxNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjMgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "Sides: 3.92 cm, 2.52 cm. Angle: 50°",
             "Sides: 4.67 cm, 2.52 cm. Angle: 50°",
@@ -2547,61 +1072,8 @@
           "difficulty": "easy",
           "stem": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  6
-                ],
-                "B": [
-                  0,
-                  0
-                ],
-                "C": [
-                  6.97,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "6 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "9.2 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "B",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,60 60,197.73314203730274 220,197.73314203730274\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 60 182.73314203730274 L 75 182.73314203730274 L 75 197.73314203730274\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"35\" y=\"133.86657101865137\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">6 cm</text>\n<text x=\"156.3100430757904\" y=\"114.91973764560821\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">9.2 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDYwIDYwLDE5Ny43MzMxNDIwMzczMDI3NCAyMjAsMTk3LjczMzE0MjAzNzMwMjc0IiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiIC8+CjxwYXRoIGQ9Ik0gNjAgMTgyLjczMzE0MjAzNzMwMjc0IEwgNzUgMTgyLjczMzE0MjAzNzMwMjc0IEwgNzUgMTk3LjczMzE0MjAzNzMwMjc0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxOTc2ZDIiIHN0cm9rZS13aWR0aD0iMiIgLz4KPHRleHQgeD0iMzUiIHk9IjEzMy44NjY1NzEwMTg2NTEzNyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NiBjbTwvdGV4dD4KPHRleHQgeD0iMTU2LjMxMDA0MzA3NTc5MDQiIHk9IjExNC45MTk3Mzc2NDU2MDgyMSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM4OGUzYyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OS4yIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "Side: 6.97 cm. Angles: 40.7°, 49.3°",
             "Side: 10.98 cm. Angles: 40.7°, 49.3°",
@@ -2633,61 +1105,8 @@
           "difficulty": "easy",
           "stem": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "A": [
-                  0,
-                  0
-                ],
-                "B": [
-                  9.78,
-                  0
-                ],
-                "C": [
-                  2.56,
-                  4.29
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "A"
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "B",
-                    "C"
-                  ],
-                  "text": "8.4 cm"
-                },
-                {
-                  "between": [
-                    "C",
-                    "A"
-                  ],
-                  "text": "5 cm"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "C",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "<svg width=\"280\" height=\"280\" viewBox=\"0 0 280 280\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<filter id=\"shadow\" x=\"-10%\" y=\"-10%\" width=\"120%\" height=\"120%\">\n<feDropShadow dx=\"2\" dy=\"2\" stdDeviation=\"3\" flood-opacity=\"0.15\" />\n</filter>\n</defs>\n<rect width=\"280\" height=\"280\" fill=\"#fdfdfd\" rx=\"10\" />\n<polygon points=\"60,130.1840490797546 220,130.1840490797546 101.88139059304703,60\" fill=\"#e3f2fd\" stroke=\"#1976d2\" stroke-width=\"3\" stroke-linejoin=\"round\" filter=\"url(#shadow)\" />\n<path d=\"M 94.19488505635596 72.88090185640809 L 107.09025535994635 80.54310941906775 L 114.77676089663743 67.66220756265966\" fill=\"none\" stroke=\"#1976d2\" stroke-width=\"2\" />\n<text x=\"173.71104123428964\" y=\"78.59974070055998\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">8.4 cm</text>\n<text x=\"59.47252553584336\" y=\"87.28118197872551\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#388e3c\" text-anchor=\"middle\">5 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0xMCUiIHk9Ii0xMCUiIHdpZHRoPSIxMjAlIiBoZWlnaHQ9IjEyMCUiPgo8ZmVEcm9wU2hhZG93IGR4PSIyIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1vcGFjaXR5PSIwLjE1IiAvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI2ZkZmRmZCIgcng9IjEwIiAvPgo8cG9seWdvbiBwb2ludHM9IjYwLDEzMC4xODQwNDkwNzk3NTQ2IDIyMCwxMzAuMTg0MDQ5MDc5NzU0NiAxMDEuODgxMzkwNTkzMDQ3MDMsNjAiIGZpbGw9IiNlM2YyZmQiIHN0cm9rZT0iIzE5NzZkMiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWx0ZXI9InVybCgjc2hhZG93KSIgLz4KPHBhdGggZD0iTSA5NC4xOTQ4ODUwNTYzNTU5NiA3Mi44ODA5MDE4NTY0MDgwOSBMIDEwNy4wOTAyNTUzNTk5NDYzNSA4MC41NDMxMDk0MTkwNjc3NSBMIDExNC43NzY3NjA4OTY2Mzc0MyA2Ny42NjIyMDc1NjI2NTk2NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NmQyIiBzdHJva2Utd2lkdGg9IjIiIC8+Cjx0ZXh0IHg9IjE3My43MTEwNDEyMzQyODk2NCIgeT0iNzguNTk5NzQwNzAwNTU5OTgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzODhlM2MiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjguNCBjbTwvdGV4dD4KPHRleHQgeD0iNTkuNDcyNTI1NTM1ODQzMzYiIHk9Ijg3LjI4MTE4MTk3ODcyNTUxIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzg4ZTNjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "Side: 9.78 cm. Angles: 30.8°, 59.2°",
             "Side: 6.75 cm. Angles: 30.8°, 59.2°",

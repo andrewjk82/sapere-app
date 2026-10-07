@@ -1056,7 +1056,7 @@
           "id": "jrhy2008-q30",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Using the same diagram as the previous question, \\(\\angle BYX\\) is closest to:",
+          "stem": "\\(\\triangle ABC\\) is isosceles with \\(AB=CB\\). \\(Y\\) and \\(Z\\) are the midpoints of \\(AB\\) and \\(CB\\) respectively. \\(X\\) is a point on \\(AC\\) such that \\(YX=ZX\\) (by symmetry, \\(X\\) is the midpoint of \\(AC\\), directly below the apex \\(B\\)). Given \\(AC=6.2\\text{ cm}\\) and the height from \\(B\\) to \\(AC\\) is \\(4.4\\text{ cm}\\), the angle \\(\\angle BYX\\) is closest to:",
           "options": [
             "\\(35°\\)",
             "\\(110°\\)",
@@ -1149,31 +1149,37 @@
       "title": "Congruence",
       "questions": [
         {
-          "id": "jrhy2008-q34",
+          "id": "jrhy2008-q34a",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Question 34 — congruent triangles in a rhombus, and the circumcircle of a right-angled triangle (parts a–b).",
+          "stem": "\\(ABCD\\) is a rhombus and \\(X\\) is a point on \\(BC\\). The line \\(AX\\) cuts the diagonal \\(BD\\) at the point \\(L\\).",
+          "figure": {
+            "svg": "fig:4f157e986a"
+          },
           "parts": [
             {
-              "id": "jrhy2008-q34a",
+              "id": "jrhy2008-q34a-i",
               "type": "review",
-              "stem": "(a) \\(ABCD\\) is a rhombus and \\(X\\) is a point on \\(BC\\). The line \\(AX\\) cuts the diagonal \\(BD\\) at the point \\(L\\). (i) Prove that \\(\\triangle ADL\\) and \\(\\triangle CDL\\) are congruent. (ii) Prove that \\(\\angle LCD=\\angle LXB\\).",
-              "figure": {
-                "svg": "fig:4f157e986a"
-              },
+              "stem": "Prove that \\(\\triangle ADL\\) and \\(\\triangle CDL\\) are congruent.",
               "answer": "",
               "steps": [
                 {
                   "explain": "In \\(\\triangle ADL\\) and \\(\\triangle CDL\\): \\(AD=CD\\) (sides of a rhombus are all equal); \\(DL\\) is common to both triangles; and \\(\\angle ADL=\\angle CDL\\) (the diagonal \\(BD\\) of a rhombus bisects the vertex angle \\(\\angle ADC\\), a standard rhombus property).",
-                  "work": "\\(AD=CD\\) (rhombus sides); \\(DL=DL\\) (common); \\(\\angle ADL=\\angle CDL\\) (diagonal bisects vertex angle)",
-                  "figure": {
-                    "svg": "fig:4f157e986a"
-                  }
+                  "work": "\\(AD=CD\\) (rhombus sides); \\(DL=DL\\) (common); \\(\\angle ADL=\\angle CDL\\) (diagonal bisects vertex angle)"
                 },
                 {
                   "explain": "With two sides and the included angle equal (SAS), the triangles are congruent.",
                   "work": "\\(\\therefore \\triangle ADL \\equiv \\triangle CDL\\) (SAS)"
-                },
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "jrhy2008-q34a-ii",
+              "type": "review",
+              "stem": "Prove that \\(\\angle LCD=\\angle LXB\\).",
+              "answer": "",
+              "steps": [
                 {
                   "explain": "For part (ii): since the triangles are congruent, corresponding angles are equal — in particular, \\(\\angle DAL=\\angle DCL\\).",
                   "work": "\\(\\angle DAL = \\angle DCL\\) (corresponding angles, congruent triangles)"
@@ -1187,21 +1193,33 @@
                   "work": "\\(\\therefore \\angle LCD = \\angle LXB\\), as required."
                 }
               ],
-              "manual": true,
-              "xp": 3
-            },
+              "xp": 2
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jrhy2008-q34b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The points are \\(L(3,0)\\), \\(M(7,-3)\\) and \\(N(13,5)\\).",
+          "parts": [
             {
-              "id": "jrhy2008-q34b",
+              "id": "jrhy2008-q34b-i",
               "type": "mc",
-              "stem": "(b) The points \\(L(3,0)\\), \\(M(7,-3)\\) and \\(N(13,5)\\). (i) Prove that \\(\\triangle LMN\\) is right-angled. (ii) Find the equation of the circumcircle of \\(\\triangle LMN\\).",
+              "stem": "Prove that \\(\\triangle LMN\\) is right-angled by finding the vertex where the right angle is located.",
               "options": [
-                "Right angle at \\(M\\); circumcircle \\((x-8)^2+(y-2.5)^2=25\\)",
-                "Right angle at \\(L\\); circumcircle \\((x-8)^2+(y-2.5)^2=31.25\\)",
-                "Right angle at \\(N\\); circumcircle \\((x-10)^2+(y-1)^2=31.25\\)",
-                "Right angle at \\(M\\); circumcircle \\((x-8)^2+(y-2.5)^2=31.25\\)"
+                "Right angle at \\(L\\)",
+                "Right angle at \\(M\\)",
+                "Right angle at \\(N\\)"
               ],
-              "answer": 3,
-              "hint": "Find the gradients (or direction vectors) of the three sides and check which pair is perpendicular. For a right-angled triangle, the circumcircle's centre is the midpoint of the hypotenuse, and its radius is half the hypotenuse.",
+              "answer": 1,
+              "hint": "Find the direction vectors of the sides and check which pair is perpendicular.",
               "steps": [
                 {
                   "explain": "Find the direction vectors of two sides meeting at \\(M\\): \\(\\vec{MN}\\) and \\(\\vec{ML}\\).",
@@ -1214,7 +1232,22 @@
                 {
                   "explain": "A zero dot product confirms the vectors are perpendicular, so the right angle is at \\(M\\).",
                   "work": "\\(\\therefore \\triangle LMN\\) has a right angle at \\(M\\)"
-                },
+                }
+              ],
+              "xp": 2
+            },
+            {
+              "id": "jrhy2008-q34b-ii",
+              "type": "mc",
+              "stem": "Find the equation of the circumcircle of \\(\\triangle LMN\\).",
+              "options": [
+                "\\((x-8)^2+(y-2.5)^2=25\\)",
+                "\\((x-10)^2+(y-1)^2=31.25\\)",
+                "\\((x-8)^2+(y-2.5)^2=31.25\\)"
+              ],
+              "answer": 2,
+              "hint": "For a right-angled triangle, the circumcircle's centre is the midpoint of the hypotenuse, and its radius is half the hypotenuse.",
+              "steps": [
                 {
                   "explain": "For a right-angled triangle, the circumcircle has its centre at the midpoint of the hypotenuse (the side opposite the right angle), which is \\(LN\\) here.",
                   "work": "Centre \\(= \\left(\\dfrac{3+13}{2}, \\dfrac{0+5}{2}\\right) = (8, 2.5)\\)"
@@ -1228,10 +1261,9 @@
                   "work": "\\((x-8)^2+(y-2.5)^2 = 31.25\\)"
                 }
               ],
-              "xp": 3
+              "xp": 2
             }
           ],
-          "manual": true,
           "meta": {
             "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
             "school": "James Ruse Agricultural High School",

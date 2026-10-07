@@ -8723,18 +8723,23 @@
           "parts": [
             {
               "id": "manly2022-y7-frac-q2a",
-              "type": "short",
+              "type": "mc",
               "stem": "What is the highest common factor (HCF) of \\(24\\) and \\(60\\)?",
               "difficulty": "medium",
-              "answer": "12",
+              "answer": 1,
               "hint": "List the prime factors of both numbers and keep only the factors they share.",
               "steps": [
                 {
-                  "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
+                  "explain": "Find the prime factorization of each number.",
+                  "work": "\\(24 = 2^3 \\times 3\\)\n\\(60 = 2^2 \\times 3 \\times 5\\)"
                 },
                 {
-                  "explain": "Multiply the common prime factors.",
-                  "work": "\\(\\operatorname{HCF}(24,60)=12\\)"
+                  "explain": "Identify the common prime factors and take the lowest power of each.",
+                  "work": "Common primes are 2 and 3.\nLowest power of 2 is \\(2^2\\).\nLowest power of 3 is \\(3^1\\)."
+                },
+                {
+                  "explain": "Multiply these together to find the Highest Common Factor (HCF).",
+                  "work": "\\(\\operatorname{HCF}(24, 60) = 2^2 \\times 3 = 4 \\times 3 = 12\\)"
                 }
               ],
               "xp": 1,
@@ -8750,22 +8755,33 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "options": [
+                "6",
+                "12",
+                "24",
+                "4"
+              ]
             },
             {
               "id": "manly2022-y7-frac-q2b",
-              "type": "short",
+              "type": "mc",
               "stem": "What is the lowest common multiple (LCM) of \\(24\\) and \\(60\\)?",
               "difficulty": "medium",
-              "answer": "120",
+              "answer": 2,
               "hint": "Build a number that is divisible by both given numbers.",
               "steps": [
                 {
-                  "explain": "Use the prime factors and take each prime with the larger power needed by either number."
+                  "explain": "Find the prime factorization of each number.",
+                  "work": "\\(24 = 2^3 \\times 3\\)\n\\(60 = 2^2 \\times 3 \\times 5\\)"
                 },
                 {
-                  "explain": "Multiply these factors to obtain the LCM.",
-                  "work": "\\(\\operatorname{LCM}(24,60)=120\\)"
+                  "explain": "Identify all prime factors that appear in either number and take the highest power of each.",
+                  "work": "Primes are 2, 3, and 5.\nHighest power of 2 is \\(2^3\\).\nHighest power of 3 is \\(3^1\\).\nHighest power of 5 is \\(5^1\\)."
+                },
+                {
+                  "explain": "Multiply these together to find the Lowest Common Multiple (LCM).",
+                  "work": "\\(\\operatorname{LCM}(24, 60) = 2^3 \\times 3 \\times 5 = 8 \\times 3 \\times 5 = 120\\)"
                 }
               ],
               "xp": 1,
@@ -8781,7 +8797,13 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "options": [
+                "60",
+                "240",
+                "120",
+                "24"
+              ]
             }
           ],
           "hint": "Use prime factors: the HCF uses shared factors, while the LCM must be a multiple of both numbers.",
@@ -8808,18 +8830,23 @@
           "parts": [
             {
               "id": "manly2022-y7-frac-q2-vara",
-              "type": "short",
+              "type": "mc",
               "stem": "What is the highest common factor (HCF) of \\(36\\) and \\(84\\)?",
               "difficulty": "medium",
-              "answer": "12",
+              "answer": 0,
               "hint": "Compare the prime factorizations and identify their common factors.",
               "steps": [
                 {
-                  "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
+                  "explain": "Find the prime factorization of each number.",
+                  "work": "\\(36 = 2^2 \\times 3^2\\)\n\\(84 = 2^2 \\times 3 \\times 7\\)"
                 },
                 {
-                  "explain": "Multiply the common prime factors.",
-                  "work": "\\(\\operatorname{HCF}(36,84)=12\\)"
+                  "explain": "Identify the common prime factors and take the lowest power of each.",
+                  "work": "Common primes are 2 and 3.\nLowest power of 2 is \\(2^2\\).\nLowest power of 3 is \\(3^1\\)."
+                },
+                {
+                  "explain": "Multiply these together to find the Highest Common Factor (HCF).",
+                  "work": "\\(\\operatorname{HCF}(36, 84) = 2^2 \\times 3 = 4 \\times 3 = 12\\)"
                 }
               ],
               "xp": 1,
@@ -8835,22 +8862,33 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "options": [
+                "12",
+                "6",
+                "18",
+                "4"
+              ]
             },
             {
               "id": "manly2022-y7-frac-q2-varb",
-              "type": "short",
+              "type": "mc",
               "stem": "What is the lowest common multiple (LCM) of \\(36\\) and \\(84\\)?",
               "difficulty": "medium",
-              "answer": "252",
+              "answer": 3,
               "hint": "Find the prime factors needed to make a multiple of each number.",
               "steps": [
                 {
-                  "explain": "Use the prime factors and take each prime with the larger power needed by either number."
+                  "explain": "Find the prime factorization of each number.",
+                  "work": "\\(36 = 2^2 \\times 3^2\\)\n\\(84 = 2^2 \\times 3 \\times 7\\)"
                 },
                 {
-                  "explain": "Multiply these factors to obtain the LCM.",
-                  "work": "\\(\\operatorname{LCM}(36,84)=252\\)"
+                  "explain": "Identify all prime factors that appear in either number and take the highest power of each.",
+                  "work": "Primes are 2, 3, and 7.\nHighest power of 2 is \\(2^2\\).\nHighest power of 3 is \\(3^2\\).\nHighest power of 7 is \\(7^1\\)."
+                },
+                {
+                  "explain": "Multiply these together to find the Lowest Common Multiple (LCM).",
+                  "work": "\\(\\operatorname{LCM}(36, 84) = 2^2 \\times 3^2 \\times 7 = 4 \\times 9 \\times 7 = 252\\)"
                 }
               ],
               "xp": 1,
@@ -8866,7 +8904,13 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "options": [
+                "84",
+                "168",
+                "216",
+                "252"
+              ]
             }
           ],
           "hint": "Prime-factorise both values and use the shared factors for one part and combined factors for the other.",

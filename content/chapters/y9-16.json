@@ -3376,7 +3376,6 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Calculate the total surface area of the cylinder with the following dimensions:\n- Radius = \\(5\\\\text{ cm}\\)\n- Height = \\(12\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgICAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMiIgZmlsbD0iIzMzNDE1NSIvPgogIDx0ZXh0IHg9IjE5NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjMGYxNzJhIj5yID0gNSBjbTwvdGV4dD4KICAKICA8bGluZSB4MT0iMjIwIiB5MT0iNTAiIHgyPSIyMjAiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iNTAiIHgyPSIyMjUiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyMTUiIHkxPSIyMDAiIHgyPSIyMjUiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMzUiIHk9IjEzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmggPSAxMiBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(534.07\\\\text{ cm}^2\\)",
             "\\(576.24\\\\text{ cm}^2\\)",
@@ -3408,14 +3407,16 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 2,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n       <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"195\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"end\" fill=\"#0f172a\">r = 5 cm</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = 12 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q1b",
           "type": "mc",
           "difficulty": "medium",
           "stem": "Calculate the total surface area of the cylinder with the following dimensions:\n- Radius = \\(8\\\\text{ cm}\\)\n- Height = \\(15\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgICAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMiIgZmlsbD0iIzMzNDE1NSIvPgogIDx0ZXh0IHg9IjE5NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjMGYxNzJhIj5yID0gOCBjbTwvdGV4dD4KICAKICA8bGluZSB4MT0iMjIwIiB5MT0iNTAiIHgyPSIyMjAiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iNTAiIHgyPSIyMjUiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyMTUiIHkxPSIyMDAiIHgyPSIyMjUiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMzUiIHk9IjEzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmggPSAxNSBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(1248.96\\\\text{ cm}^2\\)",
             "\\(1156.11\\\\text{ cm}^2\\)",
@@ -3447,7 +3448,10 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 2,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n       <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"195\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"end\" fill=\"#0f172a\">r = 8 cm</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = 15 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q1c",
@@ -3455,139 +3459,8 @@
           "difficulty": "medium",
           "stem": "Calculate the total surface area of the cylinder with the following dimensions:\n- Diameter = \\(12\\\\text{ cm}\\)\n- Height = \\(12\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q1c-board",
-              "boundingbox": [
-                -7,
-                16,
-                8,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    -5,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    1,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    -5,
-                    12
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    1,
-                    12
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    -2,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    -2,
-                    12
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "C",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "D",
-                  "to": "B",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "C",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "B",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -2,
-                    -1.2
-                  ],
-                  "content": "12 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    1.5,
-                    6
-                  ],
-                  "content": "12 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"100\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"150\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 12 cm</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = 12 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTAwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPHRleHQgeD0iMTUwIiB5PSI0NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSAxMiBjbTwvdGV4dD4KICAKICA8bGluZSB4MT0iMjIwIiB5MT0iNTAiIHgyPSIyMjAiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iNTAiIHgyPSIyMjUiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyMTUiIHkxPSIyMDAiIHgyPSIyMjUiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMzUiIHk9IjEzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmggPSAxMiBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(586.20\\\\text{ cm}^2\\)",
             "\\(612.45\\\\text{ cm}^2\\)",
@@ -3624,139 +3497,8 @@
           "difficulty": "medium",
           "stem": "Calculate the total surface area of a horizontal cylinder with the following dimensions:\n- Diameter = \\(8\\\\text{ cm}\\)\n- Length (Height) = \\(20\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q1d-board",
-              "boundingbox": [
-                -4,
-                6,
-                14,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    0,
-                    -2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    0,
-                    2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    10,
-                    -2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    10,
-                    2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    10,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "C",
-                  "to": "D",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "segment",
-                  "from": "O1",
-                  "to": "B",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -1.2,
-                    0.8
-                  ],
-                  "content": "10 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    -2.6
-                  ],
-                  "content": "25 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"220\" viewBox=\"0 0 350 220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 70,50 L 270,50 C 295,50 295,150 270,150 L 70,150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 70,150 C 45,150 45,50 70,50 C 95,50 95,150 70,150 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"70\" y1=\"50\" x2=\"70\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <!-- Moved x=80 to x=100 so it doesn't overlap the right curve of the ellipse -->\n  <text x=\"100\" y=\"100\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">d = 8 cm</text>\n  \n  <line x1=\"70\" y1=\"170\" x2=\"270\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"70\" y1=\"165\" x2=\"70\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"165\" x2=\"270\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"170\" y=\"195\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\">Length = 20 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMjAiIHZpZXdCb3g9IjAgMCAzNTAgMjIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gNzAsNTAgTCAyNzAsNTAgQyAyOTUsNTAgMjk1LDE1MCAyNzAsMTUwIEwgNzAsMTUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSA3MCwxNTAgQyA0NSwxNTAgNDUsNTAgNzAsNTAgQyA5NSw1MCA5NSwxNTAgNzAsMTUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iNzAiIHkxPSI1MCIgeDI9IjcwIiB5Mj0iMTUwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDIiLz4KICA8IS0tIE1vdmVkIHg9ODAgdG8geD0xMDAgc28gaXQgZG9lc24ndCBvdmVybGFwIHRoZSByaWdodCBjdXJ2ZSBvZiB0aGUgZWxsaXBzZSAtLT4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmQgPSA4IGNtPC90ZXh0PgogIAogIDxsaW5lIHgxPSI3MCIgeTE9IjE3MCIgeDI9IjI3MCIgeTI9IjE3MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSI3MCIgeTE9IjE2NSIgeDI9IjcwIiB5Mj0iMTc1IiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjE2NSIgeDI9IjI3MCIgeTI9IjE3NSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDx0ZXh0IHg9IjE3MCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzBmMTcyYSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TGVuZ3RoID0gMjAgY208L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(682.15\\\\text{ cm}^2\\)",
             "\\(486.20\\\\text{ cm}^2\\)",
@@ -3793,139 +3535,8 @@
           "difficulty": "medium",
           "stem": "Calculate the total outside surface area of a cylinder that is open at the top, with the following dimensions:\n- Radius = \\(5\\\\text{ cm}\\)\n- Height = \\(8\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q1e-board",
-              "boundingbox": [
-                -6,
-                12,
-                8,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    -4,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    1,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    -4,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    1,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    -1.5,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    -1.5,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "C",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "D",
-                  "to": "B",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "C",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "segment",
-                  "from": "O1",
-                  "to": "B",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -1.3,
-                    -1.2
-                  ],
-                  "content": "5 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    1.5,
-                    4
-                  ],
-                  "content": "8 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"195\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"end\" fill=\"#0f172a\">r = 5 cm</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = 8 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iNTAiIHI9IjIiIGZpbGw9IiMzMzQxNTUiLz4KICA8dGV4dCB4PSIxOTUiIHk9IjQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzBmMTcyYSI+ciA9IDUgY208L3RleHQ+CiAgCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjAwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjIxNSIgeTE9IjUwIiB4Mj0iMjI1IiB5Mj0iNTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iMjAwIiB4Mj0iMjI1IiB5Mj0iMjAwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iMjM1IiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMGYxNzJhIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5oID0gOCBjbTwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(329.87\\\\text{ cm}^2\\)",
             "\\(360.25\\\\text{ cm}^2\\)",
@@ -3962,139 +3573,8 @@
           "difficulty": "medium",
           "stem": "Calculate the total outside surface area of a pipe (open at both ends) with the following dimensions:\n- Diameter = \\(10\\\\text{ cm}\\)\n- Length = \\(24\\\\text{ cm}\\)\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q1f-board",
-              "boundingbox": [
-                -4,
-                6,
-                14,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    0,
-                    -2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    0,
-                    2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    10,
-                    -2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    10,
-                    2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    10,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "C",
-                  "to": "D",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "segment",
-                  "from": "O1",
-                  "to": "B",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -1.2,
-                    0.8
-                  ],
-                  "content": "12 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    -2.6
-                  ],
-                  "content": "30 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"220\" viewBox=\"0 0 350 220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 70,50 L 270,50 C 295,50 295,150 270,150 L 70,150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 70,150 C 45,150 45,50 70,50 C 95,50 95,150 70,150 Z\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"70\" y1=\"50\" x2=\"70\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <!-- Moved x=80 to x=100 so it doesn't overlap the right curve of the ellipse -->\n  <text x=\"100\" y=\"100\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">d = 10 cm</text>\n  \n  <line x1=\"70\" y1=\"170\" x2=\"270\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"70\" y1=\"165\" x2=\"70\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"165\" x2=\"270\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"170\" y=\"195\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\">Length = 24 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMjAiIHZpZXdCb3g9IjAgMCAzNTAgMjIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gNzAsNTAgTCAyNzAsNTAgQyAyOTUsNTAgMjk1LDE1MCAyNzAsMTUwIEwgNzAsMTUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSA3MCwxNTAgQyA0NSwxNTAgNDUsNTAgNzAsNTAgQyA5NSw1MCA5NSwxNTAgNzAsMTUwIFoiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iNzAiIHkxPSI1MCIgeDI9IjcwIiB5Mj0iMTUwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDIiLz4KICA8IS0tIE1vdmVkIHg9ODAgdG8geD0xMDAgc28gaXQgZG9lc24ndCBvdmVybGFwIHRoZSByaWdodCBjdXJ2ZSBvZiB0aGUgZWxsaXBzZSAtLT4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmQgPSAxMCBjbTwvdGV4dD4KICAKICA8bGluZSB4MT0iNzAiIHkxPSIxNzAiIHgyPSIyNzAiIHkyPSIxNzAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iNzAiIHkxPSIxNjUiIHgyPSI3MCIgeTI9IjE3NSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyNzAiIHkxPSIxNjUiIHgyPSIyNzAiIHkyPSIxNzUiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIxNzAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlbmd0aCA9IDI0IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(911.06\\\\text{ cm}^2\\)",
             "\\(832.14\\\\text{ cm}^2\\)",
@@ -4131,132 +3611,8 @@
           "difficulty": "hard",
           "stem": "The outside surface of a piece of open pipe with diameter \\(12\\\\text{ cm}\\) and length \\(60\\\\text{ cm}\\) is to be painted. Calculate the area to be painted.\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q2-board",
-              "boundingbox": [
-                -4,
-                6,
-                14,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    0,
-                    -1.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    0,
-                    1.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    10,
-                    -1.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    10,
-                    1.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    10,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "C",
-                  "to": "D",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -1.2,
-                    0.6
-                  ],
-                  "content": "10 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    -2.1
-                  ],
-                  "content": "80 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"220\" viewBox=\"0 0 350 220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 70,50 L 270,50 C 295,50 295,150 270,150 L 70,150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 70,150 C 45,150 45,50 70,50 C 95,50 95,150 70,150 Z\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"70\" y1=\"50\" x2=\"70\" y2=\"150\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <!-- Moved x=80 to x=100 so it doesn't overlap the right curve of the ellipse -->\n  <text x=\"100\" y=\"100\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">d = 12 cm</text>\n  \n  <line x1=\"70\" y1=\"170\" x2=\"270\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"70\" y1=\"165\" x2=\"70\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"165\" x2=\"270\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"170\" y=\"195\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\">Length = 60 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyMjAiIHZpZXdCb3g9IjAgMCAzNTAgMjIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gNzAsNTAgTCAyNzAsNTAgQyAyOTUsNTAgMjk1LDE1MCAyNzAsMTUwIEwgNzAsMTUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSA3MCwxNTAgQyA0NSwxNTAgNDUsNTAgNzAsNTAgQyA5NSw1MCA5NSwxNTAgNzAsMTUwIFoiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iNzAiIHkxPSI1MCIgeDI9IjcwIiB5Mj0iMTUwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDIiLz4KICA8IS0tIE1vdmVkIHg9ODAgdG8geD0xMDAgc28gaXQgZG9lc24ndCBvdmVybGFwIHRoZSByaWdodCBjdXJ2ZSBvZiB0aGUgZWxsaXBzZSAtLT4KICA8dGV4dCB4PSIxMDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmQgPSAxMiBjbTwvdGV4dD4KICAKICA8bGluZSB4MT0iNzAiIHkxPSIxNzAiIHgyPSIyNzAiIHkyPSIxNzAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iNzAiIHkxPSIxNjUiIHgyPSI3MCIgeTI9IjE3NSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyNzAiIHkxPSIxNjUiIHgyPSIyNzAiIHkyPSIxNzUiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIxNzAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlbmd0aCA9IDYwIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(4523.89\\\\text{ cm}^2\\)",
             "\\(2486.30\\\\text{ cm}^2\\)",
@@ -4292,135 +3648,8 @@
           "difficulty": "hard",
           "stem": "A solid half-cylinder has the following dimensions:\n- Diameter = \\(8\\\\text{ cm}\\)\n- Length = \\(20\\\\text{ cm}\\)\nFind the area of the flat rectangular top face.",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q3-board",
-              "boundingbox": [
-                -4,
-                6,
-                14,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    0,
-                    -2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    0,
-                    2
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    10,
-                    -1
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    10,
-                    3
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O1",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "O2",
-                  "coords": [
-                    10,
-                    1
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "B",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "C",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O1",
-                  "from": "B",
-                  "to": "A",
-                  "color": "blue"
-                },
-                {
-                  "type": "arc",
-                  "center": "O2",
-                  "from": "D",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "O1",
-                  "to": "O2",
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -1.2,
-                    0.8
-                  ],
-                  "content": "6 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    3.2
-                  ],
-                  "content": "15 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"240\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- 1. Back U-shape curve -->\n  <path d=\"M 170,50 C 170,150 270,150 270,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 2. Body Polygon (Fills the curved body, hides left half of back curve) -->\n  <polygon points=\"50,80 150,80 270,50 229,124 109,154\" fill=\"#f8fafc\"/>\n  \n  <!-- 3. Bottom Tangent Line (Silhouette edge) -->\n  <line x1=\"109\" y1=\"154\" x2=\"229\" y2=\"124\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 4. Front U-shape curve -->\n  <path d=\"M 50,80 C 50,180 150,180 150,80 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 5. Top Rectangular Face -->\n  <polygon points=\"50,80 150,80 270,50 170,50\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Dimensions -->\n  <!-- Diameter -->\n  <line x1=\"50\" y1=\"80\" x2=\"150\" y2=\"80\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <!-- Placed BELOW the diameter line (y=95) so it is perfectly clear of all edges -->\n  <text x=\"100\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 8 cm</text>\n  \n  <!-- Length -->\n  <!-- Drew extensions upwards to place the dimension line completely ABOVE the cylinder -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"10\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"45\" x2=\"270\" y2=\"15\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Text placed below the dimension line, safely in the empty space above the top face -->\n  <text x=\"210\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">L = 20 cm</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNDAiIHZpZXdCb3g9IjAgMCAzNTAgMjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gMS4gQmFjayBVLXNoYXBlIGN1cnZlIC0tPgogIDxwYXRoIGQ9Ik0gMTcwLDUwIEMgMTcwLDE1MCAyNzAsMTUwIDI3MCw1MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgCiAgPCEtLSAyLiBCb2R5IFBvbHlnb24gKEZpbGxzIHRoZSBjdXJ2ZWQgYm9keSwgaGlkZXMgbGVmdCBoYWxmIG9mIGJhY2sgY3VydmUpIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAyMjksMTI0IDEwOSwxNTQiIGZpbGw9IiNmOGZhZmMiLz4KICAKICA8IS0tIDMuIEJvdHRvbSBUYW5nZW50IExpbmUgKFNpbGhvdWV0dGUgZWRnZSkgLS0+CiAgPGxpbmUgeDE9IjEwOSIgeTE9IjE1NCIgeDI9IjIyOSIgeTI9IjEyNCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gNC4gRnJvbnQgVS1zaGFwZSBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNIDUwLDgwIEMgNTAsMTgwIDE1MCwxODAgMTUwLDgwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIDUuIFRvcCBSZWN0YW5ndWxhciBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAxNzAsNTAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIERpbWVuc2lvbnMgLS0+CiAgPCEtLSBEaWFtZXRlciAtLT4KICA8bGluZSB4MT0iNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPCEtLSBQbGFjZWQgQkVMT1cgdGhlIGRpYW1ldGVyIGxpbmUgKHk9OTUpIHNvIGl0IGlzIHBlcmZlY3RseSBjbGVhciBvZiBhbGwgZWRnZXMgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSA4IGNtPC90ZXh0PgogIAogIDwhLS0gTGVuZ3RoIC0tPgogIDwhLS0gRHJldyBleHRlbnNpb25zIHVwd2FyZHMgdG8gcGxhY2UgdGhlIGRpbWVuc2lvbiBsaW5lIGNvbXBsZXRlbHkgQUJPVkUgdGhlIGN5bGluZGVyIC0tPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjUwIiB4Mj0iMjcwIiB5Mj0iMTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDUiIHgyPSIyNzAiIHkyPSIxNSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gVGV4dCBwbGFjZWQgYmVsb3cgdGhlIGRpbWVuc2lvbiBsaW5lLCBzYWZlbHkgaW4gdGhlIGVtcHR5IHNwYWNlIGFib3ZlIHRoZSB0b3AgZmFjZSAtLT4KICA8dGV4dCB4PSIyMTAiIHk9IjQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+TCA9IDIwIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(120\\\\text{ cm}^2\\)",
             "\\(80\\\\text{ cm}^2\\)",
@@ -4451,7 +3680,6 @@
           "type": "mc",
           "difficulty": "hard",
           "stem": "A solid half-cylinder has the following dimensions:\n\nFind the combined area of the two semicircular ends.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNDAiIHZpZXdCb3g9IjAgMCAzNTAgMjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gMS4gQmFjayBVLXNoYXBlIGN1cnZlIC0tPgogIDxwYXRoIGQ9Ik0gMTcwLDUwIEMgMTcwLDE1MCAyNzAsMTUwIDI3MCw1MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgCiAgPCEtLSAyLiBCb2R5IFBvbHlnb24gKEZpbGxzIHRoZSBjdXJ2ZWQgYm9keSwgaGlkZXMgbGVmdCBoYWxmIG9mIGJhY2sgY3VydmUpIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAyMjksMTI0IDEwOSwxNTQiIGZpbGw9IiNmOGZhZmMiLz4KICAKICA8IS0tIDMuIEJvdHRvbSBUYW5nZW50IExpbmUgKFNpbGhvdWV0dGUgZWRnZSkgLS0+CiAgPGxpbmUgeDE9IjEwOSIgeTE9IjE1NCIgeDI9IjIyOSIgeTI9IjEyNCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gNC4gRnJvbnQgVS1zaGFwZSBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNIDUwLDgwIEMgNTAsMTgwIDE1MCwxODAgMTUwLDgwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIDUuIFRvcCBSZWN0YW5ndWxhciBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAxNzAsNTAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIERpbWVuc2lvbnMgLS0+CiAgPCEtLSBEaWFtZXRlciAtLT4KICA8bGluZSB4MT0iNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPCEtLSBQbGFjZWQgQkVMT1cgdGhlIGRpYW1ldGVyIGxpbmUgKHk9OTUpIHNvIGl0IGlzIHBlcmZlY3RseSBjbGVhciBvZiBhbGwgZWRnZXMgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSA4IGNtPC90ZXh0PgogIAogIDwhLS0gTGVuZ3RoIC0tPgogIDwhLS0gRHJldyBleHRlbnNpb25zIHVwd2FyZHMgdG8gcGxhY2UgdGhlIGRpbWVuc2lvbiBsaW5lIGNvbXBsZXRlbHkgQUJPVkUgdGhlIGN5bGluZGVyIC0tPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjUwIiB4Mj0iMjcwIiB5Mj0iMTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDUiIHgyPSIyNzAiIHkyPSIxNSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gVGV4dCBwbGFjZWQgYmVsb3cgdGhlIGRpbWVuc2lvbiBsaW5lLCBzYWZlbHkgaW4gdGhlIGVtcHR5IHNwYWNlIGFib3ZlIHRoZSB0b3AgZmFjZSAtLT4KICA8dGV4dCB4PSIyMTAiIHk9IjQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+TCA9IDIwIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(75.40\\\\text{ cm}^2\\)",
             "\\(50.27\\\\text{ cm}^2\\)",
@@ -4482,14 +3710,16 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"240\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- 1. Back U-shape curve -->\n  <path d=\"M 170,50 C 170,150 270,150 270,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 2. Body Polygon (Fills the curved body, hides left half of back curve) -->\n  <polygon points=\"50,80 150,80 270,50 229,124 109,154\" fill=\"#f8fafc\"/>\n  \n  <!-- 3. Bottom Tangent Line (Silhouette edge) -->\n  <line x1=\"109\" y1=\"154\" x2=\"229\" y2=\"124\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 4. Front U-shape curve -->\n  <path d=\"M 50,80 C 50,180 150,180 150,80 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 5. Top Rectangular Face -->\n  <polygon points=\"50,80 150,80 270,50 170,50\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Dimensions -->\n  <!-- Diameter -->\n  <line x1=\"50\" y1=\"80\" x2=\"150\" y2=\"80\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <!-- Placed BELOW the diameter line (y=95) so it is perfectly clear of all edges -->\n  <text x=\"100\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 8 cm</text>\n  \n  <!-- Length -->\n  <!-- Drew extensions upwards to place the dimension line completely ABOVE the cylinder -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"10\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"45\" x2=\"270\" y2=\"15\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Text placed below the dimension line, safely in the empty space above the top face -->\n  <text x=\"210\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">L = 20 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q3c",
           "type": "mc",
           "difficulty": "hard",
           "stem": "A solid half-cylinder has the following dimensions:\n- Diameter = \\(8\\\\text{ cm}\\)\n- Length = \\(20\\\\text{ cm}\\)\nFind the curved surface area.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNDAiIHZpZXdCb3g9IjAgMCAzNTAgMjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gMS4gQmFjayBVLXNoYXBlIGN1cnZlIC0tPgogIDxwYXRoIGQ9Ik0gMTcwLDUwIEMgMTcwLDE1MCAyNzAsMTUwIDI3MCw1MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgCiAgPCEtLSAyLiBCb2R5IFBvbHlnb24gKEZpbGxzIHRoZSBjdXJ2ZWQgYm9keSwgaGlkZXMgbGVmdCBoYWxmIG9mIGJhY2sgY3VydmUpIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAyMjksMTI0IDEwOSwxNTQiIGZpbGw9IiNmOGZhZmMiLz4KICAKICA8IS0tIDMuIEJvdHRvbSBUYW5nZW50IExpbmUgKFNpbGhvdWV0dGUgZWRnZSkgLS0+CiAgPGxpbmUgeDE9IjEwOSIgeTE9IjE1NCIgeDI9IjIyOSIgeTI9IjEyNCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gNC4gRnJvbnQgVS1zaGFwZSBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNIDUwLDgwIEMgNTAsMTgwIDE1MCwxODAgMTUwLDgwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIDUuIFRvcCBSZWN0YW5ndWxhciBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAxNzAsNTAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIERpbWVuc2lvbnMgLS0+CiAgPCEtLSBEaWFtZXRlciAtLT4KICA8bGluZSB4MT0iNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPCEtLSBQbGFjZWQgQkVMT1cgdGhlIGRpYW1ldGVyIGxpbmUgKHk9OTUpIHNvIGl0IGlzIHBlcmZlY3RseSBjbGVhciBvZiBhbGwgZWRnZXMgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSA4IGNtPC90ZXh0PgogIAogIDwhLS0gTGVuZ3RoIC0tPgogIDwhLS0gRHJldyBleHRlbnNpb25zIHVwd2FyZHMgdG8gcGxhY2UgdGhlIGRpbWVuc2lvbiBsaW5lIGNvbXBsZXRlbHkgQUJPVkUgdGhlIGN5bGluZGVyIC0tPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjUwIiB4Mj0iMjcwIiB5Mj0iMTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDUiIHgyPSIyNzAiIHkyPSIxNSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gVGV4dCBwbGFjZWQgYmVsb3cgdGhlIGRpbWVuc2lvbiBsaW5lLCBzYWZlbHkgaW4gdGhlIGVtcHR5IHNwYWNlIGFib3ZlIHRoZSB0b3AgZmFjZSAtLT4KICA8dGV4dCB4PSIyMTAiIHk9IjQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+TCA9IDIwIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(180.50\\\\text{ cm}^2\\)",
             "\\(251.33\\\\text{ cm}^2\\)",
@@ -4517,14 +3747,16 @@
               "work": "\\[ CSA \\approx 251.33 \\text{ cm}^2 \\]"
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"240\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- 1. Back U-shape curve -->\n  <path d=\"M 170,50 C 170,150 270,150 270,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 2. Body Polygon (Fills the curved body, hides left half of back curve) -->\n  <polygon points=\"50,80 150,80 270,50 229,124 109,154\" fill=\"#f8fafc\"/>\n  \n  <!-- 3. Bottom Tangent Line (Silhouette edge) -->\n  <line x1=\"109\" y1=\"154\" x2=\"229\" y2=\"124\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 4. Front U-shape curve -->\n  <path d=\"M 50,80 C 50,180 150,180 150,80 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 5. Top Rectangular Face -->\n  <polygon points=\"50,80 150,80 270,50 170,50\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Dimensions -->\n  <!-- Diameter -->\n  <line x1=\"50\" y1=\"80\" x2=\"150\" y2=\"80\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <!-- Placed BELOW the diameter line (y=95) so it is perfectly clear of all edges -->\n  <text x=\"100\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 8 cm</text>\n  \n  <!-- Length -->\n  <!-- Drew extensions upwards to place the dimension line completely ABOVE the cylinder -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"10\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"45\" x2=\"270\" y2=\"15\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Text placed below the dimension line, safely in the empty space above the top face -->\n  <text x=\"210\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">L = 20 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q3d",
           "type": "mc",
           "difficulty": "hard",
           "stem": "A solid half-cylinder has the following dimensions:\n- Diameter = \\(8\\\\text{ cm}\\)\n- Length = \\(20\\\\text{ cm}\\)\nFind the total surface area.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNDAiIHZpZXdCb3g9IjAgMCAzNTAgMjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gMS4gQmFjayBVLXNoYXBlIGN1cnZlIC0tPgogIDxwYXRoIGQ9Ik0gMTcwLDUwIEMgMTcwLDE1MCAyNzAsMTUwIDI3MCw1MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgCiAgPCEtLSAyLiBCb2R5IFBvbHlnb24gKEZpbGxzIHRoZSBjdXJ2ZWQgYm9keSwgaGlkZXMgbGVmdCBoYWxmIG9mIGJhY2sgY3VydmUpIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAyMjksMTI0IDEwOSwxNTQiIGZpbGw9IiNmOGZhZmMiLz4KICAKICA8IS0tIDMuIEJvdHRvbSBUYW5nZW50IExpbmUgKFNpbGhvdWV0dGUgZWRnZSkgLS0+CiAgPGxpbmUgeDE9IjEwOSIgeTE9IjE1NCIgeDI9IjIyOSIgeTI9IjEyNCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gNC4gRnJvbnQgVS1zaGFwZSBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNIDUwLDgwIEMgNTAsMTgwIDE1MCwxODAgMTUwLDgwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIDUuIFRvcCBSZWN0YW5ndWxhciBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAxNzAsNTAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIERpbWVuc2lvbnMgLS0+CiAgPCEtLSBEaWFtZXRlciAtLT4KICA8bGluZSB4MT0iNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPCEtLSBQbGFjZWQgQkVMT1cgdGhlIGRpYW1ldGVyIGxpbmUgKHk9OTUpIHNvIGl0IGlzIHBlcmZlY3RseSBjbGVhciBvZiBhbGwgZWRnZXMgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSA4IGNtPC90ZXh0PgogIAogIDwhLS0gTGVuZ3RoIC0tPgogIDwhLS0gRHJldyBleHRlbnNpb25zIHVwd2FyZHMgdG8gcGxhY2UgdGhlIGRpbWVuc2lvbiBsaW5lIGNvbXBsZXRlbHkgQUJPVkUgdGhlIGN5bGluZGVyIC0tPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI3MCIgeTE9IjUwIiB4Mj0iMjcwIiB5Mj0iMTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNDUiIHgyPSIyNzAiIHkyPSIxNSIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDwhLS0gVGV4dCBwbGFjZWQgYmVsb3cgdGhlIGRpbWVuc2lvbiBsaW5lLCBzYWZlbHkgaW4gdGhlIGVtcHR5IHNwYWNlIGFib3ZlIHRoZSB0b3AgZmFjZSAtLT4KICA8dGV4dCB4PSIyMTAiIHk9IjQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+TCA9IDIwIGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(524.30\\\\text{ cm}^2\\)",
             "\\(461.59\\\\text{ cm}^2\\)",
@@ -4552,7 +3784,10 @@
               "work": "\\[ TSA \\approx 461.59 \\text{ cm}^2 \\]"
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"240\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- 1. Back U-shape curve -->\n  <path d=\"M 170,50 C 170,150 270,150 270,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 2. Body Polygon (Fills the curved body, hides left half of back curve) -->\n  <polygon points=\"50,80 150,80 270,50 229,124 109,154\" fill=\"#f8fafc\"/>\n  \n  <!-- 3. Bottom Tangent Line (Silhouette edge) -->\n  <line x1=\"109\" y1=\"154\" x2=\"229\" y2=\"124\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 4. Front U-shape curve -->\n  <path d=\"M 50,80 C 50,180 150,180 150,80 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 5. Top Rectangular Face -->\n  <polygon points=\"50,80 150,80 270,50 170,50\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Dimensions -->\n  <!-- Diameter -->\n  <line x1=\"50\" y1=\"80\" x2=\"150\" y2=\"80\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <!-- Placed BELOW the diameter line (y=95) so it is perfectly clear of all edges -->\n  <text x=\"100\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 8 cm</text>\n  \n  <!-- Length -->\n  <!-- Drew extensions upwards to place the dimension line completely ABOVE the cylinder -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"10\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"45\" x2=\"270\" y2=\"15\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Text placed below the dimension line, safely in the empty space above the top face -->\n  <text x=\"210\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">L = 20 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q4",
@@ -4560,112 +3795,8 @@
           "difficulty": "hard",
           "stem": "A skating ramp is in the shape of a half-cylinder. If the two sides are \\(8\\\\text{ m}\\) apart and the length of the ramp is \\(6\\\\text{ m}\\), find the surface area of the rideable ramp floor (curved surface area).\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q4-board",
-              "boundingbox": [
-                -6,
-                6,
-                12,
-                -6
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "curve",
-                  "x": "4 * Math.cos(t)",
-                  "y": "2 * Math.sin(t)",
-                  "tRange": [
-                    3.141592653589793,
-                    6.283185307179586
-                  ],
-                  "color": "blue"
-                },
-                {
-                  "type": "curve",
-                  "x": "4 + 4 * Math.cos(t)",
-                  "y": "2.5 + 2 * Math.sin(t)",
-                  "tRange": [
-                    3.141592653589793,
-                    6.283185307179586
-                  ],
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "point",
-                  "id": "FL",
-                  "coords": [
-                    -4,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "FR",
-                  "coords": [
-                    4,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "BL",
-                  "coords": [
-                    0,
-                    2.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "BR",
-                  "coords": [
-                    8,
-                    2.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "FL",
-                  "to": "BL",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "FR",
-                  "to": "BR",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "FL",
-                  "to": "FR",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    0,
-                    0.5
-                  ],
-                  "content": "8 m"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    2.5,
-                    2
-                  ],
-                  "content": "6 m"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"240\" viewBox=\"0 0 350 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- 1. Back U-shape curve -->\n  <path d=\"M 170,50 C 170,150 270,150 270,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 2. Body Polygon (Fills the curved body, hides left half of back curve) -->\n  <polygon points=\"50,80 150,80 270,50 229,124 109,154\" fill=\"#f8fafc\"/>\n  \n  <!-- 3. Bottom Tangent Line (Silhouette edge) -->\n  <line x1=\"109\" y1=\"154\" x2=\"229\" y2=\"124\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 4. Front U-shape curve -->\n  <path d=\"M 50,80 C 50,180 150,180 150,80 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- 5. Top Rectangular Face -->\n  <polygon points=\"50,80 150,80 270,50 170,50\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Dimensions -->\n  <!-- Diameter -->\n  <line x1=\"50\" y1=\"80\" x2=\"150\" y2=\"80\" stroke=\"#334155\" stroke-width=\"2\" stroke-dasharray=\"4,2\"/>\n  <!-- Placed BELOW the diameter line (y=95) so it is perfectly clear of all edges -->\n  <text x=\"100\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">d = 8 m</text>\n  \n  <!-- Length -->\n  <!-- Drew extensions upwards to place the dimension line completely ABOVE the cylinder -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"270\" y1=\"50\" x2=\"270\" y2=\"10\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"150\" y1=\"45\" x2=\"270\" y2=\"15\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <!-- Text placed below the dimension line, safely in the empty space above the top face -->\n  <text x=\"210\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">L = 6 m</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNDAiIHZpZXdCb3g9IjAgMCAzNTAgMjQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gMS4gQmFjayBVLXNoYXBlIGN1cnZlIC0tPgogIDxwYXRoIGQ9Ik0gMTcwLDUwIEMgMTcwLDE1MCAyNzAsMTUwIDI3MCw1MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgCiAgPCEtLSAyLiBCb2R5IFBvbHlnb24gKEZpbGxzIHRoZSBjdXJ2ZWQgYm9keSwgaGlkZXMgbGVmdCBoYWxmIG9mIGJhY2sgY3VydmUpIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAyMjksMTI0IDEwOSwxNTQiIGZpbGw9IiNmOGZhZmMiLz4KICAKICA8IS0tIDMuIEJvdHRvbSBUYW5nZW50IExpbmUgKFNpbGhvdWV0dGUgZWRnZSkgLS0+CiAgPGxpbmUgeDE9IjEwOSIgeTE9IjE1NCIgeDI9IjIyOSIgeTI9IjEyNCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gNC4gRnJvbnQgVS1zaGFwZSBjdXJ2ZSAtLT4KICA8cGF0aCBkPSJNIDUwLDgwIEMgNTAsMTgwIDE1MCwxODAgMTUwLDgwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIDUuIFRvcCBSZWN0YW5ndWxhciBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iNTAsODAgMTUwLDgwIDI3MCw1MCAxNzAsNTAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICAKICA8IS0tIERpbWVuc2lvbnMgLS0+CiAgPCEtLSBEaWFtZXRlciAtLT4KICA8bGluZSB4MT0iNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPCEtLSBQbGFjZWQgQkVMT1cgdGhlIGRpYW1ldGVyIGxpbmUgKHk9OTUpIHNvIGl0IGlzIHBlcmZlY3RseSBjbGVhciBvZiBhbGwgZWRnZXMgLS0+CiAgPHRleHQgeD0iMTAwIiB5PSI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwZjE3MmEiPmQgPSA4IG08L3RleHQ+CiAgCiAgPCEtLSBMZW5ndGggLS0+CiAgPCEtLSBEcmV3IGV4dGVuc2lvbnMgdXB3YXJkcyB0byBwbGFjZSB0aGUgZGltZW5zaW9uIGxpbmUgY29tcGxldGVseSBBQk9WRSB0aGUgY3lsaW5kZXIgLS0+CiAgPGxpbmUgeDE9IjE1MCIgeTE9IjgwIiB4Mj0iMTUwIiB5Mj0iNDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjcwIiB5MT0iNTAiIHgyPSIyNzAiIHkyPSIxMCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI0NSIgeDI9IjI3MCIgeTI9IjE1IiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPCEtLSBUZXh0IHBsYWNlZCBiZWxvdyB0aGUgZGltZW5zaW9uIGxpbmUsIHNhZmVseSBpbiB0aGUgZW1wdHkgc3BhY2UgYWJvdmUgdGhlIHRvcCBmYWNlIC0tPgogIDx0ZXh0IHg9IjIxMCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMGYxNzJhIj5MID0gNiBtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(84.32\\\\text{ m}^2\\)",
             "\\(150.80\\\\text{ m}^2\\)",
@@ -4701,224 +3832,8 @@
           "difficulty": "hard",
           "stem": "A cylinder of radius \\(2\\\\text{ cm}\\) and height \\(5\\\\text{ cm}\\) is mounted on a larger cylinder of radius \\(5\\\\text{ cm}\\) and height \\(4\\\\text{ cm}\\). Find the area of the visible surfaces, if the larger cylinder is sitting on a table.\n(Round the final answer to two decimal places.)",
           "figure": {
-            "jsxGraph": {
-              "id": "y9-16c-q5-board",
-              "boundingbox": [
-                -8,
-                12,
-                8,
-                -4
-              ],
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "curve",
-                  "x": "5 * Math.cos(t)",
-                  "y": "1.5 * Math.sin(t)",
-                  "tRange": [
-                    3.141592653589793,
-                    6.283185307179586
-                  ],
-                  "color": "blue"
-                },
-                {
-                  "type": "curve",
-                  "x": "5 * Math.cos(t)",
-                  "y": "1.5 * Math.sin(t)",
-                  "tRange": [
-                    0,
-                    3.141592653589793
-                  ],
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "curve",
-                  "x": "5 * Math.cos(t)",
-                  "y": "4 + 1.5 * Math.sin(t)",
-                  "tRange": [
-                    3.141592653589793,
-                    6.283185307179586
-                  ],
-                  "color": "blue"
-                },
-                {
-                  "type": "curve",
-                  "x": "5 * Math.cos(t)",
-                  "y": "4 + 1.5 * Math.sin(t)",
-                  "tRange": [
-                    0,
-                    3.141592653589793
-                  ],
-                  "color": "blue",
-                  "dash": 2
-                },
-                {
-                  "type": "curve",
-                  "x": "2 * Math.cos(t)",
-                  "y": "9 + 0.6 * Math.sin(t)",
-                  "tRange": [
-                    0,
-                    6.283185307179586
-                  ],
-                  "color": "blue"
-                },
-                {
-                  "type": "curve",
-                  "x": "2 * Math.cos(t)",
-                  "y": "4 + 0.6 * Math.sin(t)",
-                  "tRange": [
-                    3.141592653589793,
-                    6.283185307179586
-                  ],
-                  "color": "blue"
-                },
-                {
-                  "type": "point",
-                  "id": "A",
-                  "coords": [
-                    -5,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "coords": [
-                    5,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C",
-                  "coords": [
-                    -5,
-                    4
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D",
-                  "coords": [
-                    5,
-                    4
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "C",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "D",
-                  "color": "blue"
-                },
-                {
-                  "type": "point",
-                  "id": "E",
-                  "coords": [
-                    -2,
-                    4
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "F",
-                  "coords": [
-                    2,
-                    4
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "G",
-                  "coords": [
-                    -2,
-                    9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "H",
-                  "coords": [
-                    2,
-                    9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "E",
-                  "to": "G",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "F",
-                  "to": "H",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "O1",
-                  "to": "B",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "segment",
-                  "from": "O3",
-                  "to": "H",
-                  "color": "red",
-                  "dash": 2
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    1.8,
-                    -0.6
-                  ],
-                  "content": "5 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    0.5,
-                    9.6
-                  ],
-                  "content": "2 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5.4,
-                    2
-                  ],
-                  "content": "4 cm"
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    2.3,
-                    6.5
-                  ],
-                  "content": "5 cm"
-                }
-              ]
-            }
+            "svg": "<svg width=\"100%\" height=\"300\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Large Cylinder -->\n  <path d=\"M 50,170 L 50,250 C 50,275 250,275 250,250 L 250,170 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 50,170 C 50,145 250,145 250,170 C 250,195 50,195 50,170 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <!-- Small Cylinder -->\n  <path d=\"M 110,60 L 110,170 C 110,185 190,185 190,170 L 190,60 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 110,60 C 110,45 190,45 190,60 C 190,75 110,75 110,60 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <line x1=\"150\" y1=\"60\" x2=\"190\" y2=\"60\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"170\" y=\"52\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">2</text>\n  \n  <line x1=\"205\" y1=\"60\" x2=\"205\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"215\" y=\"115\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">5</text>\n  \n  <line x1=\"150\" y1=\"170\" x2=\"250\" y2=\"170\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"200\" y=\"162\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">5</text>\n  \n  <line x1=\"265\" y1=\"170\" x2=\"265\" y2=\"250\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"275\" y=\"210\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\">4</text>\n</svg>"
           },
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIzMDAiIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDwhLS0gTGFyZ2UgQ3lsaW5kZXIgLS0+CiAgPHBhdGggZD0iTSA1MCwxNzAgTCA1MCwyNTAgQyA1MCwyNzUgMjUwLDI3NSAyNTAsMjUwIEwgMjUwLDE3MCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSA1MCwxNzAgQyA1MCwxNDUgMjUwLDE0NSAyNTAsMTcwIEMgMjUwLDE5NSA1MCwxOTUgNTAsMTcwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8IS0tIFNtYWxsIEN5bGluZGVyIC0tPgogIDxwYXRoIGQ9Ik0gMTEwLDYwIEwgMTEwLDE3MCBDIDExMCwxODUgMTkwLDE4NSAxOTAsMTcwIEwgMTkwLDYwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8cGF0aCBkPSJNIDExMCw2MCBDIDExMCw0NSAxOTAsNDUgMTkwLDYwIEMgMTkwLDc1IDExMCw3NSAxMTAsNjAgWiIgZmlsbD0iI2Y4ZmFmYyIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDxsaW5lIHgxPSIxNTAiIHkxPSI2MCIgeDI9IjE5MCIgeTI9IjYwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDIiLz4KICA8dGV4dCB4PSIxNzAiIHk9IjUyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+MjwvdGV4dD4KICAKICA8bGluZSB4MT0iMjA1IiB5MT0iNjAiIHgyPSIyMDUiIHkyPSIxNzAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMTUiIHk9IjExNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiPjU8L3RleHQ+CiAgCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE3MCIgeDI9IjI1MCIgeTI9IjE3MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgPHRleHQgeD0iMjAwIiB5PSIxNjIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMGYxNzJhIj41PC90ZXh0PgogIAogIDxsaW5lIHgxPSIyNjUiIHkxPSIxNzAiIHgyPSIyNjUiIHkyPSIyNTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyNzUiIHk9IjIxMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiPjQ8L3RleHQ+Cjwvc3ZnPg==",
           "options": [
             "\\(324.50\\\\text{ cm}^2\\)",
             "\\(294.15\\\\text{ cm}^2\\)",
@@ -4953,7 +3868,6 @@
           "type": "mc",
           "difficulty": "hard",
           "stem": "The total surface area of a cylinder is \\(37.70\\\\text{ m}^2\\) and the radius of the base is \\(1.5\\\\text{ m}\\). Find the height of the cylinder, correct to two decimal places.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgICAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMiIgZmlsbD0iIzMzNDE1NSIvPgogIDx0ZXh0IHg9IjE5NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjMGYxNzJhIj5yID0gMS41IG08L3RleHQ+CiAgCiAgPGxpbmUgeDE9IjIyMCIgeTE9IjUwIiB4Mj0iMjIwIiB5Mj0iMjAwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjIxNSIgeTE9IjUwIiB4Mj0iMjI1IiB5Mj0iNTAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iMjAwIiB4Mj0iMjI1IiB5Mj0iMjAwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iMjM1IiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMGYxNzJhIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj5oID0gPzwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(3.50\\\\text{ m}\\)",
             "\\(3.00\\\\text{ m}\\)",
@@ -4977,14 +3891,16 @@
               "work": "\\[ 3\\pi h = 37.70 - 4.5\\pi \\]\n\\[ 3\\pi h \\approx 37.70 - 14.137 = 23.563 \\]\n\\[ h = \\frac{23.563}{3\\pi} \\approx 2.50 \\text{ m} \\]"
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n       <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"195\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"end\" fill=\"#0f172a\">r = 1.5 m</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = ?</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q7a",
           "type": "mc",
           "difficulty": "hard",
           "stem": "The radius of a cylinder is equal to its height, and it has a total surface area of \\(400\\\\text{ cm}^2\\). Find its height, correct to two decimal places.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgICAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMiIgZmlsbD0iIzMzNDE1NSIvPgogIDx0ZXh0IHg9IjE3NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMGYxNzJhIj5yID0gaDwvdGV4dD4KICAKICA8bGluZSB4MT0iMjIwIiB5MT0iNTAiIHgyPSIyMjAiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iNTAiIHgyPSIyMjUiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyMTUiIHkxPSIyMDAiIHgyPSIyMjUiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMzUiIHk9IjEzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmggPSA/PC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(6.24\\\\text{ cm}\\)",
             "\\(4.82\\\\text{ cm}\\)",
@@ -5008,14 +3924,16 @@
               "work": "\\[ \\pi h^2 = \\frac{400}{4} = 100 \\]\n\\[ h^2 = \\frac{100}{\\pi} \\]\n\\[ h = \\sqrt{\\frac{100}{\\pi}} \\approx 5.64 \\text{ cm} \\]"
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n       <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"175\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">r = h</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = ?</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q7b",
           "type": "mc",
           "difficulty": "hard",
           "stem": "The height of a cylinder is equal to its diameter, and it has a total surface area of \\(600\\\\text{ cm}^2\\). Find the radius, correct to two decimal places.",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMDAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgMTAwLDIwMCBDIDEwMCwyMjUgMjAwLDIyNSAyMDAsMjAwIEwgMjAwLDUwIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHBhdGggZD0iTSAxMDAsNTAgQyAxMDAsMjUgMjAwLDI1IDIwMCw1MCBDIDIwMCw3NSAxMDAsNzUgMTAwLDUwIFoiIGZpbGw9IiNmOGZhZmMiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KICA8bGluZSB4MT0iMTUwIiB5MT0iNTAiIHgyPSIyMDAiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCwyIi8+CiAgICAgICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMiIgZmlsbD0iIzMzNDE1NSIvPgogIDx0ZXh0IHg9IjE3NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMGYxNzJhIj5yID0gPzwvdGV4dD4KICAKICA8bGluZSB4MT0iMjIwIiB5MT0iNTAiIHgyPSIyMjAiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjE1IiB5MT0iNTAiIHgyPSIyMjUiIHkyPSI1MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxsaW5lIHgxPSIyMTUiIHkxPSIyMDAiIHgyPSIyMjUiIHkyPSIyMDAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8dGV4dCB4PSIyMzUiIHk9IjEzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMwZjE3MmEiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPmggPSAycjwvdGV4dD4KPC9zdmc+",
           "options": [
             "\\(6.80\\\\text{ cm}\\)",
             "\\(5.64\\\\text{ cm}\\)",
@@ -5043,14 +3961,16 @@
               "work": "\\[ \\pi r^2 = 100 \\]\n\\[ r^2 = \\frac{100}{\\pi} \\]\n\\[ r = \\sqrt{\\frac{100}{\\pi}} \\approx 5.64 \\text{ cm} \\]"
             }
           ],
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 300 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M 100,50 L 100,200 C 100,225 200,225 200,200 L 200,50\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <path d=\"M 100,50 C 100,25 200,25 200,50 C 200,75 100,75 100,50 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"150\" y1=\"50\" x2=\"200\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n       <circle cx=\"150\" cy=\"50\" r=\"2\" fill=\"#334155\"/>\n  <text x=\"175\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">r = ?</text>\n  \n  <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"50\" x2=\"225\" y2=\"50\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"215\" y1=\"200\" x2=\"225\" y2=\"200\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"235\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">h = 2r</text>\n</svg>"
+          }
         },
         {
           "id": "y9-16c-q8",
           "type": "mc",
           "difficulty": "hard",
           "stem": "A \\(270^{\\\\circ}\\) sector block of cheese is cut from a cylindrical block of cheese. The original cylindrical block had:\n- Radius = \\(8\\\\text{ cm}\\)\n- Height = \\(4\\\\text{ cm}\\)\nFind the total surface area of the remaining piece of cheese. (Round the final answer to two decimal places.)",
-          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIyNjAiIHZpZXdCb3g9IjAgMCAzMjAgMjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIAogIDwhLS0gQm9keSAoMjcwIGRlZyBjdXJ2ZWQgc3VyZmFjZSkgLS0+CiAgPHBhdGggZD0iTSA4Ni4zNiwxMDguMjggQSA5MCA0MCAwIDEgMSAyMTMuNjQgMTA4LjI4IEwgMjEzLjY0LDIwOC4yOCBBIDkwIDQwIDAgMSAwIDg2LjM2IDIwOC4yOCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgCiAgPCEtLSBTaWxob3VldHRlIGxpbmVzIChMZWZ0IGFuZCBSaWdodCkgLS0+CiAgPGxpbmUgeDE9IjYwIiB5MT0iODAiIHgyPSI2MCIgeTI9IjE4MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIDxsaW5lIHgxPSIyNDAiIHkxPSI4MCIgeDI9IjI0MCIgeTI9IjE4MCIgc3Ryb2tlPSIjMzM0MTU1IiBzdHJva2Utd2lkdGg9IjIuNSIvPgogIAogIDwhLS0gTGVmdCBDdXQgRmFjZSAtLT4KICA8cG9seWdvbiBwb2ludHM9IjE1MCw4MCA4Ni4zNiwxMDguMjggODYuMzYsMjA4LjI4IDE1MCwxODAiIGZpbGw9IiNlMmU4ZjAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAKICA8IS0tIFJpZ2h0IEN1dCBGYWNlIC0tPgogIDxwb2x5Z29uIHBvaW50cz0iMTUwLDgwIDIxMy42NCwxMDguMjggMjEzLjY0LDIwOC4yOCAxNTAsMTgwIiBmaWxsPSIjZTJlOGYwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgCiAgPCEtLSBUb3AgRmFjZSAoMjcwIGRlZyBzZWN0b3IpIC0tPgogIDxwYXRoIGQ9Ik0gMTUwLDgwIEwgODYuMzYsMTA4LjI4IEEgOTAgNDAgMCAxIDEgMjEzLjY0IDEwOC4yOCBaIiBmaWxsPSIjZjhmYWZjIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgCiAgPCEtLSBBbmdsZSBBcmMgKDI3MCBkZWcpIC0tPgogIDxwYXRoIGQ9Ik0gMTQzLDg3IEEgMTAgMTAgMCAxIDEgMTU3IDg3IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iMTUwIiB5PSI2NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMzMzQxNTUiPjI3MMKwPC90ZXh0PgoKICA8IS0tIFJhZGl1cyBkaW1lbnNpb24gKENlbnRlciB0byBUb3ApIC0tPgogIDxsaW5lIHgxPSIxNTAiIHkxPSI4MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDIiLz4KICA8dGV4dCB4PSIxNzUiIHk9IjYwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9IjYwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzBmMTcyYSI+OCBjbTwvdGV4dD4KICAKICA8IS0tIEhlaWdodCBkaW1lbnNpb24gLS0+CiAgPGxpbmUgeDE9IjI2NSIgeTE9IjgwIiB4Mj0iMjY1IiB5Mj0iMTgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjI2MCIgeTE9IjgwIiB4Mj0iMjcwIiB5Mj0iODAiIHN0cm9rZT0iIzMzNDE1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iMjYwIiB5MT0iMTgwIiB4Mj0iMjcwIiB5Mj0iMTgwIiBzdHJva2U9IiMzMzQxNTUiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iMjgwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMGYxNzJhIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIj40IGNtPC90ZXh0Pgo8L3N2Zz4=",
           "options": [
             "\\(550.45\\\\text{ cm}^2\\)",
             "\\(486.20\\\\text{ cm}^2\\)",
@@ -5081,7 +4001,10 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 3,
+          "figure": {
+            "svg": "<svg width=\"100%\" height=\"260\" viewBox=\"0 0 320 260\" xmlns=\"http://www.w3.org/2000/svg\">\n  \n  <!-- Body (270 deg curved surface) -->\n  <path d=\"M 86.36,108.28 A 90 40 0 1 1 213.64 108.28 L 213.64,208.28 A 90 40 0 1 0 86.36 208.28 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Silhouette lines (Left and Right) -->\n  <line x1=\"60\" y1=\"80\" x2=\"60\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  <line x1=\"240\" y1=\"80\" x2=\"240\" y2=\"180\" stroke=\"#334155\" stroke-width=\"2.5\"/>\n  \n  <!-- Left Cut Face -->\n  <polygon points=\"150,80 86.36,108.28 86.36,208.28 150,180\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Right Cut Face -->\n  <polygon points=\"150,80 213.64,108.28 213.64,208.28 150,180\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Top Face (270 deg sector) -->\n  <path d=\"M 150,80 L 86.36,108.28 A 90 40 0 1 1 213.64 108.28 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  \n  <!-- Angle Arc (270 deg) -->\n  <path d=\"M 143,87 A 10 10 0 1 1 157 87\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"150\" y=\"65\" font-family=\"sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#334155\">270°</text>\n\n  <!-- Radius dimension (Center to Top) -->\n  <line x1=\"150\" y1=\"80\" x2=\"150\" y2=\"40\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,2\"/>\n  <text x=\"175\" y=\"60\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\" fill=\"#0f172a\">8 cm</text>\n  \n  <!-- Height dimension -->\n  <line x1=\"265\" y1=\"80\" x2=\"265\" y2=\"180\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"260\" y1=\"80\" x2=\"270\" y2=\"80\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <line x1=\"260\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"280\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" dominant-baseline=\"middle\">4 cm</text>\n</svg>"
+          }
         },
         {
           "id": "y9-willoughby-17-y-pc-q5",
