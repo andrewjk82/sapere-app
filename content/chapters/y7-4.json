@@ -2913,8 +2913,8 @@
               "work": "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)"
             }
           ],
-          "timeLimit": 90,
-          "xp": 2,
+          "timeLimit": 60,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "ascending ",
@@ -2957,8 +2957,8 @@
               "work": "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)"
             }
           ],
-          "timeLimit": 90,
-          "xp": 2,
+          "timeLimit": 60,
+          "xp": 1,
           "keyPoints": [
             {
               "text": "ascending",
@@ -4733,7 +4733,9 @@
             "30",
             "40",
             "50"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-frac-q4-var",
@@ -4778,7 +4780,9 @@
             "20",
             "30",
             "40"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

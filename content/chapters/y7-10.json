@@ -4155,7 +4155,9 @@
             "-9, -5, -2, 3, 12, 17",
             "17, 12, 3, -9, -5, -2",
             "17, 12, -9, -5, 3, -2"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q5-var",
@@ -4196,7 +4198,9 @@
             "15, 9, 2, -1, -4, -11",
             "15, 9, 2, -11, -4, -1",
             "15, 9, -11, -4, 2, -1"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4304,7 +4308,9 @@
               "text": "\\(20 \\div 4 \\times (3+2)-5\\)",
               "note": "Evaluate the bracketed part first; then handle multiplication and division from left to right."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q1-var",
@@ -4345,7 +4351,9 @@
               "text": "\\(18 \\div 3 \\times (4+2)-6\\)",
               "note": "The brackets tell you which calculation to do first."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q8",
@@ -4386,7 +4394,9 @@
             "-2",
             "-\\\\frac{1}{2}",
             "4"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q8-var",
@@ -4427,7 +4437,9 @@
             "\\\\frac{11}{5}",
             "-3",
             "3"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q9",
@@ -4468,7 +4480,9 @@
             "\\\\(2 \\\\times ((5-3) + 6 \\\\div 2) = 5\\\\)",
             "\\\\(2 \\\\times (5-3 + 6) \\\\div 2 = 5\\\\)",
             "\\\\((2 \\\\times 5 - 3) + 6 \\\\div 2 = 5\\\\)"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q9-var",
@@ -4510,7 +4524,9 @@
             "\\\\(3 \\\\times ((7-5) + 8) \\\\div 2 = 7\\\\)",
             "\\\\((3 \\\\times (7-5) + 8) \\\\div 2 = 7\\\\)",
             "\\\\(3 \\\\times (7-5 + 8 \\\\div 2) = 7\\\\)"
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4562,7 +4578,9 @@
               "text": "two negative integers",
               "note": "Use examples with the subtraction in both orders to see why the sign can change."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q2-var",
@@ -4607,7 +4625,9 @@
               "text": "two negative integers",
               "note": "The order of the numbers in a subtraction matters."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -4651,7 +4671,9 @@
               "text": "which statement must be true?",
               "note": "The condition a>b>0 tells you both numbers are positive and gives their order."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q4-var",
@@ -4688,7 +4710,9 @@
               "text": "which statement must be true?",
               "note": "Use the positive condition when multiplying the inequality."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     }

@@ -33051,7 +33051,9 @@
               "text": "place value",
               "note": "The digit’s position tells you whether its value is tens, hundreds, thousands, or another place."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q3-var",
@@ -33088,7 +33090,9 @@
               "text": "place value",
               "note": "Find the column containing 6 before naming its place value."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

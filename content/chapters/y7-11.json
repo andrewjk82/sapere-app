@@ -2447,7 +2447,9 @@
                 "(-5, 1)",
                 "(5, -1)",
                 "(-1, 1)"
-              ]
+              ],
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "manly2022-y7-int-q7b",
@@ -2484,7 +2486,9 @@
                 "Quadrant II",
                 "Quadrant III",
                 "Quadrant IV"
-              ]
+              ],
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "meta": {
@@ -2500,7 +2504,9 @@
               "text": "moved down vertically 6 units and left 2 units",
               "note": "A move down changes the vertical coordinate; a move left changes the horizontal coordinate."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-int-q7-var",
@@ -2547,7 +2553,9 @@
                 "(0, 8)",
                 "(8, -2)",
                 "(-4, 2)"
-              ]
+              ],
+              "timeLimit": 60,
+              "xp": 1
             },
             {
               "id": "manly2022-y7-int-q7-varb",
@@ -2584,7 +2592,9 @@
                 "Quadrant II",
                 "Quadrant III",
                 "Quadrant IV"
-              ]
+              ],
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
           "meta": {
@@ -2600,7 +2610,9 @@
               "text": "moved down vertically 3 units and left 4 units",
               "note": "Work out the horizontal and vertical translations separately."
             }
-          ]
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },

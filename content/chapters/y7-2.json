@@ -8761,7 +8761,8 @@
                 "12",
                 "24",
                 "4"
-              ]
+              ],
+              "timeLimit": 60
             },
             {
               "id": "manly2022-y7-frac-q2b",
@@ -8803,7 +8804,8 @@
                 "240",
                 "120",
                 "24"
-              ]
+              ],
+              "timeLimit": 60
             }
           ],
           "hint": "Use prime factors: the HCF uses shared factors, while the LCM must be a multiple of both numbers.",
@@ -8820,7 +8822,9 @@
             "page": 4,
             "variant": false,
             "origin": "teacher"
-          }
+          },
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "manly2022-y7-frac-q2-var",
@@ -8868,7 +8872,8 @@
                 "6",
                 "18",
                 "4"
-              ]
+              ],
+              "timeLimit": 60
             },
             {
               "id": "manly2022-y7-frac-q2-varb",
@@ -8910,7 +8915,8 @@
                 "168",
                 "216",
                 "252"
-              ]
+              ],
+              "timeLimit": 60
             }
           ],
           "hint": "Prime-factorise both values and use the shared factors for one part and combined factors for the other.",
@@ -8927,7 +8933,9 @@
             "page": 4,
             "variant": true,
             "origin": "teacher"
-          }
+          },
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
