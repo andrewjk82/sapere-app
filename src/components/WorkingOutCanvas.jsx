@@ -1273,18 +1273,20 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     <div ref={canvasWrapperRef} className="working-out-canvas" style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px', width: '100%', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fff', position: 'relative', touchAction: 'manipulation', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}>
       <style>{SKETCH_GUARD_STYLE}</style>
       {!isSubmitted && (
-        <div style={{ display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
-          {/* Row 1: drawing tools */}
-          <div style={{ display: 'flex', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
-            {hideTitle ? <span style={{ marginRight: 'auto' }} /> : (
+        <div style={hideTitle
+          ? { display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '4px', padding: '6px 8px', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }
+          : { display: 'flex', flexDirection: 'column', background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
+          {/* Row 1: drawing tools (one line with row 2 when the title is hidden: `contents` lets both rows share the toolbar line) */}
+          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', padding: '8px 14px', gap: '6px', alignItems: 'center' }}>
+            {hideTitle ? null : (
               <span style={{ fontSize: '0.78rem', fontWeight: 800, color: '#64748b', marginRight: 'auto', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 {isGraph ? 'Graphing Canvas' : 'Working Out Pad'}
                 <span style={{ fontSize: '0.6rem', fontWeight: 700, color: '#a5b4fc', background: '#eef2ff', borderRadius: '4px', padding: '1px 5px', letterSpacing: '0.05em' }}>{CANVAS_VERSION}</span>
               </span>
             )}
-            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
+            <button onClick={() => setPalmGuard(v => { if (v) penSeenRef.current = false; return !v; })} title={palmGuard ? 'Pen Only — tap to allow finger drawing' : 'All Touch — tap to draw with the pen only'} aria-label={palmGuard ? 'Pen Only' : 'All Touch'} style={{ height: '30px', padding: hideTitle ? '0 8px' : '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: palmGuard ? '#ecfdf5' : '#f1f5f9', color: palmGuard ? '#047857' : '#64748b', fontSize: '0.72rem', fontWeight: 900, display: 'flex', alignItems: 'center', gap: '4px' }}>
               <MousePointer2 size={14} />
-              {palmGuard ? 'Pen Only' : 'All Touch'}
+              {!hideTitle && (palmGuard ? 'Pen Only' : 'All Touch')}
             </button>
             {/* Tapping the tool that is already selected swaps pen <-> eraser. */}
             <button onClick={() => setActiveTool(tool => (tool === 'pen' ? 'eraser' : 'pen'))} title={activeTool === 'pen' ? 'Pen — tap again for eraser' : 'Pen'} aria-label="Pen" aria-pressed={activeTool === 'pen'} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
@@ -1308,7 +1310,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
                 >{eraserMode}</span>
               )}
             </button>
-            <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '30px', borderRadius: '8px', border: '1px solid #e2e8f0', padding: '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
+            <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '30px', borderRadius: '8px', border: '1px solid #e2e8f0', padding: hideTitle ? '0 2px' : '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
               <option value={2}>Thin</option>
               <option value={3}>Normal</option>
               <option value={5}>Thick</option>
@@ -1320,11 +1322,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             </div>
           </div>
           {/* Row 2: page navigation + undo + clear */}
-          <div style={{ display: 'flex', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
+          <div style={hideTitle ? { display: 'contents' } : { display: 'flex', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
             <button onClick={handleUndo} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <RotateCcw size={15} />
             </button>
-            <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />
+            {!hideTitle && <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />}
             <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 0} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === 0 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ChevronLeft size={15} />
             </button>
@@ -1338,7 +1340,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ChevronRight size={15} />
             </button>
-            <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />
+            {!hideTitle && <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />}
             <button
               onClick={addGridSticker}
               disabled={pageStickers.length >= STICKER_MAX_PER_PAGE}
@@ -1346,9 +1348,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               aria-label="Add grid sticker"
               style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', background: '#f1f5f9', color: '#64748b', fontWeight: 800, fontSize: '0.72rem' }}
             >
-              <Grid3x3 size={15} /> Grid
+              <Grid3x3 size={15} /> {!hideTitle && 'Grid'}
             </button>
-            <div style={{ flex: 1 }} />
+            <div style={{ flex: 1, minWidth: 0 }} />
             {confirmClear ? (
               <>
                 <span style={{ fontSize: '0.72rem', color: '#64748b' }}>Clear this page?</span>
