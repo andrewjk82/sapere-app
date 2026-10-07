@@ -2430,7 +2430,14 @@
                 "year": 2022,
                 "page": 3,
                 "variant": false
-              }
+              },
+              "hint": "Change the x-coordinate for the left move and the y-coordinate for the downward move.",
+              "keyPoints": [
+                {
+                  "text": "new coordinates",
+                  "note": "For the point P(-3, 7), the first coordinate is x and the second is y."
+                }
+              ]
             },
             {
               "id": "manly2022-y7-int-q7b",
@@ -2450,7 +2457,14 @@
                 "year": 2022,
                 "page": 3,
                 "variant": false
-              }
+              },
+              "hint": "Use the signs of the new x- and y-coordinates to identify the quadrant.",
+              "keyPoints": [
+                {
+                  "text": "which quadrant",
+                  "note": "The signs of x and y identify the quadrant."
+                }
+              ]
             }
           ],
           "meta": {
@@ -2459,7 +2473,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Track the horizontal and vertical moves separately; they affect different coordinates.",
+          "keyPoints": [
+            {
+              "text": "moved down vertically 6 units and left 2 units",
+              "note": "A move down changes the vertical coordinate; a move left changes the horizontal coordinate."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q7-var",
@@ -2489,7 +2510,14 @@
                 "year": 2022,
                 "page": 3,
                 "variant": false
-              }
+              },
+              "hint": "Apply the left shift to x and the downward shift to y.",
+              "keyPoints": [
+                {
+                  "text": "new coordinates",
+                  "note": "Apply the left and down movements to different coordinates."
+                }
+              ]
             },
             {
               "id": "manly2022-y7-int-q7-varb",
@@ -2509,7 +2537,14 @@
                 "year": 2022,
                 "page": 3,
                 "variant": false
-              }
+              },
+              "hint": "Identify the signs of both coordinates after the translation.",
+              "keyPoints": [
+                {
+                  "text": "which quadrant",
+                  "note": "Check the signs of the translated coordinates."
+                }
+              ]
             }
           ],
           "meta": {
@@ -2518,7 +2553,14 @@
             "year": 2022,
             "page": 3,
             "variant": true
-          }
+          },
+          "hint": "Apply the horizontal shift to the first coordinate and the vertical shift to the second.",
+          "keyPoints": [
+            {
+              "text": "moved down vertically 3 units and left 4 units",
+              "note": "Work out the horizontal and vertical translations separately."
+            }
+          ]
         }
       ]
     },

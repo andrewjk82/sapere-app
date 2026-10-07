@@ -2888,10 +2888,10 @@
         },
         {
           "id": "manly2022-y7-frac-q1",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Place these fractions in ascending order: \\(\\frac57, \\frac{12}{21}, \\frac23, \\frac9{14}\\).",
-          "answer": "12/21, 9/14, 2/3, 5/7",
+          "answer": 0,
           "steps": [
             {
               "explain": "Use a common denominator to compare the fractions.",
@@ -2912,14 +2912,27 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "options": [
+            "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)",
+            "\\(\\frac57, \\frac23, \\frac9{14}, \\frac{12}{21}\\)",
+            "\\(\\frac{12}{21}, \\frac23, \\frac9{14}, \\frac57\\)",
+            "\\(\\frac9{14}, \\frac{12}{21}, \\frac57, \\frac23\\)"
+          ],
+          "hint": "Rewrite the fractions with a common denominator so their sizes are easy to compare.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac57, \\frac{12}{21}, \\frac23, \\frac9{14}\\)",
+              "note": "Ascending means smallest to largest; compare equivalent fractions with a common denominator."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q1-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Place these fractions in ascending order: \\(\\frac34, \\frac56, \\frac7{12}, \\frac23\\).",
-          "answer": "7/12, 2/3, 3/4, 5/6",
+          "answer": 0,
           "steps": [
             {
               "explain": "Use a common denominator of 12.",
@@ -2940,7 +2953,20 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "options": [
+            "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)",
+            "\\(\\frac56, \\frac34, \\frac23, \\frac7{12}\\)",
+            "\\(\\frac7{12}, \\frac34, \\frac23, \\frac56\\)",
+            "\\(\\frac34, \\frac23, \\frac7{12}, \\frac56\\)"
+          ],
+          "hint": "Choose a common denominator, then compare the equivalent numerators.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac34, \\frac56, \\frac7{12}, \\frac23\\)",
+              "note": "Use equivalent fractions with the same denominator to compare their sizes."
+            }
+          ]
         }
       ]
     },
@@ -4014,7 +4040,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Find a common denominator before adding the numerators.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "A common denominator lets you combine the fractional parts."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q3i-var",
@@ -4038,7 +4071,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Rewrite both fractions using a common denominator, then add.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Do not add the denominators when the fractions already share a common denominator."
+            }
+          ]
         }
       ]
     },
@@ -4640,7 +4680,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Add the fractions that are already accounted for; the rest of one whole is the strawberry fraction.",
+          "keyPoints": [
+            {
+              "text": "remaining 6 students",
+              "note": "The remaining students represent the part of the class not in the first two groups."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q4-var",
@@ -4664,7 +4711,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "First find the fraction of students who chose one of the first two flavours.",
+          "keyPoints": [
+            {
+              "text": "remaining 8 students",
+              "note": "The remaining fraction and its student count describe the same part-whole relationship."
+            }
+          ]
         }
       ]
     },
@@ -4695,7 +4749,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Convert both mixed numerals to improper fractions, then use a common denominator.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Mixed numerals are easier to subtract after conversion to improper fractions."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q3ii-var",
@@ -4719,7 +4780,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Rewrite each mixed numeral as an improper fraction before subtracting.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Make the denominators match before subtracting."
+            }
+          ]
         }
       ]
     }

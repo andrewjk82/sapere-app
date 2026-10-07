@@ -8742,7 +8742,14 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "hint": "List the prime factors of both numbers and keep only the factors they share.",
+              "keyPoints": [
+                {
+                  "text": "highest common factor (HCF)",
+                  "note": "The HCF is made from prime factors shared by both numbers."
+                }
+              ]
             },
             {
               "id": "manly2022-y7-frac-q2b",
@@ -8765,7 +8772,14 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "hint": "Build a number that is divisible by both given numbers.",
+              "keyPoints": [
+                {
+                  "text": "lowest common multiple (LCM)",
+                  "note": "The LCM must be divisible by each of the two given numbers."
+                }
+              ]
             }
           ],
           "meta": {
@@ -8774,7 +8788,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Use prime factors: the HCF uses shared factors, while the LCM must be a multiple of both numbers.",
+          "keyPoints": [
+            {
+              "text": "Given the numbers 24 and 60",
+              "note": "These two measures use the same pair of numbers but different factor rules."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q2-var",
@@ -8803,7 +8824,14 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "hint": "Compare the prime factorizations and identify their common factors.",
+              "keyPoints": [
+                {
+                  "text": "highest common factor (HCF)",
+                  "note": "Keep only prime factors that occur in both factorizations."
+                }
+              ]
             },
             {
               "id": "manly2022-y7-frac-q2-varb",
@@ -8826,7 +8854,14 @@
                 "year": 2022,
                 "page": 4,
                 "variant": false
-              }
+              },
+              "hint": "Find the prime factors needed to make a multiple of each number.",
+              "keyPoints": [
+                {
+                  "text": "lowest common multiple (LCM)",
+                  "note": "Include enough prime factors to make a multiple of both numbers."
+                }
+              ]
             }
           ],
           "meta": {
@@ -8835,7 +8870,14 @@
             "year": 2022,
             "page": 4,
             "variant": true
-          }
+          },
+          "hint": "Prime-factorise both values and use the shared factors for one part and combined factors for the other.",
+          "keyPoints": [
+            {
+              "text": "Given the numbers 36 and 84",
+              "note": "Use prime factors to find both the common divisor and common multiple."
+            }
+          ]
         }
       ]
     },

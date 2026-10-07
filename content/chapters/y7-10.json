@@ -4138,7 +4138,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Descending means greatest to least; place positive values before negative values.",
+          "keyPoints": [
+            {
+              "text": "descending order",
+              "note": "Descending order means greatest first and least last."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q5-var",
@@ -4162,7 +4169,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Arrange the values from largest to smallest.",
+          "keyPoints": [
+            {
+              "text": "descending order",
+              "note": "A negative integer closer to zero is greater."
+            }
+          ]
         }
       ]
     },
@@ -4255,6 +4269,13 @@
             "\\(0\\)",
             "\\(12\\)",
             "\\(20\\)"
+          ],
+          "hint": "Work out the brackets first, then follow the order of operations.",
+          "keyPoints": [
+            {
+              "text": "\\(20 \\div 4 \\times (3+2)-5\\)",
+              "note": "Evaluate the bracketed part first; then handle multiplication and division from left to right."
+            }
           ]
         },
         {
@@ -4281,6 +4302,13 @@
             "\\(30\\)",
             "\\(6\\)",
             "\\(12\\)"
+          ],
+          "hint": "Start with the brackets, then apply the usual order of operations.",
+          "keyPoints": [
+            {
+              "text": "\\(18 \\div 3 \\times (4+2)-6\\)",
+              "note": "The brackets tell you which calculation to do first."
+            }
           ]
         },
         {
@@ -4305,7 +4333,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Simplify the numerator and denominator separately before dividing.",
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{17-3\\times(-5)}{20\\div(-2)-6}\\)",
+              "note": "Simplify the expressions above and below the fraction bar separately."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q8-var",
@@ -4329,7 +4364,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Work out the top and bottom expressions separately, following order of operations.",
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{14-2\\times(-4)}{18\\div(-3)-4}\\)",
+              "note": "Follow order of operations in both the numerator and denominator."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q9",
@@ -4349,7 +4391,14 @@
             "school": "Manly Selective Campus",
             "year": 2022,
             "page": 3
-          }
+          },
+          "hint": "Add grouping symbols around a section, then check the value of the whole expression.",
+          "keyPoints": [
+            {
+              "text": "grouping symbols",
+              "note": "Grouping symbols change which operations are done together."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q9-var",
@@ -4370,7 +4419,14 @@
             "year": 2022,
             "page": 3,
             "variant": true
-          }
+          },
+          "hint": "Use brackets to change which operations are done together, then evaluate.",
+          "keyPoints": [
+            {
+              "text": "grouping symbols",
+              "note": "Check the value after adding the grouping symbols."
+            }
+          ]
         }
       ]
     },
@@ -4403,6 +4459,13 @@
             "Always negative",
             "Either positive or negative",
             "Zero"
+          ],
+          "hint": "Try two examples using negative integers, reversing their order in the subtraction.",
+          "keyPoints": [
+            {
+              "text": "two negative integers",
+              "note": "Use examples with the subtraction in both orders to see why the sign can change."
+            }
           ]
         },
         {
@@ -4429,6 +4492,13 @@
             "Always positive",
             "Either positive or negative",
             "Always negative"
+          ],
+          "hint": "Use a pair of negative integers and subtract them in both possible orders.",
+          "keyPoints": [
+            {
+              "text": "two negative integers",
+              "note": "The order of the numbers in a subtraction matters."
+            }
           ]
         }
       ]
@@ -4462,6 +4532,13 @@
             "\\(a-b<-a-(-b)\\)",
             "\\((a-b)(b-a)>0\\)",
             "\\((a+b)(b-a)>0\\)"
+          ],
+          "hint": "Use the facts that both integers are positive and that a is greater than b.",
+          "keyPoints": [
+            {
+              "text": "which statement must be true?",
+              "note": "The condition a>b>0 tells you both numbers are positive and gives their order."
+            }
           ]
         },
         {
@@ -4488,6 +4565,13 @@
             "\\(m-n<n-m\\)",
             "\\((m-n)(n-m)>0\\)",
             "\\((m+n)(n-m)>0\\)"
+          ],
+          "hint": "Use m>n>0 to compare products that contain the same positive factor.",
+          "keyPoints": [
+            {
+              "text": "which statement must be true?",
+              "note": "Use the positive condition when multiplying the inequality."
+            }
           ]
         }
       ]

@@ -1824,7 +1824,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Evaluate the multiplication first, then use inverse operations to isolate x.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "Do the multiplication before solving for x."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-int-q6-var",
@@ -1852,7 +1859,14 @@
             "year": 2022,
             "page": 3,
             "variant": false
-          }
+          },
+          "hint": "Simplify the product before undoing the addition or subtraction.",
+          "keyPoints": [
+            {
+              "text": "\\(x\\)",
+              "note": "Use inverse operations on both sides to isolate x."
+            }
+          ]
         }
       ]
     },

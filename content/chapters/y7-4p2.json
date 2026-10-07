@@ -3667,7 +3667,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Keep the first fraction, change division to multiplication, and use the divisor’s reciprocal.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "The reciprocal belongs to the fraction you are dividing by."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q3iv-var",
@@ -3691,7 +3698,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Replace division by multiplication by the reciprocal of the second fraction.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Keep the first fraction unchanged when taking the reciprocal."
+            }
+          ]
         }
       ]
     },
@@ -3932,7 +3946,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Convert both mixed numerals to improper fractions before multiplying.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Change both mixed numerals to improper fractions before multiplying."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q3iii-var",
@@ -3956,7 +3977,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Turn each mixed number into an improper fraction, then multiply.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Multiplication of fractions uses numerator times numerator and denominator times denominator."
+            }
+          ]
         }
       ]
     },
@@ -4550,7 +4578,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Add the two fractions first, then find two-thirds of that sum.",
+          "keyPoints": [
+            {
+              "text": "two-thirds of the sum",
+              "note": "The order is sum first, then take the stated fraction of that sum."
+            }
+          ]
         },
         {
           "id": "manly2022-y7-frac-q5-var",
@@ -4574,7 +4609,14 @@
             "year": 2022,
             "page": 4,
             "variant": false
-          }
+          },
+          "hint": "Work out the sum inside the phrase first, then multiply by three-quarters.",
+          "keyPoints": [
+            {
+              "text": "three-quarters of the sum",
+              "note": "Here “of” means multiply after finding the sum."
+            }
+          ]
         }
       ]
     }

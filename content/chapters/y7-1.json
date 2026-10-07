@@ -33040,6 +33040,13 @@
             "8 hundreds",
             "8 thousands",
             "80 thousands"
+          ],
+          "hint": "Find the column containing the digit 8, then use that column to name its value.",
+          "keyPoints": [
+            {
+              "text": "place value",
+              "note": "The digit’s position tells you whether its value is tens, hundreds, thousands, or another place."
+            }
           ]
         },
         {
@@ -33066,6 +33073,13 @@
             "6 thousands",
             "60 thousands",
             "600 thousands"
+          ],
+          "hint": "Locate the 6 in the number before deciding its place value.",
+          "keyPoints": [
+            {
+              "text": "place value",
+              "note": "Find the column containing 6 before naming its place value."
+            }
           ]
         }
       ]
