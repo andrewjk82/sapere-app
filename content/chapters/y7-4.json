@@ -2885,6 +2885,62 @@
             "topic": "Comparison of fractions"
           },
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-frac-q1",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Place these fractions in ascending order: \\(\\frac57, \\frac{12}{21}, \\frac23, \\frac9{14}\\).",
+          "answer": "12/21, 9/14, 2/3, 5/7",
+          "steps": [
+            {
+              "explain": "Use a common denominator to compare the fractions.",
+              "work": "\\(\\frac57=\\frac{30}{42},\\quad\\frac{12}{21}=\\frac{24}{42},\\quad\\frac23=\\frac{28}{42},\\quad\\frac9{14}=\\frac{27}{42}\\)"
+            },
+            {
+              "explain": "Arrange the equivalent fractions from least to greatest.",
+              "work": "\\(\\frac{24}{42}<\\frac{27}{42}<\\frac{28}{42}<\\frac{30}{42}\\)"
+            },
+            {
+              "explain": "Write the original fractions in that order.",
+              "work": "\\(\\frac{12}{21}, \\frac9{14}, \\frac23, \\frac57\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q1-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Place these fractions in ascending order: \\(\\frac34, \\frac56, \\frac7{12}, \\frac23\\).",
+          "answer": "7/12, 2/3, 3/4, 5/6",
+          "steps": [
+            {
+              "explain": "Use a common denominator of 12.",
+              "work": "\\(\\frac34=\\frac9{12},\\quad\\frac56=\\frac{10}{12},\\quad\\frac7{12}=\\frac7{12},\\quad\\frac23=\\frac8{12}\\)"
+            },
+            {
+              "explain": "Arrange the equivalent fractions from least to greatest.",
+              "work": "\\(\\frac7{12}<\\frac8{12}<\\frac9{12}<\\frac{10}{12}\\)"
+            },
+            {
+              "explain": "Write the original fractions in that order.",
+              "work": "\\(\\frac7{12}, \\frac23, \\frac34, \\frac56\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     },
@@ -3935,6 +3991,54 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-frac-q3i",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(\\frac25+\\frac37\\).",
+          "answer": "29/35",
+          "steps": [
+            {
+              "explain": "Find a common denominator so the fractions can be added.",
+              "work": "\\(\\frac25=\\frac{14}{35},\\quad\\frac37=\\frac{15}{35}\\)"
+            },
+            {
+              "explain": "Add the numerators and simplify if possible.",
+              "work": "\\(\\frac{14}{35}+\\frac{15}{35}=\\frac{29}{35}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q3i-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(\\frac38+\\frac5{12}\\).",
+          "answer": "19/24",
+          "steps": [
+            {
+              "explain": "Use a common denominator of 24.",
+              "work": "\\(\\frac38=\\frac9{24},\\quad\\frac5{12}=\\frac{10}{24}\\)"
+            },
+            {
+              "explain": "Add the numerators and simplify if possible.",
+              "work": "\\(\\frac9{24}+\\frac{10}{24}=\\frac{19}{24}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     },
@@ -4513,6 +4617,109 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "manly2022-y7-frac-q4",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "A class survey found that \\(\\frac35\\) of the students preferred chocolate ice-cream and \\(\\frac14\\) preferred caramel. The remaining 6 students preferred strawberry. How many students are in the class?",
+          "answer": "40",
+          "steps": [
+            {
+              "explain": "Find the fraction who preferred chocolate or caramel, then subtract from 1 to find the strawberry fraction.",
+              "work": "\\(\\frac35+\\frac14=\\frac{12}{20}+\\frac5{20}=\\frac{17}{20};\\quad1-\\frac{17}{20}=\\frac3{20}\\)"
+            },
+            {
+              "explain": "If \\(\\frac3{20}\\) of the class is 6 students, find the whole class size.",
+              "work": "\\(\\frac3{20}N=6\\Rightarrow N=6\\times\\frac{20}{3}=40\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q4-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "A class survey found that \\(\\frac25\\) of the students preferred vanilla ice-cream and \\(\\frac13\\) preferred mango. The remaining 8 students preferred strawberry. How many students are in the class?",
+          "answer": "30",
+          "steps": [
+            {
+              "explain": "Add the fractions who preferred vanilla and mango, then find the remaining fraction.",
+              "work": "\\(\\frac25+\\frac13=\\frac6{15}+\\frac5{15}=\\frac{11}{15};\\quad1-\\frac{11}{15}=\\frac4{15}\\)"
+            },
+            {
+              "explain": "If \\(\\frac4{15}\\) of the class is 8 students, find the total.",
+              "work": "\\(\\frac4{15}N=8\\Rightarrow N=8\\times\\frac{15}{4}=30\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-4g",
+      "code": "4G",
+      "title": "Subtraction of mixed numerals",
+      "questions": [
+        {
+          "id": "manly2022-y7-frac-q3ii",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(7\\frac14-5\\frac13\\).",
+          "answer": "1 11/12",
+          "steps": [
+            {
+              "explain": "Convert the mixed numbers to improper fractions with a common denominator.",
+              "work": "\\(7\\frac14=\\frac{87}{12},\\quad5\\frac13=\\frac{64}{12}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\frac{87}{12}-\\frac{64}{12}=\\frac{23}{12}=1\\frac{11}{12}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q3ii-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(6\\frac13-2\\frac58\\).",
+          "answer": "3 17/24",
+          "steps": [
+            {
+              "explain": "Convert to improper fractions with denominator 24.",
+              "work": "\\(6\\frac13=\\frac{152}{24},\\quad2\\frac58=\\frac{63}{24}\\)"
+            },
+            {
+              "explain": "Subtract and convert the improper fraction to a mixed number.",
+              "work": "\\(\\frac{152}{24}-\\frac{63}{24}=\\frac{89}{24}=3\\frac{17}{24}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     }

@@ -2374,8 +2374,8 @@
     },
     {
       "topicId": "y7-11b",
-      "code": "",
-      "title": "",
+      "code": "12B",
+      "title": "The Cartesian plane",
       "questions": [
         {
           "id": "y7-t3-2018-p2-q1",
@@ -2401,6 +2401,124 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "manly2022-y7-int-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The point \\(P(-3,7)\\) is moved down vertically 6 units and left 2 units. Answer both parts.",
+          "parts": [
+            {
+              "id": "manly2022-y7-int-q7a",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "Point \\(P(-3, 7)\\) is moved down \\(6\\) units and left \\(2\\) units. What are its new coordinates?",
+              "answer": "(-5, 1)",
+              "steps": [
+                {
+                  "explain": "Moving left decreases the x-coordinate; moving down decreases the y-coordinate.",
+                  "work": "\\((x,y)\\mapsto(x-\\text{left},y-\\text{down})\\)"
+                },
+                {
+                  "explain": "Apply both changes to the given point.",
+                  "work": "\\((x,y)=(-3,7)\\mapsto(-5,1)\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 3,
+                "variant": false
+              }
+            },
+            {
+              "id": "manly2022-y7-int-q7b",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "In which quadrant is the new position of \\(P\\)?",
+              "answer": "Quadrant II",
+              "steps": [
+                {
+                  "explain": "Use the signs of the new x- and y-coordinates to identify the quadrant.",
+                  "work": "\\(x<0, y>0\\Rightarrow\\text{Quadrant II}\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 3,
+                "variant": false
+              }
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q7-var",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The point \\(P(-4,5)\\) is moved down vertically 3 units and left 4 units. Answer both parts.",
+          "parts": [
+            {
+              "id": "manly2022-y7-int-q7-vara",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "Point \\(P(-4, 5)\\) is moved down \\(3\\) units and left \\(4\\) units. What are its new coordinates?",
+              "answer": "(-8, 2)",
+              "steps": [
+                {
+                  "explain": "Moving left decreases the x-coordinate; moving down decreases the y-coordinate.",
+                  "work": "\\((x,y)\\mapsto(x-\\text{left},y-\\text{down})\\)"
+                },
+                {
+                  "explain": "Apply both changes to the given point.",
+                  "work": "\\((x,y)=(-4,5)\\mapsto(-8,2)\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 3,
+                "variant": false
+              }
+            },
+            {
+              "id": "manly2022-y7-int-q7-varb",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "In which quadrant is the new position of \\(P\\)?",
+              "answer": "Quadrant II",
+              "steps": [
+                {
+                  "explain": "Use the signs of the new x- and y-coordinates to identify the quadrant.",
+                  "work": "\\(x<0, y>0\\Rightarrow\\text{Quadrant II}\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 3,
+                "variant": false
+              }
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": true
+          }
         }
       ]
     },

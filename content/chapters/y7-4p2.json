@@ -3644,6 +3644,54 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-frac-q3iv",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(\\frac58\\div\\frac34\\).",
+          "answer": "5/6",
+          "steps": [
+            {
+              "explain": "Divide by a fraction by multiplying by its reciprocal.",
+              "work": "\\(\\frac58\\div\\frac34=\\frac58\\times\\frac43\\)"
+            },
+            {
+              "explain": "Multiply and simplify.",
+              "work": "\\(\\frac{20}{24}=\\frac56\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q3iv-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(\\frac79\\div\\frac{14}{15}\\).",
+          "answer": "5/6",
+          "steps": [
+            {
+              "explain": "Multiply by the reciprocal of the divisor.",
+              "work": "\\(\\frac79\\div\\frac{14}{15}=\\frac79\\times\\frac{15}{14}\\)"
+            },
+            {
+              "explain": "Cancel common factors and simplify.",
+              "work": "\\(\\frac{105}{126}=\\frac56\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     },
@@ -3861,6 +3909,54 @@
             "topic": "Multiplication and division of fractions"
           },
           "xp": 1
+        },
+        {
+          "id": "manly2022-y7-frac-q3iii",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(1\\frac35\\times4\\frac16\\).",
+          "answer": "6 2/3",
+          "steps": [
+            {
+              "explain": "Convert each mixed number to an improper fraction.",
+              "work": "\\(1\\frac35=\\frac85,\\quad4\\frac16=\\frac{25}{6}\\)"
+            },
+            {
+              "explain": "Multiply and simplify.",
+              "work": "\\(\\frac85\\times\\frac{25}{6}=\\frac{200}{30}=\\frac{20}{3}=6\\frac23\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q3iii-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate and give your answer in simplest form: \\(2\\frac14\\times3\\frac13\\).",
+          "answer": "7 1/2",
+          "steps": [
+            {
+              "explain": "Convert each mixed number to an improper fraction.",
+              "work": "\\(2\\frac14=\\frac94,\\quad3\\frac13=\\frac{10}{3}\\)"
+            },
+            {
+              "explain": "Multiply and simplify.",
+              "work": "\\(\\frac94\\times\\frac{10}{3}=\\frac{90}{12}=\\frac{15}{2}=7\\frac12\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     },
@@ -4431,6 +4527,54 @@
             "topic": "Multiplication and division of fractions"
           },
           "xp": 1
+        },
+        {
+          "id": "manly2022-y7-frac-q5",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "What is two-thirds of the sum of three-fifths and ten-thirteenths? Give your answer in simplest form.",
+          "answer": "178/195",
+          "steps": [
+            {
+              "explain": "Add the two fractions using a common denominator.",
+              "work": "\\(\\frac35+\\frac{10}{13}=\\frac{39}{65}+\\frac{50}{65}=\\frac{89}{65}\\)"
+            },
+            {
+              "explain": "Multiply the sum by two-thirds and simplify.",
+              "work": "\\(\\frac23\\times\\frac{89}{65}=\\frac{178}{195}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q5-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "What is three-quarters of the sum of two-fifths and seven-tenths? Give your answer in simplest form.",
+          "answer": "33/40",
+          "steps": [
+            {
+              "explain": "Add the fractions using denominator 10.",
+              "work": "\\(\\frac25+\\frac7{10}=\\frac4{10}+\\frac7{10}=\\frac{11}{10}\\)"
+            },
+            {
+              "explain": "Multiply the sum by three-quarters and simplify.",
+              "work": "\\(\\frac34\\times\\frac{11}{10}=\\frac{33}{40}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
         }
       ]
     }

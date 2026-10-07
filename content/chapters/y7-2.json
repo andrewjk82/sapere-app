@@ -8714,6 +8714,128 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-frac-q2",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given the numbers 24 and 60, answer both questions.",
+          "parts": [
+            {
+              "id": "manly2022-y7-frac-q2a",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "What is the highest common factor (HCF) of \\(24\\) and \\(60\\)?",
+              "answer": "12",
+              "steps": [
+                {
+                  "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
+                },
+                {
+                  "explain": "Multiply the common prime factors.",
+                  "work": "\\(\\operatorname{HCF}(24,60)=12\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 4,
+                "variant": false
+              }
+            },
+            {
+              "id": "manly2022-y7-frac-q2b",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "What is the lowest common multiple (LCM) of \\(24\\) and \\(60\\)?",
+              "answer": "120",
+              "steps": [
+                {
+                  "explain": "Use the prime factors and take each prime with the larger power needed by either number."
+                },
+                {
+                  "explain": "Multiply these factors to obtain the LCM.",
+                  "work": "\\(\\operatorname{LCM}(24,60)=120\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 4,
+                "variant": false
+              }
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-frac-q2-var",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given the numbers 36 and 84, answer both questions.",
+          "parts": [
+            {
+              "id": "manly2022-y7-frac-q2-vara",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "What is the highest common factor (HCF) of \\(36\\) and \\(84\\)?",
+              "answer": "12",
+              "steps": [
+                {
+                  "explain": "List the prime factors of both numbers and take the common factors with the smaller powers."
+                },
+                {
+                  "explain": "Multiply the common prime factors.",
+                  "work": "\\(\\operatorname{HCF}(36,84)=12\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 4,
+                "variant": false
+              }
+            },
+            {
+              "id": "manly2022-y7-frac-q2-varb",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "What is the lowest common multiple (LCM) of \\(36\\) and \\(84\\)?",
+              "answer": "252",
+              "steps": [
+                {
+                  "explain": "Use the prime factors and take each prime with the larger power needed by either number."
+                },
+                {
+                  "explain": "Multiply these factors to obtain the LCM.",
+                  "work": "\\(\\operatorname{LCM}(36,84)=252\\)"
+                }
+              ],
+              "meta": {
+                "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+                "school": "Manly Selective Campus",
+                "year": 2022,
+                "page": 4,
+                "variant": false
+              }
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": true
+          }
         }
       ]
     },

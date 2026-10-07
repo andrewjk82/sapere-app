@@ -4115,6 +4115,54 @@
             "sourceQuestion": 24,
             "year": "Y7"
           }
+        },
+        {
+          "id": "manly2022-y7-int-q5",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Arrange \\(-2, 12, 3, -5, 17, -9\\) in descending order.",
+          "answer": "17, 12, 3, -2, -5, -9",
+          "steps": [
+            {
+              "explain": "Descending order lists values from greatest to least.",
+              "work": "\\(17>12>3>-2>-5>-9\\)"
+            },
+            {
+              "explain": "Place the positive numbers first, then the negative numbers from closest to zero to least.",
+              "work": "\\(17, 12, 3, -2, -5, -9\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q5-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Arrange \\(-4, 15, 2, -11, 9, -1\\) in descending order.",
+          "answer": "15, 9, 2, -1, -4, -11",
+          "steps": [
+            {
+              "explain": "Descending order lists values from greatest to least.",
+              "work": "\\(15>9>2>-1>-4>-11\\)"
+            },
+            {
+              "explain": "Place the positive numbers first, then the negative numbers from closest to zero to least.",
+              "work": "\\(15, 9, 2, -1, -4, -11\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
         }
       ]
     },
@@ -4182,6 +4230,265 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "manly2022-y7-int-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(20 \\div 4 \\times (3+2)-5\\).",
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Evaluate brackets first, then multiplication and division from left to right, and finally subtract.",
+              "work": "\\(20\\div4\\times5-5=5\\times5-5=20\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "\\(-4\\)",
+            "\\(0\\)",
+            "\\(12\\)",
+            "\\(20\\)"
+          ]
+        },
+        {
+          "id": "manly2022-y7-int-q1-var",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(18 \\div 3 \\times (4+2)-6\\).",
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Evaluate brackets first, then division and multiplication from left to right.",
+              "work": "\\(18\\div3\\times6-6=6\\times6-6=30\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "\\(24\\)",
+            "\\(30\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ]
+        },
+        {
+          "id": "manly2022-y7-int-q8",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\dfrac{17-3\\times(-5)}{20\\div(-2)-6}\\).",
+          "answer": "-2",
+          "steps": [
+            {
+              "explain": "Evaluate multiplication and division in the numerator and denominator first.",
+              "work": "\\(17-3\\times(-5)=32,\\quad 20\\div(-2)-6=-16\\)"
+            },
+            {
+              "explain": "Divide the simplified numerator by the simplified denominator.",
+              "work": "\\(\\frac{32}{-16}=-2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q8-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\dfrac{14-2\\times(-4)}{18\\div(-3)-4}\\).",
+          "answer": "-3",
+          "steps": [
+            {
+              "explain": "Evaluate multiplication and division in the numerator and denominator first.",
+              "work": "\\(14-2\\times(-4)=22,\\quad18\\div(-3)-4=-10\\)"
+            },
+            {
+              "explain": "Divide the simplified numerator by the simplified denominator.",
+              "work": "\\(\\frac{22}{-10}=-\\frac{11}{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q9",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Insert grouping symbols into \\(2\\times(5-3)+6\\div2=5\\) to make the statement true.",
+          "answer": "One correct arrangement is \\((2\\times(5-3)+6)\\div2=5\\).",
+          "manual": true,
+          "steps": [
+            {
+              "explain": "Group the multiplication and addition before dividing by 2.",
+              "work": "\\((2\\times(5-3)+6)\\div2=(4+6)\\div2=5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q9-var",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Insert grouping symbols into \\(3\\times(7-5)+8\\div2=7\\) to make the statement true.",
+          "answer": "One correct arrangement is \\((3\\times(7-5)+8)\\div2=7\\).",
+          "manual": true,
+          "steps": [
+            {
+              "explain": "Group the multiplication and addition before dividing by 2.",
+              "work": "\\((3\\times(7-5)+8)\\div2=(6+8)\\div2=7\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": true
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-10c",
+      "code": "11C",
+      "title": "Addition and subtraction of a negative integer",
+      "questions": [
+        {
+          "id": "manly2022-y7-int-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The difference of two negative integers is:",
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Subtracting one negative integer can produce either sign, depending on the values and order.",
+              "work": "\\(-1-(-2)=1\\), while \\(-2-(-1)=-1\\)."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "Always positive",
+            "Always negative",
+            "Either positive or negative",
+            "Zero"
+          ]
+        },
+        {
+          "id": "manly2022-y7-int-q2-var",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The difference of two negative integers is:",
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Subtracting one negative integer can produce either sign, depending on the values and order.",
+              "work": "\\(-3-(-5)=2\\), while \\(-5-(-3)=-2\\)."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "Always zero",
+            "Always positive",
+            "Either positive or negative",
+            "Always negative"
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-10g",
+      "code": "11G",
+      "title": "Review",
+      "questions": [
+        {
+          "id": "manly2022-y7-int-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given integers \\(a\\) and \\(b\\) with \\(a>b>0\\), which statement must be true?",
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since \\(a>b>0\\), both values are positive and multiplying the inequality by positive \\(a\\) preserves its direction.",
+              "work": "\\(a>b\\Rightarrow a\\cdot a>a\\cdot b\\Rightarrow a^2>ab\\)."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "\\(a^2>ab\\)",
+            "\\(a-b<-a-(-b)\\)",
+            "\\((a-b)(b-a)>0\\)",
+            "\\((a+b)(b-a)>0\\)"
+          ]
+        },
+        {
+          "id": "manly2022-y7-int-q4-var",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given integers \\(m\\) and \\(n\\) with \\(m>n>0\\), which statement must be true?",
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply \\(m>n\\) by the positive value \\(n\\); the inequality keeps its direction.",
+              "work": "\\(m>n\\Rightarrow mn>n^2\\). Also, \\(m-n>0\\) and \\(n-m<0\\), so their product is negative."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "\\(mn>n^2\\)",
+            "\\(m-n<n-m\\)",
+            "\\((m-n)(n-m)>0\\)",
+            "\\((m+n)(n-m)>0\\)"
+          ]
         }
       ]
     }

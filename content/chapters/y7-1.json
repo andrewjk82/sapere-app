@@ -33015,6 +33015,58 @@
             "examPaper": "y7-practice-1"
           },
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-int-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the place value of \\(8\\) in \\(583,416\\)?",
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Locate the digit 8 in the place-value columns.",
+              "work": "The digit 8 is in the ten-thousands column, so its place value is \\(80,000\\)."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "8 tens",
+            "8 hundreds",
+            "8 thousands",
+            "80 thousands"
+          ]
+        },
+        {
+          "id": "manly2022-y7-int-q3-var",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the place value of \\(6\\) in \\(264,931\\)?",
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Locate the digit 6 in the place-value columns.",
+              "work": "The digit 6 is in the ten-thousands column, so its place value is \\(60,000\\)."
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          },
+          "options": [
+            "6 hundreds",
+            "6 thousands",
+            "60 thousands",
+            "600 thousands"
+          ]
         }
       ]
     },

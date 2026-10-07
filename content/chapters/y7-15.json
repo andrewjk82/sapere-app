@@ -1797,6 +1797,62 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "manly2022-y7-int-q6",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find \\(x\\) if \\(5x+7\\times(-3)=-41\\).",
+          "answer": "-4",
+          "steps": [
+            {
+              "explain": "Evaluate the multiplication before solving the equation.",
+              "work": "\\(5x-21=-41\\)"
+            },
+            {
+              "explain": "Add 21 to both sides to isolate the term containing \\(x\\).",
+              "work": "\\(5x=-20\\)"
+            },
+            {
+              "explain": "Divide both sides by 5.",
+              "work": "\\(x=-4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
+        },
+        {
+          "id": "manly2022-y7-int-q6-var",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find \\(x\\) if \\(4x+6\\times(-2)=-26\\).",
+          "answer": "-7/2",
+          "steps": [
+            {
+              "explain": "Evaluate the multiplication before solving the equation.",
+              "work": "\\(4x-12=-26\\)"
+            },
+            {
+              "explain": "Add 12 to both sides.",
+              "work": "\\(4x=-14\\)"
+            },
+            {
+              "explain": "Divide both sides by 4.",
+              "work": "\\(x=-\\frac{7}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 3,
+            "variant": false
+          }
         }
       ]
     },
