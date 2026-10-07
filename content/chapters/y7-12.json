@@ -1039,23 +1039,19 @@
         {
           "id": "wghs-y7-2015-t3-s2-q3",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Using a ruler, draw each small shape, showing all necessary features.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "wghs-y7-2015-t3-s2-q3a",
               "type": "review",
-              "difficulty": "easy",
               "stem": "Using a ruler, draw a small isosceles triangle, showing the necessary features.",
+              "difficulty": "easy",
+              "figure": {
+                "svg": "fig:c5a14ac9d9"
+              },
               "answer": "A triangle with two equal sides clearly marked.",
-              "manual": true,
               "hint": "Draw a triangle and mark its two equal sides with matching tick marks.",
-              "keyPoints": [
-                {
-                  "text": "isosceles triangle",
-                  "note": "An isosceles triangle has at least two equal sides; show the equality with matching marks."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Draw a triangle with a horizontal base and a vertex above its midpoint.",
@@ -1064,15 +1060,19 @@
                 {
                   "explain": "Mark the two equal sides with matching ticks so the defining feature is explicit.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"115,155 210,35 305,155\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"155\" y1=\"95\" x2=\"166\" y2=\"103\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"254\" y1=\"103\" x2=\"265\" y2=\"95\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"185\" y1=\"155\" x2=\"235\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"2\" /><text x=\"210\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">equal side marks</text></svg>"
+                    "svg": "fig:5b21b63d11"
                   }
                 }
               ],
+              "manual": true,
               "timeLimit": 90,
-              "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
-              },
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "isosceles triangle",
+                  "note": "An isosceles triangle has at least two equal sides; show the equality with matching marks."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -1086,17 +1086,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q3b",
               "type": "review",
-              "difficulty": "easy",
               "stem": "Using a ruler, draw a small right-angled triangle, showing the necessary features.",
+              "difficulty": "easy",
+              "figure": {
+                "svg": "fig:c5a14ac9d9"
+              },
               "answer": "A triangle with one 90° angle clearly marked.",
-              "manual": true,
               "hint": "Make one pair of sides perpendicular and mark the right angle.",
-              "keyPoints": [
-                {
-                  "text": "right-angled triangle",
-                  "note": "One interior angle must be exactly 90°; indicate it with a small square."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Draw one vertical and one horizontal side meeting at a vertex.",
@@ -1105,15 +1101,19 @@
                 {
                   "explain": "Complete the triangle and mark the 90° corner with a small square.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"115,155 115,55 305,155\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M115 135 H135 V155\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"3\"/><text x=\"210\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">90° corner marked</text></svg>"
+                    "svg": "fig:7aa608fdb5"
                   }
                 }
               ],
+              "manual": true,
               "timeLimit": 90,
               "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
-              },
+              "keyPoints": [
+                {
+                  "text": "right-angled triangle",
+                  "note": "One interior angle must be exactly 90°; indicate it with a small square."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -1127,17 +1127,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q3c",
               "type": "review",
-              "difficulty": "easy",
               "stem": "Using a ruler, draw a small obtuse angle, showing the necessary features.",
+              "difficulty": "easy",
+              "figure": {
+                "svg": "fig:c5a14ac9d9"
+              },
               "answer": "An angle greater than 90° and less than 180°.",
-              "manual": true,
               "hint": "Make the opening wider than a right angle but smaller than a straight angle.",
-              "keyPoints": [
-                {
-                  "text": "obtuse angle",
-                  "note": "An obtuse angle is greater than 90° and less than 180°."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Draw one ray horizontally to the right and another ray up-left from the same vertex.",
@@ -1146,15 +1142,19 @@
                 {
                   "explain": "Mark the interior angle as obtuse.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"120\" y1=\"125\" x2=\"320\" y2=\"125\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"120\" y1=\"125\" x2=\"75\" y2=\"52\" stroke=\"#334155\" stroke-width=\"3\" /><path d=\"M165 125 A45 45 0 0 0 95 84\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"164\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">>90°</text></svg>"
+                    "svg": "fig:f2b53b064f"
                   }
                 }
               ],
+              "manual": true,
               "timeLimit": 75,
               "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
-              },
+              "keyPoints": [
+                {
+                  "text": "obtuse angle",
+                  "note": "An obtuse angle is greater than 90° and less than 180°."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -1168,17 +1168,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q3d",
               "type": "review",
-              "difficulty": "easy",
               "stem": "Using a ruler, draw a small acute angle, showing the necessary features.",
+              "difficulty": "easy",
+              "figure": {
+                "svg": "fig:c5a14ac9d9"
+              },
               "answer": "An angle greater than 0° and less than 90°.",
-              "manual": true,
               "hint": "Make the opening smaller than a right angle.",
-              "keyPoints": [
-                {
-                  "text": "acute angle",
-                  "note": "An acute angle is greater than 0° and less than 90°."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Draw two rays from the same vertex with a narrow opening.",
@@ -1187,15 +1183,19 @@
                 {
                   "explain": "Mark the interior angle as acute.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"120\" y1=\"145\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"120\" y1=\"145\" x2=\"190\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" /><path d=\"M165 145 A45 45 0 0 0 148 109\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"3\"/><text x=\"176\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#15803d\" font-weight=\"600\"><90°</text></svg>"
+                    "svg": "fig:5a712712b4"
                   }
                 }
               ],
+              "manual": true,
               "timeLimit": 75,
               "xp": 2,
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
-              },
+              "keyPoints": [
+                {
+                  "text": "acute angle",
+                  "note": "An acute angle is greater than 0° and less than 90°."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -1208,14 +1208,14 @@
             }
           ],
           "hint": "Use matching side ticks or a right-angle square to make the defining feature clear.",
+          "timeLimit": 330,
+          "xp": 2,
           "keyPoints": [
             {
               "text": "necessary features",
               "note": "Use standard geometry marks so another student can identify each property from your drawing."
             }
           ],
-          "timeLimit": 330,
-          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -1223,7 +1223,8 @@
             "page": 4,
             "question": "q3",
             "section": "Section 2 (Geometry)",
-            "marks": 4
+            "marks": 4,
+            "origin": "teacher"
           }
         },
         {
