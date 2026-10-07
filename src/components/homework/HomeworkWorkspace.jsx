@@ -295,7 +295,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
       )}
       <div style={{ flex: 1, minHeight: 0, display: 'flex' }}>
         <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: notebooksLoaded && !submitting ? 'auto' : 'none' }}>
-          <WorkingOutCanvas ref={canvasRef} isSubmitted={false} maxPages={MAX_HOMEWORK_PAGES} onInkChange={handleInkChange} />
+          <WorkingOutCanvas ref={canvasRef} isSubmitted={false} hideTitle maxPages={MAX_HOMEWORK_PAGES} onInkChange={handleInkChange} />
         </div>
       </div>
     </div>

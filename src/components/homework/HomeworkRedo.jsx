@@ -224,7 +224,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
       </div>
 
       <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: ready ? 'auto' : 'none' }}>
-        <WorkingOutCanvas ref={canvasRef} isSubmitted={false} onInkChange={handleInkChange} />
+        <WorkingOutCanvas ref={canvasRef} isSubmitted={false} hideTitle onInkChange={handleInkChange} />
       </div>
 
       {sheet && (
