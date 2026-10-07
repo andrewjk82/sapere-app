@@ -2410,18 +2410,22 @@
           "parts": [
             {
               "id": "manly2022-y7-int-q7a",
-              "type": "short",
+              "type": "mc",
               "difficulty": "medium",
               "stem": "Point \\(P(-3, 7)\\) is moved down \\(6\\) units and left \\(2\\) units. What are its new coordinates?",
-              "answer": "(-5, 1)",
+              "answer": 1,
               "steps": [
                 {
-                  "explain": "Moving left decreases the x-coordinate; moving down decreases the y-coordinate.",
-                  "work": "\\((x,y)\\mapsto(x-\\text{left},y-\\text{down})\\)"
+                  "explain": "Moving left by 2 units means subtracting 2 from the x-coordinate.",
+                  "work": "\\(x_{new} = -3 - 2 = -5\\)"
                 },
                 {
-                  "explain": "Apply both changes to the given point.",
-                  "work": "\\((x,y)=(-3,7)\\mapsto(-5,1)\\)"
+                  "explain": "Moving down by 6 units means subtracting 6 from the y-coordinate.",
+                  "work": "\\(y_{new} = 7 - 6 = 1\\)"
+                },
+                {
+                  "explain": "Write the new coordinates as an ordered pair.",
+                  "work": "\\(P_{new} = (-5, 1)\\)"
                 }
               ],
               "meta": {
@@ -2437,18 +2441,28 @@
                   "text": "new coordinates",
                   "note": "For the point P(-3, 7), the first coordinate is x and the second is y."
                 }
+              ],
+              "options": [
+                "(-1, 13)",
+                "(-5, 1)",
+                "(5, -1)",
+                "(-1, 1)"
               ]
             },
             {
               "id": "manly2022-y7-int-q7b",
-              "type": "short",
+              "type": "mc",
               "difficulty": "medium",
               "stem": "In which quadrant is the new position of \\(P\\)?",
-              "answer": "Quadrant II",
+              "answer": 1,
               "steps": [
                 {
-                  "explain": "Use the signs of the new x- and y-coordinates to identify the quadrant.",
-                  "work": "\\(x<0, y>0\\Rightarrow\\text{Quadrant II}\\)"
+                  "explain": "Analyze the signs of the new coordinates \\((-5, 1)\\).",
+                  "work": "\\(x = -5 < 0\\\\\ny = 1 > 0\\)"
+                },
+                {
+                  "explain": "Determine the quadrant based on the signs.",
+                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}\\)"
                 }
               ],
               "meta": {
@@ -2464,6 +2478,12 @@
                   "text": "which quadrant",
                   "note": "The signs of x and y identify the quadrant."
                 }
+              ],
+              "options": [
+                "Quadrant I",
+                "Quadrant II",
+                "Quadrant III",
+                "Quadrant IV"
               ]
             }
           ],
@@ -2490,18 +2510,22 @@
           "parts": [
             {
               "id": "manly2022-y7-int-q7-vara",
-              "type": "short",
+              "type": "mc",
               "difficulty": "medium",
               "stem": "Point \\(P(-4, 5)\\) is moved down \\(3\\) units and left \\(4\\) units. What are its new coordinates?",
-              "answer": "(-8, 2)",
+              "answer": 0,
               "steps": [
                 {
-                  "explain": "Moving left decreases the x-coordinate; moving down decreases the y-coordinate.",
-                  "work": "\\((x,y)\\mapsto(x-\\text{left},y-\\text{down})\\)"
+                  "explain": "Moving left by 4 units means subtracting 4 from the x-coordinate.",
+                  "work": "\\(x_{new} = -4 - 4 = -8\\)"
                 },
                 {
-                  "explain": "Apply both changes to the given point.",
-                  "work": "\\((x,y)=(-4,5)\\mapsto(-8,2)\\)"
+                  "explain": "Moving down by 3 units means subtracting 3 from the y-coordinate.",
+                  "work": "\\(y_{new} = 5 - 3 = 2\\)"
+                },
+                {
+                  "explain": "Write the new coordinates as an ordered pair.",
+                  "work": "\\(P_{new} = (-8, 2)\\)"
                 }
               ],
               "meta": {
@@ -2517,18 +2541,28 @@
                   "text": "new coordinates",
                   "note": "Apply the left and down movements to different coordinates."
                 }
+              ],
+              "options": [
+                "(-8, 2)",
+                "(0, 8)",
+                "(8, -2)",
+                "(-4, 2)"
               ]
             },
             {
               "id": "manly2022-y7-int-q7-varb",
-              "type": "short",
+              "type": "mc",
               "difficulty": "medium",
               "stem": "In which quadrant is the new position of \\(P\\)?",
-              "answer": "Quadrant II",
+              "answer": 1,
               "steps": [
                 {
-                  "explain": "Use the signs of the new x- and y-coordinates to identify the quadrant.",
-                  "work": "\\(x<0, y>0\\Rightarrow\\text{Quadrant II}\\)"
+                  "explain": "Analyze the signs of the new coordinates \\((-8, 2)\\).",
+                  "work": "\\(x = -8 < 0\\\\\ny = 2 > 0\\)"
+                },
+                {
+                  "explain": "Determine the quadrant based on the signs.",
+                  "work": "\\text{Negative } x \\text{ and positive } y \\Rightarrow \\text{Quadrant II}\\)"
                 }
               ],
               "meta": {
@@ -2544,6 +2578,12 @@
                   "text": "which quadrant",
                   "note": "Check the signs of the translated coordinates."
                 }
+              ],
+              "options": [
+                "Quadrant I",
+                "Quadrant II",
+                "Quadrant III",
+                "Quadrant IV"
               ]
             }
           ],

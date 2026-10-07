@@ -4118,17 +4118,21 @@
         },
         {
           "id": "manly2022-y7-int-q5",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Arrange \\(-2, 12, 3, -5, 17, -9\\) in descending order.",
-          "answer": "17, 12, 3, -2, -5, -9",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Descending order lists values from greatest to least.",
-              "work": "\\(17>12>3>-2>-5>-9\\)"
+              "explain": "Identify the positive numbers and order them from largest to smallest.",
+              "work": "\\(17 > 12 > 3\\)"
             },
             {
-              "explain": "Place the positive numbers first, then the negative numbers from closest to zero to least.",
+              "explain": "Identify the negative numbers and order them from closest to zero to furthest from zero.",
+              "work": "\\(-2 > -5 > -9\\)"
+            },
+            {
+              "explain": "Combine the positive and negative sequences.",
               "work": "\\(17, 12, 3, -2, -5, -9\\)"
             }
           ],
@@ -4145,21 +4149,31 @@
               "text": "descending order",
               "note": "Descending order means greatest first and least last."
             }
+          ],
+          "options": [
+            "17, 12, 3, -2, -5, -9",
+            "-9, -5, -2, 3, 12, 17",
+            "17, 12, 3, -9, -5, -2",
+            "17, 12, -9, -5, 3, -2"
           ]
         },
         {
           "id": "manly2022-y7-int-q5-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Arrange \\(-4, 15, 2, -11, 9, -1\\) in descending order.",
-          "answer": "15, 9, 2, -1, -4, -11",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Descending order lists values from greatest to least.",
-              "work": "\\(15>9>2>-1>-4>-11\\)"
+              "explain": "Identify the positive numbers and order them from largest to smallest.",
+              "work": "\\(15 > 9 > 2\\)"
             },
             {
-              "explain": "Place the positive numbers first, then the negative numbers from closest to zero to least.",
+              "explain": "Identify the negative numbers and order them from closest to zero to furthest from zero.",
+              "work": "\\(-1 > -4 > -11\\)"
+            },
+            {
+              "explain": "Combine the positive and negative sequences.",
               "work": "\\(15, 9, 2, -1, -4, -11\\)"
             }
           ],
@@ -4176,6 +4190,12 @@
               "text": "descending order",
               "note": "A negative integer closer to zero is greater."
             }
+          ],
+          "options": [
+            "-11, -4, -1, 2, 9, 15",
+            "15, 9, 2, -1, -4, -11",
+            "15, 9, 2, -11, -4, -1",
+            "15, 9, -11, -4, 2, -1"
           ]
         }
       ]
@@ -4253,8 +4273,16 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Evaluate brackets first, then multiplication and division from left to right, and finally subtract.",
-              "work": "\\(20\\div4\\times5-5=5\\times5-5=20\\)"
+              "explain": "Evaluate the brackets first.",
+              "work": "\\(20 \\div 4 \\times (5) - 5\\)"
+            },
+            {
+              "explain": "Evaluate division and multiplication from left to right.",
+              "work": "\\(5 \\times 5 - 5\\\\\n= 25 - 5\\)"
+            },
+            {
+              "explain": "Perform the final subtraction.",
+              "work": "\\(= 20\\)"
             }
           ],
           "meta": {
@@ -4265,10 +4293,10 @@
             "variant": false
           },
           "options": [
-            "\\(-4\\)",
-            "\\(0\\)",
-            "\\(12\\)",
-            "\\(20\\)"
+            "5",
+            "10",
+            "15",
+            "20"
           ],
           "hint": "Work out the brackets first, then follow the order of operations.",
           "keyPoints": [
@@ -4286,8 +4314,16 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Evaluate brackets first, then division and multiplication from left to right.",
-              "work": "\\(18\\div3\\times6-6=6\\times6-6=30\\)"
+              "explain": "Evaluate the brackets first.",
+              "work": "\\(18 \\div 3 \\times (6) - 6\\)"
+            },
+            {
+              "explain": "Evaluate division and multiplication from left to right.",
+              "work": "\\(6 \\times 6 - 6\\\\\n= 36 - 6\\)"
+            },
+            {
+              "explain": "Perform the final subtraction.",
+              "work": "\\(= 30\\)"
             }
           ],
           "meta": {
@@ -4298,10 +4334,10 @@
             "variant": false
           },
           "options": [
-            "\\(24\\)",
-            "\\(30\\)",
-            "\\(6\\)",
-            "\\(12\\)"
+            "10",
+            "30",
+            "20",
+            "24"
           ],
           "hint": "Start with the brackets, then apply the usual order of operations.",
           "keyPoints": [
@@ -4313,18 +4349,22 @@
         },
         {
           "id": "manly2022-y7-int-q8",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate \\(\\dfrac{17-3\\times(-5)}{20\\div(-2)-6}\\).",
-          "answer": "-2",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Evaluate multiplication and division in the numerator and denominator first.",
-              "work": "\\(17-3\\times(-5)=32,\\quad 20\\div(-2)-6=-16\\)"
+              "explain": "Calculate the numerator by performing the multiplication first.",
+              "work": "\\(17 - 3 \\times (-5) = 17 - (-15) = 17 + 15 = 32\\)"
             },
             {
-              "explain": "Divide the simplified numerator by the simplified denominator.",
-              "work": "\\(\\frac{32}{-16}=-2\\)"
+              "explain": "Calculate the denominator by performing the division first.",
+              "work": "\\(20 \\div (-2) - 6 = -10 - 6 = -16\\)"
+            },
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "\\(\\frac{32}{-16} = -2\\)"
             }
           ],
           "meta": {
@@ -4340,22 +4380,32 @@
               "text": "\\(\\dfrac{17-3\\times(-5)}{20\\div(-2)-6}\\)",
               "note": "Simplify the expressions above and below the fraction bar separately."
             }
+          ],
+          "options": [
+            "2",
+            "-2",
+            "-\\\\frac{1}{2}",
+            "4"
           ]
         },
         {
           "id": "manly2022-y7-int-q8-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate \\(\\dfrac{14-2\\times(-4)}{18\\div(-3)-4}\\).",
-          "answer": "-3",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Evaluate multiplication and division in the numerator and denominator first.",
-              "work": "\\(14-2\\times(-4)=22,\\quad18\\div(-3)-4=-10\\)"
+              "explain": "Calculate the numerator by performing the multiplication first.",
+              "work": "\\(14 - 2 \\times (-4) = 14 - (-8) = 14 + 8 = 22\\)"
             },
             {
-              "explain": "Divide the simplified numerator by the simplified denominator.",
-              "work": "\\(\\frac{22}{-10}=-\\frac{11}{5}\\)"
+              "explain": "Calculate the denominator by performing the division first.",
+              "work": "\\(18 \\div (-3) - 4 = -6 - 4 = -10\\)"
+            },
+            {
+              "explain": "Divide the numerator by the denominator and simplify the fraction.",
+              "work": "\\(\\frac{22}{-10} = -\\frac{22}{10} = -\\frac{11}{5}\\)"
             }
           ],
           "meta": {
@@ -4371,19 +4421,33 @@
               "text": "\\(\\dfrac{14-2\\times(-4)}{18\\div(-3)-4}\\)",
               "note": "Follow order of operations in both the numerator and denominator."
             }
+          ],
+          "options": [
+            "-\\\\frac{11}{5}",
+            "\\\\frac{11}{5}",
+            "-3",
+            "3"
           ]
         },
         {
           "id": "manly2022-y7-int-q9",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Insert grouping symbols into \\(2\\times(5-3)+6\\div2=5\\) to make the statement true.",
-          "answer": "One correct arrangement is \\((2\\times(5-3)+6)\\div2=5\\).",
+          "answer": 0,
           "manual": true,
           "steps": [
             {
-              "explain": "Group the multiplication and addition before dividing by 2.",
-              "work": "\\((2\\times(5-3)+6)\\div2=(4+6)\\div2=5\\)"
+              "explain": "Test the first arrangement by evaluating the innermost brackets first.",
+              "work": "\\((2 \\times (5-3) + 6) \\div 2\\\\\n= (2 \\times 2 + 6) \\div 2\\)"
+            },
+            {
+              "explain": "Evaluate the multiplication inside the outer brackets.",
+              "work": "\\(= (4 + 6) \\div 2\\)"
+            },
+            {
+              "explain": "Evaluate the addition and then divide by 2.",
+              "work": "\\(= 10 \\div 2 = 5\\)"
             }
           ],
           "meta": {
@@ -4398,19 +4462,33 @@
               "text": "grouping symbols",
               "note": "Grouping symbols change which operations are done together."
             }
+          ],
+          "options": [
+            "\\\\((2 \\\\times (5-3) + 6) \\\\div 2 = 5\\\\)",
+            "\\\\(2 \\\\times ((5-3) + 6 \\\\div 2) = 5\\\\)",
+            "\\\\(2 \\\\times (5-3 + 6) \\\\div 2 = 5\\\\)",
+            "\\\\((2 \\\\times 5 - 3) + 6 \\\\div 2 = 5\\\\)"
           ]
         },
         {
           "id": "manly2022-y7-int-q9-var",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Insert grouping symbols into \\(3\\times(7-5)+8\\div2=7\\) to make the statement true.",
-          "answer": "One correct arrangement is \\((3\\times(7-5)+8)\\div2=7\\).",
+          "answer": 2,
           "manual": true,
           "steps": [
             {
-              "explain": "Group the multiplication and addition before dividing by 2.",
-              "work": "\\((3\\times(7-5)+8)\\div2=(6+8)\\div2=7\\)"
+              "explain": "Test the correct arrangement by evaluating the innermost brackets first.",
+              "work": "\\((3 \\times (7-5) + 8) \\div 2\\\\\n= (3 \\times 2 + 8) \\div 2\\)"
+            },
+            {
+              "explain": "Evaluate the multiplication inside the outer brackets.",
+              "work": "\\(= (6 + 8) \\div 2\\)"
+            },
+            {
+              "explain": "Evaluate the addition and then divide by 2.",
+              "work": "\\(= 14 \\div 2 = 7\\)"
             }
           ],
           "meta": {
@@ -4426,6 +4504,12 @@
               "text": "grouping symbols",
               "note": "Check the value after adding the grouping symbols."
             }
+          ],
+          "options": [
+            "\\\\((3 \\\\times 7 - 5) + 8 \\\\div 2 = 7\\\\)",
+            "\\\\(3 \\\\times ((7-5) + 8) \\\\div 2 = 7\\\\)",
+            "\\\\((3 \\\\times (7-5) + 8) \\\\div 2 = 7\\\\)",
+            "\\\\(3 \\\\times (7-5 + 8 \\\\div 2) = 7\\\\)"
           ]
         }
       ]
@@ -4443,8 +4527,20 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Subtracting one negative integer can produce either sign, depending on the values and order.",
-              "work": "\\(-1-(-2)=1\\), while \\(-2-(-1)=-1\\)."
+              "explain": "Write an algebraic expression for the difference of two negative integers.",
+              "work": "\\(-a - (-b) = -a + b\\)"
+            },
+            {
+              "explain": "Test values where the first is more negative.",
+              "work": "\\(-5 - (-2) = -5 + 2 = -3\\)"
+            },
+            {
+              "explain": "Test values where the second is more negative.",
+              "work": "\\(-2 - (-5) = -2 + 5 = 3\\)"
+            },
+            {
+              "explain": "Conclude that the result depends on which integer has the larger absolute value.",
+              "work": "\\text{It can be positive, negative, or zero.}\\)"
             }
           ],
           "meta": {
@@ -4457,8 +4553,8 @@
           "options": [
             "Always positive",
             "Always negative",
-            "Either positive or negative",
-            "Zero"
+            "Can be positive, negative, or zero",
+            "Always zero"
           ],
           "hint": "Try two examples using negative integers, reversing their order in the subtraction.",
           "keyPoints": [
@@ -4476,8 +4572,20 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Subtracting one negative integer can produce either sign, depending on the values and order.",
-              "work": "\\(-3-(-5)=2\\), while \\(-5-(-3)=-2\\)."
+              "explain": "Write an algebraic expression for the difference of two negative integers.",
+              "work": "\\(-a - (-b) = -a + b\\)"
+            },
+            {
+              "explain": "Test values where the first is more negative.",
+              "work": "\\(-5 - (-2) = -5 + 2 = -3\\)"
+            },
+            {
+              "explain": "Test values where the second is more negative.",
+              "work": "\\(-2 - (-5) = -2 + 5 = 3\\)"
+            },
+            {
+              "explain": "Conclude that the result depends on which integer has the larger absolute value.",
+              "work": "\\text{It can be positive, negative, or zero.}\\)"
             }
           ],
           "meta": {
@@ -4488,10 +4596,10 @@
             "variant": false
           },
           "options": [
-            "Always zero",
             "Always positive",
-            "Either positive or negative",
-            "Always negative"
+            "Always negative",
+            "Can be positive, negative, or zero",
+            "Always zero"
           ],
           "hint": "Use a pair of negative integers and subtract them in both possible orders.",
           "keyPoints": [
@@ -4516,8 +4624,12 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Since \\(a>b>0\\), both values are positive and multiplying the inequality by positive \\(a\\) preserves its direction.",
-              "work": "\\(a>b\\Rightarrow a\\cdot a>a\\cdot b\\Rightarrow a^2>ab\\)."
+              "explain": "Start with the given inequality.",
+              "work": "\\(a > b\\)"
+            },
+            {
+              "explain": "Since \\(a\\) is strictly greater than 0, multiply both sides by \\(a\\) without flipping the inequality sign.",
+              "work": "\\(a \\times a > a \\times b\\\\\na^2 > ab\\)"
             }
           ],
           "meta": {
@@ -4528,10 +4640,10 @@
             "variant": false
           },
           "options": [
-            "\\(a^2>ab\\)",
-            "\\(a-b<-a-(-b)\\)",
-            "\\((a-b)(b-a)>0\\)",
-            "\\((a+b)(b-a)>0\\)"
+            "\\\\(a^2 > ab\\\\)",
+            "\\\\(a^2 < ab\\\\)",
+            "\\\\(b^2 > ab\\\\)",
+            "\\\\(ab = 0\\\\)"
           ],
           "hint": "Use the facts that both integers are positive and that a is greater than b.",
           "keyPoints": [
@@ -4549,8 +4661,12 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Multiply \\(m>n\\) by the positive value \\(n\\); the inequality keeps its direction.",
-              "work": "\\(m>n\\Rightarrow mn>n^2\\). Also, \\(m-n>0\\) and \\(n-m<0\\), so their product is negative."
+              "explain": "Start with the given inequality.",
+              "work": "\\(m > n\\)"
+            },
+            {
+              "explain": "Since \\(n\\) is strictly greater than 0, multiply both sides by \\(n\\) without flipping the inequality sign.",
+              "work": "\\(m \\times n > n \\times n\\\\\nmn > n^2\\)"
             }
           ],
           "meta": {
@@ -4561,10 +4677,10 @@
             "variant": false
           },
           "options": [
-            "\\(mn>n^2\\)",
-            "\\(m-n<n-m\\)",
-            "\\((m-n)(n-m)>0\\)",
-            "\\((m+n)(n-m)>0\\)"
+            "\\\\(mn > n^2\\\\)",
+            "\\\\(mn < n^2\\\\)",
+            "\\\\(m^2 < mn\\\\)",
+            "\\\\(mn = 0\\\\)"
           ],
           "hint": "Use m>n>0 to compare products that contain the same positive factor.",
           "keyPoints": [

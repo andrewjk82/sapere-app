@@ -1800,22 +1800,22 @@
         },
         {
           "id": "manly2022-y7-int-q6",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Find \\(x\\) if \\(5x+7\\times(-3)=-41\\).",
-          "answer": "-4",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Evaluate the multiplication before solving the equation.",
-              "work": "\\(5x-21=-41\\)"
+              "explain": "Evaluate the multiplication first.",
+              "work": "\\(5x + (-21) = -41\\\\\n5x - 21 = -41\\)"
             },
             {
-              "explain": "Add 21 to both sides to isolate the term containing \\(x\\).",
-              "work": "\\(5x=-20\\)"
+              "explain": "Add 21 to both sides of the equation.",
+              "work": "\\(5x - 21 + 21 = -41 + 21\\\\\n5x = -20\\)"
             },
             {
-              "explain": "Divide both sides by 5.",
-              "work": "\\(x=-4\\)"
+              "explain": "Divide both sides by 5 to find x.",
+              "work": "\\(x = \\frac{-20}{5} = -4\\)"
             }
           ],
           "meta": {
@@ -1831,26 +1831,32 @@
               "text": "\\(x\\)",
               "note": "Do the multiplication before solving for x."
             }
+          ],
+          "options": [
+            "4",
+            "-4",
+            "-8",
+            "12"
           ]
         },
         {
           "id": "manly2022-y7-int-q6-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Find \\(x\\) if \\(4x+6\\times(-2)=-26\\).",
-          "answer": "-7/2",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Evaluate the multiplication before solving the equation.",
-              "work": "\\(4x-12=-26\\)"
+              "explain": "Evaluate the multiplication first.",
+              "work": "\\(4x + (-12) = -26\\\\\n4x - 12 = -26\\)"
             },
             {
-              "explain": "Add 12 to both sides.",
-              "work": "\\(4x=-14\\)"
+              "explain": "Add 12 to both sides of the equation.",
+              "work": "\\(4x - 12 + 12 = -26 + 12\\\\\n4x = -14\\)"
             },
             {
-              "explain": "Divide both sides by 4.",
-              "work": "\\(x=-\\frac{7}{2}\\)"
+              "explain": "Divide both sides by 4 and simplify the fraction to find x.",
+              "work": "\\(x = \\frac{-14}{4} = -\\frac{7}{2}\\)"
             }
           ],
           "meta": {
@@ -1866,6 +1872,12 @@
               "text": "\\(x\\)",
               "note": "Use inverse operations on both sides to isolate x."
             }
+          ],
+          "options": [
+            "\\\\frac{7}{2}",
+            "-\\\\frac{7}{2}",
+            "-14",
+            "-5"
           ]
         }
       ]

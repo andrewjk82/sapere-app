@@ -33021,11 +33021,15 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "What is the place value of \\(8\\) in \\(583,416\\)?",
-          "answer": 3,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Locate the digit 8 in the place-value columns.",
-              "work": "The digit 8 is in the ten-thousands column, so its place value is \\(80,000\\)."
+              "explain": "Write the number out in place-value columns.",
+              "work": "\\(5\\text{ Hundred Thousands}\\\\\n8\\text{ Ten Thousands}\\\\\n3\\text{ Thousands}\\\\\n4\\text{ Hundreds}\\\\\n1\\text{ Ten}\\\\\n6\\text{ Ones}\\)"
+            },
+            {
+              "explain": "Identify the value of the 8.",
+              "work": "\\(8 \\times 10,000 = 80,000\\)"
             }
           ],
           "meta": {
@@ -33036,10 +33040,10 @@
             "variant": false
           },
           "options": [
-            "8 tens",
-            "8 hundreds",
-            "8 thousands",
-            "80 thousands"
+            "800",
+            "8,000",
+            "80,000",
+            "800,000"
           ],
           "hint": "Find the column containing the digit 8, then use that column to name its value.",
           "keyPoints": [
@@ -33057,8 +33061,12 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Locate the digit 6 in the place-value columns.",
-              "work": "The digit 6 is in the ten-thousands column, so its place value is \\(60,000\\)."
+              "explain": "Write the number out in place-value columns.",
+              "work": "\\(2\\text{ Hundred Thousands}\\\\\n6\\text{ Ten Thousands}\\\\\n4\\text{ Thousands}\\\\\n9\\text{ Hundreds}\\\\\n3\\text{ Tens}\\\\\n1\\text{ One}\\)"
+            },
+            {
+              "explain": "Identify the value of the 6.",
+              "work": "\\(6 \\times 10,000 = 60,000\\)"
             }
           ],
           "meta": {
@@ -33069,10 +33077,10 @@
             "variant": false
           },
           "options": [
-            "6 hundreds",
-            "6 thousands",
-            "60 thousands",
-            "600 thousands"
+            "600",
+            "6,000",
+            "60,000",
+            "600,000"
           ],
           "hint": "Locate the 6 in the number before deciding its place value.",
           "keyPoints": [

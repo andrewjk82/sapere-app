@@ -3647,18 +3647,22 @@
         },
         {
           "id": "manly2022-y7-frac-q3iv",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(\\frac58\\div\\frac34\\).",
-          "answer": "5/6",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Divide by a fraction by multiplying by its reciprocal.",
-              "work": "\\(\\frac58\\div\\frac34=\\frac58\\times\\frac43\\)"
+              "explain": "To divide by a fraction, multiply by its reciprocal.",
+              "work": "\\(\\frac{5}{8} \\div \\frac{3}{4} = \\frac{5}{8} \\times \\frac{4}{3}\\)"
             },
             {
-              "explain": "Multiply and simplify.",
-              "work": "\\(\\frac{20}{24}=\\frac56\\)"
+              "explain": "Cross-simplify the 8 and 4 by dividing both by 4.",
+              "work": "\\(\\frac{5}{2} \\times \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{5 \\times 1}{2 \\times 3} = \\frac{5}{6}\\)"
             }
           ],
           "meta": {
@@ -3674,22 +3678,32 @@
               "text": "simplest form",
               "note": "The reciprocal belongs to the fraction you are dividing by."
             }
+          ],
+          "options": [
+            "\\\\frac{15}{32}",
+            "\\\\frac{5}{6}",
+            "\\\\frac{6}{5}",
+            "1 \\\\frac{1}{5}"
           ]
         },
         {
           "id": "manly2022-y7-frac-q3iv-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(\\frac79\\div\\frac{14}{15}\\).",
-          "answer": "5/6",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Multiply by the reciprocal of the divisor.",
-              "work": "\\(\\frac79\\div\\frac{14}{15}=\\frac79\\times\\frac{15}{14}\\)"
+              "explain": "To divide by a fraction, multiply by its reciprocal.",
+              "work": "\\(\\frac{7}{9} \\div \\frac{14}{15} = \\frac{7}{9} \\times \\frac{15}{14}\\)"
             },
             {
-              "explain": "Cancel common factors and simplify.",
-              "work": "\\(\\frac{105}{126}=\\frac56\\)"
+              "explain": "Cross-simplify 7 and 14 (divide by 7) and 9 and 15 (divide by 3).",
+              "work": "\\(\\frac{1}{3} \\times \\frac{5}{2}\\)"
+            },
+            {
+              "explain": "Multiply the numerators and denominators.",
+              "work": "\\(\\frac{1 \\times 5}{3 \\times 2} = \\frac{5}{6}\\)"
             }
           ],
           "meta": {
@@ -3705,6 +3719,12 @@
               "text": "simplest form",
               "note": "Keep the first fraction unchanged when taking the reciprocal."
             }
+          ],
+          "options": [
+            "\\\\frac{98}{135}",
+            "\\\\frac{5}{6}",
+            "\\\\frac{6}{5}",
+            "1 \\\\frac{1}{5}"
           ]
         }
       ]
@@ -3926,18 +3946,26 @@
         },
         {
           "id": "manly2022-y7-frac-q3iii",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(1\\frac35\\times4\\frac16\\).",
-          "answer": "6 2/3",
+          "answer": 2,
           "steps": [
             {
-              "explain": "Convert each mixed number to an improper fraction.",
-              "work": "\\(1\\frac35=\\frac85,\\quad4\\frac16=\\frac{25}{6}\\)"
+              "explain": "Convert both mixed numbers to improper fractions.",
+              "work": "\\(1\\frac{3}{5} = \\frac{8}{5}\\\\\n4\\frac{1}{6} = \\frac{25}{6}\\)"
             },
             {
-              "explain": "Multiply and simplify.",
-              "work": "\\(\\frac85\\times\\frac{25}{6}=\\frac{200}{30}=\\frac{20}{3}=6\\frac23\\)"
+              "explain": "Multiply the fractions.",
+              "work": "\\(\\frac{8}{5} \\times \\frac{25}{6}\\)"
+            },
+            {
+              "explain": "Cross-simplify 8 and 6 (divide by 2) and 5 and 25 (divide by 5).",
+              "work": "\\(\\frac{4}{1} \\times \\frac{5}{3} = \\frac{20}{3}\\)"
+            },
+            {
+              "explain": "Convert back to a mixed number.",
+              "work": "\\(\\frac{20}{3} = 6\\frac{2}{3}\\)"
             }
           ],
           "meta": {
@@ -3953,22 +3981,36 @@
               "text": "simplest form",
               "note": "Change both mixed numerals to improper fractions before multiplying."
             }
+          ],
+          "options": [
+            "4 \\\\frac{3}{30}",
+            "5 \\\\frac{4}{11}",
+            "6 \\\\frac{2}{3}",
+            "6 \\\\frac{1}{6}"
           ]
         },
         {
           "id": "manly2022-y7-frac-q3iii-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(2\\frac14\\times3\\frac13\\).",
-          "answer": "7 1/2",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Convert each mixed number to an improper fraction.",
-              "work": "\\(2\\frac14=\\frac94,\\quad3\\frac13=\\frac{10}{3}\\)"
+              "explain": "Convert both mixed numbers to improper fractions.",
+              "work": "\\(2\\frac{1}{4} = \\frac{9}{4}\\\\\n3\\frac{1}{3} = \\frac{10}{3}\\)"
             },
             {
-              "explain": "Multiply and simplify.",
-              "work": "\\(\\frac94\\times\\frac{10}{3}=\\frac{90}{12}=\\frac{15}{2}=7\\frac12\\)"
+              "explain": "Multiply the fractions.",
+              "work": "\\(\\frac{9}{4} \\times \\frac{10}{3}\\)"
+            },
+            {
+              "explain": "Cross-simplify 9 and 3 (divide by 3) and 10 and 4 (divide by 2).",
+              "work": "\\(\\frac{3}{2} \\times \\frac{5}{1} = \\frac{15}{2}\\)"
+            },
+            {
+              "explain": "Convert back to a mixed number.",
+              "work": "\\(\\frac{15}{2} = 7\\frac{1}{2}\\)"
             }
           ],
           "meta": {
@@ -3984,6 +4026,12 @@
               "text": "simplest form",
               "note": "Multiplication of fractions uses numerator times numerator and denominator times denominator."
             }
+          ],
+          "options": [
+            "6 \\\\frac{1}{12}",
+            "7 \\\\frac{1}{2}",
+            "7 \\\\frac{1}{4}",
+            "6 \\\\frac{3}{12}"
           ]
         }
       ]
@@ -4558,18 +4606,22 @@
         },
         {
           "id": "manly2022-y7-frac-q5",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "What is two-thirds of the sum of three-fifths and ten-thirteenths? Give your answer in simplest form.",
-          "answer": "178/195",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Add the two fractions using a common denominator.",
-              "work": "\\(\\frac35+\\frac{10}{13}=\\frac{39}{65}+\\frac{50}{65}=\\frac{89}{65}\\)"
+              "explain": "Write out the mathematical expression from the sentence.",
+              "work": "\\(\\frac{2}{3} \\times \\left( \\frac{3}{5} + \\frac{10}{13} \\right)\\)"
             },
             {
-              "explain": "Multiply the sum by two-thirds and simplify.",
-              "work": "\\(\\frac23\\times\\frac{89}{65}=\\frac{178}{195}\\)"
+              "explain": "Evaluate the addition inside the brackets by finding a common denominator (65).",
+              "work": "\\(\\frac{3 \\times 13}{5 \\times 13} + \\frac{10 \\times 5}{13 \\times 5}\\\\\n= \\frac{39}{65} + \\frac{50}{65} = \\frac{89}{65}\\)"
+            },
+            {
+              "explain": "Multiply the sum by two-thirds.",
+              "work": "\\(\\frac{2}{3} \\times \\frac{89}{65} = \\frac{2 \\times 89}{3 \\times 65} = \\frac{178}{195}\\)"
             }
           ],
           "meta": {
@@ -4585,22 +4637,32 @@
               "text": "two-thirds of the sum",
               "note": "The order is sum first, then take the stated fraction of that sum."
             }
+          ],
+          "options": [
+            "\\\\frac{178}{195}",
+            "\\\\frac{89}{195}",
+            "\\\\frac{89}{65}",
+            "\\\\frac{2}{5}"
           ]
         },
         {
           "id": "manly2022-y7-frac-q5-var",
-          "type": "short",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "What is three-quarters of the sum of two-fifths and seven-tenths? Give your answer in simplest form.",
-          "answer": "33/40",
+          "answer": 1,
           "steps": [
             {
-              "explain": "Add the fractions using denominator 10.",
-              "work": "\\(\\frac25+\\frac7{10}=\\frac4{10}+\\frac7{10}=\\frac{11}{10}\\)"
+              "explain": "Write out the mathematical expression from the sentence.",
+              "work": "\\(\\frac{3}{4} \\times \\left( \\frac{2}{5} + \\frac{7}{10} \\right)\\)"
             },
             {
-              "explain": "Multiply the sum by three-quarters and simplify.",
-              "work": "\\(\\frac34\\times\\frac{11}{10}=\\frac{33}{40}\\)"
+              "explain": "Evaluate the addition inside the brackets by finding a common denominator (10).",
+              "work": "\\(\\frac{2 \\times 2}{5 \\times 2} + \\frac{7}{10}\\\\\n= \\frac{4}{10} + \\frac{7}{10} = \\frac{11}{10}\\)"
+            },
+            {
+              "explain": "Multiply the sum by three-quarters.",
+              "work": "\\(\\frac{3}{4} \\times \\frac{11}{10} = \\frac{3 \\times 11}{4 \\times 10} = \\frac{33}{40}\\)"
             }
           ],
           "meta": {
@@ -4616,6 +4678,12 @@
               "text": "three-quarters of the sum",
               "note": "Here “of” means multiply after finding the sum."
             }
+          ],
+          "options": [
+            "\\\\frac{11}{10}",
+            "\\\\frac{33}{40}",
+            "\\\\frac{33}{80}",
+            "\\\\frac{2}{5}"
           ]
         }
       ]
