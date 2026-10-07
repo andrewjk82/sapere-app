@@ -115,7 +115,7 @@ test('dataUrlBytes estimates decoded size', () => {
 });
 
 test('purgeAfterDate adds the retention window', () => {
-  assert.equal(purgeAfterDate(new Date('2026-09-28T00:00:00Z')), '2026-10-28');
+  assert.equal(purgeAfterDate(new Date('2026-09-28T00:00:00Z')), '2026-10-01');
   assert.equal(purgeAfterDate(new Date('2026-09-28T00:00:00Z'), 1), '2026-09-29');
 });
 

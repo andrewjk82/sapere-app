@@ -1059,7 +1059,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     setHomeworkSessions((prev) => prev.map((s) => s.id === session.id ? { ...s, isHomeworkCompleted: next } : s));
     try {
       if (next && session.homeworkStatus === 'submitted') {
-        // Submitted online: close the submission too (starts the 30-day originals timer).
+        // Submitted online: close the submission too (starts the originals retention timer).
         await markHomeworkChecked(session.id, null, {
           studentId: challengeResultsUid,
           topics: (session.learnedTopics || []).map((t) => ({ id: t?.id, label: t?.label || t?.title || t?.id })),
