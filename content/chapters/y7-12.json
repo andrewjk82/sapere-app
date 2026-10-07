@@ -1035,6 +1035,801 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2015-t3-s2-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement matches the geometric term “Exterior angle of a triangle”?",
+          "options": [
+            "The sum of the two opposite interior angles",
+            "The total angle inside a quadrilateral",
+            "A complete turn of 360°",
+            "A mirror image across a line"
+          ],
+          "answer": 0,
+          "hint": "Recall the standard meaning or angle rule for this geometry term.",
+          "keyPoints": [
+            {
+              "text": "Exterior angle of a triangle",
+              "note": "Connect “Exterior angle of a triangle” with its standard geometric definition or result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the exterior-angle rule for a triangle.",
+              "work": "\\(\\text{exterior angle}=\\text{opposite interior angle}_1+\\text{opposite interior angle}_2\\)"
+            },
+            {
+              "explain": "Select the definition that states this rule.",
+              "work": "The matching statement is the correct choice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 3,
+            "question": "q1b",
+            "section": "Section 2 (Geometry)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s2-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement matches the geometric term “Angle sum of a triangle”?",
+          "options": [
+            "180°",
+            "360°",
+            "90°",
+            "270°"
+          ],
+          "answer": 0,
+          "hint": "Recall the standard meaning or angle rule for this geometry term.",
+          "keyPoints": [
+            {
+              "text": "Angle sum of a triangle",
+              "note": "Connect “Angle sum of a triangle” with its standard geometric definition or result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The three interior angles of every triangle have a fixed sum.",
+              "work": "\\(\\angle A+\\angle B+\\angle C=180^\\circ\\)"
+            },
+            {
+              "explain": "Select the definition that states this rule.",
+              "work": "The matching statement is the correct choice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 3,
+            "question": "q1c",
+            "section": "Section 2 (Geometry)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s2-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement matches the geometric term “Angle sum of a quadrilateral”?",
+          "options": [
+            "360°",
+            "180°",
+            "90°",
+            "720°"
+          ],
+          "answer": 0,
+          "hint": "Recall the standard meaning or angle rule for this geometry term.",
+          "keyPoints": [
+            {
+              "text": "Angle sum of a quadrilateral",
+              "note": "Connect “Angle sum of a quadrilateral” with its standard geometric definition or result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A quadrilateral can be split into two triangles.",
+              "work": "\\(2\\times180^\\circ=360^\\circ\\)"
+            },
+            {
+              "explain": "Select the definition that states this rule.",
+              "work": "The matching statement is the correct choice."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 3,
+            "question": "q1d",
+            "section": "Section 2 (Geometry)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s2-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Using a ruler, draw each small shape, showing all necessary features.",
+          "parts": [
+            {
+              "id": "wghs-y7-2015-t3-s2-q3a",
+              "type": "review",
+              "difficulty": "easy",
+              "stem": "Using a ruler, draw a small isosceles triangle, showing the necessary features.",
+              "answer": "A triangle with two equal sides clearly marked.",
+              "manual": true,
+              "hint": "Draw a triangle and mark its two equal sides with matching tick marks.",
+              "keyPoints": [
+                {
+                  "text": "isosceles triangle",
+                  "note": "An isosceles triangle has at least two equal sides; show the equality with matching marks."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Draw a triangle with a horizontal base and a vertex above its midpoint.",
+                  "work": "The two sloping sides should have equal lengths."
+                },
+                {
+                  "explain": "Mark the two equal sides with matching ticks so the defining feature is explicit.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"115,155 210,35 305,155\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"155\" y1=\"95\" x2=\"166\" y2=\"103\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"254\" y1=\"103\" x2=\"265\" y2=\"95\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"185\" y1=\"155\" x2=\"235\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"2\" /><text x=\"210\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">equal side marks</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
+              },
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 4,
+                "question": "q3a",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q3b",
+              "type": "review",
+              "difficulty": "easy",
+              "stem": "Using a ruler, draw a small right-angled triangle, showing the necessary features.",
+              "answer": "A triangle with one 90° angle clearly marked.",
+              "manual": true,
+              "hint": "Make one pair of sides perpendicular and mark the right angle.",
+              "keyPoints": [
+                {
+                  "text": "right-angled triangle",
+                  "note": "One interior angle must be exactly 90°; indicate it with a small square."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Draw one vertical and one horizontal side meeting at a vertex.",
+                  "work": "Perpendicular sides form a right angle."
+                },
+                {
+                  "explain": "Complete the triangle and mark the 90° corner with a small square.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"115,155 115,55 305,155\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M115 135 H135 V155\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"3\"/><text x=\"210\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">90° corner marked</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
+              },
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 4,
+                "question": "q3b",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q3c",
+              "type": "review",
+              "difficulty": "easy",
+              "stem": "Using a ruler, draw a small obtuse angle, showing the necessary features.",
+              "answer": "An angle greater than 90° and less than 180°.",
+              "manual": true,
+              "hint": "Make the opening wider than a right angle but smaller than a straight angle.",
+              "keyPoints": [
+                {
+                  "text": "obtuse angle",
+                  "note": "An obtuse angle is greater than 90° and less than 180°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Draw one ray horizontally to the right and another ray up-left from the same vertex.",
+                  "work": "The smaller angle between them should be wider than a right angle."
+                },
+                {
+                  "explain": "Mark the interior angle as obtuse.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"120\" y1=\"125\" x2=\"320\" y2=\"125\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"120\" y1=\"125\" x2=\"75\" y2=\"52\" stroke=\"#334155\" stroke-width=\"3\" /><path d=\"M165 125 A45 45 0 0 0 95 84\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"3\"/><text x=\"164\" y=\"92\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">>90°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 75,
+              "xp": 2,
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
+              },
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 4,
+                "question": "q3c",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q3d",
+              "type": "review",
+              "difficulty": "easy",
+              "stem": "Using a ruler, draw a small acute angle, showing the necessary features.",
+              "answer": "An angle greater than 0° and less than 90°.",
+              "manual": true,
+              "hint": "Make the opening smaller than a right angle.",
+              "keyPoints": [
+                {
+                  "text": "acute angle",
+                  "note": "An acute angle is greater than 0° and less than 90°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Draw two rays from the same vertex with a narrow opening.",
+                  "work": "The angle must be smaller than a right angle."
+                },
+                {
+                  "explain": "Mark the interior angle as acute.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"120\" y1=\"145\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"3\" /><line x1=\"120\" y1=\"145\" x2=\"190\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" /><path d=\"M165 145 A45 45 0 0 0 148 109\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"3\"/><text x=\"176\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#15803d\" font-weight=\"600\"><90°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 75,
+              "xp": 2,
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 200\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"198\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><text x=\"210\" y=\"115\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"15\" fill=\"#64748b\">Draw the requested shape here</text></svg>"
+              },
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 4,
+                "question": "q3d",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              }
+            }
+          ],
+          "hint": "Use matching side ticks or a right-angle square to make the defining feature clear.",
+          "keyPoints": [
+            {
+              "text": "necessary features",
+              "note": "Use standard geometry marks so another student can identify each property from your drawing."
+            }
+          ],
+          "timeLimit": 330,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 4,
+            "question": "q3",
+            "section": "Section 2 (Geometry)",
+            "marks": 4
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s2-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find each pronumeral in the diagrams. Each part is a separate angle problem.",
+          "parts": [
+            {
+              "id": "wghs-y7-2015-t3-s2-q7a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(a\\) in the isosceles triangle shown.",
+              "options": [
+                "\\(128^\\circ\\)",
+                "\\(76^\\circ\\)",
+                "\\(154^\\circ\\)",
+                "\\(26^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Equal sides have equal opposite angles; then use the triangle angle sum.",
+              "keyPoints": [
+                {
+                  "text": "isosceles triangle",
+                  "note": "Use the matching side marks to identify which two opposite angles are equal."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The two marked equal sides meet at the vertex labelled a. The opposite base angles are therefore equal.",
+                  "work": "The equal sides are opposite equal angles."
+                },
+                {
+                  "explain": "The left base angle is 26°, so the other base angle is also 26°. Use the triangle angle sum to find a.",
+                  "work": "\\(a=180^\\circ-26^\\circ-26^\\circ\\)"
+                },
+                {
+                  "explain": "Subtract both base angles from 180°.",
+                  "work": "\\(\\boxed{a=128^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"60,185 300,185 340,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"180\" y1=\"185\" x2=\"188\" y2=\"171\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"300\" y1=\"185\" x2=\"308\" y2=\"171\" stroke=\"#15803d\" stroke-width=\"3\" /><text x=\"80\" y=\"170\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"600\">26°</text><text x=\"290\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"600\">a°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7a",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"60,185 300,185 340,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"180\" y1=\"185\" x2=\"188\" y2=\"171\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"300\" y1=\"185\" x2=\"308\" y2=\"171\" stroke=\"#15803d\" stroke-width=\"3\" /><text x=\"80\" y=\"170\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"600\">26°</text><text x=\"290\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"15\" fill=\"#334155\" font-weight=\"600\">a°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the parallel-line triangle diagram, find \\(b\\).",
+              "options": [
+                "\\(64^\\circ\\)",
+                "\\(74^\\circ\\)",
+                "\\(42^\\circ\\)",
+                "\\(116^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the parallel arrows to identify a pair of corresponding angles.",
+              "keyPoints": [
+                {
+                  "text": "parallel-line",
+                  "note": "The two horizontal segments are parallel, so matching corresponding angles are equal."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The inner segment is parallel to the base, so the angle marked 64° corresponds to angle b.",
+                  "work": "The horizontal segments are parallel."
+                },
+                {
+                  "explain": "Corresponding angles are equal when a transversal crosses parallel lines.",
+                  "work": "\\(b=64^\\circ\\) (corresponding angles)"
+                },
+                {
+                  "explain": "Set b equal to the corresponding 64° angle.",
+                  "work": "\\(\\boxed{b=64^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 100,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7b",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the parallel-line triangle diagram, find \\(c\\).",
+              "options": [
+                "\\(74^\\circ\\)",
+                "\\(64^\\circ\\)",
+                "\\(42^\\circ\\)",
+                "\\(106^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "First transfer the 42° angle across the parallel lines, then use the small triangle.",
+              "keyPoints": [
+                {
+                  "text": "find \\(c\\)",
+                  "note": "The small top triangle has angles 64°, c, and an angle corresponding to 42°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The 42° angle at the bottom right corresponds to angle d at the inner parallel line.",
+                  "work": "\\(d=42^\\circ\\) by corresponding angles."
+                },
+                {
+                  "explain": "Use the small triangle’s angle sum with 64° and 42°.",
+                  "work": "\\(c+64^\\circ+42^\\circ=180^\\circ\\)"
+                },
+                {
+                  "explain": "Subtract the known angles from 180°.",
+                  "work": "\\(c=180^\\circ-106^\\circ=\\boxed{74^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 110,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7c",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the parallel-line triangle diagram, find \\(d\\).",
+              "options": [
+                "\\(42^\\circ\\)",
+                "\\(64^\\circ\\)",
+                "\\(74^\\circ\\)",
+                "\\(116^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Compare d with the 42° angle on the parallel base.",
+              "keyPoints": [
+                {
+                  "text": "find \\(d\\)",
+                  "note": "Use the parallel marks to spot the corresponding angle pair."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The inner segment and the base are parallel. The right side of the large triangle is a transversal.",
+                  "work": "Parallel lines are cut by the same sloping side."
+                },
+                {
+                  "explain": "Angle d and the 42° base angle are corresponding angles.",
+                  "work": "\\(d=42^\\circ\\)"
+                },
+                {
+                  "explain": "Corresponding angles are equal.",
+                  "work": "\\(\\boxed{d=42^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7d",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"210,25 70,200 350,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"125\" y1=\"130\" x2=\"294\" y2=\"130\" stroke=\"#15803d\" stroke-width=\"3\" /><path d=\"M125 130 l10 0 l0 5\" fill=\"none\" stroke=\"#15803d\" stroke-width=\"2\"/><text x=\"137\" y=\"120\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">64°</text><text x=\"336\" y=\"184\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"210\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">c°</text><text x=\"95\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">b°</text><text x=\"275\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">d°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7e",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the exterior angle \\(e\\) in the triangle shown.",
+              "options": [
+                "\\(108^\\circ\\)",
+                "\\(72^\\circ\\)",
+                "\\(132^\\circ\\)",
+                "\\(48^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Add the two interior angles that are not adjacent to e.",
+              "keyPoints": [
+                {
+                  "text": "exterior angle",
+                  "note": "For a triangle, an exterior angle equals the sum of the two opposite interior angles."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The given 48° and 60° angles are the two interior angles opposite the exterior angle.",
+                  "work": "Exterior-angle theorem: exterior angle = sum of opposite interior angles."
+                },
+                {
+                  "explain": "The exterior angle of a triangle equals the sum of the two opposite interior angles.",
+                  "work": "\\(e=48^\\circ+60^\\circ\\)"
+                },
+                {
+                  "explain": "Add the two remote interior angles.",
+                  "work": "\\(\\boxed{e=108^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"75,195 175,40 215,175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"330\" y2=\"85\" stroke=\"#ef4444\" stroke-width=\"3\" /><text x=\"165\" y=\"75\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">60°</text><text x=\"96\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">48°</text><text x=\"235\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#ef4444\" font-weight=\"600\">e°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 75,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7e",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"75,195 175,40 215,175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"330\" y2=\"85\" stroke=\"#ef4444\" stroke-width=\"3\" /><text x=\"165\" y=\"75\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">60°</text><text x=\"96\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">48°</text><text x=\"235\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#ef4444\" font-weight=\"600\">e°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7f",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(f\\) in the isosceles triangle diagram with an exterior angle of 120°.",
+              "options": [
+                "\\(120^\\circ\\)",
+                "\\(60^\\circ\\)",
+                "\\(30^\\circ\\)",
+                "\\(150^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Convert the 120° exterior angle to its adjacent interior angle, then use the equal-side marks.",
+              "keyPoints": [
+                {
+                  "text": "exterior angle of 120°",
+                  "note": "The adjacent interior angle lies on a straight line with the exterior angle; together they total 180°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The exterior angle and the triangle’s top interior angle form a straight line.",
+                  "work": "Top interior angle: \\(180^\\circ-120^\\circ=60^\\circ\\). Equal sides give equal opposite angles; the right base angle is also 60°."
+                },
+                {
+                  "explain": "The top interior angle is 180° − 120° = 60°. The tick marks show the opposite side and base are equal, so the two remaining angles are equal.",
+                  "work": "The left interior base angle is \\(60^\\circ\\)."
+                },
+                {
+                  "explain": "Use the triangle angle sum to find each equal base angle, then use the straight-line pair for f.",
+                  "work": "\\(f=180^\\circ-60^\\circ=\\boxed{120^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"80\" y1=\"190\" x2=\"345\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" /><polygon points=\"145,190 245,35 320,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"210\" y1=\"111\" x2=\"219\" y2=\"117\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"300\" y1=\"190\" x2=\"307\" y2=\"181\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"245\" y1=\"35\" x2=\"292\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"250\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">120° ext.</text><text x=\"90\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">f°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 120,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7f",
+                "section": "Section 2 (Geometry)",
+                "marks": 2
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"80\" y1=\"190\" x2=\"345\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" /><polygon points=\"145,190 245,35 320,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"210\" y1=\"111\" x2=\"219\" y2=\"117\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"300\" y1=\"190\" x2=\"307\" y2=\"181\" stroke=\"#15803d\" stroke-width=\"3\" /><line x1=\"245\" y1=\"35\" x2=\"292\" y2=\"190\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><text x=\"250\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#ef4444\" font-weight=\"600\">120° ext.</text><text x=\"90\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">f°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7g",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(g\\) in the quadrilateral shown.",
+              "options": [
+                "\\(150^\\circ\\)",
+                "\\(140^\\circ\\)",
+                "\\(160^\\circ\\)",
+                "\\(105^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the 360° interior angle sum for a quadrilateral.",
+              "keyPoints": [
+                {
+                  "text": "quadrilateral",
+                  "note": "A quadrilateral’s four interior angles add to 360°."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The shape is a quadrilateral, so its four interior angles sum to 360°.",
+                  "work": "The interior angle sum of a quadrilateral is \\(360^\\circ\\)."
+                },
+                {
+                  "explain": "Add the three known interior angles and subtract that sum from 360°.",
+                  "work": "\\(g=360^\\circ-(65^\\circ+100^\\circ+45^\\circ)\\)"
+                },
+                {
+                  "explain": "Check that the result completes the full quadrilateral angle sum.",
+                  "work": "\\(g=360^\\circ-210^\\circ=\\boxed{150^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"110,55 290,70 345,165 170,195\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"130\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">65°</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">100°</text><text x=\"320\" y=\"157\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">45°</text><text x=\"175\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">g°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7g",
+                "section": "Section 2 (Geometry)",
+                "marks": 1
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"110,55 290,70 345,165 170,195\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"130\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">65°</text><text x=\"110\" y=\"130\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">100°</text><text x=\"320\" y=\"157\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">45°</text><text x=\"175\" y=\"180\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">g°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7h",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find \\(h\\) in the concave quadrilateral shown.",
+              "options": [
+                "\\(31^\\circ\\)",
+                "\\(125^\\circ\\)",
+                "\\(49^\\circ\\)",
+                "\\(53^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "At the concave vertex, use the reflex interior angle rather than the smaller 94° outside angle.",
+              "keyPoints": [
+                {
+                  "text": "concave quadrilateral",
+                  "note": "The interior angle at the inward notch is reflex: it is 360° minus the marked smaller angle."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The labelled 94° at the inward notch is the smaller exterior angle there; the quadrilateral’s reflex interior angle is 360° − 94°.",
+                  "work": "Reflex interior angle at the notch: \\(360^\\circ-94^\\circ=266^\\circ\\)."
+                },
+                {
+                  "explain": "Use the four-sided interior angle sum with the reflex angle, 42°, 21°, and h.",
+                  "work": "\\(h+42^\\circ+21^\\circ+266^\\circ=360^\\circ\\)"
+                },
+                {
+                  "explain": "Subtract the three known interior angles from 360°.",
+                  "work": "\\(h=360^\\circ-329^\\circ=\\boxed{31^\\circ}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"65,115 250,35 150,215 150,145\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"95\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">h°</text><text x=\"228\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"147\" y=\"205\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">21°</text><text x=\"145\" y=\"160\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">94°</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 150,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 7,
+                "question": "q7h",
+                "section": "Section 2 (Geometry)",
+                "marks": 2
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"65,115 250,35 150,215 150,145\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"95\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">h°</text><text x=\"228\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">42°</text><text x=\"147\" y=\"205\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">21°</text><text x=\"145\" y=\"160\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">94°</text></svg>"
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s2-q7i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find \\(m\\) in the four-sided figure with the two parallel horizontal lines.",
+              "options": [
+                "\\(106^\\circ\\)",
+                "\\(74^\\circ\\)",
+                "\\(92^\\circ\\)",
+                "\\(121^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Convert each exterior angle to its adjacent interior angle, use the quadrilateral sum, then find m’s linear pair.",
+              "keyPoints": [
+                {
+                  "text": "two parallel horizontal lines",
+                  "note": "The given top angles are exterior to the quadrilateral; first find their adjacent interior angles."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Convert the marked exterior angles on the upper straight line to their adjacent interior angles. The given 77° at the lower right is already an interior angle.",
+                  "work": "\\(180^\\circ-92^\\circ=88^\\circ,\\quad180^\\circ-59^\\circ=121^\\circ\\)"
+                },
+                {
+                  "explain": "Use the quadrilateral interior-angle sum to find the lower-left interior angle.",
+                  "work": "\\(x=360^\\circ-(88^\\circ+121^\\circ+77^\\circ)=74^\\circ\\)"
+                },
+                {
+                  "explain": "The angle m and the 74° interior angle form a straight line, so they are supplementary.",
+                  "work": "\\(m=180^\\circ-74^\\circ=\\boxed{106^\\circ}\\)"
+                }
+              ],
+              "timeLimit": 180,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 8,
+                "question": "q7i",
+                "section": "Section 2 (Geometry)",
+                "marks": 4
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 230\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"228\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><polygon points=\"95,200 150,55 285,75 330,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><line x1=\"48\" y1=\"55\" x2=\"365\" y2=\"105\" stroke=\"#64748b\" stroke-width=\"2\" /><line x1=\"50\" y1=\"200\" x2=\"370\" y2=\"200\" stroke=\"#64748b\" stroke-width=\"2\" /><text x=\"145\" y=\"82\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">92° ext.</text><text x=\"282\" y=\"100\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">59° ext.</text><text x=\"314\" y=\"187\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">77°</text><text x=\"72\" y=\"190\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">m°</text></svg>"
+              }
+            }
+          ],
+          "hint": "Identify the diagram’s angle rule first: equal base angles, parallel lines, a straight line, or a polygon angle sum.",
+          "keyPoints": [
+            {
+              "text": "each pronumeral",
+              "note": "Work on one labelled angle at a time and state the rule used to connect it to the given angles."
+            }
+          ],
+          "timeLimit": 900,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 7,
+            "question": "q7",
+            "section": "Section 2 (Geometry)",
+            "marks": 14
+          }
         }
       ]
     },

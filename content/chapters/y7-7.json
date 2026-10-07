@@ -2251,6 +2251,96 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit 5 in \\(100.015\\)?",
+          "options": [
+            "\\(0.005\\)",
+            "\\(0.05\\)",
+            "\\(0.5\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Read the decimal places from left to right: tenths, hundredths, thousandths.",
+          "keyPoints": [
+            {
+              "text": "value of the digit 5",
+              "note": "The digit’s place determines its value; do not confuse the digit 5 with the value it represents."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Label the decimal places after the point.",
+              "work": "\\(100.\\;0_{\\text{tenths}}\\;1_{\\text{hundredths}}\\;5_{\\text{thousandths}}\\)"
+            },
+            {
+              "explain": "The digit 5 is in the thousandths place.",
+              "work": "\\(5\\text{ thousandths}=\\frac{5}{1000}\\)"
+            },
+            {
+              "explain": "Write the place value as a decimal.",
+              "work": "\\(\\boxed{0.005}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 9,
+            "question": "q5",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Arrange these decimals from smallest to largest: \\(0.7,\\;0.77,\\;0.077\\).",
+          "options": [
+            "\\(0.077,\\;0.7,\\;0.77\\)",
+            "\\(0.7,\\;0.077,\\;0.77\\)",
+            "\\(0.77,\\;0.7,\\;0.077\\)",
+            "\\(0.077,\\;0.77,\\;0.7\\)"
+          ],
+          "answer": 0,
+          "hint": "Write each decimal to the same number of decimal places before comparing.",
+          "keyPoints": [
+            {
+              "text": "smallest to largest",
+              "note": "Compare place values from left to right; the first value should be the least."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write all values to three decimal places.",
+              "work": "\\(0.700,\\quad0.770,\\quad0.077\\)"
+            },
+            {
+              "explain": "Compare the tenths digits first. 0.077 has 0 tenths; the other two have 7 tenths.",
+              "work": "\\(0.077<0.700<0.770\\)"
+            },
+            {
+              "explain": "Keep the original values and list them in that order.",
+              "work": "\\(\\boxed{0.077,\\;0.7,\\;0.77}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q9",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
         }
       ]
     },
@@ -3117,6 +3207,96 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(\\frac{22}{7}\\) as a decimal, correct to 3 decimal places.",
+          "options": [
+            "\\(3.143\\)",
+            "\\(3.142\\)",
+            "\\(3.140\\)",
+            "\\(3.14\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 22 by 7 and keep one extra decimal digit so you can round to three places.",
+          "keyPoints": [
+            {
+              "text": "correct to 3 decimal places",
+              "note": "Keep three digits after the decimal point and use the fourth digit to decide whether to round."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator to obtain the decimal expansion.",
+              "work": "\\(22\\div7=3.142857\\ldots\\)"
+            },
+            {
+              "explain": "The first three decimal digits are 142; the next digit is 8, so round the thousandths digit up.",
+              "work": "\\(3.142857\\ldots\\to3.143\\)"
+            },
+            {
+              "explain": "State the answer to exactly three decimal places.",
+              "work": "\\(\\boxed{3.143}\\)"
+            }
+          ],
+          "timeLimit": 75,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q8",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(0.82\\) as a fraction in its simplest form.",
+          "options": [
+            "\\(\\frac{41}{50}\\)",
+            "\\(\\frac{82}{100}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{21}{25}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the hundredths as a fraction over 100, then divide numerator and denominator by their HCF.",
+          "keyPoints": [
+            {
+              "text": "simplest form",
+              "note": "Reduce the fraction until numerator and denominator have no common factor greater than 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Two decimal places mean the denominator is 100.",
+              "work": "\\(0.82=\\frac{82}{100}\\)"
+            },
+            {
+              "explain": "The HCF of 82 and 100 is 2. Divide both by 2.",
+              "work": "\\(\\frac{82\\div2}{100\\div2}=\\frac{41}{50}\\)"
+            },
+            {
+              "explain": "41 and 50 have no common factor greater than 1.",
+              "work": "\\(\\boxed{\\frac{41}{50}}\\)"
+            }
+          ],
+          "timeLimit": 100,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q7",
+            "section": "Section 3 (Decimals)",
+            "marks": 2
+          }
         }
       ]
     },
@@ -3298,6 +3478,231 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(2.4+0.07\\).",
+          "options": [
+            "\\(2.47\\)",
+            "\\(2.11\\)",
+            "\\(2.407\\)",
+            "\\(9.4\\)"
+          ],
+          "answer": 0,
+          "hint": "Write both numbers with the decimal points aligned, then add hundredths to hundredths.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Line up the decimal points before adding the place values."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Align the decimal points so tenths and hundredths are in matching columns.",
+              "work": "\\(2.40+0.07\\)"
+            },
+            {
+              "explain": "Add the hundredths; the tenths and ones remain unchanged.",
+              "work": "\\(2.40+0.07=2.47\\)"
+            },
+            {
+              "explain": "Choose the option equal to the sum.",
+              "work": "\\(\\boxed{2.47}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q1",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(3.7-0.35\\).",
+          "options": [
+            "\\(3.35\\)",
+            "\\(3.65\\)",
+            "\\(3.42\\)",
+            "\\(0.32\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite 3.7 as 3.70 so both numbers have the same number of decimal places.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Add a zero to make the decimal columns line up before subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the numbers with aligned decimal points.",
+              "work": "\\(3.70-0.35\\)"
+            },
+            {
+              "explain": "Subtract hundredths and tenths using regrouping where needed.",
+              "work": "\\(3.70-0.35=3.35\\)"
+            },
+            {
+              "explain": "Check that the result is less than 3.7, as subtraction requires.",
+              "work": "\\(\\boxed{3.35}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q2",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(0.008+0.15+0.19\\).",
+          "options": [
+            "\\(0.348\\)",
+            "\\(0.258\\)",
+            "\\(0.358\\)",
+            "\\(0.243\\)"
+          ],
+          "answer": 0,
+          "hint": "Align the decimal points and add the hundredths and thousandths carefully.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Write trailing zeros so all three decimals line up by place value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Align all decimal points and pad with zeros.",
+              "work": "\\(0.008+0.150+0.190\\)"
+            },
+            {
+              "explain": "Add the thousandths and hundredths, carrying into the tenths where needed.",
+              "work": "\\(0.008+0.150=0.158;\\quad0.158+0.190=0.348\\)"
+            },
+            {
+              "explain": "State the sum.",
+              "work": "\\(\\boxed{0.348}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q10",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(2015-20.15\\).",
+          "options": [
+            "\\(1994.85\\)",
+            "\\(1994.95\\)",
+            "\\(1995.15\\)",
+            "\\(2013.985\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 2015 as 2015.00 so the decimal points and place values align.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Align decimal points even when one number is a whole number."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the whole number with two decimal places.",
+              "work": "\\(2015.00-20.15\\)"
+            },
+            {
+              "explain": "Subtract the hundredths, tenths, units, tens, and hundreds using regrouping.",
+              "work": "\\(2015.00-20.15=1994.85\\)"
+            },
+            {
+              "explain": "Check the result is slightly less than 1995.",
+              "work": "\\(\\boxed{1994.85}\\)"
+            }
+          ],
+          "timeLimit": 75,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q11",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Melanie starts with \\(\\$52.65\\) and returns with \\(\\$21.95\\). How much did she spend?",
+          "options": [
+            "\\(\\$30.70\\)",
+            "\\(\\$31.70\\)",
+            "\\(\\$74.60\\)",
+            "\\(\\$30.60\\)"
+          ],
+          "answer": 0,
+          "hint": "The amount spent is the starting balance minus the money left at the end.",
+          "keyPoints": [
+            {
+              "text": "How much did she spend?",
+              "note": "Subtract the ending balance from the starting balance to find the amount used."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the change in money with the decimal points aligned.",
+              "work": "\\(52.65-21.95\\)"
+            },
+            {
+              "explain": "Subtract cents and dollars, regrouping one dollar as 100 cents where needed.",
+              "work": "\\(52.65-21.95=30.70\\)"
+            },
+            {
+              "explain": "State the amount spent in dollars.",
+              "work": "\\(\\boxed{\\$30.70}\\)"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 11,
+            "question": "q15",
+            "section": "Section 3 (Decimals)",
+            "marks": 2
+          }
         }
       ]
     },
@@ -3412,6 +3817,141 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(0.01\\times100\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(0.1\\)",
+            "\\(10\\)",
+            "\\(0.001\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiplying by 100 moves each digit two place-value columns to the left.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Multiplication by 100 shifts the decimal point two places to the right."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiplication by 100 is multiplication by \\(10^2\\).",
+              "work": "\\(0.01\\times100=0.01\\times10^2\\)"
+            },
+            {
+              "explain": "Move the decimal point two places to the right.",
+              "work": "\\(0.01\\to1\\)"
+            },
+            {
+              "explain": "Select the resulting whole number.",
+              "work": "\\(\\boxed{1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q5",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(72.13\\div1000\\).",
+          "options": [
+            "\\(0.07213\\)",
+            "\\(7.213\\)",
+            "\\(0.7213\\)",
+            "\\(72130\\)"
+          ],
+          "answer": 0,
+          "hint": "Dividing by 1000 moves the decimal point three places to the left.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Each division by 10 moves every digit one place to the right in a place-value chart."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Division by 1000 means division by \\(10^3\\).",
+              "work": "\\(72.13\\div1000\\)"
+            },
+            {
+              "explain": "Move the decimal point three places left, inserting zeros as placeholders.",
+              "work": "\\(72.13\\to7.213\\to0.7213\\to0.07213\\)"
+            },
+            {
+              "explain": "Read the final value with its leading zero.",
+              "work": "\\(\\boxed{0.07213}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q6",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(3\\div100\\).",
+          "options": [
+            "\\(0.3\\)",
+            "\\(0.33\\)",
+            "\\(0.03\\)",
+            "\\(0.003\\)"
+          ],
+          "answer": 2,
+          "hint": "Dividing by 100 moves the decimal point two places left.",
+          "keyPoints": [
+            {
+              "text": "\\(3\\div100\\)",
+              "note": "Write 3 as 3.00, then shift the decimal point two places left."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the whole number with a decimal point.",
+              "work": "\\(3=3.00\\)"
+            },
+            {
+              "explain": "Move the decimal point two places left when dividing by 100.",
+              "work": "\\(3.00\\to0.03\\)"
+            },
+            {
+              "explain": "Choose the matching decimal.",
+              "work": "\\(\\boxed{0.03}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 9,
+            "question": "q2",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
         }
       ]
     },
@@ -3608,6 +4148,343 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(0.02\\times0.13\\).",
+          "options": [
+            "\\(0.0026\\)",
+            "\\(0.026\\)",
+            "\\(0.26\\)",
+            "\\(0.0015\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 2 by 13 first, then count the total decimal places in the two factors.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "The product must contain the combined number of decimal places from both factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Ignore the decimal points briefly and multiply the whole-number digits.",
+              "work": "\\(2\\times13=26\\)"
+            },
+            {
+              "explain": "There are two decimal places in 0.02 and two in 0.13, four altogether. Place four decimal digits in the product.",
+              "work": "\\(0.02\\times0.13=0.0026\\)"
+            },
+            {
+              "explain": "Check the size: multiplying two numbers less than 1 gives a small positive result.",
+              "work": "\\(\\boxed{0.0026}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q3",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(12\\times9=108\\), what is \\(1.2\\times0.9\\)?",
+          "options": [
+            "\\(1.08\\)",
+            "\\(10.8\\)",
+            "\\(0.108\\)",
+            "\\(108\\)"
+          ],
+          "answer": 0,
+          "hint": "The factors 1.2 and 0.9 are each one tenth of 12 and 9.",
+          "keyPoints": [
+            {
+              "text": "Given that",
+              "note": "Use the known whole-number product, then account for the scale of each factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Express each decimal factor as a whole number divided by 10.",
+              "work": "\\(1.2=12\\div10,\\quad0.9=9\\div10\\)"
+            },
+            {
+              "explain": "The product is therefore one hundredth of \\(12\\times9\\).",
+              "work": "\\(1.2\\times0.9=(12\\times9)\\div100=108\\div100\\)"
+            },
+            {
+              "explain": "Write the scaled product as a decimal.",
+              "work": "\\(\\boxed{1.08}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q9",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A container holds less than \\(0.8\\) litres of water. Which could be the amount of water in four such containers?",
+          "options": [
+            "5 litres",
+            "4.2 litres",
+            "3.2 litres",
+            "2.4 litres"
+          ],
+          "answer": 3,
+          "hint": "Find the greatest possible total for four containers, remembering each holds strictly less than 0.8 L.",
+          "keyPoints": [
+            {
+              "text": "less than \\(0.8\\) litres",
+              "note": "“Less than” is a strict inequality, so the total must be below four times 0.8 L."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "If each container holds less than 0.8 L, four containers hold less than four times that amount.",
+              "work": "\\(4\\times0.8=3.2\\text{ L}\\), so the total is \\(<3.2\\text{ L}\\)."
+            },
+            {
+              "explain": "Check the choices: 3.2 L is not possible because the amount must be strictly less; any larger choice is also impossible.",
+              "work": "\\(2.4<3.2\\)"
+            },
+            {
+              "explain": "Select the only offered total below 3.2 L.",
+              "work": "\\(\\boxed{2.4\\text{ litres}}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 9,
+            "question": "q1",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Calculate each product. The parts are independent.",
+          "parts": [
+            {
+              "id": "wghs-y7-2015-t3-s3-q12a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Calculate \\(1.245\\times100\\).",
+              "options": [
+                "124.5",
+                "12.45",
+                "1245",
+                "0.01245"
+              ],
+              "answer": 0,
+              "hint": "Multiplying by 100 shifts the decimal point two places right.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "A factor of 100 moves each digit two place-value columns higher."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Multiplying by 100 moves the decimal point two places right.",
+                  "work": "\\(1.245\\to124.5\\)"
+                },
+                {
+                  "explain": "Check that the value is 100 times larger.",
+                  "work": "\\(\\boxed{124.5}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 10,
+                "question": "q12a",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s3-q12b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Calculate \\(0.015\\times7\\).",
+              "options": [
+                "0.105",
+                "1.05",
+                "0.0105",
+                "0.95"
+              ],
+              "answer": 0,
+              "hint": "Multiply 15 by 7, then restore the three decimal places.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Count decimal places in the first factor after multiplying the digits."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Multiply the digits as whole numbers.",
+                  "work": "\\(15\\times7=105\\)"
+                },
+                {
+                  "explain": "The factor 0.015 has three decimal places, so place three decimal digits in the product.",
+                  "work": "\\(0.015\\times7=0.105\\)"
+                },
+                {
+                  "explain": "Choose the value with the correct scale.",
+                  "work": "\\(\\boxed{0.105}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 10,
+                "question": "q12b",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s3-q12c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Calculate \\(4.75\\times1.4\\).",
+              "options": [
+                "6.65",
+                "66.5",
+                "0.665",
+                "5.15"
+              ],
+              "answer": 0,
+              "hint": "Multiply 475 by 14, then place the decimal point using three total decimal places.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "There are three decimal places across the two factors altogether."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Multiply without decimal points.",
+                  "work": "\\(475\\times14=6650\\)"
+                },
+                {
+                  "explain": "The factors have two and one decimal places, three total; place the decimal three places from the right.",
+                  "work": "\\(4.75\\times1.4=6.650\\)"
+                },
+                {
+                  "explain": "Remove the unnecessary trailing zero.",
+                  "work": "\\(\\boxed{6.65}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 10,
+                "question": "q12c",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            }
+          ],
+          "hint": "For each part, multiply the digits first, then account for decimal places.",
+          "keyPoints": [
+            {
+              "text": "each product",
+              "note": "Work through each pair of factors separately and check the scale of each answer."
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q12",
+            "section": "Section 3 (Decimals)",
+            "marks": 3
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Petrol costs \\(\\$1.49\\) per litre. What is the cost of 40 litres?",
+          "options": [
+            "\\(\\$59.60\\)",
+            "\\(\\$5.96\\)",
+            "\\(\\$60.00\\)",
+            "\\(\\$41.49\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the price for one litre by the number of litres.",
+          "keyPoints": [
+            {
+              "text": "per litre",
+              "note": "This is the price of one unit, so multiply it by the number of units purchased."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the unit price by 40 litres.",
+              "work": "\\(40\\times\\$1.49\\)"
+            },
+            {
+              "explain": "Use \\(4\\times149=596\\), then account for 40 and two decimal places.",
+              "work": "\\(40\\times1.49=5960\\div100=59.60\\)"
+            },
+            {
+              "explain": "Include the currency unit.",
+              "work": "\\(\\boxed{\\$59.60}\\)"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 11,
+            "question": "q16",
+            "section": "Section 3 (Decimals)",
+            "marks": 2
+          }
         }
       ]
     },
@@ -3773,6 +4650,302 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(0.8\\div0.2\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(0.4\\)",
+            "\\(0.16\\)",
+            "\\(40\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both the dividend and divisor by 10 to make the divisor a whole number.",
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Scale both numbers by the same factor so the quotient stays unchanged."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply both numbers by 10 to remove the decimal from the divisor.",
+              "work": "\\(0.8\\div0.2=8\\div2\\)"
+            },
+            {
+              "explain": "Divide the resulting whole numbers.",
+              "work": "\\(8\\div2=4\\)"
+            },
+            {
+              "explain": "The original quotient is unchanged.",
+              "work": "\\(\\boxed{4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q4",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Calculate each quotient. The parts are independent.",
+          "parts": [
+            {
+              "id": "wghs-y7-2015-t3-s3-q13a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Calculate \\(3.123\\div10\\).",
+              "options": [
+                "0.3123",
+                "31.23",
+                "3.0123",
+                "0.03123"
+              ],
+              "answer": 0,
+              "hint": "Dividing by 10 shifts the decimal point one place left.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Move the decimal one place left for division by 10."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Divide by 10 by shifting the decimal one place left.",
+                  "work": "\\(3.123\\to0.3123\\)"
+                },
+                {
+                  "explain": "Keep all significant digits in their new places.",
+                  "work": "\\(\\boxed{0.3123}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 11,
+                "question": "q13a",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s3-q13b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Calculate \\(9.456\\div0.01\\).",
+              "options": [
+                "945.6",
+                "0.09456",
+                "94.56",
+                "9.455"
+              ],
+              "answer": 0,
+              "hint": "Dividing by one hundredth is equivalent to multiplying by 100.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "A divisor smaller than 1 can make the quotient larger; multiply by 100 here."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Since \\(0.01=\\frac{1}{100}\\), dividing by it is multiplying by 100.",
+                  "work": "\\(9.456\\div0.01=9.456\\times100\\)"
+                },
+                {
+                  "explain": "Shift the decimal point two places right.",
+                  "work": "\\(9.456\\times100=945.6\\)"
+                },
+                {
+                  "explain": "Choose the larger quotient.",
+                  "work": "\\(\\boxed{945.6}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 11,
+                "question": "q13b",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s3-q13c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate \\(2.144\\div0.08\\).",
+              "options": [
+                "26.8",
+                "2.68",
+                "0.268",
+                "268"
+              ],
+              "answer": 0,
+              "hint": "Multiply both numbers by 100 to turn the divisor into 8.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Scale the dividend and divisor by the same power of ten."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Multiply both numbers by 100 so the divisor is a whole number.",
+                  "work": "\\(2.144\\div0.08=214.4\\div8\\)"
+                },
+                {
+                  "explain": "Divide.",
+                  "work": "\\(214.4\\div8=26.8\\)"
+                },
+                {
+                  "explain": "Check: \\(26.8\\times0.08=2.144\\).",
+                  "work": "\\(\\boxed{26.8}\\)"
+                }
+              ],
+              "timeLimit": 100,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 11,
+                "question": "q13c",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            },
+            {
+              "id": "wghs-y7-2015-t3-s3-q13d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Calculate \\(0.0313\\div40\\).",
+              "options": [
+                "0.0007825",
+                "0.007825",
+                "0.07825",
+                "0.00007825"
+              ],
+              "answer": 0,
+              "hint": "Divide by 4, then divide by 10; this is equivalent to dividing by 40.",
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Factor 40 into 4 and 10 to make the division easier to track."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use \\(40=4\\times10\\).",
+                  "work": "\\(0.0313\\div40=(0.0313\\div4)\\div10\\)"
+                },
+                {
+                  "explain": "Divide by 4, then shift the decimal one place left for division by 10.",
+                  "work": "\\(0.0313\\div4=0.007825;\\quad0.007825\\div10=0.0007825\\)"
+                },
+                {
+                  "explain": "Verify by multiplying the quotient by 40.",
+                  "work": "\\(0.0007825\\times40=0.0313\\)"
+                },
+                {
+                  "explain": "State the quotient.",
+                  "work": "\\(\\boxed{0.0007825}\\)"
+                }
+              ],
+              "timeLimit": 100,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+                "school": "Willoughby Girls High School",
+                "year": 2015,
+                "page": 11,
+                "question": "q13d",
+                "section": "Section 3 (Decimals)",
+                "marks": 1
+              }
+            }
+          ],
+          "hint": "For decimal divisors, scale both numbers together; for powers of ten, shift place value.",
+          "keyPoints": [
+            {
+              "text": "each quotient",
+              "note": "Choose a method that makes the divisor or place-value shift easy to manage."
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 11,
+            "question": "q13",
+            "section": "Section 3 (Decimals)",
+            "marks": 4
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A carton holds 0.6 litres of milk. How many full 0.25-litre glasses can be filled?",
+          "options": [
+            "2 glasses",
+            "2.4 glasses",
+            "3 glasses",
+            "1 glass"
+          ],
+          "answer": 0,
+          "hint": "Divide the total milk by the amount per glass, then count only complete glasses.",
+          "keyPoints": [
+            {
+              "text": "full 0.25-litre glasses",
+              "note": "“Full glasses” means use the greatest whole number that does not exceed the quotient."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Divide the available amount by the capacity of one glass.",
+              "work": "\\(0.6\\div0.25=60\\div25=2.4\\)"
+            },
+            {
+              "explain": "Only complete glasses count. Two glasses use \\(2\\times0.25=0.50\\) L, while three need 0.75 L.",
+              "work": "\\(0.50\\le0.60<0.75\\)"
+            },
+            {
+              "explain": "Choose the number of full glasses.",
+              "work": "\\(\\boxed{2}\\)"
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 11,
+            "question": "q14",
+            "section": "Section 3 (Decimals)",
+            "marks": 2
+          }
         }
       ]
     },
@@ -4108,6 +5281,96 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(0.327327\\ldots\\) as a recurring decimal.",
+          "options": [
+            "\\(0.\\overline{327}\\)",
+            "\\(0.3\\overline{27}\\)",
+            "\\(0.\\overline{32}7\\)",
+            "\\(0.327\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the shortest block of digits that repeats without changing.",
+          "keyPoints": [
+            {
+              "text": "recurring decimal",
+              "note": "A bar is placed over exactly the group of digits that repeats indefinitely."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare consecutive digits to identify the repeating cycle.",
+              "work": "\\(327\\,327\\,327\\ldots\\)"
+            },
+            {
+              "explain": "The full three-digit block repeats from the first decimal digit.",
+              "work": "\\(0.327327327\\ldots=0.\\overline{327}\\)"
+            },
+            {
+              "explain": "Use a bar over the complete repeating block.",
+              "work": "\\(\\boxed{0.\\overline{327}}\\)"
+            }
+          ],
+          "timeLimit": 75,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q7",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(\\frac{3}{11}\\) to a decimal.",
+          "options": [
+            "\\(0.\\overline{27}\\)",
+            "\\(0.27\\)",
+            "\\(0.\\overline{3}\\)",
+            "\\(0.272\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 3 by 11 and watch for the repeating two-digit block.",
+          "keyPoints": [
+            {
+              "text": "to a decimal",
+              "note": "Divide the numerator by the denominator; if a digit pattern repeats, show it with a recurring bar."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use long division to calculate the fraction as a decimal.",
+              "work": "\\(3\\div11=0.272727\\ldots\\)"
+            },
+            {
+              "explain": "The digits 27 repeat in the same order.",
+              "work": "\\(0.272727\\ldots=0.\\overline{27}\\)"
+            },
+            {
+              "explain": "Write the repeating block using a bar.",
+              "work": "\\(\\boxed{0.\\overline{27}}\\)"
+            }
+          ],
+          "timeLimit": 100,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q8",
+            "section": "Section 3 (Decimals)",
+            "marks": 2
+          }
         }
       ]
     },
@@ -4179,6 +5442,186 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2015-t3-s1-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round \\(2.798545\\) to 3 decimal places.",
+          "options": [
+            "\\(2.799\\)",
+            "\\(2.798\\)",
+            "\\(2.800\\)",
+            "\\(2.79\\)"
+          ],
+          "answer": 0,
+          "hint": "Keep three decimal digits and inspect the fourth decimal digit.",
+          "keyPoints": [
+            {
+              "text": "3 decimal places",
+              "note": "This means the final answer has three digits after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the thousandths digit and the next digit.",
+              "work": "\\(2.798\\underline{5}45\\)"
+            },
+            {
+              "explain": "The next digit is 5, so increase the thousandths digit by one. Carry through the 9s.",
+              "work": "\\(2.798545\\to2.799\\)"
+            },
+            {
+              "explain": "Write the rounded value to three decimal places.",
+              "work": "\\(\\boxed{2.799}\\)"
+            }
+          ],
+          "timeLimit": 75,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 2,
+            "question": "q10",
+            "section": "Section 1 (Non-calculator)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(0.0069\\) to 1 decimal place.",
+          "options": [
+            "\\(0.0\\)",
+            "\\(0.007\\)",
+            "\\(0.1\\)",
+            "\\(0.01\\)"
+          ],
+          "answer": 0,
+          "hint": "The tenths digit is 0; check the hundredths digit to decide whether it changes.",
+          "keyPoints": [
+            {
+              "text": "1 decimal place",
+              "note": "Keep only one digit after the decimal point, then check the next digit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Locate the tenths digit and the following hundredths digit.",
+              "work": "\\(0.\\underline{0}069\\)"
+            },
+            {
+              "explain": "The hundredths digit is 0, which is less than 5, so the tenths digit stays 0.",
+              "work": "\\(0.0069\\to0.0\\)"
+            },
+            {
+              "explain": "Give the result to one decimal place.",
+              "work": "\\(\\boxed{0.0}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 9,
+            "question": "q3",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(4.24761\\) to the nearest thousandth.",
+          "options": [
+            "\\(4.248\\)",
+            "\\(4.247\\)",
+            "\\(4.25\\)",
+            "\\(4.2476\\)"
+          ],
+          "answer": 0,
+          "hint": "The thousandths digit is the third digit after the decimal; inspect the fourth digit.",
+          "keyPoints": [
+            {
+              "text": "nearest thousandth",
+              "note": "A thousandth is the third place after the decimal point."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Mark the third decimal digit and the following digit.",
+              "work": "\\(4.24\\underline{7}\\underline{6}1\\)"
+            },
+            {
+              "explain": "The next digit is 6, so round 7 up to 8.",
+              "work": "\\(4.24761\\to4.248\\)"
+            },
+            {
+              "explain": "Keep three decimal places in the answer.",
+              "work": "\\(\\boxed{4.248}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 9,
+            "question": "q4",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
+        },
+        {
+          "id": "wghs-y7-2015-t3-s3-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Round \\(\\$21.43978\\) to the nearest cent.",
+          "options": [
+            "\\(\\$21.44\\)",
+            "\\(\\$21.43\\)",
+            "\\(\\$21.40\\)",
+            "\\(\\$21.439\\)"
+          ],
+          "answer": 0,
+          "hint": "A cent is one hundredth of a dollar, so round to two decimal places.",
+          "keyPoints": [
+            {
+              "text": "nearest cent",
+              "note": "Amounts in cents are written to two decimal places; inspect the third decimal digit."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Keep the dollars and first two decimal digits.",
+              "work": "\\(\\$21.43\\underline{9}78\\)"
+            },
+            {
+              "explain": "The third decimal digit is 9, so increase the hundredths digit.",
+              "work": "\\(21.43\\to21.44\\)"
+            },
+            {
+              "explain": "Include the dollar sign and two cent digits.",
+              "work": "\\(\\boxed{\\$21.44}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
+            "school": "Willoughby Girls High School",
+            "year": 2015,
+            "page": 10,
+            "question": "q6",
+            "section": "Section 3 (Decimals)",
+            "marks": 1
+          }
         }
       ]
     }
