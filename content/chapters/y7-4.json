@@ -4071,9 +4071,16 @@
         {
           "id": "manly2022-y7-frac-q3i-var",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(\\frac38+\\frac5{12}\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\\\(\\\\frac{19}{24}\\\\)",
+            "\\\\(\\\\frac{8}{20}\\\\)",
+            "\\\\(\\\\frac{15}{96}\\\\)",
+            "\\\\(\\\\frac{2}{5}\\\\)"
+          ],
           "answer": 0,
+          "hint": "Rewrite both fractions using a common denominator, then add.",
           "steps": [
             {
               "explain": "Find the lowest common denominator (LCD) for 8 and 12, which is 24.",
@@ -4088,26 +4095,21 @@
               "work": "\\(\\frac{9 + 10}{24} = \\frac{19}{24}\\)"
             }
           ],
-          "meta": {
-            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
-            "school": "Manly Selective Campus",
-            "year": 2022,
-            "page": 4,
-            "variant": false
-          },
-          "hint": "Rewrite both fractions using a common denominator, then add.",
+          "timeLimit": 60,
           "keyPoints": [
             {
               "text": "simplest form",
               "note": "Do not add the denominators when the fractions already share a common denominator."
             }
           ],
-          "options": [
-            "\\\\(\\\\frac{19}{24}\\\\)",
-            "\\\\(\\\\frac{8}{20}\\\\)",
-            "\\\\(\\\\frac{15}{96}\\\\)",
-            "\\\\(\\\\frac{2}{5}\\\\)"
-          ]
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false,
+            "origin": "teacher"
+          }
         }
       ]
     },
