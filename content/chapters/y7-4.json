@@ -4834,9 +4834,16 @@
         {
           "id": "manly2022-y7-frac-q3ii-var",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Evaluate and give your answer in simplest form: \\(6\\frac13-2\\frac58\\).",
+          "difficulty": "medium",
+          "options": [
+            "\\\\(4 \\\\frac{7}{24}\\\\)",
+            "\\\\(3 \\\\frac{17}{24}\\\\)",
+            "\\\\(3 \\\\frac{11}{24}\\\\)",
+            "4"
+          ],
           "answer": 1,
+          "hint": "Rewrite each mixed numeral as an improper fraction before subtracting.",
           "steps": [
             {
               "explain": "Convert the mixed numbers into improper fractions.",
@@ -4851,26 +4858,21 @@
               "work": "\\(\\frac{152 - 63}{24} = \\frac{89}{24} = 3\\frac{17}{24}\\)"
             }
           ],
-          "meta": {
-            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
-            "school": "Manly Selective Campus",
-            "year": 2022,
-            "page": 4,
-            "variant": false
-          },
-          "hint": "Rewrite each mixed numeral as an improper fraction before subtracting.",
+          "timeLimit": 60,
           "keyPoints": [
             {
               "text": "simplest form",
               "note": "Make the denominators match before subtracting."
             }
           ],
-          "options": [
-            "\\\\(4 \\\\frac{7}{24}\\\\)",
-            "\\\\(3 \\\\frac{17}{24}\\\\)",
-            "\\\\(3 \\\\frac{11}{24}\\\\)",
-            "4"
-          ]
+          "meta": {
+            "source": "Manly Selective Campus Year 7 Assessment 1 (May 2022), pp. 3–4",
+            "school": "Manly Selective Campus",
+            "year": 2022,
+            "page": 4,
+            "variant": false,
+            "origin": "teacher"
+          }
         }
       ]
     }
