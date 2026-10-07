@@ -5285,8 +5285,8 @@
         {
           "id": "wghs-y7-2015-t3-s1-q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Write \\(0.327327\\ldots\\) as a recurring decimal.",
+          "difficulty": "medium",
           "options": [
             "\\(0.\\overline{327}\\)",
             "\\(0.3\\overline{27}\\)",
@@ -5295,12 +5295,6 @@
           ],
           "answer": 0,
           "hint": "Find the shortest block of digits that repeats without changing.",
-          "keyPoints": [
-            {
-              "text": "recurring decimal",
-              "note": "A bar is placed over exactly the group of digits that repeats indefinitely."
-            }
-          ],
           "steps": [
             {
               "explain": "Compare consecutive digits to identify the repeating cycle.",
@@ -5316,7 +5310,13 @@
             }
           ],
           "timeLimit": 75,
-          "xp": 2,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "recurring decimal",
+              "note": "A bar is placed over exactly the group of digits that repeats indefinitely."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -5324,7 +5324,8 @@
             "page": 2,
             "question": "q7",
             "section": "Section 1 (Non-calculator)",
-            "marks": 1
+            "marks": 1,
+            "origin": "teacher"
           }
         },
         {
