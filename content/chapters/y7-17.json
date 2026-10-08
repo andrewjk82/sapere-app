@@ -359,26 +359,19 @@
         {
           "id": "wghs-y7-2015-t3-s2-q4",
           "type": "multipart",
-          "difficulty": "hard",
           "stem": "Use the grid, mirror line, and point E to complete these transformations in order.",
+          "difficulty": "hard",
           "parts": [
             {
               "id": "wghs-y7-2015-t3-s2-q4a",
               "type": "review",
-              "difficulty": "medium",
               "stem": "Reflect the T-shape in the vertical mirror line.",
-              "answer": "Sample answer: Reflect every vertex to the opposite side of the vertical mirror line, keeping it at the same height and the same perpendicular distance from the mirror. The completed reflected T is shown in the diagram.",
-              "manual": true,
-              "hint": "For each corner, measure horizontally to the mirror. Place its image the same distance on the other side, on the same horizontal row.",
-              "keyPoints": [
-                {
-                  "text": "vertical mirror line",
-                  "note": "A reflection keeps each point the same perpendicular distance from the mirror."
-                }
-              ],
+              "difficulty": "medium",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"280\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"235\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"80,65 190,65 190,82 132,82 132,160 115,160 115,82 80,82\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"115\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">T</text><text x=\"210\" y=\"252\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#ef4444\" font-weight=\"600\">Mirror</text></svg>"
+                "svg": "fig:264e31f40e"
               },
+              "answer": "Sample answer: Reflect every vertex to the opposite side of the vertical mirror line, keeping it at the same height and the same perpendicular distance from the mirror. The completed reflected T is shown in the diagram.",
+              "hint": "For each corner, measure horizontally to the mirror. Place its image the same distance on the other side, on the same horizontal row.",
               "steps": [
                 {
                   "explain": "A vertical mirror changes left and right but keeps every point at the same height.",
@@ -388,12 +381,19 @@
                   "explain": "Reflect all the vertices, then join them in the same order to form the mirror image.",
                   "work": "The reflected T has the same size and reversed orientation.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"280\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"235\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"80,65 190,65 190,82 132,82 132,160 115,160 115,82 80,82\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"340,65 230,65 230,82 288,82 288,160 305,160 305,82 340,82\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"285\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">Reflected T</text></svg>"
+                    "svg": "fig:7d059abc19"
                   }
                 }
               ],
+              "manual": true,
               "timeLimit": 90,
               "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "vertical mirror line",
+                  "note": "A reflection keeps each point the same perpendicular distance from the mirror."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -408,20 +408,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q4b",
               "type": "review",
-              "difficulty": "medium",
               "stem": "Now rotate the reflected T-shape 90° clockwise about point E.",
-              "answer": "Sample answer: Keep point E fixed and turn the reflected T through one quarter-turn clockwise. The completed final image is shown in the diagram.",
-              "manual": true,
-              "hint": "E stays fixed. Turn each vertex of the reflected T one quarter-turn clockwise around E, keeping its distance from E unchanged.",
-              "keyPoints": [
-                {
-                  "text": "90° clockwise about point E",
-                  "note": "A 90° clockwise rotation is a quarter-turn around E; the centre itself does not move."
-                }
-              ],
+              "difficulty": "medium",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"280\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"235\" stroke=\"#ef4444\" stroke-width=\"3\" stroke-dasharray=\"8 5\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"80,65 190,65 190,82 132,82 132,160 115,160 115,82 80,82\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"340,65 230,65 230,82 288,82 288,160 305,160 305,82 340,82\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"285\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui,sans-serif\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">Reflected T</text></svg>"
+                "svg": "fig:7d059abc19"
               },
+              "answer": "Sample answer: Keep point E fixed and turn the reflected T through one quarter-turn clockwise. The completed final image is shown in the diagram.",
+              "hint": "E stays fixed. Turn each vertex of the reflected T one quarter-turn clockwise around E, keeping its distance from E unchanged.",
               "steps": [
                 {
                   "explain": "The green T is the reflected image from part (a). Point E is the centre of rotation, so it stays fixed.",
@@ -431,7 +424,7 @@
                   "explain": "Turn each vertex a quarter-turn clockwise about E, then join the new vertices in order.",
                   "work": "A rotation preserves lengths and distances from its centre.",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"440\" height=\"280\" viewBox=\"0 0 440 280\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"278\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"20\" y1=\"15\" x2=\"20\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"60\" y1=\"15\" x2=\"60\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"15\" x2=\"80\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"100\" y1=\"15\" x2=\"100\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"120\" y1=\"15\" x2=\"120\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"140\" y1=\"15\" x2=\"140\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"180\" y1=\"15\" x2=\"180\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"200\" y1=\"15\" x2=\"200\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"220\" y1=\"15\" x2=\"220\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"240\" y1=\"15\" x2=\"240\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"260\" y1=\"15\" x2=\"260\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"280\" y1=\"15\" x2=\"280\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"300\" y1=\"15\" x2=\"300\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"320\" y1=\"15\" x2=\"320\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"340\" y1=\"15\" x2=\"340\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"360\" y1=\"15\" x2=\"360\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"380\" y1=\"15\" x2=\"380\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"400\" y1=\"15\" x2=\"400\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"15\" x2=\"420\" y2=\"265\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"20\" x2=\"425\" y2=\"20\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"40\" x2=\"425\" y2=\"40\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"60\" x2=\"425\" y2=\"60\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"80\" x2=\"425\" y2=\"80\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"100\" x2=\"425\" y2=\"100\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"120\" x2=\"425\" y2=\"120\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"140\" x2=\"425\" y2=\"140\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"160\" x2=\"425\" y2=\"160\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"180\" x2=\"425\" y2=\"180\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"200\" x2=\"425\" y2=\"200\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"220\" x2=\"425\" y2=\"220\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"240\" x2=\"425\" y2=\"240\" stroke=\"#e2e8f0\"/><line x1=\"15\" y1=\"260\" x2=\"425\" y2=\"260\" stroke=\"#e2e8f0\"/><circle cx=\"340\" cy=\"140\" r=\"5\" fill=\"#111827\"/><text x=\"350\" y=\"147\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">E</text><polygon points=\"340,65 230,65 230,82 288,82 288,160 305,160 305,82 340,82\" fill=\"#f1f5f9\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-linejoin=\"round\"/><polygon points=\"415,140 415,30 398,30 398,88 320,88 320,105 398,105 398,140\" fill=\"#dcfce7\" stroke=\"#15803d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><text x=\"368\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#15803d\" font-weight=\"600\">Final image</text></svg>"
+                    "svg": "fig:7073cada46"
                   }
                 },
                 {
@@ -439,8 +432,14 @@
                   "work": "Reflect first; rotate the reflected image second."
                 }
               ],
-              "timeLimit": 120,
-              "xp": 2,
+              "manual": true,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "90° clockwise about point E",
+                  "note": "A 90° clockwise rotation is a quarter-turn around E; the centre itself does not move."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -455,7 +454,7 @@
           ],
           "answer": "Sample answers: (a) reflect the T-shape across the vertical mirror line; (b) rotate that reflected T 90° clockwise about E. Each completed image is shown with its part.",
           "hint": "Complete the transformations in order: reflect the T-shape first, then rotate the reflected image 90° clockwise around E.",
-          "timeLimit": 210,
+          "timeLimit": 90,
           "xp": 3,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
@@ -687,7 +686,7 @@
               ],
               "manual": true,
               "timeLimit": 150,
-              "xp": 2,
+              "xp": 1,
               "keyPoints": [
                 {
                   "text": "axes of symmetry",
@@ -706,7 +705,7 @@
             }
           ],
           "hint": "A valid axis must divide the entire shape into two matching reflected halves.",
-          "timeLimit": 270,
+          "timeLimit": 90,
           "xp": 2,
           "keyPoints": [
             {
@@ -728,8 +727,11 @@
         {
           "id": "wghs-y7-2015-t3-s2-q6",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "What is the order of rotational symmetry of the shape shown?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:61218154d2"
+          },
           "options": [
             "2",
             "4",
@@ -738,12 +740,6 @@
           ],
           "answer": 2,
           "hint": "Count how many times the pattern matches itself during one complete 360° turn.",
-          "keyPoints": [
-            {
-              "text": "order of rotational symmetry",
-              "note": "The order counts matching positions in one full turn, including the starting position."
-            }
-          ],
           "steps": [
             {
               "explain": "The three identical sectors are evenly spaced around the centre.",
@@ -758,8 +754,14 @@
               "work": "\\(\\boxed{3}\\)"
             }
           ],
-          "timeLimit": 75,
+          "timeLimit": 90,
           "xp": 2,
+          "keyPoints": [
+            {
+              "text": "order of rotational symmetry",
+              "note": "The order counts matching positions in one full turn, including the starting position."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -767,10 +769,8 @@
             "page": 6,
             "question": "q6",
             "section": "Section 2 (Geometry)",
-            "marks": 1
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 240\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"238\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><circle cx=\"210\" cy=\"120\" r=\"95\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"210,102 210,32 277.4119109944701,63.43469034758455 223.7887999761416,108.42982302564229\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"225.5884572681199,129 286.21023553303064,164 225.28103963468988,206.6630822650743 213.12566719800475,137.72653955421976\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"194.4115427318801,129 133.7897644669694,164 127.30704937084006,89.90222738734116 193.08553282585365,113.84363742013797\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"120\" r=\"11\" fill=\"#334155\"/></svg>"
+            "marks": 1,
+            "origin": "teacher"
           }
         }
       ]
