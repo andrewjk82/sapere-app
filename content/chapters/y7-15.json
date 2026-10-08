@@ -2380,19 +2380,19 @@
               "stem": "Let x be the number. Which equation represents the statement?",
               "difficulty": "easy",
               "options": [
-                "\\((x+3)/5=7\\)",
+                "\\(\\dfrac{x+3}{5}=7\\)",
                 "\\(5x+3=7\\)",
-                "\\(x/5+3=7\\)",
-                "\\(x/3+5=7\\)"
+                "\\(\\dfrac{x}{5}+3=7\\)",
+                "\\(\\dfrac{x}{3}+5=7\\)"
               ],
               "answer": 2,
               "hint": "Translate the operations in the order they happen.",
               "steps": [
                 {
-                  "explain": "First divide x by 5: \\(x/5\\)."
+                  "explain": "First divide \\(x\\) by 5: \\(\\dfrac{x}{5}\\)."
                 },
                 {
-                  "explain": "Then add 3 and get 7: \\(x/5+3=7\\)."
+                  "explain": "Then add 3 and get 7: \\(\\dfrac{x}{5}+3=7\\)."
                 }
               ],
               "timeLimit": 60,
@@ -2423,16 +2423,16 @@
               "hint": "Undo the +3 first, then undo division by 5.",
               "steps": [
                 {
-                  "explain": "\\(x/5+3=7\\)."
+                  "explain": "Start with \\(\\dfrac{x}{5}+3=7\\)."
                 },
                 {
-                  "explain": "Subtract 3: \\(x/5=4\\)."
+                  "explain": "Subtract 3 from both sides: \\(\\dfrac{x}{5}=4\\)."
                 },
                 {
-                  "explain": "Multiply by 5: \\(x=20\\)."
+                  "explain": "Multiply both sides by 5: \\(x=4\\times5=20\\)."
                 },
                 {
-                  "explain": "Check: \\(20/5+3=7\\)."
+                  "explain": "Check: \\(\\dfrac{20}{5}+3=4+3=7\\), so the number is 20."
                 }
               ],
               "xp": 1,
@@ -2451,10 +2451,10 @@
           "hint": "Translate the operations in the order stated, then undo them in reverse order.",
           "steps": [
             {
-              "explain": "Write x/5+3=7."
+              "explain": "Write the statement as an equation: \\(\\dfrac{x}{5}+3=7\\)."
             },
             {
-              "explain": "Subtract 3 to get x/5=4, then multiply by 5 to get x=20."
+              "explain": "Subtract 3 to get \\(\\dfrac{x}{5}=4\\), then multiply by 5 to get \\(x=20\\)."
             }
           ],
           "timeLimit": 90,
