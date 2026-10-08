@@ -1818,6 +1818,434 @@
             "section": "Section 2 (Geometry)",
             "marks": 5
           }
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The purple arcs mark two angles. Which pair of angles is adjacent in the diagram?",
+          "options": [
+            "∠PQS and ∠SQR",
+            "∠PQS and ∠RQS",
+            "∠PQS and ∠PQR",
+            "∠PQS and an angle at R"
+          ],
+          "answer": 0,
+          "hint": "Adjacent angles share a vertex and one arm, and their interiors do not overlap.",
+          "steps": [
+            {
+              "explain": "Both angles have vertex Q and common arm QS."
+            },
+            {
+              "explain": "Their interiors sit next to each other, so \\(\\angle PQS\\) and \\(\\angle SQR\\) are adjacent."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 13,
+            "question": 1,
+            "section": "Geometry",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:e3459475a8"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q2",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use the angle diagrams to find each unknown angle.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-g-q2a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "In the intersecting-lines diagram, angle a is vertically opposite the 33° angle. Find a.",
+              "options": [
+                "147°",
+                "57°",
+                "66°",
+                "33°"
+              ],
+              "answer": 3,
+              "hint": "Vertically opposite angles are equal.",
+              "steps": [
+                {
+                  "explain": "\\(a=33^\\circ\\), because vertically opposite angles are equal."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 2,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:7851db5d99"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q2b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In a right angle split into 33°, 28° and x°, find x.",
+              "options": [
+                "31°",
+                "29°",
+                "59°",
+                "119°"
+              ],
+              "answer": 1,
+              "hint": "The three adjacent angles together make 90°.",
+              "steps": [
+                {
+                  "explain": "\\(x+33^\\circ+28^\\circ=90^\\circ\\)."
+                },
+                {
+                  "explain": "\\(x=90^\\circ-61^\\circ=29^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 2,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:9a2eb51836"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 13,
+            "question": 2,
+            "section": "Geometry",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "Vertically opposite angles are equal. Angles inside a right angle total 90°.",
+          "steps": [
+            {
+              "explain": "(a) a=33°. (b) x+33°+28°=90°, so x=29°."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the name of the closed curved oval shape shown?",
+          "options": [
+            "Circle",
+            "Ellipse",
+            "Hexagon",
+            "Parabola"
+          ],
+          "answer": 1,
+          "hint": "It is stretched horizontally and has one smooth closed curve.",
+          "steps": [
+            {
+              "explain": "A smooth, closed oval that is longer in one direction is an ellipse."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 13,
+            "question": 3,
+            "section": "Geometry",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:aaf709cf9c"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q4",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Use the diagrams to find the unknown angles.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-g-q4a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the isosceles triangle, the two marked sides are equal and one base angle is 70°. Find the vertex angle a.",
+              "options": [
+                "40°",
+                "70°",
+                "110°",
+                "35°"
+              ],
+              "answer": 0,
+              "hint": "The two base angles are equal; subtract both from 180° to find the vertex angle.",
+              "steps": [
+                {
+                  "explain": "The base angles are equal, so both are 70°."
+                },
+                {
+                  "explain": "\\(a=180^\\circ-70^\\circ-70^\\circ=40^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 4,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:d75be9d172"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q4b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "In the same triangle, find the base angle b.",
+              "options": [
+                "40°",
+                "70°",
+                "110°",
+                "140°"
+              ],
+              "answer": 1,
+              "hint": "The base angles opposite the equal sides have equal measures.",
+              "steps": [
+                {
+                  "explain": "The left base angle is 70°."
+                },
+                {
+                  "explain": "Equal sides have equal opposite base angles, so \\(b=70^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 4,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:d75be9d172"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q4c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "In the quadrilateral, the reflex angle c is drawn outside the 87° interior angle at the same vertex. Find c.",
+              "options": [
+                "273°",
+                "87°",
+                "93°",
+                "267°"
+              ],
+              "answer": 0,
+              "hint": "The smaller angle at that vertex is 87°; the reflex angle completes one full turn.",
+              "steps": [
+                {
+                  "explain": "Angles around a point total \\(360^\\circ\\)."
+                },
+                {
+                  "explain": "\\(c=360^\\circ-87^\\circ=273^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 4,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:4c7d0724df"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q4d",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "In the same quadrilateral, the interior angle marked d is unknown. Find d.",
+              "options": [
+                "73°",
+                "63°",
+                "83°",
+                "93°"
+              ],
+              "answer": 0,
+              "hint": "A quadrilateral’s interior angles total 360°, including the reflex angle.",
+              "steps": [
+                {
+                  "explain": "\\(d=360^\\circ-(87^\\circ+90^\\circ+110^\\circ)=360^\\circ-287^\\circ=73^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 4,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:4c7d0724df"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q4e",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The exterior angle e is adjacent to an interior angle of 120° on a straight line. Find e.",
+              "options": [
+                "60°",
+                "120°",
+                "30°",
+                "240°"
+              ],
+              "answer": 0,
+              "hint": "A linear pair adds to 180°.",
+              "steps": [
+                {
+                  "explain": "\\(e+120^\\circ=180^\\circ\\)."
+                },
+                {
+                  "explain": "\\(e=60^\\circ\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 13,
+                "question": 4,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:af16906664"
+              }
+            }
+          ],
+          "timeLimit": 300,
+          "xp": 5,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 13,
+            "question": 4,
+            "section": "Geometry",
+            "marks": 5,
+            "origin": "teacher"
+          },
+          "hint": "Use equal base angles, triangle angle sum, quadrilateral angle sum, and a straight-line pair.",
+          "steps": [
+            {
+              "explain": "(i) a=180°−70°−70°=40°, b=70°. (ii) c=360°−87°=273° and d=360°−(87°+90°+110°)=73°. (iii) e=180°−120°=60°."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The lines AC and DF are cut by a transversal. Which reason shows that AC and DF are not parallel?",
+          "options": [
+            "The angles are equal because 123°−60°=63°.",
+            "The same-side interior angles total 180° because 123°+60°=180°.",
+            "A transversal always makes two lines non-parallel.",
+            "The same-side interior angles total 123°+60°=183°, not 180°."
+          ],
+          "answer": 3,
+          "hint": "For parallel lines, same-side interior angles must add to 180°.",
+          "steps": [
+            {
+              "explain": "Add the marked same-side interior angles: \\(123^\\circ+60^\\circ=183^\\circ\\)."
+            },
+            {
+              "explain": "If the lines were parallel, this sum would be \\(180^\\circ\\)."
+            },
+            {
+              "explain": "Since \\(183^\\circ"
+            },
+            {
+              "explain": "e180^\\circ\\), AC and DF are not parallel.",
+              "figure": {
+                "svg": "fig:4051d1a504"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 14,
+            "question": 5,
+            "section": "Geometry",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:4051d1a504"
+          },
+          "keyPoints": [
+            {
+              "text": "not parallel",
+              "note": "For parallel lines, same-side interior angles must total 180°."
+            }
+          ]
         }
       ]
     },

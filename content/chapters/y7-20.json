@@ -526,6 +526,149 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A prism is sliced by a plane parallel to its top and bottom faces. What is the shape of the cross-section?",
+          "options": [
+            "A shape congruent to the prism’s top and bottom face",
+            "A circle in every case",
+            "A triangular face in every case",
+            "A shape with twice the prism’s length"
+          ],
+          "answer": 0,
+          "hint": "A slice parallel to a face has the same shape as that face.",
+          "steps": [
+            {
+              "explain": "The cross-section made by a plane parallel to the prism’s top and bottom faces has the same shape as those faces."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 14,
+            "question": 7,
+            "section": "Geometry",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:615b31125a"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use the labelled cuboid to answer the questions.",
+          "figure": {
+            "svg": "fig:f6b9c11d27"
+          },
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-g-q8a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which edge intersects edge AB?",
+              "options": [
+                "DA",
+                "EH",
+                "FG",
+                "CG"
+              ],
+              "answer": 0,
+              "hint": "Intersecting edges share an endpoint with AB.",
+              "steps": [
+                {
+                  "explain": "Edge AB has endpoints A and B."
+                },
+                {
+                  "explain": "Edge DA shares endpoint A with AB, so the edges intersect at A."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 14,
+                "question": 8,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:f6b9c11d27"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-g-q8b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which edge is skew to edge AB?",
+              "options": [
+                "DH",
+                "CD",
+                "EF",
+                "BC"
+              ],
+              "answer": 0,
+              "hint": "Skew edges do not intersect, are not parallel, and are not in the same plane.",
+              "steps": [
+                {
+                  "explain": "AB is the top back horizontal edge."
+                },
+                {
+                  "explain": "DH is a vertical/depth edge that neither meets AB nor runs parallel to it, and it lies in a different plane."
+                },
+                {
+                  "explain": "Thus DH is skew to AB."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 14,
+                "question": 8,
+                "section": "Geometry",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:f6b9c11d27"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 14,
+            "question": 8,
+            "section": "Geometry",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "Edges intersect when they share a vertex. Skew edges neither meet nor run parallel and are not coplanar.",
+          "steps": [
+            {
+              "explain": "AB meets DA at A."
+            },
+            {
+              "explain": "DH does not meet AB, is not parallel to AB, and lies in another plane, so DH is skew to AB."
+            }
+          ]
         }
       ]
     }

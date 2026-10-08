@@ -2369,6 +2369,74 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the rule \\(y=15-4x\\). Find y when x=3.",
+          "options": [
+            "27",
+            "12",
+            "−3",
+            "3"
+          ],
+          "answer": 3,
+          "hint": "Substitute 3 for every x, then follow the order of operations.",
+          "steps": [
+            {
+              "explain": "\\(y=15-4(3)=15-12=3\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 9,
+            "question": 2,
+            "section": "Algebra",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((5n+1)/(10-n)\\) when n=7.",
+          "options": [
+            "6",
+            "12",
+            "−12",
+            "36"
+          ],
+          "answer": 1,
+          "hint": "Substitute 7, then evaluate the numerator and denominator.",
+          "steps": [
+            {
+              "explain": "Numerator: \\(5(7)+1=36\\)."
+            },
+            {
+              "explain": "Denominator: \\(10-7=3\\)."
+            },
+            {
+              "explain": "\\(36\\div3=12\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 9,
+            "question": 4,
+            "section": "Algebra",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2613,6 +2681,144 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-c-q7",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Graph the set \\(\\{-2,1,5\\}\\) on the number line.",
+          "answer": "Sample answer: Mark solid points at −2, 1 and 5 on the number line.",
+          "manual": true,
+          "hint": "Place each value on the scale and use a solid point because each number is included.",
+          "steps": [
+            {
+              "explain": "Find −2, 1 and 5 on the labelled number line."
+            },
+            {
+              "explain": "Mark one solid point at each value."
+            },
+            {
+              "explain": "The completed number line is shown.",
+              "figure": {
+                "svg": "fig:fd6ca7a6e7"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 8,
+            "question": 7,
+            "section": "Calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:2f83b5b08d"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-c-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use the Cartesian grid to answer the questions.",
+          "figure": {
+            "svg": "fig:04fed7514a"
+          },
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-c-q8a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What are the coordinates of point B?",
+              "options": [
+                "\\((−6,0)\\)",
+                "\\((0,−6)\\)",
+                "\\((−6,−1)\\)",
+                "\\((6,0)\\)"
+              ],
+              "answer": 0,
+              "hint": "Read the horizontal coordinate first, then the vertical coordinate.",
+              "steps": [
+                {
+                  "explain": "Point B lies 6 units left of the vertical axis and on the horizontal axis."
+                },
+                {
+                  "explain": "\\(B=(-6,0)\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 8,
+                "question": 8,
+                "section": "Calculator Number",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:04fed7514a"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-c-q8b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What are the coordinates of the intersection of the x-axis and y-axis?",
+              "options": [
+                "\\((1,1)\\)",
+                "\\((0,1)\\)",
+                "\\((0,0)\\)",
+                "\\((−1,0)\\)"
+              ],
+              "answer": 2,
+              "hint": "The axes meet at the origin.",
+              "steps": [
+                {
+                  "explain": "At the origin both coordinates are zero: \\((0,0)\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 8,
+                "question": 8,
+                "section": "Calculator Number",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 8,
+            "question": 8,
+            "section": "Calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "Read the horizontal coordinate first and the vertical coordinate second.",
+          "steps": [
+            {
+              "explain": "Point B is six units left of the y-axis and lies on the x-axis, so B=(−6,0)."
+            },
+            {
+              "explain": "The axes intersect at the origin (0,0)."
+            }
+          ]
         }
       ]
     },

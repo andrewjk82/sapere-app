@@ -28708,6 +28708,40 @@
               "note": "Work out the bracket first to get a round number, then multiply."
             }
           ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Estimate \\(38,346-16,097\\) by using the leading figures, as in the answer key.",
+          "options": [
+            "10,000",
+            "20,000",
+            "22,249",
+            "30,000"
+          ],
+          "answer": 0,
+          "hint": "Keep the leading ten-thousands figures as the source method does.",
+          "steps": [
+            {
+              "explain": "The source working estimates \\(38,346\\approx30,000\\) and \\(16,097\\approx20,000\\) using its leading-figure truncation."
+            },
+            {
+              "explain": "\\(30,000-20,000=10,000\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 8,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -33093,6 +33127,151 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write “six million and ninety thousand” as a numeral.",
+          "options": [
+            "6,900,000",
+            "6,000,090",
+            "6,090,000",
+            "690,000"
+          ],
+          "answer": 2,
+          "hint": "Write the millions first, then place 90 in the thousands group.",
+          "steps": [
+            {
+              "explain": "Six million is 6,000,000."
+            },
+            {
+              "explain": "Ninety thousand is 90,000."
+            },
+            {
+              "explain": "\\(6,000,000+90,000=6,090,000\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 1,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "keyPoints": [
+            {
+              "text": "six million and ninety thousand",
+              "note": "The word “thousand” fixes the final three-place group."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the value of the digit 9 in 29,010?",
+          "options": [
+            "9,000",
+            "90",
+            "900",
+            "90,000"
+          ],
+          "answer": 0,
+          "hint": "The 9 is in the thousands place.",
+          "steps": [
+            {
+              "explain": "In 29,010, the places are ten-thousands, thousands, hundreds, tens, ones."
+            },
+            {
+              "explain": "\\(9\\) represents \\(9\\times1,000=9,000\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 2,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is the expanded notation for 1,024?",
+          "options": [
+            "1,000+2+4",
+            "1×100+2×10+4",
+            "1×1,000+0×100+2×10+4",
+            "1×1,000+2×100+4"
+          ],
+          "answer": 2,
+          "hint": "Break the number into thousands, hundreds, tens and ones.",
+          "steps": [
+            {
+              "explain": "\\(1,024=1,000+0+20+4\\)."
+            },
+            {
+              "explain": "\\(=1\\times1,000+0\\times100+2\\times10+4\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 3,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(3\\times10^2\\) as an ordinary numeral.",
+          "options": [
+            "3,000",
+            "30",
+            "300",
+            "302"
+          ],
+          "answer": 2,
+          "hint": "Evaluate \\(10^2\\) before multiplying by 3.",
+          "steps": [
+            {
+              "explain": "\\(10^2=100\\)."
+            },
+            {
+              "explain": "\\(3\\times100=300\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 6,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -37939,6 +38118,71 @@
               "note": "Multiply the units digit first, carry, then the tens — or split into tens and units."
             }
           ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the product of 12 and 13.",
+          "options": [
+            "146",
+            "156",
+            "1560",
+            "25"
+          ],
+          "answer": 1,
+          "hint": "Use \\(12\\times(10+3)\\).",
+          "steps": [
+            {
+              "explain": "\\(12\\times13=12\\times10+12\\times3=120+36=156\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 4,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-c-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five full buses each carry 100 people, including the driver. How many spectators are on the buses altogether?",
+          "options": [
+            "505",
+            "500",
+            "495",
+            "95"
+          ],
+          "answer": 2,
+          "hint": "Subtract one driver from each bus before counting spectators.",
+          "steps": [
+            {
+              "explain": "Each bus carries \\(100-1=99\\) spectators."
+            },
+            {
+              "explain": "\\(5\\times99=495\\) spectators."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 7,
+            "question": 2,
+            "section": "Calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -55336,6 +55580,77 @@
               "note": "Work out the brackets first."
             }
           ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(29+9\\times2\\).",
+          "options": [
+            "76",
+            "47",
+            "38",
+            "40"
+          ],
+          "answer": 1,
+          "hint": "Multiply before adding.",
+          "steps": [
+            {
+              "explain": "\\(9\\times2=18\\)."
+            },
+            {
+              "explain": "\\(29+18=47\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 2,
+            "question": 9,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Show working to evaluate \\(11-(8-3)\\times2+25\\div5\\).",
+          "options": [
+            "16",
+            "−4",
+            "8",
+            "6"
+          ],
+          "answer": 3,
+          "hint": "Evaluate the brackets, then multiplication and division, then add and subtract left to right.",
+          "steps": [
+            {
+              "explain": "\\(8-3=5\\)."
+            },
+            {
+              "explain": "\\(5\\times2=10\\) and \\(25\\div5=5\\)."
+            },
+            {
+              "explain": "\\(11-10+5=1+5=6\\)."
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 3,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 4,
+            "question": 18,
+            "section": "Non-calculator Number",
+            "marks": 3,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -59745,6 +60060,43 @@
             "examPaper": "y7-practice-1"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Match each symbol to its meaning. Choose the row with both correct meanings.",
+          "options": [
+            "∴ means “because”; ≥ means “less than”",
+            "∴ means “therefore”; ≥ means “greater than”",
+            "∴ means “therefore”; ≥ means “greater than or equal to”",
+            "∴ means “approximately”; ≥ means “equal to”"
+          ],
+          "answer": 2,
+          "hint": "Check the two symbols separately, then select the row containing both definitions.",
+          "steps": [
+            {
+              "explain": "The symbol \\(\\therefore\\) means “therefore”."
+            },
+            {
+              "explain": "The symbol \\(\\geq\\) means “greater than or equal to”."
+            },
+            {
+              "explain": "Only the first row matches both."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 3,
+            "question": 15,
+            "section": "Non-calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     }

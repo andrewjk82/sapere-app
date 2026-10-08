@@ -1261,6 +1261,40 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(a+213=312\\).",
+          "options": [
+            "525",
+            "99",
+            "−99",
+            "109"
+          ],
+          "answer": 1,
+          "hint": "Subtract 213 from both sides.",
+          "steps": [
+            {
+              "explain": "\\(a=312-213=99\\)."
+            },
+            {
+              "explain": "Check: \\(99+213=312\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 10,
+            "question": 9,
+            "section": "Algebra",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2333,6 +2367,109 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A number is divided by 5 and then 3 is added. The result is 7.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-a-q10a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Let x be the number. Which equation represents the statement?",
+              "options": [
+                "\\((x+3)/5=7\\)",
+                "\\(5x+3=7\\)",
+                "\\(x/5+3=7\\)",
+                "\\(x/3+5=7\\)"
+              ],
+              "answer": 2,
+              "hint": "Translate the operations in the order they happen.",
+              "steps": [
+                {
+                  "explain": "First divide x by 5: \\(x/5\\)."
+                },
+                {
+                  "explain": "Then add 3 and get 7: \\(x/5+3=7\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 10,
+                "question": 10,
+                "section": "Algebra",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-a-q10b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve the equation to find the number.",
+              "options": [
+                "2",
+                "20",
+                "50",
+                "10"
+              ],
+              "answer": 1,
+              "hint": "Undo the +3 first, then undo division by 5.",
+              "steps": [
+                {
+                  "explain": "\\(x/5+3=7\\)."
+                },
+                {
+                  "explain": "Subtract 3: \\(x/5=4\\)."
+                },
+                {
+                  "explain": "Multiply by 5: \\(x=20\\)."
+                },
+                {
+                  "explain": "Check: \\(20/5+3=7\\)."
+                }
+              ],
+              "timeLimit": 120,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 10,
+                "question": 10,
+                "section": "Algebra",
+                "marks": 2,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 3,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 10,
+            "question": 3,
+            "section": "Algebra",
+            "marks": 3,
+            "origin": "teacher"
+          },
+          "hint": "Translate the operations in the order stated, then undo them in reverse order.",
+          "steps": [
+            {
+              "explain": "Write x/5+3=7."
+            },
+            {
+              "explain": "Subtract 3 to get x/5=4, then multiply by 5 to get x=20."
+            }
+          ]
         }
       ]
     }

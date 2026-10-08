@@ -2657,6 +2657,111 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 20% as a fraction in simplest form.",
+          "options": [
+            "\\(1/5\\)",
+            "\\(1/20\\)",
+            "\\(2/5\\)",
+            "\\(20/1\\)"
+          ],
+          "answer": 0,
+          "hint": "Percent means “out of 100”.",
+          "steps": [
+            {
+              "explain": "\\(20\\%=20/100\\)."
+            },
+            {
+              "explain": "Divide numerator and denominator by 20: \\(20/100=1/5\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 3,
+            "question": 12,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 3.15 as a percentage.",
+          "options": [
+            "315%",
+            "31.5%",
+            "3.15%",
+            "0.315%"
+          ],
+          "answer": 0,
+          "hint": "Multiply a decimal by 100 to convert it to a percentage.",
+          "steps": [
+            {
+              "explain": "\\(3.15\\times100=315\\)."
+            },
+            {
+              "explain": "Therefore \\(3.15=315\\%\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 3,
+            "question": 13,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-n-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(1\\frac34\\) as a percentage.",
+          "options": [
+            "43.75%",
+            "175%",
+            "75%",
+            "1.75%"
+          ],
+          "answer": 1,
+          "hint": "First convert the mixed number to a decimal or improper fraction.",
+          "steps": [
+            {
+              "explain": "\\(1"
+            },
+            {
+              "explain": "rac34=7/4=1.75\\)."
+            },
+            {
+              "explain": "\\(1.75\\times100\\%=175\\%\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 3,
+            "question": 14,
+            "section": "Non-calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },

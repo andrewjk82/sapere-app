@@ -2715,6 +2715,189 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Read the volume shown on the graduated jug.",
+          "options": [
+            "1.2 L",
+            "1.25 L",
+            "1.5 L",
+            "0.75 L"
+          ],
+          "answer": 1,
+          "hint": "The liquid level is halfway between 1.0 L and 1.5 L.",
+          "steps": [
+            {
+              "explain": "The interval from 1.0 L to 1.5 L is 0.5 L."
+            },
+            {
+              "explain": "Half of 0.5 L is 0.25 L."
+            },
+            {
+              "explain": "\\(1.0+0.25=1.25\\text{ L}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 11,
+            "question": 1,
+            "section": "Measurement",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:cf85528e43"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q2",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Read the odometer and speedometer.",
+          "figure": {
+            "svg": "fig:3db4b4c59a"
+          },
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-m-q2a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What distance is shown on the odometer?",
+              "options": [
+                "81,576 km",
+                "81,057.6 km",
+                "8,105.76 km",
+                "81,057 km"
+              ],
+              "answer": 1,
+              "hint": "Read all digits, including the tenths digit.",
+              "steps": [
+                {
+                  "explain": "The odometer display reads 081057.6."
+                },
+                {
+                  "explain": "The leading zero does not change the value: \\(81,057.6\\text{ km}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 11,
+                "question": 2,
+                "section": "Measurement",
+                "marks": 1,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:3db4b4c59a"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-m-q2b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What speed does the needle indicate?",
+              "options": [
+                "60 km/h",
+                "30 km/h",
+                "45 km/h",
+                "90 km/h"
+              ],
+              "answer": 1,
+              "hint": "Read the scale value at the needle tip.",
+              "steps": [
+                {
+                  "explain": "The needle points to the 30 mark, so the speed is \\(30\\text{ km/h}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 11,
+                "question": 2,
+                "section": "Measurement",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 11,
+            "question": 2,
+            "section": "Measurement",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "Read the odometer’s final digit as tenths of a kilometre, then read the needle on the speed scale.",
+          "steps": [
+            {
+              "explain": "The display is 081057.6, so the distance is 81,057.6 km."
+            },
+            {
+              "explain": "The needle points to 30 km/h."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Measure the marked obtuse angle to the nearest degree.",
+          "options": [
+            "45°",
+            "125°",
+            "135°",
+            "145°"
+          ],
+          "answer": 2,
+          "hint": "Place the protractor centre at the vertex and align its baseline with one ray.",
+          "steps": [
+            {
+              "explain": "First align the 0° line of the protractor with the horizontal ray pointing right."
+            },
+            {
+              "explain": "The sloping ray crosses the scale at about 135°."
+            },
+            {
+              "explain": "To the nearest degree, record 135°.",
+              "figure": {
+                "svg": "fig:6f55148910"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 11,
+            "question": 3,
+            "section": "Measurement",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:0b2b9b9c9e"
+          }
         }
       ]
     },
@@ -2924,6 +3107,128 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q4",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Convert each measurement to the requested unit.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-m-q4a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Convert 1½ m to centimetres.",
+              "options": [
+                "15 cm",
+                "150 cm",
+                "1,500 cm",
+                "105 cm"
+              ],
+              "answer": 1,
+              "hint": "There are 100 centimetres in 1 metre.",
+              "steps": [
+                {
+                  "explain": "\\(1.5\\times100=150\\), so \\(1"
+                },
+                {
+                  "explain": "rac12\\text{ m}=150\\text{ cm}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 12,
+                "question": 4,
+                "section": "Measurement",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-m-q4b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Convert 9,400 kg to tonnes.",
+              "options": [
+                "94 t",
+                "0.94 t",
+                "9.4 t",
+                "940 t"
+              ],
+              "answer": 2,
+              "hint": "There are 1,000 kilograms in one tonne.",
+              "steps": [
+                {
+                  "explain": "\\(9,400\\div1,000=9.4\\text{ t}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 12,
+                "question": 4,
+                "section": "Measurement",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-m-q4c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Convert 1.25 m to kilometres.",
+              "options": [
+                "0.0125 km",
+                "1,250 km",
+                "0.00125 km",
+                "0.125 km"
+              ],
+              "answer": 2,
+              "hint": "There are 1,000 metres in one kilometre.",
+              "steps": [
+                {
+                  "explain": "\\(1.25\\div1,000=0.00125\\text{ km}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 12,
+                "question": 4,
+                "section": "Measurement",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 3,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 12,
+            "question": 4,
+            "section": "Measurement",
+            "marks": 3,
+            "origin": "teacher"
+          },
+          "hint": "Use 100 cm=1 m, 1,000 kg=1 t, and 1,000 m=1 km.",
+          "steps": [
+            {
+              "explain": "5×100=150 cm; 9,400÷1,000=9.4 t; 1.25÷1,000=0.00125 km."
+            }
+          ]
         }
       ]
     },
@@ -3074,6 +3379,103 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-c-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A tin of paint covers 100 m². A wall area of 460 m² must be painted.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-c-q4a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How many full tins must be bought?",
+              "options": [
+                "4",
+                "4.6",
+                "6",
+                "5"
+              ],
+              "answer": 3,
+              "hint": "You need enough whole tins to cover all 460 m².",
+              "steps": [
+                {
+                  "explain": "\\(460\\div100=4.6\\)."
+                },
+                {
+                  "explain": "Four tins cover only 400 m², so round up to 5 full tins."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 7,
+                "question": 4,
+                "section": "Calculator Number",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-c-q4b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Each tin costs $27.55. What is the total cost?",
+              "options": [
+                "$110.20",
+                "$126.50",
+                "$137.75",
+                "$165.30"
+              ],
+              "answer": 2,
+              "hint": "Use the whole number of tins found in part (a).",
+              "steps": [
+                {
+                  "explain": "Buy 5 tins."
+                },
+                {
+                  "explain": "\\(5\\times\\$27.55=\\$137.75\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 7,
+                "question": 4,
+                "section": "Calculator Number",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 7,
+            "question": 4,
+            "section": "Calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "First calculate how many whole tins are needed, then multiply that number by the price per tin.",
+          "steps": [
+            {
+              "explain": "For 460 m², divide by 100 m² per tin and round up to a whole tin."
+            },
+            {
+              "explain": "Then multiply the number of tins by $27.55."
+            }
+          ]
         }
       ]
     },
@@ -3368,6 +3770,104 @@
             "\\(8\\text{ cm}\\) by \\(22\\text{ cm}\\)"
           ],
           "answer": 0
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A parallelogram has opposite sides marked equal. Its top and bottom sides are each 3x cm, and its other sides are each x cm. The perimeter is 96 cm. Find x.",
+          "options": [
+            "12 cm",
+            "8 cm",
+            "24 cm",
+            "6 cm"
+          ],
+          "answer": 0,
+          "hint": "Add all four side lengths and set the perimeter equal to 96.",
+          "steps": [
+            {
+              "explain": "\\(3x+x+3x+x=8x\\)."
+            },
+            {
+              "explain": "\\(8x=96\\), so \\(x=96\\div8=12\\text{ cm}\\)."
+            },
+            {
+              "explain": "The side lengths are 36, 12, 36 and 12 cm, totaling 96 cm.",
+              "figure": {
+                "svg": "fig:a2389a7595"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 10,
+            "question": 11,
+            "section": "Algebra",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:09c3bc1dfb"
+          },
+          "keyPoints": [
+            {
+              "text": "perimeter is 96 cm",
+              "note": "Include all four sides; the opposite long sides are each 3x and the other two each x."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the perimeter of the rectilinear shape. All lengths are in centimetres. The top is 10, the left side is 4, the lower-left horizontal side is 3, the inner top horizontal side is 3, and the inner vertical side is 2.",
+          "options": [
+            "30 cm",
+            "32 cm",
+            "34 cm",
+            "28 cm"
+          ],
+          "answer": 1,
+          "hint": "Find the two unlabelled horizontal and vertical lengths by matching total widths and heights.",
+          "steps": [
+            {
+              "explain": "The total width is 10+3+3+4=20 cm (the missing lower-right horizontal length is \\(10-3-3=4\\))."
+            },
+            {
+              "explain": "The total vertical length is \\(4+2+2+4=12\\) cm, since the missing vertical lengths complete the same overall height."
+            },
+            {
+              "explain": "\\(P=20+12=32\\text{ cm}\\).",
+              "figure": {
+                "svg": "fig:f49a067c58"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 12,
+            "question": 5,
+            "section": "Measurement",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "fig:1fccb1d729"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the perimeter",
+              "note": "Use the fact that the total left-to-right and top-to-bottom changes around the closed shape must balance."
+            }
+          ]
         }
       ]
     },
@@ -3943,6 +4443,105 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A journey starts at 10:20 pm on 15 February 2013 and lasts 7 hours 45 minutes. When does it finish?",
+          "options": [
+            "6:05 am on 16 February",
+            "5:55 am on 16 February",
+            "6:05 am on 15 February",
+            "6:45 am on 16 February"
+          ],
+          "answer": 0,
+          "hint": "Count to midnight, then add the remaining travel time.",
+          "steps": [
+            {
+              "explain": "From 10:20 pm to midnight is 1 h 40 min."
+            },
+            {
+              "explain": "\\(7\\text{ h }45\\text{ min}-1\\text{ h }40\\text{ min}=6\\text{ h }05\\text{ min}\\)."
+            },
+            {
+              "explain": "It finishes at 6:05 am on 16 February."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 12,
+            "question": 6,
+            "section": "Measurement",
+            "marks": 2,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "When it is 1:30 pm in New South Wales (EST), what time is it in South Australia, which is 30 minutes behind?",
+          "options": [
+            "1:00 pm",
+            "2:00 pm",
+            "12:30 pm",
+            "1:30 pm"
+          ],
+          "answer": 0,
+          "hint": "Subtract the 30-minute difference from the NSW time.",
+          "steps": [
+            {
+              "explain": "\\(1{:}30\\text{ pm}-30\\text{ min}=1{:}00\\text{ pm}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 12,
+            "question": 7,
+            "section": "Measurement",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-m-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write 1:20 pm using the 24-hour clock.",
+          "options": [
+            "01:20",
+            "13:20",
+            "12:20",
+            "14:20"
+          ],
+          "answer": 1,
+          "hint": "For a pm time after 12 noon, add 12 to the hour.",
+          "steps": [
+            {
+              "explain": "\\(1+12=13\\), so 1:20 pm is \\(13{:}20\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 12,
+            "question": 8,
+            "section": "Measurement",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     }

@@ -5325,6 +5325,140 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Simplify each expression.",
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-a-q5a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(6p-3q-2p+q\\).",
+              "options": [
+                "\\(4p-2q\\)",
+                "\\(4p-4q\\)",
+                "\\(8p-2q\\)",
+                "\\(4pq\\)"
+              ],
+              "answer": 0,
+              "hint": "Collect p-terms together and q-terms together.",
+              "steps": [
+                {
+                  "explain": "\\(6p-2p=4p\\), and \\(-3q+q=-2q\\)."
+                },
+                {
+                  "explain": "Therefore \\(4p-2q\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 9,
+                "question": 5,
+                "section": "Algebra",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-a-q5b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Simplify \\(2a^2b+ab-a^2b\\).",
+              "options": [
+                "\\(a^2b\\)",
+                "\\(3a^2b+ab\\)",
+                "\\(a^2b+ab\\)",
+                "\\(ab\\)"
+              ],
+              "answer": 2,
+              "hint": "Only the first and third terms are like terms.",
+              "steps": [
+                {
+                  "explain": "\\(2a^2b-a^2b=a^2b\\)."
+                },
+                {
+                  "explain": "The unlike term \\(ab\\) stays separate."
+                },
+                {
+                  "explain": "Result: \\(a^2b+ab\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 9,
+                "question": 5,
+                "section": "Algebra",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 9,
+            "question": 5,
+            "section": "Algebra",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "hint": "Combine terms only when they have the same variables with the same powers.",
+          "steps": [
+            {
+              "explain": "For (a), 6p−2p=4p and −3q+q=−2q."
+            },
+            {
+              "explain": "For (b), 2a²b−a²b=a²b; the unlike term ab remains."
+            }
+          ]
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\((6x\\div -2)+3x+4\\).",
+          "options": [
+            "\\(6x+4\\)",
+            "\\(-6x+4\\)",
+            "\\(4\\)",
+            "\\(4x+4\\)"
+          ],
+          "answer": 2,
+          "hint": "Do the division first, then combine the x-terms.",
+          "steps": [
+            {
+              "explain": "\\(6x\\div(-2)=-3x\\)."
+            },
+            {
+              "explain": "\\(-3x+3x+4=4\\)."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 10,
+            "question": 8,
+            "section": "Algebra",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6822,6 +6956,40 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\(4(1-2a)+3a\\).",
+          "options": [
+            "\\(4-11a\\)",
+            "\\(4-8a\\)",
+            "\\(4-5a\\)",
+            "\\(7-8a\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 4 by both terms inside the brackets, then collect a-terms.",
+          "steps": [
+            {
+              "explain": "\\(4(1-2a)=4-8a\\)."
+            },
+            {
+              "explain": "Then \\(4-8a+3a=4-5a\\)."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 10,
+            "question": 6,
+            "section": "Algebra",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -9426,6 +9594,174 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The pattern starts 2, 6, 18, ... Each term is 3 times the previous term. What is the next term?",
+          "options": [
+            "36",
+            "21",
+            "54",
+            "48"
+          ],
+          "answer": 2,
+          "hint": "Multiply the last term by 3.",
+          "steps": [
+            {
+              "explain": "\\(18\\times3=54\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 9,
+            "question": 1,
+            "section": "Algebra",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y7-2013-t3-a-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows a growing pattern made from joined matchstick squares. Let s be the number of squares and m the number of matches.",
+          "figure": {
+            "svg": "fig:c21d66999d"
+          },
+          "parts": [
+            {
+              "id": "wghs-y7-2013-t3-a-q3a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Complete the match counts for 1, 2 and 3 joined squares.",
+              "options": [
+                "4, 8, 12",
+                "4, 7, 10",
+                "3, 6, 9",
+                "4, 7, 11"
+              ],
+              "answer": 1,
+              "hint": "The first square uses 4 matches; each new square shares one side.",
+              "steps": [
+                {
+                  "explain": "1 square: 4 matches."
+                },
+                {
+                  "explain": "Each additional square adds 3 matches."
+                },
+                {
+                  "explain": "\\(s=1:4,\\quad s=2:4+3=7,\\quad s=3:7+3=10\\)."
+                }
+              ],
+              "timeLimit": 120,
+              "xp": 2,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 9,
+                "question": 3,
+                "section": "Algebra",
+                "marks": 2,
+                "origin": "teacher"
+              },
+              "figure": {
+                "svg": "fig:c21d66999d"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-a-q3b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which rule gives the number of matches m for s joined squares?",
+              "options": [
+                "\\(m=4s\\)",
+                "\\(m=s+3\\)",
+                "\\(m=3s+4\\)",
+                "\\(m=3s+1\\)"
+              ],
+              "answer": 3,
+              "hint": "Start with 4 matches and add 3 for each square after the first.",
+              "steps": [
+                {
+                  "explain": "\\(m=4+3(s-1)=4+3s-3=3s+1\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 9,
+                "question": 3,
+                "section": "Algebra",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            },
+            {
+              "id": "wghs-y7-2013-t3-a-q3c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "How many matches are needed for 25 joined squares?",
+              "options": [
+                "75",
+                "100",
+                "76",
+                "79"
+              ],
+              "answer": 2,
+              "hint": "Substitute 25 into the rule you found.",
+              "steps": [
+                {
+                  "explain": "\\(m=3s+1\\)."
+                },
+                {
+                  "explain": "For \\(s=25\\), \\(m=3(25)+1=75+1=76\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+                "school": "Willoughby Girls High School",
+                "year": 2013,
+                "page": 9,
+                "question": 3,
+                "section": "Algebra",
+                "marks": 1,
+                "origin": "teacher"
+              }
+            }
+          ],
+          "timeLimit": 300,
+          "xp": 4,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 9,
+            "question": 3,
+            "section": "Algebra",
+            "marks": 4,
+            "origin": "teacher"
+          },
+          "hint": "Count how many matches a new square adds when it shares a side with the previous square.",
+          "steps": [
+            {
+              "explain": "The counts begin 4, 7, 10."
+            },
+            {
+              "explain": "Each new square adds 3 matches, giving m=3s+1; for 25 squares, m=3(25)+1=76."
+            }
+          ]
         }
       ]
     },

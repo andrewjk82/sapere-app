@@ -775,6 +775,37 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs-y7-2013-t3-g-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the name of the line that divides a shape into two matching mirror halves?",
+          "options": [
+            "Axis of symmetry",
+            "Line of rotation",
+            "Diagonal",
+            "Perimeter"
+          ],
+          "answer": 0,
+          "hint": "A reflection line maps one half of the shape onto the other.",
+          "steps": [
+            {
+              "explain": "The line that divides a shape into matching mirror halves is its axis of symmetry."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 14,
+            "question": 6,
+            "section": "Geometry",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },

@@ -4628,6 +4628,46 @@
           ],
           "timeLimit": 60,
           "xp": 1
+        },
+        {
+          "id": "wghs-y7-2013-t3-c-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "At 6 am the temperature was −4°C. It rose by 6°C by noon, then fell by 11°C. What was the final temperature?",
+          "options": [
+            "−9°C",
+            "−21°C",
+            "3°C",
+            "9°C"
+          ],
+          "answer": 0,
+          "hint": "Represent each rise or fall as adding a signed number.",
+          "steps": [
+            {
+              "explain": "Start at \\(-4\\)."
+            },
+            {
+              "explain": "Rise 6: \\(-4+6=2\\)."
+            },
+            {
+              "explain": "Fall 11: \\(2-11=-9\\)."
+            },
+            {
+              "explain": "Final temperature: \\(-9^\\circ\\text{C}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
+            "school": "Willoughby Girls High School",
+            "year": 2013,
+            "page": 7,
+            "question": 5,
+            "section": "Calculator Number",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
