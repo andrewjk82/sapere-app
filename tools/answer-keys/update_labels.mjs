@@ -22,11 +22,13 @@ const fresh = JSON.parse(readFileSync(file, 'utf8'));
 const num = (l) => parseInt(String(l), 10);
 const base = (labels) => [...new Set(labels.map(num))].sort((a, b) => a - b).join(',');
 
-const refs = await db.collection('answer_keys').listDocuments();
-const ids = refs.map((r) => r.id).sort();
+// Read only this book's docs (a `where` query costs one read per match); listing + getAll of the whole collection cost ~1,000 reads per run (2026-10-08 spike)
+const bookDocs = await db.collection('answer_keys').where('book', '==', book).get();
+const ids = bookDocs.docs.map((r) => r.id).sort();
+const preloaded = new Map(bookDocs.docs.map((r) => [r.id, r]));
 let docs = 0, sectionsChanged = 0, skipped = [], unchanged = 0;
 for (let i = 0; i < ids.length; i += 10) {
-  const snaps = await db.getAll(...ids.slice(i, i + 10).map((id) => db.collection('answer_keys').doc(id)));
+  const snaps = ids.slice(i, i + 10).map((id) => preloaded.get(id));
   for (const snap of snaps) {
     const d = snap.data();
     if (d.book !== book) continue;
