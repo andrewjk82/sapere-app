@@ -309,6 +309,661 @@
             "grade": "7"
           },
           "xp": 1
+        },
+        {
+          "id": "y7-killara-23-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which percentage best represents an event that is likely?",
+          "options": [
+            "\\(75\\%\\)",
+            "\\(0\\%\\)",
+            "\\(33\\%\\)",
+            "\\(100\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "A likely event has a probability greater than one half but less than certain.",
+          "steps": [
+            {
+              "explain": "A probability of \\(0\\%\\) is impossible, while \\(100\\%\\) is certain."
+            },
+            {
+              "explain": "A likely event should be closer to certain than to impossible. Among the choices, \\(75\\%\\) best fits."
+            },
+            {
+              "explain": "The best choice is \\(75\\%\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 10,
+            "section": "Fundamentals — Probability",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bag contains 15 jellybeans, and 4 are red. What is the probability of choosing a red jellybean?",
+          "options": [
+            "\\(\\frac{11}{15}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{4}{19}\\)",
+            "\\(\\frac{4}{15}\\)"
+          ],
+          "answer": 3,
+          "hint": "Probability is the number of favourable outcomes divided by the total number of outcomes.",
+          "steps": [
+            {
+              "explain": "There are 4 favourable outcomes: the 4 red jellybeans."
+            },
+            {
+              "explain": "There are 15 jellybeans altogether.",
+              "work": "\\(P(\\text{red})=\\frac{\\text{red}}{\\text{total}}=\\frac{4}{15}\\)"
+            },
+            {
+              "explain": "So the probability is \\(\\frac{4}{15}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 11,
+            "section": "Fundamentals — Probability",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A standard six-sided die is rolled. What is its sample space?",
+          "options": [
+            "\\(\\{0,1,2,3,4,5,6\\}\\)",
+            "\\(\\{1,2,3,4,5\\}\\)",
+            "\\(\\{1,2,3,4,5,6\\}\\)",
+            "\\(\\{2,4,6\\}\\)"
+          ],
+          "answer": 2,
+          "hint": "List every number that can appear on the six faces, and no other numbers.",
+          "steps": [
+            {
+              "explain": "A standard six-sided die has faces numbered 1 through 6."
+            },
+            {
+              "explain": "The sample space contains every possible outcome once.",
+              "work": "\\(S=\\{1,2,3,4,5,6\\}\\)"
+            },
+            {
+              "explain": "Therefore, the sample space is \\(\\{1,2,3,4,5,6\\}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 12,
+            "section": "Fundamentals — Probability",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Cards numbered 1 to 10 are placed in a bag and one is selected at random. Find each probability.",
+          "parts": [
+            {
+              "id": "y7-killara-23-q13a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "A card is selected from the numbers 1 to 10. What is the probability of selecting a number at least 7?",
+              "options": [
+                "\\(\\frac{3}{10}\\)",
+                "\\(\\frac{2}{5}\\)",
+                "\\(\\frac{7}{10}\\)",
+                "\\(\\frac{1}{2}\\)"
+              ],
+              "answer": 1,
+              "hint": "List the numbers from 7 to 10, then divide their count by 10.",
+              "steps": [
+                {
+                  "explain": "The numbers at least 7 are \\(7,8,9,10\\): 4 favourable cards."
+                },
+                {
+                  "explain": "There are 10 cards in total.",
+                  "work": "\\(P=\\frac{4}{10}=\\frac{2}{5}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{2}{5}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 4,
+                "question": 13,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-q13b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the probability of selecting an even number?",
+              "options": [
+                "\\(\\frac{1}{2}\\)",
+                "\\(\\frac{2}{5}\\)",
+                "\\(\\frac{3}{10}\\)",
+                "\\(\\frac{4}{5}\\)"
+              ],
+              "answer": 0,
+              "hint": "Count the even numbers from 1 to 10.",
+              "steps": [
+                {
+                  "explain": "The even numbers are \\(2,4,6,8,10\\), so there are 5 favourable cards."
+                },
+                {
+                  "explain": "Divide by the 10 possible cards.",
+                  "work": "\\(P=\\frac{5}{10}=\\frac{1}{2}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{1}{2}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 4,
+                "question": 13,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "b"
+              }
+            },
+            {
+              "id": "y7-killara-23-q13c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the probability of selecting a number that is both even and square?",
+              "options": [
+                "\\(\\frac{1}{5}\\)",
+                "\\(\\frac{1}{2}\\)",
+                "\\(\\frac{2}{5}\\)",
+                "\\(\\frac{1}{10}\\)"
+              ],
+              "answer": 3,
+              "hint": "Find the square numbers from 1 to 10, then identify which one is even.",
+              "steps": [
+                {
+                  "explain": "The square numbers from 1 to 10 are \\(1,4,9\\)."
+                },
+                {
+                  "explain": "Only \\(4\\) is both square and even, so there is 1 favourable card out of 10.",
+                  "work": "\\(P=\\frac{1}{10}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{1}{10}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 4,
+                "question": 13,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "c"
+              }
+            },
+            {
+              "id": "y7-killara-23-q13d",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "What is the probability of selecting an even number or a square number (or both)?",
+              "options": [
+                "\\(\\frac{3}{5}\\)",
+                "\\(\\frac{4}{5}\\)",
+                "\\(\\frac{7}{10}\\)",
+                "\\(\\frac{1}{2}\\)"
+              ],
+              "answer": 2,
+              "hint": "For “or”, count the union once; the number 4 belongs to both groups.",
+              "steps": [
+                {
+                  "explain": "Even numbers: \\(2,4,6,8,10\\) (5 numbers). Square numbers: \\(1,4,9\\) (3 numbers)."
+                },
+                {
+                  "explain": "The overlap is \\(4\\), so subtract it once: \\(5+3-1=7\\) favourable cards."
+                },
+                {
+                  "explain": "There are 10 cards.",
+                  "work": "\\(P=\\frac{7}{10}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{7}{10}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 4,
+                "question": 13,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "d"
+              }
+            }
+          ],
+          "hint": "Use the total of 10 cards as the denominator, and carefully interpret “at least”, “and”, and “or”.",
+          "steps": [],
+          "timeLimit": 240,
+          "xp": 4,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 4,
+            "question": 13,
+            "section": "Routine Processes — Probability",
+            "marks": 4,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"115\" y=\"105\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 115 115 H 185\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"150\" y=\"159\" text-anchor=\"middle\" font-size=\"28\">1</text><rect x=\"207\" y=\"105\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 207 115 H 277\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"242\" y=\"159\" text-anchor=\"middle\" font-size=\"28\">2</text><rect x=\"299\" y=\"105\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 299 115 H 369\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"334\" y=\"159\" text-anchor=\"middle\" font-size=\"28\">3</text><rect x=\"391\" y=\"105\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 391 115 H 461\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"426\" y=\"159\" text-anchor=\"middle\" font-size=\"28\">4</text><rect x=\"483\" y=\"105\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 483 115 H 553\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"518\" y=\"159\" text-anchor=\"middle\" font-size=\"28\">5</text><rect x=\"115\" y=\"205\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 115 215 H 185\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"150\" y=\"259\" text-anchor=\"middle\" font-size=\"28\">6</text><rect x=\"207\" y=\"205\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 207 215 H 277\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"242\" y=\"259\" text-anchor=\"middle\" font-size=\"28\">7</text><rect x=\"299\" y=\"205\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 299 215 H 369\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"334\" y=\"259\" text-anchor=\"middle\" font-size=\"28\">8</text><rect x=\"391\" y=\"205\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 391 215 H 461\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"426\" y=\"259\" text-anchor=\"middle\" font-size=\"28\">9</text><rect x=\"483\" y=\"205\" width=\"70\" height=\"78\" rx=\"6\" fill=\"#fff\" stroke=\"#7042cc\" stroke-width=\"3\"/><path d=\"M 483 215 H 553\" stroke=\"#7042cc\" stroke-width=\"8\"/><text x=\"518\" y=\"259\" text-anchor=\"middle\" font-size=\"28\">10</text><text x=\"152\" y=\"330\">One card is selected at random.</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-q14",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The probability of choosing a white marble from a bag is \\(\\frac{2}{7}\\).",
+          "parts": [
+            {
+              "id": "y7-killara-23-q14a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "The probability of choosing a white marble is \\(\\frac{2}{7}\\). What is the probability of choosing a marble that is not white?",
+              "options": [
+                "\\(\\frac{2}{7}\\)",
+                "\\(\\frac{5}{7}\\)",
+                "\\(\\frac{7}{2}\\)",
+                "\\(\\frac{1}{7}\\)"
+              ],
+              "answer": 1,
+              "hint": "The probabilities of white and not white must add to 1.",
+              "steps": [
+                {
+                  "explain": "Use the complement rule: \\(P(\\text{not white})=1-P(\\text{white})\\)."
+                },
+                {
+                  "explain": "Subtract from 1.",
+                  "work": "\\(1-\\frac{2}{7}=\\frac{7}{7}-\\frac{2}{7}=\\frac{5}{7}\\)"
+                },
+                {
+                  "explain": "The probability of not white is \\(\\frac{5}{7}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 14,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-q14b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The probability of choosing a white marble is \\(\\frac{2}{7}\\). If there are 12 white marbles, how many marbles are in the bag altogether?",
+              "options": [
+                "42",
+                "36",
+                "84",
+                "24"
+              ],
+              "answer": 0,
+              "hint": "The 12 white marbles are 2 of the 7 equal probability parts.",
+              "steps": [
+                {
+                  "explain": "If white marbles are \\(\\frac{2}{7}\\) of the bag, then 12 is \\(2\\) of the (7) equal parts."
+                },
+                {
+                  "explain": "Find one part.",
+                  "work": "\\(12\\div2=6\\)"
+                },
+                {
+                  "explain": "There are 7 parts altogether.",
+                  "work": "\\(7\\times6=42\\)"
+                },
+                {
+                  "explain": "There are 42 marbles in total."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 14,
+                "section": "Routine Processes — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "b"
+              }
+            }
+          ],
+          "hint": "Use the complement for part (a). For part (b), relate the 12 white marbles to 2 of the 7 equal parts.",
+          "steps": [],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 5,
+            "question": 14,
+            "section": "Routine Processes — Probability",
+            "marks": 2,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-q22",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A survey of 140 Year 7 students recorded whether they like chocolate and strawberry ice cream. Use the Venn diagram to find each probability.",
+          "parts": [
+            {
+              "id": "y7-killara-23-q22a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(P(\\text{strawberry})\\).",
+              "options": [
+                "\\(\\frac{77}{140}\\)",
+                "\\(\\frac{20}{140}\\)",
+                "\\(\\frac{57}{140}\\)",
+                "\\(\\frac{92}{140}\\)"
+              ],
+              "answer": 0,
+              "hint": "Add the strawberry-only region and the overlap, then divide by 140.",
+              "steps": [
+                {
+                  "explain": "Students who like strawberry include the 20 who like only strawberry and the 57 who like both.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"100\" y=\"45\" width=\"500\" height=\"310\" fill=\"#fff\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"290\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"425\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><path d=\"M 351 112 C 387 143 387 267 351 298 C 315 267 315 143 351 112 Z\" fill=\"#dceafe\" stroke=\"none\"/><text x=\"205\" y=\"98\">Strawberry</text><text x=\"415\" y=\"98\">Chocolate</text><text x=\"260\" y=\"215\">20</text><text x=\"352\" y=\"215\">57</text><text x=\"472\" y=\"215\">48</text><text x=\"130\" y=\"330\">15 neither</text><text x=\"510\" y=\"330\">Total 140</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add the two regions.",
+                  "work": "\\(20+57=77\\)"
+                },
+                {
+                  "explain": "Divide by all 140 students.",
+                  "work": "\\(P(\\text{strawberry})=\\frac{77}{140}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 12,
+                "question": 22,
+                "section": "Applications — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-q22b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(P(\\text{chocolate but not strawberry})\\).",
+              "options": [
+                "\\(\\frac{105}{140}\\)",
+                "\\(\\frac{57}{140}\\)",
+                "\\(\\frac{63}{140}\\)",
+                "\\(\\frac{48}{140}\\)"
+              ],
+              "answer": 3,
+              "hint": "Use only the chocolate region outside the overlap.",
+              "steps": [
+                {
+                  "explain": "“Chocolate but not strawberry” is the chocolate-only region, which contains 48 students.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"100\" y=\"45\" width=\"500\" height=\"310\" fill=\"#fff\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"290\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"425\" cy=\"205\" r=\"115\" fill=\"#fde68a\" stroke=\"#34445a\" stroke-width=\"3\"/><path d=\"M 351 112 C 387 143 387 267 351 298 C 315 267 315 143 351 112 Z\" fill=\"#dceafe\" stroke=\"none\"/><text x=\"205\" y=\"98\">Strawberry</text><text x=\"415\" y=\"98\">Chocolate</text><text x=\"260\" y=\"215\">20</text><text x=\"352\" y=\"215\">57</text><text x=\"472\" y=\"215\">48</text><text x=\"130\" y=\"330\">15 neither</text><text x=\"510\" y=\"330\">Total 140</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Use the total of 140 students.",
+                  "work": "\\(P=\\frac{48}{140}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{48}{140}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 12,
+                "question": 22,
+                "section": "Applications — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "b"
+              }
+            },
+            {
+              "id": "y7-killara-23-q22c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(P(\\text{neither chocolate nor strawberry})\\).",
+              "options": [
+                "\\(\\frac{20}{140}\\)",
+                "\\(\\frac{125}{140}\\)",
+                "\\(\\frac{15}{140}\\)",
+                "\\(\\frac{77}{140}\\)"
+              ],
+              "answer": 2,
+              "hint": "Use the count outside both circles and divide by the total.",
+              "steps": [
+                {
+                  "explain": "The region outside both circles has 15 students.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"100\" y=\"45\" width=\"500\" height=\"310\" fill=\"#fff\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"290\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"425\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><path d=\"M 351 112 C 387 143 387 267 351 298 C 315 267 315 143 351 112 Z\" fill=\"#dceafe\" stroke=\"none\"/><text x=\"205\" y=\"98\">Strawberry</text><text x=\"415\" y=\"98\">Chocolate</text><text x=\"260\" y=\"215\">20</text><text x=\"352\" y=\"215\">57</text><text x=\"472\" y=\"215\">48</text><text x=\"130\" y=\"330\">15 neither</text><text x=\"510\" y=\"330\">Total 140</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Divide by 140 students.",
+                  "work": "\\(P(\\text{neither})=\\frac{15}{140}\\)"
+                },
+                {
+                  "explain": "The probability is \\(\\frac{15}{140}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 12,
+                "question": 22,
+                "section": "Applications — Probability",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "c"
+              }
+            },
+            {
+              "id": "y7-killara-23-q22d",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "All additional students like only chocolate. How many must be added so that the new probability of liking chocolate is \\(\\frac45\\)?",
+              "options": [
+                "28",
+                "35",
+                "40",
+                "15"
+              ],
+              "answer": 1,
+              "hint": "The original chocolate total is the overlap plus chocolate-only. Let x be the additional chocolate-only students.",
+              "steps": [
+                {
+                  "explain": "Originally, \\(57+48=105\\) students like chocolate. Let \\(x\\) additional students like only chocolate. There are then \\(140+x\\) students total.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"100\" y=\"45\" width=\"500\" height=\"310\" fill=\"#fff\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"290\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"425\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><path d=\"M 351 112 C 387 143 387 267 351 298 C 315 267 315 143 351 112 Z\" fill=\"#dceafe\" stroke=\"none\"/><text x=\"205\" y=\"98\">Strawberry</text><text x=\"415\" y=\"98\">Chocolate</text><text x=\"260\" y=\"215\">20</text><text x=\"352\" y=\"215\">57</text><text x=\"472\" y=\"215\">48</text><text x=\"130\" y=\"330\">15 neither</text><text x=\"510\" y=\"330\">Total 140</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Set the new chocolate probability equal to \\(\\frac45\\).",
+                  "work": "\\(\\frac{105+x}{140+x}=\\frac45\\)"
+                },
+                {
+                  "explain": "Cross-multiply.",
+                  "work": "\\(5(105+x)=4(140+x)\\)"
+                },
+                {
+                  "explain": "Expand and solve.",
+                  "work": "\\(525+5x=560+4x\\quad\\Rightarrow\\quad x=35\\)"
+                },
+                {
+                  "explain": "Add 35 students. Check: \\(140/175=4/5\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 12,
+                "question": 22,
+                "section": "Applications — Probability",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "d"
+              }
+            }
+          ],
+          "hint": "For each probability, count the relevant Venn region or regions once, then divide by 140. For (d), add x to both the chocolate count and the total.",
+          "steps": [],
+          "timeLimit": 300,
+          "xp": 5,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 12,
+            "question": 22,
+            "section": "Applications — Probability",
+            "marks": 5,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><rect x=\"100\" y=\"45\" width=\"500\" height=\"310\" fill=\"#fff\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"290\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><circle cx=\"425\" cy=\"205\" r=\"115\" fill=\"#dceafe\" stroke=\"#34445a\" stroke-width=\"3\"/><path d=\"M 351 112 C 387 143 387 267 351 298 C 315 267 315 143 351 112 Z\" fill=\"#dceafe\" stroke=\"none\"/><text x=\"205\" y=\"98\">Strawberry</text><text x=\"415\" y=\"98\">Chocolate</text><text x=\"260\" y=\"215\">20</text><text x=\"352\" y=\"215\">57</text><text x=\"472\" y=\"215\">48</text><text x=\"130\" y=\"330\">15 neither</text><text x=\"510\" y=\"330\">Total 140</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A spinner has red, blue, green and yellow sectors. \\(P(\\text{red})=\\frac14\\), \\(P(\\text{blue})=2P(\\text{green})\\), and \\(P(\\text{yellow})=P(\\text{red})+P(\\text{blue})+P(\\text{green})\\). What is the central angle of the green sector?",
+          "options": [
+            "\\(30^\\circ\\)",
+            "\\(45^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(15^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the green probability be g. Write each sector probability in terms of g, use the total probability 1, then multiply the green probability by 360°.",
+          "steps": [
+            {
+              "explain": "Let \\(P(\\text{green})=g\\). Then \\(P(\\text{blue})=2g\\) and \\(P(\\text{yellow})=\\frac14+2g+g=\\frac14+3g\\)."
+            },
+            {
+              "explain": "All four probabilities add to 1.",
+              "work": "\\(\\frac14+2g+g+(\\frac14+3g)=1\\)"
+            },
+            {
+              "explain": "Collect like terms and solve.",
+              "work": "\\(\\frac12+6g=1\\quad\\Rightarrow\\quad6g=\\frac12\\quad\\Rightarrow\\quad g=\\frac1{12}\\)"
+            },
+            {
+              "explain": "The full circle is \\(360^\\circ\\). Find the green sector angle.",
+              "work": "\\(\\frac1{12}\\times360^\\circ=30^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 350 205 L 350 330 A 125 125 0 0 0 412.5 313.25 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 412.5 313.25 A 125 125 0 0 0 458.25 267.5 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 458.25 267.5 A 125 125 0 0 0 475 205 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 475 205 A 125 125 0 0 0 458.25 142.5 Z\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 458.25 142.5 A 125 125 0 0 0 412.5 96.75 Z\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 412.5 96.75 A 125 125 0 0 0 350 80 Z\" fill=\"#22c55e\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 350 80 A 125 125 0 0 0 287.5 96.75 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 287.5 96.75 A 125 125 0 0 0 241.75 142.5 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 241.75 142.5 A 125 125 0 0 0 225 205 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 225 205 A 125 125 0 0 0 241.75 267.5 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 241.75 267.5 A 125 125 0 0 0 287.5 313.25 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 287.5 313.25 A 125 125 0 0 0 350 330 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><text x=\"375.36\" y=\"304.66\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">1</text><text x=\"419.3\" y=\"279.3\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">2</text><text x=\"444.66\" y=\"235.36\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">3</text><text x=\"444.66\" y=\"184.64\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">4</text><text x=\"419.3\" y=\"140.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">5</text><text x=\"375.36\" y=\"115.34\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">6</text><text x=\"324.64\" y=\"115.34\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">7</text><text x=\"280.7\" y=\"140.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">8</text><text x=\"255.34\" y=\"184.64\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">9</text><text x=\"255.34\" y=\"235.36\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">10</text><text x=\"280.7\" y=\"279.3\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">11</text><text x=\"324.64\" y=\"304.66\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">12</text><text x=\"265\" y=\"375\">Green occupies 1 of 12 equal sectors.</text></svg>"
+              }
+            },
+            {
+              "explain": "The green sector angle is \\(30^\\circ\\)."
+            }
+          ],
+          "timeLimit": 120,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 13,
+            "question": 23,
+            "section": "Challenge — Probability",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 350 205 L 350 330 A 125 125 0 0 0 412.5 313.25 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 412.5 313.25 A 125 125 0 0 0 458.25 267.5 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 458.25 267.5 A 125 125 0 0 0 475 205 Z\" fill=\"#ef4444\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 475 205 A 125 125 0 0 0 458.25 142.5 Z\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 458.25 142.5 A 125 125 0 0 0 412.5 96.75 Z\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 412.5 96.75 A 125 125 0 0 0 350 80 Z\" fill=\"#22c55e\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 350 80 A 125 125 0 0 0 287.5 96.75 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 287.5 96.75 A 125 125 0 0 0 241.75 142.5 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 241.75 142.5 A 125 125 0 0 0 225 205 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 225 205 A 125 125 0 0 0 241.75 267.5 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 241.75 267.5 A 125 125 0 0 0 287.5 313.25 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><path d=\"M 350 205 L 287.5 313.25 A 125 125 0 0 0 350 330 Z\" fill=\"#facc15\" stroke=\"#fff\" stroke-width=\"2\"/><text x=\"375.36\" y=\"304.66\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">1</text><text x=\"419.3\" y=\"279.3\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">2</text><text x=\"444.66\" y=\"235.36\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">3</text><text x=\"444.66\" y=\"184.64\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">4</text><text x=\"419.3\" y=\"140.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">5</text><text x=\"375.36\" y=\"115.34\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">6</text><text x=\"324.64\" y=\"115.34\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">7</text><text x=\"280.7\" y=\"140.7\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">8</text><text x=\"255.34\" y=\"184.64\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">9</text><text x=\"255.34\" y=\"235.36\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">10</text><text x=\"280.7\" y=\"279.3\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">11</text><text x=\"324.64\" y=\"304.66\" text-anchor=\"middle\" font-size=\"14\" fill=\"#263449\">12</text><text x=\"265\" y=\"375\">Green occupies 1 of 12 equal sectors.</text></svg>"
+          }
         }
       ]
     }

@@ -2199,34 +2199,6 @@
           "xp": 3
         },
         {
-          "id": "y7-killara-23-q9",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "For the rule $y = x + 3$, what is the value of $y$ when $x = 4$?",
-          "options": [
-            "$7$",
-            "$1$",
-            "$43$",
-            "$12$"
-          ],
-          "answer": 0,
-          "steps": [
-            {
-              "explain": "Understand the mathematical concept of substitution. Substitution means replacing a letter (variable) in an equation with a specific number.",
-              "work": "\\text{Substitute } x = 4 \\text{ into } y = x + 3"
-            },
-            {
-              "explain": "Replace the letter $x$ with the number $4$.",
-              "work": "y = (4) + 3"
-            },
-            {
-              "explain": "Calculate the final value by adding the numbers.",
-              "work": "y = 7"
-            }
-          ],
-          "xp": 1
-        },
-        {
           "id": "yf5kSz9ayx41rjYnYMEB",
           "type": "mc",
           "difficulty": "easy",
@@ -2434,6 +2406,45 @@
             "page": 9,
             "question": 4,
             "section": "Algebra",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the rule \\(y=x+3\\), find \\(y\\) when \\(x=4\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(7\\)",
+            "\\(1\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace \\(x\\) with 4 in the rule, then add 3.",
+          "steps": [
+            {
+              "explain": "Use the given rule \\(y=x+3\\) and substitute \\(x=4\\).",
+              "work": "\\(y=4+3\\)"
+            },
+            {
+              "explain": "Add the numbers.",
+              "work": "\\(4+3=7\\)"
+            },
+            {
+              "explain": "Therefore, \\(y=7\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 9,
+            "section": "Fundamentals — Linear relationships",
             "marks": 1,
             "origin": "teacher"
           }
@@ -2814,6 +2825,143 @@
           },
           "hint": "Read the horizontal coordinate first and the vertical coordinate second.",
           "steps": []
+        },
+        {
+          "id": "y7-killara-23-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The coordinate grid shows point \\(P\\). What are its coordinates?",
+          "options": [
+            "\\((1,2)\\)",
+            "\\((2,2)\\)",
+            "\\((1,1)\\)",
+            "\\((2,1)\\)"
+          ],
+          "answer": 3,
+          "hint": "Read the horizontal coordinate first, then the vertical coordinate.",
+          "steps": [
+            {
+              "explain": "Start at the origin. Point \\(P\\) is 2 units to the right, so its \\(x\\)-coordinate is 2.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 390\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 135 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 240 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"235\" y=\"340\" font-size=\"14\">1</text><path d=\"M 345 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"340\" y=\"340\" font-size=\"14\">2</text><path d=\"M 450 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"445\" y=\"340\" font-size=\"14\">3</text><path d=\"M 135 320 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 135 235 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"240\" font-size=\"14\">1</text><path d=\"M 135 150 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"155\" font-size=\"14\">2</text><path d=\"M 135 65 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"70\" font-size=\"14\">3</text><path d=\"M 135 320 H 462 M 135 320 V 53\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"468\" y=\"325\">x</text><text x=\"131\" y=\"45\">y</text><circle cx=\"345\" cy=\"235\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"354\" y=\"227\" font-size=\"17\" fill=\"#b44818\">P</text></svg>"
+              }
+            },
+            {
+              "explain": "From there, it is 1 unit up, so its \\(y\\)-coordinate is 1.",
+              "work": "\\((x,y)=(2,1)\\)"
+            },
+            {
+              "explain": "Therefore, the coordinates are \\((2,1)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 7,
+            "section": "Fundamentals — Linear relationships",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 390\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 135 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 240 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"235\" y=\"340\" font-size=\"14\">1</text><path d=\"M 345 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"340\" y=\"340\" font-size=\"14\">2</text><path d=\"M 450 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"445\" y=\"340\" font-size=\"14\">3</text><path d=\"M 135 320 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 135 235 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"240\" font-size=\"14\">1</text><path d=\"M 135 150 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"155\" font-size=\"14\">2</text><path d=\"M 135 65 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"70\" font-size=\"14\">3</text><path d=\"M 135 320 H 462 M 135 320 V 53\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"468\" y=\"325\">x</text><text x=\"131\" y=\"45\">y</text><circle cx=\"345\" cy=\"235\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"354\" y=\"227\" font-size=\"17\" fill=\"#b44818\">P</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which graph shows a linear relationship?",
+          "options": [
+            "Graph B only",
+            "Both graphs",
+            "Graph A only",
+            "Neither graph"
+          ],
+          "answer": 2,
+          "hint": "A linear relationship is represented by a straight line.",
+          "steps": [
+            {
+              "explain": "Graph A is a straight line."
+            },
+            {
+              "explain": "Graph B is curved, so it is not linear."
+            },
+            {
+              "explain": "Therefore, Graph A is the linear relationship.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 70 310 V 80 M 70 310 H 300 M 100 260 L 280 150\" class=\"thin\"/><path d=\"M 400 310 V 80 M 400 310 H 635 M 410 300 Q 520 70 625 300\" class=\"thin\"/><path d=\"M 292 145 l -10 2 5 9 M 624 300 l -11 -1 5 -8\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"178\" y=\"355\">(A)</text><text x=\"500\" y=\"355\">(B)</text><text x=\"55\" y=\"75\">y</text><text x=\"305\" y=\"325\">x</text><text x=\"385\" y=\"75\">y</text><text x=\"640\" y=\"325\">x</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 8,
+            "section": "Fundamentals — Linear relationships",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 70 310 V 80 M 70 310 H 300 M 100 260 L 280 150\" class=\"thin\"/><path d=\"M 400 310 V 80 M 400 310 H 635 M 410 300 Q 520 70 625 300\" class=\"thin\"/><path d=\"M 292 145 l -10 2 5 9 M 624 300 l -11 -1 5 -8\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"178\" y=\"355\">(A)</text><text x=\"500\" y=\"355\">(B)</text><text x=\"55\" y=\"75\">y</text><text x=\"305\" y=\"325\">x</text><text x=\"385\" y=\"75\">y</text><text x=\"640\" y=\"325\">x</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-q16",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Plot and label the points \\(A(1,-4)\\), \\(B(-3,-5)\\), \\(C(0,2)\\), and \\(D(2.5,5.5)\\) on the coordinate plane.",
+          "answer": "Sample answer: the four labelled points are plotted at A(1, −4), B(−3, −5), C(0, 2), and D(2.5, 5.5), as shown in the final solution diagram.",
+          "manual": true,
+          "hint": "For each ordered pair, move horizontally by the x-coordinate first, then vertically by the y-coordinate. A negative value means move left or down.",
+          "steps": [
+            {
+              "explain": "For each point, begin at the origin and read the ordered pair as \\((x,y)\\): horizontal movement first, vertical movement second."
+            },
+            {
+              "explain": "Plot \\(A(1,-4)\\): move 1 right and 4 down.",
+              "work": "\\(A=(1,-4)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 122 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"117\" y=\"270\" font-size=\"14\">-6</text><path d=\"M 160 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"155\" y=\"270\" font-size=\"14\">-5</text><path d=\"M 198 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"193\" y=\"270\" font-size=\"14\">-4</text><path d=\"M 236 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"231\" y=\"270\" font-size=\"14\">-3</text><path d=\"M 274 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"269\" y=\"270\" font-size=\"14\">-2</text><path d=\"M 312 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"307\" y=\"270\" font-size=\"14\">-1</text><path d=\"M 350 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 388 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"383\" y=\"270\" font-size=\"14\">1</text><path d=\"M 426 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"421\" y=\"270\" font-size=\"14\">2</text><path d=\"M 464 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"459\" y=\"270\" font-size=\"14\">3</text><path d=\"M 502 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"497\" y=\"270\" font-size=\"14\">4</text><path d=\"M 540 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"535\" y=\"270\" font-size=\"14\">5</text><path d=\"M 578 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"573\" y=\"270\" font-size=\"14\">6</text><path d=\"M 122 424 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"429\" font-size=\"14\">-6</text><path d=\"M 122 395 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"400\" font-size=\"14\">-5</text><path d=\"M 122 366 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"371\" font-size=\"14\">-4</text><path d=\"M 122 337 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"342\" font-size=\"14\">-3</text><path d=\"M 122 308 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"313\" font-size=\"14\">-2</text><path d=\"M 122 279 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"284\" font-size=\"14\">-1</text><path d=\"M 122 250 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 122 221 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"226\" font-size=\"14\">1</text><path d=\"M 122 192 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"197\" font-size=\"14\">2</text><path d=\"M 122 163 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"168\" font-size=\"14\">3</text><path d=\"M 122 134 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"139\" font-size=\"14\">4</text><path d=\"M 122 105 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"110\" font-size=\"14\">5</text><path d=\"M 122 76 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"81\" font-size=\"14\">6</text><path d=\"M 122 250 H 590 M 350 424 V 64\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"596\" y=\"255\">x</text><text x=\"346\" y=\"56\">y</text><circle cx=\"388\" cy=\"366\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"397\" y=\"358\" font-size=\"17\" fill=\"#b44818\">A</text></svg>"
+              }
+            },
+            {
+              "explain": "Plot \\(B(-3,-5)\\): move 3 left and 5 down; plot \\(C(0,2)\\) on the y-axis, 2 up.",
+              "work": "\\(B=(-3,-5),\\quad C=(0,2)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 122 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"117\" y=\"270\" font-size=\"14\">-6</text><path d=\"M 160 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"155\" y=\"270\" font-size=\"14\">-5</text><path d=\"M 198 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"193\" y=\"270\" font-size=\"14\">-4</text><path d=\"M 236 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"231\" y=\"270\" font-size=\"14\">-3</text><path d=\"M 274 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"269\" y=\"270\" font-size=\"14\">-2</text><path d=\"M 312 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"307\" y=\"270\" font-size=\"14\">-1</text><path d=\"M 350 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 388 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"383\" y=\"270\" font-size=\"14\">1</text><path d=\"M 426 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"421\" y=\"270\" font-size=\"14\">2</text><path d=\"M 464 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"459\" y=\"270\" font-size=\"14\">3</text><path d=\"M 502 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"497\" y=\"270\" font-size=\"14\">4</text><path d=\"M 540 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"535\" y=\"270\" font-size=\"14\">5</text><path d=\"M 578 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"573\" y=\"270\" font-size=\"14\">6</text><path d=\"M 122 424 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"429\" font-size=\"14\">-6</text><path d=\"M 122 395 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"400\" font-size=\"14\">-5</text><path d=\"M 122 366 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"371\" font-size=\"14\">-4</text><path d=\"M 122 337 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"342\" font-size=\"14\">-3</text><path d=\"M 122 308 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"313\" font-size=\"14\">-2</text><path d=\"M 122 279 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"284\" font-size=\"14\">-1</text><path d=\"M 122 250 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 122 221 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"226\" font-size=\"14\">1</text><path d=\"M 122 192 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"197\" font-size=\"14\">2</text><path d=\"M 122 163 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"168\" font-size=\"14\">3</text><path d=\"M 122 134 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"139\" font-size=\"14\">4</text><path d=\"M 122 105 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"110\" font-size=\"14\">5</text><path d=\"M 122 76 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"81\" font-size=\"14\">6</text><path d=\"M 122 250 H 590 M 350 424 V 64\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"596\" y=\"255\">x</text><text x=\"346\" y=\"56\">y</text><circle cx=\"388\" cy=\"366\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"397\" y=\"358\" font-size=\"17\" fill=\"#b44818\">A</text><circle cx=\"236\" cy=\"395\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"245\" y=\"387\" font-size=\"17\" fill=\"#b44818\">B</text><circle cx=\"350\" cy=\"192\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"359\" y=\"184\" font-size=\"17\" fill=\"#b44818\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Plot \\(D(2.5,5.5)\\): move 2.5 right and 5.5 up. Check each label is next to its point.",
+              "work": "\\(D=(2.5,5.5)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 122 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"117\" y=\"270\" font-size=\"14\">-6</text><path d=\"M 160 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"155\" y=\"270\" font-size=\"14\">-5</text><path d=\"M 198 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"193\" y=\"270\" font-size=\"14\">-4</text><path d=\"M 236 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"231\" y=\"270\" font-size=\"14\">-3</text><path d=\"M 274 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"269\" y=\"270\" font-size=\"14\">-2</text><path d=\"M 312 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"307\" y=\"270\" font-size=\"14\">-1</text><path d=\"M 350 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 388 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"383\" y=\"270\" font-size=\"14\">1</text><path d=\"M 426 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"421\" y=\"270\" font-size=\"14\">2</text><path d=\"M 464 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"459\" y=\"270\" font-size=\"14\">3</text><path d=\"M 502 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"497\" y=\"270\" font-size=\"14\">4</text><path d=\"M 540 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"535\" y=\"270\" font-size=\"14\">5</text><path d=\"M 578 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"573\" y=\"270\" font-size=\"14\">6</text><path d=\"M 122 424 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"429\" font-size=\"14\">-6</text><path d=\"M 122 395 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"400\" font-size=\"14\">-5</text><path d=\"M 122 366 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"371\" font-size=\"14\">-4</text><path d=\"M 122 337 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"342\" font-size=\"14\">-3</text><path d=\"M 122 308 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"313\" font-size=\"14\">-2</text><path d=\"M 122 279 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"284\" font-size=\"14\">-1</text><path d=\"M 122 250 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 122 221 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"226\" font-size=\"14\">1</text><path d=\"M 122 192 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"197\" font-size=\"14\">2</text><path d=\"M 122 163 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"168\" font-size=\"14\">3</text><path d=\"M 122 134 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"139\" font-size=\"14\">4</text><path d=\"M 122 105 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"110\" font-size=\"14\">5</text><path d=\"M 122 76 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"81\" font-size=\"14\">6</text><path d=\"M 122 250 H 590 M 350 424 V 64\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"596\" y=\"255\">x</text><text x=\"346\" y=\"56\">y</text><circle cx=\"388\" cy=\"366\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"397\" y=\"358\" font-size=\"17\" fill=\"#b44818\">A</text><circle cx=\"236\" cy=\"395\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"245\" y=\"387\" font-size=\"17\" fill=\"#b44818\">B</text><circle cx=\"350\" cy=\"192\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"359\" y=\"184\" font-size=\"17\" fill=\"#b44818\">C</text><circle cx=\"445\" cy=\"90.5\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"454\" y=\"82.5\" font-size=\"17\" fill=\"#b44818\">D</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 240,
+          "xp": 4,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 6,
+            "question": 16,
+            "section": "Routine Processes — Linear relationships",
+            "marks": 4,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 122 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"117\" y=\"270\" font-size=\"14\">-6</text><path d=\"M 160 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"155\" y=\"270\" font-size=\"14\">-5</text><path d=\"M 198 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"193\" y=\"270\" font-size=\"14\">-4</text><path d=\"M 236 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"231\" y=\"270\" font-size=\"14\">-3</text><path d=\"M 274 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"269\" y=\"270\" font-size=\"14\">-2</text><path d=\"M 312 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"307\" y=\"270\" font-size=\"14\">-1</text><path d=\"M 350 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 388 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"383\" y=\"270\" font-size=\"14\">1</text><path d=\"M 426 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"421\" y=\"270\" font-size=\"14\">2</text><path d=\"M 464 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"459\" y=\"270\" font-size=\"14\">3</text><path d=\"M 502 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"497\" y=\"270\" font-size=\"14\">4</text><path d=\"M 540 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"535\" y=\"270\" font-size=\"14\">5</text><path d=\"M 578 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"573\" y=\"270\" font-size=\"14\">6</text><path d=\"M 122 424 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"429\" font-size=\"14\">-6</text><path d=\"M 122 395 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"400\" font-size=\"14\">-5</text><path d=\"M 122 366 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"371\" font-size=\"14\">-4</text><path d=\"M 122 337 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"342\" font-size=\"14\">-3</text><path d=\"M 122 308 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"313\" font-size=\"14\">-2</text><path d=\"M 122 279 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"284\" font-size=\"14\">-1</text><path d=\"M 122 250 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 122 221 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"226\" font-size=\"14\">1</text><path d=\"M 122 192 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"197\" font-size=\"14\">2</text><path d=\"M 122 163 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"168\" font-size=\"14\">3</text><path d=\"M 122 134 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"139\" font-size=\"14\">4</text><path d=\"M 122 105 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"110\" font-size=\"14\">5</text><path d=\"M 122 76 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"81\" font-size=\"14\">6</text><path d=\"M 122 250 H 590 M 350 424 V 64\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"596\" y=\"255\">x</text><text x=\"346\" y=\"56\">y</text></svg>"
+          }
         }
       ]
     },
@@ -2861,157 +3009,503 @@
           "id": "y7-killara-23-q6",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Write the next two numbers in the number pattern: 2, 5, 8, 11, ...",
+          "stem": "Write the next two numbers in the pattern: \\(2,5,8,11,\\ldots\\).",
           "options": [
-            "\\(14, 18\\)",
-            "\\(15, 19\\)",
-            "\\(14, 17\\)",
-            "\\(13, 16\\)"
+            "\\(14,17\\)",
+            "\\(14,18\\)",
+            "\\(15,19\\)",
+            "\\(13,16\\)"
           ],
-          "answer": 2,
+          "answer": 0,
+          "hint": "Find how much each term increases, then keep adding that amount.",
           "steps": [
             {
-              "explain": "Find the constant difference between consecutive terms in the sequence to determine the pattern rule.",
-              "work": "5 - 2 = 3 \\\\ 8 - 5 = 3 \\\\ 11 - 8 = 3 \\\\ \\text{Rule: Add } 3"
+              "explain": "Find the difference between consecutive terms.",
+              "work": "\\(5-2=3,\\quad 8-5=3,\\quad 11-8=3\\)"
             },
             {
-              "explain": "Calculate the first missing number by applying the rule to the last given number ($11$).",
-              "work": "11 + 3 = 14"
+              "explain": "The pattern increases by \\(3\\) each time, so the next term is \\(11+3=14\\)."
             },
             {
-              "explain": "Calculate the second missing number by applying the rule to the result just found ($14$).",
-              "work": "14 + 3 = 17 \\\\ \\text{Next numbers: } 14, 17"
+              "explain": "Add \\(3\\) once more.",
+              "work": "\\(14+3=17\\)"
+            },
+            {
+              "explain": "The next two terms are \\(14\\) and \\(17\\)."
             }
           ],
           "timeLimit": 60,
+          "xp": 1,
           "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 6,
+            "section": "Fundamentals — Linear relationships",
+            "marks": 1,
             "origin": "teacher"
-          },
-          "xp": 1
+          }
         },
         {
           "id": "y7-killara-23-q17",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Consider a pattern of matchstick squares: 1 square needs 4 matches, 2 squares need 7 matches, and 3 squares need 10 matches.",
+          "stem": "A row of adjacent squares is made from matches. Each new square shares one side with the previous square.",
           "parts": [
+            {
+              "id": "y7-killara-23-q17a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Which row completes the table for the numbers of matches needed for 1, 2, 3, and 4 squares, in that order?",
+              "options": [
+                "\\(4,8,12,16\\)",
+                "\\(4,7,9,12\\)",
+                "\\(4,7,10,13\\)",
+                "\\(3,6,9,12\\)"
+              ],
+              "answer": 2,
+              "hint": "Start with 4 matches for one square. Each additional square shares a side, so it adds 3 matches.",
+              "steps": [
+                {
+                  "explain": "One square uses 4 matches. Because adjacent squares share one side, each new square adds 3 matches.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Add 3 for each additional square.",
+                  "work": "\\(4,\\quad 4+3=7,\\quad 7+3=10,\\quad 10+3=13\\)"
+                },
+                {
+                  "explain": "The completed table row is 4, 7, 10, 13. This also agrees with the first four matchstick patterns shown above."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 7,
+                "question": 17,
+                "section": "Routine Processes — Linear relationships",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
+              }
+            },
+            {
+              "id": "y7-killara-23-q17b",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Complete the table and plot the number of matches against the number of squares for 1, 2, 3, and 4 squares.",
+              "answer": "Sample answer: the table pairs are (1,4), (2,7), (3,10), and (4,13); the plotted points are shown on the solution grid.",
+              "manual": true,
+              "hint": "Count 4 matches for one square. Every extra square shares a side and adds 3 matches; use this to complete the table before plotting.",
+              "steps": [
+                {
+                  "explain": "Record the number of matches for one square, then add 3 for each new square.",
+                  "work": "\\(4,7,10,13\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Write each value as an ordered pair (squares, matches).",
+                  "work": "\\((1,4),\\ (2,7),\\ (3,10),\\ (4,13)\\)"
+                },
+                {
+                  "explain": "Plot each pair with squares on the horizontal axis and matches on the vertical axis. Check the points increase by 3 vertically each time.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 120 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 215 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"210\" y=\"445\" font-size=\"14\">1</text><path d=\"M 310 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"305\" y=\"445\" font-size=\"14\">2</text><path d=\"M 405 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"400\" y=\"445\" font-size=\"14\">3</text><path d=\"M 500 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"495\" y=\"445\" font-size=\"14\">4</text><path d=\"M 595 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"590\" y=\"445\" font-size=\"14\">5</text><path d=\"M 120 425 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 120 406 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"411\" font-size=\"14\">1</text><path d=\"M 120 387 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"392\" font-size=\"14\">2</text><path d=\"M 120 368 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"373\" font-size=\"14\">3</text><path d=\"M 120 349 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"354\" font-size=\"14\">4</text><path d=\"M 120 330 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"335\" font-size=\"14\">5</text><path d=\"M 120 311 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"316\" font-size=\"14\">6</text><path d=\"M 120 292 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"297\" font-size=\"14\">7</text><path d=\"M 120 273 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"278\" font-size=\"14\">8</text><path d=\"M 120 254 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"259\" font-size=\"14\">9</text><path d=\"M 120 235 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"240\" font-size=\"14\">10</text><path d=\"M 120 216 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"221\" font-size=\"14\">11</text><path d=\"M 120 197 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"202\" font-size=\"14\">12</text><path d=\"M 120 178 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"183\" font-size=\"14\">13</text><path d=\"M 120 159 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"164\" font-size=\"14\">14</text><path d=\"M 120 140 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"145\" font-size=\"14\">15</text><path d=\"M 120 121 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"126\" font-size=\"14\">16</text><path d=\"M 120 102 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"107\" font-size=\"14\">17</text><path d=\"M 120 425 H 607 M 120 425 V 90\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"613\" y=\"430\">Squares</text><text x=\"116\" y=\"82\">Matches</text><circle cx=\"215\" cy=\"349\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"224\" y=\"341\" font-size=\"17\" fill=\"#b44818\"></text><circle cx=\"310\" cy=\"292\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"319\" y=\"284\" font-size=\"17\" fill=\"#b44818\"></text><circle cx=\"405\" cy=\"235\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"414\" y=\"227\" font-size=\"17\" fill=\"#b44818\"></text><circle cx=\"500\" cy=\"178\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"509\" y=\"170\" font-size=\"17\" fill=\"#b44818\"></text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 180,
+              "xp": 3,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 7,
+                "question": 17,
+                "section": "Routine Processes — Linear relationships",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 120 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 215 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"210\" y=\"445\" font-size=\"14\">1</text><path d=\"M 310 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"305\" y=\"445\" font-size=\"14\">2</text><path d=\"M 405 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"400\" y=\"445\" font-size=\"14\">3</text><path d=\"M 500 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"495\" y=\"445\" font-size=\"14\">4</text><path d=\"M 595 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"590\" y=\"445\" font-size=\"14\">5</text><path d=\"M 120 425 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 120 406 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"411\" font-size=\"14\">1</text><path d=\"M 120 387 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"392\" font-size=\"14\">2</text><path d=\"M 120 368 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"373\" font-size=\"14\">3</text><path d=\"M 120 349 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"354\" font-size=\"14\">4</text><path d=\"M 120 330 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"335\" font-size=\"14\">5</text><path d=\"M 120 311 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"316\" font-size=\"14\">6</text><path d=\"M 120 292 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"297\" font-size=\"14\">7</text><path d=\"M 120 273 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"278\" font-size=\"14\">8</text><path d=\"M 120 254 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"259\" font-size=\"14\">9</text><path d=\"M 120 235 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"240\" font-size=\"14\">10</text><path d=\"M 120 216 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"221\" font-size=\"14\">11</text><path d=\"M 120 197 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"202\" font-size=\"14\">12</text><path d=\"M 120 178 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"183\" font-size=\"14\">13</text><path d=\"M 120 159 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"164\" font-size=\"14\">14</text><path d=\"M 120 140 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"145\" font-size=\"14\">15</text><path d=\"M 120 121 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"126\" font-size=\"14\">16</text><path d=\"M 120 102 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"107\" font-size=\"14\">17</text><path d=\"M 120 425 H 607 M 120 425 V 90\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"613\" y=\"430\">Squares</text><text x=\"116\" y=\"82\">Matches</text></svg>"
+              }
+            },
             {
               "id": "y7-killara-23-q17c",
               "type": "mc",
-              "stem": "Let the number of matchsticks be $m$ and the number of squares be $s$. Complete the algebraic rule: $m = \\dots \\times s + \\dots$",
+              "difficulty": "medium",
+              "stem": "Which rule gives the number of matches \\(m\\) needed for \\(s\\) adjacent squares in a row?",
               "options": [
-                "$3s + 1$",
-                "$4s$",
-                "$3s - 1$",
-                "$4s - 1$"
+                "\\(m=3s+1\\)",
+                "\\(m=4s-1\\)",
+                "\\(m=3s+4\\)",
+                "\\(m=4s\\)"
               ],
               "answer": 0,
+              "hint": "Start with 4 matches, then add 3 for each square after the first.",
               "steps": [
                 {
-                  "explain": "Identify the pattern difference. The matches go from 4 to 7 to 10, increasing by 3 each time.",
-                  "work": "\\text{Difference } = 3 \\implies 3s"
+                  "explain": "The first square uses 4 matches; every further square adds 3. So for \\(s\\) squares there are \\(s-1\\) additions of 3."
                 },
                 {
-                  "explain": "Find the constant term by testing the rule for $s = 1$. When $s=1$, matches must equal 4.",
-                  "work": "3(1) + \\text{constant} = 4 \\implies \\text{constant} = 1"
+                  "explain": "Write the rule and simplify.",
+                  "work": "\\(m=4+3(s-1)=4+3s-3=3s+1\\)"
                 },
                 {
-                  "explain": "Combine them to form the final rule.",
-                  "work": "m = 3s + 1"
+                  "explain": "Therefore, the rule is \\(m=3s+1\\)."
                 }
               ],
-              "xp": 3
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 7,
+                "question": 17,
+                "section": "Routine Processes — Linear relationships",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "c"
+              }
             },
             {
               "id": "y7-killara-23-q17d",
               "type": "mc",
-              "stem": "How many matchsticks are needed to make 30 squares?",
+              "difficulty": "medium",
+              "stem": "How many matches are needed to make 30 adjacent squares in a row?",
               "options": [
-                "$90$",
-                "$91$",
-                "$120$",
-                "$88$"
+                "\\(90\\)",
+                "\\(94\\)",
+                "\\(120\\)",
+                "\\(91\\)"
               ],
-              "answer": 1,
+              "answer": 3,
+              "hint": "Use the rule \\(m=3s+1\\) and substitute \\(s=30\\).",
               "steps": [
                 {
-                  "explain": "Use the rule found in the previous part.",
-                  "work": "m = 3s + 1"
+                  "explain": "Use the rule from the pattern.",
+                  "work": "\\(m=3s+1\\)"
                 },
                 {
-                  "explain": "Substitute $s = 30$ into the rule.",
-                  "work": "m = 3(30) + 1"
+                  "explain": "Substitute \\(s=30\\).",
+                  "work": "\\(m=3(30)+1\\)"
                 },
                 {
-                  "explain": "Calculate the final number of matchsticks.",
-                  "work": "m = 90 + 1 = 91"
+                  "explain": "Multiply and add.",
+                  "work": "\\(m=90+1=91\\)"
+                },
+                {
+                  "explain": "The pattern needs \\(91\\) matches."
                 }
               ],
-              "xp": 2
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 7,
+                "question": 17,
+                "section": "Routine Processes — Linear relationships",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "d"
+              }
             }
-          ]
+          ],
+          "hint": "Remember that neighbouring squares share a side. The first square needs 4 matches; each additional square needs 3 more.",
+          "steps": [],
+          "timeLimit": 360,
+          "xp": 6,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 7,
+            "question": 17,
+            "section": "Routine Processes — Linear relationships",
+            "marks": 5,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-q21",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Use the linear rule \\(y=-\\frac12x+5\\).",
+          "parts": [
+            {
+              "id": "y7-killara-23-q21a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For \\(y=-\\frac12x+5\\), which row gives \\(y\\) for \\(x=0,1,2,3,4\\), in that order?",
+              "options": [
+                "\\(5,4,3,2,1\\)",
+                "\\(0,1.5,2,3.5,3\\)",
+                "\\(5,5.5,6,6.5,7\\)",
+                "\\(5,4.5,4,3.5,3\\)"
+              ],
+              "answer": 3,
+              "hint": "Substitute each x-value into the rule. Each time x increases by 1, y decreases by 0.5.",
+              "steps": [
+                {
+                  "explain": "Use the rule \\(y=-\\frac12x+5\\). At \\(x=0\\), \\(y=5\\)."
+                },
+                {
+                  "explain": "Substitute the remaining values.",
+                  "work": "\\(x=1:\\ y=4.5;\\quad x=2:\\ y=4;\\quad x=3:\\ y=3.5;\\quad x=4:\\ y=3\\)"
+                },
+                {
+                  "explain": "The table row is \\(5,4.5,4,3.5,3\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 11,
+                "question": 21,
+                "section": "Further Skills — Linear relationships",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-q21b",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Plot the points for \\(y=-\\frac12x+5\\) when \\(x=0,1,2,3,4\\), then draw the straight line through them.",
+              "answer": "Sample answer: plot (0,5), (1,4.5), (2,4), (3,3.5), (4,3), then draw a straight decreasing line through them, as shown in the solution grid.",
+              "manual": true,
+              "hint": "Use the completed value table: plot each ordered pair (x,y). The y-values decrease by 0.5 for every 1-unit increase in x, so the points lie on a straight line.",
+              "steps": [
+                {
+                  "explain": "Make the ordered pairs from the table.",
+                  "work": "\\((0,5),(1,4.5),(2,4),(3,3.5),(4,3)\\)"
+                },
+                {
+                  "explain": "Plot each point with x first and y second. Check the vertical coordinate drops by 0.5 each time x increases by 1.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 500\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 92 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"88\" y=\"293\" font-size=\"13\">-2</text><path d=\"M 126 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"122\" y=\"293\" font-size=\"13\">-1</text><path d=\"M 160 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 194 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"190\" y=\"293\" font-size=\"13\">1</text><path d=\"M 228 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"224\" y=\"293\" font-size=\"13\">2</text><path d=\"M 262 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"258\" y=\"293\" font-size=\"13\">3</text><path d=\"M 296 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"292\" y=\"293\" font-size=\"13\">4</text><path d=\"M 330 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"326\" y=\"293\" font-size=\"13\">5</text><path d=\"M 364 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"360\" y=\"293\" font-size=\"13\">6</text><path d=\"M 398 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"394\" y=\"293\" font-size=\"13\">7</text><path d=\"M 432 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"428\" y=\"293\" font-size=\"13\">8</text><path d=\"M 466 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"462\" y=\"293\" font-size=\"13\">9</text><path d=\"M 500 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"496\" y=\"293\" font-size=\"13\">10</text><path d=\"M 534 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"530\" y=\"293\" font-size=\"13\">11</text><path d=\"M 568 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"564\" y=\"293\" font-size=\"13\">12</text><path d=\"M 92 467 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"472\" font-size=\"13\">-6</text><path d=\"M 92 435 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"440\" font-size=\"13\">-5</text><path d=\"M 92 403 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"408\" font-size=\"13\">-4</text><path d=\"M 92 371 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"376\" font-size=\"13\">-3</text><path d=\"M 92 339 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"344\" font-size=\"13\">-2</text><path d=\"M 92 307 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"312\" font-size=\"13\">-1</text><path d=\"M 92 275 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 92 243 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"248\" font-size=\"13\">1</text><path d=\"M 92 211 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"216\" font-size=\"13\">2</text><path d=\"M 92 179 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"184\" font-size=\"13\">3</text><path d=\"M 92 147 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"152\" font-size=\"13\">4</text><path d=\"M 92 115 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"120\" font-size=\"13\">5</text><path d=\"M 92 83 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"88\" font-size=\"13\">6</text><path d=\"M 92 275 H 583 M 160 467 V 71\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"588\" y=\"280\">x</text><text x=\"156\" y=\"65\">y</text><polyline points=\"160,115 194,131 228,147 262,163 296,179\" fill=\"none\" stroke=\"#e28a00\" stroke-width=\"4\"/><circle cx=\"160\" cy=\"115\" r=\"5\" fill=\"#6457e8\"/><circle cx=\"194\" cy=\"131\" r=\"5\" fill=\"#6457e8\"/><circle cx=\"228\" cy=\"147\" r=\"5\" fill=\"#6457e8\"/><circle cx=\"262\" cy=\"163\" r=\"5\" fill=\"#6457e8\"/><circle cx=\"296\" cy=\"179\" r=\"5\" fill=\"#6457e8\"/><path d=\"M 92 83 L 568 307\" stroke=\"#e28a00\" stroke-width=\"3\" fill=\"none\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Use a ruler to draw one straight line through the plotted points. The graph slopes downward from left to right."
+                }
+              ],
+              "timeLimit": 180,
+              "xp": 3,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 11,
+                "question": 21,
+                "section": "Further Skills — Linear relationships",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              },
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 500\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 92 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"88\" y=\"293\" font-size=\"13\">-2</text><path d=\"M 126 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"122\" y=\"293\" font-size=\"13\">-1</text><path d=\"M 160 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 194 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"190\" y=\"293\" font-size=\"13\">1</text><path d=\"M 228 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"224\" y=\"293\" font-size=\"13\">2</text><path d=\"M 262 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"258\" y=\"293\" font-size=\"13\">3</text><path d=\"M 296 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"292\" y=\"293\" font-size=\"13\">4</text><path d=\"M 330 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"326\" y=\"293\" font-size=\"13\">5</text><path d=\"M 364 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"360\" y=\"293\" font-size=\"13\">6</text><path d=\"M 398 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"394\" y=\"293\" font-size=\"13\">7</text><path d=\"M 432 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"428\" y=\"293\" font-size=\"13\">8</text><path d=\"M 466 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"462\" y=\"293\" font-size=\"13\">9</text><path d=\"M 500 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"496\" y=\"293\" font-size=\"13\">10</text><path d=\"M 534 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"530\" y=\"293\" font-size=\"13\">11</text><path d=\"M 568 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"564\" y=\"293\" font-size=\"13\">12</text><path d=\"M 92 467 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"472\" font-size=\"13\">-6</text><path d=\"M 92 435 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"440\" font-size=\"13\">-5</text><path d=\"M 92 403 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"408\" font-size=\"13\">-4</text><path d=\"M 92 371 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"376\" font-size=\"13\">-3</text><path d=\"M 92 339 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"344\" font-size=\"13\">-2</text><path d=\"M 92 307 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"312\" font-size=\"13\">-1</text><path d=\"M 92 275 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 92 243 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"248\" font-size=\"13\">1</text><path d=\"M 92 211 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"216\" font-size=\"13\">2</text><path d=\"M 92 179 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"184\" font-size=\"13\">3</text><path d=\"M 92 147 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"152\" font-size=\"13\">4</text><path d=\"M 92 115 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"120\" font-size=\"13\">5</text><path d=\"M 92 83 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"88\" font-size=\"13\">6</text><path d=\"M 92 275 H 583 M 160 467 V 71\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"588\" y=\"280\">x</text><text x=\"156\" y=\"65\">y</text></svg>"
+              }
+            },
+            {
+              "id": "y7-killara-23-q21c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For \\(y=-\\frac12x+5\\), what is the x-value where the line touches the x-axis?",
+              "options": [
+                "\\(5\\)",
+                "\\(10\\)",
+                "\\(-10\\)",
+                "\\(2.5\\)"
+              ],
+              "answer": 1,
+              "hint": "On the x-axis, y equals 0. Set the rule equal to zero and solve.",
+              "steps": [
+                {
+                  "explain": "At the x-axis the y-coordinate is zero.",
+                  "work": "\\(0=-\\frac12x+5\\)"
+                },
+                {
+                  "explain": "Subtract 5 from each side.",
+                  "work": "\\(-5=-\\frac12x\\)"
+                },
+                {
+                  "explain": "Divide by \\(-\\frac12\\), or multiply both sides by \\(-2\\).",
+                  "work": "\\(x=10\\)"
+                },
+                {
+                  "explain": "The line touches the x-axis when \\(x=10\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 11,
+                "question": 21,
+                "section": "Further Skills — Linear relationships",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "c"
+              }
+            }
+          ],
+          "hint": "Substitute values to complete the table, plot the (x,y) pairs, and remember that any point on the x-axis has y=0.",
+          "steps": [],
+          "timeLimit": 330,
+          "xp": 6,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 11,
+            "question": 21,
+            "section": "Further Skills — Linear relationships",
+            "marks": 5,
+            "origin": "teacher"
+          }
         },
         {
           "id": "y7-killara-23-q24",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "The line $3x - 4y = k$ passes through the point $(-2, -3)$.",
+          "stem": "The graph shows the line \\(3x-4y=k\\), which passes through \\((-2,-3)\\). Find the value of k and the area of the shaded triangle formed by the line and the coordinate axes.",
           "parts": [
             {
               "id": "y7-killara-23-q24a",
               "type": "mc",
-              "stem": "Find the value of $k$.",
+              "difficulty": "medium",
+              "stem": "The line \\(3x-4y=k\\) passes through \\((-2,-3)\\). Find \\(k\\).",
               "options": [
-                "$6$",
-                "$18$",
-                "$-18$",
-                "$-6$"
+                "\\(-6\\)",
+                "\\(18\\)",
+                "\\(0\\)",
+                "\\(6\\)"
               ],
-              "answer": 0,
+              "answer": 3,
+              "hint": "Substitute x = −2 and y = −3 into the equation.",
               "steps": [
                 {
-                  "explain": "A line passing through a point means the point's coordinates satisfy the line's equation. Substitute $x = -2$ and $y = -3$ into the equation.",
-                  "work": "3(-2) - 4(-3) = k"
+                  "explain": "Replace x and y with the coordinates of the point.",
+                  "work": "\\(k=3(-2)-4(-3)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><polygon points=\"355,210 465,210 355,292.5\" fill=\"#fde68a\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M 100 210 H 610 M 355 50 V 405\" stroke=\"#34445a\" stroke-width=\"2.2\"/><path d=\"M 605 204 l 12 6 -12 6 M 349 56 l 6 -12 6 12\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"620\" y=\"215\">x</text><text x=\"361\" y=\"42\">y</text><path d=\"M 135 457.5 L 575 127.5\" stroke=\"#34445a\" stroke-width=\"4\" fill=\"none\"/><text x=\"450\" y=\"93\">3x − 4y = k</text><circle cx=\"245\" cy=\"375\" r=\"6\" fill=\"#ef6b32\"/><text x=\"159\" y=\"396\">(-2, -3)</text></svg>"
+                  }
                 },
                 {
-                  "explain": "Calculate the terms.",
-                  "work": "-6 - (-12) = k"
+                  "explain": "Evaluate multiplication, remembering the double negative.",
+                  "work": "\\(k=-6+12=6\\)"
                 },
                 {
-                  "explain": "Solve for $k$.",
-                  "work": "-6 + 12 = 6 \\implies k = 6"
+                  "explain": "Therefore, \\(k=6\\)."
                 }
               ],
-              "xp": 2
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 14,
+                "question": 24,
+                "section": "Challenge — Linear relationships",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
             },
             {
               "id": "y7-killara-23-q24b",
               "type": "mc",
-              "stem": "Find the area of the triangle bounded by the line and the axes.",
+              "difficulty": "hard",
+              "stem": "For the line \\(3x-4y=6\\), the shaded triangle is bounded by the coordinate axes and the line. What is its area?",
               "options": [
-                "$2$",
-                "$3$",
-                "$6$",
-                "$1.5$"
+                "\\(3\\text{ square units}\\)",
+                "\\(2\\text{ square units}\\)",
+                "\\(1.5\\text{ square units}\\)",
+                "\\(4\\text{ square units}\\)"
               ],
-              "answer": 3,
+              "answer": 2,
+              "hint": "Find each axis intercept, then use triangle area = one half × base × height.",
               "steps": [
                 {
-                  "explain": "Find the x-intercept by setting $y = 0$ in the full equation $3x - 4y = 6$.",
-                  "work": "3x - 0 = 6 \\implies x = 2"
+                  "explain": "Find the x-intercept by setting \\(y=0\\).",
+                  "work": "\\(3x=6\\quad\\Rightarrow\\quad x=2\\)"
                 },
                 {
-                  "explain": "Find the y-intercept by setting $x = 0$.",
-                  "work": "0 - 4y = 6 \\implies y = -1.5"
+                  "explain": "Find the y-intercept by setting \\(x=0\\).",
+                  "work": "\\(-4y=6\\quad\\Rightarrow\\quad y=-1.5\\)"
                 },
                 {
-                  "explain": "The triangle is a right-angled triangle bounded by the x and y axes. The base is 2 and the height is 1.5 (taking absolute lengths). Calculate the area.",
-                  "work": "\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 2 \\times 1.5 = 1.5"
+                  "explain": "The triangle base and height have lengths 2 and 1.5 units. Identify them on the diagram.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><polygon points=\"355,195 451,195 355,267.0\" fill=\"#fde68a\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M 100 195 H 610 M 355 45 V 405\" stroke=\"#34445a\" stroke-width=\"2.2\"/><path d=\"M 605 189 l 12 6 -12 6 M 349 51 l 6 -12 6 12\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"620\" y=\"200\">x</text><text x=\"361\" y=\"38\">y</text><path d=\"M 163 411 L 547 123\" stroke=\"#34445a\" stroke-width=\"4\" fill=\"none\"/><text x=\"450\" y=\"82\">3x − 4y = k</text><circle cx=\"259\" cy=\"339\" r=\"6\" fill=\"#ef6b32\"/><text x=\"173\" y=\"360\">(-2, -3)</text><circle cx=\"451\" cy=\"195\" r=\"5\" fill=\"#6457e8\"/><circle cx=\"355\" cy=\"267.0\" r=\"5\" fill=\"#6457e8\"/><text x=\"456\" y=\"185\">(2,0)</text><text x=\"363\" y=\"289.0\">(0,-1.5)</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the area.",
+                  "work": "\\(A=\\frac12 bh=\\frac12(2)(1.5)=1.5\\text{ square units}\\)"
+                },
+                {
+                  "explain": "The shaded triangle has area \\(1.5\\) square units."
                 }
               ],
-              "xp": 5
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 14,
+                "question": 24,
+                "section": "Challenge — Linear relationships",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              }
             }
-          ]
+          ],
+          "hint": "Substitute the given point to find k. Then set y=0 and x=0 separately to find the two intercepts before calculating the triangle area.",
+          "steps": [],
+          "timeLimit": 180,
+          "xp": 3,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 14,
+            "question": 24,
+            "section": "Challenge — Linear relationships",
+            "marks": 3,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><polygon points=\"355,195 451,195 355,267.0\" fill=\"#fde68a\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M 100 195 H 610 M 355 45 V 405\" stroke=\"#34445a\" stroke-width=\"2.2\"/><path d=\"M 605 189 l 12 6 -12 6 M 349 51 l 6 -12 6 12\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"620\" y=\"200\">x</text><text x=\"361\" y=\"38\">y</text><path d=\"M 163 411 L 547 123\" stroke=\"#34445a\" stroke-width=\"4\" fill=\"none\"/><text x=\"450\" y=\"82\">3x − 4y = k</text><circle cx=\"259\" cy=\"339\" r=\"6\" fill=\"#ef6b32\"/><text x=\"173\" y=\"360\">(-2, -3)</text></svg>"
+          }
         }
       ]
     }
