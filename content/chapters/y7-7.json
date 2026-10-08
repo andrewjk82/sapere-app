@@ -3726,7 +3726,7 @@
             },
             {
               "explain": "Subtract in aligned columns. Regroup across the zero hundredths to subtract the 3 thousandths.",
-              "work": "\\begin{array}{r}9.200\\\\-2.013\\\\\\hline7.187\\end{array}"
+              "work": "\\begin{array}{r}9.200\\\\-2.013\\\\ \\hline 7.187\\end{array}"
             },
             {
               "explain": "The difference is 7.187."
