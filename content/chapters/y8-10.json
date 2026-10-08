@@ -1047,7 +1047,7 @@
         {
           "id": "wghs2023-y8-s2q7",
           "type": "mc",
-          "stem": "Which is the better buy: 180 g of chips for \\(\\.50\\), or 50 g of chips for \\(\\.40\\)?",
+          "stem": "Which is the better buy: 180 g of chips for $4.50, or 50 g of chips for $1.40?",
           "difficulty": "medium",
           "options": [
             "180 g for \\(\\.50\\) (2.5 c/g vs 2.8 c/g)",
@@ -1058,26 +1058,30 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Find the cost per gram for the 180 g bag.",
-              "work": "\\(\\.50 \\div 180 = 2.5 \\text{ c/g}\\)"
+              "explain": "Find the price per gram for the 180 g packet.",
+              "work": "\\(4.50\\div180=0.025\\text{ dollars/g}=2.5\\text{ cents/g}\\)"
             },
             {
-              "explain": "Find the cost per gram for the 50 g bag.",
-              "work": "\\(\\.40 \\div 50 = 2.8 \\text{ c/g}\\)"
+              "explain": "Find the price per gram for the 50 g packet.",
+              "work": "\\(1.40\\div50=0.028\\text{ dollars/g}=2.8\\text{ cents/g}\\)"
             },
             {
-              "explain": "Compare: lower c/g is better value.",
-              "work": "\\(\\text{180 g bag is better value (2.5 c/g < 2.8 c/g)}\\)"
+              "explain": "Compare the unit prices.",
+              "work": "\\(2.5<2.8\\) cents per gram, so the 180 g packet costs less per gram."
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Compare the cost per gram for each packet; the lower unit price is better value.",
+          "timeLimit": 60
         }
       ]
     },
@@ -1206,16 +1210,20 @@
           "stem": "Write \\(20 \\text{ km in } 4 \\text{ hours}\\) as a rate in simplest form.",
           "difficulty": "easy",
           "options": [
-            "\\(5 \\text{ km/h}\\)",
             "\\(20 \\text{ km/h}\\)",
             "\\(80 \\text{ km/h}\\)",
-            "\\(0.2 \\text{ km/min}\\)"
+            "\\(0.2 \\text{ km/min}\\)",
+            "\\(5 \\text{ km/h}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Divide by 4.",
-              "work": "\\(20 \\div 4 = 5 \\text{ km/h}\\)"
+              "explain": "Divide 20 km by 4 hours.",
+              "work": "\\(20\\div4=5\\)"
+            },
+            {
+              "explain": "Attach the distance and time units.",
+              "work": "\\(5\\text{ km/h}\\)"
             }
           ],
           "xp": 1,
@@ -1224,8 +1232,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "A unit rate means the amount for one hour. Divide distance by hours.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q8b",
@@ -1233,16 +1245,20 @@
           "stem": "Write $107.50 for 50 litres as a rate in simplest form.",
           "difficulty": "easy",
           "options": [
-            "\\(\\$2.15 \\text{/L}\\)",
-            "\\(\\$2.15 \\text{/L}\\)",
-            "\\(\\$53.75 \\text{/L}\\)",
-            "\\(\\$107.50 \\text{/L}\\)"
+            "$2.15 per litre",
+            "$1.075 per litre",
+            "$53.75 per litre",
+            "$107.50 per litre"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Divide by 50.",
-              "work": "\\(\\$107.50 \\div 50 = \\$2.15 \\text{ per litre}\\)"
+              "explain": "Divide the total cost by the 50 litres.",
+              "work": "\\(107.50\\div50=2.15\\text{ dollars per litre}\\)"
+            },
+            {
+              "explain": "State the unit rate.",
+              "work": "The unit rate is $2.15 per litre."
             }
           ],
           "xp": 1,
@@ -1251,8 +1267,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Divide the total price by 50 to get the price for one litre.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q10",
@@ -1260,30 +1280,38 @@
           "stem": "In 15 hours a train travels 600 km. How far will it travel in 11 hours at the same rate?",
           "difficulty": "medium",
           "options": [
-            "\\(440 \\text{ km}\\)",
             "\\(420 \\text{ km}\\)",
             "\\(450 \\text{ km}\\)",
+            "\\(440 \\text{ km}\\)",
             "\\(480 \\text{ km}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Find the speed.",
-              "work": "\\(600 \\div 15 = 40 \\text{ km/h}\\)"
+              "explain": "Find the constant speed.",
+              "work": "\\(600\\div15=40\\text{ km/h}\\)"
             },
             {
-              "explain": "Multiply by 11.",
-              "work": "\\(40 \\times 11 = 440 \\text{ km}\\)"
+              "explain": "Multiply by the new time.",
+              "work": "\\(40\\times11=440\\text{ km}\\)"
+            },
+            {
+              "explain": "Check that the units are distance.",
+              "work": "\\(\\text{km/h}\\times\\text{h}=\\text{km}\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Find the train’s distance per hour, then multiply by 11 hours.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q14a",
@@ -1291,7 +1319,7 @@
           "stem": "Mrs Coffey's running training is described in the travel graph below. How long (in minutes) did she stop for the first time?",
           "difficulty": "easy",
           "figure": {
-            "svg": "fig:10a3df63e8"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
           },
           "options": [
             "\\(30 \\text{ minutes}\\)",
@@ -1302,10 +1330,17 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Find the horizontal (flat) section on the graph where Mrs Coffey's distance stayed constant for the first time. The graph is flat from 10:00 am to 10:30 am.",
-              "work": "\\(\\text{Duration} = 10{:}30\\,\\text{am} - 10{:}00\\,\\text{am} = 30 \\text{ min}\\)",
+              "explain": "On the graph, the first horizontal segment is at 6 km from 11:00 am to 11:30 am. The highlighted section marks the stop.",
+              "work": "\\(\\text{Start}=11{:}00,\\quad\\text{end}=11{:}30\\)",
               "figure": {
-                "svg": "fig:c618c26959"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 230 L 243 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the times.",
+              "work": "\\(11{:}30-11{:}00=30\\text{ minutes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 230 L 243 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
               }
             }
           ],
@@ -1315,8 +1350,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Question 14",
+            "sourceMarks": 1
+          },
+          "hint": "A stop is shown by a horizontal line because the distance from home stays the same. Read the start and end times of the first flat segment.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q14b",
@@ -1324,21 +1363,35 @@
           "stem": "Mrs Coffey stopped a second time for lunch. At what time did she stop, and for how long?",
           "difficulty": "medium",
           "figure": {
-            "svg": "fig:10a3df63e8"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
           },
           "options": [
-            "\\(\\text{Stopped at 12 pm for 1 hour}\\)",
-            "\\(\\text{Stopped at 1 pm for 1 hour}\\)",
-            "\\(\\text{Stopped at 12 pm for 30 minutes}\\)",
-            "\\(\\text{Stopped at 11 am for 2 hours}\\)"
+            "Stopped at 12 pm for 1 hour",
+            "Stopped at 2:30 pm for 1 hour",
+            "Stopped at 1 pm for 30 minutes",
+            "Stopped at 1 pm for 1.5 hours"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Find the second flat section on the graph. It runs from 12:00 pm to 1:00 pm at 16 km.",
-              "work": "\\(\\text{Stop time} = 12{:}00\\,\\text{pm}\\), \\(\\text{Duration} = 1{:}00\\,\\text{pm} - 12{:}00\\,\\text{pm} = 1 \\text{ hour}\\)",
+              "explain": "The second horizontal segment starts at 1:00 pm and ends at 2:30 pm.",
+              "work": "\\(\\text{start}=1{:}00\\text{ pm},\\quad\\text{end}=2{:}30\\text{ pm}\\)",
               "figure": {
-                "svg": "fig:d1eb8b46d1"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 381 83 L 519 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract to find the stop duration.",
+              "work": "\\(2{:}30-1{:}00=1\\text{ h }30\\text{ min}=1.5\\text{ h}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 381 83 L 519 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+              }
+            },
+            {
+              "explain": "Read both requested details from the segment.",
+              "work": "\\(\\text{Stopped at 1 pm for 1.5 hours.}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 381 83 L 519 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
               }
             }
           ],
@@ -1348,8 +1401,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Question 14",
+            "sourceMarks": 2
+          },
+          "hint": "Find the second flat section of Mrs Coffey’s graph; read its starting time and its duration.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q14c",
@@ -1357,21 +1414,28 @@
           "stem": "How far did Mrs Coffey run in total (including the return journey)?",
           "difficulty": "easy",
           "figure": {
-            "svg": "fig:10a3df63e8"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
           },
           "options": [
-            "\\(32 \\text{ km}\\)",
-            "\\(16 \\text{ km}\\)",
-            "\\(20 \\text{ km}\\)",
-            "\\(40 \\text{ km}\\)"
+            "13 km",
+            "26 km",
+            "20 km",
+            "39 km"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "She ran 16 km out (to the furthest point) and 16 km back home.",
-              "work": "\\(16 + 16 = 32 \\text{ km}\\)",
+              "explain": "The graph reaches a maximum distance of 13 km from home.",
+              "work": "\\(d_{\\text{out}}=13\\text{ km}\\)",
               "figure": {
-                "svg": "fig:0e3d3aba12"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 105 356 L 197 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 197 230 L 243 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 243 230 L 381 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 381 83 L 519 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+              }
+            },
+            {
+              "explain": "She returns to her starting point, so the return distance is also 13 km.",
+              "work": "\\(d_{\\text{total}}=13+13=26\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 105 356 L 197 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 197 230 L 243 230\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 243 230 L 381 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 381 83 L 519 83\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
               }
             }
           ],
@@ -1381,8 +1445,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Question 14",
+            "sourceMarks": 1
+          },
+          "hint": "The furthest point on the distance-from-home graph is the one-way distance. Double it for the out-and-back total.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q14d",
@@ -1390,26 +1458,29 @@
           "stem": "What was Mrs Coffey's speed on the return journey home?",
           "difficulty": "medium",
           "figure": {
-            "svg": "fig:10a3df63e8"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
           },
           "options": [
-            "\\(8 \\text{ km/h}\\)",
-            "\\(16 \\text{ km/h}\\)",
-            "\\(4 \\text{ km/h}\\)",
-            "\\(6 \\text{ km/h}\\)"
+            "13 km/h",
+            "4 km/h",
+            "6.5 km/h",
+            "8 km/h"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "The return journey goes from 16 km at 1:00 pm to 0 km at 3:00 pm.",
-              "work": "\\(\\text{Distance} = 16 \\text{ km}, \\quad \\text{Time} = 2 \\text{ hours}\\)",
+              "explain": "The highlighted return segment runs from 13 km at 2:30 pm to 0 km at 4:30 pm.",
+              "work": "\\(\\Delta d=13-0=13\\text{ km},\\quad\\Delta t=2\\text{ h}\\)",
               "figure": {
-                "svg": "fig:fe3622ff9c"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
               }
             },
             {
-              "explain": "Apply the speed formula.",
-              "work": "\\(\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{16}{2} = 8 \\text{ km/h}\\)"
+              "explain": "Calculate the average speed.",
+              "work": "\\(v=\\dfrac{\\Delta d}{\\Delta t}=\\dfrac{13}{2}=6.5\\text{ km/h}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+              }
             }
           ],
           "xp": 1,
@@ -1418,8 +1489,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Question 14",
+            "sourceMarks": 1
+          },
+          "hint": "For the return segment, read the distance change and elapsed time, then calculate distance divided by time.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q14f",
@@ -1427,29 +1502,35 @@
           "stem": "Mrs Wheatley left home at 11 am, walked 8 km over 2 hours, stopped for lunch for 2 hours, then walked home arriving at 5 pm. At approximately what time did Mrs Coffey and Mrs Wheatley cross paths on the return journey?",
           "difficulty": "hard",
           "figure": {
-            "svg": "fig:ac24b8f9ea"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
           },
           "options": [
-            "\\(\\text{Approximately 2:00 pm}\\)",
-            "\\(\\text{Approximately 3:00 pm}\\)",
-            "\\(\\text{Approximately 1:30 pm}\\)",
-            "\\(\\text{Approximately 4:00 pm}\\)"
+            "Approximately 3:45 pm",
+            "Approximately 4:00 pm",
+            "Approximately 3:30 pm",
+            "Approximately 2:00 pm"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Mrs Coffey returns from 1 pm at 16 km, heading home at 8 km/h. Mrs Wheatley is stopped for lunch at 8 km from 1 pm to 3 pm. Find when Coffey passes the 8 km mark.",
-              "work": "\\(\\text{Coffey position} = 16 - 8 \\times (t - 1\\text{pm})\\)"
-            },
-            {
-              "explain": "Set Coffey's position equal to 8 km (Wheatley's lunch stop location) and solve for time.",
-              "work": "\\(16 - 8 \\times (t - 1) = 8 \\Rightarrow 8 \\times (t-1) = 8 \\Rightarrow t - 1 = 1 \\Rightarrow t = 2\\text{ pm}\\)"
-            },
-            {
-              "explain": "At 2:00 pm, Mrs Coffey is at 8 km on her way home, and Mrs Wheatley is at 8 km on her lunch stop. They are at the same location — they cross paths at 2:00 pm.",
-              "work": "\\(\\text{Coffey at 2pm: } 16 - 8 \\times 1 = 8\\text{ km} \\quad \\text{Wheatley at 2pm: } 8\\text{ km (lunch)} \\checkmark\\)",
+              "explain": "From 3:00 pm onward, Mrs Wheatley is 8 km from home and walks home at \\(8\\div2=4\\text{ km/h}\\). Mrs Coffey returns from 13 km at 2:30 pm to home at 4:30 pm.",
+              "work": "\\(v_W=4\\text{ km/h},\\quad v_C=13\\div2=6.5\\text{ km/h}\\)",
               "figure": {
-                "svg": "fig:1c286119fe"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 565 188 L 749 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
+              }
+            },
+            {
+              "explain": "Let \\(t\\) be hours after 3:00 pm. The distances from home are \\(8-4t\\) for Wheatley and \\(13-6.5(t+0.5)\\) for Coffey. Set them equal.",
+              "work": "\\(8-4t=13-6.5(t+0.5)\\)\n\\(8-4t=9.75-6.5t\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 519 83 L 703 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M 565 188 L 749 356\" stroke=\"#f59e0b\" stroke-width=\"8\" stroke-linecap=\"round\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve and convert the decimal hour to minutes.",
+              "work": "\\(2.5t=1.75\\Rightarrow t=0.7\\text{ h}=42\\text{ min}\\)\n\\(3{:}00+42\\text{ min}=3{:}42\\text{ pm}\\approx3{:}45\\text{ pm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\" stroke-linejoin=\"round\"/><circle cx=\"629.4\" cy=\"246.79999999999995\" r=\"8\" fill=\"#f59e0b\" stroke=\"#fff\" stroke-width=\"3\"/><text x=\"641.4\" y=\"234.79999999999995\" font-size=\"15\" font-weight=\"700\" fill=\"#b45309\">≈ 3:42 pm</text><line x1=\"629.4\" y1=\"246.79999999999995\" x2=\"629.4\" y2=\"356\" stroke=\"#f59e0b\" stroke-dasharray=\"5 5\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
               }
             }
           ],
@@ -1459,7 +1540,58 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
+            "origin": "teacher",
+            "sourceQuestion": "Section 2 Question 14",
+            "sourceMarks": 1
+          },
+          "hint": "Compare the two return segments on the distance-time graph. Their lines meet after 3 pm; estimate the crossing time from the intersection.",
+          "timeLimit": 60
+        },
+        {
+          "id": "wghs2023-y8-s2q14e",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "On the same travel graph, draw Mrs Wheatley's journey. She leaves home at 11 am, walks 8 km over 2 hours, stops for lunch and to meet a friend for 2 hours, then walks home, arriving at 5 pm.",
+          "answer": "Sample answer: Join (11 am, 0 km) to (1 pm, 8 km), draw a horizontal stop from 1 pm to 3 pm at 8 km, then join (3 pm, 8 km) to (5 pm, 0 km). The completed graph is shown in the solution diagram.",
+          "hint": "Mark the four key events: leaving at (11,0), reaching 8 km at 1 pm, staying there until 3 pm, and arriving home at 5 pm.",
+          "solution": "Sample answer: Join (11 am, 0 km) to (1 pm, 8 km), draw a horizontal stop from 1 pm to 3 pm at 8 km, then join (3 pm, 8 km) to (5 pm, 0 km). The completed graph is shown in the solution diagram.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\" stroke-linejoin=\"round\"/><rect x=\"123\" y=\"74\" width=\"150\" height=\"30\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "The first part is a straight walk from home to 8 km over 2 hours. Plot the start and end points.",
+              "work": "\\((11{:}00,0)\\rightarrow(13{:}00,8)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\"/><path d=\"M 197 356 L 381 188\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"5\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
+              }
+            },
+            {
+              "explain": "She stops for 2 hours, so distance from home stays at 8 km from 1 pm to 3 pm.",
+              "work": "\\((13{:}00,8)\\rightarrow(15{:}00,8)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\"/><path d=\"M 197 356 L 381 188 L 565 188\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><path d=\"M 381 188 L 565 188\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"7\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
+              }
+            },
+            {
+              "explain": "She walks home from 8 km to 0 km between 3 pm and 5 pm. Join all four points with straight segments; the orange line is the sample answer.",
+              "work": "\\((15{:}00,8)\\rightarrow(17{:}00,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 900 510\" role=\"img\"><rect width=\"900\" height=\"510\" rx=\"12\" fill=\"#fff\"/><line x1=\"105\" y1=\"62\" x2=\"105\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"105\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">10 am</text><line x1=\"151\" y1=\"62\" x2=\"151\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"197\" y1=\"62\" x2=\"197\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"197\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">11 am</text><line x1=\"243\" y1=\"62\" x2=\"243\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"289\" y1=\"62\" x2=\"289\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"289\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">12 pm</text><line x1=\"335\" y1=\"62\" x2=\"335\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"381\" y1=\"62\" x2=\"381\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"381\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">1 pm</text><line x1=\"427\" y1=\"62\" x2=\"427\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"473\" y1=\"62\" x2=\"473\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"473\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">2 pm</text><line x1=\"519\" y1=\"62\" x2=\"519\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"565\" y1=\"62\" x2=\"565\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"565\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">3 pm</text><line x1=\"611\" y1=\"62\" x2=\"611\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"657\" y1=\"62\" x2=\"657\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"657\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">4 pm</text><line x1=\"703\" y1=\"62\" x2=\"703\" y2=\"356\" stroke=\"#e2e8f0\"/><line x1=\"749\" y1=\"62\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"749\" y=\"381\" text-anchor=\"middle\" font-size=\"13\" fill=\"#475569\">5 pm</text><line x1=\"105\" y1=\"356\" x2=\"749\" y2=\"356\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"360\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">0</text><line x1=\"105\" y1=\"335\" x2=\"749\" y2=\"335\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"314\" x2=\"749\" y2=\"314\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"318\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">2</text><line x1=\"105\" y1=\"293\" x2=\"749\" y2=\"293\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"272\" x2=\"749\" y2=\"272\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"276\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">4</text><line x1=\"105\" y1=\"251\" x2=\"749\" y2=\"251\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"230\" x2=\"749\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"234\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">6</text><line x1=\"105\" y1=\"209\" x2=\"749\" y2=\"209\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"188\" x2=\"749\" y2=\"188\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"192\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">8</text><line x1=\"105\" y1=\"167\" x2=\"749\" y2=\"167\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"146\" x2=\"749\" y2=\"146\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"150\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">10</text><line x1=\"105\" y1=\"125\" x2=\"749\" y2=\"125\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"104\" x2=\"749\" y2=\"104\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"108\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">12</text><line x1=\"105\" y1=\"83\" x2=\"749\" y2=\"83\" stroke=\"#e2e8f0\"/><line x1=\"105\" y1=\"62\" x2=\"749\" y2=\"62\" stroke=\"#e2e8f0\"/><text x=\"93\" y=\"66\" text-anchor=\"end\" font-size=\"13\" fill=\"#475569\">14</text><line x1=\"105\" y1=\"356\" x2=\"757\" y2=\"356\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"105\" y1=\"356\" x2=\"105\" y2=\"52\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"427\" y=\"498\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Time</text><text x=\"22\" y=\"209\" transform=\"rotate(-90 22 209)\" text-anchor=\"middle\" font-size=\"16\" fill=\"#334155\">Distance from home (km)</text><path d=\"M 105 356 L 197 230 L 243 230 L 381 83 L 519 83 L 703 356\" fill=\"none\" stroke=\"#dc3545\" stroke-width=\"4\"/><path d=\"M 197 356 L 381 188 L 565 188 L 749 356\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"5\"/><rect x=\"123\" y=\"74\" width=\"250\" height=\"52\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><line x1=\"137\" y1=\"89\" x2=\"163\" y2=\"89\" stroke=\"#dc3545\" stroke-width=\"4\"/><text x=\"170\" y=\"94\" font-size=\"13\" fill=\"#334155\">Mrs Coffey</text><line x1=\"137\" y1=\"111\" x2=\"163\" y2=\"111\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"170\" y=\"116\" font-size=\"13\" fill=\"#334155\">Mrs Wheatley</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "manual": true,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceMarks": 1,
+            "sourceQuestion": "Section 2 Question 14"
           }
         }
       ]
@@ -1537,16 +1669,20 @@
           "stem": "Simplify the ratio \\(6 : 15\\).",
           "difficulty": "easy",
           "options": [
-            "\\(2 : 5\\)",
             "\\(3 : 5\\)",
             "\\(1 : 2.5\\)",
-            "\\(6 : 15\\)"
+            "\\(6 : 15\\)",
+            "\\(2 : 5\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Divide both parts by their HCF (3).",
-              "work": "\\(6 \\div 3 : 15 \\div 3 = 2 : 5\\)"
+              "explain": "The greatest common factor of 6 and 15 is 3.",
+              "work": "\\(6:15=(6\\div3):(15\\div3)\\)"
+            },
+            {
+              "explain": "Reduce both parts by 3.",
+              "work": "\\(6:15=2:5\\)"
             }
           ],
           "xp": 1,
@@ -1555,8 +1691,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Divide both parts of the ratio by their greatest common factor.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q1b",
@@ -1564,16 +1704,20 @@
           "stem": "Simplify the ratio \\(\\dfrac{2}{5} : \\dfrac{3}{4}\\).",
           "difficulty": "medium",
           "options": [
-            "\\(8 : 15\\)",
             "\\(2 : 3\\)",
+            "\\(8 : 15\\)",
             "\\(6 : 20\\)",
             "\\(4 : 3\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "Multiply both fractions by the LCM of denominators (20).",
-              "work": "\\(\\dfrac{2}{5} \\times 20 : \\dfrac{3}{4} \\times 20 = 8 : 15\\)"
+              "explain": "Clear the fractions by multiplying each part by 20.",
+              "work": "\\(\\dfrac25:dfrac34=(20\\cdot\\dfrac25):(20\\cdot\\dfrac34)\\)"
+            },
+            {
+              "explain": "Simplify each product.",
+              "work": "\\(8:15\\)"
             }
           ],
           "xp": 1,
@@ -1582,8 +1726,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Multiply both parts by 20, the lowest common denominator, to get whole-number parts.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q1c",
@@ -1591,20 +1739,20 @@
           "stem": "Simplify the ratio: 3 hours to 18 minutes.",
           "difficulty": "medium",
           "options": [
-            "\\(10 : 1\\)",
             "\\(1 : 6\\)",
             "\\(6 : 1\\)",
+            "\\(10 : 1\\)",
             "\\(3 : 18\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Convert 3 hours to minutes: \\(3 \\times 60 = 180\\) minutes.",
-              "work": "\\(180 : 18\\)"
+              "explain": "Convert 3 hours to minutes.",
+              "work": "\\(3\\text{ h}=3\\times60=180\\text{ min}\\)"
             },
             {
-              "explain": "Divide by HCF (18).",
-              "work": "\\(10 : 1\\)"
+              "explain": "Write the ratio in minutes and divide by 18.",
+              "work": "\\(180:18=(180\\div18):(18\\div18)=10:1\\)"
             }
           ],
           "xp": 1,
@@ -1613,8 +1761,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Convert both times to the same unit before simplifying the ratio.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q2a",
@@ -1630,8 +1782,12 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Divide both by HCF (6).",
-              "work": "\\(24 \\div 6 : 18 \\div 6 = 4 : 3\\)"
+              "explain": "Keep the requested order: boys to girls.",
+              "work": "\\(24:18\\)"
+            },
+            {
+              "explain": "Divide both parts by 6.",
+              "work": "\\(24:18=4:3\\)"
             }
           ],
           "xp": 1,
@@ -1640,8 +1796,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Write boys first and girls second, then divide both numbers by their greatest common factor.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q2b",
@@ -1649,16 +1809,20 @@
           "stem": "An athletics team consists of 24 boys and 18 girls. What is the ratio of girls to the total number in the team in simplest terms?",
           "difficulty": "easy",
           "options": [
-            "\\(3 : 7\\)",
             "\\(18 : 42\\)",
             "\\(3 : 4\\)",
-            "\\(1 : 2\\)"
+            "\\(1 : 2\\)",
+            "\\(3 : 7\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Total = 24 + 18 = 42. Ratio is 18 : 42.",
-              "work": "\\(18 \\div 6 : 42 \\div 6 = 3 : 7\\)"
+              "explain": "Find the total number of team members.",
+              "work": "\\(24+18=42\\)"
+            },
+            {
+              "explain": "Form girls : total and simplify by 6.",
+              "work": "\\(18:42=(18\\div6):(42\\div6)=3:7\\)"
             }
           ],
           "xp": 1,
@@ -1667,8 +1831,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "Find the whole team size first, then compare girls with that total.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q5",
@@ -1676,30 +1844,38 @@
           "stem": "Write the scale \\(4 \\text{ cm} : 2 \\text{ m}\\) in simplest ratio form.",
           "difficulty": "medium",
           "options": [
-            "\\(1 : 50\\)",
             "\\(4 : 200\\)",
+            "\\(1 : 50\\)",
             "\\(2 : 100\\)",
             "\\(1 : 500\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "Convert 2 m to cm: \\(2 \\times 100 = 200\\) cm.",
-              "work": "\\(4 \\text{ cm} : 200 \\text{ cm}\\)"
+              "explain": "Convert the real length to centimetres.",
+              "work": "\\(2\\text{ m}=200\\text{ cm}\\)"
             },
             {
-              "explain": "Simplify by dividing by HCF (4).",
-              "work": "\\(1 : 50\\)"
+              "explain": "Write the ratio with matching units.",
+              "work": "\\(4\\text{ cm}:200\\text{ cm}=4:200\\)"
+            },
+            {
+              "explain": "Divide both parts by 4.",
+              "work": "\\(4:200=1:50\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Convert metres to centimetres first so both sides use the same unit.",
+          "timeLimit": 60
         }
       ]
     },
@@ -1745,30 +1921,38 @@
           "stem": "Jack and Jill have weights in the ratio \\(6 : 5\\). If Jill's weight is \\(75\\) kg, what is Jack's weight?",
           "difficulty": "medium",
           "options": [
-            "\\(90 \\text{ kg}\\)",
             "\\(62.5 \\text{ kg}\\)",
             "\\(80 \\text{ kg}\\)",
+            "\\(90 \\text{ kg}\\)",
             "\\(85 \\text{ kg}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Find the value of one part: Jill is 5 parts = 75 kg.",
-              "work": "\\(1 \\text{ part} = 75 \\div 5 = 15 \\text{ kg}\\)"
+              "explain": "Jill’s 5 equal parts weigh 75 kg, so find the weight of one part.",
+              "work": "\\(75\\div5=15\\text{ kg per part}\\)"
             },
             {
-              "explain": "Jack is 6 parts.",
-              "work": "\\(6 \\times 15 = 90 \\text{ kg}\\)"
+              "explain": "Jack has 6 parts.",
+              "work": "\\(6\\times15=90\\text{ kg}\\)"
+            },
+            {
+              "explain": "Check the ratio: \\(90:75\\) reduces to \\(6:5\\).",
+              "work": "\\(90:75=6:5\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "The 5 parts represent Jill’s 75 kg. Find one part, then find Jack’s 6 parts.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q4",
@@ -1784,22 +1968,30 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Total parts = 5 + 3 = 8.",
-              "work": "\\(1 \\text{ part} = 48 \\div 8 = 6\\)"
+              "explain": "Count the total equal shares.",
+              "work": "\\(5+3=8\\text{ shares}\\)"
             },
             {
-              "explain": "Calculate each share.",
-              "work": "\\(5 \\times 6 = 30 \\text{ and } 3 \\times 6 = 18\\)"
+              "explain": "Find the value of one share.",
+              "work": "\\(48\\div8=6\\text{ dollars per share}\\)"
+            },
+            {
+              "explain": "Allocate 5 shares and 3 shares.",
+              "work": "\\(5\\times6=30,\\quad3\\times6=18\\)\n\\(30+18=48\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Add the ratio parts to get the total number of shares before dividing $48.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q6",
@@ -1807,30 +1999,38 @@
           "stem": "A paint colour 'Hot Pink' is made by mixing red and white paint in the ratio \\(5 : 3\\). In a 4-litre can of 'Hot Pink', how much red paint is used?",
           "difficulty": "medium",
           "options": [
-            "\\(2.5 \\text{ L}\\)",
             "\\(2 \\text{ L}\\)",
             "\\(1.5 \\text{ L}\\)",
-            "\\(3 \\text{ L}\\)"
+            "\\(3 \\text{ L}\\)",
+            "\\(2.5 \\text{ L}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Total parts = 5 + 3 = 8.",
-              "work": "\\(1 \\text{ part} = 4 \\div 8 = 0.5 \\text{ L}\\)"
+              "explain": "Add the red and white ratio parts.",
+              "work": "\\(5+3=8\\text{ parts}\\)"
             },
             {
-              "explain": "Red paint = 5 parts.",
-              "work": "\\(5 \\times 0.5 = 2.5 \\text{ L}\\)"
+              "explain": "Find litres per part in the 4 L can.",
+              "work": "\\(4\\div8=0.5\\text{ L per part}\\)"
+            },
+            {
+              "explain": "Red paint is 5 parts.",
+              "work": "\\(5\\times0.5=2.5\\text{ L}\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "There are 5+3 total parts. Find the litre value of one part, then take 5 parts for red paint.",
+          "timeLimit": 60
         }
       ]
     },
@@ -3953,30 +4153,38 @@
           "stem": "A tap leaks at a rate of 1 L every 4 hours. How many minutes will it take for the tap to leak a total of 200 mL?",
           "difficulty": "medium",
           "options": [
-            "\\(48 \\text{ min}\\)",
             "\\(80 \\text{ min}\\)",
+            "\\(48 \\text{ min}\\)",
             "\\(20 \\text{ min}\\)",
             "\\(200 \\text{ min}\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "Convert rate: 1 L = 1000 mL in 4 hours = 240 min.",
-              "work": "\\(\\text{Rate} = \\frac{1000 \\text{ mL}}{240 \\text{ min}}\\)"
+              "explain": "Convert the given rate to millilitres per minute.",
+              "work": "\\(1\\text{ L}=1000\\text{ mL},\\quad4\\text{ h}=240\\text{ min}\\)"
             },
             {
-              "explain": "Time for 200 mL.",
-              "work": "\\(200 \\div \\frac{1000}{240} = 200 \\times \\frac{240}{1000} = 48 \\text{ min}\\)"
+              "explain": "Find how long it takes to leak 1 mL, then scale to 200 mL.",
+              "work": "\\(240\\div1000=0.24\\text{ min/mL}\\)\n\\(200\\times0.24=48\\text{ min}\\)"
+            },
+            {
+              "explain": "Check using the fraction of a litre.",
+              "work": "\\(200/1000=1/5,\\quad240/5=48\\text{ min}\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Convert 1 L to 1000 mL and 4 hours to minutes, then take one fifth of the time because 200 mL is one fifth of 1 L.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q11",
@@ -3984,30 +4192,34 @@
           "stem": "The distance between two cities is measured as 6.2 cm on a map with scale \\(1 : 5\\,000\\,000\\). What is the actual distance between the two cities in kilometres?",
           "difficulty": "medium",
           "options": [
-            "\\(310 \\text{ km}\\)",
             "\\(31 \\text{ km}\\)",
             "\\(3100 \\text{ km}\\)",
+            "\\(310 \\text{ km}\\)",
             "\\(3.1 \\text{ km}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Multiply the map distance by the scale factor.",
-              "work": "\\(6.2 \\times 5\\,000\\,000 = 31\\,000\\,000 \\text{ cm}\\)"
+              "explain": "Multiply the map distance by 5,000,000.",
+              "work": "\\(6.2\\times5{,}000{,}000=31{,}000{,}000\\text{ cm}\\)"
             },
             {
-              "explain": "Convert to km: divide by 100,000.",
-              "work": "\\(31\\,000\\,000 \\div 100\\,000 = 310 \\text{ km}\\)"
+              "explain": "Convert centimetres to kilometres: 100,000 cm = 1 km.",
+              "work": "\\(31{,}000{,}000\\div100{,}000=310\\text{ km}\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Use the scale to convert 6.2 cm on the map into actual centimetres, then convert centimetres to kilometres.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q12",
@@ -4023,12 +4235,16 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Add 19 hours 27 minutes to 11:15 am.",
-              "work": "\\(11{:}15 + 19{:}00 = 6{:}15 \\text{ am (next day)}\\)"
+              "explain": "Add 12 hours to reach 11:15 pm Tuesday; 7 hours remain.",
+              "work": "\\(11{:}15\\text{ am Tue}+12\\text{ h}=11{:}15\\text{ pm Tue}\\)"
             },
             {
-              "explain": "Add the remaining 27 minutes.",
-              "work": "\\(6{:}15 + 27 \\text{ min} = 6{:}42 \\text{ am Wednesday}\\)"
+              "explain": "Add the remaining 7 hours, crossing midnight.",
+              "work": "\\(11{:}15\\text{ pm Tue}+7\\text{ h}=6{:}15\\text{ am Wed}\\)"
+            },
+            {
+              "explain": "Add 27 minutes.",
+              "work": "\\(6{:}15+27\\text{ min}=6{:}42\\text{ am Wednesday}\\)"
             }
           ],
           "xp": 1,
@@ -4037,8 +4253,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Add 19 hours to Tuesday 11:15 am, then add 27 minutes and track the midnight crossing.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-s2q13",
@@ -4046,16 +4266,20 @@
           "stem": "The time in Sydney is 10 hours ahead of GMT (London). What is the time in Sydney when it is 10 am in London?",
           "difficulty": "easy",
           "options": [
-            "\\(8{:}00 \\text{ pm}\\)",
             "\\(12{:}00 \\text{ pm (noon)}\\)",
             "\\(8{:}00 \\text{ am}\\)",
-            "\\(10{:}00 \\text{ am}\\)"
+            "\\(10{:}00 \\text{ am}\\)",
+            "\\(8{:}00 \\text{ pm}\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Add 10 hours to 10:00 am.",
-              "work": "\\(10{:}00 \\text{ am} + 10 \\text{ h} = 8{:}00 \\text{ pm Sydney time}\\)"
+              "explain": "Add the time difference to 10:00 am.",
+              "work": "\\(10{:}00\\text{ am}+10\\text{ h}=20{:}00\\)"
+            },
+            {
+              "explain": "Write 20:00 in 12-hour time.",
+              "work": "\\(20{:}00=8{:}00\\text{ pm}\\)"
             }
           ],
           "xp": 1,
@@ -4064,8 +4288,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 1
+          },
+          "hint": "“10 hours ahead” means add 10 hours to London time.",
+          "timeLimit": 60
         }
       ]
     }

@@ -2186,20 +2186,24 @@
           "stem": "Solve \\(2x + 4 = 12\\).",
           "difficulty": "easy",
           "options": [
-            "\\(x = 4\\)",
             "\\(x = 8\\)",
             "\\(x = 6\\)",
+            "\\(x = 4\\)",
             "\\(x = 3\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Subtract 4 from both sides.",
-              "work": "\\(2x = 12 - 4 = 8\\)"
+              "explain": "Isolate the term containing \\(x\\) by removing the added 4 from both sides.",
+              "work": "\\(2x+4-4=12-4\\)\n\\(2x=8\\)"
             },
             {
-              "explain": "Divide both sides by 2.",
-              "work": "\\(x = \\dfrac{8}{2} = 4\\)"
+              "explain": "Undo multiplication by 2 by dividing both sides by 2.",
+              "work": "\\(x=\\dfrac{8}{2}=4\\)"
+            },
+            {
+              "explain": "Check the value in the original equation.",
+              "work": "\\(2(4)+4=8+4=12\\)"
             }
           ],
           "xp": 1,
@@ -2208,29 +2212,37 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Undo the addition first, then undo the multiplication.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-q1b",
           "type": "mc",
-          "stem": "Solve \\(\\dfrac{x}{2} - 6 = -2\\).",
+          "stem": "Solve \\(\\dfrac{m}{3}-6=-2\\).",
           "difficulty": "easy",
           "options": [
-            "\\(x = 8\\)",
-            "\\(x = 4\\)",
-            "\\(x = -16\\)",
-            "\\(x = 16\\)"
+            "\\(m=12\\)",
+            "\\(m=-12\\)",
+            "\\(m=4\\)",
+            "\\(m=18\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Add 6 to both sides.",
-              "work": "\\(\\dfrac{x}{2} = -2 + 6 = 4\\)"
+              "explain": "Add 6 to both sides to remove the subtraction.",
+              "work": "\\(\\dfrac{m}{3}-6+6=-2+6\\)\n\\(\\dfrac{m}{3}=4\\)"
             },
             {
-              "explain": "Multiply both sides by 2.",
-              "work": "\\(x = 4 \\times 2 = 8\\)"
+              "explain": "Multiply both sides by 3.",
+              "work": "\\(m=4\\times3=12\\)"
+            },
+            {
+              "explain": "Check in the original equation.",
+              "work": "\\(12/3-6=4-6=-2\\)"
             }
           ],
           "xp": 1,
@@ -2239,33 +2251,37 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Add 6 to both sides first, then multiply both sides by 3 to isolate m.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-q1c",
           "type": "mc",
-          "stem": "Solve \\(\\dfrac{3x + 5}{4} = 2\\).",
+          "stem": "Solve \\(\\dfrac{-4t}{5}=2\\).",
           "difficulty": "easy",
           "options": [
-            "\\(x = 1\\)",
-            "\\(x = 3\\)",
-            "\\(x = 2\\)",
-            "\\(x = -1\\)"
+            "\\(t=-2.5\\)",
+            "\\(t=2.5\\)",
+            "\\(t=-0.4\\)",
+            "\\(t=0.4\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Multiply both sides by 4.",
-              "work": "\\(3x + 5 = 8\\)"
+              "explain": "Multiply both sides by 5 to remove the denominator.",
+              "work": "\\(\\dfrac{-4t}{5}=2\\Rightarrow-4t=10\\)"
             },
             {
-              "explain": "Subtract 5 from both sides.",
-              "work": "\\(3x = 3\\)"
+              "explain": "Divide both sides by -4. Keep the negative sign.",
+              "work": "\\(t=\\dfrac{10}{-4}=-2.5\\)"
             },
             {
-              "explain": "Divide by 3.",
-              "work": "\\(x = 1\\)"
+              "explain": "Substitute to check the value.",
+              "work": "\\(\\dfrac{-4(-2.5)}5=\\dfrac{10}5=2\\)"
             }
           ],
           "xp": 1,
@@ -2274,8 +2290,12 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Multiply both sides by 5 first, then divide by -4.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-q1d",
@@ -2283,51 +2303,24 @@
           "stem": "Solve \\(5(c + 4) = 2(2c - 1)\\).",
           "difficulty": "medium",
           "options": [
-            "\\(c = -22\\)",
             "\\(c = 22\\)",
+            "\\(c = -22\\)",
             "\\(c = -18\\)",
             "\\(c = 2\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "Expand both sides.",
-              "work": "\\(5c + 20 = 4c - 2\\)"
+              "explain": "Expand each bracket.",
+              "work": "\\(5(c+4)=2(2c-1)\\)\n\\(5c+20=4c-2\\)"
             },
             {
-              "explain": "Subtract \\(4c\\) from both sides.",
-              "work": "\\(c + 20 = -2\\)"
+              "explain": "Subtract \\(4c\\), then subtract 20 from both sides.",
+              "work": "\\(c+20=-2\\)\n\\(c=-22\\)"
             },
             {
-              "explain": "Subtract 20 from both sides.",
-              "work": "\\(c = -22\\)"
-            }
-          ],
-          "xp": 2,
-          "meta": {
-            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
-            "school": "Willoughby Girls High School",
-            "examType": "Assessment Task 4",
-            "grade": "8",
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "wghs2023-y8-q2a",
-          "type": "mc",
-          "stem": "Solve \\(m^2 = 81\\).",
-          "difficulty": "easy",
-          "options": [
-            "\\(m = \\pm 9\\)",
-            "\\(m = 9\\)",
-            "\\(m = \\pm 40.5\\)",
-            "\\(m = \\pm 81\\)"
-          ],
-          "answer": 0,
-          "steps": [
-            {
-              "explain": "Take the square root of both sides. Remember both positive and negative roots.",
-              "work": "\\(m = \\pm\\sqrt{81} = \\pm 9\\)"
+              "explain": "Check both sides with \\(c=-22\\).",
+              "work": "\\(5(-18)=-90\\), and \\(2(-45)=-90\\)"
             }
           ],
           "xp": 1,
@@ -2336,8 +2329,51 @@
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 3
+          },
+          "hint": "Expand both brackets carefully, then collect the c terms on one side.",
+          "timeLimit": 60
+        },
+        {
+          "id": "wghs2023-y8-q2a",
+          "type": "mc",
+          "stem": "Solve \\(m^2 = 81\\).",
+          "difficulty": "easy",
+          "options": [
+            "\\(m = 9\\)",
+            "\\(m = \\pm 40.5\\)",
+            "\\(m = \\pm 9\\)",
+            "\\(m = \\pm 81\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A square root equation has two solutions because a positive and a negative number can have the same square.",
+              "work": "\\(m^2=81\\Rightarrow m=\\pm\\sqrt{81}\\)"
+            },
+            {
+              "explain": "Evaluate the square root.",
+              "work": "\\(m=\\pm9\\)"
+            },
+            {
+              "explain": "Check both values.",
+              "work": "\\(9^2=81\\quad\\text{and}\\quad(-9)^2=81\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
+            "school": "Willoughby Girls High School",
+            "examType": "Assessment Task 4",
+            "grade": "8",
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Ask which positive and negative numbers both give 81 when squared.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-q2b",
@@ -2345,26 +2381,38 @@
           "stem": "Solve \\(x^2 = 66\\). Write your answer to two decimal places.",
           "difficulty": "easy",
           "options": [
-            "\\(x \\approx \\pm 8.12\\)",
-            "\\(x \\approx \\pm 8.12\\)",
-            "\\(x \\approx 8.12\\)",
-            "\\(x \\approx 33\\)"
+            "\\(x\\approx8.12\\)",
+            "\\(x\\approx\\pm8.00\\)",
+            "\\(x\\approx\\pm33\\)",
+            "\\(x\\approx\\pm8.12\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Take the square root of both sides.",
-              "work": "\\(x = \\pm\\sqrt{66} \\approx \\pm 8.12\\)"
+              "explain": "Take the positive and negative square roots.",
+              "work": "\\(x^2=66\\Rightarrow x=\\pm\\sqrt{66}\\)"
+            },
+            {
+              "explain": "Evaluate the square root and round to two decimal places.",
+              "work": "\\(\\sqrt{66}=8.124\\ldots\\)\n\\(x\\approx\\pm8.12\\)"
+            },
+            {
+              "explain": "Check that both signs are needed because squaring either gives 66.",
+              "work": "\\((8.12)^2\\approx66\\quad\\text{and}\\quad(-8.12)^2\\approx66\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Take both square roots of 66, then round each root to two decimal places.",
+          "timeLimit": 60
         }
       ]
     },
@@ -2454,34 +2502,38 @@
           "stem": "Solve \\(2y + 18 = 11 - 5y\\).",
           "difficulty": "medium",
           "options": [
-            "\\(y = -1\\)",
             "\\(y = 1\\)",
             "\\(y = -7\\)",
-            "\\(y = 7\\)"
+            "\\(y = 7\\)",
+            "\\(y = -1\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "steps": [
             {
               "explain": "Add \\(5y\\) to both sides.",
-              "work": "\\(7y + 18 = 11\\)"
+              "work": "\\(2y+5y+18=11\\)\n\\(7y+18=11\\)"
             },
             {
-              "explain": "Subtract 18 from both sides.",
-              "work": "\\(7y = -7\\)"
+              "explain": "Subtract 18, then divide by 7.",
+              "work": "\\(7y=11-18=-7\\)\n\\(y=-7/7=-1\\)"
             },
             {
-              "explain": "Divide by 7.",
-              "work": "\\(y = -1\\)"
+              "explain": "Check: the left and right sides are both 16.",
+              "work": "\\(2(-1)+18=16=11-5(-1)\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 2
+          },
+          "hint": "Add 5y to both sides so all y terms are together, then subtract 18.",
+          "timeLimit": 60
         }
       ]
     },
@@ -2531,73 +2583,77 @@
           "stem": "If a number has 3 added to it and then is doubled, the result is equal to 5. Find the number.",
           "difficulty": "medium",
           "options": [
-            "\\(-0.5\\)",
             "\\(1\\)",
+            "\\(-0.5\\)",
             "\\(-1\\)",
             "\\(0.5\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "steps": [
             {
-              "explain": "Let the number be \\(n\\). Write an equation.",
-              "work": "\\(2(n + 3) = 5\\)"
+              "explain": "Let \\(n\\) be the unknown number. Adding 3 gives \\(n+3\\), and then doubling gives \\(2(n+3)\\).",
+              "work": "\\(2(n+3)=5\\)"
             },
             {
-              "explain": "Expand.",
-              "work": "\\(2n + 6 = 5\\)"
+              "explain": "Undo the doubling by dividing both sides by 2.",
+              "work": "\\(n+3=5/2=2.5\\)"
             },
             {
-              "explain": "Subtract 6.",
-              "work": "\\(2n = -1\\)"
-            },
-            {
-              "explain": "Divide by 2.",
-              "work": "\\(n = -0.5\\)"
+              "explain": "Subtract 3 and check the stated order.",
+              "work": "\\(n=2.5-3=-0.5\\)\n\\(2(-0.5+3)=2(2.5)=5\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 3
+          },
+          "hint": "Let n be the number. Translate “add 3, then double” in that order.",
+          "timeLimit": 60
         },
         {
           "id": "wghs2023-y8-q3b",
           "type": "mc",
-          "stem": "Tania paid a plumber a total of \\(\\\\). The plumber charged a one-off fee of \\(\\\\) and then \\(\\\\) per hour. For how many hours did the plumber work?",
+          "stem": "Tania paid a plumber a total of $2,900. The plumber charged a one-off fee of $150 and then $125 per hour. For how many hours did the plumber work?",
           "difficulty": "medium",
           "options": [
-            "\\(22 \\text{ hours}\\)",
             "\\(20 \\text{ hours}\\)",
             "\\(24 \\text{ hours}\\)",
+            "\\(22 \\text{ hours}\\)",
             "\\(18 \\text{ hours}\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "steps": [
             {
-              "explain": "Let \\(h\\) = number of hours. Write an equation.",
-              "work": "\\(150 + 125h = 2900\\)"
+              "explain": "Let \\(h\\) be the number of hours. Total cost is the fee plus hourly charge.",
+              "work": "\\(150+125h=2900\\)"
             },
             {
-              "explain": "Subtract 150.",
-              "work": "\\(125h = 2750\\)"
+              "explain": "Subtract the one-off fee to find the amount charged for hours.",
+              "work": "\\(125h=2900-150=2750\\)"
             },
             {
-              "explain": "Divide by 125.",
-              "work": "\\(h = 22 \\text{ hours}\\)"
+              "explain": "Divide by the hourly rate and check.",
+              "work": "\\(h=2750/125=22\\)\n\\(150+125(22)=150+2750=2900\\)"
             }
           ],
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 8 Assessment Task 4 2023",
             "school": "Willoughby Girls High School",
             "examType": "Assessment Task 4",
             "grade": "8",
-            "origin": "teacher"
-          }
+            "origin": "teacher",
+            "sourceQuestion": "Section 2",
+            "sourceMarks": 3
+          },
+          "hint": "Subtract the one-off fee first; the remainder is the hourly charge.",
+          "timeLimit": 60
         }
       ]
     },
