@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#e28a00;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style>
-<path d="M180 300L350 65L520 300Z" class="blue"/>
-<path d="M258 193l18 13M424 206l18-13" stroke="#34445a" stroke-width="3" fill="none" stroke-linecap="round"/>
-<path d="M 203.4 267.6 A 40 40 0 0 1 220.0 300.0" class="thin"/>
-<path d="M 480.0 300.0 A 40 40 0 0 1 496.6 267.6" class="thin"/>
-<path d="M 373.4 97.4 A 40 40 0 0 1 326.6 97.4" class="thin"/>
-<text x="210" y="285">70°</text>
-<text x="196" y="180">7 cm</text>
-<text x="446" y="180">7 cm</text>
-<text x="460" y="285">b°</text>
-<text x="343" y="125">a°</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:24px}.shape{stroke:#34445a;stroke-width:5;fill:#dceafe;stroke-linecap:round;stroke-linejoin:round}.tick{stroke:#34445a;stroke-width:4;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d="M 252 350 L 350 80 L 448 350 Z" class="shape"/><path d="M 290.66 211.24 l 20.68 7.52 M 409.34 211.24 l -20.68 7.52" class="tick"/><path d="M 294 350 L 293.9 347.15 L 293.61 344.32 L 293.13 341.51 L 292.46 338.74 L 291.6 336.02 L 290.57 333.36 L 289.35 330.79 L 287.96 328.3 L 286.4 325.91 L 284.69 323.63 L 282.83 321.48 L 280.82 319.45 L 278.68 317.57 L 276.42 315.83 L 274.05 314.25 L 271.57 312.84 L 269.01 311.6 L 266.36 310.53 M 337.69 113.83 L 339.01 114.28 L 340.35 114.68 L 341.7 115.03 L 343.06 115.33 L 344.44 115.57 L 345.82 115.76 L 347.21 115.89 L 348.6 115.97 L 350 116 L 351.4 115.97 L 352.79 115.89 L 354.18 115.76 L 355.56 115.57 L 356.94 115.33 L 358.3 115.03 L 359.65 114.68 L 360.99 114.28 L 362.31 113.83 M 433.64 310.53 L 430.99 311.6 L 428.43 312.84 L 425.95 314.25 L 423.58 315.83 L 421.32 317.57 L 419.18 319.45 L 417.17 321.48 L 415.31 323.63 L 413.6 325.91 L 412.04 328.3 L 410.65 330.79 L 409.43 333.36 L 408.4 336.02 L 407.54 338.74 L 406.87 341.51 L 406.39 344.32 L 406.1 347.15 L 406 350" class="arc"/><text x="279" y="320">70°</text><text x="382" y="323">b°</text><text x="334" y="164">a°</text><text x="259" y="204" text-anchor="end">7 cm</text><text x="443" y="204">7 cm</text></svg>
