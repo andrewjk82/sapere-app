@@ -3444,8 +3444,8 @@
               "hint": "Use the whole number of tins found in part (a).",
               "steps": [
                 {
-                  "explain": "Use the 5 whole tins required to cover 460 m².",
-                  "work": "5\\text{ tins}\\times\\$27.55\\text{ per tin}"
+                  "explain": "There are 5 tins, and each tin costs $27.55, so multiply 5 by 27.55.",
+                  "work": "5\\times27.55"
                 },
                 {
                   "explain": "Multiply the price by 5.",
