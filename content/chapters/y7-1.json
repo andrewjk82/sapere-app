@@ -55623,8 +55623,8 @@
         {
           "id": "wghs-y7-2013-t3-n-q18",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Show working to evaluate \\(11-(8-3)\\times2+25\\div5\\).",
+          "difficulty": "medium",
           "options": [
             "16",
             "−4",
@@ -55645,7 +55645,7 @@
             }
           ],
           "timeLimit": 180,
-          "xp": 3,
+          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
             "school": "Willoughby Girls High School",
