@@ -2457,7 +2457,7 @@
               "explain": "Subtract 3 to get x/5=4, then multiply by 5 to get x=20."
             }
           ],
-          "timeLimit": 180,
+          "timeLimit": 90,
           "xp": 3,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
