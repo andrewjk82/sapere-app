@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style><path d="M190 275A160 160 0 0 1 510 275" class="line"/><g class="thin"><path d="M190 275h18M202 220l17 6M236 173l15 13M288 128l8 18M350 115v20M412 128l-8 18M464 173l-15 13M498 220l-17 6M510 275h-18"/></g><circle cx="350" cy="275" r="12" fill="#34445a"/><path d="M350 275L212 195" stroke="#d84b4b" stroke-width="6"/><text x="175" y="305">0</text><text x="210" y="220">20</text><text x="257" y="170">40</text><text x="310" y="133">60</text><text x="340" y="100">80</text><text x="400" y="133">100</text><text x="450" y="170">120</text><text x="485" y="220">140</text><text x="500" y="305">160</text><rect x="275" y="225" width="150" height="38" rx="6" fill="#eef3f9" stroke="#34445a"/><text x="290" y="251">081057.6 km</text><text x="310" y="345">km/h</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img">
+<style>
+text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}
+.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}
+.blue{fill:#dceafe;stroke:#34445a;stroke-width:4}
+.grid{stroke:#dbe4ef;stroke-width:1.5}
+</style>
+<path d="M190 275A160 160 0 0 1 510 275" class="line"/>
+<g class="thin">
+<path d="M190 275h18M202 220l17 6M236 173l15 13M288 128l8 18M350 115v20M412 128l-8 18M464 173l-15 13M498 220l-17 6M510 275h-18"/>
+</g>
+<circle cx="350" cy="275" r="12" fill="#34445a"/>
+<path d="M350 275L212 195" stroke="#d84b4b" stroke-width="6"/>
+
+<g text-anchor="middle">
+<text x="165" y="282">0</text>
+<text x="179" y="211">20</text>
+<text x="219" y="151">40</text>
+<text x="279" y="111">60</text>
+<text x="350" y="97">80</text>
+<text x="421" y="111">100</text>
+<text x="481" y="151">120</text>
+<text x="521" y="211">140</text>
+<text x="535" y="282">160</text>
+</g>
+
+<rect x="275" y="225" width="150" height="38" rx="6" fill="#eef3f9" stroke="#34445a"/>
+<text x="350" y="251" text-anchor="middle">081057.6 km</text>
+<text x="350" y="345" text-anchor="middle">km/h</text>
+</svg>
