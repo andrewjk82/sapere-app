@@ -2448,6 +2448,43 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q30",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(F=32+\\frac{9C}{5}\\), find \\(F\\) when \\(C=15\\).",
+          "options": [
+            "\\(F=59\\)",
+            "\\(F=47\\)",
+            "\\(F=86\\)",
+            "\\(F=41\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute 15 for C, then multiply and divide before adding 32.",
+          "steps": [
+            {
+              "explain": "Replace \\(C\\) with 15: \\(F=32+\\frac{9\\times15}{5}\\)."
+            },
+            {
+              "explain": "\\(9\\times15=135\\), and \\(135\\div5=27\\)."
+            },
+            {
+              "explain": "\\(F=32+27=59\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 9,
+            "question": 30,
+            "section": "Part 3 — Application",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
