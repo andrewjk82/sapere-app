@@ -2030,7 +2030,15 @@
                 "origin": "teacher"
               },
               "figure": {
-                "svg": "fig:d75be9d172"
+                "jsxGraph": {
+                  "script": "\n    const A = board.create('point', [0, 0], { visible: false });\n    const B = board.create('point', [6, 0], { visible: false });\n    const C = board.create('point', [3, 8.24], { visible: false });\n    \n    const poly = board.create('polygon', [A, B, C], {\n      borders: { strokeWidth: 3, strokeColor: '#34445a' },\n      fillColor: '#dceafe', fillOpacity: 1\n    });\n    \n    board.create('angle', [B, A, C], { radius: 1.5, name: '70&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    board.create('angle', [C, B, A], { radius: 1.5, name: 'b&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    board.create('angle', [A, C, B], { radius: 1.5, name: 'a&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    \n    board.create('text', [0.8, 4.5, '7 cm'], { fontSize: 18, cssClass: 'jsxgraph-label' });\n    board.create('text', [4.2, 4.5, '7 cm'], { fontSize: 18, cssClass: 'jsxgraph-label' });\n    \n    board.create('hatch', [poly.borders[2]], { face: '|', strokeWidth: 3, strokeColor: '#34445a' });\n    board.create('hatch', [poly.borders[1]], { face: '|', strokeWidth: 3, strokeColor: '#34445a' });\n  ",
+                  "boundingBox": [
+                    -1.5,
+                    10,
+                    7.5,
+                    -1
+                  ]
+                }
               }
             },
             {
@@ -2067,7 +2075,15 @@
                 "origin": "teacher"
               },
               "figure": {
-                "svg": "fig:d75be9d172"
+                "jsxGraph": {
+                  "script": "\n    const A = board.create('point', [0, 0], { visible: false });\n    const B = board.create('point', [6, 0], { visible: false });\n    const C = board.create('point', [3, 8.24], { visible: false });\n    \n    const poly = board.create('polygon', [A, B, C], {\n      borders: { strokeWidth: 3, strokeColor: '#34445a' },\n      fillColor: '#dceafe', fillOpacity: 1\n    });\n    \n    board.create('angle', [B, A, C], { radius: 1.5, name: '70&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    board.create('angle', [C, B, A], { radius: 1.5, name: 'b&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    board.create('angle', [A, C, B], { radius: 1.5, name: 'a&deg;', fillColor: 'none', strokeColor: '#34445a', strokeWidth: 2 });\n    \n    board.create('text', [0.8, 4.5, '7 cm'], { fontSize: 18, cssClass: 'jsxgraph-label' });\n    board.create('text', [4.2, 4.5, '7 cm'], { fontSize: 18, cssClass: 'jsxgraph-label' });\n    \n    board.create('hatch', [poly.borders[2]], { face: '|', strokeWidth: 3, strokeColor: '#34445a' });\n    board.create('hatch', [poly.borders[1]], { face: '|', strokeWidth: 3, strokeColor: '#34445a' });\n  ",
+                  "boundingBox": [
+                    -1.5,
+                    10,
+                    7.5,
+                    -1
+                  ]
+                }
               }
             },
             {
@@ -2104,7 +2120,15 @@
                 "origin": "teacher"
               },
               "figure": {
-                "svg": "fig:4c7d0724df"
+                "jsxGraph": {
+                  "script": "\n    const A = board.create('point', [1.9, 1.8], { visible: false });\n    const B = board.create('point', [4.55, 2.95], { visible: false });\n    const C = board.create('point', [5.2, 0.65], { visible: false });\n    const D = board.create('point', [2.55, 0.65], { visible: false });\n    \n    const poly = board.create('polygon', [A, B, C, D], {\n      borders: { strokeWidth: 3, strokeColor: '#34445a' },\n      fillColor: '#dceafe', fillOpacity: 1\n    });\n    \n    board.create('angle', [D, A, B], { radius: 0.5, name: '87&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n    board.create('angle', [B, A, D], { radius: 0.7, name: 'c&deg;', fillColor: 'none', strokeColor: '#6457e8', strokeWidth: 3 });\n    board.create('angle', [A, B, C], { radius: 0.5, name: '90&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3, type: 'square' });\n    board.create('angle', [B, C, D], { radius: 0.5, name: 'd&deg;', fillColor: 'none', strokeColor: 'transparent' });\n    board.create('angle', [C, D, A], { radius: 0.5, name: '110&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n  ",
+                  "boundingBox": [
+                    0.5,
+                    4,
+                    6.5,
+                    0
+                  ]
+                }
               }
             },
             {
@@ -2143,7 +2167,15 @@
                 "origin": "teacher"
               },
               "figure": {
-                "svg": "fig:4c7d0724df"
+                "jsxGraph": {
+                  "script": "\n    const A = board.create('point', [1.9, 1.8], { visible: false });\n    const B = board.create('point', [4.55, 2.95], { visible: false });\n    const C = board.create('point', [5.2, 0.65], { visible: false });\n    const D = board.create('point', [2.55, 0.65], { visible: false });\n    \n    const poly = board.create('polygon', [A, B, C, D], {\n      borders: { strokeWidth: 3, strokeColor: '#34445a' },\n      fillColor: '#dceafe', fillOpacity: 1\n    });\n    \n    board.create('angle', [D, A, B], { radius: 0.5, name: '87&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n    board.create('angle', [B, A, D], { radius: 0.7, name: 'c&deg;', fillColor: 'none', strokeColor: '#6457e8', strokeWidth: 3 });\n    board.create('angle', [A, B, C], { radius: 0.5, name: '90&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3, type: 'square' });\n    board.create('angle', [B, C, D], { radius: 0.5, name: 'd&deg;', fillColor: 'none', strokeColor: 'transparent' });\n    board.create('angle', [C, D, A], { radius: 0.5, name: '110&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n  ",
+                  "boundingBox": [
+                    0.5,
+                    4,
+                    6.5,
+                    0
+                  ]
+                }
               }
             },
             {
@@ -2180,7 +2212,15 @@
                 "origin": "teacher"
               },
               "figure": {
-                "svg": "fig:af16906664"
+                "jsxGraph": {
+                  "script": "\n    const A = board.create('point', [0.9, 0.9], { visible: false });\n    const B = board.create('point', [6.5, 0.9], { visible: false });\n    board.create('line', [A, B], { straightFirst: false, straightLast: false, strokeWidth: 3, strokeColor: '#34445a' });\n    \n    const D = board.create('point', [3.5, 0.9], { visible: false });\n    const E = board.create('point', [5.9, 0.9], { visible: false });\n    const C = board.create('point', [2.25, 3.05], { visible: false });\n    \n    const poly = board.create('polygon', [D, E, C], {\n      borders: { strokeWidth: 3, strokeColor: '#34445a' },\n      fillColor: 'transparent', fillOpacity: 1\n    });\n    \n    board.create('angle', [E, D, C], { radius: 0.5, name: '120&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n    board.create('angle', [C, D, A], { radius: 0.5, name: 'e&deg;', fillColor: 'none', strokeColor: '#e28a00', strokeWidth: 3 });\n    board.create('angle', [C, E, D], { radius: 0.5, name: '30&deg;', fillColor: 'none', strokeColor: 'transparent' });\n  ",
+                  "boundingBox": [
+                    0,
+                    4,
+                    7,
+                    0
+                  ]
+                }
               }
             }
           ],
