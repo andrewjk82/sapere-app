@@ -1050,7 +1050,7 @@
               "figure": {
                 "svg": "fig:c5a14ac9d9"
               },
-              "answer": "A triangle with two equal sides clearly marked.",
+              "answer": "Sample answer: Draw a triangle with two equal sides and mark those sides with matching tick marks.",
               "hint": "Draw a triangle and mark its two equal sides with matching tick marks.",
               "steps": [
                 {
@@ -1060,7 +1060,7 @@
                 {
                   "explain": "Mark the two equal sides with matching ticks so the defining feature is explicit.",
                   "figure": {
-                    "svg": "fig:5b21b63d11"
+                    "svg": "fig:41998d3b9f"
                   }
                 }
               ],
@@ -1091,7 +1091,7 @@
               "figure": {
                 "svg": "fig:c5a14ac9d9"
               },
-              "answer": "A triangle with one 90° angle clearly marked.",
+              "answer": "Sample answer: Draw a right-angled triangle and mark the 90° corner with a small square.",
               "hint": "Make one pair of sides perpendicular and mark the right angle.",
               "steps": [
                 {
@@ -1101,7 +1101,7 @@
                 {
                   "explain": "Complete the triangle and mark the 90° corner with a small square.",
                   "figure": {
-                    "svg": "fig:7aa608fdb5"
+                    "svg": "fig:6b4aa246c2"
                   }
                 }
               ],
@@ -1132,7 +1132,7 @@
               "figure": {
                 "svg": "fig:c5a14ac9d9"
               },
-              "answer": "An angle greater than 90° and less than 180°.",
+              "answer": "Sample answer: Draw two rays forming an angle greater than 90° and less than 180°. Mark the obtuse angle.",
               "hint": "Make the opening wider than a right angle but smaller than a straight angle.",
               "steps": [
                 {
@@ -1142,7 +1142,7 @@
                 {
                   "explain": "Mark the interior angle as obtuse.",
                   "figure": {
-                    "svg": "fig:f2b53b064f"
+                    "svg": "fig:57e768a504"
                   }
                 }
               ],
@@ -1173,7 +1173,7 @@
               "figure": {
                 "svg": "fig:c5a14ac9d9"
               },
-              "answer": "An angle greater than 0° and less than 90°.",
+              "answer": "Sample answer: Draw two rays forming an angle greater than 0° and less than 90°. Mark the acute angle.",
               "hint": "Make the opening smaller than a right angle.",
               "steps": [
                 {
@@ -1183,7 +1183,7 @@
                 {
                   "explain": "Mark the interior angle as acute.",
                   "figure": {
-                    "svg": "fig:5a712712b4"
+                    "svg": "fig:75d2e56945"
                   }
                 }
               ],
