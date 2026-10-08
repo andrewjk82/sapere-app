@@ -5526,7 +5526,7 @@
               "work": "\\(3y+7\\)."
             }
           ],
-          "timeLimit": 45,
+          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
@@ -5612,7 +5612,7 @@
                   "work": "\\(16a+7a=23a\\)."
                 }
               ],
-              "timeLimit": 90,
+              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
@@ -5653,7 +5653,7 @@
                   "work": "\\(-5e-4e=-9e\\), giving \\(5-9e\\)."
                 }
               ],
-              "timeLimit": 90,
+              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
@@ -5679,7 +5679,8 @@
             "section": "Part 2 — Routine Processes",
             "marks": 5,
             "origin": "teacher"
-          }
+          },
+          "timeLimit": 60
         }
       ]
     },

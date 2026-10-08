@@ -4148,7 +4148,7 @@
                 }
               ],
               "timeLimit": 60,
-              "xp": 2,
+              "xp": 1,
               "meta": {
                 "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
                 "school": "Killara High School",
@@ -4195,8 +4195,8 @@
                   }
                 }
               ],
-              "timeLimit": 90,
-              "xp": 2,
+              "timeLimit": 60,
+              "xp": 1,
               "meta": {
                 "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
                 "school": "Killara High School",
@@ -4210,7 +4210,7 @@
               }
             }
           ],
-          "timeLimit": 150,
+          "timeLimit": 60,
           "xp": 3,
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
@@ -4250,8 +4250,8 @@
               "work": "\\(A=1.44\\text{ m}^2\\)."
             }
           ],
-          "timeLimit": 90,
-          "xp": 2,
+          "timeLimit": 60,
+          "xp": 1,
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
             "school": "Killara High School",
