@@ -313,8 +313,8 @@
         {
           "id": "y7-killara-23-q10",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Which percentage best represents an event that is likely?",
+          "difficulty": "easy",
           "options": [
             "\\(75\\%\\)",
             "\\(0\\%\\)",
@@ -336,6 +336,12 @@
           ],
           "timeLimit": 60,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "likely",
+              "note": "It is more than better chance"
+            }
+          ],
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
             "school": "Killara High School",
