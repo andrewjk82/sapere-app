@@ -5526,8 +5526,8 @@
         {
           "id": "wghs-y7-2013-t3-a-q7",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Simplify \\(5\\times m\\times m\\times m\\times9\\).",
+          "difficulty": "medium",
           "options": [
             "\\(45m\\)",
             "\\(14m^3\\)",
@@ -5544,8 +5544,7 @@
               "explain": "There are three factors of m, so the product is \\(45m^3\\)."
             }
           ],
-          "timeLimit": 120,
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
             "school": "Willoughby Girls High School",
