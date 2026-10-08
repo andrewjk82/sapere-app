@@ -273,6 +273,55 @@ deploy, so pushing the commit is the whole "index update."
 
 ## 7. Complete Workflow Checklist
 
+### Standing requirements from the user — apply to every new question task
+
+These are persistent requirements, not one-off corrections. Apply them whenever
+the user asks to add, convert, or revise questions, including every part of a
+multipart question.
+
+1. **Use the source accurately.** Read the supplied paper and its solutions/key.
+   Keep each question's wording, values, marks, diagrams, and subpart mapping
+   faithful to the source. A diagram that students need to solve the question
+   belongs in that question. Check that all marks and labels in a diagram agree
+   with the stated conditions and the answer key; resolve contradictions before
+   publishing rather than copying an inconsistent sketch.
+2. **Set suitable metadata.** Choose difficulty, expected time, and score/marks
+   to fit the actual mathematical work and source mark allocation. Keep the
+   intended answer correct after arranging the options; the stored `answer`
+   index must point to the correct option. Vary correct-option positions across
+   a question set and avoid obvious answer-patterns.
+3. **Prefer multiple choice where it fits.** Convert questions with a definite
+   answer to MC with four plausible, misconception-based options. Keep tasks
+   that genuinely require drawing, sketching, proving, showing, or constructed
+   working as review/free-response questions. Do not force those tasks into MC.
+4. **Include a useful English hint.** Every added question must have a concise,
+   student-friendly hint in English that points toward the relevant idea or
+   first move without giving away the answer.
+5. **Write a worked, question-specific solution.** Include detailed steps with
+   the mathematical facts, substitutions, calculations, and reasoning needed
+   to reach the answer. Do not rely on generic statements such as “use the angle
+   rule” in place of showing the actual calculation. For free-response tasks,
+   put a clear sample answer in the answer section; for a drawing or geometry
+   construction, include the completed sample diagram so students can compare
+   their work. For matching tasks, show the term-to-definition matches clearly.
+6. **Make diagrams part of the teaching.** Draw accurate, legible SVGs for
+   source diagrams students must use and for sample answers that need a visual.
+   In geometry solutions, use step figures where helpful to highlight the exact
+   angle, side, or relationship used in that step, alongside its calculation.
+7. **Visually inspect every diagram at student display size.** Confirm the
+   geometry is mathematically correct; every angle arc sits at its vertex and
+   inside the intended sector; angle/value/vertex labels are readable and do
+   not overlap each other, arcs, or line segments; side ticks and other marks
+   lie on the correct segments; and no content is clipped. In particular,
+   angle labels must not sit outside the intended angle or on a side. Check
+   question, sample-answer, and step diagrams, not only the first SVG. Valid SVG
+   syntax or a passing content validator does not replace visual inspection.
+8. **Finish with a content QA pass.** Check each prompt against its source,
+   each answer against the key, all choices and the correct `answer` index,
+   hint and worked solution, marks/time/difficulty, and all diagrams. Run
+   `npm run content:validate`, fix any new issues, and stage only files belonging
+   to this task.
+
 When the user says "문제들 객관식으로 바꿔":
 
 - [ ] 1. 해당 문제 ID를 `content/chapters/<chapterId>.json`에서 찾기 (모르면 `grep -rl '"<id>"' content/chapters/`)
