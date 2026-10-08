@@ -2763,6 +2763,86 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(10\\) as a percentage of \\(50\\).",
+          "options": [
+            "\\(5\\%\\)",
+            "\\(50\\%\\)",
+            "\\(40\\%\\)",
+            "\\(20\\%\\)"
+          ],
+          "answer": 3,
+          "hint": "Write 10 as a fraction of 50, then convert that fraction to a percentage.",
+          "steps": [
+            {
+              "explain": "The part-to-whole fraction is",
+              "work": "\\(\\frac{10}{50}\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(\\frac{10}{50}=\\frac15=0.2\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(0.2\\times100\\%=20\\%\\)."
+            }
+          ],
+          "timeLimit": 40,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 8,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rectangle’s length is increased by 25%. By what percentage must its width change so that its area stays the same?",
+          "options": [
+            "Increase by \\(25\\%\\)",
+            "Decrease by \\(25\\%\\)",
+            "Increase by \\(20\\%\\)",
+            "Decrease by \\(20\\%\\)"
+          ],
+          "answer": 3,
+          "hint": "Let the original dimensions be \\(L\\) and \\(W\\). Set the new area equal to \\(LW\\).",
+          "steps": [
+            {
+              "explain": "The new length is",
+              "work": "\\(1.25L\\). Let the new width be \\(W_{new}\\)."
+            },
+            {
+              "explain": "Keep area unchanged:",
+              "work": "\\(1.25L\\times W_{new}=L\\times W\\). Divide by \\(1.25L\\): \\(W_{new}=\\frac{W}{1.25}=0.8W\\)."
+            },
+            {
+              "explain": "The new width is 80% of the original, so it must decrease by",
+              "work": "\\(100\\%-80\\%=20\\%\\)."
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 4,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 10,
+            "question": 33,
+            "section": "Part 4 — Challenge",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2897,6 +2977,46 @@
             "\\(\\frac{23}{100}\\) attended, and \\(80.2\\%\\) did not attend",
             "\\(\\frac{1}{10}\\) attended, and \\(90\\%\\) did not attend"
           ]
+        },
+        {
+          "id": "y7-killara-23-t4b-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(40\\%\\) of \\(\\$500\\).",
+          "options": [
+            "\\(\\$20\\)",
+            "\\(\\$400\\)",
+            "\\(\\$250\\)",
+            "\\(\\$200\\)"
+          ],
+          "answer": 3,
+          "hint": "Find 10% of $500, then multiply that result by 4.",
+          "steps": [
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(10\\%\\) of \\(\\$500\\) is \\(\\$500\\div10=\\$50\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(40\\%=4\\times10\\%\\), so \\(4\\times\\$50=\\$200\\)."
+            },
+            {
+              "explain": "Therefore",
+              "work": "\\(40\\%\\) of \\(\\$500\\) is \\(\\$200\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 4,
+            "question": 16,
+            "section": "Part 2 — Routine Processes",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     }

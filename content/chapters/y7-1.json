@@ -3910,6 +3910,46 @@
             "grade": "7",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q29",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A cow is bought for \\(\\$100\\), sold for \\(\\$120\\), bought back for \\(\\$140\\), and sold again for \\(\\$160\\). What total profit or loss was made?",
+          "options": [
+            "\\(\\$80\\) profit",
+            "\\(\\$20\\) profit",
+            "\\(\\$40\\) loss",
+            "\\(\\$40\\) profit"
+          ],
+          "answer": 3,
+          "hint": "Work out the gain on each buy-and-sell cycle, then add the two gains.",
+          "steps": [
+            {
+              "explain": "First sale:",
+              "work": "\\(120-100=\\$20\\) profit."
+            },
+            {
+              "explain": "Second sale:",
+              "work": "\\(160-140=\\$20\\) profit."
+            },
+            {
+              "explain": "Total profit:",
+              "work": "\\(20+20=\\$40\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 9,
+            "question": 29,
+            "section": "Part 3 — Application",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -28742,6 +28782,45 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which technique sets up \\(13\\times21\\) for mental arithmetic without carrying out the multiplication?",
+          "options": [
+            "Rewrite it as \\((13+20)\\times1\\).",
+            "Rewrite it as \\(13\\times(20+1)=13\\times20+13\\times1\\).",
+            "Rewrite it as \\(13\\times(20-1)\\).",
+            "Rewrite it as \\(13+20+1\\)."
+          ],
+          "answer": 1,
+          "hint": "Break 21 into a nearby easy multiple of 10 plus the remaining 1, then use the distributive property.",
+          "steps": [
+            {
+              "explain": "Decompose",
+              "work": "\\(21=20+1\\), keeping the product unevaluated."
+            },
+            {
+              "explain": "Apply the distributive property:",
+              "work": "\\(13(20+1)=13\\times20+13\\times1\\)."
+            },
+            {
+              "explain": "This is a valid mental-arithmetic setup and does not perform the calculation."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 7,
+            "question": 22,
+            "section": "Part 3 — Application",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -38188,6 +38267,45 @@
             "marks": 2,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(17\\times12\\).",
+          "options": [
+            "\\(194\\)",
+            "\\(29\\)",
+            "\\(214\\)",
+            "\\(204\\)"
+          ],
+          "answer": 3,
+          "hint": "Split 12 into 10 and 2, multiply each part by 17, then add.",
+          "steps": [
+            {
+              "explain": "Use the distributive property to break apart 12."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(17\\times12=17\\times(10+2)=(17\\times10)+(17\\times2)\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(170+34=204\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 4,
+            "question": 12,
+            "section": "Part 2 — Routine Processes",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -46776,6 +46894,46 @@
               "note": "Split it: (a ± b) ÷ c = a ÷ c ± b ÷ c. Divide each part, then combine."
             }
           ]
+        },
+        {
+          "id": "y7-killara-23-t4b-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(112\\div8\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(14\\)",
+            "\\(16\\)",
+            "\\(18\\)"
+          ],
+          "answer": 1,
+          "hint": "Think: how many groups of 8 make 112? You can use the related fact \\(8\\times\\square=112\\).",
+          "steps": [
+            {
+              "explain": "Use multiplication to check the division: find",
+              "work": "\\(8\\times\\square=112\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(8\\times10=80\\), leaving \\(112-80=32\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(32\\div8=4\\), so \\(10+4=14\\). Thus \\(112\\div8=14\\)."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 2,
+            "question": 2,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -55654,6 +55812,84 @@
             "question": 18,
             "section": "Non-calculator Number",
             "marks": 3,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(\\dfrac{21-7}{2}\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(14\\)",
+            "\\(7\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Work inside the numerator first, then divide the result by 2.",
+          "steps": [
+            {
+              "explain": "The fraction bar groups the subtraction in the numerator."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(21-7=14\\)"
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(14\\div2=7\\)."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 2,
+            "question": 3,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(4+7\\times(3+7)\\).",
+          "options": [
+            "\\(110\\)",
+            "\\(81\\)",
+            "\\(74\\)",
+            "\\(47\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate the brackets first, then multiplication, and finally addition.",
+          "steps": [
+            {
+              "explain": "Start with the grouped sum."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\((3+7)=10\\), so the expression becomes \\(4+7\\times10\\)."
+            },
+            {
+              "explain": "Multiply before adding:",
+              "work": "\\(4+70=74\\)."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 7,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
             "origin": "teacher"
           }
         }

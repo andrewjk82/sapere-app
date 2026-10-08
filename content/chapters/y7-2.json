@@ -5556,6 +5556,45 @@
             "marks": 2,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(3\\times2^3\\).",
+          "options": [
+            "\\(216\\)",
+            "\\(18\\)",
+            "\\(11\\)",
+            "\\(24\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate the power before multiplying by 3.",
+          "steps": [
+            {
+              "explain": "The exponent 3 means multiply three 2s together."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(2^3=2\\times2\\times2=8\\)"
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(3\\times8=24\\)."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 2,
+            "question": 4,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -7028,6 +7067,46 @@
             "page": 4,
             "question": 19,
             "section": "Non-calculator Number",
+            "marks": 2,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(156\\) as a product of prime factors.",
+          "options": [
+            "\\(2^2\\times3^2\\times13\\)",
+            "\\(2\\times3^2\\times13\\)",
+            "\\(2^2\\times3\\times13\\)",
+            "\\(2\\times78\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide by the smallest prime factors repeatedly, then write the result using prime numbers only.",
+          "steps": [
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(156=2\\times78=2\\times2\\times39\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(39=3\\times13\\), and both 3 and 13 are prime."
+            },
+            {
+              "explain": "Thus",
+              "work": "\\(156=2^2\\times3\\times13\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 7,
+            "question": 23,
+            "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
           }
@@ -10143,6 +10222,45 @@
             "question": 22,
             "section": "Non-calculator Number",
             "marks": 3,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "True or False: \\(354\\) is divisible by \\(3\\)?",
+          "options": [
+            "True",
+            "False",
+            "Only if rounded to 350",
+            "Cannot be determined"
+          ],
+          "answer": 0,
+          "hint": "Add the digits of 354 and use the divisibility test for 3.",
+          "steps": [
+            {
+              "explain": "For a whole number to be divisible by 3, its digit sum must be divisible by 3."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(3+5+4=12\\), and \\(12\\div3=4\\)."
+            },
+            {
+              "explain": "Therefore",
+              "work": "\\(354\\) is divisible by 3, so the statement is true."
+            }
+          ],
+          "timeLimit": 40,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 2,
+            "question": 5,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
             "origin": "teacher"
           }
         }

@@ -1297,6 +1297,45 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(2x=10\\).",
+          "options": [
+            "\\(x=20\\)",
+            "\\(x=5\\)",
+            "\\(x=8\\)",
+            "\\(x=12\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo multiplication by 2 by dividing both sides by 2.",
+          "steps": [
+            {
+              "explain": "Divide both sides by 2 to keep the equation balanced."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(\\frac{2x}{2}=\\frac{10}{2}\\), so \\(x=5\\)."
+            },
+            {
+              "explain": "Check:",
+              "work": "\\(2\\times5=10\\), so the solution is correct."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 10,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -1735,6 +1774,149 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y7-killara-23-t4b-q18",
+          "type": "multipart",
+          "mc": true,
+          "difficulty": "medium",
+          "stem": "Solve each equation.",
+          "hint": "Keep each equation balanced: undo addition or subtraction first where appropriate, then undo multiplication or division.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y7-killara-23-t4b-q18a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve \\(5x+1=26\\).",
+              "options": [
+                "\\(x=6\\)",
+                "\\(x=25\\)",
+                "\\(x=\\frac{27}{5}\\)",
+                "\\(x=5\\)"
+              ],
+              "answer": 3,
+              "hint": "Undo the addition first, then undo multiplication by 5.",
+              "steps": [
+                {
+                  "explain": "Subtract 1 from both sides to isolate the term with x."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(5x=26-1=25\\)."
+                },
+                {
+                  "explain": "Divide both sides by 5:",
+                  "work": "\\(x=25\\div5=5\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 18,
+                "section": "Part 2 — Routine Processes",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-t4b-q18b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve \\(\\frac{u}{4}-6=9\\).",
+              "options": [
+                "\\(u=60\\)",
+                "\\(u=12\\)",
+                "\\(u=52\\)",
+                "\\(u=15\\)"
+              ],
+              "answer": 0,
+              "hint": "Undo subtraction by 6 first, then multiply by 4.",
+              "steps": [
+                {
+                  "explain": "Add 6 to both sides:",
+                  "work": "\\(\\frac{u}{4}=9+6=15\\)."
+                },
+                {
+                  "explain": "Multiply both sides by 4 to undo division by 4."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(u=15\\times4=60\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 18,
+                "section": "Part 2 — Routine Processes",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              }
+            },
+            {
+              "id": "y7-killara-23-t4b-q18c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Solve \\(\\frac{m+2}{3}=5\\).",
+              "options": [
+                "\\(m=17\\)",
+                "\\(m=13\\)",
+                "\\(m=15\\)",
+                "\\(m=\\frac{17}{3}\\)"
+              ],
+              "answer": 1,
+              "hint": "Multiply both sides by 3 before subtracting 2.",
+              "steps": [
+                {
+                  "explain": "Multiply both sides by 3 to clear the denominator."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(m+2=5\\times3=15\\)."
+                },
+                {
+                  "explain": "Subtract 2:",
+                  "work": "\\(m=15-2=13\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 18,
+                "section": "Part 2 — Routine Processes",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "c"
+              }
+            }
+          ],
+          "timeLimit": 270,
+          "xp": 6,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 5,
+            "question": 18,
+            "section": "Part 2 — Routine Processes",
+            "marks": 6,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2462,6 +2644,46 @@
             "question": 3,
             "section": "Algebra",
             "marks": 3,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three sacks have weights \\(A,B,C\\). Their pair totals are \\(A+B=35\\text{ kg}\\), \\(B+C=45\\text{ kg}\\), and \\(C+A=40\\text{ kg}\\). What are the weights \\((A,B,C)\\)?",
+          "options": [
+            "\\((10,25,20)\\text{ kg}\\)",
+            "\\((20,15,25)\\text{ kg}\\)",
+            "\\((15,20,25)\\text{ kg}\\)",
+            "\\((15,25,20)\\text{ kg}\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the three pair totals to get twice the combined weight, then subtract each known pair total to find the missing sack.",
+          "steps": [
+            {
+              "explain": "Add the equations:",
+              "work": "\\((A+B)+(B+C)+(C+A)=35+45+40=120\\). Each sack appears twice, so \\(2(A+B+C)=120\\), giving \\(A+B+C=60\\)."
+            },
+            {
+              "explain": "Find each sack by subtracting the opposite pair:",
+              "work": "\\(A=60-(B+C)=60-45=15\\text{ kg}\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(B=60-(C+A)=60-40=20\\text{ kg}\\), and \\(C=60-(A+B)=60-35=25\\text{ kg}\\). Check: 15+20=35, 20+25=45, 25+15=40."
+            }
+          ],
+          "timeLimit": 180,
+          "xp": 4,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 10,
+            "question": 32,
+            "section": "Part 4 — Challenge",
+            "marks": 2,
             "origin": "teacher"
           }
         }

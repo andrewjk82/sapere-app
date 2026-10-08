@@ -2123,6 +2123,45 @@
             "topic": "Equivalent fractions"
           },
           "xp": 2
+        },
+        {
+          "id": "y7-killara-23-t4b-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Fully simplify \\(\\frac{18}{24}\\).",
+          "options": [
+            "\\(\\frac69\\)",
+            "\\(\\frac34\\)",
+            "\\(\\frac23\\)",
+            "\\(\\frac{9}{12}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the numerator and denominator by their highest common factor.",
+          "steps": [
+            {
+              "explain": "The highest common factor of 18 and 24 is 6."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(\\frac{18}{24}=\\frac{18\\div6}{24\\div6}=\\frac34\\)."
+            },
+            {
+              "explain": "Since 3 and 4 share no factor greater than 1,",
+              "work": "\\(\\frac34\\) is fully simplified."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 4,
+            "question": 14,
+            "section": "Part 2 — Routine Processes",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -2426,6 +2465,46 @@
             "topic": "Mixed numerals and division by whole numbers"
           },
           "xp": 1
+        },
+        {
+          "id": "y7-killara-23-t4b-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(137\\div8\\) and express your answer as a mixed numeral.",
+          "options": [
+            "\\(17\\frac18\\)",
+            "\\(16\\frac58\\)",
+            "\\(17\\frac14\\)",
+            "\\(18\\frac18\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the largest multiple of 8 not exceeding 137; the remainder becomes the fraction over 8.",
+          "steps": [
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(8\\times17=136\\), which is one less than 137."
+            },
+            {
+              "explain": "The quotient is 17 and the remainder is",
+              "work": "\\(137-136=1\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(137\\div8=17\\frac18\\). The fraction is already simplified."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 4,
+            "question": 13,
+            "section": "Part 2 — Routine Processes",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4109,6 +4188,45 @@
             "year": 2022,
             "page": 4,
             "variant": false,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(\\frac36+\\frac5{12}\\).",
+          "options": [
+            "\\(\\frac{11}{12}\\)",
+            "\\(\\frac8{18}\\)",
+            "\\(\\frac23\\)",
+            "\\(\\frac{11}{18}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite both fractions with denominator 12 before adding.",
+          "steps": [
+            {
+              "explain": "The least common denominator is 12. Convert",
+              "work": "\\(\\frac36\\) to twelfths."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(\\frac36=\\frac6{12}\\), so \\(\\frac6{12}+\\frac5{12}=\\frac{11}{12}\\)."
+            },
+            {
+              "explain": "Since 11 and 12 have no common factor, this is simplified."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 6,
+            "question": 21,
+            "section": "Part 2 — Routine Processes",
+            "marks": 1,
             "origin": "teacher"
           }
         }

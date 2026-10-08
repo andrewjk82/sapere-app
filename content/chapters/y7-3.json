@@ -1573,6 +1573,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "y7-killara-23-t4b-q25",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Oliver buys 7 chocolate bars at \\(\\$x\\) each and garlic bread for \\(\\$1.20\\). He pays \\(\\$20\\). Which expression gives his change \\(c\\)?",
+          "options": [
+            "\\(c=18.80-7x\\)",
+            "\\(c=20-7x+1.20\\)",
+            "\\(c=7x-18.80\\)",
+            "\\(c=20-(x+1.20)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the total cost first, then subtract it from the $20 paid.",
+          "steps": [
+            {
+              "explain": "Seven bars cost",
+              "work": "\\(7x\\) dollars; the full purchase costs \\(7x+1.20\\)."
+            },
+            {
+              "explain": "Change is payment minus cost:",
+              "work": "\\(c=20-(7x+1.20)\\)."
+            },
+            {
+              "explain": "Simplify:",
+              "work": "\\(c=20-7x-1.20=18.80-7x\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 7,
+            "question": 25,
+            "section": "Part 3 — Application",
+            "marks": 1,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -5458,6 +5498,191 @@
             "marks": 2,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "y7-killara-23-t4b-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(4+y+y+y+3\\).",
+          "options": [
+            "\\(3y+7\\)",
+            "\\(7y\\)",
+            "\\(3y+12\\)",
+            "\\(y+7\\)"
+          ],
+          "answer": 0,
+          "hint": "Collect the three variable terms together and add the two constants.",
+          "steps": [
+            {
+              "explain": "There are three copies of",
+              "work": "\\(y\\), so \\(y+y+y=3y\\)."
+            },
+            {
+              "explain": "The constants add to",
+              "work": "\\(4+3=7\\)."
+            },
+            {
+              "explain": "The simplified expression is",
+              "work": "\\(3y+7\\)."
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 9,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q17",
+          "type": "multipart",
+          "mc": true,
+          "difficulty": "medium",
+          "stem": "Simplify each algebraic expression.",
+          "hint": "For part (a), collect like terms. For (b), apply order of operations before combining terms. For (c), expand the brackets first.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y7-killara-23-t4b-q17a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Simplify \\(4g+6h-3g-2h\\).",
+              "options": [
+                "\\(g+4h\\)",
+                "\\(g+8h\\)",
+                "\\(7g+4h\\)",
+                "\\(g+4h-1\\)"
+              ],
+              "answer": 0,
+              "hint": "Group the g-terms together and the h-terms together.",
+              "steps": [
+                {
+                  "explain": "Combine like terms only."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(4g-3g=g\\) and \\(6h-2h=4h\\)."
+                },
+                {
+                  "explain": "The simplified expression is",
+                  "work": "\\(g+4h\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 17,
+                "section": "Part 2 — Routine Processes",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-t4b-q17b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Simplify \\(16a+21a\\div3\\).",
+              "options": [
+                "\\(37a\\)",
+                "\\(23a\\)",
+                "\\(12a\\)",
+                "\\(\\frac{37a}{3}\\)"
+              ],
+              "answer": 1,
+              "hint": "Apply division before addition, then collect the like terms.",
+              "steps": [
+                {
+                  "explain": "Division has priority over addition, so simplify",
+                  "work": "\\(21a\\div3\\) first."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(21a\\div3=7a\\)."
+                },
+                {
+                  "explain": "Carry out the calculation shown.",
+                  "work": "\\(16a+7a=23a\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 17,
+                "section": "Part 2 — Routine Processes",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              }
+            },
+            {
+              "id": "y7-killara-23-t4b-q17c",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Simplify \\(5(1-e)-4e\\).",
+              "options": [
+                "\\(5-5e\\)",
+                "\\(5-e\\)",
+                "\\(5-9e\\)",
+                "\\(5+9e\\)"
+              ],
+              "answer": 2,
+              "hint": "Multiply 5 by each term in the brackets before combining the e-terms.",
+              "steps": [
+                {
+                  "explain": "Expand the bracket:",
+                  "work": "\\(5(1-e)=5-5e\\)."
+                },
+                {
+                  "explain": "Now include the final term:",
+                  "work": "\\(5-5e-4e\\)."
+                },
+                {
+                  "explain": "Combine the e-terms:",
+                  "work": "\\(-5e-4e=-9e\\), giving \\(5-9e\\)."
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 5,
+                "question": 17,
+                "section": "Part 2 — Routine Processes",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "c"
+              }
+            }
+          ],
+          "timeLimit": 240,
+          "xp": 5,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 5,
+            "question": 17,
+            "section": "Part 2 — Routine Processes",
+            "marks": 5,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -6988,6 +7213,85 @@
             "page": 10,
             "question": 6,
             "section": "Algebra",
+            "marks": 2,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use grouping symbols to express the product of 6 with the sum of \\(u\\) and \\(-v\\).",
+          "options": [
+            "\\(6u+v\\)",
+            "\\(6u+6v\\)",
+            "\\(6(u+v)\\)",
+            "\\(6(u+(-v))\\)"
+          ],
+          "answer": 3,
+          "hint": "Put the two addends inside brackets first, then multiply the entire sum by 6.",
+          "steps": [
+            {
+              "explain": "The sum is",
+              "work": "\\(u+(-v)\\)."
+            },
+            {
+              "explain": "The product of 6 with that whole sum is",
+              "work": "\\(6(u+(-v))\\)."
+            },
+            {
+              "explain": "This keeps the negative term inside the grouped sum as requested."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 7,
+            "question": 24,
+            "section": "Part 3 — Application",
+            "marks": 1,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(14u^2+2u(3u+5)\\).",
+          "options": [
+            "\\(20u^2+5\\)",
+            "\\(20u^2+10u\\)",
+            "\\(17u^2+10u\\)",
+            "\\(14u^2+6u+10\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply \\(2u\\) by both terms in the brackets, then combine the \\(u^2\\)-terms.",
+          "steps": [
+            {
+              "explain": "Expand:",
+              "work": "\\(2u(3u+5)=2u\\times3u+2u\\times5=6u^2+10u\\)."
+            },
+            {
+              "explain": "Add the remaining term:",
+              "work": "\\(14u^2+6u^2+10u\\)."
+            },
+            {
+              "explain": "Combine like terms:",
+              "work": "\\(20u^2+10u\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 8,
+            "question": 26,
+            "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
           }

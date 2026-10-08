@@ -3885,6 +3885,52 @@
               "note": "Use the fact that the total left-to-right and top-to-bottom changes around the closed shape must balance."
             }
           ]
+        },
+        {
+          "id": "y7-killara-23-t4b-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the perimeter of the shape shown. The three matching tick marks show that all sides are equal.",
+          "options": [
+            "\\(26\\text{ m}\\)",
+            "\\(39\\text{ m}\\)",
+            "\\(13\\text{ m}\\)",
+            "\\(52\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "The tick marks show that each of the 3 sides has the same length as the labelled side.",
+          "steps": [
+            {
+              "explain": "The labelled side measures \\(13\\text{ m}\\). The same single tick mark appears on each of the three sides, so every side is \\(13\\text{ m}\\).",
+              "work": "\\(13+13+13\\)"
+            },
+            {
+              "explain": "Add the three equal side lengths to find the perimeter.",
+              "work": "\\(3\\times13=39\\text{ m}\\)"
+            },
+            {
+              "explain": "The perimeter is the total distance around the triangle.",
+              "work": "\\(P=39\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><polygon points=\"105,215 105,65 235,140\" class=\"shape\"/><path d=\"M 105 65 L 235 140 L 105 215 Z\" class=\"focus\"/><path d=\"M 99 140 L 111 140 M 166 109 L 174 96 M 166 172 L 174 184\" class=\"mark\"/><text x=\"166\" y=\"77\" class=\"measure\">13 m</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 3,
+            "question": 6,
+            "section": "Part 1 — Fundamentals",
+            "marks": 1,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><polygon points=\"105,215 105,65 235,140\" class=\"shape\"/><path d=\"M 99 140 L 111 140 M 166 109 L 174 96 M 166 172 L 174 184\" class=\"mark\"/><text x=\"166\" y=\"77\" class=\"measure\">13 m</text></svg>"
+          }
         }
       ]
     },
@@ -4012,6 +4058,210 @@
           ],
           "timeLimit": 60,
           "xp": 2
+        },
+        {
+          "id": "y7-killara-23-t4b-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the trapezium shown. The parallel sides are \\(5\\text{ cm}\\) and \\(11\\text{ cm}\\), and the perpendicular height is \\(4\\text{ cm}\\).",
+          "options": [
+            "\\(20\\text{ cm}^2\\)",
+            "\\(44\\text{ cm}^2\\)",
+            "\\(64\\text{ cm}^2\\)",
+            "\\(32\\text{ cm}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Add the two parallel base lengths, then multiply by half the perpendicular height.",
+          "steps": [
+            {
+              "explain": "The parallel bases are",
+              "work": "\\(a=5\\text{ cm}\\) and \\(b=11\\text{ cm}\\); the perpendicular height is \\(h=4\\text{ cm}\\)."
+            },
+            {
+              "explain": "Substitute into",
+              "work": "\\(A=\\frac{h}{2}(a+b)\\): \\(A=\\frac42(5+11)\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><path d=\"M 85 205 L 85 100 L 220 100 L 295 205 Z\" class=\"shape\"/><path d=\"M 85 100 H 220 M 85 205 H 295\" class=\"focus\"/><path d=\"M 85 100 V 205\" class=\"focus\"/><path d=\"M 130 100 h 20 M 130 205 h 20\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M 85 190 v 15 h 15\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><text x=\"152\" y=\"82\" text-anchor=\"middle\" class=\"measure\">5 cm</text><text x=\"190\" y=\"234\" text-anchor=\"middle\" class=\"measure\">11 cm</text><text x=\"42\" y=\"158\" class=\"measure\">4 cm</text></svg>"
+              },
+              "work": "\\(A=2\\times16=32\\text{ cm}^2\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 6,
+            "question": 20,
+            "section": "Part 2 — Routine Processes",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><path d=\"M 85 205 L 85 100 L 220 100 L 295 205 Z\" class=\"shape\"/><path d=\"M 130 100 h 20 M 130 205 h 20\" stroke=\"#2563eb\" stroke-width=\"3\"/><path d=\"M 85 190 v 15 h 15\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><text x=\"152\" y=\"82\" text-anchor=\"middle\" class=\"measure\">5 cm</text><text x=\"190\" y=\"234\" text-anchor=\"middle\" class=\"measure\">11 cm</text><text x=\"42\" y=\"158\" class=\"measure\">4 cm</text></svg>"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q27",
+          "type": "multipart",
+          "mc": true,
+          "difficulty": "medium",
+          "stem": "The rectangle has side lengths \\(3\\text{ cm}\\) and \\((2x+7)\\text{ cm}\\). Use the diagram for both parts.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><rect x=\"95\" y=\"75\" width=\"225\" height=\"105\" class=\"shape\"/><path d=\"M 95 75 h 14 v 14 h -14 M 306 75 v 14 h 14 M 95 166 h 14 v 14 h -14 M 306 180 v -14 h 14\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><text x=\"208\" y=\"211\" text-anchor=\"middle\" class=\"measure\">(2x + 7) cm</text><text x=\"331\" y=\"132\" class=\"measure\">3 cm</text></svg>"
+          },
+          "hint": "Use \\(A=\\text{length}\\times\\text{width}\\). For part (b), set that expression equal to 27.",
+          "steps": [],
+          "parts": [
+            {
+              "id": "y7-killara-23-t4b-q27a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Write an expression for the area of the rectangle shown, in square centimetres.",
+              "options": [
+                "\\((2x+10)\\text{ cm}^2\\)",
+                "\\((6x+7)\\text{ cm}^2\\)",
+                "\\((6x+21)\\text{ cm}^2\\)",
+                "\\((3x+21)\\text{ cm}^2\\)"
+              ],
+              "answer": 2,
+              "hint": "For a rectangle, area equals length multiplied by width. Multiply 3 by the entire length expression.",
+              "steps": [
+                {
+                  "explain": "The rectangle has side lengths \\(3\\text{ cm}\\) and \\((2x+7)\\text{ cm}\\). Area is length times width.",
+                  "work": "\\(A=3(2x+7)\\)"
+                },
+                {
+                  "explain": "Use the distributive property to expand the product.",
+                  "work": "\\(A=3\\times2x+3\\times7=6x+21\\)"
+                },
+                {
+                  "explain": "The expression represents square centimetres.",
+                  "work": "\\(A=(6x+21)\\text{ cm}^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><rect x=\"95\" y=\"75\" width=\"225\" height=\"105\" class=\"shape\"/><path d=\"M 100 180 H 315\" class=\"focus\"/><path d=\"M 320 80 V 175\" stroke=\"#10b981\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M 95 75 h 14 v 14 h -14 M 306 75 v 14 h 14 M 95 166 h 14 v 14 h -14 M 306 180 v -14 h 14\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><text x=\"208\" y=\"211\" text-anchor=\"middle\" class=\"measure\">(2x + 7) cm</text><text x=\"331\" y=\"132\" class=\"measure\">3 cm</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 8,
+                "question": 27,
+                "section": "Part 3 — Application",
+                "marks": 1,
+                "origin": "teacher",
+                "part": "a"
+              }
+            },
+            {
+              "id": "y7-killara-23-t4b-q27b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "For the same rectangle, find \\(x\\) if its area is \\(27\\text{ cm}^2\\).",
+              "options": [
+                "\\(x=2\\)",
+                "\\(x=1\\)",
+                "\\(x=3\\)",
+                "\\(x=4\\)"
+              ],
+              "answer": 1,
+              "hint": "Set the area expression \\(3(2x+7)\\) equal to 27, then solve the equation.",
+              "steps": [
+                {
+                  "explain": "From part (a), the area is \\(3(2x+7)\\). Set it equal to the given area.",
+                  "work": "\\(3(2x+7)=27\\)"
+                },
+                {
+                  "explain": "Divide both sides by 3 to find the length expression.",
+                  "work": "\\(2x+7=9\\)"
+                },
+                {
+                  "explain": "Subtract 7, then divide by 2.",
+                  "work": "\\(2x=2\\quad\\Rightarrow\\quad x=1\\)"
+                },
+                {
+                  "explain": "Check: when \\(x=1\\), the length is \\(2(1)+7=9\\text{ cm}\\), so the area is \\(9\\times3=27\\text{ cm}^2\\).",
+                  "work": "\\(x=1\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 245\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><rect x=\"95\" y=\"75\" width=\"225\" height=\"105\" class=\"shape\"/><path d=\"M 100 180 H 315\" class=\"focus\"/><path d=\"M 320 80 V 175\" stroke=\"#10b981\" stroke-width=\"7\" stroke-linecap=\"round\"/><path d=\"M 95 75 h 14 v 14 h -14 M 306 75 v 14 h 14 M 95 166 h 14 v 14 h -14 M 306 180 v -14 h 14\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><text x=\"208\" y=\"211\" text-anchor=\"middle\" class=\"measure\">(2x + 7) cm</text><text x=\"331\" y=\"132\" class=\"measure\">3 cm</text></svg>"
+                  }
+                }
+              ],
+              "timeLimit": 90,
+              "xp": 2,
+              "meta": {
+                "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+                "school": "Killara High School",
+                "year": 2023,
+                "page": 8,
+                "question": 27,
+                "section": "Part 3 — Application",
+                "marks": 2,
+                "origin": "teacher",
+                "part": "b"
+              }
+            }
+          ],
+          "timeLimit": 150,
+          "xp": 3,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 8,
+            "question": 27,
+            "section": "Part 3 — Application",
+            "marks": 3,
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y7-killara-23-t4b-q28",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area, in square metres, of a square with side length \\(120\\text{ cm}\\).",
+          "options": [
+            "\\(1.2\\text{ m}^2\\)",
+            "\\(144\\text{ m}^2\\)",
+            "\\(1.44\\text{ m}^2\\)",
+            "\\(14400\\text{ m}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert the side length to metres before squaring it.",
+          "steps": [
+            {
+              "explain": "There are 100 centimetres in 1 metre, so",
+              "work": "\\(120\\text{ cm}=1.2\\text{ m}\\)."
+            },
+            {
+              "explain": "The area of a square is side times side:",
+              "work": "\\(A=1.2\\times1.2\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "work": "\\(A=1.44\\text{ m}^2\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 8,
+            "question": 28,
+            "section": "Part 3 — Application",
+            "marks": 2,
+            "origin": "teacher"
+          }
         }
       ]
     },
@@ -4238,6 +4488,52 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "y7-killara-23-t4b-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the triangle shown. Its base is \\(10\\text{ cm}\\) and perpendicular height is \\(4\\text{ cm}\\).",
+          "options": [
+            "\\(14\\text{ cm}^2\\)",
+            "\\(40\\text{ cm}^2\\)",
+            "\\(20\\text{ cm}^2\\)",
+            "\\(28\\text{ cm}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Use half of base times perpendicular height. The height can fall outside an obtuse triangle.",
+          "steps": [
+            {
+              "explain": "The diagram gives base",
+              "work": "\\(b=10\\text{ cm}\\) and perpendicular height \\(h=4\\text{ cm}\\)."
+            },
+            {
+              "explain": "Use",
+              "work": "\\(A=\\frac12 bh\\): \\(A=\\frac12\\times10\\times4\\)."
+            },
+            {
+              "explain": "Carry out the calculation shown.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 275\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><path d=\"M 78 205 L 252 205 L 300 65 Z\" class=\"shape\"/><path d=\"M 252 205 H 300 M 300 65 V 205\" class=\"guide\"/><path d=\"M 78 205 H 252\" class=\"focus\"/><path d=\"M 300 65 V 205\" class=\"focus\"/><path d=\"M 290 195 h 10 v 10\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><line x1=\"78\" y1=\"224\" x2=\"252\" y2=\"224\" stroke=\"#34445a\" stroke-width=\"1.5\"/><text x=\"165\" y=\"247\" text-anchor=\"middle\" class=\"measure\">10 cm base</text><text x=\"312\" y=\"140\" class=\"measure\">4 cm</text></svg>"
+              },
+              "work": "\\(A=5\\times4=20\\text{ cm}^2\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "xp": 2,
+          "meta": {
+            "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
+            "school": "Killara High School",
+            "year": 2023,
+            "page": 6,
+            "question": 19,
+            "section": "Part 2 — Routine Processes",
+            "marks": 2,
+            "origin": "teacher"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 275\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><path d=\"M 78 205 L 252 205 L 300 65 Z\" class=\"shape\"/><path d=\"M 252 205 H 300 M 300 65 V 205\" class=\"guide\"/><path d=\"M 290 195 h 10 v 10\" fill=\"none\" stroke=\"#34445a\" stroke-width=\"2.5\"/><line x1=\"78\" y1=\"224\" x2=\"252\" y2=\"224\" stroke=\"#34445a\" stroke-width=\"1.5\"/><text x=\"165\" y=\"247\" text-anchor=\"middle\" class=\"measure\">10 cm base</text><text x=\"312\" y=\"140\" class=\"measure\">4 cm</text></svg>"
+          }
         }
       ]
     },
