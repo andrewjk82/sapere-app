@@ -9635,8 +9635,8 @@
         {
           "id": "wghs-y7-2013-t3-a-q3",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "The diagram shows a growing pattern made from joined matchstick squares. Let s be the number of squares and m the number of matches.",
+          "difficulty": "medium",
           "figure": {
             "svg": "fig:c21d66999d"
           },
@@ -9644,8 +9644,11 @@
             {
               "id": "wghs-y7-2013-t3-a-q3a",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Complete the match counts for 1, 2 and 3 joined squares.",
+              "difficulty": "medium",
+              "figure": {
+                "svg": "fig:c21d66999d"
+              },
               "options": [
                 "4, 8, 12",
                 "4, 7, 10",
@@ -9665,8 +9668,7 @@
                   "explain": "\\(s=1:4,\\quad s=2:4+3=7,\\quad s=3:7+3=10\\)."
                 }
               ],
-              "timeLimit": 120,
-              "xp": 2,
+              "xp": 1,
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
                 "school": "Willoughby Girls High School",
@@ -9676,16 +9678,13 @@
                 "section": "Algebra",
                 "marks": 2,
                 "origin": "teacher"
-              },
-              "figure": {
-                "svg": "fig:c21d66999d"
               }
             },
             {
               "id": "wghs-y7-2013-t3-a-q3b",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Which rule gives the number of matches m for s joined squares?",
+              "difficulty": "medium",
               "options": [
                 "\\(m=4s\\)",
                 "\\(m=s+3\\)",
@@ -9715,8 +9714,8 @@
             {
               "id": "wghs-y7-2013-t3-a-q3c",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "How many matches are needed for 25 joined squares?",
+              "difficulty": "medium",
               "options": [
                 "75",
                 "100",
@@ -9747,6 +9746,15 @@
               }
             }
           ],
+          "hint": "Count how many matches a new square adds when it shares a side with the previous square.",
+          "steps": [
+            {
+              "explain": "The counts begin 4, 7, 10."
+            },
+            {
+              "explain": "Each new square adds 3 matches, giving m=3s+1; for 25 squares, m=3(25)+1=76."
+            }
+          ],
           "timeLimit": 300,
           "xp": 4,
           "meta": {
@@ -9758,16 +9766,7 @@
             "section": "Algebra",
             "marks": 4,
             "origin": "teacher"
-          },
-          "hint": "Count how many matches a new square adds when it shares a side with the previous square.",
-          "steps": [
-            {
-              "explain": "The counts begin 4, 7, 10."
-            },
-            {
-              "explain": "Each new square adds 3 matches, giving m=3s+1; for 25 squares, m=3(25)+1=76."
-            }
-          ]
+          }
         }
       ]
     },
