@@ -3618,8 +3618,8 @@
         {
           "id": "wghs-y7-2015-t3-s3-q11",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Calculate \\(2015-20.15\\).",
+          "difficulty": "medium",
           "options": [
             "\\(2013.985\\)",
             "\\(1994.85\\)",
@@ -3628,12 +3628,6 @@
           ],
           "answer": 1,
           "hint": "Write 2015 as 2015.00 so the decimal points and place values align.",
-          "keyPoints": [
-            {
-              "text": "Calculate",
-              "note": "Align decimal points even when one number is a whole number."
-            }
-          ],
           "steps": [
             {
               "explain": "Write the whole number with two decimal places.",
@@ -3649,7 +3643,13 @@
             }
           ],
           "timeLimit": 75,
-          "xp": 2,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Align decimal points even when one number is a whole number."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -3657,7 +3657,8 @@
             "page": 10,
             "question": "q11",
             "section": "Section 3 (Decimals)",
-            "marks": 1
+            "marks": 1,
+            "origin": "teacher"
           }
         },
         {
