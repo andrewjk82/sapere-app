@@ -3774,8 +3774,11 @@
         {
           "id": "wghs-y7-2013-t3-a-q11",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A parallelogram has opposite sides marked equal. Its top and bottom sides are each 3x cm, and its other sides are each x cm. The perimeter is 96 cm. Find x.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:09c3bc1dfb"
+          },
           "options": [
             "12 cm",
             "8 cm",
@@ -3798,8 +3801,14 @@
               }
             }
           ],
-          "timeLimit": 120,
+          "timeLimit": 90,
           "xp": 2,
+          "keyPoints": [
+            {
+              "text": "perimeter is 96 cm",
+              "note": "Include all four sides; the opposite long sides are each 3x and the other two each x."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
             "school": "Willoughby Girls High School",
@@ -3809,16 +3818,7 @@
             "section": "Algebra",
             "marks": 2,
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:09c3bc1dfb"
-          },
-          "keyPoints": [
-            {
-              "text": "perimeter is 96 cm",
-              "note": "Include all four sides; the opposite long sides are each 3x and the other two each x."
-            }
-          ]
+          }
         },
         {
           "id": "wghs-y7-2013-t3-m-q5",
