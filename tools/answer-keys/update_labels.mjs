@@ -1,12 +1,17 @@
 // Replaces the `labels` of existing answer_keys sections with new ones (e.g. part-level labels
 // "1a","1b" instead of "1") WITHOUT touching the images.
-// Usage: node tools/answer-keys/update_labels.mjs <labels.json> "<book name>" [--write]
-// labels.json: { sectionKey: [label, ...] }. A section is only changed when its question numbers
-// are exactly the old labels' numbers (so a mismatch can never silently corrupt marking).
+// Usage: node tools/answer-keys/update_labels.mjs <labels.json> "<book name>" [--write] [--questions]
+// labels.json: { sectionKey: [label, ...] }. By default a section is only changed when its question numbers
+// are exactly the old labels' numbers. With --questions (labels read from the QUESTION pages, so they may
+// legitimately include questions whose answers are not printed) the numbers only have to cover the old ones:
+// the highest question number may not be lower than before.
 import admin from 'firebase-admin';
 import { readFileSync } from 'fs';
 
-const [file, book, flag] = process.argv.slice(2);
+const args = process.argv.slice(2);
+const [file, book] = args.filter((a) => !a.startsWith('--'));
+const flag = args.includes('--write') ? '--write' : '';
+const fromQuestions = args.includes('--questions');
 if (!file || !book) { console.error('usage: update_labels.mjs <labels.json> "<book>" [--write]'); process.exit(1); }
 const sa = JSON.parse(readFileSync('/Users/andrewkim/Desktop/sapere1/.secrets/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
 admin.initializeApp({ credential: admin.credential.cert(sa) });
@@ -27,7 +32,10 @@ for (let i = 0; i < ids.length; i += 10) {
     const sections = d.sections.map((s) => {
       const next = fresh[s.key];
       if (!next || !next.length) { skipped.push(`${snap.id}/${s.key}: no new labels`); return s; }
-      if (base(next) !== base(s.labels)) { skipped.push(`${snap.id}/${s.key}: numbers differ old=${base(s.labels)} new=${base(next)}`); return s; }
+      const maxOf = (ls) => Math.max(0, ...ls.map(num));
+      if (fromQuestions ? maxOf(next) < maxOf(s.labels) : base(next) !== base(s.labels)) {
+        skipped.push(`${snap.id}/${s.key}: question numbers differ (old max ${maxOf(s.labels)}, new max ${maxOf(next)})`); return s;
+      }
       if (JSON.stringify(next) === JSON.stringify(s.labels)) { unchanged += 1; return s; }
       changed = true; sectionsChanged += 1;
       return { ...s, labels: next };
