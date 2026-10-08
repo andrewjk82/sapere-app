@@ -2528,8 +2528,8 @@
         {
           "id": "hh2020-q23",
           "type": "multipart",
-          "difficulty": "hard",
           "stem": "Let \\(f(x) = \\sqrt{x+1}\\) for \\(x \\ge 0\\).",
+          "difficulty": "hard",
           "parts": [
             {
               "id": "hh2020-q23a",
@@ -2556,8 +2556,7 @@
                   "explain": "Combine both conditions — since \\(x\\ge0\\) is the more restrictive one, it determines the domain.",
                   "work": "\\(\\therefore\\) Domain \\(= [0,\\infty)\\)"
                 }
-              ],
-              "xp": 1
+              ]
             },
             {
               "id": "hh2020-q23b",
@@ -2588,16 +2587,15 @@
                   "explain": "The LARGEST such value of \\(c\\) is therefore exactly \\(-3\\).",
                   "work": "\\(\\therefore c = -3\\)"
                 }
-              ],
-              "xp": 4
+              ]
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Hunters Hill HS 2020 2U Trials",
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
-            "grade": "12"
+            "grade": "12",
+            "origin": "teacher"
           }
         },
         {
