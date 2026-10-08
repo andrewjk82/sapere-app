@@ -454,6 +454,7 @@
           ],
           "answer": "Sample answers: (a) reflect the T-shape across the vertical mirror line; (b) rotate that reflected T 90° clockwise about E. Each completed image is shown with its part.",
           "hint": "Complete the transformations in order: reflect the T-shape first, then rotate the reflected image 90° clockwise around E.",
+          "timeLimit": 90,
           "xp": 3,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
