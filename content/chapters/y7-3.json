@@ -6978,6 +6978,7 @@
               "explain": "Then \\(4-8a+3a=4-5a\\)."
             }
           ],
+          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
