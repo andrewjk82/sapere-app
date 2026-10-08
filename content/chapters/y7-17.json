@@ -629,7 +629,7 @@
               "figure": {
                 "svg": "fig:18b254f090"
               },
-              "answer": "One vertical axis running lengthwise through the centre of the aeroplane.",
+              "answer": "Sample answer: Draw the single vertical axis through the centre of the aeroplane, from nose to tail. It is shown in the sample diagram.",
               "hint": "Look for a line that divides the complete outline into matching left and right halves.",
               "steps": [
                 {
@@ -639,7 +639,7 @@
                 {
                   "explain": "Draw that single axis through the centre; there is no horizontal axis because the wings and nose/tail differ.",
                   "figure": {
-                    "svg": "fig:3b48d91460"
+                    "svg": "fig:0d8de5b132"
                   }
                 }
               ],
@@ -665,13 +665,13 @@
             {
               "id": "wghs-y7-2015-t3-s2-q5b",
               "type": "review",
-              "stem": "Mark all axes of symmetry on the two-triangle outline shown on the grid.",
+              "stem": "Mark all axes of symmetry on the H-shaped outline.",
               "difficulty": "hard",
               "figure": {
-                "svg": "fig:8be0e277ab"
+                "svg": "fig:28a672cb18"
               },
-              "answer": "Two axes: one vertical and one horizontal, both passing through the centre of the H shape.",
-              "hint": "Check whether the H matches across a line through its centre from top to bottom and from left to right.",
+              "answer": "Sample answer: Draw two axes through the centre of the H: one vertical and one horizontal. Both are shown in the sample diagram.",
+              "hint": "Check whether the complete H matches across a line through its centre from top to bottom and from left to right.",
               "steps": [
                 {
                   "explain": "The H has matching left and right halves, so a vertical line through its centre is an axis.",
@@ -681,7 +681,7 @@
                   "explain": "The top and bottom halves also match, so a horizontal line through the centre is a second axis.",
                   "work": "Reflecting the upper parts onto the lower parts leaves the H unchanged.",
                   "figure": {
-                    "svg": "fig:677f719dea"
+                    "svg": "fig:dbac8a328b"
                   }
                 }
               ],
