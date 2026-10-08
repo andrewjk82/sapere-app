@@ -5347,10 +5347,12 @@
               "hint": "Collect p-terms together and q-terms together.",
               "steps": [
                 {
-                  "explain": "\\(6p-2p=4p\\), and \\(-3q+q=-2q\\)."
+                  "explain": "Group the p-terms and q-terms; only terms with the same variable can be combined.",
+                  "work": "6p-3q-2p+q=(6p-2p)+(-3q+q)"
                 },
                 {
-                  "explain": "Therefore \\(4p-2q\\)."
+                  "explain": "Subtract the coefficients of each matching variable.",
+                  "work": "4p-2q"
                 }
               ],
               "timeLimit": 60,
@@ -5381,13 +5383,15 @@
               "hint": "Only the first and third terms are like terms.",
               "steps": [
                 {
-                  "explain": "\\(2a^2b-a^2b=a^2b\\)."
+                  "explain": "The first and third terms are like terms because both contain a²b.",
+                  "work": "2a^2b-a^2b=(2-1)a^2b=a^2b"
                 },
                 {
-                  "explain": "The unlike term \\(ab\\) stays separate."
+                  "explain": "The term ab has different powers of a and b, so it cannot combine with a²b.",
+                  "work": "a^2b+ab"
                 },
                 {
-                  "explain": "Result: \\(a^2b+ab\\)."
+                  "explain": "The simplified expression is a²b + ab."
                 }
               ],
               "timeLimit": 60,
@@ -5417,14 +5421,7 @@
             "origin": "teacher"
           },
           "hint": "Combine terms only when they have the same variables with the same powers.",
-          "steps": [
-            {
-              "explain": "For (a), 6p−2p=4p and −3q+q=−2q."
-            },
-            {
-              "explain": "For (b), 2a²b−a²b=a²b; the unlike term ab remains."
-            }
-          ]
+          "steps": []
         },
         {
           "id": "wghs-y7-2013-t3-a-q8",
@@ -5441,10 +5438,12 @@
           "hint": "Do the division first, then combine the x-terms.",
           "steps": [
             {
-              "explain": "\\(6x\\div(-2)=-3x\\)."
+              "explain": "Do the division before combining like terms.",
+              "work": "6x\\div(-2)=-3x"
             },
             {
-              "explain": "\\(-3x+3x+4=4\\)."
+              "explain": "The x-terms cancel.",
+              "work": "-3x+3x+4=0x+4=4"
             }
           ],
           "timeLimit": 120,
@@ -6972,10 +6971,12 @@
           "hint": "Multiply 4 by both terms inside the brackets, then collect a-terms.",
           "steps": [
             {
-              "explain": "\\(4(1-2a)=4-8a\\)."
+              "explain": "Use the distributive property: multiply 4 by both terms inside the brackets.",
+              "work": "4(1-2a)=4\\times1+4\\times(-2a)=4-8a"
             },
             {
-              "explain": "Then \\(4-8a+3a=4-5a\\)."
+              "explain": "Combine the like terms containing a.",
+              "work": "4-8a+3a=4+(-5a)=4-5a"
             }
           ],
           "timeLimit": 60,
@@ -9610,7 +9611,16 @@
           "hint": "Multiply the last term by 3.",
           "steps": [
             {
-              "explain": "\\(18\\times3=54\\)."
+              "explain": "Check the multiplier between the first two terms.",
+              "work": "6\\div2=3"
+            },
+            {
+              "explain": "Check that the same multiplier takes 6 to 18.",
+              "work": "18\\div6=3"
+            },
+            {
+              "explain": "Continue the pattern by multiplying the last term by 3.",
+              "work": "18\\times3=54"
             }
           ],
           "timeLimit": 60,
@@ -9695,7 +9705,16 @@
               "hint": "Start with 4 matches and add 3 for each square after the first.",
               "steps": [
                 {
-                  "explain": "\\(m=4+3(s-1)=4+3s-3=3s+1\\)."
+                  "explain": "The first square uses 4 matches. Each additional square shares one side, so it adds only 3 matches.",
+                  "work": "4\\text{ matches for square 1; }+3\\text{ for each later square}"
+                },
+                {
+                  "explain": "For s squares there are s−1 additions of 3 matches.",
+                  "work": "m=4+3(s-1)"
+                },
+                {
+                  "explain": "Expand and simplify the rule.",
+                  "work": "m=4+3s-3=3s+1"
                 }
               ],
               "timeLimit": 60,
@@ -9747,14 +9766,7 @@
             }
           ],
           "hint": "Count how many matches a new square adds when it shares a side with the previous square.",
-          "steps": [
-            {
-              "explain": "The counts begin 4, 7, 10."
-            },
-            {
-              "explain": "Each new square adds 3 matches, giving m=3s+1; for 25 squares, m=3(25)+1=76."
-            }
-          ],
+          "steps": [],
           "timeLimit": 180,
           "xp": 4,
           "meta": {

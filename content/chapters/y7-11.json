@@ -2692,13 +2692,13 @@
           "hint": "Place each value on the scale and use a solid point because each number is included.",
           "steps": [
             {
-              "explain": "Find −2, 1 and 5 on the labelled number line."
+              "explain": "The number line is marked in equal steps. Locate −2, which is two units left of 0."
             },
             {
-              "explain": "Mark one solid point at each value."
+              "explain": "Locate 1, one unit right of 0, and 5, five units right of 0."
             },
             {
-              "explain": "The completed number line is shown.",
+              "explain": "Because the set includes all three values, place a solid point at each location.",
               "figure": {
                 "svg": "fig:fd6ca7a6e7"
               }
@@ -2744,10 +2744,11 @@
               "hint": "Read the horizontal coordinate first, then the vertical coordinate.",
               "steps": [
                 {
-                  "explain": "Point B lies 6 units left of the vertical axis and on the horizontal axis."
+                  "explain": "Read the horizontal coordinate first: B is 6 units to the left of the y-axis, so x=−6."
                 },
                 {
-                  "explain": "\\(B=(-6,0)\\)."
+                  "explain": "B lies on the x-axis, where the y-coordinate is 0.",
+                  "work": "B=(-6,0)"
                 }
               ],
               "timeLimit": 60,
@@ -2781,7 +2782,8 @@
               "hint": "The axes meet at the origin.",
               "steps": [
                 {
-                  "explain": "At the origin both coordinates are zero: \\((0,0)\\)."
+                  "explain": "At the point where the axes meet, neither coordinate has moved from zero.",
+                  "work": "x=0,\\quad y=0\\quad\\Rightarrow\\quad(0,0)"
                 }
               ],
               "timeLimit": 60,
@@ -2811,14 +2813,7 @@
             "origin": "teacher"
           },
           "hint": "Read the horizontal coordinate first and the vertical coordinate second.",
-          "steps": [
-            {
-              "explain": "Point B is six units left of the y-axis and lies on the x-axis, so B=(−6,0)."
-            },
-            {
-              "explain": "The axes intersect at the origin (0,0)."
-            }
-          ]
+          "steps": []
         }
       ]
     },

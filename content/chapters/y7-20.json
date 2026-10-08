@@ -542,7 +542,15 @@
           "hint": "A slice parallel to a face has the same shape as that face.",
           "steps": [
             {
-              "explain": "The cross-section made by a plane parallel to the prism’s top and bottom faces has the same shape as those faces."
+              "explain": "A cross-section is the flat shape made where the cutting plane passes through the prism.",
+              "work": "\\text{cutting plane}\\parallel\\text{top and bottom faces}"
+            },
+            {
+              "explain": "Because the cut is parallel to the top and bottom faces, its outline has the same shape and size as either face.",
+              "work": "\\text{cross-section}\\cong\\text{top face}"
+            },
+            {
+              "explain": "Choose the option describing a cross-section congruent to the prism’s top and bottom face."
             }
           ],
           "timeLimit": 60,
@@ -661,14 +669,7 @@
             "origin": "teacher"
           },
           "hint": "Edges intersect when they share a vertex. Skew edges neither meet nor run parallel and are not coplanar.",
-          "steps": [
-            {
-              "explain": "AB meets DA at A."
-            },
-            {
-              "explain": "DH does not meet AB, is not parallel to AB, and lies in another plane, so DH is skew to AB."
-            }
-          ]
+          "steps": []
         }
       ]
     }

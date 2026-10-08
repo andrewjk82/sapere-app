@@ -791,7 +791,10 @@
           "hint": "A reflection line maps one half of the shape onto the other.",
           "steps": [
             {
-              "explain": "The line that divides a shape into matching mirror halves is its axis of symmetry."
+              "explain": "A symmetry line divides a shape into two halves that match when one half is reflected across the line."
+            },
+            {
+              "explain": "That line is called the axis of symmetry."
             }
           ],
           "timeLimit": 60,

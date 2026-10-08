@@ -8016,7 +8016,12 @@
           "hint": "Which positive integer multiplied by itself gives 144?",
           "steps": [
             {
-              "explain": "\\(12^2=12\\times12=144\\), so the principal square root is \\(\\sqrt{144}=12\\)."
+              "explain": "Find the positive number whose square is 144.",
+              "work": "12\\times12=144"
+            },
+            {
+              "explain": "Since the square root symbol means the principal (positive) root, √144=12.",
+              "work": "\\sqrt{144}=12"
             }
           ],
           "timeLimit": 60,
@@ -9194,10 +9199,12 @@
           "hint": "List the prime factors and take the common factors once each.",
           "steps": [
             {
-              "explain": "\\(24=2^3\\times3\\) and \\(36=2^2\\times3^2\\)."
+              "explain": "Write both numbers as products of prime factors.",
+              "work": "24=2^3\\times3,\\qquad36=2^2\\times3^2"
             },
             {
-              "explain": "The common prime factors are \\(2^2\\times3=12\\)."
+              "explain": "Use only the prime factors common to both, with the smaller power of each.",
+              "work": "\\mathrm{HCF}=2^2\\times3=4\\times3=12"
             }
           ],
           "timeLimit": 60,

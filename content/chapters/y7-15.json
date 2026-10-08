@@ -1277,10 +1277,12 @@
           "hint": "Subtract 213 from both sides.",
           "steps": [
             {
-              "explain": "\\(a=312-213=99\\)."
+              "explain": "Subtract 213 from both sides to isolate a.",
+              "work": "a+213=312\\quad\\Rightarrow\\quad a=312-213=99"
             },
             {
-              "explain": "Check: \\(99+213=312\\)."
+              "explain": "Check by substituting 99 into the original equation.",
+              "work": "99+213=312\\;\\checkmark"
             }
           ],
           "timeLimit": 60,
@@ -2449,14 +2451,7 @@
             }
           ],
           "hint": "Translate the operations in the order stated, then undo them in reverse order.",
-          "steps": [
-            {
-              "explain": "Write the statement as an equation: \\(\\dfrac{x}{5}+3=7\\)."
-            },
-            {
-              "explain": "Subtract 3 to get \\(\\dfrac{x}{5}=4\\), then multiply by 5 to get \\(x=20\\)."
-            }
-          ],
+          "steps": [],
           "timeLimit": 90,
           "xp": 3,
           "meta": {

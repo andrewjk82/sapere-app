@@ -38134,7 +38134,12 @@
           "hint": "Use \\(12\\times(10+3)\\).",
           "steps": [
             {
-              "explain": "\\(12\\times13=12\\times10+12\\times3=120+36=156\\)."
+              "explain": "Split 13 into 10+3 and distribute the multiplication by 12.",
+              "work": "12\\times13=12\\times(10+3)"
+            },
+            {
+              "explain": "Calculate each product, then add.",
+              "work": "120+36=156"
             }
           ],
           "timeLimit": 60,

@@ -3721,10 +3721,15 @@
           "hint": "Write 9.2 as 9.200 so the decimal places line up.",
           "steps": [
             {
-              "explain": "\\(9.200-2.013=7.187\\)."
+              "explain": "Write 9.2 with three decimal places so the decimal points line up.",
+              "work": "9.2=9.200"
             },
             {
-              "explain": "Subtract thousandths, hundredths and tenths in aligned columns."
+              "explain": "Subtract in aligned columns. Regroup across the zero hundredths to subtract the 3 thousandths.",
+              "work": "\\begin{array}{r}9.200\\\\-2.013\\\\\\hline7.187\\end{array}"
+            },
+            {
+              "explain": "The difference is 7.187."
             }
           ],
           "timeLimit": 60,
@@ -4571,10 +4576,15 @@
           "hint": "Multiply the price in cents by 12, then convert cents to dollars.",
           "steps": [
             {
-              "explain": "\\(137\\times12=1,644\\) cents."
+              "explain": "Multiply the unit price by 12 litres. Split 12 into 10+2 to make the multiplication clear.",
+              "work": "137\\times12=137\\times10+137\\times2=1{,}370+274=1{,}644\\text{ cents}"
             },
             {
-              "explain": "Since 100 cents=$1, the cost is $16.44."
+              "explain": "Convert cents to dollars by dividing by 100.",
+              "work": "1{,}644\\div100=16.44"
+            },
+            {
+              "explain": "The cost is $16.44."
             }
           ],
           "timeLimit": 60,
@@ -5527,10 +5537,12 @@
           "hint": "Divide 5 by 11 and look for the repeating block.",
           "steps": [
             {
-              "explain": "\\(5\\div11=0.454545\\ldots\\)."
+              "explain": "Use division with remainders: 5÷11 gives 0 remainder 5, so write 0. and bring down a zero.",
+              "work": "50\\div11=4\\text{ remainder }6"
             },
             {
-              "explain": "The repeating block is 54, so \\(5/11=0.\\overline{54}\\)."
+              "explain": "Bring down another zero. The remainder returns to 5, so the digits 45 repeat.",
+              "work": "60\\div11=5\\text{ remainder }5\\quad\\Rightarrow\\quad0.454545\\ldots=0.\\overline{45}"
             }
           ],
           "timeLimit": 60,

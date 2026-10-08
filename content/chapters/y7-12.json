@@ -1834,10 +1834,10 @@
           "hint": "Adjacent angles share a vertex and one arm, and their interiors do not overlap.",
           "steps": [
             {
-              "explain": "Both angles have vertex Q and common arm QS."
+              "explain": "Adjacent angles have the same vertex and share one arm."
             },
             {
-              "explain": "Their interiors sit next to each other, so \\(\\angle PQS\\) and \\(\\angle SQR\\) are adjacent."
+              "explain": "The two purple angles share vertex Q and arm QS, and their interiors do not overlap; therefore they are adjacent."
             }
           ],
           "timeLimit": 60,
@@ -1877,7 +1877,11 @@
               "hint": "Vertically opposite angles are equal.",
               "steps": [
                 {
-                  "explain": "\\(a=33^\\circ\\), because vertically opposite angles are equal."
+                  "explain": "Vertically opposite angles are equal, so the angle opposite 33° has the same measure.",
+                  "work": "a=33^\\circ"
+                },
+                {
+                  "explain": "Therefore a is 33°."
                 }
               ],
               "timeLimit": 60,
@@ -1947,11 +1951,7 @@
             "origin": "teacher"
           },
           "hint": "Vertically opposite angles are equal. Angles inside a right angle total 90°.",
-          "steps": [
-            {
-              "explain": "(a) a=33°. (b) x+33°+28°=90°, so x=29°."
-            }
-          ]
+          "steps": []
         },
         {
           "id": "wghs-y7-2013-t3-g-q3",
@@ -1968,7 +1968,10 @@
           "hint": "It is stretched horizontally and has one smooth closed curve.",
           "steps": [
             {
-              "explain": "A smooth, closed oval that is longer in one direction is an ellipse."
+              "explain": "The diagram is a smooth, closed oval, longer horizontally than vertically."
+            },
+            {
+              "explain": "A stretched circular oval is called an ellipse."
             }
           ],
           "timeLimit": 60,
@@ -2119,7 +2122,12 @@
               "hint": "A quadrilateral’s interior angles total 360°, including the reflex angle.",
               "steps": [
                 {
-                  "explain": "\\(d=360^\\circ-(87^\\circ+90^\\circ+110^\\circ)=360^\\circ-287^\\circ=73^\\circ\\)."
+                  "explain": "A quadrilateral has four interior angles that sum to 360°. Add the three known interior angles.",
+                  "work": "87^\\circ+90^\\circ+110^\\circ=287^\\circ"
+                },
+                {
+                  "explain": "Subtract their total from 360° to find d.",
+                  "work": "d=360^\\circ-287^\\circ=73^\\circ"
                 }
               ],
               "timeLimit": 60,
@@ -2189,11 +2197,7 @@
             "origin": "teacher"
           },
           "hint": "Use equal base angles, triangle angle sum, quadrilateral angle sum, and a straight-line pair.",
-          "steps": [
-            {
-              "explain": "(i) a=180°−70°−70°=40°, b=70°. (ii) c=360°−87°=273° and d=360°−(87°+90°+110°)=73°. (iii) e=180°−120°=60°."
-            }
-          ]
+          "steps": []
         },
         {
           "id": "wghs-y7-2013-t3-g-q5",
@@ -2210,16 +2214,19 @@
           "hint": "For parallel lines, same-side interior angles must add to 180°.",
           "steps": [
             {
-              "explain": "Add the marked same-side interior angles: \\(123^\\circ+60^\\circ=183^\\circ\\)."
+              "explain": "Add the marked same-side interior angles.",
+              "work": "123^\\circ+60^\\circ=183^\\circ"
             },
             {
-              "explain": "If the lines were parallel, this sum would be \\(180^\\circ\\)."
+              "explain": "If AC and DF were parallel, same-side interior angles would sum to 180°.",
+              "work": "\\text{required sum}=180^\\circ"
             },
             {
-              "explain": "Since \\(183^\\circ"
+              "explain": "Compare the actual total with 180°.",
+              "work": "183^\\circ\\ne180^\\circ"
             },
             {
-              "explain": "e180^\\circ\\), AC and DF are not parallel.",
+              "explain": "The condition for parallel lines is not met, so AC and DF are not parallel.",
               "figure": {
                 "svg": "fig:4051d1a504"
               }

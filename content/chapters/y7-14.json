@@ -2673,10 +2673,12 @@
           "hint": "Percent means “out of 100”.",
           "steps": [
             {
-              "explain": "\\(20\\%=20/100\\)."
+              "explain": "Percent means “out of 100”, so write 20% as a fraction over 100.",
+              "work": "20\\%=\\dfrac{20}{100}"
             },
             {
-              "explain": "Divide numerator and denominator by 20: \\(20/100=1/5\\)."
+              "explain": "Divide the numerator and denominator by their highest common factor, 20.",
+              "work": "\\dfrac{20\\div20}{100\\div20}=\\dfrac{1}{5}"
             }
           ],
           "timeLimit": 60,
@@ -2741,13 +2743,12 @@
           "hint": "First convert the mixed number to a decimal or improper fraction.",
           "steps": [
             {
-              "explain": "\\(1"
+              "explain": "Convert the mixed number to an improper fraction, then to a decimal.",
+              "work": "1\\dfrac{3}{4}=\\dfrac{4+3}{4}=\\dfrac{7}{4}=1.75"
             },
             {
-              "explain": "rac34=7/4=1.75\\)."
-            },
-            {
-              "explain": "\\(1.75\\times100\\%=175\\%\\)."
+              "explain": "Multiply by 100 to convert the decimal to a percentage.",
+              "work": "1.75\\times100\\%=175\\%"
             }
           ],
           "timeLimit": 60,

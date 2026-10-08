@@ -2817,7 +2817,11 @@
               "hint": "Read the scale value at the needle tip.",
               "steps": [
                 {
-                  "explain": "The needle points to the 30 mark, so the speed is \\(30\\text{ km/h}\\)."
+                  "explain": "Read the scale at the tip of the speedometer needle.",
+                  "work": "\\text{needle tip}=30\\text{ km/h}"
+                },
+                {
+                  "explain": "Therefore the indicated speed is 30 km/h."
                 }
               ],
               "timeLimit": 60,
@@ -2847,14 +2851,7 @@
             "origin": "teacher"
           },
           "hint": "Read the odometer’s final digit as tenths of a kilometre, then read the needle on the speed scale.",
-          "steps": [
-            {
-              "explain": "The display is 081057.6, so the distance is 81,057.6 km."
-            },
-            {
-              "explain": "The needle points to 30 km/h."
-            }
-          ]
+          "steps": []
         },
         {
           "id": "wghs-y7-2013-t3-m-q3",
@@ -2871,13 +2868,14 @@
           "hint": "Place the protractor centre at the vertex and align its baseline with one ray.",
           "steps": [
             {
-              "explain": "First align the 0° line of the protractor with the horizontal ray pointing right."
+              "explain": "Place the protractor centre on the vertex and align its baseline with the ray pointing right."
             },
             {
-              "explain": "The sloping ray crosses the scale at about 135°."
+              "explain": "Use the scale that starts at 0° on the aligned ray; the sloping ray crosses it at about 135°.",
+              "work": "\\text{reading}=135^\\circ"
             },
             {
-              "explain": "To the nearest degree, record 135°.",
+              "explain": "The nearest-degree measurement is 135°.",
               "figure": {
                 "svg": "fig:6f55148910"
               }
@@ -3129,10 +3127,15 @@
               "hint": "There are 100 centimetres in 1 metre.",
               "steps": [
                 {
-                  "explain": "\\(1.5\\times100=150\\), so \\(1"
+                  "explain": "First write the mixed number as a decimal.",
+                  "work": "1\\frac{1}{2}\\text{ m}=1.5\\text{ m}"
                 },
                 {
-                  "explain": "rac12\\text{ m}=150\\text{ cm}\\)."
+                  "explain": "There are 100 centimetres in each metre, so multiply by 100.",
+                  "work": "1.5\\times100=150\\text{ cm}"
+                },
+                {
+                  "explain": "Thus 1½ m is 150 cm."
                 }
               ],
               "timeLimit": 60,
@@ -3163,7 +3166,11 @@
               "hint": "There are 1,000 kilograms in one tonne.",
               "steps": [
                 {
-                  "explain": "\\(9,400\\div1,000=9.4\\text{ t}\\)."
+                  "explain": "Convert kilograms to tonnes by dividing by 1,000.",
+                  "work": "9{,}400\\div1{,}000=9.4"
+                },
+                {
+                  "explain": "Therefore 9,400 kg is 9.4 t."
                 }
               ],
               "timeLimit": 60,
@@ -3194,7 +3201,11 @@
               "hint": "There are 1,000 metres in one kilometre.",
               "steps": [
                 {
-                  "explain": "\\(1.25\\div1,000=0.00125\\text{ km}\\)."
+                  "explain": "Since 1 km is 1,000 m, divide the number of metres by 1,000.",
+                  "work": "1.25\\div1{,}000=0.00125"
+                },
+                {
+                  "explain": "Therefore 1.25 m is 0.00125 km."
                 }
               ],
               "timeLimit": 60,
@@ -3224,11 +3235,7 @@
             "origin": "teacher"
           },
           "hint": "Use 100 cm=1 m, 1,000 kg=1 t, and 1,000 m=1 km.",
-          "steps": [
-            {
-              "explain": "5×100=150 cm; 9,400÷1,000=9.4 t; 1.25÷1,000=0.00125 km."
-            }
-          ]
+          "steps": []
         }
       ]
     },
@@ -3401,10 +3408,12 @@
               "hint": "You need enough whole tins to cover all 460 m².",
               "steps": [
                 {
-                  "explain": "\\(460\\div100=4.6\\)."
+                  "explain": "Divide the wall area by the area one tin covers.",
+                  "work": "460\\div100=4.6\\text{ tins}"
                 },
                 {
-                  "explain": "Four tins cover only 400 m², so round up to 5 full tins."
+                  "explain": "Four tins cover only 400 m², so a fifth tin is needed to cover the remaining 60 m².",
+                  "work": "4\\times100=400<460\\quad\\Rightarrow\\quad5\\text{ full tins}"
                 }
               ],
               "timeLimit": 60,
@@ -3435,10 +3444,15 @@
               "hint": "Use the whole number of tins found in part (a).",
               "steps": [
                 {
-                  "explain": "Buy 5 tins."
+                  "explain": "Use the 5 whole tins required to cover 460 m².",
+                  "work": "5\\text{ tins}\\times\\$27.55\\text{ per tin}"
                 },
                 {
-                  "explain": "\\(5\\times\\$27.55=\\$137.75\\)."
+                  "explain": "Multiply the price by 5.",
+                  "work": "5\\times27.55=137.75"
+                },
+                {
+                  "explain": "The total cost is $137.75."
                 }
               ],
               "timeLimit": 60,
@@ -3468,14 +3482,7 @@
             "origin": "teacher"
           },
           "hint": "First calculate how many whole tins are needed, then multiply that number by the price per tin.",
-          "steps": [
-            {
-              "explain": "For 460 m², divide by 100 m² per tin and round up to a whole tin."
-            },
-            {
-              "explain": "Then multiply the number of tins by $27.55."
-            }
-          ]
+          "steps": []
         }
       ]
     },
@@ -3789,13 +3796,16 @@
           "hint": "Add all four side lengths and set the perimeter equal to 96.",
           "steps": [
             {
-              "explain": "\\(3x+x+3x+x=8x\\)."
+              "explain": "Add the four side lengths. There are two sides of length 3x cm and two of length x cm.",
+              "work": "P=3x+x+3x+x=8x"
             },
             {
-              "explain": "\\(8x=96\\), so \\(x=96\\div8=12\\text{ cm}\\)."
+              "explain": "Set the perimeter equal to 96 cm and divide both sides by 8.",
+              "work": "8x=96\\quad\\Rightarrow\\quad x=96\\div8=12\\text{ cm}"
             },
             {
-              "explain": "The side lengths are 36, 12, 36 and 12 cm, totaling 96 cm.",
+              "explain": "Check the side lengths: the long sides are 3(12)=36 cm and the short sides are 12 cm.",
+              "work": "36+12+36+12=96\\text{ cm}",
               "figure": {
                 "svg": "fig:a2389a7595"
               }
@@ -3835,13 +3845,20 @@
           "hint": "Find the two unlabelled horizontal and vertical lengths by matching total widths and heights.",
           "steps": [
             {
-              "explain": "The total width is 10+3+3+4=20 cm (the missing lower-right horizontal length is \\(10-3-3=4\\))."
+              "explain": "The missing lower-right horizontal length completes the total width of 10 cm.",
+              "work": "10-3-3=4\\text{ cm}"
             },
             {
-              "explain": "The total vertical length is \\(4+2+2+4=12\\) cm, since the missing vertical lengths complete the same overall height."
+              "explain": "Add the four horizontal boundary lengths.",
+              "work": "10+3+3+4=20\\text{ cm}"
             },
             {
-              "explain": "\\(P=20+12=32\\text{ cm}\\).",
+              "explain": "The total height is 4+2=6 cm. The downward vertical sections also total 6 cm.",
+              "work": "4+2+2+4=12\\text{ cm across all vertical edges}"
+            },
+            {
+              "explain": "Add the horizontal and vertical boundary totals to get the perimeter.",
+              "work": "P=20+12=32\\text{ cm}",
               "figure": {
                 "svg": "fig:f49a067c58"
               }
@@ -4459,13 +4476,16 @@
           "hint": "Count to midnight, then add the remaining travel time.",
           "steps": [
             {
-              "explain": "From 10:20 pm to midnight is 1 h 40 min."
+              "explain": "Convert the start time to 24-hour time: 10:20 pm is 22:20. Count from 22:20 to midnight.",
+              "work": "24{:}00-22{:}20=1\\text{ h }40\\text{ min}"
             },
             {
-              "explain": "\\(7\\text{ h }45\\text{ min}-1\\text{ h }40\\text{ min}=6\\text{ h }05\\text{ min}\\)."
+              "explain": "Subtract the time to midnight from the whole journey to find the time remaining after midnight.",
+              "work": "7\\text{ h }45\\text{ min}-1\\text{ h }40\\text{ min}=6\\text{ h }05\\text{ min}"
             },
             {
-              "explain": "It finishes at 6:05 am on 16 February."
+              "explain": "Add the remaining 6 h 05 min to midnight. The journey ends the next day at 6:05 am.",
+              "work": "00{:}00+6{:}05=06{:}05"
             }
           ],
           "timeLimit": 120,
@@ -4496,7 +4516,11 @@
           "hint": "Subtract the 30-minute difference from the NSW time.",
           "steps": [
             {
-              "explain": "\\(1{:}30\\text{ pm}-30\\text{ min}=1{:}00\\text{ pm}\\)."
+              "explain": "South Australia is 30 minutes behind NSW, so subtract 30 minutes.",
+              "work": "1{:}30\\text{ pm}-0{:}30=1{:}00\\text{ pm}"
+            },
+            {
+              "explain": "The time in South Australia is 1:00 pm."
             }
           ],
           "timeLimit": 60,
@@ -4527,7 +4551,12 @@
           "hint": "For a pm time after 12 noon, add 12 to the hour.",
           "steps": [
             {
-              "explain": "\\(1+12=13\\), so 1:20 pm is \\(13{:}20\\)."
+              "explain": "For a pm time after noon, add 12 to the hour and keep the minutes unchanged.",
+              "work": "1+12=13"
+            },
+            {
+              "explain": "Keep the 20 minutes, so 1:20 pm is 13:20.",
+              "work": "13{:}20"
             }
           ],
           "timeLimit": 60,
