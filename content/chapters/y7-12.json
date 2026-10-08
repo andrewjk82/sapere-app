@@ -1238,7 +1238,7 @@
               "stem": "Find \\(a\\) in the isosceles triangle shown.",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:a6f3c1abdf"
+                "svg": "fig:7f09152999"
               },
               "options": [
                 "\\(154^\\circ\\)",
@@ -1247,21 +1247,27 @@
                 "\\(76^\\circ\\)"
               ],
               "answer": 2,
-              "hint": "Equal sides have equal opposite angles; then use the triangle angle sum.",
+              "hint": "The matching tick marks identify equal sides. Angles opposite equal sides are equal.",
               "steps": [
                 {
-                  "explain": "The two marked equal sides meet at the vertex labelled a. The opposite base angles are therefore equal.",
-                  "work": "The equal sides are opposite equal angles."
-                },
-                {
-                  "explain": "The left base angle is 26°, so the other base angle is also 26°. Use the triangle angle sum to find a.",
-                  "work": "\\(a=180^\\circ-26^\\circ-26^\\circ\\)"
-                },
-                {
-                  "explain": "Subtract both base angles from 180°.",
-                  "work": "\\(\\boxed{a=128^\\circ}\\)",
+                  "explain": "The matching ticks show that sides AB and BC are equal. The angles opposite those sides, at A and C, are equal.",
+                  "work": "\\(AB=BC\\Longrightarrow\\angle A=\\angle C\\)",
                   "figure": {
-                    "svg": "fig:a6f3c1abdf"
+                    "svg": "fig:290963a347"
+                  }
+                },
+                {
+                  "explain": "The angle at A is 26°, so the equal angle at C is also 26°.",
+                  "work": "\\(\\angle C=26^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:be7f359ba5"
+                  }
+                },
+                {
+                  "explain": "The three interior angles of a triangle add to 180°. Subtract both 26° base angles to find a.",
+                  "work": "\\(a=180^\\circ-26^\\circ-26^\\circ=\\boxed{128^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:733d449ee1"
                   }
                 }
               ],
@@ -1286,10 +1292,10 @@
             {
               "id": "wghs-y7-2015-t3-s2-q7b",
               "type": "mc",
-              "stem": "In the parallel-line triangle diagram, find \\(b\\).",
+              "stem": "In the triangle diagram, find \\(b\\).",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:f62442afbe"
+                "svg": "fig:4d7699b985"
               },
               "options": [
                 "\\(64^\\circ\\)",
@@ -1297,22 +1303,28 @@
                 "\\(42^\\circ\\)",
                 "\\(74^\\circ\\)"
               ],
-              "answer": 0,
-              "hint": "Use the parallel arrows to identify a pair of corresponding angles.",
+              "answer": 3,
+              "hint": "Use the matching side marks to find c, then use the angle sum of the large triangle.",
               "steps": [
                 {
-                  "explain": "The inner segment is parallel to the base, so the angle marked 64° corresponds to angle b.",
-                  "work": "The horizontal segments are parallel."
-                },
-                {
-                  "explain": "Corresponding angles are equal when a transversal crosses parallel lines.",
-                  "work": "\\(b=64^\\circ\\) (corresponding angles)"
-                },
-                {
-                  "explain": "Set b equal to the corresponding 64° angle.",
-                  "work": "\\(\\boxed{b=64^\\circ}\\)",
+                  "explain": "The tick marks show that BE and DE are equal. Their opposite angles are equal, so the top angle c equals the given 64° angle.",
+                  "work": "\\(BE=DE\\Longrightarrow c=64^\\circ\\)",
                   "figure": {
-                    "svg": "fig:f62442afbe"
+                    "svg": "fig:99a7495dd2"
+                  }
+                },
+                {
+                  "explain": "The large triangle has angles b, c, and 42°. Angles in a triangle sum to 180°.",
+                  "work": "\\(b+64^\\circ+42^\\circ=180^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:ecf4846389"
+                  }
+                },
+                {
+                  "explain": "Subtract the two known angles from 180° to find b.",
+                  "work": "\\(b=180^\\circ-64^\\circ-42^\\circ=\\boxed{74^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:c6de1fcc62"
                   }
                 }
               ],
@@ -1320,8 +1332,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "parallel-line",
-                  "note": "The two horizontal segments are parallel, so matching corresponding angles are equal."
+                  "text": "equal sides and triangle angle sum",
+                  "note": "Matching side ticks give equal opposite angles; a triangle’s interior angles total 180°."
                 }
               ],
               "meta": {
@@ -1337,10 +1349,10 @@
             {
               "id": "wghs-y7-2015-t3-s2-q7c",
               "type": "mc",
-              "stem": "In the parallel-line triangle diagram, find \\(c\\).",
+              "stem": "In the isosceles triangle diagram, find \\(c\\).",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:f62442afbe"
+                "svg": "fig:4d7699b985"
               },
               "options": [
                 "\\(42^\\circ\\)",
@@ -1348,22 +1360,28 @@
                 "\\(106^\\circ\\)",
                 "\\(74^\\circ\\)"
               ],
-              "answer": 3,
-              "hint": "First transfer the 42° angle across the parallel lines, then use the small triangle.",
+              "answer": 1,
+              "hint": "The two tick-marked sides are equal, so their opposite angles are equal.",
               "steps": [
                 {
-                  "explain": "The 42° angle at the bottom right corresponds to angle d at the inner parallel line.",
-                  "work": "\\(d=42^\\circ\\) by corresponding angles."
-                },
-                {
-                  "explain": "Use the small triangle’s angle sum with 64° and 42°.",
-                  "work": "\\(c+64^\\circ+42^\\circ=180^\\circ\\)"
-                },
-                {
-                  "explain": "Subtract the known angles from 180°.",
-                  "work": "\\(c=180^\\circ-106^\\circ=\\boxed{74^\\circ}\\)",
+                  "explain": "The two tick-marked sides, BE and DE, are equal. Therefore, the angles opposite them at B and D are equal.",
+                  "work": "\\(BE=DE\\Longrightarrow\\angle DBE=\\angle BDE\\)",
                   "figure": {
-                    "svg": "fig:f62442afbe"
+                    "svg": "fig:b7d16d6744"
+                  }
+                },
+                {
+                  "explain": "The angle at D is given as 64°. The equal opposite angle at B is c.",
+                  "work": "\\(c=64^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:d2eb1858fe"
+                  }
+                },
+                {
+                  "explain": "State the value of c from the equal-angle relationship.",
+                  "work": "\\(\\boxed{c=64^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:eafb112f74"
                   }
                 }
               ],
@@ -1371,8 +1389,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "find \\(c\\)",
-                  "note": "The small top triangle has angles 64°, c, and an angle corresponding to 42°."
+                  "text": "angles opposite equal sides",
+                  "note": "In an isosceles triangle, the angles opposite the equal sides have equal measures."
                 }
               ],
               "meta": {
@@ -1388,33 +1406,39 @@
             {
               "id": "wghs-y7-2015-t3-s2-q7d",
               "type": "mc",
-              "stem": "In the parallel-line triangle diagram, find \\(d\\).",
+              "stem": "In the small isosceles triangle, find \\(d\\).",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:f62442afbe"
+                "svg": "fig:4d7699b985"
               },
               "options": [
                 "\\(64^\\circ\\)",
                 "\\(42^\\circ\\)",
-                "\\(74^\\circ\\)",
-                "\\(116^\\circ\\)"
+                "\\(52^\\circ\\)",
+                "\\(128^\\circ\\)"
               ],
-              "answer": 1,
-              "hint": "Compare d with the 42° angle on the parallel base.",
+              "answer": 2,
+              "hint": "First use the equal sides to find c. Then use the three angles in the small triangle.",
               "steps": [
                 {
-                  "explain": "The inner segment and the base are parallel. The right side of the large triangle is a transversal.",
-                  "work": "Parallel lines are cut by the same sloping side."
-                },
-                {
-                  "explain": "Angle d and the 42° base angle are corresponding angles.",
-                  "work": "\\(d=42^\\circ\\)"
-                },
-                {
-                  "explain": "Corresponding angles are equal.",
-                  "work": "\\(\\boxed{d=42^\\circ}\\)",
+                  "explain": "BE and DE have matching tick marks, so the opposite angles c and the given 64° angle are equal.",
+                  "work": "\\(c=64^\\circ\\)",
                   "figure": {
-                    "svg": "fig:f62442afbe"
+                    "svg": "fig:b7d16d6744"
+                  }
+                },
+                {
+                  "explain": "The small triangle has angles 64°, c=64°, and d. Its angles add to 180°.",
+                  "work": "\\(64^\\circ+64^\\circ+d=180^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:d03886efb4"
+                  }
+                },
+                {
+                  "explain": "Subtract the two 64° angles from 180° to find d.",
+                  "work": "\\(d=180^\\circ-64^\\circ-64^\\circ=\\boxed{52^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:2638ab6c75"
                   }
                 }
               ],
@@ -1422,8 +1446,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "find \\(d\\)",
-                  "note": "Use the parallel marks to spot the corresponding angle pair."
+                  "text": "isosceles triangle and angle sum",
+                  "note": "Use equal sides to find equal opposite angles, then subtract from 180°."
                 }
               ],
               "meta": {
@@ -1442,7 +1466,7 @@
               "stem": "Find the exterior angle \\(e\\) in the triangle shown.",
               "difficulty": "easy",
               "figure": {
-                "svg": "fig:708e4fed2d"
+                "svg": "fig:49c2cee2a5"
               },
               "options": [
                 "\\(72^\\circ\\)",
@@ -1451,21 +1475,27 @@
                 "\\(132^\\circ\\)"
               ],
               "answer": 2,
-              "hint": "Add the two interior angles that are not adjacent to e.",
+              "hint": "An exterior angle of a triangle equals the sum of the two opposite interior angles.",
               "steps": [
                 {
-                  "explain": "The given 48° and 60° angles are the two interior angles opposite the exterior angle.",
-                  "work": "Exterior-angle theorem: exterior angle = sum of opposite interior angles."
-                },
-                {
-                  "explain": "The exterior angle of a triangle equals the sum of the two opposite interior angles.",
-                  "work": "\\(e=48^\\circ+60^\\circ\\)"
-                },
-                {
-                  "explain": "Add the two remote interior angles.",
-                  "work": "\\(\\boxed{e=108^\\circ}\\)",
+                  "explain": "The 48° and 60° angles are the two interior angles opposite the exterior angle e.",
+                  "work": "Remote interior angles: \\(48^\\circ\\) and \\(60^\\circ\\).",
                   "figure": {
-                    "svg": "fig:708e4fed2d"
+                    "svg": "fig:781b5e4349"
+                  }
+                },
+                {
+                  "explain": "Use the exterior-angle theorem: add the two remote interior angles.",
+                  "work": "\\(e=48^\\circ+60^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:af4fc23011"
+                  }
+                },
+                {
+                  "explain": "Add the two angles to find e.",
+                  "work": "\\(e=48^\\circ+60^\\circ=\\boxed{108^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:1c98063922"
                   }
                 }
               ],
@@ -1473,8 +1503,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "exterior angle",
-                  "note": "For a triangle, an exterior angle equals the sum of the two opposite interior angles."
+                  "text": "exterior angle theorem",
+                  "note": "An exterior angle equals the sum of the two non-adjacent interior angles."
                 }
               ],
               "meta": {
@@ -1490,10 +1520,10 @@
             {
               "id": "wghs-y7-2015-t3-s2-q7f",
               "type": "mc",
-              "stem": "Find \\(f\\) in the isosceles triangle diagram with an exterior angle of 120°.",
+              "stem": "Find \\(f\\) in the isosceles triangle shown. The exterior angle at the top is \\(120^\\circ\\).",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:760eed49ae"
+                "svg": "fig:a44e74eebe"
               },
               "options": [
                 "\\(120^\\circ\\)",
@@ -1502,29 +1532,35 @@
                 "\\(30^\\circ\\)"
               ],
               "answer": 0,
-              "hint": "Convert the 120° exterior angle to its adjacent interior angle, then use the equal-side marks.",
+              "hint": "A straight-line pair sums to 180°. Then use the equal-side marks and find the exterior angle at the left base.",
               "steps": [
                 {
-                  "explain": "The exterior angle and the triangle’s top interior angle form a straight line.",
-                  "work": "Top interior angle: \\(180^\\circ-120^\\circ=60^\\circ\\). Equal sides give equal opposite angles; the right base angle is also 60°."
+                  "explain": "The 120° exterior angle and the adjacent top interior angle form a straight line.",
+                  "work": "\\(\\angle B=180^\\circ-120^\\circ=60^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:21e12ebab2"
+                  }
                 },
                 {
-                  "explain": "The top interior angle is 180° − 120° = 60°. The tick marks show the opposite side and base are equal, so the two remaining angles are equal.",
-                  "work": "The left interior base angle is \\(60^\\circ\\)."
+                  "explain": "The tick marks show that AC=BC. The opposite angles at B and A are equal, so the left interior base angle is also 60°.",
+                  "work": "\\(AC=BC\\Longrightarrow\\angle A=\\angle B=60^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:0b63420c74"
+                  }
                 },
                 {
-                  "explain": "Use the triangle angle sum to find each equal base angle, then use the straight-line pair for f.",
+                  "explain": "The exterior angle f and the 60° interior angle at A form a straight line.",
                   "work": "\\(f=180^\\circ-60^\\circ=\\boxed{120^\\circ}\\)",
                   "figure": {
-                    "svg": "fig:760eed49ae"
+                    "svg": "fig:390b94cc56"
                   }
                 }
               ],
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "exterior angle of 120°",
-                  "note": "The adjacent interior angle lies on a straight line with the exterior angle; together they total 180°."
+                  "text": "linear pair and equal sides",
+                  "note": "Adjacent angles on a straight line total 180°; equal sides have equal opposite angles."
                 }
               ],
               "meta": {
@@ -1543,7 +1579,7 @@
               "stem": "Find \\(g\\) in the quadrilateral shown.",
               "difficulty": "medium",
               "figure": {
-                "svg": "fig:0ba7c3ff5a"
+                "svg": "fig:adb6187432"
               },
               "options": [
                 "\\(105^\\circ\\)",
@@ -1552,21 +1588,27 @@
                 "\\(150^\\circ\\)"
               ],
               "answer": 3,
-              "hint": "Use the 360° interior angle sum for a quadrilateral.",
+              "hint": "The interior angles of any quadrilateral add to 360°.",
               "steps": [
                 {
-                  "explain": "The shape is a quadrilateral, so its four interior angles sum to 360°.",
-                  "work": "The interior angle sum of a quadrilateral is \\(360^\\circ\\)."
+                  "explain": "This shape has four sides, so its four interior angles sum to 360°.",
+                  "work": "\\(65^\\circ+100^\\circ+45^\\circ+g=360^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:a3dd6f3424"
+                  }
                 },
                 {
-                  "explain": "Add the three known interior angles and subtract that sum from 360°.",
-                  "work": "\\(g=360^\\circ-(65^\\circ+100^\\circ+45^\\circ)\\)"
+                  "explain": "Add the three known interior angles before subtracting from 360°.",
+                  "work": "\\(65^\\circ+100^\\circ+45^\\circ=210^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:578de73f72"
+                  }
                 },
                 {
-                  "explain": "Check that the result completes the full quadrilateral angle sum.",
+                  "explain": "Subtract the known total from 360° to find g.",
                   "work": "\\(g=360^\\circ-210^\\circ=\\boxed{150^\\circ}\\)",
                   "figure": {
-                    "svg": "fig:0ba7c3ff5a"
+                    "svg": "fig:91b3983f29"
                   }
                 }
               ],
@@ -1574,8 +1616,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "quadrilateral",
-                  "note": "A quadrilateral’s four interior angles add to 360°."
+                  "text": "quadrilateral angle sum",
+                  "note": "The four interior angles of a quadrilateral add to 360°."
                 }
               ],
               "meta": {
@@ -1594,7 +1636,7 @@
               "stem": "Find \\(h\\) in the concave quadrilateral shown.",
               "difficulty": "hard",
               "figure": {
-                "svg": "fig:ab043171d7"
+                "svg": "fig:5e5f44fffd"
               },
               "options": [
                 "\\(125^\\circ\\)",
@@ -1603,21 +1645,27 @@
                 "\\(49^\\circ\\)"
               ],
               "answer": 1,
-              "hint": "At the concave vertex, use the reflex interior angle rather than the smaller 94° outside angle.",
+              "hint": "At the inward notch, the interior angle is reflex. Find it by subtracting the marked 94° from 360°.",
               "steps": [
                 {
-                  "explain": "The labelled 94° at the inward notch is the smaller exterior angle there; the quadrilateral’s reflex interior angle is 360° − 94°.",
-                  "work": "Reflex interior angle at the notch: \\(360^\\circ-94^\\circ=266^\\circ\\)."
-                },
-                {
-                  "explain": "Use the four-sided interior angle sum with the reflex angle, 42°, 21°, and h.",
-                  "work": "\\(h+42^\\circ+21^\\circ+266^\\circ=360^\\circ\\)"
-                },
-                {
-                  "explain": "Subtract the three known interior angles from 360°.",
-                  "work": "\\(h=360^\\circ-329^\\circ=\\boxed{31^\\circ}\\)",
+                  "explain": "The 94° angle is the smaller angle outside the inward notch. The quadrilateral’s reflex interior angle is the rest of a full turn.",
+                  "work": "\\(360^\\circ-94^\\circ=266^\\circ\\)",
                   "figure": {
-                    "svg": "fig:ab043171d7"
+                    "svg": "fig:40142d4db2"
+                  }
+                },
+                {
+                  "explain": "A quadrilateral’s interior angles, including the 266° reflex angle, add to 360°.",
+                  "work": "\\(h+42^\\circ+21^\\circ+266^\\circ=360^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:ed402337d8"
+                  }
+                },
+                {
+                  "explain": "Subtract the three known interior angles from 360° to find h.",
+                  "work": "\\(h=360^\\circ-(42^\\circ+21^\\circ+266^\\circ)=\\boxed{31^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:03b83c8dab"
                   }
                 }
               ],
@@ -1625,8 +1673,8 @@
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "concave quadrilateral",
-                  "note": "The interior angle at the inward notch is reflex: it is 360° minus the marked smaller angle."
+                  "text": "reflex interior angle",
+                  "note": "At a concave vertex, the interior angle is greater than 180°; here it is 360°−94°."
                 }
               ],
               "meta": {
@@ -1642,10 +1690,10 @@
             {
               "id": "wghs-y7-2015-t3-s2-q7i",
               "type": "mc",
-              "stem": "Find \\(m\\) in the four-sided figure with the two parallel horizontal lines.",
+              "stem": "Find \\(m\\) in the quadrilateral shown. The 92° and 59° angles are exterior angles.",
               "difficulty": "hard",
               "figure": {
-                "svg": "fig:950290fc34"
+                "svg": "fig:d32c8c0ce0"
               },
               "options": [
                 "\\(121^\\circ\\)",
@@ -1654,27 +1702,36 @@
                 "\\(74^\\circ\\)"
               ],
               "answer": 2,
-              "hint": "Convert each exterior angle to its adjacent interior angle, use the quadrilateral sum, then find m’s linear pair.",
+              "hint": "Convert the two exterior angles to adjacent interior angles first. Then use the quadrilateral sum and a straight-line pair.",
               "steps": [
                 {
-                  "explain": "Convert the marked exterior angles on the upper straight line to their adjacent interior angles. The given 77° at the lower right is already an interior angle.",
-                  "work": "\\(180^\\circ-92^\\circ=88^\\circ,\\quad180^\\circ-59^\\circ=121^\\circ\\)"
+                  "explain": "Each marked exterior angle and its adjacent interior angle lie on a straight line. Find the two top interior angles.",
+                  "work": "\\(180^\\circ-92^\\circ=88^\\circ,\\qquad180^\\circ-59^\\circ=121^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:f939e98af8"
+                  }
                 },
                 {
-                  "explain": "Use the quadrilateral interior-angle sum to find the lower-left interior angle.",
-                  "work": "\\(x=360^\\circ-(88^\\circ+121^\\circ+77^\\circ)=74^\\circ\\)"
+                  "explain": "The quadrilateral’s interior angles add to 360°. Subtract the two top angles and the given 77° angle.",
+                  "work": "\\(x=360^\\circ-(88^\\circ+121^\\circ+77^\\circ)=74^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:7c57930fa1"
+                  }
                 },
                 {
-                  "explain": "The angle m and the 74° interior angle form a straight line, so they are supplementary.",
-                  "work": "\\(m=180^\\circ-74^\\circ=\\boxed{106^\\circ}\\)"
+                  "explain": "The exterior angle m and the 74° bottom-left interior angle form a straight line.",
+                  "work": "\\(m=180^\\circ-74^\\circ=\\boxed{106^\\circ}\\)",
+                  "figure": {
+                    "svg": "fig:d2ecf01cce"
+                  }
                 }
               ],
               "timeLimit": 180,
               "xp": 1,
               "keyPoints": [
                 {
-                  "text": "two parallel horizontal lines",
-                  "note": "The given top angles are exterior to the quadrilateral; first find their adjacent interior angles."
+                  "text": "exterior/interior linear pairs",
+                  "note": "Convert the exterior top angles to interior angles using 180°, then apply the quadrilateral angle sum."
                 }
               ],
               "meta": {
