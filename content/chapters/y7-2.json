@@ -5544,6 +5544,7 @@
               "explain": "There are three factors of m, so the product is \\(45m^3\\)."
             }
           ],
+          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
