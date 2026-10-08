@@ -11,36 +11,35 @@ text { font-family: Arial, sans-serif; fill: #263449; font-size: 20px; }
 </style>
 
 <!-- Hidden Prism Edges -->
-<path d="M 190 240 L 310 205 L 430 240" class="dashed"/>
-<path d="M 310 65 L 310 205" class="dashed"/>
+<path d="M 170 230 L 240 190 L 380 190 L 450 230" class="dashed"/>
+<path d="M 240 50 L 240 190" class="dashed"/>
+<path d="M 380 50 L 380 190" class="dashed"/>
 
 <!-- Slice Back (Hidden) Edges -->
-<path d="M 190 170 L 310 135 L 430 170" class="slice-dashed"/>
+<path d="M 170 160 L 240 120 L 380 120 L 450 160" class="slice-dashed"/>
 
 <!-- Slice Fill -->
-<path d="M 190 170 L 310 135 L 430 170 L 430 250 L 310 285 L 190 250 Z" class="slice"/>
+<path d="M 170 160 L 240 120 L 380 120 L 450 160 L 380 200 L 240 200 Z" class="slice"/>
 
 <!-- Slice Front (Visible) Edges -->
-<path d="M 430 170 L 430 250 L 310 285 L 190 250 L 190 170" class="slice-edge"/>
+<path d="M 450 160 L 380 200 L 240 200 L 170 160" class="slice-edge"/>
 
 <!-- Prism Side Faces (Front) -->
-<path d="M 190 100 L 190 180 L 190 320 L 190 240 Z" class="sideface"/>
-<path d="M 190 180 L 310 215 L 310 355 L 190 320 Z" class="sideface"/>
-<path d="M 310 215 L 430 180 L 430 320 L 310 355 Z" class="sideface"/>
-<path d="M 430 180 L 430 100 L 430 240 L 430 320 Z" class="sideface"/>
+<path d="M 170 90 L 240 130 L 240 270 L 170 230 Z" class="sideface"/>
+<path d="M 240 130 L 380 130 L 380 270 L 240 270 Z" class="sideface"/>
+<path d="M 380 130 L 450 90 L 450 230 L 380 270 Z" class="sideface"/>
 
 <!-- Top Face (Semi-transparent) -->
-<path d="M 190 100 L 310 65 L 430 100 L 430 180 L 310 215 L 190 180 Z" class="topface"/>
+<path d="M 170 90 L 240 50 L 380 50 L 450 90 L 380 130 L 240 130 Z" class="topface"/>
 
 <!-- Prism Vertical Visible Edges -->
-<path d="M 190 100 L 190 240" class="solid"/>
-<path d="M 430 100 L 430 240" class="solid"/>
-<path d="M 430 180 L 430 320" class="solid"/>
-<path d="M 310 215 L 310 355" class="solid"/>
-<path d="M 190 180 L 190 320" class="solid"/>
+<path d="M 170 90 L 170 230" class="solid"/>
+<path d="M 240 130 L 240 270" class="solid"/>
+<path d="M 380 130 L 380 270" class="solid"/>
+<path d="M 450 90 L 450 230" class="solid"/>
 
 <!-- Prism Bottom Visible Edges -->
-<path d="M 190 240 L 190 320 L 310 355 L 430 320 L 430 240" class="solid"/>
+<path d="M 170 230 L 240 270 L 380 270 L 450 230" class="solid"/>
 
-<text x="310" y="375" text-anchor="middle">cross-section parallel to the ends</text>
+<text x="310" y="335" text-anchor="middle">cross-section parallel to the ends</text>
 </svg>
