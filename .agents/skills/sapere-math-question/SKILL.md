@@ -312,10 +312,14 @@ multipart question.
    geometry is mathematically correct; every angle arc sits at its vertex and
    inside the intended sector; angle/value/vertex labels are readable and do
    not overlap each other, arcs, or line segments; side ticks and other marks
-   lie on the correct segments; and no content is clipped. In particular,
-   angle labels must not sit outside the intended angle or on a side. Check
-   question, sample-answer, and step diagrams, not only the first SVG. Valid SVG
-   syntax or a passing content validator does not replace visual inspection.
+   lie on the correct segments; and no content is clipped. **Place an angle's
+   value/pronumeral between the two rays that form that angle, as close to its
+   arc as the space allows. Never place it outside the sector or on a side.**
+   If a narrow sector will not fit the label, reduce its font size and/or rotate
+   it along the angle bisector, then inspect it at display size; do not move it
+   outside the angle to avoid overlap. Check question, sample-answer, and step
+   diagrams, not only the first SVG. Valid SVG syntax or a passing content
+   validator does not replace visual inspection.
 8. **Finish with a content QA pass.** Check each prompt against its source,
    each answer against the key, all choices and the correct `answer` index,
    hint and worked solution, marks/time/difficulty, and all diagrams. Run
