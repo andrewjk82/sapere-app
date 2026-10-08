@@ -4700,14 +4700,14 @@
         {
           "id": "wghs-y7-2015-t3-s3-q13",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "Calculate each quotient. The parts are independent.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "wghs-y7-2015-t3-s3-q13a",
               "type": "mc",
-              "difficulty": "easy",
               "stem": "Calculate \\(3.123\\div10\\).",
+              "difficulty": "easy",
               "options": [
                 "0.03123",
                 "31.23",
@@ -4716,12 +4716,6 @@
               ],
               "answer": 2,
               "hint": "Dividing by 10 shifts the decimal point one place left.",
-              "keyPoints": [
-                {
-                  "text": "Calculate",
-                  "note": "Move the decimal one place left for division by 10."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Divide by 10 by shifting the decimal one place left.",
@@ -4734,6 +4728,12 @@
               ],
               "timeLimit": 60,
               "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Move the decimal one place left for division by 10."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -4747,8 +4747,8 @@
             {
               "id": "wghs-y7-2015-t3-s3-q13b",
               "type": "mc",
-              "difficulty": "easy",
               "stem": "Calculate \\(9.456\\div0.01\\).",
+              "difficulty": "easy",
               "options": [
                 "945.6",
                 "0.09456",
@@ -4757,12 +4757,6 @@
               ],
               "answer": 0,
               "hint": "Dividing by one hundredth is equivalent to multiplying by 100.",
-              "keyPoints": [
-                {
-                  "text": "Calculate",
-                  "note": "A divisor smaller than 1 can make the quotient larger; multiply by 100 here."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Since \\(0.01=\\frac{1}{100}\\), dividing by it is multiplying by 100.",
@@ -4779,6 +4773,12 @@
               ],
               "timeLimit": 60,
               "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "A divisor smaller than 1 can make the quotient larger; multiply by 100 here."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -4792,8 +4792,8 @@
             {
               "id": "wghs-y7-2015-t3-s3-q13c",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Calculate \\(2.144\\div0.08\\).",
+              "difficulty": "medium",
               "options": [
                 "268",
                 "2.68",
@@ -4802,12 +4802,6 @@
               ],
               "answer": 3,
               "hint": "Multiply both numbers by 100 to turn the divisor into 8.",
-              "keyPoints": [
-                {
-                  "text": "Calculate",
-                  "note": "Scale the dividend and divisor by the same power of ten."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Multiply both numbers by 100 so the divisor is a whole number.",
@@ -4823,7 +4817,13 @@
                 }
               ],
               "timeLimit": 100,
-              "xp": 2,
+              "xp": 1,
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Scale the dividend and divisor by the same power of ten."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -4837,8 +4837,8 @@
             {
               "id": "wghs-y7-2015-t3-s3-q13d",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Calculate \\(0.0313\\div40\\).",
+              "difficulty": "medium",
               "options": [
                 "0.007825",
                 "0.0007825",
@@ -4847,12 +4847,6 @@
               ],
               "answer": 1,
               "hint": "Divide by 4, then divide by 10; this is equivalent to dividing by 40.",
-              "keyPoints": [
-                {
-                  "text": "Calculate",
-                  "note": "Factor 40 into 4 and 10 to make the division easier to track."
-                }
-              ],
               "steps": [
                 {
                   "explain": "Use \\(40=4\\times10\\).",
@@ -4873,6 +4867,12 @@
               ],
               "timeLimit": 100,
               "xp": 2,
+              "keyPoints": [
+                {
+                  "text": "Calculate",
+                  "note": "Factor 40 into 4 and 10 to make the division easier to track."
+                }
+              ],
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
                 "school": "Willoughby Girls High School",
@@ -4885,14 +4885,14 @@
             }
           ],
           "hint": "For decimal divisors, scale both numbers together; for powers of ten, shift place value.",
+          "timeLimit": 180,
+          "xp": 2,
           "keyPoints": [
             {
               "text": "each quotient",
               "note": "Choose a method that makes the divisor or place-value shift easy to manage."
             }
           ],
-          "timeLimit": 180,
-          "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -4900,7 +4900,8 @@
             "page": 11,
             "question": "q13",
             "section": "Section 3 (Decimals)",
-            "marks": 4
+            "marks": 4,
+            "origin": "teacher"
           }
         },
         {
