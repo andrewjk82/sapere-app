@@ -2807,8 +2807,8 @@
         {
           "id": "y7-killara-23-t4b-q33",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "A rectangle’s length is increased by 25%. By what percentage must its width change so that its area stays the same?",
+          "difficulty": "hard",
           "options": [
             "Increase by \\(25\\%\\)",
             "Decrease by \\(25\\%\\)",
@@ -2832,7 +2832,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1,
+          "xp": 2,
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
             "school": "Killara High School",
