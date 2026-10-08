@@ -9624,7 +9624,13 @@
             "section": "Algebra",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "Each term is 3 times the previous term.",
+              "note": "Use the repeated multiplication rule: multiply 18 by 3 to find the next term."
+            }
+          ]
         },
         {
           "id": "wghs-y7-2013-t3-a-q3",
