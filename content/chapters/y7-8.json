@@ -4092,7 +4092,7 @@
               }
             }
           ],
-          "timeLimit": 90,
+          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
