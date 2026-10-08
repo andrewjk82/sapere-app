@@ -988,12 +988,6 @@
             }
           },
           "answer": "y = (x+3)^2 + 1.\nTranslation: left 3, up 1.",
-          "options": [
-            "Shifted 3 units to the left and 1 unit upward",
-            "Shifted 3 units to the right and 1 unit upward",
-            "Shifted 3 units to the left and 1 unit downward",
-            "Shifted 3 units to the right and 1 unit downward"
-          ],
           "hint": "Take half of 6, square it, and add/subtract it to complete the square.",
           "solution": "y = (x+3)^2 + 1.\nTranslation: left 3, up 1.",
           "steps": [
@@ -1050,12 +1044,6 @@
             }
           },
           "answer": "y = (x-2)^2 - 9.\nTranslation: right 2, down 9.",
-          "options": [
-            "Shifted 2 units to the right and 9 units downward",
-            "Shifted 2 units to the left and 9 units downward",
-            "Shifted 2 units to the right and 9 units upward",
-            "Shifted 2 units to the left and 9 units upward"
-          ],
           "hint": "Take half of -4, square it, and add/subtract it.",
           "solution": "y = (x-2)^2 - 9.\nTranslation: right 2, down 9.",
           "steps": [
@@ -1099,12 +1087,6 @@
           "difficulty": "medium",
           "stem": "Complete the square to express \\(y = -x^2 + 8x - 12\\) in the form \\(y = -(x-h)^2 + k\\). Identify the translation from \\(y = -x^2\\) and sketch its graph.",
           "answer": "y = -(x-4)^2 + 4.\nTranslation: right 4, up 4.",
-          "options": [
-            "Shifted 4 units to the right and 4 units upward",
-            "Shifted 4 units to the left and 4 units upward",
-            "Shifted 4 units to the right and 4 units downward",
-            "Shifted 4 units to the left and 4 units downward"
-          ],
           "hint": "Factor out the negative sign first: \\(-(x^2 - 8x) - 12\\).",
           "solution": "y = -(x-4)^2 + 4.\nTranslation: right 4, up 4.",
           "steps": [
@@ -1135,12 +1117,6 @@
           "difficulty": "medium",
           "stem": "Complete the square to express \\(y = -x^2 - 2x + 8\\) in the form \\(y = -(x-h)^2 + k\\). Identify the translation from \\(y = -x^2\\) and sketch its graph.",
           "answer": "y = -(x+1)^2 + 9.\nTranslation: left 1, up 9.",
-          "options": [
-            "Shifted 1 unit to the left and 9 units upward",
-            "Shifted 1 unit to the right and 9 units upward",
-            "Shifted 1 unit to the left and 9 units downward",
-            "Shifted 1 unit to the right and 9 units downward"
-          ],
           "hint": "Factor out the negative sign: \\(-(x^2 + 2x) + 8\\).",
           "solution": "y = -(x+1)^2 + 9.\nTranslation: left 1, up 9.",
           "steps": [
@@ -1184,12 +1160,6 @@
             }
           },
           "answer": "y = (x-5)^2 - 4.\nTranslation: right 5, down 4.",
-          "options": [
-            "Shifted 5 units to the right and 4 units downward",
-            "Shifted 5 units to the left and 4 units downward",
-            "Shifted 5 units to the right and 4 units upward",
-            "Shifted 5 units to the left and 4 units upward"
-          ],
           "hint": "Take half of -10, square it, and add/subtract it.",
           "solution": "y = (x-5)^2 - 4.\nTranslation: right 5, down 4.",
           "steps": [
@@ -1246,12 +1216,6 @@
             }
           },
           "answer": "y = (x+2)^2 + 2.\nTranslation: left 2, up 2.",
-          "options": [
-            "Shifted 2 units to the left and 2 units upward",
-            "Shifted 2 units to the right and 2 units upward",
-            "Shifted 2 units to the left and 2 units downward",
-            "Shifted 2 units to the right and 2 units downward"
-          ],
           "hint": "Take half of 4, square it, and add/subtract it.",
           "solution": "y = (x+2)^2 + 2.\nTranslation: left 2, up 2.",
           "steps": [
