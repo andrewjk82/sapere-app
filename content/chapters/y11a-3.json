@@ -2556,7 +2556,8 @@
                   "explain": "Combine both conditions — since \\(x\\ge0\\) is the more restrictive one, it determines the domain.",
                   "work": "\\(\\therefore\\) Domain \\(= [0,\\infty)\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "hh2020-q23b",
@@ -2587,7 +2588,8 @@
                   "explain": "The LARGEST such value of \\(c\\) is therefore exactly \\(-3\\).",
                   "work": "\\(\\therefore c = -3\\)"
                 }
-              ]
+              ],
+              "xp": 2
             }
           ],
           "meta": {
