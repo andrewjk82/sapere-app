@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style><path d="M190 200L455 85L520 315L255 315Z" class="blue"/><path d="M455 85h28v28M255 287h28v28" stroke="#e28a00" stroke-width="3" fill="none"/><path d="M214 190A34 34 0 0 1 220 221" stroke="#e28a00" stroke-width="4" fill="none"/><path d="M170 187A50 50 0 1 0 223 225" stroke="#6457e8" stroke-width="4" fill="none"/><text x="230" y="210">87°</text><text x="145" y="175">c°</text><text x="410" y="155">90°</text><text x="285" y="300">110°</text><text x="470" y="300">d°</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#e28a00;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style>
+<path d="M190 200L455 85L520 315L255 315Z" class="blue"/>
+<path d="M 207.2 230.5 A 35 35 0 1 1 222.1 186.1" class="thin"/>
+<path d="M 231.3 182.1 A 45 45 0 0 1 212.1 239.2" stroke="#6457e8" stroke-width="4" fill="none"/>
+<path d="M 290.0 315.0 A 35 35 0 1 1 237.8 284.5" class="thin"/>
+<path d="M 510.5 281.3 A 35 35 0 1 1 485.0 315.0" stroke="transparent" stroke-width="3" fill="none"/>
+<path d="M 432.1 95.0 L 438.9 119.0 L 461.8 109.1" class="thin"/>
+<text x="215" y="225">87°</text>
+<text x="145" y="175">c°</text>
+<text x="430" y="130">90°</text>
+<text x="290" y="295">110°</text>
+<text x="480" y="295">d°</text>
+</svg>
