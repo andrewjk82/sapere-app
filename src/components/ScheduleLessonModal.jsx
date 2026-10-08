@@ -13,7 +13,7 @@ const ScheduleLessonModal = ({ isOpen, onClose, students }) => {
   const [newSession, setNewSession] = useState({
     studentIds: [], 
     studentName: '',
-    subject: '',
+    subject: 'Maths',
     date: new Date().toISOString().split('T')[0],
     startTime: '10:00 AM',
     endTime: '11:30 AM',
@@ -26,8 +26,8 @@ const ScheduleLessonModal = ({ isOpen, onClose, students }) => {
 
   const handleCreateSession = async (e) => {
     e.preventDefault();
-    if (newSession.studentIds.length === 0 || !newSession.subject) {
-      showToast("Please select at least one student and a subject.", 'warning');
+    if (newSession.studentIds.length === 0) {
+      showToast("Please select at least one student.", 'warning');
       return;
     }
     setIsSubmitting(true);
@@ -103,7 +103,7 @@ const ScheduleLessonModal = ({ isOpen, onClose, students }) => {
       setNewSession({ 
         studentIds: [], 
         studentName: '', 
-        subject: '', 
+        subject: 'Maths', 
         date: new Date().toISOString().split('T')[0], 
         startTime: '10:00 AM',
         endTime: '11:30 AM',
@@ -205,19 +205,6 @@ const ScheduleLessonModal = ({ isOpen, onClose, students }) => {
                 );
               })}
             </div>
-          </div>
-
-          {/* Subject */}
-          <div>
-            <label style={{ display: 'block', fontSize: '11px', fontWeight: 800, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>Subject</label>
-            <input
-              required
-              type="text"
-              placeholder="e.g. Mathematics"
-              value={newSession.subject}
-              onChange={e => setNewSession({ ...newSession, subject: e.target.value })}
-              style={{ width: '100%', backgroundColor: '#f8fafc', border: '2px solid #e2e8f0', borderRadius: '14px', padding: '14px 16px', fontSize: '0.95rem', color: '#334155', fontWeight: 600, outline: 'none', boxSizing: 'border-box' }}
-            />
           </div>
 
           {/* Date */}
