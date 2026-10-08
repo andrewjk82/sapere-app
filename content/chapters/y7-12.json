@@ -2202,8 +2202,11 @@
         {
           "id": "wghs-y7-2013-t3-g-q5",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "The lines AC and DF are cut by a transversal. Which reason shows that AC and DF are not parallel?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:4051d1a504"
+          },
           "options": [
             "The angles are equal because 123°−60°=63°.",
             "The same-side interior angles total 180° because 123°+60°=180°.",
@@ -2232,8 +2235,13 @@
               }
             }
           ],
-          "timeLimit": 120,
-          "xp": 2,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "not parallel",
+              "note": "For parallel lines, same-side interior angles must total 180°."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
             "school": "Willoughby Girls High School",
@@ -2243,16 +2251,7 @@
             "section": "Geometry",
             "marks": 2,
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "fig:4051d1a504"
-          },
-          "keyPoints": [
-            {
-              "text": "not parallel",
-              "note": "For parallel lines, same-side interior angles must total 180°."
-            }
-          ]
+          }
         }
       ]
     },
