@@ -9755,7 +9755,7 @@
               "explain": "Each new square adds 3 matches, giving m=3s+1; for 25 squares, m=3(25)+1=76."
             }
           ],
-          "timeLimit": 300,
+          "timeLimit": 180,
           "xp": 4,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
