@@ -7353,12 +7353,6 @@
           "difficulty": "medium",
           "stem": "Write down the new equation for the function \\(y = x^3 - 2\\) after it is reflected in the \\(y\\)-axis. Then sketch the graph of the new curve.",
           "answer": "New equation: y = -x^3 - 2.",
-          "options": [
-            "\\(y = -x^3 - 2\\)",
-            "\\(y = -x^3 + 2\\)",
-            "\\(y = x^3 + 2\\)",
-            "\\(y = -(x^3 - 2)\\)"
-          ],
           "hint": "Reflecting in the \\(y\\)-axis means replacing \\(x\\) with \\(-x\\).",
           "solution": "New equation: y = -x^3 - 2.",
           "steps": [
@@ -7389,12 +7383,6 @@
           "difficulty": "medium",
           "stem": "Write down the new equation for the function \\(y = 3^x\\) after it is rotated by \\(180^{\\circ}\\) about the origin. Then sketch the graph of the new curve.",
           "answer": "New equation: y = -3^{-x}.\nExponential curve in the third quadrant.",
-          "options": [
-            "\\(y = -3^{-x}\\)",
-            "\\(y = 3^{-x}\\)",
-            "\\(y = -3^x\\)",
-            "\\(y = -3^{x - 1}\\)"
-          ],
           "hint": "A \\(180^{\\circ}\\) rotation about the origin is equivalent to reflecting in both axes: replace \\(x\\) with \\(-x\\) and \\(y\\) with \\(-y\\).",
           "solution": "New equation: y = -3^{-x}.\nExponential curve in the third quadrant.",
           "steps": [
