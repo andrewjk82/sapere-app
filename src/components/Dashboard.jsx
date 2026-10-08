@@ -574,7 +574,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
           return (
             <button
               type="button"
-              onClick={() => setActiveTab?.('Challenge')}
+              onClick={() => {
+                try { sessionStorage.setItem('sapere:openHomework:v1', '1'); } catch { /* storage blocked */ }
+                setActiveTab?.('Challenge');
+              }}
               style={{
                 display: 'flex', alignItems: 'center', gap: 14,
                 width: '100%', marginBottom: 24, padding: '16px 20px',

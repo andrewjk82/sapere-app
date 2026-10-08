@@ -6,6 +6,8 @@ import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import HomeworkHistory from './HomeworkHistory';
 import HomeworkRedo from './HomeworkRedo';
 
+export const OPEN_HOMEWORK_FLAG = 'sapere:openHomework:v1';
+
 const BADGE = {
   todo: { label: 'To do', color: '#7c3aed', bg: '#f5f3ff', Icon: PenLine },
   submitted: { label: 'Submitted', color: '#b45309', bg: '#fffbeb', Icon: Clock },
@@ -44,6 +46,18 @@ const HomeworkCard = ({ sessions, profile, user }) => {
   const [showHistory, setShowHistory] = useState(false);
   const [openItem, setOpenItem] = useState(null);
   const [redoItem, setRedoItem] = useState(null);
+
+  const latestToOpen = items.find((i) => i.status !== 'checked') || null;
+
+  // The Dashboard's Homework banner sets this one-shot flag so the student lands straight in the homework, not on the Challenge list.
+  const [autoOpen, setAutoOpen] = useState(() => {
+    try { return sessionStorage.getItem(OPEN_HOMEWORK_FLAG) === '1'; } catch { return false; }
+  });
+  if (autoOpen && latestToOpen) {
+    try { sessionStorage.removeItem(OPEN_HOMEWORK_FLAG); } catch { /* storage blocked */ }
+    setAutoOpen(false);
+    setOpenItem(latestToOpen);
+  }
 
   if (items.length === 0) return null;
 
