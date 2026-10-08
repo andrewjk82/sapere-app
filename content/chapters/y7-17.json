@@ -750,8 +750,11 @@
               "work": "\\(360^\\circ\\div120^\\circ=3\\)"
             },
             {
-              "explain": "State the rotational symmetry order.",
-              "work": "\\(\\boxed{3}\\)"
+              "explain": "There are three matching positions in one complete turn, including the starting position.",
+              "work": "The order of rotational symmetry is the number of matching positions. \\(360^\\circ\\div120^\\circ=3\\), so the order is \\(3\\).",
+              "figure": {
+                "svg": "fig:728c122979"
+              }
             }
           ],
           "timeLimit": 90,
