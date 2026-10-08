@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style><path d="M120 110H570M120 295H570M320 55L410 345" class="line"/><path d="M343 110A38 38 0 0 1 355 145M390 295A38 38 0 0 0 402 260" stroke="#e28a00" stroke-width="5" fill="none"/><text x="345" y="165">123°</text><text x="407" y="280">60°</text><text x="102" y="105">A</text><text x="570" y="105">C</text><text x="102" y="320">D</text><text x="572" y="320">F</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#e28a00;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style>
+<path d="M120 110H570M120 295H570M430 55L290 345" class="line"/>
+<path d="M 443.4 110.0 A 40 40 0 0 1 386.1 146.0" class="thin"/>
+<path d="M 331.5 259.0 A 40 40 0 0 1 354.1 295.0" class="thin"/>
+<text x="423.44827586206895" y="170">123°</text>
+<text x="339.1379310344828" y="275">60°</text>
+<text x="102" y="105">A</text>
+<text x="570" y="105">C</text>
+<text x="102" y="320">D</text>
+<text x="572" y="320">F</text>
+</svg>
