@@ -143,6 +143,37 @@ the actual guard here, not code that "looks like" it does the right unpacking.
 **Labels MUST NEVER intersect or overlap with geometric lines or axes.**
 If a number or label is placed directly on top of a line, it makes the diagram look unprofessional and hinders readability.
 
+### Geometry angle labels — inside the marked sector
+
+An angle's value or pronumeral belongs **between the two rays that form that
+angle**, close to its arc, with no overlap. Do not put the label outside the
+angle sector merely because the wedge is narrow. This requirement applies to
+interior, exterior, and reflex angles: identify the exact sector indicated by
+the arc first, then place the label inside that sector.
+
+For a narrow angle, reduce the font size and/or rotate the label along the angle
+bisector so its full text box fits between the rays. Keep it as close to the arc
+as possible while preserving a clear gap from the arc and both side strokes.
+If it still does not fit, adjust the diagram scale or vertex spacing; do not
+push the label outside the sector. Check the text's complete bounding box, not
+just its anchor point. A label that is near an angle but lies outside its two
+rays is incorrect even when it is readable.
+
+For every geometry SVG, including the question, each solution-step figure, and
+the sample-answer figure, verify:
+
+- the arc is anchored at the intended vertex and spans the correct pair of rays
+  and sector;
+- the complete angle label sits inside that same sector, near the arc;
+- the label does not touch/cross either ray, the arc, side ticks, other labels,
+  or any other diagram mark;
+- the result remains clear at the actual student display size.
+
+Regression examples from `wghs-y7-2015-t3-s2-q7`: the `26°` label in its narrow
+left-hand angle must sit inside the wedge (it may be reduced and aligned with
+the bisector); the `48°` label must not cross the triangle's sloping side.
+Inspect the final rendered image after every coordinate or font adjustment.
+
 ## Guidelines for SVG Placement
 
 ### 1. Vertical Lines
