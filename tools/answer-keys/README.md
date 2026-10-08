@@ -32,6 +32,8 @@ to each chapter's review topic (`y12a-1j`, `y12a-2-2j`, `y12a-3I`, …).
 
 Cambridge 2nd-edition Extension 1 Year 11 (2025) uses the same layout; run `cambridge_adv11.py` unchanged (answers pages 761–888 of the full book).
 
+**Part-level labels (2026-10-08).** `cambridge_adv11.py` now labels each answer by part ("1a", "1b", "2c" — only parts that have a printed answer), read from the bold Chivo items (`pdf_text_fonts.mjs` → items.json), so the marking panel has one button per part. Existing docs were updated without touching the images: `node tools/answer-keys/update_labels.mjs labels.json "<book>" [--write]` (dry run by default; it refuses a section whose question numbers differ from the stored ones). Bump `ANSWER_KEY_CACHE_VERSION` after changing labels, or devices keep the old keys for 14 days.
+
 Cambridge 1st-edition Extension 1 Year 12 (2019): `cambridge_adv12.py` with `PAGE_TOP` (photo banner on the first answers page) and side-tab-safe crop bounds (55–541pt); the book comes as per-chapter PDFs plus `Ch18_Ans.pdf`.
 
 Cambridge Extension 2 Year 12 (Sadler & Ward, 2020): `cambridge_ext2.py` — "Answers to Exercises" PDF, two wide columns (x=80 / x=320), headings "Exercise 1A (Page 8)" / "Review Exercise 1H", labels like `7(a)`. Review keys map to the "Chapter Review Exercise" topic of each chapter (`y12e2-1H`).

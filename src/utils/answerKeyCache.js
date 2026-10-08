@@ -5,7 +5,8 @@
 // dropped when ANSWER_KEY_CACHE_VERSION changes. "No key" results are never
 // stored, so a key added later shows up on the next open.
 
-export const ANSWER_KEY_CACHE_VERSION = 1;
+// 2: part-level labels (1a, 1b, …) replaced the number-only labels for the Cambridge Year 11 books.
+export const ANSWER_KEY_CACHE_VERSION = 2;
 export const ANSWER_KEY_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 
 // adapter: { get(id) → Promise<record|undefined>, set(id, record) → Promise }

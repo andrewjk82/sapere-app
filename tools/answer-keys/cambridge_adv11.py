@@ -3,7 +3,8 @@
 
 Input (in the working directory): parsed.json (pdftotext -bbox words, see 1_parse_words.py),
 pages/p-NN.png (pdftoppm -r 150 of the answers-only PDF). Writes out/<key>_<i>.webp,
-meta.json (key -> images) and labels.json (key -> question numbers).
+meta.json (key -> images) and labels.json (key -> part-level labels "1a","1b","2c"…, read from the bold
+Chivo items: also needs items.json from `node tools/answer-keys/pdf_text_fonts.mjs ans.pdf items.json`).
 
 Sections start at "Exercise 1A"; "Chapter 1 review exercise" starts the review key "1R";
 a plain "Chapter 2" heading ends the previous section. The coloured side tab is on the left of even
@@ -14,6 +15,11 @@ from collections import OrderedDict
 from PIL import Image
 
 P = json.load(open('parsed.json'))
+# Question numbers and part letters are the bold sans (Chivo) items; text from pdfjs, see 2_text_fonts.mjs
+BOLD = {}
+for it in json.load(open('items.json')):
+    if re.search(r'Chivo-(Black|Bold)', it['font']) and re.fullmatch(r'\d{1,2}[a-h]?|[a-h]', it['s'].strip()):
+        BOLD.setdefault(it['p'], []).append((it['y'] - it['h'] * 0.8, it['x'], it['s'].strip()))
 S = 150 / 72
 TOP, BOT = 50, 762
 LX0, LX1, RX0, RX1 = 48, 299, 299, 546
@@ -74,7 +80,7 @@ for s in segs:
 os.makedirs('out', exist_ok=True)
 meta, labels = {}, {}
 for key, ss in order.items():
-    crops, cand = [], []
+    crops, cand, toks = [], [], []
     for _, pg, col, y0, y1 in ss:
         im = Image.open(f'pages/p-{pg:0{len(str(len(P)))}d}.png').convert('L')  # pdftoppm pads file names to the page-count width
         x0, x1 = (LX0, LX1) if col == 'L' else (RX0, RX1)
@@ -88,8 +94,16 @@ for key, ss in order.items():
         crops.append(cr)
         ws = col_words(P[pg - 1], col)
         lo, hi = col_start(pg, col)
+        seg_items = [b for b in BOLD.get(pg, []) if y0 - 2 <= b[0] < y1 - 1 and ((b[1] < 299) == (col == 'L')) and 46 < b[1] < 548]
+        lines = []
+        for b in sorted(seg_items):
+            if lines and abs(lines[-1][0] - b[0]) < 3:
+                lines[-1][1].append(b)
+            else:
+                lines.append([b[0], [b]])
+        for _, row in lines:
+            toks.extend(sorted(row, key=lambda b: b[1]))
         for w in sorted(ws, key=lambda w: (round(w[1]), w[0])):
-            # a label is "7" or "7a" (number glued to its first part letter) at the column's left edge
             m = re.fullmatch(r'(\d{1,2})[a-h]?', w[4])
             if y0 - 2 <= w[1] < y1 - 1 and m and lo <= w[0] <= hi:
                 if not [v for v in ws if abs(v[1] - w[1]) < 2.5 and v[2] <= w[0] + 0.5 and v is not w]:
@@ -99,7 +113,17 @@ for key, ss in order.items():
     for n in cand:
         if last <= n <= last + 3 and n >= 1:
             nums.add(n); last = max(last, n)
-    labels[key] = [str(i) for i in range(1, max(nums) + 1)] if nums else []
+    top = max(nums) if nums else 0
+    parts, cur = {i: [] for i in range(1, top + 1)}, 0
+    for _, _, t in toks:
+        m = re.fullmatch(r'(\d{1,2})([a-h])?', t)
+        if m and cur <= int(m.group(1)) <= cur + 3 and int(m.group(1)) <= top:
+            cur = int(m.group(1))
+            if m.group(2) and m.group(2) not in parts[cur]:
+                parts[cur].append(m.group(2))
+        elif re.fullmatch(r'[a-h]', t) and cur and t not in parts[cur]:
+            parts[cur].append(t)
+    labels[key] = [l for i in range(1, top + 1) for l in ([f'{i}{p}' for p in parts[i]] or [str(i)])]
     w = max(c.width for c in crops)
     chunks, cur, h = [], [], 0
     for c in crops:

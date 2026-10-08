@@ -43,6 +43,17 @@ test('marks are grouped by topic and section, labels in natural order', () => {
   assert.deepEqual(groupMarksByTopic(undefined), {});
 });
 
+test('part-level labels sort naturally: 1a, 1b, 2c, 10a', () => {
+  const marks = {
+    [markKey('y11e1-11e', '11E', '10a')]: 'c',
+    [markKey('y11e1-11e', '11E', '2c')]: 'x',
+    [markKey('y11e1-11e', '11E', '1b')]: 'c',
+    [markKey('y11e1-11e', '11E', '1a')]: 'h',
+  };
+  assert.deepEqual(groupMarksByTopic(marks)['y11e1-11e'][0].items.map((i) => i.label), ['1a', '1b', '2c', '10a']);
+  assert.deepEqual(scoreMarks(marks), { score: 2.5, total: 4 });
+});
+
 test('checked notification: score, topics and a trimmed comment', () => {
   const n = buildCheckedNotification({ topics: [{ label: 'Y8 1A' }, { label: 'Y8 1B' }], grade: { score: 7.5, total: 10, comment: 'Nice work' } });
   assert.equal(n.subject, 'Homework checked: 7.5/10');
