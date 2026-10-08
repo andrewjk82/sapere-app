@@ -2371,14 +2371,14 @@
         {
           "id": "wghs-y7-2013-t3-a-q10",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "A number is divided by 5 and then 3 is added. The result is 7.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "wghs-y7-2013-t3-a-q10a",
               "type": "mc",
-              "difficulty": "easy",
               "stem": "Let x be the number. Which equation represents the statement?",
+              "difficulty": "easy",
               "options": [
                 "\\((x+3)/5=7\\)",
                 "\\(5x+3=7\\)",
@@ -2411,8 +2411,8 @@
             {
               "id": "wghs-y7-2013-t3-a-q10b",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Solve the equation to find the number.",
+              "difficulty": "medium",
               "options": [
                 "2",
                 "20",
@@ -2435,8 +2435,7 @@
                   "explain": "Check: \\(20/5+3=7\\)."
                 }
               ],
-              "timeLimit": 120,
-              "xp": 2,
+              "xp": 1,
               "meta": {
                 "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
                 "school": "Willoughby Girls High School",
@@ -2447,6 +2446,15 @@
                 "marks": 2,
                 "origin": "teacher"
               }
+            }
+          ],
+          "hint": "Translate the operations in the order stated, then undo them in reverse order.",
+          "steps": [
+            {
+              "explain": "Write x/5+3=7."
+            },
+            {
+              "explain": "Subtract 3 to get x/5=4, then multiply by 5 to get x=20."
             }
           ],
           "timeLimit": 180,
@@ -2460,16 +2468,7 @@
             "section": "Algebra",
             "marks": 3,
             "origin": "teacher"
-          },
-          "hint": "Translate the operations in the order stated, then undo them in reverse order.",
-          "steps": [
-            {
-              "explain": "Write x/5+3=7."
-            },
-            {
-              "explain": "Subtract 3 to get x/5=4, then multiply by 5 to get x=20."
-            }
-          ]
+          }
         }
       ]
     }
