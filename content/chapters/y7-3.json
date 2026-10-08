@@ -6960,8 +6960,8 @@
         {
           "id": "wghs-y7-2013-t3-a-q6",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "Expand and simplify \\(4(1-2a)+3a\\).",
+          "difficulty": "medium",
           "options": [
             "\\(4-11a\\)",
             "\\(4-8a\\)",
@@ -6978,8 +6978,7 @@
               "explain": "Then \\(4-8a+3a=4-5a\\)."
             }
           ],
-          "timeLimit": 120,
-          "xp": 2,
+          "xp": 1,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
             "school": "Willoughby Girls High School",
