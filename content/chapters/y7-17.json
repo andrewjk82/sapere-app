@@ -705,7 +705,7 @@
             }
           ],
           "hint": "A valid axis must divide the entire shape into two matching reflected halves.",
-          "timeLimit": 270,
+          "timeLimit": 90,
           "xp": 2,
           "keyPoints": [
             {
