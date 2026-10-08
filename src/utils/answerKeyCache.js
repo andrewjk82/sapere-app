@@ -7,7 +7,8 @@
 
 // 2: part-level labels (1a, 1b, …) replaced the number-only labels for the Cambridge Year 11 books.
 // 3: labels now come from the QUESTION pages (every part the student is set, not only the printed answers).
-export const ANSWER_KEY_CACHE_VERSION = 3;
+// 4: the same for Years 7-9 and 12.
+export const ANSWER_KEY_CACHE_VERSION = 4;
 export const ANSWER_KEY_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 
 // adapter: { get(id) → Promise<record|undefined>, set(id, record) → Promise }

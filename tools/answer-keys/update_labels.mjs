@@ -12,6 +12,8 @@ const args = process.argv.slice(2);
 const [file, book] = args.filter((a) => !a.startsWith('--'));
 const flag = args.includes('--write') ? '--write' : '';
 const fromQuestions = args.includes('--questions');
+// --force=docId/sectionKey,… accepts a section whose highest question number is lower than before (checked by eye: the old labels were wrong)
+const forced = new Set((args.find((a) => a.startsWith('--force=')) || '').slice(8).split(',').filter(Boolean));
 if (!file || !book) { console.error('usage: update_labels.mjs <labels.json> "<book>" [--write]'); process.exit(1); }
 const sa = JSON.parse(readFileSync('/Users/andrewkim/Desktop/sapere1/.secrets/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json', 'utf8'));
 admin.initializeApp({ credential: admin.credential.cert(sa) });
@@ -33,7 +35,8 @@ for (let i = 0; i < ids.length; i += 10) {
       const next = fresh[s.key];
       if (!next || !next.length) { skipped.push(`${snap.id}/${s.key}: no new labels`); return s; }
       const maxOf = (ls) => Math.max(0, ...ls.map(num));
-      if (fromQuestions ? maxOf(next) < maxOf(s.labels) : base(next) !== base(s.labels)) {
+      const blocks = next.some((l) => String(l).includes('.'));   // restarting-number review blocks ("3.12a"): no single highest number
+      if (!forced.has(`${snap.id}/${s.key}`) && !blocks && (fromQuestions ? maxOf(next) < maxOf(s.labels) : base(next) !== base(s.labels))) {
         skipped.push(`${snap.id}/${s.key}: question numbers differ (old max ${maxOf(s.labels)}, new max ${maxOf(next)})`); return s;
       }
       if (JSON.stringify(next) === JSON.stringify(s.labels)) { unchanged += 1; return s; }
