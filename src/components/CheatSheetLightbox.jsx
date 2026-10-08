@@ -1,6 +1,6 @@
-import React, { useRef, useState, useCallback } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { toDirectImageUrl } from '../utils/cheatSheetUtils';
 
 const MIN_SCALE = 1;
@@ -14,9 +14,18 @@ const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 // (link-drag preview banners etc.) instead of actually zooming anything.
 // This owns the gesture entirely (touchAction: 'none', draggable=false) so
 // the browser never gets a chance to run its own gesture on top of ours.
+//
+// A chapter's sheets can be stepped through: `preview.sheets` is the chapter's list
+// ([{ url, title }]) and `preview.index` the one opened. Left/right buttons, the
+// arrow keys, and a horizontal swipe (when not zoomed in) move between them.
+const SWIPE_PX = 60;
 const CheatSheetLightbox = ({ preview, onClose }) => {
+  const sheets = Array.isArray(preview?.sheets) && preview.sheets.length > 0 ? preview.sheets : null;
+  const [idx, setIdx] = useState(() => (sheets ? Math.min(Math.max(preview.index || 0, 0), sheets.length - 1) : 0));
+  const current = sheets ? sheets[idx] : preview;
   const [failed, setFailed] = useState(false);
   const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 });
+  const swipe = useRef(null); // { x, y } where a one-finger touch began (only used when not zoomed)
   const frameRef = useRef(null);
   const imgRef = useRef(null);
   const pointers = useRef(new Map()); // pointerId -> {x,y}
@@ -37,6 +46,31 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
   }, []);
 
   const resetZoom = () => setTransform({ scale: 1, x: 0, y: 0 });
+
+  const go = useCallback((delta) => {
+    if (!sheets) return;
+    setIdx((i) => {
+      const next = i + delta;
+      return next < 0 || next >= sheets.length ? i : next;
+    });
+  }, [sheets]);
+
+  // A different sheet starts un-zoomed and un-failed.
+  useEffect(() => {
+    setFailed(false);
+    setTransform({ scale: 1, x: 0, y: 0 });
+  }, [idx]);
+
+  useEffect(() => {
+    if (!sheets) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'ArrowLeft') { go(-1); e.preventDefault(); }
+      else if (e.key === 'ArrowRight') { go(1); e.preventDefault(); }
+      else if (e.key === 'Escape') onClose?.();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [sheets, go, onClose]);
 
   const zoomAt = (clientX, clientY, targetScale) => {
     const frame = frameRef.current;
@@ -71,6 +105,7 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
   const onPointerDown = (e) => {
     e.currentTarget.setPointerCapture?.(e.pointerId);
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    swipe.current = pointers.current.size === 1 && !isZoomed ? { x: e.clientX, y: e.clientY } : null;
     if (pointers.current.size === 2) {
       const [a, b] = [...pointers.current.values()];
       pinch.current = {
@@ -80,6 +115,7 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
         startTransform: transform,
       };
       pan.current = null;
+      swipe.current = null;
     } else if (pointers.current.size === 1 && isZoomed) {
       pan.current = { startClientX: e.clientX, startClientY: e.clientY, startTransform: transform };
     }
@@ -114,6 +150,13 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
   };
 
   const endPointer = (e) => {
+    const start = swipe.current;
+    swipe.current = null;
+    if (start && e.type === 'pointerup' && pointers.current.size === 1) {
+      const dx = e.clientX - start.x;
+      const dy = e.clientY - start.y;
+      if (Math.abs(dx) >= SWIPE_PX && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
+    }
     pointers.current.delete(e.pointerId);
     if (pointers.current.size < 2) pinch.current = null;
     if (pointers.current.size === 0) pan.current = null;
@@ -146,10 +189,32 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
           <X size={18} color="#1e1b4b" />
         </button>
 
+        {sheets && sheets.length > 1 && [
+          { delta: -1, Icon: ChevronLeft, side: 'left', label: 'Previous cheat sheet', disabled: idx === 0 },
+          { delta: 1, Icon: ChevronRight, side: 'right', label: 'Next cheat sheet', disabled: idx === sheets.length - 1 },
+        ].map(({ delta, Icon, side, label, disabled }) => (
+          <button
+            key={side}
+            type="button"
+            onClick={() => go(delta)}
+            disabled={disabled}
+            aria-label={label}
+            style={{
+              position: 'absolute', top: '50%', [side]: '-14px', transform: 'translateY(-50%)', zIndex: 2,
+              width: '44px', height: '44px', borderRadius: '50%', border: 'none',
+              background: '#fff', boxShadow: '0 4px 14px rgba(0,0,0,0.3)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              cursor: disabled ? 'default' : 'pointer', opacity: disabled ? 0.35 : 1,
+            }}
+          >
+            <Icon size={24} color="#1e1b4b" />
+          </button>
+        ))}
+
         {failed ? (
           <div style={{ width: '360px', maxWidth: '80vw', padding: '32px 24px', borderRadius: '16px', background: '#fff', textAlign: 'center' }}>
             <p style={{ margin: 0, fontWeight: 800, color: '#1e1b4b', fontSize: '0.95rem' }}>Couldn't load this image</p>
-            <p style={{ margin: '8px 0 0', fontSize: '0.8rem', color: '#64748b', wordBreak: 'break-all' }}>{preview.url}</p>
+            <p style={{ margin: '8px 0 0', fontSize: '0.8rem', color: '#64748b', wordBreak: 'break-all' }}>{current.url}</p>
             <p style={{ margin: '10px 0 0', fontSize: '0.75rem', color: '#94a3b8' }}>Check the URL in the chapter editor — it may be missing, private, or misspelled.</p>
           </div>
         ) : (
@@ -170,8 +235,9 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
             >
               <img
                 ref={imgRef}
-                src={toDirectImageUrl(preview.url)}
-                alt={`${preview.title} cheat sheet`}
+                key={current.url}
+                src={toDirectImageUrl(current.url)}
+                alt={`${current.title || preview.title} cheat sheet`}
                 draggable={false}
                 onError={() => setFailed(true)}
                 style={{
@@ -186,6 +252,7 @@ const CheatSheetLightbox = ({ preview, onClose }) => {
               />
             </div>
             <div style={{ marginTop: '10px', fontSize: '0.72rem', fontWeight: 700, color: 'rgba(255,255,255,0.65)', textAlign: 'center' }}>
+              {sheets && sheets.length > 1 && <span style={{ marginRight: '10px', color: '#fff' }}>{idx + 1} / {sheets.length}</span>}
               {isZoomed ? 'Drag to pan · double-tap to reset' : 'Pinch, scroll, or double-tap to zoom in'}
             </div>
           </>

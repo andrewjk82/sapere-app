@@ -3811,7 +3811,7 @@ const Curriculum = ({ initialSearchId = null, onInitialSearchConsumed } = {}) =>
                         {getChapterCheatSheets(chapter).map((sheet, i) => (
                           <div
                             key={sheet.id || i}
-                            onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: sheet.url, title: sheet.label || chapter.title }); }}
+                            onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: sheet.url, title: sheet.label || chapter.title, index: i, sheets: getChapterCheatSheets(chapter).map((x) => ({ url: x.url, title: x.label || chapter.title })) }); }}
                             title={sheet.label ? `Open ${sheet.label}` : 'Open cheat sheet'}
                             style={{
                               display: 'flex', alignItems: 'center', gap: '6px',

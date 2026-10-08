@@ -703,7 +703,7 @@ const LearningPath = ({ profile }) => {
                     {getChapterCheatSheets(n).map((sheet, i) => (
                       <div
                         key={sheet.id || i}
-                        onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: sheet.url, title: sheet.label || n.title }); }}
+                        onClick={(e) => { e.stopPropagation(); setCheatSheetPreview({ url: sheet.url, title: sheet.label || n.title, index: i, sheets: getChapterCheatSheets(n).map((x) => ({ url: x.url, title: x.label || n.title })) }); }}
                         title={sheet.label ? `Open ${sheet.label}` : 'Open cheat sheet'}
                         style={{
                           display: 'flex', alignItems: 'center', gap: '6px',
