@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px} .line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round} .thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round} .blue{fill:#dceafe;stroke:#34445a;stroke-width:4} .grid{stroke:#dbe4ef;stroke-width:1.5}</style><path d="M190 100L310 65L430 100L430 180L310 215L190 180Z" fill="#dceafe" stroke="#34445a" stroke-width="4"/><path d="M190 280L310 245L430 280L430 360L310 395L190 360Z" fill="#eef4fd" stroke="#34445a" stroke-width="4"/><path d="M190 100V280M310 65V245M430 100V280M430 180V360M310 215V395M190 180V360" class="thin"/><path d="M190 190L310 155L430 190L430 270L310 305L190 270Z" fill="#f7c76b" fill-opacity=".4" stroke="#e28a00" stroke-width="5"/><text x="260" y="340">cross-section parallel to the ends</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" role="img">
+<style>
+text { font-family: Arial, sans-serif; fill: #263449; font-size: 20px; }
+.solid { stroke: #34445a; stroke-width: 3; fill: none; stroke-linejoin: round; }
+.dashed { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 6 4; fill: none; }
+.topface { fill: #dceafe; stroke: #34445a; stroke-width: 3; stroke-linejoin: round; }
+.slice { fill: #f7c76b; fill-opacity: 0.8; stroke: none; }
+.slice-edge { stroke: #e28a00; stroke-width: 3; stroke-linejoin: round; fill: none; }
+.slice-dashed { stroke: #e28a00; stroke-width: 2; stroke-dasharray: 6 4; fill: none; }
+</style>
+
+<!-- Hidden Prism Edges -->
+<path d="M 190 240 L 310 205 L 430 240" class="dashed"/>
+<path d="M 310 65 L 310 205" class="dashed"/>
+
+<!-- Slice Back (Hidden) Edges -->
+<path d="M 190 170 L 310 135 L 430 170" class="slice-dashed"/>
+
+<!-- Slice Fill -->
+<path d="M 190 170 L 310 135 L 430 170 L 430 250 L 310 285 L 190 250 Z" class="slice"/>
+
+<!-- Slice Front (Visible) Edges -->
+<path d="M 430 170 L 430 250 L 310 285 L 190 250 L 190 170" class="slice-edge"/>
+
+<!-- Prism Vertical Visible Edges -->
+<path d="M 190 100 L 190 240" class="solid"/>
+<path d="M 430 100 L 430 240" class="solid"/>
+<path d="M 430 180 L 430 320" class="solid"/>
+<path d="M 310 215 L 310 355" class="solid"/>
+<path d="M 190 180 L 190 320" class="solid"/>
+
+<!-- Prism Bottom Visible Edges -->
+<path d="M 190 240 L 190 320 L 310 355 L 430 320 L 430 240" class="solid"/>
+
+<!-- Top Face (Opaque) -->
+<path d="M 190 100 L 310 65 L 430 100 L 430 180 L 310 215 L 190 180 Z" class="topface"/>
+
+<text x="310" y="375" text-anchor="middle">cross-section parallel to the ends</text>
+</svg>
