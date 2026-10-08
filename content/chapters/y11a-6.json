@@ -26887,8 +26887,8 @@
         {
           "id": "y11a-6J-q9",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "In a triangle \\(XYZ\\), \\(\\angle Y = 70^{\\circ}\\) and \\(\\angle YXZ = 68^{\\circ}\\). The altitude \\(XP \\perp YZ\\) has a length of \\(28\\text{ cm}\\). Find the length of \\(XY\\), correct to one decimal place.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "y11a-6J-q9b",
@@ -26912,14 +26912,15 @@
                   "explain": "Sum the segments to find the total length \\(YZ\\).",
                   "work": "YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}"
                 }
-              ],
-              "xp": 3
+              ]
             }
           ],
           "answer": "29.8",
           "hint": "In right-angled triangle \\(XPY\\), \\(\\sin Y = \\frac{XP}{XY}\\). Solve for \\(XY = \\frac{28}{\\sin 70^{\\circ}}\\).",
           "solution": "In \\(\\triangle XPY\\), \\(XY = \\frac{28}{\\sin 70^{\\circ}} \\approx \\frac{28}{0.9397} \\approx 29.8\\text{ cm}\\).",
-          "timeLimit": 90
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "y11a-6J-q13",
