@@ -5542,17 +5542,14 @@
         {
           "id": "y7-killara-23-t4b-q17",
           "type": "multipart",
-          "mc": true,
-          "difficulty": "medium",
           "stem": "Simplify each algebraic expression.",
-          "hint": "For part (a), collect like terms. For (b), apply order of operations before combining terms. For (c), expand the brackets first.",
-          "steps": [],
+          "difficulty": "medium",
           "parts": [
             {
               "id": "y7-killara-23-t4b-q17a",
               "type": "mc",
-              "difficulty": "easy",
               "stem": "Simplify \\(4g+6h-3g-2h\\).",
+              "difficulty": "easy",
               "options": [
                 "\\(g+4h\\)",
                 "\\(g+8h\\)",
@@ -5591,8 +5588,8 @@
             {
               "id": "y7-killara-23-t4b-q17b",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Simplify \\(16a+21a\\div3\\).",
+              "difficulty": "medium",
               "options": [
                 "\\(37a\\)",
                 "\\(23a\\)",
@@ -5616,7 +5613,7 @@
                 }
               ],
               "timeLimit": 90,
-              "xp": 2,
+              "xp": 1,
               "meta": {
                 "source": "Killara High School Year 7 Mathematics Task 4B (2023)",
                 "school": "Killara High School",
@@ -5632,8 +5629,8 @@
             {
               "id": "y7-killara-23-t4b-q17c",
               "type": "mc",
-              "difficulty": "medium",
               "stem": "Simplify \\(5(1-e)-4e\\).",
+              "difficulty": "medium",
               "options": [
                 "\\(5-5e\\)",
                 "\\(5-e\\)",
@@ -5671,6 +5668,7 @@
               }
             }
           ],
+          "hint": "For part (a), collect like terms. For (b), apply order of operations before combining terms. For (c), expand the brackets first.",
           "timeLimit": 240,
           "xp": 5,
           "meta": {
