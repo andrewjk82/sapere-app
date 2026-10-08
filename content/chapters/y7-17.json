@@ -727,8 +727,11 @@
         {
           "id": "wghs-y7-2015-t3-s2-q6",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "What is the order of rotational symmetry of the shape shown?",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:61218154d2"
+          },
           "options": [
             "2",
             "4",
@@ -737,12 +740,6 @@
           ],
           "answer": 2,
           "hint": "Count how many times the pattern matches itself during one complete 360° turn.",
-          "keyPoints": [
-            {
-              "text": "order of rotational symmetry",
-              "note": "The order counts matching positions in one full turn, including the starting position."
-            }
-          ],
           "steps": [
             {
               "explain": "The three identical sectors are evenly spaced around the centre.",
@@ -757,8 +754,14 @@
               "work": "\\(\\boxed{3}\\)"
             }
           ],
-          "timeLimit": 75,
+          "timeLimit": 90,
           "xp": 2,
+          "keyPoints": [
+            {
+              "text": "order of rotational symmetry",
+              "note": "The order counts matching positions in one full turn, including the starting position."
+            }
+          ],
           "meta": {
             "source": "Willoughby Girls High School Year 7 Common Test, Term 3 2015",
             "school": "Willoughby Girls High School",
@@ -766,10 +769,8 @@
             "page": 6,
             "question": "q6",
             "section": "Section 2 (Geometry)",
-            "marks": 1
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 420 240\" style=\"display:block;margin:10px auto;background:#fff\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"238\" rx=\"8\" fill=\"#fff\" stroke=\"#cbd5e1\"/><circle cx=\"210\" cy=\"120\" r=\"95\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"210,102 210,32 277.4119109944701,63.43469034758455 223.7887999761416,108.42982302564229\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"225.5884572681199,129 286.21023553303064,164 225.28103963468988,206.6630822650743 213.12566719800475,137.72653955421976\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"194.4115427318801,129 133.7897644669694,164 127.30704937084006,89.90222738734116 193.08553282585365,113.84363742013797\" fill=\"#e2e8f0\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"210\" cy=\"120\" r=\"11\" fill=\"#334155\"/></svg>"
+            "marks": 1,
+            "origin": "teacher"
           }
         }
       ]
