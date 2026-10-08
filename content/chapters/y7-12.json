@@ -1689,7 +1689,7 @@
             }
           ],
           "hint": "Identify the diagram’s angle rule first: equal base angles, parallel lines, a straight line, or a polygon angle sum.",
-          "timeLimit": 900,
+          "timeLimit": 180,
           "xp": 2,
           "keyPoints": [
             {
