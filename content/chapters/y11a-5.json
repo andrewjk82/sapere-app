@@ -6264,10 +6264,10 @@
           "difficulty": "medium",
           "stem": "A logistics vehicle's route line is defined by \\(y = -2x + 4\\). Write the equation of the route after it is translated 4 units to the left.",
           "options": [
-            "\\(y = -2(x - 4) + 4\\)",
+            "\\(y = -2x + 4\\)",
             "\\(y = -2x + 8\\)",
             "\\(y = -2x + 12\\)",
-            "\\(y = -2(x + 4) + 4\\)"
+            "\\(y = -2x - 4\\)"
           ],
           "answer": 3,
           "steps": [
