@@ -55644,7 +55644,7 @@
               "explain": "\\(11-10+5=1+5=6\\)."
             }
           ],
-          "timeLimit": 180,
+          "timeLimit": 90,
           "xp": 2,
           "meta": {
             "source": "Willoughby Girls High School Year 7 Mathematics Task 3, 2013",
