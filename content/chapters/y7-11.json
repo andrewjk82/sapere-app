@@ -2447,7 +2447,17 @@
             "section": "Fundamentals — Linear relationships",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(y=x+3\\)",
+              "note": "Substitute 4 for x, then add 3 to find y."
+            },
+            {
+              "text": "when \\(x=4\\)",
+              "note": "Replace x with 4 in the rule and evaluate."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q30",
@@ -2484,7 +2494,17 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(F=32+\\frac{9C}{5}\\)",
+              "note": "Replace C with 15, then calculate 9 × 15 ÷ 5 before adding 32."
+            },
+            {
+              "text": "\\(C=15\\)",
+              "note": "Substitute this value wherever C appears in the formula."
+            }
+          ]
         }
       ]
     },
@@ -2905,7 +2925,13 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 390\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 135 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 240 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"235\" y=\"340\" font-size=\"14\">1</text><path d=\"M 345 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"340\" y=\"340\" font-size=\"14\">2</text><path d=\"M 450 320 V 65\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"445\" y=\"340\" font-size=\"14\">3</text><path d=\"M 135 320 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 135 235 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"240\" font-size=\"14\">1</text><path d=\"M 135 150 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"155\" font-size=\"14\">2</text><path d=\"M 135 65 H 450\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"113\" y=\"70\" font-size=\"14\">3</text><path d=\"M 135 320 H 462 M 135 320 V 53\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"468\" y=\"325\">x</text><text x=\"131\" y=\"45\">y</text><circle cx=\"345\" cy=\"235\" r=\"6\" fill=\"#ef6b32\" stroke=\"white\" stroke-width=\"2\"/><text x=\"354\" y=\"227\" font-size=\"17\" fill=\"#b44818\">P</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "point \\(P\\)",
+              "note": "Read the horizontal coordinate first, then the vertical coordinate, from the axes."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-q8",
@@ -2948,7 +2974,13 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 70 310 V 80 M 70 310 H 300 M 100 260 L 280 150\" class=\"thin\"/><path d=\"M 400 310 V 80 M 400 310 H 635 M 410 300 Q 520 70 625 300\" class=\"thin\"/><path d=\"M 292 145 l -10 2 5 9 M 624 300 l -11 -1 5 -8\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"178\" y=\"355\">(A)</text><text x=\"500\" y=\"355\">(B)</text><text x=\"55\" y=\"75\">y</text><text x=\"305\" y=\"325\">x</text><text x=\"385\" y=\"75\">y</text><text x=\"640\" y=\"325\">x</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "linear relationship",
+              "note": "A linear relationship makes a straight-line graph; check whether the change is constant."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-q16",
@@ -2998,7 +3030,13 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 122 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"117\" y=\"270\" font-size=\"14\">-6</text><path d=\"M 160 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"155\" y=\"270\" font-size=\"14\">-5</text><path d=\"M 198 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"193\" y=\"270\" font-size=\"14\">-4</text><path d=\"M 236 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"231\" y=\"270\" font-size=\"14\">-3</text><path d=\"M 274 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"269\" y=\"270\" font-size=\"14\">-2</text><path d=\"M 312 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"307\" y=\"270\" font-size=\"14\">-1</text><path d=\"M 350 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 388 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"383\" y=\"270\" font-size=\"14\">1</text><path d=\"M 426 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"421\" y=\"270\" font-size=\"14\">2</text><path d=\"M 464 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"459\" y=\"270\" font-size=\"14\">3</text><path d=\"M 502 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"497\" y=\"270\" font-size=\"14\">4</text><path d=\"M 540 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"535\" y=\"270\" font-size=\"14\">5</text><path d=\"M 578 424 V 76\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"573\" y=\"270\" font-size=\"14\">6</text><path d=\"M 122 424 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"429\" font-size=\"14\">-6</text><path d=\"M 122 395 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"400\" font-size=\"14\">-5</text><path d=\"M 122 366 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"371\" font-size=\"14\">-4</text><path d=\"M 122 337 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"342\" font-size=\"14\">-3</text><path d=\"M 122 308 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"313\" font-size=\"14\">-2</text><path d=\"M 122 279 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"284\" font-size=\"14\">-1</text><path d=\"M 122 250 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 122 221 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"226\" font-size=\"14\">1</text><path d=\"M 122 192 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"197\" font-size=\"14\">2</text><path d=\"M 122 163 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"168\" font-size=\"14\">3</text><path d=\"M 122 134 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"139\" font-size=\"14\">4</text><path d=\"M 122 105 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"110\" font-size=\"14\">5</text><path d=\"M 122 76 H 578\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"328\" y=\"81\" font-size=\"14\">6</text><path d=\"M 122 250 H 590 M 350 424 V 64\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"596\" y=\"255\">x</text><text x=\"346\" y=\"56\">y</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "A(1,-4)",
+              "note": "Read the first value as the horizontal coordinate and the second as the vertical coordinate."
+            }
+          ]
         }
       ]
     },
@@ -3082,7 +3120,13 @@
             "section": "Fundamentals — Linear relationships",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "pattern: \\(2,5,8,11,\\ldots\\)",
+              "note": "Compare consecutive terms to see whether the same amount is added, subtracted, or multiplied each time."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-q17",
@@ -3133,7 +3177,13 @@
               },
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "1, 2, 3, and 4 squares",
+                  "note": "Start with 4 matches for one square; each extra square adds 3 matches."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q17b",
@@ -3177,7 +3227,13 @@
               },
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 490\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 120 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 215 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"210\" y=\"445\" font-size=\"14\">1</text><path d=\"M 310 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"305\" y=\"445\" font-size=\"14\">2</text><path d=\"M 405 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"400\" y=\"445\" font-size=\"14\">3</text><path d=\"M 500 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"495\" y=\"445\" font-size=\"14\">4</text><path d=\"M 595 425 V 102\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"590\" y=\"445\" font-size=\"14\">5</text><path d=\"M 120 425 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><path d=\"M 120 406 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"411\" font-size=\"14\">1</text><path d=\"M 120 387 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"392\" font-size=\"14\">2</text><path d=\"M 120 368 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"373\" font-size=\"14\">3</text><path d=\"M 120 349 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"354\" font-size=\"14\">4</text><path d=\"M 120 330 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"335\" font-size=\"14\">5</text><path d=\"M 120 311 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"316\" font-size=\"14\">6</text><path d=\"M 120 292 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"297\" font-size=\"14\">7</text><path d=\"M 120 273 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"278\" font-size=\"14\">8</text><path d=\"M 120 254 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"259\" font-size=\"14\">9</text><path d=\"M 120 235 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"240\" font-size=\"14\">10</text><path d=\"M 120 216 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"221\" font-size=\"14\">11</text><path d=\"M 120 197 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"202\" font-size=\"14\">12</text><path d=\"M 120 178 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"183\" font-size=\"14\">13</text><path d=\"M 120 159 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"164\" font-size=\"14\">14</text><path d=\"M 120 140 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"145\" font-size=\"14\">15</text><path d=\"M 120 121 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"126\" font-size=\"14\">16</text><path d=\"M 120 102 H 595\" stroke=\"#d5deea\" stroke-width=\"1.5\"/><text x=\"98\" y=\"107\" font-size=\"14\">17</text><path d=\"M 120 425 H 607 M 120 425 V 90\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"613\" y=\"430\">Squares</text><text x=\"116\" y=\"82\">Matches</text></svg>"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "plot the number of matches against the number of squares",
+                  "note": "Put the number of squares on the horizontal axis and matches on the vertical axis."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q17c",
@@ -3216,7 +3272,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "c"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "number of matches \\(m\\)",
+                  "note": "The first square uses 4 matches; every additional square adds 3."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q17d",
@@ -3260,7 +3322,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "d"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "30 adjacent squares",
+                  "note": "Use the pattern rule for n squares, then substitute n = 30."
+                }
+              ]
             }
           ],
           "hint": "Remember that neighbouring squares share a side. The first square needs 4 matches; each additional square needs 3 more.",
@@ -3279,7 +3347,13 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 310\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 80 180 H 150 M 80 250 H 150 M 80 180 V 250 M 150 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"115.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">1 square</text><path d=\"M 225 180 H 295 M 225 250 H 295 M 225 180 V 250 M 295 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 295 180 H 365 M 295 250 H 365 M 295 180 V 250 M 365 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"295.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">2 squares</text><path d=\"M 370 180 H 440 M 370 250 H 440 M 370 180 V 250 M 440 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 440 180 H 510 M 440 250 H 510 M 440 180 V 250 M 510 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 510 180 H 580 M 510 250 H 580 M 510 180 V 250 M 580 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"475.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">3 squares</text><path d=\"M 515 180 H 585 M 515 250 H 585 M 515 180 V 250 M 585 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 585 180 H 655 M 585 250 H 655 M 585 180 V 250 M 655 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 655 180 H 725 M 655 250 H 725 M 655 180 V 250 M 725 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M 725 180 H 795 M 725 250 H 795 M 725 180 V 250 M 795 180 V 250\" stroke=\"#e5a522\" stroke-width=\"7\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"655.0\" y=\"290\" text-anchor=\"middle\" font-size=\"18\">4 squares</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "shares one side",
+              "note": "Each new square needs 3 new matches because one side is shared."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-q21",
@@ -3324,7 +3398,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "a"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(x=0,1,2,3,4\\)",
+                  "note": "Substitute each listed x-value into the same rule to complete the row."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q21b",
@@ -3364,7 +3444,17 @@
               },
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 500\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 92 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"88\" y=\"293\" font-size=\"13\">-2</text><path d=\"M 126 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"122\" y=\"293\" font-size=\"13\">-1</text><path d=\"M 160 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 194 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"190\" y=\"293\" font-size=\"13\">1</text><path d=\"M 228 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"224\" y=\"293\" font-size=\"13\">2</text><path d=\"M 262 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"258\" y=\"293\" font-size=\"13\">3</text><path d=\"M 296 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"292\" y=\"293\" font-size=\"13\">4</text><path d=\"M 330 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"326\" y=\"293\" font-size=\"13\">5</text><path d=\"M 364 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"360\" y=\"293\" font-size=\"13\">6</text><path d=\"M 398 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"394\" y=\"293\" font-size=\"13\">7</text><path d=\"M 432 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"428\" y=\"293\" font-size=\"13\">8</text><path d=\"M 466 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"462\" y=\"293\" font-size=\"13\">9</text><path d=\"M 500 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"496\" y=\"293\" font-size=\"13\">10</text><path d=\"M 534 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"530\" y=\"293\" font-size=\"13\">11</text><path d=\"M 568 83 V 467\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"564\" y=\"293\" font-size=\"13\">12</text><path d=\"M 92 467 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"472\" font-size=\"13\">-6</text><path d=\"M 92 435 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"440\" font-size=\"13\">-5</text><path d=\"M 92 403 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"408\" font-size=\"13\">-4</text><path d=\"M 92 371 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"376\" font-size=\"13\">-3</text><path d=\"M 92 339 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"344\" font-size=\"13\">-2</text><path d=\"M 92 307 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"312\" font-size=\"13\">-1</text><path d=\"M 92 275 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><path d=\"M 92 243 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"248\" font-size=\"13\">1</text><path d=\"M 92 211 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"216\" font-size=\"13\">2</text><path d=\"M 92 179 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"184\" font-size=\"13\">3</text><path d=\"M 92 147 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"152\" font-size=\"13\">4</text><path d=\"M 92 115 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"120\" font-size=\"13\">5</text><path d=\"M 92 83 H 568\" stroke=\"#d5deea\" stroke-width=\"1.2\"/><text x=\"138\" y=\"88\" font-size=\"13\">6</text><path d=\"M 92 275 H 583 M 160 467 V 71\" stroke=\"#34445a\" stroke-width=\"2.4\" fill=\"none\"/><text x=\"588\" y=\"280\">x</text><text x=\"156\" y=\"65\">y</text></svg>"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "Plot the points",
+                  "note": "Use each ordered pair (x, y); x is horizontal and y is vertical."
+                },
+                {
+                  "text": "straight line through them",
+                  "note": "A linear rule has points that lie on one straight line."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q21c",
@@ -3408,7 +3498,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "c"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "touches the x-axis",
+                  "note": "At an x-intercept, y = 0. Set the rule equal to zero and solve for x."
+                }
+              ]
             }
           ],
           "hint": "Substitute values to complete the table, plot the (x,y) pairs, and remember that any point on the x-axis has y=0.",
@@ -3424,7 +3520,13 @@
             "section": "Further Skills — Linear relationships",
             "marks": 5,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "linear rule \\(y=-\\frac12x+5\\)",
+              "note": "The coefficient of x is the gradient; the constant term is the y-intercept."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-q24",
@@ -3473,7 +3575,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "a"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "passes through \\((-2,-3)\\)",
+                  "note": "Substitute x = -2 and y = -3 into 3x − 4y = k."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-q24b",
@@ -3523,7 +3631,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "b"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "shaded triangle",
+                  "note": "Set x = 0 and y = 0 in turn to find the intercepts, then use ½ × base × height."
+                }
+              ]
             }
           ],
           "hint": "Substitute the given point to find k. Then set y=0 and x=0 separately to find the two intercepts before calculating the triangle area.",
@@ -3542,7 +3656,17 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 430\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><polygon points=\"355,195 451,195 355,267.0\" fill=\"#fde68a\" fill-opacity=\".7\" stroke=\"none\"/><path d=\"M 100 195 H 610 M 355 45 V 405\" stroke=\"#34445a\" stroke-width=\"2.2\"/><path d=\"M 605 189 l 12 6 -12 6 M 349 51 l 6 -12 6 12\" stroke=\"#34445a\" stroke-width=\"2\" fill=\"none\"/><text x=\"620\" y=\"200\">x</text><text x=\"361\" y=\"38\">y</text><path d=\"M 163 411 L 547 123\" stroke=\"#34445a\" stroke-width=\"4\" fill=\"none\"/><text x=\"450\" y=\"82\">3x − 4y = k</text><circle cx=\"259\" cy=\"339\" r=\"6\" fill=\"#ef6b32\"/><text x=\"173\" y=\"360\">(-2, -3)</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "passes through \\((-2,-3)\\)",
+              "note": "A point on the line satisfies its equation; substitute x = -2 and y = -3."
+            },
+            {
+              "text": "area of the shaded triangle",
+              "note": "Find the two axis intercepts, then use area = ½ × base × height."
+            }
+          ]
         }
       ]
     }

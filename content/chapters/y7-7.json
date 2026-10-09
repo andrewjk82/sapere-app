@@ -5595,7 +5595,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac59\\)",
+              "note": "Use division to write 5 ÷ 9, then identify the repeating digit pattern."
+            }
+          ]
         }
       ]
     },

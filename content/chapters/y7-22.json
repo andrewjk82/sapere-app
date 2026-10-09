@@ -267,7 +267,13 @@
             "section": "Routine Processes — Sets and Venn diagrams",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "two-way table",
+              "note": "Place each Venn region into the matching row and column, then check that row and column totals agree."
+            }
+          ]
         }
       ]
     }

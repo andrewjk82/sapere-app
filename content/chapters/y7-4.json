@@ -2161,7 +2161,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{18}{24}\\)",
+              "note": "Divide the numerator and denominator by their greatest common factor."
+            }
+          ]
         }
       ]
     },
@@ -2504,7 +2510,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(137\\div8\\)",
+              "note": "Find the quotient and remainder; write the remainder over 8 as the fractional part."
+            }
+          ]
         }
       ]
     },
@@ -4228,7 +4240,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac36+\\frac5{12}\\)",
+              "note": "Rewrite both fractions with denominator 12, then add the numerators."
+            }
+          ]
         }
       ]
     },

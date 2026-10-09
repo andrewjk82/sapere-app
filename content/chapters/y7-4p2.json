@@ -1900,7 +1900,17 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{1}{4}\\)",
+              "note": "A quarter means divide the whole amount by 4."
+            },
+            {
+              "text": "\\(100\\)",
+              "note": "This is the whole amount; divide it into 4 equal parts."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q11",
@@ -1939,7 +1949,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac23\\times\\frac35\\)",
+              "note": "Multiply numerators together and denominators together; simplify if possible."
+            }
+          ]
         }
       ]
     },
@@ -4353,7 +4369,17 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "of what remains",
+              "note": "Each day’s fraction is taken from the current remainder, not from the original full tank."
+            },
+            {
+              "text": "On day 1",
+              "note": "Start with 1; after each loss, multiply the remaining amount by 1 minus the lost fraction."
+            }
+          ]
         }
       ]
     },

@@ -2802,7 +2802,17 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(10\\)",
+              "note": "This is the part. Divide it by the whole, 50, then multiply by 100%."
+            },
+            {
+              "text": "\\(50\\)",
+              "note": "This is the whole amount in the percentage calculation."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q33",
@@ -2842,7 +2852,17 @@
             "section": "Part 4 — Challenge",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "area stays the same",
+              "note": "Keep length × width constant: set 1.25L × new width equal to L × original width."
+            },
+            {
+              "text": "increased by 25%",
+              "note": "An increase of 25% makes the new length 125% of the original."
+            }
+          ]
         }
       ]
     },
@@ -3016,7 +3036,17 @@
             "section": "Part 2 — Routine Processes",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(40\\%\\)",
+              "note": "Convert 40% to 0.40 or 40/100, then multiply by the whole amount."
+            },
+            {
+              "text": "\\(\\$500\\)",
+              "note": "This is the whole amount whose 40% is required."
+            }
+          ]
         }
       ]
     }

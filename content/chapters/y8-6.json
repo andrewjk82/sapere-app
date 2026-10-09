@@ -2217,7 +2217,13 @@
             "sourceMarks": 2
           },
           "hint": "Undo the addition first, then undo the multiplication.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(2x + 4 = 12\\)",
+              "note": "Subtract 4 from both sides first, then divide both sides by 2."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q1b",
@@ -2256,7 +2262,13 @@
             "sourceMarks": 2
           },
           "hint": "Add 6 to both sides first, then multiply both sides by 3 to isolate m.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{m}{3}-6=-2\\)",
+              "note": "Add 6 to both sides, then multiply both sides by 3."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q1c",
@@ -2295,7 +2307,13 @@
             "sourceMarks": 2
           },
           "hint": "Multiply both sides by 5 first, then divide by -4.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{-4t}{5}=2\\)",
+              "note": "Multiply both sides by 5, then divide by −4."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q1d",
@@ -2334,7 +2352,13 @@
             "sourceMarks": 3
           },
           "hint": "Expand both brackets carefully, then collect the c terms on one side.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(5(c + 4) = 2(2c - 1)\\)",
+              "note": "Expand both brackets, collect c-terms on one side, then isolate c."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q2a",
@@ -2373,7 +2397,13 @@
             "sourceMarks": 2
           },
           "hint": "Ask which positive and negative numbers both give 81 when squared.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(m^2 = 81\\)",
+              "note": "Find the number whose square is 81; remember both positive and negative numbers can have that square."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q2b",
@@ -2412,7 +2442,13 @@
             "sourceMarks": 2
           },
           "hint": "Take both square roots of 66, then round each root to two decimal places.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(x^2 = 66\\)",
+              "note": "Take the square root of both sides, then round each solution to two decimal places."
+            }
+          ]
         }
       ]
     },
@@ -2533,7 +2569,13 @@
             "sourceMarks": 2
           },
           "hint": "Add 5y to both sides so all y terms are together, then subtract 18.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(2y + 18 = 11 - 5y\\)",
+              "note": "Add 5y to both sides and subtract 18 from both sides to gather the y-term."
+            }
+          ]
         }
       ]
     },
@@ -2614,7 +2656,13 @@
             "sourceMarks": 3
           },
           "hint": "Let n be the number. Translate “add 3, then double” in that order.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "added to it and then is doubled",
+              "note": "Translate the order of actions into an equation: double (number + 3) equals 5."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-q3b",
@@ -2653,7 +2701,17 @@
             "sourceMarks": 3
           },
           "hint": "Subtract the one-off fee first; the remainder is the hourly charge.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "one-off fee of $150",
+              "note": "Subtract the fixed fee from $2,900 to find the amount charged for hourly work."
+            },
+            {
+              "text": "$125 per hour",
+              "note": "Divide the hourly-work amount by $125 to find the number of hours."
+            }
+          ]
         }
       ]
     },

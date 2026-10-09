@@ -5594,7 +5594,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(3\\times2^3\\)",
+              "note": "Evaluate the power first: calculate 2³, then multiply by 3."
+            }
+          ]
         }
       ]
     },
@@ -7109,7 +7115,13 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "156",
+              "note": "Test small prime divisors, starting with 2, 3, and 5; continue until every factor is prime."
+            }
+          ]
         }
       ]
     },
@@ -10262,7 +10274,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "divisible by \\(3\\)",
+              "note": "Add the digits; a number is divisible by 3 when the digit sum is a multiple of 3."
+            }
+          ]
         }
       ]
     },

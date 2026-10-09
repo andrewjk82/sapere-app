@@ -1081,7 +1081,17 @@
             "sourceMarks": 2
           },
           "hint": "Compare the cost per gram for each packet; the lower unit price is better value.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "180 g",
+              "note": "Find the cost per gram (or per 100 g) for this pack."
+            },
+            {
+              "text": "50 g",
+              "note": "Calculate the same unit price for this pack, then compare the two."
+            }
+          ]
         }
       ]
     },
@@ -1237,7 +1247,13 @@
             "sourceMarks": 1
           },
           "hint": "A unit rate means the amount for one hour. Divide distance by hours.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "20 \\text{ km in } 4 \\text{ hours}",
+              "note": "Divide distance by time to find the distance travelled per hour."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q8b",
@@ -1272,7 +1288,13 @@
             "sourceMarks": 1
           },
           "hint": "Divide the total price by 50 to get the price for one litre.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "$107.50 for 50 litres",
+              "note": "Divide the cost by 50 to find the cost per litre."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q10",
@@ -1311,7 +1333,17 @@
             "sourceMarks": 2
           },
           "hint": "Find the train’s distance per hour, then multiply by 11 hours.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "15 hours",
+              "note": "Divide 600 km by 15 h to find the hourly distance first."
+            },
+            {
+              "text": "11 hours",
+              "note": "Multiply the unit rate by 11 hours to get the new distance."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14a",
@@ -1355,7 +1387,13 @@
             "sourceMarks": 1
           },
           "hint": "A stop is shown by a horizontal line because the distance from home stays the same. Read the start and end times of the first flat segment.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "How long (in minutes) did she stop",
+              "note": "A stop is a horizontal section of the distance-time graph; subtract its start time from its end time."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14b",
@@ -1406,7 +1444,17 @@
             "sourceMarks": 2
           },
           "hint": "Find the second flat section of Mrs Coffey’s graph; read its starting time and its duration.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "At what time did she stop",
+              "note": "Read the time coordinate where the second horizontal section begins."
+            },
+            {
+              "text": "for how long",
+              "note": "Subtract the start time of the flat section from its end time."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14c",
@@ -1450,7 +1498,13 @@
             "sourceMarks": 1
           },
           "hint": "The furthest point on the distance-from-home graph is the one-way distance. Double it for the out-and-back total.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "including the return journey",
+              "note": "Read the furthest distance from home on the graph; the return adds distance again."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14d",
@@ -1494,7 +1548,13 @@
             "sourceMarks": 1
           },
           "hint": "For the return segment, read the distance change and elapsed time, then calculate distance divided by time.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "speed on the return journey",
+              "note": "Speed is distance ÷ time; use only the return segment of the graph."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14f",
@@ -1545,7 +1605,17 @@
             "sourceMarks": 1
           },
           "hint": "Compare the two return segments on the distance-time graph. Their lines meet after 3 pm; estimate the crossing time from the intersection.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "walked 8 km over 2 hours",
+              "note": "Mrs Wheatley reaches 8 km from home at 1 pm, then stays there for the 2-hour lunch stop."
+            },
+            {
+              "text": "cross paths on the return journey",
+              "note": "Compare the two return lines and find when they have the same time and distance."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q14e",
@@ -1592,7 +1662,17 @@
             "origin": "teacher",
             "sourceMarks": 1,
             "sourceQuestion": "Section 2 Question 14"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "walks 8 km over 2 hours",
+              "note": "Plot the first point at 11 am and 8 km, then use the stated walking time to locate the stop."
+            },
+            {
+              "text": "arriving at 5 pm",
+              "note": "Finish the return at home (0 km) at 5 pm and join the journey sections in order."
+            }
+          ]
         }
       ]
     },
@@ -1696,7 +1776,13 @@
             "sourceMarks": 1
           },
           "hint": "Divide both parts of the ratio by their greatest common factor.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(6 : 15\\)",
+              "note": "Divide both parts by their greatest common factor."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q1b",
@@ -1731,7 +1817,13 @@
             "sourceMarks": 1
           },
           "hint": "Multiply both parts by 20, the lowest common denominator, to get whole-number parts.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{2}{5} : \\dfrac{3}{4}\\)",
+              "note": "Multiply both parts by the same number to clear the denominators, then simplify."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q1c",
@@ -1766,7 +1858,13 @@
             "sourceMarks": 1
           },
           "hint": "Convert both times to the same unit before simplifying the ratio.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "3 hours to 18 minutes",
+              "note": "Convert both times to minutes before simplifying the ratio."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q2a",
@@ -1801,7 +1899,13 @@
             "sourceMarks": 1
           },
           "hint": "Write boys first and girls second, then divide both numbers by their greatest common factor.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "24 boys and 18 girls",
+              "note": "Write boys first and girls second, then divide both numbers by their greatest common factor."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q2b",
@@ -1836,7 +1940,13 @@
             "sourceMarks": 1
           },
           "hint": "Find the whole team size first, then compare girls with that total.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "girls to the total number",
+              "note": "Find the total team size (boys + girls) before writing girls : total."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q5",
@@ -1875,7 +1985,13 @@
             "sourceMarks": 2
           },
           "hint": "Convert metres to centimetres first so both sides use the same unit.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(4 \\text{ cm} : 2 \\text{ m}\\)",
+              "note": "Convert metres to centimetres before simplifying the scale ratio."
+            }
+          ]
         }
       ]
     },
@@ -1952,7 +2068,17 @@
             "sourceMarks": 2
           },
           "hint": "The 5 parts represent Jill’s 75 kg. Find one part, then find Jack’s 6 parts.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Jill's weight is \\(75\\) kg",
+              "note": "Jill represents 5 equal parts; find one part before finding Jack’s 6 parts."
+            },
+            {
+              "text": "ratio \\(6 : 5\\)",
+              "note": "Jack is the 6-part quantity and Jill is the 5-part quantity."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q4",
@@ -1991,7 +2117,17 @@
             "sourceMarks": 2
           },
           "hint": "Add the ratio parts to get the total number of shares before dividing $48.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "$48",
+              "note": "Add the ratio parts to find the total number of equal shares, then divide $48 by that total."
+            },
+            {
+              "text": "\\(5 : 3\\)",
+              "note": "Give 5 shares to the first amount and 3 shares to the second."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q6",
@@ -2030,7 +2166,17 @@
             "sourceMarks": 2
           },
           "hint": "There are 5+3 total parts. Find the litre value of one part, then take 5 parts for red paint.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(5 : 3\\)",
+              "note": "There are 5 + 3 = 8 equal parts in the whole paint mixture."
+            },
+            {
+              "text": "4-litre can",
+              "note": "Find the volume of one part, then take 5 parts for the red paint."
+            }
+          ]
         }
       ]
     },
@@ -4184,7 +4330,17 @@
             "sourceMarks": 2
           },
           "hint": "Convert 1 L to 1000 mL and 4 hours to minutes, then take one fifth of the time because 200 mL is one fifth of 1 L.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "1 L every 4 hours",
+              "note": "Convert 1 L to 1000 mL, then find the time for 200 mL as the same fraction of 4 hours."
+            },
+            {
+              "text": "200 mL",
+              "note": "Compare 200 mL with the 1000 mL in the given rate."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q11",
@@ -4219,7 +4375,17 @@
             "sourceMarks": 2
           },
           "hint": "Use the scale to convert 6.2 cm on the map into actual centimetres, then convert centimetres to kilometres.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "\\(1 : 5\\,000\\,000\\)",
+              "note": "Multiply the map length by 5,000,000 to get the real length in centimetres."
+            },
+            {
+              "text": "in kilometres",
+              "note": "After scaling, convert centimetres to kilometres."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q12",
@@ -4258,7 +4424,17 @@
             "sourceMarks": 2
           },
           "hint": "Add 19 hours to Tuesday 11:15 am, then add 27 minutes and track the midnight crossing.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "11:15 am on Tuesday",
+              "note": "Add the hours and minutes to the Tuesday start time, passing midnight if needed."
+            },
+            {
+              "text": "19 hours and 27 minutes",
+              "note": "Add 19 hours first, then 27 minutes; check the calendar day after crossing midnight."
+            }
+          ]
         },
         {
           "id": "wghs2023-y8-s2q13",
@@ -4293,7 +4469,17 @@
             "sourceMarks": 1
           },
           "hint": "“10 hours ahead” means add 10 hours to London time.",
-          "timeLimit": 60
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "10 hours ahead of GMT",
+              "note": "Sydney is ahead, so add the time difference to the London time."
+            },
+            {
+              "text": "10 am in London",
+              "note": "Add 10 hours and then check whether the clock has passed noon or midnight."
+            }
+          ]
         }
       ]
     }

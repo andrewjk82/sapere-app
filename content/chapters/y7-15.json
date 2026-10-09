@@ -1335,7 +1335,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(2x=10\\",
+              "note": "Keep the equation balanced: undo addition or subtraction first, then multiplication or division."
+            }
+          ]
         }
       ]
     },
@@ -1819,7 +1825,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "a"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(5x+1=26\\)",
+                  "note": "Subtract 1 from both sides first, then divide both sides by 5."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-t4b-q18b",
@@ -1859,7 +1871,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "b"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{u}{4}-6=9\\)",
+                  "note": "Add 6 to both sides, then multiply both sides by 4."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-t4b-q18c",
@@ -1899,7 +1917,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "c"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{m+2}{3}=5\\)",
+                  "note": "Multiply both sides by 3 first, then subtract 2."
+                }
+              ]
             }
           ],
           "hint": "Keep each equation balanced: undo addition or subtraction first where appropriate, then undo multiplication or division.",
@@ -1913,7 +1937,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 6,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "Solve each equation",
+              "note": "Undo operations in reverse order, doing the same operation to both sides."
+            }
+          ]
         }
       ]
     },
@@ -2682,7 +2712,17 @@
             "section": "Part 4 — Challenge",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(A+B=35\\text{ kg}\\)",
+              "note": "Add the three pair-total equations; each sack weight appears twice."
+            },
+            {
+              "text": "\\(B+C=45\\text{ kg}\\)",
+              "note": "After finding A + B + C, subtract a pair total to isolate the remaining weight."
+            }
+          ]
         }
       ]
     }

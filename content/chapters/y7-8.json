@@ -3930,7 +3930,13 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:17px}.shape{stroke:#34445a;stroke-width:4;fill:#dbeafe;stroke-linejoin:round}.base{stroke:#34445a;stroke-width:4;stroke-linecap:round}.mark{stroke:#34445a;stroke-width:3;stroke-linecap:round}.focus{stroke:#e28a00;stroke-width:7;stroke-linecap:round;fill:none}.guide{stroke:#64748b;stroke-width:2;stroke-dasharray:6 5}.measure{fill:#263449;font-size:16px;font-weight:bold}</style><polygon points=\"105,215 105,65 235,140\" class=\"shape\"/><path d=\"M 99 140 L 111 140 M 166 109 L 174 96 M 166 172 L 174 184\" class=\"mark\"/><text x=\"166\" y=\"77\" class=\"measure\">13 m</text></svg>"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "three matching tick marks",
+              "note": "Matching ticks mean equal lengths; count the sides and multiply one side length by that count."
+            }
+          ]
         }
       ]
     },
@@ -4103,7 +4109,17 @@
             "section": "Part 2 — Routine Processes",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "parallel sides are \\(5\\text{ cm}\\) and \\(11\\text{ cm}\\)",
+              "note": "For a trapezium, average the parallel sides and multiply by the perpendicular height."
+            },
+            {
+              "text": "perpendicular height is \\(4\\text{ cm}\\)",
+              "note": "Use the perpendicular height in the area formula, not a sloping side."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q27",
@@ -4159,7 +4175,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "a"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "area of the rectangle shown",
+                  "note": "For a rectangle, area = length × width."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-t4b-q27b",
@@ -4207,7 +4229,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "b"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "area is \\(27\\text{ cm}^2\\)",
+                  "note": "Set 3(2x + 7) equal to 27, then solve the equation for x."
+                }
+              ]
             }
           ],
           "timeLimit": 60,
@@ -4221,7 +4249,17 @@
             "section": "Part 3 — Application",
             "marks": 3,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(3\\text{ cm}\\)",
+              "note": "This is the rectangle’s width; pair it with the other side length for area and perimeter."
+            },
+            {
+              "text": "\\((2x+7)\\text{ cm}\\)",
+              "note": "This is the other side length of the rectangle."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q28",
@@ -4261,7 +4299,13 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(120\\text{ cm}\\)",
+              "note": "Convert 120 cm to metres before giving the area in square metres."
+            }
+          ]
         }
       ]
     },
@@ -4533,7 +4577,17 @@
             "section": "Part 2 — Routine Processes",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "base is \\(10\\text{ cm}\\)",
+              "note": "Use area = ½ × base × perpendicular height."
+            },
+            {
+              "text": "perpendicular height is \\(4\\text{ cm}\\)",
+              "note": "The height must meet the base at 90°."
+            }
+          ]
         }
       ]
     },

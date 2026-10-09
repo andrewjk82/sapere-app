@@ -1612,7 +1612,17 @@
             "section": "Part 3 — Application",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "7 chocolate bars at \\(\\$x\\) each",
+              "note": "The bars cost 7x dollars; add the $1.20 garlic bread to get the total spent."
+            },
+            {
+              "text": "pays \\(\\$20\\)",
+              "note": "Change equals the amount paid minus the total cost."
+            }
+          ]
         }
       ]
     },
@@ -5537,7 +5547,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(4+y+y+y+3\\)",
+              "note": "Combine the constant numbers and then combine the three like y-terms."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q17",
@@ -5583,7 +5599,13 @@
                 "marks": 1,
                 "origin": "teacher",
                 "part": "a"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(4g+6h-3g-2h\\)",
+                  "note": "Group the g-terms together and the h-terms together."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-t4b-q17b",
@@ -5624,7 +5646,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "b"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(16a+21a\\div3\\)",
+                  "note": "Do the division first, then combine the a-terms."
+                }
+              ]
             },
             {
               "id": "y7-killara-23-t4b-q17c",
@@ -5665,7 +5693,13 @@
                 "marks": 2,
                 "origin": "teacher",
                 "part": "c"
-              }
+              },
+              "keyPoints": [
+                {
+                  "text": "\\(5(1-e)-4e\\)",
+                  "note": "Multiply 5 by both terms inside the bracket, then combine the e-terms."
+                }
+              ]
             }
           ],
           "hint": "For part (a), collect like terms. For (b), apply order of operations before combining terms. For (c), expand the brackets first.",
@@ -5679,7 +5713,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 5,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify each algebraic expression",
+              "note": "Combine like terms; only terms with the same variable part can be added or subtracted."
+            }
+          ]
         }
       ]
     },
@@ -7251,7 +7291,13 @@
             "section": "Part 3 — Application",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "sum of \\(u\\) and \\(-v\\)",
+              "note": "Keep the negative sign with v inside the brackets, then multiply the whole sum by 6."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q26",
@@ -7291,7 +7337,13 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(14u^2+2u(3u+5)\\)",
+              "note": "Distribute 2u across both terms in the bracket, then combine the u² terms."
+            }
+          ]
         }
       ]
     },

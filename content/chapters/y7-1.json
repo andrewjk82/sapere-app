@@ -3949,7 +3949,17 @@
             "section": "Part 3 — Application",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "bought for \\(\\$100\\), sold for \\(\\$120\\)",
+              "note": "Find the profit on this transaction by subtracting the purchase price from the sale price."
+            },
+            {
+              "text": "total profit or loss",
+              "note": "Calculate the gain or loss for each buy-and-sell pair, then combine them."
+            }
+          ]
         }
       ]
     },
@@ -28820,7 +28830,13 @@
             "section": "Part 3 — Application",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "sets up \\(13\\times21\\)",
+              "note": "Split 21 into 20 + 1, then use 13 × 20 and 13 × 1."
+            }
+          ]
         }
       ]
     },
@@ -38305,7 +38321,13 @@
             "section": "Part 2 — Routine Processes",
             "marks": 2,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(17\\times12\\)",
+              "note": "Use 12 = 10 + 2, multiply 17 by each part, then add the partial products."
+            }
+          ]
         }
       ]
     },
@@ -46933,7 +46955,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(112\\div8\\)",
+              "note": "Ask what number multiplied by 8 gives 112; check by multiplying your quotient by 8."
+            }
+          ]
         }
       ]
     },
@@ -55852,7 +55880,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\dfrac{21-7}{2}\\)",
+              "note": "Evaluate the numerator first: 21 − 7 = 14. Then divide 14 by 2."
+            }
+          ]
         },
         {
           "id": "y7-killara-23-t4b-q7",
@@ -55891,7 +55925,13 @@
             "section": "Part 1 — Fundamentals",
             "marks": 1,
             "origin": "teacher"
-          }
+          },
+          "keyPoints": [
+            {
+              "text": "\\(4+7\\times(3+7)\\)",
+              "note": "Evaluate the brackets first, then multiply before adding."
+            }
+          ]
         }
       ]
     },
