@@ -383,15 +383,15 @@
           "keyPoints": [
             {
               "text": "15",
-              "note": "Total number"
+              "note": "This is the total number of jellybeans, so it is the denominator."
             },
             {
-              "text": "4",
-              "note": "Only for red"
+              "text": "4 are red",
+              "note": "These are the favourable outcomes: 4 jellybeans match the event."
             },
             {
               "text": "probability of choosing a red jellybean",
-              "note": "P(Event) = \\( \\frac{number of event}{total number}\\)"
+              "note": "Use: probability = favourable outcomes ÷ total outcomes."
             }
           ],
           "meta": {
@@ -403,27 +403,13 @@
             "section": "Fundamentals — Probability",
             "marks": 1,
             "origin": "teacher"
-          },
-          "keyPoints": [
-            {
-              "text": "15",
-              "note": "This is the total number of jellybeans, so it is the denominator."
-            },
-            {
-              "text": "4 are red",
-              "note": "These are the favourable outcomes: 4 jellybeans match the event."
-            },
-            {
-              "text": "probability of choosing a red jellybean",
-              "note": "Use: probability = favourable outcomes ÷ total outcomes."
-            }
-          ]
+          }
         },
         {
           "id": "y7-killara-23-q12",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "A standard six-sided die is rolled. What is its sample space?",
+          "difficulty": "easy",
           "options": [
             "\\(\\{0,1,2,3,4,5,6\\}\\)",
             "\\(\\{1,2,3,4,5\\}\\)",
@@ -446,6 +432,16 @@
           ],
           "timeLimit": 60,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "six-sided die",
+              "note": "List every number that can appear on one roll; each face is a possible outcome."
+            },
+            {
+              "text": "sample space?",
+              "note": "y7-killara-23"
+            }
+          ],
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
             "school": "Killara High School",
@@ -455,13 +451,7 @@
             "section": "Fundamentals — Probability",
             "marks": 1,
             "origin": "teacher"
-          },
-          "keyPoints": [
-            {
-              "text": "six-sided die",
-              "note": "List every number that can appear on one roll; each face is a possible outcome."
-            }
-          ]
+          }
         },
         {
           "id": "y7-killara-23-q13",
