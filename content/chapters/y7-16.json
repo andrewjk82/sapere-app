@@ -356,8 +356,8 @@
         {
           "id": "y7-killara-23-q11",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "A bag contains 15 jellybeans, and 4 are red. What is the probability of choosing a red jellybean?",
+          "difficulty": "easy",
           "options": [
             "\\(\\frac{11}{15}\\)",
             "\\(\\frac{1}{4}\\)",
@@ -380,6 +380,20 @@
           ],
           "timeLimit": 60,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "15",
+              "note": "Total number"
+            },
+            {
+              "text": "4",
+              "note": "Only for red"
+            },
+            {
+              "text": "probability of choosing a red jellybean",
+              "note": "P(Event) = \\( \\frac{number of event}{total number}\\)"
+            }
+          ],
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
             "school": "Killara High School",
