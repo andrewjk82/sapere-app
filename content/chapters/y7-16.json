@@ -685,7 +685,7 @@
               "id": "y7-killara-23-q14a",
               "type": "mc",
               "difficulty": "easy",
-              "stem": "The probability of choosing a white marble is \\(\\frac{2}{7}\\). What is the probability of choosing a marble that is not white?",
+              "stem": "What is the probability of choosing a marble that is not white?",
               "options": [
                 "\\(\\frac{2}{7}\\)",
                 "\\(\\frac{5}{7}\\)",
@@ -730,7 +730,7 @@
               "id": "y7-killara-23-q14b",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "The probability of choosing a white marble is \\(\\frac{2}{7}\\). If there are 12 white marbles, how many marbles are in the bag altogether?",
+              "stem": "If there are 12 white marbles, how many marbles are in the bag altogether?",
               "options": [
                 "42",
                 "36",
