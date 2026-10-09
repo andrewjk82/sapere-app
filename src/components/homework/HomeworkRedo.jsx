@@ -9,7 +9,8 @@ import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService
 import { isSafeImageDataUrl } from '../../utils/homework';
 import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel } from '../../utils/homeworkRedo';
 
-const WIDE_MIN = 900;
+// Side by side from iPad-portrait width up (744–834px); phones get Notes / Worksheet tabs.
+const WIDE_MIN = 700;
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const GLYPH = { x: '✗', h: '½' };
 const STATE_STYLE = {
@@ -23,8 +24,8 @@ const STATE_STYLE = {
 const storeUid = (uid) => `redo-${uid}`;
 
 /**
- * Redo the questions the teacher marked wrong (✗ / ½). Worksheet on the right, the
- * wrong questions as thin boxes above a notepad on the left. After writing something
+ * Redo the questions the teacher marked wrong (✗ / ½). Worksheet on the left, the
+ * wrong questions as thin boxes above a notepad on the right. After writing something
  * the student can look at the answer and say "Got it" / "Still wrong". Notes and
  * verdicts live only on this device (no Firestore writes), so the teacher can look at
  * them in class; the only read is the answer image, cached on the device.
@@ -296,11 +297,12 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
           <div style={{ flex: 1, display: 'grid', placeItems: 'center', color: '#64748b', fontWeight: 700 }}>Nothing to redo — every marked question was correct.</div>
         ) : (
           <>
-            <div style={isWide ? { width: `${split * 100}%`, minWidth: 0 } : narrowPaneStyle(pane === 'notes')}>{notesPane}</div>
+            {/* Worksheet on the left, the new notes on the right. */}
+            <div style={isWide ? { width: `${split * 100}%`, minWidth: 0 } : narrowPaneStyle(pane === 'pdf')}>{pdfPane}</div>
             {isWide && (
               <div onPointerDown={onDividerDown} style={{ width: 10, cursor: 'col-resize', background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }} />
             )}
-            <div style={isWide ? { flex: 1, minWidth: 0 } : narrowPaneStyle(pane === 'pdf')}>{pdfPane}</div>
+            <div style={isWide ? { flex: 1, minWidth: 0 } : narrowPaneStyle(pane === 'notes')}>{notesPane}</div>
           </>
         )}
       </div>
