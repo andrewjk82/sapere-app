@@ -162,21 +162,27 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
       const activeKey = activeNotebookRef.current;
       const activeDraft = canvasRef.current?.getPagesData();
       try {
+        // Which notebook the canvas currently shows. Exporting another topic replaces it, so the
+        // student's own (active) notebook must be loaded back before it is exported — otherwise it
+        // is exported as a copy of whatever topic was loaded just before it.
+        let onCanvas = activeKey;
         for (const topic of topics) {
           const draft = topic.id === activeKey ? activeDraft : topicDraftsRef.current[topic.id];
           if (!draft) continue;
-          if (topic.id !== activeKey) {
+          if (onCanvas !== topic.id) {
             canvasRef.current?.loadPagesData(draft);
             await waitForCanvasCommit();
+            onCanvas = topic.id;
           }
           // No `force`: returns every non-empty page for this notebook.
           const images = (await canvasRef.current?.exportPageImages()) || [];
           images.forEach((image) => pageRecords.push({ image, topicId: topic.id, topicLabel: topic.label || topic.title || topic.id }));
         }
         if (earlierDraftRef.current) {
-          if (activeKey !== '__earlier__') {
+          if (onCanvas !== '__earlier__') {
             canvasRef.current?.loadPagesData(earlierDraftRef.current);
             await waitForCanvasCommit();
+            onCanvas = '__earlier__';
           }
           const images = (await canvasRef.current?.exportPageImages()) || [];
           images.forEach((image) => pageRecords.push({ image, topicId: null, topicLabel: 'Earlier combined notes' }));
