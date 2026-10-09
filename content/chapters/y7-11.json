@@ -3335,7 +3335,7 @@
             }
           ],
           "hint": "Remember that neighbouring squares share a side. The first square needs 4 matches; each additional square needs 3 more.",
-          "timeLimit": 360,
+          "timeLimit": 180,
           "xp": 6,
           "keyPoints": [
             {
