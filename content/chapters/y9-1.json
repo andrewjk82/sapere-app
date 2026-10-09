@@ -16062,6 +16062,47 @@
             "examPaper": "willoughby-2019-y9"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(2(3x-4)+3(x-1)\\)",
+          "options": [
+            "\\(9x−11\\)",
+            "\\(9x−5\\)",
+            "\\(6x−12\\)",
+            "\\(9x−7\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each term in each bracket by the outside coefficient, then collect x-terms and constants.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\(2(3x-4)+3(x-1)\\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\(6x-8+3x-3=9x-11\\)"
+            },
+            {
+              "explain": "The expansion is 9x−11.",
+              "work": "\\(9x−11\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -19224,6 +19265,47 @@
             "examPaper": "willoughby-2019-y9"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (p+2)(p-4) \\)",
+          "options": [
+            "\\(p²+2p−8\\)",
+            "\\(p²−2p−8\\)",
+            "\\(p²−8\\)",
+            "\\(p²−2p+8\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply each term in the first bracket by both terms in the second.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (p+2)(p-4) \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\(p^2-4p+2p-8=p^2-2p-8\\)"
+            },
+            {
+              "explain": "The expansion is p²−2p−8.",
+              "work": "\\(p²−2p−8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -21957,6 +22039,47 @@
             "examPaper": "willoughby-2019-y9"
           },
           "xp": 1
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (y+7)^2 \\)",
+          "options": [
+            "\\(y²+49\\)",
+            "\\(y²+7y+49\\)",
+            "\\(y²+14y+49\\)",
+            "\\(y²+14y+7\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the square as (y+7)(y+7), then multiply all pairs.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (y+7)^2 \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\(y^2+7y+7y+49=y^2+14y+49\\)"
+            },
+            {
+              "explain": "The expansion is y²+14y+49.",
+              "work": "\\(y²+14y+49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -24378,6 +24501,47 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (2m+7)(2m-7) \\)",
+          "options": [
+            "\\(4m²+49\\)",
+            "\\(4m²−28m−49\\)",
+            "\\(2m²−49\\)",
+            "\\(4m²−49\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the conjugate pattern (a+b)(a−b)=a²−b².",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (2m+7)(2m-7) \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\((2m)^2-7^2=4m^2-49\\)"
+            },
+            {
+              "explain": "The expansion is 4m²−49.",
+              "work": "\\(4m²−49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
           }
         }
       ]

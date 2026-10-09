@@ -4291,6 +4291,152 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "wghs-y9-2016-t3-fin-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An agency pays 5% commission on the first $100,000 of a sale, 3% on the next $50,000, and 2% on the remainder. What commission is earned on a $240,000 sale?",
+          "options": [
+            "\\(\\$8,300\\)",
+            "\\(\\$12,000\\)",
+            "\\(\\$7,800\\)",
+            "\\(\\$10,300\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the sale into the three commission bands and calculate each band separately.",
+          "keyPoints": [
+            {
+              "text": "5% commission on the first $100,000",
+              "note": "Apply this rate only to the first band."
+            },
+            {
+              "text": "3% on the next $50,000",
+              "note": "This is a separate band; do not apply 3% to the full sale."
+            },
+            {
+              "text": "2% on the remainder",
+              "note": "The remaining amount is $90,000."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the amount in each band: $100,000, $50,000, and $90,000.",
+              "work": "\\(240{,}000-100{,}000-50{,}000=90{,}000\\)"
+            },
+            {
+              "explain": "Calculate the commission from each band.",
+              "work": "\\(0.05(100{,}000)=5{,}000;\\quad 0.03(50{,}000)=1{,}500;\\quad 0.02(90{,}000)=1{,}800\\)"
+            },
+            {
+              "explain": "Add the three commissions.",
+              "work": "\\(5{,}000+1{,}500+1{,}800=\\$8{,}300\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-fin-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Nicole earns $940 per week and receives 17.5% leave loading for 4 weeks of annual leave. What is her total holiday pay?",
+          "options": [
+            "\\(\\$3,760.00\\)",
+            "\\(\\$4,418.00\\)",
+            "\\(\\$4,112.50\\)",
+            "\\(\\$4,582.00\\)"
+          ],
+          "answer": 1,
+          "hint": "First find four weeks of ordinary pay, then increase it by 17.5%.",
+          "keyPoints": [
+            {
+              "text": "$940 per week",
+              "note": "Multiply by the four weeks of leave first."
+            },
+            {
+              "text": "17.5% leave loading",
+              "note": "Add this percentage of the ordinary holiday pay."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find ordinary pay for four weeks.",
+              "work": "\\(4\\times 940=\\$3{,}760\\)"
+            },
+            {
+              "explain": "Calculate the 17.5% loading and add it to the ordinary pay.",
+              "work": "\\(0.175\\times 3{,}760=\\$658;\\quad 3{,}760+658=4{,}418\\)"
+            },
+            {
+              "explain": "Nicole’s total holiday pay is $4,418.",
+              "work": "\\(\\$4{,}418.00\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-3c",
+      "code": "3C",
+      "title": "Simple interest",
+      "questions": [
+        {
+          "id": "wghs-y9-2016-t3-fin-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Emily invests $42,000 for 5 years at 7% p.a. simple interest. How much interest does she earn?",
+          "options": [
+            "\\(\\$2,940\\)",
+            "\\(\\$56,700\\)",
+            "\\(\\$14,700\\)",
+            "\\(\\$29,400\\)"
+          ],
+          "answer": 2,
+          "hint": "Use simple interest: principal × annual rate × number of years.",
+          "keyPoints": [
+            {
+              "text": "$42,000 for 5 years",
+              "note": "These are the principal and time values in the simple-interest formula."
+            },
+            {
+              "text": "7% p.a. simple interest",
+              "note": "Convert 7% to 0.07; do not compound."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the simple-interest calculation using dollars, a decimal rate and years.",
+              "work": "\\(I=Prt=42{,}000\\times0.07\\times5\\)"
+            },
+            {
+              "explain": "Calculate the interest.",
+              "work": "\\(42{,}000\\times0.07=2{,}940;\\quad2{,}940\\times5=14{,}700\\)"
+            },
+            {
+              "explain": "The interest earned is $14,700.",
+              "work": "\\(I=\\$14{,}700\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

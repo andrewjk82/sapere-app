@@ -2087,6 +2087,51 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(s=ut+\\frac12at^2\\), find s when t=−2, u=8 and a=5.",
+          "options": [
+            "\\(−6\\)",
+            "\\(26\\)",
+            "\\(−26\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the three values, keeping the negative value of t in brackets.",
+          "keyPoints": [
+            {
+              "text": "t=−2",
+              "note": "Replace each variable with its given value."
+            },
+            {
+              "text": "u=8 and a=5",
+              "note": "Square the negative value: (−2)²=4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute t=−2, u=8 and a=5 into the formula.",
+              "work": "\\(s=8(-2)+\\frac12(5)(-2)^2\\)"
+            },
+            {
+              "explain": "Evaluate the powers and products in order.",
+              "work": "\\(s=-16+\\frac12(5)(4)=-16+10\\)"
+            },
+            {
+              "explain": "Therefore s=−6.",
+              "work": "\\(s=-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

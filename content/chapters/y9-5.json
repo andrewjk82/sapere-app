@@ -4149,6 +4149,47 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(5(x-3)=2x+3\\)",
+          "options": [
+            "\\(x=2\\)",
+            "\\(x=−6\\)",
+            "\\(x=3\\)",
+            "\\(x=6\\)"
+          ],
+          "answer": 3,
+          "hint": "Expand the left side, then collect x-terms on one side.",
+          "keyPoints": [
+            {
+              "text": "Solve: \\(5(x-3)=2x+3\\)",
+              "note": "Keep negative signs and denominators attached to the whole numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the same operation to both sides and keep brackets intact.",
+              "work": "\\(\\text{Use the least common denominator if fractions occur.}\\)"
+            },
+            {
+              "explain": "Solve in small equivalent steps. ",
+              "work": "\\(5x-15=2x+3\\Rightarrow3x=18\\Rightarrow x=6\\)"
+            },
+            {
+              "explain": "Check by substitution in the original equation.",
+              "work": "\\(\\text{Substitute the value back into the stem.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -6904,6 +6945,88 @@
             "topic": "y9-5d"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{2y+5}{3}=7\\)",
+          "options": [
+            "\\(y=8\\)",
+            "\\(y=9\\)",
+            "\\(y=11\\)",
+            "\\(y=16\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 3 before isolating y.",
+          "keyPoints": [
+            {
+              "text": "Solve: \\(\\frac{2y+5}{3}=7\\)",
+              "note": "Keep negative signs and denominators attached to the whole numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the same operation to both sides and keep brackets intact.",
+              "work": "\\(\\text{Use the least common denominator if fractions occur.}\\)"
+            },
+            {
+              "explain": "Solve in small equivalent steps. ",
+              "work": "\\(2y+5=21\\Rightarrow2y=16\\Rightarrow y=8\\)"
+            },
+            {
+              "explain": "Check by substitution in the original equation.",
+              "work": "\\(\\text{Substitute the value back into the stem.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{5x+4}{3}-\\frac{2x-1}{2}=1\\)",
+          "options": [
+            "\\(x=5/4\\)",
+            "\\(x=−1\\)",
+            "\\(x=−5/4\\)",
+            "\\(x=5\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply every term by the lowest common denominator, 6.",
+          "keyPoints": [
+            {
+              "text": "Solve: \\(\\frac{5x+4}{3}-\\frac{2x-1}{2}=1\\)",
+              "note": "Keep negative signs and denominators attached to the whole numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the same operation to both sides and keep brackets intact.",
+              "work": "\\(\\text{Use the least common denominator if fractions occur.}\\)"
+            },
+            {
+              "explain": "Solve in small equivalent steps. ",
+              "work": "\\(2(5x+4)-3(2x-1)=6\\Rightarrow10x+8-6x+3=6\\Rightarrow4x=-5\\Rightarrow x=-\\frac54\\)"
+            },
+            {
+              "explain": "Check by substitution in the original equation.",
+              "work": "\\(\\text{Substitute the value back into the stem.}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

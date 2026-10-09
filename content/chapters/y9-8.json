@@ -5927,6 +5927,211 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs-y9-2016-t3-ind-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify and write with a positive index: \\(x^4\\times x^5\\)",
+          "options": [
+            "\\(x^20\\)",
+            "\\(2x^9\\)",
+            "\\(x^9\\)",
+            "\\(x\\)"
+          ],
+          "answer": 2,
+          "hint": "When multiplying powers with the same base, add the exponents.",
+          "keyPoints": [
+            {
+              "text": "\\(x^4\\times x^5\\)",
+              "note": "Focus on the exponent rule; do not add or multiply the base itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the index law needed for the repeated base.",
+              "work": "\\(\\text{Keep the base the same and operate on its exponent.}\\)"
+            },
+            {
+              "explain": "Apply the law and simplify the expression. ",
+              "work": "\\(x^4\\times x^5=x^{4+5}=x^9\\)"
+            },
+            {
+              "explain": "The simplified answer is x^9.",
+              "work": "\\(x^9\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-ind-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify and write with a positive index: \\(a^9\\div a^2\\)",
+          "options": [
+            "\\(a^{11}\\)",
+            "\\(a^{4.5}\\)",
+            "\\(a^2\\)",
+            "\\(a^7\\)"
+          ],
+          "answer": 3,
+          "hint": "When dividing powers with the same base, subtract the exponents.",
+          "keyPoints": [
+            {
+              "text": "\\(a^9\\div a^2\\)",
+              "note": "Focus on the exponent rule; do not add or multiply the base itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the index law needed for the repeated base.",
+              "work": "\\(\\text{Keep the base the same and operate on its exponent.}\\)"
+            },
+            {
+              "explain": "Apply the law and simplify the expression. ",
+              "work": "\\(a^9\\div a^2=a^{9-2}=a^7\\)"
+            },
+            {
+              "explain": "The simplified answer is a^7.",
+              "work": "\\(a^7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-ind-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify and write with a positive index: \\(p^0q^3\\)",
+          "options": [
+            "\\(q^3\\)",
+            "\\(p^3q^3\\)",
+            "\\(0\\)",
+            "\\(p q^3\\)"
+          ],
+          "answer": 0,
+          "hint": "A non-zero base raised to the zero power equals 1.",
+          "keyPoints": [
+            {
+              "text": "\\(p^0q^3\\)",
+              "note": "Focus on the exponent rule; do not add or multiply the base itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the index law needed for the repeated base.",
+              "work": "\\(\\text{Keep the base the same and operate on its exponent.}\\)"
+            },
+            {
+              "explain": "Apply the law and simplify the expression. ",
+              "work": "\\(p^0q^3=1\\times q^3=q^3\\)"
+            },
+            {
+              "explain": "The simplified answer is q^3.",
+              "work": "\\(q^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-ind-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify and write with a positive index: \\(\\frac{6s^3t^4}{12s^2t^2}\\)",
+          "options": [
+            "\\(2st^2\\)",
+            "\\(\\frac{s^5t^6}{2}\\)",
+            "\\(\\frac{st^2}{2}\\)",
+            "\\(\\frac{st^2}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Simplify the numerical coefficient, then subtract exponents for matching bases.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{6s^3t^4}{12s^2t^2}\\)",
+              "note": "Focus on the exponent rule; do not add or multiply the base itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the index law needed for the repeated base.",
+              "work": "\\(\\text{Keep the base the same and operate on its exponent.}\\)"
+            },
+            {
+              "explain": "Apply the law and simplify the expression. ",
+              "work": "\\(\\frac{6}{12}s^{3-2}t^{4-2}=\\frac12 st^2\\)"
+            },
+            {
+              "explain": "The simplified answer is \\(\\frac{st^2}{2}\\).",
+              "work": "\\(\\frac{st^2}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-ind-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify and write with a positive index: \\((4w^2)^3\\)",
+          "options": [
+            "\\(12w^5\\)",
+            "\\(64w^5\\)",
+            "\\(4w^6\\)",
+            "\\(64w^6\\)"
+          ],
+          "answer": 3,
+          "hint": "Raise both the coefficient and the variable power to the third power.",
+          "keyPoints": [
+            {
+              "text": "\\((4w^2)^3\\)",
+              "note": "Focus on the exponent rule; do not add or multiply the base itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the index law needed for the repeated base.",
+              "work": "\\(\\text{Keep the base the same and operate on its exponent.}\\)"
+            },
+            {
+              "explain": "Apply the law and simplify the expression. ",
+              "work": "\\((4w^2)^3=4^3w^{2\\times3}=64w^6\\)"
+            },
+            {
+              "explain": "The simplified answer is 64w^6.",
+              "work": "\\(64w^6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

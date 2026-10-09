@@ -260,6 +260,47 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(3w-6wp+4-8p\\)",
+          "options": [
+            "\\((3w+4)(1−2p)\\)",
+            "\\((3w−4)(1+2p)\\)",
+            "\\((3w+4)(1+2p)\\)",
+            "\\((w+4)(3−2p)\\)"
+          ],
+          "answer": 0,
+          "hint": "Group the first two and last two terms, then factor each group.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(3w-6wp+4-8p\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(3w(1-2p)+4(1-2p)=(3w+4)(1-2p)\\)"
+            },
+            {
+              "explain": "The factorised form is (3w+4)(1−2p).",
+              "work": "\\((3w+4)(1−2p)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -513,6 +554,47 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(6x^2+13x-5\\)",
+          "options": [
+            "\\((3x+1)(2x−5)\\)",
+            "\\((3x−1)(2x+5)\\)",
+            "\\((6x−1)(x+5)\\)",
+            "\\((2x−1)(3x+5)\\)"
+          ],
+          "answer": 1,
+          "hint": "Split the middle term into two terms whose coefficients multiply to −30 and add to 13.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(6x^2+13x-5\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(6x^2+15x-2x-5=3x(2x+5)-1(2x+5)=(3x-1)(2x+5)\\)"
+            },
+            {
+              "explain": "The factorised form is (3x−1)(2x+5).",
+              "work": "\\((3x−1)(2x+5)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -768,6 +850,88 @@
             "topic": "y9-15e"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{5x}{a}\\times\\frac{2ad}{20x}\\)",
+          "options": [
+            "\\(\\frac{d}{2}\\)",
+            "\\(\\frac{d}{4}\\)",
+            "\\(\\frac{5d}{2}\\)",
+            "\\(\\frac{a d}{2x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerators and denominators, then cancel common factors.",
+          "keyPoints": [
+            {
+              "text": "Simplify: \\(\\frac{5x}{a}\\times\\frac{2ad}{20x}\\)",
+              "note": "Cancel common factors only after multiplication/factorisation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify a common denominator or use the reciprocal for division.",
+              "work": "\\(\\text{Write all factors explicitly before cancelling.}\\)"
+            },
+            {
+              "explain": "Simplify the algebraic fractions. ",
+              "work": "\\(\\frac{5x\\cdot2ad}{a\\cdot20x}=\\frac{10adx}{20ax}=\\frac d2\\)"
+            },
+            {
+              "explain": "State the fully simplified result. ",
+              "work": "\\(\\frac{d}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{4x}{6y}\\div\\frac{12x}{36yz}\\)",
+          "options": [
+            "\\(\\frac{2}{z}\\)",
+            "\\(2z\\)",
+            "\\(3z\\)",
+            "\\(\\frac{z}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Change division by a fraction into multiplication by its reciprocal.",
+          "keyPoints": [
+            {
+              "text": "Simplify: \\(\\frac{4x}{6y}\\div\\frac{12x}{36yz}\\)",
+              "note": "Cancel common factors only after multiplication/factorisation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify a common denominator or use the reciprocal for division.",
+              "work": "\\(\\text{Write all factors explicitly before cancelling.}\\)"
+            },
+            {
+              "explain": "Simplify the algebraic fractions. ",
+              "work": "\\(\\frac{4x}{6y}\\times\\frac{36yz}{12x}=2z\\)"
+            },
+            {
+              "explain": "State the fully simplified result. ",
+              "work": "\\(2z\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -914,6 +1078,47 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{4}{6p}+\\frac{3}{5p}\\)",
+          "options": [
+            "\\(\\frac{7}{11p}\\)",
+            "\\(\\frac{19}{30p}\\)",
+            "\\(\\frac{7}{15p}\\)",
+            "\\(\\frac{19}{15p}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the common denominator 30p, then add the numerators.",
+          "keyPoints": [
+            {
+              "text": "Simplify: \\(\\frac{4}{6p}+\\frac{3}{5p}\\)",
+              "note": "Cancel common factors only after multiplication/factorisation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify a common denominator or use the reciprocal for division.",
+              "work": "\\(\\text{Write all factors explicitly before cancelling.}\\)"
+            },
+            {
+              "explain": "Simplify the algebraic fractions. ",
+              "work": "\\(\\frac{4}{6p}+\\frac{3}{5p}=\\frac{20}{30p}+\\frac{18}{30p}=\\frac{38}{30p}=\\frac{19}{15p}\\)"
+            },
+            {
+              "explain": "State the fully simplified result. ",
+              "work": "\\(\\frac{19}{15p}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

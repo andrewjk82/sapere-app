@@ -3152,6 +3152,47 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(3m^2-18m\\)",
+          "options": [
+            "\\(3(m²−6)\\)",
+            "\\(3m(m−6)\\)",
+            "\\(m(3m−18)\\)",
+            "\\(3m(m+6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Take the greatest common factor of both terms outside the bracket.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(3m^2-18m\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(3m^2-18m=3m(m-6)\\)"
+            },
+            {
+              "explain": "The factorised form is 3m(m−6).",
+              "work": "\\(3m(m−6)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -3249,6 +3290,47 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(x^2-100\\)",
+          "options": [
+            "\\((x−100)(x+1)\\)",
+            "\\((x−10)^2\\)",
+            "\\((x−10)(x+10)\\)",
+            "\\((x+10)^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Recognise a difference of two squares.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(x^2-100\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(x^2-100=x^2-10^2=(x-10)(x+10)\\)"
+            },
+            {
+              "explain": "The factorised form is (x−10)(x+10).",
+              "work": "\\((x−10)(x+10)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
           }
         }
       ]
@@ -3590,6 +3672,47 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(y^2+5y+6\\)",
+          "options": [
+            "\\((y+1)(y+6)\\)",
+            "\\((y−2)(y−3)\\)",
+            "\\((y+5)(y+1)\\)",
+            "\\((y+2)(y+3)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find two numbers whose product is 6 and whose sum is 5.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(y^2+5y+6\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(2\\times3=6,\\quad2+3=5\\Rightarrow(y+2)(y+3)\\)"
+            },
+            {
+              "explain": "The factorised form is (y+2)(y+3).",
+              "work": "\\((y+2)(y+3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
           }
         }
       ]
