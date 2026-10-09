@@ -2778,6 +2778,88 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{5x}{a}\\times\\frac{2ad}{20x}\\)",
+          "options": [
+            "\\(\\frac{d}{2}\\)",
+            "\\(\\frac{d}{4}\\)",
+            "\\(\\frac{5d}{2}\\)",
+            "\\(\\frac{a d}{2x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerators and denominators, then cancel common factors.",
+          "keyPoints": [
+            {
+              "text": "Simplify: \\(\\frac{5x}{a}\\times\\frac{2ad}{20x}\\)",
+              "note": "Cancel common factors only after multiplication/factorisation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify a common denominator or use the reciprocal for division.",
+              "work": "\\(\\text{Write all factors explicitly before cancelling.}\\)"
+            },
+            {
+              "explain": "Simplify the algebraic fractions. ",
+              "work": "\\(\\frac{5x\\cdot2ad}{a\\cdot20x}=\\frac{10adx}{20ax}=\\frac d2\\)"
+            },
+            {
+              "explain": "State the fully simplified result. ",
+              "work": "\\(\\frac{d}{2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{4x}{6y}\\div\\frac{12x}{36yz}\\)",
+          "options": [
+            "\\(\\frac{2}{z}\\)",
+            "\\(2z\\)",
+            "\\(3z\\)",
+            "\\(\\frac{z}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Change division by a fraction into multiplication by its reciprocal.",
+          "keyPoints": [
+            {
+              "text": "Simplify: \\(\\frac{4x}{6y}\\div\\frac{12x}{36yz}\\)",
+              "note": "Cancel common factors only after multiplication/factorisation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify a common denominator or use the reciprocal for division.",
+              "work": "\\(\\text{Write all factors explicitly before cancelling.}\\)"
+            },
+            {
+              "explain": "Simplify the algebraic fractions. ",
+              "work": "\\(\\frac{4x}{6y}\\times\\frac{36yz}{12x}=2z\\)"
+            },
+            {
+              "explain": "State the fully simplified result. ",
+              "work": "\\(2z\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

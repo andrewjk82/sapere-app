@@ -558,6 +558,57 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 3
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sector has radius 2 cm and angle 30°. What is its perimeter, to 2 decimal places?",
+          "options": [
+            "\\(5.05 cm\\)",
+            "\\(4.05 cm\\)",
+            "\\(6.09 cm\\)",
+            "\\(2.05 cm\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the two radii to the arc length, which is 30/360 of the full circumference.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M120 145 L275 92 A164 164 0 0 1 275 198 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M165 130 A48 48 0 0 1 165 160\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"142\" y=\"146\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">30°</text><text x=\"180\" y=\"106\" font-size=\"18\" font-family=\"Arial\">2 cm</text><text x=\"190\" y=\"197\" font-size=\"18\" font-family=\"Arial\">2 cm</text><circle cx=\"120\" cy=\"145\" r=\"4\" fill=\"#334155\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "radius 2 cm",
+              "note": "A sector perimeter includes two radii."
+            },
+            {
+              "text": "angle 30°",
+              "note": "This angle gives the fraction of the whole circumference."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The sector perimeter consists of two radii and the curved arc.",
+              "work": "\\(P=2r+\\text{arc length}\\)"
+            },
+            {
+              "explain": "Find the arc as the fraction 30/360 of the circle circumference.",
+              "work": "\\(\\text{arc}=\\frac{30}{360}(2\\pi\\times2)=\\frac{\\pi}{3}\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M120 145 L275 92 A164 164 0 0 1 275 198 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M160 130 A48 48 0 0 1 160 160\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"139\" y=\"146\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">30°</text><path d=\"M120 145 L275 92 M120 145 L275 198\" stroke=\"#10b981\" stroke-width=\"5\"/><text x=\"188\" y=\"105\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">r=2</text><text x=\"188\" y=\"203\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">r=2</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the radii and round at the end.",
+              "work": "\\(P=2+2+\\frac{\\pi}{3}=5.047\\ldots\\approx5.05\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -684,6 +735,57 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ring-shaped region has outer radius 5 cm and inner radius 3 cm. What is its exact shaded area?",
+          "options": [
+            "\\(34\\pi\\text{ cm}^2\\)",
+            "\\(16\\pi\\text{ cm}^2\\)",
+            "\\(8\\pi\\text{ cm}^2\\)",
+            "\\(25\\pi\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract the inner circle area from the outer circle area.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><circle cx=\"260\" cy=\"140\" r=\"96\" fill=\"#111827\"/><circle cx=\"260\" cy=\"140\" r=\"58\" fill=\"white\"/><line x1=\"260\" y1=\"140\" x2=\"356\" y2=\"140\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"260\" y1=\"140\" x2=\"318\" y2=\"140\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"288\" y=\"127\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">5 cm</text><text x=\"278\" y=\"158\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">3 cm</text><circle cx=\"260\" cy=\"140\" r=\"4\" fill=\"#334155\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "outer radius 5 cm",
+              "note": "Use this radius for the larger circle."
+            },
+            {
+              "text": "inner radius 3 cm",
+              "note": "Subtract this circle’s area from the larger area."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the outer and inner circle area expressions.",
+              "work": "\\(A_{outer}=\\pi(5)^2,\\quad A_{inner}=\\pi(3)^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><circle cx=\"260\" cy=\"140\" r=\"96\" fill=\"#111827\"/><circle cx=\"260\" cy=\"140\" r=\"58\" fill=\"white\"/><line x1=\"260\" y1=\"140\" x2=\"356\" y2=\"140\" stroke=\"#10b981\" stroke-width=\"3\"/><line x1=\"260\" y1=\"140\" x2=\"318\" y2=\"140\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"288\" y=\"127\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">5 cm</text><text x=\"278\" y=\"158\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">3 cm</text><circle cx=\"260\" cy=\"140\" r=\"4\" fill=\"#334155\"/></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the unshaded inner area.",
+              "work": "\\(A=25\\pi-9\\pi\\)"
+            },
+            {
+              "explain": "The exact shaded area is 16π square centimetres.",
+              "work": "\\(A=16\\pi\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },

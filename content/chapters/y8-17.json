@@ -1625,6 +1625,51 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(s=ut+\\frac12at^2\\), find s when t=−2, u=8 and a=5.",
+          "options": [
+            "\\(−6\\)",
+            "\\(26\\)",
+            "\\(−26\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the three values, keeping the negative value of t in brackets.",
+          "keyPoints": [
+            {
+              "text": "t=−2",
+              "note": "Replace each variable with its given value."
+            },
+            {
+              "text": "u=8 and a=5",
+              "note": "Square the negative value: (−2)²=4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute t=−2, u=8 and a=5 into the formula.",
+              "work": "\\(s=8(-2)+\\frac12(5)(-2)^2\\)"
+            },
+            {
+              "explain": "Evaluate the powers and products in order.",
+              "work": "\\(s=-16+\\frac12(5)(4)=-16+10\\)"
+            },
+            {
+              "explain": "Therefore s=−6.",
+              "work": "\\(s=-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -1793,6 +1838,129 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(3m^2-18m\\)",
+          "options": [
+            "\\(3(m²−6)\\)",
+            "\\(3m(m−6)\\)",
+            "\\(m(3m−18)\\)",
+            "\\(3m(m+6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Take the greatest common factor of both terms outside the bracket.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(3m^2-18m\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(3m^2-18m=3m(m-6)\\)"
+            },
+            {
+              "explain": "The factorised form is 3m(m−6).",
+              "work": "\\(3m(m−6)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(x^2-100\\)",
+          "options": [
+            "\\((x−100)(x+1)\\)",
+            "\\((x−10)^2\\)",
+            "\\((x−10)(x+10)\\)",
+            "\\((x+10)^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Recognise a difference of two squares.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(x^2-100\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(x^2-100=x^2-10^2=(x-10)(x+10)\\)"
+            },
+            {
+              "explain": "The factorised form is (x−10)(x+10).",
+              "work": "\\((x−10)(x+10)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(3w-6wp+4-8p\\)",
+          "options": [
+            "\\((3w+4)(1−2p)\\)",
+            "\\((3w−4)(1+2p)\\)",
+            "\\((3w+4)(1+2p)\\)",
+            "\\((w+4)(3−2p)\\)"
+          ],
+          "answer": 0,
+          "hint": "Group the first two and last two terms, then factor each group.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(3w-6wp+4-8p\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(3w(1-2p)+4(1-2p)=(3w+4)(1-2p)\\)"
+            },
+            {
+              "explain": "The factorised form is (3w+4)(1−2p).",
+              "work": "\\((3w+4)(1−2p)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -3708,6 +3876,225 @@
             }
           ],
           "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y8-17c",
+      "code": "17C",
+      "title": "Binomial products",
+      "questions": [
+        {
+          "id": "wghs-y9-2016-t3-alg-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (p+2)(p-4) \\)",
+          "options": [
+            "\\(p²+2p−8\\)",
+            "\\(p²−2p−8\\)",
+            "\\(p²−8\\)",
+            "\\(p²−2p+8\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply each term in the first bracket by both terms in the second.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (p+2)(p-4) \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\(p^2-4p+2p-8=p^2-2p-8\\)"
+            },
+            {
+              "explain": "The expansion is p²−2p−8.",
+              "work": "\\(p²−2p−8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (y+7)^2 \\)",
+          "options": [
+            "\\(y²+49\\)",
+            "\\(y²+7y+49\\)",
+            "\\(y²+14y+49\\)",
+            "\\(y²+14y+7\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the square as (y+7)(y+7), then multiply all pairs.",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (y+7)^2 \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\(y^2+7y+7y+49=y^2+14y+49\\)"
+            },
+            {
+              "explain": "The expansion is y²+14y+49.",
+              "work": "\\(y²+14y+49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\( (2m+7)(2m-7) \\)",
+          "options": [
+            "\\(4m²+49\\)",
+            "\\(4m²−28m−49\\)",
+            "\\(2m²−49\\)",
+            "\\(4m²−49\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the conjugate pattern (a+b)(a−b)=a²−b².",
+          "keyPoints": [
+            {
+              "text": "Expand and simplify: \\( (2m+7)(2m-7) \\)",
+              "note": "A square bracket means multiply the bracket by itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute each term and keep track of signs.",
+              "work": "\\( (a+b)(c+d)=ac+ad+bc+bd \\)"
+            },
+            {
+              "explain": "Simplify and collect like terms. ",
+              "work": "\\((2m)^2-7^2=4m^2-49\\)"
+            },
+            {
+              "explain": "The expansion is 4m²−49.",
+              "work": "\\(4m²−49\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y8-17d",
+      "code": "17D",
+      "title": "Factorisation of simple quadratics",
+      "questions": [
+        {
+          "id": "wghs-y9-2016-t3-alg-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(y^2+5y+6\\)",
+          "options": [
+            "\\((y+1)(y+6)\\)",
+            "\\((y−2)(y−3)\\)",
+            "\\((y+5)(y+1)\\)",
+            "\\((y+2)(y+3)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find two numbers whose product is 6 and whose sum is 5.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(y^2+5y+6\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(2\\times3=6,\\quad2+3=5\\Rightarrow(y+2)(y+3)\\)"
+            },
+            {
+              "explain": "The factorised form is (y+2)(y+3).",
+              "work": "\\((y+2)(y+3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-alg-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(6x^2+13x-5\\)",
+          "options": [
+            "\\((3x+1)(2x−5)\\)",
+            "\\((3x−1)(2x+5)\\)",
+            "\\((6x−1)(x+5)\\)",
+            "\\((2x−1)(3x+5)\\)"
+          ],
+          "answer": 1,
+          "hint": "Split the middle term into two terms whose coefficients multiply to −30 and add to 13.",
+          "keyPoints": [
+            {
+              "text": "Factorise: \\(6x^2+13x-5\\)",
+              "note": "After factorising, expand to check the result."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Look for a common factor, conjugate pair, or factor pair.",
+              "work": "\\(\\text{Check by expanding your factors.}\\)"
+            },
+            {
+              "explain": "Factor the expression. ",
+              "work": "\\(6x^2+15x-2x-5=3x(2x+5)-1(2x+5)=(3x-1)(2x+5)\\)"
+            },
+            {
+              "explain": "The factorised form is (3x−1)(2x+5).",
+              "work": "\\((3x−1)(2x+5)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     }

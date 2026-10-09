@@ -1524,6 +1524,57 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A trapezium has parallel sides 93 cm and 78 cm, with perpendicular height 54 cm. Find its area.",
+          "options": [
+            "\\(9234 cm²\\)",
+            "\\(4617 cm²\\)",
+            "\\(3996 cm²\\)",
+            "\\(4158 cm²\\)"
+          ],
+          "answer": 1,
+          "hint": "Use half the sum of the parallel sides multiplied by the perpendicular height.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"170,80 405,105 350,210 120,185\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"120\" y1=\"185\" x2=\"170\" y2=\"80\" stroke=\"#10b981\" stroke-width=\"4\"/><path d=\"M156 109 L170 116 L177 102\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"270\" y=\"75\" font-size=\"18\" font-family=\"Arial\">93 cm</text><text x=\"205\" y=\"220\" font-size=\"18\" font-family=\"Arial\">78 cm</text><text x=\"112\" y=\"135\" font-size=\"18\" font-family=\"Arial\">54 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "93 cm and 78 cm",
+              "note": "These are the parallel sides to add."
+            },
+            {
+              "text": "54 cm",
+              "note": "This is marked perpendicular to the parallel sides, so it is the height."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the parallel sides and perpendicular height from the diagram.",
+              "work": "\\(a=93,\\quad b=78,\\quad h=54\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"170,80 405,105 350,210 120,185\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"120\" y1=\"185\" x2=\"170\" y2=\"80\" stroke=\"#10b981\" stroke-width=\"5\"/><line x1=\"170\" y1=\"80\" x2=\"405\" y2=\"105\" stroke=\"#f59e0b\" stroke-width=\"5\"/><line x1=\"120\" y1=\"185\" x2=\"350\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"5\"/><path d=\"M156 109 L170 116 L177 102\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"270\" y=\"75\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">93</text><text x=\"205\" y=\"235\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">78</text><text x=\"100\" y=\"135\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">h=54</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the trapezium area formula.",
+              "work": "\\(A=\\frac12h(a+b)=\\frac12(54)(93+78)\\)"
+            },
+            {
+              "explain": "Calculate the area.",
+              "work": "\\(A=27\\times171=4617\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -1649,6 +1700,115 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 3
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A triangular prism has a triangular cross-section with base 7 cm and perpendicular height 5 cm. Its length is 13 cm. Find its volume.",
+          "options": [
+            "\\(455 cm³\\)",
+            "\\(91 cm³\\)",
+            "\\(227.5 cm³\\)",
+            "\\(325 cm³\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the triangle area first, then multiply by the prism length.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"130,180 250,180 180,100\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"355,180 475,180 405,100\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M130 180 L355 180 M250 180 L475 180 M180 100 L405 100 M250 180 L405 100\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><text x=\"165\" y=\"205\" font-family=\"Arial\" font-size=\"18\">7 cm</text><text x=\"186\" y=\"150\" font-family=\"Arial\" font-size=\"18\">5 cm</text><text x=\"350\" y=\"225\" font-family=\"Arial\" font-size=\"18\">13 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "base 7 cm and perpendicular height 5 cm",
+              "note": "These determine the triangular cross-sectional area."
+            },
+            {
+              "text": "length is 13 cm",
+              "note": "Multiply the cross-section area by this prism length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the cross-sectional triangle area.",
+              "work": "\\(A=\\frac12(7)(5)=17.5\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"130,180 250,180 180,100\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"355,180 475,180 405,100\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M130 180 L355 180 M250 180 L475 180 M180 100 L405 100 M250 180 L405 100\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M130 180 L250 180\" stroke=\"#f59e0b\" stroke-width=\"6\"/><path d=\"M180 100 L180 180\" stroke=\"#10b981\" stroke-width=\"5\" stroke-dasharray=\"6 4\"/><path d=\"M180 164 L196 164 L196 180\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"3\"/><text x=\"165\" y=\"205\" font-family=\"Arial\" font-size=\"18\" fill=\"#b45309\">base 7 cm</text><text x=\"188\" y=\"150\" font-family=\"Arial\" font-size=\"18\" fill=\"#047857\">height 5 cm</text><text x=\"350\" y=\"225\" font-family=\"Arial\" font-size=\"18\">length 13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the cross-sectional area by the prism length.",
+              "work": "\\(V=Ah=17.5\\times13\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"130,180 250,180 180,100\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"355,180 475,180 405,100\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M130 180 L355 180 M250 180 L475 180 M180 100 L405 100 M250 180 L405 100\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M180 100 L405 100\" stroke=\"#8b5cf6\" stroke-width=\"6\"/><text x=\"350\" y=\"80\" font-family=\"Arial\" font-size=\"18\" fill=\"#6d28d9\">prism length 13 cm</text><path d=\"M130 180 L250 180\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M180 100 L180 180\" stroke=\"#10b981\" stroke-width=\"4\"/><text x=\"165\" y=\"205\" font-family=\"Arial\" font-size=\"18\">7 cm</text><text x=\"188\" y=\"150\" font-family=\"Arial\" font-size=\"18\">5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "The volume is 227.5 cm³.",
+              "work": "\\(V=227.5\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A prism has a cross-section made from a 14 cm by 21 cm rectangle topped by a semicircle of diameter 14 cm. The prism is 9 cm long. Find its volume to 1 decimal place.",
+          "options": [
+            "\\(2456.7 cm³\\)",
+            "\\(2961.3 cm³\\)",
+            "\\(2268.0 cm³\\)",
+            "\\(3338.7 cm³\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the cross-section as rectangle area plus half a circle, then multiply by 9 cm.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><rect x=\"160\" y=\"105\" width=\"220\" height=\"100\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M160 105 A110 75 0 0 1 380 105\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"160\" y1=\"105\" x2=\"380\" y2=\"105\" stroke=\"#64748b\" stroke-dasharray=\"6 5\"/><text x=\"250\" y=\"228\" font-family=\"Arial\" font-size=\"18\">14 cm wide</text><text x=\"115\" y=\"155\" font-family=\"Arial\" font-size=\"18\">21 cm</text><text x=\"392\" y=\"158\" font-family=\"Arial\" font-size=\"18\">9 cm long</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "14 cm by 21 cm rectangle",
+              "note": "This gives the rectangular part of the cross-section."
+            },
+            {
+              "text": "semicircle of diameter 14 cm",
+              "note": "Use radius 7 cm and half of a circle’s area."
+            },
+            {
+              "text": "9 cm long",
+              "note": "Multiply the full cross-sectional area by the length."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The semicircle radius is half of 14 cm. Find the total cross-sectional area.",
+              "work": "\\(r=7;\\quad A=14(21)+\\frac12\\pi(7)^2=294+24.5\\pi\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><rect x=\"160\" y=\"105\" width=\"220\" height=\"100\" fill=\"#fed7aa\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M160 105 A110 75 0 0 1 380 105\" fill=\"#bbf7d0\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"160\" y1=\"105\" x2=\"380\" y2=\"105\" stroke=\"#64748b\" stroke-dasharray=\"6 5\"/><line x1=\"270\" y1=\"105\" x2=\"380\" y2=\"105\" stroke=\"#10b981\" stroke-width=\"5\"/><circle cx=\"270\" cy=\"105\" r=\"4\" fill=\"#047857\"/><text x=\"290\" y=\"96\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">r=7 cm</text><text x=\"220\" y=\"160\" font-size=\"17\" font-family=\"Arial\" fill=\"#9a3412\">rectangle area</text><text x=\"247\" y=\"58\" font-size=\"17\" font-family=\"Arial\" fill=\"#047857\">semicircle area</text><text x=\"245\" y=\"228\" font-size=\"17\" font-family=\"Arial\">width 14 cm</text><text x=\"115\" y=\"155\" font-size=\"17\" font-family=\"Arial\">height 21 cm</text><text x=\"392\" y=\"158\" font-size=\"17\" font-family=\"Arial\">length 9 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the cross-sectional area by the prism length.",
+              "work": "\\(V=9(294+24.5\\pi)\\)"
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(V\\approx3338.7\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -1724,6 +1884,61 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A cylindrical can has diameter 8 cm and contains 275 mL of cola. What is the cola height, to the nearest millimetre? (1 mL = 1 cm³)",
+          "options": [
+            "\\(55 mm\\)",
+            "\\(27 mm\\)",
+            "\\(5 mm\\)",
+            "\\(140 mm\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the volume to cm³, use radius 4 cm, and rearrange V=πr²h for h.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><ellipse cx=\"250\" cy=\"70\" rx=\"75\" ry=\"25\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M175 70 L175 205 M325 70 L325 205\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M175 205 A75 25 0 0 0 325 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M179 150 L321 150 L321 205 A75 25 0 0 1 179 205 Z\" fill=\"#fbbf24\" opacity=\".65\"/><path d=\"M179 150 A71 22 0 0 0 321 150\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><line x1=\"175\" y1=\"70\" x2=\"325\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"205\" y=\"38\" font-family=\"Arial\" font-size=\"17\" fill=\"#b45309\">diameter 8 cm</text><text x=\"350\" y=\"145\" font-family=\"Arial\" font-size=\"17\">h?</text><text x=\"350\" y=\"85\" font-family=\"Arial\" font-size=\"17\">275 mL</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "diameter 8 cm",
+              "note": "Use half of this value as the radius."
+            },
+            {
+              "text": "275 mL of cola",
+              "note": "Use 1 mL = 1 cm³ to express the volume in cubic centimetres."
+            },
+            {
+              "text": "nearest millimetre",
+              "note": "Convert the height from cm to mm before rounding."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the diameter to a radius and mL to cm³.",
+              "work": "\\(r=8\\div2=4\\text{ cm},\\quad V=275\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><ellipse cx=\"250\" cy=\"70\" rx=\"75\" ry=\"25\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M175 70 L175 205 M325 70 L325 205\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M175 205 A75 25 0 0 0 325 205\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M179 150 L321 150 L321 205 A75 25 0 0 1 179 205 Z\" fill=\"#fbbf24\" opacity=\".65\"/><path d=\"M179 150 A71 22 0 0 0 321 150\" fill=\"none\" stroke=\"#b45309\" stroke-width=\"3\"/><circle cx=\"250\" cy=\"70\" r=\"4\" fill=\"#047857\"/><line x1=\"250\" y1=\"70\" x2=\"325\" y2=\"70\" stroke=\"#10b981\" stroke-width=\"5\"/><text x=\"258\" y=\"116\" font-family=\"Arial\" font-size=\"18\" fill=\"#047857\">r=4 cm</text><text x=\"350\" y=\"145\" font-family=\"Arial\" font-size=\"17\">h?</text><text x=\"350\" y=\"85\" font-family=\"Arial\" font-size=\"17\">275 mL</text></svg>"
+              }
+            },
+            {
+              "explain": "Rearrange the cylinder volume formula to make h the subject.",
+              "work": "\\(V=\\pi r^2h\\Rightarrow h=\\frac{275}{\\pi(4)^2}=\\frac{275}{16\\pi}\\approx5.47\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert to millimetres and round to the nearest millimetre.",
+              "work": "\\(5.47\\text{ cm}=54.7\\text{ mm}\\approx55\\text{ mm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -1804,6 +2019,57 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the surface area of a rectangular prism with dimensions 5 cm, 6 cm and 2 cm.",
+          "options": [
+            "\\(60 cm²\\)",
+            "\\(88 cm²\\)",
+            "\\(104 cm²\\)",
+            "\\(124 cm²\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the areas of the three different face pairs: 2(lw+lh+wh).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"145,110 360,110 425,65 210,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"145,110 360,110 360,200 145,200\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"360,110 425,65 425,155 360,200\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"235\" y=\"225\" font-size=\"18\" font-family=\"Arial\">5 cm</text><text x=\"112\" y=\"160\" font-size=\"18\" font-family=\"Arial\">2 cm</text><text x=\"387\" y=\"180\" font-size=\"18\" font-family=\"Arial\">6 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "5 cm, 6 cm and 2 cm",
+              "note": "Use all three pairs of dimensions to find the six faces."
+            },
+            {
+              "text": "surface area",
+              "note": "Add face areas, not edge lengths or volume."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the three edge lengths and the three different face areas.",
+              "work": "\\(5\\times2=10,\\quad6\\times2=12,\\quad5\\times6=30\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"145,110 360,110 425,65 210,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"145,110 360,110 360,200 145,200\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"360,110 425,65 425,155 360,200\" fill=\"#93c5fd\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M145 200 L360 200 L425 155 M145 110 L360 110 L425 65 M145 110 L145 200 M360 110 L360 200\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"5\"/><text x=\"235\" y=\"225\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">5</text><text x=\"112\" y=\"160\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">2</text><text x=\"387\" y=\"180\" font-size=\"18\" font-family=\"Arial\" fill=\"#047857\">6</text></svg>"
+              }
+            },
+            {
+              "explain": "Each face type occurs twice, once on each opposite side.",
+              "work": "\\(SA=2(10+12+30)\\)"
+            },
+            {
+              "explain": "Calculate the total surface area.",
+              "work": "\\(SA=2(52)=104\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
@@ -1859,6 +2125,141 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 70,000 cm² to m².",
+          "options": [
+            "\\(70 m²\\)",
+            "\\(7 m²\\)",
+            "\\(700 m²\\)",
+            "\\(0.7 m²\\)"
+          ],
+          "answer": 1,
+          "hint": "Since 1 m² = 10,000 cm², divide by 10,000.",
+          "keyPoints": [
+            {
+              "text": "70,000 cm²",
+              "note": "Convert square units, so square the length scale factor."
+            },
+            {
+              "text": "m²",
+              "note": "Each square metre contains 10,000 square centimetres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Square the length conversion: 1 m = 100 cm.",
+              "work": "\\(1\\text{ m}^2=100^2\\text{ cm}^2=10{,}000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Divide the given area by 10,000.",
+              "work": "\\(70{,}000\\div10{,}000=7\\)"
+            },
+            {
+              "explain": "The area is 7 m².",
+              "work": "\\(7\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 3.4 cm³ to mm³.",
+          "options": [
+            "\\(340 mm³\\)",
+            "\\(34 mm³\\)",
+            "\\(3400 mm³\\)",
+            "\\(34000 mm³\\)"
+          ],
+          "answer": 2,
+          "hint": "Cube the length conversion 1 cm = 10 mm.",
+          "keyPoints": [
+            {
+              "text": "3.4 cm³",
+              "note": "One cubic centimetre is 1000 cubic millimetres."
+            },
+            {
+              "text": "mm³",
+              "note": "Use a cubed scale factor, not a factor of 10."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For cubic units, cube the conversion factor.",
+              "work": "\\(1\\text{ cm}^3=10^3\\text{ mm}^3=1000\\text{ mm}^3\\)"
+            },
+            {
+              "explain": "Multiply by 1000.",
+              "work": "\\(3.4\\times1000=3400\\)"
+            },
+            {
+              "explain": "The volume is 3400 mm³.",
+              "work": "\\(3400\\text{ mm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
+        },
+        {
+          "id": "wghs-y9-2016-t3-meas-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 2.3 L to cm³.",
+          "options": [
+            "\\(230 cm³\\)",
+            "\\(23 cm³\\)",
+            "\\(23000 cm³\\)",
+            "\\(2300 cm³\\)"
+          ],
+          "answer": 3,
+          "hint": "Use 1 L = 1000 cm³.",
+          "keyPoints": [
+            {
+              "text": "2.3 L",
+              "note": "Convert litres using 1000 cubic centimetres per litre."
+            },
+            {
+              "text": "cm³",
+              "note": "The numeric value is multiplied by 1000."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the litre-to-cubic-centimetre conversion.",
+              "work": "\\(1\\text{ L}=1000\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Multiply 2.3 by 1000.",
+              "work": "\\(2.3\\times1000=2300\\)"
+            },
+            {
+              "explain": "The volume is 2300 cm³.",
+              "work": "\\(2300\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "YR 9 Task 3 Yearly 2016",
+            "school": "Willoughby Girls High School",
+            "year": "2016"
+          }
         }
       ]
     },
