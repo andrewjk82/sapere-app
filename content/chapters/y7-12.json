@@ -200,8 +200,11 @@
         {
           "id": "y7-killara-23-q2",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Which statement is true about the diagram?",
+          "difficulty": "easy",
+          "figure": {
+            "svg": "fig:4edc591721"
+          },
           "options": [
             "\\(AB\\parallel CD\\)",
             "\\(AB=CD\\)",
@@ -224,6 +227,12 @@
           ],
           "timeLimit": 60,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Which statement is true about the diagram?",
+              "note": "Compare the rays and markings carefully; use the indicated line or angle relationship, not how the picture looks."
+            }
+          ],
           "meta": {
             "source": "Killara High School Year 7 Mathematics Task 4A (2023)",
             "school": "Killara High School",
@@ -233,16 +242,7 @@
             "section": "Fundamentals — Angles",
             "marks": 1,
             "origin": "teacher"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 400\" role=\"img\"><style>text{font-family:Arial,sans-serif;fill:#263449;font-size:20px}.line{stroke:#34445a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#34445a;stroke-width:3;fill:none;stroke-linecap:round}.arc{stroke:#6457e8;stroke-width:4;fill:none;stroke-linecap:round}</style><path d=\"M 115 125 H 575 M 115 290 H 575 M 330 70 L 480 345\" class=\"line\"/><circle cx=\"115\" cy=\"125\" r=\"4\" fill=\"#34445a\"/><circle cx=\"575\" cy=\"125\" r=\"4\" fill=\"#34445a\"/><circle cx=\"115\" cy=\"290\" r=\"4\" fill=\"#34445a\"/><circle cx=\"575\" cy=\"290\" r=\"4\" fill=\"#34445a\"/><path d=\"M 335 117 l 13 8 -13 8 M 335 282 l 13 8 -13 8\" stroke=\"#34445a\" stroke-width=\"3\" fill=\"none\"/><text x=\"83\" y=\"132\">A</text><text x=\"585\" y=\"132\">B</text><text x=\"83\" y=\"297\">C</text><text x=\"585\" y=\"297\">D</text></svg>"
-          },
-          "keyPoints": [
-            {
-              "text": "diagram",
-              "note": "Compare the rays and markings carefully; use the indicated line or angle relationship, not how the picture looks."
-            }
-          ]
+          }
         },
         {
           "id": "y7-killara-23-q3",
