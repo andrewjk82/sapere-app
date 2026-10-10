@@ -7168,8 +7168,8 @@
         {
           "id": "cgs-y10-2024-q10",
           "type": "mc",
-          "difficulty": "medium",
           "stem": "A box contains \\(n\\) tennis balls: one orange and \\(n-1\\) white. Two balls are selected without replacement. What is the probability both are white?",
+          "difficulty": "medium",
           "options": [
             "\\(\\frac1n\\)",
             "\\(\\frac{n-1}{n}\\)",
@@ -7178,12 +7178,6 @@
           ],
           "answer": 2,
           "hint": "Multiply the probability of white on the first draw by the updated probability of white on the second draw.",
-          "keyPoints": [
-            {
-              "text": "without replacement",
-              "note": "After a white ball is taken, both the total and white count decrease by one."
-            }
-          ],
           "steps": [
             {
               "explain": "There are n balls in total and n−1 are white on the first draw.",
@@ -7199,10 +7193,17 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1,
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "without replacement",
+              "note": "After a white ball is taken, both the total and white count decrease by one."
+            }
+          ],
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
-            "sourceYear": 2024
+            "sourceYear": 2024,
+            "origin": "teacher"
           }
         },
         {
