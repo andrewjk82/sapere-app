@@ -637,7 +637,7 @@
           "stem": "A particle has displacement \\(x=e^t-3e^{2t}\\) for \\(t\\ge0\\). Which statement explains why it never comes to rest?",
           "options": [
             "Its velocity is always positive because e^t>0.",
-            "Its velocity is \\(e^t(1-6e^t)<0\\) for every t≥0.",
+            "Its velocity is \\(e^t(1-6e^t)\\lt 0\\) for every t≥0.",
             "Its velocity is zero at t=ln 6.",
             "Its displacement is negative, so it is at rest."
           ],
@@ -656,11 +656,11 @@
             },
             {
               "explain": "Factor the velocity and use the time restriction.",
-              "work": "\\(v=e^t(1-6e^t),\\quad e^t\\ge1\\Rightarrow1-6e^t\\le-5<0\\)"
+              "work": "\\(v=e^t(1-6e^t),\\quad e^t\\ge1\\Rightarrow1-6e^t\\le-5\\lt 0\\)"
             },
             {
               "explain": "Velocity never equals zero for t≥0.",
-              "work": "\\(\\boxed{v<0\\text{ for all }t\\ge0,\\text{ so the particle never rests}}\\)"
+              "work": "\\(\\boxed{v\\lt 0\\text{ for all }t\\ge0,\\text{ so the particle never rests}}\\)"
             }
           ]
         },
@@ -678,9 +678,9 @@
           "stem": "For the piecewise velocity in Question 30, when is the acceleration zero?",
           "options": [
             "\\(t=2 only\\)",
-            "\\(t=2 or t>5\\)",
+            "\\(t=2 or t\\gt 5\\)",
             "\\(t=4 or t=5\\)",
-            "\\(t<2\\)"
+            "\\(t\\lt 2\\)"
           ],
           "answer": 1,
           "hint": "Acceleration is the gradient of the velocity-time graph on each smooth interval.",
@@ -701,7 +701,7 @@
             },
             {
               "explain": "For t>5, velocity is constant −5, so its gradient is zero; at t=5 there is a corner.",
-              "work": "\\(\\boxed{t=2\\text{ or }t>5}\\)"
+              "work": "\\(\\boxed{t=2\\text{ or }t\\gt 5}\\)"
             }
           ],
           "figure": {
@@ -918,7 +918,7 @@
           "id": "amity2020-ma-q30a",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A particle starts at the origin with velocity \\(v(t)=4t-t^2\\) for 0≤t≤5, then v(t)=−5 for t>5. When does it first return to the origin?",
+          "stem": "A particle starts at the origin with velocity \\(v(t)=4t-t^2\\) for 0≤t≤5, then v(t)=−5 for t\\gt 5. When does it first return to the origin?",
           "options": [
             "\\(\\frac{5}{3} s\\)",
             "\\(5 s\\)",

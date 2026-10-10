@@ -597,7 +597,7 @@
           "steps": [
             {
               "explain": "The coefficient is positive, so the association is positive.",
-              "work": "\\(r=0.8233>0\\)"
+              "work": "\\(r=0.8233\\gt 0\\)"
             },
             {
               "explain": "Its magnitude is fairly close to 1, indicating a strong linear relationship.",

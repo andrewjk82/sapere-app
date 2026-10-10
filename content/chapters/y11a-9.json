@@ -881,7 +881,7 @@
           "id": "amity2020-ma-q26",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Let \\(f(x)=ax+b\\text{ for }x<0,\\quad f(x)=e^{2x}\\text{ for }x\\ge0\\). If f is continuous and differentiable at x=0, find (a,b).",
+          "stem": "Let \\(f(x)=ax+b\\text{ for }x\\lt 0,\\quad f(x)=e^{2x}\\text{ for }x\\ge0\\). If f is continuous and differentiable at x=0, find (a,b).",
           "options": [
             "\\((a,b)=(1,0)\\)",
             "\\((a,b)=(2,0)\\)",

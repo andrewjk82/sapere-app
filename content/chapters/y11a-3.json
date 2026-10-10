@@ -17527,7 +17527,7 @@
           "id": "amity2020-ma-q28",
           "type": "review",
           "difficulty": "hard",
-          "stem": "The given graph is part of an odd function for \\(x\\ge0\\), with horizontal asymptote \\(y=2\\). Complete the graph for \\(x<0\\).",
+          "stem": "The given graph is part of an odd function for \\(x\\ge0\\), with horizontal asymptote \\(y=2\\). Complete the graph for \\(x\\lt 0\\).",
           "answer": "Sample answer: Rotate the given right-hand part 180° about the origin. The completed odd graph approaches y=−2 as x→−∞ and passes through the origin.",
           "manual": true,
           "hint": "An odd function has rotational symmetry through 180° about the origin.",

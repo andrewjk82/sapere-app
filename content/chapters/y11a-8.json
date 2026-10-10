@@ -5113,11 +5113,11 @@
           "steps": [
             {
               "explain": "For every real x, the exponential term is positive.",
-              "work": "\\(e^{2x-2}>0\\)"
+              "work": "\\(e^{2x-2}\\gt 0\\)"
             },
             {
               "explain": "Subtracting a positive number from 4 gives a value strictly below 4.",
-              "work": "\\(4-e^{2x-2}<4\\)"
+              "work": "\\(4-e^{2x-2}\\lt 4\\)"
             },
             {
               "explain": "As x tends to negative infinity, the exponential tends to zero, so f approaches 4 without reaching it; as x increases, f decreases without bound.",

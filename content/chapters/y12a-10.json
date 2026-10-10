@@ -607,7 +607,7 @@
           "id": "amity2020-ma-q19b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "For the density \\(f(x)=\\frac{k}{2x-1}\\) on \\([1,4]\\), find \\(P(X<2)\\).",
+          "stem": "For the density \\(f(x)=\\frac{k}{2x-1}\\) on \\([1,4]\\), find \\(P(X\\lt 2)\\).",
           "options": [
             "\\(\\frac{\\ln3}{\\ln7}\\)",
             "\\(\\frac{\\ln7}{\\ln3}\\)",
@@ -618,22 +618,22 @@
           "hint": "Integrate the density from its lower support bound 1 to 2, then substitute k.",
           "keyPoints": [
             {
-              "text": "\\(P(X<2)\\)",
+              "text": "\\(P(X\\lt 2)\\)",
               "note": "For a continuous variable, a single endpoint has probability zero."
             }
           ],
           "steps": [
             {
               "explain": "Write the probability as the area under the density from 1 to 2.",
-              "work": "\\(P(X<2)=\\int_1^2\\frac{k}{2x-1}\\,dx\\)"
+              "work": "\\(P(X\\lt 2)=\\int_1^2\\frac{k}{2x-1}\\,dx\\)"
             },
             {
               "explain": "Evaluate the logarithmic integral.",
-              "work": "\\(P(X<2)=\\frac{k}{2}[\\ln(2x-1)]_1^2=\\frac{k}{2}\\ln3\\)"
+              "work": "\\(P(X\\lt 2)=\\frac{k}{2}[\\ln(2x-1)]_1^2=\\frac{k}{2}\\ln3\\)"
             },
             {
               "explain": "Substitute k=2/ln 7.",
-              "work": "\\(\\boxed{P(X<2)=\\frac{\\ln3}{\\ln7}}\\)"
+              "work": "\\(\\boxed{P(X\\lt 2)=\\frac{\\ln3}{\\ln7}}\\)"
             }
           ]
         },
@@ -648,7 +648,7 @@
           "id": "amity2020-ma-q25a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "A density is \\(f(x)=\\frac{3x^2}{8}\\) for \\(0<x<a\\). Show that \\(a=2\\).",
+          "stem": "A density is \\(f(x)=\\frac{3x^2}{8}\\) for \\(0\\lt x\\lt a\\). Show that \\(a=2\\).",
           "answer": "Sample answer: Normalize the density: \\(\\int_0^a\\frac{3x^2}{8}dx=1\\). Thus \\([x^3/8]_0^a=a^3/8=1\\), so \\(a^3=8\\) and, since a is positive, \\(a=2\\).",
           "manual": true,
           "hint": "The total area under a probability density over its support must equal 1.",
@@ -2099,7 +2099,7 @@
             },
             {
               "explain": "Take half for the lower tail.",
-              "work": "\\(P(Z<-2)\\approx\\frac{5\\%}{2}=\\boxed{2.5\\%}\\)"
+              "work": "\\(P(Z\\lt -2)\\approx\\frac{5\\%}{2}=\\boxed{2.5\\%}\\)"
             }
           ]
         },
@@ -2201,10 +2201,10 @@
           "difficulty": "hard",
           "stem": "For a standard normal distribution, the area from z=0 to z=0.67 is about 0.25. Which scores are approximate outliers?",
           "options": [
-            "\\(z<-0.67 or z>0.67\\)",
-            "\\(z<-1.34 or z>1.34\\)",
-            "\\(z<-2.68 or z>2.68\\)",
-            "\\(z<-3 or z>3\\)"
+            "\\(z\\lt -0.67 or z\\gt 0.67\\)",
+            "\\(z\\lt -1.34 or z\\gt 1.34\\)",
+            "\\(z\\lt -2.68 or z\\gt 2.68\\)",
+            "\\(z\\lt -3 or z\\gt 3\\)"
           ],
           "answer": 2,
           "hint": "Use symmetry to identify Q1 and Q3, then apply the 1.5×IQR fences.",
@@ -2228,7 +2228,7 @@
             },
             {
               "explain": "Values outside the fences are approximate outliers.",
-              "work": "\\(\\boxed{z<-2.68\\text{ or }z>2.68}\\)",
+              "work": "\\(\\boxed{z\\lt -2.68\\text{ or }z\\gt 2.68}\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
               }

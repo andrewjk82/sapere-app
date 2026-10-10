@@ -81,7 +81,7 @@
             },
             {
               "explain": "Find the y-intercept and identify the two linear branches.",
-              "work": "\\(y(0)=6;\\quad y=6-3x\\ (x<2),\\quad y=3x-6\\ (x\\ge2)\\)"
+              "work": "\\(y(0)=6;\\quad y=6-3x\\ (x\\lt 2),\\quad y=3x-6\\ (x\\ge2)\\)"
             },
             {
               "explain": "Draw the V through (0,6) and (2,0), continuing with the correct slopes.",
@@ -593,7 +593,7 @@
             },
             {
               "explain": "It then increases from −1 to 4 on [1,2].",
-              "work": "\\(f(2)=4>\\pi\\)"
+              "work": "\\(f(2)=4\\gt \\pi\\)"
             },
             {
               "explain": "Since π is reached once on this strictly increasing section, there is one solution.",
@@ -612,7 +612,7 @@
           "id": "amity2020-ma-q23b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Using the graph of \\(y=|3x-6|\\), solve \\(|3x-6|<x\\).",
+          "stem": "Using the graph of \\(y=|3x-6|\\), solve \\(|3x-6|\\lt x\\).",
           "options": [
             "\\((−∞,1.5)\\)",
             "\\((1.5,3)\\)",
@@ -623,7 +623,7 @@
           "hint": "Find where the V-graph meets y=x, then identify where the V lies below the line.",
           "keyPoints": [
             {
-              "text": "\\(|3x-6|<x\\)",
+              "text": "\\(|3x-6|\\lt x\\)",
               "note": "The inequality is strict, so intersection points are excluded."
             }
           ],
@@ -634,7 +634,7 @@
             },
             {
               "explain": "Between these points, the V-shaped graph lies below y=x.",
-              "work": "\\(|3x-6|<x\\text{ for }1.5<x<3\\)"
+              "work": "\\(|3x-6|\\lt x\\text{ for }1.5\\lt x\\lt 3\\)"
             },
             {
               "explain": "Use open endpoints because equality does not satisfy a strict inequality.",
@@ -2126,7 +2126,7 @@
           "id": "amity2020-ma-q29",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The graph of \\(y=a\\sin(bx)+c\\), with b>0, is shown. Find (a,b,c).",
+          "stem": "The graph of \\(y=a\\sin(bx)+c\\), with b\\gt 0, is shown. Find (a,b,c).",
           "options": [
             "\\((2, \\frac{\\pi}{6}, 3)\\)",
             "\\((-2, \\frac{\\pi}{6}, 3)\\)",
