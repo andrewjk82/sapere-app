@@ -22,6 +22,8 @@ import { loadCurriculumNote, saveCurriculumNote } from '../utils/curriculumLocal
 import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy } from '../utils/lastStudy';
 import { requestPersistentStorage } from '../utils/homeworkLocalStore';
 import './learning-path.css';
+import { useSplitLayout } from '../utils/useSplitLayout';
+import { SplitPanes, SplitLayoutToggle } from './SplitPanes';
 
 const normalizeCurriculumTopics = (chapters) => (Array.isArray(chapters) ? chapters : []).map((chapter) => {
   if (!Array.isArray(chapter?.topics)) return chapter;
@@ -84,18 +86,13 @@ const LearningPath = ({ profile }) => {
   // Split View / Slide Over / Stage Manager, or while the page is pinch-zoomed, which made
   // the notes appear on some opens and not others.
   const [isTablet] = useState(isTabletDevice);
-  // Worksheet above the notes when the tablet is upright (or the window is narrow); side by side otherwise.
-  const shouldStackNotes = () => typeof window !== 'undefined' && (window.innerWidth < 700 || window.innerHeight > window.innerWidth);
-  const [stackNotes, setStackNotes] = useState(shouldStackNotes);
+  // Worksheet beside or above the notes: the student's pick (per orientation) and a draggable divider.
+  // A tablet window too narrow for two columns stacks instead of switching to tabs.
+  const { layout: splitLayout, setLayoutChoice, split: notesSplit, setSplit: setNotesSplit } = useSplitLayout();
+  const notesLayout = splitLayout === 'tabs' ? 'stack' : splitLayout;
   const [curriculumNoteReady, setCurriculumNoteReady] = useState(false);
 
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
-
-  useEffect(() => {
-    const updateLayout = () => setStackNotes(shouldStackNotes());
-    window.addEventListener('resize', updateLayout);
-    return () => window.removeEventListener('resize', updateLayout);
-  }, []);
 
   useEffect(() => {
     if (!curriculumNoteKey || !isTablet) return undefined;
@@ -809,6 +806,7 @@ const LearningPath = ({ profile }) => {
                   Next <ChevronRight size={18} strokeWidth={3} />
                 </button>
               )}
+              {isTablet && <SplitLayoutToggle layout={notesLayout} onChange={setLayoutChoice} />}
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
                 <ExternalLink size={14} /> Open in Google Drive
               </a>
@@ -817,19 +815,26 @@ const LearningPath = ({ profile }) => {
               </button>
             </div>
             {isTablet ? (
-              <div style={{ flex: 1, minHeight: 0, display: 'grid', ...(stackNotes ? { gridTemplateRows: 'minmax(0, 1fr) minmax(0, 1fr)' } : { gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)' }) }}>
-                <div style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', ...(stackNotes ? { borderBottom: '1px solid #e2e8f0' } : { borderRight: '1px solid #e2e8f0' }) }}>
-                  <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
-                </div>
-                <section aria-label="Personal working notes" style={{ minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
-                  <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
-                    <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={handleCurriculumInkChange} />
-                    {!curriculumNoteReady && (
-                      <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
-                    )}
+              <SplitPanes
+                layout={notesLayout}
+                split={notesSplit}
+                onSplitChange={setNotesSplit}
+                first={(
+                  <div style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative' }}>
+                    <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }} />
                   </div>
-                </section>
-              </div>
+                )}
+                second={(
+                  <section aria-label="Personal working notes" style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column', background: '#f8fafc' }}>
+                    <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative', pointerEvents: curriculumNoteReady ? 'auto' : 'none' }}>
+                      <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={handleCurriculumInkChange} />
+                      {!curriculumNoteReady && (
+                        <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
+                      )}
+                    </div>
+                  </section>
+                )}
+              />
             ) : (
               <PdfViewer src={worksheet.src} loading={worksheet.loading} fallback={worksheet.fallback} storageKey={worksheet.fileId} style={{ flex: 1, minHeight: 0 }} />
             )}

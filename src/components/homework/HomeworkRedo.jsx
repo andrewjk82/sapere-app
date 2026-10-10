@@ -3,7 +3,8 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, CheckCircle2, FileText, Images, Loader2, PenLine, X } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
-import { useSplitLayout, splitFraction } from '../../utils/useSplitLayout';
+import { useSplitLayout } from '../../utils/useSplitLayout';
+import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import SubmittedPages from './SubmittedPages';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
@@ -12,8 +13,6 @@ import { isSafeImageDataUrl } from '../../utils/homework';
 import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel } from '../../utils/homeworkRedo';
 import { groupMarksByTopic, markKey } from '../../utils/homeworkMarking';
 
-// Side by side from iPad-portrait width up (744–834px); phones get Notes / Worksheet tabs.
-const WIDE_MIN = 700;
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const GLYPH = { c: '✓', x: '✗', h: '½' };
 const MARK_BG = { c: '#10b981', x: '#ef4444', h: '#f59e0b' };
@@ -43,14 +42,10 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [statusMap, setStatusMap] = useState({});
   const [ready, setReady] = useState(false);
   const [pdfMap, setPdfMap] = useState({});
-  // Side by side when wide, worksheet above notes on an upright tablet, tabs on a phone.
-  const layout = useSplitLayout(WIDE_MIN);
+  // Side by side or worksheet on top (the student's pick, per orientation); tabs on a phone.
+  const { layout, canChoose, setLayoutChoice, split, setSplit } = useSplitLayout();
   const isWide = layout !== 'tabs';
-  const stacked = layout === 'stack';
-  const splitRef = useRef(null);
   const [pane, setPane] = useState('notes');
-  const [split, setSplit] = useState(0.5);
-  const [dragging, setDragging] = useState(false);
   const [sheet, setSheet] = useState(null); // { loading } | { error } | { images }
   const [showSubmitted, setShowSubmitted] = useState(false); // the pages handed in, in place of the new notes
 
@@ -146,22 +141,6 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     setSheet(null);
   };
 
-  const onDividerDown = (e) => {
-    e.preventDefault();
-    setDragging(true);
-    const rect = splitRef.current?.getBoundingClientRect();
-    const move = (ev) => { if (rect) setSplit(splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout)); };
-    const up = () => {
-      setDragging(false);
-      window.removeEventListener('pointermove', move);
-      window.removeEventListener('pointerup', up);
-      window.removeEventListener('pointercancel', up);
-    };
-    window.addEventListener('pointermove', move);
-    window.addEventListener('pointerup', up);
-    window.addEventListener('pointercancel', up);
-  };
-
   const store = { ink: inkMap, status: statusMap };
   const summary = redoSummary(questions, store);
   const rawPdf = active ? pdfMap[active.topicId] : '';
@@ -175,7 +154,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
           src={worksheet.src}
           loading={worksheet.loading}
           fallback={worksheet.fallback} storageKey={worksheet.fileId}
-          style={{ width: '100%', height: '100%', pointerEvents: dragging ? 'none' : 'auto' }}
+          style={{ width: '100%', height: '100%' }}
         />
       ) : (
         <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
@@ -280,11 +259,6 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
 
   // Same trick as HomeworkWorkspace: one stable tree for both layouts so the canvas is never remounted,
   // and the hidden narrow pane keeps its size (visibility, not display:none).
-  const narrowPaneStyle = (isActive) => ({
-    position: 'absolute', inset: 0, minWidth: 0,
-    visibility: isActive ? 'visible' : 'hidden',
-    pointerEvents: isActive ? 'auto' : 'none',
-  });
 
   return createPortal(
     <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: '#f8fafc', display: 'flex', flexDirection: 'column' }}>
@@ -301,6 +275,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
             <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4f46e5', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>“{item.comment}”</div>
           )}
         </div>
+        {canChoose && questions.length > 0 && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
         {questions.length > 0 && (
           <button
             type="button"
@@ -333,20 +308,11 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         </div>
       )}
 
-      <div ref={splitRef} style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative' }}>
-        {questions.length === 0 ? (
-          <div style={{ flex: 1, display: 'grid', placeItems: 'center', color: '#64748b', fontWeight: 700 }}>Nothing to redo — every marked question was correct.</div>
-        ) : (
-          <>
-            {/* Worksheet first (left, or on top on an upright tablet), the new notes after it. */}
-            <div style={isWide ? (stacked ? { height: `${split * 100}%`, minHeight: 0 } : { width: `${split * 100}%`, minWidth: 0 }) : narrowPaneStyle(pane === 'pdf')}>{pdfPane}</div>
-            {isWide && (
-              <div onPointerDown={onDividerDown} style={{ ...(stacked ? { height: 10, cursor: 'row-resize' } : { width: 10, cursor: 'col-resize' }), flexShrink: 0, background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }} />
-            )}
-            <div style={isWide ? { flex: 1, minWidth: 0, minHeight: 0 } : narrowPaneStyle(pane === 'notes')}>{notesPane}</div>
-          </>
-        )}
-      </div>
+      {questions.length === 0 ? (
+        <div style={{ flex: 1, display: 'grid', placeItems: 'center', color: '#64748b', fontWeight: 700 }}>Nothing to redo — every marked question was correct.</div>
+      ) : (
+        <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notesPane} activePane={pane === 'pdf' ? 'first' : 'second'} />
+      )}
     </div>,
     document.body,
   );

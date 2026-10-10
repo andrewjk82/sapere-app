@@ -3,13 +3,13 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
-import { useSplitLayout, splitFraction } from '../../utils/useSplitLayout';
+import { useSplitLayout } from '../../utils/useSplitLayout';
+import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
 import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
-const WIDE_MIN = 900;
 const waitForCanvasCommit = () => new Promise((resolve) => {
   requestAnimationFrame(() => requestAnimationFrame(resolve));
 });
@@ -39,14 +39,10 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const [loadedSessionKey, setLoadedSessionKey] = useState('');
   const currentSessionKey = `${user?.uid || ''}:${session?.id || ''}`;
   const notebooksLoaded = loadedSessionKey === currentSessionKey;
-  // Side by side when wide, worksheet above notes on an upright tablet, tabs on a phone.
-  const layout = useSplitLayout(WIDE_MIN);
+  // Side by side or worksheet on top (the student's pick, per orientation); tabs on a phone.
+  const { layout, canChoose, setLayoutChoice, split, setSplit } = useSplitLayout();
   const isWide = layout !== 'tabs';
-  const stacked = layout === 'stack';
-  const splitRef = useRef(null);
   const [pane, setPane] = useState('pdf');
-  const [split, setSplit] = useState(0.5);
-  const [dragging, setDragging] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(null); // { done, total } while a long homework uploads
@@ -213,22 +209,6 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     }
   };
 
-  const onDividerDown = (e) => {
-    e.preventDefault();
-    setDragging(true);
-    const rect = splitRef.current?.getBoundingClientRect();
-    const move = (ev) => { if (rect) setSplit(splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout)); };
-    const up = () => {
-      setDragging(false);
-      window.removeEventListener('pointermove', move);
-      window.removeEventListener('pointerup', up);
-      window.removeEventListener('pointercancel', up);
-    };
-    window.addEventListener('pointermove', move);
-    window.addEventListener('pointerup', up);
-    window.addEventListener('pointercancel', up);
-  };
-
   const activeTopic = topics[topicIdx];
   const rawPdf = activeTopic ? pdfMap[activeTopic.id] : '';
   const worksheet = useWorksheetPdf(rawPdf);
@@ -262,7 +242,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
             src={worksheet.src}
             loading={worksheet.loading}
             fallback={worksheet.fallback} storageKey={worksheet.fileId}
-            style={{ width: '100%', height: '100%', pointerEvents: dragging ? 'none' : 'auto' }}
+            style={{ width: '100%', height: '100%' }}
           />
         ) : (
           <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
@@ -307,18 +287,8 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     </div>
   );
 
-  // One stable element tree for both layouts: the notes pane keeps the same
-  // position (and so the same WorkingOutCanvas instance) when the window
-  // crosses WIDE_MIN — e.g. rotating a tablet — so ink is never remounted away.
-  // In the narrow layout the inactive pane is hidden with `visibility` (not
-  // `display:none`) so both panes keep their real size: the canvas never
-  // collapses to 0×0 (its ResizeObserver would skip sizing and, if it was
-  // never shown, exportPageImages would snapshot the 300×150 default bitmap).
-  const narrowPaneStyle = (active) => ({
-    position: 'absolute', inset: 0, minWidth: 0,
-    visibility: active ? 'visible' : 'hidden',
-    pointerEvents: active ? 'auto' : 'none',
-  });
+  // SplitPanes keeps one stable element tree for every layout, so rotating or switching layout never
+  // remounts the notepad (and its ink).
 
   return createPortal(
     <div style={{ position: 'fixed', inset: 0, zIndex: 10000, background: '#f8fafc', display: 'flex', flexDirection: 'column' }}>
@@ -332,6 +302,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
             {session?.date} · {topics.map((t) => t.label || t.title || t.id).join(', ')}
           </div>
         </div>
+        {canChoose && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
         <button
           type="button"
           disabled={submitting}
@@ -370,20 +341,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         </div>
       )}
 
-      <div ref={splitRef} style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative' }}>
-        <div style={isWide ? (stacked ? { height: `${split * 100}%`, minHeight: 0 } : { width: `${split * 100}%`, minWidth: 0 }) : narrowPaneStyle(pane === 'pdf')}>
-          {pdfPane}
-        </div>
-        {isWide && (
-          <div
-            onPointerDown={onDividerDown}
-            style={{ ...(stacked ? { height: 10, cursor: 'row-resize' } : { width: 10, cursor: 'col-resize' }), flexShrink: 0, background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }}
-          />
-        )}
-        <div style={isWide ? { flex: 1, minWidth: 0, minHeight: 0 } : narrowPaneStyle(pane === 'notes')}>
-          {notesPane}
-        </div>
-      </div>
+      <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notesPane} activePane={pane === 'pdf' ? 'first' : 'second'} />
 
       {confirming && (
         <div style={{ position: 'fixed', inset: 0, background: 'rgba(15,23,42,0.45)', display: 'grid', placeItems: 'center', zIndex: 10001 }}>
