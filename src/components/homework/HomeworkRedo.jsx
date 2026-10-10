@@ -185,9 +185,13 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     </div>
   );
 
-  // Every mark the teacher gave, above the worksheet and the notes, so the student sees what was
-  // wrong while redoing it. ✗ / ½ chips pick that question for the notepad; ✓ chips are just shown.
-  const marksByTopic = groupMarksByTopic(item?.marks);
+  // The ✗ / ½ the teacher gave, above the worksheet and the notes, so the student sees what was
+  // wrong while redoing it (the score in the header covers the ✓). A chip picks that question for the notepad.
+  const marksByTopic = Object.fromEntries(Object.entries(groupMarksByTopic(item?.marks))
+    .map(([topicId, sections]) => [topicId, sections
+      .map(({ section, items }) => ({ section, items: items.filter(({ mark }) => mark !== 'c') }))
+      .filter(({ items }) => items.length > 0)])
+    .filter(([, sections]) => sections.length > 0));
   const topicOrder = [...(item?.topics || []).map((t) => t.id), ...Object.keys(marksByTopic)]
     .filter((id, i, all) => marksByTopic[id] && all.indexOf(id) === i);
   const marksStrip = topicOrder.length > 0 && (
