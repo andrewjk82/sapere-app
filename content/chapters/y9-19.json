@@ -12,7 +12,7 @@
           "id": "wghs-y9-2016-t3-stat-q1a",
           "type": "review",
           "difficulty": "medium",
-          "stem": "The monthly car sales for 16 dealerships are shown. Make an ordered stem-and-leaf plot.",
+          "stem": "The monthly car sales for 16 dealerships are shown below. Make an ordered stem-and-leaf plot.\n\\[ 56, 39, 48, 65, 42, 59, 37, 49, 50, 44, 38, 58, 40, 59, 39, 47 \\]",
           "answer": "Sample answer: use the ordered stem-and-leaf plot shown. Key: 3 | 7 = 37 cars. The leaves are ordered within each stem.",
           "hint": "Sort the values first, then use the tens digits as stems and list the units digits as ordered leaves.",
           "keyPoints": [
@@ -32,7 +32,7 @@
             },
             {
               "explain": "Use each tens digit as a stem and order the units digits as leaves.",
-              "work": "\\(3|7,8,8,9,9;\\quad4|0,2,4,7,8,9;\\quad5|0,6,8,9,9;\\quad6|5\\)"
+              "work": "\\(3|7,8,9,9;\\quad4|0,2,4,7,8,9;\\quad5|0,6,8,9,9;\\quad6|5\\)"
             },
             {
               "explain": "Check that each leaf represents one original value and that there are 16 leaves.",
