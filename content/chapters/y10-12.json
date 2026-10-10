@@ -1654,6 +1654,98 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "cgs-y10-2024-s2-q18a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A ship travels north from A to D. C is 175 km north of A and D is 60 km north of C. The bearing of E from A is 055°, and the bearing of E from C is 134°. Find the bearing of A from E.",
+          "options": [
+            "055°",
+            "125°",
+            "235°",
+            "305°"
+          ],
+          "answer": 2,
+          "hint": "The reverse bearing differs from the forward bearing by 180°.",
+          "keyPoints": [
+            {
+              "text": "bearing of E from A is 055°",
+              "note": "Keep bearings as three digits and measure clockwise from north."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The bearing from A to E is 055°.",
+              "work": "\\(\\text{bearing}(A\\to E)=055^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"110\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"71\" y=\"292\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"71\" y=\"145\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"71\" y=\"105\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"183\" y=\"222\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">E</text><text x=\"53\" y=\"216\" fill=\"#334155\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">175 km</text><text x=\"53\" y=\"129\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">60 km</text><path d=\"M90 240 A30 30 0 0 1 114 257\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M90 180 A30 30 0 0 1 111 171\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"119\" y=\"240\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">055°</text><text x=\"124\" y=\"187\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">134°</text></svg>"
+              }
+            },
+            {
+              "explain": "Reverse direction by adding 180°.",
+              "work": "\\(055^\\circ+180^\\circ=235^\\circ\\)"
+            },
+            {
+              "explain": "Write the bearing from E to A.",
+              "work": "\\(\\boxed{235^\\circ}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"110\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"71\" y=\"292\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"71\" y=\"145\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"71\" y=\"105\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"183\" y=\"222\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">E</text><text x=\"53\" y=\"216\" fill=\"#334155\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">175 km</text><text x=\"53\" y=\"129\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">60 km</text><path d=\"M90 240 A30 30 0 0 1 114 257\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M90 180 A30 30 0 0 1 111 171\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"119\" y=\"240\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">055°</text><text x=\"124\" y=\"187\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">134°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A golf ball follows \\(y=0.003125x(200-x)\\) metres while travelling up a slope. Point B on the path is \\(B(170,15.9)\\). Use point B to find the slope angle θ to the nearest degree.",
+          "options": [
+            "3°",
+            "5°",
+            "9°",
+            "15°"
+          ],
+          "answer": 1,
+          "hint": "The slope rises 15.9 m over a horizontal run of 170 m. Use tangent.",
+          "keyPoints": [
+            {
+              "text": "A golf ball follows \\(y=0",
+              "note": "Use the slope triangle from A to B, not the curved flight path."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the slope triangle: 170 m is the horizontal run and 15.9 m is the rise to B.",
+              "work": "\\(\\tan\\theta=\\frac{15.9}{170}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"235\" x2=\"445\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"448\" y=\"254\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"64\" y=\"49\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><line x1=\"75\" y1=\"235\" x2=\"410\" y2=\"111\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"75\" y1=\"235\" x2=\"313\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"313\" y1=\"147\" x2=\"313\" y2=\"235\" stroke=\"#10b981\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"75\" y1=\"235\" x2=\"313\" y2=\"147\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><circle cx=\"313\" cy=\"147\" r=\"5\" fill=\"#dc2626\"/><text x=\"328\" y=\"143\" fill=\"#b91c1c\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">B (170,15.9)</text><text x=\"190\" y=\"254\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">170 m</text><text x=\"327\" y=\"196\" fill=\"#047857\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">15.9 m</text><text x=\"75\" y=\"260\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">A</text><path d=\"M105 235 A30 30 0 0 0 104 224\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"116\" y=\"226\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Take the inverse tangent.",
+              "work": "\\(\\theta=\\tan^{-1}(15.9/170)\\approx5.34^\\circ\\)"
+            },
+            {
+              "explain": "Round to the nearest degree.",
+              "work": "\\(\\boxed{5^\\circ}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"235\" x2=\"445\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"448\" y=\"254\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"64\" y=\"49\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><path d=\"M75 235 C125 86 166 63 215 63 C267 63 310 92 355 235\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"4\"/><line x1=\"75\" y1=\"235\" x2=\"410\" y2=\"111\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><circle cx=\"313\" cy=\"147\" r=\"5\" fill=\"#dc2626\"/><text x=\"329\" y=\"145\" fill=\"#b91c1c\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">B (170,15.9)</text><text x=\"75\" y=\"260\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">A</text><path d=\"M105 235 A30 30 0 0 0 104 224\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"116\" y=\"226\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">θ</text><line x1=\"215\" y1=\"63\" x2=\"215\" y2=\"183\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"63\" x2=\"225\" y2=\"63\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"231\" y=\"120\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">h</text><line x1=\"313\" y1=\"147\" x2=\"313\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"4 4\" stroke-linecap=\"round\"/></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -3958,6 +4050,146 @@
             "exam:year10ch12b"
           ],
           "xp": 3
+        },
+        {
+          "id": "cgs-y10-2024-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From the right-triangle diagram, which trigonometric statement is correct?",
+          "options": [
+            "\\(\\cos 30^\\circ=\\frac{1}{2}\\)",
+            "\\(\\tan 60^\\circ=\\frac{1}{\\sqrt{3}}\\)",
+            "\\(\\sin 60^\\circ=\\frac{\\sqrt{3}}{2}\\)",
+            "\\(\\sin 30^\\circ=\\frac{1}{\\sqrt{3}}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the side opposite the named angle divided by the hypotenuse for sine.",
+          "keyPoints": [
+            {
+              "text": "right-triangle diagram",
+              "note": "Compare each ratio with the side lengths opposite and adjacent to the marked angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For the marked 60° angle, identify the opposite side and the hypotenuse.",
+              "work": "\\(\\text{opposite}=\\sqrt{3},\\quad \\text{hypotenuse}=2\\)"
+            },
+            {
+              "explain": "Use the sine ratio because the question asks for sine.",
+              "work": "\\(\\sin60^\\circ=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Match the exact ratio with the choices; do not swap sine and cosine.",
+              "work": "\\(\\boxed{\\sin60^\\circ=\\frac{\\sqrt{3}}{2}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"85\" y1=\"230\" x2=\"285\" y2=\"230\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"285\" y1=\"230\" x2=\"285\" y2=\"115\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"85\" y1=\"230\" x2=\"285\" y2=\"115\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M265 230v-20h20\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M115 230 A30 30 0 0 0 110 215\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M285 145 A30 30 0 0 0 258 130\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"183\" y=\"255\" fill=\"#1e293b\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"normal\">√3</text><text x=\"302\" y=\"176\" fill=\"#1e293b\" font-size=\"17\" text-anchor=\"start\" font-weight=\"normal\">1</text><text x=\"174\" y=\"155\" fill=\"#1e293b\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"120\" y=\"205\" fill=\"#d97706\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"253\" y=\"124\" fill=\"#d97706\" font-size=\"14\" text-anchor=\"end\" font-weight=\"bold\">60°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q23a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "In the diagram, AB = 1, angle ACB = 30°, CD = 2, and AB is perpendicular to BD. Points B, C and D lie on a straight line. Use trigonometry to show that \\(\\angle BAD=75^\\circ\\).",
+          "answer": "Sample answer: In right triangle ABC, \\(\\tan30^\\circ=AB/BC\\), so \\(BC=1/\\tan30^\\circ=\\sqrt3\\). Hence \\(BD=BC+CD=\\sqrt3+2\\). In right triangle ABD, \\(\\tan\\angle BAD=BD/AB=2+\\sqrt3\\), so \\(\\angle BAD=\\tan^{-1}(2+\\sqrt3)=75^\\circ\\).",
+          "manual": true,
+          "hint": "Start with the small right triangle ABC to find BC, then add CD before using triangle ABD.",
+          "keyPoints": [
+            {
+              "text": "In the diagram, AB = 1, angle ACB = 30°, CD = 2, and AB is perpendicul",
+              "note": "The 30° angle is at C; AB is opposite and BC is adjacent to it."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In right triangle ABC, use tangent at C to calculate BC.",
+              "work": "\\(\\tan30^\\circ=\\frac{AB}{BC}=\\frac1{BC}\\Rightarrow BC=\\frac1{\\tan30^\\circ}=\\sqrt3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"256\" y2=\"250\" stroke=\"#10b981\" stroke-width=\"7\"  stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Add the adjacent ground segments to obtain BD.",
+              "work": "\\(BD=BC+CD=\\sqrt3+2\\)"
+            },
+            {
+              "explain": "In right triangle ABD, use tangent for angle BAD.",
+              "work": "\\(\\tan(\\angle BAD)=\\frac{BD}{AB}=\\frac{\\sqrt3+2}{1}=2+\\sqrt3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#6366f1\" stroke-width=\"7\"  stroke-linecap=\"round\"/><path d=\"M100 190 A30 30 0 0 0 129 168\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"125\" y=\"193\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">75°</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate the inverse tangent.",
+              "work": "\\(\\angle BAD=\\tan^{-1}(2+\\sqrt3)=\\boxed{75^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#6366f1\" stroke-width=\"7\"  stroke-linecap=\"round\"/><path d=\"M100 190 A30 30 0 0 0 129 168\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\"/><text x=\"125\" y=\"193\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">75°</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q23b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram, AB = 1, angle ACB = 30°, CD = 2, and AB is perpendicular to BD. Points B, C and D lie on a straight line. Hence find the exact value of \\(\\tan75^\\circ\\) in simplest surd form.",
+          "options": [
+            "\\(2-\\sqrt3\\)",
+            "\\(2+\\sqrt3\\)",
+            "\\(\\sqrt3+1\\)",
+            "\\(\\frac{2+\\sqrt3}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the right triangle with angle 75°, opposite side BD = 2 + √3 and adjacent side AB = 1.",
+          "keyPoints": [
+            {
+              "text": "\\(\\tan75^\\circ\\)",
+              "note": "Keep the exact value; do not round the surd to a decimal."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From the diagram, BD = BC + CD and BC = √3.",
+              "work": "\\(BD=\\sqrt3+2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text></svg>"
+              }
+            },
+            {
+              "explain": "Use tangent as opposite over adjacent for angle BAD = 75°.",
+              "work": "\\(\\tan75^\\circ=\\frac{BD}{AB}\\)"
+            },
+            {
+              "explain": "Substitute BD = 2 + √3 and AB = 1.",
+              "work": "\\(\\tan75^\\circ=\\frac{2+\\sqrt3}{1}=\\boxed{2+\\sqrt3}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -6226,6 +6458,98 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "cgs-y10-2024-s2-q19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A vertical gate post TF is fixed at F on level ground. FG = 3.5 m, the angle of elevation of T from G is 30°, the angle of elevation of T from L is 40°, and ground angle GFL is 120°. Find the post height h to the nearest metre.",
+          "options": [
+            "\\(1\\text{ m}\\)",
+            "\\(2\\text{ m}\\)",
+            "\\(3\\text{ m}\\)",
+            "\\(4\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "In right triangle GFT, FG is adjacent to 30° and FT is opposite.",
+          "keyPoints": [
+            {
+              "text": "FG = 3.5 m",
+              "note": "Use tangent for opposite over adjacent."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the right triangle and the sides relative to 30°.",
+              "work": "\\(\\tan30^\\circ=\\frac{FT}{FG}=\\frac{h}{3.5}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for h.",
+              "work": "\\(h=3.5\\tan30^\\circ\\approx2.02\\text{ m}\\)"
+            },
+            {
+              "explain": "Round to the nearest metre as requested.",
+              "work": "\\(\\boxed{h=2\\text{ m}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A vertical gate post TF is fixed at F on level ground. FG = 3.5 m, the angle of elevation of T from G is 30°, the angle of elevation of T from L is 40°, and ground angle GFL is 120°. Use the rounded height from part (a) to find FL to the nearest metre.",
+          "options": [
+            "\\(1\\text{ m}\\)",
+            "\\(2\\text{ m}\\)",
+            "\\(3\\text{ m}\\)",
+            "\\(4\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "In right triangle LFT, use the rounded h = 2 m as the side opposite 40°.",
+          "keyPoints": [
+            {
+              "text": "angle of elevation of T from L is 40°",
+              "note": "The question specifically says to use the rounded result from (a)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the right triangle formed by L, F and T.",
+              "work": "\\(\\tan40^\\circ=\\frac{h}{FL}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the rounded height h = 2 m and rearrange.",
+              "work": "\\(FL=\\frac{2}{\\tan40^\\circ}\\approx2.38\\text{ m}\\)"
+            },
+            {
+              "explain": "Round to the nearest metre.",
+              "work": "\\(\\boxed{FL=2\\text{ m}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -8486,6 +8810,106 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q17a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A triangle has an angle of 100°, the side opposite that angle is 5 cm, and the side opposite the unknown angle θ is 3 cm. Use the sine rule to find θ to the nearest degree.",
+          "options": [
+            "\\(26^\\circ\\)",
+            "\\(36^\\circ\\)",
+            "\\(44^\\circ\\)",
+            "\\(80^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "Match each known side with its opposite angle before writing the sine rule.",
+          "keyPoints": [
+            {
+              "text": "side opposite that angle is 5 cm",
+              "note": "Use the pair 5 cm ↔ 100° and 3 cm ↔ θ."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Pair opposite sides and angles in the sine rule.",
+              "work": "\\(\\frac{\\sin\\theta}{3}=\\frac{\\sin100^\\circ}{5}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M211 118 A26 26 0 0 1 245 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"226\" y=\"136\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"281\" y=\"222\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#f59e0b\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Rearrange and evaluate the inverse sine.",
+              "work": "\\(\\sin\\theta=\\frac{3\\sin100^\\circ}{5}=0.5909\\)"
+            },
+            {
+              "explain": "Take the inverse sine and round to the nearest degree.",
+              "work": "\\(\\theta=\\sin^{-1}(0.5909)\\approx36.2^\\circ\\)"
+            },
+            {
+              "explain": "The angle is approximately.",
+              "work": "\\(\\boxed{36^\\circ}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M211 118 A26 26 0 0 1 245 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"226\" y=\"136\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"281\" y=\"222\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s2-q18b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A ship travels north from A to D. C is 175 km north of A and D is 60 km north of C. The bearing of E from A is 055°, and the bearing of E from C is 134°. Use the sine rule to find CE to the nearest kilometre.",
+          "options": [
+            "\\(128\\text{ km}\\)",
+            "\\(146\\text{ km}\\)",
+            "\\(175\\text{ km}\\)",
+            "\\(201\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "In triangle ACE, use the parallel north lines to find angle C, then find angle E.",
+          "keyPoints": [
+            {
+              "text": "175 km north of A",
+              "note": "The 55° angle at A is opposite CE; first derive the angle at C from the 134° bearing."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "At C, the angle between CA (bearing 180°) and CE (bearing 134°) is 46°.",
+              "work": "\\(\\angle ACE=180^\\circ-134^\\circ=46^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"110\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"71\" y=\"292\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"71\" y=\"145\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"71\" y=\"105\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"183\" y=\"222\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">E</text><text x=\"53\" y=\"216\" fill=\"#334155\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">175 km</text><text x=\"53\" y=\"129\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">60 km</text><path d=\"M90 240 A30 30 0 0 1 114 257\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M90 180 A30 30 0 0 1 111 171\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"119\" y=\"240\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">055°</text><text x=\"124\" y=\"187\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">134°</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the third angle in triangle ACE.",
+              "work": "\\(\\angle AEC=180^\\circ-55^\\circ-46^\\circ=79^\\circ\\)"
+            },
+            {
+              "explain": "Use the sine rule: CE is opposite 55° and AC = 175 km is opposite 79°.",
+              "work": "\\(\\frac{CE}{\\sin55^\\circ}=\\frac{175}{\\sin79^\\circ}\\)"
+            },
+            {
+              "explain": "Evaluate and round to the nearest kilometre.",
+              "work": "\\(CE=\\frac{175\\sin55^\\circ}{\\sin79^\\circ}\\approx146\\text{ km}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"90\" y1=\"110\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"71\" y=\"292\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"71\" y=\"145\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"71\" y=\"105\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"183\" y=\"222\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">E</text><text x=\"53\" y=\"216\" fill=\"#334155\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">175 km</text><text x=\"53\" y=\"129\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">60 km</text><path d=\"M90 240 A30 30 0 0 1 114 257\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><path d=\"M90 180 A30 30 0 0 1 111 171\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"119\" y=\"240\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">055°</text><text x=\"124\" y=\"187\" fill=\"#b45309\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">134°</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
           }
         }
       ]
@@ -10955,6 +11379,52 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "cgs-y10-2024-s2-q19c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vertical gate post TF is fixed at F on level ground. FG = 3.5 m, the angle of elevation of T from G is 30°, the angle of elevation of T from L is 40°, and ground angle GFL is 120°. Using the rounded value FL = 2 m, find GL to the nearest metre.",
+          "options": [
+            "\\(4\\text{ m}\\)",
+            "\\(5\\text{ m}\\)",
+            "\\(6\\text{ m}\\)",
+            "\\(7\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "The known sides FG and FL enclose the 120° angle, so use the cosine rule.",
+          "keyPoints": [
+            {
+              "text": "ground angle GFL is 120°",
+              "note": "Use the rounded FL = 2 m as directed."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The ground triangle has FG = 3.5 m, FL = 2 m and included angle 120°.",
+              "work": "\\(GL^2=FG^2+FL^2-2(FG)(FL)\\cos120^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the side lengths and angle.",
+              "work": "\\(GL^2=3.5^2+2^2-2(3.5)(2)\\cos120^\\circ=23.25\\)"
+            },
+            {
+              "explain": "Take the positive square root and round.",
+              "work": "\\(GL=\\sqrt{23.25}\\approx4.82\\text{ m}\\Rightarrow\\boxed{5\\text{ m}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"18\" y=\"24\" font-size=\"14\" fill=\"#334155\" font-weight=\"bold\">Ground plan</text><path d=\"M35 190L145 190L200 94Z\" fill=\"#e0f2fe\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"30\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"145\" y=\"210\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"207\" y=\"92\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><path d=\"M120 190 A25 25 0 0 1 157.5 168.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"122\" y=\"171\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">120°</text><text x=\"260\" y=\"24\" fill=\"#334155\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Right-triangle elevation views</text><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"330\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"245\" y1=\"190\" x2=\"330\" y2=\"141\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M269 190 A24 24 0 0 0 266 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"278\" y=\"177\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">30°</text><text x=\"240\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">G</text><text x=\"330\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"330\" y=\"134\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"274\" y=\"220\" fill=\"#1e293b\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">FG = 3.5 m</text><line x1=\"365\" y1=\"190\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"190\" x2=\"365\" y2=\"106\" stroke=\"#6366f1\" stroke-width=\"5\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"106\" x2=\"465\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M438 190 A27 27 0 0 1 444 174\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"427\" y=\"169\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">40°</text><text x=\"358\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">F</text><text x=\"472\" y=\"207\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">L</text><text x=\"365\" y=\"99\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">T</text><text x=\"355\" y=\"150\" fill=\"#4f46e5\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">h</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -11826,6 +12296,52 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "cgs-y10-2024-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The triangle has side lengths 4, 7 and 10. Which cosine-rule formula finds its smallest angle \\(\\theta\\)?",
+          "options": [
+            "\\(\\cos\\theta=\\frac{4^2+7^2-10^2}{2\\cdot4\\cdot7}\\)",
+            "\\(\\cos\\theta=\\frac{4^2+10^2-7^2}{2\\cdot4\\cdot10}\\)",
+            "\\(\\cos\\theta=\\frac{10^2+7^2-4^2}{2\\cdot10\\cdot7}\\)",
+            "\\(\\cos\\theta=\\frac{10^2-7^2-4^2}{2\\cdot4\\cdot7}\\)"
+          ],
+          "answer": 2,
+          "hint": "The smallest angle lies opposite the shortest side. In the cosine rule, the denominator uses the two sides that enclose the angle.",
+          "keyPoints": [
+            {
+              "text": "smallest angle \\(\\theta\\)",
+              "note": "Pair the angle with its opposite side before substituting into the cosine rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The shortest side is 4, so the smallest angle is opposite it; the highlighted sides 7 and 10 enclose θ.",
+              "work": "\\(\\text{opposite}=4,quad\text{adjacent sides}=7,10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"120\" x2=\"150\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"150\" y1=\"220\" x2=\"374\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"70\" y1=\"120\" x2=\"374\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><text x=\"98\" y=\"169\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"262\" y=\"245\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"225\" y=\"155\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">10</text><path d=\"M342 220 A32 32 0 0 1 344 210\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"3\"/><text x=\"344\" y=\"200\" fill=\"#4f46e5\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><line x1=\"70\" y1=\"120\" x2=\"150\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"150\" y1=\"220\" x2=\"374\" y2=\"220\" stroke=\"#f59e0b\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"70\" y1=\"120\" x2=\"374\" y2=\"220\" stroke=\"#f59e0b\" stroke-width=\"7\"  stroke-linecap=\"round\"/><path d=\"M342 220 A32 32 0 0 1 344 210\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"4\"/></svg>"
+              }
+            },
+            {
+              "explain": "The two sides enclosing this angle are 7 and 10.",
+              "work": "\\(\\cos\\theta=\\frac{7^2+10^2-4^2}{2\\cdot7\\cdot10}\\)"
+            },
+            {
+              "explain": "This is the cosine-rule form for the required angle.",
+              "work": "\\(\\boxed{\\cos\\theta=\\frac{10^2+7^2-4^2}{2\\cdot10\\cdot7}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"120\" x2=\"150\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"150\" y1=\"220\" x2=\"374\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"70\" y1=\"120\" x2=\"374\" y2=\"220\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><text x=\"98\" y=\"169\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">4</text><text x=\"262\" y=\"245\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"225\" y=\"155\" fill=\"#334155\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">10</text><path d=\"M342 220 A32 32 0 0 1 344 210\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"3\"/><text x=\"344\" y=\"200\" fill=\"#4f46e5\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">θ</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -15169,6 +15685,55 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "cgs-y10-2024-s2-q17b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A triangle has an angle of 100°, the side opposite that angle is 5 cm, and the side opposite the unknown angle θ is 3 cm. Find the triangle’s area to the nearest square centimetre.",
+          "options": [
+            "\\(4\\text{ cm}^2\\)",
+            "\\(5\\text{ cm}^2\\)",
+            "\\(7\\text{ cm}^2\\)",
+            "\\(8\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the included angle between the 3 cm and 5 cm sides, then use \\(A=\\frac12 ab\\sin C\\).",
+          "keyPoints": [
+            {
+              "text": "side opposite that angle is 5 cm",
+              "note": "The included angle is the third angle of the triangle, not the 100° angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the unrounded sine-rule angle to find the included angle between the 3 cm and 5 cm sides.",
+              "work": "\\(\\theta\\approx36.2^\\circ,\\quad C=180^\\circ-100^\\circ-36.2^\\circ=43.8^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M211 118 A26 26 0 0 1 245 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"226\" y=\"136\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"281\" y=\"222\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#f59e0b\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/><path d=\"M375 125 A26 26 0 0 0 381 148\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"4\"/><text x=\"360\" y=\"158\" fill=\"#047857\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">43.8°</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the highlighted 3 cm and 5 cm sides with their included angle.",
+              "work": "\\(A=\\frac12(3)(5)\\sin43.8^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M211 118 A26 26 0 0 1 245 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"226\" y=\"136\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"281\" y=\"222\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#f59e0b\" stroke-width=\"7\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#2563eb\" stroke-width=\"7\"  stroke-linecap=\"round\"/><path d=\"M375 125 A26 26 0 0 0 381 148\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"4\"/><text x=\"360\" y=\"158\" fill=\"#047857\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">43.8°</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to the nearest square centimetre.",
+              "work": "\\(A\\approx5.18\\text{ cm}^2\\Rightarrow\\boxed{5\\text{ cm}^2}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M211 118 A26 26 0 0 1 245 100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"226\" y=\"136\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"281\" y=\"222\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },

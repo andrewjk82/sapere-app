@@ -1923,6 +1923,41 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "cgs-y10-2024-s1-q3a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Points \\(A(1,-22)\\) and \\(B(5,-2)\\) lie on a straight line. Show that the equation of line AB is \\(y=5x-27\\).",
+          "answer": "Sample answer: The gradient is \\(m=\\frac{-2-(-22)}{5-1}=\\frac{20}{4}=5\\). Using \\(y=mx+c\\) and point A gives \\(-22=5(1)+c\\), so \\(c=-27\\). Therefore the line is \\(y=5x-27\\).",
+          "manual": true,
+          "hint": "Find the gradient from the two coordinates, then use one point to determine the intercept.",
+          "keyPoints": [
+            {
+              "text": "Points \\(A(1,-22)\\) and \\(B(5,-2)\\) lie on a straight line",
+              "note": "A line equation needs both its gradient and y-intercept."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate rise over run using the same point order in numerator and denominator.",
+              "work": "\\(m=\\frac{-2-(-22)}{5-1}=\\frac{20}{4}=5\\)"
+            },
+            {
+              "explain": "Substitute point A into y = mx + c.",
+              "work": "\\(-22=5(1)+c\\quad\\Rightarrow\\quad c=-27\\)"
+            },
+            {
+              "explain": "Write the line equation and verify point B.",
+              "work": "\\(y=5x-27;\\quad 5(5)-27=-2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -2968,6 +3003,50 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "cgs-y10-2024-s1-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Line AB passes through \\(A(1,-22)\\) and \\(B(5,-2)\\). Find its intersection with line \\(3x+2y=-2\\).",
+          "options": [
+            "\\((4,-7)\\)",
+            "\\((4,7)\\)",
+            "\\((-4,-7)\\)",
+            "\\((2,-4)\\)"
+          ],
+          "answer": 0,
+          "hint": "First find line AB using its two points; then solve the two line equations together.",
+          "keyPoints": [
+            {
+              "text": "intersection with line \\(3x+2y=-2\\)",
+              "note": "An intersection coordinate must satisfy both lines."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the gradient of AB and use A to determine the intercept.",
+              "work": "\\(m=\\frac{20}{4}=5,\\quad -22=5(1)+c\\Rightarrow c=-27\\)"
+            },
+            {
+              "explain": "Substitute y = 5x − 27 into the second line.",
+              "work": "\\(3x+2(5x-27)=-2\\Rightarrow13x=52\\Rightarrow x=4\\)"
+            },
+            {
+              "explain": "Substitute x = 4 into AB.",
+              "work": "\\(y=5(4)-27=-7\\)"
+            },
+            {
+              "explain": "Check in the second equation.",
+              "work": "\\(3(4)+2(-7)=-2\\Rightarrow\\boxed{(4,-7)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },

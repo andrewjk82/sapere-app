@@ -5217,6 +5217,89 @@
               "note": "Collect variable terms on one side and constants on the other, applying each operation to both sides."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The number line shows an open endpoint at −1 and is shaded to the right. Which inequality is represented?",
+          "options": [
+            "\\(x\\le -1\\)",
+            "\\(-1<x\\le1\\)",
+            "\\(x<-1\\)",
+            "\\(x>-1\\)"
+          ],
+          "answer": 3,
+          "hint": "An open circle excludes its value. The ray extends right, so values larger than −1 are included.",
+          "keyPoints": [
+            {
+              "text": "open endpoint at −1",
+              "note": "An open circle means strict inequality; the shaded ray shows which values satisfy it."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The shaded ray extends from −1 toward larger values.",
+              "work": "\\(-1\\quad\\longrightarrow\\quad+\\infty\\)"
+            },
+            {
+              "explain": "The open endpoint at −1 means x is greater than −1, not equal to it.",
+              "work": "\\(x>-1\\)"
+            },
+            {
+              "explain": "There is no right endpoint, so all greater values are included.",
+              "work": "\\(\\boxed{x>-1}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"160\" x2=\"435\" y2=\"160\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"65\" y1=\"153\" x2=\"65\" y2=\"168\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"145\" y1=\"153\" x2=\"145\" y2=\"168\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"225\" y1=\"153\" x2=\"225\" y2=\"168\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"305\" y1=\"153\" x2=\"305\" y2=\"168\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"385\" y1=\"153\" x2=\"385\" y2=\"168\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"65\" y=\"194\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">−3</text><text x=\"145\" y=\"194\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">−2</text><text x=\"225\" y=\"194\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">−1</text><text x=\"305\" y=\"194\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"385\" y=\"194\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M225 160H425\" stroke=\"#6366f1\" stroke-width=\"8\"/><path d=\"M425 151L440 160L425 169Z\" fill=\"#6366f1\"/><circle cx=\"225\" cy=\"160\" r=\"7\" fill=\"#fff\" stroke=\"#6366f1\" stroke-width=\"3\"/><text x=\"225\" y=\"125\" fill=\"#6366f1\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">−1</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(3(2x+5)=4-x\\).",
+          "options": [
+            "\\(x=-\\frac{11}{7}\\)",
+            "\\(x=\\frac{11}{7}\\)",
+            "\\(x=-\\frac{19}{7}\\)",
+            "\\(x=\\frac{19}{7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the bracket first, then gather x-terms on one side.",
+          "keyPoints": [
+            {
+              "text": "\\(3(2x+5)=4-x\\)",
+              "note": "When moving −x to the left, add x to both sides."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the left-hand side.",
+              "work": "\\(6x+15=4-x\\)"
+            },
+            {
+              "explain": "Add x to both sides, then subtract 15.",
+              "work": "\\(7x+15=4\\quad\\Rightarrow\\quad7x=-11\\)"
+            },
+            {
+              "explain": "Divide both sides by 7 and check by substitution.",
+              "work": "\\(\\boxed{x=-\\frac{11}{7}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -12621,6 +12704,46 @@
               "note": "Factor out any common factor first, then use A² − B² = (A − B)(A + B); confirm both terms are squares."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(y^2-100x^2\\).",
+          "options": [
+            "\\((y-10x)(y+10x)\\)",
+            "\\((y-100x)(y+100x)\\)",
+            "\\((y-10x)^2\\)",
+            "\\((y-x)(y+100x)\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise a difference of two squares.",
+          "keyPoints": [
+            {
+              "text": "\\(y^2-100x^2\\)",
+              "note": "Write 100x² as (10x)² before factoring."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two square terms.",
+              "work": "\\(y^2-100x^2=y^2-(10x)^2\\)"
+            },
+            {
+              "explain": "Apply A² − B² = (A − B)(A + B).",
+              "work": "\\(A=y,\\quad B=10x\\)"
+            },
+            {
+              "explain": "Write both conjugate factors.",
+              "work": "\\(\\boxed{(y-10x)(y+10x)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -14974,6 +15097,46 @@
               "note": "For ax² + bx + c, find two numbers with product ac and sum b, split the middle term, then factor by grouping."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise \\(6m^2+m-2\\).",
+          "options": [
+            "\\((2m-1)(3m+2)\\)",
+            "\\((2m+1)(3m-2)\\)",
+            "\\((6m-1)(m+2)\\)",
+            "\\((3m-1)(2m+2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two binomials whose first terms multiply to 6m² and constants multiply to −2.",
+          "keyPoints": [
+            {
+              "text": "\\(6m^2+m-2\\)",
+              "note": "Check the middle term after expanding your factor pair."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose factors of 6m² and −2 that can produce a middle coefficient of 1.",
+              "work": "\\(6m^2+m-2=(2m-1)(3m+2)\\)"
+            },
+            {
+              "explain": "Expand to verify the cross terms.",
+              "work": "\\(6m^2+4m-3m-2=6m^2+m-2\\)"
+            },
+            {
+              "explain": "The factorisation is correct.",
+              "work": "\\(\\boxed{(2m-1)(3m+2)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -15104,6 +15267,90 @@
               "note": "Factor the numerator and denominator completely before cancelling common factors; keep the original denominator restrictions."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{7x}{3}-\\frac{2x-1}{9}\\).",
+          "options": [
+            "\\(\\frac{19x-1}{9}\\)",
+            "\\(\\frac{19x+1}{9}\\)",
+            "\\(\\frac{5x+1}{9}\\)",
+            "\\(\\frac{5x-1}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Rewrite the first fraction with denominator 9, then subtract the entire second numerator.",
+          "keyPoints": [
+            {
+              "text": "\\frac{7x}{3}",
+              "note": "The minus sign applies to both terms in (2x-1)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use 9 as the common denominator.",
+              "work": "\\(\\frac{7x}{3}=\\frac{21x}{9}\\)"
+            },
+            {
+              "explain": "Subtract the second numerator with its parentheses.",
+              "work": "\\(\\frac{21x-(2x-1)}{9}=\\frac{21x-2x+1}{9}\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(\\boxed{\\frac{19x+1}{9}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{p^2+2p-15}{p^2-3p}\\), stating any excluded values.",
+          "options": [
+            "\\(\\frac{p+5}{p},\\ p\\ne0,3\\)",
+            "\\(\\frac{p-3}{p},\\ p\\ne0\\)",
+            "\\(p+5,\\ p\\ne0,3\\)",
+            "\\(\\frac{p+5}{p-3},\\ p\\ne3\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor the numerator and denominator before cancelling a common factor.",
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{p^2+2p-15}{p^2-3p}\\), stating any excluded values",
+              "note": "The original denominator determines excluded values even after cancellation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor the numerator and denominator.",
+              "work": "\\(p^2+2p-15=(p+5)(p-3),\\quad p^2-3p=p(p-3)\\)"
+            },
+            {
+              "explain": "Cancel the common factor p − 3, while retaining restrictions from the original denominator.",
+              "work": "\\(\\frac{(p+5)(p-3)}{p(p-3)}=\\frac{p+5}{p}\\)"
+            },
+            {
+              "explain": "The denominator p(p−3) is zero at p = 0 or p = 3.",
+              "work": "\\(p\\ne0,3\\)"
+            },
+            {
+              "explain": "State the simplified expression and its domain.",
+              "work": "\\(\\boxed{\\frac{p+5}{p},\\ p\\ne0,3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },

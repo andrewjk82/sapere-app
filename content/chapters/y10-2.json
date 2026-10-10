@@ -17561,6 +17561,46 @@
               "note": "Multiply the numerator and denominator by the denominator’s conjugate so the denominator becomes a difference of squares."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator and simplify \\(\\frac{1+\\sqrt3}{2\\sqrt3}\\).",
+          "options": [
+            "\\(\\frac{3+\\sqrt3}{6}\\)",
+            "\\(\\frac{1+3\\sqrt3}{6}\\)",
+            "\\(\\frac{1+\\sqrt3}{6}\\)",
+            "\\(\\frac{3-\\sqrt3}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by √3 so the denominator becomes rational.",
+          "keyPoints": [
+            {
+              "text": "Rationalise the denominator and simplify \\(\\frac{1+\\sqrt3}{2\\sqrt3}\\)",
+              "note": "Multiply every term in the numerator by √3 as well."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by √3.",
+              "work": "\\(\\frac{1+\\sqrt3}{2\\sqrt3}\\cdot\\frac{\\sqrt3}{\\sqrt3}\\)"
+            },
+            {
+              "explain": "Expand the numerator and simplify the denominator.",
+              "work": "\\(\\frac{\\sqrt3+3}{2\\cdot3}=\\frac{\\sqrt3+3}{6}\\)"
+            },
+            {
+              "explain": "Write in exact simplest form.",
+              "work": "\\(\\boxed{\\frac{3+\\sqrt3}{6}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },

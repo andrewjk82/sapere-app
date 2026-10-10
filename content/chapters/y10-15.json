@@ -1079,6 +1079,46 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "cgs-y10-2024-s1-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Each letter in EQUILATERAL is written on a separate card. What is the probability of selecting A or E?",
+          "options": [
+            "\\(\\frac{2}{11}\\)",
+            "\\(\\frac{4}{11}\\)",
+            "\\(\\frac{5}{11}\\)",
+            "\\(\\frac{4}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Count all letters, then count the A cards and E cards. Each card is one equally likely outcome.",
+          "keyPoints": [
+            {
+              "text": "EQUILATERAL",
+              "note": "A and E are different letters, so add their counts without overlap."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count the letters in the word.",
+              "work": "\\(n(\\text{EQUILATERAL})=11\\)"
+            },
+            {
+              "explain": "There are two A cards and two E cards.",
+              "work": "\\(n(A\\text{ or }E)=2+2=4\\)"
+            },
+            {
+              "explain": "Divide favourable cards by all cards.",
+              "work": "\\(P(A\\text{ or }E)=\\frac4{11}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -2963,6 +3003,49 @@
               "xp": 1
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A language survey has 60 students: French-only 12, Spanish-only 10, German-only 16, French and Spanish only 6, French and German only 5, Spanish and German only 4, and all three languages 7. What is the probability that a randomly selected student studies all three languages?",
+          "options": [
+            "\\(\\frac7{60}\\)",
+            "\\(\\frac7{22}\\)",
+            "\\(\\frac{13}{60}\\)",
+            "\\(\\frac{53}{60}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the number in the centre of the three-way Venn intersection over the total number of students.",
+          "keyPoints": [
+            {
+              "text": "all three languages",
+              "note": "Use 60 as the total sample space, not the number who study at least one language."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The all-three region contains 7 students.",
+              "work": "\\(n(F\\cap S\\cap G)=7\\)"
+            },
+            {
+              "explain": "There are 60 students in the survey.",
+              "work": "\\(n(\\text{all students})=60\\)"
+            },
+            {
+              "explain": "Form favourable over total outcomes.",
+              "work": "\\(P(F\\cap S\\cap G)=\\boxed{\\frac7{60}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"135\" r=\"82\" fill=\"#dbeafe\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"310\" cy=\"135\" r=\"82\" fill=\"#dcfce7\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"250\" cy=\"205\" r=\"82\" fill=\"#fce7f3\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"136\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">F</text><text x=\"364\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">S</text><text x=\"331\" y=\"274\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">G</text><text x=\"130\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">12</text><text x=\"370\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">10</text><text x=\"250\" y=\"91\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">6</text><text x=\"195\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">5</text><text x=\"305\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">4</text><text x=\"250\" y=\"164\" fill=\"#b91c1c\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"250\" y=\"262\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">16</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -4446,6 +4529,52 @@
           ],
           "timeLimit": 90,
           "xp": 2
+        },
+        {
+          "id": "cgs-y10-2024-s1-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A language survey has 60 students: French-only 12, Spanish-only 10, German-only 16, French and Spanish only 6, French and German only 5, Spanish and German only 4, and all three languages 7. Given that a student studies at least two languages, what is the probability that the student studies all three?",
+          "options": [
+            "\\(\\frac7{60}\\)",
+            "\\(\\frac7{22}\\)",
+            "\\(\\frac{22}{60}\\)",
+            "\\(\\frac{15}{22}\\)"
+          ],
+          "answer": 1,
+          "hint": "For a conditional probability, restrict the denominator to all regions with at least two languages.",
+          "keyPoints": [
+            {
+              "text": "at least two languages",
+              "note": "The condition includes the three pair-only regions and the centre region."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count students studying at least two languages: 6 + 5 + 4 + 7.",
+              "work": "\\(n(\\text{at least 2})=6+5+4+7=22\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"135\" r=\"82\" fill=\"#dbeafe\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"310\" cy=\"135\" r=\"82\" fill=\"#dcfce7\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"250\" cy=\"205\" r=\"82\" fill=\"#fce7f3\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"136\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">F</text><text x=\"364\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">S</text><text x=\"331\" y=\"274\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">G</text><text x=\"130\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">12</text><text x=\"370\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">10</text><text x=\"250\" y=\"91\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">6</text><text x=\"195\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">5</text><text x=\"305\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">4</text><text x=\"250\" y=\"164\" fill=\"#b91c1c\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"250\" y=\"262\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">16</text></svg>"
+              }
+            },
+            {
+              "explain": "Of those 22 students, 7 study all three.",
+              "work": "\\(n(\\text{all 3})=7\\)"
+            },
+            {
+              "explain": "Use the conditional sample space.",
+              "work": "\\(P(\\text{all 3}|\\text{at least 2})=\\boxed{\\frac7{22}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"135\" r=\"82\" fill=\"#dbeafe\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"310\" cy=\"135\" r=\"82\" fill=\"#dcfce7\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"250\" cy=\"205\" r=\"82\" fill=\"#fce7f3\" fill-opacity=\".22\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"136\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">F</text><text x=\"364\" y=\"73\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">S</text><text x=\"331\" y=\"274\" fill=\"#334155\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">G</text><text x=\"130\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">12</text><text x=\"370\" y=\"145\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">10</text><text x=\"250\" y=\"91\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">6</text><text x=\"195\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">5</text><text x=\"305\" y=\"211\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">4</text><text x=\"250\" y=\"164\" fill=\"#b91c1c\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"bold\">7</text><text x=\"250\" y=\"262\" fill=\"#1e293b\" font-size=\"16\" text-anchor=\"middle\" font-weight=\"normal\">16</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
@@ -7034,6 +7163,130 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
+          }
+        },
+        {
+          "id": "cgs-y10-2024-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A box contains \\(n\\) tennis balls: one orange and \\(n-1\\) white. Two balls are selected without replacement. What is the probability both are white?",
+          "options": [
+            "\\(\\frac1n\\)",
+            "\\(\\frac{n-1}{n}\\)",
+            "\\(\\frac{n-2}{n}\\)",
+            "\\(\\frac{n-1}{n-2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the probability of white on the first draw by the updated probability of white on the second draw.",
+          "keyPoints": [
+            {
+              "text": "without replacement",
+              "note": "After a white ball is taken, both the total and white count decrease by one."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are n balls in total and n−1 are white on the first draw.",
+              "work": "\\(P(W_1)=\\frac{n-1}{n}\\)"
+            },
+            {
+              "explain": "After a white is removed, n−2 white balls remain among n−1 balls.",
+              "work": "\\(P(W_2\\mid W_1)=\\frac{n-2}{n-1}\\)"
+            },
+            {
+              "explain": "Multiply the conditional probabilities and cancel the common factor.",
+              "work": "\\(P(W_1\\cap W_2)=\\frac{n-1}{n}\\cdot\\frac{n-2}{n-1}=\\boxed{\\frac{n-2}{n}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q5a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A bag contains 10 jellybeans: 2 are strawberry and 8 are plain. Two jellybeans are drawn one after the other without replacement. Draw a complete probability tree diagram, labelling every branch probability.",
+          "answer": "Sample answer: First draw: strawberry \\(2/10\\), plain \\(8/10\\). After strawberry, the second-draw probabilities are strawberry \\(1/9\\) and plain \\(8/9\\). After plain, they are strawberry \\(2/9\\) and plain \\(7/9\\). The completed tree is shown in the solution diagram.",
+          "manual": true,
+          "hint": "For the second draw, update the counts after following each first-draw branch.",
+          "keyPoints": [
+            {
+              "text": "without replacement",
+              "note": "Each pair of branch probabilities from the same node must add to 1."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Start with 10 jellybeans: 2 strawberry and 8 plain.",
+              "work": "\\(P(S_1)=\\frac2{10},\\quad P(P_1)=\\frac8{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"250\" y1=\"42\" x2=\"250\" y2=\"80\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"80\" x2=\"145\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"80\" x2=\"355\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"145\" y1=\"145\" x2=\"95\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"145\" y1=\"145\" x2=\"195\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"355\" y1=\"145\" x2=\"305\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"355\" y1=\"145\" x2=\"405\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><circle cx=\"250\" cy=\"42\" r=\"6\" fill=\"#6366f1\"/><circle cx=\"145\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><circle cx=\"355\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><text x=\"250\" y=\"29\" fill=\"#334155\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Start</text><text x=\"145\" y=\"171\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1st draw</text><text x=\"355\" y=\"171\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1st draw</text><text x=\"95\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"195\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"305\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"405\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"145\" y=\"270\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2nd draw</text><text x=\"355\" y=\"270\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2nd draw</text></svg>"
+              }
+            },
+            {
+              "explain": "If strawberry was drawn first, 1 strawberry and 8 plain remain out of 9.",
+              "work": "\\(P(S_2|S_1)=\\frac1{9},\\quad P(P_2|S_1)=\\frac8{9}\\)"
+            },
+            {
+              "explain": "If plain was drawn first, 2 strawberry and 7 plain remain out of 9.",
+              "work": "\\(P(S_2|P_1)=\\frac2{9},\\quad P(P_2|P_1)=\\frac7{9}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"250\" y1=\"55\" x2=\"250\" y2=\"100\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"100\" x2=\"135\" y2=\"165\" stroke=\"#10b981\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"100\" x2=\"365\" y2=\"165\" stroke=\"#64748b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"105\" fill=\"#10b981\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">2/10</text><text x=\"310\" y=\"105\" fill=\"#64748b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8/10</text><line x1=\"135\" y1=\"165\" x2=\"85\" y2=\"245\" stroke=\"#10b981\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"135\" y1=\"165\" x2=\"185\" y2=\"245\" stroke=\"#64748b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"165\" x2=\"315\" y2=\"245\" stroke=\"#10b981\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"365\" y1=\"165\" x2=\"415\" y2=\"245\" stroke=\"#64748b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"105\" y=\"187\" fill=\"#10b981\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">1/9</text><text x=\"165\" y=\"187\" fill=\"#64748b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">8/9</text><text x=\"335\" y=\"187\" fill=\"#10b981\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">2/9</text><text x=\"395\" y=\"187\" fill=\"#64748b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">7/9</text><text x=\"85\" y=\"270\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"185\" y=\"270\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"315\" y=\"270\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"415\" y=\"270\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">P</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"250\" y1=\"42\" x2=\"250\" y2=\"80\" stroke=\"#6366f1\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"80\" x2=\"145\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"80\" x2=\"355\" y2=\"145\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"145\" y1=\"145\" x2=\"95\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"145\" y1=\"145\" x2=\"195\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"355\" y1=\"145\" x2=\"305\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"355\" y1=\"145\" x2=\"405\" y2=\"218\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><circle cx=\"250\" cy=\"42\" r=\"6\" fill=\"#6366f1\"/><circle cx=\"145\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><circle cx=\"355\" cy=\"145\" r=\"5\" fill=\"#94a3b8\"/><text x=\"250\" y=\"29\" fill=\"#334155\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Start</text><text x=\"145\" y=\"171\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1st draw</text><text x=\"355\" y=\"171\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1st draw</text><text x=\"95\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"195\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"305\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">S</text><text x=\"405\" y=\"245\" fill=\"#1e293b\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"145\" y=\"270\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2nd draw</text><text x=\"355\" y=\"270\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2nd draw</text></svg>"
+          },
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains 10 jellybeans: 2 are strawberry and 8 are plain. Two jellybeans are drawn one after the other without replacement. What is the probability of drawing at least one strawberry?",
+          "options": [
+            "\\(\\frac{2}{9}\\)",
+            "\\(\\frac{8}{45}\\)",
+            "\\(\\frac{17}{45}\\)",
+            "\\(\\frac{37}{45}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the complement: subtract the probability of drawing two plain jellybeans from 1.",
+          "keyPoints": [
+            {
+              "text": "at least one strawberry",
+              "note": "The two plain draws have probabilities 8/10 and then 7/9."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The complement of at least one strawberry is no strawberry, meaning two plain draws.",
+              "work": "\\(P(\\text{at least one }S)=1-P(PP)\\)"
+            },
+            {
+              "explain": "Multiply the no-replacement probabilities for two plain draws.",
+              "work": "\\(P(PP)=\\frac8{10}\\cdot\\frac7{9}=\\frac{28}{45}\\)"
+            },
+            {
+              "explain": "Subtract from 1.",
+              "work": "\\(1-\\frac{28}{45}=\\boxed{\\frac{17}{45}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
           }
         }
       ]

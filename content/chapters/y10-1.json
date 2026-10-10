@@ -27463,6 +27463,90 @@
               "note": "Use A = P(1 + r)^n and make n the number of compounding periods."
             }
           ]
+        },
+        {
+          "id": "cgs-y10-2024-s1-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An investment of $8000 earns 4.5% compound interest in the first year. What is its value after that year?",
+          "options": [
+            "\\(\\$8{,}360\\)",
+            "\\(\\$8{,}450\\)",
+            "\\(\\$8{,}360.45\\)",
+            "\\(\\$8{,}800\\)"
+          ],
+          "answer": 0,
+          "hint": "A 4.5% increase means the new balance is 104.5% of the starting amount.",
+          "keyPoints": [
+            {
+              "text": "4.5% compound interest in the first year",
+              "note": "Convert the percentage to a multiplier before multiplying."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert the first-year interest rate to a multiplier.",
+              "work": "\\(1+\\frac{4.5}{100}=1.045\\)"
+            },
+            {
+              "explain": "Multiply the principal by the multiplier.",
+              "work": "\\(8000\\times1.045=8360\\)"
+            },
+            {
+              "explain": "State the first-year balance in dollars.",
+              "work": "\\(\\boxed{\\$8,360}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An investment starts at $8000. It earns 4.5% compound interest in year 1, then 2.75% compound interest in each of the next three years. What is its value after four years, to the nearest cent?",
+          "options": [
+            "\\(\\$8{,}920.00\\)",
+            "\\(\\$9{,}068.84\\)",
+            "\\(\\$9{,}020.00\\)",
+            "\\(\\$9{,}068.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the first-year multiplier, then apply the later annual multiplier three times to the new balance.",
+          "keyPoints": [
+            {
+              "text": "each of the next three years",
+              "note": "Do not apply all four years at the same rate."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the balance after year one.",
+              "work": "\\(8000(1.045)=8360\\)"
+            },
+            {
+              "explain": "Use the 2.75% multiplier for each of the remaining three years.",
+              "work": "\\(8360(1.0275)^3\\)"
+            },
+            {
+              "explain": "Evaluate and round only the final amount to cents.",
+              "work": "\\(8360(1.0275)^3=9068.84\\)"
+            },
+            {
+              "explain": "The four-year value is approximately.",
+              "work": "\\(\\boxed{\\$9,068.84}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },

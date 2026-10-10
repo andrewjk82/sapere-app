@@ -2998,6 +2998,94 @@
             "grade": "10"
           },
           "xp": 2
+        },
+        {
+          "id": "cgs-y10-2024-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\( (x+2)^2=16 \\).",
+          "options": [
+            "\\(x=6\\)",
+            "\\(x=2\\) or \\(x=-6\\)",
+            "\\(x=14\\)",
+            "\\(x=4\\) or \\(x=-4\\)"
+          ],
+          "answer": 1,
+          "hint": "If a square equals 16, its expression can be either 4 or −4.",
+          "keyPoints": [
+            {
+              "text": "Solve \\( (x+2)^2=16 \\)",
+              "note": "Remember to consider both square roots before solving for x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Take both square roots of 16.",
+              "work": "\\(x+2=4\\quad\\text{or}\\quad x+2=-4\\)"
+            },
+            {
+              "explain": "Solve each linear equation.",
+              "work": "\\(x=4-2=2\\quad\\text{or}\\quad x=-4-2=-6\\)"
+            },
+            {
+              "explain": "Check both values in the original squared equation.",
+              "work": "\\((2+2)^2=16,\\quad(-6+2)^2=16\\)"
+            },
+            {
+              "explain": "Both values satisfy the equation.",
+              "work": "\\(\\boxed{x=2\\text{ or }x=-6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
+        },
+        {
+          "id": "cgs-y10-2024-s1-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ball’s height above the ground is \\(h=-t^2+6t\\) metres after t seconds. When does it return to the ground after launch?",
+          "options": [
+            "\\(3\\text{ s}\\)",
+            "\\(6\\text{ s}\\)",
+            "\\(−6\\text{ s}\\)",
+            "\\(9\\text{ s}\\)"
+          ],
+          "answer": 1,
+          "hint": "Set the height to zero and factor out t. Discard the launch time t = 0.",
+          "keyPoints": [
+            {
+              "text": "\\(h=-t^2+6t\\)",
+              "note": "The nonzero root gives when the ball returns to the ground."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "At ground level, set h = 0.",
+              "work": "\\(-t^2+6t=0\\)"
+            },
+            {
+              "explain": "Factor the quadratic.",
+              "work": "\\(-t(t-6)=0\\)"
+            },
+            {
+              "explain": "The roots are t = 0 and t = 6; t = 0 is the launch.",
+              "work": "\\(t=0\\text{ or }t=6\\)"
+            },
+            {
+              "explain": "Use the later time for the return.",
+              "work": "\\(\\boxed{6\\text{ s}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
+            "sourceYear": 2024
+          }
         }
       ]
     },
