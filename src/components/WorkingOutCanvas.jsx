@@ -1,11 +1,14 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
 import StickerLayer from './StickerLayer';
-import { eraseStrokesAlong } from '../utils/strokeErase';
+import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
+import {
+  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger,
+} from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.11-2finger-page';
+const CANVAS_VERSION = 'v10.0-a4-page';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -241,13 +244,22 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const currentStrokeRef = useRef(null);
   const liveDrawnIdxRef = useRef(1);   // next segment index not yet settled
   const predictedPtsRef = useRef([]);  // predicted [x,y] points for the tip
-  const rectRef = useRef(null);        // canvas rect cached at pointerdown
+  const rectRef = useRef(null);        // { left, top, sx, sy } cached at pointerdown: screen px → page units
   const lastSampleRef = useRef({ x: 0, y: 0, t: 0 });
   const smoothWRef = useRef(3);        // low-pass-filtered line width
   const penSeenRef = useRef(false);    // a pen/stylus has been used → reject palm
   const rafIdRef = useRef(0);          // pending requestAnimationFrame id for live render
   const canceledPenStrokeRef = useRef(null);
   const canvasWrapperRef = useRef(null);
+  // The page is a fixed A4 sheet in a viewport: `view` = { zoom, pos } (pos = the page's top-left in screen px),
+  // `viewSize` = the viewport's size. Everything drawn lives in page units (see utils/padView).
+  const viewportRef = useRef(null);
+  const [viewSize, setViewSize] = useState({ w: 0, h: 0 });
+  const [view, setViewState] = useState({ zoom: 1, pos: { x: 0, y: 0 } });
+  const viewRef = useRef(view);
+  const viewSizeRef = useRef(viewSize);
+  const backScaleRef = useRef(1);      // canvas px per page unit currently backing the canvases
+  const [backScale, setBackScale] = useState(1);
   // Whole-stroke eraser gesture: { pointerId, last: {x, y}, base: strokes at pointerdown, current: strokes now }.
   const strokeEraseRef = useRef(null);
 
@@ -259,6 +271,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const strokesRef = useRef([]);
 
   const handlersRef = useRef({});
+  // Screen px → page units for a canvas currently at `canvas`'s on-screen box.
+  const snapRect = (canvas) => {
+    const r = canvas.getBoundingClientRect();
+    return { left: r.left, top: r.top, sx: r.width > 0 ? PAGE_W / r.width : 1, sy: r.height > 0 ? PAGE_H / r.height : 1 };
+  };
 
   // Tool state mirrored to refs so the once-attached handlers see fresh values
   const isSubmittedRef = useRef(false);
@@ -286,6 +303,41 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   strokesRef.current = strokes;
+  // ─── View: zoom / pan of the A4 page inside the pane ───────────────────────
+  const fit = fitScale(viewSize.w, viewSize.h);
+  const cssScale = fit * view.zoom;
+  const pagePos = clampPos(view.pos, cssScale, viewSize.w, viewSize.h);
+  viewRef.current = view;
+  viewSizeRef.current = viewSize;
+  const cssScaleRef = useRef(1);
+  cssScaleRef.current = cssScale || 1;
+  const pagePosRef = useRef({ x: 0, y: 0 });
+  pagePosRef.current = pagePos;
+
+  const setView = useCallback((next) => {
+    viewRef.current = next;
+    setViewState(next);
+  }, []);
+  const resetView = useCallback(() => setView({ zoom: 1, pos: { x: 0, y: 0 } }), [setView]);
+  // Zoom to `nextZoom` about a screen point (viewport coords); `base` = the view the gesture started from.
+  const zoomTo = useCallback((nextZoom, anchor, base = viewRef.current, pan = { x: 0, y: 0 }) => {
+    const vs = viewSizeRef.current;
+    const f = fitScale(vs.w, vs.h);
+    const moved = zoomAt(base, nextZoom, anchor, f, vs.w, vs.h);
+    setView({ zoom: moved.zoom, pos: clampPos({ x: moved.pos.x + pan.x, y: moved.pos.y + pan.y }, f * moved.zoom, vs.w, vs.h) });
+  }, [setView]);
+
+  // Canvas resolution follows the zoom, but only in coarse steps and after the gesture settles (no re-render per frame).
+  const dprRef = useRef(typeof window !== 'undefined' ? (window.devicePixelRatio || 1) : 1);
+  useEffect(() => {
+    if (!(cssScale > 0)) return undefined;
+    const target = backingScale(cssScale, dprRef.current);
+    const current = backScaleRef.current;
+    if (backScale === 1 && current === 1 && target !== 1) { setBackScale(target); return undefined; } // first measurement
+    if (Math.abs(target / current - 1) < 0.1) return undefined;
+    const timer = window.setTimeout(() => setBackScale(target), 160);
+    return () => window.clearTimeout(timer);
+  }, [cssScale, backScale]);
   // Page navigation reads and writes these synchronously: two page changes (or a stroke and a
   // page change) can land before React re-renders, and the render-time values would be stale —
   // that lost the last stroke of a page and let one fast swipe add a run of blank pages.
@@ -317,7 +369,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const addGridSticker = () => {
     const canvas = displayCanvasRef.current;
     if (!canvas || isSubmitted || pageStickers.length >= STICKER_MAX_PER_PAGE) return;
-    const sticker = newGridSticker(`g${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`, canvas.clientWidth, canvas.clientHeight);
+    const sticker = newGridSticker(`g${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`, PAGE_W, PAGE_H);
     setStickerPages((prev) => {
       const all = prev.slice();
       all[currentPage] = [...(all[currentPage] || []), sticker];
@@ -392,7 +444,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const ctx = getBgCtx();
     const canvas = bgCanvasRef.current;
     if (!ctx || !canvas || canvas.width === 0) return;
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = backScaleRef.current;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     strokesRef.current.forEach(s => replayStroke(ctx, s, dpr));
     bgRenderedRef.current = strokesRef.current;
@@ -404,7 +456,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const flushLive = useCallback(() => {
     const stroke = currentStrokeRef.current;
     if (!stroke) return;
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = backScaleRef.current;
     const pts = stroke.points;
 
     if (stroke.isEraser) {
@@ -422,32 +474,35 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   }, []);
 
   // ─── Canvas sizing ────────────────────────────────────────────────────────
-  const syncSize = useCallback(() => {
+  // The canvases always cover the whole A4 page; only their resolution follows the zoom (bounded).
+  useEffect(() => {
     const display = displayCanvasRef.current;
     const live = liveCanvasRef.current;
     const bg = bgCanvasRef.current;
     if (!display || !live || !bg) return;
-    const { width, height } = display.getBoundingClientRect();
-    if (width === 0 || height === 0) return;
-
-    const dpr = window.devicePixelRatio || 1;
-    const newW = Math.round(width * dpr);
-    const newH = Math.round(height * dpr);
-
-    let resized = false;
+    const newW = Math.round(PAGE_W * backScale);
+    const newH = Math.round(PAGE_H * backScale);
+    backScaleRef.current = backScale;
     [display, live, bg].forEach(c => {
-      if (c.width !== newW || c.height !== newH) { c.width = newW; c.height = newH; resized = true; }
+      if (c.width !== newW || c.height !== newH) { c.width = newW; c.height = newH; }
     });
-    if (resized) redrawBackground();
-  }, [redrawBackground]);
+    redrawBackground();
+  }, [backScale, redrawBackground]);
 
+  // Measure the viewport (the pane the page sits in).
   useEffect(() => {
-    syncSize();
-    const ro = new ResizeObserver(syncSize);
-    const display = displayCanvasRef.current;
-    if (display) ro.observe(display);
+    const el = viewportRef.current;
+    if (!el) return undefined;
+    const measure = () => {
+      const { width, height } = el.getBoundingClientRect();
+      if (width === 0 || height === 0) return;
+      setViewSize((prev) => (prev.w === width && prev.h === height ? prev : { w: width, h: height }));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
     return () => ro.disconnect();
-  }, [syncSize]);
+  }, []);
 
   useEffect(() => {
     const body = document.body;
@@ -608,8 +663,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       const lastSample = lastSampleRef.current;
       if (sampleTime + 0.5 < lastSample.t) continue;
 
-      const x = ev.clientX - rect.left;
-      const y = ev.clientY - rect.top;
+      const x = (ev.clientX - rect.left) * rect.sx;
+      const y = (ev.clientY - rect.top) * rect.sy;
       const last = pts[pts.length - 1];
       const dx = x - last[0], dy = y - last[1];
       const distSq = dx * dx + dy * dy;
@@ -634,7 +689,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const eraseStrokesTo = (from, to) => {
     const gesture = strokeEraseRef.current;
     if (!gesture) return;
-    const next = eraseStrokesAlong(gesture.current, from, to);
+    const next = eraseStrokesAlong(gesture.current, from, to, STROKE_ERASE_RADIUS / Math.max(0.3, cssScaleRef.current));
     if (next !== gesture.current) {
       gesture.current = next;
       strokesRef.current = next;
@@ -667,12 +722,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const finalizeStroke = (stroke, finalE) => {
     if (!stroke) return;
     cancelLiveRender();
-    const dpr = window.devicePixelRatio || 1;
+    const dpr = backScaleRef.current;
     // Capture the genuine final point so quick taps / short flicks never vanish.
     const rect = rectRef.current;
     if (finalE && rect && typeof finalE.clientX === 'number') {
-      const x = finalE.clientX - rect.left;
-      const y = finalE.clientY - rect.top;
+      const x = (finalE.clientX - rect.left) * rect.sx;
+      const y = (finalE.clientY - rect.top) * rect.sy;
       const pts = stroke.points;
       const last = pts[pts.length - 1];
       const dx = x - last[0], dy = y - last[1];
@@ -734,9 +789,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     }
 
     e.preventDefault();
-    const rect = canvas.getBoundingClientRect();
+    const rect = snapRect(canvas);
     rectRef.current = rect;
-    const pt = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    const pt = { x: (e.clientX - rect.left) * rect.sx, y: (e.clientY - rect.top) * rect.sy };
 
     try {
       canvas.setPointerCapture(e.pointerId);
@@ -803,11 +858,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const erase = strokeEraseRef.current;
     if (erase && e.pointerId === erase.pointerId) {
       if (e.cancelable !== false) e.preventDefault();
-      const rect = canvasWrapperRef.current?.getBoundingClientRect?.() || rectRef.current;
       const events = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length) ? e.getCoalescedEvents() : [e];
-      const origin = rectRef.current || rect;
+      const origin = rectRef.current;
+      if (!origin) return;
       for (const ev of events) {
-        const point = { x: ev.clientX - origin.left, y: ev.clientY - origin.top };
+        const point = { x: (ev.clientX - origin.left) * origin.sx, y: (ev.clientY - origin.top) * origin.sy };
         eraseStrokesTo(erase.last, point);
         erase.last = point;
       }
@@ -832,7 +887,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     // Predicted points — extend the tip ahead of the pointer to hide latency.
     if (typeof e.getPredictedEvents === 'function') {
       const pred = e.getPredictedEvents();
-      predictedPtsRef.current = pred.map(ev => [ev.clientX - rect.left, ev.clientY - rect.top]);
+      predictedPtsRef.current = pred.map(ev => [(ev.clientX - rect.left) * rect.sx, (ev.clientY - rect.top) * rect.sy]);
     } else {
       predictedPtsRef.current = [];
     }
@@ -990,12 +1045,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const wrapper = canvasWrapperRef.current;
     if (!wrapper) return undefined;
 
-    const SWIPE_PX = 50;
     const WHEEL_PX = 80;
-    let gesture = null; // { y0, fired }
+    let gesture = null; // see gestureStart
     let wheelAcc = 0;
     let wheelResetTimer = 0;
-    // pointerId → { y } for touch pointers that began on this board
+    // pointerId → { x, y } for touch pointers that began on this board
     const activeTouches = new Map();
     let boardActive = false; // at least one touch/pointer started inside wrapper
 
@@ -1033,20 +1087,40 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       lastNavAt = performance.now();
     };
 
-    const avgYFromTouches = (touchList) => {
-      let sum = 0;
-      for (let i = 0; i < touchList.length; i++) sum += touchList[i].clientY;
-      return sum / touchList.length;
+    // ── Two-finger gestures ─────────────────────────────────────────────
+    // Fit zoom: a vertical slide changes page, pinching zooms. Zoomed in: pinch zooms, sliding pans.
+    // `gesture` = { mode: null | 'nav' | 'zoom', x0, y0, d0, base, fired }. Points are client coords.
+    const centroidOf = (pts) => ({
+      x: pts.reduce((sum, p) => sum + p.x, 0) / pts.length,
+      y: pts.reduce((sum, p) => sum + p.y, 0) / pts.length,
+    });
+    const distanceOf = (pts) => Math.max(1, Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y));
+    const touchPoints = (touchList) => Array.from(touchList, (t) => ({ x: t.clientX, y: t.clientY }));
+    const viewportOrigin = () => {
+      const r = viewportRef.current?.getBoundingClientRect();
+      return r ? { x: r.left, y: r.top } : { x: 0, y: 0 };
     };
 
-    const tryNavigate = (dy) => {
-      if (!gesture || gesture.fired) return;
-      if (dy <= -SWIPE_PX) {
-        gesture.fired = true;
-        goNext();
-      } else if (dy >= SWIPE_PX) {
-        gesture.fired = true;
-        goPrev();
+    const gestureStart = (pts) => {
+      const c = centroidOf(pts);
+      gesture = { mode: null, x0: c.x, y0: c.y, d0: distanceOf(pts), base: { zoom: viewRef.current.zoom, pos: pagePosRef.current }, fired: false };
+      pageNavRef.current.discardStroke?.();
+    };
+
+    const gestureMove = (pts) => {
+      if (!gesture || pts.length < 2) return;
+      const c = centroidOf(pts);
+      const ratio = distanceOf(pts) / gesture.d0;
+      const dy = c.y - gesture.y0;
+      if (!gesture.mode) gesture.mode = classifyTwoFinger({ zoom: gesture.base.zoom, ratio, dy });
+      if (gesture.mode === 'nav') {
+        if (!gesture.fired) {
+          gesture.fired = true;
+          if (dy < 0) goNext(); else goPrev();
+        }
+      } else if (gesture.mode === 'zoom') {
+        const o = viewportOrigin();
+        zoomTo(gesture.base.zoom * ratio, { x: gesture.x0 - o.x, y: gesture.y0 - o.y }, gesture.base, { x: c.x - gesture.x0, y: c.y - gesture.y0 });
       }
     };
 
@@ -1058,9 +1132,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (!boardActive) return;
 
       if (e.touches.length >= 2) {
-        const y = avgYFromTouches(e.touches);
-        gesture = { y0: y, fired: false };
-        pageNavRef.current.discardStroke?.();
+        gestureStart(touchPoints(e.touches));
         // Stop parent scroll containers (Secret Note left column, etc.)
         if (e.cancelable !== false) e.preventDefault();
       }
@@ -1069,9 +1141,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const onTouchMove = (e) => {
       if (!boardActive || !gesture || e.touches.length < 2) return;
       if (e.cancelable !== false) e.preventDefault();
-      if (gesture.fired) return;
-      const y = avgYFromTouches(e.touches);
-      tryNavigate(y - gesture.y0);
+      gestureMove(touchPoints(e.touches));
     };
 
     const onTouchEnd = (e) => {
@@ -1087,24 +1157,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (e.pointerType !== 'touch') return;
       if (!isInsideBoard(e.target)) return;
       boardActive = true;
-      activeTouches.set(e.pointerId, { y: e.clientY });
-      if (activeTouches.size >= 2) {
-        const ys = [...activeTouches.values()].map((p) => p.y);
-        const y = ys.reduce((a, b) => a + b, 0) / ys.length;
-        gesture = { y0: y, fired: false };
-        pageNavRef.current.discardStroke?.();
-      }
+      activeTouches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (activeTouches.size >= 2) gestureStart([...activeTouches.values()]);
     };
 
     const onPointerMove = (e) => {
       if (e.pointerType !== 'touch') return;
       if (!activeTouches.has(e.pointerId)) return;
-      activeTouches.set(e.pointerId, { y: e.clientY });
-      if (activeTouches.size < 2 || !gesture || gesture.fired) return;
+      activeTouches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (activeTouches.size < 2 || !gesture) return;
       if (e.cancelable !== false) e.preventDefault();
-      const ys = [...activeTouches.values()].map((p) => p.y);
-      const y = ys.reduce((a, b) => a + b, 0) / ys.length;
-      tryNavigate(y - gesture.y0);
+      gestureMove([...activeTouches.values()]);
     };
 
     const onPointerUp = (e) => {
@@ -1116,12 +1179,25 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (activeTouches.size === 0) boardActive = false;
     };
 
-    // Trackpads emit wheel for two-finger scroll.
+    // Trackpad: pinch arrives as ctrl+wheel (zoom); a plain scroll pans when zoomed, else changes page.
     const onWheel = (e) => {
       if (e.target?.closest?.('button, select')) return;
       if (!isInsideBoard(e.target)) return;
       if (pageNavRef.current.isSubmitted) return;
       if (e.cancelable !== false) e.preventDefault();
+      if (e.ctrlKey) {
+        const o = viewportOrigin();
+        zoomTo(viewRef.current.zoom * Math.exp(-e.deltaY * 0.01), { x: e.clientX - o.x, y: e.clientY - o.y });
+        return;
+      }
+      if (viewRef.current.zoom > SNAP_ZOOM) {
+        const vs = viewSizeRef.current;
+        const f = fitScale(vs.w, vs.h);
+        const cur = viewRef.current;
+        const pos = pagePosRef.current;
+        setView({ zoom: cur.zoom, pos: clampPos({ x: pos.x - e.deltaX, y: pos.y - e.deltaY }, f * cur.zoom, vs.w, vs.h) });
+        return;
+      }
       wheelAcc += e.deltaY;
       if (wheelAcc >= WHEEL_PX) {
         wheelAcc = 0;
@@ -1161,7 +1237,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       window.removeEventListener('pointercancel', onPointerUp, true);
       window.clearTimeout(wheelResetTimer);
     };
-  }, []);
+  }, [zoomTo, setView]);
 
   useImperativeHandle(ref, () => {
     const drawBackground = (ctx, dpr) => {
@@ -1191,11 +1267,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const getCompositeDataURL = (pageStrokes, stickers = []) => {
       const displayCanvas = displayCanvasRef.current;
       if (!displayCanvas) return null;
+      // Always the whole A4 page at a fixed size, whatever the pane looked like.
       const tempCanvas = document.createElement('canvas');
-      tempCanvas.width = displayCanvas.width;
-      tempCanvas.height = displayCanvas.height;
+      tempCanvas.width = Math.round(PAGE_W * EXPORT_SCALE);
+      tempCanvas.height = Math.round(PAGE_H * EXPORT_SCALE);
       const ctx = tempCanvas.getContext('2d');
-      const dpr = window.devicePixelRatio || 1;
+      const dpr = EXPORT_SCALE;
       ctx.fillStyle = '#fff';
       ctx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
       drawBackground(ctx, dpr);
@@ -1272,8 +1349,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         forceRedrawRef.current = true;
         setStrokes(nextPages[idx]);
         setUndoStack([]);
+        resetView();
       },
       clear: () => {
+        resetView();
         setStrokes([]);
         setPages([[]]); setCurrentPage(0);
         setStickerPages([[]]);
@@ -1289,16 +1368,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         });
       },
     };
-  }, [currentPage, isGraph, pageTypes, initialIsGraph, stickerPages]);
+  }, [currentPage, isGraph, pageTypes, initialIsGraph, stickerPages, resetView]);
 
+  // Paper (ruled lines / graph grid) drawn with CSS on the page element, scaled with the page.
+  const u = cssScale || 1;
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
-    backgroundSize: '20px 20px',
-    backgroundPosition: 'calc(50% - 10px) calc(50% + 10px)',
+    backgroundSize: `${20 * u}px ${20 * u}px`,
+    backgroundPosition: `calc(50% - ${10 * u}px) calc(50% + ${10 * u}px)`,
   } : {
-    backgroundImage: `linear-gradient(to bottom, transparent 31px, #dbeafe 32px)`,
-    backgroundSize: '100% 32px',
-    backgroundPosition: '0 8px',
+    backgroundImage: 'linear-gradient(to bottom, transparent calc(100% - 1px), #dbeafe calc(100% - 1px))',
+    backgroundSize: `100% ${32 * u}px`,
+    backgroundPosition: `0 ${8 * u}px`,
     backgroundColor: '#fff',
   };
 
@@ -1404,36 +1485,50 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         </div>
       )}
 
-      <div style={{ flex: 1, position: 'relative', overflow: 'hidden', touchAction: 'none', ...bgStyle }}>
-        {isGraph && (
-          <>
-            <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '2px', background: '#94a3b8', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
-            <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: '#94a3b8', transform: 'translateX(-50%)', pointerEvents: 'none' }} />
-          </>
-        )}
-        <StickerLayer part="base" stickers={pageStickers} />
-        <canvas
-          ref={bgCanvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
-        />
-        <canvas
-          ref={liveCanvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
-        />
-        <canvas
-          ref={displayCanvasRef}
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
-        />
-        {!isSubmitted && (
-          <StickerLayer
-            part="editor"
-            stickers={pageStickers}
-            editingId={editingStickerId}
-            onUpdate={updateSticker}
-            onEdit={setEditingStickerId}
-            onDone={() => setEditingStickerId(null)}
-            onDelete={deleteSticker}
+      {/* The pane is a viewport onto a fixed A4 page: the page keeps its shape whatever the pane size. */}
+      <div ref={viewportRef} style={{ flex: 1, position: 'relative', overflow: 'hidden', touchAction: 'none', background: '#e2e8f0' }}>
+        <div style={{ position: 'absolute', left: pagePos.x, top: pagePos.y, width: PAGE_W * u, height: PAGE_H * u, visibility: cssScale > 0 ? 'visible' : 'hidden', boxShadow: '0 1px 6px rgba(15,23,42,0.18)', overflow: 'hidden', ...bgStyle }}>
+          {isGraph && (
+            <>
+              <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '2px', background: '#94a3b8', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+              <div style={{ position: 'absolute', left: '50%', top: 0, bottom: 0, width: '2px', background: '#94a3b8', transform: 'translateX(-50%)', pointerEvents: 'none' }} />
+            </>
+          )}
+          <StickerLayer part="base" stickers={pageStickers} />
+          <canvas
+            ref={bgCanvasRef}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
           />
+          <canvas
+            ref={liveCanvasRef}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none' }}
+          />
+          <canvas
+            ref={displayCanvasRef}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
+          />
+          {!isSubmitted && (
+            <StickerLayer
+              part="editor"
+              stickers={pageStickers}
+              editingId={editingStickerId}
+              onUpdate={updateSticker}
+              onEdit={setEditingStickerId}
+              onDone={() => setEditingStickerId(null)}
+              onDelete={deleteSticker}
+            />
+          )}
+        </div>
+        {view.zoom > SNAP_ZOOM && (
+          <button
+            type="button"
+            onClick={resetView}
+            aria-label="Show the whole page"
+            title="Show the whole page"
+            style={{ position: 'absolute', left: 10, bottom: 10, zIndex: 12, height: 32, padding: '0 12px', borderRadius: 999, border: 0, background: 'rgba(30,27,75,0.86)', color: '#fff', fontWeight: 800, fontSize: '0.76rem', cursor: 'pointer', boxShadow: '0 2px 8px rgba(15,23,42,0.3)' }}
+          >
+            {Math.round(view.zoom * 100)}% · Fit page
+          </button>
         )}
         {isSubmitted && (
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(255,255,255,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
