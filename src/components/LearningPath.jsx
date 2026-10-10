@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { scanTopicProgress } from '../utils/topicProgressScan';
 import { createPortal } from 'react-dom';
-import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X } from 'lucide-react';
+import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -53,6 +53,8 @@ const isTabletDevice = () => {
   const long = Math.max(window.screen?.width || 0, window.screen?.height || 0);
   return touch && short >= 600 && long <= 1600;
 };
+
+const WORKSHEET_NAV_BTN = { border: '1px solid #e2e8f0', background: '#f8fafc', borderRadius: 10, width: 34, height: 34, display: 'grid', placeItems: 'center', color: '#6d28d9', flexShrink: 0 };
 
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
@@ -345,6 +347,8 @@ const LearningPath = ({ profile }) => {
       openUrl: toDriveOpenUrl(raw),
       title: `${topic.code ? `${topic.code} · ` : ''}${topic.title || ''}`,
       noteKey: `${trackKey}:${topic.id}:${raw}`,
+      trackKey,
+      topicId: topic.id,
     });
     if (user?.uid) {
       setLastStudy(saveLastStudy(user.uid, {
@@ -357,6 +361,21 @@ const LearningPath = ({ profile }) => {
         pdfUrl: raw,
       }));
     }
+  };
+
+  // Previous / next worksheet without closing: every topic with a PDF in the open chapters of this track, in path order.
+  const worksheetSequence = useMemo(() => nodes
+    .filter((n) => n.state !== 'locked' && Array.isArray(n.topics))
+    .flatMap((n) => n.topics.filter((t) => toDrivePreviewUrl(t.homeworkPdfUrl)).map((t) => ({ chapter: n, topic: t }))),
+  [nodes]);
+  const worksheetIndex = pdfPreview && pdfPreview.trackKey === activeTrack.key
+    ? worksheetSequence.findIndex((e) => e.topic.id === pdfPreview.topicId)
+    : -1;
+  const stepWorksheet = (delta) => {
+    const next = worksheetSequence[worksheetIndex + delta];
+    if (worksheetIndex < 0 || !next) return;
+    saveCurriculumNoteNow(); // this topic's notes, before the pad switches to the next topic's
+    openWorksheet(activeTrack.key, next.chapter, next.topic);
   };
 
   // Open the remembered chapter once its chapters are on screen (a track switch loads them first).
@@ -761,7 +780,17 @@ const LearningPath = ({ profile }) => {
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
               <FileText size={18} color="#7c3aed" />
+              {worksheetIndex >= 0 && worksheetSequence.length > 1 && (
+                <button type="button" aria-label="Previous topic" title="Previous topic" disabled={worksheetIndex === 0} onClick={() => stepWorksheet(-1)} style={{ ...WORKSHEET_NAV_BTN, opacity: worksheetIndex === 0 ? 0.35 : 1, cursor: worksheetIndex === 0 ? 'default' : 'pointer' }}>
+                  <ChevronLeft size={18} />
+                </button>
+              )}
               <div style={{ flex: 1, minWidth: 0, fontWeight: 800, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pdfPreview.title || 'Worksheet'}</div>
+              {worksheetIndex >= 0 && worksheetSequence.length > 1 && (
+                <button type="button" aria-label="Next topic" title="Next topic" disabled={worksheetIndex === worksheetSequence.length - 1} onClick={() => stepWorksheet(1)} style={{ ...WORKSHEET_NAV_BTN, opacity: worksheetIndex === worksheetSequence.length - 1 ? 0.35 : 1, cursor: worksheetIndex === worksheetSequence.length - 1 ? 'default' : 'pointer' }}>
+                  <ChevronRight size={18} />
+                </button>
+              )}
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
                 <ExternalLink size={14} /> Open in Google Drive
               </a>
