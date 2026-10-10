@@ -1691,9 +1691,6 @@
               "work": "\\(\\boxed{235^\\circ}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"75\" y=\"278\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">A</text><text x=\"75\" y=\"154\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">C</text><text x=\"75\" y=\"113\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">D</text><text x=\"175\" y=\"220\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"start\">E</text><text x=\"82\" y=\"215\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\">175 km</text><text x=\"82\" y=\"134\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\">60 km</text><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><path d=\"M90 230 A40 40 0 0 1 122.8 247.1\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><path d=\"M90 120 A30 30 0 0 1 111.6 170.8\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><text x=\"112\" y=\"237\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">055°</text><text x=\"130\" y=\"135\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">134°</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -1737,9 +1734,6 @@
               "work": "\\(\\boxed{5^\\circ}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"235\" x2=\"445\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"448\" y=\"254\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"64\" y=\"49\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><path d=\"M75 235 C125 86 166 63 215 63 C267 63 310 92 355 235\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"4\"/><line x1=\"75\" y1=\"235\" x2=\"410\" y2=\"111\" stroke=\"#94a3b8\" stroke-width=\"2\"  stroke-linecap=\"round\"/><circle cx=\"313\" cy=\"147\" r=\"5\" fill=\"#dc2626\"/><text x=\"329\" y=\"145\" fill=\"#b91c1c\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">B (170,15.9)</text><text x=\"75\" y=\"260\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">A</text><path d=\"M105 235 A30 30 0 0 0 104 224\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"116\" y=\"226\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">θ</text><line x1=\"215\" y1=\"63\" x2=\"215\" y2=\"183\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"5 4\" stroke-linecap=\"round\"/><line x1=\"205\" y1=\"63\" x2=\"225\" y2=\"63\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"231\" y=\"120\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"start\" font-weight=\"bold\">h</text><line x1=\"313\" y1=\"147\" x2=\"313\" y2=\"235\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"4 4\" stroke-linecap=\"round\"/></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -4135,9 +4129,6 @@
               }
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -4181,9 +4172,6 @@
               "work": "\\(\\tan75^\\circ=\\frac{2+\\sqrt3}{1}=\\boxed{2+\\sqrt3}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"100\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"250\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"256\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"100\" y1=\"160\" x2=\"436\" y2=\"250\" stroke=\"#334155\" stroke-width=\"3\"  stroke-linecap=\"round\"/><path d=\"M100 230h20v20\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/><path d=\"M226 250 A30 30 0 0 1 230 235\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"100\" y=\"153\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">A</text><text x=\"91\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">B</text><text x=\"256\" y=\"272\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">C</text><text x=\"445\" y=\"270\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">D</text><text x=\"84\" y=\"207\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">1</text><text x=\"346\" y=\"276\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"normal\">2</text><text x=\"224\" y=\"235\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">30°</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -8854,9 +8842,6 @@
               "work": "\\(\\boxed{36^\\circ}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M245.5 100.0L244.8 102.7L243.8 105.4L242.6 107.9L241.0 110.3L239.2 112.5L237.2 114.5L235.0 116.2L232.6 117.8L230.0 119.0L227.4 119.9L224.6 120.6L221.8 120.9L218.9 121.0L216.1 120.7L213.3 120.1L210.6 119.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"240\" y=\"140\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"288\" y=\"242\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -8904,9 +8889,6 @@
               "work": "\\(CE=\\frac{175\\sin55^\\circ}{\\sin79^\\circ}\\approx146\\text{ km}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"90\" y1=\"270\" x2=\"90\" y2=\"90\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"270\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"90\" y1=\"150\" x2=\"165\" y2=\"220\" stroke=\"#6366f1\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"90\" cy=\"270\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"150\" r=\"5\" fill=\"#334155\"/><circle cx=\"90\" cy=\"108\" r=\"5\" fill=\"#334155\"/><circle cx=\"165\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"75\" y=\"278\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">A</text><text x=\"75\" y=\"154\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">C</text><text x=\"75\" y=\"113\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"end\">D</text><text x=\"175\" y=\"220\" fill=\"#1e293b\" font-size=\"15\" text-anchor=\"start\">E</text><text x=\"82\" y=\"215\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\">175 km</text><text x=\"82\" y=\"134\" fill=\"#334155\" font-size=\"12\" text-anchor=\"end\">60 km</text><text x=\"90\" y=\"82\" fill=\"#334155\" font-size=\"15\" text-anchor=\"middle\" font-weight=\"bold\">N</text><path d=\"M90 230 A40 40 0 0 1 122.8 247.1\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><path d=\"M90 120 A30 30 0 0 1 111.6 170.8\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><text x=\"112\" y=\"237\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">055°</text><text x=\"130\" y=\"135\" fill=\"#b45309\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"bold\">134°</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
@@ -15728,9 +15710,6 @@
               "work": "\\(A\\approx5.18\\text{ cm}^2\\Rightarrow\\boxed{5\\text{ cm}^2}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"144\" y1=\"292\" x2=\"220\" y2=\"95\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"220\" y1=\"95\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><line x1=\"144\" y1=\"292\" x2=\"400\" y2=\"130\" stroke=\"#334155\" stroke-width=\"4\"  stroke-linecap=\"round\"/><path d=\"M245.5 100.0L244.8 102.7L243.8 105.4L242.6 107.9L241.0 110.3L239.2 112.5L237.2 114.5L235.0 116.2L232.6 117.8L230.0 119.0L227.4 119.9L224.6 120.6L221.8 120.9L218.9 121.0L216.1 120.7L213.3 120.1L210.6 119.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"240\" y=\"140\" fill=\"#b45309\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">100°</text><path d=\"M154 264 A30 30 0 0 1 170 276\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"3\"/><text x=\"174\" y=\"261\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">θ</text><text x=\"314\" y=\"102\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">3 cm</text><text x=\"288\" y=\"242\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">5 cm</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
