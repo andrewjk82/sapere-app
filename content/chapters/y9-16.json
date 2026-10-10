@@ -2562,7 +2562,7 @@
           "answer": 1,
           "hint": "Use half the sum of the parallel sides multiplied by the perpendicular height.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"170,80 405,105 350,210 120,185\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"120\" y1=\"185\" x2=\"170\" y2=\"80\" stroke=\"#10b981\" stroke-width=\"4\"/><path d=\"M156 109 L170 116 L177 102\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"270\" y=\"75\" font-size=\"18\" font-family=\"Arial\">93 cm</text><text x=\"205\" y=\"220\" font-size=\"18\" font-family=\"Arial\">78 cm</text><text x=\"112\" y=\"135\" font-size=\"18\" font-family=\"Arial\">54 cm</text></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><polygon points=\"180,70 430,70 410,200 200,200\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"250\" y1=\"70\" x2=\"250\" y2=\"200\" stroke=\"#10b981\" stroke-width=\"3\" stroke-dasharray=\"6,4\"/><polyline points=\"250,185 265,185 265,200\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"280\" y=\"55\" font-size=\"18\" font-family=\"Arial\">93 cm</text><text x=\"280\" y=\"225\" font-size=\"18\" font-family=\"Arial\">78 cm</text><text x=\"195\" y=\"140\" font-size=\"18\" font-family=\"Arial\">54 cm</text></svg>"
           },
           "keyPoints": [
             {
