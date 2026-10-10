@@ -6,7 +6,7 @@
 
 const KEY = 'sapere:scribbleErase:v1';
 export const isScribbleEraseOn = (storage = globalThis.localStorage) => {
-  try { return storage.getItem(KEY) === 'on'; } catch { return false; }
+  try { return storage.getItem(KEY) !== 'off'; } catch { return true; }   // on unless the student turned it off
 };
 export const setScribbleEraseOn = (on, storage = globalThis.localStorage) => {
   try { storage.setItem(KEY, on ? 'on' : 'off'); } catch { /* private mode: not remembered */ }

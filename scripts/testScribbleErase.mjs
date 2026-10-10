@@ -64,17 +64,17 @@ test('a tall narrow scribble through a column works too', () => {
   assert.deepEqual(scribbleTargets(vertical, [digits]), [0]);
 });
 
-test('setting: off unless switched on; safe without storage', () => {
+test('setting: on unless switched off; safe without storage', () => {
   const mem = new Map();
   const store = { getItem: (k) => (mem.has(k) ? mem.get(k) : null), setItem: (k, v) => mem.set(k, v) };
-  assert.equal(isScribbleEraseOn(store), false);
-  setScribbleEraseOn(true, store);
   assert.equal(isScribbleEraseOn(store), true);
   setScribbleEraseOn(false, store);
   assert.equal(isScribbleEraseOn(store), false);
+  setScribbleEraseOn(true, store);
+  assert.equal(isScribbleEraseOn(store), true);
   const broken = { getItem: () => { throw new Error('x'); }, setItem: () => { throw new Error('x'); } };
-  assert.equal(isScribbleEraseOn(broken), false);
-  assert.doesNotThrow(() => setScribbleEraseOn(true, broken));
+  assert.equal(isScribbleEraseOn(broken), true);
+  assert.doesNotThrow(() => setScribbleEraseOn(false, broken));
 });
 
 console.log(`\nscribble erase: ${passed} passed`);

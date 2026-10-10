@@ -500,7 +500,7 @@ const Settings = () => {
               />
               <span>
                 Scribble to erase
-                <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>Scratch back and forth over your writing with the pen to erase it. Undo brings it back. Saved on this device.</span>
+                <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>Scratch back and forth over your writing with the pen to erase it. Undo brings it back. On by default; saved on this device.</span>
               </span>
             </label>
           </section>
