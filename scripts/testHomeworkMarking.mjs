@@ -2,7 +2,7 @@
  * Homework marking helpers. Run via npm run test:homework.
  */
 import assert from 'node:assert';
-import { nextMark, markKey, scoreMarks, compactMarks, groupMarksByTopic, buildCheckedNotification } from '../src/utils/homeworkMarking.js';
+import { nextMark, markKey, scoreMarks, compactMarks, groupMarksByTopic, buildCheckedNotification, groupPartLabels, commonMark } from '../src/utils/homeworkMarking.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -61,6 +61,27 @@ test('checked notification: score, topics and a trimmed comment', () => {
   assert.equal(buildCheckedNotification({}).subject, 'Homework checked');
   assert.equal(buildCheckedNotification({ grade: { score: 0, total: 0 } }).text, 'Your teacher checked your homework.');
   assert.ok(buildCheckedNotification({ grade: { score: 1, total: 1, comment: 'x'.repeat(300) } }).text.endsWith('…”'));
+});
+
+test('part labels group under their question number', () => {
+  assert.deepEqual(groupPartLabels(['1a', '1b', '1c', '2', '3a', '3b', '4a(i)', '4a(ii)', '4b', '5']), [
+    { number: '1', labels: ['1a', '1b', '1c'] },
+    { number: '2', labels: ['2'] },
+    { number: '3', labels: ['3a', '3b'] },
+    { number: '4', labels: ['4a(i)', '4a(ii)', '4b'] },
+    { number: '5', labels: ['5'] },
+  ]);
+  // review blocks: "chapter.question" + part
+  assert.deepEqual(groupPartLabels(['3.12a', '3.12b', '3.13']).map((g) => g.number), ['3.12', '3.13']);
+  assert.deepEqual(groupPartLabels(['10a', '1a']).map((g) => g.number), ['10', '1']);
+  assert.deepEqual(groupPartLabels([]), []);
+});
+
+test('commonMark: shared mark of every part, else undefined', () => {
+  assert.equal(commonMark({ a: 'c', b: 'c' }, ['a', 'b']), 'c');
+  assert.equal(commonMark({ a: 'c', b: 'x' }, ['a', 'b']), undefined);
+  assert.equal(commonMark({ a: 'c' }, ['a', 'b']), undefined);
+  assert.equal(commonMark({}, []), undefined);
 });
 
 console.log(`\nmarking: ${passed} passed`);

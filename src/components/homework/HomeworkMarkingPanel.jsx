@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { CheckCircle2, Loader2 } from 'lucide-react';
 import { fetchAnswerKeys } from '../../services/homeworkService';
 import { isSafeImageDataUrl } from '../../utils/homework';
-import { nextMark, markKey, scoreMarks, compactMarks } from '../../utils/homeworkMarking';
+import { nextMark, markKey, scoreMarks, compactMarks, groupPartLabels, commonMark } from '../../utils/homeworkMarking';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
 const MARK_STYLE = {
@@ -44,6 +44,12 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave, active
   const answer = entry && !entry.error ? entry : null;
   const { score, total } = scoreMarks(marks);
   const toggle = (k) => setMarks((prev) => ({ ...prev, [k]: nextMark(prev[k]) }));
+  // The question-number button marks all its parts at once: the next mark after the one they share
+  // (mixed or unmarked parts → ✓ for all). Each part can still be changed on its own afterwards.
+  const toggleAll = (keys) => setMarks((prev) => {
+    const next = nextMark(commonMark(prev, keys));
+    return { ...prev, ...Object.fromEntries(keys.map((k) => [k, next])) };
+  });
 
   const tabs = showTopicTabs && topics.length > 1 && (
     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', padding: '8px 10px', borderBottom: '1px solid #e2e8f0', background: '#fff' }}>
@@ -89,7 +95,22 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave, active
               {tabLabel(topic)} · {s.title}
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-              {s.labels.map((label) => {
+              {groupPartLabels(s.labels).flatMap(({ number, labels }) => {
+                const keys = labels.map((label) => markKey(topic.id, s.key, label));
+                const all = labels.length > 1 ? MARK_STYLE[commonMark(marks, keys)] : null;
+                const groupButton = labels.length > 1 && (
+                  <button
+                    key={`all-${number}`}
+                    type="button"
+                    onClick={() => toggleAll(keys)}
+                    title={`Mark all of ${number} at once: ✓ → ✗ → ½ → clear`}
+                    aria-label={`Mark all parts of question ${number}`}
+                    style={{ minWidth: 42, height: 36, borderRadius: 10, border: all ? 0 : '1.5px solid #a5b4fc', background: all ? all.bg : '#eef2ff', color: all ? all.fg : '#4338ca', fontWeight: 900, fontSize: '0.82rem', cursor: 'pointer' }}
+                  >
+                    {number}{all ? ` ${all.text}` : ''}
+                  </button>
+                );
+                return [groupButton, ...labels.map((label) => {
                 const k = markKey(topic.id, s.key, label);
                 const st = MARK_STYLE[marks[k]];
                 return (
@@ -103,6 +124,7 @@ const HomeworkMarkingPanel = ({ topics, layout = 'stack', saving, onSave, active
                     {label}{st ? ` ${st.text}` : ''}
                   </button>
                 );
+                })].filter(Boolean);
               })}
             </div>
           </div>

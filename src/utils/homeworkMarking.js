@@ -23,6 +23,26 @@ export const compactMarks = (marks = {}) => Object.fromEntries(
   Object.entries(marks).filter(([, m]) => m === 'c' || m === 'x' || m === 'h'),
 );
 
+// Part labels under their question number, in the given order: "1a","1b","2" → [{number:'1',labels:['1a','1b']},{number:'2',labels:['2']}].
+// Review-block labels keep their chapter ("3.12a" → "3.12").
+export const groupPartLabels = (labels = []) => {
+  const groups = [];
+  const byNumber = new Map();
+  for (const label of labels) {
+    const number = (String(label).match(/^\d+(?:\.\d+)?/) || [String(label)])[0];
+    if (!byNumber.has(number)) { const g = { number, labels: [] }; byNumber.set(number, g); groups.push(g); }
+    byNumber.get(number).labels.push(label);
+  }
+  return groups;
+};
+
+// The mark every one of `keys` has, or undefined when they differ or any is unmarked.
+export const commonMark = (marks = {}, keys = []) => {
+  if (keys.length === 0) return undefined;
+  const first = marks[keys[0]];
+  return keys.every((k) => marks[k] === first) ? first : undefined;
+};
+
 const labelOrder = (a, b) => String(a).localeCompare(String(b), undefined, { numeric: true });
 
 // Marks grouped for display: { [topicId]: [{ section, items: [{ label, mark }] }] }, labels in
