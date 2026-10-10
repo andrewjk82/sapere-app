@@ -4090,10 +4090,10 @@
         },
         {
           "id": "cgs-y10-2024-s2-q23a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "In the diagram, AB = 1, angle ACB = 30°, CD = 2, and AB is perpendicular to BD. Points B, C and D lie on a straight line. Use trigonometry to show that \\(\\angle BAD=75^\\circ\\).",
-          "answer": "Sample answer: In right triangle ABC, \\(\\tan30^\\circ=AB/BC\\), so \\(BC=1/\\tan30^\\circ=\\sqrt3\\). Hence \\(BD=BC+CD=\\sqrt3+2\\). In right triangle ABD, \\(\\tan\\angle BAD=BD/AB=2+\\sqrt3\\), so \\(\\angle BAD=\\tan^{-1}(2+\\sqrt3)=75^\\circ\\).",
+          "stem": "In the diagram, AB = 1, angle ACB = 30°, CD = 2, and AB is perpendicular to BD. Points B, C and D lie on a straight line. Find \\(\\angle BAD\\).",
+          "answer": 2,
           "manual": true,
           "hint": "Start with the small right triangle ABC to find BC, then add CD before using triangle ABD.",
           "keyPoints": [
@@ -4134,7 +4134,13 @@
           "meta": {
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
-          }
+          },
+          "options": [
+            "\\(45^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(75^\\circ\\)",
+            "\\(90^\\circ\\)"
+          ]
         },
         {
           "id": "cgs-y10-2024-s2-q23b",
