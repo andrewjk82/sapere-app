@@ -54,7 +54,12 @@ const isTabletDevice = () => {
   return touch && short >= 600 && long <= 1600;
 };
 
-const WORKSHEET_NAV_BTN = { border: '1px solid #e2e8f0', background: '#f8fafc', borderRadius: 10, width: 34, height: 34, display: 'grid', placeItems: 'center', color: '#6d28d9', flexShrink: 0 };
+const worksheetNavBtn = (enabled) => ({
+  display: 'inline-flex', alignItems: 'center', gap: 4, height: 36, padding: '0 12px', borderRadius: 999, border: 0, flexShrink: 0,
+  background: enabled ? '#7c3aed' : '#e2e8f0', color: enabled ? '#fff' : '#94a3b8',
+  fontWeight: 800, fontSize: '0.82rem', cursor: enabled ? 'pointer' : 'default',
+  boxShadow: enabled ? '0 2px 8px rgba(124,58,237,0.35)' : 'none',
+});
 
 const LearningPath = ({ profile }) => {
   const { user } = useAuth();
@@ -781,14 +786,14 @@ const LearningPath = ({ profile }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 16px', borderBottom: '1px solid #e2e8f0' }}>
               <FileText size={18} color="#7c3aed" />
               {worksheetIndex >= 0 && worksheetSequence.length > 1 && (
-                <button type="button" aria-label="Previous topic" title="Previous topic" disabled={worksheetIndex === 0} onClick={() => stepWorksheet(-1)} style={{ ...WORKSHEET_NAV_BTN, opacity: worksheetIndex === 0 ? 0.35 : 1, cursor: worksheetIndex === 0 ? 'default' : 'pointer' }}>
-                  <ChevronLeft size={18} />
+                <button type="button" aria-label="Previous topic" title="Previous topic" disabled={worksheetIndex === 0} onClick={() => stepWorksheet(-1)} style={worksheetNavBtn(worksheetIndex > 0)}>
+                  <ChevronLeft size={18} strokeWidth={3} /> Prev
                 </button>
               )}
               <div style={{ flex: 1, minWidth: 0, fontWeight: 800, color: '#1e1b4b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{pdfPreview.title || 'Worksheet'}</div>
               {worksheetIndex >= 0 && worksheetSequence.length > 1 && (
-                <button type="button" aria-label="Next topic" title="Next topic" disabled={worksheetIndex === worksheetSequence.length - 1} onClick={() => stepWorksheet(1)} style={{ ...WORKSHEET_NAV_BTN, opacity: worksheetIndex === worksheetSequence.length - 1 ? 0.35 : 1, cursor: worksheetIndex === worksheetSequence.length - 1 ? 'default' : 'pointer' }}>
-                  <ChevronRight size={18} />
+                <button type="button" aria-label="Next topic" title="Next topic" disabled={worksheetIndex === worksheetSequence.length - 1} onClick={() => stepWorksheet(1)} style={worksheetNavBtn(worksheetIndex < worksheetSequence.length - 1)}>
+                  Next <ChevronRight size={18} strokeWidth={3} />
                 </button>
               )}
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
