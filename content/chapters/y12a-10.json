@@ -564,11 +564,10 @@
             "sourceYear": 2020
           },
           "id": "amity2020-ma-q19a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "A density is \\(f(x)=\\frac{k}{2x-1}\\) for \\(1\\le x\\le4\\) and zero otherwise. Show that \\(k=\\frac{2}{\\ln7}\\).",
-          "answer": "Sample answer: A density integrates to 1, so \\(\\int_1^4\\frac{k}{2x-1}dx=1\\). This gives \\(\\frac{k}{2}[\\ln(2x-1)]_1^4=\\frac{k}{2}\\ln7=1\\), hence \\(k=\\frac{2}{\\ln7}\\).",
-          "manual": true,
+          "stem": "A density is \\(f(x)=\\frac{k}{2x-1}\\) for \\(1\\le x\\le4\\) and zero otherwise. Find the value of \\(k\\).",
+          "answer": 0,
           "hint": "A probability density has total area 1 over its support.",
           "keyPoints": [
             {
@@ -589,6 +588,12 @@
               "explain": "Solve for k.",
               "work": "\\(\\frac{k}{2}\\ln7=1\\Rightarrow\\boxed{k=\\frac{2}{\\ln7}}\\)"
             }
+          ],
+          "options": [
+            "\\(\\frac{2}{\\ln7}\\)",
+            "\\(\\frac{1}{\\ln7}\\)",
+            "\\(\\frac{\\ln7}{2}\\)",
+            "\\(\\frac{1}{2\\ln7}\\)"
           ]
         },
         {
