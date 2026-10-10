@@ -2460,7 +2460,7 @@
           "answer": 0,
           "hint": "Add the two radii to the arc length, which is 30/360 of the full circumference.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M120 145 L275 92 A164 164 0 0 1 275 198 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M165 130 A48 48 0 0 1 165 160\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"142\" y=\"146\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">30°</text><text x=\"180\" y=\"106\" font-size=\"18\" font-family=\"Arial\">2 cm</text><text x=\"190\" y=\"197\" font-size=\"18\" font-family=\"Arial\">2 cm</text><circle cx=\"120\" cy=\"145\" r=\"4\" fill=\"#334155\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"640\" height=\"280\" viewBox=\"0 0 640 280\" style=\"max-width:100%;height:auto\"><rect width=\"100%\" height=\"100%\" fill=\"white\"/><path d=\"M120 145 L275 92 A164 164 0 0 1 275 198 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M165 130 A48 48 0 0 1 165 160\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"172\" y=\"146\" font-size=\"18\" font-family=\"Arial\" fill=\"#b45309\">30°</text><text x=\"180\" y=\"106\" font-size=\"18\" font-family=\"Arial\">2 cm</text><text x=\"190\" y=\"197\" font-size=\"18\" font-family=\"Arial\">2 cm</text><circle cx=\"120\" cy=\"145\" r=\"4\" fill=\"#334155\"/></svg>"
           },
           "keyPoints": [
             {

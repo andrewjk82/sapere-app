@@ -2092,7 +2092,7 @@
           "id": "wghs-y9-2016-t3-alg-q6",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given \\(s=ut+\\frac12at^2\\), find s when t=−2, u=8 and a=5.",
+          "stem": "Given \\(s=ut+\\frac12at^2\\), find \\(s\\) when \\(t=-2\\), \\(u=8\\) and \\(a=5\\).",
           "options": [
             "\\(−6\\)",
             "\\(26\\)",
@@ -2103,17 +2103,17 @@
           "hint": "Substitute the three values, keeping the negative value of t in brackets.",
           "keyPoints": [
             {
-              "text": "t=−2",
+              "text": "\\(t=-2\\)",
               "note": "Replace each variable with its given value."
             },
             {
-              "text": "u=8 and a=5",
+              "text": "\\(u=8\\) and \\(a=5\\)",
               "note": "Square the negative value: (−2)²=4."
             }
           ],
           "steps": [
             {
-              "explain": "Substitute t=−2, u=8 and a=5 into the formula.",
+              "explain": "Substitute \\(t=-2\\), \\(u=8\\) and \\(a=5\\) into the formula.",
               "work": "\\(s=8(-2)+\\frac12(5)(-2)^2\\)"
             },
             {
@@ -2121,7 +2121,7 @@
               "work": "\\(s=-16+\\frac12(5)(4)=-16+10\\)"
             },
             {
-              "explain": "Therefore s=−6.",
+              "explain": "Therefore \\(s=-6\\).",
               "work": "\\(s=-6\\)"
             }
           ],
