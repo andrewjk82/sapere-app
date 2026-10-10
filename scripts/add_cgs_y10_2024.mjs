@@ -152,7 +152,7 @@ add(15,'y10-15e',review('cgs-y10-2024-s1-q5a','medium',`${jelly} Draw a complete
   'For the second draw, update the counts after following each first-draw branch.','without replacement','Each pair of branch probabilities from the same node must add to 1.',[
   st('Start with 10 jellybeans: 2 strawberry and 8 plain.','\\(P(S_1)=\\frac2{10},\\quad P(P_1)=\\frac8{10}\\)','treeBlank'),
   st('If strawberry was drawn first, 1 strawberry and 8 plain remain out of 9.','\\(P(S_2|S_1)=\\frac1{9},\\quad P(P_2|S_1)=\\frac8{9}\\)'),
-  st('If plain was drawn first, 2 strawberry and 7 plain remain out of 9.','\\(P(S_2|P_1)=\\frac2{9},\\quad P(P_2|P_1)=\\frac7{9}\\)','treeDone') ], 'treeBlank'));
+  st('If plain was drawn first, 2 strawberry and 7 plain remain out of 9.','\\(P(S_2|P_1)=\\frac2{9},\\quad P(P_2|P_1)=\\frac7{9}\\)','treeDone') ]));
 add(15,'y10-15e',mc('cgs-y10-2024-s1-q5b','medium',`${jelly} What is the probability of drawing at least one strawberry?`,[
   '\\(\\frac{2}{9}\\)','\\(\\frac{8}{45}\\)','\\(\\frac{17}{45}\\)','\\(\\frac{37}{45}\\)'],2,
   'Use the complement: subtract the probability of drawing two plain jellybeans from 1.','at least one strawberry','The two plain draws have probabilities 8/10 and then 7/9.',[
