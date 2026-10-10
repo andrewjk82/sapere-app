@@ -9,17 +9,13 @@ import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
 import { isSafeImageDataUrl } from '../../utils/homework';
 import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel } from '../../utils/homeworkRedo';
+import { groupMarksByTopic, markKey } from '../../utils/homeworkMarking';
 
 // Side by side from iPad-portrait width up (744–834px); phones get Notes / Worksheet tabs.
 const WIDE_MIN = 700;
 const SPIN = { animation: 'spin 0.8s linear infinite' };
-const GLYPH = { x: '✗', h: '½' };
-const STATE_STYLE = {
-  new: { bg: '#f8fafc', border: '#cbd5e1', color: '#475569' },
-  writing: { bg: '#eff6ff', border: '#93c5fd', color: '#1d4ed8' },
-  got: { bg: '#ecfdf5', border: '#6ee7b7', color: '#047857' },
-  again: { bg: '#fff7ed', border: '#fdba74', color: '#c2410c' },
-};
+const GLYPH = { c: '✓', x: '✗', h: '½' };
+const MARK_BG = { c: '#10b981', x: '#ef4444', h: '#f59e0b' };
 
 // Local storage key: a separate "uid" so this never touches the real homework record.
 const storeUid = (uid) => `redo-${uid}`;
@@ -189,28 +185,44 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     </div>
   );
 
+  // Every mark the teacher gave, above the worksheet and the notes, so the student sees what was
+  // wrong while redoing it. ✗ / ½ chips pick that question for the notepad; ✓ chips are just shown.
+  const marksByTopic = groupMarksByTopic(item?.marks);
+  const topicOrder = [...(item?.topics || []).map((t) => t.id), ...Object.keys(marksByTopic)]
+    .filter((id, i, all) => marksByTopic[id] && all.indexOf(id) === i);
+  const marksStrip = topicOrder.length > 0 && (
+    <div style={{ background: '#fff', borderBottom: '1px solid #e2e8f0', padding: '6px 12px 8px', maxHeight: '24vh', overflowY: 'auto', flexShrink: 0 }}>
+      {topicOrder.map((topicId) => marksByTopic[topicId].map(({ section, items }) => (
+        <div key={`${topicId}|${section}`} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 4, marginTop: 4 }}>
+          <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#94a3b8', marginRight: 4 }}>
+            {[shortTopicLabel(topicById.get(topicId)) || topicId, section].filter((v, i, all) => v && all.indexOf(v) === i).join(' · ')}
+          </span>
+          {items.map(({ label, mark }) => {
+            const key = markKey(topicId, section, label);
+            const wrong = mark !== 'c';
+            const state = wrong ? redoState(key, store) : null;
+            const selected = key === activeKey;
+            return (
+              <button
+                key={label}
+                type="button"
+                disabled={!wrong}
+                onClick={() => selectQuestion(key)}
+                aria-pressed={wrong ? selected : undefined}
+                aria-label={`Question ${label}: ${mark === 'c' ? 'correct' : mark === 'x' ? 'incorrect' : 'half marks'}`}
+                style={{ padding: '3px 8px', borderRadius: 8, border: 0, background: MARK_BG[mark], color: '#fff', fontWeight: 800, fontSize: '0.74rem', whiteSpace: 'nowrap', cursor: wrong ? 'pointer' : 'default', opacity: wrong || !activeKey ? 1 : 0.75, boxShadow: selected ? '0 0 0 2px #fff, 0 0 0 4px #4f46e5' : 'none' }}
+              >
+                {label} {GLYPH[mark]}{state === 'got' ? ' · got it' : state === 'again' ? ' · again' : state === 'writing' ? ' ·…' : ''}
+              </button>
+            );
+          })}
+        </div>
+      )))}
+    </div>
+  );
+
   const notesPane = (
     <div style={{ height: '100%', minHeight: 0, display: 'flex', flexDirection: 'column', position: 'relative', padding: 8, gap: 8 }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, maxHeight: 76, overflowY: 'auto', flexShrink: 0 }}>
-        {questions.map((q) => {
-          const state = redoState(q.key, store);
-          const s = STATE_STYLE[state];
-          const selected = q.key === activeKey;
-          return (
-            <button
-              key={q.key}
-              type="button"
-              onClick={() => selectQuestion(q.key)}
-              aria-pressed={selected}
-              style={{ padding: '4px 9px', borderRadius: 8, border: `1.5px solid ${selected ? '#4f46e5' : s.border}`, background: s.bg, color: s.color, fontWeight: 800, fontSize: '0.76rem', whiteSpace: 'nowrap', cursor: 'pointer', boxShadow: selected ? '0 0 0 2px #c7d2fe' : 'none' }}
-            >
-              {shortTopicLabel(topicById.get(q.topicId)) || q.topicId} · {q.label} {GLYPH[q.mark]}
-              {state === 'got' ? ' ✓' : state === 'again' ? ' ↻' : ''}
-            </button>
-          );
-        })}
-      </div>
-
       <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 8, position: 'relative' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
         <div style={{ flex: 1, minWidth: 0, fontSize: '0.78rem', fontWeight: 700, color: '#64748b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
@@ -299,6 +311,8 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
           <CheckCircle2 size={16} /> {summary.got}/{summary.total}
         </span>
       </div>
+
+      {marksStrip}
 
       {!isWide && (
         <div style={{ display: 'flex', gap: 6, padding: 8, background: '#fff', borderBottom: '1px solid #e2e8f0' }}>
