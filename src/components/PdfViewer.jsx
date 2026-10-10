@@ -124,12 +124,57 @@ const HighlightGroup = ({ hl, setHl, canUndo, onUndo, hasAny, onClearAll }) => {
   );
 };
 
-const PdfToolbar = ({ zoom, onZoomChange, highlight }) => (
-  <div style={{ position: 'absolute', top: 8, left: 8, right: 8, zIndex: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8, pointerEvents: 'none' }}>
-    <div style={{ pointerEvents: 'auto' }}><ZoomGroup zoom={zoom} onZoomChange={onZoomChange} /></div>
-    {highlight && <div style={{ pointerEvents: 'auto' }}><HighlightGroup {...highlight} /></div>}
+// Hidden until the student taps the worksheet, then shown for a few seconds (see useAutoHideToolbar).
+const PdfToolbar = ({ zoom, onZoomChange, highlight, visible = true, onInteract }) => (
+  <div
+    onPointerDownCapture={onInteract}
+    style={{ position: 'absolute', top: 8, left: 8, right: 8, zIndex: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8, pointerEvents: 'none', opacity: visible ? 1 : 0, transform: visible ? 'none' : 'translateY(-6px)', transition: 'opacity 0.18s ease, transform 0.18s ease', visibility: visible ? 'visible' : 'hidden' }}
+  >
+    <div style={{ pointerEvents: visible ? 'auto' : 'none' }}><ZoomGroup zoom={zoom} onZoomChange={onZoomChange} /></div>
+    {highlight && <div style={{ pointerEvents: visible ? 'auto' : 'none' }}><HighlightGroup {...highlight} /></div>}
   </div>
 );
+
+const TOOLBAR_HIDE_MS = 4000;
+const TAP_MAX_MOVE = 10;
+const TAP_MAX_MS = 450;
+
+// Tap the worksheet (not drag/scroll/pinch) to show the tools; they hide again after a few idle seconds.
+// `pinned` keeps them up (highlighter on: a tap then draws, and the colours must stay reachable).
+const useAutoHideToolbar = (pinned) => {
+  const [shown, setShown] = useState(false);
+  const timerRef = useRef(0);
+  const pinnedRef = useRef(pinned);
+  useEffect(() => { pinnedRef.current = pinned; }, [pinned]);
+  const arm = useCallback(() => {
+    window.clearTimeout(timerRef.current);
+    timerRef.current = window.setTimeout(() => { if (!pinnedRef.current) setShown(false); }, TOOLBAR_HIDE_MS);
+  }, []);
+  const show = useCallback(() => { setShown(true); arm(); }, [arm]);
+  useEffect(() => () => window.clearTimeout(timerRef.current), []);
+  useEffect(() => { if (!pinned && shown) arm(); }, [pinned, shown, arm]);
+  const tapRef = useRef(null);
+  const tapHandlers = {
+    onPointerDownCapture: (e) => {
+      if (pinnedRef.current) return;
+      tapRef.current = e.isPrimary ? { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp } : null;
+    },
+    onPointerMoveCapture: (e) => {
+      const tap = tapRef.current;
+      if (tap && e.pointerId === tap.id && Math.hypot(e.clientX - tap.x, e.clientY - tap.y) > TAP_MAX_MOVE) tapRef.current = null;
+    },
+    onPointerUpCapture: (e) => {
+      const tap = tapRef.current;
+      tapRef.current = null;
+      if (tap && e.pointerId === tap.id && e.timeStamp - tap.t <= TAP_MAX_MS) {
+        setShown((v) => { if (v) { window.clearTimeout(timerRef.current); return false; } return true; });
+        arm();
+      }
+    },
+    onPointerCancelCapture: () => { tapRef.current = null; },
+  };
+  return { visible: shown || pinned, show, tapHandlers };
+};
 
 const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl, pinchingRef, onAddStroke, onEraseAt, onPan }) => {
   const holderRef = useRef(null);
@@ -290,6 +335,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
 
   // Highlights: { [page]: strokes }, remembered per device under `storageKey` (the Drive file id).
   const [hl, setHl] = useState({ on: false, tool: 'draw', color: HIGHLIGHT_COLORS[0].value, finger: false });
+  const toolbarUi = useAutoHideToolbar(hl.on);
   const [highlights, setHighlights] = useState({});
   const [undoStack, setUndoStack] = useState([]); // [{ page, id }]
   const highlightsLoadedRef = useRef('');
@@ -576,9 +622,10 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   if (!src || failed) {
     if (fallback) return (
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
-        <PdfToolbar zoom={zoom} onZoomChange={changeZoom} highlight={null} />
+        <PdfToolbar zoom={zoom} onZoomChange={changeZoom} highlight={null} visible={toolbarUi.visible} onInteract={toolbarUi.show} />
         <div
           ref={handleScrollRef}
+          {...toolbarUi.tapHandlers}
           style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
         >
           <div style={{ width: `${zoom * 100}%`, height: `${zoom * 100}%`, minWidth: `${zoom * 100}%`, minHeight: `${zoom * 100}%` }}>
@@ -601,12 +648,15 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, ...style, position: 'relative', minWidth: 0, width: '100%', maxWidth: '100%' }}>
         <PdfToolbar
+          visible={toolbarUi.visible}
+          onInteract={toolbarUi.show}
           zoom={zoom}
           onZoomChange={changeZoom}
           highlight={storageKey && doc ? { hl, setHl, canUndo: undoStack.length > 0, onUndo: undoHighlight, hasAny: countHighlights(highlights) > 0, onClearAll: clearHighlights } : null}
         />
       <div
         ref={handleScrollRef}
+        {...toolbarUi.tapHandlers}
         style={{ flex: 1, minWidth: 0, maxWidth: '100%', minHeight: 0, overflow: 'auto', background: '#f1f5f9', padding: `${PAGE_GAP}px 0`, WebkitOverflowScrolling: 'touch', touchAction: 'pan-x pan-y', overscrollBehavior: 'contain' }}
       >
         {!doc || !width ? (
