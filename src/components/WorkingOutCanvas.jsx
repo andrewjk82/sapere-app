@@ -3,13 +3,14 @@ import { flushSync } from 'react-dom';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
 import StickerLayer from './StickerLayer';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
+import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
   PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.0-a4-page';
+const CANVAS_VERSION = 'v10.1-scribble';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -737,6 +738,21 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (dx * dx + dy * dy >= 0.25) pts.push([x, y, last[2]]);
     }
     stroke.completed = true;
+    // Scribble-to-erase (opt-in, Settings): a dense zigzag over existing ink erases that ink instead of adding a stroke.
+    if (!stroke.isEraser && isScribbleEraseOn()) {
+      const hits = scribbleTargets(stroke.points, strokesRef.current);
+      if (hits.length > 0) {
+        const before = strokesRef.current;
+        const drop = new Set(hits);
+        const after = before.filter((_, i) => !drop.has(i));
+        strokesRef.current = after;
+        clearCanvas(liveCanvasRef.current, getLiveCtx());
+        clearCanvas(displayCanvasRef.current, getTipCtx());
+        setUndoStack(prev => [...prev, before]);
+        setStrokes(after);   // not an append → the background is repainted without the erased strokes
+        return;
+      }
+    }
     if (stroke.isEraser) {
       drawEraserSegments(getBgCtx(), stroke.points, liveDrawnIdxRef.current, stroke.width, dpr);
     } else {

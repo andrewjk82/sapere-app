@@ -10,6 +10,7 @@ import FilmingGuidelinesModal from './FilmingGuidelinesModal';
 import ShareAppQrModal from './ShareAppQrModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 import { isAnswerSoundOn, setAnswerSoundOn, playCorrect } from '../utils/answerSound';
+import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
 
@@ -29,6 +30,7 @@ const requestMedalModalPreview = (multi = false) => {
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
   const [answerSoundOn, setAnswerSoundState] = useState(() => isAnswerSoundOn());
+  const [scribbleEraseOn, setScribbleEraseState] = useState(() => isScribbleEraseOn());
   const { showToast } = useToast();
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
@@ -481,6 +483,27 @@ const Settings = () => {
               </label>
             </section>
           )}
+
+          <section className="app-panel page-card" style={{ marginTop: '24px' }}>
+            <div className="page-card__header">
+              <h3>Notepad</h3>
+            </div>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '12px', marginTop: '16px', cursor: 'pointer', fontWeight: 700, color: '#1e1b4b' }}>
+              <input
+                type="checkbox"
+                checked={scribbleEraseOn}
+                onChange={(e) => {
+                  setScribbleEraseOn(e.target.checked);
+                  setScribbleEraseState(e.target.checked);
+                }}
+                style={{ width: 20, height: 20 }}
+              />
+              <span>
+                Scribble to erase
+                <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>Scratch back and forth over your writing with the pen to erase it. Undo brings it back. Saved on this device.</span>
+              </span>
+            </label>
+          </section>
 
           {((profile?.role === 'student') || (!isAdmin && profile?.year)) && (
             <section className="app-panel page-card" style={{ marginTop: '24px' }}>
