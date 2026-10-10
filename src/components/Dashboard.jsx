@@ -26,6 +26,7 @@ import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
 import OnlineStudySessionCard from './OnlineStudySessionCard';
 import { getHomeworkItems } from '../utils/homework';
+import { loadLastStudy, continueCaption, requestContinueStudy } from '../utils/lastStudy';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -280,6 +281,14 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return () => unsubId();
   }, [user?.uid, isAdmin]);
 
+  // Small "Continue" chip on the Next Lesson card: straight back to what was last studied (this browser only).
+  const continueLabel = useMemo(() => continueCaption(loadLastStudy(user?.uid)), [user?.uid]);
+  const goContinueStudying = (e) => {
+    e.stopPropagation();
+    requestContinueStudy();
+    setActiveTab?.('Curriculum');
+  };
+
   const nextLesson = useMemo(() => {
     const now = new Date();
     const getTime = (s) => {
@@ -423,6 +432,16 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}><Clock size={16} />{nextLesson.date} @ {nextLesson.startTime}</div>
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
+                {!isAdmin && setActiveTab && (
+                  <button
+                    type="button"
+                    onClick={goContinueStudying}
+                    aria-label={continueLabel ? `Continue studying ${continueLabel}` : 'Open curriculum'}
+                    style={{ position: 'absolute', right: 14, bottom: 12, display: 'inline-flex', alignItems: 'center', gap: 5, padding: '6px 11px', borderRadius: 999, border: 0, background: 'rgba(255,255,255,0.95)', color: '#4f46e5', fontWeight: 800, fontSize: '0.75rem', cursor: 'pointer', boxShadow: '0 2px 8px rgba(30,27,75,0.2)', maxWidth: '60%', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
+                  >
+                    <BookOpen size={13} /> {continueLabel ? `Continue ${continueLabel}` : 'Curriculum'}
+                  </button>
+                )}
               </div>
               {/* Daily Practice week bar chart */}
               <div

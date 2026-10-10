@@ -19,7 +19,7 @@ import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { loadCurriculumNote, saveCurriculumNote } from '../utils/curriculumLocalNotes';
-import { loadLastStudy, saveLastStudy, shortChapterLabel } from '../utils/lastStudy';
+import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy } from '../utils/lastStudy';
 import { requestPersistentStorage } from '../utils/homeworkLocalStore';
 import './learning-path.css';
 
@@ -426,6 +426,17 @@ const LearningPath = ({ profile }) => {
       tryResume();
     }
   };
+
+  // Dashboard "Continue" chip: once the path and the remembered record are loaded, open where the student left off.
+  const [continueRequested] = useState(peekContinueStudy);
+  const continueHandledRef = useRef(false);
+  useEffect(() => {
+    if (!continueRequested || continueHandledRef.current || loading || !user?.uid) return;
+    if (!lastStudy && loadLastStudy(user.uid)) return; // record not in state yet: next render
+    continueHandledRef.current = true;
+    consumeContinueStudy();
+    if (canContinue) continueStudying();
+  }, [continueRequested, loading, user?.uid, lastStudy, canContinue]); // eslint-disable-line react-hooks/exhaustive-deps -- runs once; continueStudying is rebuilt every render
 
   if (loading) return <div className="app-loading"><div className="app-spinner" /></div>;
 

@@ -2,14 +2,14 @@
  * "Continue studying" storage helpers. Run via npm run test:last-study.
  */
 import assert from 'node:assert';
-import { loadLastStudy, saveLastStudy, mergeLastStudy, shortChapterLabel } from '../src/utils/lastStudy.js';
+import { loadLastStudy, saveLastStudy, mergeLastStudy, shortChapterLabel, continueCaption, requestContinueStudy, peekContinueStudy, consumeContinueStudy } from '../src/utils/lastStudy.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
 
 const memory = () => {
   const data = new Map();
-  return { getItem: (k) => (data.has(k) ? data.get(k) : null), setItem: (k, v) => data.set(k, String(v)), data };
+  return { getItem: (k) => (data.has(k) ? data.get(k) : null), setItem: (k, v) => data.set(k, String(v)), removeItem: (k) => data.delete(k), data };
 };
 const visit = { trackKey: 'Year 7', chapterId: 'y7-5', chapterTitle: 'Chapter 5: Fractions' };
 
@@ -79,6 +79,25 @@ test('short chapter label', () => {
   assert.equal(shortChapterLabel(''), '');
   assert.equal(shortChapterLabel('Factors, multiples, primes and divisibility'), 'Factors, multiples…');
   assert.equal(shortChapterLabel('Chapter 10: Differentiation'), 'Chapter 10');
+});
+
+test('dashboard caption: topic code, else short chapter, else none', () => {
+  assert.equal(continueCaption({ ...visit, topicCode: '20D' }), '20D');
+  assert.equal(continueCaption({ ...visit, topicCode: '' }), 'Chapter 5');
+  assert.equal(continueCaption(null), '');
+});
+
+test('continue flag: one shot, survives a peek, safe without storage', () => {
+  const store = memory();
+  assert.equal(peekContinueStudy(store), false);
+  requestContinueStudy(store);
+  assert.equal(peekContinueStudy(store), true);
+  assert.equal(peekContinueStudy(store), true);
+  assert.equal(consumeContinueStudy(store), true);
+  assert.equal(consumeContinueStudy(store), false);
+  const broken = { getItem: () => { throw new Error('x'); }, setItem: () => { throw new Error('x'); }, removeItem: () => { throw new Error('x'); } };
+  assert.doesNotThrow(() => requestContinueStudy(broken));
+  assert.equal(consumeContinueStudy(broken), false);
 });
 
 console.log(`\nlast study: ${passed} passed`);

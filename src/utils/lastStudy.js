@@ -66,3 +66,22 @@ export const shortChapterLabel = (title) => {
   const atWord = cut.lastIndexOf(' ') > 12 ? cut.slice(0, cut.lastIndexOf(' ')) : cut;
   return `${atWord.replace(/[\s,;:–-]+$/, '')}…`;
 };
+
+// Dashboard "Continue" chip caption: the topic code ("20D"), else the short chapter name.
+export const continueCaption = (record) => (record ? record.topicCode || shortChapterLabel(record.chapterTitle) : '');
+
+// One-shot hand-off from the Dashboard to the Curriculum tab: "open where I left off".
+// sessionStorage, so it never outlives the tab and never fires on a later visit.
+const CONTINUE_FLAG = 'sapere:continueStudy:v1';
+const session = () => globalThis.sessionStorage;
+export const requestContinueStudy = (storage = session()) => {
+  try { storage.setItem(CONTINUE_FLAG, '1'); } catch { /* storage blocked: the tab still opens */ }
+};
+export const peekContinueStudy = (storage = session()) => {
+  try { return storage.getItem(CONTINUE_FLAG) === '1'; } catch { return false; }
+};
+export const consumeContinueStudy = (storage = session()) => {
+  const wanted = peekContinueStudy(storage);
+  try { storage.removeItem(CONTINUE_FLAG); } catch { /* nothing to clear */ }
+  return wanted;
+};

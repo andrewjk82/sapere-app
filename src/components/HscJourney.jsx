@@ -4,6 +4,7 @@ import { TrendingUp, TrendingDown, Award, Target, FileText, Info, X, Search, Boo
 import { calcProjectedMark, schoolRankToAvg } from '../constants/hscBandData';
 import { NSW_SCHOOL_RANKINGS, findSchoolRank } from '../constants/nswSchoolRankings';
 import LearningPathRoadmap from './LearningPathRoadmap';
+import { peekContinueStudy } from '../utils/lastStudy';
 
 /**
  * HscJourney — the HSC past-paper "score graph journey" dashboard.
@@ -38,7 +39,8 @@ const fmtDate = (s) => {
 };
 
 const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPracticeByType = null, showPapers = true }) => {
-  const [view, setView] = useState(showPapers ? 'papers' : 'curriculum'); // 'papers' | 'curriculum' | 'roadmap'
+  // The Dashboard's "Continue" chip lands on the curriculum even for students whose default is Past papers.
+  const [view, setView] = useState(() => (showPapers && !peekContinueStudy() ? 'papers' : 'curriculum')); // 'papers' | 'curriculum' | 'roadmap'
   const [paperSeed, setPaperSeed] = useState(() => Date.now());
   const [showRankModal, setShowRankModal] = useState(false);
   const [rankSearch, setRankSearch] = useState('');
