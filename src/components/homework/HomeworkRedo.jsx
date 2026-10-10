@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowLeft, CheckCircle2, FileText, Loader2, PenLine, X } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, FileText, Images, Loader2, PenLine, X } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
+import SubmittedPages from './SubmittedPages';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
@@ -50,6 +51,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [split, setSplit] = useState(0.5);
   const [dragging, setDragging] = useState(false);
   const [sheet, setSheet] = useState(null); // { loading } | { error } | { images }
+  const [showSubmitted, setShowSubmitted] = useState(false); // the pages handed in, in place of the new notes
 
   const sessionId = item?.sessionId;
   const active = questions.find((q) => q.key === activeKey) || null;
@@ -209,6 +211,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         })}
       </div>
 
+      <div style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column', gap: 8, position: 'relative' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
         <div style={{ flex: 1, minWidth: 0, fontSize: '0.78rem', fontWeight: 700, color: '#64748b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {active ? `Question ${active.label}` : 'No wrong questions'}
@@ -226,6 +229,13 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
 
       <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: ready ? 'auto' : 'none' }}>
         <WorkingOutCanvas ref={canvasRef} isSubmitted={false} hideTitle onInkChange={handleInkChange} />
+      </div>
+      {/* Covers the new notes without unmounting the pad, so nothing written is lost. */}
+      {showSubmitted && (
+        <div style={{ position: 'absolute', inset: 0, background: '#f8fafc', zIndex: 4 }}>
+          <SubmittedPages uid={user?.uid} sessionId={sessionId} topicId={active?.topicId} />
+        </div>
+      )}
       </div>
 
       {sheet && (
@@ -269,9 +279,22 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 800, color: '#1e1b4b' }}>Redo wrong questions</div>
           <div style={{ fontSize: '0.75rem', color: '#64748b', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-            {item?.date} · {(item?.topics || []).map((t) => t.label).join(', ')}
+            {[item?.mark, item?.date, (item?.topics || []).map((t) => t.label).join(', ')].filter(Boolean).join(' · ')}
           </div>
+          {item?.comment && (
+            <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4f46e5', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>“{item.comment}”</div>
+          )}
         </div>
+        {questions.length > 0 && (
+          <button
+            type="button"
+            aria-pressed={showSubmitted}
+            onClick={() => { setShowSubmitted((v) => !v); setPane('notes'); }}
+            style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '8px 12px', borderRadius: 10, border: '1.5px solid', borderColor: showSubmitted ? '#7c3aed' : '#e2e8f0', background: showSubmitted ? '#7c3aed' : '#fff', color: showSubmitted ? '#fff' : '#475569', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer', whiteSpace: 'nowrap' }}
+          >
+            {showSubmitted ? <PenLine size={15} /> : <Images size={15} />} {showSubmitted ? 'New notes' : 'My submission'}
+          </button>
+        )}
         <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontWeight: 800, color: summary.got === summary.total && summary.total > 0 ? '#047857' : '#64748b', fontSize: '0.85rem' }}>
           <CheckCircle2 size={16} /> {summary.got}/{summary.total}
         </span>

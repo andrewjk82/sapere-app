@@ -5,6 +5,7 @@ import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import HomeworkHistory from './HomeworkHistory';
 import HomeworkRedo from './HomeworkRedo';
+import { wrongQuestions } from '../../utils/homeworkRedo';
 
 export const OPEN_HOMEWORK_FLAG = 'sapere:openHomework:v1';
 
@@ -46,6 +47,12 @@ const HomeworkCard = ({ sessions, profile, user }) => {
   const [showHistory, setShowHistory] = useState(false);
   const [openItem, setOpenItem] = useState(null);
   const [redoItem, setRedoItem] = useState(null);
+  // A checked homework with ✗/½ opens straight into the redo screen (worksheet | new notes);
+  // the pages handed in are one tap away there. Everything else opens the plain viewer.
+  const openHomework = (item) => {
+    if (item?.status === 'checked' && wrongQuestions(item.marks, item.topics).length > 0) setRedoItem(item);
+    else setOpenItem(item);
+  };
 
   const latestToOpen = items.find((i) => i.status !== 'checked') || null;
 
@@ -99,7 +106,7 @@ const HomeworkCard = ({ sessions, profile, user }) => {
       )}
 
       {showHistory && (
-        <HomeworkHistory sessions={sessions} onOpen={setOpenItem} onClose={() => setShowHistory(false)} />
+        <HomeworkHistory sessions={sessions} onOpen={openHomework} onClose={() => setShowHistory(false)} />
       )}
 
       {openItem && openSession && openItem.status !== 'checked' && (
