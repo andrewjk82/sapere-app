@@ -15965,7 +15965,7 @@
           "id": "amity2020-ma-q05",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Given \\(\\sin x=\\frac{1}{3}\\) and \\(\\frac{\\pi}{2}<x<\\pi\\), find \\(\\tan x\\).",
+          "stem": "Given \\(\\sin x=\\frac{1}{3}\\) and \\(\\frac{\\pi}{2} < x < \\pi\\), find \\(\\tan x\\).",
           "options": [
             "\\(-\\frac{1}{2\\sqrt2}\\)",
             "\\(\\frac{1}{2\\sqrt2}\\)",
