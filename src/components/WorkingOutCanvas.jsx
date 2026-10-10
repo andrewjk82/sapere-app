@@ -286,6 +286,13 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   strokesRef.current = strokes;
+  // Page navigation reads and writes these synchronously: two page changes (or a stroke and a
+  // page change) can land before React re-renders, and the render-time values would be stale —
+  // that lost the last stroke of a page and let one fast swipe add a run of blank pages.
+  const pagesRef = useRef(pages);
+  const currentPageRef = useRef(currentPage);
+  pagesRef.current = pages;
+  currentPageRef.current = currentPage;
   // Lets a host (homework drafts) autosave without polling. Ref'd so a new
   // callback identity each parent render doesn't re-fire the effect.
   const onInkChangeRef = useRef(onInkChange);
@@ -630,6 +637,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const next = eraseStrokesAlong(gesture.current, from, to);
     if (next !== gesture.current) {
       gesture.current = next;
+      strokesRef.current = next;
       setStrokes(next);
     }
   };
@@ -679,8 +687,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       clearCanvas(liveCanvasRef.current, getLiveCtx());
       clearCanvas(displayCanvasRef.current, getTipCtx());
     }
-    setUndoStack(prev => [...prev, strokesRef.current]);
-    setStrokes(prev => [...prev, stroke]);
+    const before = strokesRef.current;
+    const after = [...before, stroke];
+    strokesRef.current = after; // so a page change right after this stroke keeps it
+    setUndoStack(prev => [...prev, before]);
+    setStrokes(after);
   };
 
   // ─── Pointer handlers ─────────────────────────────────────────────────────
@@ -919,44 +930,50 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const addPage = () => {
-    if (maxPages > 0 && pages.length >= maxPages) return;
-    setPages(prev => {
-      const next = [...prev];
-      next[currentPage] = strokesRef.current;
-      next.push([]);
-      return next;
-    });
+    const all = [...pagesRef.current];
+    if (maxPages > 0 && all.length >= maxPages) return;
+    all[currentPageRef.current] = strokesRef.current;
+    all.push([]);
+    const idx = all.length - 1;
+    pagesRef.current = all;
+    currentPageRef.current = idx;
+    strokesRef.current = [];
+    setPages(all);
     setPageTypes(prev => [...prev, false]);
-    setCurrentPage(prev => prev + 1);
+    setCurrentPage(idx);
     setStrokes([]);
     setUndoStack([]);
   };
 
   const goToPage = (idx) => {
-    setPages(prev => {
-      if (idx < 0 || idx >= prev.length) return prev;
-      const next = [...prev];
-      next[currentPage] = strokesRef.current;
-      setCurrentPage(idx);
-      forceRedrawRef.current = true;
-      setStrokes(next[idx] || []);
-      setUndoStack([]);
-      return next;
-    });
+    const all = [...pagesRef.current];
+    const cur = currentPageRef.current;
+    if (idx < 0 || idx >= all.length || idx === cur) return;
+    all[cur] = strokesRef.current;
+    pagesRef.current = all;
+    currentPageRef.current = idx;
+    strokesRef.current = all[idx] || [];
+    setPages(all);
+    setCurrentPage(idx);
+    forceRedrawRef.current = true;
+    setStrokes(all[idx] || []);
+    setUndoStack([]);
   };
 
   // Keep latest page-nav actions for the gesture listener (stable mount effect).
   const pageNavRef = useRef({
-    currentPage: 0,
-    pageCount: 1,
+    currentPage: () => 0,
+    pageCount: () => 1,
+    currentHasInk: () => false,
     isSubmitted: false,
     addPage: () => {},
     goToPage: () => {},
     discardStroke: () => {},
   });
   pageNavRef.current = {
-    currentPage,
-    pageCount: pages.length,
+    currentPage: () => currentPageRef.current,
+    pageCount: () => pagesRef.current.length,
+    currentHasInk: () => pageHasInk(strokesRef.current),
     isSubmitted: !!isSubmitted,
     addPage,
     goToPage,
@@ -985,20 +1002,35 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const isInsideBoard = (target) =>
       !!(target && (wrapper === target || wrapper.contains(target)));
 
+    // One page per swipe / scroll burst: trackpad momentum keeps sending wheel events.
+    const NAV_COOLDOWN_MS = 450;
+    let lastNavAt = 0;
+    const coolingDown = () => performance.now() - lastNavAt < NAV_COOLDOWN_MS;
+
     const goNext = () => {
       const nav = pageNavRef.current;
-      if (nav.isSubmitted) return;
-      nav.discardStroke?.();
-      if (nav.currentPage < nav.pageCount - 1) nav.goToPage(nav.currentPage + 1);
-      else nav.addPage();
+      if (nav.isSubmitted || coolingDown()) return;
+      const page = nav.currentPage();
+      if (page < nav.pageCount() - 1) {
+        nav.discardStroke?.();
+        nav.goToPage(page + 1);
+      } else {
+        // Past the last page: a new page only after something was written on this one.
+        if (!nav.currentHasInk()) return;
+        nav.discardStroke?.();
+        nav.addPage();
+      }
+      lastNavAt = performance.now();
     };
 
     const goPrev = () => {
       const nav = pageNavRef.current;
-      if (nav.isSubmitted) return;
-      if (nav.currentPage <= 0) return;
+      if (nav.isSubmitted || coolingDown()) return;
+      const page = nav.currentPage();
+      if (page <= 0) return;
       nav.discardStroke?.();
-      nav.goToPage(nav.currentPage - 1);
+      nav.goToPage(page - 1);
+      lastNavAt = performance.now();
     };
 
     const avgYFromTouches = (touchList) => {
@@ -1191,19 +1223,19 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
     return {
       hasContent: () => {
-        const all = [...pages];
-        all[currentPage] = getCurrentPageStrokes();
+        const all = [...pagesRef.current];
+        all[currentPageRef.current] = getCurrentPageStrokes();
         return all.some(pageHasInk);
       },
       /** empty | light | substantial — path-length heuristic, no OCR. */
       getInkLevel: () => {
-        const all = [...pages];
-        all[currentPage] = getCurrentPageStrokes();
+        const all = [...pagesRef.current];
+        all[currentPageRef.current] = getCurrentPageStrokes();
         return analyzeInkPages(all).level;
       },
       getInkStats: () => {
-        const all = [...pages];
-        all[currentPage] = getCurrentPageStrokes();
+        const all = [...pagesRef.current];
+        all[currentPageRef.current] = getCurrentPageStrokes();
         return analyzeInkPages(all);
       },
       exportImage: ({ force = false } = {}) => {
@@ -1213,17 +1245,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         );
       },
       exportPageImages: async ({ force = false } = {}) => {
-        const all = [...pages];
-        all[currentPage] = getCurrentPageStrokes();
+        const all = [...pagesRef.current];
+        all[currentPageRef.current] = getCurrentPageStrokes();
         return all
           .map((ps, index) => ({ ps, index }))
-          .filter(({ ps, index }) => (force ? index === currentPage || pageHasInk(ps) : pageHasInk(ps)))
+          .filter(({ ps, index }) => (force ? index === currentPageRef.current || pageHasInk(ps) : pageHasInk(ps)))
           .map(({ ps, index }) => getCompositeDataURL(ps || [], stickerPages[index] || []));
       },
       getPagesData: () => {
-        const all = [...pages];
-        all[currentPage] = getCurrentPageStrokes();
-        return { pages: all, pageTypes: [...pageTypes], currentPage, stickers: all.map((_, i) => stickerPages[i] || []) };
+        const all = [...pagesRef.current];
+        all[currentPageRef.current] = getCurrentPageStrokes();
+        return { pages: all, pageTypes: [...pageTypes], currentPage: currentPageRef.current, stickers: all.map((_, i) => stickerPages[i] || []) };
       },
       loadPagesData: (data) => {
         if (!Array.isArray(data?.pages) || data.pages.length === 0) return;
@@ -1257,7 +1289,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         });
       },
     };
-  }, [pages, currentPage, isGraph, pageTypes, initialIsGraph, stickerPages]);
+  }, [currentPage, isGraph, pageTypes, initialIsGraph, stickerPages]);
 
   const bgStyle = isGraph ? {
     backgroundImage: `linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)`,
