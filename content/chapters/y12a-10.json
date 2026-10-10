@@ -542,7 +542,7 @@
           ],
           "steps": [
             {
-              "explain": "Differentiate the density on 0≤x≤2.",
+              "explain": "Differentiate the density on \\(0\\le x\\le 2\\).",
               "work": "\\(f′(x)=\\frac34(2-2x)\\)"
             },
             {
