@@ -29989,6 +29989,51 @@
             "\\\\( \\\\pi n^2 + \\\\pi n \\\\)",
             "\\\\( 2\\\\pi n^2 - \\\\pi n \\\\)"
           ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A virus infects 120 people on day 1 and 10 more people each following day than the previous day. How many days until the total infected is more than 10,000?",
+          "options": [
+            "\\(34 days\\)",
+            "\\(35 days\\)",
+            "\\(36 days\\)",
+            "\\(40 days\\)"
+          ],
+          "answer": 1,
+          "hint": "The daily infections form an arithmetic sequence; use the sum and check the first integer above the threshold.",
+          "keyPoints": [
+            {
+              "text": "more than 10,000",
+              "note": "The total must be strictly greater than 10,000, so round the positive root up to a whole day."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the arithmetic sequence parameters.",
+              "work": "\\(a_1=120,\\quad d=10,\\quad S_n=\\frac n2[240+10(n-1)]\\)"
+            },
+            {
+              "explain": "Set the total equal to 10,000 to locate the threshold.",
+              "work": "\\(5n(n+23)=10000\\Rightarrow n^2+23n-2000=0\\)"
+            },
+            {
+              "explain": "The positive root is about 34.7, so check the adjacent integer totals.",
+              "work": "\\(S_{34}=9690,\\quad S_{35}=10150\\)"
+            },
+            {
+              "explain": "The first total above 10,000 occurs after 35 days.",
+              "work": "\\(\\boxed{35\\text{ days}}\\)"
+            }
+          ]
         }
       ]
     },

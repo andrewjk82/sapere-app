@@ -869,6 +869,47 @@
               "xp": 2
             }
           ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Let \\(f(x)=\\begin{cases}ax+b,&x<0\\e^{2x},&x\\ge0\\end{cases}\\). If f is continuous and differentiable at x=0, find (a,b).",
+          "options": [
+            "\\((a,b)=(1,0)\\)",
+            "\\((a,b)=(2,0)\\)",
+            "\\((a,b)=(2,1)\\)",
+            "\\((a,b)=(1,1)\\)"
+          ],
+          "answer": 2,
+          "hint": "Continuity matches the function values at 0; differentiability then matches the one-sided gradients.",
+          "keyPoints": [
+            {
+              "text": "continuous and differentiable at x=0",
+              "note": "Apply continuity first to find b, then match derivatives to find a."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Continuity at 0 requires the left limit to equal the right value.",
+              "work": "\\(b=e^0=1\\)"
+            },
+            {
+              "explain": "Differentiate each branch and equate one-sided derivatives at 0.",
+              "work": "\\(f′_-(0)=a,\\quad f′_+(0)=2e^0=2\\Rightarrow a=2\\)"
+            },
+            {
+              "explain": "State both parameters in the requested order.",
+              "work": "\\(\\boxed{(a,b)=(2,1)}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1474,6 +1515,47 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate \\(\\frac{8}{1-2x}\\) with respect to x.",
+          "options": [
+            "\\(\\frac{8}{(1-2x)^2}\\)",
+            "\\(\\frac{-16}{(1-2x)^2}\\)",
+            "\\(\\frac{16}{1-2x}\\)",
+            "\\(\\frac{16}{(1-2x)^2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the reciprocal as a power and apply the chain rule.",
+          "keyPoints": [
+            {
+              "text": "\\frac{8}{1-2x}",
+              "note": "The inner derivative is −2; keep track of the two negative signs."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the expression with exponent −1.",
+              "work": "\\(y=8(1-2x)^{-1}\\)"
+            },
+            {
+              "explain": "Differentiate the outer power and multiply by the inner derivative.",
+              "work": "\\(y′=8(-1)(1-2x)^{-2}(-2)\\)"
+            },
+            {
+              "explain": "Simplify the positive coefficient.",
+              "work": "\\(\\boxed{y′=\\frac{16}{(1-2x)^2}}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1549,6 +1631,47 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given \\(y=xf(x^2)\\), which expression is \\(\\frac{dy}{dx}\\)?",
+          "options": [
+            "\\(2xf(x)\\)",
+            "\\(f(x^2)+2x^2f′(x)\\)",
+            "\\(f(x^2)+2x^2f(x)f′(x)\\)",
+            "\\(f(x^2)+2x^2f′(x^2)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the product rule, and apply the chain rule to f(x²).",
+          "keyPoints": [
+            {
+              "text": "\\(y=xf(x^2)\\)",
+              "note": "Differentiate the outer x factor and the composite function factor separately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the product rule to x·f(x²).",
+              "work": "\\(y′=1\\cdot f(x^2)+x\\cdot\\frac{d}{dx}f(x^2)\\)"
+            },
+            {
+              "explain": "Apply the chain rule to f(x²).",
+              "work": "\\(\\frac{d}{dx}f(x^2)=f′(x^2)\\cdot2x\\)"
+            },
+            {
+              "explain": "Combine and simplify.",
+              "work": "\\(\\boxed{\\frac{dy}{dx}=f(x^2)+2x^2f′(x^2)}\\)"
+            }
+          ]
         }
       ]
     }

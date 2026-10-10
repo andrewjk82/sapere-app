@@ -4730,6 +4730,47 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(4^{3x+1}=8^x\\).",
+          "options": [
+            "\\(x=2\\)",
+            "\\(x=\\frac32\\)",
+            "\\(x=-\\frac23\\)",
+            "\\(x=-\\frac32\\)"
+          ],
+          "answer": 2,
+          "hint": "Rewrite 4 and 8 as powers of 2, then equate exponents.",
+          "keyPoints": [
+            {
+              "text": "\\(4^{3x+1}=8^x\\)",
+              "note": "Make the exponential bases the same before comparing powers."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite both sides with base 2.",
+              "work": "\\(4^{3x+1}=(2^2)^{3x+1}=2^{6x+2},\\quad 8^x=(2^3)^x=2^{3x}\\)"
+            },
+            {
+              "explain": "Equal bases with equal powers give a linear equation.",
+              "work": "\\(6x+2=3x\\)"
+            },
+            {
+              "explain": "Solve for x and check by substituting into the exponent equation.",
+              "work": "\\(3x=-2\\Rightarrow x=-\\frac23\\quad\\boxed{x=-\\frac23}\\)"
+            }
+          ]
         }
       ]
     },
@@ -4913,6 +4954,47 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(\\ln(2x+3)=2\\ln x\\).",
+          "options": [
+            "\\(x=-1\\)",
+            "\\(x=1\\)",
+            "\\(x=3\\)",
+            "\\(x=-1\\text{ or }3\\)"
+          ],
+          "answer": 2,
+          "hint": "First note x>0, then combine 2 ln x as ln(x²).",
+          "keyPoints": [
+            {
+              "text": "\\ln(2x+3)=2\\ln x",
+              "note": "Reject any algebraic root that is outside the logarithm’s domain."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The logarithm ln x requires x>0. Combine the right-hand logarithms.",
+              "work": "\\(2\\ln x=\\ln(x^2)\\)"
+            },
+            {
+              "explain": "Equate positive logarithm arguments and solve the quadratic.",
+              "work": "\\(2x+3=x^2\\Rightarrow x^2-2x-3=0\\Rightarrow(x-3)(x+1)=0\\)"
+            },
+            {
+              "explain": "Check the roots against x>0.",
+              "work": "\\(x=-1\\text{ is rejected};\\quad\\boxed{x=3}\\)"
+            }
+          ]
         }
       ]
     },
@@ -4999,6 +5081,47 @@
                 }
               ],
               "xp": 2
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q06",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the range of \\(f(x)=4-e^{2x-2}\\).",
+          "options": [
+            "\\((-\\infty,4)\\)",
+            "\\((-\\infty,4]\\)",
+            "\\((4,\\infty)\\)",
+            "\\([4,\\infty)\\)"
+          ],
+          "answer": 0,
+          "hint": "An exponential is always positive, but it can get arbitrarily close to zero.",
+          "keyPoints": [
+            {
+              "text": "\\(f(x)=4-e^{2x-2}\\)",
+              "note": "Check whether the endpoint 4 can actually be reached."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For every real x, the exponential term is positive.",
+              "work": "\\(e^{2x-2}>0\\)"
+            },
+            {
+              "explain": "Subtracting a positive number from 4 gives a value strictly below 4.",
+              "work": "\\(4-e^{2x-2}<4\\)"
+            },
+            {
+              "explain": "As x tends to negative infinity, the exponential tends to zero, so f approaches 4 without reaching it; as x increases, f decreases without bound.",
+              "work": "\\(f(x)\\in\\boxed{(-\\infty,4)}\\)"
             }
           ]
         }

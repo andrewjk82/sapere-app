@@ -10814,6 +10814,47 @@
             }
           ],
           "timeLimit": 180
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q02",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An amount of \\($3000\\) is invested at \\(3\\%\\) per annum, compounded monthly. What is its value after five years?",
+          "options": [
+            "\\($3485\\)",
+            "\\($3526\\)",
+            "\\($3571\\)",
+            "\\($3654\\)"
+          ],
+          "answer": 0,
+          "hint": "Use monthly rate 0.03/12 and count 5×12 compounding periods.",
+          "keyPoints": [
+            {
+              "text": "compounded monthly",
+              "note": "Convert both the rate and the number of periods to months."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the monthly interest rate and number of months.",
+              "work": "\\(i=\\frac{0.03}{12}=0.0025,\\quad n=5\\times12=60\\)"
+            },
+            {
+              "explain": "Use the compound-interest formula.",
+              "work": "\\(A=3000(1+0.0025)^{60}\\)"
+            },
+            {
+              "explain": "Evaluate and round to the nearest dollar as the choices do.",
+              "work": "\\(A\\approx\\$3484.85\\Rightarrow\\boxed{\\$3485}\\)"
+            }
+          ]
         }
       ]
     },
@@ -14113,6 +14154,106 @@
             }
           ],
           "timeLimit": 360
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q16a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An annuity pays \\($600\\) at the end of each year for 8 years at 3% p.a. Use the table to find its future value.",
+          "options": [
+            "\\($5335.20\\)",
+            "\\($4892.40\\)",
+            "\\($6000.00\\)",
+            "\\($8892.00\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the factor in the 8-year row and 3.0% column, then multiply by $600.",
+          "keyPoints": [
+            {
+              "text": "end of each year",
+              "note": "This is an ordinary annuity; the table already supplies the future-value factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the 8-year, 3.0% factor from the table.",
+              "work": "\\(F=8.892\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the annual contribution by the factor.",
+              "work": "\\(FV=600\\times8.892\\)"
+            },
+            {
+              "explain": "State the dollar amount to the nearest cent.",
+              "work": "\\(\\boxed{FV=\\$5{,}335.20}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q16b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What annual end-of-year contribution gives a future value of \\($15{,}000\\) after 7 years at 2.5% p.a.?",
+          "options": [
+            "\\($1987.54\\)",
+            "\\($2025.00\\)",
+            "\\($1132.05\\)",
+            "\\($15000.00\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the required future value by the 7-year, 2.5% annuity factor.",
+          "keyPoints": [
+            {
+              "text": "future value of \\($15{,}000\\)",
+              "note": "The factor multiplies each regular contribution to give the future value."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the 7-year, 2.5% factor.",
+              "work": "\\(F=7.547\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+              }
+            },
+            {
+              "explain": "Let the yearly contribution be M and solve MF=15000.",
+              "work": "\\(M=\\frac{15000}{7.547}\\)"
+            },
+            {
+              "explain": "Round the contribution to cents.",
+              "work": "\\(\\boxed{M=\\$1{,}987.54}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"300\" y=\"38\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"17\" text-anchor=\"middle\" font-weight=\"bold\">Future value factor for an annuity of $1</text><line x1=\"84\" y1=\"75\" x2=\"516\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"118\" x2=\"516\" y2=\"118\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"161\" x2=\"516\" y2=\"161\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"204\" x2=\"516\" y2=\"204\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"247\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"84\" y1=\"75\" x2=\"84\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"192\" y1=\"75\" x2=\"192\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"75\" x2=\"300\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"408\" y1=\"75\" x2=\"408\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><line x1=\"516\" y1=\"75\" x2=\"516\" y2=\"247\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"138\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Years</text><text x=\"246\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.0%</text><text x=\"354\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">2.5%</text><text x=\"462\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.0%</text><text x=\"570\" y=\"104\" fill=\"#475569\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">3.5%</text><text x=\"138\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7</text><text x=\"246\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.434</text><text x=\"354\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.547</text><text x=\"462\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.662</text><text x=\"570\" y=\"147\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">7.779</text><text x=\"138\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8</text><text x=\"246\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.583</text><text x=\"354\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.736</text><text x=\"462\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">8.892</text><text x=\"570\" y=\"190\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.052</text><text x=\"138\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9</text><text x=\"246\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.755</text><text x=\"354\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">9.955</text><text x=\"462\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.159</text><text x=\"570\" y=\"233\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">10.368</text><text x=\"300\" y=\"284\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"bold\">Use the 8-year, 3.0% factor: 8.892</text></svg>"
+          }
         }
       ]
     },
@@ -17343,6 +17484,88 @@
             }
           ],
           "timeLimit": 360
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q36a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A $48,000 car loan is repaid by equal month-end payments over 5 years at 8.4% p.a. compounded monthly. Find the monthly payment.",
+          "options": [
+            "\\($882.48\\)",
+            "\\($982.48\\)",
+            "\\($1094.89\\)",
+            "\\($1200.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the present-value formula for an ordinary annuity with monthly rate 0.084/12 and 60 payments.",
+          "keyPoints": [
+            {
+              "text": "8.4% p.a. compounded monthly",
+              "note": "Convert the annual rate to a monthly rate and five years to 60 payments."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the monthly rate and number of repayments.",
+              "work": "\\(i=\\frac{0.084}{12}=0.007,\\quad n=5(12)=60\\)"
+            },
+            {
+              "explain": "Set the present value of the payments equal to the loan principal.",
+              "work": "\\(48000=M\\frac{1-(1.007)^{-60}}{0.007}\\Rightarrow M=\\frac{48000(0.007)}{1-(1.007)^{-60}}\\)"
+            },
+            {
+              "explain": "Evaluate and round the payment to cents.",
+              "work": "\\(M\\approx\\boxed{\\$982.48\\text{ per month}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q36b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the monthly payment for the $48,000 loan, find the total interest paid over 60 months.",
+          "options": [
+            "\\($9,489.02\\)",
+            "\\($10,948.90\\)",
+            "\\($58,948.90\\)",
+            "\\($48,000.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Total interest is total repayments minus the original amount borrowed.",
+          "keyPoints": [
+            {
+              "text": "total interest paid",
+              "note": "There are 60 monthly payments; subtract the principal once from their total."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the monthly payment and number of months.",
+              "work": "\\(60\\times\\$982.4817\\approx\\$58{,}948.90\\)"
+            },
+            {
+              "explain": "Subtract the amount borrowed.",
+              "work": "\\(I=\\$58{,}948.90-\\$48{,}000=\\$10{,}948.90\\)"
+            },
+            {
+              "explain": "State total interest to cents.",
+              "work": "\\(\\boxed{\\$10{,}948.90}\\)"
+            }
+          ]
         }
       ]
     },

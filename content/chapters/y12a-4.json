@@ -759,6 +759,163 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q04",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The shaded region is bounded by \\(y=x^3-x\\) and the x-axis. Which integral expression gives its total area?",
+          "options": [
+            "\\(\\int_{-1}^{1}(x^3-x)\\,dx\\)",
+            "\\(2\\int_{-1}^{0}(x^3-x)\\,dx\\)",
+            "\\(\\int_{-1}^{0}(x^3-x)\\,dx+\\int_{0}^{1}(x^3-x)\\,dx\\)",
+            "\\(2\\int_{0}^{1}(x^3-x)\\,dx\\)"
+          ],
+          "answer": 1,
+          "hint": "The cubic is odd, so the two shaded lobes have equal area; integrate one lobe and double it.",
+          "keyPoints": [
+            {
+              "text": "total area",
+              "note": "Signed integrals below the x-axis are negative, but geometric area is positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find where the curve meets the x-axis.",
+              "work": "\\(x^3-x=x(x-1)(x+1)=0\\Rightarrow x=-1,0,1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
+              }
+            },
+            {
+              "explain": "The left lobe lies above the axis and the right lobe below it; odd symmetry gives equal magnitudes.",
+              "work": "\\(\\text{Area}=\\int_{-1}^{0}(x^3-x)\\,dx-\\int_{0}^{1}(x^3-x)\\,dx\\)"
+            },
+            {
+              "explain": "Use symmetry to express the total area using one positive lobe.",
+              "work": "\\(\\boxed{\\text{Area}=2\\int_{-1}^{0}(x^3-x)\\,dx}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"180\" x2=\"535\" y2=\"180\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"35\" x2=\"300\" y2=\"300\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"190\" y1=\"176\" x2=\"190\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"190\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-1</text><line x1=\"300\" y1=\"176\" x2=\"300\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"410\" y1=\"176\" x2=\"410\" y2=\"184\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"410\" y=\"202\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">1</text><path d=\"M190 180 C215 104 257 114 300 180 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><path d=\"M300 180 C345 246 385 260 410 180 Z\" fill=\"#f59e0b\" fill-opacity=\".24\"/><path d=\"M190 180 C215 104 257 114 300 180 C345 246 385 260 410 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"520\" y=\"171\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"310\" y=\"48\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><text x=\"234\" y=\"126\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&gt;0</text><text x=\"365\" y=\"234\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">f(x)&lt;0</text></svg>"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q34a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For \\(f(x)=x(x-2)(x-6)\\), find the exact total area bounded by the curve and the x-axis.",
+          "options": [
+            "\\(\\frac{108}{3}\\)",
+            "\\(\\frac{148}{3}\\)",
+            "\\(\\frac{20}{3}\\)",
+            "\\(\\frac{128}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the three roots and split the area where the curve changes sign.",
+          "keyPoints": [
+            {
+              "text": "exact total area",
+              "note": "The portion below the axis contributes the negative of its signed integral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand f and identify the roots that bound the regions.",
+              "work": "\\(f(x)=x^3-8x^2+12x;\\quad x=0,2,6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "The curve is above the axis on [0,2] and below it on [2,6].",
+              "work": "\\(A=\\int_0^2f(x)dx-\\int_2^6f(x)dx\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Use an antiderivative and evaluate both pieces.",
+              "work": "\\(F(x)=\\frac{x^4}{4}-\\frac{8x^3}{3}+6x^2;\\quad A=\\frac{20}{3}+\\frac{128}{3}\\)"
+            },
+            {
+              "explain": "Add the positive geometric areas.",
+              "work": "\\(\\boxed{A=\\frac{148}{3}\\text{ units}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q34b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Let \\(g(x)=f(ax+b)\\), where \\(f(x)=x(x-2)(x-6)\\). The signed integrals \\(\\int_4^0g(x)dx+\\int_4^6g(x)dx\\) give the same total area as in part (a). Select the intended \\((a,b)\\).",
+          "options": [
+            "\\((a,b)=(1,6)\\)",
+            "\\((a,b)=(-1,6)\\)",
+            "\\((a,b)=(-1,0)\\)",
+            "\\((a,b)=(2,6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Map the roots 0, 2, and 6 through the horizontal reflection and shift so the positive and negative area pieces align with the given bounds.",
+          "keyPoints": [
+            {
+              "text": "\\(g(x)=f(ax+b)\\)",
+              "note": "For g(x)=f(6−x), the integral bounds map back to the two original lobes with the correct signs."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The original cubic has roots 0, 2, and 6; the target bounds split at x=4.",
+              "work": "\\(f(u)=0\\text{ at }u=0,2,6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+              }
+            },
+            {
+              "explain": "Reflect horizontally and translate 6 units right, so the input to f is 6−x.",
+              "work": "\\(g(x)=f(-x+6)\\)"
+            },
+            {
+              "explain": "Match the input with ax+b.",
+              "work": "\\(ax+b=-x+6\\Rightarrow\\boxed{a=-1,\\;b=6}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"175\" x2=\"545\" y2=\"175\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"310\" x2=\"100\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"100\" y1=\"171\" x2=\"100\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"100\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"234\" y1=\"171\" x2=\"234\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"234\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"502\" y1=\"171\" x2=\"502\" y2=\"179\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"502\" y=\"198\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M100 175 C131 110 171 75 234 175 C282 260 363 294 502 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M100 175 C131 110 171 75 234 175 L100 175Z\" fill=\"#10b981\" fill-opacity=\".20\"/><path d=\"M234 175 C282 260 363 294 502 175 L234 175Z\" fill=\"#f59e0b\" fill-opacity=\".20\"/><text x=\"165\" y=\"125\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">positive area</text><text x=\"365\" y=\"248\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">negative f(x)</text><text x=\"530\" y=\"165\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"109\" y=\"56\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"normal\">y</text></svg>"
+          }
         }
       ]
     },
@@ -1230,6 +1387,88 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q07",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A function has derivative \\(f'(x)=8\\sin4x\\) and \\(f(\\frac\\pi4)=1\\). Which is \\(f(x)\\)?",
+          "options": [
+            "\\(8\\cos4x+7\\)",
+            "\\(-2\\cos4x-1\\)",
+            "\\(2\\cos4x+3\\)",
+            "\\(2\\sin4x+1\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate using the reverse chain rule, then use the given function value to find the constant.",
+          "keyPoints": [
+            {
+              "text": "\\(f(\\frac\\pi4)=1\\)",
+              "note": "The inner angle 4x contributes a factor of 4 when differentiating cosine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Integrate 8 sin 4x using the reverse chain rule.",
+              "work": "\\(f(x)=-2\\cos4x+C\\)"
+            },
+            {
+              "explain": "Substitute x=π/4 and evaluate the cosine.",
+              "work": "\\(1=-2\\cos\\pi+C=2+C\\Rightarrow C=-1\\)"
+            },
+            {
+              "explain": "Insert the constant.",
+              "work": "\\(\\boxed{f(x)=-2\\cos4x-1}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\int24(2x-7)^5\\,dx\\).",
+          "options": [
+            "\\(2(2x-7)^6+C\\)",
+            "\\(4(2x-7)^6+C\\)",
+            "\\(24(2x-7)^6+C\\)",
+            "\\(2(2x-7)^5+C\\)"
+          ],
+          "answer": 0,
+          "hint": "The derivative of 2x−7 is 2, so compensate for that factor when integrating.",
+          "keyPoints": [
+            {
+              "text": "\\int24(2x-7)^5\\,dx",
+              "note": "Differentiate your proposed antiderivative to check the coefficient."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recognise the inner function and its derivative.",
+              "work": "\\(u=2x-7,\\quad du=2\\,dx\\)"
+            },
+            {
+              "explain": "Rewrite 24 dx as 12 du and integrate the fifth power.",
+              "work": "\\(\\int24u^5\\,dx=12\\int u^5du=12\\cdot\\frac{u^6}{6}+C=2u^6+C\\)"
+            },
+            {
+              "explain": "Substitute the original inner function back.",
+              "work": "\\(\\boxed{2(2x-7)^6+C}\\)"
+            }
+          ]
         }
       ]
     }

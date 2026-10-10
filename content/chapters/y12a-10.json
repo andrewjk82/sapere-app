@@ -513,6 +513,201 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q08",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A continuous random variable has density \\(f(x)=\\frac34(2x-x^2)\\) for \\(0\\le x\\le2\\). What is its mode?",
+          "options": [
+            "\\(0\\)",
+            "\\(0.5\\)",
+            "\\(0.75\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "The mode is where the density reaches its maximum. Differentiate the density and check the interval.",
+          "keyPoints": [
+            {
+              "text": "mode",
+              "note": "A stationary value must be compared with the endpoints of the allowed interval."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the density on 0≤x≤2.",
+              "work": "\\(f′(x)=\\frac34(2-2x)\\)"
+            },
+            {
+              "explain": "Set the derivative to zero to locate the interior maximum.",
+              "work": "\\(2-2x=0\\Rightarrow x=1\\)"
+            },
+            {
+              "explain": "The density is zero at both endpoints and positive inside, so its maximum occurs at x=1.",
+              "work": "\\(\\boxed{\\text{mode}=1}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q19a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A density is \\(f(x)=\\frac{k}{2x-1}\\) for \\(1\\le x\\le4\\) and zero otherwise. Show that \\(k=\\frac{2}{\\ln7}\\).",
+          "answer": "Sample answer: A density integrates to 1, so \\(\\int_1^4\\frac{k}{2x-1}dx=1\\). This gives \\(\\frac{k}{2}[\\ln(2x-1)]_1^4=\\frac{k}{2}\\ln7=1\\), hence \\(k=\\frac{2}{\\ln7}\\).",
+          "manual": true,
+          "hint": "A probability density has total area 1 over its support.",
+          "keyPoints": [
+            {
+              "text": "\\(1\\le x\\le4\\)",
+              "note": "Use the antiderivative of 1/(2x−1), including the inner derivative factor 1/2."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set the total probability over the support equal to 1.",
+              "work": "\\(\\int_1^4\\frac{k}{2x-1}\\,dx=1\\)"
+            },
+            {
+              "explain": "Integrate using the reverse chain rule.",
+              "work": "\\(\\frac{k}{2}[\\ln(2x-1)]_1^4=\\frac{k}{2}(\\ln7-\\ln1)\\)"
+            },
+            {
+              "explain": "Solve for k.",
+              "work": "\\(\\frac{k}{2}\\ln7=1\\Rightarrow\\boxed{k=\\frac{2}{\\ln7}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the density \\(f(x)=\\frac{k}{2x-1}\\) on \\([1,4]\\), find \\(P(X<2)\\).",
+          "options": [
+            "\\(\\frac{\\ln3}{\\ln7}\\)",
+            "\\(\\frac{\\ln7}{\\ln3}\\)",
+            "\\(\\frac{2\\ln3}{\\ln7}\\)",
+            "\\(\\frac{\\ln7-\\ln3}{\\ln7}\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate the density from its lower support bound 1 to 2, then substitute k.",
+          "keyPoints": [
+            {
+              "text": "\\(P(X<2)\\)",
+              "note": "For a continuous variable, a single endpoint has probability zero."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the probability as the area under the density from 1 to 2.",
+              "work": "\\(P(X<2)=\\int_1^2\\frac{k}{2x-1}\\,dx\\)"
+            },
+            {
+              "explain": "Evaluate the logarithmic integral.",
+              "work": "\\(P(X<2)=\\frac{k}{2}[\\ln(2x-1)]_1^2=\\frac{k}{2}\\ln3\\)"
+            },
+            {
+              "explain": "Substitute k=2/ln 7.",
+              "work": "\\(\\boxed{P(X<2)=\\frac{\\ln3}{\\ln7}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q25a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A density is \\(f(x)=\\frac{3x^2}{8}\\) for \\(0<x<a\\). Show that \\(a=2\\).",
+          "answer": "Sample answer: Normalize the density: \\(\\int_0^a\\frac{3x^2}{8}dx=1\\). Thus \\([x^3/8]_0^a=a^3/8=1\\), so \\(a^3=8\\) and, since a is positive, \\(a=2\\).",
+          "manual": true,
+          "hint": "The total area under a probability density over its support must equal 1.",
+          "keyPoints": [
+            {
+              "text": "\\(f(x)=\\frac{3x^2}{8}\\)",
+              "note": "The upper bound a is positive because it is the endpoint of the support."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set the integral over the entire support equal to 1.",
+              "work": "\\(\\int_0^a\\frac{3x^2}{8}\\,dx=1\\)"
+            },
+            {
+              "explain": "Integrate and substitute the limits.",
+              "work": "\\([\\frac{x^3}{8}]_0^a=\\frac{a^3}{8}=1\\)"
+            },
+            {
+              "explain": "Solve and choose the positive endpoint.",
+              "work": "\\(a^3=8\\Rightarrow\\boxed{a=2}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q25b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the density \\(f(x)=\\frac{3x^2}{8}\\) on \\((0,2)\\), find the exact median.",
+          "options": [
+            "\\(\\sqrt[3]{4}\\)",
+            "\\(\\sqrt2\\)",
+            "\\(\\frac43\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Set the cumulative probability from 0 to the median equal to one half.",
+          "keyPoints": [
+            {
+              "text": "exact median",
+              "note": "A median splits probability area in half; it does not split the interval length in half."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let the median be m and set the area from 0 to m equal to 1/2.",
+              "work": "\\(\\int_0^m\\frac{3x^2}{8}\\,dx=\\frac12\\)"
+            },
+            {
+              "explain": "Integrate and solve for m³.",
+              "work": "\\(\\frac{m^3}{8}=\\frac12\\Rightarrow m^3=4\\)"
+            },
+            {
+              "explain": "Take the positive cube root because m lies in (0,2).",
+              "work": "\\(\\boxed{m=\\sqrt[3]{4}}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1779,6 +1974,170 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q09",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Boys’ heights are normally distributed with mean 174 cm and standard deviation \\(s\\). Daniel is \\(0.25s\\) below the mean and John is \\(1.5s\\) above it. If John is 14 cm taller, find Daniel’s height.",
+          "options": [
+            "\\(170 cm\\)",
+            "\\(171 cm\\)",
+            "\\(172 cm\\)",
+            "\\(173 cm\\)"
+          ],
+          "answer": 2,
+          "hint": "Write both heights in terms of s and subtract to use the 14 cm difference.",
+          "keyPoints": [
+            {
+              "text": "John is 14 cm taller",
+              "note": "The standard deviation is the unknown scale s; do not treat 0.25s as 0.25 cm."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Express the two heights.",
+              "work": "\\(D=174-0.25s,\\quad J=174+1.5s\\)"
+            },
+            {
+              "explain": "Use the difference between them to solve for s.",
+              "work": "\\(J-D=1.75s=14\\Rightarrow s=8\\text{ cm}\\)"
+            },
+            {
+              "explain": "Substitute into Daniel’s expression.",
+              "work": "\\(D=174-0.25(8)=\\boxed{172\\text{ cm}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q22a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Test times are normally distributed with mean 37.5 min and standard deviation 1.5 min. Find the z-score for 34.5 min.",
+          "options": [
+            "\\(-2\\)",
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use z=(x−μ)/σ.",
+          "keyPoints": [
+            {
+              "text": "34.5 min",
+              "note": "A value below the mean has a negative z-score."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify x, the mean, and standard deviation.",
+              "work": "\\(x=34.5,\\quad\\mu=37.5,\\quad\\sigma=1.5\\)"
+            },
+            {
+              "explain": "Substitute into the standardisation formula.",
+              "work": "\\(z=\\frac{x-\\mu}{\\sigma}=\\frac{34.5-37.5}{1.5}\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\boxed{z=-2}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the empirical rule, what percentage of students finish in less than 34.5 minutes?",
+          "options": [
+            "\\(2.5%\\)",
+            "\\(5%\\)",
+            "\\(16%\\)",
+            "\\(32%\\)"
+          ],
+          "answer": 0,
+          "hint": "34.5 min is two standard deviations below the mean; use the lower tail outside the central 95%.",
+          "keyPoints": [
+            {
+              "text": "less than 34.5 minutes",
+              "note": "The 5% outside ±2σ is split evenly between two tails."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The z-score is −2.",
+              "work": "\\(z=\\frac{34.5-37.5}{1.5}=-2\\)"
+            },
+            {
+              "explain": "About 95% lie between z=−2 and z=2, leaving 5% in both tails.",
+              "work": "\\(100\\%-95\\%=5\\%\\)"
+            },
+            {
+              "explain": "Take half for the lower tail.",
+              "work": "\\(P(Z<-2)\\approx\\frac{5\\%}{2}=\\boxed{2.5\\%}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q22c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Approximately 68% of test times lie in a central interval (a,b). Find a and b.",
+          "options": [
+            "\\((34.5, 40.5)\\)",
+            "\\((36, 39)\\)",
+            "\\((35.5, 39.5)\\)",
+            "\\((37.5, 39)\\)"
+          ],
+          "answer": 1,
+          "hint": "The empirical rule places 68% within one standard deviation of the mean.",
+          "keyPoints": [
+            {
+              "text": "Approximately 68%",
+              "note": "Add and subtract one standard deviation from the mean."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a normal distribution, the central 68% is approximately μ±σ.",
+              "work": "\\(a=\\mu-\\sigma,\\quad b=\\mu+\\sigma\\)"
+            },
+            {
+              "explain": "Substitute μ=37.5 and σ=1.5.",
+              "work": "\\(a=37.5-1.5=36,\\quad b=37.5+1.5=39\\)"
+            },
+            {
+              "explain": "State the central interval.",
+              "work": "\\(\\boxed{(36,39)\\text{ minutes}}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1823,6 +2182,56 @@
             "examPaper": "asc-2020"
           },
           "xp": 3
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For a standard normal distribution, the area from z=0 to z=0.67 is about 0.25. Which scores are approximate outliers?",
+          "options": [
+            "\\(z<-0.67 or z>0.67\\)",
+            "\\(z<-1.34 or z>1.34\\)",
+            "\\(z<-2.68 or z>2.68\\)",
+            "\\(z<-3 or z>3\\)"
+          ],
+          "answer": 2,
+          "hint": "Use symmetry to identify Q1 and Q3, then apply the 1.5×IQR fences.",
+          "keyPoints": [
+            {
+              "text": "approximate outliers",
+              "note": "The IQR spans from −0.67 to 0.67, so it is twice 0.67."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "By symmetry, the quartiles are approximately −0.67 and 0.67.",
+              "work": "\\(Q_1=-0.67,\\quad Q_3=0.67\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the interquartile range and lower/upper fences.",
+              "work": "\\(IQR=1.34;\\quad Q_1-1.5IQR=-2.68,\\;Q_3+1.5IQR=2.68\\)"
+            },
+            {
+              "explain": "Values outside the fences are approximate outliers.",
+              "work": "\\(\\boxed{z<-2.68\\text{ or }z>2.68}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"260\" x2=\"545\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><path d=\"M75 255 C125 244 155 205 195 141 C225 93 255 70 300 68 C345 70 375 93 405 141 C445 205 475 244 535 255\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M300 68 C345 70 375 93 405 141 L405 260 L300 260 Z\" fill=\"#6366f1\" fill-opacity=\".22\"/><line x1=\"300\" y1=\"68\" x2=\"300\" y2=\"260\" stroke=\"#64748b\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"405\" y1=\"141\" x2=\"405\" y2=\"260\" stroke=\"#6366f1\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"300\" y=\"284\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><text x=\"405\" y=\"284\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0.67</text><text x=\"356\" y=\"213\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">area ≈ 0.25</text><text x=\"522\" y=\"248\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">z</text></svg>"
+          }
         }
       ]
     }

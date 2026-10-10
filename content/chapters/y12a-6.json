@@ -4949,6 +4949,47 @@
             }
           ],
           "timeLimit": 180
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the tangent to \\(y=\\sin(\\cos x)\\) at \\((\\frac\\pi2,0)\\).",
+          "options": [
+            "\\(y=x-\\frac\\pi2\\)",
+            "\\(y=-x+\\frac\\pi2\\)",
+            "\\(y=-x-\\frac\\pi2\\)",
+            "\\(y=\\frac\\pi2x\\)"
+          ],
+          "answer": 1,
+          "hint": "Differentiate with the chain rule, then use the point-gradient form of a line.",
+          "keyPoints": [
+            {
+              "text": "at",
+              "note": "The derivative of cos x supplies a negative sin x factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the composite sine and cosine functions.",
+              "work": "\\(y′=\\cos(\\cos x)(-\\sin x)\\)"
+            },
+            {
+              "explain": "Evaluate the gradient at x=π/2.",
+              "work": "\\(m=y′(\\frac\\pi2)=-1\\)"
+            },
+            {
+              "explain": "Use the point (π/2,0) in point-gradient form.",
+              "work": "\\(y-0=-1(x-\\frac\\pi2)\\Rightarrow\\boxed{y=-x+\\frac\\pi2}\\)"
+            }
+          ]
         }
       ]
     },

@@ -413,6 +413,88 @@
               "xp": 2
             }
           ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A four-sided die has probabilities \\(0.25, 0.4b, 2b, 0.15\\) for scores 1, 2, 3, 4. Find b.",
+          "options": [
+            "\\(0.20\\)",
+            "\\(0.25\\)",
+            "\\(0.30\\)",
+            "\\(0.40\\)"
+          ],
+          "answer": 1,
+          "hint": "The probabilities in the complete table must add to 1.",
+          "keyPoints": [
+            {
+              "text": "probabilities \\(0.25, 0.4b, 2b, 0.15\\)",
+              "note": "Add each score’s probability, including both terms that contain b."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set the total probability equal to 1.",
+              "work": "\\(0.25+0.4b+2b+0.15=1\\)"
+            },
+            {
+              "explain": "Combine constants and b-terms.",
+              "work": "\\(0.4+2.4b=1\\Rightarrow2.4b=0.6\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(\\boxed{b=0.25}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the probability table for the four-sided die, find the probability of rolling a number at most 2.",
+          "options": [
+            "\\(0.25\\)",
+            "\\(0.30\\)",
+            "\\(0.35\\)",
+            "\\(0.60\\)"
+          ],
+          "answer": 2,
+          "hint": "“At most 2” includes scores 1 and 2. Substitute the value of b first.",
+          "keyPoints": [
+            {
+              "text": "at most 2",
+              "note": "Add the probabilities for scores 1 and 2; do not include score 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the value b=0.25 and identify the included scores.",
+              "work": "\\(P(X\\le2)=P(X=1)+P(X=2)\\)"
+            },
+            {
+              "explain": "Substitute the table entries.",
+              "work": "\\(P(X\\le2)=0.25+0.4(0.25)\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\boxed{P(X\\le2)=0.35}\\)"
+            }
+          ]
         }
       ]
     },

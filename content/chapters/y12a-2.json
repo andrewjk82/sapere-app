@@ -49,6 +49,51 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q23a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch \\(y=|3x-6|\\), labelling both axis intercepts.",
+          "answer": "Sample answer: The graph is V-shaped with vertex and x-intercept (2,0), and y-intercept (0,6). The left branch has gradient −3 and the right branch has gradient 3.",
+          "manual": true,
+          "hint": "Set the expression inside the absolute value to zero for the vertex, and substitute x=0 for the y-intercept.",
+          "keyPoints": [
+            {
+              "text": "\\(y=|3x-6|\\)",
+              "note": "The absolute value keeps y non-negative and reflects the negative branch above the x-axis."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the vertex by setting the inside equal to zero.",
+              "work": "\\(3x-6=0\\Rightarrow x=2,\\quad y=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"275\" x2=\"540\" y2=\"275\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"310\" x2=\"300\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"216\" y1=\"271\" x2=\"216\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"216\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-2</text><line x1=\"300\" y1=\"271\" x2=\"300\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"384\" y1=\"271\" x2=\"384\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"384\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"468\" y1=\"271\" x2=\"468\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"468\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"552\" y1=\"271\" x2=\"552\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"552\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M132 58 L384 275 L552 130\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"384\" cy=\"275\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"392\" y=\"293\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,0)</text><circle cx=\"300\" cy=\"130\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"308\" y=\"122\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(0,6)</text><text x=\"525\" y=\"54\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = |3x − 6|</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the y-intercept and identify the two linear branches.",
+              "work": "\\(y(0)=6;\\quad y=6-3x\\ (x<2),\\quad y=3x-6\\ (x\\ge2)\\)"
+            },
+            {
+              "explain": "Draw the V through (0,6) and (2,0), continuing with the correct slopes.",
+              "work": "\\(\\text{intercepts: }(0,6),(2,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"275\" x2=\"540\" y2=\"275\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"310\" x2=\"300\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"216\" y1=\"271\" x2=\"216\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"216\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-2</text><line x1=\"300\" y1=\"271\" x2=\"300\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"384\" y1=\"271\" x2=\"384\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"384\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"468\" y1=\"271\" x2=\"468\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"468\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"552\" y1=\"271\" x2=\"552\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"552\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M132 58 L384 275 L552 130\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"384\" cy=\"275\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"392\" y=\"293\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,0)</text><circle cx=\"300\" cy=\"130\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"308\" y=\"122\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(0,6)</text><text x=\"525\" y=\"54\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = |3x − 6|</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"275\" x2=\"540\" y2=\"275\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"310\" x2=\"300\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"216\" y1=\"271\" x2=\"216\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"216\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-2</text><line x1=\"300\" y1=\"271\" x2=\"300\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"384\" y1=\"271\" x2=\"384\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"384\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"468\" y1=\"271\" x2=\"468\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"468\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"552\" y1=\"271\" x2=\"552\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"552\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M132 58 L384 275 L552 130\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"384\" cy=\"275\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"392\" y=\"293\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,0)</text><circle cx=\"300\" cy=\"130\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"308\" y=\"122\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(0,6)</text><text x=\"525\" y=\"54\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = |3x − 6|</text></svg>"
+          }
         }
       ]
     },
@@ -513,6 +558,91 @@
             "source": "SCN_20251126_1641.pdf",
             "course": "Year 12 Advanced",
             "origin": "teacher"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q20c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many solutions does \\(2x^3-3x^2=\\pi\\) have on \\(0\\le x\\le2\\)?",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare the horizontal line y=π with the curve’s minimum, maximum, and monotonic intervals.",
+          "keyPoints": [
+            {
+              "text": "\\(2x^3-3x^2=\\pi\\)",
+              "note": "The graph falls below zero before rising to its endpoint value 4."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The curve decreases from 0 to −1 on [0,1].",
+              "work": "\\(f(0)=0,\\quad f(1)=-1\\)"
+            },
+            {
+              "explain": "It then increases from −1 to 4 on [1,2].",
+              "work": "\\(f(2)=4>\\pi\\)"
+            },
+            {
+              "explain": "Since π is reached once on this strictly increasing section, there is one solution.",
+              "work": "\\(\\boxed{1\\text{ solution}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q23b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the graph of \\(y=|3x-6|\\), solve \\(|3x-6|<x\\).",
+          "options": [
+            "\\((−∞,1.5)\\)",
+            "\\((1.5,3)\\)",
+            "\\([1.5,3]\\)",
+            "\\((2,3)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find where the V-graph meets y=x, then identify where the V lies below the line.",
+          "keyPoints": [
+            {
+              "text": "\\(|3x-6|<x\\)",
+              "note": "The inequality is strict, so intersection points are excluded."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the intersections by solving the equality in each branch.",
+              "work": "\\(6-3x=x\\Rightarrow x=1.5;\\quad3x-6=x\\Rightarrow x=3\\)"
+            },
+            {
+              "explain": "Between these points, the V-shaped graph lies below y=x.",
+              "work": "\\(|3x-6|<x\\text{ for }1.5<x<3\\)"
+            },
+            {
+              "explain": "Use open endpoints because equality does not satisfy a strict inequality.",
+              "work": "\\(\\boxed{x\\in(1.5,3)}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"275\" x2=\"540\" y2=\"275\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"300\" y1=\"310\" x2=\"300\" y2=\"38\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"216\" y1=\"271\" x2=\"216\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"216\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-2</text><line x1=\"300\" y1=\"271\" x2=\"300\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"300\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"384\" y1=\"271\" x2=\"384\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"384\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"468\" y1=\"271\" x2=\"468\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"468\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"552\" y1=\"271\" x2=\"552\" y2=\"279\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"552\" y=\"298\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><path d=\"M132 58 L384 275 L552 130\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"384\" cy=\"275\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"392\" y=\"293\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,0)</text><circle cx=\"300\" cy=\"130\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"308\" y=\"122\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(0,6)</text><text x=\"525\" y=\"54\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = |3x − 6|</text></svg>"
           }
         }
       ]
@@ -1358,6 +1488,47 @@
               "note": "Keep x-coordinates; halve y-coordinates."
             }
           ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which sequence of transformations changes \\(y=2^x\\) into \\(y=2^{x+1}-3\\)?",
+          "options": [
+            "Reflect in the x-axis, shift right 1, then down 3.",
+            "Dilate vertically by factor 2, shift left 1, then down 3.",
+            "Shift left 1, dilate vertically by factor 2, then down 3.",
+            "Dilate horizontally by factor 2, shift down 1, then left 3."
+          ],
+          "answer": 2,
+          "hint": "Rewrite 2^(x+1) as 2·2^x, then interpret the outside and inside changes.",
+          "keyPoints": [
+            {
+              "text": "\\(y=2^{x+1}-3\\)",
+              "note": "An inside +1 shifts the graph left; the outside −3 shifts it down."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the exponent shift from the vertical translation.",
+              "work": "\\(2^{x+1}-3=2\\cdot2^x-3\\)"
+            },
+            {
+              "explain": "The factor 2 outside the original function is a vertical dilation; x+1 moves the graph left 1.",
+              "work": "\\(y=2f(x+1)-3\\)"
+            },
+            {
+              "explain": "Apply the transformations in a valid stated order.",
+              "work": "\\(\\boxed{\\text{vertical dilation by }2,\\;\\text{left }1,\\;\\text{down }3}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1941,6 +2112,230 @@
             {
               "text": "\\(0\\le t\\le40\\)",
               "note": "The radius is 35 m, centre height 35 m, and period 20 minutes; the rider starts at the minimum."
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The graph of \\(y=a\\sin(bx)+c\\), with b>0, is shown. Find (a,b,c).",
+          "options": [
+            "\\((2, \\frac{\\pi}{6}, 3)\\)",
+            "\\((-2, \\frac{\\pi}{6}, 3)\\)",
+            "\\((-2, \\frac{\\pi}{12}, 1)\\)",
+            "\\((2, \\frac{\\pi}{3}, 3)\\)"
+          ],
+          "answer": 1,
+          "hint": "Read the midline and amplitude from the maximum and minimum, then use the period to find b.",
+          "keyPoints": [
+            {
+              "text": "\\(y=a\\sin(bx)+c\\)",
+              "note": "The graph falls from its midline at x=0, so the sine coefficient is negative."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read maximum 5 and minimum 1 to find the midline and amplitude.",
+              "work": "\\(c=\\frac{5+1}{2}=3,\\quad |a|=\\frac{5-1}{2}=2\\)"
+            },
+            {
+              "explain": "The curve decreases from its midline at x=0, so a is negative. Maxima at −3 and 9 give period 12.",
+              "work": "\\(a=-2,\\quad T=12=\\frac{2\\pi}{b}\\Rightarrow b=\\frac\\pi6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"310\" x2=\"125\" y2=\"42\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"266\" x2=\"125\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"125\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-3</text><line x1=\"230\" y1=\"266\" x2=\"230\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"230\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"335\" y1=\"266\" x2=\"335\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"335\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">3</text><line x1=\"440\" y1=\"266\" x2=\"440\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"440\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><line x1=\"545\" y1=\"266\" x2=\"545\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"545\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">9</text><line x1=\"121\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"121\" y1=\"170\" x2=\"545\" y2=\"170\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"174\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">3</text><line x1=\"121\" y1=\"70\" x2=\"545\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"74\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">5</text><path d=\"M65 120 C100 120 128 170 160 220 C190 263 211 270 230 270 C269 270 300 220 335 170 C370 120 395 120 440 120 C485 120 515 170 545 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"120\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"133\" y=\"110\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">max 5</text><circle cx=\"335\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"343\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">min 1</text><line x1=\"125\" y1=\"112\" x2=\"335\" y2=\"112\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"230\" y=\"98\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">period = 12</text><text x=\"505\" y=\"49\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = a sin(bx) + c</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine the parameters.",
+              "work": "\\(\\boxed{(a,b,c)=(-2,\\frac\\pi6,3)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"310\" x2=\"125\" y2=\"42\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"266\" x2=\"125\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"125\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-3</text><line x1=\"230\" y1=\"266\" x2=\"230\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"230\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"335\" y1=\"266\" x2=\"335\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"335\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">3</text><line x1=\"440\" y1=\"266\" x2=\"440\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"440\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><line x1=\"545\" y1=\"266\" x2=\"545\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"545\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">9</text><line x1=\"121\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"121\" y1=\"170\" x2=\"545\" y2=\"170\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"174\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">3</text><line x1=\"121\" y1=\"70\" x2=\"545\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"74\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">5</text><path d=\"M65 120 C100 120 128 170 160 220 C190 263 211 270 230 270 C269 270 300 220 335 170 C370 120 395 120 440 120 C485 120 515 170 545 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"120\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"133\" y=\"110\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">max 5</text><circle cx=\"335\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"343\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">min 1</text><line x1=\"125\" y1=\"112\" x2=\"335\" y2=\"112\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"230\" y=\"98\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">period = 12</text><text x=\"505\" y=\"49\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = a sin(bx) + c</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"310\" x2=\"125\" y2=\"42\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"125\" y1=\"266\" x2=\"125\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"125\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">-3</text><line x1=\"230\" y1=\"266\" x2=\"230\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"230\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"335\" y1=\"266\" x2=\"335\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"335\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">3</text><line x1=\"440\" y1=\"266\" x2=\"440\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"440\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">6</text><line x1=\"545\" y1=\"266\" x2=\"545\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"545\" y=\"292\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">9</text><line x1=\"121\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"121\" y1=\"170\" x2=\"545\" y2=\"170\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"174\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">3</text><line x1=\"121\" y1=\"70\" x2=\"545\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\"/><text x=\"111\" y=\"74\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">5</text><path d=\"M65 120 C100 120 128 170 160 220 C190 263 211 270 230 270 C269 270 300 220 335 170 C370 120 395 120 440 120 C485 120 515 170 545 220\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"120\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"133\" y=\"110\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">max 5</text><circle cx=\"335\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"343\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">min 1</text><line x1=\"125\" y1=\"112\" x2=\"335\" y2=\"112\" stroke=\"#10b981\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"230\" y=\"98\" fill=\"#047857\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">period = 12</text><text x=\"505\" y=\"49\" fill=\"#4f46e5\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"bold\">y = a sin(bx) + c</text></svg>"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q32a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Water height is \\(h(t)=2.2+1.2\\cos(\\frac{\\pi t}{12})\\), where t is hours after 5 am. Find the height at 5 am.",
+          "options": [
+            "\\(1.0 m\\)",
+            "\\(2.2 m\\)",
+            "\\(3.4 m\\)",
+            "\\(4.6 m\\)"
+          ],
+          "answer": 2,
+          "hint": "At 5 am, t=0. Substitute into the cosine model.",
+          "keyPoints": [
+            {
+              "text": "at 5 am",
+              "note": "The time variable is measured after 5 am, so the starting time corresponds to t=0."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set t=0 at the starting time.",
+              "work": "\\(h(0)=2.2+1.2\\cos0\\)"
+            },
+            {
+              "explain": "Use cos 0=1.",
+              "work": "\\(h(0)=2.2+1.2(1)=3.4\\)"
+            },
+            {
+              "explain": "State the height with units.",
+              "work": "\\(\\boxed{3.4\\text{ m}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"305\" x2=\"95\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"266\" x2=\"95\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"167\" y1=\"266\" x2=\"167\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"167\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"239\" y1=\"266\" x2=\"239\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"239\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">8</text><line x1=\"311\" y1=\"266\" x2=\"311\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"311\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">12</text><line x1=\"383\" y1=\"266\" x2=\"383\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"383\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">16</text><line x1=\"455\" y1=\"266\" x2=\"455\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"455\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">20</text><line x1=\"527\" y1=\"266\" x2=\"527\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"527\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">24</text><line x1=\"91\" y1=\"270\" x2=\"99\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"91\" y1=\"174\" x2=\"99\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"178\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">2.2</text><line x1=\"91\" y1=\"78\" x2=\"99\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"82\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">3.4</text><path d=\"M95 78 C145 78 190 174 239 222 C287 270 335 270 383 222 C431 174 479 78 527 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"95\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"102\" y=\"69\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">3.4</text><circle cx=\"311\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"319\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">1.0</text><circle cx=\"527\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"519\" y=\"68\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">3.4</text><line x1=\"95\" y1=\"174\" x2=\"527\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\"/><text x=\"300\" y=\"164\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">midline 2.2</text><text x=\"540\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">t (hours)</text><text x=\"104\" y=\"57\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">h (m)</text></svg>"
+              }
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q32b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch \\(h(t)=2.2+1.2\\cos(\\frac{\\pi t}{12})\\) for 0≤t≤24.",
+          "answer": "Sample answer: Draw a cosine curve through (0,3.4), (6,2.2), (12,1.0), (18,2.2), and (24,3.4), with midline h=2.2 and range [1.0,3.4].",
+          "manual": true,
+          "hint": "Find the midline, amplitude, and period, then mark the quarter-period points.",
+          "keyPoints": [
+            {
+              "text": "for 0≤t≤24",
+              "note": "A cosine graph starts at its maximum here because its coefficient is positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify midline, amplitude, and period.",
+              "work": "\\(h=2.2+1.2\\cos(\\frac{\\pi t}{12});\\quad A=1.2,\\;T=\\frac{2\\pi}{\\pi/12}=24\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"305\" x2=\"95\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"266\" x2=\"95\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"167\" y1=\"266\" x2=\"167\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"167\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"239\" y1=\"266\" x2=\"239\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"239\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">8</text><line x1=\"311\" y1=\"266\" x2=\"311\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"311\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">12</text><line x1=\"383\" y1=\"266\" x2=\"383\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"383\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">16</text><line x1=\"455\" y1=\"266\" x2=\"455\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"455\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">20</text><line x1=\"527\" y1=\"266\" x2=\"527\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"527\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">24</text><line x1=\"91\" y1=\"270\" x2=\"99\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"91\" y1=\"174\" x2=\"99\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"178\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">2.2</text><line x1=\"91\" y1=\"78\" x2=\"99\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"82\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">3.4</text><path d=\"M95 78 C145 78 190 174 239 222 C287 270 335 270 383 222 C431 174 479 78 527 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"95\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"102\" y=\"69\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">3.4</text><circle cx=\"311\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"319\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">1.0</text><circle cx=\"527\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"519\" y=\"68\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">3.4</text><line x1=\"95\" y1=\"174\" x2=\"527\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\"/><text x=\"300\" y=\"164\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">midline 2.2</text><text x=\"540\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">t (hours)</text><text x=\"104\" y=\"57\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">h (m)</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the maximum, minimum, and midline points at quarter-period intervals.",
+              "work": "\\(h(0)=3.4,\\;h(6)=2.2,\\;h(12)=1.0,\\;h(18)=2.2,\\;h(24)=3.4\\)"
+            },
+            {
+              "explain": "Plot and smoothly join the points with one complete cosine cycle.",
+              "work": "\\(\\text{range }[1.0,3.4]\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"305\" x2=\"95\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"266\" x2=\"95\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"167\" y1=\"266\" x2=\"167\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"167\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"239\" y1=\"266\" x2=\"239\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"239\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">8</text><line x1=\"311\" y1=\"266\" x2=\"311\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"311\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">12</text><line x1=\"383\" y1=\"266\" x2=\"383\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"383\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">16</text><line x1=\"455\" y1=\"266\" x2=\"455\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"455\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">20</text><line x1=\"527\" y1=\"266\" x2=\"527\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"527\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">24</text><line x1=\"91\" y1=\"270\" x2=\"99\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"91\" y1=\"174\" x2=\"99\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"178\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">2.2</text><line x1=\"91\" y1=\"78\" x2=\"99\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"82\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">3.4</text><path d=\"M95 78 C145 78 190 174 239 222 C287 270 335 270 383 222 C431 174 479 78 527 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"95\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"102\" y=\"69\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">3.4</text><circle cx=\"311\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"319\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">1.0</text><circle cx=\"527\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"519\" y=\"68\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">3.4</text><line x1=\"95\" y1=\"174\" x2=\"527\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\"/><text x=\"300\" y=\"164\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">midline 2.2</text><text x=\"540\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">t (hours)</text><text x=\"104\" y=\"57\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">h (m)</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"305\" x2=\"95\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"266\" x2=\"95\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"167\" y1=\"266\" x2=\"167\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"167\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"239\" y1=\"266\" x2=\"239\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"239\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">8</text><line x1=\"311\" y1=\"266\" x2=\"311\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"311\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">12</text><line x1=\"383\" y1=\"266\" x2=\"383\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"383\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">16</text><line x1=\"455\" y1=\"266\" x2=\"455\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"455\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">20</text><line x1=\"527\" y1=\"266\" x2=\"527\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"527\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">24</text><line x1=\"91\" y1=\"270\" x2=\"99\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"91\" y1=\"174\" x2=\"99\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"178\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">2.2</text><line x1=\"91\" y1=\"78\" x2=\"99\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"82\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">3.4</text><path d=\"M95 78 C145 78 190 174 239 222 C287 270 335 270 383 222 C431 174 479 78 527 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"95\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"102\" y=\"69\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">3.4</text><circle cx=\"311\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"319\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">1.0</text><circle cx=\"527\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"519\" y=\"68\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">3.4</text><line x1=\"95\" y1=\"174\" x2=\"527\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\"/><text x=\"300\" y=\"164\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">midline 2.2</text><text x=\"540\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">t (hours)</text><text x=\"104\" y=\"57\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">h (m)</text></svg>"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q32c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At what first time after 5 am does the water height drop to 1.6 m?",
+          "options": [
+            "\\(4 h\\)",
+            "\\(8 h\\)",
+            "\\(12 h\\)",
+            "\\(16 h\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute h=1.6, isolate cosine, and choose the first solution in the 24-hour cycle.",
+          "keyPoints": [
+            {
+              "text": "first time after 5 am",
+              "note": "The first crossing occurs while the cosine graph is descending from its maximum."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute h=1.6 into the model and isolate the cosine.",
+              "work": "\\(2.2+1.2\\cos(\\frac{\\pi t}{12})=1.6\\Rightarrow\\cos(\\frac{\\pi t}{12})=-\\frac12\\)"
+            },
+            {
+              "explain": "On the descending part of the cycle, the first angle with cosine −1/2 is 2π/3.",
+              "work": "\\(\\frac{\\pi t}{12}=\\frac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Solve for t.",
+              "work": "\\(t=8\\boxed{\\text{ hours after 5 am}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"65\" y1=\"270\" x2=\"545\" y2=\"270\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"305\" x2=\"95\" y2=\"45\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"266\" x2=\"95\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"167\" y1=\"266\" x2=\"167\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"167\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"239\" y1=\"266\" x2=\"239\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"239\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">8</text><line x1=\"311\" y1=\"266\" x2=\"311\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"311\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">12</text><line x1=\"383\" y1=\"266\" x2=\"383\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"383\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">16</text><line x1=\"455\" y1=\"266\" x2=\"455\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"455\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">20</text><line x1=\"527\" y1=\"266\" x2=\"527\" y2=\"274\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"527\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"middle\" font-weight=\"normal\">24</text><line x1=\"91\" y1=\"270\" x2=\"99\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"274\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">1</text><line x1=\"91\" y1=\"174\" x2=\"99\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"178\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">2.2</text><line x1=\"91\" y1=\"78\" x2=\"99\" y2=\"78\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"82\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"11\" text-anchor=\"end\" font-weight=\"normal\">3.4</text><path d=\"M95 78 C145 78 190 174 239 222 C287 270 335 270 383 222 C431 174 479 78 527 78\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><circle cx=\"95\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"102\" y=\"69\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">3.4</text><circle cx=\"311\" cy=\"270\" r=\"4\" fill=\"#f59e0b\" stroke=\"none\" stroke-width=\"1\"/><text x=\"319\" y=\"288\" fill=\"#f59e0b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">1.0</text><circle cx=\"527\" cy=\"78\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"519\" y=\"68\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"bold\">3.4</text><line x1=\"95\" y1=\"174\" x2=\"527\" y2=\"174\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\"/><text x=\"300\" y=\"164\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">midline 2.2</text><text x=\"540\" y=\"293\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">t (hours)</text><text x=\"104\" y=\"57\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"normal\">h (m)</text></svg>"
+              }
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q32d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For how many hours in a 24-hour period is the water height above 1.6 m?",
+          "options": [
+            "\\(8 h\\)",
+            "\\(12 h\\)",
+            "\\(16 h\\)",
+            "\\(20 h\\)"
+          ],
+          "answer": 2,
+          "hint": "The level is below 1.6 m between its two crossings; subtract that duration from 24 hours.",
+          "keyPoints": [
+            {
+              "text": "above 1.6 m",
+              "note": "“Above” excludes the two exact crossing times, which do not change the duration."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The water crosses 1.6 m at t=8 and t=16.",
+              "work": "\\(8\\le t\\le16\\text{ is below the threshold}\\)"
+            },
+            {
+              "explain": "Find the duration below the threshold.",
+              "work": "\\(16-8=8\\text{ hours}\\)"
+            },
+            {
+              "explain": "Subtract from the 24-hour period.",
+              "work": "\\(24-8=\\boxed{16\\text{ hours}}\\)"
             }
           ]
         }

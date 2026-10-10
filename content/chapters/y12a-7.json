@@ -622,6 +622,91 @@
             "grade": "12"
           },
           "xp": 3
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A particle has displacement \\(x=e^t-3e^{2t}\\) for \\(t\\ge0\\). Which statement explains why it never comes to rest?",
+          "options": [
+            "Its velocity is always positive because e^t>0.",
+            "Its velocity is \\(e^t(1-6e^t)<0\\) for every t≥0.",
+            "Its velocity is zero at t=ln 6.",
+            "Its displacement is negative, so it is at rest."
+          ],
+          "answer": 1,
+          "hint": "Differentiate displacement to find velocity, then use e^t≥1 on the given time domain.",
+          "keyPoints": [
+            {
+              "text": "\\(t\\ge0\\)",
+              "note": "A particle is at rest only when its velocity is zero, not when displacement is negative."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate displacement.",
+              "work": "\\(v=\\frac{dx}{dt}=e^t-6e^{2t}\\)"
+            },
+            {
+              "explain": "Factor the velocity and use the time restriction.",
+              "work": "\\(v=e^t(1-6e^t),\\quad e^t\\ge1\\Rightarrow1-6e^t\\le-5<0\\)"
+            },
+            {
+              "explain": "Velocity never equals zero for t≥0.",
+              "work": "\\(\\boxed{v<0\\text{ for all }t\\ge0,\\text{ so the particle never rests}}\\)"
+            }
+          ]
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q30b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the piecewise velocity in Question 30, when is the acceleration zero?",
+          "options": [
+            "\\(t=2 only\\)",
+            "\\(t=2 or t>5\\)",
+            "\\(t=4 or t=5\\)",
+            "\\(t<2\\)"
+          ],
+          "answer": 1,
+          "hint": "Acceleration is the gradient of the velocity-time graph on each smooth interval.",
+          "keyPoints": [
+            {
+              "text": "acceleration zero",
+              "note": "At t=5 the piecewise gradient changes abruptly, so acceleration is not defined at that instant."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the quadratic velocity for 0≤t<5.",
+              "work": "\\(a(t)=v′(t)=4-2t\\)"
+            },
+            {
+              "explain": "Set this branch equal to zero.",
+              "work": "\\(4-2t=0\\Rightarrow t=2\\)"
+            },
+            {
+              "explain": "For t>5, velocity is constant −5, so its gradient is zero; at t=5 there is a corner.",
+              "work": "\\(\\boxed{t=2\\text{ or }t>5}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"195\" x2=\"545\" y2=\"195\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"310\" x2=\"95\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"191\" x2=\"95\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"215\" y1=\"191\" x2=\"215\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"215\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"335\" y1=\"191\" x2=\"335\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"335\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"395\" y1=\"191\" x2=\"395\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"395\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">5</text><line x1=\"515\" y1=\"191\" x2=\"515\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"515\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">7</text><line x1=\"91\" y1=\"315\" x2=\"99\" y2=\"315\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"319\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">-5</text><line x1=\"91\" y1=\"195\" x2=\"99\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"199\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">0</text><line x1=\"91\" y1=\"99\" x2=\"99\" y2=\"99\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"103\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">4</text><path d=\"M95 195 Q155 99 215 99 Q275 99 335 195 L395 315\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><line x1=\"395\" y1=\"315\" x2=\"545\" y2=\"315\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\" /><circle cx=\"215\" cy=\"99\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"223\" y=\"89\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,4)</text><circle cx=\"335\" cy=\"195\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"343\" y=\"185\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(4,0)</text><text x=\"530\" y=\"305\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">v = −5</text><text x=\"530\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">t (s)</text><text x=\"105\" y=\"63\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"start\" font-weight=\"normal\">v (m/s)</text></svg>"
+          }
         }
       ]
     },
@@ -820,6 +905,50 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
+          }
+        },
+        {
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Amity 2020 Mathematics Advanced HSC Trial",
+            "school": "Amity",
+            "sourceYear": 2020
+          },
+          "id": "amity2020-ma-q30a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle starts at the origin with velocity \\(v(t)=4t-t^2\\) for 0≤t≤5, then v(t)=−5 for t>5. When does it first return to the origin?",
+          "options": [
+            "\\(\\frac{5}{3} s\\)",
+            "\\(5 s\\)",
+            "\\(\\frac{20}{3} s\\)",
+            "\\(\\frac{25}{3} s\\)"
+          ],
+          "answer": 2,
+          "hint": "Set the total signed area under the velocity graph from 0 to the return time equal to zero.",
+          "keyPoints": [
+            {
+              "text": "return to the origin",
+              "note": "The velocity becomes negative after t=4, so the later negative area cancels the earlier positive area."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Integrate the positive/curved section from 0 to 5.",
+              "work": "\\(\\int_0^5(4t-t^2)dt=[2t^2-\\frac{t^3}{3}]_0^5=\\frac{25}{3}\\)"
+            },
+            {
+              "explain": "For t>5, the velocity is −5; let the return time be T and set net displacement to zero.",
+              "work": "\\(\\frac{25}{3}-5(T-5)=0\\)"
+            },
+            {
+              "explain": "Solve for T.",
+              "work": "\\(5T=\\frac{100}{3}\\Rightarrow\\boxed{T=\\frac{20}{3}\\text{ s}}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 340\" width=\"100%\" style=\"display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"598\" height=\"338\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"70\" y1=\"195\" x2=\"545\" y2=\"195\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"310\" x2=\"95\" y2=\"50\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" /><line x1=\"95\" y1=\"191\" x2=\"95\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"95\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">0</text><line x1=\"215\" y1=\"191\" x2=\"215\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"215\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">2</text><line x1=\"335\" y1=\"191\" x2=\"335\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"335\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">4</text><line x1=\"395\" y1=\"191\" x2=\"395\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"395\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">5</text><line x1=\"515\" y1=\"191\" x2=\"515\" y2=\"199\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"515\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">7</text><line x1=\"91\" y1=\"315\" x2=\"99\" y2=\"315\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"319\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">-5</text><line x1=\"91\" y1=\"195\" x2=\"99\" y2=\"195\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"199\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">0</text><line x1=\"91\" y1=\"99\" x2=\"99\" y2=\"99\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-linecap=\"round\" /><text x=\"83\" y=\"103\" fill=\"#64748b\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">4</text><path d=\"M95 195 Q155 99 215 99 Q275 99 335 195 L395 315\" fill=\"none\" stroke=\"#4f46e5\" stroke-width=\"4\"/><line x1=\"395\" y1=\"315\" x2=\"545\" y2=\"315\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\" /><circle cx=\"215\" cy=\"99\" r=\"4\" fill=\"#2563eb\" stroke=\"none\" stroke-width=\"1\"/><text x=\"223\" y=\"89\" fill=\"#2563eb\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(2,4)</text><circle cx=\"335\" cy=\"195\" r=\"4\" fill=\"#10b981\" stroke=\"none\" stroke-width=\"1\"/><text x=\"343\" y=\"185\" fill=\"#10b981\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"start\" font-weight=\"bold\">(4,0)</text><text x=\"530\" y=\"305\" fill=\"#b45309\" font-family=\"Arial,sans-serif\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">v = −5</text><text x=\"530\" y=\"219\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">t (s)</text><text x=\"105\" y=\"63\" fill=\"#1e293b\" font-family=\"Arial,sans-serif\" font-size=\"13\" text-anchor=\"start\" font-weight=\"normal\">v (m/s)</text></svg>"
           }
         }
       ]
