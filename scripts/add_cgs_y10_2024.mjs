@@ -59,11 +59,11 @@ add(12,'y10-12b',mc('cgs-y10-2024-q1','easy','From the right-triangle diagram, w
   st('Use the sine ratio because the question asks for sine.','\\(\\sin60^\\circ=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{\\sqrt{3}}{2}\\)'),
   st('Match the exact ratio with the choices; do not swap sine and cosine.','\\(\\boxed{\\sin60^\\circ=\\frac{\\sqrt{3}}{2}}\\)')], 'tri30'));
 add(3,'y10-3b',mc('cgs-y10-2024-q2','easy','The number line shows an open endpoint at −1 and is shaded to the right. Which inequality is represented?',[
-  '\\(x\\le -1\\)','\\(-1<x\\le1\\)','\\(x<-1\\)','\\(x>-1\\)'],3,
+  '\\(x \\le -1\\)','\\(-1 < x \\le 1\\)','\\(x < -1\\)','\\(x > -1\\)'],3,
   'An open circle excludes its value. The ray extends right, so values larger than −1 are included.','open endpoint at −1','An open circle means strict inequality; the shaded ray shows which values satisfy it.',[
   st('The shaded ray extends from −1 toward larger values.','\\(-1\\quad\\longrightarrow\\quad+\\infty\\)'),
-  st('The open endpoint at −1 means x is greater than −1, not equal to it.','\\(x>-1\\)'),
-  st('There is no right endpoint, so all greater values are included.','\\(\\boxed{x>-1}\\)')], 'ineq'));
+  st('The open endpoint at −1 means x is greater than −1, not equal to it.','\\(x > -1\\)'),
+  st('There is no right endpoint, so all greater values are included.','\\(\\boxed{x > -1}\\)')], 'ineq'));
 add(9,'y10-9a',mc('cgs-y10-2024-q3','easy','Simplify \\( (4a^5)^2 \\).',['\\(8a^7\\)','\\(4a^{10}\\)','\\(16a^7\\)','\\(16a^{10}\\)'],3,
   'Square the coefficient and multiply the exponent on a by the outside power.','\\((4a^5)^2\\)','Apply the power to both the coefficient and the variable factor.',[
   st('Apply the power of a product to both factors.','\\((4a^5)^2=4^2(a^5)^2\\)'),

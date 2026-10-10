@@ -5224,10 +5224,10 @@
           "difficulty": "easy",
           "stem": "The number line shows an open endpoint at −1 and is shaded to the right. Which inequality is represented?",
           "options": [
-            "\\(x\\le -1\\)",
-            "\\(-1<x\\le1\\)",
-            "\\(x<-1\\)",
-            "\\(x>-1\\)"
+            "\\(x \\le -1\\)",
+            "\\(-1 < x \\le 1\\)",
+            "\\(x < -1\\)",
+            "\\(x > -1\\)"
           ],
           "answer": 3,
           "hint": "An open circle excludes its value. The ray extends right, so values larger than −1 are included.",
@@ -5244,11 +5244,11 @@
             },
             {
               "explain": "The open endpoint at −1 means x is greater than −1, not equal to it.",
-              "work": "\\(x>-1\\)"
+              "work": "\\(x > -1\\)"
             },
             {
               "explain": "There is no right endpoint, so all greater values are included.",
-              "work": "\\(\\boxed{x>-1}\\)"
+              "work": "\\(\\boxed{x > -1}\\)"
             }
           ],
           "figure": {
