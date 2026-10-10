@@ -268,13 +268,13 @@ add(11,'y10-11b',mc('cgs-y10-2024-s2-q15','medium','Describe the transformations
    st('Step 1 – reflect in the x-axis. The negative sign outside the fraction changes every y-value to −y, so each point flips vertically: (x, y) → (x, −y). The asymptotes do not move.','\\\\(y=\\\\frac3x\\\\longrightarrow y=-\\\\frac3x,\\\\quad (1,3)\\\\to(1,-3),\\\\ (3,1)\\\\to(3,-1)\\\\)','hypReflect'),
    st('Step 2 – translate 5 units right. Replacing x by x − 5 moves every point 5 units to the right: (x, y) → (x + 5, y). To get the same output as before, the input must now be 5 larger (e.g. at x = 6, −3/(6 − 5) = −3, the value −3/x gave at x = 1). The vertical asymptote moves from x = 0 to x = 5; y = 0 stays. Note x − 5 moves RIGHT, not left.','\\\\(y=-\\\\frac3x\\\\longrightarrow y=-\\\\frac3{x-5},\\\\quad (1,-3)\\\\to(6,-3),\\\\ (3,-1)\\\\to(8,-1)\\\\)','hypShift'),
    st('Combine both transformations in order: reflect first, then translate. The final graph has asymptotes x = 5 and y = 0.','\\\\(\\\\boxed{\\\\text{reflect in the x-axis, then shift 5 right}}\\\\)','hypFinal') ]));
-add(9,'y10-9d',mc('cgs-y10-2024-s2-q16','hard','The diagram shows \\(y=2^x\\), the line \\(x+3y=3\\), and the indicated projections. Find the x-coordinate of P, where the line meets the x-axis.',[
+add(9,'y10-9d',mc('cgs-y10-2024-s2-q16','hard','The line \\(x+3y=3\\) meets the x-axis at A. The point B lies on the curve \\(y=2^x\\) directly above A. The horizontal line through B meets the line \\(x+3y=3\\) at C, and P is the point on the x-axis directly below C. Find the x-coordinate of P.',[
   '\\(-21\\)','\\(-3\\)','\\(3\\)','\\(21\\)'],0,
-  'Use the line’s x-intercept to locate x = 3, transfer that x-value to the exponential curve, and follow the projections.','\\(y=2^x\\)','The dotted projections connect the line’s x-intercept, the exponential curve and the line at a shared height.',[
+  'Find A from the line’s x-intercept, find B on the exponential directly above A, then move horizontally to the line and drop down to the x-axis.','\\(y=2^x\\)','The dotted projections connect the line’s x-intercept, the exponential curve and the line at a shared height.',[
   st('Find where the line meets the x-axis by setting y = 0.','\\(x+3(0)=3\\Rightarrow x=3\\)','expLine'),
   st('At x = 3 on the exponential curve, calculate its height.','\\(y=2^3=8\\)'),
   st('Follow the horizontal projection to the line and solve for its x-coordinate at y = 8.','\\(x+3(8)=3\\Rightarrow x+24=3\\Rightarrow x=-21\\)','expLine'),
-  st('The vertical projection from this point meets the x-axis at P.','\\(\\boxed{P=(-21,0)}\\)') ],'expLine'));
+  st('The vertical projection from this point meets the x-axis at P.','\\(\\boxed{P=(-21,0)}\\)') ]));
 
 // Trigonometry
 const tri17='A triangle has an angle of 100°, the side opposite that angle is 5 cm, and the side opposite the unknown angle θ is 3 cm.';

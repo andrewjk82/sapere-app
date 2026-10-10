@@ -3597,7 +3597,7 @@
           "id": "cgs-y10-2024-s2-q16",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "The diagram shows \\(y=2^x\\), the line \\(x+3y=3\\), and the indicated projections. Find the x-coordinate of P, where the line meets the x-axis.",
+          "stem": "The line \\(x+3y=3\\) meets the x-axis at A. The point B lies on the curve \\(y=2^x\\) directly above A. The horizontal line through B meets the line \\(x+3y=3\\) at C, and P is the point on the x-axis directly below C. Find the x-coordinate of P.",
           "options": [
             "\\(-21\\)",
             "\\(-3\\)",
@@ -3605,7 +3605,7 @@
             "\\(21\\)"
           ],
           "answer": 0,
-          "hint": "Use the line’s x-intercept to locate x = 3, transfer that x-value to the exponential curve, and follow the projections.",
+          "hint": "Find A from the line’s x-intercept, find B on the exponential directly above A, then move horizontally to the line and drop down to the x-axis.",
           "keyPoints": [
             {
               "text": "\\(y=2^x\\)",
@@ -3636,9 +3636,6 @@
               "work": "\\(\\boxed{P=(-21,0)}\\)"
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 300\" width=\"78%\" style=\"display:block;margin:0 auto;max-width:100%;height:auto;font-family:Arial,sans-serif\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"298\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><line x1=\"45\" y1=\"230\" x2=\"455\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"250\" y1=\"270\" x2=\"250\" y2=\"35\" stroke=\"#64748b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"451\" y=\"250\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">x</text><text x=\"238\" y=\"43\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y</text><path d=\"M220 225 C239 221 252 205 267 177 C283 148 294 113 300 92\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"3\"/><path d=\"M80 95L300 230\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\"/><line x1=\"80\" y1=\"95\" x2=\"300\" y2=\"95\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"95\" x2=\"80\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"95\" x2=\"300\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 5\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"95\" r=\"5\" fill=\"#b91c1c\"/><circle cx=\"300\" cy=\"95\" r=\"5\" fill=\"#b91c1c\"/><circle cx=\"300\" cy=\"230\" r=\"5\" fill=\"#2563eb\"/><text x=\"335\" y=\"65\" fill=\"#4f46e5\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">y = 2ˣ</text><text x=\"403\" y=\"218\" fill=\"#b45309\" font-size=\"13\" text-anchor=\"end\" font-weight=\"normal\">x + 3y = 3</text><text x=\"80\" y=\"255\" fill=\"#1e293b\" font-size=\"14\" text-anchor=\"middle\" font-weight=\"normal\">P</text><text x=\"300\" y=\"255\" fill=\"#1e293b\" font-size=\"12\" text-anchor=\"middle\" font-weight=\"normal\">x=3</text><text x=\"65\" y=\"89\" fill=\"#64748b\" font-size=\"12\" text-anchor=\"end\" font-weight=\"normal\">y=8</text></svg>"
-          },
           "timeLimit": 60,
           "xp": 1,
           "meta": {
