@@ -84,13 +84,15 @@ const LearningPath = ({ profile }) => {
   // Split View / Slide Over / Stage Manager, or while the page is pinch-zoomed, which made
   // the notes appear on some opens and not others.
   const [isTablet] = useState(isTabletDevice);
-  const [stackNotes, setStackNotes] = useState(() => typeof window !== 'undefined' && window.innerWidth < 700);
+  // Worksheet above the notes when the tablet is upright (or the window is narrow); side by side otherwise.
+  const shouldStackNotes = () => typeof window !== 'undefined' && (window.innerWidth < 700 || window.innerHeight > window.innerWidth);
+  const [stackNotes, setStackNotes] = useState(shouldStackNotes);
   const [curriculumNoteReady, setCurriculumNoteReady] = useState(false);
 
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
 
   useEffect(() => {
-    const updateLayout = () => setStackNotes(window.innerWidth < 700);
+    const updateLayout = () => setStackNotes(shouldStackNotes());
     window.addEventListener('resize', updateLayout);
     return () => window.removeEventListener('resize', updateLayout);
   }, []);

@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, ExternalLink, Send, FileText, PenLine, Loader2 } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
+import { useSplitLayout, splitFraction } from '../../utils/useSplitLayout';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
@@ -38,7 +39,11 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const [loadedSessionKey, setLoadedSessionKey] = useState('');
   const currentSessionKey = `${user?.uid || ''}:${session?.id || ''}`;
   const notebooksLoaded = loadedSessionKey === currentSessionKey;
-  const [isWide, setIsWide] = useState(() => window.innerWidth >= WIDE_MIN);
+  // Side by side when wide, worksheet above notes on an upright tablet, tabs on a phone.
+  const layout = useSplitLayout(WIDE_MIN);
+  const isWide = layout !== 'tabs';
+  const stacked = layout === 'stack';
+  const splitRef = useRef(null);
   const [pane, setPane] = useState('pdf');
   const [split, setSplit] = useState(0.5);
   const [dragging, setDragging] = useState(false);
@@ -46,12 +51,6 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const [submitting, setSubmitting] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(null); // { done, total } while a long homework uploads
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const onResize = () => setIsWide(window.innerWidth >= WIDE_MIN);
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -217,7 +216,8 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const onDividerDown = (e) => {
     e.preventDefault();
     setDragging(true);
-    const move = (ev) => setSplit(Math.min(0.75, Math.max(0.25, ev.clientX / window.innerWidth)));
+    const rect = splitRef.current?.getBoundingClientRect();
+    const move = (ev) => { if (rect) setSplit(splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout)); };
     const up = () => {
       setDragging(false);
       window.removeEventListener('pointermove', move);
@@ -370,17 +370,17 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
         </div>
       )}
 
-      <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative' }}>
-        <div style={isWide ? { width: `${split * 100}%`, minWidth: 0 } : narrowPaneStyle(pane === 'pdf')}>
+      <div ref={splitRef} style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative' }}>
+        <div style={isWide ? (stacked ? { height: `${split * 100}%`, minHeight: 0 } : { width: `${split * 100}%`, minWidth: 0 }) : narrowPaneStyle(pane === 'pdf')}>
           {pdfPane}
         </div>
         {isWide && (
           <div
             onPointerDown={onDividerDown}
-            style={{ width: 10, cursor: 'col-resize', background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }}
+            style={{ ...(stacked ? { height: 10, cursor: 'row-resize' } : { width: 10, cursor: 'col-resize' }), flexShrink: 0, background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }}
           />
         )}
-        <div style={isWide ? { flex: 1, minWidth: 0 } : narrowPaneStyle(pane === 'notes')}>
+        <div style={isWide ? { flex: 1, minWidth: 0, minHeight: 0 } : narrowPaneStyle(pane === 'notes')}>
           {notesPane}
         </div>
       </div>

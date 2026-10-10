@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, CheckCircle2, FileText, Images, Loader2, PenLine, X } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
+import { useSplitLayout, splitFraction } from '../../utils/useSplitLayout';
 import SubmittedPages from './SubmittedPages';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
@@ -42,7 +43,11 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [statusMap, setStatusMap] = useState({});
   const [ready, setReady] = useState(false);
   const [pdfMap, setPdfMap] = useState({});
-  const [isWide, setIsWide] = useState(() => window.innerWidth >= WIDE_MIN);
+  // Side by side when wide, worksheet above notes on an upright tablet, tabs on a phone.
+  const layout = useSplitLayout(WIDE_MIN);
+  const isWide = layout !== 'tabs';
+  const stacked = layout === 'stack';
+  const splitRef = useRef(null);
   const [pane, setPane] = useState('notes');
   const [split, setSplit] = useState(0.5);
   const [dragging, setDragging] = useState(false);
@@ -51,12 +56,6 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
 
   const sessionId = item?.sessionId;
   const active = questions.find((q) => q.key === activeKey) || null;
-
-  useEffect(() => {
-    const onResize = () => setIsWide(window.innerWidth >= WIDE_MIN);
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -150,7 +149,8 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const onDividerDown = (e) => {
     e.preventDefault();
     setDragging(true);
-    const move = (ev) => setSplit(Math.min(0.75, Math.max(0.25, ev.clientX / window.innerWidth)));
+    const rect = splitRef.current?.getBoundingClientRect();
+    const move = (ev) => { if (rect) setSplit(splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout)); };
     const up = () => {
       setDragging(false);
       window.removeEventListener('pointermove', move);
@@ -333,17 +333,17 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         </div>
       )}
 
-      <div style={{ flex: 1, minHeight: 0, display: 'flex', position: 'relative' }}>
+      <div ref={splitRef} style={{ flex: 1, minHeight: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative' }}>
         {questions.length === 0 ? (
           <div style={{ flex: 1, display: 'grid', placeItems: 'center', color: '#64748b', fontWeight: 700 }}>Nothing to redo — every marked question was correct.</div>
         ) : (
           <>
-            {/* Worksheet on the left, the new notes on the right. */}
-            <div style={isWide ? { width: `${split * 100}%`, minWidth: 0 } : narrowPaneStyle(pane === 'pdf')}>{pdfPane}</div>
+            {/* Worksheet first (left, or on top on an upright tablet), the new notes after it. */}
+            <div style={isWide ? (stacked ? { height: `${split * 100}%`, minHeight: 0 } : { width: `${split * 100}%`, minWidth: 0 }) : narrowPaneStyle(pane === 'pdf')}>{pdfPane}</div>
             {isWide && (
-              <div onPointerDown={onDividerDown} style={{ width: 10, cursor: 'col-resize', background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }} />
+              <div onPointerDown={onDividerDown} style={{ ...(stacked ? { height: 10, cursor: 'row-resize' } : { width: 10, cursor: 'col-resize' }), flexShrink: 0, background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none' }} />
             )}
-            <div style={isWide ? { flex: 1, minWidth: 0 } : narrowPaneStyle(pane === 'notes')}>{notesPane}</div>
+            <div style={isWide ? { flex: 1, minWidth: 0, minHeight: 0 } : narrowPaneStyle(pane === 'notes')}>{notesPane}</div>
           </>
         )}
       </div>
