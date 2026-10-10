@@ -245,7 +245,7 @@ add(7,'y10-7b',review('cgs-y10-2024-s2-q13d','medium',`${parabStem} Sketch the p
   st('Set y = 0 to find and plot both x-intercepts.','\\(0=-(x-3)(x+1)\\Rightarrow x=3,-1\\)','squareGraph'),
   st('Set x = 0 for the y-intercept, then find the midpoint of the roots for the axis.','\\(y(0)=3,\\quad x_v=\\frac{3+(-1)}2=1\\)'),
   st('Substitute x = 1 to find and plot the vertex.','\\(y(1)=4\\Rightarrow (1,4)\\)'),
-  st('Draw a smooth downward-opening curve through the points, symmetric about x = 1.','\\(y=-(x-3)(x+1)\\Rightarrow a=-1\\)','parabSolution') ], 'squareGraph'));
+  st('Draw a smooth downward-opening curve through the points, symmetric about x = 1.','\\(y=-(x-3)(x+1)\\Rightarrow a=-1\\)','parabSolution') ]));
 add(11,'y10-11a',mc('cgs-y10-2024-s2-q14','medium','The circle shown has centre \\((2,-3)\\) and radius 4 units. Which is its equation?',[
   '\\((x+2)^2+(y-3)^2=16\\)','\\((x-2)^2+(y+3)^2=16\\)','\\((x-2)^2+(y+3)^2=4\\)','\\((x+2)^2+(y+3)^2=16\\)'],1,
   'Use \\((x-h)^2+(y-k)^2=r^2\\); watch the signs inside the brackets.','centre \\((2,-3)\\) and radius 4','The radius is squared on the right-hand side.',[
