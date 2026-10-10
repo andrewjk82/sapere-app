@@ -1,0 +1,165 @@
+{
+  "chapterId": "y12e1-10",
+  "title": "Chapter 10: Projectile motion",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-10B",
+      "code": "10B",
+      "title": "Projectile motion — the equation of path",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q14ci",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A stone is projected from the origin at 15 m/s and 60° above the horizontal. Its motion is \\(x=15t/2\\) and \\(y=(15\\sqrt3/2)t-5t^2\\). Show that its path is \\(y=\\sqrt3x-4x^2/45\\).",
+          "manual": true,
+          "answer": "Sample answer: From \\(x=15t/2\\), \\(t=2x/15\\). Substitute this into the vertical equation: \\(y=(15\\sqrt3/2)(2x/15)-5(2x/15)^2=\\sqrt3x-4x^2/45\\).",
+          "hint": "Use the horizontal equation to express t in terms of x, then substitute into the vertical equation.",
+          "keyPoints": [
+            {
+              "text": "\\(x=15t/2\\)",
+              "note": "Solve this equation for t before substituting."
+            },
+            {
+              "text": "\\(y=(15\\sqrt3/2)t-5t^2\\)",
+              "note": "Substitute the same t-expression into both terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rearrange the horizontal motion equation to obtain time.",
+              "work": "\\(x=\\frac{15t}{2}\\Rightarrow t=\\frac{2x}{15}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 400 245\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"245\" fill=\"white\"/><line x1=\"40\" y1=\"205\" x2=\"365\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M50 95 Q125 -20 235 155\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"50\" y1=\"95\" x2=\"350\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"235\" cy=\"155\" r=\"4\" fill=\"#ef4444\"/><text x=\"242\" y=\"151\" font-size=\"13\">P</text><text x=\"330\" y=\"194\" font-size=\"12\">45° slope</text><text x=\"65\" y=\"45\" font-size=\"13\" fill=\"#c2410c\" font-weight=\"700\">vertex gives maximum height</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the vertical equation.",
+              "work": "\\(y=\\frac{15\\sqrt3}{2}\\left(\\frac{2x}{15}\right)-5\\left(\\frac{2x}{15}\right)^2\\)"
+            },
+            {
+              "explain": "Simplify both terms.",
+              "work": "\\(y=\\sqrt3x-\\frac{20x^2}{225}=\\sqrt3x-\\frac{4x^2}{45}\\)"
+            }
+          ],
+          "solution": "Sample answer: From \\(x=15t/2\\), \\(t=2x/15\\). Substitute this into the vertical equation: \\(y=(15\\sqrt3/2)(2x/15)-5(2x/15)^2=\\sqrt3x-4x^2/45\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 400 245\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"245\" fill=\"white\"/><line x1=\"40\" y1=\"205\" x2=\"365\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M50 95 Q125 -20 235 155\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"50\" y1=\"95\" x2=\"350\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"235\" cy=\"155\" r=\"4\" fill=\"#ef4444\"/><text x=\"242\" y=\"151\" font-size=\"13\">P</text><text x=\"330\" y=\"194\" font-size=\"12\">45° slope</text></svg>"
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q14cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stone follows the path \\(y=\\sqrt3x-\\frac{4x^2}{45}\\). What is its greatest height above the launch point?",
+          "options": [
+            "\\(\\frac{135}{16}\text{ m}\\)",
+            "\\(\\frac{45\\sqrt3}{8}\\text{ m}\\)",
+            "\\(\\frac{135}{8}\text{ m}\\)",
+            "\\(\\frac{45}{16}\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "The path is a downward-opening quadratic. Find its vertex or set its derivative to zero.",
+          "keyPoints": [
+            {
+              "text": "greatest height",
+              "note": "The maximum occurs at the vertex of the downward-opening parabola."
+            },
+            {
+              "text": "\\(y=\\sqrt3x-\\frac{4x^2}{45}\\)",
+              "note": "Differentiate with respect to x, or use the quadratic vertex formula."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the height with respect to horizontal position and set the gradient to zero.",
+              "work": "\\(\\frac{dy}{dx}=\\sqrt3-\\frac{8x}{45}=0\\Rightarrow x=\\frac{45\\sqrt3}{8}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 400 245\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"245\" fill=\"white\"/><line x1=\"40\" y1=\"205\" x2=\"365\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M50 95 Q125 -20 235 155\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"50\" y1=\"95\" x2=\"350\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"235\" cy=\"155\" r=\"4\" fill=\"#ef4444\"/><text x=\"242\" y=\"151\" font-size=\"13\">P</text><text x=\"330\" y=\"194\" font-size=\"12\">45° slope</text><text x=\"65\" y=\"45\" font-size=\"13\" fill=\"#c2410c\" font-weight=\"700\">vertex gives maximum height</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute this x-value into the path equation.",
+              "work": "\\(y=\\sqrt3\\left(\\frac{45\\sqrt3}{8}\right)-\\frac4{45}\\left(\\frac{45\\sqrt3}{8}\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the two terms and subtract.",
+              "work": "\\(y=\\frac{135}{8}-\\frac{135}{16}=\\frac{135}{16}=8.4375\\text{ m}\\)"
+            }
+          ],
+          "solution": "\\(\\frac{135}{16}\\text{ m}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 400 245\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"245\" fill=\"white\"/><line x1=\"40\" y1=\"205\" x2=\"365\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M50 95 Q125 -20 235 155\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"50\" y1=\"95\" x2=\"350\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"235\" cy=\"155\" r=\"4\" fill=\"#ef4444\"/><text x=\"242\" y=\"151\" font-size=\"13\">P</text><text x=\"330\" y=\"194\" font-size=\"12\">45° slope</text></svg>"
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q14ciii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stone follows \\(y=\\sqrt3x-\\frac{4x^2}{45}\\) and lands on the 45° downward slope \\(y=-x\\). How far down the slope from the origin does it land?",
+          "options": [
+            "\\(\\frac{45\\sqrt{2}(1+\\sqrt{3})}{4}\\text{ m}\\)",
+            "\\(\\frac{45(1+\\sqrt{3})}{4}\\text{ m}\\)",
+            "\\(\\frac{45\\sqrt{2}(\\sqrt{3}-1)}{4}\\text{ m}\\)",
+            "\\(\\frac{45\\sqrt{3}}{4}\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Set the trajectory equal to the slope to find the impact x-coordinate; convert horizontal distance into distance along a 45° line.",
+          "keyPoints": [
+            {
+              "text": "45° downward slope",
+              "note": "The impact point is where the projectile path intersects this line."
+            },
+            {
+              "text": "How far down the slope",
+              "note": "A 45° slope distance is \\(x/\\cos45^\\circ=x\\sqrt{2}\\), not just x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set the projectile path equal to the slope equation.",
+              "work": "\\(\\sqrt3x-\\frac{4x^2}{45}=-x\\Rightarrow x\\left(\\sqrt3+1-\\frac{4x}{45}\right)=0\\)"
+            },
+            {
+              "explain": "Use the nonzero intersection to get the horizontal coordinate.",
+              "work": "\\(x=\\frac{45}{4}(1+\\sqrt3)\\)"
+            },
+            {
+              "explain": "Convert horizontal distance to length along the 45° slope.",
+              "work": "\\(s=\\frac{x}{\\cos45^\\circ}=x\\sqrt{2}=\\frac{45\\sqrt2(1+\\sqrt3)}4\\text{ m}\\approx43.5\\text{ m}\\)"
+            }
+          ],
+          "solution": "\\(\\frac{45\\sqrt{2}(1+\\sqrt{3})}{4}\\text{ m}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 400 245\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"400\" height=\"245\" fill=\"white\"/><line x1=\"40\" y1=\"205\" x2=\"365\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M50 95 Q125 -20 235 155\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"50\" y1=\"95\" x2=\"350\" y2=\"205\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"235\" cy=\"155\" r=\"4\" fill=\"#ef4444\"/><text x=\"242\" y=\"151\" font-size=\"13\">P</text><text x=\"330\" y=\"194\" font-size=\"12\">45° slope</text></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}

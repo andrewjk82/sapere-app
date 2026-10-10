@@ -1,0 +1,107 @@
+{
+  "chapterId": "y11e1-11",
+  "title": "Chapter 11: Polynomials",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11e1-11D",
+      "code": "11D",
+      "title": "The remainder and factor theorems",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The polynomial \\(P(x)=7x^3+9x^2-5cx\\) has factor \\(x+c\\), where \\(c\\ne0\\). Find \\(c\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "If (x+c) is a factor, substitute its zero, \\(x=-c\\), into (P(x)).",
+          "keyPoints": [
+            {
+              "text": "has factor",
+              "note": "The factor theorem says that \\(P(-c)=0\\)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The zero of the factor (x+c) is \\(x=-c\\). Apply the factor theorem.",
+              "work": "\\(P(-c)=0\\)"
+            },
+            {
+              "explain": "Substitute (-c) into the polynomial and collect terms.",
+              "work": "\\(7(-c)^3+9(-c)^2-5c(-c)= -7c^3+14c^2\\)"
+            },
+            {
+              "explain": "Use the condition (c\ne0), then solve.",
+              "work": "\\(-7c^3+14c^2=7c^2(2-c)=0\\Rightarrow c=2\\)"
+            }
+          ],
+          "solution": "\\(c=2\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11e1-11E",
+      "code": "11E",
+      "title": "Consequences of the factor theorem",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The polynomial \\(P(x)=4x^3+8x^2-11x+3\\) has a double root \\(x=\\alpha\\). Find \\(\\alpha\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(\\frac12\\)",
+            "\\(-\\frac12\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "hint": "A double root is a repeated factor. Factor the cubic and identify which root occurs twice.",
+          "keyPoints": [
+            {
+              "text": "has a double root",
+              "note": "Look for a squared linear factor, not just any root."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Test a simple rational root. At \\(x=\\frac12\\), the polynomial is zero.",
+              "work": "\\(P(1/2)=4(1/8)+8(1/4)-11(1/2)+3=0\\)"
+            },
+            {
+              "explain": "Factor the cubic. The squared factor identifies the repeated root.",
+              "work": "\\(P(x)=(2x-1)^2(x+3)\\)"
+            },
+            {
+              "explain": "Set the repeated factor equal to zero.",
+              "work": "\\(2x-1=0\\Rightarrow \\alpha=\\frac12\\)"
+            }
+          ],
+          "solution": "\\(\\alpha=\\frac12\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    }
+  ]
+}

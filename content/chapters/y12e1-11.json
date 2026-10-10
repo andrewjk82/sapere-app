@@ -1,0 +1,155 @@
+{
+  "chapterId": "y12e1-11",
+  "title": "Chapter 11: Trigonometric equations",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-11C",
+      "code": "11C",
+      "title": "Using the t-formula to solve equations",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\(\\sin4\\theta+\\sqrt3\\cos4\\theta=0\\) for \\(0\\le\\theta\\le\\pi\\).",
+          "options": [
+            "\\(\\theta=\\frac{\\pi}{6},\\frac{2\\pi}{3},\\frac{5\\pi}{12},\\frac{11\\pi}{12}\\)",
+            "\\(\\theta=\\frac{\\pi}{3},\\frac{2\\pi}{3}\\)",
+            "\\(\\theta=\\frac{\\pi}{12},\\frac{5\\pi}{12}\\)",
+            "\\(\\theta=\\frac{\\pi}{6},\\frac{5\\pi}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Set t = tan(2θ) and use the double-angle formulas. Solve the quadratic, then list every 2θ value in [0, 2π] before halving.",
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "For a 4θ equation, the substitution \\(t=\\tan2\\theta\\) makes the double-\\angle formulas quadratic."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the double-angle formulas for 4θ. The original equation has no solutions with cos(2θ)=0, so divide by cos²(2θ) and set t = tan(2θ).",
+              "work": "\\(\\sin4\\theta=\\frac{2t}{1+t^2},\\quad \\cos4\\theta=\\frac{1-t^2}{1+t^2}\\)"
+            },
+            {
+              "explain": "Substitute and solve the resulting quadratic.",
+              "work": "\\(2t+\\sqrt3(1-t^2)=0\\Rightarrow \\sqrt3t^2-2t-\\sqrt3=0\\Rightarrow t=\\sqrt3\\text{ or }t=-\\frac1{\\sqrt3}\\)"
+            },
+            {
+              "explain": "Map both tangent values into the full interval 0≤2θ≤2π.",
+              "work": "\\(t=\\sqrt3:\\ 2\\theta=\\frac{\\pi}{3},\\frac{4\\pi}{3};\\quad t=-\\frac1{\\sqrt3}:\\ 2\\theta=\\frac{5\\pi}{6},\\frac{11\\pi}{6}\\)"
+            },
+            {
+              "explain": "Divide each 2θ value by 2 and check that all four angles satisfy 0≤θ≤π.",
+              "work": "\\(\\boxed{\\theta=\\frac{\\pi}{6},\\frac{2\\pi}{3},\\frac{5\\pi}{12},\\frac{11\\pi}{12}}\\)"
+            }
+          ],
+          "solution": "\\(\\theta=\\frac{\\pi}{6},\\frac{2\\pi}{3},\\frac{5\\pi}{12},\\frac{11\\pi}{12}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q11bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A school schedules 2733 classes over 40 periods in a fortnight. By the pigeonhole principle, what is the minimum number of classrooms that guarantees each class can have a separate room?",
+          "options": [
+            "\\(68\\)",
+            "\\(69\\)",
+            "\\(2733\\)",
+            "\\(40\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the total number of classes by the number of periods and round up to the next whole room.",
+          "keyPoints": [
+            {
+              "text": "2733 classes",
+              "note": "The average number of classes per period gives a lower bound; take the ceiling."
+            },
+            {
+              "text": "40 periods",
+              "note": "Focus on this information when choosing the method."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the average number of classes scheduled per period.",
+              "work": "\\(\\frac{2733}{40}=68.325\\)"
+            },
+            {
+              "explain": "The number of classrooms must be a whole number. Round the average up to guarantee enough rooms in the busiest period.",
+              "work": "\\(\\lceil68.325\\rceil=69\\)"
+            },
+            {
+              "explain": "Thus the minimum guaranteed classroom count is 69.",
+              "work": "\\(\\boxed{69}\\)"
+            }
+          ],
+          "solution": "\\(69\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q11bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A school schedules 2733 classes over 40 periods. The pigeonhole principle gives a minimum guaranteed classroom count. Why might that count still fail to provide a separate room for every class in every period?",
+          "options": [
+            "The classes may be distributed unevenly, so one period can contain more than the average number.",
+            "The average must be rounded down.",
+            "Rooms can only be used in alternate periods.",
+            "The number of periods changes the number of classes."
+          ],
+          "answer": 0,
+          "hint": "The pigeonhole principle gives a guaranteed lower bound based on the average, not the exact largest period.",
+          "keyPoints": [
+            {
+              "text": "2733 classes over 40 periods",
+              "note": "Think about whether the 2733 classes are evenly spread across all 40 periods."
+            },
+            {
+              "text": "Why might that count still fail",
+              "note": "Focus on this information when choosing the method."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The quotient \\(2733/40=68.325\\) is an average, not the exact number of classes in every period.",
+              "work": "\\(\\text{average}=68.325\\text{ classes per period}\\)"
+            },
+            {
+              "explain": "If classes are unevenly distributed, one period can exceed the average.",
+              "work": "\\(\\max(\\text{classes in a period})\\text{ may exceed }69\\)"
+            },
+            {
+              "explain": "Therefore the guarantee based on the average may not meet the busiest period.",
+              "work": "\\(\\boxed{\\text{Uneven scheduling can make 69 insufficient.}}\\)"
+            }
+          ],
+          "solution": "The classes may be distributed unevenly, so one period can contain more than the average number.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    }
+  ]
+}

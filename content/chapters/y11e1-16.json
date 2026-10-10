@@ -1,0 +1,162 @@
+{
+  "chapterId": "y11e1-16",
+  "title": "Chapter 16: Further trigonometry",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11e1-16B",
+      "code": "16B",
+      "title": "Trigonometric functions of compound angles",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Acute angles \\(A\\) and \\(B\\) satisfy \\(\\tan A=\\frac35\\) and \\(\\tan B=4\\). Find \\(A-B\\).",
+          "options": [
+            "\\(-135^\\circ\\)",
+            "\\(45^\\circ\\)",
+            "\\(135^\\circ\\)",
+            "\\(-45^\\circ\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the tangent subtraction identity. Since both angles are acute, select the difference angle in the correct quadrant.",
+          "keyPoints": [
+            {
+              "text": "\\(\\tan A=\\frac35\\)",
+              "note": "For a difference, the denominator is (1+\\tan A\\tan B)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the compound-angle identity for tangent subtraction.",
+              "work": "\\(\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}\\)"
+            },
+            {
+              "explain": "Substitute the two tangent values and simplify.",
+              "work": "\\(\\tan(A-B)=\\frac{\\frac{3}{5}-4}{1+\\frac{3}{5}(4)}=\\frac{-17/5}{17/5}=-1\\)"
+            },
+            {
+              "explain": "Since A and B are acute, their difference lies between (-90^circ) and (90^circ).",
+              "work": "\\(A-B=-45^\\circ\\)"
+            }
+          ],
+          "solution": "\\(A-B=-45^\\circ\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11e1-16E",
+      "code": "16E",
+      "title": "The sum of sine and cosine functions",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q13ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(\\cos t-3\\sin t\\) in the form \\(R\\cos(t+\\alpha)\\), where \\(R>0\\) and \\(0\\le\\alpha<\\frac{\\pi}{2}\\).",
+          "options": [
+            "\\(\\sqrt{10}\\cos(t+\\tan^{-1}3)\\)",
+            "\\(\\sqrt{10}\\cos(t-\\tan^{-1}3)\\)",
+            "\\(3\\sqrt{10}\\cos(t+\\tan^{-1}(1/3))\\)",
+            "\\(2\\cos(t+\\tan^{-1}3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(R\\cos(t+\\alpha)=R\\cos t\\cos\\alpha-R\\sin t\\sin\\alpha\\), then match coefficients.",
+          "keyPoints": [
+            {
+              "text": "\\(R\\cos(t+\\alpha)\\)",
+              "note": "Expand the compound \\angle and match the cosine and sine coefficients separately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the target form with the compound-angle identity.",
+              "work": "\\(R\\cos(t+\\alpha)=R\\cos t\\cos\\alpha-R\\sin t\\sin\\alpha\\)"
+            },
+            {
+              "explain": "Match the cosine and sine coefficients separately.",
+              "work": "\\(R\\cos\\alpha=1,\\quad R\\sin\\alpha=3\\)"
+            },
+            {
+              "explain": "Use Pythagoras on the two coefficients, then find the phase angle.",
+              "work": "\\(R=\\sqrt{1^2+3^2}=\\sqrt{10},\\quad \\tan\\alpha=3\\Rightarrow\\alpha=\\tan^{-1}3\\)"
+            },
+            {
+              "explain": "Substitute these values into the required form.",
+              "work": "\\(\\boxed{\\cos t-3\\sin t=\\sqrt{10}\\cos(t+\\tan^{-1}3)}\\)"
+            }
+          ],
+          "solution": "\\(\\sqrt{10}\\cos(t+\\tan^{-1}3)\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q13cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A sound is audible when \\(y\\ge1\\), where \\(y=\\cos t-3\\sin t\\). For \\(0<t\\le4\\pi\\), during which intervals is it audible?",
+          "options": [
+            "\\([2\\pi-2\\alpha,2\\pi]\\cup[4\\pi-2\\alpha,4\\pi]\\), where \\(\\alpha=\\tan^{-1}3\\)",
+            "\\([\\pi-2\\alpha,\\pi]\\cup[3\\pi-2\\alpha,3\\pi]\\), where \\(\\alpha=\\tan^{-1}3\\)",
+            "\\([2\\pi-\\alpha,2\\pi+\\alpha]\\cup[4\\pi-\\alpha,4\\pi+\\alpha]\\), where \\(\\alpha=\\tan^{-1}3\\)",
+            "\\([0,2\\pi]\\cup[2\\pi,4\\pi]\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the expression as \\(\\sqrt{10}\\cos(t+\\alpha)\\), where \\(\\alpha=\\tan^{-1}3\\). Compare the threshold with the amplitude.",
+          "keyPoints": [
+            {
+              "text": "\\(y\\ge1\\)",
+              "note": "Set the rewritten cosine equal to 1 to locate interval endpoints."
+            },
+            {
+              "text": "\\(0<t\\le4\\pi\\)",
+              "note": "Keep the requested endpoint inclusion and exclusion exactly."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From part (i), \\(y=\\sqrt{10}\\cos(t+\\alpha)\\), where \\(\\tan\\alpha=3\\). The threshold becomes \\(\\cos(t+\\alpha)\\ge\\cos\\alpha\\).",
+              "work": "\\(y\\ge1\\iff \\cos(t+\\alpha)\\ge\\frac1{\\sqrt{10}}=\\cos\\alpha,\\quad \\alpha=\\tan^{-1}3\\)"
+            },
+            {
+              "explain": "Cosine is at least \\(\\cos\\alpha\\) within \\(\\alpha\\) radians of each full-turn angle \\(2k\\pi\\).",
+              "work": "\\(t+\\alpha\\in[2k\\pi-\\alpha,2k\\pi+\\alpha]\\Rightarrow t\\in[2k\\pi-2\\alpha,2k\\pi]\\)"
+            },
+            {
+              "explain": "Intersect these intervals with the requested domain. The interval around t = 0 contributes no values because t = 0 is excluded.",
+              "work": "\\(k=1:[2\\pi-2\\alpha,2\\pi],\\quad k=2:[4\\pi-2\\alpha,4\\pi]\\)"
+            },
+            {
+              "explain": "The endpoint 4π is included, while the endpoints at t = 0 are excluded. These are the two audible intervals.",
+              "work": "\\(\\boxed{(0,0]\\text{ is empty; }[2\\pi-2\\alpha,2\\pi]\\cup[4\\pi-2\\alpha,4\\pi]}\\)"
+            }
+          ],
+          "solution": "\\([2\\pi-2\\alpha,2\\pi]\\cup[4\\pi-2\\alpha,4\\pi]\\), where \\(\\alpha=\\tan^{-1}3\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "chapterId": "y12e1-13",
+  "title": "Chapter 13: Differential equations",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-13B",
+      "code": "13B",
+      "title": "Slope fields",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The direction field below represents one of these differential equations. Which equation matches the field?",
+          "options": [
+            "\\(\\frac{dy}{dx}=\\frac{y-2x}{2y+x}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{y-2x}{2y-x}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{2y-x}{y+2x}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{x-2y}{2y+x}\\)"
+          ],
+          "answer": 1,
+          "hint": "Look for where the direction segments are horizontal (slope 0), then where they are vertical (undefined).",
+          "keyPoints": [
+            {
+              "text": "direction field",
+              "note": "A horizontal short segment indicates \\(dy/dx=0\\); vertical segments indicate an undefined slope."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In the supplied field, horizontal segments lie along the diagonal through the origin with positive gradient about 2. That means the numerator must vanish when \\(y=2x\\).",
+              "work": "\\(\\frac{dy}{dx}=0\\iff y-2x=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 360\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"480\" height=\"280\" fill=\"white\"/><line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"84\" y1=\"20\" x2=\"84\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"118\" y1=\"20\" x2=\"118\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"186\" y1=\"20\" x2=\"186\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"254\" y1=\"20\" x2=\"254\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"288\" y1=\"20\" x2=\"288\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"322\" y1=\"20\" x2=\"322\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"356\" y1=\"20\" x2=\"356\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"390\" y1=\"20\" x2=\"390\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"20\" x2=\"390\" y2=\"20\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"49.5\" x2=\"390\" y2=\"49.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"79\" x2=\"390\" y2=\"79\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"108.5\" x2=\"390\" y2=\"108.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"138\" x2=\"390\" y2=\"138\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"167.5\" x2=\"390\" y2=\"167.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"197\" x2=\"390\" y2=\"197\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"226.5\" x2=\"390\" y2=\"226.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"256\" x2=\"390\" y2=\"256\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"285.5\" x2=\"390\" y2=\"285.5\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"315\" x2=\"390\" y2=\"315\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"50\" y1=\"167.5\" x2=\"390\" y2=\"167.5\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"315\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"382\" y=\"159.5\" font-size=\"13\" fill=\"#334155\">x</text><text x=\"227\" y=\"32\" font-size=\"13\" fill=\"#334155\">y</text><line x1=\"43.63603896932107\" y1=\"308.6360389693211\" x2=\"56.36396103067893\" y2=\"321.3639610306789\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"45.97507764050038\" y1=\"277.4501552810008\" x2=\"54.02492235949962\" y2=\"293.5498447189992\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"47.15395010584846\" y1=\"247.46185031754538\" x2=\"52.84604989415154\" y2=\"264.5381496824546\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"47.15395010584846\" y1=\"235.03814968245462\" x2=\"52.84604989415154\" y2=\"217.96185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"47.15395010584846\" y1=\"205.53814968245462\" x2=\"52.84604989415154\" y2=\"188.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"45.97507764050038\" y1=\"175.54984471899925\" x2=\"54.02492235949962\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"45.168120570261564\" y1=\"145.59295338958896\" x2=\"54.831879429738436\" y2=\"130.40704661041104\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"44.6\" y1=\"115.7\" x2=\"55.4\" y2=\"101.3\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"44.186519826804435\" y1=\"85.87047656832203\" x2=\"55.813480173195565\" y2=\"72.12952343167797\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"43.8759401056945\" y1=\"56.095141424636694\" x2=\"56.1240598943055\" y2=\"42.904858575363306\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"43.63603896932107\" y1=\"26.36396103067893\" x2=\"56.36396103067893\" y2=\"13.636038969321072\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"75.95015528100076\" y1=\"310.9750776405004\" x2=\"92.04984471899924\" y2=\"319.0249223594996\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"77.63603896932108\" y1=\"279.1360389693211\" x2=\"90.36396103067892\" y2=\"291.8639610306789\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"80.65748391281306\" y1=\"247.64370978203266\" x2=\"87.34251608718694\" y2=\"264.35629021796734\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"81.15395010584845\" y1=\"235.03814968245462\" x2=\"86.84604989415155\" y2=\"217.96185031754538\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"81.15395010584845\" y1=\"205.53814968245462\" x2=\"86.84604989415155\" y2=\"188.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"79.97507764050037\" y1=\"175.54984471899925\" x2=\"88.02492235949963\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"79.00769823397293\" y1=\"145.4884526490406\" x2=\"88.99230176602707\" y2=\"130.5115473509594\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"78.37774457201019\" y1=\"115.52781928498727\" x2=\"89.62225542798981\" y2=\"101.47218071501273\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"77.94594485403319\" y1=\"85.6594606605635\" x2=\"90.05405514596681\" y2=\"72.3405393394365\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"77.63603896932108\" y1=\"55.86396103067893\" x2=\"90.36396103067892\" y2=\"43.13603896932107\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"77.4048585753633\" y1=\"26.1240598943055\" x2=\"90.5951414246367\" y2=\"13.8759401056945\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"109.0904545570495\" y1=\"313.72720779386424\" x2=\"126.9095454429505\" y2=\"316.27279220613576\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"109.64370978203267\" y1=\"282.15748391281306\" x2=\"126.35629021796733\" y2=\"288.84251608718694\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"111.63603896932108\" y1=\"249.63603896932108\" x2=\"124.36396103067892\" y2=\"262.3639610306789\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"115.15395010584845\" y1=\"217.96185031754538\" x2=\"120.84604989415155\" y2=\"235.03814968245462\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"115.15395010584845\" y1=\"205.53814968245462\" x2=\"120.84604989415155\" y2=\"188.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"113.97507764050037\" y1=\"175.54984471899925\" x2=\"122.02492235949963\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"112.76885625652814\" y1=\"145.32360124086063\" x2=\"123.23114374347186\" y2=\"130.67639875913937\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"112.07345852918334\" y1=\"115.2731902523619\" x2=\"123.92654147081666\" y2=\"101.7268097476381\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"111.63603896932108\" y1=\"85.36396103067892\" x2=\"124.36396103067892\" y2=\"72.63603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"111.3405393394365\" y1=\"55.554055145966814\" x2=\"124.6594606605635\" y2=\"43.445944854033186\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"111.12952343167797\" y1=\"25.813480173195565\" x2=\"124.87047656832203\" y2=\"14.186519826804435\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"143.06949910957698\" y1=\"316.1163126113029\" x2=\"160.93050089042302\" y2=\"313.8836873886971\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"143\" y1=\"285.5\" x2=\"161\" y2=\"285.5\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"143.268717498692\" y1=\"253.817179374673\" x2=\"160.731282501308\" y2=\"258.182820625327\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"145.63603896932108\" y1=\"220.13603896932108\" x2=\"158.36396103067892\" y2=\"232.86396103067892\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"149.15395010584845\" y1=\"205.53814968245462\" x2=\"154.84604989415155\" y2=\"188.46185031754538\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"147.9750776405004\" y1=\"175.54984471899925\" x2=\"156.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"146.3777445720102\" y1=\"145.0278192849873\" x2=\"157.6222554279898\" y2=\"130.9721807150127\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"145.63603896932108\" y1=\"114.86396103067892\" x2=\"158.36396103067892\" y2=\"102.13603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"145.2268097476381\" y1=\"84.92654147081666\" x2=\"158.7731902523619\" y2=\"73.07345852918334\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"144.97218071501274\" y1=\"55.12225542798982\" x2=\"159.02781928498726\" y2=\"43.87774457201018\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"144.8\" y1=\"25.4\" x2=\"159.2\" y2=\"14.6\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"177.46185031754538\" y1=\"317.8460498941515\" x2=\"194.53814968245462\" y2=\"312.1539501058485\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"177.3462844712326\" y1=\"287.9724901510764\" x2=\"194.6537155287674\" y2=\"283.0275098489236\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"177.1747739187817\" y1=\"257.76504521624366\" x2=\"194.8252260812183\" y2=\"254.23495478375634\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"177\" y1=\"226.5\" x2=\"195\" y2=\"226.5\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"179.63603896932108\" y1=\"190.63603896932108\" x2=\"192.36396103067892\" y2=\"203.36396103067892\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"181.9750776405004\" y1=\"175.54984471899925\" x2=\"190.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"179.63603896932108\" y1=\"144.36396103067892\" x2=\"192.36396103067892\" y2=\"131.63603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178.97218071501274\" y1=\"114.12225542798981\" x2=\"193.02781928498726\" y2=\"102.87774457201019\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178.67639875913937\" y1=\"84.23114374347188\" x2=\"193.32360124086063\" y2=\"73.76885625652812\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178.5115473509594\" y1=\"54.49230176602706\" x2=\"193.4884526490406\" y2=\"44.50769823397294\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"178.40704661041104\" y1=\"24.831879429738432\" x2=\"193.59295338958896\" y2=\"15.168120570261568\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"319.0249223594996\" x2=\"228.04984471899925\" y2=\"310.9750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"289.5249223594996\" x2=\"228.04984471899925\" y2=\"281.4750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"260.0249223594996\" x2=\"228.04984471899925\" y2=\"251.9750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"230.5249223594996\" x2=\"228.04984471899925\" y2=\"222.4750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"201.0249223594996\" x2=\"228.04984471899925\" y2=\"192.9750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"217.15395010584845\" y1=\"176.03814968245462\" x2=\"222.84604989415155\" y2=\"158.96185031754538\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"142.0249223594996\" x2=\"228.04984471899925\" y2=\"133.9750776405004\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"112.52492235949963\" x2=\"228.04984471899925\" y2=\"104.47507764050037\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"83.02492235949963\" x2=\"228.04984471899925\" y2=\"74.97507764050037\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"53.52492235949962\" x2=\"228.04984471899925\" y2=\"45.47507764050038\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"211.95015528100075\" y1=\"24.02492235949962\" x2=\"228.04984471899925\" y2=\"15.975077640500379\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"246.40704661041104\" y1=\"319.8318794297384\" x2=\"261.59295338958896\" y2=\"310.1681205702616\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"246.5115473509594\" y1=\"290.4923017660271\" x2=\"261.4884526490406\" y2=\"280.5076982339729\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"246.67639875913937\" y1=\"261.2311437434719\" x2=\"261.3236012408606\" y2=\"250.76885625652812\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"246.97218071501274\" y1=\"232.1222554279898\" x2=\"261.0278192849873\" y2=\"220.8777445720102\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"247.63603896932108\" y1=\"203.36396103067892\" x2=\"260.3639610306789\" y2=\"190.63603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"249.9750776405004\" y1=\"175.54984471899925\" x2=\"258.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"247.63603896932108\" y1=\"131.63603896932108\" x2=\"260.3639610306789\" y2=\"144.36396103067892\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"245\" y1=\"108.5\" x2=\"263\" y2=\"108.5\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"245.1747739187817\" y1=\"80.76504521624365\" x2=\"262.82522608121826\" y2=\"77.23495478375635\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"245.3462844712326\" y1=\"51.9724901510764\" x2=\"262.6537155287674\" y2=\"47.0275098489236\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"245.46185031754538\" y1=\"22.84604989415154\" x2=\"262.5381496824546\" y2=\"17.15395010584846\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"280.8\" y1=\"320.4\" x2=\"295.2\" y2=\"309.6\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"280.9721807150127\" y1=\"291.12225542798984\" x2=\"295.0278192849873\" y2=\"279.87774457201016\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.2268097476381\" y1=\"261.9265414708167\" x2=\"294.7731902523619\" y2=\"250.07345852918334\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"281.6360389693211\" y1=\"232.86396103067892\" x2=\"294.3639610306789\" y2=\"220.13603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"282.37774457201016\" y1=\"204.0278192849873\" x2=\"293.62225542798984\" y2=\"189.9721807150127\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"283.9750776405004\" y1=\"175.54984471899925\" x2=\"292.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"285.1539501058485\" y1=\"146.53814968245462\" x2=\"290.8460498941515\" y2=\"129.46185031754538\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"281.6360389693211\" y1=\"102.13603896932108\" x2=\"294.3639610306789\" y2=\"114.86396103067892\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"279.268717498692\" y1=\"76.817179374673\" x2=\"296.731282501308\" y2=\"81.182820625327\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"279\" y1=\"49.5\" x2=\"297\" y2=\"49.5\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"279.069499109577\" y1=\"21.116312611302877\" x2=\"296.930500890423\" y2=\"18.883687388697123\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"315.12952343167797\" y1=\"320.81348017319556\" x2=\"328.87047656832203\" y2=\"309.18651982680444\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"315.34053933943653\" y1=\"291.5540551459668\" x2=\"328.65946066056347\" y2=\"279.4459448540332\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"315.6360389693211\" y1=\"262.3639610306789\" x2=\"328.3639610306789\" y2=\"249.63603896932108\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"316.0734585291833\" y1=\"233.2731902523619\" x2=\"327.9265414708167\" y2=\"219.7268097476381\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"316.7688562565281\" y1=\"204.32360124086063\" x2=\"327.2311437434719\" y2=\"189.67639875913937\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"317.9750776405004\" y1=\"175.54984471899925\" x2=\"326.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"319.1539501058485\" y1=\"146.53814968245462\" x2=\"324.8460498941515\" y2=\"129.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"319.1539501058485\" y1=\"99.96185031754538\" x2=\"324.8460498941515\" y2=\"117.03814968245462\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"315.6360389693211\" y1=\"72.63603896932108\" x2=\"328.3639610306789\" y2=\"85.36396103067892\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"313.64370978203266\" y1=\"46.15748391281306\" x2=\"330.35629021796734\" y2=\"52.84251608718694\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"313.0904545570495\" y1=\"18.727207793864213\" x2=\"330.9095454429505\" y2=\"21.272792206135787\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"349.40485857536333\" y1=\"321.1240598943055\" x2=\"362.59514142463667\" y2=\"308.8759401056945\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"349.6360389693211\" y1=\"291.8639610306789\" x2=\"362.3639610306789\" y2=\"279.1360389693211\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"349.9459448540332\" y1=\"262.65946066056347\" x2=\"362.0540551459668\" y2=\"249.3405393394365\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"350.37774457201016\" y1=\"233.5278192849873\" x2=\"361.62225542798984\" y2=\"219.4721807150127\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"351.0076982339729\" y1=\"204.4884526490406\" x2=\"360.9923017660271\" y2=\"189.5115473509594\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"351.9750776405004\" y1=\"175.54984471899925\" x2=\"360.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"353.1539501058485\" y1=\"146.53814968245462\" x2=\"358.8460498941515\" y2=\"129.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"353.1539501058485\" y1=\"117.03814968245462\" x2=\"358.8460498941515\" y2=\"99.96185031754538\" stroke=\"#f97316\" stroke-width=\"2.8\" stroke-linecap=\"round\"/><line x1=\"352.65748391281306\" y1=\"70.64370978203266\" x2=\"359.34251608718694\" y2=\"87.35629021796734\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"349.6360389693211\" y1=\"43.13603896932107\" x2=\"362.3639610306789\" y2=\"55.86396103067893\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"347.9501552810008\" y1=\"15.975077640500379\" x2=\"364.0498447189992\" y2=\"24.02492235949962\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"383.6360389693211\" y1=\"321.3639610306789\" x2=\"396.3639610306789\" y2=\"308.6360389693211\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"383.8759401056945\" y1=\"292.09514142463667\" x2=\"396.1240598943055\" y2=\"278.90485857536333\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"384.18651982680444\" y1=\"262.87047656832203\" x2=\"395.81348017319556\" y2=\"249.12952343167797\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"384.6\" y1=\"233.7\" x2=\"395.4\" y2=\"219.3\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"385.1681205702616\" y1=\"204.59295338958896\" x2=\"394.8318794297384\" y2=\"189.40704661041104\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"385.9750776405004\" y1=\"175.54984471899925\" x2=\"394.0249223594996\" y2=\"159.45015528100075\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"387.1539501058485\" y1=\"146.53814968245462\" x2=\"392.8460498941515\" y2=\"129.46185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"387.1539501058485\" y1=\"117.03814968245462\" x2=\"392.8460498941515\" y2=\"99.96185031754538\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"387.1539501058485\" y1=\"70.46185031754538\" x2=\"392.8460498941515\" y2=\"87.53814968245462\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"385.9750776405004\" y1=\"41.45015528100076\" x2=\"394.0249223594996\" y2=\"57.54984471899924\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><line x1=\"383.6360389693211\" y1=\"13.636038969321072\" x2=\"396.3639610306789\" y2=\"26.36396103067893\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-linecap=\"round\"/><text x=\"265\" y=\"70\" font-size=\"14\" fill=\"#c2410c\" font-weight=\"700\">horizontal slopes where y = 2x</text></svg>"
+              }
+            },
+            {
+              "explain": "The near-vertical segments occur on the line \\(2y-x=0\\), so this expression belongs in the denominator.",
+              "work": "\\(2y-x=0\\iff y=\\frac{x}{2}\\)"
+            },
+            {
+              "explain": "Combine the numerator and denominator identified from the field.",
+              "work": "\\(\\boxed{\\frac{dy}{dx}=\\frac{y-2x}{2y-x}}\\)"
+            }
+          ],
+          "solution": "\\(\\frac{dy}{dx}=\\frac{y-2x}{2y-x}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 360\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M50 20H390M50 50H390M50 79H390M50 109H390M50 138H390M50 168H390M50 197H390M50 227H390M50 256H390M50 286H390M50 315H390M50 20V315M84 20V315M118 20V315M152 20V315M186 20V315M220 20V315M254 20V315M288 20V315M322 20V315M356 20V315M390 20V315\" stroke=\"#e2e8f0\"/><line x1=\"50\" y1=\"168\" x2=\"390\" y2=\"168\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"315\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"397\" y=\"162\">x</text><text x=\"226\" y=\"18\">y</text><g stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M78 49l13 -4M112 51l13 -3M146 55l12 -2M180 62h10M214 70l2 10M248 77l-2 12M282 82l-4 12M316 90l-5 11M350 96l-5 12M384 102l-5 12M78 79l11 -3M112 83l11 -2M146 90l10 1M180 98l4 8M214 109l-1 11M248 115l-4 11M282 122l-6 11M316 128l-6 10M350 134l-5 11M384 139l-5 12M78 108l10 -2M112 115l9 2M146 125l6 5M180 137l1 9M214 148l-2 11M248 154l-5 10M282 160l-6 10M316 166l-7 9M350 171l-6 10M384 176l-6 10M78 138l9 1M112 149l7 5M146 162l3 8M180 174l-1 10M214 186l-3 10M248 193l-5 9M282 198l-6 9M316 204l-6 9M350 210l-6 9M384 216l-6 9M78 168l8 4M112 180l5 7M146 193l2 9M180 205l-1 9M214 217l-3 8M248 225l-5 8M282 230l-6 8M316 236l-7 8M350 242l-6 8M384 248l-6 8M78 197l7 5M112 210l5 7M146 223l2 8M180 235l-1 8M214 247l-3 7M248 254l-5 7M282 260l-6 7M316 266l-7 7M350 272l-6 7M384 278l-6 7\"/></g></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-13C",
+      "code": "13C",
+      "title": "Separable differentiable equations",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\(\\frac{dy}{dx}=y^2\\cos x\\), given \\(y(\\pi/6)=-\\frac{1}{2}\\).",
+          "options": [
+            "\\(y=-\\frac1{\\sin x+\\frac32}\\)",
+            "\\(y=\\frac1{\\sin x-\\frac32}\\)",
+            "\\(y=-\\frac1{\\cos x+\\frac32}\\)",
+            "\\(y=-\\sin x-\\frac12\\)"
+          ],
+          "answer": 0,
+          "hint": "Separate the y and x terms, integrate, and use the initial condition to find the constant.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{dy}{dx}=y^2\\cos x\\)",
+              "note": "Move (1/y^2) beside dy and (\\cos x) beside dx."
+            },
+            {
+              "text": "\\(y(\\pi/6)=-\\frac{1}{2}\\)",
+              "note": "Use this value after integrating to determine the constant."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate variables.",
+              "work": "\\(y^{-2}dy=\\cos x,dx\\)"
+            },
+            {
+              "explain": "Integrate both sides.",
+              "work": "\\(-\\frac1y=\\sin x+C\\)"
+            },
+            {
+              "explain": "Substitute \\(x=\\pi/6, y=-1/2\\).",
+              "work": "\\(2=\\frac{1}{2}+C\\Rightarrow C=\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Rearrange for y.",
+              "work": "\\(\\boxed{y=-\\frac1{\\sin x+\\frac{3}{2}}}\\)"
+            }
+          ],
+          "solution": "\\(y=-\\frac1{\\sin x+\\frac32}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-13A",
+      "code": "13A",
+      "title": "Differential equations",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q13bi",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Soup cools according to \\(\\frac{dT}{dt}=-k(T-21)\\), where k is positive. Initially \\(T(0)=96^circ C\\). Show that \\(T=21+75e^{-kt}\\) is a solution.",
+          "manual": true,
+          "answer": "Sample answer: Differentiating gives \\(dT/dt=-75ke^{-kt}\\). Also \\(-k(T-21)=-k(75e^{-kt})=-75ke^{-kt}\\), so the proposed function satisfies the differential equation. At t=0, \\(T=21+75=96\\), so it also satisfies the initial condition.",
+          "hint": "Differentiate the proposed temperature function and separately substitute it into the right side of the differential equation.",
+          "keyPoints": [
+            {
+              "text": "\\(T=21+75e^{-kt}\\)",
+              "note": "Differentiate the exponential term using the chain rule."
+            },
+            {
+              "text": "\\(T(0)=96^circ C\\)",
+              "note": "Check the initial condition after checking the differential equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Differentiate the proposed solution with respect to time.",
+              "work": "\\(\\frac{dT}{dt}=75(-k)e^{-kt}=-75ke^{-kt}\\)"
+            },
+            {
+              "explain": "Substitute the proposed solution into the right side of the differential equation.",
+              "work": "\\(-k(T-21)=-k(21+75e^{-kt}-21)=-75ke^{-kt}\\)"
+            },
+            {
+              "explain": "Both sides agree, and the initial value is correct.",
+              "work": "\\(T(0)=21+75=96\\Rightarrow T=21+75e^{-kt}\\text{ is a solution}\\)"
+            }
+          ],
+          "solution": "Sample answer: Differentiating gives \\(dT/dt=-75ke^{-kt}\\). Also \\(-k(T-21)=-k(75e^{-kt})=-75ke^{-kt}\\), so the proposed function satisfies the differential equation. At t=0, \\(T=21+75=96\\), so it also satisfies the initial condition.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-13E",
+      "code": "13E",
+      "title": "Applications of differential equations",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q13bii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Soup cools according to \\(T=21+75e^{-kt}\\), where t is minutes after removal from the stove. It is 87°C after 5 minutes. How much longer after that measurement must Miriam wait for it to reach 70°C?",
+          "options": [
+            "\\(12.0\\text{ min}\\)",
+            "\\(17.0\\text{ min}\\)",
+            "\\(5.04\\text{ min}\\)",
+            "\\(22.0\\text{ min}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the 87°C measurement to find k; then solve for the total time when T=70°C and subtract 5 minutes.",
+          "keyPoints": [
+            {
+              "text": "87°C after 5 minutes",
+              "note": "Substitute this measurement to determine the cooling constant k."
+            },
+            {
+              "text": "How much longer",
+              "note": "Find the total time to 70°C, then subtract the 5 minutes already elapsed."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use \\(T(5)=87\\) to find k.",
+              "work": "\\(87=21+75e^{-5k}\\Rightarrow e^{-5k}=66/75=0.88\\Rightarrow k=-\\frac15\\ln(0.88)\\approx0.02557\\)"
+            },
+            {
+              "explain": "Solve the model for the total time when T=70.",
+              "work": "\\(70=21+75e^{-kt}\\Rightarrow e^{-kt}=49/75\\Rightarrow t=-\\frac{\\ln(49/75)}{k}\\approx17.04\\text{ min}\\)"
+            },
+            {
+              "explain": "Subtract the first five minutes already elapsed.",
+              "work": "\\(17.04-5=12.04\\approx12.0\\text{ min more}\\)"
+            }
+          ],
+          "solution": "\\(12.0\\text{ min}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    }
+  ]
+}

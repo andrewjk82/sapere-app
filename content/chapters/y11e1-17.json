@@ -1,0 +1,114 @@
+{
+  "chapterId": "y11e1-17",
+  "title": "Chapter 17: Combinatorics",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11e1-17C",
+      "code": "17C",
+      "title": "Ordered selections — three more principles",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In how many different queues can 5 boys and 3 girls stand if the 3 girls must stand next to one another?",
+          "options": [
+            "\\(6!\times3!=4320\\)",
+            "\\(8!=40320\\)",
+            "\\(6!=720\\)",
+            "\\(5!\times3!=720\\)"
+          ],
+          "answer": 0,
+          "hint": "Treat the three girls as one block first, then arrange the girls within that block.",
+          "keyPoints": [
+            {
+              "text": "the 3 girls must stand next to one another",
+              "note": "Group the girls as one block before counting the arrangements."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Treat the three girls as one block. The five boys and this block make six objects to arrange.",
+              "work": "\\(6!\\text{ arrangements}\\)"
+            },
+            {
+              "explain": "The three girls can change order within their block in 3! ways.",
+              "work": "\\(3!\\text{ internal arrangements}\\)"
+            },
+            {
+              "explain": "Multiply the independent choices to count every valid queue exactly once.",
+              "work": "\\(6!\\times3!=720\\times6=4320\\)"
+            }
+          ],
+          "solution": "\\(6!\\times3!=4320\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11e1-17E",
+      "code": "17E",
+      "title": "Counting unordered selections",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Nine points are given, with exactly four lying on one straight line and no other three collinear. How many triangles can be formed using the points as vertices?",
+          "options": [
+            "\\(80\\)",
+            "\\(84\\)",
+            "\\(76\\)",
+            "\\(120\\)"
+          ],
+          "answer": 0,
+          "hint": "Count all triples of points, then remove triples chosen entirely from the four collinear points.",
+          "keyPoints": [
+            {
+              "text": "Nine points are given",
+              "note": "A triple from those four points does not make a triangle."
+            },
+            {
+              "text": "four lying on one straight line",
+              "note": "Only the all-collinear triples need to be removed."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Choose any 3 of the 9 points.",
+              "work": "\\(\\binom93=84\\)"
+            },
+            {
+              "explain": "Remove the triples selected from the four collinear points; these do not form triangles.",
+              "work": "\\(\\binom{4}{3}=4\\text{ collinear triples}\\)"
+            },
+            {
+              "explain": "Subtract the invalid triples.",
+              "work": "\\(84-4=80\\text{ triangles}\\)"
+            }
+          ],
+          "solution": "\\(80\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 240 180\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"240\" height=\"180\" fill=\"white\"/><line x1=\"30\" y1=\"135\" x2=\"150\" y2=\"135\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"45\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"75\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"105\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"135\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"70\" cy=\"90\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"110\" cy=\"75\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"105\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"190\" cy=\"70\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"165\" cy=\"45\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><text x=\"20\" y=\"160\" font-size=\"11\">Four points lie on one line</text></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}

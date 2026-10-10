@@ -1,0 +1,360 @@
+{
+  "chapterId": "y12e1-8",
+  "title": "Chapter 8: Vectors",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-8C",
+      "code": "8C",
+      "title": "The dot product (or scalar product)",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A right-angled isosceles triangle \\(OPQ\\) has its right angle at \\(Q\\), with \\(OQ=PQ=4\\). Let \\(\\mathbf p=\\overrightarrow{OP}\\) and \\(\\mathbf q=\\overrightarrow{OQ}\\). Find \\(\\mathbf p\\cdot\\mathbf q\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(8\\sqrt2\\)",
+            "\\(16\\)",
+            "\\(16\\sqrt2\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(\\mathbf p\\cdot\\mathbf q=|\\mathbf p||\\mathbf q|\\cos\\theta\\), where \\(\\theta=\\angle POQ\\).",
+          "keyPoints": [
+            {
+              "text": "\\(Q\\)",
+              "note": "The two equal legs meet at Q; use Pythagoras for the hypotenuse OP."
+            },
+            {
+              "text": "\\(\\mathbf p=\\overrightarrow{OP}\\) and \\(\\mathbf q=\\overrightarrow{OQ}\\)",
+              "note": "The included \\angle is at O, between OP and OQ."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The equal legs are 4 and 4, so use Pythagoras to find the hypotenuse OP.",
+              "work": "\\(|\\mathbf p|=OP=\\sqrt{4^2+4^2}=4\\sqrt2,\\quad |\\mathbf q|=OQ=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 280\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"330\" height=\"220\" fill=\"white\"/><path d=\"M70 170 L220 170 L220 50 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M207 170 L207 157 L220 157\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"55\" y=\"185\" font-size=\"13\">O</text><text x=\"225\" y=\"185\" font-size=\"13\">Q</text><text x=\"226\" y=\"47\" font-size=\"13\">P</text><text x=\"135\" y=\"193\" font-size=\"13\">OQ=4</text><text x=\"230\" y=\"110\" font-size=\"13\">PQ=4</text></svg>"
+              }
+            },
+            {
+              "explain": "The triangle is isosceles right, so each acute angle is \\(45^\\circ\\).",
+              "work": "\\(\\theta=\\angle POQ=45^\\circ\\)"
+            },
+            {
+              "explain": "Apply the scalar-product formula using the included angle.",
+              "work": "\\(\\mathbf p\\cdot\\mathbf q=|\\mathbf p||\\mathbf q|\\cos45^\\circ=(4\\sqrt2)(4)(\\sqrt2/2)=16\\)"
+            }
+          ],
+          "solution": "\\(16\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 330 220\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"330\" height=\"220\" fill=\"white\"/><path d=\"M70 170 L220 170 L220 50 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M207 170 L207 157 L220 157\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"55\" y=\"185\" font-size=\"13\">O</text><text x=\"225\" y=\"185\" font-size=\"13\">Q</text><text x=\"226\" y=\"47\" font-size=\"13\">P</text><text x=\"135\" y=\"193\" font-size=\"13\">OQ=4</text><text x=\"230\" y=\"110\" font-size=\"13\">PQ=4</text></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-8F",
+      "code": "8F",
+      "title": "Applications to physical situations",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three forces are \\(\\mathbf F_1=-\\sqrt3\\mathbf j\\), \\(\\mathbf F_2=\\mathbf i+\\sqrt3\\mathbf j\\), and \\(\\mathbf F_3=-\\frac12\\mathbf i+\\frac{\\sqrt3}{2}\\mathbf j\\). Which vector has the same magnitude as their resultant \\(\\mathbf F_1+\\mathbf F_2+\\mathbf F_3\\)?",
+          "options": [
+            "\\(\\mathbf F_3-\\mathbf F_1\\)",
+            "\\(\\mathbf F_2-\\mathbf F_1\\)",
+            "\\(\\mathbf F_2\\)",
+            "\\(\\mathbf F_3\\)"
+          ],
+          "answer": 3,
+          "hint": "Add the i-components and j-components separately before comparing magnitudes.",
+          "keyPoints": [
+            {
+              "text": "\\(\\mathbf F_1+\\mathbf F_2+\\mathbf F_3\\)",
+              "note": "Resolve and add horizontal and vertical components separately."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add the horizontal components.",
+              "work": "\\(0+1-\\frac{1}{2}=\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Add the vertical components.",
+              "work": "\\(-\\sqrt3+\\sqrt3+\\frac{\\sqrt3}{2}=\\frac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Find the resultant magnitude and compare.",
+              "work": "\\(|\\mathbf R|=\\sqrt{(1/2)^2+(\\sqrt3/2)^2}=1,\\quad |\\mathbf F_3|=\\sqrt{1/4+3/4}=1\\)"
+            }
+          ],
+          "solution": "\\(\\mathbf F_3\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q12ci",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A remote-controlled toy boat moves at 6 m/s in still water. A 2 m/s wind blows from the south-west towards the north-east, and a 5 m/s current flows south. Amelia steers east across an 80 m wide lake. Let \\(\\mathbf i\\) represent 1 m/s east and \\(\\mathbf j\\) represent 1 m/s north. Show that the resultant velocity is \\((6+\\sqrt2)\\mathbf i+(\\sqrt2-5)\\mathbf j\\) m/s.",
+          "manual": true,
+          "answer": "Sample answer: The wind components are \\(2\\cos45^circ\\mathbf i+2\\sin45^circ\\mathbf j=\\sqrt2\\mathbf i+\\sqrt2\\mathbf j\\). The boat velocity is (6\\mathbf i) and the current is (-5\\mathbf j). Adding gives ((6+\\sqrt2)\\mathbf i+(\\sqrt2-5)\\mathbf j) m/s.",
+          "hint": "Resolve the wind along east and north first. A southward current has a negative j-component.",
+          "keyPoints": [
+            {
+              "text": "A 2 m/s wind blows from the south-west towards the north-east",
+              "note": "Resolve this 45° wind into equal positive east and north components."
+            },
+            {
+              "text": "a 5 m/s current flows south",
+              "note": "South is the negative j direction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The wind points north-east, 45° above east. Resolve it into perpendicular components.",
+              "work": "\\(2\\cos45^\\circ=\\sqrt2\\text{ east},\\quad 2\\sin45^\\circ=\\sqrt2\\text{ north}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 280\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"380\" height=\"190\" fill=\"white\"/><line x1=\"65\" y1=\"20\" x2=\"65\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"3\"/><line x1=\"315\" y1=\"20\" x2=\"315\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"24\" y=\"95\" font-size=\"13\">West</text><text x=\"321\" y=\"95\" font-size=\"13\">East</text><circle cx=\"110\" cy=\"100\" r=\"6\" fill=\"#2563eb\"/><line x1=\"110\" y1=\"100\" x2=\"220\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"3\"/><polygon points=\"220,100 210,94 210,106\" fill=\"#2563eb\"/><text x=\"135\" y=\"93\" font-size=\"12\">boat 6i</text><line x1=\"110\" y1=\"100\" x2=\"140\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"3\"/><polygon points=\"140,70 129,73 137,81\" fill=\"#f97316\"/><text x=\"145\" y=\"65\" font-size=\"12\">wind √2(i+j)</text><line x1=\"250\" y1=\"48\" x2=\"250\" y2=\"120\" stroke=\"#0f766e\" stroke-width=\"3\"/><polygon points=\"250,120 244,109 256,109\" fill=\"#0f766e\"/><text x=\"258\" y=\"89\" font-size=\"12\">current −5j</text></svg>"
+              }
+            },
+            {
+              "explain": "Write the three velocity vectors with signs for their directions.",
+              "work": "\\(\\mathbf v_{boat}=6\\mathbf i,\\quad \\mathbf v_{wind}=\\sqrt2\\mathbf i+\\sqrt2\\mathbf j,\\quad \\mathbf v_{current}=-5\\mathbf j\\)"
+            },
+            {
+              "explain": "Add the i- and j-components separately.",
+              "work": "\\(\\mathbf v=(6+\\sqrt2)\\mathbf i+(\\sqrt2-5)\\mathbf j\\text{ m/s}\\)"
+            }
+          ],
+          "solution": "Sample answer: The wind components are \\(2\\cos45^\\circ\\mathbf i+2\\sin45^\\circ\\mathbf j=\\sqrt2\\mathbf i+\\sqrt2\\mathbf j\\). The boat velocity is \\(6\\mathbf i\\) and the current is \\(-5\\mathbf j\\). Adding the three vectors gives \\((6+\\sqrt2)\\mathbf i+(\\sqrt2-5)\\mathbf j\\text{ m/s}\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 190\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"380\" height=\"190\" fill=\"white\"/><line x1=\"65\" y1=\"20\" x2=\"65\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"3\"/><line x1=\"315\" y1=\"20\" x2=\"315\" y2=\"170\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"24\" y=\"95\" font-size=\"13\">West</text><text x=\"321\" y=\"95\" font-size=\"13\">East</text><circle cx=\"110\" cy=\"100\" r=\"6\" fill=\"#2563eb\"/><line x1=\"110\" y1=\"100\" x2=\"220\" y2=\"100\" stroke=\"#2563eb\" stroke-width=\"3\"/><polygon points=\"220,100 210,94 210,106\" fill=\"#2563eb\"/><text x=\"135\" y=\"93\" font-size=\"12\">boat 6i</text><line x1=\"110\" y1=\"100\" x2=\"140\" y2=\"70\" stroke=\"#f97316\" stroke-width=\"3\"/><polygon points=\"140,70 129,73 137,81\" fill=\"#f97316\"/><text x=\"145\" y=\"65\" font-size=\"12\">wind √2(i+j)</text><line x1=\"250\" y1=\"48\" x2=\"250\" y2=\"120\" stroke=\"#0f766e\" stroke-width=\"3\"/><polygon points=\"250,120 244,109 256,109\" fill=\"#0f766e\"/><text x=\"258\" y=\"89\" font-size=\"12\">current −5j</text></svg>"
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q12cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The boat velocity is \\((6+\\sqrt2)\\mathbf i+(\\sqrt2-5)\\mathbf j\\) m/s. Find its speed to three significant figures.",
+          "options": [
+            "\\(8.24\\text{ m/s}\\)",
+            "\\(7.41\\text{ m/s}\\)",
+            "\\(6.83\\text{ m/s}\\)",
+            "\\(9.11\\text{ m/s}\\)"
+          ],
+          "answer": 0,
+          "hint": "Speed is the magnitude of the velocity vector; square both components and add.",
+          "keyPoints": [
+            {
+              "text": "Find its speed",
+              "note": "Use the magnitude formula for perpendicular east and north components."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the magnitude of the velocity vector.",
+              "work": "\\(|\\mathbf v|=\\sqrt{(6+\\sqrt2)^2+(\\sqrt2-5)^2}\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\((6+\\sqrt2)^2+(\\sqrt2-5)^2=36+12\\sqrt2+2+2-10\\sqrt2+25=65+2\\sqrt2\\)"
+            },
+            {
+              "explain": "Evaluate and round to three significant figures.",
+              "work": "\\(|\\mathbf v|=\\sqrt{65+2\\sqrt2}\\approx8.243\\Rightarrow 8.24\\text{ m/s}\\)"
+            }
+          ],
+          "solution": "\\(8.24\\text{ m/s}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q12ciii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A boat crosses a lake 80 m wide. Its eastward velocity component is \\(6+\\sqrt2\\) m/s. How long does it take to reach the east bank?",
+          "options": [
+            "\\(10.8\\text{ s}\\)",
+            "\\(9.71\\text{ s}\\)",
+            "\\(80\\sqrt{65+2\\sqrt2}\\text{ s}\\)",
+            "\\(13.7\\text{ s}\\)"
+          ],
+          "answer": 0,
+          "hint": "The crossing time depends on the eastward component only; use distance = speed × time.",
+          "keyPoints": [
+            {
+              "text": "lake 80 m wide",
+              "note": "The width is an east-west distance."
+            },
+            {
+              "text": "eastward velocity component",
+              "note": "Use this component for the crossing time."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The eastward component is constant; this component carries the boat across the lake.",
+              "work": "\\(v_E=6+\\sqrt2\\approx7.414\\text{ m/s}\\)"
+            },
+            {
+              "explain": "Use distance = speed × time and solve for t.",
+              "work": "\\(t=\\frac{d}{v_E}=\\frac{80}{6+\\sqrt2}\\)"
+            },
+            {
+              "explain": "Evaluate and round to three significant figures.",
+              "work": "\\(t\\approx10.79\\text{ s}\\approx10.8\\text{ s}\\)"
+            }
+          ],
+          "solution": "\\(10.8\\text{ s}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-8D",
+      "code": "8D",
+      "title": "Geometric problems",
+      "questions": [
+        {
+          "id": "abbotsleigh2020-ext1-q11di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In right-angled triangle \\(ABC\\), the right angle is at \\(B\\), and \\(M\\) is the midpoint of \\(AC\\). Given \\(\\overrightarrow{AM}=\\mathbf a\\) and \\(\\overrightarrow{BM}=\\mathbf b\\), find \\(\\overrightarrow{AB}\\) and \\(\\overrightarrow{BC}\\).",
+          "options": [
+            "\\(\\overrightarrow{AB}=\\mathbf b-\\mathbf a,\\;\\overrightarrow{BC}=\\mathbf a+\\mathbf b\\)",
+            "\\(\\overrightarrow{AB}=\\mathbf a-\\mathbf b,\\;\\overrightarrow{BC}=\\mathbf a+\\mathbf b\\)",
+            "\\(\\overrightarrow{AB}=\\mathbf a+\\mathbf b,\\;\\overrightarrow{BC}=\\mathbf a-\\mathbf b\\)",
+            "\\(\\overrightarrow{AB}=\\mathbf b+\\mathbf a,\\;\\overrightarrow{BC}=\\mathbf b-\\mathbf a\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the route addition rule through M, paying attention to the direction of each vector.",
+          "keyPoints": [
+            {
+              "text": "\\(\\overrightarrow{AM}=\\mathbf a\\) and \\(\\overrightarrow{BM}=\\mathbf b\\)",
+              "note": "Reverse (\\overrightarrow{BM}) to get (\\overrightarrow{MB})."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "To travel from A to B, go from A to M and then M to B.",
+              "work": "\\(\\overrightarrow{AB}=\\overrightarrow{AM}+\\overrightarrow{MB}=\\mathbf a-\\mathbf b\\)"
+            },
+            {
+              "explain": "Because M is the midpoint of AC, the directed vectors from A to M and M to C are equal.",
+              "work": "\\(\\overrightarrow{MC}=\\mathbf a\\)"
+            },
+            {
+              "explain": "To travel from B to C, go through M.",
+              "work": "\\(\\overrightarrow{BC}=\\overrightarrow{BM}+\\overrightarrow{MC}=\\mathbf b+\\mathbf a\\)"
+            }
+          ],
+          "solution": "\\(\\overrightarrow{AB}=\\mathbf a-\\mathbf b,\\quad\\overrightarrow{BC}=\\mathbf a+\\mathbf b\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          }
+        },
+        {
+          "id": "abbotsleigh2020-ext1-q11dii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "In right-angled triangle ABC, the right angle is at B, and M is the midpoint of AC. Given \\(\\overrightarrow{AM}=\\mathbf{a}\\) and \\(\\overrightarrow{BM}=\\mathbf{b}\\), use vectors to prove that M is equidistant from A, B and C.",
+          "manual": true,
+          "answer": "Sample answer: \\(MA=MB=MC\\). Since \\(\\overrightarrow{AB}=\\mathbf{a}-\\mathbf{b}\\) and \\(\\overrightarrow{BC}=\\mathbf{a}+\\mathbf{b}\\), perpendicularity at B gives \\((\\mathbf{a}-\\mathbf{b})\\cdot(\\mathbf{a}+\\mathbf{b})=0\\), hence \\(|\\mathbf{a}|^2=|\\mathbf{b}|^2\\). Also \\(MA=MC=|\\mathbf{a}|\\), as M is the midpoint of AC, and \\(MB=|\\mathbf{b}|\\). Therefore all three distances are equal.",
+          "hint": "Express the two sides meeting at B as vectors in terms of a and b. Then use the right angle as a zero dot product.",
+          "keyPoints": [
+            {
+              "text": "right angle is at B",
+              "note": "Use the perpendicular sides meeting at B to make a zero dot product."
+            },
+            {
+              "text": "M is the midpoint of AC",
+              "note": "The midpoint gives equal lengths MA and MC."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "From the midpoint and vector route rules, write the vectors along the two perpendicular sides.",
+              "work": "\\(\\overrightarrow{AB}=\\mathbf a-\\mathbf b,\\quad \\overrightarrow{BC}=\\mathbf a+\\mathbf b\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 360 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"360\" height=\"250\" fill=\"white\"/><path d=\"M55 185 L300 185 L175 52 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M292 185 L292 177 L300 177\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"177\" cy=\"118\" r=\"4\" fill=\"#f97316\"/><text x=\"43\" y=\"202\" font-size=\"14\">A</text><text x=\"301\" y=\"202\" font-size=\"14\">B</text><text x=\"174\" y=\"46\" font-size=\"14\">C</text><text x=\"179\" y=\"112\" font-size=\"14\" fill=\"#c2410c\">M</text><text x=\"15\" y=\"230\" font-size=\"12\">M is the midpoint of AC; ∠B=90°</text></svg>"
+              }
+            },
+            {
+              "explain": "Since the right angle is at B, the corresponding side vectors have zero dot product.",
+              "work": "\\((\\mathbf a-\\mathbf b)\\cdot(\\mathbf a+\\mathbf b)=0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 360 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"360\" height=\"250\" fill=\"white\"/><path d=\"M55 185 L300 185 L175 52 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M292 185 L292 177 L300 177\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"4\"/><line x1=\"175\" y1=\"52\" x2=\"55\" y2=\"185\" stroke=\"#2563eb\" stroke-width=\"5\"/><line x1=\"175\" y1=\"52\" x2=\"300\" y2=\"185\" stroke=\"#0f766e\" stroke-width=\"5\"/><text x=\"43\" y=\"202\" font-size=\"14\">A</text><text x=\"301\" y=\"202\" font-size=\"14\">B</text><text x=\"174\" y=\"46\" font-size=\"14\">C</text><text x=\"179\" y=\"112\" font-size=\"14\" fill=\"#c2410c\">M</text><text x=\"20\" y=\"230\" font-size=\"12\" fill=\"#c2410c\">AB = a−b and BC = a+b meet perpendicularly</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand using the symmetry of the dot product.",
+              "work": "\\(|\\mathbf{a}|^2+\\mathbf{a}\\cdot\\mathbf{b}-\\mathbf{b}\\cdot\\mathbf{a}-|\\mathbf{b}|^2=0\\Rightarrow |\\mathbf{a}|^2=|\\mathbf{b}|^2\\)"
+            },
+            {
+              "explain": "Translate vector magnitudes into distances.",
+              "work": "\\(MA=MC=|\\mathbf a|,\\quad MB=|\\mathbf b|=|\\mathbf a|\\Rightarrow MA=MB=MC\\)"
+            }
+          ],
+          "solution": "Sample answer: \\(MA=MB=MC\\). Since \\(\\overrightarrow{AB}=\\mathbf a-\\mathbf b\\) and \\(\\overrightarrow{BC}=\\mathbf a+\\mathbf b\\), the perpendicularity at B gives \\((\\mathbf a-\\mathbf b)\\cdot(\\mathbf a+\\mathbf b)=0\\), hence \\(|\\mathbf a|^2=|\\mathbf b|^2\\). Also \\(MA=MC=|\\mathbf a|\\), as M is the midpoint of AC, and \\(MB=|\\mathbf b|\\). Therefore all three distances are equal.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Examination",
+            "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
+            "school": "Abbotsleigh",
+            "year": 2020
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 360 250\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"360\" height=\"250\" fill=\"white\"/><path d=\"M55 185 L300 185 L175 52 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M292 185 L292 177 L300 177\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"177\" cy=\"118\" r=\"4\" fill=\"#f97316\"/><text x=\"43\" y=\"202\" font-size=\"14\">A</text><text x=\"301\" y=\"202\" font-size=\"14\">B</text><text x=\"174\" y=\"46\" font-size=\"14\">C</text><text x=\"179\" y=\"112\" font-size=\"14\" fill=\"#c2410c\">M</text><text x=\"15\" y=\"230\" font-size=\"12\">M is the midpoint of AC; ∠B=90°</text></svg>"
+          }
+        }
+      ]
+    }
+  ]
+}
