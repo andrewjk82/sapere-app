@@ -163,9 +163,9 @@ const vennContext='A language survey has 60 students: French-only 12, Spanish-on
 add(15,'y10-15b',mc('cgs-y10-2024-s1-q6a','medium',`${vennContext} What is the probability that a randomly selected student studies all three languages?`,[
   '\\(\\frac7{60}\\)','\\(\\frac7{22}\\)','\\(\\frac{13}{60}\\)','\\(\\frac{53}{60}\\)'],0,
   'Use the number in the centre of the three-way Venn intersection over the total number of students.','all three languages','Use 60 as the total sample space, not the number who study at least one language.',[
-  st('The all-three region contains 7 students.','\\(n(F\\cap S\\cap G)=7\\)'),
+  st('The all-three region contains 7 students.','\\(n(F\\cap S\\cap G)=7\\)','venn'),
   st('There are 60 students in the survey.','\\(n(\\text{all students})=60\\)'),
-  st('Form favourable over total outcomes.','\\(P(F\\cap S\\cap G)=\\boxed{\\frac7{60}}\\)') ],'venn'));
+  st('Form favourable over total outcomes.','\\(P(F\\cap S\\cap G)=\\boxed{\\frac7{60}}\\)') ]));
 add(15,'y10-15c',mc('cgs-y10-2024-s1-q6b','medium',`${vennContext} Given that a student studies at least two languages, what is the probability that the student studies all three?`,[
   '\\(\\frac7{60}\\)','\\(\\frac7{22}\\)','\\(\\frac{22}{60}\\)','\\(\\frac{15}{22}\\)'],1,
   'For a conditional probability, restrict the denominator to all regions with at least two languages.','at least two languages','The condition includes the three pair-only regions and the centre region.',[
