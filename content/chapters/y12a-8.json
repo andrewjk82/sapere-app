@@ -10826,12 +10826,12 @@
           "id": "amity2020-ma-q02",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "An amount of \\($3000\\) is invested at \\(3\\%\\) per annum, compounded monthly. What is its value after five years?",
+          "stem": "An amount of \\(\\$3000\\) is invested at \\(3\\%\\) per annum, compounded monthly. What is its value after five years?",
           "options": [
-            "\\($3485\\)",
-            "\\($3526\\)",
-            "\\($3571\\)",
-            "\\($3654\\)"
+            "\\(\\$3485\\)",
+            "\\(\\$3526\\)",
+            "\\(\\$3571\\)",
+            "\\(\\$3654\\)"
           ],
           "answer": 0,
           "hint": "Use monthly rate 0.03/12 and count 5×12 compounding periods.",
@@ -14166,12 +14166,12 @@
           "id": "amity2020-ma-q16a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "An annuity pays \\($600\\) at the end of each year for 8 years at 3% p.a. Use the table to find its future value.",
+          "stem": "An annuity pays \\(\\$600\\) at the end of each year for 8 years at 3% p.a. Use the table to find its future value.",
           "options": [
-            "\\($5335.20\\)",
-            "\\($4892.40\\)",
-            "\\($6000.00\\)",
-            "\\($8892.00\\)"
+            "\\(\\$5335.20\\)",
+            "\\(\\$4892.40\\)",
+            "\\(\\$6000.00\\)",
+            "\\(\\$8892.00\\)"
           ],
           "answer": 0,
           "hint": "Use the factor in the 8-year row and 3.0% column, then multiply by $600.",
@@ -14216,18 +14216,18 @@
           "id": "amity2020-ma-q16b",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "What annual end-of-year contribution gives a future value of \\($15{,}000\\) after 7 years at 2.5% p.a.?",
+          "stem": "What annual end-of-year contribution gives a future value of \\(\\$15{,}000\\) after 7 years at 2.5% p.a.?",
           "options": [
-            "\\($1987.54\\)",
-            "\\($2025.00\\)",
-            "\\($1132.05\\)",
-            "\\($15000.00\\)"
+            "\\(\\$1987.54\\)",
+            "\\(\\$2025.00\\)",
+            "\\(\\$1132.05\\)",
+            "\\(\\$15000.00\\)"
           ],
           "answer": 0,
           "hint": "Divide the required future value by the 7-year, 2.5% annuity factor.",
           "keyPoints": [
             {
-              "text": "future value of \\($15{,}000\\)",
+              "text": "future value of \\(\\$15{,}000\\)",
               "note": "The factor multiplies each regular contribution to give the future value."
             }
           ],
@@ -17498,10 +17498,10 @@
           "difficulty": "hard",
           "stem": "A $48,000 car loan is repaid by equal month-end payments over 5 years at 8.4% p.a. compounded monthly. Find the monthly payment.",
           "options": [
-            "\\($882.48\\)",
-            "\\($982.48\\)",
-            "\\($1094.89\\)",
-            "\\($1200.00\\)"
+            "\\(\\$882.48\\)",
+            "\\(\\$982.48\\)",
+            "\\(\\$1094.89\\)",
+            "\\(\\$1200.00\\)"
           ],
           "answer": 1,
           "hint": "Use the present-value formula for an ordinary annuity with monthly rate 0.084/12 and 60 payments.",
@@ -17539,10 +17539,10 @@
           "difficulty": "medium",
           "stem": "Using the monthly payment for the $48,000 loan, find the total interest paid over 60 months.",
           "options": [
-            "\\($9,489.02\\)",
-            "\\($10,948.90\\)",
-            "\\($58,948.90\\)",
-            "\\($48,000.00\\)"
+            "\\(\\$9,489.02\\)",
+            "\\(\\$10,948.90\\)",
+            "\\(\\$58,948.90\\)",
+            "\\(\\$48,000.00\\)"
           ],
           "answer": 1,
           "hint": "Total interest is total repayments minus the original amount borrowed.",
