@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Columns2, Rows2 } from 'lucide-react';
 import { splitFraction } from '../utils/useSplitLayout';
 
@@ -11,6 +11,18 @@ import { splitFraction } from '../utils/useSplitLayout';
 export const SplitPanes = ({ layout, split, onSplitChange, first, second, activePane = 'first' }) => {
   const boxRef = useRef(null);
   const [dragging, setDragging] = useState(false);
+  // While dragging only this component re-renders (the panes passed in keep the same element objects, so
+  // React skips them); the saved ratio is committed once, on release. Updates are coalesced per frame.
+  const [liveSplit, setLiveSplit] = useState(null);
+  const shown = liveSplit ?? split;
+  // A layout switch (side ↔ stack, or a rotation) fades the panes in instead of jumping.
+  const lastLayoutRef = useRef(layout);
+  const [fadeKey, setFadeKey] = useState(0);
+  useEffect(() => {
+    if (lastLayoutRef.current === layout) return;
+    lastLayoutRef.current = layout;
+    setFadeKey((k) => k + 1);
+  }, [layout]);
   const split2 = layout === 'side' || layout === 'stack';
   const stacked = layout === 'stack';
 
@@ -20,9 +32,15 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
     if (!rect) return;
     setDragging(true);
     let last = split;
-    const move = (ev) => { last = splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout); onSplitChange(last, false); };
+    let frame = 0;
+    const move = (ev) => {
+      last = splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout);
+      if (!frame) frame = requestAnimationFrame(() => { frame = 0; setLiveSplit(last); });
+    };
     const up = () => {
+      if (frame) { cancelAnimationFrame(frame); frame = 0; }
       setDragging(false);
+      setLiveSplit(null);
       onSplitChange(last, true);
       window.removeEventListener('pointermove', move);
       window.removeEventListener('pointerup', up);
@@ -35,12 +53,15 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
 
   const tabStyle = (on) => ({ position: 'absolute', inset: 0, minWidth: 0, visibility: on ? 'visible' : 'hidden', pointerEvents: on ? 'auto' : 'none' });
   const firstStyle = !split2 ? tabStyle(activePane === 'first')
-    : stacked ? { height: `${split * 100}%`, minHeight: 0, display: 'flex', flexDirection: 'column' }
-      : { width: `${split * 100}%`, minWidth: 0, display: 'flex', flexDirection: 'column' };
+    : stacked ? { height: `${shown * 100}%`, minHeight: 0, display: 'flex', flexDirection: 'column' }
+      : { width: `${shown * 100}%`, minWidth: 0, display: 'flex', flexDirection: 'column' };
   const secondStyle = !split2 ? tabStyle(activePane === 'second') : { flex: 1, minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column' };
 
   return (
-    <div ref={boxRef} style={{ flex: 1, minHeight: 0, minWidth: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative' }}>
+    <div
+      ref={boxRef}
+      style={{ flex: 1, minHeight: 0, minWidth: 0, display: 'flex', flexDirection: stacked ? 'column' : 'row', position: 'relative', animation: fadeKey ? `${fadeKey % 2 ? 'splitFadeA' : 'splitFadeB'} 0.22s ease-out` : undefined }}
+    >
       <div style={firstStyle}>{first}</div>
       {split2 && (
         <div
@@ -48,9 +69,9 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
           aria-orientation={stacked ? 'horizontal' : 'vertical'}
           aria-label="Drag to resize"
           onPointerDown={onDividerDown}
-          style={{ flexShrink: 0, ...(stacked ? { height: 14, cursor: 'row-resize' } : { width: 14, cursor: 'col-resize' }), background: dragging ? '#c4b5fd' : '#e2e8f0', touchAction: 'none', display: 'grid', placeItems: 'center' }}
+          style={{ flexShrink: 0, ...(stacked ? { height: 14, cursor: 'row-resize' } : { width: 14, cursor: 'col-resize' }), background: dragging ? '#ddd6fe' : '#e2e8f0', transition: 'background 0.15s', touchAction: 'none', display: 'grid', placeItems: 'center' }}
         >
-          <span style={{ borderRadius: 3, background: dragging ? '#7c3aed' : '#94a3b8', ...(stacked ? { width: 44, height: 4 } : { width: 4, height: 44 }) }} />
+          <span style={{ borderRadius: 3, background: dragging ? '#7c3aed' : '#94a3b8', transition: 'background 0.15s, transform 0.15s', transform: dragging ? (stacked ? 'scaleY(1.5)' : 'scaleX(1.5)') : 'none', ...(stacked ? { width: 44, height: 4 } : { width: 4, height: 44 }) }} />
         </div>
       )}
       <div style={secondStyle}>{second}</div>

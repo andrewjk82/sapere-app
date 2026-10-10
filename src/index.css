@@ -735,3 +735,8 @@ math-field::part(virtual-keyboard-toggle) {
   overflow-y: hidden;
   vertical-align: middle;
 }
+
+/* Worksheet / notes split: panes ease in when the layout switches (two identical keyframes so the animation can restart). */
+@keyframes splitFadeA { from { opacity: 0.35; transform: scale(0.992); } to { opacity: 1; transform: none; } }
+@keyframes splitFadeB { from { opacity: 0.35; transform: scale(0.992); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { @keyframes splitFadeA { from { opacity: 1; } to { opacity: 1; } } @keyframes splitFadeB { from { opacity: 1; } to { opacity: 1; } } }

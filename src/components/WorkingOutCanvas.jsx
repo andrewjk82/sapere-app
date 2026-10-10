@@ -1,4 +1,5 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
+import { flushSync } from 'react-dom';
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
 import StickerLayer from './StickerLayer';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
@@ -493,13 +494,15 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   useEffect(() => {
     const el = viewportRef.current;
     if (!el) return undefined;
-    const measure = () => {
+    const measure = (sync) => {
       const { width, height } = el.getBoundingClientRect();
       if (width === 0 || height === 0) return;
-      setViewSize((prev) => (prev.w === width && prev.h === height ? prev : { w: width, h: height }));
+      const update = () => setViewSize((prev) => (prev.w === width && prev.h === height ? prev : { w: width, h: height }));
+      // flushSync from the observer: the page is rescaled in the same frame the pane changes size (no one-frame lag).
+      if (sync) flushSync(update); else update();
     };
-    measure();
-    const ro = new ResizeObserver(measure);
+    measure(false);
+    const ro = new ResizeObserver(() => measure(true));
     ro.observe(el);
     return () => ro.disconnect();
   }, []);

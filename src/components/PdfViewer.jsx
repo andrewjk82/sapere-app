@@ -176,7 +176,7 @@ const useAutoHideToolbar = (pinned) => {
   return { visible: shown || pinned, show, tapHandlers };
 };
 
-const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl, pinchingRef, onAddStroke, onEraseAt, onPan }) => {
+const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, onAddStroke, onEraseAt, onPan }) => {
   const holderRef = useRef(null);
   const canvasRef = useRef(null);
   const [near, setNear] = useState(pageNumber === 1);
@@ -244,7 +244,7 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl
   }, [near, scrollRoot]);
 
   useEffect(() => {
-    if (!near || !width) return undefined;
+    if (!near || !renderWidth) return undefined;
     let cancelled = false;
     let task = null;
     (async () => {
@@ -253,8 +253,8 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl
         if (cancelled) return;
         const base = page.getViewport({ scale: 1 });
         setRatio(base.height / base.width);
-        const dpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / width);
-        const viewport = page.getViewport({ scale: (width / base.width) * dpr });
+        const dpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / renderWidth);
+        const viewport = page.getViewport({ scale: (renderWidth / base.width) * dpr });
         const canvas = canvasRef.current;
         if (!canvas) return;
         // Keep the current page visible while pdf.js prepares the replacement
@@ -275,7 +275,7 @@ const PdfPage = ({ pdf, pageNumber, width, initialRatio, scrollRoot, strokes, hl
       }
     })();
     return () => { cancelled = true; task?.cancel(); };
-  }, [near, width, pdf, pageNumber]);
+  }, [near, renderWidth, pdf, pageNumber]);
 
   return (
     <div
@@ -324,6 +324,13 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     setScrollEl(node);
   }, []);
   const [width, setWidth] = useState(0);
+  // pdf.js re-renders at this width, a moment after the pane stops changing (the bitmap just stretches meanwhile).
+  const [renderWidth, setRenderWidth] = useState(0);
+  useEffect(() => {
+    if (!width || Math.abs(width - renderWidth) < 2) return undefined;
+    const timer = window.setTimeout(() => setRenderWidth(width), renderWidth ? 170 : 0);
+    return () => window.clearTimeout(timer);
+  }, [width, renderWidth]);
   const [zoom, setZoom] = useState(1);
   const [renderZoom, setRenderZoom] = useState(1);
   const zoomRef = useRef(1);
@@ -455,8 +462,8 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     if (!scrollEl) return undefined;
     const measure = () => {
       const next = Math.min(MAX_PAGE_WIDTH, Math.max(0, scrollEl.clientWidth - PAGE_GAP * 2));
-      // Ignore sub-pixel jitter so pages don't re-render while scrolling.
-      setWidth((prev) => (Math.abs(prev - next) > 8 ? next : prev));
+      // Ignore sub-pixel jitter; the page boxes follow the pane smoothly (the bitmap re-renders after it settles).
+      setWidth((prev) => (Math.abs(prev - next) >= 1 ? next : prev));
     };
     measure();
     const ro = new ResizeObserver(measure);
@@ -672,6 +679,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
                   pdf={doc.pdf}
                   pageNumber={i + 1}
                   width={pageWidth}
+                  renderWidth={Math.round((renderWidth || width) * renderZoom)}
                   initialRatio={doc.ratio}
                   scrollRoot={scrollEl}
                   strokes={highlights[i + 1]}
