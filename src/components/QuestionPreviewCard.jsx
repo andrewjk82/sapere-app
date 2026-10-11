@@ -178,8 +178,8 @@ const QuestionPreviewCard = ({ question: q }) => {
                             </div>
                           )}
                           {step.graphData && (
-                            <div style={{ marginTop: '6px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fafbfd', display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '4px 0' }}>
-                              <MathView content="" graphData={step.graphData} style={{ minHeight: 'auto', margin: 0, lineHeight: 0 }} />
+                            <div style={{ marginTop: '10px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0', background: '#fafbfd', padding: '10px', width: '100%', display: 'flex', justifyContent: 'center' }}>
+                              <MathView content="" graphData={step.graphData} style={{ minHeight: 'auto', width: '100%', margin: 0 }} />
                             </div>
                           )}
                         </div>

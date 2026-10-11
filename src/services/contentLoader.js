@@ -28,7 +28,7 @@ let idsCache = null;          // Promise<{ id: topicId }>
 const readSetting = () => {
   if (globalThis.__SAPERE_CONTENT_SOURCE) return String(globalThis.__SAPERE_CONTENT_SOURCE); // node tests
   try { const v = window.localStorage.getItem('sapere:contentSource'); if (v) return v.trim(); } catch { /* ignore */ }
-  return String(import.meta.env?.VITE_CONTENT_SOURCE || 'firestore').trim();
+  return String(import.meta.env?.VITE_CONTENT_SOURCE || 'cdn').trim();
 };
 const parseSetting = (v) => {
   if (!v || v === 'firestore') return { all: false, list: [] };

@@ -180,7 +180,8 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
     try { graphData = JSON.parse(rawGraphData); } catch { graphData = null; }
   }
   const diagramSvg = graphData?.diagramSvg || graphData?.svgSnapshot || graphData?.svg;
-  const diagramSvgSrc = typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')
+  const isInlineSvg = typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg');
+  const diagramSvgSrc = isInlineSvg
     ? encodeSvgDataUrl(diagramSvg)
     : diagramSvg;
 
@@ -393,7 +394,22 @@ const MathView = ({ content, graphData: rawGraphData, style, align, keyPoints, o
         </div>
       )}
       {!hasText && <div ref={containerRef} style={{ display: 'none' }} />}
-      {diagramSvgSrc && !graphData?.geometry ? (
+      {isInlineSvg && !graphData?.geometry ? (
+        <div
+          dangerouslySetInnerHTML={{ __html: diagramSvg }}
+          style={{
+            width: '100%',
+            maxWidth: '680px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: hasText ? '12px' : '0',
+            alignSelf: 'center',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        />
+      ) : diagramSvgSrc && !graphData?.geometry ? (
         <img
           src={diagramSvgSrc}
           alt="Diagram"
