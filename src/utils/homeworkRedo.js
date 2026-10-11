@@ -44,3 +44,11 @@ export const redoSummary = (questions, store = {}) => {
 
 // First part of a topic label: "Y8 1A · Substitution" → "Y8 1A".
 export const shortTopicLabel = (topic) => String(topic?.label || topic?.title || topic?.id || '').split(' · ')[0];
+
+// Teacher marks use topicId|section|label. Keep this conversion in one place
+// so a matched Sapere question always receives the exact source reference.
+export const homeworkReferenceFor = (question) => ({
+  topicId: question?.topicId || '',
+  section: question?.section || '',
+  label: question?.label || '',
+});

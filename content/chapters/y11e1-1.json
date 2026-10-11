@@ -9,6 +9,123 @@
       "title": "Algebra review",
       "questions": [
         {
+          "id": "cambridge-e1-1a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(3(x-2)\\).",
+          "options": [
+            "\\(3x-2\\)",
+            "\\(3x-6\\)",
+            "\\(3x+6\\)",
+            "\\(x-6\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute the factor 3 to both terms inside the bracket.",
+          "steps": [
+            {
+              "explain": "The factor 3 multiplies every term inside the bracket, including the negative 2.",
+              "work": "\\(3(x-2)=3\\times x+3\\times(-2)\\)"
+            },
+            {
+              "explain": "Multiply each term and keep the negative sign from the second product.",
+              "work": "\\(3\\times x=3x\\) and \\(3\\times(-2)=-6\\)"
+            },
+            {
+              "explain": "Combine the two resulting terms. A common error is to leave the second term as \\(-2\\) instead of multiplying it by 3.",
+              "work": "\\(3(x-2)=3x-6\\)"
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": {
+              "bookId": "cambridge-nsw-ext1-y11-2ed",
+              "chapter": "1",
+              "exercise": "1A",
+              "question": "1a",
+              "page": 3
+            }
+          }
+        },
+        {
+          "id": "cambridge-e1-1a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(2(x-3)\\).",
+          "options": [
+            "\\(2x-3\\)",
+            "\\(x-6\\)",
+            "\\(2x+6\\)",
+            "\\(2x-6\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both \\(x\\) and \\(-3\\) by 2.",
+          "steps": [
+            {
+              "explain": "Use the distributive law to multiply 2 by each term in the bracket.",
+              "work": "\\(2(x-3)=2\\times x+2\\times(-3)\\)"
+            },
+            {
+              "explain": "Calculate both products.",
+              "work": "\\(2\\times x=2x\\) and \\(2\\times(-3)=-6\\)"
+            },
+            {
+              "explain": "Write the expanded expression. Do not change the subtraction into addition: the product of a positive and a negative is negative.",
+              "work": "\\(2(x-3)=2x-6\\)"
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": {
+              "bookId": "cambridge-nsw-ext1-y11-2ed",
+              "chapter": "1",
+              "exercise": "1A",
+              "question": "1b",
+              "page": 3
+            }
+          }
+        },
+        {
+          "id": "cambridge-e1-1a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(-3(x-2)\\).",
+          "options": [
+            "\\(-3x-6\\)",
+            "\\(3x-6\\)",
+            "\\(-3x+6\\)",
+            "\\(-x+6\\)"
+          ],
+          "answer": 2,
+          "hint": "The negative factor \\(-3\\) must multiply both terms.",
+          "steps": [
+            {
+              "explain": "Distribute the negative factor to every term in the bracket.",
+              "work": "\\(-3(x-2)=(-3)\\times x+(-3)\\times(-2)\\)"
+            },
+            {
+              "explain": "A negative times a positive is negative, while a negative times a negative is positive.",
+              "work": "\\((-3)\\times x=-3x\\) and \\((-3)\\times(-2)=6\\)"
+            },
+            {
+              "explain": "Put the two products together. The positive 6 comes from multiplying two negative factors.",
+              "work": "\\(-3(x-2)=-3x+6\\)"
+            }
+          ],
+          "timeLimit": 45,
+          "xp": 1,
+          "meta": {
+            "source": {
+              "bookId": "cambridge-nsw-ext1-y11-2ed",
+              "chapter": "1",
+              "exercise": "1A",
+              "question": "1c",
+              "page": 3
+            }
+          }
+        },
+        {
           "id": "y11e1-1a-q1a",
           "type": "short",
           "difficulty": "easy",

@@ -33,6 +33,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { mergeSourceReferenceIndex } from './sourceReferences.mjs';
 
 const SRC = 'content/chapters';
 const FIG = 'content/figures';
@@ -67,6 +68,7 @@ fs.mkdirSync(path.join(OUT, 'topics'), { recursive: true });
 
 const manifest = { builtAt: new Date().toISOString(), topics: {}, chapters: {} };
 const idToTopic = {}; const extra = {}; const hscTypes = {}; const dnaTypes = {}; const allIds = []; const adminDocs = []; const partIndex = {};
+const sourceRefs = {};
 let nQ = 0, nInactive = 0, bytes = 0;
 
 for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natural)) {
@@ -74,6 +76,7 @@ for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natu
   manifest.chapters[ch.chapterId] = {};
   for (const t of ch.topics) {
     const active = t.questions.filter((q) => !q.inactive);
+    mergeSourceReferenceIndex(sourceRefs, active, t.topicId);
     nInactive += t.questions.length - active.length;
     const ctx = { topicId: t.topicId, synthetic: t.synthetic === true, code: t.code, title: t.title, chapterId: ch.chapterId, chapterTitle: ch.title, year: ch.year };
     for (const q of t.questions) if (q.inactive) adminDocs.push({ ctx, q: inlineQuestion(q) });
@@ -106,7 +109,9 @@ allIds.sort((a, b) => natural(a[0], b[0]));
 const [allIdsName] = side('all-ids', allIds);
 const [adminName] = side('admin', { inactive: adminDocs });
 const [partsName] = side('parts', partIndex);
-manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName; manifest.allIds = allIdsName; manifest.admin = adminName; manifest.parts = partsName;
+for (const refs of Object.values(sourceRefs)) refs.sort((a, b) => a.questionId.localeCompare(b.questionId));
+const [sourceRefsName] = side('source-refs', sourceRefs);
+manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName; manifest.allIds = allIdsName; manifest.admin = adminName; manifest.parts = partsName; manifest.sourceRefs = sourceRefsName;
 manifest.contentHash = sha(Object.values(manifest.chapters).flatMap((c) => Object.values(c).map((v) => v[0])).join(''));
 fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));
 

@@ -23,6 +23,7 @@ let manifestAt = 0;
 let manifestFailed = false;
 const topicCache = new Map(); // file → Promise<topicFile>
 let idsCache = null;          // Promise<{ id: topicId }>
+let homeworkQuestionIndexCache = null; // Promise<{ homework reference key: [{ questionId, topicId }] }>
 
 // ---------- switch -------------------------------------------------------------------------------
 const readSetting = () => {
@@ -74,6 +75,14 @@ const getTopicFile = (file) => {
 const getIdMap = async () => {
   if (!idsCache) { const m = await getManifest(); idsCache = fetchJson(`/content/${m.ids}`).catch((e) => { idsCache = null; throw e; }); }
   return idsCache;
+};
+
+/** Compact textbook-source lookup for Homework Redo. Empty index is a safe PDF fallback. */
+export const getHomeworkQuestionIndex = async () => {
+  if (!homeworkQuestionIndexCache) homeworkQuestionIndexCache = getManifest()
+    .then((m) => m.sourceRefs ? fetchJson(`/content/${m.sourceRefs}`) : {})
+    .catch(() => { homeworkQuestionIndexCache = null; return {}; });
+  return homeworkQuestionIndexCache;
 };
 
 // ---------- legacy shape adapter (shared with api/content.js) ----------------------------------

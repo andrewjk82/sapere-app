@@ -18,6 +18,7 @@ import path from 'node:path';
 import katex from 'katex';
 import { Chapter } from '../../content/schema.js';
 import { validateLatexValue } from '../../src/utils/latexValidate.js';
+import { homeworkReferenceKey } from '../../src/utils/homeworkQuestionLink.js';
 
 const DIR = 'content/chapters';
 const REPORT = process.argv.includes('--report');
@@ -38,7 +39,8 @@ const checkTex = (text, where) => {
 const texNorm = (s) => String(s).replace(/\\\(|\\\)|\$/g, '').replace(/\s+/g, '').toLowerCase();
 
 const partIds = new Map();
-const walk = (q, file, isPart = false) => {
+const sourceRefs = new Map();
+const walk = (q, file, topicId, isPart = false) => {
   nQ++;
   const where = `${file}#${q.id}`;
   if (isPart) {
@@ -51,6 +53,19 @@ const walk = (q, file, isPart = false) => {
     if (partIds.has(q.id)) warn.push(`${where}: standalone id also a part in ${partIds.get(q.id)}`);
   }
   if (!q.stem && q.type !== 'multipart' && !q.inactive) errors.push(`${where}: empty stem`);
+  const source = q.meta?.source;
+  // Legacy metadata uses `meta.source` for unrelated provenance. Only the
+  // explicit textbook-link contract opts into this validation.
+  if (source && typeof source === 'object' && Object.hasOwn(source, 'bookId')) {
+    const required = ['bookId', 'chapter', 'exercise', 'question'];
+    const missing = required.filter((field) => !String(source[field] || '').trim());
+    if (missing.length) errors.push(`${where}: source reference missing ${missing.join(', ')}`);
+    else if (!q.inactive) {
+      const key = homeworkReferenceKey({ topicId, section: source.exercise, label: source.question });
+      if (sourceRefs.has(key)) errors.push(`${where}: duplicate source reference (also in ${sourceRefs.get(key)})`);
+      else sourceRefs.set(key, where);
+    }
+  }
   checkTex(q.stem, where); checkTex(q.hint, where); checkTex(q.solution, where);
   // keyPoints must point at text that is still in the stem (a later stem edit can orphan one).
   // Warning, not error: a stale highlight just doesn't show — it must never block a deploy.
@@ -66,7 +81,7 @@ const walk = (q, file, isPart = false) => {
     const seen = new Set(); texts.forEach((t) => { const k = texNorm(t); if (seen.has(k)) warn.push(`${where}: duplicate option "${t.slice(0, 40)}"`); seen.add(k); });
     if (texts.length !== 4) warn.push(`${where}: ${texts.length} options`);
   }
-  if (q.type === 'multipart') q.parts.forEach((p) => walk(p, file, true));
+  if (q.type === 'multipart') q.parts.forEach((p) => walk(p, file, topicId, true));
 };
 
 for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.json')).sort()) {
@@ -74,7 +89,7 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.json')).sort()) {
   try { data = JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8')); } catch (e) { errors.push(`${f}: invalid JSON ${e.message}`); continue; }
   const r = Chapter.safeParse(data);
   if (!r.success) { r.error.issues.slice(0, 5).forEach((i) => errors.push(`${f}: schema ${i.path.join('.')} — ${i.message}`)); if (r.error.issues.length > 5) errors.push(`${f}: …${r.error.issues.length - 5} more schema issues`); continue; }
-  for (const t of data.topics) for (const q of t.questions) walk(q, f);
+  for (const t of data.topics) for (const q of t.questions) walk(q, f, t.topicId);
 }
 
 // baseline key ignores the file name (questions move between chapter files) and KaTeX positions

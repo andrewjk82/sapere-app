@@ -2,7 +2,7 @@
  * Redo-wrong-questions helpers. Run via npm run test:homework.
  */
 import assert from 'node:assert';
-import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel, isWrongMark } from '../src/utils/homeworkRedo.js';
+import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel, homeworkReferenceFor, isWrongMark } from '../src/utils/homeworkRedo.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -54,6 +54,12 @@ test('summary counts each state', () => {
 test('short topic label', () => {
   assert.equal(shortTopicLabel({ label: 'Y8 1A · Addition' }), 'Y8 1A');
   assert.equal(shortTopicLabel({ id: 'x' }), 'x');
+});
+
+test('builds a source reference from a marked homework question', () => {
+  assert.deepEqual(homeworkReferenceFor({ topicId: 'y11e1-1a', section: '1A', label: '3b' }), {
+    topicId: 'y11e1-1a', section: '1A', label: '3b',
+  });
 });
 
 console.log(`\nredo: ${passed} passed`);

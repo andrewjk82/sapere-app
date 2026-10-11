@@ -3,14 +3,17 @@ import { createPortal } from 'react-dom';
 import { ArrowLeft, CheckCircle2, FileText, Images, Loader2, PenLine, X } from 'lucide-react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
+import ChallengeReviewView from '../challenge/ChallengeReviewView';
 import { useSplitLayout } from '../../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import SubmittedPages from './SubmittedPages';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
+import { getHomeworkQuestionIndex, getQuestionsByIds } from '../../services/contentLoader';
+import { resolveHomeworkQuestion } from '../../utils/homeworkQuestionLink';
 import { isSafeImageDataUrl } from '../../utils/homework';
-import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel } from '../../utils/homeworkRedo';
+import { wrongQuestions, draftHasInk, redoState, redoSummary, shortTopicLabel, homeworkReferenceFor } from '../../utils/homeworkRedo';
 import { groupMarksByTopic, markKey } from '../../utils/homeworkMarking';
 
 const SPIN = { animation: 'spin 0.8s linear infinite' };
@@ -42,6 +45,8 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   const [statusMap, setStatusMap] = useState({});
   const [ready, setReady] = useState(false);
   const [pdfMap, setPdfMap] = useState({});
+  const [questionIndex, setQuestionIndex] = useState({});
+  const [linkedQuestion, setLinkedQuestion] = useState(null);
   // Side by side or worksheet on top (the student's pick, per orientation); tabs on a phone.
   const { layout, canChoose, setLayoutChoice, split, setSplit } = useSplitLayout();
   const isWide = layout !== 'tabs';
@@ -51,12 +56,21 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
 
   const sessionId = item?.sessionId;
   const active = questions.find((q) => q.key === activeKey) || null;
+  const sourceMatch = useMemo(() => active
+    ? resolveHomeworkQuestion(homeworkReferenceFor(active), questionIndex)
+    : { status: 'missing' }, [active, questionIndex]);
 
   useEffect(() => {
     let cancelled = false;
     loadTopicPdfMap(profile).then((map) => { if (!cancelled) setPdfMap(map); }).catch(() => {});
     return () => { cancelled = true; };
   }, [profile]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getHomeworkQuestionIndex().then((index) => { if (!cancelled) setQuestionIndex(index); }).catch(() => {});
+    return () => { cancelled = true; };
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -132,6 +146,13 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     const own = (entry.sections || []).filter((s) => s.key === active.section);
     const images = (own.length ? own : entry.sections || []).flatMap((s) => s.images || []).filter(isSafeImageDataUrl);
     setSheet(images.length ? { images } : { error: 'There is no answer for this topic yet.' });
+  };
+
+  const practiseInSapere = async () => {
+    if (sourceMatch.status !== 'matched') return;
+    const { docs } = await getQuestionsByIds([sourceMatch.questionId]);
+    const question = docs.find((q) => q.id === sourceMatch.questionId);
+    if (question) setLinkedQuestion(question);
   };
 
   const verdict = (state) => {
@@ -243,6 +264,15 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         >
           Check answer
         </button>
+        {sourceMatch.status === 'matched' && (
+          <button
+            type="button"
+            onClick={practiseInSapere}
+            style={{ padding: '7px 14px', borderRadius: 10, border: '1.5px solid #c4b5fd', background: '#faf5ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.8rem', cursor: 'pointer' }}
+          >
+            Practise in Sapere
+          </button>
+        )}
       </div>
 
       <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: ready ? 'auto' : 'none' }}>
@@ -314,6 +344,15 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         <div style={{ flex: 1, display: 'grid', placeItems: 'center', color: '#64748b', fontWeight: 700 }}>Nothing to redo — every marked question was correct.</div>
       ) : (
         <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notesPane} activePane={pane === 'pdf' ? 'first' : 'second'} />
+      )}
+      {linkedQuestion && (
+        <ChallengeReviewView
+          questions={[linkedQuestion]}
+          userAnswers={['']}
+          answerResults={[{ correct: false }]}
+          onClose={() => setLinkedQuestion(null)}
+          disableReport
+        />
       )}
     </div>,
     document.body,
