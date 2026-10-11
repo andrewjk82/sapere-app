@@ -115,8 +115,21 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     saveTimerRef.current = window.setTimeout(() => { captureActive(); persist(); }, 1200);
   }, [captureActive, persist]);
 
-  const selectQuestion = (key) => {
-    if (!key || key === activeKeyRef.current) return;
+  const openLinkedQuestion = async (redoQuestion) => {
+    const match = resolveHomeworkQuestion(homeworkReferenceFor(redoQuestion), questionIndex);
+    if (match.status !== 'matched') return;
+    const { docs } = await getQuestionsByIds([match.questionId]);
+    const question = docs.find((q) => q.id === match.questionId);
+    if (question) setLinkedQuestion(question);
+  };
+
+  const selectQuestion = (nextQuestion) => {
+    const key = typeof nextQuestion === 'string' ? nextQuestion : nextQuestion?.key;
+    if (!key) return;
+    if (key === activeKeyRef.current) {
+      if (typeof nextQuestion === 'object') openLinkedQuestion(nextQuestion);
+      return;
+    }
     window.clearTimeout(saveTimerRef.current);
     if (loadedRef.current) { captureActive(); persist(); }
     activeKeyRef.current = key;
@@ -125,6 +138,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     const next = draftsRef.current[key];
     if (next) canvasRef.current?.loadPagesData(next);
     else canvasRef.current?.clear();
+    if (typeof nextQuestion === 'object') openLinkedQuestion(nextQuestion);
   };
 
   const handleClose = () => {
@@ -149,10 +163,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
   };
 
   const practiseInSapere = async () => {
-    if (sourceMatch.status !== 'matched') return;
-    const { docs } = await getQuestionsByIds([sourceMatch.questionId]);
-    const question = docs.find((q) => q.id === sourceMatch.questionId);
-    if (question) setLinkedQuestion(question);
+    if (active) openLinkedQuestion(active);
   };
 
   const verdict = (state) => {
@@ -234,7 +245,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
                 key={label}
                 type="button"
                 disabled={!wrong}
-                onClick={() => selectQuestion(key)}
+                onClick={() => selectQuestion({ key, topicId, section, label })}
                 aria-pressed={wrong ? selected : undefined}
                 aria-label={`Question ${label}: ${mark === 'c' ? 'correct' : mark === 'x' ? 'incorrect' : 'half marks'}`}
                 style={{ padding: '3px 8px', borderRadius: 8, border: 0, background: MARK_BG[mark], color: '#fff', fontWeight: 800, fontSize: '0.74rem', whiteSpace: 'nowrap', cursor: wrong ? 'pointer' : 'default', opacity: wrong || !activeKey ? 1 : 0.75, boxShadow: selected ? '0 0 0 2px #fff, 0 0 0 4px #4f46e5' : 'none' }}
