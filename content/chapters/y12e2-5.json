@@ -1,0 +1,624 @@
+{
+  "chapterId": "y12e2-5",
+  "title": "Chapter 5: Vectors",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-5A",
+      "code": "5A",
+      "title": "Coordinates in Three Dimensions",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The curve \\(r(t)=(t^2,t^4,t^6)\\) is projected onto the \\(xz\\)-plane. Which equation describes the projection?",
+          "hint": "Projection onto the \\(xz\\)-plane removes the y-coordinate. Use \\(x=t^2\\) to eliminate t.",
+          "solution": "\\(z=x^3,\\ x\\ge0\\)",
+          "steps": [
+            {
+              "explain": "Keep only x and z coordinates.",
+              "work": "\\(x=t^2,\\quad z=t^6.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"55\" y1=\"205\" x2=\"430\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"70\" y1=\"220\" x2=\"70\" y2=\"35\" stroke=\"#64748b\"/><path d=\"M70 205 C130 202 235 145 390 48\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"400\" y=\"220\">x</text><text x=\"75\" y=\"38\">z</text><text x=\"210\" y=\"184\">z=x³, x≥0</text></svg>"
+              }
+            },
+            {
+              "explain": "Eliminate t.",
+              "work": "\\(z=(t^2)^3=x^3.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"55\" y1=\"205\" x2=\"430\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"70\" y1=\"220\" x2=\"70\" y2=\"35\" stroke=\"#64748b\"/><path d=\"M70 205 C130 202 235 145 390 48\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"400\" y=\"220\">x</text><text x=\"75\" y=\"38\">z</text><text x=\"210\" y=\"184\">z=x³, x≥0</text></svg>"
+              }
+            },
+            {
+              "explain": "State the allowed domain.",
+              "work": "Since \\(x=t^2\\), \\(x\\ge0\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"55\" y1=\"205\" x2=\"430\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"70\" y1=\"220\" x2=\"70\" y2=\"35\" stroke=\"#64748b\"/><path d=\"M70 205 C130 202 235 145 390 48\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"400\" y=\"220\">x</text><text x=\"75\" y=\"38\">z</text><text x=\"210\" y=\"184\">z=x³, x≥0</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(z=x^2,\\ x\\ge0\\)",
+            "\\(z=x^3,\\ x\\ge0\\)",
+            "\\(z=x^3,\\ z\\ge0\\) with both signs of x",
+            "\\(x=z^3,\\ x\\ge0\\)"
+          ],
+          "answer": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"55\" y1=\"205\" x2=\"430\" y2=\"205\" stroke=\"#64748b\"/><line x1=\"70\" y1=\"220\" x2=\"70\" y2=\"35\" stroke=\"#64748b\"/><path d=\"M70 205 C130 202 235 145 390 48\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><text x=\"400\" y=\"220\">x</text><text x=\"75\" y=\"38\">z</text><text x=\"210\" y=\"184\">z=x³, x≥0</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The curve \\(r(t)=(t^2,t^4,t^6)\\) is projected onto the \\(xz\\)-plane",
+              "note": "Projection onto the \\(xz\\)-plane removes the y-coordinate. Use \\(x=t^2\\) to eliminate t."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-5B",
+      "code": "5B",
+      "title": "Vectors in Three Dimensions",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In rhombus \\(ABCD\\), \\(\\overrightarrow{AB}=a\\), \\(\\overrightarrow{BC}=b\\). \\(BE\\) extends \\(AB\\) with \\(AB:BE=4:3\\), and \\(F\\) is the midpoint of \\(CD\\). Find \\(\\overrightarrow{FE}\\).",
+          "hint": "Set A as the origin. Express B, C, D, E and the midpoint F using vectors a and b.",
+          "solution": "\\(\\frac54a-b\\)",
+          "steps": [
+            {
+              "explain": "Find the key position vectors.",
+              "work": "\\(B=a,\\ C=a+b,\\ D=b,\\ E=a+\\frac34a=\\frac74a.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"90,60 240,60 330,190 180,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"360\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#dc2626\"/><text x=\"72\" y=\"55\">A</text><text x=\"238\" y=\"48\">B</text><text x=\"335\" y=\"200\">C</text><text x=\"165\" y=\"205\">D</text><text x=\"365\" y=\"55\">E</text><text x=\"255\" y=\"220\">F</text><text x=\"120\" y=\"48\">a</text><text x=\"270\" y=\"105\">b</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the midpoint formula for F.",
+              "work": "\\(F=\\frac{C+D}{2}=\\frac{a+2b}{2}=\\frac12a+b.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"90,60 240,60 330,190 180,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"360\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#dc2626\"/><text x=\"72\" y=\"55\">A</text><text x=\"238\" y=\"48\">B</text><text x=\"335\" y=\"200\">C</text><text x=\"165\" y=\"205\">D</text><text x=\"365\" y=\"55\">E</text><text x=\"255\" y=\"220\">F</text><text x=\"120\" y=\"48\">a</text><text x=\"270\" y=\"105\">b</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract position vectors in the order asked.",
+              "work": "\\(\\overrightarrow{FE}=E-F=(\\frac74-\\frac12)a-b=\\frac54a-b.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"90,60 240,60 330,190 180,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"360\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#dc2626\"/><text x=\"72\" y=\"55\">A</text><text x=\"238\" y=\"48\">B</text><text x=\"335\" y=\"200\">C</text><text x=\"165\" y=\"205\">D</text><text x=\"365\" y=\"55\">E</text><text x=\"255\" y=\"220\">F</text><text x=\"120\" y=\"48\">a</text><text x=\"270\" y=\"105\">b</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{11}{6}a+b\\)",
+            "\\(\\frac54a+b\\)",
+            "\\(\\frac{11}{6}a-b\\)",
+            "\\(\\frac54a-b\\)"
+          ],
+          "answer": 3,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"90,60 240,60 330,190 180,190\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"330\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"240\" y1=\"60\" x2=\"360\" y2=\"60\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"255\" cy=\"190\" r=\"4\" fill=\"#dc2626\"/><text x=\"72\" y=\"55\">A</text><text x=\"238\" y=\"48\">B</text><text x=\"335\" y=\"200\">C</text><text x=\"165\" y=\"205\">D</text><text x=\"365\" y=\"55\">E</text><text x=\"255\" y=\"220\">F</text><text x=\"120\" y=\"48\">a</text><text x=\"270\" y=\"105\">b</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "In rhombus \\(ABCD\\), \\(\\overrightarrow{AB}=a\\), \\(\\overrightarrow{BC}=b\\)",
+              "note": "Set A as the origin. Express B, C, D, E and the midpoint F using vectors a and b."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-5C",
+      "code": "5C",
+      "title": "The Dot Product",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q16b_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In a regular tetrahedron of side 1, let \\(a=\\overrightarrow{OA}\\), \\(b=\\overrightarrow{OB}\\), \\(c=\\overrightarrow{OC}\\). What are the pairwise dot products?",
+          "hint": "Use \\(|a-b|=1\\) and expand the squared magnitude.",
+          "solution": "\\(1/2\\) for each pair",
+          "steps": [
+            {
+              "explain": "Use a pair of unit edge vectors.",
+              "work": "\\(|a|=|b|=1\\) and \\(|a-b|=1\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand the squared length.",
+              "work": "\\(|a-b|^2=|a|^2+|b|^2-2a\\cdot b=2-2a\\cdot b.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve and use symmetry.",
+              "work": "\\(1=2-2a\\cdot b\\Rightarrow a\\cdot b=1/2\\); symmetry gives all three.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(a\\cdot b=b\\cdot c=a\\cdot c=1/2\\)",
+            "All are 0",
+            "All are 1",
+            "They are not equal"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "In a regular tetrahedron of side 1, let \\(a=\\overrightarrow{OA}\\), \\(b=\\overrightarrow{OB}\\), \\(c=\\overrightarrow{OC}\\)",
+              "note": "Use \\(|a-b|=1\\) and expand the squared magnitude."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q16b_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In a regular tetrahedron with all edge lengths 1, \\(BX:XC=AY:YB=x:(1-x)\\). Find \\(|OY|\\).",
+          "hint": "Since Y lies on AB, write its position vector as a weighted combination of a and b; use \\(a\\cdot b=1/2\\).",
+          "solution": "\\(\\sqrt{1-x+x^2}\\)",
+          "steps": [
+            {
+              "explain": "Express the position vector of Y.",
+              "work": "\\(\\overrightarrow{OY}=(1-x)a+xb.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Compute its squared magnitude.",
+              "work": "\\(|OY|^2=(1-x)^2+x^2+2x(1-x)(1/2).\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify and take the positive root.",
+              "work": "\\(|OY|^2=1-x+x^2\\), so \\(|OY|=\\sqrt{1-x+x^2}.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\sqrt{1-x+x^2}\\)",
+            "\\(x\\)",
+            "\\(1-x\\)",
+            "\\(\\sqrt{1+x+x^2}\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "On the regular tetrahedron, \\(BX:XC=AY:YB=x:(1-x)\\)",
+              "note": "Since Y lies on AB, write its position vector as a weighted combination of a and b; use \\(a\\cdot b=1/2\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-5D",
+      "code": "5D",
+      "title": "Applications of the Dot Product",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A cube has opposite vertices \\(A=(-1,-1,-1)\\) and \\(B=(1,1,1)\\). The other opposite vertices are \\(X=(1,-1,-1)\\) and \\(Y=(-1,1,1)\\), as shown. If \\(\\alpha\\) is the acute angle between \\(AB\\) and \\(XY\\), find \\(\\sin 2\\alpha\\).",
+          "hint": "Use direction vectors for AB and XY. The dot product gives cos α; then use sin²α+cos²α=1.",
+          "solution": "\\(\\sin 2\\alpha=\\frac{2\\sqrt8}{9}\\)",
+          "steps": [
+            {
+              "explain": "Read the endpoints from the cube and form direction vectors.",
+              "work": "\\(\\overrightarrow{AB}=(2,2,2),\\quad \\overrightarrow{XY}=(-2,2,2).\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 400 300\"><polygon points=\"70,90 250,90 250,250 70,250\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"130,40 310,40 310,200 130,200\" fill=\"#eff6ff\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 90L130 40M250 90L310 40M250 250L310 200M70 250L130 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 250L250 90\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M250 250L130 40\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"45\" y=\"270\">A (−1,−1,−1)</text><text x=\"260\" y=\"82\" font-size=\"12\">B (1,1,1)</text><text x=\"250\" y=\"275\">X</text><text x=\"112\" y=\"35\">Y</text><path d=\"M181 128 A18 18 0 0 1 203 131\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"181\" y=\"118\" fill=\"#7c3aed\" font-size=\"13\">α</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the dot-product formula to find the cosine of the acute angle.",
+              "work": "\\(\\cos\\alpha=\\frac{(2)(-2)+(2)(2)+(2)(2)}{\\sqrt{12}\\sqrt{12}}=\\frac4{12}=\\frac13.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 400 300\"><polygon points=\"70,90 250,90 250,250 70,250\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"130,40 310,40 310,200 130,200\" fill=\"#eff6ff\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 90L130 40M250 90L310 40M250 250L310 200M70 250L130 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 250L250 90\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M250 250L130 40\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"45\" y=\"270\">A (−1,−1,−1)</text><text x=\"260\" y=\"82\" font-size=\"12\">B (1,1,1)</text><text x=\"250\" y=\"275\">X</text><text x=\"112\" y=\"35\">Y</text><path d=\"M181 128 A18 18 0 0 1 203 131\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"181\" y=\"118\" fill=\"#7c3aed\" font-size=\"13\">α</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the sine and apply the double-angle identity.",
+              "work": "\\(\\sin\\alpha=\\sqrt{1-\\frac19}=\\frac{2\\sqrt2}{3},\\quad \\sin2\\alpha=2\\sin\\alpha\\cos\\alpha=\\frac{4\\sqrt2}{9}=\\frac{2\\sqrt8}{9}.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 400 300\"><polygon points=\"70,90 250,90 250,250 70,250\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"130,40 310,40 310,200 130,200\" fill=\"#eff6ff\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 90L130 40M250 90L310 40M250 250L310 200M70 250L130 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 250L250 90\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M250 250L130 40\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"45\" y=\"270\">A (−1,−1,−1)</text><text x=\"260\" y=\"82\" font-size=\"12\">B (1,1,1)</text><text x=\"250\" y=\"275\">X</text><text x=\"112\" y=\"35\">Y</text><path d=\"M181 128 A18 18 0 0 1 203 131\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"181\" y=\"118\" fill=\"#7c3aed\" font-size=\"13\">α</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{2\\sqrt8}{9}\\)",
+            "\\(\\frac{2\\sqrt2}{9}\\)",
+            "\\(\\frac{4}{9}\\)",
+            "\\(\\frac{8\\sqrt2}{9}\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 400 300\"><polygon points=\"70,90 250,90 250,250 70,250\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"3\"/><polygon points=\"130,40 310,40 310,200 130,200\" fill=\"#eff6ff\" fill-opacity=\".35\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 90L130 40M250 90L310 40M250 250L310 200M70 250L130 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M70 250L250 90\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M250 250L130 40\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"45\" y=\"270\">A (−1,−1,−1)</text><text x=\"260\" y=\"82\" font-size=\"12\">B (1,1,1)</text><text x=\"250\" y=\"275\">X</text><text x=\"112\" y=\"35\">Y</text><path d=\"M181 128 A18 18 0 0 1 203 131\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"181\" y=\"118\" fill=\"#7c3aed\" font-size=\"13\">α</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "A cube has opposite vertices \\(A=(-1,-1,-1)\\) and \\(B=(1,1,1)\\)",
+              "note": "Use direction vectors for AB and XY. The dot product gives cos α; then use sin²α+cos²α=1."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q16b_iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "In a regular tetrahedron with all edge lengths 1, \\(BX:XC=AY:YB=x:(1-x)\\), where \\(0<x<1\\). Determine the range of \\(\\angle YOX\\).",
+          "hint": "Write OX and OY in vector form, find their dot product and lengths, then inspect endpoint limits.",
+          "solution": "\\(\\arccos\\left(\\frac56\\right)\\le\\angle YOX<\\frac{\\pi}{3}\\)",
+          "steps": [
+            {
+              "explain": "Use the edge ratios to express the two position vectors.",
+              "work": "\\(\\overrightarrow{OY}=(1-x)a+xb,\\quad \\overrightarrow{OX}=(1-x)b+xc.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Use unit edge lengths and pairwise dot products of 1/2.",
+              "work": "\\(|OY|^2=|OX|^2=1-x+x^2,\\quad OY\\cdot OX=\\frac12(1+x-x^2).\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the dot-product formula for the included angle.",
+              "work": "\\(\\cos\\theta=\\frac{1+x-x^2}{2(1-x+x^2)}.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            },
+            {
+              "explain": "The cosine is largest at x=1/2 and tends to 1/2 as x approaches either excluded endpoint 0 or 1. Since arccos decreases, the angle has its minimum at x=1/2 and approaches π/3 without reaching it.",
+              "work": "\\(\\cos\\theta\\in(\\frac12,\\frac56],\\quad \\theta\\in[\\arccos(\\frac56),\\frac{\\pi}{3}).\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\left[\\arccos\\frac56,\\frac{\\pi}{3}\\right)\\)",
+            "\\(\\left(0,\\frac{\\pi}{3}\\right)\\)",
+            "\\(\\left[0,\\frac{\\pi}{3}\\right]\\)",
+            "\\(\\left(\\frac{\\pi}{3},\\frac{\\pi}{2}\\right)\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 440 300\"><path d=\"M65 235L365 235L220 55Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M285 145L65 235M285 145L365 235M285 145L220 55\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M65 235L220 55\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-dasharray=\"6 5\"/><circle cx=\"142\" cy=\"145\" r=\"4\" fill=\"#dc2626\"/><circle cx=\"215\" cy=\"235\" r=\"4\" fill=\"#dc2626\"/><path d=\"M142 145L285 145M215 235L285 145\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"4\"/><text x=\"48\" y=\"255\">B</text><text x=\"366\" y=\"255\">A</text><text x=\"214\" y=\"48\">C</text><text x=\"290\" y=\"145\">O</text><text x=\"122\" y=\"140\">X</text><text x=\"204\" y=\"260\">Y</text><text x=\"70\" y=\"285\">Schematic tetrahedron; X∈BC, Y∈BA</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "In a regular tetrahedron, \\(BX:XC=AY:YB=x:(1-x)\\), where \\(0<x<1\\)",
+              "note": "Write OX and OY in vector form, find their dot product and lengths, then inspect endpoint limits."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-5E",
+      "code": "5E",
+      "title": "Vector Proofs in Geometry",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-5F",
+      "code": "5F",
+      "title": "The Vector Equation of a Line",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q12c_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Find the Cartesian equations of the line through \\((1,-2,4)\\) parallel to direction \\((5,2,-1)\\).",
+          "hint": "Use the given point and direction components in the symmetric line equation.",
+          "solution": "\\(\\frac{x-1}{5}=\\frac{y+2}{2}=\\frac{z-4}{-1}\\)",
+          "steps": [
+            {
+              "explain": "Write the parametric equations.",
+              "work": "\\(x=1+5t,\\ y=-2+2t,\\ z=4-t.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert each coordinate to a common parameter.",
+              "work": "\\(t=\\frac{x-1}{5}=\\frac{y+2}{2}=\\frac{z-4}{-1}.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{x-1}{5}=\\frac{y+2}{2}=\\frac{z-4}{-1}\\)",
+            "\\(\\frac{x+1}{5}=\\frac{y-2}{2}=\\frac{z+4}{-1}\\)",
+            "\\(\\frac{x-1}{2}=\\frac{y+2}{5}=\\frac{z-4}{-1}\\)",
+            "\\(x=1+5t,y=-2-2t,z=4-t\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Find the Cartesian equations of the line through \\((1,-2,4)\\) parallel to direction \\((5,2,-1)\\)",
+              "note": "Use the given point and direction components in the symmetric line equation."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12c_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Where does the line \\((x,y,z)=(1,-2,4)+t(5,2,-1)\\) meet the xz-plane?",
+          "hint": "The xz-plane has equation y=0; solve for the parameter first.",
+          "solution": "\\((6,0,3)\\)",
+          "steps": [
+            {
+              "explain": "Set y to zero.",
+              "work": "\\(-2+2t=0\\Rightarrow t=1.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into x and z.",
+              "work": "\\(x=1+5=6,\\quad z=4-1=3.\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\((6,0,3)\\)",
+            "\\((1,0,4)\\)",
+            "\\((6,0,5)\\)",
+            "\\((-4,0,5)\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><line x1=\"65\" y1=\"55\" x2=\"400\" y2=\"55\" stroke=\"#2563eb\" stroke-width=\"4\"/><circle cx=\"125\" cy=\"55\" r=\"5\" fill=\"#dc2626\"/><text x=\"70\" y=\"40\">(1,−2,4)</text><text x=\"260\" y=\"40\">direction (5,2,−1)</text><text x=\"370\" y=\"85\">λ</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Where does the line \\((x,y,z)=(1,-2,4)+t(5,2,-1)\\) meet the xz-plane?",
+              "note": "The xz-plane has equation y=0; solve for the parameter first."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-5G",
+      "code": "5G",
+      "title": "Vector Equations of Circles, Spheres and Planes",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q13b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The spheres \\(S_1:x^2-2x+y^2+4y+z^2-4z=0\\) and \\(S_2:x^2+y^2+z^2+10x+2z+10=0\\) intersect at exactly one point. Why?",
+          "hint": "Complete the squares to find the centres and radii, then compare distance with the sum of radii.",
+          "solution": "They are externally tangent: centre distance 7 equals radius sum 7.",
+          "steps": [
+            {
+              "explain": "Complete squares for S1.",
+              "work": "Centre \\((1,-2,2)\\), radius \\(3\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><circle cx=\"155\" cy=\"125\" r=\"65\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"265\" cy=\"125\" r=\"65\" fill=\"#fee2e2\" fill-opacity=\".45\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"125\" r=\"4\" fill=\"#111827\"/><text x=\"125\" y=\"120\">S₁</text><text x=\"270\" y=\"120\">S₂</text><text x=\"185\" y=\"215\">external tangency</text></svg>"
+              }
+            },
+            {
+              "explain": "Complete squares for S2.",
+              "work": "Centre \\((-5,0,-1)\\), radius \\(4\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><circle cx=\"155\" cy=\"125\" r=\"65\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"265\" cy=\"125\" r=\"65\" fill=\"#fee2e2\" fill-opacity=\".45\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"125\" r=\"4\" fill=\"#111827\"/><text x=\"125\" y=\"120\">S₁</text><text x=\"270\" y=\"120\">S₂</text><text x=\"185\" y=\"215\">external tangency</text></svg>"
+              }
+            },
+            {
+              "explain": "Compare the centre distance and radii.",
+              "work": "Distance \\(=\\sqrt{6^2+(-2)^2+3^2}=7=3+4\\); the spheres are externally tangent.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><circle cx=\"155\" cy=\"125\" r=\"65\" fill=\"#dbeafe\" fill-opacity=\".45\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"265\" cy=\"125\" r=\"65\" fill=\"#fee2e2\" fill-opacity=\".45\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"210\" cy=\"125\" r=\"4\" fill=\"#111827\"/><text x=\"125\" y=\"120\">S₁</text><text x=\"270\" y=\"120\">S₂</text><text x=\"185\" y=\"215\">external tangency</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "Their centre distance equals the sum of their radii.",
+            "Their centres coincide and their radii are equal.",
+            "Their centre distance is less than the difference of the radii.",
+            "Their centre distance is zero."
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 420 240\"><circle cx=\"145\" cy=\"120\" r=\"52\" fill=\"#dbeafe\" fill-opacity=\".5\" stroke=\"#2563eb\" stroke-width=\"3\"/><circle cx=\"265\" cy=\"120\" r=\"68\" fill=\"#fee2e2\" fill-opacity=\".45\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"197\" cy=\"120\" r=\"4\" fill=\"#111827\"/><text x=\"125\" y=\"120\">S₁</text><text x=\"275\" y=\"120\">S₂</text><text x=\"185\" y=\"205\">one common point</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "The spheres \\(S_1:x^2-2x+y^2+4y+z^2-4z=0\\) and \\(S_2:x^2+y^2+z^2+10x+2z+10=0\\) intersect at exactly one point",
+              "note": "Complete the squares to find the centres and radii, then compare distance with the sum of radii."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q11c_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For \\(Q=(2,-3,4)\\), \\(R=(-7,1,0)\\), find the plane of points \\(P=(x,y,z)\\) equidistant from Q and R.",
+          "hint": "Set \\(|P-Q|^2=|P-R|^2\\). Expand and cancel the matching \\(x^2+y^2+z^2\\) terms.",
+          "solution": "\\(18x-8y+8z=-21\\)",
+          "steps": [
+            {
+              "explain": "Equate the squared distances from P to Q and R.",
+              "work": "\\((x-2)^2+(y+3)^2+(z-4)^2=(x+7)^2+(y-1)^2+z^2.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand both sides; the x², y² and z² terms cancel.",
+              "work": "\\(-4x+6y-8z+29=14x-2y+50.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+              }
+            },
+            {
+              "explain": "Collect the variable terms and constants.",
+              "work": "\\(-18x+8y-8z=21\\), hence \\(18x-8y+8z=-21.\\\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(18x-8y+8z=-21\\)",
+            "\\(18x-8y+8z=21\\)",
+            "\\(9x-4y+4z=-21\\)",
+            "\\(-18x-8y+8z=-21\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "For \\(Q=(2,-3,4)\\), \\(R=(-7,1,0)\\), find the plane of points \\(P=(x,y,z)\\) equidistant from Q and R",
+              "note": "Set \\(|P-Q|^2=|P-R|^2\\). Expand and cancel the matching \\(x^2+y^2+z^2\\) terms."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q11c_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "What is the geometric description of the set of points equidistant from fixed points Q and R?",
+          "hint": "In three dimensions, points equidistant from two fixed points form the perpendicular bisector of the segment joining them.",
+          "solution": "The perpendicular-bisector plane of QR.",
+          "steps": [
+            {
+              "explain": "Use the defining condition.",
+              "work": "\\(|PQ|=|PR|\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the locus in 3D.",
+              "work": "This is a plane perpendicular to \\(QR\\) through the midpoint of \\(QR\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "A sphere centered at Q",
+            "The perpendicular-bisector plane of segment QR",
+            "A line parallel to QR",
+            "A plane containing QR"
+          ],
+          "answer": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 480 250\"><polygon points=\"85,170 390,135 320,55\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"170\" y1=\"150\" x2=\"300\" y2=\"120\" stroke=\"#dc2626\" stroke-width=\"5\"/><text x=\"70\" y=\"185\">Q</text><text x=\"305\" y=\"132\">R</text><text x=\"160\" y=\"140\">P</text><text x=\"220\" y=\"195\">perpendicular bisector plane</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "What is the geometric description of the set of points equidistant from fixed points Q and R?",
+              "note": "In three dimensions, points equidistant from two fixed points form the perpendicular bisector of the segment joining them."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "chapterId": "y12e2-3",
+  "title": "Chapter 3: Complex Numbers II",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-3A",
+      "code": "3A",
+      "title": "Powers of Complex Numbers",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Given \\(z=\\frac{\\sqrt3+i}{1+i}\\), find \\(z^5\\).",
+          "hint": "Convert numerator and denominator to modulus-argument form before raising to the fifth power.",
+          "solution": "\\(4\\sqrt2e^{19i\\pi/12}\\)",
+          "steps": [
+            {
+              "explain": "Find modulus and argument of each factor.",
+              "work": "\\(\\sqrt3+i=2e^{i\\pi/6},\\quad 1+i=\\sqrt2e^{i\\pi/4}.\\)"
+            },
+            {
+              "explain": "Divide in polar form.",
+              "work": "\\(z=\\sqrt2e^{-i\\pi/12}.\\)"
+            },
+            {
+              "explain": "Apply De Moivre’s theorem.",
+              "work": "\\(z^5=(\\sqrt2)^5e^{-5i\\pi/12}=4\\sqrt2e^{19i\\pi/12}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(2\\sqrt2e^{i\\pi/12}\\)",
+            "\\(4\\sqrt2e^{i\\pi/12}\\)",
+            "\\(2\\sqrt2e^{19i\\pi/12}\\)",
+            "\\(4\\sqrt2e^{19i\\pi/12}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Given \\(z=\\frac{\\sqrt3+i}{1+i}\\), find \\(z^5\\)",
+              "note": "Convert numerator and denominator to modulus-argument form before raising to the fifth power."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12b_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Write \\(z=1+i\\sqrt3\\) in modulus-argument form.",
+          "hint": "Find the distance from the origin and the angle from the positive real axis.",
+          "solution": "\\(2e^{i\\pi/3}\\)",
+          "steps": [
+            {
+              "explain": "Find the modulus.",
+              "work": "\\(|z|=\\sqrt{1^2+(\\sqrt3)^2}=2.\\)"
+            },
+            {
+              "explain": "Find the argument in quadrant I.",
+              "work": "\\(\tan\theta=\\sqrt3\\), so \\(\theta=\\pi/3.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(2e^{i\\pi/3}\\)",
+            "\\(2e^{-i\\pi/3}\\)",
+            "\\(\\sqrt3e^{i\\pi/4}\\)",
+            "\\(4e^{i\\pi/3}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Write \\(z=1+i\\sqrt3\\) in modulus-argument form",
+              "note": "Find the distance from the origin and the angle from the positive real axis."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12b_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For \\(z=1+i\\sqrt3\\), find \\(z^3\\).",
+          "hint": "Use the modulus-argument form and De Moivre’s theorem.",
+          "solution": "\\(-8\\)",
+          "steps": [
+            {
+              "explain": "Use the polar form.",
+              "work": "\\(z=2e^{i\\pi/3}.\\)"
+            },
+            {
+              "explain": "Cube the modulus and argument.",
+              "work": "\\(z^3=8e^{i\\pi}=-8.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(-8\\)",
+            "\\(8\\)",
+            "\\(8i\\)",
+            "\\(-8i\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "For \\(z=1+i\\sqrt3\\), find \\(z^3\\)",
+              "note": "Use the modulus-argument form and De Moivre’s theorem."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12b_iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For which positive integers n is \\((1+i\\sqrt3)^n\\) purely imaginary?",
+          "hint": "Its argument is \\(n\\pi/3\\). A nonzero purely imaginary number has argument \\(\\pi/2+k\\pi\\).",
+          "solution": "No positive integer n",
+          "steps": [
+            {
+              "explain": "Equate arguments.",
+              "work": "\\(n\\pi/3=\\pi/2+k\\pi\\Rightarrow 2n=3+6k.\\)"
+            },
+            {
+              "explain": "Check integer parity.",
+              "work": "The left side is even and the right side is odd, impossible for integer k."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(n=3k+\\frac32\\), for integers k",
+            "No positive integer n",
+            "Every odd n",
+            "Every n divisible by 3"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "For which positive integers n is \\((1+i\\sqrt3)^n\\) purely imaginary?",
+              "note": "Its argument is \\(n\\pi/3\\). A nonzero purely imaginary number has argument \\(\\pi/2+k\\pi\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-3B",
+      "code": "3B",
+      "title": "Trigonometric Identities",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q13c_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\theta\\).",
+          "hint": "Use the imaginary part of the expansion of \\((\\cos\theta+i\\sin\theta)^5\\).",
+          "solution": "\\(\\frac{10\\sin\theta-5\\sin3\theta+\\sin5\theta}{16}\\)",
+          "steps": [
+            {
+              "explain": "Expand using De Moivre.",
+              "work": "\\(\\sin5\theta=5s-20s^3+16s^5\\), where \\(s=\\sin\theta\\)."
+            },
+            {
+              "explain": "Rearrange for the fifth power.",
+              "work": "\\(16s^5=\\sin5\theta-5s+20s^3.\\)"
+            },
+            {
+              "explain": "Use \\(\\sin3\theta=3s-4s^3\\).",
+              "work": "\\(20s^3=5(3s-\\sin3\theta)\\), giving the selected identity."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{10\\sin\theta-5\\sin3\theta+\\sin5\theta}{16}\\)",
+            "\\(\\frac{10\\sin\theta+5\\sin3\theta+\\sin5\theta}{16}\\)",
+            "\\(\\frac{5\\sin\theta-10\\sin3\theta+\\sin5\theta}{16}\\)",
+            "\\(\\frac{10\\sin\theta-5\\sin3\theta-\\sin5\theta}{16}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Using the multiple-angle expansion, select the correct expression for \\(\\sin^5\theta\\)",
+              "note": "Use the imaginary part of the expansion of \\((\\cos\theta+i\\sin\theta)^5\\)."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q13c_i",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For \\(z=\\cos\\theta+i\\sin\\theta\\), prove \\(z^n-\\frac1{z^n}=2i\\sin n\\theta\\).",
+          "hint": "Use De Moivre’s theorem and the fact that |z|=1, so the reciprocal reverses the sign of the imaginary part.",
+          "solution": "Sample answer: By De Moivre, zⁿ=cos(nθ)+i sin(nθ). Since |z|=1, z⁻ⁿ=cos(nθ)−i sin(nθ). Subtracting gives 2i sin(nθ).",
+          "steps": [
+            {
+              "explain": "Apply De Moivre’s theorem to the nth power.",
+              "work": "\\(z^n=\\cos n\\theta+i\\sin n\\theta.\\"
+            },
+            {
+              "explain": "Since z lies on the unit circle, its reciprocal has the opposite argument.",
+              "work": "\\(\\frac{1}{z^n}=\\cos n\\theta-i\\sin n\\theta.\\)"
+            },
+            {
+              "explain": "Subtract the expressions.",
+              "work": "\\(z^n-\\frac{1}{z^n}=2i\\sin n\\theta.\\)"
+            }
+          ],
+          "xp": 1,
+          "manual": true,
+          "answer": "Sample answer: By De Moivre, zⁿ=cos(nθ)+i sin(nθ). Since |z|=1, z⁻ⁿ=cos(nθ)−i sin(nθ). Subtracting gives 2i sin(nθ).",
+          "keyPoints": [
+            {
+              "text": "\\(z=\\cos\\theta+i\\sin\\theta\\)",
+              "note": "Recognise that z has modulus 1 and use De Moivre’s theorem."
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-3C",
+      "code": "3C",
+      "title": "Roots of Complex Numbers",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q12e",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "If \\(\\omega^3=1\\) and \\(\\omega\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\).",
+          "hint": "Use \\(1+\\omega+\\omega^2=0\\) for the non-real cube roots of unity.",
+          "solution": "\\(-1\\)",
+          "steps": [
+            {
+              "explain": "Expand each square.",
+              "work": "\\((1+\\omega)^2+(1+\\omega^2)^2=2+2(\\omega+\\omega^2)+(\\omega^2+\\omega).\\)"
+            },
+            {
+              "explain": "Substitute the cube-root identity.",
+              "work": "\\(\\omega+\\omega^2=-1\\), so the expression is \\(2-2-1=-1.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(-1\\)",
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "If \\(\\omega^3=1\\) and \\(\\omega\ne1\\), simplify \\((1+\\omega)^2+(1+\\omega^2)^2\\)",
+              "note": "Use \\(1+\\omega+\\omega^2=0\\) for the non-real cube roots of unity."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15c_i",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The roots of \\(z^n=1\\) form a regular n-gon on the unit circle. Prove its perimeter is \\(P_n=2n\\sin(\\pi/n)\\).",
+          "hint": "Adjacent roots subtend a central angle of 2π/n; use the isosceles triangle chord length.",
+          "solution": "Sample answer: Consecutive nth roots lie on the unit circle and subtend angle 2π/n. Bisecting the isosceles triangle formed with the origin gives half a side sin(π/n), so each side is 2sin(π/n). There are n sides, hence P_n=2n sin(π/n).",
+          "steps": [
+            {
+              "explain": "Find the angle between adjacent roots.",
+              "work": "\\(\\Delta\theta=2\\pi/n.\\)"
+            },
+            {
+              "explain": "Bisect the isosceles triangle.",
+              "work": "Each half has hypotenuse 1 and angle \\(\\pi/n\\), so half a side is \\(\\sin(\\pi/n)\\)."
+            },
+            {
+              "explain": "Find one side and multiply by n.",
+              "work": "Side \\(=2\\sin(\\pi/n)\\); therefore \\(P_n=2n\\sin(\\pi/n).\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "answer": "Sample answer: Consecutive nth roots lie on the unit circle and subtend angle 2π/n. Bisecting the isosceles triangle formed with the origin gives half a side sin(π/n), so each side is 2sin(π/n). There are n sides, hence P_n=2n sin(π/n).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "The roots of \\(z^n=1\\) form a regular n-gon on the unit circle",
+              "note": "Adjacent roots subtend a central angle of 2π/n; use the isosceles triangle chord length."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15c_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\to0}\\sin x/x=1\\), find \\(\\lim_{n\to\\infty}P_n\\).",
+          "hint": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\).",
+          "solution": "\\(2\\pi\\)",
+          "steps": [
+            {
+              "explain": "Factor out 2π.",
+              "work": "\\(P_n=2\\pi\\frac{\\sin(\\pi/n)}{\\pi/n}.\\)"
+            },
+            {
+              "explain": "Take the limit.",
+              "work": "As \\(n\to\\infty\\), \\(\\pi/n\to0\\), so the ratio tends to 1."
+            },
+            {
+              "explain": "Conclude.",
+              "work": "\\(P_n\to2\\pi.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(2\\pi\\)",
+            "\\(\\pi\\)",
+            "\\(4\\pi\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Given \\(P_n=2n\\sin(\\pi/n)\\) and \\(\\lim_{x\to0}\\sin x/x=1\\), find \\(\\lim_{n\to\\infty}P_n\\)",
+              "note": "Rewrite the perimeter as \\(2\\pi\\,\\frac{\\sin(\\pi/n)}{\\pi/n}\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-3D",
+      "code": "3D",
+      "title": "Exponential Form: Euler's Formula",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-3E",
+      "code": "3E",
+      "title": "Applications of Exponential Form",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-3F",
+      "code": "3F",
+      "title": "Chapter Review Exercise",
+      "questions": []
+    }
+  ]
+}

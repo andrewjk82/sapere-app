@@ -35,7 +35,14 @@
               "work": "Option A correctly defines a proof as a sequence of logical deductions from given assumptions."
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Which of the following best describes a **mathematical proof**?",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2A-q2",
@@ -60,7 +67,14 @@
               "work": "Option A is proof by contradiction. Option B is proof by contrapositive. Option D is not a proof method at all."
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "In a proof by **direct method**, we:",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2A-q3",
@@ -89,7 +103,55 @@
               "work": "\\(P \\Rightarrow Q \\equiv \\neg Q \\Rightarrow \\neg P\\). The converse \\(Q \\Rightarrow P\\) (option A) and inverse \\(\\neg P \\Rightarrow \\neg Q\\) (option B) are NOT equivalent."
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "The statement \\(P \\Rightarrow Q\\) is logically equivalent to:",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12f",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \forall y\\in\\mathbb R^+: xy=1\\).",
+          "hint": "Negate each quantifier in turn and negate the statement after the quantifiers.",
+          "solution": "\\(\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
+          "steps": [
+            {
+              "explain": "Negate the existential quantifier.",
+              "work": "\\(\neg\\exists x\\) becomes \\(\forall x\\)."
+            },
+            {
+              "explain": "Negate the universal quantifier.",
+              "work": "\\(\neg\forall y\\) becomes \\(\\exists y\\)."
+            },
+            {
+              "explain": "Negate the equality.",
+              "work": "\\(xy=1\\) becomes \\(xy\ne1\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\forall x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\forall y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\forall x\\in\\mathbb R^+,\forall y\\in\\mathbb R^+:xy\ne1\\)",
+            "\\(\\exists x\\in\\mathbb R^+,\\exists y\\in\\mathbb R^+:xy\ne1\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Negate: \\(\\exists x\\in\\mathbb R^+,\\ \forall y\\in\\mathbb R^+: xy=1\\)",
+              "note": "Negate each quantifier in turn and negate the statement after the quantifiers."
+            }
+          ]
         }
       ]
     },
@@ -125,7 +187,14 @@
               "work": "Since \\(a+b+1\\) is an integer, \\(m+n = 2(a+b+1)\\) is divisible by 2, hence even. \\(\\square\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Prove that the sum of two odd integers is even",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2B-q2",
@@ -154,7 +223,14 @@
               "work": "\\((2k)^2 = 2q^2 \\Rightarrow 4k^2 = 2q^2 \\Rightarrow q^2 = 2k^2\\). So \\(q\\) is even. But then \\(\\gcd(p,q) \\geq 2\\), contradicting our assumption. Therefore \\(\\sqrt{2}\\) is irrational. \\(\\square\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Which statement correctly proves that \\(\\sqrt{2}\\) is irrational?",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         }
       ]
     },
@@ -186,7 +262,14 @@
               "work": "Instead of assuming \\(P\\) and proving \\(Q\\), we assume \\(\\neg Q\\) (the negation of the conclusion) and prove \\(\\neg P\\) (the negation of the hypothesis)."
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "To prove \\(P \\Rightarrow Q\\) by **contraposition**, we prove:",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2C-q2",
@@ -215,7 +298,177 @@
               "work": "Assume \\(n\\) is even, so \\(n = 2k\\) for some integer \\(k\\). Then \\(n^2 = 4k^2 = 2(2k^2)\\), which is even. \\(\\square\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "To prove 'If \\(n^2\\) is odd then \\(n\\) is odd' by contraposition, we assume:",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which statement is logically equivalent to “If you may not enter, then you are not authorised”?",
+          "hint": "Form the contrapositive by reversing the implication and negating both parts.",
+          "solution": "If you may enter, then you are authorised.",
+          "steps": [
+            {
+              "explain": "Name the hypothesis and conclusion.",
+              "work": "\\(P=\\text{may not enter},\\ Q=\\text{not authorised}.\\)"
+            },
+            {
+              "explain": "Form the contrapositive.",
+              "work": "\\(\neg Q\\Rightarrow\neg P.\\)"
+            },
+            {
+              "explain": "Translate back into words.",
+              "work": "\\(\\text{may enter}\\Rightarrow\\text{authorised}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "If you may enter, then you are authorised.",
+            "If you are authorised, then you may enter.",
+            "If you are not authorised, then you may enter.",
+            "If you may not enter, then you are authorised."
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Which statement is logically equivalent to “If you may not enter, then you are not authorised”?",
+              "note": "Form the contrapositive by reversing the implication and negating both parts."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q11b",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "By considering the contrapositive, prove: if \\(k^2-14k\\) is odd for integer k, then k is odd.",
+          "hint": "Assume k is even, write k=2m, and show that k²−14k is even.",
+          "solution": "Sample answer: The contrapositive is: if k is even, then k²−14k is even. Let k=2m for an integer m. Then k²−14k=4m²−28m=2(2m²−14m), which is even. Therefore the contrapositive is true, so the original statement is true.",
+          "steps": [
+            {
+              "explain": "Write the contrapositive of the implication.",
+              "work": "The contrapositive is: if k is even, then \\(k^2-14k\\) is even."
+            },
+            {
+              "explain": "Represent an even integer using an integer m.",
+              "work": "Let \\(k=2m\\), where \\(m\\) is an integer."
+            },
+            {
+              "explain": "Substitute and factor out 2.",
+              "work": "\\(k^2-14k=(2m)^2-14(2m)=4m^2-28m=2(2m^2-14m).\\\\)"
+            },
+            {
+              "explain": "Conclude that the expression is even, so the contrapositive and original statement are true.",
+              "work": "Since \\(2m^2-14m\\) is an integer, \\(k^2-14k\\) is even."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "answer": "Sample answer: Assume n is odd, so n=2k+1 for some integer k. Then n²=4k²+4k+1=2(2k²+2k)+1, which is odd. Thus the contrapositive is true, and therefore n² even implies n even.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "By considering the contrapositive, prove: if \\(k^2-14k\\) is odd for integer k, then k is odd",
+              "note": "Assume k is even, write k=2m, and show that k²−14k is even."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which argument proves that \\(\\log_2 9\\) is irrational?",
+          "hint": "Assume \\(\\log_2 9=p/q\\) in lowest terms, then exponentiate and compare prime factors.",
+          "solution": "The first argument.",
+          "steps": [
+            {
+              "explain": "Assume the opposite.",
+              "work": "Let \\(\\log_2 9=p/q\\) with positive integers p,q in lowest terms."
+            },
+            {
+              "explain": "Exponentiate.",
+              "work": "\\(2^{p/q}=9\\Rightarrow2^p=9^q=3^{2q}.\\)"
+            },
+            {
+              "explain": "Use unique prime factorisation.",
+              "work": "The left side has only prime factor 2; the right side only prime factor 3, contradiction."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "Assume it is rational p/q in lowest terms; then \\(2^p=3^{2q}\\), impossible by prime factorisation.",
+            "Because 9 is odd, its logarithm is irrational.",
+            "The decimal expansion does not terminate, so it is irrational.",
+            "Assume it is rational and use \\(2^p=9+q\\)."
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Which argument proves that \\(\\log_2 9\\) is irrational?",
+              "note": "Assume \\(\\log_2 9=p/q\\) in lowest terms, then exponentiate and compare prime factors."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q14e",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which statement is correct?",
+          "hint": "Use the tangent addition formula twice and keep track of the quadrant of the resulting angle.",
+          "solution": "\\(\\pi/4\\)",
+          "steps": [
+            {
+              "explain": "Combine the two equal angles.",
+              "work": "\\(\tan(2\\arctan(1/4))=\\frac{2(1/4)}{1-(1/4)^2}=\\frac8{15}.\\)"
+            },
+            {
+              "explain": "Add the first angle using the tangent formula.",
+              "work": "\\(\tan(A+B)=\\frac{7/23+8/15}{1-(7/23)(8/15)}=1.\\)"
+            },
+            {
+              "explain": "Choose the correct angle.",
+              "work": "Both angles are positive and the total is less than \\(\\pi/2\\), so the sum is \\(\\pi/4.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\arctan(7/23)+2\\arctan(1/4)=\\pi/4\\)",
+            "The left side equals \\(\\pi/2\\).",
+            "The left side equals \\(\\pi/3\\).",
+            "The left side equals \\(\\pi/6\\)."
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Which statement is correct?",
+              "note": "Use the tangent addition formula twice and keep track of the quadrant of the resulting angle."
+            }
+          ]
         }
       ]
     },
@@ -251,7 +504,14 @@
               "work": "\\(a^2 + b^2 \\geq 2ab \\quad \\square\\)"
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Which of the following is always true for real numbers \\(a\\) and \\(b\\)?",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2D-q2",
@@ -280,7 +540,55 @@
               "work": "Since \\((x-y)^2 \\geq 0\\) and \\(xy > 0\\) (as \\(x, y > 0\\)), we have \\(\\dfrac{(x-y)^2}{xy} \\geq 0\\), so \\(\\dfrac{x}{y} + \\dfrac{y}{x} \\geq 2\\). \\(\\square\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Prove that for positive reals \\(x\\) and \\(y\\): \\(\\dfrac{x}{y} + \\dfrac{y}{x} \\geq 2\\)",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q14b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For positive a,b, the harmonic, geometric, arithmetic and quadratic means satisfy which order?",
+          "hint": "Use the standard mean inequalities, or prove each adjacent comparison by squaring nonnegative quantities.",
+          "solution": "\\(D\\le U\\le B\\le O\\)",
+          "steps": [
+            {
+              "explain": "Recall the four means.",
+              "work": "\\(D=\\frac{2ab}{a+b},\\ U=\\sqrt{ab},\\ B=\\frac{a+b}{2},\\ O=\\sqrt{\\frac{a^2+b^2}{2}}.\\)"
+            },
+            {
+              "explain": "Compare harmonic and geometric means.",
+              "work": "\\(D\\le U\\) follows from \\((\\sqrt a-\\sqrt b)^2\\ge0.\\)"
+            },
+            {
+              "explain": "Compare geometric, arithmetic and quadratic means.",
+              "work": "\\(U\\le B\\) follows from \\((a-b)^2\\ge0\\); \\(B\\le O\\) follows from \\((a-b)^2\\ge0\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(D\\le U\\le B\\le O\\)",
+            "\\(O\\le B\\le U\\le D\\)",
+            "\\(U\\le D\\le B\\le O\\)",
+            "\\(D\\le B\\le O\\le U\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "For positive a,b, the harmonic, geometric, arithmetic and quadratic means satisfy which order?",
+              "note": "Use the standard mean inequalities, or prove each adjacent comparison by squaring nonnegative quantities."
+            }
+          ]
         }
       ]
     },
@@ -316,7 +624,14 @@
               "work": "By the principle of mathematical induction, the statement is true for all integers \\(n \\geq 1\\)."
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "In a proof by mathematical induction, which is the correct order of steps?",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2E-q2",
@@ -349,7 +664,94 @@
               "work": "By induction, \\(\\displaystyle\\sum_{i=1}^{n} i = \\dfrac{n(n+1)}{2}\\) for all \\(n \\geq 1\\)."
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Prove by induction that \\(1 + 2 + 3 + \\cdots + n = \\dfrac{n(n+1)}{2}\\)",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q12a",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\ne1\\).",
+          "hint": "Verify n=1, then use the recurrence to add the next term to the assumed geometric sum.",
+          "solution": "Sample answer: The base case is true. Assume the formula holds for n. Then S_(n+1)=S_n+ar^n = a(1−r^n)/(1−r)+ar^n = a(1−r^(n+1))/(1−r). By induction it holds for all n≥1.",
+          "steps": [
+            {
+              "explain": "Check the base case n=1.",
+              "work": "\\(\\frac{a(1-r)}{1-r}=a=S_1.\\)"
+            },
+            {
+              "explain": "Assume the formula for n.",
+              "work": "\\(S_n=\\frac{a(1-r^n)}{1-r}.\\)"
+            },
+            {
+              "explain": "Use the given recurrence.",
+              "work": "\\(S_{n+1}=S_n+ar^n=\\frac{a(1-r^n)+ar^n(1-r)}{1-r}.\\)"
+            },
+            {
+              "explain": "Simplify and conclude.",
+              "work": "Numerator \\(=a(1-r^{n+1})\\), proving the formula for n+1."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "answer": "Sample answer: The base case is true. Assume the formula holds for n. Then S_(n+1)=S_n+ar^n = a(1−r^n)/(1−r)+ar^n = a(1−r^(n+1))/(1−r). By induction it holds for all n≥1.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Prove by induction that if \\(S_1=a\\) and \\(S_n-S_{n-1}=ar^{n-1}\\), then \\(S_n=\\frac{a(1-r^n)}{1-r}\\) for \\(r\ne1\\)",
+              "note": "Verify n=1, then use the recurrence to add the next term to the assumed geometric sum."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15b",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Let \\(S_n=\\sum_{p=1}^{n}\\arctan\\left(\\frac{1}{2p^2}\\right)\\). Prove by induction that \\(\tan S_n=\\frac{n}{n+1}\\).",
+          "hint": "For the induction step, use the tangent addition formula with the new term arctan(1/(2(n+1)²)).",
+          "solution": "Sample answer: Base case n=1 is immediate. Assume tan(S_n)=n/(n+1). The tangent addition formula gives tan(S_(n+1))=[n/(n+1)+1/(2(n+1)^2)]/[1−n/(2(n+1)^3)]=(n+1)/(n+2). Thus the claim follows by induction.",
+          "steps": [
+            {
+              "explain": "Check n=1.",
+              "work": "\\(\tan S_1=1/2=1/(1+1).\\)"
+            },
+            {
+              "explain": "Assume the result for n.",
+              "work": "\\(\tan S_n=n/(n+1).\\)"
+            },
+            {
+              "explain": "Add the next term.",
+              "work": "\\(\tan S_{n+1}=\\frac{\\frac n{n+1}+\\frac1{2(n+1)^2}}{1-\\frac n{2(n+1)^3}}.\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "Multiply numerator and denominator to obtain \\((n+1)/(n+2)\\); hence induction completes."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "answer": "Sample answer: Base case n=1 is immediate. Assume tan(S_n)=n/(n+1). The tangent addition formula gives tan(S_(n+1))=[n/(n+1)+1/(2(n+1)^2)]/[1−n/(2(n+1)^3)]=(n+1)/(n+2). Thus the claim follows by induction.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Let \\(S_n=\\sum_{p=1}^{n}\\arctan\\left(\\frac{1}{2p^2}\\right)\\)",
+              "note": "For the induction step, use the tangent addition formula with the new term arctan(1/(2(n+1)²))."
+            }
+          ]
         }
       ]
     },
@@ -381,7 +783,14 @@
               "work": "The shortest path between two points is a straight line. The direct side \\(c\\) is always shorter than travelling via the two other sides \\(a + b\\)."
             }
           ],
-          "xp": 1
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "The **triangle inequality** states that for sides \\(a\\), \\(b\\), \\(c\\) of a triangle:",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
         },
         {
           "id": "y12e2-2F-q2",
@@ -410,9 +819,62 @@
               "work": "\\(f'(x) \\geq 0 \\iff e^x \\geq 1 \\iff x \\geq 0\\). So \\(f\\) has a global minimum at \\(x = 0\\). Therefore \\(f(x) \\geq 0\\) for all \\(x\\), i.e. \\(e^x \\geq 1 + x\\). \\(\\square\\)"
             }
           ],
-          "xp": 2
+          "xp": 1,
+          "timeLimit": 60,
+          "keyPoints": [
+            {
+              "text": "Using calculus, we can show \\(e^x \\geq 1 + x\\) for all real \\(x\\)",
+              "note": "Identify the given information and connect it to the relevant mathematical method."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q13e",
+          "type": "review",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Prove that if \\(a\\ge b\\ge c>0\\) and \\((a+b+c)^2\\le1\\), then \\(a^2+3b^2+5c^2\\le1\\).",
+          "hint": "Compare (a+b+c)² with a²+3b²+5c². Use u=a−b≥0 and v=b−c≥0 to factor the difference.",
+          "solution": "Sample answer: Let u=a−b≥0 and v=b−c≥0. Then (a+b+c)²−(a²+3b²+5c²)=2(ab+ac+bc−b²−2c²)=2(ub+uc+2cv)≥0. Hence a²+3b²+5c²≤(a+b+c)²≤1.",
+          "steps": [
+            {
+              "explain": "Compare the given square with the expression to be bounded.",
+              "work": "\\((a+b+c)^2-(a^2+3b^2+5c^2)=2(ab+ac+bc-b^2-2c^2).\\\\)"
+            },
+            {
+              "explain": "Use the ordering by writing a=b+u and b=c+v, where u,v≥0.",
+              "work": "\\(ab+ac+bc-b^2-2c^2=ub+uc+2cv.\\\\)"
+            },
+            {
+              "explain": "Each term is nonnegative because b,c,u,v≥0.",
+              "work": "\\((a+b+c)^2-(a^2+3b^2+5c^2)=2(ub+uc+2cv)\\ge0.\\\\)"
+            },
+            {
+              "explain": "Apply the stated upper bound.",
+              "work": "\\(a^2+3b^2+5c^2\\le(a+b+c)^2\\le1.\\\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "answer": "Sample answer: Since a≥b≥c>0, compare the two expressions and use the ordering to establish a²+3b²+5c²≤(a+b+c)². The latter is at most 1 by hypothesis, so a²+3b²+5c²≤1.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Prove that if \\(a\\ge b\\ge c>0\\) and \\((a+b+c)^2\\le1\\), then \\(a^2+3b^2+5c^2\\le1\\)",
+              "note": "Compare (a+b+c)² with a²+3b²+5c². Use u=a−b≥0 and v=b−c≥0 to factor the difference."
+            }
+          ]
         }
       ]
+    },
+    {
+      "topicId": "y12e2-2G",
+      "code": "2G",
+      "title": "Chapter Review Exercise",
+      "questions": []
     }
   ]
 }

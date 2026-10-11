@@ -1,0 +1,341 @@
+{
+  "chapterId": "y12e2-1",
+  "title": "Chapter 1: Complex Numbers I",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-1A",
+      "code": "1A",
+      "title": "The Arithmetic of Complex Numbers",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "timeLimit": 60,
+          "stem": "Evaluate the complex number \\(i^{2025}\\).",
+          "hint": "Powers of \\(i\\) repeat in a cycle of four. Find the remainder when 2025 is divided by 4.",
+          "solution": "\\(i\\)",
+          "steps": [
+            {
+              "explain": "Reduce the exponent using the cycle length.",
+              "work": "\\(2025=4(506)+1\\), so \\(i^{2025}=(i^4)^{506}i.\\)"
+            },
+            {
+              "explain": "Use \\(i^4=1\\).",
+              "work": "\\((1)^{506}i=i.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(i\\)",
+            "\\(-i\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Evaluate the complex number \\(i^{2025}\\)",
+              "note": "Powers of \\(i\\) repeat in a cycle of four. Find the remainder when 2025 is divided by 4."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q11a_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Let \\(z_1=-1-5i\\) and \\(z_2=2-i\\). Calculate \\(i(z_1-z_2)\\).",
+          "hint": "First subtract z₂ from z₁, then multiply the result by i; remember i²=−1.",
+          "solution": "\\(4-3i\\)",
+          "steps": [
+            {
+              "explain": "Subtract the complex numbers component by component.",
+              "work": "\\(z_1-z_2=(-1-5i)-(2-i)=-3-4i.\\\\)"
+            },
+            {
+              "explain": "Multiply by i and simplify using i²=−1.",
+              "work": "\\(i(z_1-z_2)=i(-3-4i)=-3i-4i^2=4-3i.\\\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(4-3i\\)",
+            "\\(-3-4i\\)",
+            "\\(4+3i\\)",
+            "\\(-4+3i\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Let \\(z_1=-1-5i\\) and \\(z_2=2-i\\)",
+              "note": "First subtract z₂ from z₁, then multiply the result by i; remember i²=−1."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q11a_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Simplify \\(\\frac{a+ib}{2-i}\\), where a,b are real.",
+          "hint": "Multiply numerator and denominator by the conjugate \\(2+i\\).",
+          "solution": "\\(\\frac{(2a-b)+(a+2b)i}{5}\\)",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate.",
+              "work": "\\(\\frac{(a+ib)(2+i)}{(2-i)(2+i)}.\\)"
+            },
+            {
+              "explain": "Expand the numerator and denominator.",
+              "work": "Numerator \\(=2a+ai+2bi+b i^2=(2a-b)+(a+2b)i\\); denominator \\(=5\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{(2a-b)+(a+2b)i}{5}\\)",
+            "\\(\\frac{(2a+b)+(2b-a)i}{5}\\)",
+            "\\((2a-b)+(a+2b)i\\)",
+            "\\(\\frac{(a-2b)+(2a+b)i}{5}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Simplify \\(\\frac{a+ib}{2-i}\\), where a,b are real",
+              "note": "Multiply numerator and denominator by the conjugate \\(2+i\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-1B",
+      "code": "1B",
+      "title": "Quadratic Equations",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Solve \\(z^2+(5+5i)z+(6+15i)=0\\).",
+          "hint": "Look for two complex numbers whose product is \\(6+15i\\) and whose sum is \\(-5-5i\\).",
+          "solution": "\\(z=-3\\) or \\(z=-2-5i\\)",
+          "steps": [
+            {
+              "explain": "Factor the quadratic.",
+              "work": "\\((z+3)(z+2+5i)=z^2+(5+5i)z+(6+15i).\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero.",
+              "work": "\\(z+3=0\\) or \\(z+2+5i=0.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(z=-3,-2-5i\\)",
+            "\\(z=3,2+5i\\)",
+            "\\(z=-2,-3-5i\\)",
+            "\\(z=-3,-2+5i\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Solve \\(z^2+(5+5i)z+(6+15i)=0\\)",
+              "note": "Look for two complex numbers whose product is \\(6+15i\\) and whose sum is \\(-5-5i\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-1C",
+      "code": "1C",
+      "title": "The Argand Diagram",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-1D",
+      "code": "1D",
+      "title": "Modulus-Argument Form",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-1E",
+      "code": "1E",
+      "title": "Vectors and the Complex Plane",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q14c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The triangle ABC in the complex plane has vertices \\(A(\\alpha), B(\\beta), C(\\gamma)\\), where \\(\\frac{\\gamma-\\alpha}{\\beta-\\alpha}=1-i\\) and \\(\\alpha+\\beta+\\gamma=0\\). Calculate \\(|\\alpha|:|\\beta|\\).",
+          "hint": "Let d=β−α, express α and β in terms of d, then compare their moduli.",
+          "solution": "\\(|\\alpha|:|\\beta|=\\sqrt{10}:2\\)",
+          "steps": [
+            {
+              "explain": "Set d=β−α and use both given conditions to express the vertices.",
+              "work": "\\(\\gamma-\\alpha=(1-i)d,\\quad 3\\alpha+(2-i)d=0.\\"
+            },
+            {
+              "explain": "Solve for α and β in terms of d.",
+              "work": "\\(\\alpha=-\\frac{2-i}{3}d,\\quad \\beta=\\alpha+d=\\frac{1+i}{3}d.\\"
+            },
+            {
+              "explain": "Take moduli and cancel the common factor |d|/3.",
+              "work": "\\(|\\alpha|:|\\beta|=|2-i|:|1+i|=\\sqrt5:\\sqrt2=\\sqrt{10}:2.\\"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\sqrt{10}:2\\)",
+            "\\(2:\\sqrt{10}\\)",
+            "\\(\\sqrt5:1\\)",
+            "\\(1:\\sqrt5\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Calculate",
+              "note": "Use the given ratio to relate γ−α to β−α, then use the zero-sum condition."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-1F",
+      "code": "1F",
+      "title": "Curves and Regions in the Argand Diagram",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Which locus represents \\(\\arg(z-i)=\\arg(z+1)\\)?",
+          "hint": "Equal arguments require parallel vectors in the same direction. First find their common line, then check which parts point the same way.",
+          "solution": "The two exterior rays on \\(y=x+1\\): \\(x<-1\\) or \\(x>0\\), excluding \\(z=-1\\) and \\(z=i\\).",
+          "steps": [
+            {
+              "explain": "Represent z by coordinates and form the two vectors from the fixed points −1 and i.",
+              "work": "\\(z=x+iy:\\quad z-i=(x,y-1),\\quad z+1=(x+1,y).\\",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 360 240\"><line x1=\"30\" y1=\"170\" x2=\"320\" y2=\"170\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"225\" x2=\"140\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M45 220L95 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M140 125L240 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M95 170L140 125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-dasharray=\"5 5\"/><circle cx=\"95\" cy=\"170\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"125\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"82\" y=\"192\">−1</text><text x=\"148\" y=\"125\">i</text><text x=\"300\" y=\"190\">Re</text><text x=\"146\" y=\"40\">Im</text><text x=\"185\" y=\"72\" fill=\"#2563eb\">y=x+1 rays</text><text x=\"102\" y=\"220\" fill=\"#64748b\">excluded segment</text></svg>"
+              }
+            },
+            {
+              "explain": "Set the determinant to zero to find where the directions are parallel.",
+              "work": "\\(xy-(y-1)(x+1)=0\\Rightarrow y=x+1.\\",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 360 240\"><line x1=\"30\" y1=\"170\" x2=\"320\" y2=\"170\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"225\" x2=\"140\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M45 220L95 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M140 125L240 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M95 170L140 125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-dasharray=\"5 5\"/><circle cx=\"95\" cy=\"170\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"125\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"82\" y=\"192\">−1</text><text x=\"148\" y=\"125\">i</text><text x=\"300\" y=\"190\">Re</text><text x=\"146\" y=\"40\">Im</text><text x=\"185\" y=\"72\" fill=\"#2563eb\">y=x+1 rays</text><text x=\"102\" y=\"220\" fill=\"#64748b\">excluded segment</text></svg>"
+              }
+            },
+            {
+              "explain": "Check that the parallel vectors point in the same direction, not opposite directions.",
+              "work": "On \\(y=x+1\\), their dot product is \\(x(x+1)+(y-1)y=2x(x+1)\\). It is positive only for \\(x<-1\\) or \\(x>0\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 360 240\"><line x1=\"30\" y1=\"170\" x2=\"320\" y2=\"170\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"225\" x2=\"140\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M45 220L95 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M140 125L240 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M95 170L140 125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-dasharray=\"5 5\"/><circle cx=\"95\" cy=\"170\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"125\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"82\" y=\"192\">−1</text><text x=\"148\" y=\"125\">i</text><text x=\"300\" y=\"190\">Re</text><text x=\"146\" y=\"40\">Im</text><text x=\"185\" y=\"72\" fill=\"#2563eb\">y=x+1 rays</text><text x=\"102\" y=\"220\" fill=\"#64748b\">excluded segment</text></svg>"
+              }
+            },
+            {
+              "explain": "Exclude the two points where one argument is undefined.",
+              "work": "\\(z=-1\\) and \\(z=i\\) are not in the locus; the segment between them gives opposite directions."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "Two exterior rays on \\(y=x+1\\): \\(x<-1\\) or \\(x>0\\), excluding the endpoints",
+            "The full line \\(y=x+1\\), except the endpoints",
+            "The segment between \\((-1,0)\\) and \\((0,1)\\)",
+            "The line \\(y=-x+1\\)"
+          ],
+          "answer": 0,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 360 240\"><line x1=\"30\" y1=\"170\" x2=\"320\" y2=\"170\" stroke=\"#64748b\"/><line x1=\"140\" y1=\"225\" x2=\"140\" y2=\"25\" stroke=\"#64748b\"/><path d=\"M45 220L95 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M140 125L240 25\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"4\"/><path d=\"M95 170L140 125\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"3\" stroke-dasharray=\"5 5\"/><circle cx=\"95\" cy=\"170\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><circle cx=\"140\" cy=\"125\" r=\"5\" fill=\"white\" stroke=\"#dc2626\" stroke-width=\"3\"/><text x=\"82\" y=\"192\">−1</text><text x=\"148\" y=\"125\">i</text><text x=\"300\" y=\"190\">Re</text><text x=\"146\" y=\"40\">Im</text><text x=\"185\" y=\"72\" fill=\"#2563eb\">y=x+1 rays</text><text x=\"102\" y=\"220\" fill=\"#64748b\">excluded segment</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "arg(z-i)=arg(z+1)",
+              "note": "Equal arguments require the two direction vectors to point in the same direction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-1G",
+      "code": "1G",
+      "title": "Polynomials and Complex Numbers",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A real-coefficient cubic \\(P(z)\\) has roots \\(3\\) and \\(2+i\\). Which is \\(P(z)\\)?",
+          "hint": "A non-real root of a real-coefficient polynomial brings its conjugate with it.",
+          "solution": "\\(z^3-7z^2+17z-15\\)",
+          "steps": [
+            {
+              "explain": "Include the conjugate root.",
+              "work": "The roots are \\(3,2+i,2-i\\)."
+            },
+            {
+              "explain": "Write the factorisation and multiply.",
+              "work": "\\(P(z)=(z-3)(z-(2+i))(z-(2-i))=(z-3)((z-2)^2+1).\\)"
+            },
+            {
+              "explain": "Expand and identify the matching option.",
+              "work": "\\((z-3)(z^2-4z+5)=z^3-7z^2+17z-15.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(z^3-7z^2-17z+15\\)",
+            "\\(z^3-7z^2+17z-15\\)",
+            "\\(z^3+7z^2-35z+15\\)",
+            "\\(z^3+7z^2+35z-15\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "A real-coefficient cubic \\(P(z)\\) has roots \\(3\\) and \\(2+i\\)",
+              "note": "A non-real root of a real-coefficient polynomial brings its conjugate with it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

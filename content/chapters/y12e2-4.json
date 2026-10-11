@@ -1,0 +1,377 @@
+{
+  "chapterId": "y12e2-4",
+  "title": "Chapter 4: Integration",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-4A",
+      "code": "4A",
+      "title": "The Standard Integrals",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-4B",
+      "code": "4B",
+      "title": "Algebraic Manipulation",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-4C",
+      "code": "4C",
+      "title": "Substitution",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Consider \\(I=\\int_0^\\pi x\\sin x\\,dx\\). Using \\(x=\\pi-y\\), what is the value of I?",
+          "hint": "Substitute both the expression for x and the differential dx, then reverse the limits caused by the negative sign.",
+          "solution": "\\(I=\\frac\\pi2\\int_0^\\pi\\sin y\\,dy=\\pi\\)",
+          "steps": [
+            {
+              "explain": "Substitute x=π−y and reverse the bounds.",
+              "work": "\\(I=\\int_0^\\pi(\\pi-y)\\sin y\\,dy.\\\\)"
+            },
+            {
+              "explain": "Use the symmetry y↔π−y to relate the y sin y integral to I.",
+              "work": "\\(\\int_0^\\pi y\\sin y\\,dy=\\int_0^\\pi(\\pi-y)\\sin y\\,dy=I.\\\\)"
+            },
+            {
+              "explain": "Add the two equal integrals to get twice I.",
+              "work": "\\(2I=\\pi\\int_0^\\pi\\sin y\\,dy,\\quad I=\\frac\\pi2\\int_0^\\pi\\sin y\\,dy=\\pi.\\\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\int_{-\\pi/2}^{\\pi/2}\\pi\\sin y\\,dy\\)",
+            "\\(\\pi\\int_0^\\pi\\sin y\\,dy\\)",
+            "\\(\\frac{\\pi}{2}\\int_0^\\pi\\sin y\\,dy\\)",
+            "\\(\\int_0^\\pi\\sin y\\,dy\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Consider \\(I=\\int_0^\\pi x\\sin x\\,dx\\)",
+              "note": "Substitute both the expression for x and the differential dx, then reverse the limits caused by the negative sign."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int_{\\pi/2}^{\\pi}\\frac{x}{1-x\\cot x}\\,dx\\).",
+          "hint": "Rewrite the denominator using sine, then differentiate \\(u=\\sin x-x\\cos x\\).",
+          "solution": "\\(\\ln\\pi\\)",
+          "steps": [
+            {
+              "explain": "Rewrite the integrand.",
+              "work": "\\(1-x\\cot x=\\frac{\\sin x-x\\cos x}{\\sin x}.\\)"
+            },
+            {
+              "explain": "Choose a substitution.",
+              "work": "Let \\(u=\\sin x-x\\cos x\\); then \\(du=x\\sin x\\,dx.\\)"
+            },
+            {
+              "explain": "Transform and evaluate.",
+              "work": "The integral is \\(\\int du/u=[\\ln u]_{x=\\pi/2}^{x=\\pi}=\\ln\\pi-\\ln1=\\ln\\pi.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\ln\\pi\\)",
+            "\\(\\ln2\\)",
+            "\\(\\pi\\ln2\\)",
+            "\\(\\ln(\\pi/2)\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\int_{\\pi/2}^{\\pi}\\frac{x}{1-x\\cot x}\\,dx\\)",
+              "note": "Rewrite the denominator using sine, then differentiate \\(u=\\sin x-x\\cos x\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-4D",
+      "code": "4D",
+      "title": "Partial Fractions",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q11e",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int_{-2}^{1}\\frac{1+7x}{(x-2)(x+3)}\\,dx\\).",
+          "hint": "Write the rational function as \\(A/(x-2)+B/(x+3)\\) before integrating.",
+          "solution": "\\(\\ln4\\)",
+          "steps": [
+            {
+              "explain": "Resolve into partial fractions.",
+              "work": "\\(\\frac{1+7x}{(x-2)(x+3)}=\\frac3{x-2}+\\frac4{x+3}.\\)"
+            },
+            {
+              "explain": "Integrate each term.",
+              "work": "\\([3\\ln|x-2|+4\\ln|x+3|]_{-2}^{1}.\\)"
+            },
+            {
+              "explain": "Substitute the bounds.",
+              "work": "At 1: \\(4\\ln4\\); at −2: \\(3\\ln4\\). Difference \\(=\\ln4.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\ln 4\\)",
+            "\\(3\\ln4\\)",
+            "\\(4\\ln4\\)",
+            "\\(\\ln 2\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\int_{-2}^{1}\\frac{1+7x}{(x-2)(x+3)}\\,dx\\)",
+              "note": "Write the rational function as \\(A/(x-2)+B/(x+3)\\) before integrating."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-4E",
+      "code": "4E",
+      "title": "Denominators with Quadratics",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-4F",
+      "code": "4F",
+      "title": "Integration by Parts",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int_0^1\\ln(x^2+1)\\,dx\\).",
+          "hint": "Use integration by parts with the logarithm as the factor to differentiate.",
+          "solution": "\\(\\ln2-2+\\frac\\pi2\\)",
+          "steps": [
+            {
+              "explain": "Choose parts.",
+              "work": "Let \\(u=\\ln(1+x^2),\\ dv=dx\\). Then \\(du=\\frac{2x}{1+x^2}dx,\\ v=x.\\)"
+            },
+            {
+              "explain": "Apply integration by parts and simplify.",
+              "work": "\\(I=[x\\ln(1+x^2)]_0^1-\\int_0^1\\frac{2x^2}{1+x^2}dx=\\ln2-2+2\\int_0^1\\frac{1}{1+x^2}dx.\\)"
+            },
+            {
+              "explain": "Evaluate the arctangent integral.",
+              "work": "\\(I=\\ln2-2+2[\\arctan x]_0^1=\\ln2-2+\\frac\\pi2.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\ln2-2+\\frac\\pi2\\)",
+            "\\(\\ln2+2-\\frac\\pi2\\)",
+            "\\(2\\ln2-1\\)",
+            "\\(\\ln2-1+\\frac\\pi2\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(\\int_0^1\\ln(x^2+1)\\,dx\\)",
+              "note": "Use integration by parts with the logarithm as the factor to differentiate."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q16a_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Let \\(I_n=\\int_0^{1/4}\\frac{x^n}{e^x}\\,dx\\). Evaluate \\(I_1\\).",
+          "hint": "Integrate \\(xe^{-x}\\) by parts on the stated interval.",
+          "solution": "\\(1-\\frac5{4e^{1/4}}\\)",
+          "steps": [
+            {
+              "explain": "Choose integration by parts.",
+              "work": "\\(u=x,\\ dv=e^{-x}dx;\\quad v=-e^{-x}.\\)"
+            },
+            {
+              "explain": "Evaluate the boundary term and remaining integral.",
+              "work": "\\(I_1=[-xe^{-x}]_0^{1/4}+\\int_0^{1/4}e^{-x}dx.\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(-\\frac1{4e^{1/4}}+1-e^{-1/4}+?\\) compute boundary carefully; \\(I_1=1-\\frac{5}{4e^{1/4}}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(1-\\frac5{4e^{1/4}}\\)",
+            "\\(1-\\frac1{4e^{1/4}}\\)",
+            "\\(\\frac5{4e^{1/4}}-1\\)",
+            "\\(1-e^{-1/4}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Let \\(I_n=\\int_0^{1/4}\\frac{x^n}{e^x}\\,dx\\)",
+              "note": "Integrate \\(xe^{-x}\\) by parts on the stated interval."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q16a_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For \\(I_k=\\int_0^{1/4}x^ke^{-x}dx\\), which is the correct recurrence?",
+          "hint": "Integrate the derivative of \\(x^{k+1}e^{-x}\\) over the interval.",
+          "solution": "The first recurrence.",
+          "steps": [
+            {
+              "explain": "Differentiate the product.",
+              "work": "\\(\\frac{d}{dx}(x^{k+1}e^{-x})=(k+1)x^ke^{-x}-x^{k+1}e^{-x}.\\)"
+            },
+            {
+              "explain": "Integrate and evaluate endpoints.",
+              "work": "\\((k+1)I_k-I_{k+1}=4^{-k-1}e^{-1/4}.\\)"
+            },
+            {
+              "explain": "Rearrange into the requested form.",
+              "work": "\\(kI_k=I_{k+1}-I_k+4^{-k-1}e^{-1/4}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(kI_k=I_{k+1}-I_k+4^{-k-1}e^{-1/4}\\)",
+            "\\(kI_k=I_{k+1}+I_k\\)",
+            "\\(kI_k=I_{k+1}-I_k-4^{-k-1}e^{-1/4}\\)",
+            "\\((k+1)I_k=I_{k+1}+e^{1/4}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "For \\(I_k=\\int_0^{1/4}x^ke^{-x}dx\\), which is the correct recurrence?",
+              "note": "Integrate the derivative of \\(x^{k+1}e^{-x}\\) over the interval."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q16a_iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Using \\(kI_k=I_{k+1}-I_k+4^{-k-1}e^{-1/4}\\), what sum follows for k=1 to n?",
+          "hint": "Sum the recurrence; the I-terms telescope and the remaining powers form a geometric series.",
+          "solution": "The first expression.",
+          "steps": [
+            {
+              "explain": "Sum both sides.",
+              "work": "\\(\\sum kI_k=\\sum(I_{k+1}-I_k)+\\frac1{e^{1/4}}\\sum(1/4)^{k+1}.\\)"
+            },
+            {
+              "explain": "Telescope the integral terms.",
+              "work": "\\(\\sum(I_{k+1}-I_k)=I_{n+1}-I_1.\\)"
+            },
+            {
+              "explain": "Sum the geometric series.",
+              "work": "\\(\\sum_{k=1}^n(1/4)^{k+1}=\\frac1{12}(1-(1/4)^n).\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\sum_{k=1}^n kI_k=I_{n+1}-I_1+\\frac{1-(1/4)^n}{12e^{1/4}}\\)",
+            "\\(I_{n+1}+I_1+\\frac{1-(1/4)^n}{12e^{1/4}}\\)",
+            "\\(I_{n+1}-I_1-\\frac{1-(1/4)^n}{12e^{1/4}}\\)",
+            "\\(\\sum_{k=1}^n kI_k=I_n-I_1\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Using \\(kI_k=I_{k+1}-I_k+4^{-k-1}e^{-1/4}\\), what sum follows for k=1 to n?",
+              "note": "Sum the recurrence; the I-terms telescope and the remaining powers form a geometric series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-4G",
+      "code": "4G",
+      "title": "Trigonometric Integrals",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q13c_iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta\\).",
+          "hint": "Use the identity for sin^5θ and integrate the three sine terms, or apply the reduction formula.",
+          "solution": "\\(\\frac{128}{15}\\)",
+          "steps": [
+            {
+              "explain": "Use the standard odd-power integral.",
+              "work": "\\(\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta=\\frac{4}{5}\\cdot\\frac{2}{3}\\cdot1=\\frac{8}{15}.\\)"
+            },
+            {
+              "explain": "Multiply by 16.",
+              "work": "\\(16\\cdot\\frac8{15}=\\frac{128}{15}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\frac{128}{15}\\)",
+            "\\(\\frac{16}{5}\\)",
+            "\\(\\frac{8}{15}\\)",
+            "\\(\\frac{64}{15}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Evaluate \\(16\\int_0^{\\pi/2}\\sin^5\theta\\,d\theta\\)",
+              "note": "Use the identity for sin^5θ and integrate the three sine terms, or apply the reduction formula."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
