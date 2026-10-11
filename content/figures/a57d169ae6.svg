@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" style="display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif">
+  <rect x="1" y="1" width="598" height="338" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Subtle grid lines -->
+  <line x1="80" y1="55" x2="535" y2="55" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="80" y1="215" x2="535" y2="215" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="80" y1="295" x2="535" y2="295" stroke="#f1f5f9" stroke-width="1"/>
+  
+  <!-- Axes -->
+  <line x1="70" y1="135" x2="540" y2="135" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="315" x2="110" y2="35" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- x-axis ticks & labels -->
+  <line x1="110" y1="131" x2="110" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="110" y="152" fill="#1e293b" font-size="11" text-anchor="middle">0</text>
+  <line x1="170" y1="131" x2="170" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="170" y="152" fill="#1e293b" font-size="11" text-anchor="middle">1</text>
+  <line x1="230" y1="131" x2="230" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="230" y="152" fill="#1e293b" font-size="11" text-anchor="middle">2</text>
+  <line x1="290" y1="131" x2="290" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="290" y="152" fill="#1e293b" font-size="11" text-anchor="middle">3</text>
+  <line x1="350" y1="131" x2="350" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="350" y="152" fill="#1e293b" font-size="11" text-anchor="middle">4</text>
+  <line x1="410" y1="131" x2="410" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="410" y="152" fill="#1e293b" font-size="11" text-anchor="middle">5</text>
+  <line x1="470" y1="131" x2="470" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="470" y="152" fill="#1e293b" font-size="11" text-anchor="middle">6</text>
+  
+  <!-- y-axis ticks -->
+  <line x1="104" y1="55" x2="110" y2="55" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="59" fill="#64748b" font-size="10" text-anchor="end">+10</text>
+  <line x1="104" y1="95" x2="110" y2="95" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="99" fill="#64748b" font-size="10" text-anchor="end">+5</text>
+  <line x1="104" y1="215" x2="110" y2="215" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="219" fill="#64748b" font-size="10" text-anchor="end">-10</text>
+  <line x1="104" y1="255" x2="110" y2="255" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="259" fill="#64748b" font-size="10" text-anchor="end">-15</text>
+
+  <!-- Axis Titles -->
+  <text x="548" y="139" fill="#1e293b" font-size="12" text-anchor="start" font-weight="600">x</text>
+  <text x="110" y="26" fill="#1e293b" font-size="12" text-anchor="middle" font-weight="600">y</text>
+  <text x="530" y="48" fill="#475569" font-size="11" text-anchor="end" font-weight="600">y = x(x-2)(x-6)</text>
+
+  
+  <path d="M 86 184.2 L 91.8 170.3 L 97.6 157.7 L 103.4 146.4 L 109.1 136.4 L 114.9 127.5 L 120.7 119.9 L 126.5 113.3 L 132.3 107.8 L 138.1 103.3 L 143.9 99.8 L 149.6 97.2 L 155.4 95.5 L 161.2 94.7 L 167 94.7 L 172.8 95.5 L 178.6 96.9 L 184.4 99.1 L 190.1 101.9 L 195.9 105.3 L 201.7 109.2 L 207.5 113.7 L 213.3 118.6 L 219.1 123.9 L 224.9 129.6 L 230.6 135.7 L 236.4 142 L 242.2 148.6 L 248 155.4 L 253.8 162.4 L 259.6 169.5 L 265.4 176.6 L 271.1 183.8 L 276.9 191 L 282.7 198.2 L 288.5 205.2 L 294.3 212.1 L 300.1 218.8 L 305.9 225.3 L 311.6 231.6 L 317.4 237.5 L 323.2 243 L 329 248.2 L 334.8 253 L 340.6 257.2 L 346.4 260.9 L 352.1 264.1 L 357.9 266.7 L 363.7 268.5 L 369.5 269.7 L 375.3 270.2 L 381.1 269.9 L 386.9 268.7 L 392.6 266.7 L 398.4 263.8 L 404.2 259.9 L 410 255 L 415.8 249.1 L 421.6 242.1 L 427.4 233.9 L 433.1 224.6 L 438.9 214.1 L 444.7 202.3 L 450.5 189.2 L 456.3 174.8 L 462.1 159 L 467.9 141.8 L 473.6 123 L 479.4 102.8 L 485.2 81 L 491 57.7" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <!-- Root markers -->
+  <circle cx="110" cy="135" r="5" fill="#2563eb"/>
+  <circle cx="230" cy="135" r="5" fill="#2563eb"/>
+  <circle cx="470" cy="135" r="5" fill="#2563eb"/>
+  
+  <!-- Info card in empty upper space -->
+  <rect x="235" y="45" width="275" height="74" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="247" y="68" fill="#1e40af" font-size="12" font-weight="bold">Step 1: Intercepts &amp; Expansion</text>
+  <text x="247" y="86" fill="#1e40af" font-size="11">f(x) = x(x - 2)(x - 6) = 0 ⟹ x = 0, 2, 6</text>
+  <text x="247" y="104" fill="#2563eb" font-size="11" font-weight="bold">f(x) = x³ − 8x² + 12x</text>
+
+</svg>
