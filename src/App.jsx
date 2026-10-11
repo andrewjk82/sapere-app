@@ -131,6 +131,7 @@ import {
 } from './services/secretNoteBonusService';
 import { checkPendingSprintPayouts, markSprintPayoutSeen, SPRINT_PAYOUT_PREVIEW_EVENT } from './services/timesTableSprintService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
+import LoadingScreen from './components/LoadingScreen';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
 
@@ -1481,7 +1482,7 @@ function App() {
       )}
       <div className="app-shell__main" style={examInProgress ? { padding: 0 } : undefined}>
         <ErrorBoundary key={activeTab}>
-          <Suspense fallback={<div className="app-loading"><div className="app-spinner"></div></div>}>
+          <Suspense fallback={<LoadingScreen />}>
             {renderContent()}
           </Suspense>
         </ErrorBoundary>

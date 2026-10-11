@@ -63,6 +63,7 @@ import {
   gradeMcSelection,
 } from '../utils/mcOptionShuffle';
 import { parseHintSteps } from '../utils/hintSteps';
+import LoadingScreen from './LoadingScreen';
 
 // FlameBuddy's hint bubble wants one plain string. `hint` is not always a
 // string in the bank (some seeds store an array of step objects), and
@@ -2288,7 +2289,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     );
   };
 
-  if (loading) return <div className="app-loading"><div className="app-spinner"></div></div>;
+  if (loading) return <LoadingScreen />;
 
   return (
     <div className="app-page">
