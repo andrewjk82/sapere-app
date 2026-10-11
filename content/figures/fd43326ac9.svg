@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" style="display:block;margin:0 auto;max-width:760px;height:auto;font-family:Arial,sans-serif">
+  <rect x="1" y="1" width="598" height="338" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Subtle grid lines -->
+  <line x1="80" y1="55" x2="535" y2="55" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="80" y1="215" x2="535" y2="215" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="80" y1="295" x2="535" y2="295" stroke="#f1f5f9" stroke-width="1"/>
+  
+  <!-- Axes -->
+  <line x1="70" y1="135" x2="540" y2="135" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  <line x1="110" y1="315" x2="110" y2="35" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- x-axis ticks & labels -->
+  <line x1="110" y1="131" x2="110" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="110" y="152" fill="#1e293b" font-size="11" text-anchor="middle">0</text>
+  <line x1="170" y1="131" x2="170" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="170" y="152" fill="#1e293b" font-size="11" text-anchor="middle">1</text>
+  <line x1="230" y1="131" x2="230" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="230" y="152" fill="#1e293b" font-size="11" text-anchor="middle">2</text>
+  <line x1="290" y1="131" x2="290" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="290" y="152" fill="#1e293b" font-size="11" text-anchor="middle">3</text>
+  <line x1="350" y1="131" x2="350" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="350" y="152" fill="#1e293b" font-size="11" text-anchor="middle">4</text>
+  <line x1="410" y1="131" x2="410" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="410" y="152" fill="#1e293b" font-size="11" text-anchor="middle">5</text>
+  <line x1="470" y1="131" x2="470" y2="139" stroke="#94a3b8" stroke-width="1"/>
+  <text x="470" y="152" fill="#1e293b" font-size="11" text-anchor="middle">6</text>
+  
+  <!-- y-axis ticks -->
+  <line x1="104" y1="55" x2="110" y2="55" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="59" fill="#64748b" font-size="10" text-anchor="end">+10</text>
+  <line x1="104" y1="95" x2="110" y2="95" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="99" fill="#64748b" font-size="10" text-anchor="end">+5</text>
+  <line x1="104" y1="215" x2="110" y2="215" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="219" fill="#64748b" font-size="10" text-anchor="end">-10</text>
+  <line x1="104" y1="255" x2="110" y2="255" stroke="#94a3b8" stroke-width="1"/>
+  <text x="98" y="259" fill="#64748b" font-size="10" text-anchor="end">-15</text>
+
+  <!-- Axis Titles -->
+  <text x="548" y="139" fill="#1e293b" font-size="12" text-anchor="start" font-weight="600">x</text>
+  <text x="110" y="26" fill="#1e293b" font-size="12" text-anchor="middle" font-weight="600">y</text>
+  <text x="530" y="48" fill="#475569" font-size="11" text-anchor="end" font-weight="600">y = g(x)</text>
+
+  
+  <!-- Background shaded areas for g(x) -->
+  <path d="M 110 135 L 114.8 149.9 L 119.6 163.7 L 124.4 176.6 L 129.2 188.5 L 134 199.5 L 138.8 209.6 L 143.6 218.8 L 148.4 227.2 L 153.2 234.8 L 158 241.5 L 162.8 247.5 L 167.6 252.7 L 172.4 257.2 L 177.2 260.9 L 182 264 L 186.8 266.5 L 191.6 268.3 L 196.4 269.5 L 201.2 270.1 L 206 270.2 L 210.8 269.7 L 215.6 268.7 L 220.4 267.3 L 225.2 265.4 L 230 263 L 234.8 260.2 L 239.6 257.1 L 244.4 253.6 L 249.2 249.7 L 254 245.6 L 258.8 241.2 L 263.6 236.4 L 268.4 231.5 L 273.2 226.4 L 278 221 L 282.8 215.5 L 287.6 209.9 L 292.4 204.1 L 297.2 198.3 L 302 192.3 L 306.8 186.4 L 311.6 180.4 L 316.4 174.5 L 321.2 168.5 L 326 162.6 L 330.8 156.9 L 335.6 151.2 L 340.4 145.6 L 345.2 140.2 L 350 135 L 350 135 L 110 135 Z" fill="#3b82f6" fill-opacity="0.25" stroke="#2563eb" stroke-width="1.5"/>
+  <path d="M 350 135 L 354 130.8 L 358 126.8 L 362 122.9 L 366 119.2 L 370 115.7 L 374 112.5 L 378 109.4 L 382 106.6 L 386 104.1 L 390 101.8 L 394 99.8 L 398 98.1 L 402 96.8 L 406 95.7 L 410 95 L 414 94.6 L 418 94.7 L 422 95.1 L 426 95.9 L 430 97.1 L 434 98.7 L 438 100.8 L 442 103.3 L 446 106.3 L 450 109.8 L 454 113.8 L 458 118.3 L 462 123.3 L 466 128.9 L 470 135 L 470 135 L 350 135 Z" fill="#10b981" fill-opacity="0.25" stroke="#059669" stroke-width="1.5"/>
+  <!-- Curve of g(x) -->
+  <path d="M 89 57.7 L 94.8 81 L 100.6 102.8 L 106.4 123 L 112.1 141.8 L 117.9 159 L 123.7 174.8 L 129.5 189.2 L 135.3 202.3 L 141.1 214.1 L 146.9 224.6 L 152.6 233.9 L 158.4 242.1 L 164.2 249.1 L 170 255 L 175.8 259.9 L 181.6 263.8 L 187.4 266.7 L 193.1 268.7 L 198.9 269.9 L 204.7 270.2 L 210.5 269.7 L 216.3 268.5 L 222.1 266.7 L 227.9 264.1 L 233.6 260.9 L 239.4 257.2 L 245.2 253 L 251 248.2 L 256.8 243 L 262.6 237.5 L 268.4 231.6 L 274.1 225.3 L 279.9 218.8 L 285.7 212.1 L 291.5 205.2 L 297.3 198.2 L 303.1 191 L 308.9 183.8 L 314.6 176.6 L 320.4 169.5 L 326.2 162.4 L 332 155.4 L 337.8 148.6 L 343.6 142 L 349.4 135.7 L 355.1 129.6 L 360.9 123.9 L 366.7 118.6 L 372.5 113.7 L 378.3 109.2 L 384.1 105.3 L 389.9 101.9 L 395.6 99.1 L 401.4 96.9 L 407.2 95.5 L 413 94.7 L 418.8 94.7 L 424.6 95.5 L 430.4 97.2 L 436.1 99.8 L 441.9 103.3 L 447.7 107.8 L 453.5 113.3 L 459.3 119.9 L 465.1 127.5 L 470.9 136.4 L 476.6 146.4 L 482.4 157.7 L 488.2 170.3 L 494 184.2" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+  
+  <circle cx="110" cy="135" r="4.5" fill="#7c3aed"/>
+  <circle cx="350" cy="135" r="4.5" fill="#7c3aed"/>
+  <circle cx="470" cy="135" r="4.5" fill="#7c3aed"/>
+  
+  <text x="230" y="210" fill="#1d4ed8" font-size="11" font-weight="bold" text-anchor="middle">−∫₀⁴ g(x) dx = 128/3</text>
+  <text x="410" y="112" fill="#065f46" font-size="11" font-weight="bold" text-anchor="middle">∫₄⁶ g(x) dx = 20/3</text>
+  
+  <!-- Info card placed in top-left empty space -->
+  <rect x="130" y="45" width="280" height="74" rx="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="142" y="68" fill="#6d28d9" font-size="12" font-weight="bold">Step 1: Integral Limit Reversal</text>
+  <text x="142" y="86" fill="#5b21b6" font-size="11">∫₄⁰ g(x) dx = −∫₀⁴ g(x) dx (gives +128/3)</text>
+  <text x="142" y="104" fill="#6d28d9" font-size="11" font-weight="bold">⟹ g ≤ 0 on [0, 4] and g ≥ 0 on [4, 6]</text>
+
+</svg>
