@@ -121,6 +121,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
 
   const checkAnswer = async () => {
     if (!active) return;
+    if (layout === 'tabs') setPane('pdf');   // the answer opens over the worksheet
     setSheet({ loading: true });
     const topicId = active.topicId;
     const keys = await fetchAnswerKeys([topicId]);
@@ -139,6 +140,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     setStatusMap({ ...statusRef.current });
     persist();
     setSheet(null);
+    if (layout === 'tabs') setPane('notes');
   };
 
   const store = { ink: inkMap, status: statusMap };
@@ -159,6 +161,27 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
       ) : (
         <div style={{ height: '100%', display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 600, padding: 24, textAlign: 'center' }}>
           No worksheet for this topic.
+        </div>
+      )}
+      {sheet && (
+        <div style={{ position: 'absolute', inset: 8, background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0', boxShadow: '0 12px 32px rgba(15,23,42,0.22)', display: 'flex', flexDirection: 'column', zIndex: 6 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 12px', borderBottom: '1px solid #eef2f7' }}>
+            <strong style={{ flex: 1, color: '#1e1b4b', fontSize: '0.9rem' }}>Answer · question {active?.label}</strong>
+            <button type="button" aria-label="Close answer" onClick={() => { setSheet(null); if (layout === 'tabs') setPane('notes'); }} style={{ border: 0, background: 'transparent', cursor: 'pointer', display: 'flex', padding: 4 }}><X size={18} /></button>
+          </div>
+          <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', padding: 10 }}>
+            {sheet.loading && <Loader2 size={22} style={{ ...SPIN, display: 'block', margin: '30px auto', color: '#94a3b8' }} />}
+            {sheet.error && <div role="alert" style={{ color: '#b91c1c', fontWeight: 700, textAlign: 'center', padding: 24 }}>{sheet.error}</div>}
+            {sheet.images?.map((src, i) => (
+              <img key={i} src={src} alt="Answers" style={{ display: 'block', width: '100%', height: 'auto' }} />
+            ))}
+          </div>
+          {sheet.images && (
+            <div style={{ display: 'flex', gap: 8, padding: 10, borderTop: '1px solid #eef2f7' }}>
+              <button type="button" onClick={() => verdict('again')} style={{ flex: 1, padding: '10px', borderRadius: 12, border: '1.5px solid #fdba74', background: '#fff7ed', color: '#c2410c', fontWeight: 800, cursor: 'pointer' }}>Still wrong</button>
+              <button type="button" onClick={() => verdict('got')} style={{ flex: 1, padding: '10px', borderRadius: 12, border: 0, background: '#10b981', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Got it</button>
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -233,27 +256,6 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
       )}
       </div>
 
-      {sheet && (
-        <div style={{ position: 'absolute', left: 8, right: 8, bottom: 8, height: '68%', background: '#fff', borderRadius: 16, border: '1px solid #e2e8f0', boxShadow: '0 12px 32px rgba(15,23,42,0.22)', display: 'flex', flexDirection: 'column', zIndex: 5 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '10px 12px', borderBottom: '1px solid #eef2f7' }}>
-            <strong style={{ flex: 1, color: '#1e1b4b', fontSize: '0.9rem' }}>Answer · question {active?.label}</strong>
-            <button type="button" aria-label="Close answer" onClick={() => setSheet(null)} style={{ border: 0, background: 'transparent', cursor: 'pointer', display: 'flex', padding: 4 }}><X size={18} /></button>
-          </div>
-          <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', padding: 10 }}>
-            {sheet.loading && <Loader2 size={22} style={{ ...SPIN, display: 'block', margin: '30px auto', color: '#94a3b8' }} />}
-            {sheet.error && <div role="alert" style={{ color: '#b91c1c', fontWeight: 700, textAlign: 'center', padding: 24 }}>{sheet.error}</div>}
-            {sheet.images?.map((src, i) => (
-              <img key={i} src={src} alt="Answers" style={{ display: 'block', width: '100%', height: 'auto' }} />
-            ))}
-          </div>
-          {sheet.images && (
-            <div style={{ display: 'flex', gap: 8, padding: 10, borderTop: '1px solid #eef2f7' }}>
-              <button type="button" onClick={() => verdict('again')} style={{ flex: 1, padding: '10px', borderRadius: 12, border: '1.5px solid #fdba74', background: '#fff7ed', color: '#c2410c', fontWeight: 800, cursor: 'pointer' }}>Still wrong</button>
-              <button type="button" onClick={() => verdict('got')} style={{ flex: 1, padding: '10px', borderRadius: 12, border: 0, background: '#10b981', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Got it</button>
-            </div>
-          )}
-        </div>
-      )}
     </div>
   );
 
