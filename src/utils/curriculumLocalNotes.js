@@ -43,6 +43,23 @@ const read = async (key) => {
   }
 };
 
+// Like `read`, but says whether the read worked: a failed read is NOT "no notes yet" — treating it as
+// empty would let the next autosave overwrite the real notes with a blank pad.
+const readChecked = async (key) => {
+  try {
+    const db = await openDb();
+    const data = await new Promise((resolve, reject) => {
+      const tx = db.transaction(STORE, 'readonly');
+      const request = tx.objectStore(STORE).get(key);
+      request.onsuccess = () => resolve(request.result?.pages || null);
+      request.onerror = () => reject(request.error);
+    });
+    return { ok: true, data };
+  } catch {
+    return { ok: false, data: null };
+  }
+};
+
 const write = async (key, pages) => {
   try {
     const db = await openDb();
@@ -60,4 +77,5 @@ const write = async (key, pages) => {
 };
 
 export const loadCurriculumNote = read;
+export const loadCurriculumNoteChecked = readChecked;
 export const saveCurriculumNote = write;

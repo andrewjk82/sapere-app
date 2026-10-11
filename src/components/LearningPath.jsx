@@ -18,9 +18,8 @@ import ChapterDetailView from './ChapterDetailView';
 import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
 import WorkingOutCanvas from './WorkingOutCanvas';
-import { loadCurriculumNote, saveCurriculumNote } from '../utils/curriculumLocalNotes';
+import { useCurriculumNote } from '../utils/useCurriculumNote';
 import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy } from '../utils/lastStudy';
-import { requestPersistentStorage } from '../utils/homeworkLocalStore';
 import './learning-path.css';
 import { useSplitLayout } from '../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from './SplitPanes';
@@ -79,8 +78,6 @@ const LearningPath = ({ profile }) => {
   const [pdfPreview, setPdfPreview] = useState(null); // { raw, url, openUrl, title } | null — topic worksheet
   const curriculumNoteKey = pdfPreview?.noteKey;
   const curriculumCanvasRef = useRef(null);
-  const curriculumNoteLoadedRef = useRef(false);
-  const curriculumNoteTimerRef = useRef(0);
   // Notes sit beside the worksheet on tablets. Decided by the device's screen, not the
   // current window width: on iPad the window narrows below 768px in portrait (iPad mini),
   // Split View / Slide Over / Stage Manager, or while the page is pinch-zoomed, which made
@@ -90,46 +87,11 @@ const LearningPath = ({ profile }) => {
   // A tablet window too narrow for two columns stacks instead of switching to tabs.
   const { layout: splitLayout, setLayoutChoice, split: notesSplit, setSplit: setNotesSplit } = useSplitLayout();
   const notesLayout = splitLayout === 'tabs' ? 'stack' : splitLayout;
-  const [curriculumNoteReady, setCurriculumNoteReady] = useState(false);
 
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
 
-  useEffect(() => {
-    if (!curriculumNoteKey || !isTablet) return undefined;
-    let cancelled = false;
-    curriculumNoteLoadedRef.current = false;
-    setCurriculumNoteReady(false);
-    requestPersistentStorage();
-    loadCurriculumNote(curriculumNoteKey).then((data) => {
-      if (cancelled) return;
-      if (data) curriculumCanvasRef.current?.loadPagesData(data);
-      else curriculumCanvasRef.current?.clear();
-      curriculumNoteLoadedRef.current = true;
-      setCurriculumNoteReady(true);
-    });
-    return () => {
-      cancelled = true;
-      window.clearTimeout(curriculumNoteTimerRef.current);
-    };
-  }, [curriculumNoteKey, isTablet]);
-
-  const saveCurriculumNoteNow = useCallback(() => {
-    window.clearTimeout(curriculumNoteTimerRef.current);
-    if (!curriculumNoteLoadedRef.current || !curriculumNoteKey) return Promise.resolve(false);
-    const data = curriculumCanvasRef.current?.getPagesData();
-    return data ? saveCurriculumNote(curriculumNoteKey, data) : Promise.resolve(false);
-  }, [curriculumNoteKey]);
-
-  const handleCurriculumInkChange = useCallback(() => {
-    if (!curriculumNoteLoadedRef.current || !curriculumNoteKey) return;
-    window.clearTimeout(curriculumNoteTimerRef.current);
-    const key = curriculumNoteKey;
-    curriculumNoteTimerRef.current = window.setTimeout(() => {
-      const data = curriculumCanvasRef.current?.getPagesData();
-      if (data) saveCurriculumNote(key, data);
-    }, 800);
-  }, [curriculumNoteKey]);
-
+  // This topic's notes on the pad: loaded when the topic opens, saved under that topic's key only (see useCurriculumNote).
+  const { ready: curriculumNoteReady, unsaved: curriculumNoteUnsaved, saveNow: saveCurriculumNoteNow, onInkChange: handleCurriculumInkChange } = useCurriculumNote(curriculumCanvasRef, curriculumNoteKey, isTablet);
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -830,6 +792,9 @@ const LearningPath = ({ profile }) => {
                       <WorkingOutCanvas ref={curriculumCanvasRef} isSubmitted={false} hideTitle onInkChange={handleCurriculumInkChange} />
                       {!curriculumNoteReady && (
                         <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
+                      )}
+                      {curriculumNoteReady && curriculumNoteUnsaved && (
+                        <span role="status" style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#b45309', background: 'rgba(255,251,235,0.95)', borderRadius: 8, padding: '3px 8px' }}>Couldn’t open your saved notes — writing here won’t be saved</span>
                       )}
                     </div>
                   </section>
