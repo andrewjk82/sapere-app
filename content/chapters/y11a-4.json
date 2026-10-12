@@ -6637,7 +6637,8 @@
                   "explain": "Divide by 5 to solve for \\(a\\).",
                   "work": "a = 2"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y11a-4d-q2b",
@@ -6663,7 +6664,8 @@
                   "explain": "Divide by -5 to solve for \\(b\\).",
                   "work": "b = 3"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q2c",
@@ -6689,7 +6691,8 @@
                   "explain": "Using these roots eliminates one variable and allows solving for the other directly.",
                   "work": "\\mathrm{Eliminates\\:one\\:term\\:at\\:a\\:time}"
                 }
-              ]
+              ],
+              "xp": 2
             },
             {
               "id": "y11a-4d-q2d",
@@ -6719,7 +6722,8 @@
                   "explain": "Substitute \\(a = 2\\) back into \\(a+b = 5\\) to find \\(b\\).",
                   "work": "2 + b = 5 \\implies b = 3"
                 }
-              ]
+              ],
+              "xp": 3
             }
           ],
           "solution": "See detailed steps below.",
