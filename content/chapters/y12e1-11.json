@@ -4,6 +4,838 @@
   "year": "Year 12",
   "topics": [
     {
+      "topicId": "y12e1-11A",
+      "code": "11A",
+      "title": "Equations involving compound angles",
+      "questions": [
+        {
+          "id": "met3-ext1-t3-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all values of \\(\\theta\\) satisfying \\(\\sqrt3\\cos\\theta=\\sin(2\\theta)\\).",
+          "options": [
+            "\\(90^\\circ+360^\\circ k,\\ 60^\\circ+360^\\circ k,\\ 120^\\circ+360^\\circ k;\\ k\\in\\mathbb Z\\)",
+            "\\(90^\\circ+180^\\circ k,\\ 60^\\circ+360^\\circ k,\\ 120^\\circ+360^\\circ k;\\ k\\in\\mathbb Z\\)",
+            "\\(90^\\circ+180^\\circ k,\\ 30^\\circ+360^\\circ k,\\ 150^\\circ+360^\\circ k;\\ k\\in\\mathbb Z\\)",
+            "\\(180^\\circ k,\\ 60^\\circ+360^\\circ k,\\ 120^\\circ+360^\\circ k;\\ k\\in\\mathbb Z\\)"
+          ],
+          "answer": 1,
+          "hint": "Rewrite \\(\\sin2\\theta\\) as \\(2\\sin\\theta\\cos\\theta\\), factor, and solve both factors to obtain all repeating angle families.",
+          "keyPoints": [
+            {
+              "text": "Find all values",
+              "note": "Keep every factor after factoring; each may give its own family of roots."
+            },
+            {
+              "text": "\\(\\sqrt3\\cos\\theta=\\sin(2\\theta)\\)",
+              "note": "Use the double-angle identity before solving."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the double-angle identity and collect terms.",
+              "work": "\\(\\sqrt3\\cos\\theta=2\\sin\\theta\\cos\\theta\\Rightarrow\\cos\\theta(2\\sin\\theta-\\sqrt3)=0\\)"
+            },
+            {
+              "explain": "Solve the first factor. Cosine is zero at 90° and repeats every 180°.",
+              "work": "\\(\\cos\\theta=0\\Rightarrow\\theta=90^\\circ+180^\\circ k,\\quad k\\in\\mathbb Z\\)"
+            },
+            {
+              "explain": "Solve the second factor. Sine is √3/2 in quadrants I and II.",
+              "work": "\\(\\sin\\theta=\\frac{\\sqrt3}{2}\\Rightarrow\\theta=60^\\circ+360^\\circ k\\text{ or }120^\\circ+360^\\circ k\\)"
+            },
+            {
+              "explain": "Combine both families. The unit circle shows the representative angles from each factor.",
+              "work": "\\(\\boxed{\\theta=90^\\circ+180^\\circ k,\\ 60^\\circ+360^\\circ k,\\ 120^\\circ+360^\\circ k,\\ k\\in\\mathbb Z}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"Representative solutions for θ\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"298\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"220\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#26344a\">Representative solutions for θ</text><circle cx=\"220\" cy=\"132\" r=\"78\" fill=\"#fbfcff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M120 132H320M220 36V228\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"132\" x2=\"259.0\" y2=\"64.5\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"259.0\" cy=\"64.5\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"220.0\" y2=\"54.0\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"220.0\" cy=\"54.0\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"181.0\" y2=\"64.5\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"181.0\" cy=\"64.5\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"220.0\" y2=\"210.0\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"220.0\" cy=\"210.0\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><text x=\"220\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Purple, sin θ = √3/2: 60°, 120°</text><text x=\"220\" y=\"275\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Orange, cos θ = 0: 90°, 270°</text></svg>"
+              }
+            }
+          ],
+          "solution": "Correct answer: \\(90^\\circ+180^\\circ k,\\ 60^\\circ+360^\\circ k,\\ 120^\\circ+360^\\circ k;\\ k\\in\\mathbb Z\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 2 — EXT1 T3 EQ-Bank 3",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q5",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Use the identity in part (i) to help solve the equation in part (ii).",
+          "hint": "Work through each part in order. Use the identity highlighted in that part, and check the stated interval before selecting every solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "parts": [
+            {
+              "id": "met3-ext1-t3-q5i",
+              "type": "review",
+              "difficulty": "medium",
+              "stem": "Show that \\(\\sin x+\\sin3x=2\\sin2x\\cos x\\).",
+              "hint": "Write \\(\\sin3x=\\sin(2x+x)\\), expand, and use the double-angle identities to collect terms.",
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "Start from the left side and transform it until it matches the right side."
+                },
+                {
+                  "text": "\\sin3x",
+                  "note": "Expand the triple angle as \\(\\sin(2x+x)\\)."
+                }
+              ],
+              "answer": "Sample answer:\n\\(\\sin x+\\sin3x=\\sin x+\\sin(2x+x)\\)\n\\(=\\sin x+\\sin2x\\cos x+\\cos2x\\sin x\\)\n\\(=\\sin x+2\\sin x\\cos^2x+(\\cos^2x-\\sin^2x)\\sin x\\)\n\\(=\\sin x+3\\sin x\\cos^2x-\\sin^3x\\)\n\\(=\\sin x+3\\sin x(1-\\sin^2x)-\\sin^3x\\)\n\\(=4\\sin x(1-\\sin^2x)=4\\sin x\\cos^2x=2\\sin2x\\cos x.\\)",
+              "solution": "Sample answer:\n\\(\\sin x+\\sin3x=\\sin x+\\sin(2x+x)\\)\n\\(=\\sin x+\\sin2x\\cos x+\\cos2x\\sin x\\)\n\\(=\\sin x+2\\sin x\\cos^2x+(\\cos^2x-\\sin^2x)\\sin x\\)\n\\(=\\sin x+3\\sin x\\cos^2x-\\sin^3x\\)\n\\(=\\sin x+3\\sin x(1-\\sin^2x)-\\sin^3x\\)\n\\(=4\\sin x(1-\\sin^2x)=4\\sin x\\cos^2x=2\\sin2x\\cos x.\\)",
+              "steps": [
+                {
+                  "explain": "Use the sine addition identity to expand sin(2x+x).",
+                  "work": "\\(\\sin x+\\sin3x=\\sin x+\\sin2x\\cos x+\\cos2x\\sin x\\)"
+                },
+                {
+                  "explain": "Replace the double-angle terms by sine and cosine products.",
+                  "work": "\\(=\\sin x+2\\sin x\\cos^2x+(\\cos^2x-\\sin^2x)\\sin x\\)"
+                },
+                {
+                  "explain": "Collect terms and use \\(\\sin^2x+\\cos^2x=1\\).",
+                  "work": "\\(=\\sin x+3\\sin x\\cos^2x-\\sin^3x=4\\sin x(1-\\sin^2x)\\)"
+                },
+                {
+                  "explain": "Replace 1−sin²x by cos²x and apply sin2x=2sinx cosx.",
+                  "work": "\\(=4\\sin x\\cos^2x=2\\sin2x\\cos x\\)"
+                }
+              ],
+              "manual": true,
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 5(i) — EXT1 T3 EQ-Bank 1",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q5ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence find all \\(x\\) satisfying \\(\\sin x+\\sin2x+\\sin3x=0\\), for \\(x\\in[0,2\\pi]\\).",
+              "options": [
+                "\\(0,\\frac\\pi2,\\pi,\\frac{3\\pi}2,2\\pi\\)",
+                "\\(\\frac\\pi3,\\frac{2\\pi}3,\\frac{4\\pi}3,\\frac{5\\pi}3\\)",
+                "\\(0,\\frac\\pi2,\\pi,\\frac{3\\pi}2,2\\pi,\\frac\\pi3,\\frac{5\\pi}3\\)",
+                "\\(0,\\frac\\pi2,\\frac{2\\pi}3,\\pi,\\frac{4\\pi}3,\\frac{3\\pi}2,2\\pi\\)"
+              ],
+              "answer": 3,
+              "hint": "Use part (i) to combine sin x and sin 3x, then factor and solve both factors in the closed interval.",
+              "keyPoints": [
+                {
+                  "text": "\\(x\\in[0,2\\pi]\\)",
+                  "note": "Include both endpoints and list any repeated root only once."
+                },
+                {
+                  "text": "\\(\\sin x+\\sin2x+\\sin3x=0\\)",
+                  "note": "Combine the first and third terms using part (i)."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Apply part (i) to the first and third terms, then factor out sin 2x.",
+                  "work": "\\(2\\sin2x\\cos x+\\sin2x=0\\Rightarrow\\sin2x(1+2\\cos x)=0\\)"
+                },
+                {
+                  "explain": "Solve the first factor over 0≤2x≤4π.",
+                  "work": "\\(\\sin2x=0\\Rightarrow2x=k\\pi\\Rightarrow x=\\frac{k\\pi}{2},\\ k=0,1,2,3,4\\)"
+                },
+                {
+                  "explain": "Solve the second factor using the reference angle for cosine −1/2.",
+                  "work": "\\(1+2\\cos x=0\\Rightarrow\\cos x=-\\frac12\\Rightarrow x=\\frac{2\\pi}{3},\\frac{4\\pi}{3}\\)"
+                },
+                {
+                  "explain": "Combine both sets without duplicates. The diagram marks the five sine-zero roots and the two extra cosine roots.",
+                  "work": "\\(\\boxed{x=0,\\frac\\pi2,\\frac{2\\pi}3,\\pi,\\frac{4\\pi}3,\\frac{3\\pi}2,2\\pi}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"Solutions on 0 ≤ x ≤ 2π\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"298\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"220\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#26344a\">Solutions on 0 ≤ x ≤ 2π</text><circle cx=\"220\" cy=\"132\" r=\"78\" fill=\"#fbfcff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M120 132H320M220 36V228\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"132\" x2=\"298.0\" y2=\"132.0\" stroke=\"#16834c\" stroke-width=\"2.5\"/><circle cx=\"298.0\" cy=\"132.0\" r=\"5\" fill=\"#16834c\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"220.0\" y2=\"54.0\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"220.0\" cy=\"54.0\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"181.0\" y2=\"64.5\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"181.0\" cy=\"64.5\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"142.0\" y2=\"132.0\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"142.0\" cy=\"132.0\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"181.0\" y2=\"199.5\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"181.0\" cy=\"199.5\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"220.0\" y2=\"210.0\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"220.0\" cy=\"210.0\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><text x=\"220\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Purple, sin 2x = 0: 0, π/2, π, 3π/2, 2π</text><text x=\"220\" y=\"275\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Orange, cos x = −1/2: 2π/3, 4π/3</text></svg>"
+                  }
+                }
+              ],
+              "solution": "Correct answer: \\(0,\\frac\\pi2,\\frac{2\\pi}3,\\pi,\\frac{4\\pi}3,\\frac{3\\pi}2,2\\pi\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 5(ii) — EXT1 T3 EQ-Bank 1",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            }
+          ],
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 5 — EXT1 T3 EQ-Bank 1",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given \\(\\sin3\\theta=3\\sin\\theta-4\\sin^3\\theta\\), solve \\(\\sin3\\theta+\\sin2\\theta=\\sin\\theta\\) for \\(0\\le\\theta\\le2\\pi\\). (Do not prove the given identity.)",
+          "options": [
+            "\\(0,\\frac\\pi3,\\pi,\\frac{5\\pi}3,2\\pi\\)",
+            "\\(0,\\frac\\pi2,\\pi,\\frac{3\\pi}2,2\\pi\\)",
+            "\\(\\frac\\pi3,\\frac{2\\pi}3,\\frac{4\\pi}3,\\frac{5\\pi}3\\)",
+            "\\(0,\\frac\\pi3,\\frac{2\\pi}3,\\pi,\\frac{4\\pi}3,\\frac{5\\pi}3,2\\pi\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given triple-angle identity and \\(\\sin2\\theta=2\\sin\\theta\\cos\\theta\\). Factor fully and solve each factor in the closed interval.",
+          "keyPoints": [
+            {
+              "text": "Do not prove the given identity",
+              "note": "Use it as a supplied result; focus on solving the equation."
+            },
+            {
+              "text": "\\(0\\le\\theta\\le2\\pi\\)",
+              "note": "Include both endpoints if they satisfy the original equation."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute both the supplied triple-angle identity and the double-angle identity.",
+              "work": "\\(3\\sin\\theta-4\\sin^3\\theta+2\\sin\\theta\\cos\\theta=\\sin\\theta\\)"
+            },
+            {
+              "explain": "Move all terms to one side and factor out 2 sin θ.",
+              "work": "\\(2\\sin\\theta(1-2\\sin^2\\theta+\\cos\\theta)=0\\)"
+            },
+            {
+              "explain": "Use sin²θ=1−cos²θ, then factor the quadratic in cosine.",
+              "work": "\\(2\\sin\\theta(2\\cos^2\\theta+\\cos\\theta-1)=2\\sin\\theta(2\\cos\\theta-1)(\\cos\\theta+1)=0\\)"
+            },
+            {
+              "explain": "Solve each factor. The cos θ=−1 root θ=π is already in the sin θ=0 set, so do not list it twice.",
+              "work": "\\(\\sin\\theta=0:\\ 0,\\pi,2\\pi;\\quad\\cos\\theta=\\frac12:\\ \\frac\\pi3,\\frac{5\\pi}3;\\quad\\cos\\theta=-1:\\ \\pi\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"Solutions on 0 ≤ θ ≤ 2π\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"298\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"220\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#26344a\">Solutions on 0 ≤ θ ≤ 2π</text><circle cx=\"220\" cy=\"132\" r=\"78\" fill=\"#fbfcff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M120 132H320M220 36V228\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"132\" x2=\"298.0\" y2=\"132.0\" stroke=\"#16834c\" stroke-width=\"2.5\"/><circle cx=\"298.0\" cy=\"132.0\" r=\"5\" fill=\"#16834c\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"259.0\" y2=\"64.5\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"259.0\" cy=\"64.5\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"142.0\" y2=\"132.0\" stroke=\"#6758e8\" stroke-width=\"2.5\"/><circle cx=\"142.0\" cy=\"132.0\" r=\"5\" fill=\"#6758e8\" stroke=\"white\" stroke-width=\"2\"/><line x1=\"220\" y1=\"132\" x2=\"259.0\" y2=\"199.5\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"259.0\" cy=\"199.5\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><text x=\"220\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Purple, sin θ = 0: 0, π, 2π</text><text x=\"220\" y=\"275\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">Orange, cos θ = 1/2: π/3, 5π/3</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine the distinct solutions and include the closed-interval endpoints.",
+              "work": "\\(\\boxed{\\theta=0,\\frac\\pi3,\\pi,\\frac{5\\pi}3,2\\pi}\\)"
+            }
+          ],
+          "solution": "Correct answer: \\(0,\\frac\\pi3,\\pi,\\frac{5\\pi}3,2\\pi\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 8 — EXT1 T3 2008 HSC 6(b)",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q9",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A billboard of height \\(a\\) metres is mounted on a building with its bottom edge \\(h\\) metres above street level. From point P, \\(x\\) metres from the building, it subtends an angle \\(\\theta\\). Use \\(\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}\\) to show that \\(\\theta=\\tan^{-1}\\left(\\frac{ax}{x^2+h(a+h)}\\right)\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 330\" role=\"img\" aria-label=\"Billboard sightline diagram\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"328\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M65 270H495M445 270V70M445 200V70\" stroke=\"#334155\" stroke-width=\"3\" fill=\"none\"/><path d=\"M100 270L445 70M100 270L445 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M445 198V72\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M445 270V202\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M100 270H445\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M159 258A60 60 0 0 0 152 240\" fill=\"none\" stroke=\"#6758e8\" stroke-width=\"4\"/><text x=\"166\" y=\"245\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#6758e8\">θ</text><text x=\"454\" y=\"142\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">a</text><text x=\"454\" y=\"240\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">h</text><text x=\"272\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">x</text><text x=\"82\" y=\"292\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">P</text><path d=\"M445 253H428V270\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/></svg>"
+          },
+          "hint": "Use the two right triangles in the diagram. Write each tangent as opposite over adjacent, then apply the tangent subtraction identity to θ=A−B.",
+          "keyPoints": [
+            {
+              "text": "billboard of height \\(a\\)",
+              "note": "The upper triangle has vertical height a+h; a is only the billboard section."
+            },
+            {
+              "text": "bottom edge \\(h\\) metres above street level",
+              "note": "The lower sightline triangle has vertical height h."
+            },
+            {
+              "text": "subtends an angle \\(\\theta\\)",
+              "note": "The subtended angle is the difference between the top and bottom sight angles."
+            }
+          ],
+          "answer": "Sample answer:\nLet \\(A\\) be the angle from the horizontal to the top of the billboard and \\(B\\) the angle to its bottom. Then \\(\\theta=A-B\\), \\(\\tan A=\\frac{a+h}{x}\\), and \\(\\tan B=\\frac{h}{x}\\).\n\\(\\tan\\theta=\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}\n=\\frac{\\frac{a+h}{x}-\\frac hx}{1+\\frac{h(a+h)}{x^2}}\n=\\frac{ax}{x^2+h(a+h)}\\).\nTherefore \\(\\theta=\\tan^{-1}\\left(\\frac{ax}{x^2+h(a+h)}\\right)\\).",
+          "solution": "Sample answer:\nLet \\(A\\) be the angle from the horizontal to the top of the billboard and \\(B\\) the angle to its bottom. Then \\(\\theta=A-B\\), \\(\\tan A=\\frac{a+h}{x}\\), and \\(\\tan B=\\frac{h}{x}\\).\n\\(\\tan\\theta=\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}\n=\\frac{\\frac{a+h}{x}-\\frac hx}{1+\\frac{h(a+h)}{x^2}}\n=\\frac{ax}{x^2+h(a+h)}\\).\nTherefore \\(\\theta=\\tan^{-1}\\left(\\frac{ax}{x^2+h(a+h)}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Mark the angle from the horizontal to the top as A and the angle to the bottom as B. The subtended angle is the difference.",
+              "work": "\\(\\theta=A-B\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 330\" role=\"img\" aria-label=\"Billboard sightline diagram\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"328\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M65 270H495M445 270V70M445 200V70\" stroke=\"#334155\" stroke-width=\"3\" fill=\"none\"/><path d=\"M100 270L445 70M100 270L445 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M445 198V72\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M445 270V202\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M100 270H445\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M159 258A60 60 0 0 0 152 240\" fill=\"none\" stroke=\"#6758e8\" stroke-width=\"4\"/><text x=\"166\" y=\"245\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#6758e8\">θ</text><text x=\"454\" y=\"142\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">a</text><text x=\"454\" y=\"240\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">h</text><text x=\"272\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">x</text><text x=\"82\" y=\"292\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">P</text><path d=\"M445 253H428V270\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/></svg>"
+              }
+            },
+            {
+              "explain": "Use opposite over adjacent in each right triangle. Both have horizontal length x.",
+              "work": "\\(\\tan A=\\frac{a+h}{x},\\qquad\\tan B=\\frac{h}{x}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 245\" role=\"img\" aria-label=\"Right triangles for tangent A and tangent B\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"243\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"145\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">Upper sightline: A</text><path d=\"M40 190H245V70Z\" fill=\"#f7f8ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M228 190V173H245\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M76 190A36 36 0 0 0 70 169\" fill=\"none\" stroke=\"#df8500\" stroke-width=\"4\"/><text x=\"82\" y=\"166\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#b96a00\">A</text><text x=\"137\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"252\" y=\"136\" font-family=\"Arial\" font-size=\"13\">a + h</text><text x=\"420\" y=\"25\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">Lower sightline: B</text><path d=\"M330 190H520V150Z\" fill=\"#f7f8ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M503 190V173H520\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M365 190A35 35 0 0 0 364 183\" fill=\"none\" stroke=\"#df8500\" stroke-width=\"4\"/><text x=\"373\" y=\"180\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#b96a00\">B</text><text x=\"425\" y=\"211\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"13\">x</text><text x=\"526\" y=\"176\" font-family=\"Arial\" font-size=\"13\">h</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the tangent subtraction identity and simplify with a common denominator.",
+              "work": "\\(\\tan\\theta=\\frac{\\frac{a+h}{x}-\\frac hx}{1+\\frac{h(a+h)}{x^2}}=\\frac{\\frac ax}{\\frac{x^2+h(a+h)}{x^2}}=\\frac{ax}{x^2+h(a+h)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 330\" role=\"img\" aria-label=\"Billboard sightline diagram\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"328\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M65 270H495M445 270V70M445 200V70\" stroke=\"#334155\" stroke-width=\"3\" fill=\"none\"/><path d=\"M100 270L445 70M100 270L445 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M445 198V72\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M445 270V202\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M100 270H445\" stroke=\"#df8500\" stroke-width=\"2\"/><path d=\"M159 258A60 60 0 0 0 152 240\" fill=\"none\" stroke=\"#6758e8\" stroke-width=\"4\"/><text x=\"166\" y=\"245\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#6758e8\">θ</text><text x=\"454\" y=\"142\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">a</text><text x=\"454\" y=\"240\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">h</text><text x=\"272\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#df8500\">x</text><text x=\"82\" y=\"292\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">P</text><path d=\"M445 253H428V270\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/></svg>"
+              }
+            },
+            {
+              "explain": "Take inverse tangent to obtain the required expression.",
+              "work": "\\(\\boxed{\\theta=\\tan^{-1}\\left(\\frac{ax}{x^2+h(a+h)}\\right)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 330\" role=\"img\" aria-label=\"Billboard sightline diagram\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"328\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M65 270H495M445 270V70M445 200V70\" stroke=\"#334155\" stroke-width=\"3\" fill=\"none\"/><path d=\"M100 270L445 70M100 270L445 200\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M445 198V72\" stroke=\"#df8500\" stroke-width=\"7\"/><path d=\"M445 270V202\" stroke=\"#334155\" stroke-width=\"7\"/><path d=\"M100 270H445\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M159 258A60 60 0 0 0 152 240\" fill=\"none\" stroke=\"#6758e8\" stroke-width=\"4\"/><text x=\"166\" y=\"245\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#6758e8\">θ</text><text x=\"454\" y=\"142\" font-family=\"Arial\" font-size=\"14\" fill=\"#df8500\">a</text><text x=\"454\" y=\"240\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">h</text><text x=\"272\" y=\"294\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">x</text><text x=\"82\" y=\"292\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\">P</text><path d=\"M445 253H428V270\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/></svg>"
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 9 — EXT1 T3 SM-Bank 1",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-11B",
+      "code": "11B",
+      "title": "The sum of sine and cosine functions",
+      "questions": [
+        {
+          "id": "met3-ext1-t3-q1",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider \\(3\\sin x+4\\cos x\\).",
+          "hint": "Work through each part in order. Use the identity highlighted in that part, and check the stated interval before selecting every solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "parts": [
+            {
+              "id": "met3-ext1-t3-q1i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Express \\(3\\sin x+4\\cos x\\) in the form \\(A\\sin(x+\\alpha)\\), where \\(0\\le\\alpha\\le\\frac\\pi2\\).",
+              "options": [
+                "\\(5\\sin(x+\\tan^{-1}(4/3))\\)",
+                "\\(5\\sin(x+\\tan^{-1}(3/4))\\)",
+                "\\(7\\sin(x+\\tan^{-1}(4/3))\\)",
+                "\\(5\\sin(x-\\tan^{-1}(4/3))\\)"
+              ],
+              "answer": 0,
+              "hint": "Expand the target form and match the coefficients of sine and cosine separately.",
+              "keyPoints": [
+                {
+                  "text": "in the form",
+                  "note": "Use \\(A\\sin(x+\\alpha)=A\\cos\\alpha\\sin x+A\\sin\\alpha\\cos x\\)."
+                },
+                {
+                  "text": "\\(3\\sin x+4\\cos x\\)",
+                  "note": "Match the sine coefficient to 3 and the cosine coefficient to 4."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Expand the target form using the sine addition identity.",
+                  "work": "\\(A\\sin(x+\\alpha)=A\\cos\\alpha\\sin x+A\\sin\\alpha\\cos x\\)"
+                },
+                {
+                  "explain": "Match the two coefficients.",
+                  "work": "\\(A\\cos\\alpha=3,\\quad A\\sin\\alpha=4\\)"
+                },
+                {
+                  "explain": "Square and add, using \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), to find the positive amplitude.",
+                  "work": "\\(A^2=3^2+4^2=25\\Rightarrow A=5\\)"
+                },
+                {
+                  "explain": "Both sine and cosine of α are positive, so α is in quadrant I and satisfies the required range.",
+                  "work": "\\(\\tan\\alpha=\\frac43\\Rightarrow\\alpha=\\tan^{-1}(4/3)\\approx0.927\\text{ rad}\\). Thus \\(\\boxed{3\\sin x+4\\cos x=5\\sin(x+\\tan^{-1}(4/3))}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(5\\sin(x+\\tan^{-1}(4/3))\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 1(i) — EXT1 T3 2009 HSC 2(b)(i)",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations",
+                "sourceYear": 2009
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q1ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence solve \\(3\\sin x+4\\cos x=5\\) for \\(0\\le x\\le2\\pi\\), giving your answer to two decimal places.",
+              "options": [
+                "\\(x=0.64\\text{ rad}\\)",
+                "\\(x=1.57\\text{ rad}\\)",
+                "\\(x=2.50\\text{ rad}\\)",
+                "\\(x=6.93\\text{ rad}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the phase form from part (i). Sine equals 1 at \\(\\frac\\pi2+2k\\pi\\); then keep only values in the original interval.",
+              "keyPoints": [
+                {
+                  "text": "\\(0\\le x\\le2\\pi\\)",
+                  "note": "Check the interval after solving for the shifted angle."
+                },
+                {
+                  "text": "Hence solve",
+                  "note": "Substitute the equivalent sine form from part (i)."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Replace the left side with the amplitude-phase form and divide by 5.",
+                  "work": "\\(5\\sin(x+\\alpha)=5\\Rightarrow\\sin(x+\\alpha)=1,\\quad\\alpha=\\tan^{-1}(4/3)\\approx0.9273\\)"
+                },
+                {
+                  "explain": "In the allowed shifted-angle range, the only angle with sine 1 is π/2.",
+                  "work": "\\(x+0.9273=\\frac\\pi2\\Rightarrow x=1.5708-0.9273=0.6435\\ldots\\)"
+                },
+                {
+                  "explain": "Round to two decimal places and check the closed interval.",
+                  "work": "\\(\\boxed{x=0.64\\text{ rad}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" role=\"img\" aria-label=\"Solving sin(x + α) = 1\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"268\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M55 202.9H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"206.9\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">-1</text><path d=\"M55 125.0H530\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"45\" y=\"129.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M55 47.1H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"51.1\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">1</text><path d=\"M55 30V220\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M55.0 30V220\" stroke=\"#edf0f5\"/><text x=\"55.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M130.6 30V220\" stroke=\"#edf0f5\"/><text x=\"130.6\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">1</text><path d=\"M206.2 30V220\" stroke=\"#edf0f5\"/><text x=\"206.2\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">2</text><path d=\"M281.8 30V220\" stroke=\"#edf0f5\"/><text x=\"281.8\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">3</text><path d=\"M357.4 30V220\" stroke=\"#edf0f5\"/><text x=\"357.4\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">4</text><path d=\"M433.0 30V220\" stroke=\"#edf0f5\"/><text x=\"433.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">5</text><path d=\"M508.6 30V220\" stroke=\"#edf0f5\"/><text x=\"508.6\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">6</text><path d=\"M55.0 62.7 L56.8 61.6 L58.7 60.5 L60.5 59.5 L62.3 58.5 L64.1 57.5 L66.0 56.6 L67.8 55.7 L69.6 54.9 L71.4 54.1 L73.3 53.3 L75.1 52.6 L76.9 51.9 L78.8 51.3 L80.6 50.7 L82.4 50.2 L84.2 49.7 L86.1 49.2 L87.9 48.8 L89.7 48.5 L91.5 48.1 L93.4 47.9 L95.2 47.6 L97.0 47.4 L98.8 47.3 L100.7 47.2 L102.5 47.1 L104.3 47.1 L106.2 47.2 L108.0 47.3 L109.8 47.4 L111.6 47.6 L113.5 47.8 L115.3 48.1 L117.1 48.4 L118.9 48.7 L120.8 49.1 L122.6 49.6 L124.4 50.1 L126.3 50.6 L128.1 51.2 L129.9 51.8 L131.7 52.4 L133.6 53.1 L135.4 53.9 L137.2 54.7 L139.0 55.5 L140.9 56.4 L142.7 57.3 L144.5 58.2 L146.3 59.2 L148.2 60.3 L150.0 61.3 L151.8 62.4 L153.7 63.6 L155.5 64.7 L157.3 65.9 L159.1 67.2 L161.0 68.5 L162.8 69.8 L164.6 71.1 L166.4 72.5 L168.3 73.9 L170.1 75.3 L171.9 76.8 L173.8 78.3 L175.6 79.8 L177.4 81.3 L179.2 82.9 L181.1 84.5 L182.9 86.1 L184.7 87.8 L186.5 89.4 L188.4 91.1 L190.2 92.8 L192.0 94.5 L193.8 96.3 L195.7 98.0 L197.5 99.8 L199.3 101.6 L201.2 103.4 L203.0 105.2 L204.8 107.0 L206.6 108.9 L208.5 110.7 L210.3 112.6 L212.1 114.4 L213.9 116.3 L215.8 118.2 L217.6 120.1 L219.4 121.9 L221.3 123.8 L223.1 125.7 L224.9 127.6 L226.7 129.5 L228.6 131.3 L230.4 133.2 L232.2 135.1 L234.0 136.9 L235.9 138.8 L237.7 140.6 L239.5 142.5 L241.3 144.3 L243.2 146.1 L245.0 147.9 L246.8 149.7 L248.7 151.5 L250.5 153.3 L252.3 155.0 L254.1 156.7 L256.0 158.4 L257.8 160.1 L259.6 161.8 L261.4 163.5 L263.3 165.1 L265.1 166.7 L266.9 168.3 L268.8 169.8 L270.6 171.3 L272.4 172.8 L274.2 174.3 L276.1 175.7 L277.9 177.2 L279.7 178.5 L281.5 179.9 L283.4 181.2 L285.2 182.5 L287.0 183.7 L288.8 185.0 L290.7 186.1 L292.5 187.3 L294.3 188.4 L296.2 189.5 L298.0 190.5 L299.8 191.5 L301.6 192.5 L303.5 193.4 L305.3 194.3 L307.1 195.1 L308.9 195.9 L310.8 196.7 L312.6 197.4 L314.4 198.1 L316.3 198.7 L318.1 199.3 L319.9 199.8 L321.7 200.3 L323.6 200.8 L325.4 201.2 L327.2 201.5 L329.0 201.9 L330.9 202.1 L332.7 202.4 L334.5 202.6 L336.3 202.7 L338.2 202.8 L340.0 202.9 L341.8 202.9 L343.7 202.8 L345.5 202.7 L347.3 202.6 L349.1 202.4 L351.0 202.2 L352.8 201.9 L354.6 201.6 L356.4 201.3 L358.3 200.9 L360.1 200.4 L361.9 199.9 L363.8 199.4 L365.6 198.8 L367.4 198.2 L369.2 197.6 L371.1 196.9 L372.9 196.1 L374.7 195.3 L376.5 194.5 L378.4 193.6 L380.2 192.7 L382.0 191.8 L383.8 190.8 L385.7 189.7 L387.5 188.7 L389.3 187.6 L391.2 186.4 L393.0 185.3 L394.8 184.1 L396.6 182.8 L398.5 181.5 L400.3 180.2 L402.1 178.9 L403.9 177.5 L405.8 176.1 L407.6 174.7 L409.4 173.2 L411.3 171.7 L413.1 170.2 L414.9 168.7 L416.7 167.1 L418.6 165.5 L420.4 163.9 L422.2 162.2 L424.0 160.6 L425.9 158.9 L427.7 157.2 L429.5 155.5 L431.3 153.7 L433.2 152.0 L435.0 150.2 L436.8 148.4 L438.7 146.6 L440.5 144.8 L442.3 143.0 L444.1 141.1 L446.0 139.3 L447.8 137.4 L449.6 135.6 L451.4 133.7 L453.3 131.8 L455.1 129.9 L456.9 128.1 L458.8 126.2 L460.6 124.3 L462.4 122.4 L464.2 120.5 L466.1 118.7 L467.9 116.8 L469.7 114.9 L471.5 113.1 L473.4 111.2 L475.2 109.4 L477.0 107.5 L478.8 105.7 L480.7 103.9 L482.5 102.1 L484.3 100.3 L486.2 98.5 L488.0 96.7 L489.8 95.0 L491.6 93.3 L493.5 91.6 L495.3 89.9 L497.1 88.2 L498.9 86.5 L500.8 84.9 L502.6 83.3 L504.4 81.7 L506.3 80.2 L508.1 78.7 L509.9 77.2 L511.7 75.7 L513.6 74.3 L515.4 72.8 L517.2 71.5 L519.0 70.1 L520.9 68.8 L522.7 67.5 L524.5 66.3 L526.3 65.0 L528.2 63.9 L530.0 62.7 \" fill=\"none\" stroke=\"#5268cf\" stroke-width=\"3\"/><path d=\"M103.6 47.1V125.0\" stroke=\"#df8500\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"103.6\" cy=\"47.1\" r=\"5\" fill=\"#df8500\"/><text x=\"111.6\" y=\"37.1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"bold\" fill=\"#b96a00\">(0.64, 1)</text><text x=\"537\" y=\"224\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">x</text><text x=\"42\" y=\"25\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">f</text></svg>"
+                  }
+                }
+              ],
+              "solution": "Correct answer: \\(x=0.64\\text{ rad}\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 1(ii) — EXT1 T3 2009 HSC 2(b)(ii)",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations",
+                "sourceYear": 2009
+              }
+            }
+          ],
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 1 — EXT1 T3 2009 HSC 2(b)",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q3",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The current in an electrical circuit is modelled by \\(f(t)=6\\sin(0.05t)+8\\cos(0.05t)\\), for \\(t\\ge0\\).",
+          "hint": "Work through each part in order. Use the identity highlighted in that part, and check the stated interval before selecting every solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "parts": [
+            {
+              "id": "met3-ext1-t3-q3i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Given \\(f(t)=6\\sin(0.05t)+8\\cos(0.05t)\\), express \\(f(t)\\) in the form \\(A\\sin(0.05t+b)\\), where \\(0\\le b\\le\\frac\\pi2\\).",
+              "options": [
+                "\\(10\\sin(0.05t+0.644)\\)",
+                "\\(14\\sin(0.05t+0.927)\\)",
+                "\\(10\\sin(0.05t-0.927)\\)",
+                "\\(10\\sin(0.05t+0.927)\\)"
+              ],
+              "answer": 3,
+              "hint": "Expand the phase form, match coefficients, then use \\(A=\\sqrt{6^2+8^2}\\).",
+              "keyPoints": [
+                {
+                  "text": "\\(f(t)=6\\sin(0.05t)+8\\cos(0.05t)\\)",
+                  "note": "The coefficients become \\(A\\cos b\\) and \\(A\\sin b\\)."
+                },
+                {
+                  "text": "where \\(0\\le b\\le\\frac\\pi2\\)",
+                  "note": "Both coefficients are positive, so b lies in quadrant I."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Expand the requested form and match coefficients.",
+                  "work": "\\(A\\sin(0.05t+b)=A\\cos b\\sin(0.05t)+A\\sin b\\cos(0.05t)\\Rightarrow A\\cos b=6,\\ A\\sin b=8\\)"
+                },
+                {
+                  "explain": "Square and add to find A. Divide coefficient equations to find b.",
+                  "work": "\\(A=\\sqrt{6^2+8^2}=10,\\quad\\tan b=\\frac86=\\frac43\\Rightarrow b=\\tan^{-1}(4/3)=0.9273\\ldots\\)"
+                },
+                {
+                  "explain": "The signs place b in quadrant I, agreeing with the given restriction.",
+                  "work": "\\(\\boxed{f(t)=10\\sin(0.05t+0.927)}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(10\\sin(0.05t+0.927)\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 3(i) — EXT1 T3 EQ-Bank 4",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q3ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Using part (i), when does the current first reach its maximum value?",
+              "options": [
+                "\\(t=0.6\\)",
+                "\\(t=31.4\\)",
+                "\\(t=25.7\\)",
+                "\\(t=12.9\\)"
+              ],
+              "answer": 3,
+              "hint": "A sine function reaches a maximum when its angle is \\(\\pi/2\\). Solve for t and divide by 0.05.",
+              "keyPoints": [
+                {
+                  "text": "first reach its maximum value",
+                  "note": "Choose the earliest non-negative solution, not a later cycle."
+                },
+                {
+                  "text": "first reach its maximum value",
+                  "note": "Set the phase angle in the transformed form to its first maximum value."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The first maximum occurs when the sine factor is 1.",
+                  "work": "\\(0.05t+0.9273=\\frac\\pi2\\)"
+                },
+                {
+                  "explain": "Subtract the phase and divide by the coefficient of t.",
+                  "work": "\\(0.05t=1.5708-0.9273=0.6435\\Rightarrow t=\\frac{0.6435}{0.05}=12.87\\ldots\\)"
+                },
+                {
+                  "explain": "Round to one decimal place.",
+                  "work": "\\(\\boxed{t=12.9}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(t=12.9\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 3(ii) — EXT1 T3 EQ-Bank 4",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q3iii",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Sketch \\(f(t)\\). Clearly show its range and label the coordinates of its first maximum. Do not label the x-intercepts.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" role=\"img\" aria-label=\"Blank axes for sketching f of t\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"268\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M55 30V220H530\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M55 53H530M55 125H530M55 197H530M173 30V220M291 30V220M409 30V220\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"57\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">10</text><text x=\"45\" y=\"129\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"45\" y=\"201\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">−10</text><text x=\"55\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">0</text><text x=\"173\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">50</text><text x=\"291\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">100</text><text x=\"409\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">150</text><text x=\"537\" y=\"224\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">t</text><text x=\"42\" y=\"25\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">f</text></svg>"
+              },
+              "hint": "The amplitude gives the range. Use the first-maximum time from part (ii), and start the curve at the value f(0).",
+              "keyPoints": [
+                {
+                  "text": "Clearly show its range",
+                  "note": "A sine curve with amplitude 10 and midline 0 ranges from −10 to 10."
+                },
+                {
+                  "text": "first maximum",
+                  "note": "Mark the earliest peak at the time found in part (ii)."
+                }
+              ],
+              "answer": "Sample answer: Draw a smooth sinusoid with midline 0 and amplitude 10, starting at f(0)=8 and rising to the first maximum (12.9, 10). Show the range −10≤f(t)≤10. Leave x-intercepts unlabeled.",
+              "solution": "Sample answer: Draw a smooth sinusoid with midline 0 and amplitude 10, starting at f(0)=8 and rising to the first maximum (12.9, 10). Show the range −10≤f(t)≤10. Leave x-intercepts unlabeled.",
+              "steps": [
+                {
+                  "explain": "The amplitude is 10 and the midline is zero, so the graph stays between −10 and 10.",
+                  "work": "\\(\\text{Range: }-10\\le f(t)\\le10\\)"
+                },
+                {
+                  "explain": "Use the first-maximum time from part (ii). At the peak the function value equals the amplitude.",
+                  "work": "\\(f(12.9)\\approx10\\Rightarrow(12.9,10)\\)"
+                },
+                {
+                  "explain": "Start at f(0)=8, rise to the first peak, then draw a smooth sinusoidal curve through the next trough and peak. Do not label x-intercepts.",
+                  "work": "\\(f(0)=8,\\quad T=\\frac{2\\pi}{0.05}=40\\pi\\approx125.7\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" role=\"img\" aria-label=\"f(t) = 10 sin(0.05t + 0.927)\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"268\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M55 202.9H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"206.9\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">-10</text><path d=\"M55 125.0H530\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"45\" y=\"129.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M55 47.1H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"51.1\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">10</text><path d=\"M55 30V220\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M55.0 30V220\" stroke=\"#edf0f5\"/><text x=\"55.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M203.4 30V220\" stroke=\"#edf0f5\"/><text x=\"203.4\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">50</text><path d=\"M351.9 30V220\" stroke=\"#edf0f5\"/><text x=\"351.9\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">100</text><path d=\"M500.3 30V220\" stroke=\"#edf0f5\"/><text x=\"500.3\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">150</text><path d=\"M55.0 62.7 L56.8 61.3 L58.7 60.0 L60.5 58.7 L62.3 57.5 L64.1 56.3 L66.0 55.2 L67.8 54.2 L69.6 53.2 L71.4 52.3 L73.3 51.5 L75.1 50.7 L76.9 50.0 L78.8 49.4 L80.6 48.9 L82.4 48.4 L84.2 48.0 L86.1 47.7 L87.9 47.4 L89.7 47.3 L91.5 47.2 L93.4 47.1 L95.2 47.2 L97.0 47.3 L98.8 47.5 L100.7 47.7 L102.5 48.1 L104.3 48.5 L106.2 49.0 L108.0 49.5 L109.8 50.1 L111.6 50.8 L113.5 51.6 L115.3 52.4 L117.1 53.3 L118.9 54.3 L120.8 55.4 L122.6 56.5 L124.4 57.6 L126.3 58.9 L128.1 60.2 L129.9 61.5 L131.7 62.9 L133.6 64.4 L135.4 65.9 L137.2 67.5 L139.0 69.2 L140.9 70.9 L142.7 72.6 L144.5 74.4 L146.3 76.3 L148.2 78.2 L150.0 80.1 L151.8 82.1 L153.7 84.1 L155.5 86.2 L157.3 88.2 L159.1 90.4 L161.0 92.5 L162.8 94.7 L164.6 97.0 L166.4 99.2 L168.3 101.5 L170.1 103.8 L171.9 106.1 L173.8 108.4 L175.6 110.8 L177.4 113.1 L179.2 115.5 L181.1 117.9 L182.9 120.3 L184.7 122.7 L186.5 125.1 L188.4 127.5 L190.2 129.9 L192.0 132.2 L193.8 134.6 L195.7 137.0 L197.5 139.4 L199.3 141.7 L201.2 144.0 L203.0 146.3 L204.8 148.6 L206.6 150.9 L208.5 153.2 L210.3 155.4 L212.1 157.6 L213.9 159.7 L215.8 161.9 L217.6 164.0 L219.4 166.0 L221.3 168.0 L223.1 170.0 L224.9 171.9 L226.7 173.8 L228.6 175.7 L230.4 177.5 L232.2 179.2 L234.0 180.9 L235.9 182.5 L237.7 184.1 L239.5 185.7 L241.3 187.1 L243.2 188.5 L245.0 189.9 L246.8 191.2 L248.7 192.4 L250.5 193.6 L252.3 194.7 L254.1 195.7 L256.0 196.7 L257.8 197.6 L259.6 198.4 L261.4 199.2 L263.3 199.9 L265.1 200.5 L266.9 201.1 L268.8 201.5 L270.6 201.9 L272.4 202.3 L274.2 202.5 L276.1 202.7 L277.9 202.8 L279.7 202.9 L281.5 202.8 L283.4 202.7 L285.2 202.5 L287.0 202.3 L288.8 202.0 L290.7 201.6 L292.5 201.1 L294.3 200.5 L296.2 199.9 L298.0 199.2 L299.8 198.5 L301.6 197.6 L303.5 196.7 L305.3 195.8 L307.1 194.7 L308.9 193.6 L310.8 192.5 L312.6 191.3 L314.4 190.0 L316.3 188.6 L318.1 187.2 L319.9 185.7 L321.7 184.2 L323.6 182.6 L325.4 181.0 L327.2 179.3 L329.0 177.6 L330.9 175.8 L332.7 173.9 L334.5 172.0 L336.3 170.1 L338.2 168.1 L340.0 166.1 L341.8 164.1 L343.7 162.0 L345.5 159.8 L347.3 157.7 L349.1 155.5 L351.0 153.3 L352.8 151.0 L354.6 148.8 L356.4 146.5 L358.3 144.2 L360.1 141.8 L361.9 139.5 L363.8 137.1 L365.6 134.7 L367.4 132.4 L369.2 130.0 L371.1 127.6 L372.9 125.2 L374.7 122.8 L376.5 120.4 L378.4 118.0 L380.2 115.6 L382.0 113.2 L383.8 110.9 L385.7 108.5 L387.5 106.2 L389.3 103.9 L391.2 101.6 L393.0 99.3 L394.8 97.1 L396.6 94.8 L398.5 92.6 L400.3 90.5 L402.1 88.4 L403.9 86.3 L405.8 84.2 L407.6 82.2 L409.4 80.2 L411.3 78.3 L413.1 76.4 L414.9 74.5 L416.7 72.7 L418.6 71.0 L420.4 69.3 L422.2 67.6 L424.0 66.0 L425.9 64.5 L427.7 63.0 L429.5 61.6 L431.3 60.2 L433.2 58.9 L435.0 57.7 L436.8 56.5 L438.7 55.4 L440.5 54.4 L442.3 53.4 L444.1 52.5 L446.0 51.7 L447.8 50.9 L449.6 50.2 L451.4 49.6 L453.3 49.0 L455.1 48.5 L456.9 48.1 L458.8 47.8 L460.6 47.5 L462.4 47.3 L464.2 47.2 L466.1 47.1 L467.9 47.2 L469.7 47.3 L471.5 47.4 L473.4 47.7 L475.2 48.0 L477.0 48.4 L478.8 48.9 L480.7 49.4 L482.5 50.0 L484.3 50.7 L486.2 51.4 L488.0 52.3 L489.8 53.2 L491.6 54.1 L493.5 55.1 L495.3 56.2 L497.1 57.4 L498.9 58.6 L500.8 59.9 L502.6 61.2 L504.4 62.6 L506.3 64.1 L508.1 65.6 L509.9 67.2 L511.7 68.8 L513.6 70.5 L515.4 72.3 L517.2 74.1 L519.0 75.9 L520.9 77.8 L522.7 79.7 L524.5 81.7 L526.3 83.7 L528.2 85.7 L530.0 87.8 \" fill=\"none\" stroke=\"#5268cf\" stroke-width=\"3\"/><path d=\"M93.3 47.1V125.0\" stroke=\"#df8500\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"93.3\" cy=\"47.1\" r=\"5\" fill=\"#df8500\"/><text x=\"101.3\" y=\"37.1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"bold\" fill=\"#b96a00\">(12.9, 10)</text><text x=\"537\" y=\"224\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">t</text><text x=\"42\" y=\"25\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">f</text></svg>"
+                  }
+                }
+              ],
+              "manual": true,
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 3(iii) — EXT1 T3 EQ-Bank 4",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            }
+          ],
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 3 — EXT1 T3 EQ-Bank 4",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q4",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider \\(2\\cos\\theta+2\\cos(\\theta+\\frac\\pi3)\\).",
+          "hint": "Work through each part in order. Use the identity highlighted in that part, and check the stated interval before selecting every solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "parts": [
+            {
+              "id": "met3-ext1-t3-q4i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Express \\(2\\cos\\theta+2\\cos(\\theta+\\frac\\pi3)\\) in the form \\(R\\cos(\\theta+\\alpha)\\), where \\(R>0\\) and \\(0<\\alpha<\\frac\\pi2\\).",
+              "options": [
+                "\\(2\\sqrt3\\cos(\\theta-\\frac\\pi6)\\)",
+                "\\(4\\cos(\\theta+\\frac\\pi3)\\)",
+                "\\(2\\sqrt3\\cos(\\theta+\\frac\\pi6)\\)",
+                "\\(2\\cos(\\theta+\\frac\\pi3)\\)"
+              ],
+              "answer": 2,
+              "hint": "Expand the shifted cosine, combine like terms, then match the sine and cosine coefficients.",
+              "keyPoints": [
+                {
+                  "text": "in the form",
+                  "note": "Expand \\(R\\cos(\\theta+\\alpha)=R\\cos\\theta\\cos\\alpha-R\\sin\\theta\\sin\\alpha\\)."
+                },
+                {
+                  "text": "2\\cos(\\theta+\\frac\\pi3)",
+                  "note": "Use the addition formula to expand this term."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Expand the shifted cosine.",
+                  "work": "\\(2\\cos(\\theta+\\pi/3)=2\\cos\\theta\\cos(\\pi/3)-2\\sin\\theta\\sin(\\pi/3)=\\cos\\theta-\\sqrt3\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Add the unshifted term and collect coefficients.",
+                  "work": "\\(2\\cos\\theta+2\\cos(\\theta+\\pi/3)=3\\cos\\theta-\\sqrt3\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Match coefficients to find the amplitude and phase.",
+                  "work": "\\(R=\\sqrt{3^2+(\\sqrt3)^2}=2\\sqrt3,\\quad\\tan\\alpha=\\frac{\\sqrt3}{3}=\\frac1{\\sqrt3}\\Rightarrow\\alpha=\\frac\\pi6\\)"
+                },
+                {
+                  "explain": "Substitute R and α into the requested form.",
+                  "work": "\\(\\boxed{2\\sqrt3\\cos(\\theta+\\pi/6)}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(2\\sqrt3\\cos(\\theta+\\frac\\pi6)\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 4(i) — EXT1 T3 2010 HSC 4(b)(i)",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations",
+                "sourceYear": 2010
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q4ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence solve \\(2\\cos\\theta+2\\cos(\\theta+\\frac\\pi3)=3\\) for \\(0<\\theta<2\\pi\\).",
+              "options": [
+                "\\(\\theta=\\frac\\pi6\\)",
+                "\\(\\theta=\\frac{5\\pi}3\\)",
+                "\\(\\theta=\\frac\\pi3,\\frac{5\\pi}3\\)",
+                "\\(\\theta=\\frac\\pi6,\\frac{5\\pi}3,2\\pi\\)"
+              ],
+              "answer": 1,
+              "hint": "Use part (i) to get \\(\\cos(\\theta+\\pi/6)=\\sqrt3/2\\). Convert the open interval to the shifted angle before keeping roots.",
+              "keyPoints": [
+                {
+                  "text": "\\(0<\\theta<2\\pi\\)",
+                  "note": "The strict inequalities exclude the endpoints."
+                },
+                {
+                  "text": "Hence solve",
+                  "note": "Use the phase form from part (i) before solving the cosine equation."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Use part (i) and divide by the positive amplitude.",
+                  "work": "\\(2\\sqrt3\\cos(\\theta+\\pi/6)=3\\Rightarrow\\cos(\\theta+\\pi/6)=\\frac{\\sqrt3}{2}\\)"
+                },
+                {
+                  "explain": "Set u=θ+π/6 and translate the given open interval.",
+                  "work": "\\(0<\\theta<2\\pi\\Rightarrow\\frac\\pi6<u<\\frac{13\\pi}{6}\\)"
+                },
+                {
+                  "explain": "Cosine equals √3/2 at angles equivalent to π/6 and 11π/6. The first and last candidates are the excluded interval endpoints; only 11π/6 remains.",
+                  "work": "\\(u=\\frac{11\\pi}{6}\\Rightarrow\\theta=\\frac{11\\pi}{6}-\\frac\\pi6=\\frac{5\\pi}{3}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 145\" role=\"img\" aria-label=\"Allowed shifted-angle interval\"><rect x=\"1\" y=\"1\" width=\"498\" height=\"143\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"250\" y=\"23\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\">Allowed interval: π/6 &lt; u &lt; 13π/6</text><path d=\"M65 76H435\" stroke=\"#64748b\" stroke-width=\"3\"/><circle cx=\"95\" cy=\"76\" r=\"8\" fill=\"white\" stroke=\"#df8500\" stroke-width=\"3\"/><circle cx=\"372\" cy=\"76\" r=\"8\" fill=\"#16834c\" stroke=\"white\" stroke-width=\"2\"/><circle cx=\"405\" cy=\"76\" r=\"8\" fill=\"white\" stroke=\"#df8500\" stroke-width=\"3\"/><text x=\"95\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#b96a00\">π/6 excluded</text><text x=\"372\" y=\"105\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" font-weight=\"bold\" fill=\"#16834c\">11π/6 kept</text><text x=\"405\" y=\"54\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#b96a00\">13π/6 excluded</text><text x=\"250\" y=\"130\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#475569\">u = θ + π/6</text></svg>"
+                  }
+                },
+                {
+                  "explain": "The only solution in the original open interval is the remaining value.",
+                  "work": "\\(\\boxed{\\theta=\\frac{5\\pi}{3}}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(\\theta=\\frac{5\\pi}3\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 4(ii) — EXT1 T3 2010 HSC 4(b)(ii)",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations",
+                "sourceYear": 2010
+              }
+            }
+          ],
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 4 — EXT1 T3 2010 HSC 4(b)",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q6",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "An energy wave is modelled by \\(f(t)=\\sqrt5\\sin(0.2t)+2\\cos(0.2t)\\), for \\(t\\in[0,50]\\).",
+          "hint": "Work through each part in order. Use the identity highlighted in that part, and check the stated interval before selecting every solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "parts": [
+            {
+              "id": "met3-ext1-t3-q6i",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Given \\(f(t)=\\sqrt5\\sin(0.2t)+2\\cos(0.2t)\\), express \\(f(t)\\) in the form \\(R\\sin(0.2t-\\alpha)\\), where \\(\\alpha\\in[0,2\\pi]\\).",
+              "options": [
+                "\\(3\\sin(0.2t-0.730)\\)",
+                "\\(3\\sin(0.2t-5.553)\\)",
+                "\\(3\\sin(0.2t+5.553)\\)",
+                "\\(\\sqrt7\\sin(0.2t-5.553)\\)"
+              ],
+              "answer": 1,
+              "hint": "Expand the requested form. The cosine coefficient is −R sin α, so use both signs to identify α’s quadrant.",
+              "keyPoints": [
+                {
+                  "text": "\\(R\\sin(0.2t-\\alpha)\\)",
+                  "note": "The minus-angle formula makes the cosine coefficient −R sin α."
+                },
+                {
+                  "text": "\\(\\alpha\\in[0,2\\pi]\\)",
+                  "note": "Check the signs of sine and cosine to select the correct quadrant."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Expand the target form and match coefficients.",
+                  "work": "\\(R\\sin(0.2t-\\alpha)=R\\cos\\alpha\\sin(0.2t)-R\\sin\\alpha\\cos(0.2t)\\Rightarrow R\\cos\\alpha=\\sqrt5,\\ -R\\sin\\alpha=2\\)"
+                },
+                {
+                  "explain": "Square and add, then divide by R to find sine and cosine of α.",
+                  "work": "\\(R^2=(\\sqrt5)^2+2^2=9\\Rightarrow R=3,\\quad\\cos\\alpha=\\frac{\\sqrt5}{3},\\quad\\sin\\alpha=-\\frac23\\)"
+                },
+                {
+                  "explain": "Cosine is positive and sine negative, placing α in quadrant IV. Convert to the angle in [0,2π].",
+                  "work": "\\(\\alpha=2\\pi-\\tan^{-1}(2/\\sqrt5)=5.553\\ldots\\text{ rad}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" role=\"img\" aria-label=\"Phase angle α lies in quadrant IV\"><rect x=\"1\" y=\"1\" width=\"438\" height=\"298\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><text x=\"220\" y=\"22\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"15\" font-weight=\"bold\" fill=\"#26344a\">Phase angle α lies in quadrant IV</text><circle cx=\"220\" cy=\"132\" r=\"78\" fill=\"#fbfcff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M120 132H320M220 36V228\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"132\" x2=\"278.1\" y2=\"184.0\" stroke=\"#df8500\" stroke-width=\"2.5\"/><circle cx=\"278.1\" cy=\"184.0\" r=\"5\" fill=\"#df8500\" stroke=\"white\" stroke-width=\"2\"/><path d=\"M258 132 A38 38 0 0 1 248.3 157.3\" fill=\"none\" stroke=\"#df8500\" stroke-width=\"3\"/><text x=\"265\" y=\"154\" font-family=\"Arial\" font-size=\"11\" font-weight=\"bold\" fill=\"#df8500\">β ≈ 0.730</text><text x=\"220\" y=\"260\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">cos α = √5/3 &gt; 0; sin α = −2/3 &lt; 0</text><text x=\"220\" y=\"275\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"11\" fill=\"#475569\">α = 2π − β = 5.553 rad</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute R and α into the required form.",
+                  "work": "\\(\\boxed{f(t)=3\\sin(0.2t-5.553)}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(3\\sin(0.2t-5.553)\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 6(i) — EXT1 T3 EQ-Bank 2",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            },
+            {
+              "id": "met3-ext1-t3-q6ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "When does the energy wave first attain its maximum value? Give your answer to one decimal place.",
+              "options": [
+                "\\(t=11.5\\)",
+                "\\(t=35.6\\)",
+                "\\(t=4.2\\)",
+                "\\(t=19.9\\)"
+              ],
+              "answer": 2,
+              "hint": "Set the sine argument to an equivalent angle where sine is 1. Choose the earliest solution with t≥0.",
+              "keyPoints": [
+                {
+                  "text": "first attain its maximum value",
+                  "note": "The next cycle also has a maximum; choose the earliest non-negative time."
+                },
+                {
+                  "text": "one decimal place",
+                  "note": "Round after solving for t."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The maximum occurs when the sine factor is 1. The equivalent angle −3π/2 gives the first non-negative time.",
+                  "work": "\\(0.2t-5.553=-\\frac{3\\pi}{2}\\)"
+                },
+                {
+                  "explain": "Solve the linear equation.",
+                  "work": "\\(0.2t=5.553-4.7124=0.8406\\Rightarrow t=4.203\\ldots\\)"
+                },
+                {
+                  "explain": "The plotted curve shows this first peak; the later peak is around 35.6.",
+                  "work": "\\(\\boxed{t=4.2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 270\" role=\"img\" aria-label=\"Energy wave: first maximum\"><rect x=\"1\" y=\"1\" width=\"558\" height=\"268\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><path d=\"M55 202.9H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"206.9\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">-3</text><path d=\"M55 125.0H530\" stroke=\"#64748b\" stroke-width=\"2\"/><text x=\"45\" y=\"129.0\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M55 47.1H530\" stroke=\"#e7ebf2\" stroke-width=\"1\"/><text x=\"45\" y=\"51.1\" text-anchor=\"end\" font-family=\"Arial\" font-size=\"12\">3</text><path d=\"M55 30V220\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M55.0 30V220\" stroke=\"#edf0f5\"/><text x=\"55.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">0</text><path d=\"M150.0 30V220\" stroke=\"#edf0f5\"/><text x=\"150.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">10</text><path d=\"M245.0 30V220\" stroke=\"#edf0f5\"/><text x=\"245.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">20</text><path d=\"M340.0 30V220\" stroke=\"#edf0f5\"/><text x=\"340.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">30</text><path d=\"M435.0 30V220\" stroke=\"#edf0f5\"/><text x=\"435.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">40</text><path d=\"M530.0 30V220\" stroke=\"#edf0f5\"/><text x=\"530.0\" y=\"241\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\">50</text><path d=\"M55.0 73.1 L56.8 70.9 L58.7 68.8 L60.5 66.7 L62.3 64.8 L64.1 62.9 L66.0 61.2 L67.8 59.5 L69.6 57.9 L71.4 56.5 L73.3 55.1 L75.1 53.8 L76.9 52.7 L78.8 51.6 L80.6 50.7 L82.4 49.8 L84.2 49.1 L86.1 48.5 L87.9 48.0 L89.7 47.6 L91.5 47.3 L93.4 47.2 L95.2 47.1 L97.0 47.2 L98.8 47.4 L100.7 47.7 L102.5 48.1 L104.3 48.7 L106.2 49.3 L108.0 50.1 L109.8 50.9 L111.6 51.9 L113.5 53.0 L115.3 54.2 L117.1 55.5 L118.9 56.9 L120.8 58.4 L122.6 60.0 L124.4 61.7 L126.3 63.5 L128.1 65.3 L129.9 67.3 L131.7 69.4 L133.6 71.5 L135.4 73.7 L137.2 76.0 L139.0 78.4 L140.9 80.8 L142.7 83.3 L144.5 85.9 L146.3 88.5 L148.2 91.1 L150.0 93.9 L151.8 96.6 L153.7 99.4 L155.5 102.3 L157.3 105.2 L159.1 108.1 L161.0 111.0 L162.8 114.0 L164.6 116.9 L166.4 119.9 L168.3 122.9 L170.1 125.9 L171.9 128.9 L173.8 131.9 L175.6 134.9 L177.4 137.8 L179.2 140.8 L181.1 143.7 L182.9 146.6 L184.7 149.4 L186.5 152.3 L188.4 155.1 L190.2 157.8 L192.0 160.5 L193.8 163.1 L195.7 165.7 L197.5 168.2 L199.3 170.7 L201.2 173.1 L203.0 175.4 L204.8 177.6 L206.6 179.8 L208.5 181.9 L210.3 183.9 L212.1 185.8 L213.9 187.6 L215.8 189.4 L217.6 191.0 L219.4 192.6 L221.3 194.0 L223.1 195.3 L224.9 196.6 L226.7 197.7 L228.6 198.7 L230.4 199.6 L232.2 200.4 L234.0 201.1 L235.9 201.7 L237.7 202.1 L239.5 202.5 L241.3 202.7 L243.2 202.9 L245.0 202.9 L246.8 202.7 L248.7 202.5 L250.5 202.2 L252.3 201.7 L254.1 201.2 L256.0 200.5 L257.8 199.7 L259.6 198.8 L261.4 197.8 L263.3 196.6 L265.1 195.4 L266.9 194.1 L268.8 192.7 L270.6 191.1 L272.4 189.5 L274.2 187.8 L276.1 186.0 L277.9 184.0 L279.7 182.1 L281.5 180.0 L283.4 177.8 L285.2 175.6 L287.0 173.3 L288.8 170.9 L290.7 168.4 L292.5 165.9 L294.3 163.3 L296.2 160.7 L298.0 158.0 L299.8 155.3 L301.6 152.5 L303.5 149.7 L305.3 146.8 L307.1 143.9 L308.9 141.0 L310.8 138.1 L312.6 135.1 L314.4 132.1 L316.3 129.1 L318.1 126.1 L319.9 123.1 L321.7 120.1 L323.6 117.2 L325.4 114.2 L327.2 111.2 L329.0 108.3 L330.9 105.4 L332.7 102.5 L334.5 99.6 L336.3 96.8 L338.2 94.1 L340.0 91.3 L341.8 88.7 L343.7 86.0 L345.5 83.5 L347.3 81.0 L349.1 78.5 L351.0 76.2 L352.8 73.9 L354.6 71.7 L356.4 69.5 L358.3 67.5 L360.1 65.5 L361.9 63.6 L363.8 61.8 L365.6 60.1 L367.4 58.5 L369.2 57.0 L371.1 55.6 L372.9 54.3 L374.7 53.1 L376.5 52.0 L378.4 51.0 L380.2 50.1 L382.0 49.3 L383.8 48.7 L385.7 48.2 L387.5 47.7 L389.3 47.4 L391.2 47.2 L393.0 47.1 L394.8 47.2 L396.6 47.3 L398.5 47.6 L400.3 48.0 L402.1 48.4 L403.9 49.0 L405.8 49.8 L407.6 50.6 L409.4 51.5 L411.3 52.6 L413.1 53.7 L414.9 55.0 L416.7 56.4 L418.6 57.8 L420.4 59.4 L422.2 61.0 L424.0 62.8 L425.9 64.6 L427.7 66.6 L429.5 68.6 L431.3 70.7 L433.2 72.9 L435.0 75.2 L436.8 77.5 L438.7 79.9 L440.5 82.4 L442.3 84.9 L444.1 87.5 L446.0 90.2 L447.8 92.9 L449.6 95.6 L451.4 98.4 L453.3 101.2 L455.1 104.1 L456.9 107.0 L458.8 109.9 L460.6 112.9 L462.4 115.9 L464.2 118.8 L466.1 121.8 L467.9 124.8 L469.7 127.8 L471.5 130.8 L473.4 133.8 L475.2 136.8 L477.0 139.7 L478.8 142.6 L480.7 145.5 L482.5 148.4 L484.3 151.3 L486.2 154.1 L488.0 156.8 L489.8 159.5 L491.6 162.2 L493.5 164.8 L495.3 167.3 L497.1 169.8 L498.9 172.2 L500.8 174.6 L502.6 176.8 L504.4 179.0 L506.3 181.2 L508.1 183.2 L509.9 185.1 L511.7 187.0 L513.6 188.8 L515.4 190.4 L517.2 192.0 L519.0 193.5 L520.9 194.9 L522.7 196.1 L524.5 197.3 L526.3 198.4 L528.2 199.3 L530.0 200.1 \" fill=\"none\" stroke=\"#5268cf\" stroke-width=\"3\"/><path d=\"M94.9 47.1V125.0\" stroke=\"#df8500\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><circle cx=\"94.9\" cy=\"47.1\" r=\"5\" fill=\"#df8500\"/><text x=\"102.9\" y=\"37.1\" font-family=\"Arial\" font-size=\"12\" font-weight=\"bold\" fill=\"#b96a00\">(4.2, 3)</text><text x=\"537\" y=\"224\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">t</text><text x=\"42\" y=\"25\" font-family=\"Arial\" font-size=\"14\" font-style=\"italic\">f</text></svg>"
+                  }
+                }
+              ],
+              "solution": "Correct answer: \\(t=4.2\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "MET3 Exam-style Questions with Solutions",
+                "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+                "sourceQuestion": "Question 6(ii) — EXT1 T3 EQ-Bank 2",
+                "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+              }
+            }
+          ],
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 6 — EXT1 T3 EQ-Bank 2",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
+          }
+        }
+      ]
+    },
+    {
       "topicId": "y12e1-11C",
       "code": "11C",
       "title": "Using the t-formula to solve equations",
@@ -147,6 +979,55 @@
             "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
             "school": "Abbotsleigh",
             "year": 2020
+          }
+        },
+        {
+          "id": "met3-ext1-t3-q7",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "By making the substitution \\(t=\\tan\\frac\\theta2\\), or otherwise, show that \\(\\csc\\theta+\\cot\\theta=\\cot\\frac\\theta2\\).",
+          "hint": "Use the half-angle expressions for sine and cosine in terms of t, then combine the two fractions. Recall that cot(θ/2)=1/t.",
+          "keyPoints": [
+            {
+              "text": "substitution \\(t=\\tan\\frac\\theta2\\)",
+              "note": "Use the standard half-angle expressions for sine and cosine."
+            },
+            {
+              "text": "\\csc\\theta+\\cot\\theta",
+              "note": "Write both terms over the common denominator sin θ."
+            }
+          ],
+          "answer": "Sample answer:\nLet \\(t=\\tan(\\theta/2)\\). Then\n\\(\\sin\\theta=\\frac{2t}{1+t^2},\\quad \\cos\\theta=\\frac{1-t^2}{1+t^2}\\).\nHence\n\\(\\csc\\theta+\\cot\\theta=\\frac{1+\\cos\\theta}{\\sin\\theta}\n=\\frac{1+\\frac{1-t^2}{1+t^2}}{\\frac{2t}{1+t^2}}\n=\\frac1t=\\cot(\\theta/2)\\),\nwhere the expressions are defined.",
+          "solution": "Sample answer:\nLet \\(t=\\tan(\\theta/2)\\). Then\n\\(\\sin\\theta=\\frac{2t}{1+t^2},\\quad \\cos\\theta=\\frac{1-t^2}{1+t^2}\\).\nHence\n\\(\\csc\\theta+\\cot\\theta=\\frac{1+\\cos\\theta}{\\sin\\theta}\n=\\frac{1+\\frac{1-t^2}{1+t^2}}{\\frac{2t}{1+t^2}}\n=\\frac1t=\\cot(\\theta/2)\\),\nwhere the expressions are defined.",
+          "steps": [
+            {
+              "explain": "Use the half-angle substitution and its standard identities.",
+              "work": "\\(t=\\tan\\frac\\theta2,\\quad\\sin\\theta=\\frac{2t}{1+t^2},\\quad\\cos\\theta=\\frac{1-t^2}{1+t^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 220\" role=\"img\" aria-label=\"Half-angle substitution right triangle\"><rect x=\"1\" y=\"1\" width=\"398\" height=\"218\" rx=\"14\" fill=\"white\" stroke=\"#cbd5e1\" stroke-width=\"2\"/><polygon points=\"50,170 300,170 300,60\" fill=\"#eaf1ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M282 170V152H300\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M92 170A42 42 0 0 0 86 146\" fill=\"none\" stroke=\"#6758e8\" stroke-width=\"3\"/><text x=\"101\" y=\"150\" font-family=\"Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#5144d8\">θ/2</text><text x=\"175\" y=\"194\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"14\">1</text><text x=\"315\" y=\"120\" font-family=\"Arial\" font-size=\"14\">t</text><text x=\"152\" y=\"110\" font-family=\"Arial\" font-size=\"13\">√(1 + t²)</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine cosecant and cotangent over a common denominator.",
+              "work": "\\(\\csc\\theta+\\cot\\theta=\\frac{1}{\\sin\\theta}+\\frac{\\cos\\theta}{\\sin\\theta}=\\frac{1+\\cos\\theta}{\\sin\\theta}\\)"
+            },
+            {
+              "explain": "Substitute in terms of t and simplify.",
+              "work": "\\(\\frac{1+\\frac{1-t^2}{1+t^2}}{\\frac{2t}{1+t^2}}=\\frac{\\frac2{1+t^2}}{\\frac{2t}{1+t^2}}=\\frac1t\\)"
+            },
+            {
+              "explain": "Replace 1/t with cot(θ/2). This proves the identity wherever the original expressions are defined.",
+              "work": "\\(\\frac1t=\\frac1{\\tan(\\theta/2)}=\\cot\\frac\\theta2\\quad\\therefore\\quad\\boxed{\\csc\\theta+\\cot\\theta=\\cot\\frac\\theta2}\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "MET3 Exam-style Questions with Solutions",
+            "sourceFile": "/Users/andrewkim/Downloads/MET3_Exam-styleQs_wsolns.pdf",
+            "sourceQuestion": "Question 7 — EXT1 T3 2005 HSC 4(b)",
+            "curriculum": "Year 12 Extension 1 — Trigonometric equations"
           }
         }
       ]
