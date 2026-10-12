@@ -31,6 +31,11 @@ let firestoreDb;
 try {
   firestoreDb = initializeFirestore(app, {
     localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
+    // Some networks (school / tutoring-centre Wi-Fi, proxies) block or buffer Firestore's streaming connection.
+    // The device then silently runs on its offline cache: a checked homework still shows "Submitted", cheat sheets
+    // and curriculum never update (2026-10-12 Thiery's iPad). Auto-detect falls back to long polling only when the
+    // normal connection fails to establish; networks where it works are unaffected.
+    experimentalAutoDetectLongPolling: true,
   });
 } catch (err) {
   console.warn('Firestore persistent cache unavailable, falling back to memory cache:', err?.code || err?.message);
