@@ -18,6 +18,8 @@ import {
   isSafeImageDataUrl,
   planUploadBatches,
   UPLOAD_BATCH_MAX_PAGES,
+  mergeFreshSessions,
+  submittedSessionsToRecheck,
 } from '../src/utils/homework.js';
 
 let passed = 0;
@@ -173,6 +175,39 @@ test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries th
   ]);
   assert.equal(items[2].topics[0].label, 't3');
   assert.equal(items[2].comment, 'Good work');
+});
+
+test('a stale "Submitted" copy is replaced by the server\'s checked one, nothing else changes', () => {
+  const stale = [
+    { id: 'a', date: '2026-10-08', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
+    { id: 'b', date: '2026-10-01', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
+    { id: 'c', date: '2026-09-20', isHomeworkCompleted: true, homeworkStatus: 'checked' },
+  ];
+  const fresh = {
+    a: { homeworkStatus: 'checked', isHomeworkCompleted: true, homeworkScore: 76, homeworkTotal: 82, homeworkMarks: { 'x|y|1a': 'x' }, learnedTopics: [{ id: 't' }] },
+    b: { homeworkStatus: 'submitted' },   // still submitted on the server: left alone
+  };
+  const merged = mergeFreshSessions(stale, fresh);
+  assert.equal(getHomeworkStatus(merged[0]), 'checked');
+  assert.equal(merged[0].homeworkScore, 76);
+  assert.equal(merged[0].id, 'a');
+  assert.equal(merged[1], stale[1]);
+  assert.equal(merged[2], stale[2]);
+  assert.deepEqual(mergeFreshSessions(null, fresh), []);
+});
+
+test('only submitted-but-unchecked sessions are re-read, newest first, capped', () => {
+  const list = [
+    { id: '1', date: '2026-10-01', homeworkStatus: 'submitted' },
+    { id: '2', date: '2026-10-08', homeworkStatus: 'submitted' },
+    { id: '3', date: '2026-10-05', homeworkStatus: 'submitted' },
+    { id: '4', date: '2026-10-09', homeworkStatus: 'checked' },
+    { id: '5', date: '2026-10-10' },
+    { id: '6', date: '2026-09-01', homeworkStatus: 'submitted' },
+  ];
+  assert.deepEqual(submittedSessionsToRecheck(list).map((s) => s.id), ['2', '3', '1']);
+  assert.deepEqual(submittedSessionsToRecheck(list, 1).map((s) => s.id), ['2']);
+  assert.deepEqual(submittedSessionsToRecheck(undefined), []);
 });
 
 console.log(`\n${passed} passed`);

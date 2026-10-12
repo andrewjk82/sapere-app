@@ -1,6 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { doc, getDocFromServer } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 import { CheckCircle2, Clock, PenLine, ClipboardCheck, History } from 'lucide-react';
-import { getHomeworkItems, getHomeworkHistory } from '../../utils/homework';
+import { getHomeworkItems, getHomeworkHistory, mergeFreshSessions, submittedSessionsToRecheck, getHomeworkStatus } from '../../utils/homework';
 import HomeworkWorkspace from './HomeworkWorkspace';
 import HomeworkSubmissionViewer from './HomeworkSubmissionViewer';
 import HomeworkHistory from './HomeworkHistory';
@@ -40,7 +42,34 @@ const Row = ({ item, onOpen }) => {
 // Rendered inside the Challenge page's card list, so it uses that page's
 // cs__ card classes and ring icon to look like the Daily practice /
 // Calculation / Teacher Feedback cards above it.
-const HomeworkCard = ({ sessions, profile, user }) => {
+const RECHECK_COOLDOWN_MS = 2 * 60 * 1000;
+const recheckedAt = new Map();   // sessionId → when it was last re-read from the server (this page load)
+const freshSessions = {};        // sessionId → the checked copy that re-read returned (survives the card remounting)
+
+const HomeworkCard = ({ sessions: liveSessions, profile, user }) => {
+  // The live listener can lag (cache while the connection is flaky) and keep showing "Submitted" after the teacher
+  // checked it. A homework shown as Submitted is re-read straight from the server — at most 3 reads, at most once per 2 min each.
+  const [fresh, setFresh] = useState(() => ({ ...freshSessions }));
+  const recheckKey = submittedSessionsToRecheck(liveSessions).map((s) => s.id).join(',');
+  useEffect(() => {
+    if (!recheckKey) return undefined;
+    let cancelled = false;
+    (async () => {
+      for (const id of recheckKey.split(',')) {
+        if (Date.now() - (recheckedAt.get(id) || 0) < RECHECK_COOLDOWN_MS) continue;
+        recheckedAt.set(id, Date.now());
+        try {
+          const snap = await getDocFromServer(doc(db, 'sessions', id));
+          if (cancelled || !snap.exists()) continue;
+          const data = snap.data();
+          if (getHomeworkStatus(data) === 'checked') { freshSessions[id] = data; setFresh((prev) => ({ ...prev, [id]: data })); }
+        } catch { /* offline or blocked: keep what the listener has */ }
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [recheckKey]);
+  const sessions = useMemo(() => mergeFreshSessions(liveSessions, fresh), [liveSessions, fresh]);
+
   const items = useMemo(() => getHomeworkItems(sessions), [sessions]);
   const pastCount = useMemo(() => getHomeworkHistory(sessions).length, [sessions]);
   const active = items.filter((i) => i.status !== 'checked');

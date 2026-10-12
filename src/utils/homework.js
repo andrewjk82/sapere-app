@@ -161,3 +161,14 @@ export const planUploadBatches = (pageBytes, staleIndexes = [], { maxPages = UPL
   while (pending.length) deleteOnly.push({ pages: [], deletes: pending.splice(0, maxPages) });
   return [...batches, ...deleteOnly, current];
 };
+
+// Sessions the student's live listener still shows as "Submitted" are re-read once from the server (see
+// HomeworkCard). `fresh` = { [sessionId]: sessionDoc } for those that turned out to be checked: they replace the stale copy.
+export const mergeFreshSessions = (sessions, fresh = {}) => (Array.isArray(sessions) ? sessions : [])
+  .map((s) => (s?.id && fresh[s.id] && getHomeworkStatus(fresh[s.id]) === 'checked' ? { ...s, ...fresh[s.id], id: s.id } : s));
+
+// Sessions worth re-checking against the server: submitted, not yet checked (most recent first, capped).
+export const submittedSessionsToRecheck = (sessions, max = 3) => (Array.isArray(sessions) ? sessions : [])
+  .filter((s) => s?.id && getHomeworkStatus(s) === 'submitted')
+  .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
+  .slice(0, max);
