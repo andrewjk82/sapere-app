@@ -163,9 +163,16 @@ export const planUploadBatches = (pageBytes, staleIndexes = [], { maxPages = UPL
 };
 
 // Sessions the student's live listener still shows as "Submitted" are re-read once from the server (see
-// HomeworkCard). `fresh` = { [sessionId]: sessionDoc } for those that turned out to be checked: they replace the stale copy.
+// HomeworkCard). `fresh` = { [sessionId]: sessionDoc } for those that turned out to be checked. A fresh copy only
+// replaces the live one while the live one is still "Submitted" (the live listener always wins once it catches up)
+// and only when it is the same homework (same student and date).
 export const mergeFreshSessions = (sessions, fresh = {}) => (Array.isArray(sessions) ? sessions : [])
-  .map((s) => (s?.id && fresh[s.id] && getHomeworkStatus(fresh[s.id]) === 'checked' ? { ...s, ...fresh[s.id], id: s.id } : s));
+  .map((s) => {
+    const f = s?.id ? fresh[s.id] : null;
+    if (!f || getHomeworkStatus(s) !== 'submitted' || getHomeworkStatus(f) !== 'checked') return s;
+    if (f.studentId !== s.studentId || f.date !== s.date) return s;
+    return { ...s, ...f, id: s.id };
+  });
 
 // Sessions worth re-checking against the server: submitted, not yet checked (most recent first, capped).
 export const submittedSessionsToRecheck = (sessions, max = 3) => (Array.isArray(sessions) ? sessions : [])

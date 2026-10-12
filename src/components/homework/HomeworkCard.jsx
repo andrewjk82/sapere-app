@@ -43,31 +43,50 @@ const Row = ({ item, onOpen }) => {
 // cs__ card classes and ring icon to look like the Daily practice /
 // Calculation / Teacher Feedback cards above it.
 const RECHECK_COOLDOWN_MS = 2 * 60 * 1000;
-const recheckedAt = new Map();   // sessionId → when it was last re-read from the server (this page load)
-const freshSessions = {};        // sessionId → the checked copy that re-read returned (survives the card remounting)
+const FRESH_TTL_MS = 10 * 60 * 1000;
+// Kept across the card remounting, but keyed by the signed-in student and expiring, so nothing outlives the account or goes stale.
+const recheckedAt = new Map();   // `${uid}:${sessionId}` → when it was last re-read from the server
+const freshSessions = new Map(); // `${uid}:${sessionId}` → { data, at }: the checked copy that re-read returned
+const dropOtherAccounts = (uid) => {
+  for (const key of [...recheckedAt.keys()]) if (!key.startsWith(`${uid}:`)) recheckedAt.delete(key);
+  for (const key of [...freshSessions.keys()]) if (!key.startsWith(`${uid}:`)) freshSessions.delete(key);
+};
+const freshFor = (uid) => {
+  const out = {};
+  const now = Date.now();
+  for (const [key, { data, at }] of freshSessions) {
+    if (!uid || !key.startsWith(`${uid}:`)) continue;
+    if (now - at > FRESH_TTL_MS) { freshSessions.delete(key); continue; }
+    out[key.slice(uid.length + 1)] = data;
+  }
+  return out;
+};
 
 const HomeworkCard = ({ sessions: liveSessions, profile, user }) => {
   // The live listener can lag (cache while the connection is flaky) and keep showing "Submitted" after the teacher
   // checked it. A homework shown as Submitted is re-read straight from the server — at most 3 reads, at most once per 2 min each.
-  const [fresh, setFresh] = useState(() => ({ ...freshSessions }));
+  const uid = user?.uid || '';
+  if (uid) dropOtherAccounts(uid);
+  const [fresh, setFresh] = useState(() => freshFor(uid));
   const recheckKey = submittedSessionsToRecheck(liveSessions).map((s) => s.id).join(',');
   useEffect(() => {
-    if (!recheckKey) return undefined;
+    if (!recheckKey || !uid) return undefined;
     let cancelled = false;
     (async () => {
       for (const id of recheckKey.split(',')) {
-        if (Date.now() - (recheckedAt.get(id) || 0) < RECHECK_COOLDOWN_MS) continue;
-        recheckedAt.set(id, Date.now());
+        const key = `${uid}:${id}`;
+        if (Date.now() - (recheckedAt.get(key) || 0) < RECHECK_COOLDOWN_MS) continue;
+        recheckedAt.set(key, Date.now());
         try {
           const snap = await getDocFromServer(doc(db, 'sessions', id));
           if (cancelled || !snap.exists()) continue;
           const data = snap.data();
-          if (getHomeworkStatus(data) === 'checked') { freshSessions[id] = data; setFresh((prev) => ({ ...prev, [id]: data })); }
+          if (getHomeworkStatus(data) === 'checked') { freshSessions.set(key, { data, at: Date.now() }); setFresh((prev) => ({ ...prev, [id]: data })); }
         } catch { /* offline or blocked: keep what the listener has */ }
       }
     })();
     return () => { cancelled = true; };
-  }, [recheckKey]);
+  }, [recheckKey, uid]);
   const sessions = useMemo(() => mergeFreshSessions(liveSessions, fresh), [liveSessions, fresh]);
 
   const items = useMemo(() => getHomeworkItems(sessions), [sessions]);

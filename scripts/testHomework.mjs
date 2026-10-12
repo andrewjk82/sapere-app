@@ -179,13 +179,16 @@ test('getHomeworkHistory keeps everything, marks stale to-dos missed, carries th
 
 test('a stale "Submitted" copy is replaced by the server\'s checked one, nothing else changes', () => {
   const stale = [
-    { id: 'a', date: '2026-10-08', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
-    { id: 'b', date: '2026-10-01', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
-    { id: 'c', date: '2026-09-20', isHomeworkCompleted: true, homeworkStatus: 'checked' },
+    { id: 'a', date: '2026-10-08', studentId: 'u1', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
+    { id: 'b', date: '2026-10-01', studentId: 'u1', homeworkStatus: 'submitted', learnedTopics: [{ id: 't' }] },
+    { id: 'c', date: '2026-09-20', studentId: 'u1', isHomeworkCompleted: true, homeworkStatus: 'checked' },
+    { id: 'd', date: '2026-09-10', studentId: 'u1', homeworkStatus: 'submitted' },
   ];
   const fresh = {
-    a: { homeworkStatus: 'checked', isHomeworkCompleted: true, homeworkScore: 76, homeworkTotal: 82, homeworkMarks: { 'x|y|1a': 'x' }, learnedTopics: [{ id: 't' }] },
-    b: { homeworkStatus: 'submitted' },   // still submitted on the server: left alone
+    a: { date: '2026-10-08', studentId: 'u1', homeworkStatus: 'checked', isHomeworkCompleted: true, homeworkScore: 76, homeworkTotal: 82, homeworkMarks: { 'x|y|1a': 'x' }, learnedTopics: [{ id: 't' }] },
+    b: { date: '2026-10-01', studentId: 'u1', homeworkStatus: 'submitted' },     // still submitted on the server: left alone
+    c: { date: '2026-09-20', studentId: 'u1', homeworkStatus: 'submitted' },     // live copy already checked: live wins
+    d: { date: '2026-09-10', studentId: 'someone-else', homeworkStatus: 'checked', isHomeworkCompleted: true },   // different student: ignored
   };
   const merged = mergeFreshSessions(stale, fresh);
   assert.equal(getHomeworkStatus(merged[0]), 'checked');
@@ -193,7 +196,10 @@ test('a stale "Submitted" copy is replaced by the server\'s checked one, nothing
   assert.equal(merged[0].id, 'a');
   assert.equal(merged[1], stale[1]);
   assert.equal(merged[2], stale[2]);
+  assert.equal(merged[3], stale[3]);
   assert.deepEqual(mergeFreshSessions(null, fresh), []);
+  // a different date on the fresh copy is not the same homework
+  assert.equal(mergeFreshSessions([stale[0]], { a: { ...fresh.a, date: '2026-10-09' } })[0], stale[0]);
 });
 
 test('only submitted-but-unchecked sessions are re-read, newest first, capped', () => {
