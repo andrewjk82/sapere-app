@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { QRCodeSVG } from 'qrcode.react';
 import { X } from 'lucide-react';
@@ -9,7 +10,15 @@ const APP_URL_LABEL = 'sapere-app.vercel.app';
 // live Vercel deploy, styled to match the Secret Study look (see
 // app-shell.css purple palette) rather than the old Sapere Aude Academia
 // poster this replaces.
-const ShareAppQrModal = ({ open, onClose }) => (
+const APP_LINK = { id: 'app', label: 'Secret Study', url: APP_URL, display: APP_URL_LABEL };
+
+// `extraLinks` ([{ id, label, url, display }]) adds more QR codes next to the app's own (teacher settings pass the
+// JJ Money page). With more than one link a switch appears under the title.
+const ShareAppQrModal = ({ open, onClose, extraLinks = [] }) => {
+  const links = [APP_LINK, ...extraLinks];
+  const [activeId, setActiveId] = useState(APP_LINK.id);
+  const active = links.find((l) => l.id === activeId) || APP_LINK;
+  return (
   <AnimatePresence>
     {open && (
       <div className="app-modal" role="dialog" aria-modal="true" aria-label="Share Secret Study">
@@ -45,6 +54,23 @@ const ShareAppQrModal = ({ open, onClose }) => (
             <X size={16} />
           </button>
 
+          {links.length > 1 && (
+            <div role="tablist" aria-label="Choose a link" style={{ display: 'inline-flex', gap: 4, padding: 4, borderRadius: 999, background: 'rgba(139,92,246,0.12)', marginBottom: 18 }}>
+              {links.map((l) => (
+                <button
+                  key={l.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={l.id === active.id}
+                  onClick={() => setActiveId(l.id)}
+                  style={{ border: 0, borderRadius: 999, padding: '7px 16px', fontWeight: 800, fontSize: '0.82rem', cursor: 'pointer', background: l.id === active.id ? '#7c3aed' : 'transparent', color: l.id === active.id ? '#fff' : '#6d28d9' }}
+                >
+                  {l.label}
+                </button>
+              ))}
+            </div>
+          )}
+
           <img
             src="/logo.png?v=4"
             alt="Secret Study logo"
@@ -52,7 +78,7 @@ const ShareAppQrModal = ({ open, onClose }) => (
           />
 
           <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 900, color: '#1e1b4b', letterSpacing: '-0.01em' }}>
-            Secret Study
+            {active.label}
           </h2>
           <p style={{ margin: '6px 0 24px', fontSize: '0.9rem', color: '#6d28d9', fontWeight: 600 }}>
             Scan to open on another device
@@ -62,7 +88,7 @@ const ShareAppQrModal = ({ open, onClose }) => (
             display: 'inline-flex', padding: 16, borderRadius: 20, background: '#fff',
             boxShadow: '0 12px 30px rgba(99,102,241,0.12)', border: '1px solid #eceaf6',
           }}>
-            <QRCodeSVG value={APP_URL} size={200} bgColor="#ffffff" fgColor="#1e1b4b" level="M" />
+            <QRCodeSVG value={active.url} size={200} bgColor="#ffffff" fgColor="#1e1b4b" level="M" />
           </div>
 
           <div style={{
@@ -70,12 +96,13 @@ const ShareAppQrModal = ({ open, onClose }) => (
             background: 'linear-gradient(135deg, #a78bfa, #8b5cf6)', color: '#fff',
             fontWeight: 800, fontSize: '0.85rem',
           }}>
-            {APP_URL_LABEL}
+            {active.display}
           </div>
         </motion.div>
       </div>
     )}
   </AnimatePresence>
-);
+  );
+};
 
 export default ShareAppQrModal;

@@ -14,6 +14,9 @@ import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
 
+// Extra QR codes in the teacher's Share dialog (students only see the app's own).
+const TEACHER_QR_LINKS = [{ id: 'jjmoney', label: 'JJ Money', url: 'https://jjmoney-public.vercel.app', display: 'jjmoney-public.vercel.app' }];
+
 const requestMedalModalPreview = (multi = false) => {
   const medals = multi
     ? [
@@ -982,7 +985,7 @@ const Settings = () => {
         }}
       />
 
-      <ShareAppQrModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
+      <ShareAppQrModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} extraLinks={isAdmin ? TEACHER_QR_LINKS : []} />
     </div>
   );
 };
