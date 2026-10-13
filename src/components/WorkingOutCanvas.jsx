@@ -1,6 +1,6 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { flushSync } from 'react-dom';
-import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
+import { PenTool, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
 import StickerLayer from './StickerLayer';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
@@ -289,6 +289,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
   const [strokes, setStrokes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
+  const [redoStack, setRedoStack] = useState([]);
+  // A new action records the state before it (undo) and drops anything that was undone (redo).
+  const pushUndo = (before) => { setUndoStack(prev => [...prev, before]); setRedoStack([]); };
+  const resetHistory = () => { setUndoStack([]); setRedoStack([]); };
   const [currentPage, setCurrentPage] = useState(0);
   const [pages, setPages] = useState([[]]);
   const initialIsGraph = isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch';
@@ -706,7 +710,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     if (!gesture || (e?.pointerId != null && e.pointerId !== gesture.pointerId)) return false;
     strokeEraseRef.current = null;
     try { displayCanvasRef.current?.releasePointerCapture?.(gesture.pointerId); } catch { /* already released */ }
-    if (gesture.current !== gesture.base) setUndoStack(prev => [...prev, gesture.base]);
+    if (gesture.current !== gesture.base) pushUndo(gesture.base);
     return true;
   };
 
@@ -748,7 +752,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         strokesRef.current = after;
         clearCanvas(liveCanvasRef.current, getLiveCtx());
         clearCanvas(displayCanvasRef.current, getTipCtx());
-        setUndoStack(prev => [...prev, before]);
+        pushUndo(before);
         setStrokes(after);   // not an append → the background is repainted without the erased strokes
         return;
       }
@@ -764,7 +768,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const before = strokesRef.current;
     const after = [...before, stroke];
     strokesRef.current = after; // so a page change right after this stroke keeps it
-    setUndoStack(prev => [...prev, before]);
+    pushUndo(before);
     setStrokes(after);
   };
 
@@ -992,14 +996,44 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const handleUndo = () => {
     if (!undoStack.length) return;
     const prev = undoStack[undoStack.length - 1];
-    setStrokes(prev);
+    const current = strokesRef.current;   // read before it is replaced: the updaters below run later
+    setRedoStack(r => [...r, current]);
     setUndoStack(u => u.slice(0, -1));
+    strokesRef.current = prev;
+    setStrokes(prev);
   };
+
+  const handleRedo = () => {
+    if (!redoStack.length) return;
+    const next = redoStack[redoStack.length - 1];
+    const current = strokesRef.current;
+    setUndoStack(u => [...u, current]);
+    setRedoStack(r => r.slice(0, -1));
+    strokesRef.current = next;
+    setStrokes(next);
+  };
+
+  // Keyboard (iPad keyboard / laptop): ⌘Z / Ctrl+Z undo, ⇧⌘Z / Ctrl+Y redo — not while typing in a field.
+  const historyKeysRef = useRef({});
+  historyKeysRef.current = { undo: handleUndo, redo: handleRedo };
+  useEffect(() => {
+    const onKey = (e) => {
+      if (!(e.metaKey || e.ctrlKey) || e.altKey) return;
+      const wrapper = canvasWrapperRef.current;
+      if (!wrapper || wrapper.offsetParent === null) return;     // this pad is not on screen
+      if (e.target?.closest?.('input, textarea, select, [contenteditable="true"]')) return;
+      const key = String(e.key).toLowerCase();
+      if (key === 'z' && !e.shiftKey) { e.preventDefault(); historyKeysRef.current.undo(); }
+      else if ((key === 'z' && e.shiftKey) || key === 'y') { e.preventDefault(); historyKeysRef.current.redo(); }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   const handleClear = () => {
     if (!confirmClear) { setConfirmClear(true); return; }
     setConfirmClear(false);
-    setUndoStack(prev => [...prev, strokesRef.current]);
+    pushUndo(strokesRef.current);
     setStrokes([]);
   };
 
@@ -1016,7 +1050,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     setPageTypes(prev => [...prev, false]);
     setCurrentPage(idx);
     setStrokes([]);
-    setUndoStack([]);
+    resetHistory();
   };
 
   const goToPage = (idx) => {
@@ -1031,7 +1065,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     setCurrentPage(idx);
     forceRedrawRef.current = true;
     setStrokes(all[idx] || []);
-    setUndoStack([]);
+    resetHistory();
   };
 
   // Keep latest page-nav actions for the gesture listener (stable mount effect).
@@ -1367,7 +1401,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         setCurrentPage(idx);
         forceRedrawRef.current = true;
         setStrokes(nextPages[idx]);
-        setUndoStack([]);
+        resetHistory();
         resetView();
       },
       clear: () => {
@@ -1376,7 +1410,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         setPages([[]]); setCurrentPage(0);
         setStickerPages([[]]);
         setPageTypes([initialIsGraph]);
-        setUndoStack([]);
+        resetHistory();
       },
       getCurrentPageType: () => pageTypes[currentPage] ?? false,
       setCurrentPageType: (val) => {
@@ -1456,8 +1490,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
           </div>
           {/* Row 2: page navigation + undo + clear */}
           <div style={hideTitle ? { display: 'contents' } : { display: 'flex', padding: '6px 14px 8px', gap: '6px', alignItems: 'center', borderTop: '1px solid #e2e8f0' }}>
-            <button onClick={handleUndo} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <button onClick={handleUndo} disabled={!undoStack.length} aria-label="Undo" title="Undo" style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: undoStack.length ? 'pointer' : 'default', background: '#f1f5f9', color: '#64748b', opacity: undoStack.length ? 1 : 0.4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <RotateCcw size={15} />
+            </button>
+            <button onClick={handleRedo} disabled={!redoStack.length} aria-label="Redo" title="Redo" style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: redoStack.length ? 'pointer' : 'default', background: '#f1f5f9', color: '#64748b', opacity: redoStack.length ? 1 : 0.4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <RotateCw size={15} />
             </button>
             {!hideTitle && <div style={{ width: '1px', height: '20px', background: '#e2e8f0', margin: '0 2px' }} />}
             <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 0} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === 0 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
