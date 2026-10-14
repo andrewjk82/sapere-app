@@ -10,7 +10,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.2-tap-undo';
+const CANVAS_VERSION = 'v10.3-tap-undo';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -1213,7 +1213,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       }
     };
     const tapStart = (e) => {
-      if (!tap) tap = { t0: performance.now(), starts: new Map(), fingers: 0, maxMove: 0, stylus: false };
+      // Every finger on the screen is new → a new sequence, even if the last one's touchend never reached us
+      // (its target left the DOM, or the touch ended outside the pad). A stale record would otherwise keep an
+      // old start time and no tap could ever be short enough again.
+      if (!tap || e.touches.length === e.changedTouches.length) tap = { t0: performance.now(), starts: new Map(), fingers: 0, maxMove: 0, stylus: false };
       for (const t of e.changedTouches) {
         tap.starts.set(t.identifier, { x: t.clientX, y: t.clientY });
         if (t.touchType === 'stylus') tap.stylus = true;
@@ -1253,7 +1256,6 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onTouchEnd = (e) => {
-      tapEnd(e);
       if (e.touches.length < 2) {
         gesture = null;
       }
@@ -1327,6 +1329,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     wrapper.addEventListener('touchmove', onTouchMove, touchOpts);
     wrapper.addEventListener('touchend', onTouchEnd, touchEndOpts);
     wrapper.addEventListener('touchcancel', onTouchEnd, touchEndOpts);
+    // Tap ends on window: a lift whose target left the pad (or the DOM) still finishes the sequence.
+    window.addEventListener('touchend', tapEnd, touchEndOpts);
+    window.addEventListener('touchcancel', tapEnd, touchEndOpts);
     wrapper.addEventListener('wheel', onWheel, { capture: true, passive: false });
     // Window-level pointer tracking: first finger may have setPointerCapture on canvas.
     window.addEventListener('pointerdown', onPointerDown, true);
@@ -1339,6 +1344,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       wrapper.removeEventListener('touchmove', onTouchMove, true);
       wrapper.removeEventListener('touchend', onTouchEnd, true);
       wrapper.removeEventListener('touchcancel', onTouchEnd, true);
+      window.removeEventListener('touchend', tapEnd, true);
+      window.removeEventListener('touchcancel', tapEnd, true);
       wrapper.removeEventListener('wheel', onWheel, true);
       window.removeEventListener('pointerdown', onPointerDown, true);
       window.removeEventListener('pointermove', onPointerMove, true);

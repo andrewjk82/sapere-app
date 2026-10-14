@@ -60,8 +60,8 @@ export const PINCH_RATIO = 0.08;
 export const SWIPE_PX = 50;
 // Finger taps (GoodNotes-style): two fingers = undo, three = redo. A tap is short and nearly still, so it
 // never collides with a pinch / pan / page swipe, and anything involving the pencil is never a tap.
-export const TAP_MAX_MS = 350;
-export const TAP_MAX_MOVE_PX = 12;
+export const TAP_MAX_MS = 400;
+export const TAP_MAX_MOVE_PX = 20;   // real fingertips roll a little while tapping
 export const classifyMultiTap = ({ fingers, durationMs, maxMovePx, stylus = false }) => {
   if (stylus || durationMs > TAP_MAX_MS || maxMovePx > TAP_MAX_MOVE_PX) return null;
   if (fingers === 2) return 'undo';
