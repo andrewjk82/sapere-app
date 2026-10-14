@@ -2441,78 +2441,41 @@
           "id": "y10-8e-q3b",
           "type": "review",
           "difficulty": "medium",
-          "stem": "In the diagrams shown below, solve the geometric similarity and congruence problems.\nb) In the figure shown, \\(PM \\perp RS\\) and \\(PR = PS\\). Prove that \\(\\Delta PMR \\equiv \\Delta PMS\\).",
+          "stem": "In the figure shown, \\(PM \\perp RS\\) and \\(PR = PS\\). Prove that \\(\\Delta PMR \\equiv \\Delta PMS\\).",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "P": [
-                  3,
-                  5
-                ],
-                "R": [
-                  1,
-                  0
-                ],
-                "S": [
-                  5,
-                  0
-                ],
-                "M": [
-                  3,
-                  0
-                ]
-              },
-              "segments": [
-                {
-                  "from": "P",
-                  "to": "R",
-                  "ticks": 1
-                },
-                {
-                  "from": "P",
-                  "to": "S",
-                  "ticks": 1
-                },
-                {
-                  "from": "R",
-                  "to": "M"
-                },
-                {
-                  "from": "M",
-                  "to": "S"
-                },
-                {
-                  "from": "P",
-                  "to": "M"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "M",
-                  "right": true
-                }
-              ]
-            }
+            "svg": "fig:10cca071a5"
           },
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "answer": "In right-angled triangles \\(PMR\\) and \\(PMS\\):\n1. \\(\\angle PMR = \\angle PMS = 90^\\circ\\) (\\(PM \\perp RS\\), Right angle)\n2. \\(PR = PS\\) (Given, Hypotenuse)\n3. \\(PM\\) is common (Side)\nTherefore, \\(\\Delta PMR \\equiv \\Delta PMS\\) (RHS).",
+          "hint": "Recall the RHS (Right angle, Hypotenuse, Side) test for congruence. Check whether both triangles contain a right angle, have equal hypotenuses, and share a common side.",
+          "solution": "To prove that \\(\\Delta PMR \\equiv \\Delta PMS\\):\n1. **Right angle (R)**: Since \\(PM \\perp RS\\), the adjacent angles on the line are both right angles: \\(\\angle PMR = \\angle PMS = 90^\\circ\\). Thus, both \\(\\Delta PMR\\) and \\(\\Delta PMS\\) are right-angled triangles.\n2. **Hypotenuse (H)**: The sides opposite the right angles are \\(PR\\) and \\(PS\\). We are given \\(PR = PS\\).\n3. **Side (S)**: The side \\(PM\\) is shared by both triangles (common side: \\(PM = PM\\)).\n4. **Conclusion**: By the RHS congruence criterion (Right angle, Hypotenuse, Side), \\(\\Delta PMR \\equiv \\Delta PMS\\).\n*(Consequences: \\(RM = MS\\), meaning \\(M\\) is the midpoint of \\(RS\\), and \\(\\angle RPM = \\angle SPM\\).)*",
           "steps": [
             {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
+              "explain": "Identify that both triangles are right-angled. Since \\(PM \\perp RS\\), the line segment \\(PM\\) meets the line \\(RS\\) at right angles, so \\(\\angle PMR = \\angle PMS = 90^\\circ\\). This establishes the **R (Right angle)** condition of the RHS test.",
+              "work": "\\begin{aligned} &PM \\perp RS \\quad (\\text{given}) \\\\ &\\implies \\angle PMR = \\angle PMS = 90^\\circ \\quad (\\text{perpendicular to base}) \\\\ &\\therefore \\Delta PMR \\text{ and } \\Delta PMS \\text{ are right-angled triangles} \\quad \\text{[R in RHS]} \\end{aligned}",
+              "figure": {
+                "svg": "fig:7d3863f3fd"
+              }
             },
             {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
+              "explain": "Identify the hypotenuses of both right-angled triangles. In \\(\\Delta PMR\\), the side opposite the right angle \\(\\angle PMR\\) is \\(PR\\). In \\(\\Delta PMS\\), the side opposite \\(\\angle PMS\\) is \\(PS\\). The problem gives \\(PR = PS\\). This establishes the **H (Hypotenuse)** condition.",
+              "work": "\\begin{aligned} &PR = PS \\quad (\\text{given equal sides}) \\\\ &\\text{Since } PR \\text{ and } PS \\text{ are opposite the } 90^\\circ \\text{ angles,} \\\\ &\\text{they are equal hypotenuses} \\quad \\text{[H in RHS]} \\end{aligned}",
+              "figure": {
+                "svg": "fig:edc04d0a86"
+              }
             },
             {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
+              "explain": "Identify a matching pair of sides (legs). The vertical line segment \\(PM\\) is shared by both \\(\\Delta PMR\\) and \\(\\Delta PMS\\). Therefore, \\(PM\\) is a common side. This establishes the **S (Side)** condition.",
+              "work": "\\begin{aligned} &PM \\text{ is common to both triangles} \\\\ &PM = PM \\quad (\\text{shared leg}) \\quad \\text{[S in RHS]} \\end{aligned}",
+              "figure": {
+                "svg": "fig:392c794c50"
+              }
             },
             {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
+              "explain": "Combine all three conditions to conclude congruence. Both triangles have a right angle, equal hypotenuses, and a shared side. By the RHS congruence test, \\(\\Delta PMR \\equiv \\Delta PMS\\). As corresponding sides in congruent triangles are equal, it also follows that \\(RM = MS\\) (i.e. \\(M\\) is the midpoint of \\(RS\\)).",
+              "work": "\\begin{aligned} &\\text{In } \\Delta PMR \\text{ and } \\Delta PMS: \\\\ &\\quad 1.\\; \\angle PMR = \\angle PMS = 90^\\circ \\quad (PM \\perp RS,\\; \\text{Right angle}) \\\\ &\\quad 2.\\; PR = PS \\quad (\\text{given},\\; \\text{Hypotenuse}) \\\\ &\\quad 3.\\; PM \\text{ is common} \\quad (\\text{Side}) \\\\ &\\therefore \\Delta PMR \\equiv \\Delta PMS \\quad (\\text{RHS}) \\end{aligned}",
+              "figure": {
+                "svg": "fig:024032c22a"
+              }
             }
           ],
           "manual": true,
@@ -3808,81 +3771,41 @@
             {
               "id": "y10-8e-q3b",
               "type": "review",
-              "stem": "b) In the figure shown, \\(PM \\perp RS\\) and \\(PR = PS\\). Prove that \\(\\Delta PMR \\equiv \\Delta PMS\\).",
+              "stem": "In the figure shown, \\(PM \\perp RS\\) and \\(PR = PS\\). Prove that \\(\\Delta PMR \\equiv \\Delta PMS\\).",
               "figure": {
-                "geometry": {
-                  "width": 300,
-                  "points": {
-                    "P": [
-                      3,
-                      5
-                    ],
-                    "R": [
-                      1,
-                      0
-                    ],
-                    "S": [
-                      5,
-                      0
-                    ],
-                    "M": [
-                      3,
-                      0
-                    ]
-                  },
-                  "segments": [
-                    {
-                      "from": "P",
-                      "to": "R",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "P",
-                      "to": "S",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "R",
-                      "to": "M"
-                    },
-                    {
-                      "from": "M",
-                      "to": "S"
-                    },
-                    {
-                      "from": "P",
-                      "to": "M"
-                    }
-                  ],
-                  "angles": [
-                    {
-                      "at": "M",
-                      "right": true,
-                      "labelPos": [
-                        3.5,
-                        0.5
-                      ]
-                    }
-                  ]
-                }
+                "svg": "fig:10cca071a5"
               },
-              "answer": "In right-angled triangles \\(PMR\\) and \\(PMS\\):\n- Hypotenuse \\(PR = PS\\) (given equal sides).\n- Side \\(PM\\) is common.\n- \\(\\angle PMR = \\angle PMS = 90^\\circ\\) (since \\(PM \\perp RS\\)).\nTherefore, \\(\\Delta PMR \\equiv \\Delta PMS\\) by the RHS congruence test.",
+              "answer": "In right-angled triangles \\(PMR\\) and \\(PMS\\):\n1. \\(\\angle PMR = \\angle PMS = 90^\\circ\\) (\\(PM \\perp RS\\), Right angle)\n2. \\(PR = PS\\) (Given, Hypotenuse)\n3. \\(PM\\) is common (Side)\nTherefore, \\(\\Delta PMR \\equiv \\Delta PMS\\) (RHS).",
+              "hint": "Recall the RHS (Right angle, Hypotenuse, Side) test for congruence. Check whether both triangles contain a right angle, have equal hypotenuses, and share a common side.",
+              "solution": "To prove that \\(\\Delta PMR \\equiv \\Delta PMS\\):\n1. **Right angle (R)**: Since \\(PM \\perp RS\\), the adjacent angles on the line are both right angles: \\(\\angle PMR = \\angle PMS = 90^\\circ\\). Thus, both \\(\\Delta PMR\\) and \\(\\Delta PMS\\) are right-angled triangles.\n2. **Hypotenuse (H)**: The sides opposite the right angles are \\(PR\\) and \\(PS\\). We are given \\(PR = PS\\).\n3. **Side (S)**: The side \\(PM\\) is shared by both triangles (common side: \\(PM = PM\\)).\n4. **Conclusion**: By the RHS congruence criterion (Right angle, Hypotenuse, Side), \\(\\Delta PMR \\equiv \\Delta PMS\\).\n*(Consequences: \\(RM = MS\\), meaning \\(M\\) is the midpoint of \\(RS\\), and \\(\\angle RPM = \\angle SPM\\).)*",
               "steps": [
                 {
-                  "explain": "Identify the equal hypotenuses.",
-                  "work": "\\( PR = PS \\text{ (hypotenuse, given)} \\)"
+                  "explain": "Identify that both triangles are right-angled. Since \\(PM \\perp RS\\), the line segment \\(PM\\) meets the line \\(RS\\) at right angles, so \\(\\angle PMR = \\angle PMS = 90^\\circ\\). This establishes the **R (Right angle)** condition of the RHS test.",
+                  "work": "\\begin{aligned} &PM \\perp RS \\quad (\\text{given}) \\\\ &\\implies \\angle PMR = \\angle PMS = 90^\\circ \\quad (\\text{perpendicular to base}) \\\\ &\\therefore \\Delta PMR \\text{ and } \\Delta PMS \\text{ are right-angled triangles} \\quad \\text{[R in RHS]} \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:7d3863f3fd"
+                  }
                 },
                 {
-                  "explain": "Identify the shared vertical side.",
-                  "work": "\\( PM \\text{ is common} \\)"
+                  "explain": "Identify the hypotenuses of both right-angled triangles. In \\(\\Delta PMR\\), the side opposite the right angle \\(\\angle PMR\\) is \\(PR\\). In \\(\\Delta PMS\\), the side opposite \\(\\angle PMS\\) is \\(PS\\). The problem gives \\(PR = PS\\). This establishes the **H (Hypotenuse)** condition.",
+                  "work": "\\begin{aligned} &PR = PS \\quad (\\text{given equal sides}) \\\\ &\\text{Since } PR \\text{ and } PS \\text{ are opposite the } 90^\\circ \\text{ angles,} \\\\ &\\text{they are equal hypotenuses} \\quad \\text{[H in RHS]} \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:edc04d0a86"
+                  }
                 },
                 {
-                  "explain": "Note the right angles.",
-                  "work": "\\( \\angle PMR = \\angle PMS = 90^\\circ \\text{ (since } PM \\perp RS\\text{)} \\)"
+                  "explain": "Identify a matching pair of sides (legs). The vertical line segment \\(PM\\) is shared by both \\(\\Delta PMR\\) and \\(\\Delta PMS\\). Therefore, \\(PM\\) is a common side. This establishes the **S (Side)** condition.",
+                  "work": "\\begin{aligned} &PM \\text{ is common to both triangles} \\\\ &PM = PM \\quad (\\text{shared leg}) \\quad \\text{[S in RHS]} \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:392c794c50"
+                  }
                 },
                 {
-                  "explain": "Apply RHS congruence rule.",
-                  "work": "\\( \\Delta PMR \\equiv \\Delta PMS \\text{ (RHS)} \\)"
+                  "explain": "Combine all three conditions to conclude congruence. Both triangles have a right angle, equal hypotenuses, and a shared side. By the RHS congruence test, \\(\\Delta PMR \\equiv \\Delta PMS\\). As corresponding sides in congruent triangles are equal, it also follows that \\(RM = MS\\) (i.e. \\(M\\) is the midpoint of \\(RS\\)).",
+                  "work": "\\begin{aligned} &\\text{In } \\Delta PMR \\text{ and } \\Delta PMS: \\\\ &\\quad 1.\\; \\angle PMR = \\angle PMS = 90^\\circ \\quad (PM \\perp RS,\\; \\text{Right angle}) \\\\ &\\quad 2.\\; PR = PS \\quad (\\text{given},\\; \\text{Hypotenuse}) \\\\ &\\quad 3.\\; PM \\text{ is common} \\quad (\\text{Side}) \\\\ &\\therefore \\Delta PMR \\equiv \\Delta PMS \\quad (\\text{RHS}) \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:024032c22a"
+                  }
                 }
               ],
               "xp": 3

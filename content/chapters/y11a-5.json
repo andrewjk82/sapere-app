@@ -1638,36 +1638,42 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "The graph of \\(y = -3x^3\\) has a point of inflection at \\((0,0)\\). Sketch the graph of \\(y = 5 - 3x^3\\), indicating the new point of inflection.",
-          "answer": "Cubic shifted up 5.\nInflection at (0, 5).",
-          "options": [
-            "\\((0, 5)\\)",
-            "\\((0, -5)\\)",
-            "\\((5, 0)\\)",
-            "\\((-5, 0)\\)"
-          ],
-          "hint": "Adding 5 shifts the graph vertically upwards.",
-          "solution": "Cubic shifted up 5.\nInflection at (0, 5).",
+          "answer": "The curve \\(y = -3x^3\\) shifted vertically upwards by 5 units. New point of inflection at \\((0, 5)\\), \\(y\\)-intercept at \\((0, 5)\\), and \\(x\\)-intercept at \\((\\sqrt[3]{\\frac{5}{3}}, 0) \\approx (1.19, 0)\\).",
+          "hint": "Rewrite the equation as \\(y = -3x^3 + 5\\). Adding 5 outside the function shifts the entire graph vertically upwards by 5 units, moving the point of inflection from \\((0, 0)\\) to \\((0, 5)\\).",
+          "solution": "1. The base curve \\(y = -3x^3\\) has a horizontal point of inflection at \\((0, 0)\\).\n2. The function \\(y = 5 - 3x^3 = -3x^3 + 5\\) translates the graph vertically upwards by 5 units (\\(y = f(x) + 5\\)).\n3. The new point of inflection shifts to \\((0, 5)\\).\n4. Key points for the sketch:\n   • Point of inflection / \\(y\\)-intercept: \\((0, 5)\\) with horizontal tangent (\\(y' = 0\\))\n   • \\(x\\)-intercept: \\((\\sqrt[3]{5/3}, 0) \\approx (1.19, 0)\\)\n   • Shape: strictly decreasing cubic curve, concave up for \\(x < 0\\) and concave down for \\(x > 0\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Shift up 5"
+              "explain": "Analyze the base curve \\(y = -3x^3\\). Differentiating gives \\(y' = -9x^2 \\le 0\\), showing that the curve is strictly decreasing everywhere except at \\(x = 0\\), where the tangent is horizontal (\\(y'(0) = 0\\)). The second derivative is \\(y'' = -18x\\), which equals zero at \\(x = 0\\) and changes sign from positive (concave up for \\(x < 0\\)) to negative (concave down for \\(x > 0\\)). Thus, \\((0, 0)\\) is a stationary horizontal point of inflection.",
+              "work": "\\begin{aligned} y &= -3x^3 \\\\ y' &= -9x^2 \\le 0 \\implies y'(0) = 0 \\quad (\\text{horizontal tangent}) \\\\ y'' &= -18x = 0 \\implies x = 0 \\\\ &\\implies \\text{Stationary point of inflection at } (0, 0) \\end{aligned}",
+              "figure": {
+                "svg": "fig:8e3c8506c4"
+              }
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\((0,0) \\to (0,5)\\)"
+              "explain": "Express the equation in standard vertical transformation form: \\(y = 5 - 3x^3 = -3x^3 + 5\\). According to the transformation rule \\(y = f(x) + c\\), adding a constant \\(+5\\) outside the function translates every point on the graph vertically upwards by \\(5\\) units: \\((x, y) \\to (x, y + 5)\\). Consequently, the original point of inflection \\((0, 0)\\) shifts directly up by \\(5\\) units to \\((0, 5)\\).",
+              "work": "\\begin{aligned} y &= 5 - 3x^3 = -3x^3 + 5 \\quad [y = f(x) + 5] \\\\ &\\text{Vertical translation upwards by } 5 \\text{ units} \\\\ (x, y) &\\longrightarrow (x, y + 5) \\\\ (0, 0) &\\longrightarrow (0, 0 + 5) = (0, 5) \\end{aligned}",
+              "figure": {
+                "svg": "fig:ee09d24df5"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Cubic shifted up 5.\nInflection at (0, 5)."
+              "explain": "Calculate the key features required to anchor the sketch accurately:\n1. **Inflection point & \\(y\\)-intercept**: Setting \\(x = 0\\) gives \\(y = 5 - 3(0)^3 = 5\\), confirming \\((0, 5)\\). The tangent slope is \\(m = y'(0) = -9(0)^2 = 0\\) (horizontal inflection tangent).\n2. **\\(x\\)-intercept**: Set \\(y = 0\\) and solve for \\(x\\):\n\\[5 - 3x^3 = 0 \\implies 3x^3 = 5 \\implies x^3 = \\frac{5}{3} \\implies x = \\sqrt[3]{\\frac{5}{3}} \\approx 1.19\\]\nThis gives the \\(x\\)-intercept \\((\\sqrt[3]{\\frac{5}{3}}, 0) \\approx (1.19, 0)\\).\n3. **Reference guide points**: \\(x = -1 \\implies y = 5 - 3(-1) = 8\\) and \\(x = 1 \\implies y = 5 - 3(1) = 2\\).",
+              "work": "\\begin{aligned} \\text{Inflection / } y\\text{-int:} &\\quad x = 0 \\implies y = 5 \\implies (0, 5), \\; m = y'(0) = 0 \\\\ \\text{x-intercept:} &\\quad y = 0 \\implies 5 - 3x^3 = 0 \\\\ &\\quad x^3 = \\frac{5}{3} \\implies x = \\sqrt[3]{\\frac{5}{3}} \\approx 1.19 \\implies (\\sqrt[3]{\\tfrac{5}{3}}, 0) \\\\ \\text{Guide points:} &\\quad (-1, 8), \\; (1, 2) \\end{aligned}",
+              "figure": {
+                "svg": "fig:0364141b36"
+              }
             },
             {
-              "explain": "Final answer: Cubic shifted up 5.\nInflection at (0, 5).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Cubic shifted up 5.\nInflection at (0, 5)."
+              "explain": "Sketch the complete transformed graph of \\(y = 5 - 3x^3\\). Draw the cubic curve through \\((-1, 8)\\), flattening to a horizontal tangent as it passes through the point of inflection at \\((0, 5)\\), continuing strictly decreasing through \\((1, 2)\\), and cutting the \\(x\\)-axis at \\((\\sqrt[3]{\\frac{5}{3}}, 0) \\approx (1.19, 0)\\). Clearly indicate the new point of inflection at \\((0, 5)\\).",
+              "work": "\\begin{aligned} &\\text{Sketch } y = 5 - 3x^3: \\\\ &\\quad \\bullet \\text{ Point of inflection: } (0, 5) \\text{ with horizontal tangent } (y'=0) \\\\ &\\quad \\bullet \\text{ } x\\text{-intercept: } (\\sqrt[3]{\\tfrac{5}{3}}, 0) \\approx (1.19, 0) \\\\ &\\quad \\bullet \\text{ Shape: strictly decreasing cubic, inflection at } (0, 5) \\end{aligned}",
+              "figure": {
+                "svg": "fig:73b486ea48"
+              }
             }
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5A-new-14b-ii",

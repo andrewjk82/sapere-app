@@ -1,0 +1,55 @@
+<svg width="440" height="320" viewBox="0 0 440 320" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#7c3aed" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="440" height="320" fill="#f8fafc" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Step Banner -->
+  <rect x="16" y="12" width="408" height="28" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="220" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">
+    Step 1: Right Angles (R in RHS) — PM ⟂ RS
+  </text>
+
+  <!-- Base Triangle Faint -->
+  <polygon points="220,60 100,250 340,250" fill="#ffffff" stroke="#94a3b8" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Perpendicular lines highlighted in vibrant blue -->
+  <line x1="220" y1="60" x2="220" y2="250" stroke="#2563eb" stroke-width="2.8"/>
+  <line x1="100" y1="250" x2="340" y2="250" stroke="#2563eb" stroke-width="2.4"/>
+
+  <!-- Prominent Right Angle Markers -->
+  <path d="M 220 230 L 200 230 L 200 250" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <path d="M 220 230 L 240 230 L 240 250" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+
+  <!-- Degree callouts -->
+  <text x="188" y="244" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">90°</text>
+  <text x="252" y="244" text-anchor="start" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">90°</text>
+
+  <!-- Vertices -->
+  <circle cx="220" cy="60" r="4.5" fill="#1e293b"/>
+  <circle cx="100" cy="250" r="4.5" fill="#1e293b"/>
+  <circle cx="340" cy="250" r="4.5" fill="#1e293b"/>
+  <circle cx="220" cy="250" r="5" fill="#1d4ed8"/>
+
+  <!-- Labels -->
+  <text x="220" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-style="italic" font-weight="bold" fill="#0f172a">P</text>
+  <text x="84" y="266" text-anchor="end" font-family="Georgia, serif" font-size="17" font-style="italic" font-weight="bold" fill="#0f172a">R</text>
+  <text x="356" y="266" text-anchor="start" font-family="Georgia, serif" font-size="17" font-style="italic" font-weight="bold" fill="#0f172a">S</text>
+  <text x="220" y="274" text-anchor="middle" font-family="Georgia, serif" font-size="17" font-style="italic" font-weight="bold" fill="#0f172a">M</text>
+
+  <!-- Explanation Pill -->
+  <rect x="25" y="80" width="165" height="42" rx="6" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="107" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1e40af">Condition 1 (Right angle)</text>
+  <text x="107" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#1d4ed8">∠PMR = ∠PMS = 90°</text>
+
+  <rect x="250" y="80" width="165" height="42" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" filter="url(#shadow)"/>
+  <text x="332" y="97" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569">Given: PM ⟂ RS</text>
+  <text x="332" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">Perpendicular to base</text>
+</svg>
