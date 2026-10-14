@@ -12,7 +12,7 @@
  *   fallback – URL shown in an <iframe> when there's no src or pdf.js fails
  *   style    – container style overrides
  */
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, PenLine, Eraser, Undo2, Redo2, Trash2, Hand } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 import {
@@ -190,74 +190,124 @@ const useAutoHideToolbar = (pinned) => {
   return { visible: shown || pinned, show, tapHandlers };
 };
 
-const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, multiTouchAtRef, onAddStroke, onEraseAt, onEraseBegin, onScribbleErase, onPan }) => {
+// One committed mark. Memoised on the stroke object, so adding a stroke never re-builds the other paths.
+const StrokePath = memo(({ stroke }) => (
+  <path d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" opacity={isPenStroke(stroke) ? undefined : HIGHLIGHT_OPACITY} />
+));
+
+// Pointer samples of one move: every coalesced sample (fast pencil writing delivers several per frame).
+const samplesOf = (event) => {
+  const list = typeof event.getCoalescedEvents === 'function' ? event.getCoalescedEvents() : null;
+  return list && list.length ? list : [event];
+};
+
+// Same approach as the notepad (WorkingOutCanvas): the stroke being drawn lives in a ref and is painted once
+// per animation frame straight onto its <path> (no React render per move), and a pencil press always starts
+// a new stroke — a previous stroke whose pointerup has not arrived yet is committed first instead of
+// swallowing the new one.
+const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, multiTouchAtRef, onAddStroke, onEraseAt, onEraseBegin, onScribbleErase, onPan }) => {
   const holderRef = useRef(null);
   const canvasRef = useRef(null);
+  const draftRef = useRef(null);               // <path> of the stroke being drawn
+  const draftFrameRef = useRef(0);
   const [near, setNear] = useState(pageNumber === 1);
   const [ratio, setRatio] = useState(initialRatio);
-  const [draft, setDraft] = useState(null);   // stroke being drawn: [[x, y], ...]
   const gestureRef = useRef(null);             // { id, kind: 'draw' | 'erase' | 'pan', ... }
 
-  const pointOf = (event) => toPagePoint(event.clientX, event.clientY, holderRef.current?.getBoundingClientRect());
+  const paintDraft = (points) => {
+    cancelAnimationFrame(draftFrameRef.current);
+    draftFrameRef.current = 0;
+    draftRef.current?.setAttribute('d', points ? pointsToPath(points) : '');
+  };
+  const scheduleDraft = () => {
+    if (draftFrameRef.current) return;
+    draftFrameRef.current = requestAnimationFrame(() => {
+      draftFrameRef.current = 0;
+      const g = gestureRef.current;
+      if (g?.kind === 'draw') draftRef.current?.setAttribute('d', pointsToPath(g.points));
+    });
+  };
+  useEffect(() => () => cancelAnimationFrame(draftFrameRef.current), []);
+
+  const commitDraw = (g) => {
+    // A second finger landed during a finger stroke (two-finger tap / pinch): that mark is not ink.
+    // Pencil strokes are never dropped this way — a resting palm adds touches too.
+    const multiTouch = g.touch && multiTouchAtRef.current >= g.at;
+    if (!g.points?.length || multiTouch) return;
+    const scratched = g.pen && isScribbleEraseOn() ? penScribbleTargets(g.points, strokes) : [];
+    if (scratched.length > 0) { onScribbleErase(pageNumber, scratched); return; }
+    onAddStroke(pageNumber, {
+      id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`,
+      ...(g.pen ? { kind: 'pen', color: g.color, w: PEN_WIDTH } : { color: g.color, w: HIGHLIGHT_WIDTH }),
+      pts: g.points,
+    });
+  };
 
   const handleDown = (event) => {
-    if (!hl.on || gestureRef.current || pinchingRef.current) return;
+    if (!hl.on) return;
     const isTouch = event.pointerType === 'touch';
+    const isPencil = event.pointerType === 'pen';
+    const active = gestureRef.current;
+    if (active) {
+      if (!isPencil) return;                    // a second finger / palm never interrupts
+      gestureRef.current = null;
+      if (active.kind === 'draw' && !active.touch) commitDraw(active);
+      paintDraft(null);
+    }
+    if (!isPencil && pinchingRef.current) return;
     try { event.currentTarget.setPointerCapture(event.pointerId); } catch { /* may already be captured */ }
     if (isTouch && !hl.finger) {
       // Pen-only mode: a finger scrolls. Touch-action is none here (so the pen is not hijacked), so pan by hand.
       gestureRef.current = { id: event.pointerId, kind: 'pan', x: event.clientX, y: event.clientY };
       return;
     }
-    const point = pointOf(event);
+    const rect = holderRef.current?.getBoundingClientRect();
+    const point = toPagePoint(event.clientX, event.clientY, rect);
     if (!point) return;
     if (hl.tool === 'erase') {
-      gestureRef.current = { id: event.pointerId, kind: 'erase' };
+      gestureRef.current = { id: event.pointerId, kind: 'erase', rect };
       onEraseBegin();
       onEraseAt(pageNumber, point[0], point[1]);
     } else {
-      gestureRef.current = { id: event.pointerId, kind: 'draw', points: [point], at: performance.now(), touch: isTouch };
-      setDraft([point]);
+      const pen = hl.mode === 'pen';
+      gestureRef.current = { id: event.pointerId, kind: 'draw', rect, points: [point], at: performance.now(), touch: isTouch, pen, color: pen ? hl.penColor : hl.color };
+      paintDraft(gestureRef.current.points);
     }
   };
 
   const handleMove = (event) => {
     const g = gestureRef.current;
     if (!g || g.id !== event.pointerId) return;
-    if (pinchingRef.current) { gestureRef.current = null; setDraft(null); return; } // a second finger turned it into a pinch
+    if (pinchingRef.current && g.touch !== false && event.pointerType !== 'pen') {
+      gestureRef.current = null; paintDraft(null); return;   // a second finger turned it into a pinch
+    }
     if (g.kind === 'pan') {
       onPan(event.clientX - g.x, event.clientY - g.y);
       g.x = event.clientX;
       g.y = event.clientY;
       return;
     }
-    const point = pointOf(event);
-    if (!point) return;
-    if (g.kind === 'erase') { onEraseAt(pageNumber, point[0], point[1]); return; }
-    const next = appendPoint(g.points, point);
-    if (next !== g.points) { g.points = next; setDraft(next); }
+    for (const sample of samplesOf(event)) {
+      const point = toPagePoint(sample.clientX, sample.clientY, g.rect);
+      if (!point) continue;
+      if (g.kind === 'erase') onEraseAt(pageNumber, point[0], point[1]);
+      else g.points = appendPoint(g.points, point);
+    }
+    if (g.kind === 'draw') scheduleDraft();
   };
 
   const handleUp = (event) => {
     const g = gestureRef.current;
     if (!g || g.id !== event.pointerId) return;
     gestureRef.current = null;
-    // A second finger landed during a finger stroke (two-finger tap / pinch): that mark is not ink.
-    // Pencil strokes are never dropped this way — a resting palm adds touches too.
-    const multiTouch = g.touch && multiTouchAtRef.current >= g.at;
-    if (g.kind === 'draw' && g.points?.length && !multiTouch) {
-      const pen = hl.mode === 'pen';
-      const scratched = pen && isScribbleEraseOn() ? penScribbleTargets(g.points, strokes) : [];
-      if (scratched.length > 0) onScribbleErase(pageNumber, scratched);
-      else {
-        onAddStroke(pageNumber, {
-          id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`,
-          ...(pen ? { kind: 'pen', color: hl.penColor, w: PEN_WIDTH } : { color: hl.color, w: HIGHLIGHT_WIDTH }),
-          pts: g.points,
-        });
+    if (g.kind === 'draw') {
+      // A pencil's pointercancel (iPadOS sends them now and then) keeps the ink; a finger's is dropped.
+      if (event.type !== 'pointercancel' || !g.touch) {
+        g.points = appendPoint(g.points, toPagePoint(event.clientX, event.clientY, g.rect));
+        commitDraw(g);
       }
     }
-    setDraft(null);
+    paintDraft(null);
   };
 
   useEffect(() => {
@@ -313,7 +363,7 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
       }}
     >
       <canvas ref={canvasRef} style={{ width: '100%', height: '100%', display: 'block', borderRadius: 4 }} />
-      {(hl.on || strokes?.length > 0 || draft) && (
+      {(hl.on || strokes?.length > 0) && (
         <svg
           viewBox={`0 0 1 ${ratio}`}
           preserveAspectRatio="none"
@@ -325,14 +375,10 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', borderRadius: 4, mixBlendMode: 'multiply', pointerEvents: hl.on ? 'auto' : 'none', touchAction: hl.on ? 'none' : 'auto', cursor: hl.on ? (hl.tool === 'erase' ? 'cell' : 'crosshair') : 'default' }}
         >
           {/* Highlights first, pen writing above them, so a later highlight never dims the writing. */}
-          {(strokes || []).filter((stroke) => !isPenStroke(stroke)).map((stroke) => (
-            <path key={stroke.id} d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />
-          ))}
-          {draft && hl.mode !== 'pen' && <path d={pointsToPath(draft)} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
-          {(strokes || []).filter(isPenStroke).map((stroke) => (
-            <path key={stroke.id} d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" />
-          ))}
-          {draft && hl.mode === 'pen' && <path d={pointsToPath(draft)} fill="none" stroke={hl.penColor} strokeWidth={PEN_WIDTH} strokeLinecap="round" strokeLinejoin="round" />}
+          {(strokes || []).filter((stroke) => !isPenStroke(stroke)).map((stroke) => <StrokePath key={stroke.id} stroke={stroke} />)}
+          {hl.mode !== 'pen' && <path ref={draftRef} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
+          {(strokes || []).filter(isPenStroke).map((stroke) => <StrokePath key={stroke.id} stroke={stroke} />)}
+          {hl.mode === 'pen' && <path ref={draftRef} fill="none" stroke={hl.penColor} strokeWidth={PEN_WIDTH} strokeLinecap="round" strokeLinejoin="round" />}
         </svg>
       )}
       <span style={{ position: 'absolute', right: 8, bottom: 6, fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8' }}>
@@ -340,7 +386,7 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
       </span>
     </div>
   );
-};
+});
 
 const centered = (style, children) => (
   <div style={{ display: 'grid', placeItems: 'center', height: '100%', minHeight: 200, background: '#f8fafc', ...style }}>
