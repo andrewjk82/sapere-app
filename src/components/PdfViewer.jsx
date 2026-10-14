@@ -12,17 +12,19 @@
  *   fallback – URL shown in an <iframe> when there's no src or pdf.js fails
  *   style    – container style overrides
  */
-import { memo, useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, PenLine, Eraser, Undo2, Redo2, Trash2, Hand } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 import {
-  HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS, PEN_COLORS, PEN_WIDTH, isPenStroke,
+  HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS, PEN_COLORS, PEN_WIDTH, PEN_MIN_GAP, isPenStroke,
+  penWidthFor, penPointsInPx,
   toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, removeStrokes, countHighlights, penScribbleTargets,
   emptyHistory, recordEdit, stepHistory,
 } from '../utils/pdfHighlights';
 import { loadHighlights, saveHighlights } from '../utils/pdfHighlightStore';
 import { isScribbleEraseOn } from '../utils/scribbleErase';
 import { classifyMultiTap } from '../utils/padView';
+import { drawPenSegments, drawTip } from '../utils/inkRender';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -201,10 +203,11 @@ const samplesOf = (event) => {
   return list && list.length ? list : [event];
 };
 
-// Same approach as the notepad (WorkingOutCanvas): the stroke being drawn lives in a ref and is painted once
-// per animation frame straight onto its <path> (no React render per move), and a pencil press always starts
-// a new stroke — a previous stroke whose pointerup has not arrived yet is committed first instead of
-// swallowing the new one.
+// The pen writes exactly like the notepad (WorkingOutCanvas, utils/inkRender): finished pen strokes on an ink
+// canvas, the stroke in progress on a live canvas repainted once per animation frame (smoothed curves,
+// pencil-pressure width, predicted points so the ink keeps up with the nib), every coalesced sample kept, and
+// a pencil press always starts a new stroke — one whose pointerup is late is committed, never swallowing the
+// next. Highlights stay SVG paths under the ink.
 const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, multiTouchAtRef, onAddStroke, onEraseAt, onEraseBegin, onScribbleErase, onPan }) => {
   const holderRef = useRef(null);
   const canvasRef = useRef(null);
@@ -213,18 +216,67 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
   const [near, setNear] = useState(pageNumber === 1);
   const [ratio, setRatio] = useState(initialRatio);
   const gestureRef = useRef(null);             // { id, kind: 'draw' | 'erase' | 'pan', ... }
+  const inkRef = useRef(null);                 // finished pen strokes
+  const liveRef = useRef(null);                // pen stroke in progress
+  const inkDrawnRef = useRef({ size: '', ids: new Set() });
+  const penStrokes = useMemo(() => (strokes || []).filter(isPenStroke), [strokes]);
+  const inkDpr = Math.min(window.devicePixelRatio || 1, 2, MAX_RENDER_WIDTH / Math.max(1, width));
+  const inkW = Math.max(1, Math.round(width * inkDpr));
+  const inkH = Math.max(1, Math.round(width * ratio * inkDpr));
+  const drawPenStroke = (ctx, stroke) => drawPenSegments(ctx, penPointsInPx(stroke, width), 1, stroke.color, inkDpr, true);
 
+  // Ink canvas follows the pen strokes: a new stroke is drawn on top, anything else (erase, undo, resize) redraws.
+  useLayoutEffect(() => {
+    const ink = inkRef.current;
+    const live = liveRef.current;
+    if (!ink) return;
+    const drawn = inkDrawnRef.current;
+    const size = `${inkW}x${inkH}`;
+    const ids = new Set(penStrokes.map((st) => st.id));
+    const removed = [...drawn.ids].some((id) => !ids.has(id));
+    const ctx = ink.getContext('2d');
+    if (drawn.size !== size || removed) {
+      if (ink.width !== inkW || ink.height !== inkH) { ink.width = inkW; ink.height = inkH; } else ctx.clearRect(0, 0, inkW, inkH);
+      if (live && (live.width !== inkW || live.height !== inkH)) { live.width = inkW; live.height = inkH; }
+      drawn.ids = new Set();
+      drawn.size = size;
+    }
+    penStrokes.forEach((stroke) => {
+      if (drawn.ids.has(stroke.id)) return;
+      drawPenStroke(ctx, stroke);
+      drawn.ids.add(stroke.id);
+    });
+  });
+
+  const paintLive = () => {
+    const live = liveRef.current;
+    const g = gestureRef.current;
+    if (!live) return;
+    const ctx = live.getContext('2d');
+    ctx.clearRect(0, 0, live.width, live.height);
+    if (!g || g.kind !== 'draw' || !g.pen) return;
+    const pts = penPointsInPx({ pts: g.points }, width);
+    const predicted = (g.predicted || []).map(([x, y]) => [x * width, y * width]);
+    drawPenSegments(ctx, pts, 1, g.color, inkDpr, false);
+    drawTip(ctx, { points: pts, color: g.color }, inkDpr, predicted);
+  };
+
+  // Paint the stroke in progress now (null = clear it): the pen on the live canvas, the highlighter on its path.
   const paintDraft = (points) => {
     cancelAnimationFrame(draftFrameRef.current);
     draftFrameRef.current = 0;
-    draftRef.current?.setAttribute('d', points ? pointsToPath(points) : '');
+    paintLive();
+    const g = gestureRef.current;
+    draftRef.current?.setAttribute('d', points && !g?.pen ? pointsToPath(points) : '');
   };
   const scheduleDraft = () => {
     if (draftFrameRef.current) return;
     draftFrameRef.current = requestAnimationFrame(() => {
       draftFrameRef.current = 0;
       const g = gestureRef.current;
-      if (g?.kind === 'draw') draftRef.current?.setAttribute('d', pointsToPath(g.points));
+      if (g?.kind !== 'draw') return;
+      if (g.pen) paintLive();
+      else draftRef.current?.setAttribute('d', pointsToPath(g.points));
     });
   };
   useEffect(() => () => cancelAnimationFrame(draftFrameRef.current), []);
@@ -236,11 +288,27 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     if (!g.points?.length || multiTouch) return;
     const scratched = g.pen && isScribbleEraseOn() ? penScribbleTargets(g.points, strokes) : [];
     if (scratched.length > 0) { onScribbleErase(pageNumber, scratched); return; }
-    onAddStroke(pageNumber, {
+    const stroke = {
       id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`,
       ...(g.pen ? { kind: 'pen', color: g.color, w: PEN_WIDTH } : { color: g.color, w: HIGHLIGHT_WIDTH }),
       pts: g.points,
-    });
+    };
+    if (g.pen && inkRef.current) {
+      // Onto the ink canvas right away, so there is no blank frame between the live stroke and the saved one.
+      drawPenStroke(inkRef.current.getContext('2d'), stroke);
+      inkDrawnRef.current.ids.add(stroke.id);
+    }
+    onAddStroke(pageNumber, stroke);
+  };
+
+  // Pen samples are [x, y, width] (pencil pressure → width); highlighter samples are [x, y].
+  const addSample = (g, sample) => {
+    const point = toPagePoint(sample.clientX, sample.clientY, g.rect);
+    if (!point) return;
+    if (!g.pen) { g.points = appendPoint(g.points, point); return; }
+    const last = g.points[g.points.length - 1];
+    if (last && Math.hypot(point[0] - last[0], point[1] - last[1]) < PEN_MIN_GAP) return;
+    g.points.push([point[0], point[1], penWidthFor(last?.[2], g.touch ? 0 : sample.pressure)]);
   };
 
   const handleDown = (event) => {
@@ -270,8 +338,11 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
       onEraseAt(pageNumber, point[0], point[1]);
     } else {
       const pen = hl.mode === 'pen';
-      gestureRef.current = { id: event.pointerId, kind: 'draw', rect, points: [point], at: performance.now(), touch: isTouch, pen, color: pen ? hl.penColor : hl.color };
-      paintDraft(gestureRef.current.points);
+      const g = { id: event.pointerId, kind: 'draw', rect, points: [], at: performance.now(), touch: isTouch, pen, color: pen ? hl.penColor : hl.color };
+      if (pen) g.points.push([point[0], point[1], penWidthFor(undefined, isTouch ? 0 : event.pressure)]);
+      else g.points.push(point);
+      gestureRef.current = g;
+      paintDraft(g.points);
     }
   };
 
@@ -287,13 +358,18 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
       g.y = event.clientY;
       return;
     }
-    for (const sample of samplesOf(event)) {
-      const point = toPagePoint(sample.clientX, sample.clientY, g.rect);
-      if (!point) continue;
-      if (g.kind === 'erase') onEraseAt(pageNumber, point[0], point[1]);
-      else g.points = appendPoint(g.points, point);
+    if (g.kind === 'erase') {
+      for (const sample of samplesOf(event)) {
+        const point = toPagePoint(sample.clientX, sample.clientY, g.rect);
+        if (point) onEraseAt(pageNumber, point[0], point[1]);
+      }
+      return;
     }
-    if (g.kind === 'draw') scheduleDraft();
+    for (const sample of samplesOf(event)) addSample(g, sample);
+    if (g.pen && typeof event.getPredictedEvents === 'function') {
+      g.predicted = event.getPredictedEvents().map((ev) => toPagePoint(ev.clientX, ev.clientY, g.rect)).filter(Boolean);
+    }
+    scheduleDraft();
   };
 
   const handleUp = (event) => {
@@ -303,7 +379,7 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
     if (g.kind === 'draw') {
       // A pencil's pointercancel (iPadOS sends them now and then) keeps the ink; a finger's is dropped.
       if (event.type !== 'pointercancel' || !g.touch) {
-        g.points = appendPoint(g.points, toPagePoint(event.clientX, event.clientY, g.rect));
+        addSample(g, event);
         commitDraw(g);
       }
     }
@@ -363,11 +439,15 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
       }}
     >
       <canvas ref={canvasRef} style={{ width: '100%', height: '100%', display: 'block', borderRadius: 4 }} />
+      {/* Pen ink above the highlights; never takes pointer input (the SVG below does). */}
+      <canvas ref={inkRef} aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 2, display: penStrokes.length > 0 ? 'block' : 'none' }} />
+      <canvas ref={liveRef} aria-hidden="true" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, display: hl.on && hl.mode === 'pen' ? 'block' : 'none' }} />
       {(hl.on || strokes?.length > 0) && (
         <svg
           viewBox={`0 0 1 ${ratio}`}
           preserveAspectRatio="none"
           aria-hidden="true"
+          data-pdf-marks=""
           onPointerDown={handleDown}
           onPointerMove={handleMove}
           onPointerUp={handleUp}
@@ -377,8 +457,6 @@ const PdfPage = memo(({ pdf, pageNumber, width, renderWidth, initialRatio, scrol
           {/* Highlights first, pen writing above them, so a later highlight never dims the writing. */}
           {(strokes || []).filter((stroke) => !isPenStroke(stroke)).map((stroke) => <StrokePath key={stroke.id} stroke={stroke} />)}
           {hl.mode !== 'pen' && <path ref={draftRef} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
-          {(strokes || []).filter(isPenStroke).map((stroke) => <StrokePath key={stroke.id} stroke={stroke} />)}
-          {hl.mode === 'pen' && <path ref={draftRef} fill="none" stroke={hl.penColor} strokeWidth={PEN_WIDTH} strokeLinecap="round" strokeLinejoin="round" />}
         </svg>
       )}
       <span style={{ position: 'absolute', right: 8, bottom: 6, fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8' }}>
@@ -697,6 +775,10 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
 
     const begin = (event) => {
       tapStart(event);
+      // As on the notepad: a pencil touch on the marking layer must not start any of Safari's own touch
+      // handling (selection, loupe, scroll hand-off), which delays or cancels the pointer events we draw from.
+      if (hlOnRef.current && event.cancelable && event.target?.closest?.('[data-pdf-marks]')
+        && Array.from(event.changedTouches).some((t) => t.touchType === 'stylus')) event.preventDefault();
       if (event.touches.length !== 2) return;
       const points = pointsOf(event.touches);
       const center = midpoint(points);

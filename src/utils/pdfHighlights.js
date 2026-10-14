@@ -16,8 +16,23 @@ export const PEN_COLORS = [
   { id: 'blue', value: '#2563eb', label: 'Blue' },
   { id: 'red', value: '#dc2626', label: 'Red' },
 ];
-export const PEN_WIDTH = 0.0035;          // ≈ 2.5–3.5px on a phone/iPad-width page
+export const PEN_WIDTH = 0.0028;          // base nib, as a fraction of page width (≈ 1.7–2.8px on an iPad-width page)
+export const PEN_MIN_GAP = 0.0015;        // pen keeps finer samples than the highlighter
 export const isPenStroke = (stroke) => stroke?.kind === 'pen';
+
+// Pen point = [x, y, width]: the same pressure → width model and smoothing as the notepad pen.
+// `prev` is the previous point's width (undefined at the start of a stroke); no pressure (finger) = 0.5.
+export const penWidthFor = (prev, pressure) => {
+  const p = pressure > 0 ? Math.min(1, pressure) : 0.5;
+  const target = PEN_WIDTH * 1.25 * (0.55 + p * 1.1);
+  const w = prev === undefined ? target : prev * 0.55 + target * 0.45;
+  return Math.round(w * 100000) / 100000;
+};
+
+// Page-width units → CSS pixels of a page `pageWidthPx` wide, as [x, y, width] for utils/inkRender.
+export const penPointsInPx = (stroke, pageWidthPx) => (stroke?.pts || []).map((p) => [
+  p[0] * pageWidthPx, p[1] * pageWidthPx, (Number.isFinite(p[2]) ? p[2] : (stroke.w || PEN_WIDTH)) * pageWidthPx,
+]);
 export const MIN_POINT_GAP = 0.0025;      // drop points closer than this while drawing
 export const ERASE_RADIUS = 0.022;
 export const MAX_STROKES_PER_PAGE = 1500;  // handwriting is many short strokes
