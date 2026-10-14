@@ -1,6 +1,8 @@
-// Freehand highlights drawn over PDF pages (see PdfViewer). A stroke is
-// { id, color, w, pts: [[x, y], ...] } with BOTH axes in page-width units
+// Freehand marks drawn over PDF pages (see PdfViewer). A stroke is
+// { id, color, w, pts: [[x, y], ...], kind? } with BOTH axes in page-width units
 // (x in 0..1, y in 0..height/width), so it stays glued to the page at any zoom.
+// kind 'pen' = opaque writing drawn above the highlights; no kind = highlighter (older records).
+import { scribbleTargets } from './scribbleErase.js';
 
 export const HIGHLIGHT_COLORS = [
   { id: 'yellow', value: '#facc15', label: 'Yellow' },
@@ -9,9 +11,16 @@ export const HIGHLIGHT_COLORS = [
 ];
 export const HIGHLIGHT_WIDTH = 0.02;      // marker thickness, as a fraction of page width
 export const HIGHLIGHT_OPACITY = 0.42;
+export const PEN_COLORS = [
+  { id: 'black', value: '#1e293b', label: 'Black' },
+  { id: 'blue', value: '#2563eb', label: 'Blue' },
+  { id: 'red', value: '#dc2626', label: 'Red' },
+];
+export const PEN_WIDTH = 0.0035;          // ≈ 2.5–3.5px on a phone/iPad-width page
+export const isPenStroke = (stroke) => stroke?.kind === 'pen';
 export const MIN_POINT_GAP = 0.0025;      // drop points closer than this while drawing
 export const ERASE_RADIUS = 0.022;
-export const MAX_STROKES_PER_PAGE = 400;
+export const MAX_STROKES_PER_PAGE = 1500;  // handwriting is many short strokes
 
 const round = (n) => Math.round(n * 10000) / 10000;
 
@@ -84,4 +93,37 @@ export const removeStroke = (pages = {}, page, id) => {
   if (list.length > 0) next[page] = list;
   else delete next[page];
   return next;
+};
+
+// Scribble-to-erase for the pen: the notepad's geometry (utils/scribbleErase, in A4 page units 794 wide)
+// on PDF page-width units. Only pen writing can be scratched out — highlighting is often a zigzag on purpose.
+const SCRIBBLE_UNITS = 794;
+export const penScribbleTargets = (scribblePts, strokes = []) => {
+  const scale = (pts) => pts.map(([x, y]) => [x * SCRIBBLE_UNITS, y * SCRIBBLE_UNITS]);
+  const pens = strokes.filter(isPenStroke);
+  const hits = scribbleTargets(scale(scribblePts || []), pens.map((s) => ({ points: scale(s.pts) })));
+  return hits.map((i) => pens[i].id);
+};
+
+export const removeStrokes = (pages = {}, page, ids) => {
+  const drop = new Set(ids);
+  const list = (pages[page] || []).filter((s) => !drop.has(s.id));
+  if (list.length === (pages[page] || []).length) return pages;
+  const next = { ...pages };
+  if (list.length > 0) next[page] = list;
+  else delete next[page];
+  return next;
+};
+
+// Undo / redo over whole-document snapshots (pages objects share untouched page arrays, so this is cheap).
+export const HISTORY_LIMIT = 50;
+export const emptyHistory = () => ({ undo: [], redo: [] });
+export const recordEdit = (history, before) => ({ undo: [...history.undo.slice(-(HISTORY_LIMIT - 1)), before], redo: [] });
+export const stepHistory = (history, current, direction) => {
+  const from = direction === 'undo' ? history.undo : history.redo;
+  if (from.length === 0) return null;
+  const target = from[from.length - 1];
+  return direction === 'undo'
+    ? { pages: target, history: { undo: history.undo.slice(0, -1), redo: [...history.redo, current] } }
+    : { pages: target, history: { undo: [...history.undo, current], redo: history.redo.slice(0, -1) } };
 };

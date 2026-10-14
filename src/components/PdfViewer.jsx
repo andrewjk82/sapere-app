@@ -13,13 +13,16 @@
  *   style    – container style overrides
  */
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, Eraser, Undo2, Trash2, Hand } from 'lucide-react';
+import { Loader2, AlertTriangle, ZoomIn, ZoomOut, Highlighter, PenLine, Eraser, Undo2, Redo2, Trash2, Hand } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 import {
-  HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS,
-  toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, removeStroke, countHighlights,
+  HIGHLIGHT_COLORS, HIGHLIGHT_WIDTH, HIGHLIGHT_OPACITY, ERASE_RADIUS, PEN_COLORS, PEN_WIDTH, isPenStroke,
+  toPagePoint, appendPoint, pointsToPath, eraseAt, addStroke, removeStrokes, countHighlights, penScribbleTargets,
+  emptyHistory, recordEdit, stepHistory,
 } from '../utils/pdfHighlights';
 import { loadHighlights, saveHighlights } from '../utils/pdfHighlightStore';
+import { isScribbleEraseOn } from '../utils/scribbleErase';
+import { classifyMultiTap } from '../utils/padView';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
@@ -88,34 +91,45 @@ const ZoomGroup = ({ zoom, onZoomChange }) => (
   </div>
 );
 
-// Highlighter tools: on/off, colour, eraser, undo, finger-draws toggle, clear all.
-const HighlightGroup = ({ hl, setHl, canUndo, onUndo, hasAny, onClearAll }) => {
+// Marking tools: highlighter / pen (each on/off), colour, eraser, undo, redo, finger-draws toggle, clear all.
+// `hl.mode` is which tool is active ('highlight' | 'pen'); the eraser, undo, redo and clear act on both.
+const HighlightGroup = ({ hl, setHl, canUndo, canRedo, onUndo, onRedo, hasAny, onClearAll }) => {
   const [confirmClear, setConfirmClear] = useState(false);
   useEffect(() => {
     if (!confirmClear) return undefined;
     const timer = setTimeout(() => setConfirmClear(false), 3000);
     return () => clearTimeout(timer);
   }, [confirmClear]);
+  const pick = (mode) => setHl((v) => (v.on && v.mode === mode ? { ...v, on: false } : { ...v, on: true, mode, tool: 'draw' }));
+  const isPen = hl.mode === 'pen';
+  const colors = isPen ? PEN_COLORS : HIGHLIGHT_COLORS;
+  const current = isPen ? hl.penColor : hl.color;
   return (
     <div style={{ ...BAR, flexWrap: 'wrap' }}>
-      <button type="button" aria-label="Highlighter" aria-pressed={hl.on} title={hl.on ? 'Highlighter on — tap to stop' : 'Highlighter'} onClick={() => setHl((v) => ({ ...v, on: !v.on, tool: 'draw' }))} style={TOOL_BTN(hl.on)}>
+      <button type="button" aria-label="Highlighter" aria-pressed={hl.on && !isPen} title={hl.on && !isPen ? 'Highlighter on — tap to stop' : 'Highlighter'} onClick={() => pick('highlight')} style={TOOL_BTN(hl.on && !isPen)}>
         <Highlighter size={17} />
+      </button>
+      <button type="button" aria-label="Pen" aria-pressed={hl.on && isPen} title={hl.on && isPen ? 'Pen on — tap to stop' : 'Pen — write on the worksheet'} onClick={() => pick('pen')} style={TOOL_BTN(hl.on && isPen)}>
+        <PenLine size={17} />
       </button>
       {hl.on && (
         <>
-          {HIGHLIGHT_COLORS.map((c) => (
-            <button key={c.id} type="button" aria-label={`${c.label} highlighter`} aria-pressed={hl.tool === 'draw' && hl.color === c.value} onClick={() => setHl((v) => ({ ...v, color: c.value, tool: 'draw' }))} style={{ width: 22, height: 22, borderRadius: '50%', border: hl.tool === 'draw' && hl.color === c.value ? '2px solid #4f46e5' : '1px solid #cbd5e1', background: c.value, cursor: 'pointer', padding: 0 }} />
+          {colors.map((c) => (
+            <button key={c.id} type="button" aria-label={`${c.label} ${isPen ? 'pen' : 'highlighter'}`} aria-pressed={hl.tool === 'draw' && current === c.value} onClick={() => setHl((v) => ({ ...v, [isPen ? 'penColor' : 'color']: c.value, tool: 'draw' }))} style={{ width: 22, height: 22, borderRadius: '50%', border: hl.tool === 'draw' && current === c.value ? '2px solid #4f46e5' : '1px solid #cbd5e1', background: c.value, cursor: 'pointer', padding: 0 }} />
           ))}
-          <button type="button" aria-label="Erase highlights" aria-pressed={hl.tool === 'erase'} title="Erase highlights" onClick={() => setHl((v) => ({ ...v, tool: v.tool === 'erase' ? 'draw' : 'erase' }))} style={TOOL_BTN(hl.tool === 'erase')}>
+          <button type="button" aria-label="Erase" aria-pressed={hl.tool === 'erase'} title="Erase pen and highlights" onClick={() => setHl((v) => ({ ...v, tool: v.tool === 'erase' ? 'draw' : 'erase' }))} style={TOOL_BTN(hl.tool === 'erase')}>
             <Eraser size={16} />
           </button>
-          <button type="button" aria-label="Undo highlight" title="Undo" disabled={!canUndo} onClick={onUndo} style={{ ...TOOL_BTN(false), opacity: canUndo ? 1 : 0.4, cursor: canUndo ? 'pointer' : 'default' }}>
+          <button type="button" aria-label="Undo" title="Undo (two-finger tap)" disabled={!canUndo} onClick={onUndo} style={{ ...TOOL_BTN(false), opacity: canUndo ? 1 : 0.4, cursor: canUndo ? 'pointer' : 'default' }}>
             <Undo2 size={16} />
+          </button>
+          <button type="button" aria-label="Redo" title="Redo (three-finger tap)" disabled={!canRedo} onClick={onRedo} style={{ ...TOOL_BTN(false), opacity: canRedo ? 1 : 0.4, cursor: canRedo ? 'pointer' : 'default' }}>
+            <Redo2 size={16} />
           </button>
           <button type="button" aria-label="Draw with finger" aria-pressed={hl.finger} title={hl.finger ? 'Finger draws (tap for pen only)' : 'Pen only — your finger scrolls (tap to draw with finger)'} onClick={() => setHl((v) => ({ ...v, finger: !v.finger }))} style={TOOL_BTN(hl.finger)}>
             <Hand size={16} />
           </button>
-          <button type="button" aria-label={confirmClear ? 'Tap again to clear all highlights' : 'Clear all highlights'} title={confirmClear ? 'Tap again to clear all highlights' : 'Clear all highlights'} disabled={!hasAny} onClick={() => { if (confirmClear) { setConfirmClear(false); onClearAll(); } else setConfirmClear(true); }} style={{ ...TOOL_BTN(confirmClear), opacity: hasAny ? 1 : 0.4, cursor: hasAny ? 'pointer' : 'default', color: confirmClear ? '#b91c1c' : '#334155', borderColor: confirmClear ? '#fca5a5' : '#e2e8f0', background: confirmClear ? '#fef2f2' : '#fff' }}>
+          <button type="button" aria-label={confirmClear ? 'Tap again to clear all marks' : 'Clear all marks'} title={confirmClear ? 'Tap again to clear all pen and highlights' : 'Clear all pen and highlights'} disabled={!hasAny} onClick={() => { if (confirmClear) { setConfirmClear(false); onClearAll(); } else setConfirmClear(true); }} style={{ ...TOOL_BTN(confirmClear), opacity: hasAny ? 1 : 0.4, cursor: hasAny ? 'pointer' : 'default', color: confirmClear ? '#b91c1c' : '#334155', borderColor: confirmClear ? '#fca5a5' : '#e2e8f0', background: confirmClear ? '#fef2f2' : '#fff' }}>
             <Trash2 size={16} />
           </button>
         </>
@@ -176,7 +190,7 @@ const useAutoHideToolbar = (pinned) => {
   return { visible: shown || pinned, show, tapHandlers };
 };
 
-const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, onAddStroke, onEraseAt, onPan }) => {
+const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot, strokes, hl, pinchingRef, multiTouchAtRef, onAddStroke, onEraseAt, onEraseBegin, onScribbleErase, onPan }) => {
   const holderRef = useRef(null);
   const canvasRef = useRef(null);
   const [near, setNear] = useState(pageNumber === 1);
@@ -199,9 +213,10 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
     if (!point) return;
     if (hl.tool === 'erase') {
       gestureRef.current = { id: event.pointerId, kind: 'erase' };
+      onEraseBegin();
       onEraseAt(pageNumber, point[0], point[1]);
     } else {
-      gestureRef.current = { id: event.pointerId, kind: 'draw', points: [point] };
+      gestureRef.current = { id: event.pointerId, kind: 'draw', points: [point], at: performance.now(), touch: isTouch };
       setDraft([point]);
     }
   };
@@ -227,8 +242,20 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
     const g = gestureRef.current;
     if (!g || g.id !== event.pointerId) return;
     gestureRef.current = null;
-    if (g.kind === 'draw' && g.points?.length) {
-      onAddStroke(pageNumber, { id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, color: hl.color, w: HIGHLIGHT_WIDTH, pts: g.points });
+    // A second finger landed during a finger stroke (two-finger tap / pinch): that mark is not ink.
+    // Pencil strokes are never dropped this way — a resting palm adds touches too.
+    const multiTouch = g.touch && multiTouchAtRef.current >= g.at;
+    if (g.kind === 'draw' && g.points?.length && !multiTouch) {
+      const pen = hl.mode === 'pen';
+      const scratched = pen && isScribbleEraseOn() ? penScribbleTargets(g.points, strokes) : [];
+      if (scratched.length > 0) onScribbleErase(pageNumber, scratched);
+      else {
+        onAddStroke(pageNumber, {
+          id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`,
+          ...(pen ? { kind: 'pen', color: hl.penColor, w: PEN_WIDTH } : { color: hl.color, w: HIGHLIGHT_WIDTH }),
+          pts: g.points,
+        });
+      }
     }
     setDraft(null);
   };
@@ -297,10 +324,15 @@ const PdfPage = ({ pdf, pageNumber, width, renderWidth, initialRatio, scrollRoot
           onPointerCancel={handleUp}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', borderRadius: 4, mixBlendMode: 'multiply', pointerEvents: hl.on ? 'auto' : 'none', touchAction: hl.on ? 'none' : 'auto', cursor: hl.on ? (hl.tool === 'erase' ? 'cell' : 'crosshair') : 'default' }}
         >
-          {(strokes || []).map((stroke) => (
+          {/* Highlights first, pen writing above them, so a later highlight never dims the writing. */}
+          {(strokes || []).filter((stroke) => !isPenStroke(stroke)).map((stroke) => (
             <path key={stroke.id} d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />
           ))}
-          {draft && <path d={pointsToPath(draft)} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
+          {draft && hl.mode !== 'pen' && <path d={pointsToPath(draft)} fill="none" stroke={hl.color} strokeWidth={HIGHLIGHT_WIDTH} strokeLinecap="round" strokeLinejoin="round" opacity={HIGHLIGHT_OPACITY} />}
+          {(strokes || []).filter(isPenStroke).map((stroke) => (
+            <path key={stroke.id} d={pointsToPath(stroke.pts)} fill="none" stroke={stroke.color} strokeWidth={stroke.w} strokeLinecap="round" strokeLinejoin="round" />
+          ))}
+          {draft && hl.mode === 'pen' && <path d={pointsToPath(draft)} fill="none" stroke={hl.penColor} strokeWidth={PEN_WIDTH} strokeLinecap="round" strokeLinejoin="round" />}
         </svg>
       )}
       <span style={{ position: 'absolute', right: 8, bottom: 6, fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8' }}>
@@ -341,10 +373,23 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   const pinchAnimationFrameRef = useRef(0);
 
   // Highlights: { [page]: strokes }, remembered per device under `storageKey` (the Drive file id).
-  const [hl, setHl] = useState({ on: false, tool: 'draw', color: HIGHLIGHT_COLORS[0].value, finger: false });
+  const [hl, setHl] = useState({ on: false, mode: 'highlight', tool: 'draw', color: HIGHLIGHT_COLORS[0].value, penColor: PEN_COLORS[0].value, finger: false });
+  const hlOnRef = useRef(false);
+  useEffect(() => { hlOnRef.current = hl.on; }, [hl.on]);
   const toolbarUi = useAutoHideToolbar(hl.on);
   const [highlights, setHighlights] = useState({});
-  const [undoStack, setUndoStack] = useState([]); // [{ page, id }]
+  // Undo / redo over whole snapshots (see pdfHighlights recordEdit / stepHistory). The ref is the truth;
+  // `historySize` only re-renders the buttons.
+  const historyRef = useRef(emptyHistory());
+  const [historySize, setHistorySize] = useState({ undo: 0, redo: 0 });
+  const setHistory = useCallback((next) => {
+    historyRef.current = next;
+    setHistorySize({ undo: next.undo.length, redo: next.redo.length });
+  }, []);
+  const eraseSnapshotRef = useRef(null);       // pages before the current eraser drag, until it erases something
+  const multiTouchAtRef = useRef(-1);          // when a second finger last landed (cancels a stroke in progress)
+  const [historyFlash, setHistoryFlash] = useState(null);   // { label, id }
+  const historyFlashTimerRef = useRef(0);
   const highlightsLoadedRef = useRef('');
   const saveTimerRef = useRef(0);
   const highlightsRef = useRef({});
@@ -365,7 +410,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       if (cancelled) return;
       highlightsRef.current = pages;
       setHighlights(pages);
-      setUndoStack([]);
+      setHistory(emptyHistory());
       highlightsLoadedRef.current = storageKey;
     });
     return () => {
@@ -374,7 +419,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
       // Flush a pending save for the document being left.
       if (highlightsLoadedRef.current === storageKey) saveHighlights(storageKey, highlightsRef.current);
     };
-  }, [storageKey]);
+  }, [storageKey, setHistory]);
 
   const commitHighlights = useCallback((next) => {
     highlightsRef.current = next;
@@ -384,28 +429,46 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     saveTimerRef.current = window.setTimeout(() => saveHighlights(storageKey, highlightsRef.current), 400);
   }, [storageKey]);
 
-  const addHighlight = useCallback((page, stroke) => {
-    commitHighlights(addStroke(highlightsRef.current, page, stroke));
-    setUndoStack((stack) => [...stack.slice(-49), { page, id: stroke.id }]);
-  }, [commitHighlights]);
+  // Every edit goes through here: remember the pages before it, then apply.
+  const editHighlights = useCallback((next, before = highlightsRef.current) => {
+    if (next === highlightsRef.current) return;
+    setHistory(recordEdit(historyRef.current, before));
+    commitHighlights(next);
+  }, [commitHighlights, setHistory]);
 
+  const addHighlight = useCallback((page, stroke) => {
+    editHighlights(addStroke(highlightsRef.current, page, stroke));
+  }, [editHighlights]);
+
+  const scribbleErase = useCallback((page, ids) => {
+    editHighlights(removeStrokes(highlightsRef.current, page, ids));
+  }, [editHighlights]);
+
+  // One eraser drag = one undo step: the snapshot taken at touch-down is recorded with the first real erase.
+  const beginErase = useCallback(() => { eraseSnapshotRef.current = highlightsRef.current; }, []);
   const eraseHighlights = useCallback((page, x, y) => {
     const list = highlightsRef.current[page] || [];
     const kept = eraseAt(list, x, y, ERASE_RADIUS);
     if (kept === list) return;
     const next = { ...highlightsRef.current };
     if (kept.length > 0) next[page] = kept; else delete next[page];
-    commitHighlights(next);
-  }, [commitHighlights]);
+    if (eraseSnapshotRef.current) {
+      editHighlights(next, eraseSnapshotRef.current);
+      eraseSnapshotRef.current = null;
+    } else {
+      commitHighlights(next);
+    }
+  }, [commitHighlights, editHighlights]);
 
-  const undoHighlight = useCallback(() => {
-    setUndoStack((stack) => {
-      const last = stack[stack.length - 1];
-      if (!last) return stack;
-      commitHighlights(removeStroke(highlightsRef.current, last.page, last.id));
-      return stack.slice(0, -1);
-    });
-  }, [commitHighlights]);
+  const stepMarks = useCallback((direction) => {
+    const step = stepHistory(historyRef.current, highlightsRef.current, direction);
+    if (!step) return false;
+    setHistory(step.history);
+    commitHighlights(step.pages);
+    return true;
+  }, [commitHighlights, setHistory]);
+  const undoHighlight = useCallback(() => stepMarks('undo'), [stepMarks]);
+  const redoHighlight = useCallback(() => stepMarks('redo'), [stepMarks]);
 
   const panBy = useCallback((dx, dy) => {
     const root = scrollRef.current;
@@ -414,7 +477,22 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     root.scrollTop -= dy;
   }, []);
 
-  const clearHighlights = useCallback(() => { commitHighlights({}); setUndoStack([]); }, [commitHighlights]);
+  const clearHighlights = useCallback(() => { editHighlights({}); }, [editHighlights]);
+
+  // Two-finger tap = undo, three-finger tap = redo — only while the pen or highlighter is on, so a student
+  // just reading the worksheet never loses marks by accident. A small label flashes when it acted.
+  const flashHistory = useCallback((label) => {
+    window.clearTimeout(historyFlashTimerRef.current);
+    setHistoryFlash({ label, id: Date.now() });
+    historyFlashTimerRef.current = window.setTimeout(() => setHistoryFlash(null), 650);
+  }, []);
+  useEffect(() => () => window.clearTimeout(historyFlashTimerRef.current), []);
+  const tapActionRef = useRef(null);
+  useEffect(() => {
+    tapActionRef.current = (action) => {
+      if (stepMarks(action)) flashHistory(action === 'undo' ? 'Undo' : 'Redo');
+    };
+  }, [stepMarks, flashHistory]);
 
 
   useLayoutEffect(() => {
@@ -543,7 +621,36 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     if (!scrollEl) return undefined;
     const pointsOf = (touches) => [touches[0], touches[1]].map((t) => ({ x: t.clientX, y: t.clientY }));
 
+    // Finger taps (see classifyMultiTap): one record per touch sequence, lifts caught on window.
+    let tap = null;
+    const tapMoved = (touchList) => {
+      if (!tap) return;
+      for (const t of touchList) {
+        const s0 = tap.starts.get(t.identifier);
+        if (s0) tap.maxMove = Math.max(tap.maxMove, Math.hypot(t.clientX - s0.x, t.clientY - s0.y));
+      }
+    };
+    const tapStart = (event) => {
+      if (!tap || event.touches.length === event.changedTouches.length) tap = { t0: performance.now(), starts: new Map(), fingers: 0, maxMove: 0, stylus: false };
+      for (const t of event.changedTouches) {
+        tap.starts.set(t.identifier, { x: t.clientX, y: t.clientY });
+        if (t.touchType === 'stylus') tap.stylus = true;
+      }
+      tap.fingers = Math.max(tap.fingers, event.touches.length);
+      if (event.touches.length >= 2) multiTouchAtRef.current = performance.now();
+    };
+    const tapEnd = (event) => {
+      if (!tap) return;
+      tapMoved(event.changedTouches);
+      if (event.type === 'touchcancel') tap.stylus = true;
+      if (event.touches.length > 0) return;
+      const action = classifyMultiTap({ fingers: tap.fingers, durationMs: performance.now() - tap.t0, maxMovePx: tap.maxMove, stylus: tap.stylus });
+      tap = null;
+      if (action && hlOnRef.current) tapActionRef.current?.(action);
+    };
+
     const begin = (event) => {
+      tapStart(event);
       if (event.touches.length !== 2) return;
       const points = pointsOf(event.touches);
       const center = midpoint(points);
@@ -574,6 +681,7 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     };
 
     const move = (event) => {
+      tapMoved(event.changedTouches);
       const pinch = pinchRef.current;
       if (!pinch || pinch.finishRequested || event.touches.length < 2) return;
       if (event.cancelable) event.preventDefault();
@@ -607,7 +715,11 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     scrollEl.addEventListener('touchcancel', end, opts);
     scrollEl.addEventListener('gesturestart', blockGesture, opts);
     scrollEl.addEventListener('gesturechange', blockGesture, opts);
+    window.addEventListener('touchend', tapEnd, { passive: true });
+    window.addEventListener('touchcancel', tapEnd, { passive: true });
     return () => {
+      window.removeEventListener('touchend', tapEnd, { passive: true });
+      window.removeEventListener('touchcancel', tapEnd, { passive: true });
       scrollEl.removeEventListener('touchstart', begin, opts);
       scrollEl.removeEventListener('touchmove', move, opts);
       scrollEl.removeEventListener('touchend', end, opts);
@@ -659,8 +771,13 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
           onInteract={toolbarUi.show}
           zoom={zoom}
           onZoomChange={changeZoom}
-          highlight={storageKey && doc ? { hl, setHl, canUndo: undoStack.length > 0, onUndo: undoHighlight, hasAny: countHighlights(highlights) > 0, onClearAll: clearHighlights } : null}
+          highlight={storageKey && doc ? { hl, setHl, canUndo: historySize.undo > 0, canRedo: historySize.redo > 0, onUndo: undoHighlight, onRedo: redoHighlight, hasAny: countHighlights(highlights) > 0, onClearAll: clearHighlights } : null}
         />
+        {historyFlash && (
+          <div key={historyFlash.id} aria-live="polite" style={{ position: 'absolute', left: '50%', top: '50%', zIndex: 6, pointerEvents: 'none', padding: '8px 18px', borderRadius: '999px', background: 'rgba(15,23,42,0.78)', color: '#fff', fontSize: '0.9rem', fontWeight: 800, animation: 'padHistoryFlash 650ms ease-out forwards' }}>
+            {historyFlash.label}
+          </div>
+        )}
       <div
         ref={handleScrollRef}
         {...toolbarUi.tapHandlers}
@@ -685,8 +802,11 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
                   strokes={highlights[i + 1]}
                   hl={hl}
                   pinchingRef={pinchRef}
+                  multiTouchAtRef={multiTouchAtRef}
                   onAddStroke={addHighlight}
                   onEraseAt={eraseHighlights}
+                  onEraseBegin={beginErase}
+                  onScribbleErase={scribbleErase}
                   onPan={panBy}
                 />
               ))}
