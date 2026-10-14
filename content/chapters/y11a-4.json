@@ -3179,7 +3179,7 @@
           "id": "Pt7RX97ssqRaQHZitzIU",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "31 members voted. Votes for Jack (x) > 2 * votes for Jill (y). Min votes for Jack?",
+          "stem": "In a vote between two candidates, 31 members each voted for either Jack or Jill (nobody abstained). Let \\(x\\) be the number of votes for Jack and \\(y\\) the number of votes for Jill. Jack received more than twice as many votes as Jill, so \\(x > 2y\\). What is the minimum number of votes Jack could have received?",
           "options": [
             "\\(16\\) votes",
             "\\(20\\) votes",
@@ -3191,7 +3191,7 @@
           "steps": [
             {
               "explain": "Let x be the number of votes for Jack and y be the number of votes for Jill. All 31 members voted, so \\(x + y = 31\\), and we are told Jack received more than twice as many votes as Jill, so \\(x > 2y\\). We substitute to get an inequation in x alone.",
-              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+              "work": "\\(x + y = 31 \\Rightarrow y = 31 - x,\\qquad x > 2y \\Rightarrow x > 2(31 - x)\\)"
             },
             {
               "explain": "Expand the right-hand side and collect the x terms on one side. Expanding the bracket converts it into separate terms that can then be combined or compared.",

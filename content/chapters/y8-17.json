@@ -1673,7 +1673,7 @@
           "id": "hghs2026-q5a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Factorise: \\(4x+8\\).",
+          "stem": "Factorise fully: \\(4x+8\\).",
           "options": [
             "\\(4(x+2)\\)",
             "\\(4(x+8)\\)",
@@ -1748,7 +1748,7 @@
           "id": "hghs2026-q5d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Factorise: \\(6k^3-2k^2\\).",
+          "stem": "Factorise fully: \\(6k^3-2k^2\\).",
           "options": [
             "\\(2k(3k^2-k)\\)",
             "\\(3k(2k^2-k)\\)",

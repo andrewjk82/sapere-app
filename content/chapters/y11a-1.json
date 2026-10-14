@@ -8190,10 +8190,10 @@
           "difficulty": "medium",
           "stem": "Factor the expression completely: \\( 25 - x^2 \\)",
           "options": [
-            "\\((5 + x)(5 - x)\\)",
+            "\\((5 + x)(5 + x)\\)",
             "\\((5 - x)(5 + x)\\)",
             "\\((5 - x)(5 - x)\\)",
-            "\\((5 + x)(5 - x) + wn4\\)"
+            "\\((10 - x)(5 + x)\\)"
           ],
           "answer": 1,
           "solution": "(5 - x)(5 + x)",
@@ -8212,7 +8212,7 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( 16x^2 - 25 \\)",
           "options": [
-            "\\((4x + 5)(4x - 5)\\)",
+            "\\((4x - 25)(4x + 25)\\)",
             "\\((4x - 5)(4x + 5)\\)",
             "\\((4x - 5)(4x - 5)\\)",
             "\\((4x + 5)(4x + 5)\\)"
@@ -8237,7 +8237,7 @@
             "\\((a - 3)(a + 3)\\)",
             "\\((a + 3)(a + 3)\\)",
             "\\((a - 3)(a - 3)\\)",
-            "\\((a + 3)(a - 3)\\)"
+            "\\((a - 9)(a + 9)\\)"
           ],
           "answer": 0,
           "solution": "(a - 3)(a + 3)",
@@ -8352,8 +8352,8 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( 81 - y^2 \\)",
           "options": [
-            "\\((9 + y)(9 - y)\\)",
-            "\\((9 + y)(9 - y) + 4fm\\)",
+            "\\((9 + y)(9 + y)\\)",
+            "\\((18 - y)(9 + y)\\)",
             "\\((9 - y)(9 - y)\\)",
             "\\((9 - y)(9 + y)\\)"
           ],
@@ -8398,7 +8398,7 @@
           "options": [
             "\\((p - 8)(p + 8)\\)",
             "\\((p + 8)(p + 8)\\)",
-            "\\((p + 8)(p - 8)\\)",
+            "\\((p - 64)(p + 64)\\)",
             "\\((p - 8)(p - 8)\\)"
           ],
           "answer": 0,
@@ -8441,9 +8441,9 @@
           "stem": "Factor by grouping in pairs: \\( 3ax - 2bx - 3ay + 2by \\)",
           "options": [
             "\\((3a + 2b)(x - y)\\)",
-            "\\((3a + 2b)(x - y) + 161\\)",
+            "\\((3a - 2b)(x + y)\\)",
             "\\((3a - 2b)(x - y)\\)",
-            "\\((3a - 2b)(x - y) + 161\\)"
+            "\\((3a + 2b)(x + y)\\)"
           ],
           "answer": 2,
           "solution": "(3a - 2b)(x - y)",
@@ -8589,8 +8589,8 @@
           "stem": "Factor using difference of squares: \\( 1 - 36c^2 \\)",
           "options": [
             "\\((1 - 6c)(1 + 6c)\\)",
-            "\\((1 + 6c)(1 - 6c)\\)",
-            "\\((1 + 6c)(1 - 6c) + pl8\\)",
+            "\\((1 + 6c)(1 + 6c)\\)",
+            "\\((1 - 36c)(1 + 36c)\\)",
             "\\((1 - 6c)(1 - 6c)\\)"
           ],
           "answer": 0,
@@ -8771,9 +8771,9 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( 36 - z^2 \\)",
           "options": [
-            "\\((6 + z)(6 - z) + 7rk\\)",
+            "\\((12 - z)(6 + z)\\)",
             "\\((6 - z)(6 - z)\\)",
-            "\\((6 + z)(6 - z)\\)",
+            "\\((6 + z)(6 + z)\\)",
             "\\((6 - z)(6 + z)\\)"
           ],
           "answer": 3,
@@ -9106,10 +9106,10 @@
           "difficulty": "easy",
           "stem": "Factor by grouping in pairs: \\( px - py + qx - qy \\)",
           "options": [
-            "\\((p - q)(x - y) + 5ob\\)",
+            "\\((p + q)(x + y)\\)",
             "\\((p + q)(x - y)\\)",
             "\\((p - q)(x - y)\\)",
-            "\\((p - q)(x - y) - 5ob\\)"
+            "\\((p - q)(x + y)\\)"
           ],
           "answer": 1,
           "solution": "(p + q)(x - y)",
@@ -9159,8 +9159,8 @@
           "stem": "Factor using difference of squares: \\( 100 - x^2 \\)",
           "options": [
             "\\((10 - x)(10 - x)\\)",
-            "\\((10 + x)(10 - x)\\)",
-            "\\((10 + x)(10 - x) + 7kr\\)",
+            "\\((10 + x)(10 + x)\\)",
+            "\\((20 - x)(10 + x)\\)",
             "\\((10 - x)(10 + x)\\)"
           ],
           "answer": 3,
@@ -9204,7 +9204,7 @@
           "options": [
             "\\((x - 2)(3x - y)\\)",
             "\\((x + 2)(3x - y)\\)",
-            "\\((x + 2)(3x - y) + ucq\\)",
+            "\\((x + 2)(3x + y)\\)",
             "\\((x - 2)(3x + y)\\)"
           ],
           "answer": 3,
@@ -9268,10 +9268,10 @@
           "difficulty": "easy",
           "stem": "Factor by taking out the common factors: \\( px - py \\)",
           "options": [
-            "\\(p(x - y) + ow6\\)",
+            "\\(p^2(x - y)\\)",
             "\\(p(x - y)\\)",
             "\\(p(x + y)\\)",
-            "\\(p(x + y) + ow6\\)"
+            "\\(x(p - y)\\)"
           ],
           "answer": 1,
           "solution": "p(x - y)",
@@ -9358,8 +9358,8 @@
           "options": [
             "\\((b^2 - 3)(b - 4)\\)",
             "\\((b^2 + 3)(b - 4)\\)",
-            "\\((b^2 - 3)(b - 4) + mur\\)",
-            "\\((b^2 + 3)(b - 4) + mur\\)"
+            "\\((b^2 - 3)(b + 4)\\)",
+            "\\((b^2 + 3)(b + 4)\\)"
           ],
           "answer": 0,
           "solution": "(b^2 - 3)(b - 4)",
@@ -9382,9 +9382,9 @@
           "difficulty": "hard",
           "stem": "Factor completely: \\( y^3 - y \\)",
           "options": [
-            "\\(y(y - 1)(y + 1) + uc5\\)",
+            "\\(y(y - 1)(y - 1)\\)",
             "\\(y(y + 1)(y + 1)\\)",
-            "\\(y(y + 1)(y + 1) + uc5\\)",
+            "\\((y - 1)(y + 1)\\)",
             "\\(y(y - 1)(y + 1)\\)"
           ],
           "answer": 3,
@@ -9481,9 +9481,9 @@
           "difficulty": "easy",
           "stem": "Factor by taking out the common factors: \\( m^2 + 3mn \\)",
           "options": [
-            "\\(m(m - 3n) + gfx\\)",
+            "\\(m(m + 6n)\\)",
             "\\(m(m + 3n)\\)",
-            "\\(m(m - 3n) - gfx\\)",
+            "\\(m^2(m + 3n)\\)",
             "\\(m(m - 3n)\\)"
           ],
           "answer": 1,
@@ -9553,7 +9553,7 @@
           "options": [
             "\\((7p - 8q)(7p + 8q)\\)",
             "\\((7p - 8q)(7p - 8q)\\)",
-            "\\((7p + 8q)(7p - 8q) + 8qc\\)",
+            "\\((8p - 7q)(7p + 8q)\\)",
             "\\((7p + 8q)(7p + 8q)\\)"
           ],
           "answer": 0,
@@ -9595,8 +9595,8 @@
           "difficulty": "easy",
           "stem": "Factor by grouping in pairs: \\( ax - bx - ay + by \\)",
           "options": [
-            "\\((a + b)(x - y) + 3wz\\)",
-            "\\((a - b)(x - y) + 3wz\\)",
+            "\\((a - b)(x + y)\\)",
+            "\\((a + b)(x + y)\\)",
             "\\((a + b)(x - y)\\)",
             "\\((a - b)(x - y)\\)"
           ],
@@ -9814,8 +9814,8 @@
           "options": [
             "\\((a + b)(a - 4)\\)",
             "\\((a - b)(a - 4)\\)",
-            "\\((a - b)(a - 4) + nj7\\)",
-            "\\((a + b)(a - 4) + nj7\\)"
+            "\\((a - b)(a + 4)\\)",
+            "\\((a + b)(a + 4)\\)"
           ],
           "answer": 1,
           "solution": "(a - b)(a - 4)",
@@ -9886,9 +9886,9 @@
           "difficulty": "hard",
           "stem": "Factor completely: \\( 16x - x^3 \\)",
           "options": [
-            "\\(x(4 + x)(4 + x) + vrw\\)",
+            "\\(x(4 - x)(4 - x)\\)",
             "\\(x(4 + x)(4 + x)\\)",
-            "\\(x(4 - x)(4 + x) + vrw\\)",
+            "\\((4 - x)(4 + x)\\)",
             "\\(x(4 - x)(4 + x)\\)"
           ],
           "answer": 3,
@@ -9999,10 +9999,10 @@
           "difficulty": "easy",
           "stem": "Factor by grouping in pairs: \\( pr + qr - ps - qs \\)",
           "options": [
-            "\\((p - q)(r - s) - k1p\\)",
+            "\\((p + q)(r + s)\\)",
             "\\((p + q)(r - s)\\)",
             "\\((p - q)(r - s)\\)",
-            "\\((p - q)(r - s) + k1p\\)"
+            "\\((p - q)(r + s)\\)"
           ],
           "answer": 1,
           "solution": "(p + q)(r - s)",
@@ -10168,8 +10168,8 @@
           "stem": "Factor by taking out the common factors: \\( y^2 + 5y \\)",
           "options": [
             "\\(y(y - 5)\\)",
-            "\\(y(y - 5) + cp4\\)",
-            "\\(y(y - 5) - cp4\\)",
+            "\\(y(y + 10)\\)",
+            "\\(y^2(y + 5)\\)",
             "\\(y(y + 5)\\)"
           ],
           "answer": 3,
@@ -10303,8 +10303,8 @@
           "difficulty": "easy",
           "stem": "Factor by grouping in pairs: \\( y^3 - y^2 + y - 1 \\)",
           "options": [
-            "\\((y^2 - 1)(y - 1) - wcu\\)",
-            "\\((y^2 - 1)(y - 1) + wcu\\)",
+            "\\((y^2 + 1)(y + 1)\\)",
+            "\\((y^2 - 1)(y + 1)\\)",
             "\\((y^2 - 1)(y - 1)\\)",
             "\\((y^2 + 1)(y - 1)\\)"
           ],
@@ -10373,7 +10373,7 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( 9b^2 - 16 \\)",
           "options": [
-            "\\((3b + 4)(3b - 4)\\)",
+            "\\((3b - 16)(3b + 16)\\)",
             "\\((3b + 4)(3b + 4)\\)",
             "\\((3b - 4)(3b + 4)\\)",
             "\\((3b - 4)(3b - 4)\\)"
@@ -10419,7 +10419,7 @@
           "options": [
             "\\((x - 1)(y + z)\\)",
             "\\((x + 1)(y - z)\\)",
-            "\\((x + 1)(y - z) + 4i3\\)",
+            "\\((x + 1)(y + z)\\)",
             "\\((x - 1)(y - z)\\)"
           ],
           "answer": 0,
@@ -10466,9 +10466,9 @@
           "stem": "Factor the expression completely: \\( 9y^2 - y^3 \\)",
           "options": [
             "\\(y^2(9 + y)\\)",
-            "\\(y^2(9 - y) + o4r\\)",
+            "\\(y^2(18 - y)\\)",
             "\\(y^2(9 - y)\\)",
-            "\\(y^2(9 + y) + o4r\\)"
+            "\\(y(9 - y)\\)"
           ],
           "answer": 2,
           "solution": "y^2(9 - y)",
@@ -10487,7 +10487,7 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( 4w^2 - 1 \\)",
           "options": [
-            "\\((2w + 1)(2w - 1)\\)",
+            "\\((4w - 1)(4w + 1)\\)",
             "\\((2w + 1)(2w + 1)\\)",
             "\\((2w - 1)(2w + 1)\\)",
             "\\((2w - 1)(2w - 1)\\)"
@@ -10626,7 +10626,7 @@
             "\\((y - 4)(y + 4)\\)",
             "\\((y - 4)(y - 4)\\)",
             "\\((y + 4)(y + 4)\\)",
-            "\\((y + 4)(y - 4)\\)"
+            "\\((y - 16)(y + 16)\\)"
           ],
           "answer": 0,
           "solution": "(y - 4)(y + 4)",
@@ -10692,7 +10692,7 @@
             "\\((y^2 - 2)(y + 5)\\)",
             "\\((y^2 - 2)(y - 5)\\)",
             "\\((y^2 + 2)(y - 5)\\)",
-            "\\((y^2 + 2)(y - 5) + 3et\\)"
+            "\\((y^2 + 2)(y + 5)\\)"
           ],
           "answer": 0,
           "solution": "(y^2 - 2)(y + 5)",
@@ -10781,9 +10781,9 @@
           "difficulty": "medium",
           "stem": "Factor the expression completely: \\( y^2 - 36y \\)",
           "options": [
-            "\\(y(y + 36) + vi4\\)",
+            "\\(y(y - 72)\\)",
             "\\(y(y + 36)\\)",
-            "\\(y(y - 36) + vi4\\)",
+            "\\(y^2(y - 36)\\)",
             "\\(y(y - 36)\\)"
           ],
           "answer": 3,
@@ -10803,8 +10803,8 @@
           "difficulty": "hard",
           "stem": "Factor completely: \\( u^3 - 6u^2 + 5u \\)",
           "options": [
-            "\\(u(u - 1)(u - 5) + ao5\\)",
-            "\\(u(u + 1)(u - 5) + ao5\\)",
+            "\\(u(u - 1)(u + 5)\\)",
+            "\\(u(u + 1)(u + 5)\\)",
             "\\(u(u - 1)(u - 5)\\)",
             "\\(u(u + 1)(u - 5)\\)"
           ],
@@ -10851,8 +10851,8 @@
           "stem": "Factor using difference of squares: \\( 49x^2y^2 - 81 \\)",
           "options": [
             "\\((7xy - 9)(7xy + 9)\\)",
-            "\\((7xy + 9)(7xy - 9)\\)",
-            "\\((7xy + 9)(7xy - 9) + hg9\\)",
+            "\\((7xy + 9)(7xy + 9)\\)",
+            "\\((9xy - 7)(7xy + 9)\\)",
             "\\((7xy - 9)(7xy - 9)\\)"
           ],
           "answer": 0,
@@ -10900,8 +10900,8 @@
           "options": [
             "\\(xy(x + y)\\)",
             "\\(xy(x - y)\\)",
-            "\\(xy(x - y) + vwe\\)",
-            "\\(xy(x - y) - vwe\\)"
+            "\\(x^2y(x + y)\\)",
+            "\\(y(x + y)\\)"
           ],
           "answer": 0,
           "solution": "xy(x + y)",
@@ -11090,12 +11090,12 @@
             "\\((2x - 1)(3x - 2)\\)",
             "\\((2x + 1)(3x - 2)\\)"
           ],
-          "answer": 0,
-          "solution": "(2x - 1)(3x + 2)",
+          "answer": 3,
+          "solution": "(2x + 1)(3x - 2)",
           "steps": [
             {
               "explain": "Find two numbers that multiply to -12 and add to -1. These are -4 and 3.",
-              "work": "6x^2 - 4x + 3x - 2 = 2x(3x - 2) + 1(3x - 2) = (2x - 1)(3x + 2)"
+              "work": "6x^2 - 4x + 3x - 2 = 2x(3x - 2) + 1(3x - 2) = (2x + 1)(3x - 2)"
             }
           ],
           "timeLimit": 90,
@@ -11129,7 +11129,7 @@
           "difficulty": "medium",
           "stem": "Factor the expression completely: \\( x^2 - 36 \\)",
           "options": [
-            "\\((x + 6)(x - 6)\\)",
+            "\\((x - 36)(x + 36)\\)",
             "\\((x - 6)(x + 6)\\)",
             "\\((x - 6)(x - 6)\\)",
             "\\((x + 6)(x + 6)\\)"
@@ -11198,7 +11198,7 @@
             "\\((5x + 9y)(5x + 9y)\\)",
             "\\((5x - 9y)(5x + 9y)\\)",
             "\\((5x - 9y)(5x - 9y)\\)",
-            "\\((5x + 9y)(5x - 9y) + ajz\\)"
+            "\\((9x - 5y)(5x + 9y)\\)"
           ],
           "answer": 1,
           "solution": "(5x - 9y)(5x + 9y)",
@@ -11240,9 +11240,9 @@
           "stem": "Factor using difference of squares: \\( 16u^2 - v^2 \\)",
           "options": [
             "\\((4u - v)(4u - v)\\)",
-            "\\((4u + v)(4u - v)\\)",
+            "\\((4u + v)(4u + v)\\)",
             "\\((4u - v)(4u + v)\\)",
-            "\\((4u + v)(4u - v) + 65f\\)"
+            "\\((8u - v)(4u + v)\\)"
           ],
           "answer": 2,
           "solution": "(4u - v)(4u + v)",
@@ -11263,8 +11263,8 @@
           "options": [
             "\\((3y^2 + 2)(y - 4)\\)",
             "\\((3y^2 - 2)(y - 4)\\)",
-            "\\((3y^2 - 2)(y - 4) + 3q0\\)",
-            "\\((3y^2 + 2)(y - 4) + 3q0\\)"
+            "\\((3y^2 - 2)(y + 4)\\)",
+            "\\((3y^2 + 2)(y + 4)\\)"
           ],
           "answer": 1,
           "solution": "(3y^2 - 2)(y - 4)",
@@ -11309,8 +11309,8 @@
           "difficulty": "easy",
           "stem": "Factor by grouping in pairs: \\( 6x - 6y - px + py \\)",
           "options": [
-            "\\((6 + p)(x - y) + 9y7\\)",
-            "\\((6 - p)(x - y) + 9y7\\)",
+            "\\((6 - p)(x + y)\\)",
+            "\\((6 + p)(x + y)\\)",
             "\\((6 + p)(x - y)\\)",
             "\\((6 - p)(x - y)\\)"
           ],
@@ -11504,10 +11504,10 @@
           "difficulty": "easy",
           "stem": "Factor using difference of squares: \\( a^2 - 9b^2 \\)",
           "options": [
-            "\\((a + 3b)(a - 3b) + pwq\\)",
+            "\\((a - 6b)(a + 3b)\\)",
             "\\((a - 3b)(a - 3b)\\)",
             "\\((a - 3b)(a + 3b)\\)",
-            "\\((a + 3b)(a - 3b)\\)"
+            "\\((a + 3b)(a + 3b)\\)"
           ],
           "answer": 2,
           "solution": "(a - 3b)(a + 3b)",
@@ -11528,8 +11528,8 @@
           "options": [
             "\\((3x^2 - b)(x - 3)\\)",
             "\\((3x^2 + b)(x - 3)\\)",
-            "\\((3x^2 - b)(x - 3) + eoq\\)",
-            "\\((3x^2 + b)(x - 3) + eoq\\)"
+            "\\((3x^2 - b)(x + 3)\\)",
+            "\\((3x^2 + b)(x + 3)\\)"
           ],
           "answer": 0,
           "solution": "(3x^2 - b)(x - 3)",
@@ -36035,7 +36035,7 @@
             "\\((2a - 5)(2a + 5)\\)",
             "\\((2a + 5)(2a + 5)\\)",
             "\\((2a - 5)(2a - 5)\\)",
-            "\\((2a + 5)(2a - 5)\\)"
+            "\\((2a - 25)(2a + 25)\\)"
           ],
           "answer": 0,
           "hint": "Write each term as a perfect square first.",
@@ -36212,7 +36212,7 @@
             "\\(2x(x - 3)(x + 3)\\)",
             "\\(2x(x + 3)(x + 3)\\)",
             "\\(2x(x - 3)(x - 3)\\)",
-            "\\(2x(x + 3)(x - 3)\\)"
+            "\\(2x(x - 9)(x + 9)\\)"
           ],
           "answer": 0,
           "hint": "Take out the common factor first, then use the difference of squares.",
@@ -36744,7 +36744,7 @@
             "\\((x - 3)(x + 3)\\)",
             "\\((x + 3)(x + 3)\\)",
             "\\((x - 3)(x - 3)\\)",
-            "\\((x + 3)(x - 3)\\)"
+            "\\((x - 9)(x + 9)\\)"
           ],
           "answer": 0,
           "hint": "Recognise this as a difference of two squares \\( a^2 - b^2 = (a-b)(a+b) \\).",
