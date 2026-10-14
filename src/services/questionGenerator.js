@@ -891,10 +891,14 @@ const genMassCapacity = () => {
 };
 
 const genCapacityCompare = () => {
+  const pairs = [['jug', 'bucket'], ['bottle', 'bowl'], ['bucket', 'bottle'], ['kettle', 'jug'], ['bowl', 'kettle']];
+  const [first, second] = pick(pairs);
   const a = randomInt(2, 8);
-  const b = randomInt(2, 8);
-  const answer = a > b ? 'jug' : 'cup';
-  return q('capacity_compare', `A jug holds ${a} cups. A cup holds ${b} cups. Which holds more?`, [answer, answer === 'jug' ? 'cup' : 'jug', 'they hold the same', 'we cannot tell'], answer, `Compare ${a} and ${b}; the larger amount holds more.`, 25);
+  let b = randomInt(2, 7);
+  if (b >= a) b += 1; // b is never equal to a, so exactly one container holds more
+  const answer = a > b ? first : second;
+  const other = answer === first ? second : first;
+  return q('capacity_compare', `A ${first} holds ${a} cups of water. A ${second} holds ${b} cups of water. Which holds more?`, [answer, other, 'they hold the same', 'we cannot tell'], answer, `Compare ${a} and ${b}; the larger amount holds more, so the ${answer} holds more.`, 25);
 };
 
 const genTime = () => {
