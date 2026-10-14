@@ -5,6 +5,7 @@ import { ProfileProvider } from './context/ProfileContext'
 import { ToastProvider } from './context/ToastContext'
 import { AdminFeedProvider } from './context/AdminFeedContext'
 import { attemptAutoReload } from './utils/crashRecovery'
+import './utils/katexGlobal'
 import './index.css'
 import App from './App.jsx'
 
