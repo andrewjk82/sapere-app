@@ -3295,50 +3295,26 @@
           "difficulty": "hard",
           "stem": "Complete the table of values and plot the graph for the given formula, drawing a smooth curve through the points.\n\n\\(y = 5 - x^2\\)\n\n\\(\\begin{array}{|c|c|c|c|c|c|c|c|} \\hline x & -3 & -2 & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y & & & & & & & \\\\ \\hline \\end{array}\\)",
           "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -5,
-                8,
-                5,
-                -2
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 280
-            }
+            "svg": "fig:7216639bd9"
           },
-          "answer": "Table completed and parabola graphed.",
+          "answer": "y = −4, 1, 4, 5, 4, 1, −4 for x = −3 to 3. The graph is a parabola opening downwards with vertex (0, 5).",
           "hint": "Substitute each x value. Note that \\((-3)^2 = 9\\).",
-          "solution": "Table completed and parabola graphed.",
+          "solution": "y = −4, 1, 4, 5, 4, 1, −4 for x = −3 to 3. The graph is a parabola opening downwards with vertex (0, 5).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(y = 5 - (-3)^2 = 5 - 9 = -4\\)",
+              "explain": "Substitute each negative x-value into \\(y=5-x^2\\). Square first (a negative squared is positive), then subtract from 5.",
+              "work": "\\(x=-3:\\ y=5-9=-4,\\quad x=-2:\\ y=5-4=1,\\quad x=-1:\\ y=5-1=4\\)"
+            },
+            {
+              "explain": "Do \\(x=0\\), then use symmetry: \\((-x)^2=x^2\\), so \\(x=1,2,3\\) give the same y-values as \\(x=-1,-2,-3\\).",
+              "work": "\\(x=0:\\ y=5-0=5\\); \\(\\begin{array}{|c|c|c|c|c|c|c|c|} \\hline x&-3&-2&-1&0&1&2&3\\\\ \\hline y&-4&1&4&5&4&1&-4\\\\ \\hline \\end{array}\\)"
+            },
+            {
+              "explain": "Plot the seven points and join them with a smooth curve. The \\(-x^2\\) makes the parabola open downwards, with its highest point (vertex) at \\((0,5)\\).",
+              "work": "\\(\\text{vertex }(0,5);\\ \\text{passes through }(\\pm1,4),\\ (\\pm2,1),\\ (\\pm3,-4)\\)",
               "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 280,
-                  "boundingbox": [
-                    -5,
-                    8,
-                    5,
-                    -2
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
+                "svg": "fig:753d39bec4"
               }
-            },
-            {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(y = 5 - 0^2 = 5\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(y = 5 - 3^2 = -4\\)"
-            },
-            {
-              "explain": "Final answer: Table completed and parabola graphed.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "Table completed and parabola graphed."
             }
           ],
           "manual": true,

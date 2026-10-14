@@ -2826,26 +2826,26 @@
           "difficulty": "medium",
           "stem": "Factorise by taking the highest common factor:\n\n\\(-36x + 24x^2\\)",
           "options": [
-            "\\(8a(9 - a)\\)",
-            "\\(8a(9 + a)\\)",
-            "\\(8(9a - a^2)\\)",
-            "\\(-8a(9 - a)\\)"
+            "\\(12x(3 - 2x)\\)",
+            "\\(12x(2x + 3)\\)",
+            "\\(12x(2x - 3)\\)",
+            "\\(12x(2x^2 - 3)\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Find the HCF of the numbers, and the common variable.",
-          "solution": "The highest common factor is \\(12x\\).\n\\(12x(-3) + 12x(2x) = 12x(-3 + 2x) = 12x(2x - 3)\\)",
+          "solution": "The highest common factor is \\(12x\\).\n\\(-36x+24x^2=12x(-3)+12x(2x)=12x(2x-3)\\)",
           "steps": [
             {
-              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(72a\\) and \\(-8a^2\\).",
-              "work": "\\text{The HCF of 72 and 8 is 8, and the common variable is } a. \\text{ So the HCF is } 8a."
+              "explain": "Find the highest common factor of \\(-36x\\) and \\(24x^2\\). The numbers 36 and 24 share the factor 12, and both terms contain \\(x\\) (lowest power \\(x^1\\)).",
+              "work": "\\(\\text{HCF}=12x\\)"
             },
             {
-              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
-              "work": "72a - 8a^2 = 8a(9) - 8a(a)"
+              "explain": "Divide each term by \\(12x\\). Keep the sign of each term.",
+              "work": "\\(-36x\\div12x=-3,\\qquad 24x^2\\div12x=2x\\)"
             },
             {
-              "explain": "Factor out the common \\(8a\\).",
-              "work": "8a(9 - a)"
+              "explain": "Write the HCF outside the brackets, then check by expanding.",
+              "work": "\\(12x(-3+2x)=12x(2x-3)\\);\\ \\ \\(12x\\cdot2x-12x\\cdot3=24x^2-36x\\ \\checkmark\\)"
             }
           ],
           "xp": 2
@@ -2856,26 +2856,26 @@
           "difficulty": "medium",
           "stem": "Factorise by taking the highest common factor:\n\n\\(15ab^2 + 3ab\\)",
           "options": [
-            "\\(-2q(p + 4)\\)",
-            "\\(-2q(p - 4)\\)",
-            "\\(2q(-p + 4)\\)",
-            "\\(-2(pq + 4q)\\)"
+            "\\(3ab(5b + 3)\\)",
+            "\\(3ab(5b + 1)\\)",
+            "\\(3ab(5b - 1)\\)",
+            "\\(3ab(5b)\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "What is the highest common factor of the numbers and the variables?",
-          "solution": "The highest common factor is \\(3ab\\).\n\\(3ab(5b) + 3ab(1) = 3ab(5b + 1)\\)",
+          "solution": "The highest common factor is \\(3ab\\).\n\\(3ab(5b)+3ab(1)=3ab(5b+1)\\)",
           "steps": [
             {
-              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(-2pq\\) and \\(-8q\\). Both terms are negative, so we will factor out a negative HCF.",
-              "work": "\\text{The HCF of 2 and 8 is 2, and the common variable is } q. \\text{ So we take out } -2q."
+              "explain": "Find the highest common factor of \\(15ab^2\\) and \\(3ab\\). The numbers 15 and 3 share the factor 3; both terms contain \\(a\\) and \\(b\\) (lowest powers \\(a^1\\) and \\(b^1\\)).",
+              "work": "\\(\\text{HCF}=3ab\\)"
             },
             {
-              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
-              "work": "-2pq - 8q = -2q(p) - 2q(4)"
+              "explain": "Divide each term by \\(3ab\\). The second term becomes 1, not 0 — dividing a term by itself leaves 1.",
+              "work": "\\(15ab^2\\div3ab=5b,\\qquad 3ab\\div3ab=1\\)"
             },
             {
-              "explain": "Factor out the common \\(-2q\\). Be careful with the sign inside the brackets.",
-              "work": "-2q(p + 4)"
+              "explain": "Write the HCF outside the brackets, then check by expanding.",
+              "work": "\\(3ab(5b+1)\\);\\ \\ \\(3ab\\cdot5b+3ab\\cdot1=15ab^2+3ab\\ \\checkmark\\)"
             }
           ],
           "xp": 2
@@ -2886,26 +2886,26 @@
           "difficulty": "medium",
           "stem": "Factorise by taking the highest common factor:\n\n\\(12a + 6ab\\)",
           "options": [
-            "\\(6a(3 + b)\\)",
-            "\\(6(3a + ab)\\)",
-            "\\(6a(3 - b)\\)",
-            "\\(3a(6 + 2b)\\)"
+            "\\(6a(2 - b)\\)",
+            "\\(6a(2 + ab)\\)",
+            "\\(6a(2 + 6b)\\)",
+            "\\(6a(2 + b)\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "Look for the common number and common variable.",
-          "solution": "The highest common factor is \\(6a\\).\n\\(6a(2) + 6a(b) = 6a(2 + b)\\)",
+          "solution": "The highest common factor is \\(6a\\).\n\\(12a+6ab=6a(2)+6a(b)=6a(2+b)\\)",
           "steps": [
             {
-              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(18a\\) and \\(6ab\\).",
-              "work": "\\text{The HCF of 18 and 6 is 6, and the common variable is } a. \\text{ So the HCF is } 6a."
+              "explain": "Find the highest common factor of \\(12a\\) and \\(6ab\\). The numbers 12 and 6 share the factor 6, and both terms contain \\(a\\).",
+              "work": "\\(\\text{HCF}=6a\\)"
             },
             {
-              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
-              "work": "18a + 6ab = 6a(3) + 6a(b)"
+              "explain": "Divide each term by \\(6a\\).",
+              "work": "\\(12a\\div6a=2,\\qquad 6ab\\div6a=b\\)"
             },
             {
-              "explain": "Factor out the common \\(6a\\).",
-              "work": "6a(3 + b)"
+              "explain": "Write the HCF outside the brackets, then check by expanding.",
+              "work": "\\(6a(2+b)\\);\\ \\ \\(6a\\cdot2+6a\\cdot b=12a+6ab\\ \\checkmark\\)"
             }
           ],
           "xp": 2
