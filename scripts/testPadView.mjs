@@ -2,7 +2,7 @@
 import assert from 'node:assert';
 import {
   PAGE_W, PAGE_H, fitScale, clampZoom, clampPos, zoomAt, toPageUnits, backingScale,
-  classifyTwoFinger, MAX_ZOOM, MAX_BACKING_UNIT_PX,
+  classifyTwoFinger, classifyMultiTap, MAX_ZOOM, MAX_BACKING_UNIT_PX,
 } from '../src/utils/padView.js';
 
 let passed = 0;
@@ -73,6 +73,16 @@ test('two-finger gestures: pinch vs page swipe', () => {
   assert.equal(classifyTwoFinger({ zoom: 1, ratio: 1.2, dy: 0 }), 'zoom');
   assert.equal(classifyTwoFinger({ zoom: 1, ratio: 1.03, dy: -10 }), null);
   assert.equal(classifyTwoFinger({ zoom: 2, ratio: 1, dy: -200 }), 'zoom'); // zoomed: pan, never page change
+});
+
+test('finger taps: two = undo, three = redo, never a drag / slow press / pencil', () => {
+  assert.equal(classifyMultiTap({ fingers: 2, durationMs: 120, maxMovePx: 3 }), 'undo');
+  assert.equal(classifyMultiTap({ fingers: 3, durationMs: 200, maxMovePx: 5 }), 'redo');
+  assert.equal(classifyMultiTap({ fingers: 1, durationMs: 80, maxMovePx: 0 }), null);
+  assert.equal(classifyMultiTap({ fingers: 4, durationMs: 80, maxMovePx: 0 }), null);
+  assert.equal(classifyMultiTap({ fingers: 2, durationMs: 120, maxMovePx: 40 }), null);  // pinch / swipe
+  assert.equal(classifyMultiTap({ fingers: 2, durationMs: 900, maxMovePx: 2 }), null);   // resting fingers
+  assert.equal(classifyMultiTap({ fingers: 2, durationMs: 100, maxMovePx: 2, stylus: true }), null);
 });
 
 console.log(`\npad view: ${passed} passed`);

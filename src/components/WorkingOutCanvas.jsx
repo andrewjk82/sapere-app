@@ -6,11 +6,11 @@ import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
-  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger,
+  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger, classifyMultiTap,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.1-scribble';
+const CANVAS_VERSION = 'v10.2-tap-undo';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -993,29 +993,53 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
   handlersRef.current = { onPointerDown, onPointerMove, onPointerUp, onPointerCancel };
 
+  // Both return whether anything changed (the finger-tap path only flashes a label when it did).
   const handleUndo = () => {
-    if (!undoStack.length) return;
+    if (!undoStack.length) return false;
     const prev = undoStack[undoStack.length - 1];
     const current = strokesRef.current;   // read before it is replaced: the updaters below run later
     setRedoStack(r => [...r, current]);
     setUndoStack(u => u.slice(0, -1));
     strokesRef.current = prev;
     setStrokes(prev);
+    return true;
   };
 
   const handleRedo = () => {
-    if (!redoStack.length) return;
+    if (!redoStack.length) return false;
     const next = redoStack[redoStack.length - 1];
     const current = strokesRef.current;
     setUndoStack(u => [...u, current]);
     setRedoStack(r => r.slice(0, -1));
+    // Redoing one stroke looks like an append (length + 1, same prefix), and appends skip the redraw
+    // because a live stroke is already on screen. This one is not, so force it.
+    forceRedrawRef.current = true;
     strokesRef.current = next;
     setStrokes(next);
+    return true;
   };
+
+  // Two-finger tap = undo, three-finger tap = redo: a small "Undo" / "Redo" label flashes on the pad so an
+  // accidental tap is noticed.
+  const [historyFlash, setHistoryFlash] = useState(null);   // { label, id } | null
+  const historyFlashTimerRef = useRef(0);
+  const flashHistory = (label) => {
+    window.clearTimeout(historyFlashTimerRef.current);
+    setHistoryFlash({ label, id: Date.now() });
+    historyFlashTimerRef.current = window.setTimeout(() => setHistoryFlash(null), 650);
+  };
+  useEffect(() => () => window.clearTimeout(historyFlashTimerRef.current), []);
 
   // Keyboard (iPad keyboard / laptop): ⌘Z / Ctrl+Z undo, ⇧⌘Z / Ctrl+Y redo — not while typing in a field.
   const historyKeysRef = useRef({});
-  historyKeysRef.current = { undo: handleUndo, redo: handleRedo };
+  historyKeysRef.current = {
+    undo: handleUndo,
+    redo: handleRedo,
+    tap: (action) => {
+      const done = action === 'undo' ? handleUndo() : handleRedo();
+      if (done) flashHistory(action === 'undo' ? 'Undo' : 'Redo');
+    },
+  };
   useEffect(() => {
     const onKey = (e) => {
       if (!(e.metaKey || e.ctrlKey) || e.altKey) return;
@@ -1177,12 +1201,42 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       }
     };
 
+    // ── Finger taps: two = undo, three = redo (see classifyMultiTap) ────
+    // One record per touch sequence (first finger down → last finger up). Touch events only: they carry
+    // touchType, so an Apple Pencil touch anywhere in the sequence cancels it.
+    let tap = null; // { t0, starts: Map(identifier → {x, y}), fingers, maxMove, stylus }
+    const tapMoved = (touchList) => {
+      if (!tap) return;
+      for (const t of touchList) {
+        const s = tap.starts.get(t.identifier);
+        if (s) tap.maxMove = Math.max(tap.maxMove, Math.hypot(t.clientX - s.x, t.clientY - s.y));
+      }
+    };
+    const tapStart = (e) => {
+      if (!tap) tap = { t0: performance.now(), starts: new Map(), fingers: 0, maxMove: 0, stylus: false };
+      for (const t of e.changedTouches) {
+        tap.starts.set(t.identifier, { x: t.clientX, y: t.clientY });
+        if (t.touchType === 'stylus') tap.stylus = true;
+      }
+      tap.fingers = Math.max(tap.fingers, e.touches.length);
+    };
+    const tapEnd = (e) => {
+      if (!tap) return;
+      tapMoved(e.changedTouches);
+      if (e.type === 'touchcancel') tap.stylus = true;   // the system took the touches: never act on it
+      if (e.touches.length > 0) return;
+      const action = classifyMultiTap({ fingers: tap.fingers, durationMs: performance.now() - tap.t0, maxMovePx: tap.maxMove, stylus: tap.stylus });
+      tap = null;
+      if (action && !pageNavRef.current.isSubmitted) historyKeysRef.current.tap?.(action);
+    };
+
     // ── Touch path (iPad / phones) ──────────────────────────────────────
     const onTouchStart = (e) => {
       if (!isInsideBoard(e.target) && !boardActive) return;
       // Count touches that are over our board (or already tracked).
       if (isInsideBoard(e.target) || e.touches.length >= 2) boardActive = true;
       if (!boardActive) return;
+      tapStart(e);
 
       if (e.touches.length >= 2) {
         gestureStart(touchPoints(e.touches));
@@ -1192,12 +1246,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     };
 
     const onTouchMove = (e) => {
+      if (boardActive) tapMoved(e.changedTouches);
       if (!boardActive || !gesture || e.touches.length < 2) return;
       if (e.cancelable !== false) e.preventDefault();
       gestureMove(touchPoints(e.touches));
     };
 
     const onTouchEnd = (e) => {
+      tapEnd(e);
       if (e.touches.length < 2) {
         gesture = null;
       }
@@ -1543,6 +1599,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
       {/* The pane is a viewport onto a fixed A4 page: the page keeps its shape whatever the pane size. */}
       <div ref={viewportRef} style={{ flex: 1, position: 'relative', overflow: 'hidden', touchAction: 'none', background: '#e2e8f0' }}>
+        {historyFlash && (
+          <div key={historyFlash.id} aria-live="polite" style={{ position: 'absolute', left: '50%', top: '50%', zIndex: 30, pointerEvents: 'none', padding: '8px 18px', borderRadius: '999px', background: 'rgba(15,23,42,0.78)', color: '#fff', fontSize: '0.9rem', fontWeight: 800, animation: 'padHistoryFlash 650ms ease-out forwards' }}>
+            {historyFlash.label}
+          </div>
+        )}
         <div style={{ position: 'absolute', left: pagePos.x, top: pagePos.y, width: PAGE_W * u, height: PAGE_H * u, visibility: cssScale > 0 ? 'visible' : 'hidden', boxShadow: '0 1px 6px rgba(15,23,42,0.18)', overflow: 'hidden', ...bgStyle }}>
           {isGraph && (
             <>

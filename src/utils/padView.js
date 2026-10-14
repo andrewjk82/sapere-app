@@ -58,6 +58,17 @@ export const backingScale = (cssScale, dpr = 1) => Math.max(0.5, Math.min(cssSca
 // Zoomed in: always pinch / pan. `ratio` = current finger distance / starting distance.
 export const PINCH_RATIO = 0.08;
 export const SWIPE_PX = 50;
+// Finger taps (GoodNotes-style): two fingers = undo, three = redo. A tap is short and nearly still, so it
+// never collides with a pinch / pan / page swipe, and anything involving the pencil is never a tap.
+export const TAP_MAX_MS = 350;
+export const TAP_MAX_MOVE_PX = 12;
+export const classifyMultiTap = ({ fingers, durationMs, maxMovePx, stylus = false }) => {
+  if (stylus || durationMs > TAP_MAX_MS || maxMovePx > TAP_MAX_MOVE_PX) return null;
+  if (fingers === 2) return 'undo';
+  if (fingers === 3) return 'redo';
+  return null;
+};
+
 export const classifyTwoFinger = ({ zoom, ratio, dy }) => {
   if (zoom > SNAP_ZOOM) return 'zoom';
   if (Math.abs(ratio - 1) > PINCH_RATIO) return 'zoom';
