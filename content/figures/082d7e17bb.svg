@@ -1,0 +1,87 @@
+<svg width="500" height="340" viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="340" fill="#f8fafc" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Step Banner -->
+  <rect x="20" y="10" width="460" height="26" rx="6" fill="#fef3c7" stroke="#fde68a" stroke-width="1"/>
+  <text x="250" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#92400e">
+    Step 4: Fully Verified Commutativity Table &amp; Results Confirmation
+  </text>
+
+  <!-- Left: Complete Table -->
+  <rect x="18" y="44" width="220" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadow)"/>
+  <rect x="18" y="44" width="220" height="38" rx="8" fill="#f1f5f9"/>
+  <line x1="18" y1="82" x2="238" y2="82" stroke="#cbd5e1" stroke-width="1.2"/>
+  <line x1="68" y1="44" x2="68" y2="239" stroke="#cbd5e1" stroke-width="1.2"/>
+  <line x1="110" y1="44" x2="110" y2="239" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="152" y1="44" x2="152" y2="239" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="194" y1="44" x2="194" y2="239" stroke="#e2e8f0" stroke-width="1"/>
+
+  <line x1="18" y1="121" x2="238" y2="121" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="18" y1="160" x2="238" y2="160" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="18" y1="199" x2="238" y2="199" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Headers -->
+  <text x="89" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">HT</text>
+  <text x="131" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">VT</text>
+  <text x="173" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">HD</text>
+  <text x="216" y="67" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">VD</text>
+
+  <text x="43" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">HT</text>
+  <text x="43" y="144" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">VT</text>
+  <text x="43" y="183" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">HD</text>
+  <text x="43" y="222" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#1e293b">VD</text>
+
+  <!-- Row 1: C, C, N, C -->
+  <text x="89" y="106" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="131" y="106" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="173" y="106" text-anchor="middle" font-weight="800" fill="#dc2626" font-size="12">N</text>
+  <text x="216" y="106" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+
+  <!-- Row 2: C, C, C, N -->
+  <text x="89" y="145" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="131" y="145" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="173" y="145" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="216" y="145" text-anchor="middle" font-weight="800" fill="#dc2626" font-size="12">N</text>
+
+  <!-- Row 3: N, C, C, C -->
+  <text x="89" y="184" text-anchor="middle" font-weight="800" fill="#dc2626" font-size="12">N</text>
+  <text x="131" y="184" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="173" y="184" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="216" y="184" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+
+  <!-- Row 4: C, N, C, C -->
+  <text x="89" y="223" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="131" y="223" text-anchor="middle" font-weight="800" fill="#dc2626" font-size="12">N</text>
+  <text x="173" y="223" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+  <text x="216" y="223" text-anchor="middle" font-weight="800" fill="#16a34a" font-size="12">C</text>
+
+  <!-- Right: Verification Checklist -->
+  <rect x="250" y="44" width="232" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="262" y="66" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800" fill="#1e293b">Checklist of the 6 Pairs:</text>
+
+  <text x="262" y="90" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">1. y-ref &amp; HT (HD × HT): <tspan font-weight="700" fill="#dc2626">N</tspan>  ✓ Matches</text>
+  <text x="262" y="114" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">2. VD &amp; VT (VD × VT): <tspan font-weight="700" fill="#dc2626">N</tspan>  ✓ Matches</text>
+  <text x="262" y="138" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">3. VD &amp; x-ref (VD × VD): <tspan font-weight="700" fill="#16a34a">C</tspan>  ✓ Matches</text>
+  <text x="262" y="162" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">4. HT &amp; VT (HT × VT): <tspan font-weight="700" fill="#16a34a">C</tspan>  ✓ Matches</text>
+  <text x="262" y="186" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">5. HD &amp; HT (HD × HT): <tspan font-weight="700" fill="#dc2626">N</tspan>  ✓ Matches</text>
+  <text x="262" y="210" font-family="system-ui, sans-serif" font-size="10.5" fill="#334155">6. x-ref &amp; HT (VD × HT): <tspan font-weight="700" fill="#16a34a">C</tspan>  ✓ Matches</text>
+
+  <!-- Bottom Master Banner -->
+  <rect x="18" y="250" width="464" height="74" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="274" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">
+    Conclusion: All 6 Transformation Pairs Agree with the Table
+  </text>
+  <text x="250" y="296" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#166534">
+    Horizontal and vertical operations are independent (C). Same-type operations commute (C).
+  </text>
+  <text x="250" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#15803d">
+    Translation and dilation in the same dimension do not commute (N).
+  </text>
+</svg>

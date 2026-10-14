@@ -1,0 +1,100 @@
+<svg width="500" height="340" viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="340" fill="#f8fafc" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Top Title Banner -->
+  <rect x="20" y="14" width="460" height="28" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="250" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">
+    Commutativity of Transformation Pairs
+  </text>
+
+  <!-- Legend Bar -->
+  <rect x="20" y="48" width="460" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="35" y="64" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#334155">HT: Horizontal Translation</text>
+  <text x="35" y="77" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#334155">HD: Horizontal Dilation</text>
+  <text x="205" y="64" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#334155">VT: Vertical Translation</text>
+  <text x="205" y="77" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#334155">VD: Vertical Dilation</text>
+  <rect x="375" y="55" width="22" height="22" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="386" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#15803d">C</text>
+  <text x="403" y="69" font-family="system-ui, sans-serif" font-size="10.5" fill="#15803d">: Commute</text>
+  <rect x="375" y="55" width="22" height="22" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1" style="display:none;"/>
+  <text x="445" y="80" text-anchor="end" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#dc2626">N: Do not commute</text>
+
+  <!-- Table Container -->
+  <rect x="70" y="96" width="360" height="195" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Column Header Row -->
+  <rect x="70" y="96" width="360" height="38" rx="8" fill="#f1f5f9"/>
+  <line x1="70" y1="134" x2="430" y2="134" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Vertical Divider Lines -->
+  <line x1="150" y1="96" x2="150" y2="291" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="220" y1="96" x2="220" y2="291" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="290" y1="96" x2="290" y2="291" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="360" y1="96" x2="360" y2="291" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Horizontal Row Dividers -->
+  <line x1="70" y1="173" x2="430" y2="173" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="70" y1="212" x2="430" y2="212" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="70" y1="251" x2="430" y2="251" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Column Header Labels -->
+  <text x="185" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">HT</text>
+  <text x="255" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">VT</text>
+  <text x="325" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">HD</text>
+  <text x="395" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">VD</text>
+
+  <!-- Row Header Labels -->
+  <text x="110" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">HT</text>
+  <text x="110" y="197" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">VT</text>
+  <text x="110" y="236" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">HD</text>
+  <text x="110" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#1e293b">VD</text>
+
+  <!-- Filled Cell Badges -->
+  <!-- HT, HT -> C -->
+  <rect x="171" y="142" width="28" height="24" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="185" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">C</text>
+
+  <!-- VT, VT -> C -->
+  <rect x="241" y="181" width="28" height="24" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="255" y="198" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">C</text>
+
+  <!-- HD, HT -> N -->
+  <rect x="171" y="220" width="28" height="24" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <text x="185" y="237" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#b91c1c">N</text>
+
+  <!-- HD, HD -> C -->
+  <rect x="311" y="220" width="28" height="24" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="325" y="237" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">C</text>
+
+  <!-- VD, HD -> C -->
+  <rect x="311" y="259" width="28" height="24" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="325" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">C</text>
+
+  <!-- VD, VD -> C -->
+  <rect x="381" y="259" width="28" height="24" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="395" y="276" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="800" fill="#15803d">C</text>
+
+  <!-- Empty cell dash marks -->
+  <text x="255" y="158" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="325" y="158" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="395" y="158" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="185" y="197" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="325" y="197" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="395" y="197" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="255" y="236" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="395" y="236" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="185" y="275" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+  <text x="255" y="275" text-anchor="middle" fill="#cbd5e1" font-size="14">—</text>
+
+  <!-- Bottom Helper Note -->
+  <text x="250" y="312" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">
+    * Reflection in y-axis is HD with factor −1; Reflection in x-axis is VD with factor −1.
+  </text>
+</svg>

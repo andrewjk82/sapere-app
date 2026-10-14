@@ -19215,27 +19215,45 @@
           "id": "y11-5g-q7c",
           "type": "review",
           "difficulty": "medium",
-          "stem": "A table shows whether pairs of transformations commute. We use H for horizontal, V for vertical, T for translation, and D for dilation. Thus HT is horizontal translation, VT is vertical translation, HD is horizontal dilation, and VD is vertical dilation.\nLet C indicate that they commute, and N indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\nc) Check that the table agrees with your answers to Question 5.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "stem": "A table shows whether pairs of transformations commute, where:\n• \\(\\text{HT}\\): Horizontal translation\n• \\(\\text{VT}\\): Vertical translation\n• \\(\\text{HD}\\): Horizontal dilation (with reflection in the \\(y\\)-axis as factor \\(-1\\))\n• \\(\\text{VD}\\): Vertical dilation (with reflection in the \\(x\\)-axis as factor \\(-1\\))\n\nLet \\(C\\) indicate that the pair of transformations commute (the order does not affect the final graph), and \\(N\\) indicate that they do not commute.\n\n\\(\\begin{array}{c|cccc} & \\text{HT} & \\text{VT} & \\text{HD} & \\text{VD} \\\\ \\hline \\text{HT} & C & & & \\\\ \\text{VT} & & C & & \\\\ \\text{HD} & N & & C & \\\\ \\text{VD} & & & C & C \\end{array}\\)\n\nVerify whether the entries in the table agree with the commutativity of the following six pairs of transformations:\n1. Reflection in the \\(y\\)-axis (\\(\\text{HD}\\)) and horizontal translation (\\(\\text{HT}\\))\n2. Vertical dilation (\\(\\text{VD}\\)) and vertical translation (\\(\\text{VT}\\))\n3. Vertical dilation (\\(\\text{VD}\\)) and reflection in the \\(x\\)-axis (\\(\\text{VD}\\))\n4. Horizontal translation (\\(\\text{HT}\\)) and vertical translation (\\(\\text{VT}\\))\n5. Horizontal dilation (\\(\\text{HD}\\)) and horizontal translation (\\(\\text{HT}\\))\n6. Reflection in the \\(x\\)-axis (\\(\\text{VD}\\)) and horizontal translation (\\(\\text{HT}\\))\n\nFor each pair, explain algebraically why they commute (\\(C\\)) or do not commute (\\(N\\)), and confirm that this matches the table.",
+          "figure": {
+            "svg": "fig:234253686f"
+          },
+          "answer": "All six pairs agree with the table:\n1. y-axis reflection (HD) and HT: Do not commute (N).\n2. VD and VT: Do not commute (N).\n3. VD and x-axis reflection (VD): Commute (C).\n4. HT and VT: Commute (C).\n5. HD and HT: Do not commute (N).\n6. x-axis reflection (VD) and HT: Commute (C).",
+          "hint": "Transformations in different dimensions (horizontal vs vertical) always commute because operations on x and y are independent. In the same dimension, translations commute with translations and dilations commute with dilations, but a dilation and a translation in the same dimension do not commute.",
+          "solution": "1. **General Commutativity Rules**:\n   • **Different dimensions (Horizontal vs Vertical)**: Operations on \\(x\\) and operations on \\(y\\) do not interact and always commute (\\(C\\)): \\(\\text{HT} \\leftrightarrow \\text{VT}\\), \\(\\text{HD} \\leftrightarrow \\text{VT}\\), \\(\\text{HT} \\leftrightarrow \\text{VD}\\), and \\(\\text{HD} \\leftrightarrow \\text{VD}\\).\n   • **Same dimension, same type (T with T, D with D)**: Two translations add (\\(x - (c_1 + c_2)\\)) and two dilations multiply (\\((a_1 a_2)y\\)), so they always commute (\\(C\\)).\n   • **Same dimension, mixed type (T with D)**: Translating then dilating scales the translation shift (\\(k(x - c) = kx - kc\\)), whereas dilating then translating only shifts the scaled variable (\\(kx - c\\)). Hence \\(\\text{HD} \\leftrightarrow \\text{HT}\\) and \\(\\text{VD} \\leftrightarrow \\text{VT}\\) do NOT commute (\\(N\\)).\n\n2. **Evaluating the 6 Pairs**:\n   • Pair 1: Reflection in \\(y\\)-axis (\\(\\text{HD}\\)) and \\(\\text{HT}\\) \\(\\implies -x + c \\neq -x - c \\implies N\\) (matches row HD, col HT).\n   • Pair 2: \\(\\text{VD}\\) and \\(\\text{VT}\\) \\(\\implies a(y+k) \\neq ay+k \\implies N\\) (matches row VD, col VT).\n   • Pair 3: \\(\\text{VD}\\) and \\(x\\)-axis reflection (\\(\\text{VD}\\)) \\(\\implies (-1)(ay) = a(-y) = -ay \\implies C\\) (matches row VD, col VD).\n   • Pair 4: \\(\\text{HT}\\) and \\(\\text{VT}\\) \\(\\implies (x+c, y+k) \\implies C\\) (matches row VT, col HT).\n   • Pair 5: \\(\\text{HD}\\) and \\(\\text{HT}\\) \\(\\implies k(x-c) \\neq kx-c \\implies N\\) (matches row HD, col HT).\n   • Pair 6: \\(x\\)-axis reflection (\\(\\text{VD}\\)) and \\(\\text{HT}\\) \\(\\implies -f(x-c) \\implies C\\) (matches row VD, col HT).\n\nAll results fully agree with the table.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
+              "explain": "Establish the three core rules governing whether geometric transformations commute:\n1. **Orthogonal dimensions (Horizontal ↔ Vertical)**: Transformations affecting \\(x\\) and transformations affecting \\(y\\) are completely independent and always commute (\\(C\\)).\n2. **Same dimension, same operation type**: Translations add together (\\(x - c_1 - c_2 = x - (c_1 + c_2)\\)) and dilations multiply together (\\(a_1(a_2 y) = (a_1 a_2)y\\)), so both commute (\\(C\\)).\n3. **Same dimension, mixed type (Translation ↔ Dilation)**: Applying a dilation after a translation also scales the translation amount (\\(k(x - c) = kx - kc\\)), which differs from translating after a dilation (\\(kx - c\\)). Thus they do NOT commute (\\(N\\)).",
+              "work": "\\begin{aligned} &\\text{1. Cross-dimension (H } \\leftrightarrow \\text{ V):} \\quad \\text{Always commute } (C) \\\\ &\\text{2. Same dimension, same type (T } \\leftrightarrow \\text{ T, D } \\leftrightarrow \\text{ D):} \\quad \\text{Commute } (C) \\\\ &\\text{3. Same dimension, mixed type (T } \\leftrightarrow \\text{ D):} \\quad \\text{Do not commute } (N) \\end{aligned}",
+              "figure": {
+                "svg": "fig:9941bef687"
+              }
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Prove algebraically why the three same-dimension mixed-type pairs do NOT commute (\\(N\\)):\n• **Pair 1 (\\(y\\)-axis reflection and \\(\\text{HT}\\))**: Reflection in the \\(y\\)-axis is \\(\\text{HD}\\) with scale factor \\(-1\\). Translating right by \\(c\\) then reflecting gives \\(x \\to x - c \\to -(x - c) = -x + c\\). Reflecting then translating gives \\(x \\to -x \\to -x - c\\). Since \\(-x + c \\neq -x - c\\), they do not commute (\\(N\\)).\n• **Pair 2 (\\(\\text{VD}\\) and \\(\\text{VT}\\))**: Translating vertically by \\(k\\) then dilating by \\(a\\) gives \\(a(y + k) = ay + ak\\). Dilating then translating gives \\(ay + k\\). Since \\(ay + ak \\neq ay + k\\) (when \\(a \\neq 1, k \\neq 0\\)), they do not commute (\\(N\\)).\n• **Pair 5 (\\(\\text{HD}\\) and \\(\\text{HT}\\))**: Translating horizontally then dilating gives \\(f(k(x - c)) = f(kx - kc)\\). Dilating then translating gives \\(f(kx - c)\\). Since \\(kx - kc \\neq kx - c\\), they do not commute (\\(N\\)).",
+              "work": "\\begin{aligned} &\\text{Pair 1 (} y\\text{-ref} \\times \\text{HT}): \\quad -(x - c) = -x + c \\neq -x - c \\implies N \\\\ &\\text{Pair 2 (VD} \\times \\text{VT}): \\quad a(y + k) = ay + ak \\neq ay + k \\implies N \\\\ &\\text{Pair 5 (HD} \\times \\text{HT}): \\quad k(x - c) = kx - kc \\neq kx - c \\implies N \\end{aligned}",
+              "figure": {
+                "svg": "fig:7573927d33"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
+              "explain": "Prove algebraically why the three orthogonal and same-type pairs commute (\\(C\\)):\n• **Pair 3 (\\(\\text{VD}\\) and \\(x\\)-axis reflection)**: Reflection in the \\(x\\)-axis is \\(\\text{VD}\\) with factor \\(-1\\). Both operate on the \\(y\\)-output by multiplication: \\((-1) \\cdot (ay) = a \\cdot (-y) = -ay\\). The order does not matter: they commute (\\(C\\)).\n• **Pair 4 (\\(\\text{HT}\\) and \\(\\text{VT}\\))**: Translating horizontally by \\(c\\) acts on \\(x \\mapsto x + c\\), while translating vertically by \\(k\\) acts on \\(y \\mapsto y + k\\). Either order maps \\((x, y) \\to (x + c, y + k)\\): they commute (\\(C\\)).\n• **Pair 6 (\\(x\\)-axis reflection and \\(\\text{HT}\\))**: Reflection in the \\(x\\)-axis negates the function value (\\(-f(x)\\)), and horizontal translation replaces \\(x\\) with \\(x - c\\). In either order, the result is \\(-f(x - c)\\): they commute (\\(C\\)).",
+              "work": "\\begin{aligned} &\\text{Pair 3 (VD} \\times x\\text{-ref}): \\quad (-1)(ay) = a(-y) = -ay \\implies C \\\\ &\\text{Pair 4 (HT} \\times \\text{VT}): \\quad (x + c, y + k) \\text{ in both orders} \\implies C \\\\ &\\text{Pair 6 (} x\\text{-ref} \\times \\text{HT}): \\quad -f(x - c) \\text{ in both orders} \\implies C \\end{aligned}",
+              "figure": {
+                "svg": "fig:41c1223013"
+              }
             },
             {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
+              "explain": "Confirm that all six algebraic results match the entries in the commutativity table:\n1. Reflection in \\(y\\)-axis (\\(\\text{HD}\\)) and \\(\\text{HT}\\): \\(N\\) matches row \\(\\text{HD}\\), col \\(\\text{HT}\\).\n2. \\(\\text{VD}\\) and \\(\\text{VT}\\): \\(N\\) matches row \\(\\text{VD}\\), col \\(\\text{VT}\\).\n3. \\(\\text{VD}\\) and reflection in \\(x\\)-axis (\\(\\text{VD}\\)): \\(C\\) matches row \\(\\text{VD}\\), col \\(\\text{VD}\\).\n4. \\(\\text{HT}\\) and \\(\\text{VT}\\): \\(C\\) matches row \\(\\text{VT}\\), col \\(\\text{HT}\\).\n5. \\(\\text{HD}\\) and \\(\\text{HT}\\): \\(N\\) matches row \\(\\text{HD}\\), col \\(\\text{HT}\\).\n6. Reflection in \\(x\\)-axis (\\(\\text{VD}\\)) and \\(\\text{HT}\\): \\(C\\) matches row \\(\\text{VD}\\), col \\(\\text{HT}\\).\n\nConclusion: All pairs agree with the table.",
+              "work": "\\begin{aligned} &\\text{Checklist against table entries:} \\\\ &\\quad 1.\\; \\text{HD} \\times \\text{HT} = N \\quad \\checkmark \\\\ &\\quad 2.\\; \\text{VD} \\times \\text{VT} = N \\quad \\checkmark \\\\ &\\quad 3.\\; \\text{VD} \\times \\text{VD} = C \\quad \\checkmark \\\\ &\\quad 4.\\; \\text{HT} \\times \\text{VT} = C \\quad \\checkmark \\\\ &\\quad 5.\\; \\text{HD} \\times \\text{HT} = N \\quad \\checkmark \\\\ &\\quad 6.\\; \\text{VD} \\times \\text{HT} = C \\quad \\checkmark \\\\ &\\therefore \\text{All 6 pairs agree with the table.} \\end{aligned}",
+              "figure": {
+                "svg": "fig:082d7e17bb"
+              }
             }
           ],
           "manual": true,
-          "timeLimit": 90,
+          "timeLimit": 180,
           "xp": 3
         },
         {
@@ -20663,25 +20681,25 @@
             {
               "id": "y11-5g-q7c",
               "type": "mc",
-              "stem": "Which statement correctly checks the table against Question 5 (commuting pairs)?",
+              "stem": "Which statement correctly checks the table against the commutativity of the six key transformation pairs?",
               "options": [
-                "The table contradicts Question 5 for every pair involving a reflection.",
+                "The table contradicts the commutativity rules for every pair involving a reflection.",
                 "y-axis reflection with HT: N; VD with VT: N; VD with x-axis reflection: C; HT with VT: C; HD with HT: N; x-axis reflection with HT: C — consistent with the table.",
-                "Question 5 only matches the table when both transformations are translations.",
-                "The table says HD and HT commute, which disagrees with Question 5."
+                "The commutativity rules only match the table when both transformations are translations.",
+                "The table says HD and HT commute, which disagrees with algebraic transformation rules."
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Map each Question 5 pair onto HT/VT/HD/VD (with reflections as dilations of factor \\(-1\\)).",
-                  "work": "\\(\\text{Match Q5 pairs to table codes}\\)"
+                  "explain": "Map each transformation pair onto HT/VT/HD/VD (with reflections as dilations of factor \\(-1\\)).",
+                  "work": "\\(\\text{Match transformation pairs to table codes}\\)"
                 },
                 {
                   "explain": "y-axis reflection (HD) with HT → N; VD with VT → N; two vertical dilations → C; HT with VT → C; HD with HT → N; x-axis reflection (VD) with HT → C.",
                   "work": "\\(\\text{All match the table}\\)"
                 },
                 {
-                  "explain": "The table is consistent with Question 5.",
+                  "explain": "The table is consistent with all transformation pairs.",
                   "work": "\\(\\text{Consistent}\\)"
                 }
               ],

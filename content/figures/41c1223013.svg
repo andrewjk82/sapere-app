@@ -1,0 +1,60 @@
+<svg width="500" height="340" viewBox="0 0 500 340" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="340" fill="#f8fafc" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Step Banner -->
+  <rect x="20" y="14" width="460" height="28" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="250" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#15803d">
+    Step 3: Mathematical Proof for Commuting Pairs (Result: C)
+  </text>
+
+  <!-- Pair 3: VD & x-axis reflection -->
+  <rect x="20" y="52" width="460" height="74" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="70" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800" fill="#166534">
+    Pair 3: Vertical Dilation (VD, factor a) and Reflection in x-axis (VD, factor −1)
+  </text>
+  <text x="35" y="88" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 1 (Dilate then Reflect): y → ay → (−1)·(ay) = <tspan font-weight="700" fill="#15803d">−ay</tspan>
+  </text>
+  <text x="35" y="104" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 2 (Reflect then Dilate): y → −y → a·(−y) = <tspan font-weight="700" fill="#15803d">−ay</tspan>
+  </text>
+  <text x="460" y="98" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#16a34a">Both equal −ay ⇒ C</text>
+
+  <!-- Pair 4: HT & VT -->
+  <rect x="20" y="136" width="460" height="74" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="154" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800" fill="#166534">
+    Pair 4: Horizontal Translation (HT, shift +c) and Vertical Translation (VT, shift +k)
+  </text>
+  <text x="35" y="172" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 1 (Horizontal then Vertical): (x, y) → (x + c, y) → <tspan font-weight="700" fill="#15803d">(x + c, y + k)</tspan>
+  </text>
+  <text x="35" y="188" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 2 (Vertical then Horizontal): (x, y) → (x, y + k) → <tspan font-weight="700" fill="#15803d">(x + c, y + k)</tspan>
+  </text>
+  <text x="460" y="182" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#16a34a">Identical points ⇒ C</text>
+
+  <!-- Pair 6: x-axis reflection & HT -->
+  <rect x="20" y="220" width="460" height="74" rx="8" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="238" font-family="system-ui, sans-serif" font-size="11.5" font-weight="800" fill="#166534">
+    Pair 6: Reflection in x-axis (VD, factor −1) and Horizontal Translation (HT, shift +c)
+  </text>
+  <text x="35" y="256" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 1: Shift input x → x − c, then negate output y → −y gives <tspan font-weight="700" fill="#15803d">−f(x − c)</tspan>
+  </text>
+  <text x="35" y="272" font-family="system-ui, sans-serif" font-size="10.5" fill="#475569">
+    • Order 2: Negate output y → −y, then shift input x → x − c gives <tspan font-weight="700" fill="#15803d">−f(x − c)</tspan>
+  </text>
+  <text x="460" y="266" text-anchor="end" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#16a34a">Both equal −f(x−c) ⇒ C</text>
+
+  <!-- Bottom Conclusion -->
+  <text x="250" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#166534">
+    All 3 orthogonal or same-type pairs commute: Table entry = C.
+  </text>
+</svg>
