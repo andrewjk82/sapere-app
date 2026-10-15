@@ -1,6 +1,6 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { flushSync } from 'react-dom';
-import { PenTool, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3 } from 'lucide-react';
+import { PenTool, PenLine, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3, Minus, Square, Circle } from 'lucide-react';
 import StickerLayer from './StickerLayer';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
@@ -11,7 +11,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.3-tap-undo';
+const CANVAS_VERSION = 'v10.4-ballpoint-shapes';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -82,8 +82,48 @@ function replayStroke(ctx, stroke, dpr) {
   if (stroke.isEraser) {
     drawEraserSegments(ctx, stroke.points, 1, stroke.width, dpr);
   } else {
-    drawPenSegments(ctx, stroke.points, 1, stroke.color, dpr, true);
+    drawStroke(ctx, stroke, dpr, true);
   }
+}
+
+function drawStroke(ctx, stroke, dpr, includeTip = false) {
+  if (stroke?.shape) {
+    const pts = stroke.points || [];
+    if (!ctx || pts.length < 2) return;
+    ctx.save();
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.strokeStyle = stroke.color;
+    ctx.lineWidth = Math.max(0.6, pts[0][2] || stroke.width) * dpr;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.beginPath();
+    ctx.moveTo(pts[0][0] * dpr, pts[0][1] * dpr);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0] * dpr, pts[i][1] * dpr);
+    ctx.stroke();
+    ctx.restore();
+    return;
+  }
+  drawPenSegments(ctx, stroke.points, 1, stroke.color, dpr, includeTip);
+}
+
+function makeShapePoints(shape, start, end, width) {
+  const lineWidth = width * 1.25;
+  const point = (x, y) => [x, y, lineWidth];
+  if (shape === 'line') return [point(start.x, start.y), point(end.x, end.y)];
+  if (shape === 'rectangle') {
+    return [
+      point(start.x, start.y), point(end.x, start.y), point(end.x, end.y),
+      point(start.x, end.y), point(start.x, start.y),
+    ];
+  }
+  const cx = (start.x + end.x) / 2;
+  const cy = (start.y + end.y) / 2;
+  const rx = Math.abs(end.x - start.x) / 2;
+  const ry = Math.abs(end.y - start.y) / 2;
+  return Array.from({ length: 49 }, (_, i) => {
+    const angle = (i / 48) * Math.PI * 2;
+    return point(cx + Math.cos(angle) * rx, cy + Math.sin(angle) * ry);
+  });
 }
 
 const pageHasInk = (pageStrokes = []) =>
@@ -389,6 +429,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       return;
     }
 
+    if (stroke.shape) {
+      clearCanvas(liveCanvasRef.current, getLiveCtx());
+      clearCanvas(displayCanvasRef.current, getTipCtx());
+      drawStroke(getLiveCtx(), stroke, dpr);
+      liveDrawnIdxRef.current = pts.length;
+      return;
+    }
+
     drawPenSegments(getLiveCtx(), pts, liveDrawnIdxRef.current, stroke.color, dpr, false);
     liveDrawnIdxRef.current = pts.length;
 
@@ -563,6 +611,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const widthFor = (stroke, pressure, velocity) => {
     if (stroke.isEraser) return stroke.width;
     const baseW = stroke.width * 1.25;
+    if (stroke.penStyle === 'ballpoint' || stroke.shape) return baseW;
     let target;
     if (stroke.hasRealPressure) {
       target = baseW * (0.55 + Math.min(1, pressure) * 1.1);
@@ -578,6 +627,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const rect = rectRef.current;
     const stroke = currentStrokeRef.current;
     if (!rect || !stroke) return false;
+    if (stroke.shape) {
+      const x = (e.clientX - rect.left) * rect.sx;
+      const y = (e.clientY - rect.top) * rect.sy;
+      stroke.points = makeShapePoints(stroke.shape, stroke.start, { x, y }, stroke.width);
+      return true;
+    }
     const pts = stroke.points;
     const events = (typeof e.getCoalescedEvents === 'function' && e.getCoalescedEvents().length)
       ? e.getCoalescedEvents()
@@ -651,7 +706,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const dpr = backScaleRef.current;
     // Capture the genuine final point so quick taps / short flicks never vanish.
     const rect = rectRef.current;
-    if (finalE && rect && typeof finalE.clientX === 'number') {
+    if (finalE && !stroke.shape && rect && typeof finalE.clientX === 'number') {
       const x = (finalE.clientX - rect.left) * rect.sx;
       const y = (finalE.clientY - rect.top) * rect.sy;
       const pts = stroke.points;
@@ -679,7 +734,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       drawEraserSegments(getBgCtx(), stroke.points, liveDrawnIdxRef.current, stroke.width, dpr);
     } else {
       // Commit to bg FIRST, then clear the live + tip overlays → zero flash.
-      drawPenSegments(getBgCtx(), stroke.points, 1, stroke.color, dpr, true);
+      drawStroke(getBgCtx(), stroke, dpr, true);
       clearCanvas(liveCanvasRef.current, getLiveCtx());
       clearCanvas(displayCanvasRef.current, getTipCtx());
     }
@@ -774,19 +829,27 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       return;
     }
 
-    const isEraser = activeToolRef.current === 'eraser';
-    const hasRealPressure = isPen;
+    const activeTool = activeToolRef.current;
+    const isEraser = activeTool === 'eraser';
+    const shape = ['line', 'rectangle', 'circle'].includes(activeTool) ? activeTool : null;
+    const penStyle = activeTool === 'ballpoint' ? 'ballpoint' : 'standard';
+    const hasRealPressure = isPen && activeTool === 'pen';
     const stroke = {
       points: [],
       color: strokeColorRef.current,
       width: strokeWidthRef.current,
       isEraser,
+      penStyle,
+      shape,
+      start: shape ? pt : null,
       hasRealPressure,
       completed: false,
     };
     const pressure = hasRealPressure && e.pressure > 0 ? e.pressure : 0.5;
-    smoothWRef.current = (strokeWidthRef.current * 1.25) * (isEraser ? 1 : (0.55 + pressure * 1.1));
-    stroke.points.push([pt.x, pt.y, widthFor(stroke, pressure, 0)]);
+    smoothWRef.current = strokeWidthRef.current * 1.25 * (isEraser ? 1 : (0.55 + pressure * 1.1));
+    stroke.points = shape
+      ? makeShapePoints(shape, pt, pt, strokeWidthRef.current)
+      : [[pt.x, pt.y, widthFor(stroke, pressure, 0)]];
 
     isDrawingRef.current = true;
     liveDrawnIdxRef.current = 1;
@@ -1436,10 +1499,28 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               <MousePointer2 size={14} />
               {!hideTitle && (palmGuard ? 'Pen Only' : 'All Touch')}
             </button>
-            {/* Tapping the tool that is already selected swaps pen <-> eraser. */}
-            <button onClick={() => setActiveTool(tool => (tool === 'pen' ? 'eraser' : 'pen'))} title={activeTool === 'pen' ? 'Pen — tap again for eraser' : 'Pen'} aria-label="Pen" aria-pressed={activeTool === 'pen'} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: activeTool === 'pen' ? '#e0e7ff' : '#f1f5f9', color: activeTool === 'pen' ? '#4f46e5' : '#64748b' }}>
-              <PenTool size={15} />
-            </button>
+            {[
+              { id: 'pen', label: 'Pen', Icon: PenTool },
+              { id: 'ballpoint', label: 'Ballpoint pen', Icon: PenLine },
+              { id: 'line', label: 'Straight line', Icon: Minus },
+              { id: 'rectangle', label: 'Rectangle', Icon: Square },
+              { id: 'circle', label: 'Circle or ellipse', Icon: Circle },
+            ].map(({ id, label, Icon }) => {
+              const selected = activeTool === id;
+              return (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => setActiveTool(id)}
+                  title={label}
+                  aria-label={label}
+                  aria-pressed={selected}
+                  style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: selected ? '#e0e7ff' : '#f1f5f9', color: selected ? '#4f46e5' : '#64748b' }}
+                >
+                  <Icon size={15} />
+                </button>
+              );
+            })}
             <button
               onClick={() => setActiveTool(tool => (tool === 'eraser' ? 'pen' : 'eraser'))}
               title={activeTool === 'eraser' ? 'Eraser — tap again for pen' : 'Eraser'}
@@ -1465,7 +1546,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             </select>
             <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
               {COLORS.map(c => (
-                <button key={c} onClick={() => { setStrokeColor(c); setActiveTool('pen'); }} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
+                <button key={c} onClick={() => setStrokeColor(c)} aria-label={`Ink color ${c}`} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
               ))}
             </div>
           </div>
