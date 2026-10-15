@@ -124,6 +124,63 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "jr2013-qFc",
+          "type": "review",
+          "stem": "(c)(i) Find the values of \\(y\\) so that the quadratic equation \\(x^2+(y-1)x+y=0\\) has real roots. (ii) Hence, or otherwise, find the range of the function \\(y=\\dfrac{x-x^2}{x+1}\\), to 1 decimal place. (iii) Find the oblique asymptote for the graph of \\(y=\\dfrac{x-x^2}{x+1}\\). (iv) Sketch the graph of \\(y=\\dfrac{x-x^2}{x+1}\\) for \\(-3\\le x\\le4\\), labelling all intercepts and asymptotes.",
+          "figure": {
+            "svg": "fig:5da1688fca"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "Real roots require a non-negative discriminant: \\(\\Delta=(y-1)^2-4(1)(y)\\ge0\\).",
+              "work": "\\((y-1)^2-4y \\ge 0 \\Rightarrow y^2-2y+1-4y\\ge0 \\Rightarrow y^2-6y+1\\ge0\\)"
+            },
+            {
+              "explain": "Solve the corresponding equality \\(y^2-6y+1=0\\) using the quadratic formula.",
+              "work": "\\(y = \\dfrac{6\\pm\\sqrt{36-4}}{2} = \\dfrac{6\\pm\\sqrt{32}}{2} = 3\\pm2\\sqrt2\\)"
+            },
+            {
+              "explain": "Since this upward parabola in \\(y\\) is \\(\\ge0\\) outside its roots, state the solution set.",
+              "work": "\\(y \\le 3-2\\sqrt2\\) or \\(y \\ge 3+2\\sqrt2\\)"
+            },
+            {
+              "explain": "For part (ii): rearranging \\(y=\\dfrac{x-x^2}{x+1}\\) as \\(y(x+1)=x-x^2 \\Rightarrow x^2+(y-1)x+y=0\\) shows this is EXACTLY the equation from part (i) — so the range of the function is precisely the set of \\(y\\)-values for which this equation has a real solution for \\(x\\).",
+              "work": "Range \\(= \\{y: y\\le3-2\\sqrt2 \\text{ or } y\\ge3+2\\sqrt2\\}\\)"
+            },
+            {
+              "explain": "Evaluate the boundary values numerically, to 1 decimal place.",
+              "work": "\\(3-2\\sqrt2 \\approx 0.2, \\qquad 3+2\\sqrt2\\approx5.8\\); Range: \\(y\\le0.2\\) or \\(y\\ge5.8\\)"
+            },
+            {
+              "explain": "For part (iii): perform polynomial long division on \\(\\dfrac{-x^2+x}{x+1}\\) to find the oblique asymptote (the quotient term, ignoring the remainder).",
+              "work": "\\(\\dfrac{-x^2+x}{x+1} = -x+2-\\dfrac{2}{x+1}\\)"
+            },
+            {
+              "explain": "As \\(x\\to\\pm\\infty\\), the remainder term vanishes, leaving the oblique asymptote.",
+              "work": "Oblique asymptote: \\(y=-x+2\\)"
+            },
+            {
+              "explain": "For part (iv): the curve has a vertical asymptote at \\(x=-1\\) (where the denominator is zero) and the oblique asymptote \\(y=-x+2\\) found above. \\(x\\)-intercepts are at \\(x=0\\) and \\(x=1\\) (where \\(x-x^2=0\\)); \\(y\\)-intercept is also \\(0\\) (at \\(x=0\\)). Sketch both branches as shown above.",
+              "work": "Vertical asymptote \\(x=-1\\); oblique asymptote \\(y=-x+2\\); intercepts at \\(x=0\\) and \\(x=1\\).",
+              "figure": {
+                "svg": "fig:5da1688fca"
+              }
+            }
+          ],
+          "manual": true,
+          "xp": 3,
+          "difficulty": "hard",
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "sourceSection": "Section F",
+            "sourcePart": "c"
+          }
         }
       ]
     }

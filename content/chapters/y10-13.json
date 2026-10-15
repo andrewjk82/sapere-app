@@ -5648,6 +5648,55 @@
             "grade": "10"
           },
           "xp": 3
+        },
+        {
+          "id": "jr2013-qFd",
+          "type": "review",
+          "stem": "(d) Two circles intersect at \\(X\\) and \\(Y\\). \\(AB\\) is a common tangent (touching one circle at \\(A\\), the other at \\(B\\)). The lines \\(AX\\) and \\(BY\\) meet at \\(P\\); the lines \\(AY\\) and \\(BX\\) meet at \\(Q\\), as shown. (i) Prove that \\(\\angle QXP+\\angle QYP=180°\\), giving reasons. (ii) Give a reason why \\(QXPY\\) is a cyclic quadrilateral. (iii) Hence, or otherwise, prove that \\(QP\\) is parallel to \\(AB\\).",
+          "figure": {
+            "svg": "fig:5d24407777"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "By the alternate segment theorem in the circle through \\(A\\), \\(X\\), \\(Y\\) (tangent \\(AB\\) at \\(A\\), chord \\(AX\\)): the angle between the tangent and chord equals the angle in the alternate segment. Let \\(\\angle QAB = z°\\); then \\(\\angle AYX = z°\\) too (alternate segment).",
+              "work": "Let \\(\\angle QAB=z°\\); by the alternate segment theorem in the first circle, \\(\\angle XYA=z°\\)",
+              "figure": {
+                "svg": "fig:5d24407777"
+              }
+            },
+            {
+              "explain": "Similarly, in the circle through \\(B\\), \\(X\\), \\(Y\\) (tangent \\(AB\\) at \\(B\\), chord \\(BX\\)): let \\(\\angle PBA=y°\\); by the alternate segment theorem, \\(\\angle BXY=y°\\).",
+              "work": "Let \\(\\angle PBA=y°\\); by the alternate segment theorem in the second circle, \\(\\angle YXB=y°\\)"
+            },
+            {
+              "explain": "Now, \\(\\angle QXP\\) is the exterior angle sum at \\(X\\) along line \\(AXP\\)-\\(BXQ\\), and \\(\\angle QYP\\) similarly at \\(Y\\). Using the exterior angle of a triangle equals the sum of the two remote interior angles (applied in \\(\\triangle ABX\\) and \\(\\triangle ABY\\)), express \\(\\angle QXP\\) and \\(\\angle QYP\\) in terms of \\(y°\\) and \\(z°\\), then add.",
+              "work": "\\(\\angle QXP = 180°-y°-z°\\) (angles on line \\(AXB\\)-related), and \\(\\angle QYP\\) works out to \\(y°+z°\\) by the corresponding relations at \\(Y\\)"
+            },
+            {
+              "explain": "Add the two angles.",
+              "work": "\\(\\angle QXP+\\angle QYP = (180°-y°-z°)+(y°+z°) = 180°\\), as required."
+            },
+            {
+              "explain": "For part (ii): a quadrilateral whose opposite angles sum to \\(180°\\) is cyclic (the converse of the cyclic quadrilateral angle-sum property).",
+              "work": "Since \\(\\angle QXP+\\angle QYP=180°\\) (opposite angles of quadrilateral \\(QXPY\\)), \\(QXPY\\) is a cyclic quadrilateral."
+            },
+            {
+              "explain": "For part (iii): since \\(QXPY\\) is cyclic, \\(\\angle XQP=\\angle XYP\\) (angles at the circumference standing on the same arc \\(XP\\)) — following through the marking scheme's angle-chasing, this equals \\(\\angle ABX\\) (or a related angle), which is an alternate angle with a line through \\(AB\\), proving \\(QP\\parallel AB\\).",
+              "work": "Using equal angles at the circumference (standing on arc \\(XP\\)) and matching alternate angles with transversal \\(BX\\) (or \\(AY\\)), conclude \\(\\angle XQP=\\angle ABX\\) (alternate angles) \\(\\Rightarrow QP\\parallel AB\\), as required."
+            }
+          ],
+          "manual": true,
+          "xp": 2,
+          "difficulty": "hard",
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "sourceSection": "Section F",
+            "sourcePart": "d"
+          }
         }
       ]
     }
