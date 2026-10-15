@@ -4914,185 +4914,50 @@
           "difficulty": "hard",
           "stem": "Events \\(A\\) and \\(B\\) are shown in the Venn diagram. Show that \\(A\\) and \\(B\\) are independent.",
           "figure": {
-            "jsxGraph": {
-              "width": 350,
-              "height": 260,
-              "boundingbox": [
-                -0.5,
-                6.5,
-                11.5,
-                -0.5
-              ],
-              "boardOptions": {
-                "keepaspectratio": false
-              },
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "r1",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "name": "",
-                  "size": 0
-                },
-                {
-                  "type": "point",
-                  "id": "r2",
-                  "coords": [
-                    11,
-                    0
-                  ],
-                  "name": "",
-                  "size": 0
-                },
-                {
-                  "type": "point",
-                  "id": "r3",
-                  "coords": [
-                    11,
-                    6
-                  ],
-                  "name": "",
-                  "size": 0
-                },
-                {
-                  "type": "point",
-                  "id": "r4",
-                  "coords": [
-                    0,
-                    6
-                  ],
-                  "name": "",
-                  "size": 0
-                },
-                {
-                  "type": "segment",
-                  "from": "r1",
-                  "to": "r2",
-                  "color": "black",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "segment",
-                  "from": "r2",
-                  "to": "r3",
-                  "color": "black",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "segment",
-                  "from": "r3",
-                  "to": "r4",
-                  "color": "black",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "segment",
-                  "from": "r4",
-                  "to": "r1",
-                  "color": "black",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "circle",
-                  "id": "cA",
-                  "center": [
-                    4,
-                    3
-                  ],
-                  "radius": 2.3,
-                  "color": "blue",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "circle",
-                  "id": "cB",
-                  "center": [
-                    7,
-                    3
-                  ],
-                  "radius": 2.3,
-                  "color": "blue",
-                  "strokeWidth": 1.5
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    2.8,
-                    5.2
-                  ],
-                  "content": "A",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    8.2,
-                    5.2
-                  ],
-                  "content": "B",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    3,
-                    3
-                  ],
-                  "content": "14",
-                  "fontSize": 14
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5.5,
-                    3
-                  ],
-                  "content": "6",
-                  "fontSize": 14
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    8,
-                    3
-                  ],
-                  "content": "9",
-                  "fontSize": 14
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    9.5,
-                    1
-                  ],
-                  "content": "21",
-                  "fontSize": 14
-                }
-              ]
-            }
+            "svg": "fig:b603ab3316"
           },
-          "answer": "P(A) = 2/5, P(B) = 3/10, P(A \\cap B) = 3/25.\nP(A) x P(B) = 2/5 x 3/10 = 6/50 = 3/25 = P(A \\cap B).\nTherefore A and B are independent.",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "P(A) = 2/5, P(B) = 3/10, P(A \\cap B) = 3/25.\nP(A) x P(B) = 2/5 x 3/10 = 6/50 = 3/25 = P(A \\cap B).\nTherefore A and B are independent.",
+          "answer": "\\(n(S)=14+6+9+21=50\\)\n\\(P(A)=\\tfrac{14+6}{50}=\\tfrac{2}{5},\\qquad P(B)=\\tfrac{6+9}{50}=\\tfrac{3}{10},\\qquad P(A\\cap B)=\\tfrac{6}{50}=\\tfrac{3}{25}\\)\n\\(P(A)\\times P(B)=\\tfrac{2}{5}\\times\\tfrac{3}{10}=\\tfrac{6}{50}=\\tfrac{3}{25}=P(A\\cap B)\\), so \\(A\\) and \\(B\\) are independent.\nMarking guide (3 marks): 1 total of 50 and the correct \\(P(A)\\), \\(P(B)\\); 1 \\(P(A\\cap B)=\\tfrac{3}{25}\\) and \\(P(A)\\times P(B)=\\tfrac{3}{25}\\); 1 conclusion that the two are equal, so the events are independent.",
+          "hint": "Two events are independent when \\(P(A\\cap B)=P(A)\\times P(B)\\). Read the counts from the Venn diagram and divide each by the total.",
+          "solution": "\\(n(S)=14+6+9+21=50\\)\n\\(P(A)=\\tfrac{14+6}{50}=\\tfrac{2}{5},\\qquad P(B)=\\tfrac{6+9}{50}=\\tfrac{3}{10},\\qquad P(A\\cap B)=\\tfrac{6}{50}=\\tfrac{3}{25}\\)\n\\(P(A)\\times P(B)=\\tfrac{2}{5}\\times\\tfrac{3}{10}=\\tfrac{6}{50}=\\tfrac{3}{25}=P(A\\cap B)\\), so \\(A\\) and \\(B\\) are independent.\nMarking guide (3 marks): 1 total of 50 and the correct \\(P(A)\\), \\(P(B)\\); 1 \\(P(A\\cap B)=\\tfrac{3}{25}\\) and \\(P(A)\\times P(B)=\\tfrac{3}{25}\\); 1 conclusion that the two are equal, so the events are independent.",
           "steps": [
             {
-              "explain": "First, find the total number of outcomes in the sample space by adding all regions of the Venn diagram.",
-              "work": "\\(n(S) = 14 + 6 + 9 + 21 = 50\\)"
+              "explain": "Add every region of the Venn diagram to find the total number of outcomes: A only (14), both A and B (6), B only (9) and neither (21).",
+              "work": "\\(n(S)=14+6+9+21=50\\)",
+              "figure": {
+                "svg": "fig:95b478981b"
+              }
             },
             {
-              "explain": "Calculate \\(P(A)\\). Event \\(A\\) includes both the 'A only' region and the intersection. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-              "work": "\\(P(A) = \\frac{14 + 6}{50} = \\frac{20}{50} = \\frac{2}{5}\\)"
+              "explain": "Event \\(A\\) is the whole of circle \\(A\\): the 'A only' region (14) together with the overlap (6). Divide by the total.",
+              "work": "\\(P(A)=\\dfrac{14+6}{50}=\\dfrac{20}{50}=\\dfrac{2}{5}\\)",
+              "figure": {
+                "svg": "fig:f125c47134"
+              }
             },
             {
-              "explain": "Calculate \\(P(B)\\). Event \\(B\\) includes both the 'B only' region and the intersection. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-              "work": "\\(P(B) = \\frac{6 + 9}{50} = \\frac{15}{50} = \\frac{3}{10}\\)"
+              "explain": "Event \\(B\\) is the whole of circle \\(B\\): the overlap (6) together with the 'B only' region (9). Divide by the total.",
+              "work": "\\(P(B)=\\dfrac{6+9}{50}=\\dfrac{15}{50}=\\dfrac{3}{10}\\)",
+              "figure": {
+                "svg": "fig:eb809ec40f"
+              }
             },
             {
-              "explain": "Since \\(P(A \\cap B) = \\frac{3}{25} = P(A) \\times P(B)\\), the condition for independence is satisfied. Therefore, events \\(A\\) and \\(B\\) are independent.",
-              "work": "\\(P(A \\cap B) = P(A) \\times P(B) = \\frac{3}{25}\\)"
+              "explain": "\\(A\\cap B\\) means both events happen, which is the overlap of the two circles: 6 outcomes.",
+              "work": "\\(P(A\\cap B)=\\dfrac{6}{50}=\\dfrac{3}{25}\\)",
+              "figure": {
+                "svg": "fig:e283b97b19"
+              }
+            },
+            {
+              "explain": "Events are independent when \\(P(A\\cap B)=P(A)\\times P(B)\\). Multiply the results of steps 2 and 3, and compare the product with the overlap probability from step 4.",
+              "work": "\\(P(A)\\times P(B)=\\dfrac{2}{5}\\times\\dfrac{3}{10}=\\dfrac{6}{50}=\\dfrac{3}{25}=P(A\\cap B)\\)",
+              "figure": {
+                "svg": "fig:e283b97b19"
+              }
+            },
+            {
+              "explain": "The product equals \\(P(A\\cap B)\\), so the condition for independence is satisfied.",
+              "work": "\\(P(A\\cap B)=P(A)\\times P(B)\\ \\Rightarrow\\ A\\text{ and }B\\text{ are independent}\\)"
             }
           ],
           "manual": true,
