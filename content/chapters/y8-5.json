@@ -1756,7 +1756,7 @@
             "&#8203;\\(45^\\circ\\) (Base angles of an isosceles triangle are equal)",
             "&#8203;\\(90^\\circ\\) (Perpendicular lines form a right angle)",
             "&#8203;\\(135^\\circ\\) (Angles on a straight line add to \\(180^\\circ\\))",
-            "&#8203;\\(135^\\circ\\) (Angles in a triangle add to \\(180^\\circ\\))"
+            "&#8203;\\(180^\\circ\\) (Angles in a triangle add to \\(180^\\circ\\))"
           ],
           "answer": 2,
           "hint": "Angles on a straight line add to 180 degrees.",
