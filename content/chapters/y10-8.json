@@ -3361,133 +3361,71 @@
           "id": "y10-8e-q14b",
           "type": "review",
           "difficulty": "hard",
-          "stem": "Analyze the proofs for the parallelogram and isosceles triangles described.\nb) Prove that \\(DE = BF\\).",
+          "stem": "\\(ABCD\\) is a parallelogram. The side \\(CB\\) is extended to \\(E\\) so that \\(AB = AE\\), and the side \\(CD\\) is extended to \\(F\\) so that \\(AD = AF\\), as shown. Prove that \\(DE = BF\\).",
           "figure": {
-            "geometry": {
-              "width": 300,
-              "points": {
-                "C": [
-                  0,
-                  0
-                ],
-                "B": [
-                  5,
-                  0
-                ],
-                "E": [
-                  11,
-                  0
-                ],
-                "D": [
-                  3,
-                  4
-                ],
-                "A": [
-                  8,
-                  4
-                ],
-                "F": [
-                  6.6,
-                  8.8
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B",
-                  "ticks": 1
-                },
-                {
-                  "from": "B",
-                  "to": "C"
-                },
-                {
-                  "from": "C",
-                  "to": "D"
-                },
-                {
-                  "from": "D",
-                  "to": "A",
-                  "ticks": 2
-                },
-                {
-                  "from": "B",
-                  "to": "E"
-                },
-                {
-                  "from": "D",
-                  "to": "F"
-                },
-                {
-                  "from": "A",
-                  "to": "E",
-                  "ticks": 1
-                },
-                {
-                  "from": "A",
-                  "to": "F",
-                  "ticks": 2
-                },
-                {
-                  "from": "D",
-                  "to": "E"
-                },
-                {
-                  "from": "B",
-                  "to": "F"
-                }
-              ],
-              "labelOffsets": {
-                "C": [
-                  -15,
-                  -15
-                ],
-                "B": [
-                  0,
-                  -15
-                ],
-                "E": [
-                  15,
-                  -15
-                ],
-                "D": [
-                  -15,
-                  15
-                ],
-                "A": [
-                  10,
-                  15
-                ],
-                "F": [
-                  15,
-                  15
-                ]
-              }
-            }
+            "svg": "fig:ce9af971e9"
           },
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
+          "answer": "Let \\(\\angle BAD=\\theta\\). Then \\(\\angle ABC=\\angle ADC=180^\\circ-\\theta\\) (co-interior angles, \\(AD\\parallel BC\\) and \\(AB\\parallel DC\\)).\n\\(\\angle ABE=\\angle ADF=\\theta\\) (angles on a straight line).\nSince \\(AB=AE\\) and \\(AD=AF\\): \\(\\angle AEB=\\theta\\), \\(\\angle BAE=180^\\circ-2\\theta\\), \\(\\angle AFD=\\theta\\), \\(\\angle DAF=180^\\circ-2\\theta\\) (base angles of isosceles triangles, angle sum).\n\\(\\angle DAE=\\theta+(180^\\circ-2\\theta)=180^\\circ-\\theta=\\angle FAB\\).\nIn \\(\\triangle ADE\\) and \\(\\triangle AFB\\): \\(AD=AF\\), \\(\\angle DAE=\\angle FAB\\), \\(AE=AB\\), so \\(\\triangle ADE\\equiv\\triangle AFB\\) (SAS) and therefore \\(DE=BF\\).\nMarking guide (4 marks): 1 angles of the parallelogram and the straight-line angles in terms of \\(\\theta\\); 1 base angles and apex angles of the two isosceles triangles; 1 \\(\\angle DAE=\\angle FAB=180^\\circ-\\theta\\); 1 SAS congruence with the vertices in matching order and the conclusion \\(DE=BF\\).",
+          "hint": "Show that \\(\\triangle ADE\\) and \\(\\triangle AFB\\) are congruent. Let \\(\\angle BAD=\\theta\\), then use the parallelogram and the two isosceles triangles to find the angles at \\(A\\).",
           "steps": [
             {
-              "explain": "State the triangles: Identify the triangles you are comparing, e.g., \\(\\Delta ABC\\) and \\(\\Delta DEF\\).",
-              "work": "\\text{In } \\Delta ABC \\text{ and } \\Delta DEF:"
+              "explain": "Plan. \\(DE\\) and \\(BF\\) belong to two different triangles that share the vertex \\(A\\): \\(DE\\) is a side of \\(\\triangle ADE\\) and \\(BF\\) is a side of \\(\\triangle AFB\\). If these triangles are congruent, their corresponding sides \\(DE\\) and \\(BF\\) must be equal. We are given two pairs of equal sides (the tick marks): \\(AE=AB\\) and \\(AD=AF\\). So we look for the angle between each pair; if those two angles are equal, we can use SAS.",
+              "work": "\\(\\text{Aim: show }\\triangle ADE\\equiv\\triangle AFB\\ \\text{(SAS)}\\ \\Rightarrow\\ DE=BF\\)",
+              "figure": {
+                "svg": "fig:aff428ae04"
+              }
             },
             {
-              "explain": "List conditions or set up the ratio: State the three matching parts (with reasons) or the similarity ratio fraction.",
-              "work": "\\text{Identify SSS, SAS, AAS, RHS, or set up } \\frac{x}{a} = \\frac{y}{b}"
+              "explain": "Let \\(\\angle BAD=\\theta\\). In a parallelogram, consecutive angles are co-interior angles between parallel sides, so they add to \\(180^\\circ\\). That makes \\(\\angle ABC\\) (because \\(AD\\parallel BC\\)) and \\(\\angle ADC\\) (because \\(AB\\parallel DC\\)) both equal to \\(180^\\circ-\\theta\\).",
+              "work": "\\(\\angle ABC=180^\\circ-\\theta,\\qquad \\angle ADC=180^\\circ-\\theta\\)",
+              "figure": {
+                "svg": "fig:ef4de24bac"
+              }
             },
             {
-              "explain": "Solve or Conclude: Conclude congruence/similarity with the appropriate test or solve for the unknown.",
-              "work": "\\text{Therefore, } \\Delta ABC \\equiv \\Delta DEF \\text{ (Test)} \\text{ or } x = \\dots"
+              "explain": "\\(C\\), \\(B\\), \\(E\\) lie on one straight line, so \\(\\angle ABE\\) and \\(\\angle ABC\\) add to \\(180^\\circ\\). In the same way \\(C\\), \\(D\\), \\(F\\) lie on one straight line, so \\(\\angle ADF\\) and \\(\\angle ADC\\) add to \\(180^\\circ\\).",
+              "work": "\\(\\angle ABE=180^\\circ-(180^\\circ-\\theta)=\\theta,\\qquad \\angle ADF=180^\\circ-(180^\\circ-\\theta)=\\theta\\)",
+              "figure": {
+                "svg": "fig:859553323a"
+              }
             },
             {
-              "explain": "Final Answer & Pitfall: Always ensure the vertices in your congruence or similarity statement are listed in exactly the matching order!",
-              "work": "\\text{Final answer}"
+              "explain": "\\(\\triangle ABE\\) is isosceles because \\(AB=AE\\), so its base angles are equal: \\(\\angle AEB=\\angle ABE=\\theta\\). The angles of a triangle add to \\(180^\\circ\\), so the angle at \\(A\\) is \\(180^\\circ-\\theta-\\theta\\). The same reasoning in \\(\\triangle ADF\\) (\\(AD=AF\\)) gives \\(\\angle AFD=\\angle ADF=\\theta\\) and \\(\\angle DAF=180^\\circ-2\\theta\\).",
+              "work": "\\(\\angle BAE=180^\\circ-2\\theta,\\qquad \\angle DAF=180^\\circ-2\\theta\\)",
+              "figure": {
+                "svg": "fig:3ebebbc66a"
+              }
+            },
+            {
+              "explain": "Now find the angle between the equal sides in each triangle we want to compare. In \\(\\triangle ADE\\) that is \\(\\angle DAE\\), made up of \\(\\angle DAB\\) and \\(\\angle BAE\\). In \\(\\triangle AFB\\) it is \\(\\angle FAB\\), made up of \\(\\angle FAD\\) and \\(\\angle DAB\\). Add the parts.",
+              "work": "\\(\\angle DAE=\\theta+(180^\\circ-2\\theta)=180^\\circ-\\theta,\\qquad \\angle FAB=(180^\\circ-2\\theta)+\\theta=180^\\circ-\\theta\\)",
+              "figure": {
+                "svg": "fig:3c953929fc"
+              }
+            },
+            {
+              "explain": "Compare the triangles. Two pairs of sides are equal (given), and the angles between those sides are equal (both \\(180^\\circ-\\theta\\)). That is the SAS test. Write the vertices in matching order: \\(A\\leftrightarrow A\\), \\(D\\leftrightarrow F\\), \\(E\\leftrightarrow B\\).",
+              "work": "\\(AD=AF,\\quad \\angle DAE=\\angle FAB,\\quad AE=AB\\ \\Rightarrow\\ \\triangle ADE\\equiv\\triangle AFB\\ \\text{(SAS)}\\)",
+              "figure": {
+                "svg": "fig:90d30806a6"
+              }
+            },
+            {
+              "explain": "Corresponding sides of congruent triangles are equal. In \\(\\triangle ADE\\) the side opposite \\(\\angle A\\) is \\(DE\\); in \\(\\triangle AFB\\) the side opposite \\(\\angle A\\) is \\(FB\\). Therefore \\(DE=BF\\).",
+              "work": "\\(DE=FB\\ \\Rightarrow\\ DE=BF\\)",
+              "figure": {
+                "svg": "fig:c15aab6d7e"
+              }
+            },
+            {
+              "explain": "Numerical check (not part of the proof). On the scale drawing take \\(C=(0,0)\\), \\(B=(5,0)\\) and \\(D=(3,4)\\). Then \\(A=(8,4)\\), \\(E=(11,0)\\) and \\(F=(6.6,\\,8.8)\\), and both given equalities hold: \\(AB=AE=5\\) and \\(AD=AF=5\\). Calculate the two lengths with the distance formula.",
+              "work": "\\(DE=\\sqrt{(11-3)^2+(0-4)^2}=\\sqrt{80},\\qquad BF=\\sqrt{(6.6-5)^2+(8.8-0)^2}=\\sqrt{80}\\)"
             }
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 3
+          "xp": 3,
+          "solution": "Let \\(\\angle BAD=\\theta\\). Then \\(\\angle ABC=\\angle ADC=180^\\circ-\\theta\\) (co-interior angles, \\(AD\\parallel BC\\) and \\(AB\\parallel DC\\)).\n\\(\\angle ABE=\\angle ADF=\\theta\\) (angles on a straight line).\nSince \\(AB=AE\\) and \\(AD=AF\\): \\(\\angle AEB=\\theta\\), \\(\\angle BAE=180^\\circ-2\\theta\\), \\(\\angle AFD=\\theta\\), \\(\\angle DAF=180^\\circ-2\\theta\\) (base angles of isosceles triangles, angle sum).\n\\(\\angle DAE=\\theta+(180^\\circ-2\\theta)=180^\\circ-\\theta=\\angle FAB\\).\nIn \\(\\triangle ADE\\) and \\(\\triangle AFB\\): \\(AD=AF\\), \\(\\angle DAE=\\angle FAB\\), \\(AE=AB\\), so \\(\\triangle ADE\\equiv\\triangle AFB\\) (SAS) and therefore \\(DE=BF\\).\nMarking guide (4 marks): 1 angles of the parallelogram and the straight-line angles in terms of \\(\\theta\\); 1 base angles and apex angles of the two isosceles triangles; 1 \\(\\angle DAE=\\angle FAB=180^\\circ-\\theta\\); 1 SAS congruence with the vertices in matching order and the conclusion \\(DE=BF\\)."
         },
         {
           "id": "y10-8e-q15a",
