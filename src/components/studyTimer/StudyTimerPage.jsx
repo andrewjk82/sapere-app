@@ -11,6 +11,8 @@ import SubjectExamPanel from './SubjectExamPanel';
 import StudyNotesPage from './StudyNotesPage';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
+import { studySubjectsFor } from '../../utils/studySubjects';
+import { useStudyTimer } from '../../context/studyTimerStore';
 
 /**
  * Study Timer page: per-subject stopwatch + auto stats on the left,
@@ -22,28 +24,12 @@ const StudyTimerPage = () => {
   const { profile } = useProfile();
   const { showToast } = useToast();
   const [isMobile] = useState(window.innerWidth < 768);
-  const [myTotalSec, setMyTotalSec] = useState(null);
-  const [lastFlush, setLastFlush] = useState(null); // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
-  const [activeSubject, setActiveSubject] = useState(null); // mirrors SubjectStopwatch's selected subject
+  // The session (and its last flush / all-time total) lives app-wide — see context/StudyTimerContext.jsx.
+  const { subject: activeSubject, lastFlush, myTotalSec } = useStudyTimer();
   const [notesRefreshKey, setNotesRefreshKey] = useState(0);
   const [view, setView] = useState('timer'); // 'timer' | 'notes'
 
-  const handleFlushed = (info) => {
-    if (Number.isFinite(info?.totalSec)) setMyTotalSec(info.totalSec);
-    setLastFlush(info || null);
-  };
-
-  const subjects = useMemo(() => {
-    const assigned = Array.isArray(profile?.assignedCourse)
-      ? profile.assignedCourse
-      : [profile?.assignedCourse].filter(Boolean);
-    const custom = Array.isArray(profile?.customStudySubjects) ? profile.customStudySubjects : [];
-    const hidden = new Set(Array.isArray(profile?.hiddenStudySubjects) ? profile.hiddenStudySubjects : []);
-    const list = [...new Set([...assigned, ...custom].filter(Boolean))].filter((s) => !hidden.has(s));
-    if (!hidden.has('General Study') && !list.includes('General Study')) list.push('General Study');
-    // Never end up with zero chips — if the student hid everything, fall back.
-    return list.length > 0 ? list : ['General Study'];
-  }, [profile]);
+  const subjects = useMemo(() => studySubjectsFor(profile), [profile]);
 
   const subjectColors = profile?.studySubjectColors || {};
   const examDates = profile?.studySubjectExamDates || {};
@@ -140,14 +126,10 @@ const StudyTimerPage = () => {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <SubjectStopwatch
             uid={user?.uid}
-            profile={profile}
-            subjects={subjects}
             subjectColors={subjectColors}
             onSetSubjectColor={handleSetSubjectColor}
             onAddSubject={handleAddSubject}
             onRemoveSubject={handleRemoveSubject}
-            onFlushed={handleFlushed}
-            onSubjectChange={setActiveSubject}
             onNotesSaved={() => setNotesRefreshKey((k) => k + 1)}
           />
           <SubjectExamPanel

@@ -1,33 +1,18 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, Square, Plus, X } from 'lucide-react';
-import { flushStudySession } from '../../services/studyTimeService';
-import { getDeviceId, publishSessionTransition, fetchRemoteSessionState } from '../../services/studySessionSyncService';
+import { Play, Pause, Square, Plus, X, Minimize2 } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
-import { buildAvatarUrl } from '../../utils/avatarUtils';
-import { publishStudyPresence, clearStudyPresence } from '../../services/studyPresenceService';
 import StudyingNowStrip from './StudyingNowStrip';
-import { nowMs, splitSecondsIntoHourBuckets } from '../../utils/timeUtils';
+import { nowMs } from '../../utils/timeUtils';
 import { SUBJECT_COLOR_PALETTE, DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import AddSubjectModal from './AddSubjectModal';
 import StudySessionScreen from './StudySessionScreen';
 import { emptyItems, loadNotesDraft, saveNotesDraft, clearNotesDraft, saveSessionNotes } from '../../services/studyNotesService';
+import { useStudyTimer, useStudyTimerClock, formatElapsed } from '../../context/studyTimerStore';
 
-const HEARTBEAT_MS = 5 * 60 * 1000; // flush a running session every 5 min
-const RESUME_CAP_SEC = 3 * 60 * 60; // ignore >3h of "stale" localStorage time (laptop was asleep)
-const SESSION_KEY_PREFIX = 'studytimer:session:';
+const RESUME_CAP_SEC = 3 * 60 * 60; // a notes draft older than this is never carried into a new session
 
 const todayStr = () => new Date().toLocaleDateString('en-CA');
-
-const formatElapsed = (totalSec) => {
-  const s = Math.max(0, Math.floor(totalSec));
-  const h = Math.floor(s / 3600);
-  const m = Math.floor((s % 3600) / 60);
-  const sec = s % 60;
-  const mm = String(m).padStart(2, '0');
-  const ss = String(sec).padStart(2, '0');
-  return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
-};
 
 const RING_SIZE = 220;
 const RING_STROKE = 14;
@@ -35,43 +20,20 @@ const RING_R = (RING_SIZE - RING_STROKE) / 2;
 const RING_C = 2 * Math.PI * RING_R;
 
 /**
- * Per-subject stopwatch. Local-first: while running, only a local interval
- * ticks the on-screen display — Firestore is only written at flush points
- * (stop, subject switch, 5-min heartbeat, or resuming a stale session left
- * running in a closed tab), see studyTimeService.js. Pausing is purely
- * local — no write.
- *
- * Timestamps (`Date.now`) are read only inside effects/handlers, never in
- * the render body — `displayElapsedSec` is the one piece of render state,
- * advanced by the ticking effect.
- *
- * Cross-device coordination (see studySessionSyncService.js) is a separate,
- * deliberately cheap signal on top of this: one small doc is written only
- * on start/pause/resume/stop, and read only right before Start and when the
- * tab returns to the foreground — never via onSnapshot or polling. It warns
- * a student before double-running the timer on two devices, and stops this
- * device's session if another device takes it over while this tab was away.
+ * Per-subject stopwatch page view. The session itself (clock, Firestore flushes, auto-pause, cross-device
+ * check, presence) is app-wide in context/StudyTimerContext.jsx, so it keeps running while the student
+ * does homework or curriculum work (shown there by StudyTimerPill). This component owns only the page UI:
+ * the ring, subject chips, and the plan → focus clock → review checklist screens.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed, onSubjectChange, onNotesSaved }) => {
-  const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
-  const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
-  const subjectOptions = useMemo(
-    () => (subjects && subjects.length > 0 ? subjects : ['General Study']),
-    [subjects],
-  );
+const SubjectStopwatch = ({ uid, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onNotesSaved }) => {
+  const timer = useStudyTimer();
+  const displayElapsedSec = useStudyTimerClock();
+  const { subject, phase, subjects: subjectOptions } = timer;
   const colorFor = (s) => subjectColors[s] || DEFAULT_SUBJECT_COLOR;
 
-  const [subject, setSubject] = useState(subjectOptions[0]);
-
-  // Let the parent page know which subject is currently active (e.g. to show
-  // that subject's exam countdown), without lifting all of this component's
-  // timer state up.
-  useEffect(() => { onSubjectChange?.(subject); }, [subject]); // eslint-disable-line react-hooks/exhaustive-deps
   const [addModalOpen, setAddModalOpen] = useState(false);
   const [hoveredSubject, setHoveredSubject] = useState(null);
   const [colorPickerFor, setColorPickerFor] = useState(null);
-  const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
-  const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
   const [focusMode, setFocusMode] = useState(false);
   const [sessionStage, setSessionStage] = useState('plan'); // 'plan' | 'focus' (black clock) | 'review'
   const [notesItems, setNotesItems] = useState(() => emptyItems());
@@ -94,183 +56,15 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
       ? draft.items : null
   );
 
-  // The visible clock counts continuously from Start to Stop/subject-switch
-  // (surviving pauses and periodic Firestore flushes) — only Stop or a
-  // subject change resets it to 0.
-  const runningSinceRef = useRef(null); // ms epoch of the current running leg
-  const bankedSecRef = useRef(0); // elapsed seconds banked from earlier legs (pause/heartbeat), this subject
-  const flushedSecRef = useRef(0); // how much of the total has already reached Firestore
-  const metaRef = useRef(null);
-  const flushingRef = useRef(false);
-  const myTotalSecRef = useRef(null); // last known all-time total; avoids a re-read on every flush
-  const deviceIdRef = useRef(getDeviceId());
-  const lastLocalTransitionMsRef = useRef(0); // when THIS device last published a transition
-
-  // Best-effort cross-device signal — see studySessionSyncService for the
-  // traffic model (event-write only, point-read only at Start / foreground
-  // return, no listener).
-  const publishTransition = (nextPhase, nextSubject) => {
-    lastLocalTransitionMsRef.current = nowMs();
-    publishSessionTransition({ uid, phase: nextPhase, subject: nextSubject, deviceId: deviceIdRef.current });
-  };
-
-  const persistLocal = (nextSubject, nextPhase) => {
-    try {
-      if (nextPhase === 'stopped') {
-        window.localStorage.removeItem(sessionKey);
-      } else {
-        window.localStorage.setItem(sessionKey, JSON.stringify({
-          subject: nextSubject, phase: nextPhase,
-          runningSince: runningSinceRef.current, bankedSec: bankedSecRef.current,
-        }));
-      }
-    } catch { /* ignore */ }
-  };
-
-  // Total elapsed for the current subject session (continuous display value).
-  function currentTotalSec() {
-    if (phase !== 'running' || runningSinceRef.current == null) return bankedSecRef.current;
-    return bankedSecRef.current + Math.floor((nowMs() - runningSinceRef.current) / 1000);
-  }
-
-  // Sends only the not-yet-flushed portion to Firestore. Called from
-  // handlers/intervals, never from render.
-  async function flushDelta() {
-    const total = currentTotalSec();
-    const delta = total - flushedSecRef.current;
-    if (delta <= 0 || flushingRef.current) return;
-    flushingRef.current = true;
-    // Approximate wall-clock window for this delta — good enough for the
-    // "what time of day" ring; see splitSecondsIntoHourBuckets.
-    const end = nowMs();
-    const hourBreakdown = splitSecondsIntoHourBuckets(end - delta * 1000, end);
-    const dateStr = todayStr();
-    try {
-      const { meta, totalSec } = await flushStudySession({
-        uid, dateStr, subject, deltaSec: delta, avatarUrl, hourBreakdown,
-        priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
-      });
-      metaRef.current = meta;
-      myTotalSecRef.current = totalSec;
-      flushedSecRef.current = total;
-      onFlushed?.({ totalSec, subject, dateStr, deltaSec: delta, hourBreakdown });
-    } catch (e) {
-      console.warn('[studytime] flush failed:', e?.code || e);
-    } finally {
-      flushingRef.current = false;
-    }
-  }
-
-  function resetSession() {
-    runningSinceRef.current = null;
-    bankedSecRef.current = 0;
-    flushedSecRef.current = 0;
-    setPhase('stopped');
-    setDisplayElapsedSec(0);
-    persistLocal(subject, 'stopped');
-  }
-
-  // Resume a session left running/paused in another tab/reload. Any time
-  // that elapsed while it was "running" is capped so a laptop-asleep gap
-  // doesn't get credited as hours of study; already-banked time is exact.
-  useEffect(() => {
-    if (!uid) return;
-    try {
-      const raw = window.localStorage.getItem(sessionKey);
-      window.localStorage.removeItem(sessionKey);
-      if (!raw) return;
-      const saved = JSON.parse(raw);
-      const savedSubject = subjectOptions.includes(saved?.subject) ? saved.subject : subjectOptions[0];
-      const bankedPortion = Math.max(0, Math.floor(saved?.bankedSec) || 0);
-      let runningPortion = 0;
-      const end = nowMs();
-      if (saved?.phase === 'running' && saved?.runningSince) {
-        runningPortion = Math.min(RESUME_CAP_SEC, Math.max(0, Math.floor((end - saved.runningSince) / 1000)));
-      }
-      const staleTotalSec = bankedPortion + runningPortion;
-      if (staleTotalSec > 0) {
-        // Only the still-running portion has a known wall-clock window; the
-        // already-banked (paused) portion is skipped for hour attribution.
-        const hourBreakdown = runningPortion > 0 ? splitSecondsIntoHourBuckets(end - runningPortion * 1000, end) : null;
-        const resumeDateStr = todayStr();
-        flushStudySession({
-          uid, dateStr: resumeDateStr, subject: savedSubject, deltaSec: staleTotalSec,
-          avatarUrl, hourBreakdown, priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
-        }).then(({ meta, totalSec }) => {
-          metaRef.current = meta;
-          myTotalSecRef.current = totalSec;
-          onFlushed?.({ totalSec, subject: savedSubject, dateStr: resumeDateStr, deltaSec: staleTotalSec, hourBreakdown });
-        }).catch(() => {});
-      }
-    } catch { /* ignore */ }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [uid]);
-
-  // Local display tick — purely visual, never touches Firestore.
-  useEffect(() => {
-    if (phase !== 'running') return undefined;
-    const id = setInterval(() => setDisplayElapsedSec(currentTotalSec()), 1000);
-    return () => clearInterval(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase]);
-
-  // 5-minute heartbeat flush while running, so a crash loses at most 5 min.
-  // The visible clock is untouched — only the Firestore-synced portion moves.
-  useEffect(() => {
-    if (phase !== 'running') return undefined;
-    const id = setInterval(() => { flushDelta(); }, HEARTBEAT_MS);
-    return () => clearInterval(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, subject]);
-
-  // Best-effort flush if the tab closes mid-session (not guaranteed to
-  // finish — the localStorage resume-on-mount above is the reliable path).
-  useEffect(() => {
-    const handler = () => { flushDelta(); };
-    window.addEventListener('beforeunload', handler);
-    return () => window.removeEventListener('beforeunload', handler);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, subject]);
-
-  // "Studying now" presence: one RTDB write per start/pause/resume/stop while a session is
-  // open (focus screen or checklist), removed when it ends — see studyPresenceService.
-  const inSession = focusMode && (phase === 'running' || phase === 'paused');
-  useEffect(() => {
-    if (!uid) return;
-    if (inSession) {
-      publishStudyPresence({ uid, profile, avatarUrl, bankedSec: currentTotalSec(), running: phase === 'running' });
-    } else {
-      clearStudyPresence(uid);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [uid, inSession, phase]);
-
   const handleStart = async () => {
-    const remote = await fetchRemoteSessionState(uid);
-    if (remote?.phase === 'running' && remote.deviceId && remote.deviceId !== deviceIdRef.current) {
-      const proceed = window.confirm(
-        `다른 기기에서 "${normalizeSubjectLabel(remote.subject || subject)}" 세션이 진행 중입니다.\n` +
-        '여기서도 시작하면 두 기기에서 동시에 기록될 수 있어요. 계속할까요?',
-      );
-      if (!proceed) return;
-    }
-    runningSinceRef.current = nowMs();
-    setPhase('running');
-    persistLocal(subject, 'running');
-    if (phase === 'stopped') {
+    const wasStopped = phase === 'stopped';
+    if (!(await timer.start(subject))) return;
+    if (wasStopped) {
       const draft = loadNotesDraft(uid);
       setNotesItems(restorableDraft(draft, subject) || emptyItems());
     }
     setSessionStage('plan');
     setFocusMode(true);
-    publishTransition('running', subject);
-  };
-
-  const handleResumeInSession = () => {
-    runningSinceRef.current = nowMs();
-    setPhase('running');
-    persistLocal(subject, 'running');
-    publishTransition('running', subject);
   };
 
   // Stop never ends the session directly — it first opens the checklist in
@@ -287,11 +81,11 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   async function handleFinishSession() {
     if (finishing) return;
     setFinishing(true);
-    const durationSec = currentTotalSec();
+    const durationSec = timer.currentTotalSec();
     const itemsToSave = notesItems;
     const sessionSubject = subject;
     try {
-      await handleStop();
+      await timer.stop();
       const id = await saveSessionNotes({ uid, subject: sessionSubject, items: itemsToSave, durationSec, dateStr: todayStr() });
       if (id) onNotesSaved?.(sessionSubject);
     } catch (e) {
@@ -306,85 +100,9 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     }
   }
 
-  const handlePause = () => {
-    bankedSecRef.current = currentTotalSec();
-    runningSinceRef.current = null;
-    setPhase('paused');
-    setDisplayElapsedSec(bankedSecRef.current);
-    persistLocal(subject, 'paused');
-    publishTransition('paused', subject);
-  };
-
-  // Auto-pause when the tab goes to the background — otherwise elapsed
-  // wall-clock time keeps accruing while the student is elsewhere (e.g. a
-  // laptop left open on another tab), and it all lands as one big credit
-  // the next time the tab is foregrounded. Requires a manual Resume so
-  // idle time never sneaks back in silently.
-  useEffect(() => {
-    const handleVisibility = async () => {
-      if (document.hidden) {
-        if (phase === 'running') handlePause();
-        return;
-      }
-      // Returning to foreground — one point-read to check whether another
-      // device took over this session while we were away (see
-      // studySessionSyncService: no listener, checked only at this event).
-      if (phase !== 'running' && phase !== 'paused') return;
-      const remote = await fetchRemoteSessionState(uid);
-      if (
-        remote?.deviceId && remote.deviceId !== deviceIdRef.current
-        && Number(remote.clientUpdatedMs) > lastLocalTransitionMsRef.current
-      ) {
-        await flushDelta();
-        resetSession();
-        window.alert('다른 기기에서 이 세션을 이어받아 여기서는 종료 처리되었습니다.');
-      }
-    };
-    document.addEventListener('visibilitychange', handleVisibility);
-    return () => document.removeEventListener('visibilitychange', handleVisibility);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, subject, uid]);
-
-  // Keep the screen awake while running, so the OS doesn't auto-sleep the
-  // display mid-session (the auto-pause above already handles the tab
-  // actually going to the background — this just stops that from happening
-  // due to idle-screen-off while the student is genuinely still on the page).
-  const wakeLockRef = useRef(null);
-  useEffect(() => {
-    if (phase !== 'running' || !('wakeLock' in navigator)) return undefined;
-    let cancelled = false;
-    navigator.wakeLock.request('screen').then((lock) => {
-      if (cancelled) { lock.release().catch(() => {}); return; }
-      wakeLockRef.current = lock;
-    }).catch(() => {});
-    return () => {
-      cancelled = true;
-      wakeLockRef.current?.release?.().catch(() => {});
-      wakeLockRef.current = null;
-    };
-  }, [phase]);
-
-  async function handleStop() {
-    await flushDelta();
-    resetSession();
-    publishTransition('stopped', subject);
-  }
-
-  async function handleSubjectChange(next) {
-    if (next === subject) return;
-    const wasRunning = phase === 'running';
-    await flushDelta();
-    resetSession();
-    setSubject(next);
-    if (wasRunning) {
-      runningSinceRef.current = nowMs();
-      setPhase('running');
-      persistLocal(next, 'running');
-      publishTransition('running', next);
-    } else {
-      publishTransition('stopped', next);
-    }
-  }
+  const handlePause = () => timer.pause();
+  const handleResumeInSession = () => timer.resume();
+  const handleSubjectChange = (next) => timer.changeSubject(next);
 
   async function handlePickSubject(name) {
     await onAddSubject?.(name);
@@ -604,6 +322,14 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
           <span style={{ fontSize: '0.7rem', fontWeight: 600, color: 'rgba(255,255,255,0.35)', marginTop: 28 }}>
             Tap anywhere to end session
           </span>
+          {/* Keep the clock running and go back to the app (homework, curriculum…); the pill shows the time. */}
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setFocusMode(false); setSessionStage('plan'); }}
+            style={{ marginTop: 18, display: 'inline-flex', alignItems: 'center', gap: 6, padding: '9px 16px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.25)', background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer' }}
+          >
+            <Minimize2 size={14} /> Keep timing &amp; use the app
+          </button>
           <StudyingNowStrip uid={uid} />
         </motion.div>
       )}

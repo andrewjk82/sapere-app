@@ -4,6 +4,7 @@ import { AuthProvider } from './context/AuthContext'
 import { ProfileProvider } from './context/ProfileContext'
 import { ToastProvider } from './context/ToastContext'
 import { AdminFeedProvider } from './context/AdminFeedContext'
+import { StudyTimerProvider } from './context/StudyTimerContext'
 import { attemptAutoReload } from './utils/crashRecovery'
 import './utils/katexGlobal'
 import './index.css'
@@ -30,11 +31,13 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
       <ProfileProvider>
+        <StudyTimerProvider>
         <ToastProvider>
           <AdminFeedProvider>
             <App />
           </AdminFeedProvider>
         </ToastProvider>
+        </StudyTimerProvider>
       </ProfileProvider>
     </AuthProvider>
   </StrictMode>,

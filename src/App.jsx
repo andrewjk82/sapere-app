@@ -91,6 +91,7 @@ import Feedback from './components/Feedback';
 import CurriculumGraph3D from './components/CurriculumGraph3D';
 import Schedule from './components/Schedule';
 import Library from './components/Library';
+import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
@@ -1487,6 +1488,10 @@ function App() {
           </Suspense>
         </ErrorBoundary>
       </div>
+
+      {/* Study timer keeps running across screens (context/StudyTimerContext); the pill shows it everywhere
+          except the Study Timer page itself. */}
+      {!isAdmin && user?.uid && activeTab !== 'StudyTimer' && <StudyTimerPill />}
 
       {/* Floating flame coach — students only.
           Only fully hide during exam or a Times Table Sprint run (quiz lock

@@ -9,6 +9,7 @@ import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import SubmittedPages from './SubmittedPages';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
+import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
 import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
 import { getHomeworkQuestionIndex, getQuestionsByIds } from '../../services/contentLoader';
 import { resolveHomeworkQuestion } from '../../utils/homeworkQuestionLink';
@@ -318,6 +319,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
             <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#4f46e5', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>“{item.comment}”</div>
           )}
         </div>
+        <StudyTimerStartButton />
         {canChoose && questions.length > 0 && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
         {questions.length > 0 && (
           <button

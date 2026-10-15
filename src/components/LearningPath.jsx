@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { scanTopicProgress } from '../utils/topicProgressScan';
 import { createPortal } from 'react-dom';
 import { CheckCircle2, Lock, Play, BookMarked, RotateCcw, Trophy, BookOpen, GraduationCap, Network, FileText, ExternalLink, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { StudyTimerStartButton } from './studyTimer/StudyTimerPill';
 import CurriculumGraph3D from './CurriculumGraph3D';
 import { db } from '../firebase/config';
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -768,6 +769,7 @@ const LearningPath = ({ profile }) => {
                   Next <ChevronRight size={18} strokeWidth={3} />
                 </button>
               )}
+              <StudyTimerStartButton />
               {isTablet && <SplitLayoutToggle layout={notesLayout} onChange={setLayoutChoice} />}
               <a href={pdfPreview.openUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: '0.8rem', fontWeight: 700, color: '#6d28d9', textDecoration: 'none' }}>
                 <ExternalLink size={14} /> Open in Google Drive

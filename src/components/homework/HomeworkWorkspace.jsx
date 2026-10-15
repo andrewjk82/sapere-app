@@ -7,6 +7,7 @@ import { useSplitLayout } from '../../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
+import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
 import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
@@ -302,6 +303,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
             {session?.date} · {topics.map((t) => t.label || t.title || t.id).join(', ')}
           </div>
         </div>
+        <StudyTimerStartButton />
         {canChoose && <SplitLayoutToggle layout={layout} onChange={setLayoutChoice} />}
         <button
           type="button"
