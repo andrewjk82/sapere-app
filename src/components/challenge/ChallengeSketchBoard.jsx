@@ -2,19 +2,20 @@ import React, { useState, useCallback, useRef } from 'react';
 import WorkingOutCanvas from '../WorkingOutCanvas';
 import { LayoutGrid, AlignJustify } from 'lucide-react';
 
-const CanvasErrorBoundary = ({ children }) => {
-  const [hasError, setHasError] = React.useState(false);
+class CanvasErrorBoundary extends React.Component {
+  state = { hasError: false };
 
-  React.useEffect(() => {
-    const handleError = (error) => {
-      console.warn('Working out canvas failed to render:', error);
-      setHasError(true);
-    };
-    window.addEventListener('error', handleError);
-    return () => window.removeEventListener('error', handleError);
-  }, []);
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
 
-  if (hasError) {
+  componentDidCatch(error, info) {
+    console.warn('Working out canvas failed to render:', error, info?.componentStack || info);
+  }
+
+  render() {
+    if (!this.state.hasError) return this.props.children;
+
     return (
       <div style={{
         height: '100%',
@@ -32,14 +33,12 @@ const CanvasErrorBoundary = ({ children }) => {
         color: '#64748b',
         fontWeight: 700
       }}>
-        <div style={{ color: '#1e293b', fontWeight: 900 }}>Sketch pad unavailable</div>
+        <div style={{ color: '#1e1b4b', fontWeight: 900 }}>Sketch pad unavailable</div>
         <div style={{ fontSize: '0.9rem', lineHeight: 1.5 }}>The question is still available on the left.</div>
       </div>
     );
   }
-
-  return children;
-};
+}
 
 const ChallengeSketchBoard = React.forwardRef(({
   placement = 'side',
