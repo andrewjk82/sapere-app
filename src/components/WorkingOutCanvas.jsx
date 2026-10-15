@@ -1540,9 +1540,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               )}
             </button>
             <select value={strokeWidth} onChange={e => setStrokeWidth(Number(e.target.value))} style={{ height: '30px', borderRadius: '8px', border: '1px solid #e2e8f0', padding: hideTitle ? '0 2px' : '0 8px', fontSize: '0.78rem', fontWeight: 700 }}>
-              <option value={2}>Thin</option>
-              <option value={3}>Normal</option>
-              <option value={5}>Thick</option>
+              <option value={1}>1 · Fine</option>
+              <option value={2}>2 · Thin</option>
+              <option value={3}>3 · Medium</option>
+              <option value={4}>4 · Thick</option>
+              <option value={5}>5 · Bold</option>
             </select>
             <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
               {COLORS.map(c => (
