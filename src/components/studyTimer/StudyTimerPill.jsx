@@ -104,7 +104,7 @@ export const StudyTimerPill = () => {
     const wasPaused = timer.phase === 'paused';
     await timer.changeSubject(subject);
     // A paused session ends when its subject changes (its time is saved); carry on with the new subject.
-    if (wasPaused) await timer.start(subject);
+    if (wasPaused) await timer.start(subject, { origin: timer.origin });
   };
 
   return (
@@ -192,18 +192,28 @@ export const StudyTimerPill = () => {
  * "Start Maths timer" for the homework / curriculum headers: starts the student's maths subject straight
  * away (no plan / focus screen); the subject can be changed on the timer afterwards. Hidden while a
  * session is open — the pill shows it then.
+ *
+ * The timer started here belongs to the screen the button sits on: when that screen closes (homework
+ * closed, worksheet closed, another tab opened) the timer stops and the time so far is saved. A timer
+ * started on the Study Planner is not touched.
  */
 export const StudyTimerStartButton = ({ compact = false }) => {
   const timer = useStudyTimer();
   const { isAdmin } = useAuth();
   const { profile } = useProfile();
+  const timerRef = useRef(timer);
+  useEffect(() => { timerRef.current = timer; });
+  useEffect(() => () => {
+    const t = timerRef.current;
+    if (t && t.origin === 'screen' && t.phase !== 'stopped') t.stop();
+  }, []);
   if (!timer?.uid || timer.phase !== 'stopped' || isAdmin) return null;
   const subject = mathsSubjectFor(profile, timer.subjects);
   return (
     <button
       type="button"
-      onClick={() => timer.start(subject)}
-      title={`Start the study timer for ${normalizeSubjectLabel(subject)}`}
+      onClick={() => timer.start(subject, { origin: 'screen' })}
+      title={`Start the study timer for ${normalizeSubjectLabel(subject)}. It stops when you leave this screen.`}
       style={{
         display: 'inline-flex', alignItems: 'center', gap: 5, padding: compact ? '7px 9px' : '7px 12px', borderRadius: 10,
         border: '1px solid #c7d2fe', background: '#eef2ff', color: '#4338ca', fontWeight: 800, fontSize: '0.78rem',

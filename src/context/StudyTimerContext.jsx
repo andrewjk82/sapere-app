@@ -46,6 +46,10 @@ const StudyTimerEngine = ({ uid, children }) => {
   const [subjectState, setSubjectState] = useState(null);   // null = first subject on the list
   const subject = subjectState && subjects.includes(subjectState) ? subjectState : subjects[0];
   const [phase, setPhaseState] = useState('stopped');       // 'stopped' | 'running' | 'paused'
+  // 'screen' = started from a homework / worksheet screen: that screen stops the timer (saving the time so
+  // far) when it closes. null = started from the Study Planner: runs until the student stops it there.
+  const [origin, setOriginState] = useState(null);
+  const originRef = useRef(null);
   const [elapsedSec, setElapsedSec] = useState(0);
   const [lastFlush, setLastFlush] = useState(null);         // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
   const [myTotalSec, setMyTotalSec] = useState(null);
@@ -73,6 +77,7 @@ const StudyTimerEngine = ({ uid, children }) => {
   const engine = useMemo(() => {
     const setPhase = (next) => { phaseRef.current = next; setPhaseState(next); };
     const setSubject = (next) => { subjectRef.current = next; setSubjectState(next); };
+    const setOrigin = (next) => { originRef.current = next; setOriginState(next); };
 
     const currentTotalSec = () => {
       if (phaseRef.current !== 'running' || runningSinceRef.current == null) return bankedSecRef.current;
@@ -141,12 +146,15 @@ const StudyTimerEngine = ({ uid, children }) => {
       flushedSecRef.current = 0;
       setPhase('stopped');
       setElapsedSec(0);
+      setOrigin(null);
       persistLocal(subjectRef.current, 'stopped');
     };
 
     // Start (or resume) the clock for `nextSubject`. Warns first when another device is running a session.
     // Returns false when the student cancelled.
-    const start = async (nextSubject = subjectRef.current) => {
+    // `opts.origin`: 'screen' for a timer a homework / worksheet screen owns; omitted keeps the session's own.
+    const start = async (nextSubject = subjectRef.current, opts = {}) => {
+      const keepOrigin = originRef.current;
       const { uid: id } = ctxRef.current;
       if (!id) return false;
       const remote = await fetchRemoteSessionState(id);
@@ -164,6 +172,7 @@ const StudyTimerEngine = ({ uid, children }) => {
       runningSinceRef.current = nowMs();
       setPhase('running');
       setElapsedSec(currentTotalSec());
+      setOrigin(opts.origin !== undefined ? opts.origin : keepOrigin);
       persistLocal(nextSubject, 'running');
       publishTransition('running', nextSubject);
       return true;
@@ -197,12 +206,14 @@ const StudyTimerEngine = ({ uid, children }) => {
     const changeSubject = async (next) => {
       if (next === subjectRef.current) return;
       const wasRunning = phaseRef.current === 'running';
+      const keepOrigin = originRef.current;
       await flushDelta();
       resetSession();
       setSubject(next);
       if (wasRunning) {
         runningSinceRef.current = nowMs();
         setPhase('running');
+        setOrigin(keepOrigin);
         persistLocal(next, 'running');
         publishTransition('running', next);
       } else {
@@ -323,9 +334,9 @@ const StudyTimerEngine = ({ uid, children }) => {
   }, [phase]);
 
   const value = useMemo(() => ({
-    uid, subjects, subject, phase, lastFlush, myTotalSec, currentTotalSec,
+    uid, subjects, subject, phase, origin, lastFlush, myTotalSec, currentTotalSec,
     start: engine.start, resume: engine.resume, pause: engine.pause, stop: engine.stop, changeSubject: engine.changeSubject,
-  }), [uid, subjects, subject, phase, lastFlush, myTotalSec, currentTotalSec, engine]);
+  }), [uid, subjects, subject, phase, origin, lastFlush, myTotalSec, currentTotalSec, engine]);
 
   return (
     <StudyTimerContext.Provider value={value}>
