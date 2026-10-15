@@ -9386,31 +9386,52 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Generalise the result from the previous parts for *any* function \\(f(x)\\). Prove that \\(g(x) = \\frac{1}{2}(f(x) + f(-x))\\) is always even, and \\(h(x) = \\frac{1}{2}(f(x) - f(-x))\\) is always odd.",
-          "answer": "Proof provided in solution steps.",
-          "options": [
-            "\\(g(-x) = -g(x)\\); Odd",
-            "\\(g(-x) = g(x)\\); Even",
-            "\\(g(-x) = \\dfrac{1}{2}(f(-x) - f(x))\\); Neither",
-            "\\(g(-x) = 2g(x)\\); Even"
-          ],
+          "answer": "\\(g(-x)=\\tfrac12\\big(f(-x)+f(x)\\big)=g(x)\\), so \\(g\\) is even.\n\\(h(-x)=\\tfrac12\\big(f(-x)-f(x)\\big)=-\\tfrac12\\big(f(x)-f(-x)\\big)=-h(x)\\), so \\(h\\) is odd.\nMarking guide (5 marks): 1 substitute \\(-x\\) into \\(g\\); 1 use \\(f(-(-x))=f(x)\\) and reorder to get \\(g(-x)=g(x)\\); 1 state \\(g\\) is even; 1 substitute \\(-x\\) into \\(h\\) and factor out \\(-1\\); 1 conclude \\(h(-x)=-h(x)\\), so \\(h\\) is odd.",
           "hint": "To prove \\(g(x)\\) is even, show \\(g(-x) = g(x)\\). To prove \\(h(x)\\) is odd, show \\(h(-x) = -h(x)\\).",
-          "solution": "Proof provided in solution steps.",
+          "solution": "\\(g(-x)=\\tfrac12\\big(f(-x)+f(x)\\big)=g(x)\\), so \\(g\\) is even.\n\\(h(-x)=\\tfrac12\\big(f(-x)-f(x)\\big)=-\\tfrac12\\big(f(x)-f(-x)\\big)=-h(x)\\), so \\(h\\) is odd.\nMarking guide (5 marks): 1 substitute \\(-x\\) into \\(g\\); 1 use \\(f(-(-x))=f(x)\\) and reorder to get \\(g(-x)=g(x)\\); 1 state \\(g\\) is even; 1 substitute \\(-x\\) into \\(h\\) and factor out \\(-1\\); 1 conclude \\(h(-x)=-h(x)\\), so \\(h\\) is odd.",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(g(-x) = \\frac{1}{2}(f(-x) + f(x)) = g(x)\\)"
+              "explain": "We must prove two statements for ANY function \\(f\\). A function \\(g\\) is even if \\(g(-x)=g(x)\\) for every \\(x\\) (its graph is a mirror image across the y-axis), and \\(h\\) is odd if \\(h(-x)=-h(x)\\) for every \\(x\\) (its graph looks the same after a half-turn about the origin). We will test the idea on \\(f(x)=x^2-4x-5\\) from the earlier parts, which is neither even nor odd (the graph shows \\(f(-2)=7\\) but \\(f(2)=-9\\)), and then prove it for any \\(f\\).",
+              "work": "\\(g(-x)=g(x)\\ \\text{(even)}\\qquad h(-x)=-h(x)\\ \\text{(odd)}\\)",
+              "figure": {
+                "svg": "fig:c26992cfd2"
+              }
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(h(-x) = \\frac{1}{2}(f(-x) - f(x)) = -h(x)\\)"
+              "explain": "Start with \\(g\\). Replace every \\(x\\) in its formula by \\(-x\\). The second term becomes \\(f(-(-x))\\), and two negatives cancel, so \\(f(-(-x))=f(x)\\). Notice that \\(g(-x)\\) uses exactly the same two values, \\(f(-x)\\) and \\(f(x)\\), as \\(g(x)\\) does, only in the other order. On the graph, \\(g(2)\\) and \\(g(-2)\\) both use the two highlighted values \\(f(2)=-9\\) and \\(f(-2)=7\\).",
+              "work": "\\(g(-x)=\\tfrac12\\big(f(-x)+f(-(-x))\\big)=\\tfrac12\\big(f(-x)+f(x)\\big)\\)",
+              "figure": {
+                "svg": "fig:34bffd1a64"
+              }
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Proof provided in solution steps."
+              "explain": "Addition can be done in either order, so swap the two terms inside the bracket. The result is exactly the original formula for \\(g(x)\\). So \\(g(-x)=g(x)\\) for every \\(x\\), which is the definition of an even function. Check with numbers: \\(g(2)=\\tfrac12(-9+7)=-1\\) and \\(g(-2)=\\tfrac12(7+(-9))=-1\\). The two points have the same height, so the graph of \\(g\\) is a mirror image across the y-axis (the dashed line joins the matching points).",
+              "work": "\\(g(-x)=\\tfrac12\\big(f(x)+f(-x)\\big)=g(x)\\ \\Rightarrow\\ g\\text{ is even}\\)",
+              "figure": {
+                "svg": "fig:163b7f57fd"
+              }
             },
             {
-              "explain": "Final answer: Proof provided in solution steps.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Proof provided in solution steps."
+              "explain": "Now do the same for \\(h\\): replace \\(x\\) by \\(-x\\) and simplify \\(f(-(-x))\\) to \\(f(x)\\). This time the two terms are subtracted, so putting them in the other order changes the sign of the answer.",
+              "work": "\\(h(-x)=\\tfrac12\\big(f(-x)-f(-(-x))\\big)=\\tfrac12\\big(f(-x)-f(x)\\big)\\)"
+            },
+            {
+              "explain": "Take out a factor of \\(-1\\): \\(f(-x)-f(x)=-\\big(f(x)-f(-x)\\big)\\). The bracket left behind is exactly the one inside \\(h(x)\\), so \\(h(-x)=-h(x)\\) for every \\(x\\), which is the definition of an odd function. Check with numbers: \\(h(2)=\\tfrac12(-9-7)=-8\\) and \\(h(-2)=\\tfrac12(7-(-9))=8=-h(2)\\). The graph of \\(h\\) passes through the origin, and the points \\((2,-8)\\) and \\((-2,8)\\) are opposites of each other, as half-turn symmetry requires.",
+              "work": "\\(h(-x)=\\tfrac12\\big(f(-x)-f(x)\\big)=-\\tfrac12\\big(f(x)-f(-x)\\big)=-h(x)\\ \\Rightarrow\\ h\\text{ is odd}\\)",
+              "figure": {
+                "svg": "fig:d5ee479b2e"
+              }
+            },
+            {
+              "explain": "Why this result is useful: adding \\(g\\) and \\(h\\) gives back \\(f\\), because the \\(f(-x)\\) terms cancel. So every function is the sum of an even part \\(g\\) and an odd part \\(h\\). On the graph at \\(x=2\\): \\(f(2)=-9\\), \\(g(2)=-1\\), \\(h(2)=-8\\), and indeed \\(-1+(-8)=-9\\).",
+              "work": "\\(g(x)+h(x)=\\tfrac12\\big(f(x)+f(-x)\\big)+\\tfrac12\\big(f(x)-f(-x)\\big)=f(x)\\)",
+              "figure": {
+                "svg": "fig:26a675d454"
+              }
+            },
+            {
+              "explain": "Conclusion. The proof used only the definitions of even and odd and the fact that \\(f(-(-x))=f(x)\\). It never used a particular formula for \\(f\\), so it works for every function \\(f\\). For the earlier example \\(f(x)=x^2-4x-5\\), it gives \\(g(x)=x^2-5\\) (even) and \\(h(x)=-4x\\) (odd), and \\(g(x)+h(x)=x^2-4x-5\\).",
+              "work": "\\(g\\text{ is always even},\\quad h\\text{ is always odd},\\quad f=g+h\\)"
             }
           ],
           "manual": true,
