@@ -1,6 +1,6 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { flushSync } from 'react-dom';
-import { PenTool, PenLine, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3, Minus, Square, Circle } from 'lucide-react';
+import { PenTool, PenLine, Highlighter, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3, Minus, Square, Circle } from 'lucide-react';
 import StickerLayer from './StickerLayer';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
@@ -11,12 +11,19 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.4-ballpoint-shapes';
+const CANVAS_VERSION = 'v10.5-pastel-highlighter';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
 
-const COLORS = ['#1e1b4b', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
+const COLORS = ['#1e1b4b', '#4b5563', '#ef4444', '#2563eb', '#16a34a', '#7c3aed'];
+const HIGHLIGHTER_COLORS = [
+  { name: 'Pastel yellow', value: 'rgba(255, 224, 130, 0.48)' },
+  { name: 'Pastel pink', value: 'rgba(255, 183, 197, 0.48)' },
+  { name: 'Pastel mint', value: 'rgba(166, 226, 190, 0.48)' },
+  { name: 'Pastel blue', value: 'rgba(160, 210, 255, 0.48)' },
+  { name: 'Pastel lavender', value: 'rgba(207, 180, 255, 0.48)' },
+];
 
 const SKETCH_GUARD_CLASS = 'sapere-sketch-active';
 const SKETCH_GUARD_COUNT = 'sapereSketchActiveCount';
@@ -243,6 +250,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const eraserModeRef = useRef('area');
   const palmGuardRef = useRef(false);
   const strokeColorRef = useRef('#1e1b4b');
+  const highlighterColorRef = useRef(HIGHLIGHTER_COLORS[0].value);
   const strokeWidthRef = useRef(3);
 
   const [strokes, setStrokes] = useState([]);
@@ -264,6 +272,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [confirmClear, setConfirmClear] = useState(false);
   const [palmGuard, setPalmGuard] = useState(false); // default: accept all input
   const [strokeColor, setStrokeColor] = useState('#1e1b4b');
+  const [highlighterColor, setHighlighterColor] = useState(HIGHLIGHTER_COLORS[0].value);
   const [strokeWidth, setStrokeWidth] = useState(3);
 
   strokesRef.current = strokes;
@@ -347,6 +356,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   eraserModeRef.current = eraserMode;
   palmGuardRef.current = palmGuard;
   strokeColorRef.current = strokeColor;
+  highlighterColorRef.current = highlighterColor;
   strokeWidthRef.current = strokeWidth;
 
   const isGraph = pageTypes[currentPage] ?? (isGraphProp !== undefined ? isGraphProp : questionType === 'graph_sketch');
@@ -611,6 +621,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const widthFor = (stroke, pressure, velocity) => {
     if (stroke.isEraser) return stroke.width;
     const baseW = stroke.width * 1.25;
+    if (stroke.penStyle === 'highlighter') return baseW * 2.4;
     if (stroke.penStyle === 'ballpoint' || stroke.shape) return baseW;
     let target;
     if (stroke.hasRealPressure) {
@@ -832,11 +843,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const activeTool = activeToolRef.current;
     const isEraser = activeTool === 'eraser';
     const shape = ['line', 'rectangle', 'circle'].includes(activeTool) ? activeTool : null;
-    const penStyle = activeTool === 'ballpoint' ? 'ballpoint' : 'standard';
+    const penStyle = activeTool === 'ballpoint' || activeTool === 'highlighter' ? activeTool : 'standard';
     const hasRealPressure = isPen && activeTool === 'pen';
     const stroke = {
       points: [],
-      color: strokeColorRef.current,
+      color: activeTool === 'highlighter' ? highlighterColorRef.current : strokeColorRef.current,
       width: strokeWidthRef.current,
       isEraser,
       penStyle,
@@ -1502,6 +1513,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             {[
               { id: 'pen', label: 'Pen', Icon: PenTool },
               { id: 'ballpoint', label: 'Ballpoint pen', Icon: PenLine },
+              { id: 'highlighter', label: 'Highlighter', Icon: Highlighter },
               { id: 'line', label: 'Straight line', Icon: Minus },
               { id: 'rectangle', label: 'Rectangle', Icon: Square },
               { id: 'circle', label: 'Circle or ellipse', Icon: Circle },
@@ -1547,9 +1559,13 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               <option value={5}>5 · Bold</option>
             </select>
             <div style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-              {COLORS.map(c => (
-                <button key={c} onClick={() => setStrokeColor(c)} aria-label={`Ink color ${c}`} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
-              ))}
+              {activeTool === 'highlighter'
+                ? HIGHLIGHTER_COLORS.map(({ name, value }) => (
+                  <button key={name} onClick={() => setHighlighterColor(value)} aria-label={name} title={name} style={{ width: '20px', height: '20px', borderRadius: '50%', border: highlighterColor === value ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: value, cursor: 'pointer' }} />
+                ))
+                : COLORS.map(c => (
+                  <button key={c} onClick={() => setStrokeColor(c)} aria-label={`Ink color ${c}`} title={c === '#4b5563' ? 'Dark grey' : `Ink color ${c}`} style={{ width: '20px', height: '20px', borderRadius: '50%', border: strokeColor === c ? '2px solid #4f46e5' : '1px solid #e2e8f0', background: c, cursor: 'pointer' }} />
+                ))}
             </div>
           </div>
           {/* Row 2: page navigation + undo + clear */}
