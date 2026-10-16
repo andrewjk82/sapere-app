@@ -1347,10 +1347,10 @@
           "id": "sgi-y7-2017-q3e",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Solve the equations \\(x-10=4\\), \\(6a=18\\), and \\(b/9=2\\).",
+          "stem": "Solve the equations \\(x-10=4\\), \\(6a=18\\), and \\(\\dfrac{b}{9}=2\\).",
           "options": [
             "\\(x=14,\\;a=3,\\;b=18\\)",
-            "\\(x=−6,\\;a=3,\\;b=18\\)",
+            "\\(x=-6,\\;a=3,\\;b=18\\)",
             "\\(x=14,\\;a=108,\\;b=18\\)",
             "\\(x=6,\\;a=3,\\;b=18\\)"
           ],
@@ -1358,15 +1358,15 @@
           "hint": "Undo the operation applied to the variable, using the inverse operation on both sides.",
           "keyPoints": [
             {
-              "text": "x − 10 = 4",
+              "text": "\\(x-10=4\\)",
               "note": "Add 10 to both sides."
             },
             {
-              "text": "6a = 18",
+              "text": "\\(6a=18\\)",
               "note": "Divide both sides by 6."
             },
             {
-              "text": "b/9 = 2",
+              "text": "\\(\\dfrac{b}{9}=2\\)",
               "note": "Multiply both sides by 9."
             }
           ],
@@ -1381,7 +1381,7 @@
             },
             {
               "explain": "Solve for b by multiplying by 9.",
-              "work": "\\(\\frac b9=2\\Rightarrow b=18\\)"
+              "work": "\\(\\dfrac{b}{9}=2\\Rightarrow b=18\\)"
             }
           ],
           "solution": "\\(x=14,\\;a=3,\\;b=18\\)",
