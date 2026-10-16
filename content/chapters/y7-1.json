@@ -55932,6 +55932,51 @@
               "note": "Evaluate the brackets first, then multiply before adding."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate both expressions: \\(3+2\\times6\\) and \\(10+4\\div2-3\\).",
+          "options": [
+            "30 and 9",
+            "15 and 4",
+            "15 and 9",
+            "30 and 4"
+          ],
+          "answer": 2,
+          "hint": "Do multiplication and division before addition and subtraction.",
+          "keyPoints": [
+            {
+              "text": "2 × 6",
+              "note": "Multiply before adding."
+            },
+            {
+              "text": "4 ÷ 2",
+              "note": "Divide before adding or subtracting."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the order of operations to the first expression.",
+              "work": "\\(3+2\\times6=3+12=15\\)"
+            },
+            {
+              "explain": "Apply division first in the second expression.",
+              "work": "\\(10+4\\div2-3=10+2-3=9\\)"
+            },
+            {
+              "explain": "Check that each expression has been evaluated in the correct order.",
+              "work": "\\(15,\\;9\\)"
+            }
+          ],
+          "solution": "15 and 9",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q1(c)"
+          }
         }
       ]
     },

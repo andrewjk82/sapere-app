@@ -1,6 +1,6 @@
 {
   "chapterId": "y7-11",
-  "title": "Chapter 12: Linear equations",
+  "title": "Chapter 12: Algebra and the Cartesian plane",
   "year": "Year 7",
   "topics": [
     {
@@ -3031,13 +3031,149 @@
             "marks": 4,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgi-y7-2017-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "On the coordinate plane, point A is 3 units right and 2 units up from the origin; point B is 2 units left and 4 units down. Which ordered pair gives (A, B)?",
+          "options": [
+            "A = (2, 3), B = (−4, −2)",
+            "A = (3, 2), B = (−2, −4)",
+            "A = (−3, 2), B = (2, −4)",
+            "A = (3, −2), B = (−2, 4)"
+          ],
+          "answer": 1,
+          "hint": "Write horizontal movement first, then vertical movement. Left and down are negative.",
+          "keyPoints": [
+            {
+              "text": "3 units right and 2 units up",
+              "note": "The first coordinate is positive 3 and the second is positive 2."
+            },
+            {
+              "text": "2 units left and 4 units down",
+              "note": "Left gives a negative x-coordinate; down gives a negative y-coordinate."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Read the coordinates in the order (x, y).",
+              "work": "Right is positive x; up is positive y. Therefore A = (3, 2)."
+            },
+            {
+              "explain": "Apply negative signs to left and down movements.",
+              "work": "For B, x = −2 and y = −4, so B = (−2, −4)."
+            },
+            {
+              "explain": "Combine the two coordinate pairs in the requested order.",
+              "work": "\\(A=(3,2),\\qquad B=(-2,-4)\\)"
+            }
+          ],
+          "solution": "A = (3, 2), B = (−2, −4)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q1(b)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" role=\"img\" aria-label=\"Cartesian grid\"><rect width=\"420\" height=\"300\" rx=\"12\" fill=\"#ffffff\"/><line x1=\"42\" y1=\"20\" x2=\"42\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"294\" x2=\"392\" y2=\"294\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"70\" y1=\"20\" x2=\"70\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"270\" x2=\"392\" y2=\"270\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"98\" y1=\"20\" x2=\"98\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"246\" x2=\"392\" y2=\"246\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"126\" y1=\"20\" x2=\"126\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"222\" x2=\"392\" y2=\"222\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"154\" y1=\"20\" x2=\"154\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"198\" x2=\"392\" y2=\"198\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"182\" y1=\"20\" x2=\"182\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"174\" x2=\"392\" y2=\"174\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"210\" y1=\"20\" x2=\"210\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"150\" x2=\"392\" y2=\"150\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"238\" y1=\"20\" x2=\"238\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"126\" x2=\"392\" y2=\"126\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"266\" y1=\"20\" x2=\"266\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"102\" x2=\"392\" y2=\"102\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"294\" y1=\"20\" x2=\"294\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"78\" x2=\"392\" y2=\"78\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"322\" y1=\"20\" x2=\"322\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"54\" x2=\"392\" y2=\"54\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"350\" y1=\"20\" x2=\"350\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"30\" x2=\"392\" y2=\"30\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"378\" y1=\"20\" x2=\"378\" y2=\"280\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"6\" x2=\"392\" y2=\"6\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><line x1=\"28\" y1=\"150\" x2=\"392\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"210\" y1=\"280\" x2=\"210\" y2=\"20\" stroke=\"#334155\" stroke-width=\"2.5\"/><text x=\"397\" y=\"155\" font-size=\"15\" fill=\"#334155\">x</text><text x=\"216\" y=\"18\" font-size=\"15\" fill=\"#334155\">y</text><line x1=\"42\" y1=\"146\" x2=\"42\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"294\" x2=\"214\" y2=\"294\" stroke=\"#475569\"/><line x1=\"70\" y1=\"146\" x2=\"70\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"270\" x2=\"214\" y2=\"270\" stroke=\"#475569\"/><line x1=\"98\" y1=\"146\" x2=\"98\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"246\" x2=\"214\" y2=\"246\" stroke=\"#475569\"/><line x1=\"126\" y1=\"146\" x2=\"126\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"222\" x2=\"214\" y2=\"222\" stroke=\"#475569\"/><line x1=\"154\" y1=\"146\" x2=\"154\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"198\" x2=\"214\" y2=\"198\" stroke=\"#475569\"/><line x1=\"182\" y1=\"146\" x2=\"182\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"174\" x2=\"214\" y2=\"174\" stroke=\"#475569\"/><line x1=\"238\" y1=\"146\" x2=\"238\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"126\" x2=\"214\" y2=\"126\" stroke=\"#475569\"/><line x1=\"266\" y1=\"146\" x2=\"266\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"102\" x2=\"214\" y2=\"102\" stroke=\"#475569\"/><line x1=\"294\" y1=\"146\" x2=\"294\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"78\" x2=\"214\" y2=\"78\" stroke=\"#475569\"/><line x1=\"322\" y1=\"146\" x2=\"322\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"54\" x2=\"214\" y2=\"54\" stroke=\"#475569\"/><line x1=\"350\" y1=\"146\" x2=\"350\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"30\" x2=\"214\" y2=\"30\" stroke=\"#475569\"/><line x1=\"378\" y1=\"146\" x2=\"378\" y2=\"154\" stroke=\"#475569\"/><line x1=\"206\" y1=\"6\" x2=\"214\" y2=\"6\" stroke=\"#475569\"/><circle cx=\"294\" cy=\"102\" r=\"6\" fill=\"#0f766e\"/><text x=\"302\" y=\"94\" font-size=\"15\" font-weight=\"700\" fill=\"#0f766e\">A</text><circle cx=\"154\" cy=\"246\" r=\"6\" fill=\"#be123c\"/><text x=\"162\" y=\"238\" font-size=\"15\" font-weight=\"700\" fill=\"#be123c\">B</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q4e-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For \\(y=2x-3\\), choose the y-values corresponding to \\(x=-4,-2,0,2,4,6\\).",
+          "options": [
+            "−5, −1, 3, 7, 11, 15",
+            "−11, −7, −3, 1, 5, 9",
+            "−11, −7, −3, 1, 7, 9",
+            "−11, −7, −3, 1, 5, 11"
+          ],
+          "answer": 1,
+          "hint": "Substitute each x-value into \\(2x-3\\).",
+          "keyPoints": [
+            {
+              "text": "y = 2x − 3",
+              "note": "Double each x-value, then subtract 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Substitute the first two x-values.",
+              "work": "\\(x=-4:\\;y=2(-4)-3=-11;\\quad x=-2:\\;y=2(-2)-3=-7\\)"
+            },
+            {
+              "explain": "Substitute the next two values.",
+              "work": "\\(x=0:\\;y=-3;\\quad x=2:\\;y=4-3=1\\)"
+            },
+            {
+              "explain": "Substitute the final values.",
+              "work": "\\(x=4:\\;y=8-3=5;\\quad x=6:\\;y=12-3=9\\)"
+            }
+          ],
+          "solution": "−11, −7, −3, 1, 5, 9",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q4(e)(i)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q4e-ii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Draw the graph of \\(y=2x-3\\) for \\(x=-4,-2,0,2,4,6\\).",
+          "answer": "Sample answer: plot (−4,−11), (−2,−7), (0,−3), (2,1), (4,5), (6,9), then join them with a straight line.",
+          "manual": true,
+          "hint": "Use the table of values. Plot each ordered pair, then join the points with a straight line because the rule is linear.",
+          "keyPoints": [
+            {
+              "text": "y = 2x − 3",
+              "note": "Each plotted point must satisfy the rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate and plot the coordinates.",
+              "work": "\\((-4,-11),(-2,-7),(0,-3),(2,1),(4,5),(6,9)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 440\" width=\"100%\" role=\"img\" aria-label=\"Coordinate grid for graph y equals 2x minus 3\"><rect width=\"500\" height=\"440\" rx=\"12\" fill=\"#fff\"/><line x1=\"46\" y1=\"28\" x2=\"46\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"28\" x2=\"80\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"148\" y1=\"28\" x2=\"148\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"182\" y1=\"28\" x2=\"182\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"216\" y1=\"28\" x2=\"216\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"250\" y1=\"28\" x2=\"250\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"318\" y1=\"28\" x2=\"318\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"352\" y1=\"28\" x2=\"352\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"386\" y1=\"28\" x2=\"386\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"28\" x2=\"420\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"454\" y1=\"28\" x2=\"454\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"390\" x2=\"476\" y2=\"390\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"358\" x2=\"476\" y2=\"358\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"326\" x2=\"476\" y2=\"326\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"294\" x2=\"476\" y2=\"294\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"262\" x2=\"476\" y2=\"262\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"198\" x2=\"476\" y2=\"198\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"166\" x2=\"476\" y2=\"166\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"134\" x2=\"476\" y2=\"134\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"102\" x2=\"476\" y2=\"102\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"70\" x2=\"476\" y2=\"70\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"250\" y1=\"410\" x2=\"250\" y2=\"28\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"480\" y=\"235\" fill=\"#334155\" font-size=\"15\">x</text><text x=\"257\" y=\"24\" fill=\"#334155\" font-size=\"15\">y</text><circle cx=\"114\" cy=\"406\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"182\" cy=\"342\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"250\" cy=\"278\" r=\"5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Check that the points line up.",
+              "work": "The change in y is 4 when x increases by 2, so the gradient is \\(4\\div2=2\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 440\" width=\"100%\" role=\"img\" aria-label=\"Coordinate grid for graph y equals 2x minus 3\"><rect width=\"500\" height=\"440\" rx=\"12\" fill=\"#fff\"/><line x1=\"46\" y1=\"28\" x2=\"46\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"28\" x2=\"80\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"148\" y1=\"28\" x2=\"148\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"182\" y1=\"28\" x2=\"182\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"216\" y1=\"28\" x2=\"216\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"250\" y1=\"28\" x2=\"250\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"318\" y1=\"28\" x2=\"318\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"352\" y1=\"28\" x2=\"352\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"386\" y1=\"28\" x2=\"386\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"28\" x2=\"420\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"454\" y1=\"28\" x2=\"454\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"390\" x2=\"476\" y2=\"390\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"358\" x2=\"476\" y2=\"358\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"326\" x2=\"476\" y2=\"326\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"294\" x2=\"476\" y2=\"294\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"262\" x2=\"476\" y2=\"262\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"198\" x2=\"476\" y2=\"198\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"166\" x2=\"476\" y2=\"166\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"134\" x2=\"476\" y2=\"134\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"102\" x2=\"476\" y2=\"102\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"70\" x2=\"476\" y2=\"70\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"250\" y1=\"410\" x2=\"250\" y2=\"28\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"480\" y=\"235\" fill=\"#334155\" font-size=\"15\">x</text><text x=\"257\" y=\"24\" fill=\"#334155\" font-size=\"15\">y</text><circle cx=\"114\" cy=\"406\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"182\" cy=\"342\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"250\" cy=\"278\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"318\" cy=\"214\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"386\" cy=\"150\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"454\" cy=\"86\" r=\"5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Draw the straight line through all six points.",
+              "work": "The y-intercept is \\( (0,-3) \\), matching the constant term −3.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 440\" width=\"100%\" role=\"img\" aria-label=\"Coordinate grid for graph y equals 2x minus 3\"><rect width=\"500\" height=\"440\" rx=\"12\" fill=\"#fff\"/><line x1=\"46\" y1=\"28\" x2=\"46\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"28\" x2=\"80\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"148\" y1=\"28\" x2=\"148\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"182\" y1=\"28\" x2=\"182\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"216\" y1=\"28\" x2=\"216\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"250\" y1=\"28\" x2=\"250\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"318\" y1=\"28\" x2=\"318\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"352\" y1=\"28\" x2=\"352\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"386\" y1=\"28\" x2=\"386\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"28\" x2=\"420\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"454\" y1=\"28\" x2=\"454\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"390\" x2=\"476\" y2=\"390\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"358\" x2=\"476\" y2=\"358\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"326\" x2=\"476\" y2=\"326\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"294\" x2=\"476\" y2=\"294\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"262\" x2=\"476\" y2=\"262\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"198\" x2=\"476\" y2=\"198\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"166\" x2=\"476\" y2=\"166\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"134\" x2=\"476\" y2=\"134\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"102\" x2=\"476\" y2=\"102\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"70\" x2=\"476\" y2=\"70\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"250\" y1=\"410\" x2=\"250\" y2=\"28\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"480\" y=\"235\" fill=\"#334155\" font-size=\"15\">x</text><text x=\"257\" y=\"24\" fill=\"#334155\" font-size=\"15\">y</text><line x1=\"114\" y1=\"406\" x2=\"454\" y2=\"86\" stroke=\"#4f46e5\" stroke-width=\"3\"/><circle cx=\"114\" cy=\"406\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"182\" cy=\"342\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"250\" cy=\"278\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"318\" cy=\"214\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"386\" cy=\"150\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"454\" cy=\"86\" r=\"5\" fill=\"#f59e0b\"/><text x=\"344\" y=\"72\" fill=\"#4f46e5\" font-size=\"16\" font-weight=\"700\">y = 2x − 3</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q4(e)(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 440\" width=\"100%\" role=\"img\" aria-label=\"Coordinate grid for graph y equals 2x minus 3\"><rect width=\"500\" height=\"440\" rx=\"12\" fill=\"#fff\"/><line x1=\"46\" y1=\"28\" x2=\"46\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"80\" y1=\"28\" x2=\"80\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"114\" y1=\"28\" x2=\"114\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"148\" y1=\"28\" x2=\"148\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"182\" y1=\"28\" x2=\"182\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"216\" y1=\"28\" x2=\"216\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"250\" y1=\"28\" x2=\"250\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"284\" y1=\"28\" x2=\"284\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"318\" y1=\"28\" x2=\"318\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"352\" y1=\"28\" x2=\"352\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"386\" y1=\"28\" x2=\"386\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"420\" y1=\"28\" x2=\"420\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"454\" y1=\"28\" x2=\"454\" y2=\"410\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"390\" x2=\"476\" y2=\"390\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"358\" x2=\"476\" y2=\"358\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"326\" x2=\"476\" y2=\"326\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"294\" x2=\"476\" y2=\"294\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"262\" x2=\"476\" y2=\"262\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"198\" x2=\"476\" y2=\"198\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"166\" x2=\"476\" y2=\"166\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"134\" x2=\"476\" y2=\"134\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"102\" x2=\"476\" y2=\"102\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"70\" x2=\"476\" y2=\"70\" stroke=\"#e2e8f0\"/><line x1=\"24\" y1=\"230\" x2=\"476\" y2=\"230\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"250\" y1=\"410\" x2=\"250\" y2=\"28\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"480\" y=\"235\" fill=\"#334155\" font-size=\"15\">x</text><text x=\"257\" y=\"24\" fill=\"#334155\" font-size=\"15\">y</text></svg>"
+          }
         }
       ]
     },
     {
       "topicId": "y7-11c",
-      "code": "",
-      "title": "",
+      "code": "12C",
+      "title": "Graphing linear rules",
       "questions": [
         {
           "id": "y7-t3-2018-p2-q2",
@@ -3660,6 +3796,63 @@
               "note": "Find the two axis intercepts, then use area = ½ × base × height."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows x = 1, 2, 3, 4 and y = 4.5, 5, 5.5, 6. Which rule connects them?",
+          "options": [
+            "\\(y=\\frac{x}{2}+4\\)",
+            "\\(y=2x+2.5\\)",
+            "\\(y=\\frac{x}{2}+3\\)",
+            "\\(y=x+3.5\\)"
+          ],
+          "answer": 0,
+          "hint": "As x increases by 1, y increases by 0.5; use this rate and test an input.",
+          "keyPoints": [
+            {
+              "text": "x = 1, 2, 3, 4",
+              "note": "Compare how y changes as x increases by 1."
+            },
+            {
+              "text": "y = 4.5, 5, 5.5, 6",
+              "note": "Use one pair to find the constant term."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the rate of change.",
+              "work": "\\(\\frac{5-4.5}{2-1}=0.5=\\frac12\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" width=\"100%\" role=\"img\" aria-label=\"Table of x values 1, 2, 3, 4 and corresponding y values 4.5, 5, 5.5, 6\"><rect width=\"460\" height=\"170\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"25\" width=\"400\" height=\"120\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><path d=\"M30 85 H430 M110 25 V145 M190 25 V145 M270 25 V145 M350 25 V145\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">x</text><text x=\"150\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"230\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">2</text><text x=\"310\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">3</text><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4</text><text x=\"70\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">y</text><text x=\"150\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4.5</text><text x=\"230\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5</text><text x=\"310\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5.5</text><text x=\"390\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">6</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the first pair to find the constant.",
+              "work": "\\(4.5=\\frac12(1)+c\\Rightarrow c=4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" width=\"100%\" role=\"img\" aria-label=\"Table of x values 1, 2, 3, 4 and corresponding y values 4.5, 5, 5.5, 6\"><rect width=\"460\" height=\"170\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"25\" width=\"400\" height=\"120\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><path d=\"M30 85 H430 M110 25 V145 M190 25 V145 M270 25 V145 M350 25 V145\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">x</text><text x=\"150\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"230\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">2</text><text x=\"310\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">3</text><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4</text><text x=\"70\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">y</text><text x=\"150\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4.5</text><text x=\"230\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5</text><text x=\"310\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5.5</text><text x=\"390\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">6</text></svg>"
+              }
+            },
+            {
+              "explain": "State the rule and check x = 4.",
+              "work": "\\(y=\\frac{x}{2}+4;\\quad y=\\frac42+4=6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" width=\"100%\" role=\"img\" aria-label=\"Table of x values 1, 2, 3, 4 and corresponding y values 4.5, 5, 5.5, 6\"><rect width=\"460\" height=\"170\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"25\" width=\"400\" height=\"120\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2\"/><path d=\"M30 85 H430 M110 25 V145 M190 25 V145 M270 25 V145 M350 25 V145\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">x</text><text x=\"150\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"230\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">2</text><text x=\"310\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">3</text><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4</text><text x=\"70\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">y</text><text x=\"150\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4.5</text><text x=\"230\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5</text><text x=\"310\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5.5</text><text x=\"390\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">6</text></svg>"
+              }
+            }
+          ],
+          "solution": "\\(y=\\frac{x}{2}+4\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q7(b)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" width=\"100%\" role=\"img\" aria-label=\"Table of x values 1, 2, 3, 4 and corresponding y values 4.5, 5, 5.5, 6\"><rect width=\"460\" height=\"170\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"25\" width=\"400\" height=\"120\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/><path d=\"M30 85 H430 M110 25 V145 M190 25 V145 M270 25 V145 M350 25 V145\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">x</text><text x=\"150\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">1</text><text x=\"230\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">2</text><text x=\"310\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">3</text><text x=\"390\" y=\"65\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4</text><text x=\"70\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">y</text><text x=\"150\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">4.5</text><text x=\"230\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5</text><text x=\"310\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">5.5</text><text x=\"390\" y=\"123\" text-anchor=\"middle\" font-size=\"18\" fill=\"#334155\">6</text></svg>"
+          }
         }
       ]
     }

@@ -872,6 +872,51 @@
             "grade": "7"
           },
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2017-q3d-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\frac{-6xy}{2x}\\), assuming \\(x\\ne0\\).",
+          "options": [
+            "\\(-3xy\\)",
+            "\\(3y\\)",
+            "\\(-4y\\)",
+            "\\(-3y\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the coefficients and cancel the common factor x.",
+          "keyPoints": [
+            {
+              "text": "−6xy / 2x",
+              "note": "Cancel x from numerator and denominator."
+            },
+            {
+              "text": "−6 ÷ 2",
+              "note": "Keep the negative sign."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the numerical factors and common variable.",
+              "work": "\\(\\frac{-6xy}{2x}=\\frac{-6}{2}\\cdot\\frac{x}{x}\\cdot y\\)"
+            },
+            {
+              "explain": "Simplify each factor.",
+              "work": "\\(-3\\cdot1\\cdot y=-3y\\)"
+            },
+            {
+              "explain": "Use the condition x ≠ 0 to cancel x, then simplify the coefficient.",
+              "work": "\\(\\frac{-6xy}{2x}=\\frac{-6}{2}y=-3y\\)"
+            }
+          ],
+          "solution": "\\(-3y\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q3(d)(ii)"
+          }
         }
       ]
     },
@@ -3126,6 +3171,51 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2017-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac e2+\\frac{2e}3\\) and \\(\\frac a3+\\frac{3a}4-\\frac a2\\).",
+          "options": [
+            "\\(\\frac{3e}{5}\\) and \\(\\frac{5a}{12}\\)",
+            "\\(\\frac{7e}{6}\\) and \\(\\frac{5a}{12}\\)",
+            "\\(\\frac{5e}{6}\\) and \\(\\frac{7a}{12}\\)",
+            "\\(\\frac{7e}{6}\\) and \\(\\frac{7a}{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find a common denominator for the numerical fractions, then combine coefficients of the same variable.",
+          "keyPoints": [
+            {
+              "text": "e/2 and 2e/3",
+              "note": "The least common denominator is 6."
+            },
+            {
+              "text": "a/3, 3a/4 and a/2",
+              "note": "Use denominator 12."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the e-terms using denominator 6.",
+              "work": "\\(\\frac e2+\\frac{2e}3=\\frac{3e}6+\\frac{4e}6=\\frac{7e}6\\)"
+            },
+            {
+              "explain": "Combine the a-terms using denominator 12.",
+              "work": "\\(\\frac a3+\\frac{3a}4-\\frac a2=\\frac{4a}{12}+\\frac{9a}{12}-\\frac{6a}{12}\\)"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\(\\frac{7a}{12}\\)"
+            }
+          ],
+          "solution": "\\(\\frac{7e}{6}\\) and \\(\\frac{7a}{12}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q3(b)"
+          }
         }
       ]
     },
@@ -4697,6 +4787,51 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "sgi-y7-2017-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\((3x/y)(y/2x)\\) and \\((4xy/5)\\div(2y/15)\\), where denominators are non-zero.",
+          "options": [
+            "\\(\\frac32\\) and \\(6x\\)",
+            "\\(\\frac{3y}{2x}\\) and \\(\\frac{8xy}{75}\\)",
+            "\\(\\frac32\\) and \\(\\frac{6x}{y}\\)",
+            "\\(\\frac{3x}{2y}\\) and \\(6x\\)"
+          ],
+          "answer": 0,
+          "hint": "For the first, cancel x and y. For the second, multiply by the reciprocal of 2y/15.",
+          "keyPoints": [
+            {
+              "text": "(3x/y)(y/2x)",
+              "note": "Cancel the common x and y factors."
+            },
+            {
+              "text": "(4xy/5) ÷ (2y/15)",
+              "note": "Multiply by 15/(2y)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Cancel common factors in the product.",
+              "work": "\\(\\frac{3x}{y}\\cdot\\frac{y}{2x}=\\frac32\\)"
+            },
+            {
+              "explain": "Rewrite division as multiplication by the reciprocal.",
+              "work": "\\(\\frac{4xy}{5}\\div\\frac{2y}{15}=\\frac{4xy}{5}\\cdot\\frac{15}{2y}\\)"
+            },
+            {
+              "explain": "Cancel y and simplify the numerical factors.",
+              "work": "\\(\\frac{4x}{5}\\cdot\\frac{15}{2}=6x\\)"
+            }
+          ],
+          "solution": "\\(\\frac32\\) and \\(6x\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q4(d)"
+          }
         }
       ]
     },

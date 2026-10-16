@@ -1956,6 +1956,51 @@
               "note": "Multiply numerators together and denominators together; simplify if possible."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q1f-mult",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\frac47\\times\\frac9{10}\\) and \\(\\frac78\\div\\frac5{12}\\).",
+          "options": [
+            "\\(\\frac{36}{70}\\) and \\(\\frac{35}{96}\\)",
+            "\\(\\frac{18}{35}\\) and \\(\\frac{35}{96}\\)",
+            "\\(\\frac{18}{35}\\) and \\(2\\dfrac1{10}\\)",
+            "\\(\\frac{13}{17}\\) and \\(1\\dfrac58\\)"
+          ],
+          "answer": 2,
+          "hint": "For division, multiply by the reciprocal of the second fraction.",
+          "keyPoints": [
+            {
+              "text": "4/7 × 9/10",
+              "note": "Multiply numerators and denominators, then simplify."
+            },
+            {
+              "text": "7/8 ÷ 5/12",
+              "note": "Change division to multiplication by 12/5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply across and simplify.",
+              "work": "\\(\\frac47\\times\\frac9{10}=\\frac{36}{70}=\\frac{18}{35}\\)"
+            },
+            {
+              "explain": "Use the reciprocal to divide fractions.",
+              "work": "\\(\\frac78\\div\\frac5{12}=\\frac78\\times\\frac{12}{5}\\)"
+            },
+            {
+              "explain": "Cancel common factors before multiplying.",
+              "work": "\\(\\frac78\\times\\frac{12}{5}=\\frac{21}{10}=2\\frac1{10}\\)"
+            }
+          ],
+          "solution": "\\(\\frac{18}{35}\\) and \\(2\\dfrac1{10}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q1(f)(iii)–(iv)"
+          }
         }
       ]
     },
@@ -4380,6 +4425,51 @@
               "note": "Start with 1; after each loss, multiply the remaining amount by 1 minus the lost fraction."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q10c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A small tray is \\(4/5\\) full and holds x litres when full. A large tray is \\(9/10\\) full and has capacity 6x litres. Water is poured into the small tray until it overflows and exactly fills the large tray. What fraction of the original water in the small tray is poured?",
+          "options": [
+            "1",
+            "\\(\\frac35\\)",
+            "\\(\\frac45\\)",
+            "\\(\\frac12\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the gap in the large tray, then include the water needed to top up the small tray before it overflows.",
+          "keyPoints": [
+            {
+              "text": "small tray is 4/5 full",
+              "note": "The amount needed to top it up is 1/5 of its capacity."
+            },
+            {
+              "text": "large tray is 9/10 full with capacity 6x",
+              "note": "Its empty space is 1/10 of 6x = 3/5 of the small tray capacity."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Find the water needed to fill the large tray.",
+              "work": "\\(\\frac1{10}\\times6x=\\frac{3x}{5}\\)"
+            },
+            {
+              "explain": "Add the water needed to top up the small tray.",
+              "work": "\\(\\frac{x}{5}+\\frac{3x}{5}=\\frac{4x}{5}\\text{ must be poured}\\)"
+            },
+            {
+              "explain": "Compare with the original small-tray water.",
+              "work": "\\(\\frac{4x/5}{4x/5}=1\\text{, so all the original water is poured.}\\)"
+            }
+          ],
+          "solution": "1",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q10(c)"
+          }
         }
       ]
     },

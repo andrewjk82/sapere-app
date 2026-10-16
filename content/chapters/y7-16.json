@@ -1102,6 +1102,96 @@
               "note": "Convert the green-sector probability to an angle by multiplying by 360°."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A card numbered 1 to 5 is chosen at random. What are the probabilities of choosing 4, an even number, and a number greater than 3, respectively?",
+          "options": [
+            "\\(\\frac15,\\frac25,\\frac25\\)",
+            "\\(\\frac15,\\frac15,\\frac25\\)",
+            "\\(\\frac15,\\frac25,\\frac35\\)",
+            "\\(\\frac25,\\frac25,\\frac25\\)"
+          ],
+          "answer": 0,
+          "hint": "There are five equally likely outcomes. Count the favourable numbers for each event.",
+          "keyPoints": [
+            {
+              "text": "A card numbered 1 to 5",
+              "note": "The total number of equally likely outcomes is 5."
+            },
+            {
+              "text": "even number",
+              "note": "The favourable outcomes are 2 and 4."
+            },
+            {
+              "text": "greater than 3",
+              "note": "The favourable outcomes are 4 and 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use favourable outcomes over total outcomes.",
+              "work": "\\(P(4)=\\frac15\\)"
+            },
+            {
+              "explain": "Count the even outcomes.",
+              "work": "\\(P(\\text{even})=\\frac25\\)"
+            },
+            {
+              "explain": "Count the outcomes greater than 3.",
+              "work": "\\(P(>3)=\\frac25\\)"
+            }
+          ],
+          "solution": "\\(\\frac15,\\frac25,\\frac25\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q2(b)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q8b-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A spinner has 9 equal-likelihood outcomes; 8/9 of outcomes are not yellow. What is the probability of yellow?",
+          "options": [
+            "\\(\\frac89\\)",
+            "\\(\\frac19\\)",
+            "\\(\\frac18\\)",
+            "\\(\\frac29\\)"
+          ],
+          "answer": 1,
+          "hint": "The probabilities of yellow and not yellow add to 1.",
+          "keyPoints": [
+            {
+              "text": "8/9 of outcomes are not yellow",
+              "note": "Use the complement rule."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the complement relationship.",
+              "work": "\\(P(\\text{yellow})+P(\\text{not yellow})=1\\)"
+            },
+            {
+              "explain": "Subtract the given probability from 1.",
+              "work": "\\(P(\\text{yellow})=1-\\frac89=\\frac19\\)"
+            },
+            {
+              "explain": "Check the two complementary probabilities add to one.",
+              "work": "\\(\\frac19+\\frac89=\\frac99=1\\)"
+            }
+          ],
+          "solution": "\\(\\frac19\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q8(b)(i)"
+          }
         }
       ]
     }

@@ -4668,6 +4668,96 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgi-y7-2017-q2c-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((-8)\\div(-2)\\).",
+          "options": [
+            "−4",
+            "4",
+            "−6",
+            "4.5"
+          ],
+          "answer": 1,
+          "hint": "Dividing two negative numbers gives a positive result.",
+          "keyPoints": [
+            {
+              "text": "−8 ÷ −2",
+              "note": "A negative divided by a negative is positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Determine the sign of the quotient.",
+              "work": "\\((-8)\\div(-2)>0\\)"
+            },
+            {
+              "explain": "Divide the absolute values.",
+              "work": "\\(8\\div2=4\\)"
+            },
+            {
+              "explain": "Combine the sign and magnitude.",
+              "work": "\\((-8)\\div(-2)=4\\)"
+            }
+          ],
+          "solution": "4",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q2(c)(i)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(-3-4\\), \\(4-(-3)\\), and \\(-4\\div2\\).",
+          "options": [
+            "−7, 1 and −2",
+            "−7, 7 and −2",
+            "1, 7 and 2",
+            "−7, 7 and 2"
+          ],
+          "answer": 1,
+          "hint": "Subtracting a negative is adding; a negative divided by a positive is negative.",
+          "keyPoints": [
+            {
+              "text": "−3 − 4",
+              "note": "Move 4 further below zero."
+            },
+            {
+              "text": "4 − (−3)",
+              "note": "Change subtraction of a negative to addition."
+            },
+            {
+              "text": "−4 ÷ 2",
+              "note": "The signs are different."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Calculate the first integer expression.",
+              "work": "\\(-3-4=-7\\)"
+            },
+            {
+              "explain": "Rewrite subtraction of a negative as addition.",
+              "work": "\\(4-(-3)=4+3=7\\)"
+            },
+            {
+              "explain": "Use the sign rule for division.",
+              "work": "\\(-4\\div2=-2\\)"
+            }
+          ],
+          "solution": "−7, 7 and −2",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q4(a)"
+          }
         }
       ]
     },

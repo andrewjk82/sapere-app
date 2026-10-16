@@ -1,6 +1,6 @@
 {
   "chapterId": "y7-12",
-  "title": "Triangles and constructions",
+  "title": "Chapter 13: Triangles, quadrilaterals and constructions",
   "year": "Year 7",
   "topics": [
     {
@@ -2933,6 +2933,176 @@
             "marks": 2,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgi-y7-2017-q5b-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A triangle has angles \\(40^\\circ\\), \\(60^\\circ\\) and \\(a^\\circ\\). Find \\(a\\).",
+          "options": [
+            "70°",
+            "90°",
+            "100°",
+            "80°"
+          ],
+          "answer": 3,
+          "hint": "The interior angles of a triangle add to 180°.",
+          "keyPoints": [
+            {
+              "text": "40° and 60°",
+              "note": "Subtract both known angles from 180°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the triangle angle-sum equation.",
+              "work": "\\(40^\\circ+60^\\circ+a=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" role=\"img\" aria-label=\"Triangle ABC with 40 degrees at A, 80 degrees labelled a at B, and 60 degrees at C\"><rect width=\"360\" height=\"250\" rx=\"12\" fill=\"#fff\"/><path d=\"M60 205 L300 205 L269 29 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M88 205 A28 28 0 0 0 81.4 187\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M272 205 A28 28 0 0 1 290.4 178.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M276.3 54.6 A28 28 0 0 1 250.8 39.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"91\" y=\"191\" font-size=\"17\" fill=\"#d97706\">40°</text><text x=\"279\" y=\"187\" font-size=\"18\" font-weight=\"700\" fill=\"#334155\">a°</text><text x=\"249\" y=\"61\" font-size=\"17\" fill=\"#d97706\">60°</text><text x=\"46\" y=\"225\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"303\" y=\"225\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"271\" y=\"22\" font-size=\"16\" fill=\"#334155\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the known angles.",
+              "work": "\\(100^\\circ+a=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" role=\"img\" aria-label=\"Triangle ABC with 40 degrees at A, 80 degrees labelled a at B, and 60 degrees at C\"><rect width=\"360\" height=\"250\" rx=\"12\" fill=\"#fff\"/><path d=\"M60 205 L300 205 L269 29 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M88 205 A28 28 0 0 0 81.4 187\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M272 205 A28 28 0 0 1 290.4 178.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M276.3 54.6 A28 28 0 0 1 250.8 39.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"91\" y=\"191\" font-size=\"17\" fill=\"#d97706\">40°</text><text x=\"279\" y=\"187\" font-size=\"18\" font-weight=\"700\" fill=\"#334155\">a°</text><text x=\"249\" y=\"61\" font-size=\"17\" fill=\"#d97706\">60°</text><text x=\"46\" y=\"225\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"303\" y=\"225\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"271\" y=\"22\" font-size=\"16\" fill=\"#334155\">C</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "\\(a=180^\\circ-100^\\circ=80^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" role=\"img\" aria-label=\"Triangle ABC with 40 degrees at A, 80 degrees labelled a at B, and 60 degrees at C\"><rect width=\"360\" height=\"250\" rx=\"12\" fill=\"#fff\"/><path d=\"M60 205 L300 205 L269 29 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M88 205 A28 28 0 0 0 81.4 187\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M272 205 A28 28 0 0 1 290.4 178.7\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M276.3 54.6 A28 28 0 0 1 250.8 39.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"91\" y=\"191\" font-size=\"17\" fill=\"#334155\">40°</text><text x=\"279\" y=\"187\" font-size=\"18\" font-weight=\"700\" fill=\"#d97706\">a°</text><text x=\"249\" y=\"61\" font-size=\"17\" fill=\"#334155\">60°</text><text x=\"46\" y=\"225\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"303\" y=\"225\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"271\" y=\"22\" font-size=\"16\" fill=\"#334155\">C</text></svg>"
+              }
+            }
+          ],
+          "solution": "80°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q5(b)(i)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"100%\" role=\"img\" aria-label=\"Triangle ABC with 40 degrees at A, 80 degrees labelled a at B, and 60 degrees at C\"><rect width=\"360\" height=\"250\" rx=\"12\" fill=\"#fff\"/><path d=\"M60 205 L300 205 L269 29 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M88 205 A28 28 0 0 0 81.4 187\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M272 205 A28 28 0 0 1 290.4 178.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M276.3 54.6 A28 28 0 0 1 250.8 39.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"91\" y=\"191\" font-size=\"17\" fill=\"#334155\">40°</text><text x=\"279\" y=\"187\" font-size=\"18\" font-weight=\"700\" fill=\"#334155\">a°</text><text x=\"249\" y=\"61\" font-size=\"17\" fill=\"#334155\">60°</text><text x=\"46\" y=\"225\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"303\" y=\"225\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"271\" y=\"22\" font-size=\"16\" fill=\"#334155\">C</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q5b-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A triangle has two interior angles of 70° and 50°. One side is extended at the third vertex. Find the exterior angle b.",
+          "options": [
+            "120°",
+            "100°",
+            "130°",
+            "110°"
+          ],
+          "answer": 0,
+          "hint": "An exterior angle of a triangle equals the sum of the two opposite interior angles.",
+          "keyPoints": [
+            {
+              "text": "70° and 50°",
+              "note": "These are the two interior angles opposite the exterior angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Identify the two remote interior angles.",
+              "work": "They are \\(70^\\circ\\) and \\(50^\\circ\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" width=\"100%\" role=\"img\" aria-label=\"Triangle ADB with base extended from B to C; angles 70 and 50 degrees and exterior angle b\"><rect width=\"390\" height=\"260\" rx=\"12\" fill=\"#fff\"/><path d=\"M70 205 L245 205 L180 43 Z M245 205 L355 205\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M96 205 A28 28 0 0 1 80 179\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M168 68 A24 24 0 0 1 192 68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M267 205 A25 25 0 0 0 258 184\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"92\" y=\"181\" font-size=\"18\" fill=\"#d97706\">70°</text><text x=\"169\" y=\"91\" font-size=\"18\" fill=\"#d97706\">50°</text><text x=\"280\" y=\"190\" font-size=\"20\" font-weight=\"700\" fill=\"#334155\">b°</text><text x=\"54\" y=\"229\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"242\" y=\"229\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"360\" y=\"229\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"178\" y=\"35\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the exterior-angle theorem.",
+              "work": "\\(b=70^\\circ+50^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" width=\"100%\" role=\"img\" aria-label=\"Triangle ADB with base extended from B to C; angles 70 and 50 degrees and exterior angle b\"><rect width=\"390\" height=\"260\" rx=\"12\" fill=\"#fff\"/><path d=\"M70 205 L245 205 L180 43 Z M245 205 L355 205\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M96 205 A28 28 0 0 1 80 179\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M168 68 A24 24 0 0 1 192 68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M267 205 A25 25 0 0 0 258 184\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"92\" y=\"181\" font-size=\"18\" fill=\"#d97706\">70°</text><text x=\"169\" y=\"91\" font-size=\"18\" fill=\"#d97706\">50°</text><text x=\"280\" y=\"190\" font-size=\"20\" font-weight=\"700\" fill=\"#334155\">b°</text><text x=\"54\" y=\"229\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"242\" y=\"229\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"360\" y=\"229\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"178\" y=\"35\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two angles.",
+              "work": "\\(b=120^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" width=\"100%\" role=\"img\" aria-label=\"Triangle ADB with base extended from B to C; angles 70 and 50 degrees and exterior angle b\"><rect width=\"390\" height=\"260\" rx=\"12\" fill=\"#fff\"/><path d=\"M70 205 L245 205 L180 43 Z M245 205 L355 205\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M96 205 A28 28 0 0 1 80 179\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M168 68 A24 24 0 0 1 192 68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M267 205 A25 25 0 0 0 258 184\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"92\" y=\"181\" font-size=\"18\" fill=\"#334155\">70°</text><text x=\"169\" y=\"91\" font-size=\"18\" fill=\"#334155\">50°</text><text x=\"280\" y=\"190\" font-size=\"20\" font-weight=\"700\" fill=\"#d97706\">b°</text><text x=\"54\" y=\"229\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"242\" y=\"229\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"360\" y=\"229\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"178\" y=\"35\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            }
+          ],
+          "solution": "120°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q5(b)(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 390 260\" width=\"100%\" role=\"img\" aria-label=\"Triangle ADB with base extended from B to C; angles 70 and 50 degrees and exterior angle b\"><rect width=\"390\" height=\"260\" rx=\"12\" fill=\"#fff\"/><path d=\"M70 205 L245 205 L180 43 Z M245 205 L355 205\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M96 205 A28 28 0 0 1 80 179\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M168 68 A24 24 0 0 1 192 68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M267 205 A25 25 0 0 0 258 184\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"92\" y=\"181\" font-size=\"18\" fill=\"#334155\">70°</text><text x=\"169\" y=\"91\" font-size=\"18\" fill=\"#334155\">50°</text><text x=\"280\" y=\"190\" font-size=\"20\" font-weight=\"700\" fill=\"#334155\">b°</text><text x=\"54\" y=\"229\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"242\" y=\"229\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"360\" y=\"229\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"178\" y=\"35\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q10a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In quadrilateral ABCD, AB = AD = DC, angle BAD = 60° and angle ADC = 150°. Find angle ABC.",
+          "options": [
+            "95°",
+            "110°",
+            "105°",
+            "100°"
+          ],
+          "answer": 2,
+          "hint": "Join B to D. Triangle ABD is equilateral; then use the angle at D in triangle BCD.",
+          "keyPoints": [
+            {
+              "text": "AB = AD = DC",
+              "note": "All three marked sides are equal."
+            },
+            {
+              "text": "angle BAD = 60°",
+              "note": "An isosceles triangle with a 60° vertex angle is equilateral."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the equal sides and included angle in triangle ABD.",
+              "work": "\\(\\angle ABD=\\angle ADB=60^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" role=\"img\" aria-label=\"Quadrilateral ABCD with AB, AD and DC equal, angle BAD 60 degrees, angle ADC 150 degrees and angle ABC unknown\"><rect width=\"420\" height=\"330\" rx=\"12\" fill=\"#fff\"/><path d=\"M190 48 L142 180 L304 293 L280 155 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"142\" y1=\"180\" x2=\"280\" y2=\"155\" stroke=\"#7c3aed\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M211 67 A28 28 0 0 1 181 75\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M285 181 A28 28 0 0 1 263 136\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M152 153 A28 28 0 0 1 165 197\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M160 112 L172 116 M230 105 L240 98\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M272 153 L284 157\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"185\" y=\"96\" font-size=\"17\" fill=\"#d97706\">60°</text><text x=\"244\" y=\"180\" font-size=\"17\" fill=\"#334155\">150°</text><text x=\"161\" y=\"176\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"190\" y=\"36\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"123\" y=\"197\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"307\" y=\"310\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"281\" y=\"143\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Find angle BDC from the given 150° angle.",
+              "work": "\\(\\angle BDC=150^\\circ-60^\\circ=90^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" role=\"img\" aria-label=\"Quadrilateral ABCD with AB, AD and DC equal, angle BAD 60 degrees, angle ADC 150 degrees and angle ABC unknown\"><rect width=\"420\" height=\"330\" rx=\"12\" fill=\"#fff\"/><path d=\"M190 48 L142 180 L304 293 L280 155 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"142\" y1=\"180\" x2=\"280\" y2=\"155\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M211 67 A28 28 0 0 1 181 75\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M285 181 A28 28 0 0 1 263 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M152 153 A28 28 0 0 1 165 197\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M270 143 A15 15 0 0 0 265 158\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M283 170 A15 15 0 0 1 265 158\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M160 112 L172 116 M230 105 L240 98 M272 153 L284 157\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"185\" y=\"96\" font-size=\"17\" fill=\"#d97706\">60°</text><text x=\"244\" y=\"180\" font-size=\"17\" fill=\"#d97706\">150°</text><text x=\"161\" y=\"176\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"190\" y=\"36\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"123\" y=\"197\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"307\" y=\"310\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"281\" y=\"143\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Use BD = DC to find the base angles.",
+              "work": "\\(\\angle DBC=\\angle BCD=\\frac{180^\\circ-90^\\circ}{2}=45^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" role=\"img\" aria-label=\"Quadrilateral ABCD with AB, AD and DC equal, angle BAD 60 degrees, angle ADC 150 degrees and angle ABC unknown\"><rect width=\"420\" height=\"330\" rx=\"12\" fill=\"#fff\"/><path d=\"M190 48 L142 180 L304 293 L280 155 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"142\" y1=\"180\" x2=\"280\" y2=\"155\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M211 67 A28 28 0 0 1 181 75\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M285 181 A28 28 0 0 1 263 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M152 153 A28 28 0 0 1 165 197\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M270 143 A15 15 0 0 0 265 158\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M283 170 A15 15 0 0 1 265 158\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M156 177 A14 14 0 0 1 153 188\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M292 286 A14 14 0 0 1 301 280\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M210 161 L212 173 M286 225 L298 223\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M160 112 L172 116 M230 105 L240 98\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"185\" y=\"96\" font-size=\"17\" fill=\"#334155\">60°</text><text x=\"244\" y=\"180\" font-size=\"17\" fill=\"#d97706\">150°</text><text x=\"161\" y=\"176\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"190\" y=\"36\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"123\" y=\"197\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"307\" y=\"310\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"281\" y=\"143\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the two parts of angle ABC.",
+              "work": "\\(\\angle ABC=60^\\circ+45^\\circ=105^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" role=\"img\" aria-label=\"Quadrilateral ABCD with AB, AD and DC equal, angle BAD 60 degrees, angle ADC 150 degrees and angle ABC unknown\"><rect width=\"420\" height=\"330\" rx=\"12\" fill=\"#fff\"/><path d=\"M190 48 L142 180 L304 293 L280 155 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><line x1=\"142\" y1=\"180\" x2=\"280\" y2=\"155\" stroke=\"#d97706\" stroke-width=\"3\" stroke-dasharray=\"7 5\"/><path d=\"M211 67 A28 28 0 0 1 181 75\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M285 181 A28 28 0 0 1 263 136\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M152 153 A28 28 0 0 1 165 197\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M147 165 A16 16 0 0 1 158 177\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M164 176 A24 24 0 0 1 160 194\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"/><path d=\"M160 112 L172 116 M230 105 L240 98 M272 153 L284 157\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"185\" y=\"96\" font-size=\"17\" fill=\"#d97706\">60°</text><text x=\"244\" y=\"180\" font-size=\"17\" fill=\"#d97706\">150°</text><text x=\"178\" y=\"170\" font-size=\"17\" fill=\"#d97706\">x°</text><text x=\"190\" y=\"36\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"123\" y=\"197\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"307\" y=\"310\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"281\" y=\"143\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+              }
+            }
+          ],
+          "solution": "105°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q10(a)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 330\" width=\"100%\" role=\"img\" aria-label=\"Quadrilateral ABCD with AB, AD and DC equal, angle BAD 60 degrees, angle ADC 150 degrees and angle ABC unknown\"><rect width=\"420\" height=\"330\" rx=\"12\" fill=\"#fff\"/><path d=\"M190 48 L142 180 L304 293 L280 155 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M211 67 A28 28 0 0 1 181 75\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M285 181 A28 28 0 0 1 263 136\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M152 153 A28 28 0 0 1 165 197\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M160 112 L172 116 M230 105 L240 98 M272 153 L284 157\" stroke=\"#334155\" stroke-width=\"3\"/><text x=\"185\" y=\"96\" font-size=\"17\" fill=\"#334155\">60°</text><text x=\"244\" y=\"180\" font-size=\"17\" fill=\"#334155\">150°</text><text x=\"161\" y=\"176\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"190\" y=\"36\" font-size=\"16\" fill=\"#334155\">A</text><text x=\"123\" y=\"197\" font-size=\"16\" fill=\"#334155\">B</text><text x=\"307\" y=\"310\" font-size=\"16\" fill=\"#334155\">C</text><text x=\"281\" y=\"143\" font-size=\"16\" fill=\"#334155\">D</text></svg>"
+          }
         }
       ]
     },
@@ -3482,6 +3652,175 @@
             }
           ],
           "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12f",
+      "code": "13B",
+      "title": "Angles in quadrilaterals",
+      "questions": [
+        {
+          "id": "sgi-y7-2017-q7d-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the concave quadrilateral ABCD shown, ∠A = 52°, ∠D = 35°, and the exterior angle at C is 110°. Find the interior angle ∠ABC.",
+          "options": [
+            "33°",
+            "58°",
+            "113°",
+            "23°"
+          ],
+          "answer": 3,
+          "hint": "The interior reflex angle at C is 360° − 110°. Then use the 360° interior-angle sum for a quadrilateral.",
+          "keyPoints": [
+            {
+              "text": "∠A = 52°, ∠D = 35°",
+              "note": "Use the two given interior angles."
+            },
+            {
+              "text": "exterior angle at C is 110°",
+              "note": "The reflex interior angle at C is one full turn minus 110°."
+            },
+            {
+              "text": "interior angle ∠ABC",
+              "note": "Use the quadrilateral interior-angle sum."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the quadrilateral angle sum.",
+              "work": "\\(52^\\circ+35^\\circ+250^\\circ+x=360^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 320\" width=\"100%\" role=\"img\" aria-label=\"Concave quadrilateral A-D-C-B with angles 52 degrees, 35 degrees, an exterior angle 110 degrees at C and unknown angle x at B\"><rect width=\"420\" height=\"320\" rx=\"12\" fill=\"#fff\"/><path d=\"M55 235 L281 45 L234 225 L340 295 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M77 217 A28 28 0 0 1 82 241\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M263 60 A24 24 0 0 0 275 68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M240 202 A24 24 0 0 1 254 238\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M257 240 A28 28 0 1 1 241 198\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"142\" y=\"211\" font-size=\"15\" fill=\"#d97706\">250° reflex</text><path d=\"M320 291 A20 20 0 0 1 323 284\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"85\" y=\"220\" font-size=\"16\" fill=\"#d97706\">52°</text><text x=\"250\" y=\"91\" font-size=\"16\" fill=\"#d97706\">35°</text><text x=\"257\" y=\"211\" font-size=\"16\" fill=\"#d97706\">110°</text><text x=\"301\" y=\"278\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"39\" y=\"249\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"345\" y=\"311\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"218\" y=\"230\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"285\" y=\"39\" font-size=\"15\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the known interior angles.",
+              "work": "\\(337^\\circ+x=360^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 320\" width=\"100%\" role=\"img\" aria-label=\"Concave quadrilateral A-D-C-B with angles 52 degrees, 35 degrees, an exterior angle 110 degrees at C and unknown angle x at B\"><rect width=\"420\" height=\"320\" rx=\"12\" fill=\"#fff\"/><path d=\"M55 235 L281 45 L234 225 L340 295 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M77 217 A28 28 0 0 1 82 241\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M263 60 A24 24 0 0 0 275 68\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M240 202 A24 24 0 0 1 254 238\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M257 240 A28 28 0 1 1 241 198\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"142\" y=\"211\" font-size=\"15\" fill=\"#d97706\">250° reflex</text><path d=\"M320 291 A20 20 0 0 1 323 284\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"85\" y=\"220\" font-size=\"16\" fill=\"#d97706\">52°</text><text x=\"250\" y=\"91\" font-size=\"16\" fill=\"#d97706\">35°</text><text x=\"257\" y=\"211\" font-size=\"16\" fill=\"#d97706\">110°</text><text x=\"301\" y=\"278\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"39\" y=\"249\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"345\" y=\"311\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"218\" y=\"230\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"285\" y=\"39\" font-size=\"15\" fill=\"#334155\">D</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "\\(x=23^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 320\" width=\"100%\" role=\"img\" aria-label=\"Concave quadrilateral A-D-C-B with angles 52 degrees, 35 degrees, an exterior angle 110 degrees at C and unknown angle x at B\"><rect width=\"420\" height=\"320\" rx=\"12\" fill=\"#fff\"/><path d=\"M55 235 L281 45 L234 225 L340 295 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M77 217 A28 28 0 0 1 82 241\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M263 60 A24 24 0 0 0 275 68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M240 202 A24 24 0 0 1 254 238\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M320 291 A20 20 0 0 1 323 284\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"85\" y=\"220\" font-size=\"16\" fill=\"#334155\">52°</text><text x=\"250\" y=\"91\" font-size=\"16\" fill=\"#334155\">35°</text><text x=\"257\" y=\"211\" font-size=\"16\" fill=\"#334155\">110°</text><text x=\"301\" y=\"278\" font-size=\"17\" fill=\"#d97706\">x°</text><text x=\"39\" y=\"249\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"345\" y=\"311\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"218\" y=\"230\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"285\" y=\"39\" font-size=\"15\" fill=\"#334155\">D</text></svg>"
+              }
+            }
+          ],
+          "solution": "23°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q7(d)(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 320\" width=\"100%\" role=\"img\" aria-label=\"Concave quadrilateral A-D-C-B with angles 52 degrees, 35 degrees, an exterior angle 110 degrees at C and unknown angle x at B\"><rect width=\"420\" height=\"320\" rx=\"12\" fill=\"#fff\"/><path d=\"M55 235 L281 45 L234 225 L340 295 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"4\" stroke-linejoin=\"round\"/><path d=\"M77 217 A28 28 0 0 1 82 241\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M263 60 A24 24 0 0 0 275 68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M240 202 A24 24 0 0 1 254 238\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M320 291 A20 20 0 0 1 323 284\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"85\" y=\"220\" font-size=\"16\" fill=\"#334155\">52°</text><text x=\"250\" y=\"91\" font-size=\"16\" fill=\"#334155\">35°</text><text x=\"257\" y=\"211\" font-size=\"16\" fill=\"#334155\">110°</text><text x=\"301\" y=\"278\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"39\" y=\"249\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"345\" y=\"311\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"218\" y=\"230\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"285\" y=\"39\" font-size=\"15\" fill=\"#334155\">D</text></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12g",
+      "code": "13D",
+      "title": "Geometric constructions",
+      "questions": [
+        {
+          "id": "sgi-y7-2017-q6d-i",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Construct the bisector of angle AOB using a compass and straightedge.",
+          "answer": "Sample answer: draw an arc centred at O to mark equal points on OA and OB; from those points draw equal-radius arcs that intersect inside the angle; join O to the arc intersection.",
+          "manual": true,
+          "hint": "Use the same compass radius from O to mark both arms, then the same radius from each mark to create an intersection.",
+          "keyPoints": [
+            {
+              "text": "bisector of angle AOB",
+              "note": "A correct bisector passes through O and divides the angle into two equal angles."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Mark equal distances from O on both arms.",
+              "work": "Use one compass setting centred at O.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+              }
+            },
+            {
+              "explain": "Create an intersection inside the angle.",
+              "work": "With the same radius, draw arcs from the two arm marks.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"175.7\" cy=\"140\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"175.7\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"93\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"180\" y1=\"220\" x2=\"133\" y2=\"93\" stroke=\"#059669\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+              }
+            },
+            {
+              "explain": "Draw the bisector.",
+              "work": "Join O to the intersection; the two angles are equal.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"175.7\" cy=\"140\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"175.7\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"93\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"180\" y1=\"220\" x2=\"133\" y2=\"93\" stroke=\"#059669\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q6(d)(i)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q6d-ii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Construct a line through P perpendicular to AB using a compass and straightedge.",
+          "answer": "Sample answer: with centre P, draw an arc cutting AB at two points; from those points draw equal-radius arcs meeting on the opposite side; join P to the arc intersection.",
+          "manual": true,
+          "hint": "The perpendicular bisector of the two points where a circle centred at P cuts AB passes through P and is perpendicular to AB.",
+          "keyPoints": [
+            {
+              "text": "perpendicular to AB",
+              "note": "The constructed line must meet AB at 90° and pass through P."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use P as the centre to mark two points on AB.",
+              "work": "Draw an arc large enough to cross AB twice.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" role=\"img\" aria-label=\"Point P below line AB; compass arcs construct a perpendicular through P\"><rect width=\"420\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"70\" y1=\"55\" x2=\"350\" y2=\"195\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"190\" cy=\"185\" r=\"5\" fill=\"#334155\"/><text x=\"55\" y=\"50\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"356\" y=\"205\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"197\" y=\"195\" font-size=\"17\" fill=\"#334155\">P</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the two intersection points as arc centres.",
+              "work": "Draw arcs with the same radius so they intersect.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" role=\"img\" aria-label=\"Point P below line AB; compass arcs construct a perpendicular through P\"><rect width=\"420\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"70\" y1=\"55\" x2=\"350\" y2=\"195\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"190\" cy=\"185\" r=\"5\" fill=\"#334155\"/><text x=\"55\" y=\"50\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"356\" y=\"205\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"197\" y=\"195\" font-size=\"17\" fill=\"#334155\">P</text><circle cx=\"190\" cy=\"185\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"154.8\" cy=\"97.4\" r=\"100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"281.2\" cy=\"160.6\" r=\"100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"154.8\" cy=\"97.4\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"281.2\" cy=\"160.6\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"246.3\" cy=\"72.4\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"190\" y1=\"185\" x2=\"246.3\" y2=\"72.4\" stroke=\"#059669\" stroke-width=\"4\"/></svg>"
+              }
+            },
+            {
+              "explain": "Join P to the arc intersection.",
+              "work": "This line is perpendicular to AB.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" role=\"img\" aria-label=\"Point P below line AB; compass arcs construct a perpendicular through P\"><rect width=\"420\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"70\" y1=\"55\" x2=\"350\" y2=\"195\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"190\" cy=\"185\" r=\"5\" fill=\"#334155\"/><text x=\"55\" y=\"50\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"356\" y=\"205\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"197\" y=\"195\" font-size=\"17\" fill=\"#334155\">P</text><circle cx=\"190\" cy=\"185\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"154.8\" cy=\"97.4\" r=\"100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"281.2\" cy=\"160.6\" r=\"100\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"154.8\" cy=\"97.4\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"281.2\" cy=\"160.6\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"246.3\" cy=\"72.4\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"190\" y1=\"185\" x2=\"246.3\" y2=\"72.4\" stroke=\"#059669\" stroke-width=\"4\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q6(d)(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 300\" width=\"100%\" role=\"img\" aria-label=\"Point P below line AB; compass arcs construct a perpendicular through P\"><rect width=\"420\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"70\" y1=\"55\" x2=\"350\" y2=\"195\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"190\" cy=\"185\" r=\"5\" fill=\"#334155\"/><text x=\"55\" y=\"50\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"356\" y=\"205\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"197\" y=\"195\" font-size=\"17\" fill=\"#334155\">P</text></svg>"
+          }
         }
       ]
     }

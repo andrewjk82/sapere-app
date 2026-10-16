@@ -3964,6 +3964,47 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgi-y7-2017-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which list contains exactly the prime numbers among 1, 2, 3, 4, 5 and 9?",
+          "options": [
+            "2, 3 and 5",
+            "1, 2, 3 and 5",
+            "2, 3, 5 and 9",
+            "2, 4 and 5"
+          ],
+          "answer": 0,
+          "hint": "A prime has exactly two positive factors: 1 and itself.",
+          "keyPoints": [
+            {
+              "text": "prime numbers",
+              "note": "Check each candidate for factors other than 1 and itself."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the test for a prime number.",
+              "work": "A prime has exactly two positive factors: 1 and itself."
+            },
+            {
+              "explain": "Check which candidates have another factor pair.",
+              "work": "\\(4=2\\times2\\) and \\(9=3\\times3\\), so 4 and 9 are composite; 2, 3 and 5 are prime."
+            },
+            {
+              "explain": "Exclude 1, which is not prime, and select the primes.",
+              "work": "The prime numbers in the list are \\(2, 3, 5\\)."
+            }
+          ],
+          "solution": "2, 3 and 5",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q1(a)"
+          }
         }
       ]
     },
@@ -5601,6 +5642,133 @@
               "note": "Evaluate the power first: calculate 2³, then multiply by 3."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q2c-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\((-10)^2\\).",
+          "options": [
+            "−100",
+            "20",
+            "100",
+            "−20"
+          ],
+          "answer": 2,
+          "hint": "The exponent applies to the entire number inside the brackets.",
+          "keyPoints": [
+            {
+              "text": "(−10)²",
+              "note": "Multiply −10 by itself twice."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Expand the square as repeated multiplication.",
+              "work": "\\((-10)^2=(-10)\\times(-10)\\)"
+            },
+            {
+              "explain": "Multiply the two negative factors.",
+              "work": "\\((-10)\\times(-10)=100\\)"
+            },
+            {
+              "explain": "Multiply the magnitudes to finish the calculation.",
+              "work": "\\(10\\times10=100\\)"
+            }
+          ],
+          "solution": "100",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q2(c)(ii)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q3d-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(x^2\\times x^3\\).",
+          "options": [
+            "\\(x^6\\)",
+            "\\(x^9\\)",
+            "\\(x^5\\)",
+            "\\(2x^5\\)"
+          ],
+          "answer": 2,
+          "hint": "When multiplying powers with the same base, add the exponents.",
+          "keyPoints": [
+            {
+              "text": "x² × x³",
+              "note": "The base x is the same in both factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Apply the index law for multiplication.",
+              "work": "\\(x^2\\times x^3=x^{2+3}\\)"
+            },
+            {
+              "explain": "Add the exponents.",
+              "work": "\\(x^{2+3}=x^5\\)"
+            },
+            {
+              "explain": "Count the total number of x-factors.",
+              "work": "\\(x\\times x\\times x\\times x\\times x=x^5\\)"
+            }
+          ],
+          "solution": "\\(x^5\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q3(d)(i)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q7a-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\((-4x)\\times(-3x)^2\\div6\\).",
+          "options": [
+            "\\(6x^3\\)",
+            "\\(-6x^2\\)",
+            "\\(-6x^3\\)",
+            "\\(-2x^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Square −3x first, then multiply by −4x and divide by 6.",
+          "keyPoints": [
+            {
+              "text": "(−3x)²",
+              "note": "The square makes both factors positive."
+            },
+            {
+              "text": "−4x × 9x² ÷ 6",
+              "note": "Multiply coefficients and add powers of x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Evaluate the square.",
+              "work": "\\((-3x)^2=9x^2\\)"
+            },
+            {
+              "explain": "Multiply and divide the coefficients.",
+              "work": "\\((-4)\\times9\\div6=-6\\)"
+            },
+            {
+              "explain": "Combine the powers of x.",
+              "work": "\\(-6x\\cdot x^2=-6x^3\\)"
+            }
+          ],
+          "solution": "\\(-6x^3\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q7(a)(i)"
+          }
         }
       ]
     },
@@ -7122,6 +7290,51 @@
               "note": "Test small prime divisors, starting with 2, 3, and 5; continue until every factor is prime."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write 1936 as a product of prime factors and find \\(\\sqrt{1936}\\).",
+          "options": [
+            "\\(2^3\\times11^2\\); 44",
+            "\\(2^4\\times11\\); 22",
+            "\\(2^4\\times11^2\\); 88",
+            "\\(2^4\\times11^2\\); 44"
+          ],
+          "answer": 3,
+          "hint": "Factor 1936 into primes, then halve each even exponent when taking the square root.",
+          "keyPoints": [
+            {
+              "text": "1936",
+              "note": "Find prime factors using divisibility by 2 and 11."
+            },
+            {
+              "text": "square root",
+              "note": "Pair equal prime factors."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor 1936.",
+              "work": "\\(1936=16\\times121=2^4\\times11^2\\)"
+            },
+            {
+              "explain": "Take one factor from each equal pair.",
+              "work": "\\(\\sqrt{2^4\\times11^2}=2^2\\times11\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(4\\times11=44\\)"
+            }
+          ],
+          "solution": "\\(2^4\\times11^2\\); 44",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q8(c)"
+          }
         }
       ]
     },
@@ -9309,6 +9522,55 @@
             "section": "Non-calculator Number",
             "marks": 1,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q9c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the lowest common multiple and highest common factor of \\(2^2\\times7^4\\times11\\times13^2\\) and \\(2\\times7^3\\times13\\).",
+          "options": [
+            "LCM = \\(2\\times7^3\\times13\\); HCF = \\(2^2\\times7^4\\times11\\times13^2\\)",
+            "LCM = \\(2^2\\times7^4\\times11\\times13^2\\); HCF = \\(2\\times7^3\\times13\\)",
+            "LCM = \\(2^2\\times7^4\\times13\\); HCF = \\(2\\times7^3\\times11\\times13^2\\)",
+            "LCM = \\(2^2\\times7^3\\times11\\times13^2\\); HCF = \\(2\\times7^4\\times13\\)"
+          ],
+          "answer": 1,
+          "hint": "For the LCM take the greater exponent of each prime; for the HCF take only common primes with the smaller exponent.",
+          "keyPoints": [
+            {
+              "text": "prime factorisations",
+              "note": "Compare exponents prime by prime."
+            },
+            {
+              "text": "LCM",
+              "note": "Use the maximum exponent for each prime."
+            },
+            {
+              "text": "HCF",
+              "note": "Use the minimum exponent only for shared primes."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Compare the exponents of each prime.",
+              "work": "For 2, 7 and 13, the exponents are (2,1), (4,3), (2,1); 11 occurs only in the first number."
+            },
+            {
+              "explain": "Choose the larger exponents for the LCM.",
+              "work": "\\(\\operatorname{LCM}=2^2\\times7^4\\times11\\times13^2\\)"
+            },
+            {
+              "explain": "Choose the smaller shared exponents for the HCF.",
+              "work": "\\(\\operatorname{HCF}=2\\times7^3\\times13\\)"
+            }
+          ],
+          "solution": "LCM = \\(2^2\\times7^4\\times11\\times13^2\\); HCF = \\(2\\times7^3\\times13\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q9(c)"
           }
         }
       ]

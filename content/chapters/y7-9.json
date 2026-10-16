@@ -1,7 +1,7 @@
 {
   "chapterId": "y7-9",
-  "title": "",
-  "year": "",
+  "title": "Chapter 10: Review and problem solving",
+  "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-9c",
@@ -64,6 +64,58 @@
             }
           ],
           "xp": 2
+        }
+      ]
+    },
+    {
+      "topicId": "y7-9b",
+      "code": "10B",
+      "title": "Numerical problem solving",
+      "questions": [
+        {
+          "id": "sgi-y7-2017-q10d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Page numbers are printed using 9 single-digit numerals (pages 1–9), 180 digits for pages 10–99 and 2700 digits for pages 100–999. If 3425 digits are used in total, what is the last page number?",
+          "options": [
+            "1124",
+            "1133",
+            "1132",
+            "1134"
+          ],
+          "answer": 1,
+          "hint": "First count the digits used through page 999, then divide the remaining digits by 4.",
+          "keyPoints": [
+            {
+              "text": "pages 100–999",
+              "note": "Add the digit counts through page 999."
+            },
+            {
+              "text": "3425 digits",
+              "note": "Subtract the digits used through 999."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Count digits through page 999.",
+              "work": "\\(9+180+2700=2889\\)"
+            },
+            {
+              "explain": "Find the remaining digits and number of four-digit page labels.",
+              "work": "\\(3425-2889=536;\\quad536\\div4=134\\)"
+            },
+            {
+              "explain": "Add 134 pages after page 999.",
+              "work": "\\(999+134=1133\\)"
+            }
+          ],
+          "solution": "1133",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q10(d)"
+          }
         }
       ]
     }

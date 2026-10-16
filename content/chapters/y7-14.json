@@ -2863,6 +2863,107 @@
               "note": "An increase of 25% makes the new length 125% of the original."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the decimal–fraction–percentage conversions: \\(0.3\\), \\(0.375\\), and \\(0.45\\).",
+          "options": [
+            "\\(0.3=\\frac3{10}=3\\%;\\;0.375=\\frac38=3.75\\%;\\;0.45=\\frac9{20}=4.5\\%\\)",
+            "\\(0.3=\\frac3{100}=30\\%;\\;0.375=\\frac38=37.5\\%;\\;0.45=\\frac9{20}=45\\%\\)",
+            "\\(0.3=\\frac3{10}=30\\%;\\;0.375=\\frac38=37.5\\%;\\;0.45=\\frac9{20}=4.5\\%\\)",
+            "\\(0.3=\\frac3{10}=30\\%;\\;0.375=\\frac38=37.5\\%;\\;0.45=\\frac9{20}=45\\%\\)"
+          ],
+          "answer": 3,
+          "hint": "Write each decimal over a power of 10, simplify, then multiply by 100 for the percentage.",
+          "keyPoints": [
+            {
+              "text": "0.3",
+              "note": "0.3 is three tenths."
+            },
+            {
+              "text": "0.375",
+              "note": "375/1000 simplifies by dividing by 125."
+            },
+            {
+              "text": "0.45",
+              "note": "45/100 simplifies by dividing by 5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert and simplify 0.3.",
+              "work": "\\(0.3=\\frac3{10}=30\\%\\)"
+            },
+            {
+              "explain": "Convert and simplify 0.375.",
+              "work": "\\(0.375=\\frac{375}{1000}=\\frac38=37.5\\%\\)"
+            },
+            {
+              "explain": "Convert and simplify 0.45.",
+              "work": "\\(0.45=\\frac{45}{100}=\\frac9{20}=45\\%\\)"
+            }
+          ],
+          "solution": "\\(0.3=\\frac3{10}=30\\%;\\;0.375=\\frac38=37.5\\%;\\;0.45=\\frac9{20}=45\\%\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q2(d)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 180\" width=\"100%\" role=\"img\" aria-label=\"Table to convert decimals, fractions and percentages\"><rect width=\"520\" height=\"180\" rx=\"12\" fill=\"#fff\"/><rect x=\"30\" y=\"35\" width=\"460\" height=\"110\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"2\"/><line x1=\"183\" y1=\"35\" x2=\"183\" y2=\"145\" stroke=\"#64748b\"/><line x1=\"337\" y1=\"35\" x2=\"337\" y2=\"145\" stroke=\"#64748b\"/><line x1=\"30\" y1=\"80\" x2=\"490\" y2=\"80\" stroke=\"#64748b\"/><text x=\"106\" y=\"65\" text-anchor=\"middle\" font-size=\"17\" fill=\"#334155\">Decimal</text><text x=\"260\" y=\"65\" text-anchor=\"middle\" font-size=\"17\" fill=\"#334155\">Fraction</text><text x=\"414\" y=\"65\" text-anchor=\"middle\" font-size=\"17\" fill=\"#334155\">Percentage</text><text x=\"106\" y=\"116\" text-anchor=\"middle\" font-size=\"17\" fill=\"#64748b\">Complete all rows</text><text x=\"260\" y=\"116\" text-anchor=\"middle\" font-size=\"17\" fill=\"#64748b\">Simplify fractions</text><text x=\"414\" y=\"116\" text-anchor=\"middle\" font-size=\"17\" fill=\"#64748b\">Out of 100</text></svg>"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q9a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car costs x dollars. The buyer pays a 25% deposit and 25 monthly repayments of $350. If the total paid is twice the sale price, find x.",
+          "options": [
+            "\\(3500\\text{ dollars}\\)",
+            "\\(5000\\text{ dollars}\\)",
+            "\\(4375\\text{ dollars}\\)",
+            "\\(7000\\text{ dollars}\\)"
+          ],
+          "answer": 1,
+          "hint": "The total is a 25% deposit plus 25 monthly payments of $350. Set the total equal to 2x.",
+          "keyPoints": [
+            {
+              "text": "25% of x",
+              "note": "Write this as 0.25x."
+            },
+            {
+              "text": "25 monthly repayments of $350",
+              "note": "The repayments total 25 × 350 = $8750."
+            },
+            {
+              "text": "total paid is twice x",
+              "note": "Set the expression equal to 2x."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write an equation for the total.",
+              "work": "\\(0.25x+25(350)=2x\\)"
+            },
+            {
+              "explain": "Collect x terms on one side.",
+              "work": "\\(8750=1.75x\\)"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "\\(x=\\frac{8750}{1.75}=5000\\text{ dollars}\\)"
+            }
+          ],
+          "solution": "\\(5000\\text{ dollars}\\)",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q9(a)"
+          }
         }
       ]
     },
@@ -3047,6 +3148,47 @@
               "note": "This is the whole amount whose 40% is required."
             }
           ]
+        },
+        {
+          "id": "sgi-y7-2017-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find 12% of 25.",
+          "options": [
+            "0.48",
+            "12",
+            "3",
+            "30"
+          ],
+          "answer": 2,
+          "hint": "Convert 12% to 0.12 or 12/100, then multiply by 25.",
+          "keyPoints": [
+            {
+              "text": "12% of 25",
+              "note": "A percentage of a quantity means multiply by the percentage as a fraction."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write 12% as a fraction of 100.",
+              "work": "\\(12\\%=\\frac{12}{100}\\)"
+            },
+            {
+              "explain": "Multiply by 25 and simplify.",
+              "work": "\\(\\frac{12}{100}\\times25=3\\)"
+            },
+            {
+              "explain": "Simplify the product to find the value.",
+              "work": "\\(\\frac{12}{100}\\times25=\\frac{300}{100}=3\\)"
+            }
+          ],
+          "solution": "3",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q4(b)"
+          }
         }
       ]
     }

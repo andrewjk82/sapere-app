@@ -3744,6 +3744,51 @@
             "marks": 1,
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sgi-y7-2017-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(12.24+3.68\\) and \\(9.51-4.34\\).",
+          "options": [
+            "15.92 and 5.17",
+            "15.82 and 5.27",
+            "15.92 and 5.27",
+            "15.82 and 5.17"
+          ],
+          "answer": 0,
+          "hint": "Line up the decimal points before adding or subtracting.",
+          "keyPoints": [
+            {
+              "text": "12.24 + 3.68",
+              "note": "Keep hundredths, tenths and ones in matching columns."
+            },
+            {
+              "text": "9.51 − 4.34",
+              "note": "Regroup across the decimal columns where needed."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Add with decimal points aligned.",
+              "work": "\\(12.24+3.68=15.92\\)"
+            },
+            {
+              "explain": "Subtract with decimal points aligned.",
+              "work": "\\(9.51-4.34=5.17\\)"
+            },
+            {
+              "explain": "Check both results by estimating.",
+              "work": "\\(12+4\\approx16,\\quad 9.5-4.3\\approx5.2\\)"
+            }
+          ],
+          "solution": "15.92 and 5.17",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q1(e)"
+          }
         }
       ]
     },
@@ -4598,6 +4643,96 @@
             "section": "Calculator Number",
             "marks": 1,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate \\(2.1\\times0.3\\) and \\(0.48\\div6\\).",
+          "options": [
+            "0.63 and 0.8",
+            "6.3 and 0.08",
+            "0.63 and 0.08",
+            "0.63 and 0.008"
+          ],
+          "answer": 2,
+          "hint": "For multiplication, count total decimal places; for division, divide 48 hundredths by 6.",
+          "keyPoints": [
+            {
+              "text": "2.1 × 0.3",
+              "note": "There are two decimal places in total."
+            },
+            {
+              "text": "0.48 ÷ 6",
+              "note": "48 hundredths divided by 6 is 8 hundredths."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply as whole numbers, then place the decimal.",
+              "work": "\\(21\\times3=63;\\;2.1\\times0.3=0.63\\)"
+            },
+            {
+              "explain": "Divide 48 hundredths by 6.",
+              "work": "\\(0.48\\div6=0.08\\)"
+            },
+            {
+              "explain": "Check by reversing the division.",
+              "work": "\\(0.08\\times6=0.48\\)"
+            }
+          ],
+          "solution": "0.63 and 0.08",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q3(a)"
+          }
+        },
+        {
+          "id": "sgi-y7-2017-q8d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given \\(m=0.0058\\) and \\(n=-0.29\\), find \\(mn\\) and \\(100m^2/n\\).",
+          "options": [
+            "−0.001682 and −0.0116",
+            "−0.01682 and −0.0116",
+            "−0.001682 and 0.0116",
+            "−0.001682 and −0.116"
+          ],
+          "answer": 0,
+          "hint": "Substitute both values carefully; a positive number times a negative number is negative.",
+          "keyPoints": [
+            {
+              "text": "m = 0.0058, n = −0.29",
+              "note": "Use the given values in both expressions."
+            },
+            {
+              "text": "100m²/n",
+              "note": "Square m before multiplying by 100 and dividing by n."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply m and n.",
+              "work": "\\(0.0058\\times(-0.29)=-0.001682\\)"
+            },
+            {
+              "explain": "Square m.",
+              "work": "\\((0.0058)^2=0.00003364\\)"
+            },
+            {
+              "explain": "Multiply by 100 and divide by −0.29.",
+              "work": "\\(100(0.00003364)\\div(-0.29)=-0.0116\\)"
+            }
+          ],
+          "solution": "−0.001682 and −0.0116",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q8(d)"
           }
         }
       ]

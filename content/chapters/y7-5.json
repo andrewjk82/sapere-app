@@ -1,12 +1,12 @@
 {
   "chapterId": "y7-5",
-  "title": "",
+  "title": "Chapter 6: An introduction to geometry",
   "year": "Year 7",
   "topics": [
     {
       "topicId": "y7-5a",
       "code": "6A",
-      "title": "Multiplication of fractions",
+      "title": "Angles and parallel lines",
       "questions": [
         {
           "id": "174vTcmPNyrWdudcjXbI",
@@ -768,15 +768,122 @@
     },
     {
       "topicId": "y7-5b",
-      "code": "",
-      "title": "",
-      "questions": []
+      "code": "6B",
+      "title": "Angles on straight lines",
+      "questions": [
+        {
+          "id": "sgi-y7-2017-q7d-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, lines DC and EF are parallel. Find \\(\\angle ABC\\) if \\(\\angle BHE=70^\\circ\\).",
+          "options": [
+            "70°",
+            "100°",
+            "110°",
+            "120°"
+          ],
+          "answer": 2,
+          "hint": "First use alternate interior angles at the two intersections, then use the straight angle at B.",
+          "keyPoints": [
+            {
+              "text": "DC ∥ EF",
+              "note": "Alternate interior angles are equal."
+            },
+            {
+              "text": "∠BHE = 70°",
+              "note": "At B, ∠DBA is 70°; ∠DBA and ∠ABC form a straight angle."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use alternate interior angles between the parallel lines.",
+              "work": "\\(\\angle DBA=\\angle BHE=70^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" role=\"img\" aria-label=\"Parallel lines DBC and EHF cut by transversal ABHG; angle BHE is 70 degrees and angle ABC is unknown\"><rect width=\"440\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"120\" y1=\"202\" x2=\"225\" y2=\"77\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"220\" y1=\"277\" x2=\"370\" y2=\"98\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"40\" y1=\"92\" x2=\"405\" y2=\"225\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M162 116 A25 25 0 0 1 201 106\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M286 161 A25 25 0 0 0 294 189\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"165\" y=\"91\" font-size=\"17\" fill=\"#d97706\">x°</text><text x=\"260\" y=\"179\" font-size=\"17\" fill=\"#d97706\">70°</text><text x=\"108\" y=\"215\" font-size=\"15\" fill=\"#334155\">D</text><text x=\"229\" y=\"76\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"207\" y=\"293\" font-size=\"15\" fill=\"#334155\">E</text><text x=\"375\" y=\"96\" font-size=\"15\" fill=\"#334155\">F</text><text x=\"24\" y=\"89\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"176\" y=\"142\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"300\" y=\"168\" font-size=\"15\" fill=\"#334155\">H</text><text x=\"408\" y=\"233\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"277\" y=\"267\" font-size=\"13\" fill=\"#64748b\">DC ∥ EF</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the straight-angle relationship at B.",
+              "work": "\\(\\angle DBA+\\angle ABC=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" role=\"img\" aria-label=\"Parallel lines DBC and EHF cut by transversal ABHG; angle BHE is 70 degrees and angle ABC is unknown\"><rect width=\"440\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"120\" y1=\"202\" x2=\"225\" y2=\"77\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"220\" y1=\"277\" x2=\"370\" y2=\"98\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"40\" y1=\"92\" x2=\"405\" y2=\"225\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M162 116 A25 25 0 0 1 201 106\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M286 161 A25 25 0 0 0 294 189\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"165\" y=\"91\" font-size=\"17\" fill=\"#d97706\">x°</text><text x=\"260\" y=\"179\" font-size=\"17\" fill=\"#d97706\">70°</text><text x=\"108\" y=\"215\" font-size=\"15\" fill=\"#334155\">D</text><text x=\"229\" y=\"76\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"207\" y=\"293\" font-size=\"15\" fill=\"#334155\">E</text><text x=\"375\" y=\"96\" font-size=\"15\" fill=\"#334155\">F</text><text x=\"24\" y=\"89\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"176\" y=\"142\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"300\" y=\"168\" font-size=\"15\" fill=\"#334155\">H</text><text x=\"408\" y=\"233\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"277\" y=\"267\" font-size=\"13\" fill=\"#64748b\">DC ∥ EF</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the requested angle.",
+              "work": "\\(\\angle ABC=180^\\circ-70^\\circ=110^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" role=\"img\" aria-label=\"Parallel lines DBC and EHF cut by transversal ABHG; angle BHE is 70 degrees and angle ABC is unknown\"><rect width=\"440\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"120\" y1=\"202\" x2=\"225\" y2=\"77\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"220\" y1=\"277\" x2=\"370\" y2=\"98\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"40\" y1=\"92\" x2=\"405\" y2=\"225\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M162 116 A25 25 0 0 1 201 106\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><path d=\"M286 161 A25 25 0 0 0 294 189\" fill=\"none\" stroke=\"#d97706\" stroke-width=\"4\"/><text x=\"165\" y=\"91\" font-size=\"17\" fill=\"#d97706\">x°</text><text x=\"260\" y=\"179\" font-size=\"17\" fill=\"#d97706\">70°</text><text x=\"108\" y=\"215\" font-size=\"15\" fill=\"#334155\">D</text><text x=\"229\" y=\"76\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"207\" y=\"293\" font-size=\"15\" fill=\"#334155\">E</text><text x=\"375\" y=\"96\" font-size=\"15\" fill=\"#334155\">F</text><text x=\"24\" y=\"89\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"176\" y=\"142\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"300\" y=\"168\" font-size=\"15\" fill=\"#334155\">H</text><text x=\"408\" y=\"233\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"277\" y=\"267\" font-size=\"13\" fill=\"#64748b\">DC ∥ EF</text></svg>"
+              }
+            }
+          ],
+          "solution": "110°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q7(d)(i)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 300\" width=\"100%\" role=\"img\" aria-label=\"Parallel lines DBC and EHF cut by transversal ABHG; angle BHE is 70 degrees and angle ABC is unknown\"><rect width=\"440\" height=\"300\" rx=\"12\" fill=\"#fff\"/><line x1=\"120\" y1=\"202\" x2=\"225\" y2=\"77\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"220\" y1=\"277\" x2=\"370\" y2=\"98\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"40\" y1=\"92\" x2=\"405\" y2=\"225\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M162 116 A25 25 0 0 1 201 106\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><path d=\"M286 161 A25 25 0 0 0 294 189\" fill=\"none\" stroke=\"#334155\" stroke-width=\"4\"/><text x=\"165\" y=\"91\" font-size=\"17\" fill=\"#334155\">x°</text><text x=\"260\" y=\"179\" font-size=\"17\" fill=\"#334155\">70°</text><text x=\"108\" y=\"215\" font-size=\"15\" fill=\"#334155\">D</text><text x=\"229\" y=\"76\" font-size=\"15\" fill=\"#334155\">C</text><text x=\"207\" y=\"293\" font-size=\"15\" fill=\"#334155\">E</text><text x=\"375\" y=\"96\" font-size=\"15\" fill=\"#334155\">F</text><text x=\"24\" y=\"89\" font-size=\"15\" fill=\"#334155\">A</text><text x=\"176\" y=\"142\" font-size=\"15\" fill=\"#334155\">B</text><text x=\"300\" y=\"168\" font-size=\"15\" fill=\"#334155\">H</text><text x=\"408\" y=\"233\" font-size=\"15\" fill=\"#334155\">G</text><text x=\"277\" y=\"267\" font-size=\"13\" fill=\"#64748b\">DC ∥ EF</text></svg>"
+          }
+        }
+      ]
     },
     {
       "topicId": "y7-5c",
-      "code": "",
-      "title": "",
-      "questions": []
+      "code": "6C",
+      "title": "Angles and a full turn",
+      "questions": [
+        {
+          "id": "sgi-y7-2017-q8b-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If the probability of landing on yellow is \\(1/9\\), what is the angle of the yellow sector in a full-turn spinner?",
+          "options": [
+            "36°",
+            "45°",
+            "40°",
+            "60°"
+          ],
+          "answer": 2,
+          "hint": "A full turn is 360°. Multiply 360° by the sector’s probability.",
+          "keyPoints": [
+            {
+              "text": "probability 1/9",
+              "note": "The sector is 1/9 of a complete revolution."
+            },
+            {
+              "text": "full turn",
+              "note": "A complete turn is 360°."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the angle as a fraction of a full turn.",
+              "work": "\\(\\frac19\\times360^\\circ\\)"
+            },
+            {
+              "explain": "Calculate the sector angle.",
+              "work": "\\(360^\\circ\\div9=40^\\circ\\)"
+            },
+            {
+              "explain": "Check that the sector is one ninth of a full turn.",
+              "work": "\\(\\frac{40^\\circ}{360^\\circ}=\\frac19\\)"
+            }
+          ],
+          "solution": "40°",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+            "sourceQuestion": "Q8(b)(ii)"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 300\" width=\"100%\" role=\"img\" aria-label=\"Spinner with a 40 degree yellow sector and other coloured sectors\"><rect width=\"340\" height=\"300\" rx=\"12\" fill=\"#fff\"/><path d=\"M160 150 L160 40 A110 110 0 0 1 230.7 65.7 Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 150 L230.7 65.7 A110 110 0 0 1 268.7 192.2 Z\" fill=\"#dcfce7\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 150 L268.7 192.2 A110 110 0 0 1 80.4 225.6 Z\" fill=\"#fee2e2\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 150 L80.4 225.6 A110 110 0 0 1 56.7 97.9 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M160 150 L56.7 97.9 A110 110 0 0 1 160 40 Z\" fill=\"#f3e8ff\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"160\" cy=\"150\" r=\"5\" fill=\"#334155\"/><text x=\"176\" y=\"91\" font-size=\"15\" fill=\"#92400e\">yellow</text><text x=\"160\" y=\"285\" text-anchor=\"middle\" font-size=\"13\" fill=\"#64748b\">Yellow sector = 40°</text></svg>"
+          }
+        }
+      ]
     },
     {
       "topicId": "y7-5d",
