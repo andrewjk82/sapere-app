@@ -3731,48 +3731,50 @@
         {
           "id": "sgi-y7-2017-q6d-i",
           "type": "review",
-          "difficulty": "medium",
           "stem": "Construct the bisector of angle AOB using a compass and straightedge.",
+          "difficulty": "medium",
+          "figure": {
+            "svg": "fig:bdd5346f90"
+          },
           "answer": "Sample answer: draw an arc centred at O to mark equal points on OA and OB; from those points draw equal-radius arcs that intersect inside the angle; join O to the arc intersection.",
-          "manual": true,
           "hint": "Use the same compass radius from O to mark both arms, then the same radius from each mark to create an intersection.",
-          "keyPoints": [
-            {
-              "text": "bisector of angle AOB",
-              "note": "A correct bisector passes through O and divides the angle into two equal angles."
-            }
-          ],
           "steps": [
             {
               "explain": "Mark equal distances from O on both arms.",
               "work": "Use one compass setting centred at O.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+                "svg": "fig:bdd5346f90"
               }
             },
             {
               "explain": "Create an intersection inside the angle.",
               "work": "With the same radius, draw arcs from the two arm marks.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"175.7\" cy=\"140\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"175.7\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"93\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"180\" y1=\"220\" x2=\"133\" y2=\"93\" stroke=\"#059669\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+                "svg": "fig:99a2ba45fc"
               }
             },
             {
               "explain": "Draw the bisector.",
               "work": "Join O to the intersection; the two angles are equal.",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"175.7\" cy=\"140\" r=\"65\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"131.3\" cy=\"156.5\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"175.7\" cy=\"140\" r=\"4\" fill=\"#f59e0b\"/><circle cx=\"133\" cy=\"93\" r=\"5\" fill=\"#f59e0b\"/><line x1=\"180\" y1=\"220\" x2=\"133\" y2=\"93\" stroke=\"#059669\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+                "svg": "fig:99a2ba45fc"
               }
             }
           ],
+          "manual": true,
           "timeLimit": 60,
           "xp": 1,
+          "keyPoints": [
+            {
+              "text": "bisector of angle AOB",
+              "note": "A correct bisector passes through O and divides the angle into two equal angles."
+            }
+          ],
+          "inactive": true,
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
-            "sourceQuestion": "Q6(d)(i)"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"100%\" role=\"img\" aria-label=\"Angle AOB with equal compass arcs constructing its bisector\"><rect width=\"360\" height=\"260\" rx=\"12\" fill=\"#fff\"/><line x1=\"180\" y1=\"220\" x2=\"65\" y2=\"70\" stroke=\"#334155\" stroke-width=\"4\"/><line x1=\"180\" y1=\"220\" x2=\"170\" y2=\"35\" stroke=\"#334155\" stroke-width=\"4\"/><circle cx=\"180\" cy=\"220\" r=\"5\" fill=\"#334155\"/><text x=\"47\" y=\"65\" font-size=\"17\" fill=\"#334155\">A</text><text x=\"177\" y=\"30\" font-size=\"17\" fill=\"#334155\">B</text><text x=\"188\" y=\"237\" font-size=\"17\" fill=\"#334155\">O</text></svg>"
+            "sourceQuestion": "Q6(d)(i)",
+            "origin": "teacher"
           }
         },
         {
