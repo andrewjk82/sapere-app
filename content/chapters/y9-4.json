@@ -3193,6 +3193,47 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise: \\(5a^2-15b\\).",
+          "options": [
+            "\\(5(a^2-15b)\\)",
+            "\\(5a(a-3b)\\)",
+            "\\((5a-15)(a+b)\\)",
+            "\\(5(a^2-3b)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the greatest common factor of both terms and factor it out.",
+          "keyPoints": [
+            {
+              "text": "\\(5a^2-15b\\)",
+              "note": "Find the greatest common factor of both terms and factor it out."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Both terms are divisible by 5. The variable a is not common to both terms.",
+              "work": "\\(5a^2-15b=5\\cdot a^2-5\\cdot3b\\)"
+            },
+            {
+              "explain": "Factor out 5, keeping the remaining terms inside the brackets.",
+              "work": "\\(5(a^2-3b)\\)"
+            },
+            {
+              "explain": "Check by distributing 5 back across the bracket.",
+              "work": "\\(5(a^2-3b)=5a^2-15b\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
         }
       ]
     },
@@ -3331,6 +3372,47 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q14b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise: \\(a^2-9\\).",
+          "options": [
+            "\\((a-9)(a+1)\\)",
+            "\\((a-3)^2\\)",
+            "\\((a+3)^2\\)",
+            "\\((a-3)(a+3)\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise a difference of two squares: a² − 3².",
+          "keyPoints": [
+            {
+              "text": "\\(a^2-9\\)",
+              "note": "Recognise a difference of two squares: a² − 3²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write 9 as a square so the expression has the form u² − v².",
+              "work": "\\(a^2-9=a^2-3^2\\)"
+            },
+            {
+              "explain": "Use the difference-of-squares identity u² − v² = (u − v)(u + v).",
+              "work": "\\(a^2-3^2=(a-3)(a+3)\\)"
+            },
+            {
+              "explain": "The factors have opposite signs because the original terms are subtracted squares.",
+              "work": "\\(\\boxed{(a-3)(a+3)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
@@ -3713,6 +3795,88 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise: \\(x^2+3x+2\\).",
+          "options": [
+            "\\((x+1)(x+2)\\)",
+            "\\((x-1)(x-2)\\)",
+            "\\((x+3)(x+2)\\)",
+            "\\((x+1)(x+3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers whose product is 2 and whose sum is 3.",
+          "keyPoints": [
+            {
+              "text": "\\(x^2+3x+2\\)",
+              "note": "Find two numbers whose product is 2 and whose sum is 3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a monic quadratic, seek two numbers that multiply to the constant term and add to the coefficient of x.",
+              "work": "\\(1\\cdot2=2,\\qquad1+2=3\\)"
+            },
+            {
+              "explain": "Use those numbers as the constants in the two brackets. Both signs are positive because the product and sum are positive.",
+              "work": "\\(x^2+3x+2=(x+1)(x+2)\\)"
+            },
+            {
+              "explain": "Expand to verify the factors reproduce the original quadratic.",
+              "work": "\\((x+1)(x+2)=x^2+2x+x+2=x^2+3x+2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(x^2-5x+6\\).",
+          "options": [
+            "\\((x-2)(x-3)\\)",
+            "\\((x+2)(x+3)\\)",
+            "\\((x-1)(x-6)\\)",
+            "\\((x-2)(x+3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers with product 6 and sum −5.",
+          "keyPoints": [
+            {
+              "text": "\\(x^2-5x+6\\)",
+              "note": "Find two numbers with product 6 and sum −5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a monic quadratic, the two constants must multiply to 6 and add to −5.",
+              "work": "\\((-2)(-3)=6,\\qquad-2+(-3)=-5\\)"
+            },
+            {
+              "explain": "Place these numbers in the brackets with x.",
+              "work": "\\(x^2-5x+6=(x-2)(x-3)\\)"
+            },
+            {
+              "explain": "Expand to verify the middle term and constant.",
+              "work": "\\((x-2)(x-3)=x^2-3x-2x+6=x^2-5x+6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]

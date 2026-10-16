@@ -677,6 +677,59 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the right-angled triangle shown, find \\(\\cos\\theta\\).",
+          "options": [
+            "\\(\\frac35\\)",
+            "\\(\\frac34\\)",
+            "\\(\\frac54\\)",
+            "\\(\\frac45\\)"
+          ],
+          "answer": 3,
+          "hint": "Cosine is adjacent ÷ hypotenuse. Relative to θ, identify those two sides in the diagram.",
+          "keyPoints": [
+            {
+              "text": "\\(\\cos\\theta\\)",
+              "note": "Cosine is adjacent ÷ hypotenuse. Relative to θ, identify those two sides in the diagram."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Relative to θ, the adjacent leg is 8 and the hypotenuse is 10. The opposite side 6 is not used for cosine.",
+              "work": "\\(\\text{adjacent}=8,\\quad\\text{hypotenuse}=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"260\" viewBox=\"0 0 380 260\" role=\"img\"><polygon points=\"65,205 285,205 285,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M273 205v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M93 205 A28 28 0 0 0 87.4 188.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"106\" y=\"190\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">θ</text><text x=\"177\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#f59e0b\" font-weight=\"700\">8</text><text x=\"302\" y=\"126\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">6</text><text x=\"160\" y=\"106\" transform=\"rotate(-36.9 160 106)\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">10</text></svg>"
+              }
+            },
+            {
+              "explain": "Use cosine = adjacent ÷ hypotenuse, then substitute the highlighted side lengths.",
+              "work": "\\(\\cos\\theta=\\frac{8}{10}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"260\" viewBox=\"0 0 380 260\" role=\"img\"><polygon points=\"65,205 285,205 285,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M273 205v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M93 205 A28 28 0 0 0 87.4 188.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"106\" y=\"190\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">θ</text><text x=\"177\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">8</text><text x=\"302\" y=\"126\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">6</text><text x=\"160\" y=\"106\" transform=\"rotate(-36.9 160 106)\" font-family=\"system-ui\" font-size=\"13\" fill=\"#f59e0b\" font-weight=\"700\">10</text></svg>"
+              }
+            },
+            {
+              "explain": "Reduce the fraction by dividing top and bottom by 2.",
+              "work": "\\(\\cos\\theta=\\frac{8\\div2}{10\\div2}=\\boxed{\\frac45}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"260\" viewBox=\"0 0 380 260\" role=\"img\"><polygon points=\"65,205 285,205 285,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M273 205v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M93 205 A28 28 0 0 0 87.4 188.2\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"106\" y=\"190\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">θ</text><text x=\"177\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">8</text><text x=\"302\" y=\"126\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">6</text><text x=\"160\" y=\"106\" transform=\"rotate(-36.9 160 106)\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">10</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"260\" viewBox=\"0 0 380 260\" role=\"img\"><polygon points=\"65,205 285,205 285,40\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M273 205v-12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><path d=\"M93 205 A28 28 0 0 0 87.4 188.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"106\" y=\"190\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">θ</text><text x=\"177\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">8</text><text x=\"302\" y=\"126\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">6</text><text x=\"160\" y=\"106\" transform=\"rotate(-36.9 160 106)\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\" font-weight=\"500\">10</text></svg>"
+          }
         }
       ]
     },
@@ -942,6 +995,47 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For an acute angle \\(0^\\circ<\\theta<90^\\circ\\), find \\(\\theta\\) if \\(\\sin\\theta=\\frac12\\).",
+          "options": [
+            "\\(60^\\circ\\)",
+            "\\(30^\\circ\\)",
+            "\\(45^\\circ\\)",
+            "\\(150^\\circ\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the special-angle value for sine, and check that the angle is acute as stated.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sin\\theta=\\frac12\\)",
+              "note": "Use the special-angle value for sine, and check that the angle is acute as stated."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the special right-triangle ratio: in a 30°–60°–90° triangle, the side opposite 30° is half the hypotenuse.",
+              "work": "\\(\\sin30^\\circ=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac12\\)"
+            },
+            {
+              "explain": "Sine is also 1/2 at 150°, but the question restricts θ to be acute.",
+              "work": "\\(0^\\circ<\\theta<90^\\circ\\Rightarrow\\theta=30^\\circ\\)"
+            },
+            {
+              "explain": "The acute solution is 30°. The original question did not state a domain, so the acute-angle condition has been made explicit to ensure one answer.",
+              "work": "\\(\\boxed{30^\\circ}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
@@ -1359,6 +1453,112 @@
             "topic": "y9-13"
           },
           "xp": 2
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ski slope is a straight run 415 m long and rises vertically 115 m. Find its angle of inclination to the horizontal, to the nearest degree.",
+          "options": [
+            "\\(15^\\circ\\)",
+            "\\(17^\\circ\\)",
+            "\\(16^\\circ\\)",
+            "\\(74^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "The 115 m rise is opposite the angle and 415 m is the hypotenuse. Use sine, then take inverse sine.",
+          "keyPoints": [
+            {
+              "text": "415 m long and rises vertically 115 m",
+              "note": "The 115 m rise is opposite the angle and 415 m is the hypotenuse. Use sine, then take inverse sine."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "In the right-triangle model, the 415 m slope is the hypotenuse and the 115 m rise is opposite the angle of inclination θ. The horizontal reference is shown dashed.",
+              "work": "\\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{115}{415}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"250\" viewBox=\"0 0 380 250\" role=\"img\"><line x1=\"78\" y1=\"82\" x2=\"150\" y2=\"82\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-dasharray=\"5 4\"/><line x1=\"78\" y1=\"82\" x2=\"78\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"140\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"82\" x2=\"278\" y2=\"140\" stroke=\"#f59e0b\" stroke-width=\"4\"/><path d=\"M78 129h11v11\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M106 82 A28 28 0 0 1 104.9 89.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"116\" y=\"92\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">θ</text><text x=\"64\" y=\"113\" text-anchor=\"end\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">115 m</text><text x=\"174\" y=\"103\" transform=\"rotate(16.2 174 103)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">415 m</text><text x=\"82\" y=\"65\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">horizontal</text></svg>"
+              }
+            },
+            {
+              "explain": "Use inverse sine because the ratio and angle are known/unknown in this arrangement.",
+              "work": "\\(\\theta=\\sin^{-1}\\left(\\frac{115}{415}\\right)\\approx16.10^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"250\" viewBox=\"0 0 380 250\" role=\"img\"><line x1=\"78\" y1=\"82\" x2=\"150\" y2=\"82\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-dasharray=\"5 4\"/><line x1=\"78\" y1=\"82\" x2=\"78\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"140\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"82\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M78 129h11v11\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M106 82 A28 28 0 0 1 104.9 89.8\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.7\"/><text x=\"116\" y=\"92\" font-family=\"system-ui\" font-size=\"9\" fill=\"#f59e0b\">θ</text><text x=\"64\" y=\"113\" text-anchor=\"end\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">115 m</text><text x=\"174\" y=\"103\" transform=\"rotate(16.2 174 103)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">415 m</text><text x=\"82\" y=\"65\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">horizontal</text></svg>"
+              }
+            },
+            {
+              "explain": "Round only the final angle to the nearest whole degree.",
+              "work": "\\(\\boxed{\\theta=16^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"250\" viewBox=\"0 0 380 250\" role=\"img\"><line x1=\"78\" y1=\"82\" x2=\"150\" y2=\"82\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-dasharray=\"5 4\"/><line x1=\"78\" y1=\"82\" x2=\"78\" y2=\"140\" stroke=\"#f59e0b\" stroke-width=\"4\"/><line x1=\"78\" y1=\"140\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"82\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M78 129h11v11\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M106 82 A28 28 0 0 1 104.9 89.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"116\" y=\"92\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">θ</text><text x=\"64\" y=\"113\" text-anchor=\"end\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">115 m</text><text x=\"174\" y=\"103\" transform=\"rotate(16.2 174 103)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">415 m</text><text x=\"82\" y=\"65\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">horizontal</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"250\" viewBox=\"0 0 380 250\" role=\"img\"><line x1=\"78\" y1=\"82\" x2=\"150\" y2=\"82\" stroke=\"#64748b\" stroke-width=\"1.7\" stroke-dasharray=\"5 4\"/><line x1=\"78\" y1=\"82\" x2=\"78\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"140\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"78\" y1=\"82\" x2=\"278\" y2=\"140\" stroke=\"#334155\" stroke-width=\"2.2\"/><path d=\"M78 129h11v11\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.6\"/><path d=\"M106 82 A28 28 0 0 1 104.9 89.8\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.7\"/><text x=\"116\" y=\"92\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">θ</text><text x=\"64\" y=\"113\" text-anchor=\"end\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">115 m</text><text x=\"174\" y=\"103\" transform=\"rotate(16.2 174 103)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">415 m</text><text x=\"82\" y=\"65\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">horizontal</text></svg>"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A 66 m building stands beside a taller building. From the top of the 66 m building, the angle of elevation to the top of the taller building is \\(34^\\circ\\), and the angle of depression to its base is \\(51^\\circ\\). Find the height of the taller building to the nearest metre.",
+          "options": [
+            "\\(102\\text{ m}\\)",
+            "\\(89\\text{ m}\\)",
+            "\\(138\\text{ m}\\)",
+            "\\(53\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the 66 m height and 51° depression to find the horizontal gap; then use 34° to find how much taller the other building is.",
+          "keyPoints": [
+            {
+              "text": "66 m building",
+              "note": "Use the 66 m height and 51° depression to find the horizontal gap; then use 34° to find how much taller the other building is."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The diagram separates the 51° angle of depression to the base from the 34° angle of elevation to the top. Both use the same horizontal distance d; the observer is 66 m above ground.",
+              "work": "\\(\\tan51^\\circ=\\frac{66}{d}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"390\" height=\"320\" viewBox=\"0 0 390 320\" role=\"img\"><line x1=\"55\" y1=\"284\" x2=\"344\" y2=\"284\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"93\" y=\"114\" width=\"28\" height=\"170\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><rect x=\"255\" y=\"22\" width=\"28\" height=\"262\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"22\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"284\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M151 114 A30 30 0 0 0 145.8 96.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"158\" y=\"93\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">34°</text><path d=\"M151 114 A30 30 0 0 1 139.9 137.3\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"156\" y=\"139\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">51°</text><text x=\"107\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">66 m</text><text x=\"269\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">H</text><text x=\"83\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">observer</text><text x=\"236\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">base of tall building</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve the first tangent equation for the horizontal gap.",
+              "work": "\\(d=\\frac{66}{\\tan51^\\circ}\\approx53.45\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"390\" height=\"320\" viewBox=\"0 0 390 320\" role=\"img\"><line x1=\"55\" y1=\"284\" x2=\"344\" y2=\"284\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"93\" y=\"114\" width=\"28\" height=\"170\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><rect x=\"255\" y=\"22\" width=\"28\" height=\"262\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"22\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"284\" stroke=\"#f59e0b\" stroke-width=\"3.5\"/><path d=\"M151 114 A30 30 0 0 0 145.8 96.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"158\" y=\"93\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">34°</text><path d=\"M151 114 A30 30 0 0 1 139.9 137.3\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"156\" y=\"139\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">51°</text><text x=\"107\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">66 m</text><text x=\"269\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">H</text><text x=\"83\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">observer</text><text x=\"236\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">base of tall building</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the 34° elevation to calculate the extra height above the observer, then add the observer’s height.",
+              "work": "\\(h= d\\tan34^\\circ\\approx53.45\\tan34^\\circ\\approx36.06\\text{ m}\\)\n\\(H=66+h\\approx102.06\\text{ m}\\approx\\boxed{102\\text{ m}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"390\" height=\"320\" viewBox=\"0 0 390 320\" role=\"img\"><line x1=\"55\" y1=\"284\" x2=\"344\" y2=\"284\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"93\" y=\"114\" width=\"28\" height=\"170\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><rect x=\"255\" y=\"22\" width=\"28\" height=\"262\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"22\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"284\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M151 114 A30 30 0 0 0 145.8 96.2\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"158\" y=\"93\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">34°</text><path d=\"M151 114 A30 30 0 0 1 139.9 137.3\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"156\" y=\"139\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">51°</text><text x=\"107\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">66 m</text><text x=\"269\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">H</text><text x=\"83\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">observer</text><text x=\"236\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">base of tall building</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"390\" height=\"320\" viewBox=\"0 0 390 320\" role=\"img\"><line x1=\"55\" y1=\"284\" x2=\"344\" y2=\"284\" stroke=\"#64748b\" stroke-width=\"1.6\"/><rect x=\"93\" y=\"114\" width=\"28\" height=\"170\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><rect x=\"255\" y=\"22\" width=\"28\" height=\"262\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"114\" stroke=\"#64748b\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"22\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"121\" y1=\"114\" x2=\"255\" y2=\"284\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M151 114 A30 30 0 0 0 145.8 96.2\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"158\" y=\"93\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">34°</text><path d=\"M151 114 A30 30 0 0 1 139.9 137.3\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"156\" y=\"139\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">51°</text><text x=\"107\" y=\"208\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">66 m</text><text x=\"269\" y=\"165\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">H</text><text x=\"83\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">observer</text><text x=\"236\" y=\"299\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">base of tall building</text></svg>"
+          }
         }
       ]
     },
@@ -1863,6 +2063,151 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q28a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A light plane flies due north and then due west. Its final position is 16 km from its starting point on a bearing of \\(340^\\circ\\). Draw a labelled diagram to represent the flight and the resultant displacement.",
+          "answer": "A complete diagram shows the route due north then due west, a north arrow at the start, and a 16 km resultant on a bearing of 340°.",
+          "manual": true,
+          "hint": "Start with the plane’s route as two perpendicular legs: north, then west. Add a north arrow at the start; bearing 340° is 20° west of north.",
+          "keyPoints": [
+            {
+              "text": "Draw a labelled diagram to represent the flight and the resultant displacement.",
+              "note": "Start with the plane’s route as two perpendicular legs: north, then west. Add a north arrow at the start; bearing 340° is 20° west of north."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Draw the first flight leg due north from the starting point, then the second leg due west. Mark the right angle where the direction changes.",
+              "work": "\\(\\text{north leg}\\perp\\text{west leg}\\)"
+            },
+            {
+              "explain": "A bearing is measured clockwise from north. A bearing of 340° is 20° anticlockwise from north, towards the west.",
+              "work": "\\(360^\\circ-340^\\circ=20^\\circ\\)"
+            },
+            {
+              "explain": "The green dashed arrow is the 16 km resultant from the start to the finish; the sample diagram includes the route and bearing reference.",
+              "work": "\\(\\boxed{\\text{Completed labelled sample diagram}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"270\" viewBox=\"0 0 360 270\" role=\"img\"><line x1=\"80\" y1=\"225\" x2=\"80\" y2=\"55\" stroke=\"#64748b\" stroke-width=\"1.6\"/><path d=\"M80 48l-5 10h10z\" fill=\"#64748b\"/><text x=\"80\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">N</text><line x1=\"80\" y1=\"225\" x2=\"80\" y2=\"80\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"80\" y1=\"80\" x2=\"27\" y2=\"80\" stroke=\"#2563eb\" stroke-width=\"3\"/><line x1=\"80\" y1=\"225\" x2=\"27\" y2=\"80\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-dasharray=\"5 4\"/><path d=\"M80 80h-12v12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M80 170 A55 55 0 0 0 61.2 171.2\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/><text x=\"67\" y=\"151\" text-anchor=\"middle\" transform=\"rotate(-100 67 151)\" font-family=\"system-ui\" font-size=\"9\" fill=\"#b45309\">20°</text><text x=\"85\" y=\"157\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1d4ed8\">north</text><text x=\"49\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#1d4ed8\">west</text><text x=\"93\" y=\"221\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">Start</text><text x=\"2\" y=\"100\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">Finish</text><text x=\"100\" y=\"202\" font-family=\"system-ui\" font-size=\"11\" fill=\"#15803d\">16 km resultant, bearing 340°</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q28b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A plane flies due north and then due west. The total distance along the two legs is 16 km. Its final position is on a bearing of \\(340^\\circ\\) from the start. How far did it fly due north, to the nearest kilometre?",
+          "options": [
+            "\\(11\\text{ km}\\)",
+            "\\(10\\text{ km}\\)",
+            "\\(12\\text{ km}\\)",
+            "\\(4\\text{ km}\\)"
+          ],
+          "answer": 2,
+          "hint": "The resultant is 20° west of north, so tan 20° = west leg ÷ north leg. Combine that with north + west = 16.",
+          "keyPoints": [
+            {
+              "text": "total distance along the two legs is 16 km",
+              "note": "The resultant is 20° west of north, so tan 20° = west leg ÷ north leg. Combine that with north + west = 16."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Bearing 340° means the resultant displacement is 20° west of north. If N is the north leg and W is the west leg, the right triangle gives tan 20° = W/N.",
+              "work": "\\(W=N\\tan20^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"285\" viewBox=\"0 0 360 285\" role=\"img\"><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"232\" y1=\"232\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><line x1=\"232\" y1=\"55\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M220 55v12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M232 198 A34 34 0 0 0 220.4 200\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"222\" y=\"178\" text-anchor=\"middle\" transform=\"rotate(-100 222 178)\" font-family=\"system-ui\" font-size=\"10\" fill=\"#f59e0b\">20°</text><text x=\"249\" y=\"145\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">N km</text><text x=\"194\" y=\"43\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">W km</text><text x=\"10\" y=\"270\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">16 km, bearing 340°</text><text x=\"240\" y=\"251\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">start</text><text x=\"145\" y=\"48\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">finish</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the total route distance, N + W = 16, to solve for N.",
+              "work": "\\(N+N\\tan20^\\circ=16\\Rightarrow N=\\frac{16}{1+\\tan20^\\circ}\\approx11.73\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"285\" viewBox=\"0 0 360 285\" role=\"img\"><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"232\" y1=\"232\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><line x1=\"232\" y1=\"55\" x2=\"168\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"3.5\"/><path d=\"M220 55v12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M232 198 A34 34 0 0 0 220.4 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"222\" y=\"178\" text-anchor=\"middle\" transform=\"rotate(-100 222 178)\" font-family=\"system-ui\" font-size=\"10\" fill=\"#334155\">20°</text><text x=\"249\" y=\"145\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">N km</text><text x=\"194\" y=\"43\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">W km</text><text x=\"10\" y=\"270\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">16 km, bearing 340°</text><text x=\"240\" y=\"251\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">start</text><text x=\"145\" y=\"48\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">finish</text></svg>"
+              }
+            },
+            {
+              "explain": "Round the northward distance to the nearest kilometre.",
+              "work": "\\(N\\approx\\boxed{12\\text{ km}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"285\" viewBox=\"0 0 360 285\" role=\"img\"><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"3.5\"/><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#f59e0b\">N</text><line x1=\"232\" y1=\"232\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"2.3\" stroke-dasharray=\"4 4\"/><line x1=\"232\" y1=\"55\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M220 55v12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M232 198 A34 34 0 0 0 220.4 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"222\" y=\"178\" text-anchor=\"middle\" transform=\"rotate(-100 222 178)\" font-family=\"system-ui\" font-size=\"10\" fill=\"#334155\">20°</text><text x=\"249\" y=\"145\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">N km</text><text x=\"194\" y=\"43\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">W km</text><text x=\"10\" y=\"270\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">16 km, bearing 340°</text><text x=\"240\" y=\"251\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">start</text><text x=\"145\" y=\"48\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">finish</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"360\" height=\"285\" viewBox=\"0 0 360 285\" role=\"img\"><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><text x=\"232\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"232\" y1=\"232\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"232\" y1=\"232\" x2=\"232\" y2=\"55\" stroke=\"#334155\" stroke-width=\"1.4\" stroke-dasharray=\"4 4\"/><line x1=\"232\" y1=\"55\" x2=\"168\" y2=\"55\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M220 55v12h12\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M232 198 A34 34 0 0 0 220.4 200\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"222\" y=\"178\" text-anchor=\"middle\" transform=\"rotate(-100 222 178)\" font-family=\"system-ui\" font-size=\"10\" fill=\"#334155\">20°</text><text x=\"249\" y=\"145\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">N km</text><text x=\"194\" y=\"43\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">W km</text><text x=\"10\" y=\"270\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">16 km, bearing 340°</text><text x=\"240\" y=\"251\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">start</text><text x=\"145\" y=\"48\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">finish</text></svg>"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A golf pin \\(P\\) is 130 m due east of a tree \\(T\\). A ball lands at \\(B\\) after a 100 m shot from the tree, then rolls 35 m to the pin. Find the bearing \\(a^\\circ\\) of the first shot from the tree, to the nearest degree.",
+          "options": [
+            "\\(009^\\circ\\)",
+            "\\(099^\\circ\\)",
+            "\\(081^\\circ\\)",
+            "\\(279^\\circ\\)"
+          ],
+          "answer": 2,
+          "hint": "First use the cosine rule to find the small angle between east and the shot. Then convert it to a clockwise bearing from north.",
+          "keyPoints": [
+            {
+              "text": "130 m due east",
+              "note": "First use the cosine rule to find the small angle between east and the shot. Then convert it to a clockwise bearing from north."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the triangle sides TP = 130 m, TB = 100 m, and BP = 35 m. The cosine rule finds φ, the small angle between the eastward baseline and the first shot.",
+              "work": "\\(\\cos\\phi=\\frac{130^2+100^2-35^2}{2(130)(100)}=\\frac{25675}{26000}=0.9875\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"460\" height=\"280\" viewBox=\"0 0 460 280\" role=\"img\"><line x1=\"78\" y1=\"202\" x2=\"78\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M78 105l-5 10h10z\" fill=\"#64748b\"/><text x=\"78\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"78\" y1=\"202\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"78\" y1=\"202\" x2=\"307.1\" y2=\"166\" stroke=\"#f59e0b\" stroke-width=\"3.5\"/><line x1=\"307.1\" y1=\"166\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M78 188h14v14\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M78 170 A32 32 0 0 1 99.5 197.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"86\" y=\"164\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">a</text><path d=\"M168 202 A90 90 0 0 0 166.9 187.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"160\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">φ</text><text x=\"77\" y=\"220\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">T</text><text x=\"386\" y=\"208\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">P</text><text x=\"308\" y=\"155\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">B</text><text x=\"183\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">130 m</text><text x=\"189\" y=\"173\" transform=\"rotate(-9 189 173)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#f59e0b\">100 m</text><text x=\"344\" y=\"172\" transform=\"rotate(26 344 172)\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">35 m</text><text x=\"250\" y=\"257\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">schematic (not to scale)</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate the inverse cosine to find the angle above east.",
+              "work": "\\(\\phi=\\cos^{-1}(0.9875)\\approx9.07^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"460\" height=\"280\" viewBox=\"0 0 460 280\" role=\"img\"><line x1=\"78\" y1=\"202\" x2=\"78\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M78 105l-5 10h10z\" fill=\"#64748b\"/><text x=\"78\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"78\" y1=\"202\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"78\" y1=\"202\" x2=\"307.1\" y2=\"166\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"307.1\" y1=\"166\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M78 188h14v14\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M78 170 A32 32 0 0 1 99.5 197.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"86\" y=\"164\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">a</text><path d=\"M168 202 A90 90 0 0 0 166.9 187.9\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"160\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"9\" fill=\"#f59e0b\">φ</text><text x=\"77\" y=\"220\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">T</text><text x=\"386\" y=\"208\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">P</text><text x=\"308\" y=\"155\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">B</text><text x=\"183\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">130 m</text><text x=\"189\" y=\"173\" transform=\"rotate(-9 189 173)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">100 m</text><text x=\"344\" y=\"172\" transform=\"rotate(26 344 172)\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">35 m</text><text x=\"250\" y=\"257\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">schematic (not to scale)</text></svg>"
+              }
+            },
+            {
+              "explain": "North and east are perpendicular. A clockwise bearing from north is 90° minus the small angle above east; write a three-digit bearing.",
+              "work": "\\(a=90^\\circ-9.07^\\circ=80.93^\\circ\\approx\\boxed{081^\\circ}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"460\" height=\"280\" viewBox=\"0 0 460 280\" role=\"img\"><line x1=\"78\" y1=\"202\" x2=\"78\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M78 105l-5 10h10z\" fill=\"#64748b\"/><text x=\"78\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"78\" y1=\"202\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"78\" y1=\"202\" x2=\"307.1\" y2=\"166\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"307.1\" y1=\"166\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M78 188h14v14\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M78 170 A32 32 0 0 1 99.5 197.1\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"1.8\"/><text x=\"86\" y=\"164\" font-family=\"system-ui\" font-size=\"11\" fill=\"#f59e0b\">a</text><path d=\"M168 202 A90 90 0 0 0 166.9 187.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"160\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">φ</text><text x=\"77\" y=\"220\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">T</text><text x=\"386\" y=\"208\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">P</text><text x=\"308\" y=\"155\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">B</text><text x=\"183\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">130 m</text><text x=\"189\" y=\"173\" transform=\"rotate(-9 189 173)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">100 m</text><text x=\"344\" y=\"172\" transform=\"rotate(26 344 172)\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">35 m</text><text x=\"250\" y=\"257\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">schematic (not to scale)</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"460\" height=\"280\" viewBox=\"0 0 460 280\" role=\"img\"><line x1=\"78\" y1=\"202\" x2=\"78\" y2=\"112\" stroke=\"#64748b\" stroke-width=\"1.8\"/><path d=\"M78 105l-5 10h10z\" fill=\"#64748b\"/><text x=\"78\" y=\"99\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"13\" fill=\"#334155\">N</text><line x1=\"78\" y1=\"202\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"78\" y1=\"202\" x2=\"307.1\" y2=\"166\" stroke=\"#334155\" stroke-width=\"2.1\"/><line x1=\"307.1\" y1=\"166\" x2=\"380\" y2=\"202\" stroke=\"#334155\" stroke-width=\"2.1\"/><path d=\"M78 188h14v14\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><path d=\"M78 170 A32 32 0 0 1 99.5 197.1\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"86\" y=\"164\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">a</text><path d=\"M168 202 A90 90 0 0 0 166.9 187.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"160\" y=\"198\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"9\" fill=\"#334155\">φ</text><text x=\"77\" y=\"220\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">T</text><text x=\"386\" y=\"208\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">P</text><text x=\"308\" y=\"155\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">B</text><text x=\"183\" y=\"225\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">130 m</text><text x=\"189\" y=\"173\" transform=\"rotate(-9 189 173)\" font-family=\"system-ui\" font-size=\"12\" fill=\"#334155\">100 m</text><text x=\"344\" y=\"172\" transform=\"rotate(26 344 172)\" font-family=\"system-ui\" font-size=\"11\" fill=\"#334155\">35 m</text><text x=\"250\" y=\"257\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">schematic (not to scale)</text></svg>"
           }
         }
       ]

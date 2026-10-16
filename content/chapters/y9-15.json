@@ -301,6 +301,47 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by grouping: \\(4x^2+20x+3x+15\\).",
+          "options": [
+            "\\((4x+5)(x+3)\\)",
+            "\\((4x+3)(x+5)\\)",
+            "\\((4x+3)(x-5)\\)",
+            "\\((4x-3)(x-5)\\)"
+          ],
+          "answer": 1,
+          "hint": "Group the first two and last two terms, then factor out the same bracket.",
+          "keyPoints": [
+            {
+              "text": "\\(4x^2+20x+3x+15\\)",
+              "note": "Group the first two and last two terms, then factor out the same bracket."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Group the terms so each pair has a common factor.",
+              "work": "\\((4x^2+20x)+(3x+15)\\)"
+            },
+            {
+              "explain": "Factor each group. Both groups contain the same bracket x + 5.",
+              "work": "\\(4x(x+5)+3(x+5)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket and check by expanding.",
+              "work": "\\((4x+3)(x+5)=4x^2+20x+3x+15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
         }
       ]
     },
@@ -594,6 +635,47 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Factorise: \\(2x^2-x-3\\).",
+          "options": [
+            "\\((2x+3)(x-1)\\)",
+            "\\((2x-1)(x+3)\\)",
+            "\\((2x-3)(x+1)\\)",
+            "\\((2x-3)(x-1)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find factors of ac = −6 that add to −1, split the middle term, then group.",
+          "keyPoints": [
+            {
+              "text": "2x^2-x-3",
+              "note": "Find factors of ac = −6 that add to −1, split the middle term, then group."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For 2x² − x − 3, the product ac is −6 and the middle coefficient is −1. The pair −3 and 2 has product −6 and sum −1.",
+              "work": "\\((-3)(2)=-6,\\qquad-3+2=-1\\)"
+            },
+            {
+              "explain": "Split −x into −3x + 2x, then group the terms in pairs.",
+              "work": "\\(2x^2-3x+2x-3=x(2x-3)+1(2x-3)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket and verify the result.",
+              "work": "\\((2x-3)(x+1)=2x^2-x-3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
@@ -932,6 +1014,47 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q25a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify \\(\\frac{x^2-3x-10}{x^2-5x}\\), stating any excluded values.",
+          "options": [
+            "\\(\\frac{x+2}{x},\\quad x\\ne0,5\\)",
+            "\\(\\frac{x-5}{x},\\quad x\\ne0,5\\)",
+            "\\(\\frac{x+2}{x-5},\\quad x\\ne0,5\\)",
+            "\\(x+2,\\quad x\\ne0,5\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor the numerator and denominator before cancelling a common factor. Keep the original denominator restrictions.",
+          "keyPoints": [
+            {
+              "text": "\\frac{x^2-3x-10}{x^2-5x}",
+              "note": "Factor the numerator and denominator before cancelling a common factor. Keep the original denominator restrictions."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor the numerator and denominator completely.",
+              "work": "\\(\\frac{x^2-3x-10}{x^2-5x}=\\frac{(x-5)(x+2)}{x(x-5)}\\)"
+            },
+            {
+              "explain": "Cancel the common factor x − 5. The original denominator shows x cannot equal 0 or 5, even after cancellation.",
+              "work": "\\(\\frac{(x-5)(x+2)}{x(x-5)}=\\frac{x+2}{x},\\qquad x\\ne0,5\\)"
+            },
+            {
+              "explain": "State the simplified expression together with both excluded values.",
+              "work": "\\(\\boxed{\\frac{x+2}{x},\\quad x\\ne0,5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
         }
       ]
     },
@@ -1118,6 +1241,47 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify \\(\\frac{3}{4-x^2}+\\frac{4}{x(x-2)}\\), stating any excluded values.",
+          "options": [
+            "\\(\\frac{7x+8}{x(x-2)(x+2)},\\quad x\\ne0,\\pm2\\)",
+            "\\(\\frac{x+8}{x(x-2)},\\quad x\\ne0,2\\)",
+            "\\(\\frac{x-8}{x(x-2)(x+2)},\\quad x\\ne0,\\pm2\\)",
+            "\\(\\frac{x+8}{x(x-2)(x+2)},\\quad x\\ne0,\\pm2\\)"
+          ],
+          "answer": 3,
+          "hint": "Factor 4 − x² as −(x − 2)(x + 2), then use the full common denominator.",
+          "keyPoints": [
+            {
+              "text": "\\frac{3}{4-x^2}+\\frac{4}{x(x-2)}",
+              "note": "Factor 4 − x² as −(x − 2)(x + 2), then use the full common denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Factor 4 − x² and note that it introduces the factor x + 2 into the common denominator.",
+              "work": "\\(4-x^2=-(x-2)(x+2)\\)"
+            },
+            {
+              "explain": "Use x(x − 2)(x + 2) as the common denominator. The first fraction contributes −3x; the second contributes 4(x + 2).",
+              "work": "\\(\\frac{3}{4-x^2}+\\frac{4}{x(x-2)}=\\frac{-3x+4(x+2)}{x(x-2)(x+2)}\\)"
+            },
+            {
+              "explain": "Simplify the numerator and preserve all values excluded by the original denominators.",
+              "work": "\\(\\frac{-3x+4x+8}{x(x-2)(x+2)}=\\boxed{\\frac{x+8}{x(x-2)(x+2)}}\\)\n\\(x\\ne0,2,-2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]

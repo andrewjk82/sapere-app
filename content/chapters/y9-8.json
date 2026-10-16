@@ -6272,6 +6272,88 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(x^{\\frac23}\\) in surd form.",
+          "options": [
+            "\\(\\sqrt[3]{x^2}\\)",
+            "\\(\\sqrt{x^3}\\)",
+            "\\(\\sqrt[3]{2x}\\)",
+            "\\(\\sqrt[2]{x^3}\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator of a fractional index gives the root, and the numerator gives the power.",
+          "keyPoints": [
+            {
+              "text": "x^{\\frac23}",
+              "note": "The denominator of a fractional index gives the root, and the numerator gives the power."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "For a fractional index, the denominator 3 indicates a cube root and the numerator 2 indicates the square.",
+              "work": "\\(x^{\\frac23}=\\sqrt[3]{x^2}\\)"
+            },
+            {
+              "explain": "Equivalently, take the cube root first and then square; both forms agree for real x.",
+              "work": "\\(x^{\\frac23}=\\left(\\sqrt[3]{x}\\right)^2\\)"
+            },
+            {
+              "explain": "Use either equivalent surd form.",
+              "work": "\\(\\boxed{\\sqrt[3]{x^2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(a^2\\times\\sqrt[5]{a}\\) in index form.",
+          "options": [
+            "\\(a^{\\frac{10}{5}}\\)",
+            "\\(a^{\\frac{7}{5}}\\)",
+            "\\(a^{10}\\)",
+            "\\(a^{\\frac{11}{5}}\\)"
+          ],
+          "answer": 3,
+          "hint": "Rewrite the fifth root as a fractional index, then add powers with the same base.",
+          "keyPoints": [
+            {
+              "text": "a^2\\times\\sqrt[5]{a}",
+              "note": "Rewrite the fifth root as a fractional index, then add powers with the same base."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A fifth root is the power 1/5.",
+              "work": "\\(\\sqrt[5]{a}=a^{\\frac15}\\)"
+            },
+            {
+              "explain": "For a product with the same base, add the indices. Write 2 as fifths first.",
+              "work": "\\(a^2a^{\\frac15}=a^{2+\\frac15}=a^{\\frac{10}{5}+\\frac15}\\)"
+            },
+            {
+              "explain": "Add the numerators to obtain the final index.",
+              "work": "\\(\\boxed{a^{\\frac{11}{5}}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
         }
       ]
     },

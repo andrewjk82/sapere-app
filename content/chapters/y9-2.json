@@ -2112,6 +2112,84 @@
             "grade": "9",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(\\left(\\sqrt{15}\\right)^2\\).",
+          "options": [
+            "\\(\\sqrt{30}\\)",
+            "\\(15\\)",
+            "\\(225\\)",
+            "\\(\\sqrt{15}\\)"
+          ],
+          "answer": 1,
+          "hint": "Squaring a principal square root returns the number inside the radical.",
+          "keyPoints": [
+            {
+              "text": "\\(\\left(\\sqrt{15}\\right)^2\\)",
+              "note": "Squaring a principal square root returns the number inside the radical."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "A square root and a square are inverse operations for a non-negative number.",
+              "work": "\\(\\left(\\sqrt{15}\\right)^2=15\\)"
+            },
+            {
+              "explain": "The radical sign is removed because the entire square root is squared.",
+              "work": "\\(\\boxed{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(\\sqrt{12}\\).",
+          "options": [
+            "\\(3\\sqrt2\\)",
+            "\\(6\\sqrt2\\)",
+            "\\(2\\sqrt3\\)",
+            "\\(2\\sqrt6\\)"
+          ],
+          "answer": 2,
+          "hint": "Factor 12 as the largest perfect square times another factor.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{12}\\)",
+              "note": "Factor 12 as the largest perfect square times another factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate the largest perfect-square factor from 12.",
+              "work": "\\(\\sqrt{12}=\\sqrt{4\\cdot3}\\)"
+            },
+            {
+              "explain": "Take the square root of 4 outside the radical.",
+              "work": "\\(\\sqrt4\\sqrt3=2\\sqrt3\\)"
+            },
+            {
+              "explain": "Since 3 has no square factor greater than 1, this is simplest form.",
+              "work": "\\(\\boxed{2\\sqrt3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
         }
       ]
     },
@@ -2221,6 +2299,165 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q17a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(2\\sqrt5-9\\sqrt5\\).",
+          "options": [
+            "\\(-11\\sqrt5\\)",
+            "\\(7\\sqrt5\\)",
+            "\\(-7\\sqrt5\\)",
+            "\\(-7\\sqrt{10}\\)"
+          ],
+          "answer": 2,
+          "hint": "These are like surds, so subtract the coefficients and keep √5.",
+          "keyPoints": [
+            {
+              "text": "\\(2\\sqrt5-9\\sqrt5\\)",
+              "note": "These are like surds, so subtract the coefficients and keep √5."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Both terms contain the same surd √5, so combine their coefficients.",
+              "work": "\\((2-9)\\sqrt5\\)"
+            },
+            {
+              "explain": "Subtract 9 from 2.",
+              "work": "\\((-7)\\sqrt5=\\boxed{-7\\sqrt5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-2d",
+      "code": "2D",
+      "title": "Multiplication and division of surds",
+      "questions": [
+        {
+          "id": "bhs-y9-2023-t4a-q17b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(3\\sqrt2\\times2\\sqrt7\\).",
+          "options": [
+            "\\(5\\sqrt{14}\\)",
+            "\\(6\\sqrt{14}\\)",
+            "\\(3\\sqrt{14}\\)",
+            "\\(6\\sqrt9\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the coefficients together and multiply the radicands together.",
+          "keyPoints": [
+            {
+              "text": "\\(3\\sqrt2\\times2\\sqrt7\\)",
+              "note": "Multiply the coefficients together and multiply the radicands together."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply the numerical coefficients and the numbers inside the roots separately.",
+              "work": "\\((3\\times2)(\\sqrt2\\times\\sqrt7)=6\\sqrt{2\\times7}\\)"
+            },
+            {
+              "explain": "Multiply the radicands. Since 14 has no square factor, the surd is already simplified.",
+              "work": "\\(6\\sqrt{14}=\\boxed{6\\sqrt{14}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q17c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(\\frac{10\\sqrt{54}}{\\sqrt6}\\).",
+          "options": [
+            "\\(3\\sqrt{15}\\)",
+            "\\(10\\sqrt3\\)",
+            "\\(30\\sqrt3\\)",
+            "\\(30\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine the square roots as √(54 ÷ 6), then simplify.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{10\\sqrt{54}}{\\sqrt6}\\)",
+              "note": "Combine the square roots as √(54 ÷ 6), then simplify."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use √a ÷ √b = √(a ÷ b) for positive a and b.",
+              "work": "\\(\\frac{10\\sqrt{54}}{\\sqrt6}=10\\sqrt{\\frac{54}{6}}\\)"
+            },
+            {
+              "explain": "Divide inside the radical and evaluate the perfect square.",
+              "work": "\\(10\\sqrt9=10\\times3=\\boxed{30}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q18a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(\\sqrt3(5\\sqrt2-2\\sqrt3)\\).",
+          "options": [
+            "\\(5\\sqrt6-2\\sqrt6\\)",
+            "\\(5\\sqrt5-6\\)",
+            "\\(5\\sqrt6-6\\)",
+            "\\(5\\sqrt6-6\\sqrt3\\)"
+          ],
+          "answer": 2,
+          "hint": "Distribute √3 to both terms, then simplify √3 × √3.",
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt3(5\\sqrt2-2\\sqrt3)\\)",
+              "note": "Distribute √3 to both terms, then simplify √3 × √3."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Distribute √3 to each term in the bracket.",
+              "work": "\\(\\sqrt3(5\\sqrt2)-\\sqrt3(2\\sqrt3)\\)"
+            },
+            {
+              "explain": "Multiply coefficients and combine the radicands in each product.",
+              "work": "\\(5\\sqrt{3\\cdot2}-2\\sqrt{3\\cdot3}=5\\sqrt6-2\\cdot3\\)"
+            },
+            {
+              "explain": "Simplify the second product.",
+              "work": "\\(\\boxed{5\\sqrt6-6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
@@ -2364,6 +2601,129 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\((2\\sqrt6+3)(2\\sqrt6-3)\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(33\\)",
+            "\\(24\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the conjugate identity (u + v)(u − v) = u² − v².",
+          "keyPoints": [
+            {
+              "text": "\\((2\\sqrt6+3)(2\\sqrt6-3)\\)",
+              "note": "Use the conjugate identity (u + v)(u − v) = u² − v²."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The brackets are conjugates, so their cross terms cancel.",
+              "work": "\\((u+v)(u-v)=u^2-v^2\\)"
+            },
+            {
+              "explain": "Square each term: (2√6)² = 4 × 6 and 3² = 9.",
+              "work": "\\((2\\sqrt6)^2-3^2=24-9\\)"
+            },
+            {
+              "explain": "Subtract to get the simplified integer.",
+              "work": "\\(\\boxed{15}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q29a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the square of \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(2\\)",
+            "\\(22\\)",
+            "\\(\\sqrt{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms.",
+          "keyPoints": [
+            {
+              "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
+              "note": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let u = √(6 + √11) and v = √(6 − √11). Then (u − v)² = u² + v² − 2uv.",
+              "work": "\\((u-v)^2=u^2+v^2-2uv\\)"
+            },
+            {
+              "explain": "The first two terms add to 12. For uv, multiply conjugates under the square root.",
+              "work": "\\(12-2\\sqrt{(6+\\sqrt{11})(6-\\sqrt{11})}=12-2\\sqrt{36-11}\\)"
+            },
+            {
+              "explain": "Evaluate the remaining square root and subtract.",
+              "work": "\\(12-2\\sqrt{25}=12-10=\\boxed2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q29b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Hence simplify \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(2\\sqrt2\\)",
+            "\\(\\sqrt{22}\\)",
+            "\\(\\sqrt2\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive.",
+          "keyPoints": [
+            {
+              "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
+              "note": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The previous result shows the square of the expression is 2.",
+              "work": "\\(\\left(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\right)^2=2\\)"
+            },
+            {
+              "explain": "The first square root is larger than the second because 6 + √11 > 6 − √11, so their difference is positive.",
+              "work": "\\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}>0\\)"
+            },
+            {
+              "explain": "The positive number whose square is 2 is √2.",
+              "work": "\\(\\boxed{\\sqrt2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
@@ -2556,6 +2916,255 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator and simplify: \\(\\frac{\\sqrt8}{\\sqrt6}\\).",
+          "options": [
+            "\\(\\frac{2\\sqrt3}{\\sqrt6}\\)",
+            "\\(\\frac{4\\sqrt3}{3}\\)",
+            "\\(\\frac{2\\sqrt2}{3}\\)",
+            "\\(\\frac{2\\sqrt3}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "First simplify √8/√6 to √(4/3), then rationalise the denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{\\sqrt8}{\\sqrt6}\\)",
+              "note": "First simplify √8/√6 to √(4/3), then rationalise the denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine the radicals and simplify the fraction inside the square root.",
+              "work": "\\(\\frac{\\sqrt8}{\\sqrt6}=\\sqrt{\\frac86}=\\sqrt{\\frac43}=\\frac2{\\sqrt3}\\)"
+            },
+            {
+              "explain": "Multiply numerator and denominator by √3 so the denominator becomes rational.",
+              "work": "\\(\\frac2{\\sqrt3}\\times\\frac{\\sqrt3}{\\sqrt3}=\\frac{2\\sqrt3}{3}\\)"
+            },
+            {
+              "explain": "The denominator is now rational and the numerator is simplified.",
+              "work": "\\(\\boxed{\\frac{2\\sqrt3}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator and simplify: \\(\\frac{1-\\sqrt5}{\\sqrt5}\\).",
+          "options": [
+            "\\(\\frac{1-\\sqrt5}{5}\\)",
+            "\\(\\frac{\\sqrt5-5}{5}\\)",
+            "\\(\\frac{5-\\sqrt5}{5}\\)",
+            "\\(\\frac{\\sqrt5-1}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the numerator and denominator by √5, then simplify the numerator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{1-\\sqrt5}{\\sqrt5}\\)",
+              "note": "Multiply the numerator and denominator by √5, then simplify the numerator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by √5; this is equivalent to multiplying by 1.",
+              "work": "\\(\\frac{1-\\sqrt5}{\\sqrt5}\\times\\frac{\\sqrt5}{\\sqrt5}=\\frac{\\sqrt5-5}{5}\\)"
+            },
+            {
+              "explain": "The denominator is rational because √5 × √5 = 5.",
+              "work": "\\(\\boxed{\\frac{\\sqrt5-5}{5}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write \\(\\frac{\\sqrt5}{\\sqrt5-2}=p+q\\sqrt5\\). What are \\(p\\) and \\(q\\)?",
+          "options": [
+            "\\((p,q)=(5,2)\\)",
+            "\\((p,q)=(1,2)\\)",
+            "\\((p,q)=(5,-2)\\)",
+            "\\((p,q)=(\\frac15,\\frac25)\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by the conjugate √5 + 2 to rationalise the denominator.",
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{\\sqrt5}{\\sqrt5-2}=p+q\\sqrt5\\)",
+              "note": "Multiply by the conjugate √5 + 2 to rationalise the denominator."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the conjugate of √5 − 2, which is √5 + 2.",
+              "work": "\\(\\frac{\\sqrt5}{\\sqrt5-2}\\times\\frac{\\sqrt5+2}{\\sqrt5+2}\\)"
+            },
+            {
+              "explain": "The denominator is a difference of squares; expand the numerator.",
+              "work": "\\(\\frac{5+2\\sqrt5}{5-4}=5+2\\sqrt5\\)"
+            },
+            {
+              "explain": "Match the constant and √5 coefficients with p + q√5.",
+              "work": "\\(p=5,\\quad q=2\\quad\\Rightarrow\\quad\\boxed{(p,q)=(5,2)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-2i",
+      "code": "2I",
+      "title": "Irrational numbers and surds",
+      "questions": [
+        {
+          "id": "bhs-y9-2023-t4a-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which list contains all the irrational numbers in \\(\\sqrt8,\\sqrt{36},4.3,\\sqrt{22},\\pi,\\frac{12}{23}\\)?",
+          "options": [
+            "\\(\\sqrt{36},4.3,\\frac{12}{23}\\)",
+            "\\(\\sqrt8,\\sqrt{36},\\sqrt{22},\\pi\\)",
+            "\\(4.3,\\sqrt{22},\\frac{12}{23}\\)",
+            "\\(\\sqrt8,\\sqrt{22},\\pi\\)"
+          ],
+          "answer": 3,
+          "hint": "A square root of a non-square integer is irrational; a perfect-square root, terminating decimal, and fraction are rational.",
+          "keyPoints": [
+            {
+              "text": "\\sqrt8,\\sqrt{36},4.3,\\sqrt{22},\\pi,\\frac{12}{23}",
+              "note": "A square root of a non-square integer is irrational; a perfect-square root, terminating decimal, and fraction are rational."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Check each item. Since 8 and 22 are not perfect squares, their square roots are irrational. π is irrational.",
+              "work": "\\(\\sqrt8\\notin\\mathbb Q,\\quad\\sqrt{22}\\notin\\mathbb Q,\\quad\\pi\\notin\\mathbb Q\\)"
+            },
+            {
+              "explain": "The remaining values are rational: √36 = 6, 4.3 terminates, and 12/23 is a ratio of integers.",
+              "work": "\\(\\sqrt{36}=6,\\quad4.3=\\frac{43}{10},\\quad\\frac{12}{23}\\in\\mathbb Q\\)"
+            },
+            {
+              "explain": "Therefore the complete list contains exactly the three irrational values.",
+              "work": "\\(\\boxed{\\sqrt8,\\sqrt{22},\\pi}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(7.3\\overline{2}\\) as a fraction in simplest form.",
+          "options": [
+            "\\(\\frac{732}{100}\\)",
+            "\\(\\frac{659}{90}\\)",
+            "\\(\\frac{725}{99}\\)",
+            "\\(\\frac{73}{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "Let x be the decimal. Multiply once to align the repeating 2s, then subtract to eliminate the repeating part.",
+          "keyPoints": [
+            {
+              "text": "7.3\\overline{2}",
+              "note": "Let x be the decimal. Multiply once to align the repeating 2s, then subtract to eliminate the repeating part."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Let x equal the recurring decimal. Multiplying by 10 moves the decimal so the recurring digit begins immediately after the decimal point.",
+              "work": "\\(x=7.32222\\ldots,\\qquad10x=73.2222\\ldots\\)"
+            },
+            {
+              "explain": "Multiply by 100 as well. Subtract 10x from 100x so the repeated decimal tails cancel.",
+              "work": "\\(100x=732.2222\\ldots\\)\n\\(100x-10x=732.2222\\ldots-73.2222\\ldots=659\\)"
+            },
+            {
+              "explain": "Solve for x and check that the fraction is in simplest form.",
+              "work": "\\(90x=659\\Rightarrow x=\\frac{659}{90}\\quad\\therefore\\quad\\boxed{\\frac{659}{90}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
+          }
+        },
+        {
+          "id": "bhs-y9-2023-t4a-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is greater: \\(7\\sqrt2\\) or \\(3\\sqrt{11}\\)?",
+          "options": [
+            "\\(7\\sqrt2\\)",
+            "\\(3\\sqrt{11}\\)",
+            "They are equal",
+            "It cannot be determined without a calculator"
+          ],
+          "answer": 1,
+          "hint": "Both values are positive, so compare their squares instead of estimating the radicals.",
+          "keyPoints": [
+            {
+              "text": "Which is greater: \\(7\\sqrt2\\) or \\(3\\sqrt{11}\\)?",
+              "note": "Both values are positive, so compare their squares instead of estimating the radicals."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Both expressions are positive, so squaring preserves their order.",
+              "work": "\\((7\\sqrt2)^2=49\\cdot2=98\\)"
+            },
+            {
+              "explain": "Square the second expression and compare the exact integers.",
+              "work": "\\((3\\sqrt{11})^2=9\\cdot11=99\\)"
+            },
+            {
+              "explain": "Since 99 is greater than 98, the second positive surd is greater.",
+              "work": "\\(99>98\\Rightarrow\\boxed{3\\sqrt{11}>7\\sqrt2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
+            "school": "Ballarat High School",
+            "year": "2023"
           }
         }
       ]
