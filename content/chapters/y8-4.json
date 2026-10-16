@@ -770,6 +770,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q1ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate \\(-54\\div9\\).",
+          "hint": "A negative divided by a positive is negative; divide the magnitudes first.",
+          "solution": "\\(-6\\)",
+          "steps": [
+            {
+              "explain": "The signs differ, so the quotient is negative.",
+              "work": "\\(\\text{negative}\\div\\text{positive}=\\text{negative}\\)"
+            },
+            {
+              "explain": "Divide the magnitudes.",
+              "work": "\\(54\\div9=6\\)"
+            },
+            {
+              "explain": "Attach the negative sign.",
+              "work": "\\(-54\\div9=-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "-54\\div9",
+              "note": "Decide the sign first, then divide 54 by 9."
+            }
+          ],
+          "options": [
+            "\\(-6\\)",
+            "\\(6\\)",
+            "\\(-45\\)",
+            "\\(-\\frac16\\)"
+          ],
+          "answer": 0
         }
       ]
     },

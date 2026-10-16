@@ -1842,6 +1842,46 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q3fii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\frac{4x^6y}{2x^2}\\).",
+          "hint": "Divide the coefficients and subtract exponents for the same base.",
+          "solution": "\\(2x^4y\\)",
+          "steps": [
+            {
+              "explain": "Divide the numerical coefficients.",
+              "work": "\\(4\\div2=2\\)"
+            },
+            {
+              "explain": "Use the quotient law for x.",
+              "work": "\\(x^6\\div x^2=x^{6-2}=x^4\\)"
+            },
+            {
+              "explain": "Keep the y factor.",
+              "work": "\\(\\frac{4x^6y}{2x^2}=2x^4y\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "Simplify",
+              "note": "When dividing powers with the same base, subtract the exponents."
+            }
+          ],
+          "options": [
+            "\\(2x^8y\\)",
+            "\\(2x^4y\\)",
+            "\\(2x^3y\\)",
+            "\\(2x^4\\)"
+          ],
+          "answer": 1
         }
       ]
     },

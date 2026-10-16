@@ -5270,6 +5270,62 @@
           "answer": "See proofs for parts a and b.",
           "hint": "Use the quadrilateral angle sum and co-interior angle tests.",
           "solution": "a) The sum of angles in a quadrilateral is $360^\\circ$, so $2\\theta + 2\\phi = 360^\\circ \\implies \\theta + \\phi = 180^\\circ$.\nb) Since adjacent angles sum to $180^\\circ$ (co-interior angles), opposite sides are parallel, hence $WXYZ$ is a parallelogram."
+        },
+        {
+          "id": "f2a22-y8-q5bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In parallelogram \\(ABCD\\), diagonal \\(AC\\) is drawn and \\(\\angle DAC=\\alpha\\). Why is \\(\\angle ACB=\\alpha\\)?",
+          "hint": "In a parallelogram, AD and BC are parallel. Treat AC as a transversal and identify the alternate interior angle at C.",
+          "solution": "Alternate interior angles are equal because \\(AD\\parallel BC\\).",
+          "steps": [
+            {
+              "explain": "The opposite sides of a parallelogram are parallel.",
+              "work": "\\(AD\\parallel BC\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"65\" y1=\"190\" x2=\"265\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"55\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"125\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"265\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"52\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"276\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"337\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"113\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">D</text><path d=\"M75 168 A24 24 0 0 1 87 179\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"82\" y=\"158\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">α</text></svg>"
+              }
+            },
+            {
+              "explain": "The diagonal AC crosses these parallel sides. The marked angles lie as alternate interior angles.",
+              "work": "\\(\\angle DAC=\\angle ACB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"65\" y1=\"190\" x2=\"265\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"55\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"125\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"265\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"52\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"276\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"337\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"113\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">D</text><path d=\"M75 168 A24 24 0 0 1 87 179\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"82\" y=\"158\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">α</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the given angle.",
+              "work": "\\(\\angle ACB=\\alpha\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"65\" y1=\"190\" x2=\"265\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"55\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"125\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"265\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#8b5cf6\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"52\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"276\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"337\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"113\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">D</text><path d=\"M75 168 A24 24 0 0 1 87 179\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"82\" y=\"158\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">α</text><path d=\"M304 66 A23 23 0 0 1 325 77\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"311\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">α</text><path d=\"M84 179 A20 20 0 0 1 85 190\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"99\" y=\"181\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#6d28d9\" font-weight=\"600\">β</text><path d=\"M303 55 A21 21 0 0 1 305 66\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"291\" y=\"71\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#6d28d9\" font-weight=\"600\">β</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"65\" y1=\"190\" x2=\"265\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"125\" y1=\"55\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"125\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"265\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"65\" y1=\"190\" x2=\"325\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><text x=\"52\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"276\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"337\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"113\" y=\"47\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">D</text><path d=\"M75 168 A24 24 0 0 1 87 179\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><text x=\"82\" y=\"158\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">α</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "parallelogram",
+              "note": "Opposite sides AD and BC are parallel."
+            },
+            {
+              "text": "\\angle ACB=\\alpha",
+              "note": "AC is the transversal; compare the angle at C with the marked angle at A."
+            }
+          ],
+          "options": [
+            "Alternate interior angles are equal because \\(AD\\parallel BC\\).",
+            "They are vertically opposite angles.",
+            "They are co-interior angles and add to 180°.",
+            "All angles in a parallelogram are equal."
+          ],
+          "answer": 0
         }
       ]
     },

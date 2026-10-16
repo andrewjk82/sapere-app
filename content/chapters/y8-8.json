@@ -552,6 +552,328 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "f2a22-y8-q2h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the right-angled triangle shown, find the exact value of the hypotenuse \\(x\\).",
+          "hint": "The hypotenuse is opposite the right angle. Apply Pythagoras to the 3 mm and 2 mm legs.",
+          "solution": "\\(x=\\sqrt{13}\\text{ mm}\\)",
+          "steps": [
+            {
+              "explain": "The highlighted perpendicular legs are 3 mm and 2 mm; x is opposite the right angle.",
+              "work": "\\(x^2=3^2+2^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            },
+            {
+              "explain": "Square and add the leg lengths.",
+              "work": "\\(x^2=9+4=13\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            },
+            {
+              "explain": "Take the positive square root because x is a length.",
+              "work": "\\(x=\\sqrt{13}\\text{ mm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "In the right-angled triangle shown, find the exact value of the hypotenuse \\(x\\).",
+              "note": "This is one perpendicular leg."
+            },
+            {
+              "text": "In the right-angled triangle shown, find the exact value of the hypotenuse \\(x\\).",
+              "note": "This is the other perpendicular leg."
+            },
+            {
+              "text": "x",
+              "note": "The side opposite the right-angle marker is the hypotenuse."
+            }
+          ],
+          "options": [
+            "\\(\\sqrt5\\text{ mm}\\)",
+            "\\(5\\text{ mm}\\)",
+            "\\(\\sqrt{13}\\text{ mm}\\)",
+            "\\(13\\text{ mm}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "f2a22-y8-q4bi",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Draw square \\(ABCD\\) with side length \\(5\\text{ cm}\\), and join diagonal \\(AC\\).",
+          "hint": "Draw a square with four 5 cm sides and right angles, then connect opposite vertices A and C.",
+          "solution": "Sample answer: square ABCD with all four sides 5 cm and the diagonal AC drawn.",
+          "steps": [
+            {
+              "explain": "Mark four equal sides and right angles to make square ABCD.",
+              "work": "\\(AB=BC=CD=DA=5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Join A to C. This diagonal forms two right-angled triangles.",
+              "work": "\\(AC\\text{ is the diagonal}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#f59e0b\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"197\" y=\"112\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "Sample answer: the square with diagonal AC is shown.",
+              "work": "\\(AC\\text{ divides the square into two congruent right triangles}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#f59e0b\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"197\" y=\"112\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">AC</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "side length \\(5\\text{ cm}\\)",
+              "note": "All four sides of a square have the given length."
+            }
+          ],
+          "manual": true,
+          "answer": "Sample answer: square ABCD with all four sides 5 cm and the diagonal AC drawn."
+        },
+        {
+          "id": "f2a22-y8-q4bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A square has side length \\(5\\text{ cm}\\). Find the exact length of its diagonal \\(AC\\).",
+          "hint": "The diagonal is the hypotenuse of a right triangle with two 5 cm legs.",
+          "solution": "\\(5\\sqrt2\\text{ cm}\\)",
+          "steps": [
+            {
+              "explain": "Use the two perpendicular sides of the square as the legs.",
+              "work": "\\(AC^2=5^2+5^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"188\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5√2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the squares.",
+              "work": "\\(AC^2=25+25=50\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"188\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5√2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Take the positive square root and simplify.",
+              "work": "\\(AC=\\sqrt{50}=5\\sqrt2\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"188\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5√2 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"188\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5√2 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "side length \\(5\\text{ cm}\\)",
+              "note": "The square sides meet at a right angle."
+            },
+            {
+              "text": "diagonal",
+              "note": "The diagonal is the hypotenuse of the right triangle."
+            }
+          ],
+          "options": [
+            "\\(10\\text{ cm}\\)",
+            "\\(\\sqrt{10}\\text{ cm}\\)",
+            "\\(25\\text{ cm}\\)",
+            "\\(5\\sqrt2\\text{ cm}\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q6a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find \\(x\\) such that \\(\\frac12\\), \\(x\\), and \\(\\frac53x\\) form a Pythagorean triad, with \\(\\frac53x\\) as the hypotenuse.",
+          "hint": "Use (leg)² + (leg)² = (hypotenuse)². The hypotenuse is specified as 5x/3.",
+          "solution": "\\(x=\\frac38\\)",
+          "steps": [
+            {
+              "explain": "Set up Pythagoras using the two legs and the stated hypotenuse.",
+              "work": "\\((\\frac12)^2+x^2=(\\frac53x)^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            },
+            {
+              "explain": "Expand and collect the x² terms.",
+              "work": "\\(\\frac14+x^2=\\frac{25}{9}x^2\\Rightarrow\\frac14=\\frac{16}{9}x^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for x².",
+              "work": "\\(x^2=\\frac14\\times\\frac9{16}=\\frac9{64}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            },
+            {
+              "explain": "Take the positive root because the triad entries represent lengths.",
+              "work": "\\(x=\\frac38\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#f59e0b\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M70 190 L300 190 L300 55 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M282 190 L282 172 L300 172\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"300\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"4\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"190\" x2=\"300\" y2=\"55\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"185\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">3 mm</text><text x=\"322\" y=\"122\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 mm</text><text x=\"172\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x mm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "\\frac12",
+              "note": "This is one leg."
+            },
+            {
+              "text": "\\frac53x",
+              "note": "The prompt identifies this as the hypotenuse; place it alone on the right side of Pythagoras."
+            }
+          ],
+          "options": [
+            "\\(\\frac38\\)",
+            "\\(\\frac34\\)",
+            "\\(\\frac58\\)",
+            "\\(\\frac{3}{10}\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q7aiiigamma",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using \\(C(\\frac32,\\frac52)\\) and \\(D(3,7)\\), find the length \\(CD\\).",
+          "hint": "Use Pythagoras with the horizontal and vertical coordinate differences.",
+          "solution": "\\(CD=\\frac{3\\sqrt{10}}2\\)",
+          "steps": [
+            {
+              "explain": "Find the horizontal and vertical differences.",
+              "work": "\\(\\Delta x=3-\\frac32=\\frac32,\\quad\\Delta y=7-\\frac52=\\frac92\\)"
+            },
+            {
+              "explain": "Use the distance relation.",
+              "work": "\\(CD^2=(\\frac32)^2+(\\frac92)^2=\\frac{9+81}{4}=\\frac{90}{4}\\)"
+            },
+            {
+              "explain": "Take the positive square root and simplify.",
+              "work": "\\(CD=\\frac{\\sqrt{90}}2=\\frac{3\\sqrt{10}}2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "length",
+              "note": "The horizontal and vertical coordinate changes are the perpendicular legs of a right triangle."
+            }
+          ],
+          "options": [
+            "\\(\\frac{9\\sqrt2}{2}\\)",
+            "\\(\\frac{5\\sqrt2}{2}\\)",
+            "\\(\\frac{3\\sqrt{10}}2\\)",
+            "\\(\\frac{15}{2}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "f2a22-y8-q8aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a right triangle with \\(AB:BC=3:4\\) and a right angle at B, what is \\(AB:AC\\)?",
+          "hint": "A 3–4–5 right triangle has hypotenuse AC.",
+          "solution": "3:5",
+          "steps": [
+            {
+              "explain": "Let the legs be 3k and 4k. Apply Pythagoras to the hypotenuse.",
+              "work": "\\(AC^2=(3k)^2+(4k)^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(AC^2=9k^2+16k^2=25k^2\\Rightarrow AC=5k\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "Form the requested ratio.",
+              "work": "\\(AB:AC=3k:5k=3:5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AC</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "right triangle",
+              "note": "Represent the two perpendicular legs as 3k and 4k."
+            },
+            {
+              "text": "In a right triangle with \\(AB:BC=3:4\\) and a right angle at B, what is \\(AB:AC\\)?",
+              "note": "AC is the hypotenuse because it is opposite the right angle."
+            }
+          ],
+          "options": [
+            "\\(4:5\\)",
+            "\\(3:4\\)",
+            "\\(3:5\\)",
+            "\\(5:3\\)"
+          ],
+          "answer": 2
         }
       ]
     },

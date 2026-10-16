@@ -91,6 +91,9 @@ Distractors (오답) must reflect **real student mistakes**:
 
 ## 3. Step-by-Step Solution Writing (상세 해설)
 
+### Persistent User Requirements for Exam Imports
+For any batch of exam questions, first read `profiles/Question_Batch_Quality_Profile.md` and apply its checklist in addition to the target chapter profile. Treat the user's explicit settings for the current batch (such as year, timer, and XP) as authoritative.
+
 ### Structure: 3~5 Steps
 
 Each step is an object (canonical field names — see `content/schema.js` / CLAUDE.md's field

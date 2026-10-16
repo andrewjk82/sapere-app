@@ -3517,6 +3517,86 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "f2a22-y8-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(0.64\\) as a percentage.",
+          "hint": "Convert a decimal to a percentage by multiplying by 100.",
+          "solution": "\\(64\\%\\)",
+          "steps": [
+            {
+              "explain": "Multiply by 100.",
+              "work": "\\(0.64\\times100=64\\)"
+            },
+            {
+              "explain": "Attach the percent symbol.",
+              "work": "\\(0.64=64\\%\\)"
+            },
+            {
+              "explain": "Check that the decimal point moved two places right.",
+              "work": "\\(64\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "0.64",
+              "note": "Multiply the decimal by 100 to make a percentage."
+            }
+          ],
+          "options": [
+            "\\(0.64\\%\\)",
+            "\\(64\\%\\)",
+            "\\(6.4\\%\\)",
+            "\\(640\\%\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "f2a22-y8-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(45\\%\\) as a fraction in simplest form.",
+          "hint": "Write the percent over 100, then divide top and bottom by their common factor.",
+          "solution": "\\(\\frac9{20}\\)",
+          "steps": [
+            {
+              "explain": "Percent means out of 100.",
+              "work": "\\(45\\%=\\frac{45}{100}\\)"
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by 5.",
+              "work": "\\(\\frac{45\\div5}{100\\div5}=\\frac9{20}\\)"
+            },
+            {
+              "explain": "Confirm the fraction cannot reduce further.",
+              "work": "\\(\\operatorname{HCF}(9,20)=1\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "Write \\(45\\%\\) as a fraction in simplest form.",
+              "note": "Put the percentage over 100, then simplify."
+            }
+          ],
+          "options": [
+            "\\(\\frac9{20}\\)",
+            "\\(\\frac{45}{10}\\)",
+            "\\(\\frac45\\)",
+            "\\(\\frac{45}{20}\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -3553,6 +3633,46 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(60\\%\\) of \\(70\\%\\), as a percentage.",
+          "hint": "“Of” means multiply: convert each percent to a decimal or fraction.",
+          "solution": "42%",
+          "steps": [
+            {
+              "explain": "Convert the percentages to decimals.",
+              "work": "\\(60\\%=0.60,\\quad70\\%=0.70\\)"
+            },
+            {
+              "explain": "Multiply the decimal factors.",
+              "work": "\\(0.60\\times0.70=0.42\\)"
+            },
+            {
+              "explain": "Convert back to a percentage.",
+              "work": "\\(0.42=42\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "Find",
+              "note": "Treat “of” as multiplication, not addition."
+            }
+          ],
+          "options": [
+            "\\(130\\%\\)",
+            "\\(42\\%\\)",
+            "\\(4.2\\%\\)",
+            "\\(30\\%\\)"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -3818,6 +3938,86 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q3i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An item increases in price from \\(\\$3.00\\) to \\(\\$3.60\\). Find the percentage increase.",
+          "hint": "Find the increase first, then divide by the original price and multiply by 100%.",
+          "solution": "20%",
+          "steps": [
+            {
+              "explain": "Calculate the increase.",
+              "work": "\\(\\$3.60-\\$3.00=\\$0.60\\)"
+            },
+            {
+              "explain": "Compare the increase to the original price.",
+              "work": "\\(\\frac{0.60}{3.00}\\times100\\%\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(0.2\\times100\\%=20\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "An item increases in price from \\(\\$3.00\\) to \\(\\$3.60\\). Find the percentage increase.",
+              "note": "Use the original price as the denominator in the percentage-change calculation."
+            }
+          ],
+          "options": [
+            "\\(20\\%\\)",
+            "\\(16\\frac23\\%\\)",
+            "\\(60\\%\\)",
+            "\\(120\\%\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q6b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The side length of a square is increased by \\(50\\%\\). What is the percentage increase in its area?",
+          "hint": "A 50% side increase makes the new side 1.5 times as large. Square that scale factor for area.",
+          "solution": "125%",
+          "steps": [
+            {
+              "explain": "Let the original side length be s. The new side is 150% of s.",
+              "work": "\\(s_{new}=1.5s\\)"
+            },
+            {
+              "explain": "Compare the new area with the original area.",
+              "work": "\\(\\frac{A_{new}}{A_{old}}=\\frac{(1.5s)^2}{s^2}=2.25\\)"
+            },
+            {
+              "explain": "The area is 225% of the original, so the increase is 225%−100%.",
+              "work": "\\(225\\%-100\\%=125\\%\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "The side length of a square is increased by \\(50\\%\\). What is the percentage increase in its area?",
+              "note": "The new side is 150% of the old side; area scales by the square of this factor."
+            }
+          ],
+          "options": [
+            "\\(50\\%\\)",
+            "\\(125\\%\\)",
+            "\\(150\\%\\)",
+            "\\(225\\%\\)"
+          ],
+          "answer": 1
         }
       ]
     },

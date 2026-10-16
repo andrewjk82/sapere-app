@@ -1486,6 +1486,62 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the radius of the largest circle that fits inside a right-angled isosceles triangle with equal side lengths \\(\\sqrt2\\text{ cm}\\).",
+          "hint": "The equal legs are √2, so the hypotenuse is 2. Use triangle area = inradius × semiperimeter.",
+          "solution": "\\((\\sqrt2-1)\\text{ cm}\\)",
+          "steps": [
+            {
+              "explain": "Find the hypotenuse using Pythagoras.",
+              "work": "\\(c=\\sqrt{(\\sqrt2)^2+(\\sqrt2)^2}=2\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M60 190 L60 80 L170 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"92.5\" cy=\"157.5\" r=\"32.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"60\" y2=\"157.5\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"92.5\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"92\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">r</text><text x=\"24\" y=\"137\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"115\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"139\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the triangle area and semiperimeter.",
+              "work": "\\(A=\\frac12(\\sqrt2)(\\sqrt2)=1;\\quad s=\\frac{\\sqrt2+\\sqrt2+2}{2}=1+\\sqrt2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M60 190 L60 80 L170 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"92.5\" cy=\"157.5\" r=\"32.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"60\" y2=\"157.5\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"92.5\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"92\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">r</text><text x=\"24\" y=\"137\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"115\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"139\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "For the inscribed circle, A=rs. Solve for r.",
+              "work": "\\(r=\\frac{A}{s}=\\frac1{1+\\sqrt2}=\\sqrt2-1\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M60 190 L60 80 L170 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"92.5\" cy=\"157.5\" r=\"32.5\" fill=\"#fef3c7\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"60\" y2=\"157.5\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"92.5\" y2=\"190\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"92\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\" font-weight=\"600\">r</text><text x=\"24\" y=\"137\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"115\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"139\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M60 190 L60 80 L170 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><circle cx=\"92.5\" cy=\"157.5\" r=\"32.5\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2.5\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"60\" y2=\"157.5\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"92.5\" y1=\"157.5\" x2=\"92.5\" y2=\"190\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"92\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">r</text><text x=\"24\" y=\"137\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"115\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">√2 cm</text><text x=\"139\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "largest circle",
+              "note": "These are the perpendicular legs of the right isosceles triangle."
+            },
+            {
+              "text": "Find the radius of the largest circle that fits inside a right-angled isosceles triangle with equal side lengths \\(\\sqrt2\\text{ cm}\\).",
+              "note": "The largest inscribed circle is tangent to all three sides; use its inradius."
+            }
+          ],
+          "options": [
+            "\\(1\\text{ cm}\\)",
+            "\\((\\sqrt2-1)\\text{ cm}\\)",
+            "\\(\\frac{\\sqrt2}{2}\\text{ cm}\\)",
+            "\\((2-\\sqrt2)\\text{ cm}\\)"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -1524,6 +1580,62 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rhombus has diagonals of lengths \\(10\\text{ m}\\) and \\(6\\text{ m}\\). Find its area.",
+          "hint": "The area of a rhombus is half the product of its diagonals.",
+          "solution": "\\(30\\text{ m}^2\\)",
+          "steps": [
+            {
+              "explain": "Identify the two diagonals in the diagram.",
+              "work": "\\(d_1=10\\text{ m},\\quad d_2=6\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M190 32 L315 120 L190 208 L65 120 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"65\" y1=\"120\" x2=\"315\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190\" y1=\"32\" x2=\"190\" y2=\"208\" stroke=\"#8b5cf6\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"52\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">10 m</text><text x=\"90\" y=\"119\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">6 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the rhombus area formula.",
+              "work": "\\(A=\\frac12d_1d_2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M190 32 L315 120 L190 208 L65 120 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"65\" y1=\"120\" x2=\"315\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190\" y1=\"32\" x2=\"190\" y2=\"208\" stroke=\"#8b5cf6\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"52\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">10 m</text><text x=\"90\" y=\"119\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">6 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute and include square units.",
+              "work": "\\(A=\\frac12(10)(6)=30\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M190 32 L315 120 L190 208 L65 120 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"65\" y1=\"120\" x2=\"315\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190\" y1=\"32\" x2=\"190\" y2=\"208\" stroke=\"#8b5cf6\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"52\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">10 m</text><text x=\"90\" y=\"119\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">6 m</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M190 32 L315 120 L190 208 L65 120 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"65\" y1=\"120\" x2=\"315\" y2=\"120\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"190\" y1=\"32\" x2=\"190\" y2=\"208\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"190\" y=\"52\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">10 m</text><text x=\"90\" y=\"119\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">6 m</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "diagonals of lengths",
+              "note": "This is one diagonal."
+            },
+            {
+              "text": "A rhombus has diagonals of lengths \\(10\\text{ m}\\) and \\(6\\text{ m}\\). Find its area.",
+              "note": "This is the other diagonal; multiply the diagonals and halve."
+            }
+          ],
+          "options": [
+            "\\(60\\text{ m}^2\\)",
+            "\\(16\\text{ m}^2\\)",
+            "\\(30\\text{ m}\\)",
+            "\\(30\\text{ m}^2\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -1649,6 +1761,62 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 3
+        },
+        {
+          "id": "f2a22-y8-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A prism has star-shaped cross-sectional area \\(\\frac{15}{8}\\text{ m}^2\\) and depth \\(\\frac{20}{3}\\text{ m}\\). Find its volume as a simplified improper fraction.",
+          "hint": "For a prism, volume = cross-sectional area × depth.",
+          "solution": "\\(\\frac{25}{2}\\text{ m}^3\\)",
+          "steps": [
+            {
+              "explain": "Identify the cross-sectional area and prism depth in the figure.",
+              "work": "\\(A=\\frac{15}{8}\\text{ m}^2,\\quad d=\\frac{20}{3}\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M65 70 L84 110 L128 105 L96 135 L110 178 L75 151 L42 178 L54 136 L22 105 L65 110 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M65 70 L135 50 L198 86 L128 105 M110 178 L180 155 L198 86 M128 105 L198 86\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A=15/8 m²</text><text x=\"244\" y=\"112\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">depth 20/3 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply the fractions.",
+              "work": "\\(V=\\frac{15}{8}\\times\\frac{20}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M65 70 L84 110 L128 105 L96 135 L110 178 L75 151 L42 178 L54 136 L22 105 L65 110 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M65 70 L135 50 L198 86 L128 105 M110 178 L180 155 L198 86 M128 105 L198 86\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A=15/8 m²</text><text x=\"244\" y=\"112\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">depth 20/3 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Cancel then multiply; combine units.",
+              "work": "\\(V=\\frac{5\\times5}{2}=\\frac{25}{2}\\text{ m}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M65 70 L84 110 L128 105 L96 135 L110 178 L75 151 L42 178 L54 136 L22 105 L65 110 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M65 70 L135 50 L198 86 L128 105 M110 178 L180 155 L198 86 M128 105 L198 86\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A=15/8 m²</text><text x=\"244\" y=\"112\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">depth 20/3 m</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M65 70 L84 110 L128 105 L96 135 L110 178 L75 151 L42 178 L54 136 L22 105 L65 110 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M65 70 L135 50 L198 86 L128 105 M110 178 L180 155 L198 86 M128 105 L198 86\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"74\" y=\"213\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A=15/8 m²</text><text x=\"244\" y=\"112\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">depth 20/3 m</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "cross-sectional area \\(\\frac{15}{8}\\text{ m}^2\\)",
+              "note": "The cross-section is the prism base area."
+            },
+            {
+              "text": "depth \\(\\frac{20}{3}\\text{ m}\\)",
+              "note": "Multiply the area by the length/depth to find volume."
+            }
+          ],
+          "options": [
+            "\\(\\frac{35}{8}\\text{ m}^3\\)",
+            "\\(\\frac{25}{4}\\text{ m}^3\\)",
+            "\\(\\frac{25}{2}\\text{ m}^3\\)",
+            "\\(\\frac{15}{8}\\text{ m}^3\\)"
+          ],
+          "answer": 2
         }
       ]
     },
@@ -1804,6 +1972,140 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q5e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A closed cylinder has diameter \\(5\\text{ cm}\\) and length \\(10\\text{ cm}\\). Using \\(\\pi=\\frac{22}{7}\\), find its total surface area as an improper fraction.",
+          "hint": "Add the areas of the curved surface and two circular ends; radius is half the diameter.",
+          "solution": "\\(\\frac{1375}{7}\\text{ cm}^2\\)",
+          "steps": [
+            {
+              "explain": "Convert the diameter to radius and identify length.",
+              "work": "\\(r=\\frac52\\text{ cm},\\quad h=10\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 65 C85 42 295 42 295 65 L295 175 C295 198 85 198 85 175 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><ellipse cx=\"190\" cy=\"65\" rx=\"105\" ry=\"23\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M85 175 C85 145 295 145 295 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"295\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"243\" y=\"48\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">r=2.5 cm</text><text x=\"316\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use total surface area for a closed cylinder.",
+              "work": "\\(S=2\\pi rh+2\\pi r^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 65 C85 42 295 42 295 65 L295 175 C295 198 85 198 85 175 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><ellipse cx=\"190\" cy=\"65\" rx=\"105\" ry=\"23\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M85 175 C85 145 295 145 295 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"295\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"243\" y=\"48\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">r=2.5 cm</text><text x=\"316\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute and evaluate.",
+              "work": "\\(S=2(\\frac{22}{7})(\\frac52)(10)+2(\\frac{22}{7})(\\frac52)^2=\\frac{1100}{7}+\\frac{275}{7}=\\frac{1375}{7}\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 65 C85 42 295 42 295 65 L295 175 C295 198 85 198 85 175 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><ellipse cx=\"190\" cy=\"65\" rx=\"105\" ry=\"23\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M85 175 C85 145 295 145 295 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"295\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"243\" y=\"48\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">r=2.5 cm</text><text x=\"316\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Check that the two circular ends were included.",
+              "work": "\\(S=\\frac{1375}{7}\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 65 C85 42 295 42 295 65 L295 175 C295 198 85 198 85 175 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><ellipse cx=\"190\" cy=\"65\" rx=\"105\" ry=\"23\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M85 175 C85 145 295 145 295 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"295\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"243\" y=\"48\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">r=2.5 cm</text><text x=\"316\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 65 C85 42 295 42 295 65 L295 175 C295 198 85 198 85 175 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\"/><ellipse cx=\"190\" cy=\"65\" rx=\"105\" ry=\"23\" fill=\"#e0e7ff\" stroke=\"#334155\" stroke-width=\"3\"/><path d=\"M85 175 C85 145 295 145 295 175\" fill=\"none\" stroke=\"#334155\" stroke-width=\"3\"/><line x1=\"190\" y1=\"65\" x2=\"295\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><text x=\"243\" y=\"48\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">r=2.5 cm</text><text x=\"316\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "diameter \\(5\\text{ cm}\\)",
+              "note": "Halve the diameter to get the radius."
+            },
+            {
+              "text": "closed cylinder",
+              "note": "Include two circular ends as well as the curved surface."
+            },
+            {
+              "text": "length \\(10\\text{ cm}\\)",
+              "note": "This is the cylinder height/length in the curved-area term."
+            }
+          ],
+          "options": [
+            "\\(\\frac{550}{7}\\text{ cm}^2\\)",
+            "\\(\\frac{825}{7}\\text{ cm}^2\\)",
+            "\\(\\frac{2750}{7}\\text{ cm}^2\\)",
+            "\\(\\frac{1375}{7}\\text{ cm}^2\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q9c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cube of side length \\(6\\text{ m}\\) has all eight corners sliced off, creating eight new triangular faces of side length \\(2\\text{ m}\\). Find the surface area of the resulting solid.",
+          "hint": "Each new cut face is equilateral with side 2. Its edge points are √2 m from each original corner along the cube edges.",
+          "solution": "\\(192+8\\sqrt3\\text{ m}^2\\)",
+          "steps": [
+            {
+              "explain": "On each original square face, the four cut-off corner triangles are right isosceles. Their equal legs d satisfy (√2d)²=2², because the new triangular face edge is 2 m.",
+              "work": "\\(2d^2=4\\Rightarrow d=\\sqrt2\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 75 L210 40 L315 92 L315 190 L180 225 L75 172 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L180 112 L315 92 M180 112 L180 225 M180 112 L210 40\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L106 76 L97 101 Z\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"75\" x2=\"98\" y2=\"101\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"75\" y1=\"75\" x2=\"106\" y2=\"76\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"119\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">2 m</text><text x=\"185\" y=\"236\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Original edge: 6 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Each removed corner triangle on a square face has area 1/2(√2)(√2)=1 m². Thus each remaining original face has area 36−4=32 m².",
+              "work": "\\(6(32)=192\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 75 L210 40 L315 92 L315 190 L180 225 L75 172 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L180 112 L315 92 M180 112 L180 225 M180 112 L210 40\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L106 76 L97 101 Z\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"75\" x2=\"98\" y2=\"101\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"75\" y1=\"75\" x2=\"106\" y2=\"76\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"119\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">2 m</text><text x=\"185\" y=\"236\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Original edge: 6 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Each new cut face is an equilateral triangle of side 2. Its height is √3, so its area is √3 m²; there are 8 such faces.",
+              "work": "\\(8\\times\\frac12(2)(\\sqrt3)=8\\sqrt3\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 75 L210 40 L315 92 L315 190 L180 225 L75 172 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L180 112 L315 92 M180 112 L180 225 M180 112 L210 40\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L106 76 L97 101 Z\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"75\" x2=\"98\" y2=\"101\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"75\" y1=\"75\" x2=\"106\" y2=\"76\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"119\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">2 m</text><text x=\"185\" y=\"236\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Original edge: 6 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the six octagonal face areas and eight triangular face areas.",
+              "work": "\\(S=192+8\\sqrt3\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 75 L210 40 L315 92 L315 190 L180 225 L75 172 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L180 112 L315 92 M180 112 L180 225 M180 112 L210 40\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L106 76 L97 101 Z\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"75\" x2=\"98\" y2=\"101\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"75\" y1=\"75\" x2=\"106\" y2=\"76\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"119\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">2 m</text><text x=\"185\" y=\"236\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Original edge: 6 m</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 75 L210 40 L315 92 L315 190 L180 225 L75 172 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L180 112 L315 92 M180 112 L180 225 M180 112 L210 40\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M75 75 L106 76 L97 101 Z\" fill=\"#fef3c7\" stroke=\"#334155\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"75\" x2=\"98\" y2=\"101\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><line x1=\"75\" y1=\"75\" x2=\"106\" y2=\"76\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"119\" y=\"87\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">2 m</text><text x=\"185\" y=\"236\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Original edge: 6 m</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "cube of side length \\(6\\text{ m}\\)",
+              "note": "Start with six 6-by-6 square faces."
+            },
+            {
+              "text": "eight corners sliced off",
+              "note": "There are eight new triangular faces and four small corner triangles removed from each original face."
+            },
+            {
+              "text": "triangular faces of side length \\(2\\text{ m}\\)",
+              "note": "Use the 2 m edge to find the cut distances and each new triangle’s area."
+            }
+          ],
+          "options": [
+            "\\(168+8\\sqrt3\\text{ m}^2\\)",
+            "\\(192+8\\sqrt3\\text{ m}^2\\)",
+            "\\(192+4\\sqrt3\\text{ m}^2\\)",
+            "\\(216+8\\sqrt3\\text{ m}^2\\)"
+          ],
+          "answer": 1
         }
       ]
     },

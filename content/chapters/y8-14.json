@@ -600,6 +600,58 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the area of a circle with radius \\(2\\text{ cm}\\), using \\(\\pi\\approx3.1\\).",
+          "hint": "Use area = πr². Square the radius before multiplying by 3.1.",
+          "solution": "\\(12.4\\text{ cm}^2\\)",
+          "steps": [
+            {
+              "explain": "Identify the radius and area formula.",
+              "work": "\\(r=2\\text{ cm},\\quad A=\\pi r^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the given approximation and radius.",
+              "work": "\\(A\\approx3.1\\times2^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Square first, multiply, and include square units.",
+              "work": "\\(A\\approx3.1\\times4=12.4\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "circle with radius",
+              "note": "Use the radius, not the diameter, in A = πr²."
+            }
+          ],
+          "options": [
+            "\\(6.2\\text{ cm}^2\\)",
+            "\\(12.4\\text{ cm}\\)",
+            "\\(12.4\\text{ cm}^2\\)",
+            "\\(3.1\\text{ cm}^2\\)"
+          ],
+          "answer": 2
         }
       ]
     },

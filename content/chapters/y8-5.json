@@ -1040,6 +1040,114 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q6di",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Construct the bisector of \\(\\angle AOB\\) using a straightedge and compasses.",
+          "hint": "With the compass centred at O, draw an arc cutting both rays. Use the two intersection points as centres for equal arcs that cross inside the angle.",
+          "solution": "Sample construction: draw equal-radius arcs from points on OA and OB, then join O to their intersection. The resulting ray bisects \\(\\angle AOB\\).",
+          "steps": [
+            {
+              "explain": "Draw an arc centred at O to mark equal-distance points on OA and OB.",
+              "work": "\\(OA_1=OB_1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"80\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"185\" x2=\"190\" y2=\"45\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"68\" y=\"199\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"323\" y=\"185\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"184\" y=\"37\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><path d=\"M135 185 A55 55 0 0 0 114 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"185\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"114\" cy=\"142\" r=\"3.5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Without changing the compass width, draw intersecting arcs from the two marked points.",
+              "work": "\\(A_1C=B_1C\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"80\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"185\" x2=\"190\" y2=\"45\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"68\" y=\"199\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"323\" y=\"185\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"184\" y=\"37\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><path d=\"M135 185 A55 55 0 0 0 114 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"185\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"114\" cy=\"142\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"135\" cy=\"185\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"114\" cy=\"142\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"169\" cy=\"142\" r=\"4\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Draw ray OC through O and the arcs’ intersection. It divides the angle into two equal angles.",
+              "work": "\\(\\angle AOC=\\angle COB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"80\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"185\" x2=\"190\" y2=\"45\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"68\" y=\"199\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"323\" y=\"185\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"184\" y=\"37\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><path d=\"M135 185 A55 55 0 0 0 114 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"185\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"114\" cy=\"142\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"135\" cy=\"185\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"114\" cy=\"142\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"169\" cy=\"142\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"80\" y1=\"185\" x2=\"169\" y2=\"142\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"173\" y=\"136\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">C</text><path d=\"M100 185 A20 20 0 0 0 98 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M98 176 A20 20 0 0 0 92 169\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Sample answer: the purple ray is the angle bisector; the faint arcs show the construction.",
+              "work": "\\(\\angle AOC=\\frac12\\angle AOB\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"80\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"185\" x2=\"190\" y2=\"45\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"68\" y=\"199\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"323\" y=\"185\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"184\" y=\"37\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text><path d=\"M135 185 A55 55 0 0 0 114 142\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"185\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"114\" cy=\"142\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"135\" cy=\"185\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"114\" cy=\"142\" r=\"55\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><circle cx=\"169\" cy=\"142\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"80\" y1=\"185\" x2=\"169\" y2=\"142\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"173\" y=\"136\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">C</text><path d=\"M100 185 A20 20 0 0 0 98 176\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M98 176 A20 20 0 0 0 92 169\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"80\" y1=\"185\" x2=\"315\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"185\" x2=\"190\" y2=\"45\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"68\" y=\"199\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"323\" y=\"185\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"184\" y=\"37\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">B</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "\\angle AOB",
+              "note": "The new ray must start at vertex O and lie inside this angle."
+            }
+          ],
+          "manual": true,
+          "answer": "Sample construction: draw equal-radius arcs from points on OA and OB, then join O to their intersection. The resulting ray bisects \\(\\angle AOB\\)."
+        },
+        {
+          "id": "f2a22-y8-q6dii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Copy \\(\\angle POQ\\) to construct \\(\\angle YXZ\\), using ray XY as one arm.",
+          "hint": "Use the same compass radius to transfer an arc from O to X, then transfer the distance between the arc intersections to locate Z.",
+          "solution": "Sample construction: transfer the compass arc and its chord length to vertex X, then draw ray XZ through the transferred point.",
+          "steps": [
+            {
+              "explain": "Draw an arc centred at O that crosses both arms OP and OQ. Draw an arc of the same radius centred at X, starting at ray XY.",
+              "work": "\\(OA_1=OB_1=XY_1\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Measure the distance between the two intersections on the original arc, then copy that chord length onto the arc centred at X.",
+              "work": "\\(A_1B_1=Y_1Z\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/></svg>"
+              }
+            },
+            {
+              "explain": "Join X to the new point Z. This copies the angle while preserving its opening.",
+              "work": "\\(\\angle YXZ=\\angle POQ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"225\" y1=\"190\" x2=\"251\" y2=\"153\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"259\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">Z</text><path d=\"M78 190 A18 18 0 0 0 70 175\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M243 190 A18 18 0 0 0 235 175\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/></svg>"
+              }
+            },
+            {
+              "explain": "Sample answer: the constructed ray XZ forms the same angle as POQ.",
+              "work": "\\(\\angle YXZ\\cong\\angle POQ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"225\" y1=\"190\" x2=\"251\" y2=\"153\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"259\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">Z</text><path d=\"M78 190 A18 18 0 0 0 70 175\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M243 190 A18 18 0 0 0 235 175\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "\\angle POQ",
+              "note": "Copy the opening by transferring the arc and chord, not by estimating with a protractor."
+            }
+          ],
+          "manual": true,
+          "answer": "Sample construction: transfer the compass arc and its chord length to vertex X, then draw ray XZ through the transferred point."
         }
       ]
     },
@@ -1142,6 +1250,66 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q2f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(AB\\parallel CD\\) and \\(PQ\\) is a transversal. Find \\(a\\), where the marked angles are co-interior.",
+          "hint": "Co-interior angles between parallel lines add to 180°.",
+          "solution": "\\(a=70^\\circ\\), because co-interior angles sum to \\(180^\\circ\\).",
+          "steps": [
+            {
+              "explain": "The highlighted angles are co-interior: they lie inside the parallel lines on the same side of the transversal.",
+              "work": "\\(110^\\circ+a=180^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"55\" y1=\"60\" x2=\"320\" y2=\"60\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"180\" x2=\"320\" y2=\"180\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"20\" x2=\"200\" y2=\"240\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M156.5 60 A22 22 0 0 1 142 80.7\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170.7 159.3 A22 22 0 0 1 200.2 180\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"84\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">a°</text><text x=\"199\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">110°</text><text x=\"50\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"325\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"50\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"325\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"106\" y=\"24\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"204\" y=\"231\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Q</text><line x1=\"102\" y1=\"60\" x2=\"108\" y2=\"54\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"252\" y1=\"180\" x2=\"258\" y2=\"174\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Subtract 110° from both sides.",
+              "work": "\\(a=180^\\circ-110^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"55\" y1=\"60\" x2=\"320\" y2=\"60\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"180\" x2=\"320\" y2=\"180\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"20\" x2=\"200\" y2=\"240\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M156.5 60 A22 22 0 0 1 142 80.7\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170.7 159.3 A22 22 0 0 1 200.2 180\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"84\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">a°</text><text x=\"199\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">110°</text><text x=\"50\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"325\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"50\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"325\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"106\" y=\"24\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"204\" y=\"231\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Q</text><line x1=\"102\" y1=\"60\" x2=\"108\" y2=\"54\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"252\" y1=\"180\" x2=\"258\" y2=\"174\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the missing angle.",
+              "work": "\\(a=70^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"55\" y1=\"60\" x2=\"320\" y2=\"60\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"180\" x2=\"320\" y2=\"180\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"20\" x2=\"200\" y2=\"240\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M156.5 60 A22 22 0 0 1 142 80.7\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170.7 159.3 A22 22 0 0 1 200.2 180\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"84\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">a°</text><text x=\"199\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">110°</text><text x=\"50\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"325\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"50\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"325\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"106\" y=\"24\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"204\" y=\"231\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Q</text><line x1=\"102\" y1=\"60\" x2=\"108\" y2=\"54\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"252\" y1=\"180\" x2=\"258\" y2=\"174\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"55\" y1=\"60\" x2=\"320\" y2=\"60\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"55\" y1=\"180\" x2=\"320\" y2=\"180\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"120\" y1=\"20\" x2=\"200\" y2=\"240\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M156.5 60 A22 22 0 0 1 142 80.7\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M170.7 159.3 A22 22 0 0 1 200.2 180\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"84\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">a°</text><text x=\"199\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\" font-weight=\"600\">110°</text><text x=\"50\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"325\" y=\"50\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"50\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"325\" y=\"192\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"106\" y=\"24\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"204\" y=\"231\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">Q</text><line x1=\"102\" y1=\"60\" x2=\"108\" y2=\"54\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"252\" y1=\"180\" x2=\"258\" y2=\"174\" stroke=\"#0f766e\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "co-interior",
+              "note": "The matching arrow marks show the two lines are parallel."
+            },
+            {
+              "text": "In the diagram, \\(AB\\parallel CD\\) and \\(PQ\\) is a transversal. Find \\(a\\), where the marked angles are co-interior.",
+              "note": "Co-interior angles on parallel lines are supplementary."
+            },
+            {
+              "text": "a",
+              "note": "The unknown angle is paired with 110° on the same side of the transversal."
+            }
+          ],
+          "options": [
+            "\\(70^\\circ\\)",
+            "\\(110^\\circ\\)",
+            "\\(180^\\circ\\)",
+            "\\(55^\\circ\\)"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -1325,6 +1493,62 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "f2a22-y8-q10a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A triangle has interior angles x, y, z and exterior angles a, b, c respectively. If \\(a:b:c=4:5:6\\), find \\(x:y:z\\).",
+          "hint": "The exterior angles of a triangle add to 360°. Each interior angle is supplementary to its corresponding exterior angle.",
+          "solution": "\\(x:y:z=7:5:3\\)",
+          "steps": [
+            {
+              "explain": "There are 4+5+6=15 ratio parts in 360°.",
+              "work": "\\(1\\text{ part}=360^\\circ\\div15=24^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 195 L290 185 L190 45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"35\" y2=\"195\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"185\" x2=\"335\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"206\" y2=\"15\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"66\" y=\"171\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">a</text><text x=\"303\" y=\"164\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">b</text><text x=\"206\" y=\"49\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">c</text><text x=\"115\" y=\"187\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x</text><text x=\"266\" y=\"176\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">y</text><text x=\"188\" y=\"81\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">z</text></svg>"
+              }
+            },
+            {
+              "explain": "Find each exterior angle, then its supplementary interior angle.",
+              "work": "\\(a=96^\\circ,b=120^\\circ,c=144^\\circ\\Rightarrow x=84^\\circ,y=60^\\circ,z=36^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 195 L290 185 L190 45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"35\" y2=\"195\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"185\" x2=\"335\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"206\" y2=\"15\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"66\" y=\"171\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">a</text><text x=\"303\" y=\"164\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">b</text><text x=\"206\" y=\"49\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">c</text><text x=\"115\" y=\"187\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x</text><text x=\"266\" y=\"176\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">y</text><text x=\"188\" y=\"81\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">z</text></svg>"
+              }
+            },
+            {
+              "explain": "Simplify the interior-angle ratio by dividing by 12.",
+              "work": "\\(84:60:36=7:5:3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 195 L290 185 L190 45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"35\" y2=\"195\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"185\" x2=\"335\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"206\" y2=\"15\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"66\" y=\"171\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">a</text><text x=\"303\" y=\"164\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">b</text><text x=\"206\" y=\"49\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">c</text><text x=\"115\" y=\"187\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x</text><text x=\"266\" y=\"176\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">y</text><text x=\"188\" y=\"81\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">z</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M75 195 L290 185 L190 45 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"195\" x2=\"35\" y2=\"195\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"290\" y1=\"185\" x2=\"335\" y2=\"185\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"206\" y2=\"15\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"66\" y=\"171\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">a</text><text x=\"303\" y=\"164\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">b</text><text x=\"206\" y=\"49\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\" font-weight=\"600\">c</text><text x=\"115\" y=\"187\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">x</text><text x=\"266\" y=\"176\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">y</text><text x=\"188\" y=\"81\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">z</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "a:b:c=4:5:6",
+              "note": "Use the 360° total for one full turn around the triangle."
+            },
+            {
+              "text": "interior angles x, y, z",
+              "note": "Each is 180° minus its adjacent exterior angle."
+            }
+          ],
+          "options": [
+            "\\(7:5:3\\)",
+            "\\(4:5:6\\)",
+            "\\(6:7:8\\)",
+            "\\(8:7:6\\)"
+          ],
+          "answer": 0
         }
       ]
     },

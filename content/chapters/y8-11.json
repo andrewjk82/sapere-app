@@ -1923,6 +1923,206 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "f2a22-y8-q1ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(3a-4a+2a\\).",
+          "hint": "All terms are like terms, so combine their coefficients.",
+          "solution": "\\(a\\)",
+          "steps": [
+            {
+              "explain": "Collect the coefficients of a.",
+              "work": "\\(3-4+2\\)"
+            },
+            {
+              "explain": "Calculate the coefficient.",
+              "work": "\\(3-4+2=1\\)"
+            },
+            {
+              "explain": "Write the remaining term.",
+              "work": "\\(1a=a\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "3a-4a+2a",
+              "note": "Combine the coefficients; keep the variable unchanged."
+            }
+          ],
+          "options": [
+            "\\(a\\)",
+            "\\(-3a\\)",
+            "\\(9a\\)",
+            "\\(a^2\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q1cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(2x\\times3x\\).",
+          "hint": "Multiply the coefficients, then multiply the two factors of x.",
+          "solution": "\\(6x^2\\)",
+          "steps": [
+            {
+              "explain": "Multiply the numerical coefficients.",
+              "work": "\\(2\\times3=6\\)"
+            },
+            {
+              "explain": "Use the index rule for the variable factors.",
+              "work": "\\(x\\times x=x^2\\)"
+            },
+            {
+              "explain": "Combine the results.",
+              "work": "\\(2x\\times3x=6x^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "2x\\times3x",
+              "note": "Multiply coefficients and recognise x appears twice."
+            }
+          ],
+          "options": [
+            "\\(5x\\)",
+            "\\(6x^2\\)",
+            "\\(6x\\)",
+            "\\(5x^2\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "f2a22-y8-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand \\(4(6-x)\\).",
+          "hint": "Multiply 4 by each term inside the brackets, including the negative term.",
+          "solution": "\\(24-4x\\)",
+          "steps": [
+            {
+              "explain": "Distribute 4 to both terms.",
+              "work": "\\(4(6-x)=4\\times6+4\\times(-x)\\)"
+            },
+            {
+              "explain": "Multiply each term.",
+              "work": "\\(24-4x\\)"
+            },
+            {
+              "explain": "Keep the negative sign from -x.",
+              "work": "\\(4(6-x)=24-4x\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "4(6-x)",
+              "note": "Multiply the outside factor by every term inside."
+            }
+          ],
+          "options": [
+            "\\(24-4x\\)",
+            "\\(24-x\\)",
+            "\\(10-4x\\)",
+            "\\(24+4x\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q3fi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(-2ab\\times a^2c\\).",
+          "hint": "Multiply the coefficient and add exponents only for matching bases.",
+          "solution": "\\(-2a^3bc\\)",
+          "steps": [
+            {
+              "explain": "Multiply the numerical coefficients.",
+              "work": "\\(-2\\times1=-2\\)"
+            },
+            {
+              "explain": "Combine the a factors by adding their exponents.",
+              "work": "\\(a\\times a^2=a^3\\)"
+            },
+            {
+              "explain": "Keep b and c, each appearing once.",
+              "work": "\\(-2ab\\times a^2c=-2a^3bc\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "-2ab\\times a^2c",
+              "note": "Combine powers of a; do not change the distinct b and c factors."
+            }
+          ],
+          "options": [
+            "\\(-2a^3bc\\)",
+            "\\(-2a^2bc\\)",
+            "\\(-2a^3b^2c\\)",
+            "\\(2a^3bc\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((x+2)(x-3)\\).",
+          "hint": "Multiply each term in the first bracket by each term in the second bracket.",
+          "solution": "\\(x^2-x-6\\)",
+          "steps": [
+            {
+              "explain": "Expand using four products.",
+              "work": "\\(x(x-3)+2(x-3)\\)"
+            },
+            {
+              "explain": "Multiply each product.",
+              "work": "\\(x^2-3x+2x-6\\)"
+            },
+            {
+              "explain": "Collect the like terms.",
+              "work": "\\(x^2-x-6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "(x+2)(x-3)",
+              "note": "Each term in the first bracket multiplies each term in the second."
+            }
+          ],
+          "options": [
+            "\\(x^2+x-6\\)",
+            "\\(x^2-6\\)",
+            "\\(x^2-5x+6\\)",
+            "\\(x^2-x-6\\)"
+          ],
+          "answer": 3
         }
       ]
     },

@@ -2350,6 +2350,224 @@
           "answer": "See sub-questions for individual answers.",
           "hint": "Analyze divisibility by identifying multiples of 5, 15, and 10 within the first 50 numbers.",
           "solution": "See individual step-by-step solutions for each sub-question."
+        },
+        {
+          "id": "f2a22-y8-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let \\(A=\\{6,8,10,12\\}\\) and \\(B=\\{10,12,14,16\\}\\). List \\(A\\cap B\\).",
+          "hint": "The intersection contains only values that appear in both sets.",
+          "solution": "\\(\\{10,12\\}\\)",
+          "steps": [
+            {
+              "explain": "Compare members of A with B.",
+              "work": "\\(6,8\\notin B;\\quad10,12\\in B\\)"
+            },
+            {
+              "explain": "Keep only the shared members.",
+              "work": "\\(A\\cap B=\\{10,12\\}\\)"
+            },
+            {
+              "explain": "Exclude values found in only one set.",
+              "work": "\\(\\{10,12\\}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "A=",
+              "note": "Check each element of A against B."
+            },
+            {
+              "text": "B=",
+              "note": "Keep only the elements shared by both sets."
+            }
+          ],
+          "options": [
+            "\\(\\{6,8\\}\\)",
+            "\\(\\{10,12\\}\\)",
+            "\\(\\{6,8,10,12,14,16\\}\\)",
+            "\\(\\{10,12,14\\}\\)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "f2a22-y8-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is \\(|A\\cup B|\\) in the Venn diagram?",
+          "hint": "The union includes all distinct values inside either circle; do not count the overlap twice.",
+          "solution": "\\(|A\\cup B|=10\\)",
+          "steps": [
+            {
+              "explain": "List the values inside the two circles, counting the overlap once.",
+              "work": "\\(6,4,8,10,2,3,5,7,11,13\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"35\" width=\"310\" height=\"170\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"255\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"112\" y=\"95\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">6</text><text x=\"126\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">4</text><text x=\"108\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">8</text><text x=\"150\" y=\"165\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">10</text><text x=\"184\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">2</text><text x=\"214\" y=\"91\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">3</text><text x=\"252\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"225\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">7</text><text x=\"270\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">11</text><text x=\"267\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">13</text><text x=\"47\" y=\"180\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">15</text><text x=\"335\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">9</text></svg>"
+              }
+            },
+            {
+              "explain": "Count these distinct values.",
+              "work": "\\(10\\text{ elements}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"35\" width=\"310\" height=\"170\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"255\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"112\" y=\"95\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">6</text><text x=\"126\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">4</text><text x=\"108\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">8</text><text x=\"150\" y=\"165\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">10</text><text x=\"184\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">2</text><text x=\"214\" y=\"91\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">3</text><text x=\"252\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"225\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">7</text><text x=\"270\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">11</text><text x=\"267\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">13</text><text x=\"47\" y=\"180\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">15</text><text x=\"335\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">9</text></svg>"
+              }
+            },
+            {
+              "explain": "Exclude 15 and 9 because they lie outside both sets.",
+              "work": "\\(|A\\cup B|=10\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"35\" width=\"310\" height=\"170\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"255\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"112\" y=\"95\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">6</text><text x=\"126\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">4</text><text x=\"108\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">8</text><text x=\"150\" y=\"165\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">10</text><text x=\"184\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">2</text><text x=\"214\" y=\"91\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">3</text><text x=\"252\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"225\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">7</text><text x=\"270\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">11</text><text x=\"267\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#d97706\" font-weight=\"600\">13</text><text x=\"47\" y=\"180\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">15</text><text x=\"335\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">9</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"35\" width=\"310\" height=\"170\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"118\" r=\"62\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"120\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"255\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"112\" y=\"95\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">6</text><text x=\"126\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">4</text><text x=\"108\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">8</text><text x=\"150\" y=\"165\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">10</text><text x=\"184\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2</text><text x=\"214\" y=\"91\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">3</text><text x=\"252\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">5</text><text x=\"225\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">7</text><text x=\"270\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">11</text><text x=\"267\" y=\"151\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">13</text><text x=\"47\" y=\"180\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">15</text><text x=\"335\" y=\"90\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">9</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Venn diagram",
+              "note": "Union means every distinct element in either circle."
+            },
+            {
+              "text": "What is \\(|A\\cup B|\\) in the Venn diagram?",
+              "note": "The values outside both circles are not included."
+            }
+          ],
+          "options": [
+            "10",
+            "1",
+            "9",
+            "12"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q7ci",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "In a group of 21 students, 12 do not study History of Magic, 10 do not study Charms, and 5 study Charms only. Draw and complete a Venn diagram.",
+          "hint": "Use complements to find the total in each subject, then use the Charms-only count to fill the overlap.",
+          "solution": "Sample answer: Venn regions: History only = 3, both = 6, Charms only = 5, neither = 7.",
+          "steps": [
+            {
+              "explain": "If 12 of 21 do not study History, calculate how many study History.",
+              "work": "\\(|H|=21-12=9\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"#fef3c7\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+              }
+            },
+            {
+              "explain": "Five study Charms only. Since 10 do not study Charms, the remaining students are in History only or both.",
+              "work": "\\(|C|=21-10=11;\\quad|H\\cap C|=11-5=6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"#fef3c7\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text><text x=\"272\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"255\" y=\"68\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#b45309\" font-weight=\"600\">Total C = 11</text></svg>"
+              }
+            },
+            {
+              "explain": "History only is 9−6=3. Neither is 21−(3+6+5)=7. Fill the four regions.",
+              "work": "\\(H\\text{ only}=3,\\ H\\cap C=6,\\ C\\text{ only}=5,\\ \\text{neither}=7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"#fef3c7\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text><text x=\"272\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"255\" y=\"68\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#b45309\" font-weight=\"600\">Total C = 11</text><text x=\"106\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">3</text><text x=\"191\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">6</text><text x=\"272\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"75\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#d97706\" font-weight=\"600\">Neither = 7</text></svg>"
+              }
+            },
+            {
+              "explain": "Sample answer: the completed Venn diagram shows 3, 6, 5 in the circle regions and 7 outside both.",
+              "work": "\\(3+6+5+7=21\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"#fef3c7\" fill-opacity=\".25\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text><text x=\"272\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"255\" y=\"68\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#b45309\" font-weight=\"600\">Total C = 11</text><text x=\"106\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">3</text><text x=\"191\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">6</text><text x=\"272\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"16\" fill=\"#d97706\" font-weight=\"600\">5</text><text x=\"75\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#d97706\" font-weight=\"600\">Neither = 7</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "12 do not study History",
+              "note": "Subtract this number from 21 to find the History total."
+            },
+            {
+              "text": "10 do not study Charms",
+              "note": "Subtract from 21 to find the Charms total."
+            },
+            {
+              "text": "5 study Charms only",
+              "note": "Use this region to find the overlap after calculating total Charms."
+            }
+          ],
+          "manual": true,
+          "answer": "Sample answer: Venn regions: History only = 3, both = 6, Charms only = 5, neither = 7."
+        },
+        {
+          "id": "f2a22-y8-q7cii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the information in the Venn diagram question, how many students study both History of Magic and Charms?",
+          "hint": "First find the total number studying Charms: 21−10. Then subtract the 5 who study Charms only.",
+          "solution": "6 students",
+          "steps": [
+            {
+              "explain": "Find the total studying Charms.",
+              "work": "\\(|C|=21-10=11\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the Charms-only group.",
+              "work": "\\(|H\\cap C|=11-5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+              }
+            },
+            {
+              "explain": "The overlap is 6 students.",
+              "work": "\\(|H\\cap C|=6\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "Charms",
+              "note": "Use the complement to get the total studying Charms."
+            },
+            {
+              "text": "Using the information in the Venn diagram question, how many students study both History of Magic and Charms?",
+              "note": "Subtract this region from the Charms total to find the overlap."
+            }
+          ],
+          "options": [
+            "6",
+            "3",
+            "5",
+            "7"
+          ],
+          "answer": 0
         }
       ]
     },

@@ -1092,6 +1092,102 @@
               "note": "Calculate the same unit price for this pack, then compare the two."
             }
           ]
+        },
+        {
+          "id": "f2a22-y8-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Five tyres are used equally on a car that travels \\(20\\,000\\text{ km}\\). How far is driven on each tyre?",
+          "hint": "Share the total distance equally among all five tyres.",
+          "solution": "4000 km",
+          "steps": [
+            {
+              "explain": "Identify the total distance and number of equal shares.",
+              "work": "\\(20\\,000\\text{ km}\\div5\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(20\\,000\\div5=4000\\)"
+            },
+            {
+              "explain": "Attach the distance unit.",
+              "work": "\\(4000\\text{ km per tyre}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "Five tyres",
+              "note": "The total distance is shared equally among five tyres."
+            }
+          ],
+          "options": [
+            "\\(5000\\text{ km}\\)",
+            "\\(16\\,000\\text{ km}\\)",
+            "\\(4000\\text{ km}\\)",
+            "\\(20\\,000\\text{ km}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "f2a22-y8-q8ai",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a right-angled course, \\(AB:BC=3:4\\). If Peta takes 16 minutes to run from B to C at constant speed, how long does she take from A to B?",
+          "hint": "The route lengths are in ratio 3:4, and constant speed makes travel times use the same ratio.",
+          "solution": "12 minutes",
+          "steps": [
+            {
+              "explain": "Match the times to the distance ratio AB:BC.",
+              "work": "\\(t_{AB}:t_{BC}=3:4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the known 16-minute time for the 4 parts.",
+              "work": "\\(1\\text{ part}=16\\div4=4\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "AB is 3 parts.",
+              "work": "\\(t_{AB}=3\\times4=12\\text{ min}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AC</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "AB:BC=3:4",
+              "note": "With the same running speed, the time ratio equals the distance ratio."
+            },
+            {
+              "text": "16 minutes",
+              "note": "This is the time for the 4-part side BC."
+            }
+          ],
+          "options": [
+            "16 min",
+            "12 min",
+            "21 min",
+            "\\(\\frac{64}{3}\\) min"
+          ],
+          "answer": 1
         }
       ]
     },
@@ -1673,6 +1769,263 @@
               "note": "Finish the return at home (0 km) at 5 pm and join the journey sections in order."
             }
           ]
+        },
+        {
+          "id": "f2a22-y8-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simon runs 100 m in 18 seconds at 60% of his maximum speed. If this is correct, how long would 100 m take at maximum speed?",
+          "hint": "At 60% of maximum speed the time is longer. Divide 18 seconds by 0.60 to get the maximum-speed time.",
+          "solution": "10.8 seconds",
+          "steps": [
+            {
+              "explain": "For the same 100 m distance, time and speed vary inversely.",
+              "work": "\\(t_{60\\%}=\\frac{t_{max}}{0.60}\\)"
+            },
+            {
+              "explain": "Rearrange to find maximum-speed time.",
+              "work": "\\(t_{max}=18\\times0.60\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(t_{max}=10.8\\text{ s}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "60% of his maximum speed",
+              "note": "When speed is a fraction of the maximum, the time for the same distance scales inversely."
+            }
+          ],
+          "options": [
+            "\\(30\\text{ s}\\)",
+            "\\(7.2\\text{ s}\\)",
+            "\\(12\\text{ s}\\)",
+            "\\(10.8\\text{ s}\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q8aiii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Peta runs the course at \\(5\\) minutes \\(20\\) seconds per kilometre. The route has \\(AB:BC=3:4\\) and takes 16 minutes from B to C. Find the total course length.",
+          "hint": "Convert 5 min 20 s to 320 s per km. Use the 16-minute BC time, the 3:4:5 triangle, and add all three sides.",
+          "solution": "9 km",
+          "steps": [
+            {
+              "explain": "Convert the pace and find BC.",
+              "work": "\\(5\\text{ min }20\\text{ s}=320\\text{ s/km};\\quad16\\text{ min}=960\\text{ s};\\quad BC=960\\div320=3\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "BC is 4 ratio parts, so one part is 3/4 km. Then find AB and AC.",
+              "work": "\\(1\\text{ part}=\\frac34\\text{ km};\\quad AB=\\frac94=2.25\\text{ km};\\quad AC=\\frac{15}{4}=3.75\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the three sides of the course.",
+              "work": "\\(2.25+3+3.75=9\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\" font-weight=\"600\">AC</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M85 50 L85 190 L295 190 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M85 171 L104 171 L104 190\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"66\" y=\"115\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"70\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"306\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"68\" y=\"135\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AB</text><text x=\"188\" y=\"210\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">BC</text><text x=\"208\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\" font-weight=\"600\">AC</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "course length",
+              "note": "Convert the pace to one unit of time before finding distance."
+            },
+            {
+              "text": "16 minutes",
+              "note": "Convert to seconds and use distance = time ÷ pace."
+            }
+          ],
+          "options": [
+            "\\(7.5\\text{ km}\\)",
+            "\\(12\\text{ km}\\)",
+            "\\(3.75\\text{ km}\\)",
+            "\\(9\\text{ km}\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q8c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two torpedoes 500 km apart travel directly toward each other at 500 km/h and 300 km/h. How far does the slower torpedo travel before they collide?",
+          "hint": "Their closing speed is the sum of their speeds. Find collision time, then use the slower speed.",
+          "solution": "187.5 km",
+          "steps": [
+            {
+              "explain": "Add the speeds because the torpedoes move toward each other.",
+              "work": "\\(v_{close}=500+300=800\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Find the time until the 500 km gap closes.",
+              "work": "\\(t=500\\div800=\\frac58\\text{ h}\\)"
+            },
+            {
+              "explain": "Use the slower torpedo’s speed and this time.",
+              "work": "\\(d=300\\times\\frac58=187.5\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "toward each other",
+              "note": "Add their speeds to find how quickly the gap closes."
+            },
+            {
+              "text": "slower torpedo",
+              "note": "Use 300 km/h after finding the shared travel time."
+            }
+          ],
+          "options": [
+            "\\(187.5\\text{ km}\\)",
+            "\\(300\\text{ km}\\)",
+            "\\(312.5\\text{ km}\\)",
+            "\\(125\\text{ km}\\)"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "f2a22-y8-q10ci",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bicycle has a 50–20 gear ratio and wheel radius \\(40\\text{ cm}\\). How many metres does it travel in one full pedal stroke? Give your answer in terms of \\(\\pi\\).",
+          "hint": "One pedal stroke turns the 50-tooth front gear once, so the wheel turns 50/20 times. Multiply by wheel circumference.",
+          "solution": "\\(2\\pi\\text{ m}\\)",
+          "steps": [
+            {
+              "explain": "Find the wheel circumference.",
+              "work": "\\(C=2\\pi r=2\\pi(40)=80\\pi\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "The gear ratio makes the rear wheel rotate 50/20=2.5 times per pedal stroke.",
+              "work": "\\(\\frac{50}{20}=\\frac52\\text{ wheel turns}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the distance and convert centimetres to metres.",
+              "work": "\\(\\frac52(80\\pi)=200\\pi\\text{ cm}=2\\pi\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "50–20 gear ratio",
+              "note": "The rear wheel makes 50/20 turns for each pedal stroke."
+            },
+            {
+              "text": "wheel radius \\(40\\text{ cm}\\)",
+              "note": "Use circumference 2πr for one wheel turn."
+            }
+          ],
+          "options": [
+            "\\(4\\pi\\text{ m}\\)",
+            "\\(\\pi\\text{ m}\\)",
+            "\\(2\\pi\\text{ m}\\)",
+            "\\(\\frac{5\\pi}{2}\\text{ m}\\)"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "f2a22-y8-q10cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cyclist rides the same distance uphill and downhill. Uphill she uses a 30–20 gear at c pedal revolutions per minute; downhill she uses a 50–20 gear at \\(\\frac95c\\) pedal revolutions per minute. Her average speed for the whole race is 18 km/h. Find her uphill speed.",
+          "hint": "Compare wheel rotation rates for the two gears, then use total distance divided by total time for equal-distance legs.",
+          "solution": "12 km/h",
+          "steps": [
+            {
+              "explain": "Uphill wheel turns per minute are (30/20)c. Downhill they are (50/20)(9c/5). Their ratio is 1:3, so downhill speed is three times uphill speed.",
+              "work": "\\(v_d=3v_u\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Let each leg have distance d. Write total time using the two speeds.",
+              "work": "\\(t=\\frac d{v_u}+\\frac d{3v_u}=\\frac{4d}{3v_u}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Average speed is total distance 2d divided by total time. Set this equal to 18.",
+              "work": "\\(18=\\frac{2d}{4d/(3v_u)}=\\frac32v_u\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Solve for the uphill speed.",
+              "work": "\\(v_u=18\\times\\frac23=12\\text{ km/h}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><circle cx=\"190\" cy=\"120\" r=\"72\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"262\" y2=\"120\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\" stroke=\"#334155\" stroke-width=\"1\"/><text x=\"190\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"225\" y=\"108\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">r</text><text x=\"276\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">2 cm</text></svg>"
+              }
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "same distance uphill and downhill",
+              "note": "Average speed is total distance divided by total time; do not average the two speeds directly."
+            },
+            {
+              "text": "30–20 gear",
+              "note": "Compute the wheel turns per pedal revolution."
+            },
+            {
+              "text": "50–20 gear",
+              "note": "Combine the gear ratio with the downhill pedal rate."
+            }
+          ],
+          "options": [
+            "\\(6\\text{ km/h}\\)",
+            "\\(9\\text{ km/h}\\)",
+            "\\(15\\text{ km/h}\\)",
+            "\\(12\\text{ km/h}\\)"
+          ],
+          "answer": 3
         }
       ]
     },
@@ -1992,6 +2345,126 @@
               "note": "Convert metres to centimetres before simplifying the scale ratio."
             }
           ]
+        },
+        {
+          "id": "f2a22-y8-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the ratio \\(12:15\\).",
+          "hint": "Divide both parts by their greatest common factor.",
+          "solution": "4:5",
+          "steps": [
+            {
+              "explain": "Find the greatest common factor.",
+              "work": "\\(\\operatorname{HCF}(12,15)=3\\)"
+            },
+            {
+              "explain": "Divide both terms by 3.",
+              "work": "\\(12\\div3:15\\div3=4:5\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(4:5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "12:15",
+              "note": "Divide both quantities by the same factor to keep the ratio equivalent."
+            }
+          ],
+          "options": [
+            "\\(5:4\\)",
+            "\\(12:5\\)",
+            "\\(3:5\\)",
+            "\\(4:5\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sachin mixes \\(2.5\\text{ g}\\) of salt with \\(100\\text{ g}\\) of flour. What is the simplified ratio of salt to flour?",
+          "hint": "Write the quantities salt:flour, remove the decimal, then simplify.",
+          "solution": "1:40",
+          "steps": [
+            {
+              "explain": "Write the ratio in the requested order.",
+              "work": "\\(2.5:100\\)"
+            },
+            {
+              "explain": "Multiply both parts by 2 to make whole numbers.",
+              "work": "\\(5:200\\)"
+            },
+            {
+              "explain": "Divide each term by 5.",
+              "work": "\\(5:200=1:40\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "salt to flour",
+              "note": "Keep the named order: salt is the first quantity."
+            }
+          ],
+          "options": [
+            "\\(1:4\\)",
+            "\\(40:1\\)",
+            "\\(2.5:10\\)",
+            "\\(1:40\\)"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "f2a22-y8-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Green and brown bricks are used in the ratio \\(1:2\\). What fraction of all bricks are green?",
+          "hint": "Add the ratio parts to find the total number of equal parts.",
+          "solution": "\\(\\frac13\\)",
+          "steps": [
+            {
+              "explain": "There is 1 green part and 2 brown parts.",
+              "work": "\\(\\text{total parts}=1+2=3\\)"
+            },
+            {
+              "explain": "Green accounts for one of those three parts.",
+              "work": "\\(\\frac{\\text{green}}{\\text{total}}=\\frac13\\)"
+            },
+            {
+              "explain": "State the fraction.",
+              "work": "\\(\\frac13\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Form II Annual Examination 2022"
+          },
+          "keyPoints": [
+            {
+              "text": "ratio",
+              "note": "The total number of ratio parts is 1+2."
+            }
+          ],
+          "options": [
+            "\\(\\frac12\\)",
+            "\\(\\frac13\\)",
+            "\\(\\frac23\\)",
+            "\\(\\frac15\\)"
+          ],
+          "answer": 1
         }
       ]
     },
