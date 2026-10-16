@@ -20,6 +20,7 @@ import TopicPracticeSession from './TopicPracticeSession';
 import PdfViewer from './PdfViewer';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import { useCurriculumNote } from '../utils/useCurriculumNote';
+import { noteKeyForTopic } from '../utils/curriculumLocalNotes';
 import { loadLastStudy, saveLastStudy, shortChapterLabel, peekContinueStudy, consumeContinueStudy } from '../utils/lastStudy';
 import './learning-path.css';
 import { useSplitLayout } from '../utils/useSplitLayout';
@@ -92,7 +93,7 @@ const LearningPath = ({ profile }) => {
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
 
   // This topic's notes on the pad: loaded when the topic opens, saved under that topic's key only (see useCurriculumNote).
-  const { ready: curriculumNoteReady, unsaved: curriculumNoteUnsaved, saveNow: saveCurriculumNoteNow, onInkChange: handleCurriculumInkChange } = useCurriculumNote(curriculumCanvasRef, curriculumNoteKey, isTablet);
+  const { ready: curriculumNoteReady, unsaved: curriculumNoteUnsaved, saveNow: saveCurriculumNoteNow, onInkChange: handleCurriculumInkChange } = useCurriculumNote(curriculumCanvasRef, curriculumNoteKey, isTablet, pdfPreview?.topicId);
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -313,7 +314,8 @@ const LearningPath = ({ profile }) => {
       url,
       openUrl: toDriveOpenUrl(raw),
       title: `${topic.code ? `${topic.code} · ` : ''}${topic.title || ''}`,
-      noteKey: `${trackKey}:${topic.id}:${raw}`,
+      // One note per topic: not tied to the track or the worksheet link, which can change (see curriculumLocalNotes).
+      noteKey: noteKeyForTopic(topic.id),
       trackKey,
       topicId: topic.id,
     });

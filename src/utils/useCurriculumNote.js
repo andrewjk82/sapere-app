@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { loadCurriculumNoteChecked, saveCurriculumNote } from './curriculumLocalNotes';
+import { loadCurriculumNoteChecked, loadLegacyCurriculumNote, saveCurriculumNote } from './curriculumLocalNotes';
 import { requestPersistentStorage } from './homeworkLocalStore';
 
 // The curriculum worksheet's personal notes: one notepad, one saved note per topic (`noteKey`), kept on this device.
@@ -8,7 +8,7 @@ import { requestPersistentStorage } from './homeworkLocalStore';
 // notes are on the pad right now** (`ownerRef`, set when that note finished loading). Switching topics
 // first clears the pad and drops ownership, so the previous topic's ink can never be saved under the next
 // topic's key, and a failed read can never be mistaken for "empty" and overwritten.
-export const useCurriculumNote = (canvasRef, noteKey, enabled) => {
+export const useCurriculumNote = (canvasRef, noteKey, enabled, topicId = null) => {
   const ownerRef = useRef(null);       // key whose notes are on the pad; null while loading / unavailable
   const timerRef = useRef(0);
   const [ready, setReady] = useState(false);
@@ -27,8 +27,18 @@ export const useCurriculumNote = (canvasRef, noteKey, enabled) => {
       if (!result.ok && !cancelled) result = await loadCurriculumNoteChecked(noteKey); // one retry
       if (cancelled) return;
       if (result.ok) {
-        if (result.data) canvasRef.current?.loadPagesData(result.data);
+        let pages = result.data;
+        let recovered = false;
+        if (!pages && topicId) {
+          // Nothing under the current key: pick up a note saved under an older key for this topic (see
+          // curriculumLocalNotes). It is copied under the current key; the old record stays as it is.
+          const legacy = await loadLegacyCurriculumNote(topicId);
+          if (cancelled) return;
+          if (legacy) { pages = legacy.pages; recovered = true; }
+        }
+        if (pages) canvasRef.current?.loadPagesData(pages);
         ownerRef.current = noteKey;     // from here on edits are saved under this key
+        if (recovered) saveCurriculumNote(noteKey, pages);
       } else {
         setUnsaved(true);                // read failed twice: notes work for this visit but are not saved (the stored note stays intact)
       }
@@ -40,7 +50,7 @@ export const useCurriculumNote = (canvasRef, noteKey, enabled) => {
       setReady(false);
       setUnsaved(false);
     };
-  }, [noteKey, enabled, canvasRef]);
+  }, [noteKey, enabled, canvasRef, topicId]);
 
   // Save now (before switching topic / closing). Writes only the notes the pad actually holds for their owner.
   const saveNow = useCallback(() => {
