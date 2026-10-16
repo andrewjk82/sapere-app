@@ -15,6 +15,7 @@ import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 const StudySessionScreen = ({
   subject, color, elapsedLabel, phase, stage, items, onItemsChange,
   onPause, onResume, onRequestEnd, onBackToStudy, onSave, onFinish, finishing,
+  modal = false, zIndex = 1000, backLabel = 'Keep studying', hideControls = false,
 }) => {
   const inputRefs = useRef([]);
   const focusIdxRef = useRef(null);
@@ -41,11 +42,20 @@ const StudySessionScreen = ({
   const doneCount = items.filter((it) => it.done && it.text.trim()).length;
   const filledCount = items.filter((it) => it.text.trim()).length;
 
+  // `modal`: the same plan / review content as a card over a dimmed backdrop (used from the homework and
+  // worksheet screens, where the page behind must stay visible); otherwise the full-screen view.
+  const frame = modal
+    ? { position: 'fixed', inset: 0, zIndex, background: 'rgba(15,23,42,0.55)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }
+    : { position: 'fixed', inset: 0, zIndex, background: '#f8f7fc', display: 'flex', flexDirection: 'column' };
+  const card = modal
+    ? { width: 'min(680px, 100%)', height: 'min(92vh, 760px)', background: '#f8f7fc', borderRadius: 22, overflow: 'hidden', display: 'flex', flexDirection: 'column', boxShadow: '0 24px 60px rgba(15,23,42,0.4)' }
+    : { flex: 1, minHeight: 0, display: 'flex', flexDirection: 'column' };
   return (
     <motion.div
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
-      style={{ position: 'fixed', inset: 0, zIndex: 1000, background: '#f8f7fc', display: 'flex', flexDirection: 'column' }}
+      style={frame}
     >
+      <div style={card} role={modal ? 'dialog' : undefined} aria-modal={modal ? 'true' : undefined} aria-label={modal ? (isReview ? 'What did you finish?' : "Today's study plan") : undefined}>
       {/* Thin timer bar */}
       <div style={{
         flexShrink: 0, display: 'flex', alignItems: 'center', gap: 10, padding: '8px 14px',
@@ -59,12 +69,12 @@ const StudySessionScreen = ({
         <span style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: '1.15rem', color: '#1e1b4b', fontVariantNumeric: 'tabular-nums', marginLeft: 'auto' }}>
           {elapsedLabel}{phase === 'paused' ? <span style={{ fontSize: '0.7rem', color: '#f59e0b', marginLeft: 6 }}>PAUSED</span> : null}
         </span>
-        {!isReview && (phase === 'running' ? (
+        {!isReview && !hideControls && (phase === 'running' ? (
           <button type="button" onClick={onPause} aria-label="Pause" style={iconBtn('#f59e0b')}><Pause size={15} fill="#fff" /></button>
         ) : (
           <button type="button" onClick={onResume} aria-label="Resume" style={iconBtn('#22c55e')}><Play size={15} fill="#fff" /></button>
         ))}
-        {!isReview && (
+        {!isReview && !hideControls && (
           <button type="button" onClick={onRequestEnd} style={{ ...iconBtn('#ef4444'), width: 'auto', padding: '0 12px', gap: 6, fontWeight: 800, fontSize: '0.78rem' }}>
             <Square size={12} fill="#fff" /> End
           </button>
@@ -143,7 +153,7 @@ const StudySessionScreen = ({
               <div style={{ display: 'flex', gap: 10, marginTop: 18, flexWrap: 'wrap' }}>
                 <button type="button" onClick={onBackToStudy} disabled={finishing}
                   style={{ ...pillBtn('#fff'), color: '#475569', border: '1px solid #e2e8f0', boxShadow: 'none' }}>
-                  <ArrowLeft size={16} /> Keep studying
+                  <ArrowLeft size={16} /> {backLabel}
                 </button>
                 <button type="button" onClick={onFinish} disabled={finishing} style={{ ...pillBtn('#ef4444'), opacity: finishing ? 0.6 : 1 }}>
                   <Square size={14} fill="#fff" /> {finishing ? 'Saving…' : 'Finish session'}
@@ -152,6 +162,7 @@ const StudySessionScreen = ({
             </>
           )}
         </div>
+      </div>
       </div>
     </motion.div>
   );

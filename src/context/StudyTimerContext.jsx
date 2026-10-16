@@ -9,6 +9,7 @@ import { buildAvatarUrl } from '../utils/avatarUtils';
 import { nowMs, splitSecondsIntoHourBuckets } from '../utils/timeUtils';
 import { studySubjectsFor } from '../utils/studySubjects';
 import { StudyTimerContext, StudyTimerClockContext } from './studyTimerStore';
+import { emptyItems, loadNotesDraft, saveNotesDraft, clearNotesDraft, saveSessionNotes } from '../services/studyNotesService';
 
 /**
  * The study-timer session for the whole app. It used to live inside the Study Timer page, so leaving
@@ -49,6 +50,17 @@ const StudyTimerEngine = ({ uid, children }) => {
   // 'screen' = started from a homework / worksheet screen: that screen stops the timer (saving the time so
   // far) when it closes. null = started from the Study Planner: runs until the student stops it there.
   const [origin, setOriginState] = useState(null);
+  // The plan / review checklist for a screen-owned session (homework / worksheet), shown as a modal by
+  // StudyTimerSessionModal: stage null | 'plan' | 'review', its items, and a save in progress.
+  const [sessionStage, setSessionStage] = useState(null);
+  const [sessionItems, setSessionItemsState] = useState(() => emptyItems());
+  const [finishing, setFinishing] = useState(false);
+  // The app was closed in the middle of a screen-owned session: its time was credited on reopen, and the
+  // checklist is offered once more here — { subject, durationSec, items }.
+  const [pendingReview, setPendingReview] = useState(null);
+  const sessionStageRef = useRef(null);
+  const sessionItemsRef = useRef(emptyItems());
+  const finishingRef = useRef(false);
   const [starting, setStarting] = useState(false);          // Start pressed, not yet running (shows feedback, blocks double taps)
   const startingRef = useRef(false);
   const originRef = useRef(null);
@@ -102,7 +114,7 @@ const StudyTimerEngine = ({ uid, children }) => {
           window.localStorage.removeItem(key);
         } else {
           window.localStorage.setItem(key, JSON.stringify({
-            subject: nextSubject, phase: nextPhase,
+            subject: nextSubject, phase: nextPhase, origin: originRef.current,
             runningSince: runningSinceRef.current, bankedSec: bankedSecRef.current,
           }));
         }
@@ -149,6 +161,8 @@ const StudyTimerEngine = ({ uid, children }) => {
       setPhase('stopped');
       setElapsedSec(0);
       setOrigin(null);
+      sessionStageRef.current = null;
+      setSessionStage(null);
       persistLocal(subjectRef.current, 'stopped');
     };
 
@@ -237,7 +251,85 @@ const StudyTimerEngine = ({ uid, children }) => {
       }
     };
 
-    return { currentTotalSec, flushDelta, resetSession, recordFlush, start, resume, pause, stop, changeSubject };
+    // ── Plan / review checklist (screen-owned sessions) ─────────────────────────────────────────────
+    // Same checklist as the Study Planner: kept as a draft in localStorage while it is written, saved to
+    // Firestore once, at Finish (studyNotesService).
+    const restorableDraft = (draft, forSubject) => (
+      draft?.subject === forSubject
+      && Array.isArray(draft.items) && draft.items.length
+      && Number(draft.savedAt) > nowMs() - RESUME_CAP_SEC * 1000
+        ? draft.items : null
+    );
+    const setSessionItems = (next) => { sessionItemsRef.current = next; setSessionItemsState(next); };
+    const openSessionUi = (stage) => {
+      const { uid: id } = ctxRef.current;
+      if (sessionStageRef.current === null && id) {
+        setSessionItems(restorableDraft(loadNotesDraft(id), subjectRef.current) || emptyItems());
+      }
+      sessionStageRef.current = stage;
+      setSessionStage(stage);
+    };
+    const closeSessionUi = () => { sessionStageRef.current = null; setSessionStage(null); };
+    const updateSessionItems = (next) => {
+      const { uid: id } = ctxRef.current;
+      setSessionItems(next);
+      if (id) saveNotesDraft(id, { subject: subjectRef.current, items: next, savedAt: nowMs() });
+    };
+    const finishSession = async () => {
+      const { uid: id } = ctxRef.current;
+      if (finishingRef.current || !id) return;
+      finishingRef.current = true;
+      setFinishing(true);
+      const durationSec = currentTotalSec();
+      const items = sessionItemsRef.current;
+      const sessionSubject = subjectRef.current;
+      try {
+        await stop();
+        await saveSessionNotes({ uid: id, subject: sessionSubject, items, durationSec, dateStr: todayStr() });
+      } catch (e) {
+        console.warn('[studytime] notes save failed:', e?.code || e);
+        window.alert(`Could not save your notes (${e?.code || 'error'}). Please try again later.`);
+      } finally {
+        clearNotesDraft(id);   // session is over either way — next one starts blank
+        closeSessionUi();
+        finishingRef.current = false;
+        setFinishing(false);
+        setSessionItems(emptyItems());
+      }
+    };
+    // The review shown after the app was closed mid-session (its time is already credited).
+    const finishPendingReview = async (pending) => {
+      const { uid: id } = ctxRef.current;
+      if (!id || finishingRef.current) return;
+      finishingRef.current = true;
+      setFinishing(true);
+      try {
+        await saveSessionNotes({ uid: id, subject: pending.subject, items: pending.items, durationSec: pending.durationSec, dateStr: todayStr() });
+      } catch (e) {
+        console.warn('[studytime] notes save failed:', e?.code || e);
+        window.alert(`Could not save your notes (${e?.code || 'error'}). Please try again later.`);
+      } finally {
+        clearNotesDraft(id);
+        setPendingReview(null);
+        finishingRef.current = false;
+        setFinishing(false);
+      }
+    };
+    const updatePendingItems = (pending, items) => {
+      const { uid: id } = ctxRef.current;
+      setPendingReview({ ...pending, items });
+      if (id) saveNotesDraft(id, { subject: pending.subject, items, savedAt: nowMs() });
+    };
+    const dismissPendingReview = () => {
+      const { uid: id } = ctxRef.current;
+      if (id) clearNotesDraft(id);
+      setPendingReview(null);
+    };
+
+    return {
+      currentTotalSec, flushDelta, resetSession, recordFlush, start, resume, pause, stop, changeSubject,
+      openSessionUi, closeSessionUi, updateSessionItems, finishSession, finishPendingReview, updatePendingItems, dismissPendingReview,
+    };
   }, []);
   const { currentTotalSec, flushDelta, recordFlush } = engine;
 
@@ -273,6 +365,12 @@ const StudyTimerEngine = ({ uid, children }) => {
           myTotalSecRef.current = totalSec;
           recordFlush({ totalSec, subject: savedSubject, dateStr: resumeDateStr, deltaSec: staleTotalSec, hourBreakdown });
         }).catch(() => {});
+        // A session a homework / worksheet screen owned, closed with the app: ask once more what got done.
+        if (saved?.origin === 'screen') {
+          const draft = loadNotesDraft(uid);
+          const items = draft?.subject === savedSubject && Array.isArray(draft.items) && draft.items.some((it) => it?.text?.trim()) ? draft.items : null;
+          if (items) setPendingReview({ subject: savedSubject, durationSec: staleTotalSec, items });
+        }
       }
     } catch { /* ignore */ }
   }, [uid, profile, sessionKey, subjects, avatarUrl, recordFlush]);
@@ -351,8 +449,12 @@ const StudyTimerEngine = ({ uid, children }) => {
 
   const value = useMemo(() => ({
     uid, subjects, subject, phase, origin, starting, lastFlush, myTotalSec, currentTotalSec,
+    sessionStage, sessionItems, finishing, pendingReview,
+    openSessionUi: engine.openSessionUi, closeSessionUi: engine.closeSessionUi, updateSessionItems: engine.updateSessionItems,
+    finishSession: engine.finishSession, finishPendingReview: engine.finishPendingReview,
+    updatePendingItems: engine.updatePendingItems, dismissPendingReview: engine.dismissPendingReview,
     start: engine.start, resume: engine.resume, pause: engine.pause, stop: engine.stop, changeSubject: engine.changeSubject,
-  }), [uid, subjects, subject, phase, origin, starting, lastFlush, myTotalSec, currentTotalSec, engine]);
+  }), [uid, subjects, subject, phase, origin, starting, lastFlush, myTotalSec, currentTotalSec, sessionStage, sessionItems, finishing, pendingReview, engine]);
 
   return (
     <StudyTimerContext.Provider value={value}>

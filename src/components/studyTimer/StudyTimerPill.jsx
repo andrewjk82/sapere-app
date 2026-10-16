@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { ChevronDown, Check, GripVertical, Pause, Play, Timer } from 'lucide-react';
+import { ChevronDown, Check, GripVertical, Pause, Play, Square, Timer } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useProfile } from '../../context/ProfileContext';
 import { useStudyTimer, useStudyTimerClock, formatElapsed } from '../../context/studyTimerStore';
@@ -95,6 +95,7 @@ export const StudyTimerPill = () => {
 
   if (!visible) return null;
   const running = timer.phase === 'running';
+  const screenOwned = timer.origin === 'screen';
   const color = subjectColor(profile, timer.subject);
   const menuAbove = px.top + size.h / 2 > viewport.h / 2;
 
@@ -138,14 +139,31 @@ export const StudyTimerPill = () => {
         <ChevronDown size={13} aria-hidden="true" />
       </button>
       <span style={{ fontVariantNumeric: 'tabular-nums', minWidth: 42 }}>{running ? formatElapsed(elapsed) : 'Paused'}</span>
-      <button
-        type="button"
-        onClick={running ? timer.pause : timer.resume}
-        aria-label={running ? 'Pause study timer' : 'Resume study timer'}
-        style={{ width: 30, height: 30, borderRadius: '50%', border: 0, display: 'grid', placeItems: 'center', cursor: 'pointer', background: running ? '#f59e0b' : '#22c55e', color: '#fff', flexShrink: 0 }}
-      >
-        {running ? <Pause size={14} fill="#fff" /> : <Play size={14} fill="#fff" />}
-      </button>
+      {/* A timer a homework / worksheet screen started ends with a review (its Stop button); one started on
+          the Study Planner keeps pause / resume and is ended there. */}
+      {screenOwned ? (
+        <>
+          {!running && (
+            <button type="button" onClick={timer.resume} aria-label="Resume study timer"
+              style={{ width: 30, height: 30, borderRadius: '50%', border: 0, display: 'grid', placeItems: 'center', cursor: 'pointer', background: '#22c55e', color: '#fff', flexShrink: 0 }}>
+              <Play size={14} fill="#fff" />
+            </button>
+          )}
+          <button type="button" onClick={() => timer.openSessionUi('review')} aria-label="Stop study timer" title="Stop and review"
+            style={{ width: 30, height: 30, borderRadius: '50%', border: 0, display: 'grid', placeItems: 'center', cursor: 'pointer', background: '#ef4444', color: '#fff', flexShrink: 0 }}>
+            <Square size={12} fill="#fff" />
+          </button>
+        </>
+      ) : (
+        <button
+          type="button"
+          onClick={running ? timer.pause : timer.resume}
+          aria-label={running ? 'Pause study timer' : 'Resume study timer'}
+          style={{ width: 30, height: 30, borderRadius: '50%', border: 0, display: 'grid', placeItems: 'center', cursor: 'pointer', background: running ? '#f59e0b' : '#22c55e', color: '#fff', flexShrink: 0 }}
+        >
+          {running ? <Pause size={14} fill="#fff" /> : <Play size={14} fill="#fff" />}
+        </button>
+      )}
 
       {menuOpen && (
         <div
@@ -193,9 +211,10 @@ export const StudyTimerPill = () => {
  * away (no plan / focus screen); the subject can be changed on the timer afterwards. Hidden while a
  * session is open — the pill shows it then.
  *
- * The timer started here belongs to the screen the button sits on: when that screen closes (homework
- * closed, worksheet closed, another tab opened) the timer stops and the time so far is saved. A timer
- * started on the Study Planner is not touched.
+ * Starting opens the Study Planner's "today's plan" checklist as a modal. The timer belongs to the screen the
+ * button sits on: when that screen closes (homework closed, worksheet closed, another tab opened) the
+ * "what did you finish?" review opens, and Finish session saves the time and stops. A timer started on the
+ * Study Planner is not touched.
  */
 export const StudyTimerStartButton = ({ compact = false }) => {
   const timer = useStudyTimer();
@@ -204,17 +223,18 @@ export const StudyTimerStartButton = ({ compact = false }) => {
   const timerRef = useRef(timer);
   useEffect(() => { timerRef.current = timer; });
   useEffect(() => () => {
+    // Leaving the screen (closed, or another tab opened) asks what got done; Finish there saves and stops.
     const t = timerRef.current;
-    if (t && t.origin === 'screen' && t.phase !== 'stopped') t.stop();
+    if (t && t.origin === 'screen' && t.phase !== 'stopped') t.openSessionUi('review');
   }, []);
   if (!timer?.uid || timer.phase !== 'stopped' || isAdmin) return null;
   const subject = mathsSubjectFor(profile, timer.subjects);
   return (
     <button
       type="button"
-      onClick={() => timer.start(subject, { origin: 'screen' })}
+      onClick={async () => { if (await timer.start(subject, { origin: 'screen' })) timer.openSessionUi('plan'); }}
       disabled={timer.starting}
-      title={`Start the study timer for ${normalizeSubjectLabel(subject)}. It stops when you leave this screen.`}
+      title={`Start the study timer for ${normalizeSubjectLabel(subject)}. Leaving this screen asks what you finished.`}
       style={{
         display: 'inline-flex', alignItems: 'center', gap: 5, padding: compact ? '7px 9px' : '7px 12px', borderRadius: 10,
         border: '1px solid #c7d2fe', background: '#eef2ff', color: '#4338ca', fontWeight: 800, fontSize: '0.78rem',
