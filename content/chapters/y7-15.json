@@ -1394,36 +1394,46 @@
         },
         {
           "id": "sgi-y7-2017-q6b",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Show that \\(x=4\\) is a solution of \\(3x^2=10x+8\\).",
-          "answer": "Sample answer: substituting x = 4 gives LHS = 48 and RHS = 48, so both sides are equal and x = 4 is a solution.",
-          "manual": true,
-          "hint": "Substitute x = 4 into both sides and check that the results are equal.",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What are the solutions of the equation \\(3x^2=10x+8\\)?",
+          "options": [
+            "\\(x=-4,\\;x=\\frac{2}{3}\\)",
+            "\\(x=4,\\;x=-\\frac{2}{3}\\)",
+            "\\(x=-2,\\;x=\\frac{4}{3}\\)",
+            "\\(x=2,\\;x=-\\frac{4}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Move all terms to one side to make a quadratic equal to zero, then factor it into two brackets.",
           "keyPoints": [
             {
               "text": "\\(3x^2=10x+8\\)",
-              "note": "Substitute 4 for x on both sides."
+              "note": "Bring the terms on the right to the left so the equation equals zero."
             },
             {
-              "text": "\\(x=4\\)",
-              "note": "Check that the value makes both sides equal."
+              "text": "solutions",
+              "note": "A factored quadratic gives two values: make each bracket equal to zero."
             }
           ],
           "steps": [
             {
-              "explain": "Evaluate the left-hand side.",
-              "work": "\\(3(4)^2=3\\times16=48\\)"
+              "explain": "Move every term to the left side.",
+              "work": "\\(3x^2-10x-8=0\\)"
             },
             {
-              "explain": "Evaluate the right-hand side.",
-              "work": "\\(10(4)+8=40+8=48\\)"
+              "explain": "Factor the quadratic.",
+              "work": "\\(3x^2-10x-8=(3x+2)(x-4)\\), so \\((3x+2)(x-4)=0\\)."
             },
             {
-              "explain": "Compare both sides.",
-              "work": "\\(48=48\\text{, so }x=4\\text{ is a solution.}\\)"
+              "explain": "Set each factor equal to zero and solve.",
+              "work": "\\(3x+2=0\\Rightarrow x=-\\frac{2}{3}\\), or \\(x-4=0\\Rightarrow x=4\\)."
+            },
+            {
+              "explain": "State both solutions.",
+              "work": "\\(x=4\\) or \\(x=-\\frac{2}{3}\\)."
             }
           ],
+          "solution": "\\(x=4\\) or \\(x=-\\frac{2}{3}\\)",
           "timeLimit": 60,
           "xp": 1,
           "meta": {
