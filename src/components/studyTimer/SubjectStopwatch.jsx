@@ -164,8 +164,8 @@ const SubjectStopwatch = ({ uid, subjectColors = {}, onSetSubjectColor, onAddSub
 
         <div style={{ display: 'flex', gap: 12 }}>
           {!isRunning ? (
-            <button type="button" onClick={handleStart} style={btnStyle('#22c55e')}>
-              <Play size={18} fill="#fff" /> {phase === 'paused' ? 'Resume' : 'Start'}
+            <button type="button" onClick={handleStart} disabled={timer.starting} style={{ ...btnStyle('#22c55e'), opacity: timer.starting ? 0.7 : 1, cursor: timer.starting ? 'wait' : 'pointer' }}>
+              <Play size={18} fill="#fff" /> {timer.starting ? 'Starting…' : phase === 'paused' ? 'Resume' : 'Start'}
             </button>
           ) : (
             <button type="button" onClick={handlePause} style={btnStyle('#f59e0b')}>

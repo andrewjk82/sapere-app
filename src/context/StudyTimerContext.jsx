@@ -49,6 +49,8 @@ const StudyTimerEngine = ({ uid, children }) => {
   // 'screen' = started from a homework / worksheet screen: that screen stops the timer (saving the time so
   // far) when it closes. null = started from the Study Planner: runs until the student stops it there.
   const [origin, setOriginState] = useState(null);
+  const [starting, setStarting] = useState(false);          // Start pressed, not yet running (shows feedback, blocks double taps)
+  const startingRef = useRef(false);
   const originRef = useRef(null);
   const [elapsedSec, setElapsedSec] = useState(0);
   const [lastFlush, setLastFlush] = useState(null);         // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
@@ -154,11 +156,25 @@ const StudyTimerEngine = ({ uid, children }) => {
     // Returns false when the student cancelled.
     // `opts.origin`: 'screen' for a timer a homework / worksheet screen owns; omitted keeps the session's own.
     const start = async (nextSubject = subjectRef.current, opts = {}) => {
+      if (startingRef.current) return false;
+      startingRef.current = true;
+      setStarting(true);
+      try {
+        return await startNow(nextSubject, opts);
+      } finally {
+        startingRef.current = false;
+        setStarting(false);
+      }
+    };
+    const startNow = async (nextSubject, opts) => {
       const keepOrigin = originRef.current;
       const { uid: id } = ctxRef.current;
       if (!id) return false;
       const remote = await fetchRemoteSessionState(id);
-      if (remote?.phase === 'running' && remote.deviceId && remote.deviceId !== deviceIdRef.current) {
+      // A "running" record that has not been touched for hours is a session that was never closed (app killed,
+      // device lost): ignore it instead of asking the student about a session that is not really running.
+      const remoteLive = remote?.phase === 'running' && Number(remote.clientUpdatedMs) > nowMs() - RESUME_CAP_SEC * 1000;
+      if (remoteLive && remote.deviceId && remote.deviceId !== deviceIdRef.current) {
         const proceed = window.confirm(
           `A "${normalizeSubjectLabel(remote.subject || nextSubject)}" session is running on another device.\n`
           + 'If you start here too, both devices may record the same time. Start anyway?',
@@ -334,9 +350,9 @@ const StudyTimerEngine = ({ uid, children }) => {
   }, [phase]);
 
   const value = useMemo(() => ({
-    uid, subjects, subject, phase, origin, lastFlush, myTotalSec, currentTotalSec,
+    uid, subjects, subject, phase, origin, starting, lastFlush, myTotalSec, currentTotalSec,
     start: engine.start, resume: engine.resume, pause: engine.pause, stop: engine.stop, changeSubject: engine.changeSubject,
-  }), [uid, subjects, subject, phase, origin, lastFlush, myTotalSec, currentTotalSec, engine]);
+  }), [uid, subjects, subject, phase, origin, starting, lastFlush, myTotalSec, currentTotalSec, engine]);
 
   return (
     <StudyTimerContext.Provider value={value}>

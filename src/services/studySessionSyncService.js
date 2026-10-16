@@ -66,12 +66,18 @@ export const publishSessionTransition = async ({ uid, phase, subject, deviceId }
  * points (before Start, tab returning to foreground) — never on an interval.
  * @returns {{phase, subject, deviceId, clientUpdatedMs}|null}
  */
-export const fetchRemoteSessionState = async (uid) => {
+// This is only a courtesy check, so it must never hold up Start: on a slow / blocked network a Firestore read
+// can take 10+ seconds, which made the Start button look dead. After `timeoutMs` it answers "nothing known".
+export const REMOTE_CHECK_TIMEOUT_MS = 2000;
+export const fetchRemoteSessionState = async (uid, timeoutMs = REMOTE_CHECK_TIMEOUT_MS) => {
   if (!uid) return null;
   try {
-    const snap = await getDoc(sessionDocRef(uid));
-    trackRead(1, 'study_session_state');
-    return snap.exists() ? snap.data() : null;
+    const read = getDoc(sessionDocRef(uid)).then((snap) => {
+      trackRead(1, 'study_session_state');
+      return snap.exists() ? snap.data() : null;
+    });
+    const timeout = new Promise((resolve) => { setTimeout(() => resolve(null), timeoutMs); });
+    return await Promise.race([read, timeout]);
   } catch (err) {
     console.warn('[studySessionSync] fetch failed:', err?.code || err);
     return null;

@@ -213,14 +213,15 @@ export const StudyTimerStartButton = ({ compact = false }) => {
     <button
       type="button"
       onClick={() => timer.start(subject, { origin: 'screen' })}
+      disabled={timer.starting}
       title={`Start the study timer for ${normalizeSubjectLabel(subject)}. It stops when you leave this screen.`}
       style={{
         display: 'inline-flex', alignItems: 'center', gap: 5, padding: compact ? '7px 9px' : '7px 12px', borderRadius: 10,
         border: '1px solid #c7d2fe', background: '#eef2ff', color: '#4338ca', fontWeight: 800, fontSize: '0.78rem',
-        cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0,
+        cursor: timer.starting ? 'wait' : 'pointer', opacity: timer.starting ? 0.7 : 1, whiteSpace: 'nowrap', flexShrink: 0,
       }}
     >
-      <Timer size={15} /> {compact ? 'Timer' : 'Start Maths timer'}
+      <Timer size={15} /> {timer.starting ? 'Starting…' : compact ? 'Timer' : 'Start Maths timer'}
     </button>
   );
 };
