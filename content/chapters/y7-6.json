@@ -4792,7 +4792,7 @@
           "id": "sgi-y7-2017-q4d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify \\((3x/y)(y/2x)\\) and \\((4xy/5)\\div(2y/15)\\), where denominators are non-zero.",
+          "stem": "Simplify \\(\\dfrac{3x}{y}\\cdot\\dfrac{y}{2x}\\) and \\(\\dfrac{4xy}{5}\\div\\dfrac{2y}{15}\\), where denominators are non-zero.",
           "options": [
             "\\(\\frac32\\) and \\(6x\\)",
             "\\(\\frac{3y}{2x}\\) and \\(\\frac{8xy}{75}\\)",
@@ -4803,12 +4803,12 @@
           "hint": "For the first, cancel x and y. For the second, multiply by the reciprocal of 2y/15.",
           "keyPoints": [
             {
-              "text": "(3x/y)(y/2x)",
+              "text": "\\(\\dfrac{3x}{y}\\cdot\\dfrac{y}{2x}\\)",
               "note": "Cancel the common x and y factors."
             },
             {
-              "text": "(4xy/5) ÷ (2y/15)",
-              "note": "Multiply by 15/(2y)."
+              "text": "\\(\\dfrac{4xy}{5}\\div\\dfrac{2y}{15}\\)",
+              "note": "Multiply by \\(\\dfrac{15}{2y}\\)."
             }
           ],
           "steps": [
