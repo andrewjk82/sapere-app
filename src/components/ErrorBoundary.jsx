@@ -4,6 +4,7 @@ import {
   isStorageQuotaError,
   clearOwnLocalCache,
   canAutoReload,
+  reloadWithRepair,
   CHUNK_RELOAD_KEY,
   QUOTA_RELOAD_KEY,
 } from '../utils/crashRecovery';
@@ -44,8 +45,7 @@ class ErrorBoundary extends React.Component {
     if (isChunkLoadError(msg) && canAutoReload(CHUNK_RELOAD_KEY)) {
       try {
         sessionStorage.setItem(CHUNK_RELOAD_KEY, String(Date.now()));
-        const sep = window.location.search ? '&' : '?';
-        window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+        reloadWithRepair(msg);
       } catch { /* sessionStorage unavailable — fall back to manual Reload */ }
       return;
     }
@@ -122,9 +122,9 @@ class ErrorBoundary extends React.Component {
         <button
           type="button"
           onClick={() => {
-            // Hard-navigate with cache-bust so mobile browsers fetch fresh index.html
-            const sep = window.location.search ? '&' : '?';
-            window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+            // Hard-navigate with cache-bust so mobile browsers fetch fresh index.html; a chunk that failed to
+            // load is re-fetched first so a bad cached copy cannot make the reload fail again.
+            reloadWithRepair(message);
           }}
           style={{
             background: 'linear-gradient(135deg, #8b5cf6, #6366f1)',

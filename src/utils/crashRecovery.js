@@ -36,6 +36,32 @@ export const clearOwnLocalCache = () => {
   } catch { /* ignore */ }
 };
 
+// Asset URLs named in a chunk-load error message (Chrome / Edge include the URL; Safari does not).
+export const chunkUrlsIn = (message, origin = globalThis.location?.origin) => {
+  const urls = String(message || '').match(/https?:\/\/[^\s'"()]+?\.(?:js|css|mjs)(?=[\s'")?#]|$)/g) || [];
+  return [...new Set(urls.filter((u) => !origin || u.startsWith(`${origin}/`)))];
+};
+
+// A chunk requested while a deploy was still publishing can come back as the app's HTML page, served with
+// the one-year `immutable` header every /assets file gets — and then the browser keeps that bad copy, so a
+// plain reload keeps failing. Re-fetching the URL with cache:'reload' replaces the cached copy with the real
+// file. Best effort and time-boxed: it must never block the recovery reload.
+export const repairChunkCache = async (message, timeoutMs = 3000) => {
+  const urls = chunkUrlsIn(message);
+  if (urls.length === 0 || typeof fetch !== 'function') return;
+  const refetch = Promise.all(urls.map((url) => fetch(url, { cache: 'reload' }).catch(() => null)));
+  await Promise.race([refetch, new Promise((resolve) => { setTimeout(resolve, timeoutMs); })]);
+};
+
+// Navigate to this page again with a cache-busting parameter (fresh index.html), after repairing the cache.
+export const reloadWithRepair = (message) => {
+  const go = () => {
+    const sep = window.location.search ? '&' : '?';
+    window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+  };
+  return repairChunkCache(message).then(go, go);
+};
+
 export const CHUNK_RELOAD_KEY = 'sapere:eb-chunk-reload';
 export const QUOTA_RELOAD_KEY = 'sapere:eb-quota-reload';
 
@@ -59,8 +85,7 @@ export const attemptAutoReload = (message) => {
   if (isChunkLoadError(msg) && canAutoReload(CHUNK_RELOAD_KEY)) {
     try {
       sessionStorage.setItem(CHUNK_RELOAD_KEY, String(Date.now()));
-      const sep = window.location.search ? '&' : '?';
-      window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+      reloadWithRepair(msg);
       return true;
     } catch { /* sessionStorage unavailable — fall through */ }
   }

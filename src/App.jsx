@@ -58,10 +58,9 @@ const lazyWithReload = (importer) => {
       .catch((err) => {
         if (!sessionStorage.getItem(chunkKey)) {
           sessionStorage.setItem(chunkKey, String(Date.now()));
-          // Use replace() with a cache-bust param so mobile browsers don't
-          // serve a stale index.html from their local cache on reload.
-          const sep = window.location.search ? '&' : '?';
-          window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+          // Reload with a cache-bust param so mobile browsers don't serve a stale index.html — after re-fetching
+          // the chunk that failed, so a bad copy cached during a deploy can't make the reload fail again.
+          reloadWithRepair(err?.message);
           // Normally location.replace() unloads this page almost immediately,
           // so this promise's fate stops mattering. But on some mobile
           // browsers (observed on iPad Safari) the navigation can stall or
@@ -76,7 +75,7 @@ const lazyWithReload = (importer) => {
           // can show its real chunk-load recovery screen (which offers a
           // manual Reload button) instead of an infinite spinner.
           return new Promise((_resolve, reject) => {
-            setTimeout(() => reject(err), 5000);
+            setTimeout(() => reject(err), 9000);
           });
         }
         throw err;
@@ -92,6 +91,7 @@ import CurriculumGraph3D from './components/CurriculumGraph3D';
 import Schedule from './components/Schedule';
 import Library from './components/Library';
 import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
+import { reloadWithRepair } from './utils/crashRecovery';
 import { StudyTimerSessionModal } from './components/studyTimer/StudyTimerSessionModal';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
