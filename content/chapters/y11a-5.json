@@ -251,30 +251,27 @@
           "difficulty": "easy",
           "stem": "Sketch the parabola \\(y = (x - 3)^2\\). Mark all intercepts with the axes and indicate the turning point.",
           "answer": "Parabola shifted right 3.\nVertex (3, 0), y-intercept (0, 9), x-intercept (3, 0).",
-          "options": [
-            "Turning point at \\((3, 0)\\), y-intercept at \\((0, 9)\\), x-intercept at \\((3, 0)\\)",
-            "Turning point at \\((-3, 0)\\), y-intercept at \\((0, 9)\\), x-intercept at \\((-3, 0)\\)",
-            "Turning point at \\((3, 0)\\), y-intercept at \\((0, 3)\\), x-intercept at \\((3, 0)\\)",
-            "Turning point at \\((0, 9)\\), y-intercept at \\((0, 9)\\), x-intercepts at \\((3, 0)\\)"
-          ],
           "hint": "Shift the graph of \\(y=x^2\\) horizontally to the right.",
-          "solution": "Parabola shifted right 3.\nVertex (3, 0), y-intercept (0, 9), x-intercept (3, 0).",
+          "solution": "The parabola \\(y = (x - 3)^2\\) is obtained by translating \\(y = x^2\\) right by 3 units.\n- Turning point (vertex): \\((3, 0)\\)\n- \\(y\\)-intercept: \\((0, 9)\\)\n- \\(x\\)-intercept: \\((3, 0)\\)\n- Axis of symmetry: \\(x = 3\\)",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = (x-3)^2 \\text{ is a shift right by 3.}\\)"
+              "explain": "Identify the base parabola \\(y = x^2\\) and determine the horizontal translation. Replacing \\(x\\) with \\((x - 3)\\) shifts the entire parabola horizontally to the right by \\(3\\) units.",
+              "work": "\\(\\text{Base graph: } y = x^2 \\implies y = (x - 3)^2 \\text{ translates the graph } 3 \\text{ units right.}\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{Vertex: } (3, 0), y\\text{-int: } (0, 9)\\)"
+              "explain": "Find the vertex (turning point) and axis of symmetry. Since the base vertex is at \\((0, 0)\\), translating right by \\(3\\) moves the vertex to \\((3, 0)\\). The vertical line \\(x = 3\\) is the axis of symmetry.",
+              "work": "\\(\\text{Turning point (vertex): } (3, 0), \\quad \\text{Axis of symmetry: } x = 3\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "Parabola shifted right 3.\nVertex (3, 0), y-intercept (0, 9), x-intercept (3, 0)."
+              "explain": "Determine the intercepts with the axes. To find the \\(y\\)-intercept, substitute \\(x = 0\\): \\(y = (0 - 3)^2 = 9\\), giving \\((0, 9)\\). To find the \\(x\\)-intercept, set \\(y = 0\\): \\((x - 3)^2 = 0 \\implies x = 3\\), giving \\((3, 0)\\).",
+              "work": "\\(y\\text{-intercept: } (0, 9), \\quad x\\text{-intercept: } (3, 0)\\)"
             },
             {
-              "explain": "Final answer: Parabola shifted right 3.\nVertex (3, 0), y-intercept (0, 9), x-intercept (3, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "Parabola shifted right 3.\nVertex (3, 0), y-intercept (0, 9), x-intercept (3, 0)."
+              "explain": "Sketch a smooth, upright parabola with vertex at \\((3, 0)\\), passing through the \\(y\\)-intercept at \\((0, 9)\\), and symmetric about the line \\(x = 3\\).",
+              "work": "\\(\\text{Vertex: } (3, 0), \\; y\\text{-intercept: } (0, 9), \\; x\\text{-intercept: } (3, 0)\\)",
+              "figure": {
+                "svg": "fig:503de799c9"
+              }
             }
           ],
           "manual": true,
