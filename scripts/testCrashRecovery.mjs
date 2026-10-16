@@ -1,6 +1,6 @@
 /** Chunk-load recovery helpers. Run via npm run test:homework. */
 import assert from 'node:assert';
-import { chunkUrlsIn, isChunkLoadError } from '../src/utils/crashRecovery.js';
+import { chunkUrlsIn, isChunkLoadError, staticImportsIn, chunkUrlsInImporter } from '../src/utils/crashRecovery.js';
 
 let passed = 0;
 const test = (name, fn) => { fn(); passed += 1; console.log(`  ✓ ${name}`); };
@@ -26,6 +26,20 @@ test('only this site\'s assets are re-fetched', () => {
 test('empty / odd input', () => {
   assert.deepEqual(chunkUrlsIn('', O), []);
   assert.deepEqual(chunkUrlsIn(undefined, O), []);
+});
+
+test('static imports of a built chunk (the files a failed chunk depends on)', () => {
+  const code = 'import{a as b}from"./index-Y1q.js";import"./SplitPanes-x1.js";import{c}from "./seeds-misc-9.js";const d=()=>import("./Lazy-1.js");';
+  assert.deepEqual(staticImportsIn(code), ['./index-Y1q.js', './SplitPanes-x1.js', './seeds-misc-9.js']);
+});
+
+test('the chunk a lazy importer loads, from its built source (Safari path)', () => {
+  const importer = '()=>__vitePreload(()=>import("./Curriculum-Z1pDrncI.js"),__vite__mapDeps([0,1]))';
+  assert.deepEqual(chunkUrlsInImporter(importer, `${O}/assets/index-Y1q.js`), [`${O}/assets/Curriculum-Z1pDrncI.js`]);
+  assert.deepEqual(chunkUrlsInImporter("() => import('./components/Curriculum')", `${O}/src/App.jsx`), []); // dev source: no built file
+  // the real build quotes with backticks
+  const built = 'IK(()=>Fe(()=>import(`./Curriculum-DgQMuLg2.js`),__vite__mapDeps([8,1,9])))';
+  assert.deepEqual(chunkUrlsInImporter(built, `${O}/assets/index-Y1q.js`), [`${O}/assets/Curriculum-DgQMuLg2.js`]);
 });
 
 console.log(`\ncrash recovery: ${passed} passed`);

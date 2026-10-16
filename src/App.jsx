@@ -60,7 +60,7 @@ const lazyWithReload = (importer) => {
           sessionStorage.setItem(chunkKey, String(Date.now()));
           // Reload with a cache-bust param so mobile browsers don't serve a stale index.html — after re-fetching
           // the chunk that failed, so a bad copy cached during a deploy can't make the reload fail again.
-          reloadWithRepair(err?.message);
+          reloadWithRepair(err?.message, chunkUrlsInImporter(importer, import.meta.url));
           // Normally location.replace() unloads this page almost immediately,
           // so this promise's fate stops mattering. But on some mobile
           // browsers (observed on iPad Safari) the navigation can stall or
@@ -91,7 +91,7 @@ import CurriculumGraph3D from './components/CurriculumGraph3D';
 import Schedule from './components/Schedule';
 import Library from './components/Library';
 import { StudyTimerPill } from './components/studyTimer/StudyTimerPill';
-import { reloadWithRepair } from './utils/crashRecovery';
+import { reloadWithRepair, chunkUrlsInImporter } from './utils/crashRecovery';
 import { StudyTimerSessionModal } from './components/studyTimer/StudyTimerSessionModal';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));

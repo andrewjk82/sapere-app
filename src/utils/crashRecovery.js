@@ -42,24 +42,59 @@ export const chunkUrlsIn = (message, origin = globalThis.location?.origin) => {
   return [...new Set(urls.filter((u) => !origin || u.startsWith(`${origin}/`)))];
 };
 
-// A chunk requested while a deploy was still publishing can come back as the app's HTML page, served with
-// the one-year `immutable` header every /assets file gets — and then the browser keeps that bad copy, so a
-// plain reload keeps failing. Re-fetching the URL with cache:'reload' replaces the cached copy with the real
-// file. Best effort and time-boxed: it must never block the recovery reload.
-export const repairChunkCache = async (message, timeoutMs = 3000) => {
-  const urls = chunkUrlsIn(message);
-  if (urls.length === 0 || typeof fetch !== 'function') return;
-  const refetch = Promise.all(urls.map((url) => fetch(url, { cache: 'reload' }).catch(() => null)));
-  await Promise.race([refetch, new Promise((resolve) => { setTimeout(resolve, timeoutMs); })]);
+// Relative module imports in a built chunk: `from"./x.js"` and side-effect `import"./x.js"` (static only —
+// a nested dynamic chunk is repaired by its own failure, if it ever fails).
+export const staticImportsIn = (code) => [...new Set(
+  (String(code || '').match(/(?:from|import)\s*["'`](\.\/[^"'`]+\.m?js)["'`]/g) || [])
+    .map((m) => m.replace(/^(?:from|import)\s*["'`]/, '').replace(/["'`]$/, '')),
+)];
+
+// A chunk requested while a deploy was still publishing can come back as a 404 / the app's HTML page with
+// a long cache header, and the browser keeps that bad copy, so a plain reload keeps failing. And the file
+// that is bad is often not the one named in the error but something it imports (the browser names the
+// top-level chunk). So re-fetch the named chunk(s) with cache:'reload' — which replaces the cached copy —
+// and walk their static imports the same way. Best effort, bounded and time-boxed: it must never block
+// the recovery reload.
+export const repairChunkCache = async (message, { extraUrls = [], timeoutMs = 6000, maxFiles = 120 } = {}) => {
+  if (typeof fetch !== 'function') return;
+  const start = [...chunkUrlsIn(message), ...extraUrls];
+  if (start.length === 0) return;
+  const seen = new Set();
+  const walk = async (urls) => {
+    const next = [];
+    await Promise.all(urls.map(async (url) => {
+      if (seen.has(url) || seen.size >= maxFiles) return;
+      seen.add(url);
+      try {
+        const res = await fetch(url, { cache: 'reload' });
+        if (!res.ok || !/javascript/.test(res.headers.get('content-type') || '')) return;
+        const code = await res.text();
+        staticImportsIn(code).forEach((rel) => next.push(new URL(rel, url).href));
+      } catch { /* offline / blocked: nothing to repair */ }
+    }));
+    if (next.length) await walk(next);
+  };
+  await Promise.race([walk(start), new Promise((resolve) => { setTimeout(resolve, timeoutMs); })]);
+};
+
+// The chunk a lazy importer loads, from its built source: `()=>import("./Curriculum-abc.js")` (wrapped by
+// Vite's preload helper). This is how Safari gets repaired too — its error message names no file.
+export const chunkUrlsInImporter = (importer, base) => {
+  try {
+    const rels = String(importer).match(/import\(\s*["'`](\.\/[^"'`]+\.m?js)["'`]\s*\)/g) || [];
+    return rels.map((m) => new URL(m.replace(/^import\(\s*["'`]/, '').replace(/["'`]\s*\)$/, ''), base).href);
+  } catch {
+    return [];
+  }
 };
 
 // Navigate to this page again with a cache-busting parameter (fresh index.html), after repairing the cache.
-export const reloadWithRepair = (message) => {
+export const reloadWithRepair = (message, extraUrls = []) => {
   const go = () => {
     const sep = window.location.search ? '&' : '?';
     window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
   };
-  return repairChunkCache(message).then(go, go);
+  return repairChunkCache(message, { extraUrls }).then(go, go);
 };
 
 export const CHUNK_RELOAD_KEY = 'sapere:eb-chunk-reload';
