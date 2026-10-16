@@ -10315,145 +10315,157 @@
         },
         {
           "id": "sgi-y7-2017-q5c",
-          "type": "mc",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "The first four brick counts are 8, 11, 14 and 17. The pattern adds 3 bricks each time. Which statement gives the rule for tower n and the number of bricks in tower 24?",
-          "options": [
-            "\\(3n+8\\); 80 bricks",
-            "\\(3n+5\\); 77 bricks",
-            "\\(8n+3\\); 195 bricks",
-            "\\(3n+6\\); 77 bricks"
-          ],
-          "answer": 1,
-          "hint": "The first tower has one group of 3 plus 5 extra bricks. Substitute n = 24 after finding the rule.",
-          "keyPoints": [
-            {
-              "text": "8, 11, 14, 17",
-              "note": "The sequence increases by 3 each time."
-            },
-            {
-              "text": "tower 24",
-              "note": "Use n = 24 in the rule."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Find the repeated increase and starting adjustment.",
-              "work": "\\(8=3(1)+5,\\;11=3(2)+5,\\;14=3(3)+5\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
-              }
-            },
-            {
-              "explain": "Write the nth-term rule.",
-              "work": "\\(T_n=3n+5\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
-              }
-            },
-            {
-              "explain": "Substitute n = 24.",
-              "work": "\\(T_{24}=3(24)+5=72+5=77\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
-              }
-            }
-          ],
-          "solution": "\\(3n+5\\); 77 bricks",
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
-            "sourceQuestion": "Q5(c)(i)–(iii)"
-          },
+          "stem": "The diagram shows a sequence of brick towers. The first four towers contain 8, 11, 14 and 17 bricks.",
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
-          }
-        },
-        {
-          "id": "sgi-y7-2017-q5c-vi",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "The number of bricks in tower n is \\(b=3n+5\\). Which tower has 245 bricks?",
-          "options": [
-            "Tower 75",
-            "Tower 78",
-            "Tower 80",
-            "Tower 82"
-          ],
-          "answer": 2,
-          "hint": "Set \\(3n+5=245\\) and solve for n.",
-          "keyPoints": [
+          },
+          "parts": [
             {
-              "text": "b = 245",
-              "note": "Substitute 245 for b."
+              "id": "sgi-y7-2017-q5c-rule",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The first four brick counts are 8, 11, 14 and 17. The pattern adds 3 bricks each time. Which statement gives the rule for tower n and the number of bricks in tower 24?",
+              "options": [
+                "\\(3n+8\\); 80 bricks",
+                "\\(3n+5\\); 77 bricks",
+                "\\(8n+3\\); 195 bricks",
+                "\\(3n+6\\); 77 bricks"
+              ],
+              "answer": 1,
+              "hint": "The first tower has one group of 3 plus 5 extra bricks. Substitute n = 24 after finding the rule.",
+              "keyPoints": [
+                {
+                  "text": "8, 11, 14, 17",
+                  "note": "The sequence increases by 3 each time."
+                },
+                {
+                  "text": "tower 24",
+                  "note": "Use n = 24 in the rule."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Find the repeated increase and starting adjustment.",
+                  "work": "\\(8=3(1)+5,\\;11=3(2)+5,\\;14=3(3)+5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Write the nth-term rule.",
+                  "work": "\\(T_n=3n+5\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Substitute n = 24.",
+                  "work": "\\(T_{24}=3(24)+5=72+5=77\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 270\" width=\"100%\" role=\"img\" aria-label=\"Four brick towers with 8, 11, 14 and 17 bricks; each next tower adds three bricks\"><rect width=\"620\" height=\"270\" rx=\"12\" fill=\"#fff\"/><rect x=\"42\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"42\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"74\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"58\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"66.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 1</text><text x=\"66.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">8 bricks</text><rect x=\"182\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"214\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"182\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"230\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"198\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"214.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 2</text><text x=\"214.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">11 bricks</text><rect x=\"322\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"338\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"370\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"174\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"158\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"142\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"126\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"322\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"386\" y=\"110\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"354\" y=\"94\" width=\"15\" height=\"15\" fill=\"#94a3b8\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"362.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 3</text><text x=\"362.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">14 bricks</text><rect x=\"462\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"478\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"510\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"526\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"174\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"158\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"142\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"126\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"110\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"462\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"542\" y=\"94\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><rect x=\"494\" y=\"78\" width=\"15\" height=\"15\" fill=\"#f59e0b\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"510.0\" y=\"218\" text-anchor=\"middle\" font-size=\"15\" fill=\"#334155\">n = 4</text><text x=\"510.0\" y=\"241\" text-anchor=\"middle\" font-size=\"14\" fill=\"#64748b\">17 bricks</text></svg>"
+                  }
+                }
+              ],
+              "solution": "\\(3n+5\\); 77 bricks",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+                "sourceQuestion": "Q5(c)(i)–(iii)"
+              }
             },
             {
-              "text": "b = 3n + 5",
-              "note": "Subtract 5, then divide by 3."
+              "id": "sgi-y7-2017-q5c-tower6",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "The brick pattern has rule \\(b=3n+5\\). How many bricks are needed for tower 6?",
+              "options": [
+                "21 bricks",
+                "22 bricks",
+                "24 bricks",
+                "23 bricks"
+              ],
+              "answer": 3,
+              "hint": "Substitute n = 6 into the rule.",
+              "keyPoints": [
+                {
+                  "text": "b = 3n + 5",
+                  "note": "Replace n by 6."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Substitute the tower number.",
+                  "work": "\\(b=3(6)+5\\)"
+                },
+                {
+                  "explain": "Multiply.",
+                  "work": "\\(b=18+5\\)"
+                },
+                {
+                  "explain": "Add.",
+                  "work": "\\(b=23\\text{ bricks}\\)"
+                }
+              ],
+              "solution": "23 bricks",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+                "sourceQuestion": "Q5(c)(iii)"
+              }
+            },
+            {
+              "id": "sgi-y7-2017-q5c-vi",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The number of bricks in tower n is \\(b=3n+5\\). Which tower has 245 bricks?",
+              "options": [
+                "Tower 75",
+                "Tower 78",
+                "Tower 80",
+                "Tower 82"
+              ],
+              "answer": 2,
+              "hint": "Set \\(3n+5=245\\) and solve for n.",
+              "keyPoints": [
+                {
+                  "text": "b = 245",
+                  "note": "Substitute 245 for b."
+                },
+                {
+                  "text": "b = 3n + 5",
+                  "note": "Subtract 5, then divide by 3."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Form the equation.",
+                  "work": "\\(3n+5=245\\)"
+                },
+                {
+                  "explain": "Subtract 5.",
+                  "work": "\\(3n=240\\)"
+                },
+                {
+                  "explain": "Divide by 3.",
+                  "work": "\\(n=80\\)"
+                }
+              ],
+              "solution": "Tower 80",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
+                "sourceQuestion": "Q5(c)(vi)"
+              }
             }
           ],
-          "steps": [
-            {
-              "explain": "Form the equation.",
-              "work": "\\(3n+5=245\\)"
-            },
-            {
-              "explain": "Subtract 5.",
-              "work": "\\(3n=240\\)"
-            },
-            {
-              "explain": "Divide by 3.",
-              "work": "\\(n=80\\)"
-            }
-          ],
-          "solution": "Tower 80",
-          "timeLimit": 60,
-          "xp": 1,
           "meta": {
             "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
-            "sourceQuestion": "Q5(c)(vi)"
-          }
-        },
-        {
-          "id": "sgi-y7-2017-q5c-tower6",
-          "type": "mc",
-          "difficulty": "easy",
-          "stem": "The brick pattern has rule \\(b=3n+5\\). How many bricks are needed for tower 6?",
-          "options": [
-            "21 bricks",
-            "22 bricks",
-            "24 bricks",
-            "23 bricks"
-          ],
-          "answer": 3,
-          "hint": "Substitute n = 6 into the rule.",
-          "keyPoints": [
-            {
-              "text": "b = 3n + 5",
-              "note": "Replace n by 6."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Substitute the tower number.",
-              "work": "\\(b=3(6)+5\\)"
-            },
-            {
-              "explain": "Multiply.",
-              "work": "\\(b=18+5\\)"
-            },
-            {
-              "explain": "Add.",
-              "work": "\\(b=23\\text{ bricks}\\)"
-            }
-          ],
-          "solution": "23 bricks",
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "sourcePaper": "Sydney Grammar School Form I Mathematics Annual Examination 2017",
-            "sourceQuestion": "Q5(c)(iii)"
+            "sourceQuestion": "Q5(c), related parts combined"
           }
         }
       ]
