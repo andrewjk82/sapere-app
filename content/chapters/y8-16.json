@@ -2545,9 +2545,6 @@
           "meta": {
             "source": "Form II Annual Examination 2022"
           },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><rect x=\"35\" y=\"25\" width=\"310\" height=\"195\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"155\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"120\" r=\"68\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"125\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">History</text><text x=\"255\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Charms</text><text x=\"106\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">H only</text><text x=\"191\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">Both</text><text x=\"272\" y=\"113\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"600\">C only</text></svg>"
-          },
           "keyPoints": [
             {
               "text": "Charms",
