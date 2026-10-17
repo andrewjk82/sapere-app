@@ -5,9 +5,10 @@ import WorkingOutCanvas from '../WorkingOutCanvas';
 import PdfViewer from '../PdfViewer';
 import { useSplitLayout } from '../../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
-import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
+import { loadHomeworkLocalChecked, saveHomeworkLocal, mergeHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
+import HomeworkStorageWarning from './HomeworkStorageWarning';
 import { submitHomework, loadTopicPdfMap, studentDisplayName } from '../../services/homeworkService';
 import { toDriveOpenUrl, MAX_HOMEWORK_PAGES } from '../../utils/homework';
 
@@ -48,6 +49,10 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
   const [submitting, setSubmitting] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(null); // { done, total } while a long homework uploads
   const [error, setError] = useState('');
+  // The saved work on this device could not be read: writing still works but is NOT saved (saving would
+  // overwrite the real notebooks with this visit's blank ones). `loadAttempt` re-runs the load.
+  const [storageError, setStorageError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -55,13 +60,29 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
     return () => { cancelled = true; };
   }, [profile]);
 
+  // Every notebook in memory → the device store (merged, never wiping). Used when the app is hidden / closed
+  // and when this screen goes away, so writing done just before that is never lost to the autosave delay.
+  const flushDraftRefs = (uid, sessionId) => {
+    const change = { maps: { topicDrafts: topicDraftsRef.current } };
+    if (earlierDraftRef.current) change.fields = { earlierCombinedDraft: earlierDraftRef.current };
+    return mergeHomeworkLocal(uid, sessionId, change);
+  };
+
   useEffect(() => {
     let cancelled = false;
     draftLoadedRef.current = false;
+    const uid = user?.uid;
+    const sessionId = session?.id;
     requestPersistentStorage();
-    loadHomeworkLocal(user?.uid, session?.id)
-      .then((record) => {
+    loadHomeworkLocalChecked(uid, sessionId)
+      .then(({ ok, record }) => {
         if (cancelled) return;
+        if (!ok) {
+          setStorageError(true);
+          setLoadedSessionKey(currentSessionKey);   // the pad is usable, but nothing is saved (draftLoadedRef stays false)
+          return;
+        }
+        setStorageError(false);
         topicDraftsRef.current = record?.topicDrafts || {};
         earlierDraftRef.current = record?.earlierCombinedDraft || null;
         setHasEarlierNotes(Boolean(earlierDraftRef.current));
@@ -74,27 +95,28 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
           : topicDraftsRef.current[initialNotebook];
         if (initialDraft) canvasRef.current?.loadPagesData(initialDraft);
         else canvasRef.current?.clear();
+        draftLoadedRef.current = true;     // restored: autosave from here on
       })
-      .catch(() => {})
-      .finally(() => {
-        // Even if the device store failed, allow autosave from here on.
-        if (!cancelled) {
-          setLoadedSessionKey(currentSessionKey);
-          draftLoadedRef.current = true;
-        }
-      });
-    return () => { cancelled = true; window.clearTimeout(saveTimerRef.current); };
-  }, [currentSessionKey, firstTopicId, user?.uid, session?.id]);
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+      window.clearTimeout(saveTimerRef.current);
+      // Leaving this homework (another tab, closed, account switch) before the debounced autosave ran:
+      // the refs already hold the latest ink (handleInkChange), so save them now — the canvas may be gone.
+      if (draftLoadedRef.current) flushDraftRefs(uid, sessionId);
+    };
+  }, [currentSessionKey, firstTopicId, user?.uid, session?.id, loadAttempt]);
 
+  // Saves only the notebook that changed (merged into the stored record), so a save can never drop another
+  // topic's notes.
   const persistDrafts = useCallback((key, data) => {
-    if (!key || !data) return Promise.resolve(false);
+    if (!key || !data || !draftLoadedRef.current) return Promise.resolve(false);
     if (key === '__earlier__') earlierDraftRef.current = data;
     else topicDraftsRef.current = { ...topicDraftsRef.current, [key]: data };
     setHasEarlierNotes(Boolean(earlierDraftRef.current));
-    return saveHomeworkLocal(user?.uid, session?.id, {
-      topicDrafts: topicDraftsRef.current,
-      earlierCombinedDraft: earlierDraftRef.current,
-    });
+    return mergeHomeworkLocal(user?.uid, session?.id, key === '__earlier__'
+      ? { fields: { earlierCombinedDraft: data } }
+      : { maps: { topicDrafts: { [key]: data } } });
   }, [user?.uid, session?.id]);
 
   const switchNotebook = useCallback((nextKey) => {
@@ -139,6 +161,32 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
       if (latestDraft) persistDrafts(notebookKey, latestDraft);
     }, 1200);
   }, [persistDrafts]);
+
+  // The app going to the background or being closed: save now instead of after the autosave delay.
+  const flushOnHideRef = useRef(() => {});
+  useEffect(() => {
+    flushOnHideRef.current = () => {
+      if (!draftLoadedRef.current || exportingRef.current) return;
+      window.clearTimeout(saveTimerRef.current);
+      const latest = canvasRef.current?.getPagesData();
+      const key = activeNotebookRef.current;
+      if (latest && key) {
+        if (key === '__earlier__') earlierDraftRef.current = latest;
+        else topicDraftsRef.current = { ...topicDraftsRef.current, [key]: latest };
+      }
+      flushDraftRefs(user?.uid, session?.id);
+    };
+  });
+  useEffect(() => {
+    const onVisibility = () => { if (document.visibilityState === 'hidden') flushOnHideRef.current(); };
+    const onPageHide = () => flushOnHideRef.current();
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', onPageHide);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', onPageHide);
+    };
+  }, []);
 
   // Flush the pending (debounced) autosave before leaving, while the canvas ref
   // is still attached — an unmount cleanup would run after it's detached.
@@ -266,6 +314,7 @@ const HomeworkWorkspace = ({ session, profile, user, status, onClose, onSubmitte
 
   const notesPane = (
     <div style={{ height: '100%', minHeight: 0, padding: 8, display: 'flex', flexDirection: 'column' }}>
+      {storageError && <HomeworkStorageWarning onRetry={() => setLoadAttempt((n) => n + 1)} />}
       {(topics.length > 1 || hasEarlierNotes) && (
         <div style={{ display: 'flex', gap: 6, padding: '0 0 8px', overflowX: 'auto', flexShrink: 0 }}>
           {topics.map((topic) => (

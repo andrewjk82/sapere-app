@@ -56,25 +56,77 @@ const run = async (mode, operate) => {
   });
 };
 
+const normalizeRecord = (record) => {
+  if (!record) return null;
+  return {
+    ...record,
+    topicDrafts: record.topicDrafts || {},
+    // Keep the source legacy field for rollback safety while presenting it
+    // through the explicit combined-notes notebook in the new UI.
+    earlierCombinedDraft: record.earlierCombinedDraft || record.draft || null,
+    submittedPages: record.submittedPages || (record.submittedImages || []).map((image) => ({
+      image,
+      topicId: null,
+      topicLabel: 'Earlier combined notes',
+    })),
+  };
+};
+
 export const loadHomeworkLocal = async (uid, sessionId) => {
   if (!uid || !sessionId) return null;
   try {
-    const record = (await run('readonly', (store) => store.get(keyOf(uid, sessionId)))) || null;
-    if (!record) return null;
-    return {
-      ...record,
-      topicDrafts: record.topicDrafts || {},
-      // Keep the source legacy field for rollback safety while presenting it
-      // through the explicit combined-notes notebook in the new UI.
-      earlierCombinedDraft: record.earlierCombinedDraft || record.draft || null,
-      submittedPages: record.submittedPages || (record.submittedImages || []).map((image) => ({
-        image,
-        topicId: null,
-        topicLabel: 'Earlier combined notes',
-      })),
-    };
+    return normalizeRecord((await run('readonly', (store) => store.get(keyOf(uid, sessionId)))) || null);
   } catch {
     return null;
+  }
+};
+
+// Like loadHomeworkLocal, but a read that FAILED is not "nothing saved yet": treating it as empty let the
+// next autosave write blank notebooks over the student's real work. Retries once (iPadOS sometimes drops
+// the database connection while the app is in the background).
+export const loadHomeworkLocalChecked = async (uid, sessionId) => {
+  if (!uid || !sessionId) return { ok: false, record: null };
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const record = (await run('readonly', (store) => store.get(keyOf(uid, sessionId)))) || null;
+      return { ok: true, record: normalizeRecord(record) };
+    } catch {
+      dbPromise = null;
+      if (attempt === 0) await new Promise((resolve) => { setTimeout(resolve, 300); });
+    }
+  }
+  return { ok: false, record: null };
+};
+
+// `maps` entries are merged key by key into the stored map ({ topicDrafts: { topicA: draft } } updates
+// topicA and keeps every other topic's draft); `fields` replace top-level fields. Pure — see the test.
+export const mergeHomeworkRecord = (existing, { maps = {}, fields = {} } = {}, now = Date.now()) => {
+  const next = { ...(existing || {}), ...fields, updatedAt: now };
+  Object.entries(maps).forEach(([field, entries]) => {
+    next[field] = { ...((existing && existing[field]) || {}), ...(entries || {}) };
+  });
+  return next;
+};
+
+// Save part of a homework record without touching the rest: one read-merge-write transaction.
+export const mergeHomeworkLocal = async (uid, sessionId, change) => {
+  if (!uid || !sessionId) return false;
+  try {
+    const key = keyOf(uid, sessionId);
+    await run('readwrite', (store) => {
+      const getReq = store.get(key);
+      getReq.onsuccess = () => {
+        try {
+          store.put(mergeHomeworkRecord(getReq.result, change), key);
+        } catch {
+          store.transaction.abort();
+        }
+      };
+      return getReq;
+    });
+    return true;
+  } catch {
+    return false;
   }
 };
 

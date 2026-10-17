@@ -7,7 +7,8 @@ import ChallengeReviewView from '../challenge/ChallengeReviewView';
 import { useSplitLayout } from '../../utils/useSplitLayout';
 import { SplitPanes, SplitLayoutToggle } from '../SplitPanes';
 import SubmittedPages from './SubmittedPages';
-import { loadHomeworkLocal, saveHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
+import { loadHomeworkLocalChecked, mergeHomeworkLocal, requestPersistentStorage } from '../../utils/homeworkLocalStore';
+import HomeworkStorageWarning from './HomeworkStorageWarning';
 import { useWorksheetPdf } from '../../utils/useWorksheetPdf';
 import { StudyTimerStartButton } from '../studyTimer/StudyTimerPill';
 import { loadTopicPdfMap, fetchAnswerKeys } from '../../services/homeworkService';
@@ -73,12 +74,20 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     return () => { cancelled = true; };
   }, []);
 
+  // Saved redo work could not be read: writing works but is not saved (see HomeworkStorageWarning).
+  const [storageError, setStorageError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
+
   useEffect(() => {
     let cancelled = false;
+    loadedRef.current = false;
+    const uid = storeUid(user?.uid);
     requestPersistentStorage();
-    loadHomeworkLocal(storeUid(user?.uid), sessionId)
-      .then((record) => {
+    loadHomeworkLocalChecked(uid, sessionId)
+      .then(({ ok, record }) => {
         if (cancelled) return;
+        if (!ok) { setStorageError(true); setReady(true); return; }   // usable, not saved (loadedRef stays false)
+        setStorageError(false);
         draftsRef.current = record?.redoDrafts || {};
         statusRef.current = record?.redoStatus || {};
         setStatusMap({ ...statusRef.current });
@@ -88,18 +97,26 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         setActiveKey(first);
         if (draftsRef.current[first]) canvasRef.current?.loadPagesData(draftsRef.current[first]);
         else canvasRef.current?.clear();
+        loadedRef.current = true;
+        setReady(true);
       })
-      .catch(() => {})
-      .finally(() => {
-        if (!cancelled) { loadedRef.current = true; setReady(true); }
-      });
-    return () => { cancelled = true; window.clearTimeout(saveTimerRef.current); };
-  }, [user?.uid, sessionId, questions]);
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+      window.clearTimeout(saveTimerRef.current);
+      // Leaving before the debounced autosave ran: draftsRef already holds the latest ink (captureActive).
+      if (loadedRef.current) mergeHomeworkLocal(uid, sessionId, { maps: { redoDrafts: draftsRef.current, redoStatus: statusRef.current } });
+    };
+  }, [user?.uid, sessionId, questions, loadAttempt]);
 
-  const persist = useCallback(() => saveHomeworkLocal(storeUid(user?.uid), sessionId, {
-    redoDrafts: draftsRef.current,
-    redoStatus: statusRef.current,
-  }), [user?.uid, sessionId]);
+  // Merged into the stored record (per question), so a save never drops other questions' work.
+  const persist = useCallback(() => {
+    if (!loadedRef.current) return Promise.resolve(false);
+    return mergeHomeworkLocal(storeUid(user?.uid), sessionId, {
+      maps: { redoDrafts: draftsRef.current, redoStatus: statusRef.current },
+    });
+  }, [user?.uid, sessionId]);
+
 
   const captureActive = useCallback(() => {
     const key = activeKeyRef.current;
@@ -115,6 +132,27 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
     captureActive();
     saveTimerRef.current = window.setTimeout(() => { captureActive(); persist(); }, 1200);
   }, [captureActive, persist]);
+
+  // The app going to the background or being closed: save now instead of after the autosave delay.
+  const flushOnHideRef = useRef(() => {});
+  useEffect(() => {
+    flushOnHideRef.current = () => {
+      if (!loadedRef.current) return;
+      window.clearTimeout(saveTimerRef.current);
+      captureActive();
+      persist();
+    };
+  });
+  useEffect(() => {
+    const onVisibility = () => { if (document.visibilityState === 'hidden') flushOnHideRef.current(); };
+    const onPageHide = () => flushOnHideRef.current();
+    document.addEventListener('visibilitychange', onVisibility);
+    window.addEventListener('pagehide', onPageHide);
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pagehide', onPageHide);
+    };
+  }, []);
 
   const openLinkedQuestion = async (redoQuestion) => {
     const match = resolveHomeworkQuestion(homeworkReferenceFor(redoQuestion), questionIndex);
@@ -287,6 +325,7 @@ const HomeworkRedo = ({ item, user, profile, onClose }) => {
         )}
       </div>
 
+      {storageError && <HomeworkStorageWarning onRetry={() => setLoadAttempt((n) => n + 1)} />}
       <div style={{ flex: 1, minHeight: 0, display: 'flex', pointerEvents: ready ? 'auto' : 'none' }}>
         <WorkingOutCanvas ref={canvasRef} isSubmitted={false} hideTitle onInkChange={handleInkChange} />
       </div>
