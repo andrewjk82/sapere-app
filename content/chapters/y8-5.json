@@ -1040,60 +1040,6 @@
             }
           ],
           "xp": 2
-        },
-        {
-          "id": "f2a22-y8-q6dii",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Copy \\(\\angle POQ\\) to construct \\(\\angle YXZ\\), using ray XY as one arm.",
-          "hint": "Use the same compass radius to transfer an arc from O to X, then transfer the distance between the arc intersections to locate Z.",
-          "solution": "Sample construction: transfer the compass arc and its chord length to vertex X, then draw ray XZ through the transferred point.",
-          "steps": [
-            {
-              "explain": "Draw an arc centred at O that crosses both arms OP and OQ. Draw an arc of the same radius centred at X, starting at ray XY.",
-              "work": "\\(OA_1=OB_1=XY_1\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/></svg>"
-              }
-            },
-            {
-              "explain": "Measure the distance between the two intersections on the original arc, then copy that chord length onto the arc centred at X.",
-              "work": "\\(A_1B_1=Y_1Z\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/></svg>"
-              }
-            },
-            {
-              "explain": "Join X to the new point Z. This copies the angle while preserving its opening.",
-              "work": "\\(\\angle YXZ=\\angle POQ\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"225\" y1=\"190\" x2=\"251\" y2=\"153\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"259\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">Z</text><path d=\"M78 190 A18 18 0 0 0 70 175\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M243 190 A18 18 0 0 0 235 175\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/></svg>"
-              }
-            },
-            {
-              "explain": "Sample answer: the constructed ray XZ forms the same angle as POQ.",
-              "work": "\\(\\angle YXZ\\cong\\angle POQ\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text><path d=\"M105 190 A45 45 0 0 0 86 153\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"190\" r=\"45\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><circle cx=\"105\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"86\" cy=\"153\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"3.5\" fill=\"#f59e0b\"/><circle cx=\"270\" cy=\"190\" r=\"41\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"1.7\"/><circle cx=\"251\" cy=\"153\" r=\"4\" fill=\"#f59e0b\"/><line x1=\"225\" y1=\"190\" x2=\"251\" y2=\"153\" stroke=\"#8b5cf6\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"259\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#6d28d9\" font-weight=\"600\">Z</text><path d=\"M78 190 A18 18 0 0 0 70 175\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><path d=\"M243 190 A18 18 0 0 0 235 175\" fill=\"none\" stroke=\"#8b5cf6\" stroke-width=\"2.2\"/></svg>"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Form II Annual Examination 2022"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><line x1=\"60\" y1=\"190\" x2=\"195\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"60\" y1=\"190\" x2=\"150\" y2=\"65\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"225\" y1=\"190\" x2=\"355\" y2=\"190\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"50\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"200\" y=\"194\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">P</text><text x=\"147\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Q</text><text x=\"215\" y=\"204\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">X</text><text x=\"361\" y=\"190\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">Y</text></svg>"
-          },
-          "keyPoints": [
-            {
-              "text": "\\angle POQ",
-              "note": "Copy the opening by transferring the arc and chord, not by estimating with a protractor."
-            }
-          ],
-          "manual": true,
-          "answer": "Sample construction: transfer the compass arc and its chord length to vertex X, then draw ray XZ through the transferred point."
         }
       ]
     },
