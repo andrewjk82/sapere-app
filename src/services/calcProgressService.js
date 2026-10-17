@@ -26,13 +26,16 @@
  *
  * 누적-기반 2주 평가 (앱 진입 시 최대 주 1회 트리거되지만, 그룹별로는 마지막
  * 체크 후 14일 이상 지나야 실제로 판정한다):
- *   - 그룹별로 마지막 판정 이후 누적된 문제 수가 50문제 미만이면 스텝 유지,
+ *   - 그룹별로 마지막 판정 이후 누적된 문제 수가 20문제 미만이면 스텝 유지,
  *     14일 뒤 다시 누적량을 확인한다 (계속 쌓임 — 데이터 손실 없음).
- *   - 50문제 이상 쌓였으면 누적 전체의 정답률로 판정 후 누적 초기화:
+ *   - 20문제 이상 쌓였으면 누적 전체의 정답률로 판정 후 누적 초기화:
  *     평균 ≥ 90% → 다음 스텝 UP · 평균 ≤ 50% → 이전 스텝 DOWN
  *     (첫 스텝이면 선생님 알림) · 그 외 → 유지
  *   1문제짜리 하루치 세션 하나로 스텝이 오르내리던 문제(작은 표본의 우연)를
- *   막기 위해 주 단위 소표본 평가에서 2주 단위 50문제 누적 평가로 변경.
+ *   막기 위해 주 단위 소표본 평가에서 2주 단위 누적 평가로 변경.
+ *   2026-10: 기준 50 → 20문제. 하루 15문제를 수십 개 그룹이 나눠 받으면 그룹당 주 2~3문제라
+ *   50문제에 몇 달이 걸려 아무도 승급하지 못했다 (Daniel: 37그룹, 넉 달 94% 정답에도 전부 첫 스텝).
+ *   20문제 × 90% = 18/20 이상이어야 UP이므로 우연 승급은 여전히 막힌다.
  */
 
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -329,7 +332,7 @@ export const setCalcAutoMode = async (uid, autoMode) => {
 
 // ─── 누적 기반 2주 평가 ──────────────────────────────────────────────────────
 
-const MIN_QUESTIONS_FOR_EVAL = 50;
+const MIN_QUESTIONS_FOR_EVAL = 20;   // see the header: was 50, which no busy group ever reached
 const UP_THRESHOLD = 0.9;
 const DOWN_THRESHOLD = 0.5;
 const EVAL_PERIOD_DAYS = 14;
@@ -339,9 +342,9 @@ const EVAL_PERIOD_DAYS = 14;
  * 마지막 체크(lastEvaluatedWeek) 후 EVAL_PERIOD_DAYS(14일)가 지나야 실제로
  * 판정을 시도한다 — 그보다 자주 불려도 대부분의 그룹은 그냥 skip된다.
  *
- * 판정 시점에 누적된 세션 수가 MIN_QUESTIONS_FOR_EVAL(50문제) 미만이면 스텝을
+ * 판정 시점에 누적된 세션 수가 MIN_QUESTIONS_FOR_EVAL(20문제) 미만이면 스텝을
  * 유지하고 데이터를 지우지 않은 채 다음 체크(14일 뒤)까지 계속 쌓는다 — 하루
- * 1문제짜리 세션 하나로 스텝이 오르내리는 것을 막기 위함. 50문제 이상 쌓이면
+ * 1문제짜리 세션 하나로 스텝이 오르내리는 것을 막기 위함. 20문제 이상 쌓이면
  * 누적 전체의 정답률로 판정하고 그 즉시 누적을 초기화해 다음 판정을 위한 새
  * 배치를 시작한다.
  *
@@ -372,7 +375,7 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
       const accumulated = groupData.weeklyScores || [];
       const totalPossible = accumulated.reduce((s, r) => s + r.total, 0);
 
-      // 50문제 미만이면 판정 보류 — 데이터는 그대로 두고 다음 체크포인트(14일 뒤)에 다시 확인
+      // 20문제 미만이면 판정 보류 — 데이터는 그대로 두고 다음 체크포인트(14일 뒤)에 다시 확인
       if (totalPossible < MIN_QUESTIONS_FOR_EVAL) {
         groupData.lastEvaluatedWeek = today;
         return;
