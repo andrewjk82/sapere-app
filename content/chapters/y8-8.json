@@ -614,53 +614,6 @@
           "answer": 2
         },
         {
-          "id": "f2a22-y8-q4bi",
-          "type": "review",
-          "difficulty": "easy",
-          "stem": "Draw square \\(ABCD\\) with side length \\(5\\text{ cm}\\), and join diagonal \\(AC\\).",
-          "hint": "Draw a square with four 5 cm sides and right angles, then connect opposite vertices A and C.",
-          "solution": "Sample answer: square ABCD with all four sides 5 cm and the diagonal AC drawn.",
-          "steps": [
-            {
-              "explain": "Mark four equal sides and right angles to make square ABCD.",
-              "work": "\\(AB=BC=CD=DA=5\\text{ cm}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text></svg>"
-              }
-            },
-            {
-              "explain": "Join A to C. This diagonal forms two right-angled triangles.",
-              "work": "\\(AC\\text{ is the diagonal}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#f59e0b\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"197\" y=\"112\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">AC</text></svg>"
-              }
-            },
-            {
-              "explain": "Sample answer: the square with diagonal AC is shown.",
-              "work": "\\(AC\\text{ divides the square into two congruent right triangles}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text><line x1=\"105\" y1=\"35\" x2=\"275\" y2=\"205\" stroke=\"#f59e0b\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"197\" y=\"112\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#d97706\" font-weight=\"600\">AC</text></svg>"
-              }
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Form II Annual Examination 2022"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"><path d=\"M105 35 L275 35 L275 205 L105 205 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><text x=\"94\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">A</text><text x=\"285\" y=\"28\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">B</text><text x=\"285\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">C</text><text x=\"94\" y=\"215\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#1e293b\" font-weight=\"600\">D</text><text x=\"190\" y=\"22\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#1e293b\" font-weight=\"600\">5 cm</text></svg>"
-          },
-          "keyPoints": [
-            {
-              "text": "side length \\(5\\text{ cm}\\)",
-              "note": "All four sides of a square have the given length."
-            }
-          ],
-          "manual": true,
-          "answer": "Sample answer: square ABCD with all four sides 5 cm and the diagonal AC drawn."
-        },
-        {
           "id": "f2a22-y8-q4bii",
           "type": "mc",
           "difficulty": "medium",
