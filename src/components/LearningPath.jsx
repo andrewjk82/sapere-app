@@ -93,7 +93,7 @@ const LearningPath = ({ profile }) => {
   const worksheet = useWorksheetPdf(pdfPreview?.raw || '');
 
   // This topic's notes on the pad: loaded when the topic opens, saved under that topic's key only (see useCurriculumNote).
-  const { ready: curriculumNoteReady, unsaved: curriculumNoteUnsaved, saveNow: saveCurriculumNoteNow, onInkChange: handleCurriculumInkChange } = useCurriculumNote(curriculumCanvasRef, curriculumNoteKey, isTablet, pdfPreview?.topicId);
+  const { ready: curriculumNoteReady, unsaved: curriculumNoteUnsaved, saveNow: saveCurriculumNoteNow, onInkChange: handleCurriculumInkChange, retry: retryCurriculumNote } = useCurriculumNote(curriculumCanvasRef, curriculumNoteKey, isTablet, pdfPreview?.topicId);
 
   const normalizeYearLabel = (value) => {
     const n = parseInt(String(value || '').replace(/\D/g, ''), 10);
@@ -798,7 +798,10 @@ const LearningPath = ({ profile }) => {
                         <span style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#64748b' }}>Loading notes…</span>
                       )}
                       {curriculumNoteReady && curriculumNoteUnsaved && (
-                        <span role="status" style={{ position: 'absolute', right: 14, bottom: 12, fontSize: '0.72rem', fontWeight: 700, color: '#b45309', background: 'rgba(255,251,235,0.95)', borderRadius: 8, padding: '3px 8px' }}>Couldn’t open your saved notes — writing here won’t be saved</span>
+                        <span role="alert" style={{ position: 'absolute', right: 14, bottom: 12, display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: '0.72rem', fontWeight: 700, color: '#b45309', background: 'rgba(255,251,235,0.97)', border: '1px solid #fdba74', borderRadius: 10, padding: '4px 4px 4px 10px' }}>
+                          Couldn’t open your saved notes — writing here isn’t saved yet
+                          <button type="button" onClick={retryCurriculumNote} style={{ border: 0, borderRadius: 8, padding: '5px 10px', background: '#ea580c', color: '#fff', fontWeight: 800, fontSize: '0.72rem', cursor: 'pointer' }}>Try again</button>
+                        </span>
                       )}
                     </div>
                   </section>
