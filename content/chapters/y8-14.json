@@ -636,9 +636,6 @@
           "meta": {
             "source": "Form II Annual Examination 2022"
           },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"Circle with radius 2 cm\"><circle cx=\"190\" cy=\"120\" r=\"75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"190\" y1=\"120\" x2=\"265\" y2=\"120\" stroke=\"#334155\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"3\" fill=\"#334155\"/><text x=\"176\" y=\"120\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">O</text><text x=\"227.5\" y=\"105\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#1e293b\" font-weight=\"600\">r = 2 cm</text></svg>"
-          },
           "keyPoints": [
             {
               "text": "circle with radius",
