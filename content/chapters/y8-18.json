@@ -1628,23 +1628,36 @@
         },
         {
           "id": "f2a22-y8-q8d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Show that \\((m,m^2+2m-2)\\) lies on \\(y=(m+2)x-2\\).",
-          "hint": "Substitute x=m into the line equation and simplify the right-hand side.",
-          "solution": "Sample proof: substituting x=m gives y=(m+2)m−2=m²+2m−2, equal to the point’s y-coordinate.",
+          "stem": "Does the point \\((m, m^2+2m-2)\\) lie on the line \\(y=(m+2)x-2\\)?",
+          "options": [
+            "Yes",
+            "No"
+          ],
+          "answer": 0,
+          "hint": "Substitute the x-coordinate x = m into the equation and check whether the result equals the y-coordinate.",
+          "solution": "Yes",
           "steps": [
             {
-              "explain": "Replace x with m.",
-              "work": "\\(y=(m+2)m-2\\)"
+              "explain": "Recall the condition for a point to lie on a line.",
+              "work": "A point \\((x, y)\\) lies on a line if and only if substituting its coordinates makes \\(\\text{LHS} = \\text{RHS}\\)."
             },
             {
-              "explain": "Expand.",
-              "work": "\\(y=m^2+2m-2\\)"
+              "explain": "Substitute the x-coordinate x = m into the right-hand side (RHS) of the line equation.",
+              "work": "\\(\\text{RHS} = (m+2)x - 2 = (m+2)(m) - 2\\)"
             },
             {
-              "explain": "The resulting y-value matches the point’s second coordinate.",
-              "work": "\\((m,m^2+2m-2)\\text{ satisfies the line equation}\\)"
+              "explain": "Expand the brackets using the distributive law.",
+              "work": "\\(\\text{RHS} = m^2 + 2m - 2\\)"
+            },
+            {
+              "explain": "Compare the evaluated RHS with the y-coordinate (LHS) of the point.",
+              "work": "\\(\\text{LHS} = y = m^2 + 2m - 2 = \\text{RHS}\\)"
+            },
+            {
+              "explain": "State the conclusion.",
+              "work": "\\(\\because \\text{LHS} = \\text{RHS}\\), the point \\((m, m^2+2m-2)\\) satisfies the equation and lies on the line."
             }
           ],
           "timeLimit": 60,
@@ -1652,17 +1665,16 @@
           "meta": {
             "source": "Form II Annual Examination 2022"
           },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\"></svg>"
-          },
           "keyPoints": [
             {
-              "text": "(m,m^2+2m-2)",
-              "note": "A point lies on a line if its coordinates satisfy the equation."
+              "text": "(m, m^2+2m-2)",
+              "note": "A point lies on a line if its coordinates satisfy the linear equation."
+            },
+            {
+              "text": "LHS = RHS",
+              "note": "Substituting x = m produces the exact y-coordinate."
             }
-          ],
-          "manual": true,
-          "answer": "Sample proof: substituting x=m gives y=(m+2)m−2=m²+2m−2, equal to the point’s y-coordinate."
+          ]
         },
         {
           "id": "f2a22-y8-q9ai",
