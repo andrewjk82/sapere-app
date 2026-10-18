@@ -1040,7 +1040,8 @@
                 "pounds and kilograms.",
                 "acres and hectares."
               ],
-              "answer": 3
+              "answer": 3,
+              "xp": 2
             }
           ],
           "meta": {
