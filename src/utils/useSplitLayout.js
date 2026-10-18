@@ -38,23 +38,36 @@ export const useSplitLayout = () => {
   const [choice, setChoiceState] = useState(() => ({ ...DEFAULT_CHOICE, ...readJson(CHOICE_KEY) }));
   const [ratios, setRatios] = useState(() => readJson(RATIO_KEY));
   useEffect(() => {
-    const update = () => setSize(viewport());
+    const update = () => setSize((prev) => { const next = viewport(); return prev.w === next.w && prev.h === next.h ? prev : next; });
+    // Coming back to the app (iPad: from another app / the home screen) may not fire `resize`, which left the
+    // layout on the old orientation: measure again whenever the page is shown or focused.
+    const onVisible = () => { if (document.visibilityState === 'visible') update(); };
     window.addEventListener('resize', update);
     window.addEventListener('orientationchange', update);
+    window.addEventListener('pageshow', update);
+    window.addEventListener('focus', update);
+    document.addEventListener('visibilitychange', onVisible);
     return () => {
       window.removeEventListener('resize', update);
       window.removeEventListener('orientationchange', update);
+      window.removeEventListener('pageshow', update);
+      window.removeEventListener('focus', update);
+      document.removeEventListener('visibilitychange', onVisible);
     };
   }, []);
   const layout = splitLayoutFor(size.w, size.h, choice);
-  const orientation = orientationOf(size.w, size.h);
   const setLayoutChoice = useCallback((next) => {
+    // The orientation is read at the tap, not from state: a stale one would save the choice for the other
+    // orientation and the button would seem to do nothing.
+    const now = viewport();
+    const current = orientationOf(now.w, now.h);
+    setSize((prev) => (prev.w === now.w && prev.h === now.h ? prev : now));
     setChoiceState((prev) => {
-      const merged = { ...prev, [orientation]: next };
+      const merged = { ...prev, [current]: next };
       writeJson(CHOICE_KEY, merged);
       return merged;
     });
-  }, [orientation]);
+  }, []);
   const split = clampSplit(ratios[layout]);
   // `persist` false while dragging (state only), true on release (also saved).
   const setSplit = useCallback((value, persist = false) => {

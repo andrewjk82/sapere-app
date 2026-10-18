@@ -37,7 +37,8 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
       last = splitFraction(rect, { x: ev.clientX, y: ev.clientY }, layout);
       if (!frame) frame = requestAnimationFrame(() => { frame = 0; setLiveSplit(last); });
     };
-    const up = () => {
+    const onHidden = () => { if (document.visibilityState === 'hidden') up(); };
+    function up() {
       if (frame) { cancelAnimationFrame(frame); frame = 0; }
       setDragging(false);
       setLiveSplit(null);
@@ -45,10 +46,15 @@ export const SplitPanes = ({ layout, split, onSplitChange, first, second, active
       window.removeEventListener('pointermove', move);
       window.removeEventListener('pointerup', up);
       window.removeEventListener('pointercancel', up);
-    };
+      window.removeEventListener('blur', up);
+      document.removeEventListener('visibilitychange', onHidden);
+    }
     window.addEventListener('pointermove', move);
     window.addEventListener('pointerup', up);
     window.addEventListener('pointercancel', up);
+    // Leaving the app mid-drag never delivers pointerup: end the drag, or the full-pane overlay stays and swallows taps.
+    window.addEventListener('blur', up);
+    document.addEventListener('visibilitychange', onHidden);
   };
 
   const tabStyle = (on) => ({ position: 'absolute', inset: 0, minWidth: 0, visibility: on ? 'visible' : 'hidden', pointerEvents: on ? 'auto' : 'none' });
