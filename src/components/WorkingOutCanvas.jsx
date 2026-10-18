@@ -1,7 +1,9 @@
 import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, useCallback } from 'react';
 import { flushSync } from 'react-dom';
-import { PenTool, PenLine, Highlighter, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3, Minus, Square, Circle } from 'lucide-react';
+import { PenTool, PenLine, Highlighter, Eraser, MousePointer2, RotateCcw, RotateCw, Trash2, ChevronLeft, ChevronRight, Grid3x3, Minus, Square, Circle, LassoSelect, ClipboardPaste } from 'lucide-react';
 import StickerLayer from './StickerLayer';
+import LassoOverlay from './LassoOverlay';
+import { useLassoTool } from '../utils/useLassoTool';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
@@ -11,7 +13,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.5-pastel-highlighter';
+const CANVAS_VERSION = 'v10.6-lasso';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -236,6 +238,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   // empty page looks like "one stroke appended" and would otherwise skip the repaint.
   const forceRedrawRef = useRef(false);
   const strokesRef = useRef([]);
+  // Strokes left out of the background repaint while a lasso selection is being dragged (shown on the live layer).
+  const hiddenStrokesRef = useRef(null);
 
   const handlersRef = useRef({});
   // Screen px → page units for a canvas currently at `canvas`'s on-screen box.
@@ -420,7 +424,8 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     if (!ctx || !canvas || canvas.width === 0) return;
     const dpr = backScaleRef.current;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    strokesRef.current.forEach(s => replayStroke(ctx, s, dpr));
+    const hidden = hiddenStrokesRef.current;
+    strokesRef.current.forEach(s => { if (!hidden || !hidden.has(s)) replayStroke(ctx, s, dpr); });
     bgRenderedRef.current = strokesRef.current;
   }, []);
 
@@ -454,6 +459,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     clearCanvas(displayCanvasRef.current, tipCtx);
     drawTip(tipCtx, stroke, dpr, predictedPtsRef.current);
   }, []);
+
+  // ─── Lasso tool (select → move / copy / cut / paste / delete) ─────────────────────────────────
+  const noticeRef = useRef(null);                        // set once the history label exists (flashHistory below)
+  const pageKeyRef = useRef('');
+  const padIdRef = useRef(`pad${Math.random().toString(36).slice(2, 7)}`);
+  pageKeyRef.current = `${padIdRef.current}:${currentPage}`;
+  const lasso = useLassoTool({
+    activeTool, strokes, strokesRef, setStrokes, pushUndo, isSubmittedRef,
+    displayCanvasRef, liveCanvasRef, getLiveCtx, getTipCtx,
+    redrawBackground, hiddenStrokesRef, forceRedrawRef, backScaleRef, cssScaleRef,
+    drawStroke, pageKeyRef, noticeRef, canvasWrapperRef,
+  });
 
   // ─── Canvas sizing ────────────────────────────────────────────────────────
   // The canvases always cover the whole A4 page; only their resolution follows the zoom (bounded).
@@ -833,6 +850,12 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     }
     canceledPenStrokeRef.current = null;
 
+    if (activeToolRef.current === 'lasso') {
+      lasso.begin(e, rect);
+      activePointerIdRef.current = null;
+      return;
+    }
+
     if (activeToolRef.current === 'eraser' && eraserModeRef.current === 'stroke') {
       strokeEraseRef.current = { pointerId: e.pointerId, last: pt, base: strokesRef.current, current: strokesRef.current };
       eraseStrokesTo(pt, pt);
@@ -870,6 +893,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerMove = (e) => {
+    if (lasso.isActive(e.pointerId)) {
+      if (e.cancelable !== false) e.preventDefault();
+      lasso.move(e);
+      return;
+    }
     const erase = strokeEraseRef.current;
     if (erase && e.pointerId === erase.pointerId) {
       if (e.cancelable !== false) e.preventDefault();
@@ -920,6 +948,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerUp = (e) => {
+    if (lasso.end(e)) {
+      try { displayCanvasRef.current?.releasePointerCapture?.(e.pointerId); } catch { /* already released */ }
+      if (e.cancelable !== false) e.preventDefault();
+      return;
+    }
     if (finishStrokeErase(e)) { if (e.cancelable !== false) e.preventDefault(); return; }
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
@@ -941,6 +974,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   const onPointerCancel = (e) => {
+    if (lasso.cancel(e)) return;
     if (finishStrokeErase(e)) return;
     if (!isDrawingRef.current || !currentStrokeRef.current) return;
     if (e?.pointerId != null && e.pointerId !== activePointerIdRef.current) return;
@@ -1021,6 +1055,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     historyFlashTimerRef.current = window.setTimeout(() => setHistoryFlash(null), 650);
   };
   useEffect(() => () => window.clearTimeout(historyFlashTimerRef.current), []);
+  noticeRef.current = flashHistory;
 
   // Keyboard (iPad keyboard / laptop): ⌘Z / Ctrl+Z undo, ⇧⌘Z / Ctrl+Y redo — not while typing in a field.
   const historyKeysRef = useRef({});
@@ -1517,6 +1552,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
               { id: 'line', label: 'Straight line', Icon: Minus },
               { id: 'rectangle', label: 'Rectangle', Icon: Square },
               { id: 'circle', label: 'Circle or ellipse', Icon: Circle },
+              { id: 'lasso', label: 'Lasso select — circle strokes to move, copy, cut or delete them', Icon: LassoSelect },
             ].map(({ id, label, Icon }) => {
               const selected = activeTool === id;
               return (
@@ -1533,6 +1569,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
                 </button>
               );
             })}
+            {activeTool === 'lasso' && lasso.canPaste && (
+              <button
+                type="button"
+                onClick={() => lasso.paste()}
+                title="Paste what you copied (⌘V)"
+                aria-label="Paste"
+                style={{ height: '30px', padding: '0 9px', borderRadius: '8px', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', background: '#eef2ff', color: '#4338ca', fontWeight: 800, fontSize: '0.72rem' }}
+              >
+                <ClipboardPaste size={15} /> {!hideTitle && 'Paste'}
+              </button>
+            )}
             <button
               onClick={() => setActiveTool(tool => (tool === 'eraser' ? 'pen' : 'eraser'))}
               title={activeTool === 'eraser' ? 'Eraser — tap again for pen' : 'Eraser'}
@@ -1648,6 +1695,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             ref={displayCanvasRef}
             style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', touchAction: 'none', userSelect: 'none', WebkitUserSelect: 'none', WebkitTouchCallout: 'none', cursor: activeTool === 'eraser' ? 'cell' : 'crosshair' }}
           />
+          {!isSubmitted && activeTool === 'lasso' && (
+            <LassoOverlay
+              selection={lasso.selection}
+              shift={lasso.shift}
+              scale={u}
+              canPaste={lasso.canPaste}
+              onCopy={lasso.copy}
+              onCut={lasso.cut}
+              onDelete={lasso.remove}
+              onPaste={lasso.paste}
+            />
+          )}
           {!isSubmitted && (
             <StickerLayer
               part="editor"
