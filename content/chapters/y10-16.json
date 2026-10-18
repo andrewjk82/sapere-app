@@ -1097,204 +1097,219 @@
           "xp": 3
         },
         {
-          "id": "jr2013-qE",
-          "type": "multipart",
+          "id": "jr2013-qEa",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Section E — proportion, parallel lines, ratio division, simultaneous equations, Venn diagrams, and a rates word problem (parts a–f).",
-          "parts": [
+          "stem": "The value (\\(\\$V\\)) of a type of gemstone is proportional to the square of its weight (\\(w\\) carats). A jeweler buys a particular gemstone worth \\(\\$450\\) in its original form. He accidentally breaks it into two pieces with weights in the ratio \\(1:2\\). Calculate the jeweler's total loss when he sells these two gemstones separately.",
+          "options": [
+            "\\(\\$300\\)",
+            "\\(\\$200\\)",
+            "\\(\\$150\\)",
+            "\\(\\$250\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(V=kw^2\\), find \\(k\\) from the original stone, then find the value of each piece (weights \\(\\tfrac{1}{3}w\\) and \\(\\tfrac{2}{3}w\\)) and compare their total to the original \\(\\$450\\).",
+          "steps": [
             {
-              "id": "jr2013-qEa",
-              "type": "mc",
-              "stem": "(a) The value (\\(\\$V\\)) of a type of gemstone is proportional to the square of its weight (\\(w\\) carats). A jeweler buys a particular gemstone worth \\$450 in its original form. He accidentally breaks it into two pieces with weights in the ratio \\(1:2\\). Calculate the jeweler's total loss when he sells these two gemstones separately.",
-              "options": [
-                "\\$300",
-                "\\$200",
-                "\\$150",
-                "\\$250"
-              ],
-              "answer": 1,
-              "hint": "Write \\(V=kw^2\\), find \\(k\\) from the original stone, then find the value of each piece (weights \\(\\tfrac13w\\) and \\(\\tfrac23w\\)) and compare their total to the original \\$450.",
-              "steps": [
-                {
-                  "explain": "Set up the proportionality equation and find the constant \\(k\\) using the original gemstone.",
-                  "work": "\\(V=kw^2 \\Rightarrow 450=kw^2 \\Rightarrow k=\\dfrac{450}{w^2}\\)"
-                },
-                {
-                  "explain": "The two pieces have weights \\(\\tfrac13w\\) and \\(\\tfrac23w\\) (ratio \\(1:2\\)). Find the value of the first piece.",
-                  "work": "\\(V_1 = k\\left(\\dfrac{w}{3}\\right)^2 = \\dfrac{450}{w^2}\\times\\dfrac{w^2}{9} = \\dfrac{450}{9} = 50\\)"
-                },
-                {
-                  "explain": "Find the value of the second piece.",
-                  "work": "\\(V_2 = k\\left(\\dfrac{2w}{3}\\right)^2 = \\dfrac{450}{w^2}\\times\\dfrac{4w^2}{9} = \\dfrac{1800}{9} = 200\\)"
-                },
-                {
-                  "explain": "Add the two new values and compare to the original \\$450 to find the loss.",
-                  "work": "New total \\(= 50+200 = 250\\); Loss \\(= 450-250 = 200\\)"
-                }
-              ],
-              "xp": 2
+              "explain": "Set up the proportionality equation and find the constant \\(k\\) using the original gemstone.",
+              "work": "\\(V=kw^2 \\Rightarrow 450=kw^2 \\Rightarrow k=\\dfrac{450}{w^2}\\)"
             },
             {
-              "id": "jr2013-qEb",
+              "explain": "The two pieces have weights \\(\\tfrac{1}{3}w\\) and \\(\\tfrac{2}{3}w\\) (ratio \\(1:2\\)). Find the value of the first piece.",
+              "work": "\\(V_1 = k\\left(\\dfrac{w}{3}\\right)^2 = \\dfrac{450}{w^2}\\times\\dfrac{w^2}{9} = \\dfrac{450}{9} = 50\\)"
+            },
+            {
+              "explain": "Find the value of the second piece.",
+              "work": "\\(V_2 = k\\left(\\dfrac{2w}{3}\\right)^2 = \\dfrac{450}{w^2}\\times\\dfrac{4w^2}{9} = \\dfrac{1800}{9} = 200\\)"
+            },
+            {
+              "explain": "Add the two new values and compare to the original \\(\\$450\\) to find the loss.",
+              "work": "\\(\\text{New total} = 50+200 = \\$250\\); \\(\\text{Loss} = 450-250 = \\$200\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "number": "E(a)"
+          },
+          "xp": 2
+        },
+        {
+          "id": "jr2013-qEb",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Line \\(\\ell\\) has the equation \\(2x-5y+1=0\\).",
+          "parts": [
+            {
+              "id": "jr2013-qEb-i",
               "type": "mc",
-              "stem": "(b)(i) Line \\(\\ell\\) has the equation \\(2x-5y+1=0\\). What is the gradient of line \\(\\ell\\)? (ii) Find the value of \\(k\\) so that the equation \\(x-4y+7+k(4x+y-10)=0\\) describes a line which is parallel to line \\(\\ell\\).",
+              "stem": "What is the gradient of line \\(\\ell\\)?",
               "options": [
-                "Gradient \\(=-\\dfrac25\\); \\(k=\\dfrac{22}{3}\\)",
-                "Gradient \\(=\\dfrac25\\); \\(k=\\dfrac{3}{22}\\)",
-                "Gradient \\(=\\dfrac25\\); \\(k=-\\dfrac{3}{22}\\)",
-                "Gradient \\(=\\dfrac52\\); \\(k=\\dfrac{3}{22}\\)"
+                "\\(\\dfrac{2}{5}\\)",
+                "-\\(\\dfrac{2}{5}\\)",
+                "\\(\\dfrac{5}{2}\\)",
+                "-\\(\\dfrac{5}{2}\\)"
               ],
-              "answer": 1,
-              "hint": "Rearrange \\(\\ell\\) into \\(y=mx+b\\) form to read the gradient. For part (ii), collect the family-of-lines equation into general form \\(Ax+By+C=0\\) and set \\(-A/B\\) equal to the gradient of \\(\\ell\\).",
+              "answer": 0,
               "steps": [
                 {
-                  "explain": "Rearrange \\(2x-5y+1=0\\) into gradient-intercept form.",
-                  "work": "\\(5y = 2x+1 \\Rightarrow y=\\dfrac25x+\\dfrac15 \\Rightarrow\\) gradient \\(=\\dfrac25\\)"
-                },
+                  "explain": "Rearrange \\(2x-5y+1=0\\) into gradient-intercept form \\(y = mx + b\\).",
+                  "work": "\\(5y = 2x+1 \\Rightarrow y=\\dfrac{2}{5}x+\\dfrac{1}{5} \\Rightarrow m=\\dfrac{2}{5}\\)"
+                }
+              ]
+            },
+            {
+              "id": "jr2013-qEb-ii",
+              "type": "mc",
+              "stem": "Find the value of \\(k\\) so that the equation \\(x-4y+7+k(4x+y-10)=0\\) describes a line which is parallel to line \\(\\ell\\).",
+              "options": [
+                "\\(\\dfrac{3}{22}\\)",
+                "-\\(\\dfrac{3}{22}\\)",
+                "\\(\\dfrac{22}{3}\\)",
+                "-\\(\\dfrac{22}{3}\\)"
+              ],
+              "answer": 0,
+              "steps": [
                 {
                   "explain": "Expand the family-of-lines equation and collect like terms into general form \\(Ax+By+C=0\\).",
                   "work": "\\(x-4y+7+4kx+ky-10k=0 \\Rightarrow (1+4k)x+(k-4)y+(7-10k)=0\\)"
                 },
                 {
-                  "explain": "The gradient of a line \\(Ax+By+C=0\\) is \\(-A/B\\). Set this equal to the gradient of \\(\\ell\\) (\\(\\tfrac25\\)) and solve for \\(k\\).",
-                  "work": "\\(-\\dfrac{1+4k}{k-4} = \\dfrac25 \\Rightarrow -5(1+4k) = 2(k-4)\\)"
-                },
-                {
-                  "explain": "Expand and solve for \\(k\\).",
-                  "work": "\\(-5-20k = 2k-8 \\Rightarrow 3 = 22k \\Rightarrow k=\\dfrac{3}{22}\\)"
+                  "explain": "The gradient of a line \\(Ax+By+C=0\\) is \\(-\\dfrac{A}{B}\\). Set this equal to the gradient of \\(\\ell\\) (\\(\\dfrac{2}{5}\\)) and solve for \\(k\\).",
+                  "work": "-\\dfrac{1+4k}{k-4} = \\dfrac{2}{5} \\Rightarrow 5(1+4k) = 2(4-k) \\Rightarrow 5+20k = 8-2k \\Rightarrow 22k = 3 \\Rightarrow k=\\dfrac{3}{22}"
                 }
-              ],
-              "xp": 2
-            },
+              ]
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "number": "E(b)"
+          },
+          "xp": 2
+        },
+        {
+          "id": "jr2013-qEc",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The point \\(P(1,y)\\) divides the interval joining \\(A(-5,2)\\) and \\(B(3,-1)\\) in the ratio \\(m:1\\).",
+          "parts": [
             {
-              "id": "jr2013-qEc",
+              "id": "jr2013-qEc-i",
               "type": "mc",
-              "stem": "(c) The point \\(P(1,y)\\) divides the interval joining \\(A(-5,2)\\) and \\(B(3,-1)\\) in the ratio \\(m:1\\). (i) Find the value of \\(m\\). (ii) What is the \\(y\\)-coordinate of \\(P\\)?",
+              "stem": "Find the value of \\(m\\).",
               "options": [
-                "\\(m=3\\); \\(y=-\\dfrac14\\)",
-                "\\(m=3\\); \\(y=\\dfrac14\\)",
-                "\\(m=2\\); \\(y=0\\)",
-                "\\(m=\\dfrac13\\); \\(y=-\\dfrac14\\)"
+                "\\(3\\)",
+                "\\(2\\)",
+                "\\(\\dfrac{1}{3}\\)",
+                "\\(4\\)"
               ],
               "answer": 0,
-              "hint": "Use the section formula for the \\(x\\)-coordinate: \\(1 = \\dfrac{m(3)+1(-5)}{m+1}\\), then use the same ratio for the \\(y\\)-coordinate.",
               "steps": [
                 {
-                  "explain": "Apply the section formula to the \\(x\\)-coordinate.",
-                  "work": "\\(1 = \\dfrac{3m-5}{m+1} \\Rightarrow m+1 = 3m-5\\)"
+                  "explain": "Apply the section formula to the \\(x\\)-coordinate: \\(x_P = \\dfrac{m x_B + 1 x_A}{m+1}\\).",
+                  "work": "\\(1 = \\dfrac{m(3) + 1(-5)}{m+1} \\Rightarrow m+1 = 3m-5\\)"
                 },
                 {
                   "explain": "Solve for \\(m\\).",
-                  "work": "\\(6 = 2m \\Rightarrow m=3\\)"
-                },
-                {
-                  "explain": "Apply the section formula to the \\(y\\)-coordinate using \\(m=3\\).",
-                  "work": "\\(y = \\dfrac{m(-1)+1(2)}{m+1} = \\dfrac{3(-1)+2}{3+1} = \\dfrac{-1}{4}\\)"
+                  "work": "\\(6 = 2m \\Rightarrow m = 3\\)"
                 }
-              ],
-              "xp": 2
+              ]
             },
             {
-              "id": "jr2013-qEd",
+              "id": "jr2013-qEc-ii",
               "type": "mc",
-              "stem": "(d) Solve the following simultaneous equations: \\(3x-2y=1\\) and \\(2y^2-3x^2=5\\).",
+              "stem": "What is the \\(y\\)-coordinate of \\(P\\)?",
               "options": [
-                "\\((x,y) = (3,4)\\) or \\((-1,-2)\\)",
-                "\\((x,y) = (1,1)\\) or \\((-1,-2)\\)",
-                "\\((x,y) = (-3,-4)\\) or \\((1,2)\\)",
-                "\\((x,y) = (3,4)\\) only"
+                "-\\(\\dfrac{1}{4}\\)",
+                "\\(\\dfrac{1}{4}\\)",
+                "-\\(\\dfrac{1}{2}\\)",
+                "\\(0\\)"
               ],
               "answer": 0,
-              "hint": "Make \\(y\\) the subject of the linear equation, substitute into the quadratic equation, and solve the resulting equation in \\(x\\).",
               "steps": [
                 {
-                  "explain": "Rearrange the linear equation to make \\(y\\) the subject.",
-                  "work": "\\(y = \\dfrac{3x-1}{2}\\)"
-                },
-                {
-                  "explain": "Substitute into the second equation and simplify.",
-                  "work": "\\(2\\left(\\dfrac{3x-1}{2}\\right)^2-3x^2=5 \\Rightarrow \\dfrac{(3x-1)^2}{2}-3x^2=5\\)"
-                },
-                {
-                  "explain": "Multiply through by 2 and expand.",
-                  "work": "\\((3x-1)^2-6x^2=10 \\Rightarrow 9x^2-6x+1-6x^2=10 \\Rightarrow 3x^2-6x-9=0\\)"
-                },
-                {
-                  "explain": "Divide by 3 and factorise.",
-                  "work": "\\(x^2-2x-3=0 \\Rightarrow (x-3)(x+1)=0 \\Rightarrow x=3\\) or \\(x=-1\\)"
-                },
-                {
-                  "explain": "Substitute each value of \\(x\\) back into \\(y=\\dfrac{3x-1}{2}\\) to find the corresponding \\(y\\).",
-                  "work": "At \\(x=3\\): \\(y=4\\). At \\(x=-1\\): \\(y=-2\\)."
+                  "explain": "Apply the section formula to the \\(y\\)-coordinate using \\(m=3\\): \\(y_P = \\dfrac{m y_B + 1 y_A}{m+1}\\).",
+                  "work": "\\(y = \\dfrac{3(-1) + 1(2)}{3+1} = \\dfrac{-3+2}{4} = -\\dfrac{1}{4}\\)"
                 }
-              ],
-              "xp": 2
+              ]
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "number": "E(c)"
+          },
+          "xp": 2
+        },
+        {
+          "id": "jr2013-qEd",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the following simultaneous equations:\\n\\\\[ 3x-2y=1 \\\\]\\n\\\\[ 2y^2-3x^2=5 \\\\]",
+          "options": [
+            "\\((x,y) = (3,4)\\text{ or }(-1,-2)\\)",
+            "\\((x,y) = (1,1)\\text{ or }(-1,-2)\\)",
+            "\\((x,y) = (-3,-4)\\text{ or }(1,2)\\)",
+            "\\((x,y) = (3,4)\\text{ only}\\)"
+          ],
+          "answer": 0,
+          "hint": "Make \\(y\\) the subject of the linear equation, substitute into the quadratic equation, and solve the resulting equation in \\(x\\).",
+          "steps": [
+            {
+              "explain": "Rearrange the linear equation to make \\(y\\) the subject.",
+              "work": "\\(y = \\dfrac{3x-1}{2}\\)"
             },
             {
-              "id": "jr2013-qEe",
-              "type": "review",
-              "stem": "(e) In a certain town, 40% of the people have brown hair, 25% have brown eyes, and 15% have brown hair AND brown eyes. (i) Draw a Venn diagram to represent this data. (ii) A person is selected at random from the town. (\\(\\alpha\\)) If he has brown hair, what is the probability that he also has brown eyes? (\\(\\beta\\)) What is the probability that he has neither brown hair nor brown eyes?",
-              "answer": "",
-              "steps": [
-                {
-                  "explain": "Draw two overlapping circles, \"Brown hair\" (H) and \"Brown eyes\" (E), inside a rectangle representing the whole town (U). The overlap represents 15% (both), so \"hair only\" \\(=40\\%-15\\%=25\\%\\) and \"eyes only\" \\(=25\\%-15\\%=10\\%\\), leaving \\(100\\%-25\\%-15\\%-10\\%=50\\%\\) outside both circles.",
-                  "work": "Venn diagram: hair-only \\(=25\\%\\), overlap \\(=15\\%\\), eyes-only \\(=10\\%\\), neither \\(=50\\%\\)"
-                },
-                {
-                  "explain": "For (\\(\\alpha\\)): \"given brown hair, probability of also having brown eyes\" is a conditional probability — the overlap (both) divided by the total with brown hair.",
-                  "work": "\\(P(\\text{eyes}|\\text{hair}) = \\dfrac{P(\\text{both})}{P(\\text{hair})} = \\dfrac{15\\%}{40\\%} = \\dfrac{15}{40} = \\dfrac38\\)"
-                },
-                {
-                  "explain": "For (\\(\\beta\\)): \"neither\" is the region outside both circles, read directly from the Venn diagram.",
-                  "work": "\\(P(\\text{neither}) = 100\\%-(25\\%+15\\%+10\\%) = 50\\% = 0.5\\)"
-                }
-              ],
-              "manual": true,
-              "xp": 2
+              "explain": "Substitute into the second equation and simplify.",
+              "work": "\\(2\\left(\\dfrac{3x-1}{2}\\right)^2-3x^2=5 \\Rightarrow \\dfrac{(3x-1)^2}{2}-3x^2=5\\)"
             },
             {
-              "id": "jr2013-qEf",
-              "type": "mc",
-              "stem": "(f) A tank can be filled by two pipes together in 80 minutes. If the two pipes are used separately, the larger pipe will take 120 minutes less to fill it than the smaller pipe. How long will it take to fill the tank using only the smaller pipe?",
-              "options": [
-                "200 minutes",
-                "120 minutes",
-                "240 minutes",
-                "40 minutes"
-              ],
-              "answer": 2,
-              "hint": "Let \\(T\\) = time for the smaller pipe alone; the larger pipe alone takes \\(T-120\\). Add their individual rates to equal the combined rate of \\(\\tfrac1{80}\\), then solve the resulting quadratic (reject the solution that gives a non-positive time for the larger pipe).",
-              "steps": [
-                {
-                  "explain": "Let \\(T\\) be the time (minutes) for the smaller pipe alone; the larger pipe alone takes \\(T-120\\) minutes. Their rates add to the combined rate.",
-                  "work": "\\(\\dfrac1T+\\dfrac{1}{T-120} = \\dfrac{1}{80}\\)"
-                },
-                {
-                  "explain": "Multiply through by \\(80T(T-120)\\) to clear denominators.",
-                  "work": "\\(80(T-120)+80T = T(T-120)\\)"
-                },
-                {
-                  "explain": "Expand both sides.",
-                  "work": "\\(80T-9600+80T = T^2-120T \\Rightarrow 160T-9600=T^2-120T\\)"
-                },
-                {
-                  "explain": "Rearrange into standard quadratic form.",
-                  "work": "\\(T^2-280T+9600=0\\)"
-                },
-                {
-                  "explain": "Solve using the quadratic formula or factorisation.",
-                  "work": "\\(T = \\dfrac{280\\pm\\sqrt{280^2-4(9600)}}{2} = \\dfrac{280\\pm200}{2} \\Rightarrow T=240\\) or \\(T=40\\)"
-                },
-                {
-                  "explain": "Since the larger pipe's time \\(T-120\\) must be positive, \\(T>120\\) — reject \\(T=40\\).",
-                  "work": "Reject \\(T=40\\) (would give a negative time for the larger pipe); keep \\(T=240\\)"
-                },
-                {
-                  "explain": "State the final answer.",
-                  "work": "\\(\\therefore\\) the smaller pipe alone takes \\(240\\) minutes."
-                }
-              ],
-              "xp": 2
+              "explain": "Multiply through by 2 and expand.",
+              "work": "\\((3x-1)^2-6x^2=10 \\Rightarrow 9x^2-6x+1-6x^2=10 \\Rightarrow 3x^2-6x-9=0\\)"
+            },
+            {
+              "explain": "Divide by 3 and factorise.",
+              "work": "\\(x^2-2x-3=0 \\Rightarrow (x-3)(x+1)=0 \\Rightarrow x=3\\) or \\(x=-1\\)"
+            },
+            {
+              "explain": "Substitute each value of \\(x\\) back into \\(y=\\dfrac{3x-1}{2}\\) to find the corresponding \\(y\\).",
+              "work": "At \\(x=3\\): \\(y=4\\). At \\(x=-1\\): \\(y=-2\\)."
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "number": "E(d)"
+          },
+          "xp": 2
+        },
+        {
+          "id": "jr2013-qEe",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "In a certain town, 40% of the people have brown hair, 25% have brown eyes, and 15% have brown hair AND brown eyes.\\n\\n(i) Draw a Venn diagram to represent this data.\\n\\n(ii) A person is selected at random from the town:\\n(α) If he has brown hair, what is the probability that he also has brown eyes?\\n(β) What is the probability that he has neither brown hair nor brown eyes?",
+          "answer": "Venn diagram: Hair only 25%, Overlap 15%, Eyes only 10%, Neither 50%.\n(α) P(eyes | hair) = 15/40 = 3/8\n(β) P(neither) = 50% = 0.5",
+          "steps": [
+            {
+              "explain": "Draw two overlapping circles, \"Brown hair\" (H) and \"Brown eyes\" (E), inside a rectangle representing the whole town (U). The overlap represents 15% (both), so \"hair only\" \\(=40\\%-15\\%=25\\%\\) and \"eyes only\" \\(=25\\%-15\\%=10\\%\\), leaving \\(100\\%-25\\%-15\\%-10\\%=50\\%\\) outside both circles.",
+              "work": "Venn diagram: hair-only \\(=25\\%\\), overlap \\(=15\\%\\), eyes-only \\(=10\\%\\), neither \\(=50\\%\\)"
+            },
+            {
+              "explain": "For (\\(\\alpha\\)): \"given brown hair, probability of also having brown eyes\" is a conditional probability — the overlap (both) divided by the total with brown hair.",
+              "work": "\\(P(\\text{eyes}|\\text{hair}) = \\dfrac{P(\\text{both})}{P(\\text{hair})} = \\dfrac{15\\%}{40\\%} = \\dfrac{15}{40} = \\dfrac{3}{8}\\)"
+            },
+            {
+              "explain": "For (\\(\\beta\\)): \"neither\" is the region outside both circles, read directly from the Venn diagram.",
+              "work": "\\(P(\\text{neither}) = 100\\%-(25\\%+15\\%+10\\%) = 50\\% = 0.5\\)"
             }
           ],
           "manual": true,
@@ -1302,8 +1317,62 @@
             "source": "James Ruse AHS 2013 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
-            "grade": "10"
-          }
+            "grade": "10",
+            "number": "E(e)"
+          },
+          "xp": 2
+        },
+        {
+          "id": "jr2013-qEf",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tank can be filled by two pipes together in 80 minutes. If the two pipes are used separately, the larger pipe will take 120 minutes less to fill it than the smaller pipe. How long will it take to fill the tank using only the smaller pipe?",
+          "options": [
+            "200 minutes",
+            "120 minutes",
+            "240 minutes",
+            "40 minutes"
+          ],
+          "answer": 2,
+          "hint": "Let \\(T\\) = time for the smaller pipe alone; the larger pipe alone takes \\(T-120\\). Add their individual rates to equal the combined rate of \\(\\tfrac{1}{80}\\), then solve the resulting quadratic (reject the solution that gives a non-positive time for the larger pipe).",
+          "steps": [
+            {
+              "explain": "Let \\(T\\) be the time (minutes) for the smaller pipe alone; the larger pipe alone takes \\(T-120\\) minutes. Their rates add to the combined rate.",
+              "work": "\\(\\dfrac{1}{T}+\\dfrac{1}{T-120} = \\dfrac{1}{80}\\)"
+            },
+            {
+              "explain": "Multiply through by \\(80T(T-120)\\) to clear denominators.",
+              "work": "\\(80(T-120)+80T = T(T-120)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(80T-9600+80T = T^2-120T \\Rightarrow 160T-9600=T^2-120T\\)"
+            },
+            {
+              "explain": "Rearrange into standard quadratic form.",
+              "work": "\\(T^2-280T+9600=0\\)"
+            },
+            {
+              "explain": "Solve using the quadratic formula or factorisation.",
+              "work": "\\(T = \\dfrac{280\\pm\\sqrt{280^2-4(9600)}}{2} = \\dfrac{280\\pm200}{2} \\Rightarrow T=240\\) or \\(T=40\\)"
+            },
+            {
+              "explain": "Since the larger pipe's time \\(T-120\\) must be positive, \\(T>120\\) — reject \\(T=40\\).",
+              "work": "Reject \\(T=40\\) (would give a negative time for the larger pipe); keep \\(T=240\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\therefore\\) the smaller pipe alone takes \\(240\\) minutes."
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10",
+            "number": "E(f)"
+          },
+          "xp": 2
         },
         {
           "id": "y10-16a-q3a",

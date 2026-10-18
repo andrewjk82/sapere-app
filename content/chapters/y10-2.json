@@ -3711,28 +3711,36 @@
         {
           "id": "y10-53pp-q10",
           "difficulty": "medium",
-          "stem": "Write the recurring decimal \\(0.31\\dot{6}\\) as a fraction.",
-          "hint": "Let the decimal equal x; shift once past the non-recurring digits and once past the recurring digit, then subtract.",
+          "stem": "Write the recurring decimal \\(0.3\\dot{1}\\dot{6}\\) as a fraction.",
+          "hint": "Let \\(x = 0.3\\dot{1}\\dot{6}\\). Since two digits repeat ('16'), multiply by 100 to shift one repeating period, then subtract \\(x\\) to eliminate the recurring digits.",
           "steps": [
             {
-              "explain": "Let x be the decimal. Shift two places to move beyond the non-recurring digits, then one more place to include a full repeating block.",
-              "work": "\\(x=0.31666\\ldots,\\qquad 100x=31.666\\ldots,\\qquad 1000x=316.666\\ldots\\)"
+              "explain": "Let \\(x\\) equal the recurring decimal and expand the repeating block '16'.",
+              "work": "\\(x = 0.3161616\\ldots\\)"
             },
             {
-              "explain": "Subtract the equations so the recurring tails cancel.",
-              "work": "\\(1000x-100x=316.666\\ldots-31.666\\ldots\\Rightarrow900x=285\\)"
+              "explain": "Since 2 digits ('16') repeat, multiply both sides by \\(100\\) (\\(10^2\\)) to shift one repeating period across the decimal point.",
+              "work": "\\(100x = 31.6161616\\ldots\\)"
             },
             {
-              "explain": "Solve and reduce the fraction to lowest terms.",
-              "work": "\\(x=\\frac{285}{900}=\\frac{19}{60}\\)"
+              "explain": "Subtract \\(x\\) from \\(100x\\) so the recurring decimal tails cancel out completely.",
+              "work": "\\(\\begin{aligned} 100x &= 31.6161616\\ldots \\\\ -\\quad x &= \\phantom{3}0.3161616\\ldots \\\\ \\hline 99x &= 31.3 \\end{aligned}\\)"
+            },
+            {
+              "explain": "Divide both sides by 99 to solve for \\(x\\), then eliminate the decimal by multiplying numerator and denominator by 10.",
+              "work": "\\(x = \\frac{31.3}{99} = \\frac{313}{990}\\)"
+            },
+            {
+              "explain": "313 is prime and does not divide 990, so the fraction is in simplest form.",
+              "work": "\\(\\boxed{x = \\frac{313}{990}}\\)"
             }
           ],
           "timeLimit": 60,
           "xp": 1,
           "keyPoints": [
             {
-              "text": "\\(0.31\\dot{6}\\)",
-              "note": "The 3 and 1 do not repeat; only the final 6 repeats."
+              "text": "\\(0.3\\dot{1}\\dot{6}\\)",
+              "note": "The dots above 1 and 6 indicate that the 2-digit block '16' repeats indefinitely: 0.3161616…"
             }
           ],
           "meta": {
@@ -3743,13 +3751,13 @@
           },
           "type": "mc",
           "options": [
-            "\\(\\frac{79}{250}\\)",
-            "\\(\\frac{19}{60}\\)",
+            "\\(\\frac{313}{990}\\)",
             "\\(\\frac{316}{999}\\)",
-            "\\(\\frac{157}{500}\\)"
+            "\\(\\frac{19}{60}\\)",
+            "\\(\\frac{79}{250}\\)"
           ],
-          "answer": 1,
-          "solution": "Correct answer: \\(\\frac{19}{60}\\)"
+          "answer": 0,
+          "solution": "Correct answer: \\(\\frac{313}{990}\\)"
         }
       ]
     },
