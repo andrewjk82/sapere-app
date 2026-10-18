@@ -640,23 +640,19 @@
           "type": "review",
           "stem": "WRITTEN EXPRESSION LEVEL 1: TEST 1\n\nInstructions\n\n• This sheet contains a writing task. You will be allowed 25 minutes.\n\n• When you are told, turn this sheet over and read the topic. Spend some of your time thinking about the topic and what you might write. There is space for jotting down your ideas in the answer booklet. Remember the amount you write is not as important as the thoughts you express and the way you express them.\n\n• Write in whatever way you feel is best to complete the writing task.\n\n• If you finish your writing before time is up, use the rest of the time to go over your work and to make any changes which you feel would improve it.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1322\" width=\"100%\" height=\"auto\"><image href=\"/acer/writing-pets.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1322\"/></svg>"
+            "svg": "fig:64b2860f2c"
           },
           "answer": "",
           "timeLimit": 1500,
+          "xp": 9,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 1 · Written Expression",
-            "number": 1
+            "number": 1,
+            "origin": "teacher"
           }
         }
       ]
-    },
-    {
-      "topicId": "sch-acer-maths",
-      "code": "",
-      "title": "Mathematics",
-      "questions": []
     }
   ]
 }
