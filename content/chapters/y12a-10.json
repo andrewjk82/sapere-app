@@ -681,7 +681,7 @@
           "id": "gosford2020-q27",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A continuous random variable \\( X \\) has probability density function \\( f(x)=k(x^2-2x+2) \\) for \\( 1\\le x\\le4 \\), and \\( f(x)=0 \\) otherwise.",
+          "stem": "A continuous random variable \\( X \\) has probability density function \\( f(x) = \\begin{cases} k(x^2-2x+2), & 1\\le x\\le4 \\\\ 0, & \\text{otherwise} \\end{cases} \\).",
           "parts": [
             {
               "id": "gosford2020-q27a",
@@ -724,10 +724,10 @@
               "type": "mc",
               "stem": "(b) Fully define the cumulative distribution function \\( F(x) \\).",
               "options": [
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
-                "\\(F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for all } x\\)",
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{12}-\\dfrac{x^2}{4}+\\dfrac{x}{2}-\\dfrac13 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)"
+                "\\( F(x) = \\begin{cases} 0, & x < 1 \\\\ \\dfrac{x^3}{36} - \\dfrac{x^2}{12} + \\dfrac{x}{6} - \\dfrac{1}{9}, & 1 \\le x \\le 4 \\\\ 1, & x > 4 \\end{cases} \\)",
+                "\\( F(x) = \\begin{cases} 0, & x < 1 \\\\ \\dfrac{x^3}{36} - \\dfrac{x^2}{12} + \\dfrac{x}{6} + \\dfrac{1}{9}, & 1 \\le x \\le 4 \\\\ 1, & x > 4 \\end{cases} \\)",
+                "\\( F(x) = \\begin{cases} 0, & x < 1 \\\\ \\dfrac{x^3}{12} - \\dfrac{x^2}{4} + \\dfrac{x}{2} - \\dfrac{1}{3}, & 1 \\le x \\le 4 \\\\ 1, & x > 4 \\end{cases} \\)",
+                "\\( F(x) = \\begin{cases} 0, & x < 1 \\\\ \\dfrac{x^3}{36} - \\dfrac{x^2}{12} + \\dfrac{x}{6}, & 1 \\le x \\le 4 \\\\ 1, & x > 4 \\end{cases} \\)"
               ],
               "answer": 0,
               "steps": [
@@ -742,6 +742,10 @@
                 {
                   "explain": "Evaluate and simplify, substituting the lower bound value \\( \\tfrac13-1+2=\\tfrac43 \\). Pitfall: forgetting to subtract the constant of integration (the lower-bound value) leaves the \"-1/9\" term off, giving the third distractor.",
                   "work": "\\(F(x) = \\dfrac1{12}\\left(\\dfrac{x^3}{3}-x^2+2x-\\dfrac43\\right) = \\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19\\)"
+                },
+                {
+                  "explain": "Combine all three intervals to state the full piecewise cumulative distribution function.",
+                  "work": "\\(F(x) = \\begin{cases} 0, & x < 1 \\\\ \\dfrac{x^3}{36} - \\dfrac{x^2}{12} + \\dfrac{x}{6} - \\dfrac{1}{9}, & 1 \\le x \\le 4 \\\\ 1, & x > 4 \\end{cases}\\)"
                 }
               ],
               "xp": 1,
@@ -1474,10 +1478,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1,
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
-          }
+          "xp": 1
         }
       ]
     },

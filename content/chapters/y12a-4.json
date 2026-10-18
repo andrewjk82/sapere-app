@@ -612,9 +612,6 @@
           "type": "multipart",
           "difficulty": "hard",
           "stem": "The graph of \\( y=f(x) \\) consists of: a horizontal segment at \\( y=6 \\) from \\( x=0 \\) to \\( x=6 \\); a quarter-circle arc of radius 4 curving down to \\( (10,2) \\); a straight line down to \\( (14,-2) \\); a quarter-circle arc of radius 4 curving down to \\( (18,-6) \\); then a horizontal segment continuing at \\( y=-6 \\).",
-          "figure": {
-            "svg": "fig:3c2f1c81b3"
-          },
           "parts": [
             {
               "id": "gosford2020-q17a",
@@ -654,7 +651,7 @@
               "hint": "The integral from 0 to 12 includes the positive area up to the x-intercept.",
               "keyPoints": [
                 {
-                  "text": "Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx",
+                  "text": "Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx \\)",
                   "note": "The integral from 0 to 12 includes the positive area up to the x-intercept."
                 }
               ],
@@ -698,7 +695,7 @@
               "hint": "The graph lies below the axis after x=12, so subtract that geometric area.",
               "keyPoints": [
                 {
-                  "text": "Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx",
+                  "text": "Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx \\)",
                   "note": "The graph lies below the axis after x=12, so subtract that geometric area."
                 }
               ],
@@ -717,7 +714,7 @@
           "hint": "Use signed area. Split the graph at the x-intercept and at the ends of its straight and circular pieces.",
           "keyPoints": [
             {
-              "text": "The graph of \\( y=f(x) \\) consists of: a",
+              "text": "The graph of \\( y=f(x) \\)",
               "note": "Focus on this condition when choosing the method."
             }
           ],
