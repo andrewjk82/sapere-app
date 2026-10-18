@@ -3512,82 +3512,85 @@
           "id": "y11e1-4c-q19",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Prove the roots properties for the given quadratic equations. Complete the sub-questions.",
+          "stem": "Consider the following quadratic equations, where \\(\\lambda\\) is a real number.\n\n(i) \\(x^2+\\lambda x-2=0\\)\n\n(ii) \\(x^2+(\\lambda+2)x+(\\lambda-3)=0\\)",
           "parts": [
             {
               "id": "y11e1-4c-q19a",
-              "type": "mc",
+              "type": "review",
               "difficulty": "hard",
               "stem": "Prove that the roots of each equation are real and distinct for all real values of \\(\\lambda\\).",
-              "options": [
-                "Not enough data",
-                "Cannot be determined",
-                "None of the above",
-                "Find the discriminant and show that it is positive."
-              ],
-              "answer": 3,
+              "answer": "(i) \\(\\Delta=\\lambda^2-4(1)(-2)=\\lambda^2+8\\ge8>0\\), because \\(\\lambda^2\\ge0\\) for every real \\(\\lambda\\).\n(ii) \\(\\Delta=(\\lambda+2)^2-4(1)(\\lambda-3)=\\lambda^2+4\\lambda+4-4\\lambda+12=\\lambda^2+16\\ge16>0\\).\nBoth discriminants are positive for every real \\(\\lambda\\), so each equation has two real and distinct roots.\nMarking guide (3 marks): 1 correct discriminant for (i) with the reason it is positive; 1 correct discriminant for (ii), expanded and simplified to \\(\\lambda^2+16\\), with the reason it is positive; 1 conclusion that holds for all real \\(\\lambda\\).",
               "steps": [
                 {
-                  "explain": "For the first equation \\(x^2 + \\lambda x - 2 = 0\\), compute the discriminant.",
-                  "work": "\\Delta_1 = \\lambda^2 - 4(1)(-2) = \\lambda^2 + 8"
+                  "explain": "A quadratic \\(ax^2+bx+c=0\\) has two real and distinct roots exactly when its discriminant \\(\\Delta=b^2-4ac\\) is positive. So we must show \\(\\Delta>0\\) for every real \\(\\lambda\\), for BOTH equations.",
+                  "work": "\\(\\Delta=b^2-4ac>0\\ \\Leftrightarrow\\ \\text{two real, distinct roots}\\)"
                 },
                 {
-                  "explain": "Since \\(\\lambda^2 \\ge 0\\) for any real number \\(\\lambda\\), the discriminant \\(\\Delta_1\\) is always strictly positive, guaranteeing real and distinct roots.",
-                  "work": "\\lambda^2 + 8 \\ge 8 > 0"
+                  "explain": "Equation (i): \\(x^2+\\lambda x-2=0\\). Read off \\(a=1\\), \\(b=\\lambda\\), \\(c=-2\\) and substitute.",
+                  "work": "\\(\\Delta_1=\\lambda^2-4(1)(-2)=\\lambda^2+8\\)"
                 },
                 {
-                  "explain": "For the second equation \\(x^2 + (\\lambda + 2)x + (\\lambda - 3) = 0\\), compute the discriminant.",
-                  "work": "\\Delta_2 = (\\lambda + 2)^2 - 4(1)(\\lambda - 3)"
+                  "explain": "The square of any real number is never negative, so \\(\\lambda^2\\ge0\\). Adding 8 makes \\(\\Delta_1\\) at least 8, which is positive whatever \\(\\lambda\\) is.",
+                  "work": "\\(\\lambda^2\\ge0\\ \\Rightarrow\\ \\Delta_1=\\lambda^2+8\\ge8>0\\)"
                 },
                 {
-                  "explain": "Expand and simplify the second discriminant.",
-                  "work": "\\Delta_2 = (\\lambda^2 + 4\\lambda + 4) - 4\\lambda + 12 = \\lambda^2 + 16"
+                  "explain": "Equation (ii): \\(x^2+(\\lambda+2)x+(\\lambda-3)=0\\). Here \\(a=1\\), \\(b=\\lambda+2\\), \\(c=\\lambda-3\\). Square the bracket carefully and distribute the \\(-4\\) over \\((\\lambda-3)\\).",
+                  "work": "\\(\\Delta_2=(\\lambda+2)^2-4(1)(\\lambda-3)=\\lambda^2+4\\lambda+4-4\\lambda+12=\\lambda^2+16\\)"
                 },
                 {
-                  "explain": "Observe that \\(\\Delta_2\\) is also a sum of a perfect square and a positive number, hence always positive.",
-                  "work": "\\lambda^2 + 16 \\ge 16 > 0"
+                  "explain": "Again \\(\\lambda^2\\ge0\\), so \\(\\Delta_2\\) is at least 16, which is positive for every real \\(\\lambda\\).",
+                  "work": "\\(\\lambda^2\\ge0\\ \\Rightarrow\\ \\Delta_2=\\lambda^2+16\\ge16>0\\)"
+                },
+                {
+                  "explain": "Conclusion: \\(\\Delta_1>0\\) and \\(\\Delta_2>0\\) for every real \\(\\lambda\\), so both equations have two real and distinct roots whatever the value of \\(\\lambda\\). Quick check: \\(\\lambda=0\\) gives \\(\\Delta_1=8\\) and \\(\\Delta_2=16\\); \\(\\lambda=-2\\) gives \\(\\Delta_1=12\\) and \\(\\Delta_2=20\\), all positive.",
+                  "work": "\\(\\Delta_1>0\\ \\text{and}\\ \\Delta_2>0\\ \\text{for all real }\\lambda\\)"
                 }
               ],
-              "xp": 4
+              "xp": 4,
+              "manual": true,
+              "solution": "(i) \\(\\Delta=\\lambda^2-4(1)(-2)=\\lambda^2+8\\ge8>0\\), because \\(\\lambda^2\\ge0\\) for every real \\(\\lambda\\).\n(ii) \\(\\Delta=(\\lambda+2)^2-4(1)(\\lambda-3)=\\lambda^2+4\\lambda+4-4\\lambda+12=\\lambda^2+16\\ge16>0\\).\nBoth discriminants are positive for every real \\(\\lambda\\), so each equation has two real and distinct roots.\nMarking guide (3 marks): 1 correct discriminant for (i) with the reason it is positive; 1 correct discriminant for (ii), expanded and simplified to \\(\\lambda^2+16\\), with the reason it is positive; 1 conclusion that holds for all real \\(\\lambda\\)."
             },
             {
               "id": "y11e1-4c-q19b",
-              "type": "mc",
+              "type": "review",
               "difficulty": "hard",
               "stem": "In the case of equation (i) \\(x^2 + \\lambda x - 2 = 0\\), use the concavity and y-intercept of the associated parabola to give an alternative explanation for why the roots are real and distinct.",
-              "options": [
-                "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis zero times.",
-                "does not intersect",
-                "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis once.",
-                "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis twice."
-              ],
-              "answer": 3,
+              "answer": "The parabola \\(y=x^2+\\lambda x-2\\) has a positive coefficient of \\(x^2\\), so it is concave up.\nIts y-intercept is \\(y=-2\\), which is below the x-axis, for every value of \\(\\lambda\\).\nA concave-up parabola that passes through a point below the x-axis must rise above the axis on both sides of that point, so it crosses the x-axis twice (once on each side of the y-axis). Two x-intercepts means two real and distinct roots.\nMarking guide (3 marks): 1 concave up because the coefficient of \\(x^2\\) is positive; 1 y-intercept is \\(-2<0\\); 1 conclusion that the curve crosses the x-axis twice, so there are two real distinct roots.",
               "steps": [
                 {
-                  "explain": "Identify the concavity of the associated parabola \\(y = x^2 + \\lambda x - 2\\). Since the coefficient of \\(x^2\\) is 1 (positive), the parabola is concave upwards.",
-                  "work": "\\mathrm{Concave\\:upwards}"
+                  "explain": "Concavity. The associated parabola is \\(y=x^2+\\lambda x-2\\). The coefficient of \\(x^2\\) is \\(1\\), which is positive, so the parabola opens upwards (concave up) for every value of \\(\\lambda\\). The graph shows two examples, \\(\\lambda=1\\) and \\(\\lambda=-3\\).",
+                  "work": "\\(a=1>0\\ \\Rightarrow\\ \\text{concave up}\\)",
+                  "figure": {
+                    "svg": "fig:edbb7a9d56"
+                  }
                 },
                 {
-                  "explain": "Find the y-intercept of the parabola by setting \\(x = 0\\).",
-                  "work": "y = 0^2 + \\lambda(0) - 2 = -2"
+                  "explain": "y-intercept. Put \\(x=0\\). The \\(\\lambda x\\) term disappears, so the y-intercept is \\(-2\\) whatever \\(\\lambda\\) is. Every one of these parabolas passes through the point \\((0,-2)\\), which lies below the x-axis (highlighted).",
+                  "work": "\\(y=0^2+\\lambda(0)-2=-2\\)",
+                  "figure": {
+                    "svg": "fig:55883b754c"
+                  }
                 },
                 {
-                  "explain": "Since the parabola opens upwards and its vertex/lowest parts must lie below the x-axis (as it passes through the negative y-intercept \\((0, -2)\\)), it must cross the x-axis twice: once on the left and once on the right of the y-axis. This guarantees two real and distinct roots.",
-                  "work": "\\mathrm{Crosses\\:x-axis\\:twice}"
+                  "explain": "Put the two facts together. A concave-up parabola rises without limit on both the far left and the far right. Since it passes through \\((0,-2)\\) below the axis, it must cross the x-axis once to the left of the y-axis and once to the right: exactly two x-intercepts (the green points).",
+                  "work": "\\(\\text{concave up}\\ +\\ \\text{point below the x-axis}\\ \\Rightarrow\\ \\text{two x-intercepts}\\)",
+                  "figure": {
+                    "svg": "fig:d8463a220c"
+                  }
+                },
+                {
+                  "explain": "Conclusion. Two x-intercepts mean two real and distinct roots, for every real \\(\\lambda\\). This agrees with part (a), where \\(\\Delta_1=\\lambda^2+8>0\\). It also agrees with the product of the roots \\(\\dfrac{c}{a}=-2<0\\), which shows one root is positive and one is negative.",
+                  "work": "\\(\\text{two real, distinct roots (one positive, one negative)}\\)",
+                  "figure": {
+                    "svg": "fig:d8463a220c"
+                  }
                 }
               ],
-              "xp": 4
+              "xp": 4,
+              "manual": true,
+              "solution": "The parabola \\(y=x^2+\\lambda x-2\\) has a positive coefficient of \\(x^2\\), so it is concave up.\nIts y-intercept is \\(y=-2\\), which is below the x-axis, for every value of \\(\\lambda\\).\nA concave-up parabola that passes through a point below the x-axis must rise above the axis on both sides of that point, so it crosses the x-axis twice (once on each side of the y-axis). Two x-intercepts means two real and distinct roots.\nMarking guide (3 marks): 1 concave up because the coefficient of \\(x^2\\) is positive; 1 y-intercept is \\(-2<0\\); 1 conclusion that the curve crosses the x-axis twice, so there are two real distinct roots."
             }
           ],
-          "options": [
-            "Information insufficient",
-            "Refer to proof steps for parts a and b.",
-            "Cannot be determined",
-            "None of the above"
-          ],
-          "mc": true,
-          "answer": 1,
-          "solution": "See detailed steps below.",
           "manual": true
         },
         {

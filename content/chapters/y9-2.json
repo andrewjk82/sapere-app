@@ -2645,81 +2645,84 @@
           }
         },
         {
-          "id": "bhs-y9-2023-t4a-q29a",
-          "type": "mc",
+          "id": "bhs-y9-2023-t4a-q29",
+          "type": "multipart",
           "difficulty": "hard",
-          "stem": "Find the square of \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
-          "options": [
-            "\\(12\\)",
-            "\\(2\\)",
-            "\\(22\\)",
-            "\\(\\sqrt{2}\\)"
-          ],
-          "answer": 1,
-          "hint": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms.",
-          "keyPoints": [
+          "stem": "Consider the expression \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
+          "parts": [
             {
-              "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
-              "note": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "Let u = √(6 + √11) and v = √(6 − √11). Then (u − v)² = u² + v² − 2uv.",
-              "work": "\\((u-v)^2=u^2+v^2-2uv\\)"
+              "id": "bhs-y9-2023-t4a-q29a",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(a) Find the square of \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
+              "options": [
+                "\\(12\\)",
+                "\\(2\\)",
+                "\\(22\\)",
+                "\\(\\sqrt{2}\\)"
+              ],
+              "answer": 1,
+              "hint": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms.",
+              "keyPoints": [
+                {
+                  "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
+                  "note": "Square the difference using (u − v)² = u² + v² − 2uv; simplify the product of conjugate inner terms."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Let u = √(6 + √11) and v = √(6 − √11). Then (u − v)² = u² + v² − 2uv.",
+                  "work": "\\((u-v)^2=u^2+v^2-2uv\\)"
+                },
+                {
+                  "explain": "The first two terms add to 12. For uv, multiply conjugates under the square root.",
+                  "work": "\\(12-2\\sqrt{(6+\\sqrt{11})(6-\\sqrt{11})}=12-2\\sqrt{36-11}\\)"
+                },
+                {
+                  "explain": "Evaluate the remaining square root and subtract.",
+                  "work": "\\(12-2\\sqrt{25}=12-10=\\boxed2\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             },
             {
-              "explain": "The first two terms add to 12. For uv, multiply conjugates under the square root.",
-              "work": "\\(12-2\\sqrt{(6+\\sqrt{11})(6-\\sqrt{11})}=12-2\\sqrt{36-11}\\)"
-            },
-            {
-              "explain": "Evaluate the remaining square root and subtract.",
-              "work": "\\(12-2\\sqrt{25}=12-10=\\boxed2\\)"
+              "id": "bhs-y9-2023-t4a-q29b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(b) Hence simplify \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
+              "options": [
+                "\\(2\\)",
+                "\\(2\\sqrt2\\)",
+                "\\(\\sqrt{22}\\)",
+                "\\(\\sqrt2\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive.",
+              "keyPoints": [
+                {
+                  "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
+                  "note": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "The previous result shows the square of the expression is 2.",
+                  "work": "\\(\\left(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\right)^2=2\\)"
+                },
+                {
+                  "explain": "The first square root is larger than the second because 6 + √11 > 6 − √11, so their difference is positive.",
+                  "work": "\\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}>0\\)"
+                },
+                {
+                  "explain": "The positive number whose square is 2 is √2.",
+                  "work": "\\(\\boxed{\\sqrt2}\\)"
+                }
+              ],
+              "timeLimit": 60,
+              "xp": 1
             }
           ],
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "2023 Year 9 Mathematics 5.3 Task 4A",
-            "school": "Ballarat High School",
-            "year": "2023"
-          }
-        },
-        {
-          "id": "bhs-y9-2023-t4a-q29b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Hence simplify \\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\).",
-          "options": [
-            "\\(2\\)",
-            "\\(2\\sqrt2\\)",
-            "\\(\\sqrt{22}\\)",
-            "\\(\\sqrt2\\)"
-          ],
-          "answer": 3,
-          "hint": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive.",
-          "keyPoints": [
-            {
-              "text": "\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}",
-              "note": "Use the result for the square of this expression, and remember that both square roots are real and the difference is positive."
-            }
-          ],
-          "steps": [
-            {
-              "explain": "The previous result shows the square of the expression is 2.",
-              "work": "\\(\\left(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}\\right)^2=2\\)"
-            },
-            {
-              "explain": "The first square root is larger than the second because 6 + √11 > 6 − √11, so their difference is positive.",
-              "work": "\\(\\sqrt{6+\\sqrt{11}}-\\sqrt{6-\\sqrt{11}}>0\\)"
-            },
-            {
-              "explain": "The positive number whose square is 2 is √2.",
-              "work": "\\(\\boxed{\\sqrt2}\\)"
-            }
-          ],
-          "timeLimit": 60,
-          "xp": 1,
           "meta": {
             "source": "2023 Year 9 Mathematics 5.3 Task 4A",
             "school": "Ballarat High School",

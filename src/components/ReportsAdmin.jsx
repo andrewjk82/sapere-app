@@ -1207,6 +1207,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
               </div>
 
               {(() => {
+                const studentImageCount = (item.answerImages || []).filter((url) => url && String(url).trim()).length
+                  || (item.answerImage && String(item.answerImage).trim() ? 1 : 0);
                 const renderStudentPane = () => {
                   // Filter out only truly empty URLs; accept any non-empty URL (data URLs may vary in length)
                   const validImages = (item.answerImages || []).filter((url) => url && String(url).trim().length > 0);
@@ -1222,7 +1224,14 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
                       <>
                         {validImages.map((imgUrl, i) => (
                           <div key={i} style={{ ...GRID_BG, borderBottom: i < validImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px' }}>
-                            <img src={imgUrl} alt={`Student Drawing Page ${i + 1}`} style={{ width: '100%', height: 'auto', maxHeight: hasSubs ? '360px' : '500px', objectFit: 'contain', display: 'block' }} />
+                            {validImages.length > 1 && (
+                              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '10px' }}>
+                                <span style={{ padding: '4px 9px', borderRadius: '999px', background: '#eef2ff', color: '#4f46e5', fontSize: '0.72rem', fontWeight: 800 }}>
+                                  Page {i + 1} of {validImages.length}
+                                </span>
+                              </div>
+                            )}
+                            <img src={imgUrl} alt={`Student drawing, page ${i + 1} of ${validImages.length}`} style={{ width: '100%', height: 'auto', maxHeight: hasSubs ? '360px' : '500px', objectFit: 'contain', display: 'block' }} />
                           </div>
                         ))}
                         {item.answerText && (
@@ -1287,7 +1296,9 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
                   return (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
                       <div>
-                        <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                          Student Answer{studentImageCount > 1 ? ` · ${studentImageCount} pages` : ''}
+                        </span>
                         <div style={{ marginTop: '10px', minHeight: '120px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                           {renderStudentPane()}
                         </div>
@@ -1376,7 +1387,9 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode, onOpenI
                 return (
                   <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: '20px' }}>
                     <div style={{ minWidth: 0 }}>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                        Student Answer{studentImageCount > 1 ? ` · ${studentImageCount} pages` : ''}
+                      </span>
                       <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                         {renderStudentPane()}
                       </div>
