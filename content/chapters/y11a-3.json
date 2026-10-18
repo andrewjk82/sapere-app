@@ -15504,40 +15504,6 @@
       "title": "Powers, cubics, and circles",
       "questions": [
         {
-          "id": "gosford2020-q2",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "What is the value of \\( c \\) for which the circle \\( (x-3)^2+(y-2)^2=c \\) touches the \\( x \\) axis?",
-          "options": [
-            "2",
-            "4",
-            "3",
-            "9"
-          ],
-          "answer": 1,
-          "steps": [
-            {
-              "explain": "The circle has centre \\( (3,2) \\) and radius \\( \\sqrt{c} \\) (since the right-hand side of the circle equation is \\( r^2 \\)). The diagram below shows the circle touching the x-axis at a single point.",
-              "work": "<svg viewBox=\"0 0 226 192\" width=\"226\" height=\"192\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(12,12)\">\n    <line x1=\"0\" y1=\"150\" x2=\"222\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"178\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <text x=\"230\" y=\"154\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n    <text x=\"34\" y=\"6\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n    <circle cx=\"124\" cy=\"94\" r=\"56\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n    <circle cx=\"124\" cy=\"94\" r=\"3\" fill=\"#1e40af\"/>\n    <line x1=\"124\" y1=\"94\" x2=\"124\" y2=\"150\" stroke=\"#1e40af\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n    <circle cx=\"124\" cy=\"150\" r=\"3\" fill=\"#1e40af\"/>\n\n    <text x=\"138\" y=\"86\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(3,2)</text>\n    <text x=\"138\" y=\"122\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">r = 2</text>\n    <text x=\"124\" y=\"168\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(3,0)</text>\n  </g>\n</svg>\n\n\\(\\text{centre } (3,2), \\quad r = \\sqrt{c}\\)"
-            },
-            {
-              "explain": "For the circle to touch the x-axis exactly once, its radius must equal the perpendicular distance from the centre to the x-axis, which is the y-coordinate of the centre.",
-              "work": "\\(r = 2\\)"
-            },
-            {
-              "explain": "Since \\( r^2 = c \\), square the radius. Pitfall: using \\( c=2 \\) directly (forgetting to square) is a common mistake.",
-              "work": "\\(c = r^2 = 2^2 = 4\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q2",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "xp": 3
-        },
-        {
           "id": "y11a-3g-q1a",
           "type": "short",
           "difficulty": "easy",
@@ -16834,77 +16800,6 @@
           },
           "dna": {
             "dnaId": "FUNC-GRAPH-01"
-          }
-        },
-        {
-          "id": "gosford2020-q23",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "Let \\( f(x)=2+\\sqrt{x-3} \\) for \\( x\\ge3 \\), and \\( g(x)=\\dfrac{12}{x}+2 \\) for \\( x\\gt 0 \\).",
-          "parts": [
-            {
-              "id": "gosford2020-q23a",
-              "type": "mc",
-              "stem": "(a) State the domain and range of \\( f(x)=2+\\sqrt{x-3} \\).",
-              "options": [
-                "\\(\\text{Domain: } [3,\\infty), \\ \\text{Range: } [2,\\infty)\\)",
-                "\\(\\text{Domain: } [3,\\infty), \\ \\text{Range: } [0,\\infty)\\)",
-                "\\(\\text{Domain: } (-\\infty,3], \\ \\text{Range: } [2,\\infty)\\)",
-                "\\(\\text{Domain: } [2,\\infty), \\ \\text{Range: } [3,\\infty)\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "The square root requires its argument to be non-negative: \\( x-3\\ge0 \\).",
-                  "work": "\\(x \\ge 3 \\;\\Rightarrow\\; \\text{Domain} = [3,\\infty)\\)"
-                },
-                {
-                  "explain": "\\( \\sqrt{x-3} \\) has minimum value 0 (at \\( x=3 \\)) and increases without bound.",
-                  "work": "\\(\\sqrt{x-3} \\ge 0\\)"
-                },
-                {
-                  "explain": "Add the outer \\( +2 \\) to find the range. Pitfall: reporting the range of \\( \\sqrt{x-3} \\) alone (starting at 0) instead of shifting up by 2.",
-                  "work": "\\(f(x) = 2+\\sqrt{x-3} \\ge 2 \\;\\Rightarrow\\; \\text{Range} = [2,\\infty)\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "gosford2020-q23b",
-              "type": "mc",
-              "stem": "(b) Let \\( h(x)=g(f(x)) \\). Find \\( g(f(12)) \\).",
-              "options": [
-                "\\(\\dfrac{17}{5}\\)",
-                "\\(\\dfrac{22}{5}\\)",
-                "\\(\\dfrac{12}{7}\\)",
-                "7"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Work from the inside out: first evaluate \\( f(12) \\).",
-                  "work": "\\(f(12) = 2+\\sqrt{12-3} = 2+\\sqrt9 = 2+3 = 5\\)"
-                },
-                {
-                  "explain": "Substitute this result into \\( g \\).",
-                  "work": "\\(g(5) = \\dfrac{12}{5}+2\\)"
-                },
-                {
-                  "explain": "Combine over a common denominator. Pitfall: computing \\( f(g(12)) \\) instead (wrong composition order) gives a different, incorrect value.",
-                  "work": "\\(g(5) = \\dfrac{12}{5}+\\dfrac{10}{5} = \\dfrac{22}{5}\\)"
-                }
-              ],
-              "xp": 3
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q23",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "FUNC-COMP-01"
           }
         },
         {

@@ -4693,43 +4693,6 @@
       "title": "Quadratic equations and inequations",
       "questions": [
         {
-          "id": "gosford2020-q5",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Which is the set of all solutions to \\( 2x^2-5x+2\\ge0 \\)?",
-          "options": [
-            "\\(\\left(-\\infty,\\dfrac12\\right]\\cup[2,\\infty)\\)",
-            "\\(\\left[\\dfrac12,2\\right]\\)",
-            "\\(\\left(\\dfrac12,2\\right)\\)",
-            "\\(\\left(-\\infty,\\dfrac12\\right)\\cup(2,\\infty)\\)"
-          ],
-          "answer": 0,
-          "steps": [
-            {
-              "explain": "Factorise the quadratic to find its roots — these are the two points where the parabola (sketched below) crosses the x-axis.",
-              "work": "<svg viewBox=\"0 0 284 230\" width=\"284\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\">\n  <line x1=\"13\" y1=\"170\" x2=\"265\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"55\" y1=\"14\" x2=\"55\" y2=\"212\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 13.0,-1.6 L 15.5,6.3 L 18.0,14.1 L 20.6,21.7 L 23.1,29.1 L 25.6,36.4 L 28.1,43.6 L 30.6,50.5 L 33.2,57.4 L 35.7,64.0 L 38.2,70.5 L 40.7,76.9 L 43.2,83.1 L 45.8,89.2 L 48.3,95.0 L 50.8,100.8 L 53.3,106.4 L 55.8,111.8 L 58.4,117.1 L 60.9,122.2 L 63.4,127.1 L 65.9,131.9 L 68.4,136.6 L 71.0,141.1 L 73.5,145.4 L 76.0,149.6 L 78.5,153.6 L 81.0,157.5 L 83.6,161.2 L 86.1,164.8 L 88.6,168.2 L 91.1,171.4 L 93.6,174.5 L 96.2,177.5 L 98.7,180.2 L 101.2,182.9 L 103.7,185.3 L 106.2,187.7 L 108.8,189.8 L 111.3,191.8 L 113.8,193.7 L 116.3,195.4 L 118.8,196.9 L 121.4,198.3 L 123.9,199.5 L 126.4,200.6 L 128.9,201.5 L 131.4,202.3 L 134.0,202.9 L 136.5,203.3 L 139.0,203.6 L 141.5,203.7 L 144.0,203.7 L 146.6,203.5 L 149.1,203.2 L 151.6,202.7 L 154.1,202.1 L 156.6,201.3 L 159.2,200.4 L 161.7,199.2 L 164.2,198.0 L 166.7,196.6 L 169.2,195.0 L 171.8,193.3 L 174.3,191.4 L 176.8,189.3 L 179.3,187.1 L 181.8,184.8 L 184.4,182.3 L 186.9,179.6 L 189.4,176.8 L 191.9,173.8 L 194.4,170.7 L 197.0,167.4 L 199.5,164.0 L 202.0,160.4 L 204.5,156.7 L 207.0,152.7 L 209.6,148.7 L 212.1,144.5 L 214.6,140.1 L 217.1,135.6 L 219.6,130.9 L 222.2,126.0 L 224.7,121.1 L 227.2,115.9 L 229.7,110.6 L 232.2,105.1 L 234.8,99.5 L 237.3,93.8 L 239.8,87.8 L 242.3,81.7 L 244.8,75.5 L 247.4,69.1 L 249.9,62.6 L 252.4,55.9 L 254.9,49.0 L 257.4,42.0 L 260.0,34.8 L 262.5,27.5 L 265.0,20.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/>\n  <circle cx=\"90\" cy=\"170\" r=\"4\" fill=\"#1e293b\"/>\n  <circle cx=\"195\" cy=\"170\" r=\"4\" fill=\"#1e293b\"/>\n  <line x1=\"90\" y1=\"170\" x2=\"90\" y2=\"228\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/>\n  <line x1=\"195\" y1=\"170\" x2=\"195\" y2=\"228\" stroke=\"#64748b\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/>\n  <text x=\"90\" y=\"188\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=½</text>\n  <text x=\"195\" y=\"188\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=2</text>\n</g>\n</svg>\n\n\\(2x^2-5x+2 = (2x-1)(x-2) = 0 \\;\\Rightarrow\\; x=\\dfrac12,\\;x=2\\)"
-            },
-            {
-              "explain": "Since the coefficient of \\( x^2 \\) is positive, the parabola opens upward, so it sits above the x-axis (green, highlighted below) outside the roots, and below the x-axis (grey) between them.",
-              "work": "<svg viewBox=\"0 0 284 230\" width=\"284\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\">\n  <line x1=\"13\" y1=\"170\" x2=\"265\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"55\" y1=\"14\" x2=\"55\" y2=\"212\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 13.0,-1.6 L 14.9,4.5 L 16.9,10.4 L 18.8,16.3 L 20.7,22.1 L 22.6,27.8 L 24.6,33.4 L 26.5,38.9 L 28.4,44.3 L 30.3,49.7 L 32.3,54.9 L 34.2,60.1 L 36.1,65.1 L 38.0,70.1 L 40.0,75.0 L 41.9,79.8 L 43.8,84.5 L 45.7,89.1 L 47.7,93.6 L 49.6,98.0 L 51.5,102.4 L 53.4,106.6 L 55.4,110.7 L 57.3,114.8 L 59.2,118.8 L 61.1,122.7 L 63.1,126.5 L 65.0,130.2 L 66.9,133.8 L 68.8,137.3 L 70.8,140.7 L 72.7,144.0 L 74.6,147.3 L 76.5,150.5 L 78.5,153.5 L 80.4,156.5 L 82.3,159.4 L 84.2,162.2 L 86.1,164.9 L 88.1,167.5 L 90.0,170.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.6\"/>\n  <path d=\"M 90.0,170.0 L 92.6,173.3 L 95.3,176.4 L 97.9,179.4 L 100.5,182.2 L 103.1,184.8 L 105.8,187.2 L 108.4,189.5 L 111.0,191.6 L 113.6,193.5 L 116.3,195.3 L 118.9,196.9 L 121.5,198.4 L 124.1,199.6 L 126.8,200.7 L 129.4,201.6 L 132.0,202.4 L 134.6,203.0 L 137.3,203.4 L 139.9,203.7 L 142.5,203.8 L 145.1,203.7 L 147.8,203.4 L 150.4,203.0 L 153.0,202.4 L 155.6,201.6 L 158.3,200.7 L 160.9,199.6 L 163.5,198.4 L 166.1,196.9 L 168.8,195.3 L 171.4,193.5 L 174.0,191.6 L 176.6,189.5 L 179.3,187.2 L 181.9,184.8 L 184.5,182.1 L 187.1,179.4 L 189.8,176.4 L 192.4,173.3 L 195.0,170.0\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.8\"/>\n  <path d=\"M 195.0,170.0 L 196.8,167.7 L 198.5,165.4 L 200.3,162.9 L 202.0,160.4 L 203.8,157.8 L 205.5,155.2 L 207.3,152.4 L 209.0,149.6 L 210.8,146.7 L 212.5,143.8 L 214.3,140.7 L 216.0,137.6 L 217.8,134.4 L 219.5,131.1 L 221.3,127.8 L 223.0,124.4 L 224.8,120.9 L 226.5,117.3 L 228.3,113.7 L 230.0,110.0 L 231.8,106.2 L 233.5,102.4 L 235.3,98.4 L 237.0,94.4 L 238.8,90.3 L 240.5,86.2 L 242.3,81.9 L 244.0,77.6 L 245.8,73.2 L 247.5,68.8 L 249.3,64.2 L 251.0,59.6 L 252.8,54.9 L 254.5,50.1 L 256.3,45.3 L 258.0,40.4 L 259.8,35.4 L 261.5,30.3 L 263.3,25.2 L 265.0,20.0\" fill=\"none\" stroke=\"#059669\" stroke-width=\"2.6\"/>\n  <circle cx=\"90\" cy=\"170\" r=\"4\" fill=\"#1e293b\"/>\n  <circle cx=\"195\" cy=\"170\" r=\"4\" fill=\"#1e293b\"/>\n  <line x1=\"13\" y1=\"204.5\" x2=\"90\" y2=\"204.5\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <line x1=\"195\" y1=\"204.5\" x2=\"265\" y2=\"204.5\" stroke=\"#059669\" stroke-width=\"3\"/>\n  <text x=\"65.5\" y=\"196.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">y≥0</text>\n  <text x=\"223\" y=\"196.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">y≥0</text>\n  <text x=\"142.5\" y=\"193.75\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">y&lt;0</text>\n  <text x=\"90\" y=\"188\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=½</text>\n  <text x=\"195\" y=\"188\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=2</text>\n</g>\n</svg>\n\n\\(2x^2-5x+2 \\ge 0 \\text{ for } x \\le \\dfrac12 \\text{ or } x \\ge 2\\)"
-            },
-            {
-              "explain": "Write the solution set using interval notation, including the boundary points since the inequality is non-strict. Pitfall: choosing the interval between the roots (which solves \\( \\le 0 \\) instead) gives the \\([\\tfrac12,2]\\) distractor.",
-              "work": "\\(\\left(-\\infty,\\dfrac12\\right]\\cup[2,\\infty)\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q5",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "ALG-EQ-01"
-          },
-          "xp": 3
-        },
-        {
           "id": "hg2020-q6",
           "type": "mc",
           "difficulty": "medium",

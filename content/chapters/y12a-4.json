@@ -127,78 +127,15 @@
           "dna": {
             "dnaId": "CALC-INT-01"
           },
-          "xp": 3
-        },
-        {
-          "id": "gosford2020-q29",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "Find the following indefinite integrals.",
-          "parts": [
+          "xp": 1,
+          "hint": "Check each equality by using an antiderivative or an area/symmetry fact; look for the one that fails.",
+          "keyPoints": [
             {
-              "id": "gosford2020-q29a",
-              "type": "mc",
-              "stem": "(a) Find \\( \\displaystyle\\int\\sec^2(2x)\\tan^4(2x)\\,dx \\).",
-              "options": [
-                "\\(\\dfrac{\\tan^5(2x)}{5}+c\\)",
-                "\\(\\dfrac{\\tan^5(2x)}{2}+c\\)",
-                "\\(\\tan^5(2x)+c\\)",
-                "\\(\\dfrac{\\tan^5(2x)}{10}+c\\)"
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "This has the form \\( \\int u^4\\,du \\) where \\( u=\\tan(2x) \\), since \\( \\dfrac{du}{dx}=2\\sec^2(2x) \\). Introduce the needed factor of 2.",
-                  "work": "\\(\\int\\sec^2(2x)\\tan^4(2x)\\,dx = \\dfrac12\\int 2\\sec^2(2x)\\tan^4(2x)\\,dx\\)"
-                },
-                {
-                  "explain": "Apply the reverse power rule to the inner function \\( \\tan(2x) \\).",
-                  "work": "\\(= \\dfrac12\\cdot\\dfrac{[\\tan(2x)]^5}{5}+c\\)"
-                },
-                {
-                  "explain": "Simplify. Pitfall: forgetting the \\( \\tfrac12 \\) compensation factor for the chain rule (from differentiating \\( 2x \\)) gives \\( \\tan^5(2x)/5 \\) instead.",
-                  "work": "\\(= \\dfrac{\\tan^5(2x)}{10}+c\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "gosford2020-q29b",
-              "type": "mc",
-              "stem": "(b) Find \\( \\displaystyle\\int\\dfrac{5x^2}{x^3+1}\\,dx \\).",
-              "options": [
-                "\\(\\dfrac53\\ln|x^3+1|+c\\)",
-                "\\(5\\ln|x^3+1|+c\\)",
-                "\\(\\dfrac53\\ln|x^2+1|+c\\)",
-                "\\(\\dfrac{5}{3(x^3+1)}+c\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Note that \\( \\dfrac{d}{dx}(x^3+1)=3x^2 \\), so rewrite the numerator to reveal this derivative, compensating with a constant.",
-                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\int\\dfrac{3x^2}{x^3+1}\\,dx\\)"
-                },
-                {
-                  "explain": "Apply the standard result \\( \\int\\dfrac{u'}{u}\\,dx = \\ln|u|+c \\).",
-                  "work": "\\(= \\dfrac53\\ln|x^3+1|+c\\)"
-                },
-                {
-                  "explain": "Pitfall: forgetting to divide by the compensating factor \\( 3 \\) (using coefficient 5 instead of 5/3) is the most common slip here.",
-                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\ln|x^3+1|+c\\)"
-                }
-              ],
-              "xp": 2
+              "text": "NOT correct",
+              "note": "A definite integral can be checked from symmetry or by evaluating its antiderivative."
             }
           ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q29",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "CALC-INT-01"
-          }
+          "timeLimit": 60
         }
       ]
     },
@@ -448,6 +385,102 @@
             "grade": "12"
           },
           "xp": 1
+        },
+        {
+          "id": "gosford2020-q29",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find the following indefinite integrals.",
+          "parts": [
+            {
+              "id": "gosford2020-q29a",
+              "type": "mc",
+              "stem": "(a) Find \\( \\displaystyle\\int\\sec^2(2x)\\tan^4(2x)\\,dx \\).",
+              "options": [
+                "\\(\\dfrac{\\tan^5(2x)}{5}+c\\)",
+                "\\(\\dfrac{\\tan^5(2x)}{2}+c\\)",
+                "\\(\\tan^5(2x)+c\\)",
+                "\\(\\dfrac{\\tan^5(2x)}{10}+c\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "This has the form \\( \\int u^4\\,du \\) where \\( u=\\tan(2x) \\), since \\( \\dfrac{du}{dx}=2\\sec^2(2x) \\). Introduce the needed factor of 2.",
+                  "work": "\\(\\int\\sec^2(2x)\\tan^4(2x)\\,dx = \\dfrac12\\int 2\\sec^2(2x)\\tan^4(2x)\\,dx\\)"
+                },
+                {
+                  "explain": "Apply the reverse power rule to the inner function \\( \\tan(2x) \\).",
+                  "work": "\\(= \\dfrac12\\cdot\\dfrac{[\\tan(2x)]^5}{5}+c\\)"
+                },
+                {
+                  "explain": "Simplify. Pitfall: forgetting the \\( \\tfrac12 \\) compensation factor for the chain rule (from differentiating \\( 2x \\)) gives \\( \\tan^5(2x)/5 \\) instead.",
+                  "work": "\\(= \\dfrac{\\tan^5(2x)}{10}+c\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "The derivative of tan(2x) is 2sec²(2x), so account for the factor 2.",
+              "keyPoints": [
+                {
+                  "text": "Find",
+                  "note": "The derivative of tan(2x) is 2sec²(2x), so account for the factor 2."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q29b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\displaystyle\\int\\dfrac{5x^2}{x^3+1}\\,dx \\).",
+              "options": [
+                "\\(\\dfrac53\\ln|x^3+1|+c\\)",
+                "\\(5\\ln|x^3+1|+c\\)",
+                "\\(\\dfrac53\\ln|x^2+1|+c\\)",
+                "\\(\\dfrac{5}{3(x^3+1)}+c\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Note that \\( \\dfrac{d}{dx}(x^3+1)=3x^2 \\), so rewrite the numerator to reveal this derivative, compensating with a constant.",
+                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\int\\dfrac{3x^2}{x^3+1}\\,dx\\)"
+                },
+                {
+                  "explain": "Apply the standard result \\( \\int\\dfrac{u'}{u}\\,dx = \\ln|u|+c \\).",
+                  "work": "\\(= \\dfrac53\\ln|x^3+1|+c\\)"
+                },
+                {
+                  "explain": "Pitfall: forgetting to divide by the compensating factor \\( 3 \\) (using coefficient 5 instead of 5/3) is the most common slip here.",
+                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\ln|x^3+1|+c\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "The denominator derivative is 3x², so compensate by a factor 5/3.",
+              "keyPoints": [
+                {
+                  "text": "Find",
+                  "note": "The denominator derivative is 3x², so compensate by a factor 5/3."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q29",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01"
+          },
+          "hint": "For (a), use (u=\tan(2x)). For (b), identify the derivative of the denominator.",
+          "keyPoints": [
+            {
+              "text": "indefinite integrals",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -573,6 +606,123 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "gosford2020-q17",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The graph of \\( y=f(x) \\) consists of: a horizontal segment at \\( y=6 \\) from \\( x=0 \\) to \\( x=6 \\); a quarter-circle arc of radius 4 curving down to \\( (10,2) \\); a straight line down to \\( (14,-2) \\); a quarter-circle arc of radius 4 curving down to \\( (18,-6) \\); then a horizontal segment continuing at \\( y=-6 \\).",
+          "figure": {
+            "svg": "fig:3c2f1c81b3"
+          },
+          "parts": [
+            {
+              "id": "gosford2020-q17a",
+              "type": "mc",
+              "stem": "(a) Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx \\).",
+              "options": [
+                "\\(46+8\\pi\\)",
+                "\\(46+4\\pi\\)",
+                "\\(42+4\\pi\\)",
+                "\\(50+4\\pi\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Split the signed area from x=0 to x=12 into a 6-by-6 rectangle, the region from x=6 to 10 (a 4-by-2 rectangle plus a quarter-circle of radius 4), and the small triangle from x=10 to 12.",
+                  "work": "\\(6\\times6 + 4\\times2 + \\dfrac14\\pi(4)^2 + \\dfrac12(2)(2)\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Evaluate each simple area, keeping the quarter-circle contribution exact.",
+                  "work": "\\(36+8+4\\pi+2=46+4\\pi\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text><path d=\"M208 130 L236 158 L236 130 Z\" fill=\"#ef4444\" fill-opacity=\".24\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><path d=\"M236 130 L236 158 A56 56 0 0 0 292 214 L292 130 Z\" fill=\"#ef4444\" fill-opacity=\".22\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"248\" y=\"185\" font-size=\"10\" fill=\"#b91c1c\">26−4π</text></svg>"
+                  }
+                },
+                {
+                  "explain": "All regions are above the x-axis on this interval, so their areas contribute positively to the definite integral.",
+                  "work": "\\(\\displaystyle\\int_0^{12}f(x)\\,dx=46+4\\pi\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text><path d=\"M208 130 L236 158 L236 130 Z\" fill=\"#ef4444\" fill-opacity=\".24\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><path d=\"M236 130 L236 158 A56 56 0 0 0 292 214 L292 130 Z\" fill=\"#ef4444\" fill-opacity=\".22\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"248\" y=\"185\" font-size=\"10\" fill=\"#b91c1c\">26−4π</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "The integral from 0 to 12 includes the positive area up to the x-intercept.",
+              "keyPoints": [
+                {
+                  "text": "Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx",
+                  "note": "The integral from 0 to 12 includes the positive area up to the x-intercept."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q17b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx \\).",
+              "options": [
+                "\\(66+8\\pi\\)",
+                "\\(20+4\\pi\\)",
+                "\\(20+8\\pi\\)",
+                "\\(72+4\\pi\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Write \\( \\int_0^{18}f = \\int_0^{12}f + \\int_{12}^{18}f \\), and use the part (a) result for the first piece.",
+                  "work": "\\(\\int_0^{12}f(x)\\,dx = 46+4\\pi \\text{ (from part (a))}\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From x=12 to 14 the graph makes a triangle of area 2 below the axis. From x=14 to 18 the area below the axis is a 4-by-6 rectangle minus a quarter-circle of radius 4, so the total negative area is 2+(24-4π)=26-4π.",
+                  "work": "\\(A_{12,18}=\\dfrac12(2)(2)+\\left(4\\times6-\\dfrac14\\pi(4)^2\\right)=26-4\\pi\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text><path d=\"M208 130 L236 158 L236 130 Z\" fill=\"#ef4444\" fill-opacity=\".24\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><path d=\"M236 130 L236 158 A56 56 0 0 0 292 214 L292 130 Z\" fill=\"#ef4444\" fill-opacity=\".22\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"248\" y=\"185\" font-size=\"10\" fill=\"#b91c1c\">26−4π</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Subtract this area because the graph lies below the x-axis between x=12 and x=18.",
+                  "work": "\\(\\int_0^{18}f(x)\\,dx=(46+4\\pi)-(26-4\\pi)=20+8\\pi\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 430 280\" width=\"430\" height=\"280\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:340px;background-color:#f8fafc;border-radius:12px;padding:0.5rem\"><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/><rect x=\"0\" y=\"0\" width=\"430\" height=\"280\" fill=\"#ffffff\"/>\n  <line x1=\"26\" y1=\"130\" x2=\"404\" y2=\"130\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"40\" y1=\"18\" x2=\"40\" y2=\"242\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <text x=\"410\" y=\"134\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n  <text x=\"34\" y=\"14\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n  <path d=\"M 40,46 L 124,46 A 56,56 0 0 1 180,102 L 236,158 A 56,56 0 0 0 292,214 L 404,214\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <line x1=\"124\" y1=\"102\" x2=\"124\" y2=\"46\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"124\" y1=\"102\" x2=\"180\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"236\" y2=\"158\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"292\" y1=\"158\" x2=\"292\" y2=\"214\" stroke=\"#cbd5e1\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/>\n\n  <text x=\"28\" y=\"50\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">6</text>\n  <text x=\"28\" y=\"106\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">2</text>\n  <text x=\"28\" y=\"162\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-2</text>\n  <text x=\"28\" y=\"218\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"end\">-6</text>\n\n  <text x=\"124\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">6</text>\n  <text x=\"180\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">10</text>\n  <text x=\"236\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">14</text>\n  <text x=\"292\" y=\"146\" font-family=\"system-ui\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"1.2\" paint-order=\"stroke\" text-anchor=\"middle\">18</text>\n  <line x1=\"124\" y1=\"127\" x2=\"124\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"180\" y1=\"127\" x2=\"180\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"236\" y1=\"127\" x2=\"236\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"127\" x2=\"292\" y2=\"133\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n<rect x=\"40\" y=\"130\" width=\"84\" height=\"84\" fill=\"#f59e0b\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"72\" y=\"170\" font-size=\"11\" fill=\"#b45309\">36</text><path d=\"M124 130 L124 46 A56 56 0 0 1 180 102 L180 130 Z\" fill=\"#10b981\" fill-opacity=\".30\" stroke=\"#059669\" stroke-width=\"1.4\"/><text x=\"144\" y=\"78\" font-size=\"10\" fill=\"#047857\">8+4π</text><path d=\"M180 102 L208 130 L180 130 Z\" fill=\"#8b5cf6\" fill-opacity=\".25\" stroke=\"#7c3aed\" stroke-width=\"1.4\"/><text x=\"186\" y=\"120\" font-size=\"9\" fill=\"#6d28d9\">2</text><path d=\"M208 130 L236 158 L236 130 Z\" fill=\"#ef4444\" fill-opacity=\".24\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><path d=\"M236 130 L236 158 A56 56 0 0 0 292 214 L292 130 Z\" fill=\"#ef4444\" fill-opacity=\".22\" stroke=\"#dc2626\" stroke-width=\"1.4\"/><text x=\"248\" y=\"185\" font-size=\"10\" fill=\"#b91c1c\">26−4π</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "The graph lies below the axis after x=12, so subtract that geometric area.",
+              "keyPoints": [
+                {
+                  "text": "Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx",
+                  "note": "The graph lies below the axis after x=12, so subtract that geometric area."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q17",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01"
+          },
+          "hint": "Use signed area. Split the graph at the x-intercept and at the ends of its straight and circular pieces.",
+          "keyPoints": [
+            {
+              "text": "The graph of \\( y=f(x) \\) consists of: a",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1108,80 +1258,6 @@
           },
           "dna": {
             "dnaId": "CALC-INT-01"
-          }
-        },
-        {
-          "id": "gosford2020-q17",
-          "type": "multipart",
-          "difficulty": "hard",
-          "stem": "The graph of \\( y=f(x) \\) consists of: a horizontal segment at \\( y=6 \\) from \\( x=0 \\) to \\( x=6 \\); a quarter-circle arc of radius 4 curving down to \\( (10,2) \\); a straight line down to \\( (14,-2) \\); a quarter-circle arc of radius 4 curving down to \\( (18,-6) \\); then a horizontal segment continuing at \\( y=-6 \\).",
-          "figure": {
-            "svg": "fig:3c2f1c81b3"
-          },
-          "parts": [
-            {
-              "id": "gosford2020-q17a",
-              "type": "mc",
-              "stem": "(a) Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx \\).",
-              "options": [
-                "\\(46+8\\pi\\)",
-                "\\(46+4\\pi\\)",
-                "\\(42+4\\pi\\)",
-                "\\(50+4\\pi\\)"
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Break the region \\( 0\\le x\\le12 \\) into simple pieces: the rectangle \\(0\\) to \\(6\\), the region under the first quarter-circle arc down to \\( x=10 \\), and the triangular strip down to \\( x=12 \\).",
-                  "work": "\\((5\\times6) + (6+8) + \\tfrac14\\pi(4)^2 + \\tfrac12(2)(2)\\)"
-                },
-                {
-                  "explain": "Simplify the non-circular pieces numerically.",
-                  "work": "\\(30 + 14 + 4\\pi\\cdot\\tfrac14\\cdot4 + 2 = 46 + 4\\pi \\ \\text{(consolidating the working)}\\)"
-                },
-                {
-                  "explain": "Pitfall: using the full circle area \\( \\pi r^2 \\) instead of a quarter (\\(\\tfrac14\\pi r^2\\)) doubles the \\( \\pi \\)-term incorrectly to \\( 8\\pi \\).",
-                  "work": "\\(\\int_0^{12}f(x)\\,dx = 46+4\\pi\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "gosford2020-q17b",
-              "type": "mc",
-              "stem": "(b) Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx \\).",
-              "options": [
-                "\\(66+8\\pi\\)",
-                "\\(20+4\\pi\\)",
-                "\\(20+8\\pi\\)",
-                "\\(72+4\\pi\\)"
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Write \\( \\int_0^{18}f = \\int_0^{12}f + \\int_{12}^{18}f \\), and use the part (a) result for the first piece.",
-                  "work": "\\(\\int_0^{12}f(x)\\,dx = 46+4\\pi \\text{ (from part (a))}\\)"
-                },
-                {
-                  "explain": "The region from \\( x=12 \\) to \\( x=18 \\) dips below the axis, so its contribution is negative; compute its (positive) area and subtract.",
-                  "work": "\\(\\left|\\int_{12}^{18}f(x)\\,dx\\right| = \\tfrac12(2)(2) + \\left(4\\times6-\\tfrac14\\pi(4)^2\\right) = 26-4\\pi\\)"
-                },
-                {
-                  "explain": "Combine, subtracting the below-axis contribution. Pitfall: adding instead of subtracting the negative region gives \\( 72+4\\pi\\ \\) style overshoots.",
-                  "work": "\\(\\int_0^{18}f(x)\\,dx = (46+4\\pi) - (26-4\\pi) = 20+8\\pi\\)"
-                }
-              ],
-              "xp": 2
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q17",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "CALC-AREA-01"
           }
         },
         {

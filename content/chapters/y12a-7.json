@@ -343,7 +343,15 @@
                   "work": "\\((t+2)(t-1)=0 \\;\\Rightarrow\\; t=-2 \\text{ (rejected)} \\text{ or } t=1\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "Set v=0 and discard roots outside t≥0.",
+              "keyPoints": [
+                {
+                  "text": "At what time",
+                  "note": "Set v=0 and discard roots outside t≥0."
+                }
+              ],
+              "timeLimit": 60
             },
             {
               "id": "gosford2020-q26b",
@@ -370,7 +378,15 @@
                   "work": "\\(\\text{distance} = |4\\ln2-1| + |4\\ln3-4\\ln2-3| = (4\\ln2-1)+(3+4\\ln2-4\\ln3) = 8\\ln2+2-4\\ln3\\text{ m}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "Integrate velocity on each sign interval and add the absolute displacements.",
+              "keyPoints": [
+                {
+                  "text": "exact distance",
+                  "note": "Integrate velocity on each sign interval and add the absolute displacements."
+                }
+              ],
+              "timeLimit": 60
             }
           ],
           "meta": {
@@ -381,7 +397,16 @@
           },
           "dna": {
             "dnaId": "CALC-MOTION-01"
-          }
+          },
+          "hint": "The particle changes direction when its velocity is zero. For distance, split the integral where the velocity changes sign.",
+          "keyPoints": [
+            {
+              "text": "velocity",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "hg2020-q27",

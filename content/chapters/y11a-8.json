@@ -4815,47 +4815,6 @@
           "xp": 1
         },
         {
-          "id": "gosford2020-q14",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Solve \\( 2\\log x=\\log(5x+6) \\).",
-          "options": [
-            "\\(x=6 \\text{ or } x=-1\\)",
-            "x=6",
-            "x=-1",
-            "x=11"
-          ],
-          "answer": 1,
-          "steps": [
-            {
-              "explain": "Use the log power law \\( 2\\log x=\\log(x^2) \\) to combine the left side into a single logarithm.",
-              "work": "\\(\\log(x^2) = \\log(5x+6)\\)"
-            },
-            {
-              "explain": "Since the logarithm function is one-to-one, equate the arguments.",
-              "work": "\\(x^2 = 5x+6 \\;\\Rightarrow\\; x^2-5x-6=0\\)"
-            },
-            {
-              "explain": "Factorise and solve the resulting quadratic.",
-              "work": "\\((x-6)(x+1)=0 \\;\\Rightarrow\\; x=6 \\text{ or } x=-1\\)"
-            },
-            {
-              "explain": "Check both solutions against the domain of \\( \\log x \\), which requires \\( x\\gt 0 \\). Pitfall: forgetting to reject \\( x=-1 \\) (undefined logarithm) is the most common error here.",
-              "work": "\\(x=-1 \\text{ is rejected (log of a negative number is undefined)} \\;\\Rightarrow\\; x=6\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q14",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "ALG-LOG-01"
-          },
-          "xp": 2
-        },
-        {
           "id": "hillsgrammar-25-2u-q3",
           "type": "mc",
           "difficulty": "easy",

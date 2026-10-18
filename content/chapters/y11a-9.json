@@ -1039,43 +1039,6 @@
           "xp": 1
         },
         {
-          "id": "gosford2020-q3",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "What is the equation of the tangent to \\( y=x^2-3 \\) at \\( x=-1 \\)?",
-          "options": [
-            "y=2x-4",
-            "\\(y=\\dfrac{x}{2}-\\dfrac{3}{2}\\)",
-            "y=-2x-4",
-            "\\(y=-\\dfrac{x}{2}-\\dfrac{3}{2}\\)"
-          ],
-          "answer": 2,
-          "steps": [
-            {
-              "explain": "Differentiate \\( y=x^2-3 \\) to find the gradient function.",
-              "work": "\\(\\dfrac{dy}{dx} = 2x\\)"
-            },
-            {
-              "explain": "Substitute \\( x=-1 \\) to find the gradient of the tangent at that point, and find the y-coordinate of the point of contact.",
-              "work": "\\(\\text{gradient} = 2(-1) = -2, \\qquad y = (-1)^2-3 = -2 \\;\\Rightarrow\\; (-1,-2)\\)"
-            },
-            {
-              "explain": "Use the point-gradient form \\( y-y_1=m(x-x_1) \\). Pitfall: using the gradient at the wrong sign or the wrong point gives the y=2x-4 distractor.",
-              "work": "\\(y-(-2) = -2(x-(-1)) \\;\\Rightarrow\\; y = -2x-4\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q3",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "CALC-TAN-01"
-          },
-          "xp": 2
-        },
-        {
           "id": "hh2020-q1",
           "type": "mc",
           "difficulty": "easy",

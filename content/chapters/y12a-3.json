@@ -2452,6 +2452,93 @@
             "grade": "12"
           },
           "xp": 4
+        },
+        {
+          "id": "gosford2020-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the equation of the tangent to \\( y=x^2-3 \\) at \\( x=-1 \\)?",
+          "options": [
+            "y=2x-4",
+            "\\(y=\\dfrac{x}{2}-\\dfrac{3}{2}\\)",
+            "y=-2x-4",
+            "\\(y=-\\dfrac{x}{2}-\\dfrac{3}{2}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Differentiate \\( y=x^2-3 \\) to find the gradient function.",
+              "work": "\\(\\dfrac{dy}{dx} = 2x\\)"
+            },
+            {
+              "explain": "Substitute \\( x=-1 \\) to find the gradient of the tangent at that point, and find the y-coordinate of the point of contact.",
+              "work": "\\(\\text{gradient} = 2(-1) = -2, \\qquad y = (-1)^2-3 = -2 \\;\\Rightarrow\\; (-1,-2)\\)"
+            },
+            {
+              "explain": "Use the point-gradient form \\( y-y_1=m(x-x_1) \\). Pitfall: using the gradient at the wrong sign or the wrong point gives the y=2x-4 distractor.",
+              "work": "\\(y-(-2) = -2(x-(-1)) \\;\\Rightarrow\\; y = -2x-4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q3",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01"
+          },
+          "xp": 1,
+          "hint": "Differentiate (y=x^2-3) to get the tangent gradient at (x=-1).",
+          "keyPoints": [
+            {
+              "text": "tangent",
+              "note": "The tangent gradient is the derivative evaluated at the given x-coordinate."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "gosford2020-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the value of \\( c \\) for which the circle \\( (x-3)^2+(y-2)^2=c \\) touches the \\( x \\) axis?",
+          "options": [
+            "2",
+            "4",
+            "3",
+            "9"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The circle has centre \\( (3,2) \\) and radius \\( \\sqrt{c} \\) (since the right-hand side of the circle equation is \\( r^2 \\)). The diagram below shows the circle touching the x-axis at a single point.",
+              "work": "<svg viewBox=\"0 0 226 192\" width=\"226\" height=\"192\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(12,12)\">\n    <line x1=\"0\" y1=\"150\" x2=\"222\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"178\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <text x=\"230\" y=\"154\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\">x</text>\n    <text x=\"34\" y=\"6\" font-family=\"system-ui\" font-size=\"12\" fill=\"#475569\" text-anchor=\"end\">y</text>\n\n    <circle cx=\"124\" cy=\"94\" r=\"56\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n    <circle cx=\"124\" cy=\"94\" r=\"3\" fill=\"#1e40af\"/>\n    <line x1=\"124\" y1=\"94\" x2=\"124\" y2=\"150\" stroke=\"#1e40af\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n    <circle cx=\"124\" cy=\"150\" r=\"3\" fill=\"#1e40af\"/>\n\n    <text x=\"138\" y=\"86\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(3,2)</text>\n    <text x=\"138\" y=\"122\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">r = 2</text>\n    <text x=\"124\" y=\"168\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(3,0)</text>\n  </g>\n</svg>\n\n\\(\\text{centre } (3,2), \\quad r = \\sqrt{c}\\)"
+            },
+            {
+              "explain": "For the circle to touch the x-axis exactly once, its radius must equal the perpendicular distance from the centre to the x-axis, which is the y-coordinate of the centre.",
+              "work": "\\(r = 2\\)"
+            },
+            {
+              "explain": "Since \\( r^2 = c \\), square the radius. Pitfall: using \\( c=2 \\) directly (forgetting to square) is a common mistake.",
+              "work": "\\(c = r^2 = 2^2 = 4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q2",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "xp": 1,
+          "hint": "The radius is the perpendicular distance from the centre ((3,2)) to the (x)-axis.",
+          "keyPoints": [
+            {
+              "text": "What is the value of \\( c \\) for which the",
+              "note": "A tangent radius is perpendicular to the axis at the point of contact."
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -8647,7 +8734,15 @@
                   "work": "\\(f''(x)=6x+12; \\ f''(-3)=-6\\lt 0\\Rightarrow\\text{max}; \\ f''(-1)=6\\gt 0\\Rightarrow\\text{min}\\)"
                 }
               ],
-              "xp": 3
+              "xp": 1,
+              "hint": "Solve f′(x)=0 and classify each stationary point with f″.",
+              "keyPoints": [
+                {
+                  "text": "stationary points",
+                  "note": "Solve f′(x)=0 and classify each stationary point with f″."
+                }
+              ],
+              "timeLimit": 60
             },
             {
               "id": "gosford2020-q20b",
@@ -8674,7 +8769,15 @@
                   "work": "\\(f(-2)=-8+24-18+4=2 \\;\\Rightarrow\\; (-2,2)\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "A point of inflection requires a change in concavity.",
+              "keyPoints": [
+                {
+                  "text": "Find the point(s) of inflection of \\( f(x)",
+                  "note": "A point of inflection requires a change in concavity."
+                }
+              ],
+              "timeLimit": 60
             },
             {
               "id": "gosford2020-q20c",
@@ -8696,7 +8799,15 @@
                 }
               ],
               "manual": true,
-              "xp": 3
+              "xp": 1,
+              "hint": "Plot the key features and endpoints, then join them with the correct cubic shape.",
+              "keyPoints": [
+                {
+                  "text": "Sketch",
+                  "note": "Plot the key features and endpoints, then join them with the correct cubic shape."
+                }
+              ],
+              "timeLimit": 60
             },
             {
               "id": "gosford2020-q20d",
@@ -8723,7 +8834,15 @@
                   "work": "\\(\\text{global maximum} = 20 \\text{ at } x=1\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "Compare f at both endpoints and all stationary points in the interval.",
+              "keyPoints": [
+                {
+                  "text": "global maximum",
+                  "note": "Compare f at both endpoints and all stationary points in the interval."
+                }
+              ],
+              "timeLimit": 60
             }
           ],
           "manual": true,
@@ -8735,7 +8854,16 @@
           },
           "dna": {
             "dnaId": "CALC-STAT-01"
-          }
+          },
+          "hint": "Differentiate once for stationary points and twice for concavity; check the stated interval endpoints for the global maximum.",
+          "keyPoints": [
+            {
+              "text": "Consider \\( f(x)=x^3+6x^2+9x+4 \\) for \\(",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "hh2020-q24",
@@ -12206,51 +12334,100 @@
           "parts": [
             {
               "id": "gosford2020-q32a",
-              "type": "review",
-              "stem": "(a) Show that \\( l^2=\\dfrac{450}{\\pi} \\).",
-              "answer": "Sector area formula with θ=4π/3 and A=300 gives l² = 450/π.",
+              "type": "mc",
+              "stem": "(a) Which value of \\(l^2\\) follows from the sector area and angle?",
+              "answer": 0,
               "steps": [
                 {
                   "explain": "The sector used to form the cone (highlighted below) has area \\(300\\text{ cm}^2\\) and angle \\(\\dfrac{4\\pi}{3}\\) — this is what determines the slant height \\(l\\). Use the sector area formula \\(A=\\dfrac12 l^2\\theta\\).",
-                  "work": "<svg viewBox=\"0 0 208 208\" width=\"208\" height=\"208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><circle cx=\"90\" cy=\"90\" r=\"70\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><path d=\"M 90,90 L 125.0,29.4 A 70,70 0 1 1 20.0,90.0 Z\" fill=\"#bae6fd\" fill-opacity=\"0.6\" stroke=\"#0284c7\" stroke-width=\"2\"/><line x1=\"90\" y1=\"90\" x2=\"125.0\" y2=\"29.4\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"90\" cy=\"90\" r=\"2.5\" fill=\"#334155\"/><text x=\"109.25\" y=\"48.65802195429911\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">l</text><text x=\"106\" y=\"117.71281292110203\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">4π/3</text><text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">300 cm²</text></g>\n</svg>\n\n\\(300 = \\dfrac12 l^2\\left(\\dfrac{4\\pi}{3}\\right)\\)"
+                  "work": "<svg viewBox=\"0 0 208 208\" width=\"208\" height=\"208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><circle cx=\"90\" cy=\"90\" r=\"70\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"1.3\" stroke-dasharray=\"3 3\"/><path d=\"M 90,90 L 125.0,29.4 A 70,70 0 1 1 20.0,90.0 Z\" fill=\"#bae6fd\" fill-opacity=\"0.6\" stroke=\"#0284c7\" stroke-width=\"2\"/><line x1=\"90\" y1=\"90\" x2=\"125.0\" y2=\"29.4\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"90\" cy=\"90\" r=\"2.5\" fill=\"#334155\"/><text x=\"109.25\" y=\"48.65802195429911\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">l</text><text x=\"106\" y=\"117.71281292110203\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">4π/3</text><text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#0369a1\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">300 cm²</text></g>\n</svg>\n\n\\(300 = \\dfrac12 l^2\\left(\\dfrac{4\\pi}{3}\\right)\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#d97706\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">removed 2π/3</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Simplify the right side.",
-                  "work": "\\(300 = \\dfrac{2\\pi}{3}l^2\\)"
+                  "work": "\\(300 = \\dfrac{2\\pi}{3}l^2\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#d97706\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">removed 2π/3</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Solve for \\(l^2\\) by multiplying both sides by \\(\\dfrac{3}{2\\pi}\\). Pitfall: forgetting the area formula uses \\(\\dfrac12 l^2\\theta\\) (with the \\(\\dfrac12\\)), not \\(l^2\\theta\\), doubles the answer.",
-                  "work": "\\(l^2 = 300\\times\\dfrac{3}{2\\pi} = \\dfrac{900}{2\\pi} = \\dfrac{450}{\\pi}\\)"
+                  "work": "\\(l^2 = 300\\times\\dfrac{3}{2\\pi} = \\dfrac{900}{2\\pi} = \\dfrac{450}{\\pi}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#fde68a\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#d97706\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#d97706\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">removed 2π/3</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 }
               ],
-              "manual": true,
-              "xp": 5
+              "xp": 1,
+              "hint": "The remaining sector is 2π−2π/3=4π/3 radians.",
+              "keyPoints": [
+                {
+                  "text": "sector area and angle",
+                  "note": "The sector used has angle \\(2\\pi-2\\pi/3=4\\pi/3\\); use \\(A=\\tfrac12l^2\\theta\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "options": [
+                "\\(\\dfrac{450}{\\pi}\\text{ cm}^2\\)",
+                "\\(\\dfrac{900}{\\pi}\\text{ cm}^2\\)",
+                "\\(\\dfrac{300}{\\pi}\\text{ cm}^2\\)",
+                "\\(\\dfrac{150}{\\pi}\\text{ cm}^2\\)"
+              ],
+              "solution": "The sector area is \\(300=\\tfrac12 l^2(4\\pi/3)\\), so \\(l^2=450/\\pi\\)."
             },
             {
               "id": "gosford2020-q32b",
-              "type": "review",
-              "stem": "(b) Given \\( h=\\sqrt{l^2-r^2} \\), show that \\( V=\\dfrac13r^2\\sqrt{450\\pi-\\pi^2r^2} \\).",
-              "answer": "Substituting l²=450/π into V=(1/3)πr²h=(1/3)πr²√(l²-r²) and simplifying gives V=(1/3)r²√(450π-π²r²).",
+              "type": "mc",
+              "stem": "(b) After substituting \\(l^2=\\dfrac{450}{\\pi}\\) into the cone volume formula, which expression for \\(V\\) is correct?",
+              "answer": 0,
               "steps": [
                 {
                   "explain": "Start from the cone volume formula \\(V=\\dfrac13\\pi r^2h\\) and substitute the given expression for \\(h\\) in terms of \\(l\\) and \\(r\\) (the slant height, radius, and height — all shown on the cone below — are related by Pythagoras).",
-                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13\\pi r^2h = \\dfrac13\\pi r^2\\sqrt{l^2-r^2}\\)"
+                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13\\pi r^2h = \\dfrac13\\pi r^2\\sqrt{l^2-r^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#d97706\" stroke-width=\"2.7\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Substitute \\(l^2=\\dfrac{450}{\\pi}\\) from part (a) — this replaces the slant height \\(l\\) (highlighted below) with the known constant from the sector.",
-                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13\\pi r^2\\sqrt{\\dfrac{450}{\\pi}-r^2}\\)"
+                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13\\pi r^2\\sqrt{\\dfrac{450}{\\pi}-r^2}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#d97706\" stroke-width=\"2.7\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Bring the \\(\\pi\\) outside the root inside as \\(\\pi=\\sqrt{\\pi^2}\\) so it can combine with the square root, keeping the radius \\(r\\) (highlighted below) as the only remaining variable.",
-                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13r^2\\cdot\\pi\\sqrt{\\dfrac{450}{\\pi}-r^2} = \\dfrac13r^2\\sqrt{\\pi^2\\left(\\dfrac{450}{\\pi}-r^2\\right)}\\)"
+                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(V = \\dfrac13r^2\\cdot\\pi\\sqrt{\\dfrac{450}{\\pi}-r^2} = \\dfrac13r^2\\sqrt{\\pi^2\\left(\\dfrac{450}{\\pi}-r^2\\right)}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#d97706\" stroke-width=\"2.7\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Distribute \\(\\pi^2\\) inside the root. Pitfall: forgetting to square \\(\\pi\\) when moving it inside the square root (writing \\(\\pi\\cdot450-\\pi r^2\\) instead) gives a wrong, non-matching expression.",
-                  "work": "\\(V = \\dfrac13r^2\\sqrt{450\\pi-\\pi^2r^2} \\ \\blacksquare\\)"
+                  "work": "\\(V = \\dfrac13r^2\\sqrt{450\\pi-\\pi^2r^2} \\ \\blacksquare\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#d97706\" stroke-width=\"2.7\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 }
               ],
-              "manual": true,
-              "xp": 5
+              "xp": 1,
+              "hint": "Use the cone radius and vertical height in V=πr²h/3.",
+              "keyPoints": [
+                {
+                  "text": "cone volume formula",
+                  "note": "Substitute the slant-height result into \\(V=\\tfrac13\\pi r^2h\\), with \\(h=\\sqrt{l^2-r^2}\\)."
+                }
+              ],
+              "timeLimit": 60,
+              "options": [
+                "\\(\\dfrac13r^2\\sqrt{450\\pi-\\pi^2r^2}\\)",
+                "\\(\\dfrac13r^2\\sqrt{450-\\pi^2r^2}\\)",
+                "\\(\\pi r^2\\sqrt{\\dfrac{450}{\\pi}-r^2}\\)",
+                "\\(\\dfrac13r^2\\sqrt{450\\pi+r^2}\\)"
+              ],
+              "solution": "Use \\(V=\\tfrac13\\pi r^2\\sqrt{l^2-r^2}\\), substitute \\(l^2=450/\\pi\\), and combine \\(\\pi\\) with the radical."
             },
             {
               "id": "gosford2020-q32c",
@@ -12266,18 +12443,35 @@
               "steps": [
                 {
                   "explain": "Stationary points occur where \\(dV/dr=0\\), i.e. where the numerator of the given derivative is zero. We are solving for the highlighted radius \\(r\\) below — the value that makes the cone's volume as large as possible.",
-                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(300\\pi r-\\pi^2r^3 = 0\\)"
+                  "work": "<svg viewBox=\"0 0 208 188\" width=\"208\" height=\"188\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,14)\"><line x1=\"90\" y1=\"20\" x2=\"35\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"90\" y1=\"20\" x2=\"145\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\"/><path d=\"M 35,150 A 55,16 0 0 0 145,150\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M 35,150 A 55,16 0 0 1 145,150\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.3\" stroke-dasharray=\"3 2\"/><path d=\"M 90,20 L 35,150 A 55,16 0 0 0 145,150 Z\" fill=\"#dbeafe\" fill-opacity=\"0.3\" stroke=\"none\"/><line x1=\"90\" y1=\"150\" x2=\"145\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\" stroke-dasharray=\"0\"/><line x1=\"90\" y1=\"20\" x2=\"90\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"150\" r=\"2\" fill=\"#334155\"/><text x=\"52.5\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">l</text><text x=\"117.5\" y=\"166\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">r</text><text x=\"102\" y=\"85\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">h</text></g>\n</svg>\n\n\\(300\\pi r-\\pi^2r^3 = 0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Factor out \\(\\pi r\\) and, since \\(r\\gt 0\\) for a physical cone, divide it out.",
-                  "work": "\\(\\pi r(300-\\pi r^2)=0 \\;\\Rightarrow\\; 300-\\pi r^2=0\\)"
+                  "work": "\\(\\pi r(300-\\pi r^2)=0 \\;\\Rightarrow\\; 300-\\pi r^2=0\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 },
                 {
                   "explain": "Solve for \\(r\\). A sign test either side of this value (\\(dV/dr\\gt 0\\) before, \\(\\lt 0\\) after) confirms it is a maximum, not a minimum.",
-                  "work": "\\(r^2 = \\dfrac{300}{\\pi} \\;\\Rightarrow\\; r=\\sqrt{\\dfrac{300}{\\pi}}\\)"
+                  "work": "\\(r^2 = \\dfrac{300}{\\pi} \\;\\Rightarrow\\; r=\\sqrt{\\dfrac{300}{\\pi}}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#d97706\" stroke-width=\"2.7\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
+                  }
                 }
               ],
-              "xp": 5
+              "xp": 1,
+              "hint": "Set the derivative numerator to zero, then verify a sign change from positive to negative.",
+              "keyPoints": [
+                {
+                  "text": "Given \\( \\dfrac{dV}{dr}=\\dfrac{300\\pi r-\\pi^2r^3}{\\sqrt{450\\pi-\\pi^2r^2}}",
+                  "note": "Set the derivative numerator to zero, then verify a sign change from positive to negative."
+                }
+              ],
+              "timeLimit": 60
             }
           ],
           "manual": true,
@@ -12289,6 +12483,18 @@
           },
           "dna": {
             "dnaId": "CALC-OPT-01"
+          },
+          "hint": "Use the remaining sector angle to relate its area to (l); then use (l^2=h^2+r^2) for the cone.",
+          "keyPoints": [
+            {
+              "text": "cone",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 210\" width=\"420\" height=\"210\" style=\"display:block;margin:.5rem auto;max-width:420px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"420\" height=\"210\" fill=\"#fff\"/><text x=\"14\" y=\"20\" font-size=\"12\" font-weight=\"700\">Sector area = 300 cm²</text><path d=\"M 118 108 L 60 45 A 86 86 0 1 1 60 171 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"45\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"118\" y1=\"108\" x2=\"60\" y2=\"171\" stroke=\"#334155\" stroke-width=\"1.6\"/><text x=\"72\" y=\"105\" font-size=\"12\">2π/3 removed</text><text x=\"80\" y=\"45\" font-size=\"12\">l</text><text x=\"80\" y=\"174\" font-size=\"12\">l</text><path d=\"M 238 60 Q 300 22 362 60 L 300 184 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><ellipse cx=\"300\" cy=\"60\" rx=\"62\" ry=\"15\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.6\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"184\" stroke=\"#f59e0b\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"300\" y1=\"60\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"184\" x2=\"362\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/><text x=\"306\" y=\"126\" font-size=\"11\" fill=\"#b45309\">h</text><text x=\"328\" y=\"54\" font-size=\"11\" fill=\"#b45309\">r</text><text x=\"337\" y=\"112\" font-size=\"11\">l</text><text x=\"244\" y=\"201\" font-size=\"11\">Cone</text></svg>"
           }
         },
         {
@@ -15001,19 +15207,31 @@
           "steps": [
             {
               "explain": "Since \\( f'(x)=-2 \\) (constant negative gradient) for \\( x\\lt 2 \\), \\( f \\) must be a straight line of slope \\( -2 \\) on that interval.",
-              "work": "\\(x\\lt 2: \\ f(x) = -2x+k_1 \\text{ (a line of gradient } -2\\text{)}\\)"
+              "work": "\\(x\\lt 2: \\ f(x) = -2x+k_1 \\text{ (a line of gradient } -2\\text{)}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\" style=\"display:block;margin:.5rem auto;max-width:340px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><line x1=\"30\" y1=\"108\" x2=\"324\" y2=\"108\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"74\" y1=\"12\" x2=\"74\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"326\" y=\"112\" font-size=\"11\">x</text><text x=\"70\" y=\"12\" font-size=\"11\">y</text><line x1=\"74\" y1=\"48\" x2=\"312\" y2=\"48\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><line x1=\"30\" y1=\"168\" x2=\"74\" y2=\"168\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"74\" y1=\"168\" x2=\"74\" y2=\"48\" stroke=\"#64748b\" stroke-dasharray=\"3 3\" stroke-width=\"1.2\"/><circle cx=\"74\" cy=\"48\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"74\" cy=\"168\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"80\" y=\"202\" font-size=\"11\">2</text><text x=\"46\" y=\"44\" font-size=\"11\">2</text><text x=\"42\" y=\"164\" font-size=\"11\">−2</text><text x=\"220\" y=\"38\" font-size=\"12\" fill=\"#334155\">f′(x)</text></svg>"
+              }
             },
             {
               "explain": "Since \\( f'(x)=2 \\) (constant positive gradient) for \\( x\\gt 2 \\), \\( f \\) must be a straight line of slope \\( 2 \\) on that interval.",
-              "work": "\\(x\\gt 2: \\ f(x) = 2x+k_2\\)"
+              "work": "\\(x\\gt 2: \\ f(x) = 2x+k_2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\" style=\"display:block;margin:.5rem auto;max-width:340px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><line x1=\"30\" y1=\"108\" x2=\"324\" y2=\"108\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"74\" y1=\"12\" x2=\"74\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"326\" y=\"112\" font-size=\"11\">x</text><text x=\"70\" y=\"12\" font-size=\"11\">y</text><line x1=\"74\" y1=\"48\" x2=\"312\" y2=\"48\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"30\" y1=\"168\" x2=\"74\" y2=\"168\" stroke=\"#f59e0b\" stroke-width=\"2.2\"/><line x1=\"74\" y1=\"168\" x2=\"74\" y2=\"48\" stroke=\"#64748b\" stroke-dasharray=\"3 3\" stroke-width=\"1.2\"/><circle cx=\"74\" cy=\"48\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"74\" cy=\"168\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"80\" y=\"202\" font-size=\"11\">2</text><text x=\"46\" y=\"44\" font-size=\"11\">2</text><text x=\"42\" y=\"164\" font-size=\"11\">−2</text><text x=\"220\" y=\"38\" font-size=\"12\" fill=\"#334155\">f′(x)</text></svg>"
+              }
             },
             {
               "explain": "The gradient jumps from \\( -2 \\) to \\( 2 \\) at \\( x=2 \\), so \\( f \\) has a sharp corner (a local minimum) there — the two line pieces must meet at \\( x=2 \\) to keep \\( f \\) itself continuous, even though \\( f' \\) is not.",
-              "work": "\\(\\text{choose } f(2)=0 \\;\\Rightarrow\\; f(x)=2|x-2|\\)"
+              "work": "\\(\\text{choose } f(2)=0 \\;\\Rightarrow\\; f(x)=2|x-2|\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\" style=\"display:block;margin:.5rem auto;max-width:340px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><line x1=\"30\" y1=\"170\" x2=\"324\" y2=\"170\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"12\" x2=\"170\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"326\" y=\"174\" font-size=\"11\">x</text><text x=\"166\" y=\"12\" font-size=\"11\">y</text><line x1=\"170\" y1=\"18\" x2=\"170\" y2=\"196\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/><path d=\"M 55,45 L 170,170 L 285,45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><circle cx=\"170\" cy=\"170\" r=\"4\" fill=\"#f59e0b\"/><text x=\"177\" y=\"185\" font-size=\"11\" fill=\"#b45309\">(2,0)</text><text x=\"205\" y=\"70\" font-size=\"11\" fill=\"#2563eb\">f(x)=2|x−2|</text></svg>"
+              }
             },
             {
               "explain": "This gives a V-shaped graph with vertex (minimum) at \\( (2,0) \\), passing through \\( (0,4) \\) and \\( (4,4) \\). Pitfall: drawing a smooth curve at \\( x=2 \\) — since the gradient jumps discontinuously, the correct sketch has a sharp corner, not a rounded turning point.",
-              "work": "<svg viewBox=\"0 0 260 220\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:240px\">\n  <line x1=\"20\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 40,40 L 130,180 L 220,40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"130\" cy=\"180\" r=\"3.5\" fill=\"#1e293b\"/>\n  <text x=\"110\" y=\"200\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(2, 0)</text>\n  <text x=\"110\" y=\"200\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">(2, 0)</text>\n  <text x=\"30\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(0, 4)</text>\n  <text x=\"30\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">(0, 4)</text>\n  <text x=\"196\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(4, 4)</text>\n  <text x=\"196\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">(4, 4)</text>\n</svg>\n\n\\(f(x)=2|x-2| \\text{ — vertex at } (2,0)\\)"
+              "work": "<svg viewBox=\"0 0 260 220\" width=\"100%\" height=\"auto\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;max-width:240px\">\n  <line x1=\"20\" y1=\"180\" x2=\"240\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"200\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 40,40 L 130,180 L 220,40\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n  <circle cx=\"130\" cy=\"180\" r=\"3.5\" fill=\"#1e293b\"/>\n  <text x=\"110\" y=\"200\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(2, 0)</text>\n  <text x=\"110\" y=\"200\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">(2, 0)</text>\n  <text x=\"30\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(0, 4)</text>\n  <text x=\"30\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">(0, 4)</text>\n  <text x=\"196\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">(4, 4)</text>\n  <text x=\"196\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">(4, 4)</text>\n</svg>\n\n\\(f(x)=2|x-2| \\text{ — vertex at } (2,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\" style=\"display:block;margin:.5rem auto;max-width:340px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><line x1=\"30\" y1=\"170\" x2=\"324\" y2=\"170\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"170\" y1=\"12\" x2=\"170\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"326\" y=\"174\" font-size=\"11\">x</text><text x=\"166\" y=\"12\" font-size=\"11\">y</text><line x1=\"170\" y1=\"18\" x2=\"170\" y2=\"196\" stroke=\"#94a3b8\" stroke-dasharray=\"3 3\"/><path d=\"M 55,45 L 170,170 L 285,45\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\"/><circle cx=\"170\" cy=\"170\" r=\"4\" fill=\"#f59e0b\"/><text x=\"177\" y=\"185\" font-size=\"11\" fill=\"#b45309\">(2,0)</text><circle cx=\"55\" cy=\"45\" r=\"3.5\" fill=\"#10b981\"/><circle cx=\"285\" cy=\"45\" r=\"3.5\" fill=\"#10b981\"/><text x=\"35\" y=\"38\" font-size=\"10\">(0,4)</text><text x=\"284\" y=\"38\" font-size=\"10\">(4,4)</text><text x=\"205\" y=\"70\" font-size=\"11\" fill=\"#2563eb\">f(x)=2|x−2|</text></svg>"
+              }
             }
           ],
           "manual": true,
@@ -15026,7 +15244,18 @@
           "dna": {
             "dnaId": "CALC-INT-01"
           },
-          "xp": 3
+          "xp": 1,
+          "hint": "Read the sign of the gradient on each side of (x=2), then sketch any function with those slopes.",
+          "keyPoints": [
+            {
+              "text": "gradient function",
+              "note": "A possible antiderivative has gradient −2 to the left of 2 and +2 to the right."
+            }
+          ],
+          "timeLimit": 60,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\" style=\"display:block;margin:.5rem auto;max-width:340px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><line x1=\"30\" y1=\"108\" x2=\"324\" y2=\"108\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"74\" y1=\"12\" x2=\"74\" y2=\"194\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"326\" y=\"112\" font-size=\"11\">x</text><text x=\"70\" y=\"12\" font-size=\"11\">y</text><line x1=\"74\" y1=\"48\" x2=\"312\" y2=\"48\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"30\" y1=\"168\" x2=\"74\" y2=\"168\" stroke=\"#334155\" stroke-width=\"2.2\"/><line x1=\"74\" y1=\"168\" x2=\"74\" y2=\"48\" stroke=\"#64748b\" stroke-dasharray=\"3 3\" stroke-width=\"1.2\"/><circle cx=\"74\" cy=\"48\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><circle cx=\"74\" cy=\"168\" r=\"4\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"80\" y=\"202\" font-size=\"11\">2</text><text x=\"46\" y=\"44\" font-size=\"11\">2</text><text x=\"42\" y=\"164\" font-size=\"11\">−2</text><text x=\"220\" y=\"38\" font-size=\"12\" fill=\"#334155\">f′(x)</text></svg>"
+          }
         }
       ]
     },

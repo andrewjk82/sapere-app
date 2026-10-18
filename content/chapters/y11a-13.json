@@ -150,43 +150,6 @@
           "xp": 2
         },
         {
-          "id": "gosford2020-q4",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Which statement is true for an ungrouped data set with no outliers?",
-          "options": [
-            "The largest possible range is \\( 2\\times\\text{IQR} \\)",
-            "The largest possible range is \\( 3\\times\\text{IQR} \\)",
-            "The largest possible range is \\( 5\\times\\text{IQR} \\)",
-            "The largest possible range is \\( 4\\times\\text{IQR} \\)"
-          ],
-          "answer": 3,
-          "steps": [
-            {
-              "explain": "With no outliers, every data value must lie within \\( 1.5\\times\\text{IQR} \\) of the nearer quartile (the standard outlier-fence rule) — shown below as the two dashed red \"fences\" on either side of the IQR box.",
-              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"144\" y1=\"52\" x2=\"144\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"52\" x2=\"206\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"144\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1</text><text x=\"206\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3</text><text x=\"175\" y=\"90\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">IQR</text><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><text x=\"51\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{max value} \\le Q_3 + 1.5\\,\\text{IQR}, \\qquad \\text{min value} \\ge Q_1 - 1.5\\,\\text{IQR}\\)"
-            },
-            {
-              "explain": "The range is the difference between the largest and smallest values, so its largest possible value occurs when both extremes sit exactly at their fences — the green bracket below shows this maximum possible span.",
-              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><line x1=\"144\" y1=\"54\" x2=\"144\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"54\" x2=\"206\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"51\" y1=\"100\" x2=\"299\" y2=\"100\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"51\" y1=\"94\" x2=\"51\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"299\" y1=\"94\" x2=\"299\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"175\" y=\"118\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">max possible range = 4 × IQR</text><text x=\"51\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{range} \\le (Q_3+1.5\\,\\text{IQR}) - (Q_1-1.5\\,\\text{IQR}) = (Q_3-Q_1) + 3\\,\\text{IQR}\\)"
-            },
-            {
-              "explain": "Since \\( Q_3-Q_1 = \\text{IQR} \\), combine the terms.",
-              "work": "\\(\\text{range} \\le \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q4",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "STAT-DESC-01"
-          },
-          "xp": 2
-        },
-        {
           "id": "hg2020-q13",
           "type": "multipart",
           "difficulty": "medium",

@@ -7454,43 +7454,6 @@
           "xp": 2
         },
         {
-          "id": "gosford2020-q16a",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "\\( \\text{Differentiate } \\log_5(\\tan x). \\)",
-          "options": [
-            "\\(\\dfrac{\\sec^2x}{\\ln5}\\)",
-            "\\(\\dfrac{1}{\\tan x\\,\\ln5}\\)",
-            "\\(\\sec^2x\\,\\ln5\\)",
-            "\\(\\dfrac{\\sec^2x}{\\tan x\\,\\ln5}\\)"
-          ],
-          "answer": 3,
-          "steps": [
-            {
-              "explain": "Use the derivative rule for a log of any base: \\( \\dfrac{d}{dx}\\log_a(u) = \\dfrac{1}{\\ln a}\\cdot\\dfrac{u'}{u} \\).",
-              "work": "\\(\\dfrac{d}{dx}\\log_5(\\tan x) = \\dfrac{1}{\\ln5}\\cdot\\dfrac{(\\tan x)'}{\\tan x}\\)"
-            },
-            {
-              "explain": "The derivative of \\( \\tan x \\) is \\( \\sec^2x \\).",
-              "work": "\\((\\tan x)' = \\sec^2x\\)"
-            },
-            {
-              "explain": "Combine. Pitfall: forgetting the \\( \\ln5 \\) factor in the denominator (treating it like natural log) gives \\( \\sec^2x/\\tan x \\), not one of the offered distractors but a common slip.",
-              "work": "\\(\\dfrac{d}{dx}\\log_5(\\tan x) = \\dfrac{\\sec^2x}{\\tan x\\,\\ln5}\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q16",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "CALC-DIFF-01"
-          },
-          "xp": 3
-        },
-        {
           "id": "gosford2020-q16b",
           "type": "mc",
           "difficulty": "hard",
@@ -7525,7 +7488,15 @@
           "dna": {
             "dnaId": "CALC-DIFF-01"
           },
-          "xp": 3
+          "xp": 1,
+          "timeLimit": 60,
+          "hint": "Identify the given quantities and choose the relevant formula.",
+          "keyPoints": [
+            {
+              "text": "Differentiate",
+              "note": "Differentiate the quotient, or rewrite it as (2/e)^x."
+            }
+          ]
         },
         {
           "id": "hh2020-q15",
@@ -17867,6 +17838,55 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "gosford2020-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\( 2\\log x=\\log(5x+6) \\).",
+          "options": [
+            "\\(x=6 \\text{ or } x=-1\\)",
+            "x=6",
+            "x=-1",
+            "x=11"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Use the log power law \\( 2\\log x=\\log(x^2) \\) to combine the left side into a single logarithm.",
+              "work": "\\(\\log(x^2) = \\log(5x+6)\\)"
+            },
+            {
+              "explain": "Since the logarithm function is one-to-one, equate the arguments.",
+              "work": "\\(x^2 = 5x+6 \\;\\Rightarrow\\; x^2-5x-6=0\\)"
+            },
+            {
+              "explain": "Factorise and solve the resulting quadratic.",
+              "work": "\\((x-6)(x+1)=0 \\;\\Rightarrow\\; x=6 \\text{ or } x=-1\\)"
+            },
+            {
+              "explain": "Check both solutions against the domain of \\( \\log x \\), which requires \\( x\\gt 0 \\). Pitfall: forgetting to reject \\( x=-1 \\) (undefined logarithm) is the most common error here.",
+              "work": "\\(x=-1 \\text{ is rejected (log of a negative number is undefined)} \\;\\Rightarrow\\; x=6\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q14",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-LOG-01"
+          },
+          "xp": 1,
+          "hint": "Combine the logarithms using (2log x=log(x^2)), then check the original logarithm domain.",
+          "keyPoints": [
+            {
+              "text": "Solve \\( 2\\l",
+              "note": "Logarithms have positive arguments, so reject any algebraic root with x≤0."
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -32433,6 +32453,51 @@
             {
               "explain": "Cancel the common factor 2 in numerator and denominator.",
               "work": "\\(\\boxed{\\frac{1}{(x+2)\\ln2}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "gosford2020-q16a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "\\( \\text{Differentiate } \\log_5(\\tan x). \\)",
+          "options": [
+            "\\(\\dfrac{\\sec^2x}{\\ln5}\\)",
+            "\\(\\dfrac{1}{\\tan x\\,\\ln5}\\)",
+            "\\(\\sec^2x\\,\\ln5\\)",
+            "\\(\\dfrac{\\sec^2x}{\\tan x\\,\\ln5}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Use the derivative rule for a log of any base: \\( \\dfrac{d}{dx}\\log_a(u) = \\dfrac{1}{\\ln a}\\cdot\\dfrac{u'}{u} \\).",
+              "work": "\\(\\dfrac{d}{dx}\\log_5(\\tan x) = \\dfrac{1}{\\ln5}\\cdot\\dfrac{(\\tan x)'}{\\tan x}\\)"
+            },
+            {
+              "explain": "The derivative of \\( \\tan x \\) is \\( \\sec^2x \\).",
+              "work": "\\((\\tan x)' = \\sec^2x\\)"
+            },
+            {
+              "explain": "Combine. Pitfall: forgetting the \\( \\ln5 \\) factor in the denominator (treating it like natural log) gives \\( \\sec^2x/\\tan x \\), not one of the offered distractors but a common slip.",
+              "work": "\\(\\dfrac{d}{dx}\\log_5(\\tan x) = \\dfrac{\\sec^2x}{\\tan x\\,\\ln5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q16",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01"
+          },
+          "xp": 1,
+          "timeLimit": 60,
+          "hint": "Identify the given quantities and choose the relevant formula.",
+          "keyPoints": [
+            {
+              "text": "log",
+              "note": "The inner function is tan x and its derivative is sec²x."
             }
           ]
         }

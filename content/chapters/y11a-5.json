@@ -17560,43 +17560,6 @@
           "xp": 3
         },
         {
-          "id": "gosford2020-q6",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "The graph \\( y=f(x) \\) has a stationary point at \\( (2,-3) \\). Which point is guaranteed to be a stationary point of \\( y=-f\\left(\\dfrac{x}{2}\\right)-5 \\)?",
-          "options": [
-            "(1,-2)",
-            "(4,-2)",
-            "(1,2)",
-            "(4,2)"
-          ],
-          "answer": 1,
-          "steps": [
-            {
-              "explain": "The horizontal factor \\( x/2 \\) inside \\( f \\) stretches the graph horizontally by a factor of 2, so every x-coordinate doubles.",
-              "work": "\\(\\dfrac{x}{2} = 2 \\;\\Rightarrow\\; x = 4\\)"
-            },
-            {
-              "explain": "The negative sign in front of \\( f \\) reflects the graph in the x-axis, so the y-value at that stationary point negates first.",
-              "work": "\\(-f(2) = -(-3) = 3\\)"
-            },
-            {
-              "explain": "The \\( -5 \\) outside shifts the whole graph down 5 units. Pitfall: using x/2 as a compression (halving x) instead of a stretch (doubling x) gives the (1,-2) distractor.",
-              "work": "\\(y = 3 - 5 = -2 \\;\\Rightarrow\\; (4,-2)\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q6",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "FUNC-TRANS-01"
-          },
-          "xp": 4
-        },
-        {
           "id": "lTbqu3o99Xgms5Fsqsgo",
           "type": "mc",
           "difficulty": "medium",

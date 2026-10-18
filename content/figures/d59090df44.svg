@@ -1,4 +1,5 @@
 <svg viewBox="0 0 433.59289474462014 178" width="433.59289474462014" height="178" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+  <rect x="0" y="0" width="434" height="178" fill="#ffffff"/>
   <line x1="36" y1="84" x2="349.59289474462014" y2="84" stroke="#94a3b8" stroke-width="1"/>
   <line x1="42" y1="18" x2="42" y2="150" stroke="#94a3b8" stroke-width="1"/>
 
@@ -15,6 +16,6 @@
   <text x="28" y="148" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="end">-1</text>
   <text x="343.59289474462014" y="102" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="middle">2π</text>
 
-  <text x="351.59289474462014" y="20" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#dc2626" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="start">y=cos x</text>
-  <text x="351.59289474462014" y="154" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="start">y=sin x</text>
+  <text x="295" y="20" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#dc2626" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="start">y=cos x</text>
+  <text x="295" y="168" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#f8fafc" stroke-width="3" paint-order="stroke" text-anchor="start">y=sin x</text>
 </svg>

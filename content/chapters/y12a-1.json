@@ -29623,7 +29623,15 @@
           "dna": {
             "dnaId": "SERIES-01"
           },
-          "xp": 3
+          "xp": 1,
+          "hint": "The coefficients of the terms are consecutive odd numbers. Find the number of terms from the sum of the first (n) odd numbers.",
+          "keyPoints": [
+            {
+              "text": "series",
+              "note": "The nth odd number is 2n−1 and the sum of the first n odd numbers is n²."
+            }
+          ],
+          "timeLimit": 60
         },
         {
           "id": "hg2020-q22",
@@ -44043,7 +44051,15 @@
                   "work": "\\(S_\\infty = \\dfrac{1}{1-\\tfrac43\\sin^2x}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "Use first term 1 and ratio (4/3)sin²x.",
+              "keyPoints": [
+                {
+                  "text": "limiting sum",
+                  "note": "Use first term 1 and ratio (4/3)sin²x."
+                }
+              ],
+              "timeLimit": 60
             },
             {
               "id": "gosford2020-q28b",
@@ -44070,7 +44086,15 @@
                   "work": "\\(0 \\lt  x \\lt  \\dfrac{\\pi}{3}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1,
+              "hint": "Solve |(4/3)sin²x|<1, then use that sine increases on (0,π/2).",
+              "keyPoints": [
+                {
+                  "text": "For what values of \\( x \\) in \\( \\left(0,\\dfrac{\\pi}{2}\\right)",
+                  "note": "Solve |(4/3)sin²x|<1, then use that sine increases on (0,π/2)."
+                }
+              ],
+              "timeLimit": 60
             }
           ],
           "meta": {
@@ -44081,7 +44105,16 @@
           },
           "dna": {
             "dnaId": "SERIES-01"
-          }
+          },
+          "hint": "Identify the common ratio, then apply (S_infty=a/(1-r)) only when (|r|<1).",
+          "keyPoints": [
+            {
+              "text": "geometric series",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         },
         {
           "id": "hh2020-q11",

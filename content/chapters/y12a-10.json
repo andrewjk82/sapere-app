@@ -367,43 +367,6 @@
           }
         },
         {
-          "id": "gosford2020-q8",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "For a standard normal distribution, \\( P(z\\lt N)=0.6 \\). What is \\( P(-N\\lt z\\lt N) \\)?",
-          "options": [
-            "0.1",
-            "0.3",
-            "0.4",
-            "0.2"
-          ],
-          "answer": 3,
-          "steps": [
-            {
-              "explain": "Since the total area under the curve is 1, find the area beyond \\( z=N \\) on the right tail (shaded below).",
-              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"120\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n</g>\n</svg></div>\n\n\\(P(z\\gt N) = 1-P(z\\lt N) = 1-0.6 = 0.4\\)"
-            },
-            {
-              "explain": "By symmetry of the standard normal curve about 0, the area beyond \\( z=-N \\) on the left tail equals the area beyond \\( z=N \\) on the right tail — both tails (shaded below) have the same area.",
-              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -134.1,41.9 L -130.2,41.9 L -126.3,41.8 L -122.4,41.8 L -118.5,41.7 L -114.6,41.6 L -110.7,41.5 L -106.8,41.4 L -102.9,41.2 L -99.0,41.0 L -95.1,40.8 L -91.2,40.5 L -87.3,40.2 L -83.4,39.8 L -79.5,39.3 L -75.6,38.8 L -71.7,38.2 L -67.8,37.5 L -63.9,36.7 L -60.0,35.8 L -56.1,34.8 L -52.2,33.7 L -48.3,32.5 L -44.4,31.2 L -40.5,29.8 L -36.6,28.3 L -32.7,26.7 L -28.8,25.0 L -24.9,23.3 L -21.0,21.6 L -17.1,19.8 L -13.2,18.1 L -9.3,16.3 L -5.4,14.6 L -1.5,13.1 L 2.4,11.6 L 6.3,10.2 L 10.2,9.0 L 14.1,8.0 L 18.0,7.2 L 18.0,42.0 L -138.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <line x1=\"18\" y1=\"42\" x2=\"18\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"18\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=−N</text>\n  <text x=\"120\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n  <text x=\"-60\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n</g>\n</svg></div>\n\n\\(P(z\\lt -N) = P(z\\gt N) = 0.4\\)"
-            },
-            {
-              "explain": "The middle region (highlighted green below) is everything except both tails. Pitfall: forgetting to subtract both tails (only subtracting one) gives \\(0.6\\) as a wrong answer.",
-              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -134.1,41.9 L -130.2,41.9 L -126.3,41.8 L -122.4,41.8 L -118.5,41.7 L -114.6,41.6 L -110.7,41.5 L -106.8,41.4 L -102.9,41.2 L -99.0,41.0 L -95.1,40.8 L -91.2,40.5 L -87.3,40.2 L -83.4,39.8 L -79.5,39.3 L -75.6,38.8 L -71.7,38.2 L -67.8,37.5 L -63.9,36.7 L -60.0,35.8 L -56.1,34.8 L -52.2,33.7 L -48.3,32.5 L -44.4,31.2 L -40.5,29.8 L -36.6,28.3 L -32.7,26.7 L -28.8,25.0 L -24.9,23.3 L -21.0,21.6 L -17.1,19.8 L -13.2,18.1 L -9.3,16.3 L -5.4,14.6 L -1.5,13.1 L 2.4,11.6 L 6.3,10.2 L 10.2,9.0 L 14.1,8.0 L 18.0,7.2 L 18.0,42.0 L -138.0,42.0 Z\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"none\"/>\n  <path d=\"M 18.0,7.2 L 18.6,7.1 L 19.2,7.0 L 19.8,6.9 L 20.4,6.8 L 21.0,6.7 L 21.6,6.6 L 22.2,6.6 L 22.8,6.5 L 23.4,6.4 L 24.0,6.4 L 24.6,6.3 L 25.2,6.3 L 25.8,6.2 L 26.4,6.2 L 27.0,6.2 L 27.6,6.1 L 28.2,6.1 L 28.8,6.1 L 29.4,6.1 L 30.0,6.1 L 30.6,6.1 L 31.2,6.1 L 31.8,6.1 L 32.4,6.1 L 33.0,6.2 L 33.6,6.2 L 34.2,6.2 L 34.8,6.3 L 35.4,6.3 L 36.0,6.4 L 36.6,6.4 L 37.2,6.5 L 37.8,6.6 L 38.4,6.6 L 39.0,6.7 L 39.6,6.8 L 40.2,6.9 L 40.8,7.0 L 41.4,7.1 L 42.0,7.2 L 42.0,42.0 L 18.0,42.0 Z\" fill=\"#059669\" fill-opacity=\"0.45\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <line x1=\"18\" y1=\"42\" x2=\"18\" y2=\"7.1998694877435625\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"18\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=−N</text>\n  <text x=\"30\" y=\"30.299999999999997\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.2</text>\n</g>\n</svg></div>\n\n\\(P(-N\\lt z\\lt N) = 1-P(z\\gt N)-P(z\\lt -N) = 1-0.4-0.4 = 0.2\\)"
-            }
-          ],
-          "meta": {
-            "source": "Gosford 2020 Trial Q8",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "PROB-NORM-01"
-          },
-          "xp": 3
-        },
-        {
           "id": "hg2020-q21",
           "type": "multipart",
           "difficulty": "medium",
@@ -713,6 +676,144 @@
               "work": "\\(\\boxed{m=\\sqrt[3]{4}}\\)"
             }
           ]
+        },
+        {
+          "id": "gosford2020-q27",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A continuous random variable \\( X \\) has probability density function \\( f(x)=k(x^2-2x+2) \\) for \\( 1\\le x\\le4 \\), and \\( f(x)=0 \\) otherwise.",
+          "parts": [
+            {
+              "id": "gosford2020-q27a",
+              "type": "mc",
+              "stem": "(a) What value of \\(k\\) makes the given function a probability density?",
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "A valid probability density function must integrate to 1 over its full domain.",
+                  "work": "\\(\\int_1^4 k(x^2-2x+2)\\,dx = 1\\)"
+                },
+                {
+                  "explain": "Find the antiderivative and evaluate at the bounds.",
+                  "work": "\\(k\\left[\\dfrac{x^3}{3}-x^2+2x\\right]_1^4 = k\\left[\\left(\\dfrac{64}{3}-16+8\\right)-\\left(\\dfrac13-1+2\\right)\\right]\\)"
+                },
+                {
+                  "explain": "Simplify the bracketed expression. Pitfall: sign errors when expanding the negative of the lower-bound evaluation are the most common mistake here.",
+                  "work": "\\(k\\left[\\dfrac{64}{3}-8-\\dfrac13-1\\right] = k(12) = 1 \\;\\Rightarrow\\; k=\\dfrac1{12} \\ \\blacksquare\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "Set the integral of the density over its support equal to 1.",
+              "keyPoints": [
+                {
+                  "text": "probability density",
+                  "note": "Set the total area under the density on its support equal to 1."
+                }
+              ],
+              "timeLimit": 60,
+              "options": [
+                "\\(\\frac1{12}\\)",
+                "\\(\\frac1{10}\\)",
+                "\\(\\frac1{18}\\)",
+                "\\(\\frac1{6}\\)"
+              ],
+              "solution": "Normalising the density gives \\(k=1/12\\)."
+            },
+            {
+              "id": "gosford2020-q27b",
+              "type": "mc",
+              "stem": "(b) Fully define the cumulative distribution function \\( F(x) \\).",
+              "options": [
+                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
+                "\\(F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for all } x\\)",
+                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{12}-\\dfrac{x^2}{4}+\\dfrac{x}{2}-\\dfrac13 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
+                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "For \\( x\\lt 1 \\), no probability has accumulated yet; for \\( x\\gt 4 \\), all of it has.",
+                  "work": "\\(F(x)=0 \\text{ for } x\\lt 1, \\qquad F(x)=1 \\text{ for } x\\gt 4\\)"
+                },
+                {
+                  "explain": "For \\( 1\\le x\\le4 \\), integrate the density from 1 to x.",
+                  "work": "\\(F(x) = \\int_1^x\\dfrac1{12}(t^2-2t+2)\\,dt = \\dfrac1{12}\\left[\\dfrac{t^3}{3}-t^2+2t\\right]_1^x\\)"
+                },
+                {
+                  "explain": "Evaluate and simplify, substituting the lower bound value \\( \\tfrac13-1+2=\\tfrac43 \\). Pitfall: forgetting to subtract the constant of integration (the lower-bound value) leaves the \"-1/9\" term off, giving the third distractor.",
+                  "work": "\\(F(x) = \\dfrac1{12}\\left(\\dfrac{x^3}{3}-x^2+2x-\\dfrac43\\right) = \\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "Integrate the density from the lower support endpoint and add the two outer pieces.",
+              "keyPoints": [
+                {
+                  "text": "cumulative distribution function",
+                  "note": "Integrate the density from the lower support endpoint and add the two outer pieces."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q27c",
+              "type": "mc",
+              "stem": "(c) Which interval is confirmed to contain the median of \\(X\\)?",
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "The median m is the value satisfying \\( F(m)=0.5 \\). Evaluate \\( F \\) at both boundary values using the formula from part (b).",
+                  "work": "\\(F(3.2) = \\dfrac{(3.2)^3}{36}-\\dfrac{(3.2)^2}{12}+\\dfrac{3.2}{6}-\\dfrac19\\)"
+                },
+                {
+                  "explain": "Compute this numerically.",
+                  "work": "\\(F(3.2) \\approx 0.479\\)"
+                },
+                {
+                  "explain": "Repeat for \\( x=3.3 \\).",
+                  "work": "\\(F(3.3) = \\dfrac{(3.3)^3}{36}-\\dfrac{(3.3)^2}{12}+\\dfrac{3.3}{6}-\\dfrac19 \\approx 0.5296\\)"
+                },
+                {
+                  "explain": "Since \\( F(3.2)\\lt 0.5 \\) and \\( F(3.3)\\gt 0.5 \\), and \\( F \\) is continuous and increasing, the median must lie between them. Pitfall: this argument only works because F is monotonic increasing on this interval — always confirm that first.",
+                  "work": "\\(F(3.2)\\lt 0.5\\lt F(3.3) \\;\\Rightarrow\\; \\text{median} \\in (3.2,3.3) \\ \\blacksquare\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "Evaluate F at both endpoints and compare each value with 0.5.",
+              "keyPoints": [
+                {
+                  "text": "interval",
+                  "note": "The median is where the cumulative probability crosses 0.5; compare F at the endpoints."
+                }
+              ],
+              "timeLimit": 60,
+              "options": [
+                "\\((3.1,3.2)\\)",
+                "\\((3.2,3.3)\\)",
+                "\\((3.3,3.4)\\)",
+                "\\((3.2,3.4)\\)"
+              ],
+              "solution": "Since \\(F(3.2)\\approx0.479<0.5\\) and \\(F(3.3)\\approx0.5296>0.5\\), the median lies in \\((3.2,3.3)\\)."
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Gosford 2020 Trial Q27",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-CONT-01"
+          },
+          "hint": "A probability density has total area 1. A median is where the cumulative probability reaches 0.5.",
+          "keyPoints": [
+            {
+              "text": "probability density",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
         }
       ]
     },
@@ -1003,99 +1104,6 @@
           "xp": 2
         },
         {
-          "id": "gosford2020-q27",
-          "type": "multipart",
-          "difficulty": "hard",
-          "stem": "A continuous random variable \\( X \\) has probability density function \\( f(x)=k(x^2-2x+2) \\) for \\( 1\\le x\\le4 \\), and \\( f(x)=0 \\) otherwise.",
-          "parts": [
-            {
-              "id": "gosford2020-q27a",
-              "type": "review",
-              "stem": "(a) Show that \\( k=\\dfrac1{12} \\).",
-              "answer": "Setting the total integral of f(x) over [1,4] equal to 1 gives 12k=1, so k=1/12.",
-              "steps": [
-                {
-                  "explain": "A valid probability density function must integrate to 1 over its full domain.",
-                  "work": "\\(\\int_1^4 k(x^2-2x+2)\\,dx = 1\\)"
-                },
-                {
-                  "explain": "Find the antiderivative and evaluate at the bounds.",
-                  "work": "\\(k\\left[\\dfrac{x^3}{3}-x^2+2x\\right]_1^4 = k\\left[\\left(\\dfrac{64}{3}-16+8\\right)-\\left(\\dfrac13-1+2\\right)\\right]\\)"
-                },
-                {
-                  "explain": "Simplify the bracketed expression. Pitfall: sign errors when expanding the negative of the lower-bound evaluation are the most common mistake here.",
-                  "work": "\\(k\\left[\\dfrac{64}{3}-8-\\dfrac13-1\\right] = k(12) = 1 \\;\\Rightarrow\\; k=\\dfrac1{12} \\ \\blacksquare\\)"
-                }
-              ],
-              "manual": true,
-              "xp": 3
-            },
-            {
-              "id": "gosford2020-q27b",
-              "type": "mc",
-              "stem": "(b) Fully define the cumulative distribution function \\( F(x) \\).",
-              "options": [
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
-                "\\(F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for all } x\\)",
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{12}-\\dfrac{x^2}{4}+\\dfrac{x}{2}-\\dfrac13 \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)",
-                "\\(F(x)=0 \\text{ for } x\\lt 1;\\ F(x)=\\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6} \\text{ for } 1\\le x\\le4;\\ F(x)=1 \\text{ for } x\\gt 4\\)"
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "For \\( x\\lt 1 \\), no probability has accumulated yet; for \\( x\\gt 4 \\), all of it has.",
-                  "work": "\\(F(x)=0 \\text{ for } x\\lt 1, \\qquad F(x)=1 \\text{ for } x\\gt 4\\)"
-                },
-                {
-                  "explain": "For \\( 1\\le x\\le4 \\), integrate the density from 1 to x.",
-                  "work": "\\(F(x) = \\int_1^x\\dfrac1{12}(t^2-2t+2)\\,dt = \\dfrac1{12}\\left[\\dfrac{t^3}{3}-t^2+2t\\right]_1^x\\)"
-                },
-                {
-                  "explain": "Evaluate and simplify, substituting the lower bound value \\( \\tfrac13-1+2=\\tfrac43 \\). Pitfall: forgetting to subtract the constant of integration (the lower-bound value) leaves the \"-1/9\" term off, giving the third distractor.",
-                  "work": "\\(F(x) = \\dfrac1{12}\\left(\\dfrac{x^3}{3}-x^2+2x-\\dfrac43\\right) = \\dfrac{x^3}{36}-\\dfrac{x^2}{12}+\\dfrac{x}{6}-\\dfrac19\\)"
-                }
-              ],
-              "xp": 2
-            },
-            {
-              "id": "gosford2020-q27c",
-              "type": "review",
-              "stem": "(c) Show that the median of \\( X \\) lies between \\( x=3.2 \\) and \\( x=3.3 \\).",
-              "answer": "F(3.2) ≈ 0.479 < 0.5 and F(3.3) ≈ 0.5296 > 0.5, so by the intermediate value theorem the median lies between 3.2 and 3.3.",
-              "steps": [
-                {
-                  "explain": "The median m is the value satisfying \\( F(m)=0.5 \\). Evaluate \\( F \\) at both boundary values using the formula from part (b).",
-                  "work": "\\(F(3.2) = \\dfrac{(3.2)^3}{36}-\\dfrac{(3.2)^2}{12}+\\dfrac{3.2}{6}-\\dfrac19\\)"
-                },
-                {
-                  "explain": "Compute this numerically.",
-                  "work": "\\(F(3.2) \\approx 0.479\\)"
-                },
-                {
-                  "explain": "Repeat for \\( x=3.3 \\).",
-                  "work": "\\(F(3.3) = \\dfrac{(3.3)^3}{36}-\\dfrac{(3.3)^2}{12}+\\dfrac{3.3}{6}-\\dfrac19 \\approx 0.5296\\)"
-                },
-                {
-                  "explain": "Since \\( F(3.2)\\lt 0.5 \\) and \\( F(3.3)\\gt 0.5 \\), and \\( F \\) is continuous and increasing, the median must lie between them. Pitfall: this argument only works because F is monotonic increasing on this interval — always confirm that first.",
-                  "work": "\\(F(3.2)\\lt 0.5\\lt F(3.3) \\;\\Rightarrow\\; \\text{median} \\in (3.2,3.3) \\ \\blacksquare\\)"
-                }
-              ],
-              "manual": true,
-              "xp": 3
-            }
-          ],
-          "manual": true,
-          "meta": {
-            "source": "Gosford 2020 Trial Q27",
-            "reviewStatus": "approved",
-            "origin": "teacher",
-            "examPaper": "gosford-2020"
-          },
-          "dna": {
-            "dnaId": "PROB-CONT-01"
-          }
-        },
-        {
           "id": "hg2020-q4",
           "type": "mc",
           "difficulty": "medium",
@@ -1207,6 +1215,268 @@
             "school": "Hunters Hill High School",
             "examType": "Trial HSC",
             "grade": "12"
+          }
+        },
+        {
+          "id": "gosford2020-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The discrete random variable \\(X\\) has the probability distribution shown below, and \\(E(X)=0.55\\).",
+          "figure": {
+            "svg": "fig:38372879d8"
+          },
+          "parts": [
+            {
+              "id": "gosford2020-q18a",
+              "type": "mc",
+              "stem": "(a) Find \\( a \\) and \\( b \\).",
+              "options": [
+                "a=0.18,\\ b=0.34",
+                "a=0.55,\\ b=0.32",
+                "a=0.34,\\ b=0.22",
+                "a=0.34,\\ b=0.18"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Apply \\( E(X)=\\sum xP(X=x)=0.55 \\), noting the \\( x=0 \\) term vanishes regardless of \\( b \\).",
+                  "work": "\\(-a+0.2(1)+0.15(2)+0.13(3) = 0.55 \\;\\Rightarrow\\; -a+0.89=0.55\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"90\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><rect x=\"142\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Solve for \\( a \\).",
+                  "work": "\\(a = 0.89-0.55 = 0.34\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"90\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><rect x=\"142\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Use \\( \\sum P(X=x)=1 \\) to solve for \\( b \\). Pitfall: swapping which unknown solves from the sum-to-1 equation versus the mean equation gives the a=0.18,b=0.34 distractor.",
+                  "work": "\\(0.34+b+0.2+0.15+0.13=1 \\;\\Rightarrow\\; b=0.18\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"90\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/><rect x=\"142\" y=\"50\" width=\"52\" height=\"38\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".22\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Use the total-probability equation and the expectation equation simultaneously.",
+              "keyPoints": [
+                {
+                  "text": "Find \\( a \\)",
+                  "note": "Use the total-probability equation and the expectation equation simultaneously."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q18b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\text{Var}(X) \\).",
+              "options": [
+                "2.0075",
+                "2.31",
+                "0.3025",
+                "1.7075"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Compute \\( E(X^2)=\\sum x^2P(X=x) \\) using the full probability distribution (including \\( a=0.34,\\ b=0.18 \\) from part (a)).",
+                  "work": "\\(E(X^2) = (-1)^2(0.34)+0^2(0.18)+1^2(0.2)+2^2(0.15)+3^2(0.13) = 0.34+0+0.2+0.6+1.17 = 2.31\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"88\" y=\"48\" width=\"266\" height=\"42\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".15\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Apply the variance formula \\( \\text{Var}(X)=E(X^2)-[E(X)]^2 \\).",
+                  "work": "\\(\\text{Var}(X) = 2.31-(0.55)^2\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"88\" y=\"48\" width=\"266\" height=\"42\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".15\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Simplify. Pitfall: forgetting to subtract \\( [E(X)]^2 \\) and reporting \\( E(X^2)=2.31 \\) directly is a common mistake.",
+                  "work": "\\(\\text{Var}(X) = 2.31-0.3025 = 2.0075\\)",
+                  "figure": {
+                    "svg": "<svg viewBox=\"0 0 362 100\" width=\"362\" height=\"100\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;\">\n  <g transform=\"translate(12,12)\">\n    <defs><clipPath id=\"q18clip\"><rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" rx=\"12\" ry=\"12\"/></clipPath></defs>\n  <g clip-path=\"url(#q18clip)\">\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"76\" fill=\"#ffffff\"/>\n    <rect x=\"0\" y=\"0\" width=\"338\" height=\"38\" fill=\"#eef2ff\"/>\n    <rect x=\"0\" y=\"38\" width=\"78\" height=\"38\" fill=\"#f8fafc\"/>\n<text x=\"39\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">x</text><text x=\"104\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">-1</text><text x=\"156\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">0</text><text x=\"208\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">1</text><text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">2</text><text x=\"312\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#4338ca\">3</text><text x=\"39\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#475569\">P(X=x)</text><text x=\"104\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">a</text><text x=\"156\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">b</text><text x=\"208\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.2</text><text x=\"260\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.15</text><text x=\"312\" y=\"62\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#1e293b\">0.13</text><line x1=\"0\" y1=\"38\" x2=\"338\" y2=\"38\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"78\" y1=\"0\" x2=\"78\" y2=\"76\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"182\" y1=\"0\" x2=\"182\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"234\" y1=\"0\" x2=\"234\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><line x1=\"286\" y1=\"0\" x2=\"286\" y2=\"76\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></g>\n  <rect x=\"0.75\" y=\"0.75\" width=\"336.5\" height=\"74.5\" rx=\"12\" ry=\"12\" fill=\"none\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n  </g>\n<rect x=\"88\" y=\"48\" width=\"266\" height=\"42\" rx=\"5\" fill=\"#fbbf24\" fill-opacity=\".15\" stroke=\"#d97706\" stroke-width=\"1.5\"/></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Compute E(X²) first, then subtract [E(X)]².",
+              "keyPoints": [
+                {
+                  "text": "Find \\( \\tex",
+                  "note": "Compute E(X²) first, then subtract [E(X)]²."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q18",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01"
+          },
+          "hint": "Use both facts: all probabilities sum to 1, and (E(X)=sum xP(X=x)).",
+          "keyPoints": [
+            {
+              "text": "probability distribution",
+              "note": "Focus on this condition when choosing the method."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1
+        },
+        {
+          "id": "gosford2020-q22",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Let \\( C \\) be the event a family owns a cat and \\( D \\) be the event a family owns a dog. Given \\( P(C)=\\dfrac37 \\), \\( P(D\\mid C')=\\dfrac25 \\), and \\( P(D'\\mid C)=\\dfrac34 \\).",
+          "parts": [
+            {
+              "id": "gosford2020-q22a",
+              "type": "mc",
+              "stem": "(a) Which list correctly completes all six branch probabilities on the tree diagram?",
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The first set of branches splits on cat ownership, using the given \\( P(C)=3/7 \\) and its complement.",
+                  "work": "\\(P(C)=\\dfrac37, \\quad P(C')=1-\\dfrac37=\\dfrac47\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From a cat-owning family, \\( P(D'|C)=3/4 \\) is given, so \\( P(D|C) \\) is its complement.",
+                  "work": "\\(P(D|C) = 1-\\dfrac34 = \\dfrac14\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
+                  }
+                },
+                {
+                  "explain": "From a non-cat-owning family, \\( P(D|C')=2/5 \\) is given directly, so \\( P(D'|C') \\) is its complement.",
+                  "work": "<svg viewBox=\"0 0 492 342\" width=\"492\" height=\"342\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:14px;border:1px solid #e2e8f0;padding:4px;\">\n  <g transform=\"translate(16,16)\"><circle cx=\"70\" cy=\"150\" r=\"4.5\" fill=\"#334155\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"240\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"20\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"290\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"230\" cy=\"70\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"230\" cy=\"240\" r=\"4\" fill=\"#d97706\"/><circle cx=\"400\" cy=\"20\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"110\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"190\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"290\" r=\"4.5\" fill=\"#334155\"/>\n    <text x=\"142.84458247200067\" y=\"90.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"133.84458247200067\" y1=\"95.68916494400135\" x2=\"151.84458247200067\" y2=\"95.68916494400135\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"142.84458247200067\" y=\"111.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"142.15582016587905\" y=\"203.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <line x1=\"133.15582016587905\" y1=\"208.9452085939928\" x2=\"151.15582016587905\" y2=\"208.9452085939928\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"142.15582016587905\" y=\"224.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"311.0496714641183\" y=\"26.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">1</text>\n    <line x1=\"302.0496714641183\" y1=\"31.568882978002215\" x2=\"320.0496714641183\" y2=\"31.568882978002215\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"47.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.3353706603912\" y=\"100.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"302.3353706603912\" y1=\"105.57467469333722\" x2=\"320.3353706603912\" y2=\"105.57467469333722\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.3353706603912\" y=\"121.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.0496714641183\" y=\"196.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">2</text>\n    <line x1=\"302.0496714641183\" y1=\"201.56888297800222\" x2=\"320.0496714641183\" y2=\"201.56888297800222\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"217.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text>\n    <text x=\"310.4853388161352\" y=\"275.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"301.4853388161352\" y1=\"280.3498480251403\" x2=\"319.4853388161352\" y2=\"280.3498480251403\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"310.4853388161352\" y=\"296.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text><text x=\"216\" y=\"62\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C</text><text x=\"214\" y=\"258\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C'</text><text x=\"420\" y=\"25\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text><text x=\"420\" y=\"195\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text></g>\n</svg>\n\n\\(P(D|C')=\\dfrac25, \\quad P(D'|C')=1-\\dfrac25=\\dfrac35\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"82\" y=\"82\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/7</text><text x=\"82\" y=\"167\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">4/7</text><text x=\"213\" y=\"48\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">1/4</text><text x=\"213\" y=\"91\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/4</text><text x=\"213\" y=\"151\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">2/5</text><text x=\"213\" y=\"201\" font-size=\"11\" font-weight=\"700\" fill=\"#0f766e\">3/5</text></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "hint": "Fill each branch using the given probability or its complement.",
+              "keyPoints": [
+                {
+                  "text": "all six branch probabilities",
+                  "note": "At each split, the probabilities on the outgoing branches must add to 1."
+                }
+              ],
+              "timeLimit": 60,
+              "options": [
+                "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
+                "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac34,\\ P(D'|C)=\\frac14;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
+                "\\(P(C)=\\frac47,\\ P(C' )=\\frac37;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac25,\\ P(D'|C')=\\frac35\\)",
+                "\\(P(C)=\\frac37,\\ P(C' )=\\frac47;\\ P(D|C)=\\frac14,\\ P(D'|C)=\\frac34;\\ P(D|C')=\\frac35,\\ P(D'|C')=\\frac25\\)"
+              ],
+              "solution": "The correct branch probabilities are shown in option A."
+            },
+            {
+              "id": "gosford2020-q22bi",
+              "type": "mc",
+              "stem": "(b)(i) Find the probability that a family owns both a cat and a dog.",
+              "options": [
+                "\\(\\dfrac{1}{7}\\)",
+                "\\(\\dfrac{3}{7}\\)",
+                "\\(\\dfrac{3}{28}\\)",
+                "\\(\\dfrac{12}{35}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "The event \"owns both\" corresponds to following the cat branch, then the dog-given-cat branch.",
+                  "work": "\\(P(C\\cap D) = P(C)\\times P(D|C)\\)"
+                },
+                {
+                  "explain": "Substitute the known values (using \\( P(D|C)=1/4 \\) from part (a)).",
+                  "work": "\\(P(C\\cap D) = \\dfrac37\\times\\dfrac14\\)"
+                },
+                {
+                  "explain": "Multiply the fractions. Pitfall: using \\( P(D'|C)=3/4 \\) instead of \\( P(D|C)=1/4 \\) here gives the wrong branch.",
+                  "work": "\\(P(C\\cap D) = \\dfrac{3}{28}\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "Multiply the probabilities along the cat-then-dog branch.",
+              "keyPoints": [
+                {
+                  "text": "a cat and a dog",
+                  "note": "Multiply the probabilities along the cat-then-dog branch."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "gosford2020-q22bii",
+              "type": "mc",
+              "stem": "(b)(ii) Find the probability that a family owns at least one pet (a cat or a dog).",
+              "options": [
+                "\\(\\dfrac{12}{35}\\)",
+                "\\(\\dfrac{3}{28}\\)",
+                "\\(\\dfrac{25}{35}\\)",
+                "\\(\\dfrac{23}{35}\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "\"At least one pet\" is the complement of \"neither a cat nor a dog\" — easier to compute via the complement.",
+                  "work": "\\(P(\\text{at least one}) = 1-P(C'\\cap D')\\)"
+                },
+                {
+                  "explain": "Find \\( P(C'\\cap D') \\) by following the no-cat branch then the no-dog-given-no-cat branch.",
+                  "work": "\\(P(C'\\cap D') = \\dfrac47\\times\\dfrac35 = \\dfrac{12}{35}\\)"
+                },
+                {
+                  "explain": "Subtract from 1. Pitfall: computing \\( P(C'\\cap D') \\) but forgetting to subtract from 1 leaves the complement value itself as a wrong \"answer\".",
+                  "work": "\\(P(\\text{at least one}) = 1-\\dfrac{12}{35} = \\dfrac{23}{35}\\)"
+                }
+              ],
+              "xp": 1,
+              "hint": "Use the complement of having neither pet.",
+              "keyPoints": [
+                {
+                  "text": "at least one pet",
+                  "note": "Use the complement of having neither pet."
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Gosford 2020 Trial Q22",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01"
+          },
+          "hint": "At each split, the probabilities on the outgoing branches must add to 1.",
+          "keyPoints": [
+            {
+              "text": "P(C)",
+              "note": "Use complementary probabilities at every branch point."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 245\" width=\"440\" height=\"245\" style=\"display:block;margin:.5rem auto;max-width:440px;background:#fff;border:1px solid #e2e8f0;border-radius:10px\"><style>text{font-family:system-ui,-apple-system,sans-serif;fill:#1e293b}</style><rect width=\"440\" height=\"245\" fill=\"#fff\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2.6\"/><line x1=\"36\" y1=\"120\" x2=\"145\" y2=\"175\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"285\" y2=\"100\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"175\" x2=\"285\" y2=\"210\" stroke=\"#475569\" stroke-width=\"1.8\"/><text x=\"153\" y=\"66\" font-size=\"11\" font-weight=\"700\">C</text><text x=\"153\" y=\"185\" font-size=\"11\" font-weight=\"700\">C′</text><text x=\"294\" y=\"34\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"103\" font-size=\"11\" font-weight=\"700\">D′</text><text x=\"294\" y=\"144\" font-size=\"11\" font-weight=\"700\">D</text><text x=\"294\" y=\"215\" font-size=\"11\" font-weight=\"700\">D′</text></svg>"
           }
         }
       ]
@@ -1359,6 +1629,51 @@
             "grade": "12"
           },
           "xp": 2
+        },
+        {
+          "id": "gosford2020-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For a standard normal distribution, \\( P(z\\lt N)=0.6 \\). What is \\( P(-N\\lt z\\lt N) \\)?",
+          "options": [
+            "0.1",
+            "0.3",
+            "0.4",
+            "0.2"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Since the total area under the curve is 1, find the area beyond \\( z=N \\) on the right tail (shaded below).",
+              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"120\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n</g>\n</svg></div>\n\n\\(P(z\\gt N) = 1-P(z\\lt N) = 1-0.6 = 0.4\\)"
+            },
+            {
+              "explain": "By symmetry of the standard normal curve about 0, the area beyond \\( z=-N \\) on the left tail equals the area beyond \\( z=N \\) on the right tail — both tails (shaded below) have the same area.",
+              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -134.1,41.9 L -130.2,41.9 L -126.3,41.8 L -122.4,41.8 L -118.5,41.7 L -114.6,41.6 L -110.7,41.5 L -106.8,41.4 L -102.9,41.2 L -99.0,41.0 L -95.1,40.8 L -91.2,40.5 L -87.3,40.2 L -83.4,39.8 L -79.5,39.3 L -75.6,38.8 L -71.7,38.2 L -67.8,37.5 L -63.9,36.7 L -60.0,35.8 L -56.1,34.8 L -52.2,33.7 L -48.3,32.5 L -44.4,31.2 L -40.5,29.8 L -36.6,28.3 L -32.7,26.7 L -28.8,25.0 L -24.9,23.3 L -21.0,21.6 L -17.1,19.8 L -13.2,18.1 L -9.3,16.3 L -5.4,14.6 L -1.5,13.1 L 2.4,11.6 L 6.3,10.2 L 10.2,9.0 L 14.1,8.0 L 18.0,7.2 L 18.0,42.0 L -138.0,42.0 Z\" fill=\"#dc2626\" fill-opacity=\"0.5\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <line x1=\"18\" y1=\"42\" x2=\"18\" y2=\"7.1998694877435625\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"18\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=−N</text>\n  <text x=\"120\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n  <text x=\"-60\" y=\"43.3\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.4</text>\n</g>\n</svg></div>\n\n\\(P(z\\lt -N) = P(z\\gt N) = 0.4\\)"
+            },
+            {
+              "explain": "The middle region (highlighted green below) is everything except both tails. Pitfall: forgetting to subtract both tails (only subtracting one) gives \\(0.6\\) as a wrong answer.",
+              "work": "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;\"><svg viewBox=\"0 0 364 87.90480523612894\" width=\"364\" height=\"87.90480523612894\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;overflow:hidden;\">\n  <g transform=\"translate(14,7.904805236128944)\">\n  <line x1=\"-138\" y1=\"42\" x2=\"198\" y2=\"42\" stroke=\"#94a3b8\" stroke-width=\"1\"/>\n  <path d=\"M 42.0,7.2 L 45.9,8.0 L 49.8,9.0 L 53.7,10.2 L 57.6,11.6 L 61.5,13.1 L 65.4,14.6 L 69.3,16.3 L 73.2,18.1 L 77.1,19.8 L 81.0,21.6 L 84.9,23.3 L 88.8,25.0 L 92.7,26.7 L 96.6,28.3 L 100.5,29.8 L 104.4,31.2 L 108.3,32.5 L 112.2,33.7 L 116.1,34.8 L 120.0,35.8 L 123.9,36.7 L 127.8,37.5 L 131.7,38.2 L 135.6,38.8 L 139.5,39.3 L 143.4,39.8 L 147.3,40.2 L 151.2,40.5 L 155.1,40.8 L 159.0,41.0 L 162.9,41.2 L 166.8,41.4 L 170.7,41.5 L 174.6,41.6 L 178.5,41.7 L 182.4,41.8 L 186.3,41.8 L 190.2,41.9 L 194.1,41.9 L 198.0,41.9 L 198.0,42.0 L 42.0,42.0 Z\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -134.1,41.9 L -130.2,41.9 L -126.3,41.8 L -122.4,41.8 L -118.5,41.7 L -114.6,41.6 L -110.7,41.5 L -106.8,41.4 L -102.9,41.2 L -99.0,41.0 L -95.1,40.8 L -91.2,40.5 L -87.3,40.2 L -83.4,39.8 L -79.5,39.3 L -75.6,38.8 L -71.7,38.2 L -67.8,37.5 L -63.9,36.7 L -60.0,35.8 L -56.1,34.8 L -52.2,33.7 L -48.3,32.5 L -44.4,31.2 L -40.5,29.8 L -36.6,28.3 L -32.7,26.7 L -28.8,25.0 L -24.9,23.3 L -21.0,21.6 L -17.1,19.8 L -13.2,18.1 L -9.3,16.3 L -5.4,14.6 L -1.5,13.1 L 2.4,11.6 L 6.3,10.2 L 10.2,9.0 L 14.1,8.0 L 18.0,7.2 L 18.0,42.0 L -138.0,42.0 Z\" fill=\"#94a3b8\" fill-opacity=\"0.4\" stroke=\"none\"/>\n  <path d=\"M 18.0,7.2 L 18.6,7.1 L 19.2,7.0 L 19.8,6.9 L 20.4,6.8 L 21.0,6.7 L 21.6,6.6 L 22.2,6.6 L 22.8,6.5 L 23.4,6.4 L 24.0,6.4 L 24.6,6.3 L 25.2,6.3 L 25.8,6.2 L 26.4,6.2 L 27.0,6.2 L 27.6,6.1 L 28.2,6.1 L 28.8,6.1 L 29.4,6.1 L 30.0,6.1 L 30.6,6.1 L 31.2,6.1 L 31.8,6.1 L 32.4,6.1 L 33.0,6.2 L 33.6,6.2 L 34.2,6.2 L 34.8,6.3 L 35.4,6.3 L 36.0,6.4 L 36.6,6.4 L 37.2,6.5 L 37.8,6.6 L 38.4,6.6 L 39.0,6.7 L 39.6,6.8 L 40.2,6.9 L 40.8,7.0 L 41.4,7.1 L 42.0,7.2 L 42.0,42.0 L 18.0,42.0 Z\" fill=\"#059669\" fill-opacity=\"0.45\" stroke=\"none\"/>\n  <path d=\"M -138.0,41.9 L -135.6,41.9 L -133.2,41.9 L -130.8,41.9 L -128.4,41.8 L -126.0,41.8 L -123.6,41.8 L -121.2,41.7 L -118.8,41.7 L -116.4,41.7 L -114.0,41.6 L -111.6,41.5 L -109.2,41.5 L -106.8,41.4 L -104.4,41.3 L -102.0,41.2 L -99.6,41.1 L -97.2,40.9 L -94.8,40.8 L -92.4,40.6 L -90.0,40.4 L -87.6,40.2 L -85.2,40.0 L -82.8,39.7 L -80.4,39.5 L -78.0,39.1 L -75.6,38.8 L -73.2,38.4 L -70.8,38.0 L -68.4,37.6 L -66.0,37.1 L -63.6,36.6 L -61.2,36.1 L -58.8,35.5 L -56.4,34.9 L -54.0,34.2 L -51.6,33.5 L -49.2,32.8 L -46.8,32.0 L -44.4,31.2 L -42.0,30.3 L -39.6,29.5 L -37.2,28.5 L -34.8,27.6 L -32.4,26.6 L -30.0,25.6 L -27.6,24.5 L -25.2,23.5 L -22.8,22.4 L -20.4,21.3 L -18.0,20.2 L -15.6,19.1 L -13.2,18.1 L -10.8,17.0 L -8.4,15.9 L -6.0,14.9 L -3.6,13.9 L -1.2,12.9 L 1.2,12.0 L 3.6,11.1 L 6.0,10.3 L 8.4,9.6 L 10.8,8.9 L 13.2,8.2 L 15.6,7.7 L 18.0,7.2 L 20.4,6.8 L 22.8,6.5 L 25.2,6.3 L 27.6,6.1 L 30.0,6.1 L 32.4,6.1 L 34.8,6.3 L 37.2,6.5 L 39.6,6.8 L 42.0,7.2 L 44.4,7.7 L 46.8,8.2 L 49.2,8.9 L 51.6,9.6 L 54.0,10.3 L 56.4,11.1 L 58.8,12.0 L 61.2,12.9 L 63.6,13.9 L 66.0,14.9 L 68.4,15.9 L 70.8,17.0 L 73.2,18.1 L 75.6,19.1 L 78.0,20.2 L 80.4,21.3 L 82.8,22.4 L 85.2,23.5 L 87.6,24.5 L 90.0,25.6 L 92.4,26.6 L 94.8,27.6 L 97.2,28.5 L 99.6,29.5 L 102.0,30.3 L 104.4,31.2 L 106.8,32.0 L 109.2,32.8 L 111.6,33.5 L 114.0,34.2 L 116.4,34.9 L 118.8,35.5 L 121.2,36.1 L 123.6,36.6 L 126.0,37.1 L 128.4,37.6 L 130.8,38.0 L 133.2,38.4 L 135.6,38.8 L 138.0,39.1 L 140.4,39.5 L 142.8,39.7 L 145.2,40.0 L 147.6,40.2 L 150.0,40.4 L 152.4,40.6 L 154.8,40.8 L 157.2,40.9 L 159.6,41.1 L 162.0,41.2 L 164.4,41.3 L 166.8,41.4 L 169.2,41.5 L 171.6,41.5 L 174.0,41.6 L 176.4,41.7 L 178.8,41.7 L 181.2,41.7 L 183.6,41.8 L 186.0,41.8 L 188.4,41.8 L 190.8,41.9 L 193.2,41.9 L 195.6,41.9 L 198.0,41.9\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n  <line x1=\"42\" y1=\"42\" x2=\"42\" y2=\"7.1998694877435625\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <line x1=\"18\" y1=\"42\" x2=\"18\" y2=\"7.1998694877435625\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/>\n  <text x=\"42\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=N</text>\n  <text x=\"18\" y=\"58\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">z=−N</text>\n  <text x=\"30\" y=\"30.299999999999997\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.2</text>\n</g>\n</svg></div>\n\n\\(P(-N\\lt z\\lt N) = 1-P(z\\gt N)-P(z\\lt -N) = 1-0.4-0.4 = 0.2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q8",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-NORM-01"
+          },
+          "xp": 1,
+          "hint": "Use symmetry of the standard normal curve: compare the two tails outside ((-N,N)).",
+          "keyPoints": [
+            {
+              "text": "P(z",
+              "note": "Use symmetry to get the left-tail probability from the given right-tail probability."
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -1782,7 +2097,15 @@
           "dna": {
             "dnaId": "PROB-NORM-01"
           },
-          "xp": 2
+          "xp": 1,
+          "hint": "Convert the lower 2.5% point to a standard score, then rearrange (z=(x-mu)/sigma).",
+          "keyPoints": [
+            {
+              "text": "Steel rods have lengths that are normally",
+              "note": "The 2.5th percentile of the standard normal distribution has z approximately −1.96."
+            }
+          ],
+          "timeLimit": 60
         },
         {
           "id": "hg2020-q25",
