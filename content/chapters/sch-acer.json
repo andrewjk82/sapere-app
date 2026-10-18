@@ -899,7 +899,7 @@
           "type": "mc",
           "stem": "For a ride of 25 kilometres in Pete’s taxi by one person the total charge will be",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 857\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q2-4.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"857\"/></svg>"
+            "svg": "fig:7e827dce3d"
           },
           "options": [
             "\\(\\$25.00\\)",
@@ -908,10 +908,12 @@
             "\\(\\$10.00\\)"
           ],
           "answer": 1,
+          "xp": 1,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": 3
+            "number": 3,
+            "origin": "teacher"
           }
         },
         {
