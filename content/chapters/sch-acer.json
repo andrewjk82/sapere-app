@@ -1001,7 +1001,7 @@
           "type": "multipart",
           "stem": "Information for Questions 8, 9 and 10\n\nThe lines on this graph enable conversion between one system of units and another. The first-named unit on each line is a metric unit (e.g. centimetres); the other unit is non-metric (e.g. inches).\n\nFor example, point X shows that 80 metres is equivalent to about 88 yards.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 563\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-graph-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"563\"/></svg>"
+            "svg": "fig:cf998d2fdc"
           },
           "parts": [
             {
@@ -1014,7 +1014,8 @@
                 "140 pints.",
                 "30 acres."
               ],
-              "answer": 2
+              "answer": 2,
+              "xp": 2
             },
             {
               "id": "sch-acer-l1-t3-q10-p9",
@@ -1044,7 +1045,8 @@
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": "8-10"
+            "number": "8-10",
+            "origin": "teacher"
           }
         },
         {
