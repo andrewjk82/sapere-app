@@ -3,6 +3,7 @@ import assert from 'node:assert';
 import {
   pointInPolygon, polylineLength, selectInLasso, boxOf, pointInBox, translateStroke, clampShift,
   bakeErasers, hasErasers, setLassoClipboard, pasteStrokes, getLassoClipboard, clearLassoClipboard,
+  scaleStroke, rotateStroke, scaleFromDrag, maxScaleInPage, snapAngle, recolorStrokes, MIN_SCALE, MAX_SCALE,
 } from '../src/utils/lassoSelect.js';
 
 let passed = 0;
@@ -94,6 +95,57 @@ test('copy / paste: fresh copies, nudged on the source page, same place elsewher
   assert.deepEqual(a.points[0], [100, 100, 3]);
   clearLassoClipboard();
   assert.equal(pasteStrokes(getLassoClipboard(), 'x', 794, 1123), null);
+});
+
+test('scaling about an anchor keeps the anchor fixed and scales width', () => {
+  const s = line('a', 100, 100, 200, 100, 4);
+  const big = scaleStroke(s, 100, 100, 2);
+  assert.deepEqual(big.points[0], [100, 100, 6]);
+  assert.deepEqual(big.points.at(-1), [300, 100, 6]);
+  const tiny = scaleStroke(s, 100, 100, 0.1);
+  assert.ok(tiny.points.every((p) => p[2] >= 0.4));         // never vanishes
+  assert.deepEqual(s.points[0], [100, 100, 3]);             // original untouched
+});
+
+test('rotating 90° about the centre', () => {
+  const s = line('a', 100, 200, 200, 200, 2);               // horizontal, centre (150, 200)
+  const r = rotateStroke(s, 150, 200, Math.PI / 2);
+  assert.ok(Math.abs(r.points[0][0] - 150) < 1e-9 && Math.abs(r.points[0][1] - 150) < 1e-9);
+  assert.ok(Math.abs(r.points.at(-1)[0] - 150) < 1e-9 && Math.abs(r.points.at(-1)[1] - 250) < 1e-9);
+  assert.equal(r.points[0][2], 3);                          // width unchanged
+});
+
+test('corner drag: 1 at the start, grows away from the anchor, shrinks toward it, stays in limits', () => {
+  const anchor = { x: 100, y: 100 }; const start = { x: 200, y: 200 };
+  assert.equal(scaleFromDrag(anchor, start, start), 1);
+  assert.equal(scaleFromDrag(anchor, start, { x: 300, y: 300 }), 2);
+  assert.equal(scaleFromDrag(anchor, start, { x: 150, y: 150 }), 0.5);
+  assert.equal(scaleFromDrag(anchor, start, { x: 100, y: 100 }), MIN_SCALE);
+  assert.equal(scaleFromDrag(anchor, start, { x: 9000, y: 9000 }), MAX_SCALE);
+  assert.equal(scaleFromDrag(anchor, { x: 100, y: 100 }, { x: 5, y: 5 }), 1);     // degenerate start
+});
+
+test('the biggest scale that keeps the box on the page', () => {
+  const box = { minX: 100, minY: 100, maxX: 200, maxY: 200 };
+  const k = maxScaleInPage(box, 100, 100, 794, 1123);       // grows right / down from (100, 100)
+  assert.ok(Math.abs(100 + 100 * k - (794 - 4)) < 1e-6);
+  assert.equal(maxScaleInPage({ minX: 0, minY: 0, maxX: 10, maxY: 10 }, 0, 0, 794, 1123), MAX_SCALE);
+});
+
+test('angle snaps to 15° only when close', () => {
+  const deg = (d) => (d * Math.PI) / 180;
+  assert.equal(snapAngle(deg(14)), deg(15));
+  assert.equal(snapAngle(deg(-31)), deg(-30));
+  assert.equal(snapAngle(deg(20)), deg(20));
+});
+
+test('recolour: ink colours touch pen strokes only, highlighter colours touch highlighter strokes only', () => {
+  const pen = { ...line('p', 0, 0, 10, 10), color: '#111' };
+  const hl = { ...line('h', 0, 0, 10, 10), color: 'rgba(1,1,1,.4)', penStyle: 'highlighter' };
+  const ink = recolorStrokes([pen, hl], '#ef4444', false);
+  assert.equal(ink[0].color, '#ef4444'); assert.equal(ink[1], hl);
+  const mark = recolorStrokes([pen, hl], 'rgba(9,9,9,.5)', true);
+  assert.equal(mark[0], pen); assert.equal(mark[1].color, 'rgba(9,9,9,.5)');
 });
 
 test('loop length', () => {

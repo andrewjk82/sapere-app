@@ -3,18 +3,20 @@ import { PAGE_W, PAGE_H } from './padView';
 import {
   MIN_LASSO_LENGTH, MIN_LASSO_POINTS, polylineLength, selectInLasso, boxOf, pointInBox, translateBox,
   translateStrokes, clampShift, bakeErasers, hasErasers, setLassoClipboard, getLassoClipboard, pasteStrokes,
+  scaleStrokes, rotateStrokes, scaleFromDrag, maxScaleInPage, snapAngle, recolorStrokes,
 } from './lassoSelect';
 
 const HIT_PAD_PX = 14;          // grab area around the selection, in screen px
 
 /**
  * The notepad's lasso tool (see WorkingOutCanvas). With the lasso active, drawing a loop with the pen selects
- * the strokes inside it; dragging inside the selection moves it; the menu / keys copy, cut, delete and paste.
+ * the strokes inside it; dragging inside the selection moves it, the corner handles resize it, the top handle
+ * rotates it; the menu / keys copy, cut, delete, paste and recolour.
  *
  * The strokes array stays the single source of truth: a selection is a list of stroke objects that are IN
  * that array, and every change (move, delete, cut, paste) is one undo step through `pushUndo`. While a
  * selection is being dragged its strokes are hidden from the background layer and shown, shifted, on the
- * live layer; nothing is committed until the pen lifts, so an interrupted drag loses nothing.
+ * live layer; nothing is committed until the pen lifts, so an interrupted gesture loses nothing.
  */
 export const useLassoTool = ({
   activeTool, strokes, strokesRef, setStrokes, pushUndo, isSubmittedRef,
@@ -23,7 +25,7 @@ export const useLassoTool = ({
   drawStroke, pageKeyRef, noticeRef, canvasWrapperRef,
 }) => {
   const [selection, setSelection] = useState(null);     // { items: stroke[], box } | null
-  const [shift, setShift] = useState(null);             // { dx, dy } while a selection is being dragged
+  const [preview, setPreview] = useState(null);         // { box, angle } while a selection is being moved / resized / rotated
   const [clipboardTick, setClipboardTick] = useState(0); // re-render when something is copied
   const selectionRef = useRef(null);
   const gestureRef = useRef(null);                       // { kind: 'lasso' | 'move', pointerId, rect, ... }
@@ -70,14 +72,14 @@ export const useLassoTool = ({
     ctx.restore();
   };
 
-  const paintDrag = () => {
+  const paintTransform = () => {
     const g = gestureRef.current;
     const ctx = getLiveCtx();
     const live = liveCanvasRef.current;
-    if (!g || g.kind !== 'move' || !ctx || !live) return;
+    if (!g || g.kind === 'lasso' || !ctx || !live) return;
     ctx.clearRect(0, 0, live.width, live.height);
     const dpr = backScaleRef.current;
-    translateStrokes(g.items, g.dx, g.dy).forEach((s) => drawStroke(ctx, s, dpr, true));
+    g.apply(g.items).forEach((st) => drawStroke(ctx, st, dpr, true));
   };
 
   const schedule = (paint) => {
@@ -94,15 +96,67 @@ export const useLassoTool = ({
   // ── pointer entry points (called by the canvas's own handlers) ─────────────
   const toPage = (e, rect) => ({ x: (e.clientX - rect.left) * rect.sx, y: (e.clientY - rect.top) * rect.sy });
 
+  // The three ways to change a selection share one gesture: `apply(items)` gives the changed strokes for the
+  // current pointer position, `previewBox` / `angle` how the selection frame should look meanwhile.
+  const transformGesture = (kind, e, rect, start, sel, extra = {}) => ({
+    kind, pointerId: e.pointerId, rect, start, items: sel.items, box: sel.box, moved: false,
+    apply: (items) => items, previewBox: sel.box, angle: 0, ...extra,
+  });
+
+  const update = (g, p) => {
+    if (g.kind === 'move') {
+      const want = clampShift(g.box, p.x - g.start.x, p.y - g.start.y, PAGE_W, PAGE_H);
+      g.moved = Math.hypot(want.dx, want.dy) >= 0.5;
+      g.apply = (items) => translateStrokes(items, want.dx, want.dy);
+      g.previewBox = translateBox(g.box, want.dx, want.dy);
+    } else if (g.kind === 'resize') {
+      const k = Math.min(scaleFromDrag(g.anchor, g.start, p), maxScaleInPage(g.box, g.anchor.x, g.anchor.y, PAGE_W, PAGE_H));
+      g.moved = Math.abs(k - 1) > 0.004;
+      g.apply = (items) => scaleStrokes(items, g.anchor.x, g.anchor.y, k);
+      const sx = (v) => g.anchor.x + (v - g.anchor.x) * k;
+      const sy = (v) => g.anchor.y + (v - g.anchor.y) * k;
+      g.previewBox = { minX: Math.min(sx(g.box.minX), sx(g.box.maxX)), maxX: Math.max(sx(g.box.minX), sx(g.box.maxX)), minY: Math.min(sy(g.box.minY), sy(g.box.maxY)), maxY: Math.max(sy(g.box.minY), sy(g.box.maxY)) };
+    } else {
+      const turn = snapAngle(Math.atan2(p.y - g.center.y, p.x - g.center.x) - Math.atan2(g.start.y - g.center.y, g.start.x - g.center.x));
+      g.moved = Math.abs(turn) > 0.003;
+      g.angle = turn;
+      g.apply = (items) => {
+        const turned = rotateStrokes(items, g.center.x, g.center.y, turn);
+        // the turned ink may poke out of the page: nudge it back in
+        const fit = clampShift(boxOf(turned) || g.box, 0, 0, PAGE_W, PAGE_H);
+        return fit.dx || fit.dy ? translateStrokes(turned, fit.dx, fit.dy) : turned;
+      };
+    }
+  };
+
   const begin = (e, rect) => {
     const pt = toPage(e, rect);
     const sel = selectionRef.current;
     const pad = HIT_PAD_PX / Math.max(0.3, cssScaleRef.current);
     if (sel && pointInBox(pt.x, pt.y, sel.box, pad)) {
-      gestureRef.current = { kind: 'move', pointerId: e.pointerId, rect, start: pt, items: sel.items, box: sel.box, dx: 0, dy: 0, moved: false };
+      gestureRef.current = transformGesture('move', e, rect, pt, sel);
     } else {
       if (sel) clearSelection();
       gestureRef.current = { kind: 'lasso', pointerId: e.pointerId, rect, pts: [[pt.x, pt.y]] };
+    }
+  };
+
+  // Pointer down on a selection handle (rendered by LassoOverlay, not the canvas): 0-3 = corners (tl, tr, br, bl)
+  // resize, 'rotate' = the top handle.
+  const beginHandle = (e, kind, corner = 0) => {
+    const sel = selectionRef.current;
+    const canvas = displayCanvasRef.current;
+    if (!sel || !canvas || isSubmittedRef.current) return;
+    const r = canvas.getBoundingClientRect();
+    const rect = { left: r.left, top: r.top, sx: r.width > 0 ? PAGE_W / r.width : 1, sy: r.height > 0 ? PAGE_H / r.height : 1 };
+    const start = toPage(e, rect);
+    const b = sel.box;
+    if (kind === 'rotate') {
+      gestureRef.current = transformGesture('rotate', e, rect, start, sel, { center: { x: (b.minX + b.maxX) / 2, y: (b.minY + b.maxY) / 2 } });
+    } else {
+      const corners = [[b.minX, b.minY], [b.maxX, b.minY], [b.maxX, b.maxY], [b.minX, b.maxY]];
+      const [ax, ay] = corners[(corner + 2) % 4];
+      gestureRef.current = transformGesture('resize', e, rect, start, sel, { anchor: { x: ax, y: ay } });
     }
   };
 
@@ -122,16 +176,14 @@ export const useLassoTool = ({
       return;
     }
     const p = toPage(events[events.length - 1], g.rect);
-    const want = clampShift(g.box, p.x - g.start.x, p.y - g.start.y, PAGE_W, PAGE_H);
-    if (!g.moved && Math.hypot(want.dx, want.dy) < 3) return;   // a tap, not a drag
-    if (!g.moved) {
-      g.moved = true;
+    update(g, p);
+    if (!g.moved && !hiddenStrokesRef.current) return;       // not a drag yet (a tap on the selection)
+    if (!hiddenStrokesRef.current) {
       hiddenStrokesRef.current = new Set(g.items);
       redrawBackground();
     }
-    g.dx = want.dx; g.dy = want.dy;
-    setShift({ dx: want.dx, dy: want.dy });
-    schedule(paintDrag);
+    setPreview({ box: g.previewBox, angle: g.angle });
+    schedule(paintTransform);
   };
 
   const finishLoop = (g) => {
@@ -151,34 +203,30 @@ export const useLassoTool = ({
     showSelection({ items, box: boxOf(items) });
   };
 
-  const finishMove = (g) => {
+  const finishTransform = (g) => {
     hiddenStrokesRef.current = null;
     const live = liveCanvasRef.current;
     if (live) getLiveCtx()?.clearRect(0, 0, live.width, live.height);
-    setShift(null);
-    if (!g.moved || (g.dx === 0 && g.dy === 0)) { redrawBackground(); return; }
+    setPreview(null);
+    if (!g.moved) { redrawBackground(); return; }
     const before = strokesRef.current;
-    const moved = translateStrokes(g.items, g.dx, g.dy);
-    const swap = new Map(g.items.map((s, i) => [s, moved[i]]));
-    const after = before.map((s) => swap.get(s) || s);
+    const changed = g.apply(g.items);
+    const swap = new Map(g.items.map((st, i) => [st, changed[i]]));
+    const after = before.map((st) => swap.get(st) || st);
     strokesRef.current = after;
     forceRedrawRef.current = true;
     pushUndo(before);
     setStrokes(after);
     redrawBackground();
-    showSelection({ items: moved, box: translateBox(g.box, g.dx, g.dy) });
+    showSelection({ items: changed, box: boxOf(changed) });
   };
 
   const end = (e) => {
     const g = gestureRef.current;
     if (!g || (e?.pointerId != null && e.pointerId !== g.pointerId)) return false;
-    if (g.kind === 'move' && g.moved) {
-      const p = toPage(e, g.rect);
-      const want = clampShift(g.box, p.x - g.start.x, p.y - g.start.y, PAGE_W, PAGE_H);
-      g.dx = want.dx; g.dy = want.dy;
-    }
+    if (g.kind !== 'lasso' && g.moved && typeof e?.clientX === 'number') update(g, toPage(e, g.rect));
     endGesture();
-    if (g.kind === 'lasso') finishLoop(g); else finishMove(g);
+    if (g.kind === 'lasso') finishLoop(g); else finishTransform(g);
     return true;
   };
 
@@ -194,7 +242,7 @@ export const useLassoTool = ({
       hiddenStrokesRef.current = null;
       const live = liveCanvasRef.current;
       if (live) getLiveCtx()?.clearRect(0, 0, live.width, live.height);
-      setShift(null);
+      setPreview(null);
       redrawBackground();
     }
     return true;
@@ -223,6 +271,22 @@ export const useLassoTool = ({
     setStrokes(after);
     showSelection(null);
     notice(label);
+    return true;
+  }, []);   // eslint-disable-line react-hooks/exhaustive-deps
+
+  const recolor = useCallback((color, highlighter = false) => {
+    const sel = selectionRef.current;
+    if (!sel || isSubmittedRef.current) return false;
+    const changed = recolorStrokes(sel.items, color, highlighter);
+    if (changed.every((st, i) => st === sel.items[i])) return false;
+    const before = strokesRef.current;
+    const swap = new Map(sel.items.map((st, i) => [st, changed[i]]));
+    const after = before.map((st) => swap.get(st) || st);
+    strokesRef.current = after;
+    forceRedrawRef.current = true;
+    pushUndo(before);
+    setStrokes(after);
+    showSelection({ items: changed, box: sel.box });
     return true;
   }, []);   // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -274,8 +338,8 @@ export const useLassoTool = ({
   useEffect(() => () => { cancelAnimationFrame(rafRef.current); }, []);
 
   return {
-    selection, shift, moving: Boolean(shift),
+    selection, preview,
     canPaste: Boolean(getLassoClipboard()) && clipboardTick >= 0,
-    begin, isActive, move, end, cancel, clearSelection, copy, cut, remove, paste,
+    begin, beginHandle, isActive, move, end, cancel, clearSelection, copy, cut, remove, paste, recolor,
   };
 };

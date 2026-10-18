@@ -13,7 +13,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.6-lasso';
+const CANVAS_VERSION = 'v10.7-lasso-transform';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -1698,13 +1698,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
           {!isSubmitted && activeTool === 'lasso' && (
             <LassoOverlay
               selection={lasso.selection}
-              shift={lasso.shift}
+              preview={lasso.preview}
               scale={u}
               canPaste={lasso.canPaste}
+              inkColors={COLORS}
+              highlighterColors={HIGHLIGHTER_COLORS}
               onCopy={lasso.copy}
               onCut={lasso.cut}
               onDelete={lasso.remove}
               onPaste={lasso.paste}
+              onRecolor={lasso.recolor}
+              onHandleDown={lasso.beginHandle}
             />
           )}
           {!isSubmitted && (

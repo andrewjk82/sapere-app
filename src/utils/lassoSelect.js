@@ -84,6 +84,64 @@ export const translateStroke = (s, dx, dy) => ({
 
 export const translateStrokes = (items, dx, dy) => items.map((s) => translateStroke(s, dx, dy));
 
+// ── Resize / rotate ──────────────────────────────────────────────────────────
+
+export const MIN_SCALE = 0.15;
+export const MAX_SCALE = 8;
+
+// Scale about (ax, ay); the line width scales with the ink, like the original stroke was drawn bigger / smaller.
+export const scaleStroke = (s, ax, ay, k) => ({
+  ...s,
+  points: s.points.map((p) => [ax + (p[0] - ax) * k, ay + (p[1] - ay) * k, Math.max(0.4, (Number(p[2]) || 0) * k)]),
+  ...(s.start ? { start: { x: ax + (s.start.x - ax) * k, y: ay + (s.start.y - ay) * k } } : {}),
+});
+export const scaleStrokes = (items, ax, ay, k) => items.map((s) => scaleStroke(s, ax, ay, k));
+
+export const rotateStroke = (s, cx, cy, angle) => {
+  const cos = Math.cos(angle); const sin = Math.sin(angle);
+  const rot = (x, y) => [cx + (x - cx) * cos - (y - cy) * sin, cy + (x - cx) * sin + (y - cy) * cos];
+  return {
+    ...s,
+    points: s.points.map((p) => { const [x, y] = rot(p[0], p[1]); return [x, y, p[2]]; }),
+    ...(s.start ? { start: (([x, y]) => ({ x, y }))(rot(s.start.x, s.start.y)) } : {}),
+  };
+};
+export const rotateStrokes = (items, cx, cy, angle) => items.map((s) => rotateStroke(s, cx, cy, angle));
+
+// The scale factor a corner drag asks for: how far the pointer is from the fixed opposite corner (the anchor),
+// measured along the diagonal the drag started on, so the shape keeps its proportions. 1 at the start.
+export const scaleFromDrag = (anchor, start, pointer) => {
+  const vx = start.x - anchor.x; const vy = start.y - anchor.y;
+  const len2 = vx * vx + vy * vy;
+  if (len2 < 1) return 1;
+  const k = ((pointer.x - anchor.x) * vx + (pointer.y - anchor.y) * vy) / len2;
+  return Math.min(MAX_SCALE, Math.max(MIN_SCALE, k));
+};
+
+// The biggest scale about the anchor that keeps the whole box inside the page (with `margin`).
+export const maxScaleInPage = (box, ax, ay, pageW, pageH, margin = 4) => {
+  let k = MAX_SCALE;
+  const limit = (edge, anchor, size) => {
+    const d = edge - anchor;
+    if (d > 0) k = Math.min(k, (size - margin - anchor) / d);
+    else if (d < 0) k = Math.min(k, (anchor - margin) / -d);
+  };
+  limit(box.minX, ax, pageW); limit(box.maxX, ax, pageW);
+  limit(box.minY, ay, pageH); limit(box.maxY, ay, pageH);
+  return Math.max(MIN_SCALE, k);
+};
+
+// Rotation snaps to every 15° when within 3° of it, so a straight line is easy to level.
+export const snapAngle = (angle, step = Math.PI / 12, within = Math.PI / 60) => {
+  const nearest = Math.round(angle / step) * step;
+  return Math.abs(angle - nearest) <= within ? nearest : angle;
+};
+
+// Stroke colour change: ink colours for pen strokes, highlighter colours for highlighter strokes.
+export const recolorStrokes = (items, color, highlighter) => items.map((s) => (
+  (s.penStyle === 'highlighter') === Boolean(highlighter) ? { ...s, color } : s
+));
+
 // A copy that shares nothing with the original (new objects, new point arrays).
 export const cloneStrokes = (items, dx = 0, dy = 0) => translateStrokes(items, dx, dy);
 
