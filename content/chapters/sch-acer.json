@@ -1076,7 +1076,7 @@
         {
           "id": "sch-acer-l1-t3-q12",
           "type": "mc",
-          "stem": "Information for Questions 11 and 12\n\nTo see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich one of these designs for a bridge girder is the most flexible?",
+          "stem": "To see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich one of these designs for a bridge girder is the most flexible?",
           "figure": {
             "svg": "fig:dfc3677bab"
           },
@@ -1255,44 +1255,43 @@
           }
         },
         {
-          "id": "sch-acer-l1-t3-q22",
-          "type": "mc",
-          "stem": "What fraction of the area of the original sheet would be occupied by the shaded part?",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 499\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q22-23.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"499\"/></svg>"
-          },
-          "options": [
-            "\\(\\dfrac{1}{16}\\)",
-            "\\(\\dfrac{1}{32}\\)",
-            "\\(\\dfrac{1}{40}\\)",
-            "\\(\\dfrac{1}{64}\\)"
-          ],
-          "answer": 3,
-          "meta": {
-            "source": "ACER Scholarship Sample Test · Level 1",
-            "test": "Test 3 · Mathematics",
-            "number": 22
-          }
-        },
-        {
           "id": "sch-acer-l1-t3-q23",
-          "type": "mc",
-          "stem": "What is the total number of halvings that would need to occur to produce an area \\(\\dfrac{1}{2048}\\) of the original?",
+          "type": "multipart",
+          "stem": "This two-by-one sheet is halved, halved again, and again, as shown.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 499\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q22-23.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"499\"/></svg>"
+            "svg": "fig:c973b2a45a"
           },
-          "options": [
-            "9",
-            "10",
-            "11",
-            "12"
-          ],
-          "answer": 2,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": 23
-          }
+            "number": "22-23"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-l1-t3-q23-p22",
+              "type": "mc",
+              "stem": "22.  What fraction of the area of the original sheet would be occupied by the shaded part?",
+              "options": [
+                "\\(\\dfrac{1}{16}\\)",
+                "\\(\\dfrac{1}{32}\\)",
+                "\\(\\dfrac{1}{40}\\)",
+                "\\(\\dfrac{1}{64}\\)"
+              ],
+              "answer": 3
+            },
+            {
+              "id": "sch-acer-l1-t3-q23-p23",
+              "type": "mc",
+              "stem": "23.  What is the total number of halvings that would need to occur to produce an area \\(\\dfrac{1}{2048}\\) of the original?",
+              "options": [
+                "9",
+                "10",
+                "11",
+                "12"
+              ],
+              "answer": 2
+            }
+          ]
         },
         {
           "id": "sch-acer-l1-t3-q24",
