@@ -627,6 +627,186 @@
             "test": "Test 2 · Humanities Comprehension and Interpretation",
             "number": 31
           }
+        },
+        {
+          "id": "sch-acer-l1-t2-q32",
+          "type": "mc",
+          "stem": "The number of years during which Hobart had more people than Perth but fewer people than Brisbane is closest to",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1352\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit7-graph.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1352\"/></svg>"
+          },
+          "options": [
+            "20.",
+            "25.",
+            "50.",
+            "65."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 32
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q33",
+          "type": "mc",
+          "stem": "Which capital city showed the biggest population increase between 1860 and 1870?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1352\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit7-graph.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1352\"/></svg>"
+          },
+          "options": [
+            "Melbourne",
+            "Adelaide",
+            "Brisbane",
+            "Sydney"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 33
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q34",
+          "type": "mc",
+          "stem": "In 1870 the difference in population between Sydney and Adelaide was closest to",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1352\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit7-graph.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1352\"/></svg>"
+          },
+          "options": [
+            "50 000.",
+            "100 000.",
+            "150 000.",
+            "200 000."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 34
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q35",
+          "type": "mc",
+          "stem": "Which is the last capital city to record a population greater than zero?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1352\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit7-graph.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1352\"/></svg>"
+          },
+          "options": [
+            "Adelaide",
+            "Melbourne",
+            "Perth",
+            "Brisbane"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 35
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q36",
+          "type": "mc",
+          "stem": "The new population policy will be administered by",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 608\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit8-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"608\"/></svg>"
+          },
+          "options": [
+            "individual communities.",
+            "the national government.",
+            "foreign organisations.",
+            "individual Indian families."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 36
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q37",
+          "type": "mc",
+          "stem": "A problem with India’s current family planning policy is that it",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 608\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit8-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"608\"/></svg>"
+          },
+          "options": [
+            "ignores the problem of child marriage in India.",
+            "underestimates India’s future population growth rate.",
+            "pays little attention to the rights and status of women.",
+            "concentrates only on wealth and not on social conditions."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 37
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q38",
+          "type": "mc",
+          "stem": "According to the passage, which one of the following issues would be included in the draft population policy?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 608\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit8-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"608\"/></svg>"
+          },
+          "options": [
+            "salaries and wages",
+            "employment conditions",
+            "child labour",
+            "sewerage systems"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 38
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q39",
+          "type": "mc",
+          "stem": "The passage suggests that social issues in India have to be tackled on a regional basis because",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 608\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit8-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"608\"/></svg>"
+          },
+          "options": [
+            "political views differ widely from region to region.",
+            "each region has its own special nature and problems.",
+            "at national level politicians lose sight of the real issues.",
+            "India’s huge population makes a national plan unworkable."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 39
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q40",
+          "type": "mc",
+          "stem": "In the Indian state of Kerala, women tend to have",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 608\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit8-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"608\"/></svg>"
+          },
+          "options": [
+            "fewer children than the current national average.",
+            "lots of children because of high infant mortality.",
+            "more children than the desired national average.",
+            "as many children as in Uttar Pradesh State."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 40
+          }
         }
       ]
     },
@@ -650,6 +830,564 @@
             "test": "Test 1 · Written Expression",
             "number": 1,
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sch-acer-l1-t4-writing",
+          "type": "review",
+          "stem": "WRITTEN EXPRESSION LEVEL 1: TEST 4\n\nInstructions\n\n• This sheet contains a writing task. You will be allowed 25 minutes.\n\n• When you are told, turn this sheet over and read the topic. Spend some of your time thinking about the topic and what you might write. There is space for jotting down your ideas in the answer booklet. Remember the amount you write is not as important as the thoughts you express and the way you express them.\n\n• Write in whatever way you feel is best to complete the writing task.\n\n• If you finish your writing before time is up, use the rest of the time to go over your work and to make any changes which you feel would improve it.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 815\" width=\"100%\" height=\"auto\"><image href=\"/acer/writing-test4.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"815\"/></svg>"
+          },
+          "answer": "",
+          "timeLimit": 1500,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 4 · Written Expression",
+            "number": 1
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "sch-acer-maths",
+      "code": "",
+      "title": "Mathematics",
+      "questions": [
+        {
+          "id": "sch-acer-l1-t3-q1",
+          "type": "mc",
+          "stem": "The figure below is drawn on a sheet of glass. It is flipped over and rotated.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 593\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-q1.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"593\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q2",
+          "type": "mc",
+          "stem": "From the graph, Pete’s hiring charge is",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 857\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q2-4.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"857\"/></svg>"
+          },
+          "options": [
+            "\\(\\$2.50\\)",
+            "\\(\\$5.00\\)",
+            "\\(\\$7.50\\)",
+            "\\(\\$10.00\\)"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q3",
+          "type": "mc",
+          "stem": "For a ride of 25 kilometres in Pete’s taxi by one person the total charge will be",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 857\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q2-4.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"857\"/></svg>"
+          },
+          "options": [
+            "\\(\\$25.00\\)",
+            "\\(\\$17.50\\)",
+            "\\(\\$15.00\\)",
+            "\\(\\$10.00\\)"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q4",
+          "type": "mc",
+          "stem": "Two people ride 30 kilometres in Pete’s taxi. The hiring charge is paid once only. The total charge that the two will pay is",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 857\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q2-4.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"857\"/></svg>"
+          },
+          "options": [
+            "\\(\\$25.00\\)",
+            "\\(\\$30.00\\)",
+            "\\(\\$35.00\\)",
+            "\\(\\$45.00\\)"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q5",
+          "type": "mc",
+          "stem": "Information for Question 5\n\nTrina and Trevor have a family of sons and daughters. Each son has twice as many sisters as brothers. Each daughter has an equal number of brothers and sisters.\n\nWhich one of these diagrams shows how many daughters and sons Trina and Trevor have?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 401\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-q5-options.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"401\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 5
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q6",
+          "type": "mc",
+          "stem": "What does Bea see from P?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1446\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q6-7.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"787\"/><image href=\"/acer/m-q6-options.jpg\" x=\"0\" y=\"811\" width=\"1200\" height=\"635\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 6
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q7",
+          "type": "mc",
+          "stem": "What does Hugh see from Q?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1356\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q6-7.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"787\"/><image href=\"/acer/m-q7-options.jpg\" x=\"0\" y=\"811\" width=\"1200\" height=\"545\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 7
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q8",
+          "type": "mc",
+          "stem": "80 litres is equivalent to about",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
+          },
+          "options": [
+            "46 pints.",
+            "55 pints.",
+            "140 pints.",
+            "30 acres."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 8
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q9",
+          "type": "mc",
+          "stem": "Point Y shows that",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
+          },
+          "options": [
+            "55 acres = 136 hectares.",
+            "there are 55 acres in a hectare.",
+            "there are 136 hectares in an acre.",
+            "136 acres = 55 hectares."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 9
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q10",
+          "type": "mc",
+          "stem": "“130 p’s = 52 q’s”\n\nOf the following, p and q are most likely to be",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
+          },
+          "options": [
+            "yards and metres.",
+            "pints and litres.",
+            "pounds and kilograms.",
+            "acres and hectares."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 10
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q11",
+          "type": "mc",
+          "stem": "Which of these models is rigid?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 936\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q11-12.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"538\"/><image href=\"/acer/m-q11-models.jpg\" x=\"0\" y=\"562\" width=\"1200\" height=\"374\"/></svg>"
+          },
+          "options": [
+            "I only",
+            "I, III and IV",
+            "II and IV",
+            "all of them"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q12",
+          "type": "mc",
+          "stem": "Which one of these designs for a bridge girder is the most flexible?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 913\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q11-12.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"538\"/><image href=\"/acer/m-q12-designs.jpg\" x=\"0\" y=\"562\" width=\"1200\" height=\"351\"/></svg>"
+          },
+          "options": [
+            "I",
+            "II",
+            "III",
+            "IV"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q13",
+          "type": "mc",
+          "stem": "Lev has an amount of money. One-quarter of the amount is two dollars more than one-fifth of the amount.\n\nThe amount is",
+          "options": [
+            "\\(\\$2\\)",
+            "\\(\\$4\\)",
+            "\\(\\$20\\)",
+            "\\(\\$40\\)"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q14",
+          "type": "mc",
+          "stem": "How many white squares will Tina have to remove so that the black squares represent one-third of the new figure?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 360\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q14-15.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"360\"/></svg>"
+          },
+          "options": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q15",
+          "type": "mc",
+          "stem": "How many white squares would there have to be for the black squares to represent \\(\\dfrac{1}{16}\\) of the new figure?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 360\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q14-15.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"360\"/></svg>"
+          },
+          "options": [
+            "14",
+            "18",
+            "30",
+            "32"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 15
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q16",
+          "type": "mc",
+          "stem": "Imagine that the shape shown below is drawn on a flat sheet of rubber. Suppose that the sheet, while being kept flat, can be pulled or stretched in any way, but not cut.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 529\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-q16.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"529\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 16
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q17",
+          "type": "mc",
+          "stem": "A person’s height \\(H\\) can be estimated from the length of their bones:\n\n\\(H = 2.9h + 71\\)\n\nwhere \\(h\\) is the length of the humerus (arm bone) from shoulder to elbow.\n\nA teenager has a humerus which is 30 cm long. According to the formula the height of the teenager (to the nearest centimetre) is",
+          "options": [
+            "222 cm",
+            "158 cm",
+            "104 cm",
+            "80 cm"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 17
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q18",
+          "type": "mc",
+          "stem": "Information for Questions 18, 19, 20 and 21\n\nTim was in charge of the drinks stall at the school open day.\nHe bought 20 cartons of cans at \\(\\$9\\) per carton. Each carton contained 12 cans.\nOn the stall the price of each can was \\(\\$1.20\\). Two hundred cans were sold.\nHe returned the unsold cans for a refund.\n\nHow much did Tim pay altogether for the drinks?",
+          "options": [
+            "\\(\\$41\\)",
+            "\\(\\$108\\)",
+            "\\(\\$180\\)",
+            "\\(\\$240\\)"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 18
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q19",
+          "type": "mc",
+          "stem": "Information for Questions 18, 19, 20 and 21\n\nTim was in charge of the drinks stall at the school open day.\nHe bought 20 cartons of cans at \\(\\$9\\) per carton. Each carton contained 12 cans.\nOn the stall the price of each can was \\(\\$1.20\\). Two hundred cans were sold.\nHe returned the unsold cans for a refund.\n\nHow much did Tim pay for each can of drink?",
+          "options": [
+            "\\(\\$1.08\\)",
+            "\\(\\$0.75\\)",
+            "\\(\\$0.45\\)",
+            "\\(\\$0.32\\)"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q20",
+          "type": "mc",
+          "stem": "Information for Questions 18, 19, 20 and 21\n\nTim was in charge of the drinks stall at the school open day.\nHe bought 20 cartons of cans at \\(\\$9\\) per carton. Each carton contained 12 cans.\nOn the stall the price of each can was \\(\\$1.20\\). Two hundred cans were sold.\nHe returned the unsold cans for a refund.\n\nWhat was the total profit (income minus expenses) on the sale of cans?",
+          "options": [
+            "\\(\\$90\\)",
+            "\\(\\$150\\)",
+            "\\(\\$180\\)",
+            "\\(\\$240\\)"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q21",
+          "type": "mc",
+          "stem": "Information for Questions 18, 19, 20 and 21\n\nTim was in charge of the drinks stall at the school open day.\nHe bought 20 cartons of cans at \\(\\$9\\) per carton. Each carton contained 12 cans.\nOn the stall the price of each can was \\(\\$1.20\\). Two hundred cans were sold.\nHe returned the unsold cans for a refund.\n\nWhat fraction of the total cans was left unsold?",
+          "options": [
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{5}{6}\\)"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q22",
+          "type": "mc",
+          "stem": "What fraction of the area of the original sheet would be occupied by the shaded part?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 499\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q22-23.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"499\"/></svg>"
+          },
+          "options": [
+            "\\(\\dfrac{1}{16}\\)",
+            "\\(\\dfrac{1}{32}\\)",
+            "\\(\\dfrac{1}{40}\\)",
+            "\\(\\dfrac{1}{64}\\)"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q23",
+          "type": "mc",
+          "stem": "What is the total number of halvings that would need to occur to produce an area \\(\\dfrac{1}{2048}\\) of the original?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 499\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q22-23.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"499\"/></svg>"
+          },
+          "options": [
+            "9",
+            "10",
+            "11",
+            "12"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q24",
+          "type": "mc",
+          "stem": "It takes about eleven and a half days for a million seconds to tick away.\n\n(A billion is a thousand million.)\n\nHow long will it take for a billion seconds to tick away?\n\nClosest to",
+          "options": [
+            "3 years",
+            "10 years",
+            "30 years",
+            "50 years"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 24
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q25",
+          "type": "mc",
+          "stem": "The number of snails in a garden trebles (multiplies by three) every five days. There are 100 snails at the start of September.\n\nHow many snails are there by the end of September (which has 30 days)?",
+          "options": [
+            "218 000",
+            "72 900",
+            "24 300",
+            "15 000"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 25
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q26",
+          "type": "mc",
+          "stem": "How many ways can Harriet, Ian, Jessica, Ken and Lee line up?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 609\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q26-27.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"609\"/></svg>"
+          },
+          "options": [
+            "24",
+            "60",
+            "100",
+            "120"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 26
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q27",
+          "type": "mc",
+          "stem": "There are exactly 5040 different ways in which \\(x\\) people can line up.\n\n\\(x =\\)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 609\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q26-27.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"609\"/></svg>"
+          },
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-acer-l1-t3-q28",
+          "type": "mc",
+          "stem": "Suppose that each of the small squares in this grid represents an area 2 cm by 2 cm.\n\nOf the following, the best estimate of the area of the heart is",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 555\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-q28-grid.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"555\"/></svg>"
+          },
+          "options": [
+            "15 square cm.",
+            "30 square cm.",
+            "60 square cm.",
+            "120 square cm."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 3 · Mathematics",
+            "number": 28
           }
         }
       ]
