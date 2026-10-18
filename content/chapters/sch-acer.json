@@ -1126,7 +1126,7 @@
             {
               "id": "sch-acer-l1-t3-q15-p14",
               "type": "mc",
-              "stem": "14.  How many white squares will Tina have to remove so that the black squares represent one-third of the new figure?",
+              "stem": "How many white squares will Tina have to remove so that the black squares represent one-third of the new figure?",
               "options": [
                 "2",
                 "3",
@@ -1138,7 +1138,7 @@
             {
               "id": "sch-acer-l1-t3-q15-p15",
               "type": "mc",
-              "stem": "15.  How many white squares would there have to be for the black squares to represent \\(\\dfrac{1}{16}\\) of the new figure?",
+              "stem": "How many white squares would there have to be for the black squares to represent \\(\\dfrac{1}{16}\\) of the new figure?",
               "options": [
                 "14",
                 "18",
@@ -1270,7 +1270,7 @@
             {
               "id": "sch-acer-l1-t3-q23-p22",
               "type": "mc",
-              "stem": "22.  What fraction of the area of the original sheet would be occupied by the shaded part?",
+              "stem": "What fraction of the area of the original sheet would be occupied by the shaded part?",
               "options": [
                 "\\(\\dfrac{1}{16}\\)",
                 "\\(\\dfrac{1}{32}\\)",
@@ -1282,7 +1282,7 @@
             {
               "id": "sch-acer-l1-t3-q23-p23",
               "type": "mc",
-              "stem": "23.  What is the total number of halvings that would need to occur to produce an area \\(\\dfrac{1}{2048}\\) of the original?",
+              "stem": "What is the total number of halvings that would need to occur to produce an area \\(\\dfrac{1}{2048}\\) of the original?",
               "options": [
                 "9",
                 "10",
