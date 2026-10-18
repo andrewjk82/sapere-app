@@ -2838,6 +2838,49 @@
               "note": "Expand each bracket first, then group terms with the same variables raised to the same powers."
             }
           ]
+        },
+        {
+          "id": "y10-53pp-q2a",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\((x+7)^2-(x+7)(x-7)\\)",
+          "hint": "Notice that both terms contain the factor x + 7; factor it out first.",
+          "steps": [
+            {
+              "explain": "Factor out the common factor x + 7.",
+              "work": "\\((x+7)^2-(x+7)(x-7)=(x+7)[(x+7)-(x-7)]\\)"
+            },
+            {
+              "explain": "Distribute the subtraction across both terms in the second bracket.",
+              "work": "\\((x+7)-(x-7)=x+7-x+7=14\\)"
+            },
+            {
+              "explain": "Multiply by the remaining factor and simplify.",
+              "work": "\\(14(x+7)=14x+98\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((x+7)^2-(x+7)(x-7)\\)",
+              "note": "Factor out the common bracket, then subtract the second bracket carefully."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(14x\\)",
+            "\\(x^2+14x+98\\)",
+            "\\(14x+98\\)",
+            "\\(14x-98\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(14x+98\\)"
         }
       ]
     },
@@ -12744,6 +12787,49 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "y10-53pp-q3b",
+          "difficulty": "medium",
+          "stem": "Factorise fully: \\(45z^8-20z^2\\)",
+          "hint": "Take out the greatest common factor, then recognise a difference of two squares.",
+          "steps": [
+            {
+              "explain": "Factor out the greatest common factor.",
+              "work": "\\(45z^8-20z^2=5z^2(9z^6-4)\\)"
+            },
+            {
+              "explain": "Recognise 9z⁶ − 4 as (3z³)² − 2².",
+              "work": "\\(a^2-b^2=(a-b)(a+b)\\)"
+            },
+            {
+              "explain": "Apply the difference-of-squares identity to finish factorising.",
+              "work": "\\(5z^2(9z^6-4)=5z^2(3z^3-2)(3z^3+2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(45z^8-20z^2\\)",
+              "note": "First factor out 5z²; the remaining terms are both perfect squares with a subtraction sign."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(5z^2(9z^6-4)\\)",
+            "\\(5z^2(3z^3-2)(3z^3+2)\\)",
+            "\\(5z^2(3z^3-2)^2\\)",
+            "\\(5z^2(9z^6+4)\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(5z^2(3z^3-2)(3z^3+2)\\)"
         }
       ]
     },
@@ -15137,6 +15223,178 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "y10-53pp-q3a",
+          "difficulty": "easy",
+          "stem": "Factorise fully: \\(x^2-3x-10\\)",
+          "hint": "Find two numbers whose product is −10 and whose sum is −3.",
+          "steps": [
+            {
+              "explain": "For a monic quadratic, find integers p and q with pq = −10 and p + q = −3.",
+              "work": "\\(p=-5,\\qquad q=2\\)"
+            },
+            {
+              "explain": "Use those numbers as the constant terms in the two brackets.",
+              "work": "\\(x^2-3x-10=(x-5)(x+2)\\)"
+            },
+            {
+              "explain": "Check by expanding: the cross terms combine to −3x and the constants multiply to −10.",
+              "work": "\\((x-5)(x+2)=x^2+2x-5x-10=x^2-3x-10\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(x^2-3x-10\\)",
+              "note": "The constant factors must multiply to −10 and add to the coefficient −3."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\((x-5)(x+2)\\)",
+            "\\((x-2)(x+5)\\)",
+            "\\((x-5)(x-2)\\)",
+            "\\((x+5)(x-2)\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\((x-5)(x+2)\\)"
+        },
+        {
+          "id": "y10-53pp-q3c",
+          "difficulty": "medium",
+          "stem": "Factorise fully: \\(6+5xy+6x+5y\\)",
+          "hint": "Reorder the terms into two pairs and factor each pair.",
+          "steps": [
+            {
+              "explain": "Rearrange into pairs with common factors.",
+              "work": "\\((5xy+5y)+(6x+6)\\)"
+            },
+            {
+              "explain": "Factor each pair.",
+              "work": "\\(5y(x+1)+6(x+1)\\)"
+            },
+            {
+              "explain": "Factor out the common bracket x + 1.",
+              "work": "\\((x+1)(5y+6)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(6+5xy+6x+5y\\)",
+              "note": "Group 5xy with 5y, and 6x with 6, to reveal a common bracket."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\((x+6)(5y+1)\\)",
+            "\\((x+1)(6y+5)\\)",
+            "\\((x+1)(5y+6)\\)",
+            "\\(5y(x+1)+6x+6\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\((x+1)(5y+6)\\)"
+        },
+        {
+          "id": "y10-53pp-q3d",
+          "difficulty": "medium",
+          "stem": "Factorise fully: \\(5x^2+7x-6\\)",
+          "hint": "Choose factors of 5x² and −6 whose cross terms add to 7x.",
+          "steps": [
+            {
+              "explain": "Split the leading term and constant into factors that can produce a middle coefficient of 7.",
+              "work": "\\(5x^2=(5x)(x),\\qquad -6=(-3)(2)\\)"
+            },
+            {
+              "explain": "Check the cross terms: 10x − 3x gives 7x.",
+              "work": "\\((5x)(2)+(x)(-3)=10x-3x=7x\\)"
+            },
+            {
+              "explain": "Write the factors and verify by expansion.",
+              "work": "\\(5x^2+7x-6=(5x-3)(x+2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(5x^2+7x-6\\)",
+              "note": "Check both the first and last terms, then verify that the cross terms sum to 7x."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\((5x+3)(x-2)\\)",
+            "\\((5x-2)(x+3)\\)",
+            "\\((5x+2)(x-3)\\)",
+            "\\((5x-3)(x+2)\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\((5x-3)(x+2)\\)"
+        },
+        {
+          "id": "y10-53pp-q5",
+          "difficulty": "hard",
+          "stem": "Factorise fully: \\(4t^4-17t^2+4\\)",
+          "hint": "Treat t² as a temporary variable, factor the resulting quadratic, and continue until every factor is linear.",
+          "steps": [
+            {
+              "explain": "Let u = t² so the quartic becomes a quadratic.",
+              "work": "\\(4u^2-17u+4\\)"
+            },
+            {
+              "explain": "Factor the quadratic by finding factors that give product 16 and sum −17.",
+              "work": "\\(4u^2-17u+4=(4u-1)(u-4)\\)"
+            },
+            {
+              "explain": "Substitute t² back and factor both differences of squares.",
+              "work": "\\((4t^2-1)(t^2-4)=(2t-1)(2t+1)(t-2)(t+2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(4t^4-17t^2+4\\)",
+              "note": "Only even powers of t occur, so set u = t² and factor a quadratic in u."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\((2t-1)(2t+1)(t-2)(t+2)\\)",
+            "\\((4t^2-1)(t^2-4)\\)",
+            "\\((2t-1)(2t+1)(t-2)^2\\)",
+            "\\((2t^2-1)(2t^2-4)\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\((2t-1)(2t+1)(t-2)(t+2)\\)"
         }
       ]
     },
@@ -15351,6 +15609,307 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "y10-53pp-q1a",
+          "difficulty": "easy",
+          "stem": "Simplify: \\(60cd^2 \\div 35c^2d\\)",
+          "hint": "Divide the numerical coefficients and subtract exponents for matching variables.",
+          "steps": [
+            {
+              "explain": "Separate the numerical coefficient from each variable factor.",
+              "work": "\\(\\frac{60}{35} \\times \\frac{c}{c^2} \\times \\frac{d^2}{d}\\)"
+            },
+            {
+              "explain": "Reduce the coefficient and subtract exponents for like bases.",
+              "work": "\\(\\frac{60}{35}=\\frac{12}{7},\\qquad \\frac{c}{c^2}=c^{-1}=\\frac1c,\\qquad \\frac{d^2}{d}=d\\)"
+            },
+            {
+              "explain": "Combine the simplified factors.",
+              "work": "\\(60cd^2 \\div 35c^2d=\\frac{12d}{7c}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(60cd^2 \\div 35c^2d\\)",
+              "note": "Reduce 60/35 first, then use c/c² = 1/c and d²/d = d."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{12d}{7c}\\)",
+            "\\(\\frac{12c}{7d}\\)",
+            "\\(\\frac{25d}{7c}\\)",
+            "\\(\\frac{12d}{7c^2}\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\(\\frac{12d}{7c}\\)"
+        },
+        {
+          "id": "y10-53pp-q1b",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{15g^2-20gh}{55g}\\)",
+          "hint": "Factor the numerator and denominator before cancelling their common factor.",
+          "steps": [
+            {
+              "explain": "Factor the numerator and denominator.",
+              "work": "\\(\\frac{15g^2-20gh}{55g}=\\frac{5g(3g-4h)}{5g\\cdot11}\\)"
+            },
+            {
+              "explain": "Cancel the common factor 5g. This is valid where the original denominator is non-zero.",
+              "work": "\\(\\frac{5g(3g-4h)}{55g}=\\frac{3g-4h}{11}\\)"
+            },
+            {
+              "explain": "The fraction is now simplified.",
+              "work": "\\(\\boxed{\\frac{3g-4h}{11}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{15g^2-20gh}{55g}\\)",
+              "note": "Both terms share a factor of 5g; factor it out before reducing the fraction."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{3g-4h}{11g}\\)",
+            "\\(\\frac{3g-4h}{11}\\)",
+            "\\(\\frac{3g+4h}{11}\\)",
+            "\\(\\frac{15g^2-20gh}{55}\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(\\frac{3g-4h}{11}\\)"
+        },
+        {
+          "id": "y10-53pp-q2b",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(\\left(x-\\frac2x\\right)^2\\)",
+          "hint": "Use (a − b)² = a² − 2ab + b², including the middle term.",
+          "steps": [
+            {
+              "explain": "Apply the square-of-a-difference identity with a = x and b = 2/x.",
+              "work": "\\(\\left(x-\\frac2x\\right)^2=x^2-2(x)\\left(\\frac2x\\right)+\\left(\\frac2x\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the product and the square separately.",
+              "work": "\\(-2(x)\\left(\\frac2x\\right)=-4,\\qquad \\left(\\frac2x\\right)^2=\\frac4{x^2}\\)"
+            },
+            {
+              "explain": "Combine the three terms.",
+              "work": "\\(x^2-4+\\frac4{x^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\left(x-\\frac2x\\right)^2\\)",
+              "note": "Square the first term, subtract twice the product of the terms, then add the square of the second term."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(x^2+\\frac4{x^2}\\)",
+            "\\(x^2-2+\\frac4{x^2}\\)",
+            "\\(x^2-\\frac4{x^2}+4\\)",
+            "\\(x^2-4+\\frac4{x^2}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(x^2-4+\\frac4{x^2}\\)"
+        },
+        {
+          "id": "y10-53pp-q4a",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac{48-3k^2}{k^2-2k-8}\\)",
+          "hint": "Factor the numerator and denominator completely before cancelling.",
+          "steps": [
+            {
+              "explain": "Factor the numerator, taking care with the negative sign.",
+              "work": "\\(48-3k^2=3(16-k^2)=-3(k-4)(k+4)\\)"
+            },
+            {
+              "explain": "Factor the denominator.",
+              "work": "\\(k^2-2k-8=(k-4)(k+2)\\)"
+            },
+            {
+              "explain": "Cancel the common factor k − 4; the original expression excludes k = 4 and k = −2.",
+              "work": "\\(\\frac{-3(k-4)(k+4)}{(k-4)(k+2)}=-\\frac{3(k+4)}{k+2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{48-3k^2}{k^2-2k-8}\\)",
+              "note": "Factor out −3 to expose a difference of squares."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(-\\frac{3(k+4)}{k+2}\\)",
+            "\\(\\frac{3(k+4)}{k+2}\\)",
+            "\\(-\\frac{3(k-4)}{k+2}\\)",
+            "\\(-\\frac{3(k+4)}{k-2}\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\(-\\frac{3(k+4)}{k+2}\\)"
+        },
+        {
+          "id": "y10-53pp-q4b",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(\\frac5{2x-1}-\\frac3{3x-4}\\)",
+          "hint": "Use the product of the two denominators as a common denominator and distribute both numerators carefully.",
+          "steps": [
+            {
+              "explain": "Use (2x − 1)(3x − 4) as the common denominator.",
+              "work": "\\(\\frac{5(3x-4)-3(2x-1)}{(2x-1)(3x-4)}\\)"
+            },
+            {
+              "explain": "Expand the numerator, distributing the minus sign to both terms in the second product.",
+              "work": "\\(15x-20-6x+3=9x-17\\)"
+            },
+            {
+              "explain": "Write the combined fraction. The original denominators require x ≠ 1/2 and x ≠ 4/3.",
+              "work": "\\(\\frac{9x-17}{(2x-1)(3x-4)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac5{2x-1}-\\frac3{3x-4}\\)",
+              "note": "Multiply each numerator by the other fraction’s denominator; keep the subtraction sign."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{21x-23}{(2x-1)(3x-4)}\\)",
+            "\\(\\frac{9x-17}{(2x-1)(3x-4)}\\)",
+            "\\(\\frac{9x-23}{(2x-1)(3x-4)}\\)",
+            "\\(\\frac{2}{(2x-1)(3x-4)}\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(\\frac{9x-17}{(2x-1)(3x-4)}\\)"
+        },
+        {
+          "id": "y10-53pp-q4c",
+          "difficulty": "hard",
+          "stem": "Simplify: \\(\\frac{z^2-13z+30}{z^2-3z} \\div \\frac{z^2-100}{(z+10)^2}\\)",
+          "hint": "Factor both fractions, then multiply by the reciprocal of the second fraction.",
+          "steps": [
+            {
+              "explain": "Factor each polynomial.",
+              "work": "\\(\\frac{(z-10)(z-3)}{z(z-3)} \\div \\frac{(z-10)(z+10)}{(z+10)^2}\\)"
+            },
+            {
+              "explain": "Cancel within each fraction, then invert the second fraction for division.",
+              "work": "\\(\\frac{z-10}{z} \\times \\frac{z+10}{z-10}\\)"
+            },
+            {
+              "explain": "Cancel z − 10. Keep the original restrictions z ≠ 0, 3, −10, 10.",
+              "work": "\\(\\frac{z+10}{z}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{z^2-13z+30}{z^2-3z} \\div \\frac{z^2-100}{(z+10)^2}\\)",
+              "note": "Division by a fraction means multiply by its reciprocal."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{z-10}{z}\\)",
+            "\\(\\frac{z+10}{z-10}\\)",
+            "\\(\\frac{z+10}{z}\\)",
+            "\\(\\frac{z-10}{z+10}\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(\\frac{z+10}{z}\\)"
+        },
+        {
+          "id": "y10-53pp-q4d",
+          "difficulty": "hard",
+          "stem": "Simplify: \\(\\frac3{x^2-25}+\\frac4{x^2-7x+10}\\)",
+          "hint": "Factor both denominators and use their least common denominator.",
+          "steps": [
+            {
+              "explain": "Factor both denominators.",
+              "work": "\\(x^2-25=(x-5)(x+5),\\qquad x^2-7x+10=(x-5)(x-2)\\)"
+            },
+            {
+              "explain": "Use the common denominator (x − 5)(x + 5)(x − 2).",
+              "work": "\\(\\frac{3(x-2)+4(x+5)}{(x-5)(x+5)(x-2)}\\)"
+            },
+            {
+              "explain": "Combine like terms in the numerator and factor out 7.",
+              "work": "\\(3x-6+4x+20=7x+14=7(x+2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac3{x^2-25}+\\frac4{x^2-7x+10}\\)",
+              "note": "Recognise a difference of squares."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{7(x-2)}{(x-5)(x+5)(x-2)}\\)",
+            "\\(\\frac{7(x+2)}{(x-5)(x+2)(x-2)}\\)",
+            "\\(\\frac{7x-2}{(x-5)(x+5)(x-2)}\\)",
+            "\\(\\frac{7(x+2)}{(x-5)(x+5)(x-2)}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(\\frac{7(x+2)}{(x-5)(x+5)(x-2)}\\)"
         }
       ]
     },

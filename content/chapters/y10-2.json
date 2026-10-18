@@ -3707,6 +3707,49 @@
               "note": "Expand using \\(A^2\\pm2AB+B^2\\). The middle term is twice the product of the two terms, with the sign from the binomial."
             }
           ]
+        },
+        {
+          "id": "y10-53pp-q10",
+          "difficulty": "medium",
+          "stem": "Write the recurring decimal \\(0.31\\dot{6}\\) as a fraction.",
+          "hint": "Let the decimal equal x; shift once past the non-recurring digits and once past the recurring digit, then subtract.",
+          "steps": [
+            {
+              "explain": "Let x be the decimal. Shift two places to move beyond the non-recurring digits, then one more place to include a full repeating block.",
+              "work": "\\(x=0.31666\\ldots,\\qquad 100x=31.666\\ldots,\\qquad 1000x=316.666\\ldots\\)"
+            },
+            {
+              "explain": "Subtract the equations so the recurring tails cancel.",
+              "work": "\\(1000x-100x=316.666\\ldots-31.666\\ldots\\Rightarrow900x=285\\)"
+            },
+            {
+              "explain": "Solve and reduce the fraction to lowest terms.",
+              "work": "\\(x=\\frac{285}{900}=\\frac{19}{60}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(0.31\\dot{6}\\)",
+              "note": "The 3 and 1 do not repeat; only the final 6 repeats."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{79}{250}\\)",
+            "\\(\\frac{19}{60}\\)",
+            "\\(\\frac{316}{999}\\)",
+            "\\(\\frac{157}{500}\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(\\frac{19}{60}\\)"
         }
       ]
     },
@@ -5921,6 +5964,49 @@
               "note": "Simplify each surd first. Combine coefficients only when the remaining radical parts are identical."
             }
           ]
+        },
+        {
+          "id": "y10-53pp-q11a",
+          "difficulty": "easy",
+          "stem": "Simplify fully: \\(\\sqrt{63}-8\\sqrt7\\)",
+          "hint": "Simplify √63 to a multiple of √7, then subtract like surds.",
+          "steps": [
+            {
+              "explain": "Separate the largest square factor from 63.",
+              "work": "\\(\\sqrt{63}=\\sqrt{9\\times7}=3\\sqrt7\\)"
+            },
+            {
+              "explain": "Both terms are now like surds, so subtract their coefficients.",
+              "work": "\\(3\\sqrt7-8\\sqrt7=(3-8)\\sqrt7\\)"
+            },
+            {
+              "explain": "Simplify the coefficient.",
+              "work": "\\(-5\\sqrt7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{63}-8\\sqrt7\\)",
+              "note": "Factor 63 as 9 × 7 so the perfect square can come outside the root."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(5\\sqrt7\\)",
+            "\\(-11\\sqrt7\\)",
+            "\\(-5\\sqrt7\\)",
+            "\\(-5\\sqrt{63}\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(-5\\sqrt7\\)"
         }
       ]
     },
@@ -12132,6 +12218,134 @@
               "note": "Multiply the coefficients and the radicands, then extract any perfect-square factors from the result."
             }
           ]
+        },
+        {
+          "id": "y10-53pp-q11b",
+          "difficulty": "medium",
+          "stem": "Simplify fully: \\(2\\sqrt{10} \\div 10\\sqrt5\\)",
+          "hint": "Divide the coefficients and simplify the quotient of the two square roots.",
+          "steps": [
+            {
+              "explain": "Write the division as one fraction and separate coefficients from surds.",
+              "work": "\\(\\frac{2\\sqrt{10}}{10\\sqrt5}=\\frac{2}{10}\\times\\frac{\\sqrt{10}}{\\sqrt5}\\)"
+            },
+            {
+              "explain": "Simplify each factor.",
+              "work": "\\(\\frac{2}{10}=\\frac15,\\qquad \\frac{\\sqrt{10}}{\\sqrt5}=\\sqrt2\\)"
+            },
+            {
+              "explain": "Multiply the simplified factors.",
+              "work": "\\(\\frac15\\sqrt2=\\frac{\\sqrt2}{5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(2\\sqrt{10} \\div 10\\sqrt5\\)",
+              "note": "Separate the numerical quotient from √10/√5, then simplify the radical quotient."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{\\sqrt2}{10}\\)",
+            "\\(\\frac{2\\sqrt2}{5}\\)",
+            "\\(\\frac{\\sqrt2}{2}\\)",
+            "\\(\\frac{\\sqrt2}{5}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(\\frac{\\sqrt2}{5}\\)"
+        },
+        {
+          "id": "y10-53pp-q12a",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\(\\sqrt6(4\\sqrt6+2\\sqrt5)\\)",
+          "hint": "Distribute √6 to both terms, then simplify each product of roots.",
+          "steps": [
+            {
+              "explain": "Distribute √6 across both terms.",
+              "work": "\\(\\sqrt6(4\\sqrt6+2\\sqrt5)=4\\sqrt6\\sqrt6+2\\sqrt6\\sqrt5\\)"
+            },
+            {
+              "explain": "Simplify each product of surds.",
+              "work": "\\(4\\sqrt{36}+2\\sqrt{30}=4(6)+2\\sqrt{30}\\)"
+            },
+            {
+              "explain": "Evaluate the integer product and keep the unlike surd term.",
+              "work": "\\(24+2\\sqrt{30}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt6(4\\sqrt6+2\\sqrt5)\\)",
+              "note": "Multiply √6 by each term inside the bracket; √6 × √6 is 6."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(24+2\\sqrt{30}\\)",
+            "\\(24+\\sqrt{30}\\)",
+            "\\(24+2\\sqrt{11}\\)",
+            "\\(10\\sqrt6+2\\sqrt{30}\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\(24+2\\sqrt{30}\\)"
+        },
+        {
+          "id": "y10-53pp-q16",
+          "difficulty": "hard",
+          "stem": "Show that \\(\\frac{x-y}{x+y}\\sqrt{\\frac{x+y}{x-y}}=\\sqrt{\\frac{x-y}{x+y}}\\).",
+          "hint": "Let A = (x − y)/(x + y). On the stated real domain, the other radicand is 1/A.",
+          "steps": [
+            {
+              "explain": "Set A equal to the common ratio. For both square roots to be real and the denominators non-zero, A must be positive.",
+              "work": "\\(A=\\frac{x-y}{x+y}>0,\\qquad \\frac{x+y}{x-y}=\\frac1A\\)"
+            },
+            {
+              "explain": "Rewrite the left side in terms of A and use √(1/A) = 1/√A for A > 0.",
+              "work": "\\(A\\sqrt{\\frac1A}=A\\frac1{\\sqrt A}\\)"
+            },
+            {
+              "explain": "Cancel A/√A to obtain √A, which is the right-hand side.",
+              "work": "\\(\\frac{A}{\\sqrt A}=\\sqrt A=\\sqrt{\\frac{x-y}{x+y}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{x-y}{x+y}\\sqrt{\\frac{x+y}{x-y}}=\\sqrt{\\frac{x-y}{x+y}}\\)",
+              "note": "Call this ratio A; the expression under the other square root is its reciprocal."
+            },
+            {
+              "text": "Show that",
+              "note": "Rewrite the left side using one positive quantity A and simplify the product."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "review",
+          "answer": "For values where the denominators are non-zero and the radicands are positive, both sides equal \\(\\sqrt{\\frac{x-y}{x+y}}\\).",
+          "manual": true,
+          "solution": "For values where the denominators are non-zero and the radicands are positive, both sides equal \\(\\sqrt{\\frac{x-y}{x+y}}\\)."
         }
       ]
     },
@@ -14660,6 +14874,49 @@
               "note": "Expand using \\(A^2\\pm2AB+B^2\\). The middle term is twice the product of the two terms, with the sign from the binomial."
             }
           ]
+        },
+        {
+          "id": "y10-53pp-q12b",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\((3\\sqrt2-\\sqrt3)^2\\)",
+          "hint": "Use (a − b)² = a² − 2ab + b²; the middle term is negative.",
+          "steps": [
+            {
+              "explain": "Apply the square-of-a-difference identity.",
+              "work": "\\((3\\sqrt2-\\sqrt3)^2=(3\\sqrt2)^2-2(3\\sqrt2)(\\sqrt3)+(\\sqrt3)^2\\)"
+            },
+            {
+              "explain": "Evaluate the squares and product of the surds.",
+              "work": "\\(18-6\\sqrt6+3\\)"
+            },
+            {
+              "explain": "Combine the integer terms.",
+              "work": "\\(21-6\\sqrt6\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((3\\sqrt2-\\sqrt3)^2\\)",
+              "note": "Square each term and subtract twice their product."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(21+6\\sqrt6\\)",
+            "\\(21-6\\sqrt6\\)",
+            "\\(15-6\\sqrt6\\)",
+            "\\(21-3\\sqrt6\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(21-6\\sqrt6\\)"
         }
       ]
     },
@@ -17601,6 +17858,134 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "y10-53pp-q13a",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator and simplify: \\(\\frac{3\\sqrt5}{\\sqrt2}\\)",
+          "hint": "Multiply numerator and denominator by √2 so the denominator becomes 2.",
+          "steps": [
+            {
+              "explain": "Multiply the numerator and denominator by √2.",
+              "work": "\\(\\frac{3\\sqrt5}{\\sqrt2}\\times\\frac{\\sqrt2}{\\sqrt2}\\)"
+            },
+            {
+              "explain": "Multiply the radicals and square the denominator root.",
+              "work": "\\(\\frac{3\\sqrt{10}}{2}\\)"
+            },
+            {
+              "explain": "The denominator is now rational and the numerator is simplified.",
+              "work": "\\(\\boxed{\\frac{3\\sqrt{10}}2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{3\\sqrt5}{\\sqrt2}\\)",
+              "note": "Use √2 as the factor on both top and bottom; this preserves the fraction."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(3\\sqrt{10}\\)",
+            "\\(\\frac{3\\sqrt5}{2}\\)",
+            "\\(\\frac{3\\sqrt{10}}2\\)",
+            "\\(\\frac{3\\sqrt{10}}5\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(\\frac{3\\sqrt{10}}2\\)"
+        },
+        {
+          "id": "y10-53pp-q13b",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator and simplify: \\(\\frac5{3\\sqrt3+2}\\)",
+          "hint": "Multiply by the conjugate 3√3 − 2; use the difference of squares in the denominator.",
+          "steps": [
+            {
+              "explain": "Multiply top and bottom by the conjugate of the denominator.",
+              "work": "\\(\\frac5{3\\sqrt3+2}\\times\\frac{3\\sqrt3-2}{3\\sqrt3-2}\\)"
+            },
+            {
+              "explain": "Use (a + b)(a − b) = a² − b² in the denominator.",
+              "work": "\\((3\\sqrt3)^2-2^2=27-4=23\\)"
+            },
+            {
+              "explain": "Write the rationalised fraction; no common factor remains.",
+              "work": "\\(\\frac{5(3\\sqrt3-2)}{23}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac5{3\\sqrt3+2}\\)",
+              "note": "The conjugate changes the sign between the two terms and makes the denominator rational."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(\\frac{5(3\\sqrt3+2)}{23}\\)",
+            "\\(\\frac{3\\sqrt3-2}{5}\\)",
+            "\\(\\frac5{3\\sqrt3-2}\\)",
+            "\\(\\frac{5(3\\sqrt3-2)}{23}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(\\frac{5(3\\sqrt3-2)}{23}\\)"
+        },
+        {
+          "id": "y10-53pp-q14",
+          "difficulty": "hard",
+          "stem": "Show that the following expression is rational and find its value: \\(\\frac3{2\\sqrt3+1}-\\frac3{2\\sqrt3-1}\\)",
+          "hint": "Use the common denominator formed by multiplying the conjugate binomials; their radical terms cancel in the difference.",
+          "steps": [
+            {
+              "explain": "Use a common denominator. The denominator is a difference of squares.",
+              "work": "\\((2\\sqrt3+1)(2\\sqrt3-1)=(2\\sqrt3)^2-1^2=11\\)"
+            },
+            {
+              "explain": "Combine the numerators and simplify the radical terms, which cancel.",
+              "work": "\\(\\frac{3(2\\sqrt3-1)-3(2\\sqrt3+1)}{11}=\\frac{6\\sqrt3-3-6\\sqrt3-3}{11}\\)"
+            },
+            {
+              "explain": "The result is a rational number because it is a ratio of integers.",
+              "work": "\\(-\\frac6{11}\\in\\mathbb{Q}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "Show that the following expression is rational",
+              "note": "Combine the fractions using the product of conjugate denominators."
+            },
+            {
+              "text": "\\(\\frac3{2\\sqrt3+1}-\\frac3{2\\sqrt3-1}\\)",
+              "note": "The conjugate pair produces a difference of squares."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "review",
+          "answer": "The expression is rational and equals \\(-\\frac6{11}\\).",
+          "manual": true,
+          "solution": "The expression is rational and equals \\(-\\frac6{11}\\)."
         }
       ]
     },

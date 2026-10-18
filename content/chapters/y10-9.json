@@ -3346,6 +3346,259 @@
             "source": "Canberra Grammar 2024 Year 10 Maths Yearly & Solutions",
             "sourceYear": 2024
           }
+        },
+        {
+          "id": "y10-53pp-q6a",
+          "difficulty": "easy",
+          "stem": "Express \\(\\frac1{5x^3}\\) using negative indices.",
+          "hint": "Write the reciprocal of each factor using a negative exponent.",
+          "steps": [
+            {
+              "explain": "Separate the denominator into its numerical and variable factors.",
+              "work": "\\(\\frac1{5x^3}=\\frac15\\times\\frac1{x^3}\\)"
+            },
+            {
+              "explain": "Use a negative index for each reciprocal.",
+              "work": "\\(\\frac15=5^{-1},\\qquad \\frac1{x^3}=x^{-3}\\)"
+            },
+            {
+              "explain": "Write the product in index form.",
+              "work": "\\(5^{-1}x^{-3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac1{5x^3}\\)",
+              "note": "A factor in the denominator moves to the numerator by changing the sign of its exponent."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(5x^{-3}\\)",
+            "\\(5^{-1}x^{-3}\\)",
+            "\\(5^{-3}x^{-1}\\)",
+            "\\((5x)^{-3}\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(5^{-1}x^{-3}\\)"
+        },
+        {
+          "id": "y10-53pp-q7a",
+          "difficulty": "medium",
+          "stem": "Simplify fully: \\((3u^5)^3 \\times 2u^4\\)",
+          "hint": "Apply the outer power to both 3 and u⁵, then multiply coefficients and add exponents of u.",
+          "steps": [
+            {
+              "explain": "Apply the cube to each factor inside the parentheses.",
+              "work": "\\((3u^5)^3=3^3u^{15}=27u^{15}\\)"
+            },
+            {
+              "explain": "Multiply by 2u⁴: multiply the coefficients and add exponents for base u.",
+              "work": "\\(27u^{15}\\times2u^4=(27\\times2)u^{15+4}\\)"
+            },
+            {
+              "explain": "Simplify the coefficient and exponent.",
+              "work": "\\(54u^{19}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((3u^5)^3 \\times 2u^4\\)",
+              "note": "The cube applies to both factors inside the brackets."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(18u^{19}\\)",
+            "\\(54u^{15}\\)",
+            "\\(6u^{19}\\)",
+            "\\(54u^{19}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(54u^{19}\\)"
+        },
+        {
+          "id": "y10-53pp-q7b",
+          "difficulty": "easy",
+          "stem": "Simplify fully: \\(8x^0+36 \\div 4y^0\\)",
+          "hint": "Evaluate zero powers first, then perform division before addition.",
+          "steps": [
+            {
+              "explain": "For non-zero x and y, both zero powers equal 1.",
+              "work": "\\(x^0=1,\\qquad y^0=1\\)"
+            },
+            {
+              "explain": "Substitute 1 and perform division before addition.",
+              "work": "\\(8(1)+36\\div4(1)=8+9\\)"
+            },
+            {
+              "explain": "Add to get the simplified value.",
+              "work": "\\(8+9=17\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(8x^0+36 \\div 4y^0\\)",
+              "note": "Any non-zero base to the zero power equals 1."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(17\\)",
+            "\\(11\\)",
+            "\\(0\\)",
+            "\\(44\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\(17\\)"
+        },
+        {
+          "id": "y10-53pp-q7c",
+          "difficulty": "medium",
+          "stem": "Simplify fully: \\(\\frac{(u^{-2})^{-3}}{u^5} \\times \\frac{(u^5)^{-1}}{u^{-3}}\\)",
+          "hint": "Simplify each fraction separately using the power-of-a-power and quotient laws.",
+          "steps": [
+            {
+              "explain": "Simplify the first fraction.",
+              "work": "\\(\\frac{(u^{-2})^{-3}}{u^5}=\\frac{u^6}{u^5}=u^{6-5}=u\\)"
+            },
+            {
+              "explain": "Simplify the second fraction, remembering that the numerator is u⁻⁵.",
+              "work": "\\(\\frac{(u^5)^{-1}}{u^{-3}}=\\frac{u^{-5}}{u^{-3}}=u^{-5-(-3)}=u^{-2}\\)"
+            },
+            {
+              "explain": "Multiply the two powers by adding their exponents.",
+              "work": "\\(u\\times u^{-2}=u^{1-2}=u^{-1}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{(u^{-2})^{-3}}{u^5} \\times \\frac{(u^5)^{-1}}{u^{-3}}\\)",
+              "note": "Multiply the two exponents when raising a power to a power."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(u\\)",
+            "\\(u^{-1}\\)",
+            "\\(u^{-3}\\)",
+            "\\(u^3\\)"
+          ],
+          "answer": 1,
+          "solution": "Correct answer: \\(u^{-1}\\)"
+        },
+        {
+          "id": "y10-53pp-q9",
+          "difficulty": "hard",
+          "stem": "Simplify: \\(\\frac{2^{2n+1}}{\\left(2^n\\right)^{n+2}} \\div \\frac{4^n}{\\left(2^{n+1}\\right)^{n-1}}\\)",
+          "hint": "Rewrite 4ⁿ as a power of 2, simplify both fractions, and subtract exponents when dividing.",
+          "steps": [
+            {
+              "explain": "Simplify the first fraction using the power-of-a-power rule.",
+              "work": "\\(\\frac{2^{2n+1}}{\\left(2^n\\right)^{n+2}}=2^{2n+1-n(n+2)}=2^{1-n^2}\\)"
+            },
+            {
+              "explain": "Rewrite 4ⁿ as 2²ⁿ and simplify the second fraction.",
+              "work": "\\(\\frac{4^n}{\\left(2^{n+1}\\right)^{n-1}}=2^{2n-(n+1)(n-1)}=2^{2n-n^2+1}\\)"
+            },
+            {
+              "explain": "Divide powers with the same base by subtracting the second exponent from the first.",
+              "work": "\\(2^{1-n^2-(2n-n^2+1)}=2^{-2n}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{2^{2n+1}}{(2^n)^{n+2}} \\div \\frac{4^n}{(2^{n+1})^{n-1}}\\)",
+              "note": "Keep the base 2 and simplify each quotient by subtracting exponents."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(2^{-2n}\\)",
+            "\\(2^{2n}\\)",
+            "\\(2^{-n}\\)",
+            "\\(2^{1-2n}\\)"
+          ],
+          "answer": 0,
+          "solution": "Correct answer: \\(2^{-2n}\\)"
+        },
+        {
+          "id": "y10-53pp-q15",
+          "difficulty": "medium",
+          "stem": "Show that \\(\\frac{6^{n+1}+6^n}{7}=6^n\\).",
+          "hint": "Factor out the common factor 6ⁿ from the numerator.",
+          "steps": [
+            {
+              "explain": "Rewrite the first term so both terms have a factor of 6ⁿ.",
+              "work": "\\(6^{n+1}=6\\cdot6^n\\)"
+            },
+            {
+              "explain": "Factor 6ⁿ from the numerator.",
+              "work": "\\(\\frac{6^{n+1}+6^n}{7}=\\frac{6^n(6+1)}7\\)"
+            },
+            {
+              "explain": "Since 6 + 1 = 7, cancel the factor of 7.",
+              "work": "\\(\\frac{6^n\\cdot7}{7}=6^n\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{6^{n+1}+6^n}{7}=6^n\\)",
+              "note": "Rewrite 6^(n+1) as 6 × 6ⁿ so both numerator terms share 6ⁿ."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "review",
+          "answer": "\\(\\frac{6^{n+1}+6^n}{7}=6^n\\).",
+          "manual": true,
+          "solution": "\\(\\frac{6^{n+1}+6^n}{7}=6^n\\)."
         }
       ]
     },
@@ -3554,6 +3807,135 @@
             "grade": "10"
           },
           "xp": 1
+        },
+        {
+          "id": "y10-53pp-q6b",
+          "difficulty": "easy",
+          "stem": "Express \\(\\sqrt[5]{y^3}\\) using a fractional index.",
+          "hint": "For an nth root, use exponent 1/n; keep the power inside as the numerator.",
+          "steps": [
+            {
+              "explain": "Use the rule that an nth root is a power of 1/n.",
+              "work": "\\(\\sqrt[5]{y^3}=(y^3)^{1/5}\\)"
+            },
+            {
+              "explain": "Multiply the exponents when raising a power to a power.",
+              "work": "\\((y^3)^{1/5}=y^{3\\cdot(1/5) }\\)"
+            },
+            {
+              "explain": "Write the fractional index in simplest form.",
+              "work": "\\(y^{3/5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt[5]{y^3}\\)",
+              "note": "The root index becomes the denominator of the fractional exponent, and the power becomes its numerator."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(y^{5/3}\\)",
+            "\\(y^{1/15}\\)",
+            "\\(y^{3/5}\\)",
+            "\\(3y^{1/5}\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(y^{3/5}\\)"
+        },
+        {
+          "id": "y10-53pp-q7d",
+          "difficulty": "medium",
+          "stem": "Simplify fully: \\((64n^{18})^{\\frac23}\\)",
+          "hint": "Apply the fractional power to both factors; cube-root 64 before squaring it.",
+          "steps": [
+            {
+              "explain": "Apply the exponent to the numerical and variable factors.",
+              "work": "\\((64n^{18})^{2/3}=64^{2/3}n^{18(2/3)}\\)"
+            },
+            {
+              "explain": "Evaluate the numerical power and multiply the variable exponent.",
+              "work": "\\(64^{2/3}=(\\sqrt[3]{64})^2=4^2=16,\\qquad 18(2/3)=12\\)"
+            },
+            {
+              "explain": "Combine the simplified factors.",
+              "work": "\\(16n^{12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\((64n^{18})^{\\frac23}\\)",
+              "note": "Use (ab)ʳ = aʳbʳ, then multiply the index 18 by 2/3."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(4n^{12}\\)",
+            "\\(16n^6\\)",
+            "\\(16n^{12}\\)",
+            "\\(8n^{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "Correct answer: \\(16n^{12}\\)"
+        },
+        {
+          "id": "y10-53pp-q8",
+          "difficulty": "medium",
+          "stem": "Simplify the following, giving your answer in the form \\(x^p\\) where p is real: \\(\\frac1{x^2\\times\\sqrt[3]{x}}\\)",
+          "hint": "Rewrite the cube root as x to the power 1/3, then combine the denominator exponents.",
+          "steps": [
+            {
+              "explain": "Rewrite the cube root using a fractional index.",
+              "work": "\\(\\sqrt[3]{x}=x^{1/3}\\)"
+            },
+            {
+              "explain": "Combine the factors in the denominator by adding exponents.",
+              "work": "\\(x^2\\times x^{1/3}=x^{2+1/3}=x^{7/3}\\)"
+            },
+            {
+              "explain": "Taking the reciprocal changes the exponent to its negative.",
+              "work": "\\(\\frac1{x^{7/3}}=x^{-7/3}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "keyPoints": [
+            {
+              "text": "\\(x^p\\)",
+              "note": "Write the cube root as x^(1/3), then add the exponents in the product."
+            }
+          ],
+          "meta": {
+            "source": "Year 10 5.3 Past Paper",
+            "sourcePdf": "Year 10 5.3 Past Paper.pdf",
+            "examType": "Past Paper",
+            "grade": "10"
+          },
+          "type": "mc",
+          "options": [
+            "\\(x^{-\\frac53}\\)",
+            "\\(x^{-6}\\)",
+            "\\(x^{\\frac73}\\)",
+            "\\(x^{-\\frac73}\\)"
+          ],
+          "answer": 3,
+          "solution": "Correct answer: \\(x^{-\\frac73}\\)"
         }
       ]
     },
