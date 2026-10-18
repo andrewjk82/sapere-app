@@ -593,7 +593,7 @@
           "type": "mc",
           "stem": "The phrase ‘the drivers paused to blow their cattle’ (line 17) means that they",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+            "svg": "fig:6167c7e753"
           },
           "options": [
             "gave them a chance to get their breath back.",
@@ -602,10 +602,12 @@
             "took a break for a smoke."
           ],
           "answer": 0,
+          "timeLimit": 180,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 2 · Humanities Comprehension and Interpretation",
-            "number": 30
+            "number": 30,
+            "origin": "teacher"
           }
         },
         {
