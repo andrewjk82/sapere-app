@@ -1050,9 +1050,9 @@
         {
           "id": "sch-acer-l1-t3-q11",
           "type": "mc",
-          "stem": "Which of these models is rigid?",
+          "stem": "Information for Questions 11 and 12\n\nTo see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich of these models is rigid?",
           "figure": {
-            "svg": "fig:beae06477f"
+            "svg": "fig:fa168047c2"
           },
           "options": [
             "I only",
@@ -1072,9 +1072,9 @@
         {
           "id": "sch-acer-l1-t3-q12",
           "type": "mc",
-          "stem": "Which one of these designs for a bridge girder is the most flexible?",
+          "stem": "Information for Questions 11 and 12\n\nTo see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich one of these designs for a bridge girder is the most flexible?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 913\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q11-12.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"538\"/><image href=\"/acer/m-q12-designs.jpg\" x=\"0\" y=\"562\" width=\"1200\" height=\"351\"/></svg>"
+            "svg": "fig:dfc3677bab"
           },
           "options": [
             "I",
