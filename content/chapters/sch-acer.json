@@ -1054,7 +1054,7 @@
         {
           "id": "sch-acer-l1-t3-q11",
           "type": "mc",
-          "stem": "Information for Questions 11 and 12\n\nTo see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich of these models is rigid?",
+          "stem": "To see which sorts of structures will be rigid, models can be made, for example, with flat sticks connected by drawing pins. The drawing pin connections act as joints; the sticks are free to rotate. Flexible models are able to change shape by movement of their joints; rigid models cannot change shape in this way because of the relationship of their parts. Figure 1 illustrates a flexible model in two positions.\n\nNote that parts of models are only joined where drawing pins are used; overlapping parts not joined with drawing pins can slide over each other.\n\nWhich of these models is rigid?",
           "figure": {
             "svg": "fig:fa168047c2"
           },
@@ -1111,44 +1111,43 @@
           }
         },
         {
-          "id": "sch-acer-l1-t3-q14",
-          "type": "mc",
-          "stem": "How many white squares will Tina have to remove so that the black squares represent one-third of the new figure?",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 360\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q14-15.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"360\"/></svg>"
-          },
-          "options": [
-            "2",
-            "3",
-            "4",
-            "6"
-          ],
-          "answer": 2,
-          "meta": {
-            "source": "ACER Scholarship Sample Test · Level 1",
-            "test": "Test 3 · Mathematics",
-            "number": 14
-          }
-        },
-        {
           "id": "sch-acer-l1-t3-q15",
-          "type": "mc",
-          "stem": "How many white squares would there have to be for the black squares to represent \\(\\dfrac{1}{16}\\) of the new figure?",
+          "type": "multipart",
+          "stem": "Tina sees that the black squares represent one-fifth of this figure.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 360\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q14-15.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"360\"/></svg>"
+            "svg": "fig:0edc5e316b"
           },
-          "options": [
-            "14",
-            "18",
-            "30",
-            "32"
-          ],
-          "answer": 2,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": 15
-          }
+            "number": "14-15"
+          },
+          "parts": [
+            {
+              "id": "sch-acer-l1-t3-q15-p14",
+              "type": "mc",
+              "stem": "14.  How many white squares will Tina have to remove so that the black squares represent one-third of the new figure?",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "6"
+              ],
+              "answer": 2
+            },
+            {
+              "id": "sch-acer-l1-t3-q15-p15",
+              "type": "mc",
+              "stem": "15.  How many white squares would there have to be for the black squares to represent \\(\\dfrac{1}{16}\\) of the new figure?",
+              "options": [
+                "14",
+                "18",
+                "30",
+                "32"
+              ],
+              "answer": 2
+            }
+          ]
         },
         {
           "id": "sch-acer-l1-t3-q16",
@@ -1332,10 +1331,7 @@
         {
           "id": "sch-acer-l1-t3-q26",
           "type": "mc",
-          "stem": "How many ways can Harriet, Ian, Jessica, Ken and Lee line up?",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 609\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q26-27.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"609\"/></svg>"
-          },
+          "stem": "One person can line up only one way. Two, say Adam and Belinda, can line up two ways — Adam, Belinda, or Belinda, Adam. With adding Chris making three people, there are six ways of lining up.\n\n| number of people | number of ways of lining up | can be obtained by |\n|---|---|---|\n| 1 | 1 | 1 |\n| 2 | 2 | \\(1 \\times 2\\) |\n| 3 | 6 | \\(1 \\times 2 \\times 3\\) |\n| \\(\\vdots\\) | \\(\\vdots\\) | \\(\\vdots\\) |\n\nHow many ways can Harriet, Ian, Jessica, Ken and Lee line up?",
           "options": [
             "24",
             "60",
@@ -1352,10 +1348,7 @@
         {
           "id": "sch-acer-l1-t3-q27",
           "type": "mc",
-          "stem": "There are exactly 5040 different ways in which \\(x\\) people can line up.\n\n\\(x =\\)",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 609\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q26-27.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"609\"/></svg>"
-          },
+          "stem": "One person can line up only one way. Two, say Adam and Belinda, can line up two ways — Adam, Belinda, or Belinda, Adam. With adding Chris making three people, there are six ways of lining up.\n\n| number of people | number of ways of lining up | can be obtained by |\n|---|---|---|\n| 1 | 1 | 1 |\n| 2 | 2 | \\(1 \\times 2\\) |\n| 3 | 6 | \\(1 \\times 2 \\times 3\\) |\n| \\(\\vdots\\) | \\(\\vdots\\) | \\(\\vdots\\) |\n\nThere are exactly 5040 different ways in which \\(x\\) people can line up.\n\n\\(x =\\)",
           "options": [
             "5",
             "6",
