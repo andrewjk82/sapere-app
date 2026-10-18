@@ -1,0 +1,662 @@
+{
+  "chapterId": "sch-acer",
+  "title": "ACER",
+  "year": "Scholarship",
+  "topics": [
+    {
+      "topicId": "sch-acer-reading",
+      "code": "",
+      "title": "Reading and Viewing",
+      "questions": [
+        {
+          "id": "sch-acer-l1-t2-q1",
+          "type": "mc",
+          "stem": "What is Jane’s job?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "She does secretarial work for a plumbing company.",
+            "She organises activities for people.",
+            "She tries to get work for people.",
+            "She is a travel agent."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q2",
+          "type": "mc",
+          "stem": "Muggs’ manner toward Jane is best described as",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "meek and grateful.",
+            "defiant and rude.",
+            "teasing and disrespectful.",
+            "challenging and abrupt."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q3",
+          "type": "mc",
+          "stem": "It seems that in the Age of Leisure few people work because",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "they have become extremely lazy.",
+            "they would prefer to enjoy themselves.",
+            "many jobs have been taken over by technology.",
+            "society has become simpler and work is unnecessary."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q4",
+          "type": "mc",
+          "stem": "When Jane says ‘Don’t be antediluvian’ (line 21), she means that Muggs should not be so",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "sad.",
+            "unreasonable.",
+            "unnatural.",
+            "old-fashioned."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q5",
+          "type": "mc",
+          "stem": "The activities that Muggs is to undertake during his six month program appear to",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "take no account of his needs or interests.",
+            "be designed to extend his present skills.",
+            "be inappropriate for his age group.",
+            "take account of his low budget."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 5
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q6",
+          "type": "mc",
+          "stem": "Which one of the following sets of words best describes Jane?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "businesslike/patronising/firm",
+            "gentle/thoughtful/fun-loving",
+            "haughty/impatient/quick-tempered",
+            "unsympathetic/knowledgeable/rude"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 6
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q7",
+          "type": "mc",
+          "stem": "Which one of the following best sums up the attitudes of Jane and Muggs to the ‘marvellous times’ (line 22)?\n\nJANE — MUGGS",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1457\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit1-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1457\"/></svg>"
+          },
+          "options": [
+            "coolness — warmth",
+            "amusement — fear",
+            "excitement — dreariness",
+            "seriousness — playfulness"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 7
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q8",
+          "type": "mc",
+          "stem": "Jacky’s and Mary’s son Ed would call Tom his",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1089\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit2-family-tree.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1089\"/></svg>"
+          },
+          "options": [
+            "uncle.",
+            "father.",
+            "cousin.",
+            "brother."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 8
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q9",
+          "type": "mc",
+          "stem": "Ed’s brother Charlie would call Cathy his",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1089\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit2-family-tree.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1089\"/></svg>"
+          },
+          "options": [
+            "cousin.",
+            "mother.",
+            "aunt.",
+            "sister."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 9
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q10",
+          "type": "mc",
+          "stem": "Ed would call Jenny his",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1089\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit2-family-tree.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1089\"/></svg>"
+          },
+          "options": [
+            "mother.",
+            "aunt.",
+            "sister.",
+            "cousin."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 10
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q11",
+          "type": "mc",
+          "stem": "A ‘skin group’ is an Aboriginal",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1089\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit2-family-tree.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1089\"/></svg>"
+          },
+          "options": [
+            "tribe.",
+            "ethnic type.",
+            "family unit.",
+            "medical classification."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q12",
+          "type": "mc",
+          "stem": "The style of writing used in Poem I is most like",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 731\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit3-poems.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"731\"/></svg>"
+          },
+          "options": [
+            "a textbook.",
+            "a playground rhyme.",
+            "an old-fashioned story.",
+            "an intimate conversation."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q13",
+          "type": "mc",
+          "stem": "The mood of Poem II can best be described as",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 731\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit3-poems.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"731\"/></svg>"
+          },
+          "options": [
+            "dull and bored.",
+            "bright and happy.",
+            "irritable and sour.",
+            "sad and thoughtful."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q14",
+          "type": "mc",
+          "stem": "By 528 AD the Eastern Roman Empire",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1616\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/></svg>"
+          },
+          "options": [
+            "had expanded toward the east.",
+            "had been overrun by the Vandals.",
+            "was nearly the same size as in 406 AD.",
+            "no longer included any part of North Africa."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q15",
+          "type": "mc",
+          "stem": "By 528 AD much of the western part of the Mediterranean Sea was under the control of the",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1616\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/></svg>"
+          },
+          "options": [
+            "Vandals.",
+            "Berbers.",
+            "Visigoths.",
+            "Ostrogoths."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 15
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q16",
+          "type": "mc",
+          "stem": "By 528 AD the Lombard people had",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1616\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/></svg>"
+          },
+          "options": [
+            "disappeared as a result of Slav expansion.",
+            "resettled further to the south-east.",
+            "resettled amongst other nearby peoples.",
+            "stayed in the same area and extended their territory."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 16
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q17",
+          "type": "mc",
+          "stem": "Which of the following peoples did not share a border in 528 AD?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1616\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/></svg>"
+          },
+          "options": [
+            "Norse and Finns",
+            "Persians and Huns",
+            "Ostrogoths and Slavs",
+            "Visigoths and Franks"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 17
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q18",
+          "type": "mc",
+          "stem": "In 406 AD the Roman Empire was limited on the south mainly by",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 2395\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/><image href=\"/acer/unit4-map-three.jpg\" x=\"0\" y=\"1640\" width=\"1200\" height=\"755\"/></svg>"
+          },
+          "options": [
+            "seas.",
+            "deserts.",
+            "mountains.",
+            "forests."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 18
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q19",
+          "type": "mc",
+          "stem": "The people known as the ‘Marsh Arabs’ are most likely to be found in the area on Map Three labelled",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 2395\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/><image href=\"/acer/unit4-map-three.jpg\" x=\"0\" y=\"1640\" width=\"1200\" height=\"755\"/></svg>"
+          },
+          "options": [
+            "I.",
+            "II.",
+            "III.",
+            "IV."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q20",
+          "type": "mc",
+          "stem": "The route taken by the Visigoths from east to west (thick broken line with arrows on Map One) was determined mainly by the need to avoid",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 2395\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit4-map-one.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"755\"/><image href=\"/acer/unit4-map-two.jpg\" x=\"0\" y=\"779\" width=\"1200\" height=\"837\"/><image href=\"/acer/unit4-map-three.jpg\" x=\"0\" y=\"1640\" width=\"1200\" height=\"755\"/></svg>"
+          },
+          "options": [
+            "forests.",
+            "mountains.",
+            "marshes.",
+            "deserts."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q21",
+          "type": "mc",
+          "stem": "The passage implies that gullies will form where",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 664\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit5-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"664\"/></svg>"
+          },
+          "options": [
+            "there are natural features like streams and creeks.",
+            "farm machines have removed a lot of surface soil.",
+            "soil has been exposed by the movement of animals.",
+            "soil on a hillside has been ploughed across the slope."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q22",
+          "type": "mc",
+          "stem": "The passage says that rain can cause soil erosion by",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 664\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit5-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"664\"/></svg>"
+          },
+          "options": [
+            "washing away plants that bind the soil.",
+            "encouraging the growth of weeds.",
+            "removing nutrients from the soil.",
+            "breaking up the surface soil."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q23",
+          "type": "mc",
+          "stem": "According to the passage, ploughing across a slope rather than up and down will",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 664\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit5-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"664\"/></svg>"
+          },
+          "options": [
+            "decrease erosion by preventing soil from washing down the slope.",
+            "increase erosion by making the soil looser and more moveable.",
+            "decrease erosion by making the soil more suitable for planting.",
+            "increase erosion by trapping run-off water in the furrows."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q24",
+          "type": "mc",
+          "stem": "According to the passage, an advantage of having plants to cover the soil is that they",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 664\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit5-passage.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"664\"/></svg>"
+          },
+          "options": [
+            "take in water from the air and keep the soil moist.",
+            "keep the soil rich in nutrients so that erosion is lessened.",
+            "make the countryside look more beautiful and appealing.",
+            "stop the soil from breaking apart and protect it from damage."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 24
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q25",
+          "type": "mc",
+          "stem": "By describing himself as a ‘sapling boy’ (line 1) the writer suggests that he",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "clung to his mother.",
+            "looked older than his years.",
+            "was young and inexperienced.",
+            "was foolish and empty-headed."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 25
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q26",
+          "type": "mc",
+          "stem": "The drivers tapped out their pipes at O’Mara’s Hill (line 7) because",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "they were not allowed to smoke on duty.",
+            "it was the toughest part of the journey.",
+            "at this point they took on more logs.",
+            "they were ordered to take a rest."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 26
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q27",
+          "type": "mc",
+          "stem": "The trip to the sawmill (lines 14–16) is described as",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "a hazardous journey.",
+            "a celebratory triumph.",
+            "a mournful procession.",
+            "an unremarkable occurrence."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q28",
+          "type": "mc",
+          "stem": "The writer regards the bullocks mainly as",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "expendable assets.",
+            "individual mates.",
+            "beasts of burden.",
+            "useful cattle."
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 28
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q29",
+          "type": "mc",
+          "stem": "In the poem the logs are described as",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "an essential commodity.",
+            "obstacles to farming.",
+            "sacrificial victims.",
+            "precious wealth."
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 29
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q30",
+          "type": "mc",
+          "stem": "The phrase ‘the drivers paused to blow their cattle’ (line 17) means that they",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "gave them a chance to get their breath back.",
+            "fanned the bullocks to cool them down.",
+            "released them from their yokes.",
+            "took a break for a smoke."
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 30
+          }
+        },
+        {
+          "id": "sch-acer-l1-t2-q31",
+          "type": "mc",
+          "stem": "The writer looks back to the time of the bullock teams with",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 935\" width=\"100%\" height=\"auto\"><image href=\"/acer/unit6-poem.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"935\"/></svg>"
+          },
+          "options": [
+            "exaggeration and sentimentality.",
+            "complaint and fault-finding.",
+            "bitterness and distress.",
+            "admiration and affection."
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 2 · Humanities Comprehension and Interpretation",
+            "number": 31
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "sch-acer-writing",
+      "code": "",
+      "title": "Writing",
+      "questions": [
+        {
+          "id": "sch-acer-l1-t1-writing",
+          "type": "review",
+          "stem": "WRITTEN EXPRESSION LEVEL 1: TEST 1\n\nInstructions\n\n• This sheet contains a writing task. You will be allowed 25 minutes.\n\n• When you are told, turn this sheet over and read the topic. Spend some of your time thinking about the topic and what you might write. There is space for jotting down your ideas in the answer booklet. Remember the amount you write is not as important as the thoughts you express and the way you express them.\n\n• Write in whatever way you feel is best to complete the writing task.\n\n• If you finish your writing before time is up, use the rest of the time to go over your work and to make any changes which you feel would improve it.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 1322\" width=\"100%\" height=\"auto\"><image href=\"/acer/writing-pets.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"1322\"/></svg>"
+          },
+          "answer": "",
+          "timeLimit": 1500,
+          "meta": {
+            "source": "ACER Scholarship Sample Test · Level 1",
+            "test": "Test 1 · Written Expression",
+            "number": 1
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "sch-acer-maths",
+      "code": "",
+      "title": "Mathematics",
+      "questions": []
+    }
+  ]
+}
