@@ -7,6 +7,8 @@ import { useLassoTool } from '../utils/useLassoTool';
 import { drawPenSegments, drawTip } from '../utils/inkRender';
 import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
+import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/shapeSnap';
+import { snapAngle } from '../utils/lassoSelect';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
   PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger, classifyMultiTap,
@@ -231,6 +233,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [backScale, setBackScale] = useState(1);
   // Whole-stroke eraser gesture: { pointerId, last: {x, y}, base: strokes at pointerdown, current: strokes now }.
   const strokeEraseRef = useRef(null);
+  const holdRef = useRef({ timer: 0, stroke: null, x: 0, y: 0 });   // draw-and-hold: timer + where the pen last moved (client px)
 
   // Background bookkeeping
   const bgRenderedRef = useRef([]);
@@ -658,7 +661,22 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     if (stroke.shape) {
       const x = (e.clientX - rect.left) * rect.sx;
       const y = (e.clientY - rect.top) * rect.sy;
-      stroke.points = makeShapePoints(stroke.shape, stroke.start, { x, y }, stroke.width);
+      let end = { x, y };
+      let start = stroke.start;
+      if (stroke.holdScale) {
+        // a rectangle / ellipse made by holding: it grows and shrinks about its centre as the pen moves in and out
+        const h = stroke.holdScale;
+        const k = Math.max(0.2, Math.hypot(x - h.cx, y - h.cy) / h.d0);
+        start = { x: h.cx - h.rx * k, y: h.cy - h.ry * k };
+        end = { x: h.cx + h.rx * k, y: h.cy + h.ry * k };
+      } else if (stroke.holdLine) {
+        // a line made by holding snaps to every 15° when the pen is close to it
+        const ang = Math.atan2(y - start.y, x - start.x);
+        const r = Math.hypot(x - start.x, y - start.y);
+        const snapped = snapAngle(ang);
+        end = { x: start.x + Math.cos(snapped) * r, y: start.y + Math.sin(snapped) * r };
+      }
+      stroke.points = makeShapePoints(stroke.shape, start, end, stroke.width);
       return true;
     }
     const pts = stroke.points;
@@ -717,7 +735,39 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
 
   // Discard an in-progress stroke without committing (used when a pen press
   // preempts a stray palm/touch stroke).
+  const clearHold = () => { window.clearTimeout(holdRef.current.timer); holdRef.current.timer = 0; holdRef.current.stroke = null; };
+
+  // Draw and hold: the pen rests at the end of a stroke → it turns into the straight line / rectangle / ellipse it
+  // was aiming for (if it clearly was one); keep dragging to resize it. The result is one ordinary stroke (one undo).
+  const snapHeldStroke = (stroke) => {
+    holdRef.current.timer = 0;
+    if (currentStrokeRef.current !== stroke || !isDrawingRef.current || stroke.shape || stroke.isEraser) return;
+    const found = recognizeShape(stroke.points);
+    if (!found) return;
+    const pen = stroke.points[stroke.points.length - 1];
+    const { start, end } = found;
+    stroke.shape = found.shape;
+    stroke.start = start;
+    stroke.hasRealPressure = false;
+    if (found.shape === 'line') {
+      stroke.holdLine = true;
+    } else {
+      const cx = (start.x + end.x) / 2; const cy = (start.y + end.y) / 2;
+      stroke.holdScale = { cx, cy, rx: Math.abs(end.x - start.x) / 2, ry: Math.abs(end.y - start.y) / 2, d0: Math.max(1, Math.hypot(pen[0] - cx, pen[1] - cy)) };
+    }
+    stroke.points = makeShapePoints(found.shape, start, end, stroke.width);
+    flushLive();
+    if (navigator.vibrate) { try { navigator.vibrate(8); } catch { /* not supported */ } }
+  };
+  const armHold = (stroke, clientX, clientY) => {
+    window.clearTimeout(holdRef.current.timer);
+    holdRef.current.stroke = stroke;
+    holdRef.current.x = clientX; holdRef.current.y = clientY;
+    holdRef.current.timer = window.setTimeout(() => snapHeldStroke(stroke), HOLD_MS);
+  };
+
   const discardCurrentStroke = () => {
+    clearHold();
     cancelLiveRender();
     currentStrokeRef.current = null;
     isDrawingRef.current = false;
@@ -730,6 +780,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   // Commit a stroke: draw it onto the bg, clear overlays, push to state.
   const finalizeStroke = (stroke, finalE) => {
     if (!stroke) return;
+    clearHold();
     cancelLiveRender();
     const dpr = backScaleRef.current;
     // Capture the genuine final point so quick taps / short flicks never vanish.
@@ -743,6 +794,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       if (dx * dx + dy * dy >= 0.25) pts.push([x, y, last[2]]);
     }
     stroke.completed = true;
+    delete stroke.holdScale; delete stroke.holdLine;   // only needed while the pen is still down
     // Scribble-to-erase (opt-in, Settings): a dense zigzag over existing ink erases that ink instead of adding a stroke.
     if (!stroke.isEraser && isScribbleEraseOn()) {
       const hits = scribbleTargets(stroke.points, strokesRef.current);
@@ -890,6 +942,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     predictedPtsRef.current = [];
     lastSampleRef.current = { x: pt.x, y: pt.y, t: e.timeStamp };
     currentStrokeRef.current = stroke;
+    if (!isTouch && !shape && !isEraser && penStyle !== 'highlighter' && isHoldToShapeOn()) armHold(stroke, e.clientX, e.clientY);
   };
 
   const onPointerMove = (e) => {
@@ -926,6 +979,10 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const rect = rectRef.current;
     if (!rect) return;
     const appended = appendPointerSamples(e);
+    // Draw and hold: the timer restarts whenever the pen has moved noticeably since it last rested.
+    if (holdRef.current.stroke && !holdRef.current.stroke.shape && Math.hypot(e.clientX - holdRef.current.x, e.clientY - holdRef.current.y) > HOLD_MOVE) {
+      armHold(holdRef.current.stroke, e.clientX, e.clientY);
+    }
 
     // Predicted points — extend the tip ahead of the pointer to hide latency.
     if (typeof e.getPredictedEvents === 'function') {

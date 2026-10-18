@@ -11,6 +11,7 @@ import ShareAppQrModal from './ShareAppQrModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 import { isAnswerSoundOn, setAnswerSoundOn, playCorrect } from '../utils/answerSound';
 import { isScribbleEraseOn, setScribbleEraseOn } from '../utils/scribbleErase';
+import { isHoldToShapeOn, setHoldToShapeOn } from '../utils/shapeSnap';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
 
@@ -34,6 +35,7 @@ const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
   const [answerSoundOn, setAnswerSoundState] = useState(() => isAnswerSoundOn());
   const [scribbleEraseOn, setScribbleEraseState] = useState(() => isScribbleEraseOn());
+  const [holdToShapeOn, setHoldToShapeState] = useState(() => isHoldToShapeOn());
   const { showToast } = useToast();
   const [loading, setLoading] = useState(false);
   const [avatarOpen, setAvatarOpen] = useState(false);
@@ -504,6 +506,21 @@ const Settings = () => {
               <span>
                 Scribble to erase
                 <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>Scratch back and forth over your writing with the pen to erase it. Undo brings it back. On by default; saved on this device.</span>
+              </span>
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '12px', marginTop: '16px', cursor: 'pointer', fontWeight: 700, color: '#1e1b4b' }}>
+              <input
+                type="checkbox"
+                checked={holdToShapeOn}
+                onChange={(e) => {
+                  setHoldToShapeOn(e.target.checked);
+                  setHoldToShapeState(e.target.checked);
+                }}
+                style={{ width: 20, height: 20 }}
+              />
+              <span>
+                Hold to draw shapes
+                <span style={{ display: 'block', fontWeight: 600, fontSize: '0.8rem', color: '#64748b' }}>Draw a line, rectangle or circle with the pen and keep it held down: it turns into a neat shape, and you can keep dragging to resize it. Undo brings back your drawing. On by default; saved on this device.</span>
               </span>
             </label>
           </section>
