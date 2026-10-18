@@ -94,7 +94,7 @@ import CheatSheetLightbox from './CheatSheetLightbox';
 import './curriculum.css';
 import './hsc-chart.css';
 
-const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper'];
+const YEARS = [...Array.from({ length: 12 }, (_, i) => `Year ${i + 1}`), 'Past Paper', 'Scholarship'];
 const PAST_PAPER_COURSES = ['Standard', 'Advanced', 'Extension 1', 'Extension 2'];
 // Bump the cache key suffix to invalidate every client's stored counts once.
 // Pre-existing caches were written before the seeder & delete paths bumped

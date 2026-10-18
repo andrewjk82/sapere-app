@@ -3200,5 +3200,19 @@ export const CURRICULUM_DATA = {
         ]
       }
     ],
-  }
+  },
+  // Scholarship exam preparation — not a school year. One chapter per exam provider; each section of the
+  // exam is a topic (its own worksheet PDF, notes and homework link, set in the Curriculum editor).
+  // Assigned to a student like a year (EditStudentModal lists every key here).
+  'Scholarship': [
+    {
+      id: 'sch-acer',
+      title: 'ACER',
+      topics: [
+        { id: 'sch-acer-reading', title: 'Reading and Viewing' },
+        { id: 'sch-acer-writing', title: 'Writing' },
+        { id: 'sch-acer-maths', title: 'Mathematics' },
+      ],
+    },
+  ],
 };

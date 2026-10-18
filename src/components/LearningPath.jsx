@@ -114,7 +114,8 @@ const LearningPath = ({ profile }) => {
   // any other assigned year was unreachable (2026-09-29: Year 7 added to a
   // Year 11/12 student never appeared).
   const tracks = useMemo(() => {
-    const yearNum = (y) => parseInt(String(y).replace(/\D/g, ''), 10) || 0;
+    // Non-year tracks (e.g. Scholarship) sort after the school years.
+    const yearNum = (y) => parseInt(String(y).replace(/\D/g, ''), 10) || 99;
     const all = [];
     [...new Set(years)].sort((a, b) => yearNum(a) - yearNum(b)).forEach((y) => {
       const data = CURRICULUM_DATA[y];
@@ -681,14 +682,14 @@ const LearningPath = ({ profile }) => {
                             }}
                           >
                             <FileText size={10} />
-                            {t.code || t.id}
+                            {t.code || t.title || t.id}
                             {pct > 0 && !done && <span style={{ opacity: 0.9 }}>{pct}%</span>}
                           </button>
                         );
                       }
                       return (
                         <span key={t.id} style={chipStyle}>
-                          {t.code || t.id}
+                          {t.code || t.title || t.id}
                           {pct > 0 && !done && <span style={{ opacity: 0.9 }}>{pct}%</span>}
                         </span>
                       );
