@@ -1052,7 +1052,7 @@
           "type": "mc",
           "stem": "Which of these models is rigid?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 936\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q11-12.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"538\"/><image href=\"/acer/m-q11-models.jpg\" x=\"0\" y=\"562\" width=\"1200\" height=\"374\"/></svg>"
+            "svg": "fig:beae06477f"
           },
           "options": [
             "I only",
@@ -1061,10 +1061,12 @@
             "all of them"
           ],
           "answer": 0,
+          "timeLimit": 60,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": 11
+            "number": 11,
+            "origin": "teacher"
           }
         },
         {
