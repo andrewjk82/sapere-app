@@ -1027,7 +1027,8 @@
                 "there are 136 hectares in an acre.",
                 "136 acres = 55 hectares."
               ],
-              "answer": 3
+              "answer": 3,
+              "xp": 2
             },
             {
               "id": "sch-acer-l1-t3-q10-p10",
