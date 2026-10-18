@@ -997,63 +997,54 @@
           }
         },
         {
-          "id": "sch-acer-l1-t3-q8",
-          "type": "mc",
-          "stem": "80 litres is equivalent to about",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
-          },
-          "options": [
-            "46 pints.",
-            "55 pints.",
-            "140 pints.",
-            "30 acres."
-          ],
-          "answer": 2,
-          "meta": {
-            "source": "ACER Scholarship Sample Test · Level 1",
-            "test": "Test 3 · Mathematics",
-            "number": 8
-          }
-        },
-        {
-          "id": "sch-acer-l1-t3-q9",
-          "type": "mc",
-          "stem": "Point Y shows that",
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
-          },
-          "options": [
-            "55 acres = 136 hectares.",
-            "there are 55 acres in a hectare.",
-            "there are 136 hectares in an acre.",
-            "136 acres = 55 hectares."
-          ],
-          "answer": 3,
-          "meta": {
-            "source": "ACER Scholarship Sample Test · Level 1",
-            "test": "Test 3 · Mathematics",
-            "number": 9
-          }
-        },
-        {
           "id": "sch-acer-l1-t3-q10",
-          "type": "mc",
-          "stem": "“130 p’s = 52 q’s”\n\nOf the following, p and q are most likely to be",
+          "type": "multipart",
+          "stem": "Information for Questions 8, 9 and 10\n\nThe lines on this graph enable conversion between one system of units and another. The first-named unit on each line is a metric unit (e.g. centimetres); the other unit is non-metric (e.g. inches).\n\nFor example, point X shows that 80 metres is equivalent to about 88 yards.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 845\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-info-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"845\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 563\" width=\"100%\" height=\"auto\"><image href=\"/acer/m-graph-q8-10.jpg\" x=\"0\" y=\"0\" width=\"1200\" height=\"563\"/></svg>"
           },
-          "options": [
-            "yards and metres.",
-            "pints and litres.",
-            "pounds and kilograms.",
-            "acres and hectares."
+          "parts": [
+            {
+              "id": "sch-acer-l1-t3-q10-p8",
+              "type": "mc",
+              "stem": "8.  80 litres is equivalent to about",
+              "options": [
+                "46 pints.",
+                "55 pints.",
+                "140 pints.",
+                "30 acres."
+              ],
+              "answer": 2
+            },
+            {
+              "id": "sch-acer-l1-t3-q10-p9",
+              "type": "mc",
+              "stem": "9.  Point Y shows that",
+              "options": [
+                "55 acres = 136 hectares.",
+                "there are 55 acres in a hectare.",
+                "there are 136 hectares in an acre.",
+                "136 acres = 55 hectares."
+              ],
+              "answer": 3
+            },
+            {
+              "id": "sch-acer-l1-t3-q10-p10",
+              "type": "mc",
+              "stem": "10.  “130 p’s = 52 q’s”\n\nOf the following, p and q are most likely to be",
+              "options": [
+                "yards and metres.",
+                "pints and litres.",
+                "pounds and kilograms.",
+                "acres and hectares."
+              ],
+              "answer": 3
+            }
           ],
-          "answer": 3,
           "meta": {
             "source": "ACER Scholarship Sample Test · Level 1",
             "test": "Test 3 · Mathematics",
-            "number": 10
+            "number": "8-10"
           }
         },
         {
