@@ -3481,6 +3481,866 @@
             "test": "Test 4",
             "number": "34-35"
           }
+        },
+        {
+          "id": "sch-sel-m5-q1",
+          "type": "mc",
+          "stem": "One plate at the gym weighs 45 pounds. If Dennis can bench press 500 pounds, how many plates is that?",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(500 \\div 45 = 11.1\\)</p><p>Round down to 11.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-sel-m5-q2",
+          "type": "mc",
+          "stem": "Paula's grandfather clock gains 1 minute and 20 seconds every 3 hours. If his clock is showing the correct time at 4:00am, what time will it show at 1:00pm?",
+          "options": [
+            "1:02pm",
+            "1:03pm",
+            "1:04pm",
+            "1:05pm",
+            "1:06pm"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>From 4am to 1pm, there is 9 hours. \\(9/3 \\times 1\\text{min } 20\\text{ sec} = 3 \\times 1\\text{ min } 20\\text{ sec} = 4\\text{ min}\\). Therefore the grandfather clock will show 1:04pm.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-sel-m5-q3",
+          "type": "mc",
+          "stem": "Which of the following is closest to \\(13^2\\)?",
+          "options": [
+            "\\(\\frac{168}{100}\\)",
+            "\\(168\\frac{4}{10}\\)",
+            "\\(\\frac{126}{10}\\)",
+            "\\(2^7\\)",
+            "\\(3^4\\)"
+          ],
+          "answer": 1,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-sel-m5-q4",
+          "type": "mc",
+          "stem": "I have:\n\ni.  four angles of 90°\nii.  four axes of symmetry\niii.  two pairs of parallel sides\niv.  my diagonals intersect at right angles\n\nWhat shape am I?",
+          "options": [
+            "square",
+            "rectangle",
+            "parallelogram",
+            "trapezium",
+            "rhombus"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-sel-m5-q5",
+          "type": "mc",
+          "stem": "If a train goes back and forth on a 5 km train line at 60km an hour, assuming that it does not slow down at all when reaching the end of the line and going the other way, how many times would the train have passed its starting point* in 2 and a half hours?\n*Starting point is in the middle of the train line.",
+          "options": [
+            "10",
+            "15",
+            "30",
+            "45",
+            "50"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(2.5 \\times 60 = 150\\)km, \\(150 \\div 5 = 30\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 5
+          }
+        },
+        {
+          "id": "sch-sel-m5-q6",
+          "type": "mc",
+          "stem": "Dennis, Neil, and Andrew have a win from a sport's bet, totalling to \\(\\$1305.00\\). If Dennis has three quarters of what Neil has, and Andrew has two thirds of what Neil has, how much did Dennis get?",
+          "options": [
+            "\\(\\$420\\)",
+            "\\(\\$360\\)",
+            "\\(\\$540\\)",
+            "\\(\\$405\\)",
+            "\\(\\$450\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Let what Neil has = x</p><p>\\(\\frac{3}{4}x + x + \\frac{2}{3}x = 1305\\)</p><p>\\(x = 540\\)</p><p>Dennis = \\(\\frac{3}{4}x = \\frac{3}{4}\\) multiplied by \\(540 = \\mathbf{405}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 6
+          }
+        },
+        {
+          "id": "sch-sel-m5-q8",
+          "type": "multipart",
+          "stem": "Questions 7 and 8 use the following information.\n\nThe fifth number of a sequence is 26.8 and the thirteenth is 48.4.",
+          "parts": [
+            {
+              "id": "sch-sel-m5-q8-p7",
+              "type": "mc",
+              "stem": "What is the eleventh number of that sequence?",
+              "options": [
+                "40.3",
+                "43.0",
+                "44.2",
+                "45.7",
+                "46.0"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(48.4 - 26.8 = 21.6\\)</p><p>\\(21.6 \\div (13-5) = 2.7\\)</p><p>\\(48.4 - (2.7 \\times 2) = \\mathbf{43.0}\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m5-q8-p8",
+              "type": "mc",
+              "stem": "Which is not a number in the sequence?",
+              "options": [
+                "29.5",
+                "24.1",
+                "53.8",
+                "51.1",
+                "46.7"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Find by trial and error!</p><p>If the difference from 26.8 or 48.4 is the multiple of 2.7 then it is in the sequence.</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": "7-8"
+          }
+        },
+        {
+          "id": "sch-sel-m5-q9",
+          "type": "mc",
+          "stem": "Find the area of the following shape.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 471 377\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q9.jpg\" x=\"0\" y=\"0\" width=\"471\" height=\"377\"/></svg>"
+          },
+          "options": [
+            "\\(150.5\\ cm^2\\)",
+            "\\(160.5\\ cm^2\\)",
+            "\\(175.5\\ cm^2\\)",
+            "\\(166.5\\ cm^2\\)",
+            "\\(180.5\\ cm^2\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\{6.5 + 5 + 2.5 + (\\frac{12}{2} - \\frac{3}{2})\\} \\times (3 \\times 3) = 166.5cm^2\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 9
+          }
+        },
+        {
+          "id": "sch-sel-m5-q10",
+          "type": "mc",
+          "stem": "Philip's heart rate is 4320 beats per hour. What is his heart rate per second?",
+          "options": [
+            "72",
+            "2",
+            "1.2",
+            "1.8",
+            "1.4"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>4320 beats/hr. \\(4320/60 = 72\\) beats/min. \\(72/60 = 1.2\\) beats/second.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 10
+          }
+        },
+        {
+          "id": "sch-sel-m5-q11",
+          "type": "mc",
+          "stem": "The interest on my saving was 4% p.a. when I first made the account. It then fell back to normal rates of 2.5%.\nWhat would the difference in a year's worth of interest be if my savings was originally at \\(\\$6000\\)?",
+          "options": [
+            "\\(\\$210\\)",
+            "\\(\\$180\\)",
+            "\\(\\$150\\)",
+            "\\(\\$120\\)",
+            "\\(\\$90\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(4\\%-2.5\\% = 1.5\\% \\Rightarrow 1.5\\%\\) difference in interest</p><p>\\(6000 \\times 1.5/100 = 90\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-sel-m5-q12",
+          "type": "mc",
+          "stem": "Samantha is ten years younger than her brother Michael. 40 times Samantha's age plus 20 times Michael's age is equal to 680. How old is Michael?",
+          "options": [
+            "13",
+            "9",
+            "18",
+            "16",
+            "14"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(M = S + 10\\)</p><p>\\(40S + 20(S+10) = 680\\)</p><p>\\(40S + 20S + 200 = 680\\)</p><p>\\(60S = 480\\)</p><p>\\(S = 8\\)</p><p>\\(M = 18\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-sel-m5-q13",
+          "type": "mc",
+          "stem": "On a deserted island, the temperature of the sand during the morning was 8.64°C, while the water surrounding the island was 2.87°C. By the afternoon, the water's temperature rose by 3.35°C while the sand temperature had fallen by a quarter. What was the difference in temperature?",
+          "options": [
+            "0.26°C",
+            "0.74°C",
+            "1.34°C",
+            "1.83°C",
+            "2.43°C"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Land: \\(8.64 \\times \\frac{3}{4} = 6.48\\) °C</p><p>Water: \\(2.87+3.35 = 6.22\\)°C</p><p>Diff = \\(6.48°C - 6.22°C=0.26°C\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-sel-m5-q14",
+          "type": "mc",
+          "stem": "In October, 115 ml of water fell. In November, 121 ml of water fell and in December, 340 ml of water fell. What is the average approximate daily rainfall for these 3 months?",
+          "options": [
+            "7.5 ml",
+            "5.7 ml",
+            "10.3 ml",
+            "8.5 ml",
+            "6.3 ml"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Total rainfall = \\(115 + 121 + 340 = 576\\)</p><p>Total days = \\(31 + 31 +30 = 92\\)</p><p>Average rainfall per day = \\(6.26\\ldots.. = 6.3\\) approx</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-sel-m5-q15",
+          "type": "mc",
+          "stem": "In Dennis' room, there are 144 dolls and 60 doll houses.\nWhat number should you divide each number by to find the ratio of dolls to doll houses most quickly?",
+          "options": [
+            "8",
+            "24",
+            "6",
+            "12",
+            "7"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\mathbf{12}\\) is the highest common factor between 144 and 60</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 15
+          }
+        },
+        {
+          "id": "sch-sel-m5-q18",
+          "type": "multipart",
+          "stem": "Questions 16 – 18 use the following information.\n\nThe graph shows the comparison in average monthly rainfall between Perth and Adelaide.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1119 516\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q16-18.jpg\" x=\"0\" y=\"0\" width=\"1119\" height=\"516\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m5-q18-p16",
+              "type": "mc",
+              "stem": "By how much was the average rainfall higher in Adelaide compared to Perth in November?",
+              "options": [
+                "2 m",
+                "0.2 m",
+                "2 cm",
+                "0.02 cm",
+                "20 cm"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(20\\ mm = 2cm\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m5-q18-p17",
+              "type": "mc",
+              "stem": "What was the range in the average monthly rainfall for Adelaide?",
+              "options": [
+                "90 mm",
+                "0.8 m",
+                "0.9 m",
+                "8 cm",
+                "8 m"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>From May to December is \\(120mm - 40mm = 8cm\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m5-q18-p18",
+              "type": "mc",
+              "stem": "What is the difference in the average monthly rainfall between Perth and Adelaide?\nGive your answer to the nearest whole number.",
+              "options": [
+                "27 mm",
+                "29 mm",
+                "32 mm",
+                "34 mm",
+                "36 mm"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Average the total difference.</p><p>Total difference: \\(830 - 510 = 320mm\\)</p><p>Average: \\(320/12 = 26.7\\)</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": "16-18"
+          }
+        },
+        {
+          "id": "sch-sel-m5-q19",
+          "type": "mc",
+          "stem": "Calculate the size of angle Y.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 283\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q19.jpg\" x=\"0\" y=\"0\" width=\"360\" height=\"283\"/></svg>"
+          },
+          "options": [
+            "105°",
+            "115°",
+            "125°",
+            "135°",
+            "145°"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(180 - 45 = 135\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-sel-m5-q20",
+          "type": "mc",
+          "stem": "Find the value of ★.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 272\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q20.jpg\" x=\"0\" y=\"0\" width=\"354\" height=\"272\"/></svg>"
+          },
+          "options": [
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>□=8, △=6, ●=4</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-sel-m5-q21",
+          "type": "mc",
+          "stem": "Calculate the surface area of a cube with sides measuring 11 cm.",
+          "options": [
+            "\\(822\\ cm^2\\)",
+            "\\(784\\ cm^2\\)",
+            "\\(1\\,331\\ cm^2\\)",
+            "\\(363\\ cm^3\\)",
+            "\\(726\\ cm^2\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Surface area = \\(11 \\times 11\\) (area of one face) \\(\\times 6\\) (number of faces on a cube) = \\(726\\ cm^2\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-sel-m5-q22",
+          "type": "mc",
+          "stem": "Small cubes have been assembled to build this 3D shape. It has then been completely painted on all sides.\n\nHow many cubes have only three of its faces painted?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 227 119\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q22.jpg\" x=\"0\" y=\"0\" width=\"227\" height=\"119\"/></svg>"
+          },
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7",
+            "None of these"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 244 130\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q22-expl.jpg\" x=\"0\" y=\"0\" width=\"244\" height=\"130\"/></svg>"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-sel-m5-q23",
+          "type": "mc",
+          "stem": "If ⬡ = 6, ⬠ = \\(\\frac{3}{4}\\), □ = \\(\\frac{1}{2}\\), △ = 2\n\nWhat does ⬡ ÷ △ − ⬠ + □ equal?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 773 142\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q23.jpg\" x=\"0\" y=\"0\" width=\"773\" height=\"142\"/></svg>"
+          },
+          "options": [
+            "\\(3\\frac{1}{4}\\)",
+            "\\(4\\frac{1}{4}\\)",
+            "\\(2\\frac{3}{4}\\)",
+            "\\(3\\frac{3}{4}\\)",
+            "\\(1\\frac{3}{4}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>This is basic operations as long as you substitute the correct numbers into the correct shapes.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-sel-m5-q24",
+          "type": "mc",
+          "stem": "In a certain country there are 3 different cultures: Ooga, Booga, Wooga. There are 2000 Oogas, 8000 Boogas and 4000 Woogas. Half of the Oogas are woogas and 1000 of the Boogas are Woogas. However none of the Boogas are Oogas. How many Woogas exist such that they are only Wooga and not Booga or Ooga?",
+          "options": [
+            "1000",
+            "2000",
+            "3000",
+            "4000",
+            "5000"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>!000 woogas are oogas and 1000 woogas are boogas. Since boogas cant be oogas therefore there are 2000 woogas that are not booga or ooga</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 24
+          }
+        },
+        {
+          "id": "sch-sel-m5-q26",
+          "type": "multipart",
+          "stem": "Questions 25 and 26 refer to the following graph.\n\nThe pie graph shows Year 6 students' favourite snack foods. Each student only picked one favourite.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 793 471\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q25-26.jpg\" x=\"0\" y=\"0\" width=\"793\" height=\"471\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m5-q26-p25",
+              "type": "mc",
+              "stem": "How many Year 6 students were surveyed altogether?",
+              "options": [
+                "180",
+                "230",
+                "200",
+                "210",
+                "250"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Soft drink + chips + lollies = 124</p><p>36 degrees = 10%</p><p>Chocolate + Popcorn = 38%</p><p>\\(124 = 62\\%\\)</p><p>\\(1\\% = 2\\)</p><p>Total number of students = 200</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m5-q26-p26",
+              "type": "mc",
+              "stem": "What percentage of Year 6 students like Lollies the best?",
+              "options": [
+                "74%",
+                "48%",
+                "42%",
+                "40%",
+                "37%"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>74 divided by 200 = 37%</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": "25-26"
+          }
+        },
+        {
+          "id": "sch-sel-m5-q27",
+          "type": "mc",
+          "stem": "Albert purchased 4 juice boxes and 3 chip packets for \\(\\$25.40\\). Dennis bought 4 chip packets and 3 juice boxes for one dollar more. What is the cost difference between a packet of chips and a juice box?",
+          "options": [
+            "\\(\\$1\\)",
+            "\\(\\$2\\)",
+            "\\(\\$3\\)",
+            "\\(\\$4\\)",
+            "\\(\\$5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(4x + 3y = 25.4\\)</p><p>\\(4y + 3x = 26.4\\)</p><p>\\(y-x = 1\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-sel-m5-q28",
+          "type": "mc",
+          "stem": "Which decimal number is missing from this sequence?\n\n8.6,  7.7,  6.8,  ?,  5.0",
+          "options": [
+            "5.7",
+            "5.2",
+            "5.9",
+            "6.1",
+            "5.8"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The numbers are decreasing by 0.9 each time, so \\(6.8-0.9=5.9\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 28
+          }
+        },
+        {
+          "id": "sch-sel-m5-q29",
+          "type": "mc",
+          "stem": "The shapes in this sequence follow a rule.\n\nWhat is the rule?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 785 130\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q29.jpg\" x=\"0\" y=\"0\" width=\"785\" height=\"130\"/></svg>"
+          },
+          "options": [
+            "rotate 15° clockwise",
+            "rotate 30° anticlockwise",
+            "rotate 45° anticlockwise",
+            "rotate 30° clockwise",
+            "rotate 45° clockwise"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Rotate 45 degrees clockwise.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 29
+          }
+        },
+        {
+          "id": "sch-sel-m5-q30",
+          "type": "mc",
+          "stem": "Vivian has a 60 L bath which is filled to the brim. As the plug is stuck, she has to use a pump to pump out all the water. If the pump pumps water out at a rate of 1.5 L per minute, how long will it take for the pump to have pumped out 75% of the bath water?",
+          "options": [
+            "30 minutes",
+            "35 minutes",
+            "40 minutes",
+            "45 minutes",
+            "60 minutes"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(60L \\times 75\\% = 45L\\)</p><p>\\(45/1.5 = 30\\) minutes</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 30
+          }
+        },
+        {
+          "id": "sch-sel-m5-q31",
+          "type": "mc",
+          "stem": "Riya did some vocabulary tests. Excluding the mark of her last exam, her average mark was 18. In her last test, she achieved a mark of 13, which brought her average down to 17. How many tests did Riya sit altogether?",
+          "options": [
+            "2",
+            "8",
+            "6",
+            "5",
+            "10"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Let x be number of tests done.</p><p>Total after last test = \\(17 \\times x\\)</p><p>Total before last test = \\((x-1) \\times 18\\)</p><p>Total after last test = \\((x-1) \\times 18 + 13\\)</p><p>\\((x-1) \\times 18 + 13 = 17 \\times x\\)</p><p>\\(18x - 5 = 17x\\)</p><p>\\(x = 5\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 31
+          }
+        },
+        {
+          "id": "sch-sel-m5-q32",
+          "type": "mc",
+          "stem": "A certain garden has a path built around it. How long is the path? (Note: they are both parallelograms)",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 553 210\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q32.jpg\" x=\"0\" y=\"0\" width=\"553\" height=\"210\"/></svg>"
+          },
+          "options": [
+            "68 cm",
+            "86 cm",
+            "64 cm",
+            "69 cm",
+            "79 cm"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(27 \\times 2 + 7 \\times 2 =68\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 32
+          }
+        },
+        {
+          "id": "sch-sel-m5-q33",
+          "type": "mc",
+          "stem": "A reservoir is \\(\\frac{3}{7}\\) full. If 120 litres of water is added, the reservoir is \\(\\frac{9}{11}\\) full. What is the capacity (in litres) of the reservoir when full?",
+          "options": [
+            "168",
+            "308",
+            "280",
+            "680",
+            "420"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{9}{11} - \\frac{3}{7} = \\frac{30}{77}\\)</p><p>This is equal to 120 L, therefore 1/77 of the total capacity = 4 L</p><p>Total capacity = \\(4 \\times 77 = 308\\)L</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": 33
+          }
+        },
+        {
+          "id": "sch-sel-m5-q35",
+          "type": "multipart",
+          "stem": "Questions 34 and 35 use the following information.\n\nIn a lawn bowls club, there are 280 members, five sevenths of whom are men. All of the members participate in either bowling or scoring. Two fifths of the women and one half of men do bowling.",
+          "parts": [
+            {
+              "id": "sch-sel-m5-q35-p34",
+              "type": "mc",
+              "stem": "How many men do scoring?",
+              "options": [
+                "62",
+                "77",
+                "84",
+                "96",
+                "100"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(280 \\times 5/7 = 200\\) men</p><p>half of men score – 100 men scoring</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m5-q35-p35",
+              "type": "mc",
+              "stem": "What fraction of all the members do scoring?",
+              "options": [
+                "\\(\\frac{23}{80}\\)",
+                "\\(\\frac{45}{88}\\)",
+                "\\(\\frac{37}{70}\\)",
+                "\\(\\frac{34}{70}\\)",
+                "\\(\\frac{34}{80}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>100 men scoring</p><p>80 women in total, scoring = \\(3/5 \\times 80 = 48\\)</p><p>Total scorers = 148</p><p>Fraction = \\(148/280 = 37/70\\)</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 5",
+            "number": "34-35"
+          }
         }
       ]
     },
