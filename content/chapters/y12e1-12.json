@@ -340,9 +340,9 @@
           "id": "ascham2020e1-q14c",
           "type": "review",
           "difficulty": "hard",
-          "stem": "For \\(0<x<1\\), let \\(f(x)=\\cos^{-1}(2x-1)-2\\cos^{-1}(\\sqrt{x})\\). Show that \\(f'(x)=0\\).",
-          "answer": "Differentiate both inverse-cosine terms using the chain rule. Since \\(1-(2x-1)^2=4x(1-x)\\), the first derivative is \\(-1/\\sqrt{x(1-x)}\\). Also \\(\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})]=1/\\sqrt{x(1-x)}\\). They cancel, so \\(f'(x)=0\\) for \\(0<x<1\\).",
-          "hint": "Use \\(d(\\cos^{-1}u)/dx=-u'/\\sqrt{1-u^2}\\) and the chain rule for both inner functions.",
+          "stem": "For \\(0 < x < 1\\), let \\(f(x) = \\cos^{-1}(2x - 1) - 2\\cos^{-1}(\\sqrt{x})\\). Show that \\(f'(x) = 0\\).",
+          "answer": "Differentiate both inverse-cosine terms using the chain rule.\n\nSince \\(1 - (2x - 1)^2 = 1 - (4x^2 - 4x + 1) = 4x(1 - x)\\), the first derivative is:\n\\[\\frac{d}{dx}[\\cos^{-1}(2x - 1)] = -\\frac{2}{\\sqrt{1 - (2x - 1)^2}} = -\\frac{2}{\\sqrt{4x(1 - x)}} = -\\frac{1}{\\sqrt{x(1 - x)}}\\]\n\nFor the second term:\n\\[\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})] = -2 \\cdot \\left(-\\frac{1}{\\sqrt{1 - x}}\\right) \\cdot \\frac{1}{2\\sqrt{x}} = \\frac{1}{\\sqrt{x(1 - x)}}\\]\n\nAdding these gives:\n\\[f'(x) = -\\frac{1}{\\sqrt{x(1 - x)}} + \\frac{1}{\\sqrt{x(1 - x)}} = 0\\]\nfor all \\(0 < x < 1\\).",
+          "hint": "Use the standard derivative \\(\\frac{d}{dx}[\\cos^{-1}u] = -\\frac{u'}{\\sqrt{1 - u^2}}\\) and the chain rule for each term.",
           "keyPoints": [
             {
               "text": "\\(f(x)=\\cos^{-1}(2x-1)-2\\cos^{-1}(\\sqrt{x})\\)",
@@ -355,19 +355,19 @@
           ],
           "steps": [
             {
-              "explain": "Differentiate the first inverse-cosine term using u=2x−1 and simplify its denominator.",
-              "work": "\\(\\frac{d}{dx}\\cos^{-1}(2x-1)=-\\frac{2}{\\sqrt{1-(2x-1)^2}}=-\\frac1{\\sqrt{x(1-x)}}\\)"
+              "explain": "Differentiate the first term \\(\\cos^{-1}(2x - 1)\\) using the chain rule with \\(u = 2x - 1\\).",
+              "work": "\\(\\frac{d}{dx}[\\cos^{-1}(2x - 1)] = -\\frac{2}{\\sqrt{1 - (2x - 1)^2}} = -\\frac{2}{\\sqrt{4x(1 - x)}} = -\\frac{1}{\\sqrt{x(1 - x)}}\\)"
             },
             {
-              "explain": "Differentiate the second term using u=√x, including the factor 1/(2√x).",
-              "work": "\\(\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})]=2\\frac{1}{\\sqrt{1-x}}\\frac{1}{2\\sqrt{x}}=\\frac1{\\sqrt{x(1-x)}}\\)"
+              "explain": "Differentiate the second term \\(-2\\cos^{-1}(\\sqrt{x})\\) using the chain rule with \\(u = \\sqrt{x}\\).",
+              "work": "\\(\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})] = -2\\left(-\\frac{1}{\\sqrt{1 - x}}\\right)\\left(\\frac{1}{2\\sqrt{x}}\\right) = \\frac{1}{\\sqrt{x(1 - x)}}\\)"
             },
             {
-              "explain": "Add the two contributions. They cancel for every interior point of the domain.",
-              "work": "\\(f'(x)=-\\frac1{\\sqrt{x(1-x)}}+\\frac1{\\sqrt{x(1-x)}}=\\boxed0,\\quad0<x<1\\)"
+              "explain": "Combine the two derivatives to show they cancel to zero for all \\(0 < x < 1\\).",
+              "work": "\\(f'(x) = -\\frac{1}{\\sqrt{x(1 - x)}} + \\frac{1}{\\sqrt{x(1 - x)}} = \\boxed{0}\\quad (0 < x < 1)\\)"
             }
           ],
-          "solution": "Differentiate both inverse-cosine terms using the chain rule. Since \\(1-(2x-1)^2=4x(1-x)\\), the first derivative is \\(-1/\\sqrt{x(1-x)}\\). Also \\(\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})]=1/\\sqrt{x(1-x)}\\). They cancel, so \\(f'(x)=0\\) for \\(0<x<1\\).",
+          "solution": "Differentiate both inverse-cosine terms using the chain rule.\n\nSince \\(1 - (2x - 1)^2 = 1 - (4x^2 - 4x + 1) = 4x(1 - x)\\), the first derivative is:\n\\[\\frac{d}{dx}[\\cos^{-1}(2x - 1)] = -\\frac{2}{\\sqrt{1 - (2x - 1)^2}} = -\\frac{2}{\\sqrt{4x(1 - x)}} = -\\frac{1}{\\sqrt{x(1 - x)}}\\]\n\nFor the second term:\n\\[\\frac{d}{dx}[-2\\cos^{-1}(\\sqrt{x})] = -2 \\cdot \\left(-\\frac{1}{\\sqrt{1 - x}}\\right) \\cdot \\frac{1}{2\\sqrt{x}} = \\frac{1}{\\sqrt{x(1 - x)}}\\]\n\nAdding these gives:\n\\[f'(x) = -\\frac{1}{\\sqrt{x(1 - x)}} + \\frac{1}{\\sqrt{x(1 - x)}} = 0\\]\nfor all \\(0 < x < 1\\).",
           "manual": true,
           "timeLimit": 60,
           "xp": 1,
@@ -532,7 +532,7 @@
           "id": "ascham2020e1-q14b",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Find \\(\\displaystyle\\int_0^{\\pi/8}\\cos^4x\\,dx\\).",
+          "stem": "Find \\(\\int_0^{\\frac{\\pi}{8}}\\cos^4x\\,dx\\).",
           "options": [
             "\\(\\frac{3\\pi}{64}+\\frac{\\sqrt2}{8}+\\frac1{32}\\)",
             "\\(\\frac{3\\pi}{64}+\\frac{\\sqrt2}{4}+\\frac1{32}\\)",
@@ -543,7 +543,7 @@
           "hint": "Use the power-reduction identity twice to rewrite cos⁴x using cos 2x and cos 4x, then integrate each term over the given bounds.",
           "keyPoints": [
             {
-              "text": "\\(\\displaystyle\\int_0^{\\pi/8}\\cos^4x\\,dx\\)",
+              "text": "\\(\\int_0^{\\frac{\\pi}{8}}\\cos^4x\\,dx\\)",
               "note": "Use the power-reduction identity rather than integrating cos⁴x directly."
             }
           ],
@@ -558,7 +558,7 @@
             },
             {
               "explain": "Substitute x=π/8 and x=0; all sine terms vanish at the lower bound.",
-              "work": "\\(\\left[\\frac{3x}{8}+\\frac14\\sin2x+\\frac1{32}\\sin4x\\right]_0^{\\pi/8}=\\frac{3\\pi}{64}+\\frac{\\sqrt2}{8}+\\frac1{32}\\)"
+              "work": "\\(\\left[\\frac{3x}{8}+\\frac14\\sin2x+\\frac1{32}\\sin4x\\right]_0^{\\frac{\\pi}{8}}=\\frac{3\\pi}{64}+\\frac{\\sqrt2}{8}+\\frac1{32}\\)"
             }
           ],
           "solution": "Correct answer: \\(\\frac{3\\pi}{64}+\\frac{\\sqrt2}{8}+\\frac1{32}\\).",

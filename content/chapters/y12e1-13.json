@@ -335,18 +335,18 @@
           "id": "ascham2020e1-q13c",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A population of 1200 feral cats is released. Its growth rate is \\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\), where t is measured in months.",
+          "stem": "A population of 1200 feral cats is released. Its growth rate is \\(\\frac{dP}{dt} = \\frac{P}{30}\\left(1 - \\frac{P}{10000}\\right)\\), where \\(t\\) is measured in months.",
           "parts": [
             {
               "id": "ascham2020e1-q13c-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Which statement correctly decomposes \\(\\frac{10000}{P(10000-P)}\\)?",
+              "stem": "(i) Which statement correctly decomposes \\(\\frac{10000}{P(10000 - P)}\\) into partial fractions?",
               "options": [
-                "\\(\\frac1P-\\frac1{10000-P}\\)",
-                "\\(\\frac1P+\\frac1{10000-P}\\)",
-                "\\(\\frac{10000}{P}+\\frac{10000}{10000-P}\\)",
-                "\\(\\frac1{P(10000-P)}\\)"
+                "\\(\\frac{1}{P} - \\frac{1}{10000 - P}\\)",
+                "\\(\\frac{1}{P} + \\frac{1}{10000 - P}\\)",
+                "\\(\\frac{10000}{P} + \\frac{10000}{10000 - P}\\)",
+                "\\(\\frac{1}{P(10000 - P)}\\)"
               ],
               "answer": 1,
               "hint": "Put the two fractions over a common denominator and simplify their numerator.",
@@ -362,16 +362,16 @@
               ],
               "steps": [
                 {
-                  "explain": "Combine the proposed reciprocal terms over a common denominator.",
-                  "work": "\\(\\frac1P+\\frac1{10000-P}=\\frac{10000-P+P}{P(10000-P)}\\)"
+                  "explain": "Combine the reciprocal terms over a common denominator.",
+                  "work": "\\(\\frac{1}{P} + \\frac{1}{10000 - P} = \\frac{(10000 - P) + P}{P(10000 - P)}\\)"
                 },
                 {
-                  "explain": "The numerator simplifies to 10000, matching the left-hand side.",
-                  "work": "\\(\\frac{10000-P+P}{P(10000-P)}=\\frac{10000}{P(10000-P)}\\)"
+                  "explain": "Simplify the numerator to 10000.",
+                  "work": "\\(\\frac{(10000 - P) + P}{P(10000 - P)} = \\frac{10000}{P(10000 - P)}\\)"
                 },
                 {
-                  "explain": "So the correct partial-fraction identity uses a plus sign.",
-                  "work": "\\(\\boxed{\\frac{10000}{P(10000-P)}=\\frac1P+\\frac1{10000-P}}\\)"
+                  "explain": "State the verified partial-fraction identity.",
+                  "work": "\\(\\boxed{\\frac{10000}{P(10000 - P)} = \\frac{1}{P} + \\frac{1}{10000 - P}}\\)"
                 }
               ],
               "solution": "Correct answer: \\(\\frac1P+\\frac1{10000-P}\\).",
@@ -386,12 +386,12 @@
               "id": "ascham2020e1-q13c-ii",
               "type": "mc",
               "difficulty": "hard",
-              "stem": "(ii) Solve \\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\) for P in terms of t, given \\(P(0)=1200\\).",
+              "stem": "(ii) Solve \\(\\frac{dP}{dt} = \\frac{P}{30}\\left(1 - \\frac{P}{10000}\\right)\\) for \\(P\\) in terms of \\(t\\), given \\(P(0) = 1200\\).",
               "options": [
-                "\\(P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\)",
-                "\\(P=\\frac{10000}{1+\\frac{3}{22}e^{-t/30}}\\)",
-                "\\(P=1200e^{t/30}\\)",
-                "\\(P=\\frac{30000}{22e^{t/30}+3}\\)"
+                "\\(P = \\frac{10000}{1 + \\frac{22}{3}e^{-t/30}}\\)",
+                "\\(P = \\frac{10000}{1 + \\frac{3}{22}e^{-t/30}}\\)",
+                "\\(P = 1200e^{t/30}\\)",
+                "\\(P = \\frac{30000}{22e^{t/30} + 3}\\)"
               ],
               "answer": 0,
               "hint": "Separate P and t, use the partial fractions from part (i), then apply P(0)=1200 before solving for P.",
@@ -407,23 +407,27 @@
               ],
               "steps": [
                 {
-                  "explain": "Separate variables and use the partial-fraction result from part (i).",
-                  "work": "\\(\\frac{10000}{P(10000-P)}dP=\\frac1{30}dt\\)"
+                  "explain": "Separate variables and apply the partial fraction decomposition from part (i).",
+                  "work": "\\(\\frac{10000}{P(10000 - P)}\\,dP = \\frac{1}{30}\\,dt \\implies \\left(\\frac{1}{P} + \\frac{1}{10000 - P}\\right)dP = \\frac{1}{30}\\,dt\\)"
                 },
                 {
-                  "explain": "Integrate and combine logarithms.",
-                  "work": "\\(\\ln P-\\ln(10000-P)=\\frac{t}{30}+C\\Rightarrow\\ln\\frac{P}{10000-P}=\\frac{t}{30}+C\\)"
+                  "explain": "Integrate both sides and combine logarithms.",
+                  "work": "\\(\\ln P - \\ln(10000 - P) = \\frac{t}{30} + C \\implies \\ln\\left(\\frac{P}{10000 - P}\\right) = \\frac{t}{30} + C\\)"
                 },
                 {
-                  "explain": "Use P(0)=1200, so P/(10000−P)=3/22 at t=0. Rearranging gives the logistic model.",
-                  "work": "\\(\\frac{P}{10000-P}=\\frac3{22}e^{t/30}\\Rightarrow P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\)"
+                  "explain": "Substitute the initial condition \\(P(0) = 1200\\) at \\(t = 0\\) to evaluate \\(C\\).",
+                  "work": "\\(t = 0 \\implies \\ln\\left(\\frac{1200}{10000 - 1200}\\right) = \\ln\\left(\\frac{1200}{8800}\\right) = \\ln\\left(\\frac{3}{22}\\right) = C\\)"
                 },
                 {
-                  "explain": "State the population function.",
-                  "work": "\\(\\boxed{P(t)=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}}\\)"
+                  "explain": "Substitute \\(C\\), exponentiate both sides, and invert the fraction.",
+                  "work": "\\(\\frac{P}{10000 - P} = \\frac{3}{22}e^{t/30} \\implies \\frac{10000 - P}{P} = \\frac{22}{3}e^{-t/30}\\)"
+                },
+                {
+                  "explain": "Solve for \\(P(t)\\) to obtain the logistic formula.",
+                  "work": "\\(\\frac{10000}{P} = 1 + \\frac{22}{3}e^{-t/30} \\implies \\boxed{P(t) = \\frac{10000}{1 + \\frac{22}{3}e^{-t/30}}}\\)"
                 }
               ],
-              "solution": "Correct answer: \\(P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\).",
+              "solution": "Correct answer: \\(P = \\frac{10000}{1 + \\frac{22}{3}e^{-t/30}}\\).",
               "timeLimit": 60,
               "xp": 1,
               "meta": {
@@ -501,16 +505,16 @@
               ],
               "steps": [
                 {
-                  "explain": "Set the population in the solution equal to 2400.",
-                  "work": "\\(2400=\\frac{30000}{22e^{-t/30}+3}\\)"
+                  "explain": "Set \\(P(t) = 2400\\) to determine the time for the population to double.",
+                  "work": "\\(2400 = \\frac{10000}{1 + \\frac{22}{3}e^{-t/30}}\\)"
                 },
                 {
-                  "explain": "Rearrange to isolate the exponential term.",
-                  "work": "\\(22e^{-t/30}+3=12.5\\Rightarrow e^{-t/30}=\\frac{19}{44}\\)"
+                  "explain": "Rearrange the equation to isolate the exponential term.",
+                  "work": "\\(1 + \\frac{22}{3}e^{-t/30} = \\frac{10000}{2400} = \\frac{25}{6} \\implies \\frac{22}{3}e^{-t/30} = \\frac{19}{6} \\implies e^{-t/30} = \\frac{19}{44}\\)"
                 },
                 {
-                  "explain": "Take logarithms and evaluate the time.",
-                  "work": "\\(t=30\\ln\\frac{44}{19}\\approx25.19\\text{ months}\\Rightarrow\\boxed{25\\text{ months}}\\)"
+                  "explain": "Take the natural logarithm and solve for \\(t\\) in months.",
+                  "work": "\\(-\\frac{t}{30} = \\ln\\left(\\frac{19}{44}\\right) \\implies t = 30\\ln\\left(\\frac{44}{19}\\right) \\approx 25.19\\text{ months} \\implies \\boxed{25\\text{ months}}\\)"
                 }
               ],
               "solution": "Correct answer: \\(25\\text{ months}\\).",
