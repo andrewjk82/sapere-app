@@ -457,18 +457,18 @@
               "steps": [
                 {
                   "explain": "Add corresponding components of the column vectors.",
-                  "work": "\\(\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix}3\\\\2\\end{pmatrix}+\\begin{pmatrix}4\\\\7\\end{pmatrix}=\\begin{pmatrix}3+4\\\\2+7\\end{pmatrix}=\\begin{pmatrix}7\\\\9\\end{pmatrix}\\)",
+                  "work": "\\(\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}+\\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}=\\begin{pmatrix} 3+4 \\\\ 2+7 \\end{pmatrix}=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors a and b from the origin\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"v1\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"v2\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M125 190L205 150\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#v1)\"/><path d=\"M125 190L235 75\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#v2)\"/><text x=\"165\" y=\"172\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#1d4ed8\">a</text><path d=\"M165 177 Q168 175 171 177 T177 177\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.2\"/><text x=\"210\" y=\"105\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#c2410c\">b</text><path d=\"M210 110 Q213 108 216 110 T222 110\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"1.2\"/><text x=\"105\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#475569\">O</text></svg>"
                   }
                 },
                 {
                   "explain": "Subtract the corresponding components in the same order.",
-                  "work": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}3\\\\2\\end{pmatrix}-\\begin{pmatrix}4\\\\7\\end{pmatrix}=\\begin{pmatrix}3-4\\\\2-7\\end{pmatrix}=\\begin{pmatrix}-1\\\\-5\\end{pmatrix}\\)"
+                  "work": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}-\\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}=\\begin{pmatrix} 3-4 \\\\ 2-7 \\end{pmatrix}=\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)"
                 },
                 {
                   "explain": "State both resulting column vectors.",
-                  "work": "\\(\\boxed{\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix}7\\\\9\\end{pmatrix},\\quad \\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}-1\\\\-5\\end{pmatrix}}\\)"
+                  "work": "\\(\\boxed{\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix},\\quad \\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}}\\)"
                 }
               ],
               "solution": "Correct answer: \\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\).",
@@ -505,7 +505,7 @@
               "steps": [
                 {
                   "explain": "Substitute the column vectors from part (i) into the scalar product.",
-                  "work": "\\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=\\begin{pmatrix}7\\\\9\\end{pmatrix}\\cdot\\begin{pmatrix}-1\\\\-5\\end{pmatrix}\\)"
+                  "work": "\\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\cdot\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)"
                 },
                 {
                   "explain": "Multiply corresponding components and add the products.",
