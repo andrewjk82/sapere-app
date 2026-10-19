@@ -872,6 +872,873 @@
             "test": "Test 1",
             "number": 35
           }
+        },
+        {
+          "id": "sch-sel-m2-q1",
+          "type": "mc",
+          "stem": "The number halfway between 23.87 and 3.9 is",
+          "options": [
+            "14.68.",
+            "13.885.",
+            "15.98.",
+            "9.995.",
+            "8.895."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\((23.87 + 3.9) \\div 2 = 13.885\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-sel-m2-q2",
+          "type": "mc",
+          "stem": "In the figure, not drawn to scale, ABC is a straight line. If \\(\\angle x\\) is 30° smaller than \\(\\angle y\\), find \\(\\angle y\\).",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 774 255\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q2.jpg\" x=\"0\" y=\"0\" width=\"774\" height=\"255\"/></svg>"
+          },
+          "options": [
+            "125°",
+            "120°",
+            "115°",
+            "110°",
+            "105°"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-sel-m2-q3",
+          "type": "mc",
+          "stem": "If there is a brick wall made of 5 bricks lengthwise and 5 bricks heightwise, with 1cm of mortar in between each brick and on top of, what is the area of the entire wall? Each brick is 20cm long and 10cm high.",
+          "options": [
+            "\\(2653\\ cm^2\\)",
+            "\\(23.44\\ m^2\\)",
+            "\\(4482\\ cm^2\\)",
+            "\\(28.00\\ m^2\\)",
+            "\\(3825\\ cm^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>4 bricks x 20cm + 3 x 1 = length of wall = 83</p><p>5 bricks x 10cm + 4 x 1 = height of wall = 54</p><p>A =4482</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-sel-m2-q4",
+          "type": "mc",
+          "stem": "To hire a pool table, the cost is \\(\\$16\\) an hour. For every minute over the last full hour, the cost is \\(\\$0.50\\). If I hire a pool table between 7:30am – 9:00am, how much did I pay in total?",
+          "options": [
+            "\\(\\$29.25\\)",
+            "\\(\\$48.40\\)",
+            "\\(\\$34.25\\)",
+            "\\(\\$31.00\\)",
+            "\\(\\$30.50\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>1 hour 30 minutes total playing = \\(16 + 30\\text{x}0.50 = \\mathbf{31.00}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-sel-m2-q5",
+          "type": "mc",
+          "stem": "I divided a number by 6 instead of adding it. Then I multiplied by 5 instead of subtracting 7. The result was one-fifth of 125. What should have been my answer?",
+          "options": [
+            "29",
+            "31",
+            "30",
+            "60",
+            "121"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Let unknown number be x.</p><p>5x/6 = 25</p><p>X = 30</p><p>Perform the correct operations</p><p>\\(30 + 6 = 36\\)</p><p>\\(36 - 7 = \\mathbf{29}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 5
+          }
+        },
+        {
+          "id": "sch-sel-m2-q6",
+          "type": "mc",
+          "stem": "A machine produces 50 DVDs every hour. If 5% of the DVDs produced end up faulty, how many working DVDs are made in 1 day?",
+          "options": [
+            "1430",
+            "1570",
+            "1300",
+            "1290",
+            "1140"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(50 \\times 24 = 1200\\)</p><p>\\(1200 \\times 95/100 = 1140\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 6
+          }
+        },
+        {
+          "id": "sch-sel-m2-q7",
+          "type": "mc",
+          "stem": "A container that is \\(\\frac{2}{5}\\) full holds 150ml of water.\n\nHow much more water is needed for the container to be two thirds full?",
+          "options": [
+            "75 mL",
+            "100 mL",
+            "175 mL",
+            "200 mL",
+            "250 mL"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>1/5 = 75ml</p><p>Full container = 375ml</p><p>2/3 = 250ml</p><p>\\(250 - 150 = 100\\)ml</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 7
+          }
+        },
+        {
+          "id": "sch-sel-m2-q8",
+          "type": "mc",
+          "stem": "A clock slows 4 minutes every hour. If it is 7 minutes behind at 7 am, what is the actual time when the clock reads 3:45 pm?",
+          "options": [
+            "3:03 pm",
+            "3:37 pm",
+            "4:15 pm",
+            "4:27 pm",
+            "4:30 pm"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>7 am to 3:45 pm is 8.75 hours. \\(8.75 \\times 4 + 7 = 42\\) minutes.</p><p>Therefore, the time would actually be \\(3{:}45\\ pm + 42min = \\mathbf{4{:}27\\ pm}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 8
+          }
+        },
+        {
+          "id": "sch-sel-m2-q10",
+          "type": "multipart",
+          "stem": "Use the following information to answer questions 9 and 10.\n\nThe tank containing a sample of air has a capacity of 80 litres. The air once broken into its fractions has 48 litres of nitrogen, 12 litres of oxygen and 14 litres of methane.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 255 379\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q9-10.jpg\" x=\"0\" y=\"0\" width=\"255\" height=\"379\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m2-q10-p9",
+              "type": "mc",
+              "stem": "What fraction of the air is argon?",
+              "options": [
+                "\\(\\frac{12}{112}\\)",
+                "\\(\\frac{5}{40}\\)",
+                "\\(\\frac{3}{40}\\)",
+                "\\(\\frac{9}{80}\\)",
+                "\\(\\frac{3}{12}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Argon comprises the residual component of the air mixture.</p><p>\\(48 + 12 + 14 = 74\\) L</p><p>6L of argon are present</p><p>\\(6/80 = 3/40\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m2-q10-p10",
+              "type": "mc",
+              "stem": "If 50% of the argon was removed from the mixture, what will be the new fraction of argon in the tank?",
+              "options": [
+                "\\(\\frac{3}{77}\\)",
+                "\\(\\frac{3}{80}\\)",
+                "\\(\\frac{5}{77}\\)",
+                "\\(\\frac{5}{80}\\)",
+                "\\(\\frac{3}{40}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>50% removed = 3 L removed</p><p>Total sample is now 77 L</p><p>Argon comprises 3/77</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": "9-10"
+          }
+        },
+        {
+          "id": "sch-sel-m2-q11",
+          "type": "mc",
+          "stem": "Which of the following loans will require the least amount of interest to be paid, given that they all borrow the same amount in all of them?",
+          "options": [
+            "5.0% per annum",
+            "6.0% per annum for 8 months",
+            "4.0% per annum for 24 months",
+            "9.0% per annum for 4 months",
+            "8.0% per annum for 6 months"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>8.4% for 4 months Suppose the fixed amount of money is \\(\\$1000\\).</p><p>Option A would five a simple interest of \\(0.05 \\times \\$1000 = \\$50\\).</p><p>Option B would give a simple interest of \\(0.06 \\times \\frac{8}{12} \\times \\$1000 = \\$40\\)</p><p>Option C would give a simple interest of \\(0.04 \\times \\frac{24}{12} \\times \\$1000 = \\$80\\)</p><p>Option D would give a simple interest of \\(0.09 \\times \\frac{4}{12} \\times \\$1000 = \\$30\\)</p><p>Option E would give a simple interest of \\(0.08 \\times \\frac{6}{12} \\times \\$1000 = \\$40\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-sel-m2-q12",
+          "type": "mc",
+          "stem": "A crate containing 6 smart phones had a mass of 3 kilograms. When 4 of the smart phones fell out and broke and one was added, the crate had a new mass of 1.8 kg.\nWhat's the mass of the crate?",
+          "options": [
+            "400g",
+            "500g",
+            "600g",
+            "300g",
+            "200g"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>6 phones and the crate have a mass of 3000</p><p>3 phones and the crate have a mass of 1800</p><p>therefore each phone is 400</p><p>and the crate must be 600</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-sel-m2-q13",
+          "type": "mc",
+          "stem": "\\(12.02 + \\frac{126}{5} + 2.9\\% - 6.21 =\\)",
+          "options": [
+            "34.731",
+            "31.039",
+            "17.900",
+            "12.652",
+            "9.555"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(12.02 + 25.2 + 0.029 - 6.21 = 31.039\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-sel-m2-q14",
+          "type": "mc",
+          "stem": "If Andrew sold his car for \\(\\$7\\,200\\), which was only 60% of the original price, how much did he first buy it for?",
+          "options": [
+            "\\(\\$12\\,000\\)",
+            "\\(\\$4\\,320\\)",
+            "\\(\\$13\\,500\\)",
+            "\\(\\$6\\,750\\)",
+            "\\(\\$8\\,000\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(7200 \\times 100/60 = 12000\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-sel-m2-q16",
+          "type": "multipart",
+          "stem": "For Questions 15 and 16, refer to the pie graph below that shows how Emily spends her weekly income.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 702 436\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q15-16.jpg\" x=\"0\" y=\"0\" width=\"702\" height=\"436\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m2-q16-p15",
+              "type": "mc",
+              "stem": "How much does Emily spend on food every week?",
+              "options": [
+                "\\(\\$160\\)",
+                "\\(\\$150\\)",
+                "\\(\\$140\\)",
+                "\\(\\$130\\)",
+                "\\(\\$120\\)"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>The food angle is 90 degrees.</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m2-q16-p16",
+              "type": "mc",
+              "stem": "If Emily's bills increase and she has use the money spent on gym to pay bills, how much does she spend on bills every year?",
+              "options": [
+                "\\(\\$7,000\\)",
+                "\\(\\$7,800\\)",
+                "\\(\\$8,000\\)",
+                "\\(\\$8,800\\)",
+                "\\(\\$9,000\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Gym = \\(\\$30\\)/week</p><p>Bills = \\(\\$120\\)/week</p><p>Gym+bills = \\(\\$150\\)/week</p><p>\\(\\$150 \\times 52 = \\$7800\\)</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": "15-16"
+          }
+        },
+        {
+          "id": "sch-sel-m2-q17",
+          "type": "mc",
+          "stem": "A certain cup holds 250mL of liquid. If 3 people had a random amount of water in their cup, what's the smallest possible amount of liquid in the cup to make an average (for the 3) to be 220mL",
+          "options": [
+            "220 mL",
+            "190 mL",
+            "180 mL",
+            "160 mL",
+            "150 mL"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(220 \\times 3 = 660 - 250 - 250 = 160\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 17
+          }
+        },
+        {
+          "id": "sch-sel-m2-q18",
+          "type": "mc",
+          "stem": "If\n\nA + B + C = 30\n\nA + B = 19\n\nand\n\nB + C = 20,\n\nthen what is the value of B?",
+          "options": [
+            "6",
+            "9",
+            "8",
+            "7",
+            "not enough information"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>A + B = 19. B + C = 20. Therefore, A + 2B + C = 39.</p><p>A + B + C = 30. Therefore, B = 9.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 18
+          }
+        },
+        {
+          "id": "sch-sel-m2-q19",
+          "type": "mc",
+          "stem": "A man bought 8 metres of rope. He used 100 centimetres to tie his skis to his car and cut the remainder into two pieces so that one of the pieces was three times as long as the other. What was the length of the longer piece?",
+          "options": [
+            "275 cm",
+            "175 cm",
+            "525 cm",
+            "600 cm",
+            "450 cm"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Eight metres is equal to 800cm. After using 100cm, the man has 700cm left. He then cuts the 700cm in the ratio of 1:3 in order to get one piece three times as long as the other. Divide 700cm by four to find the length of the shorter piece. It is 175cm, meaning the longer piece is 525cm.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-sel-m2-q20",
+          "type": "mc",
+          "stem": "Which option gives the **worst price for one carrot?",
+          "options": [
+            "4 carrots for \\(\\$20\\)",
+            "3 carrots for \\(\\$18\\)",
+            "\\(\\$8\\) each",
+            "6 carrots for \\(\\$50.00\\)",
+            "2 carrots for \\(\\$17.00\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>For solutions not giving the price of individual carrots, divide the dollar amount by the number of carrots to find the price per carrot. The most expensive option is D, at \\(\\$8.50\\)/carrot</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-sel-m2-q21",
+          "type": "mc",
+          "stem": "If there was 2 L of water in the container below, what fraction of the container would be filled?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 351\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q21.jpg\" x=\"0\" y=\"0\" width=\"358\" height=\"351\"/></svg>"
+          },
+          "options": [
+            "\\(\\frac{5}{20}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{1}{5}\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Volume = \\(10 \\times 20 \\times 50 = 10000\\ cm^3\\)</p><p>Since \\(1\\ cm^3 = 1\\) mL</p><p>Volume = 10 L</p><p>2 L will give a fraction of \\(2/10 = 1 / 5\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-sel-m2-q22",
+          "type": "mc",
+          "stem": "The graph shows the last names of people at a family reunion.\n\nHow many men named O'Hara were at the reunion?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 853 456\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q22.jpg\" x=\"0\" y=\"0\" width=\"853\" height=\"456\"/></svg>"
+          },
+          "options": [
+            "6",
+            "9",
+            "10",
+            "8",
+            "7"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Look at the blue bar for O'Hara</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-sel-m2-q23",
+          "type": "mc",
+          "stem": "What number would replace the missing digits so that all three of these numbers are divisible by 4?\n\n1□48   4541□   613□",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "0"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-sel-m2-q25",
+          "type": "multipart",
+          "stem": "Questions 24 and 25 use the following information.\n\nPatty stacks boxes of detergent at the supermarket.\nShe uses a pattern like this.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 856 221\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q24-25.jpg\" x=\"0\" y=\"0\" width=\"856\" height=\"221\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m2-q25-p24",
+              "type": "mc",
+              "stem": "How many boxes does Patty need to make a stack five boxes high?",
+              "options": [
+                "20",
+                "27",
+                "15",
+                "12",
+                "6"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>We can try to find a mathematical pattern here. In this case, if the stack is two boxes high, we use \\(2 \\times 3 \\div 2 + 2 = 5\\). If the stack is three boxes high, we use \\(3 \\times 4 \\div 2 + 3 = 9\\), and so on. So if the stack is five boxes high, we use \\(5 \\times 6 \\div 2 + 5 = 20\\).</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m2-q25-p25",
+              "type": "mc",
+              "stem": "Patty has 48 boxes. Using this stacking pattern, how high is the largest stack she can make?",
+              "options": [
+                "7 boxes high",
+                "8 boxes high",
+                "9 boxes high",
+                "10 boxes high",
+                "11 boxes high"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>If Patty has 48 boxes, we can go backwards. First, try using the answer. For example, if the stack is 8 boxes high, we must go \\(48-8=40\\). Now we do \\(40 \\times 2=80\\). Testing \\(8 \\times 9=72\\), which is quite close to 80. Now if the stack is 9 boxes high, we must do \\(48-9=39\\). Now we do \\(39 \\times 2=78\\). Testing \\(9 \\times 10=90\\), which is larger than 78. Therefore, if Patty has 48 boxes, the largest stack she can make is 8 boxes high.</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": "24-25"
+          }
+        },
+        {
+          "id": "sch-sel-m2-q26",
+          "type": "mc",
+          "stem": "What is the date of the 300\\(^{\\text{th}}\\) day of a non-leap year?",
+          "options": [
+            "27\\(^{\\text{th}}\\) October",
+            "26\\(^{\\text{th}}\\) October",
+            "25\\(^{\\text{th}}\\) October",
+            "24\\(^{\\text{th}}\\) October",
+            "23\\(^{\\text{rd}}\\) October"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>There are 273 days up until the end of September in a non-leap year. Another 27 days means that the 300\\(^{\\text{th}}\\) day of a non-leap year is the 27\\(^{\\text{th}}\\) of October</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 26
+          }
+        },
+        {
+          "id": "sch-sel-m2-q27",
+          "type": "mc",
+          "stem": "Dennis walks 250 metres in 2 minutes while Andrew crawls 210 metres in 3 minutes. After half an hour of walking at those rates, how far apart will the guys be?",
+          "options": [
+            "600 metres",
+            "650 metres",
+            "400 metres",
+            "850 metres",
+            "1650 metres"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Dennis walks 3750 metres in half an hour, while Andrew crawls 2100 metres in half an hour. As such, after half an hour, the guys will be 1650 metres apart.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-sel-m2-q28",
+          "type": "mc",
+          "stem": "What would be the length, if \\(\\$2\\) dollars worth of 20 cent coins were lined on top of each other as shown in the diagram below?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 314\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q28.jpg\" x=\"0\" y=\"0\" width=\"510\" height=\"314\"/></svg>"
+          },
+          "options": [
+            "99 mm",
+            "59 mm",
+            "77 mm",
+            "87 mm",
+            "67 mm"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\$2\\) worth of 20c coins is 10 coins. The diagram shows 3 coins with a total length of 31mm. Draw a diagram of 4 coins and the length of that is 39mm. A diagram of 5 coins shows the length of that as 47mm. Hence an equation can be found, as all these numbers are one less than multiples of 8. The 3 coin chain can be written as: \\(8 \\times 4-1\\), the 4 coin chain can be written as \\(8 \\times 5-1\\) and the 5 coin chain can be written as \\(8 \\times 6-1\\). Therefore, a 10 coin chain can be written as \\(8 \\times 11-1\\), which is 87mm</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 28
+          }
+        },
+        {
+          "id": "sch-sel-m2-q29",
+          "type": "mc",
+          "stem": "The sum of ages of 5 children born at the intervals of 3 years each is 50 years. What is the age of the youngest child?",
+          "options": [
+            "4 years",
+            "5 years",
+            "6 years",
+            "7 years",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Let the ages of children be \\(x\\), \\((x + 3)\\), \\((x + 6)\\), \\((x + 9)\\) and \\((x + 12)\\) years.</p><p>Then, \\(x + (x + 3) + (x + 6) + (x + 9) + (x + 12) = 50\\)</p><p>\\(\\Rightarrow 5x = 20\\)</p><p>\\(\\Rightarrow x = 4\\).</p><p>\\(\\therefore\\) Age of the youngest child = \\(x\\) = 4 years.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 29
+          }
+        },
+        {
+          "id": "sch-sel-m2-q30",
+          "type": "mc",
+          "stem": "Jamie made a string of stars.\n\nHow long is the string if the scale of the drawing is 60cm:12m?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 170\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q30.jpg\" x=\"0\" y=\"0\" width=\"368\" height=\"170\"/></svg>"
+          },
+          "options": [
+            "3000 cm",
+            "0.40 m",
+            "3 m",
+            "4 m",
+            "30 m"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Every 60cm on the drawing is 12m (1200cm) in real life.</p><p>Thus, every 1cm on the drawing is \\(1200/60 = 20\\)cm in real life.</p><p>The drawing is 15cm. Therefore, in real life the string is \\(15 \\times 20 = 300\\)cm.</p><p>300cm is equal to 3m.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 30
+          }
+        },
+        {
+          "id": "sch-sel-m2-q31",
+          "type": "mc",
+          "stem": "This triangle has an area of \\(144cm^2\\). What is the shaded area?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 289 232\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q31.jpg\" x=\"0\" y=\"0\" width=\"289\" height=\"232\"/></svg>"
+          },
+          "options": [
+            "\\(27\\ cm^2\\)",
+            "\\(48\\ cm^2\\)",
+            "\\(63\\ cm^2\\)",
+            "\\(72\\ cm^2\\)",
+            "\\(84\\ cm^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The area of the GREEN triangle is \\(144 \\div 4=36cm^2\\). The area of the RED triangle is also \\(36cm^2\\), but since only 3 of the 4 triangles inside the RED triangle are shaded, this means the area of the shaded triangles is \\(36 \\div 4=9 \\times 3=27cm^2\\). As such, the total shaded area is \\(63cm^2\\)</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 289 247\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q31-expl.jpg\" x=\"0\" y=\"0\" width=\"289\" height=\"247\"/></svg>"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 31
+          }
+        },
+        {
+          "id": "sch-sel-m2-q32",
+          "type": "mc",
+          "stem": "Jonathan needs to cut his pizza so that he ends up with twenty equal slices. What is the minimum number of times he must cut? (Assume each cut can be made across the whole diameter of the pizza.)",
+          "options": [
+            "10",
+            "19",
+            "15",
+            "5",
+            "20"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>10 cuts will produce 20 slices. Each cut produces 2 slices.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 32
+          }
+        },
+        {
+          "id": "sch-sel-m2-q33",
+          "type": "mc",
+          "stem": "If you add four fifths to five fourths, the number you end up with is:",
+          "options": [
+            "11.00",
+            "4.50",
+            "3.75",
+            "2.05",
+            "1.75"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(4/5 = 16/20\\) and \\(5/4 = 25/20\\). Add the two fractions together, and you get \\(41/20 = 2.05\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 33
+          }
+        },
+        {
+          "id": "sch-sel-m2-q34",
+          "type": "mc",
+          "stem": "In a garden, there are double the amount of spiders to ants. The total number of ants and spiders is 15. How many animal legs are in the yard?",
+          "options": [
+            "110",
+            "120",
+            "89",
+            "96",
+            "115"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The total number of spiders and ants is 15 but there are double the amount of spiders compared to ants. Therefore, there are 10 spiders and 5 ants. Spiders have 8 legs and ants have 6. The total number of legs is: \\(10 \\times 8 + 6 \\times 5 = 110\\).</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 34
+          }
+        },
+        {
+          "id": "sch-sel-m2-q35",
+          "type": "mc",
+          "stem": "What is the perimeter of the following shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 292\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q35.jpg\" x=\"0\" y=\"0\" width=\"340\" height=\"292\"/></svg>"
+          },
+          "options": [
+            "67 cm",
+            "100 cm",
+            "94 cm",
+            "78 cm",
+            "86 cm"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>86 units (all 3 vertical lines on the right side add up to 15 cm, as it is 3cm shorter than the left side).</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 2",
+            "number": 35
+          }
         }
       ]
     },
