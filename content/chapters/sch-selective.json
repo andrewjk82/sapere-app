@@ -18,8 +18,862 @@
     {
       "topicId": "sch-selective-maths",
       "code": "",
-      "title": "Mathematics",
-      "questions": []
+      "title": "Mathematical Reasoning",
+      "questions": [
+        {
+          "id": "sch-sel-m1-q1",
+          "type": "mc",
+          "stem": "James bought a car for \\(\\$9428\\) and paid a \\(\\$900\\) deposit. How much did he have left to pay before he could pick it up?",
+          "options": [
+            "\\(\\$900\\)",
+            "\\(\\$10328\\)",
+            "\\(\\$8072\\)",
+            "\\(\\$8628\\)",
+            "\\(\\$8528\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>James pays the deposit of \\(\\$900\\), so he has another \\(\\$9428-\\$900=\\$8528\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-sel-m1-q2",
+          "type": "mc",
+          "stem": "Beethoven was supposed to multiply a number by 21 but he divided it instead. He then needed to add 10 but he subtracted instead. His final answer was 8.\n\nWhat is the difference between his final answer and what it should have been?",
+          "options": [
+            "4358",
+            "120",
+            "7940",
+            "40",
+            "430"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The original answer should be:</p><p>\\(18 \\times 21 = 378,\\ \\ 378 \\times 21 + 10 = 7948\\)</p><p>\\(\\therefore\\) The difference is \\(7948 - 8 = 7940\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-sel-m1-q3",
+          "type": "mc",
+          "stem": "How many of the following figures are the net of a triangular prism?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1140 272\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q3.jpg\" x=\"0\" y=\"0\" width=\"1140\" height=\"272\"/></svg>"
+          },
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-sel-m1-q4",
+          "type": "mc",
+          "stem": "Jean trains every day. She starts with walking for 20 minutes at 6.0 km/h, then intensive running for 15 minutes at 10 km/h and then cools down with 30 minutes of yoga.\n\nWhat would be the distance she covered while training?",
+          "options": [
+            "3.5 km",
+            "4.5 km",
+            "7 km",
+            "11.5 km",
+            "12 km"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{1}{3}\\times 6 = 2\\)km while walking</p><p>\\(\\frac{1}{4}\\times 10 = 2.5\\)km while running</p><p>total = 4.5</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-sel-m1-q5",
+          "type": "mc",
+          "stem": "Andrew can increase the weight he lifts by 5kg for every 1kg that Dennis does. If they continue to lift at this rate, how much more can Andrew than Dennis lift by the times he's squatting 100kg, assuming that they both start from 0 kg?",
+          "options": [
+            "50 kg",
+            "100 kg",
+            "80 kg",
+            "90 kg",
+            "70 kg"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>100 divided by 5 = 20</p><p>Therefore Dennis is lifting \\(20 \\times 1 = 20\\).</p><p>\\(100 - 20 = 80\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 5
+          }
+        },
+        {
+          "id": "sch-sel-m1-q6",
+          "type": "mc",
+          "stem": "A minivan's fuel tank was \\(\\frac{1}{6}\\) full. When 156 L of fuel was added it was \\(\\frac{5}{6}\\) full.\n\nWhat is the capacity of the truck's fuel tank?",
+          "options": [
+            "234 L",
+            "160 L",
+            "190 L",
+            "215 L",
+            "220 L"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Adding 156 L of fuel is an increase of \\(\\frac{2}{3}\\) of the total fuel capacity.</p><p>\\(\\frac{1}{3}\\) of the minivan's fuel capacity is = 78 L</p><p>total = \\(3 \\times 78 = 234\\) L</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 6
+          }
+        },
+        {
+          "id": "sch-sel-m1-q7",
+          "type": "mc",
+          "stem": "What are the next three numbers in the pattern?\n\n22, 1, 25, 8, 28, 15, 31, 22, 34, ____, ____, ____.",
+          "options": [
+            "28, 38, 35",
+            "29, 38, 36",
+            "28, 37, 35",
+            "29, 37, 36",
+            "30, 39, 35"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Odd numbers go up by 3</p><p>Even numbers go up by7</p><p>29, 37, 36</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 7
+          }
+        },
+        {
+          "id": "sch-sel-m1-q10",
+          "type": "multipart",
+          "stem": "Questions 8 – 10 refer to the table below.\n\nThis table shows the time and date in different cities.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1122 255\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q8-10-table.jpg\" x=\"0\" y=\"0\" width=\"1122\" height=\"255\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m1-q10-p8",
+              "type": "mc",
+              "stem": "If it is 6 am in Perth, what time is it in Tokyo?",
+              "options": [
+                "7 pm",
+                "8 pm",
+                "6 am",
+                "7 am",
+                "8 am"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Tokyo is 1 hour ahead of Perth.</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m1-q10-p9",
+              "type": "mc",
+              "stem": "If it is 12 am on the 15\\(^{\\text{th}}\\) of August in Moscow, what is the date and time in Johannesburg?",
+              "options": [
+                "11 pm, 15\\(^{\\text{th}}\\) of August",
+                "11 pm, 14\\(^{\\text{th}}\\) of August",
+                "1 am, 14\\(^{\\text{th}}\\) of August",
+                "12 am, 15\\(^{\\text{th}}\\) of August",
+                "12 am, 14\\(^{\\text{th}}\\) of August"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Johannesburg is 1 hour behind Moscow. (12 am \\(\\rightarrow\\) 11 pm).</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m1-q10-p10",
+              "type": "mc",
+              "stem": "I would like to phone a friend in Tokyo from Kolkata. He said to call at 5 pm Tokyo time. At what time in Kolkata should I call him?",
+              "options": [
+                "2:30 pm",
+                "2:00 pm",
+                "12:00 pm",
+                "1:00 pm",
+                "1:30 pm"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Kolkata is 3 and a half hours behind Tokyo.</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": "8-10"
+          }
+        },
+        {
+          "id": "sch-sel-m1-q11",
+          "type": "mc",
+          "stem": "There are three pieces of string. The first piece is 30cm longer than the second piece, which is 10cm longer than the third piece. If the total length of the three pieces of string is 2.3m, what is the length of the third piece of string?",
+          "options": [
+            "50cm",
+            "60cm",
+            "70cm",
+            "80cm",
+            "90cm"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(230 - 30 - 10 - 10 = 180\\)</p><p>\\(180 \\div 3 = \\mathbf{60cm}\\)</p><p>1\\(^{\\text{st}}\\) piece of string = 100cm</p><p>2\\(^{\\text{nd}}\\) piece of string = 70 cm</p><p>3\\(^{\\text{rd}}\\) piece of string = 60cm</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-sel-m1-q12",
+          "type": "mc",
+          "stem": "What is the area of this shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 450 252\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q12.jpg\" x=\"0\" y=\"0\" width=\"450\" height=\"252\"/></svg>"
+          },
+          "options": [
+            "\\(20\\ m^2\\)",
+            "\\(16\\ m^2\\)",
+            "\\(14\\ m^2\\)",
+            "\\(32\\ m^2\\)",
+            "\\(26\\ m^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Area = \\((\\frac{1}{2} \\times 4 \\times (5-3)) + (3 \\times 4) = 4 + 12 = \\mathbf{16m}\\) squared</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-sel-m1-q13",
+          "type": "mc",
+          "stem": "Which of the following is NOT a suitable way to solve the following problem?\n\nWhat is 20% of 70%?",
+          "options": [
+            "0.2 × 0.7 = 0.14 = 14%",
+            "\\(\\frac{20}{100}\\times\\frac{70}{100}=\\frac{1400}{10000}=14\\%\\)",
+            "10% of 70% = 7%, 7%÷2 = 14%",
+            "(20 × 70) ÷ (100 × 100) = 14%",
+            "20% × 70% = 14%"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>It should be 7% x 2, not divide</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-sel-m1-q14",
+          "type": "mc",
+          "stem": "Look at the table below. It shows which stall and what cost satay skewers were sold.\n\nIf I want to buy 5 skewers at each stall, how much would it cost in total?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 357 272\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q14.jpg\" x=\"0\" y=\"0\" width=\"357\" height=\"272\"/></svg>"
+          },
+          "options": [
+            "\\(\\$45.00\\)",
+            "\\(\\$44.00\\)",
+            "\\(\\$43.00\\)",
+            "\\(\\$42.00\\)",
+            "\\(\\$40.00\\)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(5(1.6 + 2.3 \\times 2 + 1.8) = \\mathbf{40.00}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-sel-m1-q15",
+          "type": "mc",
+          "stem": "The average of 6 numbers is 22. What new number can be added so that the average remains at 22?",
+          "options": [
+            "15",
+            "22",
+            "30",
+            "23",
+            "25"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Average of 6 numbers is 22, total = 132</p><p>Total of 7 numbers must be \\(7 \\times 22 = 154\\)</p><p>Therefore number added must be \\(154-132 = 22\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 15
+          }
+        },
+        {
+          "id": "sch-sel-m1-q16",
+          "type": "mc",
+          "stem": "Josiah can sprint 200m in 25 seconds, while Jonathan can sprint the twice distance in 40 seconds. If they race each other, and run at top speed for 1 minute 30 seconds, what is the distance between them?",
+          "options": [
+            "983m",
+            "635m",
+            "459m",
+            "180m",
+            "120m"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>200m/25s = 8m/s, 400/40 =10m/s</p><p>In 1 min 30, \\(10 \\times 90 - 8 \\times 90 = 180\\)m</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 16
+          }
+        },
+        {
+          "id": "sch-sel-m1-q18",
+          "type": "multipart",
+          "stem": "Questions 17 – 18 refer to the following information.\n\nBrett built this stack using bricks of the same size.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 589 212\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q17-18.jpg\" x=\"0\" y=\"0\" width=\"589\" height=\"212\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m1-q18-p17",
+              "type": "mc",
+              "stem": "What was the height of each brick?",
+              "options": [
+                "8.5 cm",
+                "7 cm",
+                "6.8 cm",
+                "9 cm",
+                "8 cm"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(34 \\div 5 = 6.8\\)cm</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m1-q18-p18",
+              "type": "mc",
+              "stem": "Brett used eight bricks as a base for a new stack.\n\nHow tall will the finished stack be?",
+              "options": [
+                "42.5 cm",
+                "47 cm",
+                "40.8 cm",
+                "54.4 cm",
+                "50.5 cm"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Each layer increases by 1 brick. Hence, there will be 8 layers.</p><p>\\(8 \\times 6.8 = 54.4\\)cm</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": "17-18"
+          }
+        },
+        {
+          "id": "sch-sel-m1-q19",
+          "type": "mc",
+          "stem": "A rectangular prism has dimensions of length 6 cm, height 9 cm and width 12 cm.\nThe prism expanded at a constant rate until the width was 20 cm. If the other dimensions also expanded at the same constant rate, find the volume of the rectangular prism after its expansion.",
+          "options": [
+            "\\(3600\\ cm^3\\)",
+            "\\(3200\\ cm^3\\)",
+            "\\(3000\\ cm^3\\)",
+            "\\(2800\\ cm^3\\)",
+            "\\(3400\\ cm^3\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Width = 12:20 = 3:5</p><p>Length = 9: ? = 3:5</p><p>? = 15</p><p>Height = 6: ? = 3:5</p><p>? = 10</p><p>New dimensions = \\(15 \\times 10 \\times 20\\)</p><p>\\(V = 3000\\ cm^3\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-sel-m1-q20",
+          "type": "mc",
+          "stem": "Seven blocks are removed by drilling holes through the three block faces shaded. How many cube faces are visible?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 204 187\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q20.jpg\" x=\"0\" y=\"0\" width=\"204\" height=\"187\"/></svg>"
+          },
+          "options": [
+            "54",
+            "70",
+            "58",
+            "64",
+            "72"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>24 new faces now on the inside, plus ones visible on outside makes 48 faces</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-sel-m1-q21",
+          "type": "mc",
+          "stem": "Which of these number sentences is not true?",
+          "options": [
+            "\\(\\frac{3}{8}\\times 10 = 3\\frac{3}{4}\\)",
+            "\\(\\frac{5}{6}-\\frac{2}{3}=\\frac{1}{6}\\)",
+            "\\(\\frac{5}{6}+\\frac{5}{8}=\\frac{35}{24}\\)",
+            "\\(\\frac{3}{7}\\div\\frac{7}{12}=\\frac{1}{4}\\)",
+            "\\(\\frac{1}{4}\\div 4=\\frac{1}{16}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{3}{7} \\div \\frac{7}{12} = \\frac{36}{49}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-sel-m1-q22",
+          "type": "mc",
+          "stem": "A man travels 3km north and then turns 90° clockwise. He keeps walking for 6km then he decides to drop by at the post office so he walks 9km west.\n\nIn what direction is he from the starting point?",
+          "options": [
+            "North-East",
+            "South-West",
+            "West",
+            "North-West",
+            "North"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>3km north:</p><p>Turns 90 degrees clockwise then 6km</p><p>Walks 9km west:</p><p>Green arrow is direction he is in from his starting point: North-West</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 773 442\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q22-expl.jpg\" x=\"0\" y=\"0\" width=\"773\" height=\"442\"/></svg>"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-sel-m1-q23",
+          "type": "mc",
+          "stem": "What is the chance of drawing a 1 if there are numbers in a hat which are 0,1,2,3,4,5,6,7,8,9,10,11,12,13 and each digit is separate from each other?",
+          "options": [
+            "\\(33\\frac{1}{3}\\%\\)",
+            "25%",
+            "12.5%",
+            "20%",
+            "40%"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(6/18 = 33\\frac{1}{3}\\%\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-sel-m1-q25",
+          "type": "multipart",
+          "stem": "Questions 24 and 25 use the following information.\n\nAll the residents in Baulkham Hills receive their electricity from two different suppliers, Company A and Company B. The number of customers that the companies supply electricity to is graphed on a quarterly year basis.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1130 424\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q24-25.jpg\" x=\"0\" y=\"0\" width=\"1130\" height=\"424\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m1-q25-p24",
+              "type": "mc",
+              "stem": "What is the total number of customers of electricity in Baulkham Hills?",
+              "options": [
+                "27000",
+                "14000",
+                "25000",
+                "30000",
+                "22000"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Add each of quarters from A and B up. All comes to 27000</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m1-q25-p25",
+              "type": "mc",
+              "stem": "Company B increased their energy pricing and suffered a great loss of customers to Company A. How many customers transferred from Company B to Company A between the 1\\(^{\\text{st}}\\) and 2\\(^{\\text{nd}}\\) quarter?",
+              "options": [
+                "9000",
+                "10000",
+                "14000",
+                "20000",
+                "12000"
+              ],
+              "answer": 4,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Calculate the difference between Q1 and 2 on Company B graph</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": "24-25"
+          }
+        },
+        {
+          "id": "sch-sel-m1-q26",
+          "type": "mc",
+          "stem": "Find the value of \\(\\frac{5}{12}\\times\\frac{9}{15}=\\left(\\frac{7}{16}\\times\\frac{8}{14}\\times Y\\right)\\)\n\n\\(Y\\) stands for",
+          "options": [
+            "\\(\\frac{3}{10}\\)",
+            "\\(\\frac{4}{9}\\)",
+            "\\(\\frac{19}{72}\\)",
+            "1",
+            "2"
+          ],
+          "answer": 3,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 26
+          }
+        },
+        {
+          "id": "sch-sel-m1-q27",
+          "type": "mc",
+          "stem": "A box full of candy has a mass of 670g. The same box with a third of the number of candy has a mass of 270g. What is the mass of box?",
+          "options": [
+            "30g",
+            "70g",
+            "120g",
+            "65g",
+            "85g"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Again, use the options to find the answer. Subtract mass of box each time, then see if the latter weight is a third of the former. The answer here is 70g because 670-70=600g, which is the weight of all the candy, while 270-70=200g, which is the weight of a third of the candy</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-sel-m1-q28",
+          "type": "mc",
+          "stem": "If 20 farmers can sow 2400 seeds in 3 hours, how many seeds can 10 farmers sow in 2 hours?",
+          "options": [
+            "200",
+            "300",
+            "470",
+            "640",
+            "800"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>In 3 hours, 20 farmers sow 2400 seeds. Therefore, 1 farmer sows 120 seeds in 3 hours. In one hour, one farmer sows 40 seeds. Thus, 10 farmers will sow 400 seeds in one hour. In two hours, they'll sow 800 seeds.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 28
+          }
+        },
+        {
+          "id": "sch-sel-m1-q29",
+          "type": "mc",
+          "stem": "Which shape cannot be traced without lifting your pen or retracing over a line?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1012 255\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q29.jpg\" x=\"0\" y=\"0\" width=\"1012\" height=\"255\"/></svg>"
+          },
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "answer": 0,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 29
+          }
+        },
+        {
+          "id": "sch-sel-m1-q30",
+          "type": "mc",
+          "stem": "A pensioner's water bill is \\(\\$50.20\\). She is given a 5% discount. How much must the pensioner actually pay?",
+          "options": [
+            "\\(\\$2.51\\)",
+            "\\(\\$47.64\\)",
+            "\\(\\$47.69\\)",
+            "\\(\\$48.69\\)",
+            "\\(\\$50\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The pensioner gets a discount of \\(\\$2.51\\). Hence, the pensioner actually pays \\(\\$50.20-\\$2.51=\\$47.69\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 30
+          }
+        },
+        {
+          "id": "sch-sel-m1-q31",
+          "type": "mc",
+          "stem": "How many prime numbers are between 50 and 70?",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>53, 59, 61, 67</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 31
+          }
+        },
+        {
+          "id": "sch-sel-m1-q32",
+          "type": "mc",
+          "stem": "How tall would a stack of 20 wooden boxes be?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 859 250\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q32.jpg\" x=\"0\" y=\"0\" width=\"859\" height=\"250\"/></svg>"
+          },
+          "options": [
+            "58 cm",
+            "65 cm",
+            "68.5 cm",
+            "78.5 cm",
+            "81.5 cm"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Difference of 2 boxes gives an additional 7 cm</p><p>Therefore each box adds 3.5cm</p><p>The side is equal to 15 cm</p><p>20 boxes = \\(15 + 19 \\times 3.5 = 81.5\\) cm</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 32
+          }
+        },
+        {
+          "id": "sch-sel-m1-q33",
+          "type": "mc",
+          "stem": "Find the shaded area. (Use \\(\\pi = 3.14\\))",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 284\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q33.jpg\" x=\"0\" y=\"0\" width=\"510\" height=\"284\"/></svg>"
+          },
+          "options": [
+            "30.60",
+            "43.60",
+            "34.75",
+            "35.75",
+            "50.50"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(10 \\times 15 \\times 0.5 - 0.5 \\times 3.14 \\times (10/2)^2 = 35.75\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 33
+          }
+        },
+        {
+          "id": "sch-sel-m1-q34",
+          "type": "mc",
+          "stem": "If the insects in Dennis's insect collection are lined up in groups of 5, there are 2 remaining. If they line up in groups of 4, there are 3 remaining and if they line up in groups of 3 there are none remaining. If there are more than 25 insects but less than 35 insects in Dennis's collection, how many insects are there?",
+          "options": [
+            "26",
+            "27",
+            "32",
+            "33",
+            "35"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(27/3 = 9\\)</p><p>\\(27/5 = 5\\) remainder 2</p><p>\\(27/4 = 6\\) remainder 3</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 34
+          }
+        },
+        {
+          "id": "sch-sel-m1-q35",
+          "type": "mc",
+          "stem": "What is the value of angle \\(x\\)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 518 272\" width=\"100%\" height=\"auto\"><image href=\"/selective/t1-q35.jpg\" x=\"0\" y=\"0\" width=\"518\" height=\"272\"/></svg>"
+          },
+          "options": [
+            "118°",
+            "116°",
+            "112°",
+            "108°",
+            "128°"
+          ],
+          "answer": 2,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 1",
+            "number": 35
+          }
+        }
+      ]
     },
     {
       "topicId": "sch-selective-thinking",
