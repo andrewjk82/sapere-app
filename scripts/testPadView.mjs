@@ -2,7 +2,7 @@
 import assert from 'node:assert';
 import {
   PAGE_W, PAGE_H, fitScale, clampZoom, clampPos, zoomAt, toPageUnits, backingScale,
-  classifyTwoFinger, classifyMultiTap, MAX_ZOOM, MAX_BACKING_UNIT_PX,
+  classifyTwoFinger, classifyMultiTap, pageCentre, viewForCentre, MAX_ZOOM, MAX_BACKING_UNIT_PX,
 } from '../src/utils/padView.js';
 
 let passed = 0;
@@ -83,6 +83,27 @@ test('finger taps: two = undo, three = redo, never a drag / slow press / pencil'
   assert.equal(classifyMultiTap({ fingers: 2, durationMs: 120, maxMovePx: 40 }), null);  // pinch / swipe
   assert.equal(classifyMultiTap({ fingers: 2, durationMs: 900, maxMovePx: 2 }), null);   // resting fingers
   assert.equal(classifyMultiTap({ fingers: 2, durationMs: 100, maxMovePx: 2, stylus: true }), null);
+});
+
+test('the page point in the middle survives a save → restore, also in a different-sized viewport', () => {
+  const size = { w: 900, h: 700 };
+  const centre = { x: 420, y: 560 };
+  const view = viewForCentre(centre, 2.5, size);
+  assert.equal(view.zoom, 2.5);
+  const back = pageCentre(view, size);
+  near(back.x, centre.x, 1e-6); near(back.y, centre.y, 1e-6);
+  // a resized pane keeps the same page point in the middle
+  const bigger = { w: 1100, h: 800 };
+  const moved = pageCentre(viewForCentre(centre, 2.5, bigger), bigger);
+  near(moved.x, centre.x, 1e-6); near(moved.y, centre.y, 1e-6);
+});
+
+test('a centre near the page edge is kept on the page; zoom 1 is the fitted page', () => {
+  const size = { w: 900, h: 700 };
+  const edge = pageCentre(viewForCentre({ x: 5, y: 5 }, 3, size), size);
+  assert.ok(edge.x > 5 && edge.y > 5);            // cannot centre on a point the page cannot scroll to
+  assert.deepEqual(viewForCentre({ x: 100, y: 100 }, 1, size), { zoom: 1, pos: { x: 0, y: 0 } });
+  assert.deepEqual(viewForCentre({ x: 100, y: 100 }, 3, { w: 0, h: 0 }).pos, { x: 0, y: 0 });
 });
 
 console.log(`\npad view: ${passed} passed`);

@@ -35,6 +35,22 @@ export const clampPos = (pos, scale, vw, vh) => ({
   y: clampAxis(pos.y, PAGE_H * scale, vh),
 });
 
+// The page point (page units) in the middle of the viewport for a view = { zoom, pos } in a viewport of `size` = { w, h }.
+export const pageCentre = (view, size) => {
+  const scale = fitScale(size.w, size.h) * view.zoom;
+  if (!(scale > 0)) return { x: PAGE_W / 2, y: PAGE_H / 2 };
+  const pos = clampPos(view.pos, scale, size.w, size.h);
+  return { x: (size.w / 2 - pos.x) / scale, y: (size.h / 2 - pos.y) / scale };
+};
+
+// The view that shows page point `centre` in the middle of a viewport of `size` at `zoom` (kept on the page).
+export const viewForCentre = (centre, zoom, size) => {
+  const z = clampZoom(zoom);
+  const scale = fitScale(size.w, size.h) * z;
+  if (z === 1 || !(scale > 0)) return { zoom: z, pos: { x: 0, y: 0 } };
+  return { zoom: z, pos: clampPos({ x: size.w / 2 - centre.x * scale, y: size.h / 2 - centre.y * scale }, scale, size.w, size.h) };
+};
+
 // Zoom to `nextZoom` keeping the page point under screen point `anchor` (viewport coords) fixed.
 export const zoomAt = ({ zoom, pos }, nextZoom, anchor, fit, vw, vh) => {
   const z = clampZoom(nextZoom);

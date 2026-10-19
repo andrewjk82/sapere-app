@@ -11,11 +11,11 @@ import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/sh
 import { snapAngle } from '../utils/lassoSelect';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
-  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, backingScale, classifyTwoFinger, classifyMultiTap,
+  PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, pageCentre, viewForCentre, backingScale, classifyTwoFinger, classifyMultiTap,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.7-lasso-transform';
+const CANVAS_VERSION = 'v10.8-view-memory';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -229,6 +229,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [view, setViewState] = useState({ zoom: 1, pos: { x: 0, y: 0 } });
   const viewRef = useRef(view);
   const viewSizeRef = useRef(viewSize);
+  const pendingCentreRef = useRef(null);   // a saved view waiting for the viewport to be measured
   const backScaleRef = useRef(1);      // canvas px per page unit currently backing the canvases
   const [backScale, setBackScale] = useState(1);
   // Whole-stroke eraser gesture: { pointerId, last: {x, y}, base: strokes at pointerdown, current: strokes now }.
@@ -498,7 +499,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const measure = (sync) => {
       const { width, height } = el.getBoundingClientRect();
       if (width === 0 || height === 0) return;
-      const update = () => setViewSize((prev) => (prev.w === width && prev.h === height ? prev : { w: width, h: height }));
+      const update = () => {
+        const prev = viewSizeRef.current;
+        if (pendingCentreRef.current) {
+          setView(viewForCentre(pendingCentreRef.current, viewRef.current.zoom, { w: width, h: height }));
+          pendingCentreRef.current = null;
+        } else if (prev.w > 0 && (prev.w !== width || prev.h !== height) && viewRef.current.zoom > SNAP_ZOOM) {
+          // Zoomed in and the pane changed size (rotation, split divider, toolbar): keep the same part of the page in the middle.
+          const centre = pageCentre(viewRef.current, prev);
+          setView(viewForCentre(centre, viewRef.current.zoom, { w: width, h: height }));
+        }
+        setViewSize((p) => (p.w === width && p.h === height ? p : { w: width, h: height }));
+      };
       // flushSync from the observer: the page is rescaled in the same frame the pane changes size (no one-frame lag).
       if (sync) flushSync(update); else update();
     };
@@ -506,7 +518,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     const ro = new ResizeObserver(() => measure(true));
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [setView]);
 
   useEffect(() => {
     const body = document.body;
@@ -1532,7 +1544,14 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       getPagesData: () => {
         const all = [...pagesRef.current];
         all[currentPageRef.current] = getCurrentPageStrokes();
-        return { pages: all, pageTypes: [...pageTypes], currentPage: currentPageRef.current, stickers: all.map((_, i) => stickerPages[i] || []) };
+        const data = { pages: all, pageTypes: [...pageTypes], currentPage: currentPageRef.current, stickers: all.map((_, i) => stickerPages[i] || []) };
+        // Where the reader was looking (only when zoomed in; the fitted page is the default): restored on load.
+        const vs = viewSizeRef.current;
+        if (viewRef.current.zoom > SNAP_ZOOM && vs.w > 0) {
+          const centre = pageCentre(viewRef.current, vs);
+          data.view = { zoom: viewRef.current.zoom, cx: Math.round(centre.x), cy: Math.round(centre.y) };
+        }
+        return data;
       },
       loadPagesData: (data) => {
         if (!Array.isArray(data?.pages) || data.pages.length === 0) return;
@@ -1549,7 +1568,19 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         forceRedrawRef.current = true;
         setStrokes(nextPages[idx]);
         resetHistory();
-        resetView();
+        const saved = data.view;
+        if (saved && Number(saved.zoom) > SNAP_ZOOM && Number.isFinite(saved.cx) && Number.isFinite(saved.cy)) {
+          const vs = viewSizeRef.current;
+          if (vs.w > 0) {
+            setView(viewForCentre({ x: saved.cx, y: saved.cy }, saved.zoom, vs));
+          } else {
+            pendingCentreRef.current = { x: saved.cx, y: saved.cy };
+            setView({ zoom: saved.zoom, pos: { x: 0, y: 0 } });
+          }
+        } else {
+          pendingCentreRef.current = null;
+          resetView();
+        }
       },
       clear: () => {
         resetView();
@@ -1568,7 +1599,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         });
       },
     };
-  }, [currentPage, isGraph, pageTypes, initialIsGraph, stickerPages, resetView]);
+  }, [currentPage, isGraph, pageTypes, initialIsGraph, stickerPages, resetView, setView]);
 
   // Paper (ruled lines / graph grid) drawn with CSS on the page element, scaled with the page.
   const u = cssScale || 1;
