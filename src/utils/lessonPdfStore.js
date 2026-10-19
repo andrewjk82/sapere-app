@@ -34,11 +34,18 @@ const run = async (mode, fn) => {
   });
 };
 
-// → { name, size, blob, updatedAt } | null. Throws when the device storage cannot be read (that is not "no PDF").
+// A student's lesson PDF is either an uploaded file { kind: 'upload', name, size, blob } or a curriculum topic's
+// Drive worksheet { kind: 'drive', topicId, label, url } (its bytes are cached on the device by useWorksheetPdf).
+// → record | null. Throws when the device storage cannot be read (that is not "no PDF").
 export const loadLessonPdf = (studentId) => run('readonly', (store) => store.get(studentId)).then((r) => r || null);
 
 export const saveLessonPdf = (studentId, file) => run('readwrite', (store) => store.put(
-  { name: file.name, size: file.size, blob: file, updatedAt: Date.now() },
+  { kind: 'upload', name: file.name, size: file.size, blob: file, updatedAt: Date.now() },
+  studentId,
+));
+
+export const saveLessonDrivePdf = (studentId, { topicId, label, url }) => run('readwrite', (store) => store.put(
+  { kind: 'drive', topicId, label, url, updatedAt: Date.now() },
   studentId,
 ));
 

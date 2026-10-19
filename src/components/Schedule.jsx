@@ -1663,7 +1663,7 @@ const Schedule = ({ students = [] }) => {
         )}
       </AnimatePresence>
 
-      {lessonSession && <LessonWorkspace session={lessonSession} onClose={() => setLessonSession(null)} />}
+      {lessonSession && <LessonWorkspace session={lessonSession} students={students} onClose={() => setLessonSession(null)} />}
     </div>
   );
 };
