@@ -311,19 +311,19 @@
         {
           "id": "sch-sel-m1-q13",
           "type": "mc",
-          "stem": "Which of the following is NOT a suitable way to solve the following problem?\n\nWhat is 20% of 70%?",
+          "stem": "Which of the following is NOT a suitable way to solve the following problem?\n\nWhat is \\(20\\%\\) of \\(70\\%\\)?",
           "options": [
-            "0.2 × 0.7 = 0.14 = 14%",
-            "\\(\\frac{20}{100}\\times\\frac{70}{100}=\\frac{1400}{10000}=14\\%\\)",
-            "10% of 70% = 7%, 7%÷2 = 14%",
-            "(20 × 70) ÷ (100 × 100) = 14%",
-            "20% × 70% = 14%"
+            "\\(0.2 \\times 0.7 = 0.14 = 14\\%\\)",
+            "\\(\\frac{20}{100} \\times \\frac{70}{100} = \\frac{1400}{10000} = 14\\%\\)",
+            "\\(10\\%\\text{ of } 70\\% = 7\\%,\\ 7\\% \\div 2 = 14\\%\\)",
+            "\\((20 \\times 70) \\div (100 \\times 100) = 14\\%\\)",
+            "\\(20\\% \\times 70\\% = 14\\%\\)"
           ],
           "answer": 2,
           "steps": [
             {
               "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>It should be 7% x 2, not divide</p></div>"
+              "work": "<div style=\"text-align: left;\"><p>To find \\(20\\%\\) of \\(70\\%\\) using benchmarks:</p><p>\\(10\\%\\text{ of } 70\\% = 7\\%\\)</p><p>Since \\(20\\% = 2 \\times 10\\%\\), we must <strong>multiply</strong> by 2:</p><p>\\(7\\% \\times 2 = 14\\%\\)</p><p>Dividing by 2 gives \\(7\\% \\div 2 = 3.5\\%\\), not \\(14\\%\\).</p><p>Therefore, \\(10\\%\\text{ of } 70\\% = 7\\%,\\ 7\\% \\div 2 = 14\\%\\) is <strong>NOT</strong> a suitable method.</p></div>"
             }
           ],
           "meta": {
