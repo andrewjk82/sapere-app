@@ -429,49 +429,49 @@
           "id": "ascham2020e1-q11a",
           "type": "multipart",
           "difficulty": "medium",
-          "stem": "Given \\(a=(3,2)\\) and \\(b=(4,7)\\).",
+          "stem": "Given \\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\).",
           "parts": [
             {
               "id": "ascham2020e1-q11a-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Given \\(a=(3,2)\\) and \\(b=(4,7)\\), find \\(a+b\\) and \\(a-b\\).",
+              "stem": "(i) Find \\(\\underset{\\sim}{a} + \\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{a} - \\underset{\\sim}{b}\\).",
               "options": [
-                "\\((7,9)\\text{ and }(1,5)\\)",
-                "\\((7,9)\\text{ and }(-1,-5)\\)",
-                "\\((7,5)\\text{ and }(-1,-5)\\)",
-                "\\((1,9)\\text{ and }(7,5)\\)"
+                "\\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} 1 \\\\ 5 \\end{pmatrix}\\)",
+                "\\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)",
+                "\\(\\begin{pmatrix} 7 \\\\ 5 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)",
+                "\\(\\begin{pmatrix} 1 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} 7 \\\\ 5 \\end{pmatrix}\\)"
               ],
               "answer": 1,
-              "hint": "Add and subtract matching components separately: combine the first coordinates, then the second coordinates.",
+              "hint": "Add and subtract matching components separately: top components together, then bottom components.",
               "keyPoints": [
                 {
-                  "text": "find \\(a+b\\) and \\(a-b\\)",
-                  "note": "Vector addition and subtraction act component by component."
+                  "text": "find \\(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+                  "note": "Vector addition and subtraction act component by component on column vectors."
                 },
                 {
-                  "text": "\\(a=(3,2)\\) and \\(b=(4,7)\\)",
-                  "note": "Keep the subtraction order as a−b."
+                  "text": "\\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\)",
+                  "note": "Keep the subtraction order as a - b."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Add the first coordinates and then the second coordinates.",
-                  "work": "\\(a+b=(3+4,\\,2+7)=(7,9)\\)",
+                  "explain": "Add corresponding components of the column vectors.",
+                  "work": "\\(\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix}3\\\\2\\end{pmatrix}+\\begin{pmatrix}4\\\\7\\end{pmatrix}=\\begin{pmatrix}3+4\\\\2+7\\end{pmatrix}=\\begin{pmatrix}7\\\\9\\end{pmatrix}\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors a and b from the origin, with their coordinate components\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"v1\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"v2\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M125 190L205 150\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#v1)\"/><path d=\"M125 190L235 75\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#v2)\"/><text x=\"165\" y=\"177\" font-family=\"Arial\" font-size=\"14\" fill=\"#1d4ed8\">a=(3,2)</text><text x=\"208\" y=\"110\" font-family=\"Arial\" font-size=\"14\" fill=\"#c2410c\">b=(4,7)</text><text x=\"105\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#475569\">O</text></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors a and b from the origin\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"v1\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"v2\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M125 190L205 150\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#v1)\"/><path d=\"M125 190L235 75\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#v2)\"/><text x=\"165\" y=\"172\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#1d4ed8\">a</text><path d=\"M165 177 Q168 175 171 177 T177 177\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.2\"/><text x=\"210\" y=\"105\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#c2410c\">b</text><path d=\"M210 110 Q213 108 216 110 T222 110\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"1.2\"/><text x=\"105\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#475569\">O</text></svg>"
                   }
                 },
                 {
-                  "explain": "For a−b, subtract the corresponding components in the same order.",
-                  "work": "\\(a-b=(3-4,\\,2-7)=(-1,-5)\\)"
+                  "explain": "Subtract the corresponding components in the same order.",
+                  "work": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}3\\\\2\\end{pmatrix}-\\begin{pmatrix}4\\\\7\\end{pmatrix}=\\begin{pmatrix}3-4\\\\2-7\\end{pmatrix}=\\begin{pmatrix}-1\\\\-5\\end{pmatrix}\\)"
                 },
                 {
-                  "explain": "Check that each result uses both coordinates and that the subtraction result points in the negative directions.",
-                  "work": "\\(\\boxed{a+b=(7,9),\\quad a-b=(-1,-5)}\\)"
+                  "explain": "State both resulting column vectors.",
+                  "work": "\\(\\boxed{\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix}7\\\\9\\end{pmatrix},\\quad \\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix}-1\\\\-5\\end{pmatrix}}\\)"
                 }
               ],
-              "solution": "Correct answer: \\((7,9)\\text{ and }(-1,-5)\\).",
+              "solution": "Correct answer: \\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\).",
               "timeLimit": 60,
               "xp": 1,
               "meta": {
@@ -483,40 +483,40 @@
               "id": "ascham2020e1-q11a-ii",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(ii) Using the vectors from part (i), find \\((a+b)\\cdot(a-b)\\) and decide whether they are perpendicular.",
+              "stem": "(ii) Hence, find \\((\\underset{\\sim}{a} + \\underset{\\sim}{b}) \\cdot (\\underset{\\sim}{a} - \\underset{\\sim}{b})\\). State if \\(\\underset{\\sim}{a} + \\underset{\\sim}{b}\\) is perpendicular to \\(\\underset{\\sim}{a} - \\underset{\\sim}{b}\\) and justify your answer with a reason.",
               "options": [
-                "\\(-52\\); they are not perpendicular.",
-                "\\(52\\); they are not perpendicular.",
-                "\\(0\\); they are perpendicular.",
-                "\\(-52\\); they are perpendicular."
+                "\\(-52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)",
+                "\\(52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)",
+                "\\(0\\); perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=0\\)",
+                "\\(-52\\); perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)"
               ],
               "answer": 0,
-              "hint": "Use the two vectors from part (i). Their dot product is zero exactly when they are perpendicular.",
+              "hint": "Use the two vectors from part (i). Two non-zero vectors are perpendicular if and only if their dot product equals zero.",
               "keyPoints": [
                 {
-                  "text": "find \\((a+b)\\cdot(a-b)\\)",
-                  "note": "Multiply matching components and add."
+                  "text": "find \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\)",
+                  "note": "Multiply matching components and add to find the scalar product."
                 },
                 {
-                  "text": "whether they are perpendicular",
-                  "note": "A zero dot product is the test for perpendicular vectors."
+                  "text": "is perpendicular to \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
+                  "note": "A zero dot product indicates perpendicularity. Since the dot product is -52 ≠ 0, they are not perpendicular."
                 }
               ],
               "steps": [
                 {
-                  "explain": "Use the results of part (i): a+b=(7,9) and a−b=(−1,−5).",
-                  "work": "\\((a+b)\\cdot(a-b)=(7,9)\\cdot(-1,-5)\\)"
+                  "explain": "Substitute the column vectors from part (i) into the scalar product.",
+                  "work": "\\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=\\begin{pmatrix}7\\\\9\\end{pmatrix}\\cdot\\begin{pmatrix}-1\\\\-5\\end{pmatrix}\\)"
                 },
                 {
                   "explain": "Multiply corresponding components and add the products.",
                   "work": "\\(7(-1)+9(-5)=-7-45=-52\\)"
                 },
                 {
-                  "explain": "The dot product is not zero, so the vectors are not perpendicular.",
-                  "work": "\\(-52\\ne0\\Rightarrow a+b\\not\\perp a-b\\)"
+                  "explain": "The dot product is non-zero, so the vectors are not perpendicular.",
+                  "work": "\\(-52\\ne0\\Rightarrow \\underset{\\sim}{a}+\\underset{\\sim}{b}\\not\\perp \\underset{\\sim}{a}-\\underset{\\sim}{b}\\)"
                 }
               ],
-              "solution": "Correct answer: \\(-52\\); they are not perpendicular..",
+              "solution": "Correct answer: \\(-52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\).",
               "timeLimit": 60,
               "xp": 1,
               "meta": {
@@ -525,11 +525,11 @@
               }
             }
           ],
-          "hint": "Work with the two coordinates separately; keep the order when subtracting.",
+          "hint": "Work with column vectors component by component; keep the order when subtracting.",
           "keyPoints": [
             {
-              "text": "Given \\(a=(3,2)\\) and \\(b=(4,7)\\)",
-              "note": "These ordered pairs list the horizontal and vertical components."
+              "text": "Given \\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\)",
+              "note": "These column vectors list the horizontal and vertical components."
             }
           ],
           "answer": "See the worked answers for each part.",
