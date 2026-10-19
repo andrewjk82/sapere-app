@@ -386,7 +386,7 @@
           ],
           "steps": [
             {
-              "explain": "Use coordinates A=(0,1), B=(1,1), C=(1,0), D=(0,0) to read the directed vectors from the diagram.",
+              "explain": "Sketch rectangle ABCD or assign coordinates, e.g. A=(0,1), B=(1,1), C=(1,0), D=(0,0), to express each directed vector.",
               "work": "\\(\\overrightarrow{AB}=(1,0),\\quad\\overrightarrow{BC}=(0,-1),\\quad\\overrightarrow{DB}=(1,1),\\quad\\overrightarrow{BD}=(-1,-1)\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Rectangle ABCD with vector directions highlighted for this solution step\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><defs><marker id=\"a\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5.2\" refY=\"3\" orient=\"auto\"><path d=\"M0 0L6 3L0 6Z\" fill=\"context-stroke\"/></marker></defs><path d=\"M125 75H295V185H125Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\"><text x=\"108\" y=\"70\">A</text><text x=\"300\" y=\"70\">B</text><text x=\"300\" y=\"203\">C</text><text x=\"107\" y=\"203\">D</text></g><path d=\"M125 75H295\" stroke=\"#ea580c\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/><path d=\"M295 75V185\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/></svg>"
@@ -413,9 +413,6 @@
           "meta": {
             "source": "Ascham 2020 3U Trial",
             "examPaper": "Ascham 2020 3U Trial & Solutions"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Rectangle ABCD with vector directions highlighted for this solution step\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><defs><marker id=\"a\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5.2\" refY=\"3\" orient=\"auto\"><path d=\"M0 0L6 3L0 6Z\" fill=\"context-stroke\"/></marker></defs><path d=\"M125 75H295V185H125Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\"><text x=\"108\" y=\"70\">A</text><text x=\"300\" y=\"70\">B</text><text x=\"300\" y=\"203\">C</text><text x=\"107\" y=\"203\">D</text></g><path d=\"M125 75H295\" stroke=\"#ea580c\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/><path d=\"M295 75V185\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/></svg>"
           }
         }
       ]
