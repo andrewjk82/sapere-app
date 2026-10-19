@@ -166,18 +166,25 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
 
   if (!active) return null;
   const tabs = layout === 'tabs';
-  const record = pdf.record;
-  const isDrive = pdf.status === 'ready' && record?.kind === 'drive';
+  // No PDF chosen on this device yet (the choice is kept per device): open the student's first assigned worksheet, so
+  // it is never a blank screen; picking or moving to another one saves the choice.
+  const autoTopic = pdf.status === 'none' ? (topicPdfs.topics.find((t) => t.assigned) || null) : null;
+  const record = pdf.record || (autoTopic ? { kind: 'drive', topicId: autoTopic.id, label: autoTopic.label, url: autoTopic.url } : null);
+  const status = autoTopic ? 'ready' : pdf.status;
+  const isDrive = status === 'ready' && record?.kind === 'drive';
   // Previous / Next worksheet: along the assigned topics (all of them when none is assigned), in curriculum order.
-  const sequence = topicPdfs.topics.some((t) => t.assigned) ? topicPdfs.topics.filter((t) => t.assigned) : topicPdfs.topics;
+  // A worksheet outside the assigned ones walks the whole curriculum list instead.
+  const assignedSeq = topicPdfs.topics.filter((t) => t.assigned);
+  const inAssigned = isDrive && assignedSeq.some((t) => t.id === record.topicId);
+  const sequence = inAssigned ? assignedSeq : topicPdfs.topics;
   const seqIndex = isDrive ? sequence.findIndex((t) => t.id === record.topicId) : -1;
   const prevTopic = seqIndex > 0 ? sequence[seqIndex - 1] : null;
   const nextTopic = seqIndex >= 0 && seqIndex < sequence.length - 1 ? sequence[seqIndex + 1] : null;
 
   const pdfPane = (
     <div style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', background: '#f1f5f9' }}>
-      {pdf.status === 'ready' && isDrive && <DrivePane key={record.url} record={record} />}
-      {pdf.status === 'ready' && !isDrive && (
+      {status === 'ready' && isDrive && <DrivePane key={record.url} record={record} />}
+      {status === 'ready' && !isDrive && (
         <PdfViewer
           key={pdf.url}
           src={pdf.url}
@@ -186,11 +193,11 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
           style={{ flex: 1, minWidth: 0, minHeight: 0, width: '100%', maxWidth: '100%' }}
         />
       )}
-      {pdf.status === 'loading' && <div style={{ margin: 'auto', color: '#64748b' }}><Loader2 size={22} className="spin" /></div>}
-      {(pdf.status === 'none' || pdf.status === 'error') && (
+      {status === 'loading' && <div style={{ margin: 'auto', color: '#64748b' }}><Loader2 size={22} className="spin" /></div>}
+      {(status === 'none' || status === 'error') && (
         <div style={{ margin: 'auto', textAlign: 'center', padding: 24, color: '#475569' }}>
           <FileText size={40} style={{ color: '#94a3b8' }} />
-          <p style={{ fontWeight: 800, margin: '10px 0 4px' }}>{pdf.status === 'error' ? 'Couldn’t open the saved PDF' : `No PDF for ${active.name} yet`}</p>
+          <p style={{ fontWeight: 800, margin: '10px 0 4px' }}>{status === 'error' ? 'Couldn’t open the saved PDF' : `No PDF for ${active.name} yet`}</p>
           <p style={{ margin: '0 0 14px', fontSize: '0.85rem', color: '#64748b' }}>Pick a worksheet from their curriculum or upload one — it stays on this device and opens every lesson.</p>
           <button type="button" onClick={() => setPicking(true)} style={primaryBtn}><BookOpen size={16} /> Choose PDF</button>
         </div>
@@ -219,7 +226,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         <div style={{ minWidth: 0 }}>
           <div style={{ fontWeight: 900, fontSize: '1rem', color: '#1e1b4b' }}>{students.length > 1 ? 'Group lesson' : active.name}</div>
           <div style={{ fontSize: '0.74rem', fontWeight: 700, color: '#64748b', maxWidth: 320, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-            {session.date}{session.startTime ? ` · ${session.startTime}` : ''}{pdf.status === 'ready' ? ` · ${isDrive ? record.label : record.name}` : ''}
+            {session.date}{session.startTime ? ` · ${session.startTime}` : ''}{status === 'ready' ? ` · ${isDrive ? record.label : record.name}` : ''}
           </div>
         </div>
         {students.length > 1 && (
@@ -239,7 +246,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         {isDrive && (
           <a href={toDriveOpenUrl(record.url)} target="_blank" rel="noopener noreferrer" style={{ ...headBtn, textDecoration: 'none' }}>Open in Drive</a>
         )}
-        {pdf.status === 'ready' && (
+        {status === 'ready' && (
           <button type="button" onClick={() => setPicking(true)} style={headBtn}><FileUp size={15} /> Change PDF</button>
         )}
         {tabs ? (
