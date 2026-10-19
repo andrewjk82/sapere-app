@@ -33,7 +33,7 @@
           ],
           "steps": [
             {
-              "explain": "Use the right triangle in the diagram to relate the rope length r to the horizontal distance x.",
+              "explain": "Use the Pythagorean theorem for the right triangle formed by the 6 m vertical drop and horizontal distance x to relate the rope length r to x.",
               "work": "\\(r^2=x^2+6^2\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Right triangle showing the ferry distance x, vertical separation 6 metres, and rope length r\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M65 205H355\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M105 205V105\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><path d=\"M105 105H305\" stroke=\"#ea580c\" stroke-width=\"2.6\"/><path d=\"M105 205L305 105\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M105 193V205M105 193H117\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"305\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"65\" y=\"154\">6 m</text><text x=\"188\" y=\"96\" fill=\"#c2410c\">x = 28 m</text><text x=\"201\" y=\"145\" fill=\"#1d4ed8\">rope r</text><text x=\"306\" y=\"99\">ferry</text><text x=\"72\" y=\"222\">wharf</text></g><path d=\"M105 205H305\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><text x=\"188\" y=\"193\" font-family=\"Arial\" font-size=\"12\" fill=\"#1d4ed8\">x changes</text></svg>"
@@ -64,9 +64,6 @@
           "meta": {
             "source": "Ascham 2020 3U Trial",
             "examPaper": "Ascham 2020 3U Trial & Solutions"
-          },
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Right triangle showing the ferry distance x, vertical separation 6 metres, and rope length r\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M65 205H355\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M105 205V105\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><path d=\"M105 105H305\" stroke=\"#ea580c\" stroke-width=\"2.6\"/><path d=\"M105 205L305 105\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M105 193V205M105 193H117\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"305\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"65\" y=\"154\">6 m</text><text x=\"188\" y=\"96\" fill=\"#c2410c\">x = 28 m</text><text x=\"201\" y=\"145\" fill=\"#1d4ed8\">rope r</text><text x=\"306\" y=\"99\">ferry</text><text x=\"72\" y=\"222\">wharf</text></g></svg>"
           }
         }
       ]
