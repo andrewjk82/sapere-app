@@ -24270,355 +24270,7 @@
           "difficulty": "medium",
           "stem": "Refer to the diagram. The figure is made from a square and rectangles with:\n- \\(AC = a = 8\\) units\n- \\(CE = a = 8\\) units\n- \\(BC = b = 3\\) units, \\(DE = b = 3\\) units\n\nWhich algebraic representation relates the areas of this diagram to the difference of two squares identity?\n\\(a^2 - b^2 = (a-b)(a+b)\\)",
           "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -1.5,
-                10.2,
-                10.2,
-                -1.5
-              ],
-              "width": 300,
-              "height": 300,
-              "keepaspectratio": true,
-              "elements": [
-                {
-                  "type": "point",
-                  "id": "A_corner",
-                  "coords": [
-                    0,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "C_corner",
-                  "coords": [
-                    8,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "D_corner",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "E_corner",
-                  "coords": [
-                    8,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "A_corner",
-                  "to": "C_corner",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "C_corner",
-                  "to": "E_corner",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "E_corner",
-                  "to": "D_corner",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "D_corner",
-                  "to": "A_corner",
-                  "color": "blue"
-                },
-                {
-                  "type": "point",
-                  "id": "P_0_3",
-                  "coords": [
-                    0,
-                    3
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "P_8_3",
-                  "coords": [
-                    8,
-                    3
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "P_5_0",
-                  "coords": [
-                    5,
-                    0
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "P_5_8",
-                  "coords": [
-                    5,
-                    8
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "segment",
-                  "from": "P_0_3",
-                  "to": "P_8_3",
-                  "color": "blue"
-                },
-                {
-                  "type": "segment",
-                  "from": "P_5_8",
-                  "to": "P_5_0",
-                  "color": "blue"
-                },
-                {
-                  "type": "polygon",
-                  "points": [
-                    "D_corner",
-                    "P_5_0",
-                    "P_5_8",
-                    "A_corner"
-                  ],
-                  "fillColor": "blue",
-                  "fillOpacity": 0.25
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -0.4,
-                    8.2
-                  ],
-                  "content": "A",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    8.2
-                  ],
-                  "content": "B",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    8.4,
-                    8.2
-                  ],
-                  "content": "C",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -0.4,
-                    3
-                  ],
-                  "content": "H",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5.3,
-                    3.3
-                  ],
-                  "content": "J",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    8.4,
-                    3
-                  ],
-                  "content": "D",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    -0.4,
-                    -0.2
-                  ],
-                  "content": "G",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    5,
-                    -0.2
-                  ],
-                  "content": "F",
-                  "fontSize": 16
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    8.4,
-                    -0.2
-                  ],
-                  "content": "E",
-                  "fontSize": 16
-                },
-                {
-                  "type": "point",
-                  "id": "arr_top_a_start",
-                  "coords": [
-                    0.1,
-                    9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_top_a_end",
-                  "coords": [
-                    7.9,
-                    9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_top_b_start",
-                  "coords": [
-                    5.1,
-                    8.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_top_b_end",
-                  "coords": [
-                    7.9,
-                    8.5
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_right_a_start",
-                  "coords": [
-                    9,
-                    7.9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_right_a_end",
-                  "coords": [
-                    9,
-                    3.1
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_right_b_start",
-                  "coords": [
-                    9,
-                    2.9
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "point",
-                  "id": "arr_right_b_end",
-                  "coords": [
-                    9,
-                    0.1
-                  ],
-                  "visible": false
-                },
-                {
-                  "type": "arrow",
-                  "from": "arr_top_a_start",
-                  "to": "arr_top_a_end",
-                  "color": "black",
-                  "bidirectional": true
-                },
-                {
-                  "type": "arrow",
-                  "from": "arr_top_b_start",
-                  "to": "arr_top_b_end",
-                  "color": "black",
-                  "bidirectional": true
-                },
-                {
-                  "type": "arrow",
-                  "from": "arr_right_a_start",
-                  "to": "arr_right_a_end",
-                  "color": "black",
-                  "bidirectional": true
-                },
-                {
-                  "type": "arrow",
-                  "from": "arr_right_b_start",
-                  "to": "arr_right_b_end",
-                  "color": "black",
-                  "bidirectional": true
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    4,
-                    9.3
-                  ],
-                  "content": "a",
-                  "fontSize": 15
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    6.5,
-                    8.8
-                  ],
-                  "content": "b",
-                  "fontSize": 15
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    9.3,
-                    5.5
-                  ],
-                  "content": "a",
-                  "fontSize": 15
-                },
-                {
-                  "type": "text",
-                  "coords": [
-                    9.3,
-                    1.5
-                  ],
-                  "content": "b",
-                  "fontSize": 15
-                }
-              ]
-            }
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 260\" width=\"100%\" height=\"100%\">\n  <rect x=\"1\" y=\"1\" width=\"498\" height=\"258\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  \n  <!-- Header Title -->\n  <text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Difference of Two Squares Area Model</text>\n  <line x1=\"20\" y1=\"34\" x2=\"480\" y2=\"34\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n\n  <!-- LEFT SIDE: SQUARE ACEG WITH CUT-OUT -->\n  <!-- Left Rectangle ABFG (width 100, height 160) -->\n  <rect x=\"75\" y=\"58\" width=\"100\" height=\"160\" fill=\"#3b82f6\" fill-opacity=\"0.25\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">ABFG</text>\n  <text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#1d4ed8\">Area: a(a−b)</text>\n\n  <!-- Top-Right Rectangle BCDJ (width 60, height 100) -->\n  <rect x=\"175\" y=\"58\" width=\"60\" height=\"100\" fill=\"#f59e0b\" fill-opacity=\"0.25\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"205\" y=\"103\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">BCDJ</text>\n  <text x=\"205\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b45309\">Area: b(a−b)</text>\n\n  <!-- Bottom-Right Cut-Out Square JDEF (width 60, height 60) -->\n  <rect x=\"175\" y=\"158\" width=\"60\" height=\"60\" fill=\"#fee2e2\" fill-opacity=\"0.75\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"175\" y1=\"158\" x2=\"235\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"235\" y1=\"158\" x2=\"175\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <rect x=\"180\" y=\"173\" width=\"50\" height=\"28\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.88\"/>\n  <text x=\"205\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Cut-out</text>\n  <text x=\"205\" y=\"199\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n\n  <!-- Outer large square ACEG boundary -->\n  <rect x=\"75\" y=\"58\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n\n  <!-- Vertices labels -->\n  <text x=\"68\" y=\"55\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">A</text>\n  <text x=\"175\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">B</text>\n  <text x=\"242\" y=\"55\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">C</text>\n  <text x=\"242\" y=\"162\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">D</text>\n  <text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">E</text>\n  <text x=\"175\" y=\"233\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">F</text>\n  <text x=\"68\" y=\"224\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">G</text>\n  <text x=\"68\" y=\"162\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">H</text>\n  <text x=\"171\" y=\"154\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">J</text>\n\n  <!-- Dimensions labels on Left square -->\n  <!-- Top: AB = 5, BC = 3 -->\n  <text x=\"125\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"205\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#d97706\">b = 3</text>\n  \n  <!-- Right side: CD = 5, DE = 3 -->\n  <text x=\"242\" y=\"108\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#d97706\">a − b = 5</text>\n  <text x=\"242\" y=\"190\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Bottom: GF = 5, FE = 3 -->\n  <text x=\"125\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">a − b = 5</text>\n  <text x=\"205\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Left: AH = 5, HG = 3 -->\n  <text x=\"66\" y=\"108\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"66\" y=\"190\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">b = 3</text>\n\n  <!-- RIGHT SIDE -->\n  \n    <!-- Summary card on right -->\n    <rect x=\"295\" y=\"48\" width=\"185\" height=\"195\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"387\" y=\"74\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">Area Subtraction</text>\n    <line x1=\"310\" y1=\"84\" x2=\"465\" y2=\"84\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    \n    <!-- Large Square -->\n    <rect x=\"310\" y=\"98\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"#2563eb\" stroke-width=\"1.2\"/>\n    <text x=\"330\" y=\"108\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Large Square ACEG:</text>\n    <text x=\"330\" y=\"124\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">a² = 8² = 64</text>\n    \n    <!-- Cut-out Square -->\n    <rect x=\"310\" y=\"142\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.2\" stroke-dasharray=\"2 2\"/>\n    <text x=\"330\" y=\"152\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Cut-out Square JDEF:</text>\n    <text x=\"330\" y=\"168\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n    \n    <line x1=\"310\" y1=\"182\" x2=\"465\" y2=\"182\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <text x=\"387\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\">Remaining L-Shape Area:</text>\n    <text x=\"387\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\">a² − b² = 64 − 9 = 55</text>\n    \n</svg>"
           },
           "options": [
             "\\(8^2 - 3^2 = (8-3)(8+3) = 55\\)",
@@ -24628,23 +24280,46 @@
           ],
           "answer": 0,
           "hint": "Compare the area of the large square minus the small square to the product of its factors.",
-          "solution": "0",
+          "solution": "Correct answer: \\(8^2 - 3^2 = (8-3)(8+3) = 55\\).",
           "steps": [
             {
-              "explain": "Relate the total area of the square minus the small square to the remaining regions.",
-              "work": "\\(a^2 - b^2 = \\text{area of square } ACEG - \\text{area of square } JDEF\\)"
+              "explain": "Subtract the cut-out square area from the large square area. The large square \\(ACEG\\) has side length \\(a = 8\\) (area \\(a^2 = 8^2 = 64\\)), and the removed corner square \\(JDEF\\) has side length \\(b = 3\\) (area \\(b^2 = 3^2 = 9\\)).",
+              "work": "\\(a^2 - b^2 = 8^2 - 3^2 = 64 - 9 = 55\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 260\" width=\"100%\" height=\"100%\">\n  <rect x=\"1\" y=\"1\" width=\"498\" height=\"258\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  \n  <!-- Header Title -->\n  <text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Step 1: Large Square Area − Cut-out Square Area</text>\n  <line x1=\"20\" y1=\"34\" x2=\"480\" y2=\"34\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n\n  <!-- LEFT SIDE: SQUARE ACEG WITH CUT-OUT -->\n  <!-- Left Rectangle ABFG (width 100, height 160) -->\n  <rect x=\"75\" y=\"58\" width=\"100\" height=\"160\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">ABFG</text>\n  <text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#1d4ed8\">Area: a(a−b)</text>\n\n  <!-- Top-Right Rectangle BCDJ (width 60, height 100) -->\n  <rect x=\"175\" y=\"58\" width=\"60\" height=\"100\" fill=\"#f59e0b\" fill-opacity=\"0.2\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"205\" y=\"103\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">BCDJ</text>\n  <text x=\"205\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b45309\">Area: b(a−b)</text>\n\n  <!-- Bottom-Right Cut-Out Square JDEF (width 60, height 60) -->\n  <rect x=\"175\" y=\"158\" width=\"60\" height=\"60\" fill=\"#fee2e2\" fill-opacity=\"0.75\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"175\" y1=\"158\" x2=\"235\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"235\" y1=\"158\" x2=\"175\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <rect x=\"180\" y=\"173\" width=\"50\" height=\"28\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.88\"/>\n  <text x=\"205\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Cut-out</text>\n  <text x=\"205\" y=\"199\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n\n  <!-- Outer large square ACEG boundary -->\n  <rect x=\"75\" y=\"58\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n\n  <!-- Vertices labels -->\n  <text x=\"68\" y=\"55\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">A</text>\n  <text x=\"175\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">B</text>\n  <text x=\"242\" y=\"55\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">C</text>\n  <text x=\"242\" y=\"162\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">D</text>\n  <text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">E</text>\n  <text x=\"175\" y=\"233\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">F</text>\n  <text x=\"68\" y=\"224\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">G</text>\n  <text x=\"68\" y=\"162\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">H</text>\n  <text x=\"171\" y=\"154\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">J</text>\n\n  <!-- Dimensions labels on Left square -->\n  <!-- Top: AB = 5, BC = 3 -->\n  <text x=\"125\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"205\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#d97706\">b = 3</text>\n  \n  <!-- Right side: CD = 5, DE = 3 -->\n  <text x=\"242\" y=\"108\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#d97706\">a − b = 5</text>\n  <text x=\"242\" y=\"190\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Bottom: GF = 5, FE = 3 -->\n  <text x=\"125\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">a − b = 5</text>\n  <text x=\"205\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Left: AH = 5, HG = 3 -->\n  <text x=\"66\" y=\"108\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"66\" y=\"190\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">b = 3</text>\n\n  <!-- RIGHT SIDE -->\n  \n    <!-- Summary card on right -->\n    <rect x=\"295\" y=\"48\" width=\"185\" height=\"195\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"387\" y=\"74\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">Area Subtraction</text>\n    <line x1=\"310\" y1=\"84\" x2=\"465\" y2=\"84\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    \n    <!-- Large Square -->\n    <rect x=\"310\" y=\"98\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"#2563eb\" stroke-width=\"1.2\"/>\n    <text x=\"330\" y=\"108\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Large Square ACEG:</text>\n    <text x=\"330\" y=\"124\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\">a² = 8² = 64</text>\n    \n    <!-- Cut-out Square -->\n    <rect x=\"310\" y=\"142\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#fee2e2\" stroke=\"#ef4444\" stroke-width=\"1.2\" stroke-dasharray=\"2 2\"/>\n    <text x=\"330\" y=\"152\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#334155\">Cut-out Square JDEF:</text>\n    <text x=\"330\" y=\"168\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n    \n    <line x1=\"310\" y1=\"182\" x2=\"465\" y2=\"182\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <text x=\"387\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\">Remaining L-Shape Area:</text>\n    <text x=\"387\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#16a34a\">a² − b² = 64 − 9 = 55</text>\n    \n</svg>"
+              }
             },
             {
-              "explain": "Observe that removing the small square JDEF leaves the shaded area ABFG and rectangle BCDJ.",
-              "work": "\\(a^2 - b^2 = a(a-b) + b(a-b) = (a-b)(a+b)\\)"
+              "explain": "Split the remaining L-shaped region into two rectangles sharing a common dimension \\(a - b = 8 - 3 = 5\\):\n- Rectangle \\(ABFG\\) (left): width \\(a - b = 5\\), height \\(a = 8\\) \\(\\to\\) \\(\\text{Area} = 8 \\times 5 = 40\\)\n- Rectangle \\(BCDJ\\) (top-right): width \\(b = 3\\), height \\(a - b = 5\\) \\(\\to\\) \\(\\text{Area} = 3 \\times 5 = 15\\)",
+              "work": "\\(a^2 - b^2 = a(a - b) + b(a - b) = 8(5) + 3(5) = 40 + 15 = 55\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 260\" width=\"100%\" height=\"100%\">\n  <rect x=\"1\" y=\"1\" width=\"498\" height=\"258\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  \n  <!-- Header Title -->\n  <text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Step 2: Split Remaining Area into 2 Rectangles</text>\n  <line x1=\"20\" y1=\"34\" x2=\"480\" y2=\"34\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n\n  <!-- LEFT SIDE: SQUARE ACEG WITH CUT-OUT -->\n  <!-- Left Rectangle ABFG (width 100, height 160) -->\n  <rect x=\"75\" y=\"58\" width=\"100\" height=\"160\" fill=\"#3b82f6\" fill-opacity=\"0.35\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">ABFG</text>\n  <text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#1d4ed8\">8 × 5 = 40</text>\n\n  <!-- Top-Right Rectangle BCDJ (width 60, height 100) -->\n  <rect x=\"175\" y=\"58\" width=\"60\" height=\"100\" fill=\"#f59e0b\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"205\" y=\"103\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">BCDJ</text>\n  <text x=\"205\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b45309\">3 × 5 = 15</text>\n\n  <!-- Bottom-Right Cut-Out Square JDEF (width 60, height 60) -->\n  <rect x=\"175\" y=\"158\" width=\"60\" height=\"60\" fill=\"#fee2e2\" fill-opacity=\"0.75\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"175\" y1=\"158\" x2=\"235\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"235\" y1=\"158\" x2=\"175\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <rect x=\"180\" y=\"173\" width=\"50\" height=\"28\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.88\"/>\n  <text x=\"205\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Cut-out</text>\n  <text x=\"205\" y=\"199\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n\n  <!-- Outer large square ACEG boundary -->\n  <rect x=\"75\" y=\"58\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n\n  <!-- Vertices labels -->\n  <text x=\"68\" y=\"55\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">A</text>\n  <text x=\"175\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">B</text>\n  <text x=\"242\" y=\"55\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">C</text>\n  <text x=\"242\" y=\"162\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">D</text>\n  <text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">E</text>\n  <text x=\"175\" y=\"233\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">F</text>\n  <text x=\"68\" y=\"224\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">G</text>\n  <text x=\"68\" y=\"162\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">H</text>\n  <text x=\"171\" y=\"154\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">J</text>\n\n  <!-- Dimensions labels on Left square -->\n  <!-- Top: AB = 5, BC = 3 -->\n  <text x=\"125\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"205\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#d97706\">b = 3</text>\n  \n  <!-- Right side: CD = 5, DE = 3 -->\n  <text x=\"242\" y=\"108\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#d97706\">a − b = 5</text>\n  <text x=\"242\" y=\"190\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Bottom: GF = 5, FE = 3 -->\n  <text x=\"125\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">a − b = 5</text>\n  <text x=\"205\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Left: AH = 5, HG = 3 -->\n  <text x=\"66\" y=\"108\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"66\" y=\"190\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">b = 3</text>\n\n  <!-- RIGHT SIDE -->\n  \n    <!-- Step 2: Sum of two rectangles -->\n    <rect x=\"295\" y=\"48\" width=\"185\" height=\"195\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"387\" y=\"74\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">Two Rectangles</text>\n    <line x1=\"310\" y1=\"84\" x2=\"465\" y2=\"84\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n\n    <rect x=\"310\" y=\"98\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.35\" stroke=\"#2563eb\" stroke-width=\"1.2\"/>\n    <text x=\"330\" y=\"108\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Rectangle ABFG (Left):</text>\n    <text x=\"330\" y=\"123\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">a(a − b) = 8 × 5 = 40</text>\n\n    <rect x=\"310\" y=\"142\" width=\"12\" height=\"12\" rx=\"2\" fill=\"#f59e0b\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n    <text x=\"330\" y=\"152\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">Rectangle BCDJ (Top-R):</text>\n    <text x=\"330\" y=\"167\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">b(a − b) = 3 × 5 = 15</text>\n\n    <line x1=\"310\" y1=\"182\" x2=\"465\" y2=\"182\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <text x=\"387\" y=\"202\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\">Combined Remaining Area:</text>\n    <text x=\"387\" y=\"222\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#16a34a\">Sum = 40 + 15 = 55</text>\n    \n</svg>"
+              }
             },
             {
-              "explain": "Substitute the numerical values.",
-              "work": "\\(8^2 - 3^2 = (8-3)(8+3) = 5 \\times 11 = 55\\)"
+              "explain": "Rearrange the two rectangles into a single continuous rectangle. Since both rectangles share the same side length of \\(a - b = 5\\), rectangle \\(BCDJ\\) can be attached adjacent to rectangle \\(ABFG\\), forming a single large rectangle with:\n- Width \\(= a - b = 8 - 3 = 5\\)\n- Total Height \\(= a + b = 8 + 3 = 11\\)\n\nTherefore, the total area is \\((a - b)(a + b) = 5 \\times 11 = 55\\), demonstrating geometrically that \\(a^2 - b^2 = (a - b)(a + b)\\).",
+              "work": "\\(8^2 - 3^2 = (8 - 3)(8 + 3) = 5 \\times 11 = 55\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 260\" width=\"100%\" height=\"100%\">\n  <rect x=\"1\" y=\"1\" width=\"498\" height=\"258\" rx=\"12\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n  \n  <!-- Header Title -->\n  <text x=\"250\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Step 3: Rearrange into One Rectangle of (a−b) × (a+b)</text>\n  <line x1=\"20\" y1=\"34\" x2=\"480\" y2=\"34\" stroke=\"#e2e8f0\" stroke-width=\"1.2\"/>\n\n  <!-- LEFT SIDE: SQUARE ACEG WITH CUT-OUT -->\n  <!-- Left Rectangle ABFG (width 100, height 160) -->\n  <rect x=\"75\" y=\"58\" width=\"100\" height=\"160\" fill=\"#3b82f6\" fill-opacity=\"0.25\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n  <text x=\"125\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1d4ed8\">ABFG</text>\n  <text x=\"125\" y=\"148\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#1d4ed8\">8 × 5 = 40</text>\n\n  <!-- Top-Right Rectangle BCDJ (width 60, height 100) -->\n  <rect x=\"175\" y=\"58\" width=\"60\" height=\"100\" fill=\"#f59e0b\" fill-opacity=\"0.25\" stroke=\"#d97706\" stroke-width=\"1.8\"/>\n  <text x=\"205\" y=\"103\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\">BCDJ</text>\n  <text x=\"205\" y=\"118\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b45309\">3 × 5 = 15</text>\n\n  <!-- Bottom-Right Cut-Out Square JDEF (width 60, height 60) -->\n  <rect x=\"175\" y=\"158\" width=\"60\" height=\"60\" fill=\"#fee2e2\" fill-opacity=\"0.75\" stroke=\"#ef4444\" stroke-width=\"1.8\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"175\" y1=\"158\" x2=\"235\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <line x1=\"235\" y1=\"158\" x2=\"175\" y2=\"218\" stroke=\"#f87171\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n  <rect x=\"180\" y=\"173\" width=\"50\" height=\"28\" rx=\"4\" fill=\"#ffffff\" fill-opacity=\"0.88\"/>\n  <text x=\"205\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\">Cut-out</text>\n  <text x=\"205\" y=\"199\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#dc2626\">b² = 3² = 9</text>\n\n  <!-- Outer large square ACEG boundary -->\n  <rect x=\"75\" y=\"58\" width=\"160\" height=\"160\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/>\n\n  <!-- Vertices labels -->\n  <text x=\"68\" y=\"55\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">A</text>\n  <text x=\"175\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">B</text>\n  <text x=\"242\" y=\"55\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">C</text>\n  <text x=\"242\" y=\"162\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">D</text>\n  <text x=\"242\" y=\"224\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">E</text>\n  <text x=\"175\" y=\"233\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">F</text>\n  <text x=\"68\" y=\"224\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">G</text>\n  <text x=\"68\" y=\"162\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">H</text>\n  <text x=\"171\" y=\"154\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1e293b\">J</text>\n\n  <!-- Dimensions labels on Left square -->\n  <!-- Top: AB = 5, BC = 3 -->\n  <text x=\"125\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"205\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#d97706\">b = 3</text>\n  \n  <!-- Right side: CD = 5, DE = 3 -->\n  <text x=\"242\" y=\"108\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#d97706\">a − b = 5</text>\n  <text x=\"242\" y=\"190\" text-anchor=\"start\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Bottom: GF = 5, FE = 3 -->\n  <text x=\"125\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">a − b = 5</text>\n  <text x=\"205\" y=\"234\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#dc2626\">b = 3</text>\n\n  <!-- Left: AH = 5, HG = 3 -->\n  <text x=\"66\" y=\"108\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#2563eb\">a − b = 5</text>\n  <text x=\"66\" y=\"190\" text-anchor=\"end\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\">b = 3</text>\n\n  <!-- RIGHT SIDE -->\n  \n    <!-- Step 3: Rearranged into one single rectangle of (a-b) by (a+b) -->\n    <rect x=\"290\" y=\"48\" width=\"195\" height=\"195\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"387\" y=\"65\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#16a34a\">Rearranged Rectangle</text>\n    <line x1=\"305\" y1=\"71\" x2=\"470\" y2=\"71\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    \n    <!-- Dimension top: Width: a - b = 5 -->\n    <text x=\"365\" y=\"86\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">Width: a − b = 5</text>\n    \n    <!-- Joined single rectangle: width 54 (a-b = 5), height 104 (a+b = 11) -->\n    <!-- Part 1 (ABFG: 54 x 74, representing 8 units) -->\n    <rect x=\"338\" y=\"92\" width=\"54\" height=\"74\" fill=\"#3b82f6\" fill-opacity=\"0.35\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <text x=\"365\" y=\"132\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1d4ed8\">8 × 5 = 40</text>\n    \n    <!-- Part 2 (BCDJ attached below: 54 x 30, representing 3 units) -->\n    <rect x=\"338\" y=\"166\" width=\"54\" height=\"30\" fill=\"#f59e0b\" fill-opacity=\"0.35\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n    <text x=\"365\" y=\"185\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#b45309\">3 × 5 = 15</text>\n    \n    <!-- Right side height marks -->\n    <line x1=\"398\" y1=\"92\" x2=\"404\" y2=\"92\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n    <line x1=\"398\" y1=\"166\" x2=\"404\" y2=\"166\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n    <line x1=\"398\" y1=\"196\" x2=\"404\" y2=\"196\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n    <line x1=\"401\" y1=\"92\" x2=\"401\" y2=\"196\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n    <text x=\"408\" y=\"131\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#1d4ed8\">8</text>\n    <text x=\"408\" y=\"183\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#b45309\">3</text>\n    <text x=\"424\" y=\"146\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"700\" fill=\"#16a34a\">Total Height</text>\n    <text x=\"424\" y=\"158\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#16a34a\">a+b = 11</text>\n\n    <text x=\"387\" y=\"214\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Area = (a − b)(a + b)</text>\n    <text x=\"387\" y=\"231\" text-anchor=\"middle\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#16a34a\">5 × 11 = 55</text>\n    \n</svg>"
+              }
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 2,
+          "keyPoints": [
+            {
+              "text": "\\(a^2 - b^2 = (a - b)(a + b)\\)",
+              "note": "Difference of Two Squares identity relates the difference in square areas to the product of sum and difference."
+            },
+            {
+              "text": "Area subtraction: \\(8^2 - 3^2 = 64 - 9 = 55\\)",
+              "note": "Removing the corner square of side 3 from the large square of side 8 leaves an L-shaped area of 55."
+            },
+            {
+              "text": "Rearrangement: \\(5 \\times (8 + 3) = 5 \\times 11 = 55\\)",
+              "note": "Joining the two remaining rectangles along their common width of 5 forms a single rectangle of (a - b) by (a + b)."
+            }
+          ]
         },
         {
           "id": "willoughby2019-s3-q1d",
