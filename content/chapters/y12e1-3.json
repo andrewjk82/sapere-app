@@ -14,17 +14,17 @@
           "difficulty": "medium",
           "stem": "The graph of \\(y=\\cos^{-1}(2x)\\) is dilated horizontally by a factor of 4 and then translated vertically by 3 units. What is its new equation?",
           "options": [
-            "\\(y=\\cos^{-1}(2x/4+3)\\)",
-            "\\(y=\\cos^{-1}(2x/4)+3\\)",
+            "\\(y=\\cos^{-1}\\left(\\frac{2x}{4}+3\\right)\\)",
+            "\\(y=\\cos^{-1}\\left(\\frac{2x}{4}\\right)+3\\)",
             "\\(y=\\cos^{-1}(8x)+3\\)",
             "\\(y=\\cos^{-1}(8x+3)\\)"
           ],
           "answer": 1,
-          "hint": "A horizontal dilation by factor 4 replaces x by x/4 in the entire original function. Add 3 outside the function for the vertical translation.",
+          "hint": "A horizontal dilation by factor 4 replaces \\(x\\) with \\(\\frac{x}{4}\\) in the original function. Add 3 outside the function for the vertical translation.",
           "keyPoints": [
             {
               "text": "dilated horizontally by a factor of 4",
-              "note": "Replace x by x/4 everywhere in the original function."
+              "note": "Replace \\(x\\) with \\(\\frac{x}{4}\\) everywhere in the original function."
             },
             {
               "text": "translated vertically by 3 units",
@@ -33,19 +33,19 @@
           ],
           "steps": [
             {
-              "explain": "Write the original function as f(x)=cos⁻¹(2x). A horizontal dilation by 4 gives f(x/4).",
-              "work": "\\(f(x/4)=\\cos^{-1}(2\\cdot\\frac{x}{4})\\)"
+              "explain": "Write the original function as \\(f(x)=\\cos^{-1}(2x)\\). A horizontal dilation by factor 4 replaces \\(x\\) with \\(\\frac{x}{4}\\), giving \\(f\\left(\\frac{x}{4}\\right)\\).",
+              "work": "\\(f\\left(\\frac{x}{4}\\right)=\\cos^{-1}\\left(2\\cdot\\frac{x}{4}\\right)=\\cos^{-1}\\left(\\frac{2x}{4}\\right)\\)"
             },
             {
-              "explain": "Simplify the input and then shift the output up by 3.",
-              "work": "\\(y=f(x/4)+3=\\cos^{-1}(\\frac{2x}{4})+3\\)"
+              "explain": "Translate vertically by 3 units by adding 3 to the output of the function.",
+              "work": "\\(y=f\\left(\\frac{x}{4}\\right)+3=\\cos^{-1}\\left(\\frac{2x}{4}\\right)+3\\)"
             },
             {
-              "explain": "The horizontal factor changes the input; the vertical translation is outside the inverse-cosine function.",
-              "work": "\\(\\boxed{y=\\cos^{-1}(\\frac{2x}{4})+3}\\)"
+              "explain": "The horizontal factor changes the input inside the function, while the vertical translation is added outside.",
+              "work": "\\(\\boxed{y=\\cos^{-1}\\left(\\frac{2x}{4}\\right)+3}\\)"
             }
           ],
-          "solution": "Correct answer: \\(y=\\cos^{-1}(2x/4)+3\\).",
+          "solution": "Correct answer: \\(y=\\cos^{-1}\\left(\\frac{2x}{4}\\right)+3\\).",
           "timeLimit": 60,
           "xp": 1,
           "meta": {
