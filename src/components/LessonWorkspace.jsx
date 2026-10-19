@@ -35,19 +35,25 @@ const DrivePane = ({ record }) => {
 
 // Pick the student's PDF: a worksheet from their curriculum, or a file from this device.
 const PdfPicker = ({ student, profile, onPickTopic, onUpload, onClose }) => {
-  const [state, setState] = useState({ status: 'loading', topics: [] });
+  // The student's year is `assignedYear` (a list); older profiles only have `year` / `level`.
+  const hasYear = (Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear]).some(Boolean);
+  const idsKey = curriculumDocIdsForProfile(hasYear || !profile ? (profile || {}) : { ...profile, assignedYear: profile.year || profile.level }).join('|');
+  const [loaded, setLoaded] = useState({ key: null, status: 'loading', topics: [] });
   useEffect(() => {
+    if (!idsKey) return undefined;
     let cancelled = false;
-    const ids = curriculumDocIdsForProfile(profile || {});
-    Promise.all(ids.map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null)))
+    Promise.all(idsKey.split('|').map((id) => getDoc(doc(db, 'curriculum', id)).catch(() => null)))
       .then((snaps) => {
         if (cancelled) return;
         const docs = snaps.filter((s) => s?.exists()).map((s) => s.data());
-        setState({ status: 'ready', topics: listTopicPdfs(docs, profile || {}) });
+        setLoaded({ key: idsKey, status: 'ready', topics: listTopicPdfs(docs, profile || {}) });
       })
-      .catch(() => { if (!cancelled) setState({ status: 'error', topics: [] }); });
+      .catch(() => { if (!cancelled) setLoaded({ key: idsKey, status: 'error', topics: [] }); });
     return () => { cancelled = true; };
-  }, [profile]);
+  }, [idsKey, profile]);
+  const ids = idsKey ? idsKey.split('|') : [];
+  const state = !idsKey ? { status: 'ready', topics: [], ids }
+    : loaded.key === idsKey ? { ...loaded, ids } : { status: 'loading', topics: [], ids };
 
   const assigned = state.topics.filter((t) => t.assigned);
   const rest = state.topics.filter((t) => !t.assigned);
@@ -73,7 +79,7 @@ const PdfPicker = ({ student, profile, onPickTopic, onUpload, onClose }) => {
         <div style={{ flex: 1, minHeight: 0, overflowY: 'auto', padding: '6px 10px 14px' }}>
           {state.status === 'loading' && <div style={{ padding: 20, textAlign: 'center', color: '#64748b' }}><Loader2 size={20} className="spin" /></div>}
           {state.status === 'error' && <div style={{ padding: 16, color: '#b45309', fontWeight: 700, fontSize: '0.85rem' }}>Couldn’t load the curriculum. You can still upload a PDF.</div>}
-          {state.status === 'ready' && state.topics.length === 0 && <div style={{ padding: 16, color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>This student’s curriculum has no worksheet PDFs yet.</div>}
+          {state.status === 'ready' && state.topics.length === 0 && <div style={{ padding: 16, color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>{state.ids.length === 0 ? `No year is set for ${student.name}, so there is no curriculum to list.` : `No worksheet PDFs found in ${state.ids.join(', ').replaceAll('_', ' ')}.`}</div>}
           {assigned.length > 0 && <>{heading('Assigned to this student')}{assigned.map(row)}</>}
           {rest.length > 0 && <>{heading(assigned.length ? 'Other topics' : 'Curriculum topics')}{rest.map(row)}</>}
         </div>
