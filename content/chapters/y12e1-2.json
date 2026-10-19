@@ -1,0 +1,58 @@
+{
+  "chapterId": "y12e1-2",
+  "title": "Chapter 2: Mathematical induction",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-2A",
+      "code": "2A",
+      "title": "Using mathematical induction for series",
+      "questions": [
+        {
+          "id": "ascham2020e1-q13a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Prove by mathematical induction that \\(a+ar+ar^2+\\cdots+ar^n=\\frac{a(r^{n+1}-1)}{r-1}\\) for every integer \\(n\\ge1\\), where \\(r\\ne1\\).",
+          "answer": "Base case n=1: LHS = a+ar = a(r+1) = a(r²−1)/(r−1), so the statement holds. Assume it holds for n=k: a+ar+…+ar^k = a(r^(k+1)−1)/(r−1). Then for n=k+1, add ar^(k+1) to both sides: a(r^(k+1)−1)/(r−1)+ar^(k+1) = a(r^(k+2)−1)/(r−1). This is the required formula for k+1, so the result holds for all n≥1 by induction.",
+          "hint": "Check the base case first. Then assume the formula for n=k and add exactly the next term, ar^(k+1), to reach the formula for n=k+1.",
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Show a base case, an induction assumption, and the k+1 step."
+            },
+            {
+              "text": "Prove by mathematical induction",
+              "note": "In the inductive step, the next term after ar^k is ar^(k+1)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Base case: substitute n=1 on both sides and simplify the geometric expression.",
+              "work": "\\(a+ar=a(1+r)=a\\frac{r^2-1}{r-1}\\quad(r\\ne1)\\)"
+            },
+            {
+              "explain": "Induction assumption: suppose the result is true for n=k.",
+              "work": "\\(a+ar+\\cdots+ar^k=\\frac{a(r^{k+1}-1)}{r-1}\\)"
+            },
+            {
+              "explain": "For n=k+1, add the next term ar^(k+1) to the assumed sum and combine over the common denominator.",
+              "work": "\\(a+ar+\\cdots+ar^k+ar^{k+1}=\\frac{a(r^{k+1}-1)+ar^{k+1}(r-1)}{r-1}\\)"
+            },
+            {
+              "explain": "Simplify the numerator to obtain the required formula at k+1. Since both the base case and inductive step hold, the identity is true for every n≥1.",
+              "work": "\\(\\frac{a(r^{k+1}-1)+ar^{k+2}-ar^{k+1}}{r-1}=\\frac{a(r^{k+2}-1)}{r-1}\\)"
+            }
+          ],
+          "solution": "Base case n=1: LHS = a+ar = a(r+1) = a(r²−1)/(r−1), so the statement holds. Assume it holds for n=k: a+ar+…+ar^k = a(r^(k+1)−1)/(r−1). Then for n=k+1, add ar^(k+1) to both sides: a(r^(k+1)−1)/(r−1)+ar^(k+1) = a(r^(k+2)−1)/(r−1). This is the required formula for k+1, so the result holds for all n≥1 by induction.",
+          "manual": true,
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial Q13(a)",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
+          }
+        }
+      ]
+    }
+  ]
+}

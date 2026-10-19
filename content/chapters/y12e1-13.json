@@ -56,6 +56,63 @@
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 480 360\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"480\" height=\"360\" fill=\"white\"/><path d=\"M50 20H390M50 50H390M50 79H390M50 109H390M50 138H390M50 168H390M50 197H390M50 227H390M50 256H390M50 286H390M50 315H390M50 20V315M84 20V315M118 20V315M152 20V315M186 20V315M220 20V315M254 20V315M288 20V315M322 20V315M356 20V315M390 20V315\" stroke=\"#e2e8f0\"/><line x1=\"50\" y1=\"168\" x2=\"390\" y2=\"168\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"315\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"397\" y=\"162\">x</text><text x=\"226\" y=\"18\">y</text><g stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M78 49l13 -4M112 51l13 -3M146 55l12 -2M180 62h10M214 70l2 10M248 77l-2 12M282 82l-4 12M316 90l-5 11M350 96l-5 12M384 102l-5 12M78 79l11 -3M112 83l11 -2M146 90l10 1M180 98l4 8M214 109l-1 11M248 115l-4 11M282 122l-6 11M316 128l-6 10M350 134l-5 11M384 139l-5 12M78 108l10 -2M112 115l9 2M146 125l6 5M180 137l1 9M214 148l-2 11M248 154l-5 10M282 160l-6 10M316 166l-7 9M350 171l-6 10M384 176l-6 10M78 138l9 1M112 149l7 5M146 162l3 8M180 174l-1 10M214 186l-3 10M248 193l-5 9M282 198l-6 9M316 204l-6 9M350 210l-6 9M384 216l-6 9M78 168l8 4M112 180l5 7M146 193l2 9M180 205l-1 9M214 217l-3 8M248 225l-5 8M282 230l-6 8M316 236l-7 8M350 242l-6 8M384 248l-6 8M78 197l7 5M112 210l5 7M146 223l2 8M180 235l-1 8M214 247l-3 7M248 254l-5 7M282 260l-6 7M316 266l-7 7M350 272l-6 7M384 278l-6 7\"/></g></svg>"
           }
+        },
+        {
+          "id": "ascham2020e1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The slope field shown could represent which differential equation?",
+          "options": [
+            "\\(\\frac{dy}{dx}=\\frac{2y}{x}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{2x}{y}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{y^2}{x^2}\\)",
+            "\\(\\frac{dy}{dx}=\\frac{x^2}{y^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Look for a line where the slope is zero. The field has horizontal segments along x = 0, while slopes become vertical near y = 0.",
+          "keyPoints": [
+            {
+              "text": "slope field shown",
+              "note": "Compare how slope depends on x and y along the coordinate axes."
+            },
+            {
+              "text": "which differential equation",
+              "note": "Along x=0, the slope is 0 for every nonzero y."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "The slope segments on the vertical axis x=0 are horizontal, so the derivative must be zero there.",
+              "work": "\\(x=0\\Rightarrow\\frac{dy}{dx}=0\\text{ for }y\\ne0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Slope field with the vertical line x equals zero highlighted\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M45 130H375M210 25V235\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><path d=\"M62.0 229.4L68.0 214.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 206.7L67.3 191.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 183.8L66.6 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 161.0L65.8 145.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M65.0 122.0L65.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 99.0L65.8 115.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 76.2L66.6 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 53.3L67.3 68.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.0 30.6L68.0 45.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 229.2L97.6 214.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 206.5L96.8 191.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 183.8L95.9 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 160.9L95.0 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M94.0 122.0L94.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 99.1L95.0 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 76.2L95.9 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 53.5L96.8 68.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 30.8L97.6 45.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 228.7L127.4 215.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 206.2L126.6 191.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 183.6L125.5 168.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 160.9L124.3 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M123.0 122.0L123.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 99.1L124.3 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 76.4L125.5 91.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 53.8L126.6 68.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 31.3L127.4 44.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 227.7L157.7 216.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 205.4L156.8 192.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 183.2L155.6 168.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 160.8L153.9 145.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M152.0 122.0L152.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 99.2L153.9 114.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 76.8L155.6 91.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 54.6L156.8 67.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 32.3L157.7 43.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 225.6L188.2 218.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 203.4L187.7 194.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 181.7L186.7 170.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 160.2L184.6 145.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M181.0 122.0L181.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 99.8L184.6 114.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 78.3L186.7 89.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 56.6L187.7 65.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 34.4L188.2 41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 222.0L218.0 222.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 199.0L218.0 199.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 176.0L218.0 176.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 153.0L218.0 153.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M210.0 122.0L210.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 107.0L218.0 107.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 84.0L218.0 84.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 61.0L218.0 61.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 38.0L218.0 38.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M231.8 218.4L246.2 225.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 194.6L245.7 203.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 170.3L244.7 181.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 145.8L242.6 160.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M239.0 122.0L239.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 114.2L242.6 99.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 89.7L244.7 78.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 65.4L245.7 56.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 41.6L246.2 34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 216.3L273.7 227.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 192.6L272.8 205.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 168.8L271.6 183.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 145.2L269.9 160.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M268.0 122.0L268.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 114.8L269.9 99.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 91.2L271.6 76.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 67.4L272.8 54.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 43.7L273.7 32.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 215.3L301.4 228.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 191.8L300.6 206.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 168.4L299.5 183.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 145.1L298.3 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M297.0 122.0L297.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 114.9L298.3 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 91.6L299.5 76.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 68.2L300.6 53.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 44.7L301.4 31.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 214.8L329.6 229.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 191.5L328.8 206.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 168.2L327.9 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 145.1L327.0 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M326.0 122.0L326.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 114.9L327.0 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 91.8L327.9 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 68.5L328.8 53.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 45.2L329.6 30.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 214.6L358.0 229.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 191.3L357.3 206.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 168.2L356.6 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 145.0L355.8 161.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M355.0 122.0L355.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 115.0L355.8 99.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 91.8L356.6 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 68.7L357.3 53.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 45.4L358.0 30.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220\" y=\"250\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">Along x = 0 the slopes are 0</text></svg>"
+              }
+            },
+            {
+              "explain": "This rules out equations with y in the numerator. The segments also become steep as y approaches 0 away from x=0.",
+              "work": "\\(\\left|\\frac{2x}{y}\\right|\\text{ grows as }|y|\\to0\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Slope field with the vertical line x equals zero highlighted\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M45 130H375M210 25V235\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><path d=\"M62.0 229.4L68.0 214.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 206.7L67.3 191.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 183.8L66.6 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 161.0L65.8 145.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M65.0 122.0L65.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M64.2 99.0L65.8 115.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 76.2L66.6 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 53.3L67.3 68.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.0 30.6L68.0 45.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 229.2L97.6 214.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 206.5L96.8 191.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 183.8L95.9 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 160.9L95.0 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M94.0 122.0L94.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M93.0 99.1L95.0 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 76.2L95.9 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 53.5L96.8 68.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 30.8L97.6 45.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 228.7L127.4 215.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 206.2L126.6 191.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 183.6L125.5 168.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 160.9L124.3 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M123.0 122.0L123.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M121.7 99.1L124.3 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 76.4L125.5 91.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 53.8L126.6 68.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 31.3L127.4 44.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 227.7L157.7 216.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 205.4L156.8 192.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 183.2L155.6 168.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 160.8L153.9 145.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M152.0 122.0L152.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M150.1 99.2L153.9 114.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 76.8L155.6 91.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 54.6L156.8 67.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 32.3L157.7 43.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 225.6L188.2 218.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 203.4L187.7 194.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 181.7L186.7 170.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 160.2L184.6 145.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M181.0 122.0L181.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M177.4 99.8L184.6 114.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 78.3L186.7 89.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 56.6L187.7 65.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 34.4L188.2 41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 222.0L218.0 222.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 199.0L218.0 199.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 176.0L218.0 176.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 153.0L218.0 153.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M210.0 122.0L210.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M202.0 107.0L218.0 107.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 84.0L218.0 84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 61.0L218.0 61.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 38.0L218.0 38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 218.4L246.2 225.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 194.6L245.7 203.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 170.3L244.7 181.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 145.8L242.6 160.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M239.0 122.0L239.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M235.4 114.2L242.6 99.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 89.7L244.7 78.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 65.4L245.7 56.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 41.6L246.2 34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 216.3L273.7 227.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 192.6L272.8 205.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 168.8L271.6 183.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 145.2L269.9 160.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M268.0 122.0L268.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M266.1 114.8L269.9 99.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 91.2L271.6 76.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 67.4L272.8 54.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 43.7L273.7 32.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 215.3L301.4 228.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 191.8L300.6 206.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 168.4L299.5 183.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 145.1L298.3 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M297.0 122.0L297.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M295.7 114.9L298.3 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 91.6L299.5 76.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 68.2L300.6 53.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 44.7L301.4 31.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 214.8L329.6 229.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 191.5L328.8 206.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 168.2L327.9 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 145.1L327.0 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M326.0 122.0L326.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M325.0 114.9L327.0 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 91.8L327.9 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 68.5L328.8 53.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 45.2L329.6 30.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 214.6L358.0 229.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 191.3L357.3 206.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 168.2L356.6 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 145.0L355.8 161.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M355.0 122.0L355.0 138.0\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M354.2 115.0L355.8 99.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 91.8L356.6 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 68.7L357.3 53.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 45.4L358.0 30.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220\" y=\"250\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">Along x = 0 the slopes are 0</text></svg>"
+              }
+            },
+            {
+              "explain": "The equation matching both axis behaviours is 2x/y. The highlighted vertical line shows the horizontal slopes.",
+              "work": "\\(\\boxed{\\frac{dy}{dx}=\\frac{2x}{y}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Slope field with the vertical line x equals zero highlighted\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M45 130H375M210 25V235\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><path d=\"M62.0 229.4L68.0 214.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 206.7L67.3 191.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 183.8L66.6 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 161.0L65.8 145.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M65.0 122.0L65.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 99.0L65.8 115.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 76.2L66.6 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 53.3L67.3 68.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.0 30.6L68.0 45.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 229.2L97.6 214.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 206.5L96.8 191.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 183.8L95.9 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 160.9L95.0 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M94.0 122.0L94.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 99.1L95.0 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 76.2L95.9 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 53.5L96.8 68.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 30.8L97.6 45.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 228.7L127.4 215.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 206.2L126.6 191.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 183.6L125.5 168.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 160.9L124.3 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M123.0 122.0L123.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 99.1L124.3 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 76.4L125.5 91.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 53.8L126.6 68.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 31.3L127.4 44.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 227.7L157.7 216.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 205.4L156.8 192.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 183.2L155.6 168.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 160.8L153.9 145.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M152.0 122.0L152.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 99.2L153.9 114.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 76.8L155.6 91.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 54.6L156.8 67.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 32.3L157.7 43.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 225.6L188.2 218.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 203.4L187.7 194.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 181.7L186.7 170.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 160.2L184.6 145.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M181.0 122.0L181.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 99.8L184.6 114.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 78.3L186.7 89.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 56.6L187.7 65.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 34.4L188.2 41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 222.0L218.0 222.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 199.0L218.0 199.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 176.0L218.0 176.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 153.0L218.0 153.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M210.0 122.0L210.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 107.0L218.0 107.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 84.0L218.0 84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 61.0L218.0 61.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 38.0L218.0 38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 218.4L246.2 225.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 194.6L245.7 203.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 170.3L244.7 181.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 145.8L242.6 160.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M239.0 122.0L239.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 114.2L242.6 99.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 89.7L244.7 78.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 65.4L245.7 56.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 41.6L246.2 34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 216.3L273.7 227.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 192.6L272.8 205.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 168.8L271.6 183.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 145.2L269.9 160.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M268.0 122.0L268.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 114.8L269.9 99.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 91.2L271.6 76.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 67.4L272.8 54.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 43.7L273.7 32.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 215.3L301.4 228.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 191.8L300.6 206.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 168.4L299.5 183.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 145.1L298.3 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M297.0 122.0L297.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 114.9L298.3 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 91.6L299.5 76.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 68.2L300.6 53.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 44.7L301.4 31.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 214.8L329.6 229.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 191.5L328.8 206.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 168.2L327.9 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 145.1L327.0 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M326.0 122.0L326.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 114.9L327.0 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 91.8L327.9 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 68.5L328.8 53.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 45.2L329.6 30.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 214.6L358.0 229.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 191.3L357.3 206.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 168.2L356.6 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 145.0L355.8 161.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M355.0 122.0L355.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 115.0L355.8 99.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 91.8L356.6 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 68.7L357.3 53.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 45.4L358.0 30.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220\" y=\"250\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">Along x = 0 the slopes are 0</text></svg>"
+              }
+            }
+          ],
+          "solution": "Correct answer: \\(\\frac{dy}{dx}=\\frac{2x}{y}\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
+          },
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Slope field with the vertical line x equals zero highlighted\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M45 130H375M210 25V235\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><path d=\"M62.0 229.4L68.0 214.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 206.7L67.3 191.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 183.8L66.6 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 161.0L65.8 145.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M65.0 122.0L65.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M64.2 99.0L65.8 115.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M63.4 76.2L66.6 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.7 53.3L67.3 68.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M62.0 30.6L68.0 45.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 229.2L97.6 214.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 206.5L96.8 191.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 183.8L95.9 168.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 160.9L95.0 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M94.0 122.0L94.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M93.0 99.1L95.0 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M92.1 76.2L95.9 91.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M91.2 53.5L96.8 68.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M90.4 30.8L97.6 45.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 228.7L127.4 215.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 206.2L126.6 191.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 183.6L125.5 168.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 160.9L124.3 145.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M123.0 122.0L123.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M121.7 99.1L124.3 114.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M120.5 76.4L125.5 91.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M119.4 53.8L126.6 68.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M118.6 31.3L127.4 44.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 227.7L157.7 216.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 205.4L156.8 192.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 183.2L155.6 168.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 160.8L153.9 145.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M152.0 122.0L152.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M150.1 99.2L153.9 114.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M148.4 76.8L155.6 91.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M147.2 54.6L156.8 67.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M146.3 32.3L157.7 43.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 225.6L188.2 218.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 203.4L187.7 194.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 181.7L186.7 170.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 160.2L184.6 145.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M181.0 122.0L181.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M177.4 99.8L184.6 114.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M175.3 78.3L186.7 89.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M174.3 56.6L187.7 65.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M173.8 34.4L188.2 41.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 222.0L218.0 222.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 199.0L218.0 199.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 176.0L218.0 176.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 153.0L218.0 153.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M210.0 122.0L210.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 107.0L218.0 107.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 84.0L218.0 84.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 61.0L218.0 61.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M202.0 38.0L218.0 38.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 218.4L246.2 225.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 194.6L245.7 203.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 170.3L244.7 181.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 145.8L242.6 160.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M239.0 122.0L239.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M235.4 114.2L242.6 99.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M233.3 89.7L244.7 78.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M232.3 65.4L245.7 56.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M231.8 41.6L246.2 34.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 216.3L273.7 227.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 192.6L272.8 205.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 168.8L271.6 183.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 145.2L269.9 160.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M268.0 122.0L268.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M266.1 114.8L269.9 99.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M264.4 91.2L271.6 76.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M263.2 67.4L272.8 54.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M262.3 43.7L273.7 32.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 215.3L301.4 228.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 191.8L300.6 206.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 168.4L299.5 183.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 145.1L298.3 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M297.0 122.0L297.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M295.7 114.9L298.3 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M294.5 91.6L299.5 76.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M293.4 68.2L300.6 53.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M292.6 44.7L301.4 31.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 214.8L329.6 229.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 191.5L328.8 206.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 168.2L327.9 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 145.1L327.0 160.9\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M326.0 122.0L326.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M325.0 114.9L327.0 99.1\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M324.1 91.8L327.9 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M323.2 68.5L328.8 53.5\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M322.4 45.2L329.6 30.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 214.6L358.0 229.4\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 191.3L357.3 206.7\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 168.2L356.6 183.8\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 145.0L355.8 161.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M355.0 122.0L355.0 138.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M354.2 115.0L355.8 99.0\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M353.4 91.8L356.6 76.2\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.7 68.7L357.3 53.3\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><path d=\"M352.0 45.4L358.0 30.6\" stroke=\"#475569\" stroke-width=\"1.6\" stroke-linecap=\"round\"/><text x=\"220\" y=\"250\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#334155\">Along x = 0 the slopes are 0</text></svg>"
+          }
         }
       ]
     },
@@ -113,6 +170,55 @@
             "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
             "school": "Abbotsleigh",
             "year": 2020
+          }
+        },
+        {
+          "id": "ascham2020e1-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the particular solution of \\(\\frac{dy}{dx}=\\frac{2x-1}{y^2}\\), given \\(y=\\sqrt[3]{3}\\) when \\(x=0\\).",
+          "options": [
+            "\\(y=\\sqrt[3]{3x^2-3x+3}\\)",
+            "\\(y=3x^2-3x+\\sqrt[3]{3}\\)",
+            "\\(y=\\sqrt[3]{3x^2-3x+1}\\)",
+            "\\(y=\\sqrt[3]{x^2-x+3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Separate the variables by multiplying by y², integrate both sides, then use the given initial value to determine the constant.",
+          "keyPoints": [
+            {
+              "text": "particular solution",
+              "note": "Integrate the separated equation and apply the condition at x=0."
+            },
+            {
+              "text": "\\(y=\\sqrt[3]{3}\\) when \\(x=0\\)",
+              "note": "Use this value after integrating to find the constant."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Separate y and x before integrating.",
+              "work": "\\(y^2\\,dy=(2x-1)\\,dx\\)"
+            },
+            {
+              "explain": "Integrate both sides, including a constant.",
+              "work": "\\(\\frac{y^3}{3}=x^2-x+C\\)"
+            },
+            {
+              "explain": "Use y³=3 at x=0 to get C=1, then solve for y.",
+              "work": "\\(\\frac{3}{3}=0-0+C\\Rightarrow C=1;\\quad y^3=3x^2-3x+3\\)"
+            },
+            {
+              "explain": "Take the real cube root to state the particular solution.",
+              "work": "\\(\\boxed{y=\\sqrt[3]{3x^2-3x+3}}\\)"
+            }
+          ],
+          "solution": "Correct answer: \\(y=\\sqrt[3]{3x^2-3x+3}\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
           }
         }
       ]
@@ -216,6 +322,224 @@
             "sourceFile": "/Users/andrewkim/Downloads/Abbotsleigh 2020.pdf",
             "school": "Abbotsleigh",
             "year": 2020
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12e1-13D",
+      "code": "13D",
+      "title": "y' = g(y) and the logistic equation",
+      "questions": [
+        {
+          "id": "ascham2020e1-q13c",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A population of 1200 feral cats is released. Its growth rate is \\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\), where t is measured in months.",
+          "parts": [
+            {
+              "id": "ascham2020e1-q13c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(i) Which statement correctly decomposes \\(\\frac{10000}{P(10000-P)}\\)?",
+              "options": [
+                "\\(\\frac1P-\\frac1{10000-P}\\)",
+                "\\(\\frac1P+\\frac1{10000-P}\\)",
+                "\\(\\frac{10000}{P}+\\frac{10000}{10000-P}\\)",
+                "\\(\\frac1{P(10000-P)}\\)"
+              ],
+              "answer": 1,
+              "hint": "Put the two fractions over a common denominator and simplify their numerator.",
+              "keyPoints": [
+                {
+                  "text": "\\(\\frac{10000}{P(10000-P)}\\)",
+                  "note": "Use partial fractions to separate the two factors in the denominator."
+                },
+                {
+                  "text": "decomposes",
+                  "note": "The numerators must add to 10000 after using the common denominator."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Combine the proposed reciprocal terms over a common denominator.",
+                  "work": "\\(\\frac1P+\\frac1{10000-P}=\\frac{10000-P+P}{P(10000-P)}\\)"
+                },
+                {
+                  "explain": "The numerator simplifies to 10000, matching the left-hand side.",
+                  "work": "\\(\\frac{10000-P+P}{P(10000-P)}=\\frac{10000}{P(10000-P)}\\)"
+                },
+                {
+                  "explain": "So the correct partial-fraction identity uses a plus sign.",
+                  "work": "\\(\\boxed{\\frac{10000}{P(10000-P)}=\\frac1P+\\frac1{10000-P}}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(\\frac1P+\\frac1{10000-P}\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 3U Trial",
+                "examPaper": "Ascham 2020 3U Trial & Solutions"
+              }
+            },
+            {
+              "id": "ascham2020e1-q13c-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(ii) Solve \\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\) for P in terms of t, given \\(P(0)=1200\\).",
+              "options": [
+                "\\(P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\)",
+                "\\(P=\\frac{10000}{1+\\frac{3}{22}e^{-t/30}}\\)",
+                "\\(P=1200e^{t/30}\\)",
+                "\\(P=\\frac{30000}{22e^{t/30}+3}\\)"
+              ],
+              "answer": 0,
+              "hint": "Separate P and t, use the partial fractions from part (i), then apply P(0)=1200 before solving for P.",
+              "keyPoints": [
+                {
+                  "text": "\\(P(0)=1200\\)",
+                  "note": "Use the initial population to determine the integration constant."
+                },
+                {
+                  "text": "Solve \\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\)",
+                  "note": "Separate variables and integrate both sides."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Separate variables and use the partial-fraction result from part (i).",
+                  "work": "\\(\\frac{10000}{P(10000-P)}dP=\\frac1{30}dt\\)"
+                },
+                {
+                  "explain": "Integrate and combine logarithms.",
+                  "work": "\\(\\ln P-\\ln(10000-P)=\\frac{t}{30}+C\\Rightarrow\\ln\\frac{P}{10000-P}=\\frac{t}{30}+C\\)"
+                },
+                {
+                  "explain": "Use P(0)=1200, so P/(10000−P)=3/22 at t=0. Rearranging gives the logistic model.",
+                  "work": "\\(\\frac{P}{10000-P}=\\frac3{22}e^{t/30}\\Rightarrow P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\)"
+                },
+                {
+                  "explain": "State the population function.",
+                  "work": "\\(\\boxed{P(t)=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(P=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 3U Trial",
+                "examPaper": "Ascham 2020 3U Trial & Solutions"
+              }
+            },
+            {
+              "id": "ascham2020e1-q13c-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iii) What is the limiting feral-cat population as time increases?",
+              "options": [
+                "\\(1200\\)",
+                "\\(8800\\)",
+                "\\(10000\\)",
+                "\\(\\infty\\)"
+              ],
+              "answer": 2,
+              "hint": "Use the logistic solution from part (ii) and let t grow without bound, so the decaying exponential approaches zero.",
+              "keyPoints": [
+                {
+                  "text": "limiting feral-cat population",
+                  "note": "Take the limit of the population model as t→∞."
+                },
+                {
+                  "text": "as time increases",
+                  "note": "The exponential term e^(−t/30) tends to zero."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "As t→∞, the exponential factor e^(−t/30) approaches zero.",
+                  "work": "\\(e^{-t/30}\\to0\\)"
+                },
+                {
+                  "explain": "Substitute this limit into the logistic solution.",
+                  "work": "\\(P(t)=\\frac{10000}{1+\\frac{22}{3}e^{-t/30}}\\to\\frac{10000}{1}=10000\\)"
+                },
+                {
+                  "explain": "The carrying capacity is the limiting population.",
+                  "work": "\\(\\boxed{10000\\text{ cats}}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(10000\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 3U Trial",
+                "examPaper": "Ascham 2020 3U Trial & Solutions"
+              }
+            },
+            {
+              "id": "ascham2020e1-q13c-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(iv) How many months does it take for the population to double from its initial size?",
+              "options": [
+                "\\(19\\text{ months}\\)",
+                "\\(25\\text{ months}\\)",
+                "\\(30\\ln(19/44)\\text{ months}\\)",
+                "\\(44\\text{ months}\\)"
+              ],
+              "answer": 1,
+              "hint": "Set P=2400 in the logistic model, isolate the exponential, and take natural logarithms.",
+              "keyPoints": [
+                {
+                  "text": "population to double",
+                  "note": "The initial population is 1200, so doubling means P=2400."
+                },
+                {
+                  "text": "How many months",
+                  "note": "Solve the model for t and round to the nearest whole month."
+                }
+              ],
+              "steps": [
+                {
+                  "explain": "Set the population in the solution equal to 2400.",
+                  "work": "\\(2400=\\frac{30000}{22e^{-t/30}+3}\\)"
+                },
+                {
+                  "explain": "Rearrange to isolate the exponential term.",
+                  "work": "\\(22e^{-t/30}+3=12.5\\Rightarrow e^{-t/30}=\\frac{19}{44}\\)"
+                },
+                {
+                  "explain": "Take logarithms and evaluate the time.",
+                  "work": "\\(t=30\\ln\\frac{44}{19}\\approx25.19\\text{ months}\\Rightarrow\\boxed{25\\text{ months}}\\)"
+                }
+              ],
+              "solution": "Correct answer: \\(25\\text{ months}\\).",
+              "timeLimit": 60,
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 3U Trial",
+                "examPaper": "Ascham 2020 3U Trial & Solutions"
+              }
+            }
+          ],
+          "hint": "This is a logistic growth model. Separate variables for the solution, and remember the population approaches the carrying capacity 10000.",
+          "keyPoints": [
+            {
+              "text": "population of 1200",
+              "note": "This gives the initial condition P(0)=1200."
+            },
+            {
+              "text": "\\(\\frac{dP}{dt}=\\frac{P}{30}(1-\\frac{P}{10000})\\)",
+              "note": "The population growth slows as P approaches 10000."
+            }
+          ],
+          "answer": "See the worked answers for each part.",
+          "solution": "Each part includes its own worked solution.",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial Q13(c)",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
           }
         }
       ]

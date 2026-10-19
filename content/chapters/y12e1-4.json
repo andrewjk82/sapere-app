@@ -1,0 +1,63 @@
+{
+  "chapterId": "y12e1-4",
+  "title": "Chapter 4: Curve-sketching using the derivative",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-4G",
+      "code": "4G",
+      "title": "Applications of calculus",
+      "questions": [
+        {
+          "id": "ascham2020e1-q13d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Without calculus, find the maximum and minimum points of \\(y=\\frac5{2+\\sin x+\\cos x}\\) for \\(0\\le x\\le2\\pi\\).",
+          "options": [
+            "Maximum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\); minimum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\)",
+            "Maximum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\)",
+            "Maximum \\((\\frac{3\\pi}4,5)\\); minimum \\((\\frac{7\\pi}4,5)\\)",
+            "Maximum \\((\\frac{5\\pi}4,\\frac5{2+\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2-\\sqrt2})\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine sin x+cos x into one sinusoid. Since the numerator is positive, the largest y occurs when the denominator is smallest.",
+          "keyPoints": [
+            {
+              "text": "maximum and minimum points",
+              "note": "Find where the denominator is largest and smallest, then reverse the order because it is in the denominator."
+            },
+            {
+              "text": "\\(0\\le x\\le2\\pi\\)",
+              "note": "Check that the phase-shifted sine extrema lie in the stated interval."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Rewrite the two trigonometric terms as a single sinusoid.",
+              "work": "\\(\\sin x+\\cos x=\\sqrt2\\sin(x+\\frac\\pi4)\\)"
+            },
+            {
+              "explain": "The denominator ranges from 2−√2 to 2+√2. Its maximum occurs when x=π/4; its minimum occurs when x=5π/4.",
+              "work": "\\(2-\\sqrt2\\le2+\\sin x+\\cos x\\le2+\\sqrt2\\)"
+            },
+            {
+              "explain": "Because y=5 divided by this positive denominator, the minimum y pairs with the largest denominator, and the maximum y pairs with the smallest denominator.",
+              "work": "\\(x=\\frac\\pi4:\\;y=\\frac5{2+\\sqrt2};\\quad x=\\frac{5\\pi}4:\\;y=\\frac5{2-\\sqrt2}\\)"
+            },
+            {
+              "explain": "State both turning values with their x-coordinates.",
+              "work": "\\(\\boxed{\\min(\\frac\\pi4,\\frac5{2+\\sqrt2}),\\quad\\max(\\frac{5\\pi}4,\\frac5{2-\\sqrt2})}\\)"
+            }
+          ],
+          "solution": "Correct answer: Maximum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
+          }
+        }
+      ]
+    }
+  ]
+}

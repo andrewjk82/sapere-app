@@ -50,6 +50,96 @@
             "school": "Abbotsleigh",
             "year": 2020
           }
+        },
+        {
+          "id": "ascham2020e1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each of the letters A, A, C, H, M, and S is written on a separate card. The cards are drawn at random and placed next to each other to form a word. What is the probability that the word ASCHAM appears?",
+          "options": [
+            "\\(\\frac{1}{360}\\)",
+            "\\(\\frac{1}{60}\\)",
+            "\\(\\frac{1}{720}\\)",
+            "\\(\\frac{1}{50}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the distinct six-letter arrangements, remembering that the two A cards are identical in the word, then compare the single target arrangement with that total.",
+          "keyPoints": [
+            {
+              "text": "probability that the word ASCHAM appears",
+              "note": "There is exactly one favourable arrangement: ASCHAM."
+            },
+            {
+              "text": "A, A",
+              "note": "Because the two A cards show the same letter, divide the factorial count by 2!."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "There are six cards, but swapping the two A cards does not create a different visible word.",
+              "work": "\\(N=\\frac{6!}{2!}\\)"
+            },
+            {
+              "explain": "Evaluate the number of distinct arrangements.",
+              "work": "\\(N=\\frac{720}{2}=360\\)"
+            },
+            {
+              "explain": "Only one of these arrangements spells ASCHAM, so probability is favourable outcomes divided by total outcomes.",
+              "work": "\\(P(\\text{ASCHAM})=\\frac{1}{360}\\)"
+            }
+          ],
+          "solution": "Correct answer: \\(\\frac{1}{360}\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
+          }
+        },
+        {
+          "id": "ascham2020e1-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five boys and five girls are seated at a round table. How many arrangements have Robert and Hannah sitting together?",
+          "options": [
+            "\\(362880\\)",
+            "\\(40320\\)",
+            "\\(80640\\)",
+            "\\(725760\\)"
+          ],
+          "answer": 2,
+          "hint": "Treat Robert and Hannah as one block. Then arrange that block and the other eight people around the circle, and count the two orders inside the block.",
+          "keyPoints": [
+            {
+              "text": "Robert and Hannah sitting together",
+              "note": "Make the pair one object before arranging the people."
+            },
+            {
+              "text": "round table",
+              "note": "Circular arrangements of 9 distinct objects have (9−1)! orders."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Combine Robert and Hannah into one block. This gives 9 objects around the table.",
+              "work": "\\(1\\text{ pair block}+8\\text{ other people}=9\\text{ objects}\\)"
+            },
+            {
+              "explain": "Circular arrangements of 9 objects are counted up to rotation.",
+              "work": "\\((9-1)!=8!=40320\\)"
+            },
+            {
+              "explain": "Robert and Hannah can swap places inside their block in 2 ways.",
+              "work": "\\(2\\cdot8!=80640\\)"
+            }
+          ],
+          "solution": "Correct answer: \\(80640\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
+          }
         }
       ]
     },
@@ -106,6 +196,58 @@
           },
           "figure": {
             "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 240 180\" style=\"display:block;margin:0 auto;font-family:system-ui,sans-serif\"><rect width=\"240\" height=\"180\" fill=\"white\"/><line x1=\"30\" y1=\"135\" x2=\"150\" y2=\"135\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><circle cx=\"45\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"75\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"105\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"135\" cy=\"135\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"70\" cy=\"90\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"110\" cy=\"75\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"160\" cy=\"105\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"190\" cy=\"70\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><circle cx=\"165\" cy=\"45\" r=\"5\" fill=\"#2563eb\" stroke=\"white\" stroke-width=\"1\"/><text x=\"20\" y=\"160\" font-size=\"11\">Four points lie on one line</text></svg>"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11e1-17B",
+      "code": "17B",
+      "title": "The binomial theorem",
+      "questions": [
+        {
+          "id": "ascham2020e1-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the coefficient of the fourth term in the expansion of \\((3x-4)^6\\)?",
+          "options": [
+            "\\(34560\\)",
+            "\\(25920\\)",
+            "\\(-34560\\)",
+            "\\(-25920\\)"
+          ],
+          "answer": 2,
+          "hint": "The fourth term uses the binomial index r = 3. Substitute r = 3 into the general term.",
+          "keyPoints": [
+            {
+              "text": "coefficient of the fourth term",
+              "note": "Terms are counted from r = 0, so the fourth term has r = 3."
+            },
+            {
+              "text": "\\((3x-4)^6\\)",
+              "note": "Use \\(T_{r+1}=\\binom6r(3x)^{6-r}(-4)^r\\)."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Write the general term and select r = 3 for the fourth term.",
+              "work": "\\(T_4=\\binom63(3x)^3(-4)^3\\)"
+            },
+            {
+              "explain": "Separate the numerical coefficient from x³.",
+              "work": "\\(\\binom63\\cdot3^3\\cdot(-4)^3=20\\cdot27\\cdot(-64)\\)"
+            },
+            {
+              "explain": "Multiply the factors, keeping the negative sign from the odd power of −4.",
+              "work": "\\(20\\cdot27\\cdot(-64)=-34560\\)"
+            }
+          ],
+          "solution": "Correct answer: \\(-34560\\).",
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions"
           }
         }
       ]
