@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
-import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
+import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List, BookOpen } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc, getDocs, writeBatch } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
@@ -13,6 +13,7 @@ import { localCache } from '../services/localCacheService';
 import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
 import ScheduleLessonModal from './ScheduleLessonModal';
 import LessonTopicPicker from './schedule/LessonTopicPicker';
+import LessonWorkspace from './LessonWorkspace';
 import {
   groupMeta, findPreviousCoveredSession, findNextTopic, splitHomeworkExtra, composeHomework,
 } from '../utils/lessonTopics';
@@ -283,6 +284,15 @@ const Schedule = ({ students = [] }) => {
     return map;
   }, [isAdmin, profile?.studySubjectExamDates]);
   const [selectedSession, setSelectedSession] = useState(null);
+  const [lessonSession, setLessonSession] = useState(null);   // the lesson screen (PDF + notes) for this session
+  // The red "now" line on today's column: moves once a minute.
+  const [nowTick, setNowTick] = useState(() => new Date());
+  useEffect(() => {
+    const id = window.setInterval(() => setNowTick(new Date()), 60_000);
+    const onVisible = () => { if (document.visibilityState === 'visible') setNowTick(new Date()); };
+    document.addEventListener('visibilitychange', onVisible);
+    return () => { window.clearInterval(id); document.removeEventListener('visibilitychange', onVisible); };
+  }, []);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
@@ -1064,6 +1074,17 @@ const Schedule = ({ students = [] }) => {
                     </div>
                   );
                 })}
+
+                {dateStr === formatDateKey(nowTick) && (() => {
+                  const hour = nowTick.getHours() + nowTick.getMinutes() / 60;
+                  if (hour < GRID_START_HOUR || hour > GRID_START_HOUR + timeSlots.length) return null;
+                  return (
+                    <div aria-label="Current time" style={{ position: 'absolute', left: 0, right: 0, top: `${(hour - GRID_START_HOUR) * slotH}px`, height: 0, zIndex: 8, pointerEvents: 'none' }}>
+                      <div style={{ position: 'absolute', left: 0, right: 0, top: -1, height: 2, background: '#ef4444', boxShadow: '0 0 0 1px rgba(255,255,255,0.7)' }} />
+                      <div style={{ position: 'absolute', left: -5, top: -5, width: 10, height: 10, borderRadius: '50%', background: '#ef4444', boxShadow: '0 0 0 2px #fff' }} />
+                    </div>
+                  );
+                })()}
               </div>
             );
           })}
@@ -1205,6 +1226,15 @@ const Schedule = ({ students = [] }) => {
                       <span style={{ opacity: 0.7 }}>•</span>
                       <span>{selectedSession.date}</span>
                     </p>
+                    {isAdmin && (selectedSession.studentId || selectedSession.groupStudents?.some((g) => g.studentId)) && (
+                      <button
+                        type="button"
+                        onClick={() => setLessonSession(selectedSession)}
+                        style={{ marginTop: 14, display: 'inline-flex', alignItems: 'center', gap: 8, padding: '10px 16px', borderRadius: 12, border: 0, background: '#fff', color: '#4f46e5', fontWeight: 900, fontSize: '0.88rem', cursor: 'pointer', boxShadow: '0 6px 16px rgba(15,23,42,0.18)' }}
+                      >
+                        <BookOpen size={17} /> Open lesson
+                      </button>
+                    )}
                     
                     {(selectedSession.isGroupedClass || selectedSession.groupStudentNames) && (
                       <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -1632,6 +1662,8 @@ const Schedule = ({ students = [] }) => {
           />
         )}
       </AnimatePresence>
+
+      {lessonSession && <LessonWorkspace session={lessonSession} onClose={() => setLessonSession(null)} />}
     </div>
   );
 };
