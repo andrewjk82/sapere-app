@@ -72,6 +72,7 @@ import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
 import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
+import ScholarshipPanel from "./studentDetail/ScholarshipPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -139,6 +140,7 @@ const curriculumSyncFields = [
   "calcQuestionCount",
   "showHscGraph",
   "examPrepEnabled",
+  "scholarshipEnabled",
   "examPrepSelection",
   "hscPastPaperEnabled",
   "hscPastPaperCount",
@@ -375,6 +377,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     calculationEnabled: true,
     showHscGraph: false,
     examPrepEnabled: false,
+    scholarshipEnabled: false,
     hscPastPaperEnabled: false,
     hscPastPaperCount: 3,
     schoolSubjectRank: "",
@@ -474,6 +477,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         calculationEnabled: data.calculationEnabled !== false,
         showHscGraph: data.showHscGraph === true,
         examPrepEnabled: data.examPrepEnabled === true,
+        scholarshipEnabled: data.scholarshipEnabled === true,
         examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
         hscPastPaperEnabled: data.hscPastPaperEnabled === true,
         hscPastPaperCount: data.hscPastPaperCount || 3,
@@ -2171,6 +2175,19 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
 
+            </CollapsibleSection>
+
+            <CollapsibleSection
+              title="Scholarship practice"
+              summary={student.scholarshipEnabled === true ? 'ACER & Selective practice page · untimed' : 'Disabled'}
+              badge={student.scholarshipEnabled === true ? 'On' : 'Off'}
+              badgeTone={student.scholarshipEnabled === true ? 'green' : 'amber'}
+            >
+              <ScholarshipPanel
+                styles={{ ...styles, card: {} }}
+                student={student}
+                onUpdateSetting={handleUpdateCurriculumSetting}
+              />
             </CollapsibleSection>
 
             <CollapsibleSection

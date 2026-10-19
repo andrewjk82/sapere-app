@@ -102,6 +102,7 @@ const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
 const ExamPrep = lazyWithReload(() => import('./components/ExamPrep'));
+const Scholarship = lazyWithReload(() => import('./components/Scholarship'));
 const DnaWarmupReviewPage = lazyWithReload(() => import('./components/hsc/DnaWarmupReviewPage'));
 const QuestionPreStepsReviewPage = lazyWithReload(() => import('./components/hsc/QuestionPreStepsReviewPage'));
 import Login from './pages/Login';
@@ -1390,6 +1391,8 @@ function App() {
         return <Curriculum initialSearchId={bankJumpId} onInitialSearchConsumed={() => setBankJumpId(null)} />;
       case 'ExamPrep':
         return <ExamPrep profile={profile} onExamActiveChange={setExamInProgress} />;
+      case 'Scholarship':
+        return <Scholarship profile={profile} />;
       case 'Library':
         return <Library />;
       case 'Reports':

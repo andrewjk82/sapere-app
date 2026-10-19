@@ -12,6 +12,7 @@ import {
   BookMarked,
   Bell,
   GraduationCap,
+  Award,
   FileText,
   Timer,
   Clock,
@@ -117,6 +118,9 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
 
         {!isAdmin && profile?.examPrepEnabled === true && (
           <SidebarItem icon={GraduationCap} label="Exam Prep" active={activeTab === 'ExamPrep'} onClick={() => setActiveTab('ExamPrep')} disabled={isLocked} />
+        )}
+        {!isAdmin && profile?.scholarshipEnabled === true && (
+          <SidebarItem icon={Award} label="Scholarship" active={activeTab === 'Scholarship'} onClick={() => setActiveTab('Scholarship')} disabled={isLocked} />
         )}
         {isAdmin && (
           <SidebarItem icon={Inbox} label="Reports & Review" active={activeTab === 'Reports'} onClick={() => setActiveTab('Reports')} disabled={isLocked} badge={reportCount + gradingCount} />
