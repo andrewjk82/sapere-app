@@ -1739,6 +1739,876 @@
             "test": "Test 2",
             "number": 35
           }
+        },
+        {
+          "id": "sch-sel-m3-q1",
+          "type": "mc",
+          "stem": "Which of these numbers is closest to a quarter million?",
+          "options": [
+            "271 000",
+            "244 000",
+            "263 000",
+            "257 000",
+            "243 000"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>244000 is the closest.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 1
+          }
+        },
+        {
+          "id": "sch-sel-m3-q2",
+          "type": "mc",
+          "stem": "One stick is needed to create one side of a triangle. How many sticks are needed for Step 7?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 536 196\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q2.jpg\" x=\"0\" y=\"0\" width=\"536\" height=\"196\"/></svg>"
+          },
+          "options": [
+            "26",
+            "30",
+            "25",
+            "29",
+            "27"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>In Step 1 there are 5 sticks, in Step 2 there are 9 sticks, in Step 3 there are 13 sticks. Pattern: +4 for each step. To complete Step 7, add \\(4 \\times 4\\) to step 3: \\(13 + 16 = \\mathbf{29}\\) sticks are needed.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 2
+          }
+        },
+        {
+          "id": "sch-sel-m3-q3",
+          "type": "mc",
+          "stem": "What is the mass of ●",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 212\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q3.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"212\"/></svg>"
+          },
+          "options": [
+            "2.5kg",
+            "4kg",
+            "5kg",
+            "10kg",
+            "6kg"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Right hand side equals left hand side, the mass of right hand side is 26 kilograms and the mass of left hand side is 16 kilograms and 4 ● so the 4 ● are 10kg in total, so one ● is 2.5kg</p><p>\\(16 + 4X = 26 \\rightarrow X = 2.5\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 3
+          }
+        },
+        {
+          "id": "sch-sel-m3-q4",
+          "type": "mc",
+          "stem": "Two cars are 240km apart and travelling towards each other. One car is travelling at 50km/h and the other car is travelling at 70km/h. If they both leave at 2:00pm, what time will they pass each other?",
+          "options": [
+            "3:15pm",
+            "3:00pm",
+            "3:30pm",
+            "4:00pm",
+            "4:30pm"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>At 4pm, the one travelling at 50km/hr will have travelled 100km, while the one travelling at 70km/hr will have travelled 140km. Since they are travelling towards each other from 240km apart, this is the point where they will meet and pass each other</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 4
+          }
+        },
+        {
+          "id": "sch-sel-m3-q6",
+          "type": "multipart",
+          "stem": "Study the table below and answer Questions 5 and 6.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 358\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q5-6.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"358\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m3-q6-p5",
+              "type": "mc",
+              "stem": "What is the value of \\(5 \\times 5 \\times 5 \\times 5\\)?",
+              "options": [
+                "20",
+                "125",
+                "625",
+                "3 125",
+                "15 625"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(5^4 = 625\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m3-q6-p6",
+              "type": "mc",
+              "stem": "\\(5^6 \\div 5^3 =\\)",
+              "options": [
+                "25",
+                "125",
+                "625",
+                "3 125",
+                "15 625"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>\\(5^6 \\div 5^3 = 5^3 = 125\\)</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": "5-6"
+          }
+        },
+        {
+          "id": "sch-sel-m3-q7",
+          "type": "mc",
+          "stem": "Out of 350 patrons at a bar, two-fifths of them are not drinking. Of the rest, five-sevenths have only one drink. The remaining order two or more drinks.\nHow many order two or more drinks?",
+          "options": [
+            "60",
+            "65",
+            "70",
+            "75",
+            "80"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(350 - (350 \\times \\frac{2}{5}) - [(350 \\times \\frac{3}{5}) \\times \\frac{5}{7}] = \\mathbf{60}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 7
+          }
+        },
+        {
+          "id": "sch-sel-m3-q8",
+          "type": "mc",
+          "stem": "\\(\\frac{4}{5}\\) of a number is the same as \\(\\frac{2}{7}\\) of a bigger number. If the difference between these two numbers is 9, what is the bigger number?",
+          "options": [
+            "28",
+            "26",
+            "24",
+            "21",
+            "14"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(4/5\\ x = 2/7\\ (x + 9)\\).</p><p>Solving for x we get x = 5</p><p>The bigger number = \\(5 + 9 = \\mathbf{14}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 8
+          }
+        },
+        {
+          "id": "sch-sel-m3-q9",
+          "type": "mc",
+          "stem": "This shape has been ruled up using congruent squares. It has a perimeter of 70 cm.\n\nWhat is the area of the shape?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 227 112\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q9.jpg\" x=\"0\" y=\"0\" width=\"227\" height=\"112\"/></svg>"
+          },
+          "options": [
+            "\\(100\\ cm^2\\)",
+            "\\(150\\ cm^2\\)",
+            "\\(225\\ cm^2\\)",
+            "\\(70\\ cm^2\\)",
+            "\\(25\\ cm^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>70/14 sides = 5 = length of each square side. Therefore, each square has an area of 25. \\(25 \\times 6 = \\mathbf{150}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 9
+          }
+        },
+        {
+          "id": "sch-sel-m3-q10",
+          "type": "mc",
+          "stem": "Which of the following is best buy per kilo?",
+          "options": [
+            "\\(\\$5\\) for 2kg of grape jam",
+            "\\(\\$2.48\\) for 1 kg of raspberry jam",
+            "63 cents for 250g of Nutella",
+            "\\(\\$15.06\\) for 6 kg of Vegemite",
+            "\\(\\$8.70\\) for 3 kg of Peanut Butter Crunchy"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>A-2.50 a kilo</p><p>B-2.48 a kilo</p><p>C-2.52 a kilo</p><p>D-2.51 a kilo</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 10
+          }
+        },
+        {
+          "id": "sch-sel-m3-q11",
+          "type": "mc",
+          "stem": "Leanne lives in Adelaide, which is 13.5 hours ahead of New York. There is a worldwide online Pokémon distribution on Saturday at 14:30, San Francisco time, which is 3 hours behind New York. When will Leanne receive her Pokémon?",
+          "options": [
+            "8:00 am Saturday",
+            "7:30 am Saturday",
+            "7:00 am Sunday",
+            "7:30 am Sunday",
+            "8:00 am Sunday"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(13.5 + 3 = 16.5\\)</p><p>16.5 hours ahead of San Francisco at 14:30 is \\(\\mathbf{7{:}00\\ am\\ Sunday}\\) (i.e. the next day)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 11
+          }
+        },
+        {
+          "id": "sch-sel-m3-q12",
+          "type": "mc",
+          "stem": "This hexagon is divided into equal triangles.\nWhich triangles are the shaded triangle in line symmetry with?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 244 199\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q12.jpg\" x=\"0\" y=\"0\" width=\"244\" height=\"199\"/></svg>"
+          },
+          "options": [
+            "e, f, k, g, h",
+            "b, e, f, g, i",
+            "g, i, k, c, f",
+            "c, h, k, a, e",
+            "a, c, e, f, h, j"
+          ],
+          "answer": 4,
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 12
+          }
+        },
+        {
+          "id": "sch-sel-m3-q13",
+          "type": "mc",
+          "stem": "8 Children took from a bag of m & m's. If 7 of the portions the children have are 43, 25, 27, 44, 45, 25, 34, what is the last portion if the average is 34?",
+          "options": [
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(272 - 43 - 25 \\ldots.. = 29\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 13
+          }
+        },
+        {
+          "id": "sch-sel-m3-q14",
+          "type": "mc",
+          "stem": "When dropped, a ball bounces to around 75% of its original height. If the ball is dropped from a height of 16 metres, what will be the height of the second bounce?",
+          "options": [
+            "12 m",
+            "11.8 m",
+            "10 m",
+            "10.75 m",
+            "9 m"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 343 86\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q14-expl.jpg\" x=\"0\" y=\"0\" width=\"343\" height=\"86\"/></svg>"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 14
+          }
+        },
+        {
+          "id": "sch-sel-m3-q16",
+          "type": "multipart",
+          "stem": "Questions 15 and 16 refer to the following graph.\n\nA grade of 240 students select one sport to play which is represented by the graph below. The number of students who play tennis and softball are equal and 80 students play netball.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 391 368\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q15-16.jpg\" x=\"0\" y=\"0\" width=\"391\" height=\"368\"/></svg>"
+          },
+          "parts": [
+            {
+              "id": "sch-sel-m3-q16-p15",
+              "type": "mc",
+              "stem": "What fraction of the students play either soccer or tennis?",
+              "options": [
+                "\\(\\frac{7}{24}\\)",
+                "\\(\\frac{5}{16}\\)",
+                "\\(\\frac{17}{48}\\)",
+                "\\(\\frac{5}{24}\\)",
+                "\\(\\frac{3}{8}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Tennis = 1/8</p><p>Soccer = 1/6</p><p>\\(1/8 + 1/6 = 7/24\\)</p></div>"
+                }
+              ]
+            },
+            {
+              "id": "sch-sel-m3-q16-p16",
+              "type": "mc",
+              "stem": "How many students who play cricket need to switch to softball so that those two sports have an equal number of students playing them?",
+              "options": [
+                "10",
+                "12",
+                "14",
+                "15",
+                "18"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Explanation",
+                  "work": "<div style=\"text-align: left;\"><p>Cricket = \\(\\frac{1}{4} \\times 240 = 60\\)</p><p>Softball = \\(1/8 \\times 240 = 30\\)</p><p>\\((60 + 30)/2 = 45\\)</p><p>Therefore, 15 people from cricket need to move to softball</p></div>"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": "15-16"
+          }
+        },
+        {
+          "id": "sch-sel-m3-q17",
+          "type": "mc",
+          "stem": "What is the next pattern after this series?\n\n1 x 3 x 5 x 7 = 105\n2 x 4 x 6 x 8 = 384\n9 x 11 x 13 x 15 = 19305",
+          "options": [
+            "10 x 12 x 14 x 16 = 2688",
+            "10 x 12 x 14 x 16 = 26880",
+            "10 x 12 x 14 x 16 = 2250",
+            "10 x 12 x 14 x 16 = 22500",
+            "10 x 12 x 14 x 16 = 26580"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(10 \\times 12 \\times 14 \\times 16 = 26880\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 17
+          }
+        },
+        {
+          "id": "sch-sel-m3-q18",
+          "type": "mc",
+          "stem": "7 years ago Bob was one quarter of his father's age. At the moment, his mother is 45, two years younger than his father. How old is Bob now?",
+          "options": [
+            "20",
+            "7",
+            "10",
+            "17",
+            "18"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Bobs fathers current age is 47. \\(47-7 = 40\\)</p><p>Bob was 10 7 years ago. He is now 17.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 18
+          }
+        },
+        {
+          "id": "sch-sel-m3-q19",
+          "type": "mc",
+          "stem": "Find the perimeter of the following shape. The radius of the large circle is 3 cm.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 394 295\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q19.jpg\" x=\"0\" y=\"0\" width=\"394\" height=\"295\"/></svg>"
+          },
+          "options": [
+            "18.84 cm",
+            "20.88 cm",
+            "29.34 cm",
+            "32.52 cm",
+            "37.68 cm"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(2 \\times 3.14 \\times 3 + 3 \\times 2 \\times 3.14 \\times 1 = 37.68\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 19
+          }
+        },
+        {
+          "id": "sch-sel-m3-q20",
+          "type": "mc",
+          "stem": "A baker makes doughnuts for \\(\\$5.00\\). He wants to make a 50% profit. For how much must he sell the doughnuts?",
+          "options": [
+            "\\(\\$2.50\\)",
+            "\\(\\$5.50\\)",
+            "\\(\\$7.50\\)",
+            "\\(\\$10.00\\)",
+            "\\(\\$15.00\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>To make a 50% profit, the baker must sell the doughnut at 150% of the cost he makes it for.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 20
+          }
+        },
+        {
+          "id": "sch-sel-m3-q21",
+          "type": "mc",
+          "stem": "The water temperature inside an unheated kettle is 50°C. The water temperature rises on average 8°C every minute when the kettle is placed on a stove.\nThe time it takes to boil water in a kettle is about",
+          "options": [
+            "5 minutes.",
+            "6 minutes.",
+            "7 minutes.",
+            "8 minutes.",
+            "9 minutes."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The temperature rises 8°C every minute, so in 6 minutes it rises 48 degrees, The time it takes to boil water in a kettle is about</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 21
+          }
+        },
+        {
+          "id": "sch-sel-m3-q22",
+          "type": "mc",
+          "stem": "What is true of the graph below?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 646 292\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q22.jpg\" x=\"0\" y=\"0\" width=\"646\" height=\"292\"/></svg>"
+          },
+          "options": [
+            "The temperature fluctuates randomly throughout the day.",
+            "The maximum temperature is about at 3pm.",
+            "The temperature falls after noon.",
+            "The temperature falls throughout the entire day.",
+            "The minimum temperature is about at 8pm."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The maximum temperature is at around 3pm.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 22
+          }
+        },
+        {
+          "id": "sch-sel-m3-q23",
+          "type": "mc",
+          "stem": "A footpath surrounds a rectangular park. If the parks length if 75% larger than its width, and its width is 20 metres, and the path is one metre away from the park in all aspects, how far is 6 laps on the path?",
+          "options": [
+            "708m",
+            "735m",
+            "884m",
+            "935m",
+            "965m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Length of path = \\(20 \\times 1.75 + 1 + 1 =37\\)</p><p>Width = \\(20 + 1 + 1 =22\\)</p><p>Perimeter = 118</p><p>6 laps = 708 m</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 23
+          }
+        },
+        {
+          "id": "sch-sel-m3-q24",
+          "type": "mc",
+          "stem": "The prism below is built using blocks. The shaded blocks are removed.\n\nTherefore",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 309 244\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q24.jpg\" x=\"0\" y=\"0\" width=\"309\" height=\"244\"/></svg>"
+          },
+          "options": [
+            "the surface area is reduced.",
+            "the surface area is increased.",
+            "the surface area remains the same.",
+            "the volume remains the same.",
+            "none of the above are correct."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Surface area increases</p><p>\\(4 \\times 4=16-4=12\\)</p><p>More surfaces increased</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 24
+          }
+        },
+        {
+          "id": "sch-sel-m3-q25",
+          "type": "mc",
+          "stem": "Five sixths of Georges' weekly savings is worth \\(\\$60\\). Three twelfths of Bob's weekly savings is worth \\(\\$18\\).\n\nWho saves more and by how much?",
+          "options": [
+            "George, by \\(\\$6.00\\)",
+            "Bob, by \\(\\$12.00\\)",
+            "George, by \\(\\$3.00\\)",
+            "Bob, by \\(\\$3.00\\)",
+            "They both save the same amount"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(60/5 \\times 6 = 72\\) = Georges savings</p><p>\\(18/3 \\times 12 = 72\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 25
+          }
+        },
+        {
+          "id": "sch-sel-m3-q26",
+          "type": "mc",
+          "stem": "A clock is ticking but its minute hand is broken. The hour hand is pointing \\(\\frac{8}{12}\\) of the way between 12 and 1. What time is it?",
+          "options": [
+            "12:20",
+            "12:35",
+            "12:40",
+            "12:45",
+            "12:48"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(8/12 = 2/3\\)</p><p>\\(2/3 \\times 60 = 40\\)</p><p>Therefore, it reads 12:40</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 26
+          }
+        },
+        {
+          "id": "sch-sel-m3-q27",
+          "type": "mc",
+          "stem": "A doctor sees his patients for 5 minutes each. If the clinic is open from 8am to 5pm and the doctor takes forty minutes break for lunch, how many patients can he see?",
+          "options": [
+            "95",
+            "100",
+            "120",
+            "80",
+            "110"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>From 8am to 5pm, there are 9 hours. Convert this to 540 minutes. If the doctor takes a 40 minute break, there are 500 minutes left to see patients. 500 divided by 5 is 100.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 27
+          }
+        },
+        {
+          "id": "sch-sel-m3-q28",
+          "type": "mc",
+          "stem": "If\n\n♡ + ♡ + ✻ + ★ + ◇ = 37\n♡ + ✻ = 18\n♡ + ★ = 15\n\nand\n\n◇ + ◇ = ✻\n\nthen\n\n♡ + ✻ + ★ + ◇ = ?",
+          "options": [
+            "27",
+            "30",
+            "34",
+            "23",
+            "20"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>♡+✻ = 18 and♡+✻= 15. Adding these two together gives If ♡+♡ +✻ +★ = 33. Therefore, ◇ = 4. Sub ◇ into ◇+ ◇= ✻. ✻ = 8. Find the rest of the symbols by subbing these values in. You should end up with ♡ = 10 and ★= 5. Thus, ♡ +✻ +★ +◇= 27.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 28
+          }
+        },
+        {
+          "id": "sch-sel-m3-q29",
+          "type": "mc",
+          "stem": "Jonathon made a rectangular rug with a 356-centimetre perimeter, but he decided it was too short. He cut the rug in half and sewed in between the two halves a piece of rug that was 32 cm wide. What is the perimeter of the new rug?",
+          "options": [
+            "400 cm",
+            "390 cm",
+            "420 cm",
+            "464 cm",
+            "450 cm"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>\\(356 + 32 + 32 = \\mathbf{420}\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 29
+          }
+        },
+        {
+          "id": "sch-sel-m3-q30",
+          "type": "mc",
+          "stem": "Which coordinates are the closest together?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 405 408\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q30.jpg\" x=\"0\" y=\"0\" width=\"405\" height=\"408\"/></svg>"
+          },
+          "options": [
+            "(-3, 1) and (-1, -1)",
+            "(-1, 3) and (2, -4)",
+            "(-3, -2) and (-3, 1)",
+            "(2, -1) and (3, 3)",
+            "(2, 2) and (3, 3)"
+          ],
+          "answer": 4,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>(2, 2) and (3, 3) have one space between them</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 30
+          }
+        },
+        {
+          "id": "sch-sel-m3-q31",
+          "type": "mc",
+          "stem": "In a finance textbook, there are 420 pages, with 12 question pages for every 18 theory pages. How many more pages are theory than question?",
+          "options": [
+            "252",
+            "84",
+            "168",
+            "70",
+            "90"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>question = \\(420 \\div 30 \\times 12 = 168\\)</p><p>theory = \\(420 \\div 30 \\times 18 = 252\\)</p><p>difference = \\(252 - 168 = 84\\)</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 31
+          }
+        },
+        {
+          "id": "sch-sel-m3-q32",
+          "type": "mc",
+          "stem": "The first, third and fifth digits of a five-digit number are 5, 6 and 8 respectively. If the first and third digits are swapped, what would be the difference between the two numbers?",
+          "options": [
+            "9 090",
+            "9 900",
+            "9 990",
+            "9 009",
+            "9 999"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Let the missing numbers be 50608 and 60508.</p><p>Difference is 9900</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 32
+          }
+        },
+        {
+          "id": "sch-sel-m3-q33",
+          "type": "mc",
+          "stem": "Dennis, Neil, Allan, and Jonathan were running a 200m race. If Jonathan finished 30 metres in front of Allan who finished 70 m behind Dennis, who finished 80m in front of Neil, what is the distance difference between 2\\(^{\\text{nd}}\\) last and 3\\(^{\\text{rd}}\\) last?",
+          "options": [
+            "15m",
+            "40m",
+            "30m",
+            "10m",
+            "20m"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>Order is D-40-J-30-A-10-N, where number between each letter shows gap between each person.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 33
+          }
+        },
+        {
+          "id": "sch-sel-m3-q34",
+          "type": "mc",
+          "stem": "What is the angle between the hands of a clock at half past four?",
+          "options": [
+            "45°",
+            "30°",
+            "15°",
+            "90°",
+            "60°"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>The number of degrees between each number is 30. Thus at half past 4, it will be \\(\\mathbf{45}\\), as the hour hand will be halfway between the 4 and 5, and the minute hand will be at 6.</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 34
+          }
+        },
+        {
+          "id": "sch-sel-m3-q35",
+          "type": "mc",
+          "stem": "One painter can paint a master bedroom in 3 hours, and the second painter takes 6 hours. How long would it take the two painters together to paint the master bedroom?",
+          "options": [
+            "3 hours",
+            "2 hours 30 minutes",
+            "2 hours",
+            "1.75 hours",
+            "1 hour 30 minutes"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Explanation",
+              "work": "<div style=\"text-align: left;\"><p>In 6 hours, they can build 3 bedrooms</p></div>"
+            }
+          ],
+          "meta": {
+            "source": "Selective Trial Test · Mathematical Reasoning",
+            "test": "Test 3",
+            "number": 35
+          }
         }
       ]
     },
