@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { FileUp, X, Loader2, FileText, BookOpen } from 'lucide-react';
+import { FileUp, X, Loader2, FileText, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import PdfViewer from './PdfViewer';
@@ -33,8 +33,8 @@ const DrivePane = ({ record }) => {
   );
 };
 
-// Pick the student's PDF: a worksheet from their curriculum, or a file from this device.
-const PdfPicker = ({ student, profile, onPickTopic, onUpload, onClose }) => {
+// The curriculum worksheets (topics with a Drive PDF) for a student: assigned ones first, in curriculum order.
+const useTopicPdfs = (profile) => {
   // The student's year is `assignedYear` (a list); older profiles only have `year` / `level`.
   const hasYear = (Array.isArray(profile?.assignedYear) ? profile.assignedYear : [profile?.assignedYear]).some(Boolean);
   const idsKey = curriculumDocIdsForProfile(hasYear || !profile ? (profile || {}) : { ...profile, assignedYear: profile.year || profile.level }).join('|');
@@ -54,7 +54,11 @@ const PdfPicker = ({ student, profile, onPickTopic, onUpload, onClose }) => {
   const ids = idsKey ? idsKey.split('|') : [];
   const state = !idsKey ? { status: 'ready', topics: [], ids }
     : loaded.key === idsKey ? { ...loaded, ids } : { status: 'loading', topics: [], ids };
+  return state;
+};
 
+// Pick the student's PDF: a worksheet from their curriculum, or a file from this device.
+const PdfPicker = ({ student, state, onPickTopic, onUpload, onClose }) => {
   const assigned = state.topics.filter((t) => t.assigned);
   const rest = state.topics.filter((t) => !t.assigned);
   const row = (t) => (
@@ -102,6 +106,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
   const activeStudentId = active?.id || '';
   const profile = profiles.find((p) => p.id === activeStudentId) || null;
   const [pdf, setPdf] = useState({ status: 'loading', record: null, url: '' });   // loading | none | ready | error
+  const topicPdfs = useTopicPdfs(profile);
   const [picking, setPicking] = useState(false);
   const [pane, setPane] = useState('first');
   const fileRef = useRef(null);
@@ -163,6 +168,11 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
   const tabs = layout === 'tabs';
   const record = pdf.record;
   const isDrive = pdf.status === 'ready' && record?.kind === 'drive';
+  // Previous / Next worksheet: along the assigned topics (all of them when none is assigned), in curriculum order.
+  const sequence = topicPdfs.topics.some((t) => t.assigned) ? topicPdfs.topics.filter((t) => t.assigned) : topicPdfs.topics;
+  const seqIndex = isDrive ? sequence.findIndex((t) => t.id === record.topicId) : -1;
+  const prevTopic = seqIndex > 0 ? sequence[seqIndex - 1] : null;
+  const nextTopic = seqIndex >= 0 && seqIndex < sequence.length - 1 ? sequence[seqIndex + 1] : null;
 
   const pdfPane = (
     <div style={{ flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'flex', position: 'relative', background: '#f1f5f9' }}>
@@ -220,6 +230,12 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
           </div>
         )}
         <div style={{ flex: 1 }} />
+        {isDrive && sequence.length > 1 && seqIndex >= 0 && (
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+            <button type="button" aria-label="Previous worksheet" title={prevTopic ? prevTopic.label : 'No earlier worksheet'} disabled={!prevTopic} onClick={() => prevTopic && pickTopic(prevTopic)} style={{ ...headBtn, padding: '7px 10px', opacity: prevTopic ? 1 : 0.4, cursor: prevTopic ? 'pointer' : 'default' }}><ChevronLeft size={16} /> Previous</button>
+            <button type="button" aria-label="Next worksheet" title={nextTopic ? nextTopic.label : 'No later worksheet'} disabled={!nextTopic} onClick={() => nextTopic && pickTopic(nextTopic)} style={{ ...headBtn, padding: '7px 10px', opacity: nextTopic ? 1 : 0.4, cursor: nextTopic ? 'pointer' : 'default' }}>Next <ChevronRight size={16} /></button>
+          </div>
+        )}
         {isDrive && (
           <a href={toDriveOpenUrl(record.url)} target="_blank" rel="noopener noreferrer" style={{ ...headBtn, textDecoration: 'none' }}>Open in Drive</a>
         )}
@@ -236,7 +252,7 @@ const LessonWorkspace = ({ session, students: profiles = [], onClose }) => {
         <input ref={fileRef} type="file" accept="application/pdf,.pdf" onChange={upload} style={{ display: 'none' }} />
       </div>
       <SplitPanes layout={layout} split={split} onSplitChange={setSplit} first={pdfPane} second={notePane} activePane={pane} />
-      {picking && <PdfPicker student={active} profile={profile} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
+      {picking && <PdfPicker student={active} state={topicPdfs} onPickTopic={pickTopic} onUpload={() => fileRef.current?.click()} onClose={() => setPicking(false)} />}
     </div>
   );
 };
