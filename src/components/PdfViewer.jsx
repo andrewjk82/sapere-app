@@ -494,6 +494,10 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
   const pageStackRef = useRef(null);
   const pageSpacerRef = useRef(null);
   const pinchRef = useRef(null);
+  // Where the reader is in the document when the pane is resized (split divider, rotation): the page at the top of
+  // the view and how far down it. Restored once the pages have their new size, so the same spot stays in view.
+  const resizeAnchorRef = useRef(null);
+  const widthRef = useRef(0);
   const pinchAnimationFrameRef = useRef(0);
 
   // Highlights: { [page]: strokes }, remembered per device under `storageKey` (the Drive file id).
@@ -643,6 +647,21 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     root.scrollTop = Math.max(0, origin + anchor.docY * renderZoom - anchor.localY);
   }, [renderZoom, width]);
 
+  // The pane got narrower / wider: the pages changed height with it, so put the remembered spot back at the top.
+  useLayoutEffect(() => {
+    widthRef.current = width;
+    const anchor = resizeAnchorRef.current;
+    const root = scrollRef.current;
+    const stack = pageStackRef.current;
+    resizeAnchorRef.current = null;
+    if (!anchor || !root || !stack) return;
+    const child = stack.children[anchor.index];
+    if (!child) return;
+    const rect = child.getBoundingClientRect();
+    const rootTop = root.getBoundingClientRect().top;
+    root.scrollTop += rect.top + anchor.frac * rect.height - rootTop;
+  }, [width]);
+
   useEffect(() => {
     if (!src) return undefined;
     let cancelled = false;
@@ -664,8 +683,22 @@ const PdfViewer = ({ src, loading, fallback, style, storageKey }) => {
     if (!scrollEl) return undefined;
     const measure = () => {
       const next = Math.min(MAX_PAGE_WIDTH, Math.max(0, scrollEl.clientWidth - PAGE_GAP * 2));
+      const stack = pageStackRef.current;
+      if (stack && Math.abs(next - widthRef.current) >= 1 && !resizeAnchorRef.current && !pendingZoomAnchorRef.current && stack.children.length > 0) {
+        const rootTop = scrollEl.getBoundingClientRect().top;
+        for (let i = 0; i < stack.children.length; i += 1) {
+          const rect = stack.children[i].getBoundingClientRect();
+          if (rect.bottom > rootTop + 1) {
+            if (rect.height > 0) resizeAnchorRef.current = { index: i, frac: (rootTop - rect.top) / rect.height };
+            break;
+          }
+        }
+      }
       // Ignore sub-pixel jitter; the page boxes follow the pane smoothly (the bitmap re-renders after it settles).
-      setWidth((prev) => (Math.abs(prev - next) >= 1 ? next : prev));
+      setWidth((prev) => {
+        if (Math.abs(prev - next) < 1) return prev;
+        return next;
+      });
     };
     measure();
     const ro = new ResizeObserver(measure);
