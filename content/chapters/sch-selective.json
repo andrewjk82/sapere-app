@@ -1,0 +1,31 @@
+{
+  "chapterId": "sch-selective",
+  "title": "Selective",
+  "year": "Scholarship",
+  "topics": [
+    {
+      "topicId": "sch-selective-reading",
+      "code": "",
+      "title": "Reading",
+      "questions": []
+    },
+    {
+      "topicId": "sch-selective-writing",
+      "code": "",
+      "title": "Writing",
+      "questions": []
+    },
+    {
+      "topicId": "sch-selective-maths",
+      "code": "",
+      "title": "Mathematics",
+      "questions": []
+    },
+    {
+      "topicId": "sch-selective-thinking",
+      "code": "",
+      "title": "Thinking Skills",
+      "questions": []
+    }
+  ]
+}

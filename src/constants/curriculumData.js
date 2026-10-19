@@ -3214,5 +3214,15 @@ export const CURRICULUM_DATA = {
         { id: 'sch-acer-maths', title: 'Mathematics' },
       ],
     },
+    {
+      id: 'sch-selective',
+      title: 'Selective',
+      topics: [
+        { id: 'sch-selective-reading', title: 'Reading' },
+        { id: 'sch-selective-writing', title: 'Writing' },
+        { id: 'sch-selective-maths', title: 'Mathematics' },
+        { id: 'sch-selective-thinking', title: 'Thinking Skills' },
+      ],
+    },
   ],
 };
