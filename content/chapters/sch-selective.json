@@ -2299,7 +2299,7 @@
           "type": "multipart",
           "stem": "Study the table below and answer Questions 5 and 6.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 397 358\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q5-6.jpg\" x=\"0\" y=\"0\" width=\"397\" height=\"358\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 340\" style=\"max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"20\" y=\"15\" width=\"280\" height=\"304\" rx=\"6\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"160\" y1=\"15\" x2=\"160\" y2=\"319\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"53\" x2=\"300\" y2=\"53\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"91\" x2=\"300\" y2=\"91\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"129\" x2=\"300\" y2=\"129\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"167\" x2=\"300\" y2=\"167\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"205\" x2=\"300\" y2=\"205\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"243\" x2=\"300\" y2=\"243\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"20\" y1=\"281\" x2=\"300\" y2=\"281\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"90\" y=\"41\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">0</tspan></text><text x=\"230\" y=\"41\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">1</text><text x=\"90\" y=\"79\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">1</tspan></text><text x=\"230\" y=\"79\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">5</text><text x=\"90\" y=\"117\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">2</tspan></text><text x=\"230\" y=\"117\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">25</text><text x=\"90\" y=\"155\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">3</tspan></text><text x=\"230\" y=\"155\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">125</text><text x=\"90\" y=\"193\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">4</tspan></text><text x=\"230\" y=\"193\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">625</text><text x=\"90\" y=\"231\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">5</tspan></text><text x=\"230\" y=\"231\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">3 125</text><text x=\"90\" y=\"269\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">6</tspan></text><text x=\"230\" y=\"269\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">15 625</text><text x=\"90\" y=\"307\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"600\" text-anchor=\"middle\">5<tspan dy=\"-7\" font-size=\"13\">7</tspan></text><text x=\"230\" y=\"307\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"17\" font-weight=\"600\" text-anchor=\"middle\">78 125</text></svg>"
           },
           "parts": [
             {
@@ -2316,15 +2316,22 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(5^4 = 625\\)</p></div>"
+                  "explain": "Convert repeated multiplication into index form",
+                  "work": "<p>Count the number of times \\(5\\) is multiplied by itself:</p><p>\\[5 \\times 5 \\times 5 \\times 5 = 5^4\\]</p>"
+                },
+                {
+                  "explain": "Look up the value of 5⁴ from the table",
+                  "work": "<p>Locate the row for \\(5^4\\) in the table:</p><p>\\[5^4 = 625\\]</p><p>Therefore, the value of \\(5 \\times 5 \\times 5 \\times 5\\) is <strong>625</strong>.</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">MULTIPLICATION</text><text x=\"85\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">5 × 5 × 5 × 5</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(230, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">TABLE: 5⁴</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">625</text></g></svg>"
+                  }
                 }
               ]
             },
             {
               "id": "sch-sel-m3-q6-p6",
               "type": "mc",
-              "stem": "\\(5^6 \\div 5^3 =\\)",
+              "stem": "What is the value of \\(5^6 \\div 5^3\\)?",
               "options": [
                 "25",
                 "125",
@@ -2335,8 +2342,15 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(5^6 \\div 5^3 = 5^3 = 125\\)</p></div>"
+                  "explain": "Apply the index law of division",
+                  "work": "<p>When dividing powers with the same base, subtract the exponents:</p><p>\\[a^m \\div a^n = a^{m - n}\\]</p><p>Applying this to \\(5^6 \\div 5^3\\):</p><p>\\[5^6 \\div 5^3 = 5^{6 - 3} = 5^3\\]</p>"
+                },
+                {
+                  "explain": "Look up 5³ from the table",
+                  "work": "<p>From the table, find the row corresponding to \\(5^3\\):</p><p>\\[5^3 = 125\\]</p><p><em>Verification:</em> Using direct values from the table:</p><p>\\[5^6 = 15\\,625, \\quad 5^3 = 125\\]</p><p>\\[\\frac{15\\,625}{125} = 125\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">INDEX LAW</text><text x=\"85\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">5⁶ ÷ 5³ = 5⁶⁻³ = 5³</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(230, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">TABLE: 5³</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">125</text></g></svg>"
+                  }
                 }
               ]
             }
