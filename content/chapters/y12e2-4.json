@@ -101,6 +101,269 @@
               "note": "Rewrite the denominator using sine, then differentiate \\(u=\\sin x-x\\cos x\\)."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int\\sqrt{\\frac{5-x}{5+x}}\\,dx\\) by rationalising the numerator or otherwise.",
+          "hint": "Multiply the fraction inside the square root by \\(\\frac{5-x}{5-x}\\) so the denominator becomes \\(25-x^2\\).",
+          "steps": [
+            {
+              "explain": "Rationalise the expression under the square root.",
+              "work": "\\(\\sqrt{\\frac{5-x}{5+x}}=\\frac{5-x}{\\sqrt{25-x^2}}.\\)"
+            },
+            {
+              "explain": "Separate the numerator into terms with standard antiderivatives.",
+              "work": "\\(\\int\\frac{5-x}{\\sqrt{25-x^2}}dx=5\\int\\frac{dx}{\\sqrt{25-x^2}}-\\int\\frac{x}{\\sqrt{25-x^2}}dx.\\)"
+            },
+            {
+              "explain": "Integrate each term.",
+              "work": "\\(5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C.\\)"
+            },
+            {
+              "explain": "State the result.",
+              "work": "\\(\\boxed{5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(5\\sin^{-1}(\\frac{x}{5})-\\sqrt{25-x^2}+C\\)",
+            "\\(\\sin^{-1}(\\frac{x}{5})+5\\sqrt{25-x^2}+C\\)",
+            "\\(5\\ln|x+\\sqrt{25-x^2}|+C\\)",
+            "\\(5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C\\)",
+          "keyPoints": [
+            {
+              "text": "\\int\\sqrt{\\frac{5-x}{5+x}}\\,dx",
+              "note": "Rationalise to (5−x)/√(25−x²), then split the numerator."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Use a trigonometric substitution to evaluate \\(\\int\\frac{dx}{x^2\\sqrt{4-x^2}}\\).",
+          "hint": "For \\(\\sqrt{4-x^2}\\), set \\(x=2\\sin\\theta\\), so the radical becomes \\(2\\cos\\theta\\).",
+          "steps": [
+            {
+              "explain": "Apply the trigonometric substitution and transform dx.",
+              "work": "\\(x=2\\sin\\theta,\\quad dx=2\\cos\\theta\\,d\\theta,\\quad\\sqrt{4-x^2}=2\\cos\\theta.\\)"
+            },
+            {
+              "explain": "Simplify the integrand in θ.",
+              "work": "\\(\\int\\frac{2\\cos\\theta\\,d\\theta}{4\\sin^2\\theta(2\\cos\\theta)}=\\frac14\\int\\csc^2\\theta\\,d\\theta=-\\frac14\\cot\\theta+C.\\)"
+            },
+            {
+              "explain": "Convert back to x using the right triangle.",
+              "work": "\\(\\cot\\theta=\\frac{\\sqrt{4-x^2}}x\\Rightarrow\\boxed{-\\frac{\\sqrt{4-x^2}}{4x}+C}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(\\frac{\\sqrt{4-x^2}}{4x}+C\\)",
+            "\\(-\\frac{\\sqrt{4-x^2}}{2x}+C\\)",
+            "\\(-\\frac{x}{4\\sqrt{4-x^2}}+C\\)",
+            "\\(-\\frac{\\sqrt{4-x^2}}{4x}+C\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(-\\frac{\\sqrt{4-x^2}}{4x}+C\\)",
+          "keyPoints": [
+            {
+              "text": "trigonometric substitution",
+              "note": "Use x=2sinθ so the radical simplifies and a cosecant-squared integral remains."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q14d",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Question 14(d): analyse and integrate \\(f(x)=\\sqrt{2-\\sqrt{x}}\\)",
+          "hint": "First analyse the nested square roots, then use a substitution to evaluate the area.",
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q14d-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Explain why the domain of \\(f(x)=\\sqrt{2-\\sqrt{x}}\\) is \\(0\\le x\\le4\\).",
+              "hint": "Both the inner square root and the outer radicand must be non-negative.",
+              "steps": [
+                {
+                  "explain": "Require x to be valid for the inner square root.",
+                  "work": "\\(x\\ge0.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Require the outer square-root radicand to be non-negative.",
+                  "work": "\\(2-\\sqrt{x}\\ge0\\Rightarrow\\sqrt{x}\\le2\\Rightarrow x\\le4.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Combine the two restrictions.",
+                  "work": "\\(\\boxed{0\\le x\\le4}.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(x\\ge4\\)",
+                "\\(0\\le x\\le2\\)",
+                "\\(0\\le x\\le4\\)",
+                "\\(-4\\le x\\le4\\)"
+              ],
+              "answer": 2,
+              "solution": "\\(0\\le x\\le4\\)",
+              "keyPoints": [
+                {
+                  "text": "domain of \\(f(x)=\\sqrt{2-\\sqrt{x}}\\)",
+                  "note": "Require x≥0 and also 2−√x≥0."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q14d-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Show that \\(f(x)=\\sqrt{2-\\sqrt{x}}\\) is decreasing on its domain and find its range.",
+              "hint": "Differentiate for interior points 0<x<4. Then compare the endpoint function values.",
+              "steps": [
+                {
+                  "explain": "Differentiate using the chain rule.",
+                  "work": "\\(f'(x)=-\\frac{1}{4\\sqrt{x}\\sqrt{2-\\sqrt{x}}}\\quad(0<x<4).\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "The derivative is negative throughout the interior, so f decreases.",
+                  "work": "\\(f'(x)<0\\quad\\text{for }0<x<4.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Evaluate the endpoints to obtain the range.",
+                  "work": "\\(f(0)=\\sqrt2,\\quad f(4)=0\\Rightarrow\\boxed{0\\le f(x)\\le\\sqrt2}.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "Increasing; \\(0\\le y\\le\\sqrt2\\)",
+                "Decreasing; \\(0\\le y\\le2\\)",
+                "Increasing; \\(0\\le y\\le2\\)",
+                "Decreasing; \\(0\\le y\\le\\sqrt2\\)"
+              ],
+              "answer": 3,
+              "solution": "Decreasing; \\(0\\le y\\le\\sqrt2\\)",
+              "keyPoints": [
+                {
+                  "text": "decreasing on its domain and find its range",
+                  "note": "The derivative is negative for 0<x<4; use f(0) and f(4) for the endpoints."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+              }
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q14d-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find the area bounded by \\(y=\\sqrt{2-\\sqrt{x}}\\) and the x- and y-axes.",
+              "hint": "Set \\(u=2-\\sqrt{x}\\), so \\(x=(2-u)^2\\). Change both limits and include the Jacobian.",
+              "steps": [
+                {
+                  "explain": "Write the area as a definite integral and make the substitution.",
+                  "work": "\\(A=\\int_0^4\\sqrt{2-\\sqrt{x}}\\,dx,\\quad u=2-\\sqrt{x},\\quad dx=-2(2-u)\\,du.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Transform the bounds: x=0 gives u=2 and x=4 gives u=0.",
+                  "work": "\\(A=\\int_2^0\\sqrt{u}[-2(2-u)]\\,du=2\\int_0^2(2-u)u^{1/2}\\,du.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><path d=\"M70 55 C115 65 190 105 265 165 L265 165 L70 165Z\" fill=\"#bbf7d0\" opacity=\"0.8\"/><path d=\"M70 55 C115 65 190 105 265 165\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"55\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"265\" cy=\"165\" r=\"3.5\" fill=\"#f97316\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                },
+                {
+                  "explain": "Integrate and evaluate at 0 and 2.",
+                  "work": "\\(A=2\\left[\\frac43u^{3/2}-\\frac25u^{5/2}\\right]_0^2=\\frac{32\\sqrt2}{15}.\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><path d=\"M70 55 C115 65 190 105 265 165 L265 165 L70 165Z\" fill=\"#bbf7d0\" opacity=\"0.8\"/><path d=\"M70 55 C115 65 190 105 265 165\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"55\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"265\" cy=\"165\" r=\"3.5\" fill=\"#f97316\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+                  }
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac{32\\sqrt2}{15}\\)",
+                "\\(\\frac{16\\sqrt2}{15}\\)",
+                "\\(\\frac{32\\sqrt2}{5}\\)",
+                "\\(\\frac{8\\sqrt2}{3}\\)"
+              ],
+              "answer": 0,
+              "solution": "\\(\\frac{32\\sqrt2}{15}\\)",
+              "keyPoints": [
+                {
+                  "text": "area bounded by \\(y=\\sqrt{2-\\sqrt{x}}\\)",
+                  "note": "Use u=2−√x and reverse the transformed limits after substituting dx."
+                }
+              ],
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><path d=\"M70 55 C115 65 190 105 265 165 L265 165 L70 165Z\" fill=\"#bbf7d0\" opacity=\"0.8\"/><path d=\"M70 55 C115 65 190 105 265 165\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"55\" r=\"3.5\" fill=\"#f97316\"/><circle cx=\"265\" cy=\"165\" r=\"3.5\" fill=\"#f97316\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          }
         }
       ]
     },
@@ -149,6 +412,278 @@
               "note": "Write the rational function as \\(A/(x-2)+B/(x+3)\\) before integrating."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The integral \\(\\int \\frac{3x-A}{1-x^2}\\,dx\\) can be evaluated using \\(\\frac{-1}{1+x}+\\frac{2}{1-x}\\). Find \\(A\\).",
+          "hint": "Combine the two fractions over the common denominator \\(1-x^2=(1-x)(1+x)\\), then match the coefficient of \\(x\\).",
+          "steps": [
+            {
+              "explain": "Write the given partial fractions over one denominator.",
+              "work": "\\(\\frac{-1}{1+x}+\\frac{2}{1-x}=\\frac{-(1-x)+2(1+x)}{(1+x)(1-x)}=\\frac{3x+1}{1-x^2}.\\)"
+            },
+            {
+              "explain": "Match the numerator with \\(3x-A\\).",
+              "work": "\\(3x-A=3x+1\\quad\\Rightarrow\\quad -A=1\\quad\\Rightarrow\\quad A=-1.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(-1\\)",
+            "\\(-3\\)",
+            "\\(1\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(A=-1\\)",
+          "keyPoints": [
+            {
+              "text": "Find \\(A\\).",
+              "note": "Combine the fractions and compare the constant terms in the numerators."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int\\frac{1+x}{4+x^2}\\,dx\\).",
+          "hint": "Split the numerator into \\(1+x\\). The x-term is a logarithmic derivative; the constant term uses the arctangent form.",
+          "steps": [
+            {
+              "explain": "Separate the integral into two standard forms.",
+              "work": "\\(\\int\\frac{1+x}{4+x^2}\\,dx=\\int\\frac{x}{4+x^2}\\,dx+\\int\\frac{1}{4+x^2}\\,dx.\\)"
+            },
+            {
+              "explain": "Integrate the first term using u=4+x².",
+              "work": "\\(\\int\\frac{x}{4+x^2}\\,dx=\\frac12\\ln(4+x^2).\\)"
+            },
+            {
+              "explain": "Use the scaled arctangent formula for the second term.",
+              "work": "\\(\\int\\frac{1}{4+x^2}\\,dx=\\frac12\\tan^{-1}(\\frac{x}{2}).\\)"
+            },
+            {
+              "explain": "Combine both antiderivatives and add the constant.",
+              "work": "\\(\\boxed{\\frac12\\tan^{-1}(\\frac{x}{2})+\\frac12\\ln(4+x^2)+C}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(\\frac12\\tan^{-1}(\\frac{x}{2})+\\frac12\\ln(4+x^2)+C\\)",
+            "\\(\\tan^{-1}(\\frac{x}{2})+\\frac12\\ln(4+x^2)+C\\)",
+            "\\(\\frac12\\tan^{-1}(2x)+\\ln(4+x^2)+C\\)",
+            "\\(\\frac12\\tan^{-1}(\\frac{x}{2})-\\frac12\\ln(4+x^2)+C\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(\\frac12\\tan^{-1}(\\frac{x}{2})+\\frac12\\ln(4+x^2)+C\\)",
+          "keyPoints": [
+            {
+              "text": "\\int\\frac{1+x}{4+x^2}\\,dx",
+              "note": "Split into an x-over-quadratic logarithm and a scaled arctangent integral."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q15b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Question 15(b): partial fractions and reflection symmetry",
+          "hint": "Use partial fractions for the logarithmic integral and reflection symmetry for the cosine-squared integral.",
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q15b-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "If \\(\\frac1{x(\\pi-2x)}=\\frac A x+\\frac B{\\pi-2x}\\) and \\(A=\\frac1\\pi\\), find B.",
+              "hint": "Multiply through by \\(x(\\pi-2x)\\), then compare the coefficient of x.",
+              "steps": [
+                {
+                  "explain": "Clear the denominators.",
+                  "work": "\\(1=A(\\pi-2x)+Bx=A\\pi+(B-2A)x.\\)"
+                },
+                {
+                  "explain": "The x coefficient must be zero.",
+                  "work": "\\(B-2A=0,\\quad B=2A=\\boxed{\\frac2\\pi}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac1{2\\pi}\\)",
+                "\\(\\frac1\\pi\\)",
+                "\\(\\frac4\\pi\\)",
+                "\\(\\frac2\\pi\\)"
+              ],
+              "answer": 3,
+              "solution": "\\(\\frac2\\pi\\)",
+              "keyPoints": [
+                {
+                  "text": "find B",
+                  "note": "After clearing denominators, set the coefficient of x equal to zero."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q15b-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence show that \\(\\int_{\\pi/6}^{\\pi/3}\\frac{dx}{x(\\pi-2x)}=\\frac2\\pi\\ln2\\).",
+              "hint": "Use the partial fractions \\(1/(\\pi x)+2/[\\pi(\\pi-2x)]\\), and remember the factor −2 when integrating the second denominator.",
+              "steps": [
+                {
+                  "explain": "Substitute A and B into the partial fractions.",
+                  "work": "\\(\\frac1{x(\\pi-2x)}=\\frac1{\\pi x}+\\frac2{\\pi(\\pi-2x)}.\\)"
+                },
+                {
+                  "explain": "Integrate both terms.",
+                  "work": "\\(\\int\\left(\\frac1{\\pi x}+\\frac2{\\pi(\\pi-2x)}\\right)dx=\\frac1\\pi\\ln x-\\frac1\\pi\\ln(\\pi-2x).\\)"
+                },
+                {
+                  "explain": "Evaluate between π/6 and π/3.",
+                  "work": "\\(\\frac1\\pi\\left[\\ln\\frac{x}{\\pi-2x}\\right]_{\\pi/6}^{\\pi/3}=\\frac1\\pi(\\ln1-\\ln\\frac14)=\\boxed{\\frac2\\pi\\ln2}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac2\\pi\\ln2\\)",
+                "\\(\\frac1\\pi\\ln2\\)",
+                "\\(\\frac2\\pi\\ln4\\)",
+                "\\(\\frac1{2\\pi}\\ln2\\)"
+              ],
+              "answer": 0,
+              "solution": "\\(\\frac2\\pi\\ln2\\)",
+              "keyPoints": [
+                {
+                  "text": "\\int_{\\pi/6}^{\\pi/3}\\frac{dx}{x(\\pi-2x)}",
+                  "note": "Integrate the second partial fraction with its inner derivative −2."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q15b-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Using \\(u=a+b-x\\), which identity holds for \\(\\int_a^b f(x)\\,dx\\)?",
+              "hint": "The substitution reverses the limits because du=−dx. Reverse them again to restore the interval from a to b.",
+              "steps": [
+                {
+                  "explain": "Set the substitution and transform the differential.",
+                  "work": "\\(u=a+b-x,\\quad du=-dx.\\)"
+                },
+                {
+                  "explain": "Transform both endpoints.",
+                  "work": "\\(x=a\\Rightarrow u=b,\\quad x=b\\Rightarrow u=a.\\)"
+                },
+                {
+                  "explain": "Apply the change of variables and reverse the bounds.",
+                  "work": "\\(\\int_a^b f(x)dx=\\int_b^a f(u)(-du)=\\int_a^b f(u)du=\\int_a^b f(a+b-x)dx.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\int_a^b f(x)\\,dx=-\\int_a^b f(a+b-x)\\,dx\\)",
+                "\\(\\int_a^b f(x)\\,dx=\\int_a^b f(a+b-x)\\,dx\\)",
+                "\\(\\int_a^b f(x)\\,dx=\\int_b^a f(a+b-x)\\,dx\\)",
+                "\\(\\int_a^b f(x)\\,dx=\\int_a^b f(x-a-b)\\,dx\\)"
+              ],
+              "answer": 1,
+              "solution": "\\(\\int_a^b f(x)\\,dx=\\int_a^b f(a+b-x)\\,dx\\)",
+              "keyPoints": [
+                {
+                  "text": "Using \\(u=a+b-x\\)",
+                  "note": "Transform both bounds and account for du=−dx; the two sign changes cancel."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q15b-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Evaluate \\(\\int_{\\pi/6}^{\\pi/3}\\frac{\\cos^2x}{x(\\pi-2x)}\\,dx\\).",
+              "hint": "Reflect x to π/2−x. The denominator is unchanged, while cos²x changes to sin²x; add the two equal integrals.",
+              "steps": [
+                {
+                  "explain": "Define the requested integral and apply reflection symmetry.",
+                  "work": "\\(J=\\int_{\\pi/6}^{\\pi/3}\\frac{\\cos^2x}{x(\\pi-2x)}dx.\\)"
+                },
+                {
+                  "explain": "Under x→π/2−x, the interval stays the same and the denominator is unchanged.",
+                  "work": "\\(J=\\int_{\\pi/6}^{\\pi/3}\\frac{\\sin^2x}{x(\\pi-2x)}dx.\\)"
+                },
+                {
+                  "explain": "Add the two expressions and use sin²x+cos²x=1.",
+                  "work": "\\(2J=\\int_{\\pi/6}^{\\pi/3}\\frac{dx}{x(\\pi-2x)}.\\)"
+                },
+                {
+                  "explain": "Decompose and integrate directly.",
+                  "work": "\\(\\frac1{x(\\pi-2x)}=\\frac1{\\pi x}+\\frac2{\\pi(\\pi-2x)},\\quad 2J=\\frac1\\pi\\left[\\ln\\frac{x}{\\pi-2x}\\right]_{\\pi/6}^{\\pi/3}=\\frac2\\pi\\ln2.\\)"
+                },
+                {
+                  "explain": "Divide by two.",
+                  "work": "\\(\\boxed{J=\\frac1\\pi\\ln2}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac2\\pi\\ln2\\)",
+                "\\(\\frac1{2\\pi}\\ln2\\)",
+                "\\(\\frac1\\pi\\ln2\\)",
+                "\\(\\frac2{\\pi^2}\\ln2\\)"
+              ],
+              "answer": 2,
+              "solution": "\\(\\frac1\\pi\\ln2\\)",
+              "keyPoints": [
+                {
+                  "text": "Evaluate \\(\\int_{\\pi/6}^{\\pi/3}\\frac{\\cos^2x}{x(\\pi-2x)}\\,dx\\)",
+                  "note": "Pair cos²x with its reflected sin²x integral, then evaluate the resulting rational integral by partial fractions."
+                }
+              ]
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          }
         }
       ]
     },
@@ -156,7 +691,108 @@
       "topicId": "y12e2-4E",
       "code": "4E",
       "title": "Denominators with Quadratics",
-      "questions": []
+      "questions": [
+        {
+          "id": "abbotsleigh2021-ext2-q12b-d",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Question 12(b), (d): integration",
+          "hint": "Use completing the square for (b) and a trigonometric substitution for (d).",
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q12b",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "By completing the square, evaluate \\(\\int\\frac{1}{\\sqrt{6-x^2-x}}\\,dx\\).",
+              "hint": "Complete the square in the radicand to get a constant minus a squared linear expression, then use the inverse-sine integral.",
+              "steps": [
+                {
+                  "explain": "Complete the square.",
+                  "work": "\\(6-x^2-x=\\frac{25}{4}-(x+\\frac12)^2.\\)"
+                },
+                {
+                  "explain": "Match the standard form and account for the inner derivative.",
+                  "work": "\\(\\int\\frac{dx}{\\sqrt{(5/2)^2-(x+1/2)^2}}=\\sin^{-1}\\left(\\frac{x+1/2}{5/2}\\right)+C.\\)"
+                },
+                {
+                  "explain": "Simplify the argument.",
+                  "work": "\\(\\boxed{\\sin^{-1}\\left(\\frac{2x+1}{5}\\right)+C}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\cos^{-1}\\left(\\frac{2x+1}{5}\\right)+C\\)",
+                "\\(\\sin^{-1}\\left(\\frac{x+1/2}{5}\\right)+C\\)",
+                "\\(\\sin^{-1}\\left(\\frac{2x+1}{5}\\right)+C\\)",
+                "\\(\\ln|6-x^2-x|+C\\)"
+              ],
+              "answer": 2,
+              "solution": "\\(\\sin^{-1}\\left(\\frac{2x+1}{5}\\right)+C\\)",
+              "keyPoints": [
+                {
+                  "text": "By completing the square",
+                  "note": "Rewrite the radicand as (5/2)²−(x+1/2)², then use the arcsine form."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q12d",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Evaluate \\(\\int\\sin^3x\\cos^3x\\,dx\\).",
+              "hint": "Keep one factor of cos x dx and rewrite the remaining cos²x as \\(1-\\sin^2x\\).",
+              "steps": [
+                {
+                  "explain": "Separate one cosine factor for substitution.",
+                  "work": "\\(\\sin^3x\\cos^3x=\\sin^3x(1-\\sin^2x)\\cos x.\\)"
+                },
+                {
+                  "explain": "Set u=sin x, so du=cos x dx.",
+                  "work": "\\(\\int(u^3-u^5)\\,du=\\frac{u^4}{4}-\\frac{u^6}{6}+C.\\)"
+                },
+                {
+                  "explain": "Substitute back.",
+                  "work": "\\(\\boxed{\\frac14\\sin^4x-\\frac16\\sin^6x+C}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac14\\cos^4x-\\frac16\\cos^6x+C\\)",
+                "\\(\\frac14\\sin^4x+\\frac16\\sin^6x+C\\)",
+                "\\(-\\frac14\\sin^4x+\\frac16\\sin^6x+C\\)",
+                "\\(\\frac14\\sin^4x-\\frac16\\sin^6x+C\\)"
+              ],
+              "answer": 3,
+              "solution": "\\(\\frac14\\sin^4x-\\frac16\\sin^6x+C\\)",
+              "keyPoints": [
+                {
+                  "text": "\\int\\sin^3x\\cos^3x\\,dx",
+                  "note": "Use u=sin x and convert the leftover cos²x to 1−sin²x."
+                }
+              ]
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          }
+        }
+      ]
     },
     {
       "topicId": "y12e2-4F",
@@ -326,6 +962,86 @@
               "note": "Sum the recurrence; the I-terms telescope and the remaining powers form a geometric series."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Given \\(\\frac{d}{dx}\\bigl(x\\cos^{-1}x\\bigr)=\\cos^{-1}x-\\frac{x}{\\sqrt{1-x^2}}\\), which expression equals \\(\\int\\cos^{-1}x\\,dx\\)?",
+          "hint": "Rearrange the derivative identity to make \\(\\cos^{-1}x\\) the subject, then integrate both sides.",
+          "steps": [
+            {
+              "explain": "Rearrange the supplied identity.",
+              "work": "\\(\\cos^{-1}x=\\frac{d}{dx}(x\\cos^{-1}x)+\\frac{x}{\\sqrt{1-x^2}}.\\)"
+            },
+            {
+              "explain": "Integrate term by term.",
+              "work": "\\(\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx+C.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx+C\\)",
+            "\\(\\int x\\cos^{-1}x\\,dx+\\frac{x}{\\sqrt{1-x^2}}+C\\)",
+            "\\(x\\cos^{-1}x-\\frac{x}{\\sqrt{1-x^2}}+C\\)",
+            "\\(\\int x\\cos^{-1}x\\,dx+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx+C\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx+C\\)",
+          "keyPoints": [
+            {
+              "text": "\\int\\cos^{-1}x\\,dx",
+              "note": "Rearrange the given derivative before integrating; do not differentiate the inverse cosine again."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Evaluate \\(\\int_0^{\\ln2}xe^{-x}\\,dx\\) in simplest form.",
+          "hint": "Use integration by parts with \\(u=x\\) and \\(dv=e^{-x}dx\\), then substitute both limits carefully.",
+          "steps": [
+            {
+              "explain": "Choose u=x and dv=e⁻ˣ dx.",
+              "work": "\\(u=x,\\quad du=dx,\\quad v=-e^{-x}.\\)"
+            },
+            {
+              "explain": "Apply integration by parts.",
+              "work": "\\(\\int xe^{-x}dx=-xe^{-x}-e^{-x}+C=-(x+1)e^{-x}+C.\\)"
+            },
+            {
+              "explain": "Evaluate at ln 2 and 0.",
+              "work": "\\(\\left[-(x+1)e^{-x}\\right]_0^{\\ln2}=1-\\frac{\\ln2+1}{2}=\\boxed{\\frac{1-\\ln2}{2}}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          },
+          "options": [
+            "\\(\\frac{\\ln2-1}{2}\\)",
+            "\\(1-\\ln2\\)",
+            "\\(\\frac{1-\\ln2}{2}\\)",
+            "\\(\\frac12\\ln2\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(\\frac{1-\\ln2}{2}\\)",
+          "keyPoints": [
+            {
+              "text": "\\int_0^{\\ln2}xe^{-x}\\,dx",
+              "note": "After integration by parts, use e^(−ln 2)=1/2 at the upper limit."
+            }
+          ]
         }
       ]
     },
@@ -370,6 +1086,106 @@
               "note": "Use the identity for sin^5θ and integrate the three sine terms, or apply the reduction formula."
             }
           ]
+        },
+        {
+          "id": "abbotsleigh2021-ext2-q15a",
+          "type": "multipart",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Question 15(a): a reduction relation for tangent integrals",
+          "hint": "Use the reduction identity from part (i), then evaluate the simpler tangent-square integral.",
+          "parts": [
+            {
+              "id": "abbotsleigh2021-ext2-q15a-i",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Let \\(I_n=\\int_0^{\\pi/4}\\tan^n x\\,dx\\), where n is an integer and n≥3. Which reduction relation is correct?",
+              "hint": "Rewrite \\(\\tan^n x+\\tan^{n-2}x\\) as \\(\\tan^{n-2}x\\sec^2x\\), then integrate using the derivative of tan x.",
+              "steps": [
+                {
+                  "explain": "Combine the two integrands.",
+                  "work": "\\(I_n+I_{n-2}=\\int_0^{\\pi/4}\\tan^{n-2}x(\\tan^2x+1)\\,dx=\\int_0^{\\pi/4}\\tan^{n-2}x\\sec^2x\\,dx.\\)"
+                },
+                {
+                  "explain": "Substitute u=tan x.",
+                  "work": "\\(u=\\tan x,\\quad du=\\sec^2x\\,dx,\\quad u(0)=0,\\;u(\\pi/4)=1.\\)"
+                },
+                {
+                  "explain": "Integrate the power and apply the bounds.",
+                  "work": "\\(I_n+I_{n-2}=\\int_0^1u^{n-2}du=\\left[\\frac{u^{n-1}}{n-1}\\right]_0^1=\\frac1{n-1}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(I_n-I_{n-2}=\\frac1{n-1}\\)",
+                "\\(I_n+I_{n-2}=\\frac1{n-1}\\)",
+                "\\(I_n+I_{n-2}=\\frac1n\\)",
+                "\\(I_n-I_{n-2}=\\frac1n\\)"
+              ],
+              "answer": 1,
+              "solution": "\\(I_n+I_{n-2}=\\frac1{n-1}\\)",
+              "keyPoints": [
+                {
+                  "text": "Which reduction relation is correct",
+                  "note": "Use 1+tan²x=sec²x and substitute u=tan x."
+                }
+              ]
+            },
+            {
+              "id": "abbotsleigh2021-ext2-q15a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "Hence evaluate \\(\\int_0^{\\pi/4}\\tan^4x\\,dx\\).",
+              "hint": "Use the relation with n=4, and first evaluate \\(I_2=\\int_0^{\\pi/4}(\\sec^2x-1)dx\\).",
+              "steps": [
+                {
+                  "explain": "Apply the reduction relation with n=4.",
+                  "work": "\\(I_4+I_2=\\frac13\\Rightarrow I_4=\\frac13-I_2.\\)"
+                },
+                {
+                  "explain": "Evaluate I2 using tan²x=sec²x−1.",
+                  "work": "\\(I_2=[\\tan x-x]_0^{\\pi/4}=1-\\frac\\pi4.\\)"
+                },
+                {
+                  "explain": "Substitute and simplify.",
+                  "work": "\\(I_4=\\frac13-(1-\\frac\\pi4)=\\boxed{\\frac\\pi4-\\frac23}.\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Abbotsleigh 2021 4U Trials & Solutions",
+                "school": "Abbotsleigh",
+                "year": 2021
+              },
+              "options": [
+                "\\(\\frac23-\\frac\\pi4\\)",
+                "\\(\\frac\\pi4-\\frac13\\)",
+                "\\(\\frac\\pi4-\\frac23\\)",
+                "\\(\\frac13-\\frac\\pi4\\)"
+              ],
+              "answer": 2,
+              "solution": "\\(\\frac\\pi4-\\frac23\\)",
+              "keyPoints": [
+                {
+                  "text": "evaluate \\(\\int_0^{\\pi/4}\\tan^4x\\,dx\\)",
+                  "note": "Find I₂ from tan²x=sec²x−1, then use I₄+I₂=1/3."
+                }
+              ]
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2021 4U Trials & Solutions",
+            "school": "Abbotsleigh",
+            "year": 2021
+          }
         }
       ]
     }
