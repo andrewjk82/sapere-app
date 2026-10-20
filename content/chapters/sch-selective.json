@@ -34,8 +34,19 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>James pays the deposit of \\(\\$900\\), so he has another \\(\\$9428-\\$900=\\$8528\\)</p></div>"
+              "explain": "Identify the total car price and the deposit paid, then set up the balance equation.",
+              "work": "<div style=\"text-align: left;\"><p>The total purchase price of the car is \\(\\$9428\\), and James paid a deposit of \\(\\$900\\).</p><p>To find how much money James still owes before he can pick up the car, subtract the deposit from the total price:</p><p>$$\\text{Remaining Balance} = \\text{Total Price} - \\text{Deposit Paid}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the remaining balance to pay.",
+              "work": "<div style=\"text-align: left;\"><p>Perform the subtraction:</p><p>$$\\text{Remaining Balance} = \\$9428 - \\$900 = \\mathbf{\\$8528}$$</p><p><em>(Mental check: \\(\\$9428 - \\$1000 = \\$8428\\), then add \\(\\$100 = \\$8528\\))</em></p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 160\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"556\" height=\"156\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"280\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">Total Car Purchase Price = $9,428</text>\n  <g transform=\"translate(40, 48)\">\n    <rect x=\"0\" y=\"0\" width=\"60\" height=\"46\" rx=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <text x=\"30\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Deposit</text>\n    <rect x=\"68\" y=\"0\" width=\"412\" height=\"46\" rx=\"6\" fill=\"#10b981\" fill-opacity=\"0.85\" stroke=\"#059669\" stroke-width=\"1.5\"/>\n    <text x=\"274\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Remaining Balance to Pay = $8,528</text>\n    <!-- Dimension lines -->\n    <text x=\"30\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">$900</text>\n    <text x=\"274\" y=\"70\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">$9,428 − $900 = $8,528</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "State the final conclusion.",
+              "work": "<div style=\"text-align: left;\"><p>James had <strong>\\(\\$8528\\)</strong> left to pay before picking up the car.</p></div>"
             }
           ],
           "meta": {
@@ -58,8 +69,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>The original answer should be:</p><p>\\(18 \\times 21 = 378,\\ \\ 378 \\times 21 + 10 = 7948\\)</p><p>\\(\\therefore\\) The difference is \\(7948 - 8 = 7940\\)</p></div>"
+              "explain": "Work backwards from Beethoven's incorrect calculation to find the original number N.",
+              "work": "<div style=\"text-align: left;\"><p>Let the original starting number be \\(N\\).</p><p>Beethoven performed the following incorrect steps:</p><p>1. Divided \\(N\\) by 21 instead of multiplying: \\(\\frac{N}{21}\\)</p><p>2. Subtracted 10 instead of adding: \\(\\frac{N}{21} - 10 = 8\\)</p><p>Now reverse these operations to solve for \\(N\\):</p><p>$$\\frac{N}{21} = 8 + 10 = 18$$</p><p>$$N = 18 \\times 21 = \\mathbf{378}$$</p></div>"
+            },
+            {
+              "explain": "Calculate what Beethoven's answer should have been using the correct operations.",
+              "work": "<div style=\"text-align: left;\"><p>The original problem instructed Beethoven to:</p><p>1. Multiply the number by 21: \\(378 \\times 21 = 7938\\)</p><p>2. Add 10: \\(7938 + 10 = \\mathbf{7948}\\)</p><p>So what it <em>should have been</em> is \\(7948\\).</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 620 220\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"616\" height=\"216\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <!-- Mistaken Path -->\n  <g transform=\"translate(20, 25)\">\n    <rect x=\"0\" y=\"0\" width=\"580\" height=\"75\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/>\n    <text x=\"15\" y=\"24\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#b91c1c\">Beethoven's Mistaken Calculation (Backtracking):</text>\n    <text x=\"40\" y=\"52\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">Start N = 378</text>\n    <path d=\"M 140 48 L 175 48\" stroke=\"#ef4444\" stroke-width=\"2\" marker-end=\"url(#arrowRed)\"/>\n    <text x=\"195\" y=\"52\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">÷ 21 = 18</text>\n    <path d=\"M 270 48 L 305 48\" stroke=\"#ef4444\" stroke-width=\"2\"/>\n    <text x=\"325\" y=\"52\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">− 10 = 8 (Final Answer)</text>\n  </g>\n  <!-- Intended Path -->\n  <g transform=\"translate(20, 115)\">\n    <rect x=\"0\" y=\"0\" width=\"580\" height=\"85\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"15\" y=\"24\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">Intended Correct Calculation:</text>\n    <text x=\"40\" y=\"54\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">Start N = 378</text>\n    <path d=\"M 140 50 L 175 50\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"195\" y=\"54\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">× 21 = 7,938</text>\n    <path d=\"M 290 50 L 325 50\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"345\" y=\"54\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#334155\">+ 10 = 7,948 (Correct)</text>\n    <text x=\"40\" y=\"74\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\">Difference = 7,948 − 8 = 7,940</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Calculate the difference between the correct answer and his final answer.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Difference} = \\text{Correct Answer} - \\text{Mistaken Final Answer}$$</p><p>$$\\text{Difference} = 7948 - 8 = \\mathbf{7940}$$</p></div>"
             }
           ],
           "meta": {
@@ -120,8 +142,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{1}{3}\\times 6 = 2\\)km while walking</p><p>\\(\\frac{1}{4}\\times 10 = 2.5\\)km while running</p><p>total = 4.5</p></div>"
+              "explain": "Calculate the distance covered during the walking phase.",
+              "work": "<div style=\"text-align: left;\"><p>Convert walking time to hours:</p><p>$$t_1 = 20\\text{ minutes} = \\frac{20}{60}\\text{ h} = \\frac{1}{3}\\text{ h}$$</p><p>Using \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\):</p><p>$$d_1 = 6.0\\text{ km/h} \\times \\frac{1}{3}\\text{ h} = \\mathbf{2.0\\text{ km}}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the distance covered during the running and yoga phases.",
+              "work": "<div style=\"text-align: left;\"><p>Convert running time to hours:</p><p>$$t_2 = 15\\text{ minutes} = \\frac{15}{60}\\text{ h} = \\frac{1}{4}\\text{ h}$$</p><p>$$d_2 = 10\\text{ km/h} \\times \\frac{1}{4}\\text{ h} = \\mathbf{2.5\\text{ km}}$$</p><p>During the 30 minutes of yoga, Jean is stationary (cooling down in place), so:</p><p>$$d_3 = \\mathbf{0\\text{ km}}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 600 190\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"596\" height=\"186\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"300\" y=\"26\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Jean's Daily Training Workout Breakdown</text>\n  <g transform=\"translate(30, 45)\">\n    <!-- Walking -->\n    <rect x=\"0\" y=\"0\" width=\"220\" height=\"50\" rx=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n    <text x=\"110\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Walking (20 min @ 6 km/h)</text>\n    <text x=\"110\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Distance = 2.0 km</text>\n    <!-- Running -->\n    <rect x=\"228\" y=\"0\" width=\"200\" height=\"50\" rx=\"6\" fill=\"#f97316\" fill-opacity=\"0.85\" stroke=\"#ea580c\" stroke-width=\"1.5\"/>\n    <text x=\"328\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">Running (15 min @ 10 km/h)</text>\n    <text x=\"328\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">Distance = 2.5 km</text>\n    <!-- Yoga -->\n    <rect x=\"436\" y=\"0\" width=\"104\" height=\"50\" rx=\"6\" fill=\"#94a3b8\" fill-opacity=\"0.85\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <text x=\"488\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">Yoga (30 min)</text>\n    <text x=\"488\" y=\"42\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">0 km</text>\n    <!-- Summary bar -->\n    <rect x=\"0\" y=\"65\" width=\"540\" height=\"42\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n    <text x=\"270\" y=\"91\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">Total Distance Covered = 2.0 km + 2.5 km + 0 km = 4.5 km</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Find the total distance covered during the training session.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Total Distance} = d_1 + d_2 + d_3$$</p><p>$$\\text{Total Distance} = 2.0\\text{ km} + 2.5\\text{ km} + 0\\text{ km} = \\mathbf{4.5\\text{ km}}$$</p></div>"
             }
           ],
           "meta": {
@@ -144,8 +177,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>100 divided by 5 = 20</p><p>Therefore Dennis is lifting \\(20 \\times 1 = 20\\).</p><p>\\(100 - 20 = 80\\)</p></div>"
+              "explain": "Determine the ratio of weight increase between Andrew and Dennis.",
+              "work": "<div style=\"text-align: left;\"><p>Andrew increases by \\(5\\text{ kg}\\) for every \\(1\\text{ kg}\\) that Dennis does.</p><p>Both start from \\(0\\text{ kg}\\), meaning their lifted weights maintain the direct ratio:</p><p>$$\\frac{\\text{Andrew's weight}}{\\text{Dennis's weight}} = \\frac{5}{1}$$</p></div>"
+            },
+            {
+              "explain": "Calculate how much Dennis is lifting when Andrew squats 100 kg.",
+              "work": "<div style=\"text-align: left;\"><p>When Andrew reaches \\(100\\text{ kg}\\), the number of \\(5\\text{ kg}\\) rate intervals is:</p><p>$$\\text{Number of intervals} = \\frac{100\\text{ kg}}{5\\text{ kg}} = 20$$</p><p>Since Dennis adds \\(1\\text{ kg}\\) per interval:</p><p>$$\\text{Dennis's weight} = 20 \\times 1\\text{ kg} = \\mathbf{20\\text{ kg}}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"576\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"290\" y=\"26\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Rate of Increase: Andrew (5 kg) for every Dennis (1 kg)</text>\n  <g transform=\"translate(30, 48)\">\n    <text x=\"0\" y=\"24\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Andrew:</text>\n    <rect x=\"80\" y=\"6\" width=\"420\" height=\"28\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.85\" stroke=\"#2563eb\" stroke-width=\"1.2\"/>\n    <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">100 kg (20 increments × 5 kg)</text>\n    \n    <text x=\"0\" y=\"68\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Dennis:</text>\n    <rect x=\"80\" y=\"50\" width=\"84\" height=\"28\" rx=\"5\" fill=\"#f59e0b\" fill-opacity=\"0.85\" stroke=\"#d97706\" stroke-width=\"1.2\"/>\n    <text x=\"122\" y=\"69\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">20 kg</text>\n    <rect x=\"168\" y=\"50\" width=\"332\" height=\"28\" rx=\"5\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"334\" y=\"69\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b91c1c\">Difference = 80 kg</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Calculate how much more Andrew can lift than Dennis.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Difference} = \\text{Andrew's weight} - \\text{Dennis's weight}$$</p><p>$$\\text{Difference} = 100\\text{ kg} - 20\\text{ kg} = \\mathbf{80\\text{ kg}}$$</p></div>"
             }
           ],
           "meta": {
@@ -168,8 +212,19 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Adding 156 L of fuel is an increase of \\(\\frac{2}{3}\\) of the total fuel capacity.</p><p>\\(\\frac{1}{3}\\) of the minivan's fuel capacity is = 78 L</p><p>total = \\(3 \\times 78 = 234\\) L</p></div>"
+              "explain": "Find the fraction of the fuel tank capacity represented by the added fuel.",
+              "work": "<div style=\"text-align: left;\"><p>Initially, the tank was \\(\\frac{1}{6}\\) full.</p><p>After adding \\(156\\text{ L}\\), the tank became \\(\\frac{5}{6}\\) full.</p><p>The fraction of the tank filled by \\(156\\text{ L}\\) is:</p><p>$$\\text{Fraction added} = \\frac{5}{6} - \\frac{1}{6} = \\frac{4}{6} = \\frac{2}{3}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the total capacity of the fuel tank.",
+              "work": "<div style=\"text-align: left;\"><p>Since \\(4\\) sixths (\\(\\frac{4}{6}\\)) equal \\(156\\text{ L}\\), one sixth (\\(\\frac{1}{6}\\)) equals:</p><p>$$\\frac{1}{6}\\text{ capacity} = \\frac{156\\text{ L}}{4} = 39\\text{ L}$$</p><p>Therefore, the full capacity (\\(\\frac{6}{6}\\)) is:</p><p>$$\\text{Total Capacity} = 6 \\times 39\\text{ L} = \\mathbf{234\\text{ L}}$$</p><p><em>(Alternatively: \\(156 \\div \\frac{2}{3} = 156 \\times \\frac{3}{2} = 78 \\times 3 = 234\\text{ L}\\))</em></p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"576\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"290\" y=\"26\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Fuel Tank Capacity: 6 Equal Segments of 39 L</text>\n  <g transform=\"translate(40, 50)\">\n    <!-- 6 segments: each 80px wide -->\n    <!-- Seg 1: Initial 1/6 -->\n    <rect x=\"0\" y=\"0\" width=\"80\" height=\"48\" fill=\"#3b82f6\" fill-opacity=\"0.8\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"40\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#ffffff\">1/6 full</text>\n    <!-- Seg 2 to 5: Added 156 L (4 segments) -->\n    <rect x=\"80\" y=\"0\" width=\"320\" height=\"48\" fill=\"#10b981\" fill-opacity=\"0.8\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"240\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#ffffff\">+156 L added (4/6 = 4 parts × 39 L)</text>\n    <!-- Seg 6: Remaining 1/6 -->\n    <rect x=\"400\" y=\"0\" width=\"80\" height=\"48\" fill=\"#f1f5f9\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n    <text x=\"440\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">Empty</text>\n    <!-- Sub labels -->\n    <text x=\"240\" y=\"75\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#047857\">1 segment (1/6) = 156 ÷ 4 = 39 L</text>\n    <text x=\"240\" y=\"95\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">Total 6 segments (6/6) = 6 × 39 L = 234 L</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "State the final capacity of the fuel tank.",
+              "work": "<div style=\"text-align: left;\"><p>The capacity of the truck's fuel tank is <strong>\\(234\\text{ L}\\)</strong>.</p></div>"
             }
           ],
           "meta": {
@@ -192,8 +247,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Odd numbers go up by 3</p><p>Even numbers go up by7</p><p>29, 37, 36</p></div>"
+              "explain": "Separate the sequence into two alternating arithmetic patterns.",
+              "work": "<div style=\"text-align: left;\"><p>Observe the given sequence:</p><p>$$22, 1, 25, 8, 28, 15, 31, 22, 34, \\dots$$</p><p>Notice that odd and even positions follow two distinct rules:</p><p>• <strong>Odd positions (1st, 3rd, 5th, 7th, 9th):</strong><br/>\\(22, 25, 28, 31, 34\\) (increases by <strong>\\(+3\\)</strong> each time)</p><p>• <strong>Even positions (2nd, 4th, 6th, 8th):</strong><br/>\\(1, 8, 15, 22\\) (increases by <strong>\\(+7\\)</strong> each time)</p></div>"
+            },
+            {
+              "explain": "Calculate the next three numbers (the 10th, 11th, and 12th terms).",
+              "work": "<div style=\"text-align: left;\"><p>The 9th term is \\(34\\) (an odd position). The next three terms are:</p><p>• <strong>10th term (Even position):</strong> Add \\(7\\) to the previous even term (8th term \\(= 22\\)):<br/>$$22 + 7 = \\mathbf{29}$$</p><p>• <strong>11th term (Odd position):</strong> Add \\(3\\) to the previous odd term (9th term \\(= 34\\)):<br/>$$34 + 3 = \\mathbf{37}$$</p><p>• <strong>12th term (Even position):</strong> Add \\(7\\) to the 10th term (\\(= 29\\)):<br/>$$29 + 7 = \\mathbf{36}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 190\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"636\" height=\"186\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"320\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Interleaved Alternating Sequence Analysis</text>\n  <g transform=\"translate(20, 40)\">\n    <!-- Odd Track (+3) -->\n    <rect x=\"0\" y=\"0\" width=\"600\" height=\"45\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#bfdbfe\" stroke-width=\"1.2\"/>\n    <text x=\"15\" y=\"27\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\">Odd Positions (+3):</text>\n    <text x=\"140\" y=\"27\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e40af\">22 → 25 → 28 → 31 → 34 → [ 37 ]</text>\n    <!-- Even Track (+7) -->\n    <rect x=\"0\" y=\"55\" width=\"600\" height=\"45\" rx=\"6\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.2\"/>\n    <text x=\"15\" y=\"82\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#c2410c\">Even Positions (+7):</text>\n    <text x=\"140\" y=\"82\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#9a3412\">1 → 8 → 15 → 22 → [ 29 ] → [ 36 ]</text>\n    <!-- Result -->\n    <rect x=\"0\" y=\"108\" width=\"600\" height=\"30\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"300\" y=\"128\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">Next 3 numbers (10th, 11th, 12th) = 29, 37, 36</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "State the resulting triplet.",
+              "work": "<div style=\"text-align: left;\"><p>The next three numbers in the pattern are <strong>\\(29, 37, 36\\)</strong>.</p></div>"
             }
           ],
           "meta": {
@@ -224,8 +290,15 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Tokyo is 1 hour ahead of Perth.</p></div>"
+                  "explain": "Determine the time difference between Perth and Tokyo from the reference table.",
+                  "work": "<div style=\"text-align: left;\"><p>From the table on 15/08/2015:</p><p>• Perth: <strong>7:00 am</strong></p><p>• Tokyo: <strong>8:00 am</strong></p><p>Tokyo is ahead of Perth by:</p><p>$$8:00\\text{ am} - 7:00\\text{ am} = \\mathbf{+1\\text{ hour}}$$</p></div>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 140\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"136\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(30, 20)\">\n    <rect x=\"0\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"100\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">Perth</text>\n    <text x=\"100\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">7:00 am</text>\n    \n    <text x=\"240\" y=\"32\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#3b82f6\">→</text>\n    <text x=\"240\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">+1 hour</text>\n    \n    <rect x=\"280\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Tokyo</text>\n    <text x=\"380\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">8:00 am</text>\n    \n    <rect x=\"0\" y=\"68\" width=\"480\" height=\"30\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#bfdbfe\" stroke-width=\"1.2\"/>\n    <text x=\"240\" y=\"88\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">Tokyo is 1 hour ahead of Perth</text>\n  </g>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the time in Tokyo when it is 6 am in Perth.",
+                  "work": "<div style=\"text-align: left;\"><p>Add 1 hour to 6:00 am:</p><p>$$\\text{Tokyo Time} = 6:00\\text{ am} + 1\\text{ hour} = \\mathbf{7:00\\text{ am}}$$</p></div>"
                 }
               ]
             },
@@ -243,8 +316,15 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Johannesburg is 1 hour behind Moscow. (12 am \\(\\rightarrow\\) 11 pm).</p></div>"
+                  "explain": "Determine the time difference between Moscow and Johannesburg from the reference table.",
+                  "work": "<div style=\"text-align: left;\"><p>From the table on 15/08/2015:</p><p>• Moscow: <strong>2:00 am</strong></p><p>• Johannesburg: <strong>1:00 am</strong></p><p>Johannesburg is behind Moscow by:</p><p>$$2:00\\text{ am} - 1:00\\text{ am} = \\mathbf{1\\text{ hour behind}}$$</p></div>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 140\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"136\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(30, 20)\">\n    <rect x=\"0\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"100\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">Moscow</text>\n    <text x=\"100\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">2:00 am</text>\n    \n    <text x=\"240\" y=\"32\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#3b82f6\">→</text>\n    <text x=\"240\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">−1 hour</text>\n    \n    <rect x=\"280\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Johannesburg</text>\n    <text x=\"380\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">1:00 am</text>\n    \n    <rect x=\"0\" y=\"68\" width=\"480\" height=\"30\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#bfdbfe\" stroke-width=\"1.2\"/>\n    <text x=\"240\" y=\"88\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">Johannesburg is 1 hour behind Moscow</text>\n  </g>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Find the date and time in Johannesburg when it is 12 am on the 15th of August in Moscow.",
+                  "work": "<div style=\"text-align: left;\"><p>12 am is midnight at the very beginning of 15th August.</p><p>Subtracting 1 hour crosses back into the previous day:</p><p>$$12:00\\text{ am (15 Aug)} - 1\\text{ hour} = \\mathbf{11:00\\text{ pm, 14}^{\\text{th}}\\text{ of August}}$$</p></div>"
                 }
               ]
             },
@@ -262,8 +342,15 @@
               "answer": 4,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Kolkata is 3 and a half hours behind Tokyo.</p></div>"
+                  "explain": "Determine the time difference between Tokyo and Kolkata from the reference table.",
+                  "work": "<div style=\"text-align: left;\"><p>From the table on 15/08/2015:</p><p>• Tokyo: <strong>8:00 am</strong></p><p>• Kolkata: <strong>4:30 am</strong></p><p>Calculate the time difference:</p><p>$$8:00\\text{ am} - 4:30\\text{ am} = \\mathbf{3\\text{ hours and } 30\\text{ minutes}}$$</p><p>Kolkata is \\(3\\text{ h } 30\\text{ m}\\) behind Tokyo.</p></div>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 140\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"136\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(30, 20)\">\n    <rect x=\"0\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"100\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#64748b\">Tokyo</text>\n    <text x=\"100\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#0f172a\">8:00 am</text>\n    \n    <text x=\"240\" y=\"32\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#3b82f6\">→</text>\n    <text x=\"240\" y=\"48\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"700\" fill=\"#2563eb\">−3h 30m</text>\n    \n    <rect x=\"280\" y=\"0\" width=\"200\" height=\"55\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"380\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Kolkata</text>\n    <text x=\"380\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#15803d\">4:30 am</text>\n    \n    <rect x=\"0\" y=\"68\" width=\"480\" height=\"30\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#bfdbfe\" stroke-width=\"1.2\"/>\n    <text x=\"240\" y=\"88\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e40af\">Kolkata is 3h 30m behind Tokyo</text>\n  </g>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the time in Kolkata when it is 5:00 pm in Tokyo.",
+                  "work": "<div style=\"text-align: left;\"><p>Subtract \\(3\\text{ hours } 30\\text{ minutes}\\) from \\(5:00\\text{ pm}\\):</p><p>$$5:00\\text{ pm} - 3\\text{ hours} = 2:00\\text{ pm}$$</p><p>$$2:00\\text{ pm} - 30\\text{ minutes} = \\mathbf{1:30\\text{ pm}}$$</p><p>Therefore, I should call at <strong>1:30 pm</strong> Kolkata time.</p></div>"
                 }
               ]
             }
@@ -288,8 +375,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(230 - 30 - 10 - 10 = 180\\)</p><p>\\(180 \\div 3 = \\mathbf{60cm}\\)</p><p>1\\(^{\\text{st}}\\) piece of string = 100cm</p><p>2\\(^{\\text{nd}}\\) piece of string = 70 cm</p><p>3\\(^{\\text{rd}}\\) piece of string = 60cm</p></div>"
+              "explain": "Express the length of each string in terms of a single variable x.",
+              "work": "<div style=\"text-align: left;\"><p>Let the length of the 3rd piece of string be \\(x\\text{ cm}\\).</p><p>• The 2nd piece is \\(10\\text{ cm}\\) longer than the 3rd piece:<br/>$$\\text{2nd piece} = x + 10$$</p><p>• The 1st piece is \\(30\\text{ cm}\\) longer than the 2nd piece:<br/>$$\\text{1st piece} = (x + 10) + 30 = x + 40$$</p></div>"
+            },
+            {
+              "explain": "Form and solve the equation for the total length of 2.3 m (230 cm).",
+              "work": "<div style=\"text-align: left;\"><p>Convert the total length to centimeters:</p><p>$$2.3\\text{ m} = 230\\text{ cm}$$</p><p>Sum the three pieces and solve for \\(x\\):</p><p>$$(x + 40) + (x + 10) + x = 230$$</p><p>$$3x + 50 = 230$$</p><p>$$3x = 180 \\implies x = \\mathbf{60\\text{ cm}}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 170\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"556\" height=\"166\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"280\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Three Pieces of String (Total = 230 cm)</text>\n  <g transform=\"translate(30, 40)\">\n    <text x=\"0\" y=\"20\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">3rd Piece:</text>\n    <rect x=\"80\" y=\"6\" width=\"180\" height=\"20\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.85\"/>\n    <text x=\"170\" y=\"21\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">x = 60 cm</text>\n    \n    <text x=\"0\" y=\"50\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">2nd Piece:</text>\n    <rect x=\"80\" y=\"36\" width=\"180\" height=\"20\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.85\"/>\n    <rect x=\"260\" y=\"36\" width=\"30\" height=\"20\" rx=\"4\" fill=\"#f59e0b\" fill-opacity=\"0.85\"/>\n    <text x=\"170\" y=\"51\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">x = 60 cm</text>\n    <text x=\"275\" y=\"51\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#ffffff\">+10</text>\n    <text x=\"300\" y=\"51\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#b45309\"> = 70 cm</text>\n    \n    <text x=\"0\" y=\"80\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">1st Piece:</text>\n    <rect x=\"80\" y=\"66\" width=\"180\" height=\"20\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.85\"/>\n    <rect x=\"260\" y=\"66\" width=\"30\" height=\"20\" rx=\"4\" fill=\"#f59e0b\" fill-opacity=\"0.85\"/>\n    <rect x=\"290\" y=\"66\" width=\"90\" height=\"20\" rx=\"4\" fill=\"#10b981\" fill-opacity=\"0.85\"/>\n    <text x=\"170\" y=\"81\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#ffffff\">x = 60 cm</text>\n    <text x=\"275\" y=\"81\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#ffffff\">+10</text>\n    <text x=\"335\" y=\"81\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#ffffff\">+30</text>\n    <text x=\"390\" y=\"81\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\"> = 100 cm</text>\n    \n    <text x=\"250\" y=\"112\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\">Total = 3x + 50 = 230 cm  ⟹  x = 60 cm</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Verify all three pieces and state the answer.",
+              "work": "<div style=\"text-align: left;\"><p>• 1st piece: \\(60 + 40 = 100\\text{ cm}\\)</p><p>• 2nd piece: \\(60 + 10 = 70\\text{ cm}\\)</p><p>• 3rd piece: \\(\\mathbf{60\\text{ cm}}\\)</p><p>Total check: \\(100 + 70 + 60 = 230\\text{ cm} = 2.3\\text{ m} \\quad \\checkmark\\)</p><p>The length of the third piece of string is <strong>60cm</strong>.</p></div>"
             }
           ],
           "meta": {
@@ -315,8 +413,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Split the shape into a rectangle and a right-angled triangle using the dashed line:</p><p>\\(\\text{Area of rectangle} = 4 \\times 3 = 12\\text{ m}^2\\)</p><p>\\(\\text{Area of triangle} = \\frac{1}{2} \\times 4 \\times (5 - 3) = \\frac{1}{2} \\times 4 \\times 2 = 4\\text{ m}^2\\)</p><p>\\(\\text{Total area} = 12 + 4 = \\mathbf{16\\text{ m}^2}\\)</p></div>"
+              "explain": "Decompose the shape into a rectangle and a right-angled triangle using the horizontal dashed line.",
+              "work": "<div style=\"text-align: left;\"><p>The shape is a right-angled trapezium with base \\(4\\text{ m}\\), left height \\(3\\text{ m}\\), and right height \\(5\\text{ m}\\).</p><p>The horizontal dashed line divides it into:</p><p>• A lower <strong>rectangle</strong> with width \\(4\\text{ m}\\) and height \\(3\\text{ m}\\)</p><p>• An upper <strong>right-angled triangle</strong> with base \\(4\\text{ m}\\) and vertical height \\(5\\text{ m} - 3\\text{ m} = 2\\text{ m}\\)</p></div>"
+            },
+            {
+              "explain": "Calculate the area of both the rectangle and the triangle.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Area of Rectangle} = \\text{width} \\times \\text{height} = 4 \\times 3 = \\mathbf{12\\text{ m}^2}$$</p><p>$$\\text{Area of Triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 2 = \\mathbf{4\\text{ m}^2}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 250\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"456\" height=\"246\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(60, 25)\">\n    <!-- Lower Rectangle -->\n    <rect x=\"30\" y=\"70\" width=\"260\" height=\"110\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1d4ed8\">Rectangle = 4 × 3 = 12 m²</text>\n    <!-- Upper Triangle -->\n    <polygon points=\"30,70 290,70 290,10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"2\"/>\n    <line x1=\"30\" y1=\"70\" x2=\"290\" y2=\"70\" stroke=\"#d97706\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/>\n    <text x=\"210\" y=\"55\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#b45309\">Triangle = ½ × 4 × 2 = 4 m²</text>\n    <!-- Dimension annotations -->\n    <text x=\"10\" y=\"130\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">3 m</text>\n    <text x=\"305\" y=\"100\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">5 m</text>\n    <text x=\"160\" y=\"200\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\">4 m</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Sum the areas to find the total area of the shape.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Total Area} = 12\\text{ m}^2 + 4\\text{ m}^2 = \\mathbf{16\\text{ m}^2}$$</p><p><em>(Trapezium formula check: \\(\\text{Area} = \\frac{a + b}{2} \\times h = \\frac{3 + 5}{2} \\times 4 = 4 \\times 4 = 16\\text{ m}^2\\))</em></p></div>"
             }
           ],
           "meta": {
@@ -339,8 +448,16 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>To find \\(20\\%\\) of \\(70\\%\\) using benchmarks:</p><p>\\(10\\%\\text{ of } 70\\% = 7\\%\\)</p><p>Since \\(20\\% = 2 \\times 10\\%\\), we must <strong>multiply</strong> by 2:</p><p>\\(7\\% \\times 2 = 14\\%\\)</p><p>Dividing by 2 gives \\(7\\% \\div 2 = 3.5\\%\\), not \\(14\\%\\).</p><p>Therefore, \\(10\\%\\text{ of } 70\\% = 7\\%,\\ 7\\% \\div 2 = 14\\%\\) is <strong>NOT</strong> a suitable method.</p></div>"
+              "explain": "Understand the mathematical value of finding 20% of 70%.",
+              "work": "<div style=\"text-align: left;\"><p>To find \\(20\\%\\) of \\(70\\%\\):</p><p>$$\\text{Value} = 0.20 \\times 0.70 = 0.14 = \\mathbf{14\\%}$$</p><p>In fractional terms: \\(\\frac{20}{100} \\times \\frac{70}{100} = \\frac{1400}{10000} = \\frac{14}{100} = 14\\%\\).</p></div>"
+            },
+            {
+              "explain": "Evaluate the benchmark percentage method in Option C.",
+              "work": "<div style=\"text-align: left;\"><p>In Option C:</p><p>$$10\\%\\text{ of } 70\\% = 7\\%$$</p><p>Since \\(20\\% = 2 \\times 10\\%\\), to find \\(20\\%\\) we must <strong>multiply by 2</strong>:</p><p>$$7\\% \\times 2 = 14\\%$$</p><p>However, Option C states: \\(7\\% \\div 2 = 14\\%\\), which is mathematically incorrect because dividing by 2 gives:</p><p>$$7\\% \\div 2 = 3.5\\% \\neq 14\\%$$</p><p>Therefore, Option C contains an erroneous operation.</p></div>"
+            },
+            {
+              "explain": "Confirm that Option C is NOT a suitable way to solve the problem.",
+              "work": "<div style=\"text-align: left;\"><p>Options A, B, D, and E all correctly yield \\(14\\%\\).</p><p>Option C is <strong>NOT</strong> a suitable way to solve the problem.</p></div>"
             }
           ],
           "meta": {
@@ -366,8 +483,16 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Find the cost of buying 5 skewers at each stall:</p><p>\\(\\text{Total cost} = 5 \\times (1.60 + 2.30 + 2.30 + 1.80)\\)</p><p>\\(= 5 \\times 8.00 = \\mathbf{\\$40.00}\\)</p></div>"
+              "explain": "Extract the unit price of satay skewers for each stall from the table.",
+              "work": "<div style=\"text-align: left;\"><p>From the table:</p><p>• Stall A: \\(\\$1.60\\) per skewer</p><p>• Stall B: \\(\\$2.30\\) per skewer</p><p>• Stall C: \\(\\$2.30\\) per skewer</p><p>• Stall D: \\(\\$1.80\\) per skewer</p></div>"
+            },
+            {
+              "explain": "Calculate the total cost by factoring out the 5 skewers.",
+              "work": "<div style=\"text-align: left;\"><p>First find the combined cost of purchasing 1 skewer from each of the 4 stalls:</p><p>$$\\text{Cost of 1 at each stall} = \\$1.60 + \\$2.30 + \\$2.30 + \\$1.80 = \\mathbf{\\$8.00}$$</p><p>Since 5 skewers are purchased from each stall, multiply the combined cost by 5:</p><p>$$\\text{Total Cost} = 5 \\times \\$8.00 = \\mathbf{\\$40.00}$$</p></div>"
+            },
+            {
+              "explain": "Verify by calculating the cost stall by stall.",
+              "work": "<div style=\"text-align: left;\"><p>• Stall A: \\(5 \\times \\$1.60 = \\$8.00\\)</p><p>• Stall B: \\(5 \\times \\$2.30 = \\$11.50\\)</p><p>• Stall C: \\(5 \\times \\$2.30 = \\$11.50\\)</p><p>• Stall D: \\(5 \\times \\$1.80 = \\$9.00\\)</p><p>$$\\text{Total} = \\$8.00 + \\$11.50 + \\$11.50 + \\$9.00 = \\mathbf{\\$40.00}$$</p></div>"
             }
           ],
           "meta": {
@@ -390,8 +515,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Average of 6 numbers is 22, total = 132</p><p>Total of 7 numbers must be \\(7 \\times 22 = 154\\)</p><p>Therefore number added must be \\(154-132 = 22\\)</p></div>"
+              "explain": "Calculate the total sum of the original 6 numbers.",
+              "work": "<div style=\"text-align: left;\"><p>The average of \\(6\\) numbers is \\(22\\).</p><p>Using the definition of average \\(\\text{Average} = \\frac{\\text{Sum}}{N}\\):</p><p>$$\\text{Original Sum} = 6 \\times 22 = \\mathbf{132}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the required total sum for 7 numbers with an average of 22.",
+              "work": "<div style=\"text-align: left;\"><p>When a 7th number is added, the new total count is \\(7\\), and the average must remain \\(22\\):</p><p>$$\\text{New Total Sum} = 7 \\times 22 = \\mathbf{154}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 160\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"516\" height=\"156\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"260\" y=\"26\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Average Conservation Principle</text>\n  <g transform=\"translate(40, 45)\">\n    <rect x=\"0\" y=\"0\" width=\"200\" height=\"50\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n    <text x=\"100\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#475569\">6 Numbers (Avg 22)</text>\n    <text x=\"100\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\">Total = 6 × 22 = 132</text>\n    \n    <text x=\"220\" y=\"30\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#3b82f6\">+</text>\n    <text x=\"220\" y=\"46\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#2563eb\">Add 22</text>\n    \n    <rect x=\"240\" y=\"0\" width=\"200\" height=\"50\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/>\n    <text x=\"340\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#15803d\">7 Numbers (Avg 22)</text>\n    <text x=\"340\" y=\"40\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#15803d\">Total = 7 × 22 = 154</text>\n    \n    <text x=\"220\" y=\"85\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">New number = 154 − 132 = 22</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Find the value of the added number.",
+              "work": "<div style=\"text-align: left;\"><p>Subtract the original sum from the new total sum:</p><p>$$\\text{New Number} = 154 - 132 = \\mathbf{22}$$</p><p><em>(General Rule: Adding a number equal to the existing average never changes the average value.)</em></p></div>"
             }
           ],
           "meta": {
@@ -414,8 +550,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>200m/25s = 8m/s, 400/40 =10m/s</p><p>In 1 min 30, \\(10 \\times 90 - 8 \\times 90 = 180\\)m</p></div>"
+              "explain": "Calculate the sprinting speeds of Josiah and Jonathan in meters per second.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Josiah:</strong> Sprints \\(200\\text{ m}\\) in \\(25\\text{ s}\\):</p><p>$$v_{\\text{Josiah}} = \\frac{200\\text{ m}}{25\\text{ s}} = \\mathbf{8\\text{ m/s}}$$</p><p>• <strong>Jonathan:</strong> Sprints twice the distance (\\(2 \\times 200 = 400\\text{ m}\\)) in \\(40\\text{ s}\\):</p><p>$$v_{\\text{Jonathan}} = \\frac{400\\text{ m}}{40\\text{ s}} = \\mathbf{10\\text{ m/s}}$$</p></div>"
+            },
+            {
+              "explain": "Convert the race duration to seconds and find the distance run by each.",
+              "work": "<div style=\"text-align: left;\"><p>Convert 1 minute 30 seconds into seconds:</p><p>$$t = 1\\text{ min } 30\\text{ s} = 60 + 30 = \\mathbf{90\\text{ seconds}}$$</p><p>Calculate the distance each runner covers in 90 seconds:</p><p>$$d_{\\text{Jonathan}} = 10\\text{ m/s} \\times 90\\text{ s} = 900\\text{ m}$$</p><p>$$d_{\\text{Josiah}} = 8\\text{ m/s} \\times 90\\text{ s} = 720\\text{ m}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 580 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"576\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"290\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">90-Second Sprint Comparison</text>\n  <g transform=\"translate(30, 42)\">\n    <text x=\"0\" y=\"22\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">Jonathan (10 m/s):</text>\n    <rect x=\"130\" y=\"6\" width=\"370\" height=\"24\" rx=\"4\" fill=\"#10b981\" fill-opacity=\"0.85\"/>\n    <text x=\"315\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">900 m (10 m/s × 90 s)</text>\n    \n    <text x=\"0\" y=\"58\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">Josiah (8 m/s):</text>\n    <rect x=\"130\" y=\"42\" width=\"296\" height=\"24\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.85\"/>\n    <text x=\"278\" y=\"58\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#ffffff\">720 m (8 m/s × 90 s)</text>\n    \n    <!-- Gap -->\n    <rect x=\"426\" y=\"42\" width=\"74\" height=\"24\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#ef4444\" stroke-width=\"1.2\" stroke-dasharray=\"3 3\"/>\n    <text x=\"463\" y=\"58\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#dc2626\">180 m</text>\n    \n    <text x=\"250\" y=\"96\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#1e293b\">Distance between them = 900 m − 720 m = 180 m</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Calculate the separation distance between them.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Distance between them} = 900\\text{ m} - 720\\text{ m} = \\mathbf{180\\text{ m}}$$</p><p><em>(Alternative relative speed method: \\((10 - 8)\\text{ m/s} \\times 90\\text{ s} = 2 \\times 90 = 180\\text{ m}\\))</em></p></div>"
             }
           ],
           "meta": {
@@ -446,8 +593,15 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(34 \\div 5 = 6.8\\)cm</p></div>"
+                  "explain": "Count the number of brick layers in the diagram.",
+                  "work": "<div style=\"text-align: left;\"><p>Look at the given brick stack:</p><p>• Layer 1 (top): 1 brick</p><p>• Layer 2: 2 bricks</p><p>• Layer 3: 3 bricks</p><p>• Layer 4: 4 bricks</p><p>• Layer 5 (base): 5 bricks</p><p>The stack consists of <strong>5 layers of bricks</strong>.</p></div>"
+                },
+                {
+                  "explain": "Divide the total stack height by the number of layers.",
+                  "work": "<div style=\"text-align: left;\"><p>The total height of the 5 layers is \\(34\\text{ cm}\\).</p><p>Since all bricks are identical:</p><p>$$\\text{Height of each brick} = \\frac{34\\text{ cm}}{5} = \\mathbf{6.8\\text{ cm}}$$</p></div>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"516\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Stack Structure: 5 Layers of 6.8 cm Each</text>\n  <g transform=\"translate(50, 45)\">\n    <rect x=\"20\" y=\"0\" width=\"240\" height=\"70\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">5 brick layers</text>\n    <text x=\"140\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">Height per layer = 6.8 cm</text>\n    \n    <rect x=\"280\" y=\"0\" width=\"140\" height=\"70\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#15803d\">Total Height</text>\n    <text x=\"350\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#15803d\">34.0 cm</text>\n  </g>\n</svg>"
+                  }
                 }
               ]
             },
@@ -465,8 +619,15 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Each layer increases by 1 brick. Hence, there will be 8 layers.</p><p>\\(8 \\times 6.8 = 54.4\\)cm</p></div>"
+                  "explain": "Determine the number of layers in a finished stack with a base of 8 bricks.",
+                  "work": "<div style=\"text-align: left;\"><p>In Brett's stack pattern, each layer decreases by 1 brick until the top layer has 1 brick.</p><p>A stack with a base of 8 bricks will have layers of 8, 7, 6, 5, 4, 3, 2, and 1 brick:</p><p>$$\\text{Number of layers} = \\mathbf{8\\text{ layers}}$$</p></div>"
+                },
+                {
+                  "explain": "Calculate the total height of the 8-layer stack.",
+                  "work": "<div style=\"text-align: left;\"><p>Using the height of one brick \\(h = 6.8\\text{ cm}\\) from the previous part:</p><p>$$\\text{Total Height} = 8 \\times 6.8\\text{ cm} = \\mathbf{54.4\\text{ cm}}$$</p></div>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"516\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"260\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Stack Structure: 8 Layers of 6.8 cm Each</text>\n  <g transform=\"translate(50, 45)\">\n    <rect x=\"20\" y=\"0\" width=\"240\" height=\"70\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"140\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#334155\">8 brick layers</text>\n    <text x=\"140\" y=\"50\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">Height per layer = 6.8 cm</text>\n    \n    <rect x=\"280\" y=\"0\" width=\"140\" height=\"70\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"350\" y=\"28\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#15803d\">Total Height</text>\n    <text x=\"350\" y=\"52\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" fill=\"#15803d\">54.4 cm</text>\n  </g>\n</svg>"
+                  }
                 }
               ]
             }
@@ -491,8 +652,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Width = 12:20 = 3:5</p><p>Length = 9: ? = 3:5</p><p>? = 15</p><p>Height = 6: ? = 3:5</p><p>? = 10</p><p>New dimensions = \\(15 \\times 10 \\times 20\\)</p><p>\\(V = 3000\\ cm^3\\)</p></div>"
+              "explain": "Determine the linear expansion scale factor from the change in width.",
+              "work": "<div style=\"text-align: left;\"><p>The rectangular prism originally has:</p><p>• Length \\(= 6\\text{ cm}\\), Height \\(= 9\\text{ cm}\\), Width \\(= 12\\text{ cm}\\)</p><p>The width expands from \\(12\\text{ cm}\\) to \\(20\\text{ cm}\\).</p><p>The linear scale factor \\(k\\) is:</p><p>$$k = \\frac{\\text{New Width}}{\\text{Original Width}} = \\frac{20}{12} = \\frac{5}{3}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the new length and new height using the scale factor.",
+              "work": "<div style=\"text-align: left;\"><p>Since all dimensions expand at the same constant rate:</p><p>$$\\text{New Length} = 6 \\times \\frac{5}{3} = \\mathbf{10\\text{ cm}}$$</p><p>$$\\text{New Height} = 9 \\times \\frac{5}{3} = \\mathbf{15\\text{ cm}}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 180\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"176\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"270\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Constant Rate Prism Expansion (Scale Factor k = 5/3)</text>\n  <g transform=\"translate(30, 40)\">\n    <rect x=\"0\" y=\"0\" width=\"180\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/>\n    <text x=\"90\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#475569\">Original Dimensions</text>\n    <text x=\"90\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#0f172a\">6 × 9 × 12 cm</text>\n    <text x=\"90\" y=\"60\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\">Volume = 648 cm³</text>\n    \n    <text x=\"240\" y=\"38\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" fill=\"#3b82f6\">→</text>\n    <text x=\"240\" y=\"54\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#2563eb\">× 5/3</text>\n    \n    <rect x=\"300\" y=\"0\" width=\"180\" height=\"70\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"390\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Expanded Dimensions</text>\n    <text x=\"390\" y=\"44\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#15803d\">10 × 15 × 20 cm</text>\n    <text x=\"390\" y=\"60\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\">Volume = 3,000 cm³</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Calculate the volume of the expanded rectangular prism.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{New Volume} = \\text{Length} \\times \\text{Height} \\times \\text{Width}$$</p><p>$$\\text{New Volume} = 10 \\times 15 \\times 20 = \\mathbf{3000\\text{ cm}^3}$$</p><p><em>(Scale factor volume check: \\(V_{\\text{original}} = 6 \\times 9 \\times 12 = 648\\text{ cm}^3\\), then \\(V_{\\text{new}} = 648 \\times \\left(\\frac{5}{3}\\right)^3 = 648 \\times \\frac{125}{27} = 24 \\times 125 = 3000\\text{ cm}^3\\))</em></p></div>"
             }
           ],
           "meta": {
@@ -518,8 +690,16 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>When drilling holes through the three shaded center faces across the \\(3 \\times 3 \\times 3\\) cube:</p><p>• <strong>Outside faces:</strong> Each of the 6 outer faces originally had 9 squares. With the center cube removed from each face, 8 faces remain per side:<br/>\\(6 \\times 8 = 48\\text{ faces}\\)</p><p>• <strong>Inside tunnel faces:</strong> Each of the 6 drilled openings creates a tunnel of depth 1, exposing 4 interior cube faces before reaching the center hollow:<br/>\\(6 \\times 4 = 24\\text{ interior faces}\\)</p><p>• <strong>Total visible cube faces:</strong><br/>\\(48 + 24 = \\mathbf{72}\\)</p></div>"
+              "explain": "Understand the 3 × 3 × 3 cube and the holes drilled through it.",
+              "work": "<div style=\"text-align: left;\"><p>The solid is a \\(3 \\times 3 \\times 3\\) cube made of \\(27\\) smaller unit cubes.</p><p>Drilling holes completely through the 3 shaded center faces removes a cross-shaped tunnel of 7 cubes:</p><p>• 6 center-face cubes (one on each of the 6 outer faces)</p><p>• 1 central core cube at the very center</p></div>"
+            },
+            {
+              "explain": "Count the visible faces on the exterior and interior.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Exterior Faces:</strong> Each of the 6 sides originally had 9 unit squares. With the center cube drilled out, 8 square faces remain visible per side:</p><p>$$\\text{Exterior Visible Faces} = 6 \\times 8 = \\mathbf{48\\text{ faces}}$$</p><p>• <strong>Interior Tunnel Faces:</strong> Each of the 6 drilled openings creates a 1-unit deep tunnel leading to the central hollow. The 4 walls of each tunnel are newly exposed interior faces:</p><p>$$\\text{Interior Visible Faces} = 6 \\times 4 = \\mathbf{24\\text{ faces}}$$</p></div>"
+            },
+            {
+              "explain": "Sum the exterior and interior faces to find the total visible cube faces.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Total Visible Faces} = 48 + 24 = \\mathbf{72}$$</p></div>"
             }
           ],
           "meta": {
@@ -542,8 +722,16 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{3}{7} \\div \\frac{7}{12} = \\frac{36}{49}\\)</p></div>"
+              "explain": "Check statements A, B, and C.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Option A:</strong> \\(\\frac{3}{8} \\times 10 = \\frac{30}{8} = \\frac{15}{4} = 3\\frac{3}{4}\\) (<strong>TRUE ✓</strong>)</p><p>• <strong>Option B:</strong> \\(\\frac{5}{6} - \\frac{2}{3} = \\frac{5}{6} - \\frac{4}{6} = \\frac{1}{6}\\) (<strong>TRUE ✓</strong>)</p><p>• <strong>Option C:</strong> \\(\\frac{5}{6} + \\frac{5}{8} = \\frac{20}{24} + \\frac{15}{24} = \\frac{35}{24}\\) (<strong>TRUE ✓</strong>)</p></div>"
+            },
+            {
+              "explain": "Check statements D and E to identify the untrue sentence.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Option D:</strong> Dividing by a fraction requires multiplying by its reciprocal:</p><p>$$\\frac{3}{7} \\div \\frac{7}{12} = \\frac{3}{7} \\times \\frac{12}{7} = \\frac{36}{49}$$</p><p>Notice that \\(\\frac{36}{49} \\approx 0.735\\), which is <strong>NOT</strong> equal to \\(\\frac{1}{4} = 0.25\\). (<strong>NOT TRUE ✗</strong>)</p><p>• <strong>Option E:</strong> \\(\\frac{1}{4} \\div 4 = \\frac{1}{4} \\times \\frac{1}{4} = \\frac{1}{16}\\) (<strong>TRUE ✓</strong>)</p></div>"
+            },
+            {
+              "explain": "State the final conclusion.",
+              "work": "<div style=\"text-align: left;\"><p>The number sentence that is not true is <strong>\\(\\frac{3}{7}\\div\\frac{7}{12}=\\frac{1}{4}\\)</strong> (Option D).</p></div>"
             }
           ],
           "meta": {
@@ -938,8 +1126,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(10 \\times 15 \\times 0.5 - 0.5 \\times 3.14 \\times (10/2)^2 = 35.75\\)</p></div>"
+              "explain": "Calculate the area of the large triangle inside the 10 × 15 rectangle.",
+              "work": "<div style=\"text-align: left;\"><p>The rectangle has height \\(10\\) and width \\(15\\).</p><p>The large triangle has:</p><p>• Base along the bottom edge \\(= 15\\)</p><p>• Vertical height equal to the height of the rectangle \\(= 10\\)</p><p>$$\\text{Area of Triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 15 \\times 10 = \\mathbf{75}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the area of the unshaded semicircle inside the triangle.",
+              "work": "<div style=\"text-align: left;\"><p>The circle is inscribed within the height of the rectangle, so its diameter is \\(10\\), giving radius \\(r = 5\\).</p><p>The diagonal dividing line passes directly through the center of the circle, cutting it in half.</p><p>The unshaded circular region within the triangle is exactly a <strong>semicircle</strong> with radius \\(r = 5\\):</p><p>$$\\text{Area of Semicircle} = \\frac{1}{2} \\pi r^2 = \\frac{1}{2} \\times 3.14 \\times 5^2 = \\frac{1}{2} \\times 3.14 \\times 25 = \\mathbf{39.25}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 220\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"216\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(60, 20)\">\n    <!-- Rectangle -->\n    <rect x=\"0\" y=\"0\" width=\"300\" height=\"150\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <!-- Large Triangle -->\n    <polygon points=\"0,150 300,150 240,0\" fill=\"#93c5fd\" fill-opacity=\"0.45\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n    <!-- Semicircle cut out -->\n    <path d=\"M 60,150 A 50,50 0 0,1 160,150 Z\" fill=\"#ffffff\" stroke=\"#e11d48\" stroke-width=\"2\"/>\n    <!-- Dividing line -->\n    <line x1=\"0\" y1=\"150\" x2=\"240\" y2=\"0\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <!-- Center dot -->\n    <circle cx=\"110\" cy=\"150\" r=\"4\" fill=\"#0f172a\"/>\n    <!-- Dimension text -->\n    <text x=\"-18\" y=\"80\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">10</text>\n    <text x=\"150\" y=\"172\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\">15</text>\n    <!-- Annotation card -->\n    <g transform=\"translate(320, 20)\">\n      <rect x=\"0\" y=\"0\" width=\"140\" height=\"110\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n      <text x=\"70\" y=\"22\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#15803d\">Area Calculation</text>\n      <text x=\"10\" y=\"44\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#334155\">Triangle = 75.00</text>\n      <text x=\"10\" y=\"64\" font-family=\"system-ui, sans-serif\" font-size=\"10.5\" font-weight=\"600\" fill=\"#dc2626\">− Semicircle = 39.25</text>\n      <line x1=\"10\" y1=\"74\" x2=\"130\" y2=\"74\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n      <text x=\"10\" y=\"94\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#15803d\">Shaded = 35.75</text>\n    </g>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Subtract the semicircle area from the triangle area to find the shaded area.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Shaded Area} = \\text{Area of Triangle} - \\text{Area of Semicircle}$$</p><p>$$\\text{Shaded Area} = 75 - 39.25 = \\mathbf{35.75}$$</p></div>"
             }
           ],
           "meta": {
@@ -962,8 +1161,19 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(27/3 = 9\\)</p><p>\\(27/5 = 5\\) remainder 2</p><p>\\(27/4 = 6\\) remainder 3</p></div>"
+              "explain": "Identify the range of possible insect counts and apply the divisibility rule for 3.",
+              "work": "<div style=\"text-align: left;\"><p>The insect count \\(N\\) is strictly between 25 and 35:</p><p>$$25 < N < 35 \\implies N \\in \\{26, 27, 28, 29, 30, 31, 32, 33, 34\\}$$</p><p>When lined up in groups of 3, there are <strong>none remaining</strong>, meaning \\(N\\) is an exact multiple of 3.</p><p>The multiples of 3 in this range are:</p><p>$$\\mathbf{\\{27, 30, 33\\}}$$</p></div>"
+            },
+            {
+              "explain": "Test each candidate against the remainders for groups of 5 and 4.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Testing 27:</strong></p><p>$$\\text{Groups of 5: } 27 = 5 \\times 5 + 2 \\implies \\text{remainder } \\mathbf{2} \\quad \\checkmark$$</p><p>$$\\text{Groups of 4: } 27 = 4 \\times 6 + 3 \\implies \\text{remainder } \\mathbf{3} \\quad \\checkmark$$</p><p>All three conditions are satisfied!</p><p>• <strong>Testing 30:</strong> \\(30 = 5 \\times 6 + 0\\) (remainder 0, not 2 ✗)</p><p>• <strong>Testing 33:</strong> \\(33 = 5 \\times 6 + 3\\) (remainder 3, not 2 ✗)</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 170\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"556\" height=\"166\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <text x=\"280\" y=\"24\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"700\" fill=\"#1e293b\">Testing Multiples of 3 between 25 and 35</text>\n  <g transform=\"translate(30, 40)\">\n    <!-- Header -->\n    <rect x=\"0\" y=\"0\" width=\"500\" height=\"28\" rx=\"4\" fill=\"#f1f5f9\"/>\n    <text x=\"60\" y=\"19\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">Number (N)</text>\n    <text x=\"180\" y=\"19\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">÷ 5 (Need Rem 2)</text>\n    <text x=\"320\" y=\"19\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">÷ 4 (Need Rem 3)</text>\n    <text x=\"440\" y=\"19\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#334155\">Result</text>\n    <!-- Row 27 -->\n    <rect x=\"0\" y=\"32\" width=\"500\" height=\"26\" fill=\"#f0fdf4\" rx=\"4\"/>\n    <text x=\"60\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">27</text>\n    <text x=\"180\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#15803d\">27 = 5×5 + 2 ✓</text>\n    <text x=\"320\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#15803d\">27 = 4×6 + 3 ✓</text>\n    <text x=\"440\" y=\"49\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">MATCH ✓</text>\n    <!-- Row 30 -->\n    <rect x=\"0\" y=\"60\" width=\"500\" height=\"24\" fill=\"#ffffff\"/>\n    <text x=\"60\" y=\"76\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">30</text>\n    <text x=\"180\" y=\"76\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ef4444\">Rem 0 ✗</text>\n    <text x=\"320\" y=\"76\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">—</text>\n    <text x=\"440\" y=\"76\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ef4444\">Fail</text>\n    <!-- Row 33 -->\n    <rect x=\"0\" y=\"86\" width=\"500\" height=\"24\" fill=\"#ffffff\"/>\n    <text x=\"60\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">33</text>\n    <text x=\"180\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ef4444\">Rem 3 ✗</text>\n    <text x=\"320\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\">—</text>\n    <text x=\"440\" y=\"102\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ef4444\">Fail</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Conclude the number of insects in Dennis's collection.",
+              "work": "<div style=\"text-align: left;\"><p>There are <strong>27</strong> insects in Dennis's collection.</p></div>"
             }
           ],
           "meta": {
@@ -991,7 +1201,24 @@
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 1",
             "number": 35
-          }
+          },
+          "steps": [
+            {
+              "explain": "Identify the parallel line relationships and transversal angles.",
+              "work": "<div style=\"text-align: left;\"><p>The diagram shows two horizontal parallel lines cut by two parallel transversals.</p><p>When parallel lines are intersected by a transversal, corresponding angles are equal, and consecutive interior (co-interior) angles are supplementary (sum to \\(180^\\circ\\)).</p></div>"
+            },
+            {
+              "explain": "Relate the given angle 68° to the angle x.",
+              "work": "<div style=\"text-align: left;\"><p>Since the two transversal lines are parallel, corresponding angles on both transversals are identical.</p><p>The angle \\(68^\\circ\\) is an acute interior angle.</p><p>Angle \\(x\\) and the acute corresponding angle \\(68^\\circ\\) lie on a straight line / form consecutive interior angles, so they are supplementary:</p><p>$$x + 68^\\circ = 180^\\circ$$</p><p>$$x = 180^\\circ - 68^\\circ = \\mathbf{112^\\circ}$$</p></div>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 220\" width=\"100%\" height=\"auto\">\n  <rect x=\"2\" y=\"2\" width=\"536\" height=\"216\" rx=\"10\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n  <g transform=\"translate(40, 20)\">\n    <!-- Horizontal lines -->\n    <line x1=\"20\" y1=\"50\" x2=\"440\" y2=\"50\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <path d=\"M 330 45 L 340 50 L 330 55 M 345 45 L 355 50 L 345 55\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n    <line x1=\"20\" y1=\"130\" x2=\"440\" y2=\"130\" stroke=\"#334155\" stroke-width=\"2\"/>\n    <path d=\"M 330 125 L 340 130 L 330 135 M 345 125 L 355 130 L 345 135\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n    \n    <!-- Transversals (slope dx=60, dy=140) -->\n    <line x1=\"90\" y1=\"165\" x2=\"195\" y2=\"15\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n    <path d=\"M 152 70 L 157 76 L 163 72\" stroke=\"#2563eb\" stroke-width=\"2\" fill=\"none\"/>\n    \n    <line x1=\"210\" y1=\"165\" x2=\"315\" y2=\"15\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n    <path d=\"M 272 70 L 277 76 L 283 72\" stroke=\"#2563eb\" stroke-width=\"2\" fill=\"none\"/>\n    \n    <!-- Angle 68 deg arc on right transversal -->\n    <path d=\"M 255 130 A 25 25 0 0 0 248 108\" fill=\"none\" stroke=\"#ea580c\" stroke-width=\"2.2\"/>\n    <text x=\"264\" y=\"112\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#ea580c\">68°</text>\n    \n    <!-- Angle x deg arc on left transversal -->\n    <path d=\"M 160 50 A 25 25 0 0 1 176 43\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2.2\"/>\n    <text x=\"135\" y=\"38\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#16a34a\">x°</text>\n    \n    <!-- Formula -->\n    <rect x=\"30\" y=\"155\" width=\"400\" height=\"28\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/>\n    <text x=\"230\" y=\"174\" text-anchor=\"middle\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\">Consecutive Interior / Supplementary: x = 180° − 68° = 112°</text>\n  </g>\n</svg>"
+              }
+            },
+            {
+              "explain": "Conclude the value of angle x.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\mathbf{x = 112^\\circ}$$</p></div>"
+            }
+          ]
         },
         {
           "id": "sch-sel-m2-q1",
