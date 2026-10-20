@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { loadCurriculumNoteChecked, loadLegacyCurriculumNote, saveCurriculumNote } from './curriculumLocalNotes';
+import { loadCurriculumNoteChecked, loadLegacyCurriculumNote, saveCurriculumNote, migrateExt2Notes } from './curriculumLocalNotes';
 import { requestPersistentStorage } from './homeworkLocalStore';
 
 // The curriculum worksheet's personal notes: one notepad, one saved note per topic (`noteKey`), kept on this device.
@@ -39,6 +39,7 @@ export const useCurriculumNote = (canvasRef, noteKey, enabled, topicId = null) =
     canvasRef.current?.clear();
     requestPersistentStorage();
     (async () => {
+      await migrateExt2Notes();   // Extension 2 notes follow their topics to the new ids (once per device)
       let result = await loadCurriculumNoteChecked(noteKey);
       if (!result.ok && !cancelled) {
         // One retry, a moment later (iPadOS sometimes drops the database connection in the background).

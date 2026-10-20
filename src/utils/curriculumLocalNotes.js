@@ -1,3 +1,4 @@
+import { planNoteMoves } from './ext2Renumber.js';
 // Curriculum working notes stay on this browser/device. They are never synced
 // to Firebase and are kept separately from submitted homework records.
 const DB_NAME = 'sapere-curriculum-notes';
@@ -109,6 +110,41 @@ const findLegacyNote = async (topicId) => {
   } catch {
     return null;
   }
+};
+
+// Extension 2 was re-laid out to match the 2026 textbook: its notes move to the new topic ids, once per device, in one
+// transaction (new ids reuse old ones, so a half-done move would mix notes up). See ext2Renumber.
+const EXT2_NOTES_FLAG = 'sapere:ext2-renumber-notes:v1';
+let ext2NotesPromise = null;
+export const migrateExt2Notes = () => {
+  if (ext2NotesPromise) return ext2NotesPromise;
+  ext2NotesPromise = (async () => {
+    try {
+      if (globalThis.localStorage?.getItem(EXT2_NOTES_FLAG)) return;
+      const db = await openDb();
+      await new Promise((resolve, reject) => {
+        const tx = db.transaction(STORE, 'readwrite');
+        const store = tx.objectStore(STORE);
+        const entries = [];
+        const cursorRequest = store.openCursor();
+        cursorRequest.onsuccess = () => {
+          const cursor = cursorRequest.result;
+          if (cursor) { if (String(cursor.key).startsWith('topic:y12e2-')) entries.push([cursor.key, cursor.value]); cursor.continue(); return; }
+          const { remove, set } = planNoteMoves(entries);
+          remove.forEach((key) => store.delete(key));
+          set.forEach(([key, value]) => store.put(value, key));
+        };
+        cursorRequest.onerror = () => reject(cursorRequest.error);
+        tx.oncomplete = resolve;
+        tx.onerror = () => reject(tx.error);
+        tx.onabort = () => reject(tx.error);
+      });
+      globalThis.localStorage?.setItem(EXT2_NOTES_FLAG, '1');
+    } catch {
+      ext2NotesPromise = null;   // try again next time; nothing was changed
+    }
+  })();
+  return ext2NotesPromise;
 };
 
 export const loadCurriculumNote = read;

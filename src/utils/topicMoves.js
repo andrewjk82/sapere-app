@@ -1,3 +1,5 @@
+import { planProgressMoves } from './ext2Renumber.js';
+
 // Topics moved to another chapter id keep their own ids, but practice progress
 // on each device is stored under `sapere:tp:{uid}:{chapterId}:{topicId}…`.
 // Copy those keys to the new chapter once per device so progress follows.
@@ -6,14 +8,30 @@ export const MOVED_TOPICS = [
   { from: 'y7-4', to: 'y7-4p2', topics: ['y7-4h', 'y7-4i', 'y7-4j', 'y7-4k', 'y7-4l'] },
 ];
 
+
 const FLAG = 'sapere:topic-moves:v1';
+const EXT2_FLAG = 'sapere:ext2-renumber:v1';
+
+// Extension 2 was re-laid out to match the 2026 textbook: each student's progress on a device follows its topic to the
+// new id (see ext2Renumber). Once per student per device.
+function migrateExt2Progress(uid, storage) {
+  const flagKey = `${EXT2_FLAG}:${uid}`;
+  if (storage.getItem(flagKey)) return 0;
+  const keys = [];
+  for (let i = 0; i < storage.length; i += 1) keys.push(storage.key(i));
+  const { remove, set } = planProgressMoves(uid, keys, (k) => storage.getItem(k));
+  remove.forEach((k) => storage.removeItem(k));
+  set.forEach(([k, v]) => storage.setItem(k, v));
+  storage.setItem(flagKey, '1');
+  return set.length;
+}
 
 export function migrateMovedTopicProgress(uid, storage = globalThis.localStorage) {
   if (!uid || !storage) return 0;
   try {
+    let copied = migrateExt2Progress(uid, storage);
     const flagKey = `${FLAG}:${uid}`;
-    if (storage.getItem(flagKey)) return 0;
-    let copied = 0;
+    if (storage.getItem(flagKey)) return copied;
     const keys = [];
     for (let i = 0; i < storage.length; i += 1) keys.push(storage.key(i));
     for (const move of MOVED_TOPICS) {

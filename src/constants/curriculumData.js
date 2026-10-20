@@ -3113,7 +3113,7 @@ export const CURRICULUM_DATA = {
       {
         id: 'y12e2-1',
         title: 'Chapter 1: Complex Numbers I',
-        modules: 8,
+        modules: 7,
         topics: [
           { id: 'y12e2-1A', code: '1A', title: 'The Arithmetic of Complex Numbers' },
           { id: 'y12e2-1B', code: '1B', title: 'Quadratic Equations' },
@@ -3121,82 +3121,96 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-1D', code: '1D', title: 'Modulus-Argument Form' },
           { id: 'y12e2-1E', code: '1E', title: 'Vectors and the Complex Plane' },
           { id: 'y12e2-1F', code: '1F', title: 'Curves and Regions in the Argand Diagram' },
-          { id: 'y12e2-1G', code: '1G', title: 'Polynomials and Complex Numbers' },
-          { id: 'y12e2-1H', code: '1H', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-1R', code: '1R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-2',
-        title: 'Chapter 2: Nature of Proof',
-        modules: 7,
+        title: 'Chapter 2: Proof',
+        modules: 8,
         topics: [
-          { id: 'y12e2-2A', code: '2A', title: 'The Language of Proof' },
-          { id: 'y12e2-2B', code: '2B', title: 'Number Proofs' },
-          { id: 'y12e2-2C', code: '2C', title: 'Proof by Contraposition and by Contradiction' },
-          { id: 'y12e2-2D', code: '2D', title: 'Algebraic Inequalities' },
-          { id: 'y12e2-2E', code: '2E', title: 'Induction' },
-          { id: 'y12e2-2F', code: '2F', title: 'Inequalities in Geometry and Calculus' },
-          { id: 'y12e2-2G', code: '2G', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-2A', code: '2A', title: 'Logic and The Language of Proof' },
+          { id: 'y12e2-2B', code: '2B', title: 'Further Logic and Language of Proof' },
+          { id: 'y12e2-2C', code: '2C', title: 'Number Proofs' },
+          { id: 'y12e2-2D', code: '2D', title: 'Proof by Contraposition and by Contradiction' },
+          { id: 'y12e2-2E', code: '2E', title: 'Algebraic Inequalities' },
+          { id: 'y12e2-2F', code: '2F', title: 'Further Proof by Induction' },
+          { id: 'y12e2-2G', code: '2G', title: 'Inequalities in Geometry and Calculus' },
+          { id: 'y12e2-2R', code: '2R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-3',
-        title: 'Chapter 3: Complex Numbers II: de Moivre and Euler',
-        modules: 6,
+        title: 'Chapter 3: Complex Numbers II: Polynomials & de Moivre',
+        modules: 5,
         topics: [
-          { id: 'y12e2-3A', code: '3A', title: 'Powers of Complex Numbers' },
-          { id: 'y12e2-3B', code: '3B', title: 'Trigonometric Identities' },
-          { id: 'y12e2-3C', code: '3C', title: 'Roots of Complex Numbers' },
-          { id: 'y12e2-3D', code: '3D', title: 'Exponential Form: Euler\'s Formula' },
-          { id: 'y12e2-3E', code: '3E', title: 'Applications of Exponential Form' },
-          { id: 'y12e2-3F', code: '3F', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-3A', code: '3A', title: 'Polynomials and Complex Numbers' },
+          { id: 'y12e2-3B', code: '3B', title: 'Powers of Complex Numbers' },
+          { id: 'y12e2-3C', code: '3C', title: 'Trigonometric Identities' },
+          { id: 'y12e2-3D', code: '3D', title: 'Roots of Complex Numbers' },
+          { id: 'y12e2-3R', code: '3R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-4',
-        title: 'Chapter 4: Integration',
+        title: 'Chapter 4: Vectors',
         modules: 10,
         topics: [
-          { id: 'y12e2-4A', code: '4A', title: 'The Standard Integrals' },
-          { id: 'y12e2-4B', code: '4B', title: 'Algebraic Manipulation' },
-          { id: 'y12e2-4C', code: '4C', title: 'Substitution' },
-          { id: 'y12e2-4D', code: '4D', title: 'Partial Fractions' },
-          { id: 'y12e2-4E', code: '4E', title: 'Denominators with Quadratics' },
-          { id: 'y12e2-4F', code: '4F', title: 'Integration by Parts' },
-          { id: 'y12e2-4G', code: '4G', title: 'Trigonometric Integrals' },
-          { id: 'y12e2-4H', code: '4H', title: 'Reduction Formulae' },
-          { id: 'y12e2-4I', code: '4I', title: 'Miscellaneous Integrals' },
-          { id: 'y12e2-4J', code: '4J', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-4A', code: '4A', title: 'The Vector Equation of a Line' },
+          { id: 'y12e2-4B', code: '4B', title: 'Parallel, Intersecting and Skew Lines' },
+          { id: 'y12e2-4C', code: '4C', title: 'Perpendicular Lines' },
+          { id: 'y12e2-4D', code: '4D', title: 'Vector Equations of Circles and Spheres' },
+          { id: 'y12e2-4E', code: '4E', title: 'Other Parametric Curves' },
+          { id: 'y12e2-4F', code: '4F', title: 'The Algebra of the Dot Product' },
+          { id: 'y12e2-4G', code: '4G', title: 'Vectors and Geometry in Two Dimensions' },
+          { id: 'y12e2-4H', code: '4H', title: 'Vectors and Geometry in Three Dimensions' },
+          { id: 'y12e2-4X', code: '4X', title: 'Appendix: Some Geometry in 3D' },
+          { id: 'y12e2-4R', code: '4R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-5',
-        title: 'Chapter 5: Vectors',
-        modules: 8,
+        title: 'Chapter 5: Trigonometric Identities',
+        modules: 3,
         topics: [
-          { id: 'y12e2-5A', code: '5A', title: 'Coordinates in Three Dimensions' },
-          { id: 'y12e2-5B', code: '5B', title: 'Vectors in Three Dimensions' },
-          { id: 'y12e2-5C', code: '5C', title: 'The Dot Product' },
-          { id: 'y12e2-5D', code: '5D', title: 'Applications of the Dot Product' },
-          { id: 'y12e2-5E', code: '5E', title: 'Vector Proofs in Geometry' },
-          { id: 'y12e2-5F', code: '5F', title: 'The Vector Equation of a Line' },
-          { id: 'y12e2-5G', code: '5G', title: 'Vector Equations of Circles, Spheres and Planes' },
-          { id: 'y12e2-5H', code: '5H', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-5A', code: '5A', title: 'Products to Sums' },
+          { id: 'y12e2-5B', code: '5B', title: 'The t-Formulae' },
+          { id: 'y12e2-5R', code: '5R', title: 'Chapter Review Exercise' }
         ]
       },
       {
         id: 'y12e2-6',
-        title: 'Chapter 6: Mechanics',
-        modules: 8,
+        title: 'Chapter 6: Integration',
+        modules: 10,
         topics: [
-          { id: 'y12e2-6A', code: '6A', title: 'Forces and Acceleration' },
-          { id: 'y12e2-6B', code: '6B', title: 'Simple Harmonic Motion and Time' },
-          { id: 'y12e2-6C', code: '6C', title: 'Simple Harmonic Motion and Displacement' },
-          { id: 'y12e2-6D', code: '6D', title: 'Horizontal Resisted Motion' },
-          { id: 'y12e2-6E', code: '6E', title: 'Vertical Resisted Motion' },
-          { id: 'y12e2-6F', code: '6F', title: 'Projectile Motion' },
-          { id: 'y12e2-6G', code: '6G', title: 'Miscellaneous Problems' },
-          { id: 'y12e2-6H', code: '6H', title: 'Chapter Review Exercise' }
+          { id: 'y12e2-6A', code: '6A', title: 'The Standard Integrals' },
+          { id: 'y12e2-6B', code: '6B', title: 'Algebraic Manipulation' },
+          { id: 'y12e2-6C', code: '6C', title: 'Substitution' },
+          { id: 'y12e2-6D', code: '6D', title: 'Partial Fractions' },
+          { id: 'y12e2-6E', code: '6E', title: 'Denominators with Quadratics' },
+          { id: 'y12e2-6F', code: '6F', title: 'Integration by Parts' },
+          { id: 'y12e2-6G', code: '6G', title: 'Trigonometric Integrals' },
+          { id: 'y12e2-6H', code: '6H', title: 'Reduction Formulae' },
+          { id: 'y12e2-6I', code: '6I', title: 'Miscellaneous Integrals' },
+          { id: 'y12e2-6R', code: '6R', title: 'Chapter Review Exercise' }
+        ]
+      },
+      {
+        id: 'y12e2-7',
+        title: 'Chapter 7: Mechanics',
+        modules: 11,
+        topics: [
+          { id: 'y12e2-7A', code: '7A', title: 'Resolving Forces' },
+          { id: 'y12e2-7B', code: '7B', title: 'Planes and Pulleys' },
+          { id: 'y12e2-7C', code: '7C', title: 'Forces and Acceleration' },
+          { id: 'y12e2-7D', code: '7D', title: 'Simple Harmonic Motion and Time' },
+          { id: 'y12e2-7E', code: '7E', title: 'Simple Harmonic Motion and Displacement' },
+          { id: 'y12e2-7F', code: '7F', title: 'Horizontal Resisted Motion' },
+          { id: 'y12e2-7G', code: '7G', title: 'Vertical Resisted Motion' },
+          { id: 'y12e2-7H', code: '7H', title: 'Projectile Motion' },
+          { id: 'y12e2-7I', code: '7I', title: 'Resisted Projectile Motion' },
+          { id: 'y12e2-7J', code: '7J', title: 'Miscellaneous Problems' },
+          { id: 'y12e2-7R', code: '7R', title: 'Chapter Review Exercise' }
         ]
       }
     ],
