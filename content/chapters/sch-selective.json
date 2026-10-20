@@ -2412,22 +2412,33 @@
         {
           "id": "sch-sel-m3-q9",
           "type": "mc",
-          "stem": "This shape has been ruled up using congruent squares. It has a perimeter of 70 cm.\n\nWhat is the area of the shape?",
+          "stem": "This shape has been ruled up using congruent squares. It has a perimeter of \\(70\\text{ cm}\\).\n\nWhat is the area of the shape?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 227 112\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q9.jpg\" x=\"0\" y=\"0\" width=\"227\" height=\"112\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 135\" style=\"max-width: 240px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"2\" fill=\"#ffffff\" stroke-linejoin=\"round\"><rect x=\"24\" y=\"16\" width=\"48\" height=\"48\"/><rect x=\"120\" y=\"16\" width=\"48\" height=\"48\"/><rect x=\"24\" y=\"64\" width=\"48\" height=\"48\"/><rect x=\"72\" y=\"64\" width=\"48\" height=\"48\"/><rect x=\"120\" y=\"64\" width=\"48\" height=\"48\"/><rect x=\"168\" y=\"64\" width=\"48\" height=\"48\"/></g></svg>"
           },
           "options": [
-            "\\(100\\ cm^2\\)",
-            "\\(150\\ cm^2\\)",
-            "\\(225\\ cm^2\\)",
-            "\\(70\\ cm^2\\)",
-            "\\(25\\ cm^2\\)"
+            "\\(100\\text{ cm}^2\\)",
+            "\\(150\\text{ cm}^2\\)",
+            "\\(225\\text{ cm}^2\\)",
+            "\\(70\\text{ cm}^2\\)",
+            "\\(25\\text{ cm}^2\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>70/14 sides = 5 = length of each square side. Therefore, each square has an area of 25. \\(25 \\times 6 = \\mathbf{150}\\)</p></div>"
+              "explain": "Count the number of square side lengths forming the perimeter",
+              "work": "<p>Trace the outside boundary of the figure to count how many individual square sides make up the perimeter:</p><ul><li>Bottom edge: \\(4\\) segments</li><li>Right edge: \\(1\\) segment</li><li>Top step (column 3): \\(1\\) segment</li><li>Right edge of column 2 tower: \\(1\\) segment</li><li>Top of column 2 tower: \\(1\\) segment</li><li>Left edge of column 2 tower: \\(1\\) segment</li><li>Top step (column 1): \\(1\\) segment</li><li>Right edge of column 0 tower: \\(1\\) segment</li><li>Top of column 0 tower: \\(1\\) segment</li><li>Left edge: \\(2\\) segments</li></ul><p>\\[\\text{Total exterior sides} = 4 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 2 = 14\\text{ sides}\\]</p>"
+            },
+            {
+              "explain": "Find the side length and area of each square",
+              "work": "<p>Divide the total perimeter by the \\(14\\) equal exterior side lengths:</p><p>\\[\\text{Side length of each square} = \\frac{70\\text{ cm}}{14} = 5\\text{ cm}\\]</p><p>Calculate the area of a single square:</p><p>\\[\\text{Area of 1 square} = 5\\text{ cm} \\times 5\\text{ cm} = 25\\text{ cm}^2\\]</p>"
+            },
+            {
+              "explain": "Calculate the total area of the shape",
+              "work": "<p>The shape is composed of \\(6\\) identical squares (\\(4\\) in the bottom row and \\(2\\) in the top row):</p><p>\\[\\text{Total Area} = 6 \\times 25\\text{ cm}^2 = \\mathbf{150\\text{ cm}^2}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 140\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(15, 10)\" stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"#f0fdf4\"><rect x=\"15\" y=\"10\" width=\"40\" height=\"40\"/><text x=\"35\" y=\"34\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><rect x=\"95\" y=\"10\" width=\"40\" height=\"40\"/><text x=\"115\" y=\"34\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><rect x=\"15\" y=\"50\" width=\"40\" height=\"40\"/><text x=\"35\" y=\"74\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><rect x=\"55\" y=\"50\" width=\"40\" height=\"40\"/><text x=\"75\" y=\"74\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><rect x=\"95\" y=\"50\" width=\"40\" height=\"40\"/><text x=\"115\" y=\"74\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><rect x=\"135\" y=\"50\" width=\"40\" height=\"40\"/><text x=\"155\" y=\"74\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" stroke=\"none\" text-anchor=\"middle\">25</text><text x=\"95\" y=\"110\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" stroke=\"none\" text-anchor=\"middle\">Side = 5 cm (each)</text></g><g transform=\"translate(225, 12)\"><rect x=\"0\" y=\"0\" width=\"195\" height=\"105\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"97\" y=\"24\" fill=\"#1e40af\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\">AREA CALCULATION</text><text x=\"97\" y=\"46\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"12\" text-anchor=\"middle\">Perimeter = 14 × 5 = 70 cm</text><text x=\"97\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"12\" text-anchor=\"middle\">1 Square = 5 × 5 = 25 cm²</text><line x1=\"20\" y1=\"74\" x2=\"175\" y2=\"74\" stroke=\"#bfdbfe\"/><text x=\"97\" y=\"94\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"800\" text-anchor=\"middle\">Total = 6 × 25 = 150 cm²</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3361,7 +3372,7 @@
           "type": "multipart",
           "stem": "Questions 9 – 10 use the following information.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 748 227\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q9-10.jpg\" x=\"0\" y=\"0\" width=\"748\" height=\"227\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 150\" style=\"max-width: 500px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"#ffffff\" stroke-linejoin=\"round\"><rect x=\"15\" y=\"15\" width=\"304\" height=\"114\"/><line x1=\"53\" y1=\"15\" x2=\"53\" y2=\"129\"/><line x1=\"91\" y1=\"15\" x2=\"91\" y2=\"129\"/><line x1=\"129\" y1=\"15\" x2=\"129\" y2=\"129\"/><line x1=\"167\" y1=\"15\" x2=\"167\" y2=\"129\"/><line x1=\"205\" y1=\"15\" x2=\"205\" y2=\"129\"/><line x1=\"243\" y1=\"15\" x2=\"243\" y2=\"129\"/><line x1=\"281\" y1=\"15\" x2=\"281\" y2=\"129\"/><line x1=\"15\" y1=\"53\" x2=\"319\" y2=\"53\"/><line x1=\"15\" y1=\"91\" x2=\"319\" y2=\"91\"/></g><g stroke=\"#1e293b\" stroke-width=\"1.4\"><line x1=\"129\" y1=\"15\" x2=\"167\" y2=\"53\"/><line x1=\"167\" y1=\"15\" x2=\"129\" y2=\"53\"/><line x1=\"281\" y1=\"15\" x2=\"319\" y2=\"53\"/><line x1=\"319\" y1=\"15\" x2=\"281\" y2=\"53\"/><line x1=\"15\" y1=\"53\" x2=\"53\" y2=\"91\"/><line x1=\"53\" y1=\"53\" x2=\"15\" y2=\"91\"/><line x1=\"53\" y1=\"53\" x2=\"91\" y2=\"91\"/><line x1=\"91\" y1=\"53\" x2=\"53\" y2=\"91\"/><line x1=\"129\" y1=\"53\" x2=\"167\" y2=\"91\"/><line x1=\"167\" y1=\"53\" x2=\"129\" y2=\"91\"/><line x1=\"281\" y1=\"53\" x2=\"319\" y2=\"91\"/><line x1=\"319\" y1=\"53\" x2=\"281\" y2=\"91\"/><line x1=\"15\" y1=\"91\" x2=\"53\" y2=\"129\"/><line x1=\"53\" y1=\"91\" x2=\"15\" y2=\"129\"/><line x1=\"129\" y1=\"91\" x2=\"167\" y2=\"129\"/><line x1=\"167\" y1=\"91\" x2=\"129\" y2=\"129\"/><line x1=\"281\" y1=\"91\" x2=\"319\" y2=\"129\"/><line x1=\"319\" y1=\"91\" x2=\"281\" y2=\"129\"/></g><g stroke=\"#1e293b\" stroke-width=\"1.3\"><line x1=\"167\" y1=\"27\" x2=\"179\" y2=\"15\"/><line x1=\"167\" y1=\"34\" x2=\"186\" y2=\"15\"/><line x1=\"186\" y1=\"53\" x2=\"205\" y2=\"34\"/><line x1=\"193\" y1=\"53\" x2=\"205\" y2=\"41\"/><line x1=\"205\" y1=\"27\" x2=\"217\" y2=\"15\"/><line x1=\"205\" y1=\"34\" x2=\"224\" y2=\"15\"/><line x1=\"224\" y1=\"53\" x2=\"243\" y2=\"34\"/><line x1=\"231\" y1=\"53\" x2=\"243\" y2=\"41\"/><line x1=\"243\" y1=\"27\" x2=\"255\" y2=\"15\"/><line x1=\"243\" y1=\"34\" x2=\"262\" y2=\"15\"/><line x1=\"262\" y1=\"53\" x2=\"281\" y2=\"34\"/><line x1=\"269\" y1=\"53\" x2=\"281\" y2=\"41\"/><line x1=\"281\" y1=\"27\" x2=\"293\" y2=\"15\"/><line x1=\"281\" y1=\"34\" x2=\"300\" y2=\"15\"/><line x1=\"300\" y1=\"53\" x2=\"319\" y2=\"34\"/><line x1=\"307\" y1=\"53\" x2=\"319\" y2=\"41\"/><line x1=\"167\" y1=\"65\" x2=\"179\" y2=\"53\"/><line x1=\"167\" y1=\"72\" x2=\"186\" y2=\"53\"/><line x1=\"186\" y1=\"91\" x2=\"205\" y2=\"72\"/><line x1=\"193\" y1=\"91\" x2=\"205\" y2=\"79\"/><line x1=\"205\" y1=\"65\" x2=\"217\" y2=\"53\"/><line x1=\"205\" y1=\"72\" x2=\"224\" y2=\"53\"/><line x1=\"224\" y1=\"91\" x2=\"243\" y2=\"72\"/><line x1=\"231\" y1=\"91\" x2=\"243\" y2=\"79\"/><line x1=\"243\" y1=\"65\" x2=\"255\" y2=\"53\"/><line x1=\"243\" y1=\"72\" x2=\"262\" y2=\"53\"/><line x1=\"262\" y1=\"91\" x2=\"281\" y2=\"72\"/><line x1=\"269\" y1=\"91\" x2=\"281\" y2=\"79\"/><line x1=\"281\" y1=\"65\" x2=\"293\" y2=\"53\"/><line x1=\"281\" y1=\"72\" x2=\"300\" y2=\"53\"/><line x1=\"300\" y1=\"91\" x2=\"319\" y2=\"72\"/><line x1=\"307\" y1=\"91\" x2=\"319\" y2=\"79\"/><line x1=\"167\" y1=\"103\" x2=\"179\" y2=\"91\"/><line x1=\"167\" y1=\"110\" x2=\"186\" y2=\"91\"/><line x1=\"186\" y1=\"129\" x2=\"205\" y2=\"110\"/><line x1=\"193\" y1=\"129\" x2=\"205\" y2=\"117\"/><line x1=\"205\" y1=\"103\" x2=\"217\" y2=\"91\"/><line x1=\"205\" y1=\"110\" x2=\"224\" y2=\"91\"/><line x1=\"224\" y1=\"129\" x2=\"243\" y2=\"110\"/><line x1=\"231\" y1=\"129\" x2=\"243\" y2=\"117\"/><line x1=\"243\" y1=\"103\" x2=\"255\" y2=\"91\"/><line x1=\"243\" y1=\"110\" x2=\"262\" y2=\"91\"/><line x1=\"262\" y1=\"129\" x2=\"281\" y2=\"110\"/><line x1=\"269\" y1=\"129\" x2=\"281\" y2=\"117\"/><line x1=\"281\" y1=\"103\" x2=\"293\" y2=\"91\"/><line x1=\"281\" y1=\"110\" x2=\"300\" y2=\"91\"/><line x1=\"300\" y1=\"129\" x2=\"319\" y2=\"110\"/><line x1=\"307\" y1=\"129\" x2=\"319\" y2=\"117\"/></g><g fill=\"#1e293b\"><circle cx=\"34\" cy=\"34\" r=\"5.5\"/><circle cx=\"72\" cy=\"34\" r=\"5.5\"/><circle cx=\"110\" cy=\"34\" r=\"5.5\"/><circle cx=\"148\" cy=\"34\" r=\"5.5\"/><circle cx=\"262\" cy=\"34\" r=\"5.5\"/><circle cx=\"34\" cy=\"72\" r=\"5.5\"/><circle cx=\"72\" cy=\"72\" r=\"5.5\"/><circle cx=\"110\" cy=\"72\" r=\"5.5\"/><circle cx=\"148\" cy=\"72\" r=\"5.5\"/><circle cx=\"262\" cy=\"72\" r=\"5.5\"/><circle cx=\"34\" cy=\"110\" r=\"5.5\"/><circle cx=\"72\" cy=\"110\" r=\"5.5\"/><circle cx=\"110\" cy=\"110\" r=\"5.5\"/><circle cx=\"148\" cy=\"110\" r=\"5.5\"/><circle cx=\"262\" cy=\"110\" r=\"5.5\"/></g><g transform=\"translate(345, 15)\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"114\" rx=\"4\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"24\" y=\"29\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\">A =</text><rect x=\"80\" y=\"10\" width=\"28\" height=\"28\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><circle cx=\"94\" cy=\"24\" r=\"4.5\" fill=\"#1e293b\"/><text x=\"24\" y=\"67\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\">B =</text><rect x=\"80\" y=\"48\" width=\"28\" height=\"28\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"48\" x2=\"108\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><line x1=\"108\" y1=\"48\" x2=\"80\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.4\"/><text x=\"24\" y=\"104\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\">C =</text><rect x=\"80\" y=\"84\" width=\"28\" height=\"28\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"94\" x2=\"90\" y2=\"84\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><line x1=\"80\" y1=\"99\" x2=\"95\" y2=\"84\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><line x1=\"93\" y1=\"112\" x2=\"108\" y2=\"97\" stroke=\"#1e293b\" stroke-width=\"1.3\"/><line x1=\"98\" y1=\"112\" x2=\"108\" y2=\"102\" stroke=\"#1e293b\" stroke-width=\"1.3\"/></g></svg>"
           },
           "parts": [
             {
@@ -3378,8 +3389,19 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(\\frac{15}{24} = \\frac{5}{8}\\)</p></div>"
+                  "explain": "Count the total number of squares in the grid",
+                  "work": "<p>The grid consists of \\(3\\) rows and \\(8\\) columns:</p><p>\\[\\text{Total squares} = 3 \\times 8 = 24\\]</p>"
+                },
+                {
+                  "explain": "Count how many squares contain symbol A (the solid dot)",
+                  "work": "<p>Check the squares row by row:</p><ul><li>Row 1: columns 1, 2, 3, 4, 7 contain dots (\\(5\\) dots)</li><li>Row 2: columns 1, 2, 3, 4, 7 contain dots (\\(5\\) dots)</li><li>Row 3: columns 1, 2, 3, 4, 7 contain dots (\\(5\\) dots)</li></ul><p>\\[\\text{Total squares with symbol A} = 5 + 5 + 5 = 15\\]</p>"
+                },
+                {
+                  "explain": "Express as a simplified fraction",
+                  "work": "<p>Divide the number of squares containing symbol A by the total number of squares:</p><p>\\[A = \\frac{15}{24} = \\frac{15 \\div 3}{24 \\div 3} = \\mathbf{\\frac{5}{8}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 110\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">DOT COUNT</text><text x=\"85\" y=\"54\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">15 out of 24 squares</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(230, 20)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">SIMPLIFIED FRACTION</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">5 / 8</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -3397,8 +3419,19 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(C = \\frac{1}{2}\\)</p><p>\\(B = \\frac{3}{8}\\)</p><p>\\(2B + \\frac{1}{4}C = 2 \\times \\frac{3}{8} + \\frac{1}{4} \\times \\frac{1}{2} = \\frac{7}{8}\\)</p></div>"
+                  "explain": "Find the fractions representing symbols B and C",
+                  "work": "<p><strong>Fraction for B (crossed square):</strong></p><p>Squares with an \\(X\\):</p><ul><li>Row 1: columns 4, 8 (\\(2\\) squares)</li><li>Row 2: columns 1, 2, 4, 8 (\\(4\\) squares)</li><li>Row 3: columns 1, 4, 8 (\\(3\\) squares)</li></ul><p>\\[B = \\frac{2 + 4 + 3}{24} = \\frac{9}{24} = \\frac{3}{8}\\]</p><p><strong>Fraction for C (striped corners):</strong></p><p>Columns 5, 6, 7, and 8 all have striped corners across all \\(3\\) rows:</p><p>\\[C = \\frac{4 \\times 3}{24} = \\frac{12}{24} = \\frac{1}{2}\\]</p>"
+                },
+                {
+                  "explain": "Calculate 2B + 1/4 C",
+                  "work": "<p>Substitute \\(B = \\frac{3}{8}\\) and \\(C = \\frac{1}{2}\\) into the expression:</p><p>\\[2B = 2 \\times \\frac{3}{8} = \\frac{6}{8}\\]</p><p>\\[\\frac{1}{4}C = \\frac{1}{4} \\times \\frac{1}{2} = \\frac{1}{8}\\]</p><p>Add the two terms:</p><p>\\[2B + \\frac{1}{4}C = \\frac{6}{8} + \\frac{1}{8} = \\frac{7}{8}\\]</p>"
+                },
+                {
+                  "explain": "Match with the multiple choice options",
+                  "work": "<p>Convert \\(\\frac{7}{8}\\) to sixteenths to match the answer choices:</p><p>\\[\\frac{7}{8} = \\frac{7 \\times 2}{8 \\times 2} = \\mathbf{\\frac{14}{16}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 120\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">TERM 1: 2B</text><text x=\"60\" y=\"54\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">2 × 3/8 = 6/8</text></g><text x=\"155\" y=\"68\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">+</text><g transform=\"translate(170, 20)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">TERM 2: 1/4 C</text><text x=\"60\" y=\"54\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">1/4 × 1/2 = 1/8</text></g><text x=\"305\" y=\"68\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(320, 20)\"><rect x=\"0\" y=\"0\" width=\"100\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"50\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">RESULT</text><text x=\"50\" y=\"50\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\">7/8</text><text x=\"50\" y=\"68\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">= 14/16</text></g></svg>"
+                  }
                 }
               ]
             }
@@ -3436,22 +3469,33 @@
         {
           "id": "sch-sel-m4-q12",
           "type": "mc",
-          "stem": "A tower of 8 identical children's play things is 1.6 metres tall.\n\nWhat is the distance from the top of the 7th block to the bottom of the 3\\(^{\\text{rd}}\\) block?",
+          "stem": "A tower of \\(8\\) identical children's play blocks is \\(1.6\\text{ m}\\) tall.\n\nWhat is the distance from the top of the \\(7^{\\text{th}}\\) block to the bottom of the \\(3^{\\text{rd}}\\) block?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 426 366\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q12.jpg\" x=\"0\" y=\"0\" width=\"426\" height=\"366\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 370\" style=\"max-width: 280px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"arr-up\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M5,5 L3,1 L1,5 Z\" fill=\"#1e293b\"/></marker><marker id=\"arr-down\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L3,5 L5,1 Z\" fill=\"#1e293b\"/></marker></defs><g stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"#ffffff\" stroke-linejoin=\"round\"><polygon points=\"44,25 106,25 96,65 54,65\"/><polygon points=\"54,65 96,65 106,105 44,105\"/><polygon points=\"44,105 106,105 96,145 54,145\"/><polygon points=\"54,145 96,145 106,185 44,185\"/><polygon points=\"44,185 106,185 96,225 54,225\"/><polygon points=\"54,225 96,225 106,265 44,265\"/><polygon points=\"44,265 106,265 96,305 54,305\"/><polygon points=\"54,305 96,305 106,345 44,345\"/></g><line x1=\"180\" y1=\"27\" x2=\"180\" y2=\"343\" stroke=\"#1e293b\" stroke-width=\"2\" marker-start=\"url(#arr-up)\" marker-end=\"url(#arr-down)\"/><text x=\"210\" y=\"190\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"600\">1.6 m</text></svg>"
           },
           "options": [
-            "1.0 m",
-            "1.15 m",
-            "1.2 m",
-            "0.85 m",
-            "0.95 m"
+            "\\(1.0\\text{ m}\\)",
+            "\\(1.15\\text{ m}\\)",
+            "\\(1.2\\text{ m}\\)",
+            "\\(0.85\\text{ m}\\)",
+            "\\(0.95\\text{ m}\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>1.6m over 8 blocks = 0.2m per block</p><p>from 7\\(^{\\text{th}}\\) to 3\\(^{\\text{rd}}\\) is over 5 blocks</p><p>\\(1m\\ \\ 5/8 \\times 1.6m = 1.0m\\)</p></div>"
+              "explain": "Calculate the height of one block",
+              "work": "<p>Since the tower consists of \\(8\\) identical blocks with a combined total height of \\(1.6\\text{ m}\\):</p><p>\\[\\text{Height of 1 block} = \\frac{1.6\\text{ m}}{8} = 0.2\\text{ m}\\]</p>"
+            },
+            {
+              "explain": "Identify how many blocks lie between the specified points",
+              "work": "<p>Numbering the blocks from \\(1\\) (bottom) to \\(8\\) (top):</p><ul><li>The <strong>bottom of the \\(3^{\\text{rd}}\\) block</strong> is at the boundary between block 2 and block 3 (height level \\(2\\)).</li><li>The <strong>top of the \\(7^{\\text{th}}\\) block</strong> is at the boundary between block 7 and block 8 (height level \\(7\\)).</li></ul><p>The span includes blocks 3, 4, 5, 6, and 7:</p><p>\\[\\text{Number of blocks} = 7 - 3 + 1 = 5\\text{ blocks}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total distance",
+              "work": "<p>Multiply the number of blocks by the height of each block:</p><p>\\[\\text{Distance} = 5 \\times 0.2\\text{ m} = \\mathbf{1.0\\text{ m}}\\]</p><p><em>Alternative approach:</em> As a fraction of the entire tower:</p><p>\\[\\text{Distance} = \\frac{5}{8} \\times 1.6\\text{ m} = \\mathbf{1.0\\text{ m}}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 260\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 10)\"><g stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"#f1f5f9\"><polygon points=\"24,10 66,10 60,35 30,35\"/><text x=\"75\" y=\"26\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 8</text></g><g stroke=\"#0284c7\" stroke-width=\"1.6\" fill=\"#e0f2fe\"><polygon points=\"30,35 60,35 66,60 24,60\"/><polygon points=\"24,60 66,60 60,85 30,85\"/><polygon points=\"30,85 60,85 66,110 24,110\"/><polygon points=\"24,110 66,110 60,135 30,135\"/><polygon points=\"30,135 60,135 66,160 24,160\"/><text x=\"75\" y=\"51\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\">Block 7 (top)</text><text x=\"75\" y=\"76\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 6</text><text x=\"75\" y=\"101\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 5</text><text x=\"75\" y=\"126\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 4</text><text x=\"75\" y=\"151\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\">Block 3 (bottom)</text></g><g stroke=\"#94a3b8\" stroke-width=\"1.4\" fill=\"#f1f5f9\"><polygon points=\"24,160 66,160 60,185 30,185\"/><polygon points=\"30,185 60,185 66,210 24,210\"/><text x=\"75\" y=\"176\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 2</text><text x=\"75\" y=\"201\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"11\">Block 1</text></g><line x1=\"15\" y1=\"35\" x2=\"15\" y2=\"160\" stroke=\"#0284c7\" stroke-width=\"2\"/><line x1=\"10\" y1=\"35\" x2=\"20\" y2=\"35\" stroke=\"#0284c7\" stroke-width=\"2\"/><line x1=\"10\" y1=\"160\" x2=\"20\" y2=\"160\" stroke=\"#0284c7\" stroke-width=\"2\"/></g><g transform=\"translate(210, 50)\"><rect x=\"0\" y=\"0\" width=\"150\" height=\"105\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"75\" y=\"24\" fill=\"#1e40af\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">SPAN CALCULATION</text><text x=\"75\" y=\"46\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"12\" text-anchor=\"middle\">1 block = 0.2 m</text><text x=\"75\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"12\" text-anchor=\"middle\">Span = 5 blocks</text><line x1=\"15\" y1=\"74\" x2=\"135\" y2=\"74\" stroke=\"#bfdbfe\"/><text x=\"75\" y=\"94\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"800\" text-anchor=\"middle\">5 × 0.2 m = 1.0 m</text></g></svg>"
+              }
             }
           ],
           "meta": {
