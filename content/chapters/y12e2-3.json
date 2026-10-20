@@ -844,20 +844,20 @@
           "type": "mc",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "What is the principal value of \\(e^{i\\pi/8}\\) in radical notation?",
-          "hint": "Raise each candidate fourth root to the fourth power, or write \\(i=e^{i\\pi/2}\\) and divide its argument by 4.",
+          "stem": "What is the principal value of \\(e^{i\\frac{\\pi}{8}}\\) in radical notation?",
+          "hint": "Raise each candidate fourth root to the fourth power, or write \\(i=e^{i\\frac{\\pi}{2}}\\) and divide its argument by \\(4\\).",
           "steps": [
             {
-              "explain": "Write i in exponential form using its principal argument π/2.",
-              "work": "\\(i=e^{i\\pi/2}.\\)"
+              "explain": "Write \\(i\\) in exponential form using its principal argument \\(\\frac{\\pi}{2}\\).",
+              "work": "\\[i = e^{i\\frac{\\pi}{2}}\\]"
             },
             {
-              "explain": "A fourth root has one quarter of the argument; the principal root uses the principal angle π/8.",
-              "work": "\\(\\sqrt[4]{i}=e^{i(\\pi/2)/4}=e^{i\\pi/8}.\\)"
+              "explain": "A fourth root has one quarter of the argument; the principal root uses the principal angle \\(\\frac{\\pi}{8}\\).",
+              "work": "\\[\\sqrt[4]{i} = \\left(e^{i\\frac{\\pi}{2}}\\right)^{\\frac{1}{4}} = e^{i\\frac{\\pi}{8}}\\]"
             },
             {
               "explain": "Convert the exponential to trigonometric form, then apply the exact half-angle values.",
-              "work": "\\(e^{i\\pi/8}=\\cos\\frac\\pi8+i\\sin\\frac\\pi8=\\frac{\\sqrt{2+\\sqrt2}}2+i\\frac{\\sqrt{2-\\sqrt2}}2.\\) This is the principal fourth root \\(\\boxed{\\sqrt[4]{i}}\\)."
+              "work": "\\[e^{i\\frac{\\pi}{8}} = \\cos\\left(\\frac{\\pi}{8}\\right) + i\\sin\\left(\\frac{\\pi}{8}\\right) = \\frac{\\sqrt{2+\\sqrt{2}}}{2} + i\\frac{\\sqrt{2-\\sqrt{2}}}{2}\\]<p>This is the principal fourth root \\(\\mathbf{\\sqrt[4]{i}}\\).</p>"
             }
           ],
           "xp": 1,
@@ -877,7 +877,7 @@
           "keyPoints": [
             {
               "text": "principal value",
-              "note": "Use the principal argument of i, which is π/2, then divide by four."
+              "note": "Use the principal argument of \\(i\\), which is \\(\\frac{\\pi}{2}\\), then divide by \\(4\\)."
             }
           ]
         }
