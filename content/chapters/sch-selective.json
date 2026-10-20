@@ -3300,15 +3300,26 @@
           "options": [
             "The sum of an odd and even number is even.",
             "The square of an odd number is even.",
-            "An even number will be never able to be divided through by an odd number.",
+            "An even number will never be able to be divided by an odd number.",
             "An even number squared is always even.",
             "The product of an odd and even number is not even."
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>A; sum of odd and even is odd</p><p>B; square of an odd number is odd</p><p>C; some even numbers are able to be divided by an odd number</p><p>D; correct (e.g.) \\(24 \\div 3=8\\)</p></div>"
+              "explain": "Prove why an even number squared is always even (Option D)",
+              "work": "<p>Let \\(n\\) be any even integer. By definition, \\(n = 2k\\) for some integer \\(k\\):</p><p>\\[n^2 = (2k)^2 = 4k^2 = 2(2k^2)\\]</p><p>Since \\(2k^2\\) is an integer, \\(n^2\\) is always a multiple of \\(2\\), which means <strong>an even number squared is always even</strong>. This statement is <strong>true</strong>.</p>"
+            },
+            {
+              "explain": "Test and disprove Options A and B with counterexamples",
+              "work": "<p><strong>Option A:</strong> The sum of an odd and even number is always odd: \\[\\text{odd} + \\text{even} = (2a+1) + 2b = 2(a+b) + 1 = \\text{odd}\\] Example: \\(3 + 4 = 7\\) (odd). Thus, Option A is <strong>false</strong>.</p><p><strong>Option B:</strong> The square of an odd number is always odd: \\[\\text{odd}^2 = (2a+1)^2 = 4a^2 + 4a + 1 = 2(2a^2+2a) + 1 = \\text{odd}\\] Example: \\(3^2 = 9\\) (odd). Thus, Option B is <strong>false</strong>.</p>"
+            },
+            {
+              "explain": "Test and disprove Options C and E with counterexamples",
+              "work": "<p><strong>Option C:</strong> Many even numbers are divisible by odd numbers: \\[24 \\div 3 = 8 \\quad \\text{and} \\quad 30 \\div 5 = 6\\] Thus, Option C is <strong>false</strong>.</p><p><strong>Option E:</strong> The product of an odd and even number is always even: \\[\\text{odd} \\times \\text{even} = (2a+1) \\times 2b = 2(2ab + b) = \\text{even}\\] Example: \\(3 \\times 4 = 12\\) (even). Thus, Option E is <strong>false</strong>.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 180\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"160\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"20\" y=\"20\" width=\"165\" height=\"65\" rx=\"6\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"30\" y=\"40\" font-weight=\"700\" fill=\"#0f172a\">Addition Rules:</text><text x=\"30\" y=\"58\" fill=\"#475569\">Odd + Even = Odd</text><text x=\"30\" y=\"74\" fill=\"#475569\">Even + Even = Even</text><rect x=\"195\" y=\"20\" width=\"165\" height=\"65\" rx=\"6\" fill=\"#ffffff\" stroke=\"#e2e8f0\" stroke-width=\"1\"/><text x=\"205\" y=\"40\" font-weight=\"700\" fill=\"#0f172a\">Multiplication Rules:</text><text x=\"205\" y=\"58\" fill=\"#475569\">Odd × Even = Even</text><text x=\"205\" y=\"74\" fill=\"#475569\">Even × Even = Even</text><rect x=\"20\" y=\"95\" width=\"340\" height=\"65\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"30\" y=\"116\" font-weight=\"700\" fill=\"#065f46\">Square of an Even Number (Always True!):</text><text x=\"30\" y=\"135\" fill=\"#047857\" font-weight=\"600\">(2k)² = 4k² = 2(2k²) → Always Even</text><text x=\"30\" y=\"150\" fill=\"#059669\">Example: 4² = 16 (even), 6² = 36 (even)</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3320,19 +3331,30 @@
         {
           "id": "sch-sel-m4-q6",
           "type": "mc",
-          "stem": "If Julia bought 3 lollipops and 1 ice cream for 3.80, and Raymond bought 2 lollipops and 1 ice-cream for 3.30, how much was each item?",
+          "stem": "Julia bought 3 lollipops and 1 ice cream for $3.80, and Raymond bought 2 lollipops and 1 ice cream for $3.30. How much was each item?",
           "options": [
-            "Lollipop: 2.50  Ice-cream: 1.50",
-            "Lollipop: 2.30  Ice-cream: 2.30",
-            "Lollipop: 1.50  Ice-cream: 2.30",
-            "Lollipop: 0.50  Ice-cream: 1.50",
-            "Lollipop: 0.50  Ice-cream: 2.30"
+            "Lollipop: $2.50, Ice-cream: $1.50",
+            "Lollipop: $2.30, Ice-cream: $2.30",
+            "Lollipop: $1.50, Ice-cream: $2.30",
+            "Lollipop: $0.50, Ice-cream: $1.50",
+            "Lollipop: $0.50, Ice-cream: $2.30"
           ],
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(3L + 1I = 3.8\\)</p><p>\\(2L + 1I = 3.3\\)</p><p>Subtract 2\\(^{\\text{nd}}\\) eqn from 1\\(^{\\text{st}}\\) eqn: \\(1L = 0.5\\)</p><p>Therefore, \\(1I = 2.3\\)</p><p>A lollipop = 0.50, ice cream = 2.30</p></div>"
+              "explain": "Set up the equations representing each person's purchase",
+              "work": "<p>Let \\(L\\) be the price of one lollipop and \\(I\\) be the price of one ice cream:</p><p>\\[\\begin{aligned} \\text{Julia: } & 3L + 1I = 3.80 \\quad \\text{--- (1)} \\\\ \\text{Raymond: } & 2L + 1I = 3.30 \\quad \\text{--- (2)} \\end{aligned}\\]</p>"
+            },
+            {
+              "explain": "Subtract Equation (2) from Equation (1) to find the price of a lollipop",
+              "work": "<p>Both purchases include exactly 1 ice cream. The only difference is that Julia bought 1 additional lollipop:</p><p>\\[(3L + I) - (2L + I) = 3.80 - 3.30\\]</p><p>\\[1L = 0.50\\]</p><p>So one lollipop costs <strong>$0.50</strong>.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 160\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"140\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12.5\"><rect x=\"25\" y=\"25\" width=\"220\" height=\"34\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"35\" y=\"47\" fill=\"#1e40af\" font-weight=\"600\">Julia: 3 Lollipops + 1 Ice Cream = $3.80</text><rect x=\"25\" y=\"68\" width=\"220\" height=\"34\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"35\" y=\"90\" fill=\"#334155\" font-weight=\"600\">Raymond: 2 Lollipops + 1 Ice Cream = $3.30</text><rect x=\"25\" y=\"110\" width=\"330\" height=\"30\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"35\" y=\"130\" fill=\"#065f46\" font-weight=\"700\">Difference: 1 Lollipop = $3.80 − $3.30 = $0.50</text><text x=\"260\" y=\"65\" fill=\"#0284c7\" font-weight=\"700\" font-size=\"14\">L = $0.50</text><text x=\"260\" y=\"90\" fill=\"#059669\" font-weight=\"700\" font-size=\"14\">I = $2.30</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Substitute the lollipop price to find the price of an ice cream",
+              "work": "<p>Substitute \\(L = 0.50\\) into Equation (2):</p><p>\\[2(0.50) + I = 3.30\\]</p><p>\\[1.00 + I = 3.30 \\implies I = 3.30 - 1.00 = 2.30\\]</p><p>Thus, a lollipop costs <strong>$0.50</strong> and an ice cream costs <strong>$2.30</strong>.</p>"
             }
           ],
           "meta": {
@@ -3888,17 +3910,28 @@
           "type": "mc",
           "stem": "How big is the angle between NE and S, going anticlockwise from NE?",
           "options": [
-            "90°",
-            "45°",
-            "225°",
-            "135°",
-            "180°"
+            "\\(90^\\circ\\)",
+            "\\(45^\\circ\\)",
+            "\\(225^\\circ\\)",
+            "\\(135^\\circ\\)",
+            "\\(180^\\circ\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(180 + 45 = \\mathbf{225}\\)</p></div>"
+              "explain": "Understand the angle between adjacent compass directions",
+              "work": "<p>A full revolution is \\(360^\\circ\\). An 8-point compass divides the circle into 8 equal sectors:</p><p>\\[\\text{Angle per sector} = \\frac{360^\\circ}{8} = 45^\\circ\\]</p>"
+            },
+            {
+              "explain": "Count the sectors moving anticlockwise from NE to S",
+              "work": "<p>Moving <strong>anticlockwise</strong> (counter-clockwise) starting from North-East (NE):</p><ol><li>From NE to N: \\(1\\) sector (\\(45^\\circ\\))</li><li>From N to NW: \\(1\\) sector (\\(45^\\circ\\))</li><li>From NW to W: \\(1\\) sector (\\(45^\\circ\\))</li><li>From W to SW: \\(1\\) sector (\\(45^\\circ\\))</li><li>From SW to S: \\(1\\) sector (\\(45^\\circ\\))</li></ol><p>Total sectors traversed = \\(5\\) sectors.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 280\" style=\"max-width: 270px; width: 100%; height: auto; display: block; margin: 0 auto;\"><circle cx=\"140\" cy=\"140\" r=\"110\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g stroke=\"#94a3b8\" stroke-width=\"1.2\"><line x1=\"140\" y1=\"30\" x2=\"140\" y2=\"250\"/><line x1=\"30\" y1=\"140\" x2=\"250\" y2=\"140\"/><line x1=\"62\" y1=\"62\" x2=\"218\" y2=\"218\"/><line x1=\"62\" y1=\"218\" x2=\"218\" y2=\"62\"/></g><path d=\"M203,77 A90,90 0 1 0 140,230\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\" stroke-dasharray=\"4,3\"/><polygon points=\"140,234 135,222 145,222\" fill=\"#dc2626\"/><circle cx=\"203\" cy=\"77\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"140\" cy=\"230\" r=\"5\" fill=\"#dc2626\"/><g font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"140\" y=\"22\">N</text><text x=\"226\" y=\"58\">NE</text><text x=\"265\" y=\"145\">E</text><text x=\"226\" y=\"232\">SE</text><text x=\"140\" y=\"268\">S</text><text x=\"54\" y=\"232\">SW</text><text x=\"15\" y=\"145\">W</text><text x=\"54\" y=\"58\">NW</text></g><rect x=\"80\" y=\"125\" width=\"120\" height=\"30\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/><text x=\"140\" y=\"145\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"800\" fill=\"#dc2626\" text-anchor=\"middle\">225° anticlockwise</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the total angle",
+              "work": "<p>Multiply the number of sectors by \\(45^\\circ\\):</p><p>\\[\\text{Total Angle} = 5 \\times 45^\\circ = \\mathbf{225^\\circ}\\]</p><p><em>(Alternative method: The clockwise angle from NE to S is \\(45^\\circ + 90^\\circ = 135^\\circ\\). Therefore, the anticlockwise angle is \\(360^\\circ - 135^\\circ = 225^\\circ\\).)</em></p>"
             }
           ],
           "meta": {
@@ -3912,17 +3945,28 @@
           "type": "mc",
           "stem": "What is 9454 cm less than 5.4 km?",
           "options": [
-            "5.4 km",
-            "5305.46 m",
-            "5359 m",
-            "8734 m",
-            "445.46 m"
+            "\\(5.4\\text{ km}\\)",
+            "\\(5305.46\\text{ m}\\)",
+            "\\(5359\\text{ m}\\)",
+            "\\(8734\\text{ m}\\)",
+            "\\(445.46\\text{ m}\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(5400m - 94.54m = 5305.46m\\)</p></div>"
+              "explain": "Convert 5.4 km into metres",
+              "work": "<p>Since \\(1\\text{ km} = 1000\\text{ m}\\):</p><p>\\[5.4\\text{ km} = 5.4 \\times 1000\\text{ m} = 5400\\text{ m}\\]</p>"
+            },
+            {
+              "explain": "Convert 9454 cm into metres",
+              "work": "<p>Since \\(1\\text{ m} = 100\\text{ cm}\\):</p><p>\\[9454\\text{ cm} = \\frac{9454}{100}\\text{ m} = 94.54\\text{ m}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 140\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"120\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12.5\"><rect x=\"25\" y=\"25\" width=\"150\" height=\"40\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"100\" y=\"42\" fill=\"#1e40af\" font-weight=\"600\" text-anchor=\"middle\">5.4 km × 1000</text><text x=\"100\" y=\"58\" fill=\"#1d4ed8\" font-weight=\"800\" text-anchor=\"middle\">= 5400 m</text><rect x=\"205\" y=\"25\" width=\"150\" height=\"40\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"280\" y=\"42\" fill=\"#1e40af\" font-weight=\"600\" text-anchor=\"middle\">9454 cm ÷ 100</text><text x=\"280\" y=\"58\" fill=\"#1d4ed8\" font-weight=\"800\" text-anchor=\"middle\">= 94.54 m</text><rect x=\"25\" y=\"78\" width=\"330\" height=\"40\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"103\" fill=\"#065f46\" font-weight=\"800\" font-size=\"14\" text-anchor=\"middle\">5400 m − 94.54 m = 5305.46 m</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Subtract to find the difference",
+              "work": "<p>Subtract \\(94.54\\text{ m}\\) from \\(5400\\text{ m}\\):</p><p>\\[5400.00 - 94.54 = \\mathbf{5305.46\\text{ m}}\\]</p>"
             }
           ],
           "meta": {
@@ -3934,7 +3978,7 @@
         {
           "id": "sch-sel-m4-q27",
           "type": "mc",
-          "stem": "If a sink drains at 600ml per second, and each litre of water costs 16 cents, how much water has gone down the drain in 2 hours assuming the tap has been running water the entire time?",
+          "stem": "If a sink drains at \\(600\\text{ mL}\\) per second, and each litre of water costs 16 cents, how much does the water cost that has gone down the drain in 2 hours assuming the tap has been running water the entire time?",
           "options": [
             "\\(\\$49680\\)",
             "\\(\\$69120\\)",
@@ -3945,8 +3989,19 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(0.6 \\times 60 \\times 60 \\times 2 \\times 16 = 69120\\) cents = \\(\\mathbf{\\$691.2}\\)</p><p>\\(600\\ ml \\times (2 \\times 60 \\times 60)\\ sec \\times 16c/ 1000ml = 69120c = \\$ 691.2\\)</p></div>"
+              "explain": "Calculate the total draining time in seconds",
+              "work": "<p>Convert \\(2\\text{ hours}\\) into seconds:</p><p>\\[\\text{Time} = 2\\text{ hours} \\times 60\\text{ min/hour} \\times 60\\text{ s/min} = 7200\\text{ seconds}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total volume of water drained in litres",
+              "work": "<p>Multiply the flow rate by the time in seconds:</p><p>\\[\\text{Volume in mL} = 600\\text{ mL/s} \\times 7200\\text{ s} = 4{,}320{,}000\\text{ mL}\\]</p><p>Convert millilitres to litres (\\(1\\text{ L} = 1000\\text{ mL}\\)):</p><p>\\[\\text{Volume in Litres} = \\frac{4{,}320{,}000}{1000} = 4320\\text{ L}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 135\" style=\"max-width: 400px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"380\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"20\" y=\"25\" width=\"105\" height=\"50\" rx=\"6\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"72\" y=\"45\" text-anchor=\"middle\" fill=\"#64748b\">Time</text><text x=\"72\" y=\"63\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">7200 s</text><text x=\"135\" y=\"55\" font-size=\"16\" fill=\"#94a3b8\">×</text><rect x=\"148\" y=\"25\" width=\"105\" height=\"50\" rx=\"6\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"200\" y=\"45\" text-anchor=\"middle\" fill=\"#64748b\">Flow Rate</text><text x=\"200\" y=\"63\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">0.6 L/s</text><text x=\"263\" y=\"55\" font-size=\"16\" fill=\"#94a3b8\">=</text><rect x=\"275\" y=\"25\" width=\"105\" height=\"50\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"327\" y=\"45\" text-anchor=\"middle\" fill=\"#1e40af\">Total Volume</text><text x=\"327\" y=\"63\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">4320 L</text><rect x=\"20\" y=\"85\" width=\"360\" height=\"30\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"200\" y=\"105\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Cost = 4320 L × $0.16 = $691.20</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the cost in dollars",
+              "work": "<p>Multiply litres by \\(16\\text{ cents}\\) per litre:</p><p>\\[\\text{Cost in cents} = 4320 \\times 16 = 69{,}120\\text{ cents}\\]</p><p>Convert cents to dollars:</p><p>\\[\\text{Cost in dollars} = \\frac{69{,}120}{100} = \\mathbf{\\$691.20}\\]</p>"
             }
           ],
           "meta": {
@@ -3960,17 +4015,28 @@
           "type": "mc",
           "stem": "Joseph takes 2 hours and 30 minutes to finish a test, while Amelia can complete the same test in 5 hours. How long does it take them if they worked together?",
           "options": [
-            "100 minutes",
-            "110 minutes",
-            "115 minutes",
-            "120 minutes",
-            "125 minutes"
+            "\\(100\\text{ minutes}\\)",
+            "\\(110\\text{ minutes}\\)",
+            "\\(115\\text{ minutes}\\)",
+            "\\(120\\text{ minutes}\\)",
+            "\\(125\\text{ minutes}\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Joseph takes 2.5 hours to do a test. In 30 minutes, he finishes \\(\\frac{1}{5}\\) and Amelia finishes \\(\\frac{1}{10}\\). Combined, that is \\(\\frac{3}{10}\\) of a test in half an hr. Therefore, for a full test, \\(10/3 \\times 30 = 100\\) min</p></div>"
+              "explain": "Calculate the individual rate of work per hour",
+              "work": "<p>Express Joseph's completion time in hours: \\(2\\text{ hr } 30\\text{ min} = 2.5\\text{ hours} = \\frac{5}{2}\\text{ hours}\\).</p><p>Their work rates (fraction of the test completed per hour) are:</p><ul><li><strong>Joseph:</strong> \\(\\frac{1}{2.5} = \\frac{2}{5}\\text{ of the test per hour}\\)</li><li><strong>Amelia:</strong> \\(\\frac{1}{5}\\text{ of the test per hour}\\)</li></ul>"
+            },
+            {
+              "explain": "Combine their work rates together",
+              "work": "<p>Add their hourly work rates:</p><p>\\[\\text{Combined Rate} = \\frac{2}{5} + \\frac{1}{5} = \\frac{3}{5}\\text{ of the test per hour}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 150\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"130\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><text x=\"25\" y=\"32\" font-weight=\"700\" fill=\"#0f172a\">Work completed per hour:</text><rect x=\"25\" y=\"42\" width=\"130\" height=\"28\" rx=\"4\" fill=\"#dbeafe\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"90\" y=\"60\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">Joseph: 2/5 test/hr</text><text x=\"165\" y=\"60\" font-size=\"14\" font-weight=\"700\" fill=\"#64748b\">+</text><rect x=\"180\" y=\"42\" width=\"130\" height=\"28\" rx=\"4\" fill=\"#fef3c7\" stroke=\"#fcd34d\" stroke-width=\"1\"/><text x=\"245\" y=\"60\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#92400e\">Amelia: 1/5 test/hr</text><rect x=\"25\" y=\"82\" width=\"330\" height=\"44\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"102\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">Combined Rate = 3/5 test per hour</text><text x=\"190\" y=\"118\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#047857\">Time = 5/3 hours = (5/3) × 60 min = 100 minutes</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the total time required in minutes",
+              "work": "<p>To complete \\(1\\) full test working together:</p><p>\\[\\text{Time in hours} = \\frac{1}{\\frac{3}{5}} = \\frac{5}{3}\\text{ hours}\\]</p><p>Convert hours to minutes:</p><p>\\[\\text{Time in minutes} = \\frac{5}{3} \\times 60\\text{ minutes} = 5 \\times 20 = \\mathbf{100\\text{ minutes}}\\]</p>"
             }
           ],
           "meta": {
@@ -4031,8 +4097,19 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>For every six boxes, 1 box is free.</p><p>\\(24/6 = 4\\)</p><p>Therefore the paid amount will be \\(4 \\times 5 \\times \\$2.60 = \\$52\\)</p></div>"
+              "explain": "Understand the deal bundle size",
+              "work": "<p>Under the \"buy 5, get 1 free\" deal, every group of \\(6\\) boxes consists of:</p><ul><li>\\(5\\) boxes paid</li><li>\\(1\\) box free</li></ul>"
+            },
+            {
+              "explain": "Calculate the number of bundles needed for 24 boxes",
+              "work": "<p>Divide the total \\(24\\) boxes into groups of \\(6\\):</p><p>\\[\\text{Number of groups} = \\frac{24}{6} = 4\\text{ groups}\\]</p><p>For \\(4\\) groups:</p><ul><li>Paid boxes: \\(4 \\times 5 = 20\\text{ boxes}\\)</li><li>Free boxes: \\(4 \\times 1 = 4\\text{ boxes}\\)</li></ul>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"22\" width=\"330\" height=\"35\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"190\" y=\"44\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1e40af\">Buy 5, Get 1 Free  →  1 Group = 6 Boxes (5 Paid + 1 Free)</text><text x=\"25\" y=\"78\" font-weight=\"600\" fill=\"#334155\">24 boxes ÷ 6 = 4 groups</text><text x=\"25\" y=\"95\" font-weight=\"600\" fill=\"#334155\">Paid boxes = 4 × 5 = 20 boxes (Free = 4 × 1 = 4 boxes)</text><rect x=\"25\" y=\"105\" width=\"330\" height=\"24\" rx=\"4\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><text x=\"190\" y=\"122\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#065f46\">Total Cost = 20 × $2.60 = $52.00</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the total cost",
+              "work": "<p>Multiply the number of paid boxes by the price per box (\\(\\$2.60\\)):</p><p>\\[\\text{Total Cost} = 20 \\times \\$2.60 = \\mathbf{\\$52.00}\\]</p>"
             }
           ],
           "meta": {
@@ -4055,8 +4132,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Working backwards, if \\(\\$9\\) is the remaining \\(\\frac{1}{4}\\) of the money Helen had, then before buying the movie ticket she would have had \\(\\$36\\). This \\(\\$36 = 1/3\\) of her total money at the start, since she spent \\(2/3\\) on dog food.</p><p>Hence Helen started with \\(3 \\times \\$36 = \\$108\\)</p></div>"
+              "explain": "Work backwards to find the remainder before the movie ticket",
+              "work": "<p>Helen spent \\(\\frac{3}{4}\\) of the remainder on a movie ticket, leaving \\(1 - \\frac{3}{4} = \\frac{1}{4}\\) of the remainder.</p><p>Since this remaining \\(\\frac{1}{4}\\) equals \\(\\$9\\):</p><p>\\[\\text{Remainder before movie} = \\$9 \\times 4 = \\$36\\]</p>"
+            },
+            {
+              "explain": "Relate this remainder to the starting total money",
+              "work": "<p>Helen previously spent \\(\\frac{2}{3}\\) of her starting money on dog food, leaving \\(1 - \\frac{2}{3} = \\frac{1}{3}\\) of her starting money.</p><p>Therefore, \\(\\frac{1}{3}\\) of her starting money is equal to \\(\\$36\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 155\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"135\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"25\" y=\"25\" width=\"215\" height=\"36\" fill=\"#fee2e2\" stroke=\"#fca5a5\" stroke-width=\"1.2\" rx=\"4\"/><text x=\"132\" y=\"48\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#991b1b\">Dog Food: 2/3 ($72)</text><rect x=\"245\" y=\"25\" width=\"110\" height=\"36\" fill=\"#e0e7ff\" stroke=\"#a5b4fc\" stroke-width=\"1.2\" rx=\"4\"/><text x=\"300\" y=\"48\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#3730a3\">Remainder: 1/3 ($36)</text><g transform=\"translate(245, 68)\"><rect x=\"0\" y=\"0\" width=\"80\" height=\"28\" fill=\"#fef3c7\" stroke=\"#fcd34d\" stroke-width=\"1\" rx=\"3\"/><text x=\"40\" y=\"18\" text-anchor=\"middle\" font-size=\"11\" fill=\"#92400e\">Movie: 3/4 ($27)</text><rect x=\"84\" y=\"0\" width=\"26\" height=\"28\" fill=\"#dcfce7\" stroke=\"#86efac\" stroke-width=\"1.2\" rx=\"3\"/><text x=\"97\" y=\"18\" text-anchor=\"middle\" font-weight=\"700\" font-size=\"11\" fill=\"#166534\">$9</text></g><rect x=\"25\" y=\"105\" width=\"330\" height=\"26\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1\"/><text x=\"190\" y=\"123\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#15803d\">Starting Amount = $9 × 4 × 3 = $108</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the initial starting amount",
+              "work": "<p>Multiply by \\(3\\) to find the full initial amount:</p><p>\\[\\text{Starting Money} = 36 \\times 3 = \\mathbf{\\$108}\\]</p><p><strong>Check:</strong> \\(\\$108 \\times \\frac{2}{3} = \\$72\\) (dog food), leaving \\(\\$36\\). Then \\(\\$36 \\times \\frac{3}{4} = \\$27\\) (movie), leaving \\(\\$36 - \\$27 = \\$9\\) \\(\\checkmark\\)</p>"
             }
           ],
           "meta": {
@@ -4068,19 +4156,30 @@
         {
           "id": "sch-sel-m4-q32",
           "type": "mc",
-          "stem": "\\(\\frac{3}{7} \\times 56 + \\frac{1}{3} \\times 36 + \\frac{1}{\\theta} \\times 32 = 40\\)\n\nThe value of \\(\\theta\\) is",
+          "stem": "\\[\\frac{3}{7} \\times 56 + \\frac{1}{3} \\times 36 + \\frac{1}{\\theta} \\times 32 = 40\\]\n\nThe value of \\(\\theta\\) is",
           "options": [
-            "2.",
-            "4.",
-            "6.",
-            "8.",
-            "16."
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(16\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Multiply 21 to each side of the equation then divide by 4, then simplify it.</p></div>"
+              "explain": "Evaluate the first two multiplication terms",
+              "work": "<p>Calculate each known term:</p><p>\\[\\frac{3}{7} \\times 56 = 3 \\times 8 = 24\\]</p><p>\\[\\frac{1}{3} \\times 36 = 12\\]</p>"
+            },
+            {
+              "explain": "Sum the known terms and simplify the equation",
+              "work": "<p>Add the two values:</p><p>\\[24 + 12 = 36\\]</p><p>Substitute back into the original equation:</p><p>\\[36 + \\frac{32}{\\theta} = 40\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 145\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"125\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12.5\"><rect x=\"25\" y=\"22\" width=\"95\" height=\"36\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"72\" y=\"45\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1e40af\">3/7 × 56 = 24</text><text x=\"130\" y=\"45\" font-size=\"16\" font-weight=\"700\" fill=\"#64748b\">+</text><rect x=\"145\" y=\"22\" width=\"95\" height=\"36\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1\"/><text x=\"192\" y=\"45\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1e40af\">1/3 × 36 = 12</text><text x=\"250\" y=\"45\" font-size=\"16\" font-weight=\"700\" fill=\"#64748b\">=</text><rect x=\"265\" y=\"22\" width=\"90\" height=\"36\" rx=\"6\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"310\" y=\"45\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#334155\">36</text><rect x=\"25\" y=\"70\" width=\"330\" height=\"55\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"92\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">36 + 32/θ = 40  →  32/θ = 4</text><text x=\"190\" y=\"112\" text-anchor=\"middle\" font-weight=\"800\" font-size=\"14\" fill=\"#047857\">θ = 32 / 4 = 8</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Solve for theta",
+              "work": "<p>Subtract \\(36\\) from both sides:</p><p>\\[\\frac{32}{\\theta} = 40 - 36 = 4\\]</p><p>Multiply by \\(\\theta\\) and divide by \\(4\\):</p><p>\\[\\theta = \\frac{32}{4} = \\mathbf{8}\\]</p>"
             }
           ],
           "meta": {
@@ -4094,17 +4193,28 @@
           "type": "mc",
           "stem": "At a wedding reception, a quarter of the people drank only champagne, one-third drank only lemonade, 18 people drank neither and 7 drank both. How many people were at the party?",
           "options": [
-            "60",
-            "80",
-            "70",
-            "90",
-            "95"
+            "\\(60\\)",
+            "\\(80\\)",
+            "\\(70\\)",
+            "\\(90\\)",
+            "\\(95\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\frac{1}{4} + \\frac{1}{3} = \\frac{7}{12}\\)</p><p>Therefore, \\(18 + 7 = 5/12\\)</p><p>\\(25 = 5/12\\) of the reception</p><p>\\(1/12 = 5\\)</p><p>Total number of people = 60</p></div>"
+              "explain": "Express the total guests as the sum of four disjoint groups",
+              "work": "<p>Let \\(N\\) be the total number of people at the reception. All guests belong to one of four mutually exclusive groups:</p><ul><li>Only champagne: \\(\\frac{1}{4}N\\)</li><li>Only lemonade: \\(\\frac{1}{3}N\\)</li><li>Both drinks: \\(7\\) people</li><li>Neither drink: \\(18\\) people</li></ul><p>\\[\\frac{1}{4}N + \\frac{1}{3}N + 7 + 18 = N\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"180\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"95\" r=\"65\" fill=\"rgba(59, 130, 246, 0.12)\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><circle cx=\"230\" cy=\"95\" r=\"65\" fill=\"rgba(16, 185, 129, 0.12)\" stroke=\"#10b981\" stroke-width=\"1.8\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\"><text x=\"115\" y=\"95\" text-anchor=\"middle\" fill=\"#1d4ed8\">Champagne only<tspan x=\"115\" dy=\"16\">1/4 N (15)</tspan></text><text x=\"190\" y=\"95\" text-anchor=\"middle\" fill=\"#7c3aed\">Both<tspan x=\"190\" dy=\"16\">7</tspan></text><text x=\"265\" y=\"95\" text-anchor=\"middle\" fill=\"#047857\">Lemonade only<tspan x=\"265\" dy=\"16\">1/3 N (20)</tspan></text><text x=\"40\" y=\"35\" fill=\"#64748b\">Neither = 18</text></g><rect x=\"40\" y=\"155\" width=\"300\" height=\"25\" rx=\"5\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1\"/><text x=\"190\" y=\"172\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\" text-anchor=\"middle\">1/4 N + 1/3 N + 7 + 18 = N  →  N = 60</text></svg>"
+              }
+            },
+            {
+              "explain": "Combine the fractions and integer terms",
+              "work": "<p>Add the two fractions with a common denominator of \\(12\\):</p><p>\\[\\frac{1}{4} + \\frac{1}{3} = \\frac{3}{12} + \\frac{4}{12} = \\frac{7}{12}\\]</p><p>Add the integer values:</p><p>\\[7 + 18 = 25\\]</p><p>This gives the equation:</p><p>\\[\\frac{7}{12}N + 25 = N\\]</p>"
+            },
+            {
+              "explain": "Solve for the total number of guests N",
+              "work": "<p>Subtract \\(\\frac{7}{12}N\\) from both sides:</p><p>\\[N - \\frac{7}{12}N = 25 \\implies \\frac{5}{12}N = 25\\]</p><p>Multiply by \\(\\frac{12}{5}\\):</p><p>\\[N = 25 \\times \\frac{12}{5} = 5 \\times 12 = \\mathbf{60}\\]</p><p>There were <strong>60 people</strong> at the party.</p>"
             }
           ],
           "meta": {
@@ -4185,17 +4295,28 @@
           "type": "mc",
           "stem": "One plate at the gym weighs 45 pounds. If Dennis can bench press 500 pounds, how many plates is that?",
           "options": [
-            "10",
-            "11",
-            "12",
-            "13",
-            "14"
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(500 \\div 45 = 11.1\\)</p><p>Round down to 11.</p></div>"
+              "explain": "Divide the total weight by the weight of a single plate",
+              "work": "<p>To find how many 45-pound plates are in 500 pounds, divide:</p><p>\\[\\frac{500}{45} = \\frac{100}{9} = 11\\frac{1}{9} \\approx 11.11\\]</p>"
+            },
+            {
+              "explain": "Compare whole plate multiples with the target weight",
+              "work": "<p>Check the total weight around 11 plates:</p><ul><li>\\(11\\text{ plates} = 11 \\times 45 = 495\\text{ pounds}\\) (only \\(5\\text{ lbs}\\) away from \\(500\\))</li><li>\\(12\\text{ plates} = 12 \\times 45 = 540\\text{ pounds}\\) (\\(40\\text{ lbs}\\) over \\(500\\))</li></ul>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 140\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"120\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12.5\"><rect x=\"25\" y=\"25\" width=\"155\" height=\"42\" rx=\"6\" fill=\"#dbeafe\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"102\" y=\"44\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#1e40af\">11 plates × 45 lbs</text><text x=\"102\" y=\"60\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#1d4ed8\">= 495 lbs</text><rect x=\"200\" y=\"25\" width=\"155\" height=\"42\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/><text x=\"277\" y=\"44\" text-anchor=\"middle\" font-weight=\"600\" fill=\"#991b1b\">12 plates × 45 lbs</text><text x=\"277\" y=\"60\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#b91c1c\">= 540 lbs</text><rect x=\"25\" y=\"80\" width=\"330\" height=\"36\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"190\" y=\"103\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#065f46\">500 ÷ 45 = 11.11... → 11 plates</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Select the nearest number of plates",
+              "work": "<p>\\(11\\frac{1}{9}\\) rounds to the nearest whole integer <strong>11</strong>.</p><p>Therefore, 500 pounds corresponds to <strong>11 plates</strong>.</p>"
             }
           ],
           "meta": {
@@ -4405,17 +4526,28 @@
           "type": "mc",
           "stem": "Philip's heart rate is 4320 beats per hour. What is his heart rate per second?",
           "options": [
-            "72",
-            "2",
-            "1.2",
-            "1.8",
-            "1.4"
+            "\\(72\\)",
+            "\\(2\\)",
+            "\\(1.2\\)",
+            "\\(1.8\\)",
+            "\\(1.4\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>4320 beats/hr. \\(4320/60 = 72\\) beats/min. \\(72/60 = 1.2\\) beats/second.</p></div>"
+              "explain": "Convert 1 hour into total seconds",
+              "work": "<p>There are \\(60\\) minutes in an hour, and \\(60\\) seconds in a minute:</p><p>\\[1\\text{ hour} = 60 \\times 60 = 3600\\text{ seconds}\\]</p>"
+            },
+            {
+              "explain": "Calculate beats per second by division",
+              "work": "<p>Divide the total beats by the total number of seconds:</p><p>\\[\\text{Heart rate per second} = \\frac{4320\\text{ beats}}{3600\\text{ seconds}} = \\frac{432}{360}\\]</p><p>Divide numerator and denominator by \\(36\\):</p><p>\\[\\frac{432 \\div 36}{360 \\div 36} = \\frac{12}{10} = \\mathbf{1.2\\text{ beats per second}}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 135\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"360\" height=\"115\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\"><rect x=\"20\" y=\"25\" width=\"100\" height=\"44\" rx=\"6\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"70\" y=\"43\" text-anchor=\"middle\" fill=\"#64748b\">Per Hour</text><text x=\"70\" y=\"60\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#0f172a\">4320 beats</text><text x=\"130\" y=\"50\" font-size=\"13\" fill=\"#64748b\">÷60 →</text><rect x=\"150\" y=\"25\" width=\"100\" height=\"44\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"200\" y=\"43\" text-anchor=\"middle\" fill=\"#1e40af\">Per Minute</text><text x=\"200\" y=\"60\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#1d4ed8\">72 beats</text><text x=\"260\" y=\"50\" font-size=\"13\" fill=\"#64748b\">÷60 →</text><rect x=\"280\" y=\"25\" width=\"80\" height=\"44\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1.2\"/><text x=\"320\" y=\"43\" text-anchor=\"middle\" fill=\"#065f46\">Per Second</text><text x=\"320\" y=\"60\" text-anchor=\"middle\" font-weight=\"800\" fill=\"#047857\">1.2 beats</text><rect x=\"20\" y=\"82\" width=\"340\" height=\"30\" rx=\"5\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1\"/><text x=\"190\" y=\"102\" text-anchor=\"middle\" font-weight=\"700\" fill=\"#15803d\">4320 ÷ 3600 = 1.2 beats per second</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Verify using a two-step unit conversion",
+              "work": "<p><strong>Step 1 (Per minute):</strong> \\[\\frac{4320\\text{ beats}}{60\\text{ min}} = 72\\text{ beats per minute}\\]</p><p><strong>Step 2 (Per second):</strong> \\[\\frac{72\\text{ beats}}{60\\text{ s}} = \\mathbf{1.2\\text{ beats per second}}\\]</p>"
             }
           ],
           "meta": {
