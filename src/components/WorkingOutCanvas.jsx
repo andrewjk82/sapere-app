@@ -9,13 +9,14 @@ import { eraseStrokesAlong, STROKE_ERASE_RADIUS } from '../utils/strokeErase';
 import { isScribbleEraseOn, scribbleTargets } from '../utils/scribbleErase';
 import { recognizeShape, isHoldToShapeOn, HOLD_MS, HOLD_MOVE } from '../utils/shapeSnap';
 import { snapAngle } from '../utils/lassoSelect';
+import { loadPadSettings, savePadSettings } from '../utils/padSettings';
 import { newGridSticker, cleanStickerPages, drawGridSticker, stickerBox, STICKER_MAX_PER_PAGE } from '../utils/canvasStickers';
 import {
   PAGE_W, PAGE_H, EXPORT_SCALE, SNAP_ZOOM, fitScale, clampPos, zoomAt, pageCentre, viewForCentre, backingScale, classifyTwoFinger, classifyMultiTap,
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.9-pencil-buttons';
+const CANVAS_VERSION = 'v10.10-pen-memory';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -275,13 +276,18 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   const [stickerPages, setStickerPages] = useState([[]]);
   const [editingStickerId, setEditingStickerId] = useState(null);
 
-  const [activeTool, setActiveTool] = useState('pen');
-  const [eraserMode, setEraserMode] = useState('area');
+  // The pen settings the student chose last (tool, colours, width, eraser mode) — read once per pad.
+  const [remembered] = useState(loadPadSettings);
+  const [activeTool, setActiveTool] = useState(remembered.tool);
+  const [eraserMode, setEraserMode] = useState(remembered.eraserMode);
   const [confirmClear, setConfirmClear] = useState(false);
   const [palmGuard, setPalmGuard] = useState(false); // default: accept all input
-  const [strokeColor, setStrokeColor] = useState('#1e1b4b');
-  const [highlighterColor, setHighlighterColor] = useState(HIGHLIGHTER_COLORS[0].value);
-  const [strokeWidth, setStrokeWidth] = useState(3);
+  const [strokeColor, setStrokeColor] = useState(remembered.color);
+  const [highlighterColor, setHighlighterColor] = useState(remembered.highlighter);
+  const [strokeWidth, setStrokeWidth] = useState(remembered.width);
+  useEffect(() => {
+    savePadSettings({ tool: activeTool, eraserMode, color: strokeColor, highlighter: highlighterColor, width: strokeWidth });
+  }, [activeTool, eraserMode, strokeColor, highlighterColor, strokeWidth]);
 
   strokesRef.current = strokes;
   // ─── View: zoom / pan of the A4 page inside the pane ───────────────────────
