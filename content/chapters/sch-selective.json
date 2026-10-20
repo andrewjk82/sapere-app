@@ -3177,9 +3177,9 @@
         {
           "id": "sch-sel-m4-q4",
           "type": "multipart",
-          "stem": "Questions 1 to 4 use this information.\n\nTypes of chocolate bars sold at the market on the weekend.\n\nPurple boxes = 50\nEach box contains 20 bars of chocolate.",
+          "stem": "Questions 1 to 4 use this information.\n\nTypes of chocolate bars sold at the market on the weekend.\n\nPurple boxes = \\(50\\)\nEach box contains \\(20\\) bars of chocolate.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 759 468\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q1-4.jpg\" x=\"0\" y=\"0\" width=\"759\" height=\"468\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 340\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"10\" y=\"10\" width=\"400\" height=\"320\" fill=\"#ffffff\" stroke=\"#cbd5e1\" stroke-width=\"1.2\" rx=\"6\"/><g stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><path d=\"M 200,165 L 200,45 A 120,120 0 0,1 284.9,80.1 Z\" fill=\"#fee2e2\"/><path d=\"M 200,165 L 284.9,80.1 A 120,120 0 0,1 284.9,249.9 Z\" fill=\"#dcfce7\"/><path d=\"M 200,165 L 284.9,249.9 A 120,120 0 0,1 245.9,275.9 Z\" fill=\"#f8fafc\"/><path d=\"M 200,165 L 245.9,275.9 A 120,120 0 0,1 200,285 Z\" fill=\"#fef9c3\"/><path d=\"M 200,165 L 200,285 A 120,120 0 0,1 115.1,249.9 Z\" fill=\"#f3e8ff\"/><path d=\"M 200,165 L 115.1,249.9 A 120,120 0 0,1 200,45 Z\" fill=\"#ffedd5\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"235\" y=\"105\" text-anchor=\"middle\">Red, 45°</text><text x=\"265\" y=\"168\" text-anchor=\"middle\">Green, 90°</text><text x=\"300\" y=\"285\" text-anchor=\"middle\">Blue, 22.5°</text><text x=\"225\" y=\"305\" text-anchor=\"middle\">Yellow, 22.5°</text><text x=\"170\" y=\"240\" text-anchor=\"middle\">Purple, 45°</text><text x=\"130\" y=\"145\" text-anchor=\"middle\">Orange, 135°</text></g></svg>"
           },
           "parts": [
             {
@@ -3187,17 +3187,24 @@
               "type": "mc",
               "stem": "How many green chocolates were sold?",
               "options": [
-                "900",
-                "2000",
-                "1300",
-                "2400",
-                "3000"
+                "\\(900\\)",
+                "\\(2000\\)",
+                "\\(1300\\)",
+                "\\(2400\\)",
+                "\\(3000\\)"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>100 boxes sold. 2000 chocolates</p></div>"
+                  "explain": "Find the number of green boxes sold using angle proportionality",
+                  "work": "<p>Purple corresponds to an angle of \\(45^\\circ\\) and represents \\(50\\) boxes:</p><p>\\[\\text{Boxes per degree} = \\frac{50\\text{ boxes}}{45^\\circ} = \\frac{10}{9}\\text{ boxes/degree}\\]</p><p>Green corresponds to \\(90^\\circ\\), which is twice the angle of Purple:</p><p>\\[\\text{Green boxes} = \\frac{90^\\circ}{45^\\circ} \\times 50 = 2 \\times 50 = 100\\text{ boxes}\\]</p>"
+                },
+                {
+                  "explain": "Calculate the total number of individual chocolates",
+                  "work": "<p>Each box contains \\(20\\) bars of chocolate:</p><p>\\[\\text{Total green chocolates} = 100\\text{ boxes} \\times 20\\text{ bars/box} = \\mathbf{2000}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 105\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">GREEN BOXES</text><text x=\"85\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">90° = 2 × 50 = 100 boxes</text></g><text x=\"210\" y=\"58\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">×</text><g transform=\"translate(230, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">CHOCOLATES (× 20)</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">2000 bars</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -3206,17 +3213,24 @@
               "type": "mc",
               "stem": "How many more boxes of green, purple and orange were sold than yellow, red and blue?",
               "options": [
-                "100",
-                "150",
-                "200",
-                "220",
-                "250"
+                "\\(100\\)",
+                "\\(150\\)",
+                "\\(200\\)",
+                "\\(220\\)",
+                "\\(250\\)"
               ],
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Green, orange and purple boxes sold in total were 300</p><p>AS the total is 400, orange, blue and yellow sold only 100. Thus the amount of green, orange and purple boxes sold 200 more than the other three.</p></div>"
+                  "explain": "Calculate the total angles and boxes for each group",
+                  "work": "<p><strong>Group 1: Green + Purple + Orange:</strong></p><p>\\[\\text{Angle}_1 = 90^\\circ + 45^\\circ + 135^\\circ = 270^\\circ\\]</p><p>\\[\\text{Boxes}_1 = \\frac{270^\\circ}{45^\\circ} \\times 50 = 6 \\times 50 = 300\\text{ boxes}\\]</p><p><strong>Group 2: Yellow + Red + Blue:</strong></p><p>\\[\\text{Angle}_2 = 22.5^\\circ + 45^\\circ + 22.5^\\circ = 90^\\circ\\]</p><p>\\[\\text{Boxes}_2 = \\frac{90^\\circ}{45^\\circ} \\times 50 = 2 \\times 50 = 100\\text{ boxes}\\]</p>"
+                },
+                {
+                  "explain": "Find the difference between the two groups",
+                  "work": "<p>Subtract the boxes of Group 2 from Group 1:</p><p>\\[\\text{Difference} = 300 - 100 = \\mathbf{200\\text{ boxes}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 105\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 18)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">GROUP 1 (270°)</text><text x=\"60\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">300 boxes</text></g><text x=\"160\" y=\"58\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">−</text><g transform=\"translate(180, 18)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">GROUP 2 (90°)</text><text x=\"60\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"700\" text-anchor=\"middle\">100 boxes</text></g><text x=\"320\" y=\"58\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(340, 18)\"><rect x=\"0\" y=\"0\" width=\"80\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"40\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">DIFF</text><text x=\"40\" y=\"52\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">200</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -3234,27 +3248,41 @@
               "answer": 0,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Look at the graph. Orange and red form an angle of 180 together, meaning it is half the total amount sold.</p></div>"
+                  "explain": "Find the combined angle of orange and red",
+                  "work": "<p>Add the angles of the orange and red sectors:</p><p>\\[\\text{Orange} + \\text{Red} = 135^\\circ + 45^\\circ = 180^\\circ\\]</p>"
+                },
+                {
+                  "explain": "Express as a fraction of the entire pie chart",
+                  "work": "<p>Divide by \\(360^\\circ\\) (the complete circle):</p><p>\\[\\text{Fraction} = \\frac{180^\\circ}{360^\\circ} = \\mathbf{\\frac{1}{2}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 105\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">COMBINED ANGLE</text><text x=\"85\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">135° + 45° = 180°</text></g><text x=\"210\" y=\"58\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(230, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">FRACTION OF CIRCLE</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">180° / 360° = 1/2</text></g></svg>"
+                  }
                 }
               ]
             },
             {
               "id": "sch-sel-m4-q4-p4",
               "type": "mc",
-              "stem": "The Market owner hoped to sell a total of 450 boxes on the weekend. How far above or below that target was he/she?",
+              "stem": "The Market owner hoped to sell a total of \\(450\\) boxes on the weekend. How far above or below that target was he/she?",
               "options": [
-                "50 boxes over",
-                "50 boxes under",
-                "100 boxes over",
-                "100 boxes under",
-                "25 boxes over"
+                "\\(50\\) boxes over",
+                "\\(50\\) boxes under",
+                "\\(100\\) boxes over",
+                "\\(100\\) boxes under",
+                "\\(25\\) boxes over"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>\\(1/8\\) (45 degrees) = 50. Therefore the total sold is \\(8 \\times 50 = 400\\)</p><p>Which is 50 boxes below target.</p></div>"
+                  "explain": "Calculate the total number of boxes actually sold",
+                  "work": "<p>A full circle is \\(360^\\circ\\), which contains eight \\(45^\\circ\\) sectors:</p><p>\\[\\text{Total boxes sold} = \\frac{360^\\circ}{45^\\circ} \\times 50 = 8 \\times 50 = 400\\text{ boxes}\\]</p>"
+                },
+                {
+                  "explain": "Compare actual sales with the target of 450 boxes",
+                  "work": "<p>Subtract actual sales from the target:</p><p>\\[450 - 400 = \\mathbf{50\\text{ boxes under target}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 105\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"26\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">TOTAL SOLD</text><text x=\"85\" y=\"52\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">8 × 50 = 400 boxes</text></g><text x=\"210\" y=\"58\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">vs</text><g transform=\"translate(230, 18)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"70\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">TARGET COMPARISON</text><text x=\"85\" y=\"54\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\">450 − 400 = 50 under</text></g></svg>"
+                  }
                 }
               ]
             }
@@ -3316,22 +3344,33 @@
         {
           "id": "sch-sel-m4-q7",
           "type": "mc",
-          "stem": "In the sum shown below, each of the letters W, A, N and E represent a non-zero whole digit.\n\nWhat is the value of W + A + N + E?",
+          "stem": "In the sum shown below, each of the letters W, A, N and E represent a non-zero whole digit.\n\nWhat is the value of \\(W + A + N + E\\)?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 255 153\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q7.jpg\" x=\"0\" y=\"0\" width=\"255\" height=\"153\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 160\" style=\"max-width: 250px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g font-family=\"'Times New Roman', Georgia, serif\" font-size=\"30\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\"><text x=\"75\" y=\"45\">W</text><text x=\"120\" y=\"45\">A</text><text x=\"165\" y=\"45\">N</text><text x=\"210\" y=\"45\">E</text><text x=\"35\" y=\"90\" font-family=\"system-ui, sans-serif\" font-size=\"26\" font-weight=\"normal\">+</text><text x=\"165\" y=\"90\">W</text><text x=\"210\" y=\"90\">E</text><line x1=\"20\" y1=\"105\" x2=\"235\" y2=\"105\" stroke=\"#0f172a\" stroke-width=\"2.5\"/><text x=\"75\" y=\"145\">3</text><text x=\"120\" y=\"145\">2</text><text x=\"165\" y=\"145\">0</text><text x=\"210\" y=\"145\">8</text></g></svg>"
           },
           "options": [
-            "12",
-            "15",
-            "17",
-            "19",
-            "20"
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(17\\)",
+            "\\(19\\)",
+            "\\(20\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(N+W = 10\\), but \\(W = 3\\) so \\(N = 7\\)</p><p>\\(E + E = 8\\), therefore each \\(E = 4\\)</p><p>\\(W+A+N+E = 3 +1+7 +4\\)</p><p>= 15</p></div>"
+              "explain": "Analyze the thousands and hundreds columns to find W and A",
+              "work": "<p>In the thousands column, the first number has \\(W\\) and the second number has no thousands digit, resulting in \\(3\\):</p><p>\\[W = 3\\]</p><p>(with no carry from the hundreds into the thousands column).</p><p>In the tens column, adding \\(N + W = N + 3\\) produces a \\(0\\), which means there must be a carry of \\(1\\) into the hundreds column:</p><p>\\[A + 1 = 2 \\implies A = 1\\]</p>"
+            },
+            {
+              "explain": "Solve for E and N from the units and tens columns",
+              "work": "<p>In the units column, \\(E + E = 8\\):</p><p>\\[2E = 8 \\implies E = 4\\]</p><p>(This produces no carry to the tens column).</p><p>Now in the tens column, \\(N + W = 10\\):</p><p>Since \\(W = 3\\):</p><p>\\[N + 3 = 10 \\implies N = 7\\]</p><p>Verifying the complete sum: \\(3174 + 34 = 3208\\). All digits are non-zero and distinct.</p>"
+            },
+            {
+              "explain": "Calculate the sum W + A + N + E",
+              "work": "<p>Add the four digit values:</p><p>\\[W + A + N + E = 3 + 1 + 7 + 4 = \\mathbf{15}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 120\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"85\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">DETERMINED DIGITS</text><text x=\"85\" y=\"48\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">W = 3,  A = 1</text><text x=\"85\" y=\"70\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">N = 7,  E = 4</text></g><text x=\"210\" y=\"62\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">→</text><g transform=\"translate(230, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"85\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">SUM CALCULATION</text><text x=\"85\" y=\"48\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">3 + 1 + 7 + 4</text><text x=\"85\" y=\"72\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">= 15</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3345,20 +3384,31 @@
           "type": "mc",
           "stem": "The rectangle is divided into fifths, as shown.\n\nCalculate the shaded area.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 309 295\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q8.jpg\" x=\"0\" y=\"0\" width=\"309\" height=\"295\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 280\" style=\"max-width: 250px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><rect x=\"25\" y=\"15\" width=\"140\" height=\"44\" fill=\"#94a3b8\"/><polygon points=\"25,59 165,59 125,15\" fill=\"#ffffff\"/><rect x=\"25\" y=\"59\" width=\"140\" height=\"44\" fill=\"#94a3b8\"/><polygon points=\"25,103 165,103 120,59\" fill=\"#ffffff\"/><rect x=\"25\" y=\"103\" width=\"140\" height=\"44\" fill=\"#ffffff\"/><rect x=\"25\" y=\"147\" width=\"140\" height=\"44\" fill=\"#ffffff\"/><polygon points=\"25,191 165,191 120,147\" fill=\"#94a3b8\"/><rect x=\"25\" y=\"191\" width=\"140\" height=\"44\" fill=\"#ffffff\"/><polygon points=\"25,235 165,235 115,191\" fill=\"#94a3b8\"/><rect x=\"25\" y=\"15\" width=\"140\" height=\"220\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"180\" y=\"130\">10 cm</text><text x=\"95\" y=\"260\" text-anchor=\"middle\">6 cm</text></g></svg>"
           },
           "options": [
-            "\\(18\\ cm^2\\)",
-            "\\(20\\ cm^2\\)",
-            "\\(22\\ cm^2\\)",
-            "\\(24\\ cm^2\\)",
-            "\\(30\\ cm^2\\)"
+            "\\(18\\text{ cm}^2\\)",
+            "\\(20\\text{ cm}^2\\)",
+            "\\(22\\text{ cm}^2\\)",
+            "\\(24\\text{ cm}^2\\)",
+            "\\(30\\text{ cm}^2\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(2/5 \\times 10 \\times 6 = \\mathbf{24}\\)</p></div>"
+              "explain": "Calculate the area of each horizontal strip (fifth)",
+              "work": "<p>The entire rectangle has a width of \\(6\\text{ cm}\\) and a height of \\(10\\text{ cm}\\):</p><p>\\[\\text{Total rectangle area} = 6\\text{ cm} \\times 10\\text{ cm} = 60\\text{ cm}^2\\]</p><p>Since it is divided into \\(5\\) equal horizontal strips:</p><p>\\[\\text{Area of 1 strip} = \\frac{60\\text{ cm}^2}{5} = 12\\text{ cm}^2\\]</p><p>(Each strip has height \\(2\\text{ cm}\\) and base \\(6\\text{ cm}\\): \\(6 \\times 2 = 12\\text{ cm}^2\\)).</p>"
+            },
+            {
+              "explain": "Determine the shaded area in each strip",
+              "work": "<p>Any triangle sharing the full base (\\(6\\text{ cm}\\)) and height (\\(2\\text{ cm}\\)) of a strip has an area equal to exactly half the strip:</p><p>\\[\\text{Triangle area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 12\\text{ cm}^2 = 6\\text{ cm}^2\\]</p><ul><li><strong>Strip 1 (top):</strong> Shaded region surrounds a white triangle \\(\\implies 12 - 6 = 6\\text{ cm}^2\\)</li><li><strong>Strip 2:</strong> Shaded region surrounds a white triangle \\(\\implies 12 - 6 = 6\\text{ cm}^2\\)</li><li><strong>Strip 3:</strong> Unshaded (all white) \\(\\implies 0\\text{ cm}^2\\)</li><li><strong>Strip 4:</strong> Shaded triangle inside \\(\\implies 6\\text{ cm}^2\\)</li><li><strong>Strip 5 (bottom):</strong> Shaded triangle inside \\(\\implies 6\\text{ cm}^2\\)</li></ul>"
+            },
+            {
+              "explain": "Sum the shaded areas across all strips",
+              "work": "<p>Add the shaded areas together:</p><p>\\[\\text{Total shaded area} = 6 + 6 + 0 + 6 + 6 = \\mathbf{24\\text{ cm}^2}\\]</p><p><em>Alternative observation:</em> \\(4\\) of the \\(5\\) strips are each exactly half shaded:</p><p>\\[\\text{Total shaded area} = 4 \\times 6\\text{ cm}^2 = \\mathbf{24\\text{ cm}^2}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 125\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"180\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"90\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">STRIP BREAKDOWN</text><text x=\"90\" y=\"46\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Strips 1 &amp; 2: 6 + 6 = 12 cm²</text><text x=\"90\" y=\"66\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Strip 3: 0 cm²</text><text x=\"90\" y=\"84\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Strips 4 &amp; 5: 6 + 6 = 12 cm²</text></g><text x=\"215\" y=\"65\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">→</text><g transform=\"translate(230, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"90\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"26\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">TOTAL SHADED</text><text x=\"85\" y=\"54\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">12 + 0 + 12</text><text x=\"85\" y=\"78\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">= 24 cm²</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3729,22 +3779,33 @@
         {
           "id": "sch-sel-m4-q22",
           "type": "mc",
-          "stem": "Calculate the perimeter of the following shape",
+          "stem": "Calculate the perimeter of the following shape.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 756 238\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q22.jpg\" x=\"0\" y=\"0\" width=\"756\" height=\"238\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 180\" style=\"max-width: 500px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"2\" fill=\"none\" stroke-linejoin=\"round\"><path d=\"M 20,25 L 460,25 L 460,70 L 320,70 L 320,150 L 260,150 L 260,70 L 180,70 L 180,150 L 35,150 L 35,105 L 20,105 Z\" fill=\"#ffffff\"/><line x1=\"175\" y1=\"110\" x2=\"185\" y2=\"110\" stroke-width=\"1.8\"/><line x1=\"255\" y1=\"110\" x2=\"265\" y2=\"110\" stroke-width=\"1.8\"/><line x1=\"315\" y1=\"110\" x2=\"325\" y2=\"110\" stroke-width=\"1.8\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"240\" y=\"18\" text-anchor=\"middle\">17 cm</text><text x=\"470\" y=\"53\">3 cm</text><text x=\"332\" y=\"115\">10 cm</text></g></svg>"
           },
           "options": [
-            "60 cm",
-            "65 cm",
-            "70 cm",
-            "75 cm",
-            "80 cm"
+            "\\(60\\text{ cm}\\)",
+            "\\(65\\text{ cm}\\)",
+            "\\(70\\text{ cm}\\)",
+            "\\(75\\text{ cm}\\)",
+            "\\(80\\text{ cm}\\)"
           ],
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(17+17+13+13+10+10\\)</p></div>"
+              "explain": "Sum the horizontal side lengths",
+              "work": "<p>The top horizontal edge measures \\(17\\text{ cm}\\).</p><p>Projecting all the horizontal bottom and step segments onto a straight line, their combined lengths equal the top width:</p><p>\\[\\text{Sum of bottom horizontal segments} = 17\\text{ cm}\\]</p><p>\\[\\text{Total horizontal perimeter} = 17 + 17 = 34\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Sum the vertical side lengths",
+              "work": "<p>The rightmost vertical edge is \\(3\\text{ cm}\\). The vertical drop of the notches is marked as \\(10\\text{ cm}\\) (indicated by tick marks):</p><ul><li>Total vertical height on the left: \\(10\\text{ cm} + 3\\text{ cm} = 13\\text{ cm}\\)</li><li>Inner vertical notch segments with tick marks: \\(3\\) vertical edges each of length \\(10\\text{ cm}\\) (\\(3 \\times 10 = 30\\text{ cm}\\))</li><li>Rightmost vertical edge: \\(3\\text{ cm}\\)</li></ul><p>\\[\\text{Total vertical perimeter} = 13 + 30 + 3 = 46\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total perimeter of the shape",
+              "work": "<p>Add the total horizontal and vertical lengths together:</p><p>\\[\\text{Perimeter} = 34\\text{ cm} + 46\\text{ cm} = \\mathbf{80\\text{ cm}}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 115\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">HORIZONTAL SIDES</text><text x=\"85\" y=\"48\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Top = 17 cm</text><text x=\"85\" y=\"68\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Bottom sum = 17 cm (Total 34)</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">+</text><g transform=\"translate(230, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">VERTICAL SIDES</text><text x=\"85\" y=\"46\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">13 + 30 + 3 = 46 cm</text><text x=\"85\" y=\"68\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\">Total = 80 cm</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3756,22 +3817,33 @@
         {
           "id": "sch-sel-m4-q23",
           "type": "mc",
-          "stem": "How many times larger is the second shape compared to the first shape?",
+          "stem": "How many times larger is the volume of the second shape compared to the first shape?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 603 278\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q23.jpg\" x=\"0\" y=\"0\" width=\"603\" height=\"278\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 215\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><polygon points=\"45,105 70,80 115,80 90,105\" fill=\"#ffffff\"/><polygon points=\"90,105 115,80 115,125 90,150\" fill=\"#cbd5e1\"/><polygon points=\"45,105 90,105 90,150 45,150\" fill=\"#f1f5f9\"/><line x1=\"85\" y1=\"127\" x2=\"95\" y2=\"127\" stroke-width=\"1.6\"/><line x1=\"100\" y1=\"100\" x2=\"106\" y2=\"106\" stroke-width=\"1.6\"/></g><line x1=\"67\" y1=\"150\" x2=\"67\" y2=\"165\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"67\" y=\"182\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\">2cm</text><g stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><polygon points=\"230,70 275,25 365,25 320,70\" fill=\"#ffffff\"/><polygon points=\"320,70 365,25 365,115 320,160\" fill=\"#cbd5e1\"/><polygon points=\"230,70 320,70 320,160 230,160\" fill=\"#f1f5f9\"/><line x1=\"314\" y1=\"115\" x2=\"326\" y2=\"115\" stroke-width=\"1.6\"/><line x1=\"340\" y1=\"68\" x2=\"346\" y2=\"74\" stroke-width=\"1.6\"/></g><line x1=\"275\" y1=\"160\" x2=\"275\" y2=\"175\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><text x=\"275\" y=\"192\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\">4cm</text></svg>"
           },
           "options": [
-            "2",
-            "3",
-            "4",
-            "8",
-            "16"
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(8\\)",
+            "\\(16\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(4^3 \\div 2^3 = 64 \\div 8 = 8\\)</p></div>"
+              "explain": "Calculate the volume of the first (smaller) cube",
+              "work": "<p>The smaller cube has a side length of \\(s_1 = 2\\text{ cm}\\):</p><p>\\[\\text{Volume}_1 = s_1^3 = 2^3 = 8\\text{ cm}^3\\]</p>"
+            },
+            {
+              "explain": "Calculate the volume of the second (larger) cube",
+              "work": "<p>The larger cube has a side length of \\(s_2 = 4\\text{ cm}\\):</p><p>\\[\\text{Volume}_2 = s_2^3 = 4^3 = 64\\text{ cm}^3\\]</p>"
+            },
+            {
+              "explain": "Compare their volumes",
+              "work": "<p>Divide the larger volume by the smaller volume:</p><p>\\[\\frac{\\text{Volume}_2}{\\text{Volume}_1} = \\frac{64\\text{ cm}^3}{8\\text{ cm}^3} = \\mathbf{8}\\]</p><p><em>Linear scale factor rule:</em> When the linear dimensions scale by \\(k = \\frac{4}{2} = 2\\), volume scales by \\(k^3 = 2^3 = \\mathbf{8}\\).</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 115\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">CUBE 1 (s = 2)</text><text x=\"60\" y=\"48\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">2 × 2 × 2</text><text x=\"60\" y=\"68\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">= 8 cm³</text></g><text x=\"165\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">vs</text><g transform=\"translate(185, 15)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"60\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">CUBE 2 (s = 4)</text><text x=\"60\" y=\"48\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">4 × 4 × 4</text><text x=\"60\" y=\"68\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"15\" font-weight=\"700\" text-anchor=\"middle\">= 64 cm³</text></g><text x=\"325\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(345, 15)\"><rect x=\"0\" y=\"0\" width=\"65\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"32\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">RATIO</text><text x=\"32\" y=\"58\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"800\" text-anchor=\"middle\">8×</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -3905,7 +3977,7 @@
           "type": "mc",
           "stem": "The cost of a taxi fare depends on the time taken as well as the distance covered.\n\nUsing the information given, which of the following statements must be true?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 618 255\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q29.jpg\" x=\"0\" y=\"0\" width=\"618\" height=\"255\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 200\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"axis-arrow\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#1e293b\"/></marker></defs><g stroke=\"#1e293b\" stroke-width=\"1.8\"><line x1=\"75\" y1=\"160\" x2=\"340\" y2=\"160\" marker-end=\"url(#axis-arrow)\"/><line x1=\"75\" y1=\"160\" x2=\"75\" y2=\"20\" marker-end=\"url(#axis-arrow)\"/><line x1=\"135\" y1=\"155\" x2=\"135\" y2=\"165\"/><line x1=\"195\" y1=\"155\" x2=\"195\" y2=\"165\"/><line x1=\"255\" y1=\"155\" x2=\"255\" y2=\"165\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"13\" fill=\"#0f172a\"><text x=\"135\" y=\"182\" text-anchor=\"middle\">3</text><text x=\"195\" y=\"182\" text-anchor=\"middle\">6</text><text x=\"255\" y=\"182\" text-anchor=\"middle\">9</text><text x=\"320\" y=\"182\">(Time)</text><text x=\"40\" y=\"85\" font-size=\"12\" text-anchor=\"middle\">Cost of<tspan x=\"40\" dy=\"16\">the fare</tspan></text></g><g fill=\"#0f172a\"><circle cx=\"195\" cy=\"45\" r=\"4.5\"/><text x=\"206\" y=\"49\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\">Rob</text><circle cx=\"275\" cy=\"85\" r=\"4.5\"/><text x=\"286\" y=\"89\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\">Bob</text><circle cx=\"275\" cy=\"125\" r=\"4.5\"/><text x=\"286\" y=\"129\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\">Nob</text></g></svg>"
           },
           "options": [
             "The distance of Nob's fare was longer than Bob's fare.",
@@ -3917,8 +3989,19 @@
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Rob's time was the least, yet his fare was the most expensive, so it must have been the longest distance</p></div>"
+              "explain": "Understand the two factors that determine taxi fare",
+              "work": "<p>The cost of a taxi fare increases with both <strong>time taken</strong> and <strong>distance covered</strong>:</p><p>\\[\\text{Cost} = f(\\text{time}, \\text{distance})\\]</p><p>For a given time, a greater distance results in a higher fare. Likewise, for a given distance, more time spent results in a higher fare.</p>"
+            },
+            {
+              "explain": "Compare Rob's trip with Bob's and Nob's trips",
+              "work": "<p>From the scatter plot:</p><ul><li><strong>Rob's time:</strong> \\(6\\) time units (the shortest duration among all three passengers).</li><li><strong>Bob and Nob's time:</strong> Approximately \\(9.5\\) time units (much longer duration than Rob).</li><li><strong>Rob's cost:</strong> The highest point on the vertical axis (most expensive fare).</li></ul>"
+            },
+            {
+              "explain": "Deduce which statement must be true",
+              "work": "<p>Although Rob was in the taxi for the least amount of time, his fare was the most expensive. The only way this is possible is if he covered a significantly greater distance than Bob and Nob.</p><p>Therefore, <strong>the distance of Rob's fare was the longest</strong> must be true.</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 115\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">ROB'S PROFILE</text><text x=\"85\" y=\"46\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Time: 6 (Least)</text><text x=\"85\" y=\"68\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Cost: Highest</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">→</text><g transform=\"translate(230, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">LOGICAL CONCLUSION</text><text x=\"85\" y=\"46\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"12\" text-anchor=\"middle\">Less time + Higher cost</text><text x=\"85\" y=\"68\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"middle\">Distance must be longest</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -4028,7 +4111,7 @@
           "type": "multipart",
           "stem": "Questions 34 and 35 refer to the following diagram.\n\nThe shape is made up of rows of triangles. The first row has one triangle; the second has three; the third has five, and so on. All triangles are equal in size.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 238 176\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q34-35.jpg\" x=\"0\" y=\"0\" width=\"238\" height=\"176\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" style=\"max-width: 260px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"><polygon points=\"150,16 120,68 180,68\" fill=\"#111827\"/><polygon points=\"120,68 90,120 150,120\" fill=\"#111827\"/><polygon points=\"120,68 180,68 150,120\" fill=\"#94a3b8\"/><polygon points=\"180,68 150,120 210,120\" fill=\"#111827\"/><polygon points=\"90,120 60,172 120,172\" fill=\"#111827\"/><polygon points=\"90,120 150,120 120,172\" fill=\"#94a3b8\"/><polygon points=\"150,120 120,172 180,172\" fill=\"#111827\"/><polygon points=\"150,120 210,120 180,172\" fill=\"#94a3b8\"/><polygon points=\"210,120 180,172 240,172\" fill=\"#111827\"/></g></svg>"
           },
           "parts": [
             {
@@ -4036,19 +4119,23 @@
               "type": "mc",
               "stem": "How many axes of symmetry are there in the shape?",
               "options": [
-                "1",
-                "2",
-                "3",
-                "6",
-                "9"
+                "\\(1\\)",
+                "\\(2\\)",
+                "\\(3\\)",
+                "\\(6\\)",
+                "\\(9\\)"
               ],
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>3 axis of symmetry</p></div>",
+                  "explain": "Analyze the rotational and reflection symmetry of the colored pattern",
+                  "work": "<p>The overall boundary forms an equilateral triangle. Inside:</p><ul><li>All \\(6\\) upright triangles are colored solid black.</li><li>All \\(3\\) inverted (downward-pointing) triangles are colored grey.</li></ul><p>Because the shading pattern is identical from the perspective of each of the \\(3\\) vertices (a \\(120^\\circ\\) rotational symmetry), reflection across each angle bisector preserves the exact coloring.</p>"
+                },
+                {
+                  "explain": "Count the lines (axes) of symmetry",
+                  "work": "<p>An equilateral triangle with 3-fold symmetric coloring has exactly \\(3\\) axes of symmetry, each passing through one vertex and the midpoint of the opposite side:</p><p>\\[\\text{Number of axes of symmetry} = \\mathbf{3}\\]</p>",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 227 187\" width=\"100%\" height=\"auto\"><image href=\"/selective/t4-q34-expl.jpg\" x=\"0\" y=\"0\" width=\"227\" height=\"187\"/></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" style=\"max-width: 260px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"><polygon points=\"150,16 120,68 180,68\" fill=\"#111827\"/><polygon points=\"120,68 90,120 150,120\" fill=\"#111827\"/><polygon points=\"120,68 180,68 150,120\" fill=\"#94a3b8\"/><polygon points=\"180,68 150,120 210,120\" fill=\"#111827\"/><polygon points=\"90,120 60,172 120,172\" fill=\"#111827\"/><polygon points=\"90,120 150,120 120,172\" fill=\"#94a3b8\"/><polygon points=\"150,120 120,172 180,172\" fill=\"#111827\"/><polygon points=\"150,120 210,120 180,172\" fill=\"#94a3b8\"/><polygon points=\"210,120 180,172 240,172\" fill=\"#111827\"/></g><g stroke=\"#ffffff\" stroke-width=\"2.2\" stroke-dasharray=\"4,3\"><line x1=\"150\" y1=\"10\" x2=\"150\" y2=\"180\"/><line x1=\"55\" y1=\"175\" x2=\"200\" y2=\"90\"/><line x1=\"245\" y1=\"175\" x2=\"100\" y2=\"90\"/></g></svg>"
                   }
                 }
               ]
@@ -4058,17 +4145,24 @@
               "type": "mc",
               "stem": "How many triangles will be in the tenth row?",
               "options": [
-                "10",
-                "19",
-                "21",
-                "256",
-                "1025"
+                "\\(10\\)",
+                "\\(19\\)",
+                "\\(21\\)",
+                "\\(256\\)",
+                "\\(1025\\)"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>1 = 1</p><p>2 = 3</p><p>3 = 5</p><p>...</p><p>10 = \\(\\mathbf{19}\\)</p><p>Pattern: \\(\\times 2 - 1\\)</p></div>"
+                  "explain": "Identify the number sequence of triangles per row",
+                  "work": "<p>Count the triangles in each consecutive row:</p><ul><li><strong>Row 1:</strong> \\(1\\) triangle</li><li><strong>Row 2:</strong> \\(3\\) triangles</li><li><strong>Row 3:</strong> \\(5\\) triangles</li><li><strong>Row 4:</strong> \\(7\\) triangles</li></ul><p>This forms an arithmetic sequence of consecutive odd numbers with first term \\(a = 1\\) and common difference \\(d = 2\\):</p><p>\\[T_n = 2n - 1\\]</p>"
+                },
+                {
+                  "explain": "Calculate the number of triangles in the 10th row",
+                  "work": "<p>Substitute \\(n = 10\\) into the formula:</p><p>\\[T_{10} = 2(10) - 1 = 20 - 1 = \\mathbf{19}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 115\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"85\" y=\"24\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">PATTERN RULE</text><text x=\"85\" y=\"46\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">Row n = 2n − 1</text><text x=\"85\" y=\"68\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">1, 3, 5, 7, 9, ...</text></g><text x=\"210\" y=\"60\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">→</text><g transform=\"translate(230, 15)\"><rect x=\"0\" y=\"0\" width=\"170\" height=\"80\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.8\"/><text x=\"85\" y=\"24\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">10TH ROW (n = 10)</text><text x=\"85\" y=\"48\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"13\" text-anchor=\"middle\">2(10) − 1 = 20 − 1</text><text x=\"85\" y=\"72\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">= 19</text></g></svg>"
+                  }
                 }
               ]
             }
