@@ -1,12 +1,12 @@
 {
   "chapterId": "y12e2-2",
-  "title": "Chapter 2: Nature of Proof",
+  "title": "Chapter 2: Proof",
   "year": "Year 12",
   "topics": [
     {
       "topicId": "y12e2-2A",
       "code": "2A",
-      "title": "The Language of Proof",
+      "title": "Logic and The Language of Proof",
       "questions": [
         {
           "id": "y12e2-2A-q1",
@@ -158,6 +158,12 @@
     {
       "topicId": "y12e2-2B",
       "code": "2B",
+      "title": "Further Logic and Language of Proof",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-2C",
+      "code": "2C",
       "title": "Number Proofs",
       "questions": [
         {
@@ -281,8 +287,8 @@
       ]
     },
     {
-      "topicId": "y12e2-2C",
-      "code": "2C",
+      "topicId": "y12e2-2D",
+      "code": "2D",
       "title": "Proof by Contraposition and by Contradiction",
       "questions": [
         {
@@ -573,8 +579,8 @@
       ]
     },
     {
-      "topicId": "y12e2-2D",
-      "code": "2D",
+      "topicId": "y12e2-2E",
+      "code": "2E",
       "title": "Algebraic Inequalities",
       "questions": [
         {
@@ -843,9 +849,9 @@
       ]
     },
     {
-      "topicId": "y12e2-2E",
-      "code": "2E",
-      "title": "Induction",
+      "topicId": "y12e2-2F",
+      "code": "2F",
+      "title": "Further Proof by Induction",
       "questions": [
         {
           "id": "y12e2-2E-q1",
@@ -1090,8 +1096,8 @@
       ]
     },
     {
-      "topicId": "y12e2-2F",
-      "code": "2F",
+      "topicId": "y12e2-2G",
+      "code": "2G",
       "title": "Inequalities in Geometry and Calculus",
       "questions": [
         {
@@ -1205,8 +1211,8 @@
       ]
     },
     {
-      "topicId": "y12e2-2G",
-      "code": "2G",
+      "topicId": "y12e2-2R",
+      "code": "2R",
       "title": "Chapter Review Exercise",
       "questions": []
     }

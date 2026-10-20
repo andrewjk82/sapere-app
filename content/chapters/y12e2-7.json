@@ -1,0 +1,354 @@
+{
+  "chapterId": "y12e2-7",
+  "title": "Chapter 7: Mechanics",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e2-7A",
+      "code": "7A",
+      "title": "Resolving Forces",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7B",
+      "code": "7B",
+      "title": "Planes and Pulleys",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7C",
+      "code": "7C",
+      "title": "Forces and Acceleration",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7D",
+      "code": "7D",
+      "title": "Simple Harmonic Motion and Time",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7E",
+      "code": "7E",
+      "title": "Simple Harmonic Motion and Displacement",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7F",
+      "code": "7F",
+      "title": "Horizontal Resisted Motion",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7G",
+      "code": "7G",
+      "title": "Vertical Resisted Motion",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A unit-mass particle is projected vertically upwards at speed \\(u\\), with gravity \\(g\\) and resistance \\(\\frac12kv^2\\). Which integral gives its maximum height?",
+          "hint": "Use upward displacement as positive. During ascent, gravity and drag both act downward; also use \\(v\\,dv/dx=a\\).",
+          "solution": "\\(\\int_0^u\\frac{v}{g+kv^2/2}\\,dv\\)",
+          "steps": [
+            {
+              "explain": "Write the acceleration while rising.",
+              "work": "\\(a=\\frac{dv}{dt}=-g-\\frac12kv^2.\\)"
+            },
+            {
+              "explain": "Change independent variable from time to displacement.",
+              "work": "\\(a=v\\frac{dv}{dx}\\), so \\(dx=-\\frac{v}{g+kv^2/2}\\,dv.\\)"
+            },
+            {
+              "explain": "Integrate from launch to the highest point.",
+              "work": "\\(H=\\int_{u}^{0}-\\frac{v}{g+kv^2/2}dv=\\int_0^u\\frac{v}{g+kv^2/2}dv.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\int_u^0\\frac{v}{g+kv^2/2}\\,dv\\)",
+            "\\(\\int_0^u\\frac{v}{g+kv^2/2}\\,dv\\)",
+            "\\(\\int_0^u\\frac{v}{g-kv^2/2}\\,dv\\)",
+            "\\(\\int_u^0\\frac{v}{g-kv^2/2}\\,dv\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "A unit-mass particle is projected vertically upwards at speed \\(u\\), with gravity \\(g\\) and resistance \\(\\frac12kv^2\\)",
+              "note": "Use upward displacement as positive. During ascent, gravity and drag both act downward; also use \\(v\\,dv/dx=a\\)."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15a_i",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A unit-mass body falls downward through resistance \\(v^2/100\\). Taking downward as positive, which equation of motion applies?",
+          "hint": "Gravity is in the positive direction; resistance opposes the downward motion.",
+          "solution": "\\(\\ddot x=g-v^2/100\\)",
+          "steps": [
+            {
+              "explain": "Apply Newton’s second law.",
+              "work": "\\(a=F/m.\\)"
+            },
+            {
+              "explain": "Assign signs to the forces.",
+              "work": "Gravity contributes \\(+g\\); drag contributes \\(-v^2/100\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(\\ddot x=g-v^2/100\\)",
+            "\\(\\ddot x=g+v^2/100\\)",
+            "\\(\\ddot x=v^2/100-g\\)",
+            "\\(\\ddot x=-g-v^2/100\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "A unit-mass body falls downward through resistance \\(v^2/100\\)",
+              "note": "Gravity is in the positive direction; resistance opposes the downward motion."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15a_ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For \\(\\ddot x=g-v^2/100\\), what is the terminal speed?",
+          "hint": "At terminal speed, acceleration is zero.",
+          "solution": "\\(10\\sqrt g\\)",
+          "steps": [
+            {
+              "explain": "Set acceleration to zero.",
+              "work": "\\(0=g-V^2/100.\\)"
+            },
+            {
+              "explain": "Solve for the positive speed.",
+              "work": "\\(V^2=100g\\Rightarrow V=10\\sqrt g.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(10\\sqrt g\\)",
+            "\\(\\sqrt{g/100}\\)",
+            "\\(100g\\)",
+            "\\(10g\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "For \\(\\ddot x=g-v^2/100\\), what is the terminal speed?",
+              "note": "At terminal speed, acceleration is zero."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15a_iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "For the falling body, which expression gives speed after falling distance x?",
+          "hint": "Use \\(v\\,dv/dx=g-v^2/100\\), then solve the resulting linear differential equation in \\(v^2\\).",
+          "solution": "\\(v^2=V^2(1-e^{-x/50})\\)",
+          "steps": [
+            {
+              "explain": "Set w=v².",
+              "work": "\\(\\frac12\\frac{dw}{dx}=g-\\frac{w}{100}.\\)"
+            },
+            {
+              "explain": "Separate and integrate with v=0 at x=0.",
+              "work": "\\(w=100g(1-e^{-x/50}).\\)"
+            },
+            {
+              "explain": "Use terminal speed.",
+              "work": "\\(V^2=100g\\), hence \\(v^2=V^2(1-e^{-x/50}).\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(v^2=V^2(1-e^{-x/50})\\)",
+            "\\(v^2=V^2(1-e^{-x/100})\\)",
+            "\\(v^2=V^2(1+e^{-x/50})\\)",
+            "\\(v=V(1-e^{-x/50})\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "For the falling body, which expression gives speed after falling distance x?",
+              "note": "Use \\(v\\,dv/dx=g-v^2/100\\), then solve the resulting linear differential equation in \\(v^2\\)."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q15a_iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "At what distance has the falling body first reached half its terminal speed?",
+          "hint": "Substitute \\(v=V/2\\) into the speed-distance relation and solve the exponential equation.",
+          "solution": "\\(50\\ln(4/3)\\text{ m}\\)",
+          "steps": [
+            {
+              "explain": "Substitute the half-terminal speed.",
+              "work": "\\(V^2/4=V^2(1-e^{-x/50}).\\)"
+            },
+            {
+              "explain": "Isolate the exponential.",
+              "work": "\\(e^{-x/50}=3/4.\\)"
+            },
+            {
+              "explain": "Take logarithms.",
+              "work": "\\(-x/50=\\ln(3/4)\\Rightarrow x=50\\ln(4/3)\\text{ m}.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(50\\ln(4/3)\\text{ m}\\)",
+            "\\(50\\ln(3/4)\\text{ m}\\)",
+            "\\(100\\ln2\\text{ m}\\)",
+            "\\(25\\ln(4/3)\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "At what distance has the falling body first reached half its terminal speed?",
+              "note": "Substitute \\(v=V/2\\) into the speed-distance relation and solve the exponential equation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-7H",
+      "code": "7H",
+      "title": "Projectile Motion",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7I",
+      "code": "7I",
+      "title": "Resisted Projectile Motion",
+      "questions": []
+    },
+    {
+      "topicId": "y12e2-7J",
+      "code": "7J",
+      "title": "Miscellaneous Problems",
+      "questions": [
+        {
+          "id": "abbotsleigh2025-ext2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A driver claims the average speed over two parts is the arithmetic mean of the two average speeds. Which case is NOT a counterexample?",
+          "hint": "For each case, compare total distance divided by total time with the mean of the two speeds.",
+          "solution": "Option B",
+          "steps": [
+            {
+              "explain": "Compute the proposed mean for option B.",
+              "work": "\\((60+40)/2=50\\text{ km/h}.\\)"
+            },
+            {
+              "explain": "Compute the actual average.",
+              "work": "Total distance \\(=200\\) km; total time \\(=120/60+80/40=4\\) h, so average \\(=200/4=50\\) km/h."
+            },
+            {
+              "explain": "Conclude this case agrees with the claim.",
+              "work": "Option B is not a counterexample."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "100 km at 20 km/h, then 100 km at 40 km/h",
+            "120 km at 60 km/h, then 80 km at 40 km/h",
+            "1 hour at 100 km/h, then 2 hours at 50 km/h",
+            "60 km in 2 hours, then 40 km in 3 hours"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "A driver claims the average speed over two parts is the arithmetic mean of the two average speeds",
+              "note": "For each case, compare total distance divided by total time with the mean of the two speeds."
+            }
+          ]
+        },
+        {
+          "id": "abbotsleigh2025-ext2-q14d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Two birds have relative position \\(r=(-3,a+2,2)\\) and relative velocity \\(v=(1,9,-2)\\). If their minimum separation occurs at t=5, find a.",
+          "hint": "At minimum separation, the relative position is perpendicular to the relative velocity: \\((r+5v)\\cdot v=0\\).",
+          "solution": "\\(-49\\)",
+          "steps": [
+            {
+              "explain": "Write the minimum-distance condition.",
+              "work": "\\((r+5v)\\cdot v=0\\), equivalently \\(r\\cdot v+5|v|^2=0.\\)"
+            },
+            {
+              "explain": "Calculate the dot products.",
+              "work": "\\(r\\cdot v=-3+9(a+2)-4=9a+11\\); \\(|v|^2=1+81+4=86.\\)"
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "\\(9a+11+430=0\\Rightarrow a=-49.\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Abbotsleigh 2025 4U Trials & Solutions",
+            "school": "Abbotsleigh"
+          },
+          "options": [
+            "\\(-49\\)",
+            "\\(49\\)",
+            "\\(-11\\)",
+            "\\(-\\frac{11}{9}\\)"
+          ],
+          "answer": 0,
+          "keyPoints": [
+            {
+              "text": "Two birds have relative position \\(r=(-3,a+2,2)\\) and relative velocity \\(v=(1,9,-2)\\)",
+              "note": "At minimum separation, the relative position is perpendicular to the relative velocity: \\((r+5v)\\cdot v=0\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y12e2-7R",
+      "code": "7R",
+      "title": "Chapter Review Exercise",
+      "questions": []
+    }
+  ]
+}
