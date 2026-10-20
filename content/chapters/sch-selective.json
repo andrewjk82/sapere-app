@@ -590,8 +590,16 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(6/18 = 33\\frac{1}{3}\\%\\)</p></div>"
+              "explain": "Count the total number of individual digits in the hat from the numbers 0 to 13.",
+              "work": "<div style=\"text-align: left;\"><p>The numbers written in the hat are split into individual digits:</p><p>• <strong>Single-digit numbers (0 to 9):</strong> 10 numbers \\(\\times\\) 1 digit = 10 digits<br/>\\(\\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}\\)</p><p>• <strong>Two-digit numbers (10 to 13):</strong> 4 numbers \\(\\times\\) 2 digits = 8 digits<br/>10 has \\(\\{1, 0\\}\\), 11 has \\(\\{1, 1\\}\\), 12 has \\(\\{1, 2\\}\\), 13 has \\(\\{1, 3\\}\\)</p><p>$$\\text{Total number of digits} = 10 + 8 = 18\\text{ digits}$$</p></div>"
+            },
+            {
+              "explain": "Count how many times the digit '1' appears among all 18 digits.",
+              "work": "<div style=\"text-align: left;\"><p>Count each occurrence of the digit '1':</p><p>• From number 1: <strong>1</strong></p><p>• From number 10: <strong>1</strong></p><p>• From number 11: <strong>2</strong> (two ones)</p><p>• From number 12: <strong>1</strong></p><p>• From number 13: <strong>1</strong></p><p>$$\\text{Total count of digit '1'} = 1 + 1 + 2 + 1 + 1 = 6\\text{ ones}$$</p></div>"
+            },
+            {
+              "explain": "Calculate the probability of drawing a '1' as a percentage.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Probability} = \\frac{\\text{Number of '1's}}{\\text{Total number of digits}} = \\frac{6}{18} = \\frac{1}{3}$$</p><p>Convert the fraction to a percentage:</p><p>$$\\frac{1}{3} \\times 100\\% = \\mathbf{33\\frac{1}{3}\\%}$$</p></div>"
             }
           ],
           "meta": {
@@ -622,8 +630,12 @@
               "answer": 0,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Add each of quarters from A and B up. All comes to 27000</p></div>"
+                  "explain": "Read the quarterly customer numbers for Company A and Company B from the bar graphs.",
+                  "work": "<div style=\"text-align: left;\"><p>From the two bar charts, the customer numbers for each quarter are:</p><p>• <strong>Quarter 1 (Q1):</strong> Company A = 13,000, Company B = 14,000</p><p>• <strong>Quarter 2 (Q2):</strong> Company A = 25,000, Company B = 2,000</p><p>• <strong>Quarter 3 (Q3):</strong> Company A = 22,000, Company B = 5,000</p><p>• <strong>Quarter 4 (Q4):</strong> Company A = 18,000, Company B = 9,000</p></div>"
+                },
+                {
+                  "explain": "Sum the customers of Company A and Company B for each quarter to find the total electricity customers.",
+                  "work": "<div style=\"text-align: left;\"><p>Since all Baulkham Hills residents receive electricity from either Company A or Company B:</p><p>• <strong>Q1 total:</strong> \\(13{,}000 + 14{,}000 = 27{,}000\\)</p><p>• <strong>Q2 total:</strong> \\(25{,}000 + 2{,}000 = 27{,}000\\)</p><p>• <strong>Q3 total:</strong> \\(22{,}000 + 5{,}000 = 27{,}000\\)</p><p>• <strong>Q4 total:</strong> \\(18{,}000 + 9{,}000 = 27{,}000\\)</p><p>The total customer base remains constant across all quarters at \\(\\mathbf{27000}\\).</p></div>"
                 }
               ]
             },
@@ -641,8 +653,12 @@
               "answer": 4,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Calculate the difference between Q1 and 2 on Company B graph</p></div>"
+                  "explain": "Identify the number of customers for both companies in the 1st and 2nd quarters.",
+                  "work": "<div style=\"text-align: left;\"><p>From the graphs:</p><p>• <strong>1st Quarter (Q1):</strong></p><p>Company B had \\(14{,}000\\) customers; Company A had \\(13{,}000\\) customers.</p><p>• <strong>2nd Quarter (Q2):</strong></p><p>Company B dropped to \\(2{,}000\\) customers; Company A surged to \\(25{,}000\\) customers.</p></div>"
+                },
+                {
+                  "explain": "Calculate how many customers transferred from Company B to Company A between Q1 and Q2.",
+                  "work": "<div style=\"text-align: left;\"><p>• <strong>Loss of customers for Company B:</strong></p><p>$$\\Delta B = 14{,}000 - 2{,}000 = \\mathbf{12{,}000\\text{ customers}}$$</p><p>• <strong>Corresponding gain for Company A:</strong></p><p>$$\\Delta A = 25{,}000 - 13{,}000 = \\mathbf{12{,}000\\text{ customers}}$$</p><p>Therefore, exactly \\(\\mathbf{12000}\\) customers transferred from Company B to Company A.</p></div>"
                 }
               ]
             }
@@ -669,7 +685,21 @@
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 1",
             "number": 26
-          }
+          },
+          "steps": [
+            {
+              "explain": "Simplify the multiplication on the left-hand side (LHS) of the equation.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{LHS} = \\frac{5}{12} \\times \\frac{9}{15}$$</p><p>Simplify \\(\\frac{9}{15}\\) by dividing numerator and denominator by 3:</p><p>$$\\frac{9}{15} = \\frac{3}{5}$$</p><p>Now multiply:</p><p>$$\\text{LHS} = \\frac{5}{12} \\times \\frac{3}{5} = \\frac{5 \\times 3}{12 \\times 5} = \\frac{3}{12} = \\frac{1}{4}$$</p></div>"
+            },
+            {
+              "explain": "Simplify the fraction product on the right-hand side (RHS) multiplying Y.",
+              "work": "<div style=\"text-align: left;\"><p>$$\\text{Coefficient of } Y = \\frac{7}{16} \\times \\frac{8}{14}$$</p><p>Cross-cancel common factors:</p><p>• Divide 7 and 14 by 7: \\(\\frac{7}{14} = \\frac{1}{2}\\)</p><p>• Divide 8 and 16 by 8: \\(\\frac{8}{16} = \\frac{1}{2}\\)</p><p>$$\\frac{7}{16} \\times \\frac{8}{14} = \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}$$</p><p>Thus, the right-hand side is \\(\\frac{1}{4} \\times Y\\).</p></div>"
+            },
+            {
+              "explain": "Equate the simplified LHS and RHS to solve for Y.",
+              "work": "<div style=\"text-align: left;\"><p>Substitute the simplified values into the original equation:</p><p>$$\\frac{1}{4} = \\frac{1}{4} \\times Y$$</p><p>Divide both sides by \\(\\frac{1}{4}\\):</p><p>$$Y = \\frac{1/4}{1/4} = \\mathbf{1}$$</p></div>"
+            }
+          ]
         },
         {
           "id": "sch-sel-m1-q27",
@@ -685,8 +715,16 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Again, use the options to find the answer. Subtract mass of box each time, then see if the latter weight is a third of the former. The answer here is 70g because 670-70=600g, which is the weight of all the candy, while 270-70=200g, which is the weight of a third of the candy</p></div>"
+              "explain": "Define variables and establish a system of two linear equations from the problem statement.",
+              "work": "<div style=\"text-align: left;\"><p>Let \\(B\\) be the mass of the empty box (in grams), and \\(C\\) be the mass of the full amount of candy (in grams).</p><p>• Box full of candy has mass 670g:</p><p>$$\\text{(1)}\\quad B + C = 670$$</p><p>• Box with one-third of the candy has mass 270g:</p><p>$$\\text{(2)}\\quad B + \\frac{1}{3}C = 270$$</p></div>"
+            },
+            {
+              "explain": "Eliminate B by subtracting the second equation from the first to find the mass of the candy C.",
+              "work": "<div style=\"text-align: left;\"><p>Subtract equation (2) from equation (1):</p><p>$$(B + C) - \\left(B + \\frac{1}{3}C\\right) = 670 - 270$$</p><p>$$\\frac{2}{3}C = 400$$</p><p>Solve for \\(C\\):</p><p>$$C = 400 \\times \\frac{3}{2} = 600\\text{ g}$$</p><p>The full contents of the candy have a mass of \\(600\\text{ g}\\).</p></div>"
+            },
+            {
+              "explain": "Substitute the candy mass back into equation (1) to solve for the mass of the empty box B.",
+              "work": "<div style=\"text-align: left;\"><p>Substitute \\(C = 600\\) into \\(B + C = 670\\):</p><p>$$B + 600 = 670 \\implies B = 670 - 600 = \\mathbf{70\\text{ g}}$$</p><p><strong>Check:</strong></p><p>With a third of the candy: \\(70 + \\frac{1}{3}(600) = 70 + 200 = 270\\text{ g}\\quad \\checkmark\\)</p></div>"
             }
           ],
           "meta": {
@@ -709,8 +747,16 @@
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>In 3 hours, 20 farmers sow 2400 seeds. Therefore, 1 farmer sows 120 seeds in 3 hours. In one hour, one farmer sows 40 seeds. Thus, 10 farmers will sow 400 seeds in one hour. In two hours, they'll sow 800 seeds.</p></div>"
+              "explain": "Calculate the rate of sowing per farmer per hour (unit rate).",
+              "work": "<div style=\"text-align: left;\"><p>Calculate total farmer-hours worked initially:</p><p>$$\\text{Total farmer-hours} = 20\\text{ farmers} \\times 3\\text{ hours} = 60\\text{ farmer-hours}$$</p><p>Calculate the sowing rate per farmer per hour:</p><p>$$\\text{Rate} = \\frac{2400\\text{ seeds}}{60\\text{ farmer-hours}} = 40\\text{ seeds per farmer per hour}$$</p></div>"
+            },
+            {
+              "explain": "Calculate how many seeds 10 farmers can sow in 2 hours using this unit rate.",
+              "work": "<div style=\"text-align: left;\"><p>Calculate total farmer-hours for the new scenario:</p><p>$$\\text{New farmer-hours} = 10\\text{ farmers} \\times 2\\text{ hours} = 20\\text{ farmer-hours}$$</p><p>Multiply by the unit sowing rate:</p><p>$$\\text{Seeds sown} = 20\\text{ farmer-hours} \\times 40\\text{ seeds/farmer-hour} = \\mathbf{800\\text{ seeds}}$$</p></div>"
+            },
+            {
+              "explain": "Alternative verification using direct proportions (ratios).",
+              "work": "<div style=\"text-align: left;\"><p>• Farmer ratio: \\(\\frac{10}{20} = \\frac{1}{2}\\) as many farmers</p><p>• Time ratio: \\(\\frac{2}{3}\\) as much time</p><p>Multiply the initial seed count by both proportional factors:</p><p>$$\\text{Seeds} = 2400 \\times \\frac{1}{2} \\times \\frac{2}{3} = 2400 \\times \\frac{1}{3} = \\mathbf{800\\text{ seeds}}$$</p></div>"
             }
           ],
           "meta": {
@@ -738,7 +784,21 @@
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 1",
             "number": 29
-          }
+          },
+          "steps": [
+            {
+              "explain": "Understand Euler's Path Theorem for traversability (한붓그리기 원리).",
+              "work": "<div style=\"text-align: left;\"><p>A connected network or figure can be drawn without lifting your pen or retracing any line (an <strong>Eulerian trail</strong>) if and only if:</p><p>• The figure has <strong>0 odd-degree vertices</strong> (starts and ends at the same vertex, an Euler circuit), OR</p><p>• The figure has exactly <strong>2 odd-degree vertices</strong> (starts at one odd vertex and ends at the other).</p><p>If a figure has <strong>more than 2 odd-degree vertices</strong>, it is mathematically <strong>impossible</strong> to trace in a single continuous stroke.</p><p><em>(The degree of a vertex is the number of lines/edges meeting at that point.)</em></p></div>"
+            },
+            {
+              "explain": "Analyze the degree of vertices for Shape A.",
+              "work": "<div style=\"text-align: left;\"><p>Looking at <strong>Shape A</strong> (diamond with vertical and horizontal cross lines):</p><p>• <strong>Top vertex:</strong> 2 outer diagonal edges + 1 vertical segment = <strong>degree 3 (ODD)</strong></p><p>• <strong>Bottom vertex:</strong> 2 outer diagonal edges + 1 vertical segment = <strong>degree 3 (ODD)</strong></p><p>• <strong>Left vertex:</strong> 2 outer diagonal edges + 1 horizontal segment = <strong>degree 3 (ODD)</strong></p><p>• <strong>Right vertex:</strong> 2 outer diagonal edges + 1 horizontal segment = <strong>degree 3 (ODD)</strong></p><p>• <strong>Center intersection:</strong> 4 lines meeting = degree 4 (even)</p><p>$$\\text{Number of odd-degree vertices in Shape A} = \\mathbf{4}$$</p></div>"
+            },
+            {
+              "explain": "Compare with other shapes and conclude why Shape A cannot be traced.",
+              "work": "<div style=\"text-align: left;\"><p>• <strong>Shape B:</strong> 2 odd vertices (top-mid and bot-mid, degree 3) \\(\\to\\) can be traced.</p><p>• <strong>Shape C:</strong> 2 odd vertices \\(\\to\\) can be traced.</p><p>• <strong>Shape D:</strong> 2 odd vertices (top-left and bot-left, degree 3) \\(\\to\\) can be traced.</p><p>• <strong>Shape E:</strong> 2 odd vertices \\(\\to\\) can be traced.</p><p>Since <strong>Shape A</strong> has <strong>4 odd vertices</strong> (greater than 2), it <strong>cannot</strong> be traced without lifting the pen or retracing a line.</p></div>"
+            }
+          ]
         },
         {
           "id": "sch-sel-m1-q30",
