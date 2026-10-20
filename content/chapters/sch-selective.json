@@ -1925,22 +1925,33 @@
         {
           "id": "sch-sel-m2-q28",
           "type": "mc",
-          "stem": "What would be the length, if \\(\\$2\\) dollars worth of 20 cent coins were lined on top of each other as shown in the diagram below?",
+          "stem": "What would be the length, if \\(\\$2\\) worth of \\(20\\text{-cent}\\) coins were lined on top of each other as shown in the diagram below?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 510 314\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q28.jpg\" x=\"0\" y=\"0\" width=\"510\" height=\"314\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 230\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"arrow28\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#1e293b\"/></marker><marker id=\"arrow28-rev\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M5,1 L1,3 L5,5 Z\" fill=\"#1e293b\"/></marker></defs><circle cx=\"110\" cy=\"85\" r=\"75\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"85\" r=\"75\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"270\" cy=\"85\" r=\"75\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"35\" y1=\"85\" x2=\"35\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\"/><line x1=\"185\" y1=\"85\" x2=\"185\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\"/><line x1=\"39\" y1=\"185\" x2=\"181\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"1.5\" marker-start=\"url(#arrow28-rev)\" marker-end=\"url(#arrow28)\"/><text x=\"110\" y=\"210\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">15 mm</text><line x1=\"195\" y1=\"85\" x2=\"195\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\"/><line x1=\"265\" y1=\"85\" x2=\"265\" y2=\"190\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\"/><line x1=\"199\" y1=\"185\" x2=\"261\" y2=\"185\" stroke=\"#1e293b\" stroke-width=\"1.5\" marker-start=\"url(#arrow28-rev)\" marker-end=\"url(#arrow28)\"/><text x=\"230\" y=\"210\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">7 mm</text></svg>"
           },
           "options": [
-            "99 mm",
-            "59 mm",
-            "77 mm",
-            "87 mm",
-            "67 mm"
+            "\\(99\\text{ mm}\\)",
+            "\\(59\\text{ mm}\\)",
+            "\\(77\\text{ mm}\\)",
+            "\\(87\\text{ mm}\\)",
+            "\\(67\\text{ mm}\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\$2\\) worth of 20c coins is 10 coins. The diagram shows 3 coins with a total length of 31mm. Draw a diagram of 4 coins and the length of that is 39mm. A diagram of 5 coins shows the length of that as 47mm. Hence an equation can be found, as all these numbers are one less than multiples of 8. The 3 coin chain can be written as: \\(8 \\times 4-1\\), the 4 coin chain can be written as \\(8 \\times 5-1\\) and the 5 coin chain can be written as \\(8 \\times 6-1\\). Therefore, a 10 coin chain can be written as \\(8 \\times 11-1\\), which is 87mm</p></div>"
+              "explain": "Find the number of 20-cent coins in $2",
+              "work": "<p>Convert the total amount into cents:</p><p>\\[\\$2.00 = 200\\text{ cents}\\]</p><p>Divide by the value of one coin to find the total number of coins:</p><p>\\[\\text{Number of coins} = \\frac{200}{20} = 10\\text{ coins}\\]</p>"
+            },
+            {
+              "explain": "Determine the length added by each additional coin",
+              "work": "<p>The diameter of each coin is \\(15\\text{ mm}\\), and the overlap between adjacent coins is \\(7\\text{ mm}\\).</p><p>Therefore, each overlapping coin extends the total length by only its non-overlapping portion:</p><p>\\[\\Delta L = \\text{Diameter} - \\text{Overlap} = 15\\text{ mm} - 7\\text{ mm} = 8\\text{ mm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total length of the 10-coin chain",
+              "work": "<p>The first coin provides the full initial length of \\(15\\text{ mm}\\). Each of the remaining \\(9\\) coins adds \\(8\\text{ mm}\\):</p><p>\\[\\text{Total Length} = 15\\text{ mm} + (10 - 1) \\times 8\\text{ mm} = 15 + 72 = 87\\text{ mm}\\]</p><p><em>Alternative method:</em> Calculate the unoverlapped sum of \\(10\\) full diameters minus the \\(9\\) overlaps:</p><p>\\[10 \\times 15\\text{ mm} - 9 \\times 7\\text{ mm} = 150 - 63 = 87\\text{ mm}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 170\" style=\"max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"step28-arr\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#0369a1\"/></marker><marker id=\"step28-arr-rev\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M5,1 L1,3 L5,5 Z\" fill=\"#0369a1\"/></marker><marker id=\"step28-tot-arr\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#0f172a\"/></marker><marker id=\"step28-tot-rev\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M5,1 L1,3 L5,5 Z\" fill=\"#0f172a\"/></marker></defs><rect x=\"20\" y=\"40\" width=\"70\" height=\"44\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/><text x=\"55\" y=\"67\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Coin 1</text><line x1=\"24\" y1=\"24\" x2=\"86\" y2=\"24\" stroke=\"#0369a1\" stroke-width=\"1.5\" marker-start=\"url(#step28-arr-rev)\" marker-end=\"url(#step28-arr)\"/><text x=\"55\" y=\"16\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">15 mm</text><rect x=\"90\" y=\"40\" width=\"36\" height=\"44\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"108\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">+8</text><rect x=\"126\" y=\"40\" width=\"36\" height=\"44\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"144\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">+8</text><rect x=\"162\" y=\"40\" width=\"36\" height=\"44\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"180\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">+8</text><text x=\"220\" y=\"66\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" text-anchor=\"middle\">···</text><rect x=\"242\" y=\"40\" width=\"36\" height=\"44\" rx=\"4\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"260\" y=\"66\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">+8</text><line x1=\"94\" y1=\"24\" x2=\"274\" y2=\"24\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><text x=\"184\" y=\"16\" fill=\"#475569\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">9 more coins × 8 mm = 72 mm</text><line x1=\"24\" y1=\"108\" x2=\"274\" y2=\"108\" stroke=\"#0f172a\" stroke-width=\"2\" marker-start=\"url(#step28-tot-rev)\" marker-end=\"url(#step28-tot-arr)\"/><text x=\"149\" y=\"132\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">Total Length = 15 + 72 = 87 mm</text><g transform=\"translate(300, 20)\"><rect x=\"0\" y=\"0\" width=\"145\" height=\"125\" rx=\"8\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"72\" y=\"24\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\">Chain Formula</text><text x=\"72\" y=\"48\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">L = D + (N - 1) × ΔL</text><text x=\"72\" y=\"70\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">L = 15 + (10 - 1) × 8</text><text x=\"72\" y=\"92\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">L = 15 + 72</text><text x=\"72\" y=\"112\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">= 87 mm</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -1976,22 +1987,33 @@
         {
           "id": "sch-sel-m2-q30",
           "type": "mc",
-          "stem": "Jamie made a string of stars.\n\nHow long is the string if the scale of the drawing is 60cm:12m?",
+          "stem": "Jamie made a string of stars.\n\nHow long is the string if the scale of the drawing is \\(60\\text{ cm} : 12\\text{ m}\\)?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 368 170\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q30.jpg\" x=\"0\" y=\"0\" width=\"368\" height=\"170\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 140\" style=\"max-width: 250px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"55,14 63.1,38.9 89.2,38.9 68.1,54.2 76.2,79.1 55,63.8 33.8,79.1 41.9,54.2 20.8,38.9 46.9,38.9\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"123.5,14 131.6,38.9 157.7,38.9 136.6,54.2 144.7,79.1 123.5,63.8 102.3,79.1 110.4,54.2 89.2,38.9 115.4,38.9\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><polygon points=\"192,14 200.1,38.9 226.2,38.9 205.1,54.2 213.2,79.1 192,63.8 170.8,79.1 178.9,54.2 157.7,38.9 183.9,38.9\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\" stroke-linejoin=\"round\"/><line x1=\"20.8\" y1=\"94\" x2=\"20.8\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"226.2\" y1=\"94\" x2=\"226.2\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"21\" y1=\"102\" x2=\"226\" y2=\"102\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/><text x=\"123.5\" y=\"126\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">15cm</text></svg>"
           },
           "options": [
-            "3000 cm",
-            "0.40 m",
-            "3 m",
-            "4 m",
-            "30 m"
+            "\\(3000\\text{ cm}\\)",
+            "\\(0.40\\text{ m}\\)",
+            "\\(3\\text{ m}\\)",
+            "\\(4\\text{ m}\\)",
+            "\\(30\\text{ m}\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>Every 60cm on the drawing is 12m (1200cm) in real life.</p><p>Thus, every 1cm on the drawing is \\(1200/60 = 20\\)cm in real life.</p><p>The drawing is 15cm. Therefore, in real life the string is \\(15 \\times 20 = 300\\)cm.</p><p>300cm is equal to 3m.</p></div>"
+              "explain": "Simplify the given scale ratio",
+              "work": "<p>The scale of the drawing is given as \\(60\\text{ cm} : 12\\text{ m}\\).</p><p>Convert \\(12\\text{ m}\\) into centimetres:</p><p>\\[12\\text{ m} = 12 \\times 100\\text{ cm} = 1200\\text{ cm}\\]</p><p>Simplify the ratio:</p><p>\\[60\\text{ cm} : 1200\\text{ cm} = 1\\text{ cm} : 20\\text{ cm}\\]</p><p>This means each \\(1\\text{ cm}\\) on the drawing represents \\(20\\text{ cm}\\) in real life (a scale factor of \\(20\\)).</p>"
+            },
+            {
+              "explain": "Calculate the actual length from the drawing",
+              "work": "<p>The total length of the string on the drawing is \\(15\\text{ cm}\\).</p><p>Multiply by the scale factor of \\(20\\):</p><p>\\[\\text{Real Length} = 15\\text{ cm} \\times 20 = 300\\text{ cm}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 140\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"scale-arr\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#0284c7\"/></marker></defs><g transform=\"translate(15, 20)\"><rect x=\"0\" y=\"0\" width=\"115\" height=\"95\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"57\" y=\"28\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">DRAWING</text><text x=\"57\" y=\"58\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">15 cm</text><text x=\"57\" y=\"80\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Scale: 1 cm : 20 cm</text></g><g transform=\"translate(140, 20)\"><line x1=\"5\" y1=\"48\" x2=\"60\" y2=\"48\" stroke=\"#0284c7\" stroke-width=\"2.5\" marker-end=\"url(#scale-arr)\"/><rect x=\"12\" y=\"16\" width=\"46\" height=\"22\" rx=\"4\" fill=\"#e0f2fe\"/><text x=\"35\" y=\"31\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">× 20</text></g><g transform=\"translate(215, 20)\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"95\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"55\" y=\"28\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">REAL LENGTH</text><text x=\"55\" y=\"58\" fill=\"#15803d\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">300 cm</text><text x=\"55\" y=\"80\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">15 cm × 20</text></g><g transform=\"translate(335, 20)\"><text x=\"12\" y=\"54\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"700\" text-anchor=\"middle\">=</text></g><g transform=\"translate(365, 20)\"><rect x=\"0\" y=\"0\" width=\"65\" height=\"95\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"32\" y=\"28\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"600\" text-anchor=\"middle\">METRES</text><text x=\"32\" y=\"58\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">3 m</text><text x=\"32\" y=\"80\" fill=\"#3b82f6\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">÷ 100</text></g></svg>"
+              }
+            },
+            {
+              "explain": "Convert the real-life length into metres",
+              "work": "<p>Convert \\(300\\text{ cm}\\) into metres by dividing by \\(100\\):</p><p>\\[\\frac{300\\text{ cm}}{100} = 3\\text{ m}\\]</p><p>Therefore, the string of stars is \\(3\\text{ m}\\) long.</p>"
             }
           ],
           "meta": {
@@ -2003,24 +2025,32 @@
         {
           "id": "sch-sel-m2-q31",
           "type": "mc",
-          "stem": "This triangle has an area of \\(144cm^2\\). What is the shaded area?",
+          "stem": "This triangle has an area of \\(144\\text{ cm}^2\\). What is the shaded area?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 289 232\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q31.jpg\" x=\"0\" y=\"0\" width=\"289\" height=\"232\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" style=\"max-width: 280px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"75,115 15,215 135,215\" fill=\"#1e293b\"/><polygon points=\"75,115 135,115 105,165\" fill=\"#1e293b\"/><polygon points=\"135,115 195,115 165,165\" fill=\"#1e293b\"/><polygon points=\"105,165 165,165 135,215\" fill=\"#1e293b\"/><polygon points=\"135,115 105,165 165,165\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polygon points=\"135,15 15,215 255,215\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"75\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"75\" y1=\"115\" x2=\"135\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><line x1=\"195\" y1=\"115\" x2=\"135\" y2=\"215\" stroke=\"#1e293b\" stroke-width=\"1.5\"/></svg>"
           },
           "options": [
-            "\\(27\\ cm^2\\)",
-            "\\(48\\ cm^2\\)",
-            "\\(63\\ cm^2\\)",
-            "\\(72\\ cm^2\\)",
-            "\\(84\\ cm^2\\)"
+            "\\(27\\text{ cm}^2\\)",
+            "\\(48\\text{ cm}^2\\)",
+            "\\(63\\text{ cm}^2\\)",
+            "\\(72\\text{ cm}^2\\)",
+            "\\(84\\text{ cm}^2\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>The area of the GREEN triangle is \\(144 \\div 4=36cm^2\\). The area of the RED triangle is also \\(36cm^2\\), but since only 3 of the 4 triangles inside the RED triangle are shaded, this means the area of the shaded triangles is \\(36 \\div 4=9 \\times 3=27cm^2\\). As such, the total shaded area is \\(63cm^2\\)</p></div>",
+              "explain": "Divide the large triangle into 4 equal triangles",
+              "work": "<p>Joining the midpoints of the sides of a triangle divides it into \\(4\\) congruent triangles of equal area:</p><p>\\[\\text{Area of each quarter triangle} = \\frac{144\\text{ cm}^2}{4} = 36\\text{ cm}^2\\]</p><p>The bottom-left triangle is completely shaded:</p><p>\\[\\text{Area}_1 = 36\\text{ cm}^2\\]</p>"
+            },
+            {
+              "explain": "Calculate the shaded portion of the central triangle",
+              "work": "<p>The downward-pointing central triangle also has an area of \\(36\\text{ cm}^2\\).</p><p>It is subdivided into \\(4\\) smaller congruent triangles by joining its midpoints, each having an area of:</p><p>\\[\\frac{36\\text{ cm}^2}{4} = 9\\text{ cm}^2\\]</p><p>Exactly \\(3\\) of these \\(4\\) sub-triangles are shaded (with only the middle upright sub-triangle left unshaded):</p><p>\\[\\text{Area}_2 = 3 \\times 9\\text{ cm}^2 = 27\\text{ cm}^2\\]</p>"
+            },
+            {
+              "explain": "Calculate the total shaded area",
+              "work": "<p>Add the shaded areas together:</p><p>\\[\\text{Total Shaded Area} = \\text{Area}_1 + \\text{Area}_2 = 36\\text{ cm}^2 + 27\\text{ cm}^2 = 63\\text{ cm}^2\\]</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 289 247\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q31-expl.jpg\" x=\"0\" y=\"0\" width=\"289\" height=\"247\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 250\" style=\"max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(10, 10)\"><polygon points=\"120,15 65,105 175,105\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"120\" y=\"75\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">36 cm²</text><polygon points=\"175,105 120,195 230,195\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"175\" y=\"165\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">36 cm²</text><polygon points=\"65,105 10,195 120,195\" fill=\"#059669\" stroke=\"#047857\" stroke-width=\"1.5\"/><text x=\"65\" y=\"165\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">36 cm²</text><polygon points=\"65,105 120,105 92.5,150\" fill=\"#0284c7\" stroke=\"#0369a1\" stroke-width=\"1\"/><text x=\"92\" y=\"125\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\">9</text><polygon points=\"120,105 175,105 147.5,150\" fill=\"#0284c7\" stroke=\"#0369a1\" stroke-width=\"1\"/><text x=\"147\" y=\"125\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\">9</text><polygon points=\"92.5,150 147.5,150 120,195\" fill=\"#0284c7\" stroke=\"#0369a1\" stroke-width=\"1\"/><text x=\"120\" y=\"170\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"700\" text-anchor=\"middle\">9</text><polygon points=\"120,105 92.5,150 147.5,150\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.2\"/><text x=\"120\" y=\"140\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\">9</text><polygon points=\"120,15 10,195 230,195\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/></g><g transform=\"translate(255, 20)\"><rect x=\"0\" y=\"0\" width=\"195\" height=\"36\" rx=\"6\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"97\" y=\"23\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">Total Area = 144 cm²</text><rect x=\"0\" y=\"46\" width=\"195\" height=\"46\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#a7f3d0\" stroke-width=\"1\"/><circle cx=\"16\" cy=\"69\" r=\"6\" fill=\"#059669\"/><text x=\"30\" y=\"64\" fill=\"#065f46\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\">Bottom-Left Triangle</text><text x=\"30\" y=\"81\" fill=\"#047857\" font-family=\"system-ui, sans-serif\" font-size=\"11\">144 ÷ 4 = 36 cm²</text><rect x=\"0\" y=\"100\" width=\"195\" height=\"46\" rx=\"6\" fill=\"#f0f9ff\" stroke=\"#bae6fd\" stroke-width=\"1\"/><circle cx=\"16\" cy=\"123\" r=\"6\" fill=\"#0284c7\"/><text x=\"30\" y=\"118\" fill=\"#075985\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\">Central Shaded Part</text><text x=\"30\" y=\"135\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"11\">3 × (36 ÷ 4) = 27 cm²</text><rect x=\"0\" y=\"154\" width=\"195\" height=\"42\" rx=\"6\" fill=\"#1e293b\"/><text x=\"97\" y=\"180\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\">Total = 36 + 27 = 63 cm²</text></g></svg>"
               }
             }
           ],
