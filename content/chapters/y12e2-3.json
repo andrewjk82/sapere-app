@@ -259,7 +259,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 11(c): powers of a complex number",
+          "stem": "Let \\(w=-\\sqrt{3}+i\\). Answer the following questions regarding powers of \\(w\\).",
           "hint": "Use modulus and argument carefully. Verify that the source value of w is consistent with the claimed power identity.",
           "parts": [
             {
@@ -355,7 +355,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "11(c)"
           }
         }
       ]
@@ -447,7 +448,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 16(b): multiple-angle tangent identities",
+          "stem": "Consider multiple-angle tangent identities and the equation \\(\\tan 4\\theta = 1\\).",
           "hint": "Use tangent’s period and the double-angle formula, then connect the roots to the quartic.",
           "parts": [
             {
@@ -715,7 +716,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "16(b)"
           }
         }
       ]

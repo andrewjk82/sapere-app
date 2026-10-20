@@ -195,7 +195,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 14(d): analyse and integrate \\(f(x)=\\sqrt{2-\\sqrt{x}}\\)",
+          "stem": "Consider the function \\(f(x)=\\sqrt{2-\\sqrt{x}}\\).",
           "hint": "First analyse the nested square roots, then use a substitution to evaluate the area.",
           "parts": [
             {
@@ -362,7 +362,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "14(d)"
           }
         }
       ]
@@ -510,7 +511,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 15(b): partial fractions and reflection symmetry",
+          "stem": "Consider the partial fraction decomposition of \\(\\frac{1}{x(\\pi-2x)}\\) and definite integrals on \\([\\frac{\\pi}{6}, \\frac{\\pi}{3}]\\).",
           "hint": "Use partial fractions for the logarithmic integral and reflection symmetry for the cosine-squared integral.",
           "parts": [
             {
@@ -698,7 +699,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "15(b)"
           }
         }
       ]
@@ -713,7 +715,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 12(b), (d): integration",
+          "stem": "Evaluate the following integrals.",
           "hint": "Use completing the square for (b) and a trigonometric substitution for (d).",
           "parts": [
             {
@@ -805,7 +807,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "12(b), (d)"
           }
         }
       ]
@@ -1116,7 +1119,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 15(a): a reduction relation for tangent integrals",
+          "stem": "Let \\(I_n=\\int_0^{\\pi/4}\\tan^n x\\,dx\\), where \\(n\\) is an integer and \\(n\\ge3\\).",
           "hint": "Use the reduction identity from part (i), then evaluate the simpler tangent-square integral.",
           "parts": [
             {
@@ -1208,7 +1211,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "15(a)"
           }
         }
       ]

@@ -170,7 +170,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 11(a): complex division and modulus",
+          "stem": "Consider the complex number \\(z=\\frac{2-3i}{1+i}\\).",
           "hint": "Rationalise the denominator first; then use the real and imaginary parts to find the modulus.",
           "parts": [
             {
@@ -262,7 +262,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "11(a)"
           }
         }
       ]
@@ -500,7 +501,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 12(a), (c): Argand loci and arguments",
+          "stem": "Consider the following problems on loci and arguments in the complex plane.",
           "hint": "Use the centre and radius for the region, then apply argument rules to the circle.",
           "parts": [
             {
@@ -553,7 +554,7 @@
               "type": "multipart",
               "difficulty": "hard",
               "timeLimit": 60,
-              "stem": "Question 12(c): arguments on the circle \\(|z|=2\\)",
+              "stem": "Let \\(z\\) be a complex number on the circle \\(|z|=2\\) such that \\(0 < \\arg z = \\theta < \\frac{\\pi}{2}\\).",
               "hint": "Use argument rules for powers and quotients, and use the circle geometry to find chord directions.",
               "parts": [
                 {
@@ -809,7 +810,8 @@
               "meta": {
                 "source": "Abbotsleigh 2021 4U Trials & Solutions",
                 "school": "Abbotsleigh",
-                "year": 2021
+                "year": 2021,
+                "number": "12(c)"
               }
             }
           ],
@@ -817,7 +819,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "12(a), (c)"
           }
         }
       ]

@@ -747,7 +747,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 16(a): telescoping inequalities",
+          "stem": "Consider telescoping inequalities and the sum \\(\\sum_{k=1}^{80}\\frac{1}{\\sqrt{k}}\\).",
           "hint": "Turn each reciprocal square root into a difference of consecutive square roots so the sums telescope.",
           "parts": [
             {
@@ -843,7 +843,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "16(a)"
           }
         }
       ]

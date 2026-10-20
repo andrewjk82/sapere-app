@@ -105,7 +105,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 13(d): tunnel lines in 3D",
+          "stem": "Consider two straight tunnels in three-dimensional space.",
           "hint": "Model each tunnel as a line in 3D; find the shared point before measuring the segments.",
           "parts": [
             {
@@ -213,7 +213,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "13(d)"
           }
         }
       ]
@@ -508,7 +509,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 11(d): vectors and area in three dimensions",
+          "stem": "Consider three points in three-dimensional space: \\(A=(3,2,9)\\), \\(B=(-5,11,6)\\), and \\(C=(4,0,-8)\\).",
           "hint": "Build the two vectors from A, then use the dot-product angle formula and the triangle-area formula.",
           "parts": [
             {
@@ -642,7 +643,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "11(d)"
           }
         },
         {
@@ -877,7 +879,7 @@
           "type": "multipart",
           "difficulty": "hard",
           "timeLimit": 60,
-          "stem": "Question 13(b): vectors in a parallelogram",
+          "stem": "In parallelogram \\(OABC\\), let \\(\\overrightarrow{OA}=\\mathbf{a}\\) and \\(\\overrightarrow{OC}=\\mathbf{c}\\).",
           "hint": "Express the diagonal point and midpoint as position vectors from O, then compare their directions.",
           "parts": [
             {
@@ -990,7 +992,8 @@
           "meta": {
             "source": "Abbotsleigh 2021 4U Trials & Solutions",
             "school": "Abbotsleigh",
-            "year": 2021
+            "year": 2021,
+            "number": "13(b)"
           }
         },
         {
