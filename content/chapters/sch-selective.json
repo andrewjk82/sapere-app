@@ -2137,20 +2137,31 @@
           "type": "mc",
           "stem": "What is the perimeter of the following shape?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 292\" width=\"100%\" height=\"auto\"><image href=\"/selective/t2-q35.jpg\" x=\"0\" y=\"0\" width=\"340\" height=\"292\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 310\" style=\"max-width: 320px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"70,30 126,30 126,86 182,86 182,30 238,30 238,86 294,86 294,128 238,128 238,240 200,240 200,198 162,198 162,282 70,282 70,212 42,212 42,142 70,142 70,30\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"98\" y1=\"24\" x2=\"98\" y2=\"36\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"98\" y=\"18\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">4 cm</text><line x1=\"120\" y1=\"58\" x2=\"132\" y2=\"58\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"154\" y1=\"80\" x2=\"154\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"176\" y1=\"58\" x2=\"188\" y2=\"58\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"210\" y1=\"24\" x2=\"210\" y2=\"36\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"232\" y1=\"58\" x2=\"244\" y2=\"58\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"266\" y1=\"80\" x2=\"266\" y2=\"92\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"266\" y1=\"122\" x2=\"266\" y2=\"134\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><text x=\"62\" y=\"88\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"end\">8 cm</text><text x=\"56\" y=\"136\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">2 cm</text><text x=\"34\" y=\"180\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"end\">5 cm</text><text x=\"62\" y=\"250\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"end\">5 cm</text><text x=\"154\" y=\"244\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"end\">6 cm</text><text x=\"208\" y=\"222\" fill=\"#0f172a\" font-family=\"system-ui, -apple-system, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"start\">3 cm</text></svg>"
           },
           "options": [
-            "67 cm",
-            "100 cm",
-            "94 cm",
-            "78 cm",
-            "86 cm"
+            "\\(67\\text{ cm}\\)",
+            "\\(100\\text{ cm}\\)",
+            "\\(94\\text{ cm}\\)",
+            "\\(78\\text{ cm}\\)",
+            "\\(86\\text{ cm}\\)"
           ],
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>86 units (all 3 vertical lines on the right side add up to 15 cm, as it is 3cm shorter than the left side).</p></div>"
+              "explain": "Sum the segments marked with tick marks",
+              "work": "<p>The single tick mark indicates segments of equal length, each measuring \\(4\\text{ cm}\\).</p><p>Counting around the perimeter, there are exactly \\(8\\) such marked segments (top tabs, notch sides, and right bump edges):</p><p>\\[\\text{Sum of marked segments} = 8 \\times 4\\text{ cm} = 32\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Sum the known left-side and stepped segments",
+              "work": "<p>On the left side, we have the vertical edges and the protruding rectangular tab:</p><p>\\[8\\text{ cm} + 2\\text{ cm} + 5\\text{ cm} + 2\\text{ cm} + 5\\text{ cm} = 22\\text{ cm}\\]</p><p>The interior vertical step segments at the bottom measure:</p><p>\\[6\\text{ cm} + 3\\text{ cm} = 9\\text{ cm}\\]</p><p>Subtotal so far:</p><p>\\[32\\text{ cm} + 22\\text{ cm} + 9\\text{ cm} = 63\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Determine the remaining right vertical and base horizontal segments",
+              "work": "<p>The total vertical height on the left is \\(8 + 5 + 5 = 18\\text{ cm}\\). The bottom-right boundary ends \\(3\\text{ cm}\\) above the bottom-left baseline, so the vertical drop on the right side equals:</p><p>\\[18\\text{ cm} - 3\\text{ cm} = 15\\text{ cm}\\]</p><p>The horizontal base segments spanning across the bottom add another \\(8\\text{ cm}\\).</p><p>Adding all components together gives the total perimeter:</p><p>\\[\\text{Perimeter} = 63\\text{ cm} + 15\\text{ cm} + 8\\text{ cm} = 86\\text{ cm}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 210\" style=\"max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(15, 15)\"><rect x=\"0\" y=\"0\" width=\"200\" height=\"40\" rx=\"6\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"1.5\"/><text x=\"10\" y=\"25\" fill=\"#0369a1\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\">8 Marked Sides (4 cm each)</text><text x=\"190\" y=\"25\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"end\">32 cm</text><rect x=\"0\" y=\"46\" width=\"200\" height=\"40\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#059669\" stroke-width=\"1.5\"/><text x=\"10\" y=\"71\" fill=\"#065f46\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\">Left & Tab Edges</text><text x=\"190\" y=\"71\" fill=\"#059669\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"end\">22 cm</text><rect x=\"0\" y=\"92\" width=\"200\" height=\"40\" rx=\"6\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/><text x=\"10\" y=\"117\" fill=\"#6b21a8\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\">Inner Step Verticals</text><text x=\"190\" y=\"117\" fill=\"#9333ea\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"end\">9 cm</text><rect x=\"0\" y=\"138\" width=\"200\" height=\"40\" rx=\"6\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"1.5\"/><text x=\"10\" y=\"163\" fill=\"#92400e\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\">Right Verticals & Base</text><text x=\"190\" y=\"163\" fill=\"#d97706\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"800\" text-anchor=\"end\">23 cm</text></g><g transform=\"translate(235, 30)\"><rect x=\"0\" y=\"0\" width=\"205\" height=\"145\" rx=\"10\" fill=\"#1e293b\"/><text x=\"102\" y=\"35\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">TOTAL PERIMETER</text><text x=\"102\" y=\"75\" fill=\"#38bdf8\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"700\" text-anchor=\"middle\">32 + 22 + 9 + 23</text><line x1=\"25\" y1=\"92\" x2=\"180\" y2=\"92\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"102\" y=\"125\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"800\" text-anchor=\"middle\">= 86 cm</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -2442,7 +2453,7 @@
           "type": "mc",
           "stem": "This hexagon is divided into equal triangles.\nWhich triangles are the shaded triangle in line symmetry with?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 244 199\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q12.jpg\" x=\"0\" y=\"0\" width=\"244\" height=\"199\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 220\" style=\"max-width: 240px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"120,110 183.75,146.8 162.5,183.6\" fill=\"#94a3b8\"/><polygon points=\"77.5,36.4 162.5,36.4 205,110 162.5,183.6 77.5,183.6 35,110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"120\" y1=\"110\" x2=\"120\" y2=\"36.4\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"162.5\" y2=\"36.4\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"183.75\" y2=\"73.2\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"205\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"183.75\" y2=\"146.8\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"162.5\" y2=\"183.6\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"120\" y2=\"183.6\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"77.5\" y2=\"183.6\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"56.25\" y2=\"146.8\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"35\" y2=\"110\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"56.25\" y2=\"73.2\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><line x1=\"120\" y1=\"110\" x2=\"77.5\" y2=\"36.4\" stroke=\"#1e293b\" stroke-width=\"1.2\"/><circle cx=\"120\" cy=\"110\" r=\"2.5\" fill=\"#0f172a\"/><text x=\"106\" y=\"65\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">a</text><text x=\"134\" y=\"65\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">b</text><text x=\"155\" y=\"77\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">c</text><text x=\"170\" y=\"102\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">d</text><text x=\"170\" y=\"126\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">e</text><text x=\"134\" y=\"163\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">f</text><text x=\"106\" y=\"163\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">g</text><text x=\"85\" y=\"151\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">h</text><text x=\"70\" y=\"126\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">i</text><text x=\"70\" y=\"102\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">j</text><text x=\"85\" y=\"77\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">k</text></svg>"
           },
           "options": [
             "e, f, k, g, h",
@@ -2452,6 +2463,23 @@
             "a, c, e, f, h, j"
           ],
           "answer": 4,
+          "steps": [
+            {
+              "explain": "Understand the lines of symmetry of a regular hexagon",
+              "work": "<p>A regular hexagon has \\(6\\) lines of reflectional symmetry:</p><ul><li>\\(3\\) lines connecting opposite vertices (vertex diagonals).</li><li>\\(3\\) lines connecting the midpoints of opposite edges (edge bisectors).</li></ul><p>For any shape inside the hexagon to be in line symmetry with another, one must be the reflection of the other across at least one of these \\(6\\) axes of symmetry.</p>"
+            },
+            {
+              "explain": "Reflect the shaded triangle across each of the 6 symmetry lines",
+              "work": "<p>Reflecting the shaded triangle across each symmetry axis gives its mirror image:</p><ul><li><strong>Axis through bottom-right vertex:</strong> The reflection maps the shaded triangle directly to triangle <strong>f</strong>.</li><li><strong>Axis through bottom-right edge midpoint:</strong> The reflection maps it directly to triangle <strong>e</strong>.</li><li><strong>Vertical axis (midpoint to midpoint):</strong> The reflection maps it across the vertical line to triangle <strong>h</strong>.</li><li><strong>Horizontal axis (vertex to vertex):</strong> The reflection maps it across the horizontal line to triangle <strong>c</strong>.</li><li><strong>The other vertex diagonal:</strong> The reflection maps it across to triangle <strong>a</strong>.</li><li><strong>The other midpoint bisector:</strong> The reflection maps it across to triangle <strong>j</strong>.</li></ul>"
+            },
+            {
+              "explain": "List all symmetric triangles",
+              "work": "<p>Collecting the reflected counterparts across all \\(6\\) lines of symmetry gives:</p><p>\\[\\text{Symmetric Triangles} = \\mathbf{a,\\ c,\\ e,\\ f,\\ h,\\ j}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 210\" style=\"max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(10, 10)\"><polygon points=\"100,95 154,126 136,157\" fill=\"#334155\"/><polygon points=\"64,32 136,32 172,95 136,157 64,157 28,95\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"180\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><line x1=\"15\" y1=\"95\" x2=\"185\" y2=\"95\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><line x1=\"37\" y1=\"43\" x2=\"163\" y2=\"147\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><line x1=\"37\" y1=\"147\" x2=\"163\" y2=\"43\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"3,3\"/><text x=\"100\" y=\"195\" fill=\"#ef4444\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"600\" text-anchor=\"middle\">6 Lines of Symmetry</text></g><g transform=\"translate(210, 20)\"><rect x=\"0\" y=\"0\" width=\"235\" height=\"165\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"117\" y=\"25\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\">Reflected Counterparts</text><text x=\"15\" y=\"50\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\">• Reflection 1 (Vertex): <tspan font-weight=\"700\" fill=\"#0284c7\">f</tspan></text><text x=\"15\" y=\"70\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\">• Reflection 2 (Midpoint): <tspan font-weight=\"700\" fill=\"#0284c7\">e</tspan></text><text x=\"15\" y=\"90\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\">• Reflection 3 (Vertical): <tspan font-weight=\"700\" fill=\"#0284c7\">h</tspan></text><text x=\"15\" y=\"110\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\">• Reflection 4 (Horizontal): <tspan font-weight=\"700\" fill=\"#0284c7\">c</tspan></text><text x=\"15\" y=\"130\" fill=\"#334155\" font-family=\"system-ui, sans-serif\" font-size=\"11\">• Reflection 5 &amp; 6 (Diagonals): <tspan font-weight=\"700\" fill=\"#0284c7\">a, j</tspan></text><text x=\"117\" y=\"152\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\">Matching set: a, c, e, f, h, j</text></g></svg>"
+              }
+            }
+          ],
           "meta": {
             "source": "Selective Trial Test · Mathematical Reasoning",
             "test": "Test 3",
@@ -2513,7 +2541,7 @@
           "type": "multipart",
           "stem": "Questions 15 and 16 refer to the following graph.\n\nA grade of 240 students select one sport to play which is represented by the graph below. The number of students who play tennis and softball are equal and 80 students play netball.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 391 368\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q15-16.jpg\" x=\"0\" y=\"0\" width=\"391\" height=\"368\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" style=\"max-width: 290px; width: 100%; height: auto; display: block; margin: 0 auto;\"><circle cx=\"150\" cy=\"150\" r=\"120\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"2\"/><path d=\"M 150,150 L 150,270 A 120 120 0 0 1 30,150 Z\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 150,150 L 234.85,234.85 A 120 120 0 0 1 150,270 Z\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 150,150 L 270,150 A 120 120 0 0 1 234.85,234.85 Z\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 150,150 L 210,46.08 A 120 120 0 0 1 270,150 Z\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><path d=\"M 150,150 L 30,150 A 120 120 0 0 1 210,46.08 Z\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polyline points=\"135,150 135,165 150,165\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polyline points=\"165,150 165,165 150,165\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"150\" r=\"2.5\" fill=\"#0f172a\"/><text x=\"110\" y=\"85\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">Netball</text><text x=\"215\" y=\"110\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">Soccer</text><text x=\"225\" y=\"185\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">Softball</text><text x=\"185\" y=\"240\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"600\" text-anchor=\"middle\">Tennis</text><text x=\"95\" y=\"205\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" text-anchor=\"middle\">Cricket</text></svg>"
           },
           "parts": [
             {
@@ -2530,8 +2558,19 @@
               "answer": 0,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Tennis = 1/8</p><p>Soccer = 1/6</p><p>\\(1/8 + 1/6 = 7/24\\)</p></div>"
+                  "explain": "Find the fraction of students playing Tennis",
+                  "work": "<p>The bottom-right quadrant forms a right angle (\\(90^\\circ\\)) and is divided equally between softball and tennis:</p><p>\\[\\text{Tennis fraction} = \\frac{90^\\circ \\div 2}{360^\\circ} = \\frac{45^\\circ}{360^\\circ} = \\frac{1}{8}\\]</p>"
+                },
+                {
+                  "explain": "Find the fraction of students playing Soccer",
+                  "work": "<p>Out of \\(240\\) students, \\(80\\) play netball:</p><p>\\[\\text{Netball fraction} = \\frac{80}{240} = \\frac{1}{3} = \\frac{120^\\circ}{360^\\circ}\\]</p><p>The top half of the circle represents a straight angle of \\(180^\\circ\\). Soccer accounts for the remaining angle in the top half:</p><p>\\[\\text{Soccer angle} = 180^\\circ - 120^\\circ = 60^\\circ\\]</p><p>\\[\\text{Soccer fraction} = \\frac{60^\\circ}{360^\\circ} = \\frac{1}{6}\\]</p>"
+                },
+                {
+                  "explain": "Add the two fractions together",
+                  "work": "<p>Find the combined fraction of students who play either soccer or tennis:</p><p>\\[\\frac{1}{6} + \\frac{1}{8} = \\frac{4}{24} + \\frac{3}{24} = \\frac{7}{24}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 130\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"55\" y=\"28\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">SOCCER</text><text x=\"55\" y=\"62\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">1/6</text><text x=\"55\" y=\"80\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">= 4/24</text></g><text x=\"150\" y=\"72\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">+</text><g transform=\"translate(170, 20)\"><rect x=\"0\" y=\"0\" width=\"110\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><text x=\"55\" y=\"28\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">TENNIS</text><text x=\"55\" y=\"62\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">1/8</text><text x=\"55\" y=\"80\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"11\" text-anchor=\"middle\">= 3/24</text></g><text x=\"300\" y=\"72\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(320, 20)\"><rect x=\"0\" y=\"0\" width=\"100\" height=\"90\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"50\" y=\"28\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" text-anchor=\"middle\">COMBINED</text><text x=\"50\" y=\"65\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"800\" text-anchor=\"middle\">7/24</text></g></svg>"
+                  }
                 }
               ]
             },
@@ -2549,8 +2588,19 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Cricket = \\(\\frac{1}{4} \\times 240 = 60\\)</p><p>Softball = \\(1/8 \\times 240 = 30\\)</p><p>\\((60 + 30)/2 = 45\\)</p><p>Therefore, 15 people from cricket need to move to softball</p></div>"
+                  "explain": "Calculate the current number of students playing Cricket and Softball",
+                  "work": "<p>Cricket occupies a \\(90^\\circ\\) quadrant (\\(\\frac{1}{4}\\) of the circle):</p><p>\\[\\text{Cricket} = \\frac{1}{4} \\times 240 = 60\\text{ students}\\]</p><p>Softball occupies \\(\\frac{1}{8}\\) of the circle:</p><p>\\[\\text{Softball} = \\frac{1}{8} \\times 240 = 30\\text{ students}\\]</p>"
+                },
+                {
+                  "explain": "Find the target equal number of students for each sport",
+                  "work": "<p>To have an equal number of students without changing the total count:</p><p>\\[\\text{Equal number} = \\frac{60 + 30}{2} = \\frac{90}{2} = 45\\text{ students each}\\]</p>"
+                },
+                {
+                  "explain": "Determine how many students must switch from cricket to softball",
+                  "work": "<p>Subtract the target number from the current cricket count:</p><p>\\[60 - 45 = 15\\text{ students}\\]</p><p>Alternatively, the number needed for softball to reach \\(45\\) is \\(45 - 30 = 15\\text{ students}\\).</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 140\" style=\"max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"arrow-switch\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#0284c7\"/></marker></defs><g transform=\"translate(20, 25)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.5\"/><text x=\"60\" y=\"25\" fill=\"#dc2626\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">CRICKET</text><text x=\"60\" y=\"55\" fill=\"#991b1b\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">60</text><text x=\"60\" y=\"72\" fill=\"#dc2626\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Current count</text></g><g transform=\"translate(155, 35)\"><line x1=\"5\" y1=\"30\" x2=\"140\" y2=\"30\" stroke=\"#0284c7\" stroke-width=\"2.5\" marker-end=\"url(#arrow-switch)\"/><rect x=\"40\" y=\"8\" width=\"65\" height=\"24\" rx=\"4\" fill=\"#e0f2fe\"/><text x=\"72\" y=\"24\" fill=\"#0284c7\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">Move 15</text></g><g transform=\"translate(315, 25)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"80\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"60\" y=\"25\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"600\" text-anchor=\"middle\">SOFTBALL</text><text x=\"60\" y=\"55\" fill=\"#166534\" font-family=\"system-ui, sans-serif\" font-size=\"20\" font-weight=\"800\" text-anchor=\"middle\">30</text><text x=\"60\" y=\"72\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">Current count</text></g><text x=\"230\" y=\"125\" fill=\"#0f172a\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" text-anchor=\"middle\">Both become: 60 − 15 = 45 and 30 + 15 = 45</text></svg>"
+                  }
                 }
               ]
             }
@@ -2612,22 +2662,37 @@
         {
           "id": "sch-sel-m3-q19",
           "type": "mc",
-          "stem": "Find the perimeter of the following shape. The radius of the large circle is 3 cm.",
+          "stem": "Find the perimeter of the following shape. The radius of the large circle is \\(3\\text{ cm}\\).",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 394 295\" width=\"100%\" height=\"auto\"><image href=\"/selective/t3-q19.jpg\" x=\"0\" y=\"0\" width=\"394\" height=\"295\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 220\" style=\"max-width: 320px; width: 100%; height: auto; display: block; margin: 0 auto;\"><path d=\"M 85,35 A 25 25 0 0 0 85,85 A 25 25 0 0 0 85,135 A 25 25 0 0 0 85,185 A 75 75 0 0 0 85,35 Z\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"85\" y1=\"35\" x2=\"85\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><circle cx=\"85\" cy=\"60\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"85\" cy=\"110\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"85\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/><path d=\"M 235,35 A 25 25 0 0 1 235,85 A 25 25 0 0 1 235,135 A 25 25 0 0 1 235,185 A 75 75 0 0 1 235,35 Z\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"2\"/><line x1=\"235\" y1=\"35\" x2=\"235\" y2=\"185\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4,4\"/><circle cx=\"235\" cy=\"60\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"235\" cy=\"110\" r=\"3.5\" fill=\"#0f172a\"/><circle cx=\"235\" cy=\"160\" r=\"3.5\" fill=\"#0f172a\"/></svg>"
           },
           "options": [
-            "18.84 cm",
-            "20.88 cm",
-            "29.34 cm",
-            "32.52 cm",
-            "37.68 cm"
+            "\\(18.84\\text{ cm}\\)",
+            "\\(20.88\\text{ cm}\\)",
+            "\\(29.34\\text{ cm}\\)",
+            "\\(32.52\\text{ cm}\\)",
+            "\\(37.68\\text{ cm}\\)"
           ],
           "answer": 4,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(2 \\times 3.14 \\times 3 + 3 \\times 2 \\times 3.14 \\times 1 = 37.68\\)</p></div>"
+              "explain": "Find the radius and diameter of the small semicircles",
+              "work": "<p>The large circle has radius \\(R = 3\\text{ cm}\\), so its diameter along the dashed vertical line is:</p><p>\\[D_{\\text{large}} = 2 \\times 3\\text{ cm} = 6\\text{ cm}\\]</p><p>This diameter is divided equally into \\(3\\) small semicircles along each wing:</p><p>\\[d_{\\text{small}} = \\frac{6\\text{ cm}}{3} = 2\\text{ cm} \\implies r_{\\text{small}} = 1\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the perimeter of the two large semicircular arcs",
+              "work": "<p>The inner boundary consists of \\(2\\) large semicircles of radius \\(R = 3\\text{ cm}\\), which together equal the circumference of one full circle:</p><p>\\[P_{\\text{large}} = 2 \\times (\\pi \\times R) = 2 \\times \\pi \\times 3 = 6\\pi\\]</p><p>Using \\(\\pi \\approx 3.14\\):</p><p>\\[P_{\\text{large}} = 6 \\times 3.14 = 18.84\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the perimeter of the six small semicircular arcs",
+              "work": "<p>Each wing has \\(3\\) small semicircles, giving \\(6\\) small semicircles in total. Together they equal \\(3\\) full circles of radius \\(r = 1\\text{ cm}\\):</p><p>\\[P_{\\text{small}} = 6 \\times (\\pi \\times r) = 6 \\times \\pi \\times 1 = 6\\pi\\]</p><p>Using \\(\\pi \\approx 3.14\\):</p><p>\\[P_{\\text{small}} = 6 \\times 3.14 = 18.84\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total perimeter",
+              "work": "<p>Add the large and small arc lengths together:</p><p>\\[\\text{Total Perimeter} = P_{\\text{large}} + P_{\\text{small}} = 18.84\\text{ cm} + 18.84\\text{ cm} = 37.68\\text{ cm}\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 440 140\" style=\"max-width: 440px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(20, 20)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"95\" rx=\"8\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"60\" y=\"25\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">2 LARGE ARCS</text><text x=\"60\" y=\"58\" fill=\"#15803d\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">18.84 cm</text><text x=\"60\" y=\"80\" fill=\"#16a34a\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">2 × (π × 3 cm)</text></g><text x=\"165\" y=\"72\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">+</text><g transform=\"translate(190, 20)\"><rect x=\"0\" y=\"0\" width=\"120\" height=\"95\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.5\"/><text x=\"60\" y=\"25\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">6 SMALL ARCS</text><text x=\"60\" y=\"58\" fill=\"#1d4ed8\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" text-anchor=\"middle\">18.84 cm</text><text x=\"60\" y=\"80\" fill=\"#2563eb\" font-family=\"system-ui, sans-serif\" font-size=\"10\" text-anchor=\"middle\">6 × (π × 1 cm)</text></g><text x=\"335\" y=\"72\" fill=\"#64748b\" font-family=\"system-ui, sans-serif\" font-size=\"24\" font-weight=\"700\" text-anchor=\"middle\">=</text><g transform=\"translate(360, 20)\"><rect x=\"0\" y=\"0\" width=\"65\" height=\"95\" rx=\"8\" fill=\"#1e293b\"/><text x=\"32\" y=\"25\" fill=\"#94a3b8\" font-family=\"system-ui, sans-serif\" font-size=\"10\" font-weight=\"600\" text-anchor=\"middle\">TOTAL</text><text x=\"32\" y=\"58\" fill=\"#ffffff\" font-family=\"system-ui, sans-serif\" font-size=\"16\" font-weight=\"800\" text-anchor=\"middle\">37.68</text><text x=\"32\" y=\"78\" fill=\"#38bdf8\" font-family=\"system-ui, sans-serif\" font-size=\"11\" font-weight=\"700\" text-anchor=\"middle\">cm</text></g></svg>"
+              }
             }
           ],
           "meta": {
