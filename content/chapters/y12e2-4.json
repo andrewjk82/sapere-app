@@ -520,12 +520,16 @@
               "hint": "For a vector from P to Q, subtract the coordinates of P from the coordinates of Q.",
               "steps": [
                 {
-                  "explain": "Subtract A from B component by component.",
-                  "work": "\\(\\overrightarrow{AB}=B-A=(-5-3,11-2,6-9)=(-8,9,-3).\\)"
+                  "explain": "A vector from A to another point is found by subtracting A’s coordinates from the endpoint coordinates.",
+                  "work": "\\(\\overrightarrow{AB}=B-A=(-5-3,\\,11-2,\\,6-9).\\)"
                 },
                 {
-                  "explain": "Subtract A from C component by component.",
-                  "work": "\\(\\overrightarrow{AC}=C-A=(4-3,0-2,-8-9)=(1,-2,-17).\\)"
+                  "explain": "Subtract coordinate by coordinate to get the first vector.",
+                  "work": "\\(\\overrightarrow{AB}=(-8,9,-3).\\)"
+                },
+                {
+                  "explain": "Repeat the same subtraction for C.",
+                  "work": "\\(\\overrightarrow{AC}=C-A=(4-3,\\,0-2,\\,-8-9)=(1,-2,-17).\\)"
                 }
               ],
               "xp": 1,
@@ -600,12 +604,16 @@
               "hint": "Use \\(Area=\\frac12|AB||AC|\\sin(\\angle BAC)\\), using the angle found in the previous part.",
               "steps": [
                 {
-                  "explain": "Use the two side lengths from the vectors and the included angle.",
-                  "work": "\\(Area=\\frac12\\sqrt{154}\\sqrt{294}\\sin(83.25^\\circ).\\)"
+                  "explain": "Use the triangle area formula with two side lengths and their included angle.",
+                  "work": "\\(A=\\frac12|AB||AC|\\sin\\theta,\\quad |AB|=\\sqrt{154},~|AC|=\\sqrt{294},~\\theta\\approx83.25^\\circ.\\)"
+                },
+                {
+                  "explain": "Substitute the values from parts (i) and (ii).",
+                  "work": "\\(A=\\frac12\\sqrt{154}\\sqrt{294}\\sin(83.25^\\circ).\\)"
                 },
                 {
                   "explain": "Evaluate and round to the nearest square unit.",
-                  "work": "\\(Area\\approx105.7\\text{ square units}\\Rightarrow\\boxed{106\\text{ square units}}.\\)"
+                  "work": "\\(A\\approx105.7\\text{ units}^2\\quad\\Longrightarrow\\quad\\boxed{106\\text{ square units}}.\\)"
                 }
               ],
               "xp": 1,
@@ -1114,18 +1122,22 @@
           "hint": "Average the x-, y- and z-coordinates separately; keep the coordinate order \\((x,y,z)\\).",
           "steps": [
             {
-              "explain": "Read the coordinates of both endpoints from the diagram.",
-              "work": "\\(A=(0,5,20),\\quad B=(10,12,0).\\)",
+              "explain": "Read the endpoints in the stated coordinate order (x,y,z).",
+              "work": "\\(A=(0,5,20),\\qquad B=(10,12,0).\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Three-dimensional coordinate axes and points A and B\"><rect width=\"360\" height=\"250\" rx=\"10\" fill=\"white\"/><path d=\"M100 205 L190 160 M100 205 L275 205 M100 205 L100 35\" stroke=\"#475569\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"193\" y=\"158\">x</text><text x=\"281\" y=\"209\">y</text><text x=\"103\" y=\"31\">z</text><text x=\"86\" y=\"219\">O</text></g><path d=\"M100 205 L160 175 L256 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><path d=\"M100 205 L140 205 L140 105\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><circle cx=\"140\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><text x=\"147\" y=\"99\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">A</text><circle cx=\"256\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><text x=\"263\" y=\"169\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">B</text></svg>"
               }
             },
             {
-              "explain": "Highlight the two endpoints on the segment before averaging the matching coordinates.",
-              "work": "\\(M=\\left(\\frac{0+10}{2},\\frac{5+12}{2},\\frac{20+0}{2}\\right)=(5,8.5,10).\\)",
+              "explain": "The midpoint lies halfway along the segment, so average matching coordinates separately.",
+              "work": "\\(M=\\left(\\frac{x_A+x_B}{2},\\frac{y_A+y_B}{2},\\frac{z_A+z_B}{2}\\right).\\)",
               "figure": {
                 "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" role=\"img\" aria-label=\"Three-dimensional coordinate axes and points A and B\"><rect width=\"360\" height=\"250\" rx=\"10\" fill=\"white\"/><path d=\"M100 205 L190 160 M100 205 L275 205 M100 205 L100 35\" stroke=\"#475569\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"193\" y=\"158\">x</text><text x=\"281\" y=\"209\">y</text><text x=\"103\" y=\"31\">z</text><text x=\"86\" y=\"219\">O</text></g><path d=\"M100 205 L160 175 L256 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><path d=\"M100 205 L140 205 L140 105\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><circle cx=\"140\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><text x=\"147\" y=\"99\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">A</text><circle cx=\"256\" cy=\"175\" r=\"4\" fill=\"#ea580c\"/><text x=\"263\" y=\"169\" font-family=\"Arial\" font-size=\"13\" fill=\"#1e293b\">B</text><path d=\"M140 105L256 175\" stroke=\"#8b5cf6\" stroke-width=\"2.4\"/><circle cx=\"140\" cy=\"105\" r=\"5\" fill=\"#f97316\"/><circle cx=\"256\" cy=\"175\" r=\"5\" fill=\"#2563eb\"/><circle cx=\"198.0\" cy=\"140\" r=\"5\" fill=\"#16a34a\"/><text x=\"204.0\" y=\"134\" font-family=\"Arial\" font-size=\"12\" fill=\"#15803d\">M (5, 8.5, 10)</text></svg>"
               }
+            },
+            {
+              "explain": "Substitute the endpoint values and simplify each coordinate.",
+              "work": "\\(M=\\left(\\frac{0+10}{2},\\frac{5+12}{2},\\frac{20+0}{2}\\right)=(5,\\frac{17}{2},10)=\\boxed{(5,8.5,10)}.\\)"
             }
           ],
           "xp": 1,

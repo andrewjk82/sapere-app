@@ -111,20 +111,20 @@
           "hint": "Multiply the fraction inside the square root by \\(\\frac{5-x}{5-x}\\) so the denominator becomes \\(25-x^2\\).",
           "steps": [
             {
-              "explain": "Rationalise the expression under the square root.",
-              "work": "\\(\\sqrt{\\frac{5-x}{5+x}}=\\frac{5-x}{\\sqrt{25-x^2}}.\\)"
+              "explain": "Multiply the fraction inside the radical by (5−x)/(5−x). Since the integrand is real on its domain x≤5, the square root of (5−x)² is 5−x.",
+              "work": "\\(\\sqrt{\\frac{5-x}{5+x}}=\\sqrt{\\frac{(5-x)^2}{25-x^2}}=\\frac{5-x}{\\sqrt{25-x^2}}.\\)"
             },
             {
-              "explain": "Separate the numerator into terms with standard antiderivatives.",
+              "explain": "Split the numerator so each term matches a standard integral.",
               "work": "\\(\\int\\frac{5-x}{\\sqrt{25-x^2}}dx=5\\int\\frac{dx}{\\sqrt{25-x^2}}-\\int\\frac{x}{\\sqrt{25-x^2}}dx.\\)"
             },
             {
-              "explain": "Integrate each term.",
-              "work": "\\(5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C.\\)"
+              "explain": "Use the inverse-sine formula for the first integral. For the second, let u=25−x², so du=−2x dx.",
+              "work": "\\(5\\int\\frac{dx}{\\sqrt{25-x^2}}=5\\sin^{-1}\\left(\\frac{x}{5}\\right),\\quad-\\int\\frac{x}{\\sqrt{25-x^2}}dx=\\sqrt{25-x^2}.\\)"
             },
             {
-              "explain": "State the result.",
-              "work": "\\(\\boxed{5\\sin^{-1}(\\frac{x}{5})+\\sqrt{25-x^2}+C}.\\)"
+              "explain": "Combine the antiderivatives and include the constant.",
+              "work": "\\(\\boxed{5\\sin^{-1}\\left(\\frac{x}{5}\\right)+\\sqrt{25-x^2}+C}.\\)"
             }
           ],
           "xp": 1,
@@ -258,22 +258,22 @@
               "hint": "Differentiate for interior points 0<x<4. Then compare the endpoint function values.",
               "steps": [
                 {
-                  "explain": "Differentiate using the chain rule.",
-                  "work": "\\(f'(x)=-\\frac{1}{4\\sqrt{x}\\sqrt{2-\\sqrt{x}}}\\quad(0<x<4).\\)",
+                  "explain": "Differentiate the outer square root by the chain rule, then differentiate the inner 2−√x.",
+                  "work": "\\(f(x)=(2-\\sqrt{x})^{1/2},\\quad f'(x)=\\frac12(2-\\sqrt{x})^{-1/2}\\left(-\\frac1{2\\sqrt{x}}\\right).\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
                   }
                 },
                 {
-                  "explain": "The derivative is negative throughout the interior, so f decreases.",
-                  "work": "\\(f'(x)<0\\quad\\text{for }0<x<4.\\)",
+                  "explain": "Simplify the derivative and check its sign on the interior of the domain.",
+                  "work": "\\(f'(x)=-\\frac1{4\\sqrt{x}\\sqrt{2-\\sqrt{x}}}<0\\qquad(0<x<4).\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
                   }
                 },
                 {
-                  "explain": "Evaluate the endpoints to obtain the range.",
-                  "work": "\\(f(0)=\\sqrt2,\\quad f(4)=0\\Rightarrow\\boxed{0\\le f(x)\\le\\sqrt2}.\\)",
+                  "explain": "A negative derivative means f is decreasing. Evaluate both endpoints to get the greatest and least values.",
+                  "work": "\\(f(0)=\\sqrt2,\\qquad f(4)=0\\quad\\Longrightarrow\\quad\\boxed{0\\le f(x)\\le\\sqrt2}.\\)",
                   "figure": {
                     "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 210\" role=\"img\" aria-label=\"Decreasing graph of f(x)=sqrt(2-sqrt(x)) for x between 0 and 4\">\n    <rect width=\"320\" height=\"210\" rx=\"8\" fill=\"white\"/><path d=\"M45 165H285M70 185V30\" stroke=\"#64748b\" stroke-width=\"1.4\"/><g font-family=\"Arial\" font-size=\"11\" fill=\"#334155\"><text x=\"67\" y=\"183\">0</text><text x=\"261\" y=\"183\">4</text><text x=\"52\" y=\"50\">√2</text><text x=\"270\" y=\"169\">0</text><text x=\"287\" y=\"161\">x</text><text x=\"74\" y=\"28\">y</text></g></svg>"
                   }
@@ -422,12 +422,20 @@
           "hint": "Combine the two fractions over the common denominator \\(1-x^2=(1-x)(1+x)\\), then match the coefficient of \\(x\\).",
           "steps": [
             {
-              "explain": "Write the given partial fractions over one denominator.",
-              "work": "\\(\\frac{-1}{1+x}+\\frac{2}{1-x}=\\frac{-(1-x)+2(1+x)}{(1+x)(1-x)}=\\frac{3x+1}{1-x^2}.\\)"
+              "explain": "Use the common denominator \\(1-x^2=(1+x)(1-x)\\) to combine the two fractions.",
+              "work": "\\( -\\frac1{1+x}+\\frac2{1-x}=\\frac{-(1-x)+2(1+x)}{(1+x)(1-x)}.\\)"
             },
             {
-              "explain": "Match the numerator with \\(3x-A\\).",
-              "work": "\\(3x-A=3x+1\\quad\\Rightarrow\\quad -A=1\\quad\\Rightarrow\\quad A=-1.\\)"
+              "explain": "Expand the numerator carefully, keeping the negative sign before (1−x).",
+              "work": "\\(-(1-x)+2(1+x)=-1+x+2+2x=3x+1.\\)"
+            },
+            {
+              "explain": "So the combined expression has numerator 3x+1. Match it with the required numerator 3x−A.",
+              "work": "\\(\\frac{3x+1}{1-x^2}=\\frac{3x-A}{1-x^2}\\quad\\Longrightarrow\\quad3x-A=3x+1.\\)"
+            },
+            {
+              "explain": "Compare the constant terms and solve.",
+              "work": "\\(-A=1\\quad\\Longrightarrow\\quad\\boxed{A=-1}.\\)"
             }
           ],
           "xp": 1,
@@ -514,12 +522,16 @@
               "hint": "Multiply through by \\(x(\\pi-2x)\\), then compare the coefficient of x.",
               "steps": [
                 {
-                  "explain": "Clear the denominators.",
-                  "work": "\\(1=A(\\pi-2x)+Bx=A\\pi+(B-2A)x.\\)"
+                  "explain": "Multiply both sides by x(π−2x) to clear the denominators.",
+                  "work": "\\(1=A(\\pi-2x)+Bx.\\)"
                 },
                 {
-                  "explain": "The x coefficient must be zero.",
-                  "work": "\\(B-2A=0,\\quad B=2A=\\boxed{\\frac2\\pi}.\\)"
+                  "explain": "Expand and collect the constant term and x-term.",
+                  "work": "\\(1=A\\pi-2Ax+Bx=A\\pi+(B-2A)x.\\)"
+                },
+                {
+                  "explain": "Match coefficients with the constant polynomial 1, using A=1/π.",
+                  "work": "\\(A\\pi=1,\\qquad B-2A=0\\Rightarrow B=2A=\\boxed{\\frac2\\pi}.\\)"
                 }
               ],
               "xp": 1,
@@ -594,16 +606,20 @@
               "hint": "The substitution reverses the limits because du=−dx. Reverse them again to restore the interval from a to b.",
               "steps": [
                 {
-                  "explain": "Set the substitution and transform the differential.",
-                  "work": "\\(u=a+b-x,\\quad du=-dx.\\)"
+                  "explain": "Set u=a+b−x. Differentiate to find how the differential changes.",
+                  "work": "\\(u=a+b-x\\quad\\Longrightarrow\\quad du=-dx.\\)"
                 },
                 {
-                  "explain": "Transform both endpoints.",
-                  "work": "\\(x=a\\Rightarrow u=b,\\quad x=b\\Rightarrow u=a.\\)"
+                  "explain": "Transform both limits; the substitution reverses their order.",
+                  "work": "\\(x=a\\Rightarrow u=b,\\qquad x=b\\Rightarrow u=a.\\)"
                 },
                 {
-                  "explain": "Apply the change of variables and reverse the bounds.",
-                  "work": "\\(\\int_a^b f(x)dx=\\int_b^a f(u)(-du)=\\int_a^b f(u)du=\\int_a^b f(a+b-x)dx.\\)"
+                  "explain": "Substitute into the integral, then reverse the bounds to remove the negative sign.",
+                  "work": "\\(\\int_a^b f(x)\\,dx=\\int_b^a f(a+b-u)(-du)=\\int_a^b f(a+b-u)\\,du.\\)"
+                },
+                {
+                  "explain": "Rename the dummy variable u as x; this gives the required identity.",
+                  "work": "\\(\\boxed{\\int_a^b f(x)\\,dx=\\int_a^b f(a+b-x)\\,dx}.\\)"
                 }
               ],
               "xp": 1,
@@ -709,16 +725,16 @@
               "hint": "Complete the square in the radicand to get a constant minus a squared linear expression, then use the inverse-sine integral.",
               "steps": [
                 {
-                  "explain": "Complete the square.",
-                  "work": "\\(6-x^2-x=\\frac{25}{4}-(x+\\frac12)^2.\\)"
+                  "explain": "Complete the square: take half the coefficient of x, square it, and compensate by adding the same constant.",
+                  "work": "\\(6-x^2-x=-(x^2+x)+6=-\\left[(x+\\frac12)^2-\\frac14\\right]+6=\\frac{25}{4}-(x+\\frac12)^2.\\)"
                 },
                 {
-                  "explain": "Match the standard form and account for the inner derivative.",
+                  "explain": "Match the denominator to √(a²−u²), with a=5/2 and u=x+1/2. The derivative du/dx is 1, so no extra scale factor is needed.",
                   "work": "\\(\\int\\frac{dx}{\\sqrt{(5/2)^2-(x+1/2)^2}}=\\sin^{-1}\\left(\\frac{x+1/2}{5/2}\\right)+C.\\)"
                 },
                 {
-                  "explain": "Simplify the argument.",
-                  "work": "\\(\\boxed{\\sin^{-1}\\left(\\frac{2x+1}{5}\\right)+C}.\\)"
+                  "explain": "Simplify the inverse-sine argument.",
+                  "work": "\\(\\frac{x+1/2}{5/2}=\\frac{2x+1}{5}\\quad\\Longrightarrow\\quad\\boxed{\\sin^{-1}\\left(\\frac{2x+1}{5}\\right)+C}.\\)"
                 }
               ],
               "xp": 1,
@@ -972,12 +988,20 @@
           "hint": "Rearrange the derivative identity to make \\(\\cos^{-1}x\\) the subject, then integrate both sides.",
           "steps": [
             {
-              "explain": "Rearrange the supplied identity.",
-              "work": "\\(\\cos^{-1}x=\\frac{d}{dx}(x\\cos^{-1}x)+\\frac{x}{\\sqrt{1-x^2}}.\\)"
+              "explain": "Start with the supplied derivative identity and isolate arccos x.",
+              "work": "\\(\\frac{d}{dx}(x\\cos^{-1}x)=\\cos^{-1}x-\\frac{x}{\\sqrt{1-x^2}}\\quad\\Longrightarrow\\quad\\cos^{-1}x=\\frac{d}{dx}(x\\cos^{-1}x)+\\frac{x}{\\sqrt{1-x^2}}.\\)"
             },
             {
-              "explain": "Integrate term by term.",
-              "work": "\\(\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx+C.\\)"
+              "explain": "Integrate both sides with respect to x. The derivative term integrates back to its original function.",
+              "work": "\\(\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx.\\)"
+            },
+            {
+              "explain": "Evaluate the remaining integral using u=1−x², so du=−2x dx.",
+              "work": "\\(\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx=-\\frac12\\int u^{-1/2}du=-\\sqrt{u}=-\\sqrt{1-x^2}.\\)"
+            },
+            {
+              "explain": "Combine the terms and include the constant of integration.",
+              "work": "\\(\\boxed{\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x-\\sqrt{1-x^2}+C}.\\)"
             }
           ],
           "xp": 1,

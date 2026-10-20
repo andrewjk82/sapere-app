@@ -705,20 +705,20 @@
           "hint": "Use the sum condition to rewrite the left side as \\((b+c)(a+c)(a+b)\\). Apply \\(a+b\\ge2\\sqrt{ab}\\) to each pair.",
           "steps": [
             {
-              "explain": "Use a+b+c=1 to rewrite each factor.",
-              "work": "\\(1-a=b+c,\\quad1-b=a+c,\\quad1-c=a+b.\\)"
+              "explain": "Use a+b+c=1 to replace each 1−variable factor with the sum of the other two positive variables.",
+              "work": "\\(1-a=b+c,\\qquad1-b=a+c,\\qquad1-c=a+b.\\)"
             },
             {
-              "explain": "Apply AM-GM to the three positive pair sums.",
+              "explain": "For any positive pair, AM–GM gives the sum at least twice the geometric mean. Write this for all three pairs.",
               "work": "\\(a+b\\ge2\\sqrt{ab},\\quad b+c\\ge2\\sqrt{bc},\\quad c+a\\ge2\\sqrt{ca}.\\)"
             },
             {
-              "explain": "Multiply the inequalities; positivity preserves their directions.",
-              "work": "\\((a+b)(b+c)(c+a)\\ge8\\sqrt{a^2b^2c^2}=8abc.\\)"
+              "explain": "Multiply the three inequalities; all factors are positive, so the inequality direction is preserved.",
+              "work": "\\((a+b)(b+c)(c+a)\\ge(2\\sqrt{ab})(2\\sqrt{bc})(2\\sqrt{ca}).\\)"
             },
             {
-              "explain": "Replace the pair sums by the original factors.",
-              "work": "\\((1-a)(1-b)(1-c)\\ge8abc.\\)"
+              "explain": "Collect the factors under the radical and substitute the equal pair sums from step 1.",
+              "work": "\\((2\\sqrt{ab})(2\\sqrt{bc})(2\\sqrt{ca})=8\\sqrt{a^2b^2c^2}=8abc,\\quad(1-a)(1-b)(1-c)\\ge8abc.\\)"
             }
           ],
           "xp": 1,
@@ -759,16 +759,16 @@
               "hint": "Compare the denominators after noting \\(\\sqrt{k+1}>\\sqrt{k}\\).",
               "steps": [
                 {
-                  "explain": "Use k>0 to compare the square roots.",
-                  "work": "\\(\\sqrt{k+1}>\\sqrt{k}>0.\\)"
+                  "explain": "Since k>0, both square roots are defined and positive. Increasing the number under a square root increases its value.",
+                  "work": "\\(k+1>k>0\\quad\\Longrightarrow\\quad\\sqrt{k+1}>\\sqrt{k}>0.\\)"
                 },
                 {
-                  "explain": "Add √k to both sides of the first comparison.",
+                  "explain": "Add √k to each side to compare the complete denominators.",
                   "work": "\\(\\sqrt{k+1}+\\sqrt{k}>2\\sqrt{k}.\\)"
                 },
                 {
-                  "explain": "Take reciprocals of positive quantities and multiply by 2.",
-                  "work": "\\(\\frac{2}{\\sqrt{k+1}+\\sqrt{k}}<\\frac{2}{2\\sqrt{k}}=\\frac1{\\sqrt{k}}.\\)"
+                  "explain": "Both denominators are positive, so taking reciprocals reverses the inequality; multiplying by 2 keeps its direction.",
+                  "work": "\\(\\frac1{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{2\\sqrt{k}}\\quad\\Longrightarrow\\quad\\boxed{\\frac2{\\sqrt{k+1}+\\sqrt{k}}<\\frac1{\\sqrt{k}}}.\\)"
                 }
               ],
               "xp": 1,
@@ -1018,12 +1018,20 @@
           "hint": "Replace every occurrence of \\(n\\) by \\(k+1\\) in the statement you want to establish.",
           "steps": [
             {
-              "explain": "Write the statement with n replaced by k+1.",
-              "work": "\\((k+1)\\bigl(2(k+1)-1\\bigr)\\bigl(2(k+1)+1\\bigr).\\)"
+              "explain": "Let P(n)=n(2n−1)(2n+1) be divisible by 3. In the inductive step, substitute n=k+1 into the statement.",
+              "work": "\\(P(k+1)=(k+1)\\bigl(2(k+1)-1\\bigr)\\bigl(2(k+1)+1\\bigr).\\)"
             },
             {
-              "explain": "Simplify each factor.",
-              "work": "\\((k+1)(2k+1)(2k+3)\\text{ must be divisible by }3.\\)"
+              "explain": "Simplify each bracket before deciding which factor is divisible by 3.",
+              "work": "\\(P(k+1)=(k+1)(2k+1)(2k+3).\\)"
+            },
+            {
+              "explain": "Check the three possible remainders of k modulo 3; one factor is always a multiple of 3.",
+              "work": "\\(k\\equiv0:~2k+3\\equiv0;\\quad k\\equiv1:~2k+1\\equiv0;\\quad k\\equiv2:~k+1\\equiv0\\pmod3.\\)"
+            },
+            {
+              "explain": "Thus the displayed product is divisible by 3 for every integer k, which is the factor required in the induction step.",
+              "work": "\\(3\\mid(k+1)(2k+1)(2k+3)=P(k+1).\\)"
             }
           ],
           "xp": 1,
