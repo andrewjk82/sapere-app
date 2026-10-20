@@ -10,6 +10,14 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'fs';
 import { OLD_TO_NEW_TOPIC, OLD_TO_NEW_CHAPTER, migrateStudentIds } from '../../src/utils/ext2Renumber.js';
 import { CURRICULUM_DATA } from '../../src/constants/curriculumData.js';
 
+// The per-topic worksheets cut from the 2026 textbook (tools/hw-pdf/split_cambridge_ext2.py), uploaded to Drive as 'E2 Ch<code>.pdf'.
+const DRIVE_IDS = JSON.parse(readFileSync(new URL('./ext2DriveIds.json', import.meta.url), 'utf8'));
+const worksheetFile = (code) => (code.endsWith('R') ? `E2 Ch${code} Review.pdf` : code.endsWith('X') ? `E2 Ch${code} Appendix.pdf` : `E2 Ch${code}.pdf`);
+const worksheetUrl = (code) => {
+  const id = DRIVE_IDS[worksheetFile(code)];
+  return id ? `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(`https://drive.google.com/uc?export=download&id=${id}`)}` : null;
+};
+
 const APPLY = process.argv.includes('--apply');
 const MARK = 'cms6-2026';
 const dir = '/Users/andrewkim/Downloads/';
@@ -42,8 +50,7 @@ else {
     const out = { id: c.id, title: c.title, modules: c.topics.length };
     if (old?.cheatSheets) out.cheatSheets = old.cheatSheets;
     out.topics = c.topics.map((t) => {
-      const sources = (inverseTopic[t.id] || []).map((o) => oldTopics.get(o)).filter(Boolean);
-      const url = sources.map((s) => s.homeworkPdfUrl).find(Boolean);
+      const url = worksheetUrl(t.code);   // the new book's worksheet for this topic
       return { id: t.id, code: t.code, title: t.title, ...(url ? { homeworkPdfUrl: url } : {}) };
     });
     return out;
@@ -51,7 +58,7 @@ else {
   console.log('\nCURRICULUM DOC — new layout');
   for (const c of chapters) {
     console.log(` ${c.id} ${c.title}  (cheat sheets: ${c.cheatSheets?.length || 0})`);
-    for (const t of c.topics) console.log(`    ${t.id.padEnd(10)} ${t.title}${t.homeworkPdfUrl ? '   [worksheet kept]' : ''}`);
+    for (const t of c.topics) console.log(`    ${t.id.padEnd(10)} ${t.title}${t.homeworkPdfUrl ? '   [worksheet linked]' : ''}`);
   }
   if (APPLY) await ref.set({ ...live, chapters, layout: MARK, updatedAt: new Date().toISOString() });
 }
