@@ -4367,20 +4367,31 @@
           "type": "mc",
           "stem": "Find the area of the following shape.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 471 377\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q9.jpg\" x=\"0\" y=\"0\" width=\"471\" height=\"377\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 330\" style=\"max-width: 360px; width: 100%; height: auto; display: block; margin: 0 auto;\"><defs><marker id=\"arrow-dim\" markerWidth=\"6\" markerHeight=\"6\" refX=\"3\" refY=\"3\" orient=\"auto\"><path d=\"M1,1 L5,3 L1,5 Z\" fill=\"#1e293b\"/></marker></defs><g stroke=\"#cbd5e1\" stroke-width=\"1.2\"><line x1=\"40\" y1=\"45\" x2=\"292\" y2=\"45\"/><line x1=\"40\" y1=\"81\" x2=\"292\" y2=\"81\"/><line x1=\"40\" y1=\"117\" x2=\"292\" y2=\"117\"/><line x1=\"40\" y1=\"153\" x2=\"292\" y2=\"153\"/><line x1=\"40\" y1=\"189\" x2=\"292\" y2=\"189\"/><line x1=\"40\" y1=\"225\" x2=\"292\" y2=\"225\"/><line x1=\"40\" y1=\"261\" x2=\"292\" y2=\"261\"/><line x1=\"40\" y1=\"297\" x2=\"292\" y2=\"297\"/><line x1=\"40\" y1=\"45\" x2=\"40\" y2=\"297\"/><line x1=\"76\" y1=\"45\" x2=\"76\" y2=\"297\"/><line x1=\"112\" y1=\"45\" x2=\"112\" y2=\"297\"/><line x1=\"148\" y1=\"45\" x2=\"148\" y2=\"297\"/><line x1=\"184\" y1=\"45\" x2=\"184\" y2=\"297\"/><line x1=\"220\" y1=\"45\" x2=\"220\" y2=\"297\"/><line x1=\"256\" y1=\"45\" x2=\"256\" y2=\"297\"/><line x1=\"292\" y1=\"45\" x2=\"292\" y2=\"297\"/></g><g stroke=\"#1e293b\" stroke-width=\"1.2\"><line x1=\"259\" y1=\"30\" x2=\"289\" y2=\"30\" marker-start=\"url(#arrow-dim)\" marker-end=\"url(#arrow-dim)\"/><line x1=\"307\" y1=\"48\" x2=\"307\" y2=\"78\" marker-start=\"url(#arrow-dim)\" marker-end=\"url(#arrow-dim)\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"274\" y=\"22\" text-anchor=\"middle\">3 cm</text><text x=\"317\" y=\"67\" alignment-baseline=\"middle\">3 cm</text></g><polygon points=\"40,81 76,81 148,153 220,81 292,153 256,189 292,297 148,189 112,225 76,189 40,153 76,117\" fill=\"rgba(59, 130, 246, 0.08)\" stroke=\"#0f172a\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"76\" y1=\"45\" x2=\"76\" y2=\"81\" stroke=\"#0f172a\" stroke-width=\"2.6\"/></svg>"
           },
           "options": [
-            "\\(150.5\\ cm^2\\)",
-            "\\(160.5\\ cm^2\\)",
-            "\\(175.5\\ cm^2\\)",
-            "\\(166.5\\ cm^2\\)",
-            "\\(180.5\\ cm^2\\)"
+            "\\(150.5\\text{ cm}^2\\)",
+            "\\(160.5\\text{ cm}^2\\)",
+            "\\(175.5\\text{ cm}^2\\)",
+            "\\(166.5\\text{ cm}^2\\)",
+            "\\(180.5\\text{ cm}^2\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(\\{6.5 + 5 + 2.5 + (\\frac{12}{2} - \\frac{3}{2})\\} \\times (3 \\times 3) = 166.5cm^2\\)</p></div>"
+              "explain": "Calculate the area of a single grid square",
+              "work": "<p>Each grid square has dimensions \\(3\\text{ cm} \\times 3\\text{ cm}\\):</p><p>\\[\\text{Area of 1 square unit} = 3\\text{ cm} \\times 3\\text{ cm} = 9\\text{ cm}^2\\]</p>"
+            },
+            {
+              "explain": "Count the number of square units covered by the polygon",
+              "work": "<p>By decomposing the polygon into triangles and rectangles (or using Pick's theorem / coordinates):</p><ul><li>Left section (columns 0–2): \\(4.5\\) square units</li><li>Center V-notch section (columns 2–5): \\(6.5\\) square units</li><li>Right wing section (columns 5–7): \\(2.5\\) square units</li><li>Lower large triangle (columns 3–7, rows 4–7): \\(5\\) square units</li></ul><p>\\[\\text{Total square units} = 4.5 + 6.5 + 2.5 + 5 = 18.5\\text{ units}^2\\]</p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 370 330\" style=\"max-width: 360px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#cbd5e1\" stroke-width=\"1.2\"><line x1=\"40\" y1=\"45\" x2=\"292\" y2=\"45\"/><line x1=\"40\" y1=\"81\" x2=\"292\" y2=\"81\"/><line x1=\"40\" y1=\"117\" x2=\"292\" y2=\"117\"/><line x1=\"40\" y1=\"153\" x2=\"292\" y2=\"153\"/><line x1=\"40\" y1=\"189\" x2=\"292\" y2=\"189\"/><line x1=\"40\" y1=\"225\" x2=\"292\" y2=\"225\"/><line x1=\"40\" y1=\"261\" x2=\"292\" y2=\"261\"/><line x1=\"40\" y1=\"297\" x2=\"292\" y2=\"297\"/><line x1=\"40\" y1=\"45\" x2=\"40\" y2=\"297\"/><line x1=\"76\" y1=\"45\" x2=\"76\" y2=\"297\"/><line x1=\"112\" y1=\"45\" x2=\"112\" y2=\"297\"/><line x1=\"148\" y1=\"45\" x2=\"148\" y2=\"297\"/><line x1=\"184\" y1=\"45\" x2=\"184\" y2=\"297\"/><line x1=\"220\" y1=\"45\" x2=\"220\" y2=\"297\"/><line x1=\"256\" y1=\"45\" x2=\"256\" y2=\"297\"/><line x1=\"292\" y1=\"45\" x2=\"292\" y2=\"297\"/></g><polygon points=\"40,81 76,81 148,153 220,81 292,153 256,189 292,297 148,189 112,225 76,189 40,153 76,117\" fill=\"rgba(2, 132, 199, 0.15)\" stroke=\"#0284c7\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><line x1=\"76\" y1=\"45\" x2=\"76\" y2=\"81\" stroke=\"#0284c7\" stroke-width=\"2.6\"/><g font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#0369a1\" text-anchor=\"middle\"><text x=\"94\" y=\"158\">4.5</text><text x=\"184\" y=\"145\">6.5</text><text x=\"262\" y=\"150\">2.5</text><text x=\"215\" y=\"235\">5.0</text></g><rect x=\"40\" y=\"8\" width=\"252\" height=\"28\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.5\"/><text x=\"166\" y=\"27\" font-family=\"system-ui, sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#15803d\" text-anchor=\"middle\">Total = 4.5 + 6.5 + 2.5 + 5.0 = 18.5 squares</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert square units to square centimetres",
+              "work": "<p>Multiply the number of grid squares by the area of one square:</p><p>\\[\\text{Total Area} = 18.5 \\times 9\\text{ cm}^2 = \\mathbf{166.5\\text{ cm}^2}\\]</p>"
             }
           ],
           "meta": {
@@ -4610,20 +4621,27 @@
           "type": "mc",
           "stem": "Calculate the size of angle Y.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 283\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q19.jpg\" x=\"0\" y=\"0\" width=\"360\" height=\"283\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 310\" style=\"max-width: 320px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"none\"><line x1=\"30\" y1=\"20\" x2=\"30\" y2=\"140\"/><line x1=\"30\" y1=\"140\" x2=\"280\" y2=\"140\"/><line x1=\"30\" y1=\"20\" x2=\"300\" y2=\"290\"/><line x1=\"280\" y1=\"140\" x2=\"300\" y2=\"290\"/><polyline points=\"30,126 44,126 44,140\" stroke-width=\"1.4\"/><path d=\"M30,55 A35,35 0 0,0 55,45\" stroke-width=\"1.4\"/><path d=\"M136,126 A20,20 0 0,1 170,140\" stroke-width=\"1.6\"/><path d=\"M250,140 A30,30 0 0,0 282,156\" stroke-width=\"1.4\"/></g><g font-family=\"system-ui, sans-serif\" fill=\"#0f172a\"><text x=\"38\" y=\"72\" font-size=\"14\" font-weight=\"600\">45°</text><text x=\"153\" y=\"116\" font-size=\"16\" font-weight=\"700\">Y</text><text x=\"240\" y=\"182\" font-size=\"14\" font-weight=\"600\">60°</text></g></svg>"
           },
           "options": [
-            "105°",
-            "115°",
-            "125°",
-            "135°",
-            "145°"
+            "\\(105^\\circ\\)",
+            "\\(115^\\circ\\)",
+            "\\(125^\\circ\\)",
+            "\\(135^\\circ\\)",
+            "\\(145^\\circ\\)"
           ],
           "answer": 3,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(180 - 45 = 135\\)</p></div>"
+              "explain": "Find the third angle inside the left right-angled triangle",
+              "work": "<p>In the left right-angled triangle, the sum of interior angles is \\(180^\\circ\\):</p><p>\\[90^\\circ + 45^\\circ + \\theta = 180^\\circ\\]</p><p>\\[\\theta = 180^\\circ - 135^\\circ = 45^\\circ\\]</p><p>So the interior angle at the intersection point is \\(45^\\circ\\).</p>"
+            },
+            {
+              "explain": "Use the straight-line angle property to find angle Y",
+              "work": "<p>The horizontal line is a straight line, which forms an angle of \\(180^\\circ\\). Angle \\(Y\\) and the interior angle \\(45^\\circ\\) form a supplementary linear pair:</p><p>\\[Y + 45^\\circ = 180^\\circ\\]</p><p>\\[Y = 180^\\circ - 45^\\circ = \\mathbf{135^\\circ}\\]</p><p><em>(Note: The \\(60^\\circ\\) angle in the right triangle is extra information and is not required to solve for \\(Y\\).)</em></p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 310\" style=\"max-width: 320px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"30,20 30,140 150,140\" fill=\"rgba(2, 132, 199, 0.12)\" stroke=\"#0284c7\" stroke-width=\"1.8\"/><g stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"none\"><line x1=\"150\" y1=\"140\" x2=\"280\" y2=\"140\" stroke=\"#dc2626\" stroke-width=\"2.4\"/><line x1=\"150\" y1=\"140\" x2=\"300\" y2=\"290\"/><line x1=\"280\" y1=\"140\" x2=\"300\" y2=\"290\"/><polyline points=\"30,126 44,126 44,140\" stroke-width=\"1.4\"/><path d=\"M30,55 A35,35 0 0,0 55,45\" stroke-width=\"1.4\"/><path d=\"M125,140 A25,25 0 0,1 143,133\" stroke=\"#0284c7\" stroke-width=\"2\"/><path d=\"M136,126 A20,20 0 0,1 170,140\" stroke=\"#dc2626\" stroke-width=\"2.4\" fill=\"rgba(220, 38, 38, 0.15)\"/><path d=\"M250,140 A30,30 0 0,0 282,156\" stroke-width=\"1.4\"/></g><g font-family=\"system-ui, sans-serif\" fill=\"#0f172a\"><text x=\"38\" y=\"72\" font-size=\"14\" font-weight=\"600\">45°</text><text x=\"108\" y=\"135\" font-size=\"12\" font-weight=\"700\" fill=\"#0284c7\">45°</text><text x=\"153\" y=\"116\" font-size=\"16\" font-weight=\"700\" fill=\"#dc2626\">Y = 135°</text><text x=\"240\" y=\"182\" font-size=\"14\" font-weight=\"600\">60°</text></g><rect x=\"40\" y=\"270\" width=\"260\" height=\"28\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/><text x=\"170\" y=\"289\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"700\" fill=\"#dc2626\" text-anchor=\"middle\">Y = 180° − 45° = 135°</text></svg>"
+              }
             }
           ],
           "meta": {
@@ -4637,20 +4655,31 @@
           "type": "mc",
           "stem": "Find the value of ★.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 354 272\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q20.jpg\" x=\"0\" y=\"0\" width=\"354\" height=\"272\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 270 240\" style=\"max-width: 270px; width: 100%; height: auto; display: block; margin: 0 auto;\"><rect x=\"20\" y=\"15\" width=\"176\" height=\"176\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.8\"/><g stroke=\"#64748b\" stroke-width=\"1.2\"><line x1=\"20\" y1=\"59\" x2=\"196\" y2=\"59\"/><line x1=\"20\" y1=\"103\" x2=\"196\" y2=\"103\"/><line x1=\"20\" y1=\"147\" x2=\"196\" y2=\"147\"/><line x1=\"64\" y1=\"15\" x2=\"64\" y2=\"191\"/><line x1=\"108\" y1=\"15\" x2=\"108\" y2=\"191\"/><line x1=\"152\" y1=\"15\" x2=\"152\" y2=\"191\"/></g><g fill=\"#0f172a\"><circle cx=\"42\" cy=\"37\" r=\"9.5\"/><polygon points=\"108,27 98,47 118,47\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"152.0,26.0 154.6,33.4 162.5,33.6 156.3,38.4 158.5,45.9 152.0,41.5 145.5,45.9 147.7,38.4 141.5,33.6 149.4,33.4\"/><polygon points=\"196,27 186,47 206,47\" transform=\"translate(-22,0)\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"32\" y=\"71\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"86\" cy=\"81\" r=\"9.5\"/><rect x=\"120\" y=\"71\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"164\" y=\"71\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"42\" cy=\"125\" r=\"9.5\"/><polygon points=\"86,115 76,135 96,135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><polygon points=\"130,115 120,135 140,135\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"174\" cy=\"125\" r=\"9.5\"/><polygon points=\"42,159 32,179 52,179\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><circle cx=\"86\" cy=\"169\" r=\"9.5\"/><rect x=\"120\" y=\"159\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/><rect x=\"164\" y=\"159\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"#0f172a\" stroke-width=\"1.8\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"212\" y=\"42\">25</text><text x=\"212\" y=\"86\">28</text><text x=\"212\" y=\"130\">20</text><text x=\"212\" y=\"174\">26</text><text x=\"42\" y=\"214\" text-anchor=\"middle\">22</text><text x=\"86\" y=\"214\" text-anchor=\"middle\">20</text><text x=\"130\" y=\"214\" text-anchor=\"middle\">31</text><text x=\"174\" y=\"214\" text-anchor=\"middle\">26</text></g></svg>"
           },
           "options": [
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(11\\)"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>□=8, △=6, ●=4</p></div>"
+              "explain": "Find the combined value of ● and △ using Row 3",
+              "work": "<p>Look at <strong>Row 3</strong>, which consists only of ● and △:</p><p>\\[2 \\times ● + 2 \\times △ = 20 \\implies ● + △ = 10\\]</p>"
+            },
+            {
+              "explain": "Find the values of □, ●, and △ using Column 1 and Row 2",
+              "work": "<p>In <strong>Column 1</strong>: \\[2 \\times ● + △ + □ = 22\\]</p><p>Since \\(● + △ = 10\\), we have \\(● + □ + 10 = 22 \\implies ● + □ = 12\\), so \\(● = 12 - □\\).</p><p>In <strong>Row 2</strong>: \\[3 \\times □ + ● = 28\\]</p><p>Substitute \\(● = 12 - □\\):</p><p>\\[3 \\times □ + (12 - □) = 28 \\implies 2 \\times □ + 12 = 28 \\implies 2 \\times □ = 16 \\implies \\mathbf{□ = 8}\\]</p><p>Then find ● and △:</p><p>\\[● = 12 - 8 = \\mathbf{4}\\]</p><p>\\[△ = 10 - 4 = \\mathbf{6}\\]</p>"
+            },
+            {
+              "explain": "Calculate the value of ★ using Row 1",
+              "work": "<p>Substitute the known values \\(● = 4\\) and \\(△ = 6\\) into <strong>Row 1</strong>:</p><p>\\[● + △ + ★ + △ = 25\\]</p><p>\\[4 + 6 + ★ + 6 = 25\\]</p><p>\\[16 + ★ = 25 \\implies ★ = 25 - 16 = \\mathbf{9}\\]</p><p><em>(Check with Column 3: \\(9 + 2(8) + 6 = 9 + 16 + 6 = 31\\), which matches.)</em></p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 125\" style=\"max-width: 420px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g transform=\"translate(15, 15)\"><rect x=\"0\" y=\"0\" width=\"85\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><circle cx=\"42\" cy=\"35\" r=\"10\" fill=\"#1e293b\"/><text x=\"42\" y=\"72\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">= 4</text></g><g transform=\"translate(115, 15)\"><rect x=\"0\" y=\"0\" width=\"85\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><polygon points=\"42,22 30,44 54,44\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"42\" y=\"72\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">= 6</text></g><g transform=\"translate(215, 15)\"><rect x=\"0\" y=\"0\" width=\"85\" height=\"90\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><rect x=\"30\" y=\"22\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\"/><text x=\"42\" y=\"72\" font-family=\"system-ui, sans-serif\" font-size=\"18\" font-weight=\"800\" fill=\"#0f172a\" text-anchor=\"middle\">= 8</text></g><g transform=\"translate(315, 15)\"><rect x=\"0\" y=\"0\" width=\"90\" height=\"90\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"2\"/><polygon points=\"45.0,20.0 47.6,27.4 55.5,27.6 49.3,32.4 51.5,39.9 45.0,35.5 38.5,39.9 40.7,32.4 34.5,27.6 42.4,27.4\" fill=\"#2563eb\"/><text x=\"45\" y=\"72\" font-family=\"system-ui, sans-serif\" font-size=\"22\" font-weight=\"800\" fill=\"#1d4ed8\" text-anchor=\"middle\">= 9</text></g></svg>"
+              }
             }
           ],
           "meta": {
@@ -4688,21 +4717,30 @@
           "type": "mc",
           "stem": "Small cubes have been assembled to build this 3D shape. It has then been completely painted on all sides.\n\nHow many cubes have only three of its faces painted?",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 227 119\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q22.jpg\" x=\"0\" y=\"0\" width=\"227\" height=\"119\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 155\" style=\"max-width: 270px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"30,27 43,14 77,14 64,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,27 64,27 64,61 30,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,27 77,14 111,14 98,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,27 98,27 98,61 64,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,27 111,14 145,14 132,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,27 132,27 132,61 98,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,27 145,14 179,14 166,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,27 179,14 179,48 166,61\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,27 166,27 166,61 132,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,61 64,61 64,95 30,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,61 98,61 98,95 64,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,61 132,61 132,95 98,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,61 166,61 166,95 132,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,61 179,48 213,48 200,61\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,61 200,61 200,95 166,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"200,61 213,48 247,48 234,61\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"234,61 247,48 247,82 234,95\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"200,61 234,61 234,95 200,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,95 64,95 64,129 30,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,95 98,95 98,129 64,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,95 145,82 145,116 132,129\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,95 132,95 132,129 98,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>"
           },
           "options": [
-            "4",
-            "5",
-            "6",
-            "7",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)",
             "None of these"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Explanation",
+              "explain": "Analyze painted faces of a single-layer cube structure",
+              "work": "<p>The 3D shape is <strong>1 cube deep</strong> (consisting of \\(13\\) unit cubes in total). Because the entire outside is painted:</p><ul><li>Every cube has its <strong>front face</strong> painted.</li><li>Every cube has its <strong>back face</strong> painted.</li></ul><p>Therefore, every cube already has at least \\(2\\) painted faces.</p>"
+            },
+            {
+              "explain": "Identify the condition for exactly three painted faces",
+              "work": "<p>For a cube to have <strong>only 3 painted faces</strong>, it must have exactly <strong>1 additional face</strong> exposed (from top, bottom, left, or right).</p><p>This means the cube must touch other cubes on <strong>3 of its 4 side edges</strong>, leaving exactly one outer edge exposed.</p>"
+            },
+            {
+              "explain": "Count the qualifying cubes row by row",
+              "work": "<p>Checking each row:</p><ul><li><strong>Top row (4 cubes):</strong> The 2nd and 3rd cubes from the left are surrounded on the left, right, and bottom (only their top face is exposed) \\(\rightarrow\\) <strong>2 cubes</strong>.</li><li><strong>Middle row (6 cubes):</strong> The 1st cube on the left is surrounded on top, right, and bottom (only left exposed). The 4th cube from the left is surrounded on top, left, and right (only bottom exposed) \\(\rightarrow\\) <strong>2 cubes</strong>.</li><li><strong>Bottom row (3 cubes):</strong> The 2nd cube from the left is surrounded on the left, top, and right (only bottom exposed) \\(\rightarrow\\) <strong>1 cube</strong>.</li></ul><p>\\[\text{Total} = 2 + 2 + 1 = \\mathbf{5\text{ cubes}}\\]</p>",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 244 130\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q22-expl.jpg\" x=\"0\" y=\"0\" width=\"244\" height=\"130\"/></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 158\" style=\"max-width: 270px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"30,27 43,14 77,14 64,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,27 64,27 64,61 30,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,27 77,14 111,14 98,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,27 98,27 98,61 64,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,27 111,14 145,14 132,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,27 132,27 132,61 98,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,27 145,14 179,14 166,27\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,27 179,14 179,48 166,61\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,27 166,27 166,61 132,61\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,61 64,61 64,95 30,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,61 98,61 98,95 64,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,61 132,61 132,95 98,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,61 166,61 166,95 132,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,61 179,48 213,48 200,61\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"166,61 200,61 200,95 166,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"200,61 213,48 247,48 234,61\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"234,61 247,48 247,82 234,95\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"200,61 234,61 234,95 200,95\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"30,95 64,95 64,129 30,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"64,95 98,95 98,129 64,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"132,95 145,82 145,116 132,129\" fill=\"#cbd5e1\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/> <polygon points=\"98,95 132,95 132,129 98,129\" fill=\"#ffffff\" stroke=\"#1e293b\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><circle cx=\"47.0\" cy=\"78.0\" r=\"6\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.8\"/> <circle cx=\"81.0\" cy=\"112.0\" r=\"6\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.8\"/> <circle cx=\"81.0\" cy=\"44.0\" r=\"6\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.8\"/> <circle cx=\"115.0\" cy=\"44.0\" r=\"6\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.8\"/> <circle cx=\"149.0\" cy=\"78.0\" r=\"6\" fill=\"#ef4444\" stroke=\"#ffffff\" stroke-width=\"1.8\"/><rect x=\"40\" y=\"128\" width=\"200\" height=\"24\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#fca5a5\" stroke-width=\"1.2\"/><text x=\"140\" y=\"144\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#dc2626\" text-anchor=\"middle\">Total = 5 cubes (marked in red)</text></svg>"
               }
             }
           ],
@@ -4768,7 +4806,7 @@
           "type": "multipart",
           "stem": "Questions 25 and 26 refer to the following graph.\n\nThe pie graph shows Year 6 students' favourite snack foods. Each student only picked one favourite.",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 793 471\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q25-26.jpg\" x=\"0\" y=\"0\" width=\"793\" height=\"471\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" style=\"max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto;\"><path d=\"M180,160 L180.0,45.0 A115,115 0 0,1 289.4,124.5 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L289.4,124.5 A115,115 0 0,1 131.0,264.1 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L131.0,264.1 A115,115 0 0,1 79.2,215.4 Z\" fill=\"#ffffff\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L79.2,215.4 A115,115 0 0,1 144.5,50.6 Z\" fill=\"#f1f5f9\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L144.5,50.6 A115,115 0 0,1 180.0,45.0 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/><text x=\"223.9\" y=\"99.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"223.9\" dy=\"-2\">Chips</tspan><tspan x=\"223.9\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">40</tspan></text> <text x=\"229.4\" y=\"216.1\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"229.4\" dy=\"-2\">Lollies</tspan><tspan x=\"229.4\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">74</tspan></text> <text x=\"128.8\" y=\"214.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"128.8\" dy=\"-2\">Popcorn</tspan><tspan x=\"128.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">36°</tspan></text> <text x=\"110.5\" y=\"132.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"110.5\" dy=\"-2\">Chocolate</tspan><tspan x=\"110.5\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">28%</tspan></text> <text x=\"158.8\" y=\"26.0\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"158.8\" dy=\"-2\">Soft Drink</tspan><tspan x=\"158.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">10</tspan></text></svg>"
           },
           "parts": [
             {
@@ -4776,17 +4814,28 @@
               "type": "mc",
               "stem": "How many Year 6 students were surveyed altogether?",
               "options": [
-                "180",
-                "230",
-                "200",
-                "210",
-                "250"
+                "\\(180\\)",
+                "\\(230\\)",
+                "\\(200\\)",
+                "\\(210\\)",
+                "\\(250\\)"
               ],
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>Soft drink + chips + lollies = 124</p><p>36 degrees = 10%</p><p>Chocolate + Popcorn = 38%</p><p>\\(124 = 62\\%\\)</p><p>\\(1\\% = 2\\)</p><p>Total number of students = 200</p></div>"
+                  "explain": "Calculate the combined percentage for Popcorn and Chocolate",
+                  "work": "<p>First convert the angle for <strong>Popcorn</strong> to a percentage:</p><p>\\[\text{Popcorn} = \frac{36^\\circ}{360^\\circ} \times 100\\% = 10\\%\\]</p><p><strong>Chocolate</strong> is given as \\(28\\%\\). Combined:</p><p>\\[\text{Popcorn} + \text{Chocolate} = 10\\% + 28\\% = 38\\%\\]</p>"
+                },
+                {
+                  "explain": "Find the percentage represented by the remaining snack categories",
+                  "work": "<p>The remaining categories are Soft Drink, Chips, and Lollies:</p><p>\\[\text{Percentage} = 100\\% - 38\\% = 62\\%\\]</p>"
+                },
+                {
+                  "explain": "Sum the known student counts and calculate total students",
+                  "work": "<p>Sum the student numbers for Soft Drink, Chips, and Lollies:</p><p>\\[10 + 40 + 74 = 124\text{ students}\\]</p><p>Since \\(124\text{ students}\\) represents \\(62\\%\\) of the total:</p><p>\\[1\\% = \frac{124}{62} = 2\text{ students}\\]</p><p>\\[\text{Total students (100\\%)} = 2 \times 100 = \\mathbf{200\text{ students}}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 325\" style=\"max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto;\"><path d=\"M180,160 L180.0,45.0 A115,115 0 0,1 289.4,124.5 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L289.4,124.5 A115,115 0 0,1 131.0,264.1 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L131.0,264.1 A115,115 0 0,1 79.2,215.4 Z\" fill=\"#fef2f2\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L79.2,215.4 A115,115 0 0,1 144.5,50.6 Z\" fill=\"#fef2f2\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L144.5,50.6 A115,115 0 0,1 180.0,45.0 Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.4\"/><text x=\"223.9\" y=\"99.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"223.9\" dy=\"-2\">Chips</tspan><tspan x=\"223.9\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">40</tspan></text> <text x=\"229.4\" y=\"216.1\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"229.4\" dy=\"-2\">Lollies</tspan><tspan x=\"229.4\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">74</tspan></text> <text x=\"128.8\" y=\"214.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"128.8\" dy=\"-2\">Popcorn</tspan><tspan x=\"128.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">36°</tspan></text> <text x=\"110.5\" y=\"132.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"110.5\" dy=\"-2\">Chocolate</tspan><tspan x=\"110.5\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">28%</tspan></text> <text x=\"158.8\" y=\"26.0\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"158.8\" dy=\"-2\">Soft Drink</tspan><tspan x=\"158.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">10</tspan></text><rect x=\"30\" y=\"290\" width=\"300\" height=\"24\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"180\" y=\"306\" font-family=\"system-ui, sans-serif\" font-size=\"11.5\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">124 students = 62%  →  Total = 200 students</text></svg>"
+                  }
                 }
               ]
             },
@@ -4795,17 +4844,24 @@
               "type": "mc",
               "stem": "What percentage of Year 6 students like Lollies the best?",
               "options": [
-                "74%",
-                "48%",
-                "42%",
-                "40%",
-                "37%"
+                "\\(74\\%\\)",
+                "\\(48\\%\\)",
+                "\\(42\\%\\)",
+                "\\(40\\%\\)",
+                "\\(37\\%\\)"
               ],
               "answer": 4,
               "steps": [
                 {
-                  "explain": "Explanation",
-                  "work": "<div style=\"text-align: left;\"><p>74 divided by 200 = 37%</p></div>"
+                  "explain": "Identify the number of students who chose Lollies",
+                  "work": "<p>From the pie chart, the number of students whose favourite snack is <strong>Lollies</strong> is \\(74\\).</p>"
+                },
+                {
+                  "explain": "Calculate the percentage out of the total students surveyed",
+                  "work": "<p>From Part 25, the total number of students surveyed is \\(200\\):</p><p>\\[\text{Percentage} = \frac{74}{200} \times 100\\% = \frac{37}{100} \times 100\\% = \\mathbf{37\\%}\\]</p>",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 325\" style=\"max-width: 340px; width: 100%; height: auto; display: block; margin: 0 auto;\"><path d=\"M180,160 L180.0,45.0 A115,115 0 0,1 289.4,124.5 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L289.4,124.5 A115,115 0 0,1 131.0,264.1 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L131.0,264.1 A115,115 0 0,1 79.2,215.4 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L79.2,215.4 A115,115 0 0,1 144.5,50.6 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/> <path d=\"M180,160 L144.5,50.6 A115,115 0 0,1 180.0,45.0 Z\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"1.4\"/><text x=\"223.9\" y=\"99.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"223.9\" dy=\"-2\">Chips</tspan><tspan x=\"223.9\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">40</tspan></text> <text x=\"229.4\" y=\"216.1\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"229.4\" dy=\"-2\">Lollies</tspan><tspan x=\"229.4\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">74</tspan></text> <text x=\"128.8\" y=\"214.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"128.8\" dy=\"-2\">Popcorn</tspan><tspan x=\"128.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">36°</tspan></text> <text x=\"110.5\" y=\"132.5\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"110.5\" dy=\"-2\">Chocolate</tspan><tspan x=\"110.5\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">28%</tspan></text> <text x=\"158.8\" y=\"26.0\" font-family=\"system-ui, sans-serif\" font-size=\"12.5\" font-weight=\"600\" fill=\"#0f172a\" text-anchor=\"middle\"><tspan x=\"158.8\" dy=\"-2\">Soft Drink</tspan><tspan x=\"158.8\" dy=\"15\" font-size=\"11.5\" fill=\"#475569\">10</tspan></text><rect x=\"50\" y=\"290\" width=\"260\" height=\"24\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#93c5fd\" stroke-width=\"1.2\"/><text x=\"180\" y=\"306\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" text-anchor=\"middle\">Lollies: 74 / 200 = 37%</text></svg>"
+                  }
                 }
               ]
             }
@@ -4944,20 +5000,31 @@
           "type": "mc",
           "stem": "A certain garden has a path built around it. How long is the path? (Note: they are both parallelograms)",
           "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 553 210\" width=\"100%\" height=\"auto\"><image href=\"/selective/t5-q32.jpg\" x=\"0\" y=\"0\" width=\"553\" height=\"210\"/></svg>"
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 185\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><g stroke=\"#1e293b\" stroke-width=\"1.8\" fill=\"none\" stroke-linejoin=\"round\"><polygon points=\"40,140 210,140 230,50 60,50\"/><polygon points=\"210,140 310,140 324.3,75.7 224.3,75.7\"/></g><g font-family=\"system-ui, sans-serif\" font-size=\"13.5\" font-weight=\"600\" fill=\"#0f172a\"><text x=\"125\" y=\"162\" text-anchor=\"middle\">17 cm</text><text x=\"260\" y=\"162\" text-anchor=\"middle\">10 cm</text><text x=\"198\" y=\"98\" text-anchor=\"end\">7 cm</text><text x=\"332\" y=\"112\" text-anchor=\"start\">5 cm</text></g></svg>"
           },
           "options": [
-            "68 cm",
-            "86 cm",
-            "64 cm",
-            "69 cm",
-            "79 cm"
+            "\\(68\\text{ cm}\\)",
+            "\\(86\\text{ cm}\\)",
+            "\\(64\\text{ cm}\\)",
+            "\\(69\\text{ cm}\\)",
+            "\\(79\\text{ cm}\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Explanation",
-              "work": "<div style=\"text-align: left;\"><p>\\(27 \\times 2 + 7 \\times 2 =68\\)</p></div>"
+              "explain": "Calculate the total length of the horizontal edges",
+              "work": "<p>Opposite sides of a parallelogram are equal:</p><ul><li><strong>Bottom path:</strong> \\(17\\text{ cm} + 10\\text{ cm} = 27\\text{ cm}\\)</li><li><strong>Top path:</strong> \\(17\\text{ cm} + 10\\text{ cm} = 27\\text{ cm}\\)</li></ul><p>\\[\\text{Horizontal Length} = 27\\text{ cm} + 27\\text{ cm} = 54\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Calculate the total length of the slanted outer edges",
+              "work": "<p>For the slanted sides:</p><ul><li>Left outer slanted side: \\(7\\text{ cm}\\)</li><li>Right outer slanted side: \\(5\\text{ cm}\\)</li><li>Step where the large parallelogram extends above the small one: \\(7\\text{ cm} - 5\\text{ cm} = 2\\text{ cm}\\)</li></ul><p>\\[\\text{Slanted Length} = 7\\text{ cm} + 5\\text{ cm} + 2\\text{ cm} = 14\\text{ cm}\\]</p>"
+            },
+            {
+              "explain": "Sum all outer edges to find the total perimeter of the path",
+              "work": "<p>Add the horizontal and slanted components together:</p><p>\\[\\text{Total Path Length} = 54\\text{ cm} + 14\\text{ cm} = \\mathbf{68\\text{ cm}}\\]</p><p><em>(Equivalent formula: \\(2 \\times (17 + 10) + 2 \\times 7 = 54 + 14 = 68\\text{ cm}\\))</em></p>",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 380 205\" style=\"max-width: 380px; width: 100%; height: auto; display: block; margin: 0 auto;\"><polygon points=\"40,140 210,140 230,50 60,50\" fill=\"rgba(2, 132, 199, 0.06)\"/><polygon points=\"210,140 310,140 324.3,75.7 224.3,75.7\" fill=\"rgba(2, 132, 199, 0.06)\"/><g stroke=\"#0284c7\" stroke-width=\"2.6\"><line x1=\"40\" y1=\"140\" x2=\"310\" y2=\"140\"/><line x1=\"60\" y1=\"50\" x2=\"230\" y2=\"50\"/><line x1=\"224.3\" y1=\"75.7\" x2=\"324.3\" y2=\"75.7\"/></g><g stroke=\"#dc2626\" stroke-width=\"2.6\"><line x1=\"40\" y1=\"140\" x2=\"60\" y2=\"50\"/><line x1=\"230\" y1=\"50\" x2=\"224.3\" y2=\"75.7\"/><line x1=\"310\" y1=\"140\" x2=\"324.3\" y2=\"75.7\"/></g><line x1=\"210\" y1=\"140\" x2=\"224.3\" y2=\"75.7\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4,4\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\"><text x=\"175\" y=\"156\" fill=\"#0284c7\" text-anchor=\"middle\">Bottom = 27 cm</text><text x=\"145\" y=\"42\" fill=\"#0284c7\" text-anchor=\"middle\">17 cm</text><text x=\"275\" y=\"68\" fill=\"#0284c7\" text-anchor=\"middle\">10 cm</text><text x=\"38\" y=\"92\" fill=\"#dc2626\" text-anchor=\"end\">7 cm</text><text x=\"332\" y=\"110\" fill=\"#dc2626\" text-anchor=\"start\">5 cm</text><text x=\"240\" y=\"60\" fill=\"#dc2626\">2 cm</text></g><rect x=\"40\" y=\"172\" width=\"300\" height=\"24\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#86efac\" stroke-width=\"1.2\"/><text x=\"190\" y=\"188\" font-family=\"system-ui, sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#15803d\" text-anchor=\"middle\">Total = 27 + 27 + 7 + 2 + 5 = 68 cm</text></svg>"
+              }
             }
           ],
           "meta": {
