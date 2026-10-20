@@ -15,7 +15,7 @@ import {
 } from '../utils/padView';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v10.8-view-memory';
+const CANVAS_VERSION = 'v10.9-pencil-buttons';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -571,6 +571,9 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     // without blocking scroll on any other part of the page.
     const blockCanvasScroll = (e) => {
       if (isEditableTarget(e.target)) return;
+      // The toolbar lives inside this wrapper too. An Apple Pencil sends touchmove events even during a plain tap,
+      // and a prevented touchmove makes Safari drop the click — so buttons only ever worked with a finger.
+      if (isTapTarget(e.target)) return;
       e.preventDefault();
     };
 
