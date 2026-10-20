@@ -3136,6 +3136,7 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-2E', code: '2E', title: 'Algebraic Inequalities' },
           { id: 'y12e2-2F', code: '2F', title: 'Further Proof by Induction' },
           { id: 'y12e2-2G', code: '2G', title: 'Inequalities in Geometry and Calculus' },
+          { id: 'y12e2-2X', code: '2X', title: 'Appendix: The Fundamental Theorem of Arithmetic' },
           { id: 'y12e2-2R', code: '2R', title: 'Chapter Review Exercise' }
         ]
       },
@@ -3192,6 +3193,7 @@ export const CURRICULUM_DATA = {
           { id: 'y12e2-6G', code: '6G', title: 'Trigonometric Integrals' },
           { id: 'y12e2-6H', code: '6H', title: 'Reduction Formulae' },
           { id: 'y12e2-6I', code: '6I', title: 'Miscellaneous Integrals' },
+          { id: 'y12e2-6X', code: '6X', title: 'Appendix: A Short Table of Integrals' },
           { id: 'y12e2-6R', code: '6R', title: 'Chapter Review Exercise' }
         ]
       },
