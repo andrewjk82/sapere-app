@@ -222,6 +222,264 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-par-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The transformation of the graph \\(y=x^2\\) to \\(y=(x+1)^2-3\\) is described by a translation of:",
+          "options": [
+            "1 unit right and 3 units down",
+            "1 unit left and 3 units down",
+            "3 units left and 1 unit up",
+            "3 units right and 1 unit down"
+          ],
+          "answer": 1,
+          "hint": "In vertex form, the sign inside the bracket reverses the horizontal direction; the outside constant gives the vertical shift.",
+          "steps": [
+            {
+              "explain": "Compare with vertex form \\(y=(x-h)^2+k\\).",
+              "work": "\\(y=(x+1)^2-3=(x-(-1))^2+(-3)\\)"
+            },
+            {
+              "explain": "Read the vertex shift.",
+              "work": "\\(h=-1\\Rightarrow1\\text{ left};\\quad k=-3\\Rightarrow3\\text{ down}\\)"
+            },
+            {
+              "explain": "Choose the matching transformation.",
+              "work": "\\(\\boxed{1\\text{ unit left and }3\\text{ units down}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(x+1)^2",
+              "note": "In vertex form, the sign inside the bracket reverses the horizontal direction; the outside constant gives the vertical shift."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q1"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compared to \\(y=x^2\\), the narrowest graph is:",
+          "options": [
+            "\\(y=2x^2\\)",
+            "\\(y=\\frac{1}{10}x^2\\)",
+            "\\(y=12x^2\\)",
+            "\\(y=\\frac{1}{50}x^2\\)"
+          ],
+          "answer": 2,
+          "hint": "For \\(y=ax^2\\), a larger absolute value of \\(a\\) makes the parabola narrower.",
+          "steps": [
+            {
+              "explain": "Compare the absolute values of the coefficients.",
+              "work": "\\(|2|=2,\\quad|12|=12,\\quad|0.1|=0.1,\\quad|0.02|=0.02\\)"
+            },
+            {
+              "explain": "The greatest coefficient magnitude gives the narrowest parabola.",
+              "work": "\\(12\\text{ is the largest magnitude}\\)"
+            },
+            {
+              "explain": "Select its rule.",
+              "work": "\\(\\boxed{y=12x^2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2\\)",
+              "note": "For \\(y=ax^2\\), a larger absolute value of \\(a\\) makes the parabola narrower."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q2"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q5i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the equation \\(y=-4+(x-2)^2\\), state: (i) the transformations compared to \\(y=x^2\\).",
+          "options": [
+            "Translated 2 units left and 4 units down",
+            "Translated 4 units right and 2 units down",
+            "Reflected in the x-axis and translated 2 units right",
+            "Translated 2 units right and 4 units down"
+          ],
+          "answer": 3,
+          "hint": "Compare with \\(y=(x-h)^2+k\\): the bracket gives the horizontal shift and the constant gives the vertical shift.",
+          "steps": [
+            {
+              "explain": "Write the rule in vertex form.",
+              "work": "\\(y=(x-2)^2-4\\)"
+            },
+            {
+              "explain": "Read the horizontal and vertical translations.",
+              "work": "\\(x-2\\Rightarrow2\\text{ right};\\quad-4\\Rightarrow4\\text{ down}\\)"
+            },
+            {
+              "explain": "State both transformations.",
+              "work": "\\(\\boxed{2\\text{ units right and }4\\text{ units down}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(x-2)^2",
+              "note": "Compare with \\(y=(x-h)^2+k\\): the bracket gives the horizontal shift and the constant gives the vertical shift."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q5i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q5ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the equation \\(y=-4+(x-2)^2\\), state: (ii) the coordinates of the turning point and its type.",
+          "options": [
+            "\\((2,-4)\\), minimum",
+            "\\((-2,-4)\\), minimum",
+            "\\((2,4)\\), maximum",
+            "\\((-4,2)\\), minimum"
+          ],
+          "answer": 0,
+          "hint": "In vertex form \\(y=(x-h)^2+k\\), the turning point is (h,k); a positive square coefficient gives a minimum.",
+          "steps": [
+            {
+              "explain": "Identify h and k in the vertex form.",
+              "work": "\\(y=(x-2)^2-4\\Rightarrow h=2,\\ k=-4\\)"
+            },
+            {
+              "explain": "The coefficient of the squared term is positive.",
+              "work": "\\(+1>0\\Rightarrow\\text{the parabola opens upward}\\)"
+            },
+            {
+              "explain": "State the turning point and type.",
+              "work": "\\(\\boxed{(2,-4),\\text{ minimum}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "4",
+              "note": "In vertex form \\(y=(x-h)^2+k\\), the turning point is (h,k); a positive square coefficient gives a minimum."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q5ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the rule after each set of transformations: (i) The graph of \\(y=x^2\\) is translated 4 units to the left, then 5 units up.",
+          "options": [
+            "\\(y=(x-4)^2+5\\)",
+            "\\(y=(x+4)^2+5\\)",
+            "\\(y=(x+5)^2+4\\)",
+            "\\(y=-(x+4)^2+5\\)"
+          ],
+          "answer": 1,
+          "hint": "A shift left 4 replaces x by x+4; a shift up 5 adds 5 outside the square.",
+          "steps": [
+            {
+              "explain": "Apply the 4-unit left translation inside the bracket.",
+              "work": "\\(y=(x+4)^2\\)"
+            },
+            {
+              "explain": "Apply the 5-unit upward translation outside.",
+              "work": "\\(y=(x+4)^2+5\\)"
+            },
+            {
+              "explain": "State the transformed rule.",
+              "work": "\\(\\boxed{y=(x+4)^2+5}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2\\)",
+              "note": "A shift left 4 replaces x by x+4; a shift up 5 adds 5 outside the square."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q6i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q6iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the rule after each set of transformations: (iii) The graph of \\(y=x^2\\) is reflected in the x-axis, translated 2 units to the right and then 3 units down.",
+          "options": [
+            "\\(y=(x-2)^2-3\\)",
+            "\\(y=-(x+2)^2-3\\)",
+            "\\(y=-(x-2)^2-3\\)",
+            "\\(y=-(x-2)^2+3\\)"
+          ],
+          "answer": 2,
+          "hint": "Reflect first by placing a negative before the square, then apply the right and downward shifts.",
+          "steps": [
+            {
+              "explain": "Reflect the graph in the x-axis.",
+              "work": "\\(y=-x^2\\)"
+            },
+            {
+              "explain": "Shift 2 units right and 3 down.",
+              "work": "\\(y=-(x-2)^2-3\\)"
+            },
+            {
+              "explain": "Check the signs: right shift uses x−2; down shift is −3.",
+              "work": "\\(\\boxed{y=-(x-2)^2-3}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2\\)",
+              "note": "Reflect first by placing a negative before the square, then apply the right and downward shifts."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q6iii"
+          }
         }
       ]
     },
@@ -417,6 +675,141 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-par-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The trapezium below has an area of 66.5cm². Set up and solve a quadratic equation for x as shown in this diagram and hence determine the perpendicular height of this trapezium.",
+          "options": [
+            "\\(9\\text{ cm}\\)",
+            "\\(6.5\\text{ cm}\\)",
+            "\\(11\\text{ cm}\\)",
+            "\\(7\\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\(A=\\frac12(a+b)h\\) with parallel sides x−1 and x+2 and perpendicular height x−2.",
+          "steps": [
+            {
+              "explain": "Substitute the labelled parallel sides and perpendicular height into the trapezium formula.",
+              "work": "\\(66.5=\\frac12[(x-1)+(x+2)](x-2)\\)"
+            },
+            {
+              "explain": "Simplify and solve the quadratic.",
+              "work": "\\((2x+1)(x-2)=133\\Rightarrow2x^2-3x-135=0\\Rightarrow(2x+15)(x-9)=0\\)"
+            },
+            {
+              "explain": "Choose the value that gives positive lengths, then calculate the perpendicular height.",
+              "work": "\\(x=9\\;(x=-7.5\\text{ invalid});\\quad h=x-2=\\boxed{7\\text{ cm}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"195\" viewBox=\"0 0 380 195\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"75,145 300,145 242,70 120,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"145\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><path d=\"M145 135h10v10\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"167\" y=\"62\" font-family=\"Arial\" font-size=\"13\">x−1</text><text x=\"170\" y=\"164\" font-family=\"Arial\" font-size=\"13\">x+2</text><text x=\"151\" y=\"112\" font-family=\"Arial\" font-size=\"13\" fill=\"#4f46e5\">x−2</text><text x=\"160\" y=\"188\" font-family=\"Arial\" font-size=\"12\">Area = 66.5 cm²</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"195\" viewBox=\"0 0 380 195\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"75,145 300,145 242,70 120,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><line x1=\"145\" y1=\"70\" x2=\"145\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"1.7\"/><path d=\"M145 135h10v10\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.5\"/><text x=\"167\" y=\"62\" font-family=\"Arial\" font-size=\"13\">x−1</text><text x=\"170\" y=\"164\" font-family=\"Arial\" font-size=\"13\">x+2</text><text x=\"151\" y=\"112\" font-family=\"Arial\" font-size=\"13\" fill=\"#4f46e5\">x−2</text><text x=\"160\" y=\"188\" font-family=\"Arial\" font-size=\"12\">Area = 66.5 cm²</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "66.5",
+              "note": "Use \\(A=\\frac12(a+b)h\\) with parallel sides x−1 and x+2 and perpendicular height x−2."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q7"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q8iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (iii) Explain the real world meaning of the h-axis intercept.",
+          "options": [
+            "It is the time taken for the ball to hit the ground, 19.6 seconds.",
+            "It is the height when the ball hits the ground, 0 metres.",
+            "It is the ball’s initial height above the ground, 19.6 metres.",
+            "It is the maximum time, 2 seconds."
+          ],
+          "answer": 2,
+          "hint": "The h-axis intercept occurs at t=0, so interpret the height at the start of the motion.",
+          "steps": [
+            {
+              "explain": "At the h-axis intercept, time is zero.",
+              "work": "\\(t=0\\)"
+            },
+            {
+              "explain": "Substitute into the height equation.",
+              "work": "\\(h=-4.9(0)^2+19.6=19.6\\text{ m}\\)"
+            },
+            {
+              "explain": "Interpret this value in the situation.",
+              "work": "The ball starts \\(\\boxed{19.6\\text{ m above the ground}}\\)."
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(h=-4.9t^2+19.6\\)",
+              "note": "The h-axis intercept occurs at t=0, so interpret the height at the start of the motion."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q8iii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q8iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (iv) Determine when the ball is 14.7 metres above the ground.",
+          "options": [
+            "\\(t=0.5\\text{ seconds}\\)",
+            "\\(t=2\\text{ seconds}\\)",
+            "\\(t=3\\text{ seconds}\\)",
+            "\\(t=1\\text{ second}\\)"
+          ],
+          "answer": 3,
+          "hint": "Set h=14.7 and solve for t, keeping only the non-negative time.",
+          "steps": [
+            {
+              "explain": "Substitute the given height.",
+              "work": "\\(14.7=-4.9t^2+19.6\\)"
+            },
+            {
+              "explain": "Rearrange and divide by −4.9.",
+              "work": "\\(-4.9t^2=-4.9\\Rightarrow t^2=1\\)"
+            },
+            {
+              "explain": "Take both roots, then use t≥0.",
+              "work": "\\(t=\\pm1\\Rightarrow\\boxed{t=1\\text{ second}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(h=-4.9t^2+19.6\\)",
+              "note": "Set h=14.7 and solve for t, keeping only the non-negative time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q8iv"
+          }
         }
       ]
     },
@@ -1025,6 +1418,447 @@
             "topic": "y9-17e"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-par-q3i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (i) \\(x^2-12x=0\\)",
+          "options": [
+            "\\(x=0\\text{ or }x=-12\\)",
+            "\\(x=12\\)",
+            "\\(x=0\\text{ or }x=6\\)",
+            "\\(x=0\\text{ or }x=12\\)"
+          ],
+          "answer": 3,
+          "hint": "Factor out the common factor x, then use the zero-product rule.",
+          "steps": [
+            {
+              "explain": "Factor out x.",
+              "work": "\\(x(x-12)=0\\)"
+            },
+            {
+              "explain": "Set each factor equal to zero.",
+              "work": "\\(x=0\\quad\\text{or}\\quad x-12=0\\)"
+            },
+            {
+              "explain": "Solve both equations.",
+              "work": "\\(\\boxed{x=0\\text{ or }x=12}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(x^2-12x=0\\)",
+              "note": "Factor out the common factor x, then use the zero-product rule."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q3ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (ii) \\(x^2-81=0\\)",
+          "options": [
+            "\\(x=\\pm9\\)",
+            "\\(x=81\\text{ or }x=-81\\)",
+            "\\(x=9\\)",
+            "\\(x=\\pm\\sqrt{81}\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise a difference of two squares: \\(x^2-9^2=(x-9)(x+9)\\).",
+          "steps": [
+            {
+              "explain": "Factor using difference of squares.",
+              "work": "\\(x^2-81=(x-9)(x+9)=0\\)"
+            },
+            {
+              "explain": "Apply the zero-product rule.",
+              "work": "\\(x-9=0\\quad\\text{or}\\quad x+9=0\\)"
+            },
+            {
+              "explain": "State both roots.",
+              "work": "\\(\\boxed{x=9\\text{ or }x=-9}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(x^2-81=0\\)",
+              "note": "Recognise a difference of two squares: \\(x^2-9^2=(x-9)(x+9)\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q3iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (iii) \\(5x^2-50=0\\)",
+          "options": [
+            "\\(x=\\pm10\\)",
+            "\\(x=\\pm\\sqrt{10}\\)",
+            "\\(x=\\sqrt{10}\\)",
+            "\\(x=\\pm\\sqrt{50}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by 5 before taking square roots.",
+          "steps": [
+            {
+              "explain": "Divide through by 5.",
+              "work": "\\(x^2-10=0\\Rightarrow x^2=10\\)"
+            },
+            {
+              "explain": "Take both square roots.",
+              "work": "\\(x=\\pm\\sqrt{10}\\)"
+            },
+            {
+              "explain": "Give the exact solutions.",
+              "work": "\\(\\boxed{x=\\pm\\sqrt{10}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(5x^2-50=0\\)",
+              "note": "Divide both sides by 5 before taking square roots."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3iii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q3iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (iv) \\(4x(x+1)-x=3(x+3)\\)",
+          "options": [
+            "\\(x=\\frac32\\)",
+            "\\(x=\\pm3\\)",
+            "\\(x=\\pm\\frac32\\)",
+            "\\(x=\\pm\\frac92\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand both sides, collect terms, and solve the resulting difference of squares.",
+          "steps": [
+            {
+              "explain": "Expand and simplify each side.",
+              "work": "\\(4x^2+4x-x=3x+9\\Rightarrow4x^2+3x=3x+9\\)"
+            },
+            {
+              "explain": "Subtract 3x and 9 from both sides.",
+              "work": "\\(4x^2-9=0\\Rightarrow(2x-3)(2x+3)=0\\)"
+            },
+            {
+              "explain": "Solve both factors.",
+              "work": "\\(\\boxed{x=\\frac32\\text{ or }x=-\\frac32}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "4",
+              "note": "Expand both sides, collect terms, and solve the resulting difference of squares."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3iv"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q3v",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (v) \\(x^2-6x-16=0\\)",
+          "options": [
+            "\\(x=-8\\text{ or }x=2\\)",
+            "\\(x=8\\text{ or }x=2\\)",
+            "\\(x=-8\\text{ or }x=-2\\)",
+            "\\(x=8\\text{ or }x=-2\\)"
+          ],
+          "answer": 3,
+          "hint": "Find two numbers that multiply to −16 and add to −6.",
+          "steps": [
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "\\(x^2-6x-16=(x-8)(x+2)\\)"
+            },
+            {
+              "explain": "Set each factor to zero.",
+              "work": "\\(x-8=0\\quad\\text{or}\\quad x+2=0\\)"
+            },
+            {
+              "explain": "State the roots.",
+              "work": "\\(\\boxed{x=8\\text{ or }x=-2}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(x^2-6x-16=0\\)",
+              "note": "Find two numbers that multiply to −16 and add to −6."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3v"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q3vi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following quadratic equations. Give exact answers where appropriate: (vi) \\(2(x-3)^2-32=0\\)",
+          "options": [
+            "\\(x=7\\text{ or }x=-1\\)",
+            "\\(x=5\\text{ or }x=1\\)",
+            "\\(x=7\\text{ or }x=-7\\)",
+            "\\(x=3\\text{ or }x=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate the squared bracket, take both square roots, and remember the plus and minus cases.",
+          "steps": [
+            {
+              "explain": "Isolate the squared expression.",
+              "work": "\\(2(x-3)^2=32\\Rightarrow(x-3)^2=16\\)"
+            },
+            {
+              "explain": "Take both square roots.",
+              "work": "\\(x-3=\\pm4\\)"
+            },
+            {
+              "explain": "Solve both linear equations.",
+              "work": "\\(x=7\\text{ or }x=-1\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "2",
+              "note": "Isolate the squared bracket, take both square roots, and remember the plus and minus cases."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q3vi"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q4i",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graphs of these rules plotting and labelling the y-intercept, the exact x-intercepts and the coordinates of the turning point. (i) \\(y=x^2-3\\)",
+          "answer": "Sample answer: The parabola opens upward, has y-intercept and turning point \\((0,-3)\\), and x-intercepts \\(( -\\sqrt3,0)\\) and \\((\\sqrt3,0)\\).",
+          "hint": "Set \\(y=0\\) to find the x-intercepts; substitute \\(x=0\\) for the y-intercept. The vertex form shows the turning point.",
+          "steps": [
+            {
+              "explain": "Find the y-intercept by setting x to zero.",
+              "work": "\\(y=0^2-3=-3\\Rightarrow(0,-3)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"155\" x2=\"340\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M50 90 Q190 330 330 90\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"190\" cy=\"215\" r=\"5\" fill=\"#f59e0b\"/><text x=\"198\" y=\"213\" font-size=\"11\">(0,−3)</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = x² − 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Find exact x-intercepts by setting y to zero.",
+              "work": "\\(x^2-3=0\\Rightarrow x=\\pm\\sqrt3\\Rightarrow(-\\sqrt3,0),(\\sqrt3,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"155\" x2=\"340\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M50 90 Q190 330 330 90\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"96\" cy=\"155\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"284\" cy=\"155\" r=\"5\" fill=\"#f59e0b\"/><text x=\"58\" y=\"174\" font-size=\"11\">(−√3,0)</text><text x=\"276\" y=\"174\" font-size=\"11\">(√3,0)</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = x² − 3</text></svg>"
+              }
+            },
+            {
+              "explain": "Identify the turning point and sketch a smooth upward-opening curve through all three features.",
+              "work": "\\(y=x^2-3\\text{ has vertex }(0,-3)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"155\" x2=\"340\" y2=\"155\" stroke=\"#64748b\" stroke-width=\"1.3\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"210\" stroke=\"#64748b\" stroke-width=\"1.3\"/><path d=\"M50 90 Q190 330 330 90\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"96\" cy=\"155\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"284\" cy=\"155\" r=\"5\" fill=\"#f59e0b\"/><text x=\"58\" y=\"174\" font-size=\"11\">(−√3,0)</text><text x=\"276\" y=\"174\" font-size=\"11\">(√3,0)</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = x² − 3</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(y=x^2-3\\)",
+              "note": "Set \\(y=0\\) to find the x-intercepts; substitute \\(x=0\\) for the y-intercept. The vertex form shows the turning point."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q4i"
+          },
+          "manual": true
+        },
+        {
+          "id": "yr9t3-2023-par-q4ii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graphs of these rules plotting and labelling the y-intercept, the exact x-intercepts and the coordinates of the turning point. (ii) \\(y=-2(x+1)^2-2\\)",
+          "answer": "Sample answer: The parabola opens downward, has turning point \\((-1,-2)\\), y-intercept \\((0,-4)\\), and no real x-intercepts.",
+          "hint": "Read the turning point from vertex form, substitute x = 0 for the y-intercept, and test whether y can equal zero.",
+          "steps": [
+            {
+              "explain": "Read the turning point from vertex form.",
+              "work": "\\(y=-2(x-(-1))^2-2\\Rightarrow(-1,-2)\\); it is a maximum because the coefficient is negative.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"204\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M65 129 Q140 40 215 129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"140\" cy=\"99\" r=\"5\" fill=\"#f59e0b\"/><text x=\"78\" y=\"89\" font-size=\"11\">vertex (−1,−2)</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = −2(x + 1)² − 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Set x=0 for the y-intercept.",
+              "work": "\\(y=-2(1)^2-2=-4\\Rightarrow(0,-4)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"204\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M65 129 Q140 40 215 129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"190\" cy=\"159\" r=\"5\" fill=\"#f59e0b\"/><text x=\"194\" y=\"167\" font-size=\"11\">(0,−4)</text><text x=\"225\" y=\"103\" font-size=\"11\">no x-intercepts</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = −2(x + 1)² − 2</text></svg>"
+              }
+            },
+            {
+              "explain": "Check for x-intercepts and sketch the downward curve.",
+              "work": "\\(0=-2(x+1)^2-2\\Rightarrow(x+1)^2=-1\\), so there are no real x-intercepts.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"40\" y1=\"40\" x2=\"340\" y2=\"40\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"190\" y1=\"24\" x2=\"190\" y2=\"204\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M65 129 Q140 40 215 129\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"190\" cy=\"159\" r=\"5\" fill=\"#f59e0b\"/><text x=\"194\" y=\"167\" font-size=\"11\">(0,−4)</text><text x=\"225\" y=\"103\" font-size=\"11\">no x-intercepts</text><text x=\"190\" y=\"16\" text-anchor=\"middle\" font-family=\"Arial\" font-size=\"12\" fill=\"#4f46e5\">y = −2(x + 1)² − 2</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "2",
+              "note": "Read the turning point from vertex form, substitute x = 0 for the y-intercept, and test whether y can equal zero."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q4ii"
+          },
+          "manual": true
+        },
+        {
+          "id": "yr9t3-2023-par-q8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (i) Find the intercepts for the graph of the equation \\(h=-4.9t^2+19.6\\), for \\(t\\ge0\\).",
+          "options": [
+            "h-axis: \\((0,19.6)\\); t-axis: \\((2,0)\\)",
+            "h-axis: \\((0,0)\\); t-axis: \\((0,19.6)\\)",
+            "h-axis: \\((0,19.6)\\); t-axis: \\((-2,0)\\)",
+            "h-axis: \\((0,4)\\); t-axis: \\((2,0)\\)"
+          ],
+          "answer": 0,
+          "hint": "For the h-axis intercept set t=0; for the t-axis intercept set h=0 and use only t≥0.",
+          "steps": [
+            {
+              "explain": "Set t=0 to find the h-axis intercept.",
+              "work": "\\(h=-4.9(0)^2+19.6=19.6\\Rightarrow(0,19.6)\\)"
+            },
+            {
+              "explain": "Set h=0 to find the t-axis intercept.",
+              "work": "\\(-4.9t^2+19.6=0\\Rightarrow t^2=4\\Rightarrow t=\\pm2\\)"
+            },
+            {
+              "explain": "Apply the stated domain t≥0.",
+              "work": "\\(t=2\\Rightarrow\\boxed{(2,0)}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "t\\ge0",
+              "note": "For the h-axis intercept set t=0; for the t-axis intercept set h=0 and use only t≥0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q8i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-par-q8ii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A ball is dropped from a clifftop. The ball’s height, h metres, above the ground after t seconds is given by the equation \\(h=-4.9t^2+19.6\\). (ii) Sketch the graph of \\(h=-4.9t^2+19.6\\) labelling the axis intercepts and turning point.",
+          "answer": "Sample answer: A downward-opening curve for \\(t\\ge0\\) from \\((0,19.6)\\) to \\((2,0)\\), with turning point \\((0,19.6)\\).",
+          "hint": "Use the intercepts from the equation and note that the coefficient of t² is negative. The physical domain begins at t=0.",
+          "steps": [
+            {
+              "explain": "Find the initial height and mark the vertex/intercept.",
+              "work": "\\(t=0\\Rightarrow h=19.6\\text{ m};\\; (0,19.6)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"60\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"26\" x2=\"70\" y2=\"192\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M70 45 Q175 45 280 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"45\" r=\"5\" fill=\"#f59e0b\"/><text x=\"80\" y=\"48\" font-size=\"11\">(0,19.6)</text><text x=\"340\" y=\"170\" font-size=\"12\">t (s)</text><text x=\"52\" y=\"20\" font-size=\"12\">h (m)</text></svg>"
+              }
+            },
+            {
+              "explain": "Find when the ball reaches ground level.",
+              "work": "\\(h=0\\Rightarrow t=2\\text{ s}\\) for the domain \\(t\\ge0\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"60\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"26\" x2=\"70\" y2=\"192\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M70 45 Q175 45 280 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"45\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"280\" cy=\"165\" r=\"5\" fill=\"#f59e0b\"/><text x=\"80\" y=\"48\" font-size=\"11\">(0,19.6)</text><text x=\"286\" y=\"168\" font-size=\"11\">(2,0)</text><text x=\"340\" y=\"170\" font-size=\"12\">t (s)</text><text x=\"52\" y=\"20\" font-size=\"12\">h (m)</text></svg>"
+              }
+            },
+            {
+              "explain": "Sketch the downward-opening curve between these points, labelled with units.",
+              "work": "\\(\\text{Turning point }(0,19.6),\\text{ ground intercept }(2,0)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><line x1=\"60\" y1=\"165\" x2=\"335\" y2=\"165\" stroke=\"#64748b\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"26\" x2=\"70\" y2=\"192\" stroke=\"#64748b\" stroke-width=\"1.2\"/><path d=\"M70 45 Q175 45 280 165\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/><circle cx=\"70\" cy=\"45\" r=\"5\" fill=\"#f59e0b\"/><circle cx=\"280\" cy=\"165\" r=\"5\" fill=\"#f59e0b\"/><text x=\"80\" y=\"48\" font-size=\"11\">(0,19.6)</text><text x=\"286\" y=\"168\" font-size=\"11\">(2,0)</text><text x=\"340\" y=\"170\" font-size=\"12\">t (s)</text><text x=\"52\" y=\"20\" font-size=\"12\">h (m)</text></svg>"
+              }
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(h=-4.9t^2+19.6\\)",
+              "note": "Use the intercepts from the equation and note that the coefficient of t² is negative. The physical domain begins at t=0."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "par-q8ii"
+          }
         }
       ]
     },

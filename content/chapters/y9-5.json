@@ -7027,6 +7027,92 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-alg-q4i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations: (i) \\(\\frac{3}{4x}-\\frac{2}{3x}=\\frac{1}{24}\\)",
+          "options": [
+            "\\(x=\\frac12\\)",
+            "\\(x=2\\)",
+            "\\(x=24\\)",
+            "\\(x=-2\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the common denominator 12x on the left, then solve the resulting equation.",
+          "steps": [
+            {
+              "explain": "Combine the fractions on the left.",
+              "work": "\\(\\frac{9-8}{12x}=\\frac{1}{24}\\)"
+            },
+            {
+              "explain": "Cross-multiply (with \\(x\\ne0\\)).",
+              "work": "\\(\\frac1{12x}=\\frac1{24}\\Rightarrow12x=24\\)"
+            },
+            {
+              "explain": "Solve for x and check it is allowed.",
+              "work": "\\(\\boxed{x=2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q4i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{3}{4x}-\\frac{2}{3x}=\\frac{1}{24}\\)",
+              "note": "Use the common denominator 12x on the left, then solve the resulting equation."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-alg-q4ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following equations: (ii) \\(\\frac{4}{x+2}=\\frac{5}{2x-5}\\)",
+          "options": [
+            "\\(x=2\\)",
+            "\\(x=-10\\)",
+            "\\(x=10\\)",
+            "\\(x=30\\)"
+          ],
+          "answer": 2,
+          "hint": "Cross-multiply, then collect the x-terms. Exclude values that make either denominator zero.",
+          "steps": [
+            {
+              "explain": "State the restrictions.",
+              "work": "\\(x\\ne-2,\\quad x\\ne\\frac52\\)"
+            },
+            {
+              "explain": "Cross-multiply.",
+              "work": "\\(4(2x-5)=5(x+2)\\Rightarrow8x-20=5x+10\\)"
+            },
+            {
+              "explain": "Solve the linear equation.",
+              "work": "\\(3x=30\\Rightarrow\\boxed{x=10}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q4ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{4}{x+2}=\\frac{5}{2x-5}\\)",
+              "note": "Cross-multiply, then collect the x-terms. Exclude values that make either denominator zero."
+            }
+          ]
         }
       ]
     },
@@ -9219,6 +9305,92 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-alg-q5i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track. (i) Define the variables and write equations that link these variables. Then write an equation in one variable and solve it.",
+          "options": [
+            "\\(x=24\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)",
+            "\\(x=18\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.45\\)",
+            "\\(x=40\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)",
+            "\\(x=18\\text{ km};\\;\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)"
+          ],
+          "answer": 3,
+          "hint": "Let \\(x\\) be the first track length. Convert 2 hours 45 minutes into 2.75 hours, and use time = distance ÷ speed.",
+          "steps": [
+            {
+              "explain": "Let the first track distance be \\(x\\) km. Express the second distance and each ride time.",
+              "work": "\\(d_1=x,\\quad d_2=2x+4;\\quad t_1=\\frac{x}{24},\\quad t_2=\\frac{2x+4}{20}\\)"
+            },
+            {
+              "explain": "Convert the total time and form one equation.",
+              "work": "\\(2\\text{ h }45\\text{ min}=2.75\\text{ h};\\quad\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)"
+            },
+            {
+              "explain": "Multiply by 120 and solve.",
+              "work": "\\(5x+6(2x+4)=330\\Rightarrow17x+24=330\\Rightarrow x=18\\text{ km}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "24",
+              "note": "Let \\(x\\) be the first track length. Convert 2 hours 45 minutes into 2.75 hours, and use time = distance ÷ speed."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q5i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-alg-q5ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Kate cycles two different bush tracks training for a cross country mountain bike competition. She averages 24 km/h on the first track and 20 km/h for the second track, taking a total time of 2 hours 45 minutes. The length of the second track is 4 km more than double the length of the first track. (ii) Hence, determine the length of each bush track and the time Kate takes to ride each track.",
+          "options": [
+            "First: \\(18\\text{ km}, 45\\text{ min}\\); second: \\(40\\text{ km}, 2\\text{ h}\\).",
+            "First: \\(18\\text{ km}, 1\\text{ h}\\); second: \\(40\\text{ km}, 1\\text{ h }45\\text{ min}\\).",
+            "First: \\(40\\text{ km}, 2\\text{ h}\\); second: \\(18\\text{ km},45\\text{ min}\\).",
+            "First: \\(18\\text{ km},45\\text{ min}\\); second: \\(36\\text{ km},2\\text{ h}\\)."
+          ],
+          "answer": 0,
+          "hint": "Use the first length from the equation, then apply the “double plus 4” relationship and divide each distance by its speed.",
+          "steps": [
+            {
+              "explain": "Define x as the first track length and form the total-time equation from the given speeds and distance relationship.",
+              "work": "\\(\\frac{x}{24}+\\frac{2x+4}{20}=2.75\\)"
+            },
+            {
+              "explain": "Solve the equation for the first distance, then use the stated relation for the second track.",
+              "work": "\\(5x+6(2x+4)=330\\Rightarrow17x+24=330\\Rightarrow x=18;\\quad d_2=2(18)+4=40\\text{ km}\\)"
+            },
+            {
+              "explain": "Calculate both ride times and check that they add to 2 hours 45 minutes.",
+              "work": "\\(t_1=18/24=0.75\\text{ h}=45\\text{ min};\\quad t_2=40/20=2\\text{ h};\\quad0.75+2=2.75\\text{ h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q5ii"
+          },
+          "keyPoints": [
+            {
+              "text": "24",
+              "note": "Use the first length from the equation, then apply the “double plus 4” relationship and divide each distance by its speed."
+            }
+          ]
         }
       ]
     },

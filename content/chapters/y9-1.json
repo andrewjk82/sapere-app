@@ -19511,6 +19511,49 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-alg-q1ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify each of the following: (ii) \\(6x-5)(2x-5)\\",
+          "options": [
+            "\\(12x^2-20x+25\\)",
+            "\\(12x^2-40x+25\\)",
+            "\\(12x^2-40x-25\\)",
+            "\\(8x^2-40x+25\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply each term in the first bracket by each term in the second.",
+          "steps": [
+            {
+              "explain": "Expand using four products.",
+              "work": "\\((6x)(2x)+(6x)(-5)+(-5)(2x)+(-5)(-5)\\)"
+            },
+            {
+              "explain": "Simplify each product and collect the x-terms.",
+              "work": "\\(12x^2-30x-10x+25\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(\\boxed{12x^2-40x+25}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q1ii"
+          },
+          "keyPoints": [
+            {
+              "text": "6",
+              "note": "Multiply each term in the first bracket by each term in the second."
+            }
+          ]
         }
       ]
     },
@@ -22285,6 +22328,92 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-alg-q1i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify each of the following: (i) \\(3x+2)(3x-2)\\",
+          "options": [
+            "\\(9x^2-4\\)",
+            "\\(9x^2+4\\)",
+            "\\(9x^2-12x-4\\)",
+            "\\(6x^2-4\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the conjugate pair and use the difference-of-squares identity.",
+          "steps": [
+            {
+              "explain": "Identify the form \\((a+b)(a-b)=a^2-b^2\\).",
+              "work": "\\(a=3x,\\quad b=2\\)"
+            },
+            {
+              "explain": "Square both terms and subtract.",
+              "work": "\\((3x)^2-2^2=9x^2-4\\)"
+            },
+            {
+              "explain": "State the expansion.",
+              "work": "\\(\\boxed{9x^2-4}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q1i"
+          },
+          "keyPoints": [
+            {
+              "text": "3",
+              "note": "Recognise the conjugate pair and use the difference-of-squares identity."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-alg-q1iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify each of the following: (iii) \\(x+4)^2\\",
+          "options": [
+            "\\(x^2+16\\)",
+            "\\(x^2+4x+16\\)",
+            "\\(x^2+8x+16\\)",
+            "\\(2x^2+8x+16\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the square as two identical brackets before expanding.",
+          "steps": [
+            {
+              "explain": "Rewrite the square as a product.",
+              "work": "\\((x+4)^2=(x+4)(x+4)\\)"
+            },
+            {
+              "explain": "Expand each term.",
+              "work": "\\(x^2+4x+4x+16\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(\\boxed{x^2+8x+16}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q1iii"
+          },
+          "keyPoints": [
+            {
+              "text": "4",
+              "note": "Write the square as two identical brackets before expanding."
+            }
+          ]
         }
       ]
     },

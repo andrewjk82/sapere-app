@@ -239,6 +239,135 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-fm-q3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Tom earns $670 per week plus 2% commission on all sales. How much does he earn in a fortnight, if his sales total $4509, for that period?",
+          "options": [
+            "\\(\\$1,340.00\\)",
+            "\\(\\$90.18\\)",
+            "\\(\\$1,520.18\\)",
+            "\\(\\$1,430.18\\)"
+          ],
+          "answer": 3,
+          "hint": "Add two weeks of base pay to 2% of the fortnight’s sales.",
+          "steps": [
+            {
+              "explain": "Find Tom’s base pay for two weeks.",
+              "work": "\\(2(670)=\\$1,340\\)"
+            },
+            {
+              "explain": "Calculate 2% commission on the sales total.",
+              "work": "\\(0.02(4,509)=\\$90.18\\)"
+            },
+            {
+              "explain": "Add base pay and commission.",
+              "work": "\\(1,340+90.18=\\boxed{\\$1,430.18}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$670",
+              "note": "Add two weeks of base pay to 2% of the fortnight’s sales."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q3i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q3ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Tom earns $670 per week plus 2% commission on all sales. If Tom wishes to earn $60,000 in a year, what would his total sales for the year need to amount to? (Assume 52 weeks in a year)",
+          "options": [
+            "\\(\\$1,258,000\\)",
+            "\\(\\$1,160,000\\)",
+            "\\(\\$1,258\\)",
+            "\\(\\$3,000,000\\)"
+          ],
+          "answer": 0,
+          "hint": "First subtract his annual base pay from $60,000; the remainder must be 2% of sales.",
+          "steps": [
+            {
+              "explain": "Calculate annual base pay.",
+              "work": "\\(670(52)=\\$34,840\\)"
+            },
+            {
+              "explain": "Find the commission needed to reach $60,000.",
+              "work": "\\(60,000-34,840=\\$25,160\\)"
+            },
+            {
+              "explain": "Let annual sales be \\(S\\), then solve the commission equation.",
+              "work": "\\(0.02S=25,160\\Rightarrow S=\\frac{25,160}{0.02}=\\boxed{\\$1,258,000}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$670",
+              "note": "First subtract his annual base pay from $60,000; the remainder must be 2% of sales."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q3ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Lily earns $16.30/hour for the first 8 hours in a shift, time-and-a half for the next 4 hours, and double-time after that. Find her pay for working a 15-hour shift.",
+          "options": [
+            "\\(\\$326.00\\)",
+            "\\(\\$244.50\\)",
+            "\\(\\$293.40\\)",
+            "\\(\\$358.60\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the 15 hours into 8 at ordinary rate, 4 at 1.5 times, and the remaining hours at double-time.",
+          "steps": [
+            {
+              "explain": "Find the hours in each pay band.",
+              "work": "\\(8\\text{ ordinary},\\quad 4\\text{ time-and-a-half},\\quad 15-12=3\\text{ double-time}\\)"
+            },
+            {
+              "explain": "Calculate each band’s pay.",
+              "work": "\\(8(16.30)=130.40;\\quad4(1.5)(16.30)=97.80;\\quad3(2)(16.30)=97.80\\)"
+            },
+            {
+              "explain": "Add the three amounts.",
+              "work": "\\(130.40+97.80+97.80=\\boxed{\\$326.00}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$16.30",
+              "note": "Split the 15 hours into 8 at ordinary rate, 4 at 1.5 times, and the remaining hours at double-time."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q7"
+          }
         }
       ]
     }

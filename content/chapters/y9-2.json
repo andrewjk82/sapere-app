@@ -2190,6 +2190,49 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-si-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the exact side length of a square with area 200 cm². Simplify your answer.",
+          "options": [
+            "\\(100\\sqrt2\\text{ cm}\\)",
+            "\\(20\\sqrt5\\text{ cm}\\)",
+            "\\(10\\sqrt2\\text{ cm}^2\\)",
+            "\\(10\\sqrt2\\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "hint": "For a square, side length is the square root of its area. Simplify the resulting surd.",
+          "steps": [
+            {
+              "explain": "Let the side length be \\(s\\). For a square, \\(s^2=200\\).",
+              "work": "\\(s=\\sqrt{200}\\text{ cm}\\)"
+            },
+            {
+              "explain": "Extract the largest perfect-square factor.",
+              "work": "\\(\\sqrt{200}=\\sqrt{100\\cdot2}=10\\sqrt2\\)"
+            },
+            {
+              "explain": "Give the exact length with units.",
+              "work": "\\(\\boxed{10\\sqrt2\\text{ cm}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q7"
+          },
+          "keyPoints": [
+            {
+              "text": "200",
+              "note": "For a square, side length is the square root of its area. Simplify the resulting surd."
+            }
+          ]
         }
       ]
     },
@@ -2337,6 +2380,92 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-si-q9i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify each of the following expressions involving surds: (i) \\(\\sqrt{20}+\\sqrt{45}-\\sqrt5\\)",
+          "options": [
+            "\\(8\\sqrt5\\)",
+            "\\(4\\sqrt{10}\\)",
+            "\\(4\\sqrt5\\)",
+            "\\(2\\sqrt5\\)"
+          ],
+          "answer": 2,
+          "hint": "Simplify each square root using a perfect-square factor, then combine like surds.",
+          "steps": [
+            {
+              "explain": "Simplify each surd.",
+              "work": "\\(\\sqrt{20}=2\\sqrt5,\\quad\\sqrt{45}=3\\sqrt5\\)"
+            },
+            {
+              "explain": "Combine the coefficients of like surds.",
+              "work": "\\((2+3-1)\\sqrt5=4\\sqrt5\\)"
+            },
+            {
+              "explain": "State the simplified form.",
+              "work": "\\(\\boxed{4\\sqrt5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q9i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\sqrt{20}+\\sqrt{45}-\\sqrt5\\)",
+              "note": "Simplify each square root using a perfect-square factor, then combine like surds."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q9ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify each of the following expressions involving surds: (ii) \\(\\frac{\\sqrt5}{6}+\\frac{5\\sqrt5}{8}\\)",
+          "options": [
+            "\\(\\frac{6\\sqrt5}{14}\\)",
+            "\\(\\frac{19\\sqrt5}{14}\\)",
+            "\\(\\frac{19\\sqrt{10}}{24}\\)",
+            "\\(\\frac{19\\sqrt5}{24}\\)"
+          ],
+          "answer": 3,
+          "hint": "Use a common denominator for the fractions, keeping the common factor \\(\\sqrt5\\).",
+          "steps": [
+            {
+              "explain": "Find a common denominator of 24.",
+              "work": "\\(\\frac{\\sqrt5}{6}=\\frac{4\\sqrt5}{24},\\quad\\frac{5\\sqrt5}{8}=\\frac{15\\sqrt5}{24}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\frac{4\\sqrt5+15\\sqrt5}{24}=\\frac{19\\sqrt5}{24}\\)"
+            },
+            {
+              "explain": "State the simplified result.",
+              "work": "\\(\\boxed{\\frac{19\\sqrt5}{24}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q9ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{\\sqrt5}{6}+\\frac{5\\sqrt5}{8}\\)",
+              "note": "Use a common denominator for the fractions, keeping the common factor \\(\\sqrt5\\)."
+            }
+          ]
         }
       ]
     },

@@ -3234,6 +3234,49 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-alg-q2i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise each of the following expressions: (i) \\(x^2-14x+49\\)",
+          "options": [
+            "\\((x+7)^2\\)",
+            "\\((x-7)(x+7)\\)",
+            "\\((x-49)(x+1)\\)",
+            "\\((x-7)^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Look for two equal factors: 49 is a square and the middle coefficient is −14.",
+          "steps": [
+            {
+              "explain": "Find two numbers whose product is 49 and sum is −14.",
+              "work": "\\(-7\\times-7=49,\\quad-7+(-7)=-14\\)"
+            },
+            {
+              "explain": "Write the quadratic as two identical binomial factors.",
+              "work": "\\(x^2-14x+49=(x-7)(x-7)\\)"
+            },
+            {
+              "explain": "Use index notation.",
+              "work": "\\(\\boxed{(x-7)^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q2i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(x^2-14x+49\\)",
+              "note": "Look for two equal factors: 49 is a square and the middle coefficient is −14."
+            }
+          ]
         }
       ]
     },
@@ -3878,6 +3921,92 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-alg-q2ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise each of the following expressions: (ii) \\(x^2+3x-4\\)",
+          "options": [
+            "\\((x+4)(x-1)\\)",
+            "\\((x-4)(x+1)\\)",
+            "\\((x+4)(x+1)\\)",
+            "\\((x-4)(x-1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find a factor pair of −4 whose sum is 3.",
+          "steps": [
+            {
+              "explain": "Find numbers with product −4 and sum 3.",
+              "work": "\\(4\\times(-1)=-4,\\quad4+(-1)=3\\)"
+            },
+            {
+              "explain": "Use the numbers as the constants in the brackets.",
+              "work": "\\(x^2+3x-4=(x+4)(x-1)\\)"
+            },
+            {
+              "explain": "Expand briefly to verify.",
+              "work": "\\(x^2-x+4x-4=x^2+3x-4\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q2ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(x^2+3x-4\\)",
+              "note": "Find a factor pair of −4 whose sum is 3."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-alg-q2iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise each of the following expressions: (iii) \\(6x^2+20x+14\\)",
+          "options": [
+            "\\(2(3x+1)(x+7)\\)",
+            "\\(2(3x+7)(x+1)\\)",
+            "\\((6x+7)(x+2)\\)",
+            "\\(2(3x-7)(x-1)\\)"
+          ],
+          "answer": 1,
+          "hint": "Take out the common factor 2 first, then factor the monic quadratic.",
+          "steps": [
+            {
+              "explain": "Factor out the common factor.",
+              "work": "\\(6x^2+20x+14=2(3x^2+10x+7)\\)"
+            },
+            {
+              "explain": "Find a pair with product 21 and sum 10.",
+              "work": "\\(3\\text{ and }7\\Rightarrow 3x^2+10x+7=(3x+7)(x+1)\\)"
+            },
+            {
+              "explain": "Combine the factors.",
+              "work": "\\(\\boxed{2(3x+7)(x+1)}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "alg-q2iii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(6x^2+20x+14\\)",
+              "note": "Take out the common factor 2 first, then factor the monic quadratic."
+            }
+          ]
         }
       ]
     }

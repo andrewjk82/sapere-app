@@ -6132,6 +6132,350 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-si-q1i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (i) \\(6x^2y^5\\times7x^3y^4\\)",
+          "options": [
+            "\\(42x^5y^9\\)",
+            "\\(42x^6y^9\\)",
+            "\\(13x^5y^9\\)",
+            "\\(42x^5y^{20}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the coefficients and add exponents of matching bases.",
+          "steps": [
+            {
+              "explain": "Multiply the numerical coefficients.",
+              "work": "\\(6(7)=42\\)"
+            },
+            {
+              "explain": "Use the product law for each matching base.",
+              "work": "\\(x^{2+3}y^{5+4}\\)"
+            },
+            {
+              "explain": "Combine the results.",
+              "work": "\\(\\boxed{42x^5y^9}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "\\(6x^2y^5\\times7x^3y^4\\)",
+              "note": "Multiply the coefficients and add exponents of matching bases."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-si-q1ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (ii) \\(\\frac{72x^4y^4z^3}{8x^3y^2z}\\)",
+          "options": [
+            "\\(9x y^2z^3\\)",
+            "\\(9xy^2z^2\\)",
+            "\\(64xy^2z^2\\)",
+            "\\(9x^7y^6z^4\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide coefficients and subtract denominator exponents from numerator exponents.",
+          "steps": [
+            {
+              "explain": "Divide the coefficients.",
+              "work": "\\(72\\div8=9\\)"
+            },
+            {
+              "explain": "Apply the quotient law to each base.",
+              "work": "\\(x^{4-3}y^{4-2}z^{3-1}\\)"
+            },
+            {
+              "explain": "Write the simplified product.",
+              "work": "\\(\\boxed{9xy^2z^2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{72x^4y^4z^3}{8x^3y^2z}\\)",
+              "note": "Divide coefficients and subtract denominator exponents from numerator exponents."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q1iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (iii) \\(2m^2n^6\\div\\frac{6m^2}{n^2}\\)",
+          "options": [
+            "\\(\\frac{n^4}{3}\\)",
+            "\\(3n^8\\)",
+            "\\(\\frac{n^8}{3}\\)",
+            "\\(\\frac{m^4n^8}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide by a fraction by multiplying by its reciprocal.",
+          "steps": [
+            {
+              "explain": "Rewrite division by a fraction as multiplication by the reciprocal.",
+              "work": "\\(2m^2n^6\\times\\frac{n^2}{6m^2}\\)"
+            },
+            {
+              "explain": "Cancel common factors and combine powers of \\(n\\).",
+              "work": "\\(\\frac{2}{6}n^{6+2}=\\frac13n^8\\)"
+            },
+            {
+              "explain": "State the simplified result.",
+              "work": "\\(\\boxed{\\frac{n^8}{3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1iii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(2m^2n^6\\div\\frac{6m^2}{n^2}\\)",
+              "note": "Divide by a fraction by multiplying by its reciprocal."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q1iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (iv) \\(\\left(\\frac{m^3}{n^2}\\right)^{-3}\\times m^2\\)",
+          "options": [
+            "\\(\\frac{m^{11}}{n^6}\\)",
+            "\\(\\frac{n^6}{m^9}\\)",
+            "\\(m^7n^6\\)",
+            "\\(\\frac{n^6}{m^7}\\)"
+          ],
+          "answer": 3,
+          "hint": "A negative power reciprocates the entire bracket; then multiply the powers of \\(m\\).",
+          "steps": [
+            {
+              "explain": "Apply the negative power to the whole fraction.",
+              "work": "\\(\\left(\\frac{m^3}{n^2}\\right)^{-3}=\\left(\\frac{n^2}{m^3}\\right)^3=\\frac{n^6}{m^9}\\)"
+            },
+            {
+              "explain": "Multiply by \\(m^2\\) and combine the powers of \\(m\\).",
+              "work": "\\(\\frac{n^6}{m^9}m^2=\\frac{n^6}{m^{9-2}}\\)"
+            },
+            {
+              "explain": "Give the simplified expression.",
+              "work": "\\(\\boxed{\\frac{n^6}{m^7}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1iv"
+          },
+          "keyPoints": [
+            {
+              "text": "3",
+              "note": "A negative power reciprocates the entire bracket; then multiply the powers of \\(m\\)."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q1v",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (v) \\(\\frac{(y^3)^0}{3}\\)",
+          "options": [
+            "\\(\\frac13\\)",
+            "\\(0\\)",
+            "\\(y^3\\)",
+            "\\(\\frac{y^3}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Any non-zero expression raised to the power zero equals 1.",
+          "steps": [
+            {
+              "explain": "Apply the zero-index law to the numerator.",
+              "work": "\\((y^3)^0=1\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\(\\frac{1}{3}\\)"
+            },
+            {
+              "explain": "State the result.",
+              "work": "\\(\\boxed{\\frac13}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "(y^3)^0",
+              "note": "Any non-zero expression raised to the power zero equals 1."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1v"
+          }
+        },
+        {
+          "id": "yr9t3-2023-si-q1vi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expressions: (vi) \\(\\frac{-3(2^4b^3)^3}{(-2^3b)^4}\\)",
+          "options": [
+            "\\(3b^5\\)",
+            "\\(-3b^5\\)",
+            "\\(-3b\\)",
+            "\\(-12b^5\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the powers in the numerator and denominator separately, including the negative sign.",
+          "steps": [
+            {
+              "explain": "Expand the powers of each factor.",
+              "work": "\\((2^4b^3)^3=2^{12}b^9,\\quad(-2^3b)^4=2^{12}b^4\\)"
+            },
+            {
+              "explain": "Cancel the equal powers of 2 and subtract the powers of b.",
+              "work": "\\(\\frac{-3(2^{12}b^9)}{2^{12}b^4}=-3b^{9-4}\\)"
+            },
+            {
+              "explain": "State the simplified result.",
+              "work": "\\(\\boxed{-3b^5}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q1vi"
+          },
+          "keyPoints": [
+            {
+              "text": "3",
+              "note": "Evaluate the powers in the numerator and denominator separately, including the negative sign."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following, show all working: (i) \\(2^x=64\\)",
+          "options": [
+            "\\(x=6\\)",
+            "\\(x=5\\)",
+            "\\(x=7\\)",
+            "\\(x=32\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 64 as a power of 2, then equate exponents.",
+          "steps": [
+            {
+              "explain": "Express 64 using base 2.",
+              "work": "\\(64=2^6\\)"
+            },
+            {
+              "explain": "Compare powers with the same base.",
+              "work": "\\(2^x=2^6\\Rightarrow x=6\\)"
+            },
+            {
+              "explain": "State the solution.",
+              "work": "\\(\\boxed{x=6}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q8i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(2^x=64\\)",
+              "note": "Write 64 as a power of 2, then equate exponents."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q8ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve each of the following, show all working: (ii) \\(9^x=27\\)",
+          "options": [
+            "\\(x=3\\)",
+            "\\(x=\\frac32\\)",
+            "\\(x=\\frac23\\)",
+            "\\(x=\\frac92\\)"
+          ],
+          "answer": 1,
+          "hint": "Rewrite both 9 and 27 as powers of 3, then equate exponents.",
+          "steps": [
+            {
+              "explain": "Express both sides with base 3.",
+              "work": "\\((3^2)^x=3^3\\)"
+            },
+            {
+              "explain": "Use the power-of-a-power law and equate exponents.",
+              "work": "\\(3^{2x}=3^3\\Rightarrow2x=3\\)"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "\\(\\boxed{x=\\frac32}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q8ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(9^x=27\\)",
+              "note": "Rewrite both 9 and 27 as powers of 3, then equate exponents."
+            }
+          ]
         }
       ]
     },
@@ -6204,6 +6548,92 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-si-q2i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express using positive indices only: (i) \\(\\frac{9h^{-2}}{b}\\)",
+          "options": [
+            "\\(\\frac{9h^2}{b}\\)",
+            "\\(\\frac{9b}{h^2}\\)",
+            "\\(\\frac{9}{bh^2}\\)",
+            "\\(\\frac{1}{9bh^2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Move the factor with a negative exponent to the denominator and make its exponent positive.",
+          "steps": [
+            {
+              "explain": "Use \\(h^{-2}=1/h^2\\).",
+              "work": "\\(\\frac{9h^{-2}}{b}=\\frac{9}{bh^2}\\)"
+            },
+            {
+              "explain": "Check that every exponent is positive.",
+              "work": "\\(9,b,h^2\\text{ all have non-negative powers}\\)"
+            },
+            {
+              "explain": "State the result.",
+              "work": "\\(\\boxed{\\frac{9}{bh^2}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q2i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{9h^{-2}}{b}\\)",
+              "note": "Move the factor with a negative exponent to the denominator and make its exponent positive."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q2ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express using positive indices only: (ii) \\(\\frac{4h^2k^5}{5^{-1}h^{-3}k^4}\\)",
+          "options": [
+            "\\(\\frac{4h^5k}{5}\\)",
+            "\\(20h^{-1}k\\)",
+            "\\(\\frac{5h^5}{k}\\)",
+            "\\(20h^5k\\)"
+          ],
+          "answer": 3,
+          "hint": "Dividing by \\(5^{-1}\\) multiplies by 5; subtract exponents for the matching h and k bases.",
+          "steps": [
+            {
+              "explain": "Rewrite division by the denominator’s factors.",
+              "work": "\\(\\frac{4h^2k^5}{5^{-1}h^{-3}k^4}=4(5)h^{2-(-3)}k^{5-4}\\)"
+            },
+            {
+              "explain": "Simplify the coefficient and powers.",
+              "work": "\\(20h^5k\\)"
+            },
+            {
+              "explain": "All indices are positive.",
+              "work": "\\(\\boxed{20h^5k}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q2ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{4h^2k^5}{5^{-1}h^{-3}k^4}\\)",
+              "note": "Dividing by \\(5^{-1}\\) multiplies by 5; subtract exponents for the matching h and k bases."
+            }
+          ]
         }
       ]
     },
@@ -6354,6 +6784,92 @@
             "school": "Ballarat High School",
             "year": "2023"
           }
+        },
+        {
+          "id": "yr9t3-2023-si-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate without the use of a calculator, show all working: (i) \\(27^{2/3}\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(9\\)",
+            "\\(18\\)",
+            "\\(729\\)"
+          ],
+          "answer": 1,
+          "hint": "The denominator of the fractional index gives the root; the numerator gives the power.",
+          "steps": [
+            {
+              "explain": "Take the cube root of 27.",
+              "work": "\\(\\sqrt[3]{27}=3\\)"
+            },
+            {
+              "explain": "Square the result.",
+              "work": "\\(3^2=9\\)"
+            },
+            {
+              "explain": "State the value.",
+              "work": "\\(\\boxed{9}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q6i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(27^{2/3}\\)",
+              "note": "The denominator of the fractional index gives the root; the numerator gives the power."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q6ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate without the use of a calculator, show all working: (ii) \\(\\left(\\frac94\\right)^{-1/2}\\)",
+          "options": [
+            "\\(\\frac32\\)",
+            "\\(\\frac49\\)",
+            "\\(\\frac23\\)",
+            "\\(-\\frac23\\)"
+          ],
+          "answer": 2,
+          "hint": "The negative exponent takes the reciprocal; the exponent 1/2 means square root.",
+          "steps": [
+            {
+              "explain": "Use the negative exponent to take the reciprocal.",
+              "work": "\\(\\left(\\frac94\\right)^{-1/2}=\\left(\\frac49\\right)^{1/2}\\)"
+            },
+            {
+              "explain": "Take the square root of the numerator and denominator.",
+              "work": "\\(\\sqrt{\\frac49}=\\frac{2}{3}\\)"
+            },
+            {
+              "explain": "State the positive principal root.",
+              "work": "\\(\\boxed{\\frac23}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q6ii"
+          },
+          "keyPoints": [
+            {
+              "text": "1",
+              "note": "The negative exponent takes the reciprocal; the exponent 1/2 means square root."
+            }
+          ]
         }
       ]
     },
@@ -6592,6 +7108,221 @@
             "school": "Killara High School",
             "grade": "9",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "yr9t3-2023-si-q3i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express each of the following in scientific notation rounded to 3 significant figures: (i) 45 864 000",
+          "options": [
+            "\\(4.59\\times10^7\\)",
+            "\\(4.58\\times10^7\\)",
+            "\\(4.59\\times10^6\\)",
+            "\\(45.9\\times10^6\\)"
+          ],
+          "answer": 0,
+          "hint": "Place the decimal after the first non-zero digit, then round to three significant figures.",
+          "steps": [
+            {
+              "explain": "Move the decimal point so the number is between 1 and 10.",
+              "work": "\\(45,864,000=4.5864\\times10^7\\)"
+            },
+            {
+              "explain": "Round the coefficient to 3 significant figures.",
+              "work": "\\(4.5864\\to4.59\\)"
+            },
+            {
+              "explain": "Write scientific notation.",
+              "work": "\\(\\boxed{4.59\\times10^7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q3i"
+          },
+          "keyPoints": [
+            {
+              "text": "3",
+              "note": "Place the decimal after the first non-zero digit, then round to three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q3ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express each of the following in scientific notation rounded to 3 significant figures: (ii) 0.004998",
+          "options": [
+            "\\(4.99\\times10^{-3}\\)",
+            "\\(5.00\\times10^{-3}\\)",
+            "\\(5.00\\times10^{-4}\\)",
+            "\\(0.500\\times10^{-2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Move the decimal to make a coefficient between 1 and 10, and keep the three significant figures.",
+          "steps": [
+            {
+              "explain": "Write the number with a coefficient between 1 and 10.",
+              "work": "\\(0.004998=4.998\\times10^{-3}\\)"
+            },
+            {
+              "explain": "Round to three significant figures.",
+              "work": "\\(4.998\\to5.00\\)"
+            },
+            {
+              "explain": "Keep the exponent and trailing zeros that show three significant figures.",
+              "work": "\\(\\boxed{5.00\\times10^{-3}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q3ii"
+          },
+          "keyPoints": [
+            {
+              "text": "3",
+              "note": "Move the decimal to make a coefficient between 1 and 10, and keep the three significant figures."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q4i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express each of the following as a basic numeral: (i) \\(9.3\\times10^{-7}\\)",
+          "options": [
+            "\\(0.0000093\\)",
+            "\\(0.000000093\\)",
+            "\\(0.00000093\\)",
+            "\\(9300000\\)"
+          ],
+          "answer": 2,
+          "hint": "A power of \\(10^{-7}\\) moves the decimal point seven places to the left.",
+          "steps": [
+            {
+              "explain": "Start with the coefficient.",
+              "work": "\\(9.3\\)"
+            },
+            {
+              "explain": "Move the decimal point seven places left.",
+              "work": "\\(9.3\\times10^{-7}=0.00000093\\)"
+            },
+            {
+              "explain": "Check the result is smaller than 1.",
+              "work": "\\(\\boxed{0.00000093}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q4i"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(9.3\\times10^{-7}\\)",
+              "note": "A power of \\(10^{-7}\\) moves the decimal point seven places to the left."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q4ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express each of the following as a basic numeral: (ii) \\(1.523\\times10^9\\)",
+          "options": [
+            "\\(152,300,000\\)",
+            "\\(15,230,000,000\\)",
+            "\\(1,523,000\\)",
+            "\\(1,523,000,000\\)"
+          ],
+          "answer": 3,
+          "hint": "A power of \\(10^9\\) moves the decimal point nine places to the right.",
+          "steps": [
+            {
+              "explain": "Start with the coefficient.",
+              "work": "\\(1.523\\)"
+            },
+            {
+              "explain": "Move the decimal point nine places right.",
+              "work": "\\(1.523\\times10^9=1,523,000,000\\)"
+            },
+            {
+              "explain": "Check the result has 10 digits.",
+              "work": "\\(\\boxed{1,523,000,000}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q4ii"
+          },
+          "keyPoints": [
+            {
+              "text": "\\(1.523\\times10^9\\)",
+              "note": "A power of \\(10^9\\) moves the decimal point nine places to the right."
+            }
+          ]
+        },
+        {
+          "id": "yr9t3-2023-si-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Earth is 1.52 × 10^8 kilometres from the Sun. If the speed of light is 3 × 10^5 kilometres per second, how long does it take light to travel from the Sun to Earth? Give your answer to the nearest second.",
+          "options": [
+            "\\(507\\text{ seconds}\\)",
+            "\\(51\\text{ seconds}\\)",
+            "\\(5,067\\text{ seconds}\\)",
+            "\\(507\\text{ minutes}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use time = distance ÷ speed. The powers of ten divide by subtracting their exponents.",
+          "steps": [
+            {
+              "explain": "Write the distance and speed in scientific notation.",
+              "work": "\\(d=1.52\\times10^8\\text{ km},\\quad v=3\\times10^5\\text{ km/s}\\)"
+            },
+            {
+              "explain": "Divide distance by speed.",
+              "work": "\\(t=\\frac{d}{v}=\\frac{1.52}{3}\\times10^{8-5}=506.666\\ldots\\text{ s}\\)"
+            },
+            {
+              "explain": "Round to the nearest second.",
+              "work": "\\(\\boxed{507\\text{ seconds}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "1.52",
+              "note": "Use time = distance ÷ speed. The powers of ten divide by subtracting their exponents."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "si-q5"
           }
         }
       ]

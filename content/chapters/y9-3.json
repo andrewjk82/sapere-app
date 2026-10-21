@@ -4385,6 +4385,259 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-fm-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Matilda is paid an annual 17.5% holiday loading on 4 weeks normal wages. Calculate her 4 week holiday pay (including loading) if she earns $1867.20 per fortnight.",
+          "options": [
+            "\\(\\$3,734.40\\)",
+            "\\(\\$4,387.92\\)",
+            "\\(\\$653.52\\)",
+            "\\(\\$4,060.08\\)"
+          ],
+          "answer": 1,
+          "hint": "Four weeks is two fortnights. Find those wages, then add 17.5% of that amount.",
+          "steps": [
+            {
+              "explain": "Convert four weeks to two fortnights and find normal wages.",
+              "work": "\\(2(1,867.20)=\\$3,734.40\\)"
+            },
+            {
+              "explain": "Calculate the holiday loading.",
+              "work": "\\(0.175(3,734.40)=\\$653.52\\)"
+            },
+            {
+              "explain": "Add the loading to normal wages.",
+              "work": "\\(3,734.40+653.52=\\boxed{\\$4,387.92}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "17.5%",
+              "note": "Four weeks is two fortnights. Find those wages, then add 17.5% of that amount."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q4"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q5i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Mary earned $42,000 last year with allowable deductions of $3427. Find her taxable income.",
+          "options": [
+            "\\(\\$45,427\\)",
+            "\\(\\$3,427\\)",
+            "\\(\\$38,573\\)",
+            "\\(\\$42,000\\)"
+          ],
+          "answer": 2,
+          "hint": "Taxable income equals gross income minus allowable deductions.",
+          "steps": [
+            {
+              "explain": "Identify income and allowable deductions.",
+              "work": "\\(42,000\\text{ dollars income},\\quad 3,427\\text{ dollars deductions}\\)"
+            },
+            {
+              "explain": "Subtract deductions from income.",
+              "work": "\\(42,000-3,427=38,573\\)"
+            },
+            {
+              "explain": "State taxable income.",
+              "work": "\\(\\boxed{\\$38,573}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$42,000",
+              "note": "Taxable income equals gross income minus allowable deductions."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q5i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q5ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Mary earned $42,000 last year with allowable deductions of $3427. Find her tax payable using the table above.",
+          "options": [
+            "\\(\\$3,572.00\\)",
+            "\\(\\$5,007.73\\)",
+            "\\(\\$12,536.23\\)",
+            "\\(\\$4,083.23\\)"
+          ],
+          "answer": 3,
+          "hint": "First calculate taxable income, then use the matching $37,001–$90,000 tax-table row.",
+          "steps": [
+            {
+              "explain": "Calculate taxable income and select its tax-table bracket.",
+              "work": "\\(42,000-3,427=38,573\\), which is in the \\(37,001\\text{–}90,000\\) bracket."
+            },
+            {
+              "explain": "Find the amount above $37,000 and multiply by $0.325.",
+              "work": "\\(38,573-37,000=1,573;\\quad 1,573(0.325)=511.225\\)"
+            },
+            {
+              "explain": "Add the base tax and round to the nearest cent.",
+              "work": "\\(3,572+511.225=\\boxed{\\$4,083.23}\\)"
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"150\" viewBox=\"0 0 380 150\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><rect x=\"12\" y=\"12\" width=\"356\" height=\"126\" rx=\"8\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/><text x=\"24\" y=\"42\" font-family=\"Arial\" font-size=\"14\" fill=\"#334155\">$37,001–$90,000: $3,572 + 32.5c per $1 over $37,000</text><text x=\"24\" y=\"72\" font-family=\"Arial\" font-size=\"13\" fill=\"#64748b\">Use this row for taxable income $38,573.</text><text x=\"24\" y=\"108\" font-family=\"Arial\" font-size=\"12\" fill=\"#64748b\">Source tax-table row reproduced from the exam.</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "$42,000",
+              "note": "First calculate taxable income, then use the matching $37,001–$90,000 tax-table row."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q5ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q6i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ruby bought furniture marked for $1500 on terms. She paid a 20% deposit and $42.50 per month for 4 years. Find the balance owing after paying the deposit.",
+          "options": [
+            "\\(\\$1,200\\)",
+            "\\(\\$300\\)",
+            "\\(\\$1,500\\)",
+            "\\(\\$1,020\\)"
+          ],
+          "answer": 0,
+          "hint": "Find 20% of $1,500 for the deposit, then subtract it from the marked price.",
+          "steps": [
+            {
+              "explain": "Find the deposit.",
+              "work": "\\(0.20(1,500)=\\$300\\)"
+            },
+            {
+              "explain": "Subtract the deposit from the marked price.",
+              "work": "\\(1,500-300=\\boxed{\\$1,200}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$1500",
+              "note": "Find 20% of $1,500 for the deposit, then subtract it from the marked price."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q6i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q6ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Ruby bought furniture marked for $1500 on terms. She paid a 20% deposit and $42.50 per month for 4 years. Find the total paid for the furniture.",
+          "options": [
+            "\\(\\$2,040\\)",
+            "\\(\\$2,340\\)",
+            "\\(\\$1,500\\)",
+            "\\(\\$2,340\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the deposit to 48 monthly payments.",
+          "steps": [
+            {
+              "explain": "Convert four years into monthly payments.",
+              "work": "\\(4(12)=48\\text{ months}\\)"
+            },
+            {
+              "explain": "Calculate the instalments and add the deposit.",
+              "work": "\\(48(42.50)+0.20(1,500)=2,040+300\\)"
+            },
+            {
+              "explain": "State the total paid.",
+              "work": "\\(\\boxed{\\$2,340}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$1500",
+              "note": "Add the deposit to 48 monthly payments."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q6ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q6iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Ruby bought furniture marked for $1500 on terms. She paid a 20% deposit and $42.50 per month for 4 years. Find the amount of interest paid.",
+          "options": [
+            "\\(\\$540\\)",
+            "\\(\\$2,040\\)",
+            "\\(\\$840\\)",
+            "\\(\\$1,200\\)"
+          ],
+          "answer": 2,
+          "hint": "Interest paid is the total paid minus the marked cash price.",
+          "steps": [
+            {
+              "explain": "Use the total paid: deposit plus 48 instalments.",
+              "work": "\\(300+48(42.50)=2,340\\)"
+            },
+            {
+              "explain": "Subtract the furniture’s marked price.",
+              "work": "\\(2,340-1,500=\\boxed{\\$840}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$1500",
+              "note": "Interest paid is the total paid minus the marked cash price."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q6iii"
+          }
         }
       ]
     },
@@ -4436,6 +4689,135 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the interest earned on an investment of $45,000 if it is invested at: (i) 3.5% pa simple interest for 5 years",
+          "options": [
+            "\\(\\$7,875\\)",
+            "\\(\\$1,575\\)",
+            "\\(\\$8,437.50\\)",
+            "\\(\\$52,875\\)"
+          ],
+          "answer": 0,
+          "hint": "Use simple interest: multiply the principal by the annual rate and the number of years.",
+          "steps": [
+            {
+              "explain": "Identify the simple-interest quantities: principal \\(P=45,000\\), rate \\(r=0.035\\), and time \\(t=5\\).",
+              "work": "\\(I=Prt\\)"
+            },
+            {
+              "explain": "Substitute and multiply.",
+              "work": "\\(I=45,000(0.035)(5)=1,575(5)=7,875\\)"
+            },
+            {
+              "explain": "State the interest earned, not the final balance.",
+              "work": "\\(\\boxed{I=\\$7,875}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$45,000",
+              "note": "Use simple interest: multiply the principal by the annual rate and the number of years."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q1i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How long does Kim need to invest $5000 at 4% pa simple interest in order to produce $100 interest?",
+          "options": [
+            "\\(2\\text{ years}\\)",
+            "\\(5\\text{ years}\\)",
+            "\\(0.5\\text{ years}\\)",
+            "\\(0.05\\text{ years}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(I=Prt\\) and rearrange to make time the subject.",
+          "steps": [
+            {
+              "explain": "List the known values and use the simple-interest formula.",
+              "work": "\\(I=100,\\quad P=5,000,\\quad r=0.04,\\quad I=Prt\\)"
+            },
+            {
+              "explain": "Rearrange for time and substitute.",
+              "work": "\\(t=\\frac{I}{Pr}=\\frac{100}{5,000(0.04)}\\)"
+            },
+            {
+              "explain": "Calculate and state the time in years.",
+              "work": "\\(t=\\frac{100}{200}=\\boxed{0.5\\text{ years}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$5000",
+              "note": "Use \\(I=Prt\\) and rearrange to make time the subject."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q2"
+          }
+        },
+        {
+          "id": "yr9t3-2023-fm-q6iv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Ruby bought furniture marked for $1500 on terms. She paid a 20% deposit and $42.50 per month for 4 years. Find the annual simple interest rate.",
+          "options": [
+            "\\(14\\%\\)",
+            "\\(7\\%\\)",
+            "\\(35\\%\\)",
+            "\\(17.5\\%\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the unpaid balance as principal and the 4-year period in \\(I=Prt\\).",
+          "steps": [
+            {
+              "explain": "Find the starting balance after the deposit.",
+              "work": "\\(P=1,500-300=1,200\\)"
+            },
+            {
+              "explain": "Use the interest from the instalment plan and rearrange.",
+              "work": "\\(840=1,200(r)(4)\\Rightarrow r=\\frac{840}{4,800}\\)"
+            },
+            {
+              "explain": "Convert the decimal rate to a percentage.",
+              "work": "\\(r=0.175=\\boxed{17.5\\%\\text{ p.a.}}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$1500",
+              "note": "Use the unpaid balance as principal and the 4-year period in \\(I=Prt\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q6iv"
           }
         }
       ]
@@ -4528,6 +4910,49 @@
             "examType": "Annual Examination",
             "grade": "9"
           }
+        },
+        {
+          "id": "yr9t3-2023-fm-q1ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the interest earned on an investment of $45,000 if it is invested at: (ii) 3.5% compound interest for 5 years, compounding annually",
+          "options": [
+            "\\(\\$7,875.00\\)",
+            "\\(\\$8,445.88\\)",
+            "\\(\\$53,445.85\\)",
+            "\\(\\$8,100.00\\)"
+          ],
+          "answer": 1,
+          "hint": "For annual compounding, find the final amount with \\(A=P(1+r)^n\\), then subtract the principal.",
+          "steps": [
+            {
+              "explain": "Record the principal, annual rate, and number of compounding periods.",
+              "work": "\\(P=45,000,\\quad r=0.035,\\quad n=5\\)"
+            },
+            {
+              "explain": "Apply the compound-interest formula.",
+              "work": "\\(A=45,000(1.035)^5\\approx53,445.88\\)"
+            },
+            {
+              "explain": "Interest is the accumulated amount minus the original principal.",
+              "work": "\\(I=A-P=53,445.88-45,000=\\boxed{\\$8,445.88}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "$45,000",
+              "note": "For annual compounding, find the final amount with \\(A=P(1+r)^n\\), then subtract the principal."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q1ii"
+          }
         }
       ]
     },
@@ -4574,6 +4999,49 @@
             "grade": "9"
           },
           "xp": 3
+        },
+        {
+          "id": "yr9t3-2023-fm-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A computer depreciates in value at 15% p.a. If the computer was bought for $2300, how much is it worth after 3 years?",
+          "options": [
+            "\\(\\$1,265.00\\)",
+            "\\(\\$1,415.64\\)",
+            "\\(\\$1,415.64\\)",
+            "\\(\\$1,955.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Each year the computer keeps 85% of its value. Apply that multiplier three times.",
+          "steps": [
+            {
+              "explain": "Convert annual depreciation to the retained-value multiplier.",
+              "work": "\\(1-0.15=0.85\\)"
+            },
+            {
+              "explain": "Apply compound depreciation for three years.",
+              "work": "\\(V=2,300(0.85)^3=1,415.6375\\)"
+            },
+            {
+              "explain": "Round to the nearest cent.",
+              "work": "\\(\\boxed{V=\\$1,415.64}\\)"
+            }
+          ],
+          "keyPoints": [
+            {
+              "text": "15%",
+              "note": "Each year the computer keeps 85% of its value. Apply that multiplier three times."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "fm-q8"
+          }
         }
       ]
     }

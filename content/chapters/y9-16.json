@@ -3567,6 +3567,116 @@
             "school": "Willoughby Girls High School",
             "year": "2016"
           }
+        },
+        {
+          "id": "yr9t3-2023-meas-q1i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (i)",
+          "options": [
+            "\\(276\\text{ cm}^2\\)",
+            "\\(326\\text{ cm}^3\\)",
+            "\\(326\\text{ cm}^2\\)",
+            "\\(250\\text{ cm}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the areas of the three rectangular faces and the two triangular ends. The triangle area uses base 10 cm and perpendicular height 5 cm.",
+          "steps": [
+            {
+              "explain": "Read the diagram: the triangular end has base 10 cm, perpendicular height 5 cm, and other sides 7 cm and 6 cm; prism length is 12 cm.",
+              "work": "\\(A_{\\triangle}=\\frac12(10)(5)=25\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"45,150 150,150 95,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"125,115 230,115 175,40\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"150\" x2=\"125\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"150\" x2=\"230\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"95\" y1=\"75\" x2=\"175\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"125\" y1=\"115\" x2=\"175\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"88\" y=\"174\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"57\" y=\"109\" font-family=\"Arial\" font-size=\"14\">7 cm</text><text x=\"173\" y=\"76\" font-family=\"Arial\" font-size=\"14\">6 cm</text><text x=\"164\" y=\"140\" font-family=\"Arial\" font-size=\"14\">12 cm</text><text x=\"25\" y=\"112\" font-family=\"Arial\" font-size=\"14\">h = 5 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">TRIANGLE END</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">base = 10 cm; perpendicular height = 5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add both triangular ends and the three rectangles.",
+              "work": "\\(SA=2(25)+12(10+7+6)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"45,150 150,150 95,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"125,115 230,115 175,40\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"150\" x2=\"125\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"150\" x2=\"230\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"95\" y1=\"75\" x2=\"175\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"125\" y1=\"115\" x2=\"175\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"88\" y=\"174\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"57\" y=\"109\" font-family=\"Arial\" font-size=\"14\">7 cm</text><text x=\"173\" y=\"76\" font-family=\"Arial\" font-size=\"14\">6 cm</text><text x=\"164\" y=\"140\" font-family=\"Arial\" font-size=\"14\">12 cm</text><text x=\"25\" y=\"112\" font-family=\"Arial\" font-size=\"14\">h = 5 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">SIDE FACES</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">prism length = 12 cm; triangle sides = 10, 7, 6 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate and include square units.",
+              "work": "\\(SA=50+276=\\boxed{326\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"45,150 150,150 95,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"125,115 230,115 175,40\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"150\" x2=\"125\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"150\" x2=\"230\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"95\" y1=\"75\" x2=\"175\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"125\" y1=\"115\" x2=\"175\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"88\" y=\"174\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"57\" y=\"109\" font-family=\"Arial\" font-size=\"14\">7 cm</text><text x=\"173\" y=\"76\" font-family=\"Arial\" font-size=\"14\">6 cm</text><text x=\"164\" y=\"140\" font-family=\"Arial\" font-size=\"14\">12 cm</text><text x=\"25\" y=\"112\" font-family=\"Arial\" font-size=\"14\">h = 5 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">ADD ALL CLOSED FACES</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">2 triangles + 3 rectangles</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"45,150 150,150 95,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"125,115 230,115 175,40\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"150\" x2=\"125\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"150\" x2=\"230\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"95\" y1=\"75\" x2=\"175\" y2=\"40\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"125\" y1=\"115\" x2=\"175\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"88\" y=\"174\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"57\" y=\"109\" font-family=\"Arial\" font-size=\"14\">7 cm</text><text x=\"173\" y=\"76\" font-family=\"Arial\" font-size=\"14\">6 cm</text><text x=\"164\" y=\"140\" font-family=\"Arial\" font-size=\"14\">12 cm</text><text x=\"25\" y=\"112\" font-family=\"Arial\" font-size=\"14\">h = 5 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "closed solids",
+              "note": "Add the areas of the three rectangular faces and the two triangular ends. The triangle area uses base 10 cm and perpendicular height 5 cm."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q1i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-meas-q1iii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (iii)",
+          "options": [
+            "\\(564\\text{ cm}^2\\)",
+            "\\(384\\text{ cm}^2\\)",
+            "\\(564\\text{ cm}^3\\)",
+            "\\(744\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The base is a 10 cm by 18 cm rectangle. Pair the two triangular faces with base 10 and height 15, and the two with base 18 and height 13.",
+          "steps": [
+            {
+              "explain": "Find the area of the rectangular base.",
+              "work": "\\(10(18)=180\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"60,155 190,185 320,145 190,118\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"60\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"118\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"98\" y=\"178\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"244\" y=\"174\" font-family=\"Arial\" font-size=\"14\">18 cm</text><text x=\"125\" y=\"91\" font-family=\"Arial\" font-size=\"13\">15 cm</text><text x=\"223\" y=\"92\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"217\" y=\"113\" font-family=\"Arial\" font-size=\"11\">perpendicular</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">RECTANGULAR BASE</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">10 cm × 18 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Find the combined areas of the four triangular faces using the shown perpendicular slant heights.",
+              "work": "\\(2\\left(\\frac12(10)(15)\\right)+2\\left(\\frac12(18)(13)\\right)=150+234\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"60,155 190,185 320,145 190,118\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"60\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"118\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"98\" y=\"178\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"244\" y=\"174\" font-family=\"Arial\" font-size=\"14\">18 cm</text><text x=\"125\" y=\"91\" font-family=\"Arial\" font-size=\"13\">15 cm</text><text x=\"223\" y=\"92\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"217\" y=\"113\" font-family=\"Arial\" font-size=\"11\">perpendicular</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">PAIR OF TRIANGLES</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">base = 10 cm; perpendicular height = 15 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add the base to the lateral faces.",
+              "work": "\\(SA=180+150+234=\\boxed{564\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\"><polygon points=\"60,155 190,185 320,145 190,118\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"60\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"118\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"98\" y=\"178\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"244\" y=\"174\" font-family=\"Arial\" font-size=\"14\">18 cm</text><text x=\"125\" y=\"91\" font-family=\"Arial\" font-size=\"13\">15 cm</text><text x=\"223\" y=\"92\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"217\" y=\"113\" font-family=\"Arial\" font-size=\"11\">perpendicular</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">OTHER TRIANGLE PAIR</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">base = 18 cm; perpendicular height = 13 cm</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"220\" viewBox=\"0 0 380 220\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"60,155 190,185 320,145 190,118\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"60\" y2=\"155\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"320\" y2=\"145\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"42\" x2=\"190\" y2=\"118\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"98\" y=\"178\" font-family=\"Arial\" font-size=\"14\">10 cm</text><text x=\"244\" y=\"174\" font-family=\"Arial\" font-size=\"14\">18 cm</text><text x=\"125\" y=\"91\" font-family=\"Arial\" font-size=\"13\">15 cm</text><text x=\"223\" y=\"92\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"217\" y=\"113\" font-family=\"Arial\" font-size=\"11\">perpendicular</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "closed solids",
+              "note": "The base is a 10 cm by 18 cm rectangle. Pair the two triangular faces with base 10 and height 15, and the two with base 18 and height 13."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q1iii"
+          }
         }
       ]
     },
@@ -4251,6 +4361,61 @@
             "grade": "9"
           },
           "xp": 2
+        },
+        {
+          "id": "yr9t3-2023-meas-q1ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the surface area of each the following closed solids, correct to 2 decimal places where necessary: (ii)",
+          "options": [
+            "\\(1,879.16\\text{ m}^2\\)",
+            "\\(1,154.54\\text{ cm}^2\\)",
+            "\\(2,143.72\\text{ cm}^2\\)",
+            "\\(1,879.25\\text{ cm}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "This is a closed half-cylinder. Convert 1.2 m to centimetres, then include the curved half-cylinder, its flat rectangular face, and both semicircular ends.",
+          "steps": [
+            {
+              "explain": "Convert the length and identify the radius.",
+              "work": "\\(1.2\\text{ m}=120\\text{ cm},\\quad r=3\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 190\"><path d=\"M55 125 A48 48 0 0 1 151 125 L320 125 A48 48 0 0 0 224 77 L151 77 A48 48 0 0 0 55 125Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 125 A48 48 0 0 1 151 125\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"90\" y=\"119\" font-family=\"Arial\" font-size=\"14\">r = 3 cm</text><text x=\"210\" y=\"113\" font-family=\"Arial\" font-size=\"14\">length = 1.2 m</text><text x=\"160\" y=\"165\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">Convert length to 120 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">UNIT AND RADIUS</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">1.2 m = 120 cm; radius = 3 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use curved area \\(\\pi rL\\), rectangle area \\(2rL\\), and two semicircles (one circle).",
+              "work": "\\(SA=\\pi(3)(120)+(6)(120)+\\pi(3)^2=369\\pi+720\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 190\"><path d=\"M55 125 A48 48 0 0 1 151 125 L320 125 A48 48 0 0 0 224 77 L151 77 A48 48 0 0 0 55 125Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 125 A48 48 0 0 1 151 125\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"90\" y=\"119\" font-family=\"Arial\" font-size=\"14\">r = 3 cm</text><text x=\"210\" y=\"113\" font-family=\"Arial\" font-size=\"14\">length = 1.2 m</text><text x=\"160\" y=\"165\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">Convert length to 120 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">CURVED AND FLAT FACES</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">curved half-cylinder πrL; cut rectangle 2rL</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 2 decimal places.",
+              "work": "\\(SA\\approx\\boxed{1,879.25\\text{ cm}^2}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 190\"><path d=\"M55 125 A48 48 0 0 1 151 125 L320 125 A48 48 0 0 0 224 77 L151 77 A48 48 0 0 0 55 125Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 125 A48 48 0 0 1 151 125\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"90\" y=\"119\" font-family=\"Arial\" font-size=\"14\">r = 3 cm</text><text x=\"210\" y=\"113\" font-family=\"Arial\" font-size=\"14\">length = 1.2 m</text><text x=\"160\" y=\"165\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">Convert length to 120 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">CIRCULAR ENDS</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">two half-circles form one circle: πr²</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"190\" viewBox=\"0 0 380 190\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><path d=\"M55 125 A48 48 0 0 1 151 125 L320 125 A48 48 0 0 0 224 77 L151 77 A48 48 0 0 0 55 125Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M55 125 A48 48 0 0 1 151 125\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"90\" y=\"119\" font-family=\"Arial\" font-size=\"14\">r = 3 cm</text><text x=\"210\" y=\"113\" font-family=\"Arial\" font-size=\"14\">length = 1.2 m</text><text x=\"160\" y=\"165\" font-family=\"Arial\" font-size=\"12\" fill=\"#b45309\">Convert length to 120 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "closed solids",
+              "note": "This is a closed half-cylinder. Convert 1.2 m to centimetres, then include the curved half-cylinder, its flat rectangular face, and both semicircular ends."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q1ii"
+          }
         }
       ]
     },
@@ -10423,6 +10588,171 @@
             "source": "YR 9 Task 3 Yearly 2016",
             "school": "Willoughby Girls High School",
             "year": "2016"
+          }
+        },
+        {
+          "id": "yr9t3-2023-meas-q2i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the volume of the following solids, correct to 1 decimal place where necessary: (i)",
+          "options": [
+            "\\(4,368\\text{ cm}^3\\)",
+            "\\(2,184\\text{ cm}^3\\)",
+            "\\(2,016\\text{ cm}^3\\)",
+            "\\(2,184\\text{ cm}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the triangular cross-section area first, then multiply by the 14 cm prism length.",
+          "steps": [
+            {
+              "explain": "Identify the triangular base measurements and prism length.",
+              "work": "\\(b=24\\text{ cm},\\quad h=13\\text{ cm},\\quad L=14\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 200\"><polygon points=\"45,155 150,155 100,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"205,122 310,122 260,32\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"155\" x2=\"205\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"155\" x2=\"310\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"65\" x2=\"260\" y2=\"32\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"81\" y=\"178\" font-family=\"Arial\" font-size=\"13\">24 cm</text><text x=\"39\" y=\"110\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"252\" y=\"151\" font-family=\"Arial\" font-size=\"13\">14 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">TRIANGLE BASE AREA</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">base = 24 cm; perpendicular height = 13 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area of one triangular end.",
+              "work": "\\(A=\\frac12(24)(13)=156\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 200\"><polygon points=\"45,155 150,155 100,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"205,122 310,122 260,32\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"155\" x2=\"205\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"155\" x2=\"310\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"65\" x2=\"260\" y2=\"32\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"81\" y=\"178\" font-family=\"Arial\" font-size=\"13\">24 cm</text><text x=\"39\" y=\"110\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"252\" y=\"151\" font-family=\"Arial\" font-size=\"13\">14 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">PRISM LENGTH</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">multiply the 156 cm² cross-section by 14 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply cross-sectional area by prism length.",
+              "work": "\\(V=156(14)=\\boxed{2,184\\text{ cm}^3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 200\"><polygon points=\"45,155 150,155 100,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"205,122 310,122 260,32\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"155\" x2=\"205\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"155\" x2=\"310\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"65\" x2=\"260\" y2=\"32\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"81\" y=\"178\" font-family=\"Arial\" font-size=\"13\">24 cm</text><text x=\"39\" y=\"110\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"252\" y=\"151\" font-family=\"Arial\" font-size=\"13\">14 cm</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">VOLUME</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">156 × 14 = 2184 cm³</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"200\" viewBox=\"0 0 380 200\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"45,155 150,155 100,65\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"205,122 310,122 260,32\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"45\" y1=\"155\" x2=\"205\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"150\" y1=\"155\" x2=\"310\" y2=\"122\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"65\" x2=\"260\" y2=\"32\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"81\" y=\"178\" font-family=\"Arial\" font-size=\"13\">24 cm</text><text x=\"39\" y=\"110\" font-family=\"Arial\" font-size=\"13\">13 cm</text><text x=\"252\" y=\"151\" font-family=\"Arial\" font-size=\"13\">14 cm</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "following solids",
+              "note": "Find the triangular cross-section area first, then multiply by the 14 cm prism length."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q2i"
+          }
+        },
+        {
+          "id": "yr9t3-2023-meas-q2ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the volume of the following solids, correct to 1 decimal place where necessary: (ii)",
+          "options": [
+            "\\(5,899.5\\text{ cm}^3\\)",
+            "\\(2,314.2\\text{ cm}^3\\)",
+            "\\(2,950.7\\text{ cm}^3\\)",
+            "\\(2,949.7\\text{ cm}^2\\)"
+          ],
+          "answer": 2,
+          "hint": "The 17 cm measure is the diameter. Halve it to get the radius before using \\(V=\\pi r^2h\\).",
+          "steps": [
+            {
+              "explain": "Find the radius from the diameter.",
+              "work": "\\(r=\\frac{17}{2}=8.5\\text{ cm},\\quad h=13\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><ellipse cx=\"185\" cy=\"45\" rx=\"95\" ry=\"22\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 45 V130 M280 45 V130\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 0 280 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 1 280 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"155\" y=\"34\" font-family=\"Arial\" font-size=\"14\">diameter 17 cm</text><text x=\"288\" y=\"93\" font-family=\"Arial\" font-size=\"14\">13 cm</text><text x=\"174\" y=\"93\" font-family=\"Arial\" font-size=\"12\" fill=\"#6366f1\">r = 8.5</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">RADIUS</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">diameter 17 cm, so radius = 8.5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the cylinder volume formula.",
+              "work": "\\(V=\\pi(8.5)^2(13)=939.25\\pi\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><ellipse cx=\"185\" cy=\"45\" rx=\"95\" ry=\"22\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 45 V130 M280 45 V130\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 0 280 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 1 280 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"155\" y=\"34\" font-family=\"Arial\" font-size=\"14\">diameter 17 cm</text><text x=\"288\" y=\"93\" font-family=\"Arial\" font-size=\"14\">13 cm</text><text x=\"174\" y=\"93\" font-family=\"Arial\" font-size=\"12\" fill=\"#6366f1\">r = 8.5</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">CYLINDER HEIGHT</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">height = 13 cm; use πr²h</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(V\\approx\\boxed{2,950.7\\text{ cm}^3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><ellipse cx=\"185\" cy=\"45\" rx=\"95\" ry=\"22\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 45 V130 M280 45 V130\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 0 280 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 1 280 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"155\" y=\"34\" font-family=\"Arial\" font-size=\"14\">diameter 17 cm</text><text x=\"288\" y=\"93\" font-family=\"Arial\" font-size=\"14\">13 cm</text><text x=\"174\" y=\"93\" font-family=\"Arial\" font-size=\"12\" fill=\"#6366f1\">r = 8.5</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">VOLUME</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">π × 8.5² × 13</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"180\" viewBox=\"0 0 380 180\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><ellipse cx=\"185\" cy=\"45\" rx=\"95\" ry=\"22\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 45 V130 M280 45 V130\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 0 280 130\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M90 130 A95 22 0 0 1 280 130\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4 3\"/><text x=\"155\" y=\"34\" font-family=\"Arial\" font-size=\"14\">diameter 17 cm</text><text x=\"288\" y=\"93\" font-family=\"Arial\" font-size=\"14\">13 cm</text><text x=\"174\" y=\"93\" font-family=\"Arial\" font-size=\"12\" fill=\"#6366f1\">r = 8.5</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "following solids",
+              "note": "The 17 cm measure is the diameter. Halve it to get the radius before using \\(V=\\pi r^2h\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q2ii"
+          }
+        },
+        {
+          "id": "yr9t3-2023-meas-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The swimming pool below is 16m long and 12m wide. The depth of the water ranges from 1m to 3m. Calculate the capacity of the pool in kilolitres.",
+          "options": [
+            "\\(192\\text{ kL}\\)",
+            "\\(768\\text{ kL}\\)",
+            "\\(384\\text{ L}\\)",
+            "\\(384\\text{ kL}\\)"
+          ],
+          "answer": 3,
+          "hint": "The bottom slopes uniformly, so use the average depth: the mean of 1 m and 3 m.",
+          "steps": [
+            {
+              "explain": "Read the pool dimensions and calculate its average depth.",
+              "work": "\\(d_{avg}=\\frac{1+3}{2}=2\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><polygon points=\"45,120 300,120 335,92 80,92\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"45,120 300,120 300,145 45,160\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"300,120 335,92 335,105 300,145\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"160\" x2=\"300\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"155\" y=\"82\" font-family=\"Arial\" font-size=\"12\">16 m</text><text x=\"50\" y=\"105\" font-family=\"Arial\" font-size=\"12\">12 m</text><text x=\"10\" y=\"130\" font-family=\"Arial\" font-size=\"12\">3 m</text><text x=\"302\" y=\"118\" font-family=\"Arial\" font-size=\"12\">1 m</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">AVERAGE DEPTH</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">(1 m + 3 m) ÷ 2 = 2 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the water volume.",
+              "work": "\\(V=16(12)(2)=384\\text{ m}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><polygon points=\"45,120 300,120 335,92 80,92\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"45,120 300,120 300,145 45,160\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"300,120 335,92 335,105 300,145\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"160\" x2=\"300\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"155\" y=\"82\" font-family=\"Arial\" font-size=\"12\">16 m</text><text x=\"50\" y=\"105\" font-family=\"Arial\" font-size=\"12\">12 m</text><text x=\"10\" y=\"130\" font-family=\"Arial\" font-size=\"12\">3 m</text><text x=\"302\" y=\"118\" font-family=\"Arial\" font-size=\"12\">1 m</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">PLAN DIMENSIONS</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">length 16 m × width 12 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert cubic metres to kilolitres.",
+              "work": "\\(1\\text{ m}^3=1\\text{ kL}\\Rightarrow\\boxed{384\\text{ kL}}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"300\" viewBox=\"0 0 380 300\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><svg x=\"0\" y=\"0\" width=\"380\" height=\"220\" viewBox=\"0 0 380 180\"><polygon points=\"45,120 300,120 335,92 80,92\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"45,120 300,120 300,145 45,160\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"300,120 335,92 335,105 300,145\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"160\" x2=\"300\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"155\" y=\"82\" font-family=\"Arial\" font-size=\"12\">16 m</text><text x=\"50\" y=\"105\" font-family=\"Arial\" font-size=\"12\">12 m</text><text x=\"10\" y=\"130\" font-family=\"Arial\" font-size=\"12\">3 m</text><text x=\"302\" y=\"118\" font-family=\"Arial\" font-size=\"12\">1 m</text></svg><rect x=\"8\" y=\"228\" width=\"364\" height=\"62\" rx=\"9\" fill=\"#fffbeb\" stroke=\"#fbbf24\" stroke-width=\"1.4\"/><text x=\"20\" y=\"250\" font-family=\"Arial,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#b45309\">CAPACITY</text><text x=\"20\" y=\"272\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">384 m³ = 384 kL</text></svg>"
+              }
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"380\" height=\"180\" viewBox=\"0 0 380 180\" style=\"display:block;margin:0 auto;max-width:100%;height:auto\"><polygon points=\"45,120 300,120 335,92 80,92\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"45,120 300,120 300,145 45,160\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.7\"/><polygon points=\"300,120 335,92 335,105 300,145\" fill=\"#bfdbfe\" stroke=\"#334155\" stroke-width=\"1.7\"/><line x1=\"45\" y1=\"160\" x2=\"300\" y2=\"145\" stroke=\"#6366f1\" stroke-width=\"2\"/><text x=\"155\" y=\"82\" font-family=\"Arial\" font-size=\"12\">16 m</text><text x=\"50\" y=\"105\" font-family=\"Arial\" font-size=\"12\">12 m</text><text x=\"10\" y=\"130\" font-family=\"Arial\" font-size=\"12\">3 m</text><text x=\"302\" y=\"118\" font-family=\"Arial\" font-size=\"12\">1 m</text></svg>"
+          },
+          "keyPoints": [
+            {
+              "text": "16",
+              "note": "The bottom slopes uniformly, so use the average depth: the mean of 1 m and 3 m."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Year 9 Mathematics 5.3 Task 3, 2023",
+            "school": "Year 9 Mathematics 5.3",
+            "examType": "Task 3",
+            "grade": "9",
+            "sourceQuestion": "meas-q3"
           }
         }
       ]
