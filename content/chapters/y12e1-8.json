@@ -365,7 +365,38 @@
           "id": "ascham2020e1-q6",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Consider rectangle ABCD, with vertices in order around the rectangle. Which vector statement is false?",
+          "timeLimit": 60,
+          "stem": "Consider the rectangle below.\n\nWhich of the following statements is false?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 150\" width=\"280\" height=\"150\"><rect width=\"280\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 30.0L220.0 30.0L220.0 110.0L60.0 110.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0\"/><text x=\"40.5\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"228.0\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"228.0\" y=\"124.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"38.8\" y=\"124.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">D</text></svg>"
+          },
+          "hint": "AB − BC = AB + CB. Replace AB by DC and use the triangle rule.",
+          "steps": [
+            {
+              "explain": "A is the triangle rule: \\(A\\to B\\to C\\) is the same as \\(A\\to C\\). True."
+            },
+            {
+              "explain": "Subtracting \\(\\overrightarrow{BC}\\) is adding \\(\\overrightarrow{CB}\\). In a rectangle \\(\\overrightarrow{AB}=\\overrightarrow{DC}\\), so",
+              "work": "\\(\\overrightarrow{AB}-\\overrightarrow{BC}=\\overrightarrow{DC}+\\overrightarrow{CB}=\\overrightarrow{DB}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 150\" width=\"280\" height=\"150\"><defs><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahea580c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#ea580c\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"280\" height=\"150\" rx=\"8\" fill=\"white\"/><path d=\"M60.0 30.0L220.0 30.0L220.0 110.0L60.0 110.0Z\" fill=\"#dbeafe\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.25\"/><text x=\"40.5\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">A</text><text x=\"228.0\" y=\"26.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">B</text><text x=\"228.0\" y=\"124.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">C</text><text x=\"38.8\" y=\"124.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">D</text><line x1=\"60.0\" y1=\"30.0\" x2=\"220.0\" y2=\"30.0\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"220.0\" y1=\"110.0\" x2=\"220.0\" y2=\"30.0\" stroke=\"#ea580c\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahea580c)\"/><line x1=\"60.0\" y1=\"110.0\" x2=\"220.0\" y2=\"30.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"132.0\" y=\"22.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\">AB</text><text x=\"228.0\" y=\"74.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\">−BC</text><text x=\"120.0\" y=\"92.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">DB</text></svg>"
+              }
+            },
+            {
+              "explain": "So B is true, and C (\\(\\overrightarrow{BD}\\), the opposite direction) is false."
+            },
+            {
+              "explain": "D is true because adjacent sides of a rectangle are perpendicular. The false statement is C."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "6"
+          },
           "options": [
             "\\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\)",
             "\\(\\overrightarrow{AB}-\\overrightarrow{BC}=\\overrightarrow{DB}\\)",
@@ -373,47 +404,12 @@
             "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\)"
           ],
           "answer": 2,
-          "hint": "Choose horizontal and vertical component directions for the rectangle. Remember that reversing a vector changes its sign.",
           "keyPoints": [
             {
-              "text": "Which vector statement is false?",
-              "note": "Represent each directed side by a component vector and compare both sides of each statement."
-            },
-            {
-              "text": "rectangle ABCD",
-              "note": "Adjacent side vectors are perpendicular; the diagonal AC is the head-to-tail sum AB + BC."
+              "text": "Which of the following statements is",
+              "note": "Write AB − BC as DC + CB and follow the arrows."
             }
-          ],
-          "steps": [
-            {
-              "explain": "Sketch rectangle ABCD or assign coordinates, e.g. A=(0,1), B=(1,1), C=(1,0), D=(0,0), to express each directed vector.",
-              "work": "\\(\\overrightarrow{AB}=(1,0),\\quad\\overrightarrow{BC}=(0,-1),\\quad\\overrightarrow{DB}=(1,1),\\quad\\overrightarrow{BD}=(-1,-1)\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Rectangle ABCD with vector directions highlighted for this solution step\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><defs><marker id=\"a\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5.2\" refY=\"3\" orient=\"auto\"><path d=\"M0 0L6 3L0 6Z\" fill=\"context-stroke\"/></marker></defs><path d=\"M125 75H295V185H125Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\"><text x=\"108\" y=\"70\">A</text><text x=\"300\" y=\"70\">B</text><text x=\"300\" y=\"203\">C</text><text x=\"107\" y=\"203\">D</text></g><path d=\"M125 75H295\" stroke=\"#ea580c\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/><path d=\"M295 75V185\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/></svg>"
-              }
-            },
-            {
-              "explain": "Check the two vector identities and the dot product using those components.",
-              "work": "\\(\\overrightarrow{AB}+\\overrightarrow{BC}=(1,-1)=\\overrightarrow{AC};\\quad\\overrightarrow{AB}\\cdot\\overrightarrow{BC}=0\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Rectangle ABCD with vector directions highlighted for this solution step\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><defs><marker id=\"a\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5.2\" refY=\"3\" orient=\"auto\"><path d=\"M0 0L6 3L0 6Z\" fill=\"context-stroke\"/></marker></defs><path d=\"M125 75H295V185H125Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.8\"/><g font-family=\"Arial\" font-size=\"14\" fill=\"#334155\"><text x=\"108\" y=\"70\">A</text><text x=\"300\" y=\"70\">B</text><text x=\"300\" y=\"203\">C</text><text x=\"107\" y=\"203\">D</text></g><path d=\"M125 75H295\" stroke=\"#ea580c\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/><path d=\"M295 75V185\" stroke=\"#2563eb\" stroke-width=\"2.6\" marker-end=\"url(#a)\"/><path d=\"M125 75L295 185\" stroke=\"#10b981\" stroke-width=\"2.5\" marker-end=\"url(#a)\"/><text x=\"205\" y=\"137\" font-family=\"Arial\" font-size=\"12\" fill=\"#047857\">AB + BC = AC</text></svg>"
-              }
-            },
-            {
-              "explain": "Subtracting BC reverses its downward direction, so the result points up and right. This is DB, not BD.",
-              "work": "\\(\\overrightarrow{AB}-\\overrightarrow{BC}=(1,0)-(0,-1)=(1,1)=\\overrightarrow{DB}\\ne\\overrightarrow{BD}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Rectangle showing DB and BD as separated parallel arrows in opposite directions\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.4\"/><path d=\"M125 75H295V185H125Z\" fill=\"#eff6ff\" stroke=\"#334155\" stroke-width=\"1.8\"/><path d=\"M125 75H295\" stroke=\"#ea580c\" stroke-width=\"2.5\"/><path d=\"M295 75V185\" stroke=\"#2563eb\" stroke-width=\"2.5\"/><path d=\"M125 185L295 75\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/><path d=\"M295 85L125 195\" stroke=\"#f43f5e\" stroke-width=\"2.5\" stroke-dasharray=\"4 3\"/><g font-family=\"Arial\" font-size=\"13\" fill=\"#334155\"><text x=\"108\" y=\"70\">A</text><text x=\"300\" y=\"70\">B</text><text x=\"300\" y=\"203\">C</text><text x=\"107\" y=\"203\">D</text><text x=\"310\" y=\"104\" fill=\"#6d28d9\">DB</text><text x=\"78\" y=\"188\" fill=\"#be123c\">BD</text></g></svg>"
-              }
-            }
-          ],
-          "solution": "Correct answer: \\(\\overrightarrow{AB}-\\overrightarrow{BC}=\\overrightarrow{BD}\\).",
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+          ]
         }
       ]
     },
@@ -425,118 +421,96 @@
         {
           "id": "ascham2020e1-q11a",
           "type": "multipart",
-          "difficulty": "medium",
-          "stem": "Given \\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\).",
+          "stem": "Given \\(\\mathbf{a}=\\begin{pmatrix}3\\\\ 2\\end{pmatrix}\\) and \\(\\mathbf{b}=\\begin{pmatrix}4\\\\ 7\\end{pmatrix}\\)",
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(a)"
+          },
           "parts": [
             {
               "id": "ascham2020e1-q11a-i",
               "type": "mc",
-              "difficulty": "medium",
-              "stem": "(i) Find \\(\\underset{\\sim}{a} + \\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{a} - \\underset{\\sim}{b}\\).",
-              "options": [
-                "\\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} 1 \\\\ 5 \\end{pmatrix}\\)",
-                "\\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)",
-                "\\(\\begin{pmatrix} 7 \\\\ 5 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)",
-                "\\(\\begin{pmatrix} 1 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} 7 \\\\ 5 \\end{pmatrix}\\)"
-              ],
-              "answer": 1,
-              "hint": "Add and subtract matching components separately: top components together, then bottom components.",
-              "keyPoints": [
-                {
-                  "text": "find \\(\\underset{\\sim}{a}+\\underset{\\sim}{b}\\) and \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
-                  "note": "Vector addition and subtraction act component by component on column vectors."
-                },
-                {
-                  "text": "\\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\)",
-                  "note": "Keep the subtraction order as a - b."
-                }
-              ],
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find \\(\\mathbf{a}+\\mathbf{b}\\) and \\(\\mathbf{a}-\\mathbf{b}\\)",
+              "hint": "Add or subtract matching components.",
               "steps": [
                 {
-                  "explain": "Add corresponding components of the column vectors.",
-                  "work": "\\(\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}+\\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}=\\begin{pmatrix} 3+4 \\\\ 2+7 \\end{pmatrix}=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors a and b from the origin\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"v1\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"v2\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M125 190L205 150\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#v1)\"/><path d=\"M125 190L235 75\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#v2)\"/><text x=\"165\" y=\"172\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#1d4ed8\">a</text><path d=\"M165 177 Q168 175 171 177 T177 177\" fill=\"none\" stroke=\"#1d4ed8\" stroke-width=\"1.2\"/><text x=\"210\" y=\"105\" font-family=\"Times New Roman, serif\" font-size=\"18\" font-style=\"italic\" fill=\"#c2410c\">b</text><path d=\"M210 110 Q213 108 216 110 T222 110\" fill=\"none\" stroke=\"#c2410c\" stroke-width=\"1.2\"/><text x=\"105\" y=\"205\" font-family=\"Arial\" font-size=\"12\" fill=\"#475569\">O</text></svg>"
-                  }
+                  "explain": "Add the components.",
+                  "work": "\\(\\mathbf{a}+\\mathbf{b}=\\begin{pmatrix}3\\\\ 2\\end{pmatrix}+\\begin{pmatrix}4\\\\ 7\\end{pmatrix}=\\begin{pmatrix}7\\\\ 9\\end{pmatrix}\\)"
                 },
                 {
-                  "explain": "Subtract the corresponding components in the same order.",
-                  "work": "\\(\\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}-\\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}=\\begin{pmatrix} 3-4 \\\\ 2-7 \\end{pmatrix}=\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)"
-                },
-                {
-                  "explain": "State both resulting column vectors.",
-                  "work": "\\(\\boxed{\\underset{\\sim}{a}+\\underset{\\sim}{b}=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix},\\quad \\underset{\\sim}{a}-\\underset{\\sim}{b}=\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}}\\)"
+                  "explain": "Subtract the components (first minus second).",
+                  "work": "\\(\\mathbf{a}-\\mathbf{b}=\\begin{pmatrix}3\\\\ 2\\end{pmatrix}-\\begin{pmatrix}4\\\\ 7\\end{pmatrix}=\\begin{pmatrix}-1\\\\ -5\\end{pmatrix}\\)"
                 }
               ],
-              "solution": "Correct answer: \\(\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\text{ and }\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\).",
-              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Ascham 2020 3U Trial",
-                "examPaper": "Ascham 2020 3U Trial & Solutions"
-              }
+                "examPaper": "Ascham 2020 3U Trial & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(a)(i)"
+              },
+              "options": [
+                "\\(\\mathbf{a}+\\mathbf{b}=\\begin{pmatrix}7\\\\ 9\\end{pmatrix},\\ \\mathbf{a}-\\mathbf{b}=\\begin{pmatrix}1\\\\ 5\\end{pmatrix}\\)",
+                "\\(\\mathbf{a}+\\mathbf{b}=\\begin{pmatrix}12\\\\ 14\\end{pmatrix},\\ \\mathbf{a}-\\mathbf{b}=\\begin{pmatrix}-1\\\\ -5\\end{pmatrix}\\)",
+                "\\(\\mathbf{a}+\\mathbf{b}=\\begin{pmatrix}7\\\\ 9\\end{pmatrix},\\ \\mathbf{a}-\\mathbf{b}=\\begin{pmatrix}-1\\\\ 5\\end{pmatrix}\\)",
+                "\\(\\mathbf{a}+\\mathbf{b}=\\begin{pmatrix}7\\\\ 9\\end{pmatrix},\\ \\mathbf{a}-\\mathbf{b}=\\begin{pmatrix}-1\\\\ -5\\end{pmatrix}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "Find \\(\\mathbf{a}+\\mathbf{b}\\)",
+                  "note": "Work component by component: top with top, bottom with bottom."
+                }
+              ]
             },
             {
               "id": "ascham2020e1-q11a-ii",
               "type": "mc",
-              "difficulty": "medium",
-              "stem": "(ii) Hence, find \\((\\underset{\\sim}{a} + \\underset{\\sim}{b}) \\cdot (\\underset{\\sim}{a} - \\underset{\\sim}{b})\\). State if \\(\\underset{\\sim}{a} + \\underset{\\sim}{b}\\) is perpendicular to \\(\\underset{\\sim}{a} - \\underset{\\sim}{b}\\) and justify your answer with a reason.",
-              "options": [
-                "\\(-52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)",
-                "\\(52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)",
-                "\\(0\\); perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=0\\)",
-                "\\(-52\\); perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\)"
-              ],
-              "answer": 0,
-              "hint": "Use the two vectors from part (i). Two non-zero vectors are perpendicular if and only if their dot product equals zero.",
-              "keyPoints": [
-                {
-                  "text": "find \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\)",
-                  "note": "Multiply matching components and add to find the scalar product."
-                },
-                {
-                  "text": "is perpendicular to \\(\\underset{\\sim}{a}-\\underset{\\sim}{b}\\)",
-                  "note": "A zero dot product indicates perpendicularity. Since the dot product is -52 ≠ 0, they are not perpendicular."
-                }
-              ],
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Hence, find \\((\\mathbf{a}+\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})\\). State if \\(\\mathbf{a}+\\mathbf{b}\\) is perpendicular to \\(\\mathbf{a}-\\mathbf{b}\\) and justify your answer with a reason.",
+              "hint": "Multiply matching components and add; perpendicular ⇔ dot product = 0.",
               "steps": [
                 {
-                  "explain": "Substitute the column vectors from part (i) into the scalar product.",
-                  "work": "\\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})=\\begin{pmatrix} 7 \\\\ 9 \\end{pmatrix}\\cdot\\begin{pmatrix} -1 \\\\ -5 \\end{pmatrix}\\)"
+                  "explain": "Dot product: multiply matching components and add.",
+                  "work": "\\(\\begin{pmatrix}7\\\\ 9\\end{pmatrix}\\cdot\\begin{pmatrix}-1\\\\ -5\\end{pmatrix}=7(-1)+9(-5)=-7-45=-52\\)"
                 },
                 {
-                  "explain": "Multiply corresponding components and add the products.",
-                  "work": "\\(7(-1)+9(-5)=-7-45=-52\\)"
+                  "explain": "Two non-zero vectors are perpendicular exactly when their dot product is 0. Here it is \\(-52\\neq0\\), so they are not perpendicular."
                 },
                 {
-                  "explain": "The dot product is non-zero, so the vectors are not perpendicular.",
-                  "work": "\\(-52\\ne0\\Rightarrow \\underset{\\sim}{a}+\\underset{\\sim}{b}\\not\\perp \\underset{\\sim}{a}-\\underset{\\sim}{b}\\)"
+                  "explain": "Check: \\((\\mathbf{a}+\\mathbf{b})\\cdot(\\mathbf{a}-\\mathbf{b})=|\\mathbf{a}|^2-|\\mathbf{b}|^2=13-65=-52\\) ✓."
                 }
               ],
-              "solution": "Correct answer: \\(-52\\); not perpendicular as \\((\\underset{\\sim}{a}+\\underset{\\sim}{b})\\cdot(\\underset{\\sim}{a}-\\underset{\\sim}{b})\\ne0\\).",
-              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Ascham 2020 3U Trial",
-                "examPaper": "Ascham 2020 3U Trial & Solutions"
-              }
+                "examPaper": "Ascham 2020 3U Trial & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(a)(ii)"
+              },
+              "options": [
+                "\\(0\\); perpendicular, because the dot product is 0.",
+                "\\(38\\); not perpendicular, because the dot product is not 0.",
+                "\\(-52\\); not perpendicular, because the dot product is not 0.",
+                "\\(-52\\); perpendicular, because the dot product is negative."
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "State if",
+                  "note": "Vectors are perpendicular only when the dot product is exactly 0."
+                }
+              ]
             }
-          ],
-          "hint": "Work with column vectors component by component; keep the order when subtracting.",
-          "keyPoints": [
-            {
-              "text": "Given \\(\\underset{\\sim}{a} = \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}\\) and \\(\\underset{\\sim}{b} = \\begin{pmatrix} 4 \\\\ 7 \\end{pmatrix}\\)",
-              "note": "These column vectors list the horizontal and vertical components."
-            }
-          ],
-          "answer": "See the worked answers for each part.",
-          "solution": "Each part includes its own worked solution.",
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+          ]
         }
       ]
     },
@@ -548,173 +522,144 @@
         {
           "id": "ascham2020e1-q12d",
           "type": "multipart",
-          "difficulty": "hard",
-          "stem": "Given \\(u=2i+3j\\) and \\(v=-2i+4j\\).",
+          "stem": "Given \\(\\mathbf{u}=2\\mathbf{i}+3\\mathbf{j}\\) and \\(\\mathbf{v}=-2\\mathbf{i}+4\\mathbf{j}\\),",
+          "meta": {
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "12(d)"
+          },
           "parts": [
             {
               "id": "ascham2020e1-q12d-i",
               "type": "mc",
               "difficulty": "medium",
-              "stem": "(i) Given \\(u=2i+3j\\) and \\(v=-2i+4j\\), find \\(\\operatorname{proj}_u v\\).",
-              "options": [
-                "\\(\\frac8{13}(2i+3j)\\)",
-                "\\(\\frac{16}{13}i+\\frac{24}{13}j\\)",
-                "\\(-\\frac8{13}(2i+3j)\\)",
-                "\\(\\frac{8}{13}i+\\frac{12}{13}j\\)"
-              ],
-              "answer": 1,
-              "hint": "Use \\(\\operatorname{proj}_u v=\\frac{v\\cdot u}{u\\cdot u}u\\). Calculate the two dot products before multiplying by u.",
-              "keyPoints": [
-                {
-                  "text": "find \\(\\operatorname{proj}_u v\\)",
-                  "note": "Projection onto u is a scalar multiple of u."
-                },
-                {
-                  "text": "\\(u=2i+3j\\) and \\(v=-2i+4j\\)",
-                  "note": "Use the components to calculate v·u and u·u."
-                }
-              ],
+              "timeLimit": 60,
+              "stem": "Find \\(\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}\\)",
+              "hint": "proj_u v = (v·u / u·u) u.",
               "steps": [
                 {
-                  "explain": "Find the scalar products from the components.",
-                  "work": "\\(v\\cdot u=(-2)(2)+4(3)=8,\\quad u\\cdot u=2^2+3^2=13\\)"
+                  "explain": "Projection of \\(\\mathbf{v}\\) onto \\(\\mathbf{u}\\):",
+                  "work": "\\(\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}=\\frac{\\mathbf{v}\\cdot\\mathbf{u}}{\\mathbf{u}\\cdot\\mathbf{u}}\\,\\mathbf{u}\\)"
                 },
                 {
-                  "explain": "Substitute into the projection formula.",
-                  "work": "\\(\\operatorname{proj}_u v=\\frac{8}{13}u=\\frac{8}{13}(2i+3j)\\)"
+                  "explain": "Compute the dot products.",
+                  "work": "\\(\\mathbf{v}\\cdot\\mathbf{u}=(-2)(2)+(4)(3)=8,\\qquad\\mathbf{u}\\cdot\\mathbf{u}=2^2+3^2=13\\)"
                 },
                 {
-                  "explain": "Multiply the scalar through each component.",
-                  "work": "\\(\\boxed{\\operatorname{proj}_u v=\\frac{16}{13}i+\\frac{24}{13}j}\\)",
+                  "explain": "Multiply.",
+                  "work": "\\(\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}=\\frac{8}{13}(2\\mathbf{i}+3\\mathbf{j})=\\frac{16}{13}\\mathbf{i}+\\frac{24}{13}\\mathbf{j}\\)",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors u and v, projection of v onto u, and the perpendicular residual w\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"arrU\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#334155\"/></marker><marker id=\"arrP\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"arrW\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M100 220H350M200 238V35\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><path d=\"M200 205L248 110\" stroke=\"#334155\" stroke-width=\"2.3\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L145 82\" stroke=\"#64748b\" stroke-width=\"1.8\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L229 148\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#arrP)\"/><path d=\"M229 148L145 82\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#arrW)\"/><path d=\"M220 166L209 161L204 172\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"251\" y=\"108\">u</text><text x=\"128\" y=\"75\">v</text><text x=\"231\" y=\"156\" fill=\"#1d4ed8\">projᵤ v</text><text x=\"164\" y=\"94\" fill=\"#c2410c\">w</text><text x=\"207\" y=\"197\">O</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"56.0\" y1=\"190.0\" x2=\"291.6\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"170.0\" y1=\"212.8\" x2=\"170.0\" y2=\"15.2\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"279.9\" y=\"182.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"178.0\" y=\"27.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"170.0\" y1=\"190.0\" x2=\"94.0\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"246.0\" y2=\"76.0\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"216.8\" y2=\"119.8\" stroke=\"#16a34a\" stroke-width=\"3.2\" stroke-linecap=\"round\" marker-end=\"url(#ah16a34a)\"/><line x1=\"94.0\" y1=\"38.0\" x2=\"216.8\" y2=\"119.8\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"47.2\" y2=\"108.2\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"102.0\" y=\"40.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">v</text><text x=\"254.0\" y=\"80.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#2563eb\" font-weight=\"bold\">u</text><text x=\"226.8\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\">proj</text><text x=\"247.5\" y=\"136.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#16a34a\" font-weight=\"bold\">u</text><text x=\"253.3\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\"> </text><text x=\"256.6\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\" font-weight=\"bold\">v</text><text x=\"29.9\" y=\"100.2\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#dc2626\" font-weight=\"bold\">w</text><text x=\"163.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">90°</text></svg>"
                   }
+                },
+                {
+                  "explain": "\\(-\\frac45\\mathbf{i}+\\frac85\\mathbf{j}\\) is the projection of \\(\\mathbf{u}\\) onto \\(\\mathbf{v}\\) — the other way round. Dividing by \\(|\\mathbf{u}|\\) instead of \\(|\\mathbf{u}|^2\\) gives the \\(\\sqrt{13}\\) option."
                 }
               ],
-              "solution": "Correct answer: \\(\\frac{16}{13}i+\\frac{24}{13}j\\).",
-              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Ascham 2020 3U Trial",
-                "examPaper": "Ascham 2020 3U Trial & Solutions"
-              }
+                "examPaper": "Ascham 2020 3U Trial & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "12(d)(i)"
+              },
+              "options": [
+                "\\(-\\frac45\\mathbf{i}+\\frac85\\mathbf{j}\\)",
+                "\\(\\frac{16}{\\sqrt{13}}\\mathbf{i}+\\frac{24}{\\sqrt{13}}\\mathbf{j}\\)",
+                "\\(\\frac{8}{13}\\mathbf{i}+\\frac{12}{13}\\mathbf{j}\\)",
+                "\\(\\frac{16}{13}\\mathbf{i}+\\frac{24}{13}\\mathbf{j}\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\(\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}\\)",
+                  "note": "Project v onto u: divide by u·u = |u|² and multiply by u."
+                }
+              ]
             },
             {
               "id": "ascham2020e1-q12d-ii",
               "type": "mc",
-              "difficulty": "medium",
-              "stem": "(ii) Find \\(w=v-\\operatorname{proj}_u v\\).",
-              "options": [
-                "\\(-\\frac{42}{13}i+\\frac{28}{13}j\\)",
-                "\\(\\frac{42}{13}i-\\frac{28}{13}j\\)",
-                "\\(-\\frac{10}{13}i+\\frac{76}{13}j\\)",
-                "\\(-\\frac{42}{13}i-\\frac{28}{13}j\\)"
-              ],
-              "answer": 0,
-              "hint": "Subtract the projection components from the corresponding components of v.",
-              "keyPoints": [
-                {
-                  "text": "\\(w=v-\\operatorname{proj}_u v\\)",
-                  "note": "Subtract coordinate by coordinate in the stated order."
-                },
-                {
-                  "text": "Find \\(w=v-\\operatorname{proj}_u v\\)",
-                  "note": "Use the projection found in part (i)."
-                }
-              ],
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "Find \\(\\mathbf{w}=\\mathbf{v}-\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}\\)",
+              "hint": "w = v − proj: subtract each component.",
               "steps": [
                 {
-                  "explain": "Write v and its projection using the same denominator.",
-                  "work": "\\(v=(-2,4)=(-\\frac{26}{13},\\frac{52}{13}),\\quad\\operatorname{proj}_u v=(\\frac{16}{13},\\frac{24}{13})\\)"
+                  "explain": "Subtract the projection from \\(\\mathbf{v}\\), component by component.",
+                  "work": "\\(\\mathbf{w}=\\left(-2-\\frac{16}{13}\\right)\\mathbf{i}+\\left(4-\\frac{24}{13}\\right)\\mathbf{j}=-\\frac{42}{13}\\mathbf{i}+\\frac{28}{13}\\mathbf{j}\\)"
                 },
                 {
-                  "explain": "Subtract corresponding components.",
-                  "work": "\\(w=(-\\frac{26}{13}-\\frac{16}{13},\\frac{52}{13}-\\frac{24}{13})\\)"
-                },
-                {
-                  "explain": "Simplify and show the residual vector from the projection tip to v.",
-                  "work": "\\(\\boxed{w=-\\frac{42}{13}i+\\frac{28}{13}j}\\)",
-                  "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors u and v, projection of v onto u, and the perpendicular residual w\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"arrU\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#334155\"/></marker><marker id=\"arrP\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"arrW\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M100 220H350M200 238V35\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><path d=\"M200 205L248 110\" stroke=\"#334155\" stroke-width=\"2.3\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L145 82\" stroke=\"#64748b\" stroke-width=\"1.8\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L229 148\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#arrP)\"/><path d=\"M229 148L145 82\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#arrW)\"/><path d=\"M220 166L209 161L204 172\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"251\" y=\"108\">u</text><text x=\"128\" y=\"75\">v</text><text x=\"231\" y=\"156\" fill=\"#1d4ed8\">projᵤ v</text><text x=\"164\" y=\"94\" fill=\"#c2410c\">w</text><text x=\"207\" y=\"197\">O</text></g></svg>"
-                  }
+                  "explain": "Reversing the subtraction gives the opposite vector (second option)."
                 }
               ],
-              "solution": "Correct answer: \\(-\\frac{42}{13}i+\\frac{28}{13}j\\).",
-              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Ascham 2020 3U Trial",
-                "examPaper": "Ascham 2020 3U Trial & Solutions"
-              }
+                "examPaper": "Ascham 2020 3U Trial & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "12(d)(ii)"
+              },
+              "options": [
+                "\\(-\\frac{10}{13}\\mathbf{i}+\\frac{28}{13}\\mathbf{j}\\)",
+                "\\(-2\\mathbf{i}+4\\mathbf{j}\\)",
+                "\\(-\\frac{42}{13}\\mathbf{i}+\\frac{28}{13}\\mathbf{j}\\)",
+                "\\(\\frac{42}{13}\\mathbf{i}-\\frac{28}{13}\\mathbf{j}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(\\mathbf{w}=\\mathbf{v}-\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}\\)",
+                  "note": "Write −2 = −26/13 and 4 = 52/13 before subtracting."
+                }
+              ]
             },
             {
               "id": "ascham2020e1-q12d-iii",
               "type": "mc",
-              "difficulty": "medium",
-              "stem": "(iii) What is the angle between \\(u\\) and \\(w\\)?",
-              "options": [
-                "\\(0^\\circ\\)",
-                "\\(45^\\circ\\)",
-                "\\(90^\\circ\\)",
-                "\\(180^\\circ\\)"
-              ],
-              "answer": 2,
-              "hint": "The vector w is the part of v perpendicular to its projection onto u. You can confirm this by calculating u·w.",
-              "keyPoints": [
-                {
-                  "text": "angle between \\(u\\) and \\(w\\)",
-                  "note": "Perpendicular vectors form a right angle."
-                },
-                {
-                  "text": "\\(w\\)",
-                  "note": "Use the residual vector calculated in part (ii)."
-                }
-              ],
+              "difficulty": "easy",
+              "timeLimit": 60,
+              "stem": "What is the angle between \\(\\mathbf{u}\\) and \\(\\mathbf{w}\\)?",
+              "hint": "Find u·w.",
               "steps": [
                 {
-                  "explain": "Check perpendicularity by taking the dot product of u=(2,3) with w=(−42/13,28/13).",
-                  "work": "\\(u\\cdot w=2(-\\frac{42}{13})+3(\\frac{28}{13})=0\\)"
+                  "explain": "Compute the dot product.",
+                  "work": "\\(\\mathbf{u}\\cdot\\mathbf{w}=2\\left(-\\frac{42}{13}\\right)+3\\left(\\frac{28}{13}\\right)=\\frac{-84+84}{13}=0\\)"
                 },
                 {
-                  "explain": "A zero dot product means the vectors are perpendicular. The right-angle marker in the diagram highlights that relationship.",
-                  "work": "\\(u\\cdot w=0\\Rightarrow u\\perp w\\)",
+                  "explain": "A zero dot product means the vectors are perpendicular: the angle is \\(90^\\circ\\). This is always true: \\(\\mathbf{v}-\\operatorname{proj}_{\\mathbf{u}}\\mathbf{v}\\) is the part of \\(\\mathbf{v}\\) perpendicular to \\(\\mathbf{u}\\).",
                   "figure": {
-                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Vectors u and v, projection of v onto u, and the perpendicular residual w\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><defs><marker id=\"arrU\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#334155\"/></marker><marker id=\"arrP\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#2563eb\"/></marker><marker id=\"arrW\" markerWidth=\"7\" markerHeight=\"7\" refX=\"6\" refY=\"3.5\" orient=\"auto\"><path d=\"M0 0L7 3.5L0 7Z\" fill=\"#ea580c\"/></marker></defs><path d=\"M100 220H350M200 238V35\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><path d=\"M200 205L248 110\" stroke=\"#334155\" stroke-width=\"2.3\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L145 82\" stroke=\"#64748b\" stroke-width=\"1.8\" marker-end=\"url(#arrU)\"/><path d=\"M200 205L229 148\" stroke=\"#2563eb\" stroke-width=\"2.5\" marker-end=\"url(#arrP)\"/><path d=\"M229 148L145 82\" stroke=\"#ea580c\" stroke-width=\"2.5\" marker-end=\"url(#arrW)\"/><path d=\"M220 166L209 161L204 172\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"251\" y=\"108\">u</text><text x=\"128\" y=\"75\">v</text><text x=\"231\" y=\"156\" fill=\"#1d4ed8\">projᵤ v</text><text x=\"164\" y=\"94\" fill=\"#c2410c\">w</text><text x=\"207\" y=\"197\">O</text></g></svg>"
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"320\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"56.0\" y1=\"190.0\" x2=\"291.6\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"170.0\" y1=\"212.8\" x2=\"170.0\" y2=\"15.2\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"279.9\" y=\"182.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"178.0\" y=\"27.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"170.0\" y1=\"190.0\" x2=\"94.0\" y2=\"38.0\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"246.0\" y2=\"76.0\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"216.8\" y2=\"119.8\" stroke=\"#16a34a\" stroke-width=\"3.2\" stroke-linecap=\"round\" marker-end=\"url(#ah16a34a)\"/><line x1=\"94.0\" y1=\"38.0\" x2=\"216.8\" y2=\"119.8\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"170.0\" y1=\"190.0\" x2=\"47.2\" y2=\"108.2\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"102.0\" y=\"40.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#1e293b\" font-weight=\"bold\">v</text><text x=\"254.0\" y=\"80.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#2563eb\" font-weight=\"bold\">u</text><text x=\"226.8\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\">proj</text><text x=\"247.5\" y=\"136.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.2\" fill=\"#16a34a\" font-weight=\"bold\">u</text><text x=\"253.3\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\"> </text><text x=\"256.6\" y=\"133.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\" font-weight=\"bold\">v</text><text x=\"29.9\" y=\"100.2\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#dc2626\" font-weight=\"bold\">w</text><text x=\"163.0\" y=\"156.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">90°</text></svg>"
                   }
-                },
-                {
-                  "explain": "State the angle between the two non-zero vectors.",
-                  "work": "\\(\\boxed{90^\\circ}\\)"
                 }
               ],
-              "solution": "Correct answer: \\(90^\\circ\\).",
-              "timeLimit": 60,
               "xp": 1,
               "meta": {
                 "source": "Ascham 2020 3U Trial",
-                "examPaper": "Ascham 2020 3U Trial & Solutions"
-              }
+                "examPaper": "Ascham 2020 3U Trial & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "12(d)(iii)"
+              },
+              "options": [
+                "\\(180^\\circ\\)",
+                "\\(90^\\circ\\)",
+                "\\(0^\\circ\\)",
+                "\\(45^\\circ\\)"
+              ],
+              "answer": 1,
+              "keyPoints": [
+                {
+                  "text": "What is the angle",
+                  "note": "v minus its projection onto u is always perpendicular to u — check u·w."
+                }
+              ]
             }
-          ],
-          "hint": "Use the dot product to find the projection. The residual after removing the projection is perpendicular to u.",
-          "keyPoints": [
-            {
-              "text": "\\(u=2i+3j\\) and \\(v=-2i+4j\\)",
-              "note": "These component forms let you calculate dot products directly."
-            },
-            {
-              "text": "Given \\(u=2i+3j\\)",
-              "note": "The projection lies along u; the remaining component is perpendicular to u."
-            }
-          ],
-          "answer": "See the worked answers for each part.",
-          "solution": "Each part includes its own worked solution.",
-          "timeLimit": 60,
-          "xp": 1,
-          "meta": {
-            "source": "Ascham 2020 3U Trial Q12(d)",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+          ]
         }
       ]
     }

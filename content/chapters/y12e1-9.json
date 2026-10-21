@@ -12,59 +12,54 @@
           "id": "ascham2020e1-q14d",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A ferry is pulled toward a wharf at \\(25\\text{ m/min}\\). The rope attaches to the ferry \\(6\\text{ m}\\) below the wharf level. When the ferry is \\(28\\text{ m}\\) from the wharf, how fast is the rope being drawn in?",
-          "options": [
-            "\\(25\\text{ m/min}\\)",
-            "\\(\\frac{175}{\\sqrt{205}}\\text{ m/min}\\)",
-            "\\(\\frac{350}{\\sqrt{205}}\\text{ m/min}\\)",
-            "\\(\\frac{700}{\\sqrt{205}}\\text{ m/min}\\)"
-          ],
-          "answer": 2,
-          "hint": "Relate the horizontal distance x, fixed 6 m vertical gap, and rope length r with Pythagoras. Differentiate with respect to time and use dx/dt=−25.",
-          "keyPoints": [
-            {
-              "text": "\\(25\\text{ m/min}\\)",
-              "note": "This is the rate at which the horizontal distance x is decreasing."
-            },
-            {
-              "text": "\\(28\\text{ m}\\) from the wharf",
-              "note": "Substitute x=28 only after differentiating the relation between x and r."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "The ferry at Double Bay is being pulled into the wharf by a rope at a speed of 25m/min. The rope is attached to a point on the ferry 6m vertically below the level of the wharf. At what rate is the rope being drawn in, when the ferry is 28m from the wharf?",
+          "hint": "Right triangle r² = x² + 6²; dr/dt = (dr/dx)(dx/dt) with dx/dt = 25.",
           "steps": [
             {
-              "explain": "Use the Pythagorean theorem for the right triangle formed by the 6 m vertical drop and horizontal distance x to relate the rope length r to x.",
-              "work": "\\(r^2=x^2+6^2\\)",
+              "explain": "Let \\(x\\) be the horizontal distance to the wharf and \\(r\\) the rope length. They form a right triangle with the 6 m vertical side.",
+              "work": "\\(r^2=x^2+6^2,\\qquad\\frac{dx}{dt}=25\\ (\\text{speed of the ferry})\\)",
               "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Right triangle showing the ferry distance x, vertical separation 6 metres, and rope length r\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M65 205H355\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M105 205V105\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><path d=\"M105 105H305\" stroke=\"#ea580c\" stroke-width=\"2.6\"/><path d=\"M105 205L305 105\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M105 193V205M105 193H117\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"305\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"65\" y=\"154\">6 m</text><text x=\"188\" y=\"96\" fill=\"#c2410c\">x = 28 m</text><text x=\"201\" y=\"145\" fill=\"#1d4ed8\">rope r</text><text x=\"306\" y=\"99\">ferry</text><text x=\"72\" y=\"222\">wharf</text></g><path d=\"M105 205H305\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><text x=\"188\" y=\"193\" font-family=\"Arial\" font-size=\"12\" fill=\"#1d4ed8\">x changes</text></svg>"
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 170\" width=\"330\" height=\"170\"><rect width=\"330\" height=\"170\" rx=\"8\" fill=\"white\"/><line x1=\"280.0\" y1=\"20.0\" x2=\"280.0\" y2=\"160.0\" stroke=\"#475569\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"286.0\" y=\"30.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">wharf</text><line x1=\"60.0\" y1=\"120.0\" x2=\"280.0\" y2=\"40.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"120.0\" x2=\"280.0\" y2=\"120.0\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 4\"/><line x1=\"280.0\" y1=\"120.0\" x2=\"280.0\" y2=\"40.0\" stroke=\"#ea580c\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M270 120L270 110L280 110\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M15 114L65 114L55 136L22 136Z\" fill=\"#e2e8f0\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"115.0\" y=\"70.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">r</text><text x=\"122.0\" y=\"70.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\"> (rope)</text><text x=\"165.9\" y=\"138.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#2563eb\" font-style=\"italic\">x</text><text x=\"272.0\" y=\"84.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"end\">6 m</text></svg>"
               }
             },
             {
-              "explain": "Differentiate with respect to time; the vertical separation is constant.",
-              "work": "\\(2r\\frac{dr}{dt}=2x\\frac{dx}{dt}\\Rightarrow\\frac{dr}{dt}=\\frac{x}{r}\\frac{dx}{dt}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Right triangle showing the ferry distance x, vertical separation 6 metres, and rope length r\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M65 205H355\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M105 205V105\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><path d=\"M105 105H305\" stroke=\"#ea580c\" stroke-width=\"2.6\"/><path d=\"M105 205L305 105\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M105 193V205M105 193H117\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"305\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"65\" y=\"154\">6 m</text><text x=\"188\" y=\"96\" fill=\"#c2410c\">x = 28 m</text><text x=\"201\" y=\"145\" fill=\"#1d4ed8\">rope r</text><text x=\"306\" y=\"99\">ferry</text><text x=\"72\" y=\"222\">wharf</text></g><path d=\"M105 105L305 105\" stroke=\"#ea580c\" stroke-width=\"3\"/><text x=\"196\" y=\"125\" font-family=\"Arial\" font-size=\"12\" fill=\"#c2410c\">r changes</text></svg>"
-              }
+              "explain": "Differentiate \\(r=\\sqrt{x^2+36}\\).",
+              "work": "\\(\\frac{dr}{dx}=\\frac{x}{\\sqrt{x^2+36}}\\)"
             },
             {
-              "explain": "At x=28, the rope length is √820=2√205 m and dx/dt=−25 m/min. The negative sign means r is decreasing.",
-              "work": "\\(r=\\sqrt{28^2+6^2}=2\\sqrt{205},\\quad\\frac{dr}{dt}=\\frac{28}{2\\sqrt{205}}(-25)=-\\frac{350}{\\sqrt{205}}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 260\" role=\"img\" aria-label=\"Right triangle showing the ferry distance x, vertical separation 6 metres, and rope length r\"><rect x=\"1\" y=\"1\" width=\"418\" height=\"258\" rx=\"12\" fill=\"#fff\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><path d=\"M65 205H355\" stroke=\"#475569\" stroke-width=\"1.8\"/><path d=\"M105 205V105\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\"/><path d=\"M105 105H305\" stroke=\"#ea580c\" stroke-width=\"2.6\"/><path d=\"M105 205L305 105\" stroke=\"#2563eb\" stroke-width=\"2.8\"/><path d=\"M105 193V205M105 193H117\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><circle cx=\"305\" cy=\"105\" r=\"4\" fill=\"#ea580c\"/><g font-family=\"Arial\" font-size=\"12\" fill=\"#334155\"><text x=\"65\" y=\"154\">6 m</text><text x=\"188\" y=\"96\" fill=\"#c2410c\">x = 28 m</text><text x=\"201\" y=\"145\" fill=\"#1d4ed8\">rope r</text><text x=\"306\" y=\"99\">ferry</text><text x=\"72\" y=\"222\">wharf</text></g><path d=\"M105 105L305 105\" stroke=\"#10b981\" stroke-width=\"3\"/><text x=\"187\" y=\"125\" font-family=\"Arial\" font-size=\"11\" fill=\"#047857\">rate in = 350/√205</text></svg>"
-              }
+              "explain": "Chain rule.",
+              "work": "\\(\\frac{dr}{dt}=\\frac{dr}{dx}\\cdot\\frac{dx}{dt}=\\frac{25x}{\\sqrt{x^2+36}}\\)"
             },
             {
-              "explain": "The question asks for the speed at which the rope is drawn in, so report the positive magnitude.",
-              "work": "\\(\\boxed{\\frac{350}{\\sqrt{205}}\\approx24.44\\text{ m/min}}\\)"
+              "explain": "At \\(x=28\\):",
+              "work": "\\(\\frac{dr}{dt}=\\frac{25\\times28}{\\sqrt{784+36}}=\\frac{700}{\\sqrt{820}}=\\frac{700}{2\\sqrt{205}}=\\frac{70\\sqrt{205}}{41}\\approx24.4\\ \\text{m/min}\\)"
+            },
+            {
+              "explain": "The rope comes in slightly slower than the ferry moves, because part of the motion is 'sideways' to the rope."
             }
           ],
-          "solution": "Correct answer: \\(\\frac{350}{\\sqrt{205}}\\text{ m/min}\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "14(d)"
+          },
+          "options": [
+            "\\(25\\ \\text{m/min}\\)",
+            "\\(\\frac{15\\sqrt{205}}{41}\\approx5.2\\ \\text{m/min}\\)",
+            "\\(\\frac{28}{25}\\ \\text{m/min}\\)",
+            "\\(\\frac{70\\sqrt{205}}{41}\\approx24.4\\ \\text{m/min}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "6m vertically below the level of the wharf",
+              "note": "The rope, the 6 m drop and the horizontal distance form a right triangle: r² = x² + 36."
+            }
+          ]
         }
       ]
     }

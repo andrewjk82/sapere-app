@@ -12,50 +12,50 @@
           "id": "ascham2020e1-q13d",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Without calculus, find the maximum and minimum points of \\(y=\\frac5{2+\\sin x+\\cos x}\\) for \\(0\\le x\\le2\\pi\\).",
-          "options": [
-            "Maximum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\); minimum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\)",
-            "Maximum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\)",
-            "Maximum \\((\\frac{3\\pi}4,5)\\); minimum \\((\\frac{7\\pi}4,5)\\)",
-            "Maximum \\((\\frac{5\\pi}4,\\frac5{2+\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2-\\sqrt2})\\)"
-          ],
-          "answer": 1,
-          "hint": "Combine sin x+cos x into one sinusoid. Since the numerator is positive, the largest y occurs when the denominator is smallest.",
-          "keyPoints": [
-            {
-              "text": "maximum and minimum points",
-              "note": "Find where the denominator is largest and smallest, then reverse the order because it is in the denominator."
-            },
-            {
-              "text": "\\(0\\le x\\le2\\pi\\)",
-              "note": "Check that the phase-shifted sine extrema lie in the stated interval."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "Without the use of calculus, find the maximum and minimum points on the curve of \\(y=\\frac{5}{2+\\sin x+\\cos x}\\) for \\(0\\le x\\le2\\pi\\)",
+          "hint": "Write sin x + cos x = √2 sin(x + π/4); a small denominator gives a large y.",
           "steps": [
             {
-              "explain": "Rewrite the two trigonometric terms as a single sinusoid.",
-              "work": "\\(\\sin x+\\cos x=\\sqrt2\\sin(x+\\frac\\pi4)\\)"
+              "explain": "Write \\(\\sin x+\\cos x\\) in auxiliary-angle form.",
+              "work": "\\(\\sin x+\\cos x=\\sqrt2\\sin\\left(x+\\frac{\\pi}{4}\\right)\\)"
             },
             {
-              "explain": "The denominator ranges from 2−√2 to 2+√2. Its maximum occurs when x=π/4; its minimum occurs when x=5π/4.",
-              "work": "\\(2-\\sqrt2\\le2+\\sin x+\\cos x\\le2+\\sqrt2\\)"
+              "explain": "So the denominator ranges between \\(2-\\sqrt2\\) and \\(2+\\sqrt2\\).",
+              "work": "\\(2+\\sqrt2\\sin\\left(x+\\tfrac{\\pi}{4}\\right):\\ \\max 2+\\sqrt2\\ \\text{at}\\ x=\\tfrac{\\pi}{4},\\quad\\min 2-\\sqrt2\\ \\text{at}\\ x=\\tfrac{5\\pi}{4}\\)"
             },
             {
-              "explain": "Because y=5 divided by this positive denominator, the minimum y pairs with the largest denominator, and the maximum y pairs with the smallest denominator.",
-              "work": "\\(x=\\frac\\pi4:\\;y=\\frac5{2+\\sqrt2};\\quad x=\\frac{5\\pi}4:\\;y=\\frac5{2-\\sqrt2}\\)"
+              "explain": "The fraction is largest when the denominator is smallest, and smallest when the denominator is largest.",
+              "work": "\\(y_{\\max}=\\frac{5}{2-\\sqrt2}\\ \\text{at}\\ x=\\frac{5\\pi}{4},\\qquad y_{\\min}=\\frac{5}{2+\\sqrt2}\\ \\text{at}\\ x=\\frac{\\pi}{4}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 220\" width=\"330\" height=\"220\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"330\" height=\"220\" rx=\"8\" fill=\"white\"/><line x1=\"21.6\" y1=\"190.0\" x2=\"324.0\" y2=\"190.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"30.0\" y1=\"197.0\" x2=\"30.0\" y2=\"15.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"312.3\" y=\"182.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"38.0\" y=\"27.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><line x1=\"63.0\" y1=\"186.0\" x2=\"63.0\" y2=\"194.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"59.5\" y=\"202.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">π</text><text x=\"60.1\" y=\"212.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">4</text><line x1=\"58.5\" y1=\"204.4\" x2=\"66.5\" y2=\"204.4\" stroke=\"#64748b\" stroke-width=\"1.00\"/><line x1=\"194.9\" y1=\"186.0\" x2=\"194.9\" y2=\"194.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"189.1\" y=\"202.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">5π</text><text x=\"192.1\" y=\"212.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#64748b\">4</text><line x1=\"188.1\" y1=\"204.4\" x2=\"200.8\" y2=\"204.4\" stroke=\"#64748b\" stroke-width=\"1.00\"/><line x1=\"293.9\" y1=\"186.0\" x2=\"293.9\" y2=\"194.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><text x=\"286.4\" y=\"208.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#64748b\">2π</text><text x=\"24.0\" y=\"206.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M30.0 166.7L31.3 166.9L32.6 167.1L34.0 167.3L35.3 167.5L36.6 167.7L37.9 167.9L39.2 168.1L40.6 168.2L41.9 168.4L43.2 168.5L44.5 168.7L45.8 168.8L47.2 168.9L48.5 169.0L49.8 169.1L51.1 169.2L52.4 169.2L53.8 169.3L55.1 169.3L56.4 169.4L57.7 169.4L59.0 169.5L60.3 169.5L61.7 169.5L63.0 169.5L64.3 169.5L65.6 169.5L66.9 169.5L68.3 169.4L69.6 169.4L70.9 169.3L72.2 169.3L73.5 169.2L74.9 169.2L76.2 169.1L77.5 169.0L78.8 168.9L80.1 168.8L81.5 168.7L82.8 168.5L84.1 168.4L85.4 168.2L86.7 168.1L88.1 167.9L89.4 167.7L90.7 167.5L92.0 167.3L93.3 167.1L94.7 166.9L96.0 166.7L97.3 166.4L98.6 166.2L99.9 165.9L101.3 165.6L102.6 165.3L103.9 165.0L105.2 164.6L106.5 164.3L107.8 163.9L109.2 163.5L110.5 163.1L111.8 162.7L113.1 162.2L114.4 161.8L115.8 161.3L117.1 160.8L118.4 160.2L119.7 159.7L121.0 159.1L122.4 158.5L123.7 157.8L125.0 157.2L126.3 156.5L127.6 155.8L129.0 155.0L130.3 154.2L131.6 153.4L132.9 152.5L134.2 151.6L135.6 150.6L136.9 149.7L138.2 148.6L139.5 147.5L140.8 146.4L142.2 145.2L143.5 144.0L144.8 142.7L146.1 141.3L147.4 139.9L148.8 138.5L150.1 136.9L151.4 135.3L152.7 133.6L154.0 131.9L155.3 130.1L156.7 128.2L158.0 126.3L159.3 124.3L160.6 122.2L161.9 120.0L163.3 117.8L164.6 115.5L165.9 113.1L167.2 110.7L168.5 108.2L169.9 105.7L171.2 103.1L172.5 100.6L173.8 98.0L175.1 95.4L176.5 92.8L177.8 90.3L179.1 87.8L180.4 85.4L181.7 83.1L183.1 81.0L184.4 78.9L185.7 77.1L187.0 75.4L188.3 74.0L189.7 72.7L191.0 71.8L192.3 71.1L193.6 70.6L194.9 70.5L196.3 70.6L197.6 71.1L198.9 71.8L200.2 72.7L201.5 74.0L202.9 75.4L204.2 77.1L205.5 78.9L206.8 81.0L208.1 83.1L209.4 85.4L210.8 87.8L212.1 90.3L213.4 92.8L214.7 95.4L216.0 98.0L217.4 100.6L218.7 103.1L220.0 105.7L221.3 108.2L222.6 110.7L224.0 113.1L225.3 115.5L226.6 117.8L227.9 120.0L229.2 122.2L230.6 124.3L231.9 126.3L233.2 128.2L234.5 130.1L235.8 131.9L237.2 133.6L238.5 135.3L239.8 136.9L241.1 138.5L242.4 139.9L243.8 141.3L245.1 142.7L246.4 144.0L247.7 145.2L249.0 146.4L250.4 147.5L251.7 148.6L253.0 149.7L254.3 150.6L255.6 151.6L256.9 152.5L258.3 153.4L259.6 154.2L260.9 155.0L262.2 155.8L263.5 156.5L264.9 157.2L266.2 157.8L267.5 158.5L268.8 159.1L270.1 159.7L271.5 160.2L272.8 160.8L274.1 161.3L275.4 161.8L276.7 162.2L278.1 162.7L279.4 163.1L280.7 163.5L282.0 163.9L283.3 164.3L284.7 164.6L286.0 165.0L287.3 165.3L288.6 165.6L289.9 165.9L291.3 166.2L292.6 166.4L293.9 166.7\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linejoin=\"round\"/><circle cx=\"194.9\" cy=\"70.5\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"63.0\" cy=\"169.5\" r=\"4.5\" fill=\"#16a34a\"/><text x=\"204.9\" y=\"74.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\">max </text><text x=\"244.2\" y=\"68.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">5</text><text x=\"232.9\" y=\"80.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">2 − </text><path d=\"M247.7 78.0L249.0 77.3L250.6 81.8L252.4 73.3L259.2 73.3\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"253.4\" y=\"80.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">2</text><line x1=\"231.9\" y1=\"70.9\" x2=\"261.2\" y2=\"70.9\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"67.0\" y=\"157.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#16a34a\">min </text><text x=\"103.0\" y=\"151.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">5</text><text x=\"91.7\" y=\"163.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">2 + </text><path d=\"M106.5 161.0L107.8 160.3L109.4 164.8L111.2 156.3L118.0 156.3\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"112.2\" y=\"163.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#16a34a\">2</text><line x1=\"90.7\" y1=\"153.9\" x2=\"120.0\" y2=\"153.9\" stroke=\"#16a34a\" stroke-width=\"1.00\"/></svg>"
+              }
             },
             {
-              "explain": "State both turning values with their x-coordinates.",
-              "work": "\\(\\boxed{\\min(\\frac\\pi4,\\frac5{2+\\sqrt2}),\\quad\\max(\\frac{5\\pi}4,\\frac5{2-\\sqrt2})}\\)"
+              "explain": "Swapping the \\(x\\)-values is the common slip — a small denominator gives a large \\(y\\)."
             }
           ],
-          "solution": "Correct answer: Maximum \\((\\frac{5\\pi}4,\\frac5{2-\\sqrt2})\\); minimum \\((\\frac\\pi4,\\frac5{2+\\sqrt2})\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "13(d)"
+          },
+          "options": [
+            "Max \\(\\left(\\frac{\\pi}{4},\\frac{5}{2-\\sqrt2}\\right)\\), min \\(\\left(\\frac{5\\pi}{4},\\frac{5}{2+\\sqrt2}\\right)\\)",
+            "Max \\(\\left(\\frac{\\pi}{4},\\frac{5}{2+\\sqrt2}\\right)\\), min \\(\\left(\\frac{5\\pi}{4},\\frac{5}{2-\\sqrt2}\\right)\\)",
+            "Max \\(\\left(\\frac{5\\pi}{4},\\frac52\\right)\\), min \\(\\left(\\frac{\\pi}{4},\\frac53\\right)\\)",
+            "Max \\(\\left(\\frac{5\\pi}{4},\\frac{5}{2-\\sqrt2}\\right)\\), min \\(\\left(\\frac{\\pi}{4},\\frac{5}{2+\\sqrt2}\\right)\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Without the use of calculus",
+              "note": "Use sin x + cos x = √2 sin(x + π/4), then think about the denominator."
+            }
+          ]
         }
       ]
     }

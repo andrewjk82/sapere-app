@@ -306,50 +306,52 @@
           "id": "ascham2020e1-q14a",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Solve \\(\\sin 7x+\\sin x=\\sin 4x\\) for \\(0\\le x\\le\\frac{\\pi}{2}\\).",
-          "options": [
-            "\\(0,\\frac{\\pi}{9},\\frac{\\pi}{4},\\frac{\\pi}{2}\\)",
-            "\\(0,\\frac{\\pi}{8},\\frac{\\pi}{4}\\)",
-            "\\(\\frac{\\pi}{9},\\frac{\\pi}{4}\\)",
-            "\\(0,\\frac{\\pi}{9},\\frac{\\pi}{3},\\frac{\\pi}{2}\\)"
-          ],
-          "answer": 0,
-          "hint": "Use the sum-to-product identity on sin 7x + sin x. Factor the equation, solve both factors, and retain only values in the stated interval.",
-          "keyPoints": [
-            {
-              "text": "\\(\\sin 7x+\\sin x=\\sin 4x\\)",
-              "note": "Convert the sum of sines to a product, then factor out the common sin 4x."
-            },
-            {
-              "text": "\\(0\\le x\\le\\frac{\\pi}{2}\\)",
-              "note": "Check every solution against both interval endpoints."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "Solve \\(\\sin7x+\\sin x=\\sin4x\\) for \\(0\\le x\\le\\frac{\\pi}{2}\\).",
+          "hint": "Use sin A + sin B = 2 sin((A+B)/2) cos((A−B)/2) on the left, then factor out sin 4x.",
           "steps": [
             {
-              "explain": "Apply the sum-to-product identity with the average angle 4x and half-difference 3x.",
-              "work": "\\(\\sin7x+\\sin x=2\\sin4x\\cos3x\\Rightarrow\\sin4x(2\\cos3x-1)=0\\)"
+              "explain": "Use sums to products.",
+              "work": "\\(\\sin7x+\\sin x=2\\sin\\frac{7x+x}{2}\\cos\\frac{7x-x}{2}=2\\sin4x\\cos3x\\)"
             },
             {
-              "explain": "Solve the first factor over the interval.",
-              "work": "\\(\\sin4x=0\\Rightarrow4x=0,\\pi,2\\pi\\Rightarrow x=0,\\frac{\\pi}{4},\\frac{\\pi}{2}\\)"
+              "explain": "Bring everything to one side and factorise (don't divide by \\(\\sin4x\\) — you would lose solutions).",
+              "work": "\\(2\\sin4x\\cos3x-\\sin4x=0\\ \\Rightarrow\\ \\sin4x\\,(2\\cos3x-1)=0\\)"
             },
             {
-              "explain": "Solve the second factor and keep the value in range.",
-              "work": "\\(2\\cos3x-1=0\\Rightarrow\\cos3x=\\frac12\\Rightarrow3x=\\frac{\\pi}{3}\\Rightarrow x=\\frac{\\pi}{9}\\)"
+              "explain": "\\(\\sin4x=0\\) with \\(0\\le4x\\le2\\pi\\).",
+              "work": "\\(4x=0,\\ \\pi,\\ 2\\pi\\ \\Rightarrow\\ x=0,\\ \\frac{\\pi}{4},\\ \\frac{\\pi}{2}\\)"
             },
             {
-              "explain": "Combine the distinct solutions in increasing order.",
-              "work": "\\(\\boxed{x=0,\\frac{\\pi}{9},\\frac{\\pi}{4},\\frac{\\pi}{2}}\\)"
+              "explain": "\\(\\cos3x=\\frac12\\) with \\(0\\le3x\\le\\frac{3\\pi}{2}\\).",
+              "work": "\\(3x=\\frac{\\pi}{3}\\ \\Rightarrow\\ x=\\frac{\\pi}{9}\\qquad(3x=\\tfrac{5\\pi}{3}\\text{ gives }x=\\tfrac{5\\pi}{9}\\gt\\tfrac{\\pi}{2})\\)"
+            },
+            {
+              "explain": "All solutions:",
+              "work": "\\(x=0,\\ \\frac{\\pi}{9},\\ \\frac{\\pi}{4},\\ \\frac{\\pi}{2}\\)"
             }
           ],
-          "solution": "Correct answer: \\(0,\\frac{\\pi}{9},\\frac{\\pi}{4},\\frac{\\pi}{2}\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "14(a)"
+          },
+          "options": [
+            "\\(x=\\frac{\\pi}{9},\\ \\frac{5\\pi}{9}\\)",
+            "\\(x=0,\\ \\frac{\\pi}{9},\\ \\frac{\\pi}{4},\\ \\frac{\\pi}{2},\\ \\frac{5\\pi}{9}\\)",
+            "\\(x=0,\\ \\frac{\\pi}{9},\\ \\frac{\\pi}{4},\\ \\frac{\\pi}{2}\\)",
+            "\\(x=0,\\ \\frac{\\pi}{4},\\ \\frac{\\pi}{2}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\sin7x+\\sin x=\\sin4x\\)",
+              "note": "Sums to products: sin 7x + sin x = 2 sin 4x cos 3x. Factor, don't divide."
+            }
+          ]
         }
       ]
     },
@@ -886,50 +888,48 @@
           "id": "ascham2020e1-q12b",
           "type": "mc",
           "difficulty": "hard",
+          "timeLimit": 60,
           "stem": "Solve \\(3\\cos3x-4\\sin3x=5\\) for \\(0\\le x\\le\\frac{2\\pi}{3}\\).",
-          "options": [
-            "\\(x=\\frac13\\cos^{-1}\\frac35\\)",
-            "\\(x=\\frac{2\\pi-\\cos^{-1}(3/5)}{3}\\)",
-            "\\(x=\\frac{2\\pi+\\cos^{-1}(3/5)}{3}\\)",
-            "\\(x=\\frac{\\pi-\\cos^{-1}(3/5)}{3}\\)"
-          ],
-          "answer": 1,
-          "hint": "Rewrite 3cos(3x)−4sin(3x) as a single cosine with amplitude 5. Then use the stated interval to select every valid solution.",
-          "keyPoints": [
-            {
-              "text": "\\(3\\cos3x-4\\sin3x=5\\)",
-              "note": "The coefficients 3 and −4 give amplitude \\(\\sqrt{3^2+4^2}=5\\)."
-            },
-            {
-              "text": "\\(0\\le x\\le\\frac{2\\pi}{3}\\)",
-              "note": "After solving for 3x, retain only values in [0,2π]."
-            }
-          ],
+          "hint": "Write 3cos 3x − 4sin 3x = 5cos(3x + α) with cos α = 3/5.",
           "steps": [
             {
-              "explain": "Write the left side in amplitude-phase form, matching cosine and sine coefficients.",
-              "work": "\\(3\\cos u-4\\sin u=5\\cos(u+\\alpha),\\quad\\cos\\alpha=\\frac35,\\;\\sin\\alpha=\\frac45\\)"
+              "explain": "Write the left side as \\(R\\cos(3x+\\alpha)\\).",
+              "work": "\\(R\\cos(3x+\\alpha)=R\\cos\\alpha\\cos3x-R\\sin\\alpha\\sin3x\\ \\Rightarrow\\ R\\cos\\alpha=3,\\ R\\sin\\alpha=4\\)"
             },
             {
-              "explain": "Since a cosine can equal 1 only at integer multiples of 2π, solve 5cos(3x+α)=5.",
-              "work": "\\(3x+\\alpha=2k\\pi\\Rightarrow x=\\frac{2k\\pi-\\alpha}{3}\\)"
+              "explain": "Find \\(R\\) and \\(\\alpha\\).",
+              "work": "\\(R=\\sqrt{3^2+4^2}=5,\\qquad\\cos\\alpha=\\frac35\\ \\Rightarrow\\ \\alpha=\\cos^{-1}\\frac35\\)"
             },
             {
-              "explain": "The interval gives 0≤3x≤2π. The only admissible integer is k=1.",
-              "work": "\\(\\alpha=\\cos^{-1}(3/5),\\quad x=\\frac{2\\pi-\\cos^{-1}(3/5)}3\\)"
+              "explain": "So the equation becomes",
+              "work": "\\(5\\cos\\left(3x+\\cos^{-1}\\tfrac35\\right)=5\\ \\Rightarrow\\ \\cos\\left(3x+\\cos^{-1}\\tfrac35\\right)=1\\)"
             },
             {
-              "explain": "This value lies in the required interval and is the only solution there.",
-              "work": "\\(\\boxed{x=\\frac{2\\pi-\\cos^{-1}(3/5)}3}\\)"
+              "explain": "\\(\\cos\\) equals 1 at \\(0, 2\\pi, \\dots\\). Since \\(0\\le x\\le\\frac{2\\pi}{3}\\), \\(3x+\\alpha\\) lies between \\(\\alpha\\) and \\(2\\pi+\\alpha\\), so only \\(2\\pi\\) works.",
+              "work": "\\(3x+\\cos^{-1}\\tfrac35=2\\pi\\ \\Rightarrow\\ x=\\frac{2\\pi}{3}-\\frac13\\cos^{-1}\\frac35\\approx1.785\\)"
             }
           ],
-          "solution": "Correct answer: \\(x=\\frac{2\\pi-\\cos^{-1}(3/5)}{3}\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "12(b)"
+          },
+          "options": [
+            "\\(x=-\\frac13\\cos^{-1}\\frac35\\)",
+            "\\(x=\\frac{2\\pi}{3}-\\frac13\\cos^{-1}\\frac45\\)",
+            "\\(x=\\frac{2\\pi}{3}-\\frac13\\cos^{-1}\\frac35\\)",
+            "\\(x=\\frac13\\cos^{-1}\\frac35\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Solve \\(3\\cos3x-4\\sin3x=5\\)",
+              "note": "Use the auxiliary-angle form R cos(3x + α): R = 5, so you need cos(3x + α) = 1."
+            }
+          ]
         }
       ]
     },
@@ -1131,47 +1131,48 @@
         {
           "id": "ascham2020e1-q4",
           "type": "mc",
-          "difficulty": "hard",
-          "stem": "A possible value of \\(\\tan\\frac{\\theta}{2}\\), given \\(2\\cos\\theta+\\sin\\theta=-1\\), is:",
-          "options": [
-            "\\(3\\)",
-            "\\(-3\\)",
-            "\\(-\\frac13\\)",
-            "\\(\\frac13\\)"
-          ],
-          "answer": 0,
-          "hint": "Set t = tan(θ/2), replace cosine and sine with the t-formulae, and solve the resulting quadratic.",
-          "keyPoints": [
-            {
-              "text": "\\(\\tan\\frac{\\theta}{2}\\)",
-              "note": "Use the half-angle substitution t = tan(θ/2)."
-            },
-            {
-              "text": "\\(2\\cos\\theta+\\sin\\theta=-1\\)",
-              "note": "Use cos θ = (1−t²)/(1+t²) and sin θ = 2t/(1+t²)."
-            }
-          ],
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "A possible solution for \\(\\tan\\frac{\\theta}{2}\\) given \\(2\\cos\\theta+\\sin\\theta=-1\\) is:",
+          "hint": "Substitute cos θ = (1 − t²)/(1 + t²) and sin θ = 2t/(1 + t²).",
           "steps": [
             {
-              "explain": "Let t = tan(θ/2). Substitute the half-angle formulae into the given equation.",
-              "work": "\\(2\\frac{1-t^2}{1+t^2}+\\frac{2t}{1+t^2}=-1\\)"
+              "explain": "Use the \\(t\\)-formulae with \\(t=\\tan\\frac\\theta2\\).",
+              "work": "\\(\\cos\\theta=\\frac{1-t^2}{1+t^2},\\qquad\\sin\\theta=\\frac{2t}{1+t^2}\\)"
             },
             {
-              "explain": "Multiply by 1+t² and collect terms.",
-              "work": "\\(2-2t^2+2t=-1-t^2\\Rightarrow t^2-2t-3=0\\)"
+              "explain": "Substitute and multiply through by \\(1+t^2\\).",
+              "work": "\\(2(1-t^2)+2t=-(1+t^2)\\ \\Rightarrow\\ 2-2t^2+2t=-1-t^2\\)"
             },
             {
-              "explain": "Factor and check the answer choices.",
-              "work": "\\((t-3)(t+1)=0\\Rightarrow t=3\\text{ or }t=-1\\). Thus \\(3\\) is a possible value."
+              "explain": "Collect terms and factorise.",
+              "work": "\\(t^2-2t-3=0\\ \\Rightarrow\\ (t-3)(t+1)=0\\ \\Rightarrow\\ t=3\\) or \\(t=-1\\)"
+            },
+            {
+              "explain": "Only \\(t=3\\) is offered, so the answer is D."
             }
           ],
-          "solution": "Correct answer: \\(3\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "4"
+          },
+          "options": [
+            "\\(-3\\)",
+            "\\(-\\frac13\\)",
+            "\\(\\frac13\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(\\tan\\frac{\\theta}{2}\\)",
+              "note": "Let t = tan(θ/2) and use the t-formulae to get a quadratic in t."
+            }
+          ]
         }
       ]
     }

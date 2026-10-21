@@ -12,49 +12,42 @@
           "id": "ascham2020e1-q13a",
           "type": "review",
           "difficulty": "hard",
-          "stem": "Prove by mathematical induction that \\(a+ar+ar^2+\\cdots+ar^n=\\frac{a(r^{n+1}-1)}{r-1}\\) for every integer \\(n\\ge1\\), where \\(r\\ne1\\).",
-          "answer": "Base case (\\(n = 1\\)):\nLHS: \\(a + ar = a(1 + r)\\)\nRHS: \\(\\dfrac{a(r^2 - 1)}{r - 1} = \\dfrac{a(r - 1)(r + 1)}{r - 1} = a(1 + r)\\)\nSince LHS = RHS, the statement holds for \\(n = 1\\).\n\nInductive hypothesis:\nAssume the statement is true for \\(n = k\\):\n\\[a + ar + ar^2 + \\cdots + ar^k = \\frac{a(r^{k+1} - 1)}{r - 1}\\]\n\nInductive step (\\(n = k + 1\\)):\nAdd the next term \\(ar^{k+1}\\) to both sides:\n\\[(a + ar + \\cdots + ar^k) + ar^{k+1} = \\frac{a(r^{k+1} - 1)}{r - 1} + ar^{k+1}\\]\n\\[= \\frac{a(r^{k+1} - 1) + ar^{k+1}(r - 1)}{r - 1}\\]\n\\[= \\frac{ar^{k+1} - a + ar^{k+2} - ar^{k+1}}{r - 1}\\]\n\\[= \\frac{ar^{k+2} - a}{r - 1} = \\frac{a(r^{k+2} - 1)}{r - 1}\\]\nThis matches the formula with \\(n = k + 1\\).\n\nConclusion:\nSince the statement holds for \\(n = 1\\), and if it holds for \\(n = k\\) it also holds for \\(n = k + 1\\), the statement is true for all integers \\(n \\ge 1\\) by mathematical induction.",
-          "hint": "Check the base case \\(n = 1\\) first. Then assume the identity holds for \\(n = k\\) and add the next term, \\(ar^{k+1}\\), to both sides to establish the formula for \\(n = k + 1\\).",
-          "keyPoints": [
-            {
-              "text": "Base case (\\(n = 1\\))",
-              "note": "Substitute n = 1 to show LHS = a + ar equals RHS = a(r² - 1)/(r - 1)."
-            },
-            {
-              "text": "Inductive step (\\(n = k + 1\\))",
-              "note": "Add the next term ar^(k+1) to the assumed sum and simplify over the common denominator (r - 1)."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "Prove by mathematical induction:\n\n\\(a+ar+ar^2+ar^3+\\dots+ar^n=\\frac{a(r^{n+1}-1)}{r-1}\\) for \\(n\\ge1\\)",
+          "hint": "Base case n = 1, then add ar^(k+1) to both sides of the assumption.",
           "steps": [
             {
-              "explain": "Base case (\\(n = 1\\)): evaluate the left-hand side and right-hand side separately to show they are equal.",
-              "work": "\\(\\text{LHS} = a + ar = a(1 + r),\\quad \\text{RHS} = \\dfrac{a(r^2 - 1)}{r - 1} = \\dfrac{a(r - 1)(r + 1)}{r - 1} = a(1 + r)\\)"
+              "explain": "Base case \\(n=1\\).",
+              "work": "\\(\\text{LHS}=a+ar,\\qquad\\text{RHS}=\\frac{a(r^2-1)}{r-1}=\\frac{a(r-1)(r+1)}{r-1}=a+ar\\)"
             },
             {
-              "explain": "Induction hypothesis: assume the formula holds for \\(n = k\\).",
-              "work": "\\(a + ar + ar^2 + \\cdots + ar^k = \\dfrac{a(r^{k+1} - 1)}{r - 1}\\)"
+              "explain": "Assume true for \\(n=k\\).",
+              "work": "\\(a+ar+\\dots+ar^k=\\frac{a(r^{k+1}-1)}{r-1}\\)"
             },
             {
-              "explain": "Inductive step (\\(n = k + 1\\)): add the next term \\(ar^{k+1}\\) to both sides and combine over the common denominator \\(r - 1\\).",
-              "work": "\\((a + ar + \\cdots + ar^k) + ar^{k+1} = \\dfrac{a(r^{k+1} - 1)}{r - 1} + ar^{k+1} = \\dfrac{a(r^{k+1} - 1) + ar^{k+1}(r - 1)}{r - 1}\\)"
+              "explain": "For \\(n=k+1\\), add the next term \\(ar^{k+1}\\) and use the assumption.",
+              "work": "\\(\\frac{a(r^{k+1}-1)}{r-1}+ar^{k+1}=\\frac{ar^{k+1}-a+ar^{k+1}(r-1)}{r-1}=\\frac{ar^{k+2}-a}{r-1}=\\frac{a(r^{k+2}-1)}{r-1}\\)"
             },
             {
-              "explain": "Expand and simplify the numerator to obtain the required formula for \\(n = k + 1\\).",
-              "work": "\\(\\dfrac{ar^{k+1} - a + ar^{k+2} - ar^{k+1}}{r - 1} = \\dfrac{ar^{k+2} - a}{r - 1} = \\dfrac{a(r^{k+2} - 1)}{r - 1}\\)"
-            },
-            {
-              "explain": "Conclusion: state the principle of mathematical induction.",
-              "work": "\\(\\text{Since the statement holds for } n = 1 \\text{ and } n = k \\implies n = k + 1\\text{, it holds for all integers } n \\ge 1.\\)"
+              "explain": "This is the formula with \\(n=k+1\\). So by mathematical induction the result holds for all \\(n\\ge1\\)."
             }
           ],
-          "solution": "Base case (\\(n = 1\\)):\nLHS: \\(a + ar = a(1 + r)\\)\nRHS: \\(\\dfrac{a(r^2 - 1)}{r - 1} = \\dfrac{a(r - 1)(r + 1)}{r - 1} = a(1 + r)\\)\nSince LHS = RHS, the statement holds for \\(n = 1\\).\n\nInductive hypothesis:\nAssume the statement is true for \\(n = k\\):\n\\[a + ar + ar^2 + \\cdots + ar^k = \\frac{a(r^{k+1} - 1)}{r - 1}\\]\n\nInductive step (\\(n = k + 1\\)):\nAdd \\(ar^{k+1}\\) to both sides:\n\\[(a + ar + \\cdots + ar^k) + ar^{k+1} = \\frac{a(r^{k+1} - 1) + ar^{k+1}(r - 1)}{r - 1} = \\frac{a(r^{k+2} - 1)}{r - 1}\\]\n\nConclusion:\nBy mathematical induction, the result holds for all integers \\(n \\ge 1\\).",
-          "manual": true,
-          "timeLimit": 180,
-          "xp": 3,
+          "xp": 1,
           "meta": {
-            "source": "Ascham 2020 3U Trial Q13(a)",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "source": "Ascham 2020 3U Trial",
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "13(a)"
+          },
+          "answer": "n = 1: LHS = a + ar; RHS = a(r² − 1)/(r − 1) = a(r + 1) = a + ar. Assume true for n = k. For n = k + 1: LHS = a(r^{k+1} − 1)/(r − 1) + ar^{k+1} = [a r^{k+1} − a + a r^{k+2} − a r^{k+1}]/(r − 1) = a(r^{k+2} − 1)/(r − 1) = RHS. Hence true for all n ≥ 1 by induction.",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "Prove by mathematical induction",
+              "note": "Step k → k + 1: add the next term ar^(k+1) and use a common denominator r − 1."
+            }
+          ]
         }
       ]
     }

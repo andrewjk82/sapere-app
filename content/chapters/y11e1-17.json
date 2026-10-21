@@ -55,91 +55,86 @@
           "id": "ascham2020e1-q2",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Each of the letters A, A, C, H, M, and S is written on a separate card. The cards are drawn at random and placed next to each other to form a word. What is the probability that the word ASCHAM appears?",
-          "options": [
-            "\\(\\frac{1}{360}\\)",
-            "\\(\\frac{1}{60}\\)",
-            "\\(\\frac{1}{720}\\)",
-            "\\(\\frac{1}{50}\\)"
-          ],
-          "answer": 0,
-          "hint": "Count the distinct six-letter arrangements, remembering that the two A cards are identical in the word, then compare the single target arrangement with that total.",
-          "keyPoints": [
-            {
-              "text": "probability that the word ASCHAM appears",
-              "note": "There is exactly one favourable arrangement: ASCHAM."
-            },
-            {
-              "text": "A, A",
-              "note": "Because the two A cards show the same letter, divide the factorial count by 2!."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "Each of the letters A, A, C, H, M, and S is written on a separate card. The cards are drawn at random from a hat and placed next to each other to form a word. What is the probability that the word ASCHAM appears?",
+          "hint": "Arrangements of letters with a repeat: divide by the factorial of the repeat.",
           "steps": [
             {
-              "explain": "There are six cards, but swapping the two A cards does not create a different visible word.",
-              "work": "\\(N=\\frac{6!}{2!}\\)"
+              "explain": "Count the different arrangements of the 6 letters. The two A's are identical, so divide by \\(2!\\).",
+              "work": "\\(\\frac{6!}{2!}=\\frac{720}{2}=360\\)"
             },
             {
-              "explain": "Evaluate the number of distinct arrangements.",
-              "work": "\\(N=\\frac{720}{2}=360\\)"
-            },
-            {
-              "explain": "Only one of these arrangements spells ASCHAM, so probability is favourable outcomes divided by total outcomes.",
+              "explain": "Exactly one of these arrangements spells ASCHAM.",
               "work": "\\(P(\\text{ASCHAM})=\\frac{1}{360}\\)"
+            },
+            {
+              "explain": "Forgetting the repeated A gives \\(\\frac{1}{720}\\)."
             }
           ],
-          "solution": "Correct answer: \\(\\frac{1}{360}\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "2"
+          },
+          "options": [
+            "\\(\\frac{1}{60}\\)",
+            "\\(\\frac{1}{360}\\)",
+            "\\(\\frac{1}{720}\\)",
+            "\\(\\frac{1}{50}\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "A, A, C, H, M, and S",
+              "note": "Two A's are identical, so the number of different words is 6!/2!."
+            }
+          ]
         },
         {
           "id": "ascham2020e1-q10",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Five boys and five girls are seated at a round table. How many arrangements have Robert and Hannah sitting together?",
-          "options": [
-            "\\(362880\\)",
-            "\\(40320\\)",
-            "\\(80640\\)",
-            "\\(725760\\)"
-          ],
-          "answer": 2,
-          "hint": "Treat Robert and Hannah as one block. Then arrange that block and the other eight people around the circle, and count the two orders inside the block.",
-          "keyPoints": [
-            {
-              "text": "Robert and Hannah sitting together",
-              "note": "Make the pair one object before arranging the people."
-            },
-            {
-              "text": "round table",
-              "note": "Circular arrangements of 9 distinct objects have (9−1)! orders."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "5 boys and 5 girls are seated at a round table. In how many ways can this happen with Robert and Hannah sitting together?",
+          "hint": "Treat the pair as one unit, use (n − 1)! for a circle, then ×2 for the pair's order.",
           "steps": [
             {
-              "explain": "Combine Robert and Hannah into one block. This gives 9 objects around the table.",
-              "work": "\\(1\\text{ pair block}+8\\text{ other people}=9\\text{ objects}\\)"
+              "explain": "Glue Robert and Hannah together as one unit. Then there are 9 units around the table.",
+              "work": "\\(10-2+1=9\\ \\text{units}\\)"
             },
             {
-              "explain": "Circular arrangements of 9 objects are counted up to rotation.",
+              "explain": "Arrangements of \\(n\\) objects in a circle: \\((n-1)!\\).",
               "work": "\\((9-1)!=8!=40320\\)"
             },
             {
-              "explain": "Robert and Hannah can swap places inside their block in 2 ways.",
-              "work": "\\(2\\cdot8!=80640\\)"
+              "explain": "Robert and Hannah can swap places within their unit.",
+              "work": "\\(8!\\times2!=40320\\times2=80640\\)"
             }
           ],
-          "solution": "Correct answer: \\(80640\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "10"
+          },
+          "options": [
+            "725760",
+            "362880",
+            "80640",
+            "40320"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Robert and Hannah sitting together",
+              "note": "Glue them into one unit (9 units round the table) and multiply by 2! for their order."
+            }
+          ]
         }
       ]
     },
@@ -209,46 +204,43 @@
           "id": "ascham2020e1-q8",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "What is the coefficient of the fourth term in the expansion of \\((3x-4)^6\\)?",
-          "options": [
-            "\\(34560\\)",
-            "\\(25920\\)",
-            "\\(-34560\\)",
-            "\\(-25920\\)"
-          ],
-          "answer": 2,
-          "hint": "The fourth term uses the binomial index r = 3. Substitute r = 3 into the general term.",
-          "keyPoints": [
-            {
-              "text": "coefficient of the fourth term",
-              "note": "Terms are counted from r = 0, so the fourth term has r = 3."
-            },
-            {
-              "text": "\\((3x-4)^6\\)",
-              "note": "Use \\(T_{r+1}=\\binom6r(3x)^{6-r}(-4)^r\\)."
-            }
-          ],
+          "timeLimit": 60,
+          "stem": "The coefficient of the fourth term in the expansion of \\((3x-4)^6\\) is:",
+          "hint": "Fourth term means k = 3 in C(6,k)(3x)^(6−k)(−4)^k.",
           "steps": [
             {
-              "explain": "Write the general term and select r = 3 for the fourth term.",
+              "explain": "The general term is \\(\\binom{6}{k}(3x)^{6-k}(-4)^k\\). The fourth term has \\(k=3\\) (the first term has \\(k=0\\)).",
               "work": "\\(T_4=\\binom63(3x)^3(-4)^3\\)"
             },
             {
-              "explain": "Separate the numerical coefficient from x³.",
-              "work": "\\(\\binom63\\cdot3^3\\cdot(-4)^3=20\\cdot27\\cdot(-64)\\)"
+              "explain": "Compute the coefficient.",
+              "work": "\\(\\binom63\\cdot3^3\\cdot(-4)^3=20\\times27\\times(-64)=-34560\\)"
             },
             {
-              "explain": "Multiply the factors, keeping the negative sign from the odd power of −4.",
-              "work": "\\(20\\cdot27\\cdot(-64)=-34560\\)"
+              "explain": "Watch the sign: \\((-4)^3\\) is negative. Using \\(k=4\\) (the fifth term) gives 25920."
             }
           ],
-          "solution": "Correct answer: \\(-34560\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "8"
+          },
+          "options": [
+            "34560",
+            "−34560",
+            "25920",
+            "−25920"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "fourth term",
+              "note": "The 4th term uses k = 3 (counting from k = 0). Keep the sign of (−4)³."
+            }
+          ]
         }
       ]
     }

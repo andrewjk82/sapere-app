@@ -111,51 +111,48 @@
         {
           "id": "ascham2020e1-q11b",
           "type": "mc",
-          "difficulty": "hard",
-          "stem": "The polynomial \\(P(x)=x^3-4x^2+tx+10\\) has roots \\(\\alpha,-\\alpha,\\beta\\). What are the roots and the value of t?",
-          "options": [
-            "\\(\\pm\\sqrt{\\frac52},4;\\ t=\\frac52\\)",
-            "\\(\\pm\\sqrt{\\frac52},-4;\\ t=-\\frac52\\)",
-            "\\(\\pm\\sqrt{\\frac52},4;\\ t=-\\frac52\\)",
-            "\\(\\pm\\sqrt5,4;\\ t=-5\\)"
-          ],
-          "answer": 2,
-          "hint": "Use the sum of roots to find β. Then use the product of roots to find α² and the pairwise-product formula for the x coefficient.",
-          "keyPoints": [
-            {
-              "text": "has roots \\(\\alpha,-\\alpha,\\beta\\)",
-              "note": "The opposite pair cancels in the sum of roots."
-            },
-            {
-              "text": "roots and the value of t",
-              "note": "Use Vieta’s formulas for the sum, product, and sum of pairwise products."
-            }
-          ],
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The polynomial \\(P(x)=x^3-4x^2+tx+10\\) has roots \\(\\alpha,-\\alpha\\) and \\(\\beta\\). Find the three roots and hence find the value of \\(t\\).",
+          "hint": "Use sum of roots for β, product of roots for α², then sum of pairs for t.",
           "steps": [
             {
-              "explain": "For a monic cubic x³−4x²+tx+10, the root sum is 4. Since α and −α cancel, β=4.",
-              "work": "\\(\\alpha-\\alpha+\\beta=4\\Rightarrow\\beta=4\\)"
+              "explain": "Sum of roots \\(=-\\frac ba=4\\). The pair \\(\\alpha,-\\alpha\\) cancels.",
+              "work": "\\(\\alpha+(-\\alpha)+\\beta=4\\ \\Rightarrow\\ \\beta=4\\)"
             },
             {
-              "explain": "The product of the roots equals −10.",
-              "work": "\\(\\alpha(-\\alpha)(4)=-10\\Rightarrow-4\\alpha^2=-10\\Rightarrow\\alpha^2=\\frac52\\)"
+              "explain": "Product of roots \\(=-\\frac da=-10\\).",
+              "work": "\\(\\alpha(-\\alpha)(4)=-10\\ \\Rightarrow\\ -4\\alpha^2=-10\\ \\Rightarrow\\ \\alpha^2=\\frac52,\\ \\alpha=\\sqrt{\\tfrac52}\\)"
             },
             {
-              "explain": "The x coefficient is the sum of pairwise products. The cross terms cancel.",
-              "work": "\\(t=\\alpha(-\\alpha)+\\alpha\\beta-\\alpha\\beta=-\\alpha^2=-\\frac52\\)"
+              "explain": "Sum of products in pairs \\(=\\frac ca=t\\).",
+              "work": "\\(t=\\alpha(-\\alpha)+\\alpha\\beta+(-\\alpha)\\beta=-\\alpha^2=-\\frac52\\)"
             },
             {
-              "explain": "Combine the two values of α with β to list all three roots.",
-              "work": "\\(\\boxed{\\alpha=\\pm\\sqrt{\\frac52},\\quad\\beta=4,\\quad t=-\\frac52}\\)"
+              "explain": "Check: \\(P(4)=64-64+4t+10=0\\Rightarrow t=-\\frac52\\) ✓."
             }
           ],
-          "solution": "Correct answer: \\(\\pm\\sqrt{\\frac52},4;\\ t=-\\frac52\\).",
-          "timeLimit": 60,
           "xp": 1,
           "meta": {
             "source": "Ascham 2020 3U Trial",
-            "examPaper": "Ascham 2020 3U Trial & Solutions"
-          }
+            "examPaper": "Ascham 2020 3U Trial & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(b)"
+          },
+          "options": [
+            "Roots \\(\\sqrt{\\tfrac52},\\ -\\sqrt{\\tfrac52},\\ -4\\); \\(t=-\\frac52\\)",
+            "Roots \\(\\sqrt{\\tfrac52},\\ -\\sqrt{\\tfrac52},\\ 4\\); \\(t=-\\frac52\\)",
+            "Roots \\(\\sqrt{\\tfrac52},\\ -\\sqrt{\\tfrac52},\\ 4\\); \\(t=\\frac52\\)",
+            "Roots \\(\\sqrt{10},\\ -\\sqrt{10},\\ 4\\); \\(t=-10\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "has roots \\(\\alpha,-\\alpha\\) and \\(\\beta\\)",
+              "note": "α and −α cancel in the sum, so β = 4 straight away."
+            }
+          ]
         }
       ]
     }
