@@ -1595,7 +1595,7 @@
           "id": "t3-2022-y8-la-q4i",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Find the area of the following shapes: Show your working: (i)",
+          "stem": "Find the area of the following shape:",
           "options": [
             "50 cm²",
             "15 cm²",
@@ -1606,7 +1606,7 @@
           "hint": "Use half × base × perpendicular height.",
           "keyPoints": [
             {
-              "text": "(i)",
+              "text": "perpendicular height",
               "note": "Use the perpendicular height, not a sloping side."
             }
           ],
@@ -1737,7 +1737,7 @@
           "id": "t3-2022-y8-la-q4ii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the area of the following shapes: Show your working: (ii)",
+          "stem": "Find the area of the following shape:",
           "options": [
             "105 cm²",
             "135 cm²",
@@ -1748,7 +1748,7 @@
           "hint": "For a parallelogram, area is base × perpendicular height; the sloping side is not the height.",
           "keyPoints": [
             {
-              "text": "Show your working:",
+              "text": "perpendicular height",
               "note": "Use its perpendicular height, not its 9 cm sloping side."
             }
           ],
@@ -1785,7 +1785,7 @@
           "id": "t3-2022-y8-la-q4iii",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Find the area of the following shapes: Show your working: (iii)",
+          "stem": "Find the area of the following shape:",
           "options": [
             "252 cm²",
             "126 cm²",
@@ -1796,7 +1796,7 @@
           "hint": "Add the parallel sides, multiply by the perpendicular height, then halve.",
           "keyPoints": [
             {
-              "text": "Show your working:",
+              "text": "parallel sides",
               "note": "Use the two parallel sides and the perpendicular height."
             }
           ],
@@ -1936,23 +1936,14 @@
               "note": "Convert the cubic-metre volume to litres."
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">0.9 m</text></svg>"
-          },
           "steps": [
             {
               "explain": "Multiply the three dimensions to find the tank volume.",
-              "work": "\\(V=1.3\\times0.9\\times3.4=3.978\\text{ m}^3\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">0.9 m</text></svg>"
-              }
+              "work": "\\(V=1.3\\times0.9\\times3.4=3.978\\text{ m}^3\\)"
             },
             {
               "explain": "Convert cubic metres to litres.",
-              "work": "\\(1\\text{ m}^3=1000\\text{ L}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">0.9 m</text></svg>"
-              }
+              "work": "\\(1\\text{ m}^3=1000\\text{ L}\\)"
             },
             {
               "explain": "Multiply by 1000 and state the capacity.",
@@ -2502,7 +2493,7 @@
           "id": "t3-2022-y8-la-q1a",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Convert the following units: (i) \\(2\\text{ m}=\\square\\text{ cm}\\)",
+          "stem": "Convert: \\(2\\text{ m}=\\square\\text{ cm}\\)",
           "options": [
             "20 cm",
             "200 cm",
@@ -2541,7 +2532,7 @@
           "id": "t3-2022-y8-la-q1b",
           "type": "mc",
           "difficulty": "easy",
-          "stem": "Convert the following units: (ii) \\(2680\\text{ mm}=\\square\\text{ m}\\)",
+          "stem": "Convert: \\(2680\\text{ mm}=\\square\\text{ m}\\)",
           "options": [
             "26.8 m",
             "0.268 m",
@@ -2580,7 +2571,7 @@
           "id": "t3-2022-y8-la-q1c",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Convert the following units: (iii) \\(2\\text{ m}^2=\\square\\text{ cm}^2\\)",
+          "stem": "Convert: \\(2\\text{ m}^2=\\square\\text{ cm}^2\\)",
           "options": [
             "200 cm²",
             "2,000 cm²",
@@ -2619,7 +2610,7 @@
           "id": "t3-2022-y8-la-q1d",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Convert the following units: (iv) \\(2\\text{ m}^3=\\square\\text{ cm}^3\\)",
+          "stem": "Convert: \\(2\\text{ m}^3=\\square\\text{ cm}^3\\)",
           "options": [
             "2,000,000 cm³",
             "20,000 cm³",

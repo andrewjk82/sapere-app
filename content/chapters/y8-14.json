@@ -1562,23 +1562,14 @@
               "note": "The path adds 1.5 m to each side of both dimensions."
             }
           ],
-          "figure": {
-            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Pool: 25 m × 9 m</text></svg>"
-          },
           "steps": [
             {
               "explain": "Find the outer dimensions by adding the path twice.",
-              "work": "\\(L=25+1.5+1.5=28\\text{ m},\\;W=9+1.5+1.5=12\\text{ m}\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#f59e0b\" stroke-width=\"3\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Pool: 25 m × 9 m</text></svg>"
-              }
+              "work": "\\(L=25+1.5+1.5=28\\text{ m},\\;W=9+1.5+1.5=12\\text{ m}\\)"
             },
             {
               "explain": "Subtract the pool area from the outer rectangle.",
-              "work": "\\(A_{path}=28(12)-25(9)=336-225=111\\text{ m}^2\\)",
-              "figure": {
-                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">Pool: 25 m × 9 m</text></svg>"
-              }
+              "work": "\\(A_{path}=28(12)-25(9)=336-225=111\\text{ m}^2\\)"
             },
             {
               "explain": "Multiply path area by the cost per square metre.",
