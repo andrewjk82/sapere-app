@@ -4,7 +4,8 @@ Apply this checklist whenever adding questions from an exam or worksheet. It rec
 
 ## Source and topic mapping
 - Read both the exam and its solutions. Match each sub-question to the existing year/topic taxonomy before adding it.
-- Preserve the source question's mathematical meaning and include all relevant parts. Do not duplicate a source part or omit a sub-question.
+- Preserve the source question wording verbatim; do not paraphrase or silently alter the prompt. When a multipart source is split for independent grading, keep the original wording and identify only the original part (a, b, i, ii, etc.).
+- Preserve the source question's mathematical meaning and include all relevant parts. Count every parent and sub-question against the source before and after import; do not duplicate a source part or omit a sub-question.
 - Verify answer keys against the mathematics, even when the supplied key or diagram seems inconsistent.
 
 ## Question types and assessment settings
