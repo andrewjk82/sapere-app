@@ -1542,6 +1542,102 @@
             "\\((2-\\sqrt2)\\text{ cm}\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "t3-2022-y8-la-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the perimeter of the following shape:",
+          "options": [
+            "22 cm",
+            "72 cm",
+            "44 cm",
+            "36 cm"
+          ],
+          "answer": 2,
+          "hint": "A rectangle has two sides of each length; add all four sides.",
+          "keyPoints": [
+            {
+              "text": "perimeter",
+              "note": "Add the lengths of all four outer sides."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"rect\"><rect x=\"90\" y=\"65\" width=\"200\" height=\"100\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"190\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">18 cm</text><text x=\"75\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#334155\">4 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Identify the two different side lengths.",
+              "work": "\\(l=18\\text{ cm},\\;w=4\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"rect\"><rect x=\"90\" y=\"65\" width=\"200\" height=\"100\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><text x=\"190\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">18 cm</text><text x=\"75\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">4 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the rectangle perimeter formula.",
+              "work": "\\(P=2l+2w=2(18)+2(4)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"rect\"><rect x=\"90\" y=\"65\" width=\"200\" height=\"100\" fill=\"#dbeafe\" stroke=\"#f59e0b\" stroke-width=\"3\"/><text x=\"190\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">18 cm</text><text x=\"75\" y=\"115\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">4 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate and state the perimeter.",
+              "work": "\\(P=36+8=44\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q4i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the area of the following shapes: Show your working: (i)",
+          "options": [
+            "50 cm²",
+            "15 cm²",
+            "75 cm²",
+            "25 cm²"
+          ],
+          "answer": 3,
+          "hint": "Use half × base × perpendicular height.",
+          "keyPoints": [
+            {
+              "text": "(i)",
+              "note": "Use the perpendicular height, not a sloping side."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tri\"><polygon points=\"120,175 260,175 120,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"120\" y1=\"175\" x2=\"120\" y2=\"75\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"193\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">10 cm</text><text x=\"105\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Identify the base and its perpendicular height.",
+              "work": "\\(b=10\\text{ cm},\\;h=5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tri\"><polygon points=\"120,175 260,175 120,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"120\" y1=\"175\" x2=\"120\" y2=\"75\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"193\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">10 cm</text><text x=\"105\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the triangle area formula.",
+              "work": "\\(A=\\frac12 bh=\\frac12(10)(5)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tri\"><polygon points=\"120,175 260,175 120,75\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"120\" y1=\"175\" x2=\"120\" y2=\"75\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"193\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">10 cm</text><text x=\"105\" y=\"125\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the area in square centimetres.",
+              "work": "\\(A=25\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -1636,6 +1732,102 @@
             "\\(30\\text{ m}^2\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "t3-2022-y8-la-q4ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the following shapes: Show your working: (ii)",
+          "options": [
+            "105 cm²",
+            "135 cm²",
+            "52.5 cm²",
+            "96 cm²"
+          ],
+          "answer": 0,
+          "hint": "For a parallelogram, area is base × perpendicular height; the sloping side is not the height.",
+          "keyPoints": [
+            {
+              "text": "Show your working:",
+              "note": "Use its perpendicular height, not its 9 cm sloping side."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"para\"><polygon points=\"110,170 290,170 255,70 75,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"170\" x2=\"110\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">15 cm</text><text x=\"292\" y=\"115\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">9 cm</text><text x=\"97\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Select the base and the vertical perpendicular height.",
+              "work": "\\(b=15\\text{ cm},\\;h=7\\text{ cm}\\); the sloping side is 9 cm and is not used.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"para\"><polygon points=\"110,170 290,170 255,70 75,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"170\" x2=\"110\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">15 cm</text><text x=\"292\" y=\"115\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">9 cm</text><text x=\"97\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Apply the parallelogram area formula.",
+              "work": "\\(A=bh=15\\times7\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"para\"><polygon points=\"110,170 290,170 255,70 75,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"110\" y1=\"170\" x2=\"110\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">15 cm</text><text x=\"292\" y=\"115\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">9 cm</text><text x=\"97\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply and state the area.",
+              "work": "\\(A=105\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q4iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the following shapes: Show your working: (iii)",
+          "options": [
+            "252 cm²",
+            "126 cm²",
+            "98 cm²",
+            "140 cm²"
+          ],
+          "answer": 1,
+          "hint": "Add the parallel sides, multiply by the perpendicular height, then halve.",
+          "keyPoints": [
+            {
+              "text": "Show your working:",
+              "note": "Use the two parallel sides and the perpendicular height."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"trap\"><polygon points=\"105,170 285,170 250,70 140,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"170\" x2=\"150\" y2=\"70\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 cm</text><text x=\"195\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">8 cm</text><text x=\"142\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Identify the parallel sides and perpendicular height.",
+              "work": "\\(a=8\\text{ cm},\\;b=28\\text{ cm},\\;h=7\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"trap\"><polygon points=\"105,170 285,170 250,70 140,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"170\" x2=\"150\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 cm</text><text x=\"195\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">8 cm</text><text x=\"142\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the trapezium area formula.",
+              "work": "\\(A=\\frac12 h(a+b)=\\frac12(7)(8+28)\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"trap\"><polygon points=\"105,170 285,170 250,70 140,70\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"170\" x2=\"150\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><text x=\"195\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 cm</text><text x=\"195\" y=\"55\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">8 cm</text><text x=\"142\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">7 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Add, multiply and halve.",
+              "work": "\\(A=\\frac12(7)(36)=126\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -1676,6 +1868,102 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 2
+        },
+        {
+          "id": "t3-2022-y8-la-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the volume of this rectangular prism: (1d.p)",
+          "options": [
+            "48 m³",
+            "18 m³",
+            "96 m³",
+            "96 m²"
+          ],
+          "answer": 2,
+          "hint": "Multiply the three perpendicular dimensions; volume uses cubic units.",
+          "keyPoints": [
+            {
+              "text": "volume",
+              "note": "Multiply all three perpendicular dimensions."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"prism\"><path d=\"M100 75 L230 75 L270 45 L140 45 Z M100 75 L100 180 L230 180 L230 75 M230 75 L270 45 L270 150 L230 180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"84\" y=\"128\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"165\" y=\"198\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">2 m</text><text x=\"256\" y=\"170\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4 m</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Read the three dimensions of the prism.",
+              "work": "\\(l=12\\text{ m},\\;w=2\\text{ m},\\;h=4\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"prism\"><path d=\"M100 75 L230 75 L270 45 L140 45 Z M100 75 L100 180 L230 180 L230 75 M230 75 L270 45 L270 150 L230 180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"84\" y=\"128\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"165\" y=\"198\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">2 m</text><text x=\"256\" y=\"170\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Use volume = length × width × height.",
+              "work": "\\(V=lwh=12\\times2\\times4\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"prism\"><path d=\"M100 75 L230 75 L270 45 L140 45 Z M100 75 L100 180 L230 180 L230 75 M230 75 L270 45 L270 150 L230 180\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"84\" y=\"128\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"165\" y=\"198\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">2 m</text><text x=\"256\" y=\"170\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">4 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply and include cubic units.",
+              "work": "\\(V=24\\times4=96\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A tank is in the shape of a rectangular prism which has dimensions 1.3 m, 0.9 m and 3.4 m. What is the capacity of this tank in litres?",
+          "options": [
+            "3.978 L",
+            "39,780 L",
+            "397.8 L",
+            "3978 L"
+          ],
+          "answer": 3,
+          "hint": "Find the volume in cubic metres, then use 1 m³ = 1000 L.",
+          "keyPoints": [
+            {
+              "text": "capacity",
+              "note": "Convert the cubic-metre volume to litres."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#334155\">0.9 m</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Multiply the three dimensions to find the tank volume.",
+              "work": "\\(V=1.3\\times0.9\\times3.4=3.978\\text{ m}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">0.9 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Convert cubic metres to litres.",
+              "work": "\\(1\\text{ m}^3=1000\\text{ L}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"tank\"><path d=\"M90 75 L245 75 L280 50 L125 50 Z M90 75 L90 165 L245 165 L245 75 M245 75 L280 50 L280 140 L245 165\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"165\" y=\"61\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">3.4 m</text><text x=\"76\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">1.3 m</text><text x=\"262\" y=\"156\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">0.9 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply by 1000 and state the capacity.",
+              "work": "\\(3.978\\times1000=3978\\text{ L}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -1892,6 +2180,54 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "t3-2022-y8-la-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the volume of this cylinder correct to 1dp.",
+          "options": [
+            "197.9 m³",
+            "66.0 m³",
+            "395.8 m³",
+            "21.0 m³"
+          ],
+          "answer": 0,
+          "hint": "Use V = πr²h; the circular end has radius 3 m.",
+          "keyPoints": [
+            {
+              "text": "cylinder",
+              "note": "Square the radius before multiplying by the height."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"cylinder\"><ellipse cx=\"190\" cy=\"65\" rx=\"55\" ry=\"20\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 65 V175 M245 65 V175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 0 245 175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 1 245 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"190\" y1=\"65\" x2=\"245\" y2=\"65\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"212\" y=\"53\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">r=3 m</text><text x=\"260\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 m</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Identify the cylinder radius and height.",
+              "work": "\\(r=3\\text{ m},\\;h=7\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"cylinder\"><ellipse cx=\"190\" cy=\"65\" rx=\"55\" ry=\"20\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 65 V175 M245 65 V175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 0 245 175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 1 245 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"190\" y1=\"65\" x2=\"245\" y2=\"65\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"212\" y=\"53\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">r=3 m</text><text x=\"260\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the cylinder volume formula.",
+              "work": "\\(V=\\pi r^2h=\\pi(3)^2(7)=63\\pi\\text{ m}^3\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"cylinder\"><ellipse cx=\"190\" cy=\"65\" rx=\"55\" ry=\"20\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 65 V175 M245 65 V175\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 0 245 175\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M135 175 A55 20 0 0 1 245 175\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"190\" y1=\"65\" x2=\"245\" y2=\"65\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"212\" y=\"53\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">r=3 m</text><text x=\"260\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">7 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(63\\pi\\approx197.9\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -2161,6 +2497,162 @@
             }
           ],
           "xp": 1
+        },
+        {
+          "id": "t3-2022-y8-la-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the following units: (i) \\(2\\text{ m}=\\square\\text{ cm}\\)",
+          "options": [
+            "20 cm",
+            "200 cm",
+            "2,000 cm",
+            "0.02 cm"
+          ],
+          "answer": 1,
+          "hint": "There are 100 centimetres in 1 metre.",
+          "keyPoints": [
+            {
+              "text": "2",
+              "note": "Use 100 cm for each metre."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Use the length conversion.",
+              "work": "\\(1\\text{ m}=100\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by 100.",
+              "work": "\\(2\\times100=200\\)"
+            },
+            {
+              "explain": "Write the converted length.",
+              "work": "\\(200\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the following units: (ii) \\(2680\\text{ mm}=\\square\\text{ m}\\)",
+          "options": [
+            "26.8 m",
+            "0.268 m",
+            "2.68 m",
+            "268 m"
+          ],
+          "answer": 2,
+          "hint": "Since 1 metre is 1000 millimetres, divide by 1000.",
+          "keyPoints": [
+            {
+              "text": "2680",
+              "note": "Divide by 1000 to convert millimetres to metres."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Recall the millimetre-to-metre conversion.",
+              "work": "\\(1000\\text{ mm}=1\\text{ m}\\)"
+            },
+            {
+              "explain": "Divide 2680 by 1000.",
+              "work": "\\(2680\\div1000=2.68\\)"
+            },
+            {
+              "explain": "Attach the target unit.",
+              "work": "\\(2680\\text{ mm}=2.68\\text{ m}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the following units: (iii) \\(2\\text{ m}^2=\\square\\text{ cm}^2\\)",
+          "options": [
+            "200 cm²",
+            "2,000 cm²",
+            "20 cm²",
+            "20,000 cm²"
+          ],
+          "answer": 3,
+          "hint": "Area units are squared: 1 m² equals 100 cm × 100 cm.",
+          "keyPoints": [
+            {
+              "text": "2",
+              "note": "For area, square the length conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert one metre to centimetres before squaring.",
+              "work": "\\(1\\text{ m}=100\\text{ cm}\\)"
+            },
+            {
+              "explain": "Square the conversion factor for area.",
+              "work": "\\(1\\text{ m}^2=100^2\\text{ cm}^2=10,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Multiply by 2.",
+              "work": "\\(2\\times10,000=20,000\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the following units: (iv) \\(2\\text{ m}^3=\\square\\text{ cm}^3\\)",
+          "options": [
+            "2,000,000 cm³",
+            "20,000 cm³",
+            "200,000 cm³",
+            "2,000 cm³"
+          ],
+          "answer": 0,
+          "hint": "For volume, cube the length conversion: 100³ cm³ in each m³.",
+          "keyPoints": [
+            {
+              "text": "2",
+              "note": "For volume, cube the length conversion factor."
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Convert metres to centimetres.",
+              "work": "\\(1\\text{ m}=100\\text{ cm}\\)"
+            },
+            {
+              "explain": "Cube the conversion factor for volume.",
+              "work": "\\(1\\text{ m}^3=100^3\\text{ cm}^3=1,000,000\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Multiply by 2.",
+              "work": "\\(2\\times1,000,000=2,000,000\\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -3896,6 +4388,40 @@
           ],
           "timeLimit": 180,
           "xp": 1
+        },
+        {
+          "id": "t3-2022-y8-rr-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the time difference between 8:40 am and 11:28 am on the same day?",
+          "options": [
+            "3 h 12 min",
+            "2 h 48 min",
+            "2 h 88 min",
+            "1 h 48 min"
+          ],
+          "answer": 1,
+          "hint": "Count forward to 9:00, then to 11:00, then to 11:28.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "From 8:40 am to 9:00 am is 20 minutes.",
+              "work": "\\(20\\text{ min}\\)"
+            },
+            {
+              "explain": "From 9:00 am to 11:00 am is 2 hours, then 28 minutes to 11:28 am.",
+              "work": "\\(2\\text{ h}+28\\text{ min}\\)"
+            },
+            {
+              "explain": "Add the intervals.",
+              "work": "\\(2\\text{ h}+(20+28)\\text{ min}=2\\text{ h }48\\text{ min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     }

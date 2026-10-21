@@ -558,6 +558,102 @@
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
           "xp": 3
+        },
+        {
+          "id": "t3-2022-y8-la-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the area and the circumference of the following circle: Give your answers to 1 decimal place. (circumference)",
+          "options": [
+            "31.4 cm",
+            "78.5 cm",
+            "15.7 cm",
+            "25.0 cm"
+          ],
+          "answer": 0,
+          "hint": "For circumference use C = 2πr (or π times the diameter).",
+          "keyPoints": [
+            {
+              "text": "circumference",
+              "note": "Circumference is a length, so the answer is in cm."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Read the radius from the circle.",
+              "work": "\\(r=5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the circumference formula.",
+              "work": "\\(C=2\\pi r=2\\pi(5)=10\\pi\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(10\\pi\\approx31.4\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the perimeter of this semicircle, correct to one decimal place.",
+          "options": [
+            "12.6 cm",
+            "20.6 cm",
+            "25.1 cm",
+            "8.0 cm"
+          ],
+          "answer": 1,
+          "hint": "The perimeter includes the curved half-circumference and the straight diameter.",
+          "keyPoints": [
+            {
+              "text": "semicircle",
+              "note": "Remember to add the straight diameter to the half-circle arc."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"semi\"><path d=\"M100 160 A70 70 0 0 1 240 160 L100 160 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"170\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"205\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">4 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "The radius is 4 cm, so the diameter is twice the radius.",
+              "work": "\\(d=2r=2(4)=8\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"semi\"><path d=\"M100 160 A70 70 0 0 1 240 160 L100 160 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"170\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"205\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">4 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Find half the circumference, then add the diameter.",
+              "work": "\\(P=\\frac12(2\\pi r)+d=\\pi(4)+8\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"semi\"><path d=\"M100 160 A70 70 0 0 1 240 160 L100 160 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"100\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"170\" y1=\"160\" x2=\"240\" y2=\"160\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"205\" y=\"148\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">4 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to one decimal place.",
+              "work": "\\(P=4\\pi+8\\approx20.6\\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -649,6 +745,102 @@
             "\\(3.1\\text{ cm}^2\\)"
           ],
           "answer": 2
+        },
+        {
+          "id": "t3-2022-y8-la-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the area and the circumference of the following circle: Give your answers to 1 decimal place. (area)",
+          "options": [
+            "31.4 cm²",
+            "15.7 cm²",
+            "78.5 cm²",
+            "25.0 cm²"
+          ],
+          "answer": 2,
+          "hint": "For area use A = πr² and the given radius is 5 cm.",
+          "keyPoints": [
+            {
+              "text": "area",
+              "note": "Area uses the square of the radius."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Identify the radius (not the diameter).",
+              "work": "\\(r=5\\text{ cm}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Substitute into the circle area formula.",
+              "work": "\\(A=\\pi r^2=\\pi(5)^2=25\\pi\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"circle\"><circle cx=\"190\" cy=\"120\" r=\"68\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><line x1=\"190\" y1=\"120\" x2=\"258\" y2=\"120\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"#f59e0b\" stroke=\"#f59e0b\" stroke-width=\"1\"/><text x=\"224\" y=\"106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"13\" fill=\"#f59e0b\">r = 5 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(25\\pi\\approx78.5\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-la-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the area of this sector, correct to 1 decimal place.",
+          "options": [
+            "150.8 cm²",
+            "18.8 cm²",
+            "100.5 cm²",
+            "50.3 cm²"
+          ],
+          "answer": 3,
+          "hint": "A sector is the stated fraction of the full circle: 40°/360°.",
+          "keyPoints": [
+            {
+              "text": "sector",
+              "note": "Use the central angle as a fraction of 360°."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"sector\"><path d=\"M115 160 L115 60 A100 100 0 0 1 179.3 83.4 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 130 A30 30 0 0 1 134.3 137.0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"160\" x2=\"179.3\" y2=\"83.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><text x=\"132\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">40°</text><text x=\"115\" y=\"181\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">12 cm</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Find the fraction of the full circle represented by 40°.",
+              "work": "\\(\\frac{40}{360}=\\frac19\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"sector\"><path d=\"M115 160 L115 60 A100 100 0 0 1 179.3 83.4 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 130 A30 30 0 0 1 134.3 137.0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"160\" x2=\"179.3\" y2=\"83.4\" stroke=\"#334155\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><text x=\"132\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">40°</text><text x=\"115\" y=\"181\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">12 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Use the sector area formula with radius 12 cm.",
+              "work": "\\(A=\\frac{40}{360}\\pi(12)^2=16\\pi\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"sector\"><path d=\"M115 160 L115 60 A100 100 0 0 1 179.3 83.4 Z\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><path d=\"M115 130 A30 30 0 0 1 134.3 137.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\" stroke-linecap=\"round\"/><line x1=\"115\" y1=\"160\" x2=\"179.3\" y2=\"83.4\" stroke=\"#f59e0b\" stroke-width=\"2.5\"  stroke-linecap=\"round\"/><text x=\"132\" y=\"118\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">40°</text><text x=\"115\" y=\"181\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">12 cm</text></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate and round to 1 decimal place.",
+              "work": "\\(16\\pi\\approx50.3\\text{ cm}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -733,6 +925,54 @@
             }
           ],
           "xp": 2
+        },
+        {
+          "id": "t3-2022-y8-la-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the area of this composite shape:",
+          "options": [
+            "258 m²",
+            "78 m²",
+            "270 m²",
+            "246 m²"
+          ],
+          "answer": 0,
+          "hint": "Find the rectangle area, then subtract the triangular cut-out. The cut-out dimensions come from 18−12 and 15−11.",
+          "keyPoints": [
+            {
+              "text": "composite shape",
+              "note": "Subtract the triangular cut-out from the rectangle."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"composite\"><rect x=\"80\" y=\"45\" width=\"220\" height=\"145\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"220,190 300,190 300,150\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><line x1=\"220\" y1=\"190\" x2=\"300\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"35\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">18 m</text><text x=\"68\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">15 m</text><text x=\"185\" y=\"205\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">12 m</text><text x=\"310\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">11 m</text><text x=\"257\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">6 m</text><text x=\"308\" y=\"168\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">4 m</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Calculate the outer rectangle area from 18 m by 15 m.",
+              "work": "\\(A_{rect}=18\\times15=270\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"composite\"><rect x=\"80\" y=\"45\" width=\"220\" height=\"145\" fill=\"#dbeafe\" stroke=\"#f59e0b\" stroke-width=\"3\"/><polygon points=\"220,190 300,190 300,150\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><line x1=\"220\" y1=\"190\" x2=\"300\" y2=\"150\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"35\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">18 m</text><text x=\"68\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">15 m</text><text x=\"185\" y=\"205\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">12 m</text><text x=\"310\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">11 m</text><text x=\"257\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">6 m</text><text x=\"308\" y=\"168\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">4 m</text></svg>"
+              }
+            },
+            {
+              "explain": "The cut-out is a right triangle: its legs are 18−12=6 m and 15−11=4 m.",
+              "work": "\\(A_{tri}=\\frac12(6)(4)=12\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"composite\"><rect x=\"80\" y=\"45\" width=\"220\" height=\"145\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"2\"/><polygon points=\"220,190 300,190 300,150\" fill=\"#fff\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"220\" y1=\"190\" x2=\"300\" y2=\"150\" stroke=\"#f59e0b\" stroke-width=\"2\"  stroke-linecap=\"round\"/><text x=\"190\" y=\"35\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">18 m</text><text x=\"68\" y=\"120\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">15 m</text><text x=\"185\" y=\"205\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">12 m</text><text x=\"310\" y=\"120\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">11 m</text><text x=\"257\" y=\"188\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">6 m</text><text x=\"308\" y=\"168\" text-anchor=\"start\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"11\" fill=\"#f59e0b\">4 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the missing triangle from the rectangle.",
+              "work": "\\(A=270-12=258\\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -1302,6 +1542,54 @@
             }
           ],
           "xp": 3
+        },
+        {
+          "id": "t3-2022-y8-la-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rectangular swimming pool measuring 25 m by 9 m is surrounded by a pebble path with a uniform width of 1.5 m. Calculate the cost of the path if pebbles cost $24 per m².",
+          "options": [
+            "$5400",
+            "$2664",
+            "$2160",
+            "$3996"
+          ],
+          "answer": 1,
+          "hint": "Add 1.5 m on both sides of each pool dimension, subtract the pool area, then multiply by $24/m².",
+          "keyPoints": [
+            {
+              "text": "uniform width",
+              "note": "The path adds 1.5 m to each side of both dimensions."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Pool: 25 m × 9 m</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Find the outer dimensions by adding the path twice.",
+              "work": "\\(L=25+1.5+1.5=28\\text{ m},\\;W=9+1.5+1.5=12\\text{ m}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#f59e0b\" stroke-width=\"3\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#334155\" stroke-width=\"1.8\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#f59e0b\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Pool: 25 m × 9 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the pool area from the outer rectangle.",
+              "work": "\\(A_{path}=28(12)-25(9)=336-225=111\\text{ m}^2\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"pool\"><rect x=\"85\" y=\"48\" width=\"210\" height=\"145\" fill=\"#fff\" stroke=\"#334155\" stroke-width=\"2\"/><rect x=\"96\" y=\"59\" width=\"188\" height=\"123\" fill=\"#dbeafe\" stroke=\"#f59e0b\" stroke-width=\"2.5\"/><text x=\"190\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">28 m (25 m + 1.5 m + 1.5 m)</text><text x=\"75\" y=\"122\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"12\" fill=\"#334155\">12 m</text><text x=\"190\" y=\"208\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#f59e0b\">Pool: 25 m × 9 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Multiply path area by the cost per square metre.",
+              "work": "\\(111\\times\\$24=\\$2664\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     }

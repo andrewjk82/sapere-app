@@ -2020,6 +2020,232 @@
             "\\(12\\text{ km/h}\\)"
           ],
           "answer": 3
+        },
+        {
+          "id": "t3-2022-y8-rr-q9i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The travel graph shows Petra’s journey to deliver a presentation to a client. i) How far had Petra travelled by 12pm?",
+          "options": [
+            "40 km",
+            "30 km",
+            "50 km",
+            "60 km"
+          ],
+          "answer": 0,
+          "hint": "Read the distance value on the graph at 12 pm.",
+          "keyPoints": [
+            {
+              "text": "12pm",
+              "note": "Read the distance coordinate at 12 pm."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Locate 12 pm on the horizontal time axis.",
+              "work": "Move vertically to Petra’s journey line.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Read the corresponding vertical-axis value.",
+              "work": "At 12 pm the distance is 40 km.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "State the distance travelled.",
+              "work": "\\(40\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q9ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The travel graph shows Petra’s journey to deliver a presentation to a client. ii) Find Petra’s average speed between 10am and 3pm.",
+          "options": [
+            "8 km/h",
+            "40 km/h",
+            "50 km/h",
+            "200 km/h"
+          ],
+          "answer": 1,
+          "hint": "Average speed = change in distance ÷ elapsed time.",
+          "keyPoints": [
+            {
+              "text": "average speed",
+              "note": "Use total distance change divided by elapsed time."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Read the graph values at 10 am and 3 pm.",
+              "work": "Distance changes from 0 km to 200 km in 5 hours.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Use average speed = distance ÷ time.",
+              "work": "\\(v=\\frac{200-0}{5}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Calculate the average speed.",
+              "work": "\\(v=\\frac{200\\text{ km}}{5\\text{ h}}=40\\text{ km/h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q9iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The travel graph shows Petra’s journey to deliver a presentation to a client. iii) How long did Petra stop for on her journey home?",
+          "options": [
+            "1 h",
+            "2 h",
+            "30 min",
+            "15 min"
+          ],
+          "answer": 2,
+          "hint": "A horizontal segment on a distance–time graph represents a stop; read its start and end times.",
+          "keyPoints": [
+            {
+              "text": "journey home",
+              "note": "A flat graph segment means Petra is stopped."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Find the flat segment on the return journey, after Petra leaves the client.",
+              "work": "The graph is horizontal from about 5:30 pm to 6:00 pm.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Subtract the start time from the end time.",
+              "work": "\\(6{:}00-5{:}30=30\\text{ minutes}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#f59e0b\" stroke-width=\"3\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "State the stop duration.",
+              "work": "\\(30\\text{ min}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q9iv",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The travel graph shows Petra’s journey to deliver a presentation to a client. iv) How far did she travel in total?",
+          "options": [
+            "200 km",
+            "300 km",
+            "40 km",
+            "400 km"
+          ],
+          "answer": 3,
+          "hint": "The graph shows the client is 200 km away; the return trip covers the same distance again.",
+          "keyPoints": [
+            {
+              "text": "in total",
+              "note": "Add the outward and return distances."
+            }
+          ],
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+          },
+          "steps": [
+            {
+              "explain": "Read the one-way distance to the client from the graph.",
+              "work": "\\(200\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Petra travels to the client and then returns.",
+              "work": "\\(200+200\\text{ km}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" viewBox=\"0 0 380 240\" role=\"img\" aria-label=\"graph\"><line x1=\"55\" y1=\"185\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"109\" y2=\"157\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"157\" x2=\"190\" y2=\"65\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"190\" y1=\"45\" x2=\"217\" y2=\"45\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"45\" x2=\"244\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"244\" y1=\"115\" x2=\"258\" y2=\"115\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"258\" y1=\"125\" x2=\"325\" y2=\"185\" stroke=\"#334155\" stroke-width=\"2\"  stroke-linecap=\"round\"/><line x1=\"55\" y1=\"185\" x2=\"55\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"109\" y1=\"185\" x2=\"109\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"163\" y1=\"185\" x2=\"163\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"217\" y1=\"185\" x2=\"217\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"271\" y1=\"185\" x2=\"271\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><line x1=\"325\" y1=\"185\" x2=\"325\" y2=\"189\" stroke=\"#334155\" stroke-width=\"1\"  stroke-linecap=\"round\"/><text x=\"42\" y=\"185\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">0</text><text x=\"42\" y=\"157\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">40</text><text x=\"42\" y=\"129\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">80</text><text x=\"42\" y=\"101\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">120</text><text x=\"42\" y=\"73\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">160</text><text x=\"42\" y=\"45\" text-anchor=\"end\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">200</text><text x=\"55\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">10am</text><text x=\"109\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">12pm</text><text x=\"163\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">2pm</text><text x=\"217\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">4pm</text><text x=\"271\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">6pm</text><text x=\"325\" y=\"202\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"9\" fill=\"#334155\">8pm</text><text x=\"190\" y=\"225\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"14\" fill=\"#334155\">Time of day</text><text x=\"22\" y=\"110\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Arial,sans-serif\" font-size=\"10\" fill=\"#334155\">Distance</text></svg>"
+              }
+            },
+            {
+              "explain": "Add both journey lengths.",
+              "work": "\\(400\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bushwalker hikes a distance of 18km, at an average speed of 4.5km/h.\n\nCalculate the time taken:",
+          "options": [
+            "4 h",
+            "4.5 h",
+            "3.5 h",
+            "5 h"
+          ],
+          "answer": 0,
+          "hint": "Time = distance ÷ speed.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Identify the distance and average speed.",
+              "work": "\\(d=18\\text{ km},\\;v=4.5\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Use time = distance divided by speed.",
+              "work": "\\(t=\\frac{18}{4.5}\\text{ h}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(t=4\\text{ h}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -2459,6 +2685,210 @@
             "\\(\\frac15\\)"
           ],
           "answer": 1
+        },
+        {
+          "id": "t3-2022-y8-rr-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the following ratios fully: (i)",
+          "options": [
+            "16 : 7",
+            "8 : 7",
+            "4 : 3",
+            "7 : 8"
+          ],
+          "answer": 1,
+          "hint": "Divide both parts of the ratio by their highest common factor.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Find the highest common factor of 16 and 14.",
+              "work": "\\(\\mathrm{HCF}(16,14)=2\\)"
+            },
+            {
+              "explain": "Divide both terms by 2.",
+              "work": "\\(16\\div2:14\\div2=8:7\\)"
+            },
+            {
+              "explain": "Check that 8 and 7 have no common factor greater than 1.",
+              "work": "\\(\\boxed{8:7}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q1ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the following ratios fully: (ii)",
+          "options": [
+            "2 : 1",
+            "13 : 26",
+            "1 : 2",
+            "26 : 2"
+          ],
+          "answer": 2,
+          "hint": "Divide each term by the greatest common divisor.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Find the highest common factor.",
+              "work": "\\(\\mathrm{HCF}(26,52)=26\\)"
+            },
+            {
+              "explain": "Divide both terms by 26.",
+              "work": "\\(26\\div26:52\\div26=1:2\\)"
+            },
+            {
+              "explain": "Write the ratio in simplest form.",
+              "work": "\\(\\boxed{1:2}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q1iii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the following ratios fully: (iii)",
+          "options": [
+            "7 : 120",
+            "70 : 12",
+            "12 : 7",
+            "7 : 12"
+          ],
+          "answer": 3,
+          "hint": "Multiply both terms by 10 to remove the decimals, then simplify if possible.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Multiply each term by 10.",
+              "work": "\\(0.7:1.2=7:12\\)"
+            },
+            {
+              "explain": "Check for a common factor.",
+              "work": "7 and 12 share no factor greater than 1."
+            },
+            {
+              "explain": "State the simplest ratio.",
+              "work": "\\(\\boxed{7:12}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q1iv",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the following ratios fully: (iv)",
+          "options": [
+            "5 : 22",
+            "5 : 2.2",
+            "50 : 22",
+            "1 : 4"
+          ],
+          "answer": 0,
+          "hint": "Convert both masses to the same unit before simplifying.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Convert 2.2 kg to grams.",
+              "work": "\\(2.2\\text{ kg}=2200\\text{ g}\\)"
+            },
+            {
+              "explain": "Write the ratio in grams and divide by 100.",
+              "work": "\\(500:2200=5:22\\)"
+            },
+            {
+              "explain": "State the simplest ratio.",
+              "work": "\\(\\boxed{5:22}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the equivalent ratio",
+          "options": [
+            "5",
+            "7",
+            "28",
+            "8"
+          ],
+          "answer": 1,
+          "hint": "The first term 4 has been multiplied by 5 to make 20; do the same to the second term.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Compare the first terms.",
+              "work": "\\(4\\times5=20\\)"
+            },
+            {
+              "explain": "Apply the same scale factor to the missing term.",
+              "work": "\\(x\\times5=35\\)"
+            },
+            {
+              "explain": "Divide 35 by 5.",
+              "work": "\\(x=35\\div5=7\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following ratios is NOT equivalent to the ratio 32 : 48? (Circle one answer)",
+          "options": [
+            "16 : 24",
+            "4 : 6",
+            "6 : 8",
+            "2 : 3"
+          ],
+          "answer": 2,
+          "hint": "Simplify 32 : 48 first, then simplify each option to compare.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Simplify the reference ratio.",
+              "work": "\\(32:48=2:3\\)"
+            },
+            {
+              "explain": "Check the first three choices: each reduces to 2:3.",
+              "work": "\\(16:24=2:3,\\;4:6=2:3,\\;2:3=2:3\\)"
+            },
+            {
+              "explain": "Simplify the remaining choice.",
+              "work": "\\(6:8=3:4\\ne2:3\\), so it is not equivalent."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -2644,6 +3074,74 @@
               "note": "Find the volume of one part, then take 5 parts for the red paint."
             }
           ]
+        },
+        {
+          "id": "t3-2022-y8-rr-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The ratio for a porridge mixture of water to oats is 3 : 1. If there are 2 cups of oats, how much water is needed?",
+          "options": [
+            "2 cups",
+            "3 cups",
+            "8 cups",
+            "6 cups"
+          ],
+          "answer": 3,
+          "hint": "The 1-part oats amount is 2 cups; water is 3 parts.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Read the ratio as 3 parts water for every 1 part oats.",
+              "work": "\\(W:O=3:1\\)"
+            },
+            {
+              "explain": "Scale the oats part from 1 cup to 2 cups.",
+              "work": "\\(1\\text{ part}=2\\text{ cups}\\)"
+            },
+            {
+              "explain": "Multiply the water parts by 2 cups each.",
+              "work": "\\(W=3\\times2=6\\text{ cups}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which is the best buy? Show all working to justify your answer. A: 8 boxes for $37.20 or B: 3 boxes for $14.55",
+          "options": [
+            "A: $4.65 per box",
+            "B: $4.65 per box",
+            "A: $4.85 per box",
+            "B: $5.15 per box"
+          ],
+          "answer": 0,
+          "hint": "Find the price per box for each option by dividing cost by number of boxes.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Calculate option A unit price.",
+              "work": "\\(\\$37.20\\div8=\\$4.65\\text{ per box}\\)"
+            },
+            {
+              "explain": "Calculate option B unit price.",
+              "work": "\\(\\$14.55\\div3=\\$4.85\\text{ per box}\\)"
+            },
+            {
+              "explain": "Compare the unit prices; the lower price is better value.",
+              "work": "\\(\\$4.65<\\$4.85\\), so option A is the best buy."
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     },
@@ -4947,6 +5445,108 @@
               "note": "Add 10 hours and then check whether the clock has passed noon or midnight."
             }
           ]
+        },
+        {
+          "id": "t3-2022-y8-rr-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A tap drips water at a rate of 18 mL/h. How much water would be wasted in one day?",
+          "options": [
+            "18 mL",
+            "432 mL",
+            "108 mL",
+            "2592 mL"
+          ],
+          "answer": 1,
+          "hint": "One day has 24 hours; multiply the hourly amount by 24.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Convert one day to hours.",
+              "work": "\\(1\\text{ day}=24\\text{ h}\\)"
+            },
+            {
+              "explain": "Multiply the rate by 24 hours.",
+              "work": "\\(18\\text{ mL/h}\\times24\\text{ h}=432\\text{ mL}\\)"
+            },
+            {
+              "explain": "State the daily amount.",
+              "work": "\\(\\boxed{432\\text{ mL}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A grain silo is being filled at a rate of 150 kg/min. What is this rate in grams/second?",
+          "options": [
+            "150 g/s",
+            "9000 g/s",
+            "2500 g/s",
+            "25 g/s"
+          ],
+          "answer": 2,
+          "hint": "Convert kilograms to grams, then divide the per-minute amount by 60.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Convert the mass to grams.",
+              "work": "\\(150\\text{ kg}=150,000\\text{ g}\\)"
+            },
+            {
+              "explain": "Convert the rate from per minute to per second.",
+              "work": "\\(150,000\\div60=2500\\)"
+            },
+            {
+              "explain": "State the converted rate.",
+              "work": "\\(2500\\text{ g/s}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
+        },
+        {
+          "id": "t3-2022-y8-rr-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Murray’s red car uses 5.2 L of fuel for every 100 km travelled. He used $45 worth of fuel to travel to visit his friend Anthony. If fuel costs 156.9 cents/litre, how far did he travel? (Give your answer to the nearest 10 km)",
+          "options": [
+            "280 km",
+            "870 km",
+            "55 km",
+            "550 km"
+          ],
+          "answer": 3,
+          "hint": "First convert the fuel price to dollars per litre, then find litres bought and use 5.2 L per 100 km.",
+          "keyPoints": [],
+          "steps": [
+            {
+              "explain": "Convert the petrol price into dollars per litre.",
+              "work": "\\(156.9\\text{ cents}=\\$1.569\\text{ per L}\\)"
+            },
+            {
+              "explain": "Find litres purchased with $45.",
+              "work": "\\(45\\div1.569\\approx28.68\\text{ L}\\)"
+            },
+            {
+              "explain": "Convert fuel to distance and round to the nearest 10 km.",
+              "work": "\\(28.68\\times\\frac{100}{5.2}\\approx551.5\\text{ km}\\approx550\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "xp": 1,
+          "meta": {
+            "source": "Task 3 2022.pdf"
+          }
         }
       ]
     }
