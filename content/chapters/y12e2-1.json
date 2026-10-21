@@ -267,6 +267,55 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "If \\(x,y\\in\\mathbb{R}\\), solve for \\(x\\) and \\(y\\):\n\n\\(x+2y-3xi+4yi=5+15i.\\)",
+          "hint": "Equate real parts and imaginary parts, then solve the simultaneous equations.",
+          "steps": [
+            {
+              "explain": "Group the real and imaginary parts on the left.",
+              "work": "\\((x+2y)+(-3x+4y)i=5+15i\\)"
+            },
+            {
+              "explain": "Two complex numbers are equal when their real parts and imaginary parts are equal.",
+              "work": "\\(x+2y=5\\quad(1),\\qquad-3x+4y=15\\quad(2)\\)"
+            },
+            {
+              "explain": "Eliminate \\(y\\): double (1) and subtract (2).",
+              "work": "\\(2x+4y=10,\\quad(2x+4y)-(-3x+4y)=10-15\\ \\Rightarrow\\ 5x=-5\\ \\Rightarrow\\ x=-1\\)"
+            },
+            {
+              "explain": "Substitute into (1).",
+              "work": "\\(-1+2y=5\\ \\Rightarrow\\ y=3\\)"
+            },
+            {
+              "explain": "Check in (2): \\(-3(-1)+4(3)=3+12=15\\) ✓."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "12(c)"
+          },
+          "options": [
+            "\\(x=-5,\\ y=0\\)",
+            "\\(x=-1,\\ y=3\\)",
+            "\\(x=1,\\ y=2\\)",
+            "\\(x=3,\\ y=1\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "solve for \\(x\\)",
+              "note": "Collect real parts (x + 2y) and imaginary parts (−3x + 4y), then equate each with 5 and 15."
+            }
+          ]
         }
       ]
     },
@@ -311,6 +360,51 @@
               "note": "Look for two complex numbers whose product is \\(6+15i\\) and whose sum is \\(-5-5i\\)."
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Find \\(\\sqrt{15-8i}\\).",
+          "hint": "Let √(15 − 8i) = a + ib, square, and equate real and imaginary parts.",
+          "steps": [
+            {
+              "explain": "Let \\(\\sqrt{15-8i}=a+ib\\) with \\(a,b\\) real, and square both sides.",
+              "work": "\\(15-8i=(a+ib)^2=a^2-b^2+2abi\\)"
+            },
+            {
+              "explain": "Equate real and imaginary parts.",
+              "work": "\\(a^2-b^2=15,\\qquad2ab=-8\\ \\Rightarrow\\ ab=-4\\)"
+            },
+            {
+              "explain": "Try integer pairs with \\(ab=-4\\): \\(a=4,\\ b=-1\\) gives \\(16-1=15\\) ✓. The other square root is the negative, \\(-4+i\\).",
+              "work": "\\((4-i)^2=16-8i+i^2=15-8i\\ \\checkmark\\)"
+            },
+            {
+              "explain": "By convention the principal square root has \\(a\\gt 0\\), so \\(\\sqrt{15-8i}=4-i\\). (Check: \\((4+i)^2=15+8i\\), \\((-4-i)^2=15+8i\\).)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "13(d)"
+          },
+          "options": [
+            "\\(4+i\\)",
+            "\\(1-4i\\)",
+            "\\(-4-i\\)",
+            "\\(4-i\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "Find \\(\\sqrt{15-8i}\\)",
+              "note": "Set (a + ib)² = 15 − 8i: a² − b² = 15 and ab = −4."
+            }
+          ]
         }
       ]
     },
@@ -324,7 +418,59 @@
       "topicId": "y12e2-1D",
       "code": "1D",
       "title": "Modulus-Argument Form",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Consider the Argand diagram with \\(z\\) plotted below.\n\nWhich of the following could be the complex number \\(z\\)?",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 220\" width=\"260\" height=\"220\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"260\" height=\"220\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"95.0\" x2=\"248.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"140.0\" y1=\"212.0\" x2=\"140.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"246.0\" y=\"113.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"147.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><text x=\"146.0\" y=\"89.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">O</text><line x1=\"140.0\" y1=\"95.0\" x2=\"87.5\" y2=\"185.9\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"69.8\" y=\"187.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#1e293b\" font-style=\"italic\">z</text></svg>"
+          },
+          "hint": "Decide the quadrant of z first, then work out each option as a + bi.",
+          "steps": [
+            {
+              "explain": "\\(z\\) points down and to the left, so it is in the third quadrant: real part negative, imaginary part negative.",
+              "work": "\\(\\operatorname{Re}(z)\\lt 0,\\qquad\\operatorname{Im}(z)\\lt 0\\)"
+            },
+            {
+              "explain": "Measured from the positive real axis, a third-quadrant direction has a negative principal argument between \\(-\\pi\\) and \\(-\\frac{\\pi}{2}\\). The arrow makes \\(\\frac{\\pi}{3}\\) with the negative real axis, so",
+              "work": "\\(\\arg z=-\\left(\\pi-\\frac{\\pi}{3}\\right)=-\\frac{2\\pi}{3}\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 220\" width=\"260\" height=\"220\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker></defs><rect width=\"260\" height=\"220\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"95.0\" x2=\"248.0\" y2=\"95.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"140.0\" y1=\"212.0\" x2=\"140.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"246.0\" y=\"113.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"147.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><text x=\"146.0\" y=\"89.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">O</text><line x1=\"140.0\" y1=\"95.0\" x2=\"87.5\" y2=\"185.9\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><text x=\"69.8\" y=\"187.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"16.8\" fill=\"#2563eb\" font-style=\"italic\">z</text><line x1=\"140.0\" y1=\"95.0\" x2=\"210.0\" y2=\"95.0\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"170.0\" y=\"129.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"14.0\" fill=\"#dc2626\">−</text><text x=\"180.2\" y=\"122.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"10.1\" fill=\"#dc2626\">2π</text><text x=\"183.8\" y=\"134.3\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"10.1\" fill=\"#dc2626\">3</text><line x1=\"179.2\" y1=\"124.8\" x2=\"193.8\" y2=\"124.8\" stroke=\"#dc2626\" stroke-width=\"1.05\"/><text x=\"90.3\" y=\"118.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#64748b\">π</text><text x=\"91.0\" y=\"130.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#64748b\">3</text><line x1=\"89.3\" y1=\"121.5\" x2=\"97.8\" y2=\"121.5\" stroke=\"#64748b\" stroke-width=\"1.00\"/></svg>"
+              }
+            },
+            {
+              "explain": "Evaluate each option to see which quadrant it lands in.",
+              "work": "\\(\\text{A: }-\\tfrac12+\\tfrac{\\sqrt3}{2}i\\ (\\text{2nd}),\\quad\\text{B: }-\\tfrac12-\\tfrac{\\sqrt3}{2}i\\ (\\text{3rd}),\\quad\\text{C: }\\tfrac12-\\tfrac{\\sqrt3}{2}i\\ (\\text{4th}),\\quad\\text{D: }-\\tfrac12+\\tfrac{\\sqrt3}{2}i\\ (\\text{2nd})\\)"
+            },
+            {
+              "explain": "Only B is in the third quadrant, so \\(z\\) could be \\(\\cos\\left(-\\frac{2\\pi}{3}\\right)+i\\sin\\left(-\\frac{2\\pi}{3}\\right)\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "1"
+          },
+          "options": [
+            "\\(\\cos\\frac{2\\pi}{3}+i\\sin\\frac{2\\pi}{3}\\)",
+            "\\(\\cos\\left(-\\frac{2\\pi}{3}\\right)+i\\sin\\left(-\\frac{2\\pi}{3}\\right)\\)",
+            "\\(-\\cos\\frac{2\\pi}{3}-i\\sin\\frac{2\\pi}{3}\\)",
+            "\\(\\cos\\left(-\\frac{2\\pi}{3}\\right)-i\\sin\\left(-\\frac{2\\pi}{3}\\right)\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Which of the following could be the complex number \\(z\\)?",
+              "note": "z is in the 3rd quadrant, so arg z = −2π/3. Evaluate each option to check its quadrant."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-1E",
@@ -369,6 +515,191 @@
             {
               "text": "Calculate",
               "note": "Use the given ratio to relate γ−α to β−α, then use the zero-sum condition."
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q11d",
+          "type": "multipart",
+          "stem": "The points \\(A, B, C, D\\) representing the complex numbers \\(a, b, c, d\\) form a parallelogram as shown in the diagram. \\(\\angle ADC=\\frac{2\\pi}{3}\\) and \\(|d-c|=|b-c|\\).\n\nCopy the diagram into your booklet.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"330\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"215.0\" x2=\"320.0\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"244.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"310.3\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"20.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M307.7 57.9L291.9 147.5L206.4 178.6L222.2 89.0Z\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.0\"/><text x=\"313.7\" y=\"53.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"299.9\" y=\"153.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"200.4\" y=\"194.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C</text><text x=\"214.2\" y=\"91.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">D</text><text x=\"320.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"10\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Diagram not to scale</text></svg>"
+          },
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(d)"
+          },
+          "parts": [
+            {
+              "id": "ascham2020-ext2-q11d-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Show that \\(d-c=(b-c)\\left(\\frac{1}{2}+\\frac{i\\sqrt3}{2}\\right)\\).",
+              "hint": "Find ∠DCB using co-interior angles; then 'same length, rotated by π/3' means multiply by cis(π/3).",
+              "steps": [
+                {
+                  "explain": "\\(ABCD\\) is a parallelogram, so \\(AD\\parallel BC\\). The angles \\(\\angle ADC\\) and \\(\\angle DCB\\) are co-interior, so they add to \\(\\pi\\).",
+                  "work": "\\(\\angle DCB=\\pi-\\frac{2\\pi}{3}=\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "The vectors from \\(C\\) are \\(b-c\\) (to \\(B\\)) and \\(d-c\\) (to \\(D\\)). They have equal length (given), and \\(d-c\\) is anticlockwise from \\(b-c\\) by \\(\\frac{\\pi}{3}\\).",
+                  "work": "\\(|d-c|=|b-c|,\\qquad\\arg(d-c)=\\arg(b-c)+\\frac{\\pi}{3}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"215.0\" x2=\"320.0\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"244.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"310.3\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"20.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M307.7 57.9L291.9 147.5L206.4 178.6L222.2 89.0Z\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><text x=\"313.7\" y=\"53.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"299.9\" y=\"153.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"200.4\" y=\"194.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C</text><text x=\"214.2\" y=\"91.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">D</text><line x1=\"206.4\" y1=\"178.6\" x2=\"291.9\" y2=\"147.5\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"206.4\" y1=\"178.6\" x2=\"222.2\" y2=\"89.0\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"277.9\" y=\"173.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">b</text><text x=\"286.4\" y=\"173.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\"> − </text><text x=\"300.9\" y=\"173.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">c</text><text x=\"179.6\" y=\"135.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">d</text><text x=\"188.0\" y=\"135.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\"> − </text><text x=\"202.5\" y=\"135.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">c</text><text x=\"222.4\" y=\"150.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#1e293b\">π</text><text x=\"223.0\" y=\"161.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#1e293b\">3</text><line x1=\"221.4\" y1=\"152.7\" x2=\"229.9\" y2=\"152.7\" stroke=\"#1e293b\" stroke-width=\"1.00\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "Rotating a complex number anticlockwise by \\(\\theta\\) without changing its length means multiplying by \\(\\operatorname{cis}\\theta\\).",
+                  "work": "\\(d-c=(b-c)\\operatorname{cis}\\frac{\\pi}{3}=(b-c)\\left(\\cos\\frac{\\pi}{3}+i\\sin\\frac{\\pi}{3}\\right)=(b-c)\\left(\\frac12+\\frac{i\\sqrt3}{2}\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(d)(i)"
+              },
+              "answer": "ABCD is a parallelogram, so AD ∥ BC and co-interior angles give \\(\\angle DCB=\\pi-\\frac{2\\pi}{3}=\\frac{\\pi}{3}\\). Also \\(|d-c|=|b-c|\\), i.e. CD = CB. So \\(\\overrightarrow{CD}\\) is \\(\\overrightarrow{CB}\\) rotated anticlockwise by \\(\\frac{\\pi}{3}\\) with the same length: \\(d-c=(b-c)\\operatorname{cis}\\frac{\\pi}{3}=(b-c)\\left(\\frac12+\\frac{i\\sqrt3}{2}\\right)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Show that",
+                  "note": "∠DCB = π − 2π/3 = π/3 and CD = CB, so CD is CB rotated anticlockwise by π/3."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q11d-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find \\(\\arg\\left(\\frac{a-d}{b-d}\\right)\\).",
+              "hint": "arg((a − d)/(b − d)) is the angle from DB to DA. The figure is a rhombus.",
+              "steps": [
+                {
+                  "explain": "\\(\\arg\\left(\\frac{a-d}{b-d}\\right)=\\arg(a-d)-\\arg(b-d)\\): the angle turned anticlockwise from \\(\\overrightarrow{DB}\\) to \\(\\overrightarrow{DA}\\), i.e. \\(\\angle BDA\\).",
+                  "work": "\\(\\arg\\left(\\frac{a-d}{b-d}\\right)=\\arg(a-d)-\\arg(b-d)=\\angle BDA\\)"
+                },
+                {
+                  "explain": "A parallelogram with a pair of equal adjacent sides (\\(CD=CB\\)) is a rhombus, and the diagonals of a rhombus bisect its angles. So \\(DB\\) bisects \\(\\angle ADC=\\frac{2\\pi}{3}\\).",
+                  "work": "\\(\\angle BDA=\\frac12\\cdot\\frac{2\\pi}{3}=\\frac{\\pi}{3}\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"215.0\" x2=\"320.0\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"244.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"310.3\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"20.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M307.7 57.9L291.9 147.5L206.4 178.6L222.2 89.0Z\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><text x=\"313.7\" y=\"53.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"299.9\" y=\"153.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"200.4\" y=\"194.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C</text><text x=\"214.2\" y=\"91.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">D</text><line x1=\"222.2\" y1=\"89.0\" x2=\"291.9\" y2=\"147.5\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"222.2\" y1=\"89.0\" x2=\"307.7\" y2=\"57.9\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"257.8\" y=\"95.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#1e293b\">π</text><text x=\"258.5\" y=\"106.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#1e293b\">3</text><line x1=\"256.8\" y1=\"98.0\" x2=\"265.3\" y2=\"98.0\" stroke=\"#1e293b\" stroke-width=\"1.00\"/><text x=\"232.1\" y=\"126.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#64748b\">π</text><text x=\"232.8\" y=\"137.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#64748b\">3</text><line x1=\"231.1\" y1=\"128.7\" x2=\"239.6\" y2=\"128.7\" stroke=\"#64748b\" stroke-width=\"1.00\"/></svg>"
+                  }
+                },
+                {
+                  "explain": "\\(\\overrightarrow{DA}\\) is anticlockwise from \\(\\overrightarrow{DB}\\) (see the diagram), so the argument is positive.",
+                  "work": "\\(\\arg\\left(\\frac{a-d}{b-d}\\right)=\\frac{\\pi}{3}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(d)(ii)"
+              },
+              "options": [
+                "\\(\\frac{\\pi}{6}\\)",
+                "\\(-\\frac{\\pi}{3}\\)",
+                "\\(\\frac{\\pi}{3}\\)",
+                "\\(\\frac{2\\pi}{3}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "\\(\\arg\\left(\\frac{a-d}{b-d}\\right)\\)",
+                  "note": "This is the angle from DB to DA. In a rhombus the diagonal DB bisects ∠ADC."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q11d-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Find the value of \\(\\left|\\frac{b-a}{d-b}\\right|\\).",
+              "hint": "|b − a| = AB and |d − b| = DB. Is triangle ADB special?",
+              "steps": [
+                {
+                  "explain": "In \\(\\triangle ADB\\): \\(AD=AB\\) (sides of the rhombus) and \\(\\angle ADB=\\frac{\\pi}{3}\\) from (ii).",
+                  "work": "\\(AD=AB,\\qquad\\angle ADB=\\frac{\\pi}{3}\\)"
+                },
+                {
+                  "explain": "The base angles of an isosceles triangle are equal, so \\(\\angle ABD=\\frac\\pi3\\) too, and the third angle is \\(\\pi-\\frac\\pi3-\\frac\\pi3=\\frac\\pi3\\). So \\(\\triangle ADB\\) is equilateral.",
+                  "work": "\\(\\triangle ADB\\ \\text{is equilateral}\\ \\Rightarrow\\ AB=DB\\)",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"330\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"215.0\" x2=\"320.0\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"244.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"310.3\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"20.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M307.7 57.9L291.9 147.5L206.4 178.6L222.2 89.0Z\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><text x=\"313.7\" y=\"53.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"299.9\" y=\"153.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"200.4\" y=\"194.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C</text><text x=\"214.2\" y=\"91.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">D</text><path d=\"M307.7 57.9L222.2 89.0L291.9 147.5Z\" fill=\"#fef3c7\" stroke=\"#ea580c\" stroke-width=\"2.4\" stroke-linejoin=\"round\" fill-opacity=\"0.8\"/><text x=\"257.0\" y=\"67.4\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#ea580c\" text-anchor=\"end\">equal</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Use \\(\\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|}\\).",
+                  "work": "\\(\\left|\\frac{b-a}{d-b}\\right|=\\frac{|b-a|}{|d-b|}=\\frac{AB}{DB}=1\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(d)(iii)"
+              },
+              "options": [
+                "\\(\\sqrt3\\)",
+                "\\(\\frac12\\)",
+                "\\(2\\)",
+                "\\(1\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "\\left|\\frac{b-a}{d-b}\\right|",
+                  "note": "|b − a| is the length AB and |d − b| is DB. Triangle ADB turns out to be equilateral."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q11d-iv",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Explain why \\(\\arg\\left(\\frac{a-c}{b-d}\\right)=\\frac{\\pi}{2}\\).",
+              "hint": "a − c and b − d are the two diagonals of the rhombus.",
+              "steps": [
+                {
+                  "explain": "\\(a-c\\) is the vector \\(\\overrightarrow{CA}\\) and \\(b-d\\) is the vector \\(\\overrightarrow{DB}\\) — the two diagonals.",
+                  "work": "\\(\\arg\\left(\\frac{a-c}{b-d}\\right)=\\arg(a-c)-\\arg(b-d)\\)"
+                },
+                {
+                  "explain": "\\(ABCD\\) is a rhombus (a parallelogram with \\(CD=CB\\)), and the diagonals of a rhombus meet at right angles.",
+                  "figure": {
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker></defs><rect width=\"330\" height=\"250\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"215.0\" x2=\"320.0\" y2=\"215.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"40.0\" y1=\"244.0\" x2=\"40.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"310.3\" y=\"233.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">x</text><text x=\"48.0\" y=\"20.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#64748b\" font-style=\"italic\">y</text><text x=\"34.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><path d=\"M307.7 57.9L291.9 147.5L206.4 178.6L222.2 89.0Z\" fill=\"#dbeafe\" stroke=\"#1e40af\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.3\"/><text x=\"313.7\" y=\"53.9\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">A</text><text x=\"299.9\" y=\"153.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"start\">B</text><text x=\"200.4\" y=\"194.6\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">C</text><text x=\"214.2\" y=\"91.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">D</text><line x1=\"206.4\" y1=\"178.6\" x2=\"307.7\" y2=\"57.9\" stroke=\"#2563eb\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><line x1=\"222.2\" y1=\"89.0\" x2=\"291.9\" y2=\"147.5\" stroke=\"#dc2626\" stroke-width=\"2.6\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><path d=\"M262.8 111.3L269.7 117.1L264.0 124.0\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.3\" stroke-linejoin=\"round\"/><text x=\"165.8\" y=\"162.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">a</text><text x=\"173.7\" y=\"162.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#2563eb\"> − </text><text x=\"187.2\" y=\"162.6\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#2563eb\" font-style=\"italic\">c</text><text x=\"295.9\" y=\"173.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#dc2626\" font-style=\"italic\">b</text><text x=\"303.9\" y=\"173.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#dc2626\"> − </text><text x=\"317.4\" y=\"173.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#dc2626\" font-style=\"italic\">d</text></svg>"
+                  }
+                },
+                {
+                  "explain": "Turning from \\(\\overrightarrow{DB}\\) anticlockwise by a right angle gives the direction of \\(\\overrightarrow{CA}\\), so the angle is \\(+\\frac{\\pi}{2}\\).",
+                  "work": "\\(\\arg\\left(\\frac{a-c}{b-d}\\right)=\\frac{\\pi}{2}\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "11(d)(iv)"
+              },
+              "answer": "\\(a-c\\) represents the diagonal \\(\\overrightarrow{CA}\\) and \\(b-d\\) represents the diagonal \\(\\overrightarrow{DB}\\). ABCD is a rhombus, and the diagonals of a rhombus are perpendicular. \\(\\overrightarrow{CA}\\) is anticlockwise from \\(\\overrightarrow{DB}\\) by a right angle, so \\(\\arg\\left(\\frac{a-c}{b-d}\\right)=\\arg(a-c)-\\arg(b-d)=\\frac{\\pi}{2}\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Explain why",
+                  "note": "a − c and b − d are the diagonals CA and DB; diagonals of a rhombus are perpendicular."
+                }
+              ]
             }
           ]
         }
@@ -779,6 +1110,54 @@
                   "note": "z + 2 and z − 2 are perpendicular diagonals of the rhombus; use tan(θ/2) in the right-angled triangle."
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Consider the set of points described by \\(|z+2|=1\\) on the complex plane. What is the maximum value of \\(\\arg z\\)?",
+          "hint": "Draw the circle centre −2, radius 1, and the tangent from O touching it above the axis.",
+          "steps": [
+            {
+              "explain": "\\(|z-(-2)|=1\\) is the circle with centre \\(-2\\) and radius 1.",
+              "work": "\\(\\text{centre }(-2,\\,0),\\qquad\\text{radius }1\\)"
+            },
+            {
+              "explain": "The largest argument occurs where a line from \\(O\\) just touches the circle above the real axis (a tangent). The radius to the point of contact is perpendicular to the tangent.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"200\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"120.0\" x2=\"290.0\" y2=\"120.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"240.0\" y1=\"192.0\" x2=\"240.0\" y2=\"12.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"288.0\" y=\"138.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"247.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><text x=\"234.0\" y=\"136.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><circle cx=\"120.0\" cy=\"120.0\" r=\"60.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"240.0\" y1=\"120.0\" x2=\"150.0\" y2=\"68.0\" stroke=\"#dc2626\" stroke-width=\"2.3\" stroke-linecap=\"round\"/><line x1=\"120.0\" y1=\"120.0\" x2=\"150.0\" y2=\"68.0\" stroke=\"#64748b\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><circle cx=\"120.0\" cy=\"120.0\" r=\"3.5\" fill=\"#1e293b\"/><circle cx=\"150.0\" cy=\"68.0\" r=\"4\" fill=\"#dc2626\"/><text x=\"120.0\" y=\"138.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">−2</text><text x=\"125.0\" y=\"96.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">1</text><text x=\"193.2\" y=\"105.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">π</text><text x=\"193.9\" y=\"116.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">6</text><line x1=\"192.2\" y1=\"108.1\" x2=\"200.8\" y2=\"108.1\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"115.8\" y=\"56.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\">arg </text><text x=\"138.0\" y=\"56.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">z</text><text x=\"145.0\" y=\"56.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\"> = </text><text x=\"161.5\" y=\"49.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">5π</text><text x=\"164.7\" y=\"61.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">6</text><line x1=\"160.5\" y1=\"52.1\" x2=\"174.2\" y2=\"52.1\" stroke=\"#dc2626\" stroke-width=\"1.00\"/></svg>"
+              }
+            },
+            {
+              "explain": "In the right triangle with hypotenuse \\(OC=2\\) and opposite side (radius) 1, the angle at \\(O\\) between the tangent and the negative real axis is",
+              "work": "\\(\\sin\\alpha=\\frac{1}{2}\\ \\Rightarrow\\ \\alpha=\\frac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Measured from the positive real axis:",
+              "work": "\\(\\arg z_{\\max}=\\pi-\\frac{\\pi}{6}=\\frac{5\\pi}{6}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "10"
+          },
+          "options": [
+            "\\(\\frac{\\pi}{6}\\)",
+            "\\(\\frac{\\pi}{3}\\)",
+            "\\(\\frac{2\\pi}{3}\\)",
+            "\\(\\frac{5\\pi}{6}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\(|z+2|=1\\)",
+              "note": "This is a circle centre −2, radius 1. The maximum argument is along the tangent from O."
             }
           ]
         }

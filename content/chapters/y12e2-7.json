@@ -13,7 +13,62 @@
       "topicId": "y12e2-7B",
       "code": "7B",
       "title": "Planes and Pulleys",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q15c",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "A 2 kg mass is being pulled up a slope by a string of tension 10 Newtons. The slope is at an angle \\(\\theta\\) to the horizontal and the coefficient of friction is 0.3. As well as friction, the forces of gravity \\(g\\) and the normal are also acting.\n\nCopy the diagram.\n\nBy resolving forces with components along and perpendicular to the slope, find the net force \\(F_{net}\\) in Newtons up the slope.",
+          "figure": {
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M40.0 190.0L290.0 190.0L290.0 80.0Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.8\"/><path d=\"M159.0 137.6L179.1 128.8L170.3 108.6L150.1 117.5Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><text x=\"84.0\" y=\"184.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">θ</text><line x1=\"175.8\" y1=\"106.2\" x2=\"285.6\" y2=\"57.9\" stroke=\"#1e293b\" stroke-width=\"2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"289.6\" y=\"49.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">T</text></svg>"
+          },
+          "hint": "Friction = μN with N = mg cos θ; along the slope: T − friction − mg sin θ.",
+          "steps": [
+            {
+              "explain": "Draw all the forces on the mass: tension \\(T=10\\) up the slope, friction \\(F\\) down the slope (it opposes the motion), weight \\(mg=2g\\) straight down, and the normal \\(N\\) perpendicular to the slope.",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><defs><marker id=\"ah2563eb\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#2563eb\"/></marker><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ah16a34a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#16a34a\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker><marker id=\"ahea580c\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#ea580c\"/></marker><marker id=\"ah7c3aed\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#7c3aed\"/></marker></defs><rect width=\"330\" height=\"230\" rx=\"8\" fill=\"white\"/><path d=\"M40.0 190.0L290.0 190.0L290.0 80.0Z\" fill=\"#f1f5f9\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"0.8\"/><path d=\"M159.0 137.6L179.1 128.8L170.3 108.6L150.1 117.5Z\" fill=\"white\" stroke=\"#475569\" stroke-width=\"2\" stroke-linejoin=\"round\" fill-opacity=\"1\"/><text x=\"84.0\" y=\"184.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#1e293b\" font-style=\"italic\">θ</text><line x1=\"164.6\" y1=\"123.1\" x2=\"237.9\" y2=\"90.9\" stroke=\"#2563eb\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah2563eb)\"/><text x=\"193.7\" y=\"76.9\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#2563eb\" font-style=\"italic\">T</text><text x=\"202.9\" y=\"76.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\"> = 10</text><line x1=\"164.6\" y1=\"123.1\" x2=\"100.6\" y2=\"151.3\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><text x=\"41.2\" y=\"163.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">F</text><text x=\"51.1\" y=\"163.3\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\"> = 0.3</text><text x=\"83.6\" y=\"163.3\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">N</text><line x1=\"164.6\" y1=\"123.1\" x2=\"140.5\" y2=\"68.2\" stroke=\"#16a34a\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah16a34a)\"/><text x=\"146.5\" y=\"68.2\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#16a34a\" font-style=\"italic\">N</text><line x1=\"164.6\" y1=\"123.1\" x2=\"164.6\" y2=\"193.1\" stroke=\"#1e293b\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"137.7\" y=\"205.1\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#1e293b\" font-style=\"italic\">mg</text><line x1=\"164.6\" y1=\"123.1\" x2=\"138.8\" y2=\"134.5\" stroke=\"#ea580c\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\" marker-end=\"url(#ahea580c)\"/><line x1=\"164.6\" y1=\"123.1\" x2=\"190.4\" y2=\"181.8\" stroke=\"#7c3aed\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"5 3\" marker-end=\"url(#ah7c3aed)\"/><text x=\"87.2\" y=\"124.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#ea580c\" font-style=\"italic\">mg</text><text x=\"104.9\" y=\"124.5\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#ea580c\"> sin </text><text x=\"126.9\" y=\"124.5\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#ea580c\" font-style=\"italic\">θ</text><text x=\"200.4\" y=\"185.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#7c3aed\" font-style=\"italic\">mg</text><text x=\"218.1\" y=\"185.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"12.0\" fill=\"#7c3aed\"> cos </text><text x=\"243.4\" y=\"185.8\" font-family=\"Times New Roman,Times,serif\" font-size=\"13.4\" fill=\"#7c3aed\" font-style=\"italic\">θ</text></svg>"
+              }
+            },
+            {
+              "explain": "Resolve the weight into components: \\(mg\\sin\\theta\\) down the slope and \\(mg\\cos\\theta\\) into the slope.",
+              "work": "\\(mg\\sin\\theta=2g\\sin\\theta,\\qquad mg\\cos\\theta=2g\\cos\\theta\\)"
+            },
+            {
+              "explain": "Perpendicular to the slope there is no motion, so the forces balance.",
+              "work": "\\(N=mg\\cos\\theta=2g\\cos\\theta\\ \\Rightarrow\\ F=\\mu N=0.3\\times2g\\cos\\theta\\)"
+            },
+            {
+              "explain": "Along the slope (up positive):",
+              "work": "\\(F_{net}=T-F-mg\\sin\\theta=10-0.3(2g\\cos\\theta)-2g\\sin\\theta=10-2g\\left(0.3\\cos\\theta+\\sin\\theta\\right)\\)"
+            },
+            {
+              "explain": "Common slips: swapping \\(\\sin\\) and \\(\\cos\\) in the components, or using \\(N=mg\\) instead of \\(mg\\cos\\theta\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "15(c)"
+          },
+          "options": [
+            "\\(F_{net}=10-2g\\left(0.3\\sin\\theta+\\cos\\theta\\right)\\)",
+            "\\(F_{net}=10+2g\\left(0.3\\cos\\theta-\\sin\\theta\\right)\\)",
+            "\\(F_{net}=10-0.3\\times2g-2g\\sin\\theta\\)",
+            "\\(F_{net}=10-2g\\left(0.3\\cos\\theta+\\sin\\theta\\right)\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "resolving forces with components along and perpendicular to the slope",
+              "note": "Perpendicular: N = mg cos θ. Along: F_net = T − μN − mg sin θ."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7C",
@@ -31,13 +86,105 @@
       "topicId": "y12e2-7E",
       "code": "7E",
       "title": "Simple Harmonic Motion and Displacement",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "The velocity of a particle at \\(x=-3\\) with simple harmonic motion described by \\(\\ddot{x}=-12(x+3)\\) where the amplitude is 4, is:",
+          "hint": "Find the centre and n² from ẍ = −n²(x − c), then use v² = n²(a² − (x − c)²).",
+          "steps": [
+            {
+              "explain": "Compare with \\(\\ddot x=-n^2(x-c)\\): the centre of motion is \\(c=-3\\) and \\(n^2=12\\).",
+              "work": "\\(\\ddot x=-12(x+3)\\ \\Rightarrow\\ c=-3,\\quad n^2=12\\)"
+            },
+            {
+              "explain": "For SHM the velocity satisfies",
+              "work": "\\(v^2=n^2\\left(a^2-(x-c)^2\\right)\\)"
+            },
+            {
+              "explain": "At \\(x=-3\\) the particle is at the centre (where speed is greatest), and the amplitude is \\(a=4\\).",
+              "work": "\\(v^2=12\\left(4^2-0^2\\right)=192\\ \\Rightarrow\\ v=\\pm\\sqrt{192}\\)"
+            },
+            {
+              "explain": "Both signs are possible because the particle passes through the centre in both directions. (0 would be the velocity at an end point \\(x=-3\\pm4\\).)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "5"
+          },
+          "options": [
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(\\pm\\sqrt{192}\\)",
+            "Insufficient information"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\ddot{x}=-12(x+3)\\)",
+              "note": "Centre x = −3 and n² = 12. At the centre v² = n²a²."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7F",
       "code": "7F",
       "title": "Horizontal Resisted Motion",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "If \\(\\frac{dQ}{dt}=k(Q-A)\\) for \\(k,A\\in\\mathbb{R}\\), then which of the equations below could be a solution?",
+          "hint": "Separate variables: ∫dQ/(Q − A) = ∫k dt.",
+          "steps": [
+            {
+              "explain": "Separate the variables (for \\(Q\\neq A\\)).",
+              "work": "\\(\\frac{dQ}{Q-A}=k\\,dt\\ \\Rightarrow\\ \\ln|Q-A|=kt+c\\)"
+            },
+            {
+              "explain": "Exponentiate and write \\(B=\\pm e^{c}\\).",
+              "work": "\\(Q-A=Be^{kt}\\ \\Rightarrow\\ Q=A+Be^{kt}\\)"
+            },
+            {
+              "explain": "Check by differentiating option C.",
+              "work": "\\(\\frac{dQ}{dt}=kBe^{kt}=k\\left(Q-A\\right)\\ \\checkmark\\)"
+            },
+            {
+              "explain": "Option B gives \\(\\frac{dQ}{dt}=kQ\\), not \\(k(Q-A)\\). Option A is not even a function of \\(t\\), and D is a logistic-type solution of a different equation."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "9"
+          },
+          "options": [
+            "\\(Q=k\\left(\\frac{Q^2}{2}-AQ\\right)\\) where \\(k,A\\in\\mathbb{R}\\)",
+            "\\(Q=Ae^{kt}\\) where \\(k,A\\in\\mathbb{R}\\)",
+            "\\(Q=A+Be^{kt}\\) where \\(k,A,B\\in\\mathbb{R}\\)",
+            "\\(Q=\\frac{A}{1+Be^{kt}}\\) where \\(k,A,B\\in\\mathbb{R}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\(\\frac{dQ}{dt}=k(Q-A)\\)",
+              "note": "Separate variables: ln|Q − A| = kt + c, so Q − A is an exponential in t."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7G",
@@ -247,7 +394,56 @@
       "topicId": "y12e2-7H",
       "code": "7H",
       "title": "Projectile Motion",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q16a",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "The Covid-19 1.5 metre rule is based on the premise that a person emits droplets from a height 1.8 m above ground at an angle \\(\\theta\\) from the horizontal so that the maximum range on the ground is 1.5 metres. Show that the maximum speed \\(V\\) m/s of the droplets launched is given by\n\n\\(V=\\sqrt{\\frac{15g}{22}}\\).  (Assume there is no air resistance.)\n\n[Hint: you can assume which angle gives the maximum range…..]",
+          "hint": "Use θ = 45°, write x(t) and y(t) from height 1.8, then put x = 1.5, y = 0.",
+          "steps": [
+            {
+              "explain": "Set up axes with the origin on the ground directly below the mouth. Using the hint, take the angle for maximum range, \\(\\theta=45^\\circ\\).",
+              "work": "\\(\\ddot x=0,\\qquad\\ddot y=-g,\\qquad\\theta=45^\\circ\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" width=\"330\" height=\"240\"><defs><marker id=\"ahdc2626\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#dc2626\"/></marker><marker id=\"ah1e293b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#1e293b\"/></marker></defs><rect width=\"330\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"20.0\" y1=\"205.0\" x2=\"318.0\" y2=\"205.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"60.0\" y2=\"70.0\" stroke=\"#475569\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><path d=\"M60.0 70.0L61.5 69.2L63.1 68.4L64.6 67.7L66.1 66.9L67.7 66.2L69.2 65.5L70.7 64.9L72.3 64.3L73.8 63.7L75.4 63.1L76.9 62.6L78.4 62.0L80.0 61.5L81.5 61.1L83.0 60.6L84.6 60.2L86.1 59.8L87.6 59.5L89.2 59.1L90.7 58.8L92.2 58.6L93.8 58.3L95.3 58.1L96.8 57.9L98.4 57.7L99.9 57.6L101.5 57.4L103.0 57.3L104.5 57.3L106.1 57.2L107.6 57.2L109.1 57.2L110.7 57.3L112.2 57.3L113.7 57.4L115.3 57.5L116.8 57.7L118.3 57.8L119.9 58.0L121.4 58.3L122.9 58.5L124.5 58.8L126.0 59.1L127.6 59.4L129.1 59.8L130.6 60.2L132.2 60.6L133.7 61.0L135.2 61.5L136.8 61.9L138.3 62.5L139.8 63.0L141.4 63.6L142.9 64.2L144.4 64.8L146.0 65.4L147.5 66.1L149.1 66.8L150.6 67.5L152.1 68.3L153.7 69.1L155.2 69.9L156.7 70.7L158.3 71.5L159.8 72.4L161.3 73.3L162.9 74.3L164.4 75.2L165.9 76.2L167.5 77.3L169.0 78.3L170.5 79.4L172.1 80.5L173.6 81.6L175.2 82.7L176.7 83.9L178.2 85.1L179.8 86.3L181.3 87.6L182.8 88.9L184.4 90.2L185.9 91.5L187.4 92.9L189.0 94.3L190.5 95.7L192.0 97.1L193.6 98.6L195.1 100.1L196.6 101.6L198.2 103.1L199.7 104.7L201.3 106.3L202.8 107.9L204.3 109.6L205.9 111.3L207.4 113.0L208.9 114.7L210.5 116.5L212.0 118.2L213.5 120.0L215.1 121.9L216.6 123.7L218.1 125.6L219.7 127.6L221.2 129.5L222.7 131.5L224.3 133.5L225.8 135.5L227.4 137.5L228.9 139.6L230.4 141.7L232.0 143.8L233.5 146.0L235.0 148.2L236.6 150.4L238.1 152.6L239.6 154.9L241.2 157.2L242.7 159.5L244.2 161.8L245.8 164.2L247.3 166.6L248.8 169.0L250.4 171.4L251.9 173.9L253.5 176.4L255.0 178.9L256.5 181.5L258.1 184.1L259.6 186.7L261.1 189.3L262.7 191.9L264.2 194.6L265.7 197.3L267.3 200.1L268.8 202.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.3\" stroke-linejoin=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"60.0\" y1=\"70.0\" x2=\"115.0\" y2=\"15.0\" stroke=\"#dc2626\" stroke-width=\"2.4\" stroke-linecap=\"round\" marker-end=\"url(#ahdc2626)\"/><line x1=\"60.0\" y1=\"70.0\" x2=\"120.0\" y2=\"70.0\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"4 3\"/><text x=\"118.0\" y=\"16.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"15.7\" fill=\"#dc2626\" font-style=\"italic\">V</text><text x=\"84.0\" y=\"66.0\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">θ</text><text x=\"52.0\" y=\"137.5\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"end\">1.8 m</text><line x1=\"60.0\" y1=\"218.5\" x2=\"270.0\" y2=\"218.5\" stroke=\"#1e293b\" stroke-width=\"1.2\" stroke-linecap=\"round\" marker-end=\"url(#ah1e293b)\"/><text x=\"165.0\" y=\"231.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\">1.5 m</text></svg>"
+              }
+            },
+            {
+              "explain": "Integrate with the initial conditions \\(\\dot x=V\\cos\\theta\\), \\(\\dot y=V\\sin\\theta\\), \\(x=0\\), \\(y=1.8\\) at \\(t=0\\).",
+              "work": "\\(x=Vt\\cos\\theta=\\frac{Vt}{\\sqrt2},\\qquad y=1.8+Vt\\sin\\theta-\\frac{gt^2}{2}=1.8+\\frac{Vt}{\\sqrt2}-\\frac{gt^2}{2}\\)"
+            },
+            {
+              "explain": "The droplet lands at \\(x=1.5\\), \\(y=0\\). Find the time from \\(x\\).",
+              "work": "\\(1.5=\\frac{Vt}{\\sqrt2}\\ \\Rightarrow\\ t=\\frac{1.5\\sqrt2}{V}\\)"
+            },
+            {
+              "explain": "Substitute into \\(y=0\\). Note \\(\\frac{Vt}{\\sqrt2}=1.5\\) and \\(t^2=\\frac{4.5}{V^2}\\).",
+              "work": "\\(0=1.8+1.5-\\frac{g}{2}\\cdot\\frac{4.5}{V^2}\\ \\Rightarrow\\ 3.3=\\frac{2.25g}{V^2}\\)"
+            },
+            {
+              "explain": "Solve for \\(V\\).",
+              "work": "\\(V^2=\\frac{2.25g}{3.3}=\\frac{225g}{330}=\\frac{15g}{22}\\ \\Rightarrow\\ V=\\sqrt{\\frac{15g}{22}}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "16(a)"
+          },
+          "answer": "Take θ = 45° (maximum range). With the origin on the ground below the mouth: \\(x=Vt\\cos\\theta=\\frac{Vt}{\\sqrt2}\\), \\(y=1.8+Vt\\sin\\theta-\\frac{gt^2}{2}=1.8+\\frac{Vt}{\\sqrt2}-\\frac{gt^2}{2}\\). The droplet lands at x = 1.5, y = 0: \\(t=\\frac{1.5\\sqrt2}{V}\\), so \\(0=1.8+1.5-\\frac{g}{2}\\cdot\\frac{4.5}{V^2}\\), i.e. \\(3.3=\\frac{2.25g}{V^2}\\), \\(V^2=\\frac{2.25g}{3.3}=\\frac{15g}{22}\\), so \\(V=\\sqrt{\\frac{15g}{22}}\\).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "from a height 1.8 m above ground",
+              "note": "Start y at 1.8 (not 0). Use θ = 45° and the landing point x = 1.5, y = 0."
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-7I",

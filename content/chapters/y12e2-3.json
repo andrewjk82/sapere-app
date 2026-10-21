@@ -94,6 +94,52 @@
               "note": "Real coefficients ⇒ 1 − 2i is also a root. Then use product of roots and sum of products in pairs."
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Two of the roots of the equation \\(z^4+Bz^3+Cz^2+Dz+E=0\\), where \\(B,C,D,E\\) are real are \\(3+i\\) and \\(1-2i\\). The value of \\(E\\) is:",
+          "hint": "Add the conjugate roots, then use: product of roots of a monic quartic = E.",
+          "steps": [
+            {
+              "explain": "The coefficients are real, so the conjugates are also roots (conjugate root theorem).",
+              "work": "\\(\\text{roots: }\\ 3+i,\\ \\ 3-i,\\ \\ 1-2i,\\ \\ 1+2i\\)"
+            },
+            {
+              "explain": "For a monic quartic, the product of the four roots equals the constant term \\(E\\) (sign \\((-1)^4=+1\\)).",
+              "work": "\\(E=\\alpha\\beta\\gamma\\delta\\)"
+            },
+            {
+              "explain": "Multiply conjugate pairs first: \\((a+bi)(a-bi)=a^2+b^2\\).",
+              "work": "\\((3+i)(3-i)=9+1=10,\\qquad(1-2i)(1+2i)=1+4=5\\)"
+            },
+            {
+              "explain": "So",
+              "work": "\\(E=10\\times5=50\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "2"
+          },
+          "options": [
+            "\\(-50\\)",
+            "\\(-24\\)",
+            "\\(24\\)",
+            "\\(50\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "are real are \\(3+i\\) and \\(1-2i\\)",
+              "note": "Real coefficients ⇒ 3 − i and 1 + 2i are roots too; E is the product of all four roots."
+            }
+          ]
         }
       ]
     },
@@ -703,6 +749,143 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q15a",
+          "type": "multipart",
+          "stem": "",
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "15(a)"
+          },
+          "parts": [
+            {
+              "id": "ascham2020-ext2-q15a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "timeLimit": 60,
+              "stem": "If \\(x+\\frac{1}{x}=v\\) find an expression for \\(x^3+\\frac{1}{x^3}\\) in terms of \\(v\\).\n\n[Hint: expand \\(\\left(x+\\frac{1}{x}\\right)^3\\).]",
+              "hint": "Expand (x + 1/x)³ and group the middle terms as 3(x + 1/x).",
+              "steps": [
+                {
+                  "explain": "Expand using the binomial theorem.",
+                  "work": "\\(\\left(x+\\frac1x\\right)^3=x^3+3x^2\\cdot\\frac1x+3x\\cdot\\frac{1}{x^2}+\\frac{1}{x^3}=x^3+\\frac{1}{x^3}+3\\left(x+\\frac1x\\right)\\)"
+                },
+                {
+                  "explain": "Rearrange and substitute \\(x+\\frac1x=v\\).",
+                  "work": "\\(x^3+\\frac{1}{x^3}=\\left(x+\\frac1x\\right)^3-3\\left(x+\\frac1x\\right)=v^3-3v\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "15(a)(i)"
+              },
+              "options": [
+                "\\(v^3+3v\\)",
+                "\\(v^3\\)",
+                "\\(v^3-3\\)",
+                "\\(v^3-3v\\)"
+              ],
+              "answer": 3,
+              "keyPoints": [
+                {
+                  "text": "find an expression for",
+                  "note": "Expand (x + 1/x)³: the two middle terms are 3x + 3/x = 3v."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q15a-ii",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Prove \\(x^5+\\frac{1}{x^5}=v^5-5v^3+5v\\).",
+              "hint": "Expand (x + 1/x)⁵, group symmetric pairs, and use part (i).",
+              "steps": [
+                {
+                  "explain": "Expand \\(\\left(x+\\frac1x\\right)^5\\) with binomial coefficients 1, 5, 10, 10, 5, 1.",
+                  "work": "\\(\\left(x+\\frac1x\\right)^5=x^5+5x^3+10x+\\frac{10}{x}+\\frac{5}{x^3}+\\frac{1}{x^5}\\)"
+                },
+                {
+                  "explain": "Group the terms in pairs.",
+                  "work": "\\(v^5=\\left(x^5+\\frac{1}{x^5}\\right)+5\\left(x^3+\\frac{1}{x^3}\\right)+10\\left(x+\\frac1x\\right)\\)"
+                },
+                {
+                  "explain": "Use (i) for \\(x^3+\\frac1{x^3}\\) and rearrange.",
+                  "work": "\\(x^5+\\frac{1}{x^5}=v^5-5\\left(v^3-3v\\right)-10v=v^5-5v^3+15v-10v=v^5-5v^3+5v\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "15(a)(ii)"
+              },
+              "answer": "\\(\\left(x+\\frac1x\\right)^5=x^5+5x^3+10x+\\frac{10}{x}+\\frac{5}{x^3}+\\frac{1}{x^5}=\\left(x^5+\\frac1{x^5}\\right)+5\\left(x^3+\\frac1{x^3}\\right)+10\\left(x+\\frac1x\\right)\\). So \\(x^5+\\frac1{x^5}=v^5-5(v^3-3v)-10v=v^5-5v^3+5v\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove",
+                  "note": "Expand (x + 1/x)⁵ and pair x⁵ with 1/x⁵, x³ with 1/x³, x with 1/x."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q15a-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "If \\(x=\\cos\\theta+i\\sin\\theta\\), using the above parts, find \\(\\cos10\\theta\\) in terms of \\(\\cos\\theta\\).",
+              "hint": "x + 1/x = 2cos θ and x⁵ + 1/x⁵ = 2cos 5θ; square to get 10θ.",
+              "steps": [
+                {
+                  "explain": "With \\(x=\\operatorname{cis}\\theta\\), de Moivre gives \\(x^n+\\frac{1}{x^n}=2\\cos n\\theta\\). In particular \\(v=x+\\frac1x=2\\cos\\theta\\).",
+                  "work": "\\(x^n+x^{-n}=\\operatorname{cis}n\\theta+\\operatorname{cis}(-n\\theta)=2\\cos n\\theta\\)"
+                },
+                {
+                  "explain": "By (ii):",
+                  "work": "\\(2\\cos5\\theta=x^5+\\frac{1}{x^5}=v^5-5v^3+5v=32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta\\)"
+                },
+                {
+                  "explain": "Square to reach the 10th power.",
+                  "work": "\\(\\left(x^5+\\frac{1}{x^5}\\right)^2=x^{10}+2+\\frac{1}{x^{10}}\\ \\Rightarrow\\ 2\\cos10\\theta=\\left(x^5+\\frac{1}{x^5}\\right)^2-2\\)"
+                },
+                {
+                  "explain": "Substitute and divide by 2.",
+                  "work": "\\(\\cos10\\theta=\\frac{\\left(32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta\\right)^2-2}{2}\\)"
+                },
+                {
+                  "explain": "The last option is \\(\\cos5\\theta\\), not \\(\\cos10\\theta\\)."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "15(a)(iii)"
+              },
+              "options": [
+                "\\(\\cos10\\theta=\\frac{\\left(32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta\\right)^2+2}{2}\\)",
+                "\\(\\cos10\\theta=\\frac{32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta}{2}\\)",
+                "\\(\\cos10\\theta=\\frac{\\left(32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta\\right)^2-2}{2}\\)",
+                "\\(\\cos10\\theta=\\frac{\\left(32\\cos^5\\theta-40\\cos^3\\theta+10\\cos\\theta\\right)^2}{2}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "find \\(\\cos10\\theta\\) in terms of \\(\\cos\\theta\\)",
+                  "note": "Use xⁿ + x⁻ⁿ = 2cos nθ: v = 2cos θ; (x⁵ + x⁻⁵)² = x¹⁰ + x⁻¹⁰ + 2."
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -866,6 +1049,146 @@
             {
               "text": "The exact value of",
               "note": "Compute (e^(iπ/8))⁴ = e^(iπ/2) = i, so e^(iπ/8) is the principal 4th root of i."
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "If \\((x+iy)^6=e^{2i\\pi}\\), where \\(x,y\\) are real, find a non-zero solution for \\(x\\) and \\(y\\).",
+          "hint": "e^(2iπ) = 1, so x + iy is a sixth root of unity: cis(kπ/3).",
+          "steps": [
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "\\(e^{2i\\pi}=\\cos2\\pi+i\\sin2\\pi=1\\)"
+            },
+            {
+              "explain": "So \\(x+iy\\) is a sixth root of unity: modulus 1 and argument a multiple of \\(\\frac{2\\pi}{6}=\\frac{\\pi}{3}\\).",
+              "work": "\\(x+iy=\\operatorname{cis}\\frac{k\\pi}{3},\\qquad k=0,1,\\dots,5\\)",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 240\" width=\"260\" height=\"240\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"260\" height=\"240\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"120.0\" x2=\"248.0\" y2=\"120.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"130.0\" y1=\"232.0\" x2=\"130.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"246.0\" y=\"138.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"137.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><text x=\"124.0\" y=\"136.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">O</text><circle cx=\"130.0\" cy=\"120.0\" r=\"80.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"210.0\" cy=\"120.0\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"170.0\" cy=\"50.7\" r=\"4.5\" fill=\"#dc2626\"/><circle cx=\"90.0\" cy=\"50.7\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"50.0\" cy=\"120.0\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"90.0\" cy=\"189.3\" r=\"3.5\" fill=\"#2563eb\"/><circle cx=\"170.0\" cy=\"189.3\" r=\"3.5\" fill=\"#2563eb\"/><line x1=\"130.0\" y1=\"120.0\" x2=\"170.0\" y2=\"50.7\" stroke=\"#dc2626\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"180.0\" y=\"36.2\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">1</text><text x=\"180.0\" y=\"47.7\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">2</text><line x1=\"179.0\" y1=\"38.8\" x2=\"186.2\" y2=\"38.8\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"188.2\" y=\"42.7\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#dc2626\"> + </text><path d=\"M204.8 33.2L206.2 32.4L207.9 37.3L209.9 28.0L217.1 28.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1.00\" stroke-linejoin=\"round\"/><text x=\"210.9\" y=\"36.2\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">3</text><text x=\"208.8\" y=\"47.7\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#dc2626\">2</text><line x1=\"203.8\" y1=\"38.8\" x2=\"219.1\" y2=\"38.8\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"221.1\" y=\"42.7\" font-family=\"Times New Roman,Times,serif\" font-size=\"14.6\" fill=\"#dc2626\" font-style=\"italic\">i</text><text x=\"162.0\" y=\"102.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">π</text><text x=\"162.6\" y=\"112.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"8.6\" fill=\"#dc2626\">3</text><line x1=\"161.0\" y1=\"104.4\" x2=\"169.0\" y2=\"104.4\" stroke=\"#dc2626\" stroke-width=\"1.00\"/><text x=\"214.0\" y=\"136.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#2563eb\" text-anchor=\"start\">1</text></svg>"
+              }
+            },
+            {
+              "explain": "Choose \\(k=1\\) for a solution with \\(x\\) and \\(y\\) both non-zero.",
+              "work": "\\(\\operatorname{cis}\\frac{\\pi}{3}=\\frac12+\\frac{\\sqrt3}{2}i\\ \\Rightarrow\\ x=\\frac12,\\ y=\\frac{\\sqrt3}{2}\\)"
+            },
+            {
+              "explain": "Check the others: \\(\\operatorname{cis}\\frac\\pi6\\) gives \\((\\operatorname{cis}\\frac\\pi6)^6=\\operatorname{cis}\\pi=-1\\); \\(\\operatorname{cis}\\frac\\pi4\\) gives \\(-i\\); \\(i^6=-1\\). None of them equals 1."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "12(d)"
+          },
+          "options": [
+            "\\(x=\\frac{\\sqrt3}{2},\\ y=\\frac12\\)",
+            "\\(x=\\frac{1}{\\sqrt2},\\ y=\\frac{1}{\\sqrt2}\\)",
+            "\\(x=0,\\ y=1\\)",
+            "\\(x=\\frac12,\\ y=\\frac{\\sqrt3}{2}\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\((x+iy)^6=e^{2i\\pi}\\)",
+              "note": "e^(2iπ) = 1, so x + iy must be a sixth root of unity cis(kπ/3)."
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q14c",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Find the four 4th roots of \\(-1\\) and show them on an Argand diagram.",
+          "hint": "z⁴ = cis π: the first root has argument π/4, then add π/2 each time.",
+          "steps": [
+            {
+              "explain": "Write \\(-1\\) in modulus–argument form and let \\(z=\\operatorname{cis}\\theta\\) (all roots have modulus 1).",
+              "work": "\\(z^4=-1=\\operatorname{cis}\\pi\\ \\Rightarrow\\ \\operatorname{cis}4\\theta=\\operatorname{cis}(\\pi+2k\\pi)\\)"
+            },
+            {
+              "explain": "Solve for \\(\\theta\\).",
+              "work": "\\(4\\theta=\\pi+2k\\pi\\ \\Rightarrow\\ \\theta=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\)"
+            },
+            {
+              "explain": "Taking principal arguments:",
+              "work": "\\(\\theta=\\frac{\\pi}{4},\\ \\frac{3\\pi}{4},\\ -\\frac{3\\pi}{4},\\ -\\frac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "On the Argand diagram they are equally spaced (\\(\\frac{\\pi}{2}\\) apart) on the unit circle, one in each quadrant: \\(\\pm\\frac{1}{\\sqrt2}\\pm\\frac{1}{\\sqrt2}i\\).",
+              "figure": {
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><defs><marker id=\"ah64748b\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto-start-reverse\"><path d=\"M0 0L10 5L0 10z\" fill=\"#64748b\"/></marker></defs><rect width=\"300\" height=\"260\" rx=\"8\" fill=\"white\"/><line x1=\"14.0\" y1=\"130.0\" x2=\"288.0\" y2=\"130.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><line x1=\"150.0\" y1=\"252.0\" x2=\"150.0\" y2=\"10.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-linecap=\"round\" marker-end=\"url(#ah64748b)\"/><text x=\"286.0\" y=\"148.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"end\">Re</text><text x=\"157.0\" y=\"20.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">Im</text><text x=\"168.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#64748b\" text-anchor=\"start\">O</text><circle cx=\"150.0\" cy=\"130.0\" r=\"85.0\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"150.0\" y1=\"130.0\" x2=\"210.1\" y2=\"69.9\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"210.1\" cy=\"69.9\" r=\"4\" fill=\"#2563eb\"/><text x=\"218.1\" y=\"59.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">cis(</text><text x=\"240.4\" y=\"53.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">π</text><text x=\"241.0\" y=\"64.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">4</text><line x1=\"239.4\" y1=\"56.0\" x2=\"247.9\" y2=\"56.0\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"249.9\" y=\"59.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">)</text><line x1=\"150.0\" y1=\"130.0\" x2=\"89.9\" y2=\"69.9\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"89.9\" cy=\"69.9\" r=\"4\" fill=\"#2563eb\"/><text x=\"40.6\" y=\"59.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">cis(</text><text x=\"62.9\" y=\"53.4\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">3π</text><text x=\"66.1\" y=\"64.8\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">4</text><line x1=\"61.9\" y1=\"56.0\" x2=\"75.6\" y2=\"56.0\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"77.6\" y=\"59.9\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">)</text><line x1=\"150.0\" y1=\"130.0\" x2=\"89.9\" y2=\"190.1\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"89.9\" cy=\"190.1\" r=\"4\" fill=\"#2563eb\"/><text x=\"35.1\" y=\"214.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">cis(</text><text x=\"57.4\" y=\"207.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">−3π</text><text x=\"63.4\" y=\"219.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">4</text><line x1=\"56.4\" y1=\"210.2\" x2=\"75.6\" y2=\"210.2\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"77.6\" y=\"214.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">)</text><line x1=\"150.0\" y1=\"130.0\" x2=\"210.1\" y2=\"190.1\" stroke=\"#2563eb\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><circle cx=\"210.1\" cy=\"190.1\" r=\"4\" fill=\"#2563eb\"/><text x=\"218.1\" y=\"214.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">cis(</text><text x=\"240.4\" y=\"207.6\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">−π</text><text x=\"243.7\" y=\"219.0\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"9.4\" fill=\"#2563eb\">4</text><line x1=\"239.4\" y1=\"210.2\" x2=\"253.4\" y2=\"210.2\" stroke=\"#2563eb\" stroke-width=\"1.00\"/><text x=\"255.4\" y=\"214.1\" font-family=\"Arial,Helvetica,sans-serif\" font-size=\"13.0\" fill=\"#2563eb\">)</text><text x=\"61.0\" y=\"146.0\" font-family=\"system-ui,-apple-system,Segoe UI,Arial,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"end\">−1</text><circle cx=\"65.0\" cy=\"130.0\" r=\"3\" fill=\"#dc2626\"/></svg>"
+              }
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "14(c)"
+          },
+          "options": [
+            "\\(\\operatorname{cis}\\frac{\\pi}{2},\\ \\operatorname{cis}\\frac{3\\pi}{2}\\)",
+            "\\(\\operatorname{cis}\\frac{\\pi}{4},\\ \\operatorname{cis}\\frac{3\\pi}{4},\\ \\operatorname{cis}\\left(-\\frac{3\\pi}{4}\\right),\\ \\operatorname{cis}\\left(-\\frac{\\pi}{4}\\right)\\)",
+            "\\(1,\\ i,\\ -1,\\ -i\\)",
+            "\\(\\operatorname{cis}\\frac{\\pi}{8},\\ \\operatorname{cis}\\frac{5\\pi}{8},\\ \\operatorname{cis}\\left(-\\frac{7\\pi}{8}\\right),\\ \\operatorname{cis}\\left(-\\frac{3\\pi}{8}\\right)\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Find the four 4th roots of",
+              "note": "Write −1 = cis π; the roots are cis(π/4 + kπ/2), equally spaced on the unit circle."
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q16d",
+          "type": "review",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Let \\(\\omega\\) be a complex cube root of unity. Prove that if \\(n\\in\\mathbb{N}\\) then \\(1+\\omega^n+\\omega^{2n}=3\\) if \\(n\\) is a multiple of 3 or 0 if \\(n\\) is not a multiple of 3.",
+          "hint": "Use ω³ = 1 and 1 + ω + ω² = 0; split into n = 3X, 3X + 1, 3X + 2.",
+          "steps": [
+            {
+              "explain": "\\(\\omega\\) is a complex (non-real) cube root of unity, so \\(\\omega^3=1\\) and \\(\\omega\\neq1\\). Factorise \\(\\omega^3-1\\).",
+              "work": "\\(\\omega^3-1=(\\omega-1)\\left(\\omega^2+\\omega+1\\right)=0,\\ \\omega\\neq1\\ \\Rightarrow\\ 1+\\omega+\\omega^2=0\\)"
+            },
+            {
+              "explain": "Case \\(n=3X\\) (multiple of 3).",
+              "work": "\\(1+\\omega^{3X}+\\omega^{6X}=1+\\left(\\omega^3\\right)^X+\\left(\\omega^3\\right)^{2X}=1+1+1=3\\)"
+            },
+            {
+              "explain": "Case \\(n=3X+1\\).",
+              "work": "\\(1+\\omega^{3X+1}+\\omega^{6X+2}=1+\\omega+\\omega^2=0\\)"
+            },
+            {
+              "explain": "Case \\(n=3X+2\\), using \\(\\omega^4=\\omega^3\\cdot\\omega=\\omega\\).",
+              "work": "\\(1+\\omega^{3X+2}+\\omega^{6X+4}=1+\\omega^2+\\omega^4=1+\\omega^2+\\omega=0\\)"
+            },
+            {
+              "explain": "Every natural number is of one of these three forms, so the result is proved."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "16(d)"
+          },
+          "answer": "\\(\\omega^3=1\\), \\(\\omega\\neq1\\), so \\(\\omega^2+\\omega+1=0\\) (from \\(\\omega^3-1=(\\omega-1)(\\omega^2+\\omega+1)\\)). If n = 3X: \\(1+(\\omega^3)^X+(\\omega^3)^{2X}=1+1+1=3\\). If n = 3X + 1: \\(1+\\omega^{3X}\\omega+\\omega^{6X}\\omega^2=1+\\omega+\\omega^2=0\\). If n = 3X + 2: \\(1+\\omega^{3X}\\omega^2+\\omega^{6X}\\omega^4=1+\\omega^2+\\omega=0\\) (since \\(\\omega^4=\\omega\\)).",
+          "manual": true,
+          "keyPoints": [
+            {
+              "text": "complex cube root of unity",
+              "note": "ω³ = 1 and ω ≠ 1 give 1 + ω + ω² = 0. Consider the remainder of n on division by 3."
             }
           ]
         }

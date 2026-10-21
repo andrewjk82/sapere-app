@@ -358,6 +358,97 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int\\frac{x^3\\,dx}{x^8+3}\\).",
+          "hint": "Let u = x⁴: then x⁸ = u² and x³ dx = ¼ du.",
+          "steps": [
+            {
+              "explain": "Notice \\(x^8=(x^4)^2\\) and \\(x^3\\) is (a quarter of) the derivative of \\(x^4\\). Let \\(u=x^4\\).",
+              "work": "\\(u=x^4,\\qquad du=4x^3\\,dx\\ \\Rightarrow\\ x^3\\,dx=\\tfrac14\\,du\\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\int\\frac{x^3\\,dx}{x^8+3}=\\frac14\\int\\frac{du}{u^2+3}=\\frac14\\int\\frac{du}{u^2+\\left(\\sqrt3\\right)^2}\\)"
+            },
+            {
+              "explain": "Use \\(\\int\\frac{du}{u^2+a^2}=\\frac{1}{a}\\tan^{-1}\\frac{u}{a}\\) with \\(a=\\sqrt3\\).",
+              "work": "\\(=\\frac14\\cdot\\frac{1}{\\sqrt3}\\tan^{-1}\\left(\\frac{u}{\\sqrt3}\\right)+C=\\frac{1}{4\\sqrt3}\\tan^{-1}\\left(\\frac{x^4}{\\sqrt3}\\right)+C\\)"
+            },
+            {
+              "explain": "The \\(\\ln\\) option would need the numerator to be the derivative of \\(x^8+3\\), i.e. \\(8x^7\\)."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(a)"
+          },
+          "options": [
+            "\\(\\frac{1}{4}\\tan^{-1}\\left(\\frac{x^4}{\\sqrt3}\\right)+C\\)",
+            "\\(\\frac{1}{4\\sqrt3}\\tan^{-1}\\left(\\frac{x^4}{3}\\right)+C\\)",
+            "\\(\\frac{1}{4}\\ln\\left(x^8+3\\right)+C\\)",
+            "\\(\\frac{1}{4\\sqrt3}\\tan^{-1}\\left(\\frac{x^4}{\\sqrt3}\\right)+C\\)"
+          ],
+          "answer": 3,
+          "keyPoints": [
+            {
+              "text": "\\int\\frac{x^3\\,dx}{x^8+3}",
+              "note": "x⁸ = (x⁴)², and x³ is a quarter of the derivative of x⁴ — substitute u = x⁴."
+            }
+          ]
+        },
+        {
+          "id": "ascham2020-ext2-q15d",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Use the substitution \\(u=\\frac{1}{x}\\) to evaluate \\(\\int_1^{\\infty}\\frac{dx}{x\\sqrt{x^2+2x-1}}\\).",
+          "hint": "With u = 1/x, x√(x²+2x−1) = √(1+2u−u²)/u²; then complete the square.",
+          "steps": [
+            {
+              "explain": "Set up the substitution and change the limits.",
+              "work": "\\(u=\\frac1x,\\quad du=-\\frac{1}{x^2}\\,dx\\ \\Rightarrow\\ dx=-\\frac{1}{u^2}\\,du;\\qquad x=1\\Rightarrow u=1,\\quad x\\to\\infty\\Rightarrow u\\to0\\)"
+            },
+            {
+              "explain": "Rewrite the square root in terms of \\(u\\) (\\(u\\gt 0\\)).",
+              "work": "\\(\\sqrt{x^2+2x-1}=\\sqrt{\\frac{1}{u^2}+\\frac{2}{u}-1}=\\frac{\\sqrt{1+2u-u^2}}{u}\\ \\Rightarrow\\ x\\sqrt{x^2+2x-1}=\\frac{\\sqrt{1+2u-u^2}}{u^2}\\)"
+            },
+            {
+              "explain": "Substitute: the \\(u^2\\) factors cancel.",
+              "work": "\\(\\int_1^0\\frac{u^2}{\\sqrt{1+2u-u^2}}\\cdot\\left(-\\frac{1}{u^2}\\right)du=\\int_0^1\\frac{du}{\\sqrt{1+2u-u^2}}\\)"
+            },
+            {
+              "explain": "Complete the square: \\(1+2u-u^2=2-(u-1)^2\\).",
+              "work": "\\(\\int_0^1\\frac{du}{\\sqrt{2-(u-1)^2}}=\\left[\\sin^{-1}\\frac{u-1}{\\sqrt2}\\right]_0^1=\\sin^{-1}0-\\sin^{-1}\\left(-\\frac{1}{\\sqrt2}\\right)=0+\\frac{\\pi}{4}=\\frac{\\pi}{4}\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "15(d)"
+          },
+          "options": [
+            "\\(\\frac{\\pi}{6}\\)",
+            "\\(\\frac{\\pi}{3}\\)",
+            "\\(\\frac{\\pi}{4}\\)",
+            "\\(\\frac{\\pi}{2}\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "Use the substitution \\(u=\\frac{1}{x}\\)",
+              "note": "dx = −du/u² and the limits 1 → ∞ become 1 → 0; the u² factors cancel."
+            }
+          ]
         }
       ]
     },
@@ -1047,6 +1138,52 @@
               "note": "Integration by parts: u = x, v′ = e^(−x). Use e^(−ln 2) = ½."
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q11b",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int\\cos^{-1}x\\,dx\\).",
+          "hint": "Integration by parts with u = cos⁻¹x and v′ = 1.",
+          "steps": [
+            {
+              "explain": "Use integration by parts with \\(u=\\cos^{-1}x\\) and \\(v'=1\\).",
+              "work": "\\(u=\\cos^{-1}x,\\quad u'=\\frac{-1}{\\sqrt{1-x^2}},\\qquad v'=1,\\quad v=x\\)"
+            },
+            {
+              "explain": "Apply \\(\\int uv'\\,dx=uv-\\int u'v\\,dx\\).",
+              "work": "\\(\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x-\\int\\frac{-x}{\\sqrt{1-x^2}}\\,dx=x\\cos^{-1}x+\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx\\)"
+            },
+            {
+              "explain": "Since \\(\\frac{d}{dx}\\sqrt{1-x^2}=\\frac{-x}{\\sqrt{1-x^2}}\\), the last integral is \\(-\\sqrt{1-x^2}\\).",
+              "work": "\\(\\int\\frac{x}{\\sqrt{1-x^2}}\\,dx=-\\sqrt{1-x^2}\\)"
+            },
+            {
+              "explain": "So",
+              "work": "\\(\\int\\cos^{-1}x\\,dx=x\\cos^{-1}x-\\sqrt{1-x^2}+C\\)"
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(b)"
+          },
+          "options": [
+            "\\(-\\frac{x}{\\sqrt{1-x^2}}+C\\)",
+            "\\(x\\cos^{-1}x-\\frac12\\sqrt{1-x^2}+C\\)",
+            "\\(x\\cos^{-1}x-\\sqrt{1-x^2}+C\\)",
+            "\\(x\\cos^{-1}x+\\sqrt{1-x^2}+C\\)"
+          ],
+          "answer": 2,
+          "keyPoints": [
+            {
+              "text": "\\int\\cos^{-1}x\\,dx",
+              "note": "Write the integrand as 1 · cos⁻¹x and integrate by parts with v′ = 1."
+            }
+          ]
         }
       ]
     },
@@ -1196,6 +1333,51 @@
               ]
             }
           ]
+        },
+        {
+          "id": "ascham2020-ext2-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "timeLimit": 60,
+          "stem": "Find \\(\\int\\sec^4x\\,dx\\).",
+          "hint": "Write sec⁴x = (1 + tan²x) sec²x and let u = tan x.",
+          "steps": [
+            {
+              "explain": "Split off one \\(\\sec^2x\\), because it is the derivative of \\(\\tan x\\).",
+              "work": "\\(\\int\\sec^4x\\,dx=\\int\\sec^2x\\cdot\\sec^2x\\,dx\\)"
+            },
+            {
+              "explain": "Replace the other \\(\\sec^2x\\) using \\(\\sec^2x=1+\\tan^2x\\).",
+              "work": "\\(=\\int\\left(\\tan^2x+1\\right)\\sec^2x\\,dx\\)"
+            },
+            {
+              "explain": "Let \\(u=\\tan x\\), \\(du=\\sec^2x\\,dx\\).",
+              "work": "\\(=\\int\\left(u^2+1\\right)du=\\frac{u^3}{3}+u+C=\\frac{\\tan^3x}{3}+\\tan x+C\\)"
+            },
+            {
+              "explain": "Check: \\(\\frac{d}{dx}\\left(\\frac{\\tan^3x}{3}+\\tan x\\right)=\\tan^2x\\sec^2x+\\sec^2x=\\sec^2x(\\tan^2x+1)=\\sec^4x\\) ✓."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "11(c)"
+          },
+          "options": [
+            "\\(\\frac{\\tan^3x}{3}+C\\)",
+            "\\(\\frac{\\tan^3x}{3}+\\tan x+C\\)",
+            "\\(\\frac{\\sec^5x}{5}+C\\)",
+            "\\(\\frac{\\tan^3x}{3}-\\tan x+C\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "\\int\\sec^4x\\,dx",
+              "note": "Keep one sec²x for du and change the other to 1 + tan²x; then u = tan x."
+            }
+          ]
         }
       ]
     },
@@ -1203,7 +1385,111 @@
       "topicId": "y12e2-6H",
       "code": "6H",
       "title": "Reduction Formulae",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q14b",
+          "type": "multipart",
+          "stem": "Let \\(I_n=\\frac{1}{n!}\\int_0^1x^ne^{-x}\\,dx,\\ n\\ge0\\).",
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "14(b)"
+          },
+          "parts": [
+            {
+              "id": "ascham2020-ext2-q14b-i",
+              "type": "review",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Prove that \\(\\frac{1}{n!}=e\\left(I_{n-1}-I_n\\right)\\).",
+              "hint": "Integrate by parts with u = xⁿ, v′ = e^(−x), then divide by n!.",
+              "steps": [
+                {
+                  "explain": "Integrate by parts with \\(u=x^n\\) and \\(v'=e^{-x}\\).",
+                  "work": "\\(u=x^n,\\ u'=nx^{n-1},\\qquad v'=e^{-x},\\ v=-e^{-x}\\)"
+                },
+                {
+                  "explain": "Apply the formula on \\([0,1]\\).",
+                  "work": "\\(\\int_0^1x^ne^{-x}\\,dx=\\Bigl[-x^ne^{-x}\\Bigr]_0^1+n\\int_0^1x^{n-1}e^{-x}\\,dx=-\\frac{1}{e}+n\\int_0^1x^{n-1}e^{-x}\\,dx\\)"
+                },
+                {
+                  "explain": "Divide by \\(n!\\), using \\(\\frac{n}{n!}=\\frac{1}{(n-1)!}\\).",
+                  "work": "\\(I_n=-\\frac{1}{e\\,n!}+\\frac{1}{(n-1)!}\\int_0^1x^{n-1}e^{-x}\\,dx=-\\frac{1}{e\\,n!}+I_{n-1}\\)"
+                },
+                {
+                  "explain": "Rearrange.",
+                  "work": "\\(I_{n-1}-I_n=\\frac{1}{e\\,n!}\\ \\Rightarrow\\ \\frac{1}{n!}=e\\left(I_{n-1}-I_n\\right)\\)"
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "14(b)(i)"
+              },
+              "answer": "By parts with \\(u=x^n\\), \\(v'=e^{-x}\\): \\(\\int_0^1x^ne^{-x}dx=\\left[-x^ne^{-x}\\right]_0^1+n\\int_0^1x^{n-1}e^{-x}dx=-\\frac1e+n\\int_0^1x^{n-1}e^{-x}dx\\). Dividing by \\(n!\\): \\(I_n=-\\frac{1}{e\\,n!}+\\frac{1}{(n-1)!}\\int_0^1x^{n-1}e^{-x}dx=-\\frac{1}{e\\,n!}+I_{n-1}\\). Hence \\(I_{n-1}-I_n=\\frac{1}{e\\,n!}\\), i.e. \\(\\frac1{n!}=e(I_{n-1}-I_n)\\).",
+              "manual": true,
+              "keyPoints": [
+                {
+                  "text": "Prove that",
+                  "note": "Integration by parts: u = xⁿ, v′ = e^(−x). Remember n/n! = 1/(n − 1)!."
+                }
+              ]
+            },
+            {
+              "id": "ascham2020-ext2-q14b-ii",
+              "type": "mc",
+              "difficulty": "hard",
+              "timeLimit": 60,
+              "stem": "Hence evaluate \\(I_4\\).",
+              "hint": "Use I_n = I_{n−1} − 1/(e·n!) repeatedly, starting from I₀ = 1 − 1/e.",
+              "steps": [
+                {
+                  "explain": "Rearrange (i) as a step-down formula.",
+                  "work": "\\(I_n=I_{n-1}-\\frac{1}{e\\,n!}\\)"
+                },
+                {
+                  "explain": "Start from \\(I_0\\).",
+                  "work": "\\(I_0=\\frac{1}{0!}\\int_0^1e^{-x}\\,dx=\\Bigl[-e^{-x}\\Bigr]_0^1=1-\\frac1e\\)"
+                },
+                {
+                  "explain": "Step up to \\(I_4\\).",
+                  "work": "\\(I_1=1-\\frac1e-\\frac1e=1-\\frac2e,\\quad I_2=1-\\frac2e-\\frac{1}{2e}=1-\\frac{5}{2e},\\quad I_3=1-\\frac{5}{2e}-\\frac{1}{6e}=1-\\frac{8}{3e}\\)"
+                },
+                {
+                  "explain": "Finally:",
+                  "work": "\\(I_4=1-\\frac{8}{3e}-\\frac{1}{24e}=1-\\frac{64+1}{24e}=1-\\frac{65}{24e}\\approx0.0037\\)"
+                },
+                {
+                  "explain": "\\(1-\\frac{8}{3e}\\) is \\(I_3\\) — don't stop one step early."
+                }
+              ],
+              "xp": 1,
+              "meta": {
+                "source": "Ascham 2020 4U Trials & Solutions",
+                "school": "Ascham",
+                "year": 2020,
+                "number": "14(b)(ii)"
+              },
+              "options": [
+                "\\(1-\\frac{41}{24e}\\)",
+                "\\(\\frac{65}{24e}\\)",
+                "\\(1-\\frac{65}{24e}\\)",
+                "\\(1-\\frac{8}{3e}\\)"
+              ],
+              "answer": 2,
+              "keyPoints": [
+                {
+                  "text": "Hence evaluate \\(I_4\\)",
+                  "note": "Find I₀ = 1 − 1/e, then subtract 1/(e·n!) four times."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "topicId": "y12e2-6I",

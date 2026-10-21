@@ -19,7 +19,53 @@
       "topicId": "y12e2-5R",
       "code": "5R",
       "title": "Chapter Review Exercise",
-      "questions": []
+      "questions": [
+        {
+          "id": "ascham2020-ext2-q16b",
+          "type": "mc",
+          "difficulty": "medium",
+          "timeLimit": 60,
+          "stem": "Solve \\(\\tan^{-1}4x-\\tan^{-1}3x=\\tan^{-1}\\frac{1}{7}\\).",
+          "hint": "Take tan of both sides and use tan(A − B) = (tan A − tan B)/(1 + tan A tan B).",
+          "steps": [
+            {
+              "explain": "Let \\(A=\\tan^{-1}4x\\), \\(B=\\tan^{-1}3x\\), so \\(\\tan A=4x\\), \\(\\tan B=3x\\). Take \\(\\tan\\) of both sides using \\(\\tan(A-B)\\).",
+              "work": "\\(\\tan(A-B)=\\frac{\\tan A-\\tan B}{1+\\tan A\\tan B}=\\frac{4x-3x}{1+12x^2}=\\frac{1}{7}\\)"
+            },
+            {
+              "explain": "Cross-multiply.",
+              "work": "\\(7x=1+12x^2\\ \\Rightarrow\\ 12x^2-7x+1=0\\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\((4x-1)(3x-1)=0\\ \\Rightarrow\\ x=\\frac14\\ \\text{ or }\\ x=\\frac13\\)"
+            },
+            {
+              "explain": "Check both in the original (taking \\(\\tan\\) can add false solutions): \\(x=\\frac14\\): \\(\\tan^{-1}1-\\tan^{-1}\\frac34\\approx0.142\\); \\(x=\\frac13\\): \\(\\tan^{-1}\\frac43-\\tan^{-1}1\\approx0.142\\); and \\(\\tan^{-1}\\frac17\\approx0.142\\). Both work."
+            }
+          ],
+          "xp": 1,
+          "meta": {
+            "source": "Ascham 2020 4U Trials & Solutions",
+            "school": "Ascham",
+            "year": 2020,
+            "number": "16(b)"
+          },
+          "options": [
+            "\\(x=\\frac17\\)",
+            "\\(x=\\frac14\\) or \\(x=\\frac13\\)",
+            "\\(x=\\frac14\\) only",
+            "\\(x=-\\frac14\\) or \\(x=-\\frac13\\)"
+          ],
+          "answer": 1,
+          "keyPoints": [
+            {
+              "text": "Solve",
+              "note": "Let tan A = 4x, tan B = 3x and use the tan(A − B) formula; check answers in the original."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
