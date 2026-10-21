@@ -141,6 +141,7 @@ const curriculumSyncFields = [
   "showHscGraph",
   "examPrepEnabled",
   "scholarshipEnabled",
+  "scholarshipExams",
   "examPrepSelection",
   "hscPastPaperEnabled",
   "hscPastPaperCount",
@@ -378,6 +379,7 @@ const StudentDetail = ({ studentId, onBack }) => {
     showHscGraph: false,
     examPrepEnabled: false,
     scholarshipEnabled: false,
+    scholarshipExams: null,
     hscPastPaperEnabled: false,
     hscPastPaperCount: 3,
     schoolSubjectRank: "",
@@ -478,6 +480,7 @@ const StudentDetail = ({ studentId, onBack }) => {
         showHscGraph: data.showHscGraph === true,
         examPrepEnabled: data.examPrepEnabled === true,
         scholarshipEnabled: data.scholarshipEnabled === true,
+        scholarshipExams: Array.isArray(data.scholarshipExams) ? data.scholarshipExams : null,
         examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
         hscPastPaperEnabled: data.hscPastPaperEnabled === true,
         hscPastPaperCount: data.hscPastPaperCount || 3,
@@ -2179,7 +2182,7 @@ const StudentDetail = ({ studentId, onBack }) => {
 
             <CollapsibleSection
               title="Scholarship practice"
-              summary={student.scholarshipEnabled === true ? 'ACER & Selective practice page · untimed' : 'Disabled'}
+              summary={student.scholarshipEnabled === true ? 'Scholarship practice page · untimed' : 'Disabled'}
               badge={student.scholarshipEnabled === true ? 'On' : 'Off'}
               badgeTone={student.scholarshipEnabled === true ? 'green' : 'amber'}
             >

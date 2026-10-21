@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Award } from "lucide-react";
+import { Award, Check } from "lucide-react";
+import { CURRICULUM_DATA } from "../../constants/curriculumData";
+import { enabledScholarshipExams, toggleScholarshipExam } from "../../utils/scholarshipExams";
 
 /**
  * Teacher-side Scholarship practice switch (ACER, Selective…). When on, the student gets a Scholarship page in
@@ -8,6 +10,13 @@ import { Award } from "lucide-react";
  */
 export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
   const enabled = student?.scholarshipEnabled === true;
+  const exams = CURRICULUM_DATA.Scholarship || [];
+  const examIds = exams.map((e) => e.id);
+  const chosen = enabledScholarshipExams(examIds, student);
+  const toggleExam = (id) => {
+    const next = toggleScholarshipExam(examIds, student, id);   // the last exam stays on: to stop Scholarship, switch it off above
+    if (next.length !== chosen.length || next.some((x, i) => x !== chosen[i])) onUpdateSetting("scholarshipExams", next);
+  };
   return (
     <div style={styles.card} className="profile-card-mobile">
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px" }}>
@@ -38,9 +47,34 @@ export default function ScholarshipPanel({ styles, student, onUpdateSetting }) {
           </span>
         </div>
       </div>
+      {enabled && exams.length > 0 && (
+        <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "10px" }}>
+          {exams.map((exam) => {
+            const on = chosen.includes(exam.id);
+            return (
+              <button
+                key={exam.id}
+                type="button"
+                aria-pressed={on}
+                onClick={() => toggleExam(exam.id)}
+                style={{
+                  display: "inline-flex", alignItems: "center", gap: "8px", padding: "9px 16px", borderRadius: "12px", cursor: "pointer",
+                  fontWeight: 800, fontSize: "0.82rem", border: `1.5px solid ${on ? "#a78bfa" : "#e2e8f0"}`,
+                  background: on ? "#f5f3ff" : "#f8fafc", color: on ? "#5b21b6" : "#64748b",
+                }}
+              >
+                <span style={{ width: 18, height: 18, borderRadius: 6, display: "grid", placeItems: "center", background: on ? "#7c3aed" : "#e2e8f0", color: "#fff" }}>
+                  {on && <Check size={12} strokeWidth={3} />}
+                </span>
+                {exam.title}
+              </button>
+            );
+          })}
+        </div>
+      )}
       <div style={{ marginTop: "14px", display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "0.78rem", color: "#64748b", fontWeight: 600, lineHeight: 1.5 }}>
         <Award size={16} color="#7c3aed" style={{ flexShrink: 0, marginTop: 2 }} />
-        <span>Adds a Scholarship page to this student's sidebar with ACER and Selective practice, topic by topic — no timer, answers and explanations after each question. Not part of Daily Practice or Exam Prep.</span>
+        <span>Adds a Scholarship page to this student's sidebar with the exams ticked above, topic by topic — no timer, answers and explanations after each question. Not part of Daily Practice or Exam Prep.</span>
       </div>
     </div>
   );

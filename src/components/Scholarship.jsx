@@ -3,6 +3,7 @@ import { Award, ChevronRight, Lock } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { getManifest } from '../services/contentLoader';
+import { enabledScholarshipExams } from '../utils/scholarshipExams';
 import { useAuth } from '../context/AuthContext';
 import TopicPracticeSession, { lsTopicKey } from './TopicPracticeSession';
 
@@ -58,7 +59,10 @@ const Scholarship = ({ profile }) => {
     );
   }
 
-  const exams = CURRICULUM_DATA.Scholarship || [];
+  // Only the exams the teacher switched on for this student (no list = every exam).
+  const allExams = CURRICULUM_DATA.Scholarship || [];
+  const shown = enabledScholarshipExams(allExams.map((e) => e.id), profile);
+  const exams = allExams.filter((e) => shown.includes(e.id));
   return (
     <div style={{ maxWidth: 760, margin: '0 auto', padding: '8px 4px 40px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
