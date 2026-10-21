@@ -34,6 +34,7 @@ import {
 import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';
+import { allocateQuotas } from '../utils/poolAllocation';
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 
@@ -259,8 +260,8 @@ const rebuildPool = async ({ uid, newSignature, mv, indexResults }) => {
  * practice_pool 에서 questionCount 개를 선택해 반환.
  *
  * 알고리즘:
- *   1. 챕터별 균등 배분 (basePerChapter = floor(n/chapters))
- *   2. 나머지는 정확도 낮은 챕터(약점) 순으로 +1
+ *   1. 챕터별 배분: 챕터 크기의 제곱근에 비례 (작은 챕터가 같은 문제를 너무 자주 반복하지 않게),
+ *      정확도 낮은 챕터(약점)에 약간 가중, 소수점은 무작위 반올림 (utils/poolAllocation)
  *   3. undone이 target보다 적은 챕터 → 부족분을 약점 챕터 중 여유있는 곳에서 충당
  *   4. 전체 undone < questionCount → 전체 리셋(cycle+1) 후 재시도
  *
@@ -358,18 +359,13 @@ export const selectDailyQuestions = async (uid, questionCount) => {
     return ra - rb; // 오름차순 = 약점 먼저
   });
 
-  // 균등 배분 — 문제가 없는 빈 챕터(ids=0)는 배분 계산에서 제외.
-  // 포함하면 빈 챕터 수만큼 deficit이 생겨 특정 챕터에 문제가 몰린다.
-  const activeChapterIds = chapterIds.filter((cid) => (chapter_pools[cid]?.ids || []).length > 0);
-  const numChapters = activeChapterIds.length || 1;
-  const basePerChapter = Math.floor(actualCount / numChapters);
-  const remainder = actualCount % numChapters;
-
-  const targets = {};
-  chapterIds.forEach((cid) => { targets[cid] = 0; }); // 빈 챕터는 0으로 초기화
-  activeChapterIds.forEach((cid) => { targets[cid] = basePerChapter; });
-  // 나머지는 가장 약한 챕터부터 +1
-  sortedByWeakness.filter((cid) => activeChapterIds.includes(cid)).slice(0, remainder).forEach((cid) => { targets[cid] += 1; });
+  // 챕터별 배분: 챕터 크기의 제곱근에 비례하고 약점 챕터에 약간 가중 (utils/poolAllocation).
+  // 예전에는 모든 챕터에 똑같이(하루 1문제씩) 나눠서, 문제가 4개뿐인 챕터는 4일마다 같은 문제가
+  // 되풀이되는데 1,900개짜리 챕터는 한 번도 반복되지 않았다 (2026-10 Year 7 Yue Teng 리포트).
+  // 문제가 없는 빈 챕터(ids=0)는 가중치 0이라 자동으로 제외된다.
+  const sizes = {};
+  chapterIds.forEach((cid) => { sizes[cid] = (chapter_pools[cid]?.ids || []).length; });
+  const targets = allocateQuotas({ chapterIds, sizes, accuracy: chapter_accuracy, count: actualCount });
 
   // undone < target인 챕터 → 가능한 만큼만, deficit 계산
   let totalDeficit = 0;
